@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="2dbd0633-d4b1-43be-a0a9-4fa3134a9220"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_EXOPV_004.Recordings_B_EXOPV">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="500ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="b54be1a4-dad9-44bf-b251-2870324aa530">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ff9ccb21-1bc6-457e-93d5-220d2c09d96a"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmMain']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="97f67057-ca21-4199-ac02-38c60f65a0ce"
+	name="B_EXOPV_004Repository"
+	relativepath="..\B_EXOPV_004Repository.rxrep">
+		<codegen
+		classname="B_EXOPV_004Repository"
+		namespace="B_EXOPV_004">
+		</codegen>
+		<rootfolder
+		id="8ba070da-ae86-4ef2-943b-ec1b741e03f0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

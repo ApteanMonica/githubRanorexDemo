@@ -1,0 +1,1048 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f0ff5841-cde5-487e-a424-1dafdff4b1ff"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Erfassung_ER_1"
+	namespace="B_ERBU_001.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="fefa3831-8e09-4718-bab3-2c928c66bc39"
+		name="Lieferant">
+		</var>
+		<var
+		id="cb23b5dc-92b3-45e3-b902-c0e7246a8524"
+		name="Tagesdatum">
+		</var>
+		<var
+		id="6c70a960-f5a7-474e-bf41-24f3c627f780"
+		name="Rechnungsnummer1">
+		</var>
+		<var
+		id="5466fd64-a5a2-42b0-9e2f-b25678720407"
+		name="Rechnungsdatum1">
+		</var>
+		<var
+		id="6aa7d0f4-0de7-48b1-b7dd-ddb0aa1bc762"
+		name="Rechnungsbetrag1">
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="ca142906-70ee-468f-a759-03ee49a988cf"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d612ae7e-94d6-49fc-b16f-2e65c808f419"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='tblErbu']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<keyitem
+		action="Press"
+		data="Insert"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="43da9f75-8d4e-43e3-bca5-44451e41eb77"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="5cc883cb-3b48-4e11-9704-8a8c6fe0816a"
+		sx="63"
+		sy="320"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bb83bb06-70e9-448e-a904-0babcb9395c3"
+			sourcename="Recorder">
+				<path>
+					/form[@controlname='tblErbu']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAdr_nr Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="{Tab}{NumPad3 down}{NumPad0 down}{NumPad3 up}{NumPad0 up}{NumPad0}{NumPad0}{NumPad0}{NumPad5}{Tab}"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		repoItemActivation="EnsureVisible"
+		searchpropertyid="04fbf595-c778-4e82-9c76-899bc004acdc">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Lieferant">
+				</binding>
+			</bindings>
+			<info
+			id="bb83bb06-70e9-448e-a904-0babcb9395c3"
+			sourcename="Recorder">
+				<path>
+					/form[@controlname='tblErbu']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAdr_nr Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
+		<keysequenceitem
+		KeySequence="{Tab}{Tab}"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="b6e1246b-86cb-4a1c-9699-bb5674d5a672">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keysequenceitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="7c75cb5c-007d-43ba-907b-ddb493a8ef0b">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Lieferant">
+				</binding>
+			</bindings>
+			<info
+			id="bb83bb06-70e9-448e-a904-0babcb9395c3"
+			sourcename="ElementTree">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="3"
+				prefcap="cell"
+				rect="89,309,61,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						300005
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colAdr_nr Row 2
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						300005
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblErbu']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAdr_nr Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="13b23f5a-1045-4214-a4cd-00e611b4940c">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCADMAMwDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKi844ztH50nnn+4Pzp2FdE1
+FQ+ef7g/Ojzz/cH50WC6JqKh88/3B+dHnn+4PzosF0TUVD55/uD86PPP9wfnRYLomoqITEkDaOfe
+k88/3B+dFguiaiofPP8AcH50eef7g/OiwXRNRUPnn+4Pzo88/wBwfnRYLomoqHzz/cH50eef7g/O
+iwXRNRUXnHGdo/Ok88/3B+dFguiaiofPP9wfnR55/uD86LBdE1FQ+ef7g/Ojzz/cH50WC6JqKh88
+/wBwfnR55/uD86LBdE1FQ+ef7g/Ojzz/AHB+dFguiNuIs/WsyOeQ2by/aLhnERbDwgKDjsdoz+da
+ZGYwPc1VWzxEYjcTNHt27Tt4H4CmQRwXG2Zt1xI0apljMgTac8dh7017qVftJDgpg+UwA4IUHHv1
+z+dXTGDKsnO5VK/UHH+FRS2kcscqOWxI244PIPHT8qYD4JhNuIRwFJGWxyQcHH5VJTYoxEm1ckZJ
+59zmnUCCiiigByffX61AzsLtEz8pRiR75H+NTp99frUE0BkkV1lkjZQRlMcg49QfSgZXfUoIsCRu
+cnPIXABI6E89O1MTUFji33G4F3barMgwAccHP9c1Otkq8rLKp6MQRluSeePc9MU42i4XZI6MpYhl
+xnk5I5FINBn2+MxtIiO0a4y+VA5APcj1pBqMbJvSORlC7mIxhRkj156HpmntaIV4eRW3hw2QSDjH
+cenrQllGscib3PmLtYkjPUn09zTDQdazNPEXdCh3MMcdjj1qamQxCJWUMxBYtg44zT6BDh9w/Uf1
+rOS5m2kO3zGX5Tjqu/BH4f1FaI+4fqP61Wa0jZUUlvkk8wHPfOfyoGR/2jF5jx7WLqQMAqSecdjx
+174pf7QiCFpFeMAE/NgZwcEdfX8KEsEUp+9kITAVTjAGQfT2pzWcbDBLcZwc9CW3Z/MUBoPtrmO6
+jLxnocEZBwfqCRUtNiQxrgu7knJZuv6cU6gQUUUUAFFFFADj9wfU/wBKbUm0FcZPX0pNg/vH8qB2
+GUU/YP7x/KjYP7x/KgLDKKfsH94/lRsH94/lQFhlFP2D+8fyo2D+8fyoCwiffX602q2qSyW1uskL
+7W3gZwPQ1H9n1P8A5+Ivy/8ArVDlraxLfQu0VS8jU/8An5i/L/61Hkan/wA/MX5f/Wo5/ILvsXaK
+peRqf/PzF+X/ANaj7Pqf/PxF+X/1qOfyC77F2iqX2fU/+fiL8v8A61H2fU/+fiL8v/rUc/kF32L4
++4fqP602s64GpW8DSPcRlVxkADPp6e9aFt+8tonZiWZATx3xTUruw076C0U/YP7x/KjYP7x/KqHY
+ZRT9g/vH8qNg/vH8qAsMop+wf3j+VGwf3j+VAWGUU/YP7x/KjYP7x/KgLCr0qp5Q2zoCMeaOHY4b
+gcE1bHSkKIwYMqkN1BHWkUUFVXDLIq7EV9oHIHPb6U4DjzMDzvMAz3+70q2YYmVVMaEL90belL5a
+eZ5mxd/TdjmgCmpEKr5Sn541yVXPPrgfjViyINqmM4GRyCO9SJGkediKueTgYzTgAowAAPagBaKK
+KAM7XP8AjzT/AK6D+RqxeIrxtwpdVJG49PcVX1z/AI80/wCug/kavvGkmN6K2ORkZxUr4mSviZTO
+DmVR+88zAOOcbelNCIPLVVGx1Qvx1571d8tPM8zYu/puxzSCGIKyiNAG+8NvWqKKexCzoyjYiuUG
+OBz2p0a7ZllYROXYDp8wO0d/6VaMERVVMaFV6Db0p3lp5nmbF39N2OfzoAdRRRQBT1X/AJB0v4fz
+FR23/IF/4A39ak1X/kHS/h/MU6zgh+ywt5Ue4xjJ2jJ4qftEfaGpFvuZG8iJ8OPmY8jge1R+X/o0
+7+TEOH+f+I8n2/rVxoIWfe0UZb1KjNO2LtK7RtPUY4NUWVJIdsBH2aBMsowp4bnvxSAGITKI1jYh
+QEjPBznnt/kVaWCFPuRIv0UCnFVLbioJHfFAFLDMscQBjZJDtBPTgkdKGCTW107ICQTjcM7TtFXd
+qlt20bvXHNGxcMNow3XjrQBDPGkdlKqIqjYeAMDpSxQqE+a3hQ56LyP5CpiAQQQCD2NLTEOg+4fr
+UlRwfcP1qSpZS2CiiikMKKKKACiiigCtqFn9tgWPzNmG3Zxnsf8AGqf9m3P/AEEZf1/xrVplS4pk
+uKbuZv8AZtz/ANBGX9f8aP7Nuf8AoIy/r/jWlRRyIXJEzf7Nuf8AoIy/r/jR/Ztz/wBBGX9f8a0q
+KORByRM3+zbn/oIy/r/jR/Ztz/0EZf1/xrSoo5EHJEzH0qeRCr38jKeoIJH860IY/KhjjznYoXPr
+gVJ2pKaikNRS2CiiimUFFFFABRRRQAUUUUAOVQowBS0UUAFFFFABRRRQAUUUUAFJtFLRQAm0UbRS
+0UAJtFG0UtFACbRRtFLRQAm2jaKWigBNoo2ilooATaKNopaKAE2ijaKWigBNoo2ilooAKKKKACii
+igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z
+			</helperscreenshot>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				300005
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b48be071-17ef-4134-9c30-bb1c195d4342">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Tagesdatum">
+				</binding>
+			</bindings>
+			<info
+			id="f07721b3-afc9-458f-b6ea-8aab79fc9a97"
+			sourcename="ElementTree">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="5"
+				prefcap="cell"
+				rect="252,309,65,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						19.07.2019
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colErbu_dteingang Row 2
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						19.07.2019
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblErbu']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colErbu_dteingang Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="f78331d3-343e-4c6b-9916-108a5ba354df">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCADSANIDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKb5if31
+/OjzE/vr+dADqKb5if31/OjzE/vr+dADqKb5if31/OjzE/vr+dADqKb5if31/OjzE/vr+dADqKb5
+if31/OjzE/vr+dADqKb5if31/OjzE/vr+dADqKb5if31/OjzE/vr+dADqKb5if31/OjzE/vr+dAD
+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
+9oXP/QOm/X/CtOii0u4cr7mZ/aFz/wBA6b9f8KP7Quf+gdN+v+FadFFpdw5X3Mz+0Ln/AKB036/4
+VHEZrjVoZntZIlVSp3A46Hvj3rXpTRZ9WHI+rG7RRtFLRVXLsJtFG0UtFFwsJtFG0UtFFwsJtFG0
+YpaXtRcLDdoopaKLhYXBowadRQA3BowadRQA3BowadRQA3BowadRQA3BoIOadRQA3BowadRQA3Bo
+wadRQA3BowadRQA3BoINOooAbg0YNOooAbg0YNOooAbg0YNOooAbg0YOKdRQA3Bop1FABRRRQAUU
+UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRR
+QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
+BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
+FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUU
+UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
+			</helperscreenshot>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				19.07.2019
+			</matchvalue>
+		</validationitem>
+		<keysequenceitem
+		KeySequence="B{LShiftKey down}{RShiftKey down}{LShiftKey up}{RShiftKey up}-{RShiftKey up}BUCH{NumPad0 down}{NumPad1 down}{NumPad0 up}{NumPad1 up}"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		repoItemActivation="EnsureVisible"
+		searchpropertyid="741f8b5f-3f3d-4277-880b-acb17361b3a7">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Rechnungsnummer1">
+				</binding>
+			</bindings>
+			<info
+			id="68d840f1-ee87-4255-bccb-45859143e0f8"
+			sourcename="Recorder">
+				<path>
+					/form[@controlname='tblErbu']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colErbu_rechnr Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="6b576339-dadf-435c-8ff5-0b8e0aa19351"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="449d78e6-d467-44b8-bfdd-8bccafafa413">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Rechnungsnummer1">
+				</binding>
+			</bindings>
+			<info
+			id="68d840f1-ee87-4255-bccb-45859143e0f8"
+			sourcename="ElementTree">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="6"
+				prefcap="cell"
+				rect="317,309,66,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						B-BUCH01
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colErbu_rechnr Row 2
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						B-BUCH01
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblErbu']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colErbu_rechnr Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="1d409b3d-5bb6-4f21-a6e7-1980c079a0e6">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCADSANIDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKb5if31
+/OjzE/vr+dADqKb5if31/OjzE/vr+dADqKb5if31/OjzE/vr+dADqKb5if31/OjzE/vr+dADqKb5
+if31/OjzE/vr+dADqKb5if31/OjzE/vr+dADqKb5if31/OjzE/vr+dADqKb5if31/OjzE/vr+dAD
+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
+UggPlbWb5i4ckDvnNLLG7EMrKGU5XK57d+aosjMkxhWRGjBOBtKE89OuaknaRELqUCqCTuBOaEhC
+iMbs7B+Z9f502WKV3VhIgC5OChIz270ANWaQuGIUJuCbcc9PX60NPIqSFgilXC5ySADjk9PWnCBv
+MyXGzdvI285x9elO8th5hR9rOwYcZxwB/SgAt5PNjySpIJBK9DUtRwx+WmC25iSScYyTUlABRRRQ
+A7aKNopwpKm5VhNoo2iloouFhNoo2iloouFhNoo2iloouFjP1mJ5LRBEjOfMHCjPY0z+0Ln/AKB0
+36/4VqDrSVNne6ZDjrdMzP7Quf8AoHTfr/hR/aFz/wBA6b9f8K06KLS7hyvuZn9oXP8A0Dpv1/wo
+/tC5/wCgdN+v+FadFFpdw5X3Mz+0Ln/oHTfr/hR/aFz/ANA6b9f8K06KLS7hyvuZn9oXP/QOm/X/
+AAqOIzXGrQzPayRKqlTuBx0PfHvWvSmiz6sOR9WN2ijaKWiquXYTaKNopaKLhYTaKNopaKLhYTaK
+NopaX0ouFhu0UUtFFwsKAaMGnUUANwaMGnUUANwaMGnUUANwaMGnUUANAOaMGnUUANwaMGnUUANw
+aMGnUUANwaMGnUUANwaCDTqKAG4NGDTqKAG4NGDTqKAG4NGDTqKAG4NGDTqKAG4NFOooAKKKKACi
+iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKK
+KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/2Q==
+			</helperscreenshot>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				B-BUCH01
+			</matchvalue>
+		</validationitem>
+		<keysequenceitem
+		KeySequence="{NumPad0 down}{NumPad1 down}{NumPad0 up}{NumPad1 up}{NumPad0}{NumPad7}{NumPad2 down}{NumPad0 down}{NumPad2 up}{NumPad1 down}{NumPad0 up}{NumPad1 up}{NumPad9}{Tab}"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		repoItemActivation="EnsureVisible"
+		searchpropertyid="9135e5e4-763a-46c1-9dfb-f72d8ae08f92">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Rechnungsdatum1">
+				</binding>
+			</bindings>
+			<info
+			id="552df117-d3f0-463e-a885-a5d58fe8e40d"
+			sourcename="Recorder">
+				<path>
+					/form[@controlname='tblErbu']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colErbu_dtrech Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="6b576339-dadf-435c-8ff5-0b8e0aa19351"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="9bec4f02-faf7-42a4-8380-6ecf31646232">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Rechnungsdatum1">
+				</binding>
+			</bindings>
+			<info
+			id="552df117-d3f0-463e-a885-a5d58fe8e40d"
+			sourcename="ElementTree">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="7"
+				prefcap="cell"
+				rect="383,309,65,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						01.07.2019
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colErbu_dtrech Row 2
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						01.07.2019
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblErbu']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colErbu_dtrech Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="9e7f7bd4-286c-48b7-a9f5-cdce3ac7dddb">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCADSANIDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKb5if31
+/OjzE/vr+dADqKb5if31/OjzE/vr+dADqKb5if31/OjzE/vr+dADqKb5if31/OjzE/vr+dADqKb5
+if31/OjzE/vr+dADqKb5if31/OjzE/vr+dADqKb5if31/OjzE/vr+dADqKb5if31/OjzE/vr+dAD
+qKb5if31/OjzE/vr+dADqKb5if31/OjzE/vr+dADqKb5if31/OjzE/vr+dADqKb5if31/OjzE/vr
++dADqKb5if31/OjzE/vr+dADqKb5if31/OigCBev4H+VVpLkpKY1glkKqGJTbxnPqR6VZXr+B/lV
+OW1864kZjIoKKFKSFeeewPP41RmWI3WSNXXlWAIokkEagtnlgvHucVnJaTGdHdXVhtwU2YQADI6Z
+9enBpRaMVVDa7WBXzJN4+f5hk8Hnv1phY0qKoLYqbhg0CeQN21cDaM7e31BpqQ3CxeU0TElkcvuG
+BgLnvnPFAWNGisxrXyLdGCKgEQ835gNxBXgn6ZFRCD7REXt7f5N52KCu0cLz19jyDkUBY2KZczeS
+4AjeRnYgBce57kelKispYs7NnscYX6cfzqO8hM00Y+bashLFWKkcHuOaAHQzCYN8jIynaytjIP4f
+WpCcDNZk1lJu27XeIMTgFWZsgYJ3dccj1p4tnVxvtzM/y7ZS4ygAHGevr0HOaQWL0TiWJZFzhgCM
+06s37AQkAWED5VEuCOSCvX1709YJLedmigzH8wVUIGAQvOM9Mg0wL9FZ0NkyxBmiAmDoQ3GQAFB5
+/A1BGizFo44gzrGRIyMp3ncO/PoeDQFjYptzKIU3lWf7oAXGSTgd6gs4ZI4UDEptz+7AGOvHrj8D
+ipL2IzRBAD95CcHBwCM80AEM/msyNG8brglXx0Pfgn0qWs64spMssYd4yVY5YMzdRj5s57HmkFqy
+qoe3acbcIGdcxnJ+mO3TpigLGhFIJU3LnGSOfY4p1Zsli3kZSIeaxk3HIyQd2OfyqRrZoLkSQQZQ
+EHahAycMCee/IoAvUVmiyd0maSEbyp8vJBwdzHj0PIqNlV7oxBFafc+51dckEHAz1HUDkUgsa1FU
+7K3kjjwd0ID5CgLyMDqBkD8MVcpiCiiigBy9fwP8qpvPIl6yk/utijp0Y5wf0x+VXVVs/dPQ9qhe
+1Ehk3Kx8xQpHsM/40mMhs7kzxqCrkhRucgAZwD/WrNMt7X7OhVA5Bx19gB/Spdjf3T+VMBtFO2N/
+dP5UbG/un8qAG0U7Y390/lRsb+6fyoAbUN4XM0aJI0e+QglQCehPcH0qS4k+zwtK6ttXGcCs641G
+3nZSDPGVbcCoXPp3z61LkluK6W5Obv7OkgnO/wAt9u7KrngHnJA7063vfOcgowVn2oeORt3etUTd
+Wp2kNcq4zlwFy2cZzn6CkW5tUUBGuVwQVIC5BAx+opc8e4uaJfN+m4gRytg4JAHGSQO/qKnhkEsY
+cAjqMHqCOKy0urNAeJzkgknb2Yt/M1NFqdtEm1VlxknkDuc+tHPHuHNE0aKof2vb/wByX8h/jR/a
+9v8A3JfyH+NHPHuLmRfqDUZGit9yMyncgyq5OCQDgYNV/wC17f8AuS/kP8aU3cGoOtugmRiQQwA4
+K8+/pRzxfUakhF1BIUImdm+chd+1GIwOoOMdafFf+ZkiJ2Uvtj24+b5c+tSiwIO8STCXJJk4yenH
+THYdqctltkD5kOG3YPPOMfXpVlEQ1CIyPGQ25OwKknnHYnHUdcVNDN5wb5GQqdpDYz0z2J9agOnF
+Y8I0rFV2xqxAC8g8ED275qW0t5okfzss7tuPfsB6D09KAZNRTtjf3T+VGxv7p/KgBtFO2N/dP5Ub
+G/un8qAG0U7Y390/lRQA+qk9y0UzKHjG1QwVhy554HPtVuq8tu8juVkVVdQrArk456c+9IoW5mMQ
+jw6JubBZxwOCfUUkM7SNGDtwwY5HfBAyKWS3yytFsRg24krnPBHPT1oWBlClXG8E8leDk5PGaAGp
+NLKzKmxSpOSQT3IHf2pTciOQpM8aEKDy2MnnPWgW7J80UgDH725cg859fc1IkRVmYvuJUKePTP8A
+jQBALiRlDjaFVVLDHXPpzxUyO5uHRgoCgEYOc5z/AIVH9mYBVDjbtUN8vXHpzxUwTEzSZ6qBj6Z/
+xpgVtV/5B0v4fzFOhZxaWqRkBmQckZx8tN1X/kHS/h/MU6GNns7ZkYKyopGRkdKj7RP2hyzSHyDt
+Xa5wxzznB6flSzySBtse0EKWO4Zz7U5YcLEN3+rOenXgj+tNlhdzlXVSQVPy9j+PWqKELy7oyrJt
+cjC7DnHfnP8ASnTvJGQw2bMgYIOWJNPWMK4bPRdoHpUbRSmZZPMTgYwUPHqRzQAkc0jOCdpV920Y
+xjHqaabiQRKWMcZLspY5KjBP09KfHAySAlwVXO0Y5GaXynWPEcgU7i2SuRySf60APhk82JX9RVGb
+/kO2/wD1zP8A7NV6JBFEqA52jGfWqM3/ACHbf/rmf/ZqmfQiXQ0aKKKosKiuGkRC6FAqgk7gTn2q
+WoZopJHRldQF52suRn16igAkd8RqmFZ/7wzjjNRC4kZd42hUA3jHXJ5xU0kbNsZWAdTnJGR09M1H
+9lIAVXG0gB8rycUALFK7SLu27H3bQByMUjTurlvl8sPsxjnp1zSrA6HIdSF3bAR0J9aU25Mhyw8s
+tuK45zjHWgBE+0uit5sY3DOPLJx+tFCx3CKFWWPAGBmM5/nRTAtbRRtFOFJUXKsJtFG0UtFFwsJt
+FG0UtFFwsJtFG0UtFFwsVNTjZ9PlVFZmOMADJ6iqkN7cxQpH/Z8x2KFzzzj8K1qU9alp3umQ43d0
+zL/tC5/6B036/wCFH9oXP/QOm/X/AArTootLuHK+5mf2hc/9A6b9f8KP7Quf+gdN+v8AhWnRRaXc
+OV9zM/tC5/6B036/4Uf2hc/9A6b9f8K06KLS7hyvuZn9oXP/AEDpv1/wqOIzXGrQzPayRKqlTuBx
+0PfHvWvSmiz6sOR9WN2ijaKWiquXYTaKNopaKLhYTaKNopaKLhYTaKNopaKLhYTaKKWii4WFANGD
+TqKAG4NGDTqKAG4NGDTqKAG4NGDTqKAG4NBBzTqKAG4NGDTqKAG4NGDTqKAG4NGDTqKAG4NBBp1F
+ADcGjBp1FADcGjBp1FADcGjBp1FADcGjBp1FADcGinUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUU
+AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA
+UUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABR
+RRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
+FABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUU
+AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH/2Q==
+			</helperscreenshot>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				01.07.2019
+			</matchvalue>
+		</validationitem>
+		<keysequenceitem
+		KeySequence="{NumPad0 down}{NumPad1 down}{NumPad0 up}{NumPad1 up}{NumPad0}{NumPad7}{NumPad2 down}{NumPad0 down}{NumPad2 up}{NumPad1 down}{NumPad0 up}{NumPad1 up}{NumPad9}{Tab}"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		repoItemActivation="EnsureVisible"
+		searchpropertyid="9135e5e4-763a-46c1-9dfb-f72d8ae08f92">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Rechnungsbetrag1">
+				</binding>
+			</bindings>
+			<info
+			id="2da31d90-f73f-4a05-af59-5b6dbe6f0368"
+			sourcename="Recorder">
+				<path>
+					/form[@controlname='tblErbu']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colErbu_betrag Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Insert"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="43da9f75-8d4e-43e3-bca5-44451e41eb77"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<validationitem
+		action="AttributeRegex"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="7fd09252-eba7-4453-86a0-3959aa904e71">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Rechnungsbetrag1">
+				</binding>
+			</bindings>
+			<info
+			id="2da31d90-f73f-4a05-af59-5b6dbe6f0368"
+			sourcename="ElementTree">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="9"
+				prefcap="cell"
+				rect="448,309,80,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						2 000,00
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colErbu_betrag Row 2
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						2 000,00
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblErbu']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colErbu_betrag Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="49afde6b-0ddb-4c7f-ab05-b9a296913cb4">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCADkAOQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDovNj/
+AOei/nTgcjI5FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
+FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUU
+UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRR
+QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
+BRRRQAUUUUAFFFFABRRRQAUUUUAFFVMD0FMuJY4G+cH5mwAqFifwAp2J5i9RVGKSOZSyZ4OCCpBB
++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
+eKq/2zbf3Jf++R/jR/bNt/cl/wC+R/jRzx7hzx7lyVXJR0CllPQnA6euKhFvIq7BtKuBvOemDzio
+f7Ztv7kv/fI/xo/tm2/uS/8AfI/xp88e4c8e5YWKVCPlUiPcVw3LZ/lQ0Ds5U7fLLb8556dMVX/t
+m2/uS/8AfI/xo/tm2/uS/wDfI/xpc8e4c8e5agjkVgZNo2oEGDnPvVWb/kO2/wD1zP8A7NR/bNt/
+cl/75H+NQx3KXeswPGGACkfMPY0pTTtYlyTtY16KXb70bfetLmlhKKXb70bfei4WEopdvvRt96Lh
+YSil2+9G33ouFhKKXb70UXCw6lPWjB9KCDmpKEopcH0owfSgBKKXB9KMH0oASilwfSjB9KAEpTRg
++lBBoASilwfSjB9KAEopcH0owfSgBKKXB9KMH0oASilwfSjB9KAEpTRg+lBBoASilwfSjB9KAEop
+cH0owfSgBKKXB9KMH0oASilwfSjB9KAEopcH0ooAdRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRR
+QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
+BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
+FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUU
+UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRR
+QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
+BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//Z
+			</helperscreenshot>
+			<matchname>
+				AccessibleValue
+			</matchname>
+			<matchvalue>
+				2 000,00
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeRegex"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b433c833-946e-4435-981a-b45fb7086d15">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0abdd965-2a77-432f-be3c-882d2e596c2c"
+			sourcename="ElementTree">
+				<path>
+					/form[@controlname='tblErbu']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colErbu_nr Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				([0-9]{6})$
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="a7c6da3f-b7d6-49c4-8b26-c70ead9eb650"
+	name="B_ERBU_001Repository"
+	relativepath="..\B_ERBU_001Repository.rxrep">
+		<codegen
+		classname="B_ERBU_001Repository"
+		namespace="B_ERBU_001">
+		</codegen>
+		<rootfolder
+		id="23645546-9cb4-4cbe-aa4c-5d9570b0e169"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Erfassung_ER_1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

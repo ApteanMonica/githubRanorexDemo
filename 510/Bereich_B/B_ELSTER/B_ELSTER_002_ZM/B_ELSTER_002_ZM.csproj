@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{F705A6A0-9274-43B8-BA7D-7649F49B26C4}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>B_ELSTER_002_ZM</RootNamespace>
+    <AssemblyName>B_ELSTER_002_ZM</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>62cb15e9-dd5d-435d-bd34-a82ca9c454da</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper" />
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Delphi" />
+    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.WinForms.Core" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="Ranorex.Plugin.Wpf.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>21e5fee0-ce09-47c5-8bc8-8d04a391b373</id>
+    </Compile>
+    <Compile Include="B_ELSTER_002_ZMRepository.cs">
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+      <DependentUpon>B_ELSTER_002_ZMRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>9048bf11-2f48-412d-a397-f646e4ac6e3a</id>
+    </Compile>
+    <Compile Include="B_ELSTER_006_ZMRepository.cs">
+      <BoundTo>b7bcaa32-0c0a-4b89-a703-72bad134175b</BoundTo>
+      <DependentUpon>B_ELSTER_006_ZMRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>3aaacd43-497f-455a-a236-b3fa2ce27302</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>57bc071c-e927-4b41-b02e-b5c4cbbb1ff7</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_ELSTER.cs">
+      <DependentUpon>CloseAUT_ELSTER.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>28f72f0a-0ced-490f-aa6f-d0f7f338082c</id>
+      <BoundTo>a015f88c-1e7a-484d-b675-c012fef4417b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_ELSTER.UserCode.cs">
+      <DependentUpon>CloseAUT_ELSTER.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ca4695db-2791-410c-af7f-181943b7cefe</id>
+      <BoundTo>a015f88c-1e7a-484d-b675-c012fef4417b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_ZM.cs">
+      <DependentUpon>CloseAUT_ZM.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f371e30d-03ae-4c55-9c0f-3acb906d3bb4</id>
+      <BoundTo>ad392ff2-1de8-4d4c-8f13-4340fe9b2b6f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_ZM.UserCode.cs">
+      <DependentUpon>CloseAUT_ZM.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8816cc37-268e-4498-a9e7-c1d0621c0e8c</id>
+      <BoundTo>ad392ff2-1de8-4d4c-8f13-4340fe9b2b6f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Elster_Aufruf_DSGVO_Meldung_RS_bestaetigen.cs">
+      <BoundTo>d16d7108-70c3-4f14-bbcc-1b0a65e7d264</BoundTo>
+      <DependentUpon>Elster_Aufruf_DSGVO_Meldung_RS_bestaetigen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>389d35da-c60c-4b41-9a59-2a5d6369c994</id>
+    </Compile>
+    <Compile Include="Recordings\Elster_Aufruf_DSGVO_Meldung_RS_bestaetigen.UserCode.cs">
+      <BoundTo>d16d7108-70c3-4f14-bbcc-1b0a65e7d264</BoundTo>
+      <DependentUpon>Elster_Aufruf_DSGVO_Meldung_RS_bestaetigen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>771706fd-2e72-42c1-a52a-b3437508039d</id>
+    </Compile>
+    <Compile Include="Recordings\Elster_Druckvorschau_aufrufen.cs">
+      <DependentUpon>Elster_Druckvorschau_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1ed6bccf-274b-4f61-a77d-34ec289b90ee</id>
+      <BoundTo>43d79a00-598e-4382-a8a9-6fb55ea5079c</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Elster_Druckvorschau_aufrufen.UserCode.cs">
+      <DependentUpon>Elster_Druckvorschau_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bc743bc5-4911-4126-962c-352ef5aee265</id>
+      <BoundTo>43d79a00-598e-4382-a8a9-6fb55ea5079c</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Elster_Schnittstelle_pruefen.cs">
+      <DependentUpon>Elster_Schnittstelle_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1f03c228-6ce2-4135-9ab8-80a1fd2bd258</id>
+      <BoundTo>0e83767c-1800-46ae-92f6-ebda1e8e3fb0</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Elster_Schnittstelle_pruefen.UserCode.cs">
+      <DependentUpon>Elster_Schnittstelle_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2187cb6f-51c4-476b-b8fd-abf846ff974a</id>
+      <BoundTo>0e83767c-1800-46ae-92f6-ebda1e8e3fb0</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>757d1ab3-4a9f-41d8-8961-4ce060c96336</id>
+      <BoundTo>a53d14bc-6a79-4950-90b6-6afc195f759e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e57a2579-da89-422a-9e10-4732f978e567</id>
+      <BoundTo>a53d14bc-6a79-4950-90b6-6afc195f759e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tagesdatum_ermitteln_eric.cs">
+      <DependentUpon>Tagesdatum_ermitteln_eric.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>57ab0e48-1c10-41ae-b35b-9963b554f478</id>
+      <BoundTo>95c7ca0e-fd32-43c1-8150-29b64f4bb42c</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tagesdatum_ermitteln_eric.UserCode.cs">
+      <DependentUpon>Tagesdatum_ermitteln_eric.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6db8c510-e3d9-45c8-95a5-cad637b280ea</id>
+      <BoundTo>95c7ca0e-fd32-43c1-8150-29b64f4bb42c</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tagesdatum_ermitteln_XML.cs">
+      <DependentUpon>Tagesdatum_ermitteln_XML.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1cc06907-a00d-4c13-9fd3-7ccce3a9f05f</id>
+      <BoundTo>af0b7e5c-185a-4490-8e09-ace1b229f9ea</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tagesdatum_ermitteln_XML.UserCode.cs">
+      <DependentUpon>Tagesdatum_ermitteln_XML.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ba48b3d0-0e13-4a97-9d41-9fdbcfaca8ca</id>
+      <BoundTo>af0b7e5c-185a-4490-8e09-ace1b229f9ea</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\ZM_Einschraenkungen.cs">
+      <BoundTo>16a759fc-9c54-49ee-b083-8bef119bab00</BoundTo>
+      <DependentUpon>ZM_Einschraenkungen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7fbd9983-7880-406d-bdc9-43a9ed5a625a</id>
+    </Compile>
+    <Compile Include="Recordings\ZM_Einschraenkungen.UserCode.cs">
+      <BoundTo>16a759fc-9c54-49ee-b083-8bef119bab00</BoundTo>
+      <DependentUpon>ZM_Einschraenkungen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4b6ac168-57da-4d3d-9b2e-00bb4fb8e35a</id>
+    </Compile>
+    <Compile Include="Recordings\ZM_ELSTER_Plausipruefung_durchfuehren.cs">
+      <BoundTo>a8faee65-7db7-4afd-8268-9091edd3d177</BoundTo>
+      <DependentUpon>ZM_ELSTER_Plausipruefung_durchfuehren.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ebcfdf8a-75eb-4711-8155-60a50936f732</id>
+    </Compile>
+    <Compile Include="Recordings\ZM_ELSTER_Plausipruefung_durchfuehren.UserCode.cs">
+      <BoundTo>a8faee65-7db7-4afd-8268-9091edd3d177</BoundTo>
+      <DependentUpon>ZM_ELSTER_Plausipruefung_durchfuehren.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b1dc2707-5935-464d-b267-9aca3cfd0168</id>
+    </Compile>
+    <Compile Include="recordings_notepad\Close_notepad_Eric.cs">
+      <DependentUpon>Close_notepad_Eric.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4de262af-d03a-40d4-ab2f-f104eeefa3a6</id>
+      <BoundTo>2326868a-db9b-4855-8eb0-1e1447764b86</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Close_notepad_Eric.UserCode.cs">
+      <DependentUpon>Close_notepad_Eric.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aa8df424-c75b-48c2-be35-36c21b0a8958</id>
+      <BoundTo>2326868a-db9b-4855-8eb0-1e1447764b86</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Close_notepad_XML.cs">
+      <DependentUpon>Close_notepad_XML.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ade1f570-625e-4b9a-a407-f80fafcc8d44</id>
+      <BoundTo>4b0e007a-f4f3-47f8-a5dd-0eb9c01d0d13</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Close_notepad_XML.UserCode.cs">
+      <DependentUpon>Close_notepad_XML.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bdb3a9cb-f3e8-4d8e-9488-eb9af88241f1</id>
+      <BoundTo>4b0e007a-f4f3-47f8-a5dd-0eb9c01d0d13</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\loeschen_Eric_log.cs">
+      <DependentUpon>loeschen_Eric_log.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>55f37c11-6c0c-4d46-9b49-2ac4a25d3964</id>
+      <BoundTo>6a4c0d41-a949-4356-b751-bdf9d6fdfe49</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\loeschen_Eric_log.UserCode.cs">
+      <DependentUpon>loeschen_Eric_log.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fe3ff59a-5bd8-4323-a8e3-23948ddafb4f</id>
+      <BoundTo>6a4c0d41-a949-4356-b751-bdf9d6fdfe49</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\loeschen_XML_ZM.cs">
+      <DependentUpon>loeschen_XML_ZM.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2ca776f0-33fe-4b6c-8d4a-08c5bf7aaca2</id>
+      <BoundTo>a05ba285-5eac-4921-bb50-63e89f9720af</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\loeschen_XML_ZM.UserCode.cs">
+      <DependentUpon>loeschen_XML_ZM.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>19f09e58-0ed0-43e5-a0a3-a409ea584f20</id>
+      <BoundTo>a05ba285-5eac-4921-bb50-63e89f9720af</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Oeffnen_notepad_Eric_log.cs">
+      <DependentUpon>Oeffnen_notepad_Eric_log.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6c992972-0a91-408c-81d8-0dac681d2d67</id>
+      <BoundTo>ccc2ba3e-9531-43f1-a58e-789e2f267b29</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Oeffnen_notepad_Eric_log.UserCode.cs">
+      <DependentUpon>Oeffnen_notepad_Eric_log.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b3831221-799d-494a-b2b5-b5a9f37b79ea</id>
+      <BoundTo>ccc2ba3e-9531-43f1-a58e-789e2f267b29</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Oeffnen_notepad_XML_Datei.cs">
+      <DependentUpon>Oeffnen_notepad_XML_Datei.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b8420279-8510-4f5f-881e-2c82bf0eabdb</id>
+      <BoundTo>3debaf21-dc40-42a9-a753-c394ef0b6e26</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Oeffnen_notepad_XML_Datei.UserCode.cs">
+      <DependentUpon>Oeffnen_notepad_XML_Datei.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dc20918d-4790-4cf4-8316-77597206a93d</id>
+      <BoundTo>3debaf21-dc40-42a9-a753-c394ef0b6e26</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Eric_log_vorhanden.cs">
+      <DependentUpon>Pruefung_Eric_log_vorhanden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>35bbe11e-6064-4820-abc7-b7a43b0c7183</id>
+      <BoundTo>682b778a-768e-4b4e-a1e9-1b2929eb8c02</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Eric_log_vorhanden.UserCode.cs">
+      <DependentUpon>Pruefung_Eric_log_vorhanden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ac43c982-1cda-4cfd-be3a-bd9634024cbc</id>
+      <BoundTo>682b778a-768e-4b4e-a1e9-1b2929eb8c02</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_ZM_Datei.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_ZM_Datei.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b041e8c8-ef5d-45c0-9b26-820314673578</id>
+      <BoundTo>0ea506af-511a-433b-aa76-67e8f67c0cea</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_ZM_Datei.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_ZM_Datei.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2b22f1f1-3d26-4e04-ba7c-a093936a91e4</id>
+      <BoundTo>0ea506af-511a-433b-aa76-67e8f67c0cea</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Sichern_Eric_log_ZM.cs">
+      <DependentUpon>Sichern_Eric_log_ZM.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8e8b373f-e23e-4a77-9135-cfcf1f9fed9d</id>
+      <BoundTo>86539c5c-773f-46e3-84ab-9f58fc286811</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Sichern_Eric_log_ZM.UserCode.cs">
+      <DependentUpon>Sichern_Eric_log_ZM.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6663206a-2ae9-4fa8-8836-b8d3fe2c40c8</id>
+      <BoundTo>86539c5c-773f-46e3-84ab-9f58fc286811</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Sichern_XML_ZM_2022_01.cs">
+      <DependentUpon>Sichern_XML_ZM_2022_01.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>46ffc67c-3506-4f9e-a965-15bd2790e834</id>
+      <BoundTo>cd46dff9-ff8e-4fcc-9325-33ce12c1e9e3</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Sichern_XML_ZM_2022_01.UserCode.cs">
+      <DependentUpon>Sichern_XML_ZM_2022_01.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b4e5dac0-3d15-48f9-bc03-d985999fb459</id>
+      <BoundTo>cd46dff9-ff8e-4fcc-9325-33ce12c1e9e3</BoundTo>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>b3a26034-6383-4545-99ed-4232bdad9564</id>
+    </None>
+    <None Include="B_ELSTER_002_ZMRepository.rximg">
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+      <DependentUpon>B_ELSTER_002_ZMRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>4d2b6c07-6f0a-432e-8a4f-95e7ca29f727</id>
+    </None>
+    <None Include="B_ELSTER_002_ZMRepository.rxrep">
+      <id>62cb15e9-dd5d-435d-bd34-a82ca9c454da</id>
+      <repoid>839ec566-320d-4795-98e4-93cb90dcd5e2</repoid>
+      <reporootid>84782455-8ea7-42bb-bf21-3a2d6d91cc1f</reporootid>
+    </None>
+    <None Include="B_ELSTER_006_ZMRepository.rximg">
+      <BoundTo>b7bcaa32-0c0a-4b89-a703-72bad134175b</BoundTo>
+      <DependentUpon>B_ELSTER_006_ZMRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>4a21dcf8-66cc-45be-801d-f3aee8c637cf</id>
+    </None>
+    <None Include="Recordings\CloseAUT_ELSTER.rxrec">
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+      <id>a015f88c-1e7a-484d-b675-c012fef4417b</id>
+      <recordtableid>de954a61-6fbb-4246-a04f-e32cfaccfb61</recordtableid>
+    </None>
+    <None Include="Recordings\CloseAUT_ZM.rxrec">
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+      <id>ad392ff2-1de8-4d4c-8f13-4340fe9b2b6f</id>
+      <recordtableid>4edda73a-0ff0-4fba-8053-451e2a003a93</recordtableid>
+    </None>
+    <None Include="Recordings\Elster_Aufruf_DSGVO_Meldung_RS_bestaetigen.rxrec">
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+      <id>d16d7108-70c3-4f14-bbcc-1b0a65e7d264</id>
+      <recordtableid>fc0973b1-4789-44e1-aa56-c74b5473f8d1</recordtableid>
+    </None>
+    <None Include="Recordings\Elster_Druckvorschau_aufrufen.rxrec">
+      <id>43d79a00-598e-4382-a8a9-6fb55ea5079c</id>
+      <recordtableid>6bb060e9-ffa5-47b2-abef-93df26ffe16a</recordtableid>
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+    </None>
+    <None Include="Recordings\Elster_Schnittstelle_pruefen.rxrec">
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+      <id>0e83767c-1800-46ae-92f6-ebda1e8e3fb0</id>
+      <recordtableid>7f522687-1002-40a3-8562-c9fedbfcdb54</recordtableid>
+    </None>
+    <None Include="Recordings\StartAUT.rxrec">
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+      <id>a53d14bc-6a79-4950-90b6-6afc195f759e</id>
+      <recordtableid>310475c0-e8e8-4dbc-8c0d-19f1f921a26d</recordtableid>
+    </None>
+    <None Include="Recordings\Tagesdatum_ermitteln_eric.rxrec">
+      <id>95c7ca0e-fd32-43c1-8150-29b64f4bb42c</id>
+      <recordtableid>9e953130-3be6-4c59-8009-937aa104d032</recordtableid>
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+    </None>
+    <None Include="Recordings\Tagesdatum_ermitteln_XML.rxrec">
+      <id>af0b7e5c-185a-4490-8e09-ace1b229f9ea</id>
+      <recordtableid>6552e580-e607-48a4-bfe8-4957cc37c75e</recordtableid>
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+    </None>
+    <None Include="Recordings\ZM_Einschraenkungen.rxrec">
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+      <id>16a759fc-9c54-49ee-b083-8bef119bab00</id>
+      <recordtableid>8b96ec36-d576-4d4c-bc84-cfe4ad5834e9</recordtableid>
+    </None>
+    <None Include="Recordings\ZM_ELSTER_Plausipruefung_durchfuehren.rxrec">
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+      <id>a8faee65-7db7-4afd-8268-9091edd3d177</id>
+      <recordtableid>d1447f10-f9e0-4d00-bb78-21c019af6f53</recordtableid>
+    </None>
+    <None Include="recordings_notepad\Close_notepad_Eric.rxrec">
+      <id>2326868a-db9b-4855-8eb0-1e1447764b86</id>
+      <recordtableid>f1018f78-7452-4a14-ab5c-65ad1a29015f</recordtableid>
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Close_notepad_XML.rxrec">
+      <id>4b0e007a-f4f3-47f8-a5dd-0eb9c01d0d13</id>
+      <recordtableid>fcb5dae4-83fb-49f3-9a39-ce771b23295d</recordtableid>
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+    </None>
+    <None Include="recordings_notepad\loeschen_Eric_log.rxrec">
+      <id>6a4c0d41-a949-4356-b751-bdf9d6fdfe49</id>
+      <recordtableid>fe3d7919-26be-4c46-b39f-2f81745e7580</recordtableid>
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+    </None>
+    <None Include="recordings_notepad\loeschen_XML_ZM.rxrec">
+      <id>a05ba285-5eac-4921-bb50-63e89f9720af</id>
+      <recordtableid>f6192cad-96e1-494c-8cbb-71437423d285</recordtableid>
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Oeffnen_notepad_Eric_log.rxrec">
+      <id>ccc2ba3e-9531-43f1-a58e-789e2f267b29</id>
+      <recordtableid>df335c56-af79-452a-bbe7-b3e89cae15e6</recordtableid>
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Oeffnen_notepad_XML_Datei.rxrec">
+      <id>3debaf21-dc40-42a9-a753-c394ef0b6e26</id>
+      <recordtableid>df75d86f-d184-4324-9c03-ae8c38190a40</recordtableid>
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Pruefung_Eric_log_vorhanden.rxrec">
+      <id>682b778a-768e-4b4e-a1e9-1b2929eb8c02</id>
+      <recordtableid>64e20f07-940b-47d5-9493-5dc72a290be7</recordtableid>
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Pruefung_Inhalt_XML_ZM_Datei.rxrec">
+      <id>0ea506af-511a-433b-aa76-67e8f67c0cea</id>
+      <recordtableid>b45889f9-67fd-4fe3-8b86-a3f35c2853aa</recordtableid>
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Sichern_Eric_log_ZM.rxrec">
+      <id>86539c5c-773f-46e3-84ab-9f58fc286811</id>
+      <recordtableid>4c2894e3-40d1-486a-959a-57d0c8de4d7c</recordtableid>
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Sichern_XML_ZM_2022_01.rxrec">
+      <id>cd46dff9-ff8e-4fcc-9325-33ce12c1e9e3</id>
+      <recordtableid>74e57346-57c9-417e-aa66-8dfd82ac957e</recordtableid>
+      <BoundTo>62cb15e9-dd5d-435d-bd34-a82ca9c454da</BoundTo>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="B_ELSTER_002_ZM.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>41db35b4-c600-4d58-be64-d5fbedc0f188</id>
+    </Content>
+    <Content Include="B_ELSTER_002_ZM.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>0138ccc6-8e42-4c5b-9984-18a99b92e778</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="recordings_notepad">
+      <id>d609329c-412c-4669-8a68-9a29384dd3f2</id>
+    </Folder>
+    <Folder Include="Recordings">
+      <id>b88c555f-ca93-4f22-a51b-df03562c8077</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{E57A51D3-7964-4433-9094-08C3D291179A}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="de97ebd1-f72e-4629-b3aa-569a4d149db2"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ProgEnde"
+	namespace="E_BSK_001.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="78babdf5-713c-4f4b-9e67-49a987724bbc">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="29f13cee-11e3-452b-9a87-9f18744aac08"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='mdiBestellung']/titlebar[@accessiblerole='TitleBar']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="97c12a4c-a270-4ef4-b1e9-0a22f6956002"
+	name="E_BSK_001Repository"
+	relativepath="..\E_BSK_001Repository.rxrep">
+		<codegen
+		classname="E_BSK_001Repository"
+		namespace="E_BSK_001">
+		</codegen>
+		<rootfolder
+		id="917be406-dcff-4078-9fc6-da6cfe78beca"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ProgEnde.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll
+		</reference>
+	</references>
+</recordtable>

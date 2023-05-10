@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="3cc15939-e434-4f1b-adee-27caec0aa93a"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_ZAHL_004.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="9d070d33-1400-42f6-a64a-9551c6419f5c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c3aaa37a-4c7b-409b-923c-6d1ae19a5c51"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZahlMain']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="66029fff-f4d8-46cd-aee6-f8a699765306"
+	name="B_ZAHL_004Repository"
+	relativepath="..\B_ZAHL_004Repository.rxrep">
+		<codegen
+		classname="B_ZAHL_004Repository"
+		namespace="B_ZAHL_004">
+		</codegen>
+		<rootfolder
+		id="14f16f5c-dc3a-44f3-9353-d66523786db2"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

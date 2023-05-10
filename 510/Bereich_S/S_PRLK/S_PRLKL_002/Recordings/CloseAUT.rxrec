@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a1a93fa1-99ea-42ba-a762-9179fcf3a86e"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="S_PRLKL_002.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="effe1b2f-537c-4bff-9064-8d93a46b9813">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="527821a8-84a9-4efe-9792-3de5b62615ea"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='frmPrlk']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="ee17f2c2-9fc4-43fa-a7ab-52eaf60c33d3"
+	name="S_PRLKL_002Repository"
+	relativepath="..\S_PRLKL_002Repository.rxrep">
+		<codegen
+		classname="S_PRLKL_002Repository"
+		namespace="S_PRLKL_002">
+		</codegen>
+		<rootfolder
+		id="d8b03f8c-b7bc-4dd1-a5ff-f4e4c4935f78"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll
+		</reference>
+	</references>
+</recordtable>

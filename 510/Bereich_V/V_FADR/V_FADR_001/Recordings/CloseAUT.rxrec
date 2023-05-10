@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="bb59ec77-ffd9-4618-b1c9-070b51879f80"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="V_FADR_001.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="bea0f6d3-0f83-4132-9c3e-0908658320a9">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1dc81752-b411-4c29-947c-e8c8dbe2e9af"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblFadr']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="3573c847-c05b-404b-9198-403c8695bf74"
+	name="V_FADR_001Repository"
+	relativepath="..\V_FADR_001Repository.rxrep">
+		<codegen
+		classname="V_FADR_001Repository"
+		namespace="V_FADR_001">
+		</codegen>
+		<rootfolder
+		id="ce11302c-877d-4915-a90e-eab4191647e2"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{DBB0EB7F-262B-4846-BD5F-986C2FB20F2B}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>B_UVA_004</RootNamespace>
+    <AssemblyName>B_UVA_004</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>bd69fea7-ddb1-437b-bf76-c7046404826e</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>7d2284c3-1003-4bb4-8d0d-0e756d63032d</id>
+    </Compile>
+    <Compile Include="B_UVA_004Repository.cs">
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+      <DependentUpon>B_UVA_004Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>9007bf0d-7c38-4fe3-ad0f-db7279791406</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>42a637bd-3fc6-444c-992c-a5e02d472e71</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_Formulare_200.cs">
+      <DependentUpon>CloseAUT_Formulare_200.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a8bfb13a-9f61-438a-9b86-2c30002b75eb</id>
+      <BoundTo>9f3da5bb-8a75-461a-b06f-4f34361296e3</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_Formulare_200.UserCode.cs">
+      <DependentUpon>CloseAUT_Formulare_200.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>98997142-38ae-4323-9649-8f928a96490b</id>
+      <BoundTo>9f3da5bb-8a75-461a-b06f-4f34361296e3</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Close_Notepad.cs">
+      <DependentUpon>Close_Notepad.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>463c0516-7fdc-47b6-bf7d-ed25450839b9</id>
+      <BoundTo>d25c097a-5aa7-4aff-a306-3fe32c78d2e3</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Close_Notepad.UserCode.cs">
+      <DependentUpon>Close_Notepad.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f6e12429-2137-45c5-9dc0-59b54ad12a4d</id>
+      <BoundTo>d25c097a-5aa7-4aff-a306-3fe32c78d2e3</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Druckdialog_schliessen.cs">
+      <DependentUpon>Druckdialog_schliessen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3da3246e-866f-41b2-bbe7-337fe6d5318d</id>
+      <BoundTo>30f4060c-fda8-470e-ab50-c3a9551e5e85</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Druckdialog_schliessen.UserCode.cs">
+      <DependentUpon>Druckdialog_schliessen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a9a0ea6a-a12a-4343-a2d7-cfa4770b3018</id>
+      <BoundTo>30f4060c-fda8-470e-ab50-c3a9551e5e85</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Druck_Tabelle_schliessen.cs">
+      <DependentUpon>Druck_Tabelle_schliessen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a2073d20-31e1-4e4e-8301-0338ad622fe5</id>
+      <BoundTo>3068532b-ab1c-4352-b97b-c8830d360513</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Druck_Tabelle_schliessen.UserCode.cs">
+      <DependentUpon>Druck_Tabelle_schliessen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c4e03c79-b476-4afa-b4e6-d50a658a65da</id>
+      <BoundTo>3068532b-ab1c-4352-b97b-c8830d360513</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Druck_UVA_Werte_aufrufen.cs">
+      <DependentUpon>Druck_UVA_Werte_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5e227b4b-fa77-40f6-90f8-0a04f2b74f28</id>
+      <BoundTo>b2e8f226-a8fa-4f51-93a3-eef41c33a5ba</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Druck_UVA_Werte_aufrufen.UserCode.cs">
+      <DependentUpon>Druck_UVA_Werte_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>af6eeb64-250c-472e-aef6-9976d865a45d</id>
+      <BoundTo>b2e8f226-a8fa-4f51-93a3-eef41c33a5ba</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Druck_UVA_Werte_schliessen.cs">
+      <BoundTo>a78f86c3-ad7f-40fb-9440-034bc0c51f07</BoundTo>
+      <DependentUpon>Druck_UVA_Werte_schliessen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e3b73099-4b2a-41a7-a5ac-445520e3f83e</id>
+    </Compile>
+    <Compile Include="Recordings\Druck_UVA_Werte_schliessen.UserCode.cs">
+      <BoundTo>a78f86c3-ad7f-40fb-9440-034bc0c51f07</BoundTo>
+      <DependentUpon>Druck_UVA_Werte_schliessen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3a37eced-5771-462f-a4f9-dfc4ea539f3f</id>
+    </Compile>
+    <Compile Include="Recordings\StartAUT_Formulare_200.cs">
+      <DependentUpon>StartAUT_Formulare_200.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>46ffee34-b471-4c3f-85f9-9b7f0afc9956</id>
+      <BoundTo>fac6404c-e499-48ec-aeea-654f30d67de9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT_Formulare_200.UserCode.cs">
+      <DependentUpon>StartAUT_Formulare_200.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>108c2691-3747-4e35-a0be-7ed47f38656c</id>
+      <BoundTo>fac6404c-e499-48ec-aeea-654f30d67de9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tagesdatum_ermitteln.cs">
+      <BoundTo>07284b11-4f56-47aa-b489-9927298291d2</BoundTo>
+      <DependentUpon>Tagesdatum_ermitteln.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e0db7de2-3f08-406b-8879-4f14df77a8b7</id>
+    </Compile>
+    <Compile Include="Recordings\Tagesdatum_ermitteln.UserCode.cs">
+      <BoundTo>07284b11-4f56-47aa-b489-9927298291d2</BoundTo>
+      <DependentUpon>Tagesdatum_ermitteln.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>69de89e0-b32c-4560-9bc3-0e2885045d0b</id>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_ausgeben.cs">
+      <DependentUpon>Tabelle_ausgeben.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ff454bd9-9e0f-4a1e-9809-b23cbcc61cf2</id>
+      <BoundTo>d7bda9e0-2be8-4585-b84c-721f980e961e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_ausgeben.UserCode.cs">
+      <DependentUpon>Tabelle_ausgeben.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1a1363e4-2545-40c2-9541-a52ef3129d13</id>
+      <BoundTo>d7bda9e0-2be8-4585-b84c-721f980e961e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\UVA_Druck_Form_NEU_auswaehlen.cs">
+      <DependentUpon>UVA_Druck_Form_NEU_auswaehlen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>92848d2f-c6cb-42e4-9dba-1db293887d92</id>
+      <BoundTo>afc6bd76-c737-45e6-bfad-64731711acdd</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\UVA_Druck_Form_NEU_auswaehlen.UserCode.cs">
+      <DependentUpon>UVA_Druck_Form_NEU_auswaehlen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ff1f533b-285b-490a-86a5-a9422c0fa96f</id>
+      <BoundTo>afc6bd76-c737-45e6-bfad-64731711acdd</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular\Details_Zeilen_Form_NEU_aufrufen.cs">
+      <DependentUpon>Details_Zeilen_Form_NEU_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0542314d-865d-4e22-b757-939f0f0626e5</id>
+      <BoundTo>7086e59c-807f-4d88-9a90-6dfd8fb1e442</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular\Details_Zeilen_Form_NEU_aufrufen.UserCode.cs">
+      <DependentUpon>Details_Zeilen_Form_NEU_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c9615a76-2511-4048-a448-fbc84aa14252</id>
+      <BoundTo>7086e59c-807f-4d88-9a90-6dfd8fb1e442</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular\Details_Zeilen_Form_NEU_VORJAHR_aufrufen.cs">
+      <DependentUpon>Details_Zeilen_Form_NEU_VORJAHR_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6b9e2aef-8880-4778-b59b-162e98edbedb</id>
+      <BoundTo>afeb6462-783d-41fc-84d2-5ec89d6e9639</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular\Details_Zeilen_Form_NEU_VORJAHR_aufrufen.UserCode.cs">
+      <DependentUpon>Details_Zeilen_Form_NEU_VORJAHR_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e9c613c0-ecef-40a2-8768-802a0e7b587d</id>
+      <BoundTo>afeb6462-783d-41fc-84d2-5ec89d6e9639</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular\Details_Zeilen_schliessen.cs">
+      <DependentUpon>Details_Zeilen_schliessen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>49bb60d6-e4d2-4d7d-8152-4c2ec2b3f6f1</id>
+      <BoundTo>0926db4f-418a-49fb-979b-bfb03ff67f10</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular\Details_Zeilen_schliessen.UserCode.cs">
+      <DependentUpon>Details_Zeilen_schliessen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>84e4ccb1-c3a1-4c6d-96de-3661b8d92e00</id>
+      <BoundTo>0926db4f-418a-49fb-979b-bfb03ff67f10</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular\USt_Codes_kopieren_A20_2_nach_NEU_VORJAHR.cs">
+      <DependentUpon>USt_Codes_kopieren_A20_2_nach_NEU_VORJAHR.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>482bc789-9cc6-4b8c-9e4a-500909a5939b</id>
+      <BoundTo>78cbd5be-8c9b-47ac-ab77-97fa651bbb90</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular\USt_Codes_kopieren_A20_2_nach_NEU_VORJAHR.UserCode.cs">
+      <DependentUpon>USt_Codes_kopieren_A20_2_nach_NEU_VORJAHR.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>174b397f-2840-4e0c-bd4d-b76284da6877</id>
+      <BoundTo>78cbd5be-8c9b-47ac-ab77-97fa651bbb90</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular\USt_Codes_kopieren_A20_nach_NEU.cs">
+      <DependentUpon>USt_Codes_kopieren_A20_nach_NEU.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2f28cbad-b760-4166-a358-65ba9ce39e93</id>
+      <BoundTo>3a38f271-e766-4795-b469-cffa3cb6f31b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular\USt_Codes_kopieren_A20_nach_NEU.UserCode.cs">
+      <DependentUpon>USt_Codes_kopieren_A20_nach_NEU.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7a53d98a-0236-41ba-bb4e-33226baa5ca8</id>
+      <BoundTo>3a38f271-e766-4795-b469-cffa3cb6f31b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular\USt_Codes_kopieren_A20_nach_NEU_VORJAHR.cs">
+      <DependentUpon>USt_Codes_kopieren_A20_nach_NEU_VORJAHR.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3ca6279f-d0b7-42f5-9dd8-ed9e5d62926e</id>
+      <BoundTo>8b84c03e-cf01-4a5d-8b0a-674fee5386dc</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular\USt_Codes_kopieren_A20_nach_NEU_VORJAHR.UserCode.cs">
+      <DependentUpon>USt_Codes_kopieren_A20_nach_NEU_VORJAHR.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a1fe3c88-1f40-470e-8e80-0204068a3815</id>
+      <BoundTo>8b84c03e-cf01-4a5d-8b0a-674fee5386dc</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular\Zuordnungen_Form_NEU_VORJAHR_KZ000_aufrufen.cs">
+      <DependentUpon>Zuordnungen_Form_NEU_VORJAHR_KZ000_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c9fe329a-568e-4124-829d-a1c2b9b74bc4</id>
+      <BoundTo>84dd3c1d-2bd6-491a-a212-8686ea6a4f05</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular\Zuordnungen_Form_NEU_VORJAHR_KZ000_aufrufen.UserCode.cs">
+      <DependentUpon>Zuordnungen_Form_NEU_VORJAHR_KZ000_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1a049b79-7b58-4a53-9c6c-a485aaf5c810</id>
+      <BoundTo>84dd3c1d-2bd6-491a-a212-8686ea6a4f05</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular\Zuordnungen_Form_KZ000_pruefen.cs">
+      <DependentUpon>Zuordnungen_Form_KZ000_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>25e17124-59c7-4730-99e0-72fc930dc281</id>
+      <BoundTo>6b1e74c5-c1bf-4a07-b94e-6fc508e50e2d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular\Zuordnungen_Form_KZ000_pruefen.UserCode.cs">
+      <DependentUpon>Zuordnungen_Form_KZ000_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d917e88c-09a1-437f-8884-01ee14badf95</id>
+      <BoundTo>6b1e74c5-c1bf-4a07-b94e-6fc508e50e2d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular\Zuordnungen_Form_NEU_KZ000_aufrufen.cs">
+      <DependentUpon>Zuordnungen_Form_NEU_KZ000_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>068aaccb-0e9e-4259-8c0b-9c1025945e3b</id>
+      <BoundTo>20dbf5a4-851f-436d-bafe-3f0b877396ba</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular\Zuordnungen_Form_NEU_KZ000_aufrufen.UserCode.cs">
+      <DependentUpon>Zuordnungen_Form_NEU_KZ000_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>17103b0d-d82b-40ad-96fb-3d2548fa6fa6</id>
+      <BoundTo>20dbf5a4-851f-436d-bafe-3f0b877396ba</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular\Zuordnungen_schliessen.cs">
+      <DependentUpon>Zuordnungen_schliessen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c8a01f76-b48f-49e6-b724-ca902fdecab7</id>
+      <BoundTo>55038857-fef5-45cc-b98c-c86e06abd4d4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular\Zuordnungen_schliessen.UserCode.cs">
+      <DependentUpon>Zuordnungen_schliessen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>feb84d91-28d8-4d44-b159-e77a257f598f</id>
+      <BoundTo>55038857-fef5-45cc-b98c-c86e06abd4d4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_1\UVA_2017_1_PDF.cs">
+      <DependentUpon>UVA_2017_1_PDF.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0e6771bc-cc08-4c83-ba52-9bead5128c94</id>
+      <BoundTo>298d79be-330a-4aa1-bdcb-11c6e616207b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_1\UVA_2017_1_PDF.UserCode.cs">
+      <DependentUpon>UVA_2017_1_PDF.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fd312c76-f68c-40a7-9772-2af95d9dcb0e</id>
+      <BoundTo>298d79be-330a-4aa1-bdcb-11c6e616207b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_1\UVA_2017_1_Tabelle_pruefen.cs">
+      <DependentUpon>UVA_2017_1_Tabelle_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cdf9be09-6fa9-4380-bba1-4de83534488b</id>
+      <BoundTo>db8a94fa-0312-4136-9c1b-35a485822579</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_1\UVA_2017_1_Tabelle_pruefen.UserCode.cs">
+      <DependentUpon>UVA_2017_1_Tabelle_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b9d8bb41-5f15-4107-8242-229c5200904c</id>
+      <BoundTo>db8a94fa-0312-4136-9c1b-35a485822579</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_1\UVA_2017_1_U30_ausgeben.cs">
+      <DependentUpon>UVA_2017_1_U30_ausgeben.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>196be71d-e5ad-46be-a88f-7446ee65e978</id>
+      <BoundTo>aae40a7d-b58c-43c0-8703-09df6779a2cc</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_1\UVA_2017_1_U30_ausgeben.UserCode.cs">
+      <DependentUpon>UVA_2017_1_U30_ausgeben.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0f4428b9-d038-4ff0-bb66-334412e87425</id>
+      <BoundTo>aae40a7d-b58c-43c0-8703-09df6779a2cc</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_1\UVA_2017_1_XML_ausgeben.cs">
+      <DependentUpon>UVA_2017_1_XML_ausgeben.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>97d2b380-9d23-4480-984e-9adc597424ca</id>
+      <BoundTo>159c066a-b8a9-4ebc-89d6-8fadaf6f2a7c</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_1\UVA_2017_1_XML_ausgeben.UserCode.cs">
+      <DependentUpon>UVA_2017_1_XML_ausgeben.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5327189e-f362-45dd-bc72-6297ea19ae5a</id>
+      <BoundTo>159c066a-b8a9-4ebc-89d6-8fadaf6f2a7c</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_1\UVA_2017_1_XML_pruefen.cs">
+      <DependentUpon>UVA_2017_1_XML_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e0710049-7c7a-437b-b954-98bc867389ec</id>
+      <BoundTo>7708ac70-6315-4d72-982a-2d676f992bc5</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_1\UVA_2017_1_XML_pruefen.UserCode.cs">
+      <DependentUpon>UVA_2017_1_XML_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b726539d-68fd-4d70-ab79-fad0363a57fa</id>
+      <BoundTo>7708ac70-6315-4d72-982a-2d676f992bc5</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_2\UVA_2017_2_PDF.cs">
+      <DependentUpon>UVA_2017_2_PDF.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1ca41ec0-c0fe-4c50-b334-eb844eec6b2a</id>
+      <BoundTo>29e72fda-7188-431b-b451-7f0ee9293d80</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_2\UVA_2017_2_PDF.UserCode.cs">
+      <DependentUpon>UVA_2017_2_PDF.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0295b693-cd41-4824-a812-c9df31ddb0b7</id>
+      <BoundTo>29e72fda-7188-431b-b451-7f0ee9293d80</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_2\UVA_2017_2_Tabelle_pruefen.cs">
+      <DependentUpon>UVA_2017_2_Tabelle_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bac8bbd8-937e-4bb2-86ae-5b812f3ec8c7</id>
+      <BoundTo>18648949-b2c6-47e9-831c-4363a79ba0db</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_2\UVA_2017_2_Tabelle_pruefen.UserCode.cs">
+      <DependentUpon>UVA_2017_2_Tabelle_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ccfe18fc-bec4-4f6a-a899-6a5c8b701698</id>
+      <BoundTo>18648949-b2c6-47e9-831c-4363a79ba0db</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_2\UVA_2017_2_U30_ausgeben.cs">
+      <DependentUpon>UVA_2017_2_U30_ausgeben.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b63a296f-f236-46d6-977f-d392126f61a2</id>
+      <BoundTo>17b68fd7-e88a-4d92-b09f-4d829d8a32a7</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_2\UVA_2017_2_U30_ausgeben.UserCode.cs">
+      <DependentUpon>UVA_2017_2_U30_ausgeben.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aac8f01b-3018-415e-a7d9-7b62c974dcb1</id>
+      <BoundTo>17b68fd7-e88a-4d92-b09f-4d829d8a32a7</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_2\UVA_2017_2_XML_ausgeben.cs">
+      <DependentUpon>UVA_2017_2_XML_ausgeben.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ca920f68-8ca2-40b7-a922-a2705fff387f</id>
+      <BoundTo>9332288f-8b69-42f7-aa78-776cc380ffd7</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_2\UVA_2017_2_XML_ausgeben.UserCode.cs">
+      <DependentUpon>UVA_2017_2_XML_ausgeben.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>71198a84-c96b-4dbf-9f62-705ffb9b38a3</id>
+      <BoundTo>9332288f-8b69-42f7-aa78-776cc380ffd7</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_2\UVA_2017_2_XML_pruefen.cs">
+      <DependentUpon>UVA_2017_2_XML_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b9b37238-fe7d-4d41-8a41-4eace165f6e3</id>
+      <BoundTo>55fb5b8e-09ce-4e22-8758-44daa252e392</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_2\UVA_2017_2_XML_pruefen.UserCode.cs">
+      <DependentUpon>UVA_2017_2_XML_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c96e90bc-0fbe-4bde-bc10-0d51b3a51304</id>
+      <BoundTo>55fb5b8e-09ce-4e22-8758-44daa252e392</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_3\UVA_2017_3_PDF.cs">
+      <DependentUpon>UVA_2017_3_PDF.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>585656e9-cc9f-4ecb-a401-3450938ef095</id>
+      <BoundTo>75ed7e28-e021-45db-b7a5-4266c15c8acb</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_3\UVA_2017_3_PDF.UserCode.cs">
+      <DependentUpon>UVA_2017_3_PDF.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fcf0f216-3a86-4e4c-83df-0a52f7647f7d</id>
+      <BoundTo>75ed7e28-e021-45db-b7a5-4266c15c8acb</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_3\UVA_2017_3_Tabelle_pruefen.cs">
+      <DependentUpon>UVA_2017_3_Tabelle_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>da14f0c9-45d7-46d8-b2ab-f990e3b55ac5</id>
+      <BoundTo>2c7c2780-ca8d-4237-b327-f424b1f24596</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_3\UVA_2017_3_Tabelle_pruefen.UserCode.cs">
+      <DependentUpon>UVA_2017_3_Tabelle_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fb415290-8571-47ec-bcc0-dfc160d447a7</id>
+      <BoundTo>2c7c2780-ca8d-4237-b327-f424b1f24596</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_3\UVA_2017_3_U30_ausgeben.cs">
+      <DependentUpon>UVA_2017_3_U30_ausgeben.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d9f6fe5f-b128-41d6-949b-cac3ef5accb1</id>
+      <BoundTo>2ca462b8-8ff1-465a-9e18-bbc78d405b0d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_3\UVA_2017_3_U30_ausgeben.UserCode.cs">
+      <DependentUpon>UVA_2017_3_U30_ausgeben.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0601fe59-a734-4870-9c4c-5586f6950951</id>
+      <BoundTo>2ca462b8-8ff1-465a-9e18-bbc78d405b0d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_3\UVA_2017_3_XML_ausgeben.cs">
+      <DependentUpon>UVA_2017_3_XML_ausgeben.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>753bc5e0-3a82-42dc-8f53-9018b92c03e8</id>
+      <BoundTo>ec86db85-0294-46ab-8a37-560e2293c8be</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_3\UVA_2017_3_XML_ausgeben.UserCode.cs">
+      <DependentUpon>UVA_2017_3_XML_ausgeben.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>55cad9e4-1279-4565-80e1-a9f59e672f82</id>
+      <BoundTo>ec86db85-0294-46ab-8a37-560e2293c8be</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_3\UVA_2017_3_XML_pruefen.cs">
+      <DependentUpon>UVA_2017_3_XML_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>62bda6d7-cb08-4d48-8464-fb190b622968</id>
+      <BoundTo>eb6a399f-d5f9-48a1-bf88-535436ed6b35</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Formular_Werte_2017_3\UVA_2017_3_XML_pruefen.UserCode.cs">
+      <DependentUpon>UVA_2017_3_XML_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>71179909-d79e-4032-a7df-afed46fdb38c</id>
+      <BoundTo>eb6a399f-d5f9-48a1-bf88-535436ed6b35</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Jahreserklaerung\Druck_Formular_NEU_VORJAHR_auswaehlen.cs">
+      <DependentUpon>Druck_Formular_NEU_VORJAHR_auswaehlen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9a44c441-20f9-4052-b062-d9e1e7d477a1</id>
+      <BoundTo>b0c7edee-dcc2-4343-90e0-260e9db97e39</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Jahreserklaerung\Druck_Formular_NEU_VORJAHR_auswaehlen.UserCode.cs">
+      <DependentUpon>Druck_Formular_NEU_VORJAHR_auswaehlen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>23cad088-037b-44be-b6d2-0627cdefb12b</id>
+      <BoundTo>b0c7edee-dcc2-4343-90e0-260e9db97e39</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Jahreserklaerung\Reportdatei_U1_Check_NEU_VORJAHR.cs">
+      <DependentUpon>Reportdatei_U1_Check_NEU_VORJAHR.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3eadcbd0-1d79-4aab-8e5e-2e4172f7a028</id>
+      <BoundTo>61513e2a-2bf7-4d48-a249-067454d616ea</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Jahreserklaerung\Reportdatei_U1_Check_NEU_VORJAHR.UserCode.cs">
+      <DependentUpon>Reportdatei_U1_Check_NEU_VORJAHR.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b9e79f9a-4d90-44b1-b452-31a12e0965d7</id>
+      <BoundTo>61513e2a-2bf7-4d48-a249-067454d616ea</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Jahreserklaerung\U1_2017_1_3_Jahreserklaerung_einschraenken.cs">
+      <BoundTo>a198728e-d9e1-41ab-b648-505617de4e41</BoundTo>
+      <DependentUpon>U1_2017_1_3_Jahreserklaerung_einschraenken.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e8da93d2-9ebd-42af-a9a7-fa713f1b6f1d</id>
+    </Compile>
+    <Compile Include="Recordings_Jahreserklaerung\U1_2017_1_3_Jahreserklaerung_einschraenken.UserCode.cs">
+      <BoundTo>a198728e-d9e1-41ab-b648-505617de4e41</BoundTo>
+      <DependentUpon>U1_2017_1_3_Jahreserklaerung_einschraenken.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>84c09e2c-94f7-41dc-8c58-41ecb78231c7</id>
+    </Compile>
+    <Compile Include="Recordings_Jahreserklaerung\U1_2017_1_3_PDF_ausgeben.cs">
+      <DependentUpon>U1_2017_1_3_PDF_ausgeben.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>09e75fb9-7192-4e7f-898d-113864e403bc</id>
+      <BoundTo>89808fb1-0740-46f3-ace6-a681ed101897</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Jahreserklaerung\U1_2017_1_3_PDF_ausgeben.UserCode.cs">
+      <DependentUpon>U1_2017_1_3_PDF_ausgeben.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>01a460b2-7a2d-45ea-bafe-12fd8f3a81bf</id>
+      <BoundTo>89808fb1-0740-46f3-ace6-a681ed101897</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Jahreserklaerung\U1_2017_1_3_Tabelle_pruefen.cs">
+      <DependentUpon>U1_2017_1_3_Tabelle_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>314fcc0a-00b0-41f5-8c4c-72872b665acb</id>
+      <BoundTo>9e70b709-bc15-44e4-8439-0fba2244de50</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Jahreserklaerung\U1_2017_1_3_Tabelle_pruefen.UserCode.cs">
+      <DependentUpon>U1_2017_1_3_Tabelle_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>889c58f8-09df-4cb7-8354-16a59cff5117</id>
+      <BoundTo>9e70b709-bc15-44e4-8439-0fba2244de50</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Jahreserklaerung\U1_2017_1_3_XML_ausgeben.cs">
+      <DependentUpon>U1_2017_1_3_XML_ausgeben.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>07fbce96-90f3-4cb2-bd62-77ff49c84351</id>
+      <BoundTo>360a8f42-5c59-4f7c-ba01-5a68ae1f0f2f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Jahreserklaerung\U1_2017_1_3_XML_ausgeben.UserCode.cs">
+      <DependentUpon>U1_2017_1_3_XML_ausgeben.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6b0e7a96-890d-4a34-8289-7611e3c29f37</id>
+      <BoundTo>360a8f42-5c59-4f7c-ba01-5a68ae1f0f2f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Jahreserklaerung\U1_2017_1_3_XML_pruefen.cs">
+      <DependentUpon>U1_2017_1_3_XML_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2d54b322-a049-458e-9ae0-c3a9b6425d84</id>
+      <BoundTo>333c5f1c-ad92-4057-aeb1-475bd5e0e70a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Jahreserklaerung\U1_2017_1_3_XML_pruefen.UserCode.cs">
+      <DependentUpon>U1_2017_1_3_XML_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c29cb0df-ab8f-498f-b49c-b813919aec6d</id>
+      <BoundTo>333c5f1c-ad92-4057-aeb1-475bd5e0e70a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Jahreserklaerung\U1_Druckdialog_aufrufen.cs">
+      <DependentUpon>U1_Druckdialog_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9d90aa66-13c8-451d-bba3-52dc7d8127e8</id>
+      <BoundTo>fab75d68-506b-429e-a472-99c533b966ca</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Jahreserklaerung\U1_Druckdialog_aufrufen.UserCode.cs">
+      <DependentUpon>U1_Druckdialog_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a804b591-3797-4386-b835-70b1cdb99722</id>
+      <BoundTo>fab75d68-506b-429e-a472-99c533b966ca</BoundTo>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>8c101221-6860-4ca8-ae75-e1496210cab8</id>
+    </None>
+    <None Include="B_UVA_004Repository.rximg">
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+      <DependentUpon>B_UVA_004Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>b5cad679-26a4-4e4b-8d43-278a4ca9295c</id>
+    </None>
+    <None Include="B_UVA_004Repository.rxrep">
+      <id>bd69fea7-ddb1-437b-bf76-c7046404826e</id>
+      <repoid>99059809-0319-40ee-802c-e6619c115190</repoid>
+      <reporootid>6447d753-8887-4756-a9ec-59ad7264be14</reporootid>
+    </None>
+    <None Include="Recordings\CloseAUT_Formulare_200.rxrec">
+      <id>9f3da5bb-8a75-461a-b06f-4f34361296e3</id>
+      <recordtableid>1412b787-d613-4c86-89f0-58a666813da9</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings\Close_Notepad.rxrec">
+      <id>d25c097a-5aa7-4aff-a306-3fe32c78d2e3</id>
+      <recordtableid>b3720758-5913-4f66-8aaf-bbdf570f5841</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings\Druckdialog_schliessen.rxrec">
+      <id>30f4060c-fda8-470e-ab50-c3a9551e5e85</id>
+      <recordtableid>0fa8b30b-ed61-44c5-a993-14884e04ef8b</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings\Druck_Tabelle_schliessen.rxrec">
+      <id>3068532b-ab1c-4352-b97b-c8830d360513</id>
+      <recordtableid>e7a1d983-5264-4061-8400-03e972ef2985</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings\Druck_UVA_Werte_aufrufen.rxrec">
+      <id>b2e8f226-a8fa-4f51-93a3-eef41c33a5ba</id>
+      <recordtableid>81d8e120-937d-4cee-bc11-0a8fd3d1c1c5</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings\Druck_UVA_Werte_schliessen.rxrec">
+      <id>a78f86c3-ad7f-40fb-9440-034bc0c51f07</id>
+      <recordtableid>46892c5c-5ca8-45c6-80a0-1c273f12f657</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings\StartAUT_Formulare_200.rxrec">
+      <id>fac6404c-e499-48ec-aeea-654f30d67de9</id>
+      <recordtableid>c6fcf9dd-5463-4429-8623-bd080418f054</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings\Tagesdatum_ermitteln.rxrec">
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+      <id>07284b11-4f56-47aa-b489-9927298291d2</id>
+      <recordtableid>d7e6ae51-507c-4f15-8d42-99e4c968891a</recordtableid>
+    </None>
+    <None Include="Recordings\Tabelle_ausgeben.rxrec">
+      <id>d7bda9e0-2be8-4585-b84c-721f980e961e</id>
+      <recordtableid>638ce650-923f-4af8-85c3-28ea5291d565</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings\UVA_Druck_Form_NEU_auswaehlen.rxrec">
+      <id>afc6bd76-c737-45e6-bfad-64731711acdd</id>
+      <recordtableid>bd5fbb6a-62c6-40ca-9d88-4966fe0ce0b2</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular\Details_Zeilen_Form_NEU_aufrufen.rxrec">
+      <id>7086e59c-807f-4d88-9a90-6dfd8fb1e442</id>
+      <recordtableid>715dea6d-0d32-47ea-8e79-2412337182b8</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular\Details_Zeilen_Form_NEU_VORJAHR_aufrufen.rxrec">
+      <id>afeb6462-783d-41fc-84d2-5ec89d6e9639</id>
+      <recordtableid>ae3fa117-e1b2-438a-a51f-ada34c70fac6</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular\Details_Zeilen_schliessen.rxrec">
+      <id>0926db4f-418a-49fb-979b-bfb03ff67f10</id>
+      <recordtableid>75614c9a-05d4-4097-8e26-ff43dcb0d260</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular\USt_Codes_kopieren_A20_2_nach_NEU_VORJAHR.rxrec">
+      <id>78cbd5be-8c9b-47ac-ab77-97fa651bbb90</id>
+      <recordtableid>732756db-3984-45f9-a129-bcf2825dd783</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular\USt_Codes_kopieren_A20_nach_NEU.rxrec">
+      <id>3a38f271-e766-4795-b469-cffa3cb6f31b</id>
+      <recordtableid>11a3e9a1-8dc0-4bf0-bf3c-10e26b2fc707</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular\USt_Codes_kopieren_A20_nach_NEU_VORJAHR.rxrec">
+      <id>8b84c03e-cf01-4a5d-8b0a-674fee5386dc</id>
+      <recordtableid>0b522eeb-e97c-448f-a5a0-21c64e96cf24</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular\Zuordnungen_Form_NEU_VORJAHR_KZ000_aufrufen.rxrec">
+      <id>84dd3c1d-2bd6-491a-a212-8686ea6a4f05</id>
+      <recordtableid>5f297dae-a8e4-43c0-8cba-5f98637eec80</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular\Zuordnungen_Form_KZ000_pruefen.rxrec">
+      <id>6b1e74c5-c1bf-4a07-b94e-6fc508e50e2d</id>
+      <recordtableid>d638a854-b46d-4c8e-9dbb-315e5d93b4bf</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular\Zuordnungen_Form_NEU_KZ000_aufrufen.rxrec">
+      <id>20dbf5a4-851f-436d-bafe-3f0b877396ba</id>
+      <recordtableid>0eccd9d7-a38b-4e9c-8aa3-4e394b9681ef</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular\Zuordnungen_schliessen.rxrec">
+      <id>55038857-fef5-45cc-b98c-c86e06abd4d4</id>
+      <recordtableid>bf19700f-a876-46d6-96e9-707e83292081</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular_Werte_2017_1\UVA_2017_1_PDF.rxrec">
+      <id>298d79be-330a-4aa1-bdcb-11c6e616207b</id>
+      <recordtableid>a2a4950b-7614-492e-8878-76a71e6bd22e</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular_Werte_2017_1\UVA_2017_1_Tabelle_pruefen.rxrec">
+      <id>db8a94fa-0312-4136-9c1b-35a485822579</id>
+      <recordtableid>c6cd2552-dc77-4846-a686-7a532c0823ce</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular_Werte_2017_1\UVA_2017_1_U30_ausgeben.rxrec">
+      <id>aae40a7d-b58c-43c0-8703-09df6779a2cc</id>
+      <recordtableid>2365e249-9daa-414c-bf7b-72953ec71062</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular_Werte_2017_1\UVA_2017_1_XML_ausgeben.rxrec">
+      <id>159c066a-b8a9-4ebc-89d6-8fadaf6f2a7c</id>
+      <recordtableid>9ef73101-568b-4a87-a04f-537339fb6f35</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular_Werte_2017_1\UVA_2017_1_XML_pruefen.rxrec">
+      <id>7708ac70-6315-4d72-982a-2d676f992bc5</id>
+      <recordtableid>4085de15-4ae7-4817-8be7-7761b61c74ac</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular_Werte_2017_2\UVA_2017_2_PDF.rxrec">
+      <id>29e72fda-7188-431b-b451-7f0ee9293d80</id>
+      <recordtableid>fe6c5b47-ff33-4962-ade6-389164cd13ca</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular_Werte_2017_2\UVA_2017_2_Tabelle_pruefen.rxrec">
+      <id>18648949-b2c6-47e9-831c-4363a79ba0db</id>
+      <recordtableid>6c1cd5d8-81eb-41ad-b408-e026c09ee72b</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular_Werte_2017_2\UVA_2017_2_U30_ausgeben.rxrec">
+      <id>17b68fd7-e88a-4d92-b09f-4d829d8a32a7</id>
+      <recordtableid>ee22b175-240c-4246-bfef-1c58ef6d4244</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular_Werte_2017_2\UVA_2017_2_XML_ausgeben.rxrec">
+      <id>9332288f-8b69-42f7-aa78-776cc380ffd7</id>
+      <recordtableid>262684ea-2925-485f-bfe9-0ef040c87e37</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular_Werte_2017_2\UVA_2017_2_XML_pruefen.rxrec">
+      <id>55fb5b8e-09ce-4e22-8758-44daa252e392</id>
+      <recordtableid>10de0771-433c-4fa2-bab7-6bb354816243</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular_Werte_2017_3\UVA_2017_3_PDF.rxrec">
+      <id>75ed7e28-e021-45db-b7a5-4266c15c8acb</id>
+      <recordtableid>e5719f09-f5f8-4846-b095-56877087c237</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular_Werte_2017_3\UVA_2017_3_Tabelle_pruefen.rxrec">
+      <id>2c7c2780-ca8d-4237-b327-f424b1f24596</id>
+      <recordtableid>cdad6826-7bca-4913-92ce-27814fcaa147</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular_Werte_2017_3\UVA_2017_3_U30_ausgeben.rxrec">
+      <id>2ca462b8-8ff1-465a-9e18-bbc78d405b0d</id>
+      <recordtableid>752f5c94-d303-4c75-a153-10f450777e8f</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular_Werte_2017_3\UVA_2017_3_XML_ausgeben.rxrec">
+      <id>ec86db85-0294-46ab-8a37-560e2293c8be</id>
+      <recordtableid>ce15e118-6cfc-40ed-a79f-c33ebacba3da</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Formular_Werte_2017_3\UVA_2017_3_XML_pruefen.rxrec">
+      <id>eb6a399f-d5f9-48a1-bf88-535436ed6b35</id>
+      <recordtableid>049664ff-5573-485a-9b5f-527b9948dadf</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Jahreserklaerung\Druck_Formular_NEU_VORJAHR_auswaehlen.rxrec">
+      <id>b0c7edee-dcc2-4343-90e0-260e9db97e39</id>
+      <recordtableid>85a49576-de33-4707-be8a-3744b692dde9</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Jahreserklaerung\Reportdatei_U1_Check_NEU_VORJAHR.rxrec">
+      <id>61513e2a-2bf7-4d48-a249-067454d616ea</id>
+      <recordtableid>a2c61c33-f6b6-4f4d-af6f-29557772e99d</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Jahreserklaerung\U1_2017_1_3_Jahreserklaerung_einschraenken.rxrec">
+      <id>a198728e-d9e1-41ab-b648-505617de4e41</id>
+      <recordtableid>f8612f86-86ba-4c7d-aa44-b51ed570e6a0</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Jahreserklaerung\U1_2017_1_3_PDF_ausgeben.rxrec">
+      <id>89808fb1-0740-46f3-ace6-a681ed101897</id>
+      <recordtableid>7b24a926-e4e5-4cc2-a3f8-16f0f894015e</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Jahreserklaerung\U1_2017_1_3_Tabelle_pruefen.rxrec">
+      <id>9e70b709-bc15-44e4-8439-0fba2244de50</id>
+      <recordtableid>53429338-dbd8-4e00-b84c-8e2a9b58c624</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Jahreserklaerung\U1_2017_1_3_XML_ausgeben.rxrec">
+      <id>360a8f42-5c59-4f7c-ba01-5a68ae1f0f2f</id>
+      <recordtableid>e3633ebe-1dcd-4271-89df-3d87bcea3394</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Jahreserklaerung\U1_2017_1_3_XML_pruefen.rxrec">
+      <id>333c5f1c-ad92-4057-aeb1-475bd5e0e70a</id>
+      <recordtableid>14cf054f-6ec2-4463-ac17-5a838b39828c</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+    <None Include="Recordings_Jahreserklaerung\U1_Druckdialog_aufrufen.rxrec">
+      <id>fab75d68-506b-429e-a472-99c533b966ca</id>
+      <recordtableid>891f33db-bd42-441c-83f0-6a421ad68b0e</recordtableid>
+      <BoundTo>bd69fea7-ddb1-437b-bf76-c7046404826e</BoundTo>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="B_UVA_004.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>bd8aeb1a-0798-4200-8d4e-460494d7e09c</id>
+    </Content>
+    <Content Include="B_UVA_004.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>3d6b08c1-4d36-4d2c-8633-251dd5c71fd7</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings">
+      <id>3970d369-4368-4c87-81ae-dcc466cb3a4e</id>
+    </Folder>
+    <Folder Include="Recordings_Formular">
+      <id>0e95b706-7550-4e14-865a-49e7ad607cad</id>
+    </Folder>
+    <Folder Include="Recordings_Formular_Werte_2017_1">
+      <id>e729966b-c216-49f9-a7f4-f7b538d7e352</id>
+    </Folder>
+    <Folder Include="Recordings_Formular_Werte_2017_2">
+      <id>62d9cb24-55f5-4446-a358-6358727b6ad3</id>
+    </Folder>
+    <Folder Include="Recordings_Formular_Werte_2017_3">
+      <id>906b3811-70a0-4073-b763-dc647c0f7843</id>
+    </Folder>
+    <Folder Include="Recordings_Jahreserklaerung">
+      <id>677163e9-6c0b-4ae9-a3b0-bdd4c7ab1297</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{E0F796CA-4E9E-40F9-B305-2E4D002EB842}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

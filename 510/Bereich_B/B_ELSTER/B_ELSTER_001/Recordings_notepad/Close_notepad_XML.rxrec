@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="3bca96a0-36e4-44c9-840d-4e262a052381"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_notepad_XML"
+	namespace="B_ELSTER_001.Recordings_notepad">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="ed04b093-ebba-417b-876d-873fefc83794">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="503f81b6-0e12-4bb7-9111-65baf38d567b"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='STADUEV.XML - Editor']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="77e7d5d1-13c9-4e49-915a-744735a3d73e"
+	name="B_ELSTER_001Repository"
+	relativepath="..\B_ELSTER_001Repository.rxrep">
+		<codegen
+		classname="B_ELSTER_001Repository"
+		namespace="B_ELSTER_001">
+		</codegen>
+		<rootfolder
+		id="1262a2ee-e29b-445e-877e-ecfaf34fa4ca"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_notepad_XML.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

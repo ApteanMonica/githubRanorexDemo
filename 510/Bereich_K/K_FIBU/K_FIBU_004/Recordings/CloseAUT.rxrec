@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="311e9ec8-7ab6-41f0-ba37-016c8b791fe3"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="K_FIBU_004.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="66c763a4-d366-4d76-af0f-102725284a4f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b9555472-6750-4926-bd84-d5ea02ba4d4c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmVerbuch']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="1813cf96-712e-4cb9-848f-37f86d76544e"
+	name="K_FIBU_004Repository"
+	relativepath="..\K_FIBU_004Repository.rxrep">
+		<codegen
+		classname="K_FIBU_004Repository"
+		namespace="K_FIBU_004">
+		</codegen>
+		<rootfolder
+		id="6803c4bc-6c62-44dc-aa40-f07e7b090406"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

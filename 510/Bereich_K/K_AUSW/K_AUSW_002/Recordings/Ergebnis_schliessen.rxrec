@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="b2773a39-e987-4be0-a175-e557ad0ba536"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Ergebnis_schliessen"
+	namespace="K_AUSW_002.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="09090e0f-ea0d-4386-89f0-3380e8f71cea"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+				Search Timeout +2m
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3b64f2c4-6f2a-4ddf-b896-587d1e0bb041"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblAnzeige']/?/?/button[@accessiblename='Schließen']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="017661d7-3daa-4c0f-87ee-8b97d99a6621"
+	name="K_AUSW_002Repository"
+	relativepath="..\K_AUSW_002Repository.rxrep">
+		<codegen
+		classname="K_AUSW_002Repository"
+		namespace="K_AUSW_002">
+		</codegen>
+		<rootfolder
+		id="a9707f99-3948-4eb2-b6fe-2a239e4e0b9d"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Ergebnis_schliessen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

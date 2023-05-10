@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="15ae7dd4-bddb-4e55-9e1b-015d2f5676b5"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_BUKA_002.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="500ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="4db7f927-c013-41e6-950c-70697e794b37">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e4ea87ee-28cb-4c9f-9ebe-614dafa82491"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='tblBuka']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="6bc85a4e-7423-4f4f-bccb-3b3bb2f4e859"
+	name="B_BUKA_002Repository"
+	relativepath="..\B_BUKA_002Repository.rxrep">
+		<codegen
+		classname="B_BUKA_002Repository"
+		namespace="B_BUKA_002">
+		</codegen>
+		<rootfolder
+		id="1eb78021-c66b-403c-9e62-0ffc0f4c8761"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

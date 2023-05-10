@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="895cde33-cb3a-41a2-a214-cc7a554210a6"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="V_LSDR_001.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="0ec884a5-1781-4710-baee-ceb0e078e2d0">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8aa510b5-c2f9-47b4-a3c8-f86104eb56f3"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='tblLsdr']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="239b10dc-a38b-4b8b-9fea-7bc884d516ab"
+	name="V_LSDR_001Repository"
+	relativepath="..\V_LSDR_001Repository.rxrep">
+		<codegen
+		classname="V_LSDR_001Repository"
+		namespace="V_LSDR_001">
+		</codegen>
+		<rootfolder
+		id="0f2f5ad0-11e7-465b-8fbb-8d52505e36f0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

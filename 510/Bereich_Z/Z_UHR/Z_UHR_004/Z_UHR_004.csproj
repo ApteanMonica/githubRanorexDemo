@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{4A9C1D0C-5517-4D21-8A95-D796498657BD}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Z_UHR_004</RootNamespace>
+    <AssemblyName>Z_UHR_004</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper" />
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Delphi" />
+    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.WinForms.Core" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="Ranorex.Plugin.Wpf.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>4e202e74-0472-48de-9d6a-b7fa6f608315</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>fca6230e-94cd-4809-bfcb-e58094877b5f</id>
+    </Compile>
+    <Compile Include="Recording\CloseAUT.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1df467f6-3cd4-4176-8b36-985af0f4fc10</id>
+      <BoundTo>b3194d5d-7b31-41e4-a555-d89121cc0b0f</BoundTo>
+    </Compile>
+    <Compile Include="Recording\CloseAUT.UserCode.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>201950ed-a7f5-45ac-be55-5ca28e237aa8</id>
+      <BoundTo>b3194d5d-7b31-41e4-a555-d89121cc0b0f</BoundTo>
+    </Compile>
+    <Compile Include="Recording\Kontrolle_Genehmgiung.cs">
+      <BoundTo>1829b931-44e9-4af4-9e16-ff1723249b6a</BoundTo>
+      <DependentUpon>Kontrolle_Genehmgiung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>66424d62-b774-4eb8-be1b-d7c0c5ed2adf</id>
+    </Compile>
+    <Compile Include="Recording\Kontrolle_Genehmgiung.UserCode.cs">
+      <BoundTo>1829b931-44e9-4af4-9e16-ff1723249b6a</BoundTo>
+      <DependentUpon>Kontrolle_Genehmgiung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6403a2e3-37f3-4e48-b2e3-3833fb582360</id>
+    </Compile>
+    <Compile Include="Recording\Mitarbeiter_auswaehlen.cs">
+      <BoundTo>ef69fc39-7b6d-4768-a3f5-94d479005bb5</BoundTo>
+      <DependentUpon>Mitarbeiter_auswaehlen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>79fe05bb-4558-4e30-bda2-7b191e97b89c</id>
+    </Compile>
+    <Compile Include="Recording\Mitarbeiter_auswaehlen.UserCode.cs">
+      <BoundTo>ef69fc39-7b6d-4768-a3f5-94d479005bb5</BoundTo>
+      <DependentUpon>Mitarbeiter_auswaehlen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e519a7ef-abc4-46f1-b6f8-4840c0d0ad69</id>
+    </Compile>
+    <Compile Include="Recording\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>df7811ae-5282-4b19-aa21-241ca737db81</id>
+      <BoundTo>3cfc24e4-a4b0-4cee-bd97-b92b403e1345</BoundTo>
+    </Compile>
+    <Compile Include="Recording\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ed55f1f9-c8fe-4507-bb30-e04074a159d0</id>
+      <BoundTo>3cfc24e4-a4b0-4cee-bd97-b92b403e1345</BoundTo>
+    </Compile>
+    <Compile Include="Recording\Urlaubsantrag_laden.cs">
+      <BoundTo>6b09f4d1-1737-4706-975e-dcf74303ea7b</BoundTo>
+      <DependentUpon>Urlaubsantrag_laden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a0096f73-330f-451f-a439-4f7381768e74</id>
+    </Compile>
+    <Compile Include="Recording\Urlaubsantrag_laden.UserCode.cs">
+      <BoundTo>6b09f4d1-1737-4706-975e-dcf74303ea7b</BoundTo>
+      <DependentUpon>Urlaubsantrag_laden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1ebf2b3b-4aeb-409f-8632-c603525bb264</id>
+    </Compile>
+    <Compile Include="Recording\Urlaub_genehmigen.cs">
+      <BoundTo>a8d508b3-d6b6-43ce-b960-87afebd4a168</BoundTo>
+      <DependentUpon>Urlaub_genehmigen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>49ddfd46-f2ab-4422-a4dc-7a970a2f266e</id>
+    </Compile>
+    <Compile Include="Recording\Urlaub_genehmigen.UserCode.cs">
+      <BoundTo>a8d508b3-d6b6-43ce-b960-87afebd4a168</BoundTo>
+      <DependentUpon>Urlaub_genehmigen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fc5c2af3-bf6f-418b-96e8-810e7890abaf</id>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\CloseAUT_ANSPR.cs">
+      <DependentUpon>CloseAUT_ANSPR.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>138a52a2-2698-4031-a982-229d5e852b46</id>
+      <BoundTo>48950804-da35-4c92-984b-28c6c40471a2</BoundTo>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\CloseAUT_ANSPR.UserCode.cs">
+      <DependentUpon>CloseAUT_ANSPR.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ff39f275-9ffa-4a47-95d9-0d2c8d903447</id>
+      <BoundTo>48950804-da35-4c92-984b-28c6c40471a2</BoundTo>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\Close_AUT_2.cs">
+      <BoundTo>8edfdd72-cd9f-4c75-84dc-1234938a5d53</BoundTo>
+      <DependentUpon>Close_AUT_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f196e879-2d47-4453-b256-bf36290ee927</id>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\Close_AUT_2.UserCode.cs">
+      <BoundTo>8edfdd72-cd9f-4c75-84dc-1234938a5d53</BoundTo>
+      <DependentUpon>Close_AUT_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aa249f52-c36b-4b3c-aa2a-bcb51ce74696</id>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\Fehlzeitergebnisse_berechnen.cs">
+      <BoundTo>45564988-3c1d-47eb-8e5c-539afb5f9be6</BoundTo>
+      <DependentUpon>Fehlzeitergebnisse_berechnen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ea8cf176-ee11-491e-8930-61bc122fc863</id>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\Fehlzeitergebnisse_berechnen.UserCode.cs">
+      <BoundTo>45564988-3c1d-47eb-8e5c-539afb5f9be6</BoundTo>
+      <DependentUpon>Fehlzeitergebnisse_berechnen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a6eb0861-2f7c-48be-8a22-e20a44eec456</id>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\Fehlzeitergebnisse_ueberpruefen.cs">
+      <BoundTo>c5498d5c-7f7a-44ba-b181-93a0001ebdfe</BoundTo>
+      <DependentUpon>Fehlzeitergebnisse_ueberpruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1f2850ef-235a-45a1-a2f8-c646ce9878bd</id>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\Fehlzeitergebnisse_ueberpruefen.UserCode.cs">
+      <BoundTo>c5498d5c-7f7a-44ba-b181-93a0001ebdfe</BoundTo>
+      <DependentUpon>Fehlzeitergebnisse_ueberpruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>549cd6f9-ba53-49f0-ad7d-b0fc63aa8716</id>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\Kennzahlen_Monat_1_ueberpruefen.cs">
+      <BoundTo>22c881cb-9b87-4f84-9e0c-1f0e2a70487a</BoundTo>
+      <DependentUpon>Kennzahlen_Monat_1_ueberpruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9f403ed2-7e69-4650-92a0-87d06ab44245</id>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\Kennzahlen_Monat_1_ueberpruefen.UserCode.cs">
+      <BoundTo>22c881cb-9b87-4f84-9e0c-1f0e2a70487a</BoundTo>
+      <DependentUpon>Kennzahlen_Monat_1_ueberpruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5be8d1f1-7aa1-4bb4-8870-84353f5ff60f</id>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\Kennzahlen_Monat_2_laden.cs">
+      <BoundTo>7b594851-7817-4647-b16e-8b39092924d3</BoundTo>
+      <DependentUpon>Kennzahlen_Monat_2_laden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ac4c54ff-033d-4fc9-a315-51d86b1db62e</id>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\Kennzahlen_Monat_2_laden.UserCode.cs">
+      <BoundTo>7b594851-7817-4647-b16e-8b39092924d3</BoundTo>
+      <DependentUpon>Kennzahlen_Monat_2_laden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7f0f4308-a199-4c3b-9457-37f5ca388020</id>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\Kennzahlen_Monat_2_ueberpruefen.cs">
+      <BoundTo>988eded4-e4ec-45f2-9cc4-49a9dffc277b</BoundTo>
+      <DependentUpon>Kennzahlen_Monat_2_ueberpruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0cf49e4e-6b52-413b-a18f-fea766828d46</id>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\Kennzahlen_Monat_2_ueberpruefen.UserCode.cs">
+      <BoundTo>988eded4-e4ec-45f2-9cc4-49a9dffc277b</BoundTo>
+      <DependentUpon>Kennzahlen_Monat_2_ueberpruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8cc919a5-cf9c-4b09-9167-e2c73eaa2b38</id>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\Meldung_bestaetigen.cs">
+      <BoundTo>cf66aaed-300f-42ac-9e38-b0354fcd1085</BoundTo>
+      <DependentUpon>Meldung_bestaetigen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3a73b2c3-d021-49f4-a8bb-0edc86227604</id>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\Meldung_bestaetigen.UserCode.cs">
+      <BoundTo>cf66aaed-300f-42ac-9e38-b0354fcd1085</BoundTo>
+      <DependentUpon>Meldung_bestaetigen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e4b27a80-4f44-446c-b708-710e3c791e9b</id>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\StartAUT_ANSPR.cs">
+      <DependentUpon>StartAUT_ANSPR.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>129490bc-65b6-433a-9e54-9e3673e0a5b4</id>
+      <BoundTo>e049d784-f54d-4c75-a0e6-0c3d1a87a777</BoundTo>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\StartAUT_ANSPR.UserCode.cs">
+      <DependentUpon>StartAUT_ANSPR.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2af8dc32-d156-465f-8dfd-04b9ccec39b8</id>
+      <BoundTo>e049d784-f54d-4c75-a0e6-0c3d1a87a777</BoundTo>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\Start_AUT_2.cs">
+      <BoundTo>ba3fb419-2e44-4829-8e0e-b41e1ac861d9</BoundTo>
+      <DependentUpon>Start_AUT_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a83497f3-8d0c-4dd8-9c62-8bbf1a0ab0e3</id>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\Start_AUT_2.UserCode.cs">
+      <BoundTo>ba3fb419-2e44-4829-8e0e-b41e1ac861d9</BoundTo>
+      <DependentUpon>Start_AUT_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1ebe8b01-febb-4dc4-a983-538399e494dd</id>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\Urlaubsanspruch_aktuelles_Jahr.cs">
+      <BoundTo>841bd72c-d73a-408b-8603-2eedb33a8f04</BoundTo>
+      <DependentUpon>Urlaubsanspruch_aktuelles_Jahr.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f852a22e-9541-45f4-bea8-ddfb9136863b</id>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\Urlaubsanspruch_aktuelles_Jahr.UserCode.cs">
+      <BoundTo>841bd72c-d73a-408b-8603-2eedb33a8f04</BoundTo>
+      <DependentUpon>Urlaubsanspruch_aktuelles_Jahr.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cfc43c26-644e-41fc-ac98-f40aea0a6734</id>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\Urlaubskennzahlen_Monat_1_laden.cs">
+      <BoundTo>8b40cb6a-65ea-42fe-a758-149ea33f37a8</BoundTo>
+      <DependentUpon>Urlaubskennzahlen_Monat_1_laden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2d54ef83-64b8-4dbc-bf6a-846f2a30b099</id>
+    </Compile>
+    <Compile Include="Recording_H_ANSPR\Urlaubskennzahlen_Monat_1_laden.UserCode.cs">
+      <BoundTo>8b40cb6a-65ea-42fe-a758-149ea33f37a8</BoundTo>
+      <DependentUpon>Urlaubskennzahlen_Monat_1_laden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6ad7ba6f-f187-4643-b675-6bc5bb28064c</id>
+    </Compile>
+    <Compile Include="Z_UHR_003Repository.cs">
+      <DependentUpon>Z_UHR_003Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>9f07cb61-b2d9-469b-bf72-1f5b48b742e2</id>
+      <BoundTo>024e6e00-d063-469a-926d-c68a63f0713b</BoundTo>
+    </Compile>
+    <Compile Include="Z_UHR_004Repository.cs">
+      <BoundTo>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</BoundTo>
+      <DependentUpon>Z_UHR_004Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>8364651d-efd0-40b3-9d30-88d95d00cc28</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>b207ba09-2ae3-46b9-951d-fe9e7a057b56</id>
+    </None>
+    <None Include="Recording\CloseAUT.rxrec">
+      <BoundTo>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</BoundTo>
+      <id>b3194d5d-7b31-41e4-a555-d89121cc0b0f</id>
+      <recordtableid>0c071d13-060e-4a8b-b740-512b6d6fbbba</recordtableid>
+    </None>
+    <None Include="Recording\Kontrolle_Genehmgiung.rxrec">
+      <BoundTo>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</BoundTo>
+      <id>1829b931-44e9-4af4-9e16-ff1723249b6a</id>
+      <recordtableid>77c86fad-7901-4c61-befe-1d7092659937</recordtableid>
+    </None>
+    <None Include="Recording\Mitarbeiter_auswaehlen.rxrec">
+      <BoundTo>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</BoundTo>
+      <id>ef69fc39-7b6d-4768-a3f5-94d479005bb5</id>
+      <recordtableid>0b5e6ba0-2a2b-4487-8998-07474810133d</recordtableid>
+    </None>
+    <None Include="Recording\StartAUT.rxrec">
+      <BoundTo>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</BoundTo>
+      <id>3cfc24e4-a4b0-4cee-bd97-b92b403e1345</id>
+      <recordtableid>a56d261f-7ee7-4e2c-bc83-b9cbdecd53e3</recordtableid>
+    </None>
+    <None Include="Recording\Urlaubsantrag_laden.rxrec">
+      <id>6b09f4d1-1737-4706-975e-dcf74303ea7b</id>
+      <recordtableid>23993128-6517-42b3-87e1-9001a8794327</recordtableid>
+      <BoundTo>024e6e00-d063-469a-926d-c68a63f0713b</BoundTo>
+    </None>
+    <None Include="Recording\Urlaub_genehmigen.rxrec">
+      <BoundTo>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</BoundTo>
+      <id>a8d508b3-d6b6-43ce-b960-87afebd4a168</id>
+      <recordtableid>704e9c3c-b17f-429c-82f4-7472da33c249</recordtableid>
+    </None>
+    <None Include="Recording_H_ANSPR\CloseAUT_ANSPR.rxrec">
+      <BoundTo>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</BoundTo>
+      <id>48950804-da35-4c92-984b-28c6c40471a2</id>
+      <recordtableid>fa2dc576-6090-4fdf-a1cd-e67e49d4fbbb</recordtableid>
+    </None>
+    <None Include="Recording_H_ANSPR\Close_AUT_2.rxrec">
+      <BoundTo>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</BoundTo>
+      <id>8edfdd72-cd9f-4c75-84dc-1234938a5d53</id>
+      <recordtableid>d90c7126-cde0-4c9f-9df8-00f999bab347</recordtableid>
+    </None>
+    <None Include="Recording_H_ANSPR\Fehlzeitergebnisse_berechnen.rxrec">
+      <BoundTo>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</BoundTo>
+      <id>45564988-3c1d-47eb-8e5c-539afb5f9be6</id>
+      <recordtableid>409c9aec-6825-4757-8456-267dbc3526ed</recordtableid>
+    </None>
+    <None Include="Recording_H_ANSPR\Fehlzeitergebnisse_ueberpruefen.rxrec">
+      <BoundTo>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</BoundTo>
+      <id>c5498d5c-7f7a-44ba-b181-93a0001ebdfe</id>
+      <recordtableid>47537790-eeff-440c-98e6-a5198ceda7b8</recordtableid>
+    </None>
+    <None Include="Recording_H_ANSPR\Kennzahlen_Monat_1_ueberpruefen.rxrec">
+      <BoundTo>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</BoundTo>
+      <id>22c881cb-9b87-4f84-9e0c-1f0e2a70487a</id>
+      <recordtableid>9f900c65-30a2-45c0-87c1-11a651b8f633</recordtableid>
+    </None>
+    <None Include="Recording_H_ANSPR\Kennzahlen_Monat_2_laden.rxrec">
+      <BoundTo>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</BoundTo>
+      <id>7b594851-7817-4647-b16e-8b39092924d3</id>
+      <recordtableid>bd1d233a-2912-4643-b3ef-2942b9a6f1ba</recordtableid>
+    </None>
+    <None Include="Recording_H_ANSPR\Kennzahlen_Monat_2_ueberpruefen.rxrec">
+      <BoundTo>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</BoundTo>
+      <id>988eded4-e4ec-45f2-9cc4-49a9dffc277b</id>
+      <recordtableid>787768bb-616a-4023-aaa4-6c1278530f16</recordtableid>
+    </None>
+    <None Include="Recording_H_ANSPR\Meldung_bestaetigen.rxrec">
+      <BoundTo>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</BoundTo>
+      <id>cf66aaed-300f-42ac-9e38-b0354fcd1085</id>
+      <recordtableid>8ef8835c-1218-4d30-abe9-26b101de90ac</recordtableid>
+    </None>
+    <None Include="Recording_H_ANSPR\StartAUT_ANSPR.rxrec">
+      <BoundTo>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</BoundTo>
+      <id>e049d784-f54d-4c75-a0e6-0c3d1a87a777</id>
+      <recordtableid>d252d566-e905-41ce-aa11-70a3a924223f</recordtableid>
+    </None>
+    <None Include="Recording_H_ANSPR\Start_AUT_2.rxrec">
+      <BoundTo>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</BoundTo>
+      <id>ba3fb419-2e44-4829-8e0e-b41e1ac861d9</id>
+      <recordtableid>1491ea98-172b-4043-bead-5fc26f7a3a5b</recordtableid>
+    </None>
+    <None Include="Recording_H_ANSPR\Urlaubsanspruch_aktuelles_Jahr.rxrec">
+      <BoundTo>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</BoundTo>
+      <id>841bd72c-d73a-408b-8603-2eedb33a8f04</id>
+      <recordtableid>9281b54e-33f1-418e-8759-a2ab03aa5764</recordtableid>
+    </None>
+    <None Include="Recording_H_ANSPR\Urlaubskennzahlen_Monat_1_laden.rxrec">
+      <BoundTo>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</BoundTo>
+      <id>8b40cb6a-65ea-42fe-a758-149ea33f37a8</id>
+      <recordtableid>12ea466d-7d1b-4b99-90c5-a70dbf436443</recordtableid>
+    </None>
+    <None Include="Z_UHR_003Repository.rximg">
+      <DependentUpon>Z_UHR_003Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>13e47c40-266f-4407-afe8-bb63332f01cc</id>
+      <BoundTo>024e6e00-d063-469a-926d-c68a63f0713b</BoundTo>
+    </None>
+    <None Include="Z_UHR_003Repository.rxrep">
+      <id>024e6e00-d063-469a-926d-c68a63f0713b</id>
+      <repoid>419a2f77-ddb2-4173-8ec2-f545406620d7</repoid>
+      <reporootid>c713057c-cf53-4055-bd78-9e949f4b5e8d</reporootid>
+    </None>
+    <None Include="Z_UHR_004Repository.rximg">
+      <BoundTo>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</BoundTo>
+      <DependentUpon>Z_UHR_004Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>13a7e924-8935-40ac-92e9-23615aa659d0</id>
+    </None>
+    <None Include="Z_UHR_004Repository.rxrep">
+      <id>402e4f03-cff9-46ac-9b43-4e85d9cdb5f0</id>
+      <repoid>0939c903-660a-476e-86cf-8a11766209ee</repoid>
+      <reporootid>20c27017-c25d-4306-bbce-192f6c93f70b</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Z_UHR_004.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>cdaab470-d835-4258-987a-5a120334d622</id>
+    </Content>
+    <Content Include="Z_UHR_004.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>8a9b7409-edea-45ba-8113-d9565a600792</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recording_H_ANSPR">
+      <id>b3968486-2d73-4e8a-a802-87a78943478d</id>
+    </Folder>
+    <Folder Include="Recording">
+      <id>b9b78cd1-147f-4df1-a8c6-dbc334bd8e12</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

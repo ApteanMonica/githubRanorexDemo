@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{81E8BB01-4EC3-4367-827C-AABC876915C3}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>B_KLOPO_001</RootNamespace>
+    <AssemblyName>B_KLOPO_001</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>1cd24537-6eb8-4032-a24a-88aa60aac027</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper" />
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Delphi" />
+    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.WinForms.Core" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="Ranorex.Plugin.Wpf.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>45f0bda0-69ea-4010-a083-3d2732d0fb0a</id>
+    </Compile>
+    <Compile Include="B_KLOPO_001Repository.cs">
+      <BoundTo>1cd24537-6eb8-4032-a24a-88aa60aac027</BoundTo>
+      <DependentUpon>B_KLOPO_001Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>9cd2a1dc-f626-49b7-9e44-990b258e3380</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>40345402-b620-4a26-9d42-31da28976faa</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT.cs">
+      <BoundTo>2916ed54-919e-450e-ab4b-50f134c2174b</BoundTo>
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3425aec7-a840-46cc-b80e-6ca1810150a1</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT.UserCode.cs">
+      <BoundTo>2916ed54-919e-450e-ab4b-50f134c2174b</BoundTo>
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0488cca8-d580-43f0-bc3d-472781bd132b</id>
+    </Compile>
+    <Compile Include="Recordings\Einschraenkungen_loeschen_Button_Neu.cs">
+      <BoundTo>eff3b214-4d26-4438-9bc6-c636c6b8d0f6</BoundTo>
+      <DependentUpon>Einschraenkungen_loeschen_Button_Neu.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>90383119-8f92-4db7-8fdb-1699394715eb</id>
+    </Compile>
+    <Compile Include="Recordings\Einschraenkungen_loeschen_Button_Neu.UserCode.cs">
+      <BoundTo>eff3b214-4d26-4438-9bc6-c636c6b8d0f6</BoundTo>
+      <DependentUpon>Einschraenkungen_loeschen_Button_Neu.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bb0d7a71-cc7c-4024-92c6-6930f78240c0</id>
+    </Compile>
+    <Compile Include="Recordings\Einschraenkungen_Negativsaldo.cs">
+      <BoundTo>445c6418-6a20-4f1a-8b1d-e46435ebc076</BoundTo>
+      <DependentUpon>Einschraenkungen_Negativsaldo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>16e5daf3-b3e5-47e1-8f0d-9ee2699df86d</id>
+    </Compile>
+    <Compile Include="Recordings\Einschraenkungen_Negativsaldo.UserCode.cs">
+      <BoundTo>445c6418-6a20-4f1a-8b1d-e46435ebc076</BoundTo>
+      <DependentUpon>Einschraenkungen_Negativsaldo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4ac6e973-acb4-43f0-a72f-addd22b87178</id>
+    </Compile>
+    <Compile Include="Recordings\Einschraenkung_Sammelkonto_KI_2000.cs">
+      <BoundTo>27f39217-3e0b-4d85-958e-b2709755b169</BoundTo>
+      <DependentUpon>Einschraenkung_Sammelkonto_KI_2000.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9f3d418a-aa1a-44a2-9db0-e669f06dbc54</id>
+    </Compile>
+    <Compile Include="Recordings\Einschraenkung_Sammelkonto_KI_2000.UserCode.cs">
+      <BoundTo>27f39217-3e0b-4d85-958e-b2709755b169</BoundTo>
+      <DependentUpon>Einschraenkung_Sammelkonto_KI_2000.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c623d074-9d83-45e7-9d60-735e002b68da</id>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_maximieren.cs">
+      <BoundTo>a4576123-bd13-4fea-bb80-30f1eea2711f</BoundTo>
+      <DependentUpon>Tabelle_maximieren.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>56257611-1806-4fe2-be8d-87d25ab551f9</id>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_maximieren.UserCode.cs">
+      <BoundTo>a4576123-bd13-4fea-bb80-30f1eea2711f</BoundTo>
+      <DependentUpon>Tabelle_maximieren.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8ec2fae9-e6b4-4afd-a6ec-e53adaaa82f1</id>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_aufrufen_KU_2030001_2030003.cs">
+      <BoundTo>74ec6bf6-7d56-4e33-9c4d-16e9e16a0bb9</BoundTo>
+      <DependentUpon>Tabelle_aufrufen_KU_2030001_2030003.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e98262c6-fe8f-4baf-8607-70ccb64df36c</id>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_aufrufen_KU_2030001_2030003.UserCode.cs">
+      <BoundTo>74ec6bf6-7d56-4e33-9c4d-16e9e16a0bb9</BoundTo>
+      <DependentUpon>Tabelle_aufrufen_KU_2030001_2030003.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c87a9155-42ff-4794-a72f-165701259e96</id>
+    </Compile>
+    <Compile Include="Recordings\NEU_Kunden_einschraenken.cs">
+      <BoundTo>a512f38a-857a-4753-ab6c-e2ef410b1d6b</BoundTo>
+      <DependentUpon>NEU_Kunden_einschraenken.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>74b295e4-3035-4856-9d94-dac473af2bb0</id>
+    </Compile>
+    <Compile Include="Recordings\NEU_Kunden_einschraenken.UserCode.cs">
+      <BoundTo>a512f38a-857a-4753-ab6c-e2ef410b1d6b</BoundTo>
+      <DependentUpon>NEU_Kunden_einschraenken.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8d7ce733-702c-4e26-b3b4-f531fdf42acf</id>
+    </Compile>
+    <Compile Include="Recordings\OP_Liste_Saldo_aktuell_Defaulteinschraenkung.cs">
+      <BoundTo>227716b3-f993-4d67-bb84-7d533f7dbe13</BoundTo>
+      <DependentUpon>OP_Liste_Saldo_aktuell_Defaulteinschraenkung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>73e2ed4f-7bb1-4d15-b3d0-1f5459024c1f</id>
+    </Compile>
+    <Compile Include="Recordings\OP_Liste_Saldo_aktuell_Defaulteinschraenkung.UserCode.cs">
+      <BoundTo>227716b3-f993-4d67-bb84-7d533f7dbe13</BoundTo>
+      <DependentUpon>OP_Liste_Saldo_aktuell_Defaulteinschraenkung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0f6aa58c-86f8-4d45-952a-9fa86048628e</id>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.cs">
+      <BoundTo>323c7770-9bcb-4f4b-940c-6a4af8699953</BoundTo>
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>76856b37-8fa6-48e5-90bb-2e7ab4b92f19</id>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.UserCode.cs">
+      <BoundTo>323c7770-9bcb-4f4b-940c-6a4af8699953</BoundTo>
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ee28ac5f-eb7f-45ad-9963-51d221c87e4f</id>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_pruefen_Saldo_aktuell_Fusszeile_Negativsaldo.cs">
+      <DependentUpon>Tabelle_pruefen_Saldo_aktuell_Fusszeile_Negativsaldo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8b3b42dd-a4a5-4fa8-93a5-e20c077d897d</id>
+      <BoundTo>435c2d77-9d21-46f1-9d5c-634937f67393</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_pruefen_Saldo_aktuell_Fusszeile_Negativsaldo.UserCode.cs">
+      <DependentUpon>Tabelle_pruefen_Saldo_aktuell_Fusszeile_Negativsaldo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>41a8c7bb-0942-4033-9a8f-a129c530fb39</id>
+      <BoundTo>435c2d77-9d21-46f1-9d5c-634937f67393</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_pruefen_Saldo_aktuell_Fusszeile_Sammelkonto_KI_2000.cs">
+      <DependentUpon>Tabelle_pruefen_Saldo_aktuell_Fusszeile_Sammelkonto_KI_2000.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c18f9a71-204d-41bf-9396-be0dc09a9b89</id>
+      <BoundTo>4bac38e2-603f-4415-827e-bfc92b1abd26</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_pruefen_Saldo_aktuell_Fusszeile_Sammelkonto_KI_2000.UserCode.cs">
+      <DependentUpon>Tabelle_pruefen_Saldo_aktuell_Fusszeile_Sammelkonto_KI_2000.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aed920f3-d142-4c87-a232-90d074d34620</id>
+      <BoundTo>4bac38e2-603f-4415-827e-bfc92b1abd26</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_pruefen_Saldo_aktuell_Summenzeilen.cs">
+      <DependentUpon>Tabelle_pruefen_Saldo_aktuell_Summenzeilen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3978a6a6-87b4-43b6-aede-73baa9a54916</id>
+      <BoundTo>68c3803d-6f47-4fce-9e93-ca090ae4733c</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_pruefen_Saldo_aktuell_Summenzeilen.UserCode.cs">
+      <DependentUpon>Tabelle_pruefen_Saldo_aktuell_Summenzeilen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7e932d66-a57d-4790-9e5d-1e593b0c6f73</id>
+      <BoundTo>68c3803d-6f47-4fce-9e93-ca090ae4733c</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_pruefen_Saldo_aktuell_Fusszeile.cs">
+      <BoundTo>c97ecff0-2781-48f3-8ae8-ddf8415244a8</BoundTo>
+      <DependentUpon>Tabelle_pruefen_Saldo_aktuell_Fusszeile.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>69d455a9-f9a4-4ae8-9563-e233dc962fb2</id>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_pruefen_Saldo_aktuell_Fusszeile.UserCode.cs">
+      <BoundTo>c97ecff0-2781-48f3-8ae8-ddf8415244a8</BoundTo>
+      <DependentUpon>Tabelle_pruefen_Saldo_aktuell_Fusszeile.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ed4dfacc-2a14-48a2-9eb7-7dbbe12614cc</id>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_pruefen_Saldo_aktuell_Summenzeilen_Negativsaldo.cs">
+      <DependentUpon>Tabelle_pruefen_Saldo_aktuell_Summenzeilen_Negativsaldo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f01a44c8-2d14-44b1-9587-f19f03050afa</id>
+      <BoundTo>cc0daea2-e8a7-4bad-a19f-a76b57813842</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_pruefen_Saldo_aktuell_Summenzeilen_Negativsaldo.UserCode.cs">
+      <DependentUpon>Tabelle_pruefen_Saldo_aktuell_Summenzeilen_Negativsaldo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>26d9fe80-4b6c-4fe0-b874-86056e77d264</id>
+      <BoundTo>cc0daea2-e8a7-4bad-a19f-a76b57813842</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_pruefen_Saldo_aktuell_Summenzeilen_Sammelkonto_KI_2000.cs">
+      <DependentUpon>Tabelle_pruefen_Saldo_aktuell_Summenzeilen_Sammelkonto_KI_2000.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d193c41f-77d5-4cf4-9b35-82f81d019f22</id>
+      <BoundTo>dd7b80ba-de16-4ac9-a9ff-a50ff62584c9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_pruefen_Saldo_aktuell_Summenzeilen_Sammelkonto_KI_2000.UserCode.cs">
+      <DependentUpon>Tabelle_pruefen_Saldo_aktuell_Summenzeilen_Sammelkonto_KI_2000.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e9ed5be9-c1f6-4267-8acf-816e7056e8ba</id>
+      <BoundTo>dd7b80ba-de16-4ac9-a9ff-a50ff62584c9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_Saldo_aktuell_nur_Summen_anzeigen.cs">
+      <BoundTo>8bb36564-4780-4677-908e-3277f534d211</BoundTo>
+      <DependentUpon>Tabelle_Saldo_aktuell_nur_Summen_anzeigen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>814368f7-1544-42f8-ac2e-cb16a6a9a758</id>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_Saldo_aktuell_nur_Summen_anzeigen.UserCode.cs">
+      <BoundTo>8bb36564-4780-4677-908e-3277f534d211</BoundTo>
+      <DependentUpon>Tabelle_Saldo_aktuell_nur_Summen_anzeigen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b5768ff2-0f26-4e57-9015-f047c182488b</id>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_schliessen.cs">
+      <BoundTo>cafd1448-0b49-48fb-a406-a4d51e95796b</BoundTo>
+      <DependentUpon>Tabelle_schliessen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>69b32ea7-dfcb-41c9-81f6-7267fbb25c18</id>
+    </Compile>
+    <Compile Include="Recordings\Tabelle_schliessen.UserCode.cs">
+      <BoundTo>cafd1448-0b49-48fb-a406-a4d51e95796b</BoundTo>
+      <DependentUpon>Tabelle_schliessen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>47bedd72-01f6-4626-9f37-3299b35df301</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>741f8f7b-9f5a-47ee-980c-93ecc7426cff</id>
+    </None>
+    <None Include="B_KLOPO_001Repository.rximg">
+      <BoundTo>1cd24537-6eb8-4032-a24a-88aa60aac027</BoundTo>
+      <DependentUpon>B_KLOPO_001Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>e84b374c-b5f5-48a8-99fd-8670c3044971</id>
+    </None>
+    <None Include="B_KLOPO_001Repository.rxrep">
+      <id>1cd24537-6eb8-4032-a24a-88aa60aac027</id>
+      <repoid>a7499887-3bef-4870-9574-acaf54adcbce</repoid>
+      <reporootid>3f4a689f-dbcc-4b0a-85f5-4dca8e45f371</reporootid>
+    </None>
+    <None Include="Recordings\CloseAUT.rxrec">
+      <BoundTo>1cd24537-6eb8-4032-a24a-88aa60aac027</BoundTo>
+      <id>2916ed54-919e-450e-ab4b-50f134c2174b</id>
+      <recordtableid>2f004997-f44c-4d08-a472-3e076cabf6a9</recordtableid>
+    </None>
+    <None Include="Recordings\Einschraenkungen_loeschen_Button_Neu.rxrec">
+      <BoundTo>1cd24537-6eb8-4032-a24a-88aa60aac027</BoundTo>
+      <id>eff3b214-4d26-4438-9bc6-c636c6b8d0f6</id>
+      <recordtableid>d7bdebbf-d6ac-48e0-9727-20bc075455ae</recordtableid>
+    </None>
+    <None Include="Recordings\Einschraenkungen_Negativsaldo.rxrec">
+      <BoundTo>1cd24537-6eb8-4032-a24a-88aa60aac027</BoundTo>
+      <id>445c6418-6a20-4f1a-8b1d-e46435ebc076</id>
+      <recordtableid>fc98f1b2-cdaa-4692-a214-4161e0764903</recordtableid>
+    </None>
+    <None Include="Recordings\Einschraenkung_Sammelkonto_KI_2000.rxrec">
+      <BoundTo>1cd24537-6eb8-4032-a24a-88aa60aac027</BoundTo>
+      <id>27f39217-3e0b-4d85-958e-b2709755b169</id>
+      <recordtableid>e4e20595-cf69-4461-beed-06cc725505f9</recordtableid>
+    </None>
+    <None Include="Recordings\Tabelle_maximieren.rxrec">
+      <BoundTo>1cd24537-6eb8-4032-a24a-88aa60aac027</BoundTo>
+      <id>a4576123-bd13-4fea-bb80-30f1eea2711f</id>
+      <recordtableid>4bdcfa2f-4e4f-44d7-87d3-1d933efe559c</recordtableid>
+    </None>
+    <None Include="Recordings\Tabelle_aufrufen_KU_2030001_2030003.rxrec">
+      <BoundTo>1cd24537-6eb8-4032-a24a-88aa60aac027</BoundTo>
+      <id>74ec6bf6-7d56-4e33-9c4d-16e9e16a0bb9</id>
+      <recordtableid>fa051e21-8b64-4fe9-96db-b41e14b2be7b</recordtableid>
+    </None>
+    <None Include="Recordings\NEU_Kunden_einschraenken.rxrec">
+      <BoundTo>1cd24537-6eb8-4032-a24a-88aa60aac027</BoundTo>
+      <id>a512f38a-857a-4753-ab6c-e2ef410b1d6b</id>
+      <recordtableid>9c14f8ca-0bd3-431f-9a9a-80e2555a41eb</recordtableid>
+    </None>
+    <None Include="Recordings\OP_Liste_Saldo_aktuell_Defaulteinschraenkung.rxrec">
+      <BoundTo>1cd24537-6eb8-4032-a24a-88aa60aac027</BoundTo>
+      <id>227716b3-f993-4d67-bb84-7d533f7dbe13</id>
+      <recordtableid>3e0e39f6-0e68-4358-b916-937a65fc6976</recordtableid>
+    </None>
+    <None Include="Recordings\StartAUT.rxrec">
+      <BoundTo>1cd24537-6eb8-4032-a24a-88aa60aac027</BoundTo>
+      <id>323c7770-9bcb-4f4b-940c-6a4af8699953</id>
+      <recordtableid>c2ee7df3-31ac-4bb2-8017-39055f8d2572</recordtableid>
+    </None>
+    <None Include="Recordings\Tabelle_pruefen_Saldo_aktuell_Fusszeile_Negativsaldo.rxrec">
+      <BoundTo>1cd24537-6eb8-4032-a24a-88aa60aac027</BoundTo>
+      <id>435c2d77-9d21-46f1-9d5c-634937f67393</id>
+      <recordtableid>cce03669-0f66-438b-918e-3850d831df15</recordtableid>
+    </None>
+    <None Include="Recordings\Tabelle_pruefen_Saldo_aktuell_Fusszeile_Sammelkonto_KI_2000.rxrec">
+      <BoundTo>1cd24537-6eb8-4032-a24a-88aa60aac027</BoundTo>
+      <id>4bac38e2-603f-4415-827e-bfc92b1abd26</id>
+      <recordtableid>0af8cbb2-e6e7-459b-9af1-c9753a8180a4</recordtableid>
+    </None>
+    <None Include="Recordings\Tabelle_pruefen_Saldo_aktuell_Summenzeilen.rxrec">
+      <BoundTo>1cd24537-6eb8-4032-a24a-88aa60aac027</BoundTo>
+      <id>68c3803d-6f47-4fce-9e93-ca090ae4733c</id>
+      <recordtableid>ebda9116-c127-428e-8d2e-927f4d18ce9e</recordtableid>
+    </None>
+    <None Include="Recordings\Tabelle_pruefen_Saldo_aktuell_Fusszeile.rxrec">
+      <BoundTo>1cd24537-6eb8-4032-a24a-88aa60aac027</BoundTo>
+      <id>c97ecff0-2781-48f3-8ae8-ddf8415244a8</id>
+      <recordtableid>034c7257-6156-43b8-b587-5f0ff79f1720</recordtableid>
+    </None>
+    <None Include="Recordings\Tabelle_pruefen_Saldo_aktuell_Summenzeilen_Negativsaldo.rxrec">
+      <BoundTo>1cd24537-6eb8-4032-a24a-88aa60aac027</BoundTo>
+      <id>cc0daea2-e8a7-4bad-a19f-a76b57813842</id>
+      <recordtableid>d8602f0c-b004-4b25-b605-28964c466599</recordtableid>
+    </None>
+    <None Include="Recordings\Tabelle_pruefen_Saldo_aktuell_Summenzeilen_Sammelkonto_KI_2000.rxrec">
+      <BoundTo>1cd24537-6eb8-4032-a24a-88aa60aac027</BoundTo>
+      <id>dd7b80ba-de16-4ac9-a9ff-a50ff62584c9</id>
+      <recordtableid>bc875ff0-68cc-4977-ae74-18787b579ffa</recordtableid>
+    </None>
+    <None Include="Recordings\Tabelle_Saldo_aktuell_nur_Summen_anzeigen.rxrec">
+      <BoundTo>1cd24537-6eb8-4032-a24a-88aa60aac027</BoundTo>
+      <id>8bb36564-4780-4677-908e-3277f534d211</id>
+      <recordtableid>01f0c83d-2841-47c6-a15f-378d7f1270dc</recordtableid>
+    </None>
+    <None Include="Recordings\Tabelle_schliessen.rxrec">
+      <BoundTo>1cd24537-6eb8-4032-a24a-88aa60aac027</BoundTo>
+      <id>cafd1448-0b49-48fb-a406-a4d51e95796b</id>
+      <recordtableid>9ec8c285-df5e-4435-a516-c570cdf13ef6</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="B_KLOPO_001.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>ab4ac1d0-52d2-4f45-bc33-0a7549bf1bc5</id>
+    </Content>
+    <Content Include="B_KLOPO_001.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>af8eea0b-0d76-48f6-bf73-342c59952329</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings">
+      <id>80010829-a43c-47ce-b4c6-3262c2e04e47</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{EB7427A4-F95D-4186-B22C-FB545DC74767}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

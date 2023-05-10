@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8a4bc3d4-04b9-4f2e-ab62-7f8c7511c2fb"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="S_ART_002.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="70509876-3104-4991-a14a-eec56c1061a8">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="681b68c0-8b96-4d6f-886b-a92e967505bf"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmArt']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="9543cbca-4c3d-468f-b1d2-f49c125af8c3"
+	name="S_ART_002Repository"
+	relativepath="..\S_ART_002Repository.rxrep">
+		<codegen
+		classname="S_ART_002Repository"
+		namespace="S_ART_002">
+		</codegen>
+		<rootfolder
+		id="cc70654d-0ff7-4f16-a642-3bddf811497f"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

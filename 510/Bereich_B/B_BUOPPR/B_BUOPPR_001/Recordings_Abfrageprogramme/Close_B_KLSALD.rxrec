@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="557366ad-6144-45b1-83c8-0a5d6800e489"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_B_KLSALD"
+	namespace="B_BUOPPR_001.Recordings_Abfrageprogramme">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="9d070d33-1400-42f6-a64a-9551c6419f5c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c7224d2a-16e9-4a97-9551-f579b775c16c"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="5"
+				prefcap="titlebar"
+				rect="-1343,214,838,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Saldenliste per Stichtag: Lieferanten
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Saldenliste per Stichtag: Lieferanten
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmKLSL']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="09139c42-0597-4fed-b143-7f5c097b739f"
+	name="B_BUOPPR_001Repository"
+	relativepath="..\B_BUOPPR_001Repository.rxrep">
+		<codegen
+		classname="B_BUOPPR_001Repository"
+		namespace="B_BUOPPR_001">
+		</codegen>
+		<rootfolder
+		id="36718c99-7860-4bab-8123-698d3b4fd22a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_B_KLSALD.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c2ee7df3-31ac-4bb2-8017-39055f8d2572"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartAUT"
+	namespace="B_KLOPO_001.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="68cca180-2a20-49c2-a30d-330d5c4fc5fa"
+		name="Startfile">
+			C:\Testdaten\Allgemein\Start.bat
+		</var>
+		<var
+		id="fc920677-e042-45e5-a371-817ebf1bcc93"
+		name="Programm">
+			B_KLOPO KL K
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="FileName"
+				variable="Startfile">
+				</binding>
+				<binding
+				target="Arguments"
+				variable="Programm">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Program Files\rs2\rs2\510_SP06\bin\K_FIBU.exe
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="61ede637-b9bf-47b5-a27e-99aa57320209"
+		waitaction="Exists"
+		waittimeout="180000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="076f5c76-79fb-4436-bfa4-a8fc994e5301"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="5"
+				prefcap="titlebar"
+				rect="-1183,164,785,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100] OP - Liste Kunden
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100] OP - Liste Kunden
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmKlOp']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0ed8c267-1905-41ce-8b4c-c4b320f33ffd">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="076f5c76-79fb-4436-bfa4-a8fc994e5301"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="5"
+				prefcap="titlebar"
+				rect="-1183,164,785,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100] OP - Liste Kunden
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100] OP - Liste Kunden
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmKlOp']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				OP - Liste Kunden
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="a7499887-3bef-4870-9574-acaf54adcbce"
+	name="B_KLOPO_001Repository"
+	relativepath="..\B_KLOPO_001Repository.rxrep">
+		<codegen
+		classname="B_KLOPO_001Repository"
+		namespace="B_KLOPO_001">
+		</codegen>
+		<rootfolder
+		id="3f4a689f-dbcc-4b0a-85f5-4dca8e45f371"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,749 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="69089942-052f-4d5a-8632-188fc536cc4e"
+mode="Global">
+	<description>
+		The Kontrolle_Bankbeleg_Detail_B_ZAHL recording.
+	</description>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Kontrolle_Bankbeleg_Detail_B_ZAHL"
+	namespace="B_ZAHLV_001.Recordings_B_ZAHL">
+	</codegen>
+	<variables>
+		<var
+		id="e5b87fdf-52e5-448d-bded-4f0f5f14caca"
+		name="Beleg_NR">
+			1001
+		</var>
+	</variables>
+	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="611f5880-dd86-4eec-825d-9a970242ab6d"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d6290574-e85f-4b44-9d0c-ce40834f1c8d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZlvsÄndern']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="073782f6-3f01-45ea-be51-1bf351c19b9d">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d6290574-e85f-4b44-9d0c-ce40834f1c8d"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="109"
+				prefcap="titlebar"
+				rect="16,-5,1350,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Lieferanten - Bankbeleg bearbeiten: 1001 - OBK
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Lieferanten - Bankbeleg bearbeiten: 1001 - OBK
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmZlvsÄndern']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Bankbeleg bearbeiten
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="073782f6-3f01-45ea-be51-1bf351c19b9d">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Beleg_NR">
+				</binding>
+			</bindings>
+			<info
+			id="d6290574-e85f-4b44-9d0c-ce40834f1c8d"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="109"
+				prefcap="titlebar"
+				rect="16,-5,1350,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Lieferanten - Bankbeleg bearbeiten: 1001 - OBK
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Lieferanten - Bankbeleg bearbeiten: 1001 - OBK
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmZlvsÄndern']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Bankbeleg bearbeiten
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="7af9228d-e7d3-4e32-bf9a-d6e55ecc1797"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d7761549-764a-4d26-9c33-53481f5e609b"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZlvsÄndern']/container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Laden']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="3e38bb7c-cfe6-4049-a440-44b7cc26c58a"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ce3f449f-cc84-4c40-81ef-c5a64c7c14f0"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZlvsÄndern']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be1af0fe-41ec-4e18-96c6-c9798fa5bbee">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ce3f449f-cc84-4c40-81ef-c5a64c7c14f0"
+			sourcename="ElementTree">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="1"
+				prefcap="row"
+				rect="2,260,1599,19"
+				role="row"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Row 1
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Row
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Default
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						&#9;1	303020		LF-20 INLAND B_ZAHL THEOR SKONTO	LF-20 INLAND B_ZAHL THEOR SKONTO Autotest AT - 1010 Wien	ER001 B_ZAHL 303020	ER001 B_ZAHL 303020	30.01.2021	02.01.2021	01.02.2021	01.02.2021	19.01.2021	-11	14	2,00	19.01.2021	0	0,00	05.01.2021	ER	R		S	1					4.900,00	EUR	9.310,00	1	9.310,00	9.310,00	100,00	2,00	4.900,00	EUR	100,00	4.900,00	100,00	10.000,00	10.000,00	10.000,00		303020	LF-20 INLAND B_ZAHL THEOR SKONTO	AT	SEPA-A1			2	2			OBK	Teilzahlung 50%	ER001 B_ZAHL theor. Skonto		14200	20010147558	EASYATW1XXX	AT02 1420 0200 1014 7558									AT					L	N	10.000,00	0,00	10.000,00	1.666,67	0,00	1	112	1	AT	SORT@303020@LF-20 INLAND B_ZAHL THEOR SKONTO@S@0000000000009310,00@2021-02-01-00.00.00.000000@2021-02-01-00.00.00.000000@ER001 B_ZAHL 303020@2021-01-30-00.00.00.000000@ER001 B_ZAHL 303020@0000000000004900,00@0000000000000100,00@0000000000000002,00@00	2021-01-30-00.00.00.000000	10000	S	1		3		RS							&#9;
+					</attribute>
+				</element>
+				<path>
+					/form/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="f8476264-27ab-40b9-93f1-043409e9c8ec">
+				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
+/KiiiqZmf//Z
+			</helperscreenshot>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				&#9;1	303020		LF-20 INLAND B_ZAHL THEOR SKONTO	LF-20 INLAND B_ZAHL THEOR SKONTO Autotest AT - 1010 Wien	ER001 B_ZAHL 303020	ER001 B_ZAHL 303020	30.01.2021	02.01.2021	01.02.2021	01.02.2021	19.01.2021	-11	14	2,00	19.01.2021	0	0,00	05.01.2021	ER	R		S	1					4.900,00	EUR	9.310,00	1	9.310,00	9.310,00	100,00	2,00	4.900,00	EUR	100,00	4.900,00	100,00	10.000,00	10.000,00	10.000,00		303020	LF-20 INLAND B_ZAHL THEOR SKONTO	AT	SEPA-A1			2	2			OBK	Teilzahlung 50%	ER001 B_ZAHL theor. Skonto		14200	20010147558	EASYATW1XXX	AT02 1420 0200 1014 7558									AT					L	N	10.000,00	0,00	10.000,00	1.666,67	0,00	1	112	1	AT	SORT@303020@LF-20 INLAND B_ZAHL THEOR SKONTO@S@0000000000009310,00@2021-02-01-00.00.00.000000@2021-02-01-00.00.00.000000@ER001 B_ZAHL 303020@2021-01-30-00.00.00.000000@ER001 B_ZAHL 303020@0000000000004900,00@0000000000000100,00@0000000000000002,00@00	2021-01-30-00.00.00.000000	10000	S	1		3		RS							&#9;
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be1af0fe-41ec-4e18-96c6-c9798fa5bbee">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="19a95870-433c-4612-a215-f244e661695d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				&#9;1	303020		LF-20 INLAND B_ZAHL THEOR SKONTO	LF-20 INLAND B_ZAHL THEOR SKONTO Autotest AT - 1010 Wien	GS001 B_ZAHL 303020	GS001 B_ZAHL 303020	30.01.2021	05.01.2021	04.02.2021	04.02.2021	19.01.2021	-11	14	2,00	19.01.2021	0	0,00	05.01.2021	ERG	G		S						-490,00	EUR	9.310,00	1	9.310,00	9.310,00	-10,00	2,00	-490,00	EUR	-10,00	-490,00	-10,00	-500,00	-500,00	-500,00		303020	LF-20 INLAND B_ZAHL THEOR SKONTO	AT	SEPA-A1			2	2			OBK		GS001 B_ZAHL 303020 theor. Skonto		14200	20010147558	EASYATW1XXX	AT02 1420 0200 1014 7558									AT					L	N	-500,00	0,00	-500,00	-83,33	0,00	1	123	1	AT	SORT@303020@LF-20 INLAND B_ZAHL THEOR SKONTO@S@0000000000009310,00@2021-02-04-00.00.00.000000@2021-02-04-00.00.00.000000@GS001 B_ZAHL 303020@2021-01-30-00.00.00.000000@GS001 B_ZAHL 303020@-9999999999999509,00@-9999999999999989,00@0000000000000002,00@	2021-01-30-00.00.00.000000	-500	S	1		3		RS							&#9;
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be1af0fe-41ec-4e18-96c6-c9798fa5bbee">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0dd9bb26-d251-42f5-b86f-e2dea8b9cb7f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				&#9;1	303020		LF-20 INLAND B_ZAHL THEOR SKONTO	LF-20 INLAND B_ZAHL THEOR SKONTO Autotest AT - 1010 Wien	ER002 B_ZAHL 303020	ER002 B_ZAHL 303020	30.01.2021	03.02.2021	05.03.2021	05.03.2021	20.01.2021	-10	14	2,00	20.01.2021	0	0,00	06.01.2021	ER	R		S						4.900,00	EUR	9.310,00	1	9.310,00	9.310,00	100,00	2,00	4.900,00	EUR	100,00	4.900,00	100,00	5.000,00	5.000,00	5.000,00		303020	LF-20 INLAND B_ZAHL THEOR SKONTO	AT	SEPA-A1			2	2			OBK		ER002 B_ZAHL theor. Skonto		14200	20010147558	EASYATW1XXX	AT02 1420 0200 1014 7558									AT					L	N	5.000,00	0,00	5.000,00	833,33	0,00	1	113	1	AT	SORT@303020@LF-20 INLAND B_ZAHL THEOR SKONTO@S@0000000000009310,00@2021-03-05-00.00.00.000000@2021-03-05-00.00.00.000000@ER002 B_ZAHL 303020@2021-01-30-00.00.00.000000@ER002 B_ZAHL 303020@0000000000004900,00@0000000000000100,00@0000000000000002,00@00	2021-01-30-00.00.00.000000	5000	S	1		3		RS							&#9;
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be1af0fe-41ec-4e18-96c6-c9798fa5bbee">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e083cb57-682a-4d62-be87-d0436d0ad819"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 4']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				&#9;1	303021		LF-21 INLAND B_ZAHL PRAKT SKONTO	LF-21 INLAND B_ZAHL PRAKT SKONTO Autotest AT - 1010 Wien	ER007 B_ZAHL 303020	ER007 B_ZAHL 303020	30.01.2021	02.01.2021	01.02.2021	01.02.2021	22.01.2021	-8	14	2,00	22.01.2021	0	0,00	08.01.2021	ER	R		S						2.940,00	EUR	4.420,00	1	4.420,00	4.420,00	60,00	2,00	2.940,00	EUR	60,00	2.940,00	60,00	3.000,00	3.000,00	3.000,00		303021	LF-21 INLAND B_ZAHL PRAKT SKONTO	AT	SEPA-A1			1	1			OBK		ER007 B_ZAHL theor. Skonto UST=R20		32000	00000641605	RLNWATWWXXX	AT02 3200 0000 0064 1605									AT					L	N	3.000,00	0,00	3.000,00	0,00	0,00	1	118	1	AT	SORT@303021@LF-21 INLAND B_ZAHL PRAKT SKONTO@S@0000000000004420,00@2021-02-01-00.00.00.000000@2021-02-01-00.00.00.000000@ER007 B_ZAHL 303020@2021-01-30-00.00.00.000000@ER007 B_ZAHL 303020@0000000000002940,00@0000000000000060,00@0000000000000002,00@00	2021-01-30-00.00.00.000000	3000	S	1		3		RS							&#9;
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be1af0fe-41ec-4e18-96c6-c9798fa5bbee">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0609464a-de70-4061-bec1-095a055a6a12"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 5']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				&#9;1	303021		LF-21 INLAND B_ZAHL PRAKT SKONTO	LF-21 INLAND B_ZAHL PRAKT SKONTO Autotest AT - 1010 Wien	ER005 B_ZAHL 303021	ER005 B_ZAHL 303021	30.01.2021	03.01.2021	02.02.2021	02.02.2021	21.01.2021	-9	14	2,00	21.01.2021	0	0,00	07.01.2021	ER	R		S	3					25.000,00	EUR	4.420,00	1	4.420,00	4.420,00	2.000,00	2,00	25.000,00	EUR	2.000,00	25.000,00	2.000,00	100.000,00	100.000,00	100.000,00		303021	LF-21 INLAND B_ZAHL PRAKT SKONTO	AT	SEPA-A1			1	1			OBK	Minderzahlung 25% (Skonto lt. Rechnung)	ER005 B_ZAHL prakt. Skonto UST=R20		32000	00000641605	RLNWATWWXXX	AT02 3200 0000 0064 1605									AT					L	N	100.000,00	0,00	100.000,00	0,00	0,00	1	116	1	AT	SORT@303021@LF-21 INLAND B_ZAHL PRAKT SKONTO@S@0000000000004420,00@2021-02-02-00.00.00.000000@2021-02-02-00.00.00.000000@ER005 B_ZAHL 303021@2021-01-30-00.00.00.000000@ER005 B_ZAHL 303021@0000000000025000,00@0000000000002000,00@0000000000000002,00@00	2021-01-30-00.00.00.000000	100000	S	1		3		RS							&#9;
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be1af0fe-41ec-4e18-96c6-c9798fa5bbee">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1ecc8ac1-5e03-4c93-91cb-56d1a4e9e0fd"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 6']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				&#9;1	303021		LF-21 INLAND B_ZAHL PRAKT SKONTO	LF-21 INLAND B_ZAHL PRAKT SKONTO Autotest AT - 1010 Wien	ER006 B_ZAHL 303021	ER006 B_ZAHL 303021	30.01.2021	04.01.2021	03.02.2021	03.02.2021	22.01.2021	-8	14	2,00	22.01.2021	0	0,00	08.01.2021	ER	R		S	1					24.500,00	EUR	4.420,00	1	4.420,00	4.420,00	100,00	2,00	24.500,00	EUR	100,00	24.500,00	100,00	50.000,00	50.000,00	50.000,00		303021	LF-21 INLAND B_ZAHL PRAKT SKONTO	AT	SEPA-A1			1	1			OBK	Teilzahlung 50% (Skontobasis 10.000)	ER005 B_ZAHL Skontobasis 10.000 prakt. Skonto		32000	00000641605	RLNWATWWXXX	AT02 3200 0000 0064 1605									AT					L	N	50.000,00	0,00	50.000,00	0,00	0,00	1	117	1	AT	SORT@303021@LF-21 INLAND B_ZAHL PRAKT SKONTO@S@0000000000004420,00@2021-02-03-00.00.00.000000@2021-02-03-00.00.00.000000@ER006 B_ZAHL 303021@2021-01-30-00.00.00.000000@ER006 B_ZAHL 303021@0000000000024500,00@0000000000000100,00@0000000000000002,00@00	2021-01-30-00.00.00.000000	10000	S	1		3		RS							&#9;
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be1af0fe-41ec-4e18-96c6-c9798fa5bbee">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c34aa45f-7749-4ca6-8194-b2aa106a1e54"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 7']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				&#9;1	303021		LF-21 INLAND B_ZAHL PRAKT SKONTO	LF-21 INLAND B_ZAHL PRAKT SKONTO Autotest AT - 1010 Wien	GS002 B_ZAHL 303021	GS002 B_ZAHL 303021	30.01.2021	04.01.2021	03.02.2021	03.02.2021	18.01.2021	-12	14	2,00	18.01.2021	0	0,00	04.01.2021	ERG	G		S						-49.000,00	EUR	4.420,00	1	4.420,00	4.420,00	-1.000,00	2,00	-49.000,00	EUR	-1.000,00	-49.000,00	-1.000,00	-50.000,00	-50.000,00	-50.000,00		303021	LF-21 INLAND B_ZAHL PRAKT SKONTO	AT	SEPA-A1			1	1			OBK		GS002 B_ZAHL 303021 prakt. Skonto		32000	00000641605	RLNWATWWXXX	AT02 3200 0000 0064 1605									AT					L	N	-50.000,00	0,00	-50.000,00	-8.333,33	0,00	1	124	1	AT	SORT@303021@LF-21 INLAND B_ZAHL PRAKT SKONTO@S@0000000000004420,00@2021-02-03-00.00.00.000000@2021-02-03-00.00.00.000000@GS002 B_ZAHL 303021@2021-01-30-00.00.00.000000@GS002 B_ZAHL 303021@-9999999999950999,00@-9999999999998999,00@0000000000000002,00@	2021-01-30-00.00.00.000000	-50000	S	1		3		RS							&#9;
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be1af0fe-41ec-4e18-96c6-c9798fa5bbee">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f222a1ec-73cd-418b-a04f-ec0bacfca777"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 8']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				&#9;1	303021		LF-21 INLAND B_ZAHL PRAKT SKONTO	LF-21 INLAND B_ZAHL PRAKT SKONTO Autotest AT - 1010 Wien	ER012 B_ZAHL 303021	ER012 B_ZAHL 303021	30.01.2021	02.02.2021	04.03.2021	04.03.2021	04.02.2021	5	30	2,00	04.02.2021	0	0,00	05.01.2021	ER	R		S						980,00	EUR	4.420,00	1	4.420,00	4.420,00	20,00	2,00	980,00	EUR	20,00	980,00	20,00	1.000,00	1.000,00	1.000,00		303021	LF-21 INLAND B_ZAHL PRAKT SKONTO	AT	SEPA-A1			1	1			OBK		ER012 B_ZAHL 303021 prakt. Skonto		32000	00000641605	RLNWATWWXXX	AT02 3200 0000 0064 1605									AT					L	N	1.000,00	0,00	1.000,00	166,67	0,00	1	126	1	AT	SORT@303021@LF-21 INLAND B_ZAHL PRAKT SKONTO@S@0000000000004420,00@2021-03-04-00.00.00.000000@2021-03-04-00.00.00.000000@ER012 B_ZAHL 303021@2021-01-30-00.00.00.000000@ER012 B_ZAHL 303021@0000000000000980,00@0000000000000020,00@0000000000000002,00@00	2021-01-30-00.00.00.000000	1000	S	1		3		RS							&#9;
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be1af0fe-41ec-4e18-96c6-c9798fa5bbee">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="cd4fe946-7e96-4d95-ab56-5e0456c001e7"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 9']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				&#9;1	303022	1	LF-22 DIV_1 INLAND B_ZAHL 	LF-22 DIVERSER_1 INLAND B_ZAHL Autotest AT 1010 Wien	ER008 B_ZAHL 303022/1	ER008 B_ZAHL 303022/1	30.01.2021	02.01.2021	01.02.2021	01.02.2021			0	0,00	02.01.2021	0	0,00	02.01.2021	ER	R		S						700,00	EUR	1.190,00	1	1.190,00	1.190,00	0,00	0,00	700,00	EUR	0,00	700,00	0,00	700,00	700,00	700,00		303022	LF-22 DIV_1 INLAND B_ZAHL 	AT	SEPA-A1	1		1	1			OBK		ER008 B_ZAHL 303022/DIV1 kein Skonto (theor)		12000	00703447144	BKAUATWWXXX	AT02 1200 0007 0344 7144									AT					L	J	700,00	0,00	700,00	116,67	0,00	1	119	1	AT	SORT@303022@LF-22 DIV_1 INLAND B_ZAHL @S@0000000000001190,00@2021-02-01-00.00.00.000000@2021-02-01-00.00.00.000000@ER008 B_ZAHL 303022/1@2021-01-30-00.00.00.000000@ER008 B_ZAHL 303022/1@0000000000000700,00@0000000000000000,00@0000000000000000,00@001@	2021-01-30-00.00.00.000000	700	S	1		3		RS							&#9;
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be1af0fe-41ec-4e18-96c6-c9798fa5bbee">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ac430f66-a32a-4cf6-8c05-b0ba56db09a7"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 10']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				&#9;1	303022	1	LF-22 DIV_1 INLAND B_ZAHL 	LF-22 DIVERSER_1 INLAND B_ZAHL Autotest AT 1010 Wien	ER009 B_ZAHL 303022/1	ER009 B_ZAHL 303022/1	30.01.2021	02.01.2021	01.02.2021	01.02.2021	16.01.2021	-14	14	2,00	16.01.2021	0	0,00	02.01.2021	ER	R		S						490,00	EUR	1.190,00	1	1.190,00	1.190,00	10,00	2,00	490,00	EUR	10,00	490,00	10,00	500,00	500,00	500,00		303022	LF-22 DIV_1 INLAND B_ZAHL 	AT	SEPA-A1	1		1	1			OBK		ER009 B_ZAHL 303022/DIV1 theor. Skonto		12000	00703447144	BKAUATWWXXX	AT02 1200 0007 0344 7144									AT					L	J	500,00	0,00	500,00	83,33	0,00	1	120	1	AT	SORT@303022@LF-22 DIV_1 INLAND B_ZAHL @S@0000000000001190,00@2021-02-01-00.00.00.000000@2021-02-01-00.00.00.000000@ER009 B_ZAHL 303022/1@2021-01-30-00.00.00.000000@ER009 B_ZAHL 303022/1@0000000000000490,00@0000000000000010,00@0000000000000002,00@001@	2021-01-30-00.00.00.000000	500	S	1		3		RS							&#9;
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be1af0fe-41ec-4e18-96c6-c9798fa5bbee">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b2caad1b-3716-4e42-8578-36129691652b"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 11']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				&#9;1	303022	2	LF-22 DIV_2 INLAND B_ZAHL 	LF-22 DIVERSER_2 INLAND B_ZAHL Autotest AT 1010 Wien	ER010 B_ZAHL 303022/2	ER010 B_ZAHL 303022/2	30.01.2021	02.01.2021	01.02.2021	01.02.2021			0	0,00	02.01.2021	0	0,00	02.01.2021	ER	R		S	1					1.000,00	EUR	2.000,00	1	2.000,00	2.000,00	0,00	0,00	1.000,00	EUR	0,00	1.000,00	0,00	2.000,00	2.000,00	2.000,00		303022	LF-22 DIV_2 INLAND B_ZAHL 	AT	SEPA-A1	2		2	2			OBK	Teilzahlung 50%	ER010 B_ZAHL 303022/DIV1 kein Skonto (Praktiker)		20111	00003429660	GIBAATWWXXX	AT02 2011 1000 0342 9660									AT					L	J	2.000,00	0,00	2.000,00	333,33	0,00	1	121	1	AT	SORT@303022@LF-22 DIV_2 INLAND B_ZAHL @S@0000000000002000,00@2021-02-01-00.00.00.000000@2021-02-01-00.00.00.000000@ER010 B_ZAHL 303022/2@2021-01-30-00.00.00.000000@ER010 B_ZAHL 303022/2@0000000000001000,00@0000000000000000,00@0000000000000000,00@001@	2021-01-30-00.00.00.000000	2000	S	1		3		RS							&#9;
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be1af0fe-41ec-4e18-96c6-c9798fa5bbee">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a75930cc-8495-486d-8b4b-31eaed4f821e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 12']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				&#9;1	303022	2	LF-22 DIV_2 INLAND B_ZAHL 	LF-22 DIVERSER_2 INLAND B_ZAHL Autotest AT 1010 Wien	ER011 B_ZAHL 303022/2	ER011 B_ZAHL 303022/2	30.01.2021	03.01.2021	02.02.2021	02.02.2021			0	0,00	03.01.2021	0	0,00	03.01.2021	ER	R		S						1.000,00	EUR	2.000,00	1	2.000,00	2.000,00	0,00	0,00	1.000,00	EUR	0,00	1.000,00	0,00	1.000,00	1.000,00	1.000,00		303022	LF-22 DIV_2 INLAND B_ZAHL 	AT	SEPA-A1	2		2	2			OBK		ER011 B_ZAHL 303022/DIV2 Skonto Praktiker		20111	00003429660	GIBAATWWXXX	AT02 2011 1000 0342 9660									AT					L	J	1.000,00	0,00	1.000,00	166,67	0,00	1	122	1	AT	SORT@303022@LF-22 DIV_2 INLAND B_ZAHL @S@0000000000002000,00@2021-02-02-00.00.00.000000@2021-02-02-00.00.00.000000@ER011 B_ZAHL 303022/2@2021-01-30-00.00.00.000000@ER011 B_ZAHL 303022/2@0000000000001000,00@0000000000000000,00@0000000000000000,00@001@	2021-01-30-00.00.00.000000	1000	S	1		3		RS							&#9;
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be1af0fe-41ec-4e18-96c6-c9798fa5bbee">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d85f70a0-eade-428a-8ecf-bfa8ee59a7c1"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 13']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				&#9;1	303023		LF-23 INLAND B_ZAHL	LF-23 INLAND B_ZAHL Autotest AT - 1010 Wien	ER003 B_ZAHL 303023	ER003 B_ZAHL 303023	30.01.2021	02.01.2021	01.02.2021	01.02.2021			0	0,00	03.01.2021	0	0,00	03.01.2021	ER	R		S						1.000,00	EUR	900,00	1	900,00	900,00	0,00	0,00	1.000,00	EUR	0,00	1.000,00	0,00	1.000,00	1.000,00	1.000,00		303023	LF-23 INLAND B_ZAHL	AT	SEPA-A1			1	1			OBK		ER003 B_ZAHL kein Skonto (praktischer Skonto)		20815	00000698597	STSPAT2GXXX	AT02 2081 5000 0069 8597									AT					L	N	1.000,00	0,00	1.000,00	166,67	0,00	1	114	1	AT	SORT@303023@LF-23 INLAND B_ZAHL@S@0000000000000900,00@2021-02-01-00.00.00.000000@2021-02-01-00.00.00.000000@ER003 B_ZAHL 303023@2021-01-30-00.00.00.000000@ER003 B_ZAHL 303023@0000000000001000,00@0000000000000000,00@0000000000000000,00@001@303023	2021-01-30-00.00.00.000000	1000	S	1		3		RS							&#9;
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be1af0fe-41ec-4e18-96c6-c9798fa5bbee">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3773f23f-0437-4b25-8a8c-6906f9d6d89d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 14']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				&#9;1	303023		LF-23 INLAND B_ZAHL	LF-23 INLAND B_ZAHL Autotest AT - 1010 Wien	ER004 B_ZAHL 303023	ER004 B_ZAHL 303023	30.01.2021	02.01.2021	01.02.2021	01.02.2021			0	0,00	03.01.2021	0	0,00	03.01.2021	ER	R		S						900,00	EUR	900,00	1	900,00	900,00	0,00	0,00	900,00	EUR	0,00	900,00	0,00	900,00	900,00	900,00		303023	LF-23 INLAND B_ZAHL	AT	SEPA-A1			1	1			OBK		ER004 B_ZAHL kein Skonto (praktischer Skonto)		20815	00000698597	STSPAT2GXXX	AT02 2081 5000 0069 8597									AT					L	N	900,00	0,00	900,00	150,00	0,00	1	115	1	AT	SORT@303023@LF-23 INLAND B_ZAHL@S@0000000000000900,00@2021-02-01-00.00.00.000000@2021-02-01-00.00.00.000000@ER004 B_ZAHL 303023@2021-01-30-00.00.00.000000@ER004 B_ZAHL 303023@0000000000000900,00@0000000000000000,00@0000000000000000,00@001@303023	2021-01-30-00.00.00.000000	900	S	1		3		RS							&#9;
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="be1af0fe-41ec-4e18-96c6-c9798fa5bbee">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="474a0dcb-1423-4884-89b6-ddf8b47aaef6"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				&#9;1	303023		LF-23 INLAND B_ZAHL	LF-23 INLAND B_ZAHL Autotest AT - 1010 Wien	GS003 B_ZAHL 303023	GS003 B_ZAHL 303023	30.01.2021	02.02.2021	04.03.2021	04.03.2021			0	0,00	02.02.2021	0	0,00	02.02.2021	ERG	G		S						-1.000,00	EUR	900,00	1	900,00	900,00	0,00	0,00	-1.000,00	EUR	0,00	-1.000,00	0,00	-1.000,00	-1.000,00	-1.000,00		303023	LF-23 INLAND B_ZAHL	AT	SEPA-A1			1	1			OBK		GS003 B_ZAHL 303023 prakt. Skonto 		20815	00000698597	STSPAT2GXXX	AT02 2081 5000 0069 8597									AT					L	N	-1.000,00	0,00	-1.000,00	-166,67	0,00	1	125	1	AT	SORT@303023@LF-23 INLAND B_ZAHL@S@0000000000000900,00@2021-03-04-00.00.00.000000@2021-03-04-00.00.00.000000@GS003 B_ZAHL 303023@2021-01-30-00.00.00.000000@GS003 B_ZAHL 303023@-9999999999998999,00@0000000000000000,00@0000000000000000,00@001@303023	2021-01-30-00.00.00.000000	-1000	S	1		3		RS							&#9;
+			</matchvalue>
+		</validationitem>
+		<keyitem
+		action="Press"
+		data="F4, Alt"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="62"
+		searchpropertyid="62ce17ed-048d-4c0c-91d8-893056507858"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d6290574-e85f-4b44-9d0c-ce40834f1c8d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZlvsÄndern']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keyitem>
+	</recorditems>
+	<repository
+	id="7b72118a-62eb-41df-b2e8-9cb72bd3379d"
+	name="B_ZAHLV_001Repository"
+	relativepath="..\B_ZAHLV_001Repository.rxrep">
+		<codegen
+		classname="B_ZAHLV_001Repository"
+		namespace="B_ZAHLV_001">
+		</codegen>
+		<rootfolder
+		id="e679616b-b142-449e-84c8-627d1a3a80c9"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Kontrolle_Bankbeleg_Detail_B_ZAHL.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

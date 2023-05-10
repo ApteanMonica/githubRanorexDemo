@@ -1,0 +1,698 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{DE12F255-A4F8-42C8-B28A-390772ECA890}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Servicecenter</RootNamespace>
+    <AssemblyName>Servicecenter</AssemblyName>
+    <RanorexVersion>8.3</RanorexVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <projectdefaultrepository>514d4a14-ceda-4a16-a311-81d8683c7c7a</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>69f6df1c-9d44-4a0e-9970-c5d97ffbbf43</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>1f4d3bf9-a592-45a5-91eb-6d255d95d5df</id>
+    </Compile>
+    <Compile Include="Recordings\Allgemein\Anmeldung.cs">
+      <DependentUpon>Anmeldung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>07c10015-f713-4965-8b8f-fd2df93662ab</id>
+      <BoundTo>f5266b9e-2128-4106-9f59-1e45069fc17b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Allgemein\Anmeldung.UserCode.cs">
+      <DependentUpon>Anmeldung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d6f5375f-d344-42d6-b617-8cee20d14e12</id>
+      <BoundTo>f5266b9e-2128-4106-9f59-1e45069fc17b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Allgemein\Lizenzen.cs">
+      <DependentUpon>Lizenzen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>20fd2451-3178-4d5f-ac8b-089fec0c65d5</id>
+      <BoundTo>e9e6c226-e43f-4ff0-a713-65b9026c814f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Allgemein\Lizenzen.UserCode.cs">
+      <DependentUpon>Lizenzen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c19a22a6-9ddf-40d7-9fca-59f4adc3bf5d</id>
+      <BoundTo>e9e6c226-e43f-4ff0-a713-65b9026c814f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Allgemein\Lizenzen2.cs">
+      <DependentUpon>Lizenzen2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f7a53d68-41d0-4249-a3bb-5611a9809313</id>
+      <BoundTo>ad045866-3ead-4d53-b8da-ca0c8c6ba63f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Allgemein\Lizenzen2.UserCode.cs">
+      <DependentUpon>Lizenzen2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d4470d16-300f-4d35-a40e-dba7e92ddfcd</id>
+      <BoundTo>ad045866-3ead-4d53-b8da-ca0c8c6ba63f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Allgemein\Ticketanlage.cs">
+      <DependentUpon>Ticketanlage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>641f918b-9d33-438d-be34-9ba913519d42</id>
+      <BoundTo>1e7ed6e3-78fb-419f-be84-96ab71a77b4f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Allgemein\Ticketanlage.UserCode.cs">
+      <DependentUpon>Ticketanlage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d8e74a06-9b4e-4bb8-b767-6bdf79ab70f8</id>
+      <BoundTo>1e7ed6e3-78fb-419f-be84-96ab71a77b4f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Allgemein\Ticketanlage_2.cs">
+      <DependentUpon>Ticketanlage_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9163dd68-1a5f-4f00-8310-279c329ca8ad</id>
+      <BoundTo>55c741f9-26cd-4eaf-8c84-2e2502468df9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Allgemein\Ticketanlage_2.UserCode.cs">
+      <DependentUpon>Ticketanlage_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>18cf3ad9-bf1f-4b30-891e-4e7fdf535ea3</id>
+      <BoundTo>55c741f9-26cd-4eaf-8c84-2e2502468df9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Allgemein\Ticket_Fail.cs">
+      <DependentUpon>Ticket_Fail.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fdaa56c9-9b83-4614-bbf7-f32c442d0667</id>
+      <BoundTo>92820cf7-d3ea-4923-92ac-10b85438c359</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Allgemein\Ticket_Fail.UserCode.cs">
+      <DependentUpon>Ticket_Fail.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1772c97b-def4-4df6-b3b5-778f1bde23c1</id>
+      <BoundTo>92820cf7-d3ea-4923-92ac-10b85438c359</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\EDGE\Anmeldun_ED.cs">
+      <BoundTo>160ca161-418d-46bc-b432-f37ce8cc3359</BoundTo>
+      <DependentUpon>Anmeldun_ED.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bb50b074-675e-41b4-b080-2c1ca6ad4072</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\Anmeldun_ED.UserCode.cs">
+      <BoundTo>160ca161-418d-46bc-b432-f37ce8cc3359</BoundTo>
+      <DependentUpon>Anmeldun_ED.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>04c9335b-d029-4217-8d41-96e0230dfa6b</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\Download_ED.cs">
+      <BoundTo>1c517f74-4da7-4a25-b496-fd525fd1d6ee</BoundTo>
+      <DependentUpon>Download_ED.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b631a686-21b7-49f4-9592-c235520205cf</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\Download_ED.UserCode.cs">
+      <BoundTo>1c517f74-4da7-4a25-b496-fd525fd1d6ee</BoundTo>
+      <DependentUpon>Download_ED.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a6b31503-5b08-4d15-8c46-45b15376e65b</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\EDDownload.cs">
+      <BoundTo>75201371-908a-48c6-ba4f-2aeaaf538d59</BoundTo>
+      <DependentUpon>EDDownload.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5c7725f6-ab16-4abf-8877-8f2ade1887cd</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\EDDownload.UserCode.cs">
+      <BoundTo>75201371-908a-48c6-ba4f-2aeaaf538d59</BoundTo>
+      <DependentUpon>EDDownload.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3c5a07ff-bfa7-469e-a18a-b015c10b8da6</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\EDGE_Start.cs">
+      <BoundTo>00ac5d90-195b-44e5-a4fc-4b975aa26b55</BoundTo>
+      <DependentUpon>EDGE_Start.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f21e6a8e-d5a1-4845-8446-91d8eb4ecd40</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\EDGE_Start.UserCode.cs">
+      <BoundTo>00ac5d90-195b-44e5-a4fc-4b975aa26b55</BoundTo>
+      <DependentUpon>EDGE_Start.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1d110e31-b0a6-4c39-9d1d-20dbba1068f7</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\EDTicketanlage_3.cs">
+      <BoundTo>c776aa22-fe63-4fe3-a84a-edec5fb53543</BoundTo>
+      <DependentUpon>EDTicketanlage_3.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>86d834fc-0285-4540-8959-691f84fa66ea</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\EDTicketanlage_3.UserCode.cs">
+      <BoundTo>c776aa22-fe63-4fe3-a84a-edec5fb53543</BoundTo>
+      <DependentUpon>EDTicketanlage_3.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d12befaa-43c3-4924-9b5f-3171c48e53a4</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\EDTicketuebersicht.cs">
+      <BoundTo>3fba1121-b6bd-4446-bc8d-fda8e8ed416c</BoundTo>
+      <DependentUpon>EDTicketuebersicht.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>712aa964-de26-42bf-b888-e987249afd70</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\EDTicketuebersicht.UserCode.cs">
+      <BoundTo>3fba1121-b6bd-4446-bc8d-fda8e8ed416c</BoundTo>
+      <DependentUpon>EDTicketuebersicht.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b3601c74-4b95-40b0-8274-9283b8b65c05</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\ED_Exit.cs">
+      <BoundTo>be8822ba-82ca-41fa-819c-bc17bc34e80f</BoundTo>
+      <DependentUpon>ED_Exit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2f0ffd66-3dca-456c-9736-e7b860a212d5</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\ED_Exit.UserCode.cs">
+      <BoundTo>be8822ba-82ca-41fa-819c-bc17bc34e80f</BoundTo>
+      <DependentUpon>ED_Exit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c8360d33-f340-4a78-8bea-f83ee8dcded8</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\Lizenzen2_ED.cs">
+      <BoundTo>ec4f38f9-40fc-4b5b-be4f-e2d9259482e1</BoundTo>
+      <DependentUpon>Lizenzen2_ED.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1d6ca5de-4f39-4da4-bc43-9db8018379db</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\Lizenzen2_ED.UserCode.cs">
+      <BoundTo>ec4f38f9-40fc-4b5b-be4f-e2d9259482e1</BoundTo>
+      <DependentUpon>Lizenzen2_ED.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6c13c578-4da0-4bf9-aa71-8ed8c48943c1</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\Lizenzen_ED.cs">
+      <BoundTo>2e7506ad-703c-428b-b062-2491f6fd33ce</BoundTo>
+      <DependentUpon>Lizenzen_ED.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>eea55284-1b41-471f-a161-9d4f961798b1</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\Lizenzen_ED.UserCode.cs">
+      <BoundTo>2e7506ad-703c-428b-b062-2491f6fd33ce</BoundTo>
+      <DependentUpon>Lizenzen_ED.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a58a7720-452e-426e-9739-48f4be42ec85</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\Ticketanlage2_ED.cs">
+      <BoundTo>d67fd350-c1a4-41fe-88d9-10f8eb285dd3</BoundTo>
+      <DependentUpon>Ticketanlage2_ED.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>eb31bd4e-b732-4348-b177-46e935ed681f</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\Ticketanlage2_ED.UserCode.cs">
+      <BoundTo>d67fd350-c1a4-41fe-88d9-10f8eb285dd3</BoundTo>
+      <DependentUpon>Ticketanlage2_ED.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6b9c019a-46b0-42e4-9130-db452772b3c5</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\Ticketanlage3_ED.cs">
+      <BoundTo>28bccdc4-ec1e-4773-9a7f-a3f13f1cafe8</BoundTo>
+      <DependentUpon>Ticketanlage3_ED.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c29d3bed-179f-4490-bc14-253dbb26e0d0</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\Ticketanlage3_ED.UserCode.cs">
+      <BoundTo>28bccdc4-ec1e-4773-9a7f-a3f13f1cafe8</BoundTo>
+      <DependentUpon>Ticketanlage3_ED.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>17934549-03ba-4b90-848f-1e57571979a5</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\Ticketanlage_ED.cs">
+      <BoundTo>421d3118-4bc8-4117-bc0a-5383276db902</BoundTo>
+      <DependentUpon>Ticketanlage_ED.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dcb70ad1-99a2-40c8-bcbc-7df71695f1e3</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\Ticketanlage_ED.UserCode.cs">
+      <BoundTo>421d3118-4bc8-4117-bc0a-5383276db902</BoundTo>
+      <DependentUpon>Ticketanlage_ED.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>58f77e8c-3f25-4182-a31b-1e86a42d0a47</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\Ticketuebersicht_ED.cs">
+      <BoundTo>6aa3f390-035d-4638-b465-f4cb7ae0fce9</BoundTo>
+      <DependentUpon>Ticketuebersicht_ED.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>08a19e14-4e1d-4bc5-a15d-dad4adc0b6d3</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\Ticketuebersicht_ED.UserCode.cs">
+      <BoundTo>6aa3f390-035d-4638-b465-f4cb7ae0fce9</BoundTo>
+      <DependentUpon>Ticketuebersicht_ED.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4021a3e1-b864-4d43-8697-afc3620ad8a8</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\Ticket_Fail_ED.cs">
+      <BoundTo>6ae643a0-7032-46d1-9fb7-8eeaefafdb05</BoundTo>
+      <DependentUpon>Ticket_Fail_ED.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c5a52831-2a51-4891-a868-a91354e152fc</id>
+    </Compile>
+    <Compile Include="Recordings\EDGE\Ticket_Fail_ED.UserCode.cs">
+      <BoundTo>6ae643a0-7032-46d1-9fb7-8eeaefafdb05</BoundTo>
+      <DependentUpon>Ticket_Fail_ED.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>eb65b236-991d-47f0-94a7-b515a4c8f00a</id>
+    </Compile>
+    <Compile Include="Recordings\Firefox\Consultinganfrage.cs">
+      <BoundTo>e0a52bde-6a7e-4f36-be74-829b98dd6d53</BoundTo>
+      <DependentUpon>Consultinganfrage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d4c78b46-6bcb-42e9-bb62-cc816033be2a</id>
+    </Compile>
+    <Compile Include="Recordings\Firefox\Consultinganfrage.UserCode.cs">
+      <BoundTo>e0a52bde-6a7e-4f36-be74-829b98dd6d53</BoundTo>
+      <DependentUpon>Consultinganfrage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9d2d8c61-e427-4d6f-9db6-0e023bdef2ef</id>
+    </Compile>
+    <Compile Include="Recordings\Firefox\FFDownload.cs">
+      <DependentUpon>FFDownload.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ebcad2f4-6bbf-4067-b469-1a3f2c8d0c37</id>
+      <BoundTo>0e244412-c98c-4e44-abec-cc33b0bf823c</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Firefox\FFDownload.UserCode.cs">
+      <DependentUpon>FFDownload.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>18752a31-b47a-4690-b22a-eb8228dcdd7d</id>
+      <BoundTo>0e244412-c98c-4e44-abec-cc33b0bf823c</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Firefox\FF_Exit.cs">
+      <BoundTo>c01aadc9-65c8-425a-a680-4d7a1b36e72a</BoundTo>
+      <DependentUpon>FF_Exit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c074b849-f1b4-4b44-a06c-2563848f10b5</id>
+    </Compile>
+    <Compile Include="Recordings\Firefox\FF_Exit.UserCode.cs">
+      <BoundTo>c01aadc9-65c8-425a-a680-4d7a1b36e72a</BoundTo>
+      <DependentUpon>FF_Exit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3b46bf06-3dfb-4adf-98ec-f67a7d583b6d</id>
+    </Compile>
+    <Compile Include="Recordings\Firefox\FF_Start.cs">
+      <BoundTo>9de05c2e-f675-4a57-b7d2-e4b673a91729</BoundTo>
+      <DependentUpon>FF_Start.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5e6c2fc1-54cc-47a3-8e4e-7cd4c2d1d06d</id>
+    </Compile>
+    <Compile Include="Recordings\Firefox\FF_Start.UserCode.cs">
+      <BoundTo>9de05c2e-f675-4a57-b7d2-e4b673a91729</BoundTo>
+      <DependentUpon>FF_Start.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>636cdaf2-174d-407d-803e-696b23f29061</id>
+    </Compile>
+    <Compile Include="Recordings\Firefox\FFTicketanlage_3.cs">
+      <BoundTo>84d850fa-89bc-4898-aef8-9344db9ede3e</BoundTo>
+      <DependentUpon>FFTicketanlage_3.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>216069de-7d72-4ce6-a37a-d3afde10d69c</id>
+    </Compile>
+    <Compile Include="Recordings\Firefox\FFTicketanlage_3.UserCode.cs">
+      <BoundTo>84d850fa-89bc-4898-aef8-9344db9ede3e</BoundTo>
+      <DependentUpon>FFTicketanlage_3.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c67722b8-3e8e-4328-a40a-4e124a0192ae</id>
+    </Compile>
+    <Compile Include="Recordings\Firefox\Ticketuebersicht.cs">
+      <BoundTo>e37a8a38-08f4-46a0-a675-667eab4122fe</BoundTo>
+      <DependentUpon>Ticketübersicht.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9c66defd-6049-47f3-b78e-b363177c9d65</id>
+    </Compile>
+    <Compile Include="Recordings\Firefox\Ticketuebersicht.UserCode.cs">
+      <BoundTo>e37a8a38-08f4-46a0-a675-667eab4122fe</BoundTo>
+      <DependentUpon>Ticketübersicht.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8630499e-4d05-4b2e-b210-ea6549c33484</id>
+    </Compile>
+    <Compile Include="Recordings\RS2\RS2_Exit.cs">
+      <BoundTo>2ae67e60-1990-41c1-ba5d-ef7c4d57c211</BoundTo>
+      <DependentUpon>RS2_Exit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d3fbabaa-159c-434a-ad84-1fb7d7816adb</id>
+    </Compile>
+    <Compile Include="Recordings\RS2\RS2_Exit.UserCode.cs">
+      <BoundTo>2ae67e60-1990-41c1-ba5d-ef7c4d57c211</BoundTo>
+      <DependentUpon>RS2_Exit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>41377d9f-da64-4b3b-8fff-e75181cd4d25</id>
+    </Compile>
+    <Compile Include="Recordings\RS2\RS2_Start.cs">
+      <DependentUpon>RS2_Start.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>56c50383-0732-4947-9881-7ea21be60fde</id>
+      <BoundTo>924a970a-ea35-42f2-ac25-a80b25bad12c</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\RS2\RS2_Start.UserCode.cs">
+      <DependentUpon>RS2_Start.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>72353d80-c0f1-427e-b155-3b84dcfd4233</id>
+      <BoundTo>924a970a-ea35-42f2-ac25-a80b25bad12c</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\RS2\TicketkontrolleFF.cs">
+      <BoundTo>6195479f-f482-4176-a5c0-532c07cbb7da</BoundTo>
+      <DependentUpon>TicketkontrolleFF.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b4aa5422-e575-4c86-8115-a986405eeea4</id>
+    </Compile>
+    <Compile Include="Recordings\RS2\TicketkontrolleFF.UserCode.cs">
+      <BoundTo>6195479f-f482-4176-a5c0-532c07cbb7da</BoundTo>
+      <DependentUpon>TicketkontrolleFF.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>af0d3b09-b229-478d-9b02-55cdcf9adec4</id>
+    </Compile>
+    <Compile Include="Recordings\RS2\TicketkontrolleED.cs">
+      <DependentUpon>TicketkontrolleED.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>df135dbb-5ec6-4cbf-bf49-5230b9207372</id>
+      <BoundTo>c6bfd9bb-dd99-4f56-8dbb-7c4e93a1dcdd</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\RS2\TicketkontrolleED.UserCode.cs">
+      <DependentUpon>TicketkontrolleED.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6763b898-0ddf-4bb0-ab63-83d39a3325ba</id>
+      <BoundTo>c6bfd9bb-dd99-4f56-8dbb-7c4e93a1dcdd</BoundTo>
+    </Compile>
+    <Compile Include="ServicecenterRepository.cs">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <DependentUpon>ServicecenterRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>e58f44d6-30ab-4d4c-a62b-de41e836b645</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>5b0a6513-536e-4ed3-b046-3472adcbc53d</id>
+    </None>
+    <None Include="Recordings\Allgemein\Anmeldung.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>f5266b9e-2128-4106-9f59-1e45069fc17b</id>
+      <recordtableid>d48ae4b1-7924-4d58-b549-2ef706108a4b</recordtableid>
+    </None>
+    <None Include="Recordings\Allgemein\Lizenzen.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>e9e6c226-e43f-4ff0-a713-65b9026c814f</id>
+      <recordtableid>bb764758-714c-4a5b-80f3-8da45ed5a67b</recordtableid>
+    </None>
+    <None Include="Recordings\Allgemein\Lizenzen2.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>ad045866-3ead-4d53-b8da-ca0c8c6ba63f</id>
+      <recordtableid>bf505a96-9b00-4f99-9822-2167c941d71c</recordtableid>
+    </None>
+    <None Include="Recordings\Allgemein\Ticketanlage.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>1e7ed6e3-78fb-419f-be84-96ab71a77b4f</id>
+      <recordtableid>00ea7d2d-f9e5-4f54-9997-f700fa0758e6</recordtableid>
+    </None>
+    <None Include="Recordings\Allgemein\Ticketanlage_2.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>55c741f9-26cd-4eaf-8c84-2e2502468df9</id>
+      <recordtableid>d3b316f3-0ea1-4b73-9386-368d524287cc</recordtableid>
+    </None>
+    <None Include="Recordings\Allgemein\Ticket_Fail.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>92820cf7-d3ea-4923-92ac-10b85438c359</id>
+      <recordtableid>48fa08ed-4b81-4370-9473-78f477eafa71</recordtableid>
+    </None>
+    <None Include="Recordings\EDGE\Anmeldun_ED.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>160ca161-418d-46bc-b432-f37ce8cc3359</id>
+      <recordtableid>a46e5bed-9230-4e21-a2d3-25e8b12eca52</recordtableid>
+    </None>
+    <None Include="Recordings\EDGE\Download_ED.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>1c517f74-4da7-4a25-b496-fd525fd1d6ee</id>
+      <recordtableid>9fa1b963-be76-47e1-bdcd-9603a41adca8</recordtableid>
+    </None>
+    <None Include="Recordings\EDGE\EDDownload.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>75201371-908a-48c6-ba4f-2aeaaf538d59</id>
+      <recordtableid>beee5cb6-6d86-4d3f-a23f-be8d014753d7</recordtableid>
+    </None>
+    <None Include="Recordings\EDGE\EDGE_Start.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>00ac5d90-195b-44e5-a4fc-4b975aa26b55</id>
+      <recordtableid>334d38f5-70db-4087-9c7a-660e806e2575</recordtableid>
+    </None>
+    <None Include="Recordings\EDGE\EDTicketanlage_3.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>c776aa22-fe63-4fe3-a84a-edec5fb53543</id>
+      <recordtableid>e0c50f8e-37c0-4ee9-9f9a-1ab29e8144e0</recordtableid>
+    </None>
+    <None Include="Recordings\EDGE\EDTicketuebersicht.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>3fba1121-b6bd-4446-bc8d-fda8e8ed416c</id>
+      <recordtableid>b6213caf-b3eb-455b-9cbe-7137bcdd9328</recordtableid>
+    </None>
+    <None Include="Recordings\EDGE\ED_Exit.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>be8822ba-82ca-41fa-819c-bc17bc34e80f</id>
+      <recordtableid>eaedc8bd-a94b-423c-9a4c-a9c6cf2cefb1</recordtableid>
+    </None>
+    <None Include="Recordings\EDGE\Lizenzen2_ED.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>ec4f38f9-40fc-4b5b-be4f-e2d9259482e1</id>
+      <recordtableid>2f42b727-5bf0-40cf-b5e4-0de3bb45532e</recordtableid>
+    </None>
+    <None Include="Recordings\EDGE\Lizenzen_ED.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>2e7506ad-703c-428b-b062-2491f6fd33ce</id>
+      <recordtableid>7607fe21-b3a9-4069-a21b-f4ff011db13e</recordtableid>
+    </None>
+    <None Include="Recordings\EDGE\Ticketanlage2_ED.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>d67fd350-c1a4-41fe-88d9-10f8eb285dd3</id>
+      <recordtableid>f33b1f53-1907-430b-b6a5-fff342b8b7f5</recordtableid>
+    </None>
+    <None Include="Recordings\EDGE\Ticketanlage3_ED.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>28bccdc4-ec1e-4773-9a7f-a3f13f1cafe8</id>
+      <recordtableid>a6790bd6-d32c-495d-aceb-91e3f08a3b09</recordtableid>
+    </None>
+    <None Include="Recordings\EDGE\Ticketanlage_ED.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>421d3118-4bc8-4117-bc0a-5383276db902</id>
+      <recordtableid>c4557211-0475-47d3-b8ba-b56f3ddd8bf7</recordtableid>
+    </None>
+    <None Include="Recordings\EDGE\Ticketuebersicht_ED.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>6aa3f390-035d-4638-b465-f4cb7ae0fce9</id>
+      <recordtableid>eb25ff44-f132-4f7f-867d-91ffd0c10562</recordtableid>
+    </None>
+    <None Include="Recordings\EDGE\Ticket_Fail_ED.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>6ae643a0-7032-46d1-9fb7-8eeaefafdb05</id>
+      <recordtableid>f088661b-fb7a-41a0-92bf-8d91f263da60</recordtableid>
+    </None>
+    <None Include="Recordings\Firefox\Consultinganfrage.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>e0a52bde-6a7e-4f36-be74-829b98dd6d53</id>
+      <recordtableid>d82086d3-2805-4c56-8f9e-04ed99b87f37</recordtableid>
+    </None>
+    <None Include="Recordings\Firefox\FFDownload.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>0e244412-c98c-4e44-abec-cc33b0bf823c</id>
+      <recordtableid>32ce7741-d6b2-483c-9ea1-beeb9a975cca</recordtableid>
+    </None>
+    <None Include="Recordings\Firefox\FF_Exit.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>c01aadc9-65c8-425a-a680-4d7a1b36e72a</id>
+      <recordtableid>269250b2-946e-46b5-9333-4cc04f91ffc2</recordtableid>
+    </None>
+    <None Include="Recordings\Firefox\FF_Start.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>9de05c2e-f675-4a57-b7d2-e4b673a91729</id>
+      <recordtableid>d1f91980-9b84-44da-b0bd-4e5d6cb19790</recordtableid>
+    </None>
+    <None Include="Recordings\Firefox\FFTicketanlage_3.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>84d850fa-89bc-4898-aef8-9344db9ede3e</id>
+      <recordtableid>211c2711-8cf8-488c-b60d-44eabf70aa41</recordtableid>
+    </None>
+    <None Include="Recordings\Firefox\Ticketübersicht.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>e37a8a38-08f4-46a0-a675-667eab4122fe</id>
+      <recordtableid>eb45a18b-b6ce-4883-bb49-928bd75d6026</recordtableid>
+    </None>
+    <None Include="Recordings\RS2\RS2_Exit.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>2ae67e60-1990-41c1-ba5d-ef7c4d57c211</id>
+      <recordtableid>28e05e47-b326-4112-a9d2-3eb971de0352</recordtableid>
+    </None>
+    <None Include="Recordings\RS2\RS2_Start.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>924a970a-ea35-42f2-ac25-a80b25bad12c</id>
+      <recordtableid>e2b17c1d-4cca-47e2-84a7-01cb9f8bbf76</recordtableid>
+    </None>
+    <None Include="Recordings\RS2\TicketkontrolleFF.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>6195479f-f482-4176-a5c0-532c07cbb7da</id>
+      <recordtableid>9eb06b8d-f4a3-45be-8a02-5c954cff507d</recordtableid>
+    </None>
+    <None Include="Recordings\RS2\TicketkontrolleED.rxrec">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <id>c6bfd9bb-dd99-4f56-8dbb-7c4e93a1dcdd</id>
+      <recordtableid>6f970cc4-006b-4cfe-8dc9-b938fffcf105</recordtableid>
+    </None>
+    <None Include="ServicecenterRepository.rximg">
+      <BoundTo>514d4a14-ceda-4a16-a311-81d8683c7c7a</BoundTo>
+      <DependentUpon>ServicecenterRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>350e96c1-fc7a-4b3a-a802-28c457159ee8</id>
+    </None>
+    <None Include="ServicecenterRepository.rxrep">
+      <id>514d4a14-ceda-4a16-a311-81d8683c7c7a</id>
+      <repoid>f7deb4a7-2771-4c20-903d-bc17047e2b6a</repoid>
+      <reporootid>e5a69c28-9dbf-43c2-b940-3a3d711f721c</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Servicecenter.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>917da8fe-641f-493e-88fe-e1d388d822be</id>
+    </Content>
+    <Content Include="Servicecenter.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>1acdb0f8-d224-47c4-a5de-121d8f93d098</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings">
+      <id>bda09255-757a-4e9c-8e55-3ccf35a59188</id>
+    </Folder>
+    <Folder Include="Recordings\Firefox">
+      <id>84de7a00-f2bf-4a7d-97d9-ef12c7a63256</id>
+    </Folder>
+    <Folder Include="Recordings\EDGE">
+      <id>5eefc253-49e5-4ab3-a93a-ad4f82b6dffd</id>
+    </Folder>
+    <Folder Include="Recordings\Allgemein">
+      <id>e5cae458-7411-4a8a-bcdf-a78490ea6243</id>
+    </Folder>
+    <Folder Include="Recordings\RS2">
+      <id>9e4351be-f493-4f9e-8aaa-1448c001e2b4</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{BCDED1DF-2EC2-4D0B-8FF3-BEBF7C15BAF3}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="3be0b284-d3a8-4dbb-a53f-c2b5911f2c8e"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Druck_Tabelle_schliessen"
+	namespace="B_UVA_001.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b654579b-739f-4a10-b0df-7547a5a0cb55">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="12524df7-cda9-42b6-8e5a-9a321ee11d85"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='[200]  UVA-Formular']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<keyitem
+		action="Press"
+		data="F4, Alt"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="fb53311b-b37b-4649-a6ea-e879aa35934c"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="12524df7-cda9-42b6-8e5a-9a321ee11d85"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="272"
+				prefcap="titlebar"
+				rect="-1217,-167,592,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[200]  UVA-Formular
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[200]  UVA-Formular
+					</attribute>
+				</element>
+				<path>
+					/form[@title='[200]  UVA-Formular']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keyitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="e4aa1760-0ed0-4aa5-b179-8907408fb572"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="dcb95c98-d797-4530-aecb-9ee9a1a53833"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgDrucken']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="fc77fec3-461c-4f3a-94b6-49b3c9df70e8"
+	name="B_UVA_001Repository"
+	relativepath="..\B_UVA_001Repository.rxrep">
+		<codegen
+		classname="B_UVA_001Repository"
+		namespace="B_UVA_001">
+		</codegen>
+		<rootfolder
+		id="063dc4e7-b42a-4ef5-82bb-a255f43d3b3f"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Druck_Tabelle_schliessen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

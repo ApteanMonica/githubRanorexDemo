@@ -1,0 +1,4544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="833a3e29-6296-4791-b6e9-a389d99316b1"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Kontrolle_kopiertes_Konto"
+	namespace="B_KTO_003.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="1822215e-8b74-4763-b017-5ec8e3423a46"
+		name="Konto_Ziel">
+			0123
+		</var>
+		<var
+		id="74c25791-3fb5-4932-81cd-4f7d5fe53058"
+		name="Kontoname_Ziel">
+			QS Konto kopieren neu
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="a7a5ac19-2ef5-444a-a644-3e91120cf7fb"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="40513e80-5b96-44ad-8f93-b824d20a29bc"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="8"
+				prefcap="tabpage"
+				rect="244,286,69,21"
+				role="tabpage"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="index"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="title"
+					type="System.String">
+						&amp;Allgemein
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Umschalten
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						&amp;Allgemein
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PageTab
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmKto']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&amp;Allgemein']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c7ea209c-a4a0-4be0-b9e5-33b98ba18491">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Konto_Ziel">
+				</binding>
+			</bindings>
+			<info
+			id="1b3e695a-c3ad-472c-a002-2b7b1d504760"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmKto']/container[@controlname='ClientArea']/?/?/text[@accessiblename='Konto']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c7ea209c-a4a0-4be0-b9e5-33b98ba18491">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Kontoname_Ziel">
+				</binding>
+			</bindings>
+			<info
+			id="fc606dab-b191-46e0-84d4-e5b973d05517"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="599,349,302,17"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						QS Konto kopieren
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Bezeichnung
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Text
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						QS Konto kopieren
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmKto']/container[@controlname='ClientArea']/?/?/text[@accessiblename='Bezeichnung']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				EUR
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="Exists"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="2e261cbb-b0b8-4856-bf1a-5c28e7fc3d2a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6135c5e7-5dd4-4240-9f37-375bb4e70f73"
+			sourcename="ElementTree">
+				<element
+				capabilities="control, nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="winforms"
+				hasfocus="False"
+				index="0"
+				prefcap="radiobutton"
+				rect="668,187,74,21"
+				role="radiobutton"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="checked"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Aktiv
+					</attribute>
+					<attribute
+					name="controlname"
+					type="System.String">
+						rbAktiv
+					</attribute>
+					<attribute
+					name="controltext"
+					type="System.String">
+						Aktiv
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						rssoft.fwg.basis.cRadioButton
+					</attribute>
+					<attribute
+					name="controltypename"
+					type="System.String">
+						cRadioButton
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						WindowsForms10.BUTTON.app.0.2804c64_r6_ad1
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						2828528
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						4448
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						B_KTO
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						LeftToRightReading
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Tiled, MaximizeBox, ClipChildren, ClipSiblings, Visible, ChildWindow
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						Aktiv
+					</attribute>
+					<dynamicattribute
+					description="No description available."
+					name="AccessibleDefaultActionDescription"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="AccessibleDescription"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="AccessibleName"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="AccessibleRole"
+					readonly="False"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Default
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="AllowDrop"
+					readonly="False"
+					type="System.Boolean">
+						True
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="AllowHtml"
+					readonly="False"
+					type="System.Boolean">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Anchor"
+					readonly="False"
+					type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Top, Left
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Anchor_K"
+					readonly="False"
+					type="System.Nullable`1[[System.Windows.Forms.AnchorStyles, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Anchor_P"
+					readonly="False"
+					type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Top, Left
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Appearance"
+					readonly="False"
+					type="System.Windows.Forms.Appearance, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Normal
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="AutoCheck"
+					readonly="False"
+					type="System.Boolean">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="AutoEllipsis"
+					readonly="False"
+					type="System.Boolean">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="AutoScrollOffset"
+					readonly="False"
+					type="System.Drawing.Point, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						0, 0
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="AutoSize"
+					readonly="False"
+					type="System.Boolean">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="BackColor"
+					readonly="False"
+					type="System.Drawing.Color, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						Transparent
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="BackgroundImage"
+					readonly="False"
+					type="System.Drawing.Image, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="BackgroundImageLayout"
+					readonly="False"
+					type="System.Windows.Forms.ImageLayout, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Tile
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="BerechtEnabled_K"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="BerechtEnabled_M"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="BerechtEnabled_Z"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="BerechtVisible_K"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="BerechtVisible_M"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="BerechtVisible_Z"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Bottom"
+					type="System.Int32">
+						51
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Bounds"
+					readonly="False"
+					type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						11,30,74,21
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="CanFocus"
+					type="System.Boolean">
+						True
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="CanSelect"
+					type="System.Boolean">
+						True
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Capture"
+					readonly="False"
+					type="System.Boolean">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="CausesValidation"
+					readonly="False"
+					type="System.Boolean">
+						True
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="CheckAlign"
+					readonly="False"
+					type="System.Drawing.ContentAlignment, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						MiddleLeft
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ClientRectangle"
+					type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						0,0,74,21
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ClientSize"
+					readonly="False"
+					type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						74, 21
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="CompanyName"
+					type="System.String">
+						Ramsauer &amp; St&#65533;rmer Business-Software
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ContainsFocus"
+					type="System.Boolean">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Created"
+					type="System.Boolean">
+						True
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Cursor"
+					readonly="False"
+					type="System.Windows.Forms.Cursor, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Default
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="DeviceDpi"
+					type="System.Int32">
+						96
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="DisplayRectangle"
+					type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						0,0,74,21
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Disposing"
+					type="System.Boolean">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Dock"
+					readonly="False"
+					type="System.Windows.Forms.DockStyle, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Dock_K"
+					readonly="False"
+					type="System.Nullable`1[[System.Windows.Forms.DockStyle, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Dock_P"
+					readonly="False"
+					type="System.Windows.Forms.DockStyle, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Enabled"
+					readonly="False"
+					type="System.Boolean">
+						True
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Enabled_K"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Enabled_M"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Enabled_P"
+					readonly="False"
+					type="System.Boolean">
+						True
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Enabled_U"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Enabled_Z"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="FlatStyle"
+					readonly="False"
+					type="System.Windows.Forms.FlatStyle, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Standard
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Focused"
+					type="System.Boolean">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Font"
+					readonly="False"
+					type="System.Drawing.Font, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						Microsoft Sans Serif, 8pt
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Font_K"
+					readonly="False"
+					type="System.Drawing.Font, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Font_M"
+					readonly="False"
+					type="System.Drawing.Font, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Font_P"
+					readonly="False"
+					type="System.Drawing.Font, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Font_U"
+					readonly="False"
+					type="System.Drawing.Font, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Font_Z"
+					readonly="False"
+					type="System.Drawing.Font, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ForeColor"
+					readonly="False"
+					type="System.Drawing.Color, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						68, 68, 68
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="HasChildren"
+					type="System.Boolean">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Height"
+					readonly="False"
+					type="System.Int32">
+						21
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Image"
+					readonly="False"
+					type="System.Drawing.Image, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ImageAlign"
+					readonly="False"
+					type="System.Drawing.ContentAlignment, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						MiddleCenter
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ImageIndex"
+					readonly="False"
+					type="System.Int32">
+						-1
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					isempty="True"
+					name="ImageKey"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ImeMode"
+					readonly="False"
+					type="System.Windows.Forms.ImeMode, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Disable
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="InvokeRequired"
+					type="System.Boolean">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="IsAccessible"
+					readonly="False"
+					type="System.Boolean">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="IsDisposed"
+					type="System.Boolean">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="IsHandleCreated"
+					type="System.Boolean">
+						True
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="IsMirrored"
+					type="System.Boolean">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Left"
+					readonly="False"
+					type="System.Int32">
+						11
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Location"
+					readonly="False"
+					type="System.Drawing.Point, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						11, 30
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Location_K"
+					readonly="False"
+					type="System.Nullable`1[[System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Location_P"
+					readonly="False"
+					type="System.Drawing.Point, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						11, 30
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Margin"
+					readonly="False"
+					type="System.Windows.Forms.Padding, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						3, 3, 3, 3
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="MaximumSize"
+					readonly="False"
+					type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						0, 0
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="MinimumSize"
+					readonly="False"
+					type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						0, 0
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Name"
+					readonly="False"
+					type="System.String">
+						rbAktiv
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Padding"
+					readonly="False"
+					type="System.Windows.Forms.Padding, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						0, 0, 0, 0
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Prevent_Textchange"
+					type="System.Boolean">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ProductName"
+					type="System.String">
+						rs2
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ProductVersion"
+					type="System.String">
+						50100.11036.1309.8446
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="RecreatingHandle"
+					type="System.Boolean">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Right"
+					type="System.Int32">
+						85
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="RightToLeft"
+					readonly="False"
+					type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						No
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="RS2Version"
+					readonly="False"
+					type="System.String">
+						4.2.0
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Size"
+					readonly="False"
+					type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						74, 21
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Size_K"
+					readonly="False"
+					type="System.Nullable`1[[System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Size_P"
+					readonly="False"
+					type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						74, 21
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TabIndex"
+					readonly="False"
+					type="System.Int32">
+						16
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TabIndex_K"
+					readonly="False"
+					type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TabIndex_M"
+					readonly="False"
+					type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TabIndex_Z"
+					readonly="False"
+					type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TabStop"
+					readonly="False"
+					type="System.Boolean">
+						True
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TabStop_K"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TabStop_M"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TabStop_P"
+					readonly="False"
+					type="System.Boolean">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TabStop_U"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TabStop_Z"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Tag"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Text_K"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Text_M"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Text_P"
+					readonly="False"
+					type="System.String">
+						Aktiv
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Text_U"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Text_Z"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TextAlign"
+					readonly="False"
+					type="System.Drawing.ContentAlignment, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						MiddleLeft
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TextImageRelation"
+					readonly="False"
+					type="System.Windows.Forms.TextImageRelation, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Overlay
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Top"
+					readonly="False"
+					type="System.Int32">
+						30
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="UseCompatibleTextRendering"
+					readonly="False"
+					type="System.Boolean">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="UseMnemonic"
+					readonly="False"
+					type="System.Boolean">
+						True
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="UseVisualStyleBackColor"
+					readonly="False"
+					type="System.Boolean">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="UseWaitCursor"
+					readonly="False"
+					type="System.Boolean">
+						False
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Visible"
+					readonly="False"
+					type="System.Boolean">
+						True
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Visible_K"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Visible_M"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Visible_P"
+					readonly="False"
+					type="System.Boolean">
+						True
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Visible_U"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Visible_Z"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Width"
+					readonly="False"
+					type="System.Int32">
+						74
+					</dynamicattribute>
+					<dynamicaction
+					description="No description available."
+					displayName="__cfBringWindowToTop">
+						<argument
+						description="No description available."
+						displayName="fphFenster"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="__cfInitBenutzer">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="__cfInitBerechtigungslevel">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="__cfLesenBerechtigung">
+						<argument
+						description="No description available."
+						displayName="psBtgd_prog"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="psBtgd_funktion"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="__cfLesenWebSupportTemplate">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="__cfLogHinzufügen">
+						<argument
+						description="No description available."
+						displayName="psLog_feld"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="psLog_alt"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="psLog_neu"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="psLog_text"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="pbLog_key"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="__cfLogNeueZeile">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="__cfLogSchreiben">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="__cfSetWindowText">
+						<argument
+						description="No description available."
+						displayName="fphFenster"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpsText"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="BringToFront">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="BringWindowToTop">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="CenterWindow">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfAnzeigenName">
+						<argument
+						description="No description available."
+						displayName="phItem"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfAufrufMöglich">
+						<argument
+						description="No description available."
+						displayName="psBtgd_prog"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfAusführen">
+						<argument
+						description="No description available."
+						displayName="cpsProgramm"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpsParameter"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpbLoadAndWait"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfBatchmodusDeaktivieren">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfBerechtigung">
+						<argument
+						description="No description available."
+						displayName="psBtgd_funktion"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfBringWindowToTop">
+						<argument
+						description="No description available."
+						displayName="phFenster"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfCheckFeature">
+						<argument
+						description="No description available."
+						displayName="fpsFeature"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpbFehlermeldung"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfCodieren">
+						<argument
+						description="No description available."
+						displayName="sDecSourceString"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="sDecCodewordDecode"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="sDecSchlüssel"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="sCodeVersion"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfDisable">
+						<argument
+						description="No description available."
+						displayName="chObjekt"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfDisableExt">
+						<argument
+						description="No description available."
+						displayName="chObjekt"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cnFarbe"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfDruckeDatei">
+						<argument
+						description="No description available."
+						displayName="cpsDateiname"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfEnable">
+						<argument
+						description="No description available."
+						displayName="chObjekt"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfEnableExt">
+						<argument
+						description="No description available."
+						displayName="chObjekt"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cnFarbe"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfEnde">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfFilterTabInto">
+						<argument
+						description="No description available."
+						displayName="psInto"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfFirmenwechsel">
+						<argument
+						description="No description available."
+						displayName="psFirm_nr"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="psFila_nr"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="pbCheckKeybel"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfFrage">
+						<argument
+						description="No description available."
+						displayName="cpsNachricht"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpnID"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfFrageExt">
+						<argument
+						description="No description available."
+						displayName="cpsNachricht"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpnID"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpbDlgKritisch"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfGetFremdSprachTabDef">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfGetFremdSprachTabDefS">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfHilfeFensterAllgemein">
+						<argument
+						description="No description available."
+						displayName="fphItem"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fphForm"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfHintPufferLoeschen">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfHinzufuegenFrom">
+						<argument
+						description="No description available."
+						displayName="psOriginal"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="psZusatz"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfHinzufuegenParameter">
+						<argument
+						description="No description available."
+						displayName="fpsApp_cd"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpsPar_cd"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpnPar_lfdnr"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpsPar_textk"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpsPar_textl"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpnPar_nummer"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfInformation">
+						<argument
+						description="No description available."
+						displayName="cpsText"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpsIcon"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpbOnOff"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfInitDummyVariables">
+						<argument
+						description="No description available."
+						displayName="fpbDefault"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpnInitValue"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpsInitValue"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpdtInitValue"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpbInitValue"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fphInitValueWindowHandle"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpbGlobal"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfIPCRegisterComponent">
+						<argument
+						description="No description available."
+						displayName="fpbRegister"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpnType"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpsName"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpsKomponentenName"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpnStatus"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfLesenBenutzerDaten">
+						<argument
+						description="No description available."
+						displayName="cpsTyp"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpsUsda_cd"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpnUsda_nr"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfLesenBenutzerDatenLong">
+						<argument
+						description="No description available."
+						displayName="fpsTyp"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpsUsda_cd"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfLesenDBDatum">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfLesenParameter">
+						<argument
+						description="No description available."
+						displayName="cpsApp_cd"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpsPar_cd"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpnPar_lfdnr"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cnbLangText"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpbFehlerMeldung"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfLesenProperty">
+						<argument
+						description="No description available."
+						displayName="cpsProperty"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfLesenPropertyExt">
+						<argument
+						description="No description available."
+						displayName="phWnd"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpsProperty"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfLesenTabInit">
+						<argument
+						description="No description available."
+						displayName="cpsTab_keys"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfLoeschenBenutzerDaten">
+						<argument
+						description="No description available."
+						displayName="cpsTyp"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpsUsda_cd"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpnUsda_nr"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfLoeschenBenutzerDatenLong">
+						<argument
+						description="No description available."
+						displayName="fpsTyp"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpsUsda_cd"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfMessageBox">
+						<argument
+						description="No description available."
+						displayName="psText"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="psTitle"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="pnFlags"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfMessageBoxExt">
+						<argument
+						description="No description available."
+						displayName="psText"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="psTitle"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="pnFlags"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="psaButtons"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="pbDlgKritisch"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfNachricht">
+						<argument
+						description="No description available."
+						displayName="cpsNachricht"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfNachrichtExt">
+						<argument
+						description="No description available."
+						displayName="cpsNachricht"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpbDlgKritisch"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfProtokollieren">
+						<argument
+						description="No description available."
+						displayName="pbInsert"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="pbTabelle"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfProtokollierenTabelle">
+						<argument
+						description="No description available."
+						displayName="pnZeile"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="psTyp"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfRunden">
+						<argument
+						description="No description available."
+						displayName="pnNumber"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="pnNachKomma"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfRundenBetrag">
+						<argument
+						description="No description available."
+						displayName="pnNumber"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="pnAufBetrag"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfSchreibenBenutzerDaten">
+						<argument
+						description="No description available."
+						displayName="cpsTyp"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpsUsda_cd"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpnUsda_nr"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpsUsda_daten"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfSchreibenBenutzerDatenLong">
+						<argument
+						description="No description available."
+						displayName="fpsTyp"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpsUsda_cd"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpsUsda_daten"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfSchreibenProperty">
+						<argument
+						description="No description available."
+						displayName="cpsProperty"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpsInhalt"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfSchreibenTab">
+						<argument
+						description="No description available."
+						displayName="cpsTab_key"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpsSelect"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpsFrom"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpsWhere"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfSendMsgToChildren">
+						<argument
+						description="No description available."
+						displayName="cphParent"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpnNachricht"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpnWParam"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpnLParam"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpnTyp"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpbAbbrechenBeiFehler"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpbToolbar"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfSendMsgToChildrenExt">
+						<argument
+						description="No description available."
+						displayName="cphParent"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpnNachricht"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpnWParam"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpnLParam"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpnTyp"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpbAbbrechenBeiFehler"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfSetWindowLabelText">
+						<argument
+						description="No description available."
+						displayName="phFenster"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="psText"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfSetWindowText">
+						<argument
+						description="No description available."
+						displayName="phFenster"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="psText"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfStartProgramm">
+						<argument
+						description="No description available."
+						displayName="cpsProgramm"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpsParameter"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpnParameter"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfStatusSetText">
+						<argument
+						description="No description available."
+						displayName="phFenster"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="psText"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfStrTrimX">
+						<argument
+						description="No description available."
+						displayName="fpsString"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfTblKillEdit">
+						<argument
+						description="No description available."
+						displayName="fphTabelle"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfTblSetCellBackColor">
+						<argument
+						description="No description available."
+						displayName="phSpalte"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="pnZeile"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="pnFarbe"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfTblSetCellBitmap">
+						<argument
+						description="No description available."
+						displayName="fphSpalte"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpsBitnameName"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fpsDllName"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfTblSetColumnBackColor">
+						<argument
+						description="No description available."
+						displayName="phSpalte"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="pnFarbe"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfTblSetColumnTitle">
+						<argument
+						description="No description available."
+						displayName="phFenster"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="psText"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfTblSetRowBackColor">
+						<argument
+						description="No description available."
+						displayName="phTabelle"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="pnZeile"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="pnFarbe"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfUebersetzen">
+						<argument
+						description="No description available."
+						displayName="hTrans"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfUebersetzenFenster">
+						<argument
+						description="No description available."
+						displayName="phFenster"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="pnTyp"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfUebersetzenFensterMenu">
+						<argument
+						description="No description available."
+						displayName="phFenster"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfUebersetzenMenu">
+						<argument
+						description="No description available."
+						displayName="phFenster"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfUebersetzenNachricht">
+						<argument
+						description="No description available."
+						displayName="psText"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfUebersetzenText">
+						<argument
+						description="No description available."
+						displayName="psText"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfWarnung">
+						<argument
+						description="No description available."
+						displayName="cpsNachricht"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfWarnungExt">
+						<argument
+						description="No description available."
+						displayName="cpsNachricht"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cpbDlgKritisch"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfWinHelp">
+						<argument
+						description="No description available."
+						displayName="fhFenster"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fsHilfeDatei"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fsHilfeEinsprung"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="fbContextHilfe"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfÄndernFarbe">
+						<argument
+						description="No description available."
+						displayName="cpnFarbe"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="cphObjekt"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="cfÄnderungAufzeichnen">
+						<argument
+						description="No description available."
+						displayName="hItem"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="psAlterWert"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="psNeuerWert"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="Clear">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ClearCursor">
+						<argument
+						description="No description available."
+						displayName="nType"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="CreateControl">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="DestroyWindow">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="DisableWindow">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="DisableWindowAndLabel">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="DoDragDrop">
+						<argument
+						description="No description available."
+						displayName="data"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="allowedEffects"
+						type="System.Windows.Forms.DragDropEffects, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Windows.Forms.DragDropEffects, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="DrawToBitmap">
+						<argument
+						description="No description available."
+						displayName="bitmap"
+						type="System.Drawing.Bitmap, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="targetBounds"
+						type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</argument>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="EnableWindow">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="EnableWindowAndLabel">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="FindChild">
+						<argument
+						description="No description available."
+						displayName="sWindowName"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="FireWindowActions">
+						<argument
+						description="No description available."
+						displayName="nMsg"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nMywParam"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nMylParam"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="Focus">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Boolean">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="FormUnitsToPixels">
+						<argument
+						description="No description available."
+						displayName="nFormUnits"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="bVertical"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetClassName">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetControlType">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetDataType">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetFirstChild">
+						<argument
+						description="No description available."
+						displayName="nTypeMask"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetLabel">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetLabelText">
+						<argument
+						description="No description available."
+						displayName="nMaxLength"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetName">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetNextChild">
+						<argument
+						description="No description available."
+						displayName="nTypeMask"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetParent">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetPreferredSize">
+						<argument
+						description="No description available."
+						displayName="proposedSize"
+						type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetProperty">
+						<argument
+						description="No description available."
+						displayName="sName"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetText">
+						<argument
+						description="No description available."
+						displayName="nMaxLen"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetVisibleInternal">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Boolean">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetWindowColor">
+						<argument
+						description="No description available."
+						displayName="nColorIndex"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetWindowState">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="Hide">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="HideWindow">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="HideWindowAndLabel">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="Invalidate">
+						<argument
+						description="No description available."
+						displayName="rc"
+						type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="invalidateChildren"
+						type="System.Boolean">
+						</argument>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="InvalidateWindow">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="IsChecked">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="IsDerivedFromClass">
+						<argument
+						description="No description available."
+						displayName="tClass"
+						type="System.Type">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="IsEnabled">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="IsModified">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="IsVisible">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="KillTimer">
+						<argument
+						description="No description available."
+						displayName="nIDEvent"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="LogicalToDeviceUnits">
+						<argument
+						description="No description available."
+						displayName="value"
+						type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="MoveWindow">
+						<argument
+						description="No description available."
+						displayName="nXOffset"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nYOffset"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="OnNachKonfigurationsWechsel">
+						<argument
+						description="No description available."
+						displayName="initial"
+						type="System.Boolean">
+						</argument>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="PerformClick">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="PerformLayout">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="PixelsToFormUnits">
+						<argument
+						description="No description available."
+						displayName="nNumPixels"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="bVertical"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="PointToClient">
+						<argument
+						description="No description available."
+						displayName="p"
+						type="System.Drawing.Point, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Drawing.Point, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="PointToScreen">
+						<argument
+						description="No description available."
+						displayName="p"
+						type="System.Drawing.Point, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Drawing.Point, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="PostMessage">
+						<argument
+						description="No description available."
+						displayName="nMsg"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nMywParam"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nMylParam"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="RectangleToClient">
+						<argument
+						description="No description available."
+						displayName="r"
+						type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="RectangleToScreen">
+						<argument
+						description="No description available."
+						displayName="r"
+						type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="Refresh">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ResetBackColor">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ResetBindings">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ResetCursor">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ResetFont">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ResetForeColor">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ResetImeMode">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ResetRightToLeft">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ResetText">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ResumeLayout">
+						<argument
+						description="No description available."
+						displayName="performLayout"
+						type="System.Boolean">
+						</argument>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="Scale">
+						<argument
+						description="No description available."
+						displayName="dx"
+						type="System.Single">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="dy"
+						type="System.Single">
+						</argument>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SendMessage">
+						<argument
+						description="No description available."
+						displayName="nMsg"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nMywParam"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nMylParam"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SendMessageToChildren">
+						<argument
+						description="No description available."
+						displayName="nMsg"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nMywParam"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nMylParam"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SendToBack">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetBounds">
+						<argument
+						description="No description available."
+						displayName="x"
+						type="System.Int32">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="y"
+						type="System.Int32">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="width"
+						type="System.Int32">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="height"
+						type="System.Int32">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="specified"
+						type="System.Windows.Forms.BoundsSpecified, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						</argument>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetContextMenu">
+						<argument
+						description="No description available."
+						displayName="menuType"
+						type="System.Type">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nFlags"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetCursor">
+						<argument
+						description="No description available."
+						displayName="sBlob"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nType"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetCursorFile">
+						<argument
+						description="No description available."
+						displayName="sFile"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nType"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetFocus">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetFont">
+						<argument
+						description="No description available."
+						displayName="sName"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nSize"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nEnhancement"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetLabelText">
+						<argument
+						description="No description available."
+						displayName="sText"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetLocation">
+						<argument
+						description="No description available."
+						displayName="nX"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nY"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetModified">
+						<argument
+						description="No description available."
+						displayName="bSet"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetProperty">
+						<argument
+						description="No description available."
+						displayName="sName"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="sValue"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nLength"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetSize">
+						<argument
+						description="No description available."
+						displayName="nWidth"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nHeight"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetText">
+						<argument
+						description="No description available."
+						displayName="sText"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetTimer">
+						<argument
+						description="No description available."
+						displayName="nIDEvent"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nElapseMilliSec"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetWindowColor">
+						<argument
+						description="No description available."
+						displayName="nColorIndex"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nColor"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="Show">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ShowWindow">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ShowWindowAndLabel">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SuspendLayout">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ToString">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.String">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="TrackPopupMenu">
+						<argument
+						description="No description available."
+						displayName="sMenuName"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nFlags"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nX"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nY"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="Update">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="UpdateWindow">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="WinHelp">
+						<argument
+						description="No description available."
+						displayName="sFile"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nCommand"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nData"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="sData"
+						type="System.Object">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Object">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="Yield">
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@controlname='frmKto']/?/?/container[@controlname='groupBox1']/radiobutton[@controlname='rbAktiv']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="8cb26380-5196-4347-82b0-294dd27e0968">
+				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
+			</helperscreenshot>
+			<matchname>
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c7ea209c-a4a0-4be0-b9e5-33b98ba18491">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="fe6d3546-0fc0-454a-872c-953fe5d08687"
+			sourcename="ElementTree">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="322,237,32,17"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						EUR
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Währung
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Text
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						EUR
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmKto']/container[@controlname='ClientArea']/?/?/text[@accessiblename='Währung']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="178795e0-3f29-474f-a525-23f6f4bd259f">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCACKAIoDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDctM7n
+x5vl8Y8zOc9+vPpViiigAooooAKKKKAIb1GezlVRuJXgevtVWTdPbX0kaPiSMqoKEFjt9Dz7VoZo
+yPWgZRupd8y2zpKIsAsyxM27n7uQMD3pys0uoq4WUBVZWDphV6cg9849T+FXMj1oyPWgQUUZHrRk
+etABRRketGR60AFFGR60ZHrQAUUZHrRketAEfnxADfIqbiQAzDnnFNjuonyGdFYE5UsMgA4zUK20
+sZbaIn3gghyeBkn0569KSSzdrcRjYDucn05z/iKALSTRP9yRG5xwwPPpSG4hUgNNGCTgAsKhkt5P
+tAliCHbtwpOM4BHp70xbSTy5w2zdIpAx25J/qKALXnReZ5fmJv8A7u4Z/Kn1RjWQXSRhMokjOXww
+6g+ox37Gr1AEVxIIoy5BOMAAdyTgCq/2l41f7REFZULgI24EDr2HNT3UZljKg4bgg+4OR/Kqqw3Z
+uWmk8oHyyqDcWCnj2HBxUPcont5JZATLGqcAgo+4H9BUcd55rhETLZbfzwqgkZP1x0otLdopJHaO
+KIPj93EcjPPPQcnPp2qA6cwRvKKI8hcSEfxKxP6jj9aQFv7Vb+WX+0RbAcbt4xmmpeW7yMiyodqB
+ydwxg9/8+tQpaStcpNKIlKkfKpJGAGGenXn9KYLKYeYAYyGIYZJ6hywBGOnNAFuS4QWr3EZWVVUs
+CrcHHvTmmiRWZ5EUL94lgNv1qubaR7S5RtiyT5OFJIXIx1x7elNFrLGAI9jCOTegdjzkHIJx79aA
+LJuYAyqZ4wXxtG8fNnpik+0wjbvkRCzFVDMOSDjjmqItJ90sQWPEkYDOcgLlmJ28c4z7Ur6bIWJy
+GDggjzXUAFieg69ehosBda7tlzuuIhg4OXHB/wAipNy/3h+dUHsH2xlcEqz5USsmQxznI5zU0dps
+jVAR8oA4Y/41L02GXqKKK2ICiiigAooooAa6sT8rAfUZpux/76/98/8A16kopWQEex/76/8AfP8A
+9ejY/wDfX/vn/wCvUlFFkFyPY/8AfX/vn/69Gx/76/8AfP8A9epKKLILkex/76/98/8A16Nj/wB9
+f++f/r1JRRZBcj2P/fX/AL5/+vRsf++v/fP/ANepKKLILkex/wC+v/fP/wBejY/99f8Avn/69SUU
+WQXCiiimAUUUUAFFFFABRWRcPez6rLb204QIoIB4GMD296X7Jq3/AD9p+Z/wqebyI5/I1qKyfsmr
+f8/afmf8KPsmrf8AP2n5n/Cjm8g5vI1qKxLmPU7aBpnulKrjIU89celalqPMtYXdmLMiknceuKFK
+7sNSu7E9FN8tfVv++zR5a+rf99mqKHUU3y19W/77NHlr6t/32aAHUU3y19W/77NHlr6t/wB9mgCo
+l1N5Ejv5eREJFABHXPv7UG6mRPMYIUJcBQDnjPfPtVloIX27okbaMDKjgU4xrjAUDGSMAcE96AIo
+JJGldJGRsKrAoCOufc+lT1DbWsdtu2clupwB/IAVNQAUUUUAYlz/AMhHUeM/6Of5LVl7fybcn7Jb
+W/7yM5hOcgOOvyiog0S67dCdkCNGAd5GDwvHNW4zpkO7yjaJuGG27Rke9RF2Ii1+JBqC755hsWTI
+hG1+h+c8HrUthH5VxOvkxwHC/u4jle/zdB16dO1SLLYImxJLZVznAZQM+tMa6jWQsk9u+7jcXAI/
+xFXdFXQax/yC5v8AgP8A6EKqRQec6f6Jb3GLaL/XHGOvT5TUupXELaZIguI5HOOjDJ5Hap7e0tp7
+S3aa3ikbylGXQE9Peo+0Sn7xFMNttqa4A4OB/wBswKr3EO5ryQ20DbXGZifnT5V5Ax269a1jBCzK
+xiQsn3SVGR9KXYmGG1cP97jr9asszHWM2txcNt+1o7BW/iBB+UD6jHHfPvWqOnNRmCEyiUxRmQDA
+faMgfWpKACiiigCGS7t0hMplQrgkYYc/SpVIZQykEHkEVRWyk/eFtoLKwHzlsZA7nntV5c7RuABx
+yAc0ALRRRQAUUUUAVptPtZ5TJLFudup3Ef1qP+ybH/nh/wCPt/jV2ilyrsTyx7FL+ybH/nh/4+3+
+NH9k2P8Azw/8fb/GrtQN56MQmHDdCf4aOVdg5Y9iH+ybH/nh/wCPt/jVxEWNFRBhVAAHtSRqyoAz
+bj3NOoSS2GklsFFFFMYUUUUAFFFFABRSbj/cP6Ubj/cP6UALRSbj/cP6Ubj/AHD+lAC0Um4/3D+l
+IZAv3gRQArMQeEY/TFJvb/nm35j/ABpPNT1/SjzU9f0oAXe3/PNvzH+NG9v+ebfmP8aTzU9f0o81
+PX9KAFDHP+rYfl/jTqZ5qev6Ueanr+lAD6KZ5qev6Ueanr+lAD6KZ5qev6Ueanr+lAD6KZ5qev6U
+eanr+lADBdwkE5fg4x5bZz16YzSG8gBGXPIB+6eM9M8cVXFpJPmScIH3ZAdARjGORk/zqZbTau0M
+B9zooA+U56UAP+1Q7Q2W5zwEbIx1yMZFBuolzufdltoCoSemccdailsRJIXzGWJP+sj3DB/HrT0t
+Njqwf7r7sbf9nbQBOjq6BlOQRkVHP/D+NOhj8qJUznHemz/w/jTQnsV5H8tM4yc4A9TSK7jJlVUA
+Gchsj+QolQumAcEEEE+oqu9vJI0jFIkLIV+U5yeOpxVEFkSIwyHUj1BpBNESwEqZXr8w4qOWKRnb
+Zt2sFySeRg1XaGVrZsoAF34Azlsk9sUgLnnRbN/mpszjduGKPOiBA8xMt0G4c1A9vI7+YQobP3Vc
+gdMdRSrbMqsPlGQo6k9DnvTAs0UUUCI5JHWRUjRWLAn5mx0x7H1oWeMqhZlUv0Unk0y4hMkiN5cc
+gUEbXPrj2PpUX2R88kNuAzl2G38B1oGWTNEASZUwpwTuHFPBBAIIIPQiqrWz+WgBBKsxwGK5yT3F
+As+BnYP++j/WheYmatFFFQahRRRQAUyRN+OcYp9FAEXkf7X6UeR/tfpUtFO4rIi8j/a/SjyP9r9K
+loouFkReR/tfpR5H+1+lS0UXCyIvI/2v0o8j/a/SpaKLhZEXkf7X6UeR/tfpUtFFwsiLyP8Aa/Sj
+yP8Aa/SpaKLhZH//2Q==
+			</helperscreenshot>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				EUR
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="fb596317-79e7-4175-b35e-82bf8563d632">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a23a756d-bc1e-45e0-bc04-feba9d5deaa9"
+			sourcename="ElementTree">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="402,337,44,17"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						P
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Verwendung
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Text
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						P
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmKto']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgemein']/?/?/text[@accessiblename='Verwendung']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="7fa0922d-12a2-47a9-a093-23b3fc16f43b">
+				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
+			</helperscreenshot>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				P
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="a7a5ac19-2ef5-444a-a644-3e91120cf7fb"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6f36a84e-89a3-4121-b8bd-03f826b03804"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="9"
+				prefcap="tabpage"
+				rect="313,286,61,21"
+				role="tabpage"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="index"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="title"
+					type="System.String">
+						&amp;Gruppen
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Umschalten
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						&amp;Gruppen
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PageTab
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmKto']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&amp;Gruppen']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="fb596317-79e7-4175-b35e-82bf8563d632">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4bcce6cf-3279-407f-964f-f75e623fd873"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="4"
+				prefcap="cell"
+				rect="804,489,48,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						0125
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colKtgr_cd Row 1
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Selected, Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						0125
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmKto']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpGruppen']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKtgr_cd Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				0125
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="e089ee69-028a-44cc-b292-8cac93abf32b"
+		sx="402"
+		sy="299"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="77b03917-3de1-4ad8-b195-8284b01af748"
+			sourcename="Recorder">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="10"
+				prefcap="tabpage"
+				rect="374,286,63,21"
+				role="tabpage"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="index"
+					type="System.Int32">
+						2
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="title"
+					type="System.String">
+						Be&amp;reiche
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Umschalten
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Be&amp;reiche
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PageTab
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmKto']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='Be&amp;reiche']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="e6c97120-bc3d-414c-9afa-b5e30e716ae1">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="7f16ea84-cea5-41e0-bc9d-1ce0e5455933">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bc79dac4-36ae-44f4-aa80-578676f1aee6"
+			sourcename="ElementTree">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="6"
+				prefcap="cell"
+				rect="732,361,84,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						P
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colKtbz_kz Row 1
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Selected, Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						P
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmKto']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKtbz_kz Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="dad80431-f52a-46f8-ac6f-df9a4d47116c">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCADqAOoDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDo0+4P
+pS01ThQMHp6Gl3D3/I0ALRSbh7/kaNw9/wAjQAtFJuHv+Ro3D3/I0ALRSbh7/kaNw9/yNAC0Um4e
+/wCRo3D3/I0ALRSbh7/kaNw9/wAjQAtFJuHv+Ro3D3/I0ALRSbh7/kaNw9/yNAC0Um4e/wCRo3D3
+/I0ALRSbh7/kaNw9/wAjQAtIeq/X+lG4e/5GkzkjGevpQA6iiigAooooAKKKKACiiigAooooAKKK
+KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCosu8
+ZWTcPUNmnbm/vH86zopHSFB5pBCKUUgfPn/Par9WZ6jtzf3j+dIXKgkuQBySTSVHdf8AHrL/ALh/
+lSBD0uEkJEcwcjrtfNP3N/eP51SlaWNizFWcRnZtXHpnPX2pqzOQA9woTd/rFIOOOmcAUBqXvMJJ
+G85HUZpdzf3j+dZ4nlMRJlA+VTubjqTntxSPK21ZRKQ3lvtyByQf1/CgepoeYSSN5yOozRvb+8fz
+qnLLLHvUPnAX5mwMZzk9P6UkckkjBTKCu1jlcHdjHfHv2oDUuhyQCHJB6EGl3N/eP51nRSutqNz7
+GCqAMgAD1yRSfaZPLVjMvBboQS2D24wfwxRoGppbm/vH86Nzf3j+dU/OYXZUyZGT8i4yOPTGfx5o
+s5mkkZTIHG0EYYEj8gKBalzc394/nU8RJjGearVYi/1YpMqI+iiikUFFFFABRRRQAUUUUAFFFFAB
+RRRQAUUUUAVtjf3T+VGxv7p/KrNFO5PKitsb+6fyo2N/dP5VZoouHKitsb+6fypjwmQAMHGP7pI/
+lVyii4cpVWMqoVUIA4HFLsb+6fyqzRRcOVFbY390/lRsb+6fyqzRRcOVFbY390/lRsb+6fyqzRRc
+OVFbY390/lRsb+6fyqzRRcOVFbY390/lU0Z2oAQc/Sn0UXGlYTcPf8jRuHv+RpaKQxNw9/yNG4e/
+5GlooATcPf8AI0bh7/kaWigBNw9/yNG4e/5GlooATcPf8jRuHv8AkaWigBNw9/yNG4e/5GlooATc
+Pf8AI0bh7/kaWigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKACiiigAoqnld23jJGcUhZBIE43EEgY7f5NOxPMXaKqYHoKMD0FFg5i3RVTA9BRg
+egosHMW6KqYHoKMD0FFg5i3RVTA9BSSskUW98BVXJOKLBzFyis0XcBH8QOQMGNgefbGex/KpI3jl
+QNGQwPp+dFg5i9RVJWRiwGPlODx0PWlXayhlwQeQR3osHMXKKqYHoKMD0FFg5i3RVTA9BRgegosH
+MW6KqYHoKdGoMgyB+VFg5izRTfLT+4v5UeWn9xfypFDqKb5af3F/Kjy0/uL+VADqKb5af3F/Kjy0
+/uL+VADqKb5af3F/Kjy0/uL+VADqKb5af3F/Kjy0/uL+VAGGouQvDzMmDztZTjK5xkk5xnrzT1hE
+sw2/ahGFbBdmU5+Xv9786veYv90/99f/AFqPMX+6f++v/rVdmZ3KESTtGJHabzN6AAkgYwuePzpC
+08qwIPtCkKFkOGHO5c89+M81oeYv90/99f8A1qPMX+6f++v/AK1OzC5QcPGzLIbjyFY4KliegxyO
+cdauWhLWkJYkkoCSevSiVYJgBLAsmORuwcfpT/MUfwH8/wD61KzFcdRTfMX+6f8Avr/61HmL/dP/
+AH1/9anZgOqO+UtZSKoJJjIAHXvTvMX+6f8Avr/61ZFss88LSNeSIFOOWP8AjUSbWlhOVmW5bT9/
+DIXlkfdyxOMAKcfdwOv86hiEqxos4uBEBjCbsg7Vx05x1/GhIJJBmPUHcDupJ/rTvslx/wA/sv6/
+40e92DmfYBBIUd/9IDGRQAWIJBCg5A49eat2K7bKJcMCFAIbOc/jVT7Jcf8AP7L+v+NH2S4/5/Zf
+1/xo97sLmfY0qKzfslx/z+y/r/jR9kuP+f2X9f8AGi8uwcz7GlRWb9kuP+f2X9f8aPslx/z+y/r/
+AI0Xl2DmfY0qfF/rBWV9kuP+f2X9f8adFZXDyBRfyjPfn/GhuXYFJ9jborO0OSSWzdpHZz5hGWOe
+wrRqU7q5tF3VwooopjCiiigAooooAKKKKAM6inbH/ut+VGx/7rflW1zGw2inbH/ut+VGx/7rflRc
+LDaKdsf+635UbH/ut+VFwsNop2x/7rflRsf+635UXCw2s20/5Bk/1P8AIVqbH/ut+VUdJVjathSf
+nPQewqJfEvmT1RYijZWZ3YMzADhcDA/H3qSnbH/ut+VGx/7rflVlWG0U7Y/91vyo2P8A3W/Ki4WG
+0U7Y/wDdb8qNj/3W/Ki4WG0U7Y/91vyo2P8A3W/Ki4WG1Jb/AOvX8f5U3Y/91vyqSBWEykqQPpSe
+w1uV/D//AB4v/wBdD/IVp1meH/8Ajxf/AK6H+QrTrCHwoqHwoKKKKosKKKKACiiigAooooAZRRRQ
+AUUUUAFFFFABRRRQAVm/2Jbf35fzH+FaVL6Umk9xOKe5mf2Jbf35fzH+FH9iW39+X8x/hWlRS5I9
+ieSPYzf7Etv78v5j/Cj+xLb+/L+Y/wAK0qKOSPYOSPYzf7Etv78v5j/Cj+xLb+/L+Y/wrSoo5I9g
+5I9jN/sS2/vy/mP8KP7Etv78v5j/AArSoo5I9g5I9jN/sS2/vy/mP8KUaJbE/fm/Mf4Vo0o60cke
+wckexFZ2kdnEY4yxBbd8x/z6VPRRVbFJWCiiigYUUUUAFFFFABRRRQAmBRgUtFACYFGBS0UAJgUY
+FLRQAmBRgUtFACYFLgUUUAJgUYFLRQAmBRgUtFACYFGBS0UAJgUYFLRQAmBS4FFFABRRRQAUUUUA
+FFFFABRRRQAUUUUAJuFG4U2igB24UbhTaKAHbhRuFNooAduFG4U2igB24UbqbS+lAC7hRuFNooAd
+uFG4U2igB24UbhTaKAHbhRuFNooAduFAOabSjrQA6iiigAooooAKKKKACiiigAooooAZRT6KAGUU
++igBlFPooAZRT6KAGUvpTqKAGUU+igBlFPooAZRT6KAGUU+igBlKOtOooAKKKKACiiigAooooAKK
+KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
+AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigD//Z
+			</helperscreenshot>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				P
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="fd5d1372-35a9-4e67-96f9-83242dc921c9"
+	name="B_KTO_003Repository"
+	relativepath="..\B_KTO_003Repository.rxrep">
+		<codegen
+		classname="B_KTO_003Repository"
+		namespace="B_KTO_003">
+		</codegen>
+		<rootfolder
+		id="e30feed3-d347-45f4-99b4-e3b83693c594"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Kontrolle_kopiertes_Konto.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

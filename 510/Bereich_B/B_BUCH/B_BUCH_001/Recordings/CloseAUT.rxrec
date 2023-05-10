@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="655c1962-f0fd-41ae-a77c-b83cdbb831d3"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_BUCH_001.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="d2ea13ff-f7f7-4a22-b5cf-6b7736ea727e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="72671a50-9b2a-4ff7-a940-a311d7782bc5"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='mdiBuch']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="e559f229-6ddd-4a1e-b577-d1f7e5a6b60d"
+	name="B_BUCH_001Repository"
+	relativepath="..\B_BUCH_001Repository.rxrep">
+		<codegen
+		classname="B_BUCH_001Repository"
+		namespace="B_BUCH_001">
+		</codegen>
+		<rootfolder
+		id="66a0add1-4784-4e4e-b925-452d6c4fce59"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll
+		</reference>
+	</references>
+</recordtable>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="ff4591b6-0e45-4b36-8b13-09ed3296f962"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT_ELSTER"
+	namespace="B_ELSTER_006_ZM.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="ed04b093-ebba-417b-876d-873fefc83794">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="661c45b4-4f5d-495f-9f43-cc972f395692"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controltext~'ELSTER-Schnittstelle']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="0e1175db-fd63-41b1-ab96-038dfe33016c"
+	name="B_ELSTER_006_ZMRepository"
+	relativepath="..\B_ELSTER_006_ZMRepository.rxrep">
+		<codegen
+		classname="B_ELSTER_006_ZMRepository"
+		namespace="B_ELSTER_006_ZM">
+		</codegen>
+		<rootfolder
+		id="2217c99a-596b-4f23-9bf5-1473435f553b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT_ELSTER.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="677d6672-eeb9-4a8f-aaf5-70158a912d6d"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="E_BSK_003.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="78babdf5-713c-4f4b-9e67-49a987724bbc">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="36e7e79d-9ad6-41be-b733-4d94b3ed2360"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='mdiBestellung']/titlebar[@accessiblerole='TitleBar']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="075a7d70-a752-4d93-9862-876abcaf98f4"
+	name="E_BSK_003Repository"
+	relativepath="..\E_BSK_003Repository.rxrep">
+		<codegen
+		classname="E_BSK_003Repository"
+		namespace="E_BSK_003">
+		</codegen>
+		<rootfolder
+		id="4b598a23-03d0-4227-bd75-9fb8e97c9503"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{F20FB0AE-FD9A-4F22-8FB9-5B558B98A8C8}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Z_SUM_001</RootNamespace>
+    <AssemblyName>Z_SUM_001</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper" />
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Delphi" />
+    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.WinForms.Core" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="Ranorex.Plugin.Wpf.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>f9ed07b4-c3cb-4723-b87a-d19c66179fb7</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>630e4997-50c5-4967-afad-87b394f21a6b</id>
+    </Compile>
+    <Compile Include="Recording\Checkbox_Zeitkonten_deaktivieren.cs">
+      <BoundTo>d47aadd4-8c84-419e-bb54-7a35297e36fa</BoundTo>
+      <DependentUpon>Checkbox_Zeitkonten_deaktivieren.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7df72ccf-264a-4c7f-b472-2565c17e88ca</id>
+    </Compile>
+    <Compile Include="Recording\Checkbox_Zeitkonten_deaktivieren.UserCode.cs">
+      <BoundTo>d47aadd4-8c84-419e-bb54-7a35297e36fa</BoundTo>
+      <DependentUpon>Checkbox_Zeitkonten_deaktivieren.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cb31aa1d-d6fa-4600-a6b9-913db3366d49</id>
+    </Compile>
+    <Compile Include="Recording\CloseAUT.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>75d66463-37c6-4564-8690-c6550143e44c</id>
+      <BoundTo>d6c11c9b-3ccb-4acb-84a6-9e99a69534f2</BoundTo>
+    </Compile>
+    <Compile Include="Recording\CloseAUT.UserCode.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5e36ea6f-f2cf-4393-a7c2-fe910d6d4224</id>
+      <BoundTo>d6c11c9b-3ccb-4acb-84a6-9e99a69534f2</BoundTo>
+    </Compile>
+    <Compile Include="Recording\Daten_laden.cs">
+      <BoundTo>baa238ce-5685-472c-a37b-64abfb5a5112</BoundTo>
+      <DependentUpon>Daten_laden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>577d9455-0143-4a29-97f9-98f6f00da79c</id>
+    </Compile>
+    <Compile Include="Recording\Daten_laden.UserCode.cs">
+      <BoundTo>baa238ce-5685-472c-a37b-64abfb5a5112</BoundTo>
+      <DependentUpon>Daten_laden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7fad960d-3f01-4901-9322-2a2a8b0de85a</id>
+    </Compile>
+    <Compile Include="Recording\Einlesen_des_Ranoagent.cs">
+      <BoundTo>9fb3029b-8c22-41c1-a25e-8b11f8e27cd6</BoundTo>
+      <DependentUpon>Einlesen_des_Ranoagent.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4a26e3b9-396f-49dd-a9c8-62edf9af4d02</id>
+    </Compile>
+    <Compile Include="Recording\Einlesen_des_Ranoagent.UserCode.cs">
+      <BoundTo>9fb3029b-8c22-41c1-a25e-8b11f8e27cd6</BoundTo>
+      <DependentUpon>Einlesen_des_Ranoagent.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e02ec4db-2737-41d1-ba18-b40728a6be81</id>
+    </Compile>
+    <Compile Include="Recording\Normalzeitwoche_40_h.cs">
+      <BoundTo>4f2fa684-7231-4941-9ba8-49a621fe8cd5</BoundTo>
+      <DependentUpon>Normalzeitwoche_40_h.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>976d3007-0e16-4c76-bc65-920015fcd045</id>
+    </Compile>
+    <Compile Include="Recording\Normalzeitwoche_40_h.UserCode.cs">
+      <BoundTo>4f2fa684-7231-4941-9ba8-49a621fe8cd5</BoundTo>
+      <DependentUpon>Normalzeitwoche_40_h.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5d4409b1-745e-4f72-adef-2f68fa415369</id>
+    </Compile>
+    <Compile Include="Recording\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d9442b9d-200a-4b1a-8939-633838c7522c</id>
+      <BoundTo>d1782780-f96b-4c58-af46-e44e43ca49ea</BoundTo>
+    </Compile>
+    <Compile Include="Recording\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f136c0c2-b831-4739-8d10-4b9eb0449043</id>
+      <BoundTo>d1782780-f96b-4c58-af46-e44e43ca49ea</BoundTo>
+    </Compile>
+    <Compile Include="Recording\Ueberpruefung_Einschraenkung.cs">
+      <BoundTo>2f84178a-896a-43e1-8406-29373a927649</BoundTo>
+      <DependentUpon>Ueberpruefung_Einschraenkung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>68288c7d-463f-438f-8a60-02881c60661d</id>
+    </Compile>
+    <Compile Include="Recording\Ueberpruefung_Einschraenkung.UserCode.cs">
+      <BoundTo>2f84178a-896a-43e1-8406-29373a927649</BoundTo>
+      <DependentUpon>Ueberpruefung_Einschraenkung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>af2b28d6-ef8a-44a2-aff8-48460b6bb357</id>
+    </Compile>
+    <Compile Include="Recording\Ueberpruefung_Ergebnis_Screenshot.cs">
+      <BoundTo>1ec04fea-08ef-4642-8902-aa083770bc09</BoundTo>
+      <DependentUpon>Ueberpruefung_Ergebnis_Screenshot.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f55ff56d-7068-4bd2-99e2-eb793fe894c5</id>
+    </Compile>
+    <Compile Include="Recording\Ueberpruefung_Ergebnis_Screenshot.UserCode.cs">
+      <BoundTo>1ec04fea-08ef-4642-8902-aa083770bc09</BoundTo>
+      <DependentUpon>Ueberpruefung_Ergebnis_Screenshot.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>eaf876d9-8f72-4f0b-bb9e-0764cf748d00</id>
+    </Compile>
+    <Compile Include="Recording\Ueberpruefung_Monatssumme.cs">
+      <BoundTo>0d53053d-3f45-451c-93b8-ad4bf0feb4a3</BoundTo>
+      <DependentUpon>Ueberpruefung_Monatssumme.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>674fb0e5-d19f-4bb3-9866-808b9c56f688</id>
+    </Compile>
+    <Compile Include="Recording\Ueberpruefung_Monatssumme.UserCode.cs">
+      <BoundTo>0d53053d-3f45-451c-93b8-ad4bf0feb4a3</BoundTo>
+      <DependentUpon>Ueberpruefung_Monatssumme.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c705e0c1-f80d-4e70-a788-338ea5a4145b</id>
+    </Compile>
+    <Compile Include="Recording\Ueberstundenwoche_Woche_2.cs">
+      <BoundTo>2ef2f955-5798-4190-b5dd-577abe0fce32</BoundTo>
+      <DependentUpon>Ueberstundenwoche_Woche_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>10d7e235-5852-479e-9173-d9cc8a200f7d</id>
+    </Compile>
+    <Compile Include="Recording\Ueberstundenwoche_Woche_2.UserCode.cs">
+      <BoundTo>2ef2f955-5798-4190-b5dd-577abe0fce32</BoundTo>
+      <DependentUpon>Ueberstundenwoche_Woche_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ec5d63b7-5d1c-4642-9325-4c05473103cc</id>
+    </Compile>
+    <Compile Include="Recording\UEberpruefung_Wochensumme_40h_Woche.cs">
+      <BoundTo>9bbc6c44-df85-4f17-9399-6cd8200ee1a1</BoundTo>
+      <DependentUpon>UEberpruefung_Wochensumme_40h_Woche.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fd8f3fe1-c386-470c-b97c-21fcc85b0f80</id>
+    </Compile>
+    <Compile Include="Recording\UEberpruefung_Wochensumme_40h_Woche.UserCode.cs">
+      <BoundTo>9bbc6c44-df85-4f17-9399-6cd8200ee1a1</BoundTo>
+      <DependentUpon>UEberpruefung_Wochensumme_40h_Woche.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9c143ea3-7b0a-4924-ae6c-1d82b4129839</id>
+    </Compile>
+    <Compile Include="Recording\Urlaubswoche.cs">
+      <BoundTo>07fa9f89-fa5b-4f24-84c7-1b33b0959518</BoundTo>
+      <DependentUpon>Urlaubswoche.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>45722169-f95d-4dbc-a713-86b3fa005006</id>
+    </Compile>
+    <Compile Include="Recording\Urlaubswoche.UserCode.cs">
+      <BoundTo>07fa9f89-fa5b-4f24-84c7-1b33b0959518</BoundTo>
+      <DependentUpon>Urlaubswoche.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>de3dc2b9-1e7a-4d23-84ce-5098a4771b6d</id>
+    </Compile>
+    <Compile Include="Recording\Wochensumme_Minuswoche.cs">
+      <BoundTo>7ed23d28-f729-4bd6-b667-74ee4073aefc</BoundTo>
+      <DependentUpon>Wochensumme_Minuswoche.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7e760fa8-9bcd-4f43-a7bb-ea9fcaa4357e</id>
+    </Compile>
+    <Compile Include="Recording\Wochensumme_Minuswoche.UserCode.cs">
+      <BoundTo>7ed23d28-f729-4bd6-b667-74ee4073aefc</BoundTo>
+      <DependentUpon>Wochensumme_Minuswoche.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>746b510d-0964-4163-ac1f-896065c7b488</id>
+    </Compile>
+    <Compile Include="Recording\Wochensumme_Ueberstunden_Woche_2.cs">
+      <BoundTo>7d0edec6-c345-4fb3-bbb6-3f41f05c23c6</BoundTo>
+      <DependentUpon>Wochensumme_Ueberstunden_Woche_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1e1dc513-307f-4fb0-9d52-68ed251d332b</id>
+    </Compile>
+    <Compile Include="Recording\Wochensumme_Ueberstunden_Woche_2.UserCode.cs">
+      <BoundTo>7d0edec6-c345-4fb3-bbb6-3f41f05c23c6</BoundTo>
+      <DependentUpon>Wochensumme_Ueberstunden_Woche_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f6694b2d-b262-43fd-b703-28baaa4b78a5</id>
+    </Compile>
+    <Compile Include="Recording\Wochensumme_Urlaubswoche.cs">
+      <BoundTo>9d8e049d-85f5-488a-b3a1-7f6795811ea1</BoundTo>
+      <DependentUpon>Wochensumme_Urlaubswoche.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f788ab65-2315-41fa-89f8-f831f7f68e0d</id>
+    </Compile>
+    <Compile Include="Recording\Wochensumme_Urlaubswoche.UserCode.cs">
+      <BoundTo>9d8e049d-85f5-488a-b3a1-7f6795811ea1</BoundTo>
+      <DependentUpon>Wochensumme_Urlaubswoche.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>96c14742-0ceb-4ae1-b233-7c9de59d8153</id>
+    </Compile>
+    <Compile Include="Recording\Woche_Minusstunden.cs">
+      <BoundTo>f0f1a83d-5b28-4f6d-bf3d-4ebc401a671a</BoundTo>
+      <DependentUpon>Woche_Minusstunden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f6a39e22-9656-49b4-8614-44defdd0db07</id>
+    </Compile>
+    <Compile Include="Recording\Woche_Minusstunden.UserCode.cs">
+      <BoundTo>f0f1a83d-5b28-4f6d-bf3d-4ebc401a671a</BoundTo>
+      <DependentUpon>Woche_Minusstunden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>06f98881-767d-46b9-b8be-04cd6424c810</id>
+    </Compile>
+    <Compile Include="Recording\Zeitkonten_rechnen.cs">
+      <BoundTo>a80804e5-57e8-472c-bef5-73bb9232786a</BoundTo>
+      <DependentUpon>Zeitkonten_rechnen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1ab85414-455c-4b29-a659-18a5fe343a16</id>
+    </Compile>
+    <Compile Include="Recording\Zeitkonten_rechnen.UserCode.cs">
+      <BoundTo>a80804e5-57e8-472c-bef5-73bb9232786a</BoundTo>
+      <DependentUpon>Zeitkonten_rechnen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1be6191c-f348-4338-8963-61b0f681d7bd</id>
+    </Compile>
+    <Compile Include="Recording\Zeitkonten_rechnen_510.cs">
+      <BoundTo>31efe01d-cd42-4c26-a7e4-7647d07e2f1c</BoundTo>
+      <DependentUpon>Zeitkonten_rechnen_510.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e1a0e51a-a618-44d6-878f-5765af78bb4d</id>
+    </Compile>
+    <Compile Include="Recording\Zeitkonten_rechnen_510.UserCode.cs">
+      <BoundTo>31efe01d-cd42-4c26-a7e4-7647d07e2f1c</BoundTo>
+      <DependentUpon>Zeitkonten_rechnen_510.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a9a06a38-1403-409f-b67b-a0f35903643e</id>
+    </Compile>
+    <Compile Include="Z_SUM_001Repository.cs">
+      <BoundTo>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</BoundTo>
+      <DependentUpon>Z_SUM_001Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>79c4f7f9-841b-4106-8413-9d3ecccc54de</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>2bb15096-c187-43f3-b1e8-e66dce0af635</id>
+    </None>
+    <None Include="Recording\Checkbox_Zeitkonten_deaktivieren.rxrec">
+      <BoundTo>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</BoundTo>
+      <id>d47aadd4-8c84-419e-bb54-7a35297e36fa</id>
+      <recordtableid>5dd5c2db-8c6e-4fd7-a6be-9d54c505eea4</recordtableid>
+    </None>
+    <None Include="Recording\CloseAUT.rxrec">
+      <BoundTo>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</BoundTo>
+      <id>d6c11c9b-3ccb-4acb-84a6-9e99a69534f2</id>
+      <recordtableid>f7707df8-da85-462b-b7f4-c5b94780b6f9</recordtableid>
+    </None>
+    <None Include="Recording\Daten_laden.rxrec">
+      <id>baa238ce-5685-472c-a37b-64abfb5a5112</id>
+      <recordtableid>6088b96c-ff60-4bfb-832c-8d0cda9f33fe</recordtableid>
+      <BoundTo>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</BoundTo>
+    </None>
+    <None Include="Recording\Einlesen_des_Ranoagent.rxrec">
+      <BoundTo>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</BoundTo>
+      <id>9fb3029b-8c22-41c1-a25e-8b11f8e27cd6</id>
+      <recordtableid>dd97e8c8-73ed-40ee-b8c2-f17fdb6d1795</recordtableid>
+    </None>
+    <None Include="Recording\Normalzeitwoche_40_h.rxrec">
+      <BoundTo>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</BoundTo>
+      <id>4f2fa684-7231-4941-9ba8-49a621fe8cd5</id>
+      <recordtableid>512f3a8b-baeb-4a9e-b2b0-9180fd7a5374</recordtableid>
+    </None>
+    <None Include="Recording\StartAUT.rxrec">
+      <BoundTo>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</BoundTo>
+      <id>d1782780-f96b-4c58-af46-e44e43ca49ea</id>
+      <recordtableid>788e4a96-2bf9-47f9-8191-03267e05b300</recordtableid>
+    </None>
+    <None Include="Recording\Ueberpruefung_Einschraenkung.rxrec">
+      <BoundTo>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</BoundTo>
+      <id>2f84178a-896a-43e1-8406-29373a927649</id>
+      <recordtableid>de35364e-3f91-408a-90a9-69de821119a8</recordtableid>
+    </None>
+    <None Include="Recording\Ueberpruefung_Ergebnis_Screenshot.rxrec">
+      <BoundTo>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</BoundTo>
+      <id>1ec04fea-08ef-4642-8902-aa083770bc09</id>
+      <recordtableid>19b7439f-d28e-42e0-8773-470315379dc4</recordtableid>
+    </None>
+    <None Include="Recording\Ueberpruefung_Monatssumme.rxrec">
+      <BoundTo>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</BoundTo>
+      <id>0d53053d-3f45-451c-93b8-ad4bf0feb4a3</id>
+      <recordtableid>d600e18f-2195-4520-bc59-67882cf3b6bf</recordtableid>
+    </None>
+    <None Include="Recording\Ueberstundenwoche_Woche_2.rxrec">
+      <BoundTo>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</BoundTo>
+      <id>2ef2f955-5798-4190-b5dd-577abe0fce32</id>
+      <recordtableid>f58794f1-bf2e-40ce-a96f-0b53ec4731e7</recordtableid>
+    </None>
+    <None Include="Recording\UEberpruefung_Wochensumme_40h_Woche.rxrec">
+      <BoundTo>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</BoundTo>
+      <id>9bbc6c44-df85-4f17-9399-6cd8200ee1a1</id>
+      <recordtableid>c5c65d47-72bf-4d7e-9361-ac873da101d2</recordtableid>
+    </None>
+    <None Include="Recording\Urlaubswoche.rxrec">
+      <BoundTo>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</BoundTo>
+      <id>07fa9f89-fa5b-4f24-84c7-1b33b0959518</id>
+      <recordtableid>0a9f0969-08ad-4dc4-bbf3-bf50bf52749e</recordtableid>
+    </None>
+    <None Include="Recording\Wochensumme_Minuswoche.rxrec">
+      <BoundTo>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</BoundTo>
+      <id>7ed23d28-f729-4bd6-b667-74ee4073aefc</id>
+      <recordtableid>39eafbe5-d946-4316-b4a6-2e091d53ef71</recordtableid>
+    </None>
+    <None Include="Recording\Wochensumme_Ueberstunden_Woche_2.rxrec">
+      <BoundTo>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</BoundTo>
+      <id>7d0edec6-c345-4fb3-bbb6-3f41f05c23c6</id>
+      <recordtableid>d17fbb82-5bbc-40cc-9aad-40afb5720e6c</recordtableid>
+    </None>
+    <None Include="Recording\Wochensumme_Urlaubswoche.rxrec">
+      <BoundTo>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</BoundTo>
+      <id>9d8e049d-85f5-488a-b3a1-7f6795811ea1</id>
+      <recordtableid>1fdda5b7-2d7a-48b5-9677-efbde98f8c13</recordtableid>
+    </None>
+    <None Include="Recording\Woche_Minusstunden.rxrec">
+      <BoundTo>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</BoundTo>
+      <id>f0f1a83d-5b28-4f6d-bf3d-4ebc401a671a</id>
+      <recordtableid>ac8929a2-eb49-46f0-99b7-ccc073b53217</recordtableid>
+    </None>
+    <None Include="Recording\Zeitkonten_rechnen.rxrec">
+      <BoundTo>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</BoundTo>
+      <id>a80804e5-57e8-472c-bef5-73bb9232786a</id>
+      <recordtableid>092f64c6-1693-467c-b130-7682ccc32730</recordtableid>
+    </None>
+    <None Include="Recording\Zeitkonten_rechnen_510.rxrec">
+      <BoundTo>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</BoundTo>
+      <id>31efe01d-cd42-4c26-a7e4-7647d07e2f1c</id>
+      <recordtableid>01a1434a-32df-463a-8516-6201ffd4b0f6</recordtableid>
+    </None>
+    <None Include="Z_SUM_001Repository.rximg">
+      <BoundTo>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</BoundTo>
+      <DependentUpon>Z_SUM_001Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>9ec82c02-622a-43ca-b0d8-a7c01bcfa4ca</id>
+    </None>
+    <None Include="Z_SUM_001Repository.rxrep">
+      <id>2a1fcd52-0eb2-47c9-8958-f9dbac2a7afe</id>
+      <repoid>cb2d54cf-eb5b-4869-a92a-e84ecb98969f</repoid>
+      <reporootid>afd9f4c5-4307-423d-8d56-9369c9a71ac2</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Z_SUM_001.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>2a390a03-ebf3-47e7-b85e-1108a8aecff3</id>
+    </Content>
+    <Content Include="Z_SUM_001.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>a5bcaac2-ead0-4187-a14a-06977fc62978</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recording">
+      <id>ca89541d-09d8-4dd1-be55-2d1d352ce5bf</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{A73E3379-1034-4DE7-82E6-69D51AC8BEA6}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="28e05e47-b326-4112-a9d2-3eb971de0352"
+mode="Global"
+rxversion="8.3">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="RS2_Exit"
+	namespace="Servicecenter.Recordings.RS2">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b7098b3e-089b-40c0-82fe-60141b671a1c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1f2f540a-fd8a-40af-919a-2d3fa5580b5c"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form/titlebar[@accessiblerole='TitleBar' and @accessiblevalue='[RS]  Ticketverwaltung - [Bearbeiter: MAR]']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="10000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="a9754cb2-ff88-4161-b185-b1c7cd899447">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1f2f540a-fd8a-40af-919a-2d3fa5580b5c"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form/titlebar[@accessiblerole='TitleBar' and @accessiblevalue='[RS]  Ticketverwaltung - [Bearbeiter: MAR]']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="f7deb4a7-2771-4c20-903d-bc17047e2b6a"
+	name="ServicecenterRepository"
+	relativepath="..\..\ServicecenterRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="ServicecenterRepository"
+		namespace="Servicecenter">
+		</codegen>
+		<rootfolder
+		id="e5a69c28-9dbf-43c2-b940-3a3d711f721c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		RS2_Exit.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\..\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll
+		</reference>
+	</references>
+</recordtable>

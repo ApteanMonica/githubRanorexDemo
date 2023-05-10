@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="2f004997-f44c-4d08-a472-3e076cabf6a9"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_KLOPO_001.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="9d070d33-1400-42f6-a64a-9551c6419f5c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="076f5c76-79fb-4436-bfa4-a8fc994e5301"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmKlOp']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="a7499887-3bef-4870-9574-acaf54adcbce"
+	name="B_KLOPO_001Repository"
+	relativepath="..\B_KLOPO_001Repository.rxrep">
+		<codegen
+		classname="B_KLOPO_001Repository"
+		namespace="B_KLOPO_001">
+		</codegen>
+		<rootfolder
+		id="3f4a689f-dbcc-4b0a-85f5-4dca8e45f371"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

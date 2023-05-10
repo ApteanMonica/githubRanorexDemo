@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="3f21081e-14e5-43c6-b43e-73e972737f65"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_ENDE_002_B_BUSAPR.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="1ea6221c-b36e-4faf-ac64-a8595aaa967f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="81638f9a-9591-4f96-be1d-fb78872e274a"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title&gt;'[100] Pr&#252;fung Sachkonten-']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="9f37bed2-ce04-4c78-85de-325a27f277dd"
+	name="B_ENDE_002_B_BUSAPRRepository"
+	relativepath="..\B_ENDE_002_B_BUSAPRRepository.rxrep">
+		<codegen
+		classname="B_ENDE_002_B_BUSAPRRepository"
+		namespace="B_ENDE_002_B_BUSAPR">
+		</codegen>
+		<rootfolder
+		id="b0901c16-8a43-4bde-b0cd-102ddf298904"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

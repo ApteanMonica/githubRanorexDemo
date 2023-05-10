@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{3F4C2417-8D28-455D-9205-399926DE2454}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Z_PROJ_001</RootNamespace>
+    <AssemblyName>Z_PROJ_001</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>d5508d61-8d97-49cc-bd5a-e2141703fc3a</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>9811dcfc-26fc-4b11-8bed-625e51f61706</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>a9e789d6-dfef-4ff8-b1aa-b03b15c47a83</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\CloseAUT.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>91f2b99f-4f1a-4f73-9512-52ea83628559</id>
+      <BoundTo>d0574495-14fc-4e86-992f-ebe488cf61b4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\CloseAUT.UserCode.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c823a782-0796-4239-b9be-5eac5a09644c</id>
+      <BoundTo>d0574495-14fc-4e86-992f-ebe488cf61b4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_1_K2006_aufrufen.cs">
+      <BoundTo>9afe8aea-e73d-44b3-9eea-cb7182c80a0b</BoundTo>
+      <DependentUpon>Projekt_1_K2006_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e851d791-0c22-465e-8e3d-4515e952ba0f</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_1_K2006_aufrufen.UserCode.cs">
+      <BoundTo>9afe8aea-e73d-44b3-9eea-cb7182c80a0b</BoundTo>
+      <DependentUpon>Projekt_1_K2006_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a10f6e0b-2438-4a8e-b45f-d6fad2fef9d6</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_1_K2006_Phasen_Bild_pruefen.cs">
+      <DependentUpon>Projekt_1_K2006_Phasen_Bild_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>983a4de1-ee06-4311-985f-243bfafd29a1</id>
+      <BoundTo>80b8ccae-d685-4f0e-82b5-26ceea15b3a6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_1_K2006_Phasen_Bild_pruefen.UserCode.cs">
+      <DependentUpon>Projekt_1_K2006_Phasen_Bild_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>99ac95b8-09d6-42ac-a4b3-2c124c4c33c3</id>
+      <BoundTo>80b8ccae-d685-4f0e-82b5-26ceea15b3a6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_2_I_FEIER_aufrufen.cs">
+      <DependentUpon>Projekt_2_I_FEIER_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0a2425db-460e-4452-9fe3-905ad6ebdd86</id>
+      <BoundTo>b8eb4fac-e3ec-4a5f-a070-50a5305b3809</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_2_I_FEIER_aufrufen.UserCode.cs">
+      <DependentUpon>Projekt_2_I_FEIER_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bc99c07b-880d-4b22-b3d2-32a293e0f576</id>
+      <BoundTo>b8eb4fac-e3ec-4a5f-a070-50a5305b3809</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_3_0001_aufrufen.cs">
+      <DependentUpon>Projekt_3_0001_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d4b34237-43c0-488d-b1bb-8f8948195ce9</id>
+      <BoundTo>ceb4ace0-3b0c-443c-93a7-889cf814c9a7</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_3_0001_aufrufen.UserCode.cs">
+      <DependentUpon>Projekt_3_0001_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>69bc1b5d-2bbd-4219-a236-fa4d152df2cf</id>
+      <BoundTo>ceb4ace0-3b0c-443c-93a7-889cf814c9a7</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_2_I_FEIER_Phasen_Bild_pruefen.cs">
+      <DependentUpon>Projekt_2_I_FEIER_Phasen_Bild_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4399819d-d15e-48ce-ab64-0555e6a45e97</id>
+      <BoundTo>2ffa1d04-49ad-4afa-9123-273e208e6491</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_2_I_FEIER_Phasen_Bild_pruefen.UserCode.cs">
+      <DependentUpon>Projekt_2_I_FEIER_Phasen_Bild_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8143ea21-c0cc-4b88-af87-99be099c55b7</id>
+      <BoundTo>2ffa1d04-49ad-4afa-9123-273e208e6491</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_3_0001_Phasenzeile_1_pruefen.cs">
+      <DependentUpon>Projekt_3_0001_Phasenzeile_1_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>efb8b1da-58a2-4047-ab4c-a65a5995082c</id>
+      <BoundTo>13988134-0f86-483b-957d-ff90f1148298</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_3_0001_Phasenzeile_1_pruefen.UserCode.cs">
+      <DependentUpon>Projekt_3_0001_Phasenzeile_1_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b214ae51-7a78-4167-acdc-903113a12dbd</id>
+      <BoundTo>13988134-0f86-483b-957d-ff90f1148298</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_2_I_FEIER_Art_IP_pruefen.cs">
+      <BoundTo>1f0f2b03-2de5-4d95-842a-db8e55215bfb</BoundTo>
+      <DependentUpon>Projekt_2_I_FEIER_Art_IP_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fdca70f6-c9c6-4c01-a8e4-6d89db0306b1</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_2_I_FEIER_Art_IP_pruefen.UserCode.cs">
+      <BoundTo>1f0f2b03-2de5-4d95-842a-db8e55215bfb</BoundTo>
+      <DependentUpon>Projekt_2_I_FEIER_Art_IP_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3a8cd47a-a8b9-42ad-8c5b-b76912370dec</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_2_I_FEIER_Art_IP_zurueck_Suche_pruefen.cs">
+      <BoundTo>d08d2bb0-9570-4278-8e24-c45ad8ca5073</BoundTo>
+      <DependentUpon>Projekt_2_I_FEIER_Art_IP_zurueck_Suche_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3c829215-6844-4177-9643-d048e426fb12</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_2_I_FEIER_Art_IP_zurueck_Suche_pruefen.UserCode.cs">
+      <DependentUpon>Projekt_2_I_FEIER_Art_IP_zurueck_Suche_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>befd4614-d0d1-41f1-a35a-c105695ab13a</id>
+      <BoundTo>d08d2bb0-9570-4278-8e24-c45ad8ca5073</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_1_K2006_Art_K_pruefen_Daten.cs">
+      <BoundTo>6681b0d0-6b2e-469c-aa6e-b5106bfca2b5</BoundTo>
+      <DependentUpon>Projekt_1_K2006_Art_K_pruefen_Daten.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f2be8a45-1e3d-44f1-8bf5-6dab93371521</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_1_K2006_Art_K_pruefen_Daten.UserCode.cs">
+      <BoundTo>6681b0d0-6b2e-469c-aa6e-b5106bfca2b5</BoundTo>
+      <DependentUpon>Projekt_1_K2006_Art_K_pruefen_Daten.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>492dd8c0-2988-4b70-8c3c-dccd193e8c1c</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_1_K2006_Art_K_anlegen.cs">
+      <BoundTo>4446cf49-ef6d-40fb-8ecf-64367c85d9cc</BoundTo>
+      <DependentUpon>Projekt_1_K2006_Art_K_anlegen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>43ac2194-8044-49dc-bcff-f3de79ed7d4b</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_1_K2006_Art_K_anlegen.UserCode.cs">
+      <BoundTo>4446cf49-ef6d-40fb-8ecf-64367c85d9cc</BoundTo>
+      <DependentUpon>Projekt_1_K2006_Art_K_anlegen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8368d599-0fbb-45d2-a9dc-05545c40a695</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_1_K2006_Art_K_zurueck_Suche_pruefen.cs">
+      <DependentUpon>Projekt_1_K2006_Art_K_zurueck_Suche_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>20f62f75-00ee-441a-9f67-971323ba581b</id>
+      <BoundTo>d0ec5026-0b4f-4368-b85e-df55abe618ae</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_1_K2006_Art_K_zurueck_Suche_pruefen.UserCode.cs">
+      <DependentUpon>Projekt_1_K2006_Art_K_zurueck_Suche_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>51b6bd56-fc06-4fd8-af46-b3c7ed05278c</id>
+      <BoundTo>d0ec5026-0b4f-4368-b85e-df55abe618ae</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_1_K2006_Phase1und22_pruefen.cs">
+      <BoundTo>685f3f15-0c0f-486d-8c24-26e78da95597</BoundTo>
+      <DependentUpon>Projekt_1_K2006_Phase1und22_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8a9e9d9a-aa71-4fbb-ab91-227d8fdf46a0</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_1_K2006_Phase1und22_pruefen.UserCode.cs">
+      <BoundTo>685f3f15-0c0f-486d-8c24-26e78da95597</BoundTo>
+      <DependentUpon>Projekt_1_K2006_Phase1und22_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f180e7a1-c594-4586-9536-5a6b6c0307f3</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_1_K2006_Phasenzeilen_1bis22pruefen.cs">
+      <BoundTo>6253ac0b-415c-4577-bfca-fb6ae16dc5ab</BoundTo>
+      <DependentUpon>Projekt_1_K2006_Phasenzeilen_1bis22pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3b842758-6ad7-40e7-8124-8bdce617e639</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_1_K2006_Phasenzeilen_1bis22pruefen.UserCode.cs">
+      <BoundTo>6253ac0b-415c-4577-bfca-fb6ae16dc5ab</BoundTo>
+      <DependentUpon>Projekt_1_K2006_Phasenzeilen_1bis22pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1940ce0a-3f4d-4b23-968d-a8f7c89f9981</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_2_I_FEIER_Art_IP_anlegen.cs">
+      <BoundTo>2a7396ee-6505-41ba-8993-b2651700d485</BoundTo>
+      <DependentUpon>Projekt_2_I_FEIER_Art_IP_anlegen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6320e23a-f9ff-4411-b0a9-e16c099e1d1f</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_2_I_FEIER_Art_IP_anlegen.UserCode.cs">
+      <BoundTo>2a7396ee-6505-41ba-8993-b2651700d485</BoundTo>
+      <DependentUpon>Projekt_2_I_FEIER_Art_IP_anlegen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5829d7dc-7187-42cb-acad-7a4246506ec7</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_2_I_FEIER_Phasenzeilen_1bis10_pruefen.cs">
+      <BoundTo>689e606b-6d92-4b38-b54b-4168934dca31</BoundTo>
+      <DependentUpon>Projekt_2_I_FEIER_Phasenzeilen_1bis10_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>497e9383-a9d9-4b4b-a4d7-309af7466582</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_2_I_FEIER_Phasenzeilen_1bis10_pruefen.UserCode.cs">
+      <BoundTo>689e606b-6d92-4b38-b54b-4168934dca31</BoundTo>
+      <DependentUpon>Projekt_2_I_FEIER_Phasenzeilen_1bis10_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>330ffe14-0834-4d07-8408-f4e197010379</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_2_I_FEIER_Phasen_1und10_pruefen.cs">
+      <BoundTo>ead3da9f-68f3-413f-92aa-45f52fc43279</BoundTo>
+      <DependentUpon>Projekt_2_I_FEIER_Phasen_1und10_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b84356d4-93fb-4ade-909d-63f410e02a19</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_2_I_FEIER_Phasen_1und10_pruefen.UserCode.cs">
+      <BoundTo>ead3da9f-68f3-413f-92aa-45f52fc43279</BoundTo>
+      <DependentUpon>Projekt_2_I_FEIER_Phasen_1und10_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>686151c5-4536-47ce-9efb-e9deb83d8aa2</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_3_0001_Art_V_anlegen_ohne_Vorlage.cs">
+      <BoundTo>6bebe080-03bd-4787-b7a0-0a8f39dd77c9</BoundTo>
+      <DependentUpon>Projekt_3_0001_Art_V_anlegen_ohne_Vorlage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d60f906a-b447-4f39-aade-d77f9fad816b</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_3_0001_Art_V_anlegen_ohne_Vorlage.UserCode.cs">
+      <BoundTo>6bebe080-03bd-4787-b7a0-0a8f39dd77c9</BoundTo>
+      <DependentUpon>Projekt_3_0001_Art_V_anlegen_ohne_Vorlage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ce87f85e-d42a-42a5-9c4e-a6f7ec267c8a</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_3_0001_Art_V_Phase_anlegen.cs">
+      <DependentUpon>Projekt_3_0001_Art_V_Phase_anlegen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5ca75e43-43a1-4edf-bc0f-b369e2ea585f</id>
+      <BoundTo>a66f31e1-64d7-4748-842a-d9ba2b2bf853</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_3_0001_Art_V_Phase_anlegen.UserCode.cs">
+      <DependentUpon>Projekt_3_0001_Art_V_Phase_anlegen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>126392ec-e973-4e31-bc86-8a07b86db96d</id>
+      <BoundTo>a66f31e1-64d7-4748-842a-d9ba2b2bf853</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_3_0001_Art_V_pruefen.cs">
+      <DependentUpon>Projekt_3_0001_Art_V_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>58beebe0-2e9f-4a83-8f7f-1ac17e77e996</id>
+      <BoundTo>47e21c0c-51a8-4f69-ac3c-77540eed1920</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_3_0001_Art_V_pruefen.UserCode.cs">
+      <DependentUpon>Projekt_3_0001_Art_V_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>875d4a20-e8ee-4684-9783-0199e5a39091</id>
+      <BoundTo>47e21c0c-51a8-4f69-ac3c-77540eed1920</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_3_0001_Art_V_zurueck_Suche_pruefen.cs">
+      <DependentUpon>Projekt_3_0001_Art_V_zurueck_Suche_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8e20fd67-6892-41ca-829a-135440841fca</id>
+      <BoundTo>c5c5a02a-87db-4fb3-88c8-b256be3a5d9a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_3_0001_Art_V_zurueck_Suche_pruefen.UserCode.cs">
+      <DependentUpon>Projekt_3_0001_Art_V_zurueck_Suche_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>88034922-c6dc-4905-b52a-317b018ea427</id>
+      <BoundTo>c5c5a02a-87db-4fb3-88c8-b256be3a5d9a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_3_0001_Art_V_Phase_pruefen.cs">
+      <DependentUpon>Projekt_3_0001_Art_V_Phase_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4ca307c9-0e02-4c6a-bbcf-3be6206ff32f</id>
+      <BoundTo>c3c613c9-b918-40c5-a15a-6c9b62cd7704</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_3_0001_Art_V_Phase_pruefen.UserCode.cs">
+      <DependentUpon>Projekt_3_0001_Art_V_Phase_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>332cd98a-fd10-4e79-9f6a-0f1b322b80b1</id>
+      <BoundTo>c3c613c9-b918-40c5-a15a-6c9b62cd7704</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_3_Phasen_Feldpruefung.cs">
+      <BoundTo>edc1f08f-08d6-44ed-b2c7-14d402f73607</BoundTo>
+      <DependentUpon>Projekt_3_Phasen_Feldpruefung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>391e0ddc-d5ff-4033-907a-a765beb76ed4</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Projekt_3_Phasen_Feldpruefung.UserCode.cs">
+      <BoundTo>edc1f08f-08d6-44ed-b2c7-14d402f73607</BoundTo>
+      <DependentUpon>Projekt_3_Phasen_Feldpruefung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ec54e609-5426-43c8-b044-fa4aae84c792</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ff9aaa31-7562-4bbc-a6de-a9f0e2cc30f8</id>
+      <BoundTo>46852a9c-dd37-4531-9810-a401a5bca148</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8904f656-f259-420c-a188-cf3d339b28f8</id>
+      <BoundTo>46852a9c-dd37-4531-9810-a401a5bca148</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Tagesdatum_ermitteln.cs">
+      <BoundTo>b0568a2c-4bfa-471b-a778-4b43a55fa569</BoundTo>
+      <DependentUpon>Tagesdatum_ermitteln.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>413ba6f3-359a-4a9f-ae22-b6ceb7b76db6</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Tagesdatum_ermitteln.UserCode.cs">
+      <BoundTo>b0568a2c-4bfa-471b-a778-4b43a55fa569</BoundTo>
+      <DependentUpon>Tagesdatum_ermitteln.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>debea4a4-a864-4ab0-947d-86a0c6838dcf</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Zurueck_zur_Suche.cs">
+      <BoundTo>9f5ffda9-ec28-43a6-ab34-32df5c1168cd</BoundTo>
+      <DependentUpon>Zurueck_zur_Suche.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d9fda7e4-63b0-45d4-87eb-629dd8a46044</id>
+    </Compile>
+    <Compile Include="Recordings_z_proj\Zurueck_zur_Suche.UserCode.cs">
+      <BoundTo>9f5ffda9-ec28-43a6-ab34-32df5c1168cd</BoundTo>
+      <DependentUpon>Zurueck_zur_Suche.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>de5c6219-2da3-4dd4-829e-94232ddfdde7</id>
+    </Compile>
+    <Compile Include="Recordings_b_ber\Bereichskonten_1_K2006_Art_K_pruefen.cs">
+      <BoundTo>a4a7d986-a012-4117-9f4c-912a4a7b9f1f</BoundTo>
+      <DependentUpon>Bereichskonten_1_K2006_Art_K_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a8ba143c-bf42-4825-8f21-0c6d5c139ee3</id>
+    </Compile>
+    <Compile Include="Recordings_b_ber\Bereichskonten_1_K2006_Art_K_pruefen.UserCode.cs">
+      <BoundTo>a4a7d986-a012-4117-9f4c-912a4a7b9f1f</BoundTo>
+      <DependentUpon>Bereichskonten_1_K2006_Art_K_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9d70e1f5-faa4-4a55-a8a9-f1753bdca7e6</id>
+    </Compile>
+    <Compile Include="Recordings_b_ber\Bereichskonten_2_IFEIER_2_Art_IP_pruefen.cs">
+      <DependentUpon>Bereichskonten_2_IFEIER_2_Art_IP_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bb57a7f8-7e81-4722-9f63-4b1335232e68</id>
+      <BoundTo>dcba45bc-3bd5-45a8-86a6-feb04ef36a78</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_b_ber\Bereichskonten_2_IFEIER_2_Art_IP_pruefen.UserCode.cs">
+      <DependentUpon>Bereichskonten_2_IFEIER_2_Art_IP_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>92146fa1-fdf0-4b98-95ad-9cd01ec43ab8</id>
+      <BoundTo>dcba45bc-3bd5-45a8-86a6-feb04ef36a78</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_b_ber\Close_b_ber.cs">
+      <DependentUpon>Close_b_ber.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>49cd9b3e-4373-45e9-b388-573ced843cf5</id>
+      <BoundTo>c543784e-2b70-4d73-8590-05ac2994bba0</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_b_ber\Close_b_ber.UserCode.cs">
+      <DependentUpon>Close_b_ber.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0c6407d5-28cd-4a47-842d-1bb767b8d350</id>
+      <BoundTo>c543784e-2b70-4d73-8590-05ac2994bba0</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_b_ber\Start_b_ber.cs">
+      <DependentUpon>Start_b_ber.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d97b858c-6eb6-4362-9a12-6be753a20fdf</id>
+      <BoundTo>b6fa662c-9132-478d-b464-9f2eae50ea0a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_b_ber\Start_b_ber.UserCode.cs">
+      <DependentUpon>Start_b_ber.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>36346ad2-920b-463a-b719-0b83a1838c70</id>
+      <BoundTo>b6fa662c-9132-478d-b464-9f2eae50ea0a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_loeschen\Projekt_1_K2006_Art_K_loeschen.cs">
+      <DependentUpon>Projekt_1_K2006_Art_K_loeschen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1692cbbe-24ba-4c41-abf2-70f25e1f5c5e</id>
+      <BoundTo>330403ab-5fa5-4818-8ffd-595f0ed411be</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_loeschen\Projekt_1_K2006_Art_K_loeschen.UserCode.cs">
+      <DependentUpon>Projekt_1_K2006_Art_K_loeschen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>da212b79-d71b-4ead-9a48-79c5c31ee94f</id>
+      <BoundTo>330403ab-5fa5-4818-8ffd-595f0ed411be</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_loeschen\Projekt_2_0001_Art_V_loeschen.cs">
+      <DependentUpon>Projekt_2_0001_Art_V_loeschen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e5a5cd79-24f8-49df-8547-2fb4f69c3eb4</id>
+      <BoundTo>8a3cca9a-c690-4beb-94cd-3967352341c6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_loeschen\Projekt_2_0001_Art_V_loeschen.UserCode.cs">
+      <DependentUpon>Projekt_2_0001_Art_V_loeschen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>37e97b25-71a6-4ca0-a6fe-40beb6b77bf1</id>
+      <BoundTo>8a3cca9a-c690-4beb-94cd-3967352341c6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_loeschen\Projekt_2_I_FEIER_Art_IP_loeschen.cs">
+      <DependentUpon>Projekt_2_I_FEIER_Art_IP_loeschen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>73622d60-5c86-40bf-ad86-866dde760d49</id>
+      <BoundTo>d91e62d5-0f5c-40e8-a46b-80ad27558d99</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_loeschen\Projekt_2_I_FEIER_Art_IP_loeschen.UserCode.cs">
+      <DependentUpon>Projekt_2_I_FEIER_Art_IP_loeschen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f774720b-a180-435c-a062-f9f24fcafbd7</id>
+      <BoundTo>d91e62d5-0f5c-40e8-a46b-80ad27558d99</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_s_nkrn\Close_S_NKRN.cs">
+      <DependentUpon>Close_S_NKRN.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2e964b8f-506e-418e-bc26-c4840b8afee6</id>
+      <BoundTo>098aad7c-e386-4cdc-b0ee-c6b15af3e892</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_s_nkrn\Close_S_NKRN.UserCode.cs">
+      <DependentUpon>Close_S_NKRN.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0226cf16-550c-41f3-a834-af156b3e8192</id>
+      <BoundTo>098aad7c-e386-4cdc-b0ee-c6b15af3e892</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_s_nkrn\Nummernkreis_zuruecksetzen.cs">
+      <DependentUpon>Nummernkreis_zuruecksetzen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>115f3c86-fef4-4c8d-8acc-6000a637165e</id>
+      <BoundTo>4a84daa4-7484-4fd2-8690-d84ccb8e2014</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_s_nkrn\Nummernkreis_zuruecksetzen.UserCode.cs">
+      <DependentUpon>Nummernkreis_zuruecksetzen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f5172cfc-9a9e-4729-9f81-23f946508b3f</id>
+      <BoundTo>4a84daa4-7484-4fd2-8690-d84ccb8e2014</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_s_nkrn\Start_S_NKRN.cs">
+      <DependentUpon>Start_S_NKRN.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dd036c55-44ed-4583-a587-330a48f6b6bb</id>
+      <BoundTo>f0fb0aba-1c65-452a-8c82-daca939c4639</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_s_nkrn\Start_S_NKRN.UserCode.cs">
+      <DependentUpon>Start_S_NKRN.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cfdf2d15-838c-490c-bd15-17d58161eef1</id>
+      <BoundTo>f0fb0aba-1c65-452a-8c82-daca939c4639</BoundTo>
+    </Compile>
+    <Compile Include="Z_PROJ_001Repository.cs">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <DependentUpon>Z_PROJ_001Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>fcf095c0-712d-4ecc-8b3d-29c4073c8426</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>02864287-1141-49f6-a085-75f958c57fe6</id>
+    </None>
+    <None Include="Recordings_z_proj\CloseAUT.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>d0574495-14fc-4e86-992f-ebe488cf61b4</id>
+      <recordtableid>8aa82bb8-1703-4104-8e3c-8de34f239a0f</recordtableid>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_1_K2006_aufrufen.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>9afe8aea-e73d-44b3-9eea-cb7182c80a0b</id>
+      <recordtableid>703a909d-a45d-4541-a417-aebb70ee50bd</recordtableid>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_1_K2006_Phasen_Bild_pruefen.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>80b8ccae-d685-4f0e-82b5-26ceea15b3a6</id>
+      <recordtableid>3e6c7a3b-5456-4812-b884-8e83dc3e939b</recordtableid>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_2_I_FEIER_aufrufen.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>b8eb4fac-e3ec-4a5f-a070-50a5305b3809</id>
+      <recordtableid>dce33771-6244-40f1-af8e-05a18beca3a8</recordtableid>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_3_0001_aufrufen.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>ceb4ace0-3b0c-443c-93a7-889cf814c9a7</id>
+      <recordtableid>7393e40e-aa6c-4a8c-bb56-635c73b09d7a</recordtableid>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_2_I_FEIER_Phasen_Bild_pruefen.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>2ffa1d04-49ad-4afa-9123-273e208e6491</id>
+      <recordtableid>20b33095-b9db-49a1-b743-5eca6e532ff1</recordtableid>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_3_0001_Phasenzeile_1_pruefen.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>13988134-0f86-483b-957d-ff90f1148298</id>
+      <recordtableid>e952d870-70b8-42d1-a6e4-a76cc0709d3b</recordtableid>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_2_I_FEIER_Art_IP_pruefen.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>1f0f2b03-2de5-4d95-842a-db8e55215bfb</id>
+      <recordtableid>ae05c448-4910-4b52-b3bf-ca58246317f1</recordtableid>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_2_I_FEIER_Art_IP_zurueck_Suche_pruefen.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>d08d2bb0-9570-4278-8e24-c45ad8ca5073</id>
+      <recordtableid>2a54e202-63ca-429f-b48c-5ff6ea2004c2</recordtableid>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_1_K2006_Art_K_pruefen_Daten.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>6681b0d0-6b2e-469c-aa6e-b5106bfca2b5</id>
+      <recordtableid>36de2cf0-7c98-4b3e-8fdf-7a208bd21812</recordtableid>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_1_K2006_Art_K_anlegen.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>4446cf49-ef6d-40fb-8ecf-64367c85d9cc</id>
+      <recordtableid>cf91ab5d-ac80-46ff-b3ac-4ed5782bfd22</recordtableid>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_1_K2006_Art_K_zurueck_Suche_pruefen.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>d0ec5026-0b4f-4368-b85e-df55abe618ae</id>
+      <recordtableid>935ddeae-b75e-4913-bde7-6359fe92aa35</recordtableid>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_1_K2006_Phase1und22_pruefen.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>685f3f15-0c0f-486d-8c24-26e78da95597</id>
+      <recordtableid>b41378bb-fcde-419f-bb3b-655b0641b4ed</recordtableid>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_1_K2006_Phasenzeilen_1bis22pruefen.rxrec">
+      <id>6253ac0b-415c-4577-bfca-fb6ae16dc5ab</id>
+      <recordtableid>80e75d09-44e6-4615-baca-4469e190804d</recordtableid>
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_2_I_FEIER_Art_IP_anlegen.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>2a7396ee-6505-41ba-8993-b2651700d485</id>
+      <recordtableid>96b74478-a5fa-472c-bfaa-c6904ea522b4</recordtableid>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_2_I_FEIER_Phasenzeilen_1bis10_pruefen.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>689e606b-6d92-4b38-b54b-4168934dca31</id>
+      <recordtableid>7d1a6151-8062-42b7-b1c1-81d723556424</recordtableid>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_2_I_FEIER_Phasen_1und10_pruefen.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>ead3da9f-68f3-413f-92aa-45f52fc43279</id>
+      <recordtableid>66a2e7fa-74ba-4e98-b06b-f8820d4f6b65</recordtableid>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_3_0001_Art_V_anlegen_ohne_Vorlage.rxrec">
+      <id>6bebe080-03bd-4787-b7a0-0a8f39dd77c9</id>
+      <recordtableid>c48c34f4-ab8d-46f7-8887-e8c4f930d632</recordtableid>
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_3_0001_Art_V_Phase_anlegen.rxrec">
+      <id>a66f31e1-64d7-4748-842a-d9ba2b2bf853</id>
+      <recordtableid>0dc60e97-6a38-4579-bc1b-491dfcc1c8fb</recordtableid>
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_3_0001_Art_V_pruefen.rxrec">
+      <id>47e21c0c-51a8-4f69-ac3c-77540eed1920</id>
+      <recordtableid>f0d2b8fe-2b69-4aea-aec0-0a8dd90f1bba</recordtableid>
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_3_0001_Art_V_zurueck_Suche_pruefen.rxrec">
+      <id>c5c5a02a-87db-4fb3-88c8-b256be3a5d9a</id>
+      <recordtableid>b9751f85-96a7-4fe5-bff9-cb71530a072a</recordtableid>
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_3_0001_Art_V_Phase_pruefen.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>c3c613c9-b918-40c5-a15a-6c9b62cd7704</id>
+      <recordtableid>2fb4a643-981e-43d9-8c2f-f9f8f31c8a29</recordtableid>
+    </None>
+    <None Include="Recordings_z_proj\Projekt_3_Phasen_Feldpruefung.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>edc1f08f-08d6-44ed-b2c7-14d402f73607</id>
+      <recordtableid>1fabad14-f494-40af-9981-5fc3301ec99a</recordtableid>
+    </None>
+    <None Include="Recordings_z_proj\StartAUT.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>46852a9c-dd37-4531-9810-a401a5bca148</id>
+      <recordtableid>edff56c6-0f33-4b22-8a95-3f915d1d9bc3</recordtableid>
+    </None>
+    <None Include="Recordings_z_proj\Tagesdatum_ermitteln.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>b0568a2c-4bfa-471b-a778-4b43a55fa569</id>
+      <recordtableid>0e9c1eaa-645b-4fb2-bcf6-cec4832810ca</recordtableid>
+    </None>
+    <None Include="Recordings_z_proj\Zurueck_zur_Suche.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>9f5ffda9-ec28-43a6-ab34-32df5c1168cd</id>
+      <recordtableid>d932c0bf-3998-4d01-9ffc-2e0e8d4038d6</recordtableid>
+    </None>
+    <None Include="Recordings_b_ber\Bereichskonten_1_K2006_Art_K_pruefen.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>a4a7d986-a012-4117-9f4c-912a4a7b9f1f</id>
+      <recordtableid>98c5189d-be2c-413c-b7e2-bcf0e2f30687</recordtableid>
+    </None>
+    <None Include="Recordings_b_ber\Bereichskonten_2_IFEIER_2_Art_IP_pruefen.rxrec">
+      <id>dcba45bc-3bd5-45a8-86a6-feb04ef36a78</id>
+      <recordtableid>79f0ee50-df27-4d87-8e11-fcbdbb63e50d</recordtableid>
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+    </None>
+    <None Include="Recordings_b_ber\Close_b_ber.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>c543784e-2b70-4d73-8590-05ac2994bba0</id>
+      <recordtableid>58761d6b-9bc5-4020-a602-88817ca6ae5e</recordtableid>
+    </None>
+    <None Include="Recordings_b_ber\Start_b_ber.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>b6fa662c-9132-478d-b464-9f2eae50ea0a</id>
+      <recordtableid>786c95f2-715c-485e-8460-095fca6f7a48</recordtableid>
+    </None>
+    <None Include="Recordings_loeschen\Projekt_1_K2006_Art_K_loeschen.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>330403ab-5fa5-4818-8ffd-595f0ed411be</id>
+      <recordtableid>c2d299f0-08d1-4300-bb8d-40c5063bed8f</recordtableid>
+    </None>
+    <None Include="Recordings_loeschen\Projekt_2_0001_Art_V_loeschen.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>8a3cca9a-c690-4beb-94cd-3967352341c6</id>
+      <recordtableid>8572fea3-8c38-4710-b0c4-863e2cba59ad</recordtableid>
+    </None>
+    <None Include="Recordings_loeschen\Projekt_2_I_FEIER_Art_IP_loeschen.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>d91e62d5-0f5c-40e8-a46b-80ad27558d99</id>
+      <recordtableid>a7010685-41ed-45a7-97bb-65b2c0ea44b3</recordtableid>
+    </None>
+    <None Include="Recordings_s_nkrn\Close_S_NKRN.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>098aad7c-e386-4cdc-b0ee-c6b15af3e892</id>
+      <recordtableid>c2b317a0-d556-4f11-836f-fe3b9f6be12f</recordtableid>
+    </None>
+    <None Include="Recordings_s_nkrn\Nummernkreis_zuruecksetzen.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>4a84daa4-7484-4fd2-8690-d84ccb8e2014</id>
+      <recordtableid>a811df61-3390-4121-8347-661e3851992e</recordtableid>
+    </None>
+    <None Include="Recordings_s_nkrn\Start_S_NKRN.rxrec">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <id>f0fb0aba-1c65-452a-8c82-daca939c4639</id>
+      <recordtableid>942b3610-a677-4f33-a4fd-8ada4d18a9b5</recordtableid>
+    </None>
+    <None Include="Z_PROJ_001Repository.rximg">
+      <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>
+      <DependentUpon>Z_PROJ_001Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>3131be50-328d-4d4e-8baf-65526d08a0cc</id>
+    </None>
+    <None Include="Z_PROJ_001Repository.rxrep">
+      <id>d5508d61-8d97-49cc-bd5a-e2141703fc3a</id>
+      <repoid>14c11188-9619-42c0-9f6d-ea1d005fff2f</repoid>
+      <reporootid>2c52df68-016b-477e-b4b2-d0969ffa0a85</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Z_PROJ_001.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>2d1fd255-1882-4dbd-8c73-60a733524424</id>
+    </Content>
+    <Content Include="Z_PROJ_001.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>742a6f0d-454a-4bf6-9cc2-29743e6bcf43</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings_s_nkrn">
+      <id>382272fd-25c5-4750-a144-9bf5eda921f4</id>
+    </Folder>
+    <Folder Include="Recordings_loeschen">
+      <id>06b90aff-44ee-46cc-bdc5-bc344aff30e3</id>
+    </Folder>
+    <Folder Include="Recordings_b_ber">
+      <id>652eede2-5b65-4582-a8e0-5d05fdc3b0cd</id>
+    </Folder>
+    <Folder Include="Recordings_z_proj">
+      <id>542f12a2-f309-4733-8566-be26cad8c1ab</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{2082ABF5-A2C9-4BEE-9444-81E2E3DD168A}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

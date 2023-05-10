@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="dd2f40a4-c511-45a7-9c2b-ea31fc38791b"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Entfernt_Ergebniskontrolle_keine_Differenztabelle"
+	namespace="B_ENDE_003_B_BUOPPR_BUBE.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="NotExists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="44e9c33b-ae17-4984-88ee-a162703c1cb0">
+			<comment>
+				Set Search Timeout: Search Time 2s -&gt; Eff Time 32s
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0d075b06-6962-4b94-815b-44726a244323"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="47"
+				prefcap="titlebar"
+				rect="50,29,764,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Pr&#252;fen Betrag - Buchungszeile &lt;&gt; Bereich (ROT: Bereichsaufteilung vorhanden - BLAU: KORE-Periode gesperrt)
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Pr&#252;fen Betrag - Buchungszeile &lt;&gt; Bereich (ROT: Bereichsaufteilung vorhanden - BLAU: KORE-Periode gesperrt)
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblDiff']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Pr&#252;fen Betrag - Buchungszeile &lt;&gt; Bereich (ROT: Bereichsaufteilung vorhanden
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="65c6a771-7a82-4ef0-9cd1-38528a83f696"
+	name="B_ENDE_003_B_BUOPPR_BUBERepository"
+	relativepath="..\B_ENDE_003_B_BUOPPR_BUBERepository.rxrep">
+		<codegen
+		classname="B_ENDE_003_B_BUOPPR_BUBERepository"
+		namespace="B_ENDE_003_B_BUOPPR_BUBE">
+		</codegen>
+		<rootfolder
+		id="a40067d2-a27b-4d21-9bea-078e4634348f"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		entfernt_Ergebniskontrolle_keine_Differenztabelle.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

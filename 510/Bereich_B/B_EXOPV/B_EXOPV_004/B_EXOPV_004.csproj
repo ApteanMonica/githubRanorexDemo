@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{409D67F7-A343-4210-8098-0B7E1F66F92C}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>B_EXOPV_004</RootNamespace>
+    <AssemblyName>B_EXOPV_004</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>d268e3b3-7adf-47d2-aba1-85b5395993d0</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper" />
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Delphi" />
+    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.WinForms.Core" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="Ranorex.Plugin.Wpf.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>a5445076-2d5c-4615-8191-7d4da393c74d</id>
+    </Compile>
+    <Compile Include="B_EXOPV_004Repository.cs">
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+      <DependentUpon>B_EXOPV_004Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>c023c6c4-67fe-455b-8525-a4aeea631117</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>1cd01d2c-14ac-4239-8f71-ac86d99c5f86</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Close_B_BUAB.cs">
+      <DependentUpon>Close_B_BUAB.rxrec</DependentUpon>
+      <id>eea41e95-d92a-442d-b400-c2fec1bc57f7</id>
+      <BoundTo>cc16366d-d4ae-4535-8bbc-38efb6aa3bf5</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Close_B_BUAB.UserCode.cs">
+      <DependentUpon>Close_B_BUAB.rxrec</DependentUpon>
+      <id>0a8b8f7a-1cd9-4d47-9409-bd51147e9a55</id>
+      <BoundTo>cc16366d-d4ae-4535-8bbc-38efb6aa3bf5</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Start_B_BUAB.cs">
+      <DependentUpon>Start_B_BUAB.rxrec</DependentUpon>
+      <id>26469844-8b4b-4b8e-9bcd-21df04200164</id>
+      <BoundTo>89f5c2c1-51fe-43f9-b594-ff13407b97d4</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Start_B_BUAB.UserCode.cs">
+      <DependentUpon>Start_B_BUAB.rxrec</DependentUpon>
+      <id>e09811ef-6b3f-4a6f-8a58-8dc3d293626f</id>
+      <BoundTo>89f5c2c1-51fe-43f9-b594-ff13407b97d4</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\Belege_pruefen_vor_Verbuchung.cs">
+      <DependentUpon>Belege_pruefen_vor_Verbuchung.rxrec</DependentUpon>
+      <id>4b7da590-3c49-4418-be0b-78d265897ca2</id>
+      <BoundTo>fce924b4-bb6c-4999-a40a-267650e1f47c</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\Belege_pruefen_vor_Verbuchung.UserCode.cs">
+      <DependentUpon>Belege_pruefen_vor_Verbuchung.rxrec</DependentUpon>
+      <id>09dba7cf-e2ae-4266-a5fb-78c5c9a0be1f</id>
+      <BoundTo>fce924b4-bb6c-4999-a40a-267650e1f47c</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\Close_B_EXOPS.cs">
+      <DependentUpon>Close_B_EXOPS.rxrec</DependentUpon>
+      <id>986158f7-e0a2-493d-be04-c3021b4a58b9</id>
+      <BoundTo>4ae2fc93-d5fb-484f-9eb8-8ee9327cb3b6</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\Close_B_EXOPS.UserCode.cs">
+      <DependentUpon>Close_B_EXOPS.rxrec</DependentUpon>
+      <id>994d0919-2a48-4947-85bc-950f39f58f7c</id>
+      <BoundTo>4ae2fc93-d5fb-484f-9eb8-8ee9327cb3b6</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\Einschraenkungen_L_N_303200.cs">
+      <DependentUpon>Einschraenkungen_L_N_303200.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>11ace4e7-421f-4bc2-b25d-de6015d78e84</id>
+      <BoundTo>1f72a50d-c06a-499f-9ad7-581d71200f0a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\Einschraenkungen_L_N_303200.UserCode.cs">
+      <DependentUpon>Einschraenkungen_L_N_303200.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b3afae03-8f24-44c7-a228-4e47cc1c6734</id>
+      <BoundTo>1f72a50d-c06a-499f-9ad7-581d71200f0a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\Start_B_EXOPS.cs">
+      <DependentUpon>Start_B_EXOPS.rxrec</DependentUpon>
+      <id>fd3c0acb-05fb-42a3-a683-829f1f57ca7c</id>
+      <BoundTo>17c3ac7d-609d-4ee0-b89b-e56ee6141425</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\Start_B_EXOPS.UserCode.cs">
+      <DependentUpon>Start_B_EXOPS.rxrec</DependentUpon>
+      <id>b32753bb-1a61-4b8e-bdd9-153afaad1e7e</id>
+      <BoundTo>17c3ac7d-609d-4ee0-b89b-e56ee6141425</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\CloseAUT.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <id>7d4f9ce0-c62a-473d-be3a-1224333052e3</id>
+      <BoundTo>07ed2147-a3a7-4a0b-ba43-1ae860b92cd7</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\CloseAUT.UserCode.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <id>f429ce02-aff8-4684-abce-3b411e51760b</id>
+      <BoundTo>07ed2147-a3a7-4a0b-ba43-1ae860b92cd7</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Fehleroption_aendern.cs">
+      <DependentUpon>Fehleroption_aendern.rxrec</DependentUpon>
+      <id>e411b1f1-cff3-4e47-8dde-6092d513b9ce</id>
+      <BoundTo>f00a84cc-0973-441b-9013-1d99c4a89d37</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Fehleroption_aendern.UserCode.cs">
+      <DependentUpon>Fehleroption_aendern.rxrec</DependentUpon>
+      <id>c5cf2c59-5d01-4cb4-bacc-32e4c2f003a8</id>
+      <BoundTo>f00a84cc-0973-441b-9013-1d99c4a89d37</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Fehleroption_zuruecksetzen_auf_F.cs">
+      <DependentUpon>Fehleroption_zuruecksetzen_auf_F.rxrec</DependentUpon>
+      <id>c39fb5cc-1ffa-46c1-97e4-fc3707f38d95</id>
+      <BoundTo>d0a5394f-b635-43a5-b666-6bc502562441</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Fehleroption_zuruecksetzen_auf_F.UserCode.cs">
+      <DependentUpon>Fehleroption_zuruecksetzen_auf_F.rxrec</DependentUpon>
+      <id>6af4aa27-5734-4090-b283-771ea12a9ab2</id>
+      <BoundTo>d0a5394f-b635-43a5-b666-6bc502562441</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Stapel_pruefen_Meldungen_aendern_ER01_ER02_Fehlermeldungen.cs">
+      <DependentUpon>Stapel_pruefen_Meldungen_aendern_ER01_ER02_Fehlermeldungen.rxrec</DependentUpon>
+      <id>e74c3165-9931-42f0-9d89-9aa3414fe460</id>
+      <RecorderCode>true</RecorderCode>
+      <BoundTo>aa2c1dc7-ec93-4af8-95ac-78506a836ce4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Stapel_pruefen_Meldungen_aendern_ER01_ER02_Fehlermeldungen.UserCode.cs">
+      <DependentUpon>Stapel_pruefen_Meldungen_aendern_ER01_ER02_Fehlermeldungen.rxrec</DependentUpon>
+      <id>079352ab-7b57-4c0e-a20f-98128b7a449c</id>
+      <UserCode>true</UserCode>
+      <BoundTo>aa2c1dc7-ec93-4af8-95ac-78506a836ce4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Stapel_pruefen_Meldungen_ohne_Aenderung.cs">
+      <DependentUpon>Stapel_pruefen_Meldungen_ohne_Aenderung.rxrec</DependentUpon>
+      <id>81192ce9-2019-4cda-bea6-7fa5c27def0e</id>
+      <BoundTo>cff1f22f-1442-45da-b831-f26db757f27b</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Stapel_pruefen_Meldungen_ohne_Aenderung.UserCode.cs">
+      <DependentUpon>Stapel_pruefen_Meldungen_ohne_Aenderung.rxrec</DependentUpon>
+      <id>57eeec58-160f-4045-9221-87573346ab76</id>
+      <BoundTo>cff1f22f-1442-45da-b831-f26db757f27b</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Stapel_pruefen_Protokolldatei.cs">
+      <DependentUpon>Stapel_pruefen_Protokolldatei.rxrec</DependentUpon>
+      <id>248ab743-fbf2-4080-a7b9-402b4357b0ea</id>
+      <BoundTo>d43270e5-1f7e-4aa7-b18d-0b3d1ddf3210</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Stapel_pruefen_Protokolldatei.UserCode.cs">
+      <DependentUpon>Stapel_pruefen_Protokolldatei.rxrec</DependentUpon>
+      <id>fd5bb765-ec85-4f5b-977f-c7ff4f30a84c</id>
+      <BoundTo>d43270e5-1f7e-4aa7-b18d-0b3d1ddf3210</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Stapel_pruefen_starten.cs">
+      <DependentUpon>Stapel_pruefen_starten.rxrec</DependentUpon>
+      <id>0dfc9585-9f64-45a6-b733-f01da82cc18f</id>
+      <BoundTo>56c131b6-2e9f-4cd8-9d39-3c5e9ca2c4f0</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Stapel_pruefen_starten.UserCode.cs">
+      <DependentUpon>Stapel_pruefen_starten.rxrec</DependentUpon>
+      <id>c3b9ba73-1816-431e-a6fd-a55829f39894</id>
+      <BoundTo>56c131b6-2e9f-4cd8-9d39-3c5e9ca2c4f0</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Stapel_validieren.cs">
+      <DependentUpon>Stapel_validieren.rxrec</DependentUpon>
+      <id>5dcdf0f7-f18e-483f-9349-7e16f96f9440</id>
+      <BoundTo>881ff391-f9a4-4f4f-a3d4-ce867e3ffbda</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Stapel_validieren.UserCode.cs">
+      <DependentUpon>Stapel_validieren.rxrec</DependentUpon>
+      <id>e85f7cac-7b74-4497-8388-c5556d3de2e6</id>
+      <BoundTo>881ff391-f9a4-4f4f-a3d4-ce867e3ffbda</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Stapel_verbuchen_Meldungen_aendern_ER01_ER02_Fehlermeldungen.cs">
+      <DependentUpon>Stapel_verbuchen_Meldungen_aendern_ER01_ER02_Fehlermeldungen.rxrec</DependentUpon>
+      <id>d331bc47-2fef-432e-93f0-a85090e7edaa</id>
+      <RecorderCode>true</RecorderCode>
+      <BoundTo>dc3d2d0d-276c-40ea-adc2-a2b5b2c84169</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Stapel_verbuchen_Meldungen_aendern_ER01_ER02_Fehlermeldungen.UserCode.cs">
+      <DependentUpon>Stapel_verbuchen_Meldungen_aendern_ER01_ER02_Fehlermeldungen.rxrec</DependentUpon>
+      <id>19e237c2-b00d-4ee4-9e6f-728f57b439ab</id>
+      <UserCode>true</UserCode>
+      <BoundTo>dc3d2d0d-276c-40ea-adc2-a2b5b2c84169</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Stapel_verbuchen_starten.cs">
+      <DependentUpon>Stapel_verbuchen_starten.rxrec</DependentUpon>
+      <id>552d8b35-611c-46c3-957b-9781ff81a5b1</id>
+      <RecorderCode>true</RecorderCode>
+      <BoundTo>e386092e-9211-4ad5-bf9f-a4d1685cbec6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Stapel_verbuchen_starten.UserCode.cs">
+      <DependentUpon>Stapel_verbuchen_starten.rxrec</DependentUpon>
+      <id>95210e3c-d352-4d0f-b783-ac7d30790b66</id>
+      <UserCode>true</UserCode>
+      <BoundTo>e386092e-9211-4ad5-bf9f-a4d1685cbec6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <id>13b305d5-0711-4948-b68a-e7c97891037f</id>
+      <BoundTo>a275dacd-38ec-488a-856b-2410339240f8</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <id>f4096de0-9a65-4cdc-aacb-ffb8a16b154d</id>
+      <BoundTo>a275dacd-38ec-488a-856b-2410339240f8</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>6d9ce509-fa21-4a5e-bb99-561d98afefe0</id>
+    </None>
+    <None Include="B_EXOPV_004Repository.rximg">
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+      <DependentUpon>B_EXOPV_004Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>c9408d7b-6431-4323-92ed-519a4e24fc4d</id>
+    </None>
+    <None Include="B_EXOPV_004Repository.rxrep">
+      <id>d268e3b3-7adf-47d2-aba1-85b5395993d0</id>
+      <repoid>97f67057-ca21-4199-ac02-38c60f65a0ce</repoid>
+      <reporootid>8ba070da-ae86-4ef2-943b-ec1b741e03f0</reporootid>
+    </None>
+    <None Include="Recordings_B_BUAB\Close_B_BUAB.rxrec">
+      <id>cc16366d-d4ae-4535-8bbc-38efb6aa3bf5</id>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+      <recordtableid>015541fb-3892-40d2-8840-ce2c3eb44405</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUAB\Start_B_BUAB.rxrec">
+      <id>89f5c2c1-51fe-43f9-b594-ff13407b97d4</id>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+      <recordtableid>6fc57c17-6d02-422a-88b2-2f0dc35ba00d</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPS\Belege_pruefen_vor_Verbuchung.rxrec">
+      <id>fce924b4-bb6c-4999-a40a-267650e1f47c</id>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+      <recordtableid>63fa5680-1386-41e3-ba86-30b83e2a0c65</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPS\Close_B_EXOPS.rxrec">
+      <id>4ae2fc93-d5fb-484f-9eb8-8ee9327cb3b6</id>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+      <recordtableid>c094dd1c-e2c7-41b1-af19-fb81ca3f8b75</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPS\Einschraenkungen_L_N_303200.rxrec">
+      <id>1f72a50d-c06a-499f-9ad7-581d71200f0a</id>
+      <recordtableid>80b2c675-7c5f-4008-9269-1ce0dc94775e</recordtableid>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+    </None>
+    <None Include="Recordings_B_EXOPS\Start_B_EXOPS.rxrec">
+      <id>17c3ac7d-609d-4ee0-b89b-e56ee6141425</id>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+      <recordtableid>03755093-1b36-4ede-83a7-a49e597b4047</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPV\CloseAUT.rxrec">
+      <id>07ed2147-a3a7-4a0b-ba43-1ae860b92cd7</id>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+      <recordtableid>2dbd0633-d4b1-43be-a0a9-4fa3134a9220</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPV\Fehleroption_aendern.rxrec">
+      <id>f00a84cc-0973-441b-9013-1d99c4a89d37</id>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+      <recordtableid>5cd9f441-a840-4ad2-8d33-490f0297a6fc</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPV\Fehleroption_zuruecksetzen_auf_F.rxrec">
+      <id>d0a5394f-b635-43a5-b666-6bc502562441</id>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+      <recordtableid>7d9127c9-bbf7-42f7-9f45-1308724ab3d9</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPV\Stapel_pruefen_Meldungen_aendern_ER01_ER02_Fehlermeldungen.rxrec">
+      <id>aa2c1dc7-ec93-4af8-95ac-78506a836ce4</id>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+      <recordtableid>7920d84a-2a66-4159-a938-e662a4ff7a96</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPV\Stapel_pruefen_Meldungen_ohne_Aenderung.rxrec">
+      <id>cff1f22f-1442-45da-b831-f26db757f27b</id>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+      <recordtableid>5a97b737-5b4c-493b-a638-75aa0dd405e2</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPV\Stapel_pruefen_Protokolldatei.rxrec">
+      <id>d43270e5-1f7e-4aa7-b18d-0b3d1ddf3210</id>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+      <recordtableid>0ad15bf6-9ef3-458a-bfdc-b4bc2d8f280a</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPV\Stapel_pruefen_starten.rxrec">
+      <id>56c131b6-2e9f-4cd8-9d39-3c5e9ca2c4f0</id>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+      <recordtableid>7db20743-2694-4f57-b138-4df6a7f37c36</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPV\Stapel_validieren.rxrec">
+      <id>881ff391-f9a4-4f4f-a3d4-ce867e3ffbda</id>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+      <recordtableid>e22d0eb0-bbb3-42ce-b85a-cfa62fc51803</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPV\Stapel_verbuchen_Meldungen_aendern_ER01_ER02_Fehlermeldungen.rxrec">
+      <id>dc3d2d0d-276c-40ea-adc2-a2b5b2c84169</id>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+      <recordtableid>77fdf61d-13b9-47e6-8211-4afc1b07aa39</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPV\Stapel_verbuchen_starten.rxrec">
+      <id>e386092e-9211-4ad5-bf9f-a4d1685cbec6</id>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+      <recordtableid>6947c70b-e722-4f7f-84e2-779ce7b41a9c</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPV\StartAUT.rxrec">
+      <id>a275dacd-38ec-488a-856b-2410339240f8</id>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+      <recordtableid>4a6830e5-cffc-464d-bdfc-0a408cb1b6fe</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="B_EXOPV_004.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>611b8425-9c7a-48c1-8350-11d32a065783</id>
+    </Content>
+    <Content Include="B_EXOPV_004.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>55ccf220-7b16-467c-a346-b19b3a0312a6</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings_B_BUAB">
+      <id>e4a9e75c-742b-4474-b182-e2701dc37ca4</id>
+    </Folder>
+    <Folder Include="Recordings_B_EXOPV">
+      <id>893999b2-a486-4ead-9746-8ddd8b82c0ac</id>
+    </Folder>
+    <Folder Include="Recordings_B_EXOPS">
+      <id>29e5af97-097d-4259-b578-0d1f488abcfe</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

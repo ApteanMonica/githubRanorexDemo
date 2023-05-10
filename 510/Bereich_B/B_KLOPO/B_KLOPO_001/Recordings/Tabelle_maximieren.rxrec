@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4bdcfa2f-4e4f-44d7-87d3-1d933efe559c"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Tabelle_maximieren"
+	namespace="B_KLOPO_001.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<keysequenceitem
+		KeySequence="{LWin down}{Up}{LWin up}"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="3f6381bc-3100-4a01-8c74-d635e43be676">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="aba5aee2-fd4c-4294-9698-0cd96b4f5db7"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblKlOp']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
+	</recorditems>
+	<repository
+	id="a7499887-3bef-4870-9574-acaf54adcbce"
+	name="B_KLOPO_001Repository"
+	relativepath="..\B_KLOPO_001Repository.rxrep">
+		<codegen
+		classname="B_KLOPO_001Repository"
+		namespace="B_KLOPO_001">
+		</codegen>
+		<rootfolder
+		id="3f4a689f-dbcc-4b0a-85f5-4dca8e45f371"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Tabelle_maximieren.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

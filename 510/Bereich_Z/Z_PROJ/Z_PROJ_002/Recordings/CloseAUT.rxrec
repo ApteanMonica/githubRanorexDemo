@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="3a4bbe1e-3877-4476-ae5e-96d71772d057"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="Z_PROJ_002.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="9d070d33-1400-42f6-a64a-9551c6419f5c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="df9af1a7-535d-4c80-8352-bd1c58125f66"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmTabProjekt']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="69c76c66-c030-4a23-91c0-72e5919d6ff3"
+	name="Z_PROJ_002Repository"
+	relativepath="..\Z_PROJ_002Repository.rxrep">
+		<codegen
+		classname="Z_PROJ_002Repository"
+		namespace="Z_PROJ_002">
+		</codegen>
+		<rootfolder
+		id="df09de6d-ffbb-451e-a4be-ba01f4b76a2b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

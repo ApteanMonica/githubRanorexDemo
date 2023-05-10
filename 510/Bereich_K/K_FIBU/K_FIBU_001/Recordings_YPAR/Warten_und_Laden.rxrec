@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="22ce7bb9-58da-4f23-a0f5-6447e6b7f0e6"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Warten_und_Laden"
+	namespace="K_FIBU_001.Recordings_YPAR">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keyitem
+		action="Press"
+		data="A, Alt"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="8caf07cc-873c-40e6-8a9c-9203bb0de6f2"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+	</recorditems>
+	<repository
+	id="68e0cba9-38f3-45e6-a417-f3c628a107d3"
+	name="K_FIBU_001Repository"
+	relativepath="..\K_FIBU_001Repository.rxrep">
+		<codegen
+		classname="K_FIBU_001Repository"
+		namespace="K_FIBU_001">
+		</codegen>
+		<rootfolder
+		id="97b167be-ee15-44ec-b9ab-f5a520c1675d"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Warten_und_Laden.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

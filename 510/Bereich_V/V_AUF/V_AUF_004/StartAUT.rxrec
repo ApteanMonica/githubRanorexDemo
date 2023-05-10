@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="3ac46806-123d-41ab-ba4f-7c91e79787dd"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartAUT"
+	namespace="V_AUF_004">
+	</codegen>
+	<variables>
+		<var
+		id="95b66545-b9fd-4802-a744-8efc77e58e95"
+		name="Programm">
+			V_AUF
+		</var>
+		<var
+		id="1b6e5b53-9662-4791-a1f7-e28e8ae07665"
+		name="Startfile">
+			C:\Testdaten\Allgemein\Start.bat
+		</var>
+		<var
+		id="dfbafb78-d2e3-488a-86a9-3d08c4800007"
+		name="Tagesdatum">
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Arguments"
+				variable="Programm">
+				</binding>
+				<binding
+				target="FileName"
+				variable="Startfile">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Program Files\Microsoft Office\Office16\EXCEL.EXE
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="e1a9db3e-17d9-4d6a-a512-09eab3e186dc"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="be3e42d9-8a1c-40c3-96b2-80622d8d02d5"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='frmAufk']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeRegex"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e736c887-ab1f-4515-830c-3c8488b1cfa4">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="be3e42d9-8a1c-40c3-96b2-80622d8d02d5"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='frmAufk']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Auftragserfassung
+			</matchvalue>
+		</validationitem>
+		<userrecorditem
+		classname="SystemLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="GetDateTimeAsString"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Tagesdatum">
+				</binding>
+			</bindings>
+			<arguments
+			id="47b28445-6ead-4676-890b-c63267dac9bb">
+				<argument
+				argname="expectedFormat"
+				id="a4da9fbf-9b1f-4029-bab3-0873c958268d">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						dd.MM.yyyy
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="70a2555f-0cb3-4dd3-b693-cd95821eff04"
+		sx="1405"
+		sy="139"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6158537b-8a85-4745-9598-c44c40df6988"
+			sourcename="Recorder">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="1"
+				prefcap="button"
+				rect="1376,125,46,30"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Maximieren
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Drücken
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Maximiert das Fenster.
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Maximieren
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PushButton
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmAufk']/?/?/button[@accessiblename='Maximieren']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="7c59436d-a56d-41a9-bb14-f72b24851708">
+				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
+2P/Z
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="dc265f77-4c3f-4a81-a33c-3d9b6b5f73a5"
+	name="V_AUF_004Repository"
+	relativepath="V_AUF_004Repository.rxrep">
+		<codegen
+		classname="V_AUF_004Repository"
+		namespace="V_AUF_004">
+		</codegen>
+		<rootfolder
+		id="98452358-48ef-4170-ae63-b3ced9a8df43"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

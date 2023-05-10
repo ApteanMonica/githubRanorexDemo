@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="786c95f2-715c-485e-8460-095fca6f7a48"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Start_b_ber"
+	namespace="Z_PROJ_001.Recordings_b_ber">
+	</codegen>
+	<variables>
+		<var
+		id="15ad512a-f57f-4624-b07b-359c327817eb"
+		name="Startfile">
+			C:\Testdaten\Allgemein\Start.bat
+		</var>
+		<var
+		id="943a2705-de0d-4a02-8247-2886aa4a3b1e"
+		name="Programm3">
+			B_BER AUFRUFART=BEKT
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="FileName"
+				variable="Startfile">
+				</binding>
+				<binding
+				target="Arguments"
+				variable="Programm3">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Program Files\rs2\rs2\510_SP06\bin\K_FIBU.exe
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="61ede637-b9bf-47b5-a27e-99aa57320209"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8ea46bd0-6b9d-4184-8b66-05c0c4f24214"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="72"
+				prefcap="titlebar"
+				rect="-1505,51,1106,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Verwalten Bereichskonten
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Verwalten Bereichskonten
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblBekt']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0ed8c267-1905-41ce-8b4c-c4b320f33ffd">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8ea46bd0-6b9d-4184-8b66-05c0c4f24214"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="72"
+				prefcap="titlebar"
+				rect="-1505,51,1106,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Verwalten Bereichskonten
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Verwalten Bereichskonten
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblBekt']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Verwalten Bereichskonten
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="14c11188-9619-42c0-9f6d-ea1d005fff2f"
+	name="Z_PROJ_001Repository"
+	relativepath="..\Z_PROJ_001Repository.rxrep">
+		<codegen
+		classname="Z_PROJ_001Repository"
+		namespace="Z_PROJ_001">
+		</codegen>
+		<rootfolder
+		id="2c52df68-016b-477e-b4b2-d0969ffa0a85"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Start_b_ber.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

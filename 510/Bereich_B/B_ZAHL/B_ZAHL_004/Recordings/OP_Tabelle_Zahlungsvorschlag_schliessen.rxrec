@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="2776fccd-05f4-467a-887b-e6d0a735f954"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OP_Tabelle_Zahlungsvorschlag_schliessen"
+	namespace="B_ZAHL_004.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<keyitem
+		action="Press"
+		data="F4, Alt"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="a9a87c9e-53d9-49e8-9222-e171ab5acb7b"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="9436662c-1b02-4324-8fb4-ca369f00819d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZlvsÄndern']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keyitem>
+	</recorditems>
+	<repository
+	id="66029fff-f4d8-46cd-aee6-f8a699765306"
+	name="B_ZAHL_004Repository"
+	relativepath="..\B_ZAHL_004Repository.rxrep">
+		<codegen
+		classname="B_ZAHL_004Repository"
+		namespace="B_ZAHL_004">
+		</codegen>
+		<rootfolder
+		id="14f16f5c-dc3a-44f3-9353-d66523786db2"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OP_Tabelle_Zahlungsvorschlag_schliessen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="75cf36ed-27ae-4074-8d17-849b32bd9836"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Indexdatei_DE_schliessen"
+	namespace="B_JOUR_002.Recordings_2015">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="d4416db1-c554-4359-af3b-e7a390eaaeb3">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="10b8bf92-a5b3-406a-ba44-19a9612ab3cc"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='index.xml - Editor']/titlebar[@accessiblerole='TitleBar']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="989dae6e-b8c0-4597-b1d7-a459a0d0a7cf"
+	name="B_JOUR_002Repository"
+	relativepath="..\B_JOUR_002Repository.rxrep">
+		<codegen
+		classname="B_JOUR_002Repository"
+		namespace="B_JOUR_002">
+		</codegen>
+		<rootfolder
+		id="175d71ac-c82d-4c24-aa01-605b12e0bf23"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Indexdatei_DE_schliessen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

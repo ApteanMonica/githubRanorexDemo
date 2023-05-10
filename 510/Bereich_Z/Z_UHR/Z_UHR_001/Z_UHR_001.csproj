@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{A92C8EB1-EC17-4831-98DE-67476D1076EC}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Z_UHR_001</RootNamespace>
+    <AssemblyName>Z_UHR_001</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>03bdb451-5388-402a-af0c-cd5d4e12131c</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper" />
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Delphi" />
+    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.WinForms.Core" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="Ranorex.Plugin.Wpf.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>22243983-962a-45de-bced-2478c9445777</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>2745a54c-b0b3-4b32-8735-4bfff03bda08</id>
+    </Compile>
+    <Compile Include="Recording\Ausstempeln.cs">
+      <BoundTo>9f4a4200-24ff-421d-b01b-20227b89a87f</BoundTo>
+      <DependentUpon>Ausstempeln.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ed59bbdd-84e4-4c42-af58-9f3e0b481a39</id>
+    </Compile>
+    <Compile Include="Recording\Ausstempeln.UserCode.cs">
+      <BoundTo>9f4a4200-24ff-421d-b01b-20227b89a87f</BoundTo>
+      <DependentUpon>Ausstempeln.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>66aa6113-4df4-4c06-b502-46a8c9dd6d24</id>
+    </Compile>
+    <Compile Include="Recording\Beginn_Pause_stempeln.cs">
+      <BoundTo>92e3423d-bb57-4d3d-be27-9b29f4a05783</BoundTo>
+      <DependentUpon>Beginn_Pause_stempeln.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>37cb614a-4299-4a99-835b-523385723592</id>
+    </Compile>
+    <Compile Include="Recording\Beginn_Pause_stempeln.UserCode.cs">
+      <BoundTo>92e3423d-bb57-4d3d-be27-9b29f4a05783</BoundTo>
+      <DependentUpon>Beginn_Pause_stempeln.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>657b2515-69d9-46bd-8231-0e301c33002b</id>
+    </Compile>
+    <Compile Include="Recording\CloseAUT.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a36f40ee-ddef-4dd7-ba46-15af4b44406b</id>
+      <BoundTo>cdc39d08-af0a-49a2-9292-99448dab90b7</BoundTo>
+    </Compile>
+    <Compile Include="Recording\CloseAUT.UserCode.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a1c3159a-b63f-4109-843d-77661f2e8a6e</id>
+      <BoundTo>cdc39d08-af0a-49a2-9292-99448dab90b7</BoundTo>
+    </Compile>
+    <Compile Include="Recording\CloseAUT_2.cs">
+      <BoundTo>345e3583-2410-4360-8ec6-458682a37870</BoundTo>
+      <DependentUpon>CloseAUT_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e6f396f0-a497-442f-aa97-c30364e1b867</id>
+    </Compile>
+    <Compile Include="Recording\CloseAUT_2.UserCode.cs">
+      <BoundTo>345e3583-2410-4360-8ec6-458682a37870</BoundTo>
+      <DependentUpon>CloseAUT_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e1d6fbb2-e92f-43c5-a800-4775ea95a702</id>
+    </Compile>
+    <Compile Include="Recording\Kommen_einstempeln.cs">
+      <BoundTo>32bbd313-f240-4ddf-8028-a753b503c35b</BoundTo>
+      <DependentUpon>Kommen_einstempeln.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9342296a-6b18-4bec-8680-240039ca71ab</id>
+    </Compile>
+    <Compile Include="Recording\Kommen_einstempeln.UserCode.cs">
+      <BoundTo>32bbd313-f240-4ddf-8028-a753b503c35b</BoundTo>
+      <DependentUpon>Kommen_einstempeln.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c4a97ba3-aabd-4d2e-96cc-71b3930a6fec</id>
+    </Compile>
+    <Compile Include="Recording\Pause_Ende_stempeln.cs">
+      <BoundTo>de1c661a-5181-4ac9-b71f-f004a341824f</BoundTo>
+      <DependentUpon>Pause_Ende_stempeln.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>19eec969-38b6-4a46-92a9-bd9a21358df7</id>
+    </Compile>
+    <Compile Include="Recording\Pause_Ende_stempeln.UserCode.cs">
+      <BoundTo>de1c661a-5181-4ac9-b71f-f004a341824f</BoundTo>
+      <DependentUpon>Pause_Ende_stempeln.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2a4374d7-a2e8-4b95-879b-44edfabbe029</id>
+    </Compile>
+    <Compile Include="Recording\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>27aa308c-3fd6-4005-95d4-f5b620f1d1f1</id>
+      <BoundTo>fc5cca76-35f1-49ef-b3d9-e65234a6b77f</BoundTo>
+    </Compile>
+    <Compile Include="Recording\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2743964e-793b-486a-9ca6-4ac97e59d673</id>
+      <BoundTo>fc5cca76-35f1-49ef-b3d9-e65234a6b77f</BoundTo>
+    </Compile>
+    <Compile Include="Recording\StartAUT_2.cs">
+      <BoundTo>c1f08987-d8f2-4ea8-8c5a-e80a8ac1a5f8</BoundTo>
+      <DependentUpon>StartAUT_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>913b1e24-6825-48b1-a098-f87c0b615288</id>
+    </Compile>
+    <Compile Include="Recording\StartAUT_2.UserCode.cs">
+      <BoundTo>c1f08987-d8f2-4ea8-8c5a-e80a8ac1a5f8</BoundTo>
+      <DependentUpon>StartAUT_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>37f969b7-c0ca-45e2-a24a-f558bf38827c</id>
+    </Compile>
+    <Compile Include="Recording\Uhrzeit_Minuten_addieren.cs">
+      <BoundTo>b8f6647e-0147-4c93-8321-c14b866316da</BoundTo>
+      <DependentUpon>Uhrzeit_Minuten_addieren.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ce9414ef-3f12-4588-80e6-eec77e168535</id>
+    </Compile>
+    <Compile Include="Recording\Uhrzeit_Minuten_addieren.UserCode.cs">
+      <BoundTo>b8f6647e-0147-4c93-8321-c14b866316da</BoundTo>
+      <DependentUpon>Uhrzeit_Minuten_addieren.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>618746b1-3cf4-4323-8952-a09fd2df739b</id>
+    </Compile>
+    <Compile Include="Z_UHR_001Repository.cs">
+      <BoundTo>03bdb451-5388-402a-af0c-cd5d4e12131c</BoundTo>
+      <DependentUpon>Z_UHR_001Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>91f93782-d3c0-489b-ab7d-057ab49cef97</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>d8a70684-79c6-4d35-8664-676eeea3f107</id>
+    </None>
+    <None Include="Recording\Ausstempeln.rxrec">
+      <BoundTo>03bdb451-5388-402a-af0c-cd5d4e12131c</BoundTo>
+      <id>9f4a4200-24ff-421d-b01b-20227b89a87f</id>
+      <recordtableid>16dd1bb3-1cfe-4eaf-9cbc-f16fbbdeec2c</recordtableid>
+    </None>
+    <None Include="Recording\Beginn_Pause_stempeln.rxrec">
+      <BoundTo>03bdb451-5388-402a-af0c-cd5d4e12131c</BoundTo>
+      <id>92e3423d-bb57-4d3d-be27-9b29f4a05783</id>
+      <recordtableid>c372970f-69d6-4314-8529-37c06cec665c</recordtableid>
+    </None>
+    <None Include="Recording\CloseAUT.rxrec">
+      <BoundTo>03bdb451-5388-402a-af0c-cd5d4e12131c</BoundTo>
+      <id>cdc39d08-af0a-49a2-9292-99448dab90b7</id>
+      <recordtableid>6d250bd9-954d-4934-a70e-e2ebe17fd5a8</recordtableid>
+    </None>
+    <None Include="Recording\CloseAUT_2.rxrec">
+      <BoundTo>03bdb451-5388-402a-af0c-cd5d4e12131c</BoundTo>
+      <id>345e3583-2410-4360-8ec6-458682a37870</id>
+      <recordtableid>a502d9d4-84c6-4f6c-b4c0-a1905fbbe788</recordtableid>
+    </None>
+    <None Include="Recording\Kommen_einstempeln.rxrec">
+      <BoundTo>03bdb451-5388-402a-af0c-cd5d4e12131c</BoundTo>
+      <id>32bbd313-f240-4ddf-8028-a753b503c35b</id>
+      <recordtableid>018bac0c-52e2-45d6-8636-7c108442d0af</recordtableid>
+    </None>
+    <None Include="Recording\Pause_Ende_stempeln.rxrec">
+      <BoundTo>03bdb451-5388-402a-af0c-cd5d4e12131c</BoundTo>
+      <id>de1c661a-5181-4ac9-b71f-f004a341824f</id>
+      <recordtableid>0dc24657-59b3-469e-8323-5026e430e10b</recordtableid>
+    </None>
+    <None Include="Recording\StartAUT.rxrec">
+      <BoundTo>03bdb451-5388-402a-af0c-cd5d4e12131c</BoundTo>
+      <id>fc5cca76-35f1-49ef-b3d9-e65234a6b77f</id>
+      <recordtableid>725ac739-cd02-46e8-8756-fb5de5a8a71b</recordtableid>
+    </None>
+    <None Include="Recording\StartAUT_2.rxrec">
+      <BoundTo>03bdb451-5388-402a-af0c-cd5d4e12131c</BoundTo>
+      <id>c1f08987-d8f2-4ea8-8c5a-e80a8ac1a5f8</id>
+      <recordtableid>b61af7cb-8583-4626-ae0f-83b21e0e42af</recordtableid>
+    </None>
+    <None Include="Recording\Uhrzeit_Minuten_addieren.rxrec">
+      <BoundTo>03bdb451-5388-402a-af0c-cd5d4e12131c</BoundTo>
+      <id>b8f6647e-0147-4c93-8321-c14b866316da</id>
+      <recordtableid>69c0605a-1878-4cd9-b245-7615eee23f7b</recordtableid>
+    </None>
+    <None Include="Z_UHR_001Repository.rximg">
+      <BoundTo>03bdb451-5388-402a-af0c-cd5d4e12131c</BoundTo>
+      <DependentUpon>Z_UHR_001Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>431e1054-dd56-45ae-b753-ee7ad7779a8e</id>
+    </None>
+    <None Include="Z_UHR_001Repository.rxrep">
+      <id>03bdb451-5388-402a-af0c-cd5d4e12131c</id>
+      <repoid>3c0b85cd-2417-4ff9-b48f-b5fa2f23f361</repoid>
+      <reporootid>c8143800-b9ce-460d-98b2-efa268f1a137</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Z_UHR_001.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>05903517-290b-4ac3-97a8-04c1b5d74c1f</id>
+    </Content>
+    <Content Include="Z_UHR_001.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>0d53df12-4767-4a7d-81ca-46d6d39ad348</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recording">
+      <id>6b71e867-0e56-41a9-ae3d-90f45e6e4cd9</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{CB3A4C81-F598-43A4-8D4C-192A40B0ABEA}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="936b36f9-42d3-415e-8b68-56d6b9777088"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Pruefung_Eric_log_vorhanden"
+	namespace="B_ELSTER_003.recordings_notepad">
+	</codegen>
+	<variables>
+		<var
+		id="ca604ab2-58e5-40c0-9c5f-4fc721767aae"
+		name="Tagesdatum_yyyy_MM_dd">
+		</var>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="True"
+		searchpropertyid="dccd4bfa-f0bd-464f-aae9-437704da6e16">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Tagesdatum_yyyy_MM_dd">
+				</binding>
+			</bindings>
+			<info
+			id="f267a9c7-8840-458d-b1f7-d6a95db72b09"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='eric.log - Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="af68bf37-379b-46df-9553-cc0d40a5a7e1"
+	name="B_ELSTER_003Repository"
+	relativepath="..\B_ELSTER_003Repository.rxrep">
+		<codegen
+		classname="B_ELSTER_003Repository"
+		namespace="B_ELSTER_003">
+		</codegen>
+		<rootfolder
+		id="18a9f03d-2e7d-4c1b-9d0c-acfe4de16144"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Pruefung_Eric_log_vorhanden.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f9b88f9f-a88b-4cec-b721-4ddd2c6891b3"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="Z_Sum_003.Recording">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="ac3d38d4-18aa-4dc7-bf74-410d5ea12fcf">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="aad4ca9a-d951-4ef7-b83e-6048e32c6378"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmMain']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="b9f6135a-c7a5-4288-a42b-0cd159398ec2"
+	name="Z_Sum_003Repository"
+	relativepath="..\Z_Sum_003Repository.rxrep">
+		<codegen
+		classname="Z_Sum_003Repository"
+		namespace="Z_Sum_003">
+		</codegen>
+		<rootfolder
+		id="cc7e890e-e6f3-4c66-aa15-6b292be9475d"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

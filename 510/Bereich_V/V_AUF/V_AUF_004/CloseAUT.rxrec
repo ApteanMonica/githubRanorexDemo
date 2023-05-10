@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="b952f173-25ab-4aa6-8b5d-d4aa21173b36"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="V_AUF_004">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="18f03cfa-f85f-48d6-866c-9d8c563ab694">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="be3e42d9-8a1c-40c3-96b2-80622d8d02d5"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='frmAufk']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="dc265f77-4c3f-4a81-a33c-3d9b6b5f73a5"
+	name="V_AUF_004Repository"
+	relativepath="V_AUF_004Repository.rxrep">
+		<codegen
+		classname="V_AUF_004Repository"
+		namespace="V_AUF_004">
+		</codegen>
+		<rootfolder
+		id="98452358-48ef-4170-ae63-b3ced9a8df43"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

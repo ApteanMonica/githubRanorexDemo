@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="eeb97348-9467-4d37-aa96-847f965bddae"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_notepad_Eric"
+	namespace="B_ELSTER_003.recordings_notepad">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="ed04b093-ebba-417b-876d-873fefc83794">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="220171d8-8988-4a70-8125-28a3e1aabafd"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='eric.log - Editor']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="af68bf37-379b-46df-9553-cc0d40a5a7e1"
+	name="B_ELSTER_003Repository"
+	relativepath="..\B_ELSTER_003Repository.rxrep">
+		<codegen
+		classname="B_ELSTER_003Repository"
+		namespace="B_ELSTER_003">
+		</codegen>
+		<rootfolder
+		id="18a9f03d-2e7d-4c1b-9d0c-acfe4de16144"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_notepad_Eric.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

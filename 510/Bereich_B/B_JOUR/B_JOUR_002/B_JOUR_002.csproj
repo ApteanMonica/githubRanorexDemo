@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{7D595680-A824-48C6-BCFF-EC7F0F9623C7}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>B_JOUR_002</RootNamespace>
+    <AssemblyName>B_JOUR_002</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>191af87d-f6dd-4e56-b606-9fee163029ab</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>529f94f7-dc09-44c9-b1e4-ba9555b02429</id>
+    </Compile>
+    <Compile Include="B_JOUR_002Repository.cs">
+      <BoundTo>191af87d-f6dd-4e56-b606-9fee163029ab</BoundTo>
+      <DependentUpon>B_JOUR_002Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>e526b5da-fc09-455f-adcf-9f187d5e57e2</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>72aafb1f-6fa2-4d82-98da-6c0db1a9b131</id>
+    </Compile>
+    <Compile Include="Recordings\Optionen_Prueferdatei_DE_setzen.cs">
+      <DependentUpon>Optionen_Prueferdatei_DE_setzen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5a8e7ff2-9c0b-4691-8919-ca9a0ac25cd4</id>
+      <BoundTo>5e2af65c-55ca-40d2-967f-26709f5211c9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Optionen_Prueferdatei_DE_setzen.UserCode.cs">
+      <DependentUpon>Optionen_Prueferdatei_DE_setzen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>97bbf6f6-f9d2-423a-9cdc-46cfb762297c</id>
+      <BoundTo>5e2af65c-55ca-40d2-967f-26709f5211c9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_2015\Indexdatei_DE_schliessen.cs">
+      <BoundTo>5a0cf63a-e513-484c-8518-2713146cd82a</BoundTo>
+      <DependentUpon>Indexdatei_DE_schliessen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ee94771c-104e-4d3c-b08f-377c7276f7a1</id>
+    </Compile>
+    <Compile Include="Recordings_2015\Indexdatei_DE_schliessen.UserCode.cs">
+      <BoundTo>5a0cf63a-e513-484c-8518-2713146cd82a</BoundTo>
+      <DependentUpon>Indexdatei_DE_schliessen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6a2a1cf9-99e7-4b8e-9228-74b475c9d38e</id>
+    </Compile>
+    <Compile Include="Recordings_2015\Indexdatei_oeffnen.cs">
+      <DependentUpon>Indexdatei_oeffnen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2d386625-63fe-43a3-a089-7fcf401133dd</id>
+      <BoundTo>32c1735f-fe09-44ec-b124-68d17cc57c3e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_2015\Indexdatei_oeffnen.UserCode.cs">
+      <DependentUpon>Indexdatei_oeffnen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>afdc2816-5f80-4e3b-a24d-44a9ddbe279f</id>
+      <BoundTo>32c1735f-fe09-44ec-b124-68d17cc57c3e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_2015\Journalausgabe_2015_ok.cs">
+      <DependentUpon>Journalausgabe_2015_ok.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8b20215e-7b2e-4e2e-8e1e-2deb21014a7d</id>
+      <BoundTo>b1c9d4c9-a3be-4d72-9cb3-d2249c64fd31</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_2015\Journalausgabe_2015_ok.UserCode.cs">
+      <DependentUpon>Journalausgabe_2015_ok.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f60cbc88-0da6-4ab0-b1d4-097903e38198</id>
+      <BoundTo>b1c9d4c9-a3be-4d72-9cb3-d2249c64fd31</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_2015\Kontrolle_Indexdatei.cs">
+      <DependentUpon>Kontrolle_Indexdatei.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f75d2c54-b195-44e5-b5f6-0894add93ffe</id>
+      <BoundTo>a8cff2be-ef8a-42df-86b4-bce22fcb4613</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_2015\Kontrolle_Indexdatei.UserCode.cs">
+      <DependentUpon>Kontrolle_Indexdatei.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bae61ec1-ab51-4c26-995b-7f727d052016</id>
+      <BoundTo>a8cff2be-ef8a-42df-86b4-bce22fcb4613</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_2015\Pruefung_2015_journalisierte_Buchungen.cs">
+      <DependentUpon>Pruefung_2015_journalisierte_Buchungen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dbde9ff3-dbe1-4382-b33c-eb7dac229123</id>
+      <BoundTo>f164fc8a-5c66-4113-a249-149c5d572492</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_2015\Pruefung_2015_journalisierte_Buchungen.UserCode.cs">
+      <DependentUpon>Pruefung_2015_journalisierte_Buchungen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b50e616f-f74e-44ad-bcca-99638ce63017</id>
+      <BoundTo>f164fc8a-5c66-4113-a249-149c5d572492</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_2015\Pruferdatei_2015_schliessen.cs">
+      <BoundTo>ecfb6cee-f45d-4559-a04c-11674fedfe7d</BoundTo>
+      <DependentUpon>Pruferdatei_2015_schliessen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>521424cb-b785-4bf5-8da0-345fd65a4071</id>
+    </Compile>
+    <Compile Include="Recordings_2015\Pruferdatei_2015_schliessen.UserCode.cs">
+      <BoundTo>ecfb6cee-f45d-4559-a04c-11674fedfe7d</BoundTo>
+      <DependentUpon>Pruferdatei_2015_schliessen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e20716d7-b0c5-468c-b0db-110a78875d8e</id>
+    </Compile>
+    <Compile Include="Recordings_2018\Indexdatei_loeschen.cs">
+      <BoundTo>cc66be66-d18d-44ab-aebf-602d3eeb96eb</BoundTo>
+      <DependentUpon>Indexdatei_loeschen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>77b82698-a92c-48cb-a937-ab7ba0925538</id>
+    </Compile>
+    <Compile Include="Recordings_2018\Indexdatei_loeschen.UserCode.cs">
+      <BoundTo>cc66be66-d18d-44ab-aebf-602d3eeb96eb</BoundTo>
+      <DependentUpon>Indexdatei_loeschen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9bcb718d-51ce-4c00-bd61-1f4113761c0f</id>
+    </Compile>
+    <Compile Include="Recordings_2018\Journalausgabe_2018_Fehler.cs">
+      <BoundTo>3d2ed31e-3f48-4e6a-9e1f-43b51e4b5ff3</BoundTo>
+      <DependentUpon>Journalausgabe_2018_Fehler.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>65a50214-82d6-4a4e-b5c2-d32743d8ed95</id>
+    </Compile>
+    <Compile Include="Recordings_2018\Journalausgabe_2018_Fehler.UserCode.cs">
+      <BoundTo>3d2ed31e-3f48-4e6a-9e1f-43b51e4b5ff3</BoundTo>
+      <DependentUpon>Journalausgabe_2018_Fehler.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>efedfa81-e696-4bd0-87ca-d7074e3be1b8</id>
+    </Compile>
+    <Compile Include="Recordings_2018\Pruefung_2018_journalisierte_Buchungen.cs">
+      <BoundTo>f14e526a-2b56-4b55-bb1a-c4dbf6a2f11a</BoundTo>
+      <DependentUpon>Pruefung_2018_journalisierte_Buchungen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>302b45b6-fd46-4f7e-b0a2-09ec148a8685</id>
+    </Compile>
+    <Compile Include="Recordings_2018\Pruefung_2018_journalisierte_Buchungen.UserCode.cs">
+      <BoundTo>f14e526a-2b56-4b55-bb1a-c4dbf6a2f11a</BoundTo>
+      <DependentUpon>Pruefung_2018_journalisierte_Buchungen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a2eb38e0-bb6b-46e5-96ad-82a36dd9f687</id>
+    </Compile>
+    <Compile Include="Recordings_2015\Kontrolle_Prueferdatei_2015.cs">
+      <DependentUpon>Kontrolle_Prueferdatei_2015.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1fe67739-a287-4525-83df-60f3b67c9f03</id>
+      <BoundTo>6c7faaa8-4485-4476-9f7a-864204827b5a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_2015\Kontrolle_Prueferdatei_2015.UserCode.cs">
+      <DependentUpon>Kontrolle_Prueferdatei_2015.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>643bd9fc-3b09-49fb-9910-d2b1e7069115</id>
+      <BoundTo>6c7faaa8-4485-4476-9f7a-864204827b5a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_2015\Prueferdatei_oeffnen.cs">
+      <DependentUpon>Prueferdatei_oeffnen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5082bfb1-99ba-4508-a7ec-188dbb413c18</id>
+      <BoundTo>a8b4053e-4553-4b5e-b387-7aa5b979268a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_2015\Prueferdatei_oeffnen.UserCode.cs">
+      <DependentUpon>Prueferdatei_oeffnen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>23b7ce5e-0dbd-4cd5-8c75-3cbae93427b0</id>
+      <BoundTo>a8b4053e-4553-4b5e-b387-7aa5b979268a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>03e466bc-49ee-473d-bdd1-b69f64678069</id>
+      <BoundTo>5a66ab1c-a788-4fc9-8be4-d4047f727868</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT.UserCode.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d5b1cd5c-91b1-45cf-af69-27dbfb9ac5ee</id>
+      <BoundTo>5a66ab1c-a788-4fc9-8be4-d4047f727868</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Journalcheck_Optionen_zurueck.cs">
+      <DependentUpon>Journalcheck_Optionen_zurueck.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4c0a0113-1073-41e3-bba5-ca0fb829833c</id>
+      <BoundTo>0af393b5-dac1-44e6-bde0-c178caa00446</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Journalcheck_Optionen_zurueck.UserCode.cs">
+      <DependentUpon>Journalcheck_Optionen_zurueck.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dee8dd18-d5d5-480a-b21a-c11a7ae9ffc6</id>
+      <BoundTo>0af393b5-dac1-44e6-bde0-c178caa00446</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ec4f80ee-3de9-46fd-98b8-de49b12ac440</id>
+      <BoundTo>afb8a1bd-b2e2-46b9-a041-f1abf7f19066</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ade69adb-68b6-4d63-9ab6-7df544b1923d</id>
+      <BoundTo>afb8a1bd-b2e2-46b9-a041-f1abf7f19066</BoundTo>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>d80bf624-014e-4bb4-8ce7-d26f42210ba9</id>
+    </None>
+    <None Include="B_JOUR_002Repository.rximg">
+      <BoundTo>191af87d-f6dd-4e56-b606-9fee163029ab</BoundTo>
+      <DependentUpon>B_JOUR_002Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>4b2132ca-335e-44be-96de-cc1725e63a72</id>
+    </None>
+    <None Include="B_JOUR_002Repository.rxrep">
+      <id>191af87d-f6dd-4e56-b606-9fee163029ab</id>
+      <repoid>989dae6e-b8c0-4597-b1d7-a459a0d0a7cf</repoid>
+      <reporootid>175d71ac-c82d-4c24-aa01-605b12e0bf23</reporootid>
+    </None>
+    <None Include="Recordings\Optionen_Prueferdatei_DE_setzen.rxrec">
+      <id>5e2af65c-55ca-40d2-967f-26709f5211c9</id>
+      <recordtableid>2f03c7ce-b454-4074-8b39-af3cf1659614</recordtableid>
+      <BoundTo>191af87d-f6dd-4e56-b606-9fee163029ab</BoundTo>
+    </None>
+    <None Include="Recordings_2015\Indexdatei_DE_schliessen.rxrec">
+      <BoundTo>191af87d-f6dd-4e56-b606-9fee163029ab</BoundTo>
+      <id>5a0cf63a-e513-484c-8518-2713146cd82a</id>
+      <recordtableid>75cf36ed-27ae-4074-8d17-849b32bd9836</recordtableid>
+    </None>
+    <None Include="Recordings_2015\Indexdatei_oeffnen.rxrec">
+      <id>32c1735f-fe09-44ec-b124-68d17cc57c3e</id>
+      <recordtableid>ff0a5a05-2945-4bf1-a9cc-5bfa4ff0fcf0</recordtableid>
+      <BoundTo>191af87d-f6dd-4e56-b606-9fee163029ab</BoundTo>
+    </None>
+    <None Include="Recordings_2015\Journalausgabe_2015_ok.rxrec">
+      <BoundTo>191af87d-f6dd-4e56-b606-9fee163029ab</BoundTo>
+      <id>b1c9d4c9-a3be-4d72-9cb3-d2249c64fd31</id>
+      <recordtableid>2979ffbb-9efd-468e-aef1-0ac15642eb91</recordtableid>
+    </None>
+    <None Include="Recordings_2015\Kontrolle_Indexdatei.rxrec">
+      <id>a8cff2be-ef8a-42df-86b4-bce22fcb4613</id>
+      <recordtableid>3ad85349-5fa0-41b3-b8e7-71d6ee8b9c01</recordtableid>
+      <BoundTo>191af87d-f6dd-4e56-b606-9fee163029ab</BoundTo>
+    </None>
+    <None Include="Recordings_2015\Pruefung_2015_journalisierte_Buchungen.rxrec">
+      <BoundTo>191af87d-f6dd-4e56-b606-9fee163029ab</BoundTo>
+      <id>f164fc8a-5c66-4113-a249-149c5d572492</id>
+      <recordtableid>3a6c3842-a785-4db2-8834-1610ee6889e2</recordtableid>
+    </None>
+    <None Include="Recordings_2015\Pruferdatei_2015_schliessen.rxrec">
+      <BoundTo>191af87d-f6dd-4e56-b606-9fee163029ab</BoundTo>
+      <id>ecfb6cee-f45d-4559-a04c-11674fedfe7d</id>
+      <recordtableid>6924a4f5-15cc-4cc1-a62d-94b1a06a2837</recordtableid>
+    </None>
+    <None Include="Recordings_2018\Indexdatei_loeschen.rxrec">
+      <BoundTo>191af87d-f6dd-4e56-b606-9fee163029ab</BoundTo>
+      <id>cc66be66-d18d-44ab-aebf-602d3eeb96eb</id>
+      <recordtableid>e4fd2125-0e88-4523-b9fe-ed126f0e9354</recordtableid>
+    </None>
+    <None Include="Recordings_2018\Journalausgabe_2018_Fehler.rxrec">
+      <BoundTo>191af87d-f6dd-4e56-b606-9fee163029ab</BoundTo>
+      <id>3d2ed31e-3f48-4e6a-9e1f-43b51e4b5ff3</id>
+      <recordtableid>efda6f4a-088c-4995-ad18-5522e4de6e11</recordtableid>
+    </None>
+    <None Include="Recordings_2018\Pruefung_2018_journalisierte_Buchungen.rxrec">
+      <BoundTo>191af87d-f6dd-4e56-b606-9fee163029ab</BoundTo>
+      <id>f14e526a-2b56-4b55-bb1a-c4dbf6a2f11a</id>
+      <recordtableid>2f9b1d84-8e12-4484-8ea9-a6022ce6bec0</recordtableid>
+    </None>
+    <None Include="Recordings_2015\Kontrolle_Prueferdatei_2015.rxrec">
+      <id>6c7faaa8-4485-4476-9f7a-864204827b5a</id>
+      <recordtableid>17a78d42-be4f-4997-815f-bff7e1940f2d</recordtableid>
+      <BoundTo>191af87d-f6dd-4e56-b606-9fee163029ab</BoundTo>
+    </None>
+    <None Include="Recordings_2015\Prueferdatei_oeffnen.rxrec">
+      <id>a8b4053e-4553-4b5e-b387-7aa5b979268a</id>
+      <recordtableid>1bdb30d8-bf3e-48f6-80d3-22e2a9d0bbf9</recordtableid>
+      <BoundTo>191af87d-f6dd-4e56-b606-9fee163029ab</BoundTo>
+    </None>
+    <None Include="Recordings\CloseAUT.rxrec">
+      <id>5a66ab1c-a788-4fc9-8be4-d4047f727868</id>
+      <recordtableid>68e525f3-20ca-4714-a261-d2e81187766a</recordtableid>
+      <BoundTo>191af87d-f6dd-4e56-b606-9fee163029ab</BoundTo>
+    </None>
+    <None Include="Recordings\Journalcheck_Optionen_zurueck.rxrec">
+      <id>0af393b5-dac1-44e6-bde0-c178caa00446</id>
+      <recordtableid>f7c79d4f-59e1-47cc-b83f-dc29196d23e6</recordtableid>
+      <BoundTo>191af87d-f6dd-4e56-b606-9fee163029ab</BoundTo>
+    </None>
+    <None Include="Recordings\StartAUT.rxrec">
+      <id>afb8a1bd-b2e2-46b9-a041-f1abf7f19066</id>
+      <recordtableid>ba66bd4c-c838-4819-9c43-11223097eff6</recordtableid>
+      <BoundTo>191af87d-f6dd-4e56-b606-9fee163029ab</BoundTo>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="B_JOUR_002.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>829f802b-301b-4d87-87df-f82c464dfe86</id>
+    </Content>
+    <Content Include="B_JOUR_002.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>1d42cad6-8536-4496-b760-8793cf1dfc79</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings_2018">
+      <id>4a5a3fdf-63f3-4c81-8462-f837d182d362</id>
+    </Folder>
+    <Folder Include="Recordings_2015">
+      <id>d06dbcd9-d13d-48ee-8ed5-614abf6126a4</id>
+    </Folder>
+    <Folder Include="Recordings">
+      <id>4ed0feb4-1906-4973-b92c-5a73ba0b2f5a</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{BBA54D33-BDAA-44A6-B151-9F4F44C56B18}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e2b17c1d-4cca-47e2-84a7-01cb9f8bbf76"
+mode="Global"
+rxversion="8.3">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="RS2_Start"
+	namespace="Servicecenter.Recordings.RS2">
+	</codegen>
+	<variables>
+		<var
+		id="1ebd13c9-f664-45b6-bb9c-31bfe97e1d36"
+		name="Supportprogramm">
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="FileName"
+				variable="Supportprogramm">
+				</binding>
+			</bindings>
+			<filename>
+				yourapp
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="7a280dfe-8eb0-4a7b-b7cb-2748caf4d774"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1f2f540a-fd8a-40af-919a-2d3fa5580b5c"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form/titlebar[@accessiblerole='TitleBar' and @accessiblevalue='[RS]  Ticketverwaltung - [Bearbeiter: MAR]']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="f7deb4a7-2771-4c20-903d-bc17047e2b6a"
+	name="ServicecenterRepository"
+	relativepath="..\..\ServicecenterRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="ServicecenterRepository"
+		namespace="Servicecenter">
+		</codegen>
+		<rootfolder
+		id="e5a69c28-9dbf-43c2-b940-3a3d711f721c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		RS2_Start.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\..\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll
+		</reference>
+	</references>
+</recordtable>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="6924a4f5-15cc-4cc1-a62d-94b1a06a2837"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Pruferdatei_2015_schliessen"
+	namespace="B_JOUR_002.Recordings_2015">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="eaf1cc1a-43a8-424c-9bd8-c0e3c578caf8">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="794096c5-63e6-4ab0-baaa-e58be5420154"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title&gt;'b_JOUR_001_journal_DE_vorlaeufig_2015.txt']/titlebar[@accessiblerole='TitleBar']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="989dae6e-b8c0-4597-b1d7-a459a0d0a7cf"
+	name="B_JOUR_002Repository"
+	relativepath="..\B_JOUR_002Repository.rxrep">
+		<codegen
+		classname="B_JOUR_002Repository"
+		namespace="B_JOUR_002">
+		</codegen>
+		<rootfolder
+		id="175d71ac-c82d-4c24-aa01-605b12e0bf23"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Pruferdatei_2015_schliessen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

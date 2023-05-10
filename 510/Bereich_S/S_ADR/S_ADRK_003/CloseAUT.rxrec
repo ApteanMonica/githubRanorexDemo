@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="65c72103-1b68-4bc0-ba61-fb3dbda805af"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="S_ADRK_003">
+	</codegen>
+	<variables>
+		<var
+		id="792ddb00-7761-45a0-8021-8fcf8047f07c"
+		name="CloseAutProcessIDVar">
+			-1
+		</var>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="500ms"
+		method="CloseWindowByProcessID"
+		optional="False"
+		searchpropertyid="f3e712c7-23d2-4083-8c1b-9bf71c33a3a7">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ProcessID"
+				variable="CloseAutProcessIDVar">
+				</binding>
+			</bindings>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="7ed60436-15c2-4b73-aaea-c49366376a5c"
+	name="S_ADRK_003Repository"
+	relativepath="S_ADRK_003Repository.rxrep">
+		<codegen
+		classname="S_ADRK_003Repository"
+		namespace="S_ADRK_003">
+		</codegen>
+		<rootfolder
+		id="98b0f616-e959-4277-ac59-2b1d206e1090"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

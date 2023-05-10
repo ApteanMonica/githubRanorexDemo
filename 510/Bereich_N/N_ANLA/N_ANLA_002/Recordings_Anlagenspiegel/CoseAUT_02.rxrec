@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="704393e1-4ffa-4fa6-be57-a21e6d95b5d6"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CoseAUT_02"
+	namespace="N_ANLA_002.Recordings_Anlagenspiegel">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="6502595b-07e0-49e7-8364-c9ba49646de0">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0c682a04-20eb-490d-9b4b-76951ef68a64"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmSpiegel']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="3d6a8bc8-f2b8-4902-ad52-866708932bbe"
+	name="N_ANLA_002Repository"
+	relativepath="..\N_ANLA_002Repository.rxrep">
+		<codegen
+		classname="N_ANLA_002Repository"
+		namespace="N_ANLA_002">
+		</codegen>
+		<rootfolder
+		id="d4e3ee81-af42-42de-8328-2ded60767592"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CoseAUT_02.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

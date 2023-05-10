@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="befadfb9-4912-466c-bf54-f5f5c4010175"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT2"
+	namespace="E_ANFK_001.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="505c3fda-b586-406a-a54e-a05090c84b62">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1947b60b-eebb-4a9d-8dd5-c338e31402cd"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title&gt;'Serienbriefe1 [Kompatibilit&#228;tsmodus]']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="06386b9e-5838-47ce-8c4c-e250e77b664a"
+	name="E_ANFK_001Repository"
+	relativepath="..\E_ANFK_001Repository.rxrep">
+		<codegen
+		classname="E_ANFK_001Repository"
+		namespace="E_ANFK_001">
+		</codegen>
+		<rootfolder
+		id="2ccbeb89-0a35-4148-9b80-e5472533bee5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT2.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

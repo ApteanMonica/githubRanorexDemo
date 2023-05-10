@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="666876d5-aa4d-4dcf-9f0d-0873286db28b"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Druck_UVA_Werte_schliessen"
+	namespace="B_UVA_003.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="66fac1aa-3313-4bf8-aa7e-6ea4b12560db">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8642b044-c506-4de9-b977-3ce5704c9b51"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgUVA_druck']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<keyitem
+		action="Press"
+		data="F4, Alt"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="a552b04b-3553-4968-8acb-bd411c784ab2"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8642b044-c506-4de9-b977-3ce5704c9b51"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="19"
+				prefcap="titlebar"
+				rect="-1225,89,452,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[200]  Druck UVA-Werte
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[200]  Druck UVA-Werte
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='dlgUVA_druck']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keyitem>
+	</recorditems>
+	<repository
+	id="9d3c394a-881d-4d2c-bc11-6664a5e59db0"
+	name="B_UVA_003Repository"
+	relativepath="..\B_UVA_003Repository.rxrep">
+		<codegen
+		classname="B_UVA_003Repository"
+		namespace="B_UVA_003">
+		</codegen>
+		<rootfolder
+		id="68b93a59-aff4-4d61-bfdf-c7dbd37054ff"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Druck_UVA_Werte_schliessen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

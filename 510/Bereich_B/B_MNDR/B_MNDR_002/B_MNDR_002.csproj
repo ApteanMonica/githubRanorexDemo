@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{DAA678FC-1150-4F21-AD01-D6C03DFFD7B1}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>B_MNDR_002</RootNamespace>
+    <AssemblyName>B_MNDR_002</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>ae486276-cec8-42c1-a701-fe67e1868b96</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>fcd03ac7-d195-4436-9e89-02599c66c8ed</id>
+    </Compile>
+    <Compile Include="B_MNDR_002Repository.cs">
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+      <DependentUpon>B_MNDR_002Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>c328cbfb-3924-4a42-8646-f6ecd64abc0d</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>7b218319-14d8-434f-9cfd-4c160fcd785a</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e71a8f80-c63b-475d-a287-d39a2242b02b</id>
+      <BoundTo>c5e70301-a962-4728-aab7-ea9e80afb856</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT.UserCode.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6483d5d1-7832-414d-b9ce-a52ad9c8582d</id>
+      <BoundTo>c5e70301-a962-4728-aab7-ea9e80afb856</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\OPs_aendern_Mahnstufe_Mahnkennzeichen.cs">
+      <BoundTo>c23734d5-1c6c-45cb-a4f3-cdc9747c966d</BoundTo>
+      <DependentUpon>OPs_aendern_Mahnstufe_Mahnkennzeichen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d37c3981-8f20-43e9-8b80-d0160092214f</id>
+    </Compile>
+    <Compile Include="Recordings\OPs_aendern_Mahnstufe_Mahnkennzeichen.UserCode.cs">
+      <BoundTo>c23734d5-1c6c-45cb-a4f3-cdc9747c966d</BoundTo>
+      <DependentUpon>OPs_aendern_Mahnstufe_Mahnkennzeichen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0700130b-0140-47e3-b3c3-152b41a0882d</id>
+    </Compile>
+    <Compile Include="Recordings\Mahnvorschlag_pruefen.cs">
+      <BoundTo>ebceef1d-4ffa-4dbb-b7c7-4efdf4bd9d56</BoundTo>
+      <DependentUpon>Mahnvorschlag_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dbcb7222-bdfe-4d3a-982d-f0b0460b0373</id>
+    </Compile>
+    <Compile Include="Recordings\Mahnvorschlag_pruefen.UserCode.cs">
+      <BoundTo>ebceef1d-4ffa-4dbb-b7c7-4efdf4bd9d56</BoundTo>
+      <DependentUpon>Mahnvorschlag_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>449f9ff6-5d31-4946-a5c1-d47c64772992</id>
+    </Compile>
+    <Compile Include="Recordings\Maske_schliessen_Mahnvorschlag_aendern.cs">
+      <DependentUpon>Maske_schliessen_Mahnvorschlag_aendern.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>62aa7ef9-d526-49fc-a051-8956afeb7fdb</id>
+      <BoundTo>0048bed5-e8ab-4dc1-a04d-6cbb2aba05b6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Maske_schliessen_Mahnvorschlag_aendern.UserCode.cs">
+      <DependentUpon>Maske_schliessen_Mahnvorschlag_aendern.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4f7a3088-9ba6-4177-85db-d056b2c72268</id>
+      <BoundTo>0048bed5-e8ab-4dc1-a04d-6cbb2aba05b6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\UEberpruefung_OPs_Kunde_1.cs">
+      <BoundTo>41e16881-3c76-45df-ad08-acd4252aeb59</BoundTo>
+      <DependentUpon>UEberpruefung_OPs_Kunde_1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>548afa6c-d6d0-420e-ac07-97aa758e71c5</id>
+    </Compile>
+    <Compile Include="Recordings\UEberpruefung_OPs_Kunde_1.UserCode.cs">
+      <BoundTo>41e16881-3c76-45df-ad08-acd4252aeb59</BoundTo>
+      <DependentUpon>UEberpruefung_OPs_Kunde_1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>98d1a407-6589-4e52-8d1e-6cdf3c751d85</id>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5c2fb4e5-c9f6-4585-ad2f-bacc0c75505f</id>
+      <BoundTo>b1d73fac-f7ff-40b4-84bb-52672d27ebae</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2c1f92ff-3456-442a-951a-9d3bdec16d5a</id>
+      <BoundTo>b1d73fac-f7ff-40b4-84bb-52672d27ebae</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Ueberpruefung_OPs_Kunde_2.cs">
+      <BoundTo>cace1820-c481-4ffd-9611-916e98910d7d</BoundTo>
+      <DependentUpon>Ueberpruefung_OPs_Kunde_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>16b0c347-5bee-4a13-960f-dbae26e6fb4c</id>
+    </Compile>
+    <Compile Include="Recordings\Ueberpruefung_OPs_Kunde_2.UserCode.cs">
+      <BoundTo>cace1820-c481-4ffd-9611-916e98910d7d</BoundTo>
+      <DependentUpon>Ueberpruefung_OPs_Kunde_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>86020cef-dd23-4252-9d2c-655ac2e2c5db</id>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\CloseAUT_2.cs">
+      <DependentUpon>CloseAUT_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5d2a3ac1-5bf2-4929-8765-fc05c0fbed85</id>
+      <BoundTo>588247ad-3f89-432c-a49f-5ffc365c1799</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\CloseAUT_2.UserCode.cs">
+      <DependentUpon>CloseAUT_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>054b9cb2-b326-4784-8376-ffbfe9a04434</id>
+      <BoundTo>588247ad-3f89-432c-a49f-5ffc365c1799</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\Aufruf_B_KLAB_Kunde_1.cs">
+      <BoundTo>1a7f41f9-f602-478a-85cb-d814694376cd</BoundTo>
+      <DependentUpon>Aufruf_B_KLAB_Kunde_1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ba8fc978-14d4-4551-8373-a46ed5e012b8</id>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\Aufruf_B_KLAB_Kunde_1.UserCode.cs">
+      <BoundTo>1a7f41f9-f602-478a-85cb-d814694376cd</BoundTo>
+      <DependentUpon>Aufruf_B_KLAB_Kunde_1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>276b15d2-37f4-47bb-b8d7-879720afc74d</id>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\Aufruf_B_KLAB_Kunde_2.cs">
+      <BoundTo>181b95a4-6f3d-41dc-a71a-9b3466c886a6</BoundTo>
+      <DependentUpon>Aufruf_B_KLAB_Kunde_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e3f18b87-fb50-4bac-a6c5-284bc3f683f3</id>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\Aufruf_B_KLAB_Kunde_2.UserCode.cs">
+      <BoundTo>181b95a4-6f3d-41dc-a71a-9b3466c886a6</BoundTo>
+      <DependentUpon>Aufruf_B_KLAB_Kunde_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>72381035-0c9b-48cf-a61a-f84586b06242</id>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\OP_Kontrolle_Kunde_1.cs">
+      <BoundTo>296d0df6-f862-4e7e-8882-60a654d16c91</BoundTo>
+      <DependentUpon>OP_Kontrolle_Kunde_1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7f24abe7-9658-46b5-8022-517502e8b73b</id>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\OP_Kontrolle_Kunde_1.UserCode.cs">
+      <BoundTo>296d0df6-f862-4e7e-8882-60a654d16c91</BoundTo>
+      <DependentUpon>OP_Kontrolle_Kunde_1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dd7bc68e-61fb-481c-8589-89c3f58a161d</id>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\OP_Kontrolle_Kunde_2.cs">
+      <BoundTo>e384cb6d-b758-4767-bb38-ce7d5cef45ad</BoundTo>
+      <DependentUpon>OP_Kontrolle_Kunde_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5532d49a-b1e5-4388-a8d1-368f5fee08b8</id>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\OP_Kontrolle_Kunde_2.UserCode.cs">
+      <BoundTo>e384cb6d-b758-4767-bb38-ce7d5cef45ad</BoundTo>
+      <DependentUpon>OP_Kontrolle_Kunde_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>89086354-7284-4b54-b27c-489c49f2e109</id>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\OP_Tabelle_schliessen_und_zurueck.cs">
+      <BoundTo>0e23583a-7eea-42e6-b651-49ea6316d5d2</BoundTo>
+      <DependentUpon>OP_Tabelle_schliessen_und_zurueck.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8c06bf14-288d-421a-9178-83d951a3cad3</id>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\OP_Tabelle_schliessen_und_zurueck.UserCode.cs">
+      <BoundTo>0e23583a-7eea-42e6-b651-49ea6316d5d2</BoundTo>
+      <DependentUpon>OP_Tabelle_schliessen_und_zurueck.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5fb075c4-8fd3-4c29-a921-c47f0f8d11be</id>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\StartAUT_2.cs">
+      <DependentUpon>StartAUT_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e35c38ab-ff34-4d5d-958d-1fd0edb28cef</id>
+      <BoundTo>4f333cc1-708e-4c0b-9b14-32fc04f11544</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\StartAUT_2.UserCode.cs">
+      <DependentUpon>StartAUT_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>32834d9d-c793-4363-9059-267de5289c01</id>
+      <BoundTo>4f333cc1-708e-4c0b-9b14-32fc04f11544</BoundTo>
+    </Compile>
+    <Compile Include="Recording_Mahndruck\Druckerwechsel_Archiv_fuer_Sofortdruck.cs">
+      <DependentUpon>Druckerwechsel_Archiv_fuer_Sofortdruck.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9d69e64f-ca02-484a-81c2-3ae6e610237d</id>
+      <BoundTo>487802dd-961c-47e3-9c90-555c5896785d</BoundTo>
+    </Compile>
+    <Compile Include="Recording_Mahndruck\Druckerwechsel_Archiv_fuer_Sofortdruck.UserCode.cs">
+      <DependentUpon>Druckerwechsel_Archiv_fuer_Sofortdruck.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>26627546-bc29-43b0-8dc6-b4e10bd0fdd8</id>
+      <BoundTo>487802dd-961c-47e3-9c90-555c5896785d</BoundTo>
+    </Compile>
+    <Compile Include="Recording_Mahndruck\Drucktabelle_Druckmenue_schliessen.cs">
+      <DependentUpon>Drucktabelle_Druckmenue_schliessen.rxrec</DependentUpon>
+      <id>d18c9bc0-68bf-4903-852b-6589bb123cff</id>
+      <BoundTo>fdfaf1e0-dc7e-43f4-840f-ed51bdd51692</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recording_Mahndruck\Drucktabelle_Druckmenue_schliessen.UserCode.cs">
+      <DependentUpon>Drucktabelle_Druckmenue_schliessen.rxrec</DependentUpon>
+      <id>adeee692-520f-417d-8e03-779f6c88b2a8</id>
+      <BoundTo>fdfaf1e0-dc7e-43f4-840f-ed51bdd51692</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recording_Mahndruck\Mahndruck_Kunde_1_einschraenken.cs">
+      <DependentUpon>Mahndruck_Kunde_1_einschraenken.rxrec</DependentUpon>
+      <id>4108e44e-fc27-4aee-98b0-e087ec26b91b</id>
+      <BoundTo>cfb54bb6-e8e9-4f57-8792-e9820e7a0fed</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recording_Mahndruck\Mahndruck_Kunde_1_einschraenken.UserCode.cs">
+      <DependentUpon>Mahndruck_Kunde_1_einschraenken.rxrec</DependentUpon>
+      <id>5eb5e4be-6687-4c8b-9f48-5f66937e4c6a</id>
+      <BoundTo>cfb54bb6-e8e9-4f57-8792-e9820e7a0fed</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recording_Mahndruck\Mahndruck_Kunde_1_Tabelle_pruefen.cs">
+      <DependentUpon>Mahndruck_Kunde_1_Tabelle_pruefen.rxrec</DependentUpon>
+      <id>76277ce3-e552-465c-96c7-858c8c66e27e</id>
+      <BoundTo>b6f19f29-e380-45c4-add1-8e012217e897</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recording_Mahndruck\Mahndruck_Kunde_1_Tabelle_pruefen.UserCode.cs">
+      <DependentUpon>Mahndruck_Kunde_1_Tabelle_pruefen.rxrec</DependentUpon>
+      <id>ce079079-8253-4896-b99c-e957a9f5dc57</id>
+      <BoundTo>b6f19f29-e380-45c4-add1-8e012217e897</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recording_Mahndruck\Mahndruck_Kunde_2_einschraenken.cs">
+      <DependentUpon>Mahndruck_Kunde_2_einschraenken.rxrec</DependentUpon>
+      <id>39d3febf-6b08-4902-b2e7-2f4442714b80</id>
+      <BoundTo>2df46566-af2a-40c2-96be-3c87d93cc158</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recording_Mahndruck\Mahndruck_Kunde_2_einschraenken.UserCode.cs">
+      <DependentUpon>Mahndruck_Kunde_2_einschraenken.rxrec</DependentUpon>
+      <id>8160edf4-a87b-49be-9312-d07e24063b5a</id>
+      <BoundTo>2df46566-af2a-40c2-96be-3c87d93cc158</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recording_Mahndruck\Mahndruck_Kunde_2_Tabelle_pruefen.cs">
+      <DependentUpon>Mahndruck_Kunde_2_Tabelle_pruefen.rxrec</DependentUpon>
+      <id>e18a263b-7151-4e4e-b147-9ec3237d68d2</id>
+      <BoundTo>c8a1c48c-7768-49e0-8bfc-dfca4e2579d0</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recording_Mahndruck\Mahndruck_Kunde_2_Tabelle_pruefen.UserCode.cs">
+      <DependentUpon>Mahndruck_Kunde_2_Tabelle_pruefen.rxrec</DependentUpon>
+      <id>d0addacd-a0c0-45ee-8547-c5cb28d4175a</id>
+      <BoundTo>c8a1c48c-7768-49e0-8bfc-dfca4e2579d0</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recording_Mahndruck\Mahnungen_Sofortdruck_Archiv.cs">
+      <DependentUpon>Mahnungen_Sofortdruck_Archiv.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f3347fe7-db8d-4e93-ad9d-31e3c4c6558f</id>
+      <BoundTo>db3c1d72-78d6-4972-b748-481d81a0143c</BoundTo>
+    </Compile>
+    <Compile Include="Recording_Mahndruck\Mahnungen_Sofortdruck_Archiv.UserCode.cs">
+      <DependentUpon>Mahnungen_Sofortdruck_Archiv.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aa4c472e-531d-4f2f-a7e6-427e6b41a3fa</id>
+      <BoundTo>db3c1d72-78d6-4972-b748-481d81a0143c</BoundTo>
+    </Compile>
+    <Compile Include="Recording_Mahndruck\Mahnung_drucken_aufrufen.cs">
+      <DependentUpon>Mahnung_drucken_aufrufen.rxrec</DependentUpon>
+      <id>17d4f00b-60e4-427e-a0d9-f31da71e0943</id>
+      <BoundTo>2633e4aa-449b-4810-bb7b-677efe86515d</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recording_Mahndruck\Mahnung_drucken_aufrufen.UserCode.cs">
+      <DependentUpon>Mahnung_drucken_aufrufen.rxrec</DependentUpon>
+      <id>ccd2209d-d707-46f6-a6ac-2bcba4886395</id>
+      <BoundTo>2633e4aa-449b-4810-bb7b-677efe86515d</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recording_Mahndruck\Meldung_pruefen_bestaetigen.cs">
+      <DependentUpon>Meldung_pruefen_bestaetigen.rxrec</DependentUpon>
+      <id>d215b450-bf13-4eb1-947f-b1b36bfcd7cf</id>
+      <BoundTo>d61f5d93-e55f-4a6f-95db-4bba55f4949e</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recording_Mahndruck\Meldung_pruefen_bestaetigen.UserCode.cs">
+      <DependentUpon>Meldung_pruefen_bestaetigen.rxrec</DependentUpon>
+      <id>08854b8b-f1e4-4a51-a4b1-077e0a537ae6</id>
+      <BoundTo>d61f5d93-e55f-4a6f-95db-4bba55f4949e</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recording_Mahndruck\Start_Druck_Bildschirm_Ausgabe_Tabelle.cs">
+      <DependentUpon>Start_Druck_Bildschirm_Ausgabe_Tabelle.rxrec</DependentUpon>
+      <id>2145cd81-40d6-416b-9356-5a0cbaf1536c</id>
+      <BoundTo>89cde755-dedd-4677-ade8-aa61f9ce077d</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Recording_Mahndruck\Start_Druck_Bildschirm_Ausgabe_Tabelle.UserCode.cs">
+      <DependentUpon>Start_Druck_Bildschirm_Ausgabe_Tabelle.rxrec</DependentUpon>
+      <id>5e329992-11af-4113-825b-e390eed8f2ae</id>
+      <BoundTo>89cde755-dedd-4677-ade8-aa61f9ce077d</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>74ef66b8-0504-4b39-8f0c-60869800041e</id>
+    </None>
+    <None Include="B_MNDR_002Repository.rximg">
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+      <DependentUpon>B_MNDR_002Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>85ce7e2a-f855-4ff5-b2a0-fa0e4881bba2</id>
+    </None>
+    <None Include="B_MNDR_002Repository.rxrep">
+      <id>ae486276-cec8-42c1-a701-fe67e1868b96</id>
+      <repoid>e963c4ea-f8e9-4a01-91a9-2c2e72eb760c</repoid>
+      <reporootid>458b8b8f-3c9f-4152-b4e0-b9284895be86</reporootid>
+    </None>
+    <None Include="Recordings\CloseAUT.rxrec">
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+      <id>c5e70301-a962-4728-aab7-ea9e80afb856</id>
+      <recordtableid>d0f5dc8b-319d-42d3-83c1-0b6c11564c86</recordtableid>
+    </None>
+    <None Include="Recordings\OPs_aendern_Mahnstufe_Mahnkennzeichen.rxrec">
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+      <id>c23734d5-1c6c-45cb-a4f3-cdc9747c966d</id>
+      <recordtableid>e15ace0a-0d19-4e72-af4a-28247fc1b125</recordtableid>
+    </None>
+    <None Include="Recordings\Mahnvorschlag_pruefen.rxrec">
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+      <id>ebceef1d-4ffa-4dbb-b7c7-4efdf4bd9d56</id>
+      <recordtableid>dc0beea1-e889-4339-984c-4c294c983cdc</recordtableid>
+    </None>
+    <None Include="Recordings\Maske_schliessen_Mahnvorschlag_aendern.rxrec">
+      <id>0048bed5-e8ab-4dc1-a04d-6cbb2aba05b6</id>
+      <recordtableid>4844e4b9-0ab7-4c08-b3ae-fd573506933f</recordtableid>
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+    </None>
+    <None Include="Recordings\UEberpruefung_OPs_Kunde_1.rxrec">
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+      <id>41e16881-3c76-45df-ad08-acd4252aeb59</id>
+      <recordtableid>44787f1e-790a-4884-b937-36580451a471</recordtableid>
+    </None>
+    <None Include="Recordings\StartAUT.rxrec">
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+      <id>b1d73fac-f7ff-40b4-84bb-52672d27ebae</id>
+      <recordtableid>8c2a86c1-cca0-43bc-bb5f-93a697f6220f</recordtableid>
+    </None>
+    <None Include="Recordings\Ueberpruefung_OPs_Kunde_2.rxrec">
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+      <id>cace1820-c481-4ffd-9611-916e98910d7d</id>
+      <recordtableid>bb9dc546-38ec-4d6e-9d87-d5b90fbe9203</recordtableid>
+    </None>
+    <None Include="Recordings_B_KLAB\CloseAUT_2.rxrec">
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+      <id>588247ad-3f89-432c-a49f-5ffc365c1799</id>
+      <recordtableid>841534a1-7dfb-493c-be71-a2d4e17c927d</recordtableid>
+    </None>
+    <None Include="Recordings_B_KLAB\Aufruf_B_KLAB_Kunde_1.rxrec">
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+      <id>1a7f41f9-f602-478a-85cb-d814694376cd</id>
+      <recordtableid>4761f90b-cf18-4482-a634-6861bfdbbb4d</recordtableid>
+    </None>
+    <None Include="Recordings_B_KLAB\Aufruf_B_KLAB_Kunde_2.rxrec">
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+      <id>181b95a4-6f3d-41dc-a71a-9b3466c886a6</id>
+      <recordtableid>dd2cb1d4-c744-4ac2-b9e6-5cf7b8ecdf2a</recordtableid>
+    </None>
+    <None Include="Recordings_B_KLAB\OP_Kontrolle_Kunde_1.rxrec">
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+      <id>296d0df6-f862-4e7e-8882-60a654d16c91</id>
+      <recordtableid>83ec9704-2885-4537-b3f2-97b179ca5e94</recordtableid>
+    </None>
+    <None Include="Recordings_B_KLAB\OP_Kontrolle_Kunde_2.rxrec">
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+      <id>e384cb6d-b758-4767-bb38-ce7d5cef45ad</id>
+      <recordtableid>dcd45683-db3a-492c-a203-dcc50e4a3499</recordtableid>
+    </None>
+    <None Include="Recordings_B_KLAB\OP_Tabelle_schliessen_und_zurueck.rxrec">
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+      <id>0e23583a-7eea-42e6-b651-49ea6316d5d2</id>
+      <recordtableid>7320ab10-720a-4238-9c5d-e140d76823a2</recordtableid>
+    </None>
+    <None Include="Recordings_B_KLAB\StartAUT_2.rxrec">
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+      <id>4f333cc1-708e-4c0b-9b14-32fc04f11544</id>
+      <recordtableid>6f63c9c1-4749-4026-be93-e67860ff7534</recordtableid>
+    </None>
+    <None Include="Recording_Mahndruck\Druckerwechsel_Archiv_fuer_Sofortdruck.rxrec">
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+      <id>487802dd-961c-47e3-9c90-555c5896785d</id>
+      <recordtableid>a4180be5-bced-4520-b8d9-a72c4985120d</recordtableid>
+    </None>
+    <None Include="Recording_Mahndruck\Drucktabelle_Druckmenue_schliessen.rxrec">
+      <id>fdfaf1e0-dc7e-43f4-840f-ed51bdd51692</id>
+      <recordtableid>b247f877-9f4e-4bfe-8ff5-1c086f1a89ce</recordtableid>
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+    </None>
+    <None Include="Recording_Mahndruck\Mahndruck_Kunde_1_einschraenken.rxrec">
+      <id>cfb54bb6-e8e9-4f57-8792-e9820e7a0fed</id>
+      <recordtableid>2e848946-8dfa-4e38-b239-d7a72ec6482f</recordtableid>
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+    </None>
+    <None Include="Recording_Mahndruck\Mahndruck_Kunde_1_Tabelle_pruefen.rxrec">
+      <id>b6f19f29-e380-45c4-add1-8e012217e897</id>
+      <recordtableid>b879ba0c-b326-4a3d-8c28-7620f25e825a</recordtableid>
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+    </None>
+    <None Include="Recording_Mahndruck\Mahndruck_Kunde_2_einschraenken.rxrec">
+      <id>2df46566-af2a-40c2-96be-3c87d93cc158</id>
+      <recordtableid>e0d53a2b-582a-492d-b442-d5a31a27c85c</recordtableid>
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+    </None>
+    <None Include="Recording_Mahndruck\Mahndruck_Kunde_2_Tabelle_pruefen.rxrec">
+      <id>c8a1c48c-7768-49e0-8bfc-dfca4e2579d0</id>
+      <recordtableid>db757a7e-25e8-43c0-a5d4-9e27957a9ed1</recordtableid>
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+    </None>
+    <None Include="Recording_Mahndruck\Mahnungen_Sofortdruck_Archiv.rxrec">
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+      <id>db3c1d72-78d6-4972-b748-481d81a0143c</id>
+      <recordtableid>5f7160e3-4aeb-4e1d-a855-40b382b85fe5</recordtableid>
+    </None>
+    <None Include="Recording_Mahndruck\Mahnung_drucken_aufrufen.rxrec">
+      <id>2633e4aa-449b-4810-bb7b-677efe86515d</id>
+      <recordtableid>bfae547e-1462-4e70-a71e-5b6ba0dc856f</recordtableid>
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+    </None>
+    <None Include="Recording_Mahndruck\Meldung_pruefen_bestaetigen.rxrec">
+      <id>d61f5d93-e55f-4a6f-95db-4bba55f4949e</id>
+      <recordtableid>f512f1ac-6c5b-4886-9cf3-408a5a6eae2d</recordtableid>
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+    </None>
+    <None Include="Recording_Mahndruck\Start_Druck_Bildschirm_Ausgabe_Tabelle.rxrec">
+      <id>89cde755-dedd-4677-ade8-aa61f9ce077d</id>
+      <recordtableid>f72da843-dc05-44ab-9c70-046a3777f63d</recordtableid>
+      <BoundTo>ae486276-cec8-42c1-a701-fe67e1868b96</BoundTo>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="B_MNDR_002.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>2cf6abfa-1659-4858-9150-82d0efa37a95</id>
+    </Content>
+    <Content Include="B_MNDR_002.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>ca1c4f82-f1db-4b63-b3e2-3b3626ca080e</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings_B_KLAB">
+      <id>c26716ee-d6ec-4259-83de-4748f8af9b3c</id>
+    </Folder>
+    <Folder Include="Recordings">
+      <id>e879ef1b-61c8-4359-8e98-f105c97c9020</id>
+    </Folder>
+    <Folder Include="Recording_Mahndruck">
+      <id>0fd104fd-acd5-4707-8df7-9d1d1d242d84</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{69E32101-1A74-449B-89A2-CCF2D6D2203C}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

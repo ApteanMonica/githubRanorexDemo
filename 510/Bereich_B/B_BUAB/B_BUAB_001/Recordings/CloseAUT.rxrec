@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="00df016a-d223-4ec1-97c5-04dd6ab70657"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_BUAB_001.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="7dd2789a-c40f-4798-b13f-cf555d6c31f4">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f64273d9-cd13-42a6-9f27-93ca9e798b41"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='tblB']/titlebar[@accessiblerole='TitleBar']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="5b3532fc-f24f-4ac5-a541-6660dcc1b00e"
+	name="B_BUAB_001Repository"
+	relativepath="..\B_BUAB_001Repository.rxrep">
+		<codegen
+		classname="B_BUAB_001Repository"
+		namespace="B_BUAB_001">
+		</codegen>
+		<rootfolder
+		id="57b4634e-107b-4080-92d7-b5aad05e2815"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll
+		</reference>
+	</references>
+</recordtable>

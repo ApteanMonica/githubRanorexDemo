@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f78b29f7-ccfe-4b9d-8f3f-72750abdd3b6"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Zahlungsvorschlag_Drucktabelle_pruefen"
+	namespace="B_ZAHL_001.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="fb4efef9-2c41-49b7-9d4c-d68d82998f9c"
+		name="Tagesdatum">
+		</var>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="cf625a4d-8856-463d-90fa-fd2cd8e23339">
+			<comment>
+				Beginn und Ende entfernt mit ZV-Nummer und Erstellungsdatum (ist variabel)
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="be8e0739-c4ee-4c20-9b9c-b567bb221698"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblDrucken']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				S	Sepaüberweisung	15.07.2021	303040	LF-40 INLAND B_ZAHL_001	LF-40 B_ZAHL_001	LF-40 B_ZAHL_001 Salzburger Straße 31	AT 5020 Salzburg	4080	0		AT 5020 Salzburg	1	AT	19043	00234573201	LF-40 B_ZAHL_001 	1	ER	ER042 B_ZAHL_001	01.07.2021	31.07.2021	EUR	1200	1176	24				2		15.07.2021	01.07.2021	14T 2% 30N	R	ER042 B_ZAHL_001 			01.07.2021		EUR	0	0			Erstellt am:
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="cf625a4d-8856-463d-90fa-fd2cd8e23339">
+			<comment>
+				Beginn und Ende entfernt mit ZV-Nummer und Erstellungsdatum (ist variabel)
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ec65e430-2583-47ad-b172-e5e89e047d43"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblDrucken']/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				S	Sepaüberweisung	15.07.2021	303040	LF-40 INLAND B_ZAHL_001	LF-40 B_ZAHL_001	LF-40 B_ZAHL_001 Salzburger Straße 31	AT 5020 Salzburg	4080	0		AT 5020 Salzburg	1	AT	19043	00234573201	LF-40 B_ZAHL_001 	1	ER	ER044 B_ZAHL_001	01.07.2021	31.07.2021	EUR	1800	1800	0				2		15.07.2021	01.07.2021	14T 2% 30N	R	ER044 B_ZAHL_001 Skontobasis 0,00			01.07.2021		EUR	0	0			Erstellt am:
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="cf625a4d-8856-463d-90fa-fd2cd8e23339">
+			<comment>
+				Beginn und Ende entfernt mit ZV-Nummer und Erstellungsdatum (ist variabel)
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8b7d9822-005a-441e-88bf-96c25961d38a"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblDrucken']/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				S	Sepaüberweisung	15.07.2021	303040	LF-40 INLAND B_ZAHL_001	LF-40 B_ZAHL_001	LF-40 B_ZAHL_001 Salzburger Straße 31	AT 5020 Salzburg	4080	0		AT 5020 Salzburg	1	AT	19043	00234573201	LF-40 B_ZAHL_001 	1	ER	ER043 B_ZAHL_001	05.07.2021	04.08.2021	EUR	600	588	12				2		19.07.2021	05.07.2021	14T 2% 30N	R	ER043 B_ZAHL_001 			05.07.2021		EUR	0	0			Erstellt am:
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="cf625a4d-8856-463d-90fa-fd2cd8e23339">
+			<comment>
+				Beginn und Ende entfernt mit ZV-Nummer und Erstellungsdatum (ist variabel)
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="57df5412-1a0e-41f2-9827-730058a30082"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblDrucken']/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 4']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				S	Sepaüberweisung	15.07.2021	303040	LF-40 INLAND B_ZAHL_001	LF-40 B_ZAHL_001	LF-40 B_ZAHL_001 Salzburger Straße 31	AT 5020 Salzburg	4080	0		AT 5020 Salzburg	1	AT	19043	00234573201	LF-40 B_ZAHL_001 	1	ERG	GS008 B_ZAHL_001	05.07.2021	04.08.2021	EUR	-120	-120	0				0		19.07.2021	05.07.2021	14T 2% 30N	G	GS008 B_ZAHL_001			05.07.2021		EUR	0	0			Erstellt am:
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="cf625a4d-8856-463d-90fa-fd2cd8e23339">
+			<comment>
+				Beginn und Ende entfernt mit ZV-Nummer und Erstellungsdatum (ist variabel)
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8ac1137a-8777-4e25-9286-d4a21eddc131"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblDrucken']/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 5']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				S	Sepaüberweisung	15.07.2021	303041	LF-41 DIV INLAND B_ZAHL_001	LF-41 DIV B_ZAHL_001	LF-41 DIV B_ZAHL_001	AT 1010 Wien	3000	1	LF-41 DIV INLAND B_ZAHL_001	AT 1010 Wien	2	AT	19043	00234573201	 	1	ER	ER045 B_ZAHL_001	01.07.2021	31.07.2021	EUR	2400	2376	24				2		15.07.2021	01.07.2021	14T 2% 30N	R	ER045 B_ZAHL_001 Skontobasis 1.200,00			01.07.2021		EUR	0	0			Erstellt am:
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="cf625a4d-8856-463d-90fa-fd2cd8e23339">
+			<comment>
+				Beginn und Ende entfernt mit ZV-Nummer und Erstellungsdatum (ist variabel)
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bcb317e9-5e8f-4b62-a335-ddd375fcace6"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblDrucken']/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 6']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				S	Sepaüberweisung	15.07.2021	303041	LF-41 DIV INLAND B_ZAHL_001	LF-41 DIV B_ZAHL_001	LF-41 DIV B_ZAHL_001	AT 1010 Wien	3000	2	LF-41 DIV INLAND B_ZAHL_001	AT 1010 Wien	3	DE	50010517	0137075030	ING-DiBa 	1	ERG	GS009 B_ZAHL_001	01.07.2021	31.07.2021	EUR	-1800	-1800	0				0		15.07.2021	01.07.2021	14T 2% 30N	G	GS009 B_ZAHL_001			01.07.2021		EUR	0	0			Erstellt am:
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="cf625a4d-8856-463d-90fa-fd2cd8e23339">
+			<comment>
+				Beginn und Ende entfernt mit ZV-Nummer und Erstellungsdatum (ist variabel)
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="744268d4-fbb2-4817-8ea7-17fc2eaa2aa4"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblDrucken']/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 7']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				S	Sepaüberweisung	15.07.2021	303041	LF-41 DIV INLAND B_ZAHL_001	LF-41 DIV B_ZAHL_001	LF-41 DIV B_ZAHL_001	AT 1010 Wien	3000	2	LF-41 DIV INLAND B_ZAHL_001	AT 1010 Wien	3	DE	50010517	0137075030	ING-DiBa 	1	ER	ER046 B_ZAHL_001	05.07.2021	04.08.2021	EUR	1800	1764	36				2		19.07.2021	05.07.2021	14T 2% 30N	R	ER046 B_ZAHL_001			05.07.2021		EUR	0	0			Erstellt am:
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="05c76c8c-5fc9-4135-aa76-df3e7f21c374"
+	name="B_ZAHL_001Repository"
+	relativepath="..\B_ZAHL_001Repository.rxrep">
+		<codegen
+		classname="B_ZAHL_001Repository"
+		namespace="B_ZAHL_001">
+		</codegen>
+		<rootfolder
+		id="971ef33f-6c0f-443d-9f6e-7a1a1a9307a2"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Zahlungsvorschlag_Drucktabelle_pruefen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

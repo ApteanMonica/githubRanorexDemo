@@ -1,0 +1,533 @@
+﻿<repository
+id="f8231c64-938e-4ca8-91a7-a3baf572a665"
+name="E_BSST_001Repository">
+	<codegen
+	classname="E_BSST_001Repository"
+	namespace="E_BSST_001">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="fee6737b-bd93-4785-8c91-b8cc71a55967"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="66fdeb7a-264b-4116-b442-706900370caf"
+		isrooted="True"
+		name="TblBsst"
+		refpath="/form[@controlname='tblBsst']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="e5773dd1-396c-4fed-b926-63f98a58a40b"
+			name="TitleBar100BestellungenStornieren"
+			refimgid="62bb67e3-cc6e-42fb-a134-5fff1d6ed398"
+			refpath="/form[@controlname='tblBsst']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBsst']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="radiobutton,control,nativewindow"
+			capname="radiobutton"
+			id="ff5f6305-43a1-4f4a-beb3-52a4ea6442cd"
+			name="RbOffen"
+			refimgid="2781f0a6-04c8-449b-9d74-5f04a7509070"
+			refpath="/form[@controlname='tblBsst']/container[@controlname='ToolBar']/radiobutton[@controlname='rbOffen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBsst']/?/?/radiobutton[@controlname='rbOffen']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="0983a79b-df8f-4940-87fd-20f84b5aa19b"
+			name="PbDataAccessLoad"
+			refimgid="efdd00f2-9943-4405-9773-48bab3e69553"
+			refpath="/form[@controlname='tblBsst']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBsst']/container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Load']
+			</item>
+			<item
+			addcaps="radiobutton,control,nativewindow"
+			capname="radiobutton"
+			id="7b03bbad-d518-4825-8b83-bd1b8ce1c5db"
+			name="RbTeilLief"
+			refimgid="bd467b6d-0922-4fb5-91c1-897b662567ba"
+			refpath="/form[@controlname='tblBsst']/container[@controlname='ToolBar']/radiobutton[@controlname='rbTeilLief']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBsst']/?/?/radiobutton[@controlname='rbTeilLief']
+			</item>
+			<item
+			addcaps="radiobutton,control,nativewindow"
+			capname="radiobutton"
+			id="d4721c19-8b1c-4dbb-9d3f-f60ec5576f4b"
+			name="RbAlle"
+			refimgid="af6e4c4a-0359-40bf-bc82-d4a031a0ad3f"
+			refpath="/form[@controlname='tblBsst']/container[@controlname='ToolBar']/radiobutton[@controlname='rbAlle']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBsst']/?/?/radiobutton[@controlname='rbAlle']
+			</item>
+			<folder
+			capname="table"
+			id="e72182ca-f2ce-4d0c-96a3-50c5f8290027"
+			isrooted="True"
+			name="FlexGrid"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="27c312da-6a8e-4260-9b91-e49f57bfd05f"
+				name="ColAdrNrRow1"
+				refimgid="24cabe48-a5d3-4d06-a2d4-ab5b637afff3"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element/table/row[@accessiblename='Row 1']/cell[@accessiblename='colAdr_nr Row 1']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAdr_nr Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="31ef7618-0e42-4cab-a3bc-7263697b6ec4"
+				name="ColBskNrRow1"
+				refimgid="8ecd961b-a71b-4ae5-afdb-12a40a870e4e"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colBsk_nr Row' and @text=$Bestellung_2]
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="8cf6c16d-9be3-4519-ba36-194d83a9d684"
+				name="ColBskNrRow2"
+				refimgid="10ba3f25-5be1-4dd9-a647-484a2aeba20f"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element/table/row[@accessiblename='Row 2']/cell[@accessiblename='colBsk_nr Row 2']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsk_nr Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="a14531cc-e017-49a4-a43e-a4282209ad92"
+				name="ColBspGeliefertRow"
+				refimgid="a4b88ff6-4c7d-4ef3-ab75-cafdb445ac0a"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colBsp_geliefert Row' and @text='5,00']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="9ea8cb09-8e85-4044-9ed9-c5576a12e4cb"
+				name="ColBspStatusRow1"
+				refimgid="7b62da8e-6786-4697-8071-7c521cb25e4a"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colBsp_status Row' and @text='L']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="8b1e5048-3a89-4654-b502-f99cde70401e"
+				name="ColBspStatusRow2"
+				refimgid="8af54829-8e39-4524-83ea-1e7abb58280c"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colBsp_status Row 2']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsp_status Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="21eaef70-b213-431f-8c17-c5d4f86161ca"
+				name="ColBspBestaetigtRow2"
+				refimgid="283ea7df-8395-45c6-adc8-a1d95f77535b"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colBsp_bestaetigt Row 2']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsp_bestaetigt Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="a16cdadb-e115-48e9-9ff6-27a5741407a2"
+				name="ColBspGeliefertRow2"
+				refimgid="1d9807a7-fd86-4e2a-bf51-56a212133a30"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colBsp_geliefert Row 2']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsp_geliefert Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="daca186a-ec06-42ca-a7d8-f066c379efcf"
+				name="ColBspMengeRow2"
+				refimgid="7b2fc246-5bc3-4656-901c-241e99b9896f"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colBsp_menge Row 2']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsp_menge Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="28774028-44c4-4365-ad0f-882c791fad8a"
+				name="ColBskNrRow3"
+				refimgid="2d0b4097-70fa-45c5-a298-f3ea7ac09ca4"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element/table/row[@accessiblename='Row 3']/cell[@accessiblename='colBsk_nr Row 3']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsk_nr Row 3']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="f0d46e78-cbcc-47d8-9314-5dde6c8d92d2"
+				name="ColAdrNrRow3"
+				refimgid="c2787a87-ecdd-4464-925b-012cb52acf03"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element/table/row[@accessiblename='Row 3']/cell[@accessiblename='colAdr_nr Row 3']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAdr_nr Row 3']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="4b718959-8e75-4712-bd63-c6f432836534"
+				name="ColBspStatusRow3"
+				refimgid="35882e90-c447-4d38-800b-2821c698f27f"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element/table/row[@accessiblename='Row 3']/cell[@accessiblename='colBsp_status Row 3']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsp_status Row 3']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="ce35ad64-165b-49ed-ac3f-386f33f4f7b3"
+				name="ColBskNrRow4"
+				refimgid="b1d5d414-aaef-46c0-a19e-057b40901170"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colBsk_nr Row 4']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsk_nr Row 4']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="ff64a8c1-41e8-4df1-8bf3-754fe53591c6"
+				name="ColAdrNrRow4"
+				refimgid="e6c4fe4d-aa06-4c08-a1bb-5202875e7f7b"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colAdr_nr Row 4']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAdr_nr Row 4']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="05d068df-6c81-4788-b227-3ab5b3272a4c"
+				name="ColBspStatusRow4"
+				refimgid="74363ffa-5bea-4007-a323-e80dfe1abe5a"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colBsp_status Row 4']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsp_status Row 4']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="84933bed-341a-42a2-9436-094637555b5f"
+				name="ColBspBestaetigtRow4"
+				refimgid="841bacd9-f4ae-4b29-a803-c196ac3ecf89"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colBsp_bestaetigt Row 4']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsp_bestaetigt Row 4']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="8ebd58d9-6322-4ce9-ab45-d345542586f2"
+				name="ColBspGeliefertRow4"
+				refimgid="46b83515-4df5-4597-85a8-e030ee96d4a1"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colBsp_geliefert Row 4']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsp_geliefert Row 4']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="ba6715e6-0dad-4881-a1f5-5c28ad967a14"
+				name="ColBskNrRow7"
+				refimgid="7728d236-1bf1-4e74-8889-c9d4c834b76b"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colBsk_nr Row' and @text=$Bestellung_E]
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="d17b1387-cb28-475a-af2e-879796a138a8"
+				name="ColAdrNrRow7"
+				refimgid="10768bea-6b0d-4283-933f-d0da6aa1b2db"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colAdr_nr Row' and @text=$Lieferant2]
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="e137f5fe-0f33-4dfc-aae7-46468d151a2c"
+				name="ColBspStatusRow7"
+				refimgid="53df038b-1b18-489f-8eaa-f0cab651d85e"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsp_status Row 7']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="993c239b-568c-426f-81e7-4ff3dfd06dd5"
+				name="Row12Column0"
+				refimgid="ecdb791d-0b0d-4236-8769-f93a163686e8"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element/table/row[@accessiblename='Row 12']/cell[@accessiblename='Row 12 Column 0']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 12 Column 0']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="def0fb51-19a9-4950-b198-fe8ae7a27a1e"
+				name="Row11Column0"
+				refimgid="d3c968e9-1ac7-4a96-a2ff-976bc08f9f72"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 11']/cell[@accessiblename='Row 11 Column 0']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 11 Column 0']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="b14acb5e-a744-443c-97a1-f3dcbeb95012"
+				name="ColBskNrRow11"
+				refimgid="94c858ff-605f-494a-81de-c190d8eb7e46"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsk_nr Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="ab0f6532-8bda-41cc-a336-9b5b86b00c06"
+				name="ColBspMengeRow"
+				refimgid="717a9616-103e-425f-b1a6-9efa5445000c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colBsp_menge Row' and @text='20,00']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="3485a0f2-8ad9-452f-a783-9ea70e90626f"
+				name="Row1Column0"
+				refimgid="0b30cf6a-6ebf-4796-8a25-c6c283410854"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element/table/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 1 Column 0']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="54348fee-8c5f-47f0-9113-d7e4984907de"
+				name="ColArtNrRow1"
+				refimgid="6a709a48-41fd-43e2-8cd8-254257248fd6"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colArt_nr Row 1']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colArt_nr Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="bb6132b8-796d-47d5-ba44-c371c4a7fd55"
+				name="ColAdrNrRow2"
+				refimgid="ff8195cb-c86b-4b8c-ba1d-9db9cbbe58af"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colAdr_nr Row 2']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAdr_nr Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="775eecbf-1bcd-4183-9b6d-4d77939a9cf9"
+				name="ColBspStatusRow11"
+				refimgid="91f901bc-f2ce-4495-995d-6e734e3ee0c9"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBsp_status Row 1']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsp_status Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="dde11ca7-cdef-433f-89f2-f0919d519ed5"
+				name="ColBspGeliefertRow11"
+				refimgid="67942001-8c8b-4523-bd87-7e7f3d205224"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBsp_geliefert Row 1']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsp_geliefert Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="031bec08-c6d9-4ff1-a836-1802e313f29e"
+				name="ColBspMengeRow1"
+				refimgid="f364c4fa-a79c-4d99-a97d-626001ccfaa7"
+				refpath="/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBsp_menge Row 1']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsp_menge Row 1']
+				</item>
+				<basepath>
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']
+				</basepath>
+			</folder>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="e2c88c66-5cbf-4262-a5ea-50ae48c4b1f4"
+			name="Text"
+			refimgid="9692179c-d05a-40a0-86d8-fbd1680d588c"
+			refpath="/form[@controlname='tblBsst']/container[@controlname='ToolBar']/text[@controlname='dfAdr_nr']/text[@accessiblerole='Text']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBsst']/container[@controlname='ToolBar']/text[@controlname='dfAdr_nr']/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="6e4e0d8d-b68a-4d75-a520-535d28ad5372"
+			name="PbCommonStornieren"
+			refimgid="5e8e1feb-549d-4c22-9c21-c4db23b7661c"
+			refpath="/form[@controlname='tblBsst']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Stornieren']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBsst']/container[@controlname='RibbonBar']/?/?/button[@controlname='pbCommon_Stornieren']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="62affa32-952a-43d8-b54d-09c1d62c79e1"
+			name="Text1"
+			refimgid="97405067-f230-4cd6-80de-acbcd833b847"
+			refpath="/form[@controlname='tblBsst']/container[@controlname='ToolBar']/text[@controlname='dfBsk_nr']/text[@accessiblerole='Text']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBsst']/container[@controlname='ToolBar']/text[@controlname='dfBsk_nr']/text[@accessiblerole='Text']
+			</item>
+			<basepath>
+				/form[@controlname='tblBsst']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="66e2ec4c-64ca-4d1e-bb80-18793e834e8b"
+		isrooted="True"
+		name="DlgMessageBox"
+		refpath="/form[@controlname='dlgMessageBox']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="99ad7211-ae8d-4427-89bc-5a42e0a00a27"
+			name="LabelMeldungstext"
+			refimgid="dfe9268b-4475-4190-8765-41dc443fb8da"
+			refpath="/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="87471817-40b2-46e0-98e5-3f3fa3c2cbb4"
+			name="Button0"
+			refimgid="3383f4b6-55ce-4db9-abfc-a2914b2ad4a6"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button0']
+			</item>
+			<basepath>
+				/form[@controlname='dlgMessageBox']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="8165c077-6d76-4ef4-b308-59eade9ee7ea"
+		name="Bestellung_2">
+			301900006
+		</var>
+		<var
+		id="4c83e061-3210-42da-a3c9-153722a7e2c0"
+		name="Status_L">
+			L
+		</var>
+		<var
+		id="9dd23238-d8b5-4a6f-929b-faf1ad65e5e7"
+		name="Status_E">
+			E
+		</var>
+		<var
+		id="41480bd6-46cb-4aca-a973-11a1087725c7"
+		name="Bestellung_E">
+			BS21/00001
+		</var>
+		<var
+		id="93270061-028d-436d-829e-bb35067515dd"
+		name="Lieferant2">
+			300022
+		</var>
+	</variables>
+</repository>

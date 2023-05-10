@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8ff638ef-ba7e-4498-8835-dc49422c0a6a"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_B_KTO"
+	namespace="B_SCOPY_001.Recordings_B_KTO_200_250">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="1ea6221c-b36e-4faf-ac64-a8595aaa967f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8e12a1d0-6ee6-486b-8e89-e876e0fbfc7a"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmKto']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="6c2a0710-3a7a-4867-aa3d-b6fba98b056f"
+	name="B_SCOPY_001Repository"
+	relativepath="..\B_SCOPY_001Repository.rxrep">
+		<codegen
+		classname="B_SCOPY_001Repository"
+		namespace="B_SCOPY_001">
+		</codegen>
+		<rootfolder
+		id="20c65bfc-1bc8-4b4a-ac8c-35ac9a5f2ded"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_B_KTO.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

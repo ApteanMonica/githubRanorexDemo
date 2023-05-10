@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="1a4cf0d7-6575-4306-983f-0d8f1f3ff18d"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Kontrolle"
+	namespace="L_KMSM_001.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="ae792c80-2105-41ee-8034-2a42c010b47d"
+		name="KoSchein">
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="a9995d65-449b-490a-9ecf-2b74da7abef0"
+		sx="453"
+		sy="409"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8404d211-d5aa-41df-89ff-39f1cb331cf7"
+			sourcename="Recorder">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="True"
+				index="0"
+				prefcap="text"
+				rect="439,409,86,17"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Ko-schein-Nr.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Text
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focused, Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblKMSM']/container[@controlname='ToolBar']//text[@accessiblename='Ko-schein-Nr.']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence=""
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="175d3f0e-4c4d-44a9-a419-811fb68e176e">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="KoSchein">
+				</binding>
+			</bindings>
+		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="ff866db1-7ca8-4d71-bccd-102ee02ef9fc"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="de445b0d-d8bb-4d86-b9d1-3b6772d1cdae">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="KoSchein">
+				</binding>
+			</bindings>
+			<info
+			id="8404d211-d5aa-41df-89ff-39f1cb331cf7"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='tblKMSM']/container[@controlname='ToolBar']//text[@accessiblename='Ko-schein-Nr.']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="f4777728-e30c-4136-9e9a-9fedbd22f1aa">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="accdabe3-c090-404d-86e9-aff2c4c97485"
+			sourcename="ElementTree">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="801,456,32,17"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Status
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Text
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						ReadOnly, Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						0
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblKMSM']/container[@controlname='ToolBar']/?/?/text[@controlname='dfKmsk_status']/text[@accessiblename='Status']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="181cf47b-65a6-4660-9dc5-afd536ed1311">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCACKAIoDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDRUzCN
+1ImIJALEPkdcnAOfTocUsaTtDIzNPuRPk5YZOW7d+3XNaVFAGe3mecG2TPKrMSOduMHGO3pTIkme
+TYWm8skE8OvZuMk59K06KAIbIbbSJcMCFAIbOc/jU1FFAEdwFMEgZGdSpBVepFUCJpYmRHuGj3xl
+HePa4+bngjoOOSK06KAM+6gMIhYSXBJlLPKib2+6R0Ckeg6Vbtm3Qg75X/2pU2MfwwP5VLRQAVRv
+SySloROs+0bdibkk64B4OP061eooAyEa4cObczmbMoO8tsxztxnjrjpREJxHl5Lh4Sw3hY5FYcHp
+kluuOn4d61lVVGFAAznAFLQBiwxSCaJmS4CK5K53cZL8n/x2pY/tP7vf9o875Nv3tu3A3Z7Z69ef
+StWigCjZRyxvAWaZt8OZN7E/Nx69D1q9RRQBA15brt/eoQxIyGGM4zTkuYXjjfzFAkHygsOarpaS
+K6vhQwIzmRmyMEdT9en6002UhVA20/uxGw8xgBjvx1+lAFwTRsxRJEaQD7u7moop5WkZZI40CttJ
+EhOTgEY4HrSR2zJ5X3flkZj+Of8AEUk0RWK4JBJdgybQSQQBj9RQBMZ4Q4QyoGJxjcM5qSqH2aXd
+JGFXDxqHc565JJHr1q/QAUUUUAFFFFABRRRQAUUUUAFFFFABSb1H8Q/OlqM28RJJjXJoAkoqq90+
++ICGVctypA+YYPfOO1Ot7kzTOojZVVQcnHXJBHX2oAsUUUUAFFFFACMHz8rKB7jP9aTEn95f++f/
+AK9OooAbiT+8v/fP/wBejEn95f8Avn/69OooAbiT+8v/AHz/APXoxJ/eX/vn/wCvTqKAG4k/vL/3
+z/8AXoxJ/eX/AL5/+vTqKAG4k/vL/wB8/wD16MSf3l/75/8Ar1SuZmF60ZnuY1CKQIYd/JJ6/KfS
+nSTyrBfMH5hzsOBx8gP8zQBbxJ/eX/vn/wCvRiT+8v8A3z/9esye5lWSfFxOrIwEaCIFCcDALbeO
+T61q0AQrbAOrNLI5U5G4j0I7D3pYrdYpC6s3zDkHGOpP9TUtFABRRRQAUUUUAFFZFw97PqstvbTh
+AiggHgYwPb3pfsurHpeR/mf8Knm8iOfyNaisn7Jq3/P2n5n/AAo+yat/z9p+Z/wo5vIObyNaisS5
+j1O2gaZ7pSq4yFPPXHpWpajzLWF3ZizIpJ3HrihSu7DUruxPRTfLX1b/AL7NAjAOct/30aoohktS
+8xlS4liLKFIQKQcZ9QfWh7RXLZkkAcASKMYftzx/LFWKKAIWtkaOZCWxNnd7cAcflUw4FFFAFGK4
+kS1JYqzJCrgkHknPXn2qWGeR7lo3CheduB6HHXOP5YqU20BABhjO3p8g4pyxxq5dUUM3VgOTQA6i
+iigAooooAxLgkapf4OP3HJ9sLmtG0RIp7iOJVSMFSFUYAOOf6VTV4k16585kVTGB85AB4XirsU1j
+AmyGW3jXrhWUCoi9yIta+pZoqH7Za/8APzD/AN9ij7Za/wDPzD/32Kq6KuiDWP8AkFzf8B/9CFR/
+aJorWzjt497vFnoDgAD1ZfX1o1W5gk06VUnjZjjAVwT1FWLeGKbT7dZo0kURqcMoI6VP2iU/fKv2
+27dC6LCo3BduNx5UNx8wB/D60yO9ufKZ12ytLKFQKvC5QH+Ij+laTwQyIUeKNlY5IKggmg20DBg0
+MZDgBgUHIHTNWWYt1NM7NJxFKF7EHGBJ6H+vFbqZ2DcQWxyQMUz7PDgDyY8AYHyjp6fqfzp6qqKF
+RQqgYAAwAKAFooooArZGM4b/AL+tRkej/wDfxqD9wfU1QhuGTJnkkL45iMeOSQPlPcdu/aqsiLsv
+5Ho//fxqMj0f/v41Z8l25mjVN0fOHVgMg7l/of1p0t1/pMJilVouQ+3B5yB1+posguy9kej/APfx
+qMj0f/v41ZkeoiJGNwwJZzsGVXC4B7ketTpfxuQUSQoSB5mBtBIGO+e9FkF2SyWlrLIXkg3MepMj
+Uz7BZf8APsP+/jU06hEq7nR0TbuVmwAwyB6+464qW2uY7qMvGehwRkHB+oJFLli+hLS7DRp9kSB9
+mHP/AE0ak+wWX/PsP+/jVaT76/Wqlzc/Z5QWzs2EkDHJyAOv1pckewWXYX7BZf8APsP+/jVZUIiB
+VVgqjAHmNwKqRXoeSTehiiVA258DHJHr7VE11IJLhVkBzgQnAwDgfn94GnypDWmxo5Ho/wD38ajI
+9H/7+NWfFqUIEUcr5kKruOVHJA7Zz37CpFvkKhjFKoZQyZA+boOOfcdadkO7LmR6P/38ajI9H/7+
+NVGTUYoh+8VkbdjazKD0B65x3HerUbrLGsiHKsMg+1FkF2SZHo//AH8ajI9H/wC/jU2iiwczHlGK
+Ywepqr9gz/rHmcgYUtjK8g8YHsOuelXz0qC3lkaV45CjFQCSg4BPalcfKVxYDcGYyswOSxxycg88
+ewqSW1WZsyIxG0oR7HH+FI11KimQ7CrBtgxyCOmTmp4Hcs8cpUshHKjGQfai4cpWaxG8uhkjfOcq
+B0wBjkdOBS/YxtK/vCC4c555GP8ACrtFFw5TKj0+UufO3CNV2xgNkryCMHaOmB61ciheNcFpHJOS
+zdf04qzRRcOUiVW3j5T19KhltTK27MiMFKgrxjkH+lXB1qvdyyQx71aMKBk7s5Y9gKLhykFvZC3b
+Kb+RgggYPJOenuelO+yKXLlGLbt4z2OMVNM7gxpGQrOerDOOM9KgF1Ky7xsCoF3jHUk8454ouHKN
+Sw8vGxpVXAyo6NgYyePaklsSYVVAxaNNqZOPTnODzwO1aFFFw5TNhsJQC8skizFidyYJwQBj7uD0
+HaraxsqhcMcDHPJqeii4cpDsb+6fyo2N/dP5VNRRcOUDyvXFQLFKrmRpFd8Bc7ccZ5/GrJAA5qOG
+WKbPlsTjnkEcevPakUVzaFgVaQbAG2ALyM/jUsMbIXaRgzseSowKX7RDuYbiNoJJKkDjrg96fFIk
+oJTdwcEMpBH4GgBaKdtFG0UANop20UbRQAg61DPHJIMJIFUghgVzmp9tRyyxQkbyRnnhSePXjoKA
+ImhkO3YyqYz8hIJ4xjmmC0IAVZBsIAcFeTg5454qzJJHEoZiTuOAFBYn8BTDcQ5UbidwBBCkgZ6Z
+PagCSinbRRtFADaKdtFG0UANop20UbRQAp4HTNVIpP8ASHlYSBWCr86EYOeg/Pr+tW6KAM10d4vK
+VH3Rhy3ynB54575q3bnfLLIAwViANykZwPQ1PRQAUUUUAFFFFABVa8lIxEBIFcHc6oWwPwHWrNFA
+FWR0V4mUMUibawCkkZXjj8vzquqOkbRlH3Shdvynjk9T2xWlRQAUUUUAFFFFABRRRQB//9k=
+			</helperscreenshot>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				2
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="d92e0e67-2272-4ee6-895f-1329c15da9d0"
+	name="L_KMSM_001Repository"
+	relativepath="..\L_KMSM_001Repository.rxrep">
+		<codegen
+		classname="L_KMSM_001Repository"
+		namespace="L_KMSM_001">
+		</codegen>
+		<rootfolder
+		id="4100728c-c131-47fd-86a5-9c82d7525f11"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Kontrolle.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll
+		</reference>
+	</references>
+</recordtable>

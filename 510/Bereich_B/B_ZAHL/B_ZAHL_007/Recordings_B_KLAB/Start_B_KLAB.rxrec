@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="2d708e4b-91f4-40f3-9a13-bfd8061ba662"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Start_B_KLAB"
+	namespace="B_ZAHL_007.Recordings_B_KLAB">
+	</codegen>
+	<variables>
+		<var
+		id="036643ea-bbd6-4e8c-8039-052c4d138f0f"
+		name="Startfile">
+			C:\Testdaten\Allgemein\Start.bat
+		</var>
+		<var
+		id="0486593a-8029-4db2-9665-8e5c9c34287a"
+		name="Programm_2">
+			B_KLAB KL L
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="FileName"
+				variable="Startfile">
+				</binding>
+				<binding
+				target="Arguments"
+				variable="Programm_2">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Program Files\rs2\rs2\510_SP06\bin\K_FIBU.exe
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="61ede637-b9bf-47b5-a27e-99aa57320209"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7fdb8115-d512-45e8-9885-2de3fd28d449"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="9"
+				prefcap="titlebar"
+				rect="-1338,-93,773,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Lieferanten-Konto
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Lieferanten-Konto
+					</attribute>
+				</element>
+				<path>
+					/form[@title='[100]  Lieferanten-Konto']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0ed8c267-1905-41ce-8b4c-c4b320f33ffd">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7fdb8115-d512-45e8-9885-2de3fd28d449"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="9"
+				prefcap="titlebar"
+				rect="-1338,-93,773,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Lieferanten-Konto
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Lieferanten-Konto
+					</attribute>
+				</element>
+				<path>
+					/form[@title='[100]  Lieferanten-Konto']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Lieferanten-Konto
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="432bb226-6ee8-4dd1-93ac-68f2ba4642d0"
+	name="B_ZAHL_007Repository"
+	relativepath="..\B_ZAHL_007Repository.rxrep">
+		<codegen
+		classname="B_ZAHL_007Repository"
+		namespace="B_ZAHL_007">
+		</codegen>
+		<rootfolder
+		id="808c3fe5-663c-4d5e-8df4-ed7b03c4823e"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Start_B_KLAB.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="445ce375-beb1-48a8-a8e8-29546616cc47"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_ERBU_003.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="d2ea13ff-f7f7-4a22-b5cf-6b7736ea727e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="27d464cb-b66c-4128-9a1c-481df2fb72fa"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='tblErbu']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="2eeb926b-9832-4014-b8aa-11e606a83928"
+	name="B_ERBU_003Repository"
+	relativepath="..\B_ERBU_003Repository.rxrep">
+		<codegen
+		classname="B_ERBU_003Repository"
+		namespace="B_ERBU_003">
+		</codegen>
+		<rootfolder
+		id="12dc9f5a-cf3a-4aa0-b316-af3f37a19f9a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

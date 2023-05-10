@@ -1,0 +1,1319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4e940432-c4cc-4f1d-963a-8089f75e4fbd"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Protokolldatei_pruefen"
+	namespace="B_ERBU_002.Recordings_B_EXOPV">
+	</codegen>
+	<variables>
+		<var
+		id="51512b3d-a3c0-421b-950e-4dc87e866fb8"
+		name="Tagesdatum">
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="247a1a3c-2463-4000-abb0-99a2c9c45ec1"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="59755915-a05f-4eed-bc67-c3c99f5a7da3"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'Externe Buchungen verbuchen']/container[@controlname='RibbonBar']/container[@controlname='OptionenGroup']/button[@controlname='pbCommon_Protokolldatei']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="3cf42583-d69b-4a4b-8907-f548eea9ebd0"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3c0b196d-adff-4da4-afe4-0e80a8ec827f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='exoperr.txt - Editor']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="06d8688d-9c10-4f18-af90-3f0a49234db0">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Tagesdatum">
+				</binding>
+			</bindings>
+			<info
+			id="b049d218-b1f6-421e-8862-be3884c63b17"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="-1393,-12,897,863"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						636
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectiontext"
+					type="System.String">
+						===================================================================
+B_EXOPV - Starte Verbuchung - 17.02.2023 - 15:36:07 
+===================================================================
+
+[100] Starte Verbuchung ER-BUCH - 17.02.2023 - 15:36:07 
+------------------------------------------------------------------------------------
+ 
+------------------------------------------------------------------------------------
+[100] Beende Verbuchung ER-BUCH - 17.02.2023 - 15:36:15 
+Anzahl Buchungen gelesen  5
+Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00
+===================================================================
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						===================================================================
+B_EXOPV - Starte Verbuchung - 17.02.2023 - 15:36:07 
+===================================================================
+
+[100] Starte Verbuchung ER-BUCH - 17.02.2023 - 15:36:07 
+------------------------------------------------------------------------------------
+ 
+------------------------------------------------------------------------------------
+[100] Beende Verbuchung ER-BUCH - 17.02.2023 - 15:36:15 
+Anzahl Buchungen gelesen  5
+Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00
+===================================================================
+ &#10;
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="controlid"
+					type="System.Int32">
+						15
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						920836
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						11936
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						notepad
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						LeftToRightReading
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Tiled, VerticalScrollBar, Visible, ChildWindow
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						===================================================================
+B_EXOPV - Starte Verbuchung - 17.02.2023 - 15:36:07 
+===================================================================
+
+[100] Starte Verbuchung ER-BUCH - 17.02.2023 - 15:36:07 
+------------------------------------------------------------------------------------
+ 
+------------------------------------------------------------------------------------
+[100] Beende Verbuchung ER-BUCH - 17.02.2023 - 15:36:15 
+Anzahl Buchungen gelesen  5
+Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00
+===================================================================
+ &#10;
+					</attribute>
+					<dynamicattribute
+					description="The default action of the accessible object."
+					name="AccessibleDefaultAction"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The description of the accessible object."
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The help string of the accessible object."
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
+					name="AccessibleHelpTopic"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
+					name="AccessibleKeyboardShortcut"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The name of the accessible object."
+					name="AccessibleName"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The role of the accessible object."
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The state of the accessible object."
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The value of the accessible object."
+					name="AccessibleValue"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicaction
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@title='exoperr.txt - Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="06d8688d-9c10-4f18-af90-3f0a49234db0">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b049d218-b1f6-421e-8862-be3884c63b17"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="-1393,-12,897,863"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						636
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectiontext"
+					type="System.String">
+						===================================================================
+B_EXOPV - Starte Verbuchung - 17.02.2023 - 15:36:07 
+===================================================================
+
+[100] Starte Verbuchung ER-BUCH - 17.02.2023 - 15:36:07 
+------------------------------------------------------------------------------------
+ 
+------------------------------------------------------------------------------------
+[100] Beende Verbuchung ER-BUCH - 17.02.2023 - 15:36:15 
+Anzahl Buchungen gelesen  5
+Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00
+===================================================================
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						===================================================================
+B_EXOPV - Starte Verbuchung - 17.02.2023 - 15:36:07 
+===================================================================
+
+[100] Starte Verbuchung ER-BUCH - 17.02.2023 - 15:36:07 
+------------------------------------------------------------------------------------
+ 
+------------------------------------------------------------------------------------
+[100] Beende Verbuchung ER-BUCH - 17.02.2023 - 15:36:15 
+Anzahl Buchungen gelesen  5
+Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00
+===================================================================
+ &#10;
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="controlid"
+					type="System.Int32">
+						15
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						920836
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						11936
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						notepad
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						LeftToRightReading
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Tiled, VerticalScrollBar, Visible, ChildWindow
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						===================================================================
+B_EXOPV - Starte Verbuchung - 17.02.2023 - 15:36:07 
+===================================================================
+
+[100] Starte Verbuchung ER-BUCH - 17.02.2023 - 15:36:07 
+------------------------------------------------------------------------------------
+ 
+------------------------------------------------------------------------------------
+[100] Beende Verbuchung ER-BUCH - 17.02.2023 - 15:36:15 
+Anzahl Buchungen gelesen  5
+Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00
+===================================================================
+ &#10;
+					</attribute>
+					<dynamicattribute
+					description="The default action of the accessible object."
+					name="AccessibleDefaultAction"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The description of the accessible object."
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The help string of the accessible object."
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
+					name="AccessibleHelpTopic"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
+					name="AccessibleKeyboardShortcut"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The name of the accessible object."
+					name="AccessibleName"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The role of the accessible object."
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The state of the accessible object."
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The value of the accessible object."
+					name="AccessibleValue"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicaction
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@title='exoperr.txt - Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				B_EXOPV - Starte Verbuchung
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="06d8688d-9c10-4f18-af90-3f0a49234db0">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b049d218-b1f6-421e-8862-be3884c63b17"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="-1393,-12,897,863"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						636
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectiontext"
+					type="System.String">
+						===================================================================
+B_EXOPV - Starte Verbuchung - 17.02.2023 - 15:36:07 
+===================================================================
+
+[100] Starte Verbuchung ER-BUCH - 17.02.2023 - 15:36:07 
+------------------------------------------------------------------------------------
+ 
+------------------------------------------------------------------------------------
+[100] Beende Verbuchung ER-BUCH - 17.02.2023 - 15:36:15 
+Anzahl Buchungen gelesen  5
+Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00
+===================================================================
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						===================================================================
+B_EXOPV - Starte Verbuchung - 17.02.2023 - 15:36:07 
+===================================================================
+
+[100] Starte Verbuchung ER-BUCH - 17.02.2023 - 15:36:07 
+------------------------------------------------------------------------------------
+ 
+------------------------------------------------------------------------------------
+[100] Beende Verbuchung ER-BUCH - 17.02.2023 - 15:36:15 
+Anzahl Buchungen gelesen  5
+Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00
+===================================================================
+ &#10;
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="controlid"
+					type="System.Int32">
+						15
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						920836
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						11936
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						notepad
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						LeftToRightReading
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Tiled, VerticalScrollBar, Visible, ChildWindow
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						===================================================================
+B_EXOPV - Starte Verbuchung - 17.02.2023 - 15:36:07 
+===================================================================
+
+[100] Starte Verbuchung ER-BUCH - 17.02.2023 - 15:36:07 
+------------------------------------------------------------------------------------
+ 
+------------------------------------------------------------------------------------
+[100] Beende Verbuchung ER-BUCH - 17.02.2023 - 15:36:15 
+Anzahl Buchungen gelesen  5
+Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00
+===================================================================
+ &#10;
+					</attribute>
+					<dynamicattribute
+					description="The default action of the accessible object."
+					name="AccessibleDefaultAction"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The description of the accessible object."
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The help string of the accessible object."
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
+					name="AccessibleHelpTopic"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
+					name="AccessibleKeyboardShortcut"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The name of the accessible object."
+					name="AccessibleName"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The role of the accessible object."
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The state of the accessible object."
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The value of the accessible object."
+					name="AccessibleValue"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicaction
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@title='exoperr.txt - Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				[100] Starte Verbuchung ER-BUCH
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="06d8688d-9c10-4f18-af90-3f0a49234db0">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b049d218-b1f6-421e-8862-be3884c63b17"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="-1393,-12,897,863"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						636
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectiontext"
+					type="System.String">
+						===================================================================
+B_EXOPV - Starte Verbuchung - 17.02.2023 - 15:36:07 
+===================================================================
+
+[100] Starte Verbuchung ER-BUCH - 17.02.2023 - 15:36:07 
+------------------------------------------------------------------------------------
+ 
+------------------------------------------------------------------------------------
+[100] Beende Verbuchung ER-BUCH - 17.02.2023 - 15:36:15 
+Anzahl Buchungen gelesen  5
+Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00
+===================================================================
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						===================================================================
+B_EXOPV - Starte Verbuchung - 17.02.2023 - 15:36:07 
+===================================================================
+
+[100] Starte Verbuchung ER-BUCH - 17.02.2023 - 15:36:07 
+------------------------------------------------------------------------------------
+ 
+------------------------------------------------------------------------------------
+[100] Beende Verbuchung ER-BUCH - 17.02.2023 - 15:36:15 
+Anzahl Buchungen gelesen  5
+Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00
+===================================================================
+ &#10;
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="controlid"
+					type="System.Int32">
+						15
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						920836
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						11936
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						notepad
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						LeftToRightReading
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Tiled, VerticalScrollBar, Visible, ChildWindow
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						===================================================================
+B_EXOPV - Starte Verbuchung - 17.02.2023 - 15:36:07 
+===================================================================
+
+[100] Starte Verbuchung ER-BUCH - 17.02.2023 - 15:36:07 
+------------------------------------------------------------------------------------
+ 
+------------------------------------------------------------------------------------
+[100] Beende Verbuchung ER-BUCH - 17.02.2023 - 15:36:15 
+Anzahl Buchungen gelesen  5
+Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00
+===================================================================
+ &#10;
+					</attribute>
+					<dynamicattribute
+					description="The default action of the accessible object."
+					name="AccessibleDefaultAction"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The description of the accessible object."
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The help string of the accessible object."
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
+					name="AccessibleHelpTopic"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
+					name="AccessibleKeyboardShortcut"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The name of the accessible object."
+					name="AccessibleName"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The role of the accessible object."
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The state of the accessible object."
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The value of the accessible object."
+					name="AccessibleValue"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicaction
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@title='exoperr.txt - Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				[100] Beende Verbuchung ER-BUCH
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="06d8688d-9c10-4f18-af90-3f0a49234db0">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b049d218-b1f6-421e-8862-be3884c63b17"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="-1393,-12,897,863"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						636
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectiontext"
+					type="System.String">
+						===================================================================
+B_EXOPV - Starte Verbuchung - 17.02.2023 - 15:36:07 
+===================================================================
+
+[100] Starte Verbuchung ER-BUCH - 17.02.2023 - 15:36:07 
+------------------------------------------------------------------------------------
+ 
+------------------------------------------------------------------------------------
+[100] Beende Verbuchung ER-BUCH - 17.02.2023 - 15:36:15 
+Anzahl Buchungen gelesen  5
+Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00
+===================================================================
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						===================================================================
+B_EXOPV - Starte Verbuchung - 17.02.2023 - 15:36:07 
+===================================================================
+
+[100] Starte Verbuchung ER-BUCH - 17.02.2023 - 15:36:07 
+------------------------------------------------------------------------------------
+ 
+------------------------------------------------------------------------------------
+[100] Beende Verbuchung ER-BUCH - 17.02.2023 - 15:36:15 
+Anzahl Buchungen gelesen  5
+Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00
+===================================================================
+ &#10;
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="controlid"
+					type="System.Int32">
+						15
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						920836
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						11936
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						notepad
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						LeftToRightReading
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Tiled, VerticalScrollBar, Visible, ChildWindow
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						===================================================================
+B_EXOPV - Starte Verbuchung - 17.02.2023 - 15:36:07 
+===================================================================
+
+[100] Starte Verbuchung ER-BUCH - 17.02.2023 - 15:36:07 
+------------------------------------------------------------------------------------
+ 
+------------------------------------------------------------------------------------
+[100] Beende Verbuchung ER-BUCH - 17.02.2023 - 15:36:15 
+Anzahl Buchungen gelesen  5
+Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00
+===================================================================
+ &#10;
+					</attribute>
+					<dynamicattribute
+					description="The default action of the accessible object."
+					name="AccessibleDefaultAction"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The description of the accessible object."
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The help string of the accessible object."
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
+					name="AccessibleHelpTopic"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
+					name="AccessibleKeyboardShortcut"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The name of the accessible object."
+					name="AccessibleName"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The role of the accessible object."
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The state of the accessible object."
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The value of the accessible object."
+					name="AccessibleValue"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicaction
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@title='exoperr.txt - Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Anzahl Buchungen gelesen  5
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="06d8688d-9c10-4f18-af90-3f0a49234db0">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b049d218-b1f6-421e-8862-be3884c63b17"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="-1393,-12,897,863"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						636
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectiontext"
+					type="System.String">
+						===================================================================
+B_EXOPV - Starte Verbuchung - 17.02.2023 - 15:36:07 
+===================================================================
+
+[100] Starte Verbuchung ER-BUCH - 17.02.2023 - 15:36:07 
+------------------------------------------------------------------------------------
+ 
+------------------------------------------------------------------------------------
+[100] Beende Verbuchung ER-BUCH - 17.02.2023 - 15:36:15 
+Anzahl Buchungen gelesen  5
+Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00
+===================================================================
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						===================================================================
+B_EXOPV - Starte Verbuchung - 17.02.2023 - 15:36:07 
+===================================================================
+
+[100] Starte Verbuchung ER-BUCH - 17.02.2023 - 15:36:07 
+------------------------------------------------------------------------------------
+ 
+------------------------------------------------------------------------------------
+[100] Beende Verbuchung ER-BUCH - 17.02.2023 - 15:36:15 
+Anzahl Buchungen gelesen  5
+Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00
+===================================================================
+ &#10;
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="controlid"
+					type="System.Int32">
+						15
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						920836
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						11936
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						notepad
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						LeftToRightReading
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Tiled, VerticalScrollBar, Visible, ChildWindow
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						===================================================================
+B_EXOPV - Starte Verbuchung - 17.02.2023 - 15:36:07 
+===================================================================
+
+[100] Starte Verbuchung ER-BUCH - 17.02.2023 - 15:36:07 
+------------------------------------------------------------------------------------
+ 
+------------------------------------------------------------------------------------
+[100] Beende Verbuchung ER-BUCH - 17.02.2023 - 15:36:15 
+Anzahl Buchungen gelesen  5
+Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00
+===================================================================
+ &#10;
+					</attribute>
+					<dynamicattribute
+					description="The default action of the accessible object."
+					name="AccessibleDefaultAction"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The description of the accessible object."
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The help string of the accessible object."
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
+					name="AccessibleHelpTopic"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
+					name="AccessibleKeyboardShortcut"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The name of the accessible object."
+					name="AccessibleName"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The role of the accessible object."
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The state of the accessible object."
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The value of the accessible object."
+					name="AccessibleValue"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicaction
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@title='exoperr.txt - Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00
+			</matchvalue>
+		</validationitem>
+		<keyitem
+		action="Press"
+		data="F4, Alt"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="1441fa69-a041-4c6e-a82e-30e626ab8b0a"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3c0b196d-adff-4da4-afe4-0e80a8ec827f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='exoperr.txt - Editor']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keyitem>
+	</recorditems>
+	<repository
+	id="6b330eef-8fa5-463a-91e6-7ba656f7fb14"
+	name="B_ERBU_002Repository"
+	relativepath="..\B_ERBU_002Repository.rxrep">
+		<codegen
+		classname="B_ERBU_002Repository"
+		namespace="B_ERBU_002">
+		</codegen>
+		<rootfolder
+		id="3331ac05-76c2-4ea1-b1bf-a137c034983c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Protokolldatei_pruefen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

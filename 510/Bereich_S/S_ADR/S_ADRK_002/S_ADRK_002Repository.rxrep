@@ -1,0 +1,902 @@
+﻿<repository
+id="49837a36-b277-4d1c-87f9-dab7973029a5"
+name="S_ADRK_002Repository">
+	<codegen
+	classname="S_ADRK_002Repository"
+	namespace="S_ADRK_002">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="955ad33a-ba85-4a2a-96e0-7e51a33033c4"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		capname="form"
+		id="41f872fd-265d-4f02-aa18-08fe14e0ad64"
+		isrooted="True"
+		name="FrmAdr"
+		refimgid="4e8636d0-c13e-438a-9bd3-01f94af16326"
+		refpath="/form[@controlname='frmAdr']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="956f76b9-76ff-4208-b320-b8601f4950e2"
+			name="TitleBar100Kundenstamm"
+			refimgid="3ee0acd9-e445-4146-822d-aee28eda1320"
+			refpath="/form[@controlname='frmAdr']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="5e48aa47-8e48-46a6-acce-60979884583e"
+			name="PbSystemHilfeInfoProg"
+			refimgid="705f2fd7-6a35-49f5-b06f-7cb58e54fabc"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='searchContainer']/form/container[@controlname='RibbonBar']/container[@controlname='SystemGroup']/button[@controlname='pbSystem_HilfeInfoProg']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']/?/?/form[@controlname='frmSearchPage']/?/?/container[@controlname='SystemGroup']/button[@controlname='pbSystem_HilfeInfoProg']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="a78bbe93-b194-4f56-bb90-2ce9b5dd3778"
+			name="KND_NR"
+			refimgid="06381e31-26de-4d76-aec2-13f774e97968"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']/container[@controlname='ClientArea']/?/?/text[@controlname='dfAdr_nr']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="c11a227e-b070-41a5-999d-c6cade72e9d6"
+			name="Kopieren_Button"
+			refimgid="86fe2a7f-e77d-4317-aaa4-5937801e555d"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup2']/button[@controlname='pbStandard3']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']/?/?/container[@controlname='cRibbonGroup2']/button[@controlname='pbStandard3']
+			</item>
+			<folder
+			addcaps="tabpage,control,nativewindow"
+			capname="tabpage"
+			id="c7fb1a0c-1cfb-4e40-8a41-f80809c0285c"
+			isrooted="True"
+			name="TpAllgemein"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgemein']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="3bd0f474-9429-4685-a8ba-e61973f65b58"
+				name="UID_Nr"
+				refimgid="821937fd-c93b-4b92-934d-a8d590104803"
+				refpath="/form[@controlname='frmAdr']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgemein']/container[@controlname='ucUid']/text[@controlname='dfAdr_uid']/text[@accessiblerole='Text']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAdr']//tabpage[@controlname='tpAllgemein']/container[@controlname='ucUid']/text[@controlname='dfAdr_uid']/text[@accessiblerole='Text']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="3313c6e7-89ae-4c40-bf51-49868c014119"
+				name="Zahlungsart"
+				refimgid="96470817-093f-4408-8692-487cd241719a"
+				refpath="/form[@controlname='frmAdr']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgemein']/text[@controlname='dfKlkt_zahlart']/text[@accessiblename='Zahlungsart:']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAdr']//tabpage[@controlname='tpAllgemein']/text[@controlname='dfKlkt_zahlart']/text[@accessiblename='Zahlungsart:']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="bfd1951c-48fc-41de-979b-2a1d5da6980c"
+				name="Zahlungsbed"
+				refimgid="e59eeac1-aa6d-45e5-8ac6-38bb7bf4b02b"
+				refpath="/form[@controlname='frmAdr']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgemein']/text[@controlname='dfZlbd_cd']/text[@accessiblename='Zahlungsbed:']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAdr']//tabpage[@controlname='tpAllgemein']/text[@controlname='dfZlbd_cd']/text[@accessiblename='Zahlungsbed:']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="e7ffdd28-d0ba-40f1-a72d-8ff4486939e4"
+				name="None"
+				refimgid="43003377-3041-4fd7-86ce-cc01ca0f73b1"
+				refpath="/form/container/tabpagelist/tabpage/container/text/text"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAdr']//tabpage[@controlname='tpAllgemein']//text
+				</item>
+				<basepath>
+					/form[@controlname='frmAdr']//tabpage[@controlname='tpAllgemein']
+				</basepath>
+			</folder>
+			<folder
+			capname="form"
+			id="938f9f87-133c-4d7e-b0a0-88ee11df9f3d"
+			isrooted="True"
+			name="FrmSearchPage"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="1e1151bf-e1bc-440f-ab9e-5b27722a070b"
+				name="Row1Column0"
+				refimgid="8c7b28b8-2d72-499c-97bc-aa1a3fc1f91c"
+				refpath="/form[@controlname='frmAdr']/container[@controlname='searchContainer']/form/container[@controlname='ClientArea']/container[@controlname='searchResult']/container/element[@controlname='mainGrid']/table/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAdr']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="0d296c79-e8c0-49ad-977c-33302e7597c0"
+				name="Debitor"
+				refimgid="27911b5b-cab3-4568-969f-a004c1441331"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAdr']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@text=$KundennummerALT]
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="08bc6411-784b-42d3-9189-656384a1fe6e"
+				name="Suchleiste"
+				refimgid="8f072240-9507-4785-bef8-8312e23b5ab5"
+				refpath="/form[@controlname='frmAdr']/container[@controlname='searchContainer']/form/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container/text/text[@accessiblerole='Text']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAdr']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup1']//text[@accessiblerole='Text']
+				</item>
+				<basepath>
+					/form[@controlname='frmAdr']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']
+				</basepath>
+			</folder>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="ac1b051a-8612-44d8-b868-ea10032c3233"
+			name="Speicher_Button"
+			refimgid="5b78d774-cb0e-4138-831a-377fad2274a9"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']/?/?/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="8e949cf1-06cc-41e3-a4d8-ec83d1bb9baa"
+			name="Extras"
+			refimgid="ca4dd876-3930-4d9f-ae10-8e431f2a047b"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='RibbonBar']/container[@controlname='SperrenGroup']/button[@controlname='pbStandard2']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']/?/?/container[@controlname='SperrenGroup']/button[@controlname='pbStandard2']
+			</item>
+			<item
+			addcaps="tabpage,control,nativewindow"
+			capname="tabpage"
+			id="1cdfafb1-ddfa-4acc-8a94-74ce64841e85"
+			name="TpAllgemein1"
+			refimgid="6e44d983-67f1-4e83-844f-25e83f99a1fb"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='ClientArea']/tabpagelist/tabpage[@controlname='tpAllgemein']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']/container[@controlname='ClientArea']/?/?/tabpage[@controlname='tpAllgemein']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="f977ee99-48c3-494f-9114-2dc23f7714bd"
+			name="DfKlktTourcdBez"
+			refimgid="1bed7642-ca8c-4c74-bf53-74ec81311ea8"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='ClientArea']/container[@controlname='frame2']/text[@controlname='dfKlkt_tourcd_bez']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']/container[@controlname='ClientArea']/?/?/text[@controlname='dfKlkt_tourcd_bez']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="5e2a290e-4a7c-4e76-8fc8-186d58e82c03"
+			name="DfAdrAnrzeh"
+			refimgid="0b66a6fc-e0dd-4182-9660-70ac6b695524"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='ClientArea']/container[@controlname='frame2']/text[@controlname='dfAdr_anrzeh']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']/container[@controlname='ClientArea']/?/?/text[@controlname='dfAdr_anrzeh']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="dfe9cc71-6ebd-49e0-9569-16ee55f24501"
+			name="Text"
+			refimgid="fd3f0a25-6b8f-4705-91e9-bb891fd95094"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='ClientArea']/container[@controlname='frame2']/text[@controlname='dfAdr_adresse3']/text[@accessiblerole='Text']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']//text[@controlname='dfAdr_adresse3']/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="3ad7cce0-c36d-4f92-9cc4-f4ebc007055e"
+			name="Tour"
+			refimgid="108280eb-e0cb-4f01-84a1-7ef9d2d556de"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='ClientArea']/container[@controlname='frame2']/text[@controlname='dfKlkt_tourcd']/text[@accessiblename='Tour']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']//text[@controlname='dfKlkt_tourcd']/text[@accessiblename='Tour']
+			</item>
+			<item
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="f3150789-656a-4800-9c48-8c4c7752d3b1"
+			name="ClientArea"
+			refimgid="ea6045c3-0803-459d-994d-1104b24c8064"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='ClientArea']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']/container[@controlname='ClientArea']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="8ce847c1-40d2-4dc3-92a1-b180723aef59"
+			name="Text1"
+			refimgid="76af05c9-7e58-44d8-b599-1438f5d88a5a"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='ClientArea']/container[@controlname='frame2']/text[@controlname='dfAdr_ort']/text[@accessiblerole='Text']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']//text[@controlname='dfAdr_ort']/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="982065fc-7b6f-4bc9-b0d3-dc8c745211d6"
+			name="Button_Bank"
+			refimgid="ffc064b5-9ec7-458f-815a-4cea63db34c9"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup3']/button[@controlname='pbCommon_Bank']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']/?/?/container[@controlname='cRibbonGroup3']/button[@controlname='pbCommon_Bank']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="3569c67d-5494-45a9-aa84-f79577d2d786"
+			name="DfTextSADRESSE1"
+			refimgid="f5ccb503-8944-4a81-8e3f-76b171c579ee"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='ClientArea']/container[@controlname='frame2']/text[@controlname='dfText_S_ADRESSE_1']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']/container[@controlname='ClientArea']/?/?/text[@controlname='dfText_S_ADRESSE_1']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="9a7891c4-5f07-493e-921e-3beda06a3986"
+			name="Text2"
+			refimgid="11221372-bf67-49e8-8eea-ec295e238f09"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='ClientArea']/container[@controlname='frame2']/text[@controlname='dfAdr_adresse1']/text[@accessiblerole='Text']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']//text[@controlname='dfAdr_adresse1']/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="7ffeb761-f5c3-4d16-b249-388e1ea9c609"
+			name="Text3"
+			refimgid="9417e22e-0222-49ac-a350-a435efdcc6d8"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='ClientArea']/container[@controlname='frame2']/text[@controlname='dfAdr_adresse5']/text[@accessiblerole='Text']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']//text[@controlname='dfAdr_adresse5']/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="b9e37b6b-fcc7-44ad-b33a-32da653348d2"
+			name="Firma1"
+			refimgid="9e9aba4a-0462-4c58-a593-387f6d3fb3ec"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='ClientArea']/container[@controlname='frame2']/text[@controlname='dfAdr_adresse1']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']/container[@controlname='ClientArea']/?/?/text[@controlname='dfAdr_adresse1']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="b098fc88-1019-494b-bf19-52982af8528a"
+			name="Strasse"
+			refimgid="7290af81-5fad-4b22-b281-0237d3255ef2"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='ClientArea']/container[@controlname='frame2']/text[@controlname='dfAdr_adresse5']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']/container[@controlname='ClientArea']/?/?/text[@controlname='dfAdr_adresse5']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="3134b807-d167-420b-ae11-6f517c23f4e9"
+			name="Diverse_Button"
+			refimgid="cb130573-69c5-4cb4-9e5e-f499ce557a5e"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup3']/button[@controlname='pbCommon_Diverse']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']/?/?/container[@controlname='cRibbonGroup3']/button[@controlname='pbCommon_Diverse']
+			</item>
+			<basepath>
+				/form[@controlname='frmAdr']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAHBJREFUOE/tjkEKgDAMBHP0IIUi4lt9g2/oF/xiZIWFjdQq4kXwMKRQ
+ZhJbu8mV0o+BJQ2BOeXAH/hcwM12HgUgYkLSSAjgA5JOiuQyoLJeQFSuBiCdbT/KzYCGKGPeDuBN
+iQGlGgC6HTBAdPsLgewbF6W61N1ckdcAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="98e5762d-ac9a-4e2b-88e6-fed046616712"
+		isrooted="True"
+		name="Dlgcopyadr"
+		refpath="/form[@controlname='dlgcopyadr']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="ef0aa166-d543-4f29-912f-d6b2fddc5101"
+			name="TitleBar100KundenstammKopieren"
+			refimgid="b463a9e2-1526-4b6b-af49-509a387454b6"
+			refpath="/form[@controlname='dlgcopyadr']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgcopyadr']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="230064de-b059-4ed9-93c4-bdaa2cb5dca4"
+			name="Nummer_generieren"
+			refimgid="40bdcae3-7870-44b5-b3ac-979cd80da10a"
+			refpath="/form[@controlname='dlgcopyadr']/button[@controlname='pbNummer']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgcopyadr']/button[@controlname='pbNummer']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="b28995ea-b139-4788-a5c3-28ea049be8aa"
+			name="Neue_NUMMER"
+			refimgid="f259d9db-de87-4f46-9407-0d66a530834b"
+			refpath="/form[@controlname='dlgcopyadr']/container[@controlname='frame1']/text[@controlname='dfAdr_nrneu']/text[@accessiblerole='Text']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgcopyadr']/container[@controlname='frame1']/text[@controlname='dfAdr_nrneu']/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="bfbb34d6-a01c-4ff7-a591-c6660406d7d2"
+			name="OK"
+			refimgid="5e84d61a-44f2-4b59-a19c-2ff69c40b403"
+			refpath="/form[@controlname='dlgcopyadr']/button[@controlname='pbok']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgcopyadr']/button[@controlname='pbok']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="75b8128f-f380-47d7-8122-c3797aaf758e"
+			name="DfAdrNr"
+			refimgid="ff7060d9-6f0e-4615-a0eb-118e1afbadeb"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgcopyadr']/?/?/text[@controlname='dfAdr_nr']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="c31764d2-e2c9-45f0-8a71-18f5df685870"
+			name="DfAdrNrneu"
+			refimgid="0f03978b-5d82-49df-90aa-2a27bc0b7c75"
+			refpath="/form[@controlname='dlgcopyadr']/container[@controlname='frame1']/text[@controlname='dfAdr_nrneu']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgcopyadr']/?/?/text[@controlname='dfAdr_nrneu']
+			</item>
+			<basepath>
+				/form[@controlname='dlgcopyadr']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="contextmenu,control,nativewindow"
+		capname="contextmenu"
+		id="3b7157ab-2a05-43f1-aa95-6b59589fd4ed"
+		isrooted="True"
+		name="SADR"
+		refpath="/contextmenu[@processname='S_ADR']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="3c501a7d-f803-4cff-afd9-95ac40c7dd88"
+			name="UIDPruefung"
+			refimgid="9b7bd7a1-3858-44c8-a38f-823b60164820"
+			refpath="/contextmenu[@processname='S_ADR']/menuitem[@accessiblename='UID-Prüfung']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='S_ADR']/menuitem[@accessiblename='UID-Prüfung']
+			</item>
+			<basepath>
+				/contextmenu[@processname='S_ADR']
+			</basepath>
+			<icon>
+				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
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="16ac99aa-9d77-42d4-8e18-3693bc3af9be"
+		isrooted="True"
+		name="TblUidCheck"
+		refpath="/form[@controlname='tblUidCheck']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="aaef724a-2d8c-4f74-b87c-9f9e28b04ff1"
+			name="Laden"
+			refimgid="1a183163-d8b3-4426-9d7d-9920acb8e6f2"
+			refpath="/form[@controlname='tblUidCheck']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblUidCheck']/container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Load']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="610e7f3c-dd88-4adb-bcc9-a75e2b6c67d4"
+			name="ColAdrUidnrRow1"
+			refimgid="c8e0b17a-5b79-44ec-b422-4393aad8c4a8"
+			refpath="/form[@controlname='tblUidCheck']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAdr_uidnr Row 1']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblUidCheck']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAdr_uidnr Row 1']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="83969c4f-45ae-473e-bfd4-c30b18dca0cf"
+			name="Schliessen"
+			refimgid="5adccdb6-8371-43be-a292-fdad05c94545"
+			refpath="/form[@controlname='tblUidCheck']/titlebar/button[@accessiblename='Schließen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblUidCheck']/?/?/button[@accessiblename='Schließen']
+			</item>
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="0a9fc38a-a7d4-4b4c-b30c-2d2f96efaf35"
+			name="FlexGrid"
+			refimgid="76e85b85-e4bb-4b92-bebd-7a6760f2690c"
+			refpath="/form[@controlname='tblUidCheck']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblUidCheck']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="42a0417d-3e7b-4e2e-a031-bbb7e80b7791"
+			name="DfAdrNrVon"
+			refimgid="18f387b5-56d1-4476-a248-bfbfa3a5a84a"
+			refpath="/form[@controlname='tblUidCheck']/container[@controlname='ToolBar']/text[@controlname='dfAdr_nr_von']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblUidCheck']/?/?/text[@controlname='dfAdr_nr_von']
+			</item>
+			<basepath>
+				/form[@controlname='tblUidCheck']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="13bc3237-ad6b-4375-9784-b1583a50d364"
+		isrooted="True"
+		name="DlgMessageBox"
+		refimgid="0b877dfc-4d72-47d5-86a2-ce1c0fea4080"
+		refpath="/form[@controlname='dlgMessageBox']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="a2f012dd-39f2-4118-a8b2-083833a09cdf"
+			name="OK"
+			refimgid="ab124862-c2be-42c0-803f-b1af200f7bf6"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button0']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="4b8758b3-925f-4ad1-b515-174a3e75f5bb"
+			name="Fehlermeldung_UID_Nicht_gueltig"
+			refimgid="0f2c4329-2841-4052-a300-19dc0c86f7e6"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/text[@text~'UID-Prüfung: die angegebene UID ist nicht gültig.']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="ff63be1d-1fbe-4cbc-bae2-e83029fee859"
+			name="Meldung_gueltige_UID"
+			refimgid="bedb8bd1-4faa-487d-a89d-57119eaff42e"
+			refpath="/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+			</item>
+			<basepath>
+				/form[@controlname='dlgMessageBox']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<item
+		addcaps="button,control,nativewindow"
+		capname="button"
+		id="8f9002fd-1d19-41b9-9892-15e7068a0c08"
+		name="Bearbeiten"
+		refimgid="37a6f19f-b461-4243-abd9-a2b09473c6d9"
+		refpath="/form[@controlname='tblUidCheck']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']"
+		robustPath=""
+		searchtimeout="30000ms">
+			/form[@controlname='tblUidCheck']/container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Save']
+		</item>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="b712c25d-425d-4aca-b2ec-bf0a00a44dca"
+		isrooted="True"
+		name="FrmKlbkAdr"
+		refimgid="0a64c4cd-7f20-44f1-8ac4-d6166b67a55d"
+		refpath="/form[@controlname='frmKlbkAdr']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="514f1da2-8952-4292-be54-7419a0036748"
+			name="Schliessen"
+			refimgid="7ff9bdf2-b958-479b-b667-0db5bd00f26a"
+			refpath="/form[@controlname='frmKlbkAdr']/titlebar/button[@accessiblename='Schließen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKlbkAdr']/?/?/button[@accessiblename='Schließen']
+			</item>
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="ae90f2f3-1547-4b13-a0a4-bb697a738e6a"
+			name="TitleBar100VerwaltungVonBankenFue"
+			refimgid="a8081d57-06be-43e1-8c56-a49d18c6e52a"
+			refpath="/form[@controlname='frmKlbkAdr']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKlbkAdr']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="28daed1f-31eb-42b6-8197-65896d3e8822"
+			name="Editieren_speicher_Bank"
+			refimgid="afd3d1b8-13c6-4ea5-a46b-ed2b5e4a3a2e"
+			refpath="/form[@controlname='frmKlbkAdr']/container[@controlname='ToolBar']/button[@controlname='pbSpeichern']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKlbkAdr']/?/?/button[@controlname='pbSpeichern']
+			</item>
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="27fb62f5-cb3d-4655-86fc-ddd7013e2f73"
+			name="FlexGrid"
+			refimgid="aa724ab3-19c1-4b18-8577-c9d1a66ef074"
+			refpath="/form[@controlname='frmKlbkAdr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKlbkAdr']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="d604c703-a45c-4856-bde6-b9a0dccb7923"
+			name="SomeText"
+			refimgid="41cd708f-bf7c-4591-9968-18539ac9e00b"
+			refpath="/form[@controlname='frmKlbkAdr']/container[@controlname='ChildTableWindow']/element/text[@controltypename='']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKlbkAdr']/container[@controlname='ChildTableWindow']/?/?/text[@controltypename='']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="82f1afb5-1b08-4dd0-8729-32cb1201a7c7"
+			name="Bankname"
+			refimgid="10b83e52-3abd-44a0-9bf1-2ce7fb4be24c"
+			refpath="/form[@controlname='frmKlbkAdr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKlbk_name Row 1']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKlbkAdr']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKlbk_name Row 1']
+			</item>
+			<basepath>
+				/form[@controlname='frmKlbkAdr']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="acb2e0ca-0031-49c9-9a28-aa9e6dfd190c"
+		isrooted="True"
+		name="DlgKldv"
+		refpath="/form[@controlname='dlgKldv']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="c1a2b3f7-9031-4aac-9b0d-eefc13d9c36c"
+			name="TitleBar100DiverseAdressen"
+			refimgid="2e4e5877-8d9c-4cdf-a7ef-88b532bc7c9a"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgKldv']/titlebar[@accessiblevalue='[100]  Diverse Adressen']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="01b1ef6d-2b39-491b-a0b6-46f1c659e942"
+			name="PbNeueKldv"
+			refimgid="82b21229-2e28-4f3d-b745-ff128fcc6469"
+			refpath="/form[@controlname='dlgKldv']/button[@controlname='pbNeueKldv']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgKldv']/button[@controlname='pbNeueKldv']
+			</item>
+			<item
+			addcaps="checkbox,control,nativewindow"
+			capname="checkbox"
+			id="30b76675-7544-4845-b420-26a2b9097e68"
+			name="CbAenderungsinfo"
+			refimgid="19bebc3c-48bd-429a-8ed6-725d1d3b85c9"
+			refpath="/form[@controlname='dlgKldv']/checkbox[@controlname='cbAenderungsinfo']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgKldv']/checkbox[@controlname='cbAenderungsinfo']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="76ea3c2a-1c25-4b1e-8412-d87c86cbc7f3"
+			name="ColKldvNameRow1"
+			refimgid="c1c89bfb-cd9c-43f3-a533-bb9795deb635"
+			refpath="/form[@controlname='dlgKldv']/container[@controlname='tblKldv']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKldv_name Row 1']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgKldv']/container[@controlname='tblKldv']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKldv_name Row 1']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="a66aca59-aedc-4be0-8a19-1724c541c0d8"
+			name="Schliessen"
+			refimgid="96eb6633-2c74-4820-8f9f-adbbdb2a7260"
+			refpath="/form[@controlname='dlgKldv']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgKldv']/?/?/button[@accessiblename='Schließen']
+			</item>
+			<basepath>
+				/form[@controlname='dlgKldv']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="f61a8222-bbed-4f23-814e-0abac17e3b62"
+		isrooted="True"
+		name="DlgDiverse"
+		refpath="/form[@controlname='dlgDiverse']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="7f716338-e739-4ebc-bad5-d88697b6b6bb"
+			name="Text"
+			refimgid="1b383971-1ac3-4c3b-9f0f-0417e52166d9"
+			refpath="/form[@controlname='dlgDiverse']/container[@controlname='frame1']/text[@controlname='dfKldv_adresse1']/text[@accessiblerole='Text']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgDiverse']/?/?/text[@controlname='dfKldv_adresse1']/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="ff0dfce4-7d5a-4220-a176-ce5e2f205a9d"
+			name="Text1"
+			refimgid="c74af996-ca94-4371-98ef-995c329f025c"
+			refpath="/form[@controlname='dlgDiverse']/container[@controlname='frame1']/text[@controlname='dfKldv_adresse5']/text[@accessiblerole='Text']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgDiverse']/?/?/text[@controlname='dfKldv_adresse5']/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="5c0054fb-0383-4ca1-a9e1-7983732baf8e"
+			name="PbBank"
+			refimgid="83b6ac6a-4a2c-4c2d-9bf6-479c90417f85"
+			refpath="/form[@controlname='dlgDiverse']/container[@controlname='frame1']/button[@controlname='pbBank']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgDiverse']/?/?/button[@controlname='pbBank']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="bf27ba8a-d47c-4da0-9304-fdbc831fb4f5"
+			name="PbSpeichern"
+			refimgid="26b7206c-711e-4274-ac15-1e7fc6e18b2e"
+			refpath="/form[@controlname='dlgDiverse']/container[@controlname='frame1']/button[@controlname='pbSpeichern']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgDiverse']/?/?/button[@controlname='pbSpeichern']
+			</item>
+			<basepath>
+				/form[@controlname='dlgDiverse']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<item
+		addcaps="cell,accessible"
+		capname="cell"
+		id="e7e89448-d854-4af3-ba10-f6df3bc477c0"
+		name="IBAN"
+		refimgid="377929a0-9838-4b68-913d-93a51fe4ed6c"
+		refpath="/form[@controlname='frmKlbkAdr']/container[@controlname='ChildTableWindow']/element/table/row[@accessiblename='Row 1']/cell[@accessiblename='colKlbk_iban Row 1']"
+		robustPath=""
+		searchtimeout="30000ms">
+			/form[@controlname='frmKlbkAdr']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKlbk_iban Row 1']
+		</item>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="1ddbb5f2-a7bc-4234-a5cc-f1b5cde79cab"
+		name="KundennummerALT">
+			202204
+		</var>
+	</variables>
+</repository>

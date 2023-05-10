@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{ECE0F093-05EC-4617-9D3E-E9DCC11ED414}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Z_PROJ_002</RootNamespace>
+    <AssemblyName>Z_PROJ_002</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>442434ac-9397-4989-8000-0fd9782a4975</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>3a294a57-052c-4761-bc6a-92723874e79a</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>802e38ec-d40c-4642-9a1a-d29f7b3e2e5d</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bb3863b5-35cb-41a2-9370-5dd3f6d067c8</id>
+      <BoundTo>b2acf41d-6703-4cb6-9741-d87ca74255db</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT.UserCode.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>93dd48a0-a3a3-4cd2-8556-b92274a237e6</id>
+      <BoundTo>b2acf41d-6703-4cb6-9741-d87ca74255db</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Projekt_I_UMWELT2_aendern_speichern.cs">
+      <DependentUpon>Projekt_I_UMWELT2_aendern_speichern.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fd7497a6-ac62-4403-ad7e-d48e8db0f39e</id>
+      <BoundTo>17a65667-832a-44d8-9071-84393ca007ed</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Projekt_I_UMWELT2_aendern_speichern.UserCode.cs">
+      <DependentUpon>Projekt_I_UMWELT2_aendern_speichern.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3853ef84-73c2-4597-8a97-986bb8f4db52</id>
+      <BoundTo>17a65667-832a-44d8-9071-84393ca007ed</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Projekt_I_UMWELT2_pruefen_nach_Aenderung.cs">
+      <DependentUpon>Projekt_I_UMWELT2_pruefen_nach_Aenderung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>01dd73a6-b680-43f3-9f90-747f3f537182</id>
+      <BoundTo>1a6daf78-28c6-4553-b769-b34d0d7377b6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Projekt_I_UMWELT2_pruefen_nach_Aenderung.UserCode.cs">
+      <DependentUpon>Projekt_I_UMWELT2_pruefen_nach_Aenderung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8124b779-1410-45b4-b5dd-7e6a304527f3</id>
+      <BoundTo>1a6daf78-28c6-4553-b769-b34d0d7377b6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Projekt_I_UMWELT2_pruefen_Phasen_nach_Aenderung.cs">
+      <DependentUpon>Projekt_I_UMWELT2_pruefen_Phasen_nach_Aenderung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>50dce523-139c-4299-866f-7edff1bab2e8</id>
+      <BoundTo>7a43466c-bf20-4f0b-82bc-36ea664f928b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Projekt_I_UMWELT2_pruefen_Phasen_nach_Aenderung.UserCode.cs">
+      <DependentUpon>Projekt_I_UMWELT2_pruefen_Phasen_nach_Aenderung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8c6d17d6-a0f5-4098-b2f5-d172ed515a13</id>
+      <BoundTo>7a43466c-bf20-4f0b-82bc-36ea664f928b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Projekt_I_UMWELT_pruefen_vor_Aenderung.cs">
+      <DependentUpon>Projekt_I_UMWELT_pruefen_vor_Aenderung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7df72f76-7cc2-4e5d-b14b-5137236cb1f6</id>
+      <BoundTo>07509fb9-d204-4ccf-a51e-255ff0325e2e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Projekt_I_UMWELT_pruefen_vor_Aenderung.UserCode.cs">
+      <DependentUpon>Projekt_I_UMWELT_pruefen_vor_Aenderung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5d533f93-c991-4f1c-a3b8-ccb84f432f21</id>
+      <BoundTo>07509fb9-d204-4ccf-a51e-255ff0325e2e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Projekt_I_UMWELT_aufrufen.cs">
+      <DependentUpon>Projekt_I_UMWELT_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8637130a-39ac-4259-be78-252eb07d33c0</id>
+      <BoundTo>e3f9880e-eeb9-44e3-8b98-98730e832043</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Projekt_I_UMWELT_aufrufen.UserCode.cs">
+      <DependentUpon>Projekt_I_UMWELT_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e6738946-17c6-4881-807c-269139d0a0d8</id>
+      <BoundTo>e3f9880e-eeb9-44e3-8b98-98730e832043</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Projekt_I_UMWELT_kopieren_nach_I_UMWELT2.cs">
+      <BoundTo>f495cd01-560e-4473-a39c-b5710a0aedb6</BoundTo>
+      <DependentUpon>Projekt_I_UMWELT_kopieren_nach_I_UMWELT2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5dc7b78c-8771-49e7-bac8-7e463643a8f8</id>
+    </Compile>
+    <Compile Include="Recordings\Projekt_I_UMWELT_kopieren_nach_I_UMWELT2.UserCode.cs">
+      <BoundTo>f495cd01-560e-4473-a39c-b5710a0aedb6</BoundTo>
+      <DependentUpon>Projekt_I_UMWELT_kopieren_nach_I_UMWELT2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1fff6fdd-b595-4dc6-a71e-bbbe3e0b5a16</id>
+    </Compile>
+    <Compile Include="Recordings\Projekt_K2003_aufrufen.cs">
+      <DependentUpon>Projekt_K2003_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7a159427-85ee-46ae-a9a9-463f89b09d5c</id>
+      <BoundTo>68dde4fe-6634-48fd-b4fe-935b9b8d6d3f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Projekt_K2003_aufrufen.UserCode.cs">
+      <DependentUpon>Projekt_K2003_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e2115dd8-3fef-4b87-9652-8a21eb435272</id>
+      <BoundTo>68dde4fe-6634-48fd-b4fe-935b9b8d6d3f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Projekt_K2003_kopieren_nach_K2233.cs">
+      <BoundTo>bd809aa9-5f42-4808-9f91-29fa67743e97</BoundTo>
+      <DependentUpon>Projekt_K2003_kopieren_nach_K2233.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>770331f5-7d67-4546-b948-4dc404bd73a5</id>
+    </Compile>
+    <Compile Include="Recordings\Projekt_K2003_kopieren_nach_K2233.UserCode.cs">
+      <BoundTo>bd809aa9-5f42-4808-9f91-29fa67743e97</BoundTo>
+      <DependentUpon>Projekt_K2003_kopieren_nach_K2233.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>591e23c5-cedc-4be6-b7a7-b49768c50271</id>
+    </Compile>
+    <Compile Include="Recordings\Projekt_K2233_pruefen_Daten.cs">
+      <BoundTo>816b6587-99b2-439c-9d5a-6479de8e8da4</BoundTo>
+      <DependentUpon>Projekt_K2233_pruefen_Daten.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f513ee85-4e43-4ddc-802b-8d3b3cde5062</id>
+    </Compile>
+    <Compile Include="Recordings\Projekt_K2233_pruefen_Daten.UserCode.cs">
+      <BoundTo>816b6587-99b2-439c-9d5a-6479de8e8da4</BoundTo>
+      <DependentUpon>Projekt_K2233_pruefen_Daten.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a3931ad9-74ab-4711-858a-c70a4abd1f18</id>
+    </Compile>
+    <Compile Include="Recordings\Projekt_K2233_pruefen_Phasen.cs">
+      <DependentUpon>Projekt_K2233_pruefen_Phasen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4cb69028-ae68-4868-9d98-93bfa1159fd9</id>
+      <BoundTo>368ae518-9f36-47e4-baa8-b76b670a57d9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Projekt_K2233_pruefen_Phasen.UserCode.cs">
+      <DependentUpon>Projekt_K2233_pruefen_Phasen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2103aca5-2166-45a2-ae8c-ba55e8c84ed6</id>
+      <BoundTo>368ae518-9f36-47e4-baa8-b76b670a57d9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2bc1b5b2-2c31-45b5-ae59-9c5540440a9c</id>
+      <BoundTo>f8276688-2cac-4c69-9211-fe5dc7584888</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8cf5f9d2-a3f5-42c8-8487-0f1087572ad6</id>
+      <BoundTo>f8276688-2cac-4c69-9211-fe5dc7584888</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Zurueck_zur_Suche.cs">
+      <BoundTo>ac68e34c-39f4-4448-b6a1-93ad67ea495c</BoundTo>
+      <DependentUpon>Zurueck_zur_Suche.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ae8f0e12-e016-4a3b-84b9-d527160238c0</id>
+    </Compile>
+    <Compile Include="Recordings\Zurueck_zur_Suche.UserCode.cs">
+      <BoundTo>ac68e34c-39f4-4448-b6a1-93ad67ea495c</BoundTo>
+      <DependentUpon>Zurueck_zur_Suche.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ba974bec-cf3a-42f9-98eb-44866928567e</id>
+    </Compile>
+    <Compile Include="Z_PROJ_002Repository.cs">
+      <BoundTo>442434ac-9397-4989-8000-0fd9782a4975</BoundTo>
+      <DependentUpon>Z_PROJ_002Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>fa379492-2b57-4e0d-a8b4-a15568ae7c78</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>d600decc-54cc-4ead-8e47-34ab3db116ff</id>
+    </None>
+    <None Include="Recordings\CloseAUT.rxrec">
+      <id>b2acf41d-6703-4cb6-9741-d87ca74255db</id>
+      <recordtableid>3a4bbe1e-3877-4476-ae5e-96d71772d057</recordtableid>
+      <BoundTo>442434ac-9397-4989-8000-0fd9782a4975</BoundTo>
+    </None>
+    <None Include="Recordings\Projekt_I_UMWELT2_aendern_speichern.rxrec">
+      <BoundTo>442434ac-9397-4989-8000-0fd9782a4975</BoundTo>
+      <id>17a65667-832a-44d8-9071-84393ca007ed</id>
+      <recordtableid>e54bce37-729c-4a88-8ec8-c07a6213ae21</recordtableid>
+    </None>
+    <None Include="Recordings\Projekt_I_UMWELT2_pruefen_nach_Aenderung.rxrec">
+      <BoundTo>442434ac-9397-4989-8000-0fd9782a4975</BoundTo>
+      <id>1a6daf78-28c6-4553-b769-b34d0d7377b6</id>
+      <recordtableid>ddc12dca-2d4a-4cda-bcd4-b1913f88e756</recordtableid>
+    </None>
+    <None Include="Recordings\Projekt_I_UMWELT2_pruefen_Phasen_nach_Aenderung.rxrec">
+      <BoundTo>442434ac-9397-4989-8000-0fd9782a4975</BoundTo>
+      <id>7a43466c-bf20-4f0b-82bc-36ea664f928b</id>
+      <recordtableid>44069391-3124-43b0-994f-109f9f1053cf</recordtableid>
+    </None>
+    <None Include="Recordings\Projekt_I_UMWELT_pruefen_vor_Aenderung.rxrec">
+      <BoundTo>442434ac-9397-4989-8000-0fd9782a4975</BoundTo>
+      <id>07509fb9-d204-4ccf-a51e-255ff0325e2e</id>
+      <recordtableid>71e2eefd-06c7-4139-84a4-5d8d30d49649</recordtableid>
+    </None>
+    <None Include="Recordings\Projekt_I_UMWELT_aufrufen.rxrec">
+      <BoundTo>442434ac-9397-4989-8000-0fd9782a4975</BoundTo>
+      <id>e3f9880e-eeb9-44e3-8b98-98730e832043</id>
+      <recordtableid>1bc27c46-235b-43bb-a00f-6f60953581d4</recordtableid>
+    </None>
+    <None Include="Recordings\Projekt_I_UMWELT_kopieren_nach_I_UMWELT2.rxrec">
+      <BoundTo>442434ac-9397-4989-8000-0fd9782a4975</BoundTo>
+      <id>f495cd01-560e-4473-a39c-b5710a0aedb6</id>
+      <recordtableid>8a7764ba-7936-4f5e-afeb-f8051077b341</recordtableid>
+    </None>
+    <None Include="Recordings\Projekt_K2003_aufrufen.rxrec">
+      <id>68dde4fe-6634-48fd-b4fe-935b9b8d6d3f</id>
+      <recordtableid>26075437-2764-4b89-8273-bea5af27dd4a</recordtableid>
+      <BoundTo>442434ac-9397-4989-8000-0fd9782a4975</BoundTo>
+    </None>
+    <None Include="Recordings\Projekt_K2003_kopieren_nach_K2233.rxrec">
+      <BoundTo>442434ac-9397-4989-8000-0fd9782a4975</BoundTo>
+      <id>bd809aa9-5f42-4808-9f91-29fa67743e97</id>
+      <recordtableid>986245b3-b811-4402-8a78-a21245bee122</recordtableid>
+    </None>
+    <None Include="Recordings\Projekt_K2233_pruefen_Daten.rxrec">
+      <BoundTo>442434ac-9397-4989-8000-0fd9782a4975</BoundTo>
+      <id>816b6587-99b2-439c-9d5a-6479de8e8da4</id>
+      <recordtableid>84805007-5ee1-4244-8b0a-44e3daae16d8</recordtableid>
+    </None>
+    <None Include="Recordings\Projekt_K2233_pruefen_Phasen.rxrec">
+      <id>368ae518-9f36-47e4-baa8-b76b670a57d9</id>
+      <recordtableid>a8fdf8bf-595e-44e3-8ea7-05dcbd21ad63</recordtableid>
+      <BoundTo>442434ac-9397-4989-8000-0fd9782a4975</BoundTo>
+    </None>
+    <None Include="Recordings\StartAUT.rxrec">
+      <id>f8276688-2cac-4c69-9211-fe5dc7584888</id>
+      <recordtableid>e635cb53-cd28-4c9f-ac5a-88345a339b7c</recordtableid>
+      <BoundTo>442434ac-9397-4989-8000-0fd9782a4975</BoundTo>
+    </None>
+    <None Include="Recordings\Zurueck_zur_Suche.rxrec">
+      <BoundTo>442434ac-9397-4989-8000-0fd9782a4975</BoundTo>
+      <id>ac68e34c-39f4-4448-b6a1-93ad67ea495c</id>
+      <recordtableid>0eb27914-8413-48ba-9559-bc820d81bfe3</recordtableid>
+    </None>
+    <None Include="Z_PROJ_002Repository.rximg">
+      <BoundTo>442434ac-9397-4989-8000-0fd9782a4975</BoundTo>
+      <DependentUpon>Z_PROJ_002Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>d9d17627-cd44-49ba-b84f-8b08f4aeb70c</id>
+    </None>
+    <None Include="Z_PROJ_002Repository.rxrep">
+      <id>442434ac-9397-4989-8000-0fd9782a4975</id>
+      <repoid>69c76c66-c030-4a23-91c0-72e5919d6ff3</repoid>
+      <reporootid>df09de6d-ffbb-451e-a4be-ba01f4b76a2b</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Z_PROJ_002.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>68e7bd24-7e3f-4168-9475-dfaa9ef00c8c</id>
+    </Content>
+    <Content Include="Z_PROJ_002.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>7bbfb3de-2cab-4b8c-82cf-2eada41beded</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings">
+      <id>7357a2ea-b578-427e-b7df-61feac1e9769</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

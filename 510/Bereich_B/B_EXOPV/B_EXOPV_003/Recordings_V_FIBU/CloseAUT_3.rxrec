@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8b698f72-31a2-4627-b217-2dcef6758abe"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT_3"
+	namespace="B_EXOPV_003.Recordings_V_FIBU">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="500ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="b54be1a4-dad9-44bf-b251-2870324aa530">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bdad6f02-2d97-4c7b-9bdb-d6edabf0e925"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="56"
+				prefcap="titlebar"
+				rect="-898,-120,690,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  FIBU-Überleitung
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  FIBU-Überleitung
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblFIBU']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="8966f4db-13ec-421e-8083-2308ce3e8046"
+	name="B_EXOPV_003Repository"
+	relativepath="..\B_EXOPV_003Repository.rxrep">
+		<codegen
+		classname="B_EXOPV_003Repository"
+		namespace="B_EXOPV_003">
+		</codegen>
+		<rootfolder
+		id="b6da9a1a-ffb9-46bd-a1c4-1330a5ab138b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT_3.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

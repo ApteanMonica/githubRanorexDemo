@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="cbda5c47-e2e0-448a-be6f-22b22bbb4b06"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT_2"
+	namespace="K_AUSW_001.Recordings_K_IBUFE">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="1ea6221c-b36e-4faf-ac64-a8595aaa967f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="46f5f254-fd5a-4540-95f6-97bc75175d62"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblIbufe']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="d1f5ab38-0d4f-4817-8e21-2ec45e6e8158"
+	name="K_AUSW_001Repository"
+	relativepath="..\K_AUSW_001Repository.rxrep">
+		<codegen
+		classname="K_AUSW_001Repository"
+		namespace="K_AUSW_001">
+		</codegen>
+		<rootfolder
+		id="d133a9b2-b662-4d78-8fad-f761f0546b27"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT_2.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4844e4b9-0ab7-4c08-b3ae-fd573506933f"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Maske_schliessen_Mahnvorschlag_aendern"
+	namespace="B_MNDR_002.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<keyitem
+		action="Press"
+		data="F4, Alt"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="0a191982-b09b-44df-97de-2be79675e67c"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0460050a-71cf-4cae-b08b-d1caa59d747d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmVorschlagÄndern']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keyitem>
+	</recorditems>
+	<repository
+	id="e963c4ea-f8e9-4a01-91a9-2c2e72eb760c"
+	name="B_MNDR_002Repository"
+	relativepath="..\B_MNDR_002Repository.rxrep">
+		<codegen
+		classname="B_MNDR_002Repository"
+		namespace="B_MNDR_002">
+		</codegen>
+		<rootfolder
+		id="458b8b8f-3c9f-4152-b4e0-b9284895be86"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Maske_schliessen_Mahnvorschlag_aendern.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

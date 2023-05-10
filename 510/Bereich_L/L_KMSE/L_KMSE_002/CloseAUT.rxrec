@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="ed642ac2-bcec-43f8-9b20-dff39c075184"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="L_KMSE_002">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="fc421db9-ac87-4d11-84b5-114a96870a38">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c8892761-9f76-4a8c-8cdb-b1f18265b3d6"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='tblKmse']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="bfc28218-6f53-4d41-9045-c677284ae363"
+	name="L_KMSE_002Repository"
+	relativepath="L_KMSE_002Repository.rxrep">
+		<codegen
+		classname="L_KMSE_002Repository"
+		namespace="L_KMSE_002">
+		</codegen>
+		<rootfolder
+		id="ce2a249c-f239-4c7c-a926-531c18b65371"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

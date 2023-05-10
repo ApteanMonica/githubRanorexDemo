@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{999E3B5A-634D-4E41-887D-87FD7734BCE3}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>B_ZAHL_003</RootNamespace>
+    <AssemblyName>B_ZAHL_003</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>b341965d-7709-4944-9774-df03f6eb3d97</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>4d21e5ab-3e5d-4ea8-9d12-a70647f67e48</id>
+    </Compile>
+    <Compile Include="B_ZAHL_003Repository.cs">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <DependentUpon>B_ZAHL_003Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>04fb5903-6915-4d1a-bc7a-ff00f4e5d363</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>a9457a46-da2f-4042-bdb5-752ed2addb1b</id>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Aviso_Druck_Kontrolle_L303030.cs">
+      <BoundTo>42feb31c-4383-45ed-aee5-5cbf0e3939ad</BoundTo>
+      <DependentUpon>Aviso_Druck_Kontrolle_L303030.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fd89ee61-ab43-4bbd-8287-d23e6f817c1b</id>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Aviso_Druck_Kontrolle_L303030.UserCode.cs">
+      <BoundTo>42feb31c-4383-45ed-aee5-5cbf0e3939ad</BoundTo>
+      <DependentUpon>Aviso_Druck_Kontrolle_L303030.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cd9000a2-d955-4d9e-8dfe-1d9cc4e27106</id>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Aviso_Druck_Aufruf.cs">
+      <DependentUpon>Aviso_Druck_Aufruf.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7917da05-2940-4e02-bb2a-9e8bee5e4f73</id>
+      <BoundTo>ef9f64e1-8a4f-449b-b4bb-0233e09e1f18</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Aviso_Druck_Aufruf.UserCode.cs">
+      <DependentUpon>Aviso_Druck_Aufruf.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>23604866-0f5b-4a74-a88e-04a336353c38</id>
+      <BoundTo>ef9f64e1-8a4f-449b-b4bb-0233e09e1f18</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Aviso_Druck_Kontrolle_L303032.cs">
+      <DependentUpon>Aviso_Druck_Kontrolle_L303032.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a96ac476-9743-4124-9f7b-9c1c77bb64ce</id>
+      <BoundTo>7604f390-98c7-400e-9381-460849cc155f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Aviso_Druck_Kontrolle_L303032.UserCode.cs">
+      <DependentUpon>Aviso_Druck_Kontrolle_L303032.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cede194a-9113-4bbd-a4c8-c7f5562f7a07</id>
+      <BoundTo>7604f390-98c7-400e-9381-460849cc155f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Bankbeleg_Detailzeilen_pruefen.cs">
+      <DependentUpon>Bankbeleg_Detailzeilen_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d44f5a2a-5894-49b1-92f6-f88d90524cb3</id>
+      <BoundTo>cd7943b0-c464-4995-9e6f-b3be851e1bad</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Bankbeleg_Detailzeilen_pruefen.UserCode.cs">
+      <DependentUpon>Bankbeleg_Detailzeilen_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>073e4203-932c-41bb-a37b-d364fd41a576</id>
+      <BoundTo>cd7943b0-c464-4995-9e6f-b3be851e1bad</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Bankbeleg_Details_aufrufen.cs">
+      <DependentUpon>Bankbeleg_Details_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3617a050-faac-49bd-9acd-cc91aae2bf6d</id>
+      <BoundTo>0112b6a6-a56c-4c87-afac-cf4a587c6af2</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Bankbeleg_Details_aufrufen.UserCode.cs">
+      <DependentUpon>Bankbeleg_Details_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>75b40fd0-6e63-4ad5-a279-084a7e451df6</id>
+      <BoundTo>0112b6a6-a56c-4c87-afac-cf4a587c6af2</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Bankbeleg_erstellen.cs">
+      <DependentUpon>Bankbeleg_erstellen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ae254646-2418-4a60-b0b8-d9bbe992d58d</id>
+      <BoundTo>4f60ebf7-7ba5-408c-b371-a2c910cfd5af</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Bankbeleg_erstellen.UserCode.cs">
+      <DependentUpon>Bankbeleg_erstellen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b91953c0-41ef-469b-ab74-b99ef6f7c0b3</id>
+      <BoundTo>4f60ebf7-7ba5-408c-b371-a2c910cfd5af</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Bankbeleg_Meldungen_OK.cs">
+      <DependentUpon>Bankbeleg_Meldungen_OK.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>eb8cf001-dc66-491d-951e-5f12dece9237</id>
+      <BoundTo>2439e088-dccf-4460-b018-33acf1e2efcf</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Bankbeleg_Meldungen_OK.UserCode.cs">
+      <DependentUpon>Bankbeleg_Meldungen_OK.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ff3a7361-4ab1-49f5-91da-b4e9aac3c106</id>
+      <BoundTo>2439e088-dccf-4460-b018-33acf1e2efcf</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Bankbeleg_Summen_pruefen.cs">
+      <DependentUpon>Bankbeleg_Summen_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f106cc86-56d8-414f-8453-4d0e14fc6ad7</id>
+      <BoundTo>04f5360c-8921-4b3a-ac0d-e2dabbe71a5d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Bankbeleg_Summen_pruefen.UserCode.cs">
+      <DependentUpon>Bankbeleg_Summen_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cc0da97b-909e-4923-a8ea-e0953631d6cc</id>
+      <BoundTo>04f5360c-8921-4b3a-ac0d-e2dabbe71a5d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Register_Bankbeleg_aufrufen_pruefen.cs">
+      <BoundTo>53d463b2-0b75-4c13-9b2e-8d334b55ee7e</BoundTo>
+      <DependentUpon>Register_Bankbeleg_aufrufen_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c97adec9-9f80-46a4-bc62-1d3d4091918a</id>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Register_Bankbeleg_aufrufen_pruefen.UserCode.cs">
+      <BoundTo>53d463b2-0b75-4c13-9b2e-8d334b55ee7e</BoundTo>
+      <DependentUpon>Register_Bankbeleg_aufrufen_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a635a8a6-3353-4add-bc92-2200dc3ad666</id>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Bankbeleg_XML_speichern.cs">
+      <DependentUpon>Bankbeleg_XML_speichern.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1f9a1948-b115-4ec0-8b52-569e65c2e1cc</id>
+      <BoundTo>6565f6ee-93d2-4037-806b-374e5d48ceed</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Bankbeleg_XML_speichern.UserCode.cs">
+      <DependentUpon>Bankbeleg_XML_speichern.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cd6470b8-6a50-4487-a66f-0dd8c6d5aea2</id>
+      <BoundTo>6565f6ee-93d2-4037-806b-374e5d48ceed</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\CloseAUT.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e83ff19f-b1f0-4d34-ad43-85c33a6e3144</id>
+      <BoundTo>02bbf451-3878-4ca7-9883-7ccbcaa84738</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\CloseAUT.UserCode.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ef875531-898d-4254-a4a3-de8a0f122b8b</id>
+      <BoundTo>02bbf451-3878-4ca7-9883-7ccbcaa84738</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Bankbeleg_Fehler_Datum.cs">
+      <DependentUpon>Bankbeleg_Fehler_Datum.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5d5b0a76-d64d-49cb-b278-f50d3b5dac4b</id>
+      <BoundTo>fc85e0dc-d248-4bf8-b28d-5eb26951ffa3</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Bankbeleg_Fehler_Datum.UserCode.cs">
+      <DependentUpon>Bankbeleg_Fehler_Datum.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7fbd44b5-7444-4dd9-bb6e-96f69cdd8e52</id>
+      <BoundTo>fc85e0dc-d248-4bf8-b28d-5eb26951ffa3</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\DT_Begleitzettel_pruefen.cs">
+      <DependentUpon>DT_Begleitzettel_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4e53aec1-087a-4c4e-a435-489c98294a39</id>
+      <BoundTo>a227efd4-5b92-41c3-ab66-0a490ccf4752</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\DT_Begleitzettel_pruefen.UserCode.cs">
+      <DependentUpon>DT_Begleitzettel_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6829b0ab-7b42-4636-8e39-df90ce799499</id>
+      <BoundTo>a227efd4-5b92-41c3-ab66-0a490ccf4752</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Tagesdatum_ermitteln.cs">
+      <DependentUpon>Tagesdatum_ermitteln.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3a850268-ab26-4179-8d1b-7252a07fd5a7</id>
+      <BoundTo>9fe20f7d-0779-49d6-b29e-4632cfa7ee5d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Tagesdatum_ermitteln.UserCode.cs">
+      <DependentUpon>Tagesdatum_ermitteln.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>98becb3c-d910-4d65-a1ba-6f75feb229de</id>
+      <BoundTo>9fe20f7d-0779-49d6-b29e-4632cfa7ee5d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Zahldatum_Tagesdatum_setzen.cs">
+      <DependentUpon>Zahldatum_Tagesdatum_setzen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f2c03c5b-7288-4468-977c-3b96b1c8e2c5</id>
+      <BoundTo>28cc545e-3e54-4b45-bf92-5a0bb1272e8d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Zahldatum_Tagesdatum_setzen.UserCode.cs">
+      <DependentUpon>Zahldatum_Tagesdatum_setzen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>af7be69e-4716-439a-9cfd-2307d529ab9f</id>
+      <BoundTo>28cc545e-3e54-4b45-bf92-5a0bb1272e8d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Zahlungsvorschlag_pruefen.cs">
+      <DependentUpon>Zahlungsvorschlag_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>77c992b8-69db-43fb-aa8c-2160bf223b40</id>
+      <BoundTo>95955f3f-fa66-4db9-88fb-b354fcc28d2e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\Zahlungsvorschlag_pruefen.UserCode.cs">
+      <DependentUpon>Zahlungsvorschlag_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8ae8449a-30ca-4791-a3f6-6514b0fc3801</id>
+      <BoundTo>95955f3f-fa66-4db9-88fb-b354fcc28d2e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>95f893bf-b63b-4683-a092-535653590d47</id>
+      <BoundTo>62b5e474-e6b8-4c27-ab2f-6663cee246e6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_ZAHL\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>573ec348-25aa-4697-a0fc-fa66b386f790</id>
+      <BoundTo>62b5e474-e6b8-4c27-ab2f-6663cee246e6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_XML_Datei\Close_Editor.cs">
+      <BoundTo>43aa5d1a-8573-4d9f-8c1d-45156d729429</BoundTo>
+      <DependentUpon>Close_Editor.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>19fe7429-26df-429b-818b-df2f02cabee1</id>
+    </Compile>
+    <Compile Include="Recordings_XML_Datei\Close_Editor.UserCode.cs">
+      <BoundTo>43aa5d1a-8573-4d9f-8c1d-45156d729429</BoundTo>
+      <DependentUpon>Close_Editor.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>013ae5d1-1546-42f6-96e5-ccc6bfabc5b0</id>
+    </Compile>
+    <Compile Include="Recordings_XML_Datei\XML_Datei_loeschen.cs">
+      <DependentUpon>XML_Datei_loeschen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>21808b71-9f32-4196-9594-ab52d6c5a5b5</id>
+      <BoundTo>f8af86bb-67d4-46f9-8d66-90b0fa8c8f4b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_XML_Datei\XML_Datei_loeschen.UserCode.cs">
+      <DependentUpon>XML_Datei_loeschen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>89a23a38-6843-4dd5-9066-0eb0da1e5fd9</id>
+      <BoundTo>f8af86bb-67d4-46f9-8d66-90b0fa8c8f4b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_XML_Datei\XML_Datei_pruefen.cs">
+      <DependentUpon>XML_Datei_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b55f2013-7667-4d34-a47d-7844614c7a31</id>
+      <BoundTo>928a3987-1197-49da-b0f3-e9b487566313</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_XML_Datei\XML_Datei_pruefen.UserCode.cs">
+      <DependentUpon>XML_Datei_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3b8e1853-0c79-4ce8-9646-18699299cf6d</id>
+      <BoundTo>928a3987-1197-49da-b0f3-e9b487566313</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_XML_Datei\XML_Datei_oeffnen.cs">
+      <BoundTo>3b693bc1-60a8-4ddd-ae30-720e0c43c75a</BoundTo>
+      <DependentUpon>XML_Datei_oeffnen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2b674979-04ec-477c-8a9e-be6c79b785b1</id>
+    </Compile>
+    <Compile Include="Recordings_XML_Datei\XML_Datei_oeffnen.UserCode.cs">
+      <BoundTo>3b693bc1-60a8-4ddd-ae30-720e0c43c75a</BoundTo>
+      <DependentUpon>XML_Datei_oeffnen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b580d66f-0302-4417-a650-604534007dfe</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>fcb2ea9f-6903-4ae2-938a-bcfc81194294</id>
+    </None>
+    <None Include="B_ZAHL_003Repository.rximg">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <DependentUpon>B_ZAHL_003Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>c99f24f6-c978-4c8a-aab8-04fe335bce01</id>
+    </None>
+    <None Include="B_ZAHL_003Repository.rxrep">
+      <id>b341965d-7709-4944-9774-df03f6eb3d97</id>
+      <repoid>0ef93c65-3738-4e87-93b7-0affef1b185e</repoid>
+      <reporootid>b179f427-4850-40a7-b144-7925f4331d4a</reporootid>
+    </None>
+    <None Include="Recordings_B_ZAHL\Aviso_Druck_Kontrolle_L303030.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>42feb31c-4383-45ed-aee5-5cbf0e3939ad</id>
+      <recordtableid>c75c5db4-dd7c-41d1-bf51-e016db07e128</recordtableid>
+    </None>
+    <None Include="Recordings_B_ZAHL\Aviso_Druck_Aufruf.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>ef9f64e1-8a4f-449b-b4bb-0233e09e1f18</id>
+      <recordtableid>3ffff14c-e3bd-4223-a835-36fa6db90e07</recordtableid>
+    </None>
+    <None Include="Recordings_B_ZAHL\Aviso_Druck_Kontrolle_L303032.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>7604f390-98c7-400e-9381-460849cc155f</id>
+      <recordtableid>4f59c051-88a2-4466-b953-8bfc0c6a9baa</recordtableid>
+    </None>
+    <None Include="Recordings_B_ZAHL\Bankbeleg_Detailzeilen_pruefen.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>cd7943b0-c464-4995-9e6f-b3be851e1bad</id>
+      <recordtableid>31716444-6646-4c3b-a019-abc26297d10c</recordtableid>
+    </None>
+    <None Include="Recordings_B_ZAHL\Bankbeleg_Details_aufrufen.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>0112b6a6-a56c-4c87-afac-cf4a587c6af2</id>
+      <recordtableid>835a02d4-d610-4da1-8c9b-6c93234b9326</recordtableid>
+    </None>
+    <None Include="Recordings_B_ZAHL\Bankbeleg_erstellen.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>4f60ebf7-7ba5-408c-b371-a2c910cfd5af</id>
+      <recordtableid>fc458799-a640-4ed1-9bab-1d6edf48d018</recordtableid>
+    </None>
+    <None Include="Recordings_B_ZAHL\Bankbeleg_Meldungen_OK.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>2439e088-dccf-4460-b018-33acf1e2efcf</id>
+      <recordtableid>f34119bb-d0af-401b-be48-765941e3ff31</recordtableid>
+    </None>
+    <None Include="Recordings_B_ZAHL\Bankbeleg_Summen_pruefen.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>04f5360c-8921-4b3a-ac0d-e2dabbe71a5d</id>
+      <recordtableid>49523513-d69a-4535-9679-270dc0b1828e</recordtableid>
+    </None>
+    <None Include="Recordings_B_ZAHL\Register_Bankbeleg_aufrufen_pruefen.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>53d463b2-0b75-4c13-9b2e-8d334b55ee7e</id>
+      <recordtableid>fe38f2d2-7e1a-40c5-b7e3-4c5b8fa4aec4</recordtableid>
+    </None>
+    <None Include="Recordings_B_ZAHL\Bankbeleg_XML_speichern.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>6565f6ee-93d2-4037-806b-374e5d48ceed</id>
+      <recordtableid>5d09d850-cc0b-4bb1-8c79-91b78bc67328</recordtableid>
+    </None>
+    <None Include="Recordings_B_ZAHL\CloseAUT.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>02bbf451-3878-4ca7-9883-7ccbcaa84738</id>
+      <recordtableid>51e68afd-acb6-4afa-aa04-123a2107d240</recordtableid>
+    </None>
+    <None Include="Recordings_B_ZAHL\Bankbeleg_Fehler_Datum.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>fc85e0dc-d248-4bf8-b28d-5eb26951ffa3</id>
+      <recordtableid>31b83f5c-123e-4f48-abee-929d213fa0f8</recordtableid>
+    </None>
+    <None Include="Recordings_B_ZAHL\DT_Begleitzettel_pruefen.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>a227efd4-5b92-41c3-ab66-0a490ccf4752</id>
+      <recordtableid>d03e67d6-9354-4975-9ab4-24cc228b7392</recordtableid>
+    </None>
+    <None Include="Recordings_B_ZAHL\Tagesdatum_ermitteln.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>9fe20f7d-0779-49d6-b29e-4632cfa7ee5d</id>
+      <recordtableid>45b1b1f2-c060-40d6-9728-ae4446d2d0e3</recordtableid>
+    </None>
+    <None Include="Recordings_B_ZAHL\Zahldatum_Tagesdatum_setzen.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>28cc545e-3e54-4b45-bf92-5a0bb1272e8d</id>
+      <recordtableid>9f93214e-f354-4b72-bbc2-9c4e745506cc</recordtableid>
+    </None>
+    <None Include="Recordings_B_ZAHL\Zahlungsvorschlag_pruefen.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>95955f3f-fa66-4db9-88fb-b354fcc28d2e</id>
+      <recordtableid>d709502c-0962-4f05-aa13-1d9b56e00b17</recordtableid>
+    </None>
+    <None Include="Recordings_B_ZAHL\StartAUT.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>62b5e474-e6b8-4c27-ab2f-6663cee246e6</id>
+      <recordtableid>65d36a6f-4976-490b-aac3-fa7e4f6ac9c3</recordtableid>
+    </None>
+    <None Include="Recordings_XML_Datei\Close_Editor.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>43aa5d1a-8573-4d9f-8c1d-45156d729429</id>
+      <recordtableid>0f85a728-be3e-45ab-8d55-e69034d05c16</recordtableid>
+    </None>
+    <None Include="Recordings_XML_Datei\XML_Datei_loeschen.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>f8af86bb-67d4-46f9-8d66-90b0fa8c8f4b</id>
+      <recordtableid>b3a2ec1a-2aa8-4c15-8386-288cf2f3be2c</recordtableid>
+    </None>
+    <None Include="Recordings_XML_Datei\XML_Datei_pruefen.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>928a3987-1197-49da-b0f3-e9b487566313</id>
+      <recordtableid>6f598778-7a49-48da-ba18-ca0a4c8ed6e7</recordtableid>
+    </None>
+    <None Include="Recordings_XML_Datei\XML_Datei_oeffnen.rxrec">
+      <BoundTo>b341965d-7709-4944-9774-df03f6eb3d97</BoundTo>
+      <id>3b693bc1-60a8-4ddd-ae30-720e0c43c75a</id>
+      <recordtableid>b45da387-5950-422e-b71a-12c6462c3df3</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="B_ZAHL_003.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>ecba54eb-6be1-4789-ada5-fd3604112410</id>
+    </Content>
+    <Content Include="B_ZAHL_003.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>5adf6e6f-8dd3-43a5-86bd-32c2b8a9a8a4</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings_XML_Datei">
+      <id>0634e132-2cd1-4b24-a8c5-57f43b0068b3</id>
+    </Folder>
+    <Folder Include="Recordings_B_ZAHL">
+      <id>4d01d0e2-333b-4243-a4ba-f0f766773d99</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{2E618F66-3239-421B-983C-918F6AC6BD5F}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

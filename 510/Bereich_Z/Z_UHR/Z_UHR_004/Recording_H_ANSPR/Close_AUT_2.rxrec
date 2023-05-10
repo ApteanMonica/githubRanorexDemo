@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d90c7126-cde0-4c9f-9df8-00f999bab347"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_AUT_2"
+	namespace="Z_UHR_004.Recording_H_ANSPR">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="bc1446cb-6458-4fe2-9716-57b5e495ee34">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5b43d1e0-fc9e-4cfd-8b88-5b03f84d0811"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='FormURLUebersicht']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="0939c903-660a-476e-86cf-8a11766209ee"
+	name="Z_UHR_004Repository"
+	relativepath="..\Z_UHR_004Repository.rxrep">
+		<codegen
+		classname="Z_UHR_004Repository"
+		namespace="Z_UHR_004">
+		</codegen>
+		<rootfolder
+		id="20c27017-c25d-4306-bbce-192f6c93f70b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_AUT_2.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

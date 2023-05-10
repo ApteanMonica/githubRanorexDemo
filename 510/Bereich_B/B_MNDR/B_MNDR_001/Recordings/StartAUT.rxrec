@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4ca295af-eb92-4294-a8e8-5a81951763ca"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartAUT"
+	namespace="B_MNDR_001.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="8d0e94f1-825d-4542-94d6-80344cd8645f"
+		name="Programm">
+			B_MNDR
+		</var>
+		<var
+		id="b89517c2-493a-4ff6-822c-897b7b51b341"
+		name="Startfile">
+			C:\Testdaten\Allgemein\Start.bat
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		duration="100ms"
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Arguments"
+				variable="Programm">
+				</binding>
+				<binding
+				target="FileName"
+				variable="Startfile">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Program Files\Microsoft Office\Office16\EXCEL.EXE
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="89723d13-abb7-4d4b-acc7-72357c4811fa"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+				Waif for auf 2m erhöht, da in 511 SP09 Probleme beim Starten vom Programm
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5637ad72-a265-4d64-a9b1-b8c3e6c3429b"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="24"
+				prefcap="titlebar"
+				rect="205,113,973,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Mahnen Kunden
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Mahnen Kunden
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblMndt']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e9d2bb62-6cdc-4795-bc1f-27a431fed335">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5637ad72-a265-4d64-a9b1-b8c3e6c3429b"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="24"
+				prefcap="titlebar"
+				rect="205,113,973,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Mahnen Kunden
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Mahnen Kunden
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblMndt']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Mahnen Kunden
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="3dcb7b33-aea8-4cad-9c25-2cd24de509e5"
+	name="B_MNDR_001Repository"
+	relativepath="..\B_MNDR_001Repository.rxrep">
+		<codegen
+		classname="B_MNDR_001Repository"
+		namespace="B_MNDR_001">
+		</codegen>
+		<rootfolder
+		id="7db855e5-82a5-48f7-8a8a-7bb66ec979c7"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

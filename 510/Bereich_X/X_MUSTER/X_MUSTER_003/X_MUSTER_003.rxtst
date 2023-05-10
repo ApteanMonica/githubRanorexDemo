@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testsuitedoc>
+	<testsuiteentryhierarchy>
+		<flatlistofchildren>
+			<setup
+			id="03845f29-3ade-4202-ab79-37bbb29038c9"
+			name="setup">
+			</setup>
+			<testsuite
+			ReportTime="RelativeToTestSuiteStartTime"
+			TracingScreenshotMode="Foreground"
+			TracingScreenshotQuality="40"
+			VideoBitrate="2000"
+			VideoFps="15"
+			VideoRecordingMode="Off"
+			VideoSource="Auto"
+			createsinglereportpdfchecked="False"
+			enabletracingscreenshots="True"
+			id="11be81ba-ecba-4d70-99ac-b3e74c1064ee"
+			includeimageschecked="False"
+			includerecordingschecked="False"
+			junitreport="False"
+			name="X_MUSTER_003"
+			overwritefilechecked="False"
+			reportcompress="False"
+			reportdirectoryname="Reports"
+			reportenabled="True"
+			reportfilename="%S_%Y%M%D_%T.rxlog"
+			reporttemplatefolder=""
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
+			</testsuite>
+			<testmodule
+			id="6f4381ca-5ec2-41df-a9ea-47e5dfdb91a9"
+			name="Z_REISE_REISEART_NEU_TEXTFELD_BESCHREIBUNG"
+			ref="02520a70-1511-4006-b741-625ecdd8088e"
+			type="Recording">
+				<description>
+					<![CDATA[Stern * ersetzt die Element-Art (hier "Text" in 511 und Container in 521; Bezeichnung des Elements 'dfRk_text' stimmt überein)
+
+511
+
+container[@controlname='ClientArea']/tabpagelist[@controlname='tabControl']/tabpage[@controlname='tpAllgemein']/text[@controlname='dfRk_text']/text[@accessiblename='Beschreibung']
+
+text[@controlname='dfRk_text']/text[@accessiblename='Beschreibung']
+
+
+521
+
+container[@controlname='ClientArea']/tabpagelist[@controlname='tabControl']/tabpage[@controlname='tpAllgemein']/container[@controlname='dfRk_text']/text[@controlname='txtMulti']/text[@accessiblerole='Text']
+
+container[@controlname='dfRk_text']/text[@controlname='txtMulti']/text[@accessiblerole='Text']
+
+511_521 * ersetzt text in 511 und container in 511 vor[@controlname='dfRk_text']
+*[@controlname='dfRk_text']/?/text[@accessiblerole='Text']]]>
+				</description>
+			</testmodule>
+			<testcase
+			id="90d6cbaa-039d-498e-a67b-cb8bd57bc421"
+			name="X_MUSTER_003"
+			reportlevel="Info;20">
+				<description>
+					<![CDATA[Lösung abweichende Elementpfade 510/511/521]]>
+				</description>
+				<parameters>
+					<param
+					name="AppProcessID"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
+			id="ba52a96f-b537-4c37-b526-67044f31e4d9"
+			name="TestCase">
+				<description>
+					<![CDATA[Z_REISE REISEERFASSUNG RK / Button NEU (Auswahl KB)]]>
+				</description>
+			</testcase>
+		</flatlistofchildren>
+		<childhierarchy>
+			<testsuite
+			id="11be81ba-ecba-4d70-99ac-b3e74c1064ee"
+			name="X_MUSTER_003">
+				<testcase
+				id="90d6cbaa-039d-498e-a67b-cb8bd57bc421"
+				name="X_MUSTER_003">
+					<testcase
+					id="ba52a96f-b537-4c37-b526-67044f31e4d9"
+					name="TestCase">
+						<setup
+						id="03845f29-3ade-4202-ab79-37bbb29038c9"
+						name="setup">
+							<testmodule
+							id="6f4381ca-5ec2-41df-a9ea-47e5dfdb91a9"
+							name="Z_REISE_REISEART_NEU_TEXTFELD_BESCHREIBUNG">
+							</testmodule>
+						</setup>
+					</testcase>
+				</testcase>
+			</testsuite>
+		</childhierarchy>
+	</testsuiteentryhierarchy>
+	<datasources>
+	</datasources>
+	<testconfigurations
+	default="TestRun">
+		<testconfiguration
+		name="TestRun">
+			<testcontainer
+			id="90d6cbaa-039d-498e-a67b-cb8bd57bc421">
+			</testcontainer>
+			<testcontainer
+			id="ba52a96f-b537-4c37-b526-67044f31e4d9">
+			</testcontainer>
+		</testconfiguration>
+	</testconfigurations>
+	<references>
+		<reference>
+			Ranorex Automation Helpers.dll
+		</reference>
+	</references>
+</testsuitedoc>

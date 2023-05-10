@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="1065caf2-c70a-418e-acf9-0583141e11ea"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_AUT_2"
+	namespace="Z_REISE_001.Recording_Reiseerfassung">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="bfdffe1b-67c9-4091-9ac5-a7f35cd59466">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="11df4d4d-02a1-4b06-ab17-a0b8a35bdd6f"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="7"
+				prefcap="titlebar"
+				rect="2169,148,1084,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Reiseerfassung
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Reiseerfassung
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='FormRk']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="5b0463a2-dd04-4234-abfe-574830bec97f"
+	name="Z_REISE_001Repository"
+	relativepath="..\Z_REISE_001Repository.rxrep">
+		<codegen
+		classname="Z_REISE_001Repository"
+		namespace="Z_REISE_001">
+		</codegen>
+		<rootfolder
+		id="46b2a12e-3c16-4266-b217-d137eb7120bc"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_AUT_2.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

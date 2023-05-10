@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="71943b28-5f2d-4beb-a9e2-27a32469c536"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_Notepad"
+	namespace="B_UVA_003.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="False"
+		graceperiod="1ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="bb7256a8-e317-4eda-b14b-17a473ec51ed">
+			<comment>
+				Hat Fehler gebracht, dh Schließen mit Alt+F4
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8c8d510e-552b-404a-ab2a-b3bcb4302ff5"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='UVA.XML - Editor']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+		<keyitem
+		action="Press"
+		data="F4, Alt"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="2d3727b7-177b-4821-ab2c-e0113f473d68"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1f859a76-4f5f-4f01-9b0f-0b4d2b3e8f07"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='UVA.XML - Editor']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keyitem>
+	</recorditems>
+	<repository
+	id="9d3c394a-881d-4d2c-bc11-6664a5e59db0"
+	name="B_UVA_003Repository"
+	relativepath="..\B_UVA_003Repository.rxrep">
+		<codegen
+		classname="B_UVA_003Repository"
+		namespace="B_UVA_003">
+		</codegen>
+		<rootfolder
+		id="68b93a59-aff4-4d61-bfdf-c7dbd37054ff"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_Notepad.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

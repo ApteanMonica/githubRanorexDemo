@@ -1,0 +1,885 @@
+﻿<repository
+id="2eddf4a6-6a1c-424c-a30f-c723d5651d21"
+name="V_AUF_006Repository">
+	<codegen
+	classname="V_AUF_006Repository"
+	namespace="V_AUF_006">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="4da5a255-7501-41da-b841-70f03fb6025e"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		capname="form"
+		id="b6791a3a-c043-4c48-a21b-32adc8c50169"
+		isrooted="True"
+		name="FrmAufk"
+		refimgid="6e3a5bfb-3520-4f89-8053-13ddfeac7f9a"
+		refpath="/form[@controlname='frmAufk']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="2965ff70-4f10-430b-bc0c-abe895fe5487"
+			name="TitleBar100Auftragserfassung"
+			refimgid="89746097-83bc-4d2d-824e-1adc59b583f3"
+			refpath="/form[@controlname='frmAufk']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="919ed928-0a2d-49bb-bd20-454fe4a1b47b"
+			name="PbNew"
+			refimgid="76e4dff8-d125-4312-aaf0-2c858e6ac547"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='searchContainer']/form/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']/?/?/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup2']/button[@controlname='pbNew']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="5e7cb6b9-68e3-4d75-a6cd-ed527f9e9f40"
+			name="Kunde"
+			refimgid="28425ad2-28fe-4c29-aab0-9630414a2c40"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist/tabpage[@controlname='tpKopf']/text[@controlname='dfAufk_adr_kunde']/text[@accessiblename='Kunde']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']//tabpage[@controlname='tpKopf']/text[@controlname='dfAufk_adr_kunde']/text[@accessiblename='Kunde']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="3119903c-e2fd-4b75-9a54-050b3b86f654"
+			name="DfAufkZahlart"
+			refimgid="2a6298cb-85c1-4253-87e3-9531677c915b"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpKopf']/tabpagelist[@controlname='picTabsAufk']/tabpage[@controlname='tpAllgemein']/container[@controlname='groupBox6']/text[@controlname='dfAufk_zahlart']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']//tabpage[@controlname='tpKopf']/tabpagelist[@controlname='picTabsAufk']/tabpage[@controlname='tpAllgemein']/?/?/text[@controlname='dfAufk_zahlart']
+			</item>
+			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="03771aa3-4602-47a8-a406-40da6f5a46cc"
+			name="TabPagePositionen"
+			refimgid="61197731-3717-417a-861a-9991a535f800"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist/tabpage[@accessiblename='&amp;Positionen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']/container[@controlname='ClientArea']/?/?/tabpage[@accessiblename='&amp;Positionen']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="39b5e25f-a4e8-495c-a4c1-caaa119a72ca"
+			name="ArtNr"
+			refimgid="53d2698e-5383-4aad-889f-6df34ae95f1f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/?/?/text[@controlname='dfArt_nr']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="8fe9df58-5b3d-4838-aa5c-83df5d035143"
+			name="Menge"
+			refimgid="a7f1e5d7-9111-42cb-80aa-c31838c93d29"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form/tabpagelist/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_menge']/text[@accessiblerole='Text']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_menge']/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="75f6d68c-8cb0-430c-bcc2-7f457083e674"
+			name="PbCommonSave"
+			refimgid="d2d1869d-7233-4bc0-844c-1f94c292d8a1"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Save']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']/?/?/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Save']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="f06c5964-184f-4cf8-94f5-25d24fb24e63"
+			name="DfAufpPreis"
+			refimgid="ae82cae0-6eb2-4ab0-92df-dde87bb9a153"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_preis']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']//tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_preis']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="230d9d84-f5ee-43ce-abdb-38536552b9c2"
+			name="Row1Column0"
+			refimgid="92808974-6ce0-4523-9b15-46b41cbfaf9d"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 1 Column 0']
+			</item>
+			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="24c00fc1-3ffd-47cf-a746-9f24cbd36b20"
+			name="Kopf"
+			refimgid="ccdc6222-3fa9-4cf9-b144-2651780d1513"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist/tabpage[@accessiblename='K&amp;opf']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']/container[@controlname='ClientArea']/?/?/tabpage[@accessiblename='K&amp;opf']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="45fbac4d-a3d7-4a43-b7a4-b5e45f31b2e6"
+			name="PbCommmon1NewLoad"
+			refimgid="95586209-f932-4bb6-8651-88c6a2492fa5"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommmon1_NewLoad']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']/?/?/container[@controlname='CommonGroup']/button[@controlname='pbCommmon1_NewLoad']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="199b012d-d957-4e1f-9230-da47086b653c"
+			name="PbSpec3Extras"
+			refimgid="218bbf81-d5ba-4734-9310-cbbb1a4e72ed"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='RibbonBar']/container[@controlname='Spec3Group']/button[@controlname='pbSpec3_Extras']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']/?/?/container[@controlname='Spec3Group']/button[@controlname='pbSpec3_Extras']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="0a1c5ddc-3821-4d9f-a248-56b16c3fd31c"
+			name="DfAufkAdrRech"
+			refimgid="5720c8ea-c7bf-46e0-b135-0e17ea27ac7f"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpKopf']/text[@controlname='dfAufk_adr_rech']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']//tabpage[@controlname='tpKopf']/text[@controlname='dfAufk_adr_rech']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="f7ad1d5a-ab15-4667-86ba-962e044f3504"
+			name="Row2Column0"
+			refimgid="afe53d52-6ba0-4550-9757-99ea89e6e6be"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']/table/row[@accessiblename='Row 2']/cell[@accessiblename='Row 2 Column 0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 2 Column 0']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="4908198d-53c6-402d-be95-565510109da2"
+			name="PbGewVol"
+			refimgid="88375d19-44c9-42b3-85f4-b543113fb580"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist/tabpage[@controlname='tpKopf']/button[@controlname='pbGewVol']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']//tabpage[@controlname='tpKopf']/button[@controlname='pbGewVol']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="37575dde-9a9c-469e-979c-0e0169790145"
+			name="PbSpec3Weitere"
+			refimgid="8d8a825a-45df-4337-ad16-ef9ee7b7535d"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='RibbonBar']/container[@controlname='Spec3Group']/button[@controlname='pbSpec3_Weitere']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']/?/?/container[@controlname='Spec3Group']/button[@controlname='pbSpec3_Weitere']
+			</item>
+			<folder
+			addcaps="table,accessible"
+			capname="table"
+			id="1387e211-f5f5-4145-926b-42c3e52e2f28"
+			isrooted="True"
+			name="FlexGrid"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="55c51399-3e37-489c-91c3-611529e5c344"
+				name="ColArtNrRow1"
+				refimgid="a7659a2c-2819-4337-b3d8-c796276e04ae"
+				refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colArt_nr Row 1']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colArt_nr Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="b10795a0-9dfd-4927-b1d9-0ff8e1370023"
+				name="ColArtNrRow2"
+				refimgid="e8e13077-22e0-4870-921f-f9987240c4f4"
+				refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colArt_nr Row 2']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colArt_nr Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="281adbc6-ba50-4a63-9838-2dad633c5474"
+				name="ColArtNrRow3"
+				refimgid="f388bcdf-92df-4761-8008-70c379ab8034"
+				refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colArt_nr Row 3']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colArt_nr Row 3']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="e27e4e27-f8e7-4f2c-a258-0820fb8c87dc"
+				name="ColArtNrRow4"
+				refimgid="ed47ade0-b2ab-401f-b4d8-c9997061c58c"
+				refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colArt_nr Row 4']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colArt_nr Row 4']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="89bd03f4-6568-4c6f-9d68-cb8c93c95456"
+				name="Row4Column0"
+				refimgid="0b50a6a0-3b09-438e-ad1b-492c278abd71"
+				refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']/table/row[@accessiblename='Row 4']/cell[@accessiblename='Row 4 Column 0']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 4 Column 0']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="c9ace374-4a69-4aa8-a94f-20113cc83d6c"
+				name="ColAufpZeileAnzeigeRow3"
+				refimgid="4915a60a-1264-4d93-9fd8-acc531fef497"
+				refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colAufp_zeile_anzeige Row 3']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename&gt;'colAufp_zeile_anzeige Row' and @text='3']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="c877ef52-2333-4d67-8027-1d92958a90ce"
+				name="ColAufpZeileAnzeigeRow4"
+				refimgid="942c0858-88b1-4595-abbf-4e99e6886672"
+				refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colAufp_zeile_anzeige Row 4']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename&gt;'colAufp_zeile_anzeige Row' and @text='4']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="2282b3c7-33cb-435a-899d-02e1570a81de"
+				name="ColAufpMengeRow1"
+				refimgid="87b666e9-9a57-430a-8dde-7b80b4371a53"
+				refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAufp_menge Row 1']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAufp_menge Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="ba6e8da9-7b37-412f-ae00-17f5502959a9"
+				name="ColAufpMengeRow2"
+				refimgid="03b94f53-66a6-4a4d-83eb-0f17d52951b1"
+				refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colAufp_menge Row 2']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAufp_menge Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="59e0ae74-6941-4294-af23-6970b7b524f5"
+				name="Row3Column0"
+				refimgid="6362fb53-8d6f-446b-afdb-c11a24b800e0"
+				refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']/table/row[@accessiblename='Row 3']/cell[@accessiblename='Row 3 Column 0']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 3 Column 0']
+				</item>
+				<basepath>
+					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+				</basepath>
+			</folder>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="3a1209c4-10a2-4a02-90f0-591ce5b796be"
+			name="DfAufkWert1D"
+			refimgid="ba40ee5e-1876-4357-a60b-7647a99b2c5a"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/text[@controlname='dfAufk_wert1_d']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/form[@controlname='dlgAufp']/text[@controlname='dfAufk_wert1_d']
+			</item>
+			<item
+			addcaps="checkbox,control,nativewindow"
+			capname="checkbox"
+			id="430dbc21-0e57-43c2-9f15-c553f2691c7a"
+			name="CbStornierte"
+			refimgid="4836f90d-27a3-4826-ba1c-f95a6f618791"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist/tabpage[@controlname='tpPos']/checkbox[@controlname='cbStornierte']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/checkbox[@controlname='cbStornierte']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="7e9b0ff6-fb0b-4235-9312-addf3563f7e4"
+			name="DfAufpPreis2"
+			refimgid="b989f001-8589-4237-a8e4-e4d4d20cbe9c"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_preis2']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']//tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_preis2']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="49d51edc-1101-4652-b841-7be037d2426a"
+			name="ColRabpWertRow1"
+			refimgid="2e05aa40-ce2d-4d4b-95d7-e1175b3cb98f"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/container[@controlname='tblAufp_rabatt']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colRabp_wert Row 1']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/container[@controlname='tblAufp_rabatt']//cell[@accessiblename='colRabp_wert Row 1']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="4fc6602b-3032-499a-aa55-abe7dae0f71d"
+			name="PSpec2BelegAbschliessen"
+			refimgid="a65cd161-1100-4986-8db0-114882f28bde"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='RibbonBar']/container[@controlname='Spec2Group']/button[@controlname='pSpec2_BelegAbschliessen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']/?/?/container[@controlname='Spec2Group']/button[@controlname='pSpec2_BelegAbschliessen']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="e826993b-c8e2-452d-bf01-0568406b0e8f"
+			name="DfAufkAdrWare"
+			refimgid="78bf20b8-f4fa-4526-938e-03e7289a2082"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpKopf']/text[@controlname='dfAufk_adr_ware']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']//tabpage[@controlname='tpKopf']/text[@controlname='dfAufk_adr_ware']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="099501f1-098e-4194-b081-cc39a5d42ee8"
+			name="Maximieren"
+			refimgid="b123fa19-6e24-4b12-9d5f-5017d9c2629a"
+			refpath="/form[@controlname='frmAufk']/titlebar/button[@accessiblename='Maximieren']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']/?/?/button[@accessiblename='Maximieren']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="2493ed89-40b4-48cc-a81c-ce1c6a6b47c6"
+			name="DfArtNr"
+			refimgid="82958d95-6bc3-4ffe-9c77-59c80ae5261e"
+			refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfArt_nr']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']//tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfArt_nr']
+			</item>
+			<basepath>
+				/form[@controlname='frmAufk']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAHBJREFUOE/tjkEKgDAMBHP0IIUi4lt9g2/oF/xiZIWFjdQq4kXwMKRQ
+ZhJbu8mV0o+BJQ2BOeXAH/hcwM12HgUgYkLSSAjgA5JOiuQyoLJeQFSuBiCdbT/KzYCGKGPeDuBN
+iQGlGgC6HTBAdPsLgewbF6W61N1ckdcAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="16e38b9d-aaaa-4dfc-99f6-43278a2a5cb4"
+		isrooted="True"
+		name="DlgMessageBox"
+		refimgid="4566c347-1f10-4953-a262-faab1f73f701"
+		refpath="/form[@controlname='dlgMessageBox']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="64867ef7-575e-4432-80f5-af85b576d915"
+			name="LabelMeldungstext"
+			refimgid="a4824ac3-00f1-4879-a686-fbf8e6643cee"
+			refpath="/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="502b2899-6352-4a2c-8c6c-b947803deb4a"
+			name="Button0"
+			refimgid="abeb107f-f85c-4dda-b357-fdef70d207d8"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button0']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="fbcf76d9-0540-496f-b04c-a21098064fce"
+			name="Button1"
+			refimgid="09f1deb4-af70-4307-b6c1-b6adc28aee77"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button1']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button1']
+			</item>
+			<basepath>
+				/form[@controlname='dlgMessageBox']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="contextmenu,control,nativewindow"
+		capname="contextmenu"
+		id="af7b7e48-9278-47af-a231-16274774de5a"
+		isrooted="True"
+		name="VAUF"
+		refpath="/contextmenu[@processname='V_AUF']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="9423ea3e-dbd1-40aa-b24d-b98eb81590aa"
+			name="RechnungsempfaengerAendern"
+			refimgid="a3fc1b86-9af3-4f61-b44d-f4a69fef9ba7"
+			refpath="/contextmenu[@processname='V_AUF']/menuitem[@accessiblename='Rechnungsempfänger ändern']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='V_AUF']/menuitem[@accessiblename='Rechnungsempfänger ändern']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="2098c158-8936-4825-acba-21ffbeb79cc8"
+			name="Stornieren"
+			refimgid="9c355f4b-9299-43f5-bc56-7298ef8a7540"
+			refpath="/contextmenu[@processname='V_AUF']/menuitem[@accessiblename='Stornieren']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='V_AUF']/menuitem[@accessiblename='Stornieren']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="2e07ec94-ddee-4acf-b9cd-5ca8965d303c"
+			name="Tabellenerfassung"
+			refimgid="dde289be-37bc-418f-b78b-fddc3efe846c"
+			refpath="/contextmenu[@processname='V_AUF']/menuitem[@accessiblename='Tabellenerfassung']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='V_AUF']/menuitem[@accessiblename='Tabellenerfassung']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="49bccd09-1f7c-4335-b2a7-a6eac14ed016"
+			name="PosKopieren"
+			refimgid="928240ed-c027-4687-912f-5adc9f2aaa05"
+			refpath="/contextmenu[@processname='V_AUF']/menuitem[@accessiblename='Pos. kopieren']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='V_AUF']/menuitem[@accessiblename='Pos. kopieren']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="f70e0ec3-0ae7-454d-85ea-33b80ee19335"
+			name="PosKopierenUUrsprPosStornieren"
+			refimgid="0b0e82ef-9737-4d3a-9fdb-ce29dff44cc0"
+			refpath="/contextmenu[@processname='V_AUF']/menuitem[@accessiblename>'Pos. kopieren u. urspr. Pos.']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='V_AUF']/menuitem[@accessiblename&gt;'Pos. kopieren u. urspr. Pos.']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="c0ff7cda-c90b-4286-8c4e-07b407ac6c96"
+			name="PositionsrabattFuerMehrerePos"
+			refimgid="6af49f93-d892-4013-98bf-c5c7359eee26"
+			refpath="/contextmenu[@processname='V_AUF']/menuitem[@accessiblename>'Positionsrabatt für mehrere']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='V_AUF']/menuitem[@accessiblename&gt;'Positionsrabatt f&#252;r mehrere']
+			</item>
+			<basepath>
+				/contextmenu[@processname='V_AUF']
+			</basepath>
+			<icon>
+				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
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="c2e324f1-7e2e-4370-8243-533c8c694c37"
+		isrooted="True"
+		name="DlgGewicht"
+		refpath="/form[@controlname='dlgGewicht']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="79428375-b1a4-4557-957f-e3ecfaac1de5"
+			name="TitleBar100GewichtsinformationenFue"
+			refimgid="7268ef4b-aff3-40a8-9b97-5021edfd1301"
+			refpath="/form[@controlname='dlgGewicht']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgGewicht']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="829970a1-60ea-4f31-bacb-872eff31825f"
+			name="Schliessen"
+			refimgid="8632e3b2-3529-4ce7-af23-ff8977b5b73d"
+			refpath="/form[@controlname='dlgGewicht']/titlebar/button[@accessiblename='Schließen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgGewicht']/?/?/button[@accessiblename='Schließen']
+			</item>
+			<basepath>
+				/form[@controlname='dlgGewicht']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="4e9eadde-0ab4-4253-ae6b-e1a831cc9de7"
+		isrooted="True"
+		name="TblTabellenerfassung"
+		refimgid="51d764a6-8abf-486d-bd72-b17ccba9c190"
+		refpath="/form[@controlname='tblTabellenerfassung']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="f77dc3f3-0dd0-48f1-903b-9be51797c532"
+			name="TitleBar100TabellenerfassungAuftr"
+			refimgid="962c11de-983f-4832-9188-76f284b35b0f"
+			refpath="/form[@controlname='tblTabellenerfassung']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblTabellenerfassung']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="b2856d06-5246-4a3d-b815-a41b2751c309"
+			name="FlexGrid"
+			refimgid="d0ca3d7b-5b40-452e-bd5c-996128c8cd3b"
+			refpath="/form[@controlname='tblTabellenerfassung']/container[@controlname='ChildTableWindow']/element/table[@accessiblename='FlexGrid']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblTabellenerfassung']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']
+			</item>
+			<folder
+			addcaps="table,accessible"
+			capname="table"
+			id="47b826ce-9e62-4bb4-a2af-529d5b0e5ba6"
+			isrooted="True"
+			name="FlexGrid1"
+			refpath="/form[@controlname='tblTabellenerfassung']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="8277a1cc-5790-4a62-8be5-fb74206d63ae"
+				name="ColArtNrRow1"
+				refimgid="1b18671e-f4f3-42dc-831e-f3b1d3cece66"
+				refpath="/form[@controlname='tblTabellenerfassung']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colArt_nr Row 1']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblTabellenerfassung']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colArt_nr Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="db585789-6f76-4a59-84ff-c398e6cef809"
+				name="ColArtNrRow2"
+				refimgid="a97c0837-24a9-4318-b135-55bc784a07ed"
+				refpath="/form[@controlname='tblTabellenerfassung']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colArt_nr Row 2']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblTabellenerfassung']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colArt_nr Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="d2da548e-2354-4fe8-aba8-73aa7c836eeb"
+				name="ColAufpMengeRow1"
+				refimgid="f4e56023-bd7f-4af5-a34c-d9f477db88f8"
+				refpath="/form[@controlname='tblTabellenerfassung']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAufp_menge Row 1']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblTabellenerfassung']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAufp_menge Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="9221d053-84c7-4502-80ea-4ec98d628533"
+				name="ColAufpMengeRow2"
+				refimgid="0828402d-31fb-44fd-bd3e-c6c0d3b44c9b"
+				refpath="/form[@controlname='tblTabellenerfassung']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colAufp_menge Row 2']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblTabellenerfassung']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAufp_menge Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="399cfa78-6bba-41ec-a6f5-e829d33d6c3b"
+				name="ColArtNrRow3"
+				refimgid="7453be51-ea80-4a0c-8c86-1fc738f52fe4"
+				refpath="/form[@controlname='tblTabellenerfassung']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colArt_nr Row 3']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblTabellenerfassung']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colArt_nr Row 3']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="08f83509-fef7-4f93-b854-7ef42254e5eb"
+				name="ColAufpMengeRow3"
+				refimgid="1584262e-5b34-451d-829b-80d49f182d7a"
+				refpath="/form[@controlname='tblTabellenerfassung']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colAufp_menge Row 3']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblTabellenerfassung']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAufp_menge Row 3']
+				</item>
+				<basepath>
+					/form[@controlname='tblTabellenerfassung']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='tblTabellenerfassung']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="fd70551c-fe86-4771-99f4-5ebbf46e9b79"
+		isrooted="True"
+		name="DlgAufpCopy"
+		refpath="/form[@controlname='dlgAufpCopy']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="c7b34aa1-b78e-4da9-9183-caa5ee2e22df"
+			name="TitleBar100PositionenKopieren"
+			refimgid="c31359ce-20ee-4fae-a611-cdd4075546b1"
+			refpath="/form[@controlname='dlgAufpCopy']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgAufpCopy']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="8001a08b-690a-42d8-8bd8-0fd21cbd1439"
+			name="PbOk"
+			refimgid="b07fb659-718b-4254-97a6-9694992a3757"
+			refpath="/form[@controlname='dlgAufpCopy']/tabpagelist/tabpage[@controlname='tpPositionen']/button[@controlname='pbOk']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgAufpCopy']/?/?/tabpage[@controlname='tpPositionen']/button[@controlname='pbOk']
+			</item>
+			<basepath>
+				/form[@controlname='dlgAufpCopy']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="e1f554ce-a789-4652-8fa3-5da801da458a"
+		isrooted="True"
+		name="DlgRabaMehrPos"
+		refimgid="fa08dcf4-cc7d-4bc6-b35a-28023e80d115"
+		refpath="/form[@controlname='dlgRabaMehrPos']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="4a14b9f9-e60a-4489-942f-40e0ec47cf8c"
+			name="DfRabatt"
+			refimgid="07e1a1de-7984-4e69-bc41-295224bb7795"
+			refpath="/form[@controlname='dlgRabaMehrPos']/text[@controlname='dfRabatt']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgRabaMehrPos']/text[@controlname='dfRabatt']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="932918a7-281f-4f62-81d7-01bcc26f1d57"
+			name="PbOk"
+			refimgid="99c8cc64-f339-4636-b78e-6db8b9ea57bb"
+			refpath="/form[@controlname='dlgRabaMehrPos']/button[@controlname='pbOk']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgRabaMehrPos']/button[@controlname='pbOk']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="6f5db32d-66c3-4aa1-8b52-56bfe70e12f6"
+			name="DfRabaCd"
+			refimgid="88347372-64e3-4b12-a0c7-66429a51927f"
+			refpath="/form[@controlname='dlgRabaMehrPos']/text[@controlname='dfRaba_cd']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgRabaMehrPos']/text[@controlname='dfRaba_cd']
+			</item>
+			<basepath>
+				/form[@controlname='dlgRabaMehrPos']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

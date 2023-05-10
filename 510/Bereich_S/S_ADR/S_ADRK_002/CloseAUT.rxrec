@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="db28528c-9d66-4a92-a582-d423d9bf46fa"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="S_ADRK_002">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="ce32a0f7-0be2-4b0f-9f08-31d045fc8a5e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="956f76b9-76ff-4208-b320-b8601f4950e2"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmAdr']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="49837a36-b277-4d1c-87f9-dab7973029a5"
+	name="S_ADRK_002Repository"
+	relativepath="S_ADRK_002Repository.rxrep">
+		<codegen
+		classname="S_ADRK_002Repository"
+		namespace="S_ADRK_002">
+		</codegen>
+		<rootfolder
+		id="955ad33a-ba85-4a2a-96e0-7e51a33033c4"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

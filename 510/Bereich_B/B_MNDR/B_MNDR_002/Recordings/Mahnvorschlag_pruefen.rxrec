@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="dc0beea1-e889-4339-984c-4c294c983cdc"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Mahnvorschlag_pruefen"
+	namespace="B_MNDR_002.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="00803024-db45-4d55-9321-83ebc5774ea6"
+		name="Beschreibung">
+			B_MNDR_002
+		</var>
+		<var
+		id="e61a236e-377b-4efd-95ec-84fdf1afb849"
+		name="Faelligkeitsdatum">
+			12.02.2021
+		</var>
+		<var
+		id="6bb01308-e890-4af5-a193-ee3e53ee1dce"
+		name="Mahndatum">
+			13.02.2021
+		</var>
+		<var
+		id="3030f1f6-74e9-43bb-81a8-b56df1ec276d"
+		name="Tagesdatum">
+		</var>
+		<var
+		id="0cd255a4-a7db-469a-8b93-d23ad7687103"
+		name="Erstellungsdatum_Mahnvorschlag">
+			07.03.2022
+		</var>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="1169a2c0-d3e8-4a78-9707-15a6af314420">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6eec5c62-9c3e-4ada-9117-8cf384319d69"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']//row[@accessiblename~'Row' and @accessiblevalue~$Beschreibung]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="caa9768f-4547-4a7a-a31c-03acbc6b6968">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="aca38bef-5aa8-436d-8823-318cdb3d499b"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/?/cell[@accessiblename~'colMndt_nr']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				2
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="1438ff5f-7cfe-4f04-a568-3b8447182d27">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Mahndatum">
+				</binding>
+			</bindings>
+			<info
+			id="67dc40ac-9da9-4ed7-8d94-a8fd6b3eaadf"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/?/cell[@accessiblename~'colMndt_aktuell']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="7a83cede-36b7-44c0-91a1-e550434b4a56">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="824640e6-9dda-410a-bdcd-bfeaf0b08248"
+			sourcename="ElementTree">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="5"
+				prefcap="cell"
+				rect="395,252,63,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						07.02.2021
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colMndt_letzte Row 1
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Selected, Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						07.02.2021
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colMndt_letzte Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="697e1a09-8ed9-4cd2-a3a2-4f65860e48ed">
+				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
+egA6UAJP/wAes/8A1zNUrFQBC3PKPnk/3hV2f/j1n/65moLBVNnHkA8Ecjtms/t/InqOtkUOzxKE
+jIwMfxe9RKsY2swA3B/MPTIz3qysEKfciRc+igUeTESxMaZb73yjmtChlum1XIXy0Y5VRxgf0qDy
+0I3IgWFmVcf3+epq0sMSjCxIB6BRQLeFQQsMYDcEBRzQBWKRshjCBm3MIx2X39sVLs23cZySTGwJ
+JPtUht4WADQxkLwMqOKftUEHA4GBx0oAcvRvp/WoZIEdtzF8+zsP5Gpl6N9P60lJq4GjRRRWRsFF
+FFABRRRQAUUUUAU9QsTeNEyzGIxkkEDPp7+1Qf2Zdf8AQSm/X/GtOipcUyXBN3Mz+zLr/oJTfr/j
+R/Zl1/0Epv1/xrToo5ELkiZn9mXX/QSm/X/Gj+zLr/oJTfr/AI1p0UciDkiZn9mXX/QSm/X/ABo/
+sy6/6CU36/41p0UciDkiZbaVcspVtRlIIwQQef1q9Z2/2W1SHdv255xjPOamopqKQ1FLVBRRRTKC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
+KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
+AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q==
+			</helperscreenshot>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				07.02.2021
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="f54a6661-dcd6-49da-a044-d5db2dd54317">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Faelligkeitsdatum">
+				</binding>
+			</bindings>
+			<info
+			id="4c897e64-3cf6-4e93-90f7-5a84998c8c24"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/?/cell[@accessiblename~'colMndt_faellig']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="217fac3c-466f-46fd-9f31-9e4802b0d343">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="634f02be-da6a-4cee-a372-f6cceb385763"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/?/cell[@accessiblename~'colAnz_nr' and @accessiblerole='Cell']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				6
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e28fbb70-ce91-46e1-9ce5-e2eb5ee38a2e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="77f2d81d-6b95-4759-ba41-91141488c1b1"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/?/cell[@accessiblename~'colAnz_kunden' and @accessiblerole='Cell']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				2
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="350bb20f-f013-4156-87b4-7d51fb2bee44">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Erstellungsdatum_Mahnvorschlag">
+				</binding>
+			</bindings>
+			<info
+			id="68ee59e2-ee1a-4ee8-b9fe-7a38c5a26632"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/?/cell[@accessiblename~'colMndt_dtanlag' and @accessiblevalue='09.02.2022']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				09.02.2022
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="e963c4ea-f8e9-4a01-91a9-2c2e72eb760c"
+	name="B_MNDR_002Repository"
+	relativepath="..\B_MNDR_002Repository.rxrep">
+		<codegen
+		classname="B_MNDR_002Repository"
+		namespace="B_MNDR_002">
+		</codegen>
+		<rootfolder
+		id="458b8b8f-3c9f-4152-b4e0-b9284895be86"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Mahnvorschlag_pruefen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

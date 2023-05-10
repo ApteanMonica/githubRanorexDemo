@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="ea191caf-82f7-4c55-be4f-53a4d760f5dc"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Tabelle_schliessen"
+	namespace="B_KLSALD_001.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<keyitem
+		action="Press"
+		data="F4, Alt"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="ea154f13-1d8b-4e30-9a26-a1f1ce614e13"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="104c54c3-f324-441f-bfd1-a41ebec2f195"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblAnzeige']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keyitem>
+	</recorditems>
+	<repository
+	id="d3b9ff50-a0f4-4b94-8266-df1c12f98d12"
+	name="B_KLSALD_001Repository"
+	relativepath="..\B_KLSALD_001Repository.rxrep">
+		<codegen
+		classname="B_KLSALD_001Repository"
+		namespace="B_KLSALD_001">
+		</codegen>
+		<rootfolder
+		id="fe6d6ffb-43d5-47c8-8671-55ce8b6fbd30"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Tabelle_schliessen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

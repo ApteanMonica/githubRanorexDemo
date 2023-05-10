@@ -1,0 +1,986 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c4557211-0475-47d3-b8ba-b56f3ddd8bf7"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Ticketanlage_ED"
+	namespace="Servicecenter.Recordings.EDGE">
+	</codegen>
+	<variables>
+		<var
+		id="481a90fc-97b1-4c4c-b308-618d97c16d0f"
+		name="Bereich">
+			CRM
+		</var>
+		<var
+		id="1a67304e-5f9e-4119-af75-96967fcac391"
+		name="Version">
+			4.9.1 Servicepack 10
+		</var>
+		<var
+		id="0b0284c9-c921-43ae-b846-1f4436a0ca75"
+		name="Programm">
+			C_CRM
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="c004efce-cc3a-4a31-afb0-8739813e1ca5"
+		sx="409"
+		sy="266"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6018239c-3ef7-49f8-aa4c-af6a0524d7b2"
+			sourcename="Recorder">
+				<element
+				capabilities="uiautomation, uiautomationinvoke"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="True"
+				index="0"
+				prefcap="listitem"
+				rect="32,248,878,34"
+				role="listitem"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Bereich auswählen
+					</attribute>
+					<attribute
+					name="automationid"
+					type="System.String">
+						b8e53d66-e6a8-4716-8399-253521c00e57
+					</attribute>
+					<attribute
+					name="classname"
+					type="System.String">
+						k-input
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						ListItem
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						Option
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						Bereich auswählen
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						10860
+					</attribute>
+				</element>
+				<path>
+					/form/container[@name&gt;'rs2 Service Center - Microsoft']/container[@name='Microsoft Edge']//?/?/?/container[@classname='rs2']/container[@automationid='app']/container[@automationid='layout-spa']/container[@automationid='appModule']/container/container[2]/container[1]/list[@classname='k-widget k-dropdown']/listitem[@name='Bereich ausw&#228;hlen']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="65cdcc56-51c6-41ef-b0de-002d5541e582">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABmAfQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoaKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigB+BRgVD9stf+fmH/vsUfbLX/n5h/77FK6K5JdibAowKh+2Wv8Az8w/99ij7Za/
+8/MP/fYoug5JdibAowKh+2Wv/PzD/wB9ij7Za/8APzD/AN9ii6Dkl2JsCjAqH7Za/wDPzD/32KPt
+lr/z8w/99ii6Dkl2JsCjAqH7Za/8/MP/AH2KPtlr/wA/MP8A32KLoOSXYmwKMCoftlr/AM/MP/fY
+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
+ln/zx/8AHj/jVyijlXYPbVP5n95T/syz/wCeP/jx/wAaKuUUcq7B7ap/M/vCiiimZhRRRQAUUUUA
+FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVVnupI7jy1hDINm5i+CNzFRxjnpVqqNzG
+ZZ50G7kW+dvUDzGyaAL1FZLw3dqryxXMwCiWRll+cEI3yjnpkVrUAFFFFABRRRQAUUUUAFFFFABR
+RRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
+FAGd/bNt/cl/If40f2zbf3JfyH+NZ2KMVhzyPR9jS7fiaP8AbNt/cl/If40f2zbf3JfyH+NZ2KMU
+c8g9jS7fiaP9s239yX8h/jR/bNt/cl/If41nYoxRzyD2NLt+Jo/2zbf3JfyH+NH9s239yX8h/jWd
+ijFHPIPY0u34mj/bNt/cl/If40f2zbf3JfyH+NZ2KMUc8g9jS7fiaP8AbNt/cl/If40f2zbf3Jfy
+H+NZ2KMUc8g9jS7fiaP9s239yX8h/jR/bNt/cl/If41nYoxRzyD2NLt+Jo/2zbf3JfyH+NH9s239
+yX8h/jWdijFHPIPY0u34mj/bNt/cl/If40f2zbf3JfyH+NZ2KMUc8g9jS7fiaP8AbNt/cl/If40f
+2zbf3JfyH+NZ2KMUc8g9jS7fiaP9s239yX8h/jR/bNt/cl/If41nYoxRzyD2NLt+JZvdSgubV4lR
+8kgjcoIOCDg89OKv6T9mkja4tRs34V488IRngenU1j4pYnmt5fNt5PLY/eBGQ31FVGfczqUI29xG
+7qjBNMuixwPKYfmMVS/tm2/uS/kP8ao3E1xdFftEuUU5CIu0Z9/WmYolPsKlQVvfRo/2zbf3JfyH
++NH9s239yX8h/jWdijFTzyNfY0u34mj/AGzbf3JfyH+NH9s239yX8h/jWdijFHPIPY0u34mj/bNt
+/cl/If40f2zbf3JfyH+NZ2KMUc8g9jS7fiaP9s239yX8h/jR/bNt/cl/If41nYoxRzyD2NLt+Jo/
+2zbf3JfyH+NH9s239yX8h/jWdijFHPIPY0u34mj/AGzbf3JfyH+NH9s239yX8h/jWdijFHPIPY0u
+34mj/bNt/cl/If40f2zbf3JfyH+NZ2KMUc8g9jS7fiaP9s239yX8h/jR/bNt/cl/If41nYoxRzyD
+2NLt+Jo/2zbf3JfyH+NH9s239yX8h/jWdijFHPIPY0u34mj/AGzbf3JfyH+NH9s239yX8h/jWdij
+FHPIPY0u34mj/bNt/cl/If40f2zbf3JfyH+NZ2KMUc8g9jS7fiaP9s239yX8h/jR/bNt/cl/If41
+nYoxRzyD2NLt+Jo/2zbf3JfyH+NH9s239yX8h/jWdijFHPIPY0u34mj/AGzbf3JfyH+NH9s239yX
+8h/jWdijFHPIPY0u34mj/bNt/cl/If40f2zbf3JfyH+NZ2KMUc8g9jS7fiaP9s239yX8h/jR/bNt
+/cl/If41nYoxRzyD2NLt+Jo/2zbf3JfyH+NH9s239yX8h/jWdijFHPIPY0u34mj/AGzbf3JfyH+N
+H9s239yX8h/jWdijFHPIPY0u34mj/bNt/cl/If40VnYoo55B7Gl2/EWiiipNQooooAKKKKACiiig
+AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA0/
+7I/6b/8Ajn/16P7I/wCm/wD45/8AXoorfkied7ep3D+yP+m//jn/ANej+yP+m/8A45/9eiijkiHt
+6ncP7I/6b/8Ajn/16P7I/wCm/wD45/8AXooo5Ih7ep3D+yP+m/8A45/9ej+yP+m//jn/ANeiijki
+Ht6ncP7I/wCm/wD45/8AXo/sj/pv/wCOf/Xooo5Ih7ep3D+yP+m//jn/ANej+yP+m/8A45/9eiij
+kiHt6ncP7I/6b/8Ajn/16P7I/wCm/wD45/8AXooo5Ih7ep3D+yP+m/8A45/9ej+yP+m//jn/ANei
+ijkiHt6ncP7I/wCm/wD45/8AXo/sj/pv/wCOf/Xooo5Ih7ep3D+yP+m//jn/ANej+yP+m/8A45/9
+eiijkiHt6ncP7I/6b/8Ajn/16P7I/wCm/wD45/8AXooo5Ih7ep3D+yP+m/8A45/9ej+yP+m//jn/
+ANeiijkiHt6ncP7I/wCm/wD45/8AXo/sj/pv/wCOf/Xooo5Ih7ep3D+yP+m//jn/ANej+yP+m/8A
+45/9eiijkiHt6ncP7I/6b/8Ajn/16P7I/wCm/wD45/8AXooo5Ih7ep3D+yP+m/8A45/9ej+yP+m/
+/jn/ANeiijkiHt6ncP7I/wCm/wD45/8AXo/sj/pv/wCOf/Xooo5Ih7ep3D+yP+m//jn/ANej+yP+
+m/8A45/9eiijkiHt6ncP7I/6b/8Ajn/16P7I/wCm/wD45/8AXooo5Ih7ep3D+yP+m/8A45/9ej+y
+P+m//jn/ANeiijkiHt6ncP7I/wCm/wD45/8AXo/sj/pv/wCOf/Xooo5Ih7ep3D+yP+m//jn/ANej
++yP+m/8A45/9eiijkiHt6ncP7I/6b/8Ajn/16P7I/wCm/wD45/8AXooo5Ih7ep3D+yP+m/8A45/9
+ej+yP+m//jn/ANeiijkiHt6ncP7I/wCm/wD45/8AXo/sj/pv/wCOf/Xooo5Ih7ep3D+yP+m//jn/
+ANej+yP+m/8A45/9eiijkiHt6ncP7I/6b/8Ajn/16P7I/wCm/wD45/8AXooo5Ih7ep3D+yP+m/8A
+45/9ej+yP+m//jn/ANeiijkiHt6ncP7I/wCm/wD45/8AXo/sj/pv/wCOf/Xooo5Ih7ep3D+yP+m/
+/jn/ANej+yP+m/8A45/9eiijkiHt6ncP7I/6b/8Ajn/16P7I/wCm/wD45/8AXooo5Ih7ep3D+yP+
+m/8A45/9eiiijkiHt6nc/9k=
+			</helperscreenshot>
+		</mouseitem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keysequenceitem
+		KeySequence="CRM"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		repoItemActivation="EnsureVisible"
+		searchpropertyid="04ebf7ae-7ceb-4b74-b5a1-e11c4ea1d2e2">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Bereich">
+				</binding>
+			</bindings>
+		</keysequenceitem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="6a537488-89c2-4704-8434-d66f65703dae"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e287552c-9ccb-4b25-a531-7e779f4d4dd6">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Bereich">
+				</binding>
+			</bindings>
+			<info
+			id="92b24cb6-f2b1-4d12-89a5-2279a7cbdc06"
+			sourcename="ElementTree">
+				<element
+				capabilities="uiautomation, uiautomationinvoke"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="True"
+				index="0"
+				prefcap="listitem"
+				rect="32,248,878,34"
+				role="listitem"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						CRM
+					</attribute>
+					<attribute
+					name="automationid"
+					type="System.String">
+						ce1de3c1-4a51-49a0-b42e-83d52d6b37a1
+					</attribute>
+					<attribute
+					name="classname"
+					type="System.String">
+						k-input
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						ListItem
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						Option
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						CRM
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						8568
+					</attribute>
+				</element>
+				<path>
+					/form/container[@name&gt;'rs2 Service Center - Microsoft']/container[@name='Microsoft Edge']//?/?/?/container[@classname='rs2']/container[@automationid='app']/container[@automationid='layout-spa']/container[@automationid='appModule']/container/container[2]/container[1]/?/?/list[@classname='k-widget k-dropdown']/listitem[@text='CRM']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="9a23139e-08b3-48b9-8f7d-1fb7f1cdc20d">
+				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
+39yX8h/jR/bdt/cl/If41q0UWl3C0u5lf23bf3JfyH+NH9t239yX8h/jWrRRaXcLS7mV/bdt/cl/
+If40f23bf3JfyH+NatFFpdwtLuZX9t239yX8h/jR/bdt/cl/If41q0UWl3C0u5lf23bf3JfyH+NH
+9t239yX8h/jWrRRaXcLS7mV/bdt/cl/If40f23bf3JfyH+NatFFpdwtLuZX9t239yX8h/jR/bdt/
+cl/If41q0UWl3C0u5lf23bf3JfyH+NH9t239yX8h/jWrRRaXcLS7mV/bdt/cl/If40f23bf3JfyH
++NatFFpdwtLuZX9t239yX8h/jR/bdt/cl/If41q0UWl3C0u5lf23bf3JfyH+NH9t239yX8h/jWrR
+RaXcLS7mV/bdt/cl/If40f23bf3JfyH+NatFFpdwtLuZX9t239yX8h/jR/bdt/cl/If41q0UWl3C
+0u5lf23bf3JfyH+NH9t239yX8h/jWrRRaXcLS7mV/bdt/cl/If40f23bf3JfyH+NatFFpdwtLuZX
+9t239yX8h/jR/bdt/cl/If41q0UWl3C0u5lf23bf3JfyH+NH9t239yX8h/jWrRRaXcLS7mV/bdt/
+cl/If40f23bf3JfyH+NatFFpdwtLuZX9t239yX8h/jR/bdt/cl/If41q0UWl3C0u5lf23bf3JfyH
++NH9t239yX8h/jWrRRaXcLS7mV/bdt/cl/If40f23bf3JfyH+NatFFpdwtLuZX9t239yX8h/jR/b
+dt/cl/If41q0UWl3C0u5lf23bf3JfyH+NH9t239yX8h/jWrRRaXcLS7mV/bdt/cl/If40f23bf3J
+fyH+NatFFpdwtLuZX9t239yX8h/jR/bdt/cl/If41q0UWl3C0u5lf23bf3JfyH+NH9t239yX8h/j
+WrRRaXcLS7mV/bdt/cl/If40Vq0UWl3C0u4UUUVRYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUU
+UAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQ
+AUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/2Q==
+			</helperscreenshot>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				CRM
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="cdea3a7c-5504-4751-bd8d-e321c5acf222"
+		sx="1433"
+		sy="588"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="23c443a1-f800-439e-a200-647a8f288c7f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/container[@name&gt;'rs2 Service Center - Microsoft']/container[@name='Microsoft Edge']//?/?/?/container[@classname='rs2']/container[@automationid='app']/container[@automationid='layout-spa']/container[@automationid='appModule']/container/container[2]/container[2]/?/?/listitem[@name='Version w&#228;hlen']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keysequenceitem
+		KeySequence="4.9.1 Servicepack 10"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		repoItemActivation="EnsureVisible"
+		searchpropertyid="dd67bff4-bdfb-4d72-b8ab-58edc62df34c">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Version">
+				</binding>
+			</bindings>
+		</keysequenceitem>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="6a537488-89c2-4704-8434-d66f65703dae"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="bbc79ee2-8614-4dd6-8e93-3718ab94c987">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Version">
+				</binding>
+			</bindings>
+			<info
+			id="344e2bfd-cf84-49a5-b3c0-ff885a33f112"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/container[@name&gt;'rs2 Service Center - Microsoft']/container[@name='Microsoft Edge']//?/?/?/container[@classname='rs2']/container[@automationid='app']/container[@automationid='layout-spa']/container[@automationid='appModule']/container/container[2]/container[2]/?/list/listitem[@name='4.9.1 Servicepack 10']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				4.9.1 Servicepack 10
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="8924b98c-6e1f-440a-8aa8-dd8555bc0ae4"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e598fc3e-afa7-4fab-8a5d-f0ab804f1e5c"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="uiautomation, uiautomationvalue"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="31,298,174,36"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						￼
+					</attribute>
+					<attribute
+					name="classname"
+					type="System.String">
+						k-textbox full-width validationElement
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="helptext"
+					type="System.String">
+						Programm
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						Bearbeiten
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						Programm
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						12728
+					</attribute>
+					<attribute
+					name="uiautomationvalueisreadonly"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="uiautomationvaluevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form/container[@name&gt;'rs2 Service Center - Microsoft']/container[@name='Microsoft Edge']//?/?/?/container[@classname='rs2']/container[@automationid='app']/container[@automationid='layout-spa']/container[@automationid='appModule']/container/container[2]/container[3]/text[@name='Programm']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence=""
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="5eccf84e-6ff2-4284-90c8-6c018cba4c27">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Programm">
+				</binding>
+			</bindings>
+			<info
+			id="e598fc3e-afa7-4fab-8a5d-f0ab804f1e5c"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="uiautomation, uiautomationvalue"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="31,298,174,36"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						￼
+					</attribute>
+					<attribute
+					name="classname"
+					type="System.String">
+						k-textbox full-width validationElement
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="helptext"
+					type="System.String">
+						Programm
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						Bearbeiten
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						Programm
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						12728
+					</attribute>
+					<attribute
+					name="uiautomationvalueisreadonly"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="uiautomationvaluevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form/container[@name&gt;'rs2 Service Center - Microsoft']/container[@name='Microsoft Edge']//?/?/?/container[@classname='rs2']/container[@automationid='app']/container[@automationid='layout-spa']/container[@automationid='appModule']/container/container[2]/container[3]/text[@name='Programm']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="f0963f1a-77ab-4861-89af-07c792da4840">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Programm">
+				</binding>
+			</bindings>
+			<info
+			id="263d9f5f-ffd4-4091-b9d3-08706bf00df4"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="uiautomation, uiautomationvalue"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="True"
+				index="0"
+				prefcap="text"
+				rect="31,298,174,36"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						211
+					</attribute>
+					<attribute
+					name="selectiontext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						C_CRM
+					</attribute>
+					<attribute
+					name="classname"
+					type="System.String">
+						k-textbox full-width
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="helptext"
+					type="System.String">
+						Programm
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						Bearbeiten
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						Programm
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						12728
+					</attribute>
+					<attribute
+					name="uiautomationvalueisreadonly"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="uiautomationvaluevalue"
+					type="System.String">
+						C_CRM
+					</attribute>
+				</element>
+				<path>
+					/form/container[@name&gt;'rs2 Service Center - Microsoft']/container[@name='Microsoft Edge']//?/?/?/container[@classname='rs2']/container[@automationid='app']/container[@automationid='layout-spa']/container[@automationid='appModule']/container/container[2]/container[3]/?/?/text[@name='Programm']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="f7deb4a7-2771-4c20-903d-bc17047e2b6a"
+	name="ServicecenterRepository"
+	relativepath="..\..\ServicecenterRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="ServicecenterRepository"
+		namespace="Servicecenter">
+		</codegen>
+		<rootfolder
+		id="e5a69c28-9dbf-43c2-b940-3a3d711f721c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Ticketanlage_ED.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

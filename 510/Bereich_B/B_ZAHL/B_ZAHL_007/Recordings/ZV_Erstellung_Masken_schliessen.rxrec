@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c8ba68ce-199a-4d78-afcc-3447531cb788"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ZV_Erstellung_Masken_schliessen"
+	namespace="B_ZAHL_007.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="785cccf3-8585-4b59-8594-34481f25deba">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="583abaa7-c311-4bef-9fa2-4713d0f1e3e7"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZlvsErstellen']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Vorschlag erstellen
+			</matchvalue>
+		</validationitem>
+		<keyitem
+		action="Press"
+		data="F4, Alt"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="9e4dc7ed-9e1d-4aba-be66-137e3c85e4d7"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="583abaa7-c311-4bef-9fa2-4713d0f1e3e7"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZlvsErstellen']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keyitem>
+	</recorditems>
+	<repository
+	id="432bb226-6ee8-4dd1-93ac-68f2ba4642d0"
+	name="B_ZAHL_007Repository"
+	relativepath="..\B_ZAHL_007Repository.rxrep">
+		<codegen
+		classname="B_ZAHL_007Repository"
+		namespace="B_ZAHL_007">
+		</codegen>
+		<rootfolder
+		id="808c3fe5-663c-4d5e-8df4-ed7b03c4823e"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ZV_Erstellung_Masken_schliessen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

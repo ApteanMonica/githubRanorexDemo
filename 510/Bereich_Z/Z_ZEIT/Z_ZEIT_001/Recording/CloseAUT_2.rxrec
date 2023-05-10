@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="09d22c51-c8c2-4508-ba55-a9938c1f7405"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT_2"
+	namespace="Z_ZEIT_001.Recording">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="f862a9bb-db1d-4e29-bc19-85e3601e67f7">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="78156ffc-8357-4ab9-ac73-3634c2fb18ea"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmTabProjekt']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="ac821a98-d495-46e1-8b5f-a2b7d1ac5246"
+	name="Z_ZEIT_001Repository"
+	relativepath="..\Z_ZEIT_001Repository.rxrep">
+		<codegen
+		classname="Z_ZEIT_001Repository"
+		namespace="Z_ZEIT_001">
+		</codegen>
+		<rootfolder
+		id="aec8b58a-b3a7-4be8-94b9-2604a723a73e"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT_2.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

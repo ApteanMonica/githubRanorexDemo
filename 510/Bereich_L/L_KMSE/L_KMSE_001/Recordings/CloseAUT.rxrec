@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="887b1a17-c2e5-43ca-95b5-83e38733df0b"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="L_KMSE_001.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="fc421db9-ac87-4d11-84b5-114a96870a38">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a279d7cb-4443-447f-8f05-f83d5fd64ab8"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='tblKmse']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="17cd5869-2d88-421c-a986-27cec0f2d179"
+	name="L_KMSE_001Repository"
+	relativepath="..\L_KMSE_001Repository.rxrep">
+		<codegen
+		classname="L_KMSE_001Repository"
+		namespace="L_KMSE_001">
+		</codegen>
+		<rootfolder
+		id="f9fb6dd1-1af7-4fe3-9051-b8ae9dbe7cb7"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll
+		</reference>
+	</references>
+</recordtable>

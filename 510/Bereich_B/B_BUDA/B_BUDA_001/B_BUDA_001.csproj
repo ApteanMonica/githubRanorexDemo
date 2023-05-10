@@ -1,0 +1,660 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{6964A877-9F47-428B-9D84-3622F33221BA}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>B_BUDA_001</RootNamespace>
+    <AssemblyName>B_BUDA_001</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>eba31f86-e040-4c81-9ca1-5cf3a151a39c</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>8bc873de-a26f-429a-aba6-1ffd4e59ced2</id>
+    </Compile>
+    <Compile Include="B_BUDA_001Repository.cs">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <DependentUpon>B_BUDA_001Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>5ebefde9-ee2c-407f-b40e-699b17891f88</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>b6f8555b-0eb8-4645-9c3d-3b580d14be9a</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Beleg_einschraenken_Dauerbuchung_verbucht.cs">
+      <DependentUpon>Beleg_einschraenken_Dauerbuchung_verbucht.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>02b4e97c-32c0-49ec-928e-1f943a23b2e6</id>
+      <BoundTo>80bc78f2-a83d-4d96-a06a-96c8a3bda239</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Beleg_einschraenken_Dauerbuchung_verbucht.UserCode.cs">
+      <DependentUpon>Beleg_einschraenken_Dauerbuchung_verbucht.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4e17358b-47fa-46df-b32e-7aa4739058ac</id>
+      <BoundTo>80bc78f2-a83d-4d96-a06a-96c8a3bda239</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Beleg_einschraenken_Meldung_Beleg_nicht_vorhanden.cs">
+      <BoundTo>127865b5-5464-4365-bd60-75b84456caed</BoundTo>
+      <DependentUpon>Beleg_einschraenken_Meldung_Beleg_nicht_vorhanden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>827d8872-b30b-4624-9e97-beb8eabccc0d</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Beleg_einschraenken_Meldung_Beleg_nicht_vorhanden.UserCode.cs">
+      <BoundTo>127865b5-5464-4365-bd60-75b84456caed</BoundTo>
+      <DependentUpon>Beleg_einschraenken_Meldung_Beleg_nicht_vorhanden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f2ee9465-b0b6-4df3-b9ef-3719f7ec71fb</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Close_B_BUAB.cs">
+      <BoundTo>29c65247-0a4d-40f9-8441-b8d572839cc1</BoundTo>
+      <DependentUpon>Close_B_BUAB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>af81627b-7fac-4f45-a76f-5713a44bc3ed</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Close_B_BUAB.UserCode.cs">
+      <BoundTo>29c65247-0a4d-40f9-8441-b8d572839cc1</BoundTo>
+      <DependentUpon>Close_B_BUAB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b82c2239-ec3b-4f70-84af-82756f93468f</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Dauerbuchungen_verbucht_pruefen.cs">
+      <DependentUpon>Dauerbuchungen_verbucht_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bc4d03c0-8a65-429a-91fb-0a5c71dd3c7a</id>
+      <BoundTo>8ebf1760-92a9-40d8-b541-10209982b314</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Dauerbuchungen_verbucht_pruefen.UserCode.cs">
+      <DependentUpon>Dauerbuchungen_verbucht_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f7222f62-f70b-403a-8d4a-2f523b265df8</id>
+      <BoundTo>8ebf1760-92a9-40d8-b541-10209982b314</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Dauerbuchungoption_einstellen.cs">
+      <BoundTo>99cce476-7890-478e-8ad4-7e938bcfbde6</BoundTo>
+      <DependentUpon>Dauerbuchungoption_einstellen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c7d368c8-a405-4bca-a6e8-8992916b2ef6</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Dauerbuchungoption_einstellen.UserCode.cs">
+      <BoundTo>99cce476-7890-478e-8ad4-7e938bcfbde6</BoundTo>
+      <DependentUpon>Dauerbuchungoption_einstellen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>afc39bb7-a93d-4c7b-b4b4-7dd36ebc3427</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Dauerbuchungsvorlage_pruefen.cs">
+      <BoundTo>4e380312-16e3-4e3a-9a9d-17ec76e94525</BoundTo>
+      <DependentUpon>Dauerbuchungsvorlage_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5bb69daa-2063-471e-b30a-91489aff4688</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Dauerbuchungsvorlage_pruefen.UserCode.cs">
+      <BoundTo>4e380312-16e3-4e3a-9a9d-17ec76e94525</BoundTo>
+      <DependentUpon>Dauerbuchungsvorlage_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c684e709-c19e-4773-b34f-e6627f4cd475</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Start_B_BUAB.cs">
+      <BoundTo>c5c32187-e712-4f9e-850d-10a1500187b0</BoundTo>
+      <DependentUpon>Start_B_BUAB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d60794c3-d4eb-47d1-ae07-b0eaf5223691</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Start_B_BUAB.UserCode.cs">
+      <BoundTo>c5c32187-e712-4f9e-850d-10a1500187b0</BoundTo>
+      <DependentUpon>Start_B_BUAB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1995dc49-11d1-4f7a-9387-05d939b0e1e8</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Tagesdatum_ermitteln.cs">
+      <BoundTo>593dbc0e-2542-4278-baf2-d1a20028d361</BoundTo>
+      <DependentUpon>Tagesdatum_ermitteln.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d5639afd-08ca-4271-8203-eaeb5ab4c59d</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Tagesdatum_ermitteln.UserCode.cs">
+      <BoundTo>593dbc0e-2542-4278-baf2-d1a20028d361</BoundTo>
+      <DependentUpon>Tagesdatum_ermitteln.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fb182b3d-681b-42ca-8a3b-e54ba3b5eea4</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUCH\Close_B_BUCH.cs">
+      <DependentUpon>Close_B_BUCH.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e09424ea-3eab-4905-aece-b34f0f13f837</id>
+      <BoundTo>acaabd86-a288-4a86-a9e1-20a62ebbd287</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUCH\Close_B_BUCH.UserCode.cs">
+      <DependentUpon>Close_B_BUCH.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>de3547e1-6e23-46df-b1fd-4a0469d1992b</id>
+      <BoundTo>acaabd86-a288-4a86-a9e1-20a62ebbd287</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUCH\Dauerbuchungsmodus_einstellen.cs">
+      <BoundTo>2e358b38-568f-4ccd-8400-c0bad9438965</BoundTo>
+      <DependentUpon>Dauerbuchungsmodus_einstellen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>530d2e10-5942-4df9-b3ff-8e5cf97db332</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUCH\Dauerbuchungsmodus_einstellen.UserCode.cs">
+      <BoundTo>2e358b38-568f-4ccd-8400-c0bad9438965</BoundTo>
+      <DependentUpon>Dauerbuchungsmodus_einstellen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>820550e6-3308-44fc-8364-c25a85dc08a3</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUCH\Dauerbuchungsvorlage_erfassen_ER.cs">
+      <BoundTo>aa59b576-441f-461e-ba01-36647cdc370c</BoundTo>
+      <DependentUpon>Dauerbuchungsvorlage_erfassen_ER.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4737a2e9-f961-430e-9c90-13610dd46929</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUCH\Dauerbuchungsvorlage_erfassen_ER.UserCode.cs">
+      <BoundTo>aa59b576-441f-461e-ba01-36647cdc370c</BoundTo>
+      <DependentUpon>Dauerbuchungsvorlage_erfassen_ER.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>244419e5-7c41-4ef9-9435-3b9b490e9b27</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUCH\Dauerbuchungsvorlage_erfassen_SA1.cs">
+      <BoundTo>d06d5507-f991-44f4-9e64-92d6a7eee2da</BoundTo>
+      <DependentUpon>Dauerbuchungsvorlage_erfassen_SA1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dac72442-4ad4-4edc-bfaf-4cb8219f42a0</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUCH\Dauerbuchungsvorlage_erfassen_SA1.UserCode.cs">
+      <BoundTo>d06d5507-f991-44f4-9e64-92d6a7eee2da</BoundTo>
+      <DependentUpon>Dauerbuchungsvorlage_erfassen_SA1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7ae7ff25-b832-4028-888f-4be4639afe61</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUCH\Dauerbuchungsvorlage_erfassen_SA1_Bereichsaufteilung.cs">
+      <BoundTo>3ddfc3d1-31e7-4310-8863-70d0d804425a</BoundTo>
+      <DependentUpon>Dauerbuchungsvorlage_erfassen_SA1_Bereichsaufteilung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5ff0f1fc-7f0a-4270-855e-4f243a36c5bd</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUCH\Dauerbuchungsvorlage_erfassen_SA1_Bereichsaufteilung.UserCode.cs">
+      <BoundTo>3ddfc3d1-31e7-4310-8863-70d0d804425a</BoundTo>
+      <DependentUpon>Dauerbuchungsvorlage_erfassen_SA1_Bereichsaufteilung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>27675141-e329-4cc7-b7a5-883060f2cb7e</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUCH\Dauerbuchungsvorlage_erfassen_SA3.cs">
+      <BoundTo>a9a483b8-c8fe-4227-8131-7c373b716032</BoundTo>
+      <DependentUpon>Dauerbuchungsvorlage_erfassen_SA3.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2c1c25f1-054c-434d-a6cb-12b45ee0aef7</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUCH\Dauerbuchungsvorlage_erfassen_SA3.UserCode.cs">
+      <BoundTo>a9a483b8-c8fe-4227-8131-7c373b716032</BoundTo>
+      <DependentUpon>Dauerbuchungsvorlage_erfassen_SA3.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0eb69a4d-7e0b-457c-b0ad-e4b95c280993</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUCH\Dauerbuchung_Konditionen_erfassen.cs">
+      <BoundTo>ad56ab33-3dec-4e22-a25e-1de6e0975dcb</BoundTo>
+      <DependentUpon>Dauerbuchung_Konditionen_erfassen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d2114b4f-c250-479c-b51d-e894f8accb01</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUCH\Dauerbuchung_Konditionen_erfassen.UserCode.cs">
+      <BoundTo>ad56ab33-3dec-4e22-a25e-1de6e0975dcb</BoundTo>
+      <DependentUpon>Dauerbuchung_Konditionen_erfassen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d54b14d0-d345-430b-b6c2-244b8de3659d</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUCH\Dauerbuchungsvorlage_erfassen_SA2.cs">
+      <BoundTo>d9e0e9f6-aaeb-4512-b61a-abb44f860832</BoundTo>
+      <DependentUpon>Dauerbuchungsvorlage_erfassen_SA2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dfc4d223-a4c1-4e33-9aa1-a1366296a59a</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUCH\Dauerbuchungsvorlage_erfassen_SA2.UserCode.cs">
+      <BoundTo>d9e0e9f6-aaeb-4512-b61a-abb44f860832</BoundTo>
+      <DependentUpon>Dauerbuchungsvorlage_erfassen_SA2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>86c5647c-dfa6-4eab-92db-dd1d8df5a0c5</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUCH\Periode_Busy_aufrufen.cs">
+      <BoundTo>fb63b6b3-58d2-4ca4-b69a-a82aae597ce8</BoundTo>
+      <DependentUpon>Periode_Busy_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ca13ea17-1f19-48c8-a4c5-e8b8f23fd2a9</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUCH\Periode_Busy_aufrufen.UserCode.cs">
+      <BoundTo>fb63b6b3-58d2-4ca4-b69a-a82aae597ce8</BoundTo>
+      <DependentUpon>Periode_Busy_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>49dead68-49e6-466f-9bbe-8f681c5ccf7b</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUCH\Start_B_BUCH.cs">
+      <DependentUpon>Start_B_BUCH.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9b51c42a-0a1e-48fc-b63b-7b350b8a7ca2</id>
+      <BoundTo>bbe6cbef-d389-449a-920d-7c95998fd307</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUCH\Start_B_BUCH.UserCode.cs">
+      <DependentUpon>Start_B_BUCH.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>36de87dd-2d01-4785-b518-22b57678381d</id>
+      <BoundTo>bbe6cbef-d389-449a-920d-7c95998fd307</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUDA\Close_B_BUDA.cs">
+      <DependentUpon>Close_B_BUDA.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0d4108d8-a622-48a0-ad5e-3e24d60a5c16</id>
+      <BoundTo>ff4f46ef-1d42-4486-baba-81b61683c33c</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUDA\Close_B_BUDA.UserCode.cs">
+      <DependentUpon>Close_B_BUDA.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>13611956-802f-4e24-9a7f-47f2b6eb0035</id>
+      <BoundTo>ff4f46ef-1d42-4486-baba-81b61683c33c</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUDA\Dauerbuchungsvorlage_Konditionen_nach_Verbuchung_pruefen.cs">
+      <DependentUpon>Dauerbuchungsvorlage_Konditionen_nach_Verbuchung_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0563de51-e233-4434-aa2a-51cbc19b9a22</id>
+      <BoundTo>89cb1ed8-8eed-4d7b-af5f-241cc56768b2</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUDA\Dauerbuchungsvorlage_Konditionen_nach_Verbuchung_pruefen.UserCode.cs">
+      <DependentUpon>Dauerbuchungsvorlage_Konditionen_nach_Verbuchung_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dfb10e7a-ad59-4081-91dc-1c5ba1f9f43f</id>
+      <BoundTo>89cb1ed8-8eed-4d7b-af5f-241cc56768b2</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUDA\Dauerbuchungsvorlage_Details_pruefen.cs">
+      <BoundTo>9a7be297-ffca-47ff-a210-4aed290b3274</BoundTo>
+      <DependentUpon>Dauerbuchungsvorlage_Details_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>87f158b7-1756-40f4-9f5c-930faf52ab36</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUDA\Dauerbuchungsvorlage_Details_pruefen.UserCode.cs">
+      <BoundTo>9a7be297-ffca-47ff-a210-4aed290b3274</BoundTo>
+      <DependentUpon>Dauerbuchungsvorlage_Details_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a0f0e30a-09d3-4b8e-b368-ebf6799d89db</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUDA\Dauerbuchung_Bereiche_pruefen.cs">
+      <DependentUpon>Dauerbuchung_Bereiche_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fc950961-c47d-4d65-bd2e-c08668363ede</id>
+      <BoundTo>674b6bac-e1ae-4bad-bdfc-bf85403e96f9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUDA\Dauerbuchung_Bereiche_pruefen.UserCode.cs">
+      <DependentUpon>Dauerbuchung_Bereiche_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7189c4ad-313e-4d7a-bf98-046033426e6b</id>
+      <BoundTo>674b6bac-e1ae-4bad-bdfc-bf85403e96f9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUDA\Dauerbuchung_drucken.cs">
+      <BoundTo>f3e1abda-6cd8-41ba-b381-710f560d3c72</BoundTo>
+      <DependentUpon>Dauerbuchung_drucken.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c9a6e0e1-67b7-4beb-9d34-2ec443a76bef</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUDA\Dauerbuchung_drucken.UserCode.cs">
+      <BoundTo>f3e1abda-6cd8-41ba-b381-710f560d3c72</BoundTo>
+      <DependentUpon>Dauerbuchung_drucken.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1a438cbf-6c2d-4072-bdc5-3e56a6bb9b52</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUDA\Dauerbuchung_Konditionen_pruefen.cs">
+      <BoundTo>792bfcb6-20db-4fcd-8dba-d42085883b4b</BoundTo>
+      <DependentUpon>Dauerbuchung_Konditionen_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7e21eeff-0e93-4001-93bb-83fcc99f78dd</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUDA\Dauerbuchung_Konditionen_pruefen.UserCode.cs">
+      <BoundTo>792bfcb6-20db-4fcd-8dba-d42085883b4b</BoundTo>
+      <DependentUpon>Dauerbuchung_Konditionen_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>95335407-acba-405b-9200-f077dc7d6c89</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUDA\Dauerbuchung_verbuchen.cs">
+      <BoundTo>4aa40230-b632-4a94-a8e8-029f9806465a</BoundTo>
+      <DependentUpon>Dauerbuchung_verbuchen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e088d12d-9db4-4b02-9d40-1a41044a4ffc</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUDA\Dauerbuchung_verbuchen.UserCode.cs">
+      <BoundTo>4aa40230-b632-4a94-a8e8-029f9806465a</BoundTo>
+      <DependentUpon>Dauerbuchung_verbuchen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a2bcf4b9-bc88-4c0e-acbd-0a7056970b70</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUDA\Dauerbuchung_verbucht_drucken.cs">
+      <DependentUpon>Dauerbuchung_verbucht_drucken.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ceec58f4-e8d7-47cc-b9c9-bc471014dc00</id>
+      <BoundTo>75b0096b-00f9-43ae-aae6-8af95afe4844</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUDA\Dauerbuchung_verbucht_drucken.UserCode.cs">
+      <DependentUpon>Dauerbuchung_verbucht_drucken.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f1055c8e-0b6f-4e55-adb8-7844a431ac45</id>
+      <BoundTo>75b0096b-00f9-43ae-aae6-8af95afe4844</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUDA\Drucktabelle_Druckdialog_schliessen.cs">
+      <BoundTo>f3f1b25e-b83b-4f29-890b-89f99340159e</BoundTo>
+      <DependentUpon>Drucktabelle_Druckdialog_schliessen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5bbb26c9-1c0b-47e9-b075-11c766801d8f</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUDA\Drucktabelle_Druckdialog_schliessen.UserCode.cs">
+      <BoundTo>f3f1b25e-b83b-4f29-890b-89f99340159e</BoundTo>
+      <DependentUpon>Drucktabelle_Druckdialog_schliessen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c392a633-3913-4dee-9d05-8b57943c21a6</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUDA\Start_B_BUDA.cs">
+      <DependentUpon>Start_B_BUDA.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>320cb3c9-7558-4bf5-944a-89ae81f2c30f</id>
+      <BoundTo>12ba8196-3d0f-463e-8399-f978ef0214a3</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUDA\Start_B_BUDA.UserCode.cs">
+      <DependentUpon>Start_B_BUDA.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>69861da0-ab39-4e86-a434-9efc43ab5313</id>
+      <BoundTo>12ba8196-3d0f-463e-8399-f978ef0214a3</BoundTo>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>0603760f-280e-4474-81ec-577631209672</id>
+    </None>
+    <None Include="B_BUDA_001Repository.rximg">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <DependentUpon>B_BUDA_001Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>4f308309-db16-42dc-8f07-c139563a2ca0</id>
+    </None>
+    <None Include="B_BUDA_001Repository.rxrep">
+      <id>eba31f86-e040-4c81-9ca1-5cf3a151a39c</id>
+      <repoid>ba558feb-54c1-4da0-932e-f061f7333e89</repoid>
+      <reporootid>9f5b4304-f0b5-4b10-a0a4-c4fb64cf0803</reporootid>
+    </None>
+    <None Include="Recordings_B_BUAB\Beleg_einschraenken_Dauerbuchung_verbucht.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>80bc78f2-a83d-4d96-a06a-96c8a3bda239</id>
+      <recordtableid>18b62f45-fc14-4bae-bb0c-4961d09085ea</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUAB\Beleg_einschraenken_Meldung_Beleg_nicht_vorhanden.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>127865b5-5464-4365-bd60-75b84456caed</id>
+      <recordtableid>d63bdcb7-ec48-489a-9ed1-f09beebf12d1</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUAB\Close_B_BUAB.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>29c65247-0a4d-40f9-8441-b8d572839cc1</id>
+      <recordtableid>b2e5de94-7493-4b24-bca8-3ba95dff4945</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUAB\Dauerbuchungen_verbucht_pruefen.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>8ebf1760-92a9-40d8-b541-10209982b314</id>
+      <recordtableid>8b9aa4e6-0b8d-47a7-9e74-f2dec28e4e3e</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUAB\Dauerbuchungoption_einstellen.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>99cce476-7890-478e-8ad4-7e938bcfbde6</id>
+      <recordtableid>8c38a454-63cd-472a-8f66-a9d8c8477345</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUAB\Dauerbuchungsvorlage_pruefen.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>4e380312-16e3-4e3a-9a9d-17ec76e94525</id>
+      <recordtableid>f3f7f70e-3305-4b7a-afff-3af2840d26c5</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUAB\Start_B_BUAB.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>c5c32187-e712-4f9e-850d-10a1500187b0</id>
+      <recordtableid>71417915-7571-484a-b7ea-f73166f00250</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUAB\Tagesdatum_ermitteln.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>593dbc0e-2542-4278-baf2-d1a20028d361</id>
+      <recordtableid>aafe0719-47c1-49ca-bb5d-ec4470d60bb9</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUCH\Close_B_BUCH.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>acaabd86-a288-4a86-a9e1-20a62ebbd287</id>
+      <recordtableid>88846fe7-904d-42fc-918d-e5e74f9b458e</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUCH\Dauerbuchungsmodus_einstellen.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>2e358b38-568f-4ccd-8400-c0bad9438965</id>
+      <recordtableid>c7c24048-b37b-468f-86aa-3d17ff30c58f</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUCH\Dauerbuchungsvorlage_erfassen_ER.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>aa59b576-441f-461e-ba01-36647cdc370c</id>
+      <recordtableid>2d9cc593-7f9c-4ead-8928-199d00bd3ad0</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUCH\Dauerbuchungsvorlage_erfassen_SA1.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>d06d5507-f991-44f4-9e64-92d6a7eee2da</id>
+      <recordtableid>2cd8116f-4af9-4abb-82c3-77e5b7ea26c8</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUCH\Dauerbuchungsvorlage_erfassen_SA1_Bereichsaufteilung.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>3ddfc3d1-31e7-4310-8863-70d0d804425a</id>
+      <recordtableid>da38a438-1406-4cfa-afee-73d3636cc22b</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUCH\Dauerbuchungsvorlage_erfassen_SA3.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>a9a483b8-c8fe-4227-8131-7c373b716032</id>
+      <recordtableid>8418271f-9878-4ada-803a-18658a278e31</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUCH\Dauerbuchung_Konditionen_erfassen.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>ad56ab33-3dec-4e22-a25e-1de6e0975dcb</id>
+      <recordtableid>65bd9494-0058-4949-98b4-2c53db04f3dc</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUCH\Dauerbuchungsvorlage_erfassen_SA2.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>d9e0e9f6-aaeb-4512-b61a-abb44f860832</id>
+      <recordtableid>52c8d0da-4b6e-4dad-98be-9c5366317d58</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUCH\Periode_Busy_aufrufen.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>fb63b6b3-58d2-4ca4-b69a-a82aae597ce8</id>
+      <recordtableid>c0fc3b57-e4e5-495d-8627-cd8bf957cfe1</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUCH\Start_B_BUCH.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>bbe6cbef-d389-449a-920d-7c95998fd307</id>
+      <recordtableid>860758e5-b32c-4726-9297-0fc9b679de08</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUDA\Close_B_BUDA.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>ff4f46ef-1d42-4486-baba-81b61683c33c</id>
+      <recordtableid>cf5885c5-c578-41f9-a363-3da1587acdd3</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUDA\Dauerbuchungsvorlage_Konditionen_nach_Verbuchung_pruefen.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>89cb1ed8-8eed-4d7b-af5f-241cc56768b2</id>
+      <recordtableid>c4c320c3-1c19-4789-b56f-5642c2b7e508</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUDA\Dauerbuchungsvorlage_Details_pruefen.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>9a7be297-ffca-47ff-a210-4aed290b3274</id>
+      <recordtableid>1602e8c5-21a6-46fc-9e77-65e88c4d1ec2</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUDA\Dauerbuchung_Bereiche_pruefen.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>674b6bac-e1ae-4bad-bdfc-bf85403e96f9</id>
+      <recordtableid>a66f70e8-da7a-4485-ade2-bff6e41e5269</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUDA\Dauerbuchung_drucken.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>f3e1abda-6cd8-41ba-b381-710f560d3c72</id>
+      <recordtableid>34de8ad1-398a-4e02-a656-e7b24984e2c5</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUDA\Dauerbuchung_Konditionen_pruefen.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>792bfcb6-20db-4fcd-8dba-d42085883b4b</id>
+      <recordtableid>c7429397-41ff-4f69-9933-70de9cb76def</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUDA\Dauerbuchung_verbuchen.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>4aa40230-b632-4a94-a8e8-029f9806465a</id>
+      <recordtableid>ee903aa8-ed15-48a6-bebd-c8a898de01b3</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUDA\Dauerbuchung_verbucht_drucken.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>75b0096b-00f9-43ae-aae6-8af95afe4844</id>
+      <recordtableid>ff2c1f73-0b3a-46f6-89ac-4ac5d2cb174e</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUDA\Drucktabelle_Druckdialog_schliessen.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>f3f1b25e-b83b-4f29-890b-89f99340159e</id>
+      <recordtableid>296b2117-28f8-448a-91ff-22e7b2c244d2</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUDA\Start_B_BUDA.rxrec">
+      <BoundTo>eba31f86-e040-4c81-9ca1-5cf3a151a39c</BoundTo>
+      <id>12ba8196-3d0f-463e-8399-f978ef0214a3</id>
+      <recordtableid>e2129e83-5cd9-494e-9c98-ac9c53968697</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="B_BUDA_001.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>273e3178-eca9-4141-a895-1bcc42932194</id>
+    </Content>
+    <Content Include="B_BUDA_001.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>4cc2c50b-7965-4fa2-8211-1880f0078481</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings_B_BUCH">
+      <id>a5c866b8-77b4-4abf-b485-52a74c39fc6e</id>
+    </Folder>
+    <Folder Include="Recordings_B_BUDA">
+      <id>fcd226b0-7200-478d-8b8c-08390821c308</id>
+    </Folder>
+    <Folder Include="Recordings_B_BUAB">
+      <id>8da7d4a7-e1d5-4c63-8e2f-c838ea5ac837</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{44512273-15E0-4062-B927-90B9D07B5D1A}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

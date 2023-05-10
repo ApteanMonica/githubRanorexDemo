@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="71ef46f3-aad7-4fe1-847c-03070aa03280"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartAUT"
+	namespace="E_BSKB">
+	</codegen>
+	<variables>
+		<var
+		id="eea428de-dce7-47de-9940-4ec87ef93e50"
+		name="StartAutProcessIDVar">
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="StartAutProcessIDVar">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Program Files\rs2\rs2\510_SP08\bin\E_BSKB.exe
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+	</recorditems>
+	<repository
+	id="7acbffdc-cbd6-4819-bbae-b5d18f960f86"
+	name="E_BSKBRepository"
+	relativepath="E_BSKBRepository.rxrep">
+		<codegen
+		classname="E_BSKBRepository"
+		namespace="E_BSKB">
+		</codegen>
+		<rootfolder
+		id="bc849619-32ef-4223-8429-32114e693d1c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

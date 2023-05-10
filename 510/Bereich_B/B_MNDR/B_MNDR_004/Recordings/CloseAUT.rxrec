@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="7df9b8d5-a4f3-4345-9864-5edb022bfc2c"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_MNDR_004.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="4595e7ae-a427-45c7-a775-6638732f025b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b9535594-3dff-4c9c-818b-b97f201caf89"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblMndt']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="e37a1af9-9643-43d3-9d34-b6505161a33c"
+	name="B_MNDR_004Repository"
+	relativepath="..\B_MNDR_004Repository.rxrep">
+		<codegen
+		classname="B_MNDR_004Repository"
+		namespace="B_MNDR_004">
+		</codegen>
+		<rootfolder
+		id="22e4cba7-fa16-4cf8-9b2f-1ac360b4e408"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

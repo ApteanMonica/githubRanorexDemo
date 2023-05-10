@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{FD896AFF-A09F-46E4-AA8F-5FA19705FCD6}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Z_REISE_001</RootNamespace>
+    <AssemblyName>Z_REISE_001</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>9c001395-fdcf-4024-bd94-96f74544d865</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper" />
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Delphi" />
+    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.WinForms.Core" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="Ranorex.Plugin.Wpf.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>873e3ea2-68d8-4b00-bdae-38df41c52b5c</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>9d65ae93-4eab-49e7-b88c-b990c41a5380</id>
+    </Compile>
+    <Compile Include="Recording\Close_AUT_1.cs">
+      <BoundTo>d0eb394c-9eb0-4767-897a-7ac2fb073c18</BoundTo>
+      <DependentUpon>Close_AUT_1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>244ffb65-dcfa-4344-b9ee-bfcd5f117f3c</id>
+    </Compile>
+    <Compile Include="Recording\Close_AUT_1.UserCode.cs">
+      <BoundTo>d0eb394c-9eb0-4767-897a-7ac2fb073c18</BoundTo>
+      <DependentUpon>Close_AUT_1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bb7c5b45-e4a2-49b9-92e7-104fcbba57af</id>
+    </Compile>
+    <Compile Include="Recording\Reiseart_erfassen.cs">
+      <BoundTo>dcba05f4-7c52-4741-8c15-88972814f905</BoundTo>
+      <DependentUpon>Reiseart_erfassen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ab0e0f1a-79ae-4f33-b066-92bf63f7c949</id>
+    </Compile>
+    <Compile Include="Recording\Reiseart_erfassen.UserCode.cs">
+      <BoundTo>dcba05f4-7c52-4741-8c15-88972814f905</BoundTo>
+      <DependentUpon>Reiseart_erfassen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b98fe330-7809-42e3-9a6f-243fc8e911f7</id>
+    </Compile>
+    <Compile Include="Recording\Reiseart_erfassen_Teil_2.cs">
+      <BoundTo>7696cf03-39de-48c3-ae26-bc9d3c70e906</BoundTo>
+      <DependentUpon>Reiseart_erfassen_Teil_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c9efc9ca-e44c-4dd2-ae1e-a66c628d8498</id>
+    </Compile>
+    <Compile Include="Recording\Reiseart_erfassen_Teil_2.UserCode.cs">
+      <BoundTo>7696cf03-39de-48c3-ae26-bc9d3c70e906</BoundTo>
+      <DependentUpon>Reiseart_erfassen_Teil_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>607571d4-e844-4aaa-b0d4-da828c322696</id>
+    </Compile>
+    <Compile Include="Recording\Start_AUT_1.cs">
+      <BoundTo>82778676-375a-40c3-bc6e-bd3b5062bf4d</BoundTo>
+      <DependentUpon>Start_AUT_1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>710921e4-3229-4717-8bce-4a9020768051</id>
+    </Compile>
+    <Compile Include="Recording\Start_AUT_1.UserCode.cs">
+      <BoundTo>82778676-375a-40c3-bc6e-bd3b5062bf4d</BoundTo>
+      <DependentUpon>Start_AUT_1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f0f5bddc-d44c-4673-9af2-798d66f50f14</id>
+    </Compile>
+    <Compile Include="Recording\UEberpruefung_erfasste_Daten.cs">
+      <BoundTo>60809e3c-2ee9-4ccb-af9a-6ea853beba74</BoundTo>
+      <DependentUpon>UEberpruefung_erfasste_Daten.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a514adb0-d0a8-407b-9b46-b7e84b39eb7b</id>
+    </Compile>
+    <Compile Include="Recording\UEberpruefung_erfasste_Daten.UserCode.cs">
+      <BoundTo>60809e3c-2ee9-4ccb-af9a-6ea853beba74</BoundTo>
+      <DependentUpon>UEberpruefung_erfasste_Daten.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4f915516-26d6-4857-a5f3-4b4df99afa3b</id>
+    </Compile>
+    <Compile Include="Recording\Ueberpruefung_erfasste_Daten_Teil_2.cs">
+      <BoundTo>cd89cc75-2d7b-4589-8618-d73004051c28</BoundTo>
+      <DependentUpon>Ueberpruefung_erfasste_Daten_Teil_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>16aacdbc-5be6-404c-9442-69bfbd1ccf26</id>
+    </Compile>
+    <Compile Include="Recording\Ueberpruefung_erfasste_Daten_Teil_2.UserCode.cs">
+      <BoundTo>cd89cc75-2d7b-4589-8618-d73004051c28</BoundTo>
+      <DependentUpon>Ueberpruefung_erfasste_Daten_Teil_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ddd1d54b-244a-451a-8f9a-4718f4e5bd83</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Abrechnung.cs">
+      <BoundTo>43474ecb-b8d7-4792-8fa3-e3c6f53f5cbd</BoundTo>
+      <DependentUpon>Abrechnung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>23987c3d-530e-4e27-aec7-b256a395526f</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Abrechnung.UserCode.cs">
+      <BoundTo>43474ecb-b8d7-4792-8fa3-e3c6f53f5cbd</BoundTo>
+      <DependentUpon>Abrechnung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9ce3acfe-1222-481f-90d9-23a478b53227</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Close_AUT_2.cs">
+      <BoundTo>b20d88f1-a70d-4e3e-84be-3ea685e25c15</BoundTo>
+      <DependentUpon>Close_AUT_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b46f4f21-624c-467d-859b-0054b2aedd32</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Close_AUT_2.UserCode.cs">
+      <BoundTo>b20d88f1-a70d-4e3e-84be-3ea685e25c15</BoundTo>
+      <DependentUpon>Close_AUT_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>910a758b-963d-4cc2-8a43-526ca716a2ce</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Erfassung_2_Beleg.cs">
+      <BoundTo>08153aeb-f8b3-43c8-966b-cde784570f57</BoundTo>
+      <DependentUpon>Erfassung_2_Beleg.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cb2dafbd-99ae-4c14-9f83-f8e32716af1d</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Erfassung_2_Beleg.UserCode.cs">
+      <BoundTo>08153aeb-f8b3-43c8-966b-cde784570f57</BoundTo>
+      <DependentUpon>Erfassung_2_Beleg.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fae29ca1-b5cc-43d1-8439-ee61670518cb</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Erfassung_Reg_Allgemein.cs">
+      <BoundTo>c21b1df2-ce8e-408f-871e-38c6523a6549</BoundTo>
+      <DependentUpon>Erfassung_Reg_Allgemein.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>db044c66-c8c6-4d5d-96ad-b10ce3a52718</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Erfassung_Reg_Allgemein.UserCode.cs">
+      <BoundTo>c21b1df2-ce8e-408f-871e-38c6523a6549</BoundTo>
+      <DependentUpon>Erfassung_Reg_Allgemein.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cf2b2877-3a45-480a-b530-0f4115b93378</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Erfassung_Reg_Belege.cs">
+      <BoundTo>6730429d-2b61-4f91-b51c-e6978f874a64</BoundTo>
+      <DependentUpon>Erfassung_Reg_Belege.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fcc9a609-c326-43aa-a2c5-08ed96134684</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Erfassung_Reg_Belege.UserCode.cs">
+      <BoundTo>6730429d-2b61-4f91-b51c-e6978f874a64</BoundTo>
+      <DependentUpon>Erfassung_Reg_Belege.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>48fc095b-5a3b-4cfd-a269-92673ffbd827</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Erfassung_Reg_Wege.cs">
+      <BoundTo>98315d0a-8b9b-4ad0-9d6f-eae86404c2af</BoundTo>
+      <DependentUpon>Erfassung_Reg_Wege.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9fcb4343-c584-4783-a8d0-faa328a91bc3</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Erfassung_Reg_Wege.UserCode.cs">
+      <BoundTo>98315d0a-8b9b-4ad0-9d6f-eae86404c2af</BoundTo>
+      <DependentUpon>Erfassung_Reg_Wege.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7153f917-3c9a-4f63-bef4-d00e2f49eec3</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Erfassung_Reg_Wege_2.cs">
+      <BoundTo>83a6df1a-38e5-49e9-902c-d7fbd2e96a8f</BoundTo>
+      <DependentUpon>Erfassung_Reg_Wege_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>71160ed9-51e5-40c6-ab55-d02902a1fed1</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Erfassung_Reg_Wege_2.UserCode.cs">
+      <BoundTo>83a6df1a-38e5-49e9-902c-d7fbd2e96a8f</BoundTo>
+      <DependentUpon>Erfassung_Reg_Wege_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c367d986-41f8-4363-979b-83912e4f0681</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Start_AUT_2.cs">
+      <BoundTo>c3dc1989-1e0b-4f7f-ac28-d517771ff726</BoundTo>
+      <DependentUpon>Start_AUT_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>51f7784b-0c7c-4216-bc7d-38bc28e9830e</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Start_AUT_2.UserCode.cs">
+      <BoundTo>c3dc1989-1e0b-4f7f-ac28-d517771ff726</BoundTo>
+      <DependentUpon>Start_AUT_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4944f32e-2cf0-4d56-8785-667683f65503</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Ueberpruefung_1_Belegerfassung.cs">
+      <BoundTo>a56641f8-566c-4e3e-80d2-cf6d9f640ee9</BoundTo>
+      <DependentUpon>Ueberpruefung_1_Belegerfassung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>73c25ebf-a113-44b5-8198-57e1a7a7d3ec</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Ueberpruefung_1_Belegerfassung.UserCode.cs">
+      <BoundTo>a56641f8-566c-4e3e-80d2-cf6d9f640ee9</BoundTo>
+      <DependentUpon>Ueberpruefung_1_Belegerfassung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>47f41fea-4200-4dc6-9f8b-d0626c4e6adc</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Ueberpruefung_Beleg_2.cs">
+      <BoundTo>afe955f7-d55b-4cb6-8bd1-23b411eaa60b</BoundTo>
+      <DependentUpon>Ueberpruefung_Beleg_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fe624430-61c6-4995-a097-2be826bbb0b0</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Ueberpruefung_Beleg_2.UserCode.cs">
+      <BoundTo>afe955f7-d55b-4cb6-8bd1-23b411eaa60b</BoundTo>
+      <DependentUpon>Ueberpruefung_Beleg_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d6cb83c9-1302-4ea0-88a3-e39e997e649a</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Ueberpruefung_Eingabe_Allgemein.cs">
+      <BoundTo>44422679-4d2e-4e09-98d0-580aea7bdaf9</BoundTo>
+      <DependentUpon>Ueberpruefung_Eingabe_Allgemein.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d0819dd0-8217-476b-bc28-2bb4a362edd9</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Ueberpruefung_Eingabe_Allgemein.UserCode.cs">
+      <BoundTo>44422679-4d2e-4e09-98d0-580aea7bdaf9</BoundTo>
+      <DependentUpon>Ueberpruefung_Eingabe_Allgemein.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ccf670a2-22d9-4a78-9644-d809f364adce</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Ueberpruefung_Reg_Wege.cs">
+      <BoundTo>4b23a97b-4b9e-42ac-94af-00ed9340b1ec</BoundTo>
+      <DependentUpon>Ueberpruefung_Reg_Wege.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b77fe8f4-5282-4493-be68-0920cc4a2c24</id>
+    </Compile>
+    <Compile Include="Recording_Reiseerfassung\Ueberpruefung_Reg_Wege.UserCode.cs">
+      <BoundTo>4b23a97b-4b9e-42ac-94af-00ed9340b1ec</BoundTo>
+      <DependentUpon>Ueberpruefung_Reg_Wege.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3b07e6d6-e0f8-447f-9287-345c383b8bf5</id>
+    </Compile>
+    <Compile Include="Z_REISE_001Repository.cs">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <DependentUpon>Z_REISE_001Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>116fdd4a-621b-439c-bbae-9ed422d2f4f8</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>7d72ee98-3f8c-4b8e-8871-118e3578c548</id>
+    </None>
+    <None Include="Recording\Close_AUT_1.rxrec">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <id>d0eb394c-9eb0-4767-897a-7ac2fb073c18</id>
+      <recordtableid>785b8010-cbd6-49d0-a288-5b4c423dbcbb</recordtableid>
+    </None>
+    <None Include="Recording\Reiseart_erfassen.rxrec">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <id>dcba05f4-7c52-4741-8c15-88972814f905</id>
+      <recordtableid>6b6fc4cc-29b6-4860-840b-f3c90e582bbf</recordtableid>
+    </None>
+    <None Include="Recording\Reiseart_erfassen_Teil_2.rxrec">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <id>7696cf03-39de-48c3-ae26-bc9d3c70e906</id>
+      <recordtableid>f67c14f2-0541-4cab-8c8f-51952b42b074</recordtableid>
+    </None>
+    <None Include="Recording\Start_AUT_1.rxrec">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <id>82778676-375a-40c3-bc6e-bd3b5062bf4d</id>
+      <recordtableid>ec3140c6-5535-402a-ab0d-8da8d4fed04b</recordtableid>
+    </None>
+    <None Include="Recording\UEberpruefung_erfasste_Daten.rxrec">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <id>60809e3c-2ee9-4ccb-af9a-6ea853beba74</id>
+      <recordtableid>3fbee3ac-5a6a-42b8-a0ef-a2dfc8ab4245</recordtableid>
+    </None>
+    <None Include="Recording\Ueberpruefung_erfasste_Daten_Teil_2.rxrec">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <id>cd89cc75-2d7b-4589-8618-d73004051c28</id>
+      <recordtableid>79410687-b969-4167-a005-6af3cc5f47db</recordtableid>
+    </None>
+    <None Include="Recording_Reiseerfassung\Abrechnung.rxrec">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <id>43474ecb-b8d7-4792-8fa3-e3c6f53f5cbd</id>
+      <recordtableid>4b92712d-baff-40de-9618-e983df4e00f2</recordtableid>
+    </None>
+    <None Include="Recording_Reiseerfassung\Close_AUT_2.rxrec">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <id>b20d88f1-a70d-4e3e-84be-3ea685e25c15</id>
+      <recordtableid>1065caf2-c70a-418e-acf9-0583141e11ea</recordtableid>
+    </None>
+    <None Include="Recording_Reiseerfassung\Erfassung_2_Beleg.rxrec">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <id>08153aeb-f8b3-43c8-966b-cde784570f57</id>
+      <recordtableid>47562a50-92f8-4a58-a2cd-b15b8f4b3fce</recordtableid>
+    </None>
+    <None Include="Recording_Reiseerfassung\Erfassung_Reg_Allgemein.rxrec">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <id>c21b1df2-ce8e-408f-871e-38c6523a6549</id>
+      <recordtableid>6a2560be-19fb-4fec-8026-8e5a02ccceb2</recordtableid>
+    </None>
+    <None Include="Recording_Reiseerfassung\Erfassung_Reg_Belege.rxrec">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <id>6730429d-2b61-4f91-b51c-e6978f874a64</id>
+      <recordtableid>fe9a882d-183d-4c20-b4c8-6fd2d7bf52b2</recordtableid>
+    </None>
+    <None Include="Recording_Reiseerfassung\Erfassung_Reg_Wege.rxrec">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <id>98315d0a-8b9b-4ad0-9d6f-eae86404c2af</id>
+      <recordtableid>f084283d-1072-425d-8cfa-2017db92a732</recordtableid>
+    </None>
+    <None Include="Recording_Reiseerfassung\Erfassung_Reg_Wege_2.rxrec">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <id>83a6df1a-38e5-49e9-902c-d7fbd2e96a8f</id>
+      <recordtableid>4e93c1ca-c63f-46bd-94e2-079307e50525</recordtableid>
+    </None>
+    <None Include="Recording_Reiseerfassung\Start_AUT_2.rxrec">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <id>c3dc1989-1e0b-4f7f-ac28-d517771ff726</id>
+      <recordtableid>afb84d16-40c8-4d69-a53f-c947ad3ffe79</recordtableid>
+    </None>
+    <None Include="Recording_Reiseerfassung\Ueberpruefung_1_Belegerfassung.rxrec">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <id>a56641f8-566c-4e3e-80d2-cf6d9f640ee9</id>
+      <recordtableid>df53f311-3673-460c-9e55-3061329d68c5</recordtableid>
+    </None>
+    <None Include="Recording_Reiseerfassung\Ueberpruefung_Beleg_2.rxrec">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <id>afe955f7-d55b-4cb6-8bd1-23b411eaa60b</id>
+      <recordtableid>a8266cad-56a3-4e68-96d0-dca38fda004d</recordtableid>
+    </None>
+    <None Include="Recording_Reiseerfassung\Ueberpruefung_Eingabe_Allgemein.rxrec">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <id>44422679-4d2e-4e09-98d0-580aea7bdaf9</id>
+      <recordtableid>c69fd7fc-f4ef-42a8-9cc4-a79f5987d141</recordtableid>
+    </None>
+    <None Include="Recording_Reiseerfassung\Ueberpruefung_Reg_Wege.rxrec">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <id>4b23a97b-4b9e-42ac-94af-00ed9340b1ec</id>
+      <recordtableid>f908aff8-cd2d-4f12-838a-231eb4060efa</recordtableid>
+    </None>
+    <None Include="Z_REISE_001Repository.rximg">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <DependentUpon>Z_REISE_001Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>e26ecb28-22da-4bde-abcd-94b5f154b07d</id>
+    </None>
+    <None Include="Z_REISE_001Repository.rxrep">
+      <id>9c001395-fdcf-4024-bd94-96f74544d865</id>
+      <repoid>5b0463a2-dd04-4234-abfe-574830bec97f</repoid>
+      <reporootid>46b2a12e-3c16-4266-b217-d137eb7120bc</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Z_REISE_001.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>3995d028-b9db-4d4a-b45c-8f6d675bab63</id>
+    </Content>
+    <Content Include="Z_REISE_001.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>9e949149-8193-44f9-8c33-05a139b9932d</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recording_Reiseerfassung">
+      <id>9ace8589-ebaf-4b19-9707-cadc0ce1580a</id>
+    </Folder>
+    <Folder Include="Recording">
+      <id>5cd2edb3-8148-4fef-b3bc-80a009f2aae6</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

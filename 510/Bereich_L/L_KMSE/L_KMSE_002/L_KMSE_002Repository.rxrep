@@ -1,0 +1,207 @@
+﻿<repository
+id="bfc28218-6f53-4d41-9045-c677284ae363"
+name="L_KMSE_002Repository">
+	<codegen
+	classname="L_KMSE_002Repository"
+	namespace="L_KMSE_002">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="ce2a249c-f239-4c7c-a926-531c18b65371"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		capname="form"
+		id="d43ac0ee-9503-4b63-9f8c-b500040faff1"
+		isrooted="True"
+		name="TblKmse"
+		refimgid="bfd10686-f926-4b08-b9ac-65a2437e4a34"
+		refpath="/form[@controlname='tblKmse']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="c8892761-9f76-4a8c-8cdb-b1f18265b3d6"
+			name="TitleBar100KommissionsscheineErstel"
+			refimgid="313bf3fc-d588-4dc2-b023-8253a5602731"
+			refpath="/form[@controlname='tblKmse']/titlebar[@accessiblerole='TitleBar']"
+			searchtimeout="30000ms">
+				/form[@controlname='tblKmse']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="cd7e7997-cde0-4bc2-b35a-ee82a063dc73"
+			name="Laden"
+			refimgid="9cb4898b-e3dc-4973-b6a2-0ea90566bb08"
+			refpath="/form[@controlname='tblKmse']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']"
+			searchtimeout="30000ms">
+				/form[@controlname='tblKmse']/container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Load']
+			</item>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="78d9adaa-287b-43d5-92eb-80cd9db471fa"
+			isrooted="True"
+			name="ToolBar"
+			refpath="/form[@controlname='tblKmse']/container[@controlname='ToolBar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="90a4cc6c-c735-403a-84ae-f7acb126196c"
+				name="Aufk_Nr"
+				refimgid="d548ac7e-c53b-47dc-b892-64abf8a5da19"
+				refpath="/form[@controlname='tblKmse']/container[@controlname='ToolBar']/container[@controlname='groupBox2']/text[@controlname='dfAufk_nr']/text[@accessiblename='Nummer']"
+				searchtimeout="30000ms">
+					/form[@controlname='tblKmse']/container[@controlname='ToolBar']//text[@accessiblename='Nummer']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="df5e5e34-10af-4472-badf-4cc096897c9b"
+				name="LagerVon"
+				refimgid="05f7ee71-c293-4762-8b20-bee231d9cfb9"
+				refpath="/form[@controlname='tblKmse']/container[@controlname='ToolBar']/text[@controlname='dfLag_nr_von']/text[@accessiblename='Lager von']"
+				searchtimeout="30000ms">
+					/form[@controlname='tblKmse']/container[@controlname='ToolBar']/?/?/text[@accessiblename='Lager von']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="41853cd9-4204-4307-9d1c-148ff34f5aba"
+				name="Lagerbis"
+				refimgid="9a302ba1-b06a-46ba-8065-c84f2c25151f"
+				refpath="/form[@controlname='tblKmse']/container[@controlname='ToolBar']/text[@controlname='dfLag_nr_bis']/text[@accessiblename='bis']"
+				searchtimeout="30000ms">
+					/form[@controlname='tblKmse']/container[@controlname='ToolBar']/text[@controlname='dfLag_nr_bis']/text[@accessiblename='bis']
+				</item>
+				<basepath>
+					/form[@controlname='tblKmse']/container[@controlname='ToolBar']
+				</basepath>
+			</folder>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="9fb9b6ee-a75d-4c43-9624-0ab0028476ce"
+			name="PbCommonKsErstellen"
+			refimgid="b707b1a0-b2fa-47e2-9d12-1f8d4743343f"
+			refpath="/form[@controlname='tblKmse']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_KsErstellen']"
+			searchtimeout="30000ms">
+				/form[@controlname='tblKmse']/container[@controlname='RibbonBar']/?/?/button[@controlname='pbCommon_KsErstellen']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="8fd980d7-cc19-41fd-817c-758f66f3990b"
+			name="ColKmskNrRow1"
+			refimgid="e0b14b6c-e9f7-4b0d-b596-2efe89491674"
+			refpath="/form[@controlname='tblKmse']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKmsk_nr Row 1']"
+			searchtimeout="30000ms">
+				/form[@controlname='tblKmse']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKmsk_nr Row 1']
+			</item>
+			<basepath>
+				/form[@controlname='tblKmse']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAHBJREFUOE/tjkEKgDAMBHP0IIUi4lt9g2/oF/xiZIWFjdQq4kXwMKRQ
+ZhJbu8mV0o+BJQ2BOeXAH/hcwM12HgUgYkLSSAjgA5JOiuQyoLJeQFSuBiCdbT/KzYCGKGPeDuBN
+iQGlGgC6HTBAdPsLgewbF6W61N1ckdcAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="4ccfba5d-7eac-4a48-9d3a-cbf149cc5dd1"
+		isrooted="True"
+		name="DlgMessageBox"
+		refpath="/form[@controlname='dlgMessageBox']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="02bbc9a1-cb9a-4aaa-85a8-8e12eea2214a"
+			name="LabelMeldungstext"
+			refimgid="e0128dcd-76e6-49c7-969d-4bbaa635be17"
+			refpath="/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']"
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="eeb87ae9-a4b4-4958-a5d1-ddd98e276710"
+			name="OK_Fehlermeldung"
+			refimgid="37235ff5-2f65-4b65-aaaa-fc22278d78a7"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button0']"
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button0']
+			</item>
+			<basepath>
+				/form[@controlname='dlgMessageBox']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="host,nativewindow"
+		capname="host"
+		id="4a2fdc7a-6b46-4e6a-a092-8c2af5f80f9e"
+		isrooted="True"
+		name="WSVRI"
+		refimgid="acbacd57-a822-43d4-bbab-c21c8511a858"
+		refpath=""
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="host,nativewindow"
+			capname="host"
+			id="9581a055-4c1c-41db-be3f-d49e8d8d43e5"
+			name="WSVRI"
+			refimgid="daabd7a0-2433-4def-a0e3-005a3532673b"
+			refpath=""
+			searchtimeout="30000ms">
+			</item>
+			<basepath>
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACtUlEQVQ4T62S6zOUYRiH9w/qYzM1o5moMUyNShmHpISUNhIrHRxW
+DjmXpcah2Ky1TcsSa5ZQ0u62csxxMI4p6URGWFlXz6rGNPu1e+b98sx7Xc/v996v5L/N4OgcPYPT
+WPomaH8zSotpGENbP3UtvVQbutDUWVDVmCjVtlOsaeMPtjNd/VNcfwwyNVwuh4ulEFoMQfchQGHj
+5B0rPlkreN1eRKFsdBQYO8eIroAHz6GgCbLqQa6DqxoIV0JIoV20iU/mCndKDY6CFuMQ4WWgEHCG
+gBOrIKYSpOIsWMCn8n7inbHM0VvzZBfXOwr0rX2cL4H0OkjQQrSoIhU1zooK/nc38MpY4oj8Pe6x
+o6QXPnUUVBk6t1+OewJRKgh78Bu2d7f39kh8h/vVEVwiOki9p3MUqGvN2x2viA94QcCBBeCXu86J
+tG94xM/iFjOES7iFfeeaSVJoHQVlYj2+OWuEihpn8rfwzV7leOoXDsdN4yobwFlqxinkGXtP15KQ
++9hRUFT5HK/07wTk2/DJ/oFn8mcO3ZzENfqtgI04BTeyJ0DHbj8NN7IqHAUKZRNzn6xMza8zPrfG
+yMwqA5M/6B1bobXzI7UvJijWWgjtCkWWpvxXkJLz8KBG/3pTqXtJYWWz2HM9afe0xOeokKWUII0v
+IEiWjd+lFI4Fx+HmL9u8lFAU+QeXSDQNFv7Opm2LNauNpZWfzH+1MikS2dN0iySmwWVae5aoaZvl
+gHfkTgp1nXkbjjXFsm7d4oNhFwuLG8wsWGl8NUjFU6NIped6porYDBUlugH2n4jYEZTXGrGJm6sG
+9AxPLDA7VE579zRNpnFqWkdQN/RTUt2NQt1BziMzmWVG9nlKdwRFmma5eMhT6sVfVo38biXX0suI
+TCok7EYegVGZ+EqTt/u7+8fg7BVhF8glEonkF6m1M1/+IilrAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

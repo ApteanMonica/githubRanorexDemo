@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{D258AEE8-CD95-4E7B-B8F7-E4411261C7A1}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Z_PROJ_006</RootNamespace>
+    <AssemblyName>Z_PROJ_006</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>0b1ae8f8-2a52-4a2d-804e-e2b58704f1a7</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper" />
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Delphi" />
+    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.WinForms.Core" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="Ranorex.Plugin.Wpf.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>5af99036-a316-4810-aa4a-00255ce8c05e</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>9d7c7942-8104-4d4f-aab6-f30444ee2377</id>
+    </Compile>
+    <Compile Include="Recording\CloseAUT.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7883f057-0a54-4efe-91de-13ff93559fbc</id>
+      <BoundTo>abe8ee45-eca9-4543-8387-3b121515e71e</BoundTo>
+    </Compile>
+    <Compile Include="Recording\CloseAUT.UserCode.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>00b1c6c1-73c5-4dcc-9349-a5cba35ccaf2</id>
+      <BoundTo>abe8ee45-eca9-4543-8387-3b121515e71e</BoundTo>
+    </Compile>
+    <Compile Include="Recording\Kontrolle_Ist_Zeiten.cs">
+      <BoundTo>cc77847f-2d10-4a22-8fbf-a86ed866cbb4</BoundTo>
+      <DependentUpon>Kontrolle_Ist_Zeiten.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>679391d9-69fc-4b08-acbe-f2ae928b26ca</id>
+    </Compile>
+    <Compile Include="Recording\Kontrolle_Ist_Zeiten.UserCode.cs">
+      <BoundTo>cc77847f-2d10-4a22-8fbf-a86ed866cbb4</BoundTo>
+      <DependentUpon>Kontrolle_Ist_Zeiten.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a11ec2a3-bf00-4209-bb90-d6ef045dfacb</id>
+    </Compile>
+    <Compile Include="Recording\Kontrolle_Planzeiten.cs">
+      <BoundTo>54ff0b22-185a-4f38-82bb-16b3bdf12fde</BoundTo>
+      <DependentUpon>Kontrolle_Planzeiten.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6076ebab-d0d0-4dfb-a799-d72b00d0787c</id>
+    </Compile>
+    <Compile Include="Recording\Kontrolle_Planzeiten.UserCode.cs">
+      <BoundTo>54ff0b22-185a-4f38-82bb-16b3bdf12fde</BoundTo>
+      <DependentUpon>Kontrolle_Planzeiten.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b707b246-c8a6-4209-89c7-ecd0777125bf</id>
+    </Compile>
+    <Compile Include="Recording\Kontrolle_Register_Daten_Zahlen.cs">
+      <BoundTo>41aee21a-d5a4-4128-b336-110a004e8d76</BoundTo>
+      <DependentUpon>Kontrolle_Register_Daten_Zahlen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>02c38c0d-0cbd-48bc-be01-a99277c85859</id>
+    </Compile>
+    <Compile Include="Recording\Kontrolle_Register_Daten_Zahlen.UserCode.cs">
+      <BoundTo>41aee21a-d5a4-4128-b336-110a004e8d76</BoundTo>
+      <DependentUpon>Kontrolle_Register_Daten_Zahlen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f0e8cc65-f840-4a17-9f9e-e92b44a6237c</id>
+    </Compile>
+    <Compile Include="Recording\Kontrolle_Summe_Ist_Offen.cs">
+      <BoundTo>defeaab0-085a-4e99-bac1-20b081b736e0</BoundTo>
+      <DependentUpon>Kontrolle_Summe_Ist_Offen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b4c23559-511c-41f4-8317-d5d12f2ee45b</id>
+    </Compile>
+    <Compile Include="Recording\Kontrolle_Summe_Ist_Offen.UserCode.cs">
+      <BoundTo>defeaab0-085a-4e99-bac1-20b081b736e0</BoundTo>
+      <DependentUpon>Kontrolle_Summe_Ist_Offen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4b45d5ab-d204-437a-b6b8-22618961fd1b</id>
+    </Compile>
+    <Compile Include="Recording\Kontrolle_Summe_Ist_Zeiten.cs">
+      <BoundTo>0a80d340-8f40-47d9-bd3b-18d01e3963e3</BoundTo>
+      <DependentUpon>Kontrolle_Summe_Ist_Zeiten.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dbd29349-bf47-4424-96ce-867a9bb956a5</id>
+    </Compile>
+    <Compile Include="Recording\Kontrolle_Summe_Ist_Zeiten.UserCode.cs">
+      <BoundTo>0a80d340-8f40-47d9-bd3b-18d01e3963e3</BoundTo>
+      <DependentUpon>Kontrolle_Summe_Ist_Zeiten.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e197c54e-c813-47a2-9bef-ea2da4856a69</id>
+    </Compile>
+    <Compile Include="Recording\Kontrolle_Summe_Planzeiten.cs">
+      <BoundTo>f84003b6-8e0d-4a18-b94d-d9a12f74695a</BoundTo>
+      <DependentUpon>Kontrolle_Summe_Planzeiten.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>93aba9c1-9234-44d9-87c4-2d4659992790</id>
+    </Compile>
+    <Compile Include="Recording\Kontrolle_Summe_Planzeiten.UserCode.cs">
+      <BoundTo>f84003b6-8e0d-4a18-b94d-d9a12f74695a</BoundTo>
+      <DependentUpon>Kontrolle_Summe_Planzeiten.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>16b192d8-9b28-456f-86db-fbe46a1592b9</id>
+    </Compile>
+    <Compile Include="Recording\Planzeiten_ausblenden.cs">
+      <BoundTo>64dc1191-be6f-442b-9d52-0c16315b37ce</BoundTo>
+      <DependentUpon>Planzeiten_ausblenden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>92ba6308-0b0c-48af-a58a-6835058b0e55</id>
+    </Compile>
+    <Compile Include="Recording\Planzeiten_ausblenden.UserCode.cs">
+      <BoundTo>64dc1191-be6f-442b-9d52-0c16315b37ce</BoundTo>
+      <DependentUpon>Planzeiten_ausblenden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f1bbfb76-0302-483a-8ea9-4179010db286</id>
+    </Compile>
+    <Compile Include="Recording\Planzeiten_einblenden.cs">
+      <BoundTo>586ea18f-0400-4e31-a301-7a6910bb7af7</BoundTo>
+      <DependentUpon>Planzeiten_einblenden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a1f614c7-b093-4da0-b557-b6c5ce883476</id>
+    </Compile>
+    <Compile Include="Recording\Planzeiten_einblenden.UserCode.cs">
+      <BoundTo>586ea18f-0400-4e31-a301-7a6910bb7af7</BoundTo>
+      <DependentUpon>Planzeiten_einblenden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9a6248bd-b5fc-418c-9ea8-a765f64f1d10</id>
+    </Compile>
+    <Compile Include="Recording\Planzeiten_erfassen.cs">
+      <BoundTo>bcb73d5a-7347-4099-bdc0-b93cca756579</BoundTo>
+      <DependentUpon>Planzeiten_erfassen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>76da16f6-345f-458a-8310-88580d6ec201</id>
+    </Compile>
+    <Compile Include="Recording\Planzeiten_erfassen.UserCode.cs">
+      <BoundTo>bcb73d5a-7347-4099-bdc0-b93cca756579</BoundTo>
+      <DependentUpon>Planzeiten_erfassen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c3135d47-effb-44fe-a6c4-beeacbfd515e</id>
+    </Compile>
+    <Compile Include="Recording\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>04bb5d8e-724d-4c9e-89d9-34aba39a52d7</id>
+      <BoundTo>4cc3a0a1-ce67-4310-82a2-1226404a5e5c</BoundTo>
+    </Compile>
+    <Compile Include="Recording\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2727439c-25da-4bc3-8bd3-f2ccebfb9ce1</id>
+      <BoundTo>4cc3a0a1-ce67-4310-82a2-1226404a5e5c</BoundTo>
+    </Compile>
+    <Compile Include="Z_PROJ_006Repository.cs">
+      <BoundTo>0b1ae8f8-2a52-4a2d-804e-e2b58704f1a7</BoundTo>
+      <DependentUpon>Z_PROJ_006Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>6cb2388d-d95f-475f-a60d-7f955b0c3b68</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>107d1464-ac6a-4289-bda7-8bb67f8d579a</id>
+    </None>
+    <None Include="Recording\CloseAUT.rxrec">
+      <BoundTo>0b1ae8f8-2a52-4a2d-804e-e2b58704f1a7</BoundTo>
+      <id>abe8ee45-eca9-4543-8387-3b121515e71e</id>
+      <recordtableid>07066b66-6949-4d03-976b-531a0d5a4d36</recordtableid>
+    </None>
+    <None Include="Recording\Kontrolle_Ist_Zeiten.rxrec">
+      <BoundTo>0b1ae8f8-2a52-4a2d-804e-e2b58704f1a7</BoundTo>
+      <id>cc77847f-2d10-4a22-8fbf-a86ed866cbb4</id>
+      <recordtableid>e8ca455b-ef65-46f5-a5a6-051102a73ada</recordtableid>
+    </None>
+    <None Include="Recording\Kontrolle_Planzeiten.rxrec">
+      <BoundTo>0b1ae8f8-2a52-4a2d-804e-e2b58704f1a7</BoundTo>
+      <id>54ff0b22-185a-4f38-82bb-16b3bdf12fde</id>
+      <recordtableid>b1ff5eac-d237-4935-8110-41d01c7c0c5c</recordtableid>
+    </None>
+    <None Include="Recording\Kontrolle_Register_Daten_Zahlen.rxrec">
+      <BoundTo>0b1ae8f8-2a52-4a2d-804e-e2b58704f1a7</BoundTo>
+      <id>41aee21a-d5a4-4128-b336-110a004e8d76</id>
+      <recordtableid>50d45b4c-0524-4c43-9c17-879924b4642f</recordtableid>
+    </None>
+    <None Include="Recording\Kontrolle_Summe_Ist_Offen.rxrec">
+      <BoundTo>0b1ae8f8-2a52-4a2d-804e-e2b58704f1a7</BoundTo>
+      <id>defeaab0-085a-4e99-bac1-20b081b736e0</id>
+      <recordtableid>44214dd1-eda0-4347-a064-c0455da4cc0b</recordtableid>
+    </None>
+    <None Include="Recording\Kontrolle_Summe_Ist_Zeiten.rxrec">
+      <BoundTo>0b1ae8f8-2a52-4a2d-804e-e2b58704f1a7</BoundTo>
+      <id>0a80d340-8f40-47d9-bd3b-18d01e3963e3</id>
+      <recordtableid>0f182646-0567-4176-b42a-9b7e041fe32c</recordtableid>
+    </None>
+    <None Include="Recording\Kontrolle_Summe_Planzeiten.rxrec">
+      <BoundTo>0b1ae8f8-2a52-4a2d-804e-e2b58704f1a7</BoundTo>
+      <id>f84003b6-8e0d-4a18-b94d-d9a12f74695a</id>
+      <recordtableid>45f844fb-d544-4775-af4c-8505b2ea9545</recordtableid>
+    </None>
+    <None Include="Recording\Planzeiten_ausblenden.rxrec">
+      <BoundTo>0b1ae8f8-2a52-4a2d-804e-e2b58704f1a7</BoundTo>
+      <id>64dc1191-be6f-442b-9d52-0c16315b37ce</id>
+      <recordtableid>d484db4f-2e0d-4553-8d77-2d6e3d394ea9</recordtableid>
+    </None>
+    <None Include="Recording\Planzeiten_einblenden.rxrec">
+      <BoundTo>0b1ae8f8-2a52-4a2d-804e-e2b58704f1a7</BoundTo>
+      <id>586ea18f-0400-4e31-a301-7a6910bb7af7</id>
+      <recordtableid>596f0506-5e82-4760-bebb-24cf1452e857</recordtableid>
+    </None>
+    <None Include="Recording\Planzeiten_erfassen.rxrec">
+      <BoundTo>0b1ae8f8-2a52-4a2d-804e-e2b58704f1a7</BoundTo>
+      <id>bcb73d5a-7347-4099-bdc0-b93cca756579</id>
+      <recordtableid>79cb2e18-eddb-4979-9cc3-e9a9f21631c2</recordtableid>
+    </None>
+    <None Include="Recording\StartAUT.rxrec">
+      <BoundTo>0b1ae8f8-2a52-4a2d-804e-e2b58704f1a7</BoundTo>
+      <id>4cc3a0a1-ce67-4310-82a2-1226404a5e5c</id>
+      <recordtableid>693053a7-814f-44d9-a3df-bc6e91f43546</recordtableid>
+    </None>
+    <None Include="Z_PROJ_006Repository.rximg">
+      <BoundTo>0b1ae8f8-2a52-4a2d-804e-e2b58704f1a7</BoundTo>
+      <DependentUpon>Z_PROJ_006Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>10151791-665f-4631-9353-dcab40706bb7</id>
+    </None>
+    <None Include="Z_PROJ_006Repository.rxrep">
+      <id>0b1ae8f8-2a52-4a2d-804e-e2b58704f1a7</id>
+      <repoid>ff8cb462-5db8-4635-babb-294cb61f694b</repoid>
+      <reporootid>1daf1f44-3c9d-4d32-9196-0910023728cf</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Z_PROJ_006.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>2cbd0350-cfed-4023-9597-2f1183973b5b</id>
+    </Content>
+    <Content Include="Z_PROJ_006.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>e9791763-27ee-4adc-ad4c-9eb5f481a2b4</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recording">
+      <id>655ba038-6acc-464b-84db-1b91d5435966</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4d8cee57-f096-4c14-bbfc-ecf31f9b2a83"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Kontrolle_Prueferdatei_AT"
+	namespace="B_JOUR_001.Recordings2">
+	</codegen>
+	<variables>
+		<var
+		id="df8394ba-97f4-496c-b737-6858b0ab3117"
+		name="Prueferdatei_AT_Werte_2017">
+		</var>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ea103c77-c37c-4cb6-8833-5c4ac6cabc2a">
+			<comment>
+				Kontrolle Buchungs/Journalzeilen mit Spaltenüberschriften
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Prueferdatei_AT_Werte_2017">
+				</binding>
+			</bindings>
+			<info
+			id="320527ae-44cb-4467-9725-7f956445c207"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="610,368,1006,503"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Firma;Erfassungs/Buchungsdatum;Zeit;Jahr;Periode;Journal-Nr;Buchungs-Id;Beleg-Nr;Fremdbeleg-Nr;Beleg-Datum;Symbol;Konto-Nr;Kd/Lief-Nr;S/H;Betrag;Ust-Cd;Ust-Art;Ust-Satz;Ust-Betrag;Text;Text2;Betrag-Soll;Betrag-Haben;Ustbetrag-Soll;Ustbetrag-Haben;Soll;Haben;Wrg;FW-Betrag;FW-Ustbetrag;Kurs;Konto-Bezeichnung;Kd/Lief-Name;UID-Nr;User Buchung;User Verbuchen aus Schnittstelle;User Befueller der Schnittstelle;Primaerbereich1;Primaerbereich1Bez
+100;20200330;12:08:39;2017;1;1;71;B_JOUR_001_1;;20170110;ER;3340;303001;H;1000,00;;;;;B_JOUR_001_1 innergem. Erwerb (Skonto Praktikermethode);;0,00;1000,00;;0,00;;1000,00;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:08:40;2017;1;2;71;B_JOUR_001_1;;20170110;ER;7650;303001;S;1000,00;E20;E;20,00;200,00;B_JOUR_001_1 innergem. Erwerb (Skonto Praktikermethode);;1000,00;0,00;200,00;200,00;1200,00;200,00;;;;0;Werbekosten;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:10:40;2017;1;3;72;B_JOUR_001_2;;20170115;ER;3340;303002;H;1000,00;;;;;B_JOUR_001_2 div. LF,  tw. Vst-Abzug, prakt. Skonto;;0,00;1000,00;;0,00;;1000,00;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:10:40;2017;1;4;72;B_JOUR_001_2;;20170115;ER;7650;303002;S;833,33;NV;V;20,00;50,00;B_JOUR_001_2 div. LF,  tw. Vst-Abzug, prakt. Skonto;;833,33;0,00;50,00;;883,33;;;;;0;Werbekosten;LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:10:40;2017;1;5;72;B_JOUR_001_2;;20170115;ER;7650;303002;S;116,67;;N;;;nicht-abzugsf&#65533;hige Ust;;116,67;0,00;0,00;;116,67;;;;;0;Werbekosten;LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:14:37;2017;1;6;73;B_JOUR_001_3;;20170130;ER;3300;303003;H;1000,00;;;;;B_JOUR_001_3 LF-AT, norm. Vst, theor. Skonto;;0,00;1000,00;;0,00;;1000,00;;;;0;Verbindlichkeiten aus Lieferungen und Leistungen I;LIEFERANT_AT (B_JOUR);;RS;;;*;
+100;20200330;12:14:37;2017;1;7;73;B_JOUR_001_3;;20170130;ER;7650;303003;S;816,66;V20;V;20,00;163,34;B_JOUR_001_3 LF-AT, norm. Vst, theor. Skonto;;816,66;0,00;163,34;;980,00;;;;;0;Werbekosten;LIEFERANT_AT (B_JOUR);;RS;;;*;
+100;20200330;12:14:37;2017;1;8;73;B_JOUR_001_3;;20170130;ER;5880;303003;S;16,67;V20;V;20,00;3,33;Skonto B_JOUR_001_3;;16,67;0,00;3,33;;20,00;;;;;0;Lieferantenskonti (Klasse 5);LIEFERANT_AT (B_JOUR);;RS;;;*;
+100;20200330;12:29:08;2017;1;9;74;B_JOUR_001_4;;20170130;AR;2000;202002;S;500,00;;;;;B_JOUR_001_4 AR Standard;;500,00;0,00;0,00;;500,00;;;;;0;Forderungen aus Lieferungen und Leistungen Inland;KUNDE_AT (B_JOUR);;RS;;;*;
+100;20200330;12:29:08;2017;1;10;74;B_JOUR_001_4;;20170130;AR;4810;202002;H;454,55;M10;1;10,00;45,45;B_JOUR_001_4 AR Standard M10;;0,00;454,55;;45,45;;500,00;;;;0;Mietertr&#65533;ge;KUNDE_AT (B_JOUR);;RS;;;*;
+100;20200330;12:30:40;2017;2;11;75;B_JOUR_001_5;;20170215;SA;2800;;S;10000,00;;;;;B_JOUR_001_5 Umbuchung;;10000,00;0,00;0,00;;10000,00;;;;;0;Bank 1;;;RS;;;*;
+100;20200330;12:30:40;2017;2;12;75;B_JOUR_001_5;;20170215;SA;2880;;H;10000,00;;;;;B_JOUR_001_5 Umbuchung;;0,00;10000,00;;0,00;;10000,00;;;;0;Schwebende Geldbewegungen;;;RS;;;*;
+100;20200330;12:33:48;2017;2;13;76;B_JOUR_001_6A;;20170220;KA;3340;303001;S;100,00;;;;;B_JOUR_001_6A Vorauszahlung;;100,00;0,00;0,00;;100,00;;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:33:48;2017;2;14;76;B_JOUR_001_6A;;20170220;KA;2700;303001;H;100,00;;;;;B_JOUR_001_6A Vorauszahlung;;0,00;100,00;;0,00;;100,00;;;;0;Kassenbest&#65533;nde in Inlandsw&#65533;hrung;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:35:27;2017;2;15;77;B_JOUR_001_6B;;20170220;KA;3340;303001;S;500,00;;;;;B_JOUR_001_6B Vorauszahlung;;500,00;0,00;0,00;;500,00;;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:35:27;2017;2;16;77;B_JOUR_001_6B;;20170220;KA;2700;303001;H;500,00;;;;;B_JOUR_001_6B Vorauszahlung;;0,00;500,00;;0,00;;500,00;;;;0;Kassenbest&#65533;nde in Inlandsw&#65533;hrung;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:36:29;2017;2;17;78;B_JOUR_001_6C;;20170220;KA;3340;303002;S;1000,00;;;;;B_JOUR_001_6C Ausgleich B_JOUR_001_2;;1000,00;0,00;0,00;;1000,00;;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:36:30;2017;2;18;78;B_JOUR_001_6C;;20170220;KA;7650;303002;H;8,33;NV;V;20,00;0,50;Skonto B_JOUR_001_2;;0,00;8,33;;0,50;;8,83;;;;0;Werbekosten;LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:36:30;2017;2;19;78;B_JOUR_001_6C;;20170220;KA;5880;303002;H;1,17;;N;;;Skonto B_JOUR_001_2;;0,00;1,17;;0,00;;1,17;;;;0;Lieferantenskonti (Klasse 5);LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:36:30;2017;2;20;78;B_JOUR_001_6C;;20170220;KA;2700;303002;H;990,00;;;;;B_JOUR_001_6C Ausgleich B_JOUR_001_2;;0,00;990,00;;0,00;;990,00;;;;0;Kassenbest&#65533;nde in Inlandsw&#65533;hrung;LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:38:50;2017;2;21;79;B_JOUR_001_6D;;20170220;KA;3300;303003;S;1000,00;;;;;B_JOUR_001_6D Ausgleich B_JOUR_001_3;;1000,00;0,00;0,00;;1000,00;;;;;0;Verbindlichkeiten aus Lieferungen und Leistungen I;LIEFERANT_AT (B_JOUR);;RS;;;*;
+100;20200330;12:38:50;2017;2;22;79;B_JOUR_001_6D;;20170220;KA;5880;303003;H;8,33;V20;V;20,00;1,67;B_JOUR_001_6D Ausgleich B_JOUR_001_3;;0,00;8,33;;1,67;;10,00;;;;0;Lieferantenskonti (Klasse 5);LIEFERANT_AT (B_JOUR);;RS;;;*;
+100;20200330;12:38:50;2017;2;23;79;B_JOUR_001_6D;;20170220;KA;2700;303003;H;990,00;;;;;B_JOUR_001_6D Ausgleich B_JOUR_001_3;;0,00;990,00;;0,00;;990,00;;;;0;Kassenbest&#65533;nde in Inlandsw&#65533;hrung;LIEFERANT_AT (B_JOUR);;RS;;;*;
+100;20200330;12:41:35;2017;2;24;80;B_JOUR_001_7 GZ;;20170220;GZ;3340;303001;H;500,00;;;;;Ausgleich V: B_JOUR_001_6B VZ &lt;&gt; R: B_JOUR_001_1;;0,00;500,00;;0,00;;500,00;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:41:36;2017;2;25;80;B_JOUR_001_7 GZ;;20170220;GZ;3340;303001;S;500,00;;;;;Teilzahlung R: B_JOUR_001_1 &lt;&gt; V: B_JOUR_001_6B VZ;;500,00;0,00;0,00;;500,00;;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT DE (B_JOUR);;RS;;;*;&#10;
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="controlid"
+					type="System.Int32">
+						15
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						1060908
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						11496
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						notepad
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						LeftToRightReading
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Tiled, VerticalScrollBar, Visible, ChildWindow
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						Firma;Erfassungs/Buchungsdatum;Zeit;Jahr;Periode;Journal-Nr;Buchungs-Id;Beleg-Nr;Fremdbeleg-Nr;Beleg-Datum;Symbol;Konto-Nr;Kd/Lief-Nr;S/H;Betrag;Ust-Cd;Ust-Art;Ust-Satz;Ust-Betrag;Text;Text2;Betrag-Soll;Betrag-Haben;Ustbetrag-Soll;Ustbetrag-Haben;Soll;Haben;Wrg;FW-Betrag;FW-Ustbetrag;Kurs;Konto-Bezeichnung;Kd/Lief-Name;UID-Nr;User Buchung;User Verbuchen aus Schnittstelle;User Befueller der Schnittstelle;Primaerbereich1;Primaerbereich1Bez
+100;20200330;12:08:39;2017;1;1;71;B_JOUR_001_1;;20170110;ER;3340;303001;H;1000,00;;;;;B_JOUR_001_1 innergem. Erwerb (Skonto Praktikermethode);;0,00;1000,00;;0,00;;1000,00;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:08:40;2017;1;2;71;B_JOUR_001_1;;20170110;ER;7650;303001;S;1000,00;E20;E;20,00;200,00;B_JOUR_001_1 innergem. Erwerb (Skonto Praktikermethode);;1000,00;0,00;200,00;200,00;1200,00;200,00;;;;0;Werbekosten;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:10:40;2017;1;3;72;B_JOUR_001_2;;20170115;ER;3340;303002;H;1000,00;;;;;B_JOUR_001_2 div. LF,  tw. Vst-Abzug, prakt. Skonto;;0,00;1000,00;;0,00;;1000,00;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:10:40;2017;1;4;72;B_JOUR_001_2;;20170115;ER;7650;303002;S;833,33;NV;V;20,00;50,00;B_JOUR_001_2 div. LF,  tw. Vst-Abzug, prakt. Skonto;;833,33;0,00;50,00;;883,33;;;;;0;Werbekosten;LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:10:40;2017;1;5;72;B_JOUR_001_2;;20170115;ER;7650;303002;S;116,67;;N;;;nicht-abzugsf&#65533;hige Ust;;116,67;0,00;0,00;;116,67;;;;;0;Werbekosten;LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:14:37;2017;1;6;73;B_JOUR_001_3;;20170130;ER;3300;303003;H;1000,00;;;;;B_JOUR_001_3 LF-AT, norm. Vst, theor. Skonto;;0,00;1000,00;;0,00;;1000,00;;;;0;Verbindlichkeiten aus Lieferungen und Leistungen I;LIEFERANT_AT (B_JOUR);;RS;;;*;
+100;20200330;12:14:37;2017;1;7;73;B_JOUR_001_3;;20170130;ER;7650;303003;S;816,66;V20;V;20,00;163,34;B_JOUR_001_3 LF-AT, norm. Vst, theor. Skonto;;816,66;0,00;163,34;;980,00;;;;;0;Werbekosten;LIEFERANT_AT (B_JOUR);;RS;;;*;
+100;20200330;12:14:37;2017;1;8;73;B_JOUR_001_3;;20170130;ER;5880;303003;S;16,67;V20;V;20,00;3,33;Skonto B_JOUR_001_3;;16,67;0,00;3,33;;20,00;;;;;0;Lieferantenskonti (Klasse 5);LIEFERANT_AT (B_JOUR);;RS;;;*;
+100;20200330;12:29:08;2017;1;9;74;B_JOUR_001_4;;20170130;AR;2000;202002;S;500,00;;;;;B_JOUR_001_4 AR Standard;;500,00;0,00;0,00;;500,00;;;;;0;Forderungen aus Lieferungen und Leistungen Inland;KUNDE_AT (B_JOUR);;RS;;;*;
+100;20200330;12:29:08;2017;1;10;74;B_JOUR_001_4;;20170130;AR;4810;202002;H;454,55;M10;1;10,00;45,45;B_JOUR_001_4 AR Standard M10;;0,00;454,55;;45,45;;500,00;;;;0;Mietertr&#65533;ge;KUNDE_AT (B_JOUR);;RS;;;*;
+100;20200330;12:30:40;2017;2;11;75;B_JOUR_001_5;;20170215;SA;2800;;S;10000,00;;;;;B_JOUR_001_5 Umbuchung;;10000,00;0,00;0,00;;10000,00;;;;;0;Bank 1;;;RS;;;*;
+100;20200330;12:30:40;2017;2;12;75;B_JOUR_001_5;;20170215;SA;2880;;H;10000,00;;;;;B_JOUR_001_5 Umbuchung;;0,00;10000,00;;0,00;;10000,00;;;;0;Schwebende Geldbewegungen;;;RS;;;*;
+100;20200330;12:33:48;2017;2;13;76;B_JOUR_001_6A;;20170220;KA;3340;303001;S;100,00;;;;;B_JOUR_001_6A Vorauszahlung;;100,00;0,00;0,00;;100,00;;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:33:48;2017;2;14;76;B_JOUR_001_6A;;20170220;KA;2700;303001;H;100,00;;;;;B_JOUR_001_6A Vorauszahlung;;0,00;100,00;;0,00;;100,00;;;;0;Kassenbest&#65533;nde in Inlandsw&#65533;hrung;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:35:27;2017;2;15;77;B_JOUR_001_6B;;20170220;KA;3340;303001;S;500,00;;;;;B_JOUR_001_6B Vorauszahlung;;500,00;0,00;0,00;;500,00;;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:35:27;2017;2;16;77;B_JOUR_001_6B;;20170220;KA;2700;303001;H;500,00;;;;;B_JOUR_001_6B Vorauszahlung;;0,00;500,00;;0,00;;500,00;;;;0;Kassenbest&#65533;nde in Inlandsw&#65533;hrung;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:36:29;2017;2;17;78;B_JOUR_001_6C;;20170220;KA;3340;303002;S;1000,00;;;;;B_JOUR_001_6C Ausgleich B_JOUR_001_2;;1000,00;0,00;0,00;;1000,00;;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:36:30;2017;2;18;78;B_JOUR_001_6C;;20170220;KA;7650;303002;H;8,33;NV;V;20,00;0,50;Skonto B_JOUR_001_2;;0,00;8,33;;0,50;;8,83;;;;0;Werbekosten;LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:36:30;2017;2;19;78;B_JOUR_001_6C;;20170220;KA;5880;303002;H;1,17;;N;;;Skonto B_JOUR_001_2;;0,00;1,17;;0,00;;1,17;;;;0;Lieferantenskonti (Klasse 5);LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:36:30;2017;2;20;78;B_JOUR_001_6C;;20170220;KA;2700;303002;H;990,00;;;;;B_JOUR_001_6C Ausgleich B_JOUR_001_2;;0,00;990,00;;0,00;;990,00;;;;0;Kassenbest&#65533;nde in Inlandsw&#65533;hrung;LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:38:50;2017;2;21;79;B_JOUR_001_6D;;20170220;KA;3300;303003;S;1000,00;;;;;B_JOUR_001_6D Ausgleich B_JOUR_001_3;;1000,00;0,00;0,00;;1000,00;;;;;0;Verbindlichkeiten aus Lieferungen und Leistungen I;LIEFERANT_AT (B_JOUR);;RS;;;*;
+100;20200330;12:38:50;2017;2;22;79;B_JOUR_001_6D;;20170220;KA;5880;303003;H;8,33;V20;V;20,00;1,67;B_JOUR_001_6D Ausgleich B_JOUR_001_3;;0,00;8,33;;1,67;;10,00;;;;0;Lieferantenskonti (Klasse 5);LIEFERANT_AT (B_JOUR);;RS;;;*;
+100;20200330;12:38:50;2017;2;23;79;B_JOUR_001_6D;;20170220;KA;2700;303003;H;990,00;;;;;B_JOUR_001_6D Ausgleich B_JOUR_001_3;;0,00;990,00;;0,00;;990,00;;;;0;Kassenbest&#65533;nde in Inlandsw&#65533;hrung;LIEFERANT_AT (B_JOUR);;RS;;;*;
+100;20200330;12:41:35;2017;2;24;80;B_JOUR_001_7 GZ;;20170220;GZ;3340;303001;H;500,00;;;;;Ausgleich V: B_JOUR_001_6B VZ &lt;&gt; R: B_JOUR_001_1;;0,00;500,00;;0,00;;500,00;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:41:36;2017;2;25;80;B_JOUR_001_7 GZ;;20170220;GZ;3340;303001;S;500,00;;;;;Teilzahlung R: B_JOUR_001_1 &lt;&gt; V: B_JOUR_001_6B VZ;;500,00;0,00;0,00;;500,00;;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT DE (B_JOUR);;RS;;;*;&#10;
+					</attribute>
+					<dynamicattribute
+					description="The default action of the accessible object."
+					name="AccessibleDefaultAction"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The description of the accessible object."
+					name="AccessibleDescription"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The help string of the accessible object."
+					name="AccessibleHelp"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The filename and topic identifier of the associated WinHelp file for the accessible object."
+					name="AccessibleHelpTopic"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The keyboard shortcut of the accessible object."
+					name="AccessibleKeyboardShortcut"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The name of the accessible object."
+					name="AccessibleName"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The role of the accessible object."
+					name="AccessibleRole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The state of the accessible object."
+					name="AccessibleState"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The value of the accessible object."
+					name="AccessibleValue"
+					readonly="False"
+					truncationlength="-1"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicaction
+					description="Invokes the default action of the accessible object."
+					displayName="AccessibleDoDefaultAction">
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@title&gt;'b_JOUR_001_journal_AT_endgueltig_2017.txt']/text[@controlid='15']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				&#13;
+100;20200330;12:08:39;2017;1;1;71;B_JOUR_001_1;;20170110;ER;3340;303001;H;1000,00;;;;;B_JOUR_001_1 innergem. Erwerb (Skonto Praktikermethode);;0,00;1000,00;;0,00;;1000,00;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:08:40;2017;1;2;71;B_JOUR_001_1;;20170110;ER;7650;303001;S;1000,00;E20;E;20,00;200,00;B_JOUR_001_1 innergem. Erwerb (Skonto Praktikermethode);;1000,00;0,00;200,00;200,00;1200,00;200,00;;;;0;Werbekosten;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:10:40;2017;1;3;72;B_JOUR_001_2;;20170115;ER;3340;303002;H;1000,00;;;;;B_JOUR_001_2 div. LF,  tw. Vst-Abzug, prakt. Skonto;;0,00;1000,00;;0,00;;1000,00;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:10:40;2017;1;4;72;B_JOUR_001_2;;20170115;ER;7650;303002;S;833,33;NV;V;20,00;50,00;B_JOUR_001_2 div. LF,  tw. Vst-Abzug, prakt. Skonto;;833,33;0,00;50,00;;883,33;;;;;0;Werbekosten;LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:10:40;2017;1;5;72;B_JOUR_001_2;;20170115;ER;7650;303002;S;116,67;;N;;;nicht-abzugsf&#228;hige Ust;;116,67;0,00;0,00;;116,67;;;;;0;Werbekosten;LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:14:37;2017;1;6;73;B_JOUR_001_3;;20170130;ER;3300;303003;H;1000,00;;;;;B_JOUR_001_3 LF-AT, norm. Vst, theor. Skonto;;0,00;1000,00;;0,00;;1000,00;;;;0;Verbindlichkeiten aus Lieferungen und Leistungen I;LIEFERANT_AT (B_JOUR);;RS;;;*;
+100;20200330;12:14:37;2017;1;7;73;B_JOUR_001_3;;20170130;ER;7650;303003;S;816,66;V20;V;20,00;163,34;B_JOUR_001_3 LF-AT, norm. Vst, theor. Skonto;;816,66;0,00;163,34;;980,00;;;;;0;Werbekosten;LIEFERANT_AT (B_JOUR);;RS;;;*;
+100;20200330;12:14:37;2017;1;8;73;B_JOUR_001_3;;20170130;ER;5880;303003;S;16,67;V20;V;20,00;3,33;Skonto B_JOUR_001_3;;16,67;0,00;3,33;;20,00;;;;;0;Lieferantenskonti (Klasse 5);LIEFERANT_AT (B_JOUR);;RS;;;*;
+100;20200330;12:29:08;2017;1;9;74;B_JOUR_001_4;;20170130;AR;2000;202002;S;500,00;;;;;B_JOUR_001_4 AR Standard;;500,00;0,00;0,00;;500,00;;;;;0;Forderungen aus Lieferungen und Leistungen Inland;KUNDE_AT (B_JOUR);;RS;;;*;
+100;20200330;12:29:08;2017;1;10;74;B_JOUR_001_4;;20170130;AR;4810;202002;H;454,55;M10;1;10,00;45,45;B_JOUR_001_4 AR Standard M10;;0,00;454,55;;45,45;;500,00;;;;0;Mietertr&#228;ge;KUNDE_AT (B_JOUR);;RS;;;*;
+100;20200330;12:30:40;2017;2;11;75;B_JOUR_001_5;;20170215;SA;2800;;S;10000,00;;;;;B_JOUR_001_5 Umbuchung;;10000,00;0,00;0,00;;10000,00;;;;;0;Bank 1;;;RS;;;*;
+100;20200330;12:30:40;2017;2;12;75;B_JOUR_001_5;;20170215;SA;2880;;H;10000,00;;;;;B_JOUR_001_5 Umbuchung;;0,00;10000,00;;0,00;;10000,00;;;;0;Schwebende Geldbewegungen;;;RS;;;*;
+100;20200330;12:33:48;2017;2;13;76;B_JOUR_001_6A;;20170220;KA;3340;303001;S;100,00;;;;;B_JOUR_001_6A Vorauszahlung;;100,00;0,00;0,00;;100,00;;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:33:48;2017;2;14;76;B_JOUR_001_6A;;20170220;KA;2700;303001;H;100,00;;;;;B_JOUR_001_6A Vorauszahlung;;0,00;100,00;;0,00;;100,00;;;;0;Kassenbest&#228;nde in Inlandsw&#228;hrung Nr.0;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:35:27;2017;2;15;77;B_JOUR_001_6B;;20170220;KA;3340;303001;S;500,00;;;;;B_JOUR_001_6B Vorauszahlung;;500,00;0,00;0,00;;500,00;;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:35:27;2017;2;16;77;B_JOUR_001_6B;;20170220;KA;2700;303001;H;500,00;;;;;B_JOUR_001_6B Vorauszahlung;;0,00;500,00;;0,00;;500,00;;;;0;Kassenbest&#228;nde in Inlandsw&#228;hrung Nr.0;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:36:29;2017;2;17;78;B_JOUR_001_6C;;20170220;KA;3340;303002;S;1000,00;;;;;B_JOUR_001_6C Ausgleich B_JOUR_001_2;;1000,00;0,00;0,00;;1000,00;;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:36:30;2017;2;18;78;B_JOUR_001_6C;;20170220;KA;7650;303002;H;8,33;NV;V;20,00;0,50;Skonto B_JOUR_001_2;;0,00;8,33;;0,50;;8,83;;;;0;Werbekosten;LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:36:30;2017;2;19;78;B_JOUR_001_6C;;20170220;KA;5880;303002;H;1,17;;N;;;Skonto B_JOUR_001_2;;0,00;1,17;;0,00;;1,17;;;;0;Lieferantenskonti (Klasse 5);LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:36:30;2017;2;20;78;B_JOUR_001_6C;;20170220;KA;2700;303002;H;990,00;;;;;B_JOUR_001_6C Ausgleich B_JOUR_001_2;;0,00;990,00;;0,00;;990,00;;;;0;Kassenbest&#228;nde in Inlandsw&#228;hrung Nr.0;LIEFERANT_DIV_DE (B_JOUR);;RS;;;*;
+100;20200330;12:38:50;2017;2;21;79;B_JOUR_001_6D;;20170220;KA;3300;303003;S;1000,00;;;;;B_JOUR_001_6D Ausgleich B_JOUR_001_3;;1000,00;0,00;0,00;;1000,00;;;;;0;Verbindlichkeiten aus Lieferungen und Leistungen I;LIEFERANT_AT (B_JOUR);;RS;;;*;
+100;20200330;12:38:50;2017;2;22;79;B_JOUR_001_6D;;20170220;KA;5880;303003;H;8,33;V20;V;20,00;1,67;B_JOUR_001_6D Ausgleich B_JOUR_001_3;;0,00;8,33;;1,67;;10,00;;;;0;Lieferantenskonti (Klasse 5);LIEFERANT_AT (B_JOUR);;RS;;;*;
+100;20200330;12:38:50;2017;2;23;79;B_JOUR_001_6D;;20170220;KA;2700;303003;H;990,00;;;;;B_JOUR_001_6D Ausgleich B_JOUR_001_3;;0,00;990,00;;0,00;;990,00;;;;0;Kassenbest&#228;nde in Inlandsw&#228;hrung Nr.0;LIEFERANT_AT (B_JOUR);;RS;;;*;
+100;20200330;12:41:35;2017;2;24;80;B_JOUR_001_7 GZ;;20170220;GZ;3340;303001;H;500,00;;;;;Ausgleich V: B_JOUR_001_6B VZ &lt;&gt; R: B_JOUR_001_1;;0,00;500,00;;0,00;;500,00;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT DE (B_JOUR);;RS;;;*;
+100;20200330;12:41:36;2017;2;25;80;B_JOUR_001_7 GZ;;20170220;GZ;3340;303001;S;500,00;;;;;Teilzahlung R: B_JOUR_001_1 &lt;&gt; V: B_JOUR_001_6B VZ;;500,00;0,00;0,00;;500,00;;;;;0;Verbindlichk. aus Lieferungen und Leistungen EU;LIEFERANT DE (B_JOUR);;RS;;;*;&#10;
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="84373e67-7bf1-4c31-8c25-694fad96b532"
+	name="B_JOUR_001Repository"
+	relativepath="..\B_JOUR_001Repository.rxrep">
+		<codegen
+		classname="B_JOUR_001Repository"
+		namespace="B_JOUR_001">
+		</codegen>
+		<rootfolder
+		id="99ad7d86-38d9-409b-bf6d-8ae590b9deca"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Kontrolle_Prueferdatei_AT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

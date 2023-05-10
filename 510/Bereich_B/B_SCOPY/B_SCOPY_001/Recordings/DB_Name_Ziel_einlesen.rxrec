@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="40e9a405-ecf6-4925-9fbb-9f87cf9b6b24"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="DB_Name_Ziel_einlesen"
+	namespace="B_SCOPY_001.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="da06feb1-2d17-4df9-90ae-e447854e64f1"
+		name="Ziel_DB">
+		</var>
+	</variables>
+	<recorditems>
+		<getvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="289edbe8-b6dc-4d07-a8ea-2a583c0bd613"
+		varname="Ziel_DB">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8322f9d2-c45c-4783-837a-7c994ef65d91"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_SCOPY']/container[@controlname='ClientArea']/combobox[@controlname='cmbDatabaseBis']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
+	</recorditems>
+	<repository
+	id="6c2a0710-3a7a-4867-aa3d-b6fba98b056f"
+	name="B_SCOPY_001Repository"
+	relativepath="..\B_SCOPY_001Repository.rxrep">
+		<codegen
+		classname="B_SCOPY_001Repository"
+		namespace="B_SCOPY_001">
+		</codegen>
+		<rootfolder
+		id="20c65bfc-1bc8-4b4a-ac8c-35ac9a5f2ded"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		DB_Name_Ziel_einlesen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

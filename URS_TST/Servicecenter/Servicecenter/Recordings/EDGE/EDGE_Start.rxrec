@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="334d38f5-70db-4087-9c7a-660e806e2575"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="EDGE_Start"
+	namespace="Servicecenter.Recordings.EDGE">
+	</codegen>
+	<variables>
+		<var
+		id="8008e0cd-ef7f-4e33-8242-458fa601c39d"
+		name="Link">
+			https://sbg-webservtst.rs-soft.com/#login
+		</var>
+		<var
+		id="a7166866-47aa-4a4d-96bf-2b4f4dfdba1b"
+		name="Datum">
+		</var>
+	</variables>
+	<recorditems>
+		<openwebsiterecorditem
+		args=""
+		browser="EdgeChromium"
+		clearcache="False"
+		clearcodecache="False"
+		clearcookies="False"
+		clearserviceworker="False"
+		enabled="True"
+		incognito="False"
+		instrument="True"
+		killexisting="False"
+		maximized="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Url"
+				variable="Link">
+				</binding>
+			</bindings>
+			<url>
+				https://sbg-webservtst.rs-soft.com/#login
+			</url>
+		</openwebsiterecorditem>
+		<explicitdelayitem
+		duration="15000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<validationitem
+		action="Exists"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="f2b5a110-5534-466e-b76b-08499b24ed1f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="84e1fd51-20ce-4164-a373-c7dd5a19f470"
+			sourcename="ElementTree">
+				<element
+				capabilities="uiautomation, uiautomationvalue"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="True"
+				index="0"
+				prefcap="text"
+				rect="812,208,314,34"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selectionlength"
+					type="System.Int32">
+						0
+					</attribute>
+					<attribute
+					name="selectionstart"
+					type="System.Int32">
+						9
+					</attribute>
+					<attribute
+					name="selectiontext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						￼
+					</attribute>
+					<attribute
+					name="classname"
+					type="System.String">
+						form-control loginInfo
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="helptext"
+					type="System.String">
+						Benutzername (E-Mail)
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						Bearbeiten
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						Benutzername (E-Mail)
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						10944
+					</attribute>
+					<attribute
+					name="uiautomationvalueisreadonly"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="uiautomationvaluevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form/container[@name='Login - Microsoft Edge']/container[@name='Microsoft Edge']/?/?/container[@classname='BrowserView']/container[@classname='SidebarContentsSplitView']//container[@automationid='37582688']/text[@name='Login']/container[@automationid='app']/container[@automationid='appModule']//text[@name='Benutzername (E-Mail)']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="daa79c24-eb6e-4073-9b18-a54d7ce325e3">
+				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
+2/55/wDjx/xo5GHs2ZFFa/2G2/55/wDjx/xo+w23/PP/AMeP+NHIw9mzIorX+w23/PP/AMeP+NH2
+G2/55/8Ajx/xo5GHs2ZFFa/2G2/55/8Ajx/xo+w23/PP/wAeP+NHIw9mzIorX+w23/PP/wAeP+NH
+2G2/55/+PH/GjkYezZRsFJu1IHC5J/KtamRRRxLiNQop9XFWRrGPKjO1/nSJfqv8xXJY4rrtf/5B
+Ev1X+YrkSaso6V60NP8A+PVfqaz3rQ0//j1X6mpQ2WaKKKYgooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKK
+KACiiigAooooAztf/wCQRL9V/mK5E112v/8AIIl+q/zFcgaYHTvWjp//AB6r9TRRUobLFFFFMQUU
+UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRR
+QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAZ2v8A/IIl+q/zFcgaKKAP/9k=
+			</helperscreenshot>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				￼
+			</matchvalue>
+		</validationitem>
+		<userrecorditem
+		classname="SystemLibrary"
+		duration="100ms"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="GetDateTimeAsString"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Datum">
+				</binding>
+			</bindings>
+			<arguments
+			id="8588afde-db58-473e-b476-119c759f1610">
+				<argument
+				argname="expectedFormat"
+				id="c08cd5a6-026b-4986-8742-37dcb7c0735e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						yyyy-MM-dd
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="f7deb4a7-2771-4c20-903d-bc17047e2b6a"
+	name="ServicecenterRepository"
+	relativepath="..\..\ServicecenterRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="ServicecenterRepository"
+		namespace="Servicecenter">
+		</codegen>
+		<rootfolder
+		id="e5a69c28-9dbf-43c2-b940-3a3d711f721c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		EDGE_Start.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\..\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll
+		</reference>
+	</references>
+</recordtable>

@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9ffd2515-7b40-4977-9552-bc08c3a1b17d"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartAUT"
+	namespace="V_AUFI_001">
+	</codegen>
+	<variables>
+		<var
+		id="237c170c-5425-45bd-b58a-9ec5e0846fe0"
+		name="Programm">
+			V_AUFI
+		</var>
+		<var
+		id="f8f18d99-382a-4d5b-8533-bb3aecb091a1"
+		name="Startfile">
+			c:\Testdaten\Allgemein\Start.bat
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Arguments"
+				variable="Programm">
+				</binding>
+				<binding
+				target="FileName"
+				variable="Startfile">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Program Files\Microsoft Office\Office16\EXCEL.EXE
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="b7cecbd7-8d7d-4bb9-b361-4e6cfa39cab6"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e7d155ca-3d6a-4124-9b4c-bc5c264adba8"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="5"
+				prefcap="titlebar"
+				rect="449,170,1039,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Auftrags-Info
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Auftrags-Info
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='mdiV_AUFI']/titlebar[@accessiblerole='TitleBar']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="2b3280d6-fd82-4ffd-82b8-65975aab6a96">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e7d155ca-3d6a-4124-9b4c-bc5c264adba8"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="5"
+				prefcap="titlebar"
+				rect="449,170,1039,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Auftrags-Info
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Auftrags-Info
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='mdiV_AUFI']/titlebar[@accessiblerole='TitleBar']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Auftrags-Info
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="2b6d5224-4d56-42b0-b027-43c7150f6061"
+		sx="1250"
+		sy="186"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="769db45a-05e0-494e-8008-b62b98e4ae0d"
+			sourcename="Recorder">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="1"
+				prefcap="button"
+				rect="1235,175,46,30"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Maximieren
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Drücken
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Maximiert das Fenster.
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Maximieren
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PushButton
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='mdiV_AUFI']/?/?/button[@accessiblename='Maximieren']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="6a30f251-9f04-4269-93c7-8057ddfd3d73">
+				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
+jPvUzQb8bpH49DSLakHKzP0xyM0kh3sf/9k=
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="5c3c1706-a860-4394-90d2-addab859d3e9"
+	name="V_AUFI_001Repository"
+	relativepath="V_AUFI_001Repository.rxrep">
+		<codegen
+		classname="V_AUFI_001Repository"
+		namespace="V_AUFI_001">
+		</codegen>
+		<rootfolder
+		id="06f8c3bd-0cbf-453c-a10f-1cac172caf31"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

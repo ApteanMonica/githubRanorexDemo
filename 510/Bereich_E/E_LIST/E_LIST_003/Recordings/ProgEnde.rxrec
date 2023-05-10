@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="af0fedf2-8f1e-4570-ad8c-0f08af0381ce"
+mode="Global"
+rxversion="8.3">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ProgEnde"
+	namespace="E_LIST_003.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="40efc44c-7376-4a19-b29f-0852d7be47c0">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b637c05e-e307-41e7-a53b-be2d6dc5d19a"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='tblRechList']/titlebar[@accessiblerole='TitleBar']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="c6177216-e740-4cce-98ac-64edf0174955"
+	name="E_LIST_003Repository"
+	relativepath="..\E_LIST_003Repository.rxrep">
+		<codegen
+		classname="E_LIST_003Repository"
+		namespace="E_LIST_003">
+		</codegen>
+		<rootfolder
+		id="3fca5f85-3784-4998-87d9-c6149aca465a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ProgEnde.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll
+		</reference>
+	</references>
+</recordtable>

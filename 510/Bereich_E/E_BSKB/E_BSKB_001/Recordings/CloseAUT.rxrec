@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="7f53d9ed-39cd-4e55-a6a5-deed0e9e2235"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="E_BSKB_001.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="7bf872ff-2532-48f9-981c-e7a752c6ea0a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="586798d4-3ad4-444c-8b76-61a008b6383f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblBskb']/titlebar[@accessiblerole='TitleBar']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="c1fdfd09-d094-4021-80a1-031671122cce"
+	name="E_BSKB_001Repository"
+	relativepath="..\E_BSKB_001Repository.rxrep">
+		<codegen
+		classname="E_BSKB_001Repository"
+		namespace="E_BSKB_001">
+		</codegen>
+		<rootfolder
+		id="fcec0bd2-37e1-431d-8414-69b40e34044f"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

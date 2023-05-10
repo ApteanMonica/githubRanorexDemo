@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e5e0229a-b6f6-4778-9ea9-db128e66f96e"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="V_ZUTM_001.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="bf86338a-837f-46aa-b60b-9cf19d657865">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="725f25b7-4014-4c09-a71d-2bd67a093b31"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='tblZutm']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="c7aeca5a-b39f-4b5c-9eca-b2b318320935"
+	name="V_ZUTM_001Repository"
+	relativepath="..\V_ZUTM_001Repository.rxrep">
+		<codegen
+		classname="V_ZUTM_001Repository"
+		namespace="V_ZUTM_001">
+		</codegen>
+		<rootfolder
+		id="fe6b6bdd-3d7d-495c-a1b6-a6be9bfe71e8"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll
+		</reference>
+	</references>
+</recordtable>

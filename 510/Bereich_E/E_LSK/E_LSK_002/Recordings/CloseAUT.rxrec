@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8310def7-68ad-4687-bb45-bb96e5725d18"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="E_LSK_002.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="d902e6f7-d36f-4804-898c-28b2060481fc">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f8bf038a-754e-4aa6-a29b-91fa51c05767"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='mdiLSR']/titlebar[@accessiblerole='TitleBar']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="c835a365-c5a0-413b-bf68-709a9aca8533"
+	name="E_LSK_002Repository"
+	relativepath="..\E_LSK_002Repository.rxrep">
+		<codegen
+		classname="E_LSK_002Repository"
+		namespace="E_LSK_002">
+		</codegen>
+		<rootfolder
+		id="39c388a1-67c5-448a-b2a3-77214fcf30a3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll
+		</reference>
+	</references>
+</recordtable>

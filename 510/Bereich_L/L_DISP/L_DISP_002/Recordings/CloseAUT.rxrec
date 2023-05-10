@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c3317894-8e83-4e62-be66-1cd1f73beb66"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="L_DISP_002.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="2aa83b96-fb8a-4c5b-848c-2fdefdf6b4d8">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="59de5ece-076d-4420-8f15-80ce365826dd"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmDispo']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="7b74f2d1-eb4f-470c-a36d-2322eb13d8b8"
+	name="L_DISP_001Repository"
+	relativepath="..\L_DISP_001Repository.rxrep">
+		<codegen
+		classname="L_DISP_001Repository"
+		namespace="L_DISP_002">
+		</codegen>
+		<rootfolder
+		id="509c24a5-2fbe-4b2e-9554-60d397d5ef5f"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

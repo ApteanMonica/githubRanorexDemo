@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="187aa65c-2aed-46b4-9ef2-6aaf8bc7eb7c"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_B_ZAHL"
+	namespace="B_ZAHLV_001.Recordings_B_ZAHL">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="9d070d33-1400-42f6-a64a-9551c6419f5c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b79b3793-eb86-4043-b03e-986c73395ce4"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZahlMain']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="7b72118a-62eb-41df-b2e8-9cb72bd3379d"
+	name="B_ZAHLV_001Repository"
+	relativepath="..\B_ZAHLV_001Repository.rxrep">
+		<codegen
+		classname="B_ZAHLV_001Repository"
+		namespace="B_ZAHLV_001">
+		</codegen>
+		<rootfolder
+		id="e679616b-b142-449e-84c8-627d1a3a80c9"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_B_ZAHL.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

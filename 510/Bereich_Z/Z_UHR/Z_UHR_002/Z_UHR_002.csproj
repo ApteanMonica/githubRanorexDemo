@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{B78EC76E-7BB4-4279-A05E-1BD08715BED8}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Z_UHR_002</RootNamespace>
+    <AssemblyName>Z_UHR_002</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>b09c8bde-0066-4511-b409-49a143b1220a</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper" />
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Delphi" />
+    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.WinForms.Core" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="Ranorex.Plugin.Wpf.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>2eed7d8e-7147-4cd6-a974-15b68312d33c</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>3cccb14f-4926-45d1-9b97-7aca01d08751</id>
+    </Compile>
+    <Compile Include="Recordings_1\Antrag_loeschen_MA_02.cs">
+      <BoundTo>628c36aa-61ae-410c-bc6f-0f474e0e7b6d</BoundTo>
+      <DependentUpon>Antrag_loeschen_MA_02.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a0a038ce-a5b5-4e87-8082-820bce195721</id>
+    </Compile>
+    <Compile Include="Recordings_1\Antrag_loeschen_MA_02.UserCode.cs">
+      <BoundTo>628c36aa-61ae-410c-bc6f-0f474e0e7b6d</BoundTo>
+      <DependentUpon>Antrag_loeschen_MA_02.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>602a12b0-4dfe-4a06-ab6c-07dc296d005a</id>
+    </Compile>
+    <Compile Include="Recordings_1\Beantragung_Urlaub_halbtag_MA_02.cs">
+      <BoundTo>b28189a8-4527-453b-ba6e-a5544ad745d5</BoundTo>
+      <DependentUpon>Beantragung_Urlaub_halbtag_MA_02.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b81b6fbc-bc60-4d61-bb80-9ff46e5af03d</id>
+    </Compile>
+    <Compile Include="Recordings_1\Beantragung_Urlaub_halbtag_MA_02.UserCode.cs">
+      <BoundTo>b28189a8-4527-453b-ba6e-a5544ad745d5</BoundTo>
+      <DependentUpon>Beantragung_Urlaub_halbtag_MA_02.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>769f161f-fcc6-4829-bfd5-a09231b1c962</id>
+    </Compile>
+    <Compile Include="Recordings_1\CloseAUT.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>22a8b409-9224-4e15-a279-8e7cc7073bd2</id>
+      <BoundTo>46d82d9a-0ec3-4f9a-8e88-b144d2c85e41</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_1\CloseAUT.UserCode.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7c12a52b-0a16-4891-96f7-3b7d3f88764d</id>
+      <BoundTo>46d82d9a-0ec3-4f9a-8e88-b144d2c85e41</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_1\ganztag_Urlaub_erfassen.cs">
+      <BoundTo>f70cc5b8-2f86-4bad-94c2-179fe72d6c9e</BoundTo>
+      <DependentUpon>ganztag_Urlaub_erfassen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0dacdb35-961f-4aec-b0cd-bbe1c2e0440d</id>
+    </Compile>
+    <Compile Include="Recordings_1\ganztag_Urlaub_erfassen.UserCode.cs">
+      <BoundTo>f70cc5b8-2f86-4bad-94c2-179fe72d6c9e</BoundTo>
+      <DependentUpon>ganztag_Urlaub_erfassen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b65be570-a491-4293-ba55-a39265f3ece7</id>
+    </Compile>
+    <Compile Include="Recordings_1\Gemehmigung_Urlaub_MA_01.cs">
+      <BoundTo>9f64d109-7d5c-4176-a5e7-8e92bc2ecad0</BoundTo>
+      <DependentUpon>Gemehmigung_Urlaub_MA_01.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>38356344-91ee-49c4-b395-cf793893b4b2</id>
+    </Compile>
+    <Compile Include="Recordings_1\Gemehmigung_Urlaub_MA_01.UserCode.cs">
+      <BoundTo>9f64d109-7d5c-4176-a5e7-8e92bc2ecad0</BoundTo>
+      <DependentUpon>Gemehmigung_Urlaub_MA_01.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>09067c3d-cad8-4f08-8542-068da078fe98</id>
+    </Compile>
+    <Compile Include="Recordings_1\Genehmigung_Urlaub_MA_02.cs">
+      <BoundTo>2f46ab77-6c16-4780-9b76-9b6f985c58a2</BoundTo>
+      <DependentUpon>Genehmigung_Urlaub_MA_02.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2ccf8e0b-ff96-477c-be04-05603c7621d7</id>
+    </Compile>
+    <Compile Include="Recordings_1\Genehmigung_Urlaub_MA_02.UserCode.cs">
+      <BoundTo>2f46ab77-6c16-4780-9b76-9b6f985c58a2</BoundTo>
+      <DependentUpon>Genehmigung_Urlaub_MA_02.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>feb85057-117c-4919-b05f-9c39f38f8da8</id>
+    </Compile>
+    <Compile Include="Recordings_1\Loeschung_ueberpruefen.cs">
+      <BoundTo>f438094a-42c3-445c-9a68-1705977a8d72</BoundTo>
+      <DependentUpon>Loeschung_ueberpruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5d7937f4-dca6-4c16-ba28-ec2c59639246</id>
+    </Compile>
+    <Compile Include="Recordings_1\Loeschung_ueberpruefen.UserCode.cs">
+      <BoundTo>f438094a-42c3-445c-9a68-1705977a8d72</BoundTo>
+      <DependentUpon>Loeschung_ueberpruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9e811421-3353-4454-acc0-5d6dde7730af</id>
+    </Compile>
+    <Compile Include="Recordings_1\Meldung_beim_Versuch_Antrag_zu_Loeschen.cs">
+      <BoundTo>2f07e434-f654-4a5f-97ae-f6f76dba858e</BoundTo>
+      <DependentUpon>Meldung_beim_Versuch_Antrag_zu_Loeschen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0a19a4a9-a4c5-4d34-9a4f-e6ebd377b894</id>
+    </Compile>
+    <Compile Include="Recordings_1\Meldung_beim_Versuch_Antrag_zu_Loeschen.UserCode.cs">
+      <BoundTo>2f07e434-f654-4a5f-97ae-f6f76dba858e</BoundTo>
+      <DependentUpon>Meldung_beim_Versuch_Antrag_zu_Loeschen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>24210f90-6d5a-45be-a38a-35777a57e20f</id>
+    </Compile>
+    <Compile Include="Recordings_1\nicht_genehmigten_Antrag_Loeschen.cs">
+      <BoundTo>e4ecf324-89e5-45d8-9187-780e535d66a6</BoundTo>
+      <DependentUpon>nicht_genehmigten_Antrag_Loeschen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d4268035-9acc-4fd0-8bee-d7513e41ed8c</id>
+    </Compile>
+    <Compile Include="Recordings_1\nicht_genehmigten_Antrag_Loeschen.UserCode.cs">
+      <BoundTo>e4ecf324-89e5-45d8-9187-780e535d66a6</BoundTo>
+      <DependentUpon>nicht_genehmigten_Antrag_Loeschen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>536ba6ab-d22b-419b-a073-6bd38f747f9d</id>
+    </Compile>
+    <Compile Include="Recordings_1\nicht_genehmigten_Antrag_MA_02_loeschen.cs">
+      <BoundTo>223d4e94-964c-4a24-9cdc-8594c6058714</BoundTo>
+      <DependentUpon>nicht_genehmigten_Antrag_MA_02_loeschen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dd26f43e-5383-4b3d-add4-5b27a6db1115</id>
+    </Compile>
+    <Compile Include="Recordings_1\nicht_genehmigten_Antrag_MA_02_loeschen.UserCode.cs">
+      <BoundTo>223d4e94-964c-4a24-9cdc-8594c6058714</BoundTo>
+      <DependentUpon>nicht_genehmigten_Antrag_MA_02_loeschen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>49e7b441-dd1a-4fec-ada3-9ea23ba41a59</id>
+    </Compile>
+    <Compile Include="Recordings_1\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5b8358db-e16e-4416-8cee-62d7399d96b9</id>
+      <BoundTo>4f7e773d-da45-4946-8402-f900412c1b9d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_1\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ad383c72-238c-4d13-9e27-726e4499db5d</id>
+      <BoundTo>4f7e773d-da45-4946-8402-f900412c1b9d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_1\Tagesdatum_plus_3_Tage.cs">
+      <BoundTo>b4ef9584-e232-4ccb-a6ee-0e138a256d64</BoundTo>
+      <DependentUpon>Tagesdatum_plus_3_Tage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5eb4a437-8572-4900-81a2-a862d30aadac</id>
+    </Compile>
+    <Compile Include="Recordings_1\Tagesdatum_plus_3_Tage.UserCode.cs">
+      <BoundTo>b4ef9584-e232-4ccb-a6ee-0e138a256d64</BoundTo>
+      <DependentUpon>Tagesdatum_plus_3_Tage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f2a1e63e-ca6c-462c-ac24-843679f66d98</id>
+    </Compile>
+    <Compile Include="Recordings_1\Tagesdatum_plus_7_Tage.cs">
+      <BoundTo>11bf5b8f-e177-4f0d-a794-cbb799f481df</BoundTo>
+      <DependentUpon>Tagesdatum_plus_7_Tage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>44fa8bbc-bab3-487e-aa2a-bc1f86b37a4a</id>
+    </Compile>
+    <Compile Include="Recordings_1\Tagesdatum_plus_7_Tage.UserCode.cs">
+      <BoundTo>11bf5b8f-e177-4f0d-a794-cbb799f481df</BoundTo>
+      <DependentUpon>Tagesdatum_plus_7_Tage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b548c563-a0ef-4e38-b625-5b80b17e5d75</id>
+    </Compile>
+    <Compile Include="Recordings_1\Uberpruefung_Eingaben.cs">
+      <BoundTo>6d748b4c-5502-4123-ba84-3bc73e6e68c1</BoundTo>
+      <DependentUpon>Uberpruefung_Eingaben.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>058fd1ef-8837-4822-9f42-219eac0708cd</id>
+    </Compile>
+    <Compile Include="Recordings_1\Uberpruefung_Eingaben.UserCode.cs">
+      <BoundTo>6d748b4c-5502-4123-ba84-3bc73e6e68c1</BoundTo>
+      <DependentUpon>Uberpruefung_Eingaben.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dd45a5e0-40b0-4dd0-9095-d5fdd2c00ca2</id>
+    </Compile>
+    <Compile Include="Recordings_1\UEberpruefung_Eingaben_MA_02.cs">
+      <BoundTo>c3c5cbe7-60a7-4c7e-8218-edd07e94688c</BoundTo>
+      <DependentUpon>UEberpruefung_Eingaben_MA_02.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>50063fb6-5ee3-452c-840a-5a7a94440b47</id>
+    </Compile>
+    <Compile Include="Recordings_1\UEberpruefung_Eingaben_MA_02.UserCode.cs">
+      <BoundTo>c3c5cbe7-60a7-4c7e-8218-edd07e94688c</BoundTo>
+      <DependentUpon>UEberpruefung_Eingaben_MA_02.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d0a8c7e5-434c-41cc-98ce-de94d5c06b08</id>
+    </Compile>
+    <Compile Include="Recordings_1\UEberpruefung_Erfassung_Ganztags_Urlaub.cs">
+      <BoundTo>e26f6f1f-0095-45fa-af0d-2073d3f70139</BoundTo>
+      <DependentUpon>UEberpruefung_Erfassung_Ganztags_Urlaub.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2f252960-b850-4acf-a0bd-9f7cd4e62c5a</id>
+    </Compile>
+    <Compile Include="Recordings_1\UEberpruefung_Erfassung_Ganztags_Urlaub.UserCode.cs">
+      <BoundTo>e26f6f1f-0095-45fa-af0d-2073d3f70139</BoundTo>
+      <DependentUpon>UEberpruefung_Erfassung_Ganztags_Urlaub.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>28d9157c-1581-4a1a-8642-cd4e695e334d</id>
+    </Compile>
+    <Compile Include="Recordings_1\UEberpruefung_Erfassung_Urlaub_MA_02.cs">
+      <BoundTo>720b440a-d89f-4398-b7e1-d194e59b05f6</BoundTo>
+      <DependentUpon>UEberpruefung_Erfassung_Urlaub_MA_02.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>750d183d-63d6-4b99-9d09-52d4e4f7e3aa</id>
+    </Compile>
+    <Compile Include="Recordings_1\UEberpruefung_Erfassung_Urlaub_MA_02.UserCode.cs">
+      <BoundTo>720b440a-d89f-4398-b7e1-d194e59b05f6</BoundTo>
+      <DependentUpon>UEberpruefung_Erfassung_Urlaub_MA_02.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>91b246f0-f269-4e00-8292-8da3d99f1aeb</id>
+    </Compile>
+    <Compile Include="Recordings_1\UEberpruefung_geloeschter_Antrag_MA_02.cs">
+      <BoundTo>8e552f24-4ecf-4ba5-88e0-88a309fa8e8e</BoundTo>
+      <DependentUpon>UEberpruefung_geloeschter_Antrag_MA_02.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>12d7b23e-6dda-407f-a77f-2c7416c43da5</id>
+    </Compile>
+    <Compile Include="Recordings_1\UEberpruefung_geloeschter_Antrag_MA_02.UserCode.cs">
+      <BoundTo>8e552f24-4ecf-4ba5-88e0-88a309fa8e8e</BoundTo>
+      <DependentUpon>UEberpruefung_geloeschter_Antrag_MA_02.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4a841bca-89f8-4df3-8432-0e36016c1b31</id>
+    </Compile>
+    <Compile Include="Recordings_1\UEberpruefung_Gemehmigung_Urlaub_MA_02.cs">
+      <BoundTo>8dbee4bc-d251-4f11-8b97-426f7344be31</BoundTo>
+      <DependentUpon>UEberpruefung_Gemehmigung_Urlaub_MA_02.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>91858d97-0dfd-4c47-b408-b886edf26009</id>
+    </Compile>
+    <Compile Include="Recordings_1\UEberpruefung_Gemehmigung_Urlaub_MA_02.UserCode.cs">
+      <BoundTo>8dbee4bc-d251-4f11-8b97-426f7344be31</BoundTo>
+      <DependentUpon>UEberpruefung_Gemehmigung_Urlaub_MA_02.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c72a7e2f-b395-44f4-bbd6-ff6f5b6873e8</id>
+    </Compile>
+    <Compile Include="Recordings_1\UEberpruefung_Genehmigung_Urlaub_MA_01.cs">
+      <BoundTo>15c55af9-9240-48dc-9790-40d81473f4fb</BoundTo>
+      <DependentUpon>UEberpruefung_Genehmigung_Urlaub_MA_01.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>11026d18-0262-4bdd-ad6d-6194cc8fa5ab</id>
+    </Compile>
+    <Compile Include="Recordings_1\UEberpruefung_Genehmigung_Urlaub_MA_01.UserCode.cs">
+      <BoundTo>15c55af9-9240-48dc-9790-40d81473f4fb</BoundTo>
+      <DependentUpon>UEberpruefung_Genehmigung_Urlaub_MA_01.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6784ee69-75c7-4b76-896e-e5c30b9506fc</id>
+    </Compile>
+    <Compile Include="Recordings_1\Urlaubsantrag_loeschen.cs">
+      <BoundTo>da0f675b-8b8e-4258-9598-6e3db819d591</BoundTo>
+      <DependentUpon>Urlaubsantrag_loeschen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0b545827-4c90-4007-b2aa-ace56f470e0d</id>
+    </Compile>
+    <Compile Include="Recordings_1\Urlaubsantrag_loeschen.UserCode.cs">
+      <BoundTo>da0f675b-8b8e-4258-9598-6e3db819d591</BoundTo>
+      <DependentUpon>Urlaubsantrag_loeschen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>70cd150e-757c-4be8-9140-d96fbb3b51cf</id>
+    </Compile>
+    <Compile Include="Z_UHR_002Repository.cs">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <DependentUpon>Z_UHR_002Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>ac03cfda-ce7f-4465-b2bb-e72e14d95e01</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>cb56d735-6b7f-44c9-ad5f-7423ea265d88</id>
+    </None>
+    <None Include="Recordings_1\Antrag_loeschen_MA_02.rxrec">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <id>628c36aa-61ae-410c-bc6f-0f474e0e7b6d</id>
+      <recordtableid>c7d6299f-efff-47d0-aa53-df6d6e09f9de</recordtableid>
+    </None>
+    <None Include="Recordings_1\Beantragung_Urlaub_halbtag_MA_02.rxrec">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <id>b28189a8-4527-453b-ba6e-a5544ad745d5</id>
+      <recordtableid>24bcebb8-517f-4193-a8d4-d38a98b59b86</recordtableid>
+    </None>
+    <None Include="Recordings_1\CloseAUT.rxrec">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <id>46d82d9a-0ec3-4f9a-8e88-b144d2c85e41</id>
+      <recordtableid>a60b4416-10b3-425e-9cf9-55e2a5d1910e</recordtableid>
+    </None>
+    <None Include="Recordings_1\ganztag_Urlaub_erfassen.rxrec">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <id>f70cc5b8-2f86-4bad-94c2-179fe72d6c9e</id>
+      <recordtableid>da1f1a7e-b67b-4c0a-9593-c0dccdb7b94c</recordtableid>
+    </None>
+    <None Include="Recordings_1\Gemehmigung_Urlaub_MA_01.rxrec">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <id>9f64d109-7d5c-4176-a5e7-8e92bc2ecad0</id>
+      <recordtableid>c4531fe9-6567-4076-b03f-72b55038d903</recordtableid>
+    </None>
+    <None Include="Recordings_1\Genehmigung_Urlaub_MA_02.rxrec">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <id>2f46ab77-6c16-4780-9b76-9b6f985c58a2</id>
+      <recordtableid>1c161c8d-33cf-4b79-92f5-b2c1a587ca81</recordtableid>
+    </None>
+    <None Include="Recordings_1\Loeschung_ueberpruefen.rxrec">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <id>f438094a-42c3-445c-9a68-1705977a8d72</id>
+      <recordtableid>fc8e7779-800e-4778-91b6-72dc6450231e</recordtableid>
+    </None>
+    <None Include="Recordings_1\Meldung_beim_Versuch_Antrag_zu_Loeschen.rxrec">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <id>2f07e434-f654-4a5f-97ae-f6f76dba858e</id>
+      <recordtableid>7102fb49-9165-4b1d-b3aa-73fd260f408a</recordtableid>
+    </None>
+    <None Include="Recordings_1\nicht_genehmigten_Antrag_Loeschen.rxrec">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <id>e4ecf324-89e5-45d8-9187-780e535d66a6</id>
+      <recordtableid>dccf95e0-f49e-43ad-a2ab-279d3451ec90</recordtableid>
+    </None>
+    <None Include="Recordings_1\nicht_genehmigten_Antrag_MA_02_loeschen.rxrec">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <id>223d4e94-964c-4a24-9cdc-8594c6058714</id>
+      <recordtableid>f5733eba-3d93-49a1-9d47-d6a770b34575</recordtableid>
+    </None>
+    <None Include="Recordings_1\StartAUT.rxrec">
+      <id>4f7e773d-da45-4946-8402-f900412c1b9d</id>
+      <recordtableid>30f329c2-11be-4258-a6ff-aac6a15cfa6f</recordtableid>
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+    </None>
+    <None Include="Recordings_1\Tagesdatum_plus_3_Tage.rxrec">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <id>b4ef9584-e232-4ccb-a6ee-0e138a256d64</id>
+      <recordtableid>5e6d05ee-70e6-4d59-b7a8-f0667974e221</recordtableid>
+    </None>
+    <None Include="Recordings_1\Tagesdatum_plus_7_Tage.rxrec">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <id>11bf5b8f-e177-4f0d-a794-cbb799f481df</id>
+      <recordtableid>a51c8dff-2280-43a7-88f4-1b34ccca21dd</recordtableid>
+    </None>
+    <None Include="Recordings_1\Uberpruefung_Eingaben.rxrec">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <id>6d748b4c-5502-4123-ba84-3bc73e6e68c1</id>
+      <recordtableid>0dd7f3e0-fd09-452c-a37d-71abbad35c92</recordtableid>
+    </None>
+    <None Include="Recordings_1\UEberpruefung_Eingaben_MA_02.rxrec">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <id>c3c5cbe7-60a7-4c7e-8218-edd07e94688c</id>
+      <recordtableid>8265c7bd-5fa0-45fc-9b5a-a39f16cc6684</recordtableid>
+    </None>
+    <None Include="Recordings_1\UEberpruefung_Erfassung_Ganztags_Urlaub.rxrec">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <id>e26f6f1f-0095-45fa-af0d-2073d3f70139</id>
+      <recordtableid>d1320ab2-1d71-4d29-b386-cafaa5df3a67</recordtableid>
+    </None>
+    <None Include="Recordings_1\UEberpruefung_Erfassung_Urlaub_MA_02.rxrec">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <id>720b440a-d89f-4398-b7e1-d194e59b05f6</id>
+      <recordtableid>31d47142-487c-4d51-987e-ecbd71f2c2a6</recordtableid>
+    </None>
+    <None Include="Recordings_1\UEberpruefung_geloeschter_Antrag_MA_02.rxrec">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <id>8e552f24-4ecf-4ba5-88e0-88a309fa8e8e</id>
+      <recordtableid>33b9659f-e10c-4b30-8198-ae6574a74a7f</recordtableid>
+    </None>
+    <None Include="Recordings_1\UEberpruefung_Gemehmigung_Urlaub_MA_02.rxrec">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <id>8dbee4bc-d251-4f11-8b97-426f7344be31</id>
+      <recordtableid>ec6ca318-4e31-439b-bd17-14579d0d86cb</recordtableid>
+    </None>
+    <None Include="Recordings_1\UEberpruefung_Genehmigung_Urlaub_MA_01.rxrec">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <id>15c55af9-9240-48dc-9790-40d81473f4fb</id>
+      <recordtableid>4f9c3bfb-96c1-4d08-928a-05ab234f6f7e</recordtableid>
+    </None>
+    <None Include="Recordings_1\Urlaubsantrag_loeschen.rxrec">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <id>da0f675b-8b8e-4258-9598-6e3db819d591</id>
+      <recordtableid>39d9af1a-3226-4f66-b465-daf39089fa75</recordtableid>
+    </None>
+    <None Include="Z_UHR_002Repository.rximg">
+      <BoundTo>b09c8bde-0066-4511-b409-49a143b1220a</BoundTo>
+      <DependentUpon>Z_UHR_002Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>3d2d5316-fb8b-47c8-bf6c-7c0bb0614545</id>
+    </None>
+    <None Include="Z_UHR_002Repository.rxrep">
+      <id>b09c8bde-0066-4511-b409-49a143b1220a</id>
+      <repoid>54fb655c-6112-485d-91f2-e94912f30d59</repoid>
+      <reporootid>3eed4624-7858-4da2-b74d-87417a1f5188</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Z_UHR_002.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>b31d0e35-635a-4f6b-a22d-50261a7bf40c</id>
+    </Content>
+    <Content Include="Z_UHR_002.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>c95535ec-091d-4bb3-84cf-1d5b5eef657a</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings_1">
+      <id>5ea9ff2d-2502-4415-b091-2a79a6330f40</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{CB3A4C81-F598-43A4-8D4C-192A40B0ABEA}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

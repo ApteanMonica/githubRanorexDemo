@@ -1,0 +1,188 @@
+﻿<repository
+id="9f37bed2-ce04-4c78-85de-325a27f277dd"
+name="B_ENDE_002_B_BUSAPRRepository">
+	<codegen
+	classname="B_ENDE_002_B_BUSAPRRepository"
+	namespace="B_ENDE_002_B_BUSAPR">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="b0901c16-8a43-4bde-b0cd-102ddf298904"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="1265c4f5-84f9-4e56-a202-43a23e09cb86"
+		isrooted="True"
+		name="Form100PruefungSachkontenSalden"
+		refpath="/form[@title='[100] Prüfung Sachkonten-Salden']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="81638f9a-9591-4f96-be1d-fb78872e274a"
+			name="TitleBar100PruefungSachkontenSalden"
+			refimgid="1f306ce7-19fc-4fd1-9c51-d7138f3ea296"
+			refpath="/form[@title='[100] Prüfung Sachkonten-Salden']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'[100] Pr&#252;fung Sachkonten-']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="30c74a91-554b-495c-906f-7e3ffc463ab2"
+			name="PbStart"
+			refimgid="21af4d8f-4fc0-4d4b-b4b1-c423001cda0d"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'[100] Pr&#252;fung Sachkonten-']/container[@controlname='RibbonBar']/container[@controlname='SystemGroup']/container[@controlname='cRibbonGroup1']/button[@controlname='pbStart']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="da34b525-0962-4fbc-bf59-2164a616b196"
+			name="Jahr"
+			refimgid="f47c1c6f-a225-4cab-bd11-3f0f039930e3"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'[100] Pr&#252;fung Sachkonten-']/container[@controlname='ClientArea']/text[@controlname='dfJahrbez']/text[@accessiblename='Jahr:']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="d4e4ec22-6bf9-4589-b60a-d10cff0b0a3f"
+			name="PeriodeVon"
+			refimgid="b20c911d-6498-4b9f-9465-a7e69fedbb66"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'[100] Pr&#252;fung Sachkonten-']/container[@controlname='ClientArea']/text[@controlname='dfPeriodeVon']/text[@accessiblename='Periode von:']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="52d44e2c-53cb-4cf3-8c53-df957ac4ad6b"
+			name="Bis"
+			refimgid="e743f45a-32d6-47be-a420-da984bc51f76"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'[100] Pr&#252;fung Sachkonten-']/container[@controlname='ClientArea']/text[@controlname='dfPeriodeBis']/text[@accessiblename='bis:']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="d3f7311d-c4e1-486b-99b9-708a23f56fd0"
+			name="Text"
+			refimgid="101377cc-caa8-412d-bcf7-745896137b6a"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'[100] Pr&#252;fung Sachkonten-']/container[@controlname='ClientArea']/text[@controlname='dfKto_nr']/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="checkbox,control,nativewindow"
+			capname="checkbox"
+			id="124bbc5e-36b0-4e60-8623-bacb919e941f"
+			name="CbNormal"
+			refimgid="6ae467e2-8499-46a6-a7af-6d5b7ead7b68"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'[100] Pr&#252;fung Sachkonten-']/container[@controlname='ClientArea']/checkbox[@controlname='cbNormal']
+			</item>
+			<item
+			addcaps="checkbox,control,nativewindow"
+			capname="checkbox"
+			id="f495d4d3-cef7-4b25-ad21-bc7b87d78fee"
+			name="CbUst"
+			refimgid="afd07362-e19b-4908-a040-7cde1eafe36f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'[100] Pr&#252;fung Sachkonten-']/container[@controlname='ClientArea']/checkbox[@controlname='cbUst']
+			</item>
+			<item
+			addcaps="checkbox,control,nativewindow"
+			capname="checkbox"
+			id="84b3a303-8955-4a00-be72-23edc33ebc3d"
+			name="CbKorr"
+			refimgid="e5837414-6b58-4917-9065-63cd377b3df4"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'[100] Pr&#252;fung Sachkonten-']/container[@controlname='ClientArea']/checkbox[@controlname='cbKorr']
+			</item>
+			<item
+			addcaps="radiobutton,control,nativewindow"
+			capname="radiobutton"
+			id="465cc460-759e-4dc7-944c-faaa304e83ec"
+			name="RbBasis"
+			refimgid="e3bf7f04-e023-4e04-870a-27a19a17dfcf"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'[100] Pr&#252;fung Sachkonten-']/container[@controlname='ClientArea']/container[@controlname='groupBox2']/radiobutton[@controlname='rbBasis']
+			</item>
+			<basepath>
+				/form[@title&gt;'[100] Pr&#252;fung Sachkonten-']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="95e713af-17cb-4cf8-bece-9a88cad1dc8d"
+		isrooted="True"
+		name="DlgMessageBox"
+		refpath="/form[@controlname='dlgMessageBox']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="f454f97c-241e-4e48-9025-2930a1172989"
+			name="LabelMeldungstext"
+			refimgid="76002631-9a6e-43ad-906a-64bbf747cd1a"
+			refpath="/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="c2b7c376-3acb-4257-b7da-5082a3a7e98f"
+			name="Button0"
+			refimgid="fa22c401-b2a9-48b1-ac94-e3b2a085d179"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button0']
+			</item>
+			<basepath>
+				/form[@controlname='dlgMessageBox']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

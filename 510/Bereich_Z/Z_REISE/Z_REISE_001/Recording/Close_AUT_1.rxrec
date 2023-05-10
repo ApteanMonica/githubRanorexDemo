@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="785b8010-cbd6-49d0-a288-5b4c423dbcbb"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_AUT_1"
+	namespace="Z_REISE_001.Recording">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="96fbb08d-381f-4907-ac7f-c1cd3ac02a87">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6d546ac2-7a8a-4846-81cc-4c7ee604e841"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='FormRart']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="5b0463a2-dd04-4234-abfe-574830bec97f"
+	name="Z_REISE_001Repository"
+	relativepath="..\Z_REISE_001Repository.rxrep">
+		<codegen
+		classname="Z_REISE_001Repository"
+		namespace="Z_REISE_001">
+		</codegen>
+		<rootfolder
+		id="46b2a12e-3c16-4266-b217-d137eb7120bc"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_AUT_1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

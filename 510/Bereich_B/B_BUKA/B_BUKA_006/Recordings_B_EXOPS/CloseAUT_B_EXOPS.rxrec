@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="7d18cbcb-78b6-4e2c-b4eb-08a780ea753d"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT_B_EXOPS"
+	namespace="B_BUKA_006.Recordings_B_EXOPS">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="222e52f6-7613-498c-a689-9eca4ae89247">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="aeb1236c-eb29-4a22-a67c-e2dd2d7eac6d"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="132"
+				prefcap="titlebar"
+				rect="16,-5,1904,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Verwalten Schnittstelle EXOP
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Verwalten Schnittstelle EXOP
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmB_EXOP']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="9016bb50-e756-46ce-b889-939a2701c755"
+	name="B_BUKA_006Repository"
+	relativepath="..\B_BUKA_006Repository.rxrep">
+		<codegen
+		classname="B_BUKA_006Repository"
+		namespace="B_BUKA_006">
+		</codegen>
+		<rootfolder
+		id="4b2ebc8d-3428-4876-a89e-2d22f42b9d32"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT_B_EXOPS.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{A18B57AB-678B-41B5-9DBD-3908AC758054}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>B_ENDE_001_B_SHPRUF</RootNamespace>
+    <AssemblyName>B_ENDE_001_B_SHPRUF</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>c30762d4-0fa1-42db-97b0-779f96401ff1</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>27d86745-0f81-472a-9bd2-30d9947405fe</id>
+    </Compile>
+    <Compile Include="B_ENDE_001_B_SHPRUFRepository.cs">
+      <BoundTo>c30762d4-0fa1-42db-97b0-779f96401ff1</BoundTo>
+      <DependentUpon>B_ENDE_001_B_SHPRUFRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>1300a1a0-fce7-4289-84c1-acac89106a5b</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>ff7e632c-b064-431d-8478-984d737075cf</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>300d9431-260b-4219-9ce1-d9126d879b6a</id>
+      <BoundTo>f6a56447-efe3-4778-be5e-ec3a96644834</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT.UserCode.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>455a17bc-8fda-4086-9675-3fbf4c5e66da</id>
+      <BoundTo>f6a56447-efe3-4778-be5e-ec3a96644834</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_2019.cs">
+      <BoundTo>8bb65385-caa2-47e1-b9d9-cae3d9873f6b</BoundTo>
+      <DependentUpon>SH_Pruefung_2019.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b9da728d-32ed-4e14-876c-841823fe14e9</id>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_2019.UserCode.cs">
+      <BoundTo>8bb65385-caa2-47e1-b9d9-cae3d9873f6b</BoundTo>
+      <DependentUpon>SH_Pruefung_2019.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>77e37dff-f86c-4dc4-aebf-61489ab8ab65</id>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_2020.cs">
+      <DependentUpon>SH_Pruefung_2020.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6cd6431c-5fc6-4e3a-bf8a-534cfbaf1971</id>
+      <BoundTo>0684c3b1-a8ca-4d20-93db-01ff8d0aed37</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_2020.UserCode.cs">
+      <DependentUpon>SH_Pruefung_2020.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f97af3ec-e14a-4de6-b260-8291c48f249e</id>
+      <BoundTo>0684c3b1-a8ca-4d20-93db-01ff8d0aed37</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_2021.cs">
+      <DependentUpon>SH_Pruefung_2021.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1d9be257-62b5-4386-b0fa-23536deb8251</id>
+      <BoundTo>3893b152-7b6c-4f46-ac2b-01c5c62d57d3</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_2021.UserCode.cs">
+      <DependentUpon>SH_Pruefung_2021.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>64d7d88b-6b55-4db0-8910-f27136fb820a</id>
+      <BoundTo>3893b152-7b6c-4f46-ac2b-01c5c62d57d3</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_2022.cs">
+      <DependentUpon>SH_Pruefung_2022.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b57f2f92-4b7f-4e84-b188-9958f1b45ebd</id>
+      <BoundTo>e832f45c-3242-4314-9a17-52dcedbc3c9f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_2022.UserCode.cs">
+      <DependentUpon>SH_Pruefung_2022.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0549b304-40cc-4d95-907b-3f0eaaa47ef1</id>
+      <BoundTo>e832f45c-3242-4314-9a17-52dcedbc3c9f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_2023.cs">
+      <DependentUpon>SH_Pruefung_2023.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f40365a7-9137-4e8b-a584-c4a015f3dfd4</id>
+      <BoundTo>37f4dab7-a82c-4775-825b-cbee9046ace6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_2023.UserCode.cs">
+      <DependentUpon>SH_Pruefung_2023.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cb1ebe62-b78e-4af3-bd36-cbb51c9da4c0</id>
+      <BoundTo>37f4dab7-a82c-4775-825b-cbee9046ace6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_2024.cs">
+      <DependentUpon>SH_Pruefung_2024.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6d25596e-56c8-456f-aed7-ebe58c1676bc</id>
+      <BoundTo>cac90544-7c77-4593-862d-e393f4a2d7e7</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_2024.UserCode.cs">
+      <DependentUpon>SH_Pruefung_2024.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e38dfd58-ca8f-4fa1-b7c3-ca764b7a1f3c</id>
+      <BoundTo>cac90544-7c77-4593-862d-e393f4a2d7e7</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_2025.cs">
+      <DependentUpon>SH_Pruefung_2025.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fdf85112-eb2f-4dd5-ae0a-0a59218e2752</id>
+      <BoundTo>5307d11a-2f38-40a7-88f0-54d38e811520</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_2025.UserCode.cs">
+      <DependentUpon>SH_Pruefung_2025.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>08847fe3-0608-4c64-a3d5-2f25db62585c</id>
+      <BoundTo>5307d11a-2f38-40a7-88f0-54d38e811520</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2019.cs">
+      <DependentUpon>SH_Pruefung_Dauerbuchungsvorlagen_2019.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>93181ff0-7956-42c9-8895-dfefd4165744</id>
+      <BoundTo>374a7ddd-2d6b-457f-bb7c-2d8cd3ec3cdd</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2019.UserCode.cs">
+      <DependentUpon>SH_Pruefung_Dauerbuchungsvorlagen_2019.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>845ac154-c187-4b50-81ee-674399261645</id>
+      <BoundTo>374a7ddd-2d6b-457f-bb7c-2d8cd3ec3cdd</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2020.cs">
+      <DependentUpon>SH_Pruefung_Dauerbuchungsvorlagen_2020.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>61b900b8-1ebb-4ab5-9ca4-a3558b12fef9</id>
+      <BoundTo>0286e9d6-fced-4cfe-bffb-2148640294ba</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2020.UserCode.cs">
+      <DependentUpon>SH_Pruefung_Dauerbuchungsvorlagen_2020.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f727d24c-9dea-4b90-acfe-c193b160a906</id>
+      <BoundTo>0286e9d6-fced-4cfe-bffb-2148640294ba</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2021.cs">
+      <DependentUpon>SH_Pruefung_Dauerbuchungsvorlagen_2021.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d2870fda-7048-44f9-aaba-fd63a95e1d45</id>
+      <BoundTo>c87fa86a-de3a-4602-9e35-da00f7561b64</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2021.UserCode.cs">
+      <DependentUpon>SH_Pruefung_Dauerbuchungsvorlagen_2021.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0071a75d-d5d2-4101-bfa1-348d3c84454e</id>
+      <BoundTo>c87fa86a-de3a-4602-9e35-da00f7561b64</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2022.cs">
+      <DependentUpon>SH_Pruefung_Dauerbuchungsvorlagen_2022.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a8c5d02e-1277-4648-8aed-fbb5895bae21</id>
+      <BoundTo>4122061d-a1e0-47ec-9a6e-23eeb63256c2</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2022.UserCode.cs">
+      <DependentUpon>SH_Pruefung_Dauerbuchungsvorlagen_2022.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2323eed0-5e6e-4590-833c-395683b8acb4</id>
+      <BoundTo>4122061d-a1e0-47ec-9a6e-23eeb63256c2</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2023.cs">
+      <DependentUpon>SH_Pruefung_Dauerbuchungsvorlagen_2023.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3e94d0a1-d5be-4579-9812-07db02cc0ee9</id>
+      <BoundTo>4cdfe568-2fce-48f3-ba51-9498df0313b3</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2023.UserCode.cs">
+      <DependentUpon>SH_Pruefung_Dauerbuchungsvorlagen_2023.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e1180f2c-86db-43f0-ae49-30e7eb392d14</id>
+      <BoundTo>4cdfe568-2fce-48f3-ba51-9498df0313b3</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2024.cs">
+      <DependentUpon>SH_Pruefung_Dauerbuchungsvorlagen_2024.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d4e65de8-37f3-4e4e-8ba6-1ed5a1926ea8</id>
+      <BoundTo>df075c3b-097d-48a9-bb79-7828cb64d4f2</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2024.UserCode.cs">
+      <DependentUpon>SH_Pruefung_Dauerbuchungsvorlagen_2024.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6700220c-5a15-47b4-8a28-75939b1a475c</id>
+      <BoundTo>df075c3b-097d-48a9-bb79-7828cb64d4f2</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2025.cs">
+      <DependentUpon>SH_Pruefung_Dauerbuchungsvorlagen_2025.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7b12ac67-c567-4fe1-9158-67af0479266a</id>
+      <BoundTo>8d471e9a-de47-44e9-80a8-fabc02e93906</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2025.UserCode.cs">
+      <DependentUpon>SH_Pruefung_Dauerbuchungsvorlagen_2025.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bb989a9e-3d99-4bc7-8472-09306caa5a2d</id>
+      <BoundTo>8d471e9a-de47-44e9-80a8-fabc02e93906</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1937eeb4-22e3-49de-8102-cd8f4ffc184a</id>
+      <BoundTo>23b677a0-3a70-4d6d-b78e-acd0be99177b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5637f89c-c6d4-496e-93ef-403a703f6510</id>
+      <BoundTo>23b677a0-3a70-4d6d-b78e-acd0be99177b</BoundTo>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>9cad7249-75d2-41fb-8346-e4c78eb0669d</id>
+    </None>
+    <None Include="B_ENDE_001_B_SHPRUFRepository.rximg">
+      <BoundTo>c30762d4-0fa1-42db-97b0-779f96401ff1</BoundTo>
+      <DependentUpon>B_ENDE_001_B_SHPRUFRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>17bda836-946e-46bc-b259-665c49e14862</id>
+    </None>
+    <None Include="B_ENDE_001_B_SHPRUFRepository.rxrep">
+      <id>c30762d4-0fa1-42db-97b0-779f96401ff1</id>
+      <repoid>3071111e-18e9-4a00-a727-39bc4dcf3af0</repoid>
+      <reporootid>48171146-b7a7-4972-bece-cdc5ee6e51b3</reporootid>
+    </None>
+    <None Include="Recordings\CloseAUT.rxrec">
+      <id>f6a56447-efe3-4778-be5e-ec3a96644834</id>
+      <recordtableid>410e02c5-a122-44b7-b8e2-1775fc62e149</recordtableid>
+      <BoundTo>c30762d4-0fa1-42db-97b0-779f96401ff1</BoundTo>
+    </None>
+    <None Include="Recordings\SH_Pruefung_2019.rxrec">
+      <BoundTo>c30762d4-0fa1-42db-97b0-779f96401ff1</BoundTo>
+      <id>8bb65385-caa2-47e1-b9d9-cae3d9873f6b</id>
+      <recordtableid>9ecc4441-7793-4c4b-8f65-488021bf2f96</recordtableid>
+    </None>
+    <None Include="Recordings\SH_Pruefung_2020.rxrec">
+      <BoundTo>c30762d4-0fa1-42db-97b0-779f96401ff1</BoundTo>
+      <id>0684c3b1-a8ca-4d20-93db-01ff8d0aed37</id>
+      <recordtableid>bdc37524-98d0-429b-9f11-8266becf5e14</recordtableid>
+    </None>
+    <None Include="Recordings\SH_Pruefung_2021.rxrec">
+      <BoundTo>c30762d4-0fa1-42db-97b0-779f96401ff1</BoundTo>
+      <id>3893b152-7b6c-4f46-ac2b-01c5c62d57d3</id>
+      <recordtableid>826c4055-7c4b-462d-9c70-132366548e65</recordtableid>
+    </None>
+    <None Include="Recordings\SH_Pruefung_2022.rxrec">
+      <BoundTo>c30762d4-0fa1-42db-97b0-779f96401ff1</BoundTo>
+      <id>e832f45c-3242-4314-9a17-52dcedbc3c9f</id>
+      <recordtableid>4497a20c-ffe9-4d08-8ddf-130ad176a385</recordtableid>
+    </None>
+    <None Include="Recordings\SH_Pruefung_2023.rxrec">
+      <BoundTo>c30762d4-0fa1-42db-97b0-779f96401ff1</BoundTo>
+      <id>37f4dab7-a82c-4775-825b-cbee9046ace6</id>
+      <recordtableid>3c292569-7a69-429c-ae9e-7c5528c27291</recordtableid>
+    </None>
+    <None Include="Recordings\SH_Pruefung_2024.rxrec">
+      <BoundTo>c30762d4-0fa1-42db-97b0-779f96401ff1</BoundTo>
+      <id>cac90544-7c77-4593-862d-e393f4a2d7e7</id>
+      <recordtableid>f04b066d-18ec-4b28-a71e-0b8a0ddbd96c</recordtableid>
+    </None>
+    <None Include="Recordings\SH_Pruefung_2025.rxrec">
+      <BoundTo>c30762d4-0fa1-42db-97b0-779f96401ff1</BoundTo>
+      <id>5307d11a-2f38-40a7-88f0-54d38e811520</id>
+      <recordtableid>c3855958-1091-4016-9f2c-e1540cf3f78e</recordtableid>
+    </None>
+    <None Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2019.rxrec">
+      <BoundTo>c30762d4-0fa1-42db-97b0-779f96401ff1</BoundTo>
+      <id>374a7ddd-2d6b-457f-bb7c-2d8cd3ec3cdd</id>
+      <recordtableid>35254f54-c9a2-4bd5-ace6-8290fbe0f591</recordtableid>
+    </None>
+    <None Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2020.rxrec">
+      <BoundTo>c30762d4-0fa1-42db-97b0-779f96401ff1</BoundTo>
+      <id>0286e9d6-fced-4cfe-bffb-2148640294ba</id>
+      <recordtableid>e50ce5fb-ec47-49e4-8a55-79c536654011</recordtableid>
+    </None>
+    <None Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2021.rxrec">
+      <BoundTo>c30762d4-0fa1-42db-97b0-779f96401ff1</BoundTo>
+      <id>c87fa86a-de3a-4602-9e35-da00f7561b64</id>
+      <recordtableid>80444327-7826-46a6-aa3e-59bf68488cfe</recordtableid>
+    </None>
+    <None Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2022.rxrec">
+      <BoundTo>c30762d4-0fa1-42db-97b0-779f96401ff1</BoundTo>
+      <id>4122061d-a1e0-47ec-9a6e-23eeb63256c2</id>
+      <recordtableid>10a83ded-4f07-4fe7-96dd-2c64d07c88dd</recordtableid>
+    </None>
+    <None Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2023.rxrec">
+      <BoundTo>c30762d4-0fa1-42db-97b0-779f96401ff1</BoundTo>
+      <id>4cdfe568-2fce-48f3-ba51-9498df0313b3</id>
+      <recordtableid>1c7a5f78-d7e8-471b-8fd5-ae25f567052a</recordtableid>
+    </None>
+    <None Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2024.rxrec">
+      <BoundTo>c30762d4-0fa1-42db-97b0-779f96401ff1</BoundTo>
+      <id>df075c3b-097d-48a9-bb79-7828cb64d4f2</id>
+      <recordtableid>f0e5fec4-866a-41b8-a974-eea5dd0c1d84</recordtableid>
+    </None>
+    <None Include="Recordings\SH_Pruefung_Dauerbuchungsvorlagen_2025.rxrec">
+      <BoundTo>c30762d4-0fa1-42db-97b0-779f96401ff1</BoundTo>
+      <id>8d471e9a-de47-44e9-80a8-fabc02e93906</id>
+      <recordtableid>b93dce33-be14-48d4-9c4c-c00a513dc792</recordtableid>
+    </None>
+    <None Include="Recordings\StartAUT.rxrec">
+      <id>23b677a0-3a70-4d6d-b78e-acd0be99177b</id>
+      <recordtableid>0c8f506f-fcb6-4c66-bf6a-968b7b4207a9</recordtableid>
+      <BoundTo>c30762d4-0fa1-42db-97b0-779f96401ff1</BoundTo>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="B_ENDE_001_B_SHPRUF.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>062d4d43-bb02-4f24-91b2-3724f11d4a12</id>
+    </Content>
+    <Content Include="B_ENDE_001_B_SHPRUF.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>394f2a6e-5b9c-4052-853a-04d9d45ec6e6</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings">
+      <id>8453c157-bc6a-4095-bea7-6c70524265aa</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{B11570D9-437B-4E59-96F4-2963817EDC18}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="6a08eedf-5366-42e6-a6bb-eb74a60aec0d"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="S_ADRL_001.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="ce32a0f7-0be2-4b0f-9f08-31d045fc8a5e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d508e81d-ea99-47b6-bcf0-9bba07ed09b4"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='frmAdr']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="012c7bdc-1065-4bba-b571-2c8de5875b3d"
+	name="S_ADRL_001Repository"
+	relativepath="..\S_ADRL_001Repository.rxrep">
+		<codegen
+		classname="S_ADRL_001Repository"
+		namespace="S_ADRL_001">
+		</codegen>
+		<rootfolder
+		id="dcb7ecac-fae2-45f4-902d-6db461ad9cd3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\S_ADRL_002\bin\Debug\S_ADRL_002.exe
+		</reference>
+	</references>
+</recordtable>

@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{4BF2ABDD-CF38-4A2E-B339-DDF55B8EFC39}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>K_AUSW_002</RootNamespace>
+    <AssemblyName>K_AUSW_002</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>dd0936fb-0ba7-415b-b9e7-4c12c081a651</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>cf3cb4a4-07ab-4bf8-947f-633a3437b7cd</id>
+    </Compile>
+    <Compile Include="K_AUSW_002Repository.cs">
+      <BoundTo>dd0936fb-0ba7-415b-b9e7-4c12c081a651</BoundTo>
+      <DependentUpon>K_AUSW_002Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>5c68f872-f340-4e1f-82d1-06b5ab4c1b29</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>0a890d97-eeff-489b-96e5-1e7e12e20fa0</id>
+    </Compile>
+    <Compile Include="Recordings\Auswertung_Kostenstellen_einschraenken.cs">
+      <DependentUpon>Auswertung_Kostenstellen_einschraenken.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bbbb7b3d-b722-446b-9ce4-674d4ca61ac2</id>
+      <BoundTo>00afc31c-2fc2-4dea-9b83-ad6c0f332966</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Auswertung_Kostenstellen_einschraenken.UserCode.cs">
+      <DependentUpon>Auswertung_Kostenstellen_einschraenken.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2bc2f4ee-4ecf-4f19-bcc0-8dbb74903741</id>
+      <BoundTo>00afc31c-2fc2-4dea-9b83-ad6c0f332966</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Auswertung_Kostenstellen_rechnen.cs">
+      <DependentUpon>Auswertung_Kostenstellen_rechnen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bfe97841-84b0-4b79-93f6-fc6b5bc0a53c</id>
+      <BoundTo>0c29717e-7118-4636-8593-b4e73033070e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Auswertung_Kostenstellen_rechnen.UserCode.cs">
+      <DependentUpon>Auswertung_Kostenstellen_rechnen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>26e6bff9-ecd4-4964-86e6-767113676492</id>
+      <BoundTo>0c29717e-7118-4636-8593-b4e73033070e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0432d540-f94c-4850-928c-aa531ceddfc2</id>
+      <BoundTo>0e986244-c5d5-4017-bb92-f8831cc64a12</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT.UserCode.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e851ae7f-1641-46fd-a3f7-2d0f9b365570</id>
+      <BoundTo>0e986244-c5d5-4017-bb92-f8831cc64a12</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Einschraenkungen_laden.cs">
+      <DependentUpon>Einschraenkungen_laden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>097cafa4-e852-4b74-9d2d-2d76b0963655</id>
+      <BoundTo>fa46587e-50d0-4ba5-a9b0-83f669df4b33</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Einschraenkungen_laden.UserCode.cs">
+      <DependentUpon>Einschraenkungen_laden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>76415bd0-3cee-48af-bf03-e27fbbbff7da</id>
+      <BoundTo>fa46587e-50d0-4ba5-a9b0-83f669df4b33</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Ergebnis_Kostenstellen_Zeilenuebersicht.cs">
+      <DependentUpon>Ergebnis_Kostenstellen_Zeilenuebersicht.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>aa7498e3-474a-4494-bd69-47c67ad90e3e</id>
+      <BoundTo>726528b8-c9ac-4ae3-95ce-518f55988f1b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Ergebnis_Kostenstellen_Zeilenuebersicht.UserCode.cs">
+      <DependentUpon>Ergebnis_Kostenstellen_Zeilenuebersicht.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>67fd8c57-9f59-4971-8a32-dd3e560f51a2</id>
+      <BoundTo>726528b8-c9ac-4ae3-95ce-518f55988f1b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Ergebnis_Kostenstelle_20_pruefen.cs">
+      <DependentUpon>Ergebnis_Kostenstelle_20_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>682954d3-e889-4d58-94af-9eb418ac084f</id>
+      <BoundTo>9314ad39-38f4-4cdb-a297-cf08647b49c9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Ergebnis_Kostenstelle_20_pruefen.UserCode.cs">
+      <DependentUpon>Ergebnis_Kostenstelle_20_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c416ef48-df09-467f-a75d-c72ba299fc44</id>
+      <BoundTo>9314ad39-38f4-4cdb-a297-cf08647b49c9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Ergebnis_Kostenstelle_30_pruefen.cs">
+      <DependentUpon>Ergebnis_Kostenstelle_30_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>45da86c7-2752-4ed8-9fa4-fa8e6016bc74</id>
+      <BoundTo>ece5f4ed-afb6-42a8-bc7c-80b968abe347</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Ergebnis_Kostenstelle_30_pruefen.UserCode.cs">
+      <DependentUpon>Ergebnis_Kostenstelle_30_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8ea8fb80-2d60-4dfc-822f-09c739ffab8c</id>
+      <BoundTo>ece5f4ed-afb6-42a8-bc7c-80b968abe347</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Ergebnis_schliessen.cs">
+      <DependentUpon>Ergebnis_schliessen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>65fbc5a2-d3d2-4251-bce0-edfb2d71b27a</id>
+      <BoundTo>6db0019f-9ffc-40e8-b5db-f9b9fc55818b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Ergebnis_schliessen.UserCode.cs">
+      <DependentUpon>Ergebnis_schliessen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>12c219f3-e75d-456b-a686-e3e8a96952db</id>
+      <BoundTo>6db0019f-9ffc-40e8-b5db-f9b9fc55818b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Formulareinschraenkung_zuruecksetzen.cs">
+      <DependentUpon>Formulareinschraenkung_zuruecksetzen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>de9cc73a-8489-4806-9948-593f54f19774</id>
+      <BoundTo>7186c9ed-3f47-4b7b-b155-32f5e8b85741</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Formulareinschraenkung_zuruecksetzen.UserCode.cs">
+      <DependentUpon>Formulareinschraenkung_zuruecksetzen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>149ea2f5-5fe5-431b-82a6-0605111db1a7</id>
+      <BoundTo>7186c9ed-3f47-4b7b-b155-32f5e8b85741</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ef66f0ea-bf66-444e-b573-0ff4aa94274c</id>
+      <BoundTo>6b13d84a-9204-4870-95c0-1f550d56fd85</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6833b9e3-d69b-4630-a32c-0af2d0e073c8</id>
+      <BoundTo>6b13d84a-9204-4870-95c0-1f550d56fd85</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Bereichskontoabfrage\Bereichskontenabfrage_aufrufen.cs">
+      <DependentUpon>Bereichskontenabfrage_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e1a304c6-7afc-4095-ac3c-09b43082b3c5</id>
+      <BoundTo>fd68a74e-7635-44d9-acc7-361340133ea7</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Bereichskontoabfrage\Bereichskontenabfrage_aufrufen.UserCode.cs">
+      <DependentUpon>Bereichskontenabfrage_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>179a4dec-7f61-496d-a85e-3958516b97f0</id>
+      <BoundTo>fd68a74e-7635-44d9-acc7-361340133ea7</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Bereichskontoabfrage\Bereichskontenabfrage_pruefen.cs">
+      <DependentUpon>Bereichskontenabfrage_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0c828272-29bb-45b7-ab67-2c97f5d49c94</id>
+      <BoundTo>232415d3-2aaf-4b71-acba-26a555fd6972</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Bereichskontoabfrage\Bereichskontenabfrage_pruefen.UserCode.cs">
+      <DependentUpon>Bereichskontenabfrage_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d944041b-c041-4fdd-8b24-04bad13d2c52</id>
+      <BoundTo>232415d3-2aaf-4b71-acba-26a555fd6972</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Bereichskontoabfrage\Bereichskontenabfrage_schliessen.cs">
+      <BoundTo>31f9f341-4cd3-474c-b75e-0e6aea910c83</BoundTo>
+      <DependentUpon>Bereichskontenabfrage_schliessen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>20903c22-120c-45f3-9f58-03e335384cdc</id>
+    </Compile>
+    <Compile Include="Recordings_Bereichskontoabfrage\Bereichskontenabfrage_schliessen.UserCode.cs">
+      <BoundTo>31f9f341-4cd3-474c-b75e-0e6aea910c83</BoundTo>
+      <DependentUpon>Bereichskontenabfrage_schliessen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a1907cec-cd89-4f26-ae5d-2657c8330d46</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>33a2c9fb-c065-4194-ac97-0f0361d091aa</id>
+    </None>
+    <None Include="K_AUSW_002Repository.rximg">
+      <BoundTo>dd0936fb-0ba7-415b-b9e7-4c12c081a651</BoundTo>
+      <DependentUpon>K_AUSW_002Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>df5b65b6-ea51-4dbe-ab0c-012180e2948f</id>
+    </None>
+    <None Include="K_AUSW_002Repository.rxrep">
+      <id>dd0936fb-0ba7-415b-b9e7-4c12c081a651</id>
+      <repoid>017661d7-3daa-4c0f-87ee-8b97d99a6621</repoid>
+      <reporootid>a9707f99-3948-4eb2-b6fe-2a239e4e0b9d</reporootid>
+    </None>
+    <None Include="Recordings\Auswertung_Kostenstellen_einschraenken.rxrec">
+      <BoundTo>dd0936fb-0ba7-415b-b9e7-4c12c081a651</BoundTo>
+      <id>00afc31c-2fc2-4dea-9b83-ad6c0f332966</id>
+      <recordtableid>38fb5ba5-9567-4fb2-a509-ffab54158751</recordtableid>
+    </None>
+    <None Include="Recordings\Auswertung_Kostenstellen_rechnen.rxrec">
+      <id>0c29717e-7118-4636-8593-b4e73033070e</id>
+      <recordtableid>9e6fe43f-2ddc-46fd-962e-efcc715af432</recordtableid>
+      <BoundTo>dd0936fb-0ba7-415b-b9e7-4c12c081a651</BoundTo>
+    </None>
+    <None Include="Recordings\CloseAUT.rxrec">
+      <id>0e986244-c5d5-4017-bb92-f8831cc64a12</id>
+      <recordtableid>a08c0fc8-390a-4e76-b91d-1f95e4b28e46</recordtableid>
+      <BoundTo>dd0936fb-0ba7-415b-b9e7-4c12c081a651</BoundTo>
+    </None>
+    <None Include="Recordings\Einschraenkungen_laden.rxrec">
+      <id>fa46587e-50d0-4ba5-a9b0-83f669df4b33</id>
+      <recordtableid>7776ec05-3ef7-4a70-8a4a-3656913558b5</recordtableid>
+      <BoundTo>dd0936fb-0ba7-415b-b9e7-4c12c081a651</BoundTo>
+    </None>
+    <None Include="Recordings\Ergebnis_Kostenstellen_Zeilenuebersicht.rxrec">
+      <id>726528b8-c9ac-4ae3-95ce-518f55988f1b</id>
+      <recordtableid>789a19b4-b636-43be-9cc3-bf749c01488d</recordtableid>
+      <BoundTo>dd0936fb-0ba7-415b-b9e7-4c12c081a651</BoundTo>
+    </None>
+    <None Include="Recordings\Ergebnis_Kostenstelle_20_pruefen.rxrec">
+      <id>9314ad39-38f4-4cdb-a297-cf08647b49c9</id>
+      <recordtableid>81335c47-a5fa-414c-9536-847615cc4f9d</recordtableid>
+      <BoundTo>dd0936fb-0ba7-415b-b9e7-4c12c081a651</BoundTo>
+    </None>
+    <None Include="Recordings\Ergebnis_Kostenstelle_30_pruefen.rxrec">
+      <BoundTo>dd0936fb-0ba7-415b-b9e7-4c12c081a651</BoundTo>
+      <id>ece5f4ed-afb6-42a8-bc7c-80b968abe347</id>
+      <recordtableid>37419e43-96df-4810-859c-74eaecf11a69</recordtableid>
+    </None>
+    <None Include="Recordings\Ergebnis_schliessen.rxrec">
+      <id>6db0019f-9ffc-40e8-b5db-f9b9fc55818b</id>
+      <recordtableid>b2773a39-e987-4be0-a175-e557ad0ba536</recordtableid>
+      <BoundTo>dd0936fb-0ba7-415b-b9e7-4c12c081a651</BoundTo>
+    </None>
+    <None Include="Recordings\Formulareinschraenkung_zuruecksetzen.rxrec">
+      <id>7186c9ed-3f47-4b7b-b155-32f5e8b85741</id>
+      <recordtableid>b0cd00a4-ba29-460c-98aa-e5f10fcff430</recordtableid>
+      <BoundTo>dd0936fb-0ba7-415b-b9e7-4c12c081a651</BoundTo>
+    </None>
+    <None Include="Recordings\StartAUT.rxrec">
+      <id>6b13d84a-9204-4870-95c0-1f550d56fd85</id>
+      <recordtableid>300c00cc-816a-4e6f-be0b-f169cebeb774</recordtableid>
+      <BoundTo>dd0936fb-0ba7-415b-b9e7-4c12c081a651</BoundTo>
+    </None>
+    <None Include="Recordings_Bereichskontoabfrage\Bereichskontenabfrage_aufrufen.rxrec">
+      <id>fd68a74e-7635-44d9-acc7-361340133ea7</id>
+      <recordtableid>c49832f8-dd48-4d33-b764-4db855184e97</recordtableid>
+      <BoundTo>dd0936fb-0ba7-415b-b9e7-4c12c081a651</BoundTo>
+    </None>
+    <None Include="Recordings_Bereichskontoabfrage\Bereichskontenabfrage_pruefen.rxrec">
+      <id>232415d3-2aaf-4b71-acba-26a555fd6972</id>
+      <recordtableid>a9a99fd7-f249-4a40-9c1e-228ad5189f09</recordtableid>
+      <BoundTo>dd0936fb-0ba7-415b-b9e7-4c12c081a651</BoundTo>
+    </None>
+    <None Include="Recordings_Bereichskontoabfrage\Bereichskontenabfrage_schliessen.rxrec">
+      <BoundTo>dd0936fb-0ba7-415b-b9e7-4c12c081a651</BoundTo>
+      <id>31f9f341-4cd3-474c-b75e-0e6aea910c83</id>
+      <recordtableid>be4f7da9-4a14-4d5f-8cae-48ad22f877d3</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="K_AUSW_002.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>f1b74970-fac5-4ebb-8a90-9fc3cb92d703</id>
+    </Content>
+    <Content Include="K_AUSW_002.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>cecd9796-6efb-4d2f-b6b6-6353f0e0aef4</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings_Bereichskontoabfrage">
+      <id>e0b69c5d-ea1e-4e2c-a662-b9e774a9d982</id>
+    </Folder>
+    <Folder Include="Recordings">
+      <id>00de8af9-fa3c-4ac0-975f-d3c1acb14183</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

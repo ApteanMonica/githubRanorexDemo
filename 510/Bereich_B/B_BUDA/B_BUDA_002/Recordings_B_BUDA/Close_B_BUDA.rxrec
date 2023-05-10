@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e8f38d34-cbd6-44d5-8a68-f122aa115ac5"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_B_BUDA"
+	namespace="B_BUDA_002.Recordings_B_BUDA">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="2000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="9d070d33-1400-42f6-a64a-9551c6419f5c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="01ef36fa-8110-4164-a0f8-3a2f0d7f1228"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblDaBu']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="b4532dcc-9369-477f-af30-b2cd85875c18"
+	name="B_BUDA_002Repository"
+	relativepath="..\B_BUDA_002Repository.rxrep">
+		<codegen
+		classname="B_BUDA_002Repository"
+		namespace="B_BUDA_002">
+		</codegen>
+		<rootfolder
+		id="c6e0bd01-7f2d-4831-ae8d-3a70627b64f7"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_B_BUDA.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

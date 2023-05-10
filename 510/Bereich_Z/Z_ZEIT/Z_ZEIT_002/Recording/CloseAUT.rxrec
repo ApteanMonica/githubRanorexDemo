@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="56e953b0-a213-483a-9a1a-12508613e666"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="Z_ZEIT_002.Recording">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="5f573e8d-1d6d-4289-ba04-cc9a734ca33d">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="9740b2f8-9e77-412e-8d20-57c0e03f0ddb"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='mdiZeit']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="dccc7399-7a56-45bb-ab70-046dbed0adeb"
+	name="Z_ZEIT_002Repository"
+	relativepath="..\Z_ZEIT_002Repository.rxrep">
+		<codegen
+		classname="Z_ZEIT_002Repository"
+		namespace="Z_ZEIT_002">
+		</codegen>
+		<rootfolder
+		id="79cfb95a-3ea5-43df-a1ce-a03cb8a8b7c7"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

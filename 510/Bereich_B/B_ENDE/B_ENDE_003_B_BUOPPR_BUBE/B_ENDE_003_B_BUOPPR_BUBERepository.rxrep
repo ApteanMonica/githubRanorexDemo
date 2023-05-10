@@ -1,0 +1,190 @@
+﻿<repository
+id="65c6a771-7a82-4ef0-9cd1-38528a83f696"
+name="B_ENDE_003_B_BUOPPR_BUBERepository">
+	<codegen
+	classname="B_ENDE_003_B_BUOPPR_BUBERepository"
+	namespace="B_ENDE_003_B_BUOPPR_BUBE">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="a40067d2-a27b-4d21-9bea-078e4634348f"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="e644d097-afb0-4b09-89f6-50eba900e523"
+		isrooted="True"
+		name="FrmMain"
+		refpath="/form[@controlname='frmMain']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="30dfb5f3-8588-4896-b40a-dc50e80a05d1"
+			name="TitleBar100OPSaldenPruefung"
+			refimgid="5e6272ae-cbe9-438c-a352-84bd3275156c"
+			refpath="/form[@controlname='frmMain']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmMain']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="checkbox,control,nativewindow"
+			capname="checkbox"
+			id="f9046274-9dcf-4da0-a0e7-9921320ba63b"
+			name="CbBusaBubeVergleich"
+			refimgid="6660fffb-a9ee-431a-9efc-6b92c234e4da"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmMain']/container[@controlname='ClientArea']/checkbox[@controlname='cbBusaBubeVergleich']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="883ab39b-5994-44ad-a8b3-5a43476858cd"
+			name="DfGjhrBez"
+			refimgid="f077cab5-45c8-4cdc-8731-a9a70564f1b5"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmMain']/container[@controlname='ClientArea']/text[@controlname='dfGjhr_bez']/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="5af2d6af-bc9e-405a-86df-ba19f1ef1604"
+			name="DfOperator"
+			refimgid="07a6ce3a-728f-43f6-9154-669653d231b0"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmMain']/container[@controlname='ClientArea']/text[@controlname='dfOperator']/text[@accessiblename='Geschäftsjahr']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="9d93d6ca-a390-41bc-a8e1-81821440d89f"
+			name="PbShareDrucken_Button_Starten"
+			refimgid="f22edf42-f4f1-42fd-8193-be406950e6f2"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmMain']/container[@controlname='RibbonBar']/container[@controlname='ShareGroup']/button[@controlname='pbShare_Drucken']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="6f014017-8db9-40c8-aa42-ecd9a36dc8f3"
+			name="Geschaeftsjahr"
+			refimgid="8a5a6a46-f585-457e-8feb-8c9d0d39e34e"
+			refpath="/form[@controlname='frmMain']/container[@controlname='ClientArea']/text[@controlname='dfOperator']/text[@accessiblename='Geschäftsjahr']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmMain']/container[@controlname='ClientArea']/text[@controlname='dfOperator']/text[@accessiblename='Geschäftsjahr']
+			</item>
+			<basepath>
+				/form[@controlname='frmMain']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="5077f0d8-13b7-4f6a-ae20-0d279f172b77"
+		isrooted="True"
+		name="DlgMessageBox"
+		refpath="/form[@controlname='dlgMessageBox']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="0a25b7c4-37f0-4115-9895-e9af25d9cc2f"
+			name="LabelMeldungstext"
+			refimgid="9315e1cb-b0de-40d1-a8fd-8429b4c7f29a"
+			refpath="/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="377a0cc9-0cb7-479a-be59-255640c65bab"
+			name="Button0"
+			refimgid="907197de-729e-44c5-8745-fc57fc71bf9d"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button0']
+			</item>
+			<basepath>
+				/form[@controlname='dlgMessageBox']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<item
+		addcaps="titlebar,accessible"
+		capname="titlebar"
+		id="5d041ccc-5a2c-4148-b1f4-cff44c3f3718"
+		name="SaldenOPPruefung"
+		refimgid="afb5cfe4-3945-4df8-aa73-37f143cc3a6d"
+		refpath="/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']"
+		robustPath=""
+		searchtimeout="30000ms">
+			/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
+		</item>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="cfa33116-ceab-49c4-a2c9-4766ef17deb5"
+		isrooted="True"
+		name="TblDiff"
+		refpath="/form[@controlname='tblDiff']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="0d075b06-6962-4b94-815b-44726a244323"
+			name="TitleBar100PruefenBetragBuchungs"
+			refimgid="998d913c-21e6-490d-b0ce-fd92ebc96b2d"
+			refpath="/form[@controlname='tblDiff']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="2000ms">
+				/form[@controlname='tblDiff']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<basepath>
+				/form[@controlname='tblDiff']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

@@ -1,0 +1,845 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f088661b-fb7a-41a0-92bf-8d91f263da60"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Ticket_Fail_ED"
+	namespace="Servicecenter.Recordings.EDGE">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<explicitdelayitem
+		duration="500ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mousewheelitem
+		delta="200"
+		duration="500ms"
+		enabled="True"
+		optional="False"
+		orientation="Vertical">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</mousewheelitem>
+		<validationitem
+		action="Exists"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="dfe4a67f-671b-4fdc-8994-dabafcdb4e49">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="783b4ad7-8f4b-4605-bf26-6f7025bbab6e"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="uiautomation, uiautomationinvoke"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="False"
+				index="0"
+				prefcap="button"
+				rect="272,249,120,35"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Ticket erstellen
+					</attribute>
+					<attribute
+					name="classname"
+					type="System.String">
+						btn btn-danger
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Button
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						Schaltfläche
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						Ticket erstellen
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						11316
+					</attribute>
+				</element>
+				<path>
+					/form/container[@name&gt;'rs2 Service Center - Microsoft']/container[@name='Microsoft Edge']//container[@classname='SidebarContentsSplitView']//container[@automationid='38865984']/?/?/container[@classname='rs2']/container[@automationid='app']/container[@automationid='layout-spa']/container[@automationid='appModule']//button[@name='Ticket erstellen']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="428be6e0-5ca2-4e0e-806e-95cd1d284a21"
+		sx="2259"
+		sy="273"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="783b4ad7-8f4b-4605-bf26-6f7025bbab6e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/container[@name&gt;'rs2 Service Center - Microsoft']/container[@name='Microsoft Edge']//container[@classname='SidebarContentsSplitView']//?/?/?/container[@classname='rs2']/container[@automationid='app']/container[@automationid='layout-spa']/container[@automationid='appModule']//button[@name='Ticket erstellen']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="a054cfee-27c9-43b6-9133-0290b6b4bf9c"
+		sx="73"
+		sy="736"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="274065c2-dc49-422d-8bd2-50a44c051f1d"
+			sourcename="Recorder">
+				<element
+				capabilities="uiautomation, uiautomationinvoke"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="False"
+				index="0"
+				prefcap="button"
+				rect="31,726,90,35"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Speichern
+					</attribute>
+					<attribute
+					name="classname"
+					type="System.String">
+						btn btn-success
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Button
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						Schaltfläche
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						Speichern
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						6148
+					</attribute>
+				</element>
+				<path>
+					/form/container[@name&gt;'rs2 Service Center - Microsoft']/container[@name='Microsoft Edge']//container[@automationid='38266336']/?/?/container[@classname='rs2']/container[@automationid='app']/container[@automationid='layout-spa']/container[@automationid='appModule']/container/container[2]/container[9]/button[@name='Speichern']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="cea3b4f4-b98b-4f8c-8a13-d38f6fc44bfa">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAFQAPQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDo1+4P
+pS0i/cH0paACg9DRQehoAZtG8Pj5gMZpgt41OQD3wNxwM+npUtFAEfkR4A28Bdv4elPVQqhRnA9T
+mlooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAF+4PpS0
+i/cH0paACg9DRQehoASiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+AKKKKACiiigAooooAF+4PpS0i/cH0paACg9DRQehoASiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAF+4PpS0i/cH0paACg9DRQehoASiiigAoooo
+AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAF+4PpS0i/cH
+0paACg9DRQehoASiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKK
+KACiiigAooooAF+4PpS0i/cH0paACg9DRQehoASiiigAooooAKKKKACiiigAooooAKKKKACiiigA
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAF+4PpS0i/cH0paACg9DRQehoASiiigAooooAKKK
+KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAF+4PpS0i/cH0paA
+Cg9DRQehoASiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAF+4PpS0i/cH0paACg9DRRQA3IoyKdRQA3IoyKdRQA3IoyKdRQA3IoyKdRQA3IoyKdRQ
+A3IoyKdRQA3IoyKdRQA3IoyKdRQA3IoyKdRQA3IoyKdRQA3IoyKdRQA3IoyKdRQA3IoyKdRQA3Io
+p1FACL9wfSlpF+4PpS0AFU7++Nm0SrCZTISAAcent71crI15islqynBBYg/lUydka0YqU7S21/IG
+1t1YhrNgR2L/AP1qT+3T/wA+h/77/wDrVRorLml3M/rEP5PxZe/t0/8APof++/8A61H9un/n0P8A
+33/9aqNFHNLuH1iH8n4svf26f+fQ/wDff/1qP7dP/Pof++//AK1UaKOaXcPrEP5PxZe/t0/8+h/7
+7/8ArUf26f8An0P/AH3/APWqjRRzS7h9Yh/J+LL39un/AJ9D/wB9/wD1qP7dP/Pof++//rVRoo5p
+dw+sQ/k/Fl9NakkbalkzH0DZ/pVi01Iz3DxTQeQUXcSzdOnsPWsjJU7gcEcg1LqH/IXm+g/kKfMz
+ei4VrrltZeZufarf/nvF/wB9ij7Vb/8APeL/AL7Fc/RVc5f1ddzoPtVv/wA94v8AvsUfarf/AJ7x
+f99iufoo5w+rrudB9qt/+e8X/fYo+1W//PeL/vsVz9FHOH1ddzoPtVv/AM94v++xR9qt/wDnvF/3
+2K5+ijnD6uu50H2q3/57xf8AfYo+1W//AD3i/wC+xXP0Uc4fV13OgFzbk4E8Z/4GKlrmq3NOJaxj
+JOeo/U1UZXMqlLkV0WaKKKoxCiiigBF+4PpS0i/cH0paACsfxB962+rf0rYrH8Qfetvq39Kifwm1
+D4/v/JlGpraETOwOTtUkKOrewqGnxGIEiVSQRwR1H+NZI89Extld0SPdHI2cpJ2984potHOCjIyk
+kbgeBj1qxbTq8sMQZ3wSdz9eh4FMhu44FCRhypJLE8H8KqyLsiOO1LMuCrqwOCpI6fUVWZI7dYmZ
+3CvBE7Z3Nyc59cVciuT5x2i5uAiZc8HGcgcZzVuztfMs4HLY3QwcY/uHd+uauMVYuMU0Z5hjk3Na
+zJKi44B+YZ6Z4pfsj5IV0YggMAT8uanukSxuI2CgvIJWyBjOXVhn+VNe6Qyb/MnILA7CeB69+amS
+SZMkkyM2hG/MsY8v73Xj9KimiaGTY2CeuR0NSvcIwuAA370gr+dNupVmkDKCAFA5qXYl2ID0NTah
+/wAhef6D+QqE9DU2of8AIXn+g/kKOh24H4pehHVm2tlljLOxUk7U9zjNVqsm62LEsIACD+JQeaaO
+uV+g2O3D25cuEYPt+bpTzZ4iBZwkm/b8x4/Slknt5FZSJFBffwB6cjrTnuoZgPMDjD7vlAPFPQi8
+iE2kgXLFQS20LzkmkNq/Oxkcg7SFPQ1LJehtjBTuWQtjtihrsCTekkz/ADZCueAKNB3mNitA06o0
+qMMkHaeRx7037I52lWRlbPzA8DHWnpNbx3AlXzCdxOCAMAj9aW3u1iiRMNwTkj0PpRoDcuhGlo7l
+djoysCQ3OOPwpksJjVG3Kyv0K1Ol0qOC0k0nykfN7+2agkkDQRRgHKZz+JpaDTlcjrb0z/jwj/H+
+ZrErb0z/AI8I/wAf5mqhuRX+EtUUUVocYUUUUAIv3B9KWkX7g+lLQAVka8paS1VRkksAPyrXrO1W
+C4lltpLaMOYmLckD0x/KpnsbULc6v5/kZVFX2XUWYltOtST3IH+NJsv/APoG2n/fI/xrKxl9Uf8A
+MvvKNFXtl/8A9A20/wC+R/jRsv8A/oG2n/fI/wAaLB9Uf8y+8oq8kEqzwf6xe2cbh3BretryC5hE
+kcgA7gnBU+hrP2X/AP0DbT/vkf40w294xy2lWRPqUX/Gri7Fxw8l9pfeM1K6jur1RCwZIVKlh0LE
+jp+VV6uiO/AwNNtAB/sr/jS7L/8A6Btp/wB8j/Gk9WTLDNu/MvvKNFXtl/8A9A20/wC+R/jRsv8A
+/oG2n/fI/wAamwvqj/mX3lHBY7QMk8AVLqH/ACF5voP5CrSf2lG25NPtlPqAB/Wn2VvctqEs95Aq
+h0wQCCM8dsn0p26HRQp+x5pNp6dzOoroPstv/wA8Iv8AvgUfZbf/AJ4Rf98Cq5CvrC7HP0V0H2W3
+/wCeEX/fAo+y2/8Azwi/74FHIH1hdjn6K6D7Lb/88Iv++BR9lt/+eEX/AHwKOQPrC7HP0V0H2W3/
+AOeEX/fAo+y2/wDzwi/74FHIH1hdjn6K6D7Lb/8APCL/AL4FH2W3/wCeEX/fAo5A+sLsc/W5pwK2
+MYIx1P6mpBbW4ORBH/3wKlqoxsZVKvOrIKKKKoxCiiigBF+4PpS0i/cH0paACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAEX7g+lLSL9wf
+SloAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooARfuD6UtIv3B9KWgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+AKKKKACiiigAooooAKKKKACiiigBF+4PpS0i/cH0paACiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAEX7g+lLSL9wfSloAKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooARfuD6UtIv
+3B9KWgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigBF+4PpS0i/cH0paACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKACiiigAooooAKKKKAEX7g+lLSL9wfSloAKKKKACiiigAooooAKKKKACiiigAooo
+oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooARfuD6UtIv3B9KWgAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<validationitem
+		action="Exists"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="4beb1ec2-6459-4b0b-8eba-45cff05ed481">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4a70b588-0042-45d9-a121-c84a92f35483"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="uiautomation"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="False"
+				index="0"
+				prefcap="container"
+				rect="16,247,944,82"
+				role="container"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="classname"
+					type="System.String">
+						col-xs-12 col-lg-6
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Group
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						Gruppe
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						2024
+					</attribute>
+				</element>
+				<path>
+					/form/container[@name&gt;'rs2 Service Center - Microsoft']/container[@name='Microsoft Edge']//container[@automationid='41358496']/?/?/container[@classname='rs2']/container[@automationid='app']/container[@automationid='layout-spa']/container[@automationid='appModule']/container/container[2]/container[1]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="Exists"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="540e620c-8318-46ff-b468-e7e907cf513a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4a70b588-0042-45d9-a121-c84a92f35483"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="uiautomation"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="False"
+				index="0"
+				prefcap="container"
+				rect="16,247,944,82"
+				role="container"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="classname"
+					type="System.String">
+						col-xs-12 col-lg-6
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Group
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						Gruppe
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						2024
+					</attribute>
+				</element>
+				<path>
+					/form/container[@name&gt;'rs2 Service Center - Microsoft']/container[@name='Microsoft Edge']//container[@automationid='41358496']/?/?/container[@classname='rs2']/container[@automationid='app']/container[@automationid='layout-spa']/container[@automationid='appModule']/container/container[2]/container[1]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="Exists"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="2b92490e-dd3b-4d99-bb1c-f40e4dbb65e7">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b48cc71f-e00a-4cab-a874-d505fe84efc8"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="uiautomation"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="False"
+				index="2"
+				prefcap="container"
+				rect="16,329,944,82"
+				role="container"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="classname"
+					type="System.String">
+						col-xs-12 col-lg-6
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Group
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						Gruppe
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						2024
+					</attribute>
+				</element>
+				<path>
+					/form/container[@name&gt;'rs2 Service Center - Microsoft']/container[@name='Microsoft Edge']//container[@automationid='41358496']/?/?/container[@classname='rs2']/container[@automationid='app']/container[@automationid='layout-spa']/container[@automationid='appModule']/container/container[2]/container[3]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="Exists"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="740320e7-37e6-4feb-a1b2-85887d32e40e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ebe2c35e-aefe-4e05-967d-16808a03df73"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="uiautomation"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="False"
+				index="4"
+				prefcap="container"
+				rect="16,448,1888,82"
+				role="container"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="classname"
+					type="System.String">
+						col-xs-12
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Group
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						Gruppe
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						2024
+					</attribute>
+				</element>
+				<path>
+					/form/container[@name&gt;'rs2 Service Center - Microsoft']/container[@name='Microsoft Edge']//container[@automationid='41358496']/?/?/container[@classname='rs2']/container[@automationid='app']/container[@automationid='layout-spa']/container[@automationid='appModule']/container/container[2]/container[5]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="Exists"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="007304ad-1013-46ce-adb9-228ed3bb4c89">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f20ada08-8f2f-4454-bfdc-903749dd7ae9"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="uiautomation"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="False"
+				index="7"
+				prefcap="container"
+				rect="16,639,1888,212"
+				role="container"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="classname"
+					type="System.String">
+						col-xs-12
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Group
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						Gruppe
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						2024
+					</attribute>
+				</element>
+				<path>
+					/form/container[@name&gt;'rs2 Service Center - Microsoft']/container[@name='Microsoft Edge']//container[@automationid='41358496']/?/?/container[@classname='rs2']/container[@automationid='app']/container[@automationid='layout-spa']/container[@automationid='appModule']/container/container[2]/container[8]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="f7deb4a7-2771-4c20-903d-bc17047e2b6a"
+	name="ServicecenterRepository"
+	relativepath="..\..\ServicecenterRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="ServicecenterRepository"
+		namespace="Servicecenter">
+		</codegen>
+		<rootfolder
+		id="e5a69c28-9dbf-43c2-b940-3a3d711f721c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Ticket_Fail_ED.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

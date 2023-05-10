@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="1cdef145-2915-4411-be85-12cda330fb99"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="E_LSK_005.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="d902e6f7-d36f-4804-898c-28b2060481fc">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6f99ed4f-db4d-475e-bfe5-6a2c4abab0f8"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='mdiLSR']/titlebar[@accessiblerole='TitleBar']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="7f1453b4-9b24-4b3f-b03e-0b3bcda6c672"
+	name="E_LSK_005Repository"
+	relativepath="..\E_LSK_005Repository.rxrep">
+		<codegen
+		classname="E_LSK_005Repository"
+		namespace="E_LSK_005">
+		</codegen>
+		<rootfolder
+		id="45c8955c-a1e1-4a5c-8821-6a0f7c9a9c9e"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

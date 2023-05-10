@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="aa71ebc5-a9b6-4316-a9b1-eca924a48806"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartAUT"
+	namespace="B_ENDE_002_B_BUSAPR.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="4eb95413-a63c-44c4-8172-359dc429bca0"
+		name="Startfile">
+			C:\Testdaten\Allgemein\Start.bat
+		</var>
+		<var
+		id="eb151f19-1b80-4d26-9aa2-4f72322b4e7c"
+		name="Programm">
+			B_BUSAPR
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="FileName"
+				variable="Startfile">
+				</binding>
+				<binding
+				target="Arguments"
+				variable="Programm">
+				</binding>
+			</bindings>
+			<filename>
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="81b1e452-3f82-4897-bbe5-f7d0a720daf5"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="81638f9a-9591-4f96-be1d-fb78872e274a"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="5"
+				prefcap="titlebar"
+				rect="-1103,409,359,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100] Prüfung Sachkonten-Salden
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100] Prüfung Sachkonten-Salden
+					</attribute>
+				</element>
+				<path>
+					/form[@title&gt;'[100] Pr&#252;fung Sachkonten-']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="2fb24cf2-a62d-4c5b-8a7d-12385cf67b5e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="81638f9a-9591-4f96-be1d-fb78872e274a"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="5"
+				prefcap="titlebar"
+				rect="-1103,409,359,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100] Prüfung Sachkonten-Salden
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100] Prüfung Sachkonten-Salden
+					</attribute>
+				</element>
+				<path>
+					/form[@title&gt;'[100] Pr&#252;fung Sachkonten-']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Prüfung Sachkonten-Salden
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="9f37bed2-ce04-4c78-85de-325a27f277dd"
+	name="B_ENDE_002_B_BUSAPRRepository"
+	relativepath="..\B_ENDE_002_B_BUSAPRRepository.rxrep">
+		<codegen
+		classname="B_ENDE_002_B_BUSAPRRepository"
+		namespace="B_ENDE_002_B_BUSAPR">
+		</codegen>
+		<rootfolder
+		id="b0901c16-8a43-4bde-b0cd-102ddf298904"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

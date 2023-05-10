@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d3b316f3-0ea1-4b73-9386-368d524287cc"
+mode="Global"
+rxversion="8.3">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Ticketanlage_2"
+	namespace="Servicecenter.Recordings.Allgemein">
+	</codegen>
+	<variables>
+		<var
+		id="08f3862c-7173-4ffe-9dee-2105eed7d9eb"
+		name="Titel">
+		</var>
+		<var
+		id="79d530b8-2d6c-4cb1-ac63-a198efb7e82f"
+		name="Text">
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="50c024d1-de7a-4bbc-93d6-13fa1ca4a5bc"
+		sx="2072"
+		sy="347"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="fd23da36-6e00-4fec-b93d-21c49e0527e6"
+			sourcename="Recorder">
+				<path>
+					/dom[@domain='sbg-webservtst.rs-soft.com']//section[#'appModule']/section/div/div/div/div[2]/div[7]/?/?/?
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="test"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="214b7bd3-bd77-4a68-a1f6-51c922c47b26">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Titel">
+				</binding>
+			</bindings>
+			<info
+			id="fd23da36-6e00-4fec-b93d-21c49e0527e6"
+			sourcename="Recorder">
+				<path>
+					/dom[@domain='sbg-webservtst.rs-soft.com']//section[#'appModule']/section/div/div/div/div[2]/div[7]/?/?/?
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c151c867-20f2-4d6a-b02c-19d279c6533b">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Titel">
+				</binding>
+			</bindings>
+			<info
+			id="fd23da36-6e00-4fec-b93d-21c49e0527e6"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="firefoxweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="1951,335,1858,30"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						k-textbox full-width
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						test
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						100
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="placeholder"
+					type="System.String">
+						Titel
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="title"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						test
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-bind"
+					readonly="False"
+					type="System.String">
+						&#10;                                textInput: newTicketForm().fields().TICKET_TITEL().value,
+                                attr: {placeholder:  newTicketForm().fields().TICKET_TITEL().placeholder}
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+						width:100%;
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='sbg-webservtst.rs-soft.com']//section[#'appModule']/section/div/div/div/div[2]/div[7]/?/?/input[@title='']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="a4b4cf4e-36ae-42fd-8a00-b82d60642700">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABBAfQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKpf
+2tY/89//ABxv8KP7Wsf+e/8A443+FLmXcnmj3LtFUv7Wsf8Anv8A+ON/hR/a1j/z3/8AHG/wo5l3
+Dmj3LtFUv7Wsf+e//jjf4Uf2tY/89/8Axxv8KOZdw5o9y7RVL+1rH/nv/wCON/hR/a1j/wA9/wDx
+xv8ACjmXcOaPcu0VS/tax/57/wDjjf4Uf2tY/wDPf/xxv8KOZdw5o9y7RVL+1rH/AJ7/APjjf4Uf
+2tY/89//ABxv8KOZdw5o9y7RVL+1rH/nv/443+FH9rWP/Pf/AMcb/CjmXcOaPcu0VS/tax/57/8A
+jjf4Uf2tY/8APf8A8cb/AAo5l3Dmj3LtFUv7Wsf+e/8A443+FH9rWP8Az3/8cb/CjmXcOaPcu0VS
+/tax/wCe/wD443+FH9rWP/Pf/wAcb/CjmXcOaPcu0VS/tax/57/+ON/hR/a1j/z3/wDHG/wo5l3D
+mj3LtFUv7Wsf+e//AI43+FH9rWP/AD3/APHG/wAKOZdw5o9y7RVL+1rH/nv/AOON/hR/a1j/AM9/
+/HG/wo5l3Dmj3LtFUv7Wsf8Anv8A+ON/hR/a1j/z3/8AHG/wo5l3Dmj3LtFUv7Wsf+e//jjf4Uf2
+tY/89/8Axxv8KOZdw5o9y7RVL+1rH/nv/wCON/hR/a1j/wA9/wDxxv8ACjmXcOaPcu0VS/tax/57
+/wDjjf4Uf2tY/wDPf/xxv8KOZdw5o9y7RVL+1rH/AJ7/APjjf4Uf2tY/89//ABxv8KOZdw5o9y7R
+VL+1rH/nv/443+FH9rWP/Pf/AMcb/CjmXcOaPcu0VS/tax/57/8Ajjf4Uf2tY/8APf8A8cb/AAo5
+l3Dmj3LtFUv7Wsf+e/8A443+FH9rWP8Az3/8cb/CjmXcOaPcu0VS/tax/wCe/wD443+FH9rWP/Pf
+/wAcb/CjmXcOaPcu0VS/tax/57/+ON/hR/a1j/z3/wDHG/wo5l3Dmj3LtFUv7Wsf+e//AI43+FH9
+rWP/AD3/APHG/wAKOZdw5o9y7RVL+1rH/nv/AOON/hR/a1j/AM9//HG/wo5l3Dmj3LtFUv7Wsf8A
+nv8A+ON/hR/a1j/z3/8AHG/wo5l3Dmj3LtFUv7Wsf+e//jjf4Uf2tY/89/8Axxv8KOZdw5o9y7RV
+L+1rH/nv/wCON/hR/a1j/wA9/wDxxv8ACjmXcOaPcu0VS/tax/57/wDjjf4Uf2tY/wDPf/xxv8KO
+Zdw5o9y7RVL+1rH/AJ7/APjjf4Uf2tY/89//ABxv8KOZdw5o9y7RVL+1rH/nv/443+FH9rWP/Pf/
+AMcb/CjmXcOaPcu0VS/tax/57/8Ajjf4UUcy7hzR7k32O1/59ov++BR9jtf+faL/AL4FT0UWQ7Ig
++x2v/PtF/wB8Cj7Ha/8APtF/3wKnoosgsiD7Ha/8+0X/AHwKPsdr/wA+0X/fAqeiiyCyIPsdr/z7
+Rf8AfAo+x2v/AD7Rf98Cp6KLILIg+x2v/PtF/wB8Cj7Ha/8APtF/3wKnoosgsiD7Ha/8+0X/AHwK
+Psdr/wA+0X/fAqeiiyCyIPsdr/z7Rf8AfAo+x2v/AD7Rf98Cp6KLILIg+x2v/PtF/wB8Cj7Ha/8A
+PtF/3wKnoosgsiD7Ha/8+0X/AHwKPsdr/wA+0X/fAqeiiyCyIPsdr/z7Rf8AfAo+x2v/AD7Rf98C
+p6KLILIg+x2v/PtF/wB8Cj7Ha/8APtF/3wKnoosgsiD7Ha/8+0X/AHwKPsdr/wA+0X/fAqeiiyCy
+IPsdr/z7Rf8AfAo+x2v/AD7Rf98Cp6KLILIg+x2v/PtF/wB8Cj7Ha/8APtF/3wKnoosgsiD7Ha/8
++0X/AHwKPsdr/wA+0X/fAqeiiyCyIPsdr/z7Rf8AfAo+x2v/AD7Rf98Cp6KLILIg+x2v/PtF/wB8
+Cj7Ha/8APtF/3wKnoosgsiD7Ha/8+0X/AHwKPsdr/wA+0X/fAqeiiyCyIPsdr/z7Rf8AfAo+x2v/
+AD7Rf98Cp6KLILIg+x2v/PtF/wB8Cj7Ha/8APtF/3wKnoosgsiD7Ha/8+0X/AHwKPsdr/wA+0X/f
+AqeiiyCyIPsdr/z7Rf8AfAo+x2v/AD7Rf98Cp6KLILIg+x2v/PtF/wB8Cj7Ha/8APtF/3wKnoosg
+siD7Ha/8+0X/AHwKPsdr/wA+0X/fAqeiiyCyIPsdr/z7Rf8AfAo+x2v/AD7Rf98Cp6KLILIg+x2v
+/PtF/wB8Cj7Ha/8APtF/3wKnoosgsiD7Ha/8+0X/AHwKPsdr/wA+0X/fAqeiiyCyIPsdr/z7Rf8A
+fAo+x2v/AD7Rf98Cp6KLILIg+x2v/PtF/wB8Cj7Ha/8APtF/3wKnoosgsiD7Ha/8+0X/AHwKPsdr
+/wA+0X/fAqeiiyCyIPsdr/z7Rf8AfAo+x2v/AD7Rf98Cp6KLILIg+x2v/PtF/wB8Cip6KLILIKKb
+5if3h+dHmJ/eH50xjqKb5if3h+dHmJ/eH50AOopvmJ/eH50eYn94fnQA6im+Yn94fnR5if3h+dAD
+qKb5if3h+dHmJ/eH50AOopvmJ/eH50eYn94fnQA6im+Yn94fnR5if3h+dADqKb5if3h+dHmJ/eH5
+0AOopvmJ/eH50eYn94fnQA6im+Yn94fnR5if3h+dADqKb5if3h+dHmJ/eH50AOopvmJ/eH50eYn9
+4fnQA6im+Yn94fnR5if3h+dADqKb5if3h+dHmJ/eH50AOopvmJ/eH50eYn94fnQA6im+Yn94fnR5
+if3h+dADqKb5if3h+dHmJ/eH50AOopvmJ/eH50eYn94fnQA6im+Yn94fnR5if3h+dADqKb5if3h+
+dHmJ/eH50AOopvmJ/eH50eYn94fnQA6im+Yn94fnR5if3h+dADqKb5if3h+dHmJ/eH50AOopvmJ/
+eH50eYn94fnQA6im+Yn94fnR5if3h+dADqKb5if3h+dHmJ/eH50AOopvmJ/eH50eYn94fnQA6im+
+Yn94fnR5if3h+dADqKb5if3h+dHmJ/eH50AOopvmJ/eH50eYn94fnQA6im+Yn94fnR5if3h+dADq
+Kb5if3h+dFAGb/Ydt/z0l/Mf4Uf2Hbf89JfzH+FaeR7/AJUZHv8AlU8kexHJHsZn9h23/PSX8x/h
+R/Ydt/z0l/Mf4Vp5Hv8AlRke/wCVHJHsHJHsZn9h23/PSX8x/hR/Ydt/z0l/Mf4Vp5Hv+VGR7/lR
+yR7ByR7GZ/Ydt/z0l/Mf4Uf2Hbf89JfzH+FaeR7/AJUZHv8AlRyR7ByR7GZ/Ydt/z0l/Mf4Uf2Hb
+f89JfzH+FaeR7/lRke/5Uckewckexmf2Hbf89JfzH+FH9h23/PSX8x/hWnke/wCVGR7/AJUckewc
+kexmf2Hbf89JfzH+FH9h23/PSX8x/hWnke/5UZHv+VHJHsHJHsZn9h23/PSX8x/hR/Ydt/z0l/Mf
+4Vp5Hv8AlRke/wCVHJHsHJHsZn9h23/PSX8x/hR/Ydt/z0l/Mf4Vp5Hv+VGR7/lRyR7ByR7GZ/Yd
+t/z0l/Mf4Uf2Hbf89JfzH+FaeR7/AJUZHv8AlRyR7ByR7GZ/Ydt/z0l/Mf4Uf2Hbf89JfzH+FaeR
+7/lRke/5Uckewckexmf2Hbf89JfzH+FH9h23/PSX8x/hWnke/wCVGR7/AJUckewckexmf2Hbf89J
+fzH+FH9h23/PSX8x/hWnke/5UZHv+VHJHsHJHsZn9h23/PSX8x/hR/Ydt/z0l/Mf4Vp5Hv8AlRke
+/wCVHJHsHJHsZn9h23/PSX8x/hR/Ydt/z0l/Mf4Vp5Hv+VGR7/lRyR7ByR7GZ/Ydt/z0l/Mf4Uf2
+Hbf89JfzH+FaeR7/AJUZHv8AlRyR7ByR7GZ/Ydt/z0l/Mf4Uf2Hbf89JfzH+FaeR7/lRke/5Ucke
+wckexmf2Hbf89JfzH+FH9h23/PSX8x/hWnke/wCVGR7/AJUckewckexmf2Hbf89JfzH+FH9h23/P
+SX8x/hWnke/5UZHv+VHJHsHJHsZn9h23/PSX8x/hR/Ydt/z0l/Mf4Vp5Hv8AlRke/wCVHJHsHJHs
+Zn9h23/PSX8x/hR/Ydt/z0l/Mf4Vp5Hv+VGR7/lRyR7ByR7GZ/Ydt/z0l/Mf4Uf2Hbf89JfzH+Fa
+eR7/AJUZHv8AlRyR7ByR7GZ/Ydt/z0l/Mf4Uf2Hbf89JfzH+FaeR7/lRke/5Uckewckexmf2Hbf8
+9JfzH+FH9h23/PSX8x/hWnke/wCVGR7/AJUckewckexmf2Hbf89JfzH+FH9h23/PSX8x/hWnke/5
+UZHv+VHJHsHJHsZn9h23/PSX8x/hR/Ydt/z0l/Mf4Vp5Hv8AlRke/wCVHJHsHJHsZn9h23/PSX8x
+/hR/Ydt/z0l/Mf4Vp5Hv+VGR7/lRyR7ByR7GZ/Ydt/z0l/Mf4Uf2Hbf89JfzH+FaeR7/AJUZHv8A
+lRyR7ByR7GZ/Ydt/z0l/Mf4Uf2Hbf89JfzH+FaeR7/lRke/5Uckewckexmf2Hbf89JfzH+FH9h23
+/PSX8x/hWnke/wCVGR7/AJUckewckexmf2Hbf89JfzH+FH9h23/PSX8x/hWnke/5UZHv+VHJHsHJ
+HsZn9h23/PSX8x/hRWnke/5UUckewckewtFFFUWFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
+BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
+FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//Z
+			</helperscreenshot>
+			<matchname>
+				Value
+			</matchname>
+			<matchvalue>
+				test
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="db8bd296-5410-49c6-86bb-79603cf621a8"
+		sx="2069"
+		sy="544"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="27feaa0c-6806-400d-8bd1-b7e8b4a32a7b"
+			sourcename="Recorder">
+				<path>
+					/dom[@domain='sbg-webservtst.rs-soft.com']//section[#'appModule']/section/div/div/div/div[2]/div[12]/?/?/?
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="test"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="20b36e6f-378f-4bcb-93fd-03ef0d39bc47">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Text">
+				</binding>
+			</bindings>
+			<info
+			id="27feaa0c-6806-400d-8bd1-b7e8b4a32a7b"
+			sourcename="Recorder">
+				<path>
+					/dom[@domain='sbg-webservtst.rs-soft.com']//section[#'appModule']/section/div/div/div/div[2]/div[12]/?/?/?
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="27477dec-e439-40f4-8275-aaf13ea34275">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Text">
+				</binding>
+			</bindings>
+			<info
+			id="27feaa0c-6806-400d-8bd1-b7e8b4a32a7b"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, textareatag"
+				dontcache="True"
+				enabled="True"
+				flavor="firefoxweb"
+				hasfocus="True"
+				index="0"
+				prefcap="textareatag"
+				rect="1951,505,1858,150"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						k-textbox ticket-textarea
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						textarea
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						test
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="cols"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="placeholder"
+					type="System.String">
+						Text
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="rows"
+					type="System.String">
+						2
+					</attribute>
+					<attribute
+					name="title"
+					type="System.String">
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-bind"
+					readonly="False"
+					type="System.String">
+						&#10;                                textInput: newTicketForm().fields().TICKET_TEXT().value,
+                                attr: {placeholder: newTicketForm().fields().TICKET_TEXT().placeholder}
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='sbg-webservtst.rs-soft.com']//section[#'appModule']/section/div/div/div/div[2]/div[12]/?/?/textarea[@title='']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="87c92a7a-376c-4e94-b691-c4a2b7b0ace0">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCADIAfQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigCl/a1j/wA9/wDxxv8ACj+1rH/nv/443+FTfY7X/n2i/wC+BR9jtf8An2i/74FT
+7xHvkP8Aa1j/AM9//HG/wo/tax/57/8Ajjf4VN9jtf8An2i/74FH2O1/59ov++BR7we+Q/2tY/8A
+Pf8A8cb/AAo/tax/57/+ON/hU32O1/59ov8AvgUfY7X/AJ9ov++BR7we+Q/2tY/89/8Axxv8KP7W
+sf8Anv8A+ON/hU32O1/59ov++BR9jtf+faL/AL4FHvB75D/a1j/z3/8AHG/wo/tax/57/wDjjf4V
+N9jtf+faL/vgUfY7X/n2i/74FHvB75D/AGtY/wDPf/xxv8KP7Wsf+e//AI43+FTfY7X/AJ9ov++B
+R9jtf+faL/vgUe8HvkP9rWP/AD3/APHG/wAKP7Wsf+e//jjf4VN9jtf+faL/AL4FH2O1/wCfaL/v
+gUe8HvkP9rWP/Pf/AMcb/Cj+1rH/AJ7/APjjf4VN9jtf+faL/vgUfY7X/n2i/wC+BR7we+Q/2tY/
+89//ABxv8KP7Wsf+e/8A443+FTfY7X/n2i/74FH2O1/59ov++BR7we+Q/wBrWP8Az3/8cb/Cj+1r
+H/nv/wCON/hU32O1/wCfaL/vgUfY7X/n2i/74FHvB75D/a1j/wA9/wDxxv8ACj+1rH/nv/443+FT
+fY7X/n2i/wC+BR9jtf8An2i/74FHvB75D/a1j/z3/wDHG/wo/tax/wCe/wD443+FTfY7X/n2i/74
+FH2O1/59ov8AvgUe8HvkP9rWP/Pf/wAcb/Cj+1rH/nv/AOON/hU32O1/59ov++BR9jtf+faL/vgU
+e8HvkP8Aa1j/AM9//HG/wo/tax/57/8Ajjf4VN9jtf8An2i/74FH2O1/59ov++BR7we+Q/2tY/8A
+Pf8A8cb/AAo/tax/57/+ON/hU32O1/59ov8AvgUfY7X/AJ9ov++BR7we+Q/2tY/89/8Axxv8KP7W
+sf8Anv8A+ON/hU32O1/59ov++BR9jtf+faL/AL4FHvB75D/a1j/z3/8AHG/wo/tax/57/wDjjf4V
+N9jtf+faL/vgUfY7X/n2i/74FHvB75D/AGtY/wDPf/xxv8KP7Wsf+e//AI43+FTfY7X/AJ9ov++B
+R9jtf+faL/vgUe8HvkP9rWP/AD3/APHG/wAKP7Wsf+e//jjf4VN9jtf+faL/AL4FH2O1/wCfaL/v
+gUe8HvkP9rWP/Pf/AMcb/Cj+1rH/AJ7/APjjf4VN9jtf+faL/vgUfY7X/n2i/wC+BR7we+Q/2tY/
+89//ABxv8KP7Wsf+e/8A443+FTfY7X/n2i/74FH2O1/59ov++BR7we+Q/wBrWP8Az3/8cb/Cj+1r
+H/nv/wCON/hU32O1/wCfaL/vgUfY7X/n2i/74FHvB75D/a1j/wA9/wDxxv8ACj+1rH/nv/443+FT
+fY7X/n2i/wC+BR9jtf8An2i/74FHvB75D/a1j/z3/wDHG/wo/tax/wCe/wD443+FTfY7X/n2i/74
+FH2O1/59ov8AvgUe8HvkP9rWP/Pf/wAcb/Cj+1rH/nv/AOON/hU32O1/59ov++BR9jtf+faL/vgU
+e8HvkP8Aa1j/AM9//HG/wo/tax/57/8Ajjf4VN9jtf8An2i/74FH2O1/59ov++BR7we+Q/2tY/8A
+Pf8A8cb/AAo/tax/57/+ON/hU32O1/59ov8AvgUfY7X/AJ9ov++BR7we+Q/2tY/89/8Axxv8KP7W
+sf8Anv8A+ON/hU32O1/59ov++BR9jtf+faL/AL4FHvB75D/a1j/z3/8AHG/wo/tax/57/wDjjf4V
+N9jtf+faL/vgUfY7X/n2i/74FHvB75D/AGtY/wDPf/xxv8KP7Wsf+e//AI43+FTfY7X/AJ9ov++B
+R9jtf+faL/vgUe8HvkP9rWP/AD3/APHG/wAKP7Wsf+e//jjf4VN9jtf+faL/AL4FH2O1/wCfaL/v
+gUe8HvkP9rWP/Pf/AMcb/Cipvsdr/wA+0X/fAoo94PfJ6KKKosKKKKACiiigAooooAKKKKACiiig
+AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
+KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
+AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
+KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
+AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
+KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
+AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
+KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
+AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKb5if3h+dHmJ/eH50AOopvmJ/eH50eYn9
+4fnQA6im+Yn94fnR5if3h+dADqKb5if3h+dHmJ/eH50AOopvmJ/eH50eYn94fnQA6im+Yn94fnR5
+if3h+dADqKb5if3h+dHmJ/eH50AOopvmJ/eH50eYn94fnQA6im+Yn94fnR5if3h+dADqKb5if3h+
+dHmJ/eH50AOopvmJ/eH50eYn94fnQA6im+Yn94fnR5if3h+dADqKb5if3h+dHmJ/eH50AOopvmJ/
+eH50eYn94fnQA6im+Yn94fnR5if3h+dADqKb5if3h+dHmJ/eH50AOopvmJ/eH50eYn94fnQA6im+
+Yn94fnR5if3h+dADqKb5if3h+dHmJ/eH50AOopvmJ/eH50eYn94fnQA6im+Yn94fnR5if3h+dADq
+Kb5if3h+dHmJ/eH50AOopvmJ/eH50eYn94fnQA6im+Yn94fnR5if3h+dADqKb5if3h+dHmJ/eH50
+AOopvmJ/eH50eYn94fnQA6im+Yn94fnR5if3h+dADqKb5if3h+dHmJ/eH50AOopvmJ/eH50eYn94
+fnQA6im+Yn94fnR5if3h+dADqKb5if3h+dHmJ/eH50AOopvmJ/eH50UAZv8AYdt/z0l/Mf4Uf2Hb
+f89JfzH+FalFTyR7Eckexl/2Hbf89JfzH+FH9h23/PSX8x/hWpRRyR7ByR7GX/Ydt/z0l/Mf4Uf2
+Hbf89JfzH+FalFHJHsHJHsZf9h23/PSX8x/hR/Ydt/z0l/Mf4VqUUckewckexl/2Hbf89JfzH+FH
+9h23/PSX8x/hWpRRyR7ByR7GX/Ydt/z0l/Mf4Uf2Hbf89JfzH+FalFHJHsHJHsZf9h23/PSX8x/h
+R/Ydt/z0l/Mf4VqUUckewckexl/2Hbf89JfzH+FH9h23/PSX8x/hWpRRyR7ByR7GX/Ydt/z0l/Mf
+4Uf2Hbf89JfzH+FalFHJHsHJHsZf9h23/PSX8x/hR/Ydt/z0l/Mf4VqUUckewckexl/2Hbf89Jfz
+H+FH9h23/PSX8x/hWpRRyR7ByR7GX/Ydt/z0l/Mf4Uf2Hbf89JfzH+FalFHJHsHJHsZf9h23/PSX
+8x/hR/Ydt/z0l/Mf4VqUUckewckexl/2Hbf89JfzH+FH9h23/PSX8x/hWpRRyR7ByR7GX/Ydt/z0
+l/Mf4Uf2Hbf89JfzH+FalFHJHsHJHsZf9h23/PSX8x/hR/Ydt/z0l/Mf4VqUUckewckexl/2Hbf8
+9JfzH+FH9h23/PSX8x/hWpRRyR7ByR7GX/Ydt/z0l/Mf4Uf2Hbf89JfzH+FalFHJHsHJHsZf9h23
+/PSX8x/hR/Ydt/z0l/Mf4VqUUckewckexl/2Hbf89JfzH+FH9h23/PSX8x/hWpRRyR7ByR7GX/Yd
+t/z0l/Mf4Uf2Hbf89JfzH+FalFHJHsHJHsZf9h23/PSX8x/hR/Ydt/z0l/Mf4VqUUckewckexl/2
+Hbf89JfzH+FH9h23/PSX8x/hWpRRyR7ByR7GX/Ydt/z0l/Mf4Uf2Hbf89JfzH+FalFHJHsHJHsZf
+9h23/PSX8x/hR/Ydt/z0l/Mf4VqUUckewckexl/2Hbf89JfzH+FH9h23/PSX8x/hWpRRyR7ByR7G
+X/Ydt/z0l/Mf4Uf2Hbf89JfzH+FalFHJHsHJHsZf9h23/PSX8x/hR/Ydt/z0l/Mf4VqUUckewcke
+xl/2Hbf89JfzH+FH9h23/PSX8x/hWpRRyR7ByR7GX/Ydt/z0l/Mf4Uf2Hbf89JfzH+FalFHJHsHJ
+HsZf9h23/PSX8x/hR/Ydt/z0l/Mf4VqUUckewckexl/2Hbf89JfzH+FFalFHJHsHJHsFFFFUWFFF
+FABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUU
+AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA
+UUUUAFFFFAH/2Q==
+			</helperscreenshot>
+			<matchname>
+				TagValue
+			</matchname>
+			<matchvalue>
+				test
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="f7deb4a7-2771-4c20-903d-bc17047e2b6a"
+	name="ServicecenterRepository"
+	relativepath="..\..\ServicecenterRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="ServicecenterRepository"
+		namespace="Servicecenter">
+		</codegen>
+		<rootfolder
+		id="e5a69c28-9dbf-43c2-b940-3a3d711f721c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Ticketanlage_2.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\..\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll
+		</reference>
+	</references>
+</recordtable>

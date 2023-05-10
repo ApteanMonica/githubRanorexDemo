@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="711e7160-bdb6-436d-bb99-4b391e3c4d49"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_ENDE_007_B_KLSALD_K.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="1ea6221c-b36e-4faf-ac64-a8595aaa967f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e8a4dc85-53fa-4e6f-a2b2-f20e031eee77"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmKLSL']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="565ead4b-b7e7-456d-9b79-297d2d024485"
+	name="B_ENDE_007_B_KLSALD_KRepository"
+	relativepath="..\B_ENDE_007_B_KLSALD_KRepository.rxrep">
+		<codegen
+		classname="B_ENDE_007_B_KLSALD_KRepository"
+		namespace="B_ENDE_007_B_KLSALD_K">
+		</codegen>
+		<rootfolder
+		id="8c4964d0-84aa-455d-bc2f-1dd5a73b7c68"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="18ae2321-333f-47fd-bede-364189c49d5c"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="E_BSKB">
+	</codegen>
+	<variables>
+		<var
+		id="4bc552fd-270d-4b74-9ea2-769007c6b346"
+		name="CloseAutProcessIDVar">
+			-1
+		</var>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="500ms"
+		method="CloseWindowByProcessID"
+		optional="False"
+		searchpropertyid="fe1c8a8a-37bf-4ac4-8b39-1a3dac0c46a9">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ProcessID"
+				variable="CloseAutProcessIDVar">
+				</binding>
+			</bindings>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="7acbffdc-cbd6-4819-bbae-b5d18f960f86"
+	name="E_BSKBRepository"
+	relativepath="E_BSKBRepository.rxrep">
+		<codegen
+		classname="E_BSKBRepository"
+		namespace="E_BSKB">
+		</codegen>
+		<rootfolder
+		id="bc849619-32ef-4223-8429-32114e693d1c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

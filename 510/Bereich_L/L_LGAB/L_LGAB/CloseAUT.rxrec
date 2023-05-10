@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d77c11f7-43a6-4946-9167-1b38c2b54722"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="L_LGAB">
+	</codegen>
+	<variables>
+		<var
+		id="ed0ff906-dc8d-44eb-b75a-39eae9e57d66"
+		name="CloseAutProcessIDVar">
+			-1
+		</var>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="500ms"
+		method="CloseWindowByProcessID"
+		optional="False"
+		searchpropertyid="c3c00267-75a2-4799-9519-1a696665505d">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ProcessID"
+				variable="CloseAutProcessIDVar">
+				</binding>
+			</bindings>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="d13e809e-352c-48e5-8d09-2c6dd10660d1"
+	name="L_LGABRepository"
+	relativepath="L_LGABRepository.rxrep">
+		<codegen
+		classname="L_LGABRepository"
+		namespace="L_LGAB">
+		</codegen>
+		<rootfolder
+		id="e5255d67-ab59-4a50-9462-41c15a14b0a8"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

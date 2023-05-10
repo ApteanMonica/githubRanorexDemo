@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d3a858aa-3361-4f75-ba21-6858684e3104"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartAUT"
+	namespace="S_ADRK_003">
+	</codegen>
+	<variables>
+		<var
+		id="eec22a07-6fc1-44d7-b70f-eef14bf880e4"
+		name="StartAutProcessIDVar">
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="StartAutProcessIDVar">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+	</recorditems>
+	<repository
+	id="7ed60436-15c2-4b73-aaea-c49366376a5c"
+	name="S_ADRK_003Repository"
+	relativepath="S_ADRK_003Repository.rxrep">
+		<codegen
+		classname="S_ADRK_003Repository"
+		namespace="S_ADRK_003">
+		</codegen>
+		<rootfolder
+		id="98b0f616-e959-4277-ac59-2b1d206e1090"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

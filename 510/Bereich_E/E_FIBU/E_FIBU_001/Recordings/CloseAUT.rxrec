@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e57a8c20-7319-4922-b3f5-c224c9ebdf1e"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="E_FIBU_001.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="891c472c-9724-4017-8017-397d72e2719d">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1afaea8c-d098-45b3-b059-0b279f9a15a8"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='tblFibu']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="14293143-3949-4dbb-bb40-1732c73885c2"
+	name="E_FIBU_001Repository"
+	relativepath="..\E_FIBU_001Repository.rxrep">
+		<codegen
+		classname="E_FIBU_001Repository"
+		namespace="E_FIBU_001">
+		</codegen>
+		<rootfolder
+		id="9a7c1e6d-7882-445b-b339-ef418a690e2b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll
+		</reference>
+	</references>
+</recordtable>

@@ -1,0 +1,783 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{7AF9AA19-6041-436B-925C-D8732E026075}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>B_ELSTER_003</RootNamespace>
+    <AssemblyName>B_ELSTER_003</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>02458302-a1d9-4f6d-8874-1c93037d1cb6</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper" />
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Delphi" />
+    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.WinForms.Core" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="Ranorex.Plugin.Wpf.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>348d4db2-fb08-40f9-bd4f-7454b0391760</id>
+    </Compile>
+    <Compile Include="B_ELSTER_003Repository.cs">
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+      <DependentUpon>B_ELSTER_003Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>93632577-f1d0-4dfd-ae9e-ecd0867fb0bf</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>6fded042-1bf6-4a22-8164-5c607120b5c4</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_UVA.cs">
+      <DependentUpon>CloseAUT_UVA.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b0eca510-e835-4d44-a009-e869cccc24e4</id>
+      <BoundTo>613b96dc-49c1-47f2-bc7c-324d59f2dd0f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_UVA.UserCode.cs">
+      <DependentUpon>CloseAUT_UVA.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1dab7506-1f75-466c-989f-a5d6d006cee9</id>
+      <BoundTo>613b96dc-49c1-47f2-bc7c-324d59f2dd0f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_ELSTER.cs">
+      <DependentUpon>CloseAUT_ELSTER.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>57a3774a-ea18-4690-8f62-5803baf01659</id>
+      <BoundTo>20a2a052-49d5-4844-8246-657f1f73d303</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_ELSTER.UserCode.cs">
+      <DependentUpon>CloseAUT_ELSTER.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d88107ae-e107-47e4-9840-251e448285e3</id>
+      <BoundTo>20a2a052-49d5-4844-8246-657f1f73d303</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Elster_aufrufen_DSGVO_bestaetigen.cs">
+      <BoundTo>6272e4e1-fb46-4373-9b8c-70a0ceaf1c70</BoundTo>
+      <DependentUpon>Elster_aufrufen_DSGVO_bestaetigen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0dc907e2-1f08-46e8-8def-a95c136e4a2c</id>
+    </Compile>
+    <Compile Include="Recordings\Elster_aufrufen_DSGVO_bestaetigen.UserCode.cs">
+      <BoundTo>6272e4e1-fb46-4373-9b8c-70a0ceaf1c70</BoundTo>
+      <DependentUpon>Elster_aufrufen_DSGVO_bestaetigen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>38db490a-b258-4be7-9226-dd0c15508a42</id>
+    </Compile>
+    <Compile Include="Recordings\Elster_Druckvorschau_aufrufen.cs">
+      <DependentUpon>Elster_Druckvorschau_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2745d19c-b579-4182-ac9f-0cb453416709</id>
+      <BoundTo>878c962d-ef8f-4bfc-bc65-0023c4f975ca</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Elster_Druckvorschau_aufrufen.UserCode.cs">
+      <DependentUpon>Elster_Druckvorschau_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ccabdec0-8755-49da-8e59-7c6a043a3674</id>
+      <BoundTo>878c962d-ef8f-4bfc-bc65-0023c4f975ca</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Elster_Plausipruefung_durchfuehren.cs">
+      <BoundTo>8de0ed7d-2c93-4f21-a0e1-d68c83669cf8</BoundTo>
+      <DependentUpon>Elster_Plausipruefung_durchfuehren.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6cc8d1c1-75b2-4f49-af22-6b4c3bce5da2</id>
+    </Compile>
+    <Compile Include="Recordings\Elster_Plausipruefung_durchfuehren.UserCode.cs">
+      <BoundTo>8de0ed7d-2c93-4f21-a0e1-d68c83669cf8</BoundTo>
+      <DependentUpon>Elster_Plausipruefung_durchfuehren.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>17965808-67d8-4ceb-8e81-cf5e641dfc30</id>
+    </Compile>
+    <Compile Include="Recordings\Elster_Schnittstelle_pruefen.cs">
+      <BoundTo>ca0b7b64-da45-4463-864c-4c521b1f0a69</BoundTo>
+      <DependentUpon>Elster_Schnittstelle_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9fa38a6c-c65c-4a9d-8478-49a71ddd1f75</id>
+    </Compile>
+    <Compile Include="Recordings\Elster_Schnittstelle_pruefen.UserCode.cs">
+      <BoundTo>ca0b7b64-da45-4463-864c-4c521b1f0a69</BoundTo>
+      <DependentUpon>Elster_Schnittstelle_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ef09831c-d39e-4bdf-b109-3f8901c0791e</id>
+    </Compile>
+    <Compile Include="Recordings\Elster_XML_Ausgabe_ausl_U_AnhangUN_ausfuellen.cs">
+      <DependentUpon>Elster_XML_Ausgabe_ausl_U_AnhangUN_ausfuellen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f8c66205-0740-4fca-bd8c-dab7986626bb</id>
+      <BoundTo>6e6ed641-d3e0-40ce-ace2-5f9503b240d2</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Elster_XML_Ausgabe_ausl_U_AnhangUN_ausfuellen.UserCode.cs">
+      <DependentUpon>Elster_XML_Ausgabe_ausl_U_AnhangUN_ausfuellen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>80113371-fc85-43b2-831d-9214f87073d6</id>
+      <BoundTo>6e6ed641-d3e0-40ce-ace2-5f9503b240d2</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Elster_XML_Ausgabe_ausl_U_Meldung_RS_bestaetigen.cs">
+      <DependentUpon>Elster_XML_Ausgabe_ausl_U_Meldung_RS_bestaetigen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>57be8c02-1d76-425f-8d2d-c4d07a794f18</id>
+      <BoundTo>7b1896bd-fd5d-4d41-be82-b2a6f9e9bfaa</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Elster_XML_Ausgabe_ausl_U_Meldung_RS_bestaetigen.UserCode.cs">
+      <DependentUpon>Elster_XML_Ausgabe_ausl_U_Meldung_RS_bestaetigen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1618b296-5fdb-4a0e-816a-5b50a1629cbc</id>
+      <BoundTo>7b1896bd-fd5d-4d41-be82-b2a6f9e9bfaa</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Elster_XML_Ausgabe_ausl_U_starten.cs">
+      <DependentUpon>Elster_XML_Ausgabe_ausl_U_starten.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5bf83381-148c-4d63-9098-27f895170274</id>
+      <BoundTo>8432f0e6-a051-48c4-9a48-6b3fb10d8f69</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Elster_XML_Ausgabe_ausl_U_starten.UserCode.cs">
+      <DependentUpon>Elster_XML_Ausgabe_ausl_U_starten.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>17c1bffb-7dc0-4a2a-b386-f0a5c239185f</id>
+      <BoundTo>8432f0e6-a051-48c4-9a48-6b3fb10d8f69</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Elster_XML_Ausgabe_starten_Meldung_RS_bestaetigen.cs">
+      <BoundTo>e2e6f0c9-6e65-4cb1-bc84-b16ca148c1d6</BoundTo>
+      <DependentUpon>Elster_XML_Ausgabe_starten_Meldung_RS_bestaetigen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>98914c93-324c-4794-ba5f-0832bb9d8905</id>
+    </Compile>
+    <Compile Include="Recordings\Elster_XML_Ausgabe_starten_Meldung_RS_bestaetigen.UserCode.cs">
+      <BoundTo>e2e6f0c9-6e65-4cb1-bc84-b16ca148c1d6</BoundTo>
+      <DependentUpon>Elster_XML_Ausgabe_starten_Meldung_RS_bestaetigen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>88f18600-443e-4ff0-ba6e-4b6227965b43</id>
+    </Compile>
+    <Compile Include="Recordings\Fenstersteuerung_AnlageUN.cs">
+      <DependentUpon>Fenstersteuerung_AnlageUN.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e071ef5b-42d0-4dac-a84a-09c000da402b</id>
+      <BoundTo>19318c24-35c3-44b8-b7b9-61e2ce3d01b9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Fenstersteuerung_AnlageUN.UserCode.cs">
+      <DependentUpon>Fenstersteuerung_AnlageUN.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3ee5a1cd-30a5-49ef-87ef-6b856cd79c29</id>
+      <BoundTo>19318c24-35c3-44b8-b7b9-61e2ce3d01b9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Formular_D20_auswaehlen.cs">
+      <BoundTo>09714376-5613-4214-8574-f42c307fa85e</BoundTo>
+      <DependentUpon>Formular_D20_auswaehlen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a78e93b8-6077-4c23-990b-b38e9bfe4495</id>
+    </Compile>
+    <Compile Include="Recordings\Formular_D20_auswaehlen.UserCode.cs">
+      <BoundTo>09714376-5613-4214-8574-f42c307fa85e</BoundTo>
+      <DependentUpon>Formular_D20_auswaehlen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5286a4cc-1ed7-4ca5-8d63-7a0d15175136</id>
+    </Compile>
+    <Compile Include="Recordings\Register_Jahreserklaerung_Eingaben.cs">
+      <BoundTo>16968ef8-8f77-4f1a-b3ff-a96a99c2c1c8</BoundTo>
+      <DependentUpon>Register_Jahreserklaerung_Eingaben.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d2687105-afd0-4012-b381-e0f022c4429d</id>
+    </Compile>
+    <Compile Include="Recordings\Register_Jahreserklaerung_Eingaben.UserCode.cs">
+      <BoundTo>16968ef8-8f77-4f1a-b3ff-a96a99c2c1c8</BoundTo>
+      <DependentUpon>Register_Jahreserklaerung_Eingaben.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6c99a973-f41f-4594-90b2-56549789b4e8</id>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4933bea2-3794-46c6-ab0a-3656ecd3ae4b</id>
+      <BoundTo>78f0bbec-8219-4a75-8489-a63d0c02c8a1</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1fb9396b-0729-49f0-b6cf-112f0ad48a6a</id>
+      <BoundTo>78f0bbec-8219-4a75-8489-a63d0c02c8a1</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tagesdatum_ermitteln_eric.cs">
+      <DependentUpon>Tagesdatum_ermitteln_eric.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2ad7699c-b8a4-43db-ba78-6424b3c6504a</id>
+      <BoundTo>e3874d8c-c630-4fde-94f2-53673364dbb0</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tagesdatum_ermitteln_eric.UserCode.cs">
+      <DependentUpon>Tagesdatum_ermitteln_eric.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ce212154-e52e-4b15-bcc8-2663cf4e4683</id>
+      <BoundTo>e3874d8c-c630-4fde-94f2-53673364dbb0</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tagesdatum_ermitteln_XML.cs">
+      <DependentUpon>Tagesdatum_ermitteln_XML.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b40061d4-3f2a-48f9-a1ea-b45fae81ca8d</id>
+      <BoundTo>e1fb4397-d2ff-4098-aff9-e3a52f78556d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tagesdatum_ermitteln_XML.UserCode.cs">
+      <DependentUpon>Tagesdatum_ermitteln_XML.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1b7d68ab-6826-4152-8739-012c4bd4c1dd</id>
+      <BoundTo>e1fb4397-d2ff-4098-aff9-e3a52f78556d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\UVA_Werte_Drucken_aufrufen.cs">
+      <BoundTo>fbacba45-dfcb-4712-bf63-23dcf9ebc53d</BoundTo>
+      <DependentUpon>UVA_Werte_Drucken_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>24289e32-3a11-4d43-8a9b-d8d3d8dd286a</id>
+    </Compile>
+    <Compile Include="Recordings\UVA_Werte_Drucken_aufrufen.UserCode.cs">
+      <BoundTo>fbacba45-dfcb-4712-bf63-23dcf9ebc53d</BoundTo>
+      <DependentUpon>UVA_Werte_Drucken_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ff27d395-bd37-4d24-b766-f6241e8e4288</id>
+    </Compile>
+    <Compile Include="recordings_notepad\Close_notepad_Eric.cs">
+      <DependentUpon>Close_notepad_Eric.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7a2e1b3e-48e4-44b5-a91f-c63abbca4203</id>
+      <BoundTo>91d0014c-fe98-4fd0-bf0a-3a2a0088d75c</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Close_notepad_Eric.UserCode.cs">
+      <DependentUpon>Close_notepad_Eric.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>daa56ebf-d187-4fea-89b5-00190110858e</id>
+      <BoundTo>91d0014c-fe98-4fd0-bf0a-3a2a0088d75c</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Close_notepad_XML.cs">
+      <DependentUpon>Close_notepad_XML.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6c363020-99e1-4bfb-8377-42714b5a1a88</id>
+      <BoundTo>bbd9bbd5-cd6d-40ef-9391-f59343f846f7</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Close_notepad_XML.UserCode.cs">
+      <DependentUpon>Close_notepad_XML.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5f6a8d30-ecd2-481e-94e7-7de1606adaa3</id>
+      <BoundTo>bbd9bbd5-cd6d-40ef-9391-f59343f846f7</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\loeschen_Eric_log.cs">
+      <DependentUpon>loeschen_Eric_log.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7fe294d8-cbdf-4d61-83e5-d4552a4e868d</id>
+      <BoundTo>c7802357-0f7d-4f00-adab-a830eea5578d</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\loeschen_Eric_log.UserCode.cs">
+      <DependentUpon>loeschen_Eric_log.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9dc58fc3-e64e-4929-a842-270fa86e4c89</id>
+      <BoundTo>c7802357-0f7d-4f00-adab-a830eea5578d</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\loeschen_XML_JUVA.cs">
+      <DependentUpon>loeschen_XML_JUVA.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>72ec6e2f-0d26-4294-9142-d1da7aa9aeba</id>
+      <BoundTo>2b1a7993-a073-439f-8ad7-cff5e50f5644</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\loeschen_XML_JUVA.UserCode.cs">
+      <DependentUpon>loeschen_XML_JUVA.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e1dd1601-3e16-4f31-b9e2-34e4036455c5</id>
+      <BoundTo>2b1a7993-a073-439f-8ad7-cff5e50f5644</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Oeffnen_notepad_Eric_log.cs">
+      <DependentUpon>Oeffnen_notepad_Eric_log.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>af04eaec-d513-4bfb-a664-dec18704e1eb</id>
+      <BoundTo>204269d3-f184-4861-bdb1-469b5ab15716</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Oeffnen_notepad_Eric_log.UserCode.cs">
+      <DependentUpon>Oeffnen_notepad_Eric_log.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8319923b-e34a-4a84-b9de-2a697fb6fb3c</id>
+      <BoundTo>204269d3-f184-4861-bdb1-469b5ab15716</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Oeffnen_notepad_XML_JUVA_Datei.cs">
+      <DependentUpon>Oeffnen_notepad_XML_JUVA_Datei.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f73e1e44-ead4-49ab-be35-dce2589ec0c4</id>
+      <BoundTo>1c62687a-4aa5-4b33-977e-45bda1601e47</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Oeffnen_notepad_XML_JUVA_Datei.UserCode.cs">
+      <DependentUpon>Oeffnen_notepad_XML_JUVA_Datei.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>428b2233-b7db-4d28-aa0c-5824d0777954</id>
+      <BoundTo>1c62687a-4aa5-4b33-977e-45bda1601e47</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Eric_log_vorhanden.cs">
+      <DependentUpon>Pruefung_Eric_log_vorhanden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>499b4ca9-5ed0-42f8-96f4-a54d414b95ce</id>
+      <BoundTo>19075422-593b-427f-a7f3-32116e9d4ae3</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Eric_log_vorhanden.UserCode.cs">
+      <DependentUpon>Pruefung_Eric_log_vorhanden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2861d9a9-d181-4280-99a2-6942c7eba7ab</id>
+      <BoundTo>19075422-593b-427f-a7f3-32116e9d4ae3</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f01b354a-b1e8-494e-9dbb-3c45b3b335b6</id>
+      <BoundTo>0e0cf254-f4b3-4003-aee7-ac7c47d671ba</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6659db3e-cceb-4937-a0dd-1273ab0f454c</id>
+      <BoundTo>0e0cf254-f4b3-4003-aee7-ac7c47d671ba</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_Header.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_Header.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e3c7e4f3-cc68-4b3c-a984-c498fd358f16</id>
+      <BoundTo>20a974f1-eb05-4cc1-9d4f-27e6e2b4d4c8</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_Header.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_Header.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a3afe633-6050-4334-a236-eb53877e268d</id>
+      <BoundTo>20a974f1-eb05-4cc1-9d4f-27e6e2b4d4c8</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_Inland_verbl_Ust_OHNE_Erstattung.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e0c1fe23-11ba-4570-9ce8-1c5525c6b559</id>
+      <BoundTo>e32f2536-bcd3-4e75-8bb2-3bd2e2c20355</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_Inland_verbl_Ust_OHNE_Erstattung.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6874edb4-ff2c-41bb-a8e4-5ef48ba66119</id>
+      <BoundTo>e32f2536-bcd3-4e75-8bb2-3bd2e2c20355</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_Zeitraum_Ende.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_Zeitraum_Ende.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>60cd2eb1-6e02-4fd2-b096-0c0e5496bf09</id>
+      <BoundTo>4cacdebe-8fd5-4a31-bcec-54f15f5600ee</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_Zeitraum_Ende.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_Zeitraum_Ende.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>77222b24-bbc1-4a70-9b73-cecd75292e66</id>
+      <BoundTo>4cacdebe-8fd5-4a31-bcec-54f15f5600ee</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_Umsaetze.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_Umsaetze.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2c432634-ebef-461e-9736-4007d9a2718c</id>
+      <BoundTo>fb3cea67-a81f-41f6-bfd2-e693f5d3afaa</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_Umsaetze.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_Umsaetze.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9e9f11d2-71c2-49e1-8b63-9bf0b9b3aa45</id>
+      <BoundTo>fb3cea67-a81f-41f6-bfd2-e693f5d3afaa</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_AUSLAEND_UNTERNEHMER_Best_Art_3.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_AUSLAEND_UNTERNEHMER_Best_Art_3.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5f63c81a-147f-42f5-9203-78753bda6251</id>
+      <BoundTo>f362f525-629b-4a87-9aa8-e50fb507abcf</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_AUSLAEND_UNTERNEHMER_Best_Art_3.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_AUSLAEND_UNTERNEHMER_Best_Art_3.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8cf9d9c4-c601-4227-93e9-f9e29a550647</id>
+      <BoundTo>f362f525-629b-4a87-9aa8-e50fb507abcf</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_INLAND_Best_Art_1.cs">
+      <BoundTo>cc04008e-e767-42a1-be14-061e5ad2ea74</BoundTo>
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_INLAND_Best_Art_1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>582fdfbb-e039-429c-9b55-165672b13603</id>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_INLAND_Best_Art_1.UserCode.cs">
+      <BoundTo>cc04008e-e767-42a1-be14-061e5ad2ea74</BoundTo>
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_INLAND_Best_Art_1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>85a3cd7f-e741-4c36-842e-82c78f3905b5</id>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>476fddef-72ab-4084-8e54-6eb6e3505410</id>
+      <BoundTo>b0e11402-b869-4d15-adb9-2fa52fa23865</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d6bc0a5b-11fc-43d3-bcda-2c54c1b6813b</id>
+      <BoundTo>b0e11402-b869-4d15-adb9-2fa52fa23865</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_Unternehmen.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_Unternehmen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a4fc770f-ffff-47a3-8d03-b4fc22210283</id>
+      <BoundTo>52502be6-8cbc-464f-b427-a7e422c243fa</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_Unternehmen.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_JUVA_Unternehmen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>51e6ae66-0c0e-4d6b-879e-57899a078c78</id>
+      <BoundTo>52502be6-8cbc-464f-b427-a7e422c243fa</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_Version_2021.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_Version_2021.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4deaffb5-8819-45e6-9163-536c59972b90</id>
+      <BoundTo>3288c4c7-b9e8-4345-ac84-c2df4f021777</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Pruefung_Inhalt_XML_Version_2021.UserCode.cs">
+      <DependentUpon>Pruefung_Inhalt_XML_Version_2021.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3cad6d08-9688-40b6-9e1c-f9bf927e47c1</id>
+      <BoundTo>3288c4c7-b9e8-4345-ac84-c2df4f021777</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Sichern_Eric_log_ausl_U_JUVA_2021.cs">
+      <DependentUpon>Sichern_Eric_log_ausl_U_JUVA_2021.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>da70a052-fecb-4de4-b8f7-dab52bd44d67</id>
+      <BoundTo>118560f9-bd18-4d40-bcb6-9caa5c3954c7</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Sichern_Eric_log_ausl_U_JUVA_2021.UserCode.cs">
+      <DependentUpon>Sichern_Eric_log_ausl_U_JUVA_2021.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>732f821b-6220-41c8-bc08-b8466f9eb771</id>
+      <BoundTo>118560f9-bd18-4d40-bcb6-9caa5c3954c7</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Sichern_Eric_log_JUVA_2021.cs">
+      <BoundTo>9079df93-9876-4d14-b671-ea4e9097a348</BoundTo>
+      <DependentUpon>Sichern_Eric_log_JUVA_2021.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cfa1bce8-2da2-468c-9514-9bc01a1a809c</id>
+    </Compile>
+    <Compile Include="recordings_notepad\Sichern_Eric_log_JUVA_2021.UserCode.cs">
+      <DependentUpon>Sichern_Eric_log_JUVA_2021.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ba80f8e7-27ee-48c9-9242-cfc5bda883ca</id>
+      <BoundTo>9079df93-9876-4d14-b671-ea4e9097a348</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Sichern_XML_JUVA_2021.cs">
+      <DependentUpon>Sichern_XML_JUVA_2021.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0bec2b10-b7b4-420f-a6de-15a3e68aab4f</id>
+      <BoundTo>3435ae5a-1863-48ab-8b4a-a9b6fff85b92</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Sichern_XML_JUVA_2021.UserCode.cs">
+      <DependentUpon>Sichern_XML_JUVA_2021.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>18727daa-80fa-4e7f-9017-768d028a422e</id>
+      <BoundTo>3435ae5a-1863-48ab-8b4a-a9b6fff85b92</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Sichern_XML_JUVA_ausl_U_2021.cs">
+      <DependentUpon>Sichern_XML_JUVA_ausl_U_2021.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>08eb8629-31fe-4e09-926b-794689064d2e</id>
+      <BoundTo>7b3aa52b-b5fc-4355-bacf-a0ebccea2ca6</BoundTo>
+    </Compile>
+    <Compile Include="recordings_notepad\Sichern_XML_JUVA_ausl_U_2021.UserCode.cs">
+      <DependentUpon>Sichern_XML_JUVA_ausl_U_2021.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>83981bd2-39e4-4e51-b60c-bba8a36bd923</id>
+      <BoundTo>7b3aa52b-b5fc-4355-bacf-a0ebccea2ca6</BoundTo>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>63a0b68d-956b-4457-b71d-4346d3c7715a</id>
+    </None>
+    <None Include="B_ELSTER_003Repository.rximg">
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+      <DependentUpon>B_ELSTER_003Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>822f6192-ac9f-46c7-ae6f-81fcd3ffdf0c</id>
+    </None>
+    <None Include="B_ELSTER_003Repository.rxrep">
+      <id>02458302-a1d9-4f6d-8874-1c93037d1cb6</id>
+      <repoid>af68bf37-379b-46df-9553-cc0d40a5a7e1</repoid>
+      <reporootid>18a9f03d-2e7d-4c1b-9d0c-acfe4de16144</reporootid>
+    </None>
+    <None Include="Recordings\CloseAUT_UVA.rxrec">
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+      <id>613b96dc-49c1-47f2-bc7c-324d59f2dd0f</id>
+      <recordtableid>e7c0fa70-4d11-4905-82c4-66c71f21b2a3</recordtableid>
+    </None>
+    <None Include="Recordings\CloseAUT_ELSTER.rxrec">
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+      <id>20a2a052-49d5-4844-8246-657f1f73d303</id>
+      <recordtableid>0d3e13ce-3091-4b97-a940-5cfe835928ed</recordtableid>
+    </None>
+    <None Include="Recordings\Elster_aufrufen_DSGVO_bestaetigen.rxrec">
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+      <id>6272e4e1-fb46-4373-9b8c-70a0ceaf1c70</id>
+      <recordtableid>4f16f018-f4ee-4e14-ad0b-d1ae7c61a1cf</recordtableid>
+    </None>
+    <None Include="Recordings\Elster_Druckvorschau_aufrufen.rxrec">
+      <id>878c962d-ef8f-4bfc-bc65-0023c4f975ca</id>
+      <recordtableid>c72bbd20-5b63-4754-9c6c-e6acddf82b82</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="Recordings\Elster_Plausipruefung_durchfuehren.rxrec">
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+      <id>8de0ed7d-2c93-4f21-a0e1-d68c83669cf8</id>
+      <recordtableid>05e7082d-3db5-46c2-893d-4968fdfb91b4</recordtableid>
+    </None>
+    <None Include="Recordings\Elster_Schnittstelle_pruefen.rxrec">
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+      <id>ca0b7b64-da45-4463-864c-4c521b1f0a69</id>
+      <recordtableid>4dcdd3e0-216d-429f-978d-48d269e86c13</recordtableid>
+    </None>
+    <None Include="Recordings\Elster_XML_Ausgabe_ausl_U_AnhangUN_ausfuellen.rxrec">
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+      <id>6e6ed641-d3e0-40ce-ace2-5f9503b240d2</id>
+      <recordtableid>0d9cf841-6c7b-4a09-a735-5f308997a063</recordtableid>
+    </None>
+    <None Include="Recordings\Elster_XML_Ausgabe_ausl_U_Meldung_RS_bestaetigen.rxrec">
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+      <id>7b1896bd-fd5d-4d41-be82-b2a6f9e9bfaa</id>
+      <recordtableid>1788b54b-8143-4765-b982-96bb60dc95a5</recordtableid>
+    </None>
+    <None Include="Recordings\Elster_XML_Ausgabe_ausl_U_starten.rxrec">
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+      <id>8432f0e6-a051-48c4-9a48-6b3fb10d8f69</id>
+      <recordtableid>f9a38e4f-c2ab-4c38-96c1-47d5432349e1</recordtableid>
+    </None>
+    <None Include="Recordings\Elster_XML_Ausgabe_starten_Meldung_RS_bestaetigen.rxrec">
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+      <id>e2e6f0c9-6e65-4cb1-bc84-b16ca148c1d6</id>
+      <recordtableid>4ba081cc-b20d-4b0d-a3e9-94794582515a</recordtableid>
+    </None>
+    <None Include="Recordings\Fenstersteuerung_AnlageUN.rxrec">
+      <id>19318c24-35c3-44b8-b7b9-61e2ce3d01b9</id>
+      <recordtableid>5c300b0b-8ede-4e0c-b410-aca6465424ec</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="Recordings\Formular_D20_auswaehlen.rxrec">
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+      <id>09714376-5613-4214-8574-f42c307fa85e</id>
+      <recordtableid>82e71d8a-d82a-4b47-82e6-f3ef6f72444a</recordtableid>
+    </None>
+    <None Include="Recordings\Register_Jahreserklaerung_Eingaben.rxrec">
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+      <id>16968ef8-8f77-4f1a-b3ff-a96a99c2c1c8</id>
+      <recordtableid>577f1c77-06c8-4ca2-bb73-91d42e6f78e2</recordtableid>
+    </None>
+    <None Include="Recordings\StartAUT.rxrec">
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+      <id>78f0bbec-8219-4a75-8489-a63d0c02c8a1</id>
+      <recordtableid>fbac5505-c90b-485b-932e-4881982a1b9d</recordtableid>
+    </None>
+    <None Include="Recordings\Tagesdatum_ermitteln_eric.rxrec">
+      <id>e3874d8c-c630-4fde-94f2-53673364dbb0</id>
+      <recordtableid>9421d58e-3918-427d-acab-d1e154048f9e</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="Recordings\Tagesdatum_ermitteln_XML.rxrec">
+      <id>e1fb4397-d2ff-4098-aff9-e3a52f78556d</id>
+      <recordtableid>869ff5ad-263d-4930-a951-447a5dac0930</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="Recordings\UVA_Werte_Drucken_aufrufen.rxrec">
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+      <id>fbacba45-dfcb-4712-bf63-23dcf9ebc53d</id>
+      <recordtableid>5473de78-b5e2-4e00-b4c6-cc75a9f09c3c</recordtableid>
+    </None>
+    <None Include="recordings_notepad\Close_notepad_Eric.rxrec">
+      <id>91d0014c-fe98-4fd0-bf0a-3a2a0088d75c</id>
+      <recordtableid>eeb97348-9467-4d37-aa96-847f965bddae</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Close_notepad_XML.rxrec">
+      <id>bbd9bbd5-cd6d-40ef-9391-f59343f846f7</id>
+      <recordtableid>2edda805-0b88-4f64-9579-92a00e269197</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="recordings_notepad\loeschen_Eric_log.rxrec">
+      <id>c7802357-0f7d-4f00-adab-a830eea5578d</id>
+      <recordtableid>3d0893a9-686f-423b-b920-34f443712bc1</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="recordings_notepad\loeschen_XML_JUVA.rxrec">
+      <id>2b1a7993-a073-439f-8ad7-cff5e50f5644</id>
+      <recordtableid>a314ecd6-ca9b-439b-bc1a-131607d6f973</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Oeffnen_notepad_Eric_log.rxrec">
+      <id>204269d3-f184-4861-bdb1-469b5ab15716</id>
+      <recordtableid>65a4ebb2-1608-4180-bdc7-84a1c0326630</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Oeffnen_notepad_XML_JUVA_Datei.rxrec">
+      <id>1c62687a-4aa5-4b33-977e-45bda1601e47</id>
+      <recordtableid>db5b2000-d89e-4d80-83aa-30a23359b675</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Pruefung_Eric_log_vorhanden.rxrec">
+      <id>19075422-593b-427f-a7f3-32116e9d4ae3</id>
+      <recordtableid>936b36f9-42d3-415e-8b68-56d6b9777088</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung.rxrec">
+      <id>0e0cf254-f4b3-4003-aee7-ac7c47d671ba</id>
+      <recordtableid>574e052e-303f-4c6c-99ff-5592735a4e1f</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_Header.rxrec">
+      <id>20a974f1-eb05-4cc1-9d4f-27e6e2b4d4c8</id>
+      <recordtableid>0ffcae09-f97a-4159-a651-02729fd03616</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung.rxrec">
+      <id>e32f2536-bcd3-4e75-8bb2-3bd2e2c20355</id>
+      <recordtableid>5ed2c96b-17cc-46e0-bd52-0daefed2e560</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Pruefung_Inhalt_XML_Zeitraum_Ende.rxrec">
+      <id>4cacdebe-8fd5-4a31-bcec-54f15f5600ee</id>
+      <recordtableid>ff713285-1c9d-4e54-a7f9-6177f79173c7</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_Umsaetze.rxrec">
+      <id>fb3cea67-a81f-41f6-bfd2-e693f5d3afaa</id>
+      <recordtableid>8e14b6d8-9d8d-4c02-a39e-c4f5c66024da</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_AUSLAEND_UNTERNEHMER_Best_Art_3.rxrec">
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+      <id>f362f525-629b-4a87-9aa8-e50fb507abcf</id>
+      <recordtableid>f1053b7b-0785-4f41-a1ea-a4a40b36c1a6</recordtableid>
+    </None>
+    <None Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_INLAND_Best_Art_1.rxrec">
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+      <id>cc04008e-e767-42a1-be14-061e5ad2ea74</id>
+      <recordtableid>fc6878a3-d980-4f05-b0d3-33b25478e1e1</recordtableid>
+    </None>
+    <None Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank.rxrec">
+      <id>b0e11402-b869-4d15-adb9-2fa52fa23865</id>
+      <recordtableid>b3ec030a-4761-4430-9c37-ff43da54a2ca</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Pruefung_Inhalt_XML_JUVA_Unternehmen.rxrec">
+      <id>52502be6-8cbc-464f-b427-a7e422c243fa</id>
+      <recordtableid>5c3637b2-5d4f-43de-99b7-f773dacc6943</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Pruefung_Inhalt_XML_Version_2021.rxrec">
+      <id>3288c4c7-b9e8-4345-ac84-c2df4f021777</id>
+      <recordtableid>a1aa7ec6-ae1d-49b3-b8c9-40e9df8b317c</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Sichern_Eric_log_ausl_U_JUVA_2021.rxrec">
+      <id>118560f9-bd18-4d40-bcb6-9caa5c3954c7</id>
+      <recordtableid>7d1dd0d7-a119-48c8-b4ed-4bf829be7b14</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Sichern_Eric_log_JUVA_2021.rxrec">
+      <id>9079df93-9876-4d14-b671-ea4e9097a348</id>
+      <recordtableid>bb8f25c9-ad84-4616-b3c0-893437791800</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Sichern_XML_JUVA_2021.rxrec">
+      <id>3435ae5a-1863-48ab-8b4a-a9b6fff85b92</id>
+      <recordtableid>a48d6e90-f6a6-4c62-8d29-9cc44c79c319</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+    <None Include="recordings_notepad\Sichern_XML_JUVA_ausl_U_2021.rxrec">
+      <id>7b3aa52b-b5fc-4355-bacf-a0ebccea2ca6</id>
+      <recordtableid>1d64c200-e5f8-4704-99ca-33f35fceabcb</recordtableid>
+      <BoundTo>02458302-a1d9-4f6d-8874-1c93037d1cb6</BoundTo>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="B_ELSTER_003.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>c655e4d6-2af2-4c24-b6b1-0615c5652290</id>
+    </Content>
+    <Content Include="B_ELSTER_003.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>c36c5e99-04e6-4487-ab9f-2dd05463f8a0</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="recordings_notepad">
+      <id>750d00f5-fae4-476c-80e0-a168164992b1</id>
+    </Folder>
+    <Folder Include="Recordings">
+      <id>398dbdde-863f-46db-bec7-8a468a2892a9</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{E57A51D3-7964-4433-9094-08C3D291179A}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>
