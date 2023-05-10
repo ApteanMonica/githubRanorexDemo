@@ -17,7 +17,7 @@ $solutions | ForEach-Object -Process {
     Write-Output $_.FullName
     Set-Location -Path $_.Directory.FullName
 	# ...and compile them
-    &'C:\Program Files (x86)\MSBuild\14.0\Bin\msbuild' /p:configuration=Debug $_.Name
+    &'C:\Program Files (x86)\MSBuild\14.0\Bin\msbuild' /fileloggerparameters:LogFile=$current+"\Log\"+$_.Name+".log" /p:configuration=Debug $_.Name
 }
 
 # restore start-directory
