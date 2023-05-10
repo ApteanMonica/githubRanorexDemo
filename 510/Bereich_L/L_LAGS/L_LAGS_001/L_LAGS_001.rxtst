@@ -90,16 +90,21 @@
 			VideoFps="15"
 			VideoRecordingMode="Off"
 			VideoSource="Auto"
+			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
 			id="a674c739-bfa8-47c5-bb77-9d99756d4085"
+			includeimageschecked="False"
+			includerecordingschecked="False"
 			junitreport="False"
 			name="L_LAGS_001"
+			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
 			id="cd0029f5-7a36-4543-a27d-0f5d67870bbf"
@@ -120,14 +125,6 @@
 					variablename="Programm">
 					</var>
 				</databinding>
-				<missingdatavariablesbinding>
-					<var
-					dataname="AppProcessID"
-					datasourceid="e77d62f8-b7f5-4db1-8d2b-bccdde6eb61a"
-					variableid="ab8f2b33-8dac-4dbf-8d25-a707d4f44b15"
-					variablename="StartAutProcessIDVar">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
 			<testcase
 			id="e77d62f8-b7f5-4db1-8d2b-bccdde6eb61a"

@@ -41,8 +41,8 @@ namespace L_LAGS_001.Recordings
         /// </summary>
         public StartAUT()
         {
-            Programm = "";
-            Startfile = "";
+            Programm = "L_LAGS";
+            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
         }
 
         /// <summary>
