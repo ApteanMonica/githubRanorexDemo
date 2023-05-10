@@ -9,7 +9,7 @@
     <RootNamespace>V_AUFI_001</RootNamespace>
     <AssemblyName>V_AUFI_001</AssemblyName>
     <NoWarn>1591</NoWarn>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
     <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>257e8901-7cb7-4dae-a8fd-5d35ca5a19e8</projectdefaultrepository>
