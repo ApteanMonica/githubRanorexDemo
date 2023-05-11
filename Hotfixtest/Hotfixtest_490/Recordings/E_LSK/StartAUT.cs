@@ -41,8 +41,8 @@ namespace Hotfixtest_490.Recordings.E_LSK
         /// </summary>
         public StartAUT()
         {
-            Startfile = "";
-            E_LSK = "";
+            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
+            E_LSK = "E_LSK";
         }
 
         /// <summary>
