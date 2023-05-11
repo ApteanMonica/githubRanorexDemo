@@ -36,9 +36,7 @@ namespace Y_MENU_001
         Y_MENU_001RepositoryFolders.ERPSystemRessourcenplanungMozillaFAppFolder _erpsystemressourcenplanungmozillaf;
         Y_MENU_001RepositoryFolders.MENUAppFolder _menu;
         Y_MENU_001RepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
-        Y_MENU_001RepositoryFolders.LoginAppFolder _login;
         Y_MENU_001RepositoryFolders.Form100RSREFDBRs2VersionAppFolder _form100rsrefdbrs2version;
-        Y_MENU_001RepositoryFolders.WSVRINEUAppFolder _wsvrineu;
         Y_MENU_001RepositoryFolders.KundenbereichMozillaFirefox1AppFolder _kundenbereichmozillafirefox1;
 
         /// <summary>
@@ -65,9 +63,7 @@ namespace Y_MENU_001
             _erpsystemressourcenplanungmozillaf = new Y_MENU_001RepositoryFolders.ERPSystemRessourcenplanungMozillaFAppFolder(this);
             _menu = new Y_MENU_001RepositoryFolders.MENUAppFolder(this);
             _dlgmessagebox = new Y_MENU_001RepositoryFolders.DlgMessageBoxAppFolder(this);
-            _login = new Y_MENU_001RepositoryFolders.LoginAppFolder(this);
             _form100rsrefdbrs2version = new Y_MENU_001RepositoryFolders.Form100RSREFDBRs2VersionAppFolder(this);
-            _wsvrineu = new Y_MENU_001RepositoryFolders.WSVRINEUAppFolder(this);
             _kundenbereichmozillafirefox1 = new Y_MENU_001RepositoryFolders.KundenbereichMozillaFirefox1AppFolder(this);
         }
 
@@ -169,30 +165,12 @@ namespace Y_MENU_001
         }
 
         /// <summary>
-        /// The Login folder.
-        /// </summary>
-        [RepositoryFolder("1054ac04-dca1-493d-8904-206dc20f5bde")]
-        public virtual Y_MENU_001RepositoryFolders.LoginAppFolder Login
-        {
-            get { return _login; }
-        }
-
-        /// <summary>
         /// The Form100RSREFDBRs2Version folder.
         /// </summary>
         [RepositoryFolder("c92499d2-ccdf-481d-8d97-36d770b89576")]
         public virtual Y_MENU_001RepositoryFolders.Form100RSREFDBRs2VersionAppFolder Form100RSREFDBRs2Version
         {
             get { return _form100rsrefdbrs2version; }
-        }
-
-        /// <summary>
-        /// The WSVRINEU folder.
-        /// </summary>
-        [RepositoryFolder("4d9fa99a-cc71-40a5-9dad-288552bd725a")]
-        public virtual Y_MENU_001RepositoryFolders.WSVRINEUAppFolder WSVRINEU
-        {
-            get { return _wsvrineu; }
         }
 
         /// <summary>
@@ -597,12 +575,8 @@ namespace Y_MENU_001
             RepoItemInfo _titlelabel1Info;
             RepoItemInfo _simplelistsearchhititemInfo;
             RepoItemInfo _textInfo;
-            RepoItemInfo _task2Info;
             RepoItemInfo _logistikverkaufInfo;
             RepoItemInfo _alltasksInfo;
-            RepoItemInfo _task3Info;
-            RepoItemInfo _linkr1Info;
-            RepoItemInfo _linkr2Info;
             RepoItemInfo _buttonInfo;
             RepoItemInfo _logistikInfo;
             RepoItemInfo _einkaufInfo;
@@ -616,7 +590,6 @@ namespace Y_MENU_001
             RepoItemInfo _task6Info;
             RepoItemInfo _statictextInfo;
             RepoItemInfo _task7Info;
-            RepoItemInfo _taskInfo;
 
             /// <summary>
             /// Creates a new DockContainerWorkplace  folder.
@@ -627,12 +600,8 @@ namespace Y_MENU_001
                 _titlelabel1Info = new RepoItemInfo(this, "TitleLabel1", ".//container[@caption='Home']/container[@controlname='ModulContainer']//container[@controlname='ModulWindowContainer']//form[@controlname='HomeForm']/container[@controlname='ClientArea']/?/?/container[@controlname='panel1']/?/?/container[@controlname='panel1']/container[@controlname='searchHits']/container[@controlname='splitContainer1']/container[@controlname='panel2']/container[@controlname='splitContainer2']/container[@controlname='panel1']/?/?/container[@caption='' and @controltypename='SimpleListSearchHitItem' and @instance='6']/text[@controlname='titleLabel']", "", 30000, null, "ab3ba08b-13fd-4551-b9f9-e103fd02e86a");
                 _simplelistsearchhititemInfo = new RepoItemInfo(this, "SimpleListSearchHitItem", ".//container[@controlname='ModulContainer' and @caption='Home']//container[@controlname='ModulWindowContainer']//form[@controlname='HomeForm']/container[@controlname='ClientArea']/?/?/container[@controlname='panel1']/container[@controlname='scFav']/container[@controlname='panel1']/container[@controlname='searchHits']/container[@controlname='splitContainer1']/container[@controlname='panel2']/container[@controlname='splitContainer2']/container[@controlname='panel1']/?/?/container[@caption='' and @controltypename='SimpleListSearchHitItem' and @instance='5']", "", 30000, null, "8d737a6c-6746-4438-a469-b0457e21c89c");
                 _textInfo = new RepoItemInfo(this, "Text", ".//container[@controlname='ModulContainer' and @caption='Home']//container[@controlname='ModulWindowContainer']/container[@controlname='HostPanel']/?/?/container[@controlname='<ClientArea>k__BackingField']/?/?/form[@controlname='HomeForm']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup']/container[@controlname='SearchPanel']/text[@controlname='dfSearch']/text[@accessiblerole='Text']", "", 30000, null, "5d0ad63d-341f-4ef6-83ef-46e6b909decb");
-                _task2Info = new RepoItemInfo(this, "Task2", ".//container[@controlname='ToolWindowTaskList']/container[@controlname='panelTasks']//container[@controlname='E_INFO_4']/button[@controlname='task']", "", 30000, null, "7b7ddc6a-add3-4391-8210-2558cc490f88");
                 _logistikverkaufInfo = new RepoItemInfo(this, "LogistikVerkauf", "?/?/container[@controlname='#Khe']//container[@controlname='ModulContainer' and @caption='Home']//container[@controlname='ModulWindowContainer']//form[@controlname='HomeForm']/container[@controlname='ClientArea']/?/?/container[@controlname='panel1']/?/?/container[@controlname='panel1']/container[@controlname='searchHits']/container[@controlname='splitContainer1']/container[@controlname='panel2']/container[@controlname='splitContainer2']/container[@controlname='panel1']/?/?/link[@text='Logistik / Verkauf']/text[@accessiblename='Logistik / Verkauf']", "", 30000, null, "95cd8731-ed0d-45c1-bf23-fc248cde931b");
                 _alltasksInfo = new RepoItemInfo(this, "AllTasks", ".//container[@controlname='ToolWindowTaskList']/?/?/container[@controlname='allTasks']", "", 30000, null, "be6c5160-285e-4bbd-8151-8fb608109045");
-                _task3Info = new RepoItemInfo(this, "Task3", ".//container[@controlname='ToolWindowTaskList']/container[@controlname='panelTasks']//container[@controlname='C_CRM_5']/button[@controlname='task']", "", 30000, null, "6f6fcaf4-6f25-43ea-a86c-c980f199d3fc");
-                _linkr1Info = new RepoItemInfo(this, "LinkR1", ".//container[@controlname='ToolWindowTaskList']/container[@controlname='panelTasks']//container[@controlname='C_CRM_5']/button[@controlname='task']//link[@accessiblename='r']", "", 30000, null, "315a2b4e-339c-4aa4-9c05-322fd5f6324a");
-                _linkr2Info = new RepoItemInfo(this, "LinkR2", ".//container[@controlname='ToolWindowTaskList']/container[@controlname='panelTasks']//container[@controlname='E_INFO_4']/button[@controlname='task']//link[@accessiblename='r']", "", 30000, null, "bb957b6c-fdf2-4108-8da9-b3c8fdbc4047");
                 _buttonInfo = new RepoItemInfo(this, "Button", ".//container[@controlname='ModulContainer' and @caption='Home']/?/?/container[@controlname='#Khe']//container[@controlname='ModulWindowContainer']//container[@controlname='<ClientArea>k__BackingField']/?/?/form[@controlname='HomeForm']/container[@controlname='ClientArea']/?/?/container[@controlname='panel1']/?/?/container[@controlname='panel1']/container[@controlname='panelBreadCrumbs']/container[@caption='']/button[@controlname='button']", "", 30000, null, "268a2369-726e-4b88-b1a8-0eae4711071c");
                 _logistikInfo = new RepoItemInfo(this, "Logistik", ".//container[@controlname='ModulContainer' and @caption='Home']//container[@controlname='ModulWindowContainer']//container[@controlname='<ClientArea>k__BackingField']/?/?/form[@controlname='HomeForm']/container[@controlname='ClientArea']/container[@controlname='scLastUsed']/container[@controlname='panel1']/container[@controlname='scFav']/container[@controlname='panel1']/container[@controlname='panelMenu']/button[@text='Logistik']", "", 30000, null, "373e5598-6b0b-4e05-b3bc-92c8aa02b26d");
                 _einkaufInfo = new RepoItemInfo(this, "Einkauf", ".//container[@controlname='ModulContainer' and @caption='Home']//container[@controlname='ModulWindowContainer']//container[@controlname='<ClientArea>k__BackingField']/?/?/form[@controlname='HomeForm']/container[@controlname='ClientArea']/container[@controlname='scLastUsed']/container[@controlname='panel1']/container[@controlname='scFav']/container[@controlname='panel1']/container[@controlname='panelMenu']/button[@text='Einkauf']", "", 30000, null, "b742dc6d-2138-4541-b832-605fc042a45a");
@@ -646,7 +615,6 @@ namespace Y_MENU_001
                 _task6Info = new RepoItemInfo(this, "Task6", ".//container[@controlname='ToolWindowTaskList']/container[@controlname='panelTasks']//container[@controlname='S_ART_2']/button[@controlname='task']", "", 30000, null, "6e2f57cd-8bc6-4ef8-bfd0-deb693073b79");
                 _statictextInfo = new RepoItemInfo(this, "StaticText", ".//container[@controlname='ToolWindowTaskList']/container[@controlname='panelTasks']//container[@controlname='Home']/button[@controlname='task']/?/?/text[@accessiblerole='StaticText']", "", 30000, null, "a48d489d-6bf4-4397-b046-dcd57f799870");
                 _task7Info = new RepoItemInfo(this, "Task7", "?/?/container[@controlname='ToolWindowTaskList']//container[@controlname='rssoft.fwg.businesscockpit_3']/button[@controltext~'rs2 News']", "", 30000, null, "adeecafb-dcfd-49ad-8f23-b4e01b215ff5");
-                _taskInfo = new RepoItemInfo(this, "Task", "?/?/container[@controlname='ToolWindowTaskList']//container[@controlname='S_ART_3']/button[@controlname='task']", "", 30000, null, "b2ac2e11-7d91-46e2-ac62-3b803e68af48");
             }
 
             /// <summary>
@@ -746,30 +714,6 @@ namespace Y_MENU_001
             }
 
             /// <summary>
-            /// The Task2 item.
-            /// </summary>
-            [RepositoryItem("7b7ddc6a-add3-4391-8210-2558cc490f88")]
-            public virtual Ranorex.Button Task2
-            {
-                get
-                {
-                    return _task2Info.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Task2 item info.
-            /// </summary>
-            [RepositoryItemInfo("7b7ddc6a-add3-4391-8210-2558cc490f88")]
-            public virtual RepoItemInfo Task2Info
-            {
-                get
-                {
-                    return _task2Info;
-                }
-            }
-
-            /// <summary>
             /// The LogistikVerkauf item.
             /// </summary>
             [RepositoryItem("95cd8731-ed0d-45c1-bf23-fc248cde931b")]
@@ -814,78 +758,6 @@ namespace Y_MENU_001
                 get
                 {
                     return _alltasksInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Task3 item.
-            /// </summary>
-            [RepositoryItem("6f6fcaf4-6f25-43ea-a86c-c980f199d3fc")]
-            public virtual Ranorex.Button Task3
-            {
-                get
-                {
-                    return _task3Info.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Task3 item info.
-            /// </summary>
-            [RepositoryItemInfo("6f6fcaf4-6f25-43ea-a86c-c980f199d3fc")]
-            public virtual RepoItemInfo Task3Info
-            {
-                get
-                {
-                    return _task3Info;
-                }
-            }
-
-            /// <summary>
-            /// The LinkR1 item.
-            /// </summary>
-            [RepositoryItem("315a2b4e-339c-4aa4-9c05-322fd5f6324a")]
-            public virtual Ranorex.Link LinkR1
-            {
-                get
-                {
-                    return _linkr1Info.CreateAdapter<Ranorex.Link>(true);
-                }
-            }
-
-            /// <summary>
-            /// The LinkR1 item info.
-            /// </summary>
-            [RepositoryItemInfo("315a2b4e-339c-4aa4-9c05-322fd5f6324a")]
-            public virtual RepoItemInfo LinkR1Info
-            {
-                get
-                {
-                    return _linkr1Info;
-                }
-            }
-
-            /// <summary>
-            /// The LinkR2 item.
-            /// </summary>
-            [RepositoryItem("bb957b6c-fdf2-4108-8da9-b3c8fdbc4047")]
-            public virtual Ranorex.Link LinkR2
-            {
-                get
-                {
-                    return _linkr2Info.CreateAdapter<Ranorex.Link>(true);
-                }
-            }
-
-            /// <summary>
-            /// The LinkR2 item info.
-            /// </summary>
-            [RepositoryItemInfo("bb957b6c-fdf2-4108-8da9-b3c8fdbc4047")]
-            public virtual RepoItemInfo LinkR2Info
-            {
-                get
-                {
-                    return _linkr2Info;
                 }
             }
 
@@ -1200,30 +1072,6 @@ namespace Y_MENU_001
                     return _task7Info;
                 }
             }
-
-            /// <summary>
-            /// The Task item.
-            /// </summary>
-            [RepositoryItem("b2ac2e11-7d91-46e2-ac62-3b803e68af48")]
-            public virtual Ranorex.Button Task
-            {
-                get
-                {
-                    return _taskInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Task item info.
-            /// </summary>
-            [RepositoryItemInfo("b2ac2e11-7d91-46e2-ac62-3b803e68af48")]
-            public virtual RepoItemInfo TaskInfo
-            {
-                get
-                {
-                    return _taskInfo;
-                }
-            }
         }
 
         /// <summary>
@@ -1324,7 +1172,6 @@ namespace Y_MENU_001
         [RepositoryFolder("c9443d62-428a-4085-84c9-0f090915c262")]
         public partial class KundenbereichMozillaFirefoxAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _mitgooglesuchenoderadresseeingebenInfo;
             RepoItemInfo _schliessenInfo;
 
             /// <summary>
@@ -1333,7 +1180,6 @@ namespace Y_MENU_001
             public KundenbereichMozillaFirefoxAppFolder(RepoGenBaseFolder parentFolder) :
                     base("KundenbereichMozillaFirefox", "/form[@title>'Kundenbereich - Mozilla F']", parentFolder, 30000, null, true, "c9443d62-428a-4085-84c9-0f090915c262", "")
             {
-                _mitgooglesuchenoderadresseeingebenInfo = new RepoItemInfo(this, "MitGoogleSuchenOderAdresseEingeben", "toolbar[@accessiblename='Navigation']/?/?/text[@accessiblename>'Mit Google suchen oder Adresse']", "", 30000, null, "dc209e96-0b92-41a7-b3d5-761ac414360b");
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "toolbar[@accessiblename='Menüleiste']/button[@accessiblename='Schließen']", "", 30000, null, "1595dc90-6e5e-4599-9b3c-3c761887946e");
             }
 
@@ -1358,30 +1204,6 @@ namespace Y_MENU_001
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The MitGoogleSuchenOderAdresseEingeben item.
-            /// </summary>
-            [RepositoryItem("dc209e96-0b92-41a7-b3d5-761ac414360b")]
-            public virtual Ranorex.Text MitGoogleSuchenOderAdresseEingeben
-            {
-                get
-                {
-                    return _mitgooglesuchenoderadresseeingebenInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The MitGoogleSuchenOderAdresseEingeben item info.
-            /// </summary>
-            [RepositoryItemInfo("dc209e96-0b92-41a7-b3d5-761ac414360b")]
-            public virtual RepoItemInfo MitGoogleSuchenOderAdresseEingebenInfo
-            {
-                get
-                {
-                    return _mitgooglesuchenoderadresseeingebenInfo;
                 }
             }
 
@@ -1897,78 +1719,11 @@ namespace Y_MENU_001
         }
 
         /// <summary>
-        /// The LoginAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("1054ac04-dca1-493d-8904-206dc20f5bde")]
-        public partial class LoginAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _overlayInfo;
-
-            /// <summary>
-            /// Creates a new Login  folder.
-            /// </summary>
-            public LoginAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Login", "/dom[@domain='servicecenter.rs-soft.com']", parentFolder, 30000, null, false, "1054ac04-dca1-493d-8904-206dc20f5bde", "")
-            {
-                _overlayInfo = new RepoItemInfo(this, "Overlay", ".//section[#'appModule']/div/div", "", 30000, null, "82eefcfd-0361-4499-ba73-9a60f3a4746f");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("1054ac04-dca1-493d-8904-206dc20f5bde")]
-            public virtual Ranorex.WebDocument Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("1054ac04-dca1-493d-8904-206dc20f5bde")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Overlay item.
-            /// </summary>
-            [RepositoryItem("82eefcfd-0361-4499-ba73-9a60f3a4746f")]
-            public virtual Ranorex.DivTag Overlay
-            {
-                get
-                {
-                    return _overlayInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Overlay item info.
-            /// </summary>
-            [RepositoryItemInfo("82eefcfd-0361-4499-ba73-9a60f3a4746f")]
-            public virtual RepoItemInfo OverlayInfo
-            {
-                get
-                {
-                    return _overlayInfo;
-                }
-            }
-        }
-
-        /// <summary>
         /// The Form100RSREFDBRs2VersionAppFolder folder.
         /// </summary>
         [RepositoryFolder("c92499d2-ccdf-481d-8d97-36d770b89576")]
         public partial class Form100RSREFDBRs2VersionAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _someelementInfo;
             RepoItemInfo _auftrags_infoInfo;
             RepoItemInfo _startseiteInfo;
             RepoItemInfo _einkaufsinfoInfo;
@@ -1980,7 +1735,6 @@ namespace Y_MENU_001
             public Form100RSREFDBRs2VersionAppFolder(RepoGenBaseFolder parentFolder) :
                     base("Form100RSREFDBRs2Version", "/form[@title>'[100] - RS REFDB    -    rs2']", parentFolder, 30000, null, true, "c92499d2-ccdf-481d-8d97-36d770b89576", "")
             {
-                _someelementInfo = new RepoItemInfo(this, "SomeElement", "element[@instance='0']/element[@instance='4']/element/element[@instance='0']/element[@instance='0']/element/element[@instance='0']//form[@title='Home']/element[@instance='1']/element/element[@instance='0']/element/element[@instance='0']/element[@instance='1']/element[@instance='0']/element[@instance='0']/element[@instance='0']/element[@instance='0']/element/element[2]", "", 30000, null, "e3b39e2c-3f95-4438-b42c-7b5a168c1a04");
                 _auftrags_infoInfo = new RepoItemInfo(this, "Auftrags_Info", "container[@controlname='dockContainerWorkplace']/?/?/container[@controlname='ToolWindowTaskList']//?/button[@text~'Auftrags-Info']", "", 30000, null, "1c7af9d0-3b1f-44f8-b012-23f43a73ca62");
                 _startseiteInfo = new RepoItemInfo(this, "Startseite", "container[@controlname='dockContainerWorkplace']/?/?/container[@controlname='ToolWindowTaskList']//container[@controlname='Home']/button[@controlname='task']", "", 30000, null, "87680ea7-a6b7-4a3d-afe2-5b25beb0dea9");
                 _einkaufsinfoInfo = new RepoItemInfo(this, "Einkaufsinfo", "container[@controlname='dockContainerWorkplace']/?/?/container[@controlname='ToolWindowTaskList']//?/button[@text~'Einkaufsinfo']", "", 30000, null, "5c4e4f60-b051-48ef-a4f5-59b362fcfd23");
@@ -2008,30 +1762,6 @@ namespace Y_MENU_001
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SomeElement item.
-            /// </summary>
-            [RepositoryItem("e3b39e2c-3f95-4438-b42c-7b5a168c1a04")]
-            public virtual Ranorex.Unknown SomeElement
-            {
-                get
-                {
-                    return _someelementInfo.CreateAdapter<Ranorex.Unknown>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SomeElement item info.
-            /// </summary>
-            [RepositoryItemInfo("e3b39e2c-3f95-4438-b42c-7b5a168c1a04")]
-            public virtual RepoItemInfo SomeElementInfo
-            {
-                get
-                {
-                    return _someelementInfo;
                 }
             }
 
@@ -2128,72 +1858,6 @@ namespace Y_MENU_001
                 get
                 {
                     return _crm_ausfuehrenInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The WSVRINEUAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("4d9fa99a-cc71-40a5-9dad-288552bd725a")]
-        public partial class WSVRINEUAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _wsvrineuInfo;
-
-            /// <summary>
-            /// Creates a new WSVRINEU  folder.
-            /// </summary>
-            public WSVRINEUAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("WSVRINEU", "", parentFolder, 30000, null, true, "4d9fa99a-cc71-40a5-9dad-288552bd725a", "")
-            {
-                _wsvrineuInfo = new RepoItemInfo(this, "WSVRINEU", "", "", 30000, null, "fa2cfed7-1f84-481c-abb5-32c34b0a43f7");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("4d9fa99a-cc71-40a5-9dad-288552bd725a")]
-            public virtual Ranorex.Host Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Host>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("4d9fa99a-cc71-40a5-9dad-288552bd725a")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The WSVRINEU item.
-            /// </summary>
-            [RepositoryItem("fa2cfed7-1f84-481c-abb5-32c34b0a43f7")]
-            public virtual Ranorex.Host WSVRINEU
-            {
-                get
-                {
-                    return _wsvrineuInfo.CreateAdapter<Ranorex.Host>(true);
-                }
-            }
-
-            /// <summary>
-            /// The WSVRINEU item info.
-            /// </summary>
-            [RepositoryItemInfo("fa2cfed7-1f84-481c-abb5-32c34b0a43f7")]
-            public virtual RepoItemInfo WSVRINEUInfo
-            {
-                get
-                {
-                    return _wsvrineuInfo;
                 }
             }
         }
