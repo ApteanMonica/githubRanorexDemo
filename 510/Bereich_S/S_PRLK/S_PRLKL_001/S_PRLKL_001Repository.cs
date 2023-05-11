@@ -105,17 +105,17 @@ namespace S_PRLKL_001
                     base("FrmPrlk", "/form[@controlname='frmPrlk']", parentFolder, 30000, null, true, "a25e610d-984b-4e14-b8fe-a1321c8e4d95", "")
             {
                 _frmsearchpage = new S_PRLKL_001RepositoryFolders.FrmSearchPageFolder(this);
-                _titlebar100verwaltunglieferantenpInfo = new RepoItemInfo(this, "TitleBar100VerwaltungLieferantenp", "titlebar[@accessiblerole='TitleBar']", 30000, null, "78715050-23f5-4b93-8dc2-c1441cdbf866");
-                _nummerInfo = new RepoItemInfo(this, "Nummer", "?/?/text[@controlname='dfPrlk_nr']/text[@accessiblename='Nummer']", 30000, null, "ed22c050-81b6-431a-b962-4093ad7f2722");
-                _pbnavigationbackInfo = new RepoItemInfo(this, "PbNavigationBack", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbNavigation_Back']", 30000, null, "078da59e-9609-4c99-99c8-ef918472a885");
-                _nachkommastellenInfo = new RepoItemInfo(this, "Nachkommastellen", "?/?/text[@controlname='dfPrlk_anznachkomma']/text[@accessiblename='Nachkommastellen']", 30000, null, "ae303af3-79b1-438e-aba1-696e0bd7af13");
-                _waehrungInfo = new RepoItemInfo(this, "Waehrung", "?/?/text[@controlname='dfWrg_cd']/text[@accessiblename='Währung']", 30000, null, "792c8c4c-a5f6-4a82-9d96-5ceea19d0b5e");
-                _kz_rabattInfo = new RepoItemInfo(this, "Kz_Rabatt", "?/?/text[@controlname='dfPrlk_rabattkz_vs']/text[@accessiblerole='Text']", 30000, null, "8594edc4-a8e5-438c-a460-a016f094a6a0");
-                _datumskennzInfo = new RepoItemInfo(this, "Datumskennz", "?/?/text[@controlname='dfPrlk_kzdatum']/text[@accessiblename='Datumskennz.']", 30000, null, "e20645d0-80e7-4b95-841b-5541cbb30ab9");
-                _flexgridInfo = new RepoItemInfo(this, "FlexGrid", "?/?/container[@controlname='tblPrld']/?/?/table[@accessiblename='FlexGrid']", 30000, null, "a88d714f-1834-4a77-acaf-6fa2ecf7a9e7");
-                _sometextInfo = new RepoItemInfo(this, "SomeText", "?/?/container[@controlname='tblPrld']/?/?/text[@controltypename='']", 30000, null, "e6893f76-3e8b-4975-914a-dfbeff2a2869");
-                _speichernInfo = new RepoItemInfo(this, "Speichern", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbCommon_Save']", 30000, null, "06ce2f4e-39a7-4a6e-8cb4-8897b30e3d28");
-                _colprlddtvonrow1Info = new RepoItemInfo(this, "ColPrldDtvonRow1", "?/?/container[@controlname='tblPrld']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colPrld_dtvon Row 1']", 30000, null, "5d04581d-7b1b-4cc3-800e-30d41f259462");
+                _titlebar100verwaltunglieferantenpInfo = new RepoItemInfo(this, "TitleBar100VerwaltungLieferantenp", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "78715050-23f5-4b93-8dc2-c1441cdbf866");
+                _nummerInfo = new RepoItemInfo(this, "Nummer", "?/?/text[@controlname='dfPrlk_nr']/text[@accessiblename='Nummer']", "", 30000, null, "ed22c050-81b6-431a-b962-4093ad7f2722");
+                _pbnavigationbackInfo = new RepoItemInfo(this, "PbNavigationBack", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbNavigation_Back']", "", 30000, null, "078da59e-9609-4c99-99c8-ef918472a885");
+                _nachkommastellenInfo = new RepoItemInfo(this, "Nachkommastellen", "?/?/text[@controlname='dfPrlk_anznachkomma']/text[@accessiblename='Nachkommastellen']", "", 30000, null, "ae303af3-79b1-438e-aba1-696e0bd7af13");
+                _waehrungInfo = new RepoItemInfo(this, "Waehrung", "?/?/text[@controlname='dfWrg_cd']/text[@accessiblename='Währung']", "", 30000, null, "792c8c4c-a5f6-4a82-9d96-5ceea19d0b5e");
+                _kz_rabattInfo = new RepoItemInfo(this, "Kz_Rabatt", "?/?/text[@controlname='dfPrlk_rabattkz_vs']/text[@accessiblerole='Text']", "", 30000, null, "8594edc4-a8e5-438c-a460-a016f094a6a0");
+                _datumskennzInfo = new RepoItemInfo(this, "Datumskennz", "?/?/text[@controlname='dfPrlk_kzdatum']/text[@accessiblename='Datumskennz.']", "", 30000, null, "e20645d0-80e7-4b95-841b-5541cbb30ab9");
+                _flexgridInfo = new RepoItemInfo(this, "FlexGrid", "?/?/container[@controlname='tblPrld']/?/?/table[@accessiblename='FlexGrid']", "", 30000, null, "a88d714f-1834-4a77-acaf-6fa2ecf7a9e7");
+                _sometextInfo = new RepoItemInfo(this, "SomeText", "?/?/container[@controlname='tblPrld']/?/?/text[@controltypename='']", "", 30000, null, "e6893f76-3e8b-4975-914a-dfbeff2a2869");
+                _speichernInfo = new RepoItemInfo(this, "Speichern", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbCommon_Save']", "", 30000, null, "06ce2f4e-39a7-4a6e-8cb4-8897b30e3d28");
+                _colprlddtvonrow1Info = new RepoItemInfo(this, "ColPrldDtvonRow1", "?/?/container[@controlname='tblPrld']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colPrld_dtvon Row 1']", "", 30000, null, "5d04581d-7b1b-4cc3-800e-30d41f259462");
             }
 
             /// <summary>
@@ -434,11 +434,11 @@ namespace S_PRLKL_001
             public FrmSearchPageFolder(RepoGenBaseFolder parentFolder) :
                     base("FrmSearchPage", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']", parentFolder, 30000, null, false, "825065f3-7df2-483d-8c17-ec6ffbc29c0b", "")
             {
-                _row1column0Info = new RepoItemInfo(this, "Row1Column0", ".//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", 30000, null, "2fd3cfce-21b5-414d-b5b6-f018b0cd52cc");
-                _celltmpcols1row1Info = new RepoItemInfo(this, "CellTmpColS1Row1", ".//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='__tmp__colS1 Row 1']", 30000, null, "4f9b8183-4daa-4e78-aefa-0fe068b98e9f");
-                _textInfo = new RepoItemInfo(this, "Text", "?/?/container[@controlname='SearchGroup1']//text[@accessiblerole='Text']", 30000, null, "01524683-f360-4d66-8d72-40c3ac22f5ab");
-                _pbnewInfo = new RepoItemInfo(this, "PbNew", "?/?/container[@controlname='SearchGroup2']/button[@controlname='pbNew']", 30000, null, "8a598b3d-bba5-4224-aa20-93dc01a0ec10");
-                _celltmpcols1row11Info = new RepoItemInfo(this, "CellTmpColS1Row11", "?//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblevalue='300003']", 30000, null, "ea90bdd2-3ed3-4330-84da-89fd4b2897ac");
+                _row1column0Info = new RepoItemInfo(this, "Row1Column0", ".//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "2fd3cfce-21b5-414d-b5b6-f018b0cd52cc");
+                _celltmpcols1row1Info = new RepoItemInfo(this, "CellTmpColS1Row1", ".//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='__tmp__colS1 Row 1']", "", 30000, null, "4f9b8183-4daa-4e78-aefa-0fe068b98e9f");
+                _textInfo = new RepoItemInfo(this, "Text", "?/?/container[@controlname='SearchGroup1']//text[@accessiblerole='Text']", "", 30000, null, "01524683-f360-4d66-8d72-40c3ac22f5ab");
+                _pbnewInfo = new RepoItemInfo(this, "PbNew", "?/?/container[@controlname='SearchGroup2']/button[@controlname='pbNew']", "", 30000, null, "8a598b3d-bba5-4224-aa20-93dc01a0ec10");
+                _celltmpcols1row11Info = new RepoItemInfo(this, "CellTmpColS1Row11", "?//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblevalue='300003']", "", 30000, null, "ea90bdd2-3ed3-4330-84da-89fd4b2897ac");
             }
 
             /// <summary>

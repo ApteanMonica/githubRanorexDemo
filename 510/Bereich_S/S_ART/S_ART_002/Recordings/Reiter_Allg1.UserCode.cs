@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace S_ART_002
+namespace S_ART_002.Recordings
 {
-    public partial class Recording1
+    public partial class Reiter_Allg1
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

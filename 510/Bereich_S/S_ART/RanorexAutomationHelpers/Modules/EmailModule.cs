@@ -20,12 +20,12 @@ namespace Ranorex.AutomationHelpers.Modules
         /// </summary>
         public EmailModule()
         {
-            this.From = "ranorex@rs-soft.com";
-            this.Body = "test";
+            this.From = "";
+            this.Body = "";
             this.Password = "";
 
-            this.ServerHostname = "mail.rs-soft.com";
-            this.ServerPort = "25";
+            this.ServerHostname = "";
+            this.ServerPort = "";
             this.Username = "";
 
             this.SendEmailOnFailure = true;
@@ -135,6 +135,8 @@ namespace Ranorex.AutomationHelpers.Modules
 
         private void OnTestSuiteCompletedSendResult(object sender, EventArgs e)
         {
+            TestSuite.TestSuiteCompleted -= this.OnTestSuiteCompletedSendResult;
+
             var currentTestSuiteStatus = TestReport.CurrentTestSuiteActivity;
             var reportFile = CreateReports();
 

@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace S_ART_002
+namespace S_ART_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
@@ -30,9 +30,9 @@ namespace S_ART_002
     public partial class Reiter_Allg1 : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the S_ART_002Repository repository.
+        /// Holds an instance of the global::S_ART_002.S_ART_002Repository repository.
         /// </summary>
-        public static S_ART_002Repository repo = S_ART_002Repository.Instance;
+        public static global::S_ART_002.S_ART_002Repository repo = global::S_ART_002.S_ART_002Repository.Instance;
 
         static Reiter_Allg1 instance = new Reiter_Allg1();
 
