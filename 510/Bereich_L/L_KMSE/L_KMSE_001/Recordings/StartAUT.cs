@@ -41,8 +41,8 @@ namespace L_KMSE_001.Recordings
         /// </summary>
         public StartAUT()
         {
-            Programm = "";
-            Startfile = "";
+            Programm = "L_KMSE";
+            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
         }
 
         /// <summary>
