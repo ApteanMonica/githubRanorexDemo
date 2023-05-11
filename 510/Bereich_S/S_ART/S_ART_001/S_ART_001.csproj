@@ -214,15 +214,15 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
-      <Project>{5A6E327D-AE65-4E52-B13B-D8E95623D07D}</Project>
-      <Name>Ranorex Automation Helpers</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Recordings">
       <id>436fd552-19d6-41db-923a-5f0d9badbdc4</id>
     </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{195B1252-7FAC-44E5-8998-67EED1D07B0E}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
