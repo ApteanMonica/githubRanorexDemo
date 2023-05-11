@@ -59,14 +59,6 @@ Möchten Sie als gültige UID übernehmen?
 			name="CloseAUT"
 			ref="db28528c-9d66-4a92-a582-d423d9bf46fa"
 			type="Recording">
-				<missingdatavariablesbinding>
-					<var
-					dataname="Startfile"
-					datasourceid="05b735d6-c519-4d12-8e28-5abba8f530a8"
-					variableid="eb1793ae-278b-4dcf-8699-37e15c9d4d0c"
-					variablename="CloseAutProcessIDVar">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="2399b6b9-56e4-4385-b0e7-1402eef92e23"
@@ -87,14 +79,6 @@ Möchten Sie als gültige UID übernehmen?
 					variablename="Startfile">
 					</var>
 				</databinding>
-				<missingdatavariablesbinding>
-					<var
-					dataname="Startfile"
-					datasourceid="05b735d6-c519-4d12-8e28-5abba8f530a8"
-					variableid="87446949-4db5-4c47-83e5-fe79e94f58e1"
-					variablename="StartAutProcessIDVar">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
@@ -275,5 +259,8 @@ Möchten Sie als gültige UID übernehmen?
 		</testconfiguration>
 	</testconfigurations>
 	<references>
+		<reference>
+			Ranorex Automation Helpers.dll
+		</reference>
 	</references>
 </testsuitedoc>
