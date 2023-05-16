@@ -141,24 +141,27 @@ namespace N_ANLA_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='5,00') on item 'DlgBuchen.DfNutzungsdauer'.", repo.DlgBuchen.DfNutzungsdauerInfo, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.DlgBuchen.DfNutzungsdauerInfo, "Text", "5,00");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgBuchen.AfAart1' at Center.", repo.DlgBuchen.AfAart1Info, new RecordItemIndex(17));
-            repo.DlgBuchen.AfAart1.DoubleClick();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgBuchen.AfAart1' at Center.", repo.DlgBuchen.AfAart1Info, new RecordItemIndex(17));
+            //repo.DlgBuchen.AfAart1.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgBuchen.AfAart1'.", repo.DlgBuchen.AfAart1Info, new RecordItemIndex(18));
-            Keyboard.PrepareFocus(repo.DlgBuchen.AfAart1);
-            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'DlgBuchen.AfAart1'.", repo.DlgBuchen.AfAart1Info, new RecordItemIndex(18));
+            //Keyboard.PrepareFocus(repo.DlgBuchen.AfAart1);
+            //Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '9' with focus on 'DlgBuchen.AfAart1'.", repo.DlgBuchen.AfAart1Info, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '' on item 'DlgBuchen.AfAart1'.", repo.DlgBuchen.AfAart1Info, new RecordItemIndex(19));
+            repo.DlgBuchen.AfAart1.Element.SetAttributeValue("Text", "");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '9' with focus on 'DlgBuchen.AfAart1'.", repo.DlgBuchen.AfAart1Info, new RecordItemIndex(20));
             repo.DlgBuchen.AfAart1.PressKeys("9");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9') on item 'DlgBuchen.AfAart1'.", repo.DlgBuchen.AfAart1Info, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9') on item 'DlgBuchen.AfAart1'.", repo.DlgBuchen.AfAart1Info, new RecordItemIndex(21));
             Validate.AttributeEqual(repo.DlgBuchen.AfAart1Info, "Text", "9");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'DlgBuchen.AfAart1'.", repo.DlgBuchen.AfAart1Info, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'DlgBuchen.AfAart1'.", repo.DlgBuchen.AfAart1Info, new RecordItemIndex(22));
             Keyboard.PrepareFocus(repo.DlgBuchen.AfAart1);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgBuchen.PbSpeichern' at Center.", repo.DlgBuchen.PbSpeichernInfo, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgBuchen.PbSpeichern' at Center.", repo.DlgBuchen.PbSpeichernInfo, new RecordItemIndex(23));
             repo.DlgBuchen.PbSpeichern.Click();
             
         }

@@ -45,7 +45,7 @@ namespace N_ANLA_002.Recordings
             Buchungsdatum = "31.12.2022";
             Anlage_C = "N_ANLA_002_03";
             Anlage_G = "N_ANLA_002_07";
-            Bezeichnung_Anlage_7 = "Anlage G";
+            Bezeichnung_Anlage_07 = "Anlage G";
         }
 
         /// <summary>
@@ -106,16 +106,16 @@ namespace N_ANLA_002.Recordings
             set { _Anlage_G = value; }
         }
 
-        string _Bezeichnung_Anlage_7;
+        string _Bezeichnung_Anlage_07;
 
         /// <summary>
-        /// Gets or sets the value of variable Bezeichnung_Anlage_7.
+        /// Gets or sets the value of variable Bezeichnung_Anlage_07.
         /// </summary>
         [TestVariable("081fde8e-6e0c-40cf-b5c1-efea2ac71322")]
-        public string Bezeichnung_Anlage_7
+        public string Bezeichnung_Anlage_07
         {
-            get { return _Bezeichnung_Anlage_7; }
-            set { _Bezeichnung_Anlage_7 = value; }
+            get { return _Bezeichnung_Anlage_07; }
+            set { _Bezeichnung_Anlage_07 = value; }
         }
 
 #endregion
@@ -176,8 +176,8 @@ namespace N_ANLA_002.Recordings
             Keyboard.PrepareFocus(repo.FrmZuauf.TabPageTp1.ColAnlaNrRow1);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Bezeichnung_Anlage_7' with focus on 'FrmZuauf.TabPageTp1.ColAnlaBezRow1'.", repo.FrmZuauf.TabPageTp1.ColAnlaBezRow1Info, new RecordItemIndex(10));
-            repo.FrmZuauf.TabPageTp1.ColAnlaBezRow1.PressKeys(Bezeichnung_Anlage_7);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Bezeichnung_Anlage_07' with focus on 'FrmZuauf.TabPageTp1.ColAnlaBezRow1'.", repo.FrmZuauf.TabPageTp1.ColAnlaBezRow1Info, new RecordItemIndex(10));
+            repo.FrmZuauf.TabPageTp1.ColAnlaBezRow1.PressKeys(Bezeichnung_Anlage_07);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmZuauf.TabPageTp1.ColAnlaBezRow1'.", repo.FrmZuauf.TabPageTp1.ColAnlaBezRow1Info, new RecordItemIndex(11));
             Keyboard.PrepareFocus(repo.FrmZuauf.TabPageTp1.ColAnlaBezRow1);

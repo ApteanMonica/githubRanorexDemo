@@ -41,7 +41,6 @@ namespace N_ANLA_002.Recordings
         /// </summary>
         public CloseAUT()
         {
-            CloseAutProcessIDVar = "-1";
         }
 
         /// <summary>
@@ -53,18 +52,6 @@ namespace N_ANLA_002.Recordings
         }
 
 #region Variables
-
-        string _CloseAutProcessIDVar;
-
-        /// <summary>
-        /// Gets or sets the value of variable CloseAutProcessIDVar.
-        /// </summary>
-        [TestVariable("af6b7fa9-c0f6-4e98-9c2f-c4f63d15497b")]
-        public string CloseAutProcessIDVar
-        {
-            get { return _CloseAutProcessIDVar; }
-            set { _CloseAutProcessIDVar = value; }
-        }
 
 #endregion
 

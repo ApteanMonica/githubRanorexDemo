@@ -41,7 +41,6 @@ namespace N_ANLA_002.Recordings
         /// </summary>
         public StartAUT()
         {
-            StartAutProcessIDVar = "";
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
             Programm = "N_ANLA";
         }
@@ -55,18 +54,6 @@ namespace N_ANLA_002.Recordings
         }
 
 #region Variables
-
-        string _StartAutProcessIDVar;
-
-        /// <summary>
-        /// Gets or sets the value of variable StartAutProcessIDVar.
-        /// </summary>
-        [TestVariable("1f6e8ae2-592a-4bd1-a6a4-c4c98ae7630b")]
-        public string StartAutProcessIDVar
-        {
-            get { return _StartAutProcessIDVar; }
-            set { _StartAutProcessIDVar = value; }
-        }
 
         string _Startfile;
 
