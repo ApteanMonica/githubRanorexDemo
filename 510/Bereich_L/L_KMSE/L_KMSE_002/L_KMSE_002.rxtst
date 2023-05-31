@@ -21,14 +21,6 @@
 					variablename="Programm">
 					</var>
 				</databinding>
-				<missingdatavariablesbinding>
-					<var
-					dataname="Startfile"
-					datasourceid="34f9e971-9f80-4487-8eb2-9f779ffc62be"
-					variableid="e5648495-ace4-4001-b0ca-c06b58f42cea"
-					variablename="StartAutProcessIDVar">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="2da0e625-6a07-455e-8630-b8066423e26a"
@@ -43,14 +35,6 @@
 					variablename="KoSchein">
 					</var>
 				</databinding>
-				<missingdatavariablesbinding>
-					<var
-					dataname="Aufk_nr"
-					datasourceid="34f9e971-9f80-4487-8eb2-9f779ffc62be"
-					variableid="c71fe4f9-7659-4b70-8794-b1e967a7de48"
-					variablename="Aufk_Nr">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
 			<testcase
 			id="34f9e971-9f80-4487-8eb2-9f779ffc62be"
@@ -86,16 +70,21 @@
 			VideoFps="15"
 			VideoRecordingMode="Off"
 			VideoSource="Auto"
+			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
 			id="79ddf8e3-8923-48ab-bc55-14dc4421be0c"
+			includeimageschecked="False"
+			includerecordingschecked="False"
 			junitreport="False"
 			name="L_KMSE_002"
+			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<setup
 			id="b8945784-34c8-4b66-bbf0-792e65c77ac0"
@@ -106,14 +95,6 @@
 			name="CloseAUT"
 			ref="ed642ac2-bcec-43f8-9b20-dff39c075184"
 			type="Recording">
-				<missingdatavariablesbinding>
-					<var
-					dataname="Startfile"
-					datasourceid="34f9e971-9f80-4487-8eb2-9f779ffc62be"
-					variableid="263a2812-1946-4340-ae77-014c085f0556"
-					variablename="CloseAutProcessIDVar">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
 			<teardown
 			id="d2b177da-5f81-4152-a02a-090d894d903a"
@@ -137,15 +118,15 @@
 						<setup
 						id="b8945784-34c8-4b66-bbf0-792e65c77ac0"
 						name="setup">
-							<testmodule
-							id="052a10f5-a858-41fb-a9a7-58035cb59d75"
-							name="StartAUT">
-							</testmodule>
-							<testmodule
-							id="2da0e625-6a07-455e-8630-b8066423e26a"
-							name="KOSchein_erstellen">
-							</testmodule>
 						</setup>
+						<testmodule
+						id="052a10f5-a858-41fb-a9a7-58035cb59d75"
+						name="StartAUT">
+						</testmodule>
+						<testmodule
+						id="2da0e625-6a07-455e-8630-b8066423e26a"
+						name="KOSchein_erstellen">
+						</testmodule>
 						<teardown
 						id="d2b177da-5f81-4152-a02a-090d894d903a"
 						name="teardown">
