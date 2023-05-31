@@ -10,16 +10,21 @@
 			VideoFps="15"
 			VideoRecordingMode="Off"
 			VideoSource="Auto"
+			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
 			id="39c8de61-f2a2-42b1-be0c-6434861cdec6"
+			includeimageschecked="False"
+			includerecordingschecked="False"
 			junitreport="False"
 			name="V_AUFI_001"
+			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testcase
 			id="3f51ba48-06cc-4869-a7cf-bcb47203c3e7"
@@ -81,14 +86,6 @@
 					variablename="Startfile">
 					</var>
 				</databinding>
-				<missingdatavariablesbinding>
-					<var
-					dataname="AppProcessID"
-					datasourceid="efd36eec-4725-4ac6-b1fd-4b62cb50ae34"
-					variableid="5a4e26a6-4ce2-4ce2-95ed-2a3e6078fdd0"
-					variablename="StartAutProcessIDVar">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="97c83bba-be08-47c6-87a8-bee068d68a05"
