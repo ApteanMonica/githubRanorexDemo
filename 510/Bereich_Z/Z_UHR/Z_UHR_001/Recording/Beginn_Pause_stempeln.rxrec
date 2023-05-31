@@ -44,6 +44,14 @@ mode="Global">
 		id="972aa2b9-13c9-412d-b643-200363de7534"
 		name="Uhrzeit_plus_2Minuten">
 		</var>
+		<var
+		id="eb9c0bab-2b8d-41ce-892d-9d40b35bd3b8"
+		name="Einlesen_Uhrzeit">
+		</var>
+		<var
+		id="e13a4f13-9282-478d-953c-122876268d19"
+		name="angepasste_Uhrzeit_einlesen">
+		</var>
 	</variables>
 	<recorditems>
 		<explicitdelayitem
@@ -4047,7 +4055,7 @@ mode="Global">
 		</userrecorditem>
 		<validationitem
 		action="AttributeContains"
-		enabled="True"
+		enabled="False"
 		optional="True"
 		searchpropertyid="7ddfe51f-8d3d-443c-b683-9b4c4fd0d405">
 			<comment>
@@ -4074,6 +4082,169 @@ mode="Global">
 			<matchvalue>
 			</matchvalue>
 		</validationitem>
+		<getvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ab110f06-baa0-4d45-a0d8-9be00c7ff51b"
+		varname="Einlesen_Uhrzeit">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="079eeaad-ef96-48b0-8e31-5af03785f782"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmUhr']/container[@controlname='ClientArea']/container[@controlname='splitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblAnwesend']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Personal_Nr]/cell[@accessiblename~'colUhr_dtbeginn ']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="GetDateAsString"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="angepasste_Uhrzeit_einlesen">
+				</binding>
+			</bindings>
+			<arguments
+			id="70e63189-14ca-4ecf-89d8-8a382853e5ef">
+				<argument
+				argname="date"
+				id="690e3145-586a-4f3e-b425-eee7c76a8c88"
+				variable="Einlesen_Uhrzeit">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="expectedFormat"
+				id="0f07d993-94a2-4e02-ad88-bcf87be4b73c">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						HH:mm
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="GetDateTimePlus"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Uhrzeit_plus_1Minute">
+				</binding>
+			</bindings>
+			<arguments
+			id="16f2e300-ba22-4854-a910-bca464528ccd">
+				<argument
+				argname="date"
+				id="432bd666-2c1f-4494-b2da-385a817def1b"
+				variable="Uhrzeit_Stunde_Minute">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="s"
+				id="2d154b67-3045-4aae-b19d-c93b589419c0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						m
+					</argvalue>
+				</argument>
+				<argument
+				argname="counter"
+				id="78cbf5f7-2a5f-4b49-a676-a2720a81f22a">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="expectedFormat"
+				id="5a8a9aa4-fa46-4206-8ba2-ffd9919db0a1">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						HH:mm
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ValidateVar1Var2"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="3f0da902-ebdf-46f1-be87-bdf0267fa752">
+				<argument
+				argname="variable"
+				id="f7648f33-f2d7-4729-a0a1-78e2e3b02680"
+				variable="angepasste_Uhrzeit_einlesen">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="var1"
+				id="86d89f78-eefd-4792-b129-e9ccdc3f1ca1"
+				variable="Uhrzeit_Stunde_Minute">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="var2"
+				id="9dffee0d-ee21-460f-ab09-20e6e833fa8f"
+				variable="Uhrzeit_plus_1Minute">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"

@@ -197,20 +197,14 @@ namespace B_ZAHL_004.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColKldvNrRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColKldvNrRow2Info, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColKldvNrRow2Info, "Text", "1");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='2.400,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZBetragZRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZBetragZRow2Info, new RecordItemIndex(9));
-                Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZBetragZRow2Info, "Text", "2.400,00", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.400,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZBetragZRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZBetragZRow2Info, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZBetragZRow2Info, "Text", "2.400,00");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='0,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColSBetragZRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColSBetragZRow2Info, new RecordItemIndex(10));
-                Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColSBetragZRow2Info, "Text", "0,00", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(10)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColSBetragZRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColSBetragZRow2Info, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColSBetragZRow2Info, "Text", "0,00");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='2,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColSProzRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColSProzRow2Info, new RecordItemIndex(11));
-                Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColSProzRow2Info, "Text", "2,00", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(11)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColSProzRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColSProzRow2Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColSProzRow2Info, "Text", "2,00");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.400,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColOffenZRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColOffenZRow2Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColOffenZRow2Info, "Text", "2.400,00");
@@ -269,20 +263,14 @@ namespace B_ZAHL_004.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColKldvNrRow5'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColKldvNrRow5Info, new RecordItemIndex(30));
             Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColKldvNrRow5Info, "Text", "2");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='6.000,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColZBetragZRow5'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColZBetragZRow5Info, new RecordItemIndex(31));
-                Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColZBetragZRow5Info, "Text", "6.000,00", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(31)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='6.000,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColZBetragZRow5'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColZBetragZRow5Info, new RecordItemIndex(31));
+            Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColZBetragZRow5Info, "Text", "6.000,00");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='0,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColSBetragZRow5'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColSBetragZRow5Info, new RecordItemIndex(32));
-                Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColSBetragZRow5Info, "Text", "0,00", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(32)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColSBetragZRow5'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColSBetragZRow5Info, new RecordItemIndex(32));
+            Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColSBetragZRow5Info, "Text", "0,00");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='2,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColSProzRow5'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColSProzRow5Info, new RecordItemIndex(33));
-                Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColSProzRow5Info, "Text", "2,00", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(33)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColSProzRow5'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColSProzRow5Info, new RecordItemIndex(33));
+            Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColSProzRow5Info, "Text", "2,00");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='6.000,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColOffenZRow5'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColOffenZRow5Info, new RecordItemIndex(34));
             Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColOffenZRow5Info, "Text", "6.000,00");

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="84adff42-f7e1-433a-bc35-e09e88fd4054"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_AUT"
+	namespace="Hotfixtest_490.Recordings.MENU">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="f9dcd224-5277-40bd-b5a1-2a5f2f530918">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="506b7502-9488-4a6a-9e06-0133e1064d5e"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="3"
+				prefcap="titlebar"
+				rect="-31976,-31997,128,25"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100] - RS REFDB    -    rs2 Version 5.2.1 SP07 Hotfix-51     —     Home
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100] - RS REFDB    -    rs2 Version 5.2.1 SP07 Hotfix-51     —     Home
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='FormWorkplace']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="d89bb89b-e51b-4b0f-81f0-e6ec1287eada"
+	name="Hotfixtest_490Repository"
+	relativepath="..\..\Hotfixtest_490Repository.rxrep">
+		<codegen
+		classname="Hotfixtest_490Repository"
+		namespace="Hotfixtest_490">
+		</codegen>
+		<rootfolder
+		id="cdb43fce-ace5-4d2f-ae99-32e0f8e0ae90"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_AUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

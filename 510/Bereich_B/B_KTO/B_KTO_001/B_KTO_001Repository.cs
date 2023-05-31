@@ -555,6 +555,7 @@ namespace B_KTO_001
             RepoItemInfo _button0Info;
             RepoItemInfo _meldung_kontoanlage_allgemein_kontoartInfo;
             RepoItemInfo _meldung_kontoanlage_basis_Info;
+            RepoItemInfo _labelmeldungstextInfo;
 
             /// <summary>
             /// Creates a new DlgMessageBox  folder.
@@ -566,6 +567,7 @@ namespace B_KTO_001
                 _button0Info = new RepoItemInfo(this, "Button0", "button[@controlname='button0']", "", 30000, null, "2848dc13-e4de-47a8-85e3-01eb8f5dd828");
                 _meldung_kontoanlage_allgemein_kontoartInfo = new RepoItemInfo(this, "Meldung_Kontoanlage_allgemein_Kontoart", "text[@text='Bitte wählen Sie zuerst eine Kontoart!']", "", 30000, null, "4c2cdf8f-2557-4918-b9a9-114d5230776c");
                 _meldung_kontoanlage_basis_Info = new RepoItemInfo(this, "Meldung_Kontoanlage_Basis_", "text[@text='Länge der Kontonummer ist nicht 4 Stellen -OK?']", "", 30000, null, "bebc2782-ef8b-4903-b7cd-7ecedde6608d");
+                _labelmeldungstextInfo = new RepoItemInfo(this, "LabelMeldungstext", "text[@controlname='labelMeldungstext']", "", 30000, null, "89af2a25-55a5-4bc4-bac3-305b4830a5f4");
             }
 
             /// <summary>
@@ -685,6 +687,30 @@ namespace B_KTO_001
                 get
                 {
                     return _meldung_kontoanlage_basis_Info;
+                }
+            }
+
+            /// <summary>
+            /// The LabelMeldungstext item.
+            /// </summary>
+            [RepositoryItem("89af2a25-55a5-4bc4-bac3-305b4830a5f4")]
+            public virtual Ranorex.Text LabelMeldungstext
+            {
+                get
+                {
+                    return _labelmeldungstextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LabelMeldungstext item info.
+            /// </summary>
+            [RepositoryItemInfo("89af2a25-55a5-4bc4-bac3-305b4830a5f4")]
+            public virtual RepoItemInfo LabelMeldungstextInfo
+            {
+                get
+                {
+                    return _labelmeldungstextInfo;
                 }
             }
         }

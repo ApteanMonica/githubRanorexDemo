@@ -50,6 +50,14 @@
 					name="Uhrzeit_plus_3Minuten"
 					value="">
 					</param>
+					<param
+					name="Einlesen_Uhrzeit"
+					value="">
+					</param>
+					<param
+					name="angepasste_Uhrzeit_einlesen"
+					value="">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -60,16 +68,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Uhrzeit_plus_3Minuten"
+					dataname="Uhrzeit_Stunde_Minute"
 					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="87488cfc-1757-475e-bbcb-d322d1cda51a"
-					variablename="Uhrzeit_plus_3Minuten">
-					</var>
-					<var
-					dataname="Uhrzeit_plus_2Minuten"
-					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="38dd6c7d-dfd3-4c62-9b86-c0ec5bce4c20"
-					variablename="Uhrzeit_plus_2Minuten">
+					variableid="a47e859a-4937-47e7-bcab-2b12a74e6572"
+					variablename="Uhrzeit_Stunde_Minute">
 					</var>
 					<var
 					dataname="Uhrzeit_plus_1Minute"
@@ -78,10 +80,16 @@
 					variablename="Uhrzeit_plus_1Minute">
 					</var>
 					<var
-					dataname="Uhrzeit_Stunde_Minute"
+					dataname="Uhrzeit_plus_2Minuten"
 					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="a47e859a-4937-47e7-bcab-2b12a74e6572"
-					variablename="Uhrzeit_Stunde_Minute">
+					variableid="38dd6c7d-dfd3-4c62-9b86-c0ec5bce4c20"
+					variablename="Uhrzeit_plus_2Minuten">
+					</var>
+					<var
+					dataname="Uhrzeit_plus_3Minuten"
+					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
+					variableid="87488cfc-1757-475e-bbcb-d322d1cda51a"
+					variablename="Uhrzeit_plus_3Minuten">
 					</var>
 				</databinding>
 			</testmodule>
@@ -91,6 +99,18 @@
 			ref="0dc24657-59b3-469e-8323-5026e430e10b"
 			type="Recording">
 				<databinding>
+					<var
+					dataname="Personal_Nr"
+					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
+					variableid="85ba92be-e8c9-4c3e-a680-0d97bb55e80e"
+					variablename="Personal_Nr">
+					</var>
+					<var
+					dataname="Mitarbeiter"
+					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
+					variableid="cbd45f57-da2e-4e39-859d-84e3f0503875"
+					variablename="Mitarbeiter">
+					</var>
 					<var
 					dataname="Uhrzeit_Stunde_Minute"
 					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
@@ -116,16 +136,16 @@
 					variablename="Uhrzeit_plus_3Minuten">
 					</var>
 					<var
-					dataname="Mitarbeiter"
+					dataname="Einlesen_Uhrzeit"
 					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="cbd45f57-da2e-4e39-859d-84e3f0503875"
-					variablename="Mitarbeiter">
+					variableid="d2a6e150-d906-4366-a735-58ba60883432"
+					variablename="Einlesen_Uhrzeit">
 					</var>
 					<var
-					dataname="Personal_Nr"
+					dataname="angepasste_Uhrzeit_einlesen"
 					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="85ba92be-e8c9-4c3e-a680-0d97bb55e80e"
-					variablename="Personal_Nr">
+					variableid="46904bc5-23bd-4ad4-8dfe-46f8410f6600"
+					variablename="angepasste_Uhrzeit_einlesen">
 					</var>
 				</databinding>
 				<missingdatabinding>
@@ -164,10 +184,22 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Uhrzeit_plus_1Minute"
+					dataname="Personal_Nr"
 					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="0e967a89-ed2b-4302-9cff-65a1154fe371"
-					variablename="Uhrzeit_plus_1Minute">
+					variableid="5fdccce9-0409-41db-a0fe-7d9da4c4a9f2"
+					variablename="Personal_Nr">
+					</var>
+					<var
+					dataname="Name_MA"
+					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
+					variableid="4bda7cf6-552e-470e-8481-207ee01de381"
+					variablename="Name_MA">
+					</var>
+					<var
+					dataname="Mitarbeiter"
+					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
+					variableid="da0f5672-f419-4da1-9bd4-44ce05caa789"
+					variablename="Mitarbeiter">
 					</var>
 					<var
 					dataname="Uhrzeit_Stunde_Minute"
@@ -176,10 +208,10 @@
 					variablename="Uhrzeit_Stunde_Minute">
 					</var>
 					<var
-					dataname="Mitarbeiter"
+					dataname="Uhrzeit_plus_1Minute"
 					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="da0f5672-f419-4da1-9bd4-44ce05caa789"
-					variablename="Mitarbeiter">
+					variableid="0e967a89-ed2b-4302-9cff-65a1154fe371"
+					variablename="Uhrzeit_plus_1Minute">
 					</var>
 					<var
 					dataname="Uhrzeit_plus_2Minuten"
@@ -194,16 +226,16 @@
 					variablename="Uhrzeit_plus_3Minuten">
 					</var>
 					<var
-					dataname="Name_MA"
+					dataname="Einlesen_Uhrzeit"
 					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="4bda7cf6-552e-470e-8481-207ee01de381"
-					variablename="Name_MA">
+					variableid="8e3901fe-6e67-4f4d-aa29-c0deb2871e93"
+					variablename="Einlesen_Uhrzeit">
 					</var>
 					<var
-					dataname="Personal_Nr"
+					dataname="angepasste_Uhrzeit_einlesen"
 					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="5fdccce9-0409-41db-a0fe-7d9da4c4a9f2"
-					variablename="Personal_Nr">
+					variableid="086a1326-8431-4bbf-9188-853001bb69b0"
+					variablename="angepasste_Uhrzeit_einlesen">
 					</var>
 				</databinding>
 				<missingdatabinding>
@@ -280,6 +312,18 @@
 			type="Recording">
 				<databinding>
 					<var
+					dataname="Personal_Nr"
+					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
+					variableid="0af84285-2514-4b3b-a3ab-f7314fa726f0"
+					variablename="Personal_Nr">
+					</var>
+					<var
+					dataname="Uhrzeit_Stunde_Minute"
+					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
+					variableid="aa0f31f4-bec7-4a59-964e-59820c789bb6"
+					variablename="Uhrzeit_Stunde_Minute">
+					</var>
+					<var
 					dataname="Uhrzeit_plus_1Minute"
 					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
 					variableid="f7105869-9003-4723-8bff-6582f2e186b4"
@@ -298,16 +342,16 @@
 					variablename="Uhrzeit_plus_3Minuten">
 					</var>
 					<var
-					dataname="Uhrzeit_Stunde_Minute"
+					dataname="Einlesen_Uhrzeit"
 					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="aa0f31f4-bec7-4a59-964e-59820c789bb6"
-					variablename="Uhrzeit_Stunde_Minute">
+					variableid="eb9c0bab-2b8d-41ce-892d-9d40b35bd3b8"
+					variablename="Einlesen_Uhrzeit">
 					</var>
 					<var
-					dataname="Personal_Nr"
+					dataname="angepasste_Uhrzeit_einlesen"
 					datasourceid="2e00d5d8-4e1c-483b-afe3-119cc1b77dad"
-					variableid="0af84285-2514-4b3b-a3ab-f7314fa726f0"
-					variablename="Personal_Nr">
+					variableid="e13a4f13-9282-478d-953c-122876268d19"
+					variablename="angepasste_Uhrzeit_einlesen">
 					</var>
 				</databinding>
 				<missingdatabinding>

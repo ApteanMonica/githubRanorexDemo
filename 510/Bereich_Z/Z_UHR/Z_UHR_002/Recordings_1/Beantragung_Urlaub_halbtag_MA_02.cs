@@ -144,22 +144,26 @@ namespace Z_UHR_002.Recordings_1
             Keyboard.PrepareFocus(repo.DlgAuswaerts.CGroupBoxAllgemein.TextVon);
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum_plus_3'.", new RecordItemIndex(9));
+            Tagesdatum_plus_3 = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimePlus("d", ValueConverter.ArgumentFromString<int>("counter", "3"));
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum_plus_3'.", new RecordItemIndex(10));
             Keyboard.Press(Tagesdatum_plus_3);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Delete}' with focus on 'DlgAuswaerts.CGroupBoxAllgemein.TextBis'.", repo.DlgAuswaerts.CGroupBoxAllgemein.TextBisInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Delete}' with focus on 'DlgAuswaerts.CGroupBoxAllgemein.TextBis'.", repo.DlgAuswaerts.CGroupBoxAllgemein.TextBisInfo, new RecordItemIndex(11));
             repo.DlgAuswaerts.CGroupBoxAllgemein.TextBis.PressKeys("{Tab}{Delete}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum_plus_3' with focus on 'DlgAuswaerts.CGroupBoxAllgemein.TextBis'.", repo.DlgAuswaerts.CGroupBoxAllgemein.TextBisInfo, new RecordItemIndex(11));
+            Tagesdatum_plus_3 = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimePlus("d", ValueConverter.ArgumentFromString<int>("counter", "3"));
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum_plus_3' with focus on 'DlgAuswaerts.CGroupBoxAllgemein.TextBis'.", repo.DlgAuswaerts.CGroupBoxAllgemein.TextBisInfo, new RecordItemIndex(13));
             repo.DlgAuswaerts.CGroupBoxAllgemein.TextBis.PressKeys(Tagesdatum_plus_3);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgAuswaerts.CGroupBoxAllgemein.CbTH2Von' at Center.", repo.DlgAuswaerts.CGroupBoxAllgemein.CbTH2VonInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgAuswaerts.CGroupBoxAllgemein.CbTH2Von' at Center.", repo.DlgAuswaerts.CGroupBoxAllgemein.CbTH2VonInfo, new RecordItemIndex(14));
             repo.DlgAuswaerts.CGroupBoxAllgemein.CbTH2Von.Click();
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgAuswaerts.CGroupBoxAllgemein.DfDatumVon' at Center.", repo.DlgAuswaerts.CGroupBoxAllgemein.DfDatumVonInfo, new RecordItemIndex(13));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgAuswaerts.CGroupBoxAllgemein.DfDatumVon' at Center.", repo.DlgAuswaerts.CGroupBoxAllgemein.DfDatumVonInfo, new RecordItemIndex(15));
             //repo.DlgAuswaerts.CGroupBoxAllgemein.DfDatumVon.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}Urlaub'.", new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}Urlaub'.", new RecordItemIndex(16));
             Keyboard.Press("{Tab}{Tab}Urlaub");
             
         }

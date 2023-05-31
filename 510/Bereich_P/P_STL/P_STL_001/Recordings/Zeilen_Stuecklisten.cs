@@ -96,8 +96,8 @@ namespace P_STL_001.Recordings
             Validate.AttributeEqual(repo.FrmStueckliste.FlexGrid1.Zeilen_StuecklisteInfo, "Text", "100018");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmStueckliste.Artikel' at Center.", repo.FrmStueckliste.ArtikelInfo, new RecordItemIndex(4));
-            repo.FrmStueckliste.Artikel.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmStueckliste.FlexGrid' at Center.", repo.FrmStueckliste.FlexGridInfo, new RecordItemIndex(4));
+            repo.FrmStueckliste.FlexGrid.Click();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2{Tab}' with focus on 'FrmStueckliste.FlexGrid'.", repo.FrmStueckliste.FlexGridInfo, new RecordItemIndex(5));

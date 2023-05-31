@@ -41,8 +41,8 @@ namespace S_ADRL_001
         /// </summary>
         public Recording1()
         {
-            Programm = "S_ADR KL K";
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
+            Programm = "";
+            Startfile = "";
         }
 
         /// <summary>

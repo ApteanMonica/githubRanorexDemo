@@ -168,19 +168,16 @@ namespace N_ANLA_002.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Anlage_G' with focus on 'FrmZuauf.TabPageTp1.ColAnlaNrRow1'.", repo.FrmZuauf.TabPageTp1.ColAnlaNrRow1Info, new RecordItemIndex(7));
             repo.FrmZuauf.TabPageTp1.ColAnlaNrRow1.PressKeys(Anlage_G);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmZuauf.TabPageTp1.ColAnlaNrRow3'.", repo.FrmZuauf.TabPageTp1.ColAnlaNrRow3Info, new RecordItemIndex(8));
-            Keyboard.PrepareFocus(repo.FrmZuauf.TabPageTp1.ColAnlaNrRow3);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmZuauf.TabPageTp1.ColAnlaNrRow1'.", repo.FrmZuauf.TabPageTp1.ColAnlaNrRow1Info, new RecordItemIndex(9));
-            Keyboard.PrepareFocus(repo.FrmZuauf.TabPageTp1.ColAnlaNrRow1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Bezeichnung_Anlage_07' with focus on 'FrmZuauf.TabPageTp1.ColAnlaBezRow1'.", repo.FrmZuauf.TabPageTp1.ColAnlaBezRow1Info, new RecordItemIndex(10));
             repo.FrmZuauf.TabPageTp1.ColAnlaBezRow1.PressKeys(Bezeichnung_Anlage_07);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmZuauf.TabPageTp1.ColAnlaBezRow1'.", repo.FrmZuauf.TabPageTp1.ColAnlaBezRow1Info, new RecordItemIndex(11));
-            Keyboard.PrepareFocus(repo.FrmZuauf.TabPageTp1.ColAnlaBezRow1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Insert' Press with focus on 'FrmZuauf.FlexGrid'.", repo.FrmZuauf.FlexGridInfo, new RecordItemIndex(12));

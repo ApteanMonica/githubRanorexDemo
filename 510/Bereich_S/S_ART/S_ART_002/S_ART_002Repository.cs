@@ -29,6 +29,8 @@ namespace S_ART_002
         static S_ART_002Repository instance = new S_ART_002Repository();
         S_ART_002RepositoryFolders.FrmArtAppFolder _frmart;
         S_ART_002RepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
+        S_ART_002RepositoryFolders.SARTAppFolder _sart;
+        S_ART_002RepositoryFolders.WSVRINEUAppFolder _wsvrineu;
 
         /// <summary>
         /// Gets the singleton class instance representing the S_ART_002Repository element repository.
@@ -47,6 +49,8 @@ namespace S_ART_002
         {
             _frmart = new S_ART_002RepositoryFolders.FrmArtAppFolder(this);
             _dlgmessagebox = new S_ART_002RepositoryFolders.DlgMessageBoxAppFolder(this);
+            _sart = new S_ART_002RepositoryFolders.SARTAppFolder(this);
+            _wsvrineu = new S_ART_002RepositoryFolders.WSVRINEUAppFolder(this);
         }
 
 #region Variables
@@ -81,6 +85,24 @@ namespace S_ART_002
         public virtual S_ART_002RepositoryFolders.DlgMessageBoxAppFolder DlgMessageBox
         {
             get { return _dlgmessagebox; }
+        }
+
+        /// <summary>
+        /// The SART folder.
+        /// </summary>
+        [RepositoryFolder("cc05dca0-f283-4862-948f-497c7f9add47")]
+        public virtual S_ART_002RepositoryFolders.SARTAppFolder SART
+        {
+            get { return _sart; }
+        }
+
+        /// <summary>
+        /// The WSVRINEU folder.
+        /// </summary>
+        [RepositoryFolder("24a26271-1bb1-4410-9375-0f074f745988")]
+        public virtual S_ART_002RepositoryFolders.WSVRINEUAppFolder WSVRINEU
+        {
+            get { return _wsvrineu; }
         }
     }
 
@@ -532,6 +554,7 @@ namespace S_ART_002
             RepoItemInfo _ean_2Info;
             RepoItemInfo _tabelle_bilderInfo;
             RepoItemInfo _zeile_tabelle_bilderInfo;
+            RepoItemInfo _colartbildnrrow1Info;
             RepoItemInfo _row1column0Info;
             RepoItemInfo _rundeinheitInfo;
             PicArtBildInfoClass _picartbildInfo;
@@ -553,6 +576,7 @@ namespace S_ART_002
                 _ean_2Info = new RepoItemInfo(this, "EAN_2", ".//text[@controltypename='']", "", 30000, null, "c850b1fd-7fce-4a72-9752-1f2e4775fc08");
                 _tabelle_bilderInfo = new RepoItemInfo(this, "Tabelle_Bilder", "container[@controlname='groupBox4']//table[@accessiblename='FlexGrid']", "", 30000, null, "b097f84a-a78c-4295-ad9f-3bd5cfa9928e");
                 _zeile_tabelle_bilderInfo = new RepoItemInfo(this, "Zeile_Tabelle_Bilder", "container[@controlname='groupBox4']//text[@controltypename='']", "", 30000, null, "9e6eff96-f707-4558-961e-8fb0b19f5b7d");
+                _colartbildnrrow1Info = new RepoItemInfo(this, "ColArtBildNrRow1", "container[@controlname='groupBox4']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colArtBild_Nr Row 1']", "", 30000, null, "0ef853db-2acf-4143-8937-24c22e3a5488");
                 _row1column0Info = new RepoItemInfo(this, "Row1Column0", "container[@controlname='groupBox4']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "23162462-a7e1-4f34-a02d-231c1e22272b");
                 _rundeinheitInfo = new RepoItemInfo(this, "RundEinheit", ".//text[@accessiblename='Rund.einheit']", "", 30000, null, "a1fb38d5-755b-4864-93a4-440c92f3212a");
                 _picartbildInfo = new PicArtBildInfoClass(this);
@@ -882,6 +906,30 @@ namespace S_ART_002
             }
 
             /// <summary>
+            /// The ColArtBildNrRow1 item.
+            /// </summary>
+            [RepositoryItem("0ef853db-2acf-4143-8937-24c22e3a5488")]
+            public virtual Ranorex.Cell ColArtBildNrRow1
+            {
+                get
+                {
+                    return _colartbildnrrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColArtBildNrRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("0ef853db-2acf-4143-8937-24c22e3a5488")]
+            public virtual RepoItemInfo ColArtBildNrRow1Info
+            {
+                get
+                {
+                    return _colartbildnrrow1Info;
+                }
+            }
+
+            /// <summary>
             /// The Row1Column0 item.
             /// </summary>
             [RepositoryItem("23162462-a7e1-4f34-a02d-231c1e22272b")]
@@ -966,6 +1014,8 @@ namespace S_ART_002
             RepoItemInfo _sometextInfo;
             RepoItemInfo _colstlabezrow1Info;
             RepoItemInfo _tabelle_alternativartikelInfo;
+            RepoItemInfo _colartbez1row1Info;
+            RepoItemInfo _sometext1Info;
             RepoItemInfo _anmerk_alternativartikelInfo;
             RepoItemInfo _alternativ_art_nrInfo;
 
@@ -981,6 +1031,8 @@ namespace S_ART_002
                 _sometextInfo = new RepoItemInfo(this, "SomeText", "tabpage[@controlname='tpAllgemein2']//text[@controltypename='']", "", 30000, null, "14e9f3ae-1472-498f-a957-630e72b72378");
                 _colstlabezrow1Info = new RepoItemInfo(this, "ColStlaBezRow1", "tabpage[@controlname='tpAllgemein2']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colStla_bez Row 1']", "", 30000, null, "051727b3-0ae2-4394-b907-2cdfae02a46f");
                 _tabelle_alternativartikelInfo = new RepoItemInfo(this, "Tabelle_Alternativartikel", "tabpage[@controlname='tpAllgemein2']/container[@controlname='tblArta']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", "", 30000, null, "786e653c-17d3-4317-939d-51642e09b394");
+                _colartbez1row1Info = new RepoItemInfo(this, "ColArtBez1Row1", "tabpage[@controlname='tpAllgemein2']/container[@controlname='tblArta']//cell[@accessiblename='colArt_bez1 Row 1']", "", 30000, null, "c9bc1777-e54d-4c21-a676-f9e23cab9157");
+                _sometext1Info = new RepoItemInfo(this, "SomeText1", "tabpage[@controlname='tpAllgemein2']//text[@controltypename='' and @instance='0']", "", 30000, null, "61cc6588-efcd-4cac-b60d-5155a8d5f86c");
                 _anmerk_alternativartikelInfo = new RepoItemInfo(this, "Anmerk_Alternativartikel", "tabpage[@controlname='tpAllgemein2']/container[@controlname='tblArta']//cell[@accessiblename='colArta_anmerkung Row 1']", "", 30000, null, "e4d08cac-280f-4baa-a04a-2b9132fbe25a");
                 _alternativ_art_nrInfo = new RepoItemInfo(this, "Alternativ_Art_nr", "tabpage[@controlname='tpAllgemein2']/container[@controlname='tblArta']//cell[@accessiblename='colArt_nr2 Row 1']", "", 30000, null, "43dcc926-d095-4d33-8ccc-4188540d118b");
             }
@@ -1154,6 +1206,54 @@ namespace S_ART_002
             }
 
             /// <summary>
+            /// The ColArtBez1Row1 item.
+            /// </summary>
+            [RepositoryItem("c9bc1777-e54d-4c21-a676-f9e23cab9157")]
+            public virtual Ranorex.Cell ColArtBez1Row1
+            {
+                get
+                {
+                    return _colartbez1row1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColArtBez1Row1 item info.
+            /// </summary>
+            [RepositoryItemInfo("c9bc1777-e54d-4c21-a676-f9e23cab9157")]
+            public virtual RepoItemInfo ColArtBez1Row1Info
+            {
+                get
+                {
+                    return _colartbez1row1Info;
+                }
+            }
+
+            /// <summary>
+            /// The SomeText1 item.
+            /// </summary>
+            [RepositoryItem("61cc6588-efcd-4cac-b60d-5155a8d5f86c")]
+            public virtual Ranorex.Text SomeText1
+            {
+                get
+                {
+                    return _sometext1Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SomeText1 item info.
+            /// </summary>
+            [RepositoryItemInfo("61cc6588-efcd-4cac-b60d-5155a8d5f86c")]
+            public virtual RepoItemInfo SomeText1Info
+            {
+                get
+                {
+                    return _sometext1Info;
+                }
+            }
+
+            /// <summary>
             /// The Anmerk_Alternativartikel item.
             /// </summary>
             [RepositoryItem("e4d08cac-280f-4baa-a04a-2b9132fbe25a")]
@@ -1290,6 +1390,138 @@ namespace S_ART_002
                 get
                 {
                     return _fehlermeldung_okInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SARTAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("cc05dca0-f283-4862-948f-497c7f9add47")]
+        public partial class SARTAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _bildanzeigenInfo;
+
+            /// <summary>
+            /// Creates a new SART  folder.
+            /// </summary>
+            public SARTAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("SART", "/contextmenu[@processname='S_ART']", parentFolder, 30000, null, true, "cc05dca0-f283-4862-948f-497c7f9add47", "")
+            {
+                _bildanzeigenInfo = new RepoItemInfo(this, "BildAnzeigen", "menuitem[@accessiblename='Bild anzeigen']", "", 30000, null, "8834f621-acfa-4cb1-ad3b-8d6656bf8a84");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("cc05dca0-f283-4862-948f-497c7f9add47")]
+            public virtual Ranorex.ContextMenu Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.ContextMenu>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("cc05dca0-f283-4862-948f-497c7f9add47")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BildAnzeigen item.
+            /// </summary>
+            [RepositoryItem("8834f621-acfa-4cb1-ad3b-8d6656bf8a84")]
+            public virtual Ranorex.MenuItem BildAnzeigen
+            {
+                get
+                {
+                    return _bildanzeigenInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BildAnzeigen item info.
+            /// </summary>
+            [RepositoryItemInfo("8834f621-acfa-4cb1-ad3b-8d6656bf8a84")]
+            public virtual RepoItemInfo BildAnzeigenInfo
+            {
+                get
+                {
+                    return _bildanzeigenInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The WSVRINEUAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("24a26271-1bb1-4410-9375-0f074f745988")]
+        public partial class WSVRINEUAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _wsvrineuInfo;
+
+            /// <summary>
+            /// Creates a new WSVRINEU  folder.
+            /// </summary>
+            public WSVRINEUAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("WSVRINEU", "", parentFolder, 30000, null, true, "24a26271-1bb1-4410-9375-0f074f745988", "")
+            {
+                _wsvrineuInfo = new RepoItemInfo(this, "WSVRINEU", "", "", 30000, null, "f8e82698-e823-41b9-88e2-7e8302375a50");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("24a26271-1bb1-4410-9375-0f074f745988")]
+            public virtual Ranorex.Host Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Host>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("24a26271-1bb1-4410-9375-0f074f745988")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WSVRINEU item.
+            /// </summary>
+            [RepositoryItem("f8e82698-e823-41b9-88e2-7e8302375a50")]
+            public virtual Ranorex.Host WSVRINEU
+            {
+                get
+                {
+                    return _wsvrineuInfo.CreateAdapter<Ranorex.Host>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WSVRINEU item info.
+            /// </summary>
+            [RepositoryItemInfo("f8e82698-e823-41b9-88e2-7e8302375a50")]
+            public virtual RepoItemInfo WSVRINEUInfo
+            {
+                get
+                {
+                    return _wsvrineuInfo;
                 }
             }
         }

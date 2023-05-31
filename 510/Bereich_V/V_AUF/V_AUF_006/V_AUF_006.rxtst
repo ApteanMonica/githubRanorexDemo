@@ -82,21 +82,16 @@
 			VideoFps="15"
 			VideoRecordingMode="Off"
 			VideoSource="Auto"
-			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
 			id="515f3258-b5dd-4d5a-9783-c3391aa2e70b"
-			includeimageschecked="False"
-			includerecordingschecked="False"
 			junitreport="False"
 			name="V_AUF_006"
-			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms"
-			singlereportpdfdirectory="SingleReportPDF">
+			reportwriteinterval="30000ms">
 			</testsuite>
 			<testmodule
 			id="52ee2ff2-c0e0-4e0a-b41c-5ce162d1b414"
@@ -155,6 +150,14 @@
 					variablename="Programm">
 					</var>
 				</databinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="4ea86d75-a14f-4056-9fcb-e03048b6455a"
+					variableid="23854439-9a08-46d1-99dd-2d40665889a2"
+					variablename="StartAutProcessIDVar">
+					</var>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="6e2c0576-5d98-431b-9ad7-8fce075006dc"
@@ -197,6 +200,14 @@
 			name="CloseAUT"
 			ref="a4daa6f0-91fd-45bc-987e-b626cdb6ea0c"
 			type="Recording">
+				<missingdatavariablesbinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="4ea86d75-a14f-4056-9fcb-e03048b6455a"
+					variableid="4eb8e32c-2c56-4e7b-85ae-e08f12bd323e"
+					variablename="CloseAutProcessIDVar">
+					</var>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="ec3028d3-9258-4715-ab8b-8e002d2119c8"
@@ -279,8 +290,5 @@
 		</testconfiguration>
 	</testconfigurations>
 	<references>
-		<reference>
-			Ranorex Automation Helpers.dll
-		</reference>
 	</references>
 </testsuitedoc>

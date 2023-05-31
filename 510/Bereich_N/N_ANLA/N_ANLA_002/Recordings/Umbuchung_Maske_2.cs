@@ -88,8 +88,8 @@ namespace N_ANLA_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUmbuch.CbGleicheAnlanr' at Center.", repo.DlgUmbuch.CbGleicheAnlanrInfo, new RecordItemIndex(2));
             repo.DlgUmbuch.CbGleicheAnlanr.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='yourtext') on item 'DlgUmbuch.CbGleicheAnlanr'.", repo.DlgUmbuch.CbGleicheAnlanrInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.DlgUmbuch.CbGleicheAnlanrInfo, "Text", "yourtext");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgUmbuch.CbGleicheAnlanr'.", repo.DlgUmbuch.CbGleicheAnlanrInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.DlgUmbuch.CbGleicheAnlanrInfo, "Checked", "True");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUmbuch.PbOk' at Center.", repo.DlgUmbuch.PbOkInfo, new RecordItemIndex(4));
             repo.DlgUmbuch.PbOk.Click();

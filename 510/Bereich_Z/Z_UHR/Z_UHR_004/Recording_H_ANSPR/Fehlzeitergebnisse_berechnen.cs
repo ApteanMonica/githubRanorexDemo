@@ -122,8 +122,8 @@ namespace Z_UHR_004.Recording_H_ANSPR
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Pers_nr) on item 'TblFehlzeitergebnisse.DfPersNr'.", repo.TblFehlzeitergebnisse.DfPersNrInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.TblFehlzeitergebnisse.DfPersNrInfo, "Text", Pers_nr);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFehlzeitergebnisse.PbTimeCalc' at Center.", repo.TblFehlzeitergebnisse.PbTimeCalcInfo, new RecordItemIndex(10));
-            repo.TblFehlzeitergebnisse.PbTimeCalc.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PbTimeCalc' at Center.", repo.PbTimeCalcInfo, new RecordItemIndex(10));
+            repo.PbTimeCalc.Click();
             
         }
 

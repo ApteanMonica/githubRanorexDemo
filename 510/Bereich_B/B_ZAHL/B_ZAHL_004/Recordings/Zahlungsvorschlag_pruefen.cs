@@ -102,10 +102,8 @@ namespace B_ZAHL_004.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'4') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsVorschlag_mit_ZV_TEXT_B_ZAHL_004'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsVorschlag_mit_ZV_TEXT_B_ZAHL_004Info, new RecordItemIndex(3));
             Validate.AttributeContains(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsVorschlag_mit_ZV_TEXT_B_ZAHL_004Info, "Text", "4");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'24.682,00') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_mit_ZV_TEXT_B_ZAHL_004'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_mit_ZV_TEXT_B_ZAHL_004Info, new RecordItemIndex(4));
-                Validate.AttributeContains(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_mit_ZV_TEXT_B_ZAHL_004Info, "Text", "24.682,00", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'24.682,00') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_mit_ZV_TEXT_B_ZAHL_004'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_mit_ZV_TEXT_B_ZAHL_004Info, new RecordItemIndex(4));
+            Validate.AttributeContains(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_mit_ZV_TEXT_B_ZAHL_004Info, "Text", "24.682,00");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'7') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzahl_mit_ZV_TEXT_B_ZAHL_004'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzahl_mit_ZV_TEXT_B_ZAHL_004Info, new RecordItemIndex(5));
             Validate.AttributeContains(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzahl_mit_ZV_TEXT_B_ZAHL_004Info, "Text", "7");

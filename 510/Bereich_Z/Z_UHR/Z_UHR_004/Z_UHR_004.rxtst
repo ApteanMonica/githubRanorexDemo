@@ -34,10 +34,74 @@
 			id="1e635f83-931b-49c8-97a2-903d8e3c3fe0"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="2078879f-2937-4be4-b0e3-33c15dde20a0"
+			name="Einlesen_des_Ranoagent"
+			ref="2f4d2357-6403-402d-b60a-96aa028bfea6"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="computerName"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="f3ef2bff-f2e4-40aa-b29a-58e58a317d8a"
+					variablename="computerName">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			id="20d2fb06-a7bc-4b51-ae17-2d532ecfcd73"
+			name="510">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="computerName"
+								id="9a5f6a39-68d8-46de-8df3-623bc060cb9a">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT2">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testcase
 			id="23eb21a2-71aa-4c6c-b243-5683a7507640"
 			name="H_ANSPR">
 			</testcase>
+			<smartfoldernode
+			id="25487ef4-8c8d-4176-ab88-77b30882925e"
+			name="511,521">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="computerName"
+								id="9a5f6a39-68d8-46de-8df3-623bc060cb9a">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT2">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="2be83056-5a1b-4134-a234-1d1f6fd220d2"
 			name="StartAUT"
@@ -45,16 +109,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm"
-					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
-					variableid="a4dee258-77b5-4ac6-9835-5c7f26df1ccc"
-					variablename="Programm">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
 					variableid="47e3cac2-47e3-4fb6-87a4-6ffd210e883d"
 					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="a4dee258-77b5-4ac6-9835-5c7f26df1ccc"
+					variablename="Programm">
 					</var>
 				</databinding>
 				<missingdatabinding>
@@ -67,16 +131,30 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			id="2e83b659-2876-49c6-a607-7e75d673e1d6"
+			name="Fehlzeitergebisse_berechnen_510"
+			ref="caad2bdc-3107-4d3a-8e96-4d8a6b48f056"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Pers_nr"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="1764478f-95cb-4101-8bde-4dbf403641f8"
+					variablename="Pers_nr">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="41958a81-b215-4ab5-9311-691b08ade473"
 			name="Urlaub_genehmigen"
 			ref="704e9c3c-b17f-429c-82f4-7472da33c249"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Pers_nr"
+					dataname="Bezeichnung_Status_n_G"
 					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
-					variableid="c5263977-6bec-486f-bcfd-532f3c9947b2"
-					variablename="Pers_nr">
+					variableid="fcf488f0-b08e-46b2-9781-cb19e2f05805"
+					variablename="Bezeichnung_Status_n_G">
 					</var>
 					<var
 					dataname="Stauts_nicht_genehmigt"
@@ -85,10 +163,42 @@
 					variablename="Stauts_nicht_genehmigt">
 					</var>
 					<var
-					dataname="Bezeichnung_Status_n_G"
+					dataname="Pers_nr"
 					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
-					variableid="fcf488f0-b08e-46b2-9781-cb19e2f05805"
-					variablename="Bezeichnung_Status_n_G">
+					variableid="c5263977-6bec-486f-bcfd-532f3c9947b2"
+					variablename="Pers_nr">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="462bc141-53c9-4b56-b147-1fc206b7bb9f"
+			name="Fehlzeitergebnisse_ueberpruefen_510"
+			ref="abc80e95-b029-4e0a-9dea-74c647efe421"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Urlaub_1_beginn"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="fbbbc7a4-eebf-436e-8437-2957eb054c4d"
+					variablename="Urlaub_1_beginn">
+					</var>
+					<var
+					dataname="Urlaub_1_ende"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="3bad9a2e-ccad-4ce0-bd2b-7786406ad4c7"
+					variablename="Urlaub_1_ende">
+					</var>
+					<var
+					dataname="Urlaub_2_beginn"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="81fb2337-a808-4bbe-b482-a590957bb378"
+					variablename="Urlaub_2_beginn">
+					</var>
+					<var
+					dataname="Urlaub_2_ende"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="b0b392ce-72e2-46c0-b858-73a23e2b3e7a"
+					variablename="Urlaub_2_ende">
 					</var>
 				</databinding>
 			</testmodule>
@@ -306,6 +416,10 @@
 					name="Status_1"
 					value="Genehmigt">
 					</param>
+					<param
+					name="computerName"
+					value="">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -429,16 +543,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Pers_nr"
-					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
-					variableid="7526ef53-8247-499e-b816-4933a11e313d"
-					variablename="pers_nr">
-					</var>
-					<var
 					dataname="Mitarbeiter"
 					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
 					variableid="c7d197b7-ed36-4e7e-b077-368ea0fa11e0"
 					variablename="Mitarbeiter">
+					</var>
+					<var
+					dataname="Pers_nr"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="7526ef53-8247-499e-b816-4933a11e313d"
+					variablename="pers_nr">
 					</var>
 				</databinding>
 			</testmodule>
@@ -481,16 +595,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Status_0"
-					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
-					variableid="36f5beba-c9f3-4416-8d9a-c61d1e969a2e"
-					variablename="Status_0">
-					</var>
-					<var
 					dataname="Status_1"
 					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
 					variableid="28d577f1-f4f6-46dd-a45a-34ca8582b84b"
 					variablename="Status_1">
+					</var>
+					<var
+					dataname="Status_0"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="36f5beba-c9f3-4416-8d9a-c61d1e969a2e"
+					variablename="Status_0">
 					</var>
 				</databinding>
 			</testmodule>
@@ -501,18 +615,24 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Pers_nr"
-					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
-					variableid="dd8d2205-c990-4208-9224-56a826532368"
-					variablename="pers_nr">
-					</var>
-					<var
 					dataname="Mitarbeiter"
 					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
 					variableid="03f94018-c825-41e4-95c0-ab4ab9b19916"
 					variablename="Mitarbeiter">
 					</var>
+					<var
+					dataname="Pers_nr"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="dd8d2205-c990-4208-9224-56a826532368"
+					variablename="pers_nr">
+					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="f3c35b8b-0534-465b-9677-188203dd84ec"
+			name="Meldung_510_bestaetigen"
+			ref="6b561320-56ee-4587-b95b-0b09594c8fab"
+			type="Recording">
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -533,6 +653,10 @@
 							name="StartAUT">
 							</testmodule>
 						</setup>
+						<testmodule
+						id="2078879f-2937-4be4-b0e3-33c15dde20a0"
+						name="Einlesen_des_Ranoagent">
+						</testmodule>
 						<testmodule
 						id="d9ec6e3d-660a-4264-bfa7-bfe18e44b31b"
 						name="Mitarbeiter_auswaehlen">
@@ -565,14 +689,34 @@
 						id="76bc8784-60c9-4e5a-8ff5-a7203a29f174"
 						name="Start_AUT_2">
 						</testmodule>
-						<testmodule
-						id="9734b72d-ad0f-483c-8c9a-196896da907d"
-						name="Fehlzeitergebnisse_berechnen">
-						</testmodule>
-						<testmodule
-						id="85ad7acc-1644-4155-bb5c-ddbcc2721ff9"
-						name="Meldung_bestaetigen">
-						</testmodule>
+						<smartfoldernode
+						id="20d2fb06-a7bc-4b51-ae17-2d532ecfcd73"
+						name="510">
+							<testmodule
+							id="2e83b659-2876-49c6-a607-7e75d673e1d6"
+							name="Fehlzeitergebisse_berechnen_510">
+							</testmodule>
+							<testmodule
+							id="f3c35b8b-0534-465b-9677-188203dd84ec"
+							name="Meldung_510_bestaetigen">
+							</testmodule>
+							<testmodule
+							id="462bc141-53c9-4b56-b147-1fc206b7bb9f"
+							name="Fehlzeitergebnisse_ueberpruefen_510">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="25487ef4-8c8d-4176-ab88-77b30882925e"
+						name="511,521">
+							<testmodule
+							id="9734b72d-ad0f-483c-8c9a-196896da907d"
+							name="Fehlzeitergebnisse_berechnen">
+							</testmodule>
+							<testmodule
+							id="85ad7acc-1644-4155-bb5c-ddbcc2721ff9"
+							name="Meldung_bestaetigen">
+							</testmodule>
+						</smartfoldernode>
 						<testmodule
 						id="db330ffa-cea1-47bc-a795-b6f99a197fb6"
 						name="Fehlzeitergebnisse_ueberpruefen">
@@ -620,7 +764,13 @@
 			id="02206308-5dfe-4d77-bf49-3bdc770d6fa3">
 			</testcontainer>
 			<testcontainer
+			id="20d2fb06-a7bc-4b51-ae17-2d532ecfcd73">
+			</testcontainer>
+			<testcontainer
 			id="23eb21a2-71aa-4c6c-b243-5683a7507640">
+			</testcontainer>
+			<testcontainer
+			id="25487ef4-8c8d-4176-ab88-77b30882925e">
 			</testcontainer>
 			<testcontainer
 			id="9a5f6a39-68d8-46de-8df3-623bc060cb9a">
@@ -628,5 +778,8 @@
 		</testconfiguration>
 	</testconfigurations>
 	<references>
+		<reference>
+			Ranorex Automation Helpers.dll
+		</reference>
 	</references>
 </testsuitedoc>

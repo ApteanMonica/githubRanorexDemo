@@ -111,8 +111,8 @@ namespace S_PRLKL_002.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmPrlk.TitleBar100VerwaltungLieferantenp'", repo.FrmPrlk.TitleBar100VerwaltungLieferantenpInfo, new ActionTimeout(60000), new RecordItemIndex(1));
             repo.FrmPrlk.TitleBar100VerwaltungLieferantenpInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'Verwaltung - Lieferantenpreislisten') on item 'FrmPrlk.TitleBar100VerwaltungLieferantenp'.", repo.FrmPrlk.TitleBar100VerwaltungLieferantenpInfo, new RecordItemIndex(2));
-            Validate.AttributeRegex(repo.FrmPrlk.TitleBar100VerwaltungLieferantenpInfo, "Text", new Regex("Verwaltung - Lieferantenpreislisten"));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'Verwaltung - Lieferantenpreislisten | Lieferantenpreislisten verwalten') on item 'FrmPrlk.TitleBar100VerwaltungLieferantenp'.", repo.FrmPrlk.TitleBar100VerwaltungLieferantenpInfo, new RecordItemIndex(2));
+            Validate.AttributeRegex(repo.FrmPrlk.TitleBar100VerwaltungLieferantenpInfo, "Text", new Regex("Verwaltung - Lieferantenpreislisten | Lieferantenpreislisten verwalten"));
             
         }
 

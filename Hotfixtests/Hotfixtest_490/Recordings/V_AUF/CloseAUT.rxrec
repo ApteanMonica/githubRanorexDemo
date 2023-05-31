@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c8ffda56-034f-4729-8373-b6c6aef78a9d"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="Hotfixtest_490.Recordings.V_AUF">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="500ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="e635482c-5f55-447c-93b9-433940aef922">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="29c7cca2-1348-40e1-92b3-71ba53ecb5a2"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='frmAufk']/titlebar[@accessiblerole='TitleBar']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="d89bb89b-e51b-4b0f-81f0-e6ec1287eada"
+	name="Hotfixtest_490Repository"
+	relativepath="..\..\Hotfixtest_490Repository.rxrep">
+		<codegen
+		classname="Hotfixtest_490Repository"
+		namespace="Hotfixtest_490">
+		</codegen>
+		<rootfolder
+		id="cdb43fce-ace5-4d2f-ae99-32e0f8e0ae90"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+		<reference>
+			..\..\..\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll
+		</reference>
+	</references>
+</recordtable>

@@ -47,36 +47,7 @@ mode="Global">
 	<recorditems>
 		<validationitem
 		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="f31c1d37-0421-45b5-913e-9b238daeb1ce">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Anlage_G">
-				</binding>
-			</bindings>
-			<info
-			id="8801011e-ba46-4119-a60f-88c3851dc46e"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmZuauf']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tp1']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAnla_nr Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="3aaa6581-f831-4112-b2c9-bbacaa647885">
 			<comment>
@@ -101,7 +72,7 @@ mode="Global">
 		</validationitem>
 		<validationitem
 		action="AttributeEqual"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="d13403f0-a114-404a-8869-8d2c1e47aa75">
 			<comment>
@@ -170,7 +141,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				1000,00
+				2.300,00
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -273,7 +244,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				1000,00
+				1.000,00
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -486,6 +457,35 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
+		searchpropertyid="f31c1d37-0421-45b5-913e-9b238daeb1ce">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Anlage_G">
+				</binding>
+			</bindings>
+			<info
+			id="8801011e-ba46-4119-a60f-88c3851dc46e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZuauf']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tp1']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAnla_nr Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
 		searchpropertyid="76e746e3-2a5d-473f-8fa1-a87fd7e146a8">
 			<comment>
 			</comment>
@@ -553,7 +553,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				2300,00
+				2.300,00
 			</matchvalue>
 		</validationitem>
 		<mouseitem

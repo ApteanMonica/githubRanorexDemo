@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_BUKA_006.Recordings_B_EXOPS
+namespace B_EXOPV_005.Recordings_B_EXOPV
 {
-    public partial class B_EXOPS_Validation_Belege_aus_B_BUKA
+    public partial class Optionen_aendern_L_dopp_Beleg_Fehlerstatus
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

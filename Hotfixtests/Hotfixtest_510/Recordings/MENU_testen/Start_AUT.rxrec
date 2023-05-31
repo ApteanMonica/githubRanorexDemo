@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4cda9089-4c2f-4cd7-84e6-870af23f89c9"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Start_AUT"
+	namespace="Hotfixtest_510.Recordings.MENU_testen">
+	</codegen>
+	<variables>
+		<var
+		id="76215538-7c67-47bf-bfad-ed827b563bfe"
+		name="Startfile">
+			C:\Testdaten\Allgemein\Start.bat
+		</var>
+		<var
+		id="0345f2e3-071c-4367-b15d-75f53dd4f8ef"
+		name="Programm">
+			MENU
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="FileName"
+				variable="Startfile">
+				</binding>
+				<binding
+				target="Arguments"
+				variable="Programm">
+				</binding>
+			</bindings>
+			<filename>
+				yourapp
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="fbecb339-84a2-42a7-a392-1d81182f6d36"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f32f628a-2a64-40c4-bdeb-d2e82cfcc56b"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='FormWorkplace']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="True"
+		searchpropertyid="5cc66c9d-ec4b-42f0-b1fd-8b4db8ee7c48"
+		sx="3369"
+		sy="168"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="46fbee58-d3cc-442a-b3ac-d7cbff2ea112"
+			sourcename="Recorder">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="button"
+				rect="3360,148,34,30"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Schließen
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Drücken
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Schließt das Fenster.
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Schließen
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PushButton
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='dlgRs2ReleaseInfo']/?/?/button[@accessiblename='Schließen']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="c1077909-6b6b-4cb4-aceb-7d789f288db8">
+				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
+RyTEckmq561SZSgj/9k=
+			</helperscreenshot>
+		</mouseitem>
+		<validationitem
+		action="AttributeRegex"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e4650e01-23d4-474f-be5c-654a9958f33f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f32f628a-2a64-40c4-bdeb-d2e82cfcc56b"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="3"
+				prefcap="titlebar"
+				rect="-31976,-31997,128,25"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100] - RS REFDB    -    rs2 Version 5.2.1 SP07 Hotfix-51     —     Home
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100] - RS REFDB    -    rs2 Version 5.2.1 SP07 Hotfix-51     —     Home
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='FormWorkplace']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="529e66b3-b8ff-45e7-a16a-09c011ff94a7"
+	name="Hotfixtest_510Repository"
+	relativepath="..\..\Hotfixtest_510Repository.rxrep">
+		<codegen
+		classname="Hotfixtest_510Repository"
+		namespace="Hotfixtest_510">
+		</codegen>
+		<rootfolder
+		id="0c5ed973-4869-48c7-8e6d-3f1ce35132a2"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Start_AUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

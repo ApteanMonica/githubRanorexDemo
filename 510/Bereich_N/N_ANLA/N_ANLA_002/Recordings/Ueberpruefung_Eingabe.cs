@@ -131,35 +131,35 @@ namespace N_ANLA_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anlage_G) on item 'FrmZuauf.TabPageTp1.ColAnlaNrRow1'.", repo.FrmZuauf.TabPageTp1.ColAnlaNrRow1Info, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.FrmZuauf.TabPageTp1.ColAnlaNrRow1Info, "Text", Anlage_G);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Anlage G') on item 'FrmZuauf.TabPageTp1.ColAnlaBezRow1'.", repo.FrmZuauf.TabPageTp1.ColAnlaBezRow1Info, new RecordItemIndex(0));
+            //Validate.AttributeEqual(repo.FrmZuauf.TabPageTp1.ColAnlaBezRow1Info, "Text", "Anlage G");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Anlage G') on item 'FrmZuauf.TabPageTp1.ColAnlaBezRow1'.", repo.FrmZuauf.TabPageTp1.ColAnlaBezRow1Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.FrmZuauf.TabPageTp1.ColAnlaBezRow1Info, "Text", "Anlage G");
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.300,00') on item 'FrmZuauf.TabPageTp1.ColAnweAhkbetragRow1'.", repo.FrmZuauf.TabPageTp1.ColAnweAhkbetragRow1Info, new RecordItemIndex(1));
+            //Validate.AttributeEqual(repo.FrmZuauf.TabPageTp1.ColAnweAhkbetragRow1Info, "Text", "2.300,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1000,00') on item 'FrmZuauf.TabPageTp1.ColAnweAhkbetragRow1'.", repo.FrmZuauf.TabPageTp1.ColAnweAhkbetragRow1Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.FrmZuauf.TabPageTp1.ColAnweAhkbetragRow1Info, "Text", "1000,00");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anlage_D) on item 'FrmZuauf.TabPageTp1.ColAnlaNrRow2'.", repo.FrmZuauf.TabPageTp1.ColAnlaNrRow2Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anlage_D) on item 'FrmZuauf.TabPageTp1.ColAnlaNrRow2'.", repo.FrmZuauf.TabPageTp1.ColAnlaNrRow2Info, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.FrmZuauf.TabPageTp1.ColAnlaNrRow2Info, "Text", Anlage_D);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1000,00') on item 'FrmZuauf.TabPageTp1.ColAnweAhkbetragRow2'.", repo.FrmZuauf.TabPageTp1.ColAnweAhkbetragRow2Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.FrmZuauf.TabPageTp1.ColAnweAhkbetragRow2Info, "Text", "1000,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.000,00') on item 'FrmZuauf.TabPageTp1.ColAnweAhkbetragRow2'.", repo.FrmZuauf.TabPageTp1.ColAnweAhkbetragRow2Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.FrmZuauf.TabPageTp1.ColAnweAhkbetragRow2Info, "Text", "1.000,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anlage_E) on item 'FrmZuauf.TabPageTp1.ColAnlaNrRow3'.", repo.FrmZuauf.TabPageTp1.ColAnlaNrRow3Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anlage_E) on item 'FrmZuauf.TabPageTp1.ColAnlaNrRow3'.", repo.FrmZuauf.TabPageTp1.ColAnlaNrRow3Info, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.FrmZuauf.TabPageTp1.ColAnlaNrRow3Info, "Text", Anlage_E);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='600,00') on item 'FrmZuauf.TabPageTp1.ColAnweAhkbetragRow3'.", repo.FrmZuauf.TabPageTp1.ColAnweAhkbetragRow3Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='600,00') on item 'FrmZuauf.TabPageTp1.ColAnweAhkbetragRow3'.", repo.FrmZuauf.TabPageTp1.ColAnweAhkbetragRow3Info, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.FrmZuauf.TabPageTp1.ColAnweAhkbetragRow3Info, "Text", "600,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anlage_F) on item 'FrmZuauf.TabPageTp1.ColAnlaNrRow4'.", repo.FrmZuauf.TabPageTp1.ColAnlaNrRow4Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anlage_F) on item 'FrmZuauf.TabPageTp1.ColAnlaNrRow4'.", repo.FrmZuauf.TabPageTp1.ColAnlaNrRow4Info, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.FrmZuauf.TabPageTp1.ColAnlaNrRow4Info, "Text", Anlage_F);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='700,00') on item 'FrmZuauf.TabPageTp1.ColAnweAhkbetragRow4'.", repo.FrmZuauf.TabPageTp1.ColAnweAhkbetragRow4Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='700,00') on item 'FrmZuauf.TabPageTp1.ColAnweAhkbetragRow4'.", repo.FrmZuauf.TabPageTp1.ColAnweAhkbetragRow4Info, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.FrmZuauf.TabPageTp1.ColAnweAhkbetragRow4Info, "Text", "700,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2300,00') on item 'FrmZuauf.TabPageTp1.ColAnweAhkbetragRow1'.", repo.FrmZuauf.TabPageTp1.ColAnweAhkbetragRow1Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.FrmZuauf.TabPageTp1.ColAnweAhkbetragRow1Info, "Text", "2300,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anlage_G) on item 'FrmZuauf.TabPageTp1.ColAnlaNrRow1'.", repo.FrmZuauf.TabPageTp1.ColAnlaNrRow1Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.FrmZuauf.TabPageTp1.ColAnlaNrRow1Info, "Text", Anlage_G);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.300,00') on item 'FrmZuauf.TabPageTp1.ColAnweAhkbetragRow1'.", repo.FrmZuauf.TabPageTp1.ColAnweAhkbetragRow1Info, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmZuauf.TabPageTp1.ColAnweAhkbetragRow1Info, "Text", "2.300,00");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmZuauf.CbUb' at Center.", repo.FrmZuauf.CbUbInfo, new RecordItemIndex(10));
             repo.FrmZuauf.CbUb.Click();

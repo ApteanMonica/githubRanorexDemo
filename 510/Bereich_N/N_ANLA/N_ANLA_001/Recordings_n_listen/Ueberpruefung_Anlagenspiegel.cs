@@ -118,47 +118,77 @@ namespace N_ANLA_001.Recordings_n_listen
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2022') on item 'FrmSpiegel.DfGjhrBez'.", repo.FrmSpiegel.DfGjhrBezInfo, new RecordItemIndex(0));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmSpiegel.PbDataAccessDruck' at Center.", repo.FrmSpiegel.PbDataAccessDruckInfo, new RecordItemIndex(0));
+            //repo.FrmSpiegel.PbDataAccessDruck.Click();
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbExport' at Center.", repo.DlgDrucken.PbExportInfo, new RecordItemIndex(1));
+            //repo.DlgDrucken.PbExport.Click();
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PbExportItems.Tabelle' at Center.", repo.PbExportItems.TabelleInfo, new RecordItemIndex(2));
+            //repo.PbExportItems.Tabelle.Click();
+            
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblDrucken.TitleBar100AVZAuswertungenKonten'", repo.TblDrucken.TitleBar100AVZAuswertungenKontenInfo, new ActionTimeout(120000), new RecordItemIndex(3));
+            //repo.TblDrucken.TitleBar100AVZAuswertungenKontenInfo.WaitForExists(120000);
+            
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'AVZ-Auswertungen Konten') on item 'TblDrucken.TitleBar100AVZAuswertungenKonten'.", repo.TblDrucken.TitleBar100AVZAuswertungenKontenInfo, new RecordItemIndex(4));
+            //Validate.AttributeContains(repo.TblDrucken.TitleBar100AVZAuswertungenKontenInfo, "Text", "AVZ-Auswertungen Konten");
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDrucken.Maximieren' at Center.", repo.TblDrucken.MaximierenInfo, new RecordItemIndex(5));
+            //repo.TblDrucken.Maximieren.Click();
+            
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$GF_Jahr_Anlagenspiegel) on item 'TblDrucken.CColumnRow1'.", repo.TblDrucken.CColumnRow1Info, new RecordItemIndex(6));
+            //Validate.AttributeEqual(repo.TblDrucken.CColumnRow1Info, "Text", GF_Jahr_Anlagenspiegel);
+            
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Konto_Anlagenspiegel) on item 'TblDrucken.CColumnRow11'.", repo.TblDrucken.CColumnRow11Info, new RecordItemIndex(7));
+            //Validate.AttributeEqual(repo.TblDrucken.CColumnRow11Info, "Text", Konto_Anlagenspiegel);
+            
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$AHK_Betrag_Anlagenspiegel) on item 'TblDrucken.CColumnRow12'.", repo.TblDrucken.CColumnRow12Info, new RecordItemIndex(8));
+            //Validate.AttributeEqual(repo.TblDrucken.CColumnRow12Info, "Text", AHK_Betrag_Anlagenspiegel);
+            
+            //Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblDrucken.Row2Column0'.", repo.TblDrucken.Row2Column0Info, new RecordItemIndex(9));
+            //Validate.NotExists(repo.TblDrucken.Row2Column0Info);
+            
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press.", new RecordItemIndex(10));
+            //Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2022') on item 'FrmSpiegel.DfGjhrBez'.", repo.FrmSpiegel.DfGjhrBezInfo, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.FrmSpiegel.DfGjhrBezInfo, "Text", "2022");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'N_ANLA_001_01{Tab}' with focus on 'FrmSpiegel.DfAnlaNrVon'.", repo.FrmSpiegel.DfAnlaNrVonInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'N_ANLA_001_01{Tab}' with focus on 'FrmSpiegel.DfAnlaNrVon'.", repo.FrmSpiegel.DfAnlaNrVonInfo, new RecordItemIndex(12));
             repo.FrmSpiegel.DfAnlaNrVon.PressKeys("N_ANLA_001_01{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'N_ANLA_001_03{Tab}' with focus on 'FrmSpiegel.DfAnlaNrBis'.", repo.FrmSpiegel.DfAnlaNrBisInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'N_ANLA_001_03{Tab}' with focus on 'FrmSpiegel.DfAnlaNrBis'.", repo.FrmSpiegel.DfAnlaNrBisInfo, new RecordItemIndex(13));
             repo.FrmSpiegel.DfAnlaNrBis.PressKeys("N_ANLA_001_03{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmSpiegel.PbDataAccessDruck' at Center.", repo.FrmSpiegel.PbDataAccessDruckInfo, new RecordItemIndex(3));
-            repo.FrmSpiegel.PbDataAccessDruck.Click();
+            // Header text
+            Report.Log(ReportLevel.Info, "Section", "Header text", new RecordItemIndex(14));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbExport' at Center.", repo.DlgDrucken.PbExportInfo, new RecordItemIndex(4));
-            repo.DlgDrucken.PbExport.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmSpiegel.PbBezeichnungTab' at Center.", repo.FrmSpiegel.PbBezeichnungTabInfo, new RecordItemIndex(15));
+            repo.FrmSpiegel.PbBezeichnungTab.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PbExportItems.Tabelle' at Center.", repo.PbExportItems.TabelleInfo, new RecordItemIndex(5));
-            repo.PbExportItems.Tabelle.Click();
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'DlgMessageBox.AVZAnlagen'", repo.DlgMessageBox.AVZAnlagenInfo, new ActionTimeout(5000), new RecordItemIndex(16));
+            repo.DlgMessageBox.AVZAnlagenInfo.WaitForExists(5000);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblDrucken.TitleBar100AVZAuswertungenKonten'", repo.TblDrucken.TitleBar100AVZAuswertungenKontenInfo, new ActionTimeout(120000), new RecordItemIndex(6));
-            repo.TblDrucken.TitleBar100AVZAuswertungenKontenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Anlagenspiegel erstellen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Anlagenspiegel erstellen?");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'AVZ-Auswertungen Konten') on item 'TblDrucken.TitleBar100AVZAuswertungenKonten'.", repo.TblDrucken.TitleBar100AVZAuswertungenKontenInfo, new RecordItemIndex(7));
-            Validate.AttributeContains(repo.TblDrucken.TitleBar100AVZAuswertungenKontenInfo, "Text", "AVZ-Auswertungen Konten");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblSpiegel.TitleBar100AVZAnlagenspiegelKomp'", repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo, new ActionTimeout(120000), new RecordItemIndex(18));
+            repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDrucken.Maximieren' at Center.", repo.TblDrucken.MaximierenInfo, new RecordItemIndex(8));
-            repo.TblDrucken.Maximieren.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'AVZ-Anlagenspiegel-Komprimiert') on item 'TblSpiegel.TitleBar100AVZAnlagenspiegelKomp'.", repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo, new RecordItemIndex(19));
+            Validate.AttributeContains(repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo, "Text", "AVZ-Anlagenspiegel-Komprimiert");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$GF_Jahr_Anlagenspiegel) on item 'TblDrucken.CColumnRow1'.", repo.TblDrucken.CColumnRow1Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.TblDrucken.CColumnRow1Info, "Text", GF_Jahr_Anlagenspiegel);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Konto_Anlagenspiegel) on item 'TblSpiegel.FlexGrid.ColWert1Row1'.", repo.TblSpiegel.FlexGrid.ColWert1Row1Info, new RecordItemIndex(20));
+            Validate.AttributeEqual(repo.TblSpiegel.FlexGrid.ColWert1Row1Info, "Text", Konto_Anlagenspiegel);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Konto_Anlagenspiegel) on item 'TblDrucken.CColumnRow11'.", repo.TblDrucken.CColumnRow11Info, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.TblDrucken.CColumnRow11Info, "Text", Konto_Anlagenspiegel);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Betriebs- und Geschäftsausstattung') on item 'TblSpiegel.FlexGrid.ColWertBezRow1'.", repo.TblSpiegel.FlexGrid.ColWertBezRow1Info, new RecordItemIndex(21));
+            Validate.AttributeEqual(repo.TblSpiegel.FlexGrid.ColWertBezRow1Info, "Text", "Betriebs- und Geschäftsausstattung");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$AHK_Betrag_Anlagenspiegel) on item 'TblDrucken.CColumnRow12'.", repo.TblDrucken.CColumnRow12Info, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.TblDrucken.CColumnRow12Info, "Text", AHK_Betrag_Anlagenspiegel);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$AHK_Betrag_Anlagenspiegel) on item 'TblSpiegel.FlexGrid.ColAhkEndeRow1'.", repo.TblSpiegel.FlexGrid.ColAhkEndeRow1Info, new RecordItemIndex(22));
+            Validate.AttributeEqual(repo.TblSpiegel.FlexGrid.ColAhkEndeRow1Info, "Text", AHK_Betrag_Anlagenspiegel);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblDrucken.Row2Column0'.", repo.TblDrucken.Row2Column0Info, new RecordItemIndex(12));
-            Validate.NotExists(repo.TblDrucken.Row2Column0Info);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press.", new RecordItemIndex(13));
-            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblSpiegel.FlexGrid.Row2Column0'.", repo.TblSpiegel.FlexGrid.Row2Column0Info, new RecordItemIndex(23));
+            Validate.NotExists(repo.TblSpiegel.FlexGrid.Row2Column0Info);
             
         }
 

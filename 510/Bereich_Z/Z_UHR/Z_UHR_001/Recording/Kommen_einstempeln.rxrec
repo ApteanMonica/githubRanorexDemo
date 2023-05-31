@@ -54,6 +54,14 @@ mode="Global">
 		id="b71537f4-a0fc-4bc6-a609-bd144c178866"
 		name="Uhrzeit_plus_3Minuten">
 		</var>
+		<var
+		id="8e3901fe-6e67-4f4d-aa29-c0deb2871e93"
+		name="Einlesen_Uhrzeit">
+		</var>
+		<var
+		id="086a1326-8431-4bbf-9188-853001bb69b0"
+		name="angepasste_Uhrzeit_einlesen">
+		</var>
 	</variables>
 	<recorditems>
 		<keysequenceitem
@@ -4078,7 +4086,7 @@ mode="Global">
 		</userrecorditem>
 		<validationitem
 		action="AttributeContains"
-		enabled="True"
+		enabled="False"
 		optional="True"
 		searchpropertyid="a8d34eec-2ed7-48ec-9686-344d7b15931e">
 			<comment>
@@ -4106,6 +4114,202 @@ mode="Global">
 				$Uhrzeit_Stunde_Minute&#32;
 			</matchvalue>
 		</validationitem>
+		<getvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ab110f06-baa0-4d45-a0d8-9be00c7ff51b"
+		varname="Einlesen_Uhrzeit">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="079eeaad-ef96-48b0-8e31-5af03785f782"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmUhr']/container[@controlname='ClientArea']/container[@controlname='splitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblAnwesend']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Personal_Nr]/cell[@accessiblename~'colUhr_dtbeginn ']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="GetDateAsString"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="angepasste_Uhrzeit_einlesen">
+				</binding>
+			</bindings>
+			<arguments
+			id="70e63189-14ca-4ecf-89d8-8a382853e5ef">
+				<argument
+				argname="date"
+				id="690e3145-586a-4f3e-b425-eee7c76a8c88"
+				variable="Einlesen_Uhrzeit">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="expectedFormat"
+				id="0f07d993-94a2-4e02-ad88-bcf87be4b73c">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						HH:mm
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="GetDateTimePlus"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Uhrzeit_plus_1Minute">
+				</binding>
+			</bindings>
+			<arguments
+			id="16f2e300-ba22-4854-a910-bca464528ccd">
+				<argument
+				argname="date"
+				id="432bd666-2c1f-4494-b2da-385a817def1b"
+				variable="Uhrzeit_Stunde_Minute">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="s"
+				id="2d154b67-3045-4aae-b19d-c93b589419c0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						m
+					</argvalue>
+				</argument>
+				<argument
+				argname="counter"
+				id="78cbf5f7-2a5f-4b49-a676-a2720a81f22a">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="expectedFormat"
+				id="5a8a9aa4-fa46-4206-8ba2-ffd9919db0a1">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						HH:mm
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="764c3c7b-036e-4d29-8640-5ad9a9f0756b">
+			<comment>
+				angepasste Uhrzeit eingelesen mit LOG
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="angepasste_Uhrzeit_einlesen">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="9de78466-3254-4ab5-b0e9-a96486309a03">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Uhrzeit_Stunde_Minute">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ValidateVar1Var2"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="3f0da902-ebdf-46f1-be87-bdf0267fa752">
+				<argument
+				argname="variable"
+				id="f7648f33-f2d7-4729-a0a1-78e2e3b02680"
+				variable="angepasste_Uhrzeit_einlesen">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="var1"
+				id="86d89f78-eefd-4792-b129-e9ccdc3f1ca1"
+				variable="Uhrzeit_Stunde_Minute">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="var2"
+				id="9dffee0d-ee21-460f-ab09-20e6e833fa8f"
+				variable="Uhrzeit_plus_1Minute">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -4153,258 +4357,6 @@ mode="Global">
 			sourcename="RepositoryEditor">
 				<path>
 					/form[@controlname='frmUhr']/container[@controlname='ClientArea']/container[@controlname='splitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblAnwesend']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Personal_Nr]/cell[@accessiblename~'colPers_name']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeRegex"
-		enabled="False"
-		optional="False"
-		searchpropertyid="a8d34eec-2ed7-48ec-9686-344d7b15931e">
-			<comment>
-				Wie überprüfe ich die Uhrzeit am beisten?
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Uhrzeit_plus_1Minute">
-				</binding>
-			</bindings>
-			<info
-			id="68a1ebdd-7c65-439e-8a86-8c909ec8aac1"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="11"
-				prefcap="cell"
-				rect="650,396,49,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						True
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						09:57:34
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colUhr_dtbeginn Row 1
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Selected, Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						09:57:34
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='frmUhr']/container[@controlname='ClientArea']/container[@controlname='splitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblAnwesend']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colUhr_dtbeginn Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				$Uhrzeit_plus_1Minute
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeRegex"
-		enabled="False"
-		optional="False"
-		searchpropertyid="a8d34eec-2ed7-48ec-9686-344d7b15931e">
-			<comment>
-				Wie überprüfe ich die Uhrzeit am beisten?
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Uhrzeit_plus_2Minuten">
-				</binding>
-			</bindings>
-			<info
-			id="68a1ebdd-7c65-439e-8a86-8c909ec8aac1"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="11"
-				prefcap="cell"
-				rect="650,396,49,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						True
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						09:57:34
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colUhr_dtbeginn Row 1
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Selected, Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						09:57:34
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='frmUhr']/container[@controlname='ClientArea']/container[@controlname='splitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblAnwesend']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colUhr_dtbeginn Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeRegex"
-		enabled="False"
-		optional="False"
-		searchpropertyid="a8d34eec-2ed7-48ec-9686-344d7b15931e">
-			<comment>
-				Wie überprüfe ich die Uhrzeit am beisten?
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Uhrzeit_plus_3Minuten">
-				</binding>
-			</bindings>
-			<info
-			id="68a1ebdd-7c65-439e-8a86-8c909ec8aac1"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="11"
-				prefcap="cell"
-				rect="650,396,49,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						True
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						09:57:34
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colUhr_dtbeginn Row 1
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Selected, Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						09:57:34
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='frmUhr']/container[@controlname='ClientArea']/container[@controlname='splitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblAnwesend']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colUhr_dtbeginn Row 1']
 				</path>
 				<robustPath>
 				</robustPath>

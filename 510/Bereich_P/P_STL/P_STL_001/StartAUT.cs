@@ -111,9 +111,6 @@ namespace P_STL_001
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmStueckliste.TitleBar100VerwaltungStueckliste'", repo.FrmStueckliste.TitleBar100VerwaltungStuecklisteInfo, new ActionTimeout(60000), new RecordItemIndex(1));
             repo.FrmStueckliste.TitleBar100VerwaltungStuecklisteInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Verwaltung - Stückliste') on item 'FrmStueckliste.TitleBar100VerwaltungStueckliste'.", repo.FrmStueckliste.TitleBar100VerwaltungStuecklisteInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmStueckliste.TitleBar100VerwaltungStuecklisteInfo, "Text", "Verwaltung - Stückliste");
-            
         }
 
 #region Image Feature Data

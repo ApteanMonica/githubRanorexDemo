@@ -144,16 +144,20 @@ namespace Z_UHR_002.Recordings_1
             Keyboard.PrepareFocus(repo.DlgAuswaerts.CGroupBoxAllgemein.DfDatumVon);
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum_plus_3' with focus on 'DlgAuswaerts.CGroupBoxAllgemein.DfDatumVon'.", repo.DlgAuswaerts.CGroupBoxAllgemein.DfDatumVonInfo, new RecordItemIndex(9));
+            Tagesdatum_plus_3 = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimePlus("d", ValueConverter.ArgumentFromString<int>("counter", "3"));
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum_plus_3' with focus on 'DlgAuswaerts.CGroupBoxAllgemein.DfDatumVon'.", repo.DlgAuswaerts.CGroupBoxAllgemein.DfDatumVonInfo, new RecordItemIndex(10));
             repo.DlgAuswaerts.CGroupBoxAllgemein.DfDatumVon.PressKeys(Tagesdatum_plus_3);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Delete}' with focus on 'DlgAuswaerts.CGroupBoxAllgemein.TextBis'.", repo.DlgAuswaerts.CGroupBoxAllgemein.TextBisInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Delete}' with focus on 'DlgAuswaerts.CGroupBoxAllgemein.TextBis'.", repo.DlgAuswaerts.CGroupBoxAllgemein.TextBisInfo, new RecordItemIndex(11));
             repo.DlgAuswaerts.CGroupBoxAllgemein.TextBis.PressKeys("{Tab}{Delete}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum_plus_7' with focus on 'DlgAuswaerts.CGroupBoxAllgemein.TextBis'.", repo.DlgAuswaerts.CGroupBoxAllgemein.TextBisInfo, new RecordItemIndex(11));
+            Tagesdatum_plus_7 = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimePlus("d", ValueConverter.ArgumentFromString<int>("counter", "7"));
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum_plus_7' with focus on 'DlgAuswaerts.CGroupBoxAllgemein.TextBis'.", repo.DlgAuswaerts.CGroupBoxAllgemein.TextBisInfo, new RecordItemIndex(13));
             repo.DlgAuswaerts.CGroupBoxAllgemein.TextBis.PressKeys(Tagesdatum_plus_7);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab down}Urlaub'.", new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab down}Urlaub'.", new RecordItemIndex(14));
             Keyboard.Press("{Tab down}Urlaub");
             
         }

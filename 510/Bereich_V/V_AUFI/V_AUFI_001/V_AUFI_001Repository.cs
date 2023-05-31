@@ -39,6 +39,7 @@ namespace V_AUFI_001
         V_AUFI_001RepositoryFolders.Form100PreisLagerInfoAppFolder _form100preislagerinfo;
         V_AUFI_001RepositoryFolders.Form100DetailanzeigePreisermittlungAppFolder _form100detailanzeigepreisermittlung;
         V_AUFI_001RepositoryFolders.Form100AuftragsInfoAppFolder _form100auftragsinfo;
+        V_AUFI_001RepositoryFolders.Dienstag12122021OneNoteAppFolder _dienstag12122021onenote;
 
         /// <summary>
         /// Gets the singleton class instance representing the V_AUFI_001Repository element repository.
@@ -67,6 +68,7 @@ namespace V_AUFI_001
             _form100preislagerinfo = new V_AUFI_001RepositoryFolders.Form100PreisLagerInfoAppFolder(this);
             _form100detailanzeigepreisermittlung = new V_AUFI_001RepositoryFolders.Form100DetailanzeigePreisermittlungAppFolder(this);
             _form100auftragsinfo = new V_AUFI_001RepositoryFolders.Form100AuftragsInfoAppFolder(this);
+            _dienstag12122021onenote = new V_AUFI_001RepositoryFolders.Dienstag12122021OneNoteAppFolder(this);
         }
 
 #region Variables
@@ -192,6 +194,15 @@ namespace V_AUFI_001
         {
             get { return _form100auftragsinfo; }
         }
+
+        /// <summary>
+        /// The Dienstag12122021OneNote folder.
+        /// </summary>
+        [RepositoryFolder("83fcaa14-4c81-4637-8eeb-f9fa533bce32")]
+        public virtual V_AUFI_001RepositoryFolders.Dienstag12122021OneNoteAppFolder Dienstag12122021OneNote
+        {
+            get { return _dienstag12122021onenote; }
+        }
     }
 
     /// <summary>
@@ -233,26 +244,26 @@ namespace V_AUFI_001
             public AuftragsinformationAppFolder(RepoGenBaseFolder parentFolder) :
                     base("Auftragsinformation", "/form[@controlname='mdiV_AUFI']", parentFolder, 30000, null, true, "d4ff663b-2505-4b42-ac64-4c77666882d4", "")
             {
-                _titlebar100auftragsinfoInfo = new RepoItemInfo(this, "TitleBar100AuftragsInfo", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "e7d155ca-3d6a-4124-9b4c-bc5c264adba8");
-                _auftragInfo = new RepoItemInfo(this, "Auftrag", ".//text[@controlname='dfAufk_nr']/text[@accessiblename='Auftrag']", "", 30000, null, "78e7930b-3b02-4852-9b77-6ab307aa1f4e");
-                _titlebar100auftraegeInfo = new RepoItemInfo(this, "TitleBar100Auftraege", "?/?/form[@controlname='mditblV_aufk']/titlebar[@accessiblerole='TitleBar']", "", 30000, null, "2b28cf58-831a-40d5-8705-f1267511a98c");
-                _titlebar100positionenInfo = new RepoItemInfo(this, "TitleBar100Positionen", "?/?/form[@controlname='mditblV_aufp']/titlebar[@accessiblerole='TitleBar']", "", 30000, null, "8d109068-5a23-4cf5-baa1-fe37bcd2f4b0");
-                _pbcommonneuInfo = new RepoItemInfo(this, "PbCommonNeu", "?/?/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Neu']", "", 30000, null, "7cf08c0e-f175-4603-9306-a5adfba47306");
-                _dfaufknrInfo = new RepoItemInfo(this, "DfAufkNr", "container[@controlname='ToolBar']/?/?/?//text[@controlname='dfAufk_nr']", "", 30000, null, "c27999e6-e35e-4031-b6a0-39dd8c160a4b");
+                _titlebar100auftragsinfoInfo = new RepoItemInfo(this, "TitleBar100AuftragsInfo", "titlebar[@accessiblerole='TitleBar']", 30000, null, "e7d155ca-3d6a-4124-9b4c-bc5c264adba8");
+                _auftragInfo = new RepoItemInfo(this, "Auftrag", ".//text[@controlname='dfAufk_nr']/text[@accessiblename='Auftrag']", 30000, null, "78e7930b-3b02-4852-9b77-6ab307aa1f4e");
+                _titlebar100auftraegeInfo = new RepoItemInfo(this, "TitleBar100Auftraege", "?/?/form[@controlname='mditblV_aufk']/titlebar[@accessiblerole='TitleBar']", 30000, null, "2b28cf58-831a-40d5-8705-f1267511a98c");
+                _titlebar100positionenInfo = new RepoItemInfo(this, "TitleBar100Positionen", "?/?/form[@controlname='mditblV_aufp']/titlebar[@accessiblerole='TitleBar']", 30000, null, "8d109068-5a23-4cf5-baa1-fe37bcd2f4b0");
+                _pbcommonneuInfo = new RepoItemInfo(this, "PbCommonNeu", "?/?/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Neu']", 30000, null, "7cf08c0e-f175-4603-9306-a5adfba47306");
+                _dfaufknrInfo = new RepoItemInfo(this, "DfAufkNr", "container[@controlname='ToolBar']/?/?/?//text[@controlname='dfAufk_nr']", 30000, null, "c27999e6-e35e-4031-b6a0-39dd8c160a4b");
                 _screenshots_fensterfunktionenInfo = new Screenshots_FensterfunktionenInfoClass(this);
-                _rechnungInfo = new RepoItemInfo(this, "Rechnung", ".//text[@controlname='dfRech_nr']/text[@accessiblename='Rechnung']", "", 30000, null, "8385de33-a8ac-48a4-809c-a7d05f89c721");
-                _pbrechnungInfo = new RepoItemInfo(this, "PbRechnung", "container[@controlname='ToolBar']/?/?//button[@controlname='pbRechnung']", "", 30000, null, "c0f02512-6167-4b1a-86b8-6358002f061d");
-                _rechnrrow1Info = new RepoItemInfo(this, "RechNrRow1", "?/?/form[@controlname='mditblV_rech']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colRech_nr Row 1']", "", 30000, null, "c8efaf81-14ef-4bad-a54b-189979f774e1");
-                _aufknrrow1Info = new RepoItemInfo(this, "AufkNrRow1", "?/?/form[@controlname='mditblV_aufk']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAufk_nr Row 1']", "", 30000, null, "6884dbc3-7c75-4a2e-80be-9fdf5403b4c6");
-                _koscheinbuttonInfo = new RepoItemInfo(this, "KOScheinButton", "container[@controlname='ToolBar']/?/?//button[@controlname='pbKO_Schein']", "", 30000, null, "8cf3d98e-4af4-44a7-aa7d-acc80a97fc5b");
-                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "?/?/form[@controlname='mditblV_kmsk']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "83d3346c-b222-4d98-89af-9f139408b4b7");
-                _kmsknrrow1Info = new RepoItemInfo(this, "KmskNrRow1", "?/?/form[@controlname='mditblV_kmsk']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKmsk_nr Row 1']", "", 30000, null, "e3827975-7d51-4241-bbe0-9dc54a9067dd");
-                _titlebar100lieferungenInfo = new RepoItemInfo(this, "TitleBar100Lieferungen", "?/?/form[@controlname='mditblV_aufl']/titlebar[@accessiblerole='TitleBar']", "", 30000, null, "75ac2e5a-e4a7-4550-a179-fde7fd2247fd");
-                _colauflaufknrrow1Info = new RepoItemInfo(this, "ColAuflAufkNrRow1", "?/?/form[@controlname='mditblV_aufl']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAufl_aufk_nr Row 1']", "", 30000, null, "b7b2c4f6-b7fa-46cc-a29b-54dadd35a44a");
-                _pbsystemeditoptionsInfo = new RepoItemInfo(this, "PbSystemEditOptions", ".//container[@controlname='SystemGroup']/button[@controlname='pbSystem_Edit_Options']", "", 30000, null, "9d89d92a-77e6-46c1-8f08-a3ab6758e764");
-                _dfadrkundeInfo = new RepoItemInfo(this, "DfAdrKunde", "container[@controlname='ToolBar']/?/?/?//text[@controlname='dfAdr_kunde']/text[@accessiblename='Kunde']", "", 30000, null, "e999e620-1988-4f69-ace6-c1b8e9ac067a");
-                _dfadrkundenameInfo = new RepoItemInfo(this, "DfAdrKundeName", "container[@controlname='ToolBar']/?/?//text[@controlname='dfAdr_kunde_name']", "", 30000, null, "0a597733-2a4b-43d6-aac4-c206687a9ebf");
-                _pbpreiseInfo = new RepoItemInfo(this, "PbPreise", "container[@controlname='ToolBar']/?/?///button[@controlname='pbPreise']", "", 30000, null, "8a1b17e2-c32a-4be0-a1a1-c440a76205fc");
+                _rechnungInfo = new RepoItemInfo(this, "Rechnung", ".//text[@controlname='dfRech_nr']/text[@accessiblename='Rechnung']", 30000, null, "8385de33-a8ac-48a4-809c-a7d05f89c721");
+                _pbrechnungInfo = new RepoItemInfo(this, "PbRechnung", "container[@controlname='ToolBar']/?/?//button[@controlname='pbRechnung']", 30000, null, "c0f02512-6167-4b1a-86b8-6358002f061d");
+                _rechnrrow1Info = new RepoItemInfo(this, "RechNrRow1", "?/?/form[@controlname='mditblV_rech']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colRech_nr Row 1']", 30000, null, "c8efaf81-14ef-4bad-a54b-189979f774e1");
+                _aufknrrow1Info = new RepoItemInfo(this, "AufkNrRow1", "?/?/form[@controlname='mditblV_aufk']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAufk_nr Row 1']", 30000, null, "6884dbc3-7c75-4a2e-80be-9fdf5403b4c6");
+                _koscheinbuttonInfo = new RepoItemInfo(this, "KOScheinButton", "container[@controlname='ToolBar']/?/?//button[@controlname='pbKO_Schein']", 30000, null, "8cf3d98e-4af4-44a7-aa7d-acc80a97fc5b");
+                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "?/?/form[@controlname='mditblV_kmsk']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 1 Column 0']", 30000, null, "83d3346c-b222-4d98-89af-9f139408b4b7");
+                _kmsknrrow1Info = new RepoItemInfo(this, "KmskNrRow1", "?/?/form[@controlname='mditblV_kmsk']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKmsk_nr Row 1']", 30000, null, "e3827975-7d51-4241-bbe0-9dc54a9067dd");
+                _titlebar100lieferungenInfo = new RepoItemInfo(this, "TitleBar100Lieferungen", "?/?/form[@controlname='mditblV_aufl']/titlebar[@accessiblerole='TitleBar']", 30000, null, "75ac2e5a-e4a7-4550-a179-fde7fd2247fd");
+                _colauflaufknrrow1Info = new RepoItemInfo(this, "ColAuflAufkNrRow1", "?/?/form[@controlname='mditblV_aufl']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAufl_aufk_nr Row 1']", 30000, null, "b7b2c4f6-b7fa-46cc-a29b-54dadd35a44a");
+                _pbsystemeditoptionsInfo = new RepoItemInfo(this, "PbSystemEditOptions", ".//container[@controlname='SystemGroup']/button[@controlname='pbSystem_Edit_Options']", 30000, null, "9d89d92a-77e6-46c1-8f08-a3ab6758e764");
+                _dfadrkundeInfo = new RepoItemInfo(this, "DfAdrKunde", "container[@controlname='ToolBar']/?/?/?//text[@controlname='dfAdr_kunde']/text[@accessiblename='Kunde']", 30000, null, "e999e620-1988-4f69-ace6-c1b8e9ac067a");
+                _dfadrkundenameInfo = new RepoItemInfo(this, "DfAdrKundeName", "container[@controlname='ToolBar']/?/?//text[@controlname='dfAdr_kunde_name']", 30000, null, "0a597733-2a4b-43d6-aac4-c206687a9ebf");
+                _pbpreiseInfo = new RepoItemInfo(this, "PbPreise", "container[@controlname='ToolBar']/?/?///button[@controlname='pbPreise']", 30000, null, "8a1b17e2-c32a-4be0-a1a1-c440a76205fc");
             }
 
             /// <summary>
@@ -874,9 +885,9 @@ namespace V_AUFI_001
             public FensterfunktionenAppFolder(RepoGenBaseFolder parentFolder) :
                     base("Fensterfunktionen", "/contextmenu[@processname='V_AUFI']", parentFolder, 30000, null, true, "d47599d5-0b6a-4844-a2f4-b0e2eae97b27", "")
             {
-                _vertikalgliedernInfo = new RepoItemInfo(this, "VertikalGliedern", "menuitem[@accessiblename='Vertikal gliedern']", "", 30000, null, "30fcf9e4-5d45-4b8c-be9b-0938be51ef9c");
-                _horizontalgliedernInfo = new RepoItemInfo(this, "HorizontalGliedern", "menuitem[@accessiblename='Horizontal gliedern']", "", 30000, null, "01e43c11-4096-4790-b137-a588d85b457f");
-                _ueberlappendInfo = new RepoItemInfo(this, "UEberlappend", "menuitem[@accessiblename='Überlappend']", "", 30000, null, "cdf6a3ed-a21c-4982-9bec-9c00e9a18182");
+                _vertikalgliedernInfo = new RepoItemInfo(this, "VertikalGliedern", "menuitem[@accessiblename='Vertikal gliedern']", 30000, null, "30fcf9e4-5d45-4b8c-be9b-0938be51ef9c");
+                _horizontalgliedernInfo = new RepoItemInfo(this, "HorizontalGliedern", "menuitem[@accessiblename='Horizontal gliedern']", 30000, null, "01e43c11-4096-4790-b137-a588d85b457f");
+                _ueberlappendInfo = new RepoItemInfo(this, "UEberlappend", "menuitem[@accessiblename='Überlappend']", 30000, null, "cdf6a3ed-a21c-4982-9bec-9c00e9a18182");
             }
 
             /// <summary>
@@ -994,11 +1005,11 @@ namespace V_AUFI_001
             public ButtonsFolder(RepoGenBaseFolder parentFolder) :
                     base("Buttons", "", parentFolder, 0, null, false, "18c801a9-4447-41a1-b573-7a75e5fab9ac", "")
             {
-                _pbposition1Info = new RepoItemInfo(this, "PbPosition1", "/form[@controlname='mdiV_AUFI']/container[@controlname='ToolBar']/?/?/?//button[@controlname='pbPosition']", "", 30000, null, "5b865f40-3e0b-4771-b0fa-ed40621b06bb");
-                _maximierenInfo = new RepoItemInfo(this, "Maximieren", "/form[@controlname='mdiV_AUFI']/?/?/button[@accessiblename='Maximieren']", "", 30000, null, "769db45a-05e0-494e-8008-b62b98e4ae0d");
-                _pbauftragInfo = new RepoItemInfo(this, "PbAuftrag", "/form[@controlname='mdiV_AUFI']/container[@controlname='ToolBar']/?/?/?//button[@controlname='pbAuftrag']", "", 30000, null, "4a7f8bd7-9499-4cc2-9df1-e46b3856bfdc");
-                _button_fensterInfo = new RepoItemInfo(this, "Button_Fenster", "/form[@controlname='mdiV_AUFI']//container[@controlname='Spec1Group']/button[@controlname='pbSpecial1_MDIWindows']", "", 30000, null, "fa127989-1d22-42d5-bff8-922b41f2b287");
-                _pbcommonneuInfo = new RepoItemInfo(this, "PbCommonNeu", "/form[@controlname='mdiV_AUFI']//container[@controlname='CommonGroup']/button[@controlname='pbCommon_Neu']", "", 30000, null, "f5aa1a48-035d-42e6-ac39-b18a2ae8ca0b");
+                _pbposition1Info = new RepoItemInfo(this, "PbPosition1", "/form[@controlname='mdiV_AUFI']/container[@controlname='ToolBar']/?/?/?//button[@controlname='pbPosition']", 30000, null, "5b865f40-3e0b-4771-b0fa-ed40621b06bb");
+                _maximierenInfo = new RepoItemInfo(this, "Maximieren", "/form[@controlname='mdiV_AUFI']/?/?/button[@accessiblename='Maximieren']", 30000, null, "769db45a-05e0-494e-8008-b62b98e4ae0d");
+                _pbauftragInfo = new RepoItemInfo(this, "PbAuftrag", "/form[@controlname='mdiV_AUFI']/container[@controlname='ToolBar']/?/?/?//button[@controlname='pbAuftrag']", 30000, null, "4a7f8bd7-9499-4cc2-9df1-e46b3856bfdc");
+                _button_fensterInfo = new RepoItemInfo(this, "Button_Fenster", "/form[@controlname='mdiV_AUFI']//container[@controlname='Spec1Group']/button[@controlname='pbSpecial1_MDIWindows']", 30000, null, "fa127989-1d22-42d5-bff8-922b41f2b287");
+                _pbcommonneuInfo = new RepoItemInfo(this, "PbCommonNeu", "/form[@controlname='mdiV_AUFI']//container[@controlname='CommonGroup']/button[@controlname='pbCommon_Neu']", 30000, null, "f5aa1a48-035d-42e6-ac39-b18a2ae8ca0b");
             }
 
             /// <summary>
@@ -1151,10 +1162,10 @@ namespace V_AUFI_001
             public OptionDialogAppFolder(RepoGenBaseFolder parentFolder) :
                     base("OptionDialog", "/form[@controlname='OptionDialog']", parentFolder, 30000, null, true, "58dfca95-ffe7-4e54-9d1a-991cb749d8e2", "")
             {
-                _titlebar100optionenInfo = new RepoItemInfo(this, "TitleBar100Optionen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "efdb5a6f-7898-4527-9b22-632b88dd2717");
-                _ccheckboxInfo = new RepoItemInfo(this, "CCheckBox", "?/?/container[@controlname='OptionPanel']/?/?/checkbox[@text='Leerzeichenoptimierung']", "", 30000, null, "b9e3d45f-cf85-42eb-889a-c987b1b2d152");
-                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "?/?/button[@accessiblename='Schließen']", "", 30000, null, "6d4e993c-22db-4e55-80be-bc901bda535f");
-                _pbsaveInfo = new RepoItemInfo(this, "PbSave", "?/?/button[@controlname='pbSave']", "", 30000, null, "7fbd7559-1a69-4b94-b5e3-5b1fe5735931");
+                _titlebar100optionenInfo = new RepoItemInfo(this, "TitleBar100Optionen", "titlebar[@accessiblerole='TitleBar']", 30000, null, "efdb5a6f-7898-4527-9b22-632b88dd2717");
+                _ccheckboxInfo = new RepoItemInfo(this, "CCheckBox", "?/?/container[@controlname='OptionPanel']/?/?/checkbox[@text='Leerzeichenoptimierung']", 30000, null, "b9e3d45f-cf85-42eb-889a-c987b1b2d152");
+                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "?/?/button[@accessiblename='Schließen']", 30000, null, "6d4e993c-22db-4e55-80be-bc901bda535f");
+                _pbsaveInfo = new RepoItemInfo(this, "PbSave", "?/?/button[@controlname='pbSave']", 30000, null, "7fbd7559-1a69-4b94-b5e3-5b1fe5735931");
             }
 
             /// <summary>
@@ -1293,8 +1304,8 @@ namespace V_AUFI_001
             public DlgMessageBoxAppFolder(RepoGenBaseFolder parentFolder) :
                     base("DlgMessageBox", "/form[@controlname='dlgMessageBox']", parentFolder, 30000, null, true, "a3f66c6c-570a-4bc9-817c-2fd82c9e65b5", "")
             {
-                _labelmeldungstextInfo = new RepoItemInfo(this, "LabelMeldungstext", "text[@controlname='labelMeldungstext']", "", 30000, null, "2b15155a-f434-4acc-88d6-8de1ac0584fc");
-                _button0Info = new RepoItemInfo(this, "Button0", "button[@controlname='button0']", "", 30000, null, "ffb7e3f2-7fc3-4399-8e81-d800ecd9c644");
+                _labelmeldungstextInfo = new RepoItemInfo(this, "LabelMeldungstext", "text[@controlname='labelMeldungstext']", 30000, null, "2b15155a-f434-4acc-88d6-8de1ac0584fc");
+                _button0Info = new RepoItemInfo(this, "Button0", "button[@controlname='button0']", 30000, null, "ffb7e3f2-7fc3-4399-8e81-d800ecd9c644");
             }
 
             /// <summary>
@@ -1384,7 +1395,7 @@ namespace V_AUFI_001
             public ExplorerAppFolder(RepoGenBaseFolder parentFolder) :
                     base("Explorer", "/form[@title='']", parentFolder, 30000, null, true, "ca346f6a-ed8c-4984-995a-3959b3712503", "")
             {
-                _sbgts02rdpInfo = new RepoItemInfo(this, "SBGTS02Rdp", "?/?/list[@controlid='1']/listitem[@text='SBG-TS02.rdp']", "", 30000, null, "fa2349d3-ef45-4d08-aa6b-1316db6c12ed");
+                _sbgts02rdpInfo = new RepoItemInfo(this, "SBGTS02Rdp", "?/?/list[@controlid='1']/listitem[@text='SBG-TS02.rdp']", 30000, null, "fa2349d3-ef45-4d08-aa6b-1316db6c12ed");
             }
 
             /// <summary>
@@ -1493,10 +1504,10 @@ namespace V_AUFI_001
             public MditblPreiseAppFolder(RepoGenBaseFolder parentFolder) :
                     base("MditblPreise", "/form[@controlname='mditblPreise']", parentFolder, 30000, null, true, "510fe0a4-3739-4e4e-b597-d965dee7c972", "")
             {
-                _titlebar100preislagerinfoInfo = new RepoItemInfo(this, "TitleBar100PreisLagerInfo", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "9caa3860-aac5-4dbb-b2c6-059e2b3c8de4");
-                _pbcommonloadInfo = new RepoItemInfo(this, "PbCommonLoad", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbCommon_Load']", "", 30000, null, "a056cd5f-2039-4633-bcdd-75a370c5a158");
-                _row2column0Info = new RepoItemInfo(this, "Row2Column0", "container[@controlname='ChildTableWindow']//row[@accessiblename='Row 2']/cell[@accessiblename='Row 2 Column 0']", "", 30000, null, "f5b551ed-bd2a-43e5-b773-83568f27163a");
-                _pbspec1verfuegbarinfoInfo = new RepoItemInfo(this, "PbSpec1VerfuegbarInfo", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbSpec1_VerfuegbarInfo']", "", 30000, null, "e278e1ea-ec82-4ce5-b30d-755f9f05a2af");
+                _titlebar100preislagerinfoInfo = new RepoItemInfo(this, "TitleBar100PreisLagerInfo", "titlebar[@accessiblerole='TitleBar']", 30000, null, "9caa3860-aac5-4dbb-b2c6-059e2b3c8de4");
+                _pbcommonloadInfo = new RepoItemInfo(this, "PbCommonLoad", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbCommon_Load']", 30000, null, "a056cd5f-2039-4633-bcdd-75a370c5a158");
+                _row2column0Info = new RepoItemInfo(this, "Row2Column0", "container[@controlname='ChildTableWindow']//row[@accessiblename='Row 2']/cell[@accessiblename='Row 2 Column 0']", 30000, null, "f5b551ed-bd2a-43e5-b773-83568f27163a");
+                _pbspec1verfuegbarinfoInfo = new RepoItemInfo(this, "PbSpec1VerfuegbarInfo", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbSpec1_VerfuegbarInfo']", 30000, null, "e278e1ea-ec82-4ce5-b30d-755f9f05a2af");
             }
 
             /// <summary>
@@ -1637,10 +1648,10 @@ namespace V_AUFI_001
             public Form100ArtikelkontoAppFolder(RepoGenBaseFolder parentFolder) :
                     base("Form100Artikelkonto", "/form[@title='[100]  Artikelkonto']", parentFolder, 30000, null, true, "88d05597-4819-439f-95c1-cda563f1e97c", "")
             {
-                _titlebar100artikelkontoInfo = new RepoItemInfo(this, "TitleBar100Artikelkonto", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "0b89a297-15e0-480c-a4d1-3dffc709b2a8");
-                _colterminrow0Info = new RepoItemInfo(this, "ColTerminRow0", ".//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='colTermin Row 0']", "", 30000, null, "e6e3cd9b-a7da-44fd-943f-658facdc694b");
-                _colbelegnrrow15Info = new RepoItemInfo(this, "ColBelegNrRow15", ".//table[@accessiblename='FlexGrid']/row/cell[@accessiblename~'colBeleg_nr Row' and @text='A21/00013/1;']", "", 30000, null, "1e998a3a-2fb9-4da2-8506-46d040162784");
-                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "?/?/button[@accessiblename='Schließen']", "", 30000, null, "a7b57453-9909-454e-a57c-29d581c0e0b4");
+                _titlebar100artikelkontoInfo = new RepoItemInfo(this, "TitleBar100Artikelkonto", "titlebar[@accessiblerole='TitleBar']", 30000, null, "0b89a297-15e0-480c-a4d1-3dffc709b2a8");
+                _colterminrow0Info = new RepoItemInfo(this, "ColTerminRow0", ".//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='colTermin Row 0']", 30000, null, "e6e3cd9b-a7da-44fd-943f-658facdc694b");
+                _colbelegnrrow15Info = new RepoItemInfo(this, "ColBelegNrRow15", ".//table[@accessiblename='FlexGrid']/row/cell[@accessiblename~'colBeleg_nr Row' and @text='A21/00013/1;']", 30000, null, "1e998a3a-2fb9-4da2-8506-46d040162784");
+                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "?/?/button[@accessiblename='Schließen']", 30000, null, "a7b57453-9909-454e-a57c-29d581c0e0b4");
             }
 
             /// <summary>
@@ -1779,8 +1790,8 @@ namespace V_AUFI_001
             public Form100PreisLagerInfoAppFolder(RepoGenBaseFolder parentFolder) :
                     base("Form100PreisLagerInfo", "/form[@title='[100]  Preis/Lager-Info']", parentFolder, 30000, null, true, "be9daa78-7cbe-40e1-8fbe-d2e3086acf16", "")
             {
-                _pushbuttonInfo = new RepoItemInfo(this, "PushButton", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbSpec1_Detail']", "", 30000, null, "e1f19e77-6d88-4b39-b9c6-5e148a697c7d");
-                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "?/?/button[@accessiblename='Schließen']", "", 30000, null, "d3b27faa-3992-4edb-b17d-2e93b4ee1c4d");
+                _pushbuttonInfo = new RepoItemInfo(this, "PushButton", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbSpec1_Detail']", 30000, null, "e1f19e77-6d88-4b39-b9c6-5e148a697c7d");
+                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "?/?/button[@accessiblename='Schließen']", 30000, null, "d3b27faa-3992-4edb-b17d-2e93b4ee1c4d");
             }
 
             /// <summary>
@@ -1871,8 +1882,8 @@ namespace V_AUFI_001
             public Form100DetailanzeigePreisermittlungAppFolder(RepoGenBaseFolder parentFolder) :
                     base("Form100DetailanzeigePreisermittlung", "/form[@title>'[100]  Detailanzeige Preisermittlung']", parentFolder, 30000, null, true, "cb6cfd9c-89fa-4aff-b25e-3046162a7eba", "")
             {
-                _titlebar100detailanzeigepreisermittInfo = new RepoItemInfo(this, "TitleBar100DetailanzeigePreisermitt", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "0d9fe34a-168f-4a9f-80ba-00786c93195c");
-                _pushbuttonInfo = new RepoItemInfo(this, "PushButton", "element[2]/element[@instance='0']/element[@instance='0']/element[@instance='1']/element[3]/button[@accessiblerole='PushButton']", "", 30000, null, "a208e357-e3aa-40ad-81c0-2ae2630c87fc");
+                _titlebar100detailanzeigepreisermittInfo = new RepoItemInfo(this, "TitleBar100DetailanzeigePreisermitt", "titlebar[@accessiblerole='TitleBar']", 30000, null, "0d9fe34a-168f-4a9f-80ba-00786c93195c");
+                _pushbuttonInfo = new RepoItemInfo(this, "PushButton", "element[2]/element[@instance='0']/element[@instance='0']/element[@instance='1']/element[3]/button[@accessiblerole='PushButton']", 30000, null, "a208e357-e3aa-40ad-81c0-2ae2630c87fc");
             }
 
             /// <summary>
@@ -1969,14 +1980,14 @@ namespace V_AUFI_001
             public Form100AuftragsInfoAppFolder(RepoGenBaseFolder parentFolder) :
                     base("Form100AuftragsInfo", "/form[@title='[100]  Auftrags-Info']", parentFolder, 30000, null, true, "3573b196-dbc4-4383-bb89-78f1a7b0e74f", "")
             {
-                _firmenInfo = new RepoItemInfo(this, "Firmen", "element[1]/element[@instance='0']/element[@instance='0']/?/?/button[@accessiblename='Firmen']", "", 30000, null, "48cfd5de-780c-459e-a79f-0ca45b9df3ae");
+                _firmenInfo = new RepoItemInfo(this, "Firmen", "element[1]/element[@instance='0']/element[@instance='0']/?/?/button[@accessiblename='Firmen']", 30000, null, "48cfd5de-780c-459e-a79f-0ca45b9df3ae");
                 _windowsforms10mdiclientapp02804c64rInfo = new WindowsForms10MDICLIENTApp02804c64RInfoClass(this);
                 _flexgridInfo = new FlexGridInfoClass(this);
-                _maximierenInfo = new RepoItemInfo(this, "Maximieren", "?/?/button[@accessiblename='Maximieren']", "", 30000, null, "3ca71494-ce30-4d36-a614-b41c492b2b73");
-                _someelementInfo = new RepoItemInfo(this, "SomeElement", "element[1]/element[@instance='0']", "", 30000, null, "bf5643f9-ee1b-4576-8d3d-a65dca18f450");
-                _wiederherstellenInfo = new RepoItemInfo(this, "Wiederherstellen", "?/?/button[@accessiblename='Wiederherstellen']", "", 30000, null, "b3183b20-7571-492f-afa2-e57a49bffe16");
-                _titlebar100positionenInfo = new RepoItemInfo(this, "TitleBar100Positionen", "?/?/form[@controlid='2']/titlebar[@accessiblerole='TitleBar']", "", 30000, null, "c486a26c-6270-45ff-8625-2bba44c67c7f");
-                _kundeInfo = new RepoItemInfo(this, "Kunde", "element[@instance='1']/?/?/form[@title>'[100]  Auftragsinformatio']/element[@instance='0']/element[1]/element[61]/text[@accessiblename='Kunde']", "", 30000, null, "6f7982c9-bc4a-4a46-a35c-e78599fa08be");
+                _maximierenInfo = new RepoItemInfo(this, "Maximieren", "?/?/button[@accessiblename='Maximieren']", 30000, null, "3ca71494-ce30-4d36-a614-b41c492b2b73");
+                _someelementInfo = new RepoItemInfo(this, "SomeElement", "element[1]/element[@instance='0']", 30000, null, "bf5643f9-ee1b-4576-8d3d-a65dca18f450");
+                _wiederherstellenInfo = new RepoItemInfo(this, "Wiederherstellen", "?/?/button[@accessiblename='Wiederherstellen']", 30000, null, "b3183b20-7571-492f-afa2-e57a49bffe16");
+                _titlebar100positionenInfo = new RepoItemInfo(this, "TitleBar100Positionen", "?/?/form[@controlid='2']/titlebar[@accessiblerole='TitleBar']", 30000, null, "c486a26c-6270-45ff-8625-2bba44c67c7f");
+                _kundeInfo = new RepoItemInfo(this, "Kunde", "element[@instance='1']/?/?/form[@title>'[100]  Auftragsinformatio']/element[@instance='0']/element[1]/element[61]/text[@accessiblename='Kunde']", 30000, null, "6f7982c9-bc4a-4a46-a35c-e78599fa08be");
             }
 
             /// <summary>
@@ -2304,6 +2315,72 @@ namespace V_AUFI_001
                 get
                 {
                     return _kundeInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Dienstag12122021OneNoteAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("83fcaa14-4c81-4637-8eeb-f9fa533bce32")]
+        public partial class Dienstag12122021OneNoteAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _tabellenzelleInfo;
+
+            /// <summary>
+            /// Creates a new Dienstag12122021OneNote  folder.
+            /// </summary>
+            public Dienstag12122021OneNoteAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Dienstag12122021OneNote", "/form[@title>'Dienstag, 12.12.2021 - On']", parentFolder, 30000, null, true, "83fcaa14-4c81-4637-8eeb-f9fa533bce32", "")
+            {
+                _tabellenzelleInfo = new RepoItemInfo(this, "Tabellenzelle", ".//element[@name='Aktuelle OneNote-Seite']/text[@name='Inhaltsblock']/table[@name='Tabelle']/cell[@text='Tabellenzelle' and @columnindex='8' and @rowindex='3']", 30000, null, "0224aa6d-5ede-4a3e-8b73-bd76267334cb");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("83fcaa14-4c81-4637-8eeb-f9fa533bce32")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("83fcaa14-4c81-4637-8eeb-f9fa533bce32")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Tabellenzelle item.
+            /// </summary>
+            [RepositoryItem("0224aa6d-5ede-4a3e-8b73-bd76267334cb")]
+            public virtual Ranorex.Cell Tabellenzelle
+            {
+                get
+                {
+                    return _tabellenzelleInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Tabellenzelle item info.
+            /// </summary>
+            [RepositoryItemInfo("0224aa6d-5ede-4a3e-8b73-bd76267334cb")]
+            public virtual RepoItemInfo TabellenzelleInfo
+            {
+                get
+                {
+                    return _tabellenzelleInfo;
                 }
             }
         }

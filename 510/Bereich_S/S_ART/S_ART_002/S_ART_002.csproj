@@ -129,6 +129,18 @@
     <Compile Include="Program.cs">
       <id>e6d9e3c4-cc3d-41a1-b86d-240e1f96bbdd</id>
     </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>7dd63d62-f81c-44e2-ad73-5d9ad006f3ea</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6affefe5-c491-45ec-b69e-9045c9b58640</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>7dd63d62-f81c-44e2-ad73-5d9ad006f3ea</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>64dadf10-e470-4bca-9a79-827879803f91</id>
+    </Compile>
     <Compile Include="Recordings\Anlage_Artikel.cs">
       <BoundTo>f5181cc8-bc67-418e-87d7-78137ed6b104</BoundTo>
       <DependentUpon>Anlage_Artikel.rxrec</DependentUpon>
@@ -164,18 +176,6 @@
       <UserCode>true</UserCode>
       <id>ac27970f-7dea-4f1a-928a-936977c986ba</id>
       <BoundTo>ad40fbd2-6ab5-47c4-b4ee-15490bb1ea35</BoundTo>
-    </Compile>
-    <Compile Include="Recordings\Reiter_Allg1.cs">
-      <DependentUpon>Reiter_Allg1.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>d003bc68-c24e-4193-834d-d4b096b64faa</id>
-      <BoundTo>6c8f89da-4643-476e-8604-eab82be8bbbc</BoundTo>
-    </Compile>
-    <Compile Include="Recordings\Reiter_Allg1.UserCode.cs">
-      <DependentUpon>Reiter_Allg1.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>e441e238-01d2-43cc-ac63-46593d8ad731</id>
-      <BoundTo>6c8f89da-4643-476e-8604-eab82be8bbbc</BoundTo>
     </Compile>
     <Compile Include="Recordings\Reiter_Allg11.cs">
       <BoundTo>077114d3-8e01-49cb-8b26-72c47634f3fa</BoundTo>
@@ -213,6 +213,18 @@
       <id>65220291-4561-46b7-9de6-a5bf12349759</id>
       <BoundTo>3e4e4fef-7d79-4052-860b-ce47ecf26e64</BoundTo>
     </Compile>
+    <Compile Include="Reiter_Allg1.cs">
+      <BoundTo>6c8f89da-4643-476e-8604-eab82be8bbbc</BoundTo>
+      <DependentUpon>Reiter_Allg1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d003bc68-c24e-4193-834d-d4b096b64faa</id>
+    </Compile>
+    <Compile Include="Reiter_Allg1.UserCode.cs">
+      <BoundTo>6c8f89da-4643-476e-8604-eab82be8bbbc</BoundTo>
+      <DependentUpon>Reiter_Allg1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e441e238-01d2-43cc-ac63-46593d8ad731</id>
+    </Compile>
     <Compile Include="S_ART_002Repository.cs">
       <BoundTo>1cedf83a-8170-4bef-a238-c6789ef9762f</BoundTo>
       <DependentUpon>S_ART_002Repository.rxrep</DependentUpon>
@@ -223,6 +235,11 @@
   <ItemGroup>
     <None Include="app.config">
       <id>197a0e17-ba8c-450f-8e31-5c16738753d4</id>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>1cedf83a-8170-4bef-a238-c6789ef9762f</BoundTo>
+      <id>7dd63d62-f81c-44e2-ad73-5d9ad006f3ea</id>
+      <recordtableid>8f3e6e25-491b-4630-a99c-a9ec43f70c9a</recordtableid>
     </None>
     <None Include="Recordings\Anlage_Artikel.rxrec">
       <BoundTo>1cedf83a-8170-4bef-a238-c6789ef9762f</BoundTo>
@@ -239,11 +256,6 @@
       <id>ad40fbd2-6ab5-47c4-b4ee-15490bb1ea35</id>
       <recordtableid>8a4bc3d4-04b9-4f2e-ab62-7f8c7511c2fb</recordtableid>
     </None>
-    <None Include="Recordings\Reiter_Allg1.rxrec">
-      <BoundTo>1cedf83a-8170-4bef-a238-c6789ef9762f</BoundTo>
-      <id>6c8f89da-4643-476e-8604-eab82be8bbbc</id>
-      <recordtableid>9bcaf888-4d69-495d-a1ab-36e725559c24</recordtableid>
-    </None>
     <None Include="Recordings\Reiter_Allg11.rxrec">
       <BoundTo>1cedf83a-8170-4bef-a238-c6789ef9762f</BoundTo>
       <id>077114d3-8e01-49cb-8b26-72c47634f3fa</id>
@@ -258,6 +270,11 @@
       <BoundTo>1cedf83a-8170-4bef-a238-c6789ef9762f</BoundTo>
       <id>3e4e4fef-7d79-4052-860b-ce47ecf26e64</id>
       <recordtableid>c3a28205-6ed8-426e-85c7-445204595f70</recordtableid>
+    </None>
+    <None Include="Reiter_Allg1.rxrec">
+      <BoundTo>1cedf83a-8170-4bef-a238-c6789ef9762f</BoundTo>
+      <id>6c8f89da-4643-476e-8604-eab82be8bbbc</id>
+      <recordtableid>9bcaf888-4d69-495d-a1ab-36e725559c24</recordtableid>
     </None>
     <None Include="S_ART_002Repository.rximg">
       <BoundTo>1cedf83a-8170-4bef-a238-c6789ef9762f</BoundTo>
@@ -285,12 +302,6 @@
     <Folder Include="Recordings">
       <id>f6f25f3c-0122-4107-9fd0-36f002c786e4</id>
     </Folder>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
-      <Project>{195B1252-7FAC-44E5-8998-67EED1D07B0E}</Project>
-      <Name>Ranorex Automation Helpers</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

@@ -125,7 +125,6 @@ namespace P_STL_001
             RepoItemInfo _pbnewInfo;
             RepoItemInfo _pbcommonsaveInfo;
             RepoItemInfo _flexgridInfo;
-            RepoItemInfo _artikelInfo;
             RepoItemInfo _titlebar100verwaltungstuecklisteInfo;
             RepoItemInfo _textInfo;
             RepoItemInfo _pbnavigationbackInfo;
@@ -143,7 +142,6 @@ namespace P_STL_001
                 _pbnewInfo = new RepoItemInfo(this, "PbNew", "?/?/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup2']/button[@controlname='pbNew']", "", 30000, null, "7b3e6375-ddf4-4b54-b10e-7aabf350e796");
                 _pbcommonsaveInfo = new RepoItemInfo(this, "PbCommonSave", "?/?/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Save']", "", 30000, null, "0b99d4a0-da06-40b2-ae85-fa141e926af7");
                 _flexgridInfo = new RepoItemInfo(this, "FlexGrid", ".//element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", "", 30000, null, "37aea961-415b-42fd-a842-45b8aa636711");
-                _artikelInfo = new RepoItemInfo(this, "Artikel", ".//element[@controlname='mainGrid']/text[@controltypename='']", "", 30000, null, "c8a838c8-639d-44cf-bdfa-1bfa04ceb0a4");
                 _titlebar100verwaltungstuecklisteInfo = new RepoItemInfo(this, "TitleBar100VerwaltungStueckliste", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "dc4effa1-2eec-4bd9-84ec-130f8b92c31d");
                 _textInfo = new RepoItemInfo(this, "Text", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup1']//text[@accessiblerole='Text']", "", 30000, null, "8f6f1cd1-f6a4-4c38-8407-6c77cc015317");
                 _pbnavigationbackInfo = new RepoItemInfo(this, "PbNavigationBack", "?/?/container[@controlname='NavigationGroup']/button[@controlname='pbNavigation_back']", "", 30000, null, "ac3ffcb3-8bd6-489c-8833-d57b37ded7af");
@@ -290,30 +288,6 @@ namespace P_STL_001
                 get
                 {
                     return _flexgridInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Artikel item.
-            /// </summary>
-            [RepositoryItem("c8a838c8-639d-44cf-bdfa-1bfa04ceb0a4")]
-            public virtual Ranorex.Text Artikel
-            {
-                get
-                {
-                    return _artikelInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Artikel item info.
-            /// </summary>
-            [RepositoryItemInfo("c8a838c8-639d-44cf-bdfa-1bfa04ceb0a4")]
-            public virtual RepoItemInfo ArtikelInfo
-            {
-                get
-                {
-                    return _artikelInfo;
                 }
             }
 

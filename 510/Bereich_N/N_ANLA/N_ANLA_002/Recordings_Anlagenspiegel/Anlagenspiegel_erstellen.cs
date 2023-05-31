@@ -135,14 +135,23 @@ namespace N_ANLA_002.Recordings_Anlagenspiegel
             Keyboard.PrepareFocus(repo.FrmSpiegel.DfAnlaNrBis);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmSpiegel.PbDataAccessDruck' at Center.", repo.FrmSpiegel.PbDataAccessDruckInfo, new RecordItemIndex(5));
-            repo.FrmSpiegel.PbDataAccessDruck.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmSpiegel.PbBezeichnungTab' at Center.", repo.FrmSpiegel.PbBezeichnungTabInfo, new RecordItemIndex(5));
+            repo.FrmSpiegel.PbBezeichnungTab.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbExport' at Center.", repo.DlgDrucken.PbExportInfo, new RecordItemIndex(6));
-            repo.DlgDrucken.PbExport.Click();
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAnlagen'", repo.DlgMessageBox.AVZAnlagenInfo, new ActionTimeout(120000), new RecordItemIndex(6));
+            repo.DlgMessageBox.AVZAnlagenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PbExportItems.Tabelle' at Center.", repo.PbExportItems.TabelleInfo, new RecordItemIndex(7));
-            repo.PbExportItems.Tabelle.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Anlagenspiegel erstellen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Anlagenspiegel erstellen?");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(8));
+            repo.DlgMessageBox.Button0.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblSpiegel.TitleBar100AVZAnlagenspiegelKomp'", repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo, new ActionTimeout(120000), new RecordItemIndex(9));
+            repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'AVZ-Anlagenspiegel-Komprimiert') on item 'TblSpiegel.TitleBar100AVZAnlagenspiegelKomp'.", repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo, new RecordItemIndex(10));
+            Validate.AttributeContains(repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo, "Text", "AVZ-Anlagenspiegel-Komprimiert");
             
         }
 

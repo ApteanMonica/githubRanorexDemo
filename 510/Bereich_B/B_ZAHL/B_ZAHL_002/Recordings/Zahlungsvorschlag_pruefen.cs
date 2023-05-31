@@ -102,10 +102,8 @@ namespace B_ZAHL_002.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'3') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsVorschlag_Row_mit_ZV_TEXT_B_ZAHL_002'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsVorschlag_Row_mit_ZV_TEXT_B_ZAHL_002Info, new RecordItemIndex(3));
             Validate.AttributeContains(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsVorschlag_Row_mit_ZV_TEXT_B_ZAHL_002Info, "Text", "3");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'5.988,00') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Row_mit_ZV_TEXT_B_ZAHL_002'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Row_mit_ZV_TEXT_B_ZAHL_002Info, new RecordItemIndex(4));
-                Validate.AttributeContains(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Row_mit_ZV_TEXT_B_ZAHL_002Info, "Text", "5.988,00", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'5.988,00') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Row_mit_ZV_TEXT_B_ZAHL_002'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Row_mit_ZV_TEXT_B_ZAHL_002Info, new RecordItemIndex(4));
+            Validate.AttributeContains(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Row_mit_ZV_TEXT_B_ZAHL_002Info, "Text", "5.988,00");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'6') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzahl_Row_mit_ZV_TEXT_B_ZAHL_002'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzahl_Row_mit_ZV_TEXT_B_ZAHL_002Info, new RecordItemIndex(5));
             Validate.AttributeContains(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzahl_Row_mit_ZV_TEXT_B_ZAHL_002Info, "Text", "6");

@@ -21,6 +21,14 @@
 					variablename="Programm">
 					</var>
 				</databinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="Startfile"
+					datasourceid="3cf6e9b0-3cfb-4352-a8bd-3f4ee6ba70b3"
+					variableid="90581078-bcde-480f-bb65-75696129f2ca"
+					variablename="StartAutProcessIDVar">
+					</var>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="0de47dab-35b4-442c-b6e2-6812567602fd"
@@ -44,21 +52,16 @@
 			VideoFps="15"
 			VideoRecordingMode="Off"
 			VideoSource="Auto"
-			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
 			id="0f7a5d1f-ce5e-468e-a807-b47ff4ec9480"
-			includeimageschecked="False"
-			includerecordingschecked="False"
 			junitreport="False"
 			name="L_KMSM_002"
-			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms"
-			singlereportpdfdirectory="SingleReportPDF">
+			reportwriteinterval="30000ms">
 			</testsuite>
 			<setup
 			id="367c9df3-d550-40b4-a9b6-71ccb145acdd"
@@ -92,6 +95,14 @@
 			name="CloseAUT"
 			ref="c6482d38-650b-4aff-94b6-14b47889ab33"
 			type="Recording">
+				<missingdatavariablesbinding>
+					<var
+					dataname="Startfile"
+					datasourceid="3cf6e9b0-3cfb-4352-a8bd-3f4ee6ba70b3"
+					variableid="2d8f40a7-9feb-4fc5-a911-6abd682ee190"
+					variablename="CloseAutProcessIDVar">
+					</var>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="7ce2ea2c-f070-4a87-83bf-b7d1045d7ab9"
@@ -158,8 +169,5 @@
 		</testconfiguration>
 	</testconfigurations>
 	<references>
-		<reference>
-			Ranorex Automation Helpers.dll
-		</reference>
 	</references>
 </testsuitedoc>

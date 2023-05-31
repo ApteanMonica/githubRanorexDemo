@@ -79,11 +79,29 @@ namespace N_ANLA_002.Recordings_Anlagenspiegel
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblDrucken.TitleBar100AVZAuswertungenKonten'", repo.TblDrucken.TitleBar100AVZAuswertungenKontenInfo, new ActionTimeout(120000), new RecordItemIndex(0));
-            repo.TblDrucken.TitleBar100AVZAuswertungenKontenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0620') on item 'TblSpiegel.ColWert1Row1'.", repo.TblSpiegel.ColWert1Row1Info, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.TblSpiegel.ColWert1Row1Info, "Text", "0620");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='AVZ-Auswertungen Konten') on item 'TblDrucken.TitleBar100AVZAuswertungenKonten'.", repo.TblDrucken.TitleBar100AVZAuswertungenKontenInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblDrucken.TitleBar100AVZAuswertungenKontenInfo, "Text", "AVZ-Auswertungen Konten");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Büromaschinen, EDV-Anlagen') on item 'TblSpiegel.ColWertBezRow1'.", repo.TblSpiegel.ColWertBezRow1Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblSpiegel.ColWertBezRow1Info, "Text", "Büromaschinen, EDV-Anlagen");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.300,00') on item 'TblSpiegel.ColAhkEndeRow1'.", repo.TblSpiegel.ColAhkEndeRow1Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblSpiegel.ColAhkEndeRow1Info, "Text", "2.300,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0660') on item 'TblSpiegel.ColWert1Row2'.", repo.TblSpiegel.ColWert1Row2Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.TblSpiegel.ColWert1Row2Info, "Text", "0660");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Betriebs- und Geschäftsausstattung') on item 'TblSpiegel.ColWertBezRow2'.", repo.TblSpiegel.ColWertBezRow2Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.TblSpiegel.ColWertBezRow2Info, "Text", "Betriebs- und Geschäftsausstattung");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3.100,00') on item 'TblSpiegel.ColAhkEndeRow2'.", repo.TblSpiegel.ColAhkEndeRow2Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.TblSpiegel.ColAhkEndeRow2Info, "Text", "3.100,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='GESAMT') on item 'TblSpiegel.ColWertBezRow0'.", repo.TblSpiegel.ColWertBezRow0Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.TblSpiegel.ColWertBezRow0Info, "Text", "GESAMT");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='5.400,00') on item 'TblSpiegel.ColAhkEndeRow0'.", repo.TblSpiegel.ColAhkEndeRow0Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.TblSpiegel.ColAhkEndeRow0Info, "Text", "5.400,00");
             
         }
 

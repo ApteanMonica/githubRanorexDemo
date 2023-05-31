@@ -15,7 +15,6 @@ namespace Ranorex.AutomationHelpers.UserCodeCollections
     [UserCodeCollection]
     public static class SystemLibrary
     {
-        private const string libraryName = "SystemLibrary";
         private static readonly Dictionary<string, System.DateTime> timers = new Dictionary<string, System.DateTime>();
 
         /// <summary>
@@ -40,7 +39,7 @@ namespace Ranorex.AutomationHelpers.UserCodeCollections
                 }
                 catch (Exception ex)
                 {
-                    Utils.ReportException(ex, libraryName);
+                    Report.Error(ex.Message);
                 }
             }
         }
@@ -95,7 +94,7 @@ namespace Ranorex.AutomationHelpers.UserCodeCollections
         [UserCodeMethod]
         public static string GetDateTimeAsString(string expectedFormat = "dd.MM.yyyy")
         {
-            return System.DateTime.Now.ToString(expectedFormat);
+        	return System.DateTime.Now.AddDays(1).ToString(expectedFormat);
         }
     }
 }

@@ -26,11 +26,12 @@ mode="Desktop">
 		<var
 		id="f94c7cc7-a0e1-4011-b7fd-3a7f563d853c"
 		name="Startfile">
-			C:\Program Files\Microsoft Office\Office16\EXCEL.EXE
+			C:\Testdaten\Allgemein\Start.bat
 		</var>
 		<var
 		id="20fc0a63-116f-4aef-9e40-c2c1dd539f35"
 		name="Programm">
+			S_PRLK /KL=L
 		</var>
 	</variables>
 	<recorditems>
@@ -72,6 +73,8 @@ mode="Desktop">
 				<path>
 					/form[@controlname='frmPrlk']/titlebar[@accessiblerole='TitleBar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<validationitem
@@ -89,12 +92,14 @@ mode="Desktop">
 				<path>
 					/form[@controlname='frmPrlk']/titlebar[@accessiblerole='TitleBar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<matchname>
 				Text
 			</matchname>
 			<matchvalue>
-				Verwaltung - Lieferantenpreislisten
+				Verwaltung - Lieferantenpreislisten | Lieferantenpreislisten verwalten
 			</matchvalue>
 		</validationitem>
 	</recorditems>

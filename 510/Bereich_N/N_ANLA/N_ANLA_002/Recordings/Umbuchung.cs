@@ -108,8 +108,8 @@ namespace N_ANLA_002.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgBuchen.TitleBar100AVZUmbuchungKontonum'", repo.DlgBuchen.TitleBar100AVZUmbuchungKontonumInfo, new ActionTimeout(120000), new RecordItemIndex(0));
             repo.DlgBuchen.TitleBar100AVZUmbuchungKontonumInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='AVZ - Umbuchung (Kontonummern ändern)') on item 'DlgBuchen.TitleBar100AVZUmbuchungKontonum'.", repo.DlgBuchen.TitleBar100AVZUmbuchungKontonumInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.DlgBuchen.TitleBar100AVZUmbuchungKontonumInfo, "Text", "AVZ - Umbuchung (Kontonummern ändern)");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'AVZ - Umbuchung (Kontonummern ändern)') on item 'DlgBuchen.TitleBar100AVZUmbuchungKontonum'.", repo.DlgBuchen.TitleBar100AVZUmbuchungKontonumInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.DlgBuchen.TitleBar100AVZUmbuchungKontonumInfo, "Text", "AVZ - Umbuchung (Kontonummern ändern)");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$GJ) on item 'DlgBuchen.DfGjhrBez'.", repo.DlgBuchen.DfGjhrBezInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.DlgBuchen.DfGjhrBezInfo, "Text", GJ);
@@ -126,20 +126,26 @@ namespace N_ANLA_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgBuchen.TextNeu' at Center.", repo.DlgBuchen.TextNeuInfo, new RecordItemIndex(6));
             repo.DlgBuchen.TextNeu.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0660{Tab}' with focus on 'DlgBuchen.TextNeu'.", repo.DlgBuchen.TextNeuInfo, new RecordItemIndex(7));
-            repo.DlgBuchen.TextNeu.PressKeys("0660{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0620{Tab}' with focus on 'DlgBuchen.TextNeu'.", repo.DlgBuchen.TextNeuInfo, new RecordItemIndex(7));
+            repo.DlgBuchen.TextNeu.PressKeys("0620{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0660') on item 'DlgBuchen.TextNeu'.", repo.DlgBuchen.TextNeuInfo, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.DlgBuchen.TextNeuInfo, "Text", "0660");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0620') on item 'DlgBuchen.TextNeu'.", repo.DlgBuchen.TextNeuInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.DlgBuchen.TextNeuInfo, "Text", "0620");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0660') on item 'DlgBuchen.DfAnlaKtoNrAfaAlt'.", repo.DlgBuchen.DfAnlaKtoNrAfaAltInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.DlgBuchen.DfAnlaKtoNrAfaAltInfo, "Text", "0660");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0660') on item 'DlgBuchen.DfAnlaKtoNrAfaNeu'.", repo.DlgBuchen.DfAnlaKtoNrAfaNeuInfo, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.DlgBuchen.DfAnlaKtoNrAfaNeuInfo, "Text", "0660");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0620') on item 'DlgBuchen.DfAnlaKtoNrAfaNeu'.", repo.DlgBuchen.DfAnlaKtoNrAfaNeuInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.DlgBuchen.DfAnlaKtoNrAfaNeuInfo, "Text", "0620");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '31.12.2022{Tab}' with focus on 'DlgBuchen.DfAnbuDtbuchung'.", repo.DlgBuchen.DfAnbuDtbuchungInfo, new RecordItemIndex(11));
             repo.DlgBuchen.DfAnbuDtbuchung.PressKeys("31.12.2022{Tab}");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='31122022') on item 'DlgBuchen.DfAnbuDtbuchung'.", repo.DlgBuchen.DfAnbuDtbuchungInfo, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.DlgBuchen.DfAnbuDtbuchungInfo, "Text", "31122022");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgBuchen.PbSpeichern' at Center.", repo.DlgBuchen.PbSpeichernInfo, new RecordItemIndex(13));
+            repo.DlgBuchen.PbSpeichern.Click();
             
         }
 

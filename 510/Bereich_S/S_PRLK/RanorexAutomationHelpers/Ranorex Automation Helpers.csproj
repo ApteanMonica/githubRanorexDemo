@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{B0B3525D-4B6C-4708-8E44-63049CC42068}</ProjectGuid>
+    <ProjectGuid>{5B7D91B0-B2DD-45FB-A0F8-B765ECD96368}</ProjectGuid>
     <TargetFrameworkProfile />
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -20,7 +20,7 @@
     <DebugType>Full</DebugType>
     <Optimize>False</Optimize>
     <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
-    <DefineConstants>DEBUG;TRACE;RX101</DefineConstants>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -29,38 +29,82 @@
     <DebugType>None</DebugType>
     <Optimize>True</Optimize>
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
-    <DefineConstants>TRACE;RX101</DefineConstants>
+    <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ranorex.Bootstrapper" />
-    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Ranorex.Core.Resolver">
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ranorex.Plugin.Cef" />
-    <Reference Include="Ranorex.Plugin.ChromeWeb" />
-    <Reference Include="Ranorex.Plugin.Delphi" />
-    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
-    <Reference Include="Ranorex.Plugin.Flex" />
-    <Reference Include="Ranorex.Plugin.Java" />
-    <Reference Include="Ranorex.Plugin.Mobile" />
-    <Reference Include="Ranorex.Plugin.Msaa" />
-    <Reference Include="Ranorex.Plugin.Office" />
-    <Reference Include="Ranorex.Plugin.Qt" />
-    <Reference Include="Ranorex.Plugin.RawText" />
-    <Reference Include="Ranorex.Plugin.Sap" />
-    <Reference Include="Ranorex.Plugin.Uia" />
-    <Reference Include="Ranorex.Plugin.Web" />
-    <Reference Include="Ranorex.Plugin.WebDriver" />
-    <Reference Include="Ranorex.Plugin.Win32" />
-    <Reference Include="Ranorex.Plugin.WinForms" />
-    <Reference Include="Ranorex.Plugin.WinForms.Core" />
-    <Reference Include="Ranorex.Plugin.Wpf" />
-    <Reference Include="Ranorex.Plugin.Wpf.Core" />
-    <Reference Include="Ranorex.ReportToPDF">
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.ReportToPDF, Version=1.0.16.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\packages\Ranorex.ReportToPDF.1.0.17\lib\net40\Ranorex.ReportToPDF.exe</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -80,48 +124,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">
-      <id>460dcc2e-7817-4a3d-9d2c-0729bd6ead20</id>
+      <id>c8b9d69a-46a5-4409-b607-5f945fc907db</id>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modules\CollectRetryErrorMessagesModule.cs">
-      <id>93181ca4-a90d-4b5a-9198-3f53ce40bac4</id>
+      <id>c818a0c7-66f3-4710-aee8-47b8a9ed1e74</id>
     </Compile>
     <Compile Include="Modules\EmailModule.cs">
-      <id>28cd397f-f13a-4fd8-933e-8db269f89013</id>
+      <id>bbd57651-e616-4c8b-b6b0-6dfc793f672f</id>
     </Compile>
     <Compile Include="Modules\ReportToPDFModule.cs">
-      <id>f2f0a88a-2419-4a14-bde5-ce0f4faadcd8</id>
+      <id>c34bebcc-8fa6-4e1d-943d-b81739734785</id>
     </Compile>
     <Compile Include="UserCodeCollections\DragNDropLibrary.cs">
-      <id>6eb2d67e-4a53-45a4-a863-48707eed041d</id>
+      <id>87211ed3-2546-490a-b474-2495207643eb</id>
     </Compile>
     <Compile Include="UserCodeCollections\EmailLibrary.cs">
-      <id>8af3bfba-46f3-4a23-b5ab-893e7336b887</id>
+      <id>210f302a-0908-49f3-ae5b-6fe0ad7e2b92</id>
     </Compile>
     <Compile Include="UserCodeCollections\ExceptionExtensions.cs">
-      <id>92852389-8d96-4832-ad9a-b9f842afbc8c</id>
+      <id>0ffc0bf4-abe6-42e3-aa49-9379f8d08029</id>
     </Compile>
     <Compile Include="UserCodeCollections\FileLibrary.cs">
-      <id>cb078245-7eb7-469c-9027-b136cfbc15ad</id>
+      <id>bb6f40d1-6e42-46ae-b355-dde0d9dd7f9c</id>
     </Compile>
     <Compile Include="UserCodeCollections\PopupWatcherLibrary.cs">
-      <id>ba54bbe7-5228-4a4a-bba7-6b306f02d41d</id>
+      <id>0ee55eef-d6b6-4ae6-95f6-4eee1750dfaf</id>
     </Compile>
     <Compile Include="UserCodeCollections\StringLibrary.cs">
-      <id>dc6a8687-562e-40e3-89ea-b01540391fc3</id>
+      <id>c6dd485a-6562-4b6b-a296-b3a3fd2dfc5c</id>
     </Compile>
     <Compile Include="UserCodeCollections\SystemLibrary.cs">
-      <id>b25220db-ca8a-4bd2-b92d-e8ee258246e0</id>
+      <id>ff9ed710-a9f1-4f54-967c-4ef6e49e38c3</id>
     </Compile>
     <Compile Include="UserCodeCollections\Utils.cs">
-      <id>d5109957-209c-47d5-b8c3-b1d2904e63d2</id>
+      <id>6de3d8b6-a403-41fb-b3f1-5d13b4bccc49</id>
     </Compile>
     <Compile Include="UserCodeCollections\ValidationLibrary.cs">
-      <id>f61fac30-98d5-4413-be8c-11beb1d8c5b4</id>
+      <id>a45b0b2f-b26f-4214-92e1-f316a3b35dde</id>
     </Compile>
     <Compile Include="UserCodeCollections\WebLibrary.cs">
-      <id>606c05ab-b7ee-45ae-aa57-1a4d160aa71c</id>
+      <id>8388af09-6296-4322-8df8-9e10915522f1</id>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

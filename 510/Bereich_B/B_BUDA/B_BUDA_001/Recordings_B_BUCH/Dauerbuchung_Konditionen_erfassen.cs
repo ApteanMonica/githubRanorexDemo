@@ -148,109 +148,112 @@ namespace B_BUDA_001.Recordings_B_BUCH
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Dauerbuchung - Konditionen') on item 'DlgDaBuParam.TitleBar100DauerbuchungKonditione'.", repo.DlgDaBuParam.TitleBar100DauerbuchungKonditioneInfo, new RecordItemIndex(1));
             Validate.AttributeContains(repo.DlgDaBuParam.TitleBar100DauerbuchungKonditioneInfo, "Text", "Dauerbuchung - Konditionen");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgDaBuParam.dfBelNr' at Center.", repo.DlgDaBuParam.dfBelNrInfo, new RecordItemIndex(2));
-            repo.DlgDaBuParam.dfBelNr.DoubleClick();
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '' on item 'DlgDaBuParam.dfBelNr'.", repo.DlgDaBuParam.dfBelNrInfo, new RecordItemIndex(2));
+            repo.DlgDaBuParam.dfBelNr.Element.SetAttributeValue("Text", "");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$BUDA_Beleg_NR_1' with focus on 'DlgDaBuParam.dfBelNr'.", repo.DlgDaBuParam.dfBelNrInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDaBuParam.dfBelNr' at Center.", repo.DlgDaBuParam.dfBelNrInfo, new RecordItemIndex(3));
+            repo.DlgDaBuParam.dfBelNr.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$BUDA_Beleg_NR_1' with focus on 'DlgDaBuParam.dfBelNr'.", repo.DlgDaBuParam.dfBelNrInfo, new RecordItemIndex(4));
             repo.DlgDaBuParam.dfBelNr.PressKeys(BUDA_Beleg_NR_1);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDaBuParam.CmbBelegNummerArt' at Center.", repo.DlgDaBuParam.CmbBelegNummerArtInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDaBuParam.CmbBelegNummerArt' at Center.", repo.DlgDaBuParam.CmbBelegNummerArtInfo, new RecordItemIndex(6));
             repo.DlgDaBuParam.CmbBelegNummerArt.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Strukturiert' at Center.", repo.List1000.StrukturiertInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Strukturiert' at Center.", repo.List1000.StrukturiertInfo, new RecordItemIndex(7));
             repo.List1000.Strukturiert.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Beleg_Nr' with focus on 'DlgDaBuParam.DfBudaText'.", repo.DlgDaBuParam.DfBudaTextInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Beleg_Nr' with focus on 'DlgDaBuParam.DfBudaText'.", repo.DlgDaBuParam.DfBudaTextInfo, new RecordItemIndex(9));
             repo.DlgDaBuParam.DfBudaText.PressKeys(Beleg_Nr);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgDaBuParam.UpDownEdit' at Center.", repo.DlgDaBuParam.UpDownEditInfo, new RecordItemIndex(10));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgDaBuParam.UpDownEdit' at Center.", repo.DlgDaBuParam.UpDownEditInfo, new RecordItemIndex(11));
             //repo.DlgDaBuParam.UpDownEdit.DoubleClick();
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1' with focus on 'DlgDaBuParam.UpDownEdit'.", repo.DlgDaBuParam.UpDownEditInfo, new RecordItemIndex(11));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1' with focus on 'DlgDaBuParam.UpDownEdit'.", repo.DlgDaBuParam.UpDownEditInfo, new RecordItemIndex(12));
             //repo.DlgDaBuParam.UpDownEdit.PressKeys("1");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(12));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
             //Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDaBuParam.CmbIntervallArt' at Center.", repo.DlgDaBuParam.CmbIntervallArtInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDaBuParam.CmbIntervallArt' at Center.", repo.DlgDaBuParam.CmbIntervallArtInfo, new RecordItemIndex(14));
             repo.DlgDaBuParam.CmbIntervallArt.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Monate' at Center.", repo.List1000.MonateInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Monate' at Center.", repo.List1000.MonateInfo, new RecordItemIndex(15));
             repo.List1000.Monate.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(16));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            //Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'True' on item 'DlgDaBuParam.RbDatum'.", repo.DlgDaBuParam.RbDatumInfo, new RecordItemIndex(16));
+            //Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'True' on item 'DlgDaBuParam.RbDatum'.", repo.DlgDaBuParam.RbDatumInfo, new RecordItemIndex(17));
             //repo.DlgDaBuParam.RbDatum.Element.SetAttributeValue("Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDaBuParam.CmbTag' at Center.", repo.DlgDaBuParam.CmbTagInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDaBuParam.CmbTag' at Center.", repo.DlgDaBuParam.CmbTagInfo, new RecordItemIndex(18));
             repo.DlgDaBuParam.CmbTag.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1' with focus on 'DlgDaBuParam.CmbTag'.", repo.DlgDaBuParam.CmbTagInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1' with focus on 'DlgDaBuParam.CmbTag'.", repo.DlgDaBuParam.CmbTagInfo, new RecordItemIndex(19));
             repo.DlgDaBuParam.CmbTag.PressKeys("1");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDaBuParam.Beginn' at Center.", repo.DlgDaBuParam.BeginnInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDaBuParam.Beginn' at Center.", repo.DlgDaBuParam.BeginnInfo, new RecordItemIndex(20));
             repo.DlgDaBuParam.Beginn.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DABU_Beginn' with focus on 'DlgDaBuParam.Beginn'.", repo.DlgDaBuParam.BeginnInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$DABU_Beginn' with focus on 'DlgDaBuParam.Beginn'.", repo.DlgDaBuParam.BeginnInfo, new RecordItemIndex(21));
             repo.DlgDaBuParam.Beginn.PressKeys(DABU_Beginn);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(22));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDaBuParam.AnzahlGesamt' at Center.", repo.DlgDaBuParam.AnzahlGesamtInfo, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDaBuParam.AnzahlGesamt' at Center.", repo.DlgDaBuParam.AnzahlGesamtInfo, new RecordItemIndex(23));
             repo.DlgDaBuParam.AnzahlGesamt.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '10' with focus on 'DlgDaBuParam.AnzahlGesamt'.", repo.DlgDaBuParam.AnzahlGesamtInfo, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '10' with focus on 'DlgDaBuParam.AnzahlGesamt'.", repo.DlgDaBuParam.AnzahlGesamtInfo, new RecordItemIndex(24));
             repo.DlgDaBuParam.AnzahlGesamt.PressKeys("10");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(25));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BUDA_Beleg_NR_1) on item 'DlgDaBuParam.dfBelNr'.", repo.DlgDaBuParam.dfBelNrInfo, new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BUDA_Beleg_NR_1) on item 'DlgDaBuParam.dfBelNr'.", repo.DlgDaBuParam.dfBelNrInfo, new RecordItemIndex(26));
             Validate.AttributeEqual(repo.DlgDaBuParam.dfBelNrInfo, "Text", BUDA_Beleg_NR_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Strukturiert') on item 'DlgDaBuParam.CmbBelegNummerArt'.", repo.DlgDaBuParam.CmbBelegNummerArtInfo, new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Strukturiert') on item 'DlgDaBuParam.CmbBelegNummerArt'.", repo.DlgDaBuParam.CmbBelegNummerArtInfo, new RecordItemIndex(27));
             Validate.AttributeEqual(repo.DlgDaBuParam.CmbBelegNummerArtInfo, "Text", "Strukturiert");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_Nr) on item 'DlgDaBuParam.DfBudaText'.", repo.DlgDaBuParam.DfBudaTextInfo, new RecordItemIndex(27));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_Nr) on item 'DlgDaBuParam.DfBudaText'.", repo.DlgDaBuParam.DfBudaTextInfo, new RecordItemIndex(28));
             Validate.AttributeEqual(repo.DlgDaBuParam.DfBudaTextInfo, "Text", Beleg_Nr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Monate') on item 'DlgDaBuParam.CmbIntervallArt'.", repo.DlgDaBuParam.CmbIntervallArtInfo, new RecordItemIndex(28));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Monate') on item 'DlgDaBuParam.CmbIntervallArt'.", repo.DlgDaBuParam.CmbIntervallArtInfo, new RecordItemIndex(29));
             Validate.AttributeEqual(repo.DlgDaBuParam.CmbIntervallArtInfo, "Text", "Monate");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'DlgDaBuParam.UpDownEdit'.", repo.DlgDaBuParam.UpDownEditInfo, new RecordItemIndex(29));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'DlgDaBuParam.UpDownEdit'.", repo.DlgDaBuParam.UpDownEditInfo, new RecordItemIndex(30));
             Validate.AttributeEqual(repo.DlgDaBuParam.UpDownEditInfo, "Text", "1");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgDaBuParam.RbDatum'.", repo.DlgDaBuParam.RbDatumInfo, new RecordItemIndex(30));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgDaBuParam.RbDatum'.", repo.DlgDaBuParam.RbDatumInfo, new RecordItemIndex(31));
             Validate.AttributeEqual(repo.DlgDaBuParam.RbDatumInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'DlgDaBuParam.CmbTag'.", repo.DlgDaBuParam.CmbTagInfo, new RecordItemIndex(31));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'DlgDaBuParam.CmbTag'.", repo.DlgDaBuParam.CmbTagInfo, new RecordItemIndex(32));
             Validate.AttributeEqual(repo.DlgDaBuParam.CmbTagInfo, "Text", "1");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$DABU_Beginn) on item 'DlgDaBuParam.DfInfo_erste_Buchung'.", repo.DlgDaBuParam.DfInfo_erste_BuchungInfo, new RecordItemIndex(32));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$DABU_Beginn) on item 'DlgDaBuParam.DfInfo_erste_Buchung'.", repo.DlgDaBuParam.DfInfo_erste_BuchungInfo, new RecordItemIndex(33));
             Validate.AttributeEqual(repo.DlgDaBuParam.DfInfo_erste_BuchungInfo, "Text", DABU_Beginn);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$DABU_Ende) on item 'DlgDaBuParam.Ende'.", repo.DlgDaBuParam.EndeInfo, new RecordItemIndex(33));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$DABU_Ende) on item 'DlgDaBuParam.Ende'.", repo.DlgDaBuParam.EndeInfo, new RecordItemIndex(34));
             Validate.AttributeEqual(repo.DlgDaBuParam.EndeInfo, "Text", DABU_Ende);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$DABU_Next1) on item 'DlgDaBuParam.NaechsteBuchung'.", repo.DlgDaBuParam.NaechsteBuchungInfo, new RecordItemIndex(34));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$DABU_Next1) on item 'DlgDaBuParam.NaechsteBuchung'.", repo.DlgDaBuParam.NaechsteBuchungInfo, new RecordItemIndex(35));
             Validate.AttributeEqual(repo.DlgDaBuParam.NaechsteBuchungInfo, "Text", DABU_Next1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'DlgDaBuParam.AnzahlGesamt'.", repo.DlgDaBuParam.AnzahlGesamtInfo, new RecordItemIndex(35));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'DlgDaBuParam.AnzahlGesamt'.", repo.DlgDaBuParam.AnzahlGesamtInfo, new RecordItemIndex(36));
             Validate.AttributeEqual(repo.DlgDaBuParam.AnzahlGesamtInfo, "Text", "10");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDaBuParam.PbOK' at Center.", repo.DlgDaBuParam.PbOKInfo, new RecordItemIndex(36));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDaBuParam.PbOK' at Center.", repo.DlgDaBuParam.PbOKInfo, new RecordItemIndex(37));
             repo.DlgDaBuParam.PbOK.Click();
             
         }

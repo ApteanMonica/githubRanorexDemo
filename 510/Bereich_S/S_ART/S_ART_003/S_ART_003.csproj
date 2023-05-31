@@ -141,6 +141,18 @@
     <Compile Include="Program.cs">
       <id>52311be8-7008-4356-8b97-aa3de306b8cd</id>
     </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>7d02ad00-042a-4ce5-92e7-02e940e51563</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b6bfb933-7f5e-4a54-a49a-1c10949df560</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>7d02ad00-042a-4ce5-92e7-02e940e51563</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>090e03ae-9e57-4e61-a070-1096d60dbac4</id>
+    </Compile>
     <Compile Include="Recordings\Neuanlage_Artikel.cs">
       <BoundTo>2f07cacd-dbc5-4298-abb2-23779bf385c0</BoundTo>
       <DependentUpon>Neuanlage_Artikel.rxrec</DependentUpon>
@@ -193,6 +205,11 @@
       <id>8d853cfd-a8d5-4a4d-af1e-8831420a0f37</id>
       <recordtableid>ea1e00dd-16e8-4a62-9cb6-1fe906e4f6c1</recordtableid>
     </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>175eb522-c88d-4146-8e1d-039be2cb3f59</BoundTo>
+      <id>7d02ad00-042a-4ce5-92e7-02e940e51563</id>
+      <recordtableid>2d18a3b1-f5eb-4568-bbe8-b90e2f5ab246</recordtableid>
+    </None>
     <None Include="Recordings\Neuanlage_Artikel.rxrec">
       <BoundTo>175eb522-c88d-4146-8e1d-039be2cb3f59</BoundTo>
       <id>2f07cacd-dbc5-4298-abb2-23779bf385c0</id>
@@ -234,12 +251,6 @@
     <Folder Include="Recordings">
       <id>88439aba-3396-4425-94dd-4f96cde3cabc</id>
     </Folder>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
-      <Project>{195B1252-7FAC-44E5-8998-67EED1D07B0E}</Project>
-      <Name>Ranorex Automation Helpers</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
