@@ -41,8 +41,8 @@ namespace Hotfixtest_510.Recordings.B_BUKA
         /// </summary>
         public StartAUT()
         {
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            B_BUKA = "B_BUKA";
+            Startfile = "";
+            B_BUKA = "";
         }
 
         /// <summary>

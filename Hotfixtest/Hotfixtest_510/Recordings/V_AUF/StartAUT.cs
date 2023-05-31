@@ -41,8 +41,8 @@ namespace Hotfixtest_510.Recordings.V_AUF
         /// </summary>
         public StartAUT()
         {
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            V_AUF = "V_AUF";
+            Startfile = "";
+            V_AUF = "";
         }
 
         /// <summary>

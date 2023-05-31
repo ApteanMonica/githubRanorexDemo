@@ -41,8 +41,8 @@ namespace Hotfixtest_510.Recordings.S_ART
         /// </summary>
         public StartAUT()
         {
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            S_ART = "S_ART";
+            Startfile = "";
+            S_ART = "";
         }
 
         /// <summary>
