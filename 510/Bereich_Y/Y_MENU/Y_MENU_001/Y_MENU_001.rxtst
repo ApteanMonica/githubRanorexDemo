@@ -48,16 +48,21 @@
 			VideoFps="15"
 			VideoRecordingMode="Off"
 			VideoSource="Auto"
+			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
 			id="7af4c7e1-87b0-4e67-a3a9-b83e90141b59"
+			includeimageschecked="False"
+			includerecordingschecked="False"
 			junitreport="False"
 			name="Y_MENU_001"
+			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testcase
 			id="898352d8-d6bb-4d9f-8e94-bc5042963e2c"
@@ -122,14 +127,6 @@
 					variablename="Programm">
 					</var>
 				</databinding>
-				<missingdatavariablesbinding>
-					<var
-					dataname="AppProcessID"
-					datasourceid="898352d8-d6bb-4d9f-8e94-bc5042963e2c"
-					variableid="88b06b00-6cc5-4b3a-8586-772b81b477ae"
-					variablename="StartAutProcessIDVar">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
