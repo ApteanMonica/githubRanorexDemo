@@ -41,8 +41,8 @@ namespace Hotfixtest_490.Recordings.S_ADR
         /// </summary>
         public StartAUT()
         {
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            S_ADR = "S_ADR";
+            Startfile = "";
+            S_ADR = "";
         }
 
         /// <summary>

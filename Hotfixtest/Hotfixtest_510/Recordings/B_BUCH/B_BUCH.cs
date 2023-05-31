@@ -130,8 +130,8 @@ namespace Hotfixtest_510.Recordings.B_BUCH
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiBuch.PbStandard2' at Center.", repo.MdiBuch.PbStandard2Info, new RecordItemIndex(16));
             repo.MdiBuch.PbStandard2.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'Buchung  OK ?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(17));
-            Validate.AttributeRegex(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", new Regex("Buchung  OK ?"));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'(Buchung OK ?)|(Buchung  OK ?) ') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(17));
+            Validate.AttributeRegex(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", new Regex("(Buchung OK ?)|(Buchung  OK ?) "));
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(18));
             repo.DlgMessageBox.Button0.Click();

@@ -41,8 +41,8 @@ namespace Hotfixtest_510.Recordings.B_BUCH
         /// </summary>
         public StartAUT()
         {
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            B_BUCH = "B_BUCH";
+            Startfile = "";
+            B_BUCH = "";
         }
 
         /// <summary>
