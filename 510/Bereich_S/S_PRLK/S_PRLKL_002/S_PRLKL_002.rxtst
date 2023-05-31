@@ -23,14 +23,6 @@
 					variablename="Lieferant">
 					</var>
 				</databinding>
-				<missingdatavariablesbinding>
-					<var
-					dataname="Lieferant"
-					datasourceid="d45ccc9e-b75a-4773-9ff5-e3ba40185098"
-					variableid="c6e87e13-0221-4b07-825d-a1fc3b994dcf"
-					variablename="Lieferant">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
 			<teardown
 			id="95530244-4b5a-41e3-8e92-ef26c17a80d9"
@@ -44,16 +36,21 @@
 			VideoFps="15"
 			VideoRecordingMode="Off"
 			VideoSource="Auto"
+			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
 			id="a0040f7c-a7b5-4150-89a5-fc1a0777253c"
+			includeimageschecked="False"
+			includerecordingschecked="False"
 			junitreport="False"
 			name="S_PRLKL_002"
+			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
 			id="a5d327fd-3ae5-46ab-9459-8dc1d7966f19"
@@ -231,8 +228,5 @@
 		</testconfiguration>
 	</testconfigurations>
 	<references>
-		<reference>
-			Ranorex Automation Helpers.dll
-		</reference>
 	</references>
 </testsuitedoc>

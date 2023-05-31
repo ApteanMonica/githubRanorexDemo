@@ -81,16 +81,21 @@
 			VideoFps="15"
 			VideoRecordingMode="Off"
 			VideoSource="Auto"
+			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
 			id="4ecc86e1-beb7-4146-9520-62899703c94c"
+			includeimageschecked="False"
+			includerecordingschecked="False"
 			junitreport="False"
 			name="S_PRLKL_001"
+			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
 			id="5047910e-7e5f-48ad-a181-519c104ea285"
@@ -228,8 +233,5 @@
 		</testconfiguration>
 	</testconfigurations>
 	<references>
-		<reference>
-			Ranorex Automation Helpers.dll
-		</reference>
 	</references>
 </testsuitedoc>
