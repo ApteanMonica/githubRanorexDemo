@@ -135,15 +135,15 @@
     <Compile Include="Program.cs">
       <id>0adfa8f5-47c5-42eb-8699-7763be918586</id>
     </Compile>
-    <Compile Include="Recordings\Buchung_laden_ohne_Einschraenkung.cs">
+    <Compile Include="Recordings\Buchung_laden.cs">
       <BoundTo>b8f4d811-0471-47d5-b560-6d13774ebd4a</BoundTo>
-      <DependentUpon>Buchung_laden_ohne_Einschraenkung.rxrec</DependentUpon>
+      <DependentUpon>Buchung_laden.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>c4ea5024-018a-468a-9fef-d1dc632165d9</id>
     </Compile>
-    <Compile Include="Recordings\Buchung_laden_ohne_Einschraenkung.UserCode.cs">
+    <Compile Include="Recordings\Buchung_laden.UserCode.cs">
       <BoundTo>b8f4d811-0471-47d5-b560-6d13774ebd4a</BoundTo>
-      <DependentUpon>Buchung_laden_ohne_Einschraenkung.rxrec</DependentUpon>
+      <DependentUpon>Buchung_laden.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>66d4421f-c5b9-4e7a-b597-175d00be769c</id>
     </Compile>
@@ -242,6 +242,18 @@
       <DependentUpon>StartAUT_02.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>27c1fd1b-f278-4d67-b943-666ecd824246</id>
+    </Compile>
+    <Compile Include="Recordings\Tagesdatum_ermitteln.cs">
+      <BoundTo>6c4c1492-a7bb-4ded-924f-8e99d5aef431</BoundTo>
+      <DependentUpon>Tagesdatum_ermitteln.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6765f404-20e7-41a3-80b9-8f2a144aa41a</id>
+    </Compile>
+    <Compile Include="Recordings\Tagesdatum_ermitteln.UserCode.cs">
+      <BoundTo>6c4c1492-a7bb-4ded-924f-8e99d5aef431</BoundTo>
+      <DependentUpon>Tagesdatum_ermitteln.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bcf7ac78-271f-4d3d-acd6-eb34d373b112</id>
     </Compile>
     <Compile Include="Recordings\USt_Bereich_Buchungsende.cs">
       <BoundTo>44eb7e59-ed06-4e09-a7f9-071395e191dc</BoundTo>
@@ -355,7 +367,7 @@
       <repoid>e559f229-6ddd-4a1e-b577-d1f7e5a6b60d</repoid>
       <reporootid>66a0add1-4784-4e4e-b925-452d6c4fce59</reporootid>
     </None>
-    <None Include="Recordings\Buchung_laden_ohne_Einschraenkung.rxrec">
+    <None Include="Recordings\Buchung_laden.rxrec">
       <BoundTo>0d0e09fc-9e55-45bb-8c68-3fa6da01ab2f</BoundTo>
       <id>b8f4d811-0471-47d5-b560-6d13774ebd4a</id>
       <recordtableid>45f00532-92be-42fb-9fe0-a1ee5fa4920c</recordtableid>
@@ -399,6 +411,11 @@
       <BoundTo>0d0e09fc-9e55-45bb-8c68-3fa6da01ab2f</BoundTo>
       <id>44547197-211c-4bef-bf30-a55390c9d81a</id>
       <recordtableid>ed2b89cb-40b9-490f-9ce3-dd73b388d1c4</recordtableid>
+    </None>
+    <None Include="Recordings\Tagesdatum_ermitteln.rxrec">
+      <BoundTo>0d0e09fc-9e55-45bb-8c68-3fa6da01ab2f</BoundTo>
+      <id>6c4c1492-a7bb-4ded-924f-8e99d5aef431</id>
+      <recordtableid>4d6ea94c-5d15-43fa-94b1-706335afdf50</recordtableid>
     </None>
     <None Include="Recordings\USt_Bereich_Buchungsende.rxrec">
       <BoundTo>0d0e09fc-9e55-45bb-8c68-3fa6da01ab2f</BoundTo>

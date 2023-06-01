@@ -43,8 +43,41 @@ mode="Global">
 		name="Lieferant">
 			300011
 		</var>
+		<var
+		id="55a6d985-1b92-4078-8d18-ff4f5d05cdce"
+		name="Tagesdatum">
+		</var>
 	</variables>
 	<recorditems>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="671baa8c-a9b0-48aa-846c-eaeddd87ef5f">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Tagesdatum">
+				</binding>
+			</bindings>
+			<info
+			id="cb2703a8-0bc0-4d54-96b0-246ce3de3d67"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colDtAendg Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				B_BUCH_001_1
+			</matchvalue>
+		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -643,7 +676,7 @@ mode="Global">
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
-		optional="False"
+		optional="True"
 		searchpropertyid="824cfd55-0235-4f49-95d4-cca2f61a81b2">
 			<comment>
 			</comment>
@@ -722,7 +755,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				5010
+				*
 			</matchvalue>
 		</validationitem>
 		<validationitem

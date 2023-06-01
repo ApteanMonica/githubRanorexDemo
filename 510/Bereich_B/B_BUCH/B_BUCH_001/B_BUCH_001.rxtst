@@ -19,6 +19,9 @@
 			name="USt_Bereich_Buchungsende"
 			ref="6e74bd50-0ccb-4bcc-a1fd-0094c5ca4f84"
 			type="Recording">
+				<description>
+					<![CDATA[regex (Buchung  OK ?)|(Buchung OK ?) - nur 1 Leerzeichen ab 510 SP15]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Buchungstext"
@@ -43,16 +46,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm2"
-					datasourceid="5d518314-0f3d-417b-94ba-0eeb421d8936"
-					variableid="3aad3bca-da5b-4c62-b3b0-77d094120f87"
-					variablename="Programm2">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="5d518314-0f3d-417b-94ba-0eeb421d8936"
 					variableid="21b4bc08-9f87-4c95-b0ad-8a36285cfcdb"
 					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm2"
+					datasourceid="5d518314-0f3d-417b-94ba-0eeb421d8936"
+					variableid="3aad3bca-da5b-4c62-b3b0-77d094120f87"
+					variablename="Programm2">
 					</var>
 				</databinding>
 			</testmodule>
@@ -213,18 +216,21 @@
 			name="Validation_ER_Buchung_in_B_BUAB"
 			ref="b49cdb4c-90f6-4113-a0ea-fd6f0818f92d"
 			type="Recording">
+				<description>
+					<![CDATA[Gegenkonto korret * (statt 5010) ab 510 SP15 und 511 SP15; continue on fail bis Aktualisierung in 521]]>
+				</description>
 				<databinding>
 					<var
-					dataname="Buchungstext"
+					dataname="Tagesdatum"
 					datasourceid="5d518314-0f3d-417b-94ba-0eeb421d8936"
-					variableid="7b4e1f84-bc5d-42d7-b8d8-68ca46944ca2"
-					variablename="Buchungstext">
+					variableid="55a6d985-1b92-4078-8d18-ff4f5d05cdce"
+					variablename="Tagesdatum">
 					</var>
 					<var
-					dataname="Datum_Beleg"
+					dataname="Lieferant"
 					datasourceid="5d518314-0f3d-417b-94ba-0eeb421d8936"
-					variableid="a43cdf56-d4dd-42ab-9c09-3b4f643c99b1"
-					variablename="Datum_Beleg">
+					variableid="e683663b-d619-466a-9c12-024c00b185f9"
+					variablename="Lieferant">
 					</var>
 					<var
 					dataname="Beleg_Nr"
@@ -233,10 +239,16 @@
 					variablename="Beleg_Nr">
 					</var>
 					<var
-					dataname="Lieferant"
+					dataname="Datum_Beleg"
 					datasourceid="5d518314-0f3d-417b-94ba-0eeb421d8936"
-					variableid="e683663b-d619-466a-9c12-024c00b185f9"
-					variablename="Lieferant">
+					variableid="a43cdf56-d4dd-42ab-9c09-3b4f643c99b1"
+					variablename="Datum_Beleg">
+					</var>
+					<var
+					dataname="Buchungstext"
+					datasourceid="5d518314-0f3d-417b-94ba-0eeb421d8936"
+					variableid="7b4e1f84-bc5d-42d7-b8d8-68ca46944ca2"
+					variablename="Buchungstext">
 					</var>
 				</databinding>
 			</testmodule>
@@ -248,12 +260,17 @@
 			</testmodule>
 			<testmodule
 			id="6ef893cd-065a-4d81-a6fc-5a201d5c2d28"
-			name="Buchung_laden_ohne_Einschraenkung"
+			name="Buchung_laden"
 			ref="45f00532-92be-42fb-9fe0-a1ee5fa4920c"
 			type="Recording">
-				<description>
-					<![CDATA[Mit "Laden" (ohne Einschränkung) wird die letzte Buchung geladen. Sollte zwischenzeitlich ein anderer Beleg gebucht werden, funktionert dieser Weg nicht.]]>
-				</description>
+				<databinding>
+					<var
+					dataname="Beleg_Nr"
+					datasourceid="5d518314-0f3d-417b-94ba-0eeb421d8936"
+					variableid="c4df6943-7c64-4f88-9b9c-2be683f0a418"
+					variablename="Beleg_Nr">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="72182a78-a1de-4034-bc90-bc0373b8ffda"
@@ -312,16 +329,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Beleg_Nr"
-					datasourceid="5d518314-0f3d-417b-94ba-0eeb421d8936"
-					variableid="34fd004f-2bf9-4fa6-9247-aecdb580b9ab"
-					variablename="Beleg_Nr">
-					</var>
-					<var
 					dataname="Lieferant"
 					datasourceid="5d518314-0f3d-417b-94ba-0eeb421d8936"
 					variableid="2c979dbd-7361-4478-bcf5-3673240462c5"
 					variablename="Lieferant">
+					</var>
+					<var
+					dataname="Beleg_Nr"
+					datasourceid="5d518314-0f3d-417b-94ba-0eeb421d8936"
+					variableid="34fd004f-2bf9-4fa6-9247-aecdb580b9ab"
+					variablename="Beleg_Nr">
 					</var>
 				</databinding>
 			</testmodule>
@@ -333,6 +350,20 @@
 			id="a66f9009-69af-4df6-bb6a-2bb410cb1d90"
 			name="B_BUAB">
 			</testcase>
+			<testmodule
+			id="bf161edc-be28-42db-a159-5211bb4f59e0"
+			name="Tagesdatum_ermitteln"
+			ref="4d6ea94c-5d15-43fa-94b1-706335afdf50"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="5d518314-0f3d-417b-94ba-0eeb421d8936"
+					variableid="10c84235-c3ef-4043-a480-021e047b788b"
+					variablename="Tagesdatum">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="c448c492-8c6b-438a-ac9a-336c0a9edab0"
 			name="teardown">
@@ -507,10 +538,14 @@
 							id="24920418-04ec-4a67-b322-baeb4a52a040"
 							name="StartAUT_02">
 							</testmodule>
+							<testmodule
+							id="bf161edc-be28-42db-a159-5211bb4f59e0"
+							name="Tagesdatum_ermitteln">
+							</testmodule>
 						</setup>
 						<testmodule
 						id="6ef893cd-065a-4d81-a6fc-5a201d5c2d28"
-						name="Buchung_laden_ohne_Einschraenkung">
+						name="Buchung_laden">
 						</testmodule>
 						<testmodule
 						id="5fd01955-4ce0-4465-a3da-d3a123c28afd"
