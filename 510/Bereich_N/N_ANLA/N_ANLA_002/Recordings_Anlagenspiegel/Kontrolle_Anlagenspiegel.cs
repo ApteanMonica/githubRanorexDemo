@@ -88,20 +88,29 @@ namespace N_ANLA_002.Recordings_Anlagenspiegel
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.300,00') on item 'TblSpiegel.ColAhkEndeRow1'.", repo.TblSpiegel.ColAhkEndeRow1Info, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.TblSpiegel.ColAhkEndeRow1Info, "Text", "2.300,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0660') on item 'TblSpiegel.ColWert1Row2'.", repo.TblSpiegel.ColWert1Row2Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='460,00') on item 'TblSpiegel.ColAfaLfdRow1'.", repo.TblSpiegel.ColAfaLfdRow1Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.TblSpiegel.ColAfaLfdRow1Info, "Text", "460,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0660') on item 'TblSpiegel.ColWert1Row2'.", repo.TblSpiegel.ColWert1Row2Info, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.TblSpiegel.ColWert1Row2Info, "Text", "0660");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Betriebs- und Geschäftsausstattung') on item 'TblSpiegel.ColWertBezRow2'.", repo.TblSpiegel.ColWertBezRow2Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Betriebs- und Geschäftsausstattung') on item 'TblSpiegel.ColWertBezRow2'.", repo.TblSpiegel.ColWertBezRow2Info, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.TblSpiegel.ColWertBezRow2Info, "Text", "Betriebs- und Geschäftsausstattung");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3.100,00') on item 'TblSpiegel.ColAhkEndeRow2'.", repo.TblSpiegel.ColAhkEndeRow2Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3.100,00') on item 'TblSpiegel.ColAhkEndeRow2'.", repo.TblSpiegel.ColAhkEndeRow2Info, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.TblSpiegel.ColAhkEndeRow2Info, "Text", "3.100,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='GESAMT') on item 'TblSpiegel.ColWertBezRow0'.", repo.TblSpiegel.ColWertBezRow0Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='380,00') on item 'TblSpiegel.ColAfaLfdRow2'.", repo.TblSpiegel.ColAfaLfdRow2Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.TblSpiegel.ColAfaLfdRow2Info, "Text", "380,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='GESAMT') on item 'TblSpiegel.ColWertBezRow0'.", repo.TblSpiegel.ColWertBezRow0Info, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.TblSpiegel.ColWertBezRow0Info, "Text", "GESAMT");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='5.400,00') on item 'TblSpiegel.ColAhkEndeRow0'.", repo.TblSpiegel.ColAhkEndeRow0Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='5.400,00') on item 'TblSpiegel.ColAhkEndeRow0'.", repo.TblSpiegel.ColAhkEndeRow0Info, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.TblSpiegel.ColAhkEndeRow0Info, "Text", "5.400,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='840,00') on item 'TblSpiegel.ColAfaLfdRow0'.", repo.TblSpiegel.ColAfaLfdRow0Info, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.TblSpiegel.ColAfaLfdRow0Info, "Text", "840,00");
             
         }
 

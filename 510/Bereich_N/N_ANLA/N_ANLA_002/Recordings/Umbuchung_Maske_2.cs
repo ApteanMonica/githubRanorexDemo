@@ -82,8 +82,8 @@ namespace N_ANLA_002.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgUmbuch.TitleBar100UmbuchungAufNeueAnlage'", repo.DlgUmbuch.TitleBar100UmbuchungAufNeueAnlageInfo, new ActionTimeout(120000), new RecordItemIndex(0));
             repo.DlgUmbuch.TitleBar100UmbuchungAufNeueAnlageInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Umbuchung auf neue Anlage ') on item 'DlgUmbuch.TitleBar100UmbuchungAufNeueAnlage'.", repo.DlgUmbuch.TitleBar100UmbuchungAufNeueAnlageInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.DlgUmbuch.TitleBar100UmbuchungAufNeueAnlageInfo, "Text", "Umbuchung auf neue Anlage ");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  Umbuchung auf neue Anlage') on item 'DlgUmbuch.TitleBar100UmbuchungAufNeueAnlage'.", repo.DlgUmbuch.TitleBar100UmbuchungAufNeueAnlageInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.DlgUmbuch.TitleBar100UmbuchungAufNeueAnlageInfo, "Text", "[100]  Umbuchung auf neue Anlage");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUmbuch.CbGleicheAnlanr' at Center.", repo.DlgUmbuch.CbGleicheAnlanrInfo, new RecordItemIndex(2));
             repo.DlgUmbuch.CbGleicheAnlanr.Click();

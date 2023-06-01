@@ -1904,6 +1904,9 @@ namespace N_ANLA_002
             RepoItemInfo _colahkenderow2Info;
             RepoItemInfo _colwertbezrow0Info;
             RepoItemInfo _colahkenderow0Info;
+            RepoItemInfo _colafalfdrow1Info;
+            RepoItemInfo _colafalfdrow2Info;
+            RepoItemInfo _colafalfdrow0Info;
 
             /// <summary>
             /// Creates a new TblSpiegel  folder.
@@ -1920,6 +1923,9 @@ namespace N_ANLA_002
                 _colahkenderow2Info = new RepoItemInfo(this, "ColAhkEndeRow2", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAhk_ende Row 2']", "", 30000, null, "794393b0-bb10-4b79-8106-5a7986a9f962");
                 _colwertbezrow0Info = new RepoItemInfo(this, "ColWertBezRow0", "container[@controlname='ChildTableWindow']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colWert_bez Row 0']", "", 30000, null, "ec1f95ce-cbb6-4164-b3d3-b0c0d48c4cfd");
                 _colahkenderow0Info = new RepoItemInfo(this, "ColAhkEndeRow0", "container[@controlname='ChildTableWindow']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAhk_ende Row 0']", "", 30000, null, "61c59b40-3cbd-4bc0-80aa-11dab8cba833");
+                _colafalfdrow1Info = new RepoItemInfo(this, "ColAfaLfdRow1", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAfa_lfd Row 1']", "", 30000, null, "3fa62fea-a97a-4402-98ca-0fc7dcaf438a");
+                _colafalfdrow2Info = new RepoItemInfo(this, "ColAfaLfdRow2", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAfa_lfd Row 2']", "", 30000, null, "633a0fd2-266f-4b4c-b317-4f5ecfba9dcb");
+                _colafalfdrow0Info = new RepoItemInfo(this, "ColAfaLfdRow0", "container[@controlname='ChildTableWindow']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAfa_lfd Row 0']", "", 30000, null, "6383fec8-53c4-40ab-854b-3e6c89017223");
             }
 
             /// <summary>
@@ -2159,6 +2165,78 @@ namespace N_ANLA_002
                 get
                 {
                     return _colahkenderow0Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColAfaLfdRow1 item.
+            /// </summary>
+            [RepositoryItem("3fa62fea-a97a-4402-98ca-0fc7dcaf438a")]
+            public virtual Ranorex.Cell ColAfaLfdRow1
+            {
+                get
+                {
+                    return _colafalfdrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColAfaLfdRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("3fa62fea-a97a-4402-98ca-0fc7dcaf438a")]
+            public virtual RepoItemInfo ColAfaLfdRow1Info
+            {
+                get
+                {
+                    return _colafalfdrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColAfaLfdRow2 item.
+            /// </summary>
+            [RepositoryItem("633a0fd2-266f-4b4c-b317-4f5ecfba9dcb")]
+            public virtual Ranorex.Cell ColAfaLfdRow2
+            {
+                get
+                {
+                    return _colafalfdrow2Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColAfaLfdRow2 item info.
+            /// </summary>
+            [RepositoryItemInfo("633a0fd2-266f-4b4c-b317-4f5ecfba9dcb")]
+            public virtual RepoItemInfo ColAfaLfdRow2Info
+            {
+                get
+                {
+                    return _colafalfdrow2Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColAfaLfdRow0 item.
+            /// </summary>
+            [RepositoryItem("6383fec8-53c4-40ab-854b-3e6c89017223")]
+            public virtual Ranorex.Cell ColAfaLfdRow0
+            {
+                get
+                {
+                    return _colafalfdrow0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColAfaLfdRow0 item info.
+            /// </summary>
+            [RepositoryItemInfo("6383fec8-53c4-40ab-854b-3e6c89017223")]
+            public virtual RepoItemInfo ColAfaLfdRow0Info
+            {
+                get
+                {
+                    return _colafalfdrow0Info;
                 }
             }
         }
