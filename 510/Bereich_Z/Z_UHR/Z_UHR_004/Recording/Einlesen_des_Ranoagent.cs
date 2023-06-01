@@ -92,6 +92,8 @@ namespace Z_UHR_004.Recording
 
             Init();
 
+            computerName = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetHost();
+            
         }
 
 #region Image Feature Data
