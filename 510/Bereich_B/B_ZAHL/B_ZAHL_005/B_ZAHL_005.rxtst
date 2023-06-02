@@ -28,7 +28,7 @@
 			ref="3be3251b-5332-410e-afd2-6501ff8311ab"
 			type="Recording">
 				<description>
-					<![CDATA[Korrektur bis Ticketerledigung MC844]]>
+					<![CDATA[nach BUG ERL entfernen: Korrektur bis Ticketerledigung BUG 38605 (26715 / MC844 hat nur B_ZAHL_002 + 004 gelöst, nicht Teilzahlungen)]]>
 				</description>
 			</testmodule>
 			<testmodule
@@ -289,9 +289,6 @@
 			name="OPs_in_Zahlungsvorschlag_pruefen"
 			ref="3e561c6a-b426-4b7f-8a6a-c5d1119570c5"
 			type="Recording">
-				<description>
-					<![CDATA[Fehler Ticket MC844 - Skonto% bei Skontobasis 0,00 ist nach Erstellung ZV 2%, nach Skontoneuberechnung 0% (Validierung disabled bis Korr. Ticket)]]>
-				</description>
 			</testmodule>
 			<testmodule
 			id="adfecf49-aefc-4387-bb8f-24cbfd4daa6d"
@@ -299,7 +296,7 @@
 			ref="c90fea45-1318-4400-ad72-f4b3d3ef9498"
 			type="Recording">
 				<description>
-					<![CDATA[Validierung nach Ticketerledigung MC844 ggf. Anpassen: Skontoprozentsatz]]>
+					<![CDATA[nach BUG ERL anpassen: 38605 Regex-Oder Sk% 0,00|2,00 ER50 Skontoprozenz vor und nach Workaround unterschiedlich (2% korrekt - nach Workaround 0%]]>
 				</description>
 			</testmodule>
 			<testmodule
@@ -356,7 +353,7 @@
 			ref="ac0157e6-c952-4097-be4c-8f98a2bdfe90"
 			type="Recording">
 				<description>
-					<![CDATA[Korrektur bis Ticketerledigung MC844]]>
+					<![CDATA[nach BUG ERL entfernen: Korrektur bis Ticketerledigung BUG 38605 (26715 / MC844 hat nur B_ZAHL_002 + 004 gelöst, nicht Teilzahlungen)]]>
 				</description>
 			</testmodule>
 			<testmodule
