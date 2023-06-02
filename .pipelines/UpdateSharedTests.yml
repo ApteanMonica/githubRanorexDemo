@@ -8,6 +8,7 @@ trigger:
 
 pool:
   name: 'RS2SelfHosted'
+  demands: RANOREX -equals 1
 
 variables:
   solution: '**/*.sln'
