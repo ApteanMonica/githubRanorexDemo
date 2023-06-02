@@ -32,6 +32,7 @@ namespace B_BUCH_001
         B_BUCH_001RepositoryFolders.MdiBuchAppFolder _mdibuch;
         B_BUCH_001RepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
         B_BUCH_001RepositoryFolders.TblB_b_buabAppFolder _tblb_b_buab;
+        B_BUCH_001RepositoryFolders.WSPETAppFolder _wspet;
 
         /// <summary>
         /// Gets the singleton class instance representing the B_BUCH_001Repository element repository.
@@ -53,6 +54,7 @@ namespace B_BUCH_001
             _mdibuch = new B_BUCH_001RepositoryFolders.MdiBuchAppFolder(this);
             _dlgmessagebox = new B_BUCH_001RepositoryFolders.DlgMessageBoxAppFolder(this);
             _tblb_b_buab = new B_BUCH_001RepositoryFolders.TblB_b_buabAppFolder(this);
+            _wspet = new B_BUCH_001RepositoryFolders.WSPETAppFolder(this);
         }
 
 #region Variables
@@ -114,6 +116,15 @@ namespace B_BUCH_001
         public virtual B_BUCH_001RepositoryFolders.TblB_b_buabAppFolder TblB_b_buab
         {
             get { return _tblb_b_buab; }
+        }
+
+        /// <summary>
+        /// The WSPET folder.
+        /// </summary>
+        [RepositoryFolder("48b58a87-9ead-4d0f-b06e-6e67350a25ab")]
+        public virtual B_BUCH_001RepositoryFolders.WSPETAppFolder WSPET
+        {
+            get { return _wspet; }
         }
     }
 
@@ -2338,6 +2349,7 @@ namespace B_BUCH_001
             B_BUCH_001RepositoryFolders.FlexGrid_b_buabFolder _flexgrid_b_buab;
             RepoItemInfo _titlebar100buchungenanzeigenInfo;
             RepoItemInfo _pbdataaccessloadInfo;
+            RepoItemInfo _belegInfo;
             RepoItemInfo _row1Info;
             RepoItemInfo _row2Info;
             RepoItemInfo _row3Info;
@@ -2351,6 +2363,7 @@ namespace B_BUCH_001
                 _flexgrid_b_buab = new B_BUCH_001RepositoryFolders.FlexGrid_b_buabFolder(this);
                 _titlebar100buchungenanzeigenInfo = new RepoItemInfo(this, "TitleBar100BuchungenAnzeigen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "aa1d97ee-f4fe-4a31-890f-5e18a3e552d6");
                 _pbdataaccessloadInfo = new RepoItemInfo(this, "PbDataAccessLoad", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Load']", "", 30000, null, "527ee0c4-14ee-4970-b60d-d22cde3e2e48");
+                _belegInfo = new RepoItemInfo(this, "Beleg", "container[@controlname='ToolBar']/container[@controlname='cDCC_Tools']/text[@controlname='dfBelegnr']/text[@accessiblename='Beleg']", "", 30000, null, "71e25c8e-5edc-4131-8115-9ca0c090122d");
                 _row1Info = new RepoItemInfo(this, "Row1", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']", "", 30000, null, "8f542214-8af3-4625-b18f-4eb4bf915d7e");
                 _row2Info = new RepoItemInfo(this, "Row2", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']", "", 30000, null, "c11ff051-737a-416b-aefa-a9361134af91");
                 _row3Info = new RepoItemInfo(this, "Row3", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']", "", 30000, null, "b94a86d9-1756-4e65-b760-db55c1b98558");
@@ -2425,6 +2438,30 @@ namespace B_BUCH_001
                 get
                 {
                     return _pbdataaccessloadInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Beleg item.
+            /// </summary>
+            [RepositoryItem("71e25c8e-5edc-4131-8115-9ca0c090122d")]
+            public virtual Ranorex.Text Beleg
+            {
+                get
+                {
+                    return _belegInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Beleg item info.
+            /// </summary>
+            [RepositoryItemInfo("71e25c8e-5edc-4131-8115-9ca0c090122d")]
+            public virtual RepoItemInfo BelegInfo
+            {
+                get
+                {
+                    return _belegInfo;
                 }
             }
 
@@ -2516,6 +2553,7 @@ namespace B_BUCH_001
         [RepositoryFolder("840d68b4-b106-4f78-ae5b-7e4c1135d379")]
         public partial class FlexGrid_b_buabFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _coldtaendgrow1Info;
             RepoItemInfo _coladrnrrow1Info;
             RepoItemInfo _colartrow1Info;
             RepoItemInfo _colbelegnrrow1Info;
@@ -2561,6 +2599,7 @@ namespace B_BUCH_001
             public FlexGrid_b_buabFolder(RepoGenBaseFolder parentFolder) :
                     base("FlexGrid_b_buab", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "840d68b4-b106-4f78-ae5b-7e4c1135d379", "")
             {
+                _coldtaendgrow1Info = new RepoItemInfo(this, "ColDtAendgRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colDtAendg Row 1']", "", 30000, null, "cb2703a8-0bc0-4d54-96b0-246ce3de3d67");
                 _coladrnrrow1Info = new RepoItemInfo(this, "ColAdrNrRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colAdr_nr Row 1']", "", 30000, null, "890b58ba-f4a2-4a50-8449-99dbf837267e");
                 _colartrow1Info = new RepoItemInfo(this, "ColArtRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colArt Row 1']", "", 30000, null, "fabf11b2-569f-45a2-988c-7870511dfb4b");
                 _colbelegnrrow1Info = new RepoItemInfo(this, "ColBelegnrRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colBelegnr Row 1']", "", 30000, null, "280fd052-aafd-4716-ad28-5b2b4a418b9b");
@@ -2622,6 +2661,30 @@ namespace B_BUCH_001
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColDtAendgRow1 item.
+            /// </summary>
+            [RepositoryItem("cb2703a8-0bc0-4d54-96b0-246ce3de3d67")]
+            public virtual Ranorex.Cell ColDtAendgRow1
+            {
+                get
+                {
+                    return _coldtaendgrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColDtAendgRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("cb2703a8-0bc0-4d54-96b0-246ce3de3d67")]
+            public virtual RepoItemInfo ColDtAendgRow1Info
+            {
+                get
+                {
+                    return _coldtaendgrow1Info;
                 }
             }
 
@@ -3534,6 +3597,72 @@ namespace B_BUCH_001
                 get
                 {
                     return _coluvarow3Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The WSPETAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("48b58a87-9ead-4d0f-b06e-6e67350a25ab")]
+        public partial class WSPETAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _wspetInfo;
+
+            /// <summary>
+            /// Creates a new WSPET  folder.
+            /// </summary>
+            public WSPETAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("WSPET", "", parentFolder, 30000, null, true, "48b58a87-9ead-4d0f-b06e-6e67350a25ab", "")
+            {
+                _wspetInfo = new RepoItemInfo(this, "WSPET", "", "", 30000, null, "bb7656cf-c6f1-42fa-aec6-21d869e8552a");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("48b58a87-9ead-4d0f-b06e-6e67350a25ab")]
+            public virtual Ranorex.Host Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Host>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("48b58a87-9ead-4d0f-b06e-6e67350a25ab")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WSPET item.
+            /// </summary>
+            [RepositoryItem("bb7656cf-c6f1-42fa-aec6-21d869e8552a")]
+            public virtual Ranorex.Host WSPET
+            {
+                get
+                {
+                    return _wspetInfo.CreateAdapter<Ranorex.Host>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WSPET item info.
+            /// </summary>
+            [RepositoryItemInfo("bb7656cf-c6f1-42fa-aec6-21d869e8552a")]
+            public virtual RepoItemInfo WSPETInfo
+            {
+                get
+                {
+                    return _wspetInfo;
                 }
             }
         }

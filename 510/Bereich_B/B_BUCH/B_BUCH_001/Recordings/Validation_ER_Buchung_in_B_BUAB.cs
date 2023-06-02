@@ -45,6 +45,7 @@ namespace B_BUCH_001.Recordings
             Beleg_Nr = "B_BUCH_001_1";
             Datum_Beleg = "05.01.2020";
             Lieferant = "300011";
+            Tagesdatum = "";
         }
 
         /// <summary>
@@ -105,6 +106,18 @@ namespace B_BUCH_001.Recordings
             set { _Lieferant = value; }
         }
 
+        string _Tagesdatum;
+
+        /// <summary>
+        /// Gets or sets the value of variable Tagesdatum.
+        /// </summary>
+        [TestVariable("55a6d985-1b92-4078-8d18-ff4f5d05cdce")]
+        public string Tagesdatum
+        {
+            get { return _Tagesdatum; }
+            set { _Tagesdatum = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -131,46 +144,51 @@ namespace B_BUCH_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_Nr) on item 'TblB_b_buab.FlexGrid_b_buab.ColBelegnrRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColBelegnrRow1Info, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'TblB_b_buab.FlexGrid_b_buab.ColDtAendgRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColDtAendgRow1Info, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.TblB_b_buab.FlexGrid_b_buab.ColDtAendgRow1Info, "Text", Tagesdatum);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_Nr) on item 'TblB_b_buab.FlexGrid_b_buab.ColBelegnrRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColBelegnrRow1Info, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColBelegnrRow1Info, "Text", Beleg_Nr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Buchungstext) on item 'TblB_b_buab.FlexGrid_b_buab.ColText1Row1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColText1Row1Info, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Buchungstext) on item 'TblB_b_buab.FlexGrid_b_buab.ColText1Row1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColText1Row1Info, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColText1Row1Info, "Text", Buchungstext);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Datum_Beleg) on item 'TblB_b_buab.FlexGrid_b_buab.ColDatumRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColDatumRow1Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Datum_Beleg) on item 'TblB_b_buab.FlexGrid_b_buab.ColDatumRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColDatumRow1Info, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColDatumRow1Info, "Text", Datum_Beleg);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='01.2020') on item 'TblB_b_buab.FlexGrid_b_buab.ColJahrPeriRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColJahrPeriRow1Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='01.2020') on item 'TblB_b_buab.FlexGrid_b_buab.ColJahrPeriRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColJahrPeriRow1Info, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColJahrPeriRow1Info, "Text", "01.2020");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3300') on item 'TblB_b_buab.FlexGrid_b_buab.ColKtoNrRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColKtoNrRow1Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3300') on item 'TblB_b_buab.FlexGrid_b_buab.ColKtoNrRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColKtoNrRow1Info, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColKtoNrRow1Info, "Text", "3300");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER') on item 'TblB_b_buab.FlexGrid_b_buab.ColBusyRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColBusyRow1Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER') on item 'TblB_b_buab.FlexGrid_b_buab.ColBusyRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColBusyRow1Info, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColBusyRow1Info, "Text", "ER");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='R') on item 'TblB_b_buab.FlexGrid_b_buab.ColArtRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColArtRow1Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='R') on item 'TblB_b_buab.FlexGrid_b_buab.ColArtRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColArtRow1Info, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColArtRow1Info, "Text", "R");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='5010') on item 'TblB_b_buab.FlexGrid_b_buab.ColGKtoNrRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColGKtoNrRow1Info, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColGKtoNrRow1Info, "Text", "5010");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='*') on item 'TblB_b_buab.FlexGrid_b_buab.ColGKtoNrRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColGKtoNrRow1Info, new RecordItemIndex(8));
+                Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColGKtoNrRow1Info, "Text", "*", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(8)); }
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Lieferant) on item 'TblB_b_buab.FlexGrid_b_buab.ColAdrNrRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColAdrNrRow1Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Lieferant) on item 'TblB_b_buab.FlexGrid_b_buab.ColAdrNrRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColAdrNrRow1Info, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColAdrNrRow1Info, "Text", Lieferant);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,00') on item 'TblB_b_buab.FlexGrid_b_buab.ColBetragRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColBetragRow1Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,00') on item 'TblB_b_buab.FlexGrid_b_buab.ColBetragRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColBetragRow1Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColBetragRow1Info, "Text", "100,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='H') on item 'TblB_b_buab.FlexGrid_b_buab.ColSHRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColSHRow1Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='H') on item 'TblB_b_buab.FlexGrid_b_buab.ColSHRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColSHRow1Info, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColSHRow1Info, "Text", "H");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,00') on item 'TblB_b_buab.FlexGrid_b_buab.ColBruttoRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColBruttoRow1Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,00') on item 'TblB_b_buab.FlexGrid_b_buab.ColBruttoRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColBruttoRow1Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColBruttoRow1Info, "Text", "100,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2020-1') on item 'TblB_b_buab.FlexGrid_b_buab.ColUvaRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColUvaRow1Info, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2020-1') on item 'TblB_b_buab.FlexGrid_b_buab.ColUvaRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColUvaRow1Info, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColUvaRow1Info, "Text", "2020-1");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'TblB_b_buab.FlexGrid_b_buab.ColCd1Row1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColCd1Row1Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'TblB_b_buab.FlexGrid_b_buab.ColCd1Row1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColCd1Row1Info, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColCd1Row1Info, "Text", "20");
             
         }

@@ -100,21 +100,16 @@ namespace B_BUCH_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(6));
             repo.DlgMessageBox.Button0.Click();
             
-            // Center Right für Klick auf PD-Pfeil
-            Report.Log(ReportLevel.Info, "Mouse", "Center Right für Klick auf PD-Pfeil\r\nMouse Left Click item 'MdiBuch.FrmRG.unterer_Frame_3.Zahlungsart' at CenterRight.", repo.MdiBuch.FrmRG.unterer_Frame_3.ZahlungsartInfo, new RecordItemIndex(7));
-            repo.MdiBuch.FrmRG.unterer_Frame_3.Zahlungsart.Click(Location.CenterRight);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '' on item 'MdiBuch.FrmRG.unterer_Frame_3.Zahlungsart'.", repo.MdiBuch.FrmRG.unterer_Frame_3.ZahlungsartInfo, new RecordItemIndex(7));
+            repo.MdiBuch.FrmRG.unterer_Frame_3.Zahlungsart.Element.SetAttributeValue("Text", "");
             
-            // Center Right für Klick auf PD-Pfeil damit Wert markiert ist
-            Report.Log(ReportLevel.Info, "Mouse", "Center Right für Klick auf PD-Pfeil damit Wert markiert ist\r\nMouse Left Click item 'MdiBuch.FrmRG.unterer_Frame_3.Zahlungsart' at CenterRight.", repo.MdiBuch.FrmRG.unterer_Frame_3.ZahlungsartInfo, new RecordItemIndex(8));
-            repo.MdiBuch.FrmRG.unterer_Frame_3.Zahlungsart.Click(Location.CenterRight);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'B' with focus on 'MdiBuch.FrmRG.unterer_Frame_3.Zahlungsart'.", repo.MdiBuch.FrmRG.unterer_Frame_3.ZahlungsartInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'B' with focus on 'MdiBuch.FrmRG.unterer_Frame_3.Zahlungsart'.", repo.MdiBuch.FrmRG.unterer_Frame_3.ZahlungsartInfo, new RecordItemIndex(8));
             repo.MdiBuch.FrmRG.unterer_Frame_3.Zahlungsart.PressKeys("B");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiBuch.PbStandard2' at Center.", repo.MdiBuch.PbStandard2Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiBuch.PbStandard2' at Center.", repo.MdiBuch.PbStandard2Info, new RecordItemIndex(10));
             repo.MdiBuch.PbStandard2.Click();
             
         }
