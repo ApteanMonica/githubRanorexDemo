@@ -32,6 +32,9 @@ stages:
             displayName: copy files to build directory
           - powershell: |
               cd C:\Tests
+              if(Test-Path -Path Log) {
+                remove-item Log -recurse
+              }
               .\build.ps1
               exit 0
             displayName: rebuild tests
