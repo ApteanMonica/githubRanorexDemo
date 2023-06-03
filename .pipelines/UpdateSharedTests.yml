@@ -20,12 +20,11 @@ stages:
     displayName: Deployment
     jobs:
       - job: update
-        displayName: Update TESTS on network share
+        displayName: Update TESTS on shared directory
         steps:
-          - checkout: none
-          - script: |
-              d:
-              cd \Ranorex\Tests
-              git pull --prune
-              exit 0
+          - checkout: self
+          - powershell: |
+              robocopy . C:\Tests * /s /np
+              cd C:\Tests
+              .\build.ps1
             displayName: git pull
