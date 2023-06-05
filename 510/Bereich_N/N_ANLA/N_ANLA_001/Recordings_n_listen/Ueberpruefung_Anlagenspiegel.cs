@@ -43,7 +43,7 @@ namespace N_ANLA_001.Recordings_n_listen
         {
             GF_Jahr_Anlagenspiegel = "2022";
             Konto_Anlagenspiegel = "0660";
-            AHK_Betrag_Anlagenspiegel = "3900";
+            AHK_Betrag_Anlagenspiegel = "3.900,00";
         }
 
         /// <summary>
@@ -172,22 +172,25 @@ namespace N_ANLA_001.Recordings_n_listen
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Anlagenspiegel erstellen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Anlagenspiegel erstellen?");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblSpiegel.TitleBar100AVZAnlagenspiegelKomp'", repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo, new ActionTimeout(120000), new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(18));
+            repo.DlgMessageBox.Button0.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblSpiegel.TitleBar100AVZAnlagenspiegelKomp'", repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo, new ActionTimeout(120000), new RecordItemIndex(19));
             repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'AVZ-Anlagenspiegel-Komprimiert') on item 'TblSpiegel.TitleBar100AVZAnlagenspiegelKomp'.", repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo, new RecordItemIndex(19));
-            Validate.AttributeContains(repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo, "Text", "AVZ-Anlagenspiegel-Komprimiert");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ-Anlagenspiegel - Komprimiert') on item 'TblSpiegel.TitleBar100AVZAnlagenspiegelKomp'.", repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo, new RecordItemIndex(20));
+            Validate.AttributeContains(repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo, "Text", "[100]  AVZ-Anlagenspiegel - Komprimiert");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Konto_Anlagenspiegel) on item 'TblSpiegel.FlexGrid.ColWert1Row1'.", repo.TblSpiegel.FlexGrid.ColWert1Row1Info, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Konto_Anlagenspiegel) on item 'TblSpiegel.FlexGrid.ColWert1Row1'.", repo.TblSpiegel.FlexGrid.ColWert1Row1Info, new RecordItemIndex(21));
             Validate.AttributeEqual(repo.TblSpiegel.FlexGrid.ColWert1Row1Info, "Text", Konto_Anlagenspiegel);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Betriebs- und Geschäftsausstattung') on item 'TblSpiegel.FlexGrid.ColWertBezRow1'.", repo.TblSpiegel.FlexGrid.ColWertBezRow1Info, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Betriebs- und Geschäftsausstattung') on item 'TblSpiegel.FlexGrid.ColWertBezRow1'.", repo.TblSpiegel.FlexGrid.ColWertBezRow1Info, new RecordItemIndex(22));
             Validate.AttributeEqual(repo.TblSpiegel.FlexGrid.ColWertBezRow1Info, "Text", "Betriebs- und Geschäftsausstattung");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$AHK_Betrag_Anlagenspiegel) on item 'TblSpiegel.FlexGrid.ColAhkEndeRow1'.", repo.TblSpiegel.FlexGrid.ColAhkEndeRow1Info, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$AHK_Betrag_Anlagenspiegel) on item 'TblSpiegel.FlexGrid.ColAhkEndeRow1'.", repo.TblSpiegel.FlexGrid.ColAhkEndeRow1Info, new RecordItemIndex(23));
             Validate.AttributeEqual(repo.TblSpiegel.FlexGrid.ColAhkEndeRow1Info, "Text", AHK_Betrag_Anlagenspiegel);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblSpiegel.FlexGrid.Row2Column0'.", repo.TblSpiegel.FlexGrid.Row2Column0Info, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblSpiegel.FlexGrid.Row2Column0'.", repo.TblSpiegel.FlexGrid.Row2Column0Info, new RecordItemIndex(24));
             Validate.NotExists(repo.TblSpiegel.FlexGrid.Row2Column0Info);
             
         }

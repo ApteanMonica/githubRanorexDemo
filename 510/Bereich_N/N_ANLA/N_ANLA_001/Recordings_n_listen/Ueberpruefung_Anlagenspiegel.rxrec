@@ -36,7 +36,7 @@ mode="Global">
 		<var
 		id="1da1abe5-e741-43b3-8f68-14ef2536bdab"
 		name="AHK_Betrag_Anlagenspiegel">
-			3900
+			3.900,00
 		</var>
 	</variables>
 	<recorditems>
@@ -26779,6 +26779,32 @@ kf3RQAlFLkf3RRkf3RQBF5ZEryKwyyhRkdMZ/wAaZ5DebneNm7ftxznHr6VYyP7ooyP7ooAjjTZu
 				Anlagenspiegel erstellen?
 			</matchvalue>
 		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="4068b68d-9437-4e37-8b00-0a0bc5a96b60"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="fe864f1b-ef82-4873-bac6-d7cd7adc9f05"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgMessageBox']/button[@controlname='button0']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
@@ -26899,7 +26925,7 @@ kf3RQAlFLkf3RRkf3RQBF5ZEryKwyyhRkdMZ/wAaZ5DebneNm7ftxznHr6VYyP7ooyP7ooAjjTZu
 				Text
 			</matchname>
 			<matchvalue>
-				AVZ-Anlagenspiegel-Komprimiert
+				[100]  AVZ-Anlagenspiegel - Komprimiert
 			</matchvalue>
 		</validationitem>
 		<validationitem
