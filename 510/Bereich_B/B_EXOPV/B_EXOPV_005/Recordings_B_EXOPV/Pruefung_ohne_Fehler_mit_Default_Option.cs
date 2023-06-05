@@ -24,22 +24,22 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Pruefung_ohne_dopp_Beleg_Lieferanten recording.
+    ///The Pruefung_ohne_Fehler_mit_Default_Option recording.
     /// </summary>
     [TestModule("464434d6-13d7-486d-a1fe-05a156c1175e", ModuleType.Recording, 1)]
-    public partial class Pruefung_ohne_dopp_Beleg_Lieferanten : ITestModule
+    public partial class Pruefung_ohne_Fehler_mit_Default_Option : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_005.B_EXOPV_005Repository repository.
         /// </summary>
         public static global::B_EXOPV_005.B_EXOPV_005Repository repo = global::B_EXOPV_005.B_EXOPV_005Repository.Instance;
 
-        static Pruefung_ohne_dopp_Beleg_Lieferanten instance = new Pruefung_ohne_dopp_Beleg_Lieferanten();
+        static Pruefung_ohne_Fehler_mit_Default_Option instance = new Pruefung_ohne_Fehler_mit_Default_Option();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Pruefung_ohne_dopp_Beleg_Lieferanten()
+        public Pruefung_ohne_Fehler_mit_Default_Option()
         {
             Stapel_Herkunft = "B_EXOPV_005";
         }
@@ -47,7 +47,7 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Pruefung_ohne_dopp_Beleg_Lieferanten Instance
+        public static Pruefung_ohne_Fehler_mit_Default_Option Instance
         {
             get { return instance; }
         }
