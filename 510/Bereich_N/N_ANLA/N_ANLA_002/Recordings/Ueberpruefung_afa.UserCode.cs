@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_EXOPV_005.Recordings_B_EXOPV
+namespace N_ANLA_002.Recordings
 {
-    public partial class Pruefung_ohne_dopp_Beleg_Lieferanten
+    public partial class Ueberpruefung_afa
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

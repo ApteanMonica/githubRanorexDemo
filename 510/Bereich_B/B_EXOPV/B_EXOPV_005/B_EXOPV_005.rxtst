@@ -8,7 +8,7 @@
 			ref="358790d0-4e14-46fe-828e-be724e2022a1"
 			type="Recording">
 				<description>
-					<![CDATA[continue on Fail / Warum Fehler bei der Validierung? Wegen abgeschnittenem Feld bei NEUE BELEGNR]]>
+					<![CDATA[BUG 38668 - (Fremd)Feld Beleg-nr/neue (Fremd)Belegnr zu kurz continue on Fail / Warum Fehler bei der Validierung? Wegen abgeschnittenem Feld bei NEUE BELEGNR]]>
 				</description>
 				<databinding>
 					<var
@@ -147,7 +147,7 @@
 			</testmodule>
 			<testmodule
 			id="49c90754-615d-4e19-88cc-249440b7a279"
-			name="Pruefung_ohne_dopp_Beleg_Lieferanten"
+			name="Pruefung_ohne_Fehler_mit_Default_Option"
 			ref="464434d6-13d7-486d-a1fe-05a156c1175e"
 			type="Recording">
 				<databinding>
@@ -324,7 +324,7 @@
 			ref="52ae346e-0801-4a96-b82c-76aa59b69469"
 			type="Recording">
 				<description>
-					<![CDATA[Vergleich Meldungen mit Fehlerprotokoll]]>
+					<![CDATA[BUG 37789 Aufbau Protokoll + Plausibilität Meldungen + Protokoll]]>
 				</description>
 				<databinding>
 					<var
@@ -338,6 +338,9 @@
 			<testcase
 			id="c9f22167-116d-46e5-b2fc-de0a7ff30c6e"
 			name="Kontrolle_B_EXOPS">
+				<description>
+					<![CDATA[<p>BUG 37789 3 Belege auf Status F, obwohl die Option deaktiviert ist!</p>]]>
+				</description>
 			</testcase>
 			<setup
 			id="d8e9f26d-1573-4ac0-b7bd-42d4da583879"
@@ -374,7 +377,7 @@
 						</testmodule>
 						<testmodule
 						id="49c90754-615d-4e19-88cc-249440b7a279"
-						name="Pruefung_ohne_dopp_Beleg_Lieferanten">
+						name="Pruefung_ohne_Fehler_mit_Default_Option">
 						</testmodule>
 						<testmodule
 						id="76fac07f-a33b-4bcd-bc8d-4a4c56156d27"

@@ -24,29 +24,29 @@ namespace N_ANLA_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Umbuchung_Maske_2 recording.
+    ///The Ueberpruefung_afa recording.
     /// </summary>
-    [TestModule("bb177c96-7ab1-458f-8a27-5d4ec8c82419", ModuleType.Recording, 1)]
-    public partial class Umbuchung_Maske_2 : ITestModule
+    [TestModule("412d000f-7064-4ede-b8ae-667916b8f8c7", ModuleType.Recording, 1)]
+    public partial class Ueberpruefung_afa : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_ANLA_002.N_ANLA_002Repository repository.
         /// </summary>
         public static global::N_ANLA_002.N_ANLA_002Repository repo = global::N_ANLA_002.N_ANLA_002Repository.Instance;
 
-        static Umbuchung_Maske_2 instance = new Umbuchung_Maske_2();
+        static Ueberpruefung_afa instance = new Ueberpruefung_afa();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Umbuchung_Maske_2()
+        public Ueberpruefung_afa()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Umbuchung_Maske_2 Instance
+        public static Ueberpruefung_afa Instance
         {
             get { return instance; }
         }
@@ -79,20 +79,26 @@ namespace N_ANLA_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgUmbuch.TitleBar100UmbuchungAufNeueAnlage'", repo.DlgUmbuch.TitleBar100UmbuchungAufNeueAnlageInfo, new ActionTimeout(120000), new RecordItemIndex(0));
-            repo.DlgUmbuch.TitleBar100UmbuchungAufNeueAnlageInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'FrmAnla.TitleBar100AVZAnlagen'", repo.FrmAnla.TitleBar100AVZAnlagenInfo, new ActionTimeout(5000), new RecordItemIndex(0));
+            repo.FrmAnla.TitleBar100AVZAnlagenInfo.WaitForExists(5000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  Umbuchung auf neue Anlage') on item 'DlgUmbuch.TitleBar100UmbuchungAufNeueAnlage'.", repo.DlgUmbuch.TitleBar100UmbuchungAufNeueAnlageInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.DlgUmbuch.TitleBar100UmbuchungAufNeueAnlageInfo, "Text", "[100]  Umbuchung auf neue Anlage");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'AVZ - Anlagen') on item 'FrmAnla.TitleBar100AVZAnlagen'.", repo.FrmAnla.TitleBar100AVZAnlagenInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.FrmAnla.TitleBar100AVZAnlagenInfo, "Text", "AVZ - Anlagen");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUmbuch.CbGleicheAnlanr' at Center.", repo.DlgUmbuch.CbGleicheAnlanrInfo, new RecordItemIndex(2));
-            repo.DlgUmbuch.CbGleicheAnlanr.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnla.PbCommonNew' at Center.", repo.FrmAnla.PbCommonNewInfo, new RecordItemIndex(2));
+            repo.FrmAnla.PbCommonNew.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgUmbuch.CbGleicheAnlanr'.", repo.DlgUmbuch.CbGleicheAnlanrInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.DlgUmbuch.CbGleicheAnlanrInfo, "Checked", "True");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'N_ANLA_002_07{Tab}' with focus on 'FrmAnla.DfAnlaNr'.", repo.FrmAnla.DfAnlaNrInfo, new RecordItemIndex(3));
+            repo.FrmAnla.DfAnlaNr.PressKeys("N_ANLA_002_07{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUmbuch.PbOk' at Center.", repo.DlgUmbuch.PbOkInfo, new RecordItemIndex(4));
-            repo.DlgUmbuch.PbOk.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnla.Steuer' at Center.", repo.FrmAnla.SteuerInfo, new RecordItemIndex(4));
+            repo.FrmAnla.Steuer.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Jahres-AfA') on item 'FrmAnla.Label561'.", repo.FrmAnla.Label561Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.FrmAnla.Label561Info, "Text", "Jahres-AfA");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='460,00') on item 'FrmAnla.DfAnwe1Afabetrag'.", repo.FrmAnla.DfAnwe1AfabetragInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmAnla.DfAnwe1AfabetragInfo, "Text", "460,00");
             
         }
 

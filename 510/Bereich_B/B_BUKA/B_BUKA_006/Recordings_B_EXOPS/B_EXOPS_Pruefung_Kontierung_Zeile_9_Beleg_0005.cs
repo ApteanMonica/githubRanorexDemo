@@ -140,6 +140,9 @@ namespace B_BUKA_006.Recordings_B_EXOPS
             Keyboard.PrepareFocus(repo.frmBEXSA.TitleBar100VerwaltenSchnittstelleE);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(20));
+            Delay.Duration(2000, false);
+            
         }
 
 #region Image Feature Data

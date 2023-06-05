@@ -4,7 +4,10 @@
 # https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
 
 trigger:
-- main
+  batch: true
+  branches:
+    include:
+    - main
 
 pool:
   name: 'RS2SelfHosted'
@@ -20,12 +23,18 @@ stages:
     displayName: Deployment
     jobs:
       - job: update
-        displayName: Update TESTS on network share
+        displayName: Update TESTS on shared directory
         steps:
-          - checkout: none
-          - script: |
-              d:
-              cd \Ranorex\Tests
-              git pull --prune
+          - checkout: self
+          - powershell: |
+              robocopy . C:\Tests * /s /np
               exit 0
-            displayName: git pull
+            displayName: copy files to build directory
+          - powershell: |
+              cd C:\Tests
+              if(Test-Path -Path Log) {
+                remove-item Log -recurse
+              }
+              .\build.ps1
+              exit 0
+            displayName: rebuild tests

@@ -150,8 +150,8 @@ namespace N_ANLA_002.Recordings_Anlagenspiegel
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblSpiegel.TitleBar100AVZAnlagenspiegelKomp'", repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo, new ActionTimeout(120000), new RecordItemIndex(9));
             repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'AVZ-Anlagenspiegel-Komprimiert') on item 'TblSpiegel.TitleBar100AVZAnlagenspiegelKomp'.", repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo, new RecordItemIndex(10));
-            Validate.AttributeContains(repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo, "Text", "AVZ-Anlagenspiegel-Komprimiert");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ-Anlagenspiegel - Komprimiert ') on item 'TblSpiegel.TitleBar100AVZAnlagenspiegelKomp'.", repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo, new RecordItemIndex(10));
+            Validate.AttributeContains(repo.TblSpiegel.TitleBar100AVZAnlagenspiegelKompInfo, "Text", "[100]  AVZ-Anlagenspiegel - Komprimiert ");
             
         }
 

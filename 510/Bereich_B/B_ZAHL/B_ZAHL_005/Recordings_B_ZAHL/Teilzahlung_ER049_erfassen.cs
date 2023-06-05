@@ -97,16 +97,17 @@ namespace B_ZAHL_005.Recordings_B_ZAHL
             Keyboard.PrepareFocus(repo.DlgListBox.Self);
             Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColTeilRow1'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColTeilRow1Info, new RecordItemIndex(5));
-            Keyboard.PrepareFocus(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColTeilRow1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '600' with focus on 'FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColZBetragZRow1'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColZBetragZRow1Info, new RecordItemIndex(6));
             repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColZBetragZRow1.EnsureVisible();
             Keyboard.Press("600");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColZBetragZRow1'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColZBetragZRow1Info, new RecordItemIndex(7));
-            Keyboard.PrepareFocus(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColZBetragZRow1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }

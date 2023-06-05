@@ -451,8 +451,8 @@ KKKKACiiigAooooAKKKKACiiigAooooA/9k=
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeEqual"
-		enabled="False"
+		action="AttributeRegex"
+		enabled="True"
 		optional="False"
 		searchpropertyid="d9d6a58e-3583-457c-a439-1706965e6f8a">
 			<comment>
@@ -473,7 +473,7 @@ KKKKACiiigAooooAKKKKACiiigAooooA/9k=
 				Text
 			</matchname>
 			<matchvalue>
-				2,00
+				2,00|0,00
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -606,11 +606,10 @@ KKKKACiiigAooooAKKKKACiiigAooooA/9k=
 		</validationitem>
 		<validationitem
 		action="AttributeEqual"
-		enabled="False"
+		enabled="True"
 		optional="False"
 		searchpropertyid="d9d6a58e-3583-457c-a439-1706965e6f8a">
 			<comment>
-				Ticket! Bei ZV NEU 2%, nach Änderung 0%, nach Sktontoermittlung wieder 2%
 			</comment>
 			<bindings>
 			</bindings>
@@ -627,7 +626,7 @@ KKKKACiiigAooooAKKKKACiiigAooooA/9k=
 				Text
 			</matchname>
 			<matchvalue>
-				0,00
+				2,00
 			</matchvalue>
 		</validationitem>
 		<validationitem
