@@ -121,9 +121,8 @@ namespace B_ZAHL_005.Recordings_B_ZAHL
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColSBetragZRow3'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColSBetragZRow3Info, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColSBetragZRow3Info, "Text", "0,00");
             
-            // Ticket! Bei ZV NEU 2%, nach Änderung 0%
-            //Report.Log(ReportLevel.Info, "Validation", "Ticket! Bei ZV NEU 2%, nach Änderung 0%\r\nValidating AttributeEqual (Text='2,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColSProzRow3'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColSProzRow3Info, new RecordItemIndex(14));
-            //Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColSProzRow3Info, "Text", "2,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColSProzRow3'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColSProzRow3Info, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColSProzRow3Info, "Text", "2,00");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.400,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColOffenZRow3'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColOffenZRow3Info, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColOffenZRow3Info, "Text", "2.400,00");

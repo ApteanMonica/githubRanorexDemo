@@ -113,8 +113,8 @@ namespace B_ZAHL_005.Recordings_B_ZAHL
             Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColSBetragZRow2Info, "Text", "3,00");
             
             // Ticket! Bei ZV NEU 2%, nach Änderung Skontobetrag 0%,
-            //Report.Log(ReportLevel.Info, "Validation", "Ticket! Bei ZV NEU 2%, nach Änderung Skontobetrag 0%,\r\nValidating AttributeEqual (Text='2,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColSProzRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColSProzRow2Info, new RecordItemIndex(11));
-            //Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColSProzRow2Info, "Text", "2,00");
+            Report.Log(ReportLevel.Info, "Validation", "Ticket! Bei ZV NEU 2%, nach Änderung Skontobetrag 0%,\r\nValidating AttributeRegex (Text~'2,00|0,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColSProzRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColSProzRow2Info, new RecordItemIndex(11));
+            Validate.AttributeRegex(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColSProzRow2Info, "Text", new Regex("2,00|0,00"));
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='600,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColOffenZRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColOffenZRow2Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColOffenZRow2Info, "Text", "600,00");
@@ -131,9 +131,8 @@ namespace B_ZAHL_005.Recordings_B_ZAHL
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColSBetragZRow3'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColSBetragZRow3Info, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColSBetragZRow3Info, "Text", "0,00");
             
-            // Ticket! Bei ZV NEU 2%, nach Änderung 0%, nach Sktontoermittlung wieder 2%
-            //Report.Log(ReportLevel.Info, "Validation", "Ticket! Bei ZV NEU 2%, nach Änderung 0%, nach Sktontoermittlung wieder 2%\r\nValidating AttributeEqual (Text='0,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColSProzRow3'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColSProzRow3Info, new RecordItemIndex(17));
-            //Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColSProzRow3Info, "Text", "0,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColSProzRow3'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColSProzRow3Info, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColSProzRow3Info, "Text", "2,00");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.400,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColOffenZRow3'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColOffenZRow3Info, new RecordItemIndex(18));
             Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_3.ColOffenZRow3Info, "Text", "2.400,00");

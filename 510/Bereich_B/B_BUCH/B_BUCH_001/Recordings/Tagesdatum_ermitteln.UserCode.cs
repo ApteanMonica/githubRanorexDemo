@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_BUCH_001.Recordings
 {
-    public partial class Buchung_laden_ohne_Einschraenkung
+    public partial class Tagesdatum_ermitteln
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

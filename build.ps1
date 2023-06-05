@@ -1,5 +1,5 @@
 Write-Output ::System::.DateTime.Now
-# Remember current directory
+# store current directory
 $current = Get-Location;
 md Log
 
