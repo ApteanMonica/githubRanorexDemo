@@ -186,6 +186,11 @@ namespace N_ANLA_002
         {
             RepoItemInfo _pbnewInfo;
             RepoItemInfo _titlebar100avzanlagenInfo;
+            RepoItemInfo _pbcommonnewInfo;
+            RepoItemInfo _dfanlanrInfo;
+            RepoItemInfo _steuerInfo;
+            RepoItemInfo _label561Info;
+            RepoItemInfo _dfanwe1afabetragInfo;
 
             /// <summary>
             /// Creates a new FrmAnla  folder.
@@ -195,6 +200,11 @@ namespace N_ANLA_002
             {
                 _pbnewInfo = new RepoItemInfo(this, "PbNew", "?/?/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup2']/button[@controlname='pbNew']", "", 30000, null, "f2da4bf9-2ed6-4660-b07a-1d4bd177e1d1");
                 _titlebar100avzanlagenInfo = new RepoItemInfo(this, "TitleBar100AVZAnlagen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "d0ac74df-639f-45ae-8482-321db734e8e5");
+                _pbcommonnewInfo = new RepoItemInfo(this, "PbCommonNew", "?/?/container[@controlname='DataAccessGroup']/button[@controlname='pbCommon_new']", "", 30000, null, "11c345a9-e48f-4a48-be64-22182b10be69");
+                _dfanlanrInfo = new RepoItemInfo(this, "DfAnlaNr", "?/?/text[@controlname='dfAnla_nr']", "", 30000, null, "8aab76fc-b034-4b4f-8907-44aebdd273ff");
+                _steuerInfo = new RepoItemInfo(this, "Steuer", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='Steue&r']", "", 30000, null, "00377080-0c5d-4b69-9a4e-6159d0fd330e");
+                _label561Info = new RepoItemInfo(this, "Label561", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpSteuer']/?/?/text[@controlname='label56_1']", "", 30000, null, "f7bfebd3-184d-4166-aa70-ec4f58f6ff27");
+                _dfanwe1afabetragInfo = new RepoItemInfo(this, "DfAnwe1Afabetrag", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpSteuer']/?/?/text[@controlname='dfAnwe1_afabetrag']", "", 30000, null, "29616563-8468-49b8-b85b-13c3036eece2");
             }
 
             /// <summary>
@@ -266,6 +276,126 @@ namespace N_ANLA_002
                 get
                 {
                     return _titlebar100avzanlagenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbCommonNew item.
+            /// </summary>
+            [RepositoryItem("11c345a9-e48f-4a48-be64-22182b10be69")]
+            public virtual Ranorex.Button PbCommonNew
+            {
+                get
+                {
+                    return _pbcommonnewInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbCommonNew item info.
+            /// </summary>
+            [RepositoryItemInfo("11c345a9-e48f-4a48-be64-22182b10be69")]
+            public virtual RepoItemInfo PbCommonNewInfo
+            {
+                get
+                {
+                    return _pbcommonnewInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfAnlaNr item.
+            /// </summary>
+            [RepositoryItem("8aab76fc-b034-4b4f-8907-44aebdd273ff")]
+            public virtual Ranorex.Text DfAnlaNr
+            {
+                get
+                {
+                    return _dfanlanrInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfAnlaNr item info.
+            /// </summary>
+            [RepositoryItemInfo("8aab76fc-b034-4b4f-8907-44aebdd273ff")]
+            public virtual RepoItemInfo DfAnlaNrInfo
+            {
+                get
+                {
+                    return _dfanlanrInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Steuer item.
+            /// </summary>
+            [RepositoryItem("00377080-0c5d-4b69-9a4e-6159d0fd330e")]
+            public virtual Ranorex.TabPage Steuer
+            {
+                get
+                {
+                    return _steuerInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Steuer item info.
+            /// </summary>
+            [RepositoryItemInfo("00377080-0c5d-4b69-9a4e-6159d0fd330e")]
+            public virtual RepoItemInfo SteuerInfo
+            {
+                get
+                {
+                    return _steuerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Label561 item.
+            /// </summary>
+            [RepositoryItem("f7bfebd3-184d-4166-aa70-ec4f58f6ff27")]
+            public virtual Ranorex.Text Label561
+            {
+                get
+                {
+                    return _label561Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Label561 item info.
+            /// </summary>
+            [RepositoryItemInfo("f7bfebd3-184d-4166-aa70-ec4f58f6ff27")]
+            public virtual RepoItemInfo Label561Info
+            {
+                get
+                {
+                    return _label561Info;
+                }
+            }
+
+            /// <summary>
+            /// The DfAnwe1Afabetrag item.
+            /// </summary>
+            [RepositoryItem("29616563-8468-49b8-b85b-13c3036eece2")]
+            public virtual Ranorex.Text DfAnwe1Afabetrag
+            {
+                get
+                {
+                    return _dfanwe1afabetragInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfAnwe1Afabetrag item info.
+            /// </summary>
+            [RepositoryItemInfo("29616563-8468-49b8-b85b-13c3036eece2")]
+            public virtual RepoItemInfo DfAnwe1AfabetragInfo
+            {
+                get
+                {
+                    return _dfanwe1afabetragInfo;
                 }
             }
         }
