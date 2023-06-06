@@ -129,80 +129,95 @@ namespace B_BUCH_003.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$OP_Beleg) on item 'TblBuop.OP_Tabelle.ColBelegnrRow9'.", repo.TblBuop.OP_Tabelle.ColBelegnrRow9Info, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBelegnrRow9Info, "Text", OP_Beleg);
+            // Zeile mit OP_BELEG_B_BUCH_003_1 (variable Zeilenauswahl mit String aus Belegnr, Währung und Datum für Eindeutigkeit)
+            Report.Log(ReportLevel.Info, "Section", "Zeile mit OP_BELEG_B_BUCH_003_1 (variable Zeilenauswahl mit String aus Belegnr, Währung und Datum für Eindeutigkeit)", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='147') on item 'TblBuop.OP_Tabelle.ColKeybelRow9'.", repo.TblBuop.OP_Tabelle.ColKeybelRow9Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColKeybelRow9Info, "Text", "147");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='147') on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_OP_BELEG_B_BUCH_003_1_EUR_01_01_2020.ColKeybel'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_OP_BELEG_B_BUCH_003_1_EUR_01_01_2020.ColKeybelInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_OP_BELEG_B_BUCH_003_1_EUR_01_01_2020.ColKeybelInfo, "Text", "147");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblBuop.OP_Tabelle.ColOffenRow9'.", repo.TblBuop.OP_Tabelle.ColOffenRow9Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColOffenRow9Info, "Text", "0,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$OP_Beleg) on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_OP_BELEG_B_BUCH_003_1_EUR_01_01_2020.ColBelegnr'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_OP_BELEG_B_BUCH_003_1_EUR_01_01_2020.ColBelegnrInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_OP_BELEG_B_BUCH_003_1_EUR_01_01_2020.ColBelegnrInfo, "Text", OP_Beleg);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,00') on item 'TblBuop.OP_Tabelle.ColBetragRow9'.", repo.TblBuop.OP_Tabelle.ColBetragRow9Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBetragRow9Info, "Text", "100,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_OP_BELEG_B_BUCH_003_1_EUR_01_01_2020.ColOffen'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_OP_BELEG_B_BUCH_003_1_EUR_01_01_2020.ColOffenInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_OP_BELEG_B_BUCH_003_1_EUR_01_01_2020.ColOffenInfo, "Text", "0,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2,00') on item 'TblBuop.OP_Tabelle.ColSkontoRow9'.", repo.TblBuop.OP_Tabelle.ColSkontoRow9Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColSkontoRow9Info, "Text", "2,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,00') on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_OP_BELEG_B_BUCH_003_1_EUR_01_01_2020.ColBetrag'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_OP_BELEG_B_BUCH_003_1_EUR_01_01_2020.ColBetragInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_OP_BELEG_B_BUCH_003_1_EUR_01_01_2020.ColBetragInfo, "Text", "100,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg1) on item 'TblBuop.OP_Tabelle.ColBelegnrRow10'.", repo.TblBuop.OP_Tabelle.ColBelegnrRow10Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBelegnrRow10Info, "Text", Beleg1);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2,00') on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_OP_BELEG_B_BUCH_003_1_EUR_01_01_2020.ColSkonto'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_OP_BELEG_B_BUCH_003_1_EUR_01_01_2020.ColSkontoInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_OP_BELEG_B_BUCH_003_1_EUR_01_01_2020.ColSkontoInfo, "Text", "2,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBuop.OP_Tabelle.ColOffenRow10'.", repo.TblBuop.OP_Tabelle.ColOffenRow10Info, new RecordItemIndex(6));
+            // Zeile mit B_BUCH_003_1 (variable Zeilenauswahl mit String aus Belegnr, Währung und Datum für Eindeutigkeit)
+            Report.Log(ReportLevel.Info, "Section", "Zeile mit B_BUCH_003_1 (variable Zeilenauswahl mit String aus Belegnr, Währung und Datum für Eindeutigkeit)", new RecordItemIndex(6));
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg1) on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColBelegnr_Zeile_mit_Beleg1'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColBelegnr_Zeile_mit_Beleg1Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColBelegnr_Zeile_mit_Beleg1Info, "Text", Beleg1);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBuop.OP_Tabelle.ColOffenRow10'.", repo.TblBuop.OP_Tabelle.ColOffenRow10Info, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColOffenRow10Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-98,00') on item 'TblBuop.OP_Tabelle.ColBetragRow10'.", repo.TblBuop.OP_Tabelle.ColBetragRow10Info, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBetragRow10Info, "Text", "-98,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-98,00') on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColBetrag_Zeile_mit_Beleg1'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColBetrag_Zeile_mit_Beleg1Info, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColBetrag_Zeile_mit_Beleg1Info, "Text", "-98,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='A') on item 'TblBuop.OP_Tabelle.ColArtRow10'.", repo.TblBuop.OP_Tabelle.ColArtRow10Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColArtRow10Info, "Text", "A");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='A') on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColArt_Zeile_mit_Beleg1'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColArt_Zeile_mit_Beleg1Info, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColArt_Zeile_mit_Beleg1Info, "Text", "A");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='B1') on item 'TblBuop.OP_Tabelle.ColBusyRow10'.", repo.TblBuop.OP_Tabelle.ColBusyRow10Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBusyRow10Info, "Text", "B1");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='B1') on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColBusy_Zeile_mit_Beleg1'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColBusy_Zeile_mit_Beleg1Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColBusy_Zeile_mit_Beleg1Info, "Text", "B1");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-2,00') on item 'TblBuop.OP_Tabelle.ColSkontoRow10'.", repo.TblBuop.OP_Tabelle.ColSkontoRow10Info, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColSkontoRow10Info, "Text", "-2,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Ausgleich') on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColText_Zeile_mit_Beleg1'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColText_Zeile_mit_Beleg1Info, new RecordItemIndex(12));
+            Validate.AttributeContains(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColText_Zeile_mit_Beleg1Info, "Text", "Ausgleich");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,00') on item 'TblBuop.OP_Tabelle.ColBuopSkontobasisRow10'.", repo.TblBuop.OP_Tabelle.ColBuopSkontobasisRow10Info, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBuopSkontobasisRow10Info, "Text", "100,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$OP_Beleg) on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColText_Zeile_mit_Beleg1'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColText_Zeile_mit_Beleg1Info, new RecordItemIndex(13));
+            Validate.AttributeContains(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColText_Zeile_mit_Beleg1Info, "Text", OP_Beleg);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$OP_Beleg) on item 'TblBuop.OP_Tabelle.ColBusaRefbelegnrRow10'.", repo.TblBuop.OP_Tabelle.ColBusaRefbelegnrRow10Info, new RecordItemIndex(12));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBusaRefbelegnrRow10Info, "Text", OP_Beleg);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-2,00') on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColSkonto_Zeile_mit_Beleg1'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColSkonto_Zeile_mit_Beleg1Info, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColSkonto_Zeile_mit_Beleg1Info, "Text", "-2,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='147') on item 'TblBuop.OP_Tabelle.BusaRefkeybelRow10'.", repo.TblBuop.OP_Tabelle.BusaRefkeybelRow10Info, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.BusaRefkeybelRow10Info, "Text", "147");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,00') on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColBuopSkontobasis_Zeile_mit_Beleg1'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColBuopSkontobasis_Zeile_mit_Beleg1Info, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColBuopSkontobasis_Zeile_mit_Beleg1Info, "Text", "100,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'TblBuop.OP_Tabelle.ColBusaRefkeyposRow10'.", repo.TblBuop.OP_Tabelle.ColBusaRefkeyposRow10Info, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBusaRefkeyposRow10Info, "Text", "1");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$OP_Beleg) on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColBusaRefbelegnr_Zeile_mit_Beleg1'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColBusaRefbelegnr_Zeile_mit_Beleg1Info, new RecordItemIndex(16));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColBusaRefbelegnr_Zeile_mit_Beleg1Info, "Text", OP_Beleg);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2800') on item 'TblBuop.OP_Tabelle.ColGktoNrRow10'.", repo.TblBuop.OP_Tabelle.ColGktoNrRow10Info, new RecordItemIndex(15));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColGktoNrRow10Info, "Text", "2800");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='147') on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.BusaRefkeybel_Zeile_mit_Beleg1'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.BusaRefkeybel_Zeile_mit_Beleg1Info, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.BusaRefkeybel_Zeile_mit_Beleg1Info, "Text", "147");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BelegVZ) on item 'TblBuop.OP_Tabelle.ColBelegnrRow11'.", repo.TblBuop.OP_Tabelle.ColBelegnrRow11Info, new RecordItemIndex(16));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBelegnrRow11Info, "Text", BelegVZ);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColBusaRefkeypos_Zeile_mit_Beleg1'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColBusaRefkeypos_Zeile_mit_Beleg1Info, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColBusaRefkeypos_Zeile_mit_Beleg1Info, "Text", "1");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg2) on item 'TblBuop.OP_Tabelle.ColNrfremdbelegRow11'.", repo.TblBuop.OP_Tabelle.ColNrfremdbelegRow11Info, new RecordItemIndex(17));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColNrfremdbelegRow11Info, "Text", Beleg2);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2800') on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColGktoNr_Zeile_mit_Beleg1'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColGktoNr_Zeile_mit_Beleg1Info, new RecordItemIndex(19));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_B_BUCH_003_1_EUR_05_01_2020.ColGktoNr_Zeile_mit_Beleg1Info, "Text", "2800");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-500,00') on item 'TblBuop.OP_Tabelle.ColOffenRow11'.", repo.TblBuop.OP_Tabelle.ColOffenRow11Info, new RecordItemIndex(18));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColOffenRow11Info, "Text", "-500,00");
+            // Zeile mit VZ_TEST_1 (variable Zeilenauswahl mit String aus Belegnr, Fremdbelegnummer, Währung und Datum für Eindeutigkeit)
+            Report.Log(ReportLevel.Info, "Section", "Zeile mit VZ_TEST_1 (variable Zeilenauswahl mit String aus Belegnr, Fremdbelegnummer, Währung und Datum für Eindeutigkeit)", new RecordItemIndex(20));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-500,00') on item 'TblBuop.OP_Tabelle.ColBetragRow11'.", repo.TblBuop.OP_Tabelle.ColBetragRow11Info, new RecordItemIndex(19));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBetragRow11Info, "Text", "-500,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BelegVZ) on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColBelegnr_Zeile_mit_Beleg_VZ'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColBelegnr_Zeile_mit_Beleg_VZInfo, new RecordItemIndex(21));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColBelegnr_Zeile_mit_Beleg_VZInfo, "Text", BelegVZ);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'TblBuop.OP_Tabelle.ColArtRow11'.", repo.TblBuop.OP_Tabelle.ColArtRow11Info, new RecordItemIndex(20));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColArtRow11Info, "Text", "V");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg2) on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColNrfremdbeleg_Zeile_mit_Beleg_VZ'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColNrfremdbeleg_Zeile_mit_Beleg_VZInfo, new RecordItemIndex(22));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColNrfremdbeleg_Zeile_mit_Beleg_VZInfo, "Text", Beleg2);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='B1') on item 'TblBuop.OP_Tabelle.ColBusyRow11'.", repo.TblBuop.OP_Tabelle.ColBusyRow11Info, new RecordItemIndex(21));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBusyRow11Info, "Text", "B1");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-500,00') on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColOffen_Zeile_mit_Beleg_VZ'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColOffen_Zeile_mit_Beleg_VZInfo, new RecordItemIndex(23));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColOffen_Zeile_mit_Beleg_VZInfo, "Text", "-500,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='VZ_TEST_1') on item 'TblBuop.OP_Tabelle.ColBusaRefbelegnrRow11'.", repo.TblBuop.OP_Tabelle.ColBusaRefbelegnrRow11Info, new RecordItemIndex(22));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBusaRefbelegnrRow11Info, "Text", "VZ_TEST_1");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-500,00') on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColBetrag_Zeile_mit_Beleg_VZ'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColBetrag_Zeile_mit_Beleg_VZInfo, new RecordItemIndex(24));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColBetrag_Zeile_mit_Beleg_VZInfo, "Text", "-500,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Vorauszahlung') on item 'TblBuop.OP_Tabelle.ColTextRow11'.", repo.TblBuop.OP_Tabelle.ColTextRow11Info, new RecordItemIndex(23));
-            Validate.AttributeContains(repo.TblBuop.OP_Tabelle.ColTextRow11Info, "Text", "Vorauszahlung");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColArt_Zeile_mit_Beleg_VZ'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColArt_Zeile_mit_Beleg_VZInfo, new RecordItemIndex(25));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColArt_Zeile_mit_Beleg_VZInfo, "Text", "V");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2800') on item 'TblBuop.OP_Tabelle.ColGktoNrRow11'.", repo.TblBuop.OP_Tabelle.ColGktoNrRow11Info, new RecordItemIndex(24));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColGktoNrRow11Info, "Text", "2800");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='B1') on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColBusy_Zeile_mit_Beleg_VZ'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColBusy_Zeile_mit_Beleg_VZInfo, new RecordItemIndex(26));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColBusy_Zeile_mit_Beleg_VZInfo, "Text", "B1");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BelegVZ) on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColBusaRefbelegnr_Zeile_mit_Beleg_VZ'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColBusaRefbelegnr_Zeile_mit_Beleg_VZInfo, new RecordItemIndex(27));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColBusaRefbelegnr_Zeile_mit_Beleg_VZInfo, "Text", BelegVZ);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Vorauszahlung') on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColText_Zeile_mit_Beleg_VZ'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColText_Zeile_mit_Beleg_VZInfo, new RecordItemIndex(28));
+            Validate.AttributeContains(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColText_Zeile_mit_Beleg_VZInfo, "Text", "Vorauszahlung");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2800') on item 'TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColGkto_Zeile_mit_Beleg_VZ'.", repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColGkto_Zeile_mit_Beleg_VZInfo, new RecordItemIndex(29));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle_Zeile_mit_variabler_Auswahl.Zeile_mit_VZ_TEST_1_B_BUCH_003_2_EUR_05_01_2020.ColGkto_Zeile_mit_Beleg_VZInfo, "Text", "2800");
             
         }
 
