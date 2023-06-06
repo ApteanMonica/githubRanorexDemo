@@ -148,12 +148,12 @@ namespace N_ANLA_002.Recordings
             Keyboard.PrepareFocus(repo.FrmZuauf.TabPageTp1.ColAnlaNrRow2);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            // Umgehungsschritte nach Lösung des Items 37966 wieder raus löschen
-            Report.Log(ReportLevel.Info, "Keyboard", "Umgehungsschritte nach Lösung des Items 37966 wieder raus löschen\r\nKey sequence '{Insert}' with focus on 'FrmZuauf.FlexGrid'.", repo.FrmZuauf.FlexGridInfo, new RecordItemIndex(8));
-            repo.FrmZuauf.FlexGrid.PressKeys("{Insert}");
-            
             // End_Umgehungsschritte für Work Item
-            Report.Log(ReportLevel.Info, "Section", "End_Umgehungsschritte für Work Item", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Section", "End_Umgehungsschritte für Work Item", new RecordItemIndex(8));
+            
+            // Umgehungsschritte nach Lösung des Items 37966 wieder raus löschen
+            Report.Log(ReportLevel.Info, "Keyboard", "Umgehungsschritte nach Lösung des Items 37966 wieder raus löschen\r\nKey sequence '{Insert}' with focus on 'FrmZuauf.FlexGrid'.", repo.FrmZuauf.FlexGridInfo, new RecordItemIndex(9));
+            repo.FrmZuauf.FlexGrid.PressKeys("{Insert}");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Anlage_E' with focus on 'FrmZuauf.TabPageTp1.ColAnlaNrRow3'.", repo.FrmZuauf.TabPageTp1.ColAnlaNrRow3Info, new RecordItemIndex(10));
             repo.FrmZuauf.TabPageTp1.ColAnlaNrRow3.PressKeys(Anlage_E);
