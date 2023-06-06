@@ -118,8 +118,8 @@ namespace B_BUCH_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'MdiBuch.FrmRG.Hauptframe_2.Konto'", repo.MdiBuch.FrmRG.Hauptframe_2.KontoInfo, new ActionTimeout(120000), new RecordItemIndex(0));
-            repo.MdiBuch.FrmRG.Hauptframe_2.KontoInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'MdiBuch.FrmRG.Hauptframe_2.DfAdrNr'", repo.MdiBuch.FrmRG.Hauptframe_2.DfAdrNrInfo, new ActionTimeout(120000), new RecordItemIndex(0));
+            repo.MdiBuch.FrmRG.Hauptframe_2.DfAdrNrInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Dialogbuchung') on item 'MdiBuch.TitleBar100Dialogbuchung'.", repo.MdiBuch.TitleBar100DialogbuchungInfo, new RecordItemIndex(1));
             Validate.AttributeContains(repo.MdiBuch.TitleBar100DialogbuchungInfo, "Text", "Dialogbuchung");
