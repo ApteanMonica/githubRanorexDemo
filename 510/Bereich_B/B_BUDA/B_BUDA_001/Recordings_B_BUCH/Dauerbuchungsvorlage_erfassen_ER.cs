@@ -124,25 +124,28 @@ namespace B_BUDA_001.Recordings_B_BUCH
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '01.11.2021' with focus on 'MdiBuch.FrmRG.Hauptframe_2.Datum1'.", repo.MdiBuch.FrmRG.Hauptframe_2.Datum1Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '01.11.2021' with focus on 'MdiBuch.FrmRG.Hauptframe_2.Datum1'.", repo.MdiBuch.FrmRG.Hauptframe_2.Datum1Info, new RecordItemIndex(8));
             repo.MdiBuch.FrmRG.Hauptframe_2.Datum1.PressKeys("01.11.2021");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2.200,00' with focus on 'MdiBuch.FrmRG.Hauptframe_2.Basiswaehrung'.", repo.MdiBuch.FrmRG.Hauptframe_2.BasiswaehrungInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2.200,00' with focus on 'MdiBuch.FrmRG.Hauptframe_2.Basiswaehrung'.", repo.MdiBuch.FrmRG.Hauptframe_2.BasiswaehrungInfo, new RecordItemIndex(10));
             repo.MdiBuch.FrmRG.Hauptframe_2.Basiswaehrung.PressKeys("2.200,00");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiBuch.FrmRG.unterer_Frame_3.CbSkontoRLG' at CenterLeft.", repo.MdiBuch.FrmRG.unterer_Frame_3.CbSkontoRLGInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiBuch.FrmRG.unterer_Frame_3.CbSkontoRLG' at CenterLeft.", repo.MdiBuch.FrmRG.unterer_Frame_3.CbSkontoRLGInfo, new RecordItemIndex(12));
             repo.MdiBuch.FrmRG.unterer_Frame_3.CbSkontoRLG.Click(Location.CenterLeft);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'MdiBuch.FrmRG.unterer_Frame_3.CbSkontoRLG'.", repo.MdiBuch.FrmRG.unterer_Frame_3.CbSkontoRLGInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'MdiBuch.FrmRG.unterer_Frame_3.CbSkontoRLG'.", repo.MdiBuch.FrmRG.unterer_Frame_3.CbSkontoRLGInfo, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.MdiBuch.FrmRG.unterer_Frame_3.CbSkontoRLGInfo, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiBuch.PbStandard2' at Center.", repo.MdiBuch.PbStandard2Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiBuch.PbStandard2' at Center.", repo.MdiBuch.PbStandard2Info, new RecordItemIndex(14));
             repo.MdiBuch.PbStandard2.Click();
             
         }
