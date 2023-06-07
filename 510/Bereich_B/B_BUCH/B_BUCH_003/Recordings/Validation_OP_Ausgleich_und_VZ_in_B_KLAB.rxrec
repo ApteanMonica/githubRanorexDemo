@@ -45,6 +45,40 @@ mode="Global">
 		</var>
 	</variables>
 	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Zeile mit OP_BELEG_B_BUCH_003_1 (variable Zeilenauswahl mit String aus Belegnr, Währung und Datum für Eindeutigkeit)
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="3b6790e9-4a32-4efc-b1c5-ae1bf57518d1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7350925a-2259-4467-8a8d-cb9e4531ec17"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~'OP_BELEG_B_BUCH_003_1EUR01.01.2020']/cell[@accessiblename~'colKeybel']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				147
+			</matchvalue>
+		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -59,10 +93,10 @@ mode="Global">
 				</binding>
 			</bindings>
 			<info
-			id="4fe8ccbe-f62e-4984-a067-ef0c216e7c87"
+			id="8fa44212-55ed-42b2-8a1d-1b061d739ac7"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 9']/cell[@accessiblename='colBelegnr Row 9']
+					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~'OP_BELEG_B_BUCH_003_1EUR01.01.2020']/cell[@accessiblename~'colBelegnr']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -84,143 +118,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="ddf6a812-4e58-439c-b87b-410aa42fd04d"
+			id="49c80291-b5cd-44ac-af30-d5007dcc8a1c"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="6"
-				prefcap="cell"
-				rect="146,465,54,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						147
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colKeybel Row 9
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						147
-					</attribute>
-				</element>
 				<path>
-					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKeybel Row 9']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				147
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="3b6790e9-4a32-4efc-b1c5-ae1bf57518d1">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="f65a142f-f415-417e-b867-edf83f04d94e"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="35"
-				prefcap="cell"
-				rect="720,570,102,22"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						0,00
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colOffen Row 9
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						0,00
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colOffen Row 9']
+					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~'OP_BELEG_B_BUCH_003_1EUR01.01.2020']/cell[@accessiblename='colOffen']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -242,10 +143,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="c86a0b85-2a34-4ae3-b683-ae86c1794d34"
+			id="2bbc4820-fc45-42a2-a0fa-9a794c4b1a35"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBetrag Row 9']
+					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~'OP_BELEG_B_BUCH_003_1EUR01.01.2020']/cell[@accessiblename='colBetrag']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -267,10 +168,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="3c314a85-63ea-4d9e-9bdb-dc8c6ae1b5e7"
+			id="9b61a0a1-08c9-46ad-932c-fd2ad63efead"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colSkonto Row 9']
+					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~'OP_BELEG_B_BUCH_003_1EUR01.01.2020']/cell[@accessiblename~'colSkonto']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -282,6 +183,15 @@ mode="Global">
 				2,00
 			</matchvalue>
 		</validationitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Zeile mit B_BUCH_003_1 (variable Zeilenauswahl mit String aus Belegnr, Währung und Datum für Eindeutigkeit)
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -344,64 +254,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="0afad18d-3827-4c6b-8e27-1f094fe1c9ea"
+			id="4f666912-81b6-498d-a371-6a04cb61a4c9"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="38"
-				prefcap="cell"
-				rect="822,592,102,22"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						-98,00
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colBetrag Row 10
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						-98,00
-					</attribute>
-				</element>
 				<path>
-					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBetrag Row 10']
+					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~'B_BUCH_003_1EUR05.01.2020']/cell[@accessiblename='colBetrag']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -506,6 +362,60 @@ mode="Global">
 				</element>
 				<path>
 					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBusy Row 10']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				B1
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="16d950b7-2307-42e8-bc4f-32dae6931b17">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e2351bd5-e25b-4b8d-9a9a-4aee3435f681"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~'B_BUCH_003_1EUR05.01.2020']/cell[@accessiblename~'colText']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Ausgleich
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="16d950b7-2307-42e8-bc4f-32dae6931b17">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="OP_Beleg">
+				</binding>
+			</bindings>
+			<info
+			id="e2351bd5-e25b-4b8d-9a9a-4aee3435f681"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~'B_BUCH_003_1EUR05.01.2020']/cell[@accessiblename~'colText']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -936,6 +846,15 @@ mode="Global">
 				2800
 			</matchvalue>
 		</validationitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Zeile mit VZ_TEST_1 (variable Zeilenauswahl mit String aus Belegnr, Fremdbelegnummer, Währung und Datum für Eindeutigkeit)
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -1317,6 +1236,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="BelegVZ">
+				</binding>
 			</bindings>
 			<info
 			id="8f3708c4-0901-4c83-a46a-5661cc3bbe02"

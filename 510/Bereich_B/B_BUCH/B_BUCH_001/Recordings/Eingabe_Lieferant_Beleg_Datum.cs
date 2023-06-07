@@ -162,11 +162,14 @@ namespace B_BUCH_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Datum_Fremdbeleg' with focus on 'MdiBuch.FrmRG.Hauptframe_2.DfDtfremdbeleg'.", repo.MdiBuch.FrmRG.Hauptframe_2.DfDtfremdbelegInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Datum_Fremdbeleg' with focus on 'MdiBuch.FrmRG.Hauptframe_2.DfDtfremdbeleg'.", repo.MdiBuch.FrmRG.Hauptframe_2.DfDtfremdbelegInfo, new RecordItemIndex(11));
             repo.MdiBuch.FrmRG.Hauptframe_2.DfDtfremdbeleg.EnsureVisible();
             Keyboard.Press(Datum_Fremdbeleg);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(12));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }
