@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="36339547-c405-470c-be17-2d0b1ee28c11"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Kunde"
+	namespace="X_MUSTER_009.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeRegex"
+		enabled="True"
+		optional="False"
+		searchpropertyid="def2911a-9947-4713-a48b-a126f45a30ad">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="669326e7-5416-480c-9013-8de5cf9a10a0"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAdr_nr Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				2\d{5}
+			</matchvalue>
+		</validationitem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message="KUNDE"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="dcf1a0ab-2b30-42d2-a537-0f833e17a346">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="29b22e40-c548-428c-a95b-527081fd1308"
+	name="X_MUSTER_009Repository"
+	relativepath="..\X_MUSTER_009Repository.rxrep">
+		<codegen
+		classname="X_MUSTER_009Repository"
+		namespace="X_MUSTER_009">
+		</codegen>
+		<rootfolder
+		id="005ae77d-2bb8-4d72-910a-6c5a7222cf3d"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Kunde.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
