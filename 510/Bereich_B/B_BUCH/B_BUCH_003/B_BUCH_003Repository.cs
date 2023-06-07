@@ -2472,7 +2472,7 @@ namespace B_BUCH_003
                 _colbelegnrInfo = new RepoItemInfo(this, "ColBelegnr", "cell[@accessiblename~'colBelegnr']", "", 30000, null, "8fa44212-55ed-42b2-8a1d-1b061d739ac7");
                 _coloffenInfo = new RepoItemInfo(this, "ColOffen", "cell[@accessiblename~'colOffen']", "", 30000, null, "49c80291-b5cd-44ac-af30-d5007dcc8a1c");
                 _colbetragInfo = new RepoItemInfo(this, "ColBetrag", "cell[@accessiblename~'colBetrag']", "", 30000, null, "2bbc4820-fc45-42a2-a0fa-9a794c4b1a35");
-                _colskontoInfo = new RepoItemInfo(this, "ColSkonto", "cell[@accessiblename~'colSkonto']", "", 30000, null, "9b61a0a1-08c9-46ad-932c-fd2ad63efead");
+                _colskontoInfo = new RepoItemInfo(this, "ColSkonto", "cell[@accessiblename~'colSkonto Row']", "", 30000, null, "9b61a0a1-08c9-46ad-932c-fd2ad63efead");
                 _colkeybelInfo = new RepoItemInfo(this, "ColKeybel", "cell[@accessiblename~'colKeybel']", "", 30000, null, "7350925a-2259-4467-8a8d-cb9e4531ec17");
                 _colartrow1Info = new RepoItemInfo(this, "ColArtRow1", "cell[@accessiblename~'colArt']", "", 30000, null, "d516f415-9de0-4f8c-a8b5-aec1f49904ac");
             }
@@ -2677,7 +2677,7 @@ namespace B_BUCH_003
                 _colbusy_zeile_mit_beleg1Info = new RepoItemInfo(this, "ColBusy_Zeile_mit_Beleg1", "cell[@accessiblename~'colBusy']", "", 30000, null, "8553c9e0-92f8-497b-ba98-6578b55b5078");
                 _busarefkeybel_zeile_mit_beleg1Info = new RepoItemInfo(this, "BusaRefkeybel_Zeile_mit_Beleg1", "cell[@accessiblename~'colBusa_refkeybel']", "", 30000, null, "4c276043-1000-4931-ad95-f1943c5665c8");
                 _colbusarefkeypos_zeile_mit_beleg1Info = new RepoItemInfo(this, "ColBusaRefkeypos_Zeile_mit_Beleg1", "cell[@accessiblename~'colBusa_refkeypos']", "", 30000, null, "55d5d337-1582-4f45-8f53-ddee606b7aba");
-                _colskonto_zeile_mit_beleg1Info = new RepoItemInfo(this, "ColSkonto_Zeile_mit_Beleg1", "cell[@accessiblename~'colSkonto']", "", 30000, null, "b6639eb9-2415-428c-b855-b7c96f261d48");
+                _colskonto_zeile_mit_beleg1Info = new RepoItemInfo(this, "ColSkonto_Zeile_mit_Beleg1", "cell[@accessiblename~'colSkonto Row']", "", 30000, null, "b6639eb9-2415-428c-b855-b7c96f261d48");
                 _colbuopskontobasis_zeile_mit_beleg1Info = new RepoItemInfo(this, "ColBuopSkontobasis_Zeile_mit_Beleg1", "cell[@accessiblename~'colBuop_skontobasis']", "", 30000, null, "1b1c2589-a70f-45f8-9d2d-35062cbd948c");
                 _colgktonr_zeile_mit_beleg1Info = new RepoItemInfo(this, "ColGktoNr_Zeile_mit_Beleg1", "cell[@accessiblename~'colGkto_nr']", "", 30000, null, "636d0999-44a1-419e-96e3-aaa1d5cce9b7");
                 _coltext_zeile_mit_beleg1Info = new RepoItemInfo(this, "ColText_Zeile_mit_Beleg1", "cell[@accessiblename~'colText']", "", 30000, null, "e2351bd5-e25b-4b8d-9a9a-4aee3435f681");
