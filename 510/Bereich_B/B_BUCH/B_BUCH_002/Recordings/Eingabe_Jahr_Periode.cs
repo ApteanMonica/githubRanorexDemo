@@ -24,32 +24,31 @@ namespace B_BUCH_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Eingabe_Jahr_Periode_Busy recording.
+    ///The Eingabe_Jahr_Periode recording.
     /// </summary>
     [TestModule("427d6636-f178-4316-8b86-22b7efc4c958", ModuleType.Recording, 1)]
-    public partial class Eingabe_Jahr_Periode_Busy : ITestModule
+    public partial class Eingabe_Jahr_Periode : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BUCH_002.B_BUCH_002Repository repository.
         /// </summary>
         public static global::B_BUCH_002.B_BUCH_002Repository repo = global::B_BUCH_002.B_BUCH_002Repository.Instance;
 
-        static Eingabe_Jahr_Periode_Busy instance = new Eingabe_Jahr_Periode_Busy();
+        static Eingabe_Jahr_Periode instance = new Eingabe_Jahr_Periode();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Eingabe_Jahr_Periode_Busy()
+        public Eingabe_Jahr_Periode()
         {
             Jahr = "2020";
             Monat = "01";
-            Busy = "AR";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Eingabe_Jahr_Periode_Busy Instance
+        public static Eingabe_Jahr_Periode Instance
         {
             get { return instance; }
         }
@@ -80,18 +79,6 @@ namespace B_BUCH_002.Recordings
             set { _Monat = value; }
         }
 
-        string _Busy;
-
-        /// <summary>
-        /// Gets or sets the value of variable Busy.
-        /// </summary>
-        [TestVariable("e3916b33-548a-4500-8e8a-e8fe4d7044b3")]
-        public string Busy
-        {
-            get { return _Busy; }
-            set { _Busy = value; }
-        }
-
 #endregion
 
         /// <summary>
@@ -118,11 +105,11 @@ namespace B_BUCH_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgFirmaPeriode.DfJahrbezJ' at Center.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(0));
-            repo.DlgFirmaPeriode.DfJahrbezJ.DoubleClick();
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '' on item 'DlgFirmaPeriode.DfJahrbezJ'.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(0));
+            repo.DlgFirmaPeriode.DfJahrbezJ.Element.SetAttributeValue("Text", "");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(1));
-            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '' on item 'DlgFirmaPeriode.DfPeriodeJ1'.", repo.DlgFirmaPeriode.DfPeriodeJ1Info, new RecordItemIndex(1));
+            repo.DlgFirmaPeriode.DfPeriodeJ1.Element.SetAttributeValue("Text", "");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'DlgFirmaPeriode.DfJahrbezJ'.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(2));
             repo.DlgFirmaPeriode.DfJahrbezJ.PressKeys(Jahr);
@@ -138,24 +125,6 @@ namespace B_BUCH_002.Recordings
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFirmaPeriode.PbOK' at Center.", repo.DlgFirmaPeriode.PbOKInfo, new RecordItemIndex(6));
             repo.DlgFirmaPeriode.PbOK.Click();
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgListBox.TitleBar100AuswahllisteBuchungssymb'", repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo, new ActionTimeout(60000), new RecordItemIndex(7));
-            repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo.WaitForExists(60000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Auswahlliste Buchungssymbole') on item 'DlgListBox.TitleBar100AuswahllisteBuchungssymb'.", repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo, new RecordItemIndex(8));
-            Validate.AttributeContains(repo.DlgListBox.TitleBar100AuswahllisteBuchungssymbInfo, "Text", "Auswahlliste Buchungssymbole");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'AR\t\tAusgangsrechnung\tR\t\tK') on item 'DlgListBox.Row1'.", repo.DlgListBox.Row1Info, new RecordItemIndex(9));
-            Validate.AttributeContains(repo.DlgListBox.Row1Info, "Text", "AR\t\tAusgangsrechnung\tR\t\tK");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Busy) on item 'DlgListBox.Row1'.", repo.DlgListBox.Row1Info, new RecordItemIndex(10));
-            Validate.AttributeContains(repo.DlgListBox.Row1Info, "Text", Busy);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgListBox.Row1Column0' at Center.", repo.DlgListBox.Row1Column0Info, new RecordItemIndex(11));
-            repo.DlgListBox.Row1Column0.Click();
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgListBox.PbOk' at Center.", repo.DlgListBox.PbOkInfo, new RecordItemIndex(12));
-            repo.DlgListBox.PbOk.Click();
             
         }
 

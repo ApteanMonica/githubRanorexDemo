@@ -141,6 +141,18 @@
     <Compile Include="Program.cs">
       <id>3d0381fd-91dc-4915-a90b-5b997e8567a2</id>
     </Compile>
+    <Compile Include="Recordings\Benutzer_bucht_schon_Ja_fortfahren.cs">
+      <BoundTo>6674a215-780e-4893-ab1e-a68bb9cdeb45</BoundTo>
+      <DependentUpon>Benutzer_bucht_schon_Ja_fortfahren.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7ca7ee29-bbf4-489c-b420-e1a5ac5e356d</id>
+    </Compile>
+    <Compile Include="Recordings\Benutzer_bucht_schon_Ja_fortfahren.UserCode.cs">
+      <BoundTo>6674a215-780e-4893-ab1e-a68bb9cdeb45</BoundTo>
+      <DependentUpon>Benutzer_bucht_schon_Ja_fortfahren.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f9e1d54e-844f-4eb3-b14e-10a6b38d34fc</id>
+    </Compile>
     <Compile Include="Recordings\Betrag_Text.cs">
       <BoundTo>82c982e2-e945-4e19-838d-5af2d1e92fc3</BoundTo>
       <DependentUpon>Betrag_Text.rxrec</DependentUpon>
@@ -177,15 +189,27 @@
       <id>6f211c3e-7280-49df-810c-f59ce3580c92</id>
       <BoundTo>09d91564-f166-4288-9510-f11047b53ed8</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Eingabe_Jahr_Periode_Busy.cs">
+    <Compile Include="Recordings\Eingabe_Buchungssymbol.cs">
+      <DependentUpon>Eingabe_Buchungssymbol.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>60df0385-8cb8-4d79-b488-f87641423679</id>
+      <BoundTo>5f05b825-9545-4136-87f7-ea54155308fc</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Eingabe_Buchungssymbol.UserCode.cs">
+      <DependentUpon>Eingabe_Buchungssymbol.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5d1ea051-7cca-441b-ab19-baa81ca9a99b</id>
+      <BoundTo>5f05b825-9545-4136-87f7-ea54155308fc</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Eingabe_Jahr_Periode.cs">
       <BoundTo>780b9dd7-1041-41ff-9616-6d7a0f609388</BoundTo>
-      <DependentUpon>Eingabe_Jahr_Periode_Busy.rxrec</DependentUpon>
+      <DependentUpon>Eingabe_Jahr_Periode.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>6417e775-af40-47b8-9f6e-181bacc8a822</id>
     </Compile>
-    <Compile Include="Recordings\Eingabe_Jahr_Periode_Busy.UserCode.cs">
+    <Compile Include="Recordings\Eingabe_Jahr_Periode.UserCode.cs">
       <BoundTo>780b9dd7-1041-41ff-9616-6d7a0f609388</BoundTo>
-      <DependentUpon>Eingabe_Jahr_Periode_Busy.rxrec</DependentUpon>
+      <DependentUpon>Eingabe_Jahr_Periode.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>b11f38fa-1e25-4ca3-a0df-7933f1cb11a6</id>
     </Compile>
@@ -312,6 +336,11 @@
       <repoid>b0c0d9e9-ced4-41c1-9290-98e5b5db0523</repoid>
       <reporootid>edbf1bf2-41c6-46d2-8960-b6196f54bb8c</reporootid>
     </None>
+    <None Include="Recordings\Benutzer_bucht_schon_Ja_fortfahren.rxrec">
+      <BoundTo>8c9257be-cde0-4948-a37b-e6a32ccf6054</BoundTo>
+      <id>6674a215-780e-4893-ab1e-a68bb9cdeb45</id>
+      <recordtableid>363f6b64-6fa2-4e7d-8eb6-743ace5f9175</recordtableid>
+    </None>
     <None Include="Recordings\Betrag_Text.rxrec">
       <BoundTo>8c9257be-cde0-4948-a37b-e6a32ccf6054</BoundTo>
       <id>82c982e2-e945-4e19-838d-5af2d1e92fc3</id>
@@ -327,7 +356,12 @@
       <id>09d91564-f166-4288-9510-f11047b53ed8</id>
       <recordtableid>b6aed9b6-516c-4d71-b029-a51e02aed5e9</recordtableid>
     </None>
-    <None Include="Recordings\Eingabe_Jahr_Periode_Busy.rxrec">
+    <None Include="Recordings\Eingabe_Buchungssymbol.rxrec">
+      <BoundTo>8c9257be-cde0-4948-a37b-e6a32ccf6054</BoundTo>
+      <id>5f05b825-9545-4136-87f7-ea54155308fc</id>
+      <recordtableid>3c27cb7d-6295-4e8f-b613-d98962625eb8</recordtableid>
+    </None>
+    <None Include="Recordings\Eingabe_Jahr_Periode.rxrec">
       <BoundTo>8c9257be-cde0-4948-a37b-e6a32ccf6054</BoundTo>
       <id>780b9dd7-1041-41ff-9616-6d7a0f609388</id>
       <recordtableid>427d6636-f178-4316-8b86-22b7efc4c958</recordtableid>
