@@ -26,8 +26,8 @@ mode="Global">
 	</variables>
 	<recorditems>
 		<validationitem
-		action="AttributeContains"
-		enabled="True"
+		action="Exists"
+		enabled="False"
 		optional="False"
 		searchpropertyid="7af1f5ef-5245-4e7e-b30e-581e7d5dfde1">
 			<comment>
@@ -35,10 +35,35 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="de787a7d-0235-4951-b185-dcfd2efa2f56"
+			id="ee8804a9-b113-4df8-aa3f-2c2b6c96740f"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblAnzeige']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='tblAnzeige']/titlebar[@text~'Code &lt;GB / Gesch&#228;ftsbericht&gt;']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Code &lt;GB / Gesch&#228;ftsbericht&gt;
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="False"
+		optional="False"
+		searchpropertyid="7af1f5ef-5245-4e7e-b30e-581e7d5dfde1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ee8804a9-b113-4df8-aa3f-2c2b6c96740f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblAnzeige']/titlebar[@text~'Code &lt;GB / Gesch&#228;ftsbericht&gt;']
 				</path>
 				<robustPath>
 				</robustPath>

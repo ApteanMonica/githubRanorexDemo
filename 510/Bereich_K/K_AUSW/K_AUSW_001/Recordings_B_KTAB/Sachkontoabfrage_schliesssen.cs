@@ -79,8 +79,11 @@ namespace K_AUSW_001.Recordings_B_KTAB
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblKtAb.Schliessen' at Center.", repo.TblKtAb.SchliessenInfo, new RecordItemIndex(0));
-            repo.TblKtAb.Schliessen.Click();
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblKtAb.TitleBar100Kontenabfrage'.", repo.TblKtAb.TitleBar100KontenabfrageInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.TblKtAb.TitleBar100Kontenabfrage, new Duration(0));
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
+            Delay.Duration(2000, false);
             
         }
 

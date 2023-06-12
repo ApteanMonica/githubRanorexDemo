@@ -79,8 +79,11 @@ namespace K_AUSW_002.Recordings_Bereichskontoabfrage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBkAb.Schliessen' at Center.", repo.TblBkAb.SchliessenInfo, new RecordItemIndex(0));
-            repo.TblBkAb.Schliessen.Click();
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblBkAb'.", repo.TblBkAb.SelfInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.TblBkAb.Self, new Duration(0));
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
             
         }
 

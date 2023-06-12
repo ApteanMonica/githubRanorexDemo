@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace K_AUSW_002.Recordings
 {
-    public partial class Formulareinschraenkung_zuruecksetzen
+    public partial class Formular_Einschraenkung_Typ_1_KST_setzen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
