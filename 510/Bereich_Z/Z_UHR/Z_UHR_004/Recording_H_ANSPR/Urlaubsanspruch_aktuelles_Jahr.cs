@@ -118,16 +118,19 @@ namespace Z_UHR_004.Recording_H_ANSPR
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Pers_nr) on item 'TblFehlzeitergebnisse.Row1.ColPersNrRow1'.", repo.TblFehlzeitergebnisse.Row1.ColPersNrRow1Info, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFehlzeitergebnisse.ColEbeneRow1' at Center.", repo.TblFehlzeitergebnisse.ColEbeneRow1Info, new RecordItemIndex(0));
+            repo.TblFehlzeitergebnisse.ColEbeneRow1.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Pers_nr) on item 'TblFehlzeitergebnisse.Row1.ColPersNrRow1'.", repo.TblFehlzeitergebnisse.Row1.ColPersNrRow1Info, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.TblFehlzeitergebnisse.Row1.ColPersNrRow1Info, "Text", Pers_nr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anspruchsart_Urlaub) on item 'TblFehlzeitergebnisse.Row1.ColAnspraCdRow1'.", repo.TblFehlzeitergebnisse.Row1.ColAnspraCdRow1Info, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anspruchsart_Urlaub) on item 'TblFehlzeitergebnisse.Row1.ColAnspraCdRow1'.", repo.TblFehlzeitergebnisse.Row1.ColAnspraCdRow1Info, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.TblFehlzeitergebnisse.Row1.ColAnspraCdRow1Info, "Text", Anspruchsart_Urlaub);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Urlaubsmenge) on item 'TblFehlzeitergebnisse.Row1.ColMengeRow1'.", repo.TblFehlzeitergebnisse.Row1.ColMengeRow1Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Urlaubsmenge) on item 'TblFehlzeitergebnisse.Row1.ColMengeRow1'.", repo.TblFehlzeitergebnisse.Row1.ColMengeRow1Info, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.TblFehlzeitergebnisse.Row1.ColMengeRow1Info, "Text", Urlaubsmenge);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press.", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press.", new RecordItemIndex(4));
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }
