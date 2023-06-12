@@ -105,11 +105,11 @@ namespace B_BUCH_003.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgFirmaPeriode.DfJahrbezJ' at Center.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(0));
-            repo.DlgFirmaPeriode.DfJahrbezJ.DoubleClick();
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '' on item 'DlgFirmaPeriode.DfJahrbezJ'.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(0));
+            repo.DlgFirmaPeriode.DfJahrbezJ.Element.SetAttributeValue("Text", "");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Back' Press.", new RecordItemIndex(1));
-            Keyboard.Press(System.Windows.Forms.Keys.Back, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '' on item 'DlgFirmaPeriode.Monat'.", repo.DlgFirmaPeriode.MonatInfo, new RecordItemIndex(1));
+            repo.DlgFirmaPeriode.Monat.Element.SetAttributeValue("Text", "");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'DlgFirmaPeriode.DfJahrbezJ'.", repo.DlgFirmaPeriode.DfJahrbezJInfo, new RecordItemIndex(2));
             repo.DlgFirmaPeriode.DfJahrbezJ.PressKeys(Jahr);

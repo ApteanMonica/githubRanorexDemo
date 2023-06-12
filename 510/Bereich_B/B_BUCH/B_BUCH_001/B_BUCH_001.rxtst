@@ -351,6 +351,15 @@
 			name="B_BUAB">
 			</testcase>
 			<testmodule
+			id="b9e4c24e-8c42-4395-891f-fd5ce11790fc"
+			name="Benutzer_bucht_schon_Ja_fortfahren"
+			ref="7a72f11f-c094-4b3b-aea0-39ca4636b5e0"
+			type="Recording">
+				<description>
+					<![CDATA[Falls B_BUCH zuvor abgestürzt wird die Meldung mit j (JA) bestätigt. Tritt die Meldung nicht auf, wird das j aus dem Feld Monat im nächsten Schritt gelöscht]]>
+				</description>
+			</testmodule>
+			<testmodule
 			id="bf161edc-be28-42db-a159-5211bb4f59e0"
 			name="Tagesdatum_ermitteln"
 			ref="4d6ea94c-5d15-43fa-94b1-706335afdf50"
@@ -475,6 +484,10 @@
 							name="StartAUT">
 							</testmodule>
 						</setup>
+						<testmodule
+						id="b9e4c24e-8c42-4395-891f-fd5ce11790fc"
+						name="Benutzer_bucht_schon_Ja_fortfahren">
+						</testmodule>
 						<testmodule
 						id="f3dd8c19-bf6d-41df-a93e-bff2d63658b8"
 						name="Eingabe_Jahr_Periode_Busy">
