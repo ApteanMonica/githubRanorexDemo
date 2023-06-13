@@ -152,8 +152,8 @@ namespace B_BUCH_004
                     base("DlgFirmaPeriode", "/form[@controlname='dlgFirmaPeriode']", parentFolder, 30000, null, true, "3d3f520c-4084-403e-8728-c74e2f88af26", "")
             {
                 _titlebar100dialogbuchung_mit_namenInfo = new RepoItemInfo(this, "TitleBar100Dialogbuchung_mit_Namen", "titlebar[@accessiblerole='TitleBar' and @text~'Dialogbuchung']", "", 30000, null, "5d727cff-4275-422d-b838-77930e82b056");
-                _dfjahrbezjInfo = new RepoItemInfo(this, "DfJahrbezJ", "text[@controlname='dfJahrbezJ']", "", 30000, null, "2015a00c-95e6-4f98-a007-a870ec7e2ece");
-                _dfperiodejInfo = new RepoItemInfo(this, "DfPeriodeJ", "text[@controlname='dfPeriodeJ']", "", 30000, null, "a085a3b0-e65c-4bd5-9659-5e1d85b6a00a");
+                _dfjahrbezjInfo = new RepoItemInfo(this, "DfJahrbezJ", "text[@controlname='dfJahrbezJ']/text[@accessiblename='Jahr:']", "", 30000, null, "2015a00c-95e6-4f98-a007-a870ec7e2ece");
+                _dfperiodejInfo = new RepoItemInfo(this, "DfPeriodeJ", "text[@controlname='dfPeriodeJ']/text[@accessiblename='Monat:']", "", 30000, null, "a085a3b0-e65c-4bd5-9659-5e1d85b6a00a");
                 _pbokInfo = new RepoItemInfo(this, "PbOK", "button[@controlname='pbOK']", "", 30000, null, "b68e45b4-b2af-48e5-b045-a1caaecdee62");
             }
 

@@ -103,8 +103,8 @@ namespace B_BUDA_002.Recordings_B_BUDA
             Init();
 
             // Keybel 174 in R510
-            Report.Log(ReportLevel.Info, "Validation", "Keybel 174 in R510\r\nValidating AttributeContains (Text>'B_BUDA_002-0\t\tJ\t3100100000201000\tL\t2\t\t\t\t\t\tS\tER\t01.01.2022\t01.10.2022\t\t01.01.2022\tB_BUDA_002\t2.200,00\t0,00\tEUR\t01M0100\tR\t\t174\t\tE\t0\t14\t2,00\t0\t0,00\t30\tS\t\t1\tB_BUDA_002\t\t\t1\t\t303091') on item 'TblDaBu.ChildTableWindow.Row_Zeile_mit_ColText_B_BUDA_002'.", repo.TblDaBu.ChildTableWindow.Row_Zeile_mit_ColText_B_BUDA_002Info, new RecordItemIndex(0));
-            Validate.AttributeContains(repo.TblDaBu.ChildTableWindow.Row_Zeile_mit_ColText_B_BUDA_002Info, "Text", "B_BUDA_002-0\t\tJ\t3100100000201000\tL\t2\t\t\t\t\t\tS\tER\t01.01.2022\t01.10.2022\t\t01.01.2022\tB_BUDA_002\t2.200,00\t0,00\tEUR\t01M0100\tR\t\t174\t\tE\t0\t14\t2,00\t0\t0,00\t30\tS\t\t1\tB_BUDA_002\t\t\t1\t\t303091");
+            Report.Log(ReportLevel.Info, "Validation", "Keybel 174 in R510\r\nValidating AttributeContains (Text>'B_BUDA_002-0\t\tJ\t2100100000201000\tL\t2\t\t\t\t\t\tS\tER\t01.01.2022\t01.10.2022\t\t01.01.2022\tB_BUDA_002\t2.200,00\t0,00\tEUR\t01M0100\tR\t\t174\t\tE\t0\t14\t2,00\t0\t0,00\t30\tS\t\t1\tB_BUDA_002\t\t\t1\t\t303091') on item 'TblDaBu.ChildTableWindow.Row_Zeile_mit_ColText_B_BUDA_002'.", repo.TblDaBu.ChildTableWindow.Row_Zeile_mit_ColText_B_BUDA_002Info, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.TblDaBu.ChildTableWindow.Row_Zeile_mit_ColText_B_BUDA_002Info, "Text", "B_BUDA_002-0\t\tJ\t2100100000201000\tL\t2\t\t\t\t\t\tS\tER\t01.01.2022\t01.10.2022\t\t01.01.2022\tB_BUDA_002\t2.200,00\t0,00\tEUR\t01M0100\tR\t\t174\t\tE\t0\t14\t2,00\t0\t0,00\t30\tS\t\t1\tB_BUDA_002\t\t\t1\t\t303091");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDaBu.ChildTableWindow.Column0_in_Zeile_mit_ColText_B_BUDA_002' at Center.", repo.TblDaBu.ChildTableWindow.Column0_in_Zeile_mit_ColText_B_BUDA_002Info, new RecordItemIndex(1));
             repo.TblDaBu.ChildTableWindow.Column0_in_Zeile_mit_ColText_B_BUDA_002.Click();

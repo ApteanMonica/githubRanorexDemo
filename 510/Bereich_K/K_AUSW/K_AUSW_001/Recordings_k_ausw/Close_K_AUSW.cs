@@ -79,8 +79,8 @@ namespace K_AUSW_001.Recordings_k_ausw
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmMain.TitleBar100KOREAuswertung'.", repo.FrmMain.TitleBar100KOREAuswertungInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FrmMain.TitleBar100KOREAuswertung, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmMain'.", repo.FrmMain.SelfInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.FrmMain.Self, 1000);
             
         }
 

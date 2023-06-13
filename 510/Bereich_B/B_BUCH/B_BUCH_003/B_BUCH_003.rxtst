@@ -349,6 +349,9 @@
 			name="Validation_OP_Ausgleich_und_VZ_in_B_KLAB"
 			ref="b6b18c9f-70c1-4920-9eea-f69f2112510b"
 			type="Recording">
+				<description>
+					<![CDATA[variable Zeilenauswahl ab 6.6.2023 PET]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Beleg2"
@@ -406,6 +409,15 @@
 			ref="6657917a-d98b-4021-9003-d4697a54010e"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="fea8f3d8-0b0d-47df-ae8a-51d2c6d6164e"
+			name="Benutzer_bucht_schon_Ja_fortfahren"
+			ref="63bb57af-de0b-421d-a277-79589b3128ed"
+			type="Recording">
+				<description>
+					<![CDATA[Falls B_BUCH zuvor abgestürzt wird die Meldung mit j (JA) bestätigt. Tritt die Meldung nicht auf, wird das j aus dem Feld Monat im nächsten Schritt gelöscht]]>
+				</description>
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -425,6 +437,10 @@
 							name="StartAUT">
 							</testmodule>
 						</setup>
+						<testmodule
+						id="fea8f3d8-0b0d-47df-ae8a-51d2c6d6164e"
+						name="Benutzer_bucht_schon_Ja_fortfahren">
+						</testmodule>
 						<testmodule
 						id="bfde0c5f-f5c2-4a61-913f-8cbfa4d6c27f"
 						name="Eingabe_Jahr_Periode_Busy">

@@ -135,18 +135,6 @@
     <Compile Include="Program.cs">
       <id>0a890d97-eeff-489b-96e5-1e7e12e20fa0</id>
     </Compile>
-    <Compile Include="Recordings\Auswertung_Kostenstellen_einschraenken.cs">
-      <DependentUpon>Auswertung_Kostenstellen_einschraenken.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>bbbb7b3d-b722-446b-9ce4-674d4ca61ac2</id>
-      <BoundTo>00afc31c-2fc2-4dea-9b83-ad6c0f332966</BoundTo>
-    </Compile>
-    <Compile Include="Recordings\Auswertung_Kostenstellen_einschraenken.UserCode.cs">
-      <DependentUpon>Auswertung_Kostenstellen_einschraenken.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>2bc2f4ee-4ecf-4f19-bcc0-8dbb74903741</id>
-      <BoundTo>00afc31c-2fc2-4dea-9b83-ad6c0f332966</BoundTo>
-    </Compile>
     <Compile Include="Recordings\Auswertung_Kostenstellen_rechnen.cs">
       <DependentUpon>Auswertung_Kostenstellen_rechnen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -231,17 +219,29 @@
       <id>12c219f3-e75d-456b-a686-e3e8a96952db</id>
       <BoundTo>6db0019f-9ffc-40e8-b5db-f9b9fc55818b</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Formulareinschraenkung_zuruecksetzen.cs">
-      <DependentUpon>Formulareinschraenkung_zuruecksetzen.rxrec</DependentUpon>
+    <Compile Include="Recordings\Formular_Einschraenkung_Typ_0_setzen.cs">
+      <DependentUpon>Formular_Einschraenkung_Typ_0_setzen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>de9cc73a-8489-4806-9948-593f54f19774</id>
       <BoundTo>7186c9ed-3f47-4b7b-b155-32f5e8b85741</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Formulareinschraenkung_zuruecksetzen.UserCode.cs">
-      <DependentUpon>Formulareinschraenkung_zuruecksetzen.rxrec</DependentUpon>
+    <Compile Include="Recordings\Formular_Einschraenkung_Typ_0_setzen.UserCode.cs">
+      <DependentUpon>Formular_Einschraenkung_Typ_0_setzen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>149ea2f5-5fe5-431b-82a6-0605111db1a7</id>
       <BoundTo>7186c9ed-3f47-4b7b-b155-32f5e8b85741</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Formular_Einschraenkung_Typ_1_KST_setzen.cs">
+      <DependentUpon>Formular_Einschraenkung_Typ_1_KST_setzen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>84746a5b-dbb2-4b57-aa6d-f3a355c60722</id>
+      <BoundTo>06a202fa-3b82-4d62-8508-e5602ac83b19</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Formular_Einschraenkung_Typ_1_KST_setzen.UserCode.cs">
+      <DependentUpon>Formular_Einschraenkung_Typ_1_KST_setzen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a3b378e0-0663-4c0e-9e3d-c36d12aabb33</id>
+      <BoundTo>06a202fa-3b82-4d62-8508-e5602ac83b19</BoundTo>
     </Compile>
     <Compile Include="Recordings\StartAUT.cs">
       <DependentUpon>StartAUT.rxrec</DependentUpon>
@@ -307,11 +307,6 @@
       <repoid>017661d7-3daa-4c0f-87ee-8b97d99a6621</repoid>
       <reporootid>a9707f99-3948-4eb2-b6fe-2a239e4e0b9d</reporootid>
     </None>
-    <None Include="Recordings\Auswertung_Kostenstellen_einschraenken.rxrec">
-      <BoundTo>dd0936fb-0ba7-415b-b9e7-4c12c081a651</BoundTo>
-      <id>00afc31c-2fc2-4dea-9b83-ad6c0f332966</id>
-      <recordtableid>38fb5ba5-9567-4fb2-a509-ffab54158751</recordtableid>
-    </None>
     <None Include="Recordings\Auswertung_Kostenstellen_rechnen.rxrec">
       <id>0c29717e-7118-4636-8593-b4e73033070e</id>
       <recordtableid>9e6fe43f-2ddc-46fd-962e-efcc715af432</recordtableid>
@@ -347,9 +342,14 @@
       <recordtableid>b2773a39-e987-4be0-a175-e557ad0ba536</recordtableid>
       <BoundTo>dd0936fb-0ba7-415b-b9e7-4c12c081a651</BoundTo>
     </None>
-    <None Include="Recordings\Formulareinschraenkung_zuruecksetzen.rxrec">
+    <None Include="Recordings\Formular_Einschraenkung_Typ_0_setzen.rxrec">
       <id>7186c9ed-3f47-4b7b-b155-32f5e8b85741</id>
       <recordtableid>b0cd00a4-ba29-460c-98aa-e5f10fcff430</recordtableid>
+      <BoundTo>dd0936fb-0ba7-415b-b9e7-4c12c081a651</BoundTo>
+    </None>
+    <None Include="Recordings\Formular_Einschraenkung_Typ_1_KST_setzen.rxrec">
+      <id>06a202fa-3b82-4d62-8508-e5602ac83b19</id>
+      <recordtableid>d15647a9-4ffe-4fbb-9019-1611331bdfed</recordtableid>
       <BoundTo>dd0936fb-0ba7-415b-b9e7-4c12c081a651</BoundTo>
     </None>
     <None Include="Recordings\StartAUT.rxrec">

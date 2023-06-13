@@ -25,81 +25,35 @@ mode="Global">
 	<variables>
 	</variables>
 	<recorditems>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<closeapprecorditem
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
+		graceperiod="0ms"
+		method="CloseWindow"
 		optional="False"
-		searchpropertyid="ecedec7c-21c2-469f-8b82-82160fa61858"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		searchpropertyid="200a79f4-dd5b-4c52-b606-12bc05d9758b">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="a10b89c3-b1cd-4fe5-beb7-3a854c327eb2"
+			id="124814bf-67ea-4b56-9e5f-534a6c5645d9"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="2"
-				prefcap="button"
-				rect="1318,8,56,14"
-				role="button"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="pressed"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						Schließen
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Drücken
-					</attribute>
-					<attribute
-					name="accessibledescription"
-					type="System.String">
-						Schließt das Fenster.
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						Schließen
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						PushButton
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						None
-					</attribute>
-				</element>
 				<path>
-					/form[@controlname='tblKtAb']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']
+					/form[@controlname='tblKtAb']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</mouseitem>
+		</closeapprecorditem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 	</recorditems>
 	<repository
 	id="d1f5ab38-0d4f-4817-8e21-2ec45e6e8158"

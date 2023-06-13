@@ -25,101 +25,35 @@ mode="Global">
 	<variables>
 	</variables>
 	<recorditems>
-		<WaitForRecordItem
+		<closeapprecorditem
 		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
 		optional="False"
-		searchpropertyid="564717f4-226a-425c-bf58-7e1ae6000917"
-		waitaction="Exists"
-		waittimeout="120000ms">
+		searchpropertyid="b0312524-ec32-4bf1-b2ba-122adb4d9077">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="de787a7d-0235-4951-b185-dcfd2efa2f56"
+			id="a6672772-aee8-447e-806c-dac0aa137b42"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblAnzeige']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='tblAnzeige']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</WaitForRecordItem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		</closeapprecorditem>
+		<explicitdelayitem
+		duration="1000ms"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="09090e0f-ea0d-4386-89f0-3380e8f71cea"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="0cfd5229-b16f-4786-8980-8bc225e3509b"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="2"
-				prefcap="button"
-				rect="1008,53,47,30"
-				role="button"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="pressed"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						Schließen
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Drücken
-					</attribute>
-					<attribute
-					name="accessibledescription"
-					type="System.String">
-						Schließt das Fenster.
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						Schließen
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						PushButton
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						None
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='tblAnzeige']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
+		</explicitdelayitem>
 	</recorditems>
 	<repository
 	id="d1f5ab38-0d4f-4817-8e21-2ec45e6e8158"

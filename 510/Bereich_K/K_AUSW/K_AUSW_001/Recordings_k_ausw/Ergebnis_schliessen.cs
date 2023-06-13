@@ -79,11 +79,11 @@ namespace K_AUSW_001.Recordings_k_ausw
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblAnzeige.TitleBar100GuVSec231UGBStand2016'", repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, new ActionTimeout(120000), new RecordItemIndex(0));
-            repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblAnzeige'.", repo.TblAnzeige.SelfInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.TblAnzeige.Self, new Duration(0));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAnzeige.Schliessen' at Center.", repo.TblAnzeige.SchliessenInfo, new RecordItemIndex(1));
-            repo.TblAnzeige.Schliessen.Click();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
             
         }
 

@@ -648,6 +648,8 @@ namespace B_BUDA_001
         {
             B_BUDA_001RepositoryFolders.Hauptframe_2Folder _hauptframe_2;
             B_BUDA_001RepositoryFolders.Unterer_Frame_3Folder _unterer_frame_3;
+            RepoItemInfo _textInfo;
+            RepoItemInfo _clientareaInfo;
 
             /// <summary>
             /// Creates a new FrmRG  folder.
@@ -657,6 +659,8 @@ namespace B_BUDA_001
             {
                 _hauptframe_2 = new B_BUDA_001RepositoryFolders.Hauptframe_2Folder(this);
                 _unterer_frame_3 = new B_BUDA_001RepositoryFolders.Unterer_Frame_3Folder(this);
+                _textInfo = new RepoItemInfo(this, "Text", "container[@controlname='ClientArea']/container[@controlname='frame1']/text[@controlname='mlAdresse']/text[@accessiblerole='Text']", "", 30000, null, "3c8841ef-c595-4db8-9a9b-2f94536baee8");
+                _clientareaInfo = new RepoItemInfo(this, "ClientArea", "container[@controlname='ClientArea']", "", 30000, null, "d5ba2367-f5c5-4d81-a1ab-cd0c25cee9e1");
             }
 
             /// <summary>
@@ -680,6 +684,54 @@ namespace B_BUDA_001
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text item.
+            /// </summary>
+            [RepositoryItem("3c8841ef-c595-4db8-9a9b-2f94536baee8")]
+            public virtual Ranorex.Text Text
+            {
+                get
+                {
+                    return _textInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text item info.
+            /// </summary>
+            [RepositoryItemInfo("3c8841ef-c595-4db8-9a9b-2f94536baee8")]
+            public virtual RepoItemInfo TextInfo
+            {
+                get
+                {
+                    return _textInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClientArea item.
+            /// </summary>
+            [RepositoryItem("d5ba2367-f5c5-4d81-a1ab-cd0c25cee9e1")]
+            public virtual Ranorex.Container ClientArea
+            {
+                get
+                {
+                    return _clientareaInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClientArea item info.
+            /// </summary>
+            [RepositoryItemInfo("d5ba2367-f5c5-4d81-a1ab-cd0c25cee9e1")]
+            public virtual RepoItemInfo ClientAreaInfo
+            {
+                get
+                {
+                    return _clientareaInfo;
                 }
             }
 
@@ -1455,6 +1507,7 @@ namespace B_BUDA_001
         public partial class BBUCHAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _dauerbuchungInfo;
+            RepoItemInfo _dauerbuchung1Info;
 
             /// <summary>
             /// Creates a new BBUCH  folder.
@@ -1463,6 +1516,7 @@ namespace B_BUDA_001
                     base("BBUCH", "/contextmenu[@processname='B_BUCH']", parentFolder, 30000, null, true, "c0d9e63e-7660-4717-87ce-a80f12c1bb01", "")
             {
                 _dauerbuchungInfo = new RepoItemInfo(this, "Dauerbuchung", "menuitem[@accessiblename='Dauerbuchung']", "", 30000, null, "3fc6e068-3b43-40af-b71e-e39ebb813529");
+                _dauerbuchung1Info = new RepoItemInfo(this, "Dauerbuchung1", "menuitem[@name='Dauerbuchung']", "", 30000, null, "94110ebc-59f2-49a5-a2f9-95023fb87b15");
             }
 
             /// <summary>
@@ -1510,6 +1564,30 @@ namespace B_BUDA_001
                 get
                 {
                     return _dauerbuchungInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Dauerbuchung1 item.
+            /// </summary>
+            [RepositoryItem("94110ebc-59f2-49a5-a2f9-95023fb87b15")]
+            public virtual Ranorex.MenuItem Dauerbuchung1
+            {
+                get
+                {
+                    return _dauerbuchung1Info.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Dauerbuchung1 item info.
+            /// </summary>
+            [RepositoryItemInfo("94110ebc-59f2-49a5-a2f9-95023fb87b15")]
+            public virtual RepoItemInfo Dauerbuchung1Info
+            {
+                get
+                {
+                    return _dauerbuchung1Info;
                 }
             }
         }

@@ -1235,6 +1235,7 @@ namespace Z_UHR_004
             RepoItemInfo _colztypcdrow4_510Info;
             RepoItemInfo _colfzergdtbeginnrow4_510Info;
             RepoItemInfo _colfzergdtenderow4_510Info;
+            RepoItemInfo _colebenerow1Info;
 
             /// <summary>
             /// Creates a new TblFehlzeitergebnisse  folder.
@@ -1258,6 +1259,7 @@ namespace Z_UHR_004
                 _colztypcdrow4_510Info = new RepoItemInfo(this, "ColZtypCdRow4_510", "container[@controlname='ClientArea']/container[@controlname='tblH_fzerg1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colZtyp_cd Row 4']", "", 30000, null, "29508bb5-13a0-4977-9a05-41ad6e0cc6e6");
                 _colfzergdtbeginnrow4_510Info = new RepoItemInfo(this, "ColFzergDtbeginnRow4_510", "container[@controlname='ClientArea']/container[@controlname='tblH_fzerg1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colFzerg_dtbeginn Row 4']", "", 30000, null, "c8ac9980-3986-4a90-8a76-f576f4483eed");
                 _colfzergdtenderow4_510Info = new RepoItemInfo(this, "ColFzergDtendeRow4_510", "container[@controlname='ClientArea']/container[@controlname='tblH_fzerg1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colFzerg_dtende Row 4']", "", 30000, null, "57bc7a3b-cc22-4490-87fb-e0e8b69ae1b6");
+                _colebenerow1Info = new RepoItemInfo(this, "ColEbeneRow1", "container[@controlname='ClientArea']/container[@controlname='tblH_ansp1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colEbene Row 1']", "", 30000, null, "10e49f11-5ef1-4d6b-aa4d-997b288a94e5");
             }
 
             /// <summary>
@@ -1593,6 +1595,30 @@ namespace Z_UHR_004
                 get
                 {
                     return _colfzergdtenderow4_510Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColEbeneRow1 item.
+            /// </summary>
+            [RepositoryItem("10e49f11-5ef1-4d6b-aa4d-997b288a94e5")]
+            public virtual Ranorex.Cell ColEbeneRow1
+            {
+                get
+                {
+                    return _colebenerow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColEbeneRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("10e49f11-5ef1-4d6b-aa4d-997b288a94e5")]
+            public virtual RepoItemInfo ColEbeneRow1Info
+            {
+                get
+                {
+                    return _colebenerow1Info;
                 }
             }
 

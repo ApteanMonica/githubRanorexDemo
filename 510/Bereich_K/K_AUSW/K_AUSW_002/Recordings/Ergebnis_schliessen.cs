@@ -79,9 +79,8 @@ namespace K_AUSW_002.Recordings
 
             Init();
 
-            // Search Timeout +2m
-            Report.Log(ReportLevel.Info, "Mouse", "Search Timeout +2m\r\nMouse Left Click item 'TblAnzeige.Schliessen' at Center.", repo.TblAnzeige.SchliessenInfo, new RecordItemIndex(0));
-            repo.TblAnzeige.Schliessen.Click();
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblAnzeige'.", repo.TblAnzeige.SelfInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.TblAnzeige.Self, new Duration(0));
             
         }
 

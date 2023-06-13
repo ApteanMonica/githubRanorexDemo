@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace K_AUSW_002.Recordings
+namespace B_BUCH_003.Recordings
 {
-    public partial class Auswertung_Kostenstellen_einschraenken
+    public partial class Benutzer_bucht_schon_Ja_fortfahren
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

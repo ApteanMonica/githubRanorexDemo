@@ -154,7 +154,7 @@ namespace B_BUCH_001
                 _pbokInfo = new RepoItemInfo(this, "PbOK", "button[@controlname='pbOK']", "", 30000, null, "cedd6635-10e3-46bb-a891-36a90aff248d");
                 _titlebar100dialogbuchung_mit_namenInfo = new RepoItemInfo(this, "TitleBar100Dialogbuchung_mit_Namen", "titlebar[@accessiblerole='TitleBar' and @text~'Dialogbuchung']", "", 30000, null, "eee3f765-832f-49f1-bf7b-19e0fceb733f");
                 _dfperiodejInfo = new RepoItemInfo(this, "DfPeriodeJ", "text[@controlname='dfPeriodeJ']/text[@accessiblename='Monat:']", "", 30000, null, "205da405-7d88-4df6-ab96-824d70fe148a");
-                _dfjahrbezjInfo = new RepoItemInfo(this, "DfJahrbezJ", "text[@controlname='dfJahrbezJ']", "", 30000, null, "01dc2cc7-026e-4a58-bf3d-1a9dabe2a6e2");
+                _dfjahrbezjInfo = new RepoItemInfo(this, "DfJahrbezJ", "text[@controlname='dfJahrbezJ']/text[@accessiblename='Jahr:']", "", 30000, null, "01dc2cc7-026e-4a58-bf3d-1a9dabe2a6e2");
             }
 
             /// <summary>
@@ -844,7 +844,6 @@ namespace B_BUCH_001
         [RepositoryFolder("a57afa21-54cf-40fc-8b6d-83a01983ecad")]
         public partial class Hauptframe_2Folder : RepoGenBaseFolder
         {
-            RepoItemInfo _kontoInfo;
             RepoItemInfo _dfadrnrInfo;
             RepoItemInfo _dfbelegnrInfo;
             RepoItemInfo _dfdtbelegInfo;
@@ -862,16 +861,15 @@ namespace B_BUCH_001
             public Hauptframe_2Folder(RepoGenBaseFolder parentFolder) :
                     base("Hauptframe_2", "container[@controlname='ClientArea']/container[@controlname='frame2']", parentFolder, 30000, null, false, "a57afa21-54cf-40fc-8b6d-83a01983ecad", "")
             {
-                _kontoInfo = new RepoItemInfo(this, "Konto", "text[@controlname='dfAdr_nr']/text[@accessiblename='Konto']", "", 30000, null, "b8523462-8c6a-4661-8d09-68bd7dd1d83e");
-                _dfadrnrInfo = new RepoItemInfo(this, "DfAdrNr", "text[@controlname='dfAdr_nr']", "", 30000, null, "82ff1d99-b33a-4466-8af9-abbfef042ed1");
-                _dfbelegnrInfo = new RepoItemInfo(this, "DfBelegnr", "text[@controlname='dfBelegnr']", "", 30000, null, "0a804123-ecb1-4e72-a874-ac905297124e");
-                _dfdtbelegInfo = new RepoItemInfo(this, "DfDtbeleg", "text[@controlname='dfDtbeleg']", "", 30000, null, "55ecff16-a625-4b36-b282-7bab9a4c27fd");
-                _dfdtfremdbelegInfo = new RepoItemInfo(this, "DfDtfremdbeleg", "text[@controlname='dfDtfremdbeleg']", "", 30000, null, "c3b21515-46d2-46e8-8fff-f000a239a7c7");
-                _dfuvajahrInfo = new RepoItemInfo(this, "DfUvajahr", "text[@controlname='dfUvajahr']", "", 30000, null, "a5d2a88b-9cf7-4722-a221-b174598b4bf3");
-                _dfuvamonatInfo = new RepoItemInfo(this, "DfUvamonat", "text[@controlname='dfUvamonat']", "", 30000, null, "97a9d2ef-3d72-4bec-9417-d212414ee1bd");
-                _dfktonrsamkInfo = new RepoItemInfo(this, "DfKtoNrSamk", "text[@controlname='dfKto_nr_samk']", "", 30000, null, "6dc6e93f-5c7e-49b1-889b-7fe73d7a8c36");
+                _dfadrnrInfo = new RepoItemInfo(this, "DfAdrNr", "text[@controlname='dfAdr_nr']/text[@accessiblename='Konto']", "", 30000, null, "82ff1d99-b33a-4466-8af9-abbfef042ed1");
+                _dfbelegnrInfo = new RepoItemInfo(this, "DfBelegnr", "text[@controlname='dfBelegnr']/text[@accessiblename='Beleg']", "", 30000, null, "0a804123-ecb1-4e72-a874-ac905297124e");
+                _dfdtbelegInfo = new RepoItemInfo(this, "DfDtbeleg", "text[@controlname='dfDtbeleg']/text[@accessiblename='Datum']", "", 30000, null, "55ecff16-a625-4b36-b282-7bab9a4c27fd");
+                _dfdtfremdbelegInfo = new RepoItemInfo(this, "DfDtfremdbeleg", "text[@controlname='dfDtfremdbeleg']/text[@accessiblename='Datum']", "", 30000, null, "c3b21515-46d2-46e8-8fff-f000a239a7c7");
+                _dfuvajahrInfo = new RepoItemInfo(this, "DfUvajahr", "text[@controlname='dfUvajahr']/text[@accessiblename='UVA']", "", 30000, null, "a5d2a88b-9cf7-4722-a221-b174598b4bf3");
+                _dfuvamonatInfo = new RepoItemInfo(this, "DfUvamonat", "text[@controlname='dfUvamonat']/text[@accessiblerole='Text']", "", 30000, null, "97a9d2ef-3d72-4bec-9417-d212414ee1bd");
+                _dfktonrsamkInfo = new RepoItemInfo(this, "DfKtoNrSamk", "text[@controlname='dfKto_nr_samk']/text[@accessiblename='Samk']", "", 30000, null, "6dc6e93f-5c7e-49b1-889b-7fe73d7a8c36");
                 _dfadrnameInfo = new RepoItemInfo(this, "DfAdrName", "text[@controlname='dfAdr_name']", "", 30000, null, "86da9162-ac8b-43be-86d4-642b00e3f7d6");
-                _dfbetragInfo = new RepoItemInfo(this, "DfBetrag", "text[@controlname='dfBetrag']", "", 30000, null, "dba1275a-2907-46d9-ae8c-2b2080664231");
+                _dfbetragInfo = new RepoItemInfo(this, "DfBetrag", "text[@controlname='dfBetrag']/text[@accessiblename='Basiswährung']", "", 30000, null, "dba1275a-2907-46d9-ae8c-2b2080664231");
                 _dftext1Info = new RepoItemInfo(this, "DfText1", "text[@controlname='dfText1']", "", 30000, null, "1e6e2b79-4e70-44df-9f94-6523ef58ec82");
             }
 
@@ -896,30 +894,6 @@ namespace B_BUCH_001
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Konto item.
-            /// </summary>
-            [RepositoryItem("b8523462-8c6a-4661-8d09-68bd7dd1d83e")]
-            public virtual Ranorex.Text Konto
-            {
-                get
-                {
-                    return _kontoInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Konto item info.
-            /// </summary>
-            [RepositoryItemInfo("b8523462-8c6a-4661-8d09-68bd7dd1d83e")]
-            public virtual RepoItemInfo KontoInfo
-            {
-                get
-                {
-                    return _kontoInfo;
                 }
             }
 

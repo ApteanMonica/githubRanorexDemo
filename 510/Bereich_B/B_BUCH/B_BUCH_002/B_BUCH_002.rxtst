@@ -230,7 +230,7 @@
 			</testmodule>
 			<testmodule
 			id="c6b72a34-d6ee-46cb-984d-d60d696de14d"
-			name="Eingabe_Jahr_Periode_Busy"
+			name="Eingabe_Jahr_Periode"
 			ref="427d6636-f178-4316-8b86-22b7efc4c958"
 			type="Recording">
 				<databinding>
@@ -245,12 +245,6 @@
 					datasourceid="9cb56415-0ece-4078-98e1-41519746c3c3"
 					variableid="abaf5af2-52ee-416f-8aab-c75c7f2b6b43"
 					variablename="Jahr">
-					</var>
-					<var
-					dataname="Busy"
-					datasourceid="9cb56415-0ece-4078-98e1-41519746c3c3"
-					variableid="e3916b33-548a-4500-8e8a-e8fe4d7044b3"
-					variablename="Busy">
 					</var>
 				</databinding>
 			</testmodule>
@@ -290,6 +284,20 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="d84de7fe-8afe-4f67-bbf2-a5568f0081a2"
+			name="Eingabe_Buchungssymbol"
+			ref="3c27cb7d-6295-4e8f-b613-d98962625eb8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Busy"
+					datasourceid="9cb56415-0ece-4078-98e1-41519746c3c3"
+					variableid="271b204b-bd78-45c5-b5da-0f9b19ad3adb"
+					variablename="Busy">
+					</var>
+				</databinding>
+			</testmodule>
 			<smartfoldernode
 			id="e9720d48-8d32-4f99-b040-79d38100db86"
 			name="AR_Buchung_HABEN_Seite">
@@ -320,6 +328,15 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="fe3cb6da-8ab6-42f3-a5b8-4d0822887438"
+			name="Benutzer_bucht_schon_Ja_fortfahren"
+			ref="363f6b64-6fa2-4e7d-8eb6-743ace5f9175"
+			type="Recording">
+				<description>
+					<![CDATA[Falls B_BUCH zuvor abgestürzt wird die Meldung mit j (JA) bestätigt. Tritt die Meldung nicht auf, wird das j aus dem Feld Monat im nächsten Schritt gelöscht]]>
+				</description>
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -340,8 +357,16 @@
 							</testmodule>
 						</setup>
 						<testmodule
+						id="fe3cb6da-8ab6-42f3-a5b8-4d0822887438"
+						name="Benutzer_bucht_schon_Ja_fortfahren">
+						</testmodule>
+						<testmodule
 						id="c6b72a34-d6ee-46cb-984d-d60d696de14d"
-						name="Eingabe_Jahr_Periode_Busy">
+						name="Eingabe_Jahr_Periode">
+						</testmodule>
+						<testmodule
+						id="d84de7fe-8afe-4f67-bbf2-a5568f0081a2"
+						name="Eingabe_Buchungssymbol">
 						</testmodule>
 						<testmodule
 						id="f92e79a3-39e0-4f48-a6ac-b6a3e25afe2a"

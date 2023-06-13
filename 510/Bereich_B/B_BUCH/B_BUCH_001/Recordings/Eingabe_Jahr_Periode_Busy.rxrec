@@ -40,18 +40,11 @@ mode="Global">
 		</var>
 	</variables>
 	<recorditems>
-		<mouseitem
-		action="DoubleClick"
-		button="Left"
-		duration="500ms"
+		<setvaluerecorditem
+		attrname="Text"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
 		optional="False"
-		searchpropertyid="e2fd46cd-a5e8-4412-9fb7-89da917eaf1e"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		searchpropertyid="f852df41-1794-4861-b20c-7a389b88834c">
 			<comment>
 			</comment>
 			<bindings>
@@ -60,27 +53,35 @@ mode="Global">
 			id="01dc2cc7-026e-4a58-bf3d-1a9dabe2a6e2"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='dlgFirmaPeriode']/text[@controlname='dfJahrbezJ']
+					/form[@controlname='dlgFirmaPeriode']/text[@controlname='dfJahrbezJ']/text[@accessiblename='Jahr:']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</mouseitem>
-		<keyitem
-		action="Press"
-		data="Delete"
-		duration="100ms"
+			<AttributeValue>
+			</AttributeValue>
+		</setvaluerecorditem>
+		<setvaluerecorditem
+		attrname="Text"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
-		scancode="0"
-		searchpropertyid="01e87b4e-41b0-4b55-9586-dcb2dfb4fbee"
-		setModifiers="True">
+		searchpropertyid="f852df41-1794-4861-b20c-7a389b88834c">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</keyitem>
+			<info
+			id="205da405-7d88-4df6-ab96-824d70fe148a"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgFirmaPeriode']/text[@controlname='dfPeriodeJ']/text[@accessiblename='Monat:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<AttributeValue>
+			</AttributeValue>
+		</setvaluerecorditem>
 		<keysequenceitem
 		KeySequence=""
 		duration="100ms"

@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace K_AUSW_001.Recordings_k_ausw
+namespace K_AUSW_002.Recordings
 {
-    public partial class Formulareinschraenkung_zuruecksetzen
+    public partial class Formular_Einschraenkung_Typ_0_setzen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
