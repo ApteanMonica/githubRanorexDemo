@@ -141,7 +141,7 @@ namespace B_BUCH_002
                     base("DlgFirmaPeriode", "/form[@controlname='dlgFirmaPeriode']", parentFolder, 30000, null, true, "fef7690c-98dc-4d95-844b-9c53ab3eb629", "")
             {
                 _titlebar100dialogbuchung_mit_namenInfo = new RepoItemInfo(this, "TitleBar100Dialogbuchung_mit_Namen", "titlebar[@accessiblerole='TitleBar' and @text~'Dialogbuchung']", "", 30000, null, "4477e472-1ab9-4d1c-9d35-2f3c3ce99c17");
-                _dfjahrbezjInfo = new RepoItemInfo(this, "DfJahrbezJ", "text[@controlname='dfJahrbezJ']", "", 30000, null, "d2b22b35-6af1-4762-8ed0-60a0ca3f70be");
+                _dfjahrbezjInfo = new RepoItemInfo(this, "DfJahrbezJ", "text[@controlname='dfJahrbezJ']/text[@accessiblename='Jahr:']", "", 30000, null, "d2b22b35-6af1-4762-8ed0-60a0ca3f70be");
                 _pbokInfo = new RepoItemInfo(this, "PbOK", "button[@controlname='pbOK']", "", 30000, null, "226a7d25-7575-4407-936b-2dc3b910e7af");
                 _dfperiodej1Info = new RepoItemInfo(this, "DfPeriodeJ1", "text[@controlname='dfPeriodeJ']/text[@accessiblename='Monat:']", "", 30000, null, "114a5e4e-7493-4388-afab-0f38d38fdb80");
             }

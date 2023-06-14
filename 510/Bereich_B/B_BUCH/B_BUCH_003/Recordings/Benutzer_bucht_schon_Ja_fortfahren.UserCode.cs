@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace K_AUSW_001.Recordings_k_ausw
+namespace B_BUCH_003.Recordings
 {
-    public partial class Formular_Einschraenkung_pruefen
+    public partial class Benutzer_bucht_schon_Ja_fortfahren
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

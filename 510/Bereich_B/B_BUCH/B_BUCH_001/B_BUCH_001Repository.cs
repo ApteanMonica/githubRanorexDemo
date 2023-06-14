@@ -154,7 +154,7 @@ namespace B_BUCH_001
                 _pbokInfo = new RepoItemInfo(this, "PbOK", "button[@controlname='pbOK']", "", 30000, null, "cedd6635-10e3-46bb-a891-36a90aff248d");
                 _titlebar100dialogbuchung_mit_namenInfo = new RepoItemInfo(this, "TitleBar100Dialogbuchung_mit_Namen", "titlebar[@accessiblerole='TitleBar' and @text~'Dialogbuchung']", "", 30000, null, "eee3f765-832f-49f1-bf7b-19e0fceb733f");
                 _dfperiodejInfo = new RepoItemInfo(this, "DfPeriodeJ", "text[@controlname='dfPeriodeJ']/text[@accessiblename='Monat:']", "", 30000, null, "205da405-7d88-4df6-ab96-824d70fe148a");
-                _dfjahrbezjInfo = new RepoItemInfo(this, "DfJahrbezJ", "text[@controlname='dfJahrbezJ']", "", 30000, null, "01dc2cc7-026e-4a58-bf3d-1a9dabe2a6e2");
+                _dfjahrbezjInfo = new RepoItemInfo(this, "DfJahrbezJ", "text[@controlname='dfJahrbezJ']/text[@accessiblename='Jahr:']", "", 30000, null, "01dc2cc7-026e-4a58-bf3d-1a9dabe2a6e2");
             }
 
             /// <summary>

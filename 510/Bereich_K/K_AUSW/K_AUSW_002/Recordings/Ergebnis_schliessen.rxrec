@@ -25,33 +25,26 @@ mode="Global">
 	<variables>
 	</variables>
 	<recorditems>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<closeapprecorditem
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
+		graceperiod="0ms"
+		method="CloseWindow"
 		optional="False"
-		searchpropertyid="09090e0f-ea0d-4386-89f0-3380e8f71cea"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		searchpropertyid="b0312524-ec32-4bf1-b2ba-122adb4d9077">
 			<comment>
-				Search Timeout +2m
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="3b64f2c4-6f2a-4ddf-b896-587d1e0bb041"
+			id="a6672772-aee8-447e-806c-dac0aa137b42"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblAnzeige']/?/?/button[@accessiblename='Schließen']
+					/form[@controlname='tblAnzeige']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</mouseitem>
+		</closeapprecorditem>
 	</recorditems>
 	<repository
 	id="017661d7-3daa-4c0f-87ee-8b97d99a6621"

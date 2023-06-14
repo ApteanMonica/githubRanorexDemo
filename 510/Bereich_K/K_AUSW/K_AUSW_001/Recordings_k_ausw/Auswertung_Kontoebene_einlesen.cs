@@ -119,6 +119,9 @@ namespace K_AUSW_001.Recordings_k_ausw
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgAusw.PbOk' at Center.", repo.DlgAusw.PbOkInfo, new RecordItemIndex(8));
             repo.DlgAusw.PbOk.Click();
             
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'TblAnzeige.TitleBar100GuVSec231UGBStand2016'", repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, new ActionTimeout(300000), new RecordItemIndex(9));
+            repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info.WaitForExists(300000);
+            
         }
 
 #region Image Feature Data

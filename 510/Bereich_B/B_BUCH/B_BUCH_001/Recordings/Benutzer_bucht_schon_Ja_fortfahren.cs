@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace K_AUSW_001.Recordings_k_ausw
+namespace B_BUCH_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Formular_Einschraenkung_pruefen recording.
+    ///The Benutzer_bucht_schon_Ja_fortfahren recording.
     /// </summary>
-    [TestModule("df616b59-ca8e-496d-b69a-9fe0af5cf433", ModuleType.Recording, 1)]
-    public partial class Formular_Einschraenkung_pruefen : ITestModule
+    [TestModule("7a72f11f-c094-4b3b-aea0-39ca4636b5e0", ModuleType.Recording, 1)]
+    public partial class Benutzer_bucht_schon_Ja_fortfahren : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::K_AUSW_001.K_AUSW_001Repository repository.
+        /// Holds an instance of the global::B_BUCH_001.B_BUCH_001Repository repository.
         /// </summary>
-        public static global::K_AUSW_001.K_AUSW_001Repository repo = global::K_AUSW_001.K_AUSW_001Repository.Instance;
+        public static global::B_BUCH_001.B_BUCH_001Repository repo = global::B_BUCH_001.B_BUCH_001Repository.Instance;
 
-        static Formular_Einschraenkung_pruefen instance = new Formular_Einschraenkung_pruefen();
+        static Benutzer_bucht_schon_Ja_fortfahren instance = new Benutzer_bucht_schon_Ja_fortfahren();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Formular_Einschraenkung_pruefen()
+        public Benutzer_bucht_schon_Ja_fortfahren()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Formular_Einschraenkung_pruefen Instance
+        public static Benutzer_bucht_schon_Ja_fortfahren Instance
         {
             get { return instance; }
         }
@@ -79,17 +79,8 @@ namespace K_AUSW_001.Recordings_k_ausw
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='GUV') on item 'FrmMain.FlexGrid_TblAtbz.ColAusaCdRow1'.", repo.FrmMain.FlexGrid_TblAtbz.ColAusaCdRow1Info, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.FrmMain.FlexGrid_TblAtbz.ColAusaCdRow1Info, "Text", "GUV");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmMain.FlexGrid_TblAtbz.ColTypRow1'.", repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1Info, "Text", "0");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmMain.FlexGrid_TblAtbz.ColVon1Row1'.", repo.FrmMain.FlexGrid_TblAtbz.ColVon1Row1Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.FrmMain.FlexGrid_TblAtbz.ColVon1Row1Info, "Text", "");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmMain.FlexGrid_TblAtbz.ColBis1Row1'.", repo.FrmMain.FlexGrid_TblAtbz.ColBis1Row1Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.FrmMain.FlexGrid_TblAtbz.ColBis1Row1Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'j'.", new RecordItemIndex(0));
+            Keyboard.Press("j");
             
         }
 

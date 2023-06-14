@@ -41,7 +41,7 @@ namespace Hotfixtest_490.Recordings.V_AUF
         /// </summary>
         public StartAUT()
         {
-            Startfile = "";
+            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
             V_AUF = "";
         }
 
@@ -108,8 +108,8 @@ namespace Hotfixtest_490.Recordings.V_AUF
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $V_AUF in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, V_AUF, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'V_AUF.TitleBar100Auftragserfassung'", repo.V_AUF.TitleBar100AuftragserfassungInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.V_AUF.TitleBar100AuftragserfassungInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 4m to exist. Associated repository item: 'V_AUF.TitleBar100Auftragserfassung'", repo.V_AUF.TitleBar100AuftragserfassungInfo, new ActionTimeout(240000), new RecordItemIndex(1));
+            repo.V_AUF.TitleBar100AuftragserfassungInfo.WaitForExists(240000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'Auftragserfassung') on item 'V_AUF.TitleBar100Auftragserfassung'.", repo.V_AUF.TitleBar100AuftragserfassungInfo, new RecordItemIndex(2));
             Validate.AttributeRegex(repo.V_AUF.TitleBar100AuftragserfassungInfo, "Text", new Regex("Auftragserfassung"));

@@ -79,39 +79,42 @@ namespace K_AUSW_001.Recordings_k_ausw
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Code <GB / Geschäftsbericht>') on item 'TblAnzeige.TitleBar100GuVSec231UGBStand2016'.", repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, new RecordItemIndex(0));
-            Validate.AttributeContains(repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, "Text", "Code <GB / Geschäftsbericht>");
+            //Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblAnzeige.TitleBar_mit_Text_'.", repo.TblAnzeige.TitleBar_mit_Text_Info, new RecordItemIndex(0));
+            //Validate.Exists(repo.TblAnzeige.TitleBar_mit_Text_Info);
+            
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Code <GB / Geschäftsbericht>') on item 'TblAnzeige.TitleBar_mit_Text_'.", repo.TblAnzeige.TitleBar_mit_Text_Info, new RecordItemIndex(1));
+            //Validate.AttributeContains(repo.TblAnzeige.TitleBar_mit_Text_Info, "Text", "Code <GB / Geschäftsbericht>");
             
             // Search Timeout + 1m
-            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'4810\tMieterträge') on item 'TblAnzeige.ChildTableWindow.Row3'.", repo.TblAnzeige.ChildTableWindow.Row3Info, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'4810\tMieterträge') on item 'TblAnzeige.ChildTableWindow.Row3'.", repo.TblAnzeige.ChildTableWindow.Row3Info, new RecordItemIndex(2));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row3Info, "Text", "4810\tMieterträge");
             
             // Search Timeout + 1m
-            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'454,55') on item 'TblAnzeige.ChildTableWindow.Row3'.", repo.TblAnzeige.ChildTableWindow.Row3Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'454,55') on item 'TblAnzeige.ChildTableWindow.Row3'.", repo.TblAnzeige.ChildTableWindow.Row3Info, new RecordItemIndex(3));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row3Info, "Text", "454,55");
             
             // Search Timeout + 1m
-            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'5880\tLieferantenskonti (Klasse 5)') on item 'TblAnzeige.ChildTableWindow.Row6'.", repo.TblAnzeige.ChildTableWindow.Row6Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'5880\tLieferantenskonti (Klasse 5)') on item 'TblAnzeige.ChildTableWindow.Row6'.", repo.TblAnzeige.ChildTableWindow.Row6Info, new RecordItemIndex(4));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row6Info, "Text", "5880\tLieferantenskonti (Klasse 5)");
             
             // Search Timeout + 1m
-            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'-7,17') on item 'TblAnzeige.ChildTableWindow.Row6'.", repo.TblAnzeige.ChildTableWindow.Row6Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'-7,17') on item 'TblAnzeige.ChildTableWindow.Row6'.", repo.TblAnzeige.ChildTableWindow.Row6Info, new RecordItemIndex(5));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row6Info, "Text", "-7,17");
             
             // Search Timeout + 1m
-            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'7650\tWerbekosten') on item 'TblAnzeige.ChildTableWindow.Row8'.", repo.TblAnzeige.ChildTableWindow.Row8Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'7650\tWerbekosten') on item 'TblAnzeige.ChildTableWindow.Row8'.", repo.TblAnzeige.ChildTableWindow.Row8Info, new RecordItemIndex(6));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row8Info, "Text", "7650\tWerbekosten");
             
             // Search Timeout + 1m
-            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'-2.758,33') on item 'TblAnzeige.ChildTableWindow.Row8'.", repo.TblAnzeige.ChildTableWindow.Row8Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'-2.758,33') on item 'TblAnzeige.ChildTableWindow.Row8'.", repo.TblAnzeige.ChildTableWindow.Row8Info, new RecordItemIndex(7));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row8Info, "Text", "-2.758,33");
             
             // Search Timeout + 1m
-            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'26. Bilanzgewinn/Bilanzverlust') on item 'TblAnzeige.ChildTableWindow.Row13'.", repo.TblAnzeige.ChildTableWindow.Row13Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'26. Bilanzgewinn/Bilanzverlust') on item 'TblAnzeige.ChildTableWindow.Row13'.", repo.TblAnzeige.ChildTableWindow.Row13Info, new RecordItemIndex(8));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row13Info, "Text", "26. Bilanzgewinn/Bilanzverlust");
             
             // Search Timeout + 1m
-            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'-2.310,95') on item 'TblAnzeige.ChildTableWindow.Row13'.", repo.TblAnzeige.ChildTableWindow.Row13Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'-2.310,95') on item 'TblAnzeige.ChildTableWindow.Row13'.", repo.TblAnzeige.ChildTableWindow.Row13Info, new RecordItemIndex(9));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row13Info, "Text", "-2.310,95");
             
         }

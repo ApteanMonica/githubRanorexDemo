@@ -79,6 +79,15 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="66b74829-ef68-43cc-94c9-1318bd5b499a"
+			name="Benutzer_bucht_schon_Ja_fortfahren"
+			ref="e6bf9ec3-a6be-4f74-b088-2ee1be4bb81e"
+			type="Recording">
+				<description>
+					<![CDATA[Falls B_BUCH zuvor abgestürzt wird die Meldung mit j (JA) bestätigt. Tritt die Meldung nicht auf, wird das j aus dem Feld Monat im nächsten Schritt gelöscht]]>
+				</description>
+			</testmodule>
+			<testmodule
 			id="82a2b5c4-6a24-4c26-9e14-3294d946f6ab"
 			name="StartAUT_02"
 			ref="c5a8265e-0f30-4e7f-8438-c435361c025c"
@@ -270,6 +279,10 @@
 							name="StartAUT">
 							</testmodule>
 						</setup>
+						<testmodule
+						id="66b74829-ef68-43cc-94c9-1318bd5b499a"
+						name="Benutzer_bucht_schon_Ja_fortfahren">
+						</testmodule>
 						<testmodule
 						id="fac7e86d-4c08-4187-8a34-25bcbbde6e19"
 						name="Eingabe_Jahr_Periode_Busy">

@@ -34,6 +34,7 @@ namespace K_AUSW_002
         K_AUSW_002RepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
         K_AUSW_002RepositoryFolders.TblBkAbAppFolder _tblbkab;
         K_AUSW_002RepositoryFolders.DlgListBoxAppFolder _dlglistbox;
+        K_AUSW_002RepositoryFolders.FrmProgressAppFolder _frmprogress;
 
         /// <summary>
         /// Gets the singleton class instance representing the K_AUSW_002Repository element repository.
@@ -57,6 +58,7 @@ namespace K_AUSW_002
             _dlgmessagebox = new K_AUSW_002RepositoryFolders.DlgMessageBoxAppFolder(this);
             _tblbkab = new K_AUSW_002RepositoryFolders.TblBkAbAppFolder(this);
             _dlglistbox = new K_AUSW_002RepositoryFolders.DlgListBoxAppFolder(this);
+            _frmprogress = new K_AUSW_002RepositoryFolders.FrmProgressAppFolder(this);
         }
 
 #region Variables
@@ -148,6 +150,15 @@ namespace K_AUSW_002
         public virtual K_AUSW_002RepositoryFolders.DlgListBoxAppFolder DlgListBox
         {
             get { return _dlglistbox; }
+        }
+
+        /// <summary>
+        /// The FrmProgress folder.
+        /// </summary>
+        [RepositoryFolder("5e4b1d2b-45c9-4227-9cf1-f8f247379a57")]
+        public virtual K_AUSW_002RepositoryFolders.FrmProgressAppFolder FrmProgress
+        {
+            get { return _frmprogress; }
         }
     }
 
@@ -697,6 +708,7 @@ namespace K_AUSW_002
         {
             K_AUSW_002RepositoryFolders.ChildTableWindowFolder _childtablewindow;
             RepoItemInfo _titlebar100guvsec231ugbstand2016Info;
+            RepoItemInfo _titlebar_mit_textInfo;
             RepoItemInfo _pbuebersichtuebersichtInfo;
             RepoItemInfo _pbtoolbaritemsvorwaertsInfo;
             RepoItemInfo _pbtoolbaritemsanfangInfo;
@@ -713,6 +725,7 @@ namespace K_AUSW_002
             {
                 _childtablewindow = new K_AUSW_002RepositoryFolders.ChildTableWindowFolder(this);
                 _titlebar100guvsec231ugbstand2016Info = new RepoItemInfo(this, "TitleBar100GuVSec231UGBStand2016", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "de787a7d-0235-4951-b185-dcfd2efa2f56");
+                _titlebar_mit_textInfo = new RepoItemInfo(this, "TitleBar_mit_Text", "titlebar[@text~'Code <GB / Geschäftsbericht>']", "", 30000, null, "175f6088-059b-4db8-9440-08cdf8d2c73b");
                 _pbuebersichtuebersichtInfo = new RepoItemInfo(this, "PbUEbersichtUEbersicht", "container[@controlname='RibbonBar']/container[@controlname='ÜbersichtGroup']/button[@controlname='pbÜbersicht_Übersicht']", "", 30000, null, "892ac6f6-3dfb-4c59-bdfb-07bdacb42af5");
                 _pbtoolbaritemsvorwaertsInfo = new RepoItemInfo(this, "PbToolBarItemsVorwaerts", "container[@controlname='RibbonBar']/container[@controlname='ToolBarItemsGroup']/button[@controlname='pbToolBarItems_Vorwärts']", "", 30000, null, "3f024f0d-902b-492a-bc85-8ce13f660106");
                 _pbtoolbaritemsanfangInfo = new RepoItemInfo(this, "PbToolBarItemsAnfang", "container[@controlname='RibbonBar']/container[@controlname='ToolBarItemsGroup']/button[@controlname='pbToolBarItems_Anfang']", "", 30000, null, "5c98f58c-b7bb-4ece-b2a2-4890ebf31279");
@@ -767,6 +780,30 @@ namespace K_AUSW_002
                 get
                 {
                     return _titlebar100guvsec231ugbstand2016Info;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar_mit_Text item.
+            /// </summary>
+            [RepositoryItem("175f6088-059b-4db8-9440-08cdf8d2c73b")]
+            public virtual Ranorex.TitleBar TitleBar_mit_Text
+            {
+                get
+                {
+                    return _titlebar_mit_textInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar_mit_Text item info.
+            /// </summary>
+            [RepositoryItemInfo("175f6088-059b-4db8-9440-08cdf8d2c73b")]
+            public virtual RepoItemInfo TitleBar_mit_TextInfo
+            {
+                get
+                {
+                    return _titlebar_mit_textInfo;
                 }
             }
 
@@ -955,6 +992,7 @@ namespace K_AUSW_002
         public partial class ChildTableWindowFolder : RepoGenBaseFolder
         {
             RepoItemInfo _row1Info;
+            RepoItemInfo _row1column0Info;
             RepoItemInfo _row2column0Info;
             RepoItemInfo _row2Info;
             RepoItemInfo _row3Info;
@@ -970,6 +1008,7 @@ namespace K_AUSW_002
                     base("ChildTableWindow", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "31c35316-75d4-4b36-bde7-9f28b40504fd", "")
             {
                 _row1Info = new RepoItemInfo(this, "Row1", "row[@accessiblename='Row 1']", "", 30000, null, "2cb7cbba-29a6-49b6-8416-14902f78844a");
+                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "9a4af768-ad7f-45e2-a7d3-52792de4e18e");
                 _row2column0Info = new RepoItemInfo(this, "Row2Column0", "row[@accessiblename='Row 2']/cell[@accessiblename='Row 2 Column 0']", "", 30000, null, "b21cbb35-8a16-46a1-aa03-ec694f7561f4");
                 _row2Info = new RepoItemInfo(this, "Row2", "row[@accessiblename='Row 2']", "", 60000, null, "ae2f37c8-85fb-4dfd-bbf5-34ff1034eed1");
                 _row3Info = new RepoItemInfo(this, "Row3", "row[@accessiblename='Row 3']", "", 60000, null, "83288cc5-f4a4-41e6-96e3-601ba5b4607a");
@@ -1024,6 +1063,30 @@ namespace K_AUSW_002
                 get
                 {
                     return _row1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item.
+            /// </summary>
+            [RepositoryItem("9a4af768-ad7f-45e2-a7d3-52792de4e18e")]
+            public virtual Ranorex.Cell Row1Column0
+            {
+                get
+                {
+                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("9a4af768-ad7f-45e2-a7d3-52792de4e18e")]
+            public virtual RepoItemInfo Row1Column0Info
+            {
+                get
+                {
+                    return _row1column0Info;
                 }
             }
 
@@ -2119,6 +2182,46 @@ namespace K_AUSW_002
                 get
                 {
                     return _pbokInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FrmProgressAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("5e4b1d2b-45c9-4227-9cf1-f8f247379a57")]
+        public partial class FrmProgressAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new FrmProgress  folder.
+            /// </summary>
+            public FrmProgressAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FrmProgress", "/form[@text~'Daten werden berechnet']", parentFolder, 30000, null, true, "5e4b1d2b-45c9-4227-9cf1-f8f247379a57", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("5e4b1d2b-45c9-4227-9cf1-f8f247379a57")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("5e4b1d2b-45c9-4227-9cf1-f8f247379a57")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
                 }
             }
         }
