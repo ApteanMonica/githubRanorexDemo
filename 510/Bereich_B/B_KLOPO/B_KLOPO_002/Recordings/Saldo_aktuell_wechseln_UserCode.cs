@@ -24,59 +24,59 @@ namespace B_KLOPO_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Saldo_aktuell_einschraenken_User_Code recording.
+    ///The Saldo_aktuell_wechseln_UserCode recording.
     /// </summary>
-    [TestModule("8b76499d-b2f5-4a69-b35a-9821d26aef21", ModuleType.Recording, 1)]
-    public partial class Saldo_aktuell_einschraenken_User_Code : ITestModule
+    [TestModule("ae55ecfe-a621-46c7-a2d3-30041985a582", ModuleType.Recording, 1)]
+    public partial class Saldo_aktuell_wechseln_UserCode : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_KLOPO_002.B_KLOPO_002Repository repository.
         /// </summary>
         public static global::B_KLOPO_002.B_KLOPO_002Repository repo = global::B_KLOPO_002.B_KLOPO_002Repository.Instance;
 
-        static Saldo_aktuell_einschraenken_User_Code instance = new Saldo_aktuell_einschraenken_User_Code();
+        static Saldo_aktuell_wechseln_UserCode instance = new Saldo_aktuell_wechseln_UserCode();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Saldo_aktuell_einschraenken_User_Code()
+        public Saldo_aktuell_wechseln_UserCode()
         {
-            Jahr_aktuell = "";
-            Monat_aktuell = "";
+            Jahr_aktuell_yyyy = "";
+            Monat_aktuell_M = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Saldo_aktuell_einschraenken_User_Code Instance
+        public static Saldo_aktuell_wechseln_UserCode Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Jahr_aktuell;
+        string _Jahr_aktuell_yyyy;
 
         /// <summary>
-        /// Gets or sets the value of variable Jahr_aktuell.
+        /// Gets or sets the value of variable Jahr_aktuell_yyyy.
         /// </summary>
-        [TestVariable("3bd38f43-afcb-47fd-a943-4ef04ae9a924")]
-        public string Jahr_aktuell
+        [TestVariable("99387dfd-a9b3-4080-8b8a-c6168584e272")]
+        public string Jahr_aktuell_yyyy
         {
-            get { return _Jahr_aktuell; }
-            set { _Jahr_aktuell = value; }
+            get { return _Jahr_aktuell_yyyy; }
+            set { _Jahr_aktuell_yyyy = value; }
         }
 
-        string _Monat_aktuell;
+        string _Monat_aktuell_M;
 
         /// <summary>
-        /// Gets or sets the value of variable Monat_aktuell.
+        /// Gets or sets the value of variable Monat_aktuell_M.
         /// </summary>
-        [TestVariable("0fb3ec14-ce1e-407e-992c-63312049a2d3")]
-        public string Monat_aktuell
+        [TestVariable("066986e4-288d-424f-8c54-c6b2647478b1")]
+        public string Monat_aktuell_M
         {
-            get { return _Monat_aktuell; }
-            set { _Monat_aktuell = value; }
+            get { return _Monat_aktuell_M; }
+            set { _Monat_aktuell_M = value; }
         }
 
 #endregion
@@ -114,17 +114,15 @@ namespace B_KLOPO_002.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmKlOp.Einschraenkungen.RbSaldoStichtag'.", repo.FrmKlOp.Einschraenkungen.RbSaldoStichtagInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.FrmKlOp.Einschraenkungen.RbSaldoStichtagInfo, "Checked", "False");
             
-            Jahr_aktuell = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("yyyy");
+            Jahr_aktuell_yyyy = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimeAsString("yyyy");
             
-            Monat_aktuell = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("MM");
+            Monat_aktuell_M = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimeAsString("M");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr_aktuell) on item 'FrmKlOp.Einschraenkungen.StichtagPerJahr'.", repo.FrmKlOp.Einschraenkungen.StichtagPerJahrInfo, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.FrmKlOp.Einschraenkungen.StichtagPerJahrInfo, "Text", Jahr_aktuell);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr_aktuell_yyyy) on item 'FrmKlOp.Einschraenkungen.StichtagPerJahr'.", repo.FrmKlOp.Einschraenkungen.StichtagPerJahrInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.FrmKlOp.Einschraenkungen.StichtagPerJahrInfo, "Text", Jahr_aktuell_yyyy);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Monat_aktuell) on item 'FrmKlOp.Einschraenkungen.StichtagPerPeriode'.", repo.FrmKlOp.Einschraenkungen.StichtagPerPeriodeInfo, new RecordItemIndex(6));
-            //Validate.AttributeEqual(repo.FrmKlOp.Einschraenkungen.StichtagPerPeriodeInfo, "Text", Monat_aktuell);
-            
-            Validate_StichtagPerPeriode(repo.FrmKlOp.Einschraenkungen.StichtagPerPeriodeInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Monat_aktuell_M) on item 'FrmKlOp.Einschraenkungen.StichtagPerPeriode'.", repo.FrmKlOp.Einschraenkungen.StichtagPerPeriodeInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmKlOp.Einschraenkungen.StichtagPerPeriodeInfo, "Text", Monat_aktuell_M);
             
         }
 
