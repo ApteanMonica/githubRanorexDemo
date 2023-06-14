@@ -24,59 +24,59 @@ namespace B_KLSALD_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Einschraenkung_Stichtag_Monat_aktuell recording.
+    ///The Einschraenkung_Stichtag_Monat_akt_UserCode recording.
     /// </summary>
-    [TestModule("62e12ae4-a2dc-4dcf-8971-ba6f62e40491", ModuleType.Recording, 1)]
-    public partial class Einschraenkung_Stichtag_Monat_aktuell : ITestModule
+    [TestModule("38579cfe-4ab7-468a-a771-581156636365", ModuleType.Recording, 1)]
+    public partial class Einschraenkung_Stichtag_Monat_akt_UserCode : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_KLSALD_001.B_KLSALD_001Repository repository.
         /// </summary>
         public static global::B_KLSALD_001.B_KLSALD_001Repository repo = global::B_KLSALD_001.B_KLSALD_001Repository.Instance;
 
-        static Einschraenkung_Stichtag_Monat_aktuell instance = new Einschraenkung_Stichtag_Monat_aktuell();
+        static Einschraenkung_Stichtag_Monat_akt_UserCode instance = new Einschraenkung_Stichtag_Monat_akt_UserCode();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Einschraenkung_Stichtag_Monat_aktuell()
+        public Einschraenkung_Stichtag_Monat_akt_UserCode()
         {
-            Jahr_aktuell = "";
-            Monat_aktuell = "";
+            Jahr_aktuell_yyyy = "";
+            Monat_aktuell_M = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Einschraenkung_Stichtag_Monat_aktuell Instance
+        public static Einschraenkung_Stichtag_Monat_akt_UserCode Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Jahr_aktuell;
+        string _Jahr_aktuell_yyyy;
 
         /// <summary>
-        /// Gets or sets the value of variable Jahr_aktuell.
+        /// Gets or sets the value of variable Jahr_aktuell_yyyy.
         /// </summary>
-        [TestVariable("2ab83d41-140f-43ff-9465-eae6ed0c94d5")]
-        public string Jahr_aktuell
+        [TestVariable("4c42402a-14ca-4f86-bbad-68ae0014a1f7")]
+        public string Jahr_aktuell_yyyy
         {
-            get { return _Jahr_aktuell; }
-            set { _Jahr_aktuell = value; }
+            get { return _Jahr_aktuell_yyyy; }
+            set { _Jahr_aktuell_yyyy = value; }
         }
 
-        string _Monat_aktuell;
+        string _Monat_aktuell_M;
 
         /// <summary>
-        /// Gets or sets the value of variable Monat_aktuell.
+        /// Gets or sets the value of variable Monat_aktuell_M.
         /// </summary>
-        [TestVariable("4599b2f4-d16b-4e2e-8b0c-97adf819c64b")]
-        public string Monat_aktuell
+        [TestVariable("4e408e73-32e8-4cbe-bdb5-0d7a5dfe7ab2")]
+        public string Monat_aktuell_M
         {
-            get { return _Monat_aktuell; }
-            set { _Monat_aktuell = value; }
+            get { return _Monat_aktuell_M; }
+            set { _Monat_aktuell_M = value; }
         }
 
 #endregion
@@ -111,15 +111,12 @@ namespace B_KLSALD_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmKLSL.RbStichtagsliste'.", repo.FrmKLSL.RbStichtagslisteInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.FrmKLSL.RbStichtagslisteInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Saldenliste per Stichtag: Kunden') on item 'FrmKLSL.TitleBar100SaldenlistePerStichtag'.", repo.FrmKLSL.TitleBar100SaldenlistePerStichtagInfo, new RecordItemIndex(2));
+            Jahr_aktuell_yyyy = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimeAsString("yyyy");
+            
+            Monat_aktuell_M = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimeAsString("M");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Saldenliste per Stichtag: Kunden') on item 'FrmKLSL.TitleBar100SaldenlistePerStichtag'.", repo.FrmKLSL.TitleBar100SaldenlistePerStichtagInfo, new RecordItemIndex(4));
             Validate.AttributeContains(repo.FrmKLSL.TitleBar100SaldenlistePerStichtagInfo, "Text", "Saldenliste per Stichtag: Kunden");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr_aktuell) on item 'FrmKLSL.Einschraenkungen.per_Jahr'.", repo.FrmKLSL.Einschraenkungen.per_JahrInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.FrmKLSL.Einschraenkungen.per_JahrInfo, "Text", Jahr_aktuell);
-            
-            // Feld einstellig, Varible 2stellig
-            //Report.Log(ReportLevel.Info, "Validation", "Feld einstellig, Varible 2stellig\r\nValidating AttributeEqual (Text=$Monat_aktuell) on item 'FrmKLSL.Einschraenkungen.per_Monat'.", repo.FrmKLSL.Einschraenkungen.per_MonatInfo, new RecordItemIndex(4));
-            //Validate.AttributeEqual(repo.FrmKLSL.Einschraenkungen.per_MonatInfo, "Text", Monat_aktuell);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmKLSL.Einschraenkungen.CbSummeSamk'.", repo.FrmKLSL.Einschraenkungen.CbSummeSamkInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.FrmKLSL.Einschraenkungen.CbSummeSamkInfo, "Checked", "True");

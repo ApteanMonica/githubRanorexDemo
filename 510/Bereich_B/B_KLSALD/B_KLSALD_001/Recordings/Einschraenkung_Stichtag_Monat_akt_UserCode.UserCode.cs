@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_KLSALD_001.Recordings
 {
-    public partial class Jahr_Monat_aktuell_einlesen
+    public partial class Einschraenkung_Stichtag_Monat_akt_UserCode
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
