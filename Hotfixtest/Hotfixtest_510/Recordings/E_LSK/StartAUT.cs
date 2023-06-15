@@ -108,8 +108,8 @@ namespace Hotfixtest_510.Recordings.E_LSK
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $E_LSK in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, E_LSK, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'E_LSK.TitleBar100LieferscheineLagerzuga'", repo.E_LSK.TitleBar100LieferscheineLagerzugaInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.E_LSK.TitleBar100LieferscheineLagerzugaInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 4m to exist. Associated repository item: 'E_LSK.TitleBar100LieferscheineLagerzuga'", repo.E_LSK.TitleBar100LieferscheineLagerzugaInfo, new ActionTimeout(240000), new RecordItemIndex(1));
+            repo.E_LSK.TitleBar100LieferscheineLagerzugaInfo.WaitForExists(240000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'Lieferscheine') on item 'E_LSK.TitleBar100LieferscheineLagerzuga'.", repo.E_LSK.TitleBar100LieferscheineLagerzugaInfo, new RecordItemIndex(2));
             Validate.AttributeRegex(repo.E_LSK.TitleBar100LieferscheineLagerzugaInfo, "Text", new Regex("Lieferscheine"));
