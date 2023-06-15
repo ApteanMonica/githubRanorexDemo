@@ -108,8 +108,8 @@ namespace Hotfixtest_510.Recordings.MENU_testen
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FormWorkplace.TitleBar100RSREFDBRs2Ver'", repo.FormWorkplace.TitleBar100RSREFDBRs2VerInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FormWorkplace.TitleBar100RSREFDBRs2VerInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 4m to exist. Associated repository item: 'FormWorkplace.TitleBar100RSREFDBRs2Ver'", repo.FormWorkplace.TitleBar100RSREFDBRs2VerInfo, new ActionTimeout(240000), new RecordItemIndex(1));
+            repo.FormWorkplace.TitleBar100RSREFDBRs2VerInfo.WaitForExists(240000);
             
             try {
                 Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'DlgRs2ReleaseInfo.Schliessen' at Center.", repo.DlgRs2ReleaseInfo.SchliessenInfo, new RecordItemIndex(2));
