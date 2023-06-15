@@ -1236,6 +1236,7 @@ namespace Z_UHR_004
             RepoItemInfo _colfzergdtbeginnrow4_510Info;
             RepoItemInfo _colfzergdtenderow4_510Info;
             RepoItemInfo _colebenerow1Info;
+            RepoItemInfo _maximierenInfo;
 
             /// <summary>
             /// Creates a new TblFehlzeitergebnisse  folder.
@@ -1260,6 +1261,7 @@ namespace Z_UHR_004
                 _colfzergdtbeginnrow4_510Info = new RepoItemInfo(this, "ColFzergDtbeginnRow4_510", "container[@controlname='ClientArea']/container[@controlname='tblH_fzerg1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colFzerg_dtbeginn Row 4']", "", 30000, null, "c8ac9980-3986-4a90-8a76-f576f4483eed");
                 _colfzergdtenderow4_510Info = new RepoItemInfo(this, "ColFzergDtendeRow4_510", "container[@controlname='ClientArea']/container[@controlname='tblH_fzerg1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colFzerg_dtende Row 4']", "", 30000, null, "57bc7a3b-cc22-4490-87fb-e0e8b69ae1b6");
                 _colebenerow1Info = new RepoItemInfo(this, "ColEbeneRow1", "container[@controlname='ClientArea']/container[@controlname='tblH_ansp1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colEbene Row 1']", "", 30000, null, "10e49f11-5ef1-4d6b-aa4d-997b288a94e5");
+                _maximierenInfo = new RepoItemInfo(this, "Maximieren", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Maximieren']", "", 30000, null, "15da90d0-c396-4693-b9b7-ce80b3fc5670");
             }
 
             /// <summary>
@@ -1619,6 +1621,30 @@ namespace Z_UHR_004
                 get
                 {
                     return _colebenerow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Maximieren item.
+            /// </summary>
+            [RepositoryItem("15da90d0-c396-4693-b9b7-ce80b3fc5670")]
+            public virtual Ranorex.Button Maximieren
+            {
+                get
+                {
+                    return _maximierenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Maximieren item info.
+            /// </summary>
+            [RepositoryItemInfo("15da90d0-c396-4693-b9b7-ce80b3fc5670")]
+            public virtual RepoItemInfo MaximierenInfo
+            {
+                get
+                {
+                    return _maximierenInfo;
                 }
             }
 
