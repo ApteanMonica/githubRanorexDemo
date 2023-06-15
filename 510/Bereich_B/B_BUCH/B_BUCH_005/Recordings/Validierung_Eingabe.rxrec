@@ -36,12 +36,16 @@ mode="Global">
 		<var
 		id="fe9a718c-674f-410f-82fc-0163ec0c422d"
 		name="betrag">
-			1.000,00
+			1500
 		</var>
 		<var
 		id="0126fd44-38f9-4419-b964-17e59bf796c6"
 		name="bereiche">
 			30
+		</var>
+		<var
+		id="34bf78bc-9dbd-490d-bf88-0f57eaef2184"
+		name="variable">
 		</var>
 	</variables>
 	<recorditems>
@@ -2644,63 +2648,6 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="251aeb64-817b-4989-8261-30dc4f5488e3">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="betrag">
-				</binding>
-			</bindings>
-			<info
-			id="188bc324-137b-4bb5-b0e7-27f93239e7f1"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblErbu']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colErbu_betrag Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="7a98a17a-d839-4367-b4d7-52bf99baad3c">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="betrag">
-				</binding>
-			</bindings>
-			<info
-			id="ed8a0697-deab-4de9-bb58-58b0e6e22a0a"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='mdiBuch']/container[@controlname='ClientArea']/container[@controlname='SubForm_frmS']/form[@controlname='frmS']/container[@controlname='ClientArea']/text[@controlname='dfBetrag']/text[@accessiblerole='Text']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
 		searchpropertyid="d2aa0c27-36ec-44e1-9b6d-5367f585e65b">
 			<comment>
 			</comment>
@@ -2770,6 +2717,116 @@ mode="Global">
 				yourtext
 			</matchvalue>
 		</validationitem>
+		<getvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="40415cba-0a92-4317-b009-7d1c09983bc8"
+		varname="variable">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="188bc324-137b-4bb5-b0e7-27f93239e7f1"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblErbu']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colErbu_betrag Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ValidateWithoutDecimals"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="7b20f293-16df-4e63-9519-d413609c5e90">
+				<argument
+				argname="field_D1"
+				id="27377304-2916-470f-9006-08138bf04874"
+				variable="variable">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="D1"
+				id="1eedd531-1f07-4dea-9156-470cfbcfa373"
+				variable="betrag">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<getvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ee7101a2-9199-4718-ba0b-542c0e23cc6e"
+		varname="variable">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ed8a0697-deab-4de9-bb58-58b0e6e22a0a"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='mdiBuch']/container[@controlname='ClientArea']/container[@controlname='SubForm_frmS']/form[@controlname='frmS']/container[@controlname='ClientArea']/text[@controlname='dfBetrag']/text[@accessiblerole='Text']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ValidateWithoutDecimals"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="b17d4c1f-e277-4770-81e1-e7fcc54671ce">
+				<argument
+				argname="field_D1"
+				id="9d7915a5-691e-4e76-889c-59f16b00deee"
+				variable="variable">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="D1"
+				id="81bec6bb-8028-4d9e-95a5-53b37636aff2"
+				variable="betrag">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="a5080f1c-785c-4f83-bbf5-8a05aecf1193"

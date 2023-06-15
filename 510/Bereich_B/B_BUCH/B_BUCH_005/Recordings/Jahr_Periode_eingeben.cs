@@ -42,7 +42,7 @@ namespace B_BUCH_005.Recordings
         public Jahr_Periode_eingeben()
         {
             jahr = "2023";
-            periode = "02";
+            periode = "3";
         }
 
         /// <summary>

@@ -46,7 +46,7 @@ namespace B_BUCH_005.Recordings
         	// Periode_int (konvertierte Inhalt von Feld als integer) wird als String konvertiert
         	string Periode_string1 = Periode_int1.ToString();
         	
-        	int Periode_int2 = Convert.ToInt32(Periode);
+        	int Periode_int2 = Convert.ToInt32(periode);
         	// Periode_int (konvertierte Inhalt von Feld als integer) wird als String konvertiert
         	string Periode_string2 = Periode_int2.ToString();
         	
