@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="9281b54e-33f1-418e-8759-a2ab03aa5764"
+id="a7f65411-5d0c-4637-a7d2-a5041b29f721"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,22 +19,17 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Urlaubsanspruch_aktuelles_Jahr"
+	classname="Urlaubsanspruch_aktuelles_Jahr_511_521"
 	namespace="Z_UHR_004.Recording_H_ANSPR">
 	</codegen>
 	<variables>
 		<var
-		id="be5f5aa8-0fec-4361-b7ff-b9c211f6627f"
-		name="Pers_nr">
-			Z_UHR_004
-		</var>
-		<var
-		id="227e9e84-278a-4889-b964-872764da7bef"
+		id="34ee6932-f026-48cd-8e37-4fe7032f9bf9"
 		name="Anspruchsart_Urlaub">
 			URL
 		</var>
 		<var
-		id="3cdb0887-ac50-40cc-9a13-baeb140cdd1e"
+		id="cab7b0e2-f392-4454-93de-931da0828ae4"
 		name="Urlaubsmenge">
 			25
 		</var>
@@ -190,76 +185,18 @@ mode="Global">
 		</mouseitem>
 		<validationitem
 		action="AttributeEqual"
-		enabled="False"
+		enabled="True"
 		optional="False"
-		searchpropertyid="695d0e51-3c49-4b2e-a54b-67014e3cc544">
+		searchpropertyid="3b4bfda4-e685-4542-9ea7-8ca9ec5cc5a1">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Pers_nr">
-				</binding>
 			</bindings>
 			<info
-			id="8e7976c4-dc63-42fb-b390-457e45ed372d"
+			id="05d05ee5-deec-4ef6-86f0-06c1891981dc"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="3"
-				prefcap="cell"
-				rect="-32237,-31599,69,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						True
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						Z_UHR_004
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colPers_nr Row 1
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Selected, Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						Z_UHR_004
-					</attribute>
-				</element>
 				<path>
-					/form[@controlname='tblFehlzeitergebnisse']/container[@controlname='ClientArea']/container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='cSplitContainer2']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblH_ansp1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colPers_nr Row 1']
+					/form[@controlname='tblFehlzeitergebnisse']/container[@controlname='ClientArea']/container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='cSplitContainer2']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblH_ansp1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colPers_nr Row 2']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -287,60 +224,6 @@ mode="Global">
 			<info
 			id="f2c74c4f-f94d-4030-a11f-962b5ddce5b7"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="3"
-				prefcap="cell"
-				rect="2007,491,65,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						URL
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colAnspra_cd Row 2
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						URL
-					</attribute>
-				</element>
 				<path>
 					/form[@controlname='tblFehlzeitergebnisse']/container[@controlname='ClientArea']/container[@controlname='tblH_ansp1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colAnspra_cd Row 2']
 				</path>
@@ -368,7 +251,7 @@ mode="Global">
 				</binding>
 			</bindings>
 			<info
-			id="8de8f00e-bf83-406d-b0a5-d7551b74d662"
+			id="03ab8571-8498-425a-b8c2-bc27c0b80cde"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -376,9 +259,9 @@ mode="Global">
 				enabled="True"
 				flavor="msaa"
 				hasfocus="False"
-				index="7"
+				index="11"
 				prefcap="cell"
-				rect="2307,491,76,19"
+				rect="-31618,-31599,76,19"
 				role="cell"
 				snapElem=""
 				valid="True"
@@ -391,7 +274,7 @@ mode="Global">
 					<attribute
 					name="selected"
 					type="System.Boolean">
-						False
+						True
 					</attribute>
 					<attribute
 					name="text"
@@ -406,7 +289,7 @@ mode="Global">
 					<attribute
 					name="accessiblename"
 					type="System.String">
-						colMenge Row 2
+						colMenge Row 1
 					</attribute>
 					<attribute
 					name="accessiblerole"
@@ -416,7 +299,7 @@ mode="Global">
 					<attribute
 					name="accessiblestate"
 					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
+						Selected, Focusable, Selectable
 					</attribute>
 					<attribute
 					name="accessiblevalue"
@@ -425,7 +308,7 @@ mode="Global">
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='tblFehlzeitergebnisse']/container[@controlname='ClientArea']/container[@controlname='tblH_ansp1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colMenge Row 2']
+					/form[@controlname='tblFehlzeitergebnisse']/container[@controlname='ClientArea']/container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='cSplitContainer2']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblH_ansp1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colMenge Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -451,6 +334,15 @@ mode="Global">
 			</comment>
 			<bindings>
 			</bindings>
+			<info
+			id="8de8f00e-bf83-406d-b0a5-d7551b74d662"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblFehlzeitergebnisse']/container[@controlname='ClientArea']/container[@controlname='tblH_ansp1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colMenge Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
 		</keyitem>
 	</recorditems>
 	<repository
@@ -468,7 +360,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Urlaubsanspruch_aktuelles_Jahr.UserCode.cs
+		Urlaubsanspruch_aktuelles_Jahr_511_521.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

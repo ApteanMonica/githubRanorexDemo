@@ -41,7 +41,7 @@ namespace Z_UHR_004.Recording_H_ANSPR
         /// </summary>
         public Fehlzeitergebisse_berechnen_510()
         {
-            Pers_nr = "Z_UHR_004_01";
+            Pers_nr = "Z_UHR_004";
         }
 
         /// <summary>

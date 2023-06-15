@@ -1237,6 +1237,8 @@ namespace Z_UHR_004
             RepoItemInfo _colfzergdtenderow4_510Info;
             RepoItemInfo _colebenerow1Info;
             RepoItemInfo _maximierenInfo;
+            RepoItemInfo _colanspracdrow2Info;
+            RepoItemInfo _colmengerow2Info;
 
             /// <summary>
             /// Creates a new TblFehlzeitergebnisse  folder.
@@ -1262,6 +1264,8 @@ namespace Z_UHR_004
                 _colfzergdtenderow4_510Info = new RepoItemInfo(this, "ColFzergDtendeRow4_510", "container[@controlname='ClientArea']/container[@controlname='tblH_fzerg1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colFzerg_dtende Row 4']", "", 30000, null, "57bc7a3b-cc22-4490-87fb-e0e8b69ae1b6");
                 _colebenerow1Info = new RepoItemInfo(this, "ColEbeneRow1", "container[@controlname='ClientArea']/container[@controlname='tblH_ansp1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colEbene Row 1']", "", 30000, null, "10e49f11-5ef1-4d6b-aa4d-997b288a94e5");
                 _maximierenInfo = new RepoItemInfo(this, "Maximieren", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Maximieren']", "", 30000, null, "15da90d0-c396-4693-b9b7-ce80b3fc5670");
+                _colanspracdrow2Info = new RepoItemInfo(this, "ColAnspraCdRow2", "container[@controlname='ClientArea']/container[@controlname='tblH_ansp1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colAnspra_cd Row 2']", "", 30000, null, "f2c74c4f-f94d-4030-a11f-962b5ddce5b7");
+                _colmengerow2Info = new RepoItemInfo(this, "ColMengeRow2", "container[@controlname='ClientArea']/container[@controlname='tblH_ansp1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colMenge Row 2']", "", 30000, null, "8de8f00e-bf83-406d-b0a5-d7551b74d662");
             }
 
             /// <summary>
@@ -1649,6 +1653,54 @@ namespace Z_UHR_004
             }
 
             /// <summary>
+            /// The ColAnspraCdRow2 item.
+            /// </summary>
+            [RepositoryItem("f2c74c4f-f94d-4030-a11f-962b5ddce5b7")]
+            public virtual Ranorex.Cell ColAnspraCdRow2
+            {
+                get
+                {
+                    return _colanspracdrow2Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColAnspraCdRow2 item info.
+            /// </summary>
+            [RepositoryItemInfo("f2c74c4f-f94d-4030-a11f-962b5ddce5b7")]
+            public virtual RepoItemInfo ColAnspraCdRow2Info
+            {
+                get
+                {
+                    return _colanspracdrow2Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColMengeRow2 item.
+            /// </summary>
+            [RepositoryItem("8de8f00e-bf83-406d-b0a5-d7551b74d662")]
+            public virtual Ranorex.Cell ColMengeRow2
+            {
+                get
+                {
+                    return _colmengerow2Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColMengeRow2 item info.
+            /// </summary>
+            [RepositoryItemInfo("8de8f00e-bf83-406d-b0a5-d7551b74d662")]
+            public virtual RepoItemInfo ColMengeRow2Info
+            {
+                get
+                {
+                    return _colmengerow2Info;
+                }
+            }
+
+            /// <summary>
             /// The FlexGrid folder.
             /// </summary>
             [RepositoryFolder("80951caf-ecd3-43f7-81aa-1c6629c87b58")]
@@ -1907,6 +1959,7 @@ namespace Z_UHR_004
             RepoItemInfo _colanspracdrow1Info;
             RepoItemInfo _colmengerow1Info;
             RepoItemInfo _colpersnrrow1Info;
+            RepoItemInfo _colpersnrrow2Info;
 
             /// <summary>
             /// Creates a new Row1  folder.
@@ -1917,6 +1970,7 @@ namespace Z_UHR_004
                 _colanspracdrow1Info = new RepoItemInfo(this, "ColAnspraCdRow1", "cell[@accessiblename='colAnspra_cd Row 1']", "", 30000, null, "be10c740-4bbe-42e2-ba13-f89a6c5f7ec3");
                 _colmengerow1Info = new RepoItemInfo(this, "ColMengeRow1", "cell[@accessiblename='colMenge Row 1']", "", 30000, null, "03ab8571-8498-425a-b8c2-bc27c0b80cde");
                 _colpersnrrow1Info = new RepoItemInfo(this, "ColPersNrRow1", "cell[@accessiblename='colPers_nr Row 1']", "", 30000, null, "8e7976c4-dc63-42fb-b390-457e45ed372d");
+                _colpersnrrow2Info = new RepoItemInfo(this, "ColPersNrRow2", "cell[@accessiblename='colPers_nr Row 2']", "", 30000, null, "05d05ee5-deec-4ef6-86f0-06c1891981dc");
             }
 
             /// <summary>
@@ -2012,6 +2066,30 @@ namespace Z_UHR_004
                 get
                 {
                     return _colpersnrrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColPersNrRow2 item.
+            /// </summary>
+            [RepositoryItem("05d05ee5-deec-4ef6-86f0-06c1891981dc")]
+            public virtual Ranorex.Cell ColPersNrRow2
+            {
+                get
+                {
+                    return _colpersnrrow2Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColPersNrRow2 item info.
+            /// </summary>
+            [RepositoryItemInfo("05d05ee5-deec-4ef6-86f0-06c1891981dc")]
+            public virtual RepoItemInfo ColPersNrRow2Info
+            {
+                get
+                {
+                    return _colpersnrrow2Info;
                 }
             }
         }

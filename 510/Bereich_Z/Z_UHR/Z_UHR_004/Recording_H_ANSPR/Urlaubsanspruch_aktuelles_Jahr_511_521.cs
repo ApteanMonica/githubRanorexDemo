@@ -24,24 +24,23 @@ namespace Z_UHR_004.Recording_H_ANSPR
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Urlaubsanspruch_aktuelles_Jahr recording.
+    ///The Urlaubsanspruch_aktuelles_Jahr_511_521 recording.
     /// </summary>
-    [TestModule("9281b54e-33f1-418e-8759-a2ab03aa5764", ModuleType.Recording, 1)]
-    public partial class Urlaubsanspruch_aktuelles_Jahr : ITestModule
+    [TestModule("a7f65411-5d0c-4637-a7d2-a5041b29f721", ModuleType.Recording, 1)]
+    public partial class Urlaubsanspruch_aktuelles_Jahr_511_521 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::Z_UHR_004.Z_UHR_004Repository repository.
         /// </summary>
         public static global::Z_UHR_004.Z_UHR_004Repository repo = global::Z_UHR_004.Z_UHR_004Repository.Instance;
 
-        static Urlaubsanspruch_aktuelles_Jahr instance = new Urlaubsanspruch_aktuelles_Jahr();
+        static Urlaubsanspruch_aktuelles_Jahr_511_521 instance = new Urlaubsanspruch_aktuelles_Jahr_511_521();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Urlaubsanspruch_aktuelles_Jahr()
+        public Urlaubsanspruch_aktuelles_Jahr_511_521()
         {
-            Pers_nr = "Z_UHR_004";
             Anspruchsart_Urlaub = "URL";
             Urlaubsmenge = "25";
         }
@@ -49,31 +48,19 @@ namespace Z_UHR_004.Recording_H_ANSPR
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Urlaubsanspruch_aktuelles_Jahr Instance
+        public static Urlaubsanspruch_aktuelles_Jahr_511_521 Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Pers_nr;
-
-        /// <summary>
-        /// Gets or sets the value of variable Pers_nr.
-        /// </summary>
-        [TestVariable("be5f5aa8-0fec-4361-b7ff-b9c211f6627f")]
-        public string Pers_nr
-        {
-            get { return _Pers_nr; }
-            set { _Pers_nr = value; }
-        }
-
         string _Anspruchsart_Urlaub;
 
         /// <summary>
         /// Gets or sets the value of variable Anspruchsart_Urlaub.
         /// </summary>
-        [TestVariable("227e9e84-278a-4889-b964-872764da7bef")]
+        [TestVariable("34ee6932-f026-48cd-8e37-4fe7032f9bf9")]
         public string Anspruchsart_Urlaub
         {
             get { return _Anspruchsart_Urlaub; }
@@ -85,7 +72,7 @@ namespace Z_UHR_004.Recording_H_ANSPR
         /// <summary>
         /// Gets or sets the value of variable Urlaubsmenge.
         /// </summary>
-        [TestVariable("3cdb0887-ac50-40cc-9a13-baeb140cdd1e")]
+        [TestVariable("cab7b0e2-f392-4454-93de-931da0828ae4")]
         public string Urlaubsmenge
         {
             get { return _Urlaubsmenge; }
@@ -124,16 +111,17 @@ namespace Z_UHR_004.Recording_H_ANSPR
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFehlzeitergebnisse.ColEbeneRow1' at CenterLeft.", repo.TblFehlzeitergebnisse.ColEbeneRow1Info, new RecordItemIndex(1));
             repo.TblFehlzeitergebnisse.ColEbeneRow1.Click(Location.CenterLeft);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Pers_nr) on item 'TblFehlzeitergebnisse.Row1.ColPersNrRow1'.", repo.TblFehlzeitergebnisse.Row1.ColPersNrRow1Info, new RecordItemIndex(2));
-            //Validate.AttributeEqual(repo.TblFehlzeitergebnisse.Row1.ColPersNrRow1Info, "Text", Pers_nr);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Z_UHR_004') on item 'TblFehlzeitergebnisse.Row1.ColPersNrRow2'.", repo.TblFehlzeitergebnisse.Row1.ColPersNrRow2Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblFehlzeitergebnisse.Row1.ColPersNrRow2Info, "Text", "Z_UHR_004");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anspruchsart_Urlaub) on item 'TblFehlzeitergebnisse.ColAnspraCdRow2'.", repo.TblFehlzeitergebnisse.ColAnspraCdRow2Info, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.TblFehlzeitergebnisse.ColAnspraCdRow2Info, "Text", Anspruchsart_Urlaub);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Urlaubsmenge) on item 'TblFehlzeitergebnisse.ColMengeRow2'.", repo.TblFehlzeitergebnisse.ColMengeRow2Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.TblFehlzeitergebnisse.ColMengeRow2Info, "Text", Urlaubsmenge);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Urlaubsmenge) on item 'TblFehlzeitergebnisse.Row1.ColMengeRow1'.", repo.TblFehlzeitergebnisse.Row1.ColMengeRow1Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.TblFehlzeitergebnisse.Row1.ColMengeRow1Info, "Text", Urlaubsmenge);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press.", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblFehlzeitergebnisse.ColMengeRow2'.", repo.TblFehlzeitergebnisse.ColMengeRow2Info, new RecordItemIndex(5));
+            Keyboard.PrepareFocus(repo.TblFehlzeitergebnisse.ColMengeRow2);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }
