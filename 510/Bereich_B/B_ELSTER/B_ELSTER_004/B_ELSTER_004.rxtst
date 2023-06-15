@@ -17,6 +17,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="0415ae66-14dd-4592-9f68-0d9ee61d4241"
+			name="Tagesdatum2_ermitteln_eric"
+			ref="a4751bff-8b58-4db9-af8e-5184e6cdafe9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum2_yyyy_MM_dd"
+					datasourceid="44c43bf8-37da-485c-80b6-095b4e52959d"
+					variableid="449da0a3-c535-41ac-a8bb-165489ba289d"
+					variablename="Tagesdatum2_yyyy_MM_dd">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="04e0dab2-3182-49c4-b91f-60a04bec5ce3"
 			name="Elster_XML_Ausgabe_starten_Meldung_RS_bestaetigen"
 			ref="2a9422d1-fbf4-4267-ac6e-2eeb3a8049d2"
@@ -55,22 +69,51 @@
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
+			id="0f00a03f-1af5-432a-91d9-8309d64da969"
+			name="Pruefung_Eric_log_Tagesdatum_Tagesdatum2_UserCode"
+			ref="bd14363b-7d8c-46bc-8ac9-857d602e3be7"
+			type="Recording">
+				<description>
+					<![CDATA[UserCode Prüfung Tagesdatum oder Tagesdatum2 um Validierungsfehler bei Tageswechsel zu vermeiden]]>
+				</description>
+				<databinding>
+					<var
+					dataname="Tagesdatum2_yyyy_MM_dd"
+					datasourceid="44c43bf8-37da-485c-80b6-095b4e52959d"
+					variableid="b53c32a2-a20b-4da1-9470-df85a131e4e6"
+					variablename="Tagesdatum2_yyyy_MM_dd">
+					</var>
+					<var
+					dataname="Tagesdatum_yyyy_MM_dd"
+					datasourceid="44c43bf8-37da-485c-80b6-095b4e52959d"
+					variableid="94bc0307-55c7-494a-b7c4-1956fcab1d94"
+					variablename="Tagesdatum_yyyy_MM_dd">
+					</var>
+					<var
+					dataname="Eric_log_Inhalt_aktuell"
+					datasourceid="44c43bf8-37da-485c-80b6-095b4e52959d"
+					variableid="8b9c0a96-7be6-4221-8259-e74e92e4d74c"
+					variablename="Eric_log_Inhalt_aktuell">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="1a23ddcb-a5de-4973-8560-3c915441f4eb"
 			name="loeschen_Eric_log"
 			ref="c4dc8a92-f185-42a5-927a-dc944fd6bc67"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Eric_log_Datei"
-					datasourceid="44c43bf8-37da-485c-80b6-095b4e52959d"
-					variableid="5593d187-b63d-4912-bb97-22b40d48a7dc"
-					variablename="Eric_log_Datei">
-					</var>
-					<var
 					dataname="Pfad"
 					datasourceid="44c43bf8-37da-485c-80b6-095b4e52959d"
 					variableid="1ed67ffe-7ed3-43b8-b449-789d3c3b9bfb"
 					variablename="Pfad">
+					</var>
+					<var
+					dataname="Eric_log_Datei"
+					datasourceid="44c43bf8-37da-485c-80b6-095b4e52959d"
+					variableid="5593d187-b63d-4912-bb97-22b40d48a7dc"
+					variablename="Eric_log_Datei">
 					</var>
 				</databinding>
 			</testmodule>
@@ -85,6 +128,20 @@
 					datasourceid="44c43bf8-37da-485c-80b6-095b4e52959d"
 					variableid="60d74bd2-0ed4-4598-9eb9-705e90c1d5b5"
 					variablename="Firma">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="2240d10b-a42a-4bbd-a4a9-97a70c320387"
+			name="Tagesdatum2_ermitteln_XML"
+			ref="40593936-8403-4ef7-9677-946b2eb29c64"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum2_yyyyMMdd"
+					datasourceid="44c43bf8-37da-485c-80b6-095b4e52959d"
+					variableid="4e7eaf00-bff6-4444-8367-895296cf9922"
+					variablename="Tagesdatum2_yyyyMMdd">
 					</var>
 				</databinding>
 			</testmodule>
@@ -201,6 +258,14 @@
 					value="">
 					</param>
 					<param
+					name="Tagesdatum2_yyyy_MM_dd"
+					value="">
+					</param>
+					<param
+					name="Tagesdatum2_yyyyMMdd"
+					value="">
+					</param>
+					<param
 					name="Firma"
 					value="300">
 					</param>
@@ -305,16 +370,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Eric_log_Pfad_Datei"
-					datasourceid="44c43bf8-37da-485c-80b6-095b4e52959d"
-					variableid="6aed2fae-d972-4fe7-a612-1159f5170a8f"
-					variablename="Eric_log_Pfad_Datei">
-					</var>
-					<var
 					dataname="Programm_2"
 					datasourceid="44c43bf8-37da-485c-80b6-095b4e52959d"
 					variableid="f84a571a-ffd3-4f72-ae8a-422f4581e381"
 					variablename="Programm_2">
+					</var>
+					<var
+					dataname="Eric_log_Pfad_Datei"
+					datasourceid="44c43bf8-37da-485c-80b6-095b4e52959d"
+					variableid="6aed2fae-d972-4fe7-a612-1159f5170a8f"
+					variablename="Eric_log_Pfad_Datei">
 					</var>
 				</databinding>
 			</testmodule>
@@ -333,6 +398,35 @@
 			name="CloseAUT_Elster"
 			ref="57b4963d-6d50-4210-8279-deac29c25b43"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="6317d0a5-cf8d-4886-9413-8998ba5fd7f6"
+			name="Pruefung_XML_Datei_Tagesdatum_Tagesdatum2_UserCode"
+			ref="c3f55ce7-d3e3-4326-a2dd-f78c21b0a2f1"
+			type="Recording">
+				<description>
+					<![CDATA[UserCode Prüfung Tagesdatum oder Tagesdatum2 um Validierungsfehler bei Tageswechsel zu vermeiden]]>
+				</description>
+				<databinding>
+					<var
+					dataname="Tagesdatum_yyyyMMdd"
+					datasourceid="44c43bf8-37da-485c-80b6-095b4e52959d"
+					variableid="a192d239-6d3b-43f1-b7c3-e92fd2fcf34f"
+					variablename="Tagesdatum_yyyyMMdd">
+					</var>
+					<var
+					dataname="Tagesdatum2_yyyyMMdd"
+					datasourceid="44c43bf8-37da-485c-80b6-095b4e52959d"
+					variableid="e5cea8ea-08ca-46f6-a017-64adbd010d0b"
+					variablename="Tagesdatum2_yyyyMMdd">
+					</var>
+					<var
+					dataname="XML_Inhalt_aktuell"
+					datasourceid="44c43bf8-37da-485c-80b6-095b4e52959d"
+					variableid="251b8cb8-2fdf-4faa-a537-cee84bd607c2"
+					variablename="XML_Inhalt_aktuell">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="67b50221-0641-4bbc-ab9a-7b0a8dcbb130"
@@ -383,20 +477,6 @@
 					datasourceid="44c43bf8-37da-485c-80b6-095b4e52959d"
 					variableid="c3dfe56c-ced1-4e77-a8cd-dbb5b09ab687"
 					variablename="Programm_2">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="8e7792bd-2a11-4bde-b55c-49d973b38d51"
-			name="Pruefung_Eric_log_vorhanden"
-			ref="5dab5914-93bf-4bf7-a649-ea677c7d0cab"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Tagesdatum_yyyy_MM_dd"
-					datasourceid="44c43bf8-37da-485c-80b6-095b4e52959d"
-					variableid="79b95ccb-7bab-4784-804c-9ce3b0e1e526"
-					variablename="Tagesdatum_yyyy_MM_dd">
 					</var>
 				</databinding>
 			</testmodule>
@@ -637,6 +717,14 @@ delete from b_uvaz where firm_nr = '300' and uva_cd = 'D23';]]>
 						name="Elster_aufrufen_DSGVO_bestaetigen">
 						</testmodule>
 						<testmodule
+						id="035d1d8d-4cbb-47f9-8b93-c91b14358f04"
+						name="Tagesdatum_ermitteln_XML">
+						</testmodule>
+						<testmodule
+						id="3f3b8584-ac45-4930-a9f3-7560aeafa299"
+						name="Tagesdatum_ermitteln_eric">
+						</testmodule>
+						<testmodule
 						id="04e0dab2-3182-49c4-b91f-60a04bec5ce3"
 						name="Elster_XML_Ausgabe_starten_Meldung_RS_bestaetigen">
 						</testmodule>
@@ -675,11 +763,15 @@ delete from b_uvaz where firm_nr = '300' and uva_cd = 'D23';]]>
 							id="2bd37a68-92a9-4313-ac5b-4494d7e9f76c"
 							name="Sichern_XML_UVA_2023_01">
 							</testmodule>
-							<testmodule
-							id="035d1d8d-4cbb-47f9-8b93-c91b14358f04"
-							name="Tagesdatum_ermitteln_XML">
-							</testmodule>
 						</setup>
+						<testmodule
+						id="2240d10b-a42a-4bbd-a4a9-97a70c320387"
+						name="Tagesdatum2_ermitteln_XML">
+						</testmodule>
+						<testmodule
+						id="6317d0a5-cf8d-4886-9413-8998ba5fd7f6"
+						name="Pruefung_XML_Datei_Tagesdatum_Tagesdatum2_UserCode">
+						</testmodule>
 						<testmodule
 						id="bfa50d78-401f-47a8-8ea0-a8b85df34ccb"
 						name="Pruefung_Inhalt_XML_UVA_Datei">
@@ -711,14 +803,14 @@ delete from b_uvaz where firm_nr = '300' and uva_cd = 'D23';]]>
 							id="2c76a6ad-1522-4590-8ee4-393052dcf811"
 							name="Sichern_Eric_log_UVA">
 							</testmodule>
-							<testmodule
-							id="3f3b8584-ac45-4930-a9f3-7560aeafa299"
-							name="Tagesdatum_ermitteln_eric">
-							</testmodule>
 						</setup>
 						<testmodule
-						id="8e7792bd-2a11-4bde-b55c-49d973b38d51"
-						name="Pruefung_Eric_log_vorhanden">
+						id="0415ae66-14dd-4592-9f68-0d9ee61d4241"
+						name="Tagesdatum2_ermitteln_eric">
+						</testmodule>
+						<testmodule
+						id="0f00a03f-1af5-432a-91d9-8309d64da969"
+						name="Pruefung_Eric_log_Tagesdatum_Tagesdatum2_UserCode">
 						</testmodule>
 						<teardown
 						id="d817f077-11ed-4a74-88d6-0b4c4ee20905"

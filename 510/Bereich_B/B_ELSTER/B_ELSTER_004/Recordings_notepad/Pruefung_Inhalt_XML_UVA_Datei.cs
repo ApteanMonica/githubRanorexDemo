@@ -204,8 +204,8 @@ namespace B_ELSTER_004.Recordings_notepad
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$Tagesdatum_yyyyMMdd) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(4));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", Tagesdatum_yyyyMMdd, null, false);
+                //Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$Tagesdatum_yyyyMMdd) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(4));
+                //Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", Tagesdatum_yyyyMMdd, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
             try {

@@ -59,6 +59,35 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="08b2e453-cdeb-49b6-85e6-52d78b85b132"
+			name="Pruefung_Eric_log_Tagesdatum_Tagesdatum2_UserCode"
+			ref="b2103b43-f499-4cdf-8ea6-6a660fc75bdb"
+			type="Recording">
+				<description>
+					<![CDATA[UserCode Prüfung Tagesdatum oder Tagesdatum2 um Validierungsfehler bei Tageswechsel zu vermeiden]]>
+				</description>
+				<databinding>
+					<var
+					dataname="Tagesdatum_yyyy_MM_dd"
+					datasourceid="a6244d34-bfbe-4000-8725-e82149d81e78"
+					variableid="295793d9-1d05-47e2-adab-3fd78ff790ba"
+					variablename="Tagesdatum_yyyy_MM_dd">
+					</var>
+					<var
+					dataname="Tagesdatum2_yyyy_MM_dd"
+					datasourceid="a6244d34-bfbe-4000-8725-e82149d81e78"
+					variableid="aff4e259-c503-421d-957c-323a6dc929b3"
+					variablename="Tagesdatum2_yyyy_MM_dd">
+					</var>
+					<var
+					dataname="Eric_log_Inhalt_aktuell"
+					datasourceid="a6244d34-bfbe-4000-8725-e82149d81e78"
+					variableid="bd993be2-4f97-461b-aa79-bc13cdb66350"
+					variablename="Eric_log_Inhalt_aktuell">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="0b9e07dc-7483-4d53-86f9-061cd7faec04"
 			name="Formularzuordnungen_kopieren_D20_D22"
 			ref="f2d5160b-ed22-46cd-b648-bd3e3c956cc7"
@@ -422,20 +451,6 @@ delete from b_uvaz where firm_nr = '300' and uva_cd = 'D22';]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="69db4b5c-591a-4559-8627-a3a322c60c00"
-			name="Pruefung_Eric_log_vorhanden"
-			ref="6fc4afde-4737-4553-a04e-7014f4f67996"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Tagesdatum_yyyy_MM_dd"
-					datasourceid="a6244d34-bfbe-4000-8725-e82149d81e78"
-					variableid="a41ba43e-6c17-4325-bcc8-472b772ac821"
-					variablename="Tagesdatum_yyyy_MM_dd">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="6b3d8ef7-d71f-46da-a83e-e365c7c960be"
 			name="Sichern_Eric_log_JUVA_ausl_U_2022"
 			ref="87282468-c9b2-44f5-b758-0555799afe22"
@@ -619,6 +634,20 @@ delete from b_uvaz where firm_nr = '300' and uva_cd = 'D22';]]>
 			id="9bcc70b6-5002-473a-8448-0a1333a82814"
 			name="setup">
 			</setup>
+			<testmodule
+			id="9bf2451b-6029-45e3-9f65-b9b7bb66080a"
+			name="Tagesdatum2_ermitteln_eric"
+			ref="a9dddd2e-2ebe-4726-9bc7-822a867e2e1b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum2_yyyy_MM_dd"
+					datasourceid="a6244d34-bfbe-4000-8725-e82149d81e78"
+					variableid="54b30a73-6a73-4bd8-b3dc-4ccec3c7a978"
+					variablename="Tagesdatum2_yyyy_MM_dd">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="9e47231a-0131-40b6-9b94-8b03636ee91b"
 			name="teardown">
@@ -714,7 +743,15 @@ delete from b_uvaz where firm_nr = '300' and uva_cd = 'D22';]]>
 					value="">
 					</param>
 					<param
+					name="Tagesdatum2_yyyyMMdd"
+					value="">
+					</param>
+					<param
 					name="Tagesdatum_yyyy_MM_dd"
+					value="">
+					</param>
+					<param
+					name="Tagesdatum2_yyyy_MM_dd"
 					value="">
 					</param>
 					<param
@@ -970,6 +1007,35 @@ delete from b_uvaz where firm_nr = '300' and uva_cd = 'D22';]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="c0a95ea6-554e-43f7-8fc7-8dd17ee663c5"
+			name="Pruefung_Eric_log_Tagesdatum_Tagesdatum2_UserCode"
+			ref="b2103b43-f499-4cdf-8ea6-6a660fc75bdb"
+			type="Recording">
+				<description>
+					<![CDATA[UserCode Prüfung Tagesdatum oder Tagesdatum2 um Validierungsfehler bei Tageswechsel zu vermeiden]]>
+				</description>
+				<databinding>
+					<var
+					dataname="Tagesdatum_yyyy_MM_dd"
+					datasourceid="a6244d34-bfbe-4000-8725-e82149d81e78"
+					variableid="295793d9-1d05-47e2-adab-3fd78ff790ba"
+					variablename="Tagesdatum_yyyy_MM_dd">
+					</var>
+					<var
+					dataname="Tagesdatum2_yyyy_MM_dd"
+					datasourceid="a6244d34-bfbe-4000-8725-e82149d81e78"
+					variableid="aff4e259-c503-421d-957c-323a6dc929b3"
+					variablename="Tagesdatum2_yyyy_MM_dd">
+					</var>
+					<var
+					dataname="Eric_log_Inhalt_aktuell"
+					datasourceid="a6244d34-bfbe-4000-8725-e82149d81e78"
+					variableid="bd993be2-4f97-461b-aa79-bc13cdb66350"
+					variablename="Eric_log_Inhalt_aktuell">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="c2757ae2-ba93-4f1d-ae63-339c466ddbd0"
 			name="Pruefung_Inhalt_XML_JUVA_INLAND_Best_Art_1"
 			ref="b5916bd9-5a9f-43ea-a3f9-68e863496023"
@@ -1009,20 +1075,6 @@ delete from b_uvaz where firm_nr = '300' and uva_cd = 'D22';]]>
 					dataname="Tagesdatum_yyyy_MM_dd"
 					datasourceid="a6244d34-bfbe-4000-8725-e82149d81e78"
 					variableid="a5146f15-4197-43c4-8d85-142cd6a5fc6c"
-					variablename="Tagesdatum_yyyy_MM_dd">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="ce0e7199-2eb8-4af1-8ced-a9fc245acb36"
-			name="Pruefung_Eric_log_vorhanden"
-			ref="6fc4afde-4737-4553-a04e-7014f4f67996"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Tagesdatum_yyyy_MM_dd"
-					datasourceid="a6244d34-bfbe-4000-8725-e82149d81e78"
-					variableid="a41ba43e-6c17-4325-bcc8-472b772ac821"
 					variablename="Tagesdatum_yyyy_MM_dd">
 					</var>
 				</databinding>
@@ -1072,6 +1124,20 @@ delete from b_uvaz where firm_nr = '300' and uva_cd = 'D22';]]>
 					datasourceid="a6244d34-bfbe-4000-8725-e82149d81e78"
 					variableid="9e1c7cbd-18a0-4933-b99f-3a2b382880de"
 					variablename="XML_JUVA_VERSION_2022">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="dc11796a-c2ad-4007-b8c9-adee7b7289c7"
+			name="Tagesdatum2_ermitteln_eric"
+			ref="a9dddd2e-2ebe-4726-9bc7-822a867e2e1b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum2_yyyy_MM_dd"
+					datasourceid="a6244d34-bfbe-4000-8725-e82149d81e78"
+					variableid="54b30a73-6a73-4bd8-b3dc-4ccec3c7a978"
+					variablename="Tagesdatum2_yyyy_MM_dd">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1347,6 +1413,10 @@ delete from b_uvaz where firm_nr = '300' and uva_cd = 'D22';]]>
 						name="Elster_aufrufen_DSGVO_bestaetigen">
 						</testmodule>
 						<testmodule
+						id="cbe2c7de-583c-4586-b37a-be1d42e0db25"
+						name="Tagesdatum_ermitteln_eric">
+						</testmodule>
+						<testmodule
 						id="35971945-123b-44ad-8c69-aaa956d705ba"
 						name="Elster_XML_Ausgabe_starten_Meldung_RS_bestaetigen">
 						</testmodule>
@@ -1441,14 +1511,14 @@ delete from b_uvaz where firm_nr = '300' and uva_cd = 'D22';]]>
 							id="22e64362-9132-4703-a15e-a4570b0a6bcc"
 							name="Sichern_Eric_log_JUVA_2022">
 							</testmodule>
-							<testmodule
-							id="cbe2c7de-583c-4586-b37a-be1d42e0db25"
-							name="Tagesdatum_ermitteln_eric">
-							</testmodule>
 						</setup>
 						<testmodule
-						id="ce0e7199-2eb8-4af1-8ced-a9fc245acb36"
-						name="Pruefung_Eric_log_vorhanden">
+						id="dc11796a-c2ad-4007-b8c9-adee7b7289c7"
+						name="Tagesdatum2_ermitteln_eric">
+						</testmodule>
+						<testmodule
+						id="08b2e453-cdeb-49b6-85e6-52d78b85b132"
+						name="Pruefung_Eric_log_Tagesdatum_Tagesdatum2_UserCode">
 						</testmodule>
 						<teardown
 						id="83f551fd-e391-4599-8512-eee97a86899e"
@@ -1505,6 +1575,10 @@ delete from b_uvaz where firm_nr = '300' and uva_cd = 'D22';]]>
 						<testmodule
 						id="711ce596-0e22-4724-92db-cddd3eafdc10"
 						name="Elster_XML_Ausgabe_ausl_U_Meldung_RS_bestaetigen">
+						</testmodule>
+						<testmodule
+						id="f6cfbd93-637b-4a97-a42b-7ad6cebfe6b9"
+						name="Tagesdatum_ermitteln_eric">
 						</testmodule>
 						<testmodule
 						id="ac6dbc29-25f3-417d-808c-14799706e39b"
@@ -1601,14 +1675,14 @@ delete from b_uvaz where firm_nr = '300' and uva_cd = 'D22';]]>
 							id="6b3d8ef7-d71f-46da-a83e-e365c7c960be"
 							name="Sichern_Eric_log_JUVA_ausl_U_2022">
 							</testmodule>
-							<testmodule
-							id="f6cfbd93-637b-4a97-a42b-7ad6cebfe6b9"
-							name="Tagesdatum_ermitteln_eric">
-							</testmodule>
 						</setup>
 						<testmodule
-						id="69db4b5c-591a-4559-8627-a3a322c60c00"
-						name="Pruefung_Eric_log_vorhanden">
+						id="9bf2451b-6029-45e3-9f65-b9b7bb66080a"
+						name="Tagesdatum2_ermitteln_eric">
+						</testmodule>
+						<testmodule
+						id="c0a95ea6-554e-43f7-8fc7-8dd17ee663c5"
+						name="Pruefung_Eric_log_Tagesdatum_Tagesdatum2_UserCode">
 						</testmodule>
 						<teardown
 						id="fbbabe08-0407-4359-9f76-34575039d006"

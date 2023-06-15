@@ -41,6 +41,9 @@ namespace B_ELSTER_001.Recordings_notepad
         /// </summary>
         public Pruefung_Eric_log_Tagesdatum_Tagesdatum2_UserCode()
         {
+            Eric_log_Inhalt_aktuell = "";
+            Tagesdatum_yyyy_MM_dd = "";
+            Tagesdatum2_yyyy_MM_dd = "";
         }
 
         /// <summary>
@@ -52,6 +55,42 @@ namespace B_ELSTER_001.Recordings_notepad
         }
 
 #region Variables
+
+        string _Eric_log_Inhalt_aktuell;
+
+        /// <summary>
+        /// Gets or sets the value of variable Eric_log_Inhalt_aktuell.
+        /// </summary>
+        [TestVariable("651d1efe-962e-48ed-813e-04c2673b4e92")]
+        public string Eric_log_Inhalt_aktuell
+        {
+            get { return _Eric_log_Inhalt_aktuell; }
+            set { _Eric_log_Inhalt_aktuell = value; }
+        }
+
+        string _Tagesdatum_yyyy_MM_dd;
+
+        /// <summary>
+        /// Gets or sets the value of variable Tagesdatum_yyyy_MM_dd.
+        /// </summary>
+        [TestVariable("3f84e289-141c-470a-ae48-5729a66079a3")]
+        public string Tagesdatum_yyyy_MM_dd
+        {
+            get { return _Tagesdatum_yyyy_MM_dd; }
+            set { _Tagesdatum_yyyy_MM_dd = value; }
+        }
+
+        string _Tagesdatum2_yyyy_MM_dd;
+
+        /// <summary>
+        /// Gets or sets the value of variable Tagesdatum2_yyyy_MM_dd.
+        /// </summary>
+        [TestVariable("a4d5d87d-e549-4daf-8c06-27621c1fcbeb")]
+        public string Tagesdatum2_yyyy_MM_dd
+        {
+            get { return _Tagesdatum2_yyyy_MM_dd; }
+            set { _Tagesdatum2_yyyy_MM_dd = value; }
+        }
 
 #endregion
 
@@ -79,6 +118,8 @@ namespace B_ELSTER_001.Recordings_notepad
 
             Init();
 
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateContainsVar1Var2(Eric_log_Inhalt_aktuell, Tagesdatum_yyyy_MM_dd, Tagesdatum2_yyyy_MM_dd);
+            
         }
 
 #region Image Feature Data
