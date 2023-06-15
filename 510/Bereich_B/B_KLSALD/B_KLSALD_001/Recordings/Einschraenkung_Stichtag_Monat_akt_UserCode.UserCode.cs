@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_KLOPO_002.Recordings
+namespace B_KLSALD_001.Recordings
 {
-    public partial class Saldo_aktuell_einschraenken_User_Code
+    public partial class Einschraenkung_Stichtag_Monat_akt_UserCode
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -33,16 +33,5 @@ namespace B_KLOPO_002.Recordings
             // Your recording specific initialization code goes here.
         }
 
-        public void Validate_StichtagPerPeriode(RepoItemInfo textInfo)
-        {
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Monat_aktuell) on item 'textInfo'.", textInfo);
-            Validate.AttributeEqual(textInfo, "Text", Convert.ToInt32(Monat_aktuell).ToString ());
-        }
-
-        
-
-                       
-              
-                           	
     }
 }

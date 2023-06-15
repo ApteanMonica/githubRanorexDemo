@@ -79,6 +79,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\..\Testdaten\Allgemein\UserCode\aptean.cs">
+      <Link>aptean.cs</Link>
+      <id>d6ddccc7-4af5-42e4-8c84-266b2747d564</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>f758887f-8af9-4204-8ce4-fa13ebd22d83</id>
     </Compile>
@@ -115,17 +119,17 @@
       <id>1340861b-43aa-49fb-97b1-42206e1ed5de</id>
       <BoundTo>e0325c3b-7a99-4be5-946b-eb91c89c4640</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Jahr_Monat_aktuell_einlesen.cs">
-      <BoundTo>c9d22161-0346-4c89-97bd-ad91b439a068</BoundTo>
-      <DependentUpon>Jahr_Monat_aktuell_einlesen.rxrec</DependentUpon>
+    <Compile Include="Recordings\Einschraenkung_Stichtag_Monat_akt_UserCode.cs">
+      <BoundTo>a2265bad-e92c-484f-a08b-34f208531207</BoundTo>
+      <DependentUpon>Einschraenkung_Stichtag_Monat_akt_UserCode.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>0f14390a-be7c-432b-b996-8a2ed5044c1c</id>
+      <id>63681e71-fa91-4c36-9653-7c6bcae42134</id>
     </Compile>
-    <Compile Include="Recordings\Jahr_Monat_aktuell_einlesen.UserCode.cs">
-      <BoundTo>c9d22161-0346-4c89-97bd-ad91b439a068</BoundTo>
-      <DependentUpon>Jahr_Monat_aktuell_einlesen.rxrec</DependentUpon>
+    <Compile Include="Recordings\Einschraenkung_Stichtag_Monat_akt_UserCode.UserCode.cs">
+      <BoundTo>a2265bad-e92c-484f-a08b-34f208531207</BoundTo>
+      <DependentUpon>Einschraenkung_Stichtag_Monat_akt_UserCode.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>433ae37b-0025-4910-83e2-070235de0e31</id>
+      <id>6acb706c-0617-4078-a5e6-10f4e2256fcd</id>
     </Compile>
     <Compile Include="Recordings\Kunden_einschraenken_2030001_2030003.cs">
       <BoundTo>ddf12f4e-cb94-498d-9791-3dc4025ffaba</BoundTo>
@@ -174,18 +178,6 @@
       <UserCode>true</UserCode>
       <id>8e4514cd-ae13-4e2f-a970-1ca914a92c27</id>
       <BoundTo>fbed5d1f-32e6-4be9-b460-e14d335dd7ff</BoundTo>
-    </Compile>
-    <Compile Include="Recordings\Einschraenkung_Stichtag_Monat_aktuell.cs">
-      <BoundTo>a279f349-87fb-437c-823e-ddc5e57aa0bd</BoundTo>
-      <DependentUpon>Einschraenkung_Stichtag_Monat_aktuell.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>05051361-f5c3-4d7e-8b4e-acf9060eec00</id>
-    </Compile>
-    <Compile Include="Recordings\Einschraenkung_Stichtag_Monat_aktuell.UserCode.cs">
-      <BoundTo>a279f349-87fb-437c-823e-ddc5e57aa0bd</BoundTo>
-      <DependentUpon>Einschraenkung_Stichtag_Monat_aktuell.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>c9942059-9126-4a14-a69f-d7f702ddc516</id>
     </Compile>
     <Compile Include="Recordings\Tabelle_aufrufen_aktuell.cs">
       <BoundTo>8d832d47-0a55-4694-a441-43a1a775ae71</BoundTo>
@@ -321,10 +313,10 @@
       <id>e0325c3b-7a99-4be5-946b-eb91c89c4640</id>
       <recordtableid>d8600525-a31d-45bd-9b7f-fb47e572a9d6</recordtableid>
     </None>
-    <None Include="Recordings\Jahr_Monat_aktuell_einlesen.rxrec">
+    <None Include="Recordings\Einschraenkung_Stichtag_Monat_akt_UserCode.rxrec">
       <BoundTo>5379926f-310a-48e9-a572-77cd1244e42f</BoundTo>
-      <id>c9d22161-0346-4c89-97bd-ad91b439a068</id>
-      <recordtableid>33623c31-e929-408c-9cad-49d7dc7a3a5d</recordtableid>
+      <id>a2265bad-e92c-484f-a08b-34f208531207</id>
+      <recordtableid>38579cfe-4ab7-468a-a771-581156636365</recordtableid>
     </None>
     <None Include="Recordings\Kunden_einschraenken_2030001_2030003.rxrec">
       <BoundTo>5379926f-310a-48e9-a572-77cd1244e42f</BoundTo>
@@ -345,11 +337,6 @@
       <BoundTo>5379926f-310a-48e9-a572-77cd1244e42f</BoundTo>
       <id>fbed5d1f-32e6-4be9-b460-e14d335dd7ff</id>
       <recordtableid>9188b22f-89f8-43c9-a572-ca5759b1c7f9</recordtableid>
-    </None>
-    <None Include="Recordings\Einschraenkung_Stichtag_Monat_aktuell.rxrec">
-      <BoundTo>5379926f-310a-48e9-a572-77cd1244e42f</BoundTo>
-      <id>a279f349-87fb-437c-823e-ddc5e57aa0bd</id>
-      <recordtableid>62e12ae4-a2dc-4dcf-8971-ba6f62e40491</recordtableid>
     </None>
     <None Include="Recordings\Tabelle_aufrufen_aktuell.rxrec">
       <BoundTo>5379926f-310a-48e9-a572-77cd1244e42f</BoundTo>

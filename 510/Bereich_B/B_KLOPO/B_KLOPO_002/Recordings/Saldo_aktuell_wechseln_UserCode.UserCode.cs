@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_KLSALD_001.Recordings
+namespace B_KLOPO_002.Recordings
 {
-    public partial class Einschraenkung_Stichtag_Monat_aktuell
+    public partial class Saldo_aktuell_wechseln_UserCode
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

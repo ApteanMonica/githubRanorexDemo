@@ -76,16 +76,16 @@
 				</description>
 				<databinding>
 					<var
-					dataname="Eric_log_Datei"
-					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
-					variableid="0d221579-c082-4d89-989b-23b8e6ddeb6e"
-					variablename="Eric_log_Datei">
-					</var>
-					<var
 					dataname="Pfad"
 					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
 					variableid="dc5198a5-2637-4ffd-9746-c98ed2871568"
 					variablename="Pfad">
+					</var>
+					<var
+					dataname="Eric_log_Datei"
+					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
+					variableid="0d221579-c082-4d89-989b-23b8e6ddeb6e"
+					variablename="Eric_log_Datei">
 					</var>
 				</databinding>
 			</testmodule>
@@ -116,6 +116,15 @@
 					variablename="Eric_log_Inhalt_aktuell">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="2f962afc-c754-42a4-be74-44422e140945"
+			name="Pruefung_Eric_log_Tagesdatum_Tagesdatum2_UserCode"
+			ref="973495f4-dd14-40f4-a929-3594fd2d2183"
+			type="Recording">
+				<description>
+					<![CDATA[in Arbeit: UserCode Prüfung Eric log Tagesdatum oder Tagesdatum2 um Validierungsfehler wegen "Tagessprung" zu vermeiden]]>
+				</description>
 			</testmodule>
 			<teardown
 			id="303c70c5-1e71-4a8c-871c-4ab4ea285e94"
@@ -168,16 +177,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="XML_UVA_VERSION"
+					dataname="XML_UVA_2022_01_Teil_1"
 					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
-					variableid="21ce1c30-0644-4c92-ae51-6f2ac97b6b39"
-					variablename="XML_UVA_VERSION">
-					</var>
-					<var
-					dataname="XML_UVA_2022_01_Teil_3"
-					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
-					variableid="6746093b-13a2-406d-a6a8-d38db809c142"
-					variablename="XML_UVA_2022_01_Teil_3">
+					variableid="2f2a134f-14c6-4b06-89bf-648548361bc8"
+					variablename="XML_UVA_2022_01_Teil_1">
 					</var>
 					<var
 					dataname="XML_UVA_2022_01_Teil_2"
@@ -186,16 +189,16 @@
 					variablename="XML_UVA_2022_01_Teil_2">
 					</var>
 					<var
-					dataname="XML_UVA_2022_01_Teil_1"
+					dataname="XML_UVA_2022_01_Teil_3"
 					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
-					variableid="2f2a134f-14c6-4b06-89bf-648548361bc8"
-					variablename="XML_UVA_2022_01_Teil_1">
+					variableid="6746093b-13a2-406d-a6a8-d38db809c142"
+					variablename="XML_UVA_2022_01_Teil_3">
 					</var>
 					<var
-					dataname="XML_UVA_2022_01_Teil_4"
+					dataname="XML_UVA_VERSION"
 					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
-					variableid="90114462-fca7-4768-8b98-fa5f620138e5"
-					variablename="XML_UVA_2022_01_Teil_4">
+					variableid="21ce1c30-0644-4c92-ae51-6f2ac97b6b39"
+					variablename="XML_UVA_VERSION">
 					</var>
 					<var
 					dataname="Jahr"
@@ -204,16 +207,22 @@
 					variablename="Jahr">
 					</var>
 					<var
-					dataname="Tagesdatum_yyyyMMdd"
+					dataname="XML_UVA_2022_01_Teil_4"
 					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
-					variableid="66c941c1-72ea-44cf-a1c8-f70d6e0fbc6b"
-					variablename="Tagesdatum_yyyyMMdd">
+					variableid="90114462-fca7-4768-8b98-fa5f620138e5"
+					variablename="XML_UVA_2022_01_Teil_4">
 					</var>
 					<var
 					dataname="XML_UVA_2022_01_Teil_5"
 					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
 					variableid="980b0aea-93aa-4eec-a4e8-b280101c6671"
 					variablename="XML_UVA_2022_01_Teil_5">
+					</var>
+					<var
+					dataname="Tagesdatum_yyyyMMdd"
+					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
+					variableid="66c941c1-72ea-44cf-a1c8-f70d6e0fbc6b"
+					variablename="Tagesdatum_yyyyMMdd">
 					</var>
 				</databinding>
 				<missingdatabinding>
@@ -254,10 +263,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="XML_UVA_Datei"
+					dataname="Programm_2"
 					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
-					variableid="1a741dba-276e-4938-9809-f06a0de09f94"
-					variablename="XML_UVA_Datei">
+					variableid="48860565-24c0-46ec-96e2-444ebdc1f76a"
+					variablename="Programm_2">
 					</var>
 					<var
 					dataname="XML_UVA_Pfad_Datei"
@@ -266,10 +275,10 @@
 					variablename="XML_UVA_Pfad_Datei">
 					</var>
 					<var
-					dataname="Programm_2"
+					dataname="XML_UVA_Datei"
 					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
-					variableid="48860565-24c0-46ec-96e2-444ebdc1f76a"
-					variablename="Programm_2">
+					variableid="1a741dba-276e-4938-9809-f06a0de09f94"
+					variablename="XML_UVA_Datei">
 					</var>
 				</databinding>
 			</testmodule>
@@ -302,6 +311,15 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="8393b26b-501f-46b0-be38-73ad8be724c4"
+			name="Pruefung_XML_Datei_Tagesdatum_Tagesdatum2_UserCode"
+			ref="d3dc51e8-6ac6-4c0b-88cd-a96cfc1502dc"
+			type="Recording">
+				<description>
+					<![CDATA[in Arbeit: UserCode Prüfung Inhalt XML Tagesdatum oder Tagesdatum2 um Validierungsfehler wegen "Tagessprung" zu vermeiden]]>
+				</description>
+			</testmodule>
+			<testmodule
 			id="878d2a8a-e867-46a7-b656-8390d2c2f94e"
 			name="Close_notepad_XML"
 			ref="3bca96a0-36e4-44c9-840d-4e262a052381"
@@ -314,6 +332,20 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="96203411-ba7c-4489-9082-cf39107073ce"
+			name="Tagesdatum2_ermitteln_eric"
+			ref="c61390ad-f8a7-47ee-94b9-f974d6228969"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum2_yyyy_MM_dd"
+					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
+					variableid="5b410273-2296-4bd0-b2c9-477307966bda"
+					variablename="Tagesdatum2_yyyy_MM_dd">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="a666c02c-b049-40d9-b8d5-406ce41abff4"
 			name="Tagesdatum_ermitteln_eric"
 			ref="4b6cc238-73b7-4fb4-9ce4-91be03ded79b"
@@ -324,6 +356,20 @@
 					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
 					variableid="035c526a-29eb-4ba6-8870-8a0e1f77f754"
 					variablename="Tagesdatum_yyyy_MM_dd">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="b89e4083-a7e0-4805-947b-f358efaf789d"
+			name="Tagesdatum2_ermitteln_XML"
+			ref="a44878d3-8a19-449c-a262-42b6a8299086"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum2_yyyyMMdd"
+					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
+					variableid="50621413-a83c-4d81-9c3d-e5f157609556"
+					variablename="Tagesdatum2_yyyyMMdd">
 					</var>
 				</databinding>
 			</testmodule>
@@ -409,16 +455,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="XML_UVA_Datei"
-					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
-					variableid="ae32854a-3a4e-499e-b9ff-b8bf190a0d70"
-					variablename="XML_UVA_Datei">
-					</var>
-					<var
 					dataname="Pfad"
 					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
 					variableid="68368615-d0ad-4788-8ee4-189d2f1c0224"
 					variablename="Pfad">
+					</var>
+					<var
+					dataname="XML_UVA_Datei"
+					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
+					variableid="ae32854a-3a4e-499e-b9ff-b8bf190a0d70"
+					variablename="XML_UVA_Datei">
 					</var>
 				</databinding>
 			</testmodule>
@@ -439,16 +485,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Eric_log_Pfad_Datei"
-					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
-					variableid="c378edde-aaab-4eda-8b53-ac882470042e"
-					variablename="Eric_log_Pfad_Datei">
-					</var>
-					<var
 					dataname="Programm_2"
 					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
 					variableid="5c8ca338-f0be-4fe9-b784-e31a64d807b2"
 					variablename="Programm_2">
+					</var>
+					<var
+					dataname="Eric_log_Pfad_Datei"
+					datasourceid="f62ca0e1-b72a-4c34-a035-7ed5413b2823"
+					variableid="c378edde-aaab-4eda-8b53-ac882470042e"
+					variablename="Eric_log_Pfad_Datei">
 					</var>
 				</databinding>
 			</testmodule>
@@ -477,7 +523,15 @@
 					value="">
 					</param>
 					<param
+					name="Tagesdatum2_yyyyMMdd"
+					value="">
+					</param>
+					<param
 					name="Tagesdatum_yyyy_MM_dd"
+					value="">
+					</param>
+					<param
+					name="Tagesdatum2_yyyy_MM_dd"
 					value="">
 					</param>
 					<param
@@ -598,8 +652,16 @@
 						name="Elster_XML_Ausgabe_starten_Meldung_RS_bestaetigen">
 						</testmodule>
 						<testmodule
+						id="317fc10e-0224-40df-91f6-1063e7aede7f"
+						name="Tagesdatum_ermitteln_XML">
+						</testmodule>
+						<testmodule
 						id="8d95bf97-c0e1-4942-ada0-ebcf575b02b3"
 						name="Elster_Schnittstelle_pruefen">
+						</testmodule>
+						<testmodule
+						id="a666c02c-b049-40d9-b8d5-406ce41abff4"
+						name="Tagesdatum_ermitteln_eric">
 						</testmodule>
 						<testmodule
 						id="bc66aeeb-87cf-49bd-ab0a-e2475c988e4c"
@@ -632,14 +694,18 @@
 							id="2392d99d-d868-4e34-9d86-57f7eeb6d88f"
 							name="Sichern_XML_UVA_2022_01">
 							</testmodule>
-							<testmodule
-							id="317fc10e-0224-40df-91f6-1063e7aede7f"
-							name="Tagesdatum_ermitteln_XML">
-							</testmodule>
 						</setup>
 						<testmodule
 						id="5d956296-399c-4252-9fbb-0e87c35f51a9"
 						name="Pruefung_Inhalt_XML_UVA_Datei">
+						</testmodule>
+						<testmodule
+						id="b89e4083-a7e0-4805-947b-f358efaf789d"
+						name="Tagesdatum2_ermitteln_XML">
+						</testmodule>
+						<testmodule
+						id="8393b26b-501f-46b0-be38-73ad8be724c4"
+						name="Pruefung_XML_Datei_Tagesdatum_Tagesdatum2_UserCode">
 						</testmodule>
 						<teardown
 						id="5ff01c39-33ba-42cc-9d3a-8e82db739a8d"
@@ -668,14 +734,18 @@
 							id="2c2d0436-8d64-4c1e-9998-58f966cc7422"
 							name="Sichern_Eric_log_UVA">
 							</testmodule>
-							<testmodule
-							id="a666c02c-b049-40d9-b8d5-406ce41abff4"
-							name="Tagesdatum_ermitteln_eric">
-							</testmodule>
 						</setup>
 						<testmodule
 						id="6ae313c9-4e34-4222-8b9d-6364277d7059"
 						name="Pruefung_Eric_log_vorhanden">
+						</testmodule>
+						<testmodule
+						id="96203411-ba7c-4489-9082-cf39107073ce"
+						name="Tagesdatum2_ermitteln_eric">
+						</testmodule>
+						<testmodule
+						id="2f962afc-c754-42a4-be74-44422e140945"
+						name="Pruefung_Eric_log_Tagesdatum_Tagesdatum2_UserCode">
 						</testmodule>
 						<teardown
 						id="c582bfca-0e6c-4e99-b88f-b18b42975d85"

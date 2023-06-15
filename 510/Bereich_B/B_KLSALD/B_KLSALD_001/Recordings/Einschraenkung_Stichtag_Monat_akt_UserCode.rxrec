@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="62e12ae4-a2dc-4dcf-8971-ba6f62e40491"
+id="38579cfe-4ab7-468a-a771-581156636365"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,17 +19,17 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Einschraenkung_Stichtag_Monat_aktuell"
+	classname="Einschraenkung_Stichtag_Monat_akt_UserCode"
 	namespace="B_KLSALD_001.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="2ab83d41-140f-43ff-9465-eae6ed0c94d5"
-		name="Jahr_aktuell">
+		id="4c42402a-14ca-4f86-bbad-68ae0014a1f7"
+		name="Jahr_aktuell_yyyy">
 		</var>
 		<var
-		id="4599b2f4-d16b-4e2e-8b0c-97adf819c64b"
-		name="Monat_aktuell">
+		id="4e408e73-32e8-4cbe-bdb5-0d7a5dfe7ab2"
+		name="Monat_aktuell_M">
 		</var>
 	</variables>
 	<recorditems>
@@ -84,6 +84,64 @@ mode="Global">
 				True
 			</matchvalue>
 		</validationitem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="GetSystemDateTimeAsString"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Jahr_aktuell_yyyy">
+				</binding>
+			</bindings>
+			<arguments
+			id="8b2674df-ace5-42d6-8cfa-114753844863">
+				<argument
+				argname="expectedFormat"
+				id="f75b240f-3b2e-4964-9ffa-9ef9595c556f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						yyyy
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="GetSystemDateTimeAsString"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Monat_aktuell_M">
+				</binding>
+			</bindings>
+			<arguments
+			id="8b2674df-ace5-42d6-8cfa-114753844863">
+				<argument
+				argname="expectedFormat"
+				id="f75b240f-3b2e-4964-9ffa-9ef9595c556f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						M
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
@@ -107,65 +165,6 @@ mode="Global">
 			</matchname>
 			<matchvalue>
 				Saldenliste per Stichtag: Kunden
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="5cac9293-38dc-4b5d-88c8-10718992fa9d">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Jahr_aktuell">
-				</binding>
-			</bindings>
-			<info
-			id="dfd99630-7660-4416-b996-4262e3b99683"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmKLSL']/container[@controlname='ClientArea']/text[@controlname='dfKJahrbez']/text[@accessiblerole='Text']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourValue
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="False"
-		optional="False"
-		searchpropertyid="c0930980-4723-4fe6-90ee-c3ac8f2b1095">
-			<comment>
-				Feld einstellig, Varible 2stellig
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Monat_aktuell">
-				</binding>
-			</bindings>
-			<info
-			id="9a27cbed-b10f-4c86-8fe2-d41c67588c62"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmKLSL']/container[@controlname='ClientArea']/text[@controlname='dfMonat']/text[@accessiblerole='Text']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourValue
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -209,7 +208,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Einschraenkung_Stichtag_Monat_aktuell.UserCode.cs
+		Einschraenkung_Stichtag_Monat_akt_UserCode.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

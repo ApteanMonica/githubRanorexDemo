@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_KLSALD_001.Recordings
+namespace B_ELSTER_001.Recordings
 {
-    public partial class Jahr_Monat_aktuell_einlesen
+    public partial class Tagesdatum2_ermitteln_eric
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

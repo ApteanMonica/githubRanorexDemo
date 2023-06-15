@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="8b76499d-b2f5-4a69-b35a-9821d26aef21"
+id="ae55ecfe-a621-46c7-a2d3-30041985a582"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,17 +19,17 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Saldo_aktuell_einschraenken_User_Code"
+	classname="Saldo_aktuell_wechseln_UserCode"
 	namespace="B_KLOPO_002.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="3bd38f43-afcb-47fd-a943-4ef04ae9a924"
-		name="Jahr_aktuell">
+		id="99387dfd-a9b3-4080-8b8a-c6168584e272"
+		name="Jahr_aktuell_yyyy">
 		</var>
 		<var
-		id="0fb3ec14-ce1e-407e-992c-63312049a2d3"
-		name="Monat_aktuell">
+		id="066986e4-288d-424f-8c54-c6b2647478b1"
+		name="Monat_aktuell_M">
 		</var>
 	</variables>
 	<recorditems>
@@ -110,10 +110,10 @@ mode="Global">
 			</matchvalue>
 		</validationitem>
 		<userrecorditem
-		classname="SystemLibrary"
+		classname="Aptean"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="GetDateTimeAsString"
+		methodname="GetSystemDateTimeAsString"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
 		optional="False">
 			<comment>
@@ -121,14 +121,14 @@ mode="Global">
 			<bindings>
 				<binding
 				target="ReturnVariable"
-				variable="Jahr_aktuell">
+				variable="Jahr_aktuell_yyyy">
 				</binding>
 			</bindings>
 			<arguments
-			id="fa6411f8-5bb7-49f9-869c-aa641bc30d74">
+			id="124507f5-4a9f-4fa9-b8e9-73e72d9a29b0">
 				<argument
 				argname="expectedFormat"
-				id="df4cbada-e22e-4559-b7ce-aa8c51d89656">
+				id="050ae1a2-02a0-46d1-a8da-264d3532fc60">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -139,10 +139,10 @@ mode="Global">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="SystemLibrary"
+		classname="Aptean"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="GetDateTimeAsString"
+		methodname="GetSystemDateTimeAsString"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
 		optional="False">
 			<comment>
@@ -150,19 +150,19 @@ mode="Global">
 			<bindings>
 				<binding
 				target="ReturnVariable"
-				variable="Monat_aktuell">
+				variable="Monat_aktuell_M">
 				</binding>
 			</bindings>
 			<arguments
-			id="fa6411f8-5bb7-49f9-869c-aa641bc30d74">
+			id="124507f5-4a9f-4fa9-b8e9-73e72d9a29b0">
 				<argument
 				argname="expectedFormat"
-				id="df4cbada-e22e-4559-b7ce-aa8c51d89656">
+				id="050ae1a2-02a0-46d1-a8da-264d3532fc60">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						MM
+						M
 					</argvalue>
 				</argument>
 			</arguments>
@@ -177,7 +177,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Jahr_aktuell">
+				variable="Jahr_aktuell_yyyy">
 				</binding>
 			</bindings>
 			<info
@@ -198,7 +198,7 @@ mode="Global">
 		</validationitem>
 		<validationitem
 		action="AttributeEqual"
-		enabled="False"
+		enabled="True"
 		optional="False"
 		searchpropertyid="2f34f9be-0983-4cd3-976f-9ca1824c701d">
 			<comment>
@@ -206,7 +206,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Monat_aktuell">
+				variable="Monat_aktuell_M">
 				</binding>
 			</bindings>
 			<info
@@ -225,39 +225,6 @@ mode="Global">
 				True
 			</matchvalue>
 		</validationitem>
-		<userrecorditem
-		classname="Saldo_aktuell_einschraenken_User_Code"
-		enabled="True"
-		isexternaltestmethod="False"
-		methodname="Validate_StichtagPerPeriode"
-		namespace="B_KLOPO_002.Recordings"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="0a2b75e4-9bdf-481b-90f8-82fe86224a23">
-				<argument
-				argname="textInfo"
-				id="bd1ae17d-5a22-4735-b554-d88f4d1fc028">
-					<argvaluetype>
-						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-					<info
-					id="4ca19e5b-33cd-4de5-b6ef-aee0fd8c8c5b"
-					sourcename="ItemRecorderEditor">
-						<path>
-							/form[@controlname='frmKlOp']/container[@controlname='ClientArea']/text[@controlname='dfMonat']/text[@accessiblename='Stichtag per Jahr/Periode']
-						</path>
-						<robustPath>
-						</robustPath>
-					</info>
-				</argument>
-			</arguments>
-		</userrecorditem>
 	</recorditems>
 	<repository
 	id="04b88bf1-3ca6-4c69-a0a4-f9b682f6c2ec"
@@ -274,7 +241,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Saldo_aktuell_einschraenken_User_Code.UserCode.cs
+		Saldo_aktuell_umstellen_UserCode.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

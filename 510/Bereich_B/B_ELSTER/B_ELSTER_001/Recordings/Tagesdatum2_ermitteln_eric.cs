@@ -20,63 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_KLSALD_001.Recordings
+namespace B_ELSTER_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Jahr_Monat_aktuell_einlesen recording.
+    ///The Tagesdatum2_ermitteln_eric recording.
     /// </summary>
-    [TestModule("33623c31-e929-408c-9cad-49d7dc7a3a5d", ModuleType.Recording, 1)]
-    public partial class Jahr_Monat_aktuell_einlesen : ITestModule
+    [TestModule("c61390ad-f8a7-47ee-94b9-f974d6228969", ModuleType.Recording, 1)]
+    public partial class Tagesdatum2_ermitteln_eric : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_KLSALD_001.B_KLSALD_001Repository repository.
+        /// Holds an instance of the global::B_ELSTER_001.B_ELSTER_001Repository repository.
         /// </summary>
-        public static global::B_KLSALD_001.B_KLSALD_001Repository repo = global::B_KLSALD_001.B_KLSALD_001Repository.Instance;
+        public static global::B_ELSTER_001.B_ELSTER_001Repository repo = global::B_ELSTER_001.B_ELSTER_001Repository.Instance;
 
-        static Jahr_Monat_aktuell_einlesen instance = new Jahr_Monat_aktuell_einlesen();
+        static Tagesdatum2_ermitteln_eric instance = new Tagesdatum2_ermitteln_eric();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Jahr_Monat_aktuell_einlesen()
+        public Tagesdatum2_ermitteln_eric()
         {
-            Jahr_aktuell = "";
-            Monat_aktuell = "";
+            Tagesdatum2_yyyy_MM_dd = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Jahr_Monat_aktuell_einlesen Instance
+        public static Tagesdatum2_ermitteln_eric Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Jahr_aktuell;
+        string _Tagesdatum2_yyyy_MM_dd;
 
         /// <summary>
-        /// Gets or sets the value of variable Jahr_aktuell.
+        /// Gets or sets the value of variable Tagesdatum2_yyyy_MM_dd.
         /// </summary>
-        [TestVariable("cab7b16c-3d4f-4cc8-8fdd-4ab9793ee771")]
-        public string Jahr_aktuell
+        [TestVariable("5b410273-2296-4bd0-b2c9-477307966bda")]
+        public string Tagesdatum2_yyyy_MM_dd
         {
-            get { return _Jahr_aktuell; }
-            set { _Jahr_aktuell = value; }
-        }
-
-        string _Monat_aktuell;
-
-        /// <summary>
-        /// Gets or sets the value of variable Monat_aktuell.
-        /// </summary>
-        [TestVariable("b50ed0c8-9203-490d-9168-90900bc061de")]
-        public string Monat_aktuell
-        {
-            get { return _Monat_aktuell; }
-            set { _Monat_aktuell = value; }
+            get { return _Tagesdatum2_yyyy_MM_dd; }
+            set { _Tagesdatum2_yyyy_MM_dd = value; }
         }
 
 #endregion
@@ -105,9 +92,7 @@ namespace B_KLSALD_001.Recordings
 
             Init();
 
-            Jahr_aktuell = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("yyyy");
-            
-            Monat_aktuell = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("MM");
+            Tagesdatum2_yyyy_MM_dd = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("yyyy-MM-dd");
             
         }
 
