@@ -48,6 +48,81 @@ mode="Global">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
+		searchpropertyid="189031ce-7bce-4428-a76b-37443d841e92"
+		sx="1278"
+		sy="271"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="15da90d0-c396-4693-b9b7-ce80b3fc5670"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="1"
+				prefcap="button"
+				rect="1255,256,46,30"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Maximieren
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Drücken
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Maximiert das Fenster.
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Maximieren
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PushButton
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblFehlzeitergebnisse']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Maximieren']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="CenterLeft"
+		movetime="300ms"
+		optional="False"
 		searchpropertyid="3769f803-c8f0-4c58-86fd-09ef14351ddd"
 		sx="59"
 		sy="481"
@@ -115,7 +190,7 @@ mode="Global">
 		</mouseitem>
 		<validationitem
 		action="AttributeEqual"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="695d0e51-3c49-4b2e-a54b-67014e3cc544">
 			<comment>
@@ -210,7 +285,7 @@ mode="Global">
 				</binding>
 			</bindings>
 			<info
-			id="be10c740-4bbe-42e2-ba13-f89a6c5f7ec3"
+			id="f2c74c4f-f94d-4030-a11f-962b5ddce5b7"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -218,9 +293,9 @@ mode="Global">
 				enabled="True"
 				flavor="msaa"
 				hasfocus="False"
-				index="7"
+				index="3"
 				prefcap="cell"
-				rect="-31918,-31599,65,19"
+				rect="2007,491,65,19"
 				role="cell"
 				snapElem=""
 				valid="True"
@@ -233,7 +308,7 @@ mode="Global">
 					<attribute
 					name="selected"
 					type="System.Boolean">
-						True
+						False
 					</attribute>
 					<attribute
 					name="text"
@@ -248,7 +323,7 @@ mode="Global">
 					<attribute
 					name="accessiblename"
 					type="System.String">
-						colAnspra_cd Row 1
+						colAnspra_cd Row 2
 					</attribute>
 					<attribute
 					name="accessiblerole"
@@ -258,7 +333,7 @@ mode="Global">
 					<attribute
 					name="accessiblestate"
 					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Selected, Focusable, Selectable
+						Focusable, Selectable
 					</attribute>
 					<attribute
 					name="accessiblevalue"
@@ -267,7 +342,7 @@ mode="Global">
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='tblFehlzeitergebnisse']/container[@controlname='ClientArea']/container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='cSplitContainer2']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblH_ansp1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAnspra_cd Row 1']
+					/form[@controlname='tblFehlzeitergebnisse']/container[@controlname='ClientArea']/container[@controlname='tblH_ansp1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colAnspra_cd Row 2']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -293,7 +368,7 @@ mode="Global">
 				</binding>
 			</bindings>
 			<info
-			id="03ab8571-8498-425a-b8c2-bc27c0b80cde"
+			id="8de8f00e-bf83-406d-b0a5-d7551b74d662"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -301,9 +376,9 @@ mode="Global">
 				enabled="True"
 				flavor="msaa"
 				hasfocus="False"
-				index="11"
+				index="7"
 				prefcap="cell"
-				rect="-31618,-31599,76,19"
+				rect="2307,491,76,19"
 				role="cell"
 				snapElem=""
 				valid="True"
@@ -316,7 +391,7 @@ mode="Global">
 					<attribute
 					name="selected"
 					type="System.Boolean">
-						True
+						False
 					</attribute>
 					<attribute
 					name="text"
@@ -331,7 +406,7 @@ mode="Global">
 					<attribute
 					name="accessiblename"
 					type="System.String">
-						colMenge Row 1
+						colMenge Row 2
 					</attribute>
 					<attribute
 					name="accessiblerole"
@@ -341,7 +416,7 @@ mode="Global">
 					<attribute
 					name="accessiblestate"
 					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Selected, Focusable, Selectable
+						Focusable, Selectable
 					</attribute>
 					<attribute
 					name="accessiblevalue"
@@ -350,7 +425,7 @@ mode="Global">
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='tblFehlzeitergebnisse']/container[@controlname='ClientArea']/container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='cSplitContainer2']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblH_ansp1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colMenge Row 1']
+					/form[@controlname='tblFehlzeitergebnisse']/container[@controlname='ClientArea']/container[@controlname='tblH_ansp1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colMenge Row 2']
 				</path>
 				<robustPath>
 				</robustPath>
