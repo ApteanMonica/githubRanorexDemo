@@ -145,28 +145,19 @@ namespace B_EXOPV_001.Recordings_B_BUAB
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.CDCCTools_Einschraenkungen.Buchgdatum' at Center.", repo.TblB.CDCCTools_Einschraenkungen.BuchgdatumInfo, new RecordItemIndex(9));
-            repo.TblB.CDCCTools_Einschraenkungen.Buchgdatum.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.CDCCTools_Einschraenkungen.Benutzer' at Center.", repo.TblB.CDCCTools_Einschraenkungen.BenutzerInfo, new RecordItemIndex(9));
+            repo.TblB.CDCCTools_Einschraenkungen.Benutzer.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum' with focus on 'TblB.CDCCTools_Einschraenkungen.Buchgdatum'.", repo.TblB.CDCCTools_Einschraenkungen.BuchgdatumInfo, new RecordItemIndex(10));
-            repo.TblB.CDCCTools_Einschraenkungen.Buchgdatum.PressKeys(Tagesdatum);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'EXTERN' with focus on 'TblB.CDCCTools_Einschraenkungen.Benutzer'.", repo.TblB.CDCCTools_Einschraenkungen.BenutzerInfo, new RecordItemIndex(10));
+            repo.TblB.CDCCTools_Einschraenkungen.Benutzer.PressKeys("EXTERN");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.CDCCTools_Einschraenkungen.Benutzer' at Center.", repo.TblB.CDCCTools_Einschraenkungen.BenutzerInfo, new RecordItemIndex(12));
-            repo.TblB.CDCCTools_Einschraenkungen.Benutzer.Click();
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'EXTERN' with focus on 'TblB.CDCCTools_Einschraenkungen.Benutzer'.", repo.TblB.CDCCTools_Einschraenkungen.BenutzerInfo, new RecordItemIndex(13));
-            repo.TblB.CDCCTools_Einschraenkungen.Benutzer.PressKeys("EXTERN");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(14));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(12));
             repo.TblB.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblB.Buchungszeilen_Tabelle.Zeile1.Row1'", repo.TblB.Buchungszeilen_Tabelle.Zeile1.Row1Info, new ActionTimeout(120000), new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblB.Buchungszeilen_Tabelle.Zeile1.Row1'", repo.TblB.Buchungszeilen_Tabelle.Zeile1.Row1Info, new ActionTimeout(120000), new RecordItemIndex(13));
             repo.TblB.Buchungszeilen_Tabelle.Zeile1.Row1Info.WaitForExists(120000);
             
         }

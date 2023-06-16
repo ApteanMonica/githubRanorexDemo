@@ -36,7 +36,6 @@ namespace B_EXOPV_003
         B_EXOPV_003RepositoryFolders.DlgDruckerWechselnAppFolder _dlgdruckerwechseln;
         B_EXOPV_003RepositoryFolders.List1000AppFolder _list1000;
         B_EXOPV_003RepositoryFolders.TblBAppFolder _tblb;
-        B_EXOPV_003RepositoryFolders.Form100BuchungenAnzeigenKundeAppFolder _form100buchungenanzeigenkunde;
 
         /// <summary>
         /// Gets the singleton class instance representing the B_EXOPV_003Repository element repository.
@@ -62,7 +61,6 @@ namespace B_EXOPV_003
             _dlgdruckerwechseln = new B_EXOPV_003RepositoryFolders.DlgDruckerWechselnAppFolder(this);
             _list1000 = new B_EXOPV_003RepositoryFolders.List1000AppFolder(this);
             _tblb = new B_EXOPV_003RepositoryFolders.TblBAppFolder(this);
-            _form100buchungenanzeigenkunde = new B_EXOPV_003RepositoryFolders.Form100BuchungenAnzeigenKundeAppFolder(this);
         }
 
 #region Variables
@@ -208,15 +206,6 @@ namespace B_EXOPV_003
         public virtual B_EXOPV_003RepositoryFolders.TblBAppFolder TblB
         {
             get { return _tblb; }
-        }
-
-        /// <summary>
-        /// The Form100BuchungenAnzeigenKunde folder.
-        /// </summary>
-        [RepositoryFolder("1eaa2aa2-6b59-4211-9081-4cfa0149a138")]
-        public virtual B_EXOPV_003RepositoryFolders.Form100BuchungenAnzeigenKundeAppFolder Form100BuchungenAnzeigenKunde
-        {
-            get { return _form100buchungenanzeigenkunde; }
         }
     }
 
@@ -7202,46 +7191,6 @@ namespace B_EXOPV_003
                 get
                 {
                     return _colbruttorow2Info;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The Form100BuchungenAnzeigenKundeAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("1eaa2aa2-6b59-4211-9081-4cfa0149a138")]
-        public partial class Form100BuchungenAnzeigenKundeAppFolder : RepoGenBaseFolder
-        {
-
-            /// <summary>
-            /// Creates a new Form100BuchungenAnzeigenKunde  folder.
-            /// </summary>
-            public Form100BuchungenAnzeigenKundeAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Form100BuchungenAnzeigenKunde", "/form[@controlname='tblB']", parentFolder, 30000, null, true, "1eaa2aa2-6b59-4211-9081-4cfa0149a138", "")
-            {
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("1eaa2aa2-6b59-4211-9081-4cfa0149a138")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("1eaa2aa2-6b59-4211-9081-4cfa0149a138")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
                 }
             }
         }

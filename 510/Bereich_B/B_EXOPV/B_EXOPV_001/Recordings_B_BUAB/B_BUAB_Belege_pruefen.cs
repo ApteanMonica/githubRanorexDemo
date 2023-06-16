@@ -143,86 +143,80 @@ namespace B_EXOPV_001.Recordings_B_BUAB
             // Beleg_1_00001_nur_Zeile_1
             Report.Log(ReportLevel.Info, "Section", "Beleg_1_00001_nur_Zeile_1", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'TblB.Buchungszeilen_Tabelle.Zeile1.ColDtAendgRow1'.", repo.TblB.Buchungszeilen_Tabelle.Zeile1.ColDtAendgRow1Info, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.TblB.Buchungszeilen_Tabelle.Zeile1.ColDtAendgRow1Info, "Text", Tagesdatum);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg1) on item 'TblB.Buchungszeilen_Tabelle.Zeile1.ColBelegnrRow1'.", repo.TblB.Buchungszeilen_Tabelle.Zeile1.ColBelegnrRow1Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg1) on item 'TblB.Buchungszeilen_Tabelle.Zeile1.ColBelegnrRow1'.", repo.TblB.Buchungszeilen_Tabelle.Zeile1.ColBelegnrRow1Info, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile1.ColBelegnrRow1Info, "Text", Beleg1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.000,00') on item 'TblB.Buchungszeilen_Tabelle.Zeile1.ColBetragRow1'.", repo.TblB.Buchungszeilen_Tabelle.Zeile1.ColBetragRow1Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.000,00') on item 'TblB.Buchungszeilen_Tabelle.Zeile1.ColBetragRow1'.", repo.TblB.Buchungszeilen_Tabelle.Zeile1.ColBetragRow1Info, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile1.ColBetragRow1Info, "Text", "1.000,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'TblB.Buchungszeilen_Tabelle.Zeile1.ColCd1Row1'.", repo.TblB.Buchungszeilen_Tabelle.Zeile1.ColCd1Row1Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'TblB.Buchungszeilen_Tabelle.Zeile1.ColCd1Row1'.", repo.TblB.Buchungszeilen_Tabelle.Zeile1.ColCd1Row1Info, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile1.ColCd1Row1Info, "Text", "20");
             
             // Beleg_2_1900004_nur_Zeile_3
-            Report.Log(ReportLevel.Info, "Section", "Beleg_2_1900004_nur_Zeile_3", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Section", "Beleg_2_1900004_nur_Zeile_3", new RecordItemIndex(4));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg2) on item 'TblB.Buchungszeilen_Tabelle.Zeile3.ColBelegnrRow3'.", repo.TblB.Buchungszeilen_Tabelle.Zeile3.ColBelegnrRow3Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg2) on item 'TblB.Buchungszeilen_Tabelle.Zeile3.ColBelegnrRow3'.", repo.TblB.Buchungszeilen_Tabelle.Zeile3.ColBelegnrRow3Info, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile3.ColBelegnrRow3Info, "Text", Beleg2);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.000,00') on item 'TblB.Buchungszeilen_Tabelle.Zeile3.ColBetragRow3'.", repo.TblB.Buchungszeilen_Tabelle.Zeile3.ColBetragRow3Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.000,00') on item 'TblB.Buchungszeilen_Tabelle.Zeile3.ColBetragRow3'.", repo.TblB.Buchungszeilen_Tabelle.Zeile3.ColBetragRow3Info, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile3.ColBetragRow3Info, "Text", "1.000,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='40 +') on item 'TblB.Buchungszeilen_Tabelle.Zeile3.ColCd1Row3'.", repo.TblB.Buchungszeilen_Tabelle.Zeile3.ColCd1Row3Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='40 +') on item 'TblB.Buchungszeilen_Tabelle.Zeile3.ColCd1Row3'.", repo.TblB.Buchungszeilen_Tabelle.Zeile3.ColCd1Row3Info, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile3.ColCd1Row3Info, "Text", "40 +");
             
             // Beleg_3_1900005_Zeile_6_7_8 (korr. SH-Differenz)
-            Report.Log(ReportLevel.Info, "Section", "Beleg_3_1900005_Zeile_6_7_8 (korr. SH-Differenz)", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Section", "Beleg_3_1900005_Zeile_6_7_8 (korr. SH-Differenz)", new RecordItemIndex(8));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg3) on item 'TblB.Buchungszeilen_Tabelle.Zeile6.ColBelegnrRow6'.", repo.TblB.Buchungszeilen_Tabelle.Zeile6.ColBelegnrRow6Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg3) on item 'TblB.Buchungszeilen_Tabelle.Zeile6.ColBelegnrRow6'.", repo.TblB.Buchungszeilen_Tabelle.Zeile6.ColBelegnrRow6Info, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile6.ColBelegnrRow6Info, "Text", Beleg3);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.000,00') on item 'TblB.Buchungszeilen_Tabelle.Zeile6.ColBetragRow6'.", repo.TblB.Buchungszeilen_Tabelle.Zeile6.ColBetragRow6Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.000,00') on item 'TblB.Buchungszeilen_Tabelle.Zeile6.ColBetragRow6'.", repo.TblB.Buchungszeilen_Tabelle.Zeile6.ColBetragRow6Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile6.ColBetragRow6Info, "Text", "1.000,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='80 +') on item 'TblB.Buchungszeilen_Tabelle.Zeile6.ColCd1Row6'.", repo.TblB.Buchungszeilen_Tabelle.Zeile6.ColCd1Row6Info, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='80 +') on item 'TblB.Buchungszeilen_Tabelle.Zeile6.ColCd1Row6'.", repo.TblB.Buchungszeilen_Tabelle.Zeile6.ColCd1Row6Info, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile6.ColCd1Row6Info, "Text", "80 +");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg3) on item 'TblB.Buchungszeilen_Tabelle.Zeile7.ColBelegnrRow7'.", repo.TblB.Buchungszeilen_Tabelle.Zeile7.ColBelegnrRow7Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg3) on item 'TblB.Buchungszeilen_Tabelle.Zeile7.ColBelegnrRow7'.", repo.TblB.Buchungszeilen_Tabelle.Zeile7.ColBelegnrRow7Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile7.ColBelegnrRow7Info, "Text", Beleg3);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='816,66') on item 'TblB.Buchungszeilen_Tabelle.Zeile7.ColBetragRow7'.", repo.TblB.Buchungszeilen_Tabelle.Zeile7.ColBetragRow7Info, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='816,66') on item 'TblB.Buchungszeilen_Tabelle.Zeile7.ColBetragRow7'.", repo.TblB.Buchungszeilen_Tabelle.Zeile7.ColBetragRow7Info, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile7.ColBetragRow7Info, "Text", "816,66");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='163,34') on item 'TblB.Buchungszeilen_Tabelle.Zeile7.ColUstbetragRow7'.", repo.TblB.Buchungszeilen_Tabelle.Zeile7.ColUstbetragRow7Info, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='163,34') on item 'TblB.Buchungszeilen_Tabelle.Zeile7.ColUstbetragRow7'.", repo.TblB.Buchungszeilen_Tabelle.Zeile7.ColUstbetragRow7Info, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile7.ColUstbetragRow7Info, "Text", "163,34");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='80') on item 'TblB.Buchungszeilen_Tabelle.Zeile7.ColCd1Row7'.", repo.TblB.Buchungszeilen_Tabelle.Zeile7.ColCd1Row7Info, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='80') on item 'TblB.Buchungszeilen_Tabelle.Zeile7.ColCd1Row7'.", repo.TblB.Buchungszeilen_Tabelle.Zeile7.ColCd1Row7Info, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile7.ColCd1Row7Info, "Text", "80");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2019-12') on item 'TblB.Buchungszeilen_Tabelle.Zeile7.ColUvaRow7'.", repo.TblB.Buchungszeilen_Tabelle.Zeile7.ColUvaRow7Info, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2019-12') on item 'TblB.Buchungszeilen_Tabelle.Zeile7.ColUvaRow7'.", repo.TblB.Buchungszeilen_Tabelle.Zeile7.ColUvaRow7Info, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile7.ColUvaRow7Info, "Text", "2019-12");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg3) on item 'TblB.Buchungszeilen_Tabelle.Zeile8.ColBelegnrRow8'.", repo.TblB.Buchungszeilen_Tabelle.Zeile8.ColBelegnrRow8Info, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg3) on item 'TblB.Buchungszeilen_Tabelle.Zeile8.ColBelegnrRow8'.", repo.TblB.Buchungszeilen_Tabelle.Zeile8.ColBelegnrRow8Info, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile8.ColBelegnrRow8Info, "Text", Beleg3);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='16,67') on item 'TblB.Buchungszeilen_Tabelle.Zeile8.ColBetragRow8'.", repo.TblB.Buchungszeilen_Tabelle.Zeile8.ColBetragRow8Info, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='16,67') on item 'TblB.Buchungszeilen_Tabelle.Zeile8.ColBetragRow8'.", repo.TblB.Buchungszeilen_Tabelle.Zeile8.ColBetragRow8Info, new RecordItemIndex(18));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile8.ColBetragRow8Info, "Text", "16,67");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3,33') on item 'TblB.Buchungszeilen_Tabelle.Zeile8.ColUstbetragRow8'.", repo.TblB.Buchungszeilen_Tabelle.Zeile8.ColUstbetragRow8Info, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3,33') on item 'TblB.Buchungszeilen_Tabelle.Zeile8.ColUstbetragRow8'.", repo.TblB.Buchungszeilen_Tabelle.Zeile8.ColUstbetragRow8Info, new RecordItemIndex(19));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile8.ColUstbetragRow8Info, "Text", "3,33");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='80') on item 'TblB.Buchungszeilen_Tabelle.Zeile8.ColCd1Row8'.", repo.TblB.Buchungszeilen_Tabelle.Zeile8.ColCd1Row8Info, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='80') on item 'TblB.Buchungszeilen_Tabelle.Zeile8.ColCd1Row8'.", repo.TblB.Buchungszeilen_Tabelle.Zeile8.ColCd1Row8Info, new RecordItemIndex(20));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile8.ColCd1Row8Info, "Text", "80");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2019-12') on item 'TblB.Buchungszeilen_Tabelle.Zeile8.ColUvaRow8'.", repo.TblB.Buchungszeilen_Tabelle.Zeile8.ColUvaRow8Info, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2019-12') on item 'TblB.Buchungszeilen_Tabelle.Zeile8.ColUvaRow8'.", repo.TblB.Buchungszeilen_Tabelle.Zeile8.ColUvaRow8Info, new RecordItemIndex(21));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile8.ColUvaRow8Info, "Text", "2019-12");
             
             // Beleg_4_1900006_nur_Zeile_9
-            Report.Log(ReportLevel.Info, "Section", "Beleg_4_1900006_nur_Zeile_9", new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Section", "Beleg_4_1900006_nur_Zeile_9", new RecordItemIndex(22));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg4) on item 'TblB.Buchungszeilen_Tabelle.Zeile9.ColBelegnrRow9'.", repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColBelegnrRow9Info, new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg4) on item 'TblB.Buchungszeilen_Tabelle.Zeile9.ColBelegnrRow9'.", repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColBelegnrRow9Info, new RecordItemIndex(23));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColBelegnrRow9Info, "Text", Beleg4);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.000,00') on item 'TblB.Buchungszeilen_Tabelle.Zeile9.ColBetragRow9'.", repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColBetragRow9Info, new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.000,00') on item 'TblB.Buchungszeilen_Tabelle.Zeile9.ColBetragRow9'.", repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColBetragRow9Info, new RecordItemIndex(24));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColBetragRow9Info, "Text", "1.000,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='50 +') on item 'TblB.Buchungszeilen_Tabelle.Zeile9.ColCd1Row9'.", repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColCd1Row9Info, new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='50 +') on item 'TblB.Buchungszeilen_Tabelle.Zeile9.ColCd1Row9'.", repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColCd1Row9Info, new RecordItemIndex(25));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColCd1Row9Info, "Text", "50 +");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'TblB.Buchungszeilen_Tabelle.Zeile9.ColDtAendgRow9'.", repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColDtAendgRow9Info, new RecordItemIndex(27));
-            Validate.AttributeContains(repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColDtAendgRow9Info, "Text", Tagesdatum);
             
         }
 

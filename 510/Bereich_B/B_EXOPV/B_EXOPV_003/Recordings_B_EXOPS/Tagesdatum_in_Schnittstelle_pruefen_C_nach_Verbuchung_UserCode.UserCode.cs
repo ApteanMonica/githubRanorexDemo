@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_EXOPV_003.Recordings_B_EXOPS
 {
-    public partial class Belege_in_Schnittstelle_pruefen_B_nach_UEberleitung_v_fibu
+    public partial class Tagesdatum_in_Schnittstelle_pruefen_C_nach_Verbuchung_UserCode
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
