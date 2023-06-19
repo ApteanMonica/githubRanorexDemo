@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_EXOPV_003.Recordings_B_EXOPS
+namespace B_ELSTER_002_ZM.recordings_notepad
 {
-    public partial class Belege_in_Schnittstelle_pruefen_B_nach_UEberleitung_v_fibu
+    public partial class Pruefung_XML_Datei_Tagesdatum_Tagesdatum2_UserCode
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

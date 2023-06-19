@@ -43,7 +43,6 @@ namespace B_EXOPV_003.Recordings_B_EXOPS
         {
             Beleg1 = "R20/0009";
             Beleg2 = "R20/0010";
-            Tagesdatum = "";
             Text_Beleg1 = "B_EXOPV_003_R20/0009";
             Text_Beleg2 = "B_EXOPV_003_R20/0010";
         }
@@ -57,18 +56,6 @@ namespace B_EXOPV_003.Recordings_B_EXOPS
         }
 
 #region Variables
-
-        string _Tagesdatum;
-
-        /// <summary>
-        /// Gets or sets the value of variable Tagesdatum.
-        /// </summary>
-        [TestVariable("eb561cf2-5e89-4aa2-84b7-372c20b12485")]
-        public string Tagesdatum
-        {
-            get { return _Tagesdatum; }
-            set { _Tagesdatum = value; }
-        }
 
         string _Text_Beleg1;
 
@@ -164,140 +151,95 @@ namespace B_EXOPV_003.Recordings_B_EXOPS
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Text_Beleg1) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_1.ColExopText1Row1'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_1.ColExopText1Row1Info, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_1.ColExopText1Row1Info, "Text", Text_Beleg1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'03.02.2020') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_1.ColExopDtherkunftRow1'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_1.ColExopDtherkunftRow1Info, new RecordItemIndex(8));
-            Validate.AttributeContains(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_1.ColExopDtherkunftRow1Info, "Text", "03.02.2020");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'03.02.2020') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_1.ColExopDtanlagRow1'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_1.ColExopDtanlagRow1Info, new RecordItemIndex(9));
-            Validate.AttributeContains(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_1.ColExopDtanlagRow1Info, "Text", "03.02.2020");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_1.ColExopDtaendgRow1'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_1.ColExopDtaendgRow1Info, new RecordItemIndex(10));
-            Validate.AttributeContains(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_1.ColExopDtaendgRow1Info, "Text", Tagesdatum);
-            
             // Zeile_2 Beleg 2a (bereits verbucht, bleibt nach Überleitung mit v_fibu unverändert)
-            Report.Log(ReportLevel.Info, "Section", "Zeile_2 Beleg 2a (bereits verbucht, bleibt nach Überleitung mit v_fibu unverändert)", new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Section", "Zeile_2 Beleg 2a (bereits verbucht, bleibt nach Überleitung mit v_fibu unverändert)", new RecordItemIndex(8));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopStatusRow2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopStatusRow2Info, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopStatusRow2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopStatusRow2Info, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopStatusRow2Info, "Text", "V");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='17') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopKeybelRow2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopKeybelRow2Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='17') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopKeybelRow2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopKeybelRow2Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopKeybelRow2Info, "Text", "17");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='66') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColBusaKeybelRow2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColBusaKeybelRow2Info, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='66') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColBusaKeybelRow2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColBusaKeybelRow2Info, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColBusaKeybelRow2Info, "Text", "66");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg2) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopBelegnrRow2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopBelegnrRow2Info, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg2) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopBelegnrRow2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopBelegnrRow2Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopBelegnrRow2Info, "Text", Beleg2);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.200,00') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopBetragRow2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopBetragRow2Info, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.200,00') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopBetragRow2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopBetragRow2Info, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopBetragRow2Info, "Text", "1.200,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='RS\\2-Verkauf') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopHerkunftRow2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopHerkunftRow2Info, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='RS\\2-Verkauf') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopHerkunftRow2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopHerkunftRow2Info, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopHerkunftRow2Info, "Text", "RS\\2-Verkauf");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Text_Beleg2) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopText1Row2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopText1Row2Info, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Text_Beleg2) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopText1Row2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopText1Row2Info, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopText1Row2Info, "Text", Text_Beleg2);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'03.02.2020') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopDtherkunftRow2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopDtherkunftRow2Info, new RecordItemIndex(19));
-            Validate.AttributeContains(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopDtherkunftRow2Info, "Text", "03.02.2020");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'03.02.2020') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopDtanlagRow2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopDtanlagRow2Info, new RecordItemIndex(20));
-            Validate.AttributeContains(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopDtanlagRow2Info, "Text", "03.02.2020");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'03.02.2020') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopDtaendgRow2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopDtaendgRow2Info, new RecordItemIndex(21));
-            Validate.AttributeContains(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_2.ColExopDtaendgRow2Info, "Text", "03.02.2020");
-            
             // Zeile_3 Beleg 1b, neuer Korrekturbeleg aus Fibu-Überleitung
-            Report.Log(ReportLevel.Info, "Section", "Zeile_3 Beleg 1b, neuer Korrekturbeleg aus Fibu-Überleitung", new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Section", "Zeile_3 Beleg 1b, neuer Korrekturbeleg aus Fibu-Überleitung", new RecordItemIndex(16));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopStatusRow3'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopStatusRow3Info, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopStatusRow3'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopStatusRow3Info, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopStatusRow3Info, "Text", "V");
             
             // keybel darf nicht leer sein
-            Report.Log(ReportLevel.Info, "Validation", "keybel darf nicht leer sein\r\nValidating AttributeNotEqual (Text!='') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColBusaKeybelRow3'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColBusaKeybelRow3Info, new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Validation", "keybel darf nicht leer sein\r\nValidating AttributeNotEqual (Text!='') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColBusaKeybelRow3'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColBusaKeybelRow3Info, new RecordItemIndex(18));
             Validate.AttributeNotEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColBusaKeybelRow3Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg1) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopBelegnrRow3'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopBelegnrRow3Info, new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg1) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopBelegnrRow3'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopBelegnrRow3Info, new RecordItemIndex(19));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopBelegnrRow3Info, "Text", Beleg1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.400,00') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopBetragRow3'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopBetragRow3Info, new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.400,00') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopBetragRow3'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopBetragRow3Info, new RecordItemIndex(20));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopBetragRow3Info, "Text", "2.400,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='RS\\2-Verkauf') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopHerkunftRow3'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopHerkunftRow3Info, new RecordItemIndex(27));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='RS\\2-Verkauf') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopHerkunftRow3'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopHerkunftRow3Info, new RecordItemIndex(21));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopHerkunftRow3Info, "Text", "RS\\2-Verkauf");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopText1Row3'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopText1Row3Info, new RecordItemIndex(28));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopText1Row3'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopText1Row3Info, new RecordItemIndex(22));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopText1Row3Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopDtherkunftRow3'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopDtherkunftRow3Info, new RecordItemIndex(29));
-            Validate.AttributeContains(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopDtherkunftRow3Info, "Text", Tagesdatum);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopDtanlagRow3'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopDtanlagRow3Info, new RecordItemIndex(30));
-            Validate.AttributeContains(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopDtanlagRow3Info, "Text", Tagesdatum);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopDtaendgRow3'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopDtaendgRow3Info, new RecordItemIndex(31));
-            Validate.AttributeContains(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_3.ColExopDtaendgRow3Info, "Text", Tagesdatum);
-            
             // Zeile_4 Beleg 2c Stornobeleg mit Negativbetrag durch Überleitung Korrekturbeleg mit v_fibu bei bereits verbuchtem Beleg
-            Report.Log(ReportLevel.Info, "Section", "Zeile_4 Beleg 2c Stornobeleg mit Negativbetrag durch Überleitung Korrekturbeleg mit v_fibu bei bereits verbuchtem Beleg", new RecordItemIndex(32));
+            Report.Log(ReportLevel.Info, "Section", "Zeile_4 Beleg 2c Stornobeleg mit Negativbetrag durch Überleitung Korrekturbeleg mit v_fibu bei bereits verbuchtem Beleg", new RecordItemIndex(23));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopStatusRow4'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopStatusRow4Info, new RecordItemIndex(33));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopStatusRow4'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopStatusRow4Info, new RecordItemIndex(24));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopStatusRow4Info, "Text", "V");
             
             // keybel darf nicht leer sein
-            Report.Log(ReportLevel.Info, "Validation", "keybel darf nicht leer sein\r\nValidating AttributeNotEqual (Text!='') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColBusaKeybelRow4'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColBusaKeybelRow4Info, new RecordItemIndex(34));
+            Report.Log(ReportLevel.Info, "Validation", "keybel darf nicht leer sein\r\nValidating AttributeNotEqual (Text!='') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColBusaKeybelRow4'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColBusaKeybelRow4Info, new RecordItemIndex(25));
             Validate.AttributeNotEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColBusaKeybelRow4Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg2) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopBelegnrRow4'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopBelegnrRow4Info, new RecordItemIndex(35));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg2) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopBelegnrRow4'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopBelegnrRow4Info, new RecordItemIndex(26));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopBelegnrRow4Info, "Text", Beleg2);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-1.200,00') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopBetragRow4'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopBetragRow4Info, new RecordItemIndex(36));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-1.200,00') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopBetragRow4'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopBetragRow4Info, new RecordItemIndex(27));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopBetragRow4Info, "Text", "-1.200,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='RS\\2-Verkauf') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopHerkunftRow4'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopHerkunftRow4Info, new RecordItemIndex(37));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='RS\\2-Verkauf') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopHerkunftRow4'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopHerkunftRow4Info, new RecordItemIndex(28));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopHerkunftRow4Info, "Text", "RS\\2-Verkauf");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Text_Beleg2) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopText1Row4'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopText1Row4Info, new RecordItemIndex(38));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Text_Beleg2) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopText1Row4'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopText1Row4Info, new RecordItemIndex(29));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopText1Row4Info, "Text", Text_Beleg2);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopDtherkunftRow4'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopDtherkunftRow4Info, new RecordItemIndex(39));
-            Validate.AttributeContains(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopDtherkunftRow4Info, "Text", Tagesdatum);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopDtanlagRow4'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopDtanlagRow4Info, new RecordItemIndex(40));
-            Validate.AttributeContains(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopDtanlagRow4Info, "Text", Tagesdatum);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopDtaendgRow4'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopDtaendgRow4Info, new RecordItemIndex(41));
-            Validate.AttributeContains(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_4.ColExopDtaendgRow4Info, "Text", Tagesdatum);
-            
             // Zeile_5
-            Report.Log(ReportLevel.Info, "Section", "Zeile_5", new RecordItemIndex(42));
+            Report.Log(ReportLevel.Info, "Section", "Zeile_5", new RecordItemIndex(30));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopStatusRow5'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopStatusRow5Info, new RecordItemIndex(43));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopStatusRow5'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopStatusRow5Info, new RecordItemIndex(31));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopStatusRow5Info, "Text", "V");
             
             // keybel darf nicht leer sein
-            Report.Log(ReportLevel.Info, "Validation", "keybel darf nicht leer sein\r\nValidating AttributeNotEqual (Text!='') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColBusaKeybelRow5'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColBusaKeybelRow5Info, new RecordItemIndex(44));
+            Report.Log(ReportLevel.Info, "Validation", "keybel darf nicht leer sein\r\nValidating AttributeNotEqual (Text!='') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColBusaKeybelRow5'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColBusaKeybelRow5Info, new RecordItemIndex(32));
             Validate.AttributeNotEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColBusaKeybelRow5Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg2) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopBelegnrRow5'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopBelegnrRow5Info, new RecordItemIndex(45));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg2) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopBelegnrRow5'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopBelegnrRow5Info, new RecordItemIndex(33));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopBelegnrRow5Info, "Text", Beleg2);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3.600,00') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopBetragRow5'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopBetragRow5Info, new RecordItemIndex(46));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3.600,00') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopBetragRow5'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopBetragRow5Info, new RecordItemIndex(34));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopBetragRow5Info, "Text", "3.600,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='RS\\2-Verkauf') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopHerkunftRow5'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopHerkunftRow5Info, new RecordItemIndex(47));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='RS\\2-Verkauf') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopHerkunftRow5'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopHerkunftRow5Info, new RecordItemIndex(35));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopHerkunftRow5Info, "Text", "RS\\2-Verkauf");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopText1Row5'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopText1Row5Info, new RecordItemIndex(48));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopText1Row5'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopText1Row5Info, new RecordItemIndex(36));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopText1Row5Info, "Text", "");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopDtherkunftRow5'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopDtherkunftRow5Info, new RecordItemIndex(49));
-            Validate.AttributeContains(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopDtherkunftRow5Info, "Text", Tagesdatum);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopDtanlagRow5'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopDtanlagRow5Info, new RecordItemIndex(50));
-            Validate.AttributeContains(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopDtanlagRow5Info, "Text", Tagesdatum);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopDtaendgRow5'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopDtaendgRow5Info, new RecordItemIndex(51));
-            Validate.AttributeContains(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Row_5.ColExopDtaendgRow5Info, "Text", Tagesdatum);
             
         }
 

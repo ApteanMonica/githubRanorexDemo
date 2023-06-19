@@ -187,8 +187,8 @@ namespace B_UVA_004.Recordings_Formular
             repo.FrmUVAK.PbUVAKKopieren.Click();
             
             // nur für Test nötig, wenn Zuordnungen bereits vorhanden
-            //Report.Log(ReportLevel.Info, "Validation", "nur für Test nötig, wenn Zuordnungen bereits vorhanden\r\nValidating AttributeEqual (Text='\r\nZuordnungen sind bei Firma 200 in Formular A21 bereits vorhanden!\r\n\r\nDie bestehende Daten werden überschrieben!\r\n\r\nTrotzdem kopieren?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(14));
-            //Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "\r\nZuordnungen sind bei Firma 200 in Formular A21 bereits vorhanden!\r\n\r\nDie bestehende Daten werden überschrieben!\r\n\r\nTrotzdem kopieren?");
+            //Report.Log(ReportLevel.Info, "Validation", "nur für Test nötig, wenn Zuordnungen bereits vorhanden\r\nValidating AttributeEqual (Text='\r\r\nZuordnungen sind bei Firma 200 in Formular A21 bereits vorhanden!\r\n\r\nDie bestehende Daten werden überschrieben!\r\n\r\nTrotzdem kopieren?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(14));
+            //Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "\r\r\nZuordnungen sind bei Firma 200 in Formular A21 bereits vorhanden!\r\n\r\nDie bestehende Daten werden überschrieben!\r\n\r\nTrotzdem kopieren?");
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(15));
             //repo.DlgMessageBox.Button0.Click();

@@ -21,7 +21,7 @@
 					</param>
 					<param
 					name="periode"
-					value="02">
+					value="3">
 					</param>
 					<param
 					name="busy"
@@ -37,7 +37,7 @@
 					</param>
 					<param
 					name="betrag"
-					value="1.000,00">
+					value="1.500">
 					</param>
 					<param
 					name="bereiche"
@@ -47,6 +47,18 @@
 					name="newVariable"
 					value="">
 					</param>
+					<param
+					name="soll"
+					value="0">
+					</param>
+					<param
+					name="haben"
+					value="0">
+					</param>
+					<param
+					name="variable"
+					value="">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -54,14 +66,6 @@
 			name="CloseAUT"
 			ref="25b5cffb-15c3-46d8-b441-a445919e55bd"
 			type="Recording">
-				<missingdatavariablesbinding>
-					<var
-					dataname="AppProcessID"
-					datasourceid="0bc1e365-ecbe-4047-8e37-382bae2ce742"
-					variableid="c8e86004-a499-49b5-b707-e4ffff0b26ae"
-					variablename="CloseAutProcessIDVar">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="1e575250-55f5-4590-9a6e-4361e3d307b6"
@@ -86,6 +90,24 @@
 					datasourceid="0bc1e365-ecbe-4047-8e37-382bae2ce742"
 					variableid="14675bb8-6109-4428-a336-e03111f183bc"
 					variablename="jahr">
+					</var>
+					<var
+					dataname="periode"
+					datasourceid="0bc1e365-ecbe-4047-8e37-382bae2ce742"
+					variableid="fcb5fda4-8104-42ce-91a7-97cbf49a3f49"
+					variablename="periode">
+					</var>
+					<var
+					dataname="soll"
+					datasourceid="0bc1e365-ecbe-4047-8e37-382bae2ce742"
+					variableid="6da3d57c-5591-416f-9fdd-fef38730706e"
+					variablename="soll">
+					</var>
+					<var
+					dataname="haben"
+					datasourceid="0bc1e365-ecbe-4047-8e37-382bae2ce742"
+					variableid="3f5c1ca2-3116-452f-b3f2-3f97098fea5f"
+					variablename="haben">
 					</var>
 				</databinding>
 			</testmodule>
@@ -132,6 +154,12 @@
 					datasourceid="0bc1e365-ecbe-4047-8e37-382bae2ce742"
 					variableid="fe9a718c-674f-410f-82fc-0163ec0c422d"
 					variablename="betrag">
+					</var>
+					<var
+					dataname="variable"
+					datasourceid="0bc1e365-ecbe-4047-8e37-382bae2ce742"
+					variableid="34bf78bc-9dbd-490d-bf88-0f57eaef2184"
+					variablename="variable">
 					</var>
 				</databinding>
 			</testmodule>
@@ -200,14 +228,6 @@
 					variablename="Startfile">
 					</var>
 				</databinding>
-				<missingdatavariablesbinding>
-					<var
-					dataname="AppProcessID"
-					datasourceid="0bc1e365-ecbe-4047-8e37-382bae2ce742"
-					variableid="9c65275c-81cf-4abe-b9d0-974862bead18"
-					variablename="StartAutProcessIDVar">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
@@ -304,5 +324,8 @@
 		</testconfiguration>
 	</testconfigurations>
 	<references>
+		<reference>
+			Ranorex Automation Helpers.dll
+		</reference>
 	</references>
 </testsuitedoc>

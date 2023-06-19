@@ -44,6 +44,9 @@ namespace B_BUCH_005.Recordings
             busy = "ER";
             jahr = "2023";
             newVariable = "";
+            periode = "3";
+            soll = "0";
+            haben = "0";
         }
 
         /// <summary>
@@ -92,6 +95,42 @@ namespace B_BUCH_005.Recordings
             set { _newVariable = value; }
         }
 
+        string _periode;
+
+        /// <summary>
+        /// Gets or sets the value of variable periode.
+        /// </summary>
+        [TestVariable("fcb5fda4-8104-42ce-91a7-97cbf49a3f49")]
+        public string periode
+        {
+            get { return _periode; }
+            set { _periode = value; }
+        }
+
+        string _soll;
+
+        /// <summary>
+        /// Gets or sets the value of variable soll.
+        /// </summary>
+        [TestVariable("6da3d57c-5591-416f-9fdd-fef38730706e")]
+        public string soll
+        {
+            get { return _soll; }
+            set { _soll = value; }
+        }
+
+        string _haben;
+
+        /// <summary>
+        /// Gets or sets the value of variable haben.
+        /// </summary>
+        [TestVariable("3f5c1ca2-3116-452f-b3f2-3f97098fea5f")]
+        public string haben
+        {
+            get { return _haben; }
+            set { _haben = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -129,23 +168,32 @@ namespace B_BUCH_005.Recordings
             
             //Validate_DfPeriodeJ(repo.MdiBuch.ToolBar.DfPeriodeJInfo);
             
-            Validate_DfPeriodeJ1(repo.MdiBuch.ToolBar.DfPeriodeJInfo);
+            //Validate_DfPeriodeJ1(repo.MdiBuch.ToolBar.DfPeriodeJInfo);
             
             //Validate_DfSoll(repo.MdiBuch.ToolBar.DfSollInfo);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'MdiBuch.ToolBar.DfSoll'.", repo.MdiBuch.ToolBar.DfSollInfo, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.MdiBuch.ToolBar.DfSollInfo, "Text", "0,00");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'MdiBuch.ToolBar.DfPeriodeJ' and assigning its value to variable 'newVariable'.", repo.MdiBuch.ToolBar.DfPeriodeJInfo, new RecordItemIndex(6));
+            newVariable = repo.MdiBuch.ToolBar.DfPeriodeJ.Element.GetAttributeValueText("Text");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'MdiBuch.ToolBar.DfHaben'.", repo.MdiBuch.ToolBar.DfHabenInfo, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.MdiBuch.ToolBar.DfHabenInfo, "Text", "0,00");
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.Validate2Digits(newVariable, periode);
             
-            //Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'ControlText' from item 'MdiBuch.ToolBar.DfPeriodeJ' and assigning the part of its value captured by '\\((.*?)\\)' to variable 'newVariable'.", repo.MdiBuch.ToolBar.DfPeriodeJInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'MdiBuch.ToolBar.DfSoll' and assigning its value to variable 'newVariable'.", repo.MdiBuch.ToolBar.DfSollInfo, new RecordItemIndex(8));
+            newVariable = repo.MdiBuch.ToolBar.DfSoll.Element.GetAttributeValueText("Text");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateWithoutDecimals(newVariable, soll);
+            
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'MdiBuch.ToolBar.DfHaben' and assigning its value to variable 'newVariable'.", repo.MdiBuch.ToolBar.DfHabenInfo, new RecordItemIndex(10));
+            newVariable = repo.MdiBuch.ToolBar.DfHaben.Element.GetAttributeValueText("Text");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateWithoutDecimals(newVariable, haben);
+            
+            //Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'ControlText' from item 'MdiBuch.ToolBar.DfPeriodeJ' and assigning the part of its value captured by '\\((.*?)\\)' to variable 'newVariable'.", repo.MdiBuch.ToolBar.DfPeriodeJInfo, new RecordItemIndex(12));
             //newVariable = repo.MdiBuch.ToolBar.DfPeriodeJ.Element.GetAttributeValueText("ControlText", new Regex("\\((.*?)\\)"));
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='yourtext') on item 'MdiBuch.ToolBar.DfPeriodeJ'.", repo.MdiBuch.ToolBar.DfPeriodeJInfo, new RecordItemIndex(9));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='yourtext') on item 'MdiBuch.ToolBar.DfPeriodeJ'.", repo.MdiBuch.ToolBar.DfPeriodeJInfo, new RecordItemIndex(13));
             //Validate.AttributeEqual(repo.MdiBuch.ToolBar.DfPeriodeJInfo, "Text", "yourtext");
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex ($newVariable~'[1-9]{1}') on item 'MdiBuch.ToolBar.DfPeriodeJ'.", repo.MdiBuch.ToolBar.DfPeriodeJInfo, new RecordItemIndex(10));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex ($newVariable~'[1-9]{1}') on item 'MdiBuch.ToolBar.DfPeriodeJ'.", repo.MdiBuch.ToolBar.DfPeriodeJInfo, new RecordItemIndex(14));
             //Validate.AttributeRegex(repo.MdiBuch.ToolBar.DfPeriodeJInfo, newVariable, new Regex("[1-9]{1}"));
             
         }

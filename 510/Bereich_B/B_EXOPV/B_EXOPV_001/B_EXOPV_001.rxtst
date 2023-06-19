@@ -9,10 +9,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Stapel2_ERBuch"
+					dataname="Fehlerprotokoll_B"
 					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
-					variableid="6c238a9a-1ff1-4fc6-8112-469f47ca693a"
-					variablename="Stapel2_ERBuch">
+					variableid="af6556cf-43ea-40ed-bd00-84dad410bfda"
+					variablename="Fehlerprotokoll_B">
 					</var>
 					<var
 					dataname="Stapel1_Kassabuch"
@@ -21,10 +21,10 @@
 					variablename="Stapel1_Kassabuch">
 					</var>
 					<var
-					dataname="Fehlerprotokoll_B"
+					dataname="Stapel2_ERBuch"
 					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
-					variableid="af6556cf-43ea-40ed-bd00-84dad410bfda"
-					variablename="Fehlerprotokoll_B">
+					variableid="6c238a9a-1ff1-4fc6-8112-469f47ca693a"
+					variablename="Stapel2_ERBuch">
 					</var>
 				</databinding>
 			</testmodule>
@@ -54,6 +54,14 @@
 					</param>
 					<param
 					name="Tagesdatum"
+					value="">
+					</param>
+					<param
+					name="Tagesdatum2"
+					value="">
+					</param>
+					<param
+					name="Feldinhalt_Buchungsdatum"
 					value="">
 					</param>
 					<param
@@ -119,16 +127,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Beleg3"
-					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
-					variableid="dc6a8130-5f65-43d7-bce2-00a9155a0f1b"
-					variablename="Beleg3">
-					</var>
-					<var
 					dataname="Beleg1"
 					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
 					variableid="4fd0d110-02d0-4c27-b953-a96453776045"
 					variablename="Beleg1">
+					</var>
+					<var
+					dataname="Beleg3"
+					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
+					variableid="dc6a8130-5f65-43d7-bce2-00a9155a0f1b"
+					variablename="Beleg3">
 					</var>
 				</databinding>
 			</testmodule>
@@ -139,16 +147,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm"
-					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
-					variableid="6e582df3-beee-4d1a-ba39-b981826fece2"
-					variablename="Programm">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
 					variableid="2f2c4d9e-7485-45f8-b667-6b8c0cbd8958"
 					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm"
+					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
+					variableid="6e582df3-beee-4d1a-ba39-b981826fece2"
+					variablename="Programm">
 					</var>
 				</databinding>
 			</testmodule>
@@ -163,10 +171,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Monat"
+					dataname="Jahr"
 					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
-					variableid="2959bec2-561b-468a-916d-2cb7ea689129"
-					variablename="Monat">
+					variableid="7215b572-a1c1-462f-a8b0-92812ca7fd00"
+					variablename="Jahr">
 					</var>
 					<var
 					dataname="Beleg1"
@@ -175,10 +183,24 @@
 					variablename="Beleg1">
 					</var>
 					<var
-					dataname="Jahr"
+					dataname="Monat"
 					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
-					variableid="7215b572-a1c1-462f-a8b0-92812ca7fd00"
-					variablename="Jahr">
+					variableid="2959bec2-561b-468a-916d-2cb7ea689129"
+					variablename="Monat">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="1b129ddd-91a9-4656-acfd-4c35c7752869"
+			name="Tagesdatum2_ermitteln"
+			ref="69085441-764a-40ee-8d5b-dc8fb3afd073"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum2"
+					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
+					variableid="3b58314d-b91f-4f68-a1f0-38cb2deac6c7"
+					variablename="Tagesdatum2">
 					</var>
 				</databinding>
 			</testmodule>
@@ -207,16 +229,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Stapel2_ERBuch"
-					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
-					variableid="6c238a9a-1ff1-4fc6-8112-469f47ca693a"
-					variablename="Stapel2_ERBuch">
-					</var>
-					<var
 					dataname="Stapel1_Kassabuch"
 					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
 					variableid="a08eadc0-dbe6-458c-92bf-e0ffe26a8422"
 					variablename="Stapel1_Kassabuch">
+					</var>
+					<var
+					dataname="Stapel2_ERBuch"
+					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
+					variableid="6c238a9a-1ff1-4fc6-8112-469f47ca693a"
+					variablename="Stapel2_ERBuch">
 					</var>
 				</databinding>
 			</testmodule>
@@ -277,16 +299,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
-					variableid="2f2c4d9e-7485-45f8-b667-6b8c0cbd8958"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm"
 					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
 					variableid="6e582df3-beee-4d1a-ba39-b981826fece2"
 					variablename="Programm">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
+					variableid="2f2c4d9e-7485-45f8-b667-6b8c0cbd8958"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -297,16 +319,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Beleg4"
-					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
-					variableid="c2917795-274c-43e0-8bf5-fb854758e727"
-					variablename="Beleg4">
-					</var>
-					<var
 					dataname="Beleg3"
 					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
 					variableid="9d1f7695-24e0-449a-a363-29ef697c38e0"
 					variablename="Beleg3">
+					</var>
+					<var
+					dataname="Beleg4"
+					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
+					variableid="c2917795-274c-43e0-8bf5-fb854758e727"
+					variablename="Beleg4">
 					</var>
 					<var
 					dataname="Beleg2"
@@ -315,16 +337,16 @@
 					variablename="Beleg2">
 					</var>
 					<var
-					dataname="Tagesdatum"
-					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
-					variableid="69c7969b-bbc7-4787-afa6-9741556bdb98"
-					variablename="Tagesdatum">
-					</var>
-					<var
 					dataname="Beleg1"
 					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
 					variableid="24572d2c-7fc6-4b68-8950-c4e19f75915b"
 					variablename="Beleg1">
+					</var>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
+					variableid="69c7969b-bbc7-4787-afa6-9741556bdb98"
+					variablename="Tagesdatum">
 					</var>
 				</databinding>
 			</testmodule>
@@ -335,16 +357,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm_2"
-					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
-					variableid="96ff4d10-6384-49f6-a799-6bdfc1ed5542"
-					variablename="Programm_2">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
 					variableid="707066e4-8b4f-4e98-b691-b8dabb232495"
 					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_2"
+					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
+					variableid="96ff4d10-6384-49f6-a799-6bdfc1ed5542"
+					variablename="Programm_2">
 					</var>
 				</databinding>
 			</testmodule>
@@ -355,16 +377,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Stapel2_ERBuch"
-					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
-					variableid="6c238a9a-1ff1-4fc6-8112-469f47ca693a"
-					variablename="Stapel2_ERBuch">
-					</var>
-					<var
 					dataname="Stapel1_Kassabuch"
 					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
 					variableid="a08eadc0-dbe6-458c-92bf-e0ffe26a8422"
 					variablename="Stapel1_Kassabuch">
+					</var>
+					<var
+					dataname="Stapel2_ERBuch"
+					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
+					variableid="6c238a9a-1ff1-4fc6-8112-469f47ca693a"
+					variablename="Stapel2_ERBuch">
 					</var>
 				</databinding>
 			</testmodule>
@@ -384,6 +406,35 @@
 			id="9bddcf91-efd1-459c-8b90-6350ab39ecf3"
 			name="setup">
 			</setup>
+			<testmodule
+			id="a7acf55c-29be-452f-a4c9-386d362903d0"
+			name="B_BUAB_Buchungsdatum_pruefen_UserCode"
+			ref="dffc5747-3f01-453b-96f9-24dc6e891ed1"
+			type="Recording">
+				<description>
+					<![CDATA[UserCode Validierung Tagesdatum oder Tagesdatum2 zur Vermeidung von Fehlern bei Tageswechsel]]>
+				</description>
+				<databinding>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
+					variableid="9b1c9f57-1dca-41cd-b7e4-2059c37d82af"
+					variablename="Tagesdatum">
+					</var>
+					<var
+					dataname="Tagesdatum2"
+					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
+					variableid="6b4d8ecb-70f9-401b-a5cf-95486314d21d"
+					variablename="Tagesdatum2">
+					</var>
+					<var
+					dataname="Feldinhalt_Buchungsdatum"
+					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
+					variableid="16a30cff-24c6-4a25-86be-1062dffcdb43"
+					variablename="Feldinhalt_Buchungsdatum">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="ab325b98-9d14-4cce-a32a-c6b6a076dc18"
 			name="CloseAUT"
@@ -411,16 +462,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Stapel2_ERBuch"
-					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
-					variableid="6c238a9a-1ff1-4fc6-8112-469f47ca693a"
-					variablename="Stapel2_ERBuch">
-					</var>
-					<var
 					dataname="Stapel1_Kassabuch"
 					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
 					variableid="a08eadc0-dbe6-458c-92bf-e0ffe26a8422"
 					variablename="Stapel1_Kassabuch">
+					</var>
+					<var
+					dataname="Stapel2_ERBuch"
+					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
+					variableid="6c238a9a-1ff1-4fc6-8112-469f47ca693a"
+					variablename="Stapel2_ERBuch">
 					</var>
 				</databinding>
 			</testmodule>
@@ -431,16 +482,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Stapel1_Kassabuch"
-					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
-					variableid="a08eadc0-dbe6-458c-92bf-e0ffe26a8422"
-					variablename="Stapel1_Kassabuch">
-					</var>
-					<var
 					dataname="Stapel2_ERBuch"
 					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
 					variableid="6c238a9a-1ff1-4fc6-8112-469f47ca693a"
 					variablename="Stapel2_ERBuch">
+					</var>
+					<var
+					dataname="Stapel1_Kassabuch"
+					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
+					variableid="a08eadc0-dbe6-458c-92bf-e0ffe26a8422"
+					variablename="Stapel1_Kassabuch">
 					</var>
 				</databinding>
 			</testmodule>
@@ -474,10 +525,10 @@
 				</description>
 				<databinding>
 					<var
-					dataname="Fehlerprotokoll_A"
+					dataname="Stapel2_ERBuch"
 					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
-					variableid="0dfa114f-0a65-4bf9-af8c-6457e73675f4"
-					variablename="Fehlerprotokoll_A">
+					variableid="6c238a9a-1ff1-4fc6-8112-469f47ca693a"
+					variablename="Stapel2_ERBuch">
 					</var>
 					<var
 					dataname="Stapel1_Kassabuch"
@@ -486,10 +537,10 @@
 					variablename="Stapel1_Kassabuch">
 					</var>
 					<var
-					dataname="Stapel2_ERBuch"
+					dataname="Fehlerprotokoll_A"
 					datasourceid="0a4dcd30-7c1f-4e21-af98-4bbecb13d8f8"
-					variableid="6c238a9a-1ff1-4fc6-8112-469f47ca693a"
-					variablename="Stapel2_ERBuch">
+					variableid="0dfa114f-0a65-4bf9-af8c-6457e73675f4"
+					variablename="Fehlerprotokoll_A">
 					</var>
 				</databinding>
 			</testmodule>
@@ -572,9 +623,6 @@
 			name="Tagesdatum_ermitteln"
 			ref="3430deec-775a-41bc-b02d-31d42f4332e1"
 			type="Recording">
-				<description>
-					<![CDATA[Tagesdatum zu Verbuchung, damit Fehler Tagessprung bei späterer Valdierung möglichst vermieden wird.]]>
-				</description>
 				<databinding>
 					<var
 					dataname="Tagesdatum"
@@ -607,6 +655,10 @@
 							<testmodule
 							id="11a96bb6-2060-4c1d-beac-dfe2c8863e87"
 							name="StartAUT">
+							</testmodule>
+							<testmodule
+							id="ec98be6b-c53c-4af7-aa10-aceddf94d75d"
+							name="Tagesdatum_ermitteln">
 							</testmodule>
 						</setup>
 						<testmodule
@@ -694,10 +746,6 @@
 						name="Validierung_Stapel_Kassabuch_ERBuch_ges_4_Belege">
 						</testmodule>
 						<testmodule
-						id="ec98be6b-c53c-4af7-aa10-aceddf94d75d"
-						name="Tagesdatum_ermitteln">
-						</testmodule>
-						<testmodule
 						id="052b1862-dd44-4b63-a0c8-6b56e1afd5db"
 						name="Pruefung_keine_Fehler">
 						</testmodule>
@@ -736,6 +784,14 @@
 						<testmodule
 						id="5b3c94b5-3a9d-48de-b4fc-1ac455f021e7"
 						name="B_BUAB_Belege_laden">
+						</testmodule>
+						<testmodule
+						id="1b129ddd-91a9-4656-acfd-4c35c7752869"
+						name="Tagesdatum2_ermitteln">
+						</testmodule>
+						<testmodule
+						id="a7acf55c-29be-452f-a4c9-386d362903d0"
+						name="B_BUAB_Buchungsdatum_pruefen_UserCode">
 						</testmodule>
 						<testmodule
 						id="61ec1313-bd0b-4564-b525-5e7ed008aa9b"

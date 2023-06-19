@@ -41,6 +41,9 @@ namespace B_ELSTER_001.Recordings_notepad
         /// </summary>
         public Pruefung_XML_Datei_Tagesdatum_Tagesdatum2_UserCode()
         {
+            XML_Inhalt_aktuell = "";
+            Tagesdatum_yyyyMMdd = "";
+            Tagesdatum2_yyyyMMdd = "";
         }
 
         /// <summary>
@@ -52,6 +55,42 @@ namespace B_ELSTER_001.Recordings_notepad
         }
 
 #region Variables
+
+        string _XML_Inhalt_aktuell;
+
+        /// <summary>
+        /// Gets or sets the value of variable XML_Inhalt_aktuell.
+        /// </summary>
+        [TestVariable("b0e55cd4-c55b-40c2-b9c5-3fc33dc93fc1")]
+        public string XML_Inhalt_aktuell
+        {
+            get { return _XML_Inhalt_aktuell; }
+            set { _XML_Inhalt_aktuell = value; }
+        }
+
+        string _Tagesdatum_yyyyMMdd;
+
+        /// <summary>
+        /// Gets or sets the value of variable Tagesdatum_yyyyMMdd.
+        /// </summary>
+        [TestVariable("5af47d4c-1ed7-4e29-a819-9bda1d1605f6")]
+        public string Tagesdatum_yyyyMMdd
+        {
+            get { return _Tagesdatum_yyyyMMdd; }
+            set { _Tagesdatum_yyyyMMdd = value; }
+        }
+
+        string _Tagesdatum2_yyyyMMdd;
+
+        /// <summary>
+        /// Gets or sets the value of variable Tagesdatum2_yyyyMMdd.
+        /// </summary>
+        [TestVariable("b2ca8546-7544-40f1-a91c-82452b0dccc0")]
+        public string Tagesdatum2_yyyyMMdd
+        {
+            get { return _Tagesdatum2_yyyyMMdd; }
+            set { _Tagesdatum2_yyyyMMdd = value; }
+        }
 
 #endregion
 
@@ -79,6 +118,8 @@ namespace B_ELSTER_001.Recordings_notepad
 
             Init();
 
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateContainsVar1Var2(XML_Inhalt_aktuell, Tagesdatum_yyyyMMdd, Tagesdatum2_yyyyMMdd);
+            
         }
 
 #region Image Feature Data

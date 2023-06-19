@@ -43,8 +43,9 @@ namespace B_BUCH_005.Recordings
         {
             belegNr = "2300007";
             lieferant = "303112";
-            betrag = "1.000,00";
+            betrag = "1500";
             bereiche = "30";
+            variable = "";
         }
 
         /// <summary>
@@ -105,6 +106,18 @@ namespace B_BUCH_005.Recordings
             set { _bereiche = value; }
         }
 
+        string _variable;
+
+        /// <summary>
+        /// Gets or sets the value of variable variable.
+        /// </summary>
+        [TestVariable("34bf78bc-9dbd-490d-bf88-0f57eaef2184")]
+        public string variable
+        {
+            get { return _variable; }
+            set { _variable = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -137,14 +150,18 @@ namespace B_BUCH_005.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$lieferant) on item 'MdiBuch.DfAdrNrU'.", repo.MdiBuch.DfAdrNrUInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.MdiBuch.DfAdrNrUInfo, "Text", lieferant);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$betrag) on item 'TblErbu.Row1.ColErbuBetragRow1'.", repo.TblErbu.Row1.ColErbuBetragRow1Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblErbu.Row1.ColErbuBetragRow1Info, "Text", betrag);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$betrag) on item 'MdiBuch.Betrag'.", repo.MdiBuch.BetragInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.MdiBuch.BetragInfo, "Text", betrag);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$bereiche) on item 'MdiBuch.Bereiche'.", repo.MdiBuch.BereicheInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$bereiche) on item 'MdiBuch.Bereiche'.", repo.MdiBuch.BereicheInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.MdiBuch.BereicheInfo, "Text", bereiche);
+            
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblErbu.Row1.ColErbuBetragRow1' and assigning its value to variable 'variable'.", repo.TblErbu.Row1.ColErbuBetragRow1Info, new RecordItemIndex(3));
+            variable = repo.TblErbu.Row1.ColErbuBetragRow1.Element.GetAttributeValueText("Text");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateWithoutDecimals(variable, betrag);
+            
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'MdiBuch.Betrag' and assigning its value to variable 'variable'.", repo.MdiBuch.BetragInfo, new RecordItemIndex(5));
+            variable = repo.MdiBuch.Betrag.Element.GetAttributeValueText("Text");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateWithoutDecimals(variable, betrag);
             
         }
 
