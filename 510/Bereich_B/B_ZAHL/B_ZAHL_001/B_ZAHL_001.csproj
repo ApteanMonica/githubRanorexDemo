@@ -123,6 +123,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\..\Testdaten\Allgemein\UserCode\aptean.cs">
+      <Link>aptean.cs</Link>
+      <id>4a1e1c19-5468-4eaf-8f83-e7cf604cecf7</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>5b160427-3d39-4705-8879-1b9fc45f7331</id>
     </Compile>
@@ -158,6 +162,30 @@
       <UserCode>true</UserCode>
       <id>db31195e-4980-4518-95e3-c02425d41d46</id>
       <BoundTo>12666b34-9551-4bca-8218-3d3825064604</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Zahlungsvorschlag_Erstelldatum_pruefen_UserCode.cs">
+      <BoundTo>b324eca4-a23a-4cd3-8e9b-448b221a53e0</BoundTo>
+      <DependentUpon>Zahlungsvorschlag_Erstelldatum_pruefen_UserCode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fa998bf2-a676-4983-8a4e-2fd2265b5aa9</id>
+    </Compile>
+    <Compile Include="Recordings\Zahlungsvorschlag_Erstelldatum_pruefen_UserCode.UserCode.cs">
+      <BoundTo>b324eca4-a23a-4cd3-8e9b-448b221a53e0</BoundTo>
+      <DependentUpon>Zahlungsvorschlag_Erstelldatum_pruefen_UserCode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4ed5e83d-2f8a-41b3-9cc1-f3a10528434e</id>
+    </Compile>
+    <Compile Include="Recordings\Zahlungsvorschlag_bearbeiten_aufrufen.cs">
+      <BoundTo>1d7a5c16-1ecd-4fb5-b982-fb7a1369e2f9</BoundTo>
+      <DependentUpon>Zahlungsvorschlag_bearbeiten_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9be1a4c1-7470-421b-ae6f-90a46c21bb22</id>
+    </Compile>
+    <Compile Include="Recordings\Zahlungsvorschlag_bearbeiten_aufrufen.UserCode.cs">
+      <BoundTo>1d7a5c16-1ecd-4fb5-b982-fb7a1369e2f9</BoundTo>
+      <DependentUpon>Zahlungsvorschlag_bearbeiten_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9fcd6da0-494f-471d-9aea-6db3bbc8d8e1</id>
     </Compile>
     <Compile Include="Recordings\Zahlungsvorschlag_B_ZAHL_001_A_erstellen_Meldungen_Datum.cs">
       <BoundTo>a88306a3-a871-484c-b34c-26dab454e750</BoundTo>
@@ -436,6 +464,16 @@
       <id>12666b34-9551-4bca-8218-3d3825064604</id>
       <recordtableid>273a50c7-510b-4468-b0ed-e77b5566953d</recordtableid>
       <BoundTo>982999b9-02d5-4cdf-989b-ff47f3f5560c</BoundTo>
+    </None>
+    <None Include="Recordings\Zahlungsvorschlag_Erstelldatum_pruefen_UserCode.rxrec">
+      <BoundTo>982999b9-02d5-4cdf-989b-ff47f3f5560c</BoundTo>
+      <id>b324eca4-a23a-4cd3-8e9b-448b221a53e0</id>
+      <recordtableid>0dc77e7e-5985-4823-aca3-48d3f42a66aa</recordtableid>
+    </None>
+    <None Include="Recordings\Zahlungsvorschlag_bearbeiten_aufrufen.rxrec">
+      <BoundTo>982999b9-02d5-4cdf-989b-ff47f3f5560c</BoundTo>
+      <id>1d7a5c16-1ecd-4fb5-b982-fb7a1369e2f9</id>
+      <recordtableid>346b9f4c-4b65-4c39-932b-6007b1eebda0</recordtableid>
     </None>
     <None Include="Recordings\Zahlungsvorschlag_B_ZAHL_001_A_erstellen_Meldungen_Datum.rxrec">
       <BoundTo>982999b9-02d5-4cdf-989b-ff47f3f5560c</BoundTo>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="113a1ee8-0eb9-4bdb-ba0b-88eb578ce75e"
+id="346b9f4c-4b65-4c39-932b-6007b1eebda0"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,225 +19,12 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Zahlungsvorschlag_B_ZAHL_001_A_pruefen"
+	classname="Zahlungsvorschlag_bearbeiten_aufrufen"
 	namespace="B_ZAHL_001.Recordings">
 	</codegen>
 	<variables>
-		<var
-		id="6444ff92-900f-403f-8ac6-18b129c9b94b"
-		name="Tagesdatum">
-		</var>
-		<var
-		id="3d73d85a-c9db-4f2e-b08e-7d22029ef33b"
-		name="ZV_TEXT_A">
-			B_ZAHL_001_A
-		</var>
-		<var
-		id="570bb8b4-3e96-4d06-af53-512e7d34850d"
-		name="FAELL_SKONTO_1">
-			15.07.2021
-		</var>
 	</variables>
 	<recorditems>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="58aeaf02-93b3-43f4-9e29-423d51e076ad"
-		waitaction="Exists"
-		waittimeout="120000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="9a504dae-3277-4fad-ad79-385603169607"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmZahlMain']/titlebar[@accessiblerole='TitleBar']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
-		<validationitem
-		action="AttributeContains"
-		enabled="True"
-		optional="False"
-		searchpropertyid="40b43167-49f5-4e77-8ef6-5ca85ec177a5">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="9a504dae-3277-4fad-ad79-385603169607"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmZahlMain']/titlebar[@accessiblerole='TitleBar']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				Lieferanten - Zahlungsverkehr
-			</matchvalue>
-		</validationitem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="58aeaf02-93b3-43f4-9e29-423d51e076ad"
-		waitaction="Exists"
-		waittimeout="120000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="f5c20c60-8313-493d-858f-d1acab2fc8ea"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmZahlMain']/container[@controlname='ClientArea']/?/?/tabpage[@controlname='tpName0']//table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT_A]
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
-		<validationitem
-		action="AttributeContains"
-		enabled="True"
-		optional="False"
-		searchpropertyid="243df321-4266-4d2c-b2a4-2dbe808963c3">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="ZV_TEXT_A">
-				</binding>
-			</bindings>
-			<info
-			id="f5c20c60-8313-493d-858f-d1acab2fc8ea"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmZahlMain']/container[@controlname='ClientArea']/?/?/tabpage[@controlname='tpName0']//table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT_A]
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				B_ZAHL_002
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="243df321-4266-4d2c-b2a4-2dbe808963c3">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="1c88bf73-18cc-46a1-bfdf-072b07972678"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmZahlMain']//tabpage[@controlname='tpName0']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT_A]/?/cell[@accessiblename~'colZlvs_summe']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				5.870,40
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="243df321-4266-4d2c-b2a4-2dbe808963c3">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="70e15bb6-e944-4470-a02e-1fd7166b0bf7"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmZahlMain']//tabpage[@controlname='tpName0']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT_A]/?/cell[@accessiblename~'colZlvs_anzahl']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				7
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="e0fee9f3-508a-4332-9985-1ee514a48a5b">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="FAELL_SKONTO_1">
-				</binding>
-			</bindings>
-			<info
-			id="b1bd712d-74a9-46bd-b123-a2935903e53c"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmZahlMain']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpName0']/container[@controlname='tblVorschläge']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZlvs_zahldatum']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourValue
-			</matchvalue>
-		</validationitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="487078de-2757-4617-bf20-1d92ae92f9e2"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="e807d843-62fa-4c1b-be71-8276dbad2707"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmZahlMain']//tabpage[@controlname='tpName0']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT_A]/?/cell[@accessiblename~'Column 0']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4151,7 +3938,7 @@ mode="Global">
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
-		searchpropertyid="e4e3ee77-9865-4c52-81a3-8c2546375d66"
+		searchpropertyid="e671bfa6-8499-4ce7-8c9b-5815e94ee1a8"
 		waitaction="Exists"
 		waittimeout="120000ms">
 			<comment>
@@ -8143,7 +7930,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Zahlungsvorschlag_B_ZAHL_001_A_pruefen.UserCode.cs
+		Zahlungsvorschlag_bearbeiten_aufrufen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
