@@ -125,9 +125,6 @@
 			name="Tagesdatum_ermitteln"
 			ref="11bd9d7c-3a1b-4ca1-9dbd-c3e1bb895266"
 			type="Recording">
-				<description>
-					<![CDATA[Tagesdatum zu Verbuchung, damit Fehler Tagessprung bei späterer Valdierung möglichst vermieden wird.]]>
-				</description>
 				<databinding>
 					<var
 					dataname="Tagesdatum"
@@ -392,6 +389,35 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="95a45a44-d6df-40a6-8e51-cfba6e494cf3"
+			name="B_BUAB_Buchungsdatum_pruefen_UserCode"
+			ref="e42731e2-4e12-469c-a740-e397ca8ae66a"
+			type="Recording">
+				<description>
+					<![CDATA[UserCode Validierung Tagesdatum oder Tagesdatum2 zur Vermeidung von Fehlern bei Tageswechsel]]>
+				</description>
+				<databinding>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
+					variableid="3fef9a41-f6a6-420f-b776-102d24af1241"
+					variablename="Tagesdatum">
+					</var>
+					<var
+					dataname="Tagesdatum2"
+					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
+					variableid="bf5c8962-eacd-4fb4-bb08-ae2eaa579a2f"
+					variablename="Tagesdatum2">
+					</var>
+					<var
+					dataname="Feldinhalt_Buchungsdatum"
+					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
+					variableid="49399c05-32aa-433a-8184-9f186f8c04d5"
+					variablename="Feldinhalt_Buchungsdatum">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="ab498f02-a68c-41fa-bb45-38cecf844b2d"
 			name="Verbuchung_nicht_moeglich_Fehlermeldungen"
 			ref="80a702eb-614d-4465-aeb5-d3d886172b9c"
@@ -432,6 +458,34 @@
 					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
 					variableid="e67f934b-9187-41e1-b4d6-af24cea1d932"
 					variablename="Beleg6_FB_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="b3307fb4-bf3e-4c2c-9f1b-6d0b4e78ffed"
+			name="Tagesdatum2_ermitteln"
+			ref="b86c108b-4b0b-4001-a089-f50425afcf4e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum2"
+					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
+					variableid="f11d941e-60f8-4a2c-a092-32cabb50de15"
+					variablename="Tagesdatum2">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="b5e2fc81-03d2-439b-a806-c804263498ae"
+			name="Tagesdatum_ermitteln"
+			ref="11bd9d7c-3a1b-4ca1-9dbd-c3e1bb895266"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
+					variableid="82914e70-86f0-42f5-8633-14a4e7bd579b"
+					variablename="Tagesdatum">
 					</var>
 				</databinding>
 			</testmodule>
@@ -569,6 +623,14 @@
 					value="">
 					</param>
 					<param
+					name="Tagesdatum2"
+					value="">
+					</param>
+					<param
+					name="Feldinhalt_Buchungsdatum"
+					value="">
+					</param>
+					<param
 					name="Jahr"
 					value="2020">
 					</param>
@@ -656,6 +718,10 @@
 							id="c7ef11b3-adce-4446-99e0-8c905c788be2"
 							name="StartAUT">
 							</testmodule>
+							<testmodule
+							id="425c6d8f-f5bb-4857-aa4b-57b2820cc651"
+							name="Tagesdatum_ermitteln">
+							</testmodule>
 						</setup>
 						<testmodule
 						id="df269eb7-0323-4bc4-831c-f3aaba65e342"
@@ -696,10 +762,6 @@
 						<testmodule
 						id="2915679f-04ab-4599-a9c8-f2c84ea40e12"
 						name="Optionen_Fehlerstatus_auf_F_aendern">
-						</testmodule>
-						<testmodule
-						id="425c6d8f-f5bb-4857-aa4b-57b2820cc651"
-						name="Tagesdatum_ermitteln">
 						</testmodule>
 						<testmodule
 						id="8964a652-c980-4b18-9939-185d4a0cfc9a"
@@ -780,6 +842,18 @@
 						<testmodule
 						id="4aea2d63-6a5d-427c-8a29-125dfdb2f273"
 						name="B_BUAB_Belege_laden">
+						</testmodule>
+						<testmodule
+						id="b5e2fc81-03d2-439b-a806-c804263498ae"
+						name="Tagesdatum_ermitteln">
+						</testmodule>
+						<testmodule
+						id="b3307fb4-bf3e-4c2c-9f1b-6d0b4e78ffed"
+						name="Tagesdatum2_ermitteln">
+						</testmodule>
+						<testmodule
+						id="95a45a44-d6df-40a6-8e51-cfba6e494cf3"
+						name="B_BUAB_Buchungsdatum_pruefen_UserCode">
 						</testmodule>
 						<testmodule
 						id="4c1f6740-b388-4fe2-9a75-2bf5f1cc9f99"

@@ -291,6 +291,26 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="96e1ee50-e9be-4944-bbf8-86d27c1a81a9"
+			name="Urlaubsanspruch_aktuelles_Jahr_511_521"
+			ref="a7f65411-5d0c-4637-a7d2-a5041b29f721"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Anspruchsart_Urlaub"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="34ee6932-f026-48cd-8e37-4fe7032f9bf9"
+					variablename="Anspruchsart_Urlaub">
+					</var>
+					<var
+					dataname="Urlaubsmenge"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="cab7b0e2-f392-4454-93de-931da0828ae4"
+					variablename="Urlaubsmenge">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="9734b72d-ad0f-483c-8c9a-196896da907d"
 			name="Fehlzeitergebnisse_berechnen"
 			ref="409c9aec-6825-4757-8456-267dbc3526ed"
@@ -563,16 +583,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Urlaub_1_beginn"
+					dataname="Urlaub_2_ende"
 					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
-					variableid="8914c57c-349e-42ba-b51a-53b7615a72bc"
-					variablename="Urlaub_1_beginn">
-					</var>
-					<var
-					dataname="Urlaub_1_ende"
-					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
-					variableid="d8f9f548-d0b2-448c-9baf-e8af37288d7b"
-					variablename="Urlaub_1_ende">
+					variableid="3414c2a5-b0a5-42ff-80e1-e70223822d0d"
+					variablename="Urlaub_2_ende">
 					</var>
 					<var
 					dataname="Urlaub_2_beginn"
@@ -581,10 +595,16 @@
 					variablename="Urlaub_2_beginn">
 					</var>
 					<var
-					dataname="Urlaub_2_ende"
+					dataname="Urlaub_1_ende"
 					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
-					variableid="3414c2a5-b0a5-42ff-80e1-e70223822d0d"
-					variablename="Urlaub_2_ende">
+					variableid="d8f9f548-d0b2-448c-9baf-e8af37288d7b"
+					variablename="Urlaub_1_ende">
+					</var>
+					<var
+					dataname="Urlaub_1_beginn"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="8914c57c-349e-42ba-b51a-53b7615a72bc"
+					variablename="Urlaub_1_beginn">
 					</var>
 				</databinding>
 			</testmodule>
@@ -654,10 +674,6 @@
 							</testmodule>
 						</setup>
 						<testmodule
-						id="2078879f-2937-4be4-b0e3-33c15dde20a0"
-						name="Einlesen_des_Ranoagent">
-						</testmodule>
-						<testmodule
 						id="d9ec6e3d-660a-4264-bfa7-bfe18e44b31b"
 						name="Mitarbeiter_auswaehlen">
 						</testmodule>
@@ -689,6 +705,10 @@
 						id="76bc8784-60c9-4e5a-8ff5-a7203a29f174"
 						name="Start_AUT_2">
 						</testmodule>
+						<testmodule
+						id="2078879f-2937-4be4-b0e3-33c15dde20a0"
+						name="Einlesen_des_Ranoagent">
+						</testmodule>
 						<smartfoldernode
 						id="20d2fb06-a7bc-4b51-ae17-2d532ecfcd73"
 						name="510">
@@ -703,6 +723,10 @@
 							<testmodule
 							id="462bc141-53c9-4b56-b147-1fc206b7bb9f"
 							name="Fehlzeitergebnisse_ueberpruefen_510">
+							</testmodule>
+							<testmodule
+							id="bff13661-f252-4dca-aa71-a29d7c219253"
+							name="Urlaubsanspruch_aktuelles_Jahr">
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
@@ -720,11 +744,11 @@
 							id="db330ffa-cea1-47bc-a795-b6f99a197fb6"
 							name="Fehlzeitergebnisse_ueberpruefen">
 							</testmodule>
+							<testmodule
+							id="96e1ee50-e9be-4944-bbf8-86d27c1a81a9"
+							name="Urlaubsanspruch_aktuelles_Jahr_511_521">
+							</testmodule>
 						</smartfoldernode>
-						<testmodule
-						id="bff13661-f252-4dca-aa71-a29d7c219253"
-						name="Urlaubsanspruch_aktuelles_Jahr">
-						</testmodule>
 						<testmodule
 						id="9409eea9-817e-4978-bfd1-bf1593fdccf2"
 						name="Urlaubskennzahlen_Monat_1_laden">

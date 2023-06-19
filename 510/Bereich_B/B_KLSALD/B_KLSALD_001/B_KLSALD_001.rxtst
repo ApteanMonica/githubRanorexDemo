@@ -38,10 +38,10 @@
 				</description>
 				<databinding>
 					<var
-					dataname="KU_2030001"
+					dataname="KU_2030003"
 					datasourceid="af11b9a0-615d-4f94-b900-a46854860f5c"
-					variableid="8ab8f5f4-a32f-446c-80c9-a56cc41a439f"
-					variablename="KU_2030001">
+					variableid="b1a47c6e-1210-46a5-a2e2-f493d1e91873"
+					variablename="KU_2030003">
 					</var>
 					<var
 					dataname="KU_2030002_DIV"
@@ -50,10 +50,10 @@
 					variablename="KU_2030002_DIV">
 					</var>
 					<var
-					dataname="KU_2030003"
+					dataname="KU_2030001"
 					datasourceid="af11b9a0-615d-4f94-b900-a46854860f5c"
-					variableid="b1a47c6e-1210-46a5-a2e2-f493d1e91873"
-					variablename="KU_2030003">
+					variableid="8ab8f5f4-a32f-446c-80c9-a56cc41a439f"
+					variablename="KU_2030001">
 					</var>
 				</databinding>
 			</testmodule>
@@ -64,16 +64,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm"
-					datasourceid="af11b9a0-615d-4f94-b900-a46854860f5c"
-					variableid="1ccc53a6-514b-4f3c-a6d0-dcce187c4a9b"
-					variablename="Programm">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="af11b9a0-615d-4f94-b900-a46854860f5c"
 					variableid="948f5b08-b07b-4a64-a538-a8cc4d6c7d9e"
 					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm"
+					datasourceid="af11b9a0-615d-4f94-b900-a46854860f5c"
+					variableid="1ccc53a6-514b-4f3c-a6d0-dcce187c4a9b"
+					variablename="Programm">
 					</var>
 				</databinding>
 				<missingdatabinding>
@@ -101,29 +101,6 @@
 			id="163bab20-d256-46e0-9526-1b020d3e7bc9"
 			name="setup">
 			</setup>
-			<testmodule
-			id="182e3ca6-4a85-4378-ac9e-43ffe14a93a9"
-			name="Einschraenkung_Stichtag_Monat_aktuell"
-			ref="62e12ae4-a2dc-4dcf-8971-ba6f62e40491"
-			type="Recording">
-				<description>
-					<![CDATA[Validierung Monat_aktuell disabled weil MM 2stellig einliest, das Feld aber nur 1stellig ist bis Oktober]]>
-				</description>
-				<databinding>
-					<var
-					dataname="Jahr_aktuell"
-					datasourceid="af11b9a0-615d-4f94-b900-a46854860f5c"
-					variableid="2ab83d41-140f-43ff-9465-eae6ed0c94d5"
-					variablename="Jahr_aktuell">
-					</var>
-					<var
-					dataname="Monat_aktuell"
-					datasourceid="af11b9a0-615d-4f94-b900-a46854860f5c"
-					variableid="4599b2f4-d16b-4e2e-8b0c-97adf819c64b"
-					variablename="Monat_aktuell">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="2287fc26-b37e-455d-a42a-f5270852a201"
 			name="Tabelle_pruefen_Stichtag_aktuell_mit_OP_Salden_Fusszeile"
@@ -154,6 +131,29 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<testmodule
+			id="4224b62c-92cb-4b2a-9ca7-fd1257bb10b9"
+			name="Einschraenkung_Stichtag_Monat_akt_UserCode"
+			ref="38579cfe-4ab7-468a-a771-581156636365"
+			type="Recording">
+				<description>
+					<![CDATA[UserCode für akt. Monat ein- oder 2stellig und für akt. Jahr]]>
+				</description>
+				<databinding>
+					<var
+					dataname="Jahr_aktuell_yyyy"
+					datasourceid="af11b9a0-615d-4f94-b900-a46854860f5c"
+					variableid="4c42402a-14ca-4f86-bbad-68ae0014a1f7"
+					variablename="Jahr_aktuell_yyyy">
+					</var>
+					<var
+					dataname="Monat_aktuell_M"
+					datasourceid="af11b9a0-615d-4f94-b900-a46854860f5c"
+					variableid="4e408e73-32e8-4cbe-bdb5-0d7a5dfe7ab2"
+					variablename="Monat_aktuell_M">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="4c55ff82-c380-4811-92d4-dceb10d7fd81"
 			name="teardown">
@@ -168,10 +168,10 @@
 				</description>
 				<databinding>
 					<var
-					dataname="KU_2030001"
+					dataname="KU_2030003"
 					datasourceid="af11b9a0-615d-4f94-b900-a46854860f5c"
-					variableid="37c3c704-4730-4a4f-94e8-8b15633f9776"
-					variablename="KU_2030001">
+					variableid="ef552b10-e6da-48de-85e9-8d18bd0070c5"
+					variablename="KU_2030003">
 					</var>
 					<var
 					dataname="KU_2030002_DIV"
@@ -180,10 +180,10 @@
 					variablename="KU_2030002_DIV">
 					</var>
 					<var
-					dataname="KU_2030003"
+					dataname="KU_2030001"
 					datasourceid="af11b9a0-615d-4f94-b900-a46854860f5c"
-					variableid="ef552b10-e6da-48de-85e9-8d18bd0070c5"
-					variablename="KU_2030003">
+					variableid="37c3c704-4730-4a4f-94e8-8b15633f9776"
+					variablename="KU_2030001">
 					</var>
 				</databinding>
 			</testmodule>
@@ -194,16 +194,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="KU_2030001"
-					datasourceid="af11b9a0-615d-4f94-b900-a46854860f5c"
-					variableid="e15b16da-54d1-49fd-b96b-f6e9dc1617a0"
-					variablename="KU_2030001">
-					</var>
-					<var
 					dataname="KU_2030003"
 					datasourceid="af11b9a0-615d-4f94-b900-a46854860f5c"
 					variableid="a9cd8cbd-20d6-48b3-bfd6-2e9449abdee7"
 					variablename="KU_2030003">
+					</var>
+					<var
+					dataname="KU_2030001"
+					datasourceid="af11b9a0-615d-4f94-b900-a46854860f5c"
+					variableid="e15b16da-54d1-49fd-b96b-f6e9dc1617a0"
+					variablename="KU_2030001">
 					</var>
 				</databinding>
 			</testmodule>
@@ -220,10 +220,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="KU_2030003"
+					dataname="KU_2030001"
 					datasourceid="af11b9a0-615d-4f94-b900-a46854860f5c"
-					variableid="e5857567-8b10-4726-bd66-2aa9758050a2"
-					variablename="KU_2030003">
+					variableid="738ea11f-24e1-402a-90ed-602c2f9d044d"
+					variablename="KU_2030001">
 					</var>
 					<var
 					dataname="KU_2030002_DIV"
@@ -232,30 +232,10 @@
 					variablename="KU_2030002_DIV">
 					</var>
 					<var
-					dataname="KU_2030001"
+					dataname="KU_2030003"
 					datasourceid="af11b9a0-615d-4f94-b900-a46854860f5c"
-					variableid="738ea11f-24e1-402a-90ed-602c2f9d044d"
-					variablename="KU_2030001">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="a70e91c9-1710-4977-9290-2c8555ae1c8c"
-			name="Jahr_Monat_aktuell_einlesen"
-			ref="33623c31-e929-408c-9cad-49d7dc7a3a5d"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Jahr_aktuell"
-					datasourceid="af11b9a0-615d-4f94-b900-a46854860f5c"
-					variableid="cab7b16c-3d4f-4cc8-8fdd-4ab9793ee771"
-					variablename="Jahr_aktuell">
-					</var>
-					<var
-					dataname="Monat_aktuell"
-					datasourceid="af11b9a0-615d-4f94-b900-a46854860f5c"
-					variableid="b50ed0c8-9203-490d-9168-90900bc061de"
-					variablename="Monat_aktuell">
+					variableid="e5857567-8b10-4726-bd66-2aa9758050a2"
+					variablename="KU_2030003">
 					</var>
 				</databinding>
 			</testmodule>
@@ -282,11 +262,11 @@
 					value="B_KLSALD KL K">
 					</param>
 					<param
-					name="Jahr_aktuell"
+					name="Jahr_aktuell_yyyy"
 					value="">
 					</param>
 					<param
-					name="Monat_aktuell"
+					name="Monat_aktuell_M"
 					value="">
 					</param>
 					<param
@@ -363,10 +343,6 @@
 							id="12e43e9f-308f-4305-9a84-10ac82dbab61"
 							name="StartAUT">
 							</testmodule>
-							<testmodule
-							id="a70e91c9-1710-4977-9290-2c8555ae1c8c"
-							name="Jahr_Monat_aktuell_einlesen">
-							</testmodule>
 						</setup>
 						<testmodule
 						id="822b3b59-ac89-46c3-a5a1-e27ddc57909b"
@@ -389,8 +365,8 @@
 						name="Tabelle_schliessen">
 						</testmodule>
 						<testmodule
-						id="182e3ca6-4a85-4378-ac9e-43ffe14a93a9"
-						name="Einschraenkung_Stichtag_Monat_aktuell">
+						id="4224b62c-92cb-4b2a-9ca7-fd1257bb10b9"
+						name="Einschraenkung_Stichtag_Monat_akt_UserCode">
 						</testmodule>
 						<testmodule
 						id="0a94f16c-1036-4f4b-a728-b9a4e69a1510"

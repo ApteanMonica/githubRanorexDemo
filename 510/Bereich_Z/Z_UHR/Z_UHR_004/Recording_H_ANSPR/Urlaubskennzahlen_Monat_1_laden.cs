@@ -118,29 +118,32 @@ namespace Z_UHR_004.Recording_H_ANSPR
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Monat_1' with focus on 'FormURLUebersicht.DfMonat'.", repo.FormURLUebersicht.DfMonatInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FormURLUebersicht.TitleBar100UEbersichtUrlaub'", repo.FormURLUebersicht.TitleBar100UEbersichtUrlaubInfo, new ActionTimeout(120000), new RecordItemIndex(0));
+            repo.FormURLUebersicht.TitleBar100UEbersichtUrlaubInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Monat_1' with focus on 'FormURLUebersicht.DfMonat'.", repo.FormURLUebersicht.DfMonatInfo, new RecordItemIndex(1));
             repo.FormURLUebersicht.DfMonat.PressKeys(Monat_1);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FormURLUebersicht.DfMonat'.", repo.FormURLUebersicht.DfMonatInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FormURLUebersicht.DfMonat'.", repo.FormURLUebersicht.DfMonatInfo, new RecordItemIndex(2));
             Keyboard.PrepareFocus(repo.FormURLUebersicht.DfMonat);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Monat_1) on item 'FormURLUebersicht.DfMonat'.", repo.FormURLUebersicht.DfMonatInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Monat_1) on item 'FormURLUebersicht.DfMonat'.", repo.FormURLUebersicht.DfMonatInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.FormURLUebersicht.DfMonatInfo, "Text", Monat_1);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'FormURLUebersicht.DfJahr'.", repo.FormURLUebersicht.DfJahrInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'FormURLUebersicht.DfJahr'.", repo.FormURLUebersicht.DfJahrInfo, new RecordItemIndex(4));
             repo.FormURLUebersicht.DfJahr.PressKeys(Jahr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'FormURLUebersicht.DfJahr'.", repo.FormURLUebersicht.DfJahrInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'FormURLUebersicht.DfJahr'.", repo.FormURLUebersicht.DfJahrInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.FormURLUebersicht.DfJahrInfo, "Text", Jahr);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Pers_nr' with focus on 'FormURLUebersicht.DfPersNr'.", repo.FormURLUebersicht.DfPersNrInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Pers_nr' with focus on 'FormURLUebersicht.DfPersNr'.", repo.FormURLUebersicht.DfPersNrInfo, new RecordItemIndex(6));
             repo.FormURLUebersicht.DfPersNr.PressKeys(Pers_nr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Pers_nr) on item 'FormURLUebersicht.DfPersNr'.", repo.FormURLUebersicht.DfPersNrInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Pers_nr) on item 'FormURLUebersicht.DfPersNr'.", repo.FormURLUebersicht.DfPersNrInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.FormURLUebersicht.DfPersNrInfo, "Text", Pers_nr);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormURLUebersicht.PbCommonReload' at Center.", repo.FormURLUebersicht.PbCommonReloadInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormURLUebersicht.PbCommonReload' at Center.", repo.FormURLUebersicht.PbCommonReloadInfo, new RecordItemIndex(8));
             repo.FormURLUebersicht.PbCommonReload.Click();
             
         }

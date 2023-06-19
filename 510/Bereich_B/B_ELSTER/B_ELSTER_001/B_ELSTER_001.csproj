@@ -79,6 +79,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\..\Testdaten\Allgemein\UserCode\aptean.cs">
+      <Link>aptean.cs</Link>
+      <id>e50794c2-eab6-4c04-a957-abc55e73e2cc</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>a7d96558-b47b-47bf-b230-4ff76895dedf</id>
     </Compile>
@@ -87,12 +91,6 @@
       <DependentUpon>B_ELSTER_001Repository.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
       <id>02595f7e-0f78-4b3b-8610-9773826a1166</id>
-    </Compile>
-    <Compile Include="B_ELSTER_002_ZMRepository.cs">
-      <BoundTo>430a8cd5-e520-4d6b-9b41-d95a21aa02cd</BoundTo>
-      <DependentUpon>B_ELSTER_002_ZMRepository.rxrep</DependentUpon>
-      <RepositoryCode>true</RepositoryCode>
-      <id>2c241e5b-f491-48f8-bbfe-e904dca19baa</id>
     </Compile>
     <Compile Include="Program.cs">
       <id>2718d60e-1e77-4355-9022-a01b68535ec6</id>
@@ -205,6 +203,30 @@
       <id>1a1b752b-2844-4780-8295-7f4865d2e58b</id>
       <BoundTo>6acd373f-3de0-4dae-9020-0291177a0850</BoundTo>
     </Compile>
+    <Compile Include="Recordings\Tagesdatum2_ermitteln_eric.cs">
+      <DependentUpon>Tagesdatum2_ermitteln_eric.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7d50e3cf-fcf0-4101-8344-71834dcd270b</id>
+      <BoundTo>20a19365-31d1-4c97-b762-0e182d554170</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tagesdatum2_ermitteln_eric.UserCode.cs">
+      <DependentUpon>Tagesdatum2_ermitteln_eric.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1116dee2-bb57-4348-852c-38dcb9600ce5</id>
+      <BoundTo>20a19365-31d1-4c97-b762-0e182d554170</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tagesdatum2_ermitteln_XML.cs">
+      <DependentUpon>Tagesdatum2_ermitteln_XML.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1edfe388-1440-4443-be9a-ec5d9e118f3f</id>
+      <BoundTo>38a16983-2796-4886-831a-6fba5e3fd1fd</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Tagesdatum2_ermitteln_XML.UserCode.cs">
+      <DependentUpon>Tagesdatum2_ermitteln_XML.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ae789e4f-e48f-4628-8539-76d5a0f6f85b</id>
+      <BoundTo>38a16983-2796-4886-831a-6fba5e3fd1fd</BoundTo>
+    </Compile>
     <Compile Include="Recordings\Tagesdatum_ermitteln_eric.cs">
       <BoundTo>867789ea-8549-4ff8-ad97-d7e0651efc82</BoundTo>
       <DependentUpon>Tagesdatum_ermitteln_eric.rxrec</DependentUpon>
@@ -301,6 +323,30 @@
       <id>155b49b0-9a25-4fc2-869c-8aae378d8d12</id>
       <BoundTo>a336227a-ebd6-4890-aeaf-79679d791081</BoundTo>
     </Compile>
+    <Compile Include="Recordings_notepad\Pruefung_Eric_log_Tagesdatum_Tagesdatum2_UserCode.cs">
+      <BoundTo>b730d23b-dd4e-47da-8cfe-654df6425520</BoundTo>
+      <DependentUpon>Pruefung_Eric_log_Tagesdatum_Tagesdatum2_UserCode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>121bf076-584d-4278-a342-7540f39cfdb0</id>
+    </Compile>
+    <Compile Include="Recordings_notepad\Pruefung_Eric_log_Tagesdatum_Tagesdatum2_UserCode.UserCode.cs">
+      <BoundTo>b730d23b-dd4e-47da-8cfe-654df6425520</BoundTo>
+      <DependentUpon>Pruefung_Eric_log_Tagesdatum_Tagesdatum2_UserCode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ff7a9a2e-2577-463d-b0f0-1e6348ef0c69</id>
+    </Compile>
+    <Compile Include="Recordings_notepad\Pruefung_XML_Datei_Tagesdatum_Tagesdatum2_UserCode.cs">
+      <BoundTo>4daf4304-5214-47c9-80c5-7a137179e780</BoundTo>
+      <DependentUpon>Pruefung_XML_Datei_Tagesdatum_Tagesdatum2_UserCode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8f7bd4d0-0e74-47a6-9af5-1d9903878f9f</id>
+    </Compile>
+    <Compile Include="Recordings_notepad\Pruefung_XML_Datei_Tagesdatum_Tagesdatum2_UserCode.UserCode.cs">
+      <BoundTo>4daf4304-5214-47c9-80c5-7a137179e780</BoundTo>
+      <DependentUpon>Pruefung_XML_Datei_Tagesdatum_Tagesdatum2_UserCode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d162a433-7d56-41f9-aa71-e617ef011357</id>
+    </Compile>
     <Compile Include="Recordings_notepad\Sichern_Eric_log_UVA.cs">
       <BoundTo>5aa5427a-9dc4-4630-8d74-1df01de60978</BoundTo>
       <DependentUpon>Sichern_Eric_log_UVA.rxrec</DependentUpon>
@@ -389,12 +435,6 @@
       <repoid>77e7d5d1-13c9-4e49-915a-744735a3d73e</repoid>
       <reporootid>1262a2ee-e29b-445e-877e-ecfaf34fa4ca</reporootid>
     </None>
-    <None Include="B_ELSTER_002_ZMRepository.rximg">
-      <BoundTo>430a8cd5-e520-4d6b-9b41-d95a21aa02cd</BoundTo>
-      <DependentUpon>B_ELSTER_002_ZMRepository.rxrep</DependentUpon>
-      <imageblob>true</imageblob>
-      <id>fe016d7c-71d9-4975-ba0a-ec623156602a</id>
-    </None>
     <None Include="Recordings\CloseAUT_Elster.rxrec">
       <BoundTo>acbcc6dc-41b5-4847-89e4-c7773a1c02bd</BoundTo>
       <id>0203af73-48f2-413e-8c4a-64c103520f02</id>
@@ -440,6 +480,16 @@
       <id>6acd373f-3de0-4dae-9020-0291177a0850</id>
       <recordtableid>3b0cde8d-76d8-4257-8d27-f0a57d5a4fad</recordtableid>
     </None>
+    <None Include="Recordings\Tagesdatum2_ermitteln_eric.rxrec">
+      <BoundTo>acbcc6dc-41b5-4847-89e4-c7773a1c02bd</BoundTo>
+      <id>20a19365-31d1-4c97-b762-0e182d554170</id>
+      <recordtableid>c61390ad-f8a7-47ee-94b9-f974d6228969</recordtableid>
+    </None>
+    <None Include="Recordings\Tagesdatum2_ermitteln_XML.rxrec">
+      <BoundTo>acbcc6dc-41b5-4847-89e4-c7773a1c02bd</BoundTo>
+      <id>38a16983-2796-4886-831a-6fba5e3fd1fd</id>
+      <recordtableid>a44878d3-8a19-449c-a262-42b6a8299086</recordtableid>
+    </None>
     <None Include="Recordings\Tagesdatum_ermitteln_eric.rxrec">
       <BoundTo>acbcc6dc-41b5-4847-89e4-c7773a1c02bd</BoundTo>
       <id>867789ea-8549-4ff8-ad97-d7e0651efc82</id>
@@ -479,6 +529,16 @@
       <id>a336227a-ebd6-4890-aeaf-79679d791081</id>
       <recordtableid>9826e4d2-1a95-466a-b30c-cac868ab02b9</recordtableid>
       <BoundTo>acbcc6dc-41b5-4847-89e4-c7773a1c02bd</BoundTo>
+    </None>
+    <None Include="Recordings_notepad\Pruefung_Eric_log_Tagesdatum_Tagesdatum2_UserCode.rxrec">
+      <BoundTo>acbcc6dc-41b5-4847-89e4-c7773a1c02bd</BoundTo>
+      <id>b730d23b-dd4e-47da-8cfe-654df6425520</id>
+      <recordtableid>973495f4-dd14-40f4-a929-3594fd2d2183</recordtableid>
+    </None>
+    <None Include="Recordings_notepad\Pruefung_XML_Datei_Tagesdatum_Tagesdatum2_UserCode.rxrec">
+      <BoundTo>acbcc6dc-41b5-4847-89e4-c7773a1c02bd</BoundTo>
+      <id>4daf4304-5214-47c9-80c5-7a137179e780</id>
+      <recordtableid>d3dc51e8-6ac6-4c0b-88cd-a96cfc1502dc</recordtableid>
     </None>
     <None Include="Recordings_notepad\Sichern_Eric_log_UVA.rxrec">
       <BoundTo>acbcc6dc-41b5-4847-89e4-c7773a1c02bd</BoundTo>

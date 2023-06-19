@@ -43,7 +43,6 @@ namespace B_EXOPV_003.Recordings_B_BUAB
         {
             Jahr = "2020";
             Monat = "02";
-            Tagesdatum = "";
         }
 
         /// <summary>
@@ -78,18 +77,6 @@ namespace B_EXOPV_003.Recordings_B_BUAB
         {
             get { return _Monat; }
             set { _Monat = value; }
-        }
-
-        string _Tagesdatum;
-
-        /// <summary>
-        /// Gets or sets the value of variable Tagesdatum.
-        /// </summary>
-        [TestVariable("1eaa3858-72a5-482e-b22c-d06f24a5e4db")]
-        public string Tagesdatum
-        {
-            get { return _Tagesdatum; }
-            set { _Tagesdatum = value; }
         }
 
 #endregion

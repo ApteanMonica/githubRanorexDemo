@@ -79,6 +79,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\..\Testdaten\Allgemein\UserCode\aptean.cs">
+      <Link>aptean.cs</Link>
+      <id>4a2cfd7f-91c2-4bab-8b59-73dfbd717b38</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>42d4f329-a817-4d5d-be77-4ec9dade4c1b</id>
     </Compile>
@@ -247,6 +251,18 @@
       <id>de4c58d9-4d8f-4cb0-8f49-3edf3a3a8efb</id>
       <BoundTo>f35ebeb4-44b0-4570-834d-e90732ae8239</BoundTo>
     </Compile>
+    <Compile Include="Recordings_B_BUAB\B_BUAB_Buchungsdatum_pruefen_UserCode.cs">
+      <DependentUpon>B_BUAB_Buchungsdatum_pruefen_UserCode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f9fc59ad-5229-49fe-b74b-1ccf09416d48</id>
+      <BoundTo>f84c8425-6234-4064-b45f-be686cc601fc</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\B_BUAB_Buchungsdatum_pruefen_UserCode.UserCode.cs">
+      <DependentUpon>B_BUAB_Buchungsdatum_pruefen_UserCode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fa5fef73-1c6f-4f02-a674-c62dded9710a</id>
+      <BoundTo>f84c8425-6234-4064-b45f-be686cc601fc</BoundTo>
+    </Compile>
     <Compile Include="Recordings_B_BUAB\Close_B_BUAB.cs">
       <DependentUpon>Close_B_BUAB.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -283,14 +299,14 @@
       <UserCode>true</UserCode>
       <id>d119576d-b74f-45d8-9c14-821358bd46f2</id>
     </Compile>
-    <Compile Include="Recordings_B_EXOPS\Belege_in_Schnittstelle_pruefen_B_nach_UEberleitung_v_fibu.cs">
-      <DependentUpon>Belege_in_Schnittstelle_pruefen_B_nach_UEberleitung_v_fibu.rxrec</DependentUpon>
+    <Compile Include="Recordings_B_EXOPS\Belege_in_Schnittstelle_pruefen_B_nach_Ueberleitung.cs">
+      <DependentUpon>Belege_in_Schnittstelle_pruefen_B_nach_Ueberleitung.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>a10150db-8d15-4f49-bed7-111f7b90720e</id>
       <BoundTo>bdf64f0e-980f-4c45-8daa-3ed06039ef2a</BoundTo>
     </Compile>
-    <Compile Include="Recordings_B_EXOPS\Belege_in_Schnittstelle_pruefen_B_nach_UEberleitung_v_fibu.UserCode.cs">
-      <DependentUpon>Belege_in_Schnittstelle_pruefen_B_nach_UEberleitung_v_fibu.rxrec</DependentUpon>
+    <Compile Include="Recordings_B_EXOPS\Belege_in_Schnittstelle_pruefen_B_nach_UEberleitung.UserCode.cs">
+      <DependentUpon>Belege_in_Schnittstelle_pruefen_B_nach_Ueberleitung.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>d2b07c2e-5e99-4bcb-a19c-9a42c51fa2b5</id>
       <BoundTo>bdf64f0e-980f-4c45-8daa-3ed06039ef2a</BoundTo>
@@ -318,6 +334,18 @@
       <UserCode>true</UserCode>
       <id>a6289dbc-f1ac-4b6d-a818-1dedc8b3f6db</id>
       <BoundTo>3fc33cf9-9fac-4f74-98f6-10e9f526de13</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\Tagesdatum_in_Schnittstelle_pruefen_B_nach_Ueberleitung_UserCode.cs">
+      <DependentUpon>Tagesdatum_in_Schnittstelle_pruefen_B_nach_Ueberleitung_UserCode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6d644f2b-8ea2-44b5-a034-8a5208d3417b</id>
+      <BoundTo>dd93d075-b1a1-4275-b44e-43fa355093f8</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\Datum_in_Schnittstelle_pruefen_B_nach_UEberleitung_UserCode.UserCode.cs">
+      <DependentUpon>Tagesdatum_in_Schnittstelle_pruefen_B_nach_Ueberleitung_UserCode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>45f68e1d-cea8-4e81-ad86-6f9eefd20c88</id>
+      <BoundTo>dd93d075-b1a1-4275-b44e-43fa355093f8</BoundTo>
     </Compile>
     <Compile Include="Recordings_B_EXOPS\Einschraenkungen_K_200009_2020_02.cs">
       <DependentUpon>Einschraenkungen_K_200009_2020_02.rxrec</DependentUpon>
@@ -354,6 +382,18 @@
       <UserCode>true</UserCode>
       <id>29a2dd51-0493-4a6c-bb72-d6c45ce7320a</id>
       <BoundTo>519c9e7a-d966-44b7-b2b7-e929e1cd26c2</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\Tagesdatum_in_Schnittstelle_pruefen_C_nach_Verbuchung_UserCode.cs">
+      <BoundTo>0bd1f22c-b5a7-4491-ae2f-ca1ba2e6ec4b</BoundTo>
+      <DependentUpon>Tagesdatum_in_Schnittstelle_pruefen_C_nach_Verbuchung_UserCode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>45720682-e883-4d5c-a022-c32df1d890a9</id>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\Tagesdatum_in_Schnittstelle_pruefen_C_nach_Verbuchung_UserCode.UserCode.cs">
+      <BoundTo>0bd1f22c-b5a7-4491-ae2f-ca1ba2e6ec4b</BoundTo>
+      <DependentUpon>Tagesdatum_in_Schnittstelle_pruefen_C_nach_Verbuchung_UserCode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d1eb5dfe-dd80-4140-8089-f1a42d900c2e</id>
     </Compile>
     <Compile Include="Recordings_V_FIBU\Wiederholdruck_kontrollieren_disabled.cs">
       <BoundTo>a40c1d68-ee90-44de-89f4-81553516b370</BoundTo>
@@ -520,6 +560,11 @@
       <id>f35ebeb4-44b0-4570-834d-e90732ae8239</id>
       <recordtableid>01590db5-7bbd-46f7-b81e-8b7e45f17a89</recordtableid>
     </None>
+    <None Include="Recordings_B_BUAB\B_BUAB_Buchungsdatum_pruefen_UserCode.rxrec">
+      <id>f84c8425-6234-4064-b45f-be686cc601fc</id>
+      <recordtableid>8b447f81-9cfa-418e-9476-2af208cafbc2</recordtableid>
+      <BoundTo>3a14029f-2a2d-4683-bbdd-eaa46de6e6ac</BoundTo>
+    </None>
     <None Include="Recordings_B_BUAB\Close_B_BUAB.rxrec">
       <id>70a59b18-4b27-4a57-b2e4-b10ac2e2c04b</id>
       <recordtableid>81713eae-b45f-46e1-ba8e-ad1e67636645</recordtableid>
@@ -535,7 +580,7 @@
       <recordtableid>10e912a6-9f77-438b-bb71-5a530dca7bc9</recordtableid>
       <BoundTo>3a14029f-2a2d-4683-bbdd-eaa46de6e6ac</BoundTo>
     </None>
-    <None Include="Recordings_B_EXOPS\Belege_in_Schnittstelle_pruefen_B_nach_UEberleitung_v_fibu.rxrec">
+    <None Include="Recordings_B_EXOPS\Belege_in_Schnittstelle_pruefen_B_nach_Ueberleitung.rxrec">
       <id>bdf64f0e-980f-4c45-8daa-3ed06039ef2a</id>
       <recordtableid>c150558c-ff75-42c1-8afb-15785852754b</recordtableid>
       <BoundTo>3a14029f-2a2d-4683-bbdd-eaa46de6e6ac</BoundTo>
@@ -548,6 +593,11 @@
     <None Include="Recordings_B_EXOPS\CloseAUT_2.rxrec">
       <id>3fc33cf9-9fac-4f74-98f6-10e9f526de13</id>
       <recordtableid>566513c5-0901-426e-bacc-f224a10beb33</recordtableid>
+      <BoundTo>3a14029f-2a2d-4683-bbdd-eaa46de6e6ac</BoundTo>
+    </None>
+    <None Include="Recordings_B_EXOPS\Tagesdatum_in_Schnittstelle_pruefen_B_nach_Ueberleitung_UserCode.rxrec">
+      <id>dd93d075-b1a1-4275-b44e-43fa355093f8</id>
+      <recordtableid>da8dc473-6329-4124-8285-0dc6a7d9053a</recordtableid>
       <BoundTo>3a14029f-2a2d-4683-bbdd-eaa46de6e6ac</BoundTo>
     </None>
     <None Include="Recordings_B_EXOPS\Einschraenkungen_K_200009_2020_02.rxrec">
@@ -564,6 +614,11 @@
       <id>519c9e7a-d966-44b7-b2b7-e929e1cd26c2</id>
       <recordtableid>24f28825-a03a-4481-8c65-924b2b15181c</recordtableid>
       <BoundTo>3a14029f-2a2d-4683-bbdd-eaa46de6e6ac</BoundTo>
+    </None>
+    <None Include="Recordings_B_EXOPS\Tagesdatum_in_Schnittstelle_pruefen_C_nach_Verbuchung_UserCode.rxrec">
+      <BoundTo>3a14029f-2a2d-4683-bbdd-eaa46de6e6ac</BoundTo>
+      <id>0bd1f22c-b5a7-4491-ae2f-ca1ba2e6ec4b</id>
+      <recordtableid>7d5e5f7c-9d25-4b6b-91ed-7f7c678a68dd</recordtableid>
     </None>
     <None Include="Recordings_V_FIBU\Wiederholdruck_kontrollieren_disabled.rxrec">
       <id>a40c1d68-ee90-44de-89f4-81553516b370</id>

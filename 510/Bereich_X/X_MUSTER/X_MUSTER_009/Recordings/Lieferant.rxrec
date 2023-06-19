@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d621e17d-0998-40bd-9bff-6e09367ce557"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Lieferant"
+	namespace="X_MUSTER_009.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeRegex"
+		enabled="True"
+		optional="False"
+		searchpropertyid="277f6765-8ce6-42d2-a5e3-82b4754a4479">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="669326e7-5416-480c-9013-8de5cf9a10a0"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAdr_nr Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				3\d{5}
+			</matchvalue>
+		</validationitem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message="LIEFERANT"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="7cc2c844-650b-44ff-8528-c7f7b4243991">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="29b22e40-c548-428c-a95b-527081fd1308"
+	name="X_MUSTER_009Repository"
+	relativepath="..\X_MUSTER_009Repository.rxrep">
+		<codegen
+		classname="X_MUSTER_009Repository"
+		namespace="X_MUSTER_009">
+		</codegen>
+		<rootfolder
+		id="005ae77d-2bb8-4d72-910a-6c5a7222cf3d"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Lieferant.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
