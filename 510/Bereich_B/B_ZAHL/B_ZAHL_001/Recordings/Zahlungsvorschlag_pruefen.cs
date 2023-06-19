@@ -106,34 +106,31 @@ namespace B_ZAHL_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Lieferanten - Zahlungsverkehr') on item 'FrmZahlMain.TitleBar100LieferantenZahlungsver'.", repo.FrmZahlMain.TitleBar100LieferantenZahlungsverInfo, new RecordItemIndex(0));
             Validate.AttributeContains(repo.FrmZahlMain.TitleBar100LieferantenZahlungsverInfo, "Text", "Lieferanten - Zahlungsverkehr");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.Row_mit_ZV_TEXT_B_ZAHL_001'", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.Row_mit_ZV_TEXT_B_ZAHL_001Info, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.Row_mit_ZV_TEXT_B_ZAHL_001Info.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$ZV_TEXT) on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.Row_mit_ZV_TEXT_B_ZAHL_001'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.Row_mit_ZV_TEXT_B_ZAHL_001Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$ZV_TEXT) on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.Row_mit_ZV_TEXT_B_ZAHL_001'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.Row_mit_ZV_TEXT_B_ZAHL_001Info, new RecordItemIndex(1));
             Validate.AttributeContains(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.Row_mit_ZV_TEXT_B_ZAHL_001Info, "Text", ZV_TEXT);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='5.784,00') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Zeile_mit_ZV_TEXT_B_ZAHL_001'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Zeile_mit_ZV_TEXT_B_ZAHL_001Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='5.784,00') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Zeile_mit_ZV_TEXT_B_ZAHL_001'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Zeile_mit_ZV_TEXT_B_ZAHL_001Info, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Zeile_mit_ZV_TEXT_B_ZAHL_001Info, "Text", "5.784,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='7') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzah_Zeile_mit_ZV_TEXT_B_ZAHL_001'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzah_Zeile_mit_ZV_TEXT_B_ZAHL_001Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='7') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzah_Zeile_mit_ZV_TEXT_B_ZAHL_001'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzah_Zeile_mit_ZV_TEXT_B_ZAHL_001Info, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzah_Zeile_mit_ZV_TEXT_B_ZAHL_001Info, "Text", "7");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZldtDtanlag_Zeile_mit_ZV_TEXT_B_ZAHL_001'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZldtDtanlag_Zeile_mit_ZV_TEXT_B_ZAHL_001Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZldtDtanlag_Zeile_mit_ZV_TEXT_B_ZAHL_001'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZldtDtanlag_Zeile_mit_ZV_TEXT_B_ZAHL_001Info, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZldtDtanlag_Zeile_mit_ZV_TEXT_B_ZAHL_001Info, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.Column0_Zeile_mit_ZV_TEXT_B_ZAHL_001' at Center.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.Column0_Zeile_mit_ZV_TEXT_B_ZAHL_001Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.Column0_Zeile_mit_ZV_TEXT_B_ZAHL_001' at Center.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.Column0_Zeile_mit_ZV_TEXT_B_ZAHL_001Info, new RecordItemIndex(5));
             repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.Column0_Zeile_mit_ZV_TEXT_B_ZAHL_001.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmZahlMain.PbDataAcessEdit' at Center.", repo.FrmZahlMain.PbDataAcessEditInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmZahlMain.PbDataAcessEdit' at Center.", repo.FrmZahlMain.PbDataAcessEditInfo, new RecordItemIndex(6));
             repo.FrmZahlMain.PbDataAcessEdit.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmZlvsAEndern.TitleBar100LieferantenZahlvorschl'", repo.FrmZlvsAEndern.TitleBar100LieferantenZahlvorschlInfo, new ActionTimeout(120000), new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmZlvsAEndern.TitleBar100LieferantenZahlvorschl'", repo.FrmZlvsAEndern.TitleBar100LieferantenZahlvorschlInfo, new ActionTimeout(120000), new RecordItemIndex(7));
             repo.FrmZlvsAEndern.TitleBar100LieferantenZahlvorschlInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Lieferanten - Zahlvorschlag bearbeiten:') on item 'FrmZlvsAEndern.TitleBar100LieferantenZahlvorschl'.", repo.FrmZlvsAEndern.TitleBar100LieferantenZahlvorschlInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Lieferanten - Zahlvorschlag bearbeiten:') on item 'FrmZlvsAEndern.TitleBar100LieferantenZahlvorschl'.", repo.FrmZlvsAEndern.TitleBar100LieferantenZahlvorschlInfo, new RecordItemIndex(8));
             Validate.AttributeContains(repo.FrmZlvsAEndern.TitleBar100LieferantenZahlvorschlInfo, "Text", "Lieferanten - Zahlvorschlag bearbeiten:");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmZlvsAEndern.PbDataAccessLaden' at Center.", repo.FrmZlvsAEndern.PbDataAccessLadenInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmZlvsAEndern.PbDataAccessLaden' at Center.", repo.FrmZlvsAEndern.PbDataAccessLadenInfo, new RecordItemIndex(9));
             repo.FrmZlvsAEndern.PbDataAccessLaden.Click();
             
         }

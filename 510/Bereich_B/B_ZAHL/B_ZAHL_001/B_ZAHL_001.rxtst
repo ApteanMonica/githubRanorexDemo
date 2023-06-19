@@ -39,6 +39,10 @@
 					value="">
 					</param>
 					<param
+					name="ZV_NR"
+					value="">
+					</param>
+					<param
 					name="LF_303040"
 					value="303040">
 					</param>
@@ -114,7 +118,7 @@
 			ref="c3a79100-5b97-403a-bd0e-70f62b6aa3ad"
 			type="Recording">
 				<description>
-					<![CDATA[auf einstellige ZV-Nummer prüfen mit AttributeRegex \d{1}]]>
+					<![CDATA[ZV_NR ermittelt in B_ZAHL (vorher: auf einstellige ZV-Nummer prüfen mit AttributeRegex \d{1})]]>
 				</description>
 				<databinding>
 					<var
@@ -122,6 +126,12 @@
 					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
 					variableid="6e92dc5f-a161-4941-aacc-835bdf769ec9"
 					variablename="LF_303040">
+					</var>
+					<var
+					dataname="ZV_NR"
+					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
+					variableid="4c32981c-3344-4cec-9a70-a05759a6e4c0"
+					variablename="ZV_NR">
 					</var>
 				</databinding>
 			</testmodule>
@@ -151,9 +161,15 @@
 			ref="11f34ae6-9370-4e15-8af2-c86fb759c342"
 			type="Recording">
 				<description>
-					<![CDATA[auf einstellige ZV-Nummer prüfen mit AttributeRegex \d{1}]]>
+					<![CDATA[ZV_NR ermittelt in B_ZAHL (vorher: auf einstellige ZV-Nummer prüfen mit AttributeRegex \d{1})]]>
 				</description>
 				<databinding>
+					<var
+					dataname="ZV_NR"
+					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
+					variableid="0b4323c7-7dda-4f54-99af-b4c2fcf43a34"
+					variablename="ZV_NR">
+					</var>
 					<var
 					dataname="LF_303041_DIV"
 					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
@@ -193,16 +209,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="LF_303040"
+					dataname="FAELL_SKONTO_1"
 					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
-					variableid="d54b121b-9c87-4e7c-a428-62e70fd10721"
-					variablename="LF_303040">
-					</var>
-					<var
-					dataname="LF_303041_DIV"
-					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
-					variableid="20025243-9389-4b82-bf10-51333ebdfe17"
-					variablename="LF_303041_DIV">
+					variableid="9487a890-a75a-46f5-908f-8b5029abd08d"
+					variablename="FAELL_SKONTO_1">
 					</var>
 					<var
 					dataname="ZV_TEXT_A"
@@ -211,10 +221,16 @@
 					variablename="ZV_TEXT_A">
 					</var>
 					<var
-					dataname="FAELL_SKONTO_1"
+					dataname="LF_303041_DIV"
 					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
-					variableid="9487a890-a75a-46f5-908f-8b5029abd08d"
-					variablename="FAELL_SKONTO_1">
+					variableid="20025243-9389-4b82-bf10-51333ebdfe17"
+					variablename="LF_303041_DIV">
+					</var>
+					<var
+					dataname="LF_303040"
+					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
+					variableid="d54b121b-9c87-4e7c-a428-62e70fd10721"
+					variablename="LF_303040">
 					</var>
 					<var
 					dataname="FAELL_NETTO_2"
@@ -279,16 +295,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Tagesdatum"
-					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
-					variableid="5a6dbb8a-9545-494e-b963-24ad8fd1241e"
-					variablename="Tagesdatum">
-					</var>
-					<var
 					dataname="ZV_TEXT"
 					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
 					variableid="1e2743fc-cc8f-4570-b012-9449747b8f90"
 					variablename="ZV_TEXT">
+					</var>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
+					variableid="5a6dbb8a-9545-494e-b963-24ad8fd1241e"
+					variablename="Tagesdatum">
 					</var>
 				</databinding>
 			</testmodule>
@@ -349,6 +365,30 @@
 			type="Recording">
 				<databinding>
 					<var
+					dataname="LF_303041_DIV"
+					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
+					variableid="0def8319-c0b0-4c8e-96db-4a412af66413"
+					variablename="LF_303041_DIV">
+					</var>
+					<var
+					dataname="LF_303040"
+					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
+					variableid="f7e2fd68-b6f8-4d01-ac57-c6fc80010c61"
+					variablename="LF_303040">
+					</var>
+					<var
+					dataname="ZV_TEXT"
+					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
+					variableid="61fd7610-b703-46b4-9b9f-c6d73fd39e44"
+					variablename="ZV_TEXT">
+					</var>
+					<var
+					dataname="FAELL_SKONTO_1"
+					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
+					variableid="6a0569be-7889-4d98-b42b-50b035cd82c7"
+					variablename="FAELL_SKONTO_1">
+					</var>
+					<var
 					dataname="FAELL_NETTO_2"
 					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
 					variableid="356a5d9b-ebde-451e-addd-a7fd05df45e6"
@@ -360,29 +400,28 @@
 					variableid="6d99666a-6a21-431c-ba21-4a8641125591"
 					variablename="FAELL_SKONTO_2">
 					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="bd16b3f9-b50a-4222-81ee-b73a647dcfbe"
+			name="ZV_NR_GetValue_fuer_B_KLAB"
+			ref="1d8671b8-5bbd-4b8e-8c11-9e9af1858b2a"
+			type="Recording">
+				<description>
+					<![CDATA[ZV_NR ermitteln für OP-Prüfung in B_KLAB]]>
+				</description>
+				<databinding>
 					<var
-					dataname="FAELL_SKONTO_1"
+					dataname="ZV_NR"
 					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
-					variableid="6a0569be-7889-4d98-b42b-50b035cd82c7"
-					variablename="FAELL_SKONTO_1">
+					variableid="6342d0d6-5d6c-4c64-860c-daf9c4b9f5f7"
+					variablename="ZV_NR">
 					</var>
 					<var
 					dataname="ZV_TEXT"
 					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
-					variableid="61fd7610-b703-46b4-9b9f-c6d73fd39e44"
+					variableid="88bf5e7d-8b30-4d06-a153-d976d2893243"
 					variablename="ZV_TEXT">
-					</var>
-					<var
-					dataname="LF_303041_DIV"
-					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
-					variableid="0def8319-c0b0-4c8e-96db-4a412af66413"
-					variablename="LF_303041_DIV">
-					</var>
-					<var
-					dataname="LF_303040"
-					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
-					variableid="f7e2fd68-b6f8-4d01-ac57-c6fc80010c61"
-					variablename="LF_303040">
 					</var>
 				</databinding>
 			</testmodule>
@@ -422,16 +461,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Tagesdatum"
-					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
-					variableid="6444ff92-900f-403f-8ac6-18b129c9b94b"
-					variablename="Tagesdatum">
-					</var>
-					<var
 					dataname="ZV_TEXT_A"
 					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
 					variableid="3d73d85a-c9db-4f2e-b08e-7d22029ef33b"
 					variablename="ZV_TEXT_A">
+					</var>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
+					variableid="6444ff92-900f-403f-8ac6-18b129c9b94b"
+					variablename="Tagesdatum">
 					</var>
 				</databinding>
 			</testmodule>
@@ -461,16 +500,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
-					variableid="5730f093-c4ca-4d1e-9e43-95a5e8f84395"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm"
 					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
 					variableid="b6044b3b-0136-49a3-a774-dfe6676e0201"
 					variablename="Programm">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="048bbf29-b48b-4308-9a53-9d5c3554a581"
+					variableid="5730f093-c4ca-4d1e-9e43-95a5e8f84395"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -568,6 +607,10 @@
 						<testmodule
 						id="6ee1593f-0a5a-446e-bfa1-19fa721deb29"
 						name="ZV_Erstellung_Druckmasken_schliessen">
+						</testmodule>
+						<testmodule
+						id="bd16b3f9-b50a-4222-81ee-b73a647dcfbe"
+						name="ZV_NR_GetValue_fuer_B_KLAB">
 						</testmodule>
 						<testmodule
 						id="6f9d676a-a626-4500-907f-da5f84e9ea7b"

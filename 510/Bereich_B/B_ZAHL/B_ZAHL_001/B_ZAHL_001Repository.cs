@@ -402,6 +402,7 @@ namespace B_ZAHL_001
         {
             RepoItemInfo _row_mit_zv_text_b_zahl_001Info;
             RepoItemInfo _row_mit_zv_text_b_zahl_001_aInfo;
+            RepoItemInfo _colzlvsvorschlag_zeile_mit_zv_text_b_zahl_001Info;
             RepoItemInfo _column0_zeile_mit_zv_text_b_zahl_001Info;
             RepoItemInfo _column0_zeile_mit_zv_text_b_zahl_001_aInfo;
             RepoItemInfo _colzlvssumme_zeile_mit_zv_text_b_zahl_001Info;
@@ -419,6 +420,7 @@ namespace B_ZAHL_001
             {
                 _row_mit_zv_text_b_zahl_001Info = new RepoItemInfo(this, "Row_mit_ZV_TEXT_B_ZAHL_001", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]", "", 30000, null, "8a4e3005-b24b-434c-9361-56812ef062e9");
                 _row_mit_zv_text_b_zahl_001_aInfo = new RepoItemInfo(this, "Row_mit_ZV_TEXT_B_ZAHL_001_A", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT_A]", "", 30000, null, "f5c20c60-8313-493d-858f-d1acab2fc8ea");
+                _colzlvsvorschlag_zeile_mit_zv_text_b_zahl_001Info = new RepoItemInfo(this, "ColZlvsVorschlag_Zeile_mit_ZV_TEXT_B_ZAHL_001", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]//cell[@accessiblename~'colZlvs_vorschlag']", "", 30000, null, "5baa5fc5-b91e-4372-aaab-1aeed20fe728");
                 _column0_zeile_mit_zv_text_b_zahl_001Info = new RepoItemInfo(this, "Column0_Zeile_mit_ZV_TEXT_B_ZAHL_001", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'Column 0']", "", 30000, null, "667d462a-c95b-4c52-bc1b-66739ad0094b");
                 _column0_zeile_mit_zv_text_b_zahl_001_aInfo = new RepoItemInfo(this, "Column0_Zeile_mit_ZV_TEXT_B_ZAHL_001_A", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT_A]/cell[@accessiblename~'Column 0']", "", 30000, null, "e807d843-62fa-4c1b-be71-8276dbad2707");
                 _colzlvssumme_zeile_mit_zv_text_b_zahl_001Info = new RepoItemInfo(this, "ColZlvsSumme_Zeile_mit_ZV_TEXT_B_ZAHL_001", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZlvs_summe']", "", 30000, null, "d66ae382-7c9e-4fd3-9e96-8e9a8fdd63f9");
@@ -498,6 +500,30 @@ namespace B_ZAHL_001
                 get
                 {
                     return _row_mit_zv_text_b_zahl_001_aInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColZlvsVorschlag_Zeile_mit_ZV_TEXT_B_ZAHL_001 item.
+            /// </summary>
+            [RepositoryItem("5baa5fc5-b91e-4372-aaab-1aeed20fe728")]
+            public virtual Ranorex.Cell ColZlvsVorschlag_Zeile_mit_ZV_TEXT_B_ZAHL_001
+            {
+                get
+                {
+                    return _colzlvsvorschlag_zeile_mit_zv_text_b_zahl_001Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColZlvsVorschlag_Zeile_mit_ZV_TEXT_B_ZAHL_001 item info.
+            /// </summary>
+            [RepositoryItemInfo("5baa5fc5-b91e-4372-aaab-1aeed20fe728")]
+            public virtual RepoItemInfo ColZlvsVorschlag_Zeile_mit_ZV_TEXT_B_ZAHL_001Info
+            {
+                get
+                {
+                    return _colzlvsvorschlag_zeile_mit_zv_text_b_zahl_001Info;
                 }
             }
 

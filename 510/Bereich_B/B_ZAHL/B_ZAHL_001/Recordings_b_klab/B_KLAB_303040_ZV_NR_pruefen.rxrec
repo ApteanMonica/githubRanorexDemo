@@ -28,6 +28,10 @@ mode="Global">
 		name="LF_303040">
 			303040
 		</var>
+		<var
+		id="4c32981c-3344-4cec-9a70-a05759a6e4c0"
+		name="ZV_NR">
+		</var>
 	</variables>
 	<recorditems>
 		<validationitem
@@ -513,19 +517,23 @@ mode="Global">
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeRegex"
+		action="AttributeEqual"
 		enabled="True"
 		optional="False"
 		searchpropertyid="51cc37a2-7834-4b11-92ad-268418663099">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="ZV_NR">
+				</binding>
 			</bindings>
 			<info
 			id="6d148d84-1f04-49f9-8236-d1c86641cd62"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colZlvs Row 1']
+					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colZlvs Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -534,7 +542,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				\d{1}
+				ER042 B_ZAHL_001
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -563,19 +571,23 @@ mode="Global">
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeRegex"
+		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="b7b59c52-2ce1-4082-bfbd-1136fc72efc0">
+		searchpropertyid="51cc37a2-7834-4b11-92ad-268418663099">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="ZV_NR">
+				</binding>
 			</bindings>
 			<info
 			id="3612775e-d25a-4406-8406-9dbe7f605909"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colZlvs Row 2']
+					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colZlvs Row 2']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -584,7 +596,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				\d{1}
+				ER042 B_ZAHL_001
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -613,19 +625,23 @@ mode="Global">
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeRegex"
+		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="ae988937-3f05-4632-9889-cdb3736fd75a">
+		searchpropertyid="51cc37a2-7834-4b11-92ad-268418663099">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="ZV_NR">
+				</binding>
 			</bindings>
 			<info
 			id="be10152c-33c8-46d0-95f1-4045fc334057"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colZlvs Row 3']
+					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colZlvs Row 3']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -634,7 +650,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				\d{1}
+				ER042 B_ZAHL_001
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -663,19 +679,23 @@ mode="Global">
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeRegex"
+		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="781fcb84-3b56-429e-8221-bac6fee0a951">
+		searchpropertyid="51cc37a2-7834-4b11-92ad-268418663099">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="ZV_NR">
+				</binding>
 			</bindings>
 			<info
 			id="b5162231-b715-4a6e-98cb-0b9a02bcacab"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colZlvs Row 4']
+					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colZlvs Row 4']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -684,7 +704,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				\d{1}
+				ER042 B_ZAHL_001
 			</matchvalue>
 		</validationitem>
 		<validationitem

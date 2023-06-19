@@ -42,6 +42,7 @@ namespace B_ZAHL_001.Recordings_b_klab
         public B_KLAB_303040_ZV_NR_pruefen()
         {
             LF_303040 = "303040";
+            ZV_NR = "";
         }
 
         /// <summary>
@@ -64,6 +65,18 @@ namespace B_ZAHL_001.Recordings_b_klab
         {
             get { return _LF_303040; }
             set { _LF_303040 = value; }
+        }
+
+        string _ZV_NR;
+
+        /// <summary>
+        /// Gets or sets the value of variable ZV_NR.
+        /// </summary>
+        [TestVariable("4c32981c-3344-4cec-9a70-a05759a6e4c0")]
+        public string ZV_NR
+        {
+            get { return _ZV_NR; }
+            set { _ZV_NR = value; }
         }
 
 #endregion
@@ -126,26 +139,26 @@ namespace B_ZAHL_001.Recordings_b_klab
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER042 B_ZAHL_001') on item 'TblBuop.OP_Tabelle.ColBelegnrRow1'.", repo.TblBuop.OP_Tabelle.ColBelegnrRow1Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBelegnrRow1Info, "Text", "ER042 B_ZAHL_001");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'\\d{1}') on item 'TblBuop.OP_Tabelle.ColZlvsRow1'.", repo.TblBuop.OP_Tabelle.ColZlvsRow1Info, new RecordItemIndex(11));
-            Validate.AttributeRegex(repo.TblBuop.OP_Tabelle.ColZlvsRow1Info, "Text", new Regex("\\d{1}"));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ZV_NR) on item 'TblBuop.OP_Tabelle.ColZlvsRow1'.", repo.TblBuop.OP_Tabelle.ColZlvsRow1Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColZlvsRow1Info, "Text", ZV_NR);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER044 B_ZAHL_001') on item 'TblBuop.OP_Tabelle.ColBelegnrRow2'.", repo.TblBuop.OP_Tabelle.ColBelegnrRow2Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBelegnrRow2Info, "Text", "ER044 B_ZAHL_001");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'\\d{1}') on item 'TblBuop.OP_Tabelle.ColZlvsRow2'.", repo.TblBuop.OP_Tabelle.ColZlvsRow2Info, new RecordItemIndex(13));
-            Validate.AttributeRegex(repo.TblBuop.OP_Tabelle.ColZlvsRow2Info, "Text", new Regex("\\d{1}"));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ZV_NR) on item 'TblBuop.OP_Tabelle.ColZlvsRow2'.", repo.TblBuop.OP_Tabelle.ColZlvsRow2Info, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColZlvsRow2Info, "Text", ZV_NR);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER043 B_ZAHL_001') on item 'TblBuop.OP_Tabelle.ColBelegnrRow3'.", repo.TblBuop.OP_Tabelle.ColBelegnrRow3Info, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBelegnrRow3Info, "Text", "ER043 B_ZAHL_001");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'\\d{1}') on item 'TblBuop.OP_Tabelle.ColZlvsRow3'.", repo.TblBuop.OP_Tabelle.ColZlvsRow3Info, new RecordItemIndex(15));
-            Validate.AttributeRegex(repo.TblBuop.OP_Tabelle.ColZlvsRow3Info, "Text", new Regex("\\d{1}"));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ZV_NR) on item 'TblBuop.OP_Tabelle.ColZlvsRow3'.", repo.TblBuop.OP_Tabelle.ColZlvsRow3Info, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColZlvsRow3Info, "Text", ZV_NR);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='GS008 B_ZAHL_001') on item 'TblBuop.OP_Tabelle.ColBelegnrRow4'.", repo.TblBuop.OP_Tabelle.ColBelegnrRow4Info, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBelegnrRow4Info, "Text", "GS008 B_ZAHL_001");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'\\d{1}') on item 'TblBuop.OP_Tabelle.ColZlvsRow4'.", repo.TblBuop.OP_Tabelle.ColZlvsRow4Info, new RecordItemIndex(17));
-            Validate.AttributeRegex(repo.TblBuop.OP_Tabelle.ColZlvsRow4Info, "Text", new Regex("\\d{1}"));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ZV_NR) on item 'TblBuop.OP_Tabelle.ColZlvsRow4'.", repo.TblBuop.OP_Tabelle.ColZlvsRow4Info, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColZlvsRow4Info, "Text", ZV_NR);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER047 B_ZAHL_001') on item 'TblBuop.OP_Tabelle.ColBelegnrRow5'.", repo.TblBuop.OP_Tabelle.ColBelegnrRow5Info, new RecordItemIndex(18));
             Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBelegnrRow5Info, "Text", "ER047 B_ZAHL_001");
