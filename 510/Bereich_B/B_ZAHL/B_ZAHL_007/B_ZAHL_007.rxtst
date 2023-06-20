@@ -55,6 +55,26 @@
 			name="Tagesdatum_ermitteln"
 			ref="10e5599d-293d-47f8-955f-3645bb8b7b63"
 			type="Recording">
+				<description>
+					<![CDATA[Tagesdatum ohne UserCode mit Tagesdatum2, weil das akt. Datum als Zahlsperre -bis gesetzt und als Zahldatum im Zahlungsvorschlag gesetzt wird.]]>
+				</description>
+				<databinding>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="5f3e9422-c6c1-4d1d-9f47-18e71269572c"
+					variableid="a5df6c83-6deb-4861-9af2-5d9631470c7b"
+					variablename="Tagesdatum">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="2d9ba0c9-416b-4f5c-97a2-7314bccaeb76"
+			name="Tagesdatum_ermitteln"
+			ref="10e5599d-293d-47f8-955f-3645bb8b7b63"
+			type="Recording">
+				<description>
+					<![CDATA[Wenn Tageswechsel vor Erstellung Bankbeleg, dann kann dieser nicht erstellt werden (Zahlungen >heute nicht möglich)]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Tagesdatum"
@@ -75,6 +95,9 @@
 			name="Zahlungsvorschlag_OPs_nach_hinzufuegen_pruefen"
 			ref="321c65d0-19b6-4a06-8260-029159e53bd4"
 			type="Recording">
+				<description>
+					<![CDATA[Tagesdatum ohne UserCode mit Tagesdatum2, weil das akt. Datum als Zahlsperre -bis gesetzt und als Zahldatum im Zahlungsvorschlag gesetzt wird.]]>
+				</description>
 				<databinding>
 					<var
 					dataname="LF_303077"
@@ -490,20 +513,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="dcd131b5-9617-4c1e-8c73-d56b9389a10e"
-			name="Tagesdatum_ermitteln"
-			ref="10e5599d-293d-47f8-955f-3645bb8b7b63"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Tagesdatum"
-					datasourceid="5f3e9422-c6c1-4d1d-9f47-18e71269572c"
-					variableid="a5df6c83-6deb-4861-9af2-5d9631470c7b"
-					variablename="Tagesdatum">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="de299d9a-40c7-43cd-8178-788d001f50e0"
 			name="Zahlungsvorschlag_pruefen"
 			ref="0cdd274b-262b-49fb-a440-77bb78cbbc69"
@@ -536,6 +545,9 @@
 			name="Zahlungsvorschlag_erstellen_ohne_Druck"
 			ref="eaffa26f-3a87-403f-8760-a23e69257d9b"
 			type="Recording">
+				<description>
+					<![CDATA[Tagesdatum ohne UserCode mit Tagesdatum2, weil das akt. Datum als Zahlsperre -bis gesetzt und als Zahldatum im Zahlungsvorschlag gesetzt wird.]]>
+				</description>
 				<databinding>
 					<var
 					dataname="LF_303077"
@@ -580,6 +592,9 @@
 			name="Zahlungsvorschlag_nach_hinzufuegen_pruefen"
 			ref="b6886a58-7b6f-4331-95a6-f95d1fbb8f09"
 			type="Recording">
+				<description>
+					<![CDATA[Tagesdatum ohne UserCode mit Tagesdatum2, weil das akt. Datum als Zahlsperre -bis gesetzt und als Zahldatum im Zahlungsvorschlag gesetzt wird.]]>
+				</description>
 				<databinding>
 					<var
 					dataname="ZV_TEXT"
@@ -668,12 +683,12 @@
 						id="76021927-9c84-4083-867b-2e1c912aa4c5"
 						name="setup">
 							<testmodule
-							id="c28c9ce5-a401-48f9-88ef-bd5623f28328"
-							name="StartAUT">
+							id="2d9ba0c9-416b-4f5c-97a2-7314bccaeb76"
+							name="Tagesdatum_ermitteln">
 							</testmodule>
 							<testmodule
-							id="dcd131b5-9617-4c1e-8c73-d56b9389a10e"
-							name="Tagesdatum_ermitteln">
+							id="c28c9ce5-a401-48f9-88ef-bd5623f28328"
+							name="StartAUT">
 							</testmodule>
 						</setup>
 						<smartfoldernode
