@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9857691a-dcc0-47cb-8d18-81d612c1b01f"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="N_ANLA_003.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="06df2c78-1748-46f7-84eb-45b9f18709a2">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="468089cb-cc63-4700-8dcb-4a0a68d0abac"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmAnla']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="8e8fe4e9-312f-4d35-9dfe-03328ecc0b65"
+	name="N_ANLA_003Repository"
+	relativepath="..\N_ANLA_003Repository.rxrep">
+		<codegen
+		classname="N_ANLA_003Repository"
+		namespace="N_ANLA_003">
+		</codegen>
+		<rootfolder
+		id="dff6d6d0-ec14-484d-9303-6207d8d5f11b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
