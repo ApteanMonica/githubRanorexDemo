@@ -77,7 +77,7 @@ mode="Desktop">
 			</info>
 		</WaitForRecordItem>
 		<validationitem
-		action="AttributeRegex"
+		action="Exists"
 		enabled="True"
 		optional="False"
 		searchpropertyid="6ff9868e-d575-444f-9d5d-e6076d5e81a5">
@@ -86,7 +86,7 @@ mode="Desktop">
 			<bindings>
 			</bindings>
 			<info
-			id="527821a8-84a9-4efe-9792-3de5b62615ea"
+			id="a802eb99-4157-4140-94b4-77f94e765c12"
 			sourcename="ItemRecorderEditor">
 				<path>
 					/form[@controlname='frmPrlk']/titlebar[@accessiblerole='TitleBar']
@@ -95,10 +95,10 @@ mode="Desktop">
 				</robustPath>
 			</info>
 			<matchname>
-				Text
+				AccessibleRole
 			</matchname>
 			<matchvalue>
-				[100]  Verwaltung - Lieferantenpreislisten|Lieferantenpreislisten verwalten
+				Titelbar
 			</matchvalue>
 		</validationitem>
 	</recorditems>

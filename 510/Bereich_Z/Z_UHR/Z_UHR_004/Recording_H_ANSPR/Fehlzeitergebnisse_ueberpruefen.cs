@@ -131,29 +131,29 @@ namespace Z_UHR_004.Recording_H_ANSPR
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFehlzeitergebnisse.FlexGrid.ColEbeneRow1' at CenterLeft.", repo.TblFehlzeitergebnisse.FlexGrid.ColEbeneRow1Info, new RecordItemIndex(0));
-            repo.TblFehlzeitergebnisse.FlexGrid.ColEbeneRow1.Click(Location.CenterLeft);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColEbeneRow1_Tabelle_Fehlzeiten' at CenterLeft.", repo.TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColEbeneRow1_Tabelle_FehlzeitenInfo, new RecordItemIndex(0));
+            repo.TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColEbeneRow1_Tabelle_Fehlzeiten.Click(Location.CenterLeft);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'TblFehlzeitergebnisse.FlexGrid.ColZtypCdRow2'.", repo.TblFehlzeitergebnisse.FlexGrid.ColZtypCdRow2Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblFehlzeitergebnisse.FlexGrid.ColZtypCdRow2Info, "Text", "3");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColZtypCdRow2'.", repo.TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColZtypCdRow2Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColZtypCdRow2Info, "Text", "3");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Urlaub_1_beginn) on item 'TblFehlzeitergebnisse.FlexGrid.ColFzergDtbeginnRow2'.", repo.TblFehlzeitergebnisse.FlexGrid.ColFzergDtbeginnRow2Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblFehlzeitergebnisse.FlexGrid.ColFzergDtbeginnRow2Info, "Text", Urlaub_1_beginn);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Urlaub_1_beginn) on item 'TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColFzergDtbeginnRow2'.", repo.TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColFzergDtbeginnRow2Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColFzergDtbeginnRow2Info, "Text", Urlaub_1_beginn);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Urlaub_1_ende) on item 'TblFehlzeitergebnisse.FlexGrid.ColFzergDtendeRow2'.", repo.TblFehlzeitergebnisse.FlexGrid.ColFzergDtendeRow2Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.TblFehlzeitergebnisse.FlexGrid.ColFzergDtendeRow2Info, "Text", Urlaub_1_ende);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Urlaub_1_ende) on item 'TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColFzergDtendeRow2'.", repo.TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColFzergDtendeRow2Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColFzergDtendeRow2Info, "Text", Urlaub_1_ende);
             
             // Überprüfung Zeile 2
             Report.Log(ReportLevel.Info, "Section", "Überprüfung Zeile 2", new RecordItemIndex(4));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'TblFehlzeitergebnisse.FlexGrid.ColZtypCdRow4'.", repo.TblFehlzeitergebnisse.FlexGrid.ColZtypCdRow4Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.TblFehlzeitergebnisse.FlexGrid.ColZtypCdRow4Info, "Text", "3");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColZtypCdRow4'.", repo.TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColZtypCdRow4Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColZtypCdRow4Info, "Text", "3");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Urlaub_2_beginn) on item 'TblFehlzeitergebnisse.FlexGrid.ColFzergDtbeginnRow4'.", repo.TblFehlzeitergebnisse.FlexGrid.ColFzergDtbeginnRow4Info, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.TblFehlzeitergebnisse.FlexGrid.ColFzergDtbeginnRow4Info, "Text", Urlaub_2_beginn);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Urlaub_2_beginn) on item 'TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColFzergDtbeginnRow4_angezeigte_Zeile_3_Fehlzeiten'.", repo.TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColFzergDtbeginnRow4_angezeigte_Zeile_3_FehlzeitenInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColFzergDtbeginnRow4_angezeigte_Zeile_3_FehlzeitenInfo, "Text", Urlaub_2_beginn);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Urlaub_2_ende) on item 'TblFehlzeitergebnisse.FlexGrid.ColFzergDtendeRow4'.", repo.TblFehlzeitergebnisse.FlexGrid.ColFzergDtendeRow4Info, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.TblFehlzeitergebnisse.FlexGrid.ColFzergDtendeRow4Info, "Text", Urlaub_2_ende);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Urlaub_2_ende) on item 'TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColFzergDtendeRow4'.", repo.TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColFzergDtendeRow4Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.TblFehlzeitergebnisse.FlexGrid_Tabelle_Fehlzeiten.ColFzergDtendeRow4Info, "Text", Urlaub_2_ende);
             
         }
 

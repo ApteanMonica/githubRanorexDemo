@@ -20,19 +20,19 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace S_PRLKL_001.Recordings
+namespace N_ANLA_003.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
     ///The StartAUT recording.
     /// </summary>
-    [TestModule("c75bee50-bb4b-479c-9037-89742828907f", ModuleType.Recording, 1)]
+    [TestModule("92841850-0a89-432c-935d-629f55610db4", ModuleType.Recording, 1)]
     public partial class StartAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::S_PRLKL_001.S_PRLKL_001Repository repository.
+        /// Holds an instance of the global::N_ANLA_003.N_ANLA_003Repository repository.
         /// </summary>
-        public static global::S_PRLKL_001.S_PRLKL_001Repository repo = global::S_PRLKL_001.S_PRLKL_001Repository.Instance;
+        public static global::N_ANLA_003.N_ANLA_003Repository repo = global::N_ANLA_003.N_ANLA_003Repository.Instance;
 
         static StartAUT instance = new StartAUT();
 
@@ -41,8 +41,8 @@ namespace S_PRLKL_001.Recordings
         /// </summary>
         public StartAUT()
         {
+            Programm = "N_ANLA";
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm = "S_PRLK /KL=L";
         }
 
         /// <summary>
@@ -55,28 +55,28 @@ namespace S_PRLKL_001.Recordings
 
 #region Variables
 
-        string _Startfile;
-
-        /// <summary>
-        /// Gets or sets the value of variable Startfile.
-        /// </summary>
-        [TestVariable("f94c7cc7-a0e1-4011-b7fd-3a7f563d853c")]
-        public string Startfile
-        {
-            get { return _Startfile; }
-            set { _Startfile = value; }
-        }
-
         string _Programm;
 
         /// <summary>
         /// Gets or sets the value of variable Programm.
         /// </summary>
-        [TestVariable("20fc0a63-116f-4aef-9e40-c2c1dd539f35")]
+        [TestVariable("73865362-837b-41ea-a711-1363c9e90bbd")]
         public string Programm
         {
             get { return _Programm; }
             set { _Programm = value; }
+        }
+
+        string _Startfile;
+
+        /// <summary>
+        /// Gets or sets the value of variable Startfile.
+        /// </summary>
+        [TestVariable("686e8adb-842c-4dc3-8387-24e32ddfe190")]
+        public string Startfile
+        {
+            get { return _Startfile; }
+            set { _Startfile = value; }
         }
 
 #endregion
@@ -108,11 +108,11 @@ namespace S_PRLKL_001.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmPrlk.TitleBar100VerwaltungLieferantenp'", repo.FrmPrlk.TitleBar100VerwaltungLieferantenpInfo, new ActionTimeout(60000), new RecordItemIndex(1));
-            repo.FrmPrlk.TitleBar100VerwaltungLieferantenpInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmAnla.TitleBar100AVZAnlagen'", repo.FrmAnla.TitleBar100AVZAnlagenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FrmAnla.TitleBar100AVZAnlagenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmPrlk.TitleBar100VerwaltungLieferantenp'.", repo.FrmPrlk.TitleBar100VerwaltungLieferantenpInfo, new RecordItemIndex(2));
-            Validate.Exists(repo.FrmPrlk.TitleBar100VerwaltungLieferantenpInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ - Anlagen') on item 'FrmAnla.TitleBar100AVZAnlagen'.", repo.FrmAnla.TitleBar100AVZAnlagenInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.FrmAnla.TitleBar100AVZAnlagenInfo, "Text", "[100]  AVZ - Anlagen");
             
         }
 
