@@ -122,6 +122,7 @@ namespace S_PRLKL_002
             RepoItemInfo _titlebar100verwaltunglieferantenpInfo;
             RepoItemInfo _nummerInfo;
             RepoItemInfo _pbmdipreiseInfo;
+            RepoItemInfo _titlebar100verwaltunglieferantenp1Info;
 
             /// <summary>
             /// Creates a new FrmPrlk  folder.
@@ -133,6 +134,7 @@ namespace S_PRLKL_002
                 _titlebar100verwaltunglieferantenpInfo = new RepoItemInfo(this, "TitleBar100VerwaltungLieferantenp", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "527821a8-84a9-4efe-9792-3de5b62615ea");
                 _nummerInfo = new RepoItemInfo(this, "Nummer", "?/?/text[@controlname='dfPrlk_nr']/text[@accessiblename='Nummer']", "", 30000, null, "221876c7-3ce0-4e2f-a8e4-a044b9d71a2d");
                 _pbmdipreiseInfo = new RepoItemInfo(this, "PbMDIPreise", "?/?/container[@controlname='MDIGroup']/button[@controlname='pbMDI_Preise']", "", 30000, null, "670fbbad-ce64-45c1-bf3c-245d2235c980");
+                _titlebar100verwaltunglieferantenp1Info = new RepoItemInfo(this, "TitleBar100VerwaltungLieferantenp1", "titlebar[@visible='True']", "", 30000, null, "a802eb99-4157-4140-94b4-77f94e765c12");
             }
 
             /// <summary>
@@ -228,6 +230,30 @@ namespace S_PRLKL_002
                 get
                 {
                     return _pbmdipreiseInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100VerwaltungLieferantenp1 item.
+            /// </summary>
+            [RepositoryItem("a802eb99-4157-4140-94b4-77f94e765c12")]
+            public virtual Ranorex.TitleBar TitleBar100VerwaltungLieferantenp1
+            {
+                get
+                {
+                    return _titlebar100verwaltunglieferantenp1Info.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100VerwaltungLieferantenp1 item info.
+            /// </summary>
+            [RepositoryItemInfo("a802eb99-4157-4140-94b4-77f94e765c12")]
+            public virtual RepoItemInfo TitleBar100VerwaltungLieferantenp1Info
+            {
+                get
+                {
+                    return _titlebar100verwaltunglieferantenp1Info;
                 }
             }
 
