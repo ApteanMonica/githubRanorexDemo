@@ -118,7 +118,13 @@ namespace B_ZAHL_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='7') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzah_Zeile_mit_ZV_TEXT_B_ZAHL_001'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzah_Zeile_mit_ZV_TEXT_B_ZAHL_001Info, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzah_Zeile_mit_ZV_TEXT_B_ZAHL_001Info, "Text", "7");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.Column0_Zeile_mit_ZV_TEXT_B_ZAHL_001' at Center.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.Column0_Zeile_mit_ZV_TEXT_B_ZAHL_001Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='True') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZldtFreibank_Zeile_mit_ZV_TEXT_B_ZAHL_001'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZldtFreibank_Zeile_mit_ZV_TEXT_B_ZAHL_001Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZldtFreibank_Zeile_mit_ZV_TEXT_B_ZAHL_001Info, "AccessibleValue", "True");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='True') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZldtFreiaend_Zeile_mit_ZV_TEXT_B_ZAHL_001'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZldtFreiaend_Zeile_mit_ZV_TEXT_B_ZAHL_001Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZldtFreiaend_Zeile_mit_ZV_TEXT_B_ZAHL_001Info, "AccessibleValue", "True");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.Column0_Zeile_mit_ZV_TEXT_B_ZAHL_001' at Center.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.Column0_Zeile_mit_ZV_TEXT_B_ZAHL_001Info, new RecordItemIndex(7));
             repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.Column0_Zeile_mit_ZV_TEXT_B_ZAHL_001.Click();
             
         }

@@ -413,6 +413,8 @@ namespace B_ZAHL_001
             RepoItemInfo _colzlvszahldatum_zeile_mit_zv_text_b_zahl_001_aInfo;
             RepoItemInfo _colzldtdtanlag_zeile_mit_zv_text_b_zahl_001Info;
             RepoItemInfo _colzldtdtanlag_zeile_mit_zv_text_b_zahl_001_aInfo;
+            RepoItemInfo _colzldtfreibank_zeile_mit_zv_text_b_zahl_001Info;
+            RepoItemInfo _colzldtfreiaend_zeile_mit_zv_text_b_zahl_001Info;
 
             /// <summary>
             /// Creates a new Zeilen_Zahlungsvorschlaege  folder.
@@ -433,6 +435,8 @@ namespace B_ZAHL_001
                 _colzlvszahldatum_zeile_mit_zv_text_b_zahl_001_aInfo = new RepoItemInfo(this, "ColZlvsZahldatum_Zeile_mit_ZV_TEXT_B_ZAHL_001_a", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT_A]/cell[@accessiblename~'colZlvs_zahldatum']", "", 30000, null, "7dcce23e-0508-4ac1-872f-1de1752013dd");
                 _colzldtdtanlag_zeile_mit_zv_text_b_zahl_001Info = new RepoItemInfo(this, "ColZldtDtanlag_Zeile_mit_ZV_TEXT_B_ZAHL_001", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZldt_dtanlag']", "", 30000, null, "e90377c2-e479-4472-b7ac-ce580633f01a");
                 _colzldtdtanlag_zeile_mit_zv_text_b_zahl_001_aInfo = new RepoItemInfo(this, "ColZldtDtanlag_Zeile_mit_ZV_TEXT_B_ZAHL_001_A", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT_A]/cell[@accessiblename~'colZldt_dtanlag']", "", 30000, null, "397d7b47-544f-4b5b-a2a9-b0e97d79d909");
+                _colzldtfreibank_zeile_mit_zv_text_b_zahl_001Info = new RepoItemInfo(this, "ColZldtFreibank_Zeile_mit_ZV_TEXT_B_ZAHL_001", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZldt_freibank']", "", 30000, null, "741d8d53-f925-4a0e-ad14-3bf6bfe97e2d");
+                _colzldtfreiaend_zeile_mit_zv_text_b_zahl_001Info = new RepoItemInfo(this, "ColZldtFreiaend_Zeile_mit_ZV_TEXT_B_ZAHL_001", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZldt_freiaend']", "", 30000, null, "f7056dff-da30-4aa4-b3d3-cbf09412bbab");
             }
 
             /// <summary>
@@ -768,6 +772,54 @@ namespace B_ZAHL_001
                 get
                 {
                     return _colzldtdtanlag_zeile_mit_zv_text_b_zahl_001_aInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColZldtFreibank_Zeile_mit_ZV_TEXT_B_ZAHL_001 item.
+            /// </summary>
+            [RepositoryItem("741d8d53-f925-4a0e-ad14-3bf6bfe97e2d")]
+            public virtual Ranorex.Cell ColZldtFreibank_Zeile_mit_ZV_TEXT_B_ZAHL_001
+            {
+                get
+                {
+                    return _colzldtfreibank_zeile_mit_zv_text_b_zahl_001Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColZldtFreibank_Zeile_mit_ZV_TEXT_B_ZAHL_001 item info.
+            /// </summary>
+            [RepositoryItemInfo("741d8d53-f925-4a0e-ad14-3bf6bfe97e2d")]
+            public virtual RepoItemInfo ColZldtFreibank_Zeile_mit_ZV_TEXT_B_ZAHL_001Info
+            {
+                get
+                {
+                    return _colzldtfreibank_zeile_mit_zv_text_b_zahl_001Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColZldtFreiaend_Zeile_mit_ZV_TEXT_B_ZAHL_001 item.
+            /// </summary>
+            [RepositoryItem("f7056dff-da30-4aa4-b3d3-cbf09412bbab")]
+            public virtual Ranorex.Cell ColZldtFreiaend_Zeile_mit_ZV_TEXT_B_ZAHL_001
+            {
+                get
+                {
+                    return _colzldtfreiaend_zeile_mit_zv_text_b_zahl_001Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColZldtFreiaend_Zeile_mit_ZV_TEXT_B_ZAHL_001 item info.
+            /// </summary>
+            [RepositoryItemInfo("f7056dff-da30-4aa4-b3d3-cbf09412bbab")]
+            public virtual RepoItemInfo ColZldtFreiaend_Zeile_mit_ZV_TEXT_B_ZAHL_001Info
+            {
+                get
+                {
+                    return _colzldtfreiaend_zeile_mit_zv_text_b_zahl_001Info;
                 }
             }
         }

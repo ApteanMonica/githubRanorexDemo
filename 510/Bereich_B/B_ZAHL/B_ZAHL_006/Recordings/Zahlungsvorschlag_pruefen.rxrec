@@ -28,6 +28,11 @@ mode="Global">
 		name="ZV_TEXT">
 			B_ZAHL_006
 		</var>
+		<var
+		id="d65eb6f0-dc0a-4fdd-a5b5-412faa4281e1"
+		name="Zahldatum_alt">
+			07.07.2021
+		</var>
 	</variables>
 	<recorditems>
 		<validationitem
@@ -127,6 +132,35 @@ mode="Global">
 			</matchname>
 			<matchvalue>
 				6
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0cc3911c-ebd0-405f-95d8-066a889edec4">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Zahldatum_alt">
+				</binding>
+			</bindings>
+			<info
+			id="75f50d69-023c-4165-9ec7-4724d193bfa0"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZahlMain']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpName0']/container[@controlname='tblVorschläge']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZlvs_zahldatum']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
 			</matchvalue>
 		</validationitem>
 		<validationitem

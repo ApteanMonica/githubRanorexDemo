@@ -415,6 +415,7 @@ namespace B_ZAHL_006
             RepoItemInfo _colzlvssumme_zeile_mit_zv_text_b_zahl_006Info;
             RepoItemInfo _colzlvsanzahl_zeile_mit_zv_text_b_zahl_006Info;
             RepoItemInfo _colzlvsvorschlag_zeile_mit_zv_text_b_zahl_006Info;
+            RepoItemInfo _colzlvszahldatum_zeile_mit_zv_text_b_zahl_006Info;
 
             /// <summary>
             /// Creates a new Zeilen_Zahlungsvorschlaege  folder.
@@ -424,9 +425,10 @@ namespace B_ZAHL_006
             {
                 _row_mit_zv_text_b_zahl_006Info = new RepoItemInfo(this, "Row_mit_ZV_TEXT_B_ZAHL_006", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]", "", 30000, null, "8a4e3005-b24b-434c-9361-56812ef062e9");
                 _column0_zeile_mit_zv_text_b_zahl_006Info = new RepoItemInfo(this, "Column0_Zeile_mit_ZV_TEXT_B_ZAHL_006", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'Column 0']", "", 30000, null, "667d462a-c95b-4c52-bc1b-66739ad0094b");
-                _colzlvssumme_zeile_mit_zv_text_b_zahl_006Info = new RepoItemInfo(this, "ColZlvsSumme_Zeile_mit_ZV_Text_B_ZAHL_006", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/?/cell[@accessiblename~'colZlvs_summe']", "", 30000, null, "9c8dd215-906a-4896-a371-9590fa2de3e7");
-                _colzlvsanzahl_zeile_mit_zv_text_b_zahl_006Info = new RepoItemInfo(this, "ColZlvsAnzahl_Zeile_mit_ZV_Text_B_ZAHL_006", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/?/cell[@accessiblename~'colZlvs_anzahl']", "", 30000, null, "6a8d51a7-ff8e-4464-82be-e8d97c6111ef");
-                _colzlvsvorschlag_zeile_mit_zv_text_b_zahl_006Info = new RepoItemInfo(this, "ColZlvsVorschlag_Zeile_mit_ZV_Text_B_ZAHL_006", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/?/cell[@accessiblename~'colZlvs_vorschlag']", "", 30000, null, "0e469765-3bfb-4793-876c-baca4961fea3");
+                _colzlvssumme_zeile_mit_zv_text_b_zahl_006Info = new RepoItemInfo(this, "ColZlvsSumme_Zeile_mit_ZV_Text_B_ZAHL_006", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZlvs_summe']", "", 30000, null, "9c8dd215-906a-4896-a371-9590fa2de3e7");
+                _colzlvsanzahl_zeile_mit_zv_text_b_zahl_006Info = new RepoItemInfo(this, "ColZlvsAnzahl_Zeile_mit_ZV_Text_B_ZAHL_006", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZlvs_anzahl']", "", 30000, null, "6a8d51a7-ff8e-4464-82be-e8d97c6111ef");
+                _colzlvsvorschlag_zeile_mit_zv_text_b_zahl_006Info = new RepoItemInfo(this, "ColZlvsVorschlag_Zeile_mit_ZV_Text_B_ZAHL_006", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZlvs_vorschlag']", "", 30000, null, "0e469765-3bfb-4793-876c-baca4961fea3");
+                _colzlvszahldatum_zeile_mit_zv_text_b_zahl_006Info = new RepoItemInfo(this, "ColZlvsZahldatum_Zeile_mit_ZV_Text_B_ZAHL_006", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZlvs_zahldatum']", "", 30000, null, "75f50d69-023c-4165-9ec7-4724d193bfa0");
             }
 
             /// <summary>
@@ -570,6 +572,30 @@ namespace B_ZAHL_006
                 get
                 {
                     return _colzlvsvorschlag_zeile_mit_zv_text_b_zahl_006Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColZlvsZahldatum_Zeile_mit_ZV_Text_B_ZAHL_006 item.
+            /// </summary>
+            [RepositoryItem("75f50d69-023c-4165-9ec7-4724d193bfa0")]
+            public virtual Ranorex.Cell ColZlvsZahldatum_Zeile_mit_ZV_Text_B_ZAHL_006
+            {
+                get
+                {
+                    return _colzlvszahldatum_zeile_mit_zv_text_b_zahl_006Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColZlvsZahldatum_Zeile_mit_ZV_Text_B_ZAHL_006 item info.
+            /// </summary>
+            [RepositoryItemInfo("75f50d69-023c-4165-9ec7-4724d193bfa0")]
+            public virtual RepoItemInfo ColZlvsZahldatum_Zeile_mit_ZV_Text_B_ZAHL_006Info
+            {
+                get
+                {
+                    return _colzlvszahldatum_zeile_mit_zv_text_b_zahl_006Info;
                 }
             }
         }

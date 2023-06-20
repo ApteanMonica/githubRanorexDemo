@@ -13,6 +13,9 @@
 			name="XML_Datei_pruefen"
 			ref="6f598778-7a49-48da-ba18-ca0a4c8ed6e7"
 			type="Recording">
+				<description>
+					<![CDATA[Kein Usercode für Tagesdatum2, weil Tagesdatum zu Beginn ermittelt und als Zahldatum fix gesetzt wird. Bei Tagessprung dazwischen tritt mehr als ein Validierungsfehler auf]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Tagesdatum_JJJJ_MM_dd"
@@ -76,16 +79,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="XML_Pfad_Datei"
-					datasourceid="fe56bcdf-2771-416d-beee-d65e631421ca"
-					variableid="e73e8b77-462f-4247-b4a1-1a0cc1fa834f"
-					variablename="XML_Pfad_Datei">
-					</var>
-					<var
 					dataname="Programm2"
 					datasourceid="fe56bcdf-2771-416d-beee-d65e631421ca"
 					variableid="b4be0bac-dc5d-4564-b093-9589569cac51"
 					variablename="Programm2">
+					</var>
+					<var
+					dataname="XML_Pfad_Datei"
+					datasourceid="fe56bcdf-2771-416d-beee-d65e631421ca"
+					variableid="e73e8b77-462f-4247-b4a1-1a0cc1fa834f"
+					variablename="XML_Pfad_Datei">
 					</var>
 				</databinding>
 			</testmodule>
@@ -197,9 +200,12 @@
 			</testmodule>
 			<testmodule
 			id="631e5549-2d8a-497d-ab88-582a58815eca"
-			name="Tagesdatum_ermitteln"
+			name="Tagesdatum_ermitteln_2_Formate"
 			ref="45b1b1f2-c060-40d6-9728-ae4446d2d0e3"
 			type="Recording">
+				<description>
+					<![CDATA[Kein Usercode für Tagesdatum2, weil Tagesdatum zu Beginn ermittelt und als Zahldatum fix gesetzt wird. Bei Tagessprung dazwischen tritt mehr als ein Validierungsfehler auf]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Tagesdatum"
@@ -403,16 +409,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="XML_Datei"
-					datasourceid="fe56bcdf-2771-416d-beee-d65e631421ca"
-					variableid="8fc79d63-1d90-423d-b6b3-b77eb4ba4f0d"
-					variablename="XML_Datei">
-					</var>
-					<var
 					dataname="XML_Pfad"
 					datasourceid="fe56bcdf-2771-416d-beee-d65e631421ca"
 					variableid="0d74acf8-6725-42d9-9253-27291fb23ebf"
 					variablename="XML_Pfad">
+					</var>
+					<var
+					dataname="XML_Datei"
+					datasourceid="fe56bcdf-2771-416d-beee-d65e631421ca"
+					variableid="8fc79d63-1d90-423d-b6b3-b77eb4ba4f0d"
+					variablename="XML_Datei">
 					</var>
 				</databinding>
 			</testmodule>
@@ -505,10 +511,6 @@
 						id="efaf2213-24cc-4ae9-abad-05a6d3c1c87f"
 						name="setup">
 							<testmodule
-							id="631e5549-2d8a-497d-ab88-582a58815eca"
-							name="Tagesdatum_ermitteln">
-							</testmodule>
-							<testmodule
 							id="e14e083b-b599-4f73-89eb-b4420faeea18"
 							name="StartAUT">
 							</testmodule>
@@ -523,6 +525,10 @@
 							<testmodule
 							id="38da1722-e021-4790-90f8-c1ba03f2fe7e"
 							name="Bankbeleg_Fehler_Datum">
+							</testmodule>
+							<testmodule
+							id="631e5549-2d8a-497d-ab88-582a58815eca"
+							name="Tagesdatum_ermitteln_2_Formate">
 							</testmodule>
 							<testmodule
 							id="e0c6ae5f-3b3a-4618-971e-3c5e89a33187"

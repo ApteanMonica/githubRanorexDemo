@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_ZAHL_006.Recordings
 {
-    public partial class Fehler_Nicht_uebernommene_OPs
+    public partial class Fehler_Nicht_uebernommene_OPs_pruefen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

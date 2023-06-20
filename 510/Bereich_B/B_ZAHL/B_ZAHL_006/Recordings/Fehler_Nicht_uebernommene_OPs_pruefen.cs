@@ -24,31 +24,32 @@ namespace B_ZAHL_006.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Fehler_Nicht_uebernommene_OPs recording.
+    ///The Fehler_Nicht_uebernommene_OPs_pruefen recording.
     /// </summary>
     [TestModule("af10d911-b239-4221-aa61-4c6c2f90b658", ModuleType.Recording, 1)]
-    public partial class Fehler_Nicht_uebernommene_OPs : ITestModule
+    public partial class Fehler_Nicht_uebernommene_OPs_pruefen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ZAHL_006.B_ZAHL_006Repository repository.
         /// </summary>
         public static global::B_ZAHL_006.B_ZAHL_006Repository repo = global::B_ZAHL_006.B_ZAHL_006Repository.Instance;
 
-        static Fehler_Nicht_uebernommene_OPs instance = new Fehler_Nicht_uebernommene_OPs();
+        static Fehler_Nicht_uebernommene_OPs_pruefen instance = new Fehler_Nicht_uebernommene_OPs_pruefen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Fehler_Nicht_uebernommene_OPs()
+        public Fehler_Nicht_uebernommene_OPs_pruefen()
         {
             Beleg_ER60B = "ER60B_B_ZAHL_006";
             LF_303060 = "303060";
+            Zahldatum_alt = "07.07.2021";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Fehler_Nicht_uebernommene_OPs Instance
+        public static Fehler_Nicht_uebernommene_OPs_pruefen Instance
         {
             get { return instance; }
         }
@@ -65,6 +66,18 @@ namespace B_ZAHL_006.Recordings
         {
             get { return _LF_303060; }
             set { _LF_303060 = value; }
+        }
+
+        string _Zahldatum_alt;
+
+        /// <summary>
+        /// Gets or sets the value of variable Zahldatum_alt.
+        /// </summary>
+        [TestVariable("0ec71b71-fa17-41f3-8768-4cb04d7c7417")]
+        public string Zahldatum_alt
+        {
+            get { return _Zahldatum_alt; }
+            set { _Zahldatum_alt = value; }
         }
 
         /// <summary>
@@ -127,10 +140,13 @@ namespace B_ZAHL_006.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Vorschlag 6 Zahldatum (07.07.2021) bereits abgelaufen! Bitte anpassen.') on item 'TblNichtUebernommene.ChildTableWindow.ColInfoRow4'.", repo.TblNichtUebernommene.ChildTableWindow.ColInfoRow4Info, new RecordItemIndex(7));
             Validate.AttributeContains(repo.TblNichtUebernommene.ChildTableWindow.ColInfoRow4Info, "Text", "Vorschlag 6 Zahldatum (07.07.2021) bereits abgelaufen! Bitte anpassen.");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Prüfen...') on item 'TblNichtUebernommene.ChildTableWindow.ColNameRow5'.", repo.TblNichtUebernommene.ChildTableWindow.ColNameRow5Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Zahldatum_alt) on item 'TblNichtUebernommene.ChildTableWindow.ColInfoRow4'.", repo.TblNichtUebernommene.ChildTableWindow.ColInfoRow4Info, new RecordItemIndex(8));
+            Validate.AttributeContains(repo.TblNichtUebernommene.ChildTableWindow.ColInfoRow4Info, "Text", Zahldatum_alt);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Prüfen...') on item 'TblNichtUebernommene.ChildTableWindow.ColNameRow5'.", repo.TblNichtUebernommene.ChildTableWindow.ColNameRow5Info, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.TblNichtUebernommene.ChildTableWindow.ColNameRow5Info, "Text", "Prüfen...");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bitte IBAN prüfen. Die ausgewählte Zahlungsart <S> ist ein SEPA-Zahlweg,\r\n Land <TR> ist jedoch kein SEPA-Teilnehmer.') on item 'TblNichtUebernommene.ChildTableWindow.ColInfoRow5'.", repo.TblNichtUebernommene.ChildTableWindow.ColInfoRow5Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bitte IBAN prüfen. Die ausgewählte Zahlungsart <S> ist ein SEPA-Zahlweg,\r\n Land <TR> ist jedoch kein SEPA-Teilnehmer.') on item 'TblNichtUebernommene.ChildTableWindow.ColInfoRow5'.", repo.TblNichtUebernommene.ChildTableWindow.ColInfoRow5Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.TblNichtUebernommene.ChildTableWindow.ColInfoRow5Info, "Text", "Bitte IBAN prüfen. Die ausgewählte Zahlungsart <S> ist ein SEPA-Zahlweg,\r\n Land <TR> ist jedoch kein SEPA-Teilnehmer.");
             
         }
