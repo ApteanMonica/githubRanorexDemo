@@ -205,8 +205,8 @@ namespace S_PRLKL_001.Recordings
             Keyboard.Press(System.Windows.Forms.Keys.Insert, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmPrlk.SomeText' at Center.", repo.FrmPrlk.SomeTextInfo, new RecordItemIndex(12));
-            repo.FrmPrlk.SomeText.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmPrlk.ColPrldDtvonRow1' at Center.", repo.FrmPrlk.ColPrldDtvonRow1Info, new RecordItemIndex(12));
+            repo.FrmPrlk.ColPrldDtvonRow1.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Von_Datum' with focus on 'FrmPrlk.FlexGrid'.", repo.FrmPrlk.FlexGridInfo, new RecordItemIndex(13));
