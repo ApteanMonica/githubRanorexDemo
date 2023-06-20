@@ -121,11 +121,11 @@ namespace Z_UHR_004.Recording_H_ANSPR
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFehlzeitergebnisse.Maximieren' at Center.", repo.TblFehlzeitergebnisse.MaximierenInfo, new RecordItemIndex(0));
             repo.TblFehlzeitergebnisse.Maximieren.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFehlzeitergebnisse.ColEbeneRow1' at CenterLeft.", repo.TblFehlzeitergebnisse.ColEbeneRow1Info, new RecordItemIndex(1));
-            repo.TblFehlzeitergebnisse.ColEbeneRow1.Click(Location.CenterLeft);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFehlzeitergebnisse.FlexGrid_Tabelle_Urlaubsanspruch.ColEbeneRow1_tabelle_Anspr' at CenterLeft.", repo.TblFehlzeitergebnisse.FlexGrid_Tabelle_Urlaubsanspruch.ColEbeneRow1_tabelle_AnsprInfo, new RecordItemIndex(1));
+            repo.TblFehlzeitergebnisse.FlexGrid_Tabelle_Urlaubsanspruch.ColEbeneRow1_tabelle_Anspr.Click(Location.CenterLeft);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Pers_nr) on item 'TblFehlzeitergebnisse.Row1.ColPersNrRow1'.", repo.TblFehlzeitergebnisse.Row1.ColPersNrRow1Info, new RecordItemIndex(2));
-            //Validate.AttributeEqual(repo.TblFehlzeitergebnisse.Row1.ColPersNrRow1Info, "Text", Pers_nr);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Pers_nr) on item 'TblFehlzeitergebnisse.FlexGrid_Tabelle_Urlaubsanspruch.ColPersNrRow1'.", repo.TblFehlzeitergebnisse.FlexGrid_Tabelle_Urlaubsanspruch.ColPersNrRow1Info, new RecordItemIndex(2));
+            //Validate.AttributeEqual(repo.TblFehlzeitergebnisse.FlexGrid_Tabelle_Urlaubsanspruch.ColPersNrRow1Info, "Text", Pers_nr);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anspruchsart_Urlaub) on item 'TblFehlzeitergebnisse.ColAnspraCdRow2'.", repo.TblFehlzeitergebnisse.ColAnspraCdRow2Info, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.TblFehlzeitergebnisse.ColAnspraCdRow2Info, "Text", Anspruchsart_Urlaub);
