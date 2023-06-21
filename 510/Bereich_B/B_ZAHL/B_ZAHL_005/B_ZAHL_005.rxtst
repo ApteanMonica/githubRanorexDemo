@@ -53,6 +53,9 @@
 			name="XML_Datei_pruefen"
 			ref="0f608636-9cf6-40a6-b9df-ab87ebf0c7ed"
 			type="Recording">
+				<description>
+					<![CDATA[kein Usercode mit Tagesdatum2, weil das Tagesdatum als Zahlungsdatum gesetzt und dieses dann in Folge geprüft wird. (Bei "Tagesprung" gäbe es dann andere Probleme)]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Tagesdatum_JJJJ_MM_dd"
@@ -385,6 +388,9 @@
 			name="Tagesdatum_ermitteln_2_Formate"
 			ref="f57de03b-df6e-474a-a0f5-b1bd482ad48c"
 			type="Recording">
+				<description>
+					<![CDATA[kein Usercode mit Tagesdatum2, weil das Tagesdatum als Zahlungsdatum gesetzt und dieses dann in Folge geprüft wird. (Bei "Tagesprung" gäbe es dann andere Probleme)]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Tagesdatum"
@@ -417,10 +423,6 @@
 							<testmodule
 							id="f6903d2a-983f-4d68-b504-61cd27f62c99"
 							name="StartAUT">
-							</testmodule>
-							<testmodule
-							id="f94ea9d2-d220-44e5-97b3-b5831bc461cf"
-							name="Tagesdatum_ermitteln_2_Formate">
 							</testmodule>
 						</setup>
 						<testmodule
@@ -474,6 +476,10 @@
 						<smartfoldernode
 						id="25fb1d48-fbe2-45ab-86cc-39b8d9ee0001"
 						name="Bankbeleg_erstellen_und_wieder_entfernen">
+							<testmodule
+							id="f94ea9d2-d220-44e5-97b3-b5831bc461cf"
+							name="Tagesdatum_ermitteln_2_Formate">
+							</testmodule>
 							<testmodule
 							id="9d2d369b-c35b-4649-9eb4-ecd03f1fcb8f"
 							name="Zahldatum_Tagesdatum_setzen">

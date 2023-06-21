@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Fehler_Nicht_uebernommene_OPs"
+	classname="Fehler_Nicht_uebernommene_OPs_pruefen"
 	namespace="B_ZAHL_006.Recordings">
 	</codegen>
 	<variables>
@@ -32,6 +32,11 @@ mode="Global">
 		id="fa15d15b-072f-4dd2-9320-bee40c38b4da"
 		name="LF_303060">
 			303060
+		</var>
+		<var
+		id="0ec71b71-fa17-41f3-8768-4cb04d7c7417"
+		name="Zahldatum_alt">
+			07.07.2021
 		</var>
 	</variables>
 	<recorditems>
@@ -8304,6 +8309,89 @@ mode="Global">
 			</matchvalue>
 		</validationitem>
 		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="33a60bf8-1118-4530-9c24-465ed460c154">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Zahldatum_alt">
+				</binding>
+			</bindings>
+			<info
+			id="95568a5d-b400-4437-8836-d1e8c541d689"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="21"
+				prefcap="cell"
+				rect="-693,99,497,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Vorschlag 6 Zahldatum (07.07.2021) bereits abgelaufen! Bitte anpassen.
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colInfo Row 4
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						Vorschlag 6 Zahldatum (07.07.2021) bereits abgelaufen! Bitte anpassen.
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblNicht_uebernommene']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colInfo Row 4']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Vorschlag 6 Zahldatum (07.07.2021) bereits abgelaufen! Bitte anpassen.
+			</matchvalue>
+		</validationitem>
+		<validationitem
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
@@ -8480,7 +8568,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Fehler_Nicht_uebernommene_OPs.UserCode.cs
+		Fehler_Nicht_uebernommene_OPs_pruefen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

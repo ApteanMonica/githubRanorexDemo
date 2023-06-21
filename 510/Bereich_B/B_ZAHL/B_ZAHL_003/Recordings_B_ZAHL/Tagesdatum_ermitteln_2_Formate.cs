@@ -24,22 +24,22 @@ namespace B_ZAHL_003.Recordings_B_ZAHL
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Tagesdatum_ermitteln recording.
+    ///The Tagesdatum_ermitteln_2_Formate recording.
     /// </summary>
     [TestModule("45b1b1f2-c060-40d6-9728-ae4446d2d0e3", ModuleType.Recording, 1)]
-    public partial class Tagesdatum_ermitteln : ITestModule
+    public partial class Tagesdatum_ermitteln_2_Formate : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ZAHL_003.B_ZAHL_003Repository repository.
         /// </summary>
         public static global::B_ZAHL_003.B_ZAHL_003Repository repo = global::B_ZAHL_003.B_ZAHL_003Repository.Instance;
 
-        static Tagesdatum_ermitteln instance = new Tagesdatum_ermitteln();
+        static Tagesdatum_ermitteln_2_Formate instance = new Tagesdatum_ermitteln_2_Formate();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Tagesdatum_ermitteln()
+        public Tagesdatum_ermitteln_2_Formate()
         {
             Tagesdatum = "";
             Tagesdatum_JJJJ_MM_dd = "";
@@ -48,7 +48,7 @@ namespace B_ZAHL_003.Recordings_B_ZAHL
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Tagesdatum_ermitteln Instance
+        public static Tagesdatum_ermitteln_2_Formate Instance
         {
             get { return instance; }
         }

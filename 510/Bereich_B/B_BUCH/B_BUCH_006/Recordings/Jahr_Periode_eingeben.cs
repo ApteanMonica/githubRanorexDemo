@@ -24,22 +24,22 @@ namespace B_BUCH_006.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Jahr_Periode_eingaben recording.
+    ///The Jahr_Periode_eingeben recording.
     /// </summary>
     [TestModule("c46fbe59-d80e-418e-a7e8-b14280851789", ModuleType.Recording, 1)]
-    public partial class Jahr_Periode_eingaben : ITestModule
+    public partial class Jahr_Periode_eingeben : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BUCH_006.B_BUCH_006Repository repository.
         /// </summary>
         public static global::B_BUCH_006.B_BUCH_006Repository repo = global::B_BUCH_006.B_BUCH_006Repository.Instance;
 
-        static Jahr_Periode_eingaben instance = new Jahr_Periode_eingaben();
+        static Jahr_Periode_eingeben instance = new Jahr_Periode_eingeben();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Jahr_Periode_eingaben()
+        public Jahr_Periode_eingeben()
         {
             jahr = "2023";
             periode = "03";
@@ -48,7 +48,7 @@ namespace B_BUCH_006.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Jahr_Periode_eingaben Instance
+        public static Jahr_Periode_eingeben Instance
         {
             get { return instance; }
         }

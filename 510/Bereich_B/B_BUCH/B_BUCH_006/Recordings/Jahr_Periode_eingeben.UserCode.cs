@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_ZAHL_003.Recordings_B_ZAHL
+namespace B_BUCH_006.Recordings
 {
-    public partial class Tagesdatum_ermitteln
+    public partial class Jahr_Periode_eingeben
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

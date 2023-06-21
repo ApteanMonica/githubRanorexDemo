@@ -13,6 +13,7 @@
     <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
     <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>16241a38-a8ad-42ea-ad13-34fbedc44b8b</projectdefaultrepository>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -138,14 +139,14 @@
       <UserCode>true</UserCode>
       <id>83e982c5-eb1d-4eaa-8075-6e6b65c1743e</id>
     </Compile>
-    <Compile Include="Recordings\Jahr_Periode_eingaben.cs">
+    <Compile Include="Recordings\Jahr_Periode_eingeben.cs">
       <BoundTo>b507bb02-50c3-4177-ac09-be13f33c0518</BoundTo>
-      <DependentUpon>Jahr_Periode_eingaben.rxrec</DependentUpon>
+      <DependentUpon>Jahr_Periode_eingeben.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>435a2e63-fdd1-420d-8acd-42ab0107a643</id>
     </Compile>
-    <Compile Include="Recordings\Jahr_Periode_eingaben.UserCode.cs">
-      <DependentUpon>Jahr_Periode_eingaben.rxrec</DependentUpon>
+    <Compile Include="Recordings\Jahr_Periode_eingeben.UserCode.cs">
+      <DependentUpon>Jahr_Periode_eingeben.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>49bf1900-9c2a-4dcc-bf39-9d2159c776cd</id>
       <BoundTo>b507bb02-50c3-4177-ac09-be13f33c0518</BoundTo>
@@ -234,7 +235,7 @@
       <id>e68e55af-6d16-40fe-b398-db6b3ceb3dbd</id>
       <recordtableid>084e3e6a-33d2-4b7b-88cb-c2e0a9f01208</recordtableid>
     </None>
-    <None Include="Recordings\Jahr_Periode_eingaben.rxrec">
+    <None Include="Recordings\Jahr_Periode_eingeben.rxrec">
       <BoundTo>16241a38-a8ad-42ea-ad13-34fbedc44b8b</BoundTo>
       <id>b507bb02-50c3-4177-ac09-be13f33c0518</id>
       <recordtableid>c46fbe59-d80e-418e-a7e8-b14280851789</recordtableid>

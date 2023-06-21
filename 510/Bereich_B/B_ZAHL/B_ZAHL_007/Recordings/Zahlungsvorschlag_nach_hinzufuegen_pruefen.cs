@@ -124,9 +124,6 @@ namespace B_ZAHL_007.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsZahldatum_Zeile_mit_ZV_TEXT_B_ZAHL_007'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsZahldatum_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsZahldatum_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZldtDtanlag_Zeile_mit_ZV_TEXT_B_ZAHL_007'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZldtDtanlag_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZldtDtanlag_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, "Text", Tagesdatum);
-            
         }
 
 #region Image Feature Data

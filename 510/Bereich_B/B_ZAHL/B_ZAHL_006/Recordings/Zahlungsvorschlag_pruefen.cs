@@ -42,6 +42,7 @@ namespace B_ZAHL_006.Recordings
         public Zahlungsvorschlag_pruefen()
         {
             ZV_TEXT = "B_ZAHL_006";
+            Zahldatum_alt = "07.07.2021";
         }
 
         /// <summary>
@@ -53,6 +54,18 @@ namespace B_ZAHL_006.Recordings
         }
 
 #region Variables
+
+        string _Zahldatum_alt;
+
+        /// <summary>
+        /// Gets or sets the value of variable Zahldatum_alt.
+        /// </summary>
+        [TestVariable("d65eb6f0-dc0a-4fdd-a5b5-412faa4281e1")]
+        public string Zahldatum_alt
+        {
+            get { return _Zahldatum_alt; }
+            set { _Zahldatum_alt = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable ZV_TEXT.
@@ -102,10 +115,13 @@ namespace B_ZAHL_006.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'6') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsVorschlag_Zeile_mit_ZV_Text_B_ZAHL_006'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsVorschlag_Zeile_mit_ZV_Text_B_ZAHL_006Info, new RecordItemIndex(3));
             Validate.AttributeContains(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsVorschlag_Zeile_mit_ZV_Text_B_ZAHL_006Info, "Text", "6");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'4.233,60') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Zeile_mit_ZV_Text_B_ZAHL_006'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Zeile_mit_ZV_Text_B_ZAHL_006Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Zahldatum_alt) on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsZahldatum_Zeile_mit_ZV_Text_B_ZAHL_006'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsZahldatum_Zeile_mit_ZV_Text_B_ZAHL_006Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsZahldatum_Zeile_mit_ZV_Text_B_ZAHL_006Info, "Text", Zahldatum_alt);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'4.233,60') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Zeile_mit_ZV_Text_B_ZAHL_006'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Zeile_mit_ZV_Text_B_ZAHL_006Info, new RecordItemIndex(5));
             Validate.AttributeContains(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Zeile_mit_ZV_Text_B_ZAHL_006Info, "Text", "4.233,60");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'4') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzahl_Zeile_mit_ZV_Text_B_ZAHL_006'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzahl_Zeile_mit_ZV_Text_B_ZAHL_006Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'4') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzahl_Zeile_mit_ZV_Text_B_ZAHL_006'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzahl_Zeile_mit_ZV_Text_B_ZAHL_006Info, new RecordItemIndex(6));
             Validate.AttributeContains(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzahl_Zeile_mit_ZV_Text_B_ZAHL_006Info, "Text", "4");
             
         }

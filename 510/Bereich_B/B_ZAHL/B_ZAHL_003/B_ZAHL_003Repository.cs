@@ -510,9 +510,14 @@ namespace B_ZAHL_003
         [RepositoryFolder("aae19ce2-ba6d-492c-a732-c459f1636485")]
         public partial class Zeilen_ZahlungsvorschlaegeFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _colzlvszahldatum_zeile_mit_zv_text_b_zahl_003Info;
             RepoItemInfo _column0_zeile_mit_zv_text_b_zahl_003Info;
             RepoItemInfo _row_mit_zv_text_b_zahl_003Info;
+            RepoItemInfo _colzldttext_in_zeile_mit_zv_text_b_zahl_003Info;
+            RepoItemInfo _colzlvsvorschlag_in_zeile_mit_zv_text_b_zahl_003Info;
+            RepoItemInfo _colzlvszahldatum_zeile_mit_zv_text_b_zahl_003Info;
+            RepoItemInfo _colzlvssumme_in_zeile_mit_zv_text_b_zahl_003Info;
+            RepoItemInfo _colzlvsanzahl_in_zeile_mit_zv_text_b_zahl_003Info;
+            RepoItemInfo _colzldtdtanlag_in_zeile_mit_zv_text_b_zahl_003Info;
 
             /// <summary>
             /// Creates a new Zeilen_Zahlungsvorschlaege  folder.
@@ -520,9 +525,14 @@ namespace B_ZAHL_003
             public Zeilen_ZahlungsvorschlaegeFolder(RepoGenBaseFolder parentFolder) :
                     base("Zeilen_Zahlungsvorschlaege", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpName0']/container[@controlname='tblVorschläge']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "aae19ce2-ba6d-492c-a732-c459f1636485", "")
             {
-                _colzlvszahldatum_zeile_mit_zv_text_b_zahl_003Info = new RepoItemInfo(this, "ColZlvsZahldatum_Zeile_mit_ZV_TEXT_B_ZAHL_003", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZlvs_zahldatum']", "", 30000, null, "d4c9e3e9-30f2-42fe-965d-172ff87f3d2d");
                 _column0_zeile_mit_zv_text_b_zahl_003Info = new RepoItemInfo(this, "Column0_Zeile_mit_ZV_TEXT_B_ZAHL_003", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'Column 0']", "", 30000, null, "667d462a-c95b-4c52-bc1b-66739ad0094b");
                 _row_mit_zv_text_b_zahl_003Info = new RepoItemInfo(this, "Row_mit_ZV_TEXT_B_ZAHL_003", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]", "", 30000, null, "8a4e3005-b24b-434c-9361-56812ef062e9");
+                _colzldttext_in_zeile_mit_zv_text_b_zahl_003Info = new RepoItemInfo(this, "ColZldtText_in_Zeile_mit_ZV_TEXT_B_ZAHL_003", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZldt_text']", "", 30000, null, "bec33266-2723-431c-903f-a982b6c3bd10");
+                _colzlvsvorschlag_in_zeile_mit_zv_text_b_zahl_003Info = new RepoItemInfo(this, "ColZlvsVorschlag_in_Zeile_mit_ZV_TEXT_B_ZAHL_003", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZlvs_vorschlag']", "", 30000, null, "e9559072-a5d9-497c-9a6c-8baa0054fd11");
+                _colzlvszahldatum_zeile_mit_zv_text_b_zahl_003Info = new RepoItemInfo(this, "ColZlvsZahldatum_Zeile_mit_ZV_TEXT_B_ZAHL_003", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZlvs_zahldatum']", "", 30000, null, "d4c9e3e9-30f2-42fe-965d-172ff87f3d2d");
+                _colzlvssumme_in_zeile_mit_zv_text_b_zahl_003Info = new RepoItemInfo(this, "ColZlvsSumme_in_Zeile_mit_ZV_TEXT_B_ZAHL_003", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZlvs_summe']", "", 30000, null, "0e692dab-a5c3-4110-9f28-3b49e5f3c561");
+                _colzlvsanzahl_in_zeile_mit_zv_text_b_zahl_003Info = new RepoItemInfo(this, "ColZlvsAnzahl_in_Zeile_mit_ZV_TEXT_B_ZAHL_003", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZlvs_anzahl']", "", 30000, null, "f67a573f-70cd-4396-b2c3-fb7c5bdd2c5d");
+                _colzldtdtanlag_in_zeile_mit_zv_text_b_zahl_003Info = new RepoItemInfo(this, "ColZldtDtanlag_in_Zeile_mit_ZV_TEXT_B_ZAHL_003", "row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZldt_dtanlag']", "", 30000, null, "9c15ff37-7a6b-4fe2-90d6-ad22db7af35d");
             }
 
             /// <summary>
@@ -546,30 +556,6 @@ namespace B_ZAHL_003
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ColZlvsZahldatum_Zeile_mit_ZV_TEXT_B_ZAHL_003 item.
-            /// </summary>
-            [RepositoryItem("d4c9e3e9-30f2-42fe-965d-172ff87f3d2d")]
-            public virtual Ranorex.Cell ColZlvsZahldatum_Zeile_mit_ZV_TEXT_B_ZAHL_003
-            {
-                get
-                {
-                    return _colzlvszahldatum_zeile_mit_zv_text_b_zahl_003Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColZlvsZahldatum_Zeile_mit_ZV_TEXT_B_ZAHL_003 item info.
-            /// </summary>
-            [RepositoryItemInfo("d4c9e3e9-30f2-42fe-965d-172ff87f3d2d")]
-            public virtual RepoItemInfo ColZlvsZahldatum_Zeile_mit_ZV_TEXT_B_ZAHL_003Info
-            {
-                get
-                {
-                    return _colzlvszahldatum_zeile_mit_zv_text_b_zahl_003Info;
                 }
             }
 
@@ -618,6 +604,150 @@ namespace B_ZAHL_003
                 get
                 {
                     return _row_mit_zv_text_b_zahl_003Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColZldtText_in_Zeile_mit_ZV_TEXT_B_ZAHL_003 item.
+            /// </summary>
+            [RepositoryItem("bec33266-2723-431c-903f-a982b6c3bd10")]
+            public virtual Ranorex.Cell ColZldtText_in_Zeile_mit_ZV_TEXT_B_ZAHL_003
+            {
+                get
+                {
+                    return _colzldttext_in_zeile_mit_zv_text_b_zahl_003Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColZldtText_in_Zeile_mit_ZV_TEXT_B_ZAHL_003 item info.
+            /// </summary>
+            [RepositoryItemInfo("bec33266-2723-431c-903f-a982b6c3bd10")]
+            public virtual RepoItemInfo ColZldtText_in_Zeile_mit_ZV_TEXT_B_ZAHL_003Info
+            {
+                get
+                {
+                    return _colzldttext_in_zeile_mit_zv_text_b_zahl_003Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColZlvsVorschlag_in_Zeile_mit_ZV_TEXT_B_ZAHL_003 item.
+            /// </summary>
+            [RepositoryItem("e9559072-a5d9-497c-9a6c-8baa0054fd11")]
+            public virtual Ranorex.Cell ColZlvsVorschlag_in_Zeile_mit_ZV_TEXT_B_ZAHL_003
+            {
+                get
+                {
+                    return _colzlvsvorschlag_in_zeile_mit_zv_text_b_zahl_003Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColZlvsVorschlag_in_Zeile_mit_ZV_TEXT_B_ZAHL_003 item info.
+            /// </summary>
+            [RepositoryItemInfo("e9559072-a5d9-497c-9a6c-8baa0054fd11")]
+            public virtual RepoItemInfo ColZlvsVorschlag_in_Zeile_mit_ZV_TEXT_B_ZAHL_003Info
+            {
+                get
+                {
+                    return _colzlvsvorschlag_in_zeile_mit_zv_text_b_zahl_003Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColZlvsZahldatum_Zeile_mit_ZV_TEXT_B_ZAHL_003 item.
+            /// </summary>
+            [RepositoryItem("d4c9e3e9-30f2-42fe-965d-172ff87f3d2d")]
+            public virtual Ranorex.Cell ColZlvsZahldatum_Zeile_mit_ZV_TEXT_B_ZAHL_003
+            {
+                get
+                {
+                    return _colzlvszahldatum_zeile_mit_zv_text_b_zahl_003Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColZlvsZahldatum_Zeile_mit_ZV_TEXT_B_ZAHL_003 item info.
+            /// </summary>
+            [RepositoryItemInfo("d4c9e3e9-30f2-42fe-965d-172ff87f3d2d")]
+            public virtual RepoItemInfo ColZlvsZahldatum_Zeile_mit_ZV_TEXT_B_ZAHL_003Info
+            {
+                get
+                {
+                    return _colzlvszahldatum_zeile_mit_zv_text_b_zahl_003Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColZlvsSumme_in_Zeile_mit_ZV_TEXT_B_ZAHL_003 item.
+            /// </summary>
+            [RepositoryItem("0e692dab-a5c3-4110-9f28-3b49e5f3c561")]
+            public virtual Ranorex.Cell ColZlvsSumme_in_Zeile_mit_ZV_TEXT_B_ZAHL_003
+            {
+                get
+                {
+                    return _colzlvssumme_in_zeile_mit_zv_text_b_zahl_003Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColZlvsSumme_in_Zeile_mit_ZV_TEXT_B_ZAHL_003 item info.
+            /// </summary>
+            [RepositoryItemInfo("0e692dab-a5c3-4110-9f28-3b49e5f3c561")]
+            public virtual RepoItemInfo ColZlvsSumme_in_Zeile_mit_ZV_TEXT_B_ZAHL_003Info
+            {
+                get
+                {
+                    return _colzlvssumme_in_zeile_mit_zv_text_b_zahl_003Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColZlvsAnzahl_in_Zeile_mit_ZV_TEXT_B_ZAHL_003 item.
+            /// </summary>
+            [RepositoryItem("f67a573f-70cd-4396-b2c3-fb7c5bdd2c5d")]
+            public virtual Ranorex.Cell ColZlvsAnzahl_in_Zeile_mit_ZV_TEXT_B_ZAHL_003
+            {
+                get
+                {
+                    return _colzlvsanzahl_in_zeile_mit_zv_text_b_zahl_003Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColZlvsAnzahl_in_Zeile_mit_ZV_TEXT_B_ZAHL_003 item info.
+            /// </summary>
+            [RepositoryItemInfo("f67a573f-70cd-4396-b2c3-fb7c5bdd2c5d")]
+            public virtual RepoItemInfo ColZlvsAnzahl_in_Zeile_mit_ZV_TEXT_B_ZAHL_003Info
+            {
+                get
+                {
+                    return _colzlvsanzahl_in_zeile_mit_zv_text_b_zahl_003Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColZldtDtanlag_in_Zeile_mit_ZV_TEXT_B_ZAHL_003 item.
+            /// </summary>
+            [RepositoryItem("9c15ff37-7a6b-4fe2-90d6-ad22db7af35d")]
+            public virtual Ranorex.Cell ColZldtDtanlag_in_Zeile_mit_ZV_TEXT_B_ZAHL_003
+            {
+                get
+                {
+                    return _colzldtdtanlag_in_zeile_mit_zv_text_b_zahl_003Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColZldtDtanlag_in_Zeile_mit_ZV_TEXT_B_ZAHL_003 item info.
+            /// </summary>
+            [RepositoryItemInfo("9c15ff37-7a6b-4fe2-90d6-ad22db7af35d")]
+            public virtual RepoItemInfo ColZldtDtanlag_in_Zeile_mit_ZV_TEXT_B_ZAHL_003Info
+            {
+                get
+                {
+                    return _colzldtdtanlag_in_zeile_mit_zv_text_b_zahl_003Info;
                 }
             }
         }
