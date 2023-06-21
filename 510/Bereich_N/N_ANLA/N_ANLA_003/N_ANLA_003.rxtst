@@ -13,16 +13,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
-					variableid="686e8adb-842c-4dc3-8387-24e32ddfe190"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm"
 					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
 					variableid="73865362-837b-41ea-a711-1363c9e90bbd"
 					variablename="Programm">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="686e8adb-842c-4dc3-8387-24e32ddfe190"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -46,6 +46,22 @@
 					<param
 					name="Bezeichnung_Anlage_1"
 					value="Anlage_003_01">
+					</param>
+					<param
+					name="Konto_Anlagen_Nr"
+					value="0660">
+					</param>
+					<param
+					name="Anlagennr"
+					value="003_01">
+					</param>
+					<param
+					name="Anlagenbezeichnung"
+					value="N_ANLA_003_01">
+					</param>
+					<param
+					name="Belegnr_01"
+					value="N_ANLA_003_01">
 					</param>
 				</parameters>
 			</testcase>
@@ -90,16 +106,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Anlage_1"
-					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
-					variableid="5b135898-9e11-4ff1-8a74-4a84d138cb6e"
-					variablename="Anlage_1">
-					</var>
-					<var
 					dataname="Bezeichnung_Anlage_1"
 					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
 					variableid="b4a3170a-fc8e-496d-94d0-841179fdf3f8"
 					variablename="Bezeichnung_Anlage_1">
+					</var>
+					<var
+					dataname="Anlage_1"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="5b135898-9e11-4ff1-8a74-4a84d138cb6e"
+					variablename="Anlage_1">
 					</var>
 				</databinding>
 			</testmodule>
@@ -107,6 +123,44 @@
 			id="a55ebab2-ee6a-4602-816f-ab635c1e9ad3"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="a9ec80d7-7239-4649-8e57-e04bfc48771b"
+			name="FIBU_Uebernahme_Teil_2"
+			ref="93c82bde-97b8-45b0-bba7-b44ff236767e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Konto_Anlagen_Nr"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="1308d3a3-dc97-438c-9199-d9ffc621bb03"
+					variablename="Konto_Anlagen_Nr">
+					</var>
+					<var
+					dataname="Anlagennr"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="3e8a3f15-5c9e-41c1-bf09-2308fef4562e"
+					variablename="Anlagennr">
+					</var>
+					<var
+					dataname="Anlagenbezeichnung"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="7d337f04-b0f7-42a7-a6d9-89358dac056d"
+					variablename="Anlagenbezeichnung">
+					</var>
+					<var
+					dataname="Belegnr_01"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="23c2fd93-75cd-4c7b-a781-ad0da67a1591"
+					variablename="Belegnr_01">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="dc0d5cf0-faf1-441a-90a2-38c9a0173b3c"
+			name="Kontrolle_Uebernahme"
+			ref="6b88918f-65b0-4d66-a3f1-7f6cc3387ff6"
+			type="Recording">
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -129,6 +183,14 @@
 						<testmodule
 						id="82518aab-7265-4da2-8145-67bbac17f1b8"
 						name="Fibu_Uebernahme_Teil_1">
+						</testmodule>
+						<testmodule
+						id="a9ec80d7-7239-4649-8e57-e04bfc48771b"
+						name="FIBU_Uebernahme_Teil_2">
+						</testmodule>
+						<testmodule
+						id="dc0d5cf0-faf1-441a-90a2-38c9a0173b3c"
+						name="Kontrolle_Uebernahme">
 						</testmodule>
 						<teardown
 						id="a55ebab2-ee6a-4602-816f-ab635c1e9ad3"

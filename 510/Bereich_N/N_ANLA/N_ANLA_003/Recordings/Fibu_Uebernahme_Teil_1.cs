@@ -105,51 +105,54 @@ namespace N_ANLA_003.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnla.PbNew' at Center.", repo.FrmAnla.PbNewInfo, new RecordItemIndex(0));
-            repo.FrmAnla.PbNew.Click();
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnla.PbBuchenBuchen' at Center.", repo.FrmAnla.PbBuchenBuchenInfo, new RecordItemIndex(1));
-            repo.FrmAnla.PbBuchenBuchen.Click();
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Down' Press.", new RecordItemIndex(2));
-            Keyboard.Press(System.Windows.Forms.Keys.Down, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Right' Press.", new RecordItemIndex(3));
-            Keyboard.Press(System.Windows.Forms.Keys.Right, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press.", new RecordItemIndex(4));
-            Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgZugang.TitleBar100AVZBuchungenZugang'", repo.DlgZugang.TitleBar100AVZBuchungenZugangInfo, new ActionTimeout(120000), new RecordItemIndex(5));
-            repo.DlgZugang.TitleBar100AVZBuchungenZugangInfo.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgZugang.CbNkr' at Center.", repo.DlgZugang.CbNkrInfo, new RecordItemIndex(6));
-            repo.DlgZugang.CbNkr.Click();
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgZugang.CbNkr'.", repo.DlgZugang.CbNkrInfo, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.DlgZugang.CbNkrInfo, "Checked", "False");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2022') on item 'DlgZugang.DfGjhrBez'.", repo.DlgZugang.DfGjhrBezInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2022') on item 'DlgZugang.DfGjhrBez'.", repo.DlgZugang.DfGjhrBezInfo, new RecordItemIndex(0));
             Validate.AttributeEqual(repo.DlgZugang.DfGjhrBezInfo, "Text", "2022");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Anlage_1' with focus on 'DlgZugang.DfAnlaNr'.", repo.DlgZugang.DfAnlaNrInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnla.PbNew' at Center.", repo.FrmAnla.PbNewInfo, new RecordItemIndex(1));
+            repo.FrmAnla.PbNew.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnla.PbBuchenBuchen' at Center.", repo.FrmAnla.PbBuchenBuchenInfo, new RecordItemIndex(2));
+            repo.FrmAnla.PbBuchenBuchen.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Down' Press.", new RecordItemIndex(3));
+            Keyboard.Press(System.Windows.Forms.Keys.Down, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Right' Press.", new RecordItemIndex(4));
+            Keyboard.Press(System.Windows.Forms.Keys.Right, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press.", new RecordItemIndex(5));
+            Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgZugang.TitleBar100AVZBuchungenZugang'", repo.DlgZugang.TitleBar100AVZBuchungenZugangInfo, new ActionTimeout(120000), new RecordItemIndex(6));
+            repo.DlgZugang.TitleBar100AVZBuchungenZugangInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ - Buchungen: Zugang') on item 'DlgZugang.TitleBar100AVZBuchungenZugang'.", repo.DlgZugang.TitleBar100AVZBuchungenZugangInfo, new RecordItemIndex(7));
+            Validate.AttributeContains(repo.DlgZugang.TitleBar100AVZBuchungenZugangInfo, "Text", "[100]  AVZ - Buchungen: Zugang");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgZugang.CbNkr' at Center.", repo.DlgZugang.CbNkrInfo, new RecordItemIndex(8));
+            repo.DlgZugang.CbNkr.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgZugang.CbNkr'.", repo.DlgZugang.CbNkrInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.DlgZugang.CbNkrInfo, "Checked", "False");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Anlage_1' with focus on 'DlgZugang.DfAnlaNr'.", repo.DlgZugang.DfAnlaNrInfo, new RecordItemIndex(10));
             repo.DlgZugang.DfAnlaNr.PressKeys(Anlage_1);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'DlgZugang.DfAnlaNr'.", repo.DlgZugang.DfAnlaNrInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'DlgZugang.DfAnlaNr'.", repo.DlgZugang.DfAnlaNrInfo, new RecordItemIndex(11));
             Keyboard.PrepareFocus(repo.DlgZugang.DfAnlaNr);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anlage_1) on item 'DlgZugang.DfAnlaNr'.", repo.DlgZugang.DfAnlaNrInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anlage_1) on item 'DlgZugang.DfAnlaNr'.", repo.DlgZugang.DfAnlaNrInfo, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.DlgZugang.DfAnlaNrInfo, "Text", Anlage_1);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Bezeichnung_Anlage_1' with focus on 'DlgZugang.DfAnlaBez'.", repo.DlgZugang.DfAnlaBezInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Bezeichnung_Anlage_1' with focus on 'DlgZugang.DfAnlaBez'.", repo.DlgZugang.DfAnlaBezInfo, new RecordItemIndex(13));
             repo.DlgZugang.DfAnlaBez.PressKeys(Bezeichnung_Anlage_1);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'DlgZugang.DfAnlaBez'.", repo.DlgZugang.DfAnlaBezInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'DlgZugang.DfAnlaBez'.", repo.DlgZugang.DfAnlaBezInfo, new RecordItemIndex(14));
             Keyboard.PrepareFocus(repo.DlgZugang.DfAnlaBez);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Bezeichnung_Anlage_1) on item 'DlgZugang.DfAnlaBez'.", repo.DlgZugang.DfAnlaBezInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Bezeichnung_Anlage_1) on item 'DlgZugang.DfAnlaBez'.", repo.DlgZugang.DfAnlaBezInfo, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.DlgZugang.DfAnlaBezInfo, "Text", Bezeichnung_Anlage_1);
             
         }
