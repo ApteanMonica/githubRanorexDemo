@@ -80,10 +80,10 @@ namespace K_AUSW_001.Recordings_B_KTAB
             Init();
 
             Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblKtAb.TitleBar100Kontenabfrage'.", repo.TblKtAb.TitleBar100KontenabfrageInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TblKtAb.TitleBar100Kontenabfrage, new Duration(0));
+            Host.Current.CloseApplication(repo.TblKtAb.TitleBar100Kontenabfrage, 1000);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
             
         }
 
