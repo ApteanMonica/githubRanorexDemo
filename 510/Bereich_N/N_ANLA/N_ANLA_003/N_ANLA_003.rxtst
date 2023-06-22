@@ -26,6 +26,26 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="3b1a6ceb-b61e-4cf9-a165-dfc8968f4a81"
+			name="Kontrolle_Uebernahme_Teil_2"
+			ref="6d3899ff-8fe8-428e-b208-563fc9bfd3ec"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Frist_stille_Reserve"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="726164ec-a9b8-4719-bace-2d912c3f73a2"
+					variablename="Frist_stille_Reserve">
+					</var>
+					<var
+					dataname="Frist_IFB"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="1280136d-f1d4-4926-93ed-09746eaac0bb"
+					variablename="Frist_IFB">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
 			name="N_ANLA_003"
@@ -79,6 +99,14 @@
 					name="Zugangsmenge"
 					value="1,00">
 					</param>
+					<param
+					name="Frist_stille_Reserve"
+					value="7,00">
+					</param>
+					<param
+					name="Frist_IFB"
+					value="4,00">
+					</param>
 				</parameters>
 			</testcase>
 			<testsuite
@@ -115,6 +143,12 @@
 			id="741382f9-3516-49bf-ad83-df6e9d3859f8"
 			name="TestCase">
 			</testcase>
+			<testmodule
+			id="7a6d5c49-4d9b-4965-bd1f-a0ab0eb2701f"
+			name="Kontrolle_nochmalige_Fibu_Uebernahme_fuer_0660"
+			ref="79ae2eb9-50ae-47a0-80b6-2c3628511ede"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="82518aab-7265-4da2-8145-67bbac17f1b8"
 			name="Fibu_Uebernahme_Teil_1"
@@ -170,6 +204,12 @@
 					variablename="Belegnr_01">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="ce8e57cf-8179-4464-8125-4343da3dd915"
+			name="Kontrolle_Karteireiter_Bereiche"
+			ref="86fa9bb9-60eb-430f-98f3-e12810e6a2b1"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="dc0d5cf0-faf1-441a-90a2-38c9a0173b3c"
@@ -251,6 +291,18 @@
 						<testmodule
 						id="dc0d5cf0-faf1-441a-90a2-38c9a0173b3c"
 						name="Kontrolle_Uebernahme">
+						</testmodule>
+						<testmodule
+						id="3b1a6ceb-b61e-4cf9-a165-dfc8968f4a81"
+						name="Kontrolle_Uebernahme_Teil_2">
+						</testmodule>
+						<testmodule
+						id="ce8e57cf-8179-4464-8125-4343da3dd915"
+						name="Kontrolle_Karteireiter_Bereiche">
+						</testmodule>
+						<testmodule
+						id="7a6d5c49-4d9b-4965-bd1f-a0ab0eb2701f"
+						name="Kontrolle_nochmalige_Fibu_Uebernahme_fuer_0660">
 						</testmodule>
 						<teardown
 						id="a55ebab2-ee6a-4602-816f-ab635c1e9ad3"
