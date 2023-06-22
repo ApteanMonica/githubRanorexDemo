@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace X_MUSTER_013
+namespace X_MUSTER_013.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Recording1 recording.
+    ///The CloseAUT recording.
     /// </summary>
-    [TestModule("080f6c78-543e-41c3-bb65-92ade0fc1485", ModuleType.Recording, 1)]
-    public partial class Recording1 : ITestModule
+    [TestModule("b9dcc292-7f52-4ab8-ac95-26fba94ab69b", ModuleType.Recording, 1)]
+    public partial class CloseAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the X_MUSTER_013Repository repository.
+        /// Holds an instance of the global::X_MUSTER_013.X_MUSTER_013Repository repository.
         /// </summary>
-        public static X_MUSTER_013Repository repo = X_MUSTER_013Repository.Instance;
+        public static global::X_MUSTER_013.X_MUSTER_013Repository repo = global::X_MUSTER_013.X_MUSTER_013Repository.Instance;
 
-        static Recording1 instance = new Recording1();
+        static CloseAUT instance = new CloseAUT();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Recording1()
+        public CloseAUT()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Recording1 Instance
+        public static CloseAUT Instance
         {
             get { return instance; }
         }
@@ -73,12 +73,16 @@ namespace X_MUSTER_013
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 0;
+            Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 20;
-            Delay.SpeedFactor = 0.00;
+            Delay.SpeedFactor = 1.00;
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmAdr.TitleBar100Kundenstamm'.", repo.FrmAdr.TitleBar100KundenstammInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.FrmAdr.TitleBar100Kundenstamm, 500);
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

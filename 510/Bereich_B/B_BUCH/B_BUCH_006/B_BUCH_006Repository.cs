@@ -1022,6 +1022,7 @@ namespace B_BUCH_006
             RepoItemInfo _colgktonrInfo;
             RepoItemInfo _colbetragInfo;
             RepoItemInfo _colktbenrrow2Info;
+            RepoItemInfo _colktonrrow1Info;
 
             /// <summary>
             /// Creates a new TblB  folder.
@@ -1036,6 +1037,7 @@ namespace B_BUCH_006
                 _colgktonrInfo = new RepoItemInfo(this, "ColGKtoNr", "container/element/table/row[@accessiblename='Row 1']/cell[@accessiblename='colGKto_nr Row 1']", ".//cell[30]", 30000, null, "99ddd36a-4a10-4343-ad6e-a720d15559c1");
                 _colbetragInfo = new RepoItemInfo(this, "ColBetrag", "element[@controlname='colBetrag']", "", 30000, null, "37fb48be-de48-4e35-a58c-2c4f62ec7853");
                 _colktbenrrow2Info = new RepoItemInfo(this, "ColKtbeNrRow2", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colKtbe_nr Row 2']", ".//cell[@accessiblename='colKtbe_nr Row 2']", 30000, null, "2507f4b3-ea07-4125-8874-e3b9cb48ec58");
+                _colktonrrow1Info = new RepoItemInfo(this, "ColKtoNrRow1", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKto_nr Row 1']", "", 30000, null, "55290e9d-daa4-44f2-a529-a0787d531751");
             }
 
             /// <summary>
@@ -1227,6 +1229,30 @@ namespace B_BUCH_006
                 get
                 {
                     return _colktbenrrow2Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColKtoNrRow1 item.
+            /// </summary>
+            [RepositoryItem("55290e9d-daa4-44f2-a529-a0787d531751")]
+            public virtual Ranorex.Cell ColKtoNrRow1
+            {
+                get
+                {
+                    return _colktonrrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColKtoNrRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("55290e9d-daa4-44f2-a529-a0787d531751")]
+            public virtual RepoItemInfo ColKtoNrRow1Info
+            {
+                get
+                {
+                    return _colktonrrow1Info;
                 }
             }
         }

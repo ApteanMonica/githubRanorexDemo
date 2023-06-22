@@ -170,28 +170,31 @@ namespace B_BUCH_006.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER_Nr) on item 'MdiBuch.Beleg1'.", repo.MdiBuch.Beleg1Info, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'MdiBuch.Beleg1'", repo.MdiBuch.Beleg1Info, new ActionTimeout(5000), new RecordItemIndex(0));
+            repo.MdiBuch.Beleg1Info.WaitForExists(5000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER_Nr) on item 'MdiBuch.Beleg1'.", repo.MdiBuch.Beleg1Info, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.MdiBuch.Beleg1Info, "Text", ER_Nr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$lieferant) on item 'MdiBuch.DfAdrNrU'.", repo.MdiBuch.DfAdrNrUInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$lieferant) on item 'MdiBuch.DfAdrNrU'.", repo.MdiBuch.DfAdrNrUInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.MdiBuch.DfAdrNrUInfo, "Text", lieferant);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$betrag) on item 'TblErbu.ColErbuBetragRow1'.", repo.TblErbu.ColErbuBetragRow1Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$betrag) on item 'TblErbu.ColErbuBetragRow1'.", repo.TblErbu.ColErbuBetragRow1Info, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.TblErbu.ColErbuBetragRow1Info, "Text", betrag);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$betrag) on item 'MdiBuch.Betrag'.", repo.MdiBuch.BetragInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$betrag) on item 'MdiBuch.Betrag'.", repo.MdiBuch.BetragInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.MdiBuch.BetragInfo, "Text", betrag);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$aufteilg_Cd) on item 'MdiBuch.AufteilgCd'.", repo.MdiBuch.AufteilgCdInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$aufteilg_Cd) on item 'MdiBuch.AufteilgCd'.", repo.MdiBuch.AufteilgCdInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.MdiBuch.AufteilgCdInfo, "Text", aufteilg_Cd);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ust_Cd) on item 'MdiBuch.Ust_Cd'.", repo.MdiBuch.Ust_CdInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ust_Cd) on item 'MdiBuch.Ust_Cd'.", repo.MdiBuch.Ust_CdInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.MdiBuch.Ust_CdInfo, "Text", Ust_Cd);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$betrag_Ust) on item 'MdiBuch.Betrag_ust'.", repo.MdiBuch.Betrag_ustInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$betrag_Ust) on item 'MdiBuch.Betrag_ust'.", repo.MdiBuch.Betrag_ustInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.MdiBuch.Betrag_ustInfo, "Text", betrag_Ust);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$konto) on item 'MdiBuch.Konto'.", repo.MdiBuch.KontoInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$konto) on item 'MdiBuch.Konto'.", repo.MdiBuch.KontoInfo, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.MdiBuch.KontoInfo, "Text", konto);
             
         }

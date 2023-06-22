@@ -20,63 +20,102 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace X_MUSTER_013
+namespace X_MUSTER_013.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The select2Datei recording.
     /// </summary>
-    [TestModule("ea119e0d-3c94-401d-ae72-deef3ecdfed7", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    [TestModule("04f3874c-8af5-4e8f-b075-580ca5951194", ModuleType.Recording, 1)]
+    public partial class select2Datei : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the X_MUSTER_013Repository repository.
+        /// Holds an instance of the global::X_MUSTER_013.X_MUSTER_013Repository repository.
         /// </summary>
-        public static X_MUSTER_013Repository repo = X_MUSTER_013Repository.Instance;
+        public static global::X_MUSTER_013.X_MUSTER_013Repository repo = global::X_MUSTER_013.X_MUSTER_013Repository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static select2Datei instance = new select2Datei();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public select2Datei()
         {
-            startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            programm = "B_ZAHL";
+            hostName = "";
+            table = "s_adr";
+            path = "C:\\Temp\\datei_1.txt";
+            datenBank = "T510_1";
+            select = "select * from s_adr";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static select2Datei Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _startfile;
+        string _hostName;
 
         /// <summary>
-        /// Gets or sets the value of variable startfile.
+        /// Gets or sets the value of variable hostName.
         /// </summary>
-        [TestVariable("45bdfa0e-aa14-424d-a017-eebafdd7f110")]
-        public string startfile
+        [TestVariable("cf24a83c-54b9-45d2-a828-8be394f1d996")]
+        public string hostName
         {
-            get { return _startfile; }
-            set { _startfile = value; }
+            get { return _hostName; }
+            set { _hostName = value; }
         }
 
-        string _programm;
+        string _table;
 
         /// <summary>
-        /// Gets or sets the value of variable programm.
+        /// Gets or sets the value of variable table.
         /// </summary>
-        [TestVariable("8ae51f5b-c740-454a-8235-de16acb543ea")]
-        public string programm
+        [TestVariable("3b7c6845-928a-4517-8190-ef27d88283c1")]
+        public string table
         {
-            get { return _programm; }
-            set { _programm = value; }
+            get { return _table; }
+            set { _table = value; }
+        }
+
+        string _path;
+
+        /// <summary>
+        /// Gets or sets the value of variable path.
+        /// </summary>
+        [TestVariable("8de59d36-a432-4a9b-a658-cc66414389e6")]
+        public string path
+        {
+            get { return _path; }
+            set { _path = value; }
+        }
+
+        string _datenBank;
+
+        /// <summary>
+        /// Gets or sets the value of variable datenBank.
+        /// </summary>
+        [TestVariable("015719c9-a8dd-4362-9b68-6c5e3951ff38")]
+        public string datenBank
+        {
+            get { return _datenBank; }
+            set { _datenBank = value; }
+        }
+
+        string _select;
+
+        /// <summary>
+        /// Gets or sets the value of variable select.
+        /// </summary>
+        [TestVariable("1b09d6f7-93a7-4066-b1ae-69c649cbfb95")]
+        public string select
+        {
+            get { return _select; }
+            set { _select = value; }
         }
 
 #endregion
@@ -105,14 +144,9 @@ namespace X_MUSTER_013
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $startfile with arguments from variable $programm in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(startfile, programm, "", false);
+            hostName = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetHost();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmZahlMain.TitleBar100LieferantenZahlungsver'", repo.FrmZahlMain.TitleBar100LieferantenZahlungsverInfo, new ActionTimeout(60000), new RecordItemIndex(1));
-            repo.FrmZahlMain.TitleBar100LieferantenZahlungsverInfo.WaitForExists(60000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Zahlungsverkehr') on item 'FrmZahlMain.TitleBar100LieferantenZahlungsver'.", repo.FrmZahlMain.TitleBar100LieferantenZahlungsverInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmZahlMain.TitleBar100LieferantenZahlungsverInfo, "Text", "Zahlungsverkehr");
+            Ranorex.AutomationHelpers.UserCodeCollections.sql.sqlSelect(hostName, datenBank, select, path);
             
         }
 
