@@ -115,11 +115,11 @@ namespace B_ZAHL_007.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$ZV_TEXT) on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.Row_mit_ZV_TEXT_B_ZAHL_007'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.Row_mit_ZV_TEXT_B_ZAHL_007Info, new RecordItemIndex(3));
             Validate.AttributeContains(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.Row_mit_ZV_TEXT_B_ZAHL_007Info, "Text", ZV_TEXT);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='24.094,00') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Zeile_mit_ZV_TEXT_B_ZAHL_007'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, "Text", "24.094,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='22.624,00') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Zeile_mit_ZV_TEXT_B_ZAHL_007'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, "Text", "22.624,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='6') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzah_Zeile_mit_ZV_TEXT_B_ZAHL_007'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzah_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzah_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, "Text", "6");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='5') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzah_Zeile_mit_ZV_TEXT_B_ZAHL_007'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzah_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzah_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, "Text", "5");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsZahldatum_Zeile_mit_ZV_TEXT_B_ZAHL_007'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsZahldatum_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsZahldatum_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, "Text", Tagesdatum);

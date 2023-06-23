@@ -42,6 +42,7 @@ namespace B_ZAHL_007.Recordings
         public Bankbeleg_Detailzeilen_pruefen()
         {
             LF_303072 = "303072";
+            LF_303077 = "303077";
         }
 
         /// <summary>
@@ -64,6 +65,18 @@ namespace B_ZAHL_007.Recordings
         {
             get { return _LF_303072; }
             set { _LF_303072 = value; }
+        }
+
+        string _LF_303077;
+
+        /// <summary>
+        /// Gets or sets the value of variable LF_303077.
+        /// </summary>
+        [TestVariable("2dc68f7c-e3b6-4996-996f-87eed5aff66a")]
+        public string LF_303077
+        {
+            get { return _LF_303077; }
+            set { _LF_303077 = value; }
         }
 
 #endregion
@@ -114,11 +127,24 @@ namespace B_ZAHL_007.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Tagesdatum (NICHT Abschnitt 12.05.2021\t)\r\nValidating AttributeContains (Text>'588,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColZBetragZRow1'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColZBetragZRow1Info, new RecordItemIndex(6));
             Validate.AttributeContains(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColZBetragZRow1Info, "Text", "588,00");
             
-            // Search timeout reduziert
-            Report.Log(ReportLevel.Info, "Validation", "Search timeout reduziert\r\nValidating NotExists on item 'FrmZlvsAEndern.Row2'.", repo.FrmZlvsAEndern.Row2Info, new RecordItemIndex(7));
-            Validate.NotExists(repo.FrmZlvsAEndern.Row2Info);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$LF_303077) on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColAdrNrRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColAdrNrRow2Info, new RecordItemIndex(7));
+            Validate.AttributeContains(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColAdrNrRow2Info, "Text", LF_303077);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmZlvsAEndern.TitleBar100LieferantenZahlvorschl'.", repo.FrmZlvsAEndern.TitleBar100LieferantenZahlvorschlInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ER_077A_B_ZAHL_007') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColBelegRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColBelegRow2Info, new RecordItemIndex(8));
+            Validate.AttributeContains(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColBelegRow2Info, "Text", "ER_077A_B_ZAHL_007");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZahlsperreRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZahlsperreRow2Info, new RecordItemIndex(9));
+            Validate.AttributeContains(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZahlsperreRow2Info, "Text", "");
+            
+            // Tagesdatum (NICHT Abschnitt 12.05.2021	)
+            Report.Log(ReportLevel.Info, "Validation", "Tagesdatum (NICHT Abschnitt 12.05.2021\t)\r\nValidating AttributeContains (Text>'1.470,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZahlsperreRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZahlsperreRow2Info, new RecordItemIndex(10));
+            Validate.AttributeContains(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZahlsperreRow2Info, "Text", "1.470,00");
+            
+            // Search timeout reduziert
+            Report.Log(ReportLevel.Info, "Validation", "Search timeout reduziert\r\nValidating NotExists on item 'FrmZlvsAEndern.Row3'.", repo.FrmZlvsAEndern.Row3Info, new RecordItemIndex(11));
+            Validate.NotExists(repo.FrmZlvsAEndern.Row3Info);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmZlvsAEndern.TitleBar100LieferantenZahlvorschl'.", repo.FrmZlvsAEndern.TitleBar100LieferantenZahlvorschlInfo, new RecordItemIndex(12));
             Keyboard.PrepareFocus(repo.FrmZlvsAEndern.TitleBar100LieferantenZahlvorschl);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             

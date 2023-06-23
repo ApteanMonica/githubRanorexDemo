@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_ZAHL_007.Recordings
 {
-    public partial class Bankbeleg_geperrte_OPs_nicht_moeglich
+    public partial class Bankbeleg_gesperrte_OPs_nicht_moeglich
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

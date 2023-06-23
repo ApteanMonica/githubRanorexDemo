@@ -4234,7 +4234,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				ER_077A_B_ZAHL_007
+				ER_077B_B_ZAHL_007
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -4263,19 +4263,20 @@ mode="Global">
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeEqual"
+		action="NotExists"
 		enabled="True"
 		optional="False"
 		searchpropertyid="5e07eb6a-a02f-4226-bb15-bf5fa405bf58">
 			<comment>
+				search timeout reduziert
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="8298406e-ed80-47ba-b449-b1d46e3567de"
+			id="ececde2a-d23c-432c-b095-5660f7a00e05"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='frmZlvsÄndern']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBeleg Row 6']
+					/form[@controlname='frmZlvsÄndern']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 6']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -4284,32 +4285,6 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				ER_077B_B_ZAHL_007
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="657cfc7e-e663-44ef-b49c-8553e9b2a0e0">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="5c6352a8-417e-4f84-a151-e192d6e0f734"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmZlvsÄndern']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colZahlsperre Row 6']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				N
 			</matchvalue>
 		</validationitem>
 	</recorditems>

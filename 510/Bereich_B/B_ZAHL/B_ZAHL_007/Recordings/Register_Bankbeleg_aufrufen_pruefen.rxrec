@@ -297,12 +297,12 @@ mode="Global">
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeRegex"
+		action="AttributeContains"
 		enabled="True"
 		optional="False"
 		searchpropertyid="e33ad002-d451-4a88-9339-61b15b103a5f">
 			<comment>
-				regex: Bankbeleg-Nr beginnt mit ZV-Nr (variabel) (1. Stelle mit Punkt ersetzen) + 001
+				regex: Bankbeleg-Nr beginnt mit ZV-Nr (variabel) + 001
 			</comment>
 			<bindings>
 			</bindings>
@@ -319,7 +319,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				.001
+				001
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -431,7 +431,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				588,00
+				2.058,00
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -456,7 +456,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				1
+				2
 			</matchvalue>
 		</validationitem>
 		<validationitem

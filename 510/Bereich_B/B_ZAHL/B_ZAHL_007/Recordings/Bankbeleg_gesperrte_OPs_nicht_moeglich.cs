@@ -24,22 +24,22 @@ namespace B_ZAHL_007.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Bankbeleg_geperrte_OPs_nicht_moeglich recording.
+    ///The Bankbeleg_gesperrte_OPs_nicht_moeglich recording.
     /// </summary>
     [TestModule("022911a7-fe14-4670-8bf7-dfc31e35c1a6", ModuleType.Recording, 1)]
-    public partial class Bankbeleg_geperrte_OPs_nicht_moeglich : ITestModule
+    public partial class Bankbeleg_gesperrte_OPs_nicht_moeglich : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ZAHL_007.B_ZAHL_007Repository repository.
         /// </summary>
         public static global::B_ZAHL_007.B_ZAHL_007Repository repo = global::B_ZAHL_007.B_ZAHL_007Repository.Instance;
 
-        static Bankbeleg_geperrte_OPs_nicht_moeglich instance = new Bankbeleg_geperrte_OPs_nicht_moeglich();
+        static Bankbeleg_gesperrte_OPs_nicht_moeglich instance = new Bankbeleg_gesperrte_OPs_nicht_moeglich();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Bankbeleg_geperrte_OPs_nicht_moeglich()
+        public Bankbeleg_gesperrte_OPs_nicht_moeglich()
         {
             Bank = "OBK";
             Zahlart = "S";
@@ -48,7 +48,7 @@ namespace B_ZAHL_007.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Bankbeleg_geperrte_OPs_nicht_moeglich Instance
+        public static Bankbeleg_gesperrte_OPs_nicht_moeglich Instance
         {
             get { return instance; }
         }
@@ -121,107 +121,104 @@ namespace B_ZAHL_007.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmZlvsAEndern.ChildTableWindow.Row5Column0' at Center.", repo.FrmZlvsAEndern.ChildTableWindow.Row5Column0Info, new RecordItemIndex(4));
             repo.FrmZlvsAEndern.ChildTableWindow.Row5Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmZlvsAEndern.ChildTableWindow.Row6Column0' at Center.", repo.FrmZlvsAEndern.ChildTableWindow.Row6Column0Info, new RecordItemIndex(5));
-            repo.FrmZlvsAEndern.ChildTableWindow.Row6Column0.Click();
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmZlvsAEndern.ChildTableWindow.Row7Column0' at Center.", repo.FrmZlvsAEndern.ChildTableWindow.Row7Column0Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmZlvsAEndern.ChildTableWindow.Row7Column0' at Center.", repo.FrmZlvsAEndern.ChildTableWindow.Row7Column0Info, new RecordItemIndex(5));
             repo.FrmZlvsAEndern.ChildTableWindow.Row7Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey up}' with focus on 'FrmZlvsAEndern'.", repo.FrmZlvsAEndern.SelfInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey up}' with focus on 'FrmZlvsAEndern'.", repo.FrmZlvsAEndern.SelfInfo, new RecordItemIndex(6));
             repo.FrmZlvsAEndern.Self.EnsureVisible();
             Keyboard.Press("{LControlKey up}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'FrmZlvsAEndern.ChildTableWindow.Row7Column0' at Center.", repo.FrmZlvsAEndern.ChildTableWindow.Row7Column0Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'FrmZlvsAEndern.ChildTableWindow.Row7Column0' at Center.", repo.FrmZlvsAEndern.ChildTableWindow.Row7Column0Info, new RecordItemIndex(7));
             repo.FrmZlvsAEndern.ChildTableWindow.Row7Column0.Click(System.Windows.Forms.MouseButtons.Right);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'BZAHL.BankbelegErstellen'", repo.BZAHL.BankbelegErstellenInfo, new ActionTimeout(120000), new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'BZAHL.BankbelegErstellen'", repo.BZAHL.BankbelegErstellenInfo, new ActionTimeout(120000), new RecordItemIndex(8));
             repo.BZAHL.BankbelegErstellenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BZAHL.BankbelegErstellen' at Center.", repo.BZAHL.BankbelegErstellenInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BZAHL.BankbelegErstellen' at Center.", repo.BZAHL.BankbelegErstellenInfo, new RecordItemIndex(9));
             repo.BZAHL.BankbelegErstellen.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBankbeleg.Bankbeleg'", repo.FrmBankbeleg.BankbelegInfo, new ActionTimeout(120000), new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBankbeleg.Bankbeleg'", repo.FrmBankbeleg.BankbelegInfo, new ActionTimeout(120000), new RecordItemIndex(10));
             repo.FrmBankbeleg.BankbelegInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bankbeleg aus 6 markierten OPs') on item 'FrmBankbeleg.Bankbeleg'.", repo.FrmBankbeleg.BankbelegInfo, new RecordItemIndex(12));
-            Validate.AttributeEqual(repo.FrmBankbeleg.BankbelegInfo, "Text", "Bankbeleg aus 6 markierten OPs");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bankbeleg aus 5 markierten OPs') on item 'FrmBankbeleg.Bankbeleg'.", repo.FrmBankbeleg.BankbelegInfo, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.FrmBankbeleg.BankbelegInfo, "Text", "Bankbeleg aus 5 markierten OPs");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Zahlart) on item 'FrmBankbeleg.Zahlart'.", repo.FrmBankbeleg.ZahlartInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Zahlart) on item 'FrmBankbeleg.Zahlart'.", repo.FrmBankbeleg.ZahlartInfo, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.FrmBankbeleg.ZahlartInfo, "Text", Zahlart);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmBankbeleg.Zahlart'.", repo.FrmBankbeleg.ZahlartInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmBankbeleg.Zahlart'.", repo.FrmBankbeleg.ZahlartInfo, new RecordItemIndex(13));
             Keyboard.PrepareFocus(repo.FrmBankbeleg.Zahlart);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Bank' with focus on 'FrmBankbeleg.Bank'.", repo.FrmBankbeleg.BankInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Bank' with focus on 'FrmBankbeleg.Bank'.", repo.FrmBankbeleg.BankInfo, new RecordItemIndex(14));
             repo.FrmBankbeleg.Bank.EnsureVisible();
             Keyboard.Press(Bank);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmBankbeleg.Bank'.", repo.FrmBankbeleg.BankInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmBankbeleg.Bank'.", repo.FrmBankbeleg.BankInfo, new RecordItemIndex(15));
             Keyboard.PrepareFocus(repo.FrmBankbeleg.Bank);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmBankbeleg.Bank'.", repo.FrmBankbeleg.BankInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmBankbeleg.Bank'.", repo.FrmBankbeleg.BankInfo, new RecordItemIndex(16));
             repo.FrmBankbeleg.Bank.EnsureVisible();
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBankbeleg.CbDruckKeiner' at Center.", repo.FrmBankbeleg.CbDruckKeinerInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBankbeleg.CbDruckKeiner' at Center.", repo.FrmBankbeleg.CbDruckKeinerInfo, new RecordItemIndex(17));
             repo.FrmBankbeleg.CbDruckKeiner.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Bank) on item 'FrmBankbeleg.Bank'.", repo.FrmBankbeleg.BankInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Bank) on item 'FrmBankbeleg.Bank'.", repo.FrmBankbeleg.BankInfo, new RecordItemIndex(18));
             Validate.AttributeEqual(repo.FrmBankbeleg.BankInfo, "Text", Bank);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBankbeleg.CbDruckKeiner'.", repo.FrmBankbeleg.CbDruckKeinerInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBankbeleg.CbDruckKeiner'.", repo.FrmBankbeleg.CbDruckKeinerInfo, new RecordItemIndex(19));
             Validate.AttributeEqual(repo.FrmBankbeleg.CbDruckKeinerInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBankbeleg.PbCommonStart' at Center.", repo.FrmBankbeleg.PbCommonStartInfo, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBankbeleg.PbCommonStart' at Center.", repo.FrmBankbeleg.PbCommonStartInfo, new RecordItemIndex(20));
             repo.FrmBankbeleg.PbCommonStart.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'UEberweisungsDatentraeger.UEberweisungsDatentraeger'", repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo, new ActionTimeout(120000), new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'UEberweisungsDatentraeger.UEberweisungsDatentraeger'", repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo, new ActionTimeout(120000), new RecordItemIndex(21));
             repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'c:\\temp\\b_zahl_007_gesperrte.xml' with focus on 'UEberweisungsDatentraeger.Text1001'.", repo.UEberweisungsDatentraeger.Text1001Info, new RecordItemIndex(23));
-            repo.UEberweisungsDatentraeger.Text1001.PressKeys("c:\\temp\\b_zahl_007_gesperrte.xml");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'c:\\temp\\nur_gesperrte_OPs.xml' with focus on 'UEberweisungsDatentraeger.Text1001'.", repo.UEberweisungsDatentraeger.Text1001Info, new RecordItemIndex(22));
+            repo.UEberweisungsDatentraeger.Text1001.PressKeys("c:\\temp\\nur_gesperrte_OPs.xml");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'UEberweisungsDatentraeger.ButtonSpeichern' at Center.", repo.UEberweisungsDatentraeger.ButtonSpeichernInfo, new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'UEberweisungsDatentraeger.ButtonSpeichern' at Center.", repo.UEberweisungsDatentraeger.ButtonSpeichernInfo, new RecordItemIndex(23));
             repo.UEberweisungsDatentraeger.ButtonSpeichern.Click();
             
             // Falls b_zahl_007.xml schon vorhanden ist, die Meldung mit J bestätigen (nicht Button JA, weil sonst Fehler, wenn Meldung nicht kommt). Nächster Button ist "OK" (O)
-            Report.Log(ReportLevel.Info, "Keyboard", "Falls b_zahl_007.xml schon vorhanden ist, die Meldung mit J bestätigen (nicht Button JA, weil sonst Fehler, wenn Meldung nicht kommt). Nächster Button ist \"OK\" (O)\r\nKey 'J' Press.", new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Keyboard", "Falls b_zahl_007.xml schon vorhanden ist, die Meldung mit J bestätigen (nicht Button JA, weil sonst Fehler, wenn Meldung nicht kommt). Nächster Button ist \"OK\" (O)\r\nKey 'J' Press.", new RecordItemIndex(24));
             Keyboard.Press(System.Windows.Forms.Keys.J, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgMessageBox.Zahlungsverkehr'", repo.DlgMessageBox.ZahlungsverkehrInfo, new ActionTimeout(180000), new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgMessageBox.Zahlungsverkehr'", repo.DlgMessageBox.ZahlungsverkehrInfo, new ActionTimeout(180000), new RecordItemIndex(25));
             repo.DlgMessageBox.ZahlungsverkehrInfo.WaitForExists(180000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es gibt keine Zahlung. Datenträger nicht erstellt !') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(27));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es gibt keine Zahlung. Datenträger nicht erstellt !') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(26));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es gibt keine Zahlung. Datenträger nicht erstellt !");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(28));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(27));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgMessageBox.Zahlungsverkehr'", repo.DlgMessageBox.ZahlungsverkehrInfo, new ActionTimeout(180000), new RecordItemIndex(29));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgMessageBox.Zahlungsverkehr'", repo.DlgMessageBox.ZahlungsverkehrInfo, new ActionTimeout(180000), new RecordItemIndex(28));
             repo.DlgMessageBox.ZahlungsverkehrInfo.WaitForExists(180000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=' Bitte kontrollieren Sie die nicht übernommenen OP's.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(30));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=' Bitte kontrollieren Sie die nicht übernommenen OP's.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(29));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", " Bitte kontrollieren Sie die nicht übernommenen OP's.");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(31));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(30));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBankbeleg.PbToolBarItemsNichtUebernommen'", repo.FrmBankbeleg.PbToolBarItemsNichtUebernommenInfo, new ActionTimeout(120000), new RecordItemIndex(32));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBankbeleg.PbToolBarItemsNichtUebernommen'", repo.FrmBankbeleg.PbToolBarItemsNichtUebernommenInfo, new ActionTimeout(120000), new RecordItemIndex(31));
             repo.FrmBankbeleg.PbToolBarItemsNichtUebernommenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmBankbeleg.Bankbeleg'.", repo.FrmBankbeleg.BankbelegInfo, new RecordItemIndex(33));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmBankbeleg.Bankbeleg'.", repo.FrmBankbeleg.BankbelegInfo, new RecordItemIndex(32));
             Keyboard.PrepareFocus(repo.FrmBankbeleg.Bankbeleg);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmZlvsAEndern.PbDataAccessLaden' at Center.", repo.FrmZlvsAEndern.PbDataAccessLadenInfo, new RecordItemIndex(34));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmZlvsAEndern.PbDataAccessLaden' at Center.", repo.FrmZlvsAEndern.PbDataAccessLadenInfo, new RecordItemIndex(33));
             repo.FrmZlvsAEndern.PbDataAccessLaden.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER_077B_B_ZAHL_007') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_7.ColBelegRow7'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_7.ColBelegRow7Info, new RecordItemIndex(35));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER_077B_B_ZAHL_007') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_7.ColBelegRow7'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_7.ColBelegRow7Info, new RecordItemIndex(34));
             Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_7.ColBelegRow7Info, "Text", "ER_077B_B_ZAHL_007");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmZlvsAEndern.TitleBar100LieferantenZahlvorschl'.", repo.FrmZlvsAEndern.TitleBar100LieferantenZahlvorschlInfo, new RecordItemIndex(36));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmZlvsAEndern.TitleBar100LieferantenZahlvorschl'.", repo.FrmZlvsAEndern.TitleBar100LieferantenZahlvorschlInfo, new RecordItemIndex(35));
             Keyboard.PrepareFocus(repo.FrmZlvsAEndern.TitleBar100LieferantenZahlvorschl);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             

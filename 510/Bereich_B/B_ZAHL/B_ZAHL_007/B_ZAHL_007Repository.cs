@@ -1790,6 +1790,7 @@ namespace B_ZAHL_007
             RepoItemInfo _colbusabelegnrrow5Info;
             RepoItemInfo _colinforow5Info;
             RepoItemInfo _coladrnrrow6Info;
+            RepoItemInfo _colnamerow6Info;
             RepoItemInfo _colbusabelegnrrow6Info;
             RepoItemInfo _colinforow6Info;
             RepoItemInfo _colnamerow7Info;
@@ -1817,6 +1818,7 @@ namespace B_ZAHL_007
                 _colbusabelegnrrow5Info = new RepoItemInfo(this, "ColBusaBelegnrRow5", "?/?/cell[@accessiblename='colBusa_belegnr Row 5']", "", 30000, null, "8d725e39-7ccb-4b8d-a825-4e8b9452088b");
                 _colinforow5Info = new RepoItemInfo(this, "ColInfoRow5", "?/?/cell[@accessiblename='colInfo Row 5']", "", 30000, null, "6194bf5b-c86b-47d1-b8dc-bce976576c9f");
                 _coladrnrrow6Info = new RepoItemInfo(this, "ColAdrNrRow6", "?/?/cell[@accessiblename='colAdr_nr Row 6']", "", 30000, null, "22cc007b-5e7b-4ceb-9ebe-1711004d7758");
+                _colnamerow6Info = new RepoItemInfo(this, "ColNameRow6", "row[@accessiblename='Row 6']/cell[@accessiblename='colName Row 6']", "", 30000, null, "6dca051e-632f-41ae-8e34-bda324ed4569");
                 _colbusabelegnrrow6Info = new RepoItemInfo(this, "ColBusaBelegnrRow6", "?/?/cell[@accessiblename='colBusa_belegnr Row 6']", "", 30000, null, "1b4c908c-c4c7-4286-bfbd-2aa8a54edcb9");
                 _colinforow6Info = new RepoItemInfo(this, "ColInfoRow6", "?/?/cell[@accessiblename='colInfo Row 6']", "", 30000, null, "59119327-289c-4fe6-b7ec-25a9b4e22b0e");
                 _colnamerow7Info = new RepoItemInfo(this, "ColNameRow7", "?/?/cell[@accessiblename='colName Row 7']", "", 30000, null, "0cbc21d7-16f5-4b76-89e1-e046dc1e9eb3");
@@ -2228,6 +2230,30 @@ namespace B_ZAHL_007
                 get
                 {
                     return _coladrnrrow6Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColNameRow6 item.
+            /// </summary>
+            [RepositoryItem("6dca051e-632f-41ae-8e34-bda324ed4569")]
+            public virtual Ranorex.Cell ColNameRow6
+            {
+                get
+                {
+                    return _colnamerow6Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColNameRow6 item info.
+            /// </summary>
+            [RepositoryItemInfo("6dca051e-632f-41ae-8e34-bda324ed4569")]
+            public virtual RepoItemInfo ColNameRow6Info
+            {
+                get
+                {
+                    return _colnamerow6Info;
                 }
             }
 
@@ -2668,6 +2694,8 @@ namespace B_ZAHL_007
             RepoItemInfo _pbdataaccessladenInfo;
             RepoItemInfo _pbtoolbaritemsopauswahlInfo;
             RepoItemInfo _row2Info;
+            RepoItemInfo _row3Info;
+            RepoItemInfo _row6Info;
 
             /// <summary>
             /// Creates a new FrmZlvsAEndern  folder.
@@ -2681,6 +2709,8 @@ namespace B_ZAHL_007
                 _pbdataaccessladenInfo = new RepoItemInfo(this, "PbDataAccessLaden", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Laden']", "", 30000, null, "bea05f9a-817d-4792-a84c-ed53d7750b26");
                 _pbtoolbaritemsopauswahlInfo = new RepoItemInfo(this, "PbToolBarItemsOPAuswahl", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbToolBarItems_OPAuswahl']", "", 30000, null, "1dd11016-cb70-416a-b7e0-b3ebb185cc07");
                 _row2Info = new RepoItemInfo(this, "Row2", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']", "", 5000, null, "0bffdce5-bb5a-466b-92f0-7d7781cda1f3");
+                _row3Info = new RepoItemInfo(this, "Row3", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']", "", 30000, null, "9d7fe15d-ea62-4782-8968-da2c9be413c8");
+                _row6Info = new RepoItemInfo(this, "Row6", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 6']", "", 5000, null, "ececde2a-d23c-432c-b095-5660f7a00e05");
             }
 
             /// <summary>
@@ -2824,6 +2854,54 @@ namespace B_ZAHL_007
                 get
                 {
                     return _row2Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row3 item.
+            /// </summary>
+            [RepositoryItem("9d7fe15d-ea62-4782-8968-da2c9be413c8")]
+            public virtual Ranorex.Row Row3
+            {
+                get
+                {
+                    return _row3Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row3 item info.
+            /// </summary>
+            [RepositoryItemInfo("9d7fe15d-ea62-4782-8968-da2c9be413c8")]
+            public virtual RepoItemInfo Row3Info
+            {
+                get
+                {
+                    return _row3Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row6 item.
+            /// </summary>
+            [RepositoryItem("ececde2a-d23c-432c-b095-5660f7a00e05")]
+            public virtual Ranorex.Row Row6
+            {
+                get
+                {
+                    return _row6Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row6 item info.
+            /// </summary>
+            [RepositoryItemInfo("ececde2a-d23c-432c-b095-5660f7a00e05")]
+            public virtual RepoItemInfo Row6Info
+            {
+                get
+                {
+                    return _row6Info;
                 }
             }
 
