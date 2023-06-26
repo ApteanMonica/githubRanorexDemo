@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_ZAHL_007.Recordings_B_KLAB
 {
-    public partial class B_KLAB_LF_303077_temp_OP_Zahlsperre_Tagesdatum_setzen
+    public partial class B_KLAB_LF_303077_Zahlsperren_pruefen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

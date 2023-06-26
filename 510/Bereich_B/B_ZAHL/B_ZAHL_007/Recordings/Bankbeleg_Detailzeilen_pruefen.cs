@@ -137,8 +137,8 @@ namespace B_ZAHL_007.Recordings
             Validate.AttributeContains(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZahlsperreRow2Info, "Text", "");
             
             // Tagesdatum (NICHT Abschnitt 12.05.2021	)
-            Report.Log(ReportLevel.Info, "Validation", "Tagesdatum (NICHT Abschnitt 12.05.2021\t)\r\nValidating AttributeContains (Text>'1.470,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZahlsperreRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZahlsperreRow2Info, new RecordItemIndex(10));
-            Validate.AttributeContains(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZahlsperreRow2Info, "Text", "1.470,00");
+            Report.Log(ReportLevel.Info, "Validation", "Tagesdatum (NICHT Abschnitt 12.05.2021\t)\r\nValidating AttributeContains (Text>'1.470,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZBetragZRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZBetragZRow2Info, new RecordItemIndex(10));
+            Validate.AttributeContains(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZBetragZRow2Info, "Text", "1.470,00");
             
             // Search timeout reduziert
             Report.Log(ReportLevel.Info, "Validation", "Search timeout reduziert\r\nValidating NotExists on item 'FrmZlvsAEndern.Row3'.", repo.FrmZlvsAEndern.Row3Info, new RecordItemIndex(11));
