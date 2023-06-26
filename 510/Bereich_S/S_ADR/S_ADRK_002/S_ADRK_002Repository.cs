@@ -1505,6 +1505,7 @@ namespace S_ADRK_002
             RepoItemInfo _okInfo;
             RepoItemInfo _fehlermeldung_uid_nicht_gueltigInfo;
             RepoItemInfo _meldung_gueltige_uidInfo;
+            RepoItemInfo _labelmeldungstextInfo;
 
             /// <summary>
             /// Creates a new DlgMessageBox  folder.
@@ -1515,6 +1516,7 @@ namespace S_ADRK_002
                 _okInfo = new RepoItemInfo(this, "OK", "button[@controlname='button0']", "", 30000, null, "a2f012dd-39f2-4118-a8b2-083833a09cdf");
                 _fehlermeldung_uid_nicht_gueltigInfo = new RepoItemInfo(this, "Fehlermeldung_UID_Nicht_gueltig", "text[@text~'UID-Prüfung: die angegebene UID ist nicht gültig.']", "", 30000, null, "4b8758b3-925f-4ad1-b515-174a3e75f5bb");
                 _meldung_gueltige_uidInfo = new RepoItemInfo(this, "Meldung_gueltige_UID", "text[@controlname='labelMeldungstext']", "", 30000, null, "ff63be1d-1fbe-4cbc-bae2-e83029fee859");
+                _labelmeldungstextInfo = new RepoItemInfo(this, "LabelMeldungstext", "text[@controlname='labelMeldungstext']", "", 30000, null, "cc2751bf-ed03-47f2-ac5e-f89e08902f5f");
             }
 
             /// <summary>
@@ -1610,6 +1612,30 @@ namespace S_ADRK_002
                 get
                 {
                     return _meldung_gueltige_uidInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LabelMeldungstext item.
+            /// </summary>
+            [RepositoryItem("cc2751bf-ed03-47f2-ac5e-f89e08902f5f")]
+            public virtual Ranorex.Text LabelMeldungstext
+            {
+                get
+                {
+                    return _labelmeldungstextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LabelMeldungstext item info.
+            /// </summary>
+            [RepositoryItemInfo("cc2751bf-ed03-47f2-ac5e-f89e08902f5f")]
+            public virtual RepoItemInfo LabelMeldungstextInfo
+            {
+                get
+                {
+                    return _labelmeldungstextInfo;
                 }
             }
         }

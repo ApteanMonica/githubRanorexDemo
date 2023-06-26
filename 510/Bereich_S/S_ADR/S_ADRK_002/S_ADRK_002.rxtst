@@ -39,7 +39,11 @@
 					value="Ramsauer &amp; Stürmer">
 					</param>
 					<param
-					name="RS"
+					name="Neue_Kundennummer"
+					value="">
+					</param>
+					<param
+					name="Aptean_Austria"
 					value="
 Aptean Austria GmbH
 Dorfstraße 67
@@ -48,10 +52,6 @@ AT-5101 Bergheim
 Möchten Sie als gültige UID übernehmen?
 ">
 					</param>
-					<param
-					name="Neue_Kundennummer"
-					value="">
-					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -59,14 +59,6 @@ Möchten Sie als gültige UID übernehmen?
 			name="CloseAUT"
 			ref="db28528c-9d66-4a92-a582-d423d9bf46fa"
 			type="Recording">
-				<missingdatavariablesbinding>
-					<var
-					dataname="Startfile"
-					datasourceid="05b735d6-c519-4d12-8e28-5abba8f530a8"
-					variableid="eb1793ae-278b-4dcf-8699-37e15c9d4d0c"
-					variablename="CloseAutProcessIDVar">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="2399b6b9-56e4-4385-b0e7-1402eef92e23"
@@ -87,14 +79,6 @@ Möchten Sie als gültige UID übernehmen?
 					variablename="Startfile">
 					</var>
 				</databinding>
-				<missingdatavariablesbinding>
-					<var
-					dataname="Startfile"
-					datasourceid="05b735d6-c519-4d12-8e28-5abba8f530a8"
-					variableid="87446949-4db5-4c47-83e5-fe79e94f58e1"
-					variablename="StartAutProcessIDVar">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
@@ -147,12 +131,6 @@ Möchten Sie als gültige UID übernehmen?
 					variablename="Neue_Kundennummer">
 					</var>
 					<var
-					dataname="RS"
-					datasourceid="05b735d6-c519-4d12-8e28-5abba8f530a8"
-					variableid="a75e90cd-8513-4c32-b521-5dfec30655c6"
-					variablename="RS">
-					</var>
-					<var
 					dataname="UID korrekt"
 					datasourceid="05b735d6-c519-4d12-8e28-5abba8f530a8"
 					variableid="fc37aa28-17ab-48ac-9569-1c29f3544245"
@@ -170,7 +148,21 @@ Möchten Sie als gültige UID übernehmen?
 					variableid="bcf9dfe0-2a23-4243-bb4f-07015e44e55b"
 					variablename="UID_nicht_gueltig">
 					</var>
+					<var
+					dataname="Aptean_Austria"
+					datasourceid="05b735d6-c519-4d12-8e28-5abba8f530a8"
+					variableid="75448926-2327-48d9-ba86-c5884950958e"
+					variablename="Aptean_Austria">
+					</var>
 				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="RS"
+					datasourceid="05b735d6-c519-4d12-8e28-5abba8f530a8"
+					variableid="a75e90cd-8513-4c32-b521-5dfec30655c6"
+					variablename="RS">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<teardown
 			id="a543e135-2760-4511-9f79-f568ff03c86f"
