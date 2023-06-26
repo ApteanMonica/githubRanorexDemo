@@ -53,6 +53,16 @@ namespace N_ANLA_003.Recordings
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable Belegnr_01.
+        /// </summary>
+        [TestVariable("3712f69f-f0fe-44bf-9798-cc3e23346aa2")]
+        public string Belegnr_01
+        {
+            get { return repo.Belegnr_01; }
+            set { repo.Belegnr_01 = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -87,6 +97,9 @@ namespace N_ANLA_003.Recordings
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100AVZUEbernahmeAusGeschaef.WindowsForms10BUTTONApp02804c64R6A' at Center.", repo.Form100AVZUEbernahmeAusGeschaef.WindowsForms10BUTTONApp02804c64R6AInfo, new RecordItemIndex(2));
             repo.Form100AVZUEbernahmeAusGeschaef.WindowsForms10BUTTONApp02804c64R6A.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'DlgFibu.Row_mit_Belegnr'.", repo.DlgFibu.Row_mit_BelegnrInfo, new RecordItemIndex(3));
+            Validate.NotExists(repo.DlgFibu.Row_mit_BelegnrInfo);
             
         }
 
