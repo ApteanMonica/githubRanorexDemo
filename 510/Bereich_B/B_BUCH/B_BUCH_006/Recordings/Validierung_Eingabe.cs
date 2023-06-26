@@ -170,8 +170,8 @@ namespace B_BUCH_006.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'MdiBuch.Beleg1'", repo.MdiBuch.Beleg1Info, new ActionTimeout(5000), new RecordItemIndex(0));
-            repo.MdiBuch.Beleg1Info.WaitForExists(5000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'MdiBuch.Beleg1'", repo.MdiBuch.Beleg1Info, new ActionTimeout(120000), new RecordItemIndex(0));
+            repo.MdiBuch.Beleg1Info.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER_Nr) on item 'MdiBuch.Beleg1'.", repo.MdiBuch.Beleg1Info, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.MdiBuch.Beleg1Info, "Text", ER_Nr);
