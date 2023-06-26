@@ -1209,6 +1209,7 @@ namespace N_ANLA_003
         {
             RepoItemInfo _windowsforms10buttonapp02804c64r6aInfo;
             RepoItemInfo _buttonfibuuebernahmeInfo;
+            RepoItemInfo _pbneuInfo;
 
             /// <summary>
             /// Creates a new Form100AVZBuchungenZugang  folder.
@@ -1218,6 +1219,7 @@ namespace N_ANLA_003
             {
                 _windowsforms10buttonapp02804c64r6aInfo = new RepoItemInfo(this, "WindowsForms10BUTTONApp02804c64R6A", "button[@class='WindowsForms10.BUTTON.app.0.2804c64_r6_ad1' and @instance='4']", "", 30000, null, "81eed15f-3cac-4627-b4c1-b0c262ad9fa8");
                 _buttonfibuuebernahmeInfo = new RepoItemInfo(this, "ButtonFibuUEbernahme", "button[@text='&Fibu-Übernahme']", "", 30000, null, "7f4070e8-d5a2-45cd-bf7c-2ae167314af2");
+                _pbneuInfo = new RepoItemInfo(this, "PbNeu", "button[@controlname='pbNeu']", "", 30000, null, "35a042c2-7150-4bc4-9c0a-48705a02edba");
             }
 
             /// <summary>
@@ -1289,6 +1291,30 @@ namespace N_ANLA_003
                 get
                 {
                     return _buttonfibuuebernahmeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbNeu item.
+            /// </summary>
+            [RepositoryItem("35a042c2-7150-4bc4-9c0a-48705a02edba")]
+            public virtual Ranorex.Button PbNeu
+            {
+                get
+                {
+                    return _pbneuInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbNeu item info.
+            /// </summary>
+            [RepositoryItemInfo("35a042c2-7150-4bc4-9c0a-48705a02edba")]
+            public virtual RepoItemInfo PbNeuInfo
+            {
+                get
+                {
+                    return _pbneuInfo;
                 }
             }
         }
