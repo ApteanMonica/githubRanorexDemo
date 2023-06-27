@@ -24,83 +24,55 @@ namespace N_ANLA_003.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The FIBU_Uebernahme_Teil_2 recording.
+    ///The FIBU_Uebernahme_GWG_Anlage_Teil_2 recording.
     /// </summary>
-    [TestModule("93c82bde-97b8-45b0-bba7-b44ff236767e", ModuleType.Recording, 1)]
-    public partial class FIBU_Uebernahme_Teil_2 : ITestModule
+    [TestModule("8950909f-9b27-483b-95a6-8213694a52bc", ModuleType.Recording, 1)]
+    public partial class FIBU_Uebernahme_GWG_Anlage_Teil_2 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_ANLA_003.N_ANLA_003Repository repository.
         /// </summary>
         public static global::N_ANLA_003.N_ANLA_003Repository repo = global::N_ANLA_003.N_ANLA_003Repository.Instance;
 
-        static FIBU_Uebernahme_Teil_2 instance = new FIBU_Uebernahme_Teil_2();
+        static FIBU_Uebernahme_GWG_Anlage_Teil_2 instance = new FIBU_Uebernahme_GWG_Anlage_Teil_2();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public FIBU_Uebernahme_Teil_2()
+        public FIBU_Uebernahme_GWG_Anlage_Teil_2()
         {
-            Konto_Anlagen_Nr = "0660";
-            Belegnr_01 = "N_ANLA_003_01";
-            Anlagennr = "003_01";
-            Anlagenbezeichnung = "N_ANLA_003_01";
+            Kontonr_GWG_Anlage = "0680";
+            Belegnr_02 = "N_ANLA_003_02";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static FIBU_Uebernahme_Teil_2 Instance
+        public static FIBU_Uebernahme_GWG_Anlage_Teil_2 Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Konto_Anlagen_Nr;
-
         /// <summary>
-        /// Gets or sets the value of variable Konto_Anlagen_Nr.
+        /// Gets or sets the value of variable Belegnr_02.
         /// </summary>
-        [TestVariable("1308d3a3-dc97-438c-9199-d9ffc621bb03")]
-        public string Konto_Anlagen_Nr
+        [TestVariable("0ad43b69-1cde-4335-8873-d961523b1794")]
+        public string Belegnr_02
         {
-            get { return _Konto_Anlagen_Nr; }
-            set { _Konto_Anlagen_Nr = value; }
-        }
-
-        string _Anlagennr;
-
-        /// <summary>
-        /// Gets or sets the value of variable Anlagennr.
-        /// </summary>
-        [TestVariable("3e8a3f15-5c9e-41c1-bf09-2308fef4562e")]
-        public string Anlagennr
-        {
-            get { return _Anlagennr; }
-            set { _Anlagennr = value; }
-        }
-
-        string _Anlagenbezeichnung;
-
-        /// <summary>
-        /// Gets or sets the value of variable Anlagenbezeichnung.
-        /// </summary>
-        [TestVariable("7d337f04-b0f7-42a7-a6d9-89358dac056d")]
-        public string Anlagenbezeichnung
-        {
-            get { return _Anlagenbezeichnung; }
-            set { _Anlagenbezeichnung = value; }
+            get { return repo.Belegnr_02; }
+            set { repo.Belegnr_02 = value; }
         }
 
         /// <summary>
-        /// Gets or sets the value of variable Belegnr_01.
+        /// Gets or sets the value of variable Kontonr_GWG_Anlage.
         /// </summary>
-        [TestVariable("23c2fd93-75cd-4c7b-a781-ad0da67a1591")]
-        public string Belegnr_01
+        [TestVariable("56b579bf-65c4-4776-8755-8fe8fe9c64cc")]
+        public string Kontonr_GWG_Anlage
         {
-            get { return repo.Belegnr_01; }
-            set { repo.Belegnr_01 = value; }
+            get { return repo.Kontonr_GWG_Anlage; }
+            set { repo.Kontonr_GWG_Anlage = value; }
         }
 
 #endregion
@@ -138,8 +110,8 @@ namespace N_ANLA_003.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ - Übernahme aus Geschäftsjahr: 2022') on item 'DlgFibu.TitleBar100AVZUEbernahmeAusGesc'.", repo.DlgFibu.TitleBar100AVZUEbernahmeAusGescInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.DlgFibu.TitleBar100AVZUEbernahmeAusGescInfo, "Text", "[100]  AVZ - Übernahme aus Geschäftsjahr: 2022");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Konto_Anlagen_Nr' with focus on 'DlgZugang.DfAnlaNr'.", repo.DlgZugang.DfAnlaNrInfo, new RecordItemIndex(3));
-            repo.DlgZugang.DfAnlaNr.PressKeys(Konto_Anlagen_Nr);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kontonr_GWG_Anlage' with focus on 'DlgFibu.KontoNr'.", repo.DlgFibu.KontoNrInfo, new RecordItemIndex(3));
+            repo.DlgFibu.KontoNr.PressKeys(Kontonr_GWG_Anlage);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -147,8 +119,17 @@ namespace N_ANLA_003.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFibu.PbLaden' at Center.", repo.DlgFibu.PbLadenInfo, new RecordItemIndex(5));
             repo.DlgFibu.PbLaden.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFibu.PbEinzeln' at Center.", repo.DlgFibu.PbEinzelnInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFibu.Row_Column0_Belegnummer_02' at Center.", repo.DlgFibu.Row_Column0_Belegnummer_02Info, new RecordItemIndex(6));
+            repo.DlgFibu.Row_Column0_Belegnummer_02.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFibu.PbEinzeln' at Center.", repo.DlgFibu.PbEinzelnInfo, new RecordItemIndex(7));
             repo.DlgFibu.PbEinzeln.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgZugang.TitleBar100AVZBuchungenZugang'", repo.DlgZugang.TitleBar100AVZBuchungenZugangInfo, new ActionTimeout(120000), new RecordItemIndex(8));
+            repo.DlgZugang.TitleBar100AVZBuchungenZugangInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ - Buchungen: Zugang') on item 'DlgZugang.TitleBar100AVZBuchungenZugang'.", repo.DlgZugang.TitleBar100AVZBuchungenZugangInfo, new RecordItemIndex(9));
+            Validate.AttributeContains(repo.DlgZugang.TitleBar100AVZBuchungenZugangInfo, "Text", "[100]  AVZ - Buchungen: Zugang");
             
         }
 

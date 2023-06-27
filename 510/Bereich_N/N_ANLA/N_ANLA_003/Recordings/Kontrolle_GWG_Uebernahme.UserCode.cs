@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace S_ADRL_001
+namespace N_ANLA_003.Recordings
 {
-    public partial class Recording1
+    public partial class Kontrolle_GWG_Uebernahme
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
