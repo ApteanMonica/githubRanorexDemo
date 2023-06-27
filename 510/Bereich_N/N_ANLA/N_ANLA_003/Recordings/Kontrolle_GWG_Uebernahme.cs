@@ -24,44 +24,34 @@ namespace N_ANLA_003.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Kontrolle_nochmalige_Fibu_Uebernahme_fuer_0660 recording.
+    ///The Kontrolle_GWG_Uebernahme recording.
     /// </summary>
-    [TestModule("79ae2eb9-50ae-47a0-80b6-2c3628511ede", ModuleType.Recording, 1)]
-    public partial class Kontrolle_nochmalige_Fibu_Uebernahme_fuer_0660 : ITestModule
+    [TestModule("aeb0aa40-a82d-457b-8e14-4d4a03be67f8", ModuleType.Recording, 1)]
+    public partial class Kontrolle_GWG_Uebernahme : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_ANLA_003.N_ANLA_003Repository repository.
         /// </summary>
         public static global::N_ANLA_003.N_ANLA_003Repository repo = global::N_ANLA_003.N_ANLA_003Repository.Instance;
 
-        static Kontrolle_nochmalige_Fibu_Uebernahme_fuer_0660 instance = new Kontrolle_nochmalige_Fibu_Uebernahme_fuer_0660();
+        static Kontrolle_GWG_Uebernahme instance = new Kontrolle_GWG_Uebernahme();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Kontrolle_nochmalige_Fibu_Uebernahme_fuer_0660()
+        public Kontrolle_GWG_Uebernahme()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Kontrolle_nochmalige_Fibu_Uebernahme_fuer_0660 Instance
+        public static Kontrolle_GWG_Uebernahme Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        /// <summary>
-        /// Gets or sets the value of variable Belegnr_01.
-        /// </summary>
-        [TestVariable("3712f69f-f0fe-44bf-9798-cc3e23346aa2")]
-        public string Belegnr_01
-        {
-            get { return repo.Belegnr_01; }
-            set { repo.Belegnr_01 = value; }
-        }
 
 #endregion
 
@@ -89,17 +79,23 @@ namespace N_ANLA_003.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100AVZBuchungenZugang.ButtonFibuUEbernahme' at Center.", repo.Form100AVZBuchungenZugang.ButtonFibuUEbernahmeInfo, new RecordItemIndex(0));
-            repo.Form100AVZBuchungenZugang.ButtonFibuUEbernahme.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='003_02') on item 'Form100AVZBuchungenZugang.Nummer'.", repo.Form100AVZBuchungenZugang.NummerInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.Form100AVZBuchungenZugang.NummerInfo, "Text", "003_02");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0660{Tab}' with focus on 'DlgFibu.KontoNr'.", repo.DlgFibu.KontoNrInfo, new RecordItemIndex(1));
-            repo.DlgFibu.KontoNr.PressKeys("0660{Tab}");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='N_ANLA_003_02') on item 'Form100AVZBuchungenZugang.Bez'.", repo.Form100AVZBuchungenZugang.BezInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.Form100AVZBuchungenZugang.BezInfo, "Text", "N_ANLA_003_02");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFibu.PbLaden' at Center.", repo.DlgFibu.PbLadenInfo, new RecordItemIndex(2));
-            repo.DlgFibu.PbLaden.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0680') on item 'Form100AVZBuchungenZugang.Konto'.", repo.Form100AVZBuchungenZugang.KontoInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.Form100AVZBuchungenZugang.KontoInfo, "Text", "0680");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'DlgFibu.Row_Column0_Belegnummer_01'.", repo.DlgFibu.Row_Column0_Belegnummer_01Info, new RecordItemIndex(3));
-            Validate.NotExists(repo.DlgFibu.Row_Column0_Belegnummer_01Info);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='03042022') on item 'DlgZugang.Zugangsdatum'.", repo.DlgZugang.ZugangsdatumInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.DlgZugang.ZugangsdatumInfo, "Text", "03042022");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='03.04.2022') on item 'Form100AVZBuchungenZugang.Inbetriebnahme'.", repo.Form100AVZBuchungenZugang.InbetriebnahmeInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.Form100AVZBuchungenZugang.InbetriebnahmeInfo, "Text", "03.04.2022");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='333,33') on item 'Form100AVZBuchungenZugang.AHKBetrag'.", repo.Form100AVZBuchungenZugang.AHKBetragInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.Form100AVZBuchungenZugang.AHKBetragInfo, "Text", "333,33");
             
         }
 
