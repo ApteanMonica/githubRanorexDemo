@@ -44,8 +44,8 @@ namespace S_ADRK_002.Recording
             UID_korrekt = "U75601939";
             UID_falsch = "475601939";
             UID_nicht_gueltig = "UID-Prüfung: die angegebene UID ist nicht gültig.";
-            RS = "Aptean Austria GmbH\r\nDorfstraße 67\nAT-5101 Bergheim\r\n\r\nMöchten Sie als gültige UID übernehmen?\r\n";
             Neue_Kundennummer = "";
+            Aptean_Austria = "\r\nAptean Austria GmbH\r\nDorfstraße 67\nAT-5101 Bergheim\r\n\r\nMöchten Sie als gültige UID übernehmen?\r\n";
         }
 
         /// <summary>
@@ -94,18 +94,6 @@ namespace S_ADRK_002.Recording
             set { _UID_nicht_gueltig = value; }
         }
 
-        string _RS;
-
-        /// <summary>
-        /// Gets or sets the value of variable RS.
-        /// </summary>
-        [TestVariable("a75e90cd-8513-4c32-b521-5dfec30655c6")]
-        public string RS
-        {
-            get { return _RS; }
-            set { _RS = value; }
-        }
-
         string _Neue_Kundennummer;
 
         /// <summary>
@@ -116,6 +104,18 @@ namespace S_ADRK_002.Recording
         {
             get { return _Neue_Kundennummer; }
             set { _Neue_Kundennummer = value; }
+        }
+
+        string _Aptean_Austria;
+
+        /// <summary>
+        /// Gets or sets the value of variable Aptean_Austria.
+        /// </summary>
+        [TestVariable("75448926-2327-48d9-ba86-c5884950958e")]
+        public string Aptean_Austria
+        {
+            get { return _Aptean_Austria; }
+            set { _Aptean_Austria = value; }
         }
 
 #endregion
@@ -165,8 +165,8 @@ namespace S_ADRK_002.Recording
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmAdr.TpAllgemein.UID_Nr'.", repo.FrmAdr.TpAllgemein.UID_NrInfo, new RecordItemIndex(6));
             repo.FrmAdr.TpAllgemein.UID_Nr.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$RS) on item 'DlgMessageBox.Meldung_gueltige_UID'.", repo.DlgMessageBox.Meldung_gueltige_UIDInfo, new RecordItemIndex(7));
-            Validate.AttributeContains(repo.DlgMessageBox.Meldung_gueltige_UIDInfo, "Text", RS);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Aptean_Austria) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", Aptean_Austria);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.OK' at Center.", repo.DlgMessageBox.OKInfo, new RecordItemIndex(8));
             repo.DlgMessageBox.OK.Click();
@@ -222,8 +222,8 @@ namespace S_ADRK_002.Recording
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmAdr.TpAllgemein.UID_Nr'.", repo.FrmAdr.TpAllgemein.UID_NrInfo, new RecordItemIndex(25));
             repo.FrmAdr.TpAllgemein.UID_Nr.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$RS) on item 'DlgMessageBox.Meldung_gueltige_UID'.", repo.DlgMessageBox.Meldung_gueltige_UIDInfo, new RecordItemIndex(26));
-            Validate.AttributeContains(repo.DlgMessageBox.Meldung_gueltige_UIDInfo, "Text", RS);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Aptean_Austria) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(26));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", Aptean_Austria);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.OK' at Center.", repo.DlgMessageBox.OKInfo, new RecordItemIndex(27));
             repo.DlgMessageBox.OK.Click();
