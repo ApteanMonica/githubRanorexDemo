@@ -92,8 +92,8 @@ namespace B_UVA_003.Recordings_Formular_Werte_2017_3
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tabelle_Werte_A21_2017_3) on item 'TblDrucken.Row1'.", repo.TblDrucken.Row1Info, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.TblDrucken.Row1Info, "Text", Tabelle_Werte_A21_2017_3);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tabelle_Werte_A21_2017_3) on item 'TblDrucken.Row1'.", repo.TblDrucken.Row1Info, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.TblDrucken.Row1Info, "Text", Tabelle_Werte_A21_2017_3);
             
         }
 

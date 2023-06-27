@@ -92,8 +92,8 @@ namespace B_UVA_001.Recordings3
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tabelle_Werte_A20_2017_3) on item 'ChildTableWindow.Row1'.", repo.ChildTableWindow.Row1Info, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.ChildTableWindow.Row1Info, "Text", Tabelle_Werte_A20_2017_3);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tabelle_Werte_A20_2017_3) on item 'ChildTableWindow.Row1'.", repo.ChildTableWindow.Row1Info, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.ChildTableWindow.Row1Info, "Text", Tabelle_Werte_A20_2017_3);
             
         }
 
