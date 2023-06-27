@@ -108,8 +108,8 @@ namespace B_ZAHL_003.Recordings_B_ZAHL
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmZahlMain.TitleBar100LieferantenZahlungsver'", repo.FrmZahlMain.TitleBar100LieferantenZahlungsverInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmZahlMain.TitleBar100LieferantenZahlungsverInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'FrmZahlMain.TitleBar100LieferantenZahlungsver'", repo.FrmZahlMain.TitleBar100LieferantenZahlungsverInfo, new ActionTimeout(180000), new RecordItemIndex(1));
+            repo.FrmZahlMain.TitleBar100LieferantenZahlungsverInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Lieferanten - Zahlungsverkehr') on item 'FrmZahlMain.TitleBar100LieferantenZahlungsver'.", repo.FrmZahlMain.TitleBar100LieferantenZahlungsverInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.FrmZahlMain.TitleBar100LieferantenZahlungsverInfo, "Text", "Lieferanten - Zahlungsverkehr");

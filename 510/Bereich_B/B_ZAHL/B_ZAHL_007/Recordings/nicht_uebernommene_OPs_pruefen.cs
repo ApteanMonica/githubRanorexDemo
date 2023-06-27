@@ -43,7 +43,7 @@ namespace B_ZAHL_007.Recordings
         {
             LF_303075 = "303075";
             LF_303077 = "303077";
-            LF_303072 = "303077";
+            LF_303072 = "303072";
         }
 
         /// <summary>
@@ -160,53 +160,44 @@ namespace B_ZAHL_007.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_303077) on item 'TblNichtUebernommene.FlexGrid.ColAdrNrRow3'.", repo.TblNichtUebernommene.FlexGrid.ColAdrNrRow3Info, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.TblNichtUebernommene.FlexGrid.ColAdrNrRow3Info, "Text", LF_303077);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER_077A_B_ZAHL_007') on item 'TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow3'.", repo.TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow3Info, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow3Info, "Text", "ER_077A_B_ZAHL_007");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER_077B_B_ZAHL_007') on item 'TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow3'.", repo.TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow3Info, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow3Info, "Text", "ER_077B_B_ZAHL_007");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'OP-Sperre vorhanden, Lieferanten-Sperre vorhanden,') on item 'TblNichtUebernommene.FlexGrid.ColInfoRow3'.", repo.TblNichtUebernommene.FlexGrid.ColInfoRow3Info, new RecordItemIndex(15));
             Validate.AttributeContains(repo.TblNichtUebernommene.FlexGrid.ColInfoRow3Info, "Text", "OP-Sperre vorhanden, Lieferanten-Sperre vorhanden,");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_303077) on item 'TblNichtUebernommene.FlexGrid.ColAdrNrRow4'.", repo.TblNichtUebernommene.FlexGrid.ColAdrNrRow4Info, new RecordItemIndex(16));
-            Validate.AttributeEqual(repo.TblNichtUebernommene.FlexGrid.ColAdrNrRow4Info, "Text", LF_303077);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_303072) on item 'TblNichtUebernommene.FlexGrid.ColAdrNrRow4'.", repo.TblNichtUebernommene.FlexGrid.ColAdrNrRow4Info, new RecordItemIndex(16));
+            Validate.AttributeEqual(repo.TblNichtUebernommene.FlexGrid.ColAdrNrRow4Info, "Text", LF_303072);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER_077B_B_ZAHL_007') on item 'TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow4'.", repo.TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow4Info, new RecordItemIndex(17));
-            Validate.AttributeEqual(repo.TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow4Info, "Text", "ER_077B_B_ZAHL_007");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER_072A_B_ZAHL_007') on item 'TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow4'.", repo.TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow4Info, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow4Info, "Text", "ER_072A_B_ZAHL_007");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'OP-Sperre vorhanden, Lieferanten-Sperre vorhanden,') on item 'TblNichtUebernommene.FlexGrid.ColInfoRow4'.", repo.TblNichtUebernommene.FlexGrid.ColInfoRow4Info, new RecordItemIndex(18));
-            Validate.AttributeContains(repo.TblNichtUebernommene.FlexGrid.ColInfoRow4Info, "Text", "OP-Sperre vorhanden, Lieferanten-Sperre vorhanden,");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Zahlsperre (S),') on item 'TblNichtUebernommene.FlexGrid.ColInfoRow4'.", repo.TblNichtUebernommene.FlexGrid.ColInfoRow4Info, new RecordItemIndex(18));
+            Validate.AttributeContains(repo.TblNichtUebernommene.FlexGrid.ColInfoRow4Info, "Text", "Zahlsperre (S),");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_303072) on item 'TblNichtUebernommene.FlexGrid.ColAdrNrRow5'.", repo.TblNichtUebernommene.FlexGrid.ColAdrNrRow5Info, new RecordItemIndex(19));
             Validate.AttributeEqual(repo.TblNichtUebernommene.FlexGrid.ColAdrNrRow5Info, "Text", LF_303072);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER_072A_B_ZAHL_007') on item 'TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow5'.", repo.TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow5Info, new RecordItemIndex(20));
-            Validate.AttributeEqual(repo.TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow5Info, "Text", "ER_072A_B_ZAHL_007");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER_072C_B_ZAHL_007') on item 'TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow5'.", repo.TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow5Info, new RecordItemIndex(20));
+            Validate.AttributeEqual(repo.TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow5Info, "Text", "ER_072C_B_ZAHL_007");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Zahlsperre (S),') on item 'TblNichtUebernommene.FlexGrid.ColInfoRow5'.", repo.TblNichtUebernommene.FlexGrid.ColInfoRow5Info, new RecordItemIndex(21));
             Validate.AttributeContains(repo.TblNichtUebernommene.FlexGrid.ColInfoRow5Info, "Text", "Zahlsperre (S),");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_303072) on item 'TblNichtUebernommene.FlexGrid.ColAdrNrRow6'.", repo.TblNichtUebernommene.FlexGrid.ColAdrNrRow6Info, new RecordItemIndex(22));
-            Validate.AttributeEqual(repo.TblNichtUebernommene.FlexGrid.ColAdrNrRow6Info, "Text", LF_303072);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Datenträger') on item 'TblNichtUebernommene.FlexGrid.ColNameRow6'.", repo.TblNichtUebernommene.FlexGrid.ColNameRow6Info, new RecordItemIndex(22));
+            Validate.AttributeEqual(repo.TblNichtUebernommene.FlexGrid.ColNameRow6Info, "Text", "Datenträger");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER_072C_B_ZAHL_007') on item 'TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow6'.", repo.TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow6Info, new RecordItemIndex(23));
-            Validate.AttributeEqual(repo.TblNichtUebernommene.FlexGrid.ColBusaBelegnrRow6Info, "Text", "ER_072C_B_ZAHL_007");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Es sind noch OP's im Zahlungsvorschlag mit gleicher Zahlart vorhanden! Bitte erstellen Datenträger prüfen.') on item 'TblNichtUebernommene.FlexGrid.ColInfoRow6'.", repo.TblNichtUebernommene.FlexGrid.ColInfoRow6Info, new RecordItemIndex(23));
+            Validate.AttributeContains(repo.TblNichtUebernommene.FlexGrid.ColInfoRow6Info, "Text", "Es sind noch OP's im Zahlungsvorschlag mit gleicher Zahlart vorhanden! Bitte erstellen Datenträger prüfen.");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Zahlsperre (S),') on item 'TblNichtUebernommene.FlexGrid.ColInfoRow6'.", repo.TblNichtUebernommene.FlexGrid.ColInfoRow6Info, new RecordItemIndex(24));
-            Validate.AttributeContains(repo.TblNichtUebernommene.FlexGrid.ColInfoRow6Info, "Text", "Zahlsperre (S),");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Datenträger') on item 'TblNichtUebernommene.FlexGrid.ColNameRow7'.", repo.TblNichtUebernommene.FlexGrid.ColNameRow7Info, new RecordItemIndex(25));
-            Validate.AttributeEqual(repo.TblNichtUebernommene.FlexGrid.ColNameRow7Info, "Text", "Datenträger");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Es sind noch OP's im Zahlungsvorschlag mit gleicher Zahlart vorhanden! Bitte erstellen Datenträger prüfen.') on item 'TblNichtUebernommene.FlexGrid.ColInfoRow7'.", repo.TblNichtUebernommene.FlexGrid.ColInfoRow7Info, new RecordItemIndex(26));
-            Validate.AttributeContains(repo.TblNichtUebernommene.FlexGrid.ColInfoRow7Info, "Text", "Es sind noch OP's im Zahlungsvorschlag mit gleicher Zahlart vorhanden! Bitte erstellen Datenträger prüfen.");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblNichtUebernommene.TitleBar100NichtUebernommeneZahlun'.", repo.TblNichtUebernommene.TitleBar100NichtUebernommeneZahlunInfo, new RecordItemIndex(27));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblNichtUebernommene.TitleBar100NichtUebernommeneZahlun'.", repo.TblNichtUebernommene.TitleBar100NichtUebernommeneZahlunInfo, new RecordItemIndex(24));
             Keyboard.PrepareFocus(repo.TblNichtUebernommene.TitleBar100NichtUebernommeneZahlun);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBankbeleg.Bankbeleg'", repo.FrmBankbeleg.BankbelegInfo, new ActionTimeout(120000), new RecordItemIndex(28));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBankbeleg.Bankbeleg'", repo.FrmBankbeleg.BankbelegInfo, new ActionTimeout(120000), new RecordItemIndex(25));
             repo.FrmBankbeleg.BankbelegInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmBankbeleg.Bankbeleg'.", repo.FrmBankbeleg.BankbelegInfo, new RecordItemIndex(29));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmBankbeleg.Bankbeleg'.", repo.FrmBankbeleg.BankbelegInfo, new RecordItemIndex(26));
             Keyboard.PrepareFocus(repo.FrmBankbeleg.Bankbeleg);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             

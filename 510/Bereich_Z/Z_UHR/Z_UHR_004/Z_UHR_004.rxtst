@@ -35,6 +35,32 @@
 			name="teardown">
 			</teardown>
 			<testmodule
+			id="1ea11515-ec99-4868-bad3-edfa950f82aa"
+			name="Kennzahlen_Monat_2_laden_510"
+			ref="f1d165d7-5362-410d-ba31-030a09e99349"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Pers_nr"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="b1983e19-0ce5-4a17-a642-abc9160f9ad4"
+					variablename="Pers_nr">
+					</var>
+					<var
+					dataname="Jahr"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="b1e4476e-711d-4a94-a686-0ed5c10ef416"
+					variablename="Jahr">
+					</var>
+					<var
+					dataname="Monat_2"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="a1c8ce5c-ea10-4e98-8190-618aa2f64c2c"
+					variablename="Monat_2">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="2078879f-2937-4be4-b0e3-33c15dde20a0"
 			name="Einlesen_des_Ranoagent"
 			ref="2f4d2357-6403-402d-b60a-96aa028bfea6"
@@ -199,6 +225,44 @@
 					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
 					variableid="b0b392ce-72e2-46c0-b858-73a23e2b3e7a"
 					variablename="Urlaub_2_ende">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="474dc2d4-fd2f-4520-a2c7-a3b2af05dda2"
+			name="Kennzahlen_Monat_2ueberpruefen_510"
+			ref="f7e81501-c704-46f6-88b3-bb2597f68b30"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Resturlaub_Ende_des_Jahres"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="7eee2f3a-035b-434f-9223-5f02f735534f"
+					variablename="Resturlaub_Ende_des_Jahres">
+					</var>
+					<var
+					dataname="beantragbarer_Urlaub"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="d9fd90b5-d3fd-4b1d-9247-904b1d0efe64"
+					variablename="beantragbarer_Urlaub">
+					</var>
+					<var
+					dataname="Resturlaub_Vorjahre"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="0db4675b-fa90-4bc1-93a6-0e9f8a398f30"
+					variablename="Resturlaub_Vorjahre">
+					</var>
+					<var
+					dataname="Verbauch_lfd_Monat_2"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="a6568e27-2a85-44a1-897d-62cb0d1456fe"
+					variablename="Verbauch_lfd_Monat_2">
+					</var>
+					<var
+					dataname="Anspruch_lfd_Jahr"
+					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
+					variableid="385b867b-5e87-48a7-ba9f-fd8fd65b61a2"
+					variablename="Anspruch_lfd_Jahr">
 					</var>
 				</databinding>
 			</testmodule>
@@ -728,6 +792,14 @@
 							id="bff13661-f252-4dca-aa71-a29d7c219253"
 							name="Urlaubsanspruch_aktuelles_Jahr">
 							</testmodule>
+							<testmodule
+							id="1ea11515-ec99-4868-bad3-edfa950f82aa"
+							name="Kennzahlen_Monat_2_laden_510">
+							</testmodule>
+							<testmodule
+							id="474dc2d4-fd2f-4520-a2c7-a3b2af05dda2"
+							name="Kennzahlen_Monat_2ueberpruefen_510">
+							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
 						id="25487ef4-8c8d-4176-ab88-77b30882925e"
@@ -748,6 +820,14 @@
 							id="96e1ee50-e9be-4944-bbf8-86d27c1a81a9"
 							name="Urlaubsanspruch_aktuelles_Jahr_511_521">
 							</testmodule>
+							<testmodule
+							id="8ef451a4-fab1-4952-b631-935d0101afa3"
+							name="Kennzahlen_Monat_2_laden">
+							</testmodule>
+							<testmodule
+							id="bc2212a5-094e-444b-85f6-590a392c0c51"
+							name="Kennzahlen_Monat_2_ueberpruefen">
+							</testmodule>
 						</smartfoldernode>
 						<testmodule
 						id="9409eea9-817e-4978-bfd1-bf1593fdccf2"
@@ -756,14 +836,6 @@
 						<testmodule
 						id="9eb79535-108b-4c8b-96f7-e3653bf6558b"
 						name="Kennzahlen_Monat_1_ueberpruefen">
-						</testmodule>
-						<testmodule
-						id="8ef451a4-fab1-4952-b631-935d0101afa3"
-						name="Kennzahlen_Monat_2_laden">
-						</testmodule>
-						<testmodule
-						id="bc2212a5-094e-444b-85f6-590a392c0c51"
-						name="Kennzahlen_Monat_2_ueberpruefen">
 						</testmodule>
 						<teardown
 						id="1e635f83-931b-49c8-97a2-903d8e3c3fe0"

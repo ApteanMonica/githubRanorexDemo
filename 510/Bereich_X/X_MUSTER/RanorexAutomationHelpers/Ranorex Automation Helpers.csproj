@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{ED021353-7610-4874-86C1-165E32DB6207}</ProjectGuid>
+    <ProjectGuid>{2726C458-5B2A-40EF-B53B-508721B507BE}</ProjectGuid>
     <TargetFrameworkProfile />
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -80,52 +80,56 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">
-      <id>bcc58bf2-3069-473b-a1c4-c23b772ebadc</id>
+      <id>1d85feb0-7086-4ffc-96d7-cb65d5cbaa5f</id>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\..\..\..\Testdaten\Allgemein\UserCode\aptean.cs">
       <Link>aptean.cs</Link>
-      <id>bd478f99-91b6-4692-8be9-3c601aaf8cd6</id>
+      <id>f0ef8425-bc5d-4d04-a503-e57554c4150c</id>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Testdaten\Allgemein\UserCode\sql.cs">
+      <Link>sql.cs</Link>
+      <id>ef64d2a2-5110-4cb7-994b-1f5e9922c688</id>
     </Compile>
     <Compile Include="Modules\CollectRetryErrorMessagesModule.cs">
-      <id>fe79a720-befb-4af6-90d1-12c4586aec84</id>
+      <id>928ba33f-0fd6-4c0c-88ba-5bda83321c64</id>
     </Compile>
     <Compile Include="Modules\EmailModule.cs">
-      <id>c6b10ea0-b872-4ecb-bfa0-ce189fa7f183</id>
+      <id>e449907c-3479-4d4b-b463-ecdbaeb83b51</id>
     </Compile>
     <Compile Include="Modules\ReportToPDFModule.cs">
-      <id>65e564f9-1afc-464b-8d21-eb968534996c</id>
+      <id>51ea50ff-d836-4af1-9070-0c673bd9cde3</id>
     </Compile>
     <Compile Include="UserCodeCollections\DragNDropLibrary.cs">
-      <id>989bbfc6-4a64-43ad-837f-890585bc9205</id>
+      <id>17016250-21b6-4478-8d4b-e08e049ecb19</id>
     </Compile>
     <Compile Include="UserCodeCollections\EmailLibrary.cs">
-      <id>f81ccb11-a2d8-456e-8e6b-717dbf2e12d0</id>
+      <id>645c532e-e77f-4bda-ab29-a2839aaad420</id>
     </Compile>
     <Compile Include="UserCodeCollections\ExceptionExtensions.cs">
-      <id>46f0df58-1f87-463b-8d4e-376930ef320e</id>
+      <id>7ca81aff-0dc4-4b4e-862f-4183add77ea8</id>
     </Compile>
     <Compile Include="UserCodeCollections\FileLibrary.cs">
-      <id>228104b8-a867-4499-b694-5194553fcb91</id>
+      <id>58f6fb35-5406-4de1-b980-69f8d7ae7f6e</id>
     </Compile>
     <Compile Include="UserCodeCollections\PopupWatcherLibrary.cs">
-      <id>0ed94abd-cc93-4c8b-ac9e-51199b42e44d</id>
+      <id>7b748027-b809-4799-a08d-b586fdf1fd00</id>
     </Compile>
     <Compile Include="UserCodeCollections\StringLibrary.cs">
-      <id>ca521e05-8a53-4574-8700-d0f5b00411fc</id>
+      <id>963eb6b0-0c98-4463-aaec-0bce71baa571</id>
     </Compile>
     <Compile Include="UserCodeCollections\SystemLibrary.cs">
-      <id>b9d5ca1c-b14a-49b3-a29b-5bc85049558c</id>
+      <id>6a0c8e96-4cb1-4e26-8171-9a97cd60f379</id>
     </Compile>
     <Compile Include="UserCodeCollections\Utils.cs">
-      <id>4178dffa-06b2-4027-8972-549de839e96c</id>
+      <id>8acbc982-df25-4537-8998-0300214ae438</id>
     </Compile>
     <Compile Include="UserCodeCollections\ValidationLibrary.cs">
-      <id>f8031581-3d3b-4f94-be2a-e725289663a3</id>
+      <id>f1e74c59-d81f-4c9e-9b0b-c2ba279a8318</id>
     </Compile>
     <Compile Include="UserCodeCollections\WebLibrary.cs">
-      <id>1fb9930a-1166-4d72-8ac8-f200cf65843c</id>
+      <id>b7bb7ec9-9a83-4bb4-86c0-59ccf835b270</id>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -147,9 +147,9 @@ namespace B_ZAHL_007.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ZV_TEXT) on item 'FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZldtText_in_Zeile_mit_ZV_TEXT_B_ZAHL_007'.", repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZldtText_in_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZldtText_in_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, "Text", ZV_TEXT);
             
-            // regex: Bankbeleg-Nr beginnt mit ZV-Nr (variabel) (1. Stelle mit Punkt ersetzen) + 001
-            Report.Log(ReportLevel.Info, "Validation", "regex: Bankbeleg-Nr beginnt mit ZV-Nr (variabel) (1. Stelle mit Punkt ersetzen) + 001\r\nValidating AttributeRegex (Text~'.001') on item 'FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsBankbeleg_in_Zeile_mit_ZV_TEXT_B_ZAHL_007'.", repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsBankbeleg_in_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, new RecordItemIndex(6));
-            Validate.AttributeRegex(repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsBankbeleg_in_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, "Text", new Regex(".001"));
+            // regex: Bankbeleg-Nr beginnt mit ZV-Nr (variabel) + 001
+            Report.Log(ReportLevel.Info, "Validation", "regex: Bankbeleg-Nr beginnt mit ZV-Nr (variabel) + 001\r\nValidating AttributeContains (Text>'001') on item 'FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsBankbeleg_in_Zeile_mit_ZV_TEXT_B_ZAHL_007'.", repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsBankbeleg_in_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsBankbeleg_in_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, "Text", "001");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsDtbeleg_in_Zeile_mit_ZV_TEXT_B_ZAHL_007'.", repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsDtbeleg_in_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsDtbeleg_in_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, "Text", Tagesdatum);
@@ -160,11 +160,11 @@ namespace B_ZAHL_007.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Zahlart) on item 'FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsZahlart_in_Zeile_mit_ZV_TEXT_B_ZAHL_007'.", repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsZahlart_in_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsZahlart_in_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, "Text", Zahlart);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='588,00') on item 'FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsSumme_in_Zeile_mit_ZV_TEXT_B_ZAHL_007'.", repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsSumme_in_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsSumme_in_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, "Text", "588,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.058,00') on item 'FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsSumme_in_Zeile_mit_ZV_TEXT_B_ZAHL_007'.", repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsSumme_in_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsSumme_in_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, "Text", "2.058,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsAnzahl_in_Zeile_mit_ZV_TEXT_B_ZAHL_007'.", repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsAnzahl_in_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsAnzahl_in_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, "Text", "1");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2') on item 'FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsAnzahl_in_Zeile_mit_ZV_TEXT_B_ZAHL_007'.", repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsAnzahl_in_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZlvsAnzahl_in_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, "Text", "2");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZldtDtanlag_in_Zeile_mit_ZV_TEXT_B_ZAHL_007'.", repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZldtDtanlag_in_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.ColZldtDtanlag_in_Zeile_mit_ZV_TEXT_B_ZAHL_007Info, "Text", Tagesdatum);

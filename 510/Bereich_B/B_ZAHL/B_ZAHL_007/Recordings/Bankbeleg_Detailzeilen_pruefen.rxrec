@@ -28,6 +28,11 @@ mode="Global">
 		name="LF_303072">
 			303072
 		</var>
+		<var
+		id="2dc68f7c-e3b6-4996-996f-87eed5aff66a"
+		name="LF_303077">
+			303077
+		</var>
 	</variables>
 	<recorditems>
 		<WaitForRecordItem
@@ -234,6 +239,115 @@ ER013 B_ZAHL 303030	ER013 B_ZAHL 303030&#9;
 			</matchvalue>
 		</validationitem>
 		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="21d51f13-d1dc-47d4-98d9-a23f51f82cac">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="LF_303077">
+				</binding>
+			</bindings>
+			<info
+			id="9f5c2480-87e3-4753-9630-df336e95df55"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZlvsÄndern']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colAdrNr Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				2	303030		 LF-30 INLAND B_ZAHL	 LIEFERANT 30 INLAND B_ZAHL Zahlstra&#223;e 30 AT - 8010 Graz	
+ER013 B_ZAHL 303030	ER013 B_ZAHL 303030&#9;
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="21d51f13-d1dc-47d4-98d9-a23f51f82cac">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="51590f49-6868-42eb-abb9-29daac8b1364"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZlvsÄndern']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colBeleg Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				ER_077A_B_ZAHL_007
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="21d51f13-d1dc-47d4-98d9-a23f51f82cac">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4dee780a-b665-4036-b6d7-e4143262b3ad"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZlvsÄndern']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colZahlsperre Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="21d51f13-d1dc-47d4-98d9-a23f51f82cac">
+			<comment>
+				Tagesdatum (NICHT Abschnitt 12.05.2021	)
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5b225339-a791-40f4-b866-6edddbdcb4e0"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZlvsÄndern']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colZBetragZ Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				1.470,00
+			</matchvalue>
+		</validationitem>
+		<validationitem
 		action="NotExists"
 		enabled="True"
 		optional="False"
@@ -244,10 +358,10 @@ ER013 B_ZAHL 303030	ER013 B_ZAHL 303030&#9;
 			<bindings>
 			</bindings>
 			<info
-			id="0bffdce5-bb5a-466b-92f0-7d7781cda1f3"
+			id="9d7fe15d-ea62-4782-8968-da2c9be413c8"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='frmZlvsÄndern']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']
+					/form[@controlname='frmZlvsÄndern']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']
 				</path>
 				<robustPath>
 				</robustPath>

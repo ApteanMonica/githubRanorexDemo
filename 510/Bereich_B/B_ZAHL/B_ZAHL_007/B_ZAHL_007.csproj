@@ -185,15 +185,15 @@
       <id>d3d22517-d390-4906-ba83-ef6f2697f1e9</id>
       <BoundTo>1caa97de-e62d-4ed9-8c08-f0438d1e427e</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Bankbeleg_geperrte_OPs_nicht_moeglich.cs">
+    <Compile Include="Recordings\Bankbeleg_gesperrte_OPs_nicht_moeglich.cs">
       <BoundTo>2825161f-ba02-4cea-9018-2afa14103866</BoundTo>
-      <DependentUpon>Bankbeleg_geperrte_OPs_nicht_moeglich.rxrec</DependentUpon>
+      <DependentUpon>Bankbeleg_gesperrte_OPs_nicht_moeglich.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>bc785e7f-a460-4986-9c6f-cf18a9b77728</id>
     </Compile>
-    <Compile Include="Recordings\Bankbeleg_geperrte_OPs_nicht_moeglich.UserCode.cs">
+    <Compile Include="Recordings\Bankbeleg_gesperrte_OPs_nicht_moeglich.UserCode.cs">
       <BoundTo>2825161f-ba02-4cea-9018-2afa14103866</BoundTo>
-      <DependentUpon>Bankbeleg_geperrte_OPs_nicht_moeglich.rxrec</DependentUpon>
+      <DependentUpon>Bankbeleg_gesperrte_OPs_nicht_moeglich.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>d75fa97a-054e-490f-a123-06ab6f011261</id>
     </Compile>
@@ -401,26 +401,98 @@
       <id>66c7c4a6-06ee-4aed-a44b-d03b04ad75b8</id>
       <BoundTo>29fdd29d-553d-42ed-833f-ffca71af93da</BoundTo>
     </Compile>
-    <Compile Include="Recordings_B_KLAB\B_KLAB_LF_303075_temp_LF_Zahlsperre_Tagesdatum_setzen.cs">
-      <DependentUpon>B_KLAB_LF_303075_temp_LF_Zahlsperre_Tagesdatum_setzen.rxrec</DependentUpon>
+    <Compile Include="Recordings_B_KLAB\B_KLAB_LF_303070_suchen_aufrufen.cs">
+      <DependentUpon>B_KLAB_LF_303070_suchen_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>146bdee1-9d63-4052-b315-d110267cef5f</id>
+      <BoundTo>712e822c-aa05-404b-bc85-e515e24bee9b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\B_KLAB_LF_303070_suchen_aufrufen.UserCode.cs">
+      <DependentUpon>B_KLAB_LF_303070_suchen_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ec1768bf-e5c8-48b9-be2d-cee06f5f7356</id>
+      <BoundTo>712e822c-aa05-404b-bc85-e515e24bee9b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\B_KLAB_LF_303070_Zahlsperren_pruefen.cs">
+      <DependentUpon>B_KLAB_LF_303070_Zahlsperren_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f3c8544e-cfa7-4b08-8e92-ba9d8c1461cb</id>
+      <BoundTo>69fd2232-7083-427a-8b69-35d8b1d029ff</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\B_KLAB_LF_303070_Zahlsperren_pruefen.UserCode.cs">
+      <DependentUpon>B_KLAB_LF_303070_Zahlsperren_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>94f1bb09-5b4c-45a2-b223-5c4b3351a3a0</id>
+      <BoundTo>69fd2232-7083-427a-8b69-35d8b1d029ff</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\B_KLAB_LF_303072_aufrufen.cs">
+      <DependentUpon>B_KLAB_LF_303072_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6c50b545-811e-442c-be07-f3a1871349b6</id>
+      <BoundTo>58d605f1-3bf3-4d05-9f8e-a12825471e32</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\B_KLAB_LF_303072_aufrufen.UserCode.cs">
+      <DependentUpon>B_KLAB_LF_303072_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e97878e6-5bf8-477c-bfc9-1e81d4a8ad13</id>
+      <BoundTo>58d605f1-3bf3-4d05-9f8e-a12825471e32</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\B_KLAB_LF_303072_Zahlsperren_pruefen.cs">
+      <DependentUpon>B_KLAB_LF_303072_Zahlsperren_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8594eaae-54d7-43ae-ba4d-fc550675f3b7</id>
+      <BoundTo>90b3ea0b-4856-43be-9508-5f025c2f492a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\B_KLAB_LF_303072_Zahlsperren_pruefen.UserCode.cs">
+      <DependentUpon>B_KLAB_LF_303072_Zahlsperren_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a49e676a-a23b-40d9-b3ef-4a53f5d42271</id>
+      <BoundTo>90b3ea0b-4856-43be-9508-5f025c2f492a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\B_KLAB_LF_303075_aufrufen.cs">
+      <DependentUpon>B_KLAB_LF_303075_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>64e9f4b4-d368-4756-a03b-5038757d682f</id>
+      <BoundTo>4b2fab66-a63a-4084-a58f-76c2a18b1992</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\B_KLAB_LF_303075_aufrufen.UserCode.cs">
+      <DependentUpon>B_KLAB_LF_303075_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5f67c412-bdcc-4ead-ac95-18434a6266b1</id>
+      <BoundTo>4b2fab66-a63a-4084-a58f-76c2a18b1992</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\B_KLAB_LF_303075_Zahlsperren_pruefen.cs">
+      <DependentUpon>B_KLAB_LF_303075_Zahlsperren_pruefen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>699f67f8-0824-441c-9908-4ee0fa068d1f</id>
       <BoundTo>4f22cf1e-54d7-465a-92b7-a40cc9169521</BoundTo>
     </Compile>
-    <Compile Include="Recordings_B_KLAB\B_KLAB_LF_303075_temp_LF_Zahlsperre_Tagesdatum_setzen.UserCode.cs">
-      <DependentUpon>B_KLAB_LF_303075_temp_LF_Zahlsperre_Tagesdatum_setzen.rxrec</DependentUpon>
+    <Compile Include="Recordings_B_KLAB\B_KLAB_LF_303075_Zahlsperren_pruefen.UserCode.cs">
+      <DependentUpon>B_KLAB_LF_303075_Zahlsperren_pruefen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>beb2174f-b1e5-47e7-a3b0-b59158601fd9</id>
       <BoundTo>4f22cf1e-54d7-465a-92b7-a40cc9169521</BoundTo>
     </Compile>
-    <Compile Include="Recordings_B_KLAB\B_KLAB_LF_303077_temp_OP_Zahlsperre_Tagesdatum_setzen.cs">
-      <DependentUpon>B_KLAB_LF_303077_temp_OP_Zahlsperre_Tagesdatum_setzen.rxrec</DependentUpon>
+    <Compile Include="Recordings_B_KLAB\B_KLAB_LF_303077_aufrufen.cs">
+      <DependentUpon>B_KLAB_LF_303077_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6d978a9f-1bb4-46df-8c21-1f2bc516d8da</id>
+      <BoundTo>889b9d4f-c4f0-47c2-a0e9-e663d30777c4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\B_KLAB_LF_303077_aufrufen.UserCode.cs">
+      <DependentUpon>B_KLAB_LF_303077_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7c1fe5bc-c06d-4ee6-ba84-2210655258c2</id>
+      <BoundTo>889b9d4f-c4f0-47c2-a0e9-e663d30777c4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\B_KLAB_LF_303077_Zahlsperren_pruefen.cs">
+      <DependentUpon>B_KLAB_LF_303077_Zahlsperren_pruefen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>e9862f12-0d6c-44f6-b87e-23cb9e0f9114</id>
       <BoundTo>5497cf38-6245-4d94-a6ad-f48d011f1e56</BoundTo>
     </Compile>
-    <Compile Include="Recordings_B_KLAB\B_KLAB_LF_303077_temp_OP_Zahlsperre_Tagesdatum_setzen.UserCode.cs">
-      <DependentUpon>B_KLAB_LF_303077_temp_OP_Zahlsperre_Tagesdatum_setzen.rxrec</DependentUpon>
+    <Compile Include="Recordings_B_KLAB\B_KLAB_LF_303077_Zahlsperren_pruefen.UserCode.cs">
+      <DependentUpon>B_KLAB_LF_303077_Zahlsperren_pruefen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>5b4a871e-c624-4498-8a4b-d7e0392c034f</id>
       <BoundTo>5497cf38-6245-4d94-a6ad-f48d011f1e56</BoundTo>
@@ -480,7 +552,7 @@
       <recordtableid>6c8b9dde-5715-4e46-9ffc-145c12f3566a</recordtableid>
       <BoundTo>2e815393-8efb-4fda-9b8b-50e385206547</BoundTo>
     </None>
-    <None Include="Recordings\Bankbeleg_geperrte_OPs_nicht_moeglich.rxrec">
+    <None Include="Recordings\Bankbeleg_gesperrte_OPs_nicht_moeglich.rxrec">
       <BoundTo>2e815393-8efb-4fda-9b8b-50e385206547</BoundTo>
       <id>2825161f-ba02-4cea-9018-2afa14103866</id>
       <recordtableid>022911a7-fe14-4670-8bf7-dfc31e35c1a6</recordtableid>
@@ -570,12 +642,42 @@
       <recordtableid>c8ba68ce-199a-4d78-afcc-3447531cb788</recordtableid>
       <BoundTo>2e815393-8efb-4fda-9b8b-50e385206547</BoundTo>
     </None>
-    <None Include="Recordings_B_KLAB\B_KLAB_LF_303075_temp_LF_Zahlsperre_Tagesdatum_setzen.rxrec">
+    <None Include="Recordings_B_KLAB\B_KLAB_LF_303070_suchen_aufrufen.rxrec">
+      <id>712e822c-aa05-404b-bc85-e515e24bee9b</id>
+      <recordtableid>73dcfc34-6063-43c7-b9f3-ff656cc96cd6</recordtableid>
+      <BoundTo>2e815393-8efb-4fda-9b8b-50e385206547</BoundTo>
+    </None>
+    <None Include="Recordings_B_KLAB\B_KLAB_LF_303070_Zahlsperren_pruefen.rxrec">
+      <id>69fd2232-7083-427a-8b69-35d8b1d029ff</id>
+      <recordtableid>af85e21f-5af2-4177-ad48-db13019aa037</recordtableid>
+      <BoundTo>2e815393-8efb-4fda-9b8b-50e385206547</BoundTo>
+    </None>
+    <None Include="Recordings_B_KLAB\B_KLAB_LF_303072_aufrufen.rxrec">
+      <id>58d605f1-3bf3-4d05-9f8e-a12825471e32</id>
+      <recordtableid>3710c99d-3a55-421c-b52f-20a95131cd1b</recordtableid>
+      <BoundTo>2e815393-8efb-4fda-9b8b-50e385206547</BoundTo>
+    </None>
+    <None Include="Recordings_B_KLAB\B_KLAB_LF_303072_Zahlsperren_pruefen.rxrec">
+      <id>90b3ea0b-4856-43be-9508-5f025c2f492a</id>
+      <recordtableid>83418d47-3b89-414f-b304-233db7a0dd2c</recordtableid>
+      <BoundTo>2e815393-8efb-4fda-9b8b-50e385206547</BoundTo>
+    </None>
+    <None Include="Recordings_B_KLAB\B_KLAB_LF_303075_aufrufen.rxrec">
+      <id>4b2fab66-a63a-4084-a58f-76c2a18b1992</id>
+      <recordtableid>956184f4-f6c7-4c4f-95ce-699205935842</recordtableid>
+      <BoundTo>2e815393-8efb-4fda-9b8b-50e385206547</BoundTo>
+    </None>
+    <None Include="Recordings_B_KLAB\B_KLAB_LF_303075_Zahlsperren_pruefen.rxrec">
       <id>4f22cf1e-54d7-465a-92b7-a40cc9169521</id>
       <recordtableid>4ca7cd99-935a-4e2f-8993-cc12c5a9bca9</recordtableid>
       <BoundTo>2e815393-8efb-4fda-9b8b-50e385206547</BoundTo>
     </None>
-    <None Include="Recordings_B_KLAB\B_KLAB_LF_303077_temp_OP_Zahlsperre_Tagesdatum_setzen.rxrec">
+    <None Include="Recordings_B_KLAB\B_KLAB_LF_303077_aufrufen.rxrec">
+      <id>889b9d4f-c4f0-47c2-a0e9-e663d30777c4</id>
+      <recordtableid>acc56533-bb07-429c-acab-2eb605a5babd</recordtableid>
+      <BoundTo>2e815393-8efb-4fda-9b8b-50e385206547</BoundTo>
+    </None>
+    <None Include="Recordings_B_KLAB\B_KLAB_LF_303077_Zahlsperren_pruefen.rxrec">
       <id>5497cf38-6245-4d94-a6ad-f48d011f1e56</id>
       <recordtableid>5013b8c8-bc23-4952-b215-ba2551b27768</recordtableid>
       <BoundTo>2e815393-8efb-4fda-9b8b-50e385206547</BoundTo>

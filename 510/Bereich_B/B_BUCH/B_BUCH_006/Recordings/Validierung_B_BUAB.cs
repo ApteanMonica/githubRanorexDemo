@@ -48,6 +48,7 @@ namespace B_BUCH_006.Recordings
             konto = "5704";
             betrag = "1.500,00";
             aufteilg_Cd = "QS_2";
+            gKonto = "*";
         }
 
         /// <summary>
@@ -144,6 +145,18 @@ namespace B_BUCH_006.Recordings
             set { _aufteilg_Cd = value; }
         }
 
+        string _gKonto;
+
+        /// <summary>
+        /// Gets or sets the value of variable gKonto.
+        /// </summary>
+        [TestVariable("2cc6b4d3-7563-4529-b40c-0ca7ff5d4422")]
+        public string gKonto
+        {
+            get { return _gKonto; }
+            set { _gKonto = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -176,28 +189,31 @@ namespace B_BUCH_006.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(1));
             repo.TblB.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$lieferant) on item 'TblB.ColAdrNr'.", repo.TblB.ColAdrNrInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblB.ColBelegnr'", repo.TblB.ColBelegnrInfo, new ActionTimeout(120000), new RecordItemIndex(2));
+            repo.TblB.ColBelegnrInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$lieferant) on item 'TblB.ColAdrNr'.", repo.TblB.ColAdrNrInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.TblB.ColAdrNrInfo, "Text", lieferant);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER_Nr) on item 'TblB.ColBelegnr'.", repo.TblB.ColBelegnrInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER_Nr) on item 'TblB.ColBelegnr'.", repo.TblB.ColBelegnrInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.TblB.ColBelegnrInfo, "Text", ER_Nr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$betrag_Ust_Buab) on item 'TblB1.ColUstbetragRow2'.", repo.TblB1.ColUstbetragRow2Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$betrag_Ust_Buab) on item 'TblB1.ColUstbetragRow2'.", repo.TblB1.ColUstbetragRow2Info, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.TblB1.ColUstbetragRow2Info, "Text", betrag_Ust_Buab);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ust_Cd) on item 'TblB1.ColUstcdRow2'.", repo.TblB1.ColUstcdRow2Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ust_Cd) on item 'TblB1.ColUstcdRow2'.", repo.TblB1.ColUstcdRow2Info, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.TblB1.ColUstcdRow2Info, "Text", Ust_Cd);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$konto) on item 'TblB.ColGKtoNr'.", repo.TblB.ColGKtoNrInfo, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.TblB.ColGKtoNrInfo, "Text", konto);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$gKonto) on item 'TblB.ColGKtoNr'.", repo.TblB.ColGKtoNrInfo, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.TblB.ColGKtoNrInfo, "Text", gKonto);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$betrag) on item 'TblB.ColBetrag'.", repo.TblB.ColBetragInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$betrag) on item 'TblB.ColBetrag'.", repo.TblB.ColBetragInfo, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.TblB.ColBetragInfo, "Text", betrag);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$konto) on item 'TblB1.ColKtoNrRow2'.", repo.TblB1.ColKtoNrRow2Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$konto) on item 'TblB1.ColKtoNrRow2'.", repo.TblB1.ColKtoNrRow2Info, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.TblB1.ColKtoNrRow2Info, "Text", konto);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$aufteilg_Cd) on item 'TblB.ColKtbeNrRow2'.", repo.TblB.ColKtbeNrRow2Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$aufteilg_Cd) on item 'TblB.ColKtbeNrRow2'.", repo.TblB.ColKtbeNrRow2Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.TblB.ColKtbeNrRow2Info, "Text", aufteilg_Cd);
             
         }

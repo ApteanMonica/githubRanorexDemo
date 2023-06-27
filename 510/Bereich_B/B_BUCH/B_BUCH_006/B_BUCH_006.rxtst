@@ -22,13 +22,13 @@
 					dataname="startFile"
 					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
 					variableid="92112ddb-7309-4474-a62d-2f86b82571a0"
-					variablename="Startfile">
+					variablename="startFile">
 					</var>
 					<var
 					dataname="programm2"
 					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
 					variableid="dc287c8f-ea66-4fcb-97be-141044f8c007"
-					variablename="Programm2">
+					variablename="programm2">
 					</var>
 				</databinding>
 			</testmodule>
@@ -36,6 +36,9 @@
 			id="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
 			name="B_BUCH_006"
 			reportlevel="Info;20">
+				<description>
+					<![CDATA[<p>Beleg 2300007 von Lieferant 303112  einbuchen im Dialogbuchen aus dem ERBUCH mit dem Buchungssymbol ER</p><p>In B_BUAB gebuchten Beleg prüfen</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="startFile"
@@ -89,6 +92,10 @@
 					name="Ust_Cd"
 					value="V10">
 					</param>
+					<param
+					name="gKonto"
+					value="*">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -107,16 +114,28 @@
 					dataname="lieferant"
 					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
 					variableid="19793d85-675c-464d-9a22-dd56e1e4c7ae"
-					variablename="Lieferant">
+					variablename="lieferant">
 					</var>
 					<var
 					dataname="betrag"
 					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
 					variableid="3f12e5db-93a1-4429-a2d7-e181eb8f4d14"
-					variablename="Betrag">
+					variablename="betrag">
 					</var>
 					<var
 					dataname="aufteilg_Cd"
+					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
+					variableid="76d2a040-e5b5-4147-8b4b-4888e6801cbf"
+					variablename="aufteilg_Cd">
+					</var>
+					<var
+					dataname="betrag_Ust_Buab"
+					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
+					variableid="f1c552cd-8887-4ed4-810d-5ac73b2f3d4e"
+					variablename="betrag_Ust_Buab">
+					</var>
+					<var
+					dataname="Ust_Cd"
 					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
 					variableid="08bbc075-a775-457c-b655-6c34c2c4c512"
 					variablename="Ust_Cd">
@@ -125,19 +144,13 @@
 					dataname="konto"
 					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
 					variableid="7e9d62e8-b583-45a1-9942-492904adad98"
-					variablename="Konto">
+					variablename="konto">
 					</var>
 					<var
-					dataname="betrag_Ust_Buab"
+					dataname="gKonto"
 					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
-					variableid="f1c552cd-8887-4ed4-810d-5ac73b2f3d4e"
-					variablename="Betrag_Ust_Buab">
-					</var>
-					<var
-					dataname="aufteilg_Cd"
-					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
-					variableid="76d2a040-e5b5-4147-8b4b-4888e6801cbf"
-					variablename="aufteilg_Cd">
+					variableid="2cc6b4d3-7563-4529-b40c-0ca7ff5d4422"
+					variablename="gKonto">
 					</var>
 				</databinding>
 			</testmodule>
@@ -151,13 +164,13 @@
 					dataname="startFile"
 					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
 					variableid="a0462f0a-5bf2-474d-8490-18738a493b5b"
-					variablename="Startfile">
+					variablename="startFile">
 					</var>
 					<var
 					dataname="programm"
 					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
 					variableid="42924442-5975-492c-8f04-4e544645ba00"
-					variablename="Programm">
+					variablename="programm">
 					</var>
 				</databinding>
 			</testmodule>
@@ -171,7 +184,7 @@
 			</teardown>
 			<testmodule
 			id="6a1f129e-313d-4a65-9534-5147a72e6510"
-			name="Jahr_Periode_eingaben"
+			name="Jahr_Periode_eingeben"
 			ref="c46fbe59-d80e-418e-a7e8-b14280851789"
 			type="Recording">
 				<databinding>
@@ -179,13 +192,13 @@
 					dataname="jahr"
 					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
 					variableid="7dcec018-46e6-4951-81d0-728e178eacd7"
-					variablename="Jahr">
+					variablename="jahr">
 					</var>
 					<var
 					dataname="periode"
 					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
 					variableid="27bc2123-683b-4cbe-a05d-ff8fe5282092"
-					variablename="Periode">
+					variablename="periode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -209,16 +222,16 @@
 					dataname="lieferant"
 					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
 					variableid="80252616-a083-4e48-a1d2-e0adf599f733"
-					variablename="Lieferant">
+					variablename="lieferant">
 					</var>
 					<var
 					dataname="betrag"
 					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
 					variableid="64223d4c-85cb-44ab-be5d-99cd502d6edd"
-					variablename="Betrag">
+					variablename="betrag">
 					</var>
 					<var
-					dataname="aufteilg_Cd"
+					dataname="Ust_Cd"
 					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
 					variableid="08ed895f-2bd2-4aae-aa67-141e4e0132ec"
 					variablename="Ust_Cd">
@@ -227,13 +240,13 @@
 					dataname="konto"
 					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
 					variableid="44c389e9-241b-4548-a9fe-778d5001d8c3"
-					variablename="Konto">
+					variablename="konto">
 					</var>
 					<var
 					dataname="betrag_Ust"
 					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
 					variableid="e800f2a4-fb16-4e4c-937a-ae608861bde4"
-					variablename="Betrag_Ust">
+					variablename="betrag_Ust">
 					</var>
 					<var
 					dataname="aufteilg_Cd"
@@ -276,6 +289,12 @@
 			<testcase
 			id="b1aa5434-6d43-45bb-9cf0-0f615509f6a1"
 			name="B_BUCH">
+				<parameters>
+					<param
+					name="NewParameter"
+					value="">
+					</param>
+				</parameters>
 			</testcase>
 			<testmodule
 			id="cb477fd4-087b-4d3d-8207-d03b947c3ce8"
@@ -328,7 +347,7 @@
 						</setup>
 						<testmodule
 						id="6a1f129e-313d-4a65-9534-5147a72e6510"
-						name="Jahr_Periode_eingaben">
+						name="Jahr_Periode_eingeben">
 						</testmodule>
 						<testmodule
 						id="a4911727-bfa7-4773-99d0-7deee65b77af"

@@ -91,19 +91,19 @@ mode="Desktop">
 			</info>
 		</WaitForRecordItem>
 		<validationitem
-		action="AttributeContains"
+		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="9bb5f778-a0d3-4a08-88d0-436d192ae0e7">
+		searchpropertyid="0b214f18-09db-4751-bccc-110f6a532723">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="8a4e3005-b24b-434c-9361-56812ef062e9"
+			id="e9559072-a5d9-497c-9a6c-8baa0054fd11"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='frmZahlMain']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpName0']/container[@controlname='tblVorschläge']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]
+					/form[@controlname='frmZahlMain']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpName0']/container[@controlname='tblVorschläge']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZlvs_vorschlag']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -112,7 +112,107 @@ mode="Desktop">
 				Text
 			</matchname>
 			<matchvalue>
-				S;;0	100	RS	B_ZAHL_003	2	06.05.2021	52.753,00	20	06.05.2021	B_ZAHL			True	True
+				2
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="04309691-a6b9-49cf-b9d2-9515347ea787">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d4c9e3e9-30f2-42fe-965d-172ff87f3d2d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZahlMain']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpName0']/container[@controlname='tblVorschläge']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZlvs_zahldatum']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				06.05.2021
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0990c042-8b60-4cfc-82fd-83c86f95fb62">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0e692dab-a5c3-4110-9f28-3b49e5f3c561"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZahlMain']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpName0']/container[@controlname='tblVorschläge']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZlvs_summe']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				52.753,00
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="8552e9f0-4b02-4f34-81f3-d53a2080a02b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f67a573f-70cd-4396-b2c3-fb7c5bdd2c5d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZahlMain']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpName0']/container[@controlname='tblVorschläge']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZlvs_anzahl']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				20
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="71f4adac-3799-457a-8a24-a5ff2a78c30a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="9c15ff37-7a6b-4fe2-90d6-ad22db7af35d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZahlMain']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpName0']/container[@controlname='tblVorschläge']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ZV_TEXT]/cell[@accessiblename~'colZldt_dtanlag']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				06.05.2021
 			</matchvalue>
 		</validationitem>
 	</recorditems>

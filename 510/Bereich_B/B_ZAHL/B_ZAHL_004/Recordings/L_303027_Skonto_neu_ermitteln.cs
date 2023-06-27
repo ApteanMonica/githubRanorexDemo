@@ -94,8 +94,8 @@ namespace B_ZAHL_004.Recordings
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(4));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'FrmZlvsAEndern.FlexGrid' at Center.", repo.FrmZlvsAEndern.FlexGridInfo, new RecordItemIndex(5));
-            repo.FrmZlvsAEndern.FlexGrid.Click(System.Windows.Forms.MouseButtons.Right);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'FrmZlvsAEndern.FlexGrid' at UpperLeft.", repo.FrmZlvsAEndern.FlexGridInfo, new RecordItemIndex(5));
+            repo.FrmZlvsAEndern.FlexGrid.Click(System.Windows.Forms.MouseButtons.Right, Location.UpperLeft);
             
             // Set search timeout +2m
             Report.Log(ReportLevel.Info, "Mouse", "Set search timeout +2m\r\nMouse Left Click item 'BZAHL.MitSkonto' at Center.", repo.BZAHL.MitSkontoInfo, new RecordItemIndex(6));

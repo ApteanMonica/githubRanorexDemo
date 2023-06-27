@@ -79,8 +79,8 @@ namespace K_AUSW_002.Recordings_Bereichskontoabfrage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblBkAb'.", repo.TblBkAb.SelfInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TblBkAb.Self, new Duration(0));
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblBkAb.TitleBar100Bereichskontenabfrage'.", repo.TblBkAb.TitleBar100BereichskontenabfrageInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.TblBkAb.TitleBar100Bereichskontenabfrage, 1000);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
             Delay.Duration(1000, false);

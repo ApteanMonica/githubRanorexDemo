@@ -136,17 +136,15 @@ namespace B_ZAHL_007.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_4.ColZahlsperreRow4'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_4.ColZahlsperreRow4Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_4.ColZahlsperreRow4Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER_077A_B_ZAHL_007') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColBelegRow5'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColBelegRow5Info, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColBelegRow5Info, "Text", "ER_077A_B_ZAHL_007");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER_077B_B_ZAHL_007') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColBelegRow5'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColBelegRow5Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColBelegRow5Info, "Text", "ER_077B_B_ZAHL_007");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='N') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColZahlsperreRow5'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColZahlsperreRow5Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColZahlsperreRow5Info, "Text", "N");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER_077B_B_ZAHL_007') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_6.ColBelegRow6'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_6.ColBelegRow6Info, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_6.ColBelegRow6Info, "Text", "ER_077B_B_ZAHL_007");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='N') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_6.ColZahlsperreRow6'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_6.ColZahlsperreRow6Info, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_6.ColZahlsperreRow6Info, "Text", "N");
+            // search timeout reduziert
+            Report.Log(ReportLevel.Info, "Validation", "search timeout reduziert\r\nValidating NotExists on item 'FrmZlvsAEndern.Row6'.", repo.FrmZlvsAEndern.Row6Info, new RecordItemIndex(13));
+            Validate.NotExists(repo.FrmZlvsAEndern.Row6Info);
             
         }
 

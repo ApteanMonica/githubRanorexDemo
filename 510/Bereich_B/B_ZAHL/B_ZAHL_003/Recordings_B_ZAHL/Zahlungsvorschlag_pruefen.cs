@@ -98,8 +98,20 @@ namespace B_ZAHL_003.Recordings_B_ZAHL
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.Row_mit_ZV_TEXT_B_ZAHL_003'", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.Row_mit_ZV_TEXT_B_ZAHL_003Info, new ActionTimeout(120000), new RecordItemIndex(2));
             repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.Row_mit_ZV_TEXT_B_ZAHL_003Info.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'S;;0\t100\tRS\tB_ZAHL_003\t2\t06.05.2021\t52.753,00\t20\t06.05.2021\tB_ZAHL\t\t\tTrue\tTrue') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.Row_mit_ZV_TEXT_B_ZAHL_003'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.Row_mit_ZV_TEXT_B_ZAHL_003Info, new RecordItemIndex(3));
-            Validate.AttributeContains(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.Row_mit_ZV_TEXT_B_ZAHL_003Info, "Text", "S;;0\t100\tRS\tB_ZAHL_003\t2\t06.05.2021\t52.753,00\t20\t06.05.2021\tB_ZAHL\t\t\tTrue\tTrue");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsVorschlag_in_Zeile_mit_ZV_TEXT_B_ZAHL_003'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsVorschlag_in_Zeile_mit_ZV_TEXT_B_ZAHL_003Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsVorschlag_in_Zeile_mit_ZV_TEXT_B_ZAHL_003Info, "Text", "2");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='06.05.2021') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsZahldatum_Zeile_mit_ZV_TEXT_B_ZAHL_003'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsZahldatum_Zeile_mit_ZV_TEXT_B_ZAHL_003Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsZahldatum_Zeile_mit_ZV_TEXT_B_ZAHL_003Info, "Text", "06.05.2021");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='52.753,00') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_in_Zeile_mit_ZV_TEXT_B_ZAHL_003'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_in_Zeile_mit_ZV_TEXT_B_ZAHL_003Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsSumme_in_Zeile_mit_ZV_TEXT_B_ZAHL_003Info, "Text", "52.753,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzahl_in_Zeile_mit_ZV_TEXT_B_ZAHL_003'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzahl_in_Zeile_mit_ZV_TEXT_B_ZAHL_003Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZlvsAnzahl_in_Zeile_mit_ZV_TEXT_B_ZAHL_003Info, "Text", "20");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='06.05.2021') on item 'FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZldtDtanlag_in_Zeile_mit_ZV_TEXT_B_ZAHL_003'.", repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZldtDtanlag_in_Zeile_mit_ZV_TEXT_B_ZAHL_003Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.FrmZahlMain.Zeilen_Zahlungsvorschlaege.ColZldtDtanlag_in_Zeile_mit_ZV_TEXT_B_ZAHL_003Info, "Text", "06.05.2021");
             
         }
 

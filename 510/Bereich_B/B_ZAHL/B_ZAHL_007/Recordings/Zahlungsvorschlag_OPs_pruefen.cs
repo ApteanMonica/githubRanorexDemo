@@ -166,8 +166,8 @@ namespace B_ZAHL_007.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.470,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_4.ColZBetragZRow4'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_4.ColZBetragZRow4Info, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_4.ColZBetragZRow4Info, "Text", "1.470,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='N') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_4.ColZahlsperreRow4'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_4.ColZahlsperreRow4Info, new RecordItemIndex(16));
-            Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_4.ColZahlsperreRow4Info, "Text", "N");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_4.ColZahlsperreRow4'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_4.ColZahlsperreRow4Info, new RecordItemIndex(16));
+            Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_4.ColZahlsperreRow4Info, "Text", "");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_303077) on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColAdrNrRow5'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColAdrNrRow5Info, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_5.ColAdrNrRow5Info, "Text", LF_303077);

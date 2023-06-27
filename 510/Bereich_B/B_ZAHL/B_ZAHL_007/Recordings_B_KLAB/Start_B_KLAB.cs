@@ -108,11 +108,11 @@ namespace B_ZAHL_007.Recordings_B_KLAB
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_2 in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm_2, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmKlAb.TitleBar100LieferantenKonto1'", repo.FrmKlAb.TitleBar100LieferantenKonto1Info, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmKlAb.TitleBar100LieferantenKonto1Info.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmKlAb.TitleBar100LieferantenKonto'", repo.FrmKlAb.TitleBar100LieferantenKontoInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FrmKlAb.TitleBar100LieferantenKontoInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Lieferanten-Konto') on item 'FrmKlAb.TitleBar100LieferantenKonto1'.", repo.FrmKlAb.TitleBar100LieferantenKonto1Info, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmKlAb.TitleBar100LieferantenKonto1Info, "Text", "Lieferanten-Konto");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Lieferanten-Konto') on item 'FrmKlAb.TitleBar100LieferantenKonto'.", repo.FrmKlAb.TitleBar100LieferantenKontoInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.FrmKlAb.TitleBar100LieferantenKontoInfo, "Text", "Lieferanten-Konto");
             
         }
 

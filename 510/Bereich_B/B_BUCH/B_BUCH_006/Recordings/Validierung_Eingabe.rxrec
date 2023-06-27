@@ -60,6 +60,26 @@ mode="Global">
 		</var>
 	</variables>
 	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="bdfd646a-b6d2-41b3-9cbf-6fc515d92528"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="92868e43-7c50-4acf-9e33-e5a4eaf03090"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='mdiBuch']/container[@controlname='ClientArea']/container[@controlname='SubForm_frmU']/form[@controlname='frmU']/container[@controlname='ClientArea']/text[@controlname='dfBelegnr']/text[@accessiblename='Beleg']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
