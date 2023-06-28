@@ -138,8 +138,8 @@ namespace N_ANLA_003.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ - Übernahme aus Geschäftsjahr: 2022') on item 'DlgFibu.TitleBar100AVZUEbernahmeAusGesc'.", repo.DlgFibu.TitleBar100AVZUEbernahmeAusGescInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.DlgFibu.TitleBar100AVZUEbernahmeAusGescInfo, "Text", "[100]  AVZ - Übernahme aus Geschäftsjahr: 2022");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Konto_Anlagen_Nr' with focus on 'DlgZugang.DfAnlaNr'.", repo.DlgZugang.DfAnlaNrInfo, new RecordItemIndex(3));
-            repo.DlgZugang.DfAnlaNr.PressKeys(Konto_Anlagen_Nr);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Konto_Anlagen_Nr' with focus on 'DlgFibu.KontoNr'.", repo.DlgFibu.KontoNrInfo, new RecordItemIndex(3));
+            repo.DlgFibu.KontoNr.PressKeys(Konto_Anlagen_Nr);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -147,7 +147,10 @@ namespace N_ANLA_003.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFibu.PbLaden' at Center.", repo.DlgFibu.PbLadenInfo, new RecordItemIndex(5));
             repo.DlgFibu.PbLaden.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFibu.PbEinzeln' at Center.", repo.DlgFibu.PbEinzelnInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFibu.Row_Column0_Belegnummer_01' at Center.", repo.DlgFibu.Row_Column0_Belegnummer_01Info, new RecordItemIndex(6));
+            repo.DlgFibu.Row_Column0_Belegnummer_01.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFibu.PbEinzeln' at Center.", repo.DlgFibu.PbEinzelnInfo, new RecordItemIndex(7));
             repo.DlgFibu.PbEinzeln.Click();
             
         }

@@ -79,6 +79,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\..\Testdaten\Allgemein\UserCode\aptean.cs">
+      <Link>aptean.cs</Link>
+      <id>b58a3165-6232-4224-b940-d1f52376dedd</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>873e3ea2-68d8-4b00-bdae-38df41c52b5c</id>
     </Compile>
@@ -96,6 +100,18 @@
       <DependentUpon>Close_AUT_1.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>bb7c5b45-e4a2-49b9-92e7-104fcbba57af</id>
+    </Compile>
+    <Compile Include="Recording\Computername_einlesen.cs">
+      <BoundTo>d29f421e-97cc-4757-897b-96d21415be3d</BoundTo>
+      <DependentUpon>Computername_einlesen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>641c4696-1968-4469-957a-146b5711a681</id>
+    </Compile>
+    <Compile Include="Recording\Computername_einlesen.UserCode.cs">
+      <BoundTo>d29f421e-97cc-4757-897b-96d21415be3d</BoundTo>
+      <DependentUpon>Computername_einlesen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0e6c2d29-bd0e-47a6-9997-20bdf858226d</id>
     </Compile>
     <Compile Include="Recording\Reiseart_erfassen.cs">
       <BoundTo>dcba05f4-7c52-4741-8c15-88972814f905</BoundTo>
@@ -316,6 +332,11 @@
       <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
       <id>d0eb394c-9eb0-4767-897a-7ac2fb073c18</id>
       <recordtableid>785b8010-cbd6-49d0-a288-5b4c423dbcbb</recordtableid>
+    </None>
+    <None Include="Recording\Computername_einlesen.rxrec">
+      <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>
+      <id>d29f421e-97cc-4757-897b-96d21415be3d</id>
+      <recordtableid>fb4764c2-96d4-465f-b545-41a30837c045</recordtableid>
     </None>
     <None Include="Recording\Reiseart_erfassen.rxrec">
       <BoundTo>9c001395-fdcf-4024-bd94-96f74544d865</BoundTo>

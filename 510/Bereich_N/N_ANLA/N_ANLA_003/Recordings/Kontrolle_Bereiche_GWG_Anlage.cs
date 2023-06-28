@@ -24,29 +24,29 @@ namespace N_ANLA_003.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT recording.
+    ///The Kontrolle_Bereiche_GWG_Anlage recording.
     /// </summary>
-    [TestModule("9857691a-dcc0-47cb-8d18-81d612c1b01f", ModuleType.Recording, 1)]
-    public partial class CloseAUT : ITestModule
+    [TestModule("0fbc7708-cc70-4117-9ab3-57195069136c", ModuleType.Recording, 1)]
+    public partial class Kontrolle_Bereiche_GWG_Anlage : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_ANLA_003.N_ANLA_003Repository repository.
         /// </summary>
         public static global::N_ANLA_003.N_ANLA_003Repository repo = global::N_ANLA_003.N_ANLA_003Repository.Instance;
 
-        static CloseAUT instance = new CloseAUT();
+        static Kontrolle_Bereiche_GWG_Anlage instance = new Kontrolle_Bereiche_GWG_Anlage();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT()
+        public Kontrolle_Bereiche_GWG_Anlage()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT Instance
+        public static Kontrolle_Bereiche_GWG_Anlage Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,11 @@ namespace N_ANLA_003.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmAnla.TitleBar100AVZAnlagen'.", repo.FrmAnla.TitleBar100AVZAnlagenInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FrmAnla.TitleBar100AVZAnlagen, new Duration(0));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'Form100AVZBuchungenZugang.ColBektNr1Row1'.", repo.Form100AVZBuchungenZugang.ColBektNr1Row1Info, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.Form100AVZBuchungenZugang.ColBektNr1Row1Info, "Text", "20");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,00000000') on item 'Form100AVZBuchungenZugang.ColAnbeProzRow1'.", repo.Form100AVZBuchungenZugang.ColAnbeProzRow1Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.Form100AVZBuchungenZugang.ColAnbeProzRow1Info, "Text", "100,00000000");
             
         }
 

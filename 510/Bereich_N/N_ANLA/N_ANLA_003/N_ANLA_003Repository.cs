@@ -1254,6 +1254,9 @@ namespace N_ANLA_003
             RepoItemInfo _kontoInfo;
             RepoItemInfo _inbetriebnahmeInfo;
             RepoItemInfo _ahkbetragInfo;
+            RepoItemInfo _colbektnr1row1Info;
+            RepoItemInfo _colanbeprozrow1Info;
+            RepoItemInfo _geschaeftsjahrInfo;
 
             /// <summary>
             /// Creates a new Form100AVZBuchungenZugang  folder.
@@ -1269,6 +1272,9 @@ namespace N_ANLA_003
                 _kontoInfo = new RepoItemInfo(this, "Konto", "text[@controlname='dfKto_nr']/text[@accessiblename='Konto']", "", 30000, null, "df62caac-0603-4bf0-b31d-f705ff860095");
                 _inbetriebnahmeInfo = new RepoItemInfo(this, "Inbetriebnahme", "tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpWerte']/text[@controlname='dfInbetriebnahme']/text[@accessiblename='Inbetriebnahme']", "", 30000, null, "b7332133-9723-48f2-b152-78f230787d51");
                 _ahkbetragInfo = new RepoItemInfo(this, "AHKBetrag", "tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpWerte']/text[@controlname='dfAnbu_betrag']/text[@accessiblename='AHK-Betrag']", "", 30000, null, "eebb21c9-16a3-45ee-9741-e3b39c10ac16");
+                _colbektnr1row1Info = new RepoItemInfo(this, "ColBektNr1Row1", "tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']/container[@controlname='tblAnbe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBekt_nr1 Row 1']", "", 30000, null, "9143dfbd-74c1-4e84-a285-e283dd5b8bdc");
+                _colanbeprozrow1Info = new RepoItemInfo(this, "ColAnbeProzRow1", "tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']/container[@controlname='tblAnbe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAnbe_proz Row 1']", "", 30000, null, "1d8bee3b-c9f9-424f-8d5b-a62305f1afa8");
+                _geschaeftsjahrInfo = new RepoItemInfo(this, "Geschaeftsjahr", "text[@controlname='dfGjhr_bez']/text[@accessiblename='Geschäftsjahr']", "", 30000, null, "d0170cfd-86d3-424b-838f-530df6afb67e");
             }
 
             /// <summary>
@@ -1484,6 +1490,78 @@ namespace N_ANLA_003
                 get
                 {
                     return _ahkbetragInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColBektNr1Row1 item.
+            /// </summary>
+            [RepositoryItem("9143dfbd-74c1-4e84-a285-e283dd5b8bdc")]
+            public virtual Ranorex.Cell ColBektNr1Row1
+            {
+                get
+                {
+                    return _colbektnr1row1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBektNr1Row1 item info.
+            /// </summary>
+            [RepositoryItemInfo("9143dfbd-74c1-4e84-a285-e283dd5b8bdc")]
+            public virtual RepoItemInfo ColBektNr1Row1Info
+            {
+                get
+                {
+                    return _colbektnr1row1Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColAnbeProzRow1 item.
+            /// </summary>
+            [RepositoryItem("1d8bee3b-c9f9-424f-8d5b-a62305f1afa8")]
+            public virtual Ranorex.Cell ColAnbeProzRow1
+            {
+                get
+                {
+                    return _colanbeprozrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColAnbeProzRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("1d8bee3b-c9f9-424f-8d5b-a62305f1afa8")]
+            public virtual RepoItemInfo ColAnbeProzRow1Info
+            {
+                get
+                {
+                    return _colanbeprozrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Geschaeftsjahr item.
+            /// </summary>
+            [RepositoryItem("d0170cfd-86d3-424b-838f-530df6afb67e")]
+            public virtual Ranorex.Text Geschaeftsjahr
+            {
+                get
+                {
+                    return _geschaeftsjahrInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Geschaeftsjahr item info.
+            /// </summary>
+            [RepositoryItemInfo("d0170cfd-86d3-424b-838f-530df6afb67e")]
+            public virtual RepoItemInfo GeschaeftsjahrInfo
+            {
+                get
+                {
+                    return _geschaeftsjahrInfo;
                 }
             }
         }

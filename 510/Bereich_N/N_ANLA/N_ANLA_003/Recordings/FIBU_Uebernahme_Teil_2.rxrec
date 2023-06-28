@@ -4097,10 +4097,10 @@ mode="Global">
 				</binding>
 			</bindings>
 			<info
-			id="84f64a5b-8cc1-4d6f-bdd2-4ce6c35f17fb"
+			id="74c0584d-640f-4a4f-8c96-10bb80a67d4f"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='dlgZugang']/text[@controlname='dfAnla_nr']
+					/form[@controlname='dlgFibu']/text[@controlname='dfKto_nr']/text[@accessiblename='Konto-Nr.']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -8022,6 +8022,32 @@ mode="Global">
 				</element>
 				<path>
 					/form[@controlname='dlgFibu']/button[@controlname='pbLaden']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="25a1efda-f75f-47f4-9415-ede757b4c5da"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="78736750-959e-4d7f-a4c7-ac136039ecf0"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgFibu']/container[@controlname='tblBusa']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Belegnr_01]/cell[@accessiblename~'Column 0']
 				</path>
 				<robustPath>
 				</robustPath>
