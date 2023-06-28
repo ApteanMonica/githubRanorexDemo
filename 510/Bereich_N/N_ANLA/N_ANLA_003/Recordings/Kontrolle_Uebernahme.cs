@@ -42,7 +42,7 @@ namespace N_ANLA_003.Recordings
         public Kontrolle_Uebernahme()
         {
             Anlagennr = "003_01";
-            Anlagenbezeichnung = "N_ANLA_003_01";
+            Anlagenbezeichnung = "Anlage_003_01";
             Konto_Anlagen_Nr = "0660";
             Zugangsdatum_Anlage_1 = "05.04.2022";
             AHK_Betrag_Anlage_1 = "1.750,00";

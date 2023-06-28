@@ -24,34 +24,44 @@ namespace N_ANLA_003.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT recording.
+    ///The Ueberpruefung_Uebernahme_selber_GWG_Buchung recording.
     /// </summary>
-    [TestModule("9857691a-dcc0-47cb-8d18-81d612c1b01f", ModuleType.Recording, 1)]
-    public partial class CloseAUT : ITestModule
+    [TestModule("6b41c250-ca5d-4643-ad4f-adbcbb651628", ModuleType.Recording, 1)]
+    public partial class Ueberpruefung_Uebernahme_selber_GWG_Buchung : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_ANLA_003.N_ANLA_003Repository repository.
         /// </summary>
         public static global::N_ANLA_003.N_ANLA_003Repository repo = global::N_ANLA_003.N_ANLA_003Repository.Instance;
 
-        static CloseAUT instance = new CloseAUT();
+        static Ueberpruefung_Uebernahme_selber_GWG_Buchung instance = new Ueberpruefung_Uebernahme_selber_GWG_Buchung();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT()
+        public Ueberpruefung_Uebernahme_selber_GWG_Buchung()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT Instance
+        public static Ueberpruefung_Uebernahme_selber_GWG_Buchung Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable Belegnr_02.
+        /// </summary>
+        [TestVariable("80e25d30-370d-4252-b9c8-a231a560ff19")]
+        public string Belegnr_02
+        {
+            get { return repo.Belegnr_02; }
+            set { repo.Belegnr_02 = value; }
+        }
 
 #endregion
 
@@ -73,14 +83,27 @@ namespace N_ANLA_003.Recordings
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 0;
+            Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 20;
-            Delay.SpeedFactor = 0.00;
+            Delay.SpeedFactor = 1.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmAnla.TitleBar100AVZAnlagen'.", repo.FrmAnla.TitleBar100AVZAnlagenInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FrmAnla.TitleBar100AVZAnlagen, new Duration(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100AVZBuchungenZugang.ButtonFibuUEbernahme' at Center.", repo.Form100AVZBuchungenZugang.ButtonFibuUEbernahmeInfo, new RecordItemIndex(0));
+            repo.Form100AVZBuchungenZugang.ButtonFibuUEbernahme.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0680{Tab}' with focus on 'DlgFibu.KontoNr'.", repo.DlgFibu.KontoNrInfo, new RecordItemIndex(1));
+            repo.DlgFibu.KontoNr.PressKeys("0680{Tab}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFibu.PbLaden' at Center.", repo.DlgFibu.PbLadenInfo, new RecordItemIndex(2));
+            repo.DlgFibu.PbLaden.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'DlgFibu.Row_Column0_Belegnummer_02'.", repo.DlgFibu.Row_Column0_Belegnummer_02Info, new RecordItemIndex(3));
+            Validate.NotExists(repo.DlgFibu.Row_Column0_Belegnummer_02Info);
+            Delay.Milliseconds(0);
             
         }
 

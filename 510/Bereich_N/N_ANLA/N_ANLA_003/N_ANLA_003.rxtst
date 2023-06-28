@@ -13,16 +13,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm"
-					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
-					variableid="73865362-837b-41ea-a711-1363c9e90bbd"
-					variablename="Programm">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
 					variableid="686e8adb-842c-4dc3-8387-24e32ddfe190"
 					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="73865362-837b-41ea-a711-1363c9e90bbd"
+					variablename="Programm">
 					</var>
 				</databinding>
 			</testmodule>
@@ -33,16 +33,30 @@
 			type="Recording">
 				<databinding>
 					<var
+					dataname="Frist_IFB"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="1280136d-f1d4-4926-93ed-09746eaac0bb"
+					variablename="Frist_IFB">
+					</var>
+					<var
 					dataname="Frist_stille_Reserve"
 					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
 					variableid="726164ec-a9b8-4719-bace-2d912c3f73a2"
 					variablename="Frist_stille_Reserve">
 					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="3c349f33-1b64-43d5-9590-c1aa7a4d1067"
+			name="Ueberpruefung_Uebernahme_selber_GWG_Buchung"
+			ref="6b41c250-ca5d-4643-ad4f-adbcbb651628"
+			type="Recording">
+				<databinding>
 					<var
-					dataname="Frist_IFB"
+					dataname="Belegnr_02"
 					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
-					variableid="1280136d-f1d4-4926-93ed-09746eaac0bb"
-					variablename="Frist_IFB">
+					variableid="80e25d30-370d-4252-b9c8-a231a560ff19"
+					variablename="Belegnr_02">
 					</var>
 				</databinding>
 			</testmodule>
@@ -53,16 +67,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Kontonr_GWG_Anlage"
-					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
-					variableid="56b579bf-65c4-4776-8755-8fe8fe9c64cc"
-					variablename="Kontonr_GWG_Anlage">
-					</var>
-					<var
 					dataname="Belegnr_02"
 					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
 					variableid="0ad43b69-1cde-4335-8873-d961523b1794"
 					variablename="Belegnr_02">
+					</var>
+					<var
+					dataname="Kontonr_GWG_Anlage"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="56b579bf-65c4-4776-8755-8fe8fe9c64cc"
+					variablename="Kontonr_GWG_Anlage">
 					</var>
 				</databinding>
 			</testmodule>
@@ -77,11 +91,11 @@
 					</param>
 					<param
 					name="Startfile"
-					value="	C:\Testdaten\Allgemein\Start.bat">
+					value="C:\Testdaten\Allgemein\Start.bat">
 					</param>
 					<param
 					name="Anlage_1"
-					value="N_ANLA_003_01">
+					value="003_01">
 					</param>
 					<param
 					name="Bezeichnung_Anlage_1"
@@ -97,7 +111,7 @@
 					</param>
 					<param
 					name="Anlagenbezeichnung"
-					value="N_ANLA_003_01">
+					value="Anlage_003_01">
 					</param>
 					<param
 					name="Belegnr_01"
@@ -204,16 +218,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Bezeichnung_Anlage_1"
-					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
-					variableid="b4a3170a-fc8e-496d-94d0-841179fdf3f8"
-					variablename="Bezeichnung_Anlage_1">
-					</var>
-					<var
 					dataname="Anlage_1"
 					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
 					variableid="5b135898-9e11-4ff1-8a74-4a84d138cb6e"
 					variablename="Anlage_1">
+					</var>
+					<var
+					dataname="Bezeichnung_Anlage_1"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="b4a3170a-fc8e-496d-94d0-841179fdf3f8"
+					variablename="Bezeichnung_Anlage_1">
 					</var>
 				</databinding>
 			</testmodule>
@@ -228,16 +242,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Konto_Anlagen_Nr"
+					dataname="Belegnr_01"
 					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
-					variableid="1308d3a3-dc97-438c-9199-d9ffc621bb03"
-					variablename="Konto_Anlagen_Nr">
-					</var>
-					<var
-					dataname="Anlagennr"
-					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
-					variableid="3e8a3f15-5c9e-41c1-bf09-2308fef4562e"
-					variablename="Anlagennr">
+					variableid="23c2fd93-75cd-4c7b-a781-ad0da67a1591"
+					variablename="Belegnr_01">
 					</var>
 					<var
 					dataname="Anlagenbezeichnung"
@@ -246,12 +254,24 @@
 					variablename="Anlagenbezeichnung">
 					</var>
 					<var
-					dataname="Belegnr_01"
+					dataname="Anlagennr"
 					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
-					variableid="23c2fd93-75cd-4c7b-a781-ad0da67a1591"
-					variablename="Belegnr_01">
+					variableid="3e8a3f15-5c9e-41c1-bf09-2308fef4562e"
+					variablename="Anlagennr">
+					</var>
+					<var
+					dataname="Konto_Anlagen_Nr"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="1308d3a3-dc97-438c-9199-d9ffc621bb03"
+					variablename="Konto_Anlagen_Nr">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="b7ebb92c-d6ee-43bf-ad1d-c9526b48ce5b"
+			name="Kontrolle_Bereiche_GWG_Anlage"
+			ref="0fbc7708-cc70-4117-9ab3-57195069136c"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="ce8e57cf-8179-4464-8125-4343da3dd915"
@@ -266,22 +286,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Inbetriebnahmedatum_Anlage_1"
+					dataname="Anlagennr"
 					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
-					variableid="181dfc7e-52ec-432f-92c8-c08dc32db010"
-					variablename="Inbetriebnahmedatum_Anlage_1">
-					</var>
-					<var
-					dataname="AHK_Betrag_Anlage_1"
-					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
-					variableid="964b8125-dbbb-4dd7-9901-ed508804e49c"
-					variablename="AHK_Betrag_Anlage_1">
-					</var>
-					<var
-					dataname="Zugangsdatum_Anlage_1"
-					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
-					variableid="b6397f33-2c81-4cf0-843d-864c7852b41b"
-					variablename="Zugangsdatum_Anlage_1">
+					variableid="e782c1ad-c2b9-460f-892d-fd41965f28f8"
+					variablename="Anlagennr">
 					</var>
 					<var
 					dataname="Anlagenbezeichnung"
@@ -290,22 +298,34 @@
 					variablename="Anlagenbezeichnung">
 					</var>
 					<var
-					dataname="Anlagennr"
+					dataname="Zugangsdatum_Anlage_1"
 					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
-					variableid="e782c1ad-c2b9-460f-892d-fd41965f28f8"
-					variablename="Anlagennr">
+					variableid="b6397f33-2c81-4cf0-843d-864c7852b41b"
+					variablename="Zugangsdatum_Anlage_1">
 					</var>
 					<var
-					dataname="Konto_Anlagen_Nr"
+					dataname="AHK_Betrag_Anlage_1"
 					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
-					variableid="3e65d9b2-839b-4aa9-b3cd-85c2956def7f"
-					variablename="Konto_Anlagen_Nr">
+					variableid="964b8125-dbbb-4dd7-9901-ed508804e49c"
+					variablename="AHK_Betrag_Anlage_1">
+					</var>
+					<var
+					dataname="Inbetriebnahmedatum_Anlage_1"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="181dfc7e-52ec-432f-92c8-c08dc32db010"
+					variablename="Inbetriebnahmedatum_Anlage_1">
 					</var>
 					<var
 					dataname="Zugangsmenge"
 					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
 					variableid="e873fde7-1507-4d22-9c14-1f6f104ce8a3"
 					variablename="Zugangsmenge">
+					</var>
+					<var
+					dataname="Konto_Anlagen_Nr"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="3e65d9b2-839b-4aa9-b3cd-85c2956def7f"
+					variablename="Konto_Anlagen_Nr">
 					</var>
 				</databinding>
 			</testmodule>
@@ -316,10 +336,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Anlagennummer_GWG_Anlage"
+					dataname="GJ"
 					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
-					variableid="8aca698e-8acf-4946-b7d8-cc511ebea119"
-					variablename="Anlagennummer_GWG_Anlage">
+					variableid="0f6fdc09-75d5-45f0-8eef-f36bfbb0e6de"
+					variablename="GJ">
 					</var>
 					<var
 					dataname="Bezeichnung_GWG_Anlage"
@@ -328,10 +348,10 @@
 					variablename="Bezeichnung_GWG_Anlage">
 					</var>
 					<var
-					dataname="GJ"
+					dataname="Anlagennummer_GWG_Anlage"
 					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
-					variableid="0f6fdc09-75d5-45f0-8eef-f36bfbb0e6de"
-					variablename="GJ">
+					variableid="8aca698e-8acf-4946-b7d8-cc511ebea119"
+					variablename="Anlagennummer_GWG_Anlage">
 					</var>
 				</databinding>
 			</testmodule>
@@ -395,6 +415,14 @@
 						<testmodule
 						id="f24df2f6-539f-457d-aadb-58216ee899cc"
 						name="Kontrolle_GWG_Uebernahme">
+						</testmodule>
+						<testmodule
+						id="b7ebb92c-d6ee-43bf-ad1d-c9526b48ce5b"
+						name="Kontrolle_Bereiche_GWG_Anlage">
+						</testmodule>
+						<testmodule
+						id="3c349f33-1b64-43d5-9590-c1aa7a4d1067"
+						name="Ueberpruefung_Uebernahme_selber_GWG_Buchung">
 						</testmodule>
 						<teardown
 						id="a55ebab2-ee6a-4602-816f-ab635c1e9ad3"

@@ -79,6 +79,12 @@ namespace N_ANLA_003.Recordings
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'Form100AVZBuchungenZugang.ColBektNr1Row1'.", repo.Form100AVZBuchungenZugang.ColBektNr1Row1Info, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.Form100AVZBuchungenZugang.ColBektNr1Row1Info, "Text", "20");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,00000000') on item 'Form100AVZBuchungenZugang.ColAnbeProzRow1'.", repo.Form100AVZBuchungenZugang.ColAnbeProzRow1Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.Form100AVZBuchungenZugang.ColAnbeProzRow1Info, "Text", "100,00000000");
+            
         }
 
 #region Image Feature Data
