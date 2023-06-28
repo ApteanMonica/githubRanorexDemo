@@ -105,46 +105,43 @@ namespace B_ZAHL_007.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmZlvsAEndern.TitleBar100LieferantenZahlvorschl'", repo.FrmZlvsAEndern.TitleBar100LieferantenZahlvorschlInfo, new ActionTimeout(120000), new RecordItemIndex(0));
-            repo.FrmZlvsAEndern.TitleBar100LieferantenZahlvorschlInfo.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bankbeleg bearbeiten') on item 'FrmZlvsAEndern.TitleBar100LieferantenZahlvorschl'.", repo.FrmZlvsAEndern.TitleBar100LieferantenZahlvorschlInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bankbeleg bearbeiten') on item 'FrmZlvsAEndern.TitleBar100LieferantenZahlvorschl'.", repo.FrmZlvsAEndern.TitleBar100LieferantenZahlvorschlInfo, new RecordItemIndex(0));
             Validate.AttributeContains(repo.FrmZlvsAEndern.TitleBar100LieferantenZahlvorschlInfo, "Text", "Bankbeleg bearbeiten");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColAdrNrRow1'", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColAdrNrRow1Info, new ActionTimeout(120000), new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColAdrNrRow1'", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColAdrNrRow1Info, new ActionTimeout(120000), new RecordItemIndex(1));
             repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColAdrNrRow1Info.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$LF_303072) on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColAdrNrRow1'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColAdrNrRow1Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$LF_303072) on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColAdrNrRow1'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColAdrNrRow1Info, new RecordItemIndex(2));
             Validate.AttributeContains(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColAdrNrRow1Info, "Text", LF_303072);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ER_072B_B_ZAHL_007') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColBelegRow1'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColBelegRow1Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ER_072B_B_ZAHL_007') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColBelegRow1'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColBelegRow1Info, new RecordItemIndex(3));
             Validate.AttributeContains(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColBelegRow1Info, "Text", "ER_072B_B_ZAHL_007");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColZahlsperreRow1'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColZahlsperreRow1Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColZahlsperreRow1'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColZahlsperreRow1Info, new RecordItemIndex(4));
             Validate.AttributeContains(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColZahlsperreRow1Info, "Text", "");
             
             // Tagesdatum (NICHT Abschnitt 12.05.2021	)
-            Report.Log(ReportLevel.Info, "Validation", "Tagesdatum (NICHT Abschnitt 12.05.2021\t)\r\nValidating AttributeContains (Text>'588,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColZBetragZRow1'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColZBetragZRow1Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Tagesdatum (NICHT Abschnitt 12.05.2021\t)\r\nValidating AttributeContains (Text>'588,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColZBetragZRow1'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColZBetragZRow1Info, new RecordItemIndex(5));
             Validate.AttributeContains(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_1.ColZBetragZRow1Info, "Text", "588,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$LF_303077) on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColAdrNrRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColAdrNrRow2Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$LF_303077) on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColAdrNrRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColAdrNrRow2Info, new RecordItemIndex(6));
             Validate.AttributeContains(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColAdrNrRow2Info, "Text", LF_303077);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ER_077A_B_ZAHL_007') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColBelegRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColBelegRow2Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ER_077A_B_ZAHL_007') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColBelegRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColBelegRow2Info, new RecordItemIndex(7));
             Validate.AttributeContains(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColBelegRow2Info, "Text", "ER_077A_B_ZAHL_007");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZahlsperreRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZahlsperreRow2Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZahlsperreRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZahlsperreRow2Info, new RecordItemIndex(8));
             Validate.AttributeContains(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZahlsperreRow2Info, "Text", "");
             
             // Tagesdatum (NICHT Abschnitt 12.05.2021	)
-            Report.Log(ReportLevel.Info, "Validation", "Tagesdatum (NICHT Abschnitt 12.05.2021\t)\r\nValidating AttributeContains (Text>'1.470,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZBetragZRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZBetragZRow2Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Tagesdatum (NICHT Abschnitt 12.05.2021\t)\r\nValidating AttributeContains (Text>'1.470,00') on item 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZBetragZRow2'.", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZBetragZRow2Info, new RecordItemIndex(9));
             Validate.AttributeContains(repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZBetragZRow2Info, "Text", "1.470,00");
             
             // Search timeout reduziert
-            Report.Log(ReportLevel.Info, "Validation", "Search timeout reduziert\r\nValidating NotExists on item 'FrmZlvsAEndern.Row3'.", repo.FrmZlvsAEndern.Row3Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Search timeout reduziert\r\nValidating NotExists on item 'FrmZlvsAEndern.Row3'.", repo.FrmZlvsAEndern.Row3Info, new RecordItemIndex(10));
             Validate.NotExists(repo.FrmZlvsAEndern.Row3Info);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmZlvsAEndern.TitleBar100LieferantenZahlvorschl'.", repo.FrmZlvsAEndern.TitleBar100LieferantenZahlvorschlInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmZlvsAEndern.TitleBar100LieferantenZahlvorschl'.", repo.FrmZlvsAEndern.TitleBar100LieferantenZahlvorschlInfo, new RecordItemIndex(11));
             Keyboard.PrepareFocus(repo.FrmZlvsAEndern.TitleBar100LieferantenZahlvorschl);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
