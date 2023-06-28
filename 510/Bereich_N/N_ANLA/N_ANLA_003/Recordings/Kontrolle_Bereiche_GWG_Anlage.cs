@@ -20,51 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Z_REISE_001.Recording
+namespace N_ANLA_003.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Computername_einlesen recording.
+    ///The Kontrolle_Bereiche_GWG_Anlage recording.
     /// </summary>
-    [TestModule("fb4764c2-96d4-465f-b545-41a30837c045", ModuleType.Recording, 1)]
-    public partial class Computername_einlesen : ITestModule
+    [TestModule("0fbc7708-cc70-4117-9ab3-57195069136c", ModuleType.Recording, 1)]
+    public partial class Kontrolle_Bereiche_GWG_Anlage : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::Z_REISE_001.Z_REISE_001Repository repository.
+        /// Holds an instance of the global::N_ANLA_003.N_ANLA_003Repository repository.
         /// </summary>
-        public static global::Z_REISE_001.Z_REISE_001Repository repo = global::Z_REISE_001.Z_REISE_001Repository.Instance;
+        public static global::N_ANLA_003.N_ANLA_003Repository repo = global::N_ANLA_003.N_ANLA_003Repository.Instance;
 
-        static Computername_einlesen instance = new Computername_einlesen();
+        static Kontrolle_Bereiche_GWG_Anlage instance = new Kontrolle_Bereiche_GWG_Anlage();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Computername_einlesen()
+        public Kontrolle_Bereiche_GWG_Anlage()
         {
-            Computername = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Computername_einlesen Instance
+        public static Kontrolle_Bereiche_GWG_Anlage Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Computername;
-
-        /// <summary>
-        /// Gets or sets the value of variable Computername.
-        /// </summary>
-        [TestVariable("bd6cddb2-0916-4b64-a214-b5b35a89c26d")]
-        public string Computername
-        {
-            get { return _Computername; }
-            set { _Computername = value; }
-        }
 
 #endregion
 
@@ -92,8 +79,6 @@ namespace Z_REISE_001.Recording
 
             Init();
 
-            Computername = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetHost();
-            
         }
 
 #region Image Feature Data
