@@ -91,6 +91,18 @@
     <Compile Include="Program.cs">
       <id>1afc626b-c6af-4212-b8e9-ef33a552618b</id>
     </Compile>
+    <Compile Include="Recordings\buchen.cs">
+      <BoundTo>e786f220-71f5-4fb5-9ac2-f773bf75c0e7</BoundTo>
+      <DependentUpon>buchen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ecb96c97-66a7-4c9b-aa0f-2f3fc7d48b05</id>
+    </Compile>
+    <Compile Include="Recordings\buchen.UserCode.cs">
+      <BoundTo>e786f220-71f5-4fb5-9ac2-f773bf75c0e7</BoundTo>
+      <DependentUpon>buchen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bd200bd7-8d1d-40a3-af32-eb736f82ec29</id>
+    </Compile>
     <Compile Include="Recordings\CloseAUT.cs">
       <DependentUpon>CloseAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -199,6 +211,18 @@
       <UserCode>true</UserCode>
       <id>03fe8cbd-54d2-4076-8d60-2d59c9fc4f43</id>
     </Compile>
+    <Compile Include="Recordings\Validierung_Eingabe_2.cs">
+      <BoundTo>d42c0748-b33a-45f8-9c5f-62ed83ea18c4</BoundTo>
+      <DependentUpon>Validierung_Eingabe_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>785aeb53-5795-4f5c-a4c6-57ab607c97b5</id>
+    </Compile>
+    <Compile Include="Recordings\Validierung_Eingabe_2.UserCode.cs">
+      <BoundTo>d42c0748-b33a-45f8-9c5f-62ed83ea18c4</BoundTo>
+      <DependentUpon>Validierung_Eingabe_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a7e6b6c9-f9be-42f6-9cb3-03ae911398e6</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -214,6 +238,11 @@
       <id>16241a38-a8ad-42ea-ad13-34fbedc44b8b</id>
       <repoid>f271d72c-fd1b-40ca-8529-17a49fb6dba7</repoid>
       <reporootid>557dff2c-feec-47f0-86ea-20ccf5bcb527</reporootid>
+    </None>
+    <None Include="Recordings\buchen.rxrec">
+      <BoundTo>16241a38-a8ad-42ea-ad13-34fbedc44b8b</BoundTo>
+      <id>e786f220-71f5-4fb5-9ac2-f773bf75c0e7</id>
+      <recordtableid>2d1ab2bb-498f-4dca-800c-934716a63bbe</recordtableid>
     </None>
     <None Include="Recordings\CloseAUT.rxrec">
       <BoundTo>16241a38-a8ad-42ea-ad13-34fbedc44b8b</BoundTo>
@@ -260,6 +289,11 @@
       <id>aba66ea5-6422-4c6f-aa68-52fa3b2523d6</id>
       <recordtableid>45a00210-ef11-410c-8e1d-0a6a50b5d2b2</recordtableid>
     </None>
+    <None Include="Recordings\Validierung_Eingabe_2.rxrec">
+      <BoundTo>16241a38-a8ad-42ea-ad13-34fbedc44b8b</BoundTo>
+      <id>d42c0748-b33a-45f8-9c5f-62ed83ea18c4</id>
+      <recordtableid>c950b0eb-c762-4bda-beed-f84b824ac4b1</recordtableid>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="B_BUCH_006.rxtmg">
@@ -275,6 +309,12 @@
     <Folder Include="Recordings">
       <id>add7b38b-8d9e-4162-a41e-0f31557d71b8</id>
     </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{76ECAD2C-14FE-4F8B-A11B-A8B37023218B}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

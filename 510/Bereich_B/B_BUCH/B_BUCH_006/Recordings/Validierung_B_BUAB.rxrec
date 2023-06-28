@@ -26,7 +26,7 @@ mode="Global">
 		<var
 		id="7ec0dde8-57f1-48a9-ae05-7bde611368b9"
 		name="ER_Nr">
-			2300007
+			2300011
 		</var>
 		<var
 		id="19793d85-675c-464d-9a22-dd56e1e4c7ae"
@@ -36,12 +36,12 @@ mode="Global">
 		<var
 		id="f1c552cd-8887-4ed4-810d-5ac73b2f3d4e"
 		name="betrag_Ust_Buab">
-			133,63
+			130,66
 		</var>
 		<var
 		id="08bbc075-a775-457c-b655-6c34c2c4c512"
 		name="Ust_Cd">
-			V10
+			V20
 		</var>
 		<var
 		id="7e9d62e8-b583-45a1-9942-492904adad98"
@@ -51,7 +51,7 @@ mode="Global">
 		<var
 		id="3f12e5db-93a1-4429-a2d7-e181eb8f4d14"
 		name="betrag">
-			1.500,00
+			1000
 		</var>
 		<var
 		id="76d2a040-e5b5-4147-8b4b-4888e6801cbf"
@@ -62,6 +62,10 @@ mode="Global">
 		id="2cc6b4d3-7563-4529-b40c-0ca7ff5d4422"
 		name="gKonto">
 			*
+		</var>
+		<var
+		id="4b489dea-5ebc-4661-ab2b-fc3c5d466208"
+		name="variable">
 		</var>
 	</variables>
 	<recorditems>
@@ -9277,35 +9281,61 @@ mode="Global">
 				yourtext
 			</matchvalue>
 		</validationitem>
-		<validationitem
-		action="AttributeEqual"
+		<getvaluerecorditem
+		attrname="WindowText"
 		enabled="True"
 		optional="False"
-		searchpropertyid="b12ebb3f-2b52-4009-a705-57c6a7ba2a70">
+		searchpropertyid="da6f6df9-33f2-4ca9-9fa7-37900512bd8c"
+		varname="variable">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="MatchValue"
-				variable="betrag">
-				</binding>
 			</bindings>
 			<info
 			id="37fb48be-de48-4e35-a58c-2c4f62ec7853"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controltypename='tblB']/element[@controlname='colBetrag']
+					/form[@controlname='tblB']/element[@controlname='colBetrag']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
+		</getvaluerecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ValidateWithoutDecimals"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="0347824b-6a2a-4dc0-92c6-0d08c52e581f">
+				<argument
+				argname="field_D1"
+				id="75947c3c-969a-43d3-a649-2102ba9738a3"
+				variable="betrag">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="D1"
+				id="29567318-8100-49c3-aeb0-e0fbc2b3022d"
+				variable="variable">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"

@@ -160,6 +160,7 @@ namespace B_BUCH_006
             RepoItemInfo _ust_cdInfo;
             RepoItemInfo _betrag_ustInfo;
             RepoItemInfo _kontoInfo;
+            RepoItemInfo _bereicheInfo;
 
             /// <summary>
             /// Creates a new MdiBuch  folder.
@@ -176,6 +177,7 @@ namespace B_BUCH_006
                 _ust_cdInfo = new RepoItemInfo(this, "Ust_Cd", "container[@controlname='ClientArea']/container[@controlname='SubForm_frmS']/form[@controlname='frmS']/container[@controlname='ClientArea']/text[@controlname='dfUst_cd']/text[@accessiblerole='Text']", "", 30000, null, "d062dc44-1487-4425-912d-064bcc3d7d31");
                 _betrag_ustInfo = new RepoItemInfo(this, "Betrag_ust", "container[@controlname='ClientArea']/container[@controlname='SubForm_frmS']/form[@controlname='frmS']/container[@controlname='ClientArea']/text[@controlname='dfUstbetrag']/text[@accessiblerole='Text']", "", 30000, null, "bbb4b6c2-314d-43be-94dd-79ff5ff2faff");
                 _kontoInfo = new RepoItemInfo(this, "Konto", "container[@controlname='ClientArea']/container[@controlname='SubForm_frmS']/form[@controlname='frmS']/container[@controlname='ClientArea']/text[@controlname='dfKto_nr']/text[@accessiblename='Konto']", "", 30000, null, "eb5cd205-1074-48b3-8bc7-5d12911c6d82");
+                _bereicheInfo = new RepoItemInfo(this, "Bereiche", "container[@controlname='ClientArea']/container[@controlname='SubForm_frmS']/form[@controlname='frmS']/container[@controlname='ClientArea']/text[@controlname='dfBube_bektnr1']/text[@accessiblename='Bereiche:']", "", 30000, null, "e98091c9-68af-48aa-9273-b329c75336e9");
             }
 
             /// <summary>
@@ -415,6 +417,30 @@ namespace B_BUCH_006
                 get
                 {
                     return _kontoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Bereiche item.
+            /// </summary>
+            [RepositoryItem("e98091c9-68af-48aa-9273-b329c75336e9")]
+            public virtual Ranorex.Text Bereiche
+            {
+                get
+                {
+                    return _bereicheInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Bereiche item info.
+            /// </summary>
+            [RepositoryItemInfo("e98091c9-68af-48aa-9273-b329c75336e9")]
+            public virtual RepoItemInfo BereicheInfo
+            {
+                get
+                {
+                    return _bereicheInfo;
                 }
             }
         }

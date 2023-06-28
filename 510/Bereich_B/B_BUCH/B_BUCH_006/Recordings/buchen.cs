@@ -24,73 +24,34 @@ namespace B_BUCH_006.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Eingabe_2 recording.
+    ///The buchen recording.
     /// </summary>
-    [TestModule("084e3e6a-33d2-4b7b-88cb-c2e0a9f01208", ModuleType.Recording, 1)]
-    public partial class Eingabe_2 : ITestModule
+    [TestModule("2d1ab2bb-498f-4dca-800c-934716a63bbe", ModuleType.Recording, 1)]
+    public partial class buchen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BUCH_006.B_BUCH_006Repository repository.
         /// </summary>
         public static global::B_BUCH_006.B_BUCH_006Repository repo = global::B_BUCH_006.B_BUCH_006Repository.Instance;
 
-        static Eingabe_2 instance = new Eingabe_2();
+        static buchen instance = new buchen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Eingabe_2()
+        public buchen()
         {
-            konto = "5704";
-            ust_cd = "V20";
-            bereiche = "10";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Eingabe_2 Instance
+        public static buchen Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _konto;
-
-        /// <summary>
-        /// Gets or sets the value of variable konto.
-        /// </summary>
-        [TestVariable("ebd5eac5-7956-4d67-aff2-beea38cd9c14")]
-        public string konto
-        {
-            get { return _konto; }
-            set { _konto = value; }
-        }
-
-        string _ust_cd;
-
-        /// <summary>
-        /// Gets or sets the value of variable ust_cd.
-        /// </summary>
-        [TestVariable("d9ee0428-6ebb-448e-8528-4e44677fdd05")]
-        public string ust_cd
-        {
-            get { return _ust_cd; }
-            set { _ust_cd = value; }
-        }
-
-        string _bereiche;
-
-        /// <summary>
-        /// Gets or sets the value of variable bereiche.
-        /// </summary>
-        [TestVariable("2d4bdbe6-3fa3-4867-89e4-ccf010eb3bd2")]
-        public string bereiche
-        {
-            get { return _bereiche; }
-            set { _bereiche = value; }
-        }
 
 #endregion
 
@@ -122,14 +83,8 @@ namespace B_BUCH_006.Recordings
             repo.MdiBuch.Self.EnsureVisible();
             Keyboard.Press("{F12}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$konto' with focus on 'MdiBuch.Konto'.", repo.MdiBuch.KontoInfo, new RecordItemIndex(1));
-            repo.MdiBuch.Konto.PressKeys(konto);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ust_cd' with focus on 'MdiBuch.Ust_Cd'.", repo.MdiBuch.Ust_CdInfo, new RecordItemIndex(2));
-            repo.MdiBuch.Ust_Cd.PressKeys(ust_cd);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$bereiche' with focus on 'MdiBuch.Bereiche'.", repo.MdiBuch.BereicheInfo, new RecordItemIndex(3));
-            repo.MdiBuch.Bereiche.PressKeys(bereiche);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(1));
+            repo.DlgMessageBox.Button0.Click();
             
         }
 
