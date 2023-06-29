@@ -42,7 +42,7 @@ namespace B_BUCH_006.Recordings
         public Eingabe()
         {
             lieferant = "303112";
-            ER_Nr = "2300007";
+            ER_Nr = "2300011";
         }
 
         /// <summary>

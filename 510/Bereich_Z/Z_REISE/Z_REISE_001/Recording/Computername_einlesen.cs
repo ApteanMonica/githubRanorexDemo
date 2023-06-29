@@ -20,38 +20,51 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace N_ANLA_003.Recordings
+namespace Z_REISE_001.Recording
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT recording.
+    ///The Computername_einlesen recording.
     /// </summary>
-    [TestModule("9857691a-dcc0-47cb-8d18-81d612c1b01f", ModuleType.Recording, 1)]
-    public partial class CloseAUT : ITestModule
+    [TestModule("fb4764c2-96d4-465f-b545-41a30837c045", ModuleType.Recording, 1)]
+    public partial class Computername_einlesen : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::N_ANLA_003.N_ANLA_003Repository repository.
+        /// Holds an instance of the global::Z_REISE_001.Z_REISE_001Repository repository.
         /// </summary>
-        public static global::N_ANLA_003.N_ANLA_003Repository repo = global::N_ANLA_003.N_ANLA_003Repository.Instance;
+        public static global::Z_REISE_001.Z_REISE_001Repository repo = global::Z_REISE_001.Z_REISE_001Repository.Instance;
 
-        static CloseAUT instance = new CloseAUT();
+        static Computername_einlesen instance = new Computername_einlesen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT()
+        public Computername_einlesen()
         {
+            Computername = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT Instance
+        public static Computername_einlesen Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _Computername;
+
+        /// <summary>
+        /// Gets or sets the value of variable Computername.
+        /// </summary>
+        [TestVariable("bd6cddb2-0916-4b64-a214-b5b35a89c26d")]
+        public string Computername
+        {
+            get { return _Computername; }
+            set { _Computername = value; }
+        }
 
 #endregion
 
@@ -79,8 +92,7 @@ namespace N_ANLA_003.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmAnla.TitleBar100AVZAnlagen'.", repo.FrmAnla.TitleBar100AVZAnlagenInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FrmAnla.TitleBar100AVZAnlagen, new Duration(0));
+            Computername = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetHost();
             
         }
 

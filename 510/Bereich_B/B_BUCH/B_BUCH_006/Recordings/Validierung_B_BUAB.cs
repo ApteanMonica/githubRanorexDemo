@@ -41,14 +41,15 @@ namespace B_BUCH_006.Recordings
         /// </summary>
         public Validierung_B_BUAB()
         {
-            ER_Nr = "2300007";
+            ER_Nr = "2300011";
             lieferant = "303112";
-            betrag_Ust_Buab = "133,63";
-            Ust_Cd = "V10";
+            betrag_Ust_Buab = "130,66";
+            Ust_Cd = "V20";
             konto = "5704";
-            betrag = "1.500,00";
+            betrag = "1000";
             aufteilg_Cd = "QS_2";
             gKonto = "*";
+            variable = "";
         }
 
         /// <summary>
@@ -157,6 +158,18 @@ namespace B_BUCH_006.Recordings
             set { _gKonto = value; }
         }
 
+        string _variable;
+
+        /// <summary>
+        /// Gets or sets the value of variable variable.
+        /// </summary>
+        [TestVariable("4b489dea-5ebc-4661-ab2b-fc3c5d466208")]
+        public string variable
+        {
+            get { return _variable; }
+            set { _variable = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -207,13 +220,15 @@ namespace B_BUCH_006.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$gKonto) on item 'TblB.ColGKtoNr'.", repo.TblB.ColGKtoNrInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.TblB.ColGKtoNrInfo, "Text", gKonto);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$betrag) on item 'TblB.ColBetrag'.", repo.TblB.ColBetragInfo, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.TblB.ColBetragInfo, "Text", betrag);
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'WindowText' from item 'TblB.ColBetrag' and assigning its value to variable 'variable'.", repo.TblB.ColBetragInfo, new RecordItemIndex(8));
+            variable = repo.TblB.ColBetrag.Element.GetAttributeValueText("WindowText");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$konto) on item 'TblB1.ColKtoNrRow2'.", repo.TblB1.ColKtoNrRow2Info, new RecordItemIndex(9));
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateWithoutDecimals(betrag, variable);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$konto) on item 'TblB1.ColKtoNrRow2'.", repo.TblB1.ColKtoNrRow2Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.TblB1.ColKtoNrRow2Info, "Text", konto);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$aufteilg_Cd) on item 'TblB.ColKtbeNrRow2'.", repo.TblB.ColKtbeNrRow2Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$aufteilg_Cd) on item 'TblB.ColKtbeNrRow2'.", repo.TblB.ColKtbeNrRow2Info, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.TblB.ColKtbeNrRow2Info, "Text", aufteilg_Cd);
             
         }

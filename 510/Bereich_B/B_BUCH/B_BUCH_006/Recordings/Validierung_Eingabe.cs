@@ -41,13 +41,15 @@ namespace B_BUCH_006.Recordings
         /// </summary>
         public Validierung_Eingabe()
         {
-            ER_Nr = "2300007";
+            ER_Nr = "2300011";
             lieferant = "303112";
-            betrag = "1.500,00";
+            betrag = "800";
             aufteilg_Cd = "QS_2";
-            Ust_Cd = "V10";
-            betrag_Ust = "136,36";
+            Ust_Cd = "V20";
+            betrag_Ust = "133,33";
             konto = "5704";
+            erbu_betrag = "1000";
+            variable = "";
         }
 
         /// <summary>
@@ -144,6 +146,30 @@ namespace B_BUCH_006.Recordings
             set { _konto = value; }
         }
 
+        string _erbu_betrag;
+
+        /// <summary>
+        /// Gets or sets the value of variable erbu_betrag.
+        /// </summary>
+        [TestVariable("4c1c7e6b-875c-4acc-b874-5ab1e0724abb")]
+        public string erbu_betrag
+        {
+            get { return _erbu_betrag; }
+            set { _erbu_betrag = value; }
+        }
+
+        string _variable;
+
+        /// <summary>
+        /// Gets or sets the value of variable variable.
+        /// </summary>
+        [TestVariable("1d8f8900-7f9b-40d8-a3b1-64e0c20c82bd")]
+        public string variable
+        {
+            get { return _variable; }
+            set { _variable = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -179,22 +205,26 @@ namespace B_BUCH_006.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$lieferant) on item 'MdiBuch.DfAdrNrU'.", repo.MdiBuch.DfAdrNrUInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.MdiBuch.DfAdrNrUInfo, "Text", lieferant);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$betrag) on item 'TblErbu.ColErbuBetragRow1'.", repo.TblErbu.ColErbuBetragRow1Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.TblErbu.ColErbuBetragRow1Info, "Text", betrag);
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblErbu.ColErbuBetragRow1' and assigning its value to variable 'variable'.", repo.TblErbu.ColErbuBetragRow1Info, new RecordItemIndex(3));
+            variable = repo.TblErbu.ColErbuBetragRow1.Element.GetAttributeValueText("Text");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$betrag) on item 'MdiBuch.Betrag'.", repo.MdiBuch.BetragInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.MdiBuch.BetragInfo, "Text", betrag);
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateWithoutDecimals(erbu_betrag, variable);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$aufteilg_Cd) on item 'MdiBuch.AufteilgCd'.", repo.MdiBuch.AufteilgCdInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'MdiBuch.Betrag' and assigning its value to variable 'variable'.", repo.MdiBuch.BetragInfo, new RecordItemIndex(5));
+            variable = repo.MdiBuch.Betrag.Element.GetAttributeValueText("Text");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateWithoutDecimals(betrag, variable);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$aufteilg_Cd) on item 'MdiBuch.AufteilgCd'.", repo.MdiBuch.AufteilgCdInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.MdiBuch.AufteilgCdInfo, "Text", aufteilg_Cd);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ust_Cd) on item 'MdiBuch.Ust_Cd'.", repo.MdiBuch.Ust_CdInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ust_Cd) on item 'MdiBuch.Ust_Cd'.", repo.MdiBuch.Ust_CdInfo, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.MdiBuch.Ust_CdInfo, "Text", Ust_Cd);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$betrag_Ust) on item 'MdiBuch.Betrag_ust'.", repo.MdiBuch.Betrag_ustInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$betrag_Ust) on item 'MdiBuch.Betrag_ust'.", repo.MdiBuch.Betrag_ustInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.MdiBuch.Betrag_ustInfo, "Text", betrag_Ust);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$konto) on item 'MdiBuch.Konto'.", repo.MdiBuch.KontoInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$konto) on item 'MdiBuch.Konto'.", repo.MdiBuch.KontoInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.MdiBuch.KontoInfo, "Text", konto);
             
         }

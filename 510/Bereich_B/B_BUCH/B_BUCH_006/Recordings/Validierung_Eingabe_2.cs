@@ -24,32 +24,32 @@ namespace B_BUCH_006.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Eingabe_2 recording.
+    ///The Validierung_Eingabe_2 recording.
     /// </summary>
-    [TestModule("084e3e6a-33d2-4b7b-88cb-c2e0a9f01208", ModuleType.Recording, 1)]
-    public partial class Eingabe_2 : ITestModule
+    [TestModule("c950b0eb-c762-4bda-beed-f84b824ac4b1", ModuleType.Recording, 1)]
+    public partial class Validierung_Eingabe_2 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BUCH_006.B_BUCH_006Repository repository.
         /// </summary>
         public static global::B_BUCH_006.B_BUCH_006Repository repo = global::B_BUCH_006.B_BUCH_006Repository.Instance;
 
-        static Eingabe_2 instance = new Eingabe_2();
+        static Validierung_Eingabe_2 instance = new Validierung_Eingabe_2();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Eingabe_2()
+        public Validierung_Eingabe_2()
         {
             konto = "5704";
-            ust_cd = "V20";
+            ust_cd = "V10";
             bereiche = "10";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Eingabe_2 Instance
+        public static Validierung_Eingabe_2 Instance
         {
             get { return instance; }
         }
@@ -61,7 +61,7 @@ namespace B_BUCH_006.Recordings
         /// <summary>
         /// Gets or sets the value of variable konto.
         /// </summary>
-        [TestVariable("ebd5eac5-7956-4d67-aff2-beea38cd9c14")]
+        [TestVariable("40de8946-3607-465a-80b6-048766a228c6")]
         public string konto
         {
             get { return _konto; }
@@ -73,7 +73,7 @@ namespace B_BUCH_006.Recordings
         /// <summary>
         /// Gets or sets the value of variable ust_cd.
         /// </summary>
-        [TestVariable("d9ee0428-6ebb-448e-8528-4e44677fdd05")]
+        [TestVariable("074287cd-7862-4ae3-91ea-93c94f29f8c3")]
         public string ust_cd
         {
             get { return _ust_cd; }
@@ -85,7 +85,7 @@ namespace B_BUCH_006.Recordings
         /// <summary>
         /// Gets or sets the value of variable bereiche.
         /// </summary>
-        [TestVariable("2d4bdbe6-3fa3-4867-89e4-ccf010eb3bd2")]
+        [TestVariable("da580907-612f-4c91-8b39-13aa77331b59")]
         public string bereiche
         {
             get { return _bereiche; }
@@ -118,18 +118,14 @@ namespace B_BUCH_006.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}' with focus on 'MdiBuch'.", repo.MdiBuch.SelfInfo, new RecordItemIndex(0));
-            repo.MdiBuch.Self.EnsureVisible();
-            Keyboard.Press("{F12}");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$konto) on item 'MdiBuch.Konto'.", repo.MdiBuch.KontoInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.MdiBuch.KontoInfo, "Text", konto);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$konto' with focus on 'MdiBuch.Konto'.", repo.MdiBuch.KontoInfo, new RecordItemIndex(1));
-            repo.MdiBuch.Konto.PressKeys(konto);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ust_cd) on item 'MdiBuch.Ust_Cd'.", repo.MdiBuch.Ust_CdInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.MdiBuch.Ust_CdInfo, "Text", ust_cd);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ust_cd' with focus on 'MdiBuch.Ust_Cd'.", repo.MdiBuch.Ust_CdInfo, new RecordItemIndex(2));
-            repo.MdiBuch.Ust_Cd.PressKeys(ust_cd);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$bereiche' with focus on 'MdiBuch.Bereiche'.", repo.MdiBuch.BereicheInfo, new RecordItemIndex(3));
-            repo.MdiBuch.Bereiche.PressKeys(bereiche);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$bereiche) on item 'MdiBuch.Bereiche'.", repo.MdiBuch.BereicheInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.MdiBuch.BereicheInfo, "Text", bereiche);
             
         }
 

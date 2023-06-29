@@ -2,6 +2,31 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<smartfoldernode
+			id="012d17de-b124-435e-9b1d-b8c73b543bbb"
+			name="IF-Condtition_511_521">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="3ed4b4a0-8af8-46db-9399-19cb63669295">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT2">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="01c97550-6989-4388-a613-b4652981674e"
 			name="Erfassung_Reg_Wege"
@@ -206,6 +231,10 @@
 					name="Text_Beschreibung"
 					value="Besuch Musterkunde">
 					</param>
+					<param
+					name="Computername"
+					value="">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -288,6 +317,10 @@
 			ref="a8266cad-56a3-4e68-96d0-dca38fda004d"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="87078421-a058-438d-9fc7-8ecff593c03d"
+			name="TestCase">
+			</testcase>
 			<testmodule
 			id="89bb0d0d-0ff7-474a-b2c0-ffea0b8b3b0f"
 			name="Ueberpruefung_erfasste_Daten_Teil_2"
@@ -423,6 +456,31 @@
 			ref="df53f311-3673-460c-9e55-3061329d68c5"
 			type="Recording">
 			</testmodule>
+			<smartfoldernode
+			id="d7594d2b-ad2e-4b4b-81a6-ef89b71b6416"
+			name="IF-Condition_511;_521">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="3ed4b4a0-8af8-46db-9399-19cb63669295">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT2">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="db4f5926-5c91-416c-b3ea-ee6f133c93e9"
 			name="Erfassung_Reg_Allgemein"
@@ -473,7 +531,7 @@
 			</setup>
 			<testcase
 			id="f659da75-31a2-47c0-b799-6861444d3654"
-			name="TestCase">
+			name="Testfall_Reiseart_anlegen">
 			</testcase>
 			<testmodule
 			id="f96839df-b5c4-4c79-84bf-7cc97b7b87b9"
@@ -550,6 +608,20 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<testmodule
+			id="ffcfa85c-a936-49e8-9dd6-3cb29a386ad0"
+			name="Computername_einlesen"
+			ref="fb4764c2-96d4-465f-b545-41a30837c045"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Computername"
+					datasourceid="3ed4b4a0-8af8-46db-9399-19cb63669295"
+					variableid="bd6cddb2-0916-4b64-a214-b5b35a89c26d"
+					variablename="Computername">
+					</var>
+				</databinding>
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -559,101 +631,117 @@
 				id="3ed4b4a0-8af8-46db-9399-19cb63669295"
 				name="Z_REISE_001">
 					<testcase
-					id="f659da75-31a2-47c0-b799-6861444d3654"
+					id="87078421-a058-438d-9fc7-8ecff593c03d"
 					name="TestCase">
-						<setup
-						id="c1e6fdfe-67ed-416e-9a3a-1d1506781f4d"
-						name="setup">
-							<testmodule
-							id="379917f5-76ba-4165-879d-b83d7ec58085"
-							name="Start_AUT_1">
-							</testmodule>
-						</setup>
 						<testmodule
-						id="918ca1d2-2b0e-4655-970b-73855f84408c"
-						name="Reiseart_erfassen">
+						id="ffcfa85c-a936-49e8-9dd6-3cb29a386ad0"
+						name="Computername_einlesen">
 						</testmodule>
-						<testmodule
-						id="b14ad255-05c0-438d-9375-eebc8831987b"
-						name="Reiseart_erfassen_Teil_2">
-						</testmodule>
-						<testmodule
-						id="f96839df-b5c4-4c79-84bf-7cc97b7b87b9"
-						name="UEberpruefung_erfasste_Daten">
-						</testmodule>
-						<testmodule
-						id="89bb0d0d-0ff7-474a-b2c0-ffea0b8b3b0f"
-						name="Ueberpruefung_erfasste_Daten_Teil_2">
-						</testmodule>
-						<teardown
-						id="2e3849cc-6067-4f44-a2fb-b946a6eceaa5"
-						name="teardown">
-							<testmodule
-							id="072d26af-c453-4598-ad6d-0fb010694c2f"
-							name="Close_AUT_1">
-							</testmodule>
-						</teardown>
 					</testcase>
-					<testcase
-					id="aaa9a494-583a-4821-a096-2418de2fae54"
-					name="Reiseerfassung">
-						<setup
-						id="e4e0ad54-3505-4f22-850f-92161b55f81c"
-						name="setup">
+					<smartfoldernode
+					id="d7594d2b-ad2e-4b4b-81a6-ef89b71b6416"
+					name="IF-Condition_511;_521">
+						<testcase
+						id="f659da75-31a2-47c0-b799-6861444d3654"
+						name="Testfall_Reiseart_anlegen">
+							<setup
+							id="c1e6fdfe-67ed-416e-9a3a-1d1506781f4d"
+							name="setup">
+								<testmodule
+								id="379917f5-76ba-4165-879d-b83d7ec58085"
+								name="Start_AUT_1">
+								</testmodule>
+							</setup>
 							<testmodule
-							id="44e49801-97e1-4be4-b5c4-237f6db5d5c5"
-							name="Start_AUT_2">
+							id="918ca1d2-2b0e-4655-970b-73855f84408c"
+							name="Reiseart_erfassen">
 							</testmodule>
-						</setup>
-						<testmodule
-						id="db4f5926-5c91-416c-b3ea-ee6f133c93e9"
-						name="Erfassung_Reg_Allgemein">
-						</testmodule>
-						<testmodule
-						id="6a93a696-b0da-4f4f-b4a9-629462184359"
-						name="Ueberpruefung_Eingabe_Allgemein">
-						</testmodule>
-						<testmodule
-						id="01c97550-6989-4388-a613-b4652981674e"
-						name="Erfassung_Reg_Wege">
-						</testmodule>
-						<testmodule
-						id="2696e6d3-9902-4584-bb1e-b0277b932ddd"
-						name="Erfassung_Reg_Wege_2">
-						</testmodule>
-						<testmodule
-						id="af299b26-66ed-458e-92c0-69a545d52089"
-						name="Ueberpruefung_Reg_Wege">
-						</testmodule>
-						<testmodule
-						id="5699f04d-1412-4f8e-b932-18e2ca4f7dfb"
-						name="Erfassung_Reg_Belege">
-						</testmodule>
-						<testmodule
-						id="ca851444-e285-497d-bb6f-f610df577186"
-						name="Ueberpruefung_1_Belegerfassung">
-						</testmodule>
-						<testmodule
-						id="b064c165-8de9-44f6-ad7b-410486fc09fe"
-						name="Erfassung_2_Beleg">
-						</testmodule>
-						<testmodule
-						id="82711bb2-74b9-41a8-bbfa-f86eda0ef49c"
-						name="Ueberpruefung_Beleg_2">
-						</testmodule>
-						<testmodule
-						id="765e9a0c-f8d8-46ac-b3d1-e0a39e7f232b"
-						name="Abrechnung">
-						</testmodule>
-						<teardown
-						id="fcaa15da-0064-4340-95b1-0b1c2eeb963f"
-						name="teardown">
 							<testmodule
-							id="8ad272bf-e314-4a32-a0ba-d78ff94216a3"
-							name="Close_AUT_2">
+							id="b14ad255-05c0-438d-9375-eebc8831987b"
+							name="Reiseart_erfassen_Teil_2">
 							</testmodule>
-						</teardown>
-					</testcase>
+							<testmodule
+							id="f96839df-b5c4-4c79-84bf-7cc97b7b87b9"
+							name="UEberpruefung_erfasste_Daten">
+							</testmodule>
+							<testmodule
+							id="89bb0d0d-0ff7-474a-b2c0-ffea0b8b3b0f"
+							name="Ueberpruefung_erfasste_Daten_Teil_2">
+							</testmodule>
+							<teardown
+							id="2e3849cc-6067-4f44-a2fb-b946a6eceaa5"
+							name="teardown">
+								<testmodule
+								id="072d26af-c453-4598-ad6d-0fb010694c2f"
+								name="Close_AUT_1">
+								</testmodule>
+							</teardown>
+						</testcase>
+					</smartfoldernode>
+					<smartfoldernode
+					id="012d17de-b124-435e-9b1d-b8c73b543bbb"
+					name="IF-Condtition_511_521">
+						<testcase
+						id="aaa9a494-583a-4821-a096-2418de2fae54"
+						name="Reiseerfassung">
+							<setup
+							id="e4e0ad54-3505-4f22-850f-92161b55f81c"
+							name="setup">
+								<testmodule
+								id="44e49801-97e1-4be4-b5c4-237f6db5d5c5"
+								name="Start_AUT_2">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="db4f5926-5c91-416c-b3ea-ee6f133c93e9"
+							name="Erfassung_Reg_Allgemein">
+							</testmodule>
+							<testmodule
+							id="6a93a696-b0da-4f4f-b4a9-629462184359"
+							name="Ueberpruefung_Eingabe_Allgemein">
+							</testmodule>
+							<testmodule
+							id="01c97550-6989-4388-a613-b4652981674e"
+							name="Erfassung_Reg_Wege">
+							</testmodule>
+							<testmodule
+							id="2696e6d3-9902-4584-bb1e-b0277b932ddd"
+							name="Erfassung_Reg_Wege_2">
+							</testmodule>
+							<testmodule
+							id="af299b26-66ed-458e-92c0-69a545d52089"
+							name="Ueberpruefung_Reg_Wege">
+							</testmodule>
+							<testmodule
+							id="5699f04d-1412-4f8e-b932-18e2ca4f7dfb"
+							name="Erfassung_Reg_Belege">
+							</testmodule>
+							<testmodule
+							id="ca851444-e285-497d-bb6f-f610df577186"
+							name="Ueberpruefung_1_Belegerfassung">
+							</testmodule>
+							<testmodule
+							id="b064c165-8de9-44f6-ad7b-410486fc09fe"
+							name="Erfassung_2_Beleg">
+							</testmodule>
+							<testmodule
+							id="82711bb2-74b9-41a8-bbfa-f86eda0ef49c"
+							name="Ueberpruefung_Beleg_2">
+							</testmodule>
+							<testmodule
+							id="765e9a0c-f8d8-46ac-b3d1-e0a39e7f232b"
+							name="Abrechnung">
+							</testmodule>
+							<teardown
+							id="fcaa15da-0064-4340-95b1-0b1c2eeb963f"
+							name="teardown">
+								<testmodule
+								id="8ad272bf-e314-4a32-a0ba-d78ff94216a3"
+								name="Close_AUT_2">
+								</testmodule>
+							</teardown>
+						</testcase>
+					</smartfoldernode>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -665,10 +753,19 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="012d17de-b124-435e-9b1d-b8c73b543bbb">
+			</testcontainer>
+			<testcontainer
 			id="3ed4b4a0-8af8-46db-9399-19cb63669295">
 			</testcontainer>
 			<testcontainer
+			id="87078421-a058-438d-9fc7-8ecff593c03d">
+			</testcontainer>
+			<testcontainer
 			id="aaa9a494-583a-4821-a096-2418de2fae54">
+			</testcontainer>
+			<testcontainer
+			id="d7594d2b-ad2e-4b4b-81a6-ef89b71b6416">
 			</testcontainer>
 			<testcontainer
 			id="f659da75-31a2-47c0-b799-6861444d3654">

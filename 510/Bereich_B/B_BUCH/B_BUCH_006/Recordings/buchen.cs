@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace N_ANLA_003.Recordings
+namespace B_BUCH_006.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT recording.
+    ///The buchen recording.
     /// </summary>
-    [TestModule("9857691a-dcc0-47cb-8d18-81d612c1b01f", ModuleType.Recording, 1)]
-    public partial class CloseAUT : ITestModule
+    [TestModule("2d1ab2bb-498f-4dca-800c-934716a63bbe", ModuleType.Recording, 1)]
+    public partial class buchen : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::N_ANLA_003.N_ANLA_003Repository repository.
+        /// Holds an instance of the global::B_BUCH_006.B_BUCH_006Repository repository.
         /// </summary>
-        public static global::N_ANLA_003.N_ANLA_003Repository repo = global::N_ANLA_003.N_ANLA_003Repository.Instance;
+        public static global::B_BUCH_006.B_BUCH_006Repository repo = global::B_BUCH_006.B_BUCH_006Repository.Instance;
 
-        static CloseAUT instance = new CloseAUT();
+        static buchen instance = new buchen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT()
+        public buchen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT Instance
+        public static buchen Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,12 @@ namespace N_ANLA_003.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmAnla.TitleBar100AVZAnlagen'.", repo.FrmAnla.TitleBar100AVZAnlagenInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FrmAnla.TitleBar100AVZAnlagen, new Duration(0));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}' with focus on 'MdiBuch'.", repo.MdiBuch.SelfInfo, new RecordItemIndex(0));
+            repo.MdiBuch.Self.EnsureVisible();
+            Keyboard.Press("{F12}");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(1));
+            repo.DlgMessageBox.Button0.Click();
             
         }
 

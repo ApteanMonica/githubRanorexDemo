@@ -13,6 +13,7 @@
     <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
     <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>44f25347-bb80-4d47-8015-4c497cf29b51</projectdefaultrepository>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -150,6 +151,18 @@
       <UserCode>true</UserCode>
       <id>6f6b2a88-dc41-4e12-8806-e8bc287a50bc</id>
     </Compile>
+    <Compile Include="Recordings\Kontrolle_Bereiche_GWG_Anlage.cs">
+      <BoundTo>58ba6962-a060-498d-b53b-95a61c458ebe</BoundTo>
+      <DependentUpon>Kontrolle_Bereiche_GWG_Anlage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dbc174a4-017a-42e2-8a7a-0e2126cd7d8a</id>
+    </Compile>
+    <Compile Include="Recordings\Kontrolle_Bereiche_GWG_Anlage.UserCode.cs">
+      <BoundTo>58ba6962-a060-498d-b53b-95a61c458ebe</BoundTo>
+      <DependentUpon>Kontrolle_Bereiche_GWG_Anlage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ddb7cde9-7d30-4d4e-97e1-b425d7ed5e6b</id>
+    </Compile>
     <Compile Include="Recordings\Kontrolle_GWG_Uebernahme.cs">
       <BoundTo>491dded3-8912-4d96-8ff8-c4bba8553176</BoundTo>
       <DependentUpon>Kontrolle_GWG_Uebernahme.rxrec</DependentUpon>
@@ -222,6 +235,18 @@
       <id>249ca878-9944-4aa3-8760-6c8f4d488897</id>
       <BoundTo>b87eefaf-9264-43ea-95a4-039775daabac</BoundTo>
     </Compile>
+    <Compile Include="Recordings\Ueberpruefung_Uebernahme_selber_GWG_Buchung.cs">
+      <BoundTo>cb8c2bc7-4425-420b-802a-332c47fea669</BoundTo>
+      <DependentUpon>Ueberpruefung_Uebernahme_selber_GWG_Buchung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>94ccebe4-8e2f-431e-9c70-eb3e9e82d6a7</id>
+    </Compile>
+    <Compile Include="Recordings\Ueberpruefung_Uebernahme_selber_GWG_Buchung.UserCode.cs">
+      <BoundTo>cb8c2bc7-4425-420b-802a-332c47fea669</BoundTo>
+      <DependentUpon>Ueberpruefung_Uebernahme_selber_GWG_Buchung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>97dbbd0f-500f-42a8-ad45-05d6ae465093</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -263,6 +288,11 @@
       <id>cd6564c8-85a7-470e-a9c8-6b3de2fc1ecf</id>
       <recordtableid>93c82bde-97b8-45b0-bba7-b44ff236767e</recordtableid>
     </None>
+    <None Include="Recordings\Kontrolle_Bereiche_GWG_Anlage.rxrec">
+      <BoundTo>44f25347-bb80-4d47-8015-4c497cf29b51</BoundTo>
+      <id>58ba6962-a060-498d-b53b-95a61c458ebe</id>
+      <recordtableid>0fbc7708-cc70-4117-9ab3-57195069136c</recordtableid>
+    </None>
     <None Include="Recordings\Kontrolle_GWG_Uebernahme.rxrec">
       <BoundTo>44f25347-bb80-4d47-8015-4c497cf29b51</BoundTo>
       <id>491dded3-8912-4d96-8ff8-c4bba8553176</id>
@@ -292,6 +322,11 @@
       <BoundTo>44f25347-bb80-4d47-8015-4c497cf29b51</BoundTo>
       <id>b87eefaf-9264-43ea-95a4-039775daabac</id>
       <recordtableid>92841850-0a89-432c-935d-629f55610db4</recordtableid>
+    </None>
+    <None Include="Recordings\Ueberpruefung_Uebernahme_selber_GWG_Buchung.rxrec">
+      <BoundTo>44f25347-bb80-4d47-8015-4c497cf29b51</BoundTo>
+      <id>cb8c2bc7-4425-420b-802a-332c47fea669</id>
+      <recordtableid>6b41c250-ca5d-4643-ad4f-adbcbb651628</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
