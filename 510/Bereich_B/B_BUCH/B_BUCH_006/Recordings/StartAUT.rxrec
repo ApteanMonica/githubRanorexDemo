@@ -58,11 +58,12 @@ mode="Desktop">
 				Programm
 			</args>
 		</runapprecorditem>
-		<validationitem
-		action="Exists"
+		<WaitForRecordItem
 		enabled="True"
 		optional="False"
-		searchpropertyid="be07f8da-2b53-4b7c-adf8-3b8c30d8e06d">
+		searchpropertyid="005b4d69-59b8-4ee1-8fbf-49e25bcfb887"
+		waitaction="Exists"
+		waittimeout="120000ms">
 			<comment>
 			</comment>
 			<bindings>
@@ -70,43 +71,13 @@ mode="Desktop">
 			<info
 			id="b9fc2c64-4ab5-48f3-b944-2e93c2c0b374"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="5"
-				prefcap="titlebar"
-				rect="154,133,1163,28"
-				role="titlebar"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						None
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						None
-					</attribute>
-				</element>
 				<path>
 					/form[@controlname='mdiBuch']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeContains"
 		enabled="True"

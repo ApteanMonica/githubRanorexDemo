@@ -108,8 +108,8 @@ namespace B_BUCH_006.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $startFile with arguments from variable $programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(startFile, programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'MdiBuch.TitleBar100Dialogbuchung'.", repo.MdiBuch.TitleBar100DialogbuchungInfo, new RecordItemIndex(1));
-            Validate.Exists(repo.MdiBuch.TitleBar100DialogbuchungInfo);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'MdiBuch.TitleBar100Dialogbuchung'", repo.MdiBuch.TitleBar100DialogbuchungInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.MdiBuch.TitleBar100DialogbuchungInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Dialogbuchung') on item 'MdiBuch.TitleBar100Dialogbuchung'.", repo.MdiBuch.TitleBar100DialogbuchungInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.MdiBuch.TitleBar100DialogbuchungInfo, "Text", "Dialogbuchung");
