@@ -42,7 +42,7 @@ namespace N_ANLA_003.Recordings
         public Fibu_Uebernahme_Teil_1()
         {
             Anlage_1 = "003_01";
-            Bezeichnung_Anlage_1 = "Anlage_003_01";
+            Bezeichnung_Anlage_1 = "N_ANLA_003_01";
         }
 
         /// <summary>
@@ -150,16 +150,6 @@ namespace N_ANLA_003.Recordings
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anlage_1) on item 'DlgZugang.DfAnlaNr'.", repo.DlgZugang.DfAnlaNrInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.DlgZugang.DfAnlaNrInfo, "Text", Anlage_1);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Bezeichnung_Anlage_1' with focus on 'DlgZugang.DfAnlaBez'.", repo.DlgZugang.DfAnlaBezInfo, new RecordItemIndex(15));
-            repo.DlgZugang.DfAnlaBez.PressKeys(Bezeichnung_Anlage_1);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'DlgZugang.DfAnlaBez'.", repo.DlgZugang.DfAnlaBezInfo, new RecordItemIndex(16));
-            Keyboard.PrepareFocus(repo.DlgZugang.DfAnlaBez);
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Bezeichnung_Anlage_1) on item 'DlgZugang.DfAnlaBez'.", repo.DlgZugang.DfAnlaBezInfo, new RecordItemIndex(17));
-            Validate.AttributeEqual(repo.DlgZugang.DfAnlaBezInfo, "Text", Bezeichnung_Anlage_1);
             
         }
 

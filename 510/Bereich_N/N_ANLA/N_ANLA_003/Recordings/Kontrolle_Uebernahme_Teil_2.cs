@@ -123,22 +123,16 @@ namespace N_ANLA_003.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgZugang.TpWerte.CbKeineAHK'.", repo.DlgZugang.TpWerte.CbKeineAHKInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.DlgZugang.TpWerte.CbKeineAHKInfo, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgZugang.TpWerte.CmbAnla1AfaBez' at Center.", repo.DlgZugang.TpWerte.CmbAnla1AfaBezInfo, new RecordItemIndex(6));
-            repo.DlgZugang.TpWerte.CmbAnla1AfaBez.Click();
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Return}' with focus on 'DlgZugang.TpWerte.CmbAnla1AfaBez'.", repo.DlgZugang.TpWerte.CmbAnla1AfaBezInfo, new RecordItemIndex(7));
-            repo.DlgZugang.TpWerte.CmbAnla1AfaBez.PressKeys("{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Return}");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Linear, monatlich') on item 'DlgZugang.TpWerte.CmbAnla1AfaBez'.", repo.DlgZugang.TpWerte.CmbAnla1AfaBezInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Linear, monatlich') on item 'DlgZugang.TpWerte.CmbAnla1AfaBez'.", repo.DlgZugang.TpWerte.CmbAnla1AfaBezInfo, new RecordItemIndex(6));
             Validate.AttributeContains(repo.DlgZugang.TpWerte.CmbAnla1AfaBezInfo, "Text", "Linear, monatlich");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgZugang.TpWerte.CbAnlaKzafaber1'.", repo.DlgZugang.TpWerte.CbAnlaKzafaber1Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgZugang.TpWerte.CbAnlaKzafaber1'.", repo.DlgZugang.TpWerte.CbAnlaKzafaber1Info, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.DlgZugang.TpWerte.CbAnlaKzafaber1Info, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgZugang.TpWerte.CbAnlaKzafaber91'.", repo.DlgZugang.TpWerte.CbAnlaKzafaber91Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgZugang.TpWerte.CbAnlaKzafaber91'.", repo.DlgZugang.TpWerte.CbAnlaKzafaber91Info, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.DlgZugang.TpWerte.CbAnlaKzafaber91Info, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100AVZBuchungenZugang.WindowsForms10BUTTONApp02804c64R6A' at Center.", repo.Form100AVZBuchungenZugang.WindowsForms10BUTTONApp02804c64R6AInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100AVZBuchungenZugang.WindowsForms10BUTTONApp02804c64R6A' at Center.", repo.Form100AVZBuchungenZugang.WindowsForms10BUTTONApp02804c64R6AInfo, new RecordItemIndex(9));
             repo.Form100AVZBuchungenZugang.WindowsForms10BUTTONApp02804c64R6A.Click();
             
         }

@@ -32,6 +32,7 @@ namespace N_ANLA_003
         N_ANLA_003RepositoryFolders.DlgFibuAppFolder _dlgfibu;
         N_ANLA_003RepositoryFolders.Form100AVZBuchungenZugangAppFolder _form100avzbuchungenzugang;
         N_ANLA_003RepositoryFolders.Form100AVZAnlagenAppFolder _form100avzanlagen;
+        N_ANLA_003RepositoryFolders.List1000AppFolder _list1000;
 
         /// <summary>
         /// Gets the singleton class instance representing the N_ANLA_003Repository element repository.
@@ -53,6 +54,7 @@ namespace N_ANLA_003
             _dlgfibu = new N_ANLA_003RepositoryFolders.DlgFibuAppFolder(this);
             _form100avzbuchungenzugang = new N_ANLA_003RepositoryFolders.Form100AVZBuchungenZugangAppFolder(this);
             _form100avzanlagen = new N_ANLA_003RepositoryFolders.Form100AVZAnlagenAppFolder(this);
+            _list1000 = new N_ANLA_003RepositoryFolders.List1000AppFolder(this);
         }
 
 #region Variables
@@ -150,6 +152,15 @@ namespace N_ANLA_003
         public virtual N_ANLA_003RepositoryFolders.Form100AVZAnlagenAppFolder Form100AVZAnlagen
         {
             get { return _form100avzanlagen; }
+        }
+
+        /// <summary>
+        /// The List1000 folder.
+        /// </summary>
+        [RepositoryFolder("5a85b131-9c11-4852-a6e2-620e51c93952")]
+        public virtual N_ANLA_003RepositoryFolders.List1000AppFolder List1000
+        {
+            get { return _list1000; }
         }
     }
 
@@ -1257,6 +1268,7 @@ namespace N_ANLA_003
             RepoItemInfo _colbektnr1row1Info;
             RepoItemInfo _colanbeprozrow1Info;
             RepoItemInfo _geschaeftsjahrInfo;
+            RepoItemInfo _cbanlakzgwgInfo;
 
             /// <summary>
             /// Creates a new Form100AVZBuchungenZugang  folder.
@@ -1275,6 +1287,7 @@ namespace N_ANLA_003
                 _colbektnr1row1Info = new RepoItemInfo(this, "ColBektNr1Row1", "tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']/container[@controlname='tblAnbe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBekt_nr1 Row 1']", "", 30000, null, "9143dfbd-74c1-4e84-a285-e283dd5b8bdc");
                 _colanbeprozrow1Info = new RepoItemInfo(this, "ColAnbeProzRow1", "tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']/container[@controlname='tblAnbe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAnbe_proz Row 1']", "", 30000, null, "1d8bee3b-c9f9-424f-8d5b-a62305f1afa8");
                 _geschaeftsjahrInfo = new RepoItemInfo(this, "Geschaeftsjahr", "text[@controlname='dfGjhr_bez']/text[@accessiblename='Geschäftsjahr']", "", 30000, null, "d0170cfd-86d3-424b-838f-530df6afb67e");
+                _cbanlakzgwgInfo = new RepoItemInfo(this, "CbAnlaKzgwg", "checkbox[@controlname='cbAnla_kzgwg']", "", 30000, null, "6a745783-2b39-4a59-88d7-094b0ab98487");
             }
 
             /// <summary>
@@ -1564,6 +1577,30 @@ namespace N_ANLA_003
                     return _geschaeftsjahrInfo;
                 }
             }
+
+            /// <summary>
+            /// The CbAnlaKzgwg item.
+            /// </summary>
+            [RepositoryItem("6a745783-2b39-4a59-88d7-094b0ab98487")]
+            public virtual Ranorex.CheckBox CbAnlaKzgwg
+            {
+                get
+                {
+                    return _cbanlakzgwgInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CbAnlaKzgwg item info.
+            /// </summary>
+            [RepositoryItemInfo("6a745783-2b39-4a59-88d7-094b0ab98487")]
+            public virtual RepoItemInfo CbAnlaKzgwgInfo
+            {
+                get
+                {
+                    return _cbanlakzgwgInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -1680,6 +1717,72 @@ namespace N_ANLA_003
                 get
                 {
                     return _aktuellInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The List1000AppFolder folder.
+        /// </summary>
+        [RepositoryFolder("5a85b131-9c11-4852-a6e2-620e51c93952")]
+        public partial class List1000AppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _linearmonatlichInfo;
+
+            /// <summary>
+            /// Creates a new List1000  folder.
+            /// </summary>
+            public List1000AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("List1000", "/list[@controlid='1000']", parentFolder, 30000, null, true, "5a85b131-9c11-4852-a6e2-620e51c93952", "")
+            {
+                _linearmonatlichInfo = new RepoItemInfo(this, "LinearMonatlich", "listitem[@text='Linear, monatlich']", "", 30000, null, "357bce58-dfbc-49d7-a605-3c051626b6e3");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("5a85b131-9c11-4852-a6e2-620e51c93952")]
+            public virtual Ranorex.List Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.List>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("5a85b131-9c11-4852-a6e2-620e51c93952")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LinearMonatlich item.
+            /// </summary>
+            [RepositoryItem("357bce58-dfbc-49d7-a605-3c051626b6e3")]
+            public virtual Ranorex.ListItem LinearMonatlich
+            {
+                get
+                {
+                    return _linearmonatlichInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LinearMonatlich item info.
+            /// </summary>
+            [RepositoryItemInfo("357bce58-dfbc-49d7-a605-3c051626b6e3")]
+            public virtual RepoItemInfo LinearMonatlichInfo
+            {
+                get
+                {
+                    return _linearmonatlichInfo;
                 }
             }
         }
