@@ -106,6 +106,9 @@ namespace B_UVA_002.Recordings_Formular
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUVAZ.PbSpeichern' at Center.", repo.DlgUVAZ.PbSpeichernInfo, new RecordItemIndex(4));
             repo.DlgUVAZ.PbSpeichern.Click();
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(5));
+            Delay.Duration(2000, false);
+            
         }
 
 #region Image Feature Data

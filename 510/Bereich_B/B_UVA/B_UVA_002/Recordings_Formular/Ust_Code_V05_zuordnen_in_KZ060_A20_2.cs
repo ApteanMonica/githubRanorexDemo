@@ -93,23 +93,32 @@ namespace B_UVA_002.Recordings_Formular
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgUVAZ.TitleBar200ZuordnungUStCodes'.", repo.DlgUVAZ.TitleBar200ZuordnungUStCodesInfo, new RecordItemIndex(0));
             Validate.Exists(repo.DlgUVAZ.TitleBar200ZuordnungUStCodesInfo);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'DlgUVAZ.ColUstCdRow1' at Center.", repo.DlgUVAZ.ColUstCdRow1Info, new RecordItemIndex(1));
-            repo.DlgUVAZ.ColUstCdRow1.Click(System.Windows.Forms.MouseButtons.Right);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUVAZ.Row1Column0' at Center.", repo.DlgUVAZ.Row1Column0Info, new RecordItemIndex(1));
+            repo.DlgUVAZ.Row1Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BUVA.ZeileEinfuegen' at Center.", repo.BUVA.ZeileEinfuegenInfo, new RecordItemIndex(2));
-            repo.BUVA.ZeileEinfuegen.Click();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(2));
+            Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$Ust_CD_V05' on item 'DlgUVAZ.SomeText'.", repo.DlgUVAZ.SomeTextInfo, new RecordItemIndex(3));
-            repo.DlgUVAZ.SomeText.Element.SetAttributeValue("Text", Ust_CD_V05);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Insert}' with focus on 'DlgUVAZ.FlexGrid'.", repo.DlgUVAZ.FlexGridInfo, new RecordItemIndex(3));
+            repo.DlgUVAZ.FlexGrid.EnsureVisible();
+            Keyboard.Press("{Insert}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'DlgUVAZ.SomeText'.", repo.DlgUVAZ.SomeTextInfo, new RecordItemIndex(4));
-            Keyboard.PrepareFocus(repo.DlgUVAZ.SomeText);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgUVAZ.SomeText_Textfeld_neu_unten_sichtbar'", repo.DlgUVAZ.SomeText_Textfeld_neu_unten_sichtbarInfo, new ActionTimeout(60000), new RecordItemIndex(5));
+            repo.DlgUVAZ.SomeText_Textfeld_neu_unten_sichtbarInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Ust_CD_V05' with focus on 'DlgUVAZ.SomeText_Textfeld_neu_unten_sichtbar'.", repo.DlgUVAZ.SomeText_Textfeld_neu_unten_sichtbarInfo, new RecordItemIndex(6));
+            repo.DlgUVAZ.SomeText_Textfeld_neu_unten_sichtbar.PressKeys(Ust_CD_V05);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUVAZ.PbSpeichern' at Center.", repo.DlgUVAZ.PbSpeichernInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUVAZ.PbSpeichern' at Center.", repo.DlgUVAZ.PbSpeichernInfo, new RecordItemIndex(8));
             repo.DlgUVAZ.PbSpeichern.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgUVAZ.Zeile_mit_Ust_Cd_V05'.", repo.DlgUVAZ.Zeile_mit_Ust_Cd_V05Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgUVAZ.Zeile_mit_Ust_Cd_V05'.", repo.DlgUVAZ.Zeile_mit_Ust_Cd_V05Info, new RecordItemIndex(9));
             Validate.Exists(repo.DlgUVAZ.Zeile_mit_Ust_Cd_V05Info);
             
         }
