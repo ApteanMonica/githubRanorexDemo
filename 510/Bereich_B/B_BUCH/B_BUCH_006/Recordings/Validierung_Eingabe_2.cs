@@ -20,102 +20,76 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace X_MUSTER_013.Recordings
+namespace B_BUCH_006.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The select2Datei recording.
+    ///The Validierung_Eingabe_2 recording.
     /// </summary>
-    [TestModule("04f3874c-8af5-4e8f-b075-580ca5951194", ModuleType.Recording, 1)]
-    public partial class select2Datei : ITestModule
+    [TestModule("c950b0eb-c762-4bda-beed-f84b824ac4b1", ModuleType.Recording, 1)]
+    public partial class Validierung_Eingabe_2 : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::X_MUSTER_013.X_MUSTER_013Repository repository.
+        /// Holds an instance of the global::B_BUCH_006.B_BUCH_006Repository repository.
         /// </summary>
-        public static global::X_MUSTER_013.X_MUSTER_013Repository repo = global::X_MUSTER_013.X_MUSTER_013Repository.Instance;
+        public static global::B_BUCH_006.B_BUCH_006Repository repo = global::B_BUCH_006.B_BUCH_006Repository.Instance;
 
-        static select2Datei instance = new select2Datei();
+        static Validierung_Eingabe_2 instance = new Validierung_Eingabe_2();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public select2Datei()
+        public Validierung_Eingabe_2()
         {
-            hostName = "";
-            table = "s_adr";
-            path = "C:\\Temp\\datei_1.txt";
-            datenBank = "T510_1";
-            select = "select * from s_adr";
+            konto = "5704";
+            ust_cd = "V10";
+            bereiche = "10";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static select2Datei Instance
+        public static Validierung_Eingabe_2 Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _hostName;
+        string _konto;
 
         /// <summary>
-        /// Gets or sets the value of variable hostName.
+        /// Gets or sets the value of variable konto.
         /// </summary>
-        [TestVariable("cf24a83c-54b9-45d2-a828-8be394f1d996")]
-        public string hostName
+        [TestVariable("40de8946-3607-465a-80b6-048766a228c6")]
+        public string konto
         {
-            get { return _hostName; }
-            set { _hostName = value; }
+            get { return _konto; }
+            set { _konto = value; }
         }
 
-        string _table;
+        string _ust_cd;
 
         /// <summary>
-        /// Gets or sets the value of variable table.
+        /// Gets or sets the value of variable ust_cd.
         /// </summary>
-        [TestVariable("3b7c6845-928a-4517-8190-ef27d88283c1")]
-        public string table
+        [TestVariable("074287cd-7862-4ae3-91ea-93c94f29f8c3")]
+        public string ust_cd
         {
-            get { return _table; }
-            set { _table = value; }
+            get { return _ust_cd; }
+            set { _ust_cd = value; }
         }
 
-        string _path;
+        string _bereiche;
 
         /// <summary>
-        /// Gets or sets the value of variable path.
+        /// Gets or sets the value of variable bereiche.
         /// </summary>
-        [TestVariable("8de59d36-a432-4a9b-a658-cc66414389e6")]
-        public string path
+        [TestVariable("da580907-612f-4c91-8b39-13aa77331b59")]
+        public string bereiche
         {
-            get { return _path; }
-            set { _path = value; }
-        }
-
-        string _datenBank;
-
-        /// <summary>
-        /// Gets or sets the value of variable datenBank.
-        /// </summary>
-        [TestVariable("015719c9-a8dd-4362-9b68-6c5e3951ff38")]
-        public string datenBank
-        {
-            get { return _datenBank; }
-            set { _datenBank = value; }
-        }
-
-        string _select;
-
-        /// <summary>
-        /// Gets or sets the value of variable select.
-        /// </summary>
-        [TestVariable("1b09d6f7-93a7-4066-b1ae-69c649cbfb95")]
-        public string select
-        {
-            get { return _select; }
-            set { _select = value; }
+            get { return _bereiche; }
+            set { _bereiche = value; }
         }
 
 #endregion
@@ -144,9 +118,14 @@ namespace X_MUSTER_013.Recordings
 
             Init();
 
-            hostName = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetHost();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$konto) on item 'MdiBuch.Konto'.", repo.MdiBuch.KontoInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.MdiBuch.KontoInfo, "Text", konto);
             
-            Ranorex.AutomationHelpers.UserCodeCollections.sql.sqlSelect(hostName, datenBank, select, path);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ust_cd) on item 'MdiBuch.Ust_Cd'.", repo.MdiBuch.Ust_CdInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.MdiBuch.Ust_CdInfo, "Text", ust_cd);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$bereiche) on item 'MdiBuch.Bereiche'.", repo.MdiBuch.BereicheInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.MdiBuch.BereicheInfo, "Text", bereiche);
             
         }
 

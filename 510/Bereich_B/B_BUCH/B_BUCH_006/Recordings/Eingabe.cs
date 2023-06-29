@@ -42,7 +42,7 @@ namespace B_BUCH_006.Recordings
         public Eingabe()
         {
             lieferant = "303112";
-            ER_Nr = "2300007";
+            ER_Nr = "2300011";
         }
 
         /// <summary>
@@ -117,10 +117,16 @@ namespace B_BUCH_006.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblErbu.PbDataAccessLaden' at Center.", repo.TblErbu.PbDataAccessLadenInfo, new RecordItemIndex(3));
             repo.TblErbu.PbDataAccessLaden.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblErbu.PbStandard1' at Center.", repo.TblErbu.PbStandard1Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblErbu.Row1Column0'", repo.TblErbu.Row1Column0Info, new ActionTimeout(120000), new RecordItemIndex(4));
+            repo.TblErbu.Row1Column0Info.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblErbu.Row1Column0' at Center.", repo.TblErbu.Row1Column0Info, new RecordItemIndex(5));
+            repo.TblErbu.Row1Column0.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblErbu.PbStandard1' at Center.", repo.TblErbu.PbStandard1Info, new RecordItemIndex(6));
             repo.TblErbu.PbStandard1.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}'.", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}'.", new RecordItemIndex(7));
             Keyboard.Press("{F12}");
             
         }

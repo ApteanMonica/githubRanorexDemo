@@ -160,6 +160,7 @@ namespace B_BUCH_006
             RepoItemInfo _ust_cdInfo;
             RepoItemInfo _betrag_ustInfo;
             RepoItemInfo _kontoInfo;
+            RepoItemInfo _bereicheInfo;
 
             /// <summary>
             /// Creates a new MdiBuch  folder.
@@ -176,6 +177,7 @@ namespace B_BUCH_006
                 _ust_cdInfo = new RepoItemInfo(this, "Ust_Cd", "container[@controlname='ClientArea']/container[@controlname='SubForm_frmS']/form[@controlname='frmS']/container[@controlname='ClientArea']/text[@controlname='dfUst_cd']/text[@accessiblerole='Text']", "", 30000, null, "d062dc44-1487-4425-912d-064bcc3d7d31");
                 _betrag_ustInfo = new RepoItemInfo(this, "Betrag_ust", "container[@controlname='ClientArea']/container[@controlname='SubForm_frmS']/form[@controlname='frmS']/container[@controlname='ClientArea']/text[@controlname='dfUstbetrag']/text[@accessiblerole='Text']", "", 30000, null, "bbb4b6c2-314d-43be-94dd-79ff5ff2faff");
                 _kontoInfo = new RepoItemInfo(this, "Konto", "container[@controlname='ClientArea']/container[@controlname='SubForm_frmS']/form[@controlname='frmS']/container[@controlname='ClientArea']/text[@controlname='dfKto_nr']/text[@accessiblename='Konto']", "", 30000, null, "eb5cd205-1074-48b3-8bc7-5d12911c6d82");
+                _bereicheInfo = new RepoItemInfo(this, "Bereiche", "container[@controlname='ClientArea']/container[@controlname='SubForm_frmS']/form[@controlname='frmS']/container[@controlname='ClientArea']/text[@controlname='dfBube_bektnr1']/text[@accessiblename='Bereiche:']", "", 30000, null, "e98091c9-68af-48aa-9273-b329c75336e9");
             }
 
             /// <summary>
@@ -417,6 +419,30 @@ namespace B_BUCH_006
                     return _kontoInfo;
                 }
             }
+
+            /// <summary>
+            /// The Bereiche item.
+            /// </summary>
+            [RepositoryItem("e98091c9-68af-48aa-9273-b329c75336e9")]
+            public virtual Ranorex.Text Bereiche
+            {
+                get
+                {
+                    return _bereicheInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Bereiche item info.
+            /// </summary>
+            [RepositoryItemInfo("e98091c9-68af-48aa-9273-b329c75336e9")]
+            public virtual RepoItemInfo BereicheInfo
+            {
+                get
+                {
+                    return _bereicheInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -640,6 +666,7 @@ namespace B_BUCH_006
             RepoItemInfo _pbdataaccessladenInfo;
             RepoItemInfo _pbstandard1Info;
             RepoItemInfo _colerbubetragrow1Info;
+            RepoItemInfo _row1column0Info;
 
             /// <summary>
             /// Creates a new TblErbu  folder.
@@ -652,6 +679,7 @@ namespace B_BUCH_006
                 _pbdataaccessladenInfo = new RepoItemInfo(this, "PbDataAccessLaden", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Laden']", ".//button[@controlname='pbDataAccess_Laden']", 30000, null, "2971ed4b-f8d2-4842-a025-22d014c0eac6");
                 _pbstandard1Info = new RepoItemInfo(this, "PbStandard1", "container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup1']/button[@controlname='pbStandard1']", ".//button[@controlname='pbStandard1']", 30000, null, "1f68c6c9-3f67-44c9-9f09-2cda9d28c105");
                 _colerbubetragrow1Info = new RepoItemInfo(this, "ColErbuBetragRow1", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colErbu_betrag Row 1']", "", 30000, null, "b498a957-1570-49a1-8780-380d0fb2b29d");
+                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "65bdd8b2-3537-4104-9a32-00806c596bb0");
             }
 
             /// <summary>
@@ -795,6 +823,30 @@ namespace B_BUCH_006
                 get
                 {
                     return _colerbubetragrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item.
+            /// </summary>
+            [RepositoryItem("65bdd8b2-3537-4104-9a32-00806c596bb0")]
+            public virtual Ranorex.Cell Row1Column0
+            {
+                get
+                {
+                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("65bdd8b2-3537-4104-9a32-00806c596bb0")]
+            public virtual RepoItemInfo Row1Column0Info
+            {
+                get
+                {
+                    return _row1column0Info;
                 }
             }
         }

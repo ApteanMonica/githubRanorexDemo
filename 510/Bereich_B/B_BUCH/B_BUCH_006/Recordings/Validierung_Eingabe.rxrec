@@ -26,7 +26,7 @@ mode="Global">
 		<var
 		id="9e79577a-7eed-48eb-9244-014d22587c02"
 		name="ER_Nr">
-			2300007
+			2300011
 		</var>
 		<var
 		id="80252616-a083-4e48-a1d2-e0adf599f733"
@@ -36,7 +36,7 @@ mode="Global">
 		<var
 		id="64223d4c-85cb-44ab-be5d-99cd502d6edd"
 		name="betrag">
-			1.500,00
+			800
 		</var>
 		<var
 		id="53d45dde-1c48-44f7-824e-ed68e7d44e01"
@@ -46,17 +46,26 @@ mode="Global">
 		<var
 		id="08ed895f-2bd2-4aae-aa67-141e4e0132ec"
 		name="Ust_Cd">
-			V10
+			V20
 		</var>
 		<var
 		id="e800f2a4-fb16-4e4c-937a-ae608861bde4"
 		name="betrag_Ust">
-			136,36
+			133,33
 		</var>
 		<var
 		id="44c389e9-241b-4548-a9fe-778d5001d8c3"
 		name="konto">
 			5704
+		</var>
+		<var
+		id="4c1c7e6b-875c-4acc-b874-5ab1e0724abb"
+		name="erbu_betrag">
+			1000
+		</var>
+		<var
+		id="1d8f8900-7f9b-40d8-a3b1-64e0c20c82bd"
+		name="variable">
 		</var>
 	</variables>
 	<recorditems>
@@ -2675,18 +2684,15 @@ mode="Global">
 				yourtext
 			</matchvalue>
 		</validationitem>
-		<validationitem
-		action="AttributeEqual"
+		<getvaluerecorditem
+		attrname="Text"
 		enabled="True"
 		optional="False"
-		searchpropertyid="251aeb64-817b-4989-8261-30dc4f5488e3">
+		searchpropertyid="0cc4ef3d-b7a6-465a-a42b-106537f4e318"
+		varname="variable">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="MatchValue"
-				variable="betrag">
-				</binding>
 			</bindings>
 			<info
 			id="b498a957-1570-49a1-8780-380d0fb2b29d"
@@ -2697,24 +2703,51 @@ mode="Global">
 				<robustPath>
 				</robustPath>
 			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
+		</getvaluerecorditem>
+		<userrecorditem
+		classname="Aptean"
 		enabled="True"
-		optional="False"
-		searchpropertyid="7a98a17a-d839-4367-b4d7-52bf99baad3c">
+		isexternaltestmethod="True"
+		methodname="ValidateWithoutDecimals"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="MatchValue"
-				variable="betrag">
-				</binding>
+			</bindings>
+			<arguments
+			id="cb69e521-9e23-4d5f-8d14-eaf95f1676bc">
+				<argument
+				argname="field_D1"
+				id="322e186c-5b67-4735-a23b-c2a6f4a6987a"
+				variable="erbu_betrag">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="D1"
+				id="36e3dc72-ec09-4d0b-ad92-212b50df7da9"
+				variable="variable">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<getvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="51db281c-42b6-4197-a0d9-80d9285326fb"
+		varname="variable">
+			<comment>
+			</comment>
+			<bindings>
 			</bindings>
 			<info
 			id="1a62f13c-465a-4921-88d5-f3d7fd4df27d"
@@ -2725,13 +2758,42 @@ mode="Global">
 				<robustPath>
 				</robustPath>
 			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
+		</getvaluerecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ValidateWithoutDecimals"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="01a93598-abbd-4290-a31f-9014c15e30f4">
+				<argument
+				argname="field_D1"
+				id="a5943e29-96e9-4311-9364-a757cf1b28ca"
+				variable="betrag">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="D1"
+				id="4d67d97b-2d09-4d85-81f8-469744a22a7f"
+				variable="variable">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"

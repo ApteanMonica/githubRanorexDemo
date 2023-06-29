@@ -20,19 +20,19 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_BUCH_006.Recordings
+namespace X_MUSTER_014.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
     ///The StartAUT recording.
     /// </summary>
-    [TestModule("9ba6e69d-9def-49ba-b913-09d3c5b0227f", ModuleType.Recording, 1)]
+    [TestModule("8f6a85dd-20d3-4464-927a-c36e87df9dcc", ModuleType.Recording, 1)]
     public partial class StartAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_BUCH_006.B_BUCH_006Repository repository.
+        /// Holds an instance of the global::X_MUSTER_014.X_MUSTER_014Repository repository.
         /// </summary>
-        public static global::B_BUCH_006.B_BUCH_006Repository repo = global::B_BUCH_006.B_BUCH_006Repository.Instance;
+        public static global::X_MUSTER_014.X_MUSTER_014Repository repo = global::X_MUSTER_014.X_MUSTER_014Repository.Instance;
 
         static StartAUT instance = new StartAUT();
 
@@ -41,8 +41,7 @@ namespace B_BUCH_006.Recordings
         /// </summary>
         public StartAUT()
         {
-            startFile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            programm = "B_BUCH";
+            StartAutProcessIDVar = "";
         }
 
         /// <summary>
@@ -55,28 +54,16 @@ namespace B_BUCH_006.Recordings
 
 #region Variables
 
-        string _startFile;
+        string _StartAutProcessIDVar;
 
         /// <summary>
-        /// Gets or sets the value of variable startFile.
+        /// Gets or sets the value of variable StartAutProcessIDVar.
         /// </summary>
-        [TestVariable("a0462f0a-5bf2-474d-8490-18738a493b5b")]
-        public string startFile
+        [TestVariable("ef9b1a84-6b81-4d6f-ada7-92940d271a88")]
+        public string StartAutProcessIDVar
         {
-            get { return _startFile; }
-            set { _startFile = value; }
-        }
-
-        string _programm;
-
-        /// <summary>
-        /// Gets or sets the value of variable programm.
-        /// </summary>
-        [TestVariable("42924442-5975-492c-8f04-4e544645ba00")]
-        public string programm
-        {
-            get { return _programm; }
-            set { _programm = value; }
+            get { return _StartAutProcessIDVar; }
+            set { _StartAutProcessIDVar = value; }
         }
 
 #endregion
@@ -99,20 +86,15 @@ namespace B_BUCH_006.Recordings
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 0;
+            Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 20;
-            Delay.SpeedFactor = 0.00;
+            Delay.SpeedFactor = 1.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $startFile with arguments from variable $programm in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(startFile, programm, "", false);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'MdiBuch.TitleBar100Dialogbuchung'", repo.MdiBuch.TitleBar100DialogbuchungInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.MdiBuch.TitleBar100DialogbuchungInfo.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Dialogbuchung') on item 'MdiBuch.TitleBar100Dialogbuchung'.", repo.MdiBuch.TitleBar100DialogbuchungInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.MdiBuch.TitleBar100DialogbuchungInfo, "Text", "Dialogbuchung");
+            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Program Files\\rs2\\rs2\\URS\\bin2\\MENU.exe' in normal mode. Return value bound to $StartAutProcessIDVar.", new RecordItemIndex(0));
+            StartAutProcessIDVar = ValueConverter.ToString(Host.Local.RunApplication("C:\\Program Files\\rs2\\rs2\\URS\\bin2\\MENU.exe", "", "", false));
+            Delay.Milliseconds(0);
             
         }
 

@@ -41,6 +41,9 @@ namespace B_BUCH_006.Recordings
         /// </summary>
         public Eingabe_2()
         {
+            konto = "5704";
+            ust_cd = "V20";
+            bereiche = "10";
         }
 
         /// <summary>
@@ -52,6 +55,42 @@ namespace B_BUCH_006.Recordings
         }
 
 #region Variables
+
+        string _konto;
+
+        /// <summary>
+        /// Gets or sets the value of variable konto.
+        /// </summary>
+        [TestVariable("ebd5eac5-7956-4d67-aff2-beea38cd9c14")]
+        public string konto
+        {
+            get { return _konto; }
+            set { _konto = value; }
+        }
+
+        string _ust_cd;
+
+        /// <summary>
+        /// Gets or sets the value of variable ust_cd.
+        /// </summary>
+        [TestVariable("d9ee0428-6ebb-448e-8528-4e44677fdd05")]
+        public string ust_cd
+        {
+            get { return _ust_cd; }
+            set { _ust_cd = value; }
+        }
+
+        string _bereiche;
+
+        /// <summary>
+        /// Gets or sets the value of variable bereiche.
+        /// </summary>
+        [TestVariable("2d4bdbe6-3fa3-4867-89e4-ccf010eb3bd2")]
+        public string bereiche
+        {
+            get { return _bereiche; }
+            set { _bereiche = value; }
+        }
 
 #endregion
 
@@ -83,8 +122,14 @@ namespace B_BUCH_006.Recordings
             repo.MdiBuch.Self.EnsureVisible();
             Keyboard.Press("{F12}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(1));
-            repo.DlgMessageBox.Button0.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$konto' with focus on 'MdiBuch.Konto'.", repo.MdiBuch.KontoInfo, new RecordItemIndex(1));
+            repo.MdiBuch.Konto.PressKeys(konto);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ust_cd' with focus on 'MdiBuch.Ust_Cd'.", repo.MdiBuch.Ust_CdInfo, new RecordItemIndex(2));
+            repo.MdiBuch.Ust_Cd.PressKeys(ust_cd);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$bereiche' with focus on 'MdiBuch.Bereiche'.", repo.MdiBuch.BereicheInfo, new RecordItemIndex(3));
+            repo.MdiBuch.Bereiche.PressKeys(bereiche);
             
         }
 
