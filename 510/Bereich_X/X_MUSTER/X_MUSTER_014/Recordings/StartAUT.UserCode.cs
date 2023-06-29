@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace X_MUSTER_013.Recordings
+namespace X_MUSTER_014.Recordings
 {
-    public partial class select2Datei
+    public partial class StartAUT
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -31,12 +31,6 @@ namespace X_MUSTER_013.Recordings
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-
-        public void sqlSelect(string host, string table, string file)
-        {
-            // TODO: Replace the following line with your code implementation.
-            throw new NotImplementedException();
         }
 
     }

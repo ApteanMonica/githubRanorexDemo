@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8f6a85dd-20d3-4464-927a-c36e87df9dcc"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartAUT"
+	namespace="X_MUSTER_014.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="ef9b1a84-6b81-4d6f-ada7-92940d271a88"
+		name="StartAutProcessIDVar">
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="StartAutProcessIDVar">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Program Files\rs2\rs2\URS\bin2\MENU.exe
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+	</recorditems>
+	<repository
+	id="2450b6d9-5d46-4b2c-b644-4bed25addc54"
+	name="X_MUSTER_014Repository"
+	relativepath="..\X_MUSTER_014Repository.rxrep">
+		<codegen
+		classname="X_MUSTER_014Repository"
+		namespace="X_MUSTER_014">
+		</codegen>
+		<rootfolder
+		id="ab9a0ac8-55a6-4e9c-8120-b1e556d25bb9"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

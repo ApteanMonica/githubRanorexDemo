@@ -666,6 +666,7 @@ namespace B_BUCH_006
             RepoItemInfo _pbdataaccessladenInfo;
             RepoItemInfo _pbstandard1Info;
             RepoItemInfo _colerbubetragrow1Info;
+            RepoItemInfo _row1column0Info;
 
             /// <summary>
             /// Creates a new TblErbu  folder.
@@ -678,6 +679,7 @@ namespace B_BUCH_006
                 _pbdataaccessladenInfo = new RepoItemInfo(this, "PbDataAccessLaden", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Laden']", ".//button[@controlname='pbDataAccess_Laden']", 30000, null, "2971ed4b-f8d2-4842-a025-22d014c0eac6");
                 _pbstandard1Info = new RepoItemInfo(this, "PbStandard1", "container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup1']/button[@controlname='pbStandard1']", ".//button[@controlname='pbStandard1']", 30000, null, "1f68c6c9-3f67-44c9-9f09-2cda9d28c105");
                 _colerbubetragrow1Info = new RepoItemInfo(this, "ColErbuBetragRow1", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colErbu_betrag Row 1']", "", 30000, null, "b498a957-1570-49a1-8780-380d0fb2b29d");
+                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "65bdd8b2-3537-4104-9a32-00806c596bb0");
             }
 
             /// <summary>
@@ -821,6 +823,30 @@ namespace B_BUCH_006
                 get
                 {
                     return _colerbubetragrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item.
+            /// </summary>
+            [RepositoryItem("65bdd8b2-3537-4104-9a32-00806c596bb0")]
+            public virtual Ranorex.Cell Row1Column0
+            {
+                get
+                {
+                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("65bdd8b2-3537-4104-9a32-00806c596bb0")]
+            public virtual RepoItemInfo Row1Column0Info
+            {
+                get
+                {
+                    return _row1column0Info;
                 }
             }
         }
