@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="31847394-0a89-40fb-a8d0-b65fc7cc0529"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="DbAbfrage"
+	namespace="X_MUSTER_014.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="sql"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="sqlSelect"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a80f1ab8-5803-4350-b402-e2501f0653a8">
+				<argument
+				argname="selectLine"
+				id="5aa0755c-8627-4722-9f66-c36fa802141f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						select * from s_adr;
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="8131821b-3cc7-4922-9f96-a6719e71e405">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						c:/Temp/datei_1.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="2450b6d9-5d46-4b2c-b644-4bed25addc54"
+	name="X_MUSTER_014Repository"
+	relativepath="..\X_MUSTER_014Repository.rxrep">
+		<codegen
+		classname="X_MUSTER_014Repository"
+		namespace="X_MUSTER_014">
+		</codegen>
+		<rootfolder
+		id="ab9a0ac8-55a6-4e9c-8120-b1e556d25bb9"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

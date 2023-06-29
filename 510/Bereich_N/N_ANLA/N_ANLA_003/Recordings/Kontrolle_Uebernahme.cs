@@ -42,7 +42,7 @@ namespace N_ANLA_003.Recordings
         public Kontrolle_Uebernahme()
         {
             Anlagennr = "003_01";
-            Anlagenbezeichnung = "Anlage_003_01";
+            Anlagenbezeichnung = "N_ANLA_003_01";
             Konto_Anlagen_Nr = "0660";
             Zugangsdatum_Anlage_1 = "05.04.2022";
             AHK_Betrag_Anlage_1 = "1.750,00";
@@ -179,34 +179,46 @@ namespace N_ANLA_003.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Konto_Anlagen_Nr) on item 'DlgZugang.DfKtoNr'.", repo.DlgZugang.DfKtoNrInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.DlgZugang.DfKtoNrInfo, "Text", Konto_Anlagen_Nr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Zugangsdatum_Anlage_1) on item 'DlgZugang.Zugangsdatum'.", repo.DlgZugang.ZugangsdatumInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'Form100AVZBuchungenZugang.CbAnlaKzgwg'.", repo.Form100AVZBuchungenZugang.CbAnlaKzgwgInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.Form100AVZBuchungenZugang.CbAnlaKzgwgInfo, "Checked", "False");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Zugangsdatum_Anlage_1) on item 'DlgZugang.Zugangsdatum'.", repo.DlgZugang.ZugangsdatumInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.DlgZugang.ZugangsdatumInfo, "Text", Zugangsdatum_Anlage_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Inbetriebnahmedatum_Anlage_1) on item 'DlgZugang.DfInbetriebnahme'.", repo.DlgZugang.DfInbetriebnahmeInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Inbetriebnahmedatum_Anlage_1) on item 'DlgZugang.DfInbetriebnahme'.", repo.DlgZugang.DfInbetriebnahmeInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.DlgZugang.DfInbetriebnahmeInfo, "Text", Inbetriebnahmedatum_Anlage_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$AHK_Betrag_Anlage_1) on item 'DlgZugang.DfAnbuBetrag'.", repo.DlgZugang.DfAnbuBetragInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$AHK_Betrag_Anlage_1) on item 'DlgZugang.DfAnbuBetrag'.", repo.DlgZugang.DfAnbuBetragInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.DlgZugang.DfAnbuBetragInfo, "Text", AHK_Betrag_Anlage_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Zugangsmenge) on item 'DlgZugang.DfAnbuMenge'.", repo.DlgZugang.DfAnbuMengeInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Zugangsmenge) on item 'DlgZugang.DfAnbuMenge'.", repo.DlgZugang.DfAnbuMengeInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.DlgZugang.DfAnbuMengeInfo, "Text", Zugangsmenge);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgZugang.DfAnweRestwert'.", repo.DlgZugang.DfAnweRestwertInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgZugang.DfAnweRestwert'.", repo.DlgZugang.DfAnweRestwertInfo, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.DlgZugang.DfAnweRestwertInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '5{Tab}' with focus on 'DlgZugang.Nutzungsdauer'.", repo.DlgZugang.NutzungsdauerInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgZugang.TpWerte.CmbAnla1AfaBez' at Center.", repo.DlgZugang.TpWerte.CmbAnla1AfaBezInfo, new RecordItemIndex(9));
+            repo.DlgZugang.TpWerte.CmbAnla1AfaBez.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.LinearMonatlich' at Center.", repo.List1000.LinearMonatlichInfo, new RecordItemIndex(10));
+            repo.List1000.LinearMonatlich.Click();
+            
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Return}' with focus on 'DlgZugang.TpWerte.CmbAnla1AfaBez'.", repo.DlgZugang.TpWerte.CmbAnla1AfaBezInfo, new RecordItemIndex(11));
+            //repo.DlgZugang.TpWerte.CmbAnla1AfaBez.PressKeys("{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Return}");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '5{Tab}' with focus on 'DlgZugang.Nutzungsdauer'.", repo.DlgZugang.NutzungsdauerInfo, new RecordItemIndex(12));
             repo.DlgZugang.Nutzungsdauer.PressKeys("5{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='5') on item 'DlgZugang.Nutzungsdauer'.", repo.DlgZugang.NutzungsdauerInfo, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.DlgZugang.NutzungsdauerInfo, "Text", "5");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='5,00') on item 'DlgZugang.Nutzungsdauer'.", repo.DlgZugang.NutzungsdauerInfo, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.DlgZugang.NutzungsdauerInfo, "Text", "5,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgZugang.DfAnbuProz'.", repo.DlgZugang.DfAnbuProzInfo, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.DlgZugang.DfAnbuProzInfo, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'DlgZugang.DfAnbuProz'.", repo.DlgZugang.DfAnbuProzInfo, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.DlgZugang.DfAnbuProzInfo, "Text", "20");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgZugang.Betrag'.", repo.DlgZugang.BetragInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgZugang.Betrag'.", repo.DlgZugang.BetragInfo, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.DlgZugang.BetragInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgZugang.DfAnlaVozafa'.", repo.DlgZugang.DfAnlaVozafaInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgZugang.DfAnlaVozafa'.", repo.DlgZugang.DfAnlaVozafaInfo, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.DlgZugang.DfAnlaVozafaInfo, "Text", "");
             
         }
