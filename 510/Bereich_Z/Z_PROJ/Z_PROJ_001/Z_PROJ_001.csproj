@@ -38,8 +38,8 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Ranorex.Bootstrapper">
       <Private>False</Private>
@@ -574,6 +574,9 @@
   <ItemGroup>
     <None Include="app.config">
       <id>02864287-1141-49f6-a085-75f958c57fe6</id>
+    </None>
+    <None Include="packages.config">
+      <id>4e49ef9c-8603-47a9-881b-b41f75ac6eca</id>
     </None>
     <None Include="Recordings_z_proj\CloseAUT.rxrec">
       <BoundTo>d5508d61-8d97-49cc-bd5a-e2141703fc3a</BoundTo>

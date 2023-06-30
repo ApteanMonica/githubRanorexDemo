@@ -202,6 +202,7 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 		id="6459f565-be9b-450c-a1aa-f8487fdbbc50"
 		isrooted="True"
 		name="DlgUVAZ"
+		refimgid="cbb2bcd0-acde-4cb4-8836-8827b40e8aab"
 		refpath="/form[@controlname='dlgUVAZ']"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -217,6 +218,17 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 				/form[@controlname='dlgUVAZ']/titlebar[@accessiblerole='TitleBar']
 			</item>
 			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="f4ac28db-1070-494b-8c00-0d7350d61cb3"
+			name="FlexGrid"
+			refimgid="27ff1400-9fea-4d13-b86a-7758a667a133"
+			refpath="/form[@controlname='dlgUVAZ']/container[@controlname='ClientArea']/container[@controlname='tblUVAZ']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgUVAZ']/container[@controlname='ClientArea']/container[@controlname='tblUVAZ']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+			</item>
+			<item
 			addcaps="cell,accessible"
 			capname="cell"
 			id="756522e6-a011-4ee3-a974-121cac5b7beb"
@@ -230,23 +242,23 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			<item
 			addcaps="cell,accessible"
 			capname="cell"
+			id="dd076973-a52e-44a2-8338-596a7fdeb30f"
+			name="Row1Column0"
+			refimgid="8173471a-6533-4176-b857-39d313d70fd1"
+			refpath="/form[@controlname='dlgUVAZ']/container[@controlname='ClientArea']/container[@controlname='tblUVAZ']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgUVAZ']/container[@controlname='ClientArea']/container[@controlname='tblUVAZ']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
 			id="a998a47a-05c8-4366-87df-2099ce756310"
 			name="Zelle1_in_Zeile_mit_Ust_CD_V05"
 			refimgid="f8d9570a-7a84-4df5-b78f-5dbc0e68b144"
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='dlgUVAZ']//table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Ust_CD_V05]/cell[@accessiblename~'Column 0']
-			</item>
-			<item
-			addcaps="text,control,nativewindow"
-			capname="text"
-			id="42a24f16-97a2-4878-bd73-1bd38d0d1f88"
-			name="SomeText"
-			refimgid="d2d50eb1-77d6-4fcb-af77-7ffcadd00344"
-			refpath="/form[@controlname='dlgUVAZ']/container[@controlname='ClientArea']/container[@controlname='tblUVAZ']/element[@controlname='splitGrid']/text[@controltypename='']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgUVAZ']/container[@controlname='ClientArea']//text[@controltypename='']
 			</item>
 			<item
 			addcaps="button,control,nativewindow"
@@ -261,13 +273,34 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			</item>
 			<item
 			addcaps="cell,accessible"
-			capname="unknown"
+			capname="row"
 			id="e3cfa447-6f5b-45b4-bf66-87192bb42b00"
 			name="Zeile_mit_Ust_Cd_V05"
 			refimgid="b3a3e6b8-6b4d-46a2-ad4d-4eda2443299a"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='dlgUVAZ']//table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Ust_CD_V05]/?
+				/form[@controlname='dlgUVAZ']//table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Ust_CD_V05]
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="edb9e3ef-c25b-451b-b6fe-f65454b3c001"
+			name="Row0Column0"
+			refimgid="89745c4b-8577-4357-8205-3fb1ef75da8e"
+			refpath="/form[@controlname='dlgUVAZ']/container[@controlname='ClientArea']/container[@controlname='tblUVAZ']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='Row 0 Column 0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgUVAZ']/container[@controlname='ClientArea']/container[@controlname='tblUVAZ']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='Row 0 Column 0']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="649d17f7-8d2e-4769-954a-cda5865d393d"
+			name="SomeText_Textfeld_neu_unten_sichtbar"
+			refimgid="9783b85e-1400-4b42-b9bf-f46658eb7ab4"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgUVAZ']/container[@controlname='ClientArea']/container[@controlname='tblUVAZ']/element[@controlname='splitGrid']/text[@visible='True']
 			</item>
 			<basepath>
 				/form[@controlname='dlgUVAZ']

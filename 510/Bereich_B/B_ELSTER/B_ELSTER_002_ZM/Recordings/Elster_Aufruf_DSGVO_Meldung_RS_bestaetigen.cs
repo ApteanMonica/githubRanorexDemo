@@ -95,8 +95,8 @@ namespace B_ELSTER_002_ZM.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain_B_ZM.PbElster' at Center.", repo.FrmMain_B_ZM.PbElsterInfo, new RecordItemIndex(0));
             repo.FrmMain_B_ZM.PbElster.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgElsterDSGVO.TitleBar300ElsterInformation'", repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo, new ActionTimeout(180000), new RecordItemIndex(1));
-            repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo.WaitForExists(180000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'DlgElsterDSGVO.TitleBar300ElsterInformation'", repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo, new ActionTimeout(300000), new RecordItemIndex(1));
+            repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo.WaitForExists(300000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Elster Information') on item 'DlgElsterDSGVO.TitleBar300ElsterInformation'.", repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo, "Text", "Elster Information");

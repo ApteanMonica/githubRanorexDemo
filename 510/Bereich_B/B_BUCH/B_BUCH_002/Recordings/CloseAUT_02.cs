@@ -30,9 +30,9 @@ namespace B_BUCH_002.Recordings
     public partial class CloseAUT_02 : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_BUCH_002.B_BUCH_001Repository repository.
+        /// Holds an instance of the global::B_BUCH_002.B_BUCH_002Repository repository.
         /// </summary>
-        public static global::B_BUCH_002.B_BUCH_001Repository repo = global::B_BUCH_002.B_BUCH_001Repository.Instance;
+        public static global::B_BUCH_002.B_BUCH_002Repository repo = global::B_BUCH_002.B_BUCH_002Repository.Instance;
 
         static CloseAUT_02 instance = new CloseAUT_02();
 
@@ -79,8 +79,8 @@ namespace B_BUCH_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblB.TitleBar100BuchungenAnzeigen'.", repo.TblB.TitleBar100BuchungenAnzeigenInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TblB.TitleBar100BuchungenAnzeigen, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'B_BUAB_TblB.TitleBar100BuchungenAnzeigen'.", repo.B_BUAB_TblB.TitleBar100BuchungenAnzeigenInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.B_BUAB_TblB.TitleBar100BuchungenAnzeigen, 1000);
             
         }
 

@@ -626,11 +626,14 @@ namespace B_UVA_002
         public partial class DlgUVAZAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _titlebar200zuordnungustcodesInfo;
+            RepoItemInfo _flexgridInfo;
             RepoItemInfo _colustcdrow1Info;
+            RepoItemInfo _row1column0Info;
             RepoItemInfo _zelle1_in_zeile_mit_ust_cd_v05Info;
-            RepoItemInfo _sometextInfo;
             RepoItemInfo _pbspeichernInfo;
             RepoItemInfo _zeile_mit_ust_cd_v05Info;
+            RepoItemInfo _row0column0Info;
+            RepoItemInfo _sometext_textfeld_neu_unten_sichtbarInfo;
 
             /// <summary>
             /// Creates a new DlgUVAZ  folder.
@@ -639,11 +642,14 @@ namespace B_UVA_002
                     base("DlgUVAZ", "/form[@controlname='dlgUVAZ']", parentFolder, 30000, null, true, "6459f565-be9b-450c-a1aa-f8487fdbbc50", "")
             {
                 _titlebar200zuordnungustcodesInfo = new RepoItemInfo(this, "TitleBar200ZuordnungUStCodes", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "71902cec-00a6-4299-96a9-89bf84797d3c");
+                _flexgridInfo = new RepoItemInfo(this, "FlexGrid", "container[@controlname='ClientArea']/container[@controlname='tblUVAZ']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", "", 30000, null, "f4ac28db-1070-494b-8c00-0d7350d61cb3");
                 _colustcdrow1Info = new RepoItemInfo(this, "ColUstCdRow1", ".//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colUst_cd Row 1']", "", 30000, null, "756522e6-a011-4ee3-a974-121cac5b7beb");
+                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "container[@controlname='ClientArea']/container[@controlname='tblUVAZ']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "dd076973-a52e-44a2-8338-596a7fdeb30f");
                 _zelle1_in_zeile_mit_ust_cd_v05Info = new RepoItemInfo(this, "Zelle1_in_Zeile_mit_Ust_CD_V05", ".//table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Ust_CD_V05]/cell[@accessiblename~'Column 0']", "", 30000, null, "a998a47a-05c8-4366-87df-2099ce756310");
-                _sometextInfo = new RepoItemInfo(this, "SomeText", "container[@controlname='ClientArea']//text[@controltypename='']", "", 30000, null, "42a24f16-97a2-4878-bd73-1bd38d0d1f88");
                 _pbspeichernInfo = new RepoItemInfo(this, "PbSpeichern", "?/?/button[@controlname='pbSpeichern']", "", 30000, null, "2ea3d02b-c083-4d04-b1d1-072e2b355f19");
-                _zeile_mit_ust_cd_v05Info = new RepoItemInfo(this, "Zeile_mit_Ust_Cd_V05", ".//table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Ust_CD_V05]/?", "", 30000, null, "e3cfa447-6f5b-45b4-bf66-87192bb42b00");
+                _zeile_mit_ust_cd_v05Info = new RepoItemInfo(this, "Zeile_mit_Ust_Cd_V05", ".//table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Ust_CD_V05]", "", 30000, null, "e3cfa447-6f5b-45b4-bf66-87192bb42b00");
+                _row0column0Info = new RepoItemInfo(this, "Row0Column0", "container[@controlname='ClientArea']/container[@controlname='tblUVAZ']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='Row 0 Column 0']", "", 30000, null, "edb9e3ef-c25b-451b-b6fe-f65454b3c001");
+                _sometext_textfeld_neu_unten_sichtbarInfo = new RepoItemInfo(this, "SomeText_Textfeld_neu_unten_sichtbar", "container[@controlname='ClientArea']/container[@controlname='tblUVAZ']/element[@controlname='splitGrid']/text[@visible='True']", "", 30000, null, "649d17f7-8d2e-4769-954a-cda5865d393d");
             }
 
             /// <summary>
@@ -695,6 +701,30 @@ namespace B_UVA_002
             }
 
             /// <summary>
+            /// The FlexGrid item.
+            /// </summary>
+            [RepositoryItem("f4ac28db-1070-494b-8c00-0d7350d61cb3")]
+            public virtual Ranorex.Table FlexGrid
+            {
+                get
+                {
+                    return _flexgridInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FlexGrid item info.
+            /// </summary>
+            [RepositoryItemInfo("f4ac28db-1070-494b-8c00-0d7350d61cb3")]
+            public virtual RepoItemInfo FlexGridInfo
+            {
+                get
+                {
+                    return _flexgridInfo;
+                }
+            }
+
+            /// <summary>
             /// The ColUstCdRow1 item.
             /// </summary>
             [RepositoryItem("756522e6-a011-4ee3-a974-121cac5b7beb")]
@@ -719,6 +749,30 @@ namespace B_UVA_002
             }
 
             /// <summary>
+            /// The Row1Column0 item.
+            /// </summary>
+            [RepositoryItem("dd076973-a52e-44a2-8338-596a7fdeb30f")]
+            public virtual Ranorex.Cell Row1Column0
+            {
+                get
+                {
+                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("dd076973-a52e-44a2-8338-596a7fdeb30f")]
+            public virtual RepoItemInfo Row1Column0Info
+            {
+                get
+                {
+                    return _row1column0Info;
+                }
+            }
+
+            /// <summary>
             /// The Zelle1_in_Zeile_mit_Ust_CD_V05 item.
             /// </summary>
             [RepositoryItem("a998a47a-05c8-4366-87df-2099ce756310")]
@@ -739,30 +793,6 @@ namespace B_UVA_002
                 get
                 {
                     return _zelle1_in_zeile_mit_ust_cd_v05Info;
-                }
-            }
-
-            /// <summary>
-            /// The SomeText item.
-            /// </summary>
-            [RepositoryItem("42a24f16-97a2-4878-bd73-1bd38d0d1f88")]
-            public virtual Ranorex.Text SomeText
-            {
-                get
-                {
-                    return _sometextInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SomeText item info.
-            /// </summary>
-            [RepositoryItemInfo("42a24f16-97a2-4878-bd73-1bd38d0d1f88")]
-            public virtual RepoItemInfo SomeTextInfo
-            {
-                get
-                {
-                    return _sometextInfo;
                 }
             }
 
@@ -794,11 +824,11 @@ namespace B_UVA_002
             /// The Zeile_mit_Ust_Cd_V05 item.
             /// </summary>
             [RepositoryItem("e3cfa447-6f5b-45b4-bf66-87192bb42b00")]
-            public virtual Ranorex.Unknown Zeile_mit_Ust_Cd_V05
+            public virtual Ranorex.Row Zeile_mit_Ust_Cd_V05
             {
                 get
                 {
-                    return _zeile_mit_ust_cd_v05Info.CreateAdapter<Ranorex.Unknown>(true);
+                    return _zeile_mit_ust_cd_v05Info.CreateAdapter<Ranorex.Row>(true);
                 }
             }
 
@@ -811,6 +841,54 @@ namespace B_UVA_002
                 get
                 {
                     return _zeile_mit_ust_cd_v05Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row0Column0 item.
+            /// </summary>
+            [RepositoryItem("edb9e3ef-c25b-451b-b6fe-f65454b3c001")]
+            public virtual Ranorex.Cell Row0Column0
+            {
+                get
+                {
+                    return _row0column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row0Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("edb9e3ef-c25b-451b-b6fe-f65454b3c001")]
+            public virtual RepoItemInfo Row0Column0Info
+            {
+                get
+                {
+                    return _row0column0Info;
+                }
+            }
+
+            /// <summary>
+            /// The SomeText_Textfeld_neu_unten_sichtbar item.
+            /// </summary>
+            [RepositoryItem("649d17f7-8d2e-4769-954a-cda5865d393d")]
+            public virtual Ranorex.Text SomeText_Textfeld_neu_unten_sichtbar
+            {
+                get
+                {
+                    return _sometext_textfeld_neu_unten_sichtbarInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SomeText_Textfeld_neu_unten_sichtbar item info.
+            /// </summary>
+            [RepositoryItemInfo("649d17f7-8d2e-4769-954a-cda5865d393d")]
+            public virtual RepoItemInfo SomeText_Textfeld_neu_unten_sichtbarInfo
+            {
+                get
+                {
+                    return _sometext_textfeld_neu_unten_sichtbarInfo;
                 }
             }
         }
