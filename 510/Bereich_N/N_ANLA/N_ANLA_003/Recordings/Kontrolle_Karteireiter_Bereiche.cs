@@ -79,11 +79,29 @@ namespace N_ANLA_003.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '003_01{Tab}' with focus on 'Form100AVZAnlagen.Aktuell'.", repo.Form100AVZAnlagen.AktuellInfo, new RecordItemIndex(0));
-            repo.Form100AVZAnlagen.Aktuell.PressKeys("003_01{Tab}");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmAnla.TitleBar100AVZAnlagen'", repo.FrmAnla.TitleBar100AVZAnlagenInfo, new ActionTimeout(120000), new RecordItemIndex(0));
+            repo.FrmAnla.TitleBar100AVZAnlagenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100AVZAnlagen.Bereiche' at Center.", repo.Form100AVZAnlagen.BereicheInfo, new RecordItemIndex(1));
-            repo.Form100AVZAnlagen.Bereiche.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ - Anlagen') on item 'FrmAnla.TitleBar100AVZAnlagen'.", repo.FrmAnla.TitleBar100AVZAnlagenInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.FrmAnla.TitleBar100AVZAnlagenInfo, "Text", "[100]  AVZ - Anlagen");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '003_01{Tab}' with focus on 'Form100AVZAnlagen.ClientArea.Aktuell'.", repo.Form100AVZAnlagen.ClientArea.AktuellInfo, new RecordItemIndex(2));
+            repo.Form100AVZAnlagen.ClientArea.Aktuell.PressKeys("003_01{Tab}");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100AVZAnlagen.ClientArea.Bereiche' at Center.", repo.Form100AVZAnlagen.ClientArea.BereicheInfo, new RecordItemIndex(3));
+            repo.Form100AVZAnlagen.ClientArea.Bereiche.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'Form100AVZAnlagen.ClientArea.ColAnbePosRow1'.", repo.Form100AVZAnlagen.ClientArea.ColAnbePosRow1Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.Form100AVZAnlagen.ClientArea.ColAnbePosRow1Info, "Text", "1");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'Form100AVZAnlagen.ClientArea.ColBektNr1Row1'.", repo.Form100AVZAnlagen.ClientArea.ColBektNr1Row1Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.Form100AVZAnlagen.ClientArea.ColBektNr1Row1Info, "Text", "10");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1,00') on item 'Form100AVZAnlagen.ClientArea.ColAnbeMengeRow1'.", repo.Form100AVZAnlagen.ClientArea.ColAnbeMengeRow1Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.Form100AVZAnlagen.ClientArea.ColAnbeMengeRow1Info, "Text", "1,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,00000000') on item 'Form100AVZAnlagen.ClientArea.ColAnbeProzRow1'.", repo.Form100AVZAnlagen.ClientArea.ColAnbeProzRow1Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.Form100AVZAnlagen.ClientArea.ColAnbeProzRow1Info, "Text", "100,00000000");
             
         }
 

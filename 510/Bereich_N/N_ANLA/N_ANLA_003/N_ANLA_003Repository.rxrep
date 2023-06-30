@@ -476,17 +476,6 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			<item
 			addcaps="button,nativewindow"
 			capname="button"
-			id="81eed15f-3cac-4627-b4c1-b0c262ad9fa8"
-			name="WindowsForms10BUTTONApp02804c64R6A"
-			refimgid="dfe70d17-2b8e-4901-a4dd-a8c4cb8c8de3"
-			refpath="/form[@title='[100]  AVZ - Buchungen: Zugang']/button[@text='' and @class='WindowsForms10.BUTTON.app.0.2804c64_r6_ad1' and @instance='4']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@title&gt;'[100]  AVZ - Buchungen: Z']/button[@class='WindowsForms10.BUTTON.app.0.2804c64_r6_ad1' and @instance='4']
-			</item>
-			<item
-			addcaps="button,nativewindow"
-			capname="button"
 			id="7f4070e8-d5a2-45cd-bf7c-2ae167314af2"
 			name="ButtonFibuUEbernahme"
 			refimgid="f64d22cb-39cc-478d-bd58-865eacb898c5"
@@ -565,7 +554,7 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			addcaps="cell,accessible"
 			capname="cell"
 			id="9143dfbd-74c1-4e84-a285-e283dd5b8bdc"
-			name="ColBektNr1Row1"
+			name="ColBektNr1Row1_510"
 			refimgid="95497550-4e82-4709-82d3-c1c9b50980b6"
 			refpath="/form[@controlname='dlgZugang']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']/container[@controlname='tblAnbe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBekt_nr1 Row 1']"
 			robustPath=""
@@ -605,6 +594,28 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@title&gt;'[100]  AVZ - Buchungen: Z']/checkbox[@controlname='cbAnla_kzgwg']
 			</item>
+			<item
+			addcaps="combobox,control,nativewindow"
+			capname="combobox"
+			id="8c4734ff-4267-404f-9eaa-7bed8516f848"
+			name="CmbAnlaStatus"
+			refimgid="114ad997-0a1c-4e0d-9b07-7aeeaa29f8e9"
+			refpath="/form[@controlname='dlgZugang']/combobox[@controlname='cmbAnla_status']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'[100]  AVZ - Buchungen: Z']/combobox[@controlname='cmbAnla_status']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="537b9ee2-7038-4bda-b8af-058e61333069"
+			name="PbSpeichern"
+			refimgid="717a4f94-1699-40d6-b36b-81b5c9c9d121"
+			refpath="/form[@controlname='dlgZugang']/button[@controlname='pbSpeichern']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'[100]  AVZ - Buchungen: Z']/button[@controlname='pbSpeichern']
+			</item>
 			<basepath>
 				/form[@title&gt;'[100]  AVZ - Buchungen: Z']
 			</basepath>
@@ -635,28 +646,85 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@title='[100]  AVZ - Anlagen']/titlebar[@accessiblerole='TitleBar']
 			</item>
-			<item
-			addcaps="tabpage,accessible"
-			capname="tabpage"
-			id="6cee223f-5d3d-40e1-9bab-9ea48fc9819c"
-			name="Bereiche"
-			refimgid="8a8ed30d-19b5-46d3-9331-3109a9537bac"
-			refpath="/form[@title='[100]  AVZ - Anlagen']/element[@instance='1']/element[@controlid='1']/tabpagelist[@accessiblename='Nummer']/tabpage[@accessiblename='Berei&amp;che']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@title='[100]  AVZ - Anlagen']/element[@instance='1']/element[@controlid='1']/tabpagelist[@accessiblename='Nummer']/tabpage[@accessiblename='Berei&amp;che']
-			</item>
-			<item
-			addcaps="text,accessible"
-			capname="text"
-			id="1025d232-cd17-4692-af8a-ded90fdef1b0"
-			name="Aktuell"
-			refimgid="ca63330b-e04f-4683-8fe5-803e7a5514b2"
-			refpath="/form[@title='[100]  AVZ - Anlagen']/element[@instance='1']/element[@class='WindowsForms10.EDIT.app.0.2804c64_r6_ad1' and @instance='0']/text[@accessiblename='Aktuell']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@title='[100]  AVZ - Anlagen']/element[@instance='1']/element[55]/text[@accessiblename='Aktuell']
-			</item>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="a03ddf2c-af0a-4f3d-ae36-e7009094cdee"
+			isrooted="True"
+			name="ClientArea"
+			refpath="/form[@controlname='frmAnla']/container[@controlname='ClientArea']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="tabpage,accessible"
+				capname="tabpage"
+				id="7e72fe63-bf4b-4226-a459-fd7452f6d0ac"
+				name="Bereiche"
+				refimgid="65af25b8-9ffb-480f-853f-89300af22597"
+				refpath="/form[@controlname='frmAnla']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='Berei&amp;che']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='[100]  AVZ - Anlagen']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='Berei&amp;che']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="7dff6536-6fc5-4b49-9de2-1789bf409da0"
+				name="ColBektNr1Row1"
+				refimgid="b2b0c704-d201-4d90-862e-d110765c9d24"
+				refpath="/form[@controlname='frmAnla']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']/container[@controlname='tblAnbe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBekt_nr1 Row 1']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='[100]  AVZ - Anlagen']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']/container[@controlname='tblAnbe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBekt_nr1 Row 1']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="e763ee90-db2f-4e06-a822-b80a12fe4785"
+				name="Aktuell"
+				refimgid="0322395a-7acc-4772-a4c7-d9bda3ed2296"
+				refpath="/form[@controlname='frmAnla']/container[@controlname='ClientArea']/text[@controlname='dfAnla_nr']/text[@accessiblename='Aktuell']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='[100]  AVZ - Anlagen']/container[@controlname='ClientArea']/text[@controlname='dfAnla_nr']/text[@accessiblename='Aktuell']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="21ebbce9-cead-40dd-b292-077f8b67bac3"
+				name="ColAnbeMengeRow1"
+				refimgid="ebcee87e-ab18-4fce-b6f2-64110324e4a9"
+				refpath="/form[@controlname='frmAnla']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']/container[@controlname='tblAnbe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAnbe_menge Row 1']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='[100]  AVZ - Anlagen']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']/container[@controlname='tblAnbe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAnbe_menge Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="020b6d85-9a71-49a1-a77f-0d5ae83939fc"
+				name="ColAnbeProzRow1"
+				refimgid="8fdecaf7-3e8f-4f74-a57c-92e08fc0c0cc"
+				refpath="/form[@controlname='frmAnla']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']/container[@controlname='tblAnbe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAnbe_proz Row 1']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='[100]  AVZ - Anlagen']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']/container[@controlname='tblAnbe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAnbe_proz Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="210711a9-7233-4a6d-9368-4f40e9fa2c89"
+				name="ColAnbePosRow1"
+				refimgid="9c9f4dad-c326-466a-b278-804de720efb7"
+				refpath="/form[@controlname='frmAnla']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']/container[@controlname='tblAnbe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAnbe_pos Row 1']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='[100]  AVZ - Anlagen']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']/container[@controlname='tblAnbe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAnbe_pos Row 1']
+				</item>
+				<basepath>
+					/form[@title='[100]  AVZ - Anlagen']/container[@controlname='ClientArea']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@title='[100]  AVZ - Anlagen']
 			</basepath>

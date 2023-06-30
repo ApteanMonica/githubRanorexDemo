@@ -132,8 +132,11 @@ namespace N_ANLA_003.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgZugang.TpWerte.CbAnlaKzafaber91'.", repo.DlgZugang.TpWerte.CbAnlaKzafaber91Info, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.DlgZugang.TpWerte.CbAnlaKzafaber91Info, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100AVZBuchungenZugang.WindowsForms10BUTTONApp02804c64R6A' at Center.", repo.Form100AVZBuchungenZugang.WindowsForms10BUTTONApp02804c64R6AInfo, new RecordItemIndex(9));
-            repo.Form100AVZBuchungenZugang.WindowsForms10BUTTONApp02804c64R6A.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100AVZBuchungenZugang.PbSpeichern' at Center.", repo.Form100AVZBuchungenZugang.PbSpeichernInfo, new RecordItemIndex(9));
+            repo.Form100AVZBuchungenZugang.PbSpeichern.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press.", new RecordItemIndex(10));
+            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }
 

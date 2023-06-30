@@ -89,17 +89,32 @@ namespace N_ANLA_003.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100AVZBuchungenZugang.ButtonFibuUEbernahme' at Center.", repo.Form100AVZBuchungenZugang.ButtonFibuUEbernahmeInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnla.PbBuchenBuchen' at Center.", repo.FrmAnla.PbBuchenBuchenInfo, new RecordItemIndex(0));
+            repo.FrmAnla.PbBuchenBuchen.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Down}{Right}{Return}'.", new RecordItemIndex(1));
+            Keyboard.Press("{Down}{Right}{Return}");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100AVZBuchungenZugang.ButtonFibuUEbernahme' at Center.", repo.Form100AVZBuchungenZugang.ButtonFibuUEbernahmeInfo, new RecordItemIndex(2));
             repo.Form100AVZBuchungenZugang.ButtonFibuUEbernahme.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0660{Tab}' with focus on 'DlgFibu.KontoNr'.", repo.DlgFibu.KontoNrInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgZugang.TitleBar100AVZBuchungenZugang'", repo.DlgZugang.TitleBar100AVZBuchungenZugangInfo, new ActionTimeout(120000), new RecordItemIndex(3));
+            repo.DlgZugang.TitleBar100AVZBuchungenZugangInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ - Buchungen: Zugang') on item 'DlgZugang.TitleBar100AVZBuchungenZugang'.", repo.DlgZugang.TitleBar100AVZBuchungenZugangInfo, new RecordItemIndex(4));
+            Validate.AttributeContains(repo.DlgZugang.TitleBar100AVZBuchungenZugangInfo, "Text", "[100]  AVZ - Buchungen: Zugang");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0660{Tab}' with focus on 'DlgFibu.KontoNr'.", repo.DlgFibu.KontoNrInfo, new RecordItemIndex(5));
             repo.DlgFibu.KontoNr.PressKeys("0660{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFibu.PbLaden' at Center.", repo.DlgFibu.PbLadenInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFibu.PbLaden' at Center.", repo.DlgFibu.PbLadenInfo, new RecordItemIndex(6));
             repo.DlgFibu.PbLaden.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'DlgFibu.Row_Column0_Belegnummer_01'.", repo.DlgFibu.Row_Column0_Belegnummer_01Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'DlgFibu.Row_Column0_Belegnummer_01'.", repo.DlgFibu.Row_Column0_Belegnummer_01Info, new RecordItemIndex(7));
             Validate.NotExists(repo.DlgFibu.Row_Column0_Belegnummer_01Info);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press.", new RecordItemIndex(8));
+            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }
 

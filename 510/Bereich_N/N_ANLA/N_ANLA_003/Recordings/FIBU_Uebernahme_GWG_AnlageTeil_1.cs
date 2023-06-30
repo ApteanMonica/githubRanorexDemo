@@ -42,8 +42,8 @@ namespace N_ANLA_003.Recordings
         public FIBU_Uebernahme_GWG_AnlageTeil_1()
         {
             GJ = "2022";
-            Bezeichnung_GWG_Anlage = "Anlage_003_02";
-            Anlagennummer_GWG_Anlage = "N_ANLA_003_02{Tab}";
+            Bezeichnung_GWG_Anlage = "N_ANLA_003_02";
+            Anlagennummer_GWG_Anlage = "003_02";
         }
 
         /// <summary>
