@@ -20,38 +20,49 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_BUAB_002.Recording
+namespace B_BUAB_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Kontrolle_Belege recording.
+    ///The Laden_Beleg recording.
     /// </summary>
-    [TestModule("4c6ba602-a45a-4715-a99e-09e33b2837fe", ModuleType.Recording, 1)]
-    public partial class Kontrolle_Belege : ITestModule
+    [TestModule("658b71b8-7ef2-42bd-943a-1690b51d3d59", ModuleType.Recording, 1)]
+    public partial class Laden_Beleg : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BUAB_002.B_BUAB_002Repository repository.
         /// </summary>
         public static global::B_BUAB_002.B_BUAB_002Repository repo = global::B_BUAB_002.B_BUAB_002Repository.Instance;
 
-        static Kontrolle_Belege instance = new Kontrolle_Belege();
+        static Laden_Beleg instance = new Laden_Beleg();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Kontrolle_Belege()
+        public Laden_Beleg()
         {
+            Beleg = "BAÄ_02";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Kontrolle_Belege Instance
+        public static Laden_Beleg Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable Beleg.
+        /// </summary>
+        [TestVariable("8e376be8-fbaf-4b84-ad33-ed4354cdbe4f")]
+        public string Beleg
+        {
+            get { return repo.Beleg; }
+            set { repo.Beleg = value; }
+        }
 
 #endregion
 
@@ -79,6 +90,22 @@ namespace B_BUAB_002.Recording
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.Beleg' at Center.", repo.TblB.BelegInfo, new RecordItemIndex(0));
+            repo.TblB.Beleg.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Beleg' with focus on 'TblB.Beleg'.", repo.TblB.BelegInfo, new RecordItemIndex(1));
+            repo.TblB.Beleg.EnsureVisible();
+            Keyboard.Press(Beleg);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(2));
+            repo.TblB.PbDataAccessLoad.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblB.FlexGrid_Tabelle.Row1'", repo.TblB.FlexGrid_Tabelle.Row1Info, new ActionTimeout(120000), new RecordItemIndex(3));
+            repo.TblB.FlexGrid_Tabelle.Row1Info.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg) on item 'TblB.FlexGrid_Tabelle.ColBelegnrRow1'.", repo.TblB.FlexGrid_Tabelle.ColBelegnrRow1Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColBelegnrRow1Info, "Text", Beleg);
+            
         }
 
 #region Image Feature Data

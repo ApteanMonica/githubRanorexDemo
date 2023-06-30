@@ -20,74 +20,76 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_BUAB_002.Recording
+namespace B_BUAB_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Erneut_Laden_Belege recording.
+    ///The StartAUT recording.
     /// </summary>
-    [TestModule("fe68341f-4031-4c85-a436-89b1336adf6c", ModuleType.Recording, 1)]
-    public partial class Erneut_Laden_Belege : ITestModule
+    [TestModule("a2749891-95fa-4292-b021-786add4593fa", ModuleType.Recording, 1)]
+    public partial class StartAUT : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BUAB_002.B_BUAB_002Repository repository.
         /// </summary>
         public static global::B_BUAB_002.B_BUAB_002Repository repo = global::B_BUAB_002.B_BUAB_002Repository.Instance;
 
-        static Erneut_Laden_Belege instance = new Erneut_Laden_Belege();
+        static StartAUT instance = new StartAUT();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Erneut_Laden_Belege()
+        public StartAUT()
         {
-            Buchungs_Jahr_Korrekt = "2019";
-            Buchungs_Monat_Korrekt = "12";
-            Beleg = "BAÄ_02";
+            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
+            Programm = "B_BUAB";
+            Tagesdatum = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Erneut_Laden_Belege Instance
+        public static StartAUT Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Buchungs_Jahr_Korrekt;
+        string _Startfile;
 
         /// <summary>
-        /// Gets or sets the value of variable Buchungs_Jahr_Korrekt.
+        /// Gets or sets the value of variable Startfile.
         /// </summary>
-        [TestVariable("eecf26cd-899d-43b8-a8bf-2a37b9b3bf11")]
-        public string Buchungs_Jahr_Korrekt
+        [TestVariable("620852cc-ffdb-40de-b681-36515095e859")]
+        public string Startfile
         {
-            get { return _Buchungs_Jahr_Korrekt; }
-            set { _Buchungs_Jahr_Korrekt = value; }
+            get { return _Startfile; }
+            set { _Startfile = value; }
         }
 
-        string _Buchungs_Monat_Korrekt;
+        string _Programm;
 
         /// <summary>
-        /// Gets or sets the value of variable Buchungs_Monat_Korrekt.
+        /// Gets or sets the value of variable Programm.
         /// </summary>
-        [TestVariable("31cd7617-8d83-4705-89b6-a7a13e895008")]
-        public string Buchungs_Monat_Korrekt
+        [TestVariable("a3f86488-96a5-497a-929a-167a0ecf7a21")]
+        public string Programm
         {
-            get { return _Buchungs_Monat_Korrekt; }
-            set { _Buchungs_Monat_Korrekt = value; }
+            get { return _Programm; }
+            set { _Programm = value; }
         }
 
+        string _Tagesdatum;
+
         /// <summary>
-        /// Gets or sets the value of variable Beleg.
+        /// Gets or sets the value of variable Tagesdatum.
         /// </summary>
-        [TestVariable("ef8dafd4-beb5-4b65-ab46-7f6175237774")]
-        public string Beleg
+        [TestVariable("f5317fa0-75fd-4c85-a202-48bc384c931d")]
+        public string Tagesdatum
         {
-            get { return repo.Beleg; }
-            set { repo.Beleg = value; }
+            get { return _Tagesdatum; }
+            set { _Tagesdatum = value; }
         }
 
 #endregion
@@ -116,17 +118,16 @@ namespace B_BUAB_002.Recording
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessNew' at Center.", repo.TblB.PbDataAccessNewInfo, new RecordItemIndex(0));
-            repo.TblB.PbDataAccessNew.Click();
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Beleg' with focus on 'TblB.Beleg'.", repo.TblB.BelegInfo, new RecordItemIndex(1));
-            repo.TblB.Beleg.PressKeys(Beleg);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblB.TitleBar100BuchungenAnzeigen'", repo.TblB.TitleBar100BuchungenAnzeigenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.TblB.TitleBar100BuchungenAnzeigenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(2));
-            repo.TblB.PbDataAccessLoad.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Buchungen anzeigen') on item 'TblB.TitleBar100BuchungenAnzeigen'.", repo.TblB.TitleBar100BuchungenAnzeigenInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.TblB.TitleBar100BuchungenAnzeigenInfo, "Text", "Buchungen anzeigen");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual ($Beleg=$Beleg) on item 'TblB.FlexGrid_Tabelle.ColBelegnrRow1'.", repo.TblB.FlexGrid_Tabelle.ColBelegnrRow1Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColBelegnrRow1Info, Beleg, Beleg);
+            Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("dd.MM.yyyy");
             
         }
 

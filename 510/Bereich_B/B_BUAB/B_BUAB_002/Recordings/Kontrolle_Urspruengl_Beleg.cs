@@ -20,36 +20,36 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_BUAB_002.Recording
+namespace B_BUAB_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Kontrolle_Stornobeleg recording.
+    ///The Kontrolle_Urspruengl_Beleg recording.
     /// </summary>
-    [TestModule("0c1d5a00-cbcb-4fab-bb22-db052c42c6c7", ModuleType.Recording, 1)]
-    public partial class Kontrolle_Stornobeleg : ITestModule
+    [TestModule("33333803-4366-4450-a5e4-ed660138d838", ModuleType.Recording, 1)]
+    public partial class Kontrolle_Urspruengl_Beleg : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BUAB_002.B_BUAB_002Repository repository.
         /// </summary>
         public static global::B_BUAB_002.B_BUAB_002Repository repo = global::B_BUAB_002.B_BUAB_002Repository.Instance;
 
-        static Kontrolle_Stornobeleg instance = new Kontrolle_Stornobeleg();
+        static Kontrolle_Urspruengl_Beleg instance = new Kontrolle_Urspruengl_Beleg();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Kontrolle_Stornobeleg()
+        public Kontrolle_Urspruengl_Beleg()
         {
             Beleg = "BAÄ_02";
-            Tagesdatum = "";
-            Stornobeleg = "BAÄ_04";
+            Tagesdatum = "08.06.2020";
+            Programm = "B_BUAB";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Kontrolle_Stornobeleg Instance
+        public static Kontrolle_Urspruengl_Beleg Instance
         {
             get { return instance; }
         }
@@ -61,29 +61,29 @@ namespace B_BUAB_002.Recording
         /// <summary>
         /// Gets or sets the value of variable Tagesdatum.
         /// </summary>
-        [TestVariable("764f9dba-4a4c-402a-989b-6c04fc2ea2bc")]
+        [TestVariable("60b3f462-b47c-4015-9dd9-003d5bf06db8")]
         public string Tagesdatum
         {
             get { return _Tagesdatum; }
             set { _Tagesdatum = value; }
         }
 
-        string _Stornobeleg;
+        string _Programm;
 
         /// <summary>
-        /// Gets or sets the value of variable Stornobeleg.
+        /// Gets or sets the value of variable Programm.
         /// </summary>
-        [TestVariable("cfec50a1-5a01-417d-ac95-54ef2b5f74bf")]
-        public string Stornobeleg
+        [TestVariable("bd5811c9-6f86-407c-bde3-1a23b542b347")]
+        public string Programm
         {
-            get { return _Stornobeleg; }
-            set { _Stornobeleg = value; }
+            get { return _Programm; }
+            set { _Programm = value; }
         }
 
         /// <summary>
         /// Gets or sets the value of variable Beleg.
         /// </summary>
-        [TestVariable("fb24ba3d-5b52-4c55-8827-1fc1129253a2")]
+        [TestVariable("d5805a5c-328d-44a7-b151-7943d9f5c81c")]
         public string Beleg
         {
             get { return repo.Beleg; }
@@ -119,8 +119,8 @@ namespace B_BUAB_002.Recording
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessNew' at Center.", repo.TblB.PbDataAccessNewInfo, new RecordItemIndex(0));
             repo.TblB.PbDataAccessNew.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Stornobeleg' with focus on 'TblB.Beleg'.", repo.TblB.BelegInfo, new RecordItemIndex(1));
-            repo.TblB.Beleg.PressKeys(Stornobeleg);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Beleg' with focus on 'TblB.Beleg'.", repo.TblB.BelegInfo, new RecordItemIndex(1));
+            repo.TblB.Beleg.PressKeys(Beleg);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(2));
             repo.TblB.PbDataAccessLoad.Click();
@@ -128,26 +128,20 @@ namespace B_BUAB_002.Recording
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblB.FlexGrid_Tabelle.Row1'", repo.TblB.FlexGrid_Tabelle.Row1Info, new ActionTimeout(120000), new RecordItemIndex(3));
             repo.TblB.FlexGrid_Tabelle.Row1Info.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Stornobeleg) on item 'TblB.FlexGrid_Tabelle.ColBelegnrRow1'.", repo.TblB.FlexGrid_Tabelle.ColBelegnrRow1Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColBelegnrRow1Info, "Text", Stornobeleg);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg) on item 'TblB.FlexGrid_Tabelle.ColBelegnrRow1'.", repo.TblB.FlexGrid_Tabelle.ColBelegnrRow1Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColBelegnrRow1Info, "Text", Beleg);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'TblB.FlexGrid_Tabelle.ColBusaDtstoloeRow1'.", repo.TblB.FlexGrid_Tabelle.ColBusaDtstoloeRow1Info, new RecordItemIndex(5));
-            Validate.AttributeContains(repo.TblB.FlexGrid_Tabelle.ColBusaDtstoloeRow1Info, "Text", Tagesdatum);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9') on item 'TblB.FlexGrid_Tabelle.ColTypRow1'.", repo.TblB.FlexGrid_Tabelle.ColTypRow1Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9') on item 'TblB.FlexGrid_Tabelle.ColTypRow1'.", repo.TblB.FlexGrid_Tabelle.ColTypRow1Info, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColTypRow1Info, "Text", "9");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9') on item 'TblB.FlexGrid_Tabelle.ColUststatusRow1'.", repo.TblB.FlexGrid_Tabelle.ColUststatusRow1Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9') on item 'TblB.FlexGrid_Tabelle.ColUststatusRow1'.", repo.TblB.FlexGrid_Tabelle.ColUststatusRow1Info, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColUststatusRow1Info, "Text", "9");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg) on item 'TblB.FlexGrid_Tabelle.ColBusaRefbelegnrRow1'.", repo.TblB.FlexGrid_Tabelle.ColBusaRefbelegnrRow1Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColBusaRefbelegnrRow1Info, "Text", Beleg);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'TblB.FlexGrid_Tabelle.ColBusaDtstoloeRow1'.", repo.TblB.FlexGrid_Tabelle.ColBusaDtstoloeRow1Info, new RecordItemIndex(7));
+            Validate.AttributeContains(repo.TblB.FlexGrid_Tabelle.ColBusaDtstoloeRow1Info, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2') on item 'TblB.FlexGrid_Tabelle.ColBusaRefkeybelRow1'.", repo.TblB.FlexGrid_Tabelle.ColBusaRefkeybelRow1Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColBusaRefkeybelRow1Info, "Text", "2");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'TblB.FlexGrid_Tabelle.ColBusaRefkeyposRow1'.", repo.TblB.FlexGrid_Tabelle.ColBusaRefkeyposRow1Info, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColBusaRefkeyposRow1Info, "Text", "1");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Programm) on item 'TblB.FlexGrid_Tabelle.ColBusaProgstoloeRow1'.", repo.TblB.FlexGrid_Tabelle.ColBusaProgstoloeRow1Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColBusaProgstoloeRow1Info, "Text", Programm);
             
         }
 

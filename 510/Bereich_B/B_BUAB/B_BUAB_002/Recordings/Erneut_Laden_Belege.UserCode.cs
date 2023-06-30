@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_BUAB_002.Recording
+namespace B_BUAB_002.Recordings
 {
-    public partial class Stornnobeleg_Eingaben_Falsch
+    public partial class Erneut_Laden_Belege
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

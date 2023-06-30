@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_BUAB_002.Recording
+namespace B_BUAB_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT recording.
+    ///The Kontrolle_Belege recording.
     /// </summary>
-    [TestModule("744ccd6e-2837-4058-a339-4f08954bb4e4", ModuleType.Recording, 1)]
-    public partial class CloseAUT : ITestModule
+    [TestModule("4c6ba602-a45a-4715-a99e-09e33b2837fe", ModuleType.Recording, 1)]
+    public partial class Kontrolle_Belege : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BUAB_002.B_BUAB_002Repository repository.
         /// </summary>
         public static global::B_BUAB_002.B_BUAB_002Repository repo = global::B_BUAB_002.B_BUAB_002Repository.Instance;
 
-        static CloseAUT instance = new CloseAUT();
+        static Kontrolle_Belege instance = new Kontrolle_Belege();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT()
+        public Kontrolle_Belege()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT Instance
+        public static Kontrolle_Belege Instance
         {
             get { return instance; }
         }
@@ -79,9 +79,6 @@ namespace B_BUAB_002.Recording
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblB.TitleBar100BuchungenAnzeigen'.", repo.TblB.TitleBar100BuchungenAnzeigenInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TblB.TitleBar100BuchungenAnzeigen, 1000);
-            
         }
 
 #region Image Feature Data
