@@ -79,23 +79,41 @@ namespace N_ANLA_003.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='003_02') on item 'Form100AVZBuchungenZugang.Nummer'.", repo.Form100AVZBuchungenZugang.NummerInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.Form100AVZBuchungenZugang.NummerInfo, "Text", "003_02");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='003_02') on item 'DlgZugang.Nummer'.", repo.DlgZugang.NummerInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.DlgZugang.NummerInfo, "Text", "003_02");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='N_ANLA_003_02') on item 'Form100AVZBuchungenZugang.Bez'.", repo.Form100AVZBuchungenZugang.BezInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.Form100AVZBuchungenZugang.BezInfo, "Text", "N_ANLA_003_02");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='N_ANLA_003_02') on item 'DlgZugang.Bez'.", repo.DlgZugang.BezInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.DlgZugang.BezInfo, "Text", "N_ANLA_003_02");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0680') on item 'Form100AVZBuchungenZugang.Konto'.", repo.Form100AVZBuchungenZugang.KontoInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.Form100AVZBuchungenZugang.KontoInfo, "Text", "0680");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0680') on item 'DlgZugang.Konto'.", repo.DlgZugang.KontoInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.DlgZugang.KontoInfo, "Text", "0680");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='03042022') on item 'DlgZugang.Zugangsdatum'.", repo.DlgZugang.ZugangsdatumInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.DlgZugang.ZugangsdatumInfo, "Text", "03042022");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='03.04.2022') on item 'DlgZugang.Registerkarte_Werte.Zugangsdatum'.", repo.DlgZugang.Registerkarte_Werte.ZugangsdatumInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.DlgZugang.Registerkarte_Werte.ZugangsdatumInfo, "Text", "03.04.2022");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='03.04.2022') on item 'Form100AVZBuchungenZugang.Inbetriebnahme'.", repo.Form100AVZBuchungenZugang.InbetriebnahmeInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.Form100AVZBuchungenZugang.InbetriebnahmeInfo, "Text", "03.04.2022");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='03.04.2022') on item 'DlgZugang.Registerkarte_Werte.Inbetriebnahme'.", repo.DlgZugang.Registerkarte_Werte.InbetriebnahmeInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.DlgZugang.Registerkarte_Werte.InbetriebnahmeInfo, "Text", "03.04.2022");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='333,33') on item 'Form100AVZBuchungenZugang.AHKBetrag'.", repo.Form100AVZBuchungenZugang.AHKBetragInfo, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.Form100AVZBuchungenZugang.AHKBetragInfo, "Text", "333,33");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='333,33') on item 'DlgZugang.Registerkarte_Werte.AHKBetrag'.", repo.DlgZugang.Registerkarte_Werte.AHKBetragInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.DlgZugang.Registerkarte_Werte.AHKBetragInfo, "Text", "333,33");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgZugang.CbAnlaKzgwg'.", repo.DlgZugang.CbAnlaKzgwgInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.DlgZugang.CbAnlaKzgwgInfo, "Checked", "True");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='aktiv') on item 'DlgZugang.CmbAnlaStatus'.", repo.DlgZugang.CmbAnlaStatusInfo, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.DlgZugang.CmbAnlaStatusInfo, "Text", "aktiv");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='7010') on item 'DlgZugang.Registerkarte_Werte.TextAfA'.", repo.DlgZugang.Registerkarte_Werte.TextAfAInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.DlgZugang.Registerkarte_Werte.TextAfAInfo, "Text", "7010");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='GWG') on item 'DlgZugang.Registerkarte_Werte.CmbAnla1AfaBez'.", repo.DlgZugang.Registerkarte_Werte.CmbAnla1AfaBezInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.DlgZugang.Registerkarte_Werte.CmbAnla1AfaBezInfo, "Text", "GWG");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgZugang.PbSpeichern' at Center.", repo.DlgZugang.PbSpeichernInfo, new RecordItemIndex(10));
+            repo.DlgZugang.PbSpeichern.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press.", new RecordItemIndex(11));
+            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }
 

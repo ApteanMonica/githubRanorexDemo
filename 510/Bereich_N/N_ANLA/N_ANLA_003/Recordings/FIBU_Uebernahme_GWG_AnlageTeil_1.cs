@@ -42,8 +42,8 @@ namespace N_ANLA_003.Recordings
         public FIBU_Uebernahme_GWG_AnlageTeil_1()
         {
             GJ = "2022";
-            Bezeichnung_GWG_Anlage = "Anlage_003_02";
-            Anlagennummer_GWG_Anlage = "N_ANLA_003_02{Tab}";
+            Bezeichnung_GWG_Anlage = "N_ANLA_003_02";
+            Anlagennummer_GWG_Anlage = "003_02";
         }
 
         /// <summary>
@@ -124,8 +124,8 @@ namespace N_ANLA_003.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ - Buchungen: Zugang') on item 'DlgZugang.TitleBar100AVZBuchungenZugang'.", repo.DlgZugang.TitleBar100AVZBuchungenZugangInfo, new RecordItemIndex(1));
             Validate.AttributeContains(repo.DlgZugang.TitleBar100AVZBuchungenZugangInfo, "Text", "[100]  AVZ - Buchungen: Zugang");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100AVZBuchungenZugang.PbNeu' at Center.", repo.Form100AVZBuchungenZugang.PbNeuInfo, new RecordItemIndex(2));
-            repo.Form100AVZBuchungenZugang.PbNeu.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgZugang.PbNeu' at Center.", repo.DlgZugang.PbNeuInfo, new RecordItemIndex(2));
+            repo.DlgZugang.PbNeu.Click();
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgZugang.CbNkr' at Center.", repo.DlgZugang.CbNkrInfo, new RecordItemIndex(3));
             repo.DlgZugang.CbNkr.Click();
