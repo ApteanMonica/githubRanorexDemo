@@ -1998,6 +1998,7 @@ namespace B_BUCH_002
         public partial class B_BUAB_TblBAppFolder : RepoGenBaseFolder
         {
             B_BUCH_002RepositoryFolders.Tabelle_FlexGridFolder _tabelle_flexgrid;
+            RepoItemInfo _titlebar100buchungenanzeigenInfo;
             RepoItemInfo _pbdataaccessloadInfo;
 
             /// <summary>
@@ -2007,6 +2008,7 @@ namespace B_BUCH_002
                     base("B_BUAB_TblB", "/form[@controlname='tblB']", parentFolder, 30000, null, true, "721c7b57-5227-4b45-b702-d008a403eb16", "")
             {
                 _tabelle_flexgrid = new B_BUCH_002RepositoryFolders.Tabelle_FlexGridFolder(this);
+                _titlebar100buchungenanzeigenInfo = new RepoItemInfo(this, "TitleBar100BuchungenAnzeigen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "d43caf8f-8c98-495f-b40a-b81d4be267d2");
                 _pbdataaccessloadInfo = new RepoItemInfo(this, "PbDataAccessLoad", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Load']", "", 30000, null, "6be5b8b7-f8ae-448b-9517-aeeaa65c3a7a");
             }
 
@@ -2031,6 +2033,30 @@ namespace B_BUCH_002
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100BuchungenAnzeigen item.
+            /// </summary>
+            [RepositoryItem("d43caf8f-8c98-495f-b40a-b81d4be267d2")]
+            public virtual Ranorex.TitleBar TitleBar100BuchungenAnzeigen
+            {
+                get
+                {
+                    return _titlebar100buchungenanzeigenInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100BuchungenAnzeigen item info.
+            /// </summary>
+            [RepositoryItemInfo("d43caf8f-8c98-495f-b40a-b81d4be267d2")]
+            public virtual RepoItemInfo TitleBar100BuchungenAnzeigenInfo
+            {
+                get
+                {
+                    return _titlebar100buchungenanzeigenInfo;
                 }
             }
 

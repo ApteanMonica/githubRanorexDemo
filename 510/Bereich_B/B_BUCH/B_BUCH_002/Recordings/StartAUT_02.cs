@@ -30,9 +30,9 @@ namespace B_BUCH_002.Recordings
     public partial class StartAUT_02 : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_BUCH_002.B_BUCH_001Repository repository.
+        /// Holds an instance of the global::B_BUCH_002.B_BUCH_002Repository repository.
         /// </summary>
-        public static global::B_BUCH_002.B_BUCH_001Repository repo = global::B_BUCH_002.B_BUCH_001Repository.Instance;
+        public static global::B_BUCH_002.B_BUCH_002Repository repo = global::B_BUCH_002.B_BUCH_002Repository.Instance;
 
         static StartAUT_02 instance = new StartAUT_02();
 
@@ -108,11 +108,11 @@ namespace B_BUCH_002.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm2 in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm2, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblB.TitleBar100BuchungenAnzeigen'", repo.TblB.TitleBar100BuchungenAnzeigenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.TblB.TitleBar100BuchungenAnzeigenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'B_BUAB_TblB.TitleBar100BuchungenAnzeigen'", repo.B_BUAB_TblB.TitleBar100BuchungenAnzeigenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.B_BUAB_TblB.TitleBar100BuchungenAnzeigenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Buchungen') on item 'TblB.TitleBar100BuchungenAnzeigen'.", repo.TblB.TitleBar100BuchungenAnzeigenInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.TblB.TitleBar100BuchungenAnzeigenInfo, "Text", "Buchungen");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Buchungen') on item 'B_BUAB_TblB.TitleBar100BuchungenAnzeigen'.", repo.B_BUAB_TblB.TitleBar100BuchungenAnzeigenInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.B_BUAB_TblB.TitleBar100BuchungenAnzeigenInfo, "Text", "Buchungen");
             
         }
 
