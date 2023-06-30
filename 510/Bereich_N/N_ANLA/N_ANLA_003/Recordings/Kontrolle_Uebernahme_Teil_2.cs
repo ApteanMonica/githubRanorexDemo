@@ -105,35 +105,35 @@ namespace N_ANLA_003.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Frist_stille_Reserve) on item 'DlgZugang.TpWerte.DfAnlaStrfrist'.", repo.DlgZugang.TpWerte.DfAnlaStrfristInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.DlgZugang.TpWerte.DfAnlaStrfristInfo, "Text", Frist_stille_Reserve);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Frist_stille_Reserve) on item 'DlgZugang.Registerkarte_Werte.DfAnlaStrfrist'.", repo.DlgZugang.Registerkarte_Werte.DfAnlaStrfristInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.DlgZugang.Registerkarte_Werte.DfAnlaStrfristInfo, "Text", Frist_stille_Reserve);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Frist_IFB) on item 'DlgZugang.TpWerte.DfAnlaIfbfrist'.", repo.DlgZugang.TpWerte.DfAnlaIfbfristInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.DlgZugang.TpWerte.DfAnlaIfbfristInfo, "Text", Frist_IFB);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Frist_IFB) on item 'DlgZugang.Registerkarte_Werte.DfAnlaIfbfrist'.", repo.DlgZugang.Registerkarte_Werte.DfAnlaIfbfristInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.DlgZugang.Registerkarte_Werte.DfAnlaIfbfristInfo, "Text", Frist_IFB);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0660') on item 'DlgZugang.TpWerte.TextAfA'.", repo.DlgZugang.TpWerte.TextAfAInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.DlgZugang.TpWerte.TextAfAInfo, "Text", "0660");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0660') on item 'DlgZugang.Registerkarte_Werte.TextAfA'.", repo.DlgZugang.Registerkarte_Werte.TextAfAInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.DlgZugang.Registerkarte_Werte.TextAfAInfo, "Text", "0660");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgZugang.TpWerte.DfKtoNrAfaindirekt'.", repo.DlgZugang.TpWerte.DfKtoNrAfaindirektInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.DlgZugang.TpWerte.DfKtoNrAfaindirektInfo, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'DlgZugang.Registerkarte_Werte.DfKtoNrAfaindirekt'.", repo.DlgZugang.Registerkarte_Werte.DfKtoNrAfaindirektInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.DlgZugang.Registerkarte_Werte.DfKtoNrAfaindirektInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgZugang.TpWerte.CbAnlaKeinekalkzins'.", repo.DlgZugang.TpWerte.CbAnlaKeinekalkzinsInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.DlgZugang.TpWerte.CbAnlaKeinekalkzinsInfo, "Checked", "True");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgZugang.Registerkarte_Werte.CbAnlaKeinekalkzins'.", repo.DlgZugang.Registerkarte_Werte.CbAnlaKeinekalkzinsInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.DlgZugang.Registerkarte_Werte.CbAnlaKeinekalkzinsInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgZugang.TpWerte.CbKeineAHK'.", repo.DlgZugang.TpWerte.CbKeineAHKInfo, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.DlgZugang.TpWerte.CbKeineAHKInfo, "Checked", "False");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgZugang.Registerkarte_Werte.CbKeineAHK'.", repo.DlgZugang.Registerkarte_Werte.CbKeineAHKInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.DlgZugang.Registerkarte_Werte.CbKeineAHKInfo, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Linear, monatlich') on item 'DlgZugang.TpWerte.CmbAnla1AfaBez'.", repo.DlgZugang.TpWerte.CmbAnla1AfaBezInfo, new RecordItemIndex(6));
-            Validate.AttributeContains(repo.DlgZugang.TpWerte.CmbAnla1AfaBezInfo, "Text", "Linear, monatlich");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Linear, monatlich') on item 'DlgZugang.Registerkarte_Werte.CmbAnla1AfaBez'.", repo.DlgZugang.Registerkarte_Werte.CmbAnla1AfaBezInfo, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.DlgZugang.Registerkarte_Werte.CmbAnla1AfaBezInfo, "Text", "Linear, monatlich");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgZugang.TpWerte.CbAnlaKzafaber1'.", repo.DlgZugang.TpWerte.CbAnlaKzafaber1Info, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.DlgZugang.TpWerte.CbAnlaKzafaber1Info, "Checked", "False");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgZugang.Registerkarte_Werte.CbAnlaKzafaber1'.", repo.DlgZugang.Registerkarte_Werte.CbAnlaKzafaber1Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.DlgZugang.Registerkarte_Werte.CbAnlaKzafaber1Info, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgZugang.TpWerte.CbAnlaKzafaber91'.", repo.DlgZugang.TpWerte.CbAnlaKzafaber91Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.DlgZugang.TpWerte.CbAnlaKzafaber91Info, "Checked", "False");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgZugang.Registerkarte_Werte.CbAnlaKzafaber91'.", repo.DlgZugang.Registerkarte_Werte.CbAnlaKzafaber91Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.DlgZugang.Registerkarte_Werte.CbAnlaKzafaber91Info, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100AVZBuchungenZugang.PbSpeichern' at Center.", repo.Form100AVZBuchungenZugang.PbSpeichernInfo, new RecordItemIndex(9));
-            repo.Form100AVZBuchungenZugang.PbSpeichern.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgZugang.PbSpeichern' at Center.", repo.DlgZugang.PbSpeichernInfo, new RecordItemIndex(9));
+            repo.DlgZugang.PbSpeichern.Click();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press.", new RecordItemIndex(10));
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);

@@ -43,6 +43,7 @@ namespace N_ANLA_003.Recordings
         {
             Anlage_1 = "003_01";
             Bezeichnung_Anlage_1 = "N_ANLA_003_01";
+            GJ = "2022";
         }
 
         /// <summary>
@@ -77,6 +78,18 @@ namespace N_ANLA_003.Recordings
         {
             get { return _Bezeichnung_Anlage_1; }
             set { _Bezeichnung_Anlage_1 = value; }
+        }
+
+        string _GJ;
+
+        /// <summary>
+        /// Gets or sets the value of variable GJ.
+        /// </summary>
+        [TestVariable("42a5c83d-2e49-4a39-aaa7-9c8a48c77d18")]
+        public string GJ
+        {
+            get { return _GJ; }
+            set { _GJ = value; }
         }
 
 #endregion
@@ -132,8 +145,8 @@ namespace N_ANLA_003.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ - Buchungen: Zugang') on item 'DlgZugang.TitleBar100AVZBuchungenZugang'.", repo.DlgZugang.TitleBar100AVZBuchungenZugangInfo, new RecordItemIndex(8));
             Validate.AttributeContains(repo.DlgZugang.TitleBar100AVZBuchungenZugangInfo, "Text", "[100]  AVZ - Buchungen: Zugang");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2022') on item 'Form100AVZBuchungenZugang.Geschaeftsjahr'.", repo.Form100AVZBuchungenZugang.GeschaeftsjahrInfo, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.Form100AVZBuchungenZugang.GeschaeftsjahrInfo, "Text", "2022");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$GJ) on item 'DlgZugang.Geschaeftsjahr'.", repo.DlgZugang.GeschaeftsjahrInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.DlgZugang.GeschaeftsjahrInfo, "Text", GJ);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgZugang.CbNkr' at Center.", repo.DlgZugang.CbNkrInfo, new RecordItemIndex(10));
             repo.DlgZugang.CbNkr.Click();

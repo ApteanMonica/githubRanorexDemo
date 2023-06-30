@@ -95,8 +95,8 @@ namespace N_ANLA_003.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Down}{Right}{Return}'.", new RecordItemIndex(1));
             Keyboard.Press("{Down}{Right}{Return}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100AVZBuchungenZugang.ButtonFibuUEbernahme' at Center.", repo.Form100AVZBuchungenZugang.ButtonFibuUEbernahmeInfo, new RecordItemIndex(2));
-            repo.Form100AVZBuchungenZugang.ButtonFibuUEbernahme.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgZugang.ButtonFibuUEbernahme' at Center.", repo.DlgZugang.ButtonFibuUEbernahmeInfo, new RecordItemIndex(2));
+            repo.DlgZugang.ButtonFibuUEbernahme.Click();
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgZugang.TitleBar100AVZBuchungenZugang'", repo.DlgZugang.TitleBar100AVZBuchungenZugangInfo, new ActionTimeout(120000), new RecordItemIndex(3));
             repo.DlgZugang.TitleBar100AVZBuchungenZugangInfo.WaitForExists(120000);
