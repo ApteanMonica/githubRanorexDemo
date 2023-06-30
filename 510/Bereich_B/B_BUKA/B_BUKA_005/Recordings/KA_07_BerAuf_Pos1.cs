@@ -82,32 +82,32 @@ namespace B_BUKA_005.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuka.FlexGrid.Row5Column0' at Center.", repo.TblBuka.FlexGrid.Row5Column0Info, new RecordItemIndex(0));
             repo.TblBuka.FlexGrid.Row5Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuka.FlexGrid.FlexGrid1' at LowerCenter.", repo.TblBuka.FlexGrid.FlexGrid1Info, new RecordItemIndex(1));
-            repo.TblBuka.FlexGrid.FlexGrid1.Click(Location.LowerCenter);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuka.FlexGrid.Row5Column0' at Center.", repo.TblBuka.FlexGrid.Row5Column0Info, new RecordItemIndex(2));
-            repo.TblBuka.FlexGrid.Row5Column0.Click();
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuka.PbToolBarItemsBerAufteilung' at Center.", repo.TblBuka.PbToolBarItemsBerAufteilungInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuka.PbToolBarItemsBerAufteilung' at Center.", repo.TblBuka.PbToolBarItemsBerAufteilungInfo, new RecordItemIndex(1));
             repo.TblBuka.PbToolBarItemsBerAufteilung.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblBerAufteilung.TitleBar100BereichsAufteilung'", repo.TblBerAufteilung.TitleBar100BereichsAufteilungInfo, new ActionTimeout(60000), new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblBerAufteilung.TitleBar100BereichsAufteilung'", repo.TblBerAufteilung.TitleBar100BereichsAufteilungInfo, new ActionTimeout(60000), new RecordItemIndex(2));
             repo.TblBerAufteilung.TitleBar100BereichsAufteilungInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bereichs-Aufteilung') on item 'TblBerAufteilung.TitleBar100BereichsAufteilung'.", repo.TblBerAufteilung.TitleBar100BereichsAufteilungInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bereichs-Aufteilung') on item 'TblBerAufteilung.TitleBar100BereichsAufteilung'.", repo.TblBerAufteilung.TitleBar100BereichsAufteilungInfo, new RecordItemIndex(3));
             Validate.AttributeContains(repo.TblBerAufteilung.TitleBar100BereichsAufteilungInfo, "Text", "Bereichs-Aufteilung");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBerAufteilung.PbSpeichern' at Center.", repo.TblBerAufteilung.PbSpeichernInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBerAufteilung.PbSpeichern' at Center.", repo.TblBerAufteilung.PbSpeichernInfo, new RecordItemIndex(4));
             repo.TblBerAufteilung.PbSpeichern.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBerAufteilung.FlexGrid1.FlexGrid' at Center.", repo.TblBerAufteilung.FlexGrid1.FlexGridInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBerAufteilung.FlexGrid1.FlexGrid' at Center.", repo.TblBerAufteilung.FlexGrid1.FlexGridInfo, new RecordItemIndex(5));
             repo.TblBerAufteilung.FlexGrid1.FlexGrid.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'TblBerAufteilung.FlexGrid1.FlexGrid' at Center.", repo.TblBerAufteilung.FlexGrid1.FlexGridInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'TblBerAufteilung.FlexGrid1.FlexGrid' at Center.", repo.TblBerAufteilung.FlexGrid1.FlexGridInfo, new RecordItemIndex(6));
             repo.TblBerAufteilung.FlexGrid1.FlexGrid.Click(System.Windows.Forms.MouseButtons.Right);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBUKA.ZeileEinfuegen' at Center.", repo.BBUKA.ZeileEinfuegenInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBUKA.ZeileEinfuegen' at Center.", repo.BBUKA.ZeileEinfuegenInfo, new RecordItemIndex(7));
             repo.BBUKA.ZeileEinfuegen.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBerAufteilung.FlexGrid1.ColPosRow1' at Center.", repo.TblBerAufteilung.FlexGrid1.ColPosRow1Info, new RecordItemIndex(8));
+            repo.TblBerAufteilung.FlexGrid1.ColPosRow1.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '200' with focus on 'TblBerAufteilung.FlexGrid1.ColBetragBRow1'.", repo.TblBerAufteilung.FlexGrid1.ColBetragBRow1Info, new RecordItemIndex(10));
             repo.TblBerAufteilung.FlexGrid1.ColBetragBRow1.PressKeys("200");
@@ -118,16 +118,19 @@ namespace B_BUKA_005.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '10' with focus on 'TblBerAufteilung.FlexGrid1.ColBektNr1Row1'.", repo.TblBerAufteilung.FlexGrid1.ColBektNr1Row1Info, new RecordItemIndex(12));
             repo.TblBerAufteilung.FlexGrid1.ColBektNr1Row1.PressKeys("10");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='200,00') on item 'TblBerAufteilung.FlexGrid1.ColBetragBRow1'.", repo.TblBerAufteilung.FlexGrid1.ColBetragBRow1Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='200,00') on item 'TblBerAufteilung.FlexGrid1.ColBetragBRow1'.", repo.TblBerAufteilung.FlexGrid1.ColBetragBRow1Info, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.TblBerAufteilung.FlexGrid1.ColBetragBRow1Info, "Text", "200,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4000') on item 'TblBerAufteilung.FlexGrid1.ColKtoNrRow1'.", repo.TblBerAufteilung.FlexGrid1.ColKtoNrRow1Info, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4000') on item 'TblBerAufteilung.FlexGrid1.ColKtoNrRow1'.", repo.TblBerAufteilung.FlexGrid1.ColKtoNrRow1Info, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.TblBerAufteilung.FlexGrid1.ColKtoNrRow1Info, "Text", "4000");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='M20') on item 'TblBerAufteilung.FlexGrid1.ColUstCdRow1'.", repo.TblBerAufteilung.FlexGrid1.ColUstCdRow1Info, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='M20') on item 'TblBerAufteilung.FlexGrid1.ColUstCdRow1'.", repo.TblBerAufteilung.FlexGrid1.ColUstCdRow1Info, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.TblBerAufteilung.FlexGrid1.ColUstCdRow1Info, "Text", "M20");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='33,33') on item 'TblBerAufteilung.FlexGrid1.ColUstbetragRow1'.", repo.TblBerAufteilung.FlexGrid1.ColUstbetragRow1Info, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='33,33') on item 'TblBerAufteilung.FlexGrid1.ColUstbetragRow1'.", repo.TblBerAufteilung.FlexGrid1.ColUstbetragRow1Info, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.TblBerAufteilung.FlexGrid1.ColUstbetragRow1Info, "Text", "33,33");
             
         }

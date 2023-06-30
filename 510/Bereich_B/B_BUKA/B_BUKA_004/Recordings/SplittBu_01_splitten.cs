@@ -116,8 +116,8 @@ namespace B_BUKA_004.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(7));
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'V00' with focus on 'TblBuka.SomeText_Textfeld_zum_Einfuegen_Ust_Code'.", repo.TblBuka.SomeText_Textfeld_zum_Einfuegen_Ust_CodeInfo, new RecordItemIndex(8));
-            repo.TblBuka.SomeText_Textfeld_zum_Einfuegen_Ust_Code.PressKeys("V00");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'V00' with focus on 'TblBuka.FlexGrid1.ColUstcodeRow4'.", repo.TblBuka.FlexGrid1.ColUstcodeRow4Info, new RecordItemIndex(8));
+            repo.TblBuka.FlexGrid1.ColUstcodeRow4.PressKeys("V00");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(9));
             Keyboard.Press("{Tab}");

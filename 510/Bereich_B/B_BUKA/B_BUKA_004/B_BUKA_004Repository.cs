@@ -116,7 +116,6 @@ namespace B_BUKA_004
             RepoItemInfo _pbtoolbaritemssplittungInfo;
             RepoItemInfo _pbstandard1pruefenInfo;
             RepoItemInfo _pagerightInfo;
-            RepoItemInfo _sometext_textfeld_zum_einfuegen_ust_codeInfo;
 
             /// <summary>
             /// Creates a new TblBuka  folder.
@@ -133,7 +132,6 @@ namespace B_BUKA_004
                 _pbtoolbaritemssplittungInfo = new RepoItemInfo(this, "PbToolBarItemsSplittung", "container[@controlname='RibbonBar']/container[@controlname='ToolBarItemsGroup']/button[@controlname='pbToolBarItems_Splittung']", "", 30000, null, "bb943f6a-b926-4206-9bfa-e06847e59af4");
                 _pbstandard1pruefenInfo = new RepoItemInfo(this, "PbStandard1Pruefen", "container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbStandard1']", "", 30000, null, "040c7f7d-7665-40b6-b964-fbe7f391e6d4");
                 _pagerightInfo = new RepoItemInfo(this, "PageRight", "container[@controlname='ChildTableWindow']/element[@controlname='splitGrid']/scrollbar[@style='Horizontal']/button[@text='PageRight']", "", 30000, null, "2d221cb2-5e86-46a2-9fc5-a6e4a00a785d");
-                _sometext_textfeld_zum_einfuegen_ust_codeInfo = new RepoItemInfo(this, "SomeText_Textfeld_zum_Einfuegen_Ust_Code", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/text[@controltypename='']", "", 30000, null, "5219616d-877f-45fa-b416-523432acdf8a");
             }
 
             /// <summary>
@@ -325,30 +323,6 @@ namespace B_BUKA_004
                 get
                 {
                     return _pagerightInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SomeText_Textfeld_zum_Einfuegen_Ust_Code item.
-            /// </summary>
-            [RepositoryItem("5219616d-877f-45fa-b416-523432acdf8a")]
-            public virtual Ranorex.Text SomeText_Textfeld_zum_Einfuegen_Ust_Code
-            {
-                get
-                {
-                    return _sometext_textfeld_zum_einfuegen_ust_codeInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SomeText_Textfeld_zum_Einfuegen_Ust_Code item info.
-            /// </summary>
-            [RepositoryItemInfo("5219616d-877f-45fa-b416-523432acdf8a")]
-            public virtual RepoItemInfo SomeText_Textfeld_zum_Einfuegen_Ust_CodeInfo
-            {
-                get
-                {
-                    return _sometext_textfeld_zum_einfuegen_ust_codeInfo;
                 }
             }
 

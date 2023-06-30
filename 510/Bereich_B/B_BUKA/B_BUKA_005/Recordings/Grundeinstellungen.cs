@@ -151,8 +151,8 @@ namespace B_BUKA_005.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'TblBuka.ToolBar.CbKL'.", repo.TblBuka.ToolBar.CbKLInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.TblBuka.ToolBar.CbKLInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'K/L') on item 'TblBuka.FlexGrid.ColBukaKlRow0_Spaltenueberschrift'.", repo.TblBuka.FlexGrid.ColBukaKlRow0_SpaltenueberschriftInfo, new RecordItemIndex(11));
-            Validate.AttributeContains(repo.TblBuka.FlexGrid.ColBukaKlRow0_SpaltenueberschriftInfo, "Text", "K/L");
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblBuka.FlexGrid.ColBukaKlRow1'.", repo.TblBuka.FlexGrid.ColBukaKlRow1Info, new RecordItemIndex(11));
+            Validate.Exists(repo.TblBuka.FlexGrid.ColBukaKlRow1Info);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Saldovortrag') on item 'TblBuka.FlexGrid.ColTextRow1'.", repo.TblBuka.FlexGrid.ColTextRow1Info, new RecordItemIndex(12));
             Validate.AttributeContains(repo.TblBuka.FlexGrid.ColTextRow1Info, "Text", "Saldovortrag");
