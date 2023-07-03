@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="49c7f21e-1f9e-488f-b817-d1324318154b"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Host_lesen"
+	namespace="B_BUCH_006.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="431f76e2-98f1-4d1e-a676-89f14051b5ad"
+		name="computer">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="GetHost"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="computer">
+				</binding>
+			</bindings>
+			<arguments
+			id="18bb56e1-6acf-4e7b-9e63-cca648e24398">
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="f271d72c-fd1b-40ca-8529-17a49fb6dba7"
+	name="B_BUCH_006Repository"
+	relativepath="..\B_BUCH_006Repository.rxrep">
+		<codegen
+		classname="B_BUCH_006Repository"
+		namespace="B_BUCH_006">
+		</codegen>
+		<rootfolder
+		id="557dff2c-feec-47f0-86ea-20ccf5bcb527"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Host_lesen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
