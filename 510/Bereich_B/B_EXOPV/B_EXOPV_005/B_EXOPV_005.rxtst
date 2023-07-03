@@ -3,20 +3,34 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
+			id="0a0cad2c-6fe5-4217-a36a-b4f4e75d5406"
+			name="Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen"
+			ref="1cfcac4c-78be-4e27-973f-e15e795219c1"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="80147ceb-e943-46c5-a7c1-f05b59ef1cce"
+					variablename="Stapel_Herkunft">
+					</var>
+					<var
+					dataname="Fehlerprotokoll_Pruefung"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="12d7b065-2a01-4bfa-991e-6d21537a9d1b"
+					variablename="Fehlerprotokoll_Pruefung">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="0cf89ac8-7411-48da-bb1d-1c521ccfe2d1"
 			name="Pruefung_dopp_Beleg_L_Dialoge"
 			ref="358790d0-4e14-46fe-828e-be724e2022a1"
 			type="Recording">
 				<description>
-					<![CDATA[BUG 38668 - (Fremd)Feld Beleg-nr/neue (Fremd)Belegnr zu kurz continue on Fail / Warum Fehler bei der Validierung? Wegen abgeschnittenem Feld bei NEUE BELEGNR]]>
+					<![CDATA[BUG 38668 erledigt in 510 SP15 / OFFEN in 521 und 511- (Fremd)Feld Beleg-nr/neue (Fremd)Belegnr zu kurz continue on Fail / Warum Fehler bei der Validierung? Wegen abgeschnittenem Feld bei NEUE BELEGNR]]>
 				</description>
 				<databinding>
-					<var
-					dataname="LF_02"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="38d8351a-ae3e-4f48-a34f-bf2101fe0e21"
-					variablename="LF_02">
-					</var>
 					<var
 					dataname="LF_01"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
@@ -24,16 +38,10 @@
 					variablename="LF_01">
 					</var>
 					<var
-					dataname="Fehlerprotokoll_Pruefung"
+					dataname="LF_02"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="a44d4820-852d-4c33-9a5e-26d0c8753b77"
-					variablename="Fehlerprotokoll_Pruefung">
-					</var>
-					<var
-					dataname="Stapel_Herkunft"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="80147ceb-e943-46c5-a7c1-f05b59ef1cce"
-					variablename="Stapel_Herkunft">
+					variableid="38d8351a-ae3e-4f48-a34f-bf2101fe0e21"
+					variablename="LF_02">
 					</var>
 					<var
 					dataname="Beleg_ER01_FB01_LF01_OP"
@@ -47,6 +55,12 @@
 					variableid="2a91abe8-ec26-4696-8bea-57e8bd533c4d"
 					variablename="Beleg_ER03_FB03_LF02_OP">
 					</var>
+					<var
+					dataname="Fehlerprotokoll_Pruefung"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="a44d4820-852d-4c33-9a5e-26d0c8753b77"
+					variablename="Fehlerprotokoll_Pruefung">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -56,16 +70,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="5479e8eb-b655-444d-89c6-64953acc0dfd"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="5a4f1278-f69f-4a30-96ae-4fcc7e8fe361"
 					variablename="Programm">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="5479e8eb-b655-444d-89c6-64953acc0dfd"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -97,20 +111,30 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<testmodule
+			id="3030fd4b-a955-4cb9-88fa-3174b738ce08"
+			name="B_EXOPS_Einschraenkung_nur_B_EXOPV_005"
+			ref="15736ee8-7921-45fc-a34d-05c6dbed837f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="ad652474-92e7-4dee-a732-0a3088aace38"
+					variablename="Stapel_Herkunft">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="36a37167-209c-4928-805c-ca09598f35a0"
+			name="CloseAUT"
+			ref="80d0231f-2329-4041-8791-b90e382fdee8"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="36e8a639-b265-48ea-90bc-dd5a05738926"
 			name="TestCase">
 			</testcase>
-			<testmodule
-			id="392f9fd2-fc7c-41d9-bb58-3384b1008dfe"
-			name="Close_B_EXOPS"
-			ref="d9313597-5739-419a-bbf2-077d9ac0bc6c"
-			type="Recording">
-			</testmodule>
-			<teardown
-			id="39746881-20f3-4aa7-afe7-5648749047fb"
-			name="teardown">
-			</teardown>
 			<testmodule
 			id="39b85d3d-f9d1-4d53-8dec-0e8e45308a8d"
 			name="Start_B_BUAB"
@@ -169,6 +193,10 @@
 			ref="2003cd04-3fb1-42b1-b685-92ace9a44eb6"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="7170d466-0f40-4267-8615-76aa983568a1"
+			name="B_EXOPV_verbuchen_mit_Akzeptieren_und_neuer_Belegnummer">
+			</testcase>
 			<testmodule
 			id="7588bd0c-07c9-4b80-9726-4873a74dfbea"
 			name="Close_B_BUAB"
@@ -185,6 +213,10 @@
 			id="7c0348f9-6124-470c-add3-83ee733a9cd1"
 			name="setup">
 			</setup>
+			<teardown
+			id="85a66b3d-8220-4cfc-a043-f495ba09ce5a"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="89a95090-097b-4003-b693-edbd287ac83b"
 			name="Start_B_EXOPS"
@@ -260,47 +292,47 @@
 					</param>
 					<param
 					name="Beleg_ER01_FB01_LF01_OP"
-					value="ER_01_B_EXOPV_005">
+					value="ER01_B_EXOPV_005">
 					</param>
 					<param
 					name="Beleg_ER02_FB02_LF01_OP"
-					value="ER_02_B_EXOPV_005">
+					value="ER02_B_EXOPV_005">
 					</param>
 					<param
 					name="Beleg_ER03_FB03_LF02_OP"
-					value="ER_03_B_EXOPV_005">
+					value="ER03_B_EXOPV_005">
 					</param>
 					<param
 					name="Beleg_ER05_FB05_LF02_OP_2020"
-					value="ER_05_B_EXOPV_005">
+					value="ER05_B_EXOPV_005">
 					</param>
 					<param
 					name="Beleg_ER03_FB02_LF01_EX"
-					value="ER_03_B_EXOPV_005">
+					value="ER03_B_EXOPV_005">
 					</param>
 					<param
 					name="Beleg_ER01_FB01_LF01_EX"
-					value="ER_01_B_EXOPV_005">
+					value="ER01_B_EXOPV_005">
 					</param>
 					<param
 					name="Beleg_ER04_FB04_LF01_EX"
-					value="ER_04_B_EXOPV_005">
+					value="ER04_B_EXOPV_005">
 					</param>
 					<param
 					name="Beleg_ER04_FB05_LF01_EX"
-					value="ER_04_B_EXOPV_005">
+					value="ER04_B_EXOPV_005">
 					</param>
 					<param
 					name="Beleg_ER06_FB04_LF01_EX"
-					value="ER_06_B_EXOPV_005">
+					value="ER06_B_EXOPV_005">
 					</param>
 					<param
 					name="Beleg_ER02_FB02_LF02_EX"
-					value="ER_02_B_EXOPV_005">
+					value="ER02_B_EXOPV_005">
 					</param>
 					<param
 					name="Beleg_ER03_FB03_LF02_EX"
-					value="ER_03_B_EXOPV_005">
+					value="ER03_B_EXOPV_005">
 					</param>
 					<param
 					name="Beleg_ER05_FB05_LF02_EX"
@@ -308,19 +340,86 @@
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="a700f7be-f33c-4977-8fe9-22844f391e61"
+			name="B_EXOPS_Status_von_F_auf_N_zuruecksetzen"
+			ref="0829892c-ee03-4722-a0ed-7d78e5ad829a"
+			type="Recording">
+			</testmodule>
 			<teardown
 			id="ac1e57eb-333f-4270-8d57-379ac8556d77"
 			name="teardown">
 			</teardown>
 			<testmodule
-			id="b719e3b5-e733-48cf-b3da-876ffa060ae2"
-			name="Optionen_Default_setzen_pruefen"
-			ref="2003cd04-3fb1-42b1-b685-92ace9a44eb6"
+			id="ae6aeab0-2b89-4da8-a804-27f19ef95543"
+			name="Verbuchung_dopp_Beleg_L_Dialoge"
+			ref="f8b28fa4-646a-42df-a9d5-4e45f56b6632"
+			type="Recording">
+				<description>
+					<![CDATA[Akzeptieren, Belegnummer ändern mit OK, Übergehen (erst einbauen bei einem Beleg)]]>
+				</description>
+				<databinding>
+					<var
+					dataname="Fehlerprotokoll_Pruefung"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="328afdd1-72b3-4c4f-8d01-ea591dc9ddcc"
+					variablename="Fehlerprotokoll_Pruefung">
+					</var>
+					<var
+					dataname="LF_01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="e277e4e7-f0dc-435e-8a22-a387a482d1df"
+					variablename="LF_01">
+					</var>
+					<var
+					dataname="LF_02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="ec7e78a6-458e-4462-90ad-2fab6730d245"
+					variablename="LF_02">
+					</var>
+					<var
+					dataname="Beleg_ER01_FB01_LF01_OP"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="a622567e-9159-412f-919f-0dfb75ab95b7"
+					variablename="Beleg_ER01_FB01_LF01_OP">
+					</var>
+					<var
+					dataname="Beleg_ER03_FB03_LF02_OP"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="2da239f5-9723-48f3-90bc-2eac862e70b7"
+					variablename="Beleg_ER03_FB03_LF02_OP">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="b162d7fa-091f-4249-b8fe-d537719c9cc8"
+			name="Verbuchung_dopp_Beleg_L_Laden_Pfad_Verbuchen_aufrufen"
+			ref="ab3c19d4-f9d2-4921-a2c0-6d1f601a1e86"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="80147ceb-e943-46c5-a7c1-f05b59ef1cce"
+					variablename="Stapel_Herkunft">
+					</var>
+					<var
+					dataname="Fehlerprotokoll_Pruefung"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="b5bd3e66-5b63-4d25-8a69-a4177fa8e537"
+					variablename="Fehlerprotokoll_Verbuchung">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="be64b191-26b0-436d-a379-41d0577b8a72"
+			name="Fehlerprotokoll_aufrufen"
+			ref="e832eec0-459c-4f07-8dc5-3837792179c2"
 			type="Recording">
 			</testmodule>
 			<testmodule
 			id="bf00dd7a-2681-4ad5-ad3e-40f78dbb55cb"
-			name="Pruefung_dopp_Beleg_L_Protokoll"
+			name="Pruefung_dopp_Beleg_L_Protokoll_pruefen"
 			ref="52ae346e-0801-4a96-b82c-76aa59b69469"
 			type="Recording">
 				<description>
@@ -337,7 +436,7 @@
 			</testmodule>
 			<testcase
 			id="c9f22167-116d-46e5-b2fc-de0a7ff30c6e"
-			name="Kontrolle_B_EXOPS">
+			name="Kontrolle_B_EXOPS_und_Status_auf_N_zurücksetzen">
 				<description>
 					<![CDATA[<p>BUG 37789 3 Belege auf Status F, obwohl die Option deaktiviert ist!</p>]]>
 				</description>
@@ -347,9 +446,9 @@
 			name="setup">
 			</setup>
 			<testmodule
-			id="edde523e-a193-494c-be7f-22a38153de51"
-			name="CloseAUT"
-			ref="80d0231f-2329-4041-8791-b90e382fdee8"
+			id="e9f8b89f-9ccd-4003-a994-e49b44d5322e"
+			name="B_EXOPS_Status_nach_Pruefung_kontrollieren"
+			ref="d8201208-b1ad-4756-b52e-522408436296"
 			type="Recording">
 			</testmodule>
 		</flatlistofchildren>
@@ -388,29 +487,25 @@
 						name="Tagesdatum_ermitteln">
 						</testmodule>
 						<testmodule
+						id="0a0cad2c-6fe5-4217-a36a-b4f4e75d5406"
+						name="Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen">
+						</testmodule>
+						<testmodule
 						id="0cf89ac8-7411-48da-bb1d-1c521ccfe2d1"
 						name="Pruefung_dopp_Beleg_L_Dialoge">
 						</testmodule>
 						<testmodule
-						id="bf00dd7a-2681-4ad5-ad3e-40f78dbb55cb"
-						name="Pruefung_dopp_Beleg_L_Protokoll">
+						id="be64b191-26b0-436d-a379-41d0577b8a72"
+						name="Fehlerprotokoll_aufrufen">
 						</testmodule>
-						<teardown
-						id="39746881-20f3-4aa7-afe7-5648749047fb"
-						name="teardown">
-							<testmodule
-							id="b719e3b5-e733-48cf-b3da-876ffa060ae2"
-							name="Optionen_Default_setzen_pruefen">
-							</testmodule>
-							<testmodule
-							id="edde523e-a193-494c-be7f-22a38153de51"
-							name="CloseAUT">
-							</testmodule>
-						</teardown>
+						<testmodule
+						id="bf00dd7a-2681-4ad5-ad3e-40f78dbb55cb"
+						name="Pruefung_dopp_Beleg_L_Protokoll_pruefen">
+						</testmodule>
 					</testcase>
 					<testcase
 					id="c9f22167-116d-46e5-b2fc-de0a7ff30c6e"
-					name="Kontrolle_B_EXOPS">
+					name="Kontrolle_B_EXOPS_und_Status_auf_N_zurücksetzen">
 						<setup
 						id="7c0348f9-6124-470c-add3-83ee733a9cd1"
 						name="setup">
@@ -419,12 +514,40 @@
 							name="Start_B_EXOPS">
 							</testmodule>
 						</setup>
+						<testmodule
+						id="3030fd4b-a955-4cb9-88fa-3174b738ce08"
+						name="B_EXOPS_Einschraenkung_nur_B_EXOPV_005">
+						</testmodule>
+						<testmodule
+						id="e9f8b89f-9ccd-4003-a994-e49b44d5322e"
+						name="B_EXOPS_Status_nach_Pruefung_kontrollieren">
+						</testmodule>
+						<testmodule
+						id="a700f7be-f33c-4977-8fe9-22844f391e61"
+						name="B_EXOPS_Status_von_F_auf_N_zuruecksetzen">
+						</testmodule>
 						<teardown
 						id="92d9e136-8356-453b-94a4-ebf0b1f5d2a6"
 						name="teardown">
+						</teardown>
+					</testcase>
+					<testcase
+					id="7170d466-0f40-4267-8615-76aa983568a1"
+					name="B_EXOPV_verbuchen_mit_Akzeptieren_und_neuer_Belegnummer">
+						<testmodule
+						id="b162d7fa-091f-4249-b8fe-d537719c9cc8"
+						name="Verbuchung_dopp_Beleg_L_Laden_Pfad_Verbuchen_aufrufen">
+						</testmodule>
+						<testmodule
+						id="ae6aeab0-2b89-4da8-a804-27f19ef95543"
+						name="Verbuchung_dopp_Beleg_L_Dialoge">
+						</testmodule>
+						<teardown
+						id="85a66b3d-8220-4cfc-a043-f495ba09ce5a"
+						name="teardown">
 							<testmodule
-							id="392f9fd2-fc7c-41d9-bb58-3384b1008dfe"
-							name="Close_B_EXOPS">
+							id="36a37167-209c-4928-805c-ca09598f35a0"
+							name="CloseAUT">
 							</testmodule>
 						</teardown>
 					</testcase>
@@ -463,6 +586,9 @@
 			</testcontainer>
 			<testcontainer
 			id="6406e09a-057a-43fb-8800-e15265b29c87">
+			</testcontainer>
+			<testcontainer
+			id="7170d466-0f40-4267-8615-76aa983568a1">
 			</testcontainer>
 			<testcontainer
 			id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">

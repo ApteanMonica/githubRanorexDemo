@@ -85,52 +85,46 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgOptionenParameter.TitleBar100Optionen'", repo.DlgOptionenParameter.TitleBar100OptionenInfo, new ActionTimeout(60000), new RecordItemIndex(1));
             repo.DlgOptionenParameter.TitleBar100OptionenInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'DlgOptionenParameter.Tab_Page_Allgemein.CbFehlerstatus'.", repo.DlgOptionenParameter.Tab_Page_Allgemein.CbFehlerstatusInfo, new RecordItemIndex(2));
-            repo.DlgOptionenParameter.Tab_Page_Allgemein.CbFehlerstatus.Element.SetAttributeValue("Checked", "False");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgOptionenParameter.Tab_Page_Allgemein.CbFehlerstatus'.", repo.DlgOptionenParameter.Tab_Page_Allgemein.CbFehlerstatusInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.DlgOptionenParameter.Tab_Page_Allgemein.CbFehlerstatusInfo, "Checked", "False");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgOptionenParameter.TabPageLieferanten' at Center.", repo.DlgOptionenParameter.TabPageLieferantenInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgOptionenParameter.TabPageLieferanten' at Center.", repo.DlgOptionenParameter.TabPageLieferantenInfo, new RecordItemIndex(2));
             repo.DlgOptionenParameter.TabPageLieferanten.Click();
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'True' on item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbBelprufL'.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbBelprufLInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'True' on item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbBelprufL'.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbBelprufLInfo, new RecordItemIndex(3));
             repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbBelprufL.Element.SetAttributeValue("Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'True' on item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbBelprufExopL'.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbBelprufExopLInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'True' on item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbBelprufExopL'.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbBelprufExopLInfo, new RecordItemIndex(4));
             repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbBelprufExopL.Element.SetAttributeValue("Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'True' on item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufL'.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufLInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'True' on item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufL'.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufLInfo, new RecordItemIndex(5));
             repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufL.Element.SetAttributeValue("Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufL' at Center.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufLInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufL' at Center.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufLInfo, new RecordItemIndex(6));
             repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufL.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufL' at Center.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufLInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufL' at Center.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufLInfo, new RecordItemIndex(7));
             repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufL.Click();
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'True' on item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufExopL'.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufExopLInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'True' on item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufExopL'.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufExopLInfo, new RecordItemIndex(8));
             repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufExopL.Element.SetAttributeValue("Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'True' on item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufAdrL'.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufAdrLInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'True' on item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufAdrL'.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufAdrLInfo, new RecordItemIndex(9));
             repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufAdrL.Element.SetAttributeValue("Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbBelprufL'.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbBelprufLInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbBelprufL'.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbBelprufLInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbBelprufLInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbBelprufExopL'.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbBelprufExopLInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbBelprufExopL'.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbBelprufExopLInfo, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbBelprufExopLInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufL'.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufLInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufL'.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufLInfo, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufLInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufExopL'.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufExopLInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufExopL'.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufExopLInfo, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufExopLInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufAdrL'.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufAdrLInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufAdrL'.", repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufAdrLInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.DlgOptionenParameter.Tab_Page_Lieferanten.CbFremdbelprufAdrLInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgOptionenParameter.PbSpeichern' at Center.", repo.DlgOptionenParameter.PbSpeichernInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgOptionenParameter.PbSpeichern' at Center.", repo.DlgOptionenParameter.PbSpeichernInfo, new RecordItemIndex(15));
             repo.DlgOptionenParameter.PbSpeichern.Click();
             
         }
