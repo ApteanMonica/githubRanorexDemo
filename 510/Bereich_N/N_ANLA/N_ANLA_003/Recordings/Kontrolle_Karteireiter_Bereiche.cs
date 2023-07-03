@@ -85,22 +85,25 @@ namespace N_ANLA_003.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ - Anlagen') on item 'FrmAnla.TitleBar100AVZAnlagen'.", repo.FrmAnla.TitleBar100AVZAnlagenInfo, new RecordItemIndex(1));
             Validate.AttributeContains(repo.FrmAnla.TitleBar100AVZAnlagenInfo, "Text", "[100]  AVZ - Anlagen");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '003_01{Tab}' with focus on 'FrmAnla.Anlagenr_N_ANLA'.", repo.FrmAnla.Anlagenr_N_ANLAInfo, new RecordItemIndex(2));
-            repo.FrmAnla.Anlagenr_N_ANLA.PressKeys("003_01{Tab}");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnla.PbCommonNew' at Center.", repo.FrmAnla.PbCommonNewInfo, new RecordItemIndex(2));
+            repo.FrmAnla.PbCommonNew.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnla.Bereiche' at Center.", repo.FrmAnla.BereicheInfo, new RecordItemIndex(3));
-            repo.FrmAnla.Bereiche.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '003_01{Tab}' with focus on 'FrmAnla.ClientArea.Anlagennr_Maske_N_ANLA'.", repo.FrmAnla.ClientArea.Anlagennr_Maske_N_ANLAInfo, new RecordItemIndex(3));
+            repo.FrmAnla.ClientArea.Anlagennr_Maske_N_ANLA.PressKeys("003_01{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'FrmAnla.Registerkarte_Bereiche.ColAnbePosRow1'.", repo.FrmAnla.Registerkarte_Bereiche.ColAnbePosRow1Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnla.ClientArea.Bereiche' at Center.", repo.FrmAnla.ClientArea.BereicheInfo, new RecordItemIndex(4));
+            repo.FrmAnla.ClientArea.Bereiche.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'FrmAnla.Registerkarte_Bereiche.ColAnbePosRow1'.", repo.FrmAnla.Registerkarte_Bereiche.ColAnbePosRow1Info, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.FrmAnla.Registerkarte_Bereiche.ColAnbePosRow1Info, "Text", "1");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'FrmAnla.Registerkarte_Bereiche.ColBektNr1Row1'.", repo.FrmAnla.Registerkarte_Bereiche.ColBektNr1Row1Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'FrmAnla.Registerkarte_Bereiche.ColBektNr1Row1'.", repo.FrmAnla.Registerkarte_Bereiche.ColBektNr1Row1Info, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.FrmAnla.Registerkarte_Bereiche.ColBektNr1Row1Info, "Text", "10");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1,00') on item 'FrmAnla.Registerkarte_Bereiche.ColAnbeMengeRow1'.", repo.FrmAnla.Registerkarte_Bereiche.ColAnbeMengeRow1Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1,00') on item 'FrmAnla.Registerkarte_Bereiche.ColAnbeMengeRow1'.", repo.FrmAnla.Registerkarte_Bereiche.ColAnbeMengeRow1Info, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.FrmAnla.Registerkarte_Bereiche.ColAnbeMengeRow1Info, "Text", "1,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,00000000') on item 'FrmAnla.Registerkarte_Bereiche.ColAnbeProzRow1'.", repo.FrmAnla.Registerkarte_Bereiche.ColAnbeProzRow1Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,00000000') on item 'FrmAnla.Registerkarte_Bereiche.ColAnbeProzRow1'.", repo.FrmAnla.Registerkarte_Bereiche.ColAnbeProzRow1Info, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.FrmAnla.Registerkarte_Bereiche.ColAnbeProzRow1Info, "Text", "100,00000000");
             
         }
