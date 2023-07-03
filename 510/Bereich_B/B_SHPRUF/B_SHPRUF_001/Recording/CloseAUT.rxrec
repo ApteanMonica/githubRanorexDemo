@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="22f7ebfd-7edc-4568-a794-d49d7faba235"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_SHPRUF_001.Recording">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="1ea6221c-b36e-4faf-ac64-a8595aaa967f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f070245b-7899-4d5d-8f10-a1ce5fae2bae"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="5"
+				prefcap="titlebar"
+				rect="0,0,0,0"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="False">
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmMain']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="a1bde7d9-d2f7-4deb-9b47-3d2ac9f73591"
+	name="B_SHPRUF_001Repository"
+	relativepath="..\B_SHPRUF_001Repository.rxrep">
+		<codegen
+		classname="B_SHPRUF_001Repository"
+		namespace="B_SHPRUF_001">
+		</codegen>
+		<rootfolder
+		id="1642cc25-fd43-4f06-a5f9-dbe2be164d6a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -135,37 +135,37 @@
     <Compile Include="Program.cs">
       <id>16b0ced5-9b0e-4495-b5f3-6b370446abe5</id>
     </Compile>
-    <Compile Include="Recordings\CloseAUT.cs">
+    <Compile Include="Recording\CloseAUT.cs">
       <DependentUpon>CloseAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>df7d2a73-9f0f-4a73-99b5-12cc9cba7d69</id>
       <BoundTo>339258d8-bb20-44c4-a901-89685afc919b</BoundTo>
     </Compile>
-    <Compile Include="Recordings\CloseAUT.UserCode.cs">
+    <Compile Include="Recording\CloseAUT.UserCode.cs">
       <DependentUpon>CloseAUT.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>67f7d6b1-0b3c-46fe-b778-0bf9e0da504e</id>
       <BoundTo>339258d8-bb20-44c4-a901-89685afc919b</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Differenzen_melden.cs">
+    <Compile Include="Recording\Differenzen_melden.cs">
       <BoundTo>28023bfc-1f10-4d4a-9a14-fb1b0a6a9aad</BoundTo>
       <DependentUpon>Differenzen_melden.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>ad3a4fb5-df76-4513-9d12-cbead176ca3e</id>
     </Compile>
-    <Compile Include="Recordings\Differenzen_melden.UserCode.cs">
+    <Compile Include="Recording\Differenzen_melden.UserCode.cs">
       <BoundTo>28023bfc-1f10-4d4a-9a14-fb1b0a6a9aad</BoundTo>
       <DependentUpon>Differenzen_melden.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>3b5022d8-5cfb-4630-9378-ed6e884f0f1a</id>
     </Compile>
-    <Compile Include="Recordings\StartAUT.cs">
+    <Compile Include="Recording\StartAUT.cs">
       <DependentUpon>StartAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>970f49b4-dcd7-470b-94ec-5ba9ae6e4c82</id>
       <BoundTo>345c09be-553a-4909-8eda-cb89b1d1c433</BoundTo>
     </Compile>
-    <Compile Include="Recordings\StartAUT.UserCode.cs">
+    <Compile Include="Recording\StartAUT.UserCode.cs">
       <DependentUpon>StartAUT.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>98c01e45-3676-4aed-a004-eb9b82a3a2aa</id>
@@ -187,17 +187,17 @@
       <repoid>a1bde7d9-d2f7-4deb-9b47-3d2ac9f73591</repoid>
       <reporootid>1642cc25-fd43-4f06-a5f9-dbe2be164d6a</reporootid>
     </None>
-    <None Include="Recordings\CloseAUT.rxrec">
+    <None Include="Recording\CloseAUT.rxrec">
       <BoundTo>dfae673d-d50c-4ab0-89fe-1034e6352df2</BoundTo>
       <id>339258d8-bb20-44c4-a901-89685afc919b</id>
       <recordtableid>22f7ebfd-7edc-4568-a794-d49d7faba235</recordtableid>
     </None>
-    <None Include="Recordings\Differenzen_melden.rxrec">
+    <None Include="Recording\Differenzen_melden.rxrec">
       <BoundTo>dfae673d-d50c-4ab0-89fe-1034e6352df2</BoundTo>
       <id>28023bfc-1f10-4d4a-9a14-fb1b0a6a9aad</id>
       <recordtableid>dc634522-ca9f-4463-8ab3-1e2553f903b1</recordtableid>
     </None>
-    <None Include="Recordings\StartAUT.rxrec">
+    <None Include="Recording\StartAUT.rxrec">
       <BoundTo>dfae673d-d50c-4ab0-89fe-1034e6352df2</BoundTo>
       <id>345c09be-553a-4909-8eda-cb89b1d1c433</id>
       <recordtableid>bad16108-f7d4-46a3-8787-100c297b8516</recordtableid>
@@ -214,7 +214,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Recordings">
+    <Folder Include="Recording">
       <id>f44c85e1-681e-4472-875e-240e51d13e4e</id>
     </Folder>
   </ItemGroup>
