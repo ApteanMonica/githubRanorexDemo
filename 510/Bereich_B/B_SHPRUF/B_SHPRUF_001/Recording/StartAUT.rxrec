@@ -20,7 +20,7 @@ mode="Desktop">
 	</useDefaultItemLogging>
 	<codegen
 	classname="StartAUT"
-	namespace="B_SHPRUF_001.Recordings">
+	namespace="B_SHPRUF_001.Recording">
 	</codegen>
 	<variables>
 		<var
@@ -109,6 +109,8 @@ mode="Desktop">
 				<path>
 					/form[@controlname='frmMain']/titlebar[@accessiblerole='TitleBar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<validationitem
@@ -126,6 +128,8 @@ mode="Desktop">
 				<path>
 					/form[@controlname='frmMain']/titlebar[@accessiblerole='TitleBar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<matchname>
 				Text

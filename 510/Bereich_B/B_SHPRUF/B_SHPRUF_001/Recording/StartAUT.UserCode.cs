@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_SHPRUF_001.Recordings
+namespace B_SHPRUF_001.Recording
 {
-    public partial class Differenzen_melden
+    public partial class StartAUT
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

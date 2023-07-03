@@ -20,38 +20,64 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_SHPRUF_001.Recordings
+namespace B_SHPRUF_001.Recording
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT recording.
+    ///The StartAUT recording.
     /// </summary>
-    [TestModule("22f7ebfd-7edc-4568-a794-d49d7faba235", ModuleType.Recording, 1)]
-    public partial class CloseAUT : ITestModule
+    [TestModule("bad16108-f7d4-46a3-8787-100c297b8516", ModuleType.Recording, 1)]
+    public partial class StartAUT : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_SHPRUF_001.B_SHPRUF_001Repository repository.
         /// </summary>
         public static global::B_SHPRUF_001.B_SHPRUF_001Repository repo = global::B_SHPRUF_001.B_SHPRUF_001Repository.Instance;
 
-        static CloseAUT instance = new CloseAUT();
+        static StartAUT instance = new StartAUT();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT()
+        public StartAUT()
         {
+            Startfile = "";
+            Programm = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT Instance
+        public static StartAUT Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _Startfile;
+
+        /// <summary>
+        /// Gets or sets the value of variable Startfile.
+        /// </summary>
+        [TestVariable("f29f1e1b-9edb-41fd-b652-79c20dd717a0")]
+        public string Startfile
+        {
+            get { return _Startfile; }
+            set { _Startfile = value; }
+        }
+
+        string _Programm;
+
+        /// <summary>
+        /// Gets or sets the value of variable Programm.
+        /// </summary>
+        [TestVariable("01e442ff-b962-49b3-b6f5-57c799f8a0b0")]
+        public string Programm
+        {
+            get { return _Programm; }
+            set { _Programm = value; }
+        }
 
 #endregion
 
@@ -79,8 +105,14 @@ namespace B_SHPRUF_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmMain.TitleBar100PruefungBuchungen'.", repo.FrmMain.TitleBar100PruefungBuchungenInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FrmMain.TitleBar100PruefungBuchungen, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile, Programm, "", false);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmMain.TitleBar100PruefungBuchungen'", repo.FrmMain.TitleBar100PruefungBuchungenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FrmMain.TitleBar100PruefungBuchungenInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Prüfung Buchungen') on item 'FrmMain.TitleBar100PruefungBuchungen'.", repo.FrmMain.TitleBar100PruefungBuchungenInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.FrmMain.TitleBar100PruefungBuchungenInfo, "Text", "Prüfung Buchungen");
             
         }
 
