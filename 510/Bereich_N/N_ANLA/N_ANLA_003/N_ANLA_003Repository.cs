@@ -157,7 +157,6 @@ namespace N_ANLA_003
             N_ANLA_003RepositoryFolders.Registerkarte_BereicheFolder _registerkarte_bereiche;
             N_ANLA_003RepositoryFolders.ClientAreaFolder _clientarea;
             RepoItemInfo _titlebar100avzanlagenInfo;
-            RepoItemInfo _anlagenr_n_anlaInfo;
             RepoItemInfo _pbnewInfo;
             RepoItemInfo _pbbuchenbuchenInfo;
             RepoItemInfo _pbcommonnewInfo;
@@ -171,7 +170,6 @@ namespace N_ANLA_003
                 _registerkarte_bereiche = new N_ANLA_003RepositoryFolders.Registerkarte_BereicheFolder(this);
                 _clientarea = new N_ANLA_003RepositoryFolders.ClientAreaFolder(this);
                 _titlebar100avzanlagenInfo = new RepoItemInfo(this, "TitleBar100AVZAnlagen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "468089cb-cc63-4700-8dcb-4a0a68d0abac");
-                _anlagenr_n_anlaInfo = new RepoItemInfo(this, "Anlagenr_N_ANLA", "container[@controlname='ClientArea']/container[@controlname='ClientArea']/text[@controlname='dfAnla_nr']/text[@accessiblename='Aktuell']", "", 30000, null, "e763ee90-db2f-4e06-a822-b80a12fe4785");
                 _pbnewInfo = new RepoItemInfo(this, "PbNew", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']", "", 30000, null, "78da6921-b95d-43ad-9724-f0b74ce0dec7");
                 _pbbuchenbuchenInfo = new RepoItemInfo(this, "PbBuchenBuchen", "container[@controlname='RibbonBar']/container[@controlname='DMSGroup']/button[@controlname='pbBuchen_Buchen']", "", 30000, null, "6af2537a-4a97-4fef-b61b-73cda5737dee");
                 _pbcommonnewInfo = new RepoItemInfo(this, "PbCommonNew", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbCommon_new']", "", 30000, null, "2e23b4d9-ee9c-4697-93e2-083284a6d437");
@@ -222,30 +220,6 @@ namespace N_ANLA_003
                 get
                 {
                     return _titlebar100avzanlagenInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Anlagenr_N_ANLA item.
-            /// </summary>
-            [RepositoryItem("e763ee90-db2f-4e06-a822-b80a12fe4785")]
-            public virtual Ranorex.Text Anlagenr_N_ANLA
-            {
-                get
-                {
-                    return _anlagenr_n_anlaInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Anlagenr_N_ANLA item info.
-            /// </summary>
-            [RepositoryItemInfo("e763ee90-db2f-4e06-a822-b80a12fe4785")]
-            public virtual RepoItemInfo Anlagenr_N_ANLAInfo
-            {
-                get
-                {
-                    return _anlagenr_n_anlaInfo;
                 }
             }
 
@@ -583,7 +557,6 @@ namespace N_ANLA_003
         public partial class DlgZugangAppFolder : RepoGenBaseFolder
         {
             N_ANLA_003RepositoryFolders.Registerkarte_WerteFolder _registerkarte_werte;
-            N_ANLA_003RepositoryFolders.Registerkarte_BereicheFolder1 _registerkarte_bereiche;
             RepoItemInfo _titlebar100avzbuchungenzugangInfo;
             RepoItemInfo _cbnkrInfo;
             RepoItemInfo _dfgjhrbezInfo;
@@ -591,7 +564,6 @@ namespace N_ANLA_003
             RepoItemInfo _dfanlabezInfo;
             RepoItemInfo _pbfibuInfo;
             RepoItemInfo _dfktonrInfo;
-            RepoItemInfo _cbanlakzetikettInfo;
             RepoItemInfo _buttonfibuuebernahmeInfo;
             RepoItemInfo _pbneuInfo;
             RepoItemInfo _nummerInfo;
@@ -609,7 +581,6 @@ namespace N_ANLA_003
                     base("DlgZugang", "/form[@controlname='dlgZugang']", parentFolder, 30000, null, true, "b3a6731a-ace0-4615-8e5d-9738f8d3f7c1", "")
             {
                 _registerkarte_werte = new N_ANLA_003RepositoryFolders.Registerkarte_WerteFolder(this);
-                _registerkarte_bereiche = new N_ANLA_003RepositoryFolders.Registerkarte_BereicheFolder1(this);
                 _titlebar100avzbuchungenzugangInfo = new RepoItemInfo(this, "TitleBar100AVZBuchungenZugang", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "9e8dbb35-40b5-4f8a-8098-372eef469a23");
                 _cbnkrInfo = new RepoItemInfo(this, "CbNkr", "checkbox[@controlname='cbNkr']", "", 30000, null, "65736b4a-8514-4174-8cc6-1501aa347ec8");
                 _dfgjhrbezInfo = new RepoItemInfo(this, "DfGjhrBez", "text[@controlname='dfGjhr_bez']", "", 30000, null, "9700fc45-2869-45c9-8716-00346208bf49");
@@ -617,7 +588,6 @@ namespace N_ANLA_003
                 _dfanlabezInfo = new RepoItemInfo(this, "DfAnlaBez", "text[@controlname='dfAnla_bez']", "", 30000, null, "07a15fde-1d68-402d-9351-7010b97ab9f5");
                 _pbfibuInfo = new RepoItemInfo(this, "PbFibu", "button[@controlname='pbFibu']", "", 30000, null, "07d22b27-2020-4cd9-b043-a5e47b0fb9ee");
                 _dfktonrInfo = new RepoItemInfo(this, "DfKtoNr", "text[@controlname='dfKto_nr']", "", 30000, null, "bc20bb6d-e4bb-4219-bc3e-d4e15fc22e2c");
-                _cbanlakzetikettInfo = new RepoItemInfo(this, "CbAnlaKzetikett", "checkbox[@controlname='cbAnla_kzetikett']", "", 30000, null, "6318323f-cf8f-4dec-b48c-f72fd79b1712");
                 _buttonfibuuebernahmeInfo = new RepoItemInfo(this, "ButtonFibuUEbernahme", "button[@text='&Fibu-Übernahme']", "", 30000, null, "7f4070e8-d5a2-45cd-bf7c-2ae167314af2");
                 _pbneuInfo = new RepoItemInfo(this, "PbNeu", "button[@controlname='pbNeu']", "", 30000, null, "35a042c2-7150-4bc4-9c0a-48705a02edba");
                 _nummerInfo = new RepoItemInfo(this, "Nummer", "text[@controlname='dfAnla_nr']/text[@accessiblename='Nummer']", "", 30000, null, "7da72c28-beb9-456b-8bda-9b1ea11f0505");
@@ -818,30 +788,6 @@ namespace N_ANLA_003
                 get
                 {
                     return _dfktonrInfo;
-                }
-            }
-
-            /// <summary>
-            /// The CbAnlaKzetikett item.
-            /// </summary>
-            [RepositoryItem("6318323f-cf8f-4dec-b48c-f72fd79b1712")]
-            public virtual Ranorex.CheckBox CbAnlaKzetikett
-            {
-                get
-                {
-                    return _cbanlakzetikettInfo.CreateAdapter<Ranorex.CheckBox>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CbAnlaKzetikett item info.
-            /// </summary>
-            [RepositoryItemInfo("6318323f-cf8f-4dec-b48c-f72fd79b1712")]
-            public virtual RepoItemInfo CbAnlaKzetikettInfo
-            {
-                get
-                {
-                    return _cbanlakzetikettInfo;
                 }
             }
 
@@ -1068,15 +1014,6 @@ namespace N_ANLA_003
             public virtual N_ANLA_003RepositoryFolders.Registerkarte_WerteFolder Registerkarte_Werte
             {
                 get { return _registerkarte_werte; }
-            }
-
-            /// <summary>
-            /// The Registerkarte_Bereiche folder.
-            /// </summary>
-            [RepositoryFolder("8958212b-c0a6-4c2d-9780-6653bb36b5c9")]
-            public virtual N_ANLA_003RepositoryFolders.Registerkarte_BereicheFolder1 Registerkarte_Bereiche
-            {
-                get { return _registerkarte_bereiche; }
             }
         }
 
@@ -1641,176 +1578,6 @@ namespace N_ANLA_003
         }
 
         /// <summary>
-        /// The Registerkarte_BereicheFolder1 folder.
-        /// </summary>
-        [RepositoryFolder("8958212b-c0a6-4c2d-9780-6653bb36b5c9")]
-        public partial class Registerkarte_BereicheFolder1 : RepoGenBaseFolder
-        {
-            RepoItemInfo _colbektnr1row1_510Info;
-            RepoItemInfo _colanbeprozrow1Info;
-            RepoItemInfo _colanbemengerow1Info;
-            RepoItemInfo _colanbeprozrow11Info;
-            RepoItemInfo _colanbeposrow1Info;
-
-            /// <summary>
-            /// Creates a new Registerkarte_Bereiche  folder.
-            /// </summary>
-            public Registerkarte_BereicheFolder1(RepoGenBaseFolder parentFolder) :
-                    base("Registerkarte_Bereiche", "tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']", parentFolder, 30000, null, false, "8958212b-c0a6-4c2d-9780-6653bb36b5c9", "")
-            {
-                _colbektnr1row1_510Info = new RepoItemInfo(this, "ColBektNr1Row1_510", "container[@controlname='tblAnbe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBekt_nr1 Row 1']", "", 30000, null, "9143dfbd-74c1-4e84-a285-e283dd5b8bdc");
-                _colanbeprozrow1Info = new RepoItemInfo(this, "ColAnbeProzRow1", "container[@controlname='tblAnbe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAnbe_proz Row 1']", "", 30000, null, "1d8bee3b-c9f9-424f-8d5b-a62305f1afa8");
-                _colanbemengerow1Info = new RepoItemInfo(this, "ColAnbeMengeRow1", "container[@controlname='tblAnbe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAnbe_menge Row 1']", "", 30000, null, "21ebbce9-cead-40dd-b292-077f8b67bac3");
-                _colanbeprozrow11Info = new RepoItemInfo(this, "ColAnbeProzRow11", "container[@controlname='tblAnbe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAnbe_proz Row 1']", "", 30000, null, "020b6d85-9a71-49a1-a77f-0d5ae83939fc");
-                _colanbeposrow1Info = new RepoItemInfo(this, "ColAnbePosRow1", "container[@controlname='tblAnbe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAnbe_pos Row 1']", "", 30000, null, "210711a9-7233-4a6d-9368-4f40e9fa2c89");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("8958212b-c0a6-4c2d-9780-6653bb36b5c9")]
-            public virtual Ranorex.TabPage Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.TabPage>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("8958212b-c0a6-4c2d-9780-6653bb36b5c9")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ColBektNr1Row1_510 item.
-            /// </summary>
-            [RepositoryItem("9143dfbd-74c1-4e84-a285-e283dd5b8bdc")]
-            public virtual Ranorex.Cell ColBektNr1Row1_510
-            {
-                get
-                {
-                    return _colbektnr1row1_510Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColBektNr1Row1_510 item info.
-            /// </summary>
-            [RepositoryItemInfo("9143dfbd-74c1-4e84-a285-e283dd5b8bdc")]
-            public virtual RepoItemInfo ColBektNr1Row1_510Info
-            {
-                get
-                {
-                    return _colbektnr1row1_510Info;
-                }
-            }
-
-            /// <summary>
-            /// The ColAnbeProzRow1 item.
-            /// </summary>
-            [RepositoryItem("1d8bee3b-c9f9-424f-8d5b-a62305f1afa8")]
-            public virtual Ranorex.Cell ColAnbeProzRow1
-            {
-                get
-                {
-                    return _colanbeprozrow1Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColAnbeProzRow1 item info.
-            /// </summary>
-            [RepositoryItemInfo("1d8bee3b-c9f9-424f-8d5b-a62305f1afa8")]
-            public virtual RepoItemInfo ColAnbeProzRow1Info
-            {
-                get
-                {
-                    return _colanbeprozrow1Info;
-                }
-            }
-
-            /// <summary>
-            /// The ColAnbeMengeRow1 item.
-            /// </summary>
-            [RepositoryItem("21ebbce9-cead-40dd-b292-077f8b67bac3")]
-            public virtual Ranorex.Cell ColAnbeMengeRow1
-            {
-                get
-                {
-                    return _colanbemengerow1Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColAnbeMengeRow1 item info.
-            /// </summary>
-            [RepositoryItemInfo("21ebbce9-cead-40dd-b292-077f8b67bac3")]
-            public virtual RepoItemInfo ColAnbeMengeRow1Info
-            {
-                get
-                {
-                    return _colanbemengerow1Info;
-                }
-            }
-
-            /// <summary>
-            /// The ColAnbeProzRow11 item.
-            /// </summary>
-            [RepositoryItem("020b6d85-9a71-49a1-a77f-0d5ae83939fc")]
-            public virtual Ranorex.Cell ColAnbeProzRow11
-            {
-                get
-                {
-                    return _colanbeprozrow11Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColAnbeProzRow11 item info.
-            /// </summary>
-            [RepositoryItemInfo("020b6d85-9a71-49a1-a77f-0d5ae83939fc")]
-            public virtual RepoItemInfo ColAnbeProzRow11Info
-            {
-                get
-                {
-                    return _colanbeprozrow11Info;
-                }
-            }
-
-            /// <summary>
-            /// The ColAnbePosRow1 item.
-            /// </summary>
-            [RepositoryItem("210711a9-7233-4a6d-9368-4f40e9fa2c89")]
-            public virtual Ranorex.Cell ColAnbePosRow1
-            {
-                get
-                {
-                    return _colanbeposrow1Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColAnbePosRow1 item info.
-            /// </summary>
-            [RepositoryItemInfo("210711a9-7233-4a6d-9368-4f40e9fa2c89")]
-            public virtual RepoItemInfo ColAnbePosRow1Info
-            {
-                get
-                {
-                    return _colanbeposrow1Info;
-                }
-            }
-        }
-
-        /// <summary>
         /// The DlgFibuAppFolder folder.
         /// </summary>
         [RepositoryFolder("7e52a6b8-b020-46d2-86fc-f89a399829ba")]
@@ -1822,9 +1589,7 @@ namespace N_ANLA_003
             RepoItemInfo _row_column0_belegnummer_01Info;
             RepoItemInfo _row_belegnummer_01Info;
             RepoItemInfo _row_column0_belegnummer_02Info;
-            RepoItemInfo _row_belegnummer_02Info;
             RepoItemInfo _kontonrInfo;
-            RepoItemInfo _colbetragrow_belegnummer_02Info;
 
             /// <summary>
             /// Creates a new DlgFibu  folder.
@@ -1838,9 +1603,7 @@ namespace N_ANLA_003
                 _row_column0_belegnummer_01Info = new RepoItemInfo(this, "Row_Column0_Belegnummer_01", "container[@controlname='tblBusa']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Belegnr_01]/cell[@accessiblename~'Column 0']", "", 30000, null, "78736750-959e-4d7f-a4c7-ac136039ecf0");
                 _row_belegnummer_01Info = new RepoItemInfo(this, "Row_Belegnummer_01", "container[@controlname='tblBusa']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Belegnr_01]", "", 30000, null, "32d32cfd-0784-4f5a-9af6-d9a1871d9264");
                 _row_column0_belegnummer_02Info = new RepoItemInfo(this, "Row_Column0_Belegnummer_02", "container[@controlname='tblBusa']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Belegnr_02]/cell[@accessiblename~'Column 0']", "", 30000, null, "2b517fb2-bb56-4e77-996a-c99394256fe8");
-                _row_belegnummer_02Info = new RepoItemInfo(this, "Row_Belegnummer_02", "container[@controlname='tblBusa']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Belegnr_02]", "", 30000, null, "0a57a520-6bd0-4f8a-9e8f-4a6d1c2eb510");
                 _kontonrInfo = new RepoItemInfo(this, "KontoNr", "text[@controlname='dfKto_nr']/text[@accessiblename='Konto-Nr.']", "", 30000, null, "74c0584d-640f-4a4f-8c96-10bb80a67d4f");
-                _colbetragrow_belegnummer_02Info = new RepoItemInfo(this, "ColBetragRow_Belegnummer_02", "container[@controlname='tblBusa']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row' and @accessiblevalue~$Belegnr_02]/cell[@accessiblename~'colBetrag']", "", 30000, null, "a2530eab-5558-4712-a3a3-e28e788278f2");
             }
 
             /// <summary>
@@ -2012,30 +1775,6 @@ namespace N_ANLA_003
             }
 
             /// <summary>
-            /// The Row_Belegnummer_02 item.
-            /// </summary>
-            [RepositoryItem("0a57a520-6bd0-4f8a-9e8f-4a6d1c2eb510")]
-            public virtual Ranorex.Row Row_Belegnummer_02
-            {
-                get
-                {
-                    return _row_belegnummer_02Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Row_Belegnummer_02 item info.
-            /// </summary>
-            [RepositoryItemInfo("0a57a520-6bd0-4f8a-9e8f-4a6d1c2eb510")]
-            public virtual RepoItemInfo Row_Belegnummer_02Info
-            {
-                get
-                {
-                    return _row_belegnummer_02Info;
-                }
-            }
-
-            /// <summary>
             /// The KontoNr item.
             /// </summary>
             [RepositoryItem("74c0584d-640f-4a4f-8c96-10bb80a67d4f")]
@@ -2056,30 +1795,6 @@ namespace N_ANLA_003
                 get
                 {
                     return _kontonrInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ColBetragRow_Belegnummer_02 item.
-            /// </summary>
-            [RepositoryItem("a2530eab-5558-4712-a3a3-e28e788278f2")]
-            public virtual Ranorex.Cell ColBetragRow_Belegnummer_02
-            {
-                get
-                {
-                    return _colbetragrow_belegnummer_02Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColBetragRow_Belegnummer_02 item info.
-            /// </summary>
-            [RepositoryItemInfo("a2530eab-5558-4712-a3a3-e28e788278f2")]
-            public virtual RepoItemInfo ColBetragRow_Belegnummer_02Info
-            {
-                get
-                {
-                    return _colbetragrow_belegnummer_02Info;
                 }
             }
         }

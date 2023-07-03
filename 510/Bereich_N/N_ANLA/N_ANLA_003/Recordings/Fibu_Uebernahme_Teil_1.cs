@@ -42,7 +42,6 @@ namespace N_ANLA_003.Recordings
         public Fibu_Uebernahme_Teil_1()
         {
             Anlage_1 = "003_01";
-            Bezeichnung_Anlage_1 = "N_ANLA_003_01";
             GJ = "2022";
         }
 
@@ -66,18 +65,6 @@ namespace N_ANLA_003.Recordings
         {
             get { return _Anlage_1; }
             set { _Anlage_1 = value; }
-        }
-
-        string _Bezeichnung_Anlage_1;
-
-        /// <summary>
-        /// Gets or sets the value of variable Bezeichnung_Anlage_1.
-        /// </summary>
-        [TestVariable("b4a3170a-fc8e-496d-94d0-841179fdf3f8")]
-        public string Bezeichnung_Anlage_1
-        {
-            get { return _Bezeichnung_Anlage_1; }
-            set { _Bezeichnung_Anlage_1 = value; }
         }
 
         string _GJ;

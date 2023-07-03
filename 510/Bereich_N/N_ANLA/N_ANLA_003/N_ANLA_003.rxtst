@@ -84,6 +84,9 @@
 			id="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
 			name="N_ANLA_003"
 			reportlevel="Info;20">
+				<description>
+					<![CDATA[<p>Anlagenzugang über die autom. Funktion "Fibu_Übernahme durchführen, hierzu zwei Anlagen, welche zuvor über B_BUCH erfasst wurden über die Funktion "FIBU_Übernahme als Zugange übernehmen, kontrollieren ob die Daten korrekt übernommen wurden und anschließend überprüfen ob eine nochmalige Übernahme nicht mehr möglich ist. </p>]]>
+				</description>
 				<parameters>
 					<param
 					name="Programm"
@@ -161,6 +164,42 @@
 					name="Belegnr_02"
 					value="N_ANLA_003_02">
 					</param>
+					<param
+					name="Positon_Anlage_003_01"
+					value="1">
+					</param>
+					<param
+					name="Konstenstelle_Anlage_003_01"
+					value="10">
+					</param>
+					<param
+					name="Menge_Anlage_003_01"
+					value="1,00">
+					</param>
+					<param
+					name="Aufteilung_Prozent_Anlage_003_01"
+					value="100,00000000">
+					</param>
+					<param
+					name="Prozent_Anlage_003_02"
+					value="100,00000000">
+					</param>
+					<param
+					name="Pos_Anlage_003_02"
+					value="1">
+					</param>
+					<param
+					name="Kostenstelle_Anlage_003_02"
+					value="20">
+					</param>
+					<param
+					name="Menge_Anlage_003_02"
+					value="1">
+					</param>
+					<param
+					name="Afa_Konto_GWG_Anlage"
+					value="7010">
+					</param>
 				</parameters>
 			</testcase>
 			<testsuite
@@ -224,12 +263,6 @@
 					variablename="Anlage_1">
 					</var>
 					<var
-					dataname="Bezeichnung_Anlage_1"
-					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
-					variableid="b4a3170a-fc8e-496d-94d0-841179fdf3f8"
-					variablename="Bezeichnung_Anlage_1">
-					</var>
-					<var
 					dataname="GJ"
 					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
 					variableid="42a5c83d-2e49-4a39-aaa7-9c8a48c77d18"
@@ -254,18 +287,6 @@
 					variablename="Belegnr_01">
 					</var>
 					<var
-					dataname="Anlagenbezeichnung"
-					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
-					variableid="7d337f04-b0f7-42a7-a6d9-89358dac056d"
-					variablename="Anlagenbezeichnung">
-					</var>
-					<var
-					dataname="Anlagennr"
-					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
-					variableid="3e8a3f15-5c9e-41c1-bf09-2308fef4562e"
-					variablename="Anlagennr">
-					</var>
-					<var
 					dataname="Konto_Anlagen_Nr"
 					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
 					variableid="1308d3a3-dc97-438c-9199-d9ffc621bb03"
@@ -278,12 +299,64 @@
 			name="Kontrolle_Bereiche_GWG_Anlage"
 			ref="0fbc7708-cc70-4117-9ab3-57195069136c"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Menge_Anlage_003_02"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="0fc1e7dc-0a0f-418b-8fc0-00b5a49e7f62"
+					variablename="Menge_Anlage_003_02">
+					</var>
+					<var
+					dataname="Kostenstelle_Anlage_003_02"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="18a75853-1e86-4daa-9648-ee1b20be99e6"
+					variablename="Kostenstelle_Anlage_003_02">
+					</var>
+					<var
+					dataname="Pos_Anlage_003_02"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="10a74294-a0e0-435c-8988-b4f53a703e66"
+					variablename="Pos_Anlage_003_02">
+					</var>
+					<var
+					dataname="Prozent_Anlage_003_02"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="55b3853e-9226-41dc-a037-6a9336f174a1"
+					variablename="Prozent_Anlage_003_02">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="ce8e57cf-8179-4464-8125-4343da3dd915"
 			name="Kontrolle_Karteireiter_Bereiche"
 			ref="86fa9bb9-60eb-430f-98f3-e12810e6a2b1"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Konstenstelle_Anlage_003_01"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="eddaba8c-3e39-467a-91c0-52d029b7a0bc"
+					variablename="Konstenstelle_Anlage_003_01">
+					</var>
+					<var
+					dataname="Positon_Anlage_003_01"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="1f47d2d2-8320-439b-9c58-754c95cb48f5"
+					variablename="Positon_Anlage_003_01">
+					</var>
+					<var
+					dataname="Menge_Anlage_003_01"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="ddbb4042-8223-4666-a251-3e5361773446"
+					variablename="Menge_Anlage_003_01">
+					</var>
+					<var
+					dataname="Aufteilung_Prozent_Anlage_003_01"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="eb05e480-8593-43e8-8e11-70ebddda68f5"
+					variablename="Aufteilung_Prozent_Anlage_003_01">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="dc0d5cf0-faf1-441a-90a2-38c9a0173b3c"
@@ -366,6 +439,32 @@
 			name="Kontrolle_GWG_Uebernahme"
 			ref="aeb0aa40-a82d-457b-8e14-4d4a03be67f8"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Bezeichnung_GWG_Anlage"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="6bd4b10f-d530-4b97-9c1a-a777dfe76f3b"
+					variablename="Bezeichnung_GWG_Anlage">
+					</var>
+					<var
+					dataname="Anlagennummer_GWG_Anlage"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="d7d160ad-fe23-4380-8b60-3e80ab569300"
+					variablename="Anlagennummer_GWG_Anlage">
+					</var>
+					<var
+					dataname="Kontonr_GWG_Anlage"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="db2a952b-2f36-4fd1-99f1-0c2bb57bfd90"
+					variablename="Kontonr_GWG_Anlage">
+					</var>
+					<var
+					dataname="Afa_Konto_GWG_Anlage"
+					datasourceid="488a6075-ca3a-4df2-8af6-cb9c01fb84c7"
+					variableid="5f3b1185-e31e-4a52-b9ee-f17fed54c5f9"
+					variablename="Afa_Konto_GWG_Anlage">
+					</var>
+				</databinding>
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
