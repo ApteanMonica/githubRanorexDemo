@@ -23,6 +23,26 @@ mode="Global">
 	namespace="N_ANLA_003.Recordings">
 	</codegen>
 	<variables>
+		<var
+		id="d7d160ad-fe23-4380-8b60-3e80ab569300"
+		name="Anlagennummer_GWG_Anlage">
+			003_02
+		</var>
+		<var
+		id="6bd4b10f-d530-4b97-9c1a-a777dfe76f3b"
+		name="Bezeichnung_GWG_Anlage">
+			N_ANLA_003_02
+		</var>
+		<var
+		id="db2a952b-2f36-4fd1-99f1-0c2bb57bfd90"
+		name="Kontonr_GWG_Anlage">
+			0680
+		</var>
+		<var
+		id="5f3b1185-e31e-4a52-b9ee-f17fed54c5f9"
+		name="Afa_Konto_GWG_Anlage">
+			7010
+		</var>
 	</variables>
 	<recorditems>
 		<validationitem
@@ -33,6 +53,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Anlagennummer_GWG_Anlage">
+				</binding>
 			</bindings>
 			<info
 			id="7da72c28-beb9-456b-8bda-9b1ea11f0505"
@@ -97,6 +121,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Bezeichnung_GWG_Anlage">
+				</binding>
 			</bindings>
 			<info
 			id="a0b9ceca-1cbd-4581-933e-bcfb9ca9a0c5"
@@ -161,6 +189,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Kontonr_GWG_Anlage">
+				</binding>
 			</bindings>
 			<info
 			id="df62caac-0603-4bf0-b31d-f705ff860095"
@@ -4972,6 +5004,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Afa_Konto_GWG_Anlage">
+				</binding>
 			</bindings>
 			<info
 			id="ace4398a-a5cb-45c4-b7cc-2fc0d310c69e"

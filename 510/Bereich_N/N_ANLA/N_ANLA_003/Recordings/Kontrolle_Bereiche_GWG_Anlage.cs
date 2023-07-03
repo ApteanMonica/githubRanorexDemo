@@ -41,6 +41,10 @@ namespace N_ANLA_003.Recordings
         /// </summary>
         public Kontrolle_Bereiche_GWG_Anlage()
         {
+            Pos_Anlage_003_02 = "1";
+            Kostenstelle_Anlage_003_02 = "20";
+            Menge_Anlage_003_02 = "1,00";
+            Prozent_Anlage_003_02 = "100,00000000";
         }
 
         /// <summary>
@@ -52,6 +56,54 @@ namespace N_ANLA_003.Recordings
         }
 
 #region Variables
+
+        string _Pos_Anlage_003_02;
+
+        /// <summary>
+        /// Gets or sets the value of variable Pos_Anlage_003_02.
+        /// </summary>
+        [TestVariable("10a74294-a0e0-435c-8988-b4f53a703e66")]
+        public string Pos_Anlage_003_02
+        {
+            get { return _Pos_Anlage_003_02; }
+            set { _Pos_Anlage_003_02 = value; }
+        }
+
+        string _Kostenstelle_Anlage_003_02;
+
+        /// <summary>
+        /// Gets or sets the value of variable Kostenstelle_Anlage_003_02.
+        /// </summary>
+        [TestVariable("18a75853-1e86-4daa-9648-ee1b20be99e6")]
+        public string Kostenstelle_Anlage_003_02
+        {
+            get { return _Kostenstelle_Anlage_003_02; }
+            set { _Kostenstelle_Anlage_003_02 = value; }
+        }
+
+        string _Menge_Anlage_003_02;
+
+        /// <summary>
+        /// Gets or sets the value of variable Menge_Anlage_003_02.
+        /// </summary>
+        [TestVariable("0fc1e7dc-0a0f-418b-8fc0-00b5a49e7f62")]
+        public string Menge_Anlage_003_02
+        {
+            get { return _Menge_Anlage_003_02; }
+            set { _Menge_Anlage_003_02 = value; }
+        }
+
+        string _Prozent_Anlage_003_02;
+
+        /// <summary>
+        /// Gets or sets the value of variable Prozent_Anlage_003_02.
+        /// </summary>
+        [TestVariable("55b3853e-9226-41dc-a037-6a9336f174a1")]
+        public string Prozent_Anlage_003_02
+        {
+            get { return _Prozent_Anlage_003_02; }
+            set { _Prozent_Anlage_003_02 = value; }
+        }
 
 #endregion
 
@@ -94,17 +146,17 @@ namespace N_ANLA_003.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnla.ClientArea.Bereiche' at Center.", repo.FrmAnla.ClientArea.BereicheInfo, new RecordItemIndex(4));
             repo.FrmAnla.ClientArea.Bereiche.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'FrmAnla.Registerkarte_Bereiche.ColAnbePosRow1'.", repo.FrmAnla.Registerkarte_Bereiche.ColAnbePosRow1Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.FrmAnla.Registerkarte_Bereiche.ColAnbePosRow1Info, "Text", "1");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Pos_Anlage_003_02) on item 'FrmAnla.Registerkarte_Bereiche.ColAnbePosRow1'.", repo.FrmAnla.Registerkarte_Bereiche.ColAnbePosRow1Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.FrmAnla.Registerkarte_Bereiche.ColAnbePosRow1Info, "Text", Pos_Anlage_003_02);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'FrmAnla.Registerkarte_Bereiche.ColBektNr1Row1'.", repo.FrmAnla.Registerkarte_Bereiche.ColBektNr1Row1Info, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.FrmAnla.Registerkarte_Bereiche.ColBektNr1Row1Info, "Text", "20");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kostenstelle_Anlage_003_02) on item 'FrmAnla.Registerkarte_Bereiche.ColBektNr1Row1'.", repo.FrmAnla.Registerkarte_Bereiche.ColBektNr1Row1Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmAnla.Registerkarte_Bereiche.ColBektNr1Row1Info, "Text", Kostenstelle_Anlage_003_02);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1,00') on item 'FrmAnla.Registerkarte_Bereiche.ColAnbeMengeRow1'.", repo.FrmAnla.Registerkarte_Bereiche.ColAnbeMengeRow1Info, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.FrmAnla.Registerkarte_Bereiche.ColAnbeMengeRow1Info, "Text", "1,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Menge_Anlage_003_02) on item 'FrmAnla.Registerkarte_Bereiche.ColAnbeMengeRow1'.", repo.FrmAnla.Registerkarte_Bereiche.ColAnbeMengeRow1Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.FrmAnla.Registerkarte_Bereiche.ColAnbeMengeRow1Info, "Text", Menge_Anlage_003_02);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,00000000') on item 'FrmAnla.Registerkarte_Bereiche.ColAnbeProzRow1'.", repo.FrmAnla.Registerkarte_Bereiche.ColAnbeProzRow1Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.FrmAnla.Registerkarte_Bereiche.ColAnbeProzRow1Info, "Text", "100,00000000");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Prozent_Anlage_003_02) on item 'FrmAnla.Registerkarte_Bereiche.ColAnbeProzRow1'.", repo.FrmAnla.Registerkarte_Bereiche.ColAnbeProzRow1Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.FrmAnla.Registerkarte_Bereiche.ColAnbeProzRow1Info, "Text", Prozent_Anlage_003_02);
             
         }
 

@@ -43,8 +43,6 @@ namespace N_ANLA_003.Recordings
         {
             Konto_Anlagen_Nr = "0660";
             Belegnr_01 = "N_ANLA_003_01";
-            Anlagennr = "003_01";
-            Anlagenbezeichnung = "N_ANLA_003_01";
         }
 
         /// <summary>
@@ -67,30 +65,6 @@ namespace N_ANLA_003.Recordings
         {
             get { return _Konto_Anlagen_Nr; }
             set { _Konto_Anlagen_Nr = value; }
-        }
-
-        string _Anlagennr;
-
-        /// <summary>
-        /// Gets or sets the value of variable Anlagennr.
-        /// </summary>
-        [TestVariable("3e8a3f15-5c9e-41c1-bf09-2308fef4562e")]
-        public string Anlagennr
-        {
-            get { return _Anlagennr; }
-            set { _Anlagennr = value; }
-        }
-
-        string _Anlagenbezeichnung;
-
-        /// <summary>
-        /// Gets or sets the value of variable Anlagenbezeichnung.
-        /// </summary>
-        [TestVariable("7d337f04-b0f7-42a7-a6d9-89358dac056d")]
-        public string Anlagenbezeichnung
-        {
-            get { return _Anlagenbezeichnung; }
-            set { _Anlagenbezeichnung = value; }
         }
 
         /// <summary>

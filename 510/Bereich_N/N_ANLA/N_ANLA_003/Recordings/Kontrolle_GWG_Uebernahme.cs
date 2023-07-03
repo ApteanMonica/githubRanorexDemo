@@ -41,6 +41,10 @@ namespace N_ANLA_003.Recordings
         /// </summary>
         public Kontrolle_GWG_Uebernahme()
         {
+            Anlagennummer_GWG_Anlage = "003_02";
+            Bezeichnung_GWG_Anlage = "N_ANLA_003_02";
+            Kontonr_GWG_Anlage = "0680";
+            Afa_Konto_GWG_Anlage = "7010";
         }
 
         /// <summary>
@@ -52,6 +56,52 @@ namespace N_ANLA_003.Recordings
         }
 
 #region Variables
+
+        string _Anlagennummer_GWG_Anlage;
+
+        /// <summary>
+        /// Gets or sets the value of variable Anlagennummer_GWG_Anlage.
+        /// </summary>
+        [TestVariable("d7d160ad-fe23-4380-8b60-3e80ab569300")]
+        public string Anlagennummer_GWG_Anlage
+        {
+            get { return _Anlagennummer_GWG_Anlage; }
+            set { _Anlagennummer_GWG_Anlage = value; }
+        }
+
+        string _Bezeichnung_GWG_Anlage;
+
+        /// <summary>
+        /// Gets or sets the value of variable Bezeichnung_GWG_Anlage.
+        /// </summary>
+        [TestVariable("6bd4b10f-d530-4b97-9c1a-a777dfe76f3b")]
+        public string Bezeichnung_GWG_Anlage
+        {
+            get { return _Bezeichnung_GWG_Anlage; }
+            set { _Bezeichnung_GWG_Anlage = value; }
+        }
+
+        string _Afa_Konto_GWG_Anlage;
+
+        /// <summary>
+        /// Gets or sets the value of variable Afa_Konto_GWG_Anlage.
+        /// </summary>
+        [TestVariable("5f3b1185-e31e-4a52-b9ee-f17fed54c5f9")]
+        public string Afa_Konto_GWG_Anlage
+        {
+            get { return _Afa_Konto_GWG_Anlage; }
+            set { _Afa_Konto_GWG_Anlage = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable Kontonr_GWG_Anlage.
+        /// </summary>
+        [TestVariable("db2a952b-2f36-4fd1-99f1-0c2bb57bfd90")]
+        public string Kontonr_GWG_Anlage
+        {
+            get { return repo.Kontonr_GWG_Anlage; }
+            set { repo.Kontonr_GWG_Anlage = value; }
+        }
 
 #endregion
 
@@ -79,14 +129,14 @@ namespace N_ANLA_003.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='003_02') on item 'DlgZugang.Nummer'.", repo.DlgZugang.NummerInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.DlgZugang.NummerInfo, "Text", "003_02");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anlagennummer_GWG_Anlage) on item 'DlgZugang.Nummer'.", repo.DlgZugang.NummerInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.DlgZugang.NummerInfo, "Text", Anlagennummer_GWG_Anlage);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='N_ANLA_003_02') on item 'DlgZugang.Bez'.", repo.DlgZugang.BezInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.DlgZugang.BezInfo, "Text", "N_ANLA_003_02");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Bezeichnung_GWG_Anlage) on item 'DlgZugang.Bez'.", repo.DlgZugang.BezInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.DlgZugang.BezInfo, "Text", Bezeichnung_GWG_Anlage);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0680') on item 'DlgZugang.Konto'.", repo.DlgZugang.KontoInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.DlgZugang.KontoInfo, "Text", "0680");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kontonr_GWG_Anlage) on item 'DlgZugang.Konto'.", repo.DlgZugang.KontoInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.DlgZugang.KontoInfo, "Text", Kontonr_GWG_Anlage);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='03.04.2022') on item 'DlgZugang.Registerkarte_Werte.Zugangsdatum'.", repo.DlgZugang.Registerkarte_Werte.ZugangsdatumInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.DlgZugang.Registerkarte_Werte.ZugangsdatumInfo, "Text", "03.04.2022");
@@ -103,8 +153,8 @@ namespace N_ANLA_003.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='aktiv') on item 'DlgZugang.CmbAnlaStatus'.", repo.DlgZugang.CmbAnlaStatusInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.DlgZugang.CmbAnlaStatusInfo, "Text", "aktiv");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='7010') on item 'DlgZugang.Registerkarte_Werte.TextAfA'.", repo.DlgZugang.Registerkarte_Werte.TextAfAInfo, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.DlgZugang.Registerkarte_Werte.TextAfAInfo, "Text", "7010");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Afa_Konto_GWG_Anlage) on item 'DlgZugang.Registerkarte_Werte.TextAfA'.", repo.DlgZugang.Registerkarte_Werte.TextAfAInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.DlgZugang.Registerkarte_Werte.TextAfAInfo, "Text", Afa_Konto_GWG_Anlage);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='GWG') on item 'DlgZugang.Registerkarte_Werte.CmbAnla1AfaBez'.", repo.DlgZugang.Registerkarte_Werte.CmbAnla1AfaBezInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.DlgZugang.Registerkarte_Werte.CmbAnla1AfaBezInfo, "Text", "GWG");
