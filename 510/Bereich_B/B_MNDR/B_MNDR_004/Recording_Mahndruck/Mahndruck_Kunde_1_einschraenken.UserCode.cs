@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_MNDR_004.Recording_Mahn_Druck
+namespace B_MNDR_004.Recording_Mahndruck
 {
     public partial class Mahndruck_Kunde_1_einschraenken
     {

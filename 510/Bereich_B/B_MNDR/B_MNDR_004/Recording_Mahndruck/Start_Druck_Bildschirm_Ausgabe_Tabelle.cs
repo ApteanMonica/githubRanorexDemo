@@ -20,51 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_MNDR_004.Recording_Mahn_Druck
+namespace B_MNDR_004.Recording_Mahndruck
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Mahndruck_Kunde_1_einschraenken recording.
+    ///The Start_Druck_Bildschirm_Ausgabe_Tabelle recording.
     /// </summary>
-    [TestModule("7e3ee483-8082-4d44-b4fc-4a70de7404ed", ModuleType.Recording, 1)]
-    public partial class Mahndruck_Kunde_1_einschraenken : ITestModule
+    [TestModule("e405a9a8-a0e9-4697-8ebf-3f38c4419d48", ModuleType.Recording, 1)]
+    public partial class Start_Druck_Bildschirm_Ausgabe_Tabelle : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_MNDR_004.B_MNDR_004Repository repository.
         /// </summary>
         public static global::B_MNDR_004.B_MNDR_004Repository repo = global::B_MNDR_004.B_MNDR_004Repository.Instance;
 
-        static Mahndruck_Kunde_1_einschraenken instance = new Mahndruck_Kunde_1_einschraenken();
+        static Start_Druck_Bildschirm_Ausgabe_Tabelle instance = new Start_Druck_Bildschirm_Ausgabe_Tabelle();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Mahndruck_Kunde_1_einschraenken()
+        public Start_Druck_Bildschirm_Ausgabe_Tabelle()
         {
-            Kunde_1 = "2000024";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Mahndruck_Kunde_1_einschraenken Instance
+        public static Start_Druck_Bildschirm_Ausgabe_Tabelle Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Kunde_1;
-
-        /// <summary>
-        /// Gets or sets the value of variable Kunde_1.
-        /// </summary>
-        [TestVariable("16e7a374-a4a9-491b-863b-0dc5f5f8b8bd")]
-        public string Kunde_1
-        {
-            get { return _Kunde_1; }
-            set { _Kunde_1 = value; }
-        }
 
 #endregion
 
@@ -92,23 +79,23 @@ namespace B_MNDR_004.Recording_Mahn_Druck
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kunde_1' with focus on 'FrmMahnDruck.Text_Konto_von'.", repo.FrmMahnDruck.Text_Konto_vonInfo, new RecordItemIndex(0));
-            repo.FrmMahnDruck.Text_Konto_von.PressKeys(Kunde_1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMahnDruck.PbDruckenDrucken' at Center.", repo.FrmMahnDruck.PbDruckenDruckenInfo, new RecordItemIndex(0));
+            repo.FrmMahnDruck.PbDruckenDrucken.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(1));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BMNDR2.Bildschirm' at Center.", repo.BMNDR2.BildschirmInfo, new RecordItemIndex(1));
+            repo.BMNDR2.Bildschirm.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kunde_1' with focus on 'FrmMahnDruck.KontoNr_Konto_bis'.", repo.FrmMahnDruck.KontoNr_Konto_bisInfo, new RecordItemIndex(2));
-            repo.FrmMahnDruck.KontoNr_Konto_bis.PressKeys(Kunde_1);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDrucken.TitleBar100DruckeVorschau200024'", repo.DlgDrucken.TitleBar100DruckeVorschau200024Info, new ActionTimeout(120000), new RecordItemIndex(2));
+            repo.DlgDrucken.TitleBar100DruckeVorschau200024Info.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Drucke Vorschau') on item 'DlgDrucken.TitleBar100DruckeVorschau200024'.", repo.DlgDrucken.TitleBar100DruckeVorschau200024Info, new RecordItemIndex(3));
+            Validate.AttributeContains(repo.DlgDrucken.TitleBar100DruckeVorschau200024Info, "Text", "Drucke Vorschau");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kunde_1) on item 'FrmMahnDruck.Text_Konto_von'.", repo.FrmMahnDruck.Text_Konto_vonInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.FrmMahnDruck.Text_Konto_vonInfo, "Text", Kunde_1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbExport' at Center.", repo.DlgDrucken.PbExportInfo, new RecordItemIndex(4));
+            repo.DlgDrucken.PbExport.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kunde_1) on item 'FrmMahnDruck.KontoNr_Konto_bis'.", repo.FrmMahnDruck.KontoNr_Konto_bisInfo, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.FrmMahnDruck.KontoNr_Konto_bisInfo, "Text", Kunde_1);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BMNDR2.Tabelle' at Center.", repo.BMNDR2.TabelleInfo, new RecordItemIndex(5));
+            repo.BMNDR2.Tabelle.Click();
             
         }
 

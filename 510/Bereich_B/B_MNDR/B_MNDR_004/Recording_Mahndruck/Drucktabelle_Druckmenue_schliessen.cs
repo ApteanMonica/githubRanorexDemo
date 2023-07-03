@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_MNDR_004.Recording_Mahn_Druck
+namespace B_MNDR_004.Recording_Mahndruck
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Meldung_pruefen_bestaetigen recording.
+    ///The Drucktabelle_Druckmenue_schliessen recording.
     /// </summary>
-    [TestModule("bdecb08c-f752-4e0f-b3da-186e64c0d5cc", ModuleType.Recording, 1)]
-    public partial class Meldung_pruefen_bestaetigen : ITestModule
+    [TestModule("fc04cf1b-de78-4220-adcc-fe4f57872b9f", ModuleType.Recording, 1)]
+    public partial class Drucktabelle_Druckmenue_schliessen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_MNDR_004.B_MNDR_004Repository repository.
         /// </summary>
         public static global::B_MNDR_004.B_MNDR_004Repository repo = global::B_MNDR_004.B_MNDR_004Repository.Instance;
 
-        static Meldung_pruefen_bestaetigen instance = new Meldung_pruefen_bestaetigen();
+        static Drucktabelle_Druckmenue_schliessen instance = new Drucktabelle_Druckmenue_schliessen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Meldung_pruefen_bestaetigen()
+        public Drucktabelle_Druckmenue_schliessen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Meldung_pruefen_bestaetigen Instance
+        public static Drucktabelle_Druckmenue_schliessen Instance
         {
             get { return instance; }
         }
@@ -79,14 +79,16 @@ namespace B_MNDR_004.Recording_Mahn_Druck
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgMessageBox'", repo.DlgMessageBox.SelfInfo, new ActionTimeout(180000), new RecordItemIndex(0));
-            repo.DlgMessageBox.SelfInfo.WaitForExists(180000);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblDrucken.TitleBar100Vorschau200024QSKUND'.", repo.TblDrucken.TitleBar100Vorschau200024QSKUNDInfo, new RecordItemIndex(0));
+            Keyboard.PrepareFocus(repo.TblDrucken.TitleBar100Vorschau200024QSKUND);
+            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Mahnungen drucken beendet!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Mahnungen drucken beendet!");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgDrucken.TitleBar100DruckeVorschau200024'", repo.DlgDrucken.TitleBar100DruckeVorschau200024Info, new ActionTimeout(60000), new RecordItemIndex(1));
+            repo.DlgDrucken.TitleBar100DruckeVorschau200024Info.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
-            repo.DlgMessageBox.Button0.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgDrucken.TitleBar100DruckeVorschau200024'.", repo.DlgDrucken.TitleBar100DruckeVorschau200024Info, new RecordItemIndex(2));
+            Keyboard.PrepareFocus(repo.DlgDrucken.TitleBar100DruckeVorschau200024);
+            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }
 

@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_MNDR_004.Recording_Mahn_Druck
+namespace B_MNDR_004.Recording_Mahndruck
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Start_Druck_Bildschirm_Ausgabe_Tabelle recording.
+    ///The Meldung_pruefen_bestaetigen recording.
     /// </summary>
-    [TestModule("e405a9a8-a0e9-4697-8ebf-3f38c4419d48", ModuleType.Recording, 1)]
-    public partial class Start_Druck_Bildschirm_Ausgabe_Tabelle : ITestModule
+    [TestModule("bdecb08c-f752-4e0f-b3da-186e64c0d5cc", ModuleType.Recording, 1)]
+    public partial class Meldung_pruefen_bestaetigen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_MNDR_004.B_MNDR_004Repository repository.
         /// </summary>
         public static global::B_MNDR_004.B_MNDR_004Repository repo = global::B_MNDR_004.B_MNDR_004Repository.Instance;
 
-        static Start_Druck_Bildschirm_Ausgabe_Tabelle instance = new Start_Druck_Bildschirm_Ausgabe_Tabelle();
+        static Meldung_pruefen_bestaetigen instance = new Meldung_pruefen_bestaetigen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Start_Druck_Bildschirm_Ausgabe_Tabelle()
+        public Meldung_pruefen_bestaetigen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Start_Druck_Bildschirm_Ausgabe_Tabelle Instance
+        public static Meldung_pruefen_bestaetigen Instance
         {
             get { return instance; }
         }
@@ -79,23 +79,14 @@ namespace B_MNDR_004.Recording_Mahn_Druck
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMahnDruck.PbDruckenDrucken' at Center.", repo.FrmMahnDruck.PbDruckenDruckenInfo, new RecordItemIndex(0));
-            repo.FrmMahnDruck.PbDruckenDrucken.Click();
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgMessageBox'", repo.DlgMessageBox.SelfInfo, new ActionTimeout(180000), new RecordItemIndex(0));
+            repo.DlgMessageBox.SelfInfo.WaitForExists(180000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BMNDR2.Bildschirm' at Center.", repo.BMNDR2.BildschirmInfo, new RecordItemIndex(1));
-            repo.BMNDR2.Bildschirm.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Mahnungen drucken beendet!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Mahnungen drucken beendet!");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDrucken.TitleBar100DruckeVorschau200024'", repo.DlgDrucken.TitleBar100DruckeVorschau200024Info, new ActionTimeout(120000), new RecordItemIndex(2));
-            repo.DlgDrucken.TitleBar100DruckeVorschau200024Info.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Drucke Vorschau') on item 'DlgDrucken.TitleBar100DruckeVorschau200024'.", repo.DlgDrucken.TitleBar100DruckeVorschau200024Info, new RecordItemIndex(3));
-            Validate.AttributeContains(repo.DlgDrucken.TitleBar100DruckeVorschau200024Info, "Text", "Drucke Vorschau");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbExport' at Center.", repo.DlgDrucken.PbExportInfo, new RecordItemIndex(4));
-            repo.DlgDrucken.PbExport.Click();
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BMNDR2.Tabelle' at Center.", repo.BMNDR2.TabelleInfo, new RecordItemIndex(5));
-            repo.BMNDR2.Tabelle.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
+            repo.DlgMessageBox.Button0.Click();
             
         }
 

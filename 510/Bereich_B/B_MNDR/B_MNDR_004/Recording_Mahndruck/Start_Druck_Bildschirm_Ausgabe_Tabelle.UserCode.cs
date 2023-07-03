@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_MNDR_004.Recording_Mahn_Druck
+namespace B_MNDR_004.Recording_Mahndruck
 {
-    public partial class Drucktabelle_Druckmenue_schliessen
+    public partial class Start_Druck_Bildschirm_Ausgabe_Tabelle
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

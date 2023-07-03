@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="1c2ad743-0ab0-4a57-9dd6-23b8db9c7132"
+id="d55f5fe2-ca7b-407e-814a-22efd646d2de"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,14 +19,14 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Mahndruck_Kunde_1_Tabelle_pruefen"
-	namespace="B_MNDR_004.Recording_Mahn_Druck">
+	classname="Mahndruck_Kunde_2_Tabelle_pruefen"
+	namespace="B_MNDR_004.Recording_Mahndruck">
 	</codegen>
 	<variables>
 		<var
-		id="3f3af39e-fbc8-4c18-938d-7f1082536364"
-		name="Kunde_1">
-			200024
+		id="83613068-5687-441a-bfa2-d780142102ef"
+		name="Kunde_2">
+			200025
 		</var>
 	</variables>
 	<recorditems>
@@ -163,7 +163,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Kunde_1">
+				variable="Kunde_2">
 				</binding>
 			</bindings>
 			<info
@@ -231,7 +231,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Kunde_1">
+				variable="Kunde_2">
 				</binding>
 			</bindings>
 			<info
@@ -272,7 +272,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				B_MNDR_004_02
+				B_MNDR_004_03
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -322,7 +322,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				86	86	EUR
+				88	88	EUR
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -372,7 +372,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				Re.Nr. B_MNDR_004_02 Datum: 2021-02-06	Re.Betrag 86,00.-  Mahnstufe 1
+				Re.Nr. B_MNDR_004_03 Datum: 2021-02-06	Re.Betrag 88,00.-  Mahnstufe 1
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -417,7 +417,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Mahndruck_Kunde_1_Tabelle_pruefen.UserCode.cs
+		Mahndruck_Kunde_2_Tabelle_pruefen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
