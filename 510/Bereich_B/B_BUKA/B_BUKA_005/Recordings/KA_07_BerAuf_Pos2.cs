@@ -82,40 +82,46 @@ namespace B_BUKA_005.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Insert}'.", new RecordItemIndex(0));
             Keyboard.Press("{Insert}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='300') on item 'TblBerAufteilung.SomeText'.", repo.TblBerAufteilung.SomeTextInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblBerAufteilung.SomeTextInfo, "Text", "300");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBerAufteilung.FlexGrid1.ColPosRow2' at Center.", repo.TblBerAufteilung.FlexGrid1.ColPosRow2Info, new RecordItemIndex(1));
+            repo.TblBerAufteilung.FlexGrid1.ColPosRow2.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '100' with focus on 'TblBerAufteilung.FlexGrid1.ColBetragBRow2'.", repo.TblBerAufteilung.FlexGrid1.ColBetragBRow2Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='300,00') on item 'TblBerAufteilung.FlexGrid1.ColBetragBRow2'.", repo.TblBerAufteilung.FlexGrid1.ColBetragBRow2Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblBerAufteilung.FlexGrid1.ColBetragBRow2Info, "Text", "300,00");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '100' with focus on 'TblBerAufteilung.FlexGrid1.ColBetragBRow2'.", repo.TblBerAufteilung.FlexGrid1.ColBetragBRow2Info, new RecordItemIndex(4));
             repo.TblBerAufteilung.FlexGrid1.ColBetragBRow2.PressKeys("100");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(5));
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '4000' with focus on 'TblBerAufteilung.FlexGrid1.ColKtoNrRow2'.", repo.TblBerAufteilung.FlexGrid1.ColKtoNrRow2Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '4000' with focus on 'TblBerAufteilung.FlexGrid1.ColKtoNrRow2'.", repo.TblBerAufteilung.FlexGrid1.ColKtoNrRow2Info, new RecordItemIndex(6));
             repo.TblBerAufteilung.FlexGrid1.ColKtoNrRow2.PressKeys("4000");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}'.", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}'.", new RecordItemIndex(7));
             Keyboard.Press("{Tab}{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '20' with focus on 'TblBerAufteilung.FlexGrid1.ColBektNr1Row2'.", repo.TblBerAufteilung.FlexGrid1.ColBektNr1Row2Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '20' with focus on 'TblBerAufteilung.FlexGrid1.ColBektNr1Row2'.", repo.TblBerAufteilung.FlexGrid1.ColBektNr1Row2Info, new RecordItemIndex(8));
             repo.TblBerAufteilung.FlexGrid1.ColBektNr1Row2.PressKeys("20");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(9));
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,00') on item 'TblBerAufteilung.FlexGrid1.ColBetragBRow2'.", repo.TblBerAufteilung.FlexGrid1.ColBetragBRow2Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,00') on item 'TblBerAufteilung.FlexGrid1.ColBetragBRow2'.", repo.TblBerAufteilung.FlexGrid1.ColBetragBRow2Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.TblBerAufteilung.FlexGrid1.ColBetragBRow2Info, "Text", "100,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4000') on item 'TblBerAufteilung.FlexGrid1.ColKtoNrRow2'.", repo.TblBerAufteilung.FlexGrid1.ColKtoNrRow2Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4000') on item 'TblBerAufteilung.FlexGrid1.ColKtoNrRow2'.", repo.TblBerAufteilung.FlexGrid1.ColKtoNrRow2Info, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.TblBerAufteilung.FlexGrid1.ColKtoNrRow2Info, "Text", "4000");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'TblBerAufteilung.FlexGrid1.ColBektNr1Row2'.", repo.TblBerAufteilung.FlexGrid1.ColBektNr1Row2Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'TblBerAufteilung.FlexGrid1.ColBektNr1Row2'.", repo.TblBerAufteilung.FlexGrid1.ColBektNr1Row2Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.TblBerAufteilung.FlexGrid1.ColBektNr1Row2Info, "Text", "20");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='M20') on item 'TblBerAufteilung.FlexGrid1.ColUstCdRow2'.", repo.TblBerAufteilung.FlexGrid1.ColUstCdRow2Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='M20') on item 'TblBerAufteilung.FlexGrid1.ColUstCdRow2'.", repo.TblBerAufteilung.FlexGrid1.ColUstCdRow2Info, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.TblBerAufteilung.FlexGrid1.ColUstCdRow2Info, "Text", "M20");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='16,67') on item 'TblBerAufteilung.FlexGrid1.ColUstbetragRow2'.", repo.TblBerAufteilung.FlexGrid1.ColUstbetragRow2Info, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='16,67') on item 'TblBerAufteilung.FlexGrid1.ColUstbetragRow2'.", repo.TblBerAufteilung.FlexGrid1.ColUstbetragRow2Info, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.TblBerAufteilung.FlexGrid1.ColUstbetragRow2Info, "Text", "16,67");
             
         }

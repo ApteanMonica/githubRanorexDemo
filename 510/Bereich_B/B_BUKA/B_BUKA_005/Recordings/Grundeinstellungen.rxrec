@@ -310,19 +310,71 @@ mode="Global">
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeContains"
+		action="Exists"
 		enabled="True"
 		optional="False"
-		searchpropertyid="7c5b98f3-2e2c-4fb6-b464-e6a1c7416474">
+		searchpropertyid="b3a67a35-08e3-40c5-a792-ae027dd4af51">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="c5d4d2e5-b704-441c-b7f1-26424dbeb17f"
+			id="c09a6e3a-a7d3-4705-806f-d6054fea59f2"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="20"
+				prefcap="cell"
+				rect="609,278,25,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colBuka_kl Row 1
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+					</attribute>
+				</element>
 				<path>
-					/form[@controlname='tblBuka']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='colBuka_kl Row 0']
+					/form[@controlname='tblBuka']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBuka_kl Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -331,7 +383,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				K/L
+				yourtext
 			</matchvalue>
 		</validationitem>
 		<validationitem

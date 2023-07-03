@@ -95,37 +95,43 @@ namespace B_BUKA_005.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Insert}'.", new RecordItemIndex(0));
             Keyboard.Press("{Insert}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='200') on item 'TblBerAufteilung.SomeText'.", repo.TblBerAufteilung.SomeTextInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblBerAufteilung.SomeTextInfo, "Text", "200");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBerAufteilung.FlexGrid1.ColPosRow3' at Center.", repo.TblBerAufteilung.FlexGrid1.ColPosRow3Info, new RecordItemIndex(1));
+            repo.TblBerAufteilung.FlexGrid1.ColPosRow3.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '400' with focus on 'TblBerAufteilung.FlexGrid1.ColBetragBRow3'.", repo.TblBerAufteilung.FlexGrid1.ColBetragBRow3Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='200,00') on item 'TblBerAufteilung.FlexGrid1.ColBetragBRow3'.", repo.TblBerAufteilung.FlexGrid1.ColBetragBRow3Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblBerAufteilung.FlexGrid1.ColBetragBRow3Info, "Text", "200,00");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '400' with focus on 'TblBerAufteilung.FlexGrid1.ColBetragBRow3'.", repo.TblBerAufteilung.FlexGrid1.ColBetragBRow3Info, new RecordItemIndex(4));
             repo.TblBerAufteilung.FlexGrid1.ColBetragBRow3.PressKeys("400");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(5));
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Konto_4810'.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Konto_4810'.", new RecordItemIndex(6));
             Keyboard.Press(Konto_4810);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}'.", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}'.", new RecordItemIndex(7));
             Keyboard.Press("{Tab}{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '30' with focus on 'TblBerAufteilung.FlexGrid1.ColBektNr1Row3'.", repo.TblBerAufteilung.FlexGrid1.ColBektNr1Row3Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '30' with focus on 'TblBerAufteilung.FlexGrid1.ColBektNr1Row3'.", repo.TblBerAufteilung.FlexGrid1.ColBektNr1Row3Info, new RecordItemIndex(8));
             repo.TblBerAufteilung.FlexGrid1.ColBektNr1Row3.PressKeys("30");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}{Tab}{Tab}'.", new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}{Tab}{Tab}'.", new RecordItemIndex(9));
             Keyboard.Press("{Tab}{Tab}{Tab}{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'M10' with focus on 'TblBerAufteilung.FlexGrid1.ColUstCdRow3'.", repo.TblBerAufteilung.FlexGrid1.ColUstCdRow3Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'M10' with focus on 'TblBerAufteilung.FlexGrid1.ColUstCdRow3'.", repo.TblBerAufteilung.FlexGrid1.ColUstCdRow3Info, new RecordItemIndex(10));
             repo.TblBerAufteilung.FlexGrid1.ColUstCdRow3.PressKeys("M10");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(11));
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='M10') on item 'TblBerAufteilung.FlexGrid1.ColUstCdRow3'.", repo.TblBerAufteilung.FlexGrid1.ColUstCdRow3Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='M10') on item 'TblBerAufteilung.FlexGrid1.ColUstCdRow3'.", repo.TblBerAufteilung.FlexGrid1.ColUstCdRow3Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.TblBerAufteilung.FlexGrid1.ColUstCdRow3Info, "Text", "M10");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}'.", new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}'.", new RecordItemIndex(13));
             Keyboard.Press("{F12}");
             
         }

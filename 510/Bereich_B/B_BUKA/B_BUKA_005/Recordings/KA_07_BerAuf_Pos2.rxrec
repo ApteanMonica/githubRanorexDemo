@@ -37,6 +37,32 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</keysequenceitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="c2e2fb52-3a23-45ac-8407-a23a6c3517cc"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4970c48b-b396-4dfe-a4dc-bb74cd16fb51"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblBerAufteilung']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colPos Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -47,10 +73,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="84ed6df6-091b-4969-a143-4f87c863e5eb"
+			id="ec02324e-9d3c-4646-9c53-00b477de474d"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblBerAufteilung']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/text[@controltypename='']
+					/form[@controlname='tblBerAufteilung']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colBetragB Row 2']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -59,9 +85,24 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				300
+				300,00
 			</matchvalue>
 		</validationitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="d1218b64-0768-4f3a-bd89-3ddc67f42ba2"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
 		<keysequenceitem
 		KeySequence="100"
 		duration="100ms"
