@@ -56,6 +56,67 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
+		<setvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ca184a87-f497-42d7-9c9b-be56e9a1b3a9">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0483058f-bd1e-415d-8803-c037fe0f26d9"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmMain']/container[@controlname='ClientArea']/text[@controlname='dfErrDatei']/text[@accessiblerole='Text']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<AttributeValue>
+			</AttributeValue>
+		</setvaluerecorditem>
+		<keysequenceitem
+		KeySequence=""
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="ea892eea-cd45-4dae-b5f2-05ae66a0371a">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Fehlerprotokoll_Verbuchung">
+				</binding>
+			</bindings>
+			<info
+			id="0483058f-bd1e-415d-8803-c037fe0f26d9"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmMain']/container[@controlname='ClientArea']/text[@controlname='dfErrDatei']/text[@accessiblerole='Text']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="d3a9af2f-226f-4b17-9f37-c5099b73daf3"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -82,31 +143,6 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
-		<setvaluerecorditem
-		attrname="Text"
-		enabled="True"
-		optional="False"
-		searchpropertyid="e003da27-13e2-48da-9c45-7a820e73eda8">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="AttributeValue"
-				variable="Fehlerprotokoll_Verbuchung">
-				</binding>
-			</bindings>
-			<info
-			id="0483058f-bd1e-415d-8803-c037fe0f26d9"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmMain']/container[@controlname='ClientArea']/text[@controlname='dfErrDatei']/text[@accessiblerole='Text']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<AttributeValue>
-			</AttributeValue>
-		</setvaluerecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"

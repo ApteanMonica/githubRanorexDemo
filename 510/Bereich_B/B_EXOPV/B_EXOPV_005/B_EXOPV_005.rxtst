@@ -9,16 +9,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Stapel_Herkunft"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="80147ceb-e943-46c5-a7c1-f05b59ef1cce"
-					variablename="Stapel_Herkunft">
-					</var>
-					<var
 					dataname="Fehlerprotokoll_Pruefung"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="12d7b065-2a01-4bfa-991e-6d21537a9d1b"
 					variablename="Fehlerprotokoll_Pruefung">
+					</var>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="80147ceb-e943-46c5-a7c1-f05b59ef1cce"
+					variablename="Stapel_Herkunft">
 					</var>
 				</databinding>
 			</testmodule>
@@ -32,10 +32,10 @@
 				</description>
 				<databinding>
 					<var
-					dataname="LF_01"
+					dataname="Beleg_ER01_FB01_LF01_OP"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="bc21bb92-472a-4554-aa1b-3c095fcb6ff1"
-					variablename="LF_01">
+					variableid="1f018603-2457-4650-b32a-375f8b7ec07c"
+					variablename="Beleg_ER01_FB01_LF01_OP">
 					</var>
 					<var
 					dataname="LF_02"
@@ -44,22 +44,22 @@
 					variablename="LF_02">
 					</var>
 					<var
-					dataname="Beleg_ER01_FB01_LF01_OP"
+					dataname="LF_01"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="1f018603-2457-4650-b32a-375f8b7ec07c"
-					variablename="Beleg_ER01_FB01_LF01_OP">
-					</var>
-					<var
-					dataname="Beleg_ER03_FB03_LF02_OP"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="2a91abe8-ec26-4696-8bea-57e8bd533c4d"
-					variablename="Beleg_ER03_FB03_LF02_OP">
+					variableid="bc21bb92-472a-4554-aa1b-3c095fcb6ff1"
+					variablename="LF_01">
 					</var>
 					<var
 					dataname="Fehlerprotokoll_Pruefung"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="a44d4820-852d-4c33-9a5e-26d0c8753b77"
 					variablename="Fehlerprotokoll_Pruefung">
+					</var>
+					<var
+					dataname="Beleg_ER03_FB03_LF02_OP"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="2a91abe8-ec26-4696-8bea-57e8bd533c4d"
+					variablename="Beleg_ER03_FB03_LF02_OP">
 					</var>
 				</databinding>
 			</testmodule>
@@ -70,16 +70,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="5a4f1278-f69f-4a30-96ae-4fcc7e8fe361"
-					variablename="Programm">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="5479e8eb-b655-444d-89c6-64953acc0dfd"
 					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="5a4f1278-f69f-4a30-96ae-4fcc7e8fe361"
+					variablename="Programm">
 					</var>
 				</databinding>
 			</testmodule>
@@ -87,6 +87,20 @@
 			id="1d8653e9-0786-4373-9513-fedecb8cf257"
 			name="setup">
 			</setup>
+			<testmodule
+			id="1f572840-7383-45fd-904c-e2bf34a5e0a5"
+			name="B_EXOPS_neu_laden"
+			ref="5d91eadb-9556-4888-8dea-b1b80a770e1b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="c48b93b8-1c9b-432f-8c96-1fffeb97e4c6"
+					variablename="Stapel_Herkunft">
+					</var>
+				</databinding>
+			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -133,7 +147,7 @@
 			</testmodule>
 			<testcase
 			id="36e8a639-b265-48ea-90bc-dd5a05738926"
-			name="TestCase">
+			name="B_EXOPV_Pruefung_doppelte_Belegnummern">
 			</testcase>
 			<testmodule
 			id="39b85d3d-f9d1-4d53-8dec-0e8e45308a8d"
@@ -155,6 +169,13 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="452bfe11-a84b-4803-bd19-94fac97f9f55"
+			name="B_EXOPS_Kontrolle_Status_nach_Verbuchung">
+				<description>
+					<![CDATA[<p>BUG 37789 3 Belege auf Status F, obwohl die Option deaktiviert ist!</p>]]>
+				</description>
+			</testcase>
 			<testmodule
 			id="495fff49-2552-4675-9171-568c88fda2b5"
 			name="Tagesdatum_ermitteln"
@@ -185,12 +206,24 @@
 			</testmodule>
 			<testcase
 			id="6406e09a-057a-43fb-8800-e15265b29c87"
-			name="Kontrolle_B_BUAB">
+			name="B_BUAB_Kontrolle_Buchungen_Belegnummern">
 			</testcase>
+			<testmodule
+			id="663368c7-d2e7-4a30-b824-596b8a045fb8"
+			name="B_BUAB_Belegnr_NEU_validieren"
+			ref="3d284781-66ee-414e-88ae-db1e0cf486af"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="698a29e1-09b5-4b61-90bc-b78f9fba2276"
 			name="Optionen_Default_setzen_pruefen"
 			ref="2003cd04-3fb1-42b1-b685-92ace9a44eb6"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="6e449cdc-c25c-418a-9980-9189ed2a822a"
+			name="Close_B_EXOPS"
+			ref="d9313597-5739-419a-bbf2-077d9ac0bc6c"
 			type="Recording">
 			</testmodule>
 			<testcase
@@ -237,10 +270,74 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<teardown
-			id="92d9e136-8356-453b-94a4-ebf0b1f5d2a6"
-			name="teardown">
-			</teardown>
+			<testmodule
+			id="94cdba0a-630a-4c0a-81d3-1990eed05d65"
+			name="B_BUAB_Tagesdatum_Tagesdatum2_valdieren_Usercode"
+			ref="40ed5814-055e-49a5-b1f0-a469f65a9182"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Inhalt_Buchungsdatum_Zeile19"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="51a91dc0-0c14-4843-9d83-cd48a85b75ea"
+					variablename="Inhalt_Buchungsdatum_Zeile19">
+					</var>
+					<var
+					dataname="Inhalt_Buchungsdatum_Zeile17"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="dd210403-3dc3-4358-b7d7-b9e985ed34cd"
+					variablename="Inhalt_Buchungsdatum_Zeile17">
+					</var>
+					<var
+					dataname="Inhalt_Buchungsdatum_Zeile15"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="5f54cf7e-2e19-4c58-930f-e1abb3db49c6"
+					variablename="Inhalt_Buchungsdatum_Zeile15">
+					</var>
+					<var
+					dataname="Inhalt_Buchungsdatum_Zeile13"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="ec0d4b66-eae6-409a-995c-a4091f5248fa"
+					variablename="Inhalt_Buchungsdatum_Zeile13">
+					</var>
+					<var
+					dataname="Inhalt_Buchungsdatum_Zeile11"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="ff209639-976d-4d7f-8661-45f52db6170f"
+					variablename="Inhalt_Buchungsdatum_Zeile11">
+					</var>
+					<var
+					dataname="Inhalt_Buchungsdatum_Zeile9"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="95028247-f9c9-45b0-84d2-c448c74424c3"
+					variablename="Inhalt_Buchungsdatum_Zeile9">
+					</var>
+					<var
+					dataname="Tagesdatum2"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="f62bff77-db1e-420f-a9cb-a8c1b3284546"
+					variablename="Tagesdatum2">
+					</var>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="2c276c4f-5f21-4faa-a47c-a1fc7479c62a"
+					variablename="Tagesdatum">
+					</var>
+					<var
+					dataname="Inhalt_Buchungsdatum_Zeile21"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="d844cc32-494a-4707-8337-ef0598adc52d"
+					variablename="Inhalt_Buchungsdatum_Zeile21">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="9b9512ab-a325-4053-b7ac-a9844c0eb031"
+			name="Verbuchung_Meldungen_verbucht_Fehler"
+			ref="446f3ba0-459f-43fd-8aff-78cb4a17eea7"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 			name="B_EXOPV_005"
@@ -264,6 +361,10 @@
 					</param>
 					<param
 					name="Tagesdatum"
+					value="">
+					</param>
+					<param
+					name="Tagesdatum2"
 					value="">
 					</param>
 					<param
@@ -336,6 +437,34 @@
 					</param>
 					<param
 					name="Beleg_ER05_FB05_LF02_EX"
+					value="">
+					</param>
+					<param
+					name="Inhalt_Buchungsdatum_Zeile9"
+					value="">
+					</param>
+					<param
+					name="Inhalt_Buchungsdatum_Zeile11"
+					value="">
+					</param>
+					<param
+					name="Inhalt_Buchungsdatum_Zeile13"
+					value="">
+					</param>
+					<param
+					name="Inhalt_Buchungsdatum_Zeile15"
+					value="">
+					</param>
+					<param
+					name="Inhalt_Buchungsdatum_Zeile17"
+					value="">
+					</param>
+					<param
+					name="Inhalt_Buchungsdatum_Zeile19"
+					value="">
+					</param>
+					<param
+					name="Inhalt_Buchungsdatum_Zeile21"
 					value="">
 					</param>
 				</parameters>
@@ -436,19 +565,66 @@
 			</testmodule>
 			<testcase
 			id="c9f22167-116d-46e5-b2fc-de0a7ff30c6e"
-			name="Kontrolle_B_EXOPS_und_Status_auf_N_zurücksetzen">
+			name="B_EXOPS_Kontrolle_und_Status_auf_N_zurücksetzen">
 				<description>
 					<![CDATA[<p>BUG 37789 3 Belege auf Status F, obwohl die Option deaktiviert ist!</p>]]>
 				</description>
 			</testcase>
+			<testmodule
+			id="cd42e940-9543-4325-9a31-52b8267b0037"
+			name="Tagesdatum_ermitteln"
+			ref="be5e1006-7d6d-488e-bdd4-272252b831ee"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="5e4da029-0ac8-4fab-9245-057e3db3edc6"
+					variablename="Tagesdatum">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="d8e9f26d-1573-4ac0-b7bd-42d4da583879"
 			name="setup">
 			</setup>
 			<testmodule
+			id="e0b329ff-016d-440d-ab24-37dbb21585b4"
+			name="B_BUAB_Einschraenkungen_laden"
+			ref="973ed37e-c79a-4680-a38b-260909411bf7"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="55a003cb-c121-4d50-b489-1c5416a87d40"
+					variablename="Stapel_Herkunft">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="e9f8b89f-9ccd-4003-a994-e49b44d5322e"
 			name="B_EXOPS_Status_nach_Pruefung_kontrollieren"
 			ref="d8201208-b1ad-4756-b52e-522408436296"
+			type="Recording">
+				<description>
+					<![CDATA[TICKET!!! Continue on fail, weil 5 Belege auf Status N bleiben und nur 3 auf F gestellt werden trotz Fehleroption und alle Übergeben bei Prüfung]]>
+				</description>
+			</testmodule>
+			<testmodule
+			id="ea0ee79a-4bc4-403d-a03e-1a5d8e5c48c4"
+			name="Optionen_Default_setzen_pruefen"
+			ref="2003cd04-3fb1-42b1-b685-92ace9a44eb6"
+			type="Recording">
+			</testmodule>
+			<teardown
+			id="fd2b4934-fcf3-483e-a6d6-dd83499de10b"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="fd78c853-899f-4f47-97b8-6252a102302f"
+			name="B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren"
+			ref="3f436bc6-50d1-42fc-bc76-13c3c726a568"
 			type="Recording">
 			</testmodule>
 		</flatlistofchildren>
@@ -461,13 +637,17 @@
 				name="B_EXOPV_005">
 					<testcase
 					id="36e8a639-b265-48ea-90bc-dd5a05738926"
-					name="TestCase">
+					name="B_EXOPV_Pruefung_doppelte_Belegnummern">
 						<setup
 						id="1d8653e9-0786-4373-9513-fedecb8cf257"
 						name="setup">
 							<testmodule
 							id="17c6ae13-bb30-4564-8ea2-088fea244e61"
 							name="StartAUT">
+							</testmodule>
+							<testmodule
+							id="cd42e940-9543-4325-9a31-52b8267b0037"
+							name="Tagesdatum_ermitteln">
 							</testmodule>
 						</setup>
 						<testmodule
@@ -505,7 +685,7 @@
 					</testcase>
 					<testcase
 					id="c9f22167-116d-46e5-b2fc-de0a7ff30c6e"
-					name="Kontrolle_B_EXOPS_und_Status_auf_N_zurücksetzen">
+					name="B_EXOPS_Kontrolle_und_Status_auf_N_zurücksetzen">
 						<setup
 						id="7c0348f9-6124-470c-add3-83ee733a9cd1"
 						name="setup">
@@ -526,10 +706,6 @@
 						id="a700f7be-f33c-4977-8fe9-22844f391e61"
 						name="B_EXOPS_Status_von_F_auf_N_zuruecksetzen">
 						</testmodule>
-						<teardown
-						id="92d9e136-8356-453b-94a4-ebf0b1f5d2a6"
-						name="teardown">
-						</teardown>
 					</testcase>
 					<testcase
 					id="7170d466-0f40-4267-8615-76aa983568a1"
@@ -542,9 +718,17 @@
 						id="ae6aeab0-2b89-4da8-a804-27f19ef95543"
 						name="Verbuchung_dopp_Beleg_L_Dialoge">
 						</testmodule>
+						<testmodule
+						id="9b9512ab-a325-4053-b7ac-a9844c0eb031"
+						name="Verbuchung_Meldungen_verbucht_Fehler">
+						</testmodule>
 						<teardown
 						id="85a66b3d-8220-4cfc-a043-f495ba09ce5a"
 						name="teardown">
+							<testmodule
+							id="ea0ee79a-4bc4-403d-a03e-1a5d8e5c48c4"
+							name="Optionen_Default_setzen_pruefen">
+							</testmodule>
 							<testmodule
 							id="36a37167-209c-4928-805c-ca09598f35a0"
 							name="CloseAUT">
@@ -552,8 +736,28 @@
 						</teardown>
 					</testcase>
 					<testcase
+					id="452bfe11-a84b-4803-bd19-94fac97f9f55"
+					name="B_EXOPS_Kontrolle_Status_nach_Verbuchung">
+						<testmodule
+						id="fd78c853-899f-4f47-97b8-6252a102302f"
+						name="B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren">
+						</testmodule>
+						<testmodule
+						id="1f572840-7383-45fd-904c-e2bf34a5e0a5"
+						name="B_EXOPS_neu_laden">
+						</testmodule>
+						<teardown
+						id="fd2b4934-fcf3-483e-a6d6-dd83499de10b"
+						name="teardown">
+							<testmodule
+							id="6e449cdc-c25c-418a-9980-9189ed2a822a"
+							name="Close_B_EXOPS">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
 					id="6406e09a-057a-43fb-8800-e15265b29c87"
-					name="Kontrolle_B_BUAB">
+					name="B_BUAB_Kontrolle_Buchungen_Belegnummern">
 						<setup
 						id="d8e9f26d-1573-4ac0-b7bd-42d4da583879"
 						name="setup">
@@ -562,6 +766,18 @@
 							name="Start_B_BUAB">
 							</testmodule>
 						</setup>
+						<testmodule
+						id="e0b329ff-016d-440d-ab24-37dbb21585b4"
+						name="B_BUAB_Einschraenkungen_laden">
+						</testmodule>
+						<testmodule
+						id="94cdba0a-630a-4c0a-81d3-1990eed05d65"
+						name="B_BUAB_Tagesdatum_Tagesdatum2_valdieren_Usercode">
+						</testmodule>
+						<testmodule
+						id="663368c7-d2e7-4a30-b824-596b8a045fb8"
+						name="B_BUAB_Belegnr_NEU_validieren">
+						</testmodule>
 						<teardown
 						id="ac1e57eb-333f-4270-8d57-379ac8556d77"
 						name="teardown">
@@ -583,6 +799,9 @@
 		name="TestRun">
 			<testcontainer
 			id="36e8a639-b265-48ea-90bc-dd5a05738926">
+			</testcontainer>
+			<testcontainer
+			id="452bfe11-a84b-4803-bd19-94fac97f9f55">
 			</testcontainer>
 			<testcontainer
 			id="6406e09a-057a-43fb-8800-e15265b29c87">

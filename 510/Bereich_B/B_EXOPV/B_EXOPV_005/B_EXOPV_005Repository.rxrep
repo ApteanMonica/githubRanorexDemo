@@ -381,6 +381,7 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 		id="8cf41d41-f310-4290-b99d-23736be500b4"
 		isrooted="True"
 		name="FrmBEXOP_Verwalten_Schnittstelle"
+		refimgid="43e29d9c-85fa-4824-b8fc-80cb6cd9b69a"
 		refpath="/form[@controlname='frmB_EXOP']"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -1014,6 +1015,16 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 					<item
 					addcaps="cell,accessible"
 					capname="cell"
+					id="579772ef-9d41-45f9-9652-0b78499b8f87"
+					name="ColExopNrfremdbelegRow7"
+					refimgid="750015ff-daeb-417b-8cba-b10801f6175c"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='frmB_EXOP']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 7']/cell[@accessiblename='colExop_nrfremdbeleg Row']
+					</item>
+					<item
+					addcaps="cell,accessible"
+					capname="cell"
 					id="8ced2ca0-1c07-46cb-b92a-287d1b7dc201"
 					name="ColExopStatusRow7"
 					refimgid="c88cd15d-980a-4546-b66f-aa48a80eb6e4"
@@ -1168,10 +1179,9 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			id="7fc66fef-3937-4e20-80c3-57c555ad522d"
 			name="ZeilenWiederherstellenStatusN"
 			refimgid="cc158088-721a-40d1-bd59-4809a39f65c9"
-			refpath="/contextmenu[@processname='B_EXOPS']/menuitem[@accessiblename>'Zeilen Wiederherstellen (Status']"
 			robustPath=""
 			searchtimeout="90000ms">
-				/contextmenu[@processname='B_EXOPS']/menuitem[@accessiblename&gt;'Zeilen Wiederherstellen (Status']
+				/contextmenu[@processname='B_EXOPS']/menuitem[@text~'Zeilen Wiederherstellen']
 			</item>
 			<item
 			addcaps="menuitem,uiautomation,uiautomationinvoke"
@@ -1335,87 +1345,6 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
 YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
 nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
-			</icon>
-		</appfolder>
-		<appfolder
-		addcaps="form,control,nativewindow"
-		capname="form"
-		id="935cb110-b2a2-4b2a-8f46-b71fb23a89ff"
-		isrooted="True"
-		name="DlgMessageBox"
-		refpath="/form[@controlname='dlgMessageBox']"
-		searchtimeout="30000ms"
-		usecache="True">
-			<item
-			addcaps="titlebar,accessible"
-			capname="titlebar"
-			id="5ce71343-fffa-4255-9fc0-c5ddc3eac870"
-			name="FakturenPruefung"
-			refimgid="03ee357e-cf34-448b-a988-278b7ccf9b85"
-			refpath="/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
-			</item>
-			<item
-			addcaps="text,control,nativewindow"
-			capname="text"
-			id="99b12b8f-9b1f-4f94-badc-d50fb63b9e42"
-			name="LabelMeldungstext"
-			refimgid="6dc36a7b-55f2-4d23-9342-c5cbbc0042c8"
-			refpath="/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="f78c9e53-af27-458f-b939-e099039722f7"
-			name="Button0"
-			refimgid="1b996603-6d84-408b-b393-7dd8c1864e2a"
-			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button0']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgMessageBox']/button[@controlname='button0']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="fafb6622-7c7e-480f-ac5d-821a924b537e"
-			name="Button2"
-			refimgid="5ce853ed-6907-4c4b-a5f2-9a8dbf09248d"
-			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button2']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgMessageBox']/button[@controlname='button2']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="6f0c9312-8da6-41dd-a325-cefa4791e344"
-			name="Button1"
-			refimgid="3179323a-cb9e-4fa7-92ce-590a4e432a46"
-			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button1']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgMessageBox']/button[@controlname='button1']
-			</item>
-			<basepath>
-				/form[@controlname='dlgMessageBox']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
-RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
-9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
-MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
-iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
-yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
-IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
-7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
-DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
-XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<appfolder
@@ -1662,6 +1591,382 @@ F0Wgr4voafeUAAAAAElFTkSuQmCC
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
 YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
 nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="6d21c849-3b93-4143-97f8-23991720f858"
+		isrooted="True"
+		name="DlgBelegnrFehler"
+		refpath="/form[@controlname='dlgBelegnrFehler']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="fac291bd-e069-493f-8305-100e4d09e12d"
+			name="TitleBar100BelegNrFehler"
+			refimgid="ff9fb4db-58b8-44bb-aeeb-22cc2c9e0f9e"
+			refpath="/form[@controlname='dlgBelegnrFehler']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgBelegnrFehler']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="95d827cb-2961-4eae-ae47-5034020d7ff2"
+			name="PbOk"
+			refimgid="4bbebd9a-56eb-4fa7-9392-3db0d62e78f1"
+			refpath="/form[@controlname='dlgBelegnrFehler']/button[@controlname='pbOk']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgBelegnrFehler']/button[@controlname='pbOk']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="e92f1429-91c6-463c-840f-456b9b9a4827"
+			name="PbAkzeptieren"
+			refimgid="ad09e8b3-beca-431a-9f7d-22797ad5dd1b"
+			refpath="/form[@controlname='dlgBelegnrFehler']/button[@controlname='pbAkzeptieren']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgBelegnrFehler']/button[@controlname='pbAkzeptieren']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="d95975e8-5e00-4a56-8188-165101804e0b"
+			name="PbUEber"
+			refimgid="de31a2df-66dd-4031-87bf-113137070272"
+			refpath="/form[@controlname='dlgBelegnrFehler']/button[@controlname='pbÜber']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgBelegnrFehler']/button[@controlname='pbÜber']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="8159adfb-e6b7-4d58-98db-c6e6d7e40cf5"
+			name="PbAlleUebergehen"
+			refimgid="57db4161-af6f-4dfa-b66f-e6f9310c6294"
+			refpath="/form[@controlname='dlgBelegnrFehler']/button[@controlname='pbAlle_uebergehen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgBelegnrFehler']/button[@controlname='pbAlle_uebergehen']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="e8f537f0-cb9c-449a-bb52-e5e48db16334"
+			name="PbAbbrechen"
+			refimgid="58d397db-0f1a-4fcd-9c9e-06f73ee6bc49"
+			refpath="/form[@controlname='dlgBelegnrFehler']/button[@controlname='pbAbbrechen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgBelegnrFehler']/button[@controlname='pbAbbrechen']
+			</item>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="ea1ed1b8-6e5b-40da-8ea1-b47b1f1b34de"
+			isrooted="True"
+			name="Frame2"
+			refpath="/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="2fda6867-a651-49a7-a9ca-831524506b29"
+				name="DfAdrNr"
+				refimgid="b99bb080-2036-407f-931c-bd945c5887c4"
+				refpath="/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfAdr_nr']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfAdr_nr']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="bedb27fc-5ed5-4eb2-99df-1515d3a2f2d8"
+				name="DfBelegNr"
+				refimgid="ce75e6bb-285f-49fb-ad5b-2e2c69c7ce89"
+				refpath="/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfBeleg_nr']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfBeleg_nr']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="a38f3027-11bb-4934-b585-e23f1e01657c"
+				name="Label3"
+				refimgid="77e64816-fa01-407e-b657-cdc346f33338"
+				refpath="/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']/text[@controlname='label3']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']/text[@controlname='label3']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="4e5afc41-61a6-4412-bec0-64d0246cba70"
+				name="NeueBelegNr"
+				refimgid="7fc9c18c-f4f2-44d9-8435-2384aaea96e9"
+				refpath="/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfNeue_nr']/text[@accessiblename='Neue Beleg-Nr:']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfNeue_nr']/text[@accessiblename='Neue Beleg-Nr:']
+				</item>
+				<basepath>
+					/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='dlgBelegnrFehler']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="5bb06b36-c619-41ca-8fca-d644e3bb1cdd"
+		isrooted="True"
+		name="DlgFremdbelegnrFehler"
+		refpath="/form[@controlname='dlgFremdbelegnrFehler']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="5dc8be39-24fe-4e41-ac71-9e66134ea438"
+			name="TitleBar100FremdbelegNrFehler"
+			refimgid="744522f6-6e4d-4004-88e2-bc634f80f4d8"
+			refpath="/form[@controlname='dlgFremdbelegnrFehler']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgFremdbelegnrFehler']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="e65e0b34-6acb-400c-8f3f-107d6193f6f2"
+			name="PbOk"
+			refimgid="23631580-b516-42d8-af43-56283ec66b7c"
+			refpath="/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbOk']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbOk']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="5902cc54-6ebd-416a-b5ce-eb474cff5c54"
+			name="PbAkzeptieren"
+			refimgid="3fe973b6-383f-4121-a744-8d6ea38cbd9c"
+			refpath="/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbAkzeptieren']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbAkzeptieren']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="f3772589-58fc-475e-96c4-9c06032bd407"
+			name="PbAlleAkzeptieren"
+			refimgid="703ab2c8-1641-41e7-9949-416848a64b65"
+			refpath="/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbAlle_akzeptieren']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbAlle_akzeptieren']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="493da278-a6f3-4dfe-b647-b3be3fea0eb3"
+			name="PbUEber"
+			refimgid="85d474f6-7e1b-4f4f-bcc6-48695a319c5f"
+			refpath="/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbÜber']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbÜber']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="cd4ac5fb-194c-4cce-bd40-54022a85c1f7"
+			name="PbAlleUebergehen"
+			refimgid="3ffadf35-1f6e-461e-a554-fbd75720f93d"
+			refpath="/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbAlle_uebergehen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbAlle_uebergehen']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="8840bb32-a908-419a-aec4-c5ab59073820"
+			name="PbAbbrechen"
+			refimgid="a6871d56-5590-4c82-8f37-55151fff08b7"
+			refpath="/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbAbbrechen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbAbbrechen']
+			</item>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="0c7b53f5-c0e4-4fee-b470-41a88106cc38"
+			isrooted="True"
+			name="Frame2"
+			refpath="/form[@controlname='dlgFremdbelegnrFehler']/container[@controlname='frame2']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="a3587102-629d-4723-877f-e07b3984ed94"
+				name="DfAdrNr"
+				refimgid="8661da41-0c0a-4f97-a46f-18f62d881818"
+				refpath="/form[@controlname='dlgFremdbelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfAdr_nr']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='dlgFremdbelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfAdr_nr']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="3437b51d-6167-47de-b11d-afe50741fca9"
+				name="DfBelegNr"
+				refimgid="e11fe80f-81b5-4c98-b1b8-f97080215966"
+				refpath="/form[@controlname='dlgFremdbelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfBeleg_nr']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='dlgFremdbelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfBeleg_nr']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="0ac467cc-5346-4ac6-9841-7ac13a4903b4"
+				name="NeueFremdbelegNr"
+				refimgid="fa9c82bd-71c3-4c3d-95ec-df3aa741092c"
+				refpath="/form[@controlname='dlgFremdbelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfNeue_nr']/text[@accessiblename='Neue Fremdbeleg-Nr:']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='dlgFremdbelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfNeue_nr']/text[@accessiblename='Neue Fremdbeleg-Nr:']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="1b51400e-5e62-4d71-b514-b64120e10b08"
+				name="Label3"
+				refimgid="6db98b4d-dac8-4707-916a-e0ac80e31029"
+				refpath="/form[@controlname='dlgFremdbelegnrFehler']/container[@controlname='frame2']/text[@controlname='label3']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='dlgFremdbelegnrFehler']/container[@controlname='frame2']/text[@controlname='label3']
+				</item>
+				<basepath>
+					/form[@controlname='dlgFremdbelegnrFehler']/container[@controlname='frame2']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='dlgFremdbelegnrFehler']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="935cb110-b2a2-4b2a-8f46-b71fb23a89ff"
+		isrooted="True"
+		name="DlgMessageBox"
+		refpath="/form[@controlname='dlgMessageBox']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="5ce71343-fffa-4255-9fc0-c5ddc3eac870"
+			name="FakturenPruefung"
+			refimgid="03ee357e-cf34-448b-a988-278b7ccf9b85"
+			refpath="/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="99b12b8f-9b1f-4f94-badc-d50fb63b9e42"
+			name="LabelMeldungstext"
+			refimgid="6dc36a7b-55f2-4d23-9342-c5cbbc0042c8"
+			refpath="/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="f78c9e53-af27-458f-b939-e099039722f7"
+			name="Button0"
+			refimgid="1b996603-6d84-408b-b393-7dd8c1864e2a"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button0']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="fafb6622-7c7e-480f-ac5d-821a924b537e"
+			name="Button2"
+			refimgid="5ce853ed-6907-4c4b-a5f2-9a8dbf09248d"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button2']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button2']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="6f0c9312-8da6-41dd-a325-cefa4791e344"
+			name="Button1"
+			refimgid="3179323a-cb9e-4fa7-92ce-590a4e432a46"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button1']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button1']
+			</item>
+			<basepath>
+				/form[@controlname='dlgMessageBox']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<appfolder
@@ -2625,6 +2930,87 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 						/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 9']/cell[@accessiblename='colUva Row 9']
 					</item>
 				</folder>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="4eec73c8-9a49-45c7-b118-3cf95dd8e29a"
+				name="ColDtAendgRow11"
+				refimgid="e08a3fe2-5501-46ee-84fa-dea43c54e427"
+				refpath="/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 11']/cell[@accessiblename='colDtAendg Row 11']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 11']/cell[@accessiblename='colDtAendg Row 11']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="84b1cd3e-f8ee-445a-858b-6b0bf7571fdd"
+				name="ColDtAendgRow13"
+				refimgid="e08a3fe2-5501-46ee-84fa-dea43c54e427"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 13']/cell[@accessiblename='colDtAendg Row 13']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="c2aa8d77-cf6f-49d8-9fb5-241f9d721e1c"
+				name="ColDtAendgRow15"
+				refimgid="e08a3fe2-5501-46ee-84fa-dea43c54e427"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 15']/cell[@accessiblename='colDtAendg Row 15']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="be43d5bb-84a9-4a07-acfd-643551631efe"
+				name="ColDtAendgRow17"
+				refimgid="e08a3fe2-5501-46ee-84fa-dea43c54e427"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 17']/cell[@accessiblename='colDtAendg Row 17']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="d5c281ef-1c7d-4864-8931-f32432faff3c"
+				name="ColDtAendgRow19"
+				refimgid="e08a3fe2-5501-46ee-84fa-dea43c54e427"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 19']/cell[@accessiblename='colDtAendg Row 19']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="c801aecf-62d4-405c-bfbe-4bd88150b203"
+				name="ColDtAendgRow21"
+				refimgid="e08a3fe2-5501-46ee-84fa-dea43c54e427"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 21']/cell[@accessiblename='colDtAendg Row 21']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="ec752fd9-0b4e-4cfa-93c8-4332c03c69fd"
+				name="ColBelegnrRow19"
+				refimgid="cd503911-e935-4a39-83d4-67aea426e92f"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 19']/cell[@accessiblename='colBelegnr Row 19']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="bd09ebb3-094d-4ab3-9908-3a703d569903"
+				name="ColBusaNrfremdbelegRow19"
+				refimgid="7ed0f915-ca29-449e-a6c1-47daa9b3ca66"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 19']/cell[@accessiblename='colBusa_nrfremdbeleg Row']
+				</item>
 				<basepath>
 					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
 				</basepath>
@@ -2786,292 +3172,16 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
 		<appfolder
-		addcaps="form,control,nativewindow"
+		addcaps="form,nativewindow"
 		capname="form"
-		id="6d21c849-3b93-4143-97f8-23991720f858"
+		id="68520c35-7bee-4420-ba29-efdd072d80c2"
 		isrooted="True"
-		name="DlgBelegnrFehler"
-		refpath="/form[@controlname='dlgBelegnrFehler']"
+		name="Form100BuchungenAnzeigen"
+		refpath="/form[@title='[100]  Buchungen anzeigen']"
 		searchtimeout="30000ms"
 		usecache="True">
-			<item
-			addcaps="titlebar,accessible"
-			capname="titlebar"
-			id="fac291bd-e069-493f-8305-100e4d09e12d"
-			name="TitleBar100BelegNrFehler"
-			refimgid="ff9fb4db-58b8-44bb-aeeb-22cc2c9e0f9e"
-			refpath="/form[@controlname='dlgBelegnrFehler']/titlebar[@accessiblerole='TitleBar']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgBelegnrFehler']/titlebar[@accessiblerole='TitleBar']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="95d827cb-2961-4eae-ae47-5034020d7ff2"
-			name="PbOk"
-			refimgid="4bbebd9a-56eb-4fa7-9392-3db0d62e78f1"
-			refpath="/form[@controlname='dlgBelegnrFehler']/button[@controlname='pbOk']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgBelegnrFehler']/button[@controlname='pbOk']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="e92f1429-91c6-463c-840f-456b9b9a4827"
-			name="PbAkzeptieren"
-			refimgid="ad09e8b3-beca-431a-9f7d-22797ad5dd1b"
-			refpath="/form[@controlname='dlgBelegnrFehler']/button[@controlname='pbAkzeptieren']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgBelegnrFehler']/button[@controlname='pbAkzeptieren']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="d95975e8-5e00-4a56-8188-165101804e0b"
-			name="PbUEber"
-			refimgid="de31a2df-66dd-4031-87bf-113137070272"
-			refpath="/form[@controlname='dlgBelegnrFehler']/button[@controlname='pbÜber']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgBelegnrFehler']/button[@controlname='pbÜber']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="8159adfb-e6b7-4d58-98db-c6e6d7e40cf5"
-			name="PbAlleUebergehen"
-			refimgid="57db4161-af6f-4dfa-b66f-e6f9310c6294"
-			refpath="/form[@controlname='dlgBelegnrFehler']/button[@controlname='pbAlle_uebergehen']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgBelegnrFehler']/button[@controlname='pbAlle_uebergehen']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="e8f537f0-cb9c-449a-bb52-e5e48db16334"
-			name="PbAbbrechen"
-			refimgid="58d397db-0f1a-4fcd-9c9e-06f73ee6bc49"
-			refpath="/form[@controlname='dlgBelegnrFehler']/button[@controlname='pbAbbrechen']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgBelegnrFehler']/button[@controlname='pbAbbrechen']
-			</item>
-			<folder
-			addcaps="container,control,nativewindow"
-			capname="container"
-			id="ea1ed1b8-6e5b-40da-8ea1-b47b1f1b34de"
-			isrooted="True"
-			name="Frame2"
-			refpath="/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']"
-			searchtimeout="30000ms"
-			usecache="False">
-				<item
-				addcaps="text,control,nativewindow"
-				capname="text"
-				id="2fda6867-a651-49a7-a9ca-831524506b29"
-				name="DfAdrNr"
-				refimgid="b99bb080-2036-407f-931c-bd945c5887c4"
-				refpath="/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfAdr_nr']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfAdr_nr']
-				</item>
-				<item
-				addcaps="text,control,nativewindow"
-				capname="text"
-				id="bedb27fc-5ed5-4eb2-99df-1515d3a2f2d8"
-				name="DfBelegNr"
-				refimgid="ce75e6bb-285f-49fb-ad5b-2e2c69c7ce89"
-				refpath="/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfBeleg_nr']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfBeleg_nr']
-				</item>
-				<item
-				addcaps="text,control,nativewindow"
-				capname="text"
-				id="a38f3027-11bb-4934-b585-e23f1e01657c"
-				name="Label3"
-				refimgid="77e64816-fa01-407e-b657-cdc346f33338"
-				refpath="/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']/text[@controlname='label3']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']/text[@controlname='label3']
-				</item>
-				<item
-				addcaps="text,accessible"
-				capname="text"
-				id="4e5afc41-61a6-4412-bec0-64d0246cba70"
-				name="NeueBelegNr"
-				refimgid="7fc9c18c-f4f2-44d9-8435-2384aaea96e9"
-				refpath="/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfNeue_nr']/text[@accessiblename='Neue Beleg-Nr:']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfNeue_nr']/text[@accessiblename='Neue Beleg-Nr:']
-				</item>
-				<basepath>
-					/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']
-				</basepath>
-			</folder>
 			<basepath>
-				/form[@controlname='dlgBelegnrFehler']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
-YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
-nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
-			</icon>
-		</appfolder>
-		<appfolder
-		addcaps="form,control,nativewindow"
-		capname="form"
-		id="5bb06b36-c619-41ca-8fca-d644e3bb1cdd"
-		isrooted="True"
-		name="DlgFremdbelegnrFehler"
-		refpath="/form[@controlname='dlgFremdbelegnrFehler']"
-		searchtimeout="30000ms"
-		usecache="True">
-			<item
-			addcaps="titlebar,accessible"
-			capname="titlebar"
-			id="5dc8be39-24fe-4e41-ac71-9e66134ea438"
-			name="TitleBar100FremdbelegNrFehler"
-			refimgid="744522f6-6e4d-4004-88e2-bc634f80f4d8"
-			refpath="/form[@controlname='dlgFremdbelegnrFehler']/titlebar[@accessiblerole='TitleBar']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgFremdbelegnrFehler']/titlebar[@accessiblerole='TitleBar']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="e65e0b34-6acb-400c-8f3f-107d6193f6f2"
-			name="PbOk"
-			refimgid="23631580-b516-42d8-af43-56283ec66b7c"
-			refpath="/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbOk']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbOk']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="5902cc54-6ebd-416a-b5ce-eb474cff5c54"
-			name="PbAkzeptieren"
-			refimgid="3fe973b6-383f-4121-a744-8d6ea38cbd9c"
-			refpath="/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbAkzeptieren']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbAkzeptieren']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="f3772589-58fc-475e-96c4-9c06032bd407"
-			name="PbAlleAkzeptieren"
-			refimgid="703ab2c8-1641-41e7-9949-416848a64b65"
-			refpath="/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbAlle_akzeptieren']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbAlle_akzeptieren']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="493da278-a6f3-4dfe-b647-b3be3fea0eb3"
-			name="PbUEber"
-			refimgid="85d474f6-7e1b-4f4f-bcc6-48695a319c5f"
-			refpath="/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbÜber']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbÜber']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="cd4ac5fb-194c-4cce-bd40-54022a85c1f7"
-			name="PbAlleUebergehen"
-			refimgid="3ffadf35-1f6e-461e-a554-fbd75720f93d"
-			refpath="/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbAlle_uebergehen']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbAlle_uebergehen']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="8840bb32-a908-419a-aec4-c5ab59073820"
-			name="PbAbbrechen"
-			refimgid="a6871d56-5590-4c82-8f37-55151fff08b7"
-			refpath="/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbAbbrechen']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgFremdbelegnrFehler']/button[@controlname='pbAbbrechen']
-			</item>
-			<folder
-			addcaps="container,control,nativewindow"
-			capname="container"
-			id="0c7b53f5-c0e4-4fee-b470-41a88106cc38"
-			isrooted="True"
-			name="Frame2"
-			refpath="/form[@controlname='dlgFremdbelegnrFehler']/container[@controlname='frame2']"
-			searchtimeout="30000ms"
-			usecache="False">
-				<item
-				addcaps="text,control,nativewindow"
-				capname="text"
-				id="a3587102-629d-4723-877f-e07b3984ed94"
-				name="DfAdrNr"
-				refimgid="8661da41-0c0a-4f97-a46f-18f62d881818"
-				refpath="/form[@controlname='dlgFremdbelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfAdr_nr']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='dlgFremdbelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfAdr_nr']
-				</item>
-				<item
-				addcaps="text,control,nativewindow"
-				capname="text"
-				id="3437b51d-6167-47de-b11d-afe50741fca9"
-				name="DfBelegNr"
-				refimgid="e11fe80f-81b5-4c98-b1b8-f97080215966"
-				refpath="/form[@controlname='dlgFremdbelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfBeleg_nr']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='dlgFremdbelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfBeleg_nr']
-				</item>
-				<item
-				addcaps="text,accessible"
-				capname="text"
-				id="0ac467cc-5346-4ac6-9841-7ac13a4903b4"
-				name="NeueFremdbelegNr"
-				refimgid="fa9c82bd-71c3-4c3d-95ec-df3aa741092c"
-				refpath="/form[@controlname='dlgFremdbelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfNeue_nr']/text[@accessiblename='Neue Fremdbeleg-Nr:']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='dlgFremdbelegnrFehler']/container[@controlname='frame2']/text[@controlname='dfNeue_nr']/text[@accessiblename='Neue Fremdbeleg-Nr:']
-				</item>
-				<item
-				addcaps="text,control,nativewindow"
-				capname="text"
-				id="1b51400e-5e62-4d71-b514-b64120e10b08"
-				name="Label3"
-				refimgid="6db98b4d-dac8-4707-916a-e0ac80e31029"
-				refpath="/form[@controlname='dlgFremdbelegnrFehler']/container[@controlname='frame2']/text[@controlname='label3']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='dlgFremdbelegnrFehler']/container[@controlname='frame2']/text[@controlname='label3']
-				</item>
-				<basepath>
-					/form[@controlname='dlgFremdbelegnrFehler']/container[@controlname='frame2']
-				</basepath>
-			</folder>
-			<basepath>
-				/form[@controlname='dlgFremdbelegnrFehler']
+				/form[@title='[100]  Buchungen anzeigen']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
