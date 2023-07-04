@@ -115,6 +115,30 @@
       <UserCode>true</UserCode>
       <BoundTo>3fa9e233-1bd7-4e0e-9ba3-b9152b20b944</BoundTo>
     </Compile>
+    <Compile Include="Recordings_B_EXOPS\B_EXOPS_Status_nach_Pruefung_kontrollieren.cs">
+      <BoundTo>f0705045-62bd-4ccf-af31-28298718fb69</BoundTo>
+      <DependentUpon>B_EXOPS_Status_nach_Pruefung_kontrollieren.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f5725a8a-a9bf-41ba-a0f8-6511261a2b0f</id>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\B_EXOPS_Status_nach_Pruefung_kontrollieren.UserCode.cs">
+      <BoundTo>f0705045-62bd-4ccf-af31-28298718fb69</BoundTo>
+      <DependentUpon>B_EXOPS_Status_nach_Pruefung_kontrollieren.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>38767e9d-76f1-4ee8-ac89-c8f427d7449c</id>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\B_EXOPS_Status_von_F_auf_N_zuruecksetzen.cs">
+      <BoundTo>160f6021-5ff3-40dc-8012-606395c2d6c7</BoundTo>
+      <DependentUpon>B_EXOPS_Status_von_F_auf_N_zuruecksetzen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4b96d88c-0cdb-4312-898c-ada291d02c90</id>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\B_EXOPS_Status_von_F_auf_N_zuruecksetzen.UserCode.cs">
+      <BoundTo>160f6021-5ff3-40dc-8012-606395c2d6c7</BoundTo>
+      <DependentUpon>B_EXOPS_Status_von_F_auf_N_zuruecksetzen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>92f61527-8993-40fd-bf06-ac83c4a844bf</id>
+    </Compile>
     <Compile Include="Recordings_B_EXOPS\Close_B_EXOPS.cs">
       <DependentUpon>Close_B_EXOPS.rxrec</DependentUpon>
       <id>b2df2a58-2aac-4e02-b884-b3a0e736377a</id>
@@ -126,6 +150,18 @@
       <id>0ec04cda-a101-47a0-802b-e4db8d75247e</id>
       <UserCode>true</UserCode>
       <BoundTo>141e5baf-cd37-47a8-9242-944e1a3a9699</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\B_EXOPS_Einschraenkung_nur_B_EXOPV_005.cs">
+      <DependentUpon>B_EXOPS_Einschraenkung_nur_B_EXOPV_005.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e0cd254f-f744-4d4d-87ec-53e3b841c125</id>
+      <BoundTo>0cd73897-f7ef-4bb1-a5a5-42792fe493b5</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\B_EXOPS_Einschraenkung_nur_B_EXOPV_005.UserCode.cs">
+      <DependentUpon>B_EXOPS_Einschraenkung_nur_B_EXOPV_005.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d52a285c-9c35-4c0d-ad06-f78a53079126</id>
+      <BoundTo>0cd73897-f7ef-4bb1-a5a5-42792fe493b5</BoundTo>
     </Compile>
     <Compile Include="Recordings_B_EXOPS\Start_B_EXOPS.cs">
       <DependentUpon>Start_B_EXOPS.rxrec</DependentUpon>
@@ -150,6 +186,18 @@
       <id>4ab2be51-ba3c-4527-940d-57e8b4d94e9a</id>
       <UserCode>true</UserCode>
       <BoundTo>ba90e786-d72d-4fdf-83ff-433a4b146cc9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Fehlerprotokoll_aufrufen.cs">
+      <BoundTo>792ec0d8-5db5-426a-ba11-756995bd99fd</BoundTo>
+      <DependentUpon>Fehlerprotokoll_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8e2bc0a7-b225-4a70-8dc4-0e7c1c895c72</id>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Fehlerprotokoll_aufrufen.UserCode.cs">
+      <BoundTo>792ec0d8-5db5-426a-ba11-756995bd99fd</BoundTo>
+      <DependentUpon>Fehlerprotokoll_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e9cd2344-f1bb-4829-9da3-9f509d334c10</id>
     </Compile>
     <Compile Include="Recordings_B_EXOPV\loeschen_Optionen_aendern_FB_Pruefung_nur_innerhalb_L.cs">
       <DependentUpon>loeschen_Optionen_aendern_FB_Pruefung_nur_innerhalb_L.rxrec</DependentUpon>
@@ -199,14 +247,26 @@
       <UserCode>true</UserCode>
       <id>646b48f3-fa68-40ba-b02e-58f0349d359f</id>
     </Compile>
-    <Compile Include="Recordings_B_EXOPV\Pruefung_dopp_Beleg_L_Protokoll.cs">
-      <DependentUpon>Pruefung_dopp_Beleg_L_Protokoll.rxrec</DependentUpon>
+    <Compile Include="Recordings_B_EXOPV\Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen.cs">
+      <DependentUpon>Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>49060cc9-e59f-46df-95bd-a1af9d9e9b79</id>
+      <BoundTo>bf0bff2c-7cfa-4120-ace9-8fc0a3347b07</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen.UserCode.cs">
+      <DependentUpon>Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>80dc0148-a57e-4ca8-ab50-5ff1bef01e46</id>
+      <BoundTo>bf0bff2c-7cfa-4120-ace9-8fc0a3347b07</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Pruefung_dopp_Beleg_L_Protokoll_pruefen.cs">
+      <DependentUpon>Pruefung_dopp_Beleg_L_Protokoll_pruefen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>5b40e98a-fb6f-4d80-96e1-05a45bca19f8</id>
       <BoundTo>4be10d06-4366-4424-a368-9dbb6db142d3</BoundTo>
     </Compile>
-    <Compile Include="Recordings_B_EXOPV\Pruefung_dopp_Beleg_L_Protokoll.UserCode.cs">
-      <DependentUpon>Pruefung_dopp_Beleg_L_Protokoll.rxrec</DependentUpon>
+    <Compile Include="Recordings_B_EXOPV\Pruefung_dopp_Beleg_L_Protokoll_pruefen.UserCode.cs">
+      <DependentUpon>Pruefung_dopp_Beleg_L_Protokoll_pruefen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>26ed88ac-1cb0-49bf-b69f-ecc624927d73</id>
       <BoundTo>4be10d06-4366-4424-a368-9dbb6db142d3</BoundTo>
@@ -247,6 +307,30 @@
       <UserCode>true</UserCode>
       <id>21837aa1-efa1-43d4-90ca-8a62089e53f7</id>
     </Compile>
+    <Compile Include="Recordings_B_EXOPV\Verbuchung_dopp_Beleg_L_Dialoge.cs">
+      <DependentUpon>Verbuchung_dopp_Beleg_L_Dialoge.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7c106f81-41ba-4ab8-98dc-d583bf3ff67c</id>
+      <BoundTo>6b681556-0bdd-499b-bf97-bee36c364ef4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Verbuchung_dopp_Beleg_L_Dialoge.UserCode.cs">
+      <DependentUpon>Verbuchung_dopp_Beleg_L_Dialoge.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9371d8c3-93df-4900-b95e-f3f0d81104e7</id>
+      <BoundTo>6b681556-0bdd-499b-bf97-bee36c364ef4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Verbuchung_dopp_Beleg_L_Laden_Pfad_Verbuchen_aufrufen.cs">
+      <DependentUpon>Verbuchung_dopp_Beleg_L_Laden_Pfad_Verbuchen_aufrufen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>10d72c5b-e9ec-4b21-bb18-f5e5067cf3af</id>
+      <BoundTo>4d21c9b0-3974-4188-9df6-bce8e1395e03</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Verbuchung_dopp_Beleg_L_Laden_Pfad_Verbuchen_aufrufen.UserCode.cs">
+      <DependentUpon>Verbuchung_dopp_Beleg_L_Laden_Pfad_Verbuchen_aufrufen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a9e54c95-afc4-4131-9070-66dacee52484</id>
+      <BoundTo>4d21c9b0-3974-4188-9df6-bce8e1395e03</BoundTo>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="B_EXOPV_005Repository.rximg">
@@ -270,9 +354,24 @@
       <recordtableid>23307373-546d-47a8-b04d-8ea957263cd0</recordtableid>
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
     </None>
+    <None Include="Recordings_B_EXOPS\B_EXOPS_Status_nach_Pruefung_kontrollieren.rxrec">
+      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+      <id>f0705045-62bd-4ccf-af31-28298718fb69</id>
+      <recordtableid>d8201208-b1ad-4756-b52e-522408436296</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPS\B_EXOPS_Status_von_F_auf_N_zuruecksetzen.rxrec">
+      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+      <id>160f6021-5ff3-40dc-8012-606395c2d6c7</id>
+      <recordtableid>0829892c-ee03-4722-a0ed-7d78e5ad829a</recordtableid>
+    </None>
     <None Include="Recordings_B_EXOPS\Close_B_EXOPS.rxrec">
       <id>141e5baf-cd37-47a8-9242-944e1a3a9699</id>
       <recordtableid>d9313597-5739-419a-bbf2-077d9ac0bc6c</recordtableid>
+      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+    </None>
+    <None Include="Recordings_B_EXOPS\B_EXOPS_Einschraenkung_nur_B_EXOPV_005.rxrec">
+      <id>0cd73897-f7ef-4bb1-a5a5-42792fe493b5</id>
+      <recordtableid>15736ee8-7921-45fc-a34d-05c6dbed837f</recordtableid>
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
     </None>
     <None Include="Recordings_B_EXOPS\Start_B_EXOPS.rxrec">
@@ -284,6 +383,11 @@
       <id>ba90e786-d72d-4fdf-83ff-433a4b146cc9</id>
       <recordtableid>80d0231f-2329-4041-8791-b90e382fdee8</recordtableid>
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+    </None>
+    <None Include="Recordings_B_EXOPV\Fehlerprotokoll_aufrufen.rxrec">
+      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+      <id>792ec0d8-5db5-426a-ba11-756995bd99fd</id>
+      <recordtableid>e832eec0-459c-4f07-8dc5-3837792179c2</recordtableid>
     </None>
     <None Include="Recordings_B_EXOPV\loeschen_Optionen_aendern_FB_Pruefung_nur_innerhalb_L.rxrec">
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
@@ -305,7 +409,12 @@
       <id>fbabb056-4050-4499-be77-2b25540209ed</id>
       <recordtableid>358790d0-4e14-46fe-828e-be724e2022a1</recordtableid>
     </None>
-    <None Include="Recordings_B_EXOPV\Pruefung_dopp_Beleg_L_Protokoll.rxrec">
+    <None Include="Recordings_B_EXOPV\Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen.rxrec">
+      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+      <id>bf0bff2c-7cfa-4120-ace9-8fc0a3347b07</id>
+      <recordtableid>1cfcac4c-78be-4e27-973f-e15e795219c1</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPV\Pruefung_dopp_Beleg_L_Protokoll_pruefen.rxrec">
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
       <id>4be10d06-4366-4424-a368-9dbb6db142d3</id>
       <recordtableid>52ae346e-0801-4a96-b82c-76aa59b69469</recordtableid>
@@ -324,6 +433,16 @@
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
       <id>613f9ceb-8c71-4157-a66b-964157a2d9ba</id>
       <recordtableid>be5e1006-7d6d-488e-bdd4-272252b831ee</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPV\Verbuchung_dopp_Beleg_L_Dialoge.rxrec">
+      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+      <id>6b681556-0bdd-499b-bf97-bee36c364ef4</id>
+      <recordtableid>f8b28fa4-646a-42df-a9d5-4e45f56b6632</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPV\Verbuchung_dopp_Beleg_L_Laden_Pfad_Verbuchen_aufrufen.rxrec">
+      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+      <id>4d21c9b0-3974-4188-9df6-bce8e1395e03</id>
+      <recordtableid>ab3c19d4-f9d2-4921-a2c0-6d1f601a1e86</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

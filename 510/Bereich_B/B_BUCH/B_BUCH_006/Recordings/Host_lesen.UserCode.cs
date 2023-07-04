@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_EXOPV_005.Recordings_B_EXOPV
+namespace B_BUCH_006.Recordings
 {
-    public partial class Pruefung_dopp_Beleg_L_Protokoll
+    public partial class Host_lesen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
