@@ -24,29 +24,29 @@ namespace B_EXOPV_005.Recordings_B_BUAB
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The B_BUAB_Belegnr_NEU_validieren recording.
+    ///The B_BUAB_Belege_verbucht_validieren recording.
     /// </summary>
     [TestModule("3d284781-66ee-414e-88ae-db1e0cf486af", ModuleType.Recording, 1)]
-    public partial class B_BUAB_Belegnr_NEU_validieren : ITestModule
+    public partial class B_BUAB_Belege_verbucht_validieren : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_005.B_EXOPV_005Repository repository.
         /// </summary>
         public static global::B_EXOPV_005.B_EXOPV_005Repository repo = global::B_EXOPV_005.B_EXOPV_005Repository.Instance;
 
-        static B_BUAB_Belegnr_NEU_validieren instance = new B_BUAB_Belegnr_NEU_validieren();
+        static B_BUAB_Belege_verbucht_validieren instance = new B_BUAB_Belege_verbucht_validieren();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public B_BUAB_Belegnr_NEU_validieren()
+        public B_BUAB_Belege_verbucht_validieren()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static B_BUAB_Belegnr_NEU_validieren Instance
+        public static B_BUAB_Belege_verbucht_validieren Instance
         {
             get { return instance; }
         }
