@@ -29,7 +29,7 @@ mode="Global">
 		action="DoubleClick"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -87,32 +87,61 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</keyitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
+		<validationitem
+		action="AttributeEqual"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
 		optional="False"
-		searchpropertyid="2398a7b0-cf20-44e1-9528-b0f1933364f5"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		searchpropertyid="ece74e51-8813-446d-8d19-3443e9cb6138">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="a6da7d35-2ef6-4b2f-99f6-60e4006be582"
+			id="65f4c0af-84c1-4992-8bdf-8730dab2a1fe"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblErbu']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBusy_cd Row 5']
+					/form[@controlname='tblErbu']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colErbu_art Row 5']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</mouseitem>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				G
+			</matchvalue>
+		</validationitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="ae5306f6-4823-44fb-a856-cab704487ac5"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="ae5306f6-4823-44fb-a856-cab704487ac5"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
 		<keysequenceitem
 		KeySequence="ER"
 		duration="20ms"
@@ -149,6 +178,26 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</keyitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="7e7ae20f-a6a7-49da-b912-bc2d5ac5fa35"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c2cd62f9-7a7c-4e41-95e4-5a792a00f869"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgMessageBox']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"
@@ -2027,7 +2076,7 @@ LRQBF5Yo8sVLRQBF5Yo8sVLRQBF5Yo8sVLRQBF5YpfLFSUUARiMU8DFLRQAUUUUAf//Z
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -2053,7 +2102,7 @@ LRQBF5Yo8sVLRQBF5Yo8sVLRQBF5Yo8sVLRQBF5YpfLFSUUARiMU8DFLRQAUUUUAf//Z
 		action="Press"
 		data="Back"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		scancode="0"
@@ -2068,7 +2117,7 @@ LRQBF5Yo8sVLRQBF5Yo8sVLRQBF5Yo8sVLRQBF5YpfLFSUUARiMU8DFLRQAUUUUAf//Z
 		action="Press"
 		data="Back"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		scancode="0"
@@ -2087,18 +2136,10 @@ LRQBF5Yo8sVLRQBF5Yo8sVLRQBF5Yo8sVLRQBF5YpfLFSUUARiMU8DFLRQAUUUUAf//Z
 		presstime="20ms"
 		searchpropertyid="c19a9a44-ee4e-47d5-a78f-837ac5a97f5c">
 			<comment>
+				kein Item angesprochen, weil das mitunter Exceptions verursacht; Feldhinhalt ColBusyCdRow5 ist ohnehin markiert
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="a6da7d35-2ef6-4b2f-99f6-60e4006be582"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblErbu']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBusy_cd Row 5']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
 		</keysequenceitem>
 		<keyitem
 		action="Press"
@@ -2115,31 +2156,6 @@ LRQBF5Yo8sVLRQBF5Yo8sVLRQBF5Yo8sVLRQBF5YpfLFSUUARiMU8DFLRQAUUUUAf//Z
 			<bindings>
 			</bindings>
 		</keyitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="167fcffb-92fc-4867-b066-d08542bd13f5">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="65f4c0af-84c1-4992-8bdf-8730dab2a1fe"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblErbu']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colErbu_art Row 5']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				G
-			</matchvalue>
-		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"

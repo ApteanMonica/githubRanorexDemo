@@ -79,8 +79,8 @@ namespace B_ERBU_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblErbu.Tabelle.Zeile_5.ColErbuArtRow5' at Center.", repo.TblErbu.Tabelle.Zeile_5.ColErbuArtRow5Info, new RecordItemIndex(0));
-            repo.TblErbu.Tabelle.Zeile_5.ColErbuArtRow5.DoubleClick();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblErbu.Tabelle.Zeile_5.ColErbuArtRow5' at Center.", repo.TblErbu.Tabelle.Zeile_5.ColErbuArtRow5Info, new RecordItemIndex(0));
+            //repo.TblErbu.Tabelle.Zeile_5.ColErbuArtRow5.DoubleClick();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'G' with focus on 'TblErbu.Tabelle.Zeile_5.ColErbuArtRow5'.", repo.TblErbu.Tabelle.Zeile_5.ColErbuArtRow5Info, new RecordItemIndex(1));
             repo.TblErbu.Tabelle.Zeile_5.ColErbuArtRow5.PressKeys("G");
@@ -88,46 +88,53 @@ namespace B_ERBU_002.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblErbu.Tabelle.Zeile_5.ColBusyCdRow5' at Center.", repo.TblErbu.Tabelle.Zeile_5.ColBusyCdRow5Info, new RecordItemIndex(3));
-            repo.TblErbu.Tabelle.Zeile_5.ColBusyCdRow5.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='G') on item 'TblErbu.Tabelle.Zeile_5.ColErbuArtRow5'.", repo.TblErbu.Tabelle.Zeile_5.ColErbuArtRow5Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.TblErbu.Tabelle.Zeile_5.ColErbuArtRow5Info, "Text", "G");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'ER' with focus on 'TblErbu.Tabelle.Zeile_5.ColBusyCdRow5'.", repo.TblErbu.Tabelle.Zeile_5.ColBusyCdRow5Info, new RecordItemIndex(4));
-            repo.TblErbu.Tabelle.Zeile_5.ColBusyCdRow5.PressKeys("ER");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Buchungssymbol passt nicht zur Belegart!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Buchungssymbol passt nicht zur Belegart!");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'ER' with focus on 'TblErbu.Tabelle.Zeile_5.ColBusyCdRow5'.", repo.TblErbu.Tabelle.Zeile_5.ColBusyCdRow5Info, new RecordItemIndex(6));
+            repo.TblErbu.Tabelle.Zeile_5.ColBusyCdRow5.PressKeys("ER");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(7));
-            repo.DlgMessageBox.Button0.Click();
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(8));
-            Delay.Duration(2000, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblErbu.Tabelle.Zeile_5.ColBusyCdRow5' at Center.", repo.TblErbu.Tabelle.Zeile_5.ColBusyCdRow5Info, new RecordItemIndex(9));
-            repo.TblErbu.Tabelle.Zeile_5.ColBusyCdRow5.Click();
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Back' Press.", new RecordItemIndex(10));
-            Keyboard.Press(System.Windows.Forms.Keys.Back, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Back' Press.", new RecordItemIndex(11));
-            Keyboard.Press(System.Windows.Forms.Keys.Back, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'ERG' with focus on 'TblErbu.Tabelle.Zeile_5.ColBusyCdRow5'.", repo.TblErbu.Tabelle.Zeile_5.ColBusyCdRow5Info, new RecordItemIndex(12));
-            repo.TblErbu.Tabelle.Zeile_5.ColBusyCdRow5.PressKeys("ERG");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='G') on item 'TblErbu.Tabelle.Zeile_5.ColErbuArtRow5'.", repo.TblErbu.Tabelle.Zeile_5.ColErbuArtRow5Info, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.TblErbu.Tabelle.Zeile_5.ColErbuArtRow5Info, "Text", "G");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox'", repo.DlgMessageBox.SelfInfo, new ActionTimeout(60000), new RecordItemIndex(8));
+            repo.DlgMessageBox.SelfInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ERG') on item 'TblErbu.Tabelle.Zeile_5.ColBusyCdRow5'.", repo.TblErbu.Tabelle.Zeile_5.ColBusyCdRow5Info, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Buchungssymbol passt nicht zur Belegart!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Buchungssymbol passt nicht zur Belegart!");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(10));
+            repo.DlgMessageBox.Button0.Click();
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(11));
+            Delay.Duration(2000, false);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblErbu.Tabelle.Zeile_5.ColBusyCdRow5' at Center.", repo.TblErbu.Tabelle.Zeile_5.ColBusyCdRow5Info, new RecordItemIndex(12));
+            //repo.TblErbu.Tabelle.Zeile_5.ColBusyCdRow5.Click();
+            
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Back' Press.", new RecordItemIndex(13));
+            //Keyboard.Press(System.Windows.Forms.Keys.Back, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Back' Press.", new RecordItemIndex(14));
+            //Keyboard.Press(System.Windows.Forms.Keys.Back, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            // kein Item angesprochen, weil das mitunter Exceptions verursacht; Feldhinhalt ColBusyCdRow5 ist ohnehin markiert
+            Report.Log(ReportLevel.Info, "Keyboard", "kein Item angesprochen, weil das mitunter Exceptions verursacht; Feldhinhalt ColBusyCdRow5 ist ohnehin markiert\r\nKey sequence 'ERG'.", new RecordItemIndex(15));
+            Keyboard.Press("ERG");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(16));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ERG') on item 'TblErbu.Tabelle.Zeile_5.ColBusyCdRow5'.", repo.TblErbu.Tabelle.Zeile_5.ColBusyCdRow5Info, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.TblErbu.Tabelle.Zeile_5.ColBusyCdRow5Info, "Text", "ERG");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblErbu.PbDataAccessSpeichern' at Center.", repo.TblErbu.PbDataAccessSpeichernInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblErbu.PbDataAccessSpeichern' at Center.", repo.TblErbu.PbDataAccessSpeichernInfo, new RecordItemIndex(18));
             repo.TblErbu.PbDataAccessSpeichern.Click();
             
         }
