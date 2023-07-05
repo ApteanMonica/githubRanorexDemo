@@ -108,8 +108,8 @@ namespace L_DISP_002.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1.2m to exist. Associated repository item: 'FrmDispo.TitleBar100BestellvorschlagGenerier'", repo.FrmDispo.TitleBar100BestellvorschlagGenerierInfo, new ActionTimeout(70000), new RecordItemIndex(1));
-            repo.FrmDispo.TitleBar100BestellvorschlagGenerierInfo.WaitForExists(70000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmDispo.TitleBar100BestellvorschlagGenerier'", repo.FrmDispo.TitleBar100BestellvorschlagGenerierInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FrmDispo.TitleBar100BestellvorschlagGenerierInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bestellvorschlag') on item 'FrmDispo.TitleBar100BestellvorschlagGenerier'.", repo.FrmDispo.TitleBar100BestellvorschlagGenerierInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.FrmDispo.TitleBar100BestellvorschlagGenerierInfo, "Text", "Bestellvorschlag");
