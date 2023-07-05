@@ -20,19 +20,19 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace L_DISP_001.Recordings
+namespace L_DISP.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
     ///The Drucken recording.
     /// </summary>
-    [TestModule("7ecec2e6-a98e-4cab-8f40-fb5714bbf2c8", ModuleType.Recording, 1)]
+    [TestModule("1c926994-30d8-4f40-b052-d6fd37e0b9b1", ModuleType.Recording, 1)]
     public partial class Drucken : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::L_DISP_001.L_DISP_001Repository repository.
+        /// Holds an instance of the global::L_DISP.L_DISP_001Repository repository.
         /// </summary>
-        public static global::L_DISP_001.L_DISP_001Repository repo = global::L_DISP_001.L_DISP_001Repository.Instance;
+        public static global::L_DISP.L_DISP_001Repository repo = global::L_DISP.L_DISP_001Repository.Instance;
 
         static Drucken instance = new Drucken();
 
@@ -59,7 +59,7 @@ namespace L_DISP_001.Recordings
         /// <summary>
         /// Gets or sets the value of variable BV_Nr.
         /// </summary>
-        [TestVariable("5c8a2b85-e97d-426f-b167-f26b6490fe8e")]
+        [TestVariable("b8a2089c-9df9-4c50-8c57-b3c55b2e43df")]
         public string BV_Nr
         {
             get { return _BV_Nr; }

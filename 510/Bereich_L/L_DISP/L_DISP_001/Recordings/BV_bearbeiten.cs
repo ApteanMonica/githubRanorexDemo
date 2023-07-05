@@ -20,19 +20,19 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace L_DISP_001.Recordings
+namespace L_DISP.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
     ///The BV_bearbeiten recording.
     /// </summary>
-    [TestModule("a167fdc5-0061-4122-9537-62de75b19be8", ModuleType.Recording, 1)]
+    [TestModule("25937b19-633a-49ae-b563-4a9e2572a2da", ModuleType.Recording, 1)]
     public partial class BV_bearbeiten : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::L_DISP_001.L_DISP_001Repository repository.
+        /// Holds an instance of the global::L_DISP.L_DISP_001Repository repository.
         /// </summary>
-        public static global::L_DISP_001.L_DISP_001Repository repo = global::L_DISP_001.L_DISP_001Repository.Instance;
+        public static global::L_DISP.L_DISP_001Repository repo = global::L_DISP.L_DISP_001Repository.Instance;
 
         static BV_bearbeiten instance = new BV_bearbeiten();
 
@@ -60,7 +60,7 @@ namespace L_DISP_001.Recordings
         /// <summary>
         /// Gets or sets the value of variable BV_Nr.
         /// </summary>
-        [TestVariable("32a39d30-12df-48e3-a96c-4ab8577e11f8")]
+        [TestVariable("0c1b0581-29c6-4925-86cf-6081c2280e4e")]
         public string BV_Nr
         {
             get { return _BV_Nr; }
@@ -72,7 +72,7 @@ namespace L_DISP_001.Recordings
         /// <summary>
         /// Gets or sets the value of variable Artikel1.
         /// </summary>
-        [TestVariable("4fd15a25-b881-4a4c-b800-cbefcddd8a71")]
+        [TestVariable("981277ce-1dda-4b62-be3e-aa8c1e8d9852")]
         public string Artikel1
         {
             get { return _Artikel1; }

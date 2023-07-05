@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace L_DISP_001.Recordings
+namespace L_DISP.Recordings
 {
     public partial class StartAUT
     {

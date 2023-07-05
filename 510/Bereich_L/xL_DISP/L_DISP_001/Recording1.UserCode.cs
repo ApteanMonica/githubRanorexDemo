@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace L_DISP.Recordings
+namespace L_DISP_001
 {
-    public partial class BV_mit_Optionen
+    public partial class Recording1
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

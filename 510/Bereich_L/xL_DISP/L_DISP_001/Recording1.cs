@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace L_DISP.Recordings
+namespace L_DISP_001
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT recording.
+    ///The Recording1 recording.
     /// </summary>
-    [TestModule("bd625bda-abf1-4ded-aeeb-bb40daaae957", ModuleType.Recording, 1)]
-    public partial class CloseAUT : ITestModule
+    [TestModule("7f79fcab-865b-41f5-99e7-17a8713ed082", ModuleType.Recording, 1)]
+    public partial class Recording1 : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::L_DISP.L_DISP_001Repository repository.
+        /// Holds an instance of the L_DISP_001Repository repository.
         /// </summary>
-        public static global::L_DISP.L_DISP_001Repository repo = global::L_DISP.L_DISP_001Repository.Instance;
+        public static L_DISP_001Repository repo = L_DISP_001Repository.Instance;
 
-        static CloseAUT instance = new CloseAUT();
+        static Recording1 instance = new Recording1();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT()
+        public Recording1()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT Instance
+        public static Recording1 Instance
         {
             get { return instance; }
         }
@@ -73,15 +73,12 @@ namespace L_DISP.Recordings
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 0;
+            Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 20;
-            Delay.SpeedFactor = 0.00;
+            Delay.SpeedFactor = 1.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmDispo.TitleBar100BestellvorschlagGenerier'.", repo.FrmDispo.TitleBar100BestellvorschlagGenerierInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FrmDispo.TitleBar100BestellvorschlagGenerier, 1000);
-            
         }
 
 #region Image Feature Data
