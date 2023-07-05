@@ -216,8 +216,8 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
                 Validate.AttributeEqual(repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, "Text", "FB02_B_EXOPV_005", null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(19)); }
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFremdbelegnrFehler.PbAkzeptieren' at Center.", repo.DlgFremdbelegnrFehler.PbAkzeptierenInfo, new RecordItemIndex(20));
-            repo.DlgFremdbelegnrFehler.PbAkzeptieren.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFremdbelegnrFehler.PbUEber' at Center.", repo.DlgFremdbelegnrFehler.PbUEberInfo, new RecordItemIndex(20));
+            repo.DlgFremdbelegnrFehler.PbUEber.Click();
             
             // Meldung 5 Lieferant 02
             Report.Log(ReportLevel.Info, "Section", "Meldung 5 Lieferant 02", new RecordItemIndex(21));

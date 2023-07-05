@@ -20,63 +20,48 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_EXOPV_005.Recordings_B_EXOPV
+namespace B_EXOPV_005.Recordings_B_EXOPS
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The B_EXOPS_neu_laden recording.
     /// </summary>
-    [TestModule("f1f6a74a-2c31-4e9f-bb9d-dca574d9e221", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    [TestModule("5d91eadb-9556-4888-8dea-b1b80a770e1b", ModuleType.Recording, 1)]
+    public partial class B_EXOPS_neu_laden : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_005.B_EXOPV_005Repository repository.
         /// </summary>
         public static global::B_EXOPV_005.B_EXOPV_005Repository repo = global::B_EXOPV_005.B_EXOPV_005Repository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static B_EXOPS_neu_laden instance = new B_EXOPS_neu_laden();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public B_EXOPS_neu_laden()
         {
-            Programm = "B_EXOPV";
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
+            Stapel_Herkunft = "B_EXOPV_005";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static B_EXOPS_neu_laden Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Programm;
-
         /// <summary>
-        /// Gets or sets the value of variable Programm.
+        /// Gets or sets the value of variable Stapel_Herkunft.
         /// </summary>
-        [TestVariable("5a4f1278-f69f-4a30-96ae-4fcc7e8fe361")]
-        public string Programm
+        [TestVariable("c48b93b8-1c9b-432f-8c96-1fffeb97e4c6")]
+        public string Stapel_Herkunft
         {
-            get { return _Programm; }
-            set { _Programm = value; }
-        }
-
-        string _Startfile;
-
-        /// <summary>
-        /// Gets or sets the value of variable Startfile.
-        /// </summary>
-        [TestVariable("5479e8eb-b655-444d-89c6-64953acc0dfd")]
-        public string Startfile
-        {
-            get { return _Startfile; }
-            set { _Startfile = value; }
+            get { return repo.Stapel_Herkunft; }
+            set { repo.Stapel_Herkunft = value; }
         }
 
 #endregion
@@ -105,14 +90,14 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm, "", false);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Stapel_Herkunft) on item 'FrmBEXOP_Verwalten_Schnittstelle.Tabelle_Einschraenkungen.ColHerkunftRow1'.", repo.FrmBEXOP_Verwalten_Schnittstelle.Tabelle_Einschraenkungen.ColHerkunftRow1Info, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.Tabelle_Einschraenkungen.ColHerkunftRow1Info, "Text", Stapel_Herkunft);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'Form100ExterneBuchungenVerbuchen.TitleBar100ExterneBuchungenVerbuche'", repo.Form100ExterneBuchungenVerbuchen.TitleBar100ExterneBuchungenVerbucheInfo, new ActionTimeout(180000), new RecordItemIndex(1));
-            repo.Form100ExterneBuchungenVerbuchen.TitleBar100ExterneBuchungenVerbucheInfo.WaitForExists(180000);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBEXOP_Verwalten_Schnittstelle.PbDataAccessLoad' at Center.", repo.FrmBEXOP_Verwalten_Schnittstelle.PbDataAccessLoadInfo, new RecordItemIndex(1));
+            repo.FrmBEXOP_Verwalten_Schnittstelle.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Externe Buchungen') on item 'Form100ExterneBuchungenVerbuchen.TitleBar100ExterneBuchungenVerbuche'.", repo.Form100ExterneBuchungenVerbuchen.TitleBar100ExterneBuchungenVerbucheInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.Form100ExterneBuchungenVerbuchen.TitleBar100ExterneBuchungenVerbucheInfo, "Text", "Externe Buchungen");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.Row1'", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.Row1Info, new ActionTimeout(60000), new RecordItemIndex(2));
+            repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.Row1Info.WaitForExists(60000);
             
         }
 

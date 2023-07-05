@@ -79,6 +79,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\..\Testdaten\Allgemein\UserCode\aptean.cs">
+      <Link>aptean.cs</Link>
+      <id>0ae784e2-3d56-46ac-92eb-97849557f005</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>7a5cf618-1b34-451c-bd70-1a72923643bf</id>
     </Compile>
@@ -90,6 +94,30 @@
     </Compile>
     <Compile Include="Program.cs">
       <id>9765e2fb-e8c4-4716-b258-1d7b9f97d7d1</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\B_BUAB_Belegnr_NEU_validieren.cs">
+      <BoundTo>1f2a6461-8760-4227-8f1c-40dbcf0e0a0d</BoundTo>
+      <DependentUpon>B_BUAB_Belegnr_NEU_validieren.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>153f4246-9377-42d8-89bf-468e71c8ee32</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\B_BUAB_Belegnr_NEU_validieren.UserCode.cs">
+      <BoundTo>1f2a6461-8760-4227-8f1c-40dbcf0e0a0d</BoundTo>
+      <DependentUpon>B_BUAB_Belegnr_NEU_validieren.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>31767478-1916-45e7-bdfa-4c8b388e9a6b</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\B_BUAB_Einschraenkungen_laden.cs">
+      <BoundTo>b0314b09-c3b6-4cf8-8e07-eb04a67a4944</BoundTo>
+      <DependentUpon>B_BUAB_Einschraenkungen_laden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ea0c1795-e1c0-4956-a172-f5790e42b920</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\B_BUAB_Einschraenkungen_laden.UserCode.cs">
+      <BoundTo>b0314b09-c3b6-4cf8-8e07-eb04a67a4944</BoundTo>
+      <DependentUpon>B_BUAB_Einschraenkungen_laden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c80e01d3-30c4-4d20-98ac-a6e1ef14e156</id>
     </Compile>
     <Compile Include="Recordings_B_BUAB\Close_B_BUAB.cs">
       <DependentUpon>Close_B_BUAB.rxrec</DependentUpon>
@@ -115,6 +143,30 @@
       <UserCode>true</UserCode>
       <BoundTo>3fa9e233-1bd7-4e0e-9ba3-b9152b20b944</BoundTo>
     </Compile>
+    <Compile Include="Recordings_B_BUAB\B_BUAB_Tagesdatum_Tagesdatum2_valdieren_Usercode.cs">
+      <BoundTo>1e7cb379-b6d4-4e68-9cc1-a646392f9eec</BoundTo>
+      <DependentUpon>B_BUAB_Tagesdatum_Tagesdatum2_valdieren_Usercode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0f8b9ac2-fd93-4def-939b-0e08107c99af</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\B_BUAB_Tagesdatum_Tagesdatum2_valdieren_Usercode.UserCode.cs">
+      <BoundTo>1e7cb379-b6d4-4e68-9cc1-a646392f9eec</BoundTo>
+      <DependentUpon>B_BUAB_Tagesdatum_Tagesdatum2_valdieren_Usercode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>62943486-7da4-453b-96cb-7958a0704200</id>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\B_EXOPS_neu_laden.cs">
+      <BoundTo>443566b9-1a50-42f1-b620-86f037d4c8cb</BoundTo>
+      <DependentUpon>B_EXOPS_neu_laden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>48a7f1ec-7b53-4d33-9ee7-f78ddcdd43a9</id>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\B_EXOPS_neu_laden.UserCode.cs">
+      <BoundTo>443566b9-1a50-42f1-b620-86f037d4c8cb</BoundTo>
+      <DependentUpon>B_EXOPS_neu_laden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2ae2e76c-ef64-4aaa-92ca-0ea81965825b</id>
+    </Compile>
     <Compile Include="Recordings_B_EXOPS\B_EXOPS_Status_nach_Pruefung_kontrollieren.cs">
       <BoundTo>f0705045-62bd-4ccf-af31-28298718fb69</BoundTo>
       <DependentUpon>B_EXOPS_Status_nach_Pruefung_kontrollieren.rxrec</DependentUpon>
@@ -126,6 +178,18 @@
       <DependentUpon>B_EXOPS_Status_nach_Pruefung_kontrollieren.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>38767e9d-76f1-4ee8-ac89-c8f427d7449c</id>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren.cs">
+      <DependentUpon>B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d5ab1ecf-dea2-4b79-8d8a-4f6763f17848</id>
+      <BoundTo>5aa42863-23b9-41c9-9579-d38c2080de9b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren.UserCode.cs">
+      <DependentUpon>B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>50af3dbf-2522-4de9-a36d-2002d06c7ef6</id>
+      <BoundTo>5aa42863-23b9-41c9-9579-d38c2080de9b</BoundTo>
     </Compile>
     <Compile Include="Recordings_B_EXOPS\B_EXOPS_Status_von_F_auf_N_zuruecksetzen.cs">
       <BoundTo>160f6021-5ff3-40dc-8012-606395c2d6c7</BoundTo>
@@ -331,6 +395,18 @@
       <id>a9e54c95-afc4-4131-9070-66dacee52484</id>
       <BoundTo>4d21c9b0-3974-4188-9df6-bce8e1395e03</BoundTo>
     </Compile>
+    <Compile Include="Recordings_B_EXOPV\Verbuchung_Meldungen_verbucht_Fehler.cs">
+      <BoundTo>46ca43a7-7f83-4212-96d4-d65565905038</BoundTo>
+      <DependentUpon>Verbuchung_Meldungen_verbucht_Fehler.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f77215d7-c71c-47db-9063-85747bb6c63a</id>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Verbuchung_Meldungen_verbucht_Fehler.UserCode.cs">
+      <BoundTo>46ca43a7-7f83-4212-96d4-d65565905038</BoundTo>
+      <DependentUpon>Verbuchung_Meldungen_verbucht_Fehler.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ec41e0d3-3635-43ae-9407-d32312d28e3c</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="B_EXOPV_005Repository.rximg">
@@ -344,6 +420,16 @@
       <repoid>5a4c68c8-710c-4738-ad0b-11d204b6b604</repoid>
       <reporootid>0948a16f-ab80-40bc-b4e2-a08dafe19c03</reporootid>
     </None>
+    <None Include="Recordings_B_BUAB\B_BUAB_Belegnr_NEU_validieren.rxrec">
+      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+      <id>1f2a6461-8760-4227-8f1c-40dbcf0e0a0d</id>
+      <recordtableid>3d284781-66ee-414e-88ae-db1e0cf486af</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUAB\B_BUAB_Einschraenkungen_laden.rxrec">
+      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+      <id>b0314b09-c3b6-4cf8-8e07-eb04a67a4944</id>
+      <recordtableid>973ed37e-c79a-4680-a38b-260909411bf7</recordtableid>
+    </None>
     <None Include="Recordings_B_BUAB\Close_B_BUAB.rxrec">
       <id>9f137dcc-3972-4aa5-a545-e479dd50d951</id>
       <recordtableid>cea34e66-1428-4211-8eac-405e1dd8744b</recordtableid>
@@ -354,10 +440,25 @@
       <recordtableid>23307373-546d-47a8-b04d-8ea957263cd0</recordtableid>
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
     </None>
+    <None Include="Recordings_B_BUAB\B_BUAB_Tagesdatum_Tagesdatum2_valdieren_Usercode.rxrec">
+      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+      <id>1e7cb379-b6d4-4e68-9cc1-a646392f9eec</id>
+      <recordtableid>40ed5814-055e-49a5-b1f0-a469f65a9182</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPS\B_EXOPS_neu_laden.rxrec">
+      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+      <id>443566b9-1a50-42f1-b620-86f037d4c8cb</id>
+      <recordtableid>5d91eadb-9556-4888-8dea-b1b80a770e1b</recordtableid>
+    </None>
     <None Include="Recordings_B_EXOPS\B_EXOPS_Status_nach_Pruefung_kontrollieren.rxrec">
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
       <id>f0705045-62bd-4ccf-af31-28298718fb69</id>
       <recordtableid>d8201208-b1ad-4756-b52e-522408436296</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPS\B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren.rxrec">
+      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+      <id>5aa42863-23b9-41c9-9579-d38c2080de9b</id>
+      <recordtableid>3f436bc6-50d1-42fc-bc76-13c3c726a568</recordtableid>
     </None>
     <None Include="Recordings_B_EXOPS\B_EXOPS_Status_von_F_auf_N_zuruecksetzen.rxrec">
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
@@ -443,6 +544,11 @@
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
       <id>4d21c9b0-3974-4188-9df6-bce8e1395e03</id>
       <recordtableid>ab3c19d4-f9d2-4921-a2c0-6d1f601a1e86</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPV\Verbuchung_Meldungen_verbucht_Fehler.rxrec">
+      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+      <id>46ca43a7-7f83-4212-96d4-d65565905038</id>
+      <recordtableid>446f3ba0-459f-43fd-8aff-78cb4a17eea7</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

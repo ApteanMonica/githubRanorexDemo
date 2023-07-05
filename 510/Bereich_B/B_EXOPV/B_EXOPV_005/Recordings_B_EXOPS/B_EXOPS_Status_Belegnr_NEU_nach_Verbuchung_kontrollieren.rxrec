@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="d8201208-b1ad-4756-b52e-522408436296"
+id="3f436bc6-50d1-42fc-bc76-13c3c726a568"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="B_EXOPS_Status_nach_Pruefung_kontrollieren"
+	classname="B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren"
 	namespace="B_EXOPV_005.Recordings_B_EXOPS">
 	</codegen>
 	<variables>
@@ -28,7 +28,7 @@ mode="Global">
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="3d393ebc-aa91-402c-968e-e52a7801ba74">
 			<comment>
 			</comment>
@@ -53,7 +53,7 @@ mode="Global">
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="802bb1ac-4e1d-49bd-a10a-b3fad697e45e">
 			<comment>
 			</comment>
@@ -72,13 +72,13 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				F
+				V
 			</matchvalue>
 		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="70b61c4a-2cbf-4964-b75f-b8a32d8deda8">
 			<comment>
 			</comment>
@@ -97,13 +97,13 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				F
+				V
 			</matchvalue>
 		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="7b4a4604-ca8f-40a1-9c63-d9d3aa8148c6">
 			<comment>
 			</comment>
@@ -122,13 +122,13 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				F
+				V
 			</matchvalue>
 		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="475cd840-135a-489f-bb58-6d3aa610dd6e">
 			<comment>
 			</comment>
@@ -147,13 +147,13 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				F
+				V
 			</matchvalue>
 		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="708a1ece-27c5-4d85-9611-24c144b08916">
 			<comment>
 			</comment>
@@ -172,13 +172,13 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				F
+				V
 			</matchvalue>
 		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="e4557112-83e9-4830-8263-6c0467d81bce">
 			<comment>
 			</comment>
@@ -197,13 +197,13 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				F
+				V
 			</matchvalue>
 		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="b2dbc22f-2a57-4d00-8c80-566c022eea08">
 			<comment>
 			</comment>
@@ -222,7 +222,57 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				F
+				V
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b497fb50-bfcc-4ba3-aadc-91469402337e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6822039c-be3b-46dc-a442-f381a17f4e8e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXOP']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 7']/cell[@accessiblename='colExop_belegnr Row 7']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				ER03_B_EXOPV_005_NEU
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="fa9f3669-e980-4d51-80c3-bcd15e49df8e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="579772ef-9d41-45f9-9652-0b78499b8f87"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXOP']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 7']/cell[@accessiblename='colExop_nrfremdbeleg Row']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				FB03_B_EXOPV_005_NEU
 			</matchvalue>
 		</validationitem>
 	</recorditems>
@@ -241,7 +291,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		B_EXOPS_Status_nach_Pruefung_kontrollieren.UserCode.cs
+		B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

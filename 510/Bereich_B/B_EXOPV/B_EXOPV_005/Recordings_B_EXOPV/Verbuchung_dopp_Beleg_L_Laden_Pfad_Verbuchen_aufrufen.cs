@@ -105,39 +105,45 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100ExterneBuchungenVerbuchen.PbCommonLaden' at Center.", repo.Form100ExterneBuchungenVerbuchen.PbCommonLadenInfo, new RecordItemIndex(0));
             repo.Form100ExterneBuchungenVerbuchen.PbCommonLaden.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_005.Column0_Stapel1' at Center.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_005.Column0_Stapel1Info, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '' on item 'Form100ExterneBuchungenVerbuchen.Text_Pfad_Pruefprotokoll'.", repo.Form100ExterneBuchungenVerbuchen.Text_Pfad_PruefprotokollInfo, new RecordItemIndex(1));
+            repo.Form100ExterneBuchungenVerbuchen.Text_Pfad_Pruefprotokoll.Element.SetAttributeValue("Text", "");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Fehlerprotokoll_Verbuchung' with focus on 'Form100ExterneBuchungenVerbuchen.Text_Pfad_Pruefprotokoll'.", repo.Form100ExterneBuchungenVerbuchen.Text_Pfad_PruefprotokollInfo, new RecordItemIndex(2));
+            repo.Form100ExterneBuchungenVerbuchen.Text_Pfad_Pruefprotokoll.PressKeys(Fehlerprotokoll_Verbuchung);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_005.Column0_Stapel1' at Center.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_005.Column0_Stapel1Info, new RecordItemIndex(4));
             repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_005.Column0_Stapel1.Click();
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$Fehlerprotokoll_Verbuchung' on item 'Form100ExterneBuchungenVerbuchen.Text_Pfad_Pruefprotokoll'.", repo.Form100ExterneBuchungenVerbuchen.Text_Pfad_PruefprotokollInfo, new RecordItemIndex(2));
-            repo.Form100ExterneBuchungenVerbuchen.Text_Pfad_Pruefprotokoll.Element.SetAttributeValue("Text", Fehlerprotokoll_Verbuchung);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100ExterneBuchungenVerbuchen.PbCommonVerbuchen' at Center.", repo.Form100ExterneBuchungenVerbuchen.PbCommonVerbuchenInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100ExterneBuchungenVerbuchen.PbCommonVerbuchen' at Center.", repo.Form100ExterneBuchungenVerbuchen.PbCommonVerbuchenInfo, new RecordItemIndex(5));
             repo.Form100ExterneBuchungenVerbuchen.PbCommonVerbuchen.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox'", repo.DlgMessageBox.SelfInfo, new ActionTimeout(120000), new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox'", repo.DlgMessageBox.SelfInfo, new ActionTimeout(120000), new RecordItemIndex(6));
             repo.DlgMessageBox.SelfInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Es sind doppelte Belegnummern in der Externen Schnittstelle\r\nbei  den Lieferantenbuchungen vorhanden.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Es sind doppelte Belegnummern in der Externen Schnittstelle\r\nbei  den Lieferantenbuchungen vorhanden.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es sind doppelte Belegnummern in der Externen Schnittstelle\r\nbei  den Lieferantenbuchungen vorhanden.");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Soll die Verbuchung abgebrochen werden?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Soll die Verbuchung abgebrochen werden?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(8));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Soll die Verbuchung abgebrochen werden?");
             
             // NEIN - Verbuchung nicht abbrechen
-            Report.Log(ReportLevel.Info, "Mouse", "NEIN - Verbuchung nicht abbrechen\r\nMouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "NEIN - Verbuchung nicht abbrechen\r\nMouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(9));
             repo.DlgMessageBox.Button1.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(10));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Es sind doppelte Fremdbelegnummern in der Externen Schnittstelle\r\nbei  den Lieferantenbuchungen vorhanden.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Es sind doppelte Fremdbelegnummern in der Externen Schnittstelle\r\nbei  den Lieferantenbuchungen vorhanden.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(11));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es sind doppelte Fremdbelegnummern in der Externen Schnittstelle\r\nbei  den Lieferantenbuchungen vorhanden.");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Soll die Verbuchung abgebrochen werden?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Soll die Verbuchung abgebrochen werden?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(12));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Soll die Verbuchung abgebrochen werden?");
             
             // NEIN - Verbuchung nicht abbrechen
-            Report.Log(ReportLevel.Info, "Mouse", "NEIN - Verbuchung nicht abbrechen\r\nMouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "NEIN - Verbuchung nicht abbrechen\r\nMouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(13));
             repo.DlgMessageBox.Button1.Click();
             
         }

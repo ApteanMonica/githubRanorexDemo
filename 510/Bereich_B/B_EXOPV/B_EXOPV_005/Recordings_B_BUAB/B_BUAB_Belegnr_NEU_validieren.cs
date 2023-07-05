@@ -20,64 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_EXOPV_005.Recordings_B_EXOPV
+namespace B_EXOPV_005.Recordings_B_BUAB
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The B_BUAB_Belegnr_NEU_validieren recording.
     /// </summary>
-    [TestModule("f1f6a74a-2c31-4e9f-bb9d-dca574d9e221", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    [TestModule("3d284781-66ee-414e-88ae-db1e0cf486af", ModuleType.Recording, 1)]
+    public partial class B_BUAB_Belegnr_NEU_validieren : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_005.B_EXOPV_005Repository repository.
         /// </summary>
         public static global::B_EXOPV_005.B_EXOPV_005Repository repo = global::B_EXOPV_005.B_EXOPV_005Repository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static B_BUAB_Belegnr_NEU_validieren instance = new B_BUAB_Belegnr_NEU_validieren();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public B_BUAB_Belegnr_NEU_validieren()
         {
-            Programm = "B_EXOPV";
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static B_BUAB_Belegnr_NEU_validieren Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Programm;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm.
-        /// </summary>
-        [TestVariable("5a4f1278-f69f-4a30-96ae-4fcc7e8fe361")]
-        public string Programm
-        {
-            get { return _Programm; }
-            set { _Programm = value; }
-        }
-
-        string _Startfile;
-
-        /// <summary>
-        /// Gets or sets the value of variable Startfile.
-        /// </summary>
-        [TestVariable("5479e8eb-b655-444d-89c6-64953acc0dfd")]
-        public string Startfile
-        {
-            get { return _Startfile; }
-            set { _Startfile = value; }
-        }
 
 #endregion
 
@@ -105,14 +79,11 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm, "", false);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER03_B_EXOPV_005_NEU') on item 'TblB.Buchungszeilen_Tabelle.ColBelegnrRow19'.", repo.TblB.Buchungszeilen_Tabelle.ColBelegnrRow19Info, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.ColBelegnrRow19Info, "Text", "ER03_B_EXOPV_005_NEU");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'Form100ExterneBuchungenVerbuchen.TitleBar100ExterneBuchungenVerbuche'", repo.Form100ExterneBuchungenVerbuchen.TitleBar100ExterneBuchungenVerbucheInfo, new ActionTimeout(180000), new RecordItemIndex(1));
-            repo.Form100ExterneBuchungenVerbuchen.TitleBar100ExterneBuchungenVerbucheInfo.WaitForExists(180000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Externe Buchungen') on item 'Form100ExterneBuchungenVerbuchen.TitleBar100ExterneBuchungenVerbuche'.", repo.Form100ExterneBuchungenVerbuchen.TitleBar100ExterneBuchungenVerbucheInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.Form100ExterneBuchungenVerbuchen.TitleBar100ExterneBuchungenVerbucheInfo, "Text", "Externe Buchungen");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB03_B_EXOPV_005_NEU') on item 'TblB.Buchungszeilen_Tabelle.ColBusaNrfremdbelegRow19'.", repo.TblB.Buchungszeilen_Tabelle.ColBusaNrfremdbelegRow19Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.ColBusaNrfremdbelegRow19Info, "Text", "FB03_B_EXOPV_005_NEU");
             
         }
 
