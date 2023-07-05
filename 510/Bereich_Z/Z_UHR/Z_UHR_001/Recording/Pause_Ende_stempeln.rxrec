@@ -57,6 +57,10 @@ mode="Global">
 		id="46904bc5-23bd-4ad4-8dfe-46f8410f6600"
 		name="angepasste_Uhrzeit_einlesen">
 		</var>
+		<var
+		id="8c64088d-e6b2-4772-9cf7-8a3e7933ce27"
+		name="Systemzeit">
+		</var>
 	</variables>
 	<recorditems>
 		<explicitdelayitem
@@ -4036,6 +4040,7 @@ mode="Global">
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
 		optional="False">
 			<comment>
+				Einlesen Systemuhrzeit
 			</comment>
 			<bindings>
 				<binding
@@ -4057,6 +4062,66 @@ mode="Global">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<userrecorditem
+		classname="SystemLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="GetDateTimeAsString"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Systemzeit">
+				</binding>
+			</bindings>
+			<arguments
+			id="905ef0ac-ffc3-4a4c-b76a-f9b54d3262de">
+				<argument
+				argname="expectedFormat"
+				id="285305d2-6c14-469e-83e9-afd9a5bba66e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="5e3c3ccd-f31b-436c-99d9-1066c5e95276">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Uhrzeit_Stunde_Minute">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="c74f9d59-6085-4362-b8c7-ee42203bb20b">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Systemzeit">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 		<validationitem
 		action="AttributeContains"
 		enabled="False"
@@ -4094,6 +4159,7 @@ mode="Global">
 		searchpropertyid="ab110f06-baa0-4d45-a0d8-9be00c7ff51b"
 		varname="Einlesen_Uhrzeit">
 			<comment>
+				Wert = Inhalt des Feldes nach dem  Einstempeln
 			</comment>
 			<bindings>
 			</bindings>
@@ -4107,6 +4173,22 @@ mode="Global">
 				</robustPath>
 			</info>
 		</getvaluerecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="2d72ad42-71c5-4d24-a744-bd49487b37df">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Einlesen_Uhrzeit">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 		<userrecorditem
 		classname="Aptean"
 		enabled="True"
@@ -4146,6 +4228,22 @@ mode="Global">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="9eb0c0d9-f7ff-4134-97b9-2585c3c494fc">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="angepasste_Uhrzeit_einlesen">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 		<userrecorditem
 		classname="Aptean"
 		enabled="True"
@@ -4205,6 +4303,22 @@ mode="Global">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="5d613b69-43a2-4be5-a310-20b51f89d178">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Uhrzeit_plus_1Minute">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 		<userrecorditem
 		classname="Aptean"
 		enabled="True"
