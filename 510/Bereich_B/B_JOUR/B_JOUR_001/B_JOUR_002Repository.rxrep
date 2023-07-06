@@ -1,0 +1,484 @@
+﻿<repository
+id="21e4b0df-bf9e-4867-95d6-258a4285a1f4"
+name="B_JOUR_002Repository">
+	<codegen
+	classname="B_JOUR_002Repository"
+	namespace="B_JOUR_001">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="175d71ac-c82d-4c24-aa01-605b12e0bf23"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="8fba131e-bd8a-4ca3-8b11-ee2483dd910d"
+		isrooted="True"
+		name="FrmJournal"
+		refimgid="adcb69d4-e58c-4b03-9bb8-dd9a3d89dd00"
+		refpath="/form[@controlname='frmJournal']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="f69d5a8b-6235-4122-8914-ce3d68cef29e"
+			name="Buchungsjahr"
+			refimgid="ba5880c1-fbb9-4667-9c0c-615965e7957d"
+			refpath="/form[@controlname='frmJournal']/container[@controlname='ClientArea']/tabpagelist/tabpage[@controlname='tpJournaldruck']/text[@controlname='dfJahrA']/text[@accessiblename='Buchungsjahr:']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmJournal']//tabpage[@controlname='tpJournaldruck']/text[@controlname='dfJahrA']/text[@accessiblename='Buchungsjahr:']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="1a603a0b-8320-4938-95ec-afe29ef2cca4"
+			name="PbCommonBuchungenpruefen"
+			refimgid="3296854c-98fe-4ce4-8288-d94351c26dbe"
+			refpath="/form[@controlname='frmJournal']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Buchungenpruefen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmJournal']/?/?/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Buchungenpruefen']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="1efe189b-8b7d-4f36-ab10-8bdcbbdbb92d"
+			name="PbStandard2"
+			refimgid="fb8ac173-f975-4c33-ba65-541176fe162f"
+			refpath="/form[@controlname='frmJournal']/container[@controlname='RibbonBar']/container[@controlname='OptionenGroup']/button[@controlname='pbStandard2']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmJournal']/?/?/container[@controlname='OptionenGroup']/button[@controlname='pbStandard2']
+			</item>
+			<folder
+			addcaps="tabpage,control,nativewindow"
+			capname="tabpage"
+			id="5f0995e0-fe18-4839-89db-a711c29c1dec"
+			isrooted="True"
+			name="TpJournaldruck1"
+			refpath="/form[@controlname='frmJournal']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpJournaldruck']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="33dedd2e-4b69-4461-93df-86dc31b7e7c5"
+				name="CbEndgueltig"
+				refimgid="4f81c976-5af4-46e8-806a-148374f7840e"
+				refpath="/form[@controlname='frmJournal']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpJournaldruck']/checkbox[@controlname='cbEndgültig']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmJournal']//tabpage[@controlname='tpJournaldruck']/checkbox[@controlname='cbEndgültig']
+				</item>
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="a7c48317-e65f-4257-8fee-127109d3a5b0"
+				name="CbFinanzMitXML"
+				refimgid="bf3e0600-3108-49ca-8beb-ff98ded4c0ed"
+				refpath="/form[@controlname='frmJournal']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpJournaldruck']/checkbox[@controlname='cbFinanzMitXML']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmJournal']//tabpage[@controlname='tpJournaldruck']/checkbox[@controlname='cbFinanzMitXML']
+				</item>
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="fead2a71-aa5c-4b00-8466-a9b0ad3327a1"
+				name="CbWiederholung"
+				refimgid="63d5cc2c-52e9-4f3f-ac8a-4f7d931313d7"
+				refpath="/form[@controlname='frmJournal']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpJournaldruck']/checkbox[@controlname='cbWiederholung']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmJournal']//tabpage[@controlname='tpJournaldruck']/checkbox[@controlname='cbWiederholung']
+				</item>
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="3805ff8a-c1ae-47ce-8272-cea5b2fdb56c"
+				name="CbFinanz"
+				refimgid="23fd72c0-8e8e-4c96-a70f-96f93fccf33b"
+				refpath="/form[@controlname='frmJournal']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpJournaldruck']/checkbox[@controlname='cbFinanz']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmJournal']//tabpage[@controlname='tpJournaldruck']/checkbox[@controlname='cbFinanz']
+				</item>
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="9ae90eb3-a645-4e68-b2f9-80df1372ecc5"
+				name="CbKtobez"
+				refimgid="5a0cd3d5-b87b-468d-bc18-040434f90d28"
+				refpath="/form[@controlname='frmJournal']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpJournaldruck']/checkbox[@controlname='cbKtobez']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmJournal']//tabpage[@controlname='tpJournaldruck']/checkbox[@controlname='cbKtobez']
+				</item>
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="e3084268-ff36-4500-b83b-32af55479c74"
+				name="CbKLName"
+				refimgid="c461682a-f701-40f9-a2e3-e6624db6e48a"
+				refpath="/form[@controlname='frmJournal']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpJournaldruck']/checkbox[@controlname='cbKLName']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmJournal']//tabpage[@controlname='tpJournaldruck']/checkbox[@controlname='cbKLName']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="b56cc6db-a600-452c-915a-0ef5082d16ef"
+				name="Element_510_oder_521_DruckbeginnMitSeite_ODER_TxtMulti"
+				refimgid="3cbea57b-244a-4378-b22f-cbb31acdfc39"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmJournal']//tabpage[@controlname='tpJournaldruck']/?/text[@controlname~'mlBRD_AT_Info|txtMulti']
+				</item>
+				<basepath>
+					/form[@controlname='frmJournal']//tabpage[@controlname='tpJournaldruck']
+				</basepath>
+			</folder>
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="9e83cb15-fdc4-45c3-8391-cdb3b84c95ed"
+			name="TitleBar100ErfassungsJournal"
+			refimgid="70188203-1e62-423c-8fa9-b2da9059b8b1"
+			refpath="/form[@controlname='frmJournal']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmJournal']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="e1e8a8a5-d9ca-4fb7-835a-26ad239099f1"
+			name="PbOptionenOptionen"
+			refimgid="83d04dd2-3058-4a0d-988e-8fc20de092bb"
+			refpath="/form[@controlname='frmJournal']/container[@controlname='RibbonBar']/container[@controlname='DruckenGroup']/button[@controlname='pbOptionen_Optionen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmJournal']/?/?/container[@controlname='DruckenGroup']/button[@controlname='pbOptionen_Optionen']
+			</item>
+			<basepath>
+				/form[@controlname='frmJournal']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="1f3d2c0a-6a8f-4056-b300-5dc491cfc745"
+		isrooted="True"
+		name="DlgMessageBox"
+		refpath="/form[@controlname='dlgMessageBox']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="7946f5ae-f0bf-475d-b572-bedb1f50dd74"
+			name="Button0"
+			refimgid="b65c3832-4aea-444a-a0fe-d4c43d980c2d"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button0']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="7135f243-65b9-43bd-a2de-3103425293df"
+			name="LabelMeldungstext"
+			refimgid="bba6d92f-e346-41c5-a0d8-9d59d094fa16"
+			refpath="/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+			</item>
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="a3a20263-82fa-4a6d-bc26-2f6dab1d9d62"
+			name="Journaldruck"
+			refimgid="09c5df6e-7e91-438d-aa81-0e934330de81"
+			refpath="/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<basepath>
+				/form[@controlname='dlgMessageBox']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="f4a76319-ce34-4756-b9ee-8e65c76a39fb"
+		isrooted="True"
+		name="DlgDruckenDatei"
+		refpath="/form[@controlname='dlgDruckenDatei']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="98535268-c284-4925-b8fd-3b86f27abaac"
+			name="Dateiname"
+			refimgid="eb544746-0405-4cd5-b3a0-f1fa2b29417f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgDruckenDatei']/text[@controlname='dfDatei']/text[@accessiblename='Dateiname:']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="99c5c0c4-0904-44b8-9d30-42fdcfa2adc9"
+			name="PbOk"
+			refimgid="d7f3c7fb-31fa-4c7e-badb-19f82af248cd"
+			refpath="/form[@controlname='dlgDruckenDatei']/button[@controlname='pbOk']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgDruckenDatei']/button[@controlname='pbOk']
+			</item>
+			<basepath>
+				/form[@controlname='dlgDruckenDatei']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="7ca395eb-5daa-4d16-8f42-e94b972c8590"
+		isrooted="True"
+		name="IndexXmlEditor"
+		refpath="/form[@title='index.xml - Editor']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="10b8bf92-a5b3-406a-ba44-19a9612ab3cc"
+			name="IndexXmlEditor"
+			refimgid="a2b06740-66f0-427c-a893-412678582a17"
+			refpath="/form[@title='index.xml - Editor']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='index.xml - Editor']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="ed83faa6-d596-40b1-bb04-40a008f9c613"
+			name="Text15"
+			refimgid="060b58cb-db2a-4952-8e71-22b93cea0c1b"
+			refpath="/form[@title='index.xml - Editor']/text[@controlid='15']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='index.xml - Editor']/text[@controlid='15']
+			</item>
+			<basepath>
+				/form[@title='index.xml - Editor']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAo9JREFUOE+NkctPE1EUxtmbuPb/MbpwQ9TEPTvjzpBoIiFgeGiplJel
+EWwBWx5BpQFCQcFKoaXTTmfaTjvT6XReLaUPaKuNa/m8Myi10QUnOTk3M7nf9/vO7fhf9U3N4Crz
+n5rl1PTtew9AndRwq/M+/HrVnOu5E3N6+Lw5X1E8RoMJuC2d/b+vdnRQtdp1Wyxblhs/kKk1kah+
+Q6RUR+D4DDtaBV4isijk4eRUDAZYWA/jmBjsapG4ef2mI54TpXoT/GkTbLmBo2IN/nwVW0oJH6Vj
+uAUdMwkF/V9oOGOZdgFHXB5aFPQDSj3GoVKAX9LhE1R4Uzksx0XMMQKmqZTp/HhtFysM3y5gi0l7
+63LRy51+B1NpIEzw9wtVbGtlgl/EUobgpzRMMDl0bx4gUam3C4xERW1XrbgCcgF72Qv3NeK+Es9i
+nskQ9zTGQhwG9hk8XNqCVq21BKyJxDVrVMxvKidz0XIdoeKZmd2nEnfpwt2VUmGPKxgOp/HUF8TP
+8/OWwCidvfOaldlVsTD/SdSwwSv4wElYItldMSM7cQ8mMXTA4pkvhJ6Nr2g0my2BEVoccXLKtiet
+LQSKp/isV7Apl/CebN5DNv+W0zDF5mChRfT5GdjDKRh1KTAcEQ7d5LIzqbzzpmWsJiW42QxmYzzs
+ZPOjhjt5+569GLq9fixQyXaCQUrQXJw6bWdlj08tYY3kXs4UMJfW4UjIGGMkvIiI6A0a+UOgCeUl
+QV8kfeNlVJTIkhwznLr4J7ux+TdRHpNHHKyEYJgQ9PppPFr2IVuqtgieHwl3CQEsUdF0miBZx8lb
+j5OzzehYFpPkm9E2OosnO2HT3ajLCH9XTtVN9av0fwXGB7o2jB9Xabels/8XRaCvi+hp95QAAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="da390270-aca9-43ba-aef7-1dad611e1fba"
+		isrooted="True"
+		name="BJOUR001JournalDEVorlaeufig2015Tx"
+		refpath="/form[@title='b_JOUR_001_journal_DE_vorlaeufig_2015.txt - Editor']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="794096c5-63e6-4ab0-baaa-e58be5420154"
+			name="BJOUR001JournalDEVorlaeufig2015Tx"
+			refimgid="09c6434e-5de2-4a8d-92b1-9b2f3de3193a"
+			refpath="/form[@title='b_JOUR_001_journal_DE_vorlaeufig_2015.txt - Editor']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'b_JOUR_001_journal_DE_vorlaeufig_2015.txt']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="61d259af-fc5b-4916-b212-0a06504a7fb1"
+			name="Text15"
+			refimgid="ed17ce9d-80e2-4a0a-853a-9468d1547a29"
+			refpath="/form[@title='b_JOUR_001_journal_DE_vorlaeufig_2015.txt - Editor']/text[@controlid='15']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'b_JOUR_001_journal_DE_vorlaeufig_2015.txt']/text[@controlid='15']
+			</item>
+			<basepath>
+				/form[@title&gt;'b_JOUR_001_journal_DE_vorlaeufig_2015.txt']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAo9JREFUOE+NkctPE1EUxtmbuPb/MbpwQ9TEPTvjzpBoIiFgeGiplJel
+EWwBWx5BpQFCQcFKoaXTTmfaTjvT6XReLaUPaKuNa/m8Myi10QUnOTk3M7nf9/vO7fhf9U3N4Crz
+n5rl1PTtew9AndRwq/M+/HrVnOu5E3N6+Lw5X1E8RoMJuC2d/b+vdnRQtdp1Wyxblhs/kKk1kah+
+Q6RUR+D4DDtaBV4isijk4eRUDAZYWA/jmBjsapG4ef2mI54TpXoT/GkTbLmBo2IN/nwVW0oJH6Vj
+uAUdMwkF/V9oOGOZdgFHXB5aFPQDSj3GoVKAX9LhE1R4Uzksx0XMMQKmqZTp/HhtFysM3y5gi0l7
+63LRy51+B1NpIEzw9wtVbGtlgl/EUobgpzRMMDl0bx4gUam3C4xERW1XrbgCcgF72Qv3NeK+Es9i
+nskQ9zTGQhwG9hk8XNqCVq21BKyJxDVrVMxvKidz0XIdoeKZmd2nEnfpwt2VUmGPKxgOp/HUF8TP
+8/OWwCidvfOaldlVsTD/SdSwwSv4wElYItldMSM7cQ8mMXTA4pkvhJ6Nr2g0my2BEVoccXLKtiet
+LQSKp/isV7Apl/CebN5DNv+W0zDF5mChRfT5GdjDKRh1KTAcEQ7d5LIzqbzzpmWsJiW42QxmYzzs
+ZPOjhjt5+569GLq9fixQyXaCQUrQXJw6bWdlj08tYY3kXs4UMJfW4UjIGGMkvIiI6A0a+UOgCeUl
+QV8kfeNlVJTIkhwznLr4J7ux+TdRHpNHHKyEYJgQ9PppPFr2IVuqtgieHwl3CQEsUdF0miBZx8lb
+j5OzzehYFpPkm9E2OosnO2HT3ajLCH9XTtVN9av0fwXGB7o2jB9Xabels/8XRaCvi+hp95QAAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="a81f3d32-dc19-480b-8652-ba7a63829e2f"
+		isrooted="True"
+		name="DlgOptionenPar"
+		refpath="/form[@controlname='dlgOptionen_par']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="checkbox,control,nativewindow"
+			capname="checkbox"
+			id="82e7188b-7235-4626-8e5e-3663dbba860b"
+			name="CbBrdGkto"
+			refimgid="1146f605-6e2a-4ae6-8d15-95f0c98fc3a9"
+			refpath="/form[@controlname='dlgOptionen_par']/container[@controlname='groupBox3']/checkbox[@controlname='cbBrdGkto']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgOptionen_par']/?/?/checkbox[@controlname='cbBrdGkto']
+			</item>
+			<item
+			addcaps="checkbox,control,nativewindow"
+			capname="checkbox"
+			id="34951b35-a963-4bac-b547-ce4dc9964fad"
+			name="CbBrdEB"
+			refimgid="30680e5e-255a-46f9-a9e3-278193d58aeb"
+			refpath="/form[@controlname='dlgOptionen_par']/container[@controlname='groupBox3']/checkbox[@controlname='cbBrdEB']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgOptionen_par']/?/?/checkbox[@controlname='cbBrdEB']
+			</item>
+			<item
+			addcaps="checkbox,control,nativewindow"
+			capname="checkbox"
+			id="493a413b-494f-47f6-ade0-dc37985e904b"
+			name="CbAtUser"
+			refimgid="882f0ab1-4ee9-42a8-a6cd-df62fdecbefc"
+			refpath="/form[@controlname='dlgOptionen_par']/container[@controlname='groupBox3']/checkbox[@controlname='cbAtUser']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgOptionen_par']/?/?/checkbox[@controlname='cbAtUser']
+			</item>
+			<item
+			addcaps="checkbox,control,nativewindow"
+			capname="checkbox"
+			id="fc9a3dbc-e220-48eb-8cda-118887c8acec"
+			name="CbAtBuchungszeit"
+			refimgid="84491ca4-452b-4032-a3b0-510c4ea0e971"
+			refpath="/form[@controlname='dlgOptionen_par']/container[@controlname='groupBox3']/checkbox[@controlname='cbAtBuchungszeit']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgOptionen_par']/?/?/checkbox[@controlname='cbAtBuchungszeit']
+			</item>
+			<item
+			addcaps="radiobutton,control,nativewindow"
+			capname="radiobutton"
+			id="5403eb79-2c16-45e0-9479-01c6f9d42af0"
+			name="RbVariante2"
+			refimgid="be495eb5-312c-4d59-a366-448a14d3e97c"
+			refpath="/form[@controlname='dlgOptionen_par']/container[@controlname='groupBox2']/radiobutton[@controlname='rbVariante2']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgOptionen_par']/?/?/radiobutton[@controlname='rbVariante2']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="d9758b1e-d6ed-4dc8-bce7-b5f6fca71a6f"
+			name="PbOk"
+			refimgid="448eaeb8-b49f-48df-890a-a834f5dfa539"
+			refpath="/form[@controlname='dlgOptionen_par']/button[@controlname='pbOk']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgOptionen_par']/button[@controlname='pbOk']
+			</item>
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="e089ce43-d1f4-40ba-a2f8-ab99c3f6738c"
+			name="TitleBar100Optionen"
+			refimgid="4f98d190-3637-4404-bfbe-1bc9f3f18ce9"
+			refpath="/form[@controlname='dlgOptionen_par']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgOptionen_par']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<basepath>
+				/form[@controlname='dlgOptionen_par']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="39e4fe6d-0f24-4399-bdb7-6e6d0890115a"
+		name="Pfad">
+			c:\temp
+		</var>
+	</variables>
+</repository>
