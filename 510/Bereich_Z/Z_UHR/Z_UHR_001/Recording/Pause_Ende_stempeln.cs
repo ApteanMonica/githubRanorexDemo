@@ -235,11 +235,11 @@ namespace Z_UHR_001.Recording
             
             Report.Log(ReportLevel.Info, "User", angepasste_Uhrzeit_einlesen, new RecordItemIndex(13));
             
-            Uhrzeit_plus_1Minute = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetDateTimePlus(Uhrzeit_Stunde_Minute, "m", ValueConverter.ArgumentFromString<int>("counter", "1"), "HH:mm");
+            Uhrzeit_plus_1Minute = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetDateTimePlus(angepasste_Uhrzeit_einlesen, "m", ValueConverter.ArgumentFromString<int>("counter", "1"), "HH:mm");
             
             Report.Log(ReportLevel.Info, "User", Uhrzeit_plus_1Minute, new RecordItemIndex(15));
             
-            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateVar1Var2(angepasste_Uhrzeit_einlesen, Uhrzeit_Stunde_Minute, Uhrzeit_plus_1Minute);
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateVar1Var2(Uhrzeit_Stunde_Minute, angepasste_Uhrzeit_einlesen, Uhrzeit_plus_1Minute);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Personal_Nr) on item 'FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersNr_Zeile_mit_Varibale_Personal_Nr'.", repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersNr_Zeile_mit_Varibale_Personal_NrInfo, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersNr_Zeile_mit_Varibale_Personal_NrInfo, "Text", Personal_Nr);

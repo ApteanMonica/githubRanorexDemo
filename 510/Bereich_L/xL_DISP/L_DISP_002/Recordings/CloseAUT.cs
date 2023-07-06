@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_EXOPV_005.Recordings_B_BUAB
+namespace L_DISP_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The B_BUAB_Belegnr_NEU_validieren recording.
+    ///The CloseAUT recording.
     /// </summary>
-    [TestModule("3d284781-66ee-414e-88ae-db1e0cf486af", ModuleType.Recording, 1)]
-    public partial class B_BUAB_Belegnr_NEU_validieren : ITestModule
+    [TestModule("c3317894-8e83-4e62-be66-1cd1f73beb66", ModuleType.Recording, 1)]
+    public partial class CloseAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_EXOPV_005.B_EXOPV_005Repository repository.
+        /// Holds an instance of the global::L_DISP_002.L_DISP_002Repository repository.
         /// </summary>
-        public static global::B_EXOPV_005.B_EXOPV_005Repository repo = global::B_EXOPV_005.B_EXOPV_005Repository.Instance;
+        public static global::L_DISP_002.L_DISP_002Repository repo = global::L_DISP_002.L_DISP_002Repository.Instance;
 
-        static B_BUAB_Belegnr_NEU_validieren instance = new B_BUAB_Belegnr_NEU_validieren();
+        static CloseAUT instance = new CloseAUT();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public B_BUAB_Belegnr_NEU_validieren()
+        public CloseAUT()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static B_BUAB_Belegnr_NEU_validieren Instance
+        public static CloseAUT Instance
         {
             get { return instance; }
         }
@@ -79,11 +79,8 @@ namespace B_EXOPV_005.Recordings_B_BUAB
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER03_B_EXOPV_005_NEU') on item 'TblB.Buchungszeilen_Tabelle.ColBelegnrRow19'.", repo.TblB.Buchungszeilen_Tabelle.ColBelegnrRow19Info, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.ColBelegnrRow19Info, "Text", "ER03_B_EXOPV_005_NEU");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB03_B_EXOPV_005_NEU') on item 'TblB.Buchungszeilen_Tabelle.ColBusaNrfremdbelegRow19'.", repo.TblB.Buchungszeilen_Tabelle.ColBusaNrfremdbelegRow19Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.ColBusaNrfremdbelegRow19Info, "Text", "FB03_B_EXOPV_005_NEU");
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmDispo.TitleBar100BestellvorschlagGenerier'.", repo.FrmDispo.TitleBar100BestellvorschlagGenerierInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.FrmDispo.TitleBar100BestellvorschlagGenerier, 1000);
             
         }
 

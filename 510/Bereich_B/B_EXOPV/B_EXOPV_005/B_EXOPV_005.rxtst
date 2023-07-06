@@ -87,20 +87,6 @@
 			id="1d8653e9-0786-4373-9513-fedecb8cf257"
 			name="setup">
 			</setup>
-			<testmodule
-			id="1f572840-7383-45fd-904c-e2bf34a5e0a5"
-			name="B_EXOPS_neu_laden"
-			ref="5d91eadb-9556-4888-8dea-b1b80a770e1b"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Stapel_Herkunft"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="c48b93b8-1c9b-432f-8c96-1fffeb97e4c6"
-					variablename="Stapel_Herkunft">
-					</var>
-				</databinding>
-			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -135,6 +121,20 @@
 					dataname="Stapel_Herkunft"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="ad652474-92e7-4dee-a732-0a3088aace38"
+					variablename="Stapel_Herkunft">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="33541e09-be34-4e76-af83-c3d2e1d4d02c"
+			name="B_EXOPS_neu_laden"
+			ref="5d91eadb-9556-4888-8dea-b1b80a770e1b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="c48b93b8-1c9b-432f-8c96-1fffeb97e4c6"
 					variablename="Stapel_Herkunft">
 					</var>
 				</databinding>
@@ -210,7 +210,7 @@
 			</testcase>
 			<testmodule
 			id="663368c7-d2e7-4a30-b824-596b8a045fb8"
-			name="B_BUAB_Belegnr_NEU_validieren"
+			name="B_BUAB_Belege_verbucht_validieren"
 			ref="3d284781-66ee-414e-88ae-db1e0cf486af"
 			type="Recording">
 			</testmodule>
@@ -739,12 +739,12 @@
 					id="452bfe11-a84b-4803-bd19-94fac97f9f55"
 					name="B_EXOPS_Kontrolle_Status_nach_Verbuchung">
 						<testmodule
-						id="fd78c853-899f-4f47-97b8-6252a102302f"
-						name="B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren">
+						id="33541e09-be34-4e76-af83-c3d2e1d4d02c"
+						name="B_EXOPS_neu_laden">
 						</testmodule>
 						<testmodule
-						id="1f572840-7383-45fd-904c-e2bf34a5e0a5"
-						name="B_EXOPS_neu_laden">
+						id="fd78c853-899f-4f47-97b8-6252a102302f"
+						name="B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren">
 						</testmodule>
 						<teardown
 						id="fd2b4934-fcf3-483e-a6d6-dd83499de10b"
@@ -776,7 +776,7 @@
 						</testmodule>
 						<testmodule
 						id="663368c7-d2e7-4a30-b824-596b8a045fb8"
-						name="B_BUAB_Belegnr_NEU_validieren">
+						name="B_BUAB_Belege_verbucht_validieren">
 						</testmodule>
 						<teardown
 						id="ac1e57eb-333f-4270-8d57-379ac8556d77"

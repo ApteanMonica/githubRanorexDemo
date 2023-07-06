@@ -2,42 +2,6 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
-			<setup
-			id="4ef9a0c2-aad1-411d-8ea5-3955bcfb265a"
-			name="setup">
-			</setup>
-			<testmodule
-			id="7fe5b550-8c12-4ff9-bf6f-097273dc833d"
-			name="BV_bestandsbezogen_erstellen"
-			ref="1d7e6c9c-a3a4-4066-89c3-e2d534a6ad8c"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Lager"
-					datasourceid="9e6c5f99-df77-491e-8327-ef0485aa1c74"
-					variableid="2d8a3fe9-1490-43e9-8846-fceb8714125d"
-					variablename="Lager">
-					</var>
-					<var
-					dataname="Artikel1"
-					datasourceid="9e6c5f99-df77-491e-8327-ef0485aa1c74"
-					variableid="67489f18-4c62-40fd-b6dc-d1474eedd28e"
-					variablename="Artikel1">
-					</var>
-					<var
-					dataname="Artikel2"
-					datasourceid="9e6c5f99-df77-491e-8327-ef0485aa1c74"
-					variableid="eac01a97-e688-4df5-9393-332721ca706e"
-					variablename="Artikel2">
-					</var>
-					<var
-					dataname="Dispo-Art"
-					datasourceid="9e6c5f99-df77-491e-8327-ef0485aa1c74"
-					variableid="f3cfff89-379d-4a0f-9c03-6263b770381f"
-					variablename="Dispo_art">
-					</var>
-				</databinding>
-			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -46,19 +10,124 @@
 			VideoFps="15"
 			VideoRecordingMode="Off"
 			VideoSource="Auto"
+			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
-			id="8d8aef2a-65c1-42b6-80cb-3293a7c577bd"
+			id="2cef5f17-9aec-42e5-b37b-350fc53d7214"
+			includeimageschecked="False"
+			includerecordingschecked="False"
 			junitreport="False"
 			name="L_DISP_001"
+			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<testmodule
+			id="3e0348c3-5c16-4047-8d1a-ece78baf27c5"
+			name="BV_bestandsbezogen_erstellen"
+			ref="c5e3b59a-d58d-4b92-8a53-7580c86c374e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Dispo-Art"
+					datasourceid="97784e31-38ca-4a38-835e-95e6d06561f9"
+					variableid="017729c4-5dbc-47e8-8493-0bb59cab121b"
+					variablename="Dispo_art">
+					</var>
+					<var
+					dataname="Lager"
+					datasourceid="97784e31-38ca-4a38-835e-95e6d06561f9"
+					variableid="ef10d31e-c34d-44a3-bfa7-75a640a5f3e7"
+					variablename="Lager">
+					</var>
+					<var
+					dataname="Artikel1"
+					datasourceid="97784e31-38ca-4a38-835e-95e6d06561f9"
+					variableid="2a4e3903-1b48-4523-b3e6-f3378dc27265"
+					variablename="Artikel1">
+					</var>
+					<var
+					dataname="Artikel2"
+					datasourceid="97784e31-38ca-4a38-835e-95e6d06561f9"
+					variableid="f0078681-a9b3-4d39-8d64-c8d35e5a9667"
+					variablename="Artikel2">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="4fe70906-ad91-49d7-a66d-a6ffb206c9e3"
+			name="CloseAUT"
+			ref="bd625bda-abf1-4ded-aeeb-bb40daaae957"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="689e416b-f8f0-4822-a619-e32d76a5cd15"
+			name="StartAUT"
+			ref="8168a0fe-3e25-4455-b818-1f386297aafb"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="97784e31-38ca-4a38-835e-95e6d06561f9"
+					variableid="ca17fc57-0785-4832-87da-abe4e7101508"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm"
+					datasourceid="97784e31-38ca-4a38-835e-95e6d06561f9"
+					variableid="fdeb9c92-27c6-4393-9b78-4a0680c4e05e"
+					variablename="Programm">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="6da215f9-7c29-44ce-bfc9-d34220f2c95e"
+			name="Drucken"
+			ref="1c926994-30d8-4f40-b052-d6fd37e0b9b1"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BV-Nr"
+					datasourceid="97784e31-38ca-4a38-835e-95e6d06561f9"
+					variableid="b8a2089c-9df9-4c50-8c57-b3c55b2e43df"
+					variablename="BV_Nr">
+					</var>
+				</databinding>
+			</testmodule>
+			<setup
+			id="6f8fada9-103c-4abf-86d4-37205a1cdb94"
+			name="setup">
+			</setup>
+			<teardown
+			id="76ca4ebd-dd8b-42df-bb4d-16a80595166f"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="79a64e11-a1d1-483b-a53e-7aa5d8384cf4"
+			name="BV_bearbeiten"
+			ref="25937b19-633a-49ae-b563-4a9e2572a2da"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BV-Nr"
+					datasourceid="97784e31-38ca-4a38-835e-95e6d06561f9"
+					variableid="0c1b0581-29c6-4925-86cf-6081c2280e4e"
+					variablename="BV_Nr">
+					</var>
+					<var
+					dataname="Artikel1"
+					datasourceid="97784e31-38ca-4a38-835e-95e6d06561f9"
+					variableid="981277ce-1dda-4b62-be3e-aa8c1e8d9852"
+					variablename="Artikel1">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
-			id="9e6c5f99-df77-491e-8327-ef0485aa1c74"
+			id="97784e31-38ca-4a38-835e-95e6d06561f9"
 			name="L_DISP_001"
 			reportlevel="Info;20">
 				<parameters>
@@ -92,140 +161,76 @@
 					</param>
 				</parameters>
 			</testcase>
-			<teardown
-			id="a77135b2-1f6a-45d5-b407-8107b8d00c78"
-			name="teardown">
-			</teardown>
+			<testcase
+			id="aec490b3-4d16-4d01-9d9a-0a48d482144b"
+			name="TestCase">
+			</testcase>
 			<testmodule
-			id="c18979f0-4137-42bb-bf84-778abc611432"
-			name="StartAUT"
-			ref="ec835837-a0c6-4286-be27-d5b14e9fcaea"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Startfile"
-					datasourceid="9e6c5f99-df77-491e-8327-ef0485aa1c74"
-					variableid="a8b3a4c7-89d8-4f2b-8258-fbe4b7a8788b"
-					variablename="Startfile">
-					</var>
-					<var
-					dataname="Programm"
-					datasourceid="9e6c5f99-df77-491e-8327-ef0485aa1c74"
-					variableid="3b97e8c6-6c8b-4ef5-977b-2930a6c00965"
-					variablename="Programm">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="d8fa9ad6-c395-437b-b210-b202a76e7e2f"
-			name="BV_bearbeiten"
-			ref="a167fdc5-0061-4122-9537-62de75b19be8"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Artikel1"
-					datasourceid="9e6c5f99-df77-491e-8327-ef0485aa1c74"
-					variableid="4fd15a25-b881-4a4c-b800-cbefcddd8a71"
-					variablename="Artikel1">
-					</var>
-					<var
-					dataname="BV-Nr"
-					datasourceid="9e6c5f99-df77-491e-8327-ef0485aa1c74"
-					variableid="32a39d30-12df-48e3-a96c-4ab8577e11f8"
-					variablename="BV_Nr">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="df8bfa06-66f4-4243-a67b-dd96028c882f"
-			name="CloseAUT"
-			ref="865b07c5-321f-4e6b-a9d7-afa61276c59e"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="e4378292-3c4d-44c5-8bbb-d8d8356cc46b"
+			id="bc358142-054a-4cf8-a3af-4ab0cc66cffe"
 			name="BV_mit_Optionen"
-			ref="20f34b89-656b-4b5e-b042-bae30379d3f9"
+			ref="97508526-9371-4ed9-82fd-cecfb0397095"
 			type="Recording">
 				<databinding>
 					<var
 					dataname="Lager"
-					datasourceid="9e6c5f99-df77-491e-8327-ef0485aa1c74"
-					variableid="dcbd7687-dc16-4ba4-819e-d8942dc00531"
+					datasourceid="97784e31-38ca-4a38-835e-95e6d06561f9"
+					variableid="732d7c72-63f7-4882-b4e5-f195db3a954e"
 					variablename="Lager">
 					</var>
 					<var
 					dataname="Artikel1"
-					datasourceid="9e6c5f99-df77-491e-8327-ef0485aa1c74"
-					variableid="e941c663-7864-42f5-bf01-f0a01ac1bdb4"
+					datasourceid="97784e31-38ca-4a38-835e-95e6d06561f9"
+					variableid="b5a735ba-f91d-4390-81e8-580b869d5a5b"
 					variablename="Artikel1">
 					</var>
 					<var
 					dataname="Artikel2"
-					datasourceid="9e6c5f99-df77-491e-8327-ef0485aa1c74"
-					variableid="b26e64b8-f50b-463b-b93b-0f8f963d1297"
+					datasourceid="97784e31-38ca-4a38-835e-95e6d06561f9"
+					variableid="758fef0c-82a8-419f-9305-67db6ce0c452"
 					variablename="Artikel2">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="ef7f4825-60f5-4fd5-a958-c6592a795e87"
-			name="Drucken"
-			ref="7ecec2e6-a98e-4cab-8f40-fb5714bbf2c8"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="BV-Nr"
-					datasourceid="9e6c5f99-df77-491e-8327-ef0485aa1c74"
-					variableid="5c8a2b85-e97d-426f-b167-f26b6490fe8e"
-					variablename="BV_Nr">
-					</var>
-				</databinding>
-			</testmodule>
-			<testcase
-			id="fb35e3e6-e36a-43a5-8551-8034707b660d"
-			name="TestCase">
-			</testcase>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
-			id="8d8aef2a-65c1-42b6-80cb-3293a7c577bd"
+			id="2cef5f17-9aec-42e5-b37b-350fc53d7214"
 			name="L_DISP_001">
 				<testcase
-				id="9e6c5f99-df77-491e-8327-ef0485aa1c74"
+				id="97784e31-38ca-4a38-835e-95e6d06561f9"
 				name="L_DISP_001">
 					<testcase
-					id="fb35e3e6-e36a-43a5-8551-8034707b660d"
+					id="aec490b3-4d16-4d01-9d9a-0a48d482144b"
 					name="TestCase">
 						<setup
-						id="4ef9a0c2-aad1-411d-8ea5-3955bcfb265a"
+						id="6f8fada9-103c-4abf-86d4-37205a1cdb94"
 						name="setup">
 							<testmodule
-							id="c18979f0-4137-42bb-bf84-778abc611432"
+							id="689e416b-f8f0-4822-a619-e32d76a5cd15"
 							name="StartAUT">
 							</testmodule>
 						</setup>
 						<testmodule
-						id="7fe5b550-8c12-4ff9-bf6f-097273dc833d"
+						id="3e0348c3-5c16-4047-8d1a-ece78baf27c5"
 						name="BV_bestandsbezogen_erstellen">
 						</testmodule>
 						<testmodule
-						id="d8fa9ad6-c395-437b-b210-b202a76e7e2f"
+						id="79a64e11-a1d1-483b-a53e-7aa5d8384cf4"
 						name="BV_bearbeiten">
 						</testmodule>
 						<testmodule
-						id="ef7f4825-60f5-4fd5-a958-c6592a795e87"
+						id="6da215f9-7c29-44ce-bfc9-d34220f2c95e"
 						name="Drucken">
 						</testmodule>
 						<testmodule
-						id="e4378292-3c4d-44c5-8bbb-d8d8356cc46b"
+						id="bc358142-054a-4cf8-a3af-4ab0cc66cffe"
 						name="BV_mit_Optionen">
 						</testmodule>
 						<teardown
-						id="a77135b2-1f6a-45d5-b407-8107b8d00c78"
+						id="76ca4ebd-dd8b-42df-bb4d-16a80595166f"
 						name="teardown">
 							<testmodule
-							id="df8bfa06-66f4-4243-a67b-dd96028c882f"
+							id="4fe70906-ad91-49d7-a66d-a6ffb206c9e3"
 							name="CloseAUT">
 							</testmodule>
 						</teardown>
@@ -241,10 +246,10 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="9e6c5f99-df77-491e-8327-ef0485aa1c74">
+			id="97784e31-38ca-4a38-835e-95e6d06561f9">
 			</testcontainer>
 			<testcontainer
-			id="fb35e3e6-e36a-43a5-8551-8034707b660d">
+			id="aec490b3-4d16-4d01-9d9a-0a48d482144b">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

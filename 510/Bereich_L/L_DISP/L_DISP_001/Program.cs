@@ -1,8 +1,8 @@
 ﻿/*
  * Created by Ranorex
  * User: ingeborg
- * Date: 09.03.2021
- * Time: 09:24
+ * Date: 25.01.2021
+ * Time: 08:47
  * 
  * To change this template use Tools > Options > Coding > Edit standard headers.
  */
@@ -19,7 +19,7 @@ using Ranorex.Core;
 using Ranorex.Core.Reporting;
 using Ranorex.Core.Testing;
 
-namespace L_DISP_001
+namespace L_DISP
 {
     class Program
     {

@@ -30,9 +30,9 @@ namespace L_DISP_002.Recordings
     public partial class CloseAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::L_DISP_002.L_DISP_001Repository repository.
+        /// Holds an instance of the global::L_DISP_002.L_DISP_002Repository repository.
         /// </summary>
-        public static global::L_DISP_002.L_DISP_001Repository repo = global::L_DISP_002.L_DISP_001Repository.Instance;
+        public static global::L_DISP_002.L_DISP_002Repository repo = global::L_DISP_002.L_DISP_002Repository.Instance;
 
         static CloseAUT instance = new CloseAUT();
 

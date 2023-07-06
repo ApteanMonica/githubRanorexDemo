@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_EXOPV_005.Recordings_B_BUAB
+namespace L_DISP_001
 {
-    public partial class B_BUAB_Belegnr_NEU_validieren
+    public partial class Recording1
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

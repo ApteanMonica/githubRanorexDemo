@@ -20,19 +20,19 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace L_DISP_001.Recordings
+namespace L_DISP.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
     ///The CloseAUT recording.
     /// </summary>
-    [TestModule("865b07c5-321f-4e6b-a9d7-afa61276c59e", ModuleType.Recording, 1)]
+    [TestModule("bd625bda-abf1-4ded-aeeb-bb40daaae957", ModuleType.Recording, 1)]
     public partial class CloseAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::L_DISP_001.L_DISP_001Repository repository.
+        /// Holds an instance of the global::L_DISP.L_DISP_001Repository repository.
         /// </summary>
-        public static global::L_DISP_001.L_DISP_001Repository repo = global::L_DISP_001.L_DISP_001Repository.Instance;
+        public static global::L_DISP.L_DISP_001Repository repo = global::L_DISP.L_DISP_001Repository.Instance;
 
         static CloseAUT instance = new CloseAUT();
 

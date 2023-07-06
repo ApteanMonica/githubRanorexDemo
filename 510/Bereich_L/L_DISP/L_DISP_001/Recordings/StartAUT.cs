@@ -20,19 +20,19 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace L_DISP_001.Recordings
+namespace L_DISP.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
     ///The StartAUT recording.
     /// </summary>
-    [TestModule("ec835837-a0c6-4286-be27-d5b14e9fcaea", ModuleType.Recording, 1)]
+    [TestModule("8168a0fe-3e25-4455-b818-1f386297aafb", ModuleType.Recording, 1)]
     public partial class StartAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::L_DISP_001.L_DISP_001Repository repository.
+        /// Holds an instance of the global::L_DISP.L_DISP_001Repository repository.
         /// </summary>
-        public static global::L_DISP_001.L_DISP_001Repository repo = global::L_DISP_001.L_DISP_001Repository.Instance;
+        public static global::L_DISP.L_DISP_001Repository repo = global::L_DISP.L_DISP_001Repository.Instance;
 
         static StartAUT instance = new StartAUT();
 
@@ -60,7 +60,7 @@ namespace L_DISP_001.Recordings
         /// <summary>
         /// Gets or sets the value of variable Startfile.
         /// </summary>
-        [TestVariable("a8b3a4c7-89d8-4f2b-8258-fbe4b7a8788b")]
+        [TestVariable("ca17fc57-0785-4832-87da-abe4e7101508")]
         public string Startfile
         {
             get { return _Startfile; }
@@ -72,7 +72,7 @@ namespace L_DISP_001.Recordings
         /// <summary>
         /// Gets or sets the value of variable Programm.
         /// </summary>
-        [TestVariable("3b97e8c6-6c8b-4ef5-977b-2930a6c00965")]
+        [TestVariable("fdeb9c92-27c6-4393-9b78-4a0680c4e05e")]
         public string Programm
         {
             get { return _Programm; }
