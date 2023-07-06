@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_EXOPV_005.Recordings_B_BUAB
 {
-    public partial class B_BUAB_Belege_verbucht_validieren
+    public partial class B_BUAB_alte_Belege_pruefen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

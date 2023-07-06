@@ -24,22 +24,22 @@ namespace B_EXOPV_005.Recordings_B_BUAB
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The B_BUAB_Einschraenkungen_laden recording.
+    ///The B_BUAB_Einschraenkungen_NEU_laden_11_Buchungen recording.
     /// </summary>
-    [TestModule("973ed37e-c79a-4680-a38b-260909411bf7", ModuleType.Recording, 1)]
-    public partial class B_BUAB_Einschraenkungen_laden : ITestModule
+    [TestModule("60aa254c-ec39-4c8b-83a9-c677af5c3b5d", ModuleType.Recording, 1)]
+    public partial class B_BUAB_Einschraenkungen_NEU_laden_11_Buchungen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_005.B_EXOPV_005Repository repository.
         /// </summary>
         public static global::B_EXOPV_005.B_EXOPV_005Repository repo = global::B_EXOPV_005.B_EXOPV_005Repository.Instance;
 
-        static B_BUAB_Einschraenkungen_laden instance = new B_BUAB_Einschraenkungen_laden();
+        static B_BUAB_Einschraenkungen_NEU_laden_11_Buchungen instance = new B_BUAB_Einschraenkungen_NEU_laden_11_Buchungen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public B_BUAB_Einschraenkungen_laden()
+        public B_BUAB_Einschraenkungen_NEU_laden_11_Buchungen()
         {
             Stapel_Herkunft = "B_EXOPV_005";
         }
@@ -47,7 +47,7 @@ namespace B_EXOPV_005.Recordings_B_BUAB
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static B_BUAB_Einschraenkungen_laden Instance
+        public static B_BUAB_Einschraenkungen_NEU_laden_11_Buchungen Instance
         {
             get { return instance; }
         }
@@ -57,7 +57,7 @@ namespace B_EXOPV_005.Recordings_B_BUAB
         /// <summary>
         /// Gets or sets the value of variable Stapel_Herkunft.
         /// </summary>
-        [TestVariable("55a003cb-c121-4d50-b489-1c5416a87d40")]
+        [TestVariable("27e07ec7-f886-4a81-9f73-270f65049be4")]
         public string Stapel_Herkunft
         {
             get { return repo.Stapel_Herkunft; }
@@ -90,29 +90,26 @@ namespace B_EXOPV_005.Recordings_B_BUAB
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '%' with focus on 'TblB.CDCCTools_Einschraenkungen.Beleg'.", repo.TblB.CDCCTools_Einschraenkungen.BelegInfo, new RecordItemIndex(0));
-            repo.TblB.CDCCTools_Einschraenkungen.Beleg.PressKeys("%");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Stapel_Herkunft) on item 'TblB.CDCCTools_Einschraenkungen.Beleg'.", repo.TblB.CDCCTools_Einschraenkungen.BelegInfo, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.TblB.CDCCTools_Einschraenkungen.BelegInfo, "Text", Stapel_Herkunft);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Stapel_Herkunft' with focus on 'TblB.CDCCTools_Einschraenkungen.Beleg'.", repo.TblB.CDCCTools_Einschraenkungen.BelegInfo, new RecordItemIndex(1));
-            repo.TblB.CDCCTools_Einschraenkungen.Beleg.PressKeys(Stapel_Herkunft);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'%') on item 'TblB.CDCCTools_Einschraenkungen.Beleg'.", repo.TblB.CDCCTools_Einschraenkungen.BelegInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.TblB.CDCCTools_Einschraenkungen.BelegInfo, "Text", "%");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '%' with focus on 'TblB.CDCCTools_Einschraenkungen.Beleg'.", repo.TblB.CDCCTools_Einschraenkungen.BelegInfo, new RecordItemIndex(2));
-            repo.TblB.CDCCTools_Einschraenkungen.Beleg.PressKeys("%");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(2));
+            repo.TblB.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox'", repo.DlgMessageBox.SelfInfo, new ActionTimeout(60000), new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox'", repo.DlgMessageBox.SelfInfo, new ActionTimeout(60000), new RecordItemIndex(3));
             repo.DlgMessageBox.SelfInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='11 Buchungen gefunden.\r\n \r\nAnzeigen ? ') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='11 Buchungen gefunden.\r\n \r\nAnzeigen ? ') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "11 Buchungen gefunden.\r\n \r\nAnzeigen ? ");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(5));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblB.Buchungszeilen_Tabelle.Zeile1.Row1'", repo.TblB.Buchungszeilen_Tabelle.Zeile1.Row1Info, new ActionTimeout(60000), new RecordItemIndex(7));
-            repo.TblB.Buchungszeilen_Tabelle.Zeile1.Row1Info.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblB.Buchungszeilen_Tabelle.Row1'", repo.TblB.Buchungszeilen_Tabelle.Row1Info, new ActionTimeout(60000), new RecordItemIndex(6));
+            repo.TblB.Buchungszeilen_Tabelle.Row1Info.WaitForExists(60000);
             
         }
 

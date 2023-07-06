@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_EXOPV_005.Recordings_B_BUAB
 {
-    public partial class B_BUAB_Einschraenkungen_laden
+    public partial class B_BUAB_neue_Belege_pruefen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -83,6 +83,26 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="1a440b67-19bc-4e21-83c3-d67adfd320f2"
+			name="Start_B_BUAB"
+			ref="23307373-546d-47a8-b04d-8ea957263cd0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="f4d059c4-6c64-4ed4-8b05-48ddb68a667e"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_3"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="334effdd-578f-400c-85ee-8a062d4b05f0"
+					variablename="Programm_3">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="1d8653e9-0786-4373-9513-fedecb8cf257"
 			name="setup">
@@ -111,6 +131,20 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<testmodule
+			id="2561fdcc-0be7-4f82-ad86-0666e3195212"
+			name="B_BUAB_Einschraenkungen_laden_4_Buchungen"
+			ref="973ed37e-c79a-4680-a38b-260909411bf7"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="55a003cb-c121-4d50-b489-1c5416a87d40"
+					variablename="Stapel_Herkunft">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="3030fd4b-a955-4cb9-88fa-3174b738ce08"
 			name="B_EXOPS_Einschraenkung_nur_B_EXOPV_005"
@@ -148,33 +182,13 @@
 			<testcase
 			id="36e8a639-b265-48ea-90bc-dd5a05738926"
 			name="B_EXOPV_Pruefung_doppelte_Belegnummern">
+				<description>
+					<![CDATA[<p>Für Testwiederholung: mit b_buab NUR die Belege mit Buchungsdatum=Tagesdatum und %B_EXOPV_005% löschen (NICHT die bereits vorher vorhandenen; mit DB-Talk in B_EXOP die busa_keybel auf null setzen bei Herkunft B_EXOPV_005 und in dbtalk oder B_EXOPS den Status von Herkunft B_EXOPV_005 auf N zurückstellen (busa_keybel aus b_exop entfernen um die Meldungen zu vermeiden, dass bereits verbucht, obwohl&nbsp; mit b_buab gelöscht).</p><p>select exop_keybel, exop_status, busa_keybel, exop_belegnr, adr_nr from b_exop where firm_nr = '100' and exop_herkunft = 'B_EXOPV_005';</p><p>update b_exop set exop_status = 'N', busa_keybel = null where firm_nr = '100' and exop_herkunft = 'B_EXOPV_005';</p><p>mit B_EXOPS bei Belegnr ER03_B_EXOPV_005_NEU und Fremdbelegnr FB03_B_EXOPV_005_NEU "_NEU" entfernen.<br></p><br>]]>
+				</description>
 			</testcase>
-			<testmodule
-			id="39b85d3d-f9d1-4d53-8dec-0e8e45308a8d"
-			name="Start_B_BUAB"
-			ref="23307373-546d-47a8-b04d-8ea957263cd0"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Startfile"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="f4d059c4-6c64-4ed4-8b05-48ddb68a667e"
-					variablename="Startfile">
-					</var>
-					<var
-					dataname="Programm_3"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="334effdd-578f-400c-85ee-8a062d4b05f0"
-					variablename="Programm_3">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="452bfe11-a84b-4803-bd19-94fac97f9f55"
 			name="B_EXOPS_Kontrolle_Status_nach_Verbuchung">
-				<description>
-					<![CDATA[<p>BUG 37789 3 Belege auf Status F, obwohl die Option deaktiviert ist!</p>]]>
-				</description>
 			</testcase>
 			<testmodule
 			id="495fff49-2552-4675-9171-568c88fda2b5"
@@ -204,15 +218,33 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="5d172029-04da-494c-b842-c1b853424117"
+			name="setup">
+			</setup>
 			<testcase
 			id="6406e09a-057a-43fb-8800-e15265b29c87"
 			name="B_BUAB_Kontrolle_Buchungen_Belegnummern">
 			</testcase>
 			<testmodule
 			id="663368c7-d2e7-4a30-b824-596b8a045fb8"
-			name="B_BUAB_Belege_verbucht_validieren"
+			name="B_BUAB_alte_Belege_pruefen"
 			ref="3d284781-66ee-414e-88ae-db1e0cf486af"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="LF_01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="030d7652-77a0-49b5-a98a-460273284a00"
+					variablename="LF_01">
+					</var>
+					<var
+					dataname="LF_02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="86f8f0b8-5284-404e-a52b-84da45f0705f"
+					variablename="LF_02">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="698a29e1-09b5-4b61-90bc-b78f9fba2276"
@@ -475,6 +507,26 @@
 			ref="0829892c-ee03-4722-a0ed-7d78e5ad829a"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="a8e6e6b2-c081-4c05-a607-b7e38f5fccee"
+			name="B_BUAB_neue_Belege_pruefen"
+			ref="51242edc-61ca-4106-bbea-09105ac1eff4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="LF_02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="c976d8b5-9c60-4bcf-9380-d071f8affab6"
+					variablename="LF_02">
+					</var>
+					<var
+					dataname="LF_01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="dd949b62-15c0-4997-9e56-a792f6117f24"
+					variablename="LF_01">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="ac1e57eb-333f-4270-8d57-379ac8556d77"
 			name="teardown">
@@ -485,7 +537,7 @@
 			ref="f8b28fa4-646a-42df-a9d5-4e45f56b6632"
 			type="Recording">
 				<description>
-					<![CDATA[Akzeptieren, Belegnummer ändern mit OK, Übergehen (erst einbauen bei einem Beleg)]]>
+					<![CDATA[Akzeptieren - Beleg- und Fremdbelegnummer ändern mit OK, Übergehen (auf F stellen)]]>
 				</description>
 				<databinding>
 					<var
@@ -541,6 +593,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="bbf8e029-8ead-4dc0-acfd-e9d630550600"
+			name="B_BUAB_Einschraenkungen_NEU_laden_11_Buchungen"
+			ref="60aa254c-ec39-4c8b-83a9-c677af5c3b5d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="27e07ec7-f886-4a81-9f73-270f65049be4"
+					variablename="Stapel_Herkunft">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="be64b191-26b0-436d-a379-41d0577b8a72"
 			name="Fehlerprotokoll_aufrufen"
 			ref="e832eec0-459c-4f07-8dc5-3837792179c2"
@@ -584,24 +650,6 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<setup
-			id="d8e9f26d-1573-4ac0-b7bd-42d4da583879"
-			name="setup">
-			</setup>
-			<testmodule
-			id="e0b329ff-016d-440d-ab24-37dbb21585b4"
-			name="B_BUAB_Einschraenkungen_laden"
-			ref="973ed37e-c79a-4680-a38b-260909411bf7"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Stapel_Herkunft"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="55a003cb-c121-4d50-b489-1c5416a87d40"
-					variablename="Stapel_Herkunft">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="e9f8b89f-9ccd-4003-a994-e49b44d5322e"
 			name="B_EXOPS_Status_nach_Pruefung_kontrollieren"
@@ -617,6 +665,30 @@
 			ref="2003cd04-3fb1-42b1-b685-92ace9a44eb6"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="ebc4b947-323b-4036-b95a-47e715b21946"
+			name="B_BUAB_alte_Belege_pruefen"
+			ref="3d284781-66ee-414e-88ae-db1e0cf486af"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="LF_01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="030d7652-77a0-49b5-a98a-460273284a00"
+					variablename="LF_01">
+					</var>
+					<var
+					dataname="LF_02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="86f8f0b8-5284-404e-a52b-84da45f0705f"
+					variablename="LF_02">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="eff58893-0f83-4fa6-b1c4-4a24bd39223d"
+			name="B_BUAB_Kontrolle_vorhandene_Buchungen_Belegnummern">
+			</testcase>
 			<teardown
 			id="fd2b4934-fcf3-483e-a6d6-dd83499de10b"
 			name="teardown">
@@ -635,6 +707,26 @@
 				<testcase
 				id="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 				name="B_EXOPV_005">
+					<testcase
+					id="eff58893-0f83-4fa6-b1c4-4a24bd39223d"
+					name="B_BUAB_Kontrolle_vorhandene_Buchungen_Belegnummern">
+						<setup
+						id="5d172029-04da-494c-b842-c1b853424117"
+						name="setup">
+							<testmodule
+							id="1a440b67-19bc-4e21-83c3-d67adfd320f2"
+							name="Start_B_BUAB">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="2561fdcc-0be7-4f82-ad86-0666e3195212"
+						name="B_BUAB_Einschraenkungen_laden_4_Buchungen">
+						</testmodule>
+						<testmodule
+						id="ebc4b947-323b-4036-b95a-47e715b21946"
+						name="B_BUAB_alte_Belege_pruefen">
+						</testmodule>
+					</testcase>
 					<testcase
 					id="36e8a639-b265-48ea-90bc-dd5a05738926"
 					name="B_EXOPV_Pruefung_doppelte_Belegnummern">
@@ -758,17 +850,9 @@
 					<testcase
 					id="6406e09a-057a-43fb-8800-e15265b29c87"
 					name="B_BUAB_Kontrolle_Buchungen_Belegnummern">
-						<setup
-						id="d8e9f26d-1573-4ac0-b7bd-42d4da583879"
-						name="setup">
-							<testmodule
-							id="39b85d3d-f9d1-4d53-8dec-0e8e45308a8d"
-							name="Start_B_BUAB">
-							</testmodule>
-						</setup>
 						<testmodule
-						id="e0b329ff-016d-440d-ab24-37dbb21585b4"
-						name="B_BUAB_Einschraenkungen_laden">
+						id="bbf8e029-8ead-4dc0-acfd-e9d630550600"
+						name="B_BUAB_Einschraenkungen_NEU_laden_11_Buchungen">
 						</testmodule>
 						<testmodule
 						id="94cdba0a-630a-4c0a-81d3-1990eed05d65"
@@ -776,7 +860,11 @@
 						</testmodule>
 						<testmodule
 						id="663368c7-d2e7-4a30-b824-596b8a045fb8"
-						name="B_BUAB_Belege_verbucht_validieren">
+						name="B_BUAB_alte_Belege_pruefen">
+						</testmodule>
+						<testmodule
+						id="a8e6e6b2-c081-4c05-a607-b7e38f5fccee"
+						name="B_BUAB_neue_Belege_pruefen">
 						</testmodule>
 						<teardown
 						id="ac1e57eb-333f-4270-8d57-379ac8556d77"
@@ -814,6 +902,9 @@
 			</testcontainer>
 			<testcontainer
 			id="c9f22167-116d-46e5-b2fc-de0a7ff30c6e">
+			</testcontainer>
+			<testcontainer
+			id="eff58893-0f83-4fa6-b1c4-4a24bd39223d">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
