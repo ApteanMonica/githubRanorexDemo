@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_BUDA_001.Recordings_B_BUCH
 {
-    public partial class Kontrolle_Dauerbuchungsmodus_aktiv
+    public partial class Kontrolle_Dauerbuchungsmodus_aktiv_nach_Buchungsende
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

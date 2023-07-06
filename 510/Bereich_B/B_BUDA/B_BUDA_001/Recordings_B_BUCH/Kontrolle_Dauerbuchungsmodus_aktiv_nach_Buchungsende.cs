@@ -24,29 +24,29 @@ namespace B_BUDA_001.Recordings_B_BUCH
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Kontrolle_Dauerbuchungsmodus_aktiv recording.
+    ///The Kontrolle_Dauerbuchungsmodus_aktiv_nach_Buchungsende recording.
     /// </summary>
     [TestModule("255dcd34-00c5-44c6-8562-50c6cdcbbbf2", ModuleType.Recording, 1)]
-    public partial class Kontrolle_Dauerbuchungsmodus_aktiv : ITestModule
+    public partial class Kontrolle_Dauerbuchungsmodus_aktiv_nach_Buchungsende : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BUDA_001.B_BUDA_001Repository repository.
         /// </summary>
         public static global::B_BUDA_001.B_BUDA_001Repository repo = global::B_BUDA_001.B_BUDA_001Repository.Instance;
 
-        static Kontrolle_Dauerbuchungsmodus_aktiv instance = new Kontrolle_Dauerbuchungsmodus_aktiv();
+        static Kontrolle_Dauerbuchungsmodus_aktiv_nach_Buchungsende instance = new Kontrolle_Dauerbuchungsmodus_aktiv_nach_Buchungsende();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Kontrolle_Dauerbuchungsmodus_aktiv()
+        public Kontrolle_Dauerbuchungsmodus_aktiv_nach_Buchungsende()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Kontrolle_Dauerbuchungsmodus_aktiv Instance
+        public static Kontrolle_Dauerbuchungsmodus_aktiv_nach_Buchungsende Instance
         {
             get { return instance; }
         }
@@ -79,16 +79,19 @@ namespace B_BUDA_001.Recordings_B_BUCH
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='(Dauerbuchungsvorlage)') on item 'MdiBuch.Labeldauerbuchung'.", repo.MdiBuch.LabeldauerbuchungInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'MdiBuch.FrmRG.Hauptframe_2.Konto_Feld_leer_nach_Buchungsende'", repo.MdiBuch.FrmRG.Hauptframe_2.Konto_Feld_leer_nach_BuchungsendeInfo, new ActionTimeout(120000), new RecordItemIndex(0));
+            repo.MdiBuch.FrmRG.Hauptframe_2.Konto_Feld_leer_nach_BuchungsendeInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='(Dauerbuchungsvorlage)') on item 'MdiBuch.Labeldauerbuchung'.", repo.MdiBuch.LabeldauerbuchungInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.MdiBuch.LabeldauerbuchungInfo, "Text", "(Dauerbuchungsvorlage)");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiBuch.PbCommonCommon' at Center.", repo.MdiBuch.PbCommonCommonInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiBuch.PbCommonCommon' at Center.", repo.MdiBuch.PbCommonCommonInfo, new RecordItemIndex(2));
             repo.MdiBuch.PbCommonCommon.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'BBUCH.Dauerbuchung'.", repo.BBUCH.DauerbuchungInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'BBUCH.Dauerbuchung'.", repo.BBUCH.DauerbuchungInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.BBUCH.DauerbuchungInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Escape' Press.", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Escape' Press.", new RecordItemIndex(4));
             Keyboard.Press(System.Windows.Forms.Keys.Escape, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }

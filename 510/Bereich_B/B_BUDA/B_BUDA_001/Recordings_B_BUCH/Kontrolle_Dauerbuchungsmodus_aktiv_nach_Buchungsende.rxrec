@@ -19,12 +19,32 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Kontrolle_Dauerbuchungsmodus_aktiv"
+	classname="Kontrolle_Dauerbuchungsmodus_aktiv_nach_Buchungsende"
 	namespace="B_BUDA_001.Recordings_B_BUCH">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="7a11006e-8e6e-4e37-9ccc-4e1e78a23659"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="16d5e543-e415-49f3-9d14-cc4b85cb88b1"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='mdiBuch']/container[@controlname='ClientArea']/container[@controlname='SubForm_frmRG']/form[@controlname='frmRG']/container[@controlname='ClientArea']/container[@controlname='frame2']/text[@controlname='dfAdr_nr']/text[@accessiblename='Konto' and @text='']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
