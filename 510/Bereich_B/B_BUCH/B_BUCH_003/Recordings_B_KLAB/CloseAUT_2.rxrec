@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="b960e002-e6f6-4836-8346-4c5eef44a9ec"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT_2"
+	namespace="B_BUCH_003.Recordings_B_KLAB">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="d2ea13ff-f7f7-4a22-b5cf-6b7736ea727e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2e67627d-8e63-491e-9bc3-904f2c082edb"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblBuop']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="8d1d6f18-73fe-4581-8ff5-9949043f6a42"
+	name="B_BUCH_003Repository"
+	relativepath="..\B_BUCH_003Repository.rxrep">
+		<codegen
+		classname="B_BUCH_003Repository"
+		namespace="B_BUCH_003">
+		</codegen>
+		<rootfolder
+		id="7d27edf7-af54-4a9b-8552-f4cc68f759f2"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT_2.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

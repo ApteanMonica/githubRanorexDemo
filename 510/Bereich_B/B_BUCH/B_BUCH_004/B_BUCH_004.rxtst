@@ -7,6 +7,9 @@
 			name="StartAUT"
 			ref="2472ebb2-cf83-4896-ae16-89645627b8da"
 			type="Recording">
+				<description>
+					<![CDATA[Valdieriung Hauptmaske und Periodeneingabe-Maske]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Startfile"
@@ -27,6 +30,40 @@
 			name="SaBu_Habenseite_erzeugen"
 			ref="8b8a6d2a-1fbf-4ebc-bf87-d30cc3f4e24a"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Konto_H"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="a59760a0-c3bb-401e-bca4-636fa1425f3f"
+					variablename="Konto_H">
+					</var>
+					<var
+					dataname="Buchungstext"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="8af5317b-51dc-4900-896e-d8b14efca6da"
+					variablename="Buchungstext">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="19e181a3-7efd-41d7-b7a8-b623403e1811"
+			name="Buchungsabschluss_Pruefung_Maske"
+			ref="d2996720-1750-49b4-b1b3-f45b0e39e05a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Datum_Beleg"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="57c99255-ca27-4e1c-8a6a-c40c2cd86a02"
+					variablename="Datum_Beleg">
+					</var>
+					<var
+					dataname="Beleg1"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="5dccd9b9-00bc-4b60-9a6c-c9463450b731"
+					variablename="Beleg1">
+					</var>
+				</databinding>
 			</testmodule>
 			<setup
 			id="27d5b913-71e9-42f8-9e89-9c79c988f782"
@@ -51,6 +88,32 @@
 			name="Validation_SaBu_Pos1_in_B_BUAB"
 			ref="83012134-2bfe-4882-bd98-8cecec0f70e8"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Konto_S"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="9e339d33-a150-4ddf-a564-f941ed09e9cb"
+					variablename="Konto_S">
+					</var>
+					<var
+					dataname="Buchungstext"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="82e48f00-3b98-43da-8a30-529dc28e3986"
+					variablename="Buchungstext">
+					</var>
+					<var
+					dataname="Beleg1"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="8c5c928f-5008-4d8c-bce5-fdcb4e821811"
+					variablename="Beleg1">
+					</var>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="2a036df2-40f5-4b71-b212-681e47d3a7dc"
+					variablename="Tagesdatum">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="3bd73c5f-5b10-47d3-b98b-79e5a5eb0f59"
@@ -79,13 +142,21 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="66b74829-ef68-43cc-94c9-1318bd5b499a"
-			name="Benutzer_bucht_schon_Ja_fortfahren"
-			ref="e6bf9ec3-a6be-4f74-b088-2ee1be4bb81e"
+			id="5b7b3580-0c02-4671-8a55-a8282157a1c1"
+			name="Tagesdatum_ermitteln"
+			ref="1b9ac561-d18a-4296-9a2c-10d346ecb7f0"
 			type="Recording">
 				<description>
-					<![CDATA[Falls B_BUCH zuvor abgestürzt wird die Meldung mit j (JA) bestätigt. Tritt die Meldung nicht auf, wird das j aus dem Feld Monat im nächsten Schritt gelöscht]]>
+					<![CDATA[Tagesdatum unmittelbar vor Buchungsende um die Wahrscheinlichkeit eines Tageswechseln während der Buchung zu minimieren]]>
 				</description>
+				<databinding>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="1764cad4-8b23-46b3-8638-be5eda3c7ab5"
+					variablename="Tagesdatum">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="82a2b5c4-6a24-4c26-9e14-3294d946f6ab"
@@ -108,11 +179,43 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="8901aa05-0fb2-4a8a-8607-73596ffafc01"
+			name="Validation_Eingabe_Habenseite"
+			ref="5be7a203-688b-4672-b90b-29c4bede03c6"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Buchungstext"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="210d0a1b-ee58-4f5f-8241-7bd41d070939"
+					variablename="Buchungstext">
+					</var>
+					<var
+					dataname="Konto_H"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="a9af1cc4-4619-402e-8204-c3f7442eb1e7"
+					variablename="Konto_H">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="91b57751-6852-4a85-95e9-676344702215"
 			name="SaBu_Sollseite_erzeugen"
 			ref="b7f8ebaa-ae39-480e-8445-5abc5b2ff247"
 			type="Recording">
 				<databinding>
+					<var
+					dataname="Buchungstext"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="37a8682f-5ec1-48c1-bfa1-2f99eb0d6852"
+					variablename="Buchungstext">
+					</var>
+					<var
+					dataname="Konto_S"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="186ea32d-740c-46d4-98e1-e166b69afe8c"
+					variablename="Konto_S">
+					</var>
 					<var
 					dataname="Beleg1"
 					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
@@ -176,6 +279,18 @@
 					name="Beleg1"
 					value="SABU_TEST_01">
 					</param>
+					<param
+					name="Buchungstext"
+					value="SACHBUCHUNG_TEST_01">
+					</param>
+					<param
+					name="Konto_S"
+					value="4000">
+					</param>
+					<param
+					name="Konto_H"
+					value="4100">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -183,11 +298,53 @@
 			name="Validation_SaBu_Pos2_in_B_BUAB"
 			ref="b7ab3440-d536-4fd0-a04a-e863f8c2abff"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="76c40638-75c0-485f-a59e-85e71efe50b5"
+					variablename="Tagesdatum">
+					</var>
+					<var
+					dataname="Konto_H"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="1f8dd2fa-fc61-4869-a642-a7b00c6e3b13"
+					variablename="Konto_H">
+					</var>
+				</databinding>
 			</testmodule>
 			<setup
 			id="c81870b0-d0af-4760-9d5f-e6f4c82d3be7"
 			name="setup">
 			</setup>
+			<testmodule
+			id="c8682ec5-ac66-4338-8003-7fe5444c8b54"
+			name="Validation_SaBu_Pos2_Bereichsaufteilung"
+			ref="0650c312-de6e-4c17-8e68-675149a3d468"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Konto_H"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="acb966b6-cea9-44d3-824b-118b9644bd46"
+					variablename="Konto_H">
+					</var>
+				</databinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="3eeadaab-58d4-493b-ad4b-3f82f37e7a55"
+					variablename="Tagesdatum">
+					</var>
+				</missingdatavariablesbinding>
+			</testmodule>
+			<testmodule
+			id="cfea2314-7e27-459a-b93a-d317610aba56"
+			name="Abschluss_Soll_Seite_Meldung"
+			ref="1cab2efa-42b1-4695-953e-cda1207f9460"
+			type="Recording">
+			</testmodule>
 			<smartfoldernode
 			id="d7d18c3b-4c3b-4639-86e1-14ec0a55b87b"
 			name="SaBu_SOLLSEITE">
@@ -221,6 +378,43 @@
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
+			id="df0ddd18-ae7f-493e-87cc-fb953ae7df3d"
+			name="Pruefung_Soll_Zeile"
+			ref="2d42aed4-3e78-41fe-9ca8-311e4e8075cb"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Buchungstext"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="8d1e2cca-01b5-4194-a06a-8bed70440387"
+					variablename="Buchungstext">
+					</var>
+					<var
+					dataname="Konto_S"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="31680909-8486-4731-b947-4c7d32c5f0f0"
+					variablename="Konto_S">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="e1587a56-9271-4da5-9fc1-99bd1bfb7050"
+			name="Beleg_laden"
+			ref="7f4ee01f-b534-4a50-9bad-a34403152cb8"
+			type="Recording">
+				<description>
+					<![CDATA[(umgebaut auf Beleg1 laden - nur letzte Buchung laden könnte eine andere Buchung anzeigen)]]>
+				</description>
+				<databinding>
+					<var
+					dataname="Beleg1"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="f3b5021d-6d89-42f6-8a0d-04fcfd298dcb"
+					variablename="Beleg1">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="f1c5dabc-c964-4fee-8b1f-4995928f1fe5"
 			name="Validation_Eingabe_Sollseite"
 			ref="e11c88da-b547-4da2-a0b0-25d4ecef57c4"
@@ -231,6 +425,18 @@
 					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
 					variableid="b3214090-0763-4216-b302-fad21670af2a"
 					variablename="Datum_Beleg">
+					</var>
+					<var
+					dataname="Beleg1"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="d147a134-afd6-41c9-ac98-ecb1cf31e8fc"
+					variablename="Beleg1">
+					</var>
+					<var
+					dataname="Konto_S"
+					datasourceid="b2cf0b80-23c8-4be3-8542-741882b81099"
+					variableid="0290e6ba-8ad9-44a9-a02a-d6ee9b0bb1c8"
+					variablename="Konto_S">
 					</var>
 				</databinding>
 			</testmodule>
@@ -280,10 +486,6 @@
 							</testmodule>
 						</setup>
 						<testmodule
-						id="66b74829-ef68-43cc-94c9-1318bd5b499a"
-						name="Benutzer_bucht_schon_Ja_fortfahren">
-						</testmodule>
-						<testmodule
 						id="fac7e86d-4c08-4187-8a34-25bcbbde6e19"
 						name="Eingabe_Jahr_Periode_Busy">
 						</testmodule>
@@ -302,6 +504,14 @@
 							id="f1c5dabc-c964-4fee-8b1f-4995928f1fe5"
 							name="Validation_Eingabe_Sollseite">
 							</testmodule>
+							<testmodule
+							id="cfea2314-7e27-459a-b93a-d317610aba56"
+							name="Abschluss_Soll_Seite_Meldung">
+							</testmodule>
+							<testmodule
+							id="df0ddd18-ae7f-493e-87cc-fb953ae7df3d"
+							name="Pruefung_Soll_Zeile">
+							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
 						id="b09b41dd-1c2b-45a5-ba26-e406aa9a754d"
@@ -309,6 +519,18 @@
 							<testmodule
 							id="13f7cb11-1a27-4962-949f-662d69428da7"
 							name="SaBu_Habenseite_erzeugen">
+							</testmodule>
+							<testmodule
+							id="8901aa05-0fb2-4a8a-8607-73596ffafc01"
+							name="Validation_Eingabe_Habenseite">
+							</testmodule>
+							<testmodule
+							id="5b7b3580-0c02-4671-8a55-a8282157a1c1"
+							name="Tagesdatum_ermitteln">
+							</testmodule>
+							<testmodule
+							id="19e181a3-7efd-41d7-b7a8-b623403e1811"
+							name="Buchungsabschluss_Pruefung_Maske">
 							</testmodule>
 						</smartfoldernode>
 						<teardown
@@ -332,12 +554,20 @@
 							</testmodule>
 						</setup>
 						<testmodule
+						id="e1587a56-9271-4da5-9fc1-99bd1bfb7050"
+						name="Beleg_laden">
+						</testmodule>
+						<testmodule
 						id="39c3c0fc-0ee9-4750-b8bd-bb6d928ff9a5"
 						name="Validation_SaBu_Pos1_in_B_BUAB">
 						</testmodule>
 						<testmodule
 						id="c61fba9d-df0f-4e54-bdf2-c8151fa9571a"
 						name="Validation_SaBu_Pos2_in_B_BUAB">
+						</testmodule>
+						<testmodule
+						id="c8682ec5-ac66-4338-8003-7fe5444c8b54"
+						name="Validation_SaBu_Pos2_Bereichsaufteilung">
 						</testmodule>
 						<teardown
 						id="a9314df1-49e9-4737-897a-564a869065d5"

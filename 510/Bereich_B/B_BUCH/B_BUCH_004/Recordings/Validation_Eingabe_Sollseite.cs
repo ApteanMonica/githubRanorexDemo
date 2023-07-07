@@ -42,6 +42,8 @@ namespace B_BUCH_004.Recordings
         public Validation_Eingabe_Sollseite()
         {
             Datum_Beleg = "01.01.2020";
+            Beleg1 = "SABU_TEST_01";
+            Konto_S = "4000";
         }
 
         /// <summary>
@@ -64,6 +66,30 @@ namespace B_BUCH_004.Recordings
         {
             get { return _Datum_Beleg; }
             set { _Datum_Beleg = value; }
+        }
+
+        string _Beleg1;
+
+        /// <summary>
+        /// Gets or sets the value of variable Beleg1.
+        /// </summary>
+        [TestVariable("d147a134-afd6-41c9-ac98-ecb1cf31e8fc")]
+        public string Beleg1
+        {
+            get { return _Beleg1; }
+            set { _Beleg1 = value; }
+        }
+
+        string _Konto_S;
+
+        /// <summary>
+        /// Gets or sets the value of variable Konto_S.
+        /// </summary>
+        [TestVariable("0290e6ba-8ad9-44a9-a02a-d6ee9b0bb1c8")]
+        public string Konto_S
+        {
+            get { return _Konto_S; }
+            set { _Konto_S = value; }
         }
 
 #endregion
@@ -92,35 +118,53 @@ namespace B_BUCH_004.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='SABU_TEST_01') on item 'MdiBuch.FrmU.Beleg'.", repo.MdiBuch.FrmU.BelegInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.MdiBuch.FrmU.BelegInfo, "Text", "SABU_TEST_01");
+            // KopfBereich
+            Report.Log(ReportLevel.Info, "Section", "KopfBereich", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Datum_Beleg) on item 'MdiBuch.FrmU.Datum'.", repo.MdiBuch.FrmU.DatumInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'MdiBuch.Toolbar_Kopfbereich.DfSoll'.", repo.MdiBuch.Toolbar_Kopfbereich.DfSollInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.MdiBuch.Toolbar_Kopfbereich.DfSollInfo, "Text", "0,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'MdiBuch.Toolbar_Kopfbereich.DfHaben'.", repo.MdiBuch.Toolbar_Kopfbereich.DfHabenInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.MdiBuch.Toolbar_Kopfbereich.DfHabenInfo, "Text", "0,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg1) on item 'MdiBuch.FrmU.Beleg'.", repo.MdiBuch.FrmU.BelegInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.MdiBuch.FrmU.BelegInfo, "Text", Beleg1);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Datum_Beleg) on item 'MdiBuch.FrmU.Datum'.", repo.MdiBuch.FrmU.DatumInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.MdiBuch.FrmU.DatumInfo, "Text", Datum_Beleg);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2020') on item 'MdiBuch.FrmU.TextUVA'.", repo.MdiBuch.FrmU.TextUVAInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2020') on item 'MdiBuch.FrmU.TextUVA'.", repo.MdiBuch.FrmU.TextUVAInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.MdiBuch.FrmU.TextUVAInfo, "Text", "2020");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'MdiBuch.FrmU.Text'.", repo.MdiBuch.FrmU.TextInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'MdiBuch.FrmU.Text'.", repo.MdiBuch.FrmU.TextInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.MdiBuch.FrmU.TextInfo, "Text", "1");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4000') on item 'MdiBuch.tblB.ColKtoNrSollRow1'.", repo.MdiBuch.tblB.ColKtoNrSollRow1Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.MdiBuch.tblB.ColKtoNrSollRow1Info, "Text", "4000");
+            // frmS
+            Report.Log(ReportLevel.Info, "Section", "frmS", new RecordItemIndex(7));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='83,33') on item 'MdiBuch.tblB.ColBetragRow1'.", repo.MdiBuch.tblB.ColBetragRow1Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.MdiBuch.tblB.ColBetragRow1Info, "Text", "83,33");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='S') on item 'MdiBuch.FrmS.TextSH'.", repo.MdiBuch.FrmS.TextSHInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.MdiBuch.FrmS.TextSHInfo, "Text", "S");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='M20') on item 'MdiBuch.tblB.ColUstCdRow1'.", repo.MdiBuch.tblB.ColUstCdRow1Info, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.MdiBuch.tblB.ColUstCdRow1Info, "Text", "M20");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Konto_S) on item 'MdiBuch.FrmS.DfKtoNr'.", repo.MdiBuch.FrmS.DfKtoNrInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.MdiBuch.FrmS.DfKtoNrInfo, "Text", Konto_S);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='16,67') on item 'MdiBuch.tblB.ColUstbetragRow1'.", repo.MdiBuch.tblB.ColUstbetragRow1Info, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.MdiBuch.tblB.ColUstbetragRow1Info, "Text", "16,67");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Umsatzerlöse Inland  ') on item 'MdiBuch.FrmS.DfKtoBez'.", repo.MdiBuch.FrmS.DfKtoBezInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.MdiBuch.FrmS.DfKtoBezInfo, "Text", "Umsatzerlöse Inland  ");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='S') on item 'MdiBuch.tblB.ColKLRow1'.", repo.MdiBuch.tblB.ColKLRow1Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.MdiBuch.tblB.ColKLRow1Info, "Text", "S");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,00') on item 'MdiBuch.FrmS.DfBetrag'.", repo.MdiBuch.FrmS.DfBetragInfo, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.MdiBuch.FrmS.DfBetragInfo, "Text", "100,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'MdiBuch.tblB.ColBektNr1Row1'.", repo.MdiBuch.tblB.ColBektNr1Row1Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.MdiBuch.tblB.ColBektNr1Row1Info, "Text", "20");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='83,33') on item 'MdiBuch.FrmS.Text3'.", repo.MdiBuch.FrmS.Text3Info, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.MdiBuch.FrmS.Text3Info, "Text", "83,33");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='B') on item 'MdiBuch.FrmS.Text5'.", repo.MdiBuch.FrmS.Text5Info, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.MdiBuch.FrmS.Text5Info, "Text", "B");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='M20') on item 'MdiBuch.FrmS.Text1'.", repo.MdiBuch.FrmS.Text1Info, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.MdiBuch.FrmS.Text1Info, "Text", "M20");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'MdiBuch.FrmS.DfUstmv'.", repo.MdiBuch.FrmS.DfUstmvInfo, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.MdiBuch.FrmS.DfUstmvInfo, "Text", "1");
             
         }
 
