@@ -3,6 +3,26 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
+			id="38afbd31-b39f-4e76-a8a0-64dd3a9a1015"
+			name="AfA_berechnen_und_ueberleiten"
+			ref="de8bcdd4-a249-4004-92ce-4f0d7063ab60"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Beginn_GJ"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="af31b04c-1e77-4902-ad02-2e6741885bbc"
+					variablename="Beginn_GJ">
+					</var>
+					<var
+					dataname="Ende_GJ"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="92888088-ecdf-4f35-92a1-4a5f244fa1df"
+					variablename="Ende_GJ">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="493f9845-0dc9-464d-b0dd-be080bc10947"
 			name="CloseAUT"
 			ref="4f2b46e2-96a7-4344-b3a9-97f4b0d5ecee"
@@ -47,16 +67,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
-					variableid="65bf97cc-f6b4-4e05-b91c-1c0010b6a47e"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm"
 					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
 					variableid="52e37faf-2152-4c85-ac91-340dfc64728b"
 					variablename="Programm">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="65bf97cc-f6b4-4e05-b91c-1c0010b6a47e"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -73,8 +93,34 @@
 					name="Programm"
 					value="N_LISTEN Aufrufart BULI">
 					</param>
+					<param
+					name="Beginn_GJ"
+					value="01.01.2022">
+					</param>
+					<param
+					name="Ende_GJ"
+					value="31.12.2022">
+					</param>
+					<param
+					name="Afa_Konto"
+					value="0660">
+					</param>
+					<param
+					name="AfA_Gegenkonto"
+					value="0660">
+					</param>
+					<param
+					name="Kostenstelle_10"
+					value="10">
+					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="abd4dcaf-8d5d-43d7-8ba9-d18e2a51b40b"
+			name="Ueberpruefung_gerechnete_AfA"
+			ref="26efc609-81a4-473b-ad6f-4c9af1f4156c"
+			type="Recording">
+			</testmodule>
 			<teardown
 			id="af938ef0-2e2c-4f94-b0f5-15fe0f9ccc3b"
 			name="teardown">
@@ -98,6 +144,14 @@
 							name="StartAUT">
 							</testmodule>
 						</setup>
+						<testmodule
+						id="38afbd31-b39f-4e76-a8a0-64dd3a9a1015"
+						name="AfA_berechnen_und_ueberleiten">
+						</testmodule>
+						<testmodule
+						id="abd4dcaf-8d5d-43d7-8ba9-d18e2a51b40b"
+						name="Ueberpruefung_gerechnete_AfA">
+						</testmodule>
 						<teardown
 						id="af938ef0-2e2c-4f94-b0f5-15fe0f9ccc3b"
 						name="teardown">

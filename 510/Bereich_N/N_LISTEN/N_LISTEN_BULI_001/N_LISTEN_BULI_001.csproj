@@ -91,6 +91,18 @@
     <Compile Include="Program.cs">
       <id>3b4ad2be-246c-4f74-af39-9765617787b1</id>
     </Compile>
+    <Compile Include="Recordings\AfA_berechnen_und_ueberleiten.cs">
+      <BoundTo>b63ec326-9941-48bc-a53b-b4689054b8b8</BoundTo>
+      <DependentUpon>AfA_berechnen_und_ueberleiten.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2c285466-04a0-4017-b3d3-d22dce9a5b07</id>
+    </Compile>
+    <Compile Include="Recordings\AfA_berechnen_und_ueberleiten.UserCode.cs">
+      <BoundTo>b63ec326-9941-48bc-a53b-b4689054b8b8</BoundTo>
+      <DependentUpon>AfA_berechnen_und_ueberleiten.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>02a79648-a5db-470b-9bee-1cc673bf953a</id>
+    </Compile>
     <Compile Include="Recordings\CloseAUT.cs">
       <DependentUpon>CloseAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -115,6 +127,18 @@
       <id>af6da6e0-39eb-4789-bddb-1a5b07f5c46e</id>
       <BoundTo>bfa2e89d-f968-450f-bdf8-ef98c31df2d5</BoundTo>
     </Compile>
+    <Compile Include="Recordings\Ueberpruefung_gerechnete_AfA.cs">
+      <BoundTo>54eaa830-7cce-4255-8aa1-aa465d37c869</BoundTo>
+      <DependentUpon>Ueberpruefung_gerechnete_AfA.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>327508e0-4553-44ba-ae05-aeb941d4b530</id>
+    </Compile>
+    <Compile Include="Recordings\Ueberpruefung_gerechnete_AfA.UserCode.cs">
+      <BoundTo>54eaa830-7cce-4255-8aa1-aa465d37c869</BoundTo>
+      <DependentUpon>Ueberpruefung_gerechnete_AfA.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1d6d26c3-336b-493d-8f64-20be3e3ba906</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -131,6 +155,11 @@
       <repoid>a571684b-1718-4382-85f0-a148dbf2b821</repoid>
       <reporootid>b2f923c8-701a-4560-ac72-1116f6373f18</reporootid>
     </None>
+    <None Include="Recordings\AfA_berechnen_und_ueberleiten.rxrec">
+      <BoundTo>8821a1e8-c924-4b2b-ae66-8ee6e6d8ff06</BoundTo>
+      <id>b63ec326-9941-48bc-a53b-b4689054b8b8</id>
+      <recordtableid>de8bcdd4-a249-4004-92ce-4f0d7063ab60</recordtableid>
+    </None>
     <None Include="Recordings\CloseAUT.rxrec">
       <BoundTo>8821a1e8-c924-4b2b-ae66-8ee6e6d8ff06</BoundTo>
       <id>b04d5655-e018-49d8-b538-f81318b19706</id>
@@ -140,6 +169,11 @@
       <BoundTo>8821a1e8-c924-4b2b-ae66-8ee6e6d8ff06</BoundTo>
       <id>bfa2e89d-f968-450f-bdf8-ef98c31df2d5</id>
       <recordtableid>3147901d-b751-4852-8cd6-719e800cfc45</recordtableid>
+    </None>
+    <None Include="Recordings\Ueberpruefung_gerechnete_AfA.rxrec">
+      <BoundTo>8821a1e8-c924-4b2b-ae66-8ee6e6d8ff06</BoundTo>
+      <id>54eaa830-7cce-4255-8aa1-aa465d37c869</id>
+      <recordtableid>26efc609-81a4-473b-ad6f-4c9af1f4156c</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
