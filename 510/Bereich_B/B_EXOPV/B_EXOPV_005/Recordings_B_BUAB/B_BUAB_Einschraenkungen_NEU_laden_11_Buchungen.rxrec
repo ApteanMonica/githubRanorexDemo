@@ -23,11 +23,6 @@ mode="Global">
 	namespace="B_EXOPV_005.Recordings_B_BUAB">
 	</codegen>
 	<variables>
-		<var
-		id="27e07ec7-f886-4a81-9f73-270f65049be4"
-		name="Stapel_Herkunft">
-			B_EXOPV_005
-		</var>
 	</variables>
 	<recorditems>
 		<validationitem
@@ -38,10 +33,6 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Stapel_Herkunft">
-				</binding>
 			</bindings>
 			<info
 			id="b2f3f768-083d-4b5f-90fa-b23f5dbf751f"
@@ -56,32 +47,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				%B_EXOPV_005%
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeContains"
-		enabled="True"
-		optional="False"
-		searchpropertyid="04ab1ca6-128b-410e-8736-ef42e1be6479">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="b2f3f768-083d-4b5f-90fa-b23f5dbf751f"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblB']/container[@controlname='ToolBar']/container[@controlname='cDCC_Tools']/text[@controlname='dfBelegnr']/text[@accessiblename='Beleg']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				%
+				%EXOPV_005%
 			</matchvalue>
 		</validationitem>
 		<mouseitem

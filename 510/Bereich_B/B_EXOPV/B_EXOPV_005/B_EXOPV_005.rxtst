@@ -28,15 +28,9 @@
 			ref="358790d0-4e14-46fe-828e-be724e2022a1"
 			type="Recording">
 				<description>
-					<![CDATA[BUG 38668 erledigt in 510 SP15 / OFFEN in 521 und 511- (Fremd)Feld Beleg-nr/neue (Fremd)Belegnr zu kurz continue on Fail / Warum Fehler bei der Validierung? Wegen abgeschnittenem Feld bei NEUE BELEGNR]]>
+					<![CDATA[Workaroud bis 511 SP14: Validierung Belege nur mit ER01 etc. BUG 38668 erledigt in 510 SP15, 521 SP12, 511 SP14  Feld (Fremd)Feld Beleg-nr/neue (Fremd)Belegnr zu kurz;]]>
 				</description>
 				<databinding>
-					<var
-					dataname="Beleg_ER01_FB01_LF01_OP"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="1f018603-2457-4650-b32a-375f8b7ec07c"
-					variablename="Beleg_ER01_FB01_LF01_OP">
-					</var>
 					<var
 					dataname="LF_02"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
@@ -48,18 +42,6 @@
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="bc21bb92-472a-4554-aa1b-3c095fcb6ff1"
 					variablename="LF_01">
-					</var>
-					<var
-					dataname="Fehlerprotokoll_Pruefung"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="a44d4820-852d-4c33-9a5e-26d0c8753b77"
-					variablename="Fehlerprotokoll_Pruefung">
-					</var>
-					<var
-					dataname="Beleg_ER03_FB03_LF02_OP"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="2a91abe8-ec26-4696-8bea-57e8bd533c4d"
-					variablename="Beleg_ER03_FB03_LF02_OP">
 					</var>
 				</databinding>
 			</testmodule>
@@ -136,14 +118,9 @@
 			name="B_BUAB_Einschraenkungen_laden_4_Buchungen"
 			ref="973ed37e-c79a-4680-a38b-260909411bf7"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="Stapel_Herkunft"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="55a003cb-c121-4d50-b489-1c5416a87d40"
-					variablename="Stapel_Herkunft">
-					</var>
-				</databinding>
+				<description>
+					<![CDATA[Workaround: Einschränkung Belegnr %EXOPV_005% statt $Stapel_Herkunft wegen verkürzter NEU-Belegnummern BUG 38668]]>
+				</description>
 			</testmodule>
 			<testmodule
 			id="3030fd4b-a955-4cb9-88fa-3174b738ce08"
@@ -183,7 +160,7 @@
 			id="36e8a639-b265-48ea-90bc-dd5a05738926"
 			name="B_EXOPV_Pruefung_doppelte_Belegnummern">
 				<description>
-					<![CDATA[<p>Für Testwiederholung: mit b_buab NUR die Belege mit Buchungsdatum=Tagesdatum und %B_EXOPV_005% löschen (NICHT die bereits vorher vorhandenen; mit DB-Talk in B_EXOP die busa_keybel auf null setzen bei Herkunft B_EXOPV_005 und in dbtalk oder B_EXOPS den Status von Herkunft B_EXOPV_005 auf N zurückstellen (busa_keybel aus b_exop entfernen um die Meldungen zu vermeiden, dass bereits verbucht, obwohl&nbsp; mit b_buab gelöscht).</p><p>select exop_keybel, exop_status, busa_keybel, exop_belegnr, adr_nr from b_exop where firm_nr = '100' and exop_herkunft = 'B_EXOPV_005';</p><p>update b_exop set exop_status = 'N', busa_keybel = null where firm_nr = '100' and exop_herkunft = 'B_EXOPV_005';</p><p>mit B_EXOPS bei Belegnr ER03_B_EXOPV_005_NEU und Fremdbelegnr FB03_B_EXOPV_005_NEU "_NEU" entfernen.<br></p><br>]]>
+					<![CDATA[<p>Für Testwiederholung: mit b_buab NUR die Belege mit Buchungsdatum=Tagesdatum und %B_EXOPV_005% löschen (NICHT die bereits vorher vorhandenen; mit DB-Talk in B_EXOP die busa_keybel auf null setzen bei Herkunft B_EXOPV_005 und in dbtalk oder B_EXOPS den Status von Herkunft B_EXOPV_005 auf N zurückstellen (busa_keybel aus b_exop entfernen um die Meldungen zu vermeiden, dass bereits verbucht, obwohl&nbsp; mit b_buab gelöscht).</p><p>select exop_keybel, exop_status, busa_keybel, exop_belegnr, adr_nr from b_exop where firm_nr = '100' and exop_herkunft = 'B_EXOPV_005';</p><p>update b_exop set exop_status = 'N', busa_keybel = null where firm_nr = '100' and exop_herkunft = 'B_EXOPV_005';</p><p>und mit B_EXOPS bei Belegnr ER03_B_EXOPV_005_NEU und Fremdbelegnr FB03_B_EXOPV_005_NEU "_NEU" entfernen.<br></p><br>]]>
 				</description>
 			</testcase>
 			<testcase
@@ -374,6 +351,9 @@
 			id="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 			name="B_EXOPV_005"
 			reportlevel="Info;20">
+				<description>
+					<![CDATA[<p>Vorhandene Belege in der Schnittstelle werden geprüft und verbucht. Dabei müssen doppelte Beleg- und Fremdbeleg-nummern angezeigt werden und korrigiert werden können. Lieferanten 303201 + 303202, Herkunft/Stapel: B_EXOPV_005, Periode 2023/5</p><p>1. mit default-Option (bei Lieferanten keine dopp. Belegprüfung) B_EXOPV_005 prüfen: keine Fehler<br>2. Optionen umstellen: Lieferanten doppelte Belege + Fremdbelege + jew. auch in Schnittstelle + FB nur innerhalb gleicher Adr-Nr. prüfen. <br>Option "Fehlerhafte Belege in Statuf F in Schnittstelle speichern" NICHT deaktiveren, weil nur die aktivierte Option ein vollständiges Prüfprotokoll sicherstellt (siehe Vermerk bei BUG 26881)<br>3. Stapel prüfen und alle Prüfergebnisse mit Änderungs-Vorschlägen übergehen (einzeln um Meldungen zur prüfen) <br>4. Status der Belege in der Schnittstelle wieder auf N zurücksetzen<br>5. Stapel verbuchen: Meldungen: LF01 ER01 + FB01 akzeptieren mit doppelter Belegnummer, LF01 FB02 übergehen (auf Status F stellen), LF02 ER03/FB03 neue Beleg- und Fremdbeleg-Nummer vergeben (_NEU anhängen)<br>6. Schnittstelle prüfen: Status und neue Beleg/Fremdbeleg-Nummer<br>7. Buchungsabfrage: verbuchte Belege prüfen + neue Beleg/Fremdbeleg-Nummer</p><p><br>BUG 37789 Bei Prüfung werden die Belege mit doppelter Belegnummer in der Schnittstelle nicht auf Status F gestellt (nur jene Belege, die einen OP mit gleicher Beleg-/Fremdbelegnummer beim gleichen Lieferanten haben)<br>Auswirkung der Option "Fremdbelege nur innerhalb gleicher Adr-Nr prüfen unklar - gilt für doppelte Belege innhalb der Schnittstelle, aber bei vorhandenen OPs nicht nachvollziehbar</p><p>BUG 38668 erledigt: In den Belegnummer-Prüfmasken sind die Beleg-Nr-Felder zu kurz erl. In 510 SP15/521 SP12/511 SP15</p><p><br></p>]]>
+				</description>
 				<parameters>
 					<param
 					name="Startfile"
@@ -422,54 +402,6 @@
 					<param
 					name="LF_02"
 					value="303202">
-					</param>
-					<param
-					name="Beleg_ER01_FB01_LF01_OP"
-					value="ER01_B_EXOPV_005">
-					</param>
-					<param
-					name="Beleg_ER02_FB02_LF01_OP"
-					value="ER02_B_EXOPV_005">
-					</param>
-					<param
-					name="Beleg_ER03_FB03_LF02_OP"
-					value="ER03_B_EXOPV_005">
-					</param>
-					<param
-					name="Beleg_ER05_FB05_LF02_OP_2020"
-					value="ER05_B_EXOPV_005">
-					</param>
-					<param
-					name="Beleg_ER03_FB02_LF01_EX"
-					value="ER03_B_EXOPV_005">
-					</param>
-					<param
-					name="Beleg_ER01_FB01_LF01_EX"
-					value="ER01_B_EXOPV_005">
-					</param>
-					<param
-					name="Beleg_ER04_FB04_LF01_EX"
-					value="ER04_B_EXOPV_005">
-					</param>
-					<param
-					name="Beleg_ER04_FB05_LF01_EX"
-					value="ER04_B_EXOPV_005">
-					</param>
-					<param
-					name="Beleg_ER06_FB04_LF01_EX"
-					value="ER06_B_EXOPV_005">
-					</param>
-					<param
-					name="Beleg_ER02_FB02_LF02_EX"
-					value="ER02_B_EXOPV_005">
-					</param>
-					<param
-					name="Beleg_ER03_FB03_LF02_EX"
-					value="ER03_B_EXOPV_005">
-					</param>
-					<param
-					name="Beleg_ER05_FB05_LF02_EX"
-					value="">
 					</param>
 					<param
 					name="Inhalt_Buchungsdatum_Zeile9"
@@ -537,15 +469,9 @@
 			ref="f8b28fa4-646a-42df-a9d5-4e45f56b6632"
 			type="Recording">
 				<description>
-					<![CDATA[Akzeptieren - Beleg- und Fremdbelegnummer ändern mit OK, Übergehen (auf F stellen)]]>
+					<![CDATA[Workaround verkürzte NEU-Belegnr BUG 38668 bis 511 SP14: ER01/FB01(LF1) Akzeptieren, FB02(ER03 LF1) Übergehen (auf F stellen), ER03/FB03(LF2) Beleg- und Fremdbelegnummer ändern mit OK]]>
 				</description>
 				<databinding>
-					<var
-					dataname="Fehlerprotokoll_Pruefung"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="328afdd1-72b3-4c4f-8d01-ea591dc9ddcc"
-					variablename="Fehlerprotokoll_Pruefung">
-					</var>
 					<var
 					dataname="LF_01"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
@@ -557,18 +483,6 @@
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="ec7e78a6-458e-4462-90ad-2fab6730d245"
 					variablename="LF_02">
-					</var>
-					<var
-					dataname="Beleg_ER01_FB01_LF01_OP"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="a622567e-9159-412f-919f-0dfb75ab95b7"
-					variablename="Beleg_ER01_FB01_LF01_OP">
-					</var>
-					<var
-					dataname="Beleg_ER03_FB03_LF02_OP"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="2da239f5-9723-48f3-90bc-2eac862e70b7"
-					variablename="Beleg_ER03_FB03_LF02_OP">
 					</var>
 				</databinding>
 			</testmodule>
@@ -597,14 +511,9 @@
 			name="B_BUAB_Einschraenkungen_NEU_laden_11_Buchungen"
 			ref="60aa254c-ec39-4c8b-83a9-c677af5c3b5d"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="Stapel_Herkunft"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="27e07ec7-f886-4a81-9f73-270f65049be4"
-					variablename="Stapel_Herkunft">
-					</var>
-				</databinding>
+				<description>
+					<![CDATA[Workaround: Einschränkung Belegnr %EXOPV_005% statt $Stapel_Herkunft wegen verkürzter NEU-Belegnummern BUG 38668]]>
+				</description>
 			</testmodule>
 			<testmodule
 			id="be64b191-26b0-436d-a379-41d0577b8a72"
@@ -632,9 +541,6 @@
 			<testcase
 			id="c9f22167-116d-46e5-b2fc-de0a7ff30c6e"
 			name="B_EXOPS_Kontrolle_und_Status_auf_N_zurücksetzen">
-				<description>
-					<![CDATA[<p>BUG 37789 3 Belege auf Status F, obwohl die Option deaktiviert ist!</p>]]>
-				</description>
 			</testcase>
 			<testmodule
 			id="cd42e940-9543-4325-9a31-52b8267b0037"
@@ -656,7 +562,7 @@
 			ref="d8201208-b1ad-4756-b52e-522408436296"
 			type="Recording">
 				<description>
-					<![CDATA[TICKET!!! Continue on fail, weil 5 Belege auf Status N bleiben und nur 3 auf F gestellt werden trotz Fehleroption und alle Übergeben bei Prüfung]]>
+					<![CDATA[BUG 37789 nur ER01/ER03 (LF1) + ER03(LF02) sind auf Status F, dopp Belege in Schnittstelle bleiben auf Status N - Fehler?]]>
 				</description>
 			</testmodule>
 			<testmodule
@@ -687,7 +593,10 @@
 			</testmodule>
 			<testcase
 			id="eff58893-0f83-4fa6-b1c4-4a24bd39223d"
-			name="B_BUAB_Kontrolle_vorhandene_Buchungen_Belegnummern">
+			name="B_BUAB_Kontrolle_vorhandene_Buchungen">
+				<description>
+					<![CDATA[Variable $Stapel_Herkunft geändert auf EXOPV_005 (Verkürzung wegen Bug/belegnummernfeld zu kurz)]]>
+				</description>
 			</testcase>
 			<teardown
 			id="fd2b4934-fcf3-483e-a6d6-dd83499de10b"
@@ -709,7 +618,7 @@
 				name="B_EXOPV_005">
 					<testcase
 					id="eff58893-0f83-4fa6-b1c4-4a24bd39223d"
-					name="B_BUAB_Kontrolle_vorhandene_Buchungen_Belegnummern">
+					name="B_BUAB_Kontrolle_vorhandene_Buchungen">
 						<setup
 						id="5d172029-04da-494c-b842-c1b853424117"
 						name="setup">
