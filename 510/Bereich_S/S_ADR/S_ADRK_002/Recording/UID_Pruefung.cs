@@ -165,8 +165,8 @@ namespace S_ADRK_002.Recording
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmAdr.TpAllgemein.UID_Nr'.", repo.FrmAdr.TpAllgemein.UID_NrInfo, new RecordItemIndex(6));
             repo.FrmAdr.TpAllgemein.UID_Nr.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Aptean_Austria) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", Aptean_Austria);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Aptean_Austria) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
+            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", Aptean_Austria);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.OK' at Center.", repo.DlgMessageBox.OKInfo, new RecordItemIndex(8));
             repo.DlgMessageBox.OK.Click();

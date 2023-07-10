@@ -6,6 +6,23 @@
 			id="04623290-ae3f-4c8d-97fd-7b7384b35414"
 			name="AR_Buchung_SOLL_Seite">
 			</smartfoldernode>
+			<testmodule
+			id="05e4a834-6ead-4f25-997c-c6df510b6bed"
+			name="Beleg_laden"
+			ref="672272ae-12ba-4137-81b5-ee33827e79fd"
+			type="Recording">
+				<description>
+					<![CDATA[(umgebaut auf Beleg1 laden - nur letzte Buchung laden könnte eine andere Buchung anzeigen)]]>
+				</description>
+				<databinding>
+					<var
+					dataname="Beleg1"
+					datasourceid="9cb56415-0ece-4078-98e1-41519746c3c3"
+					variableid="99cbdb56-3997-407e-aa73-4c066f9bfc3f"
+					variablename="Beleg1">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="12241270-d5d4-406e-a2ba-19200d05e97d"
 			name="teardown">
@@ -71,16 +88,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="9cb56415-0ece-4078-98e1-41519746c3c3"
-					variableid="6b7fbe99-c263-4d21-b912-0dc3440a1679"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm2"
 					datasourceid="9cb56415-0ece-4078-98e1-41519746c3c3"
 					variableid="d47aaff5-697f-49b6-9a00-bf43e0f051f1"
 					variablename="Programm2">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="9cb56415-0ece-4078-98e1-41519746c3c3"
+					variableid="6b7fbe99-c263-4d21-b912-0dc3440a1679"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -89,6 +106,9 @@
 			name="StartAUT"
 			ref="28e62599-97b5-4dca-bb94-43b40e7892f1"
 			type="Recording">
+				<description>
+					<![CDATA[Validieriung Hauptmaske und Periodeneingabe-Maske]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Startfile"
@@ -177,16 +197,22 @@
 			type="Recording">
 				<databinding>
 					<var
+					dataname="Kunde"
+					datasourceid="9cb56415-0ece-4078-98e1-41519746c3c3"
+					variableid="02026c1b-1ae3-4f68-9b4c-c9a3d15271f5"
+					variablename="Kunde">
+					</var>
+					<var
 					dataname="Busy"
 					datasourceid="9cb56415-0ece-4078-98e1-41519746c3c3"
 					variableid="960e71c8-20dd-4882-b1db-4a14df12c77c"
 					variablename="Busy">
 					</var>
 					<var
-					dataname="Kunde"
+					dataname="Tagesdatum"
 					datasourceid="9cb56415-0ece-4078-98e1-41519746c3c3"
-					variableid="02026c1b-1ae3-4f68-9b4c-c9a3d15271f5"
-					variablename="Kunde">
+					variableid="30c4cef4-c8bb-44d5-abbd-0a5c70e4d4c5"
+					variablename="Tagesdatum">
 					</var>
 					<var
 					dataname="Beleg1"
@@ -303,6 +329,23 @@
 			name="AR_Buchung_HABEN_Seite">
 			</smartfoldernode>
 			<testmodule
+			id="ea709d3b-71d0-4d3d-aeed-598649af4b0f"
+			name="Tagesdatum_ermitteln"
+			ref="a7be6ab3-c6f1-4c9a-bdf4-7b82171fdabd"
+			type="Recording">
+				<description>
+					<![CDATA[Tagesdatum unmittelbar vor Buchungsende um die Wahrscheinlichkeit eines Tageswechseln während der Buchung zu minimieren]]>
+				</description>
+				<databinding>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="9cb56415-0ece-4078-98e1-41519746c3c3"
+					variableid="cd0f7862-0293-4455-9d11-673363cb928e"
+					variablename="Tagesdatum">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="f92e79a3-39e0-4f48-a6ac-b6a3e25afe2a"
 			name="Validation_Jahr_Periode_Busy"
 			ref="9e945422-9b9f-4cec-af56-abc3b907024d"
@@ -328,15 +371,6 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="fe3cb6da-8ab6-42f3-a5b8-4d0822887438"
-			name="Benutzer_bucht_schon_Ja_fortfahren"
-			ref="363f6b64-6fa2-4e7d-8eb6-743ace5f9175"
-			type="Recording">
-				<description>
-					<![CDATA[Falls B_BUCH zuvor abgestürzt wird die Meldung mit j (JA) bestätigt. Tritt die Meldung nicht auf, wird das j aus dem Feld Monat im nächsten Schritt gelöscht]]>
-				</description>
-			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -356,10 +390,6 @@
 							name="StartAUT">
 							</testmodule>
 						</setup>
-						<testmodule
-						id="fe3cb6da-8ab6-42f3-a5b8-4d0822887438"
-						name="Benutzer_bucht_schon_Ja_fortfahren">
-						</testmodule>
 						<testmodule
 						id="c6b72a34-d6ee-46cb-984d-d60d696de14d"
 						name="Eingabe_Jahr_Periode">
@@ -396,6 +426,10 @@
 							name="Konto_Betrag">
 							</testmodule>
 							<testmodule
+							id="ea709d3b-71d0-4d3d-aeed-598649af4b0f"
+							name="Tagesdatum_ermitteln">
+							</testmodule>
+							<testmodule
 							id="40a1ac81-3683-446e-af54-a526fb6ae8ea"
 							name="USt_Bereich_Buchungsende">
 							</testmodule>
@@ -420,6 +454,10 @@
 							name="StartAUT_02">
 							</testmodule>
 						</setup>
+						<testmodule
+						id="05e4a834-6ead-4f25-997c-c6df510b6bed"
+						name="Beleg_laden">
+						</testmodule>
 						<testmodule
 						id="9da4a47c-5e23-41a4-aeb8-937a0371704a"
 						name="Validations_AR_Buchung_in_B_BUAB">

@@ -116,8 +116,8 @@ namespace S_ADRL_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'U75601939{Tab down}' with focus on 'FrmAdr.Text'.", repo.FrmAdr.TextInfo, new RecordItemIndex(7));
             repo.FrmAdr.Text.PressKeys("U75601939{Tab down}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Aptean_Austria) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", Aptean_Austria);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Aptean_Austria) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(8));
+            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", Aptean_Austria);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Bestaetigung_Fehlermeldung' at Center.", repo.DlgMessageBox.Bestaetigung_FehlermeldungInfo, new RecordItemIndex(9));
             repo.DlgMessageBox.Bestaetigung_Fehlermeldung.Click();

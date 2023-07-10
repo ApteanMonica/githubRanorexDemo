@@ -24,21 +24,6 @@ mode="Global">
 	</codegen>
 	<variables>
 		<var
-		id="328afdd1-72b3-4c4f-8d01-ea591dc9ddcc"
-		name="Fehlerprotokoll_Pruefung">
-			c:\temp\Fehlerprotokoll_b_exopv_005_pruef.txt
-		</var>
-		<var
-		id="a622567e-9159-412f-919f-0dfb75ab95b7"
-		name="Beleg_ER01_FB01_LF01_OP">
-			ER01_B_EXOPV_005
-		</var>
-		<var
-		id="2da239f5-9723-48f3-90bc-2eac862e70b7"
-		name="Beleg_ER03_FB03_LF02_OP">
-			ER03_B_EXOPV_005
-		</var>
-		<var
 		id="e277e4e7-f0dc-435e-8a22-a387a482d1df"
 		name="LF_01">
 			303201
@@ -119,6 +104,31 @@ mode="Global">
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a3b7b3bd-00ff-4c72-a656-1b42641da996">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="fac291bd-e069-493f-8305-100e4d09e12d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgBelegnrFehler']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -2716,17 +2726,13 @@ mode="Global">
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeEqual"
+		action="AttributeContains"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="2a3acf8b-50c0-4bff-9523-024167b88621">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Beleg_ER01_FB01_LF01_OP">
-				</binding>
 			</bindings>
 			<info
 			id="bedb27fc-5ed5-4eb2-99df-1515d3a2f2d8"
@@ -5283,21 +5289,17 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				yourValue
+				ER01
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeEqual"
+		action="AttributeContains"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="2a3acf8b-50c0-4bff-9523-024167b88621">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Beleg_ER01_FB01_LF01_OP">
-				</binding>
 			</bindings>
 			<info
 			id="4e5afc41-61a6-4412-bec0-64d0246cba70"
@@ -5336,7 +5338,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				yourValue
+				ER01
 			</matchvalue>
 		</validationitem>
 		<mouseitem
@@ -5374,13 +5376,11 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</separatoritem>
-		<WaitForRecordItem
-		duration="100ms"
+		<validationitem
+		action="Exists"
 		enabled="True"
 		optional="False"
-		searchpropertyid="97bb7977-9c4f-40f8-94cc-07b1f94c0fab"
-		waitaction="Exists"
-		waittimeout="60000ms">
+		searchpropertyid="a3b7b3bd-00ff-4c72-a656-1b42641da996">
 			<comment>
 			</comment>
 			<bindings>
@@ -5388,52 +5388,19 @@ mode="Global">
 			<info
 			id="5dc8be39-24fe-4e41-ac71-9e66134ea438"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="17"
-				prefcap="titlebar"
-				rect="-1249,116,594,28"
-				role="titlebar"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="text"
-					type="System.String">
-						[100]  Fremdbeleg-Nr - Fehler
-					</attribute>
-					<attribute
-					name="accessibledescription"
-					type="System.String">
-						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						TitleBar
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						[100]  Fremdbeleg-Nr - Fehler
-					</attribute>
-				</element>
 				<path>
 					/form[@controlname='dlgFremdbelegnrFehler']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</WaitForRecordItem>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -9806,9 +9773,9 @@ mode="Global">
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeEqual"
+		action="AttributeContains"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="2a3acf8b-50c0-4bff-9523-024167b88621">
 			<comment>
 			</comment>
@@ -12369,13 +12336,13 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				FB01_B_EXOPV_005
+				FB01
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeEqual"
+		action="AttributeContains"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="2a3acf8b-50c0-4bff-9523-024167b88621">
 			<comment>
 			</comment>
@@ -12418,7 +12385,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				FB01_B_EXOPV_005
+				FB01
 			</matchvalue>
 		</validationitem>
 		<mouseitem
@@ -12456,13 +12423,11 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</separatoritem>
-		<WaitForRecordItem
-		duration="100ms"
+		<validationitem
+		action="Exists"
 		enabled="True"
 		optional="False"
-		searchpropertyid="97bb7977-9c4f-40f8-94cc-07b1f94c0fab"
-		waitaction="Exists"
-		waittimeout="60000ms">
+		searchpropertyid="a3b7b3bd-00ff-4c72-a656-1b42641da996">
 			<comment>
 			</comment>
 			<bindings>
@@ -12470,52 +12435,19 @@ mode="Global">
 			<info
 			id="5dc8be39-24fe-4e41-ac71-9e66134ea438"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="17"
-				prefcap="titlebar"
-				rect="-1249,116,594,28"
-				role="titlebar"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="text"
-					type="System.String">
-						[100]  Fremdbeleg-Nr - Fehler
-					</attribute>
-					<attribute
-					name="accessibledescription"
-					type="System.String">
-						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						TitleBar
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						[100]  Fremdbeleg-Nr - Fehler
-					</attribute>
-				</element>
 				<path>
 					/form[@controlname='dlgFremdbelegnrFehler']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</WaitForRecordItem>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -16888,9 +16820,9 @@ mode="Global">
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeEqual"
+		action="AttributeContains"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="2a3acf8b-50c0-4bff-9523-024167b88621">
 			<comment>
 			</comment>
@@ -19451,13 +19383,13 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				FB02_B_EXOPV_005
+				FB02
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeEqual"
+		action="AttributeContains"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="2a3acf8b-50c0-4bff-9523-024167b88621">
 			<comment>
 			</comment>
@@ -19500,7 +19432,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				FB02_B_EXOPV_005
+				FB02
 			</matchvalue>
 		</validationitem>
 		<mouseitem
@@ -19538,13 +19470,11 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</separatoritem>
-		<WaitForRecordItem
-		duration="100ms"
+		<validationitem
+		action="Exists"
 		enabled="True"
 		optional="False"
-		searchpropertyid="97bb7977-9c4f-40f8-94cc-07b1f94c0fab"
-		waitaction="Exists"
-		waittimeout="60000ms">
+		searchpropertyid="a3b7b3bd-00ff-4c72-a656-1b42641da996">
 			<comment>
 			</comment>
 			<bindings>
@@ -19552,52 +19482,19 @@ mode="Global">
 			<info
 			id="fac291bd-e069-493f-8305-100e4d09e12d"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="17"
-				prefcap="titlebar"
-				rect="-1249,112,594,28"
-				role="titlebar"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="text"
-					type="System.String">
-						[100]  Beleg-Nr - Fehler
-					</attribute>
-					<attribute
-					name="accessibledescription"
-					type="System.String">
-						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						TitleBar
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						[100]  Beleg-Nr - Fehler
-					</attribute>
-				</element>
 				<path>
 					/form[@controlname='dlgBelegnrFehler']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</WaitForRecordItem>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -22170,17 +22067,38 @@ mode="Global">
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeEqual"
+		action="AttributeContains"
 		enabled="True"
-		optional="True"
+		optional="False"
+		searchpropertyid="39498d79-2302-49e3-8e87-db09cbd2f7d2">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a38f3027-11bb-4934-b585-e23f1e01657c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgBelegnrFehler']/container[@controlname='frame2']/text[@controlname='label3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Beleg im selben Jahr schon als OP vorhanden !
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
 		searchpropertyid="2a3acf8b-50c0-4bff-9523-024167b88621">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Beleg_ER03_FB03_LF02_OP">
-				</binding>
 			</bindings>
 			<info
 			id="bedb27fc-5ed5-4eb2-99df-1515d3a2f2d8"
@@ -24737,21 +24655,17 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				yourValue
+				ER03
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeEqual"
+		action="AttributeContains"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="2a3acf8b-50c0-4bff-9523-024167b88621">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Beleg_ER03_FB03_LF02_OP">
-				</binding>
 			</bindings>
 			<info
 			id="4e5afc41-61a6-4412-bec0-64d0246cba70"
@@ -24790,7 +24704,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				yourValue
+				ER03
 			</matchvalue>
 		</validationitem>
 		<mouseitem
@@ -24835,7 +24749,7 @@ mode="Global">
 			</bindings>
 		</keyitem>
 		<keysequenceitem
-		KeySequence="ER03_B_EXOPV_005_NEU"
+		KeySequence="ER03_EXOPV_005N"
 		duration="20ms"
 		enabled="True"
 		optional="False"
@@ -24892,7 +24806,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				ER03_B_EXOPV_005_NEU
+				ER03_EXOPV_005N
 			</matchvalue>
 		</validationitem>
 		<mouseitem
@@ -24930,13 +24844,11 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</separatoritem>
-		<WaitForRecordItem
-		duration="100ms"
+		<validationitem
+		action="Exists"
 		enabled="True"
 		optional="False"
-		searchpropertyid="97bb7977-9c4f-40f8-94cc-07b1f94c0fab"
-		waitaction="Exists"
-		waittimeout="60000ms">
+		searchpropertyid="a3b7b3bd-00ff-4c72-a656-1b42641da996">
 			<comment>
 			</comment>
 			<bindings>
@@ -24944,52 +24856,19 @@ mode="Global">
 			<info
 			id="5dc8be39-24fe-4e41-ac71-9e66134ea438"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="17"
-				prefcap="titlebar"
-				rect="-1249,116,594,28"
-				role="titlebar"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="text"
-					type="System.String">
-						[100]  Fremdbeleg-Nr - Fehler
-					</attribute>
-					<attribute
-					name="accessibledescription"
-					type="System.String">
-						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						TitleBar
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						[100]  Fremdbeleg-Nr - Fehler
-					</attribute>
-				</element>
 				<path>
 					/form[@controlname='dlgFremdbelegnrFehler']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</WaitForRecordItem>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -29362,9 +29241,9 @@ mode="Global">
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeEqual"
+		action="AttributeContains"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="2a3acf8b-50c0-4bff-9523-024167b88621">
 			<comment>
 			</comment>
@@ -31925,13 +31804,13 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				FB03_B_EXOPV_005
+				FB03
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeEqual"
+		action="AttributeContains"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="2a3acf8b-50c0-4bff-9523-024167b88621">
 			<comment>
 			</comment>
@@ -31974,7 +31853,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				FB03_B_EXOPV_005
+				FB03
 			</matchvalue>
 		</validationitem>
 		<mouseitem
@@ -32019,7 +31898,7 @@ mode="Global">
 			</bindings>
 		</keyitem>
 		<keysequenceitem
-		KeySequence="FB03_B_EXOPV_005_NEU"
+		KeySequence="FB03_EXOPV_005N"
 		duration="20ms"
 		enabled="True"
 		optional="False"
@@ -32076,7 +31955,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				FB03_B_EXOPV_005_NEU
+				FB03_EXOPV_005N
 			</matchvalue>
 		</validationitem>
 		<mouseitem

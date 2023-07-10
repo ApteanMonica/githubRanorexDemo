@@ -129,7 +129,7 @@ namespace B_BUCH_002
         [RepositoryFolder("fef7690c-98dc-4d95-844b-9c53ab3eb629")]
         public partial class DlgFirmaPeriodeAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _titlebar100dialogbuchung_mit_namenInfo;
+            RepoItemInfo _titlebar100dialogbuchung_periodenauswahlInfo;
             RepoItemInfo _dfjahrbezjInfo;
             RepoItemInfo _pbokInfo;
             RepoItemInfo _dfperiodej1Info;
@@ -140,7 +140,7 @@ namespace B_BUCH_002
             public DlgFirmaPeriodeAppFolder(RepoGenBaseFolder parentFolder) :
                     base("DlgFirmaPeriode", "/form[@controlname='dlgFirmaPeriode']", parentFolder, 30000, null, true, "fef7690c-98dc-4d95-844b-9c53ab3eb629", "")
             {
-                _titlebar100dialogbuchung_mit_namenInfo = new RepoItemInfo(this, "TitleBar100Dialogbuchung_mit_Namen", "titlebar[@accessiblerole='TitleBar' and @text~'Dialogbuchung']", "", 30000, null, "4477e472-1ab9-4d1c-9d35-2f3c3ce99c17");
+                _titlebar100dialogbuchung_periodenauswahlInfo = new RepoItemInfo(this, "TitleBar100Dialogbuchung_Periodenauswahl", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "d5d898c9-55cb-4c84-9ec5-2164fc29a7b8");
                 _dfjahrbezjInfo = new RepoItemInfo(this, "DfJahrbezJ", "text[@controlname='dfJahrbezJ']/text[@accessiblename='Jahr:']", "", 30000, null, "d2b22b35-6af1-4762-8ed0-60a0ca3f70be");
                 _pbokInfo = new RepoItemInfo(this, "PbOK", "button[@controlname='pbOK']", "", 30000, null, "226a7d25-7575-4407-936b-2dc3b910e7af");
                 _dfperiodej1Info = new RepoItemInfo(this, "DfPeriodeJ1", "text[@controlname='dfPeriodeJ']/text[@accessiblename='Monat:']", "", 30000, null, "114a5e4e-7493-4388-afab-0f38d38fdb80");
@@ -171,26 +171,26 @@ namespace B_BUCH_002
             }
 
             /// <summary>
-            /// The TitleBar100Dialogbuchung_mit_Namen item.
+            /// The TitleBar100Dialogbuchung_Periodenauswahl item.
             /// </summary>
-            [RepositoryItem("4477e472-1ab9-4d1c-9d35-2f3c3ce99c17")]
-            public virtual Ranorex.TitleBar TitleBar100Dialogbuchung_mit_Namen
+            [RepositoryItem("d5d898c9-55cb-4c84-9ec5-2164fc29a7b8")]
+            public virtual Ranorex.TitleBar TitleBar100Dialogbuchung_Periodenauswahl
             {
                 get
                 {
-                    return _titlebar100dialogbuchung_mit_namenInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                    return _titlebar100dialogbuchung_periodenauswahlInfo.CreateAdapter<Ranorex.TitleBar>(true);
                 }
             }
 
             /// <summary>
-            /// The TitleBar100Dialogbuchung_mit_Namen item info.
+            /// The TitleBar100Dialogbuchung_Periodenauswahl item info.
             /// </summary>
-            [RepositoryItemInfo("4477e472-1ab9-4d1c-9d35-2f3c3ce99c17")]
-            public virtual RepoItemInfo TitleBar100Dialogbuchung_mit_NamenInfo
+            [RepositoryItemInfo("d5d898c9-55cb-4c84-9ec5-2164fc29a7b8")]
+            public virtual RepoItemInfo TitleBar100Dialogbuchung_PeriodenauswahlInfo
             {
                 get
                 {
-                    return _titlebar100dialogbuchung_mit_namenInfo;
+                    return _titlebar100dialogbuchung_periodenauswahlInfo;
                 }
             }
 
@@ -1999,6 +1999,7 @@ namespace B_BUCH_002
         {
             B_BUCH_002RepositoryFolders.Tabelle_FlexGridFolder _tabelle_flexgrid;
             RepoItemInfo _titlebar100buchungenanzeigenInfo;
+            RepoItemInfo _belegInfo;
             RepoItemInfo _pbdataaccessloadInfo;
 
             /// <summary>
@@ -2009,6 +2010,7 @@ namespace B_BUCH_002
             {
                 _tabelle_flexgrid = new B_BUCH_002RepositoryFolders.Tabelle_FlexGridFolder(this);
                 _titlebar100buchungenanzeigenInfo = new RepoItemInfo(this, "TitleBar100BuchungenAnzeigen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "d43caf8f-8c98-495f-b40a-b81d4be267d2");
+                _belegInfo = new RepoItemInfo(this, "Beleg", "container[@controlname='ToolBar']/container[@controlname='cDCC_Tools']/text[@controlname='dfBelegnr']/text[@accessiblename='Beleg']", "", 30000, null, "64a3e0db-b7ba-414d-bf81-3867fb8aa3e3");
                 _pbdataaccessloadInfo = new RepoItemInfo(this, "PbDataAccessLoad", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Load']", "", 30000, null, "6be5b8b7-f8ae-448b-9517-aeeaa65c3a7a");
             }
 
@@ -2061,6 +2063,30 @@ namespace B_BUCH_002
             }
 
             /// <summary>
+            /// The Beleg item.
+            /// </summary>
+            [RepositoryItem("64a3e0db-b7ba-414d-bf81-3867fb8aa3e3")]
+            public virtual Ranorex.Text Beleg
+            {
+                get
+                {
+                    return _belegInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Beleg item info.
+            /// </summary>
+            [RepositoryItemInfo("64a3e0db-b7ba-414d-bf81-3867fb8aa3e3")]
+            public virtual RepoItemInfo BelegInfo
+            {
+                get
+                {
+                    return _belegInfo;
+                }
+            }
+
+            /// <summary>
             /// The PbDataAccessLoad item.
             /// </summary>
             [RepositoryItem("6be5b8b7-f8ae-448b-9517-aeeaa65c3a7a")]
@@ -2100,6 +2126,8 @@ namespace B_BUCH_002
         [RepositoryFolder("428a5ab4-1b2a-4d8e-b42d-7b7372e8ba55")]
         public partial class Tabelle_FlexGridFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _row1Info;
+            RepoItemInfo _coldtaendgrow1Info;
             RepoItemInfo _colbelegnrrow1Info;
             RepoItemInfo _coltext1row1Info;
             RepoItemInfo _coljahrperirow1Info;
@@ -2113,6 +2141,7 @@ namespace B_BUCH_002
             RepoItemInfo _coluvarow1Info;
             RepoItemInfo _colstatusrow1Info;
             RepoItemInfo _coluserrow1Info;
+            RepoItemInfo _coldtaendgrow2Info;
             RepoItemInfo _colbetragrow2Info;
             RepoItemInfo _colgktonrrow2Info;
             RepoItemInfo _colshrow2Info;
@@ -2131,6 +2160,8 @@ namespace B_BUCH_002
             public Tabelle_FlexGridFolder(RepoGenBaseFolder parentFolder) :
                     base("Tabelle_FlexGrid", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "428a5ab4-1b2a-4d8e-b42d-7b7372e8ba55", "")
             {
+                _row1Info = new RepoItemInfo(this, "Row1", "row[@accessiblename='Row 1']", "", 30000, null, "b3ab7076-8e68-438a-a0b7-0d2a5929c8f5");
+                _coldtaendgrow1Info = new RepoItemInfo(this, "ColDtAendgRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colDtAendg Row 1']", "", 30000, null, "4a660dd1-2789-43bf-929a-d56e087800c0");
                 _colbelegnrrow1Info = new RepoItemInfo(this, "ColBelegnrRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colBelegnr Row 1']", "", 30000, null, "096fd5cf-8c85-42b4-8de3-14f4be842f58");
                 _coltext1row1Info = new RepoItemInfo(this, "ColText1Row1", "row[@accessiblename='Row 1']/cell[@accessiblename='colText1 Row 1']", "", 30000, null, "d975a7b0-836b-4134-8ecc-f585ba2ecd3f");
                 _coljahrperirow1Info = new RepoItemInfo(this, "ColJahrPeriRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colJahrPeri Row 1']", "", 30000, null, "163ea46d-6d0c-4f52-9fb9-6783c838d5ce");
@@ -2144,6 +2175,7 @@ namespace B_BUCH_002
                 _coluvarow1Info = new RepoItemInfo(this, "ColUvaRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colUva Row 1']", "", 30000, null, "54d488b2-706b-4d60-a518-132a72ae8e7d");
                 _colstatusrow1Info = new RepoItemInfo(this, "ColStatusRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colStatus Row 1']", "", 30000, null, "cbf4ace9-4e62-45b7-a138-a3f5b4e6f70b");
                 _coluserrow1Info = new RepoItemInfo(this, "ColUserRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colUser Row 1']", "", 30000, null, "9759585d-3af6-4684-a14e-11b113a0f688");
+                _coldtaendgrow2Info = new RepoItemInfo(this, "ColDtAendgRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colDtAendg Row 2']", "", 30000, null, "d16db403-ef10-41f3-a77a-b5924288ffec");
                 _colbetragrow2Info = new RepoItemInfo(this, "ColBetragRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colBetrag Row 2']", "", 30000, null, "7836e4ef-5634-4d20-902d-e306e261f467");
                 _colgktonrrow2Info = new RepoItemInfo(this, "ColGKtoNrRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colGKto_nr Row 2']", "", 30000, null, "f97caffa-039f-4313-979b-dae5be62f163");
                 _colshrow2Info = new RepoItemInfo(this, "ColSHRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colSH Row 2']", "", 30000, null, "041bae91-eed1-4fd0-aec6-21262a4e2c1d");
@@ -2178,6 +2210,54 @@ namespace B_BUCH_002
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Row1 item.
+            /// </summary>
+            [RepositoryItem("b3ab7076-8e68-438a-a0b7-0d2a5929c8f5")]
+            public virtual Ranorex.Row Row1
+            {
+                get
+                {
+                    return _row1Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1 item info.
+            /// </summary>
+            [RepositoryItemInfo("b3ab7076-8e68-438a-a0b7-0d2a5929c8f5")]
+            public virtual RepoItemInfo Row1Info
+            {
+                get
+                {
+                    return _row1Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColDtAendgRow1 item.
+            /// </summary>
+            [RepositoryItem("4a660dd1-2789-43bf-929a-d56e087800c0")]
+            public virtual Ranorex.Cell ColDtAendgRow1
+            {
+                get
+                {
+                    return _coldtaendgrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColDtAendgRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("4a660dd1-2789-43bf-929a-d56e087800c0")]
+            public virtual RepoItemInfo ColDtAendgRow1Info
+            {
+                get
+                {
+                    return _coldtaendgrow1Info;
                 }
             }
 
@@ -2490,6 +2570,30 @@ namespace B_BUCH_002
                 get
                 {
                     return _coluserrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColDtAendgRow2 item.
+            /// </summary>
+            [RepositoryItem("d16db403-ef10-41f3-a77a-b5924288ffec")]
+            public virtual Ranorex.Cell ColDtAendgRow2
+            {
+                get
+                {
+                    return _coldtaendgrow2Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColDtAendgRow2 item info.
+            /// </summary>
+            [RepositoryItemInfo("d16db403-ef10-41f3-a77a-b5924288ffec")]
+            public virtual RepoItemInfo ColDtAendgRow2Info
+            {
+                get
+                {
+                    return _coldtaendgrow2Info;
                 }
             }
 

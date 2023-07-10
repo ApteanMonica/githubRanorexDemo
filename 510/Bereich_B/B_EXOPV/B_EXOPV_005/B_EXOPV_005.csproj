@@ -95,29 +95,53 @@
     <Compile Include="Program.cs">
       <id>9765e2fb-e8c4-4716-b258-1d7b9f97d7d1</id>
     </Compile>
-    <Compile Include="Recordings_B_BUAB\B_BUAB_Belege_verbucht_validieren.cs">
+    <Compile Include="Recordings_B_BUAB\B_BUAB_alte_Belege_pruefen.cs">
       <BoundTo>1f2a6461-8760-4227-8f1c-40dbcf0e0a0d</BoundTo>
-      <DependentUpon>B_BUAB_Belege_verbucht_validieren.rxrec</DependentUpon>
+      <DependentUpon>B_BUAB_alte_Belege_pruefen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>153f4246-9377-42d8-89bf-468e71c8ee32</id>
     </Compile>
-    <Compile Include="Recordings_B_BUAB\B_BUAB_Belege_verbucht_validieren.UserCode.cs">
+    <Compile Include="Recordings_B_BUAB\B_BUAB_alte_Belege_pruefen.UserCode.cs">
       <BoundTo>1f2a6461-8760-4227-8f1c-40dbcf0e0a0d</BoundTo>
-      <DependentUpon>B_BUAB_Belege_verbucht_validieren.rxrec</DependentUpon>
+      <DependentUpon>B_BUAB_alte_Belege_pruefen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>31767478-1916-45e7-bdfa-4c8b388e9a6b</id>
     </Compile>
-    <Compile Include="Recordings_B_BUAB\B_BUAB_Einschraenkungen_laden.cs">
+    <Compile Include="Recordings_B_BUAB\B_BUAB_Einschraenkungen_laden_4_Buchungen.cs">
       <BoundTo>b0314b09-c3b6-4cf8-8e07-eb04a67a4944</BoundTo>
-      <DependentUpon>B_BUAB_Einschraenkungen_laden.rxrec</DependentUpon>
+      <DependentUpon>B_BUAB_Einschraenkungen_laden_4_Buchungen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>ea0c1795-e1c0-4956-a172-f5790e42b920</id>
     </Compile>
-    <Compile Include="Recordings_B_BUAB\B_BUAB_Einschraenkungen_laden.UserCode.cs">
+    <Compile Include="Recordings_B_BUAB\B_BUAB_Einschraenkungen_laden_4_Buchungen.UserCode.cs">
       <BoundTo>b0314b09-c3b6-4cf8-8e07-eb04a67a4944</BoundTo>
-      <DependentUpon>B_BUAB_Einschraenkungen_laden.rxrec</DependentUpon>
+      <DependentUpon>B_BUAB_Einschraenkungen_laden_4_Buchungen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>c80e01d3-30c4-4d20-98ac-a6e1ef14e156</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\B_BUAB_Einschraenkungen_NEU_laden_11_Buchungen.cs">
+      <DependentUpon>B_BUAB_Einschraenkungen_NEU_laden_11_Buchungen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>07adc3b7-3e86-4d89-b874-dc3ae70aaeb4</id>
+      <BoundTo>67ebbb17-8339-462d-b154-9f7a0f810d58</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\B_BUAB_Einschraenkungen_NEU_laden_11_Buchungen.UserCode.cs">
+      <DependentUpon>B_BUAB_Einschraenkungen_NEU_laden_11_Buchungen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>06f9c19a-31d4-411d-b4d5-803dcf5e13a5</id>
+      <BoundTo>67ebbb17-8339-462d-b154-9f7a0f810d58</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\B_BUAB_neue_Belege_pruefen.cs">
+      <BoundTo>9610e3b3-287a-48c8-9347-2dd3e2bddebd</BoundTo>
+      <DependentUpon>B_BUAB_neue_Belege_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d6d8bde3-1adb-4100-be42-289d60677839</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\B_BUAB_neue_Belege_pruefen.UserCode.cs">
+      <BoundTo>9610e3b3-287a-48c8-9347-2dd3e2bddebd</BoundTo>
+      <DependentUpon>B_BUAB_neue_Belege_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3d256575-4f29-423d-bc5f-6eb5e4b1a43b</id>
     </Compile>
     <Compile Include="Recordings_B_BUAB\Close_B_BUAB.cs">
       <DependentUpon>Close_B_BUAB.rxrec</DependentUpon>
@@ -420,15 +444,25 @@
       <repoid>5a4c68c8-710c-4738-ad0b-11d204b6b604</repoid>
       <reporootid>0948a16f-ab80-40bc-b4e2-a08dafe19c03</reporootid>
     </None>
-    <None Include="Recordings_B_BUAB\B_BUAB_Belege_verbucht_validieren.rxrec">
+    <None Include="Recordings_B_BUAB\B_BUAB_alte_Belege_pruefen.rxrec">
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
       <id>1f2a6461-8760-4227-8f1c-40dbcf0e0a0d</id>
       <recordtableid>3d284781-66ee-414e-88ae-db1e0cf486af</recordtableid>
     </None>
-    <None Include="Recordings_B_BUAB\B_BUAB_Einschraenkungen_laden.rxrec">
+    <None Include="Recordings_B_BUAB\B_BUAB_Einschraenkungen_laden_4_Buchungen.rxrec">
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
       <id>b0314b09-c3b6-4cf8-8e07-eb04a67a4944</id>
       <recordtableid>973ed37e-c79a-4680-a38b-260909411bf7</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUAB\B_BUAB_Einschraenkungen_NEU_laden_11_Buchungen.rxrec">
+      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+      <id>67ebbb17-8339-462d-b154-9f7a0f810d58</id>
+      <recordtableid>60aa254c-ec39-4c8b-83a9-c677af5c3b5d</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUAB\B_BUAB_neue_Belege_pruefen.rxrec">
+      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+      <id>9610e3b3-287a-48c8-9347-2dd3e2bddebd</id>
+      <recordtableid>51242edc-61ca-4106-bbea-09105ac1eff4</recordtableid>
     </None>
     <None Include="Recordings_B_BUAB\Close_B_BUAB.rxrec">
       <id>9f137dcc-3972-4aa5-a545-e479dd50d951</id>

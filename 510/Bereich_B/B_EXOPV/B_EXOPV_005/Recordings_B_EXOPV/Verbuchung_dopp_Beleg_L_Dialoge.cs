@@ -41,9 +41,6 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
         /// </summary>
         public Verbuchung_dopp_Beleg_L_Dialoge()
         {
-            Fehlerprotokoll_Pruefung = "c:\\temp\\Fehlerprotokoll_b_exopv_005_pruef.txt";
-            Beleg_ER01_FB01_LF01_OP = "ER01_B_EXOPV_005";
-            Beleg_ER03_FB03_LF02_OP = "ER03_B_EXOPV_005";
             LF_01 = "303201";
             LF_02 = "303202";
         }
@@ -57,42 +54,6 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
         }
 
 #region Variables
-
-        string _Fehlerprotokoll_Pruefung;
-
-        /// <summary>
-        /// Gets or sets the value of variable Fehlerprotokoll_Pruefung.
-        /// </summary>
-        [TestVariable("328afdd1-72b3-4c4f-8d01-ea591dc9ddcc")]
-        public string Fehlerprotokoll_Pruefung
-        {
-            get { return _Fehlerprotokoll_Pruefung; }
-            set { _Fehlerprotokoll_Pruefung = value; }
-        }
-
-        string _Beleg_ER01_FB01_LF01_OP;
-
-        /// <summary>
-        /// Gets or sets the value of variable Beleg_ER01_FB01_LF01_OP.
-        /// </summary>
-        [TestVariable("a622567e-9159-412f-919f-0dfb75ab95b7")]
-        public string Beleg_ER01_FB01_LF01_OP
-        {
-            get { return _Beleg_ER01_FB01_LF01_OP; }
-            set { _Beleg_ER01_FB01_LF01_OP = value; }
-        }
-
-        string _Beleg_ER03_FB03_LF02_OP;
-
-        /// <summary>
-        /// Gets or sets the value of variable Beleg_ER03_FB03_LF02_OP.
-        /// </summary>
-        [TestVariable("2da239f5-9723-48f3-90bc-2eac862e70b7")]
-        public string Beleg_ER03_FB03_LF02_OP
-        {
-            get { return _Beleg_ER03_FB03_LF02_OP; }
-            set { _Beleg_ER03_FB03_LF02_OP = value; }
-        }
 
         string _LF_01;
 
@@ -150,150 +111,136 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgBelegnrFehler.TitleBar100BelegNrFehler'", repo.DlgBelegnrFehler.TitleBar100BelegNrFehlerInfo, new ActionTimeout(120000), new RecordItemIndex(1));
             repo.DlgBelegnrFehler.TitleBar100BelegNrFehlerInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_01) on item 'DlgBelegnrFehler.Frame2.DfAdrNr'.", repo.DlgBelegnrFehler.Frame2.DfAdrNrInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgBelegnrFehler.TitleBar100BelegNrFehler'.", repo.DlgBelegnrFehler.TitleBar100BelegNrFehlerInfo, new RecordItemIndex(2));
+            Validate.Exists(repo.DlgBelegnrFehler.TitleBar100BelegNrFehlerInfo);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_01) on item 'DlgBelegnrFehler.Frame2.DfAdrNr'.", repo.DlgBelegnrFehler.Frame2.DfAdrNrInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.DlgBelegnrFehler.Frame2.DfAdrNrInfo, "Text", LF_01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Beleg im selben Jahr schon als OP vorhanden !') on item 'DlgBelegnrFehler.Frame2.Label3'.", repo.DlgBelegnrFehler.Frame2.Label3Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Beleg im selben Jahr schon als OP vorhanden !') on item 'DlgBelegnrFehler.Frame2.Label3'.", repo.DlgBelegnrFehler.Frame2.Label3Info, new RecordItemIndex(4));
             Validate.AttributeContains(repo.DlgBelegnrFehler.Frame2.Label3Info, "Text", "Beleg im selben Jahr schon als OP vorhanden !");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text=$Beleg_ER01_FB01_LF01_OP) on item 'DlgBelegnrFehler.Frame2.DfBelegNr'.", repo.DlgBelegnrFehler.Frame2.DfBelegNrInfo, new RecordItemIndex(4));
-                Validate.AttributeEqual(repo.DlgBelegnrFehler.Frame2.DfBelegNrInfo, "Text", Beleg_ER01_FB01_LF01_OP, null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ER01') on item 'DlgBelegnrFehler.Frame2.DfBelegNr'.", repo.DlgBelegnrFehler.Frame2.DfBelegNrInfo, new RecordItemIndex(5));
+            Validate.AttributeContains(repo.DlgBelegnrFehler.Frame2.DfBelegNrInfo, "Text", "ER01");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text=$Beleg_ER01_FB01_LF01_OP) on item 'DlgBelegnrFehler.Frame2.NeueBelegNr'.", repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, new RecordItemIndex(5));
-                Validate.AttributeEqual(repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, "Text", Beleg_ER01_FB01_LF01_OP, null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ER01') on item 'DlgBelegnrFehler.Frame2.NeueBelegNr'.", repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, "Text", "ER01");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgBelegnrFehler.PbAkzeptieren' at Center.", repo.DlgBelegnrFehler.PbAkzeptierenInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgBelegnrFehler.PbAkzeptieren' at Center.", repo.DlgBelegnrFehler.PbAkzeptierenInfo, new RecordItemIndex(7));
             repo.DlgBelegnrFehler.PbAkzeptieren.Click();
             
             // Meldung2_Fremdbeleg Lieferant 01
-            Report.Log(ReportLevel.Info, "Section", "Meldung2_Fremdbeleg Lieferant 01", new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Section", "Meldung2_Fremdbeleg Lieferant 01", new RecordItemIndex(8));
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgFremdbelegnrFehler.TitleBar100FremdbelegNrFehler'", repo.DlgFremdbelegnrFehler.TitleBar100FremdbelegNrFehlerInfo, new ActionTimeout(60000), new RecordItemIndex(8));
-            repo.DlgFremdbelegnrFehler.TitleBar100FremdbelegNrFehlerInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgFremdbelegnrFehler.TitleBar100FremdbelegNrFehler'.", repo.DlgFremdbelegnrFehler.TitleBar100FremdbelegNrFehlerInfo, new RecordItemIndex(9));
+            Validate.Exists(repo.DlgFremdbelegnrFehler.TitleBar100FremdbelegNrFehlerInfo);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_01) on item 'DlgFremdbelegnrFehler.Frame2.DfAdrNr'.", repo.DlgFremdbelegnrFehler.Frame2.DfAdrNrInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_01) on item 'DlgFremdbelegnrFehler.Frame2.DfAdrNr'.", repo.DlgFremdbelegnrFehler.Frame2.DfAdrNrInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.DlgFremdbelegnrFehler.Frame2.DfAdrNrInfo, "Text", LF_01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Fremdbeleg im selben Jahr schon als OP vorhanden !') on item 'DlgFremdbelegnrFehler.Frame2.Label3'.", repo.DlgFremdbelegnrFehler.Frame2.Label3Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Fremdbeleg im selben Jahr schon als OP vorhanden !') on item 'DlgFremdbelegnrFehler.Frame2.Label3'.", repo.DlgFremdbelegnrFehler.Frame2.Label3Info, new RecordItemIndex(11));
             Validate.AttributeContains(repo.DlgFremdbelegnrFehler.Frame2.Label3Info, "Text", "Fremdbeleg im selben Jahr schon als OP vorhanden !");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='FB01_B_EXOPV_005') on item 'DlgFremdbelegnrFehler.Frame2.DfBelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.DfBelegNrInfo, new RecordItemIndex(11));
-                Validate.AttributeEqual(repo.DlgFremdbelegnrFehler.Frame2.DfBelegNrInfo, "Text", "FB01_B_EXOPV_005", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(11)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'FB01') on item 'DlgFremdbelegnrFehler.Frame2.DfBelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.DfBelegNrInfo, new RecordItemIndex(12));
+            Validate.AttributeContains(repo.DlgFremdbelegnrFehler.Frame2.DfBelegNrInfo, "Text", "FB01");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='FB01_B_EXOPV_005') on item 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(12));
-                Validate.AttributeEqual(repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, "Text", "FB01_B_EXOPV_005", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(12)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'FB01') on item 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(13));
+            Validate.AttributeContains(repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, "Text", "FB01");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFremdbelegnrFehler.PbAkzeptieren' at Center.", repo.DlgFremdbelegnrFehler.PbAkzeptierenInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFremdbelegnrFehler.PbAkzeptieren' at Center.", repo.DlgFremdbelegnrFehler.PbAkzeptierenInfo, new RecordItemIndex(14));
             repo.DlgFremdbelegnrFehler.PbAkzeptieren.Click();
             
             // Meldung3_Fremdbeleg LF 01
-            Report.Log(ReportLevel.Info, "Section", "Meldung3_Fremdbeleg LF 01", new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Section", "Meldung3_Fremdbeleg LF 01", new RecordItemIndex(15));
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgFremdbelegnrFehler.TitleBar100FremdbelegNrFehler'", repo.DlgFremdbelegnrFehler.TitleBar100FremdbelegNrFehlerInfo, new ActionTimeout(60000), new RecordItemIndex(15));
-            repo.DlgFremdbelegnrFehler.TitleBar100FremdbelegNrFehlerInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgFremdbelegnrFehler.TitleBar100FremdbelegNrFehler'.", repo.DlgFremdbelegnrFehler.TitleBar100FremdbelegNrFehlerInfo, new RecordItemIndex(16));
+            Validate.Exists(repo.DlgFremdbelegnrFehler.TitleBar100FremdbelegNrFehlerInfo);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_01) on item 'DlgFremdbelegnrFehler.Frame2.DfAdrNr'.", repo.DlgFremdbelegnrFehler.Frame2.DfAdrNrInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_01) on item 'DlgFremdbelegnrFehler.Frame2.DfAdrNr'.", repo.DlgFremdbelegnrFehler.Frame2.DfAdrNrInfo, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.DlgFremdbelegnrFehler.Frame2.DfAdrNrInfo, "Text", LF_01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Fremdbeleg im selben Jahr schon als OP vorhanden !') on item 'DlgFremdbelegnrFehler.Frame2.Label3'.", repo.DlgFremdbelegnrFehler.Frame2.Label3Info, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Fremdbeleg im selben Jahr schon als OP vorhanden !') on item 'DlgFremdbelegnrFehler.Frame2.Label3'.", repo.DlgFremdbelegnrFehler.Frame2.Label3Info, new RecordItemIndex(18));
             Validate.AttributeContains(repo.DlgFremdbelegnrFehler.Frame2.Label3Info, "Text", "Fremdbeleg im selben Jahr schon als OP vorhanden !");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='FB02_B_EXOPV_005') on item 'DlgFremdbelegnrFehler.Frame2.DfBelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.DfBelegNrInfo, new RecordItemIndex(18));
-                Validate.AttributeEqual(repo.DlgFremdbelegnrFehler.Frame2.DfBelegNrInfo, "Text", "FB02_B_EXOPV_005", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(18)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'FB02') on item 'DlgFremdbelegnrFehler.Frame2.DfBelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.DfBelegNrInfo, new RecordItemIndex(19));
+            Validate.AttributeContains(repo.DlgFremdbelegnrFehler.Frame2.DfBelegNrInfo, "Text", "FB02");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='FB02_B_EXOPV_005') on item 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(19));
-                Validate.AttributeEqual(repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, "Text", "FB02_B_EXOPV_005", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(19)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'FB02') on item 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(20));
+            Validate.AttributeContains(repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, "Text", "FB02");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFremdbelegnrFehler.PbUEber' at Center.", repo.DlgFremdbelegnrFehler.PbUEberInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFremdbelegnrFehler.PbUEber' at Center.", repo.DlgFremdbelegnrFehler.PbUEberInfo, new RecordItemIndex(21));
             repo.DlgFremdbelegnrFehler.PbUEber.Click();
             
             // Meldung 5 Lieferant 02
-            Report.Log(ReportLevel.Info, "Section", "Meldung 5 Lieferant 02", new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Section", "Meldung 5 Lieferant 02", new RecordItemIndex(22));
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgBelegnrFehler.TitleBar100BelegNrFehler'", repo.DlgBelegnrFehler.TitleBar100BelegNrFehlerInfo, new ActionTimeout(60000), new RecordItemIndex(22));
-            repo.DlgBelegnrFehler.TitleBar100BelegNrFehlerInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgBelegnrFehler.TitleBar100BelegNrFehler'.", repo.DlgBelegnrFehler.TitleBar100BelegNrFehlerInfo, new RecordItemIndex(23));
+            Validate.Exists(repo.DlgBelegnrFehler.TitleBar100BelegNrFehlerInfo);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_02) on item 'DlgBelegnrFehler.Frame2.DfAdrNr'.", repo.DlgBelegnrFehler.Frame2.DfAdrNrInfo, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_02) on item 'DlgBelegnrFehler.Frame2.DfAdrNr'.", repo.DlgBelegnrFehler.Frame2.DfAdrNrInfo, new RecordItemIndex(24));
             Validate.AttributeEqual(repo.DlgBelegnrFehler.Frame2.DfAdrNrInfo, "Text", LF_02);
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text=$Beleg_ER03_FB03_LF02_OP) on item 'DlgBelegnrFehler.Frame2.DfBelegNr'.", repo.DlgBelegnrFehler.Frame2.DfBelegNrInfo, new RecordItemIndex(24));
-                Validate.AttributeEqual(repo.DlgBelegnrFehler.Frame2.DfBelegNrInfo, "Text", Beleg_ER03_FB03_LF02_OP, null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(24)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Beleg im selben Jahr schon als OP vorhanden !') on item 'DlgBelegnrFehler.Frame2.Label3'.", repo.DlgBelegnrFehler.Frame2.Label3Info, new RecordItemIndex(25));
+            Validate.AttributeContains(repo.DlgBelegnrFehler.Frame2.Label3Info, "Text", "Beleg im selben Jahr schon als OP vorhanden !");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text=$Beleg_ER03_FB03_LF02_OP) on item 'DlgBelegnrFehler.Frame2.NeueBelegNr'.", repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, new RecordItemIndex(25));
-                Validate.AttributeEqual(repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, "Text", Beleg_ER03_FB03_LF02_OP, null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(25)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ER03') on item 'DlgBelegnrFehler.Frame2.DfBelegNr'.", repo.DlgBelegnrFehler.Frame2.DfBelegNrInfo, new RecordItemIndex(26));
+            Validate.AttributeContains(repo.DlgBelegnrFehler.Frame2.DfBelegNrInfo, "Text", "ER03");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgBelegnrFehler.Frame2.NeueBelegNr' at Center.", repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ER03') on item 'DlgBelegnrFehler.Frame2.NeueBelegNr'.", repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, new RecordItemIndex(27));
+            Validate.AttributeContains(repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, "Text", "ER03");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgBelegnrFehler.Frame2.NeueBelegNr' at Center.", repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, new RecordItemIndex(28));
             repo.DlgBelegnrFehler.Frame2.NeueBelegNr.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(27));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(29));
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'ER03_B_EXOPV_005_NEU' with focus on 'DlgBelegnrFehler.Frame2.NeueBelegNr'.", repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, new RecordItemIndex(28));
-            repo.DlgBelegnrFehler.Frame2.NeueBelegNr.PressKeys("ER03_B_EXOPV_005_NEU");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'ER03_EXOPV_005N' with focus on 'DlgBelegnrFehler.Frame2.NeueBelegNr'.", repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, new RecordItemIndex(30));
+            repo.DlgBelegnrFehler.Frame2.NeueBelegNr.PressKeys("ER03_EXOPV_005N");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(29));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(31));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER03_B_EXOPV_005_NEU') on item 'DlgBelegnrFehler.Frame2.NeueBelegNr'.", repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, new RecordItemIndex(30));
-            Validate.AttributeEqual(repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, "Text", "ER03_B_EXOPV_005_NEU");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER03_EXOPV_005N') on item 'DlgBelegnrFehler.Frame2.NeueBelegNr'.", repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, new RecordItemIndex(32));
+            Validate.AttributeEqual(repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, "Text", "ER03_EXOPV_005N");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgBelegnrFehler.PbOk' at Center.", repo.DlgBelegnrFehler.PbOkInfo, new RecordItemIndex(31));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgBelegnrFehler.PbOk' at Center.", repo.DlgBelegnrFehler.PbOkInfo, new RecordItemIndex(33));
             repo.DlgBelegnrFehler.PbOk.Click();
             
             // Meldung5_Fremdbeleg Lieferant 02
-            Report.Log(ReportLevel.Info, "Section", "Meldung5_Fremdbeleg Lieferant 02", new RecordItemIndex(32));
+            Report.Log(ReportLevel.Info, "Section", "Meldung5_Fremdbeleg Lieferant 02", new RecordItemIndex(34));
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgFremdbelegnrFehler.TitleBar100FremdbelegNrFehler'", repo.DlgFremdbelegnrFehler.TitleBar100FremdbelegNrFehlerInfo, new ActionTimeout(60000), new RecordItemIndex(33));
-            repo.DlgFremdbelegnrFehler.TitleBar100FremdbelegNrFehlerInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgFremdbelegnrFehler.TitleBar100FremdbelegNrFehler'.", repo.DlgFremdbelegnrFehler.TitleBar100FremdbelegNrFehlerInfo, new RecordItemIndex(35));
+            Validate.Exists(repo.DlgFremdbelegnrFehler.TitleBar100FremdbelegNrFehlerInfo);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_02) on item 'DlgFremdbelegnrFehler.Frame2.DfAdrNr'.", repo.DlgFremdbelegnrFehler.Frame2.DfAdrNrInfo, new RecordItemIndex(34));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_02) on item 'DlgFremdbelegnrFehler.Frame2.DfAdrNr'.", repo.DlgFremdbelegnrFehler.Frame2.DfAdrNrInfo, new RecordItemIndex(36));
             Validate.AttributeEqual(repo.DlgFremdbelegnrFehler.Frame2.DfAdrNrInfo, "Text", LF_02);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Fremdbeleg im selben Jahr schon als OP vorhanden !') on item 'DlgFremdbelegnrFehler.Frame2.Label3'.", repo.DlgFremdbelegnrFehler.Frame2.Label3Info, new RecordItemIndex(35));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Fremdbeleg im selben Jahr schon als OP vorhanden !') on item 'DlgFremdbelegnrFehler.Frame2.Label3'.", repo.DlgFremdbelegnrFehler.Frame2.Label3Info, new RecordItemIndex(37));
             Validate.AttributeContains(repo.DlgFremdbelegnrFehler.Frame2.Label3Info, "Text", "Fremdbeleg im selben Jahr schon als OP vorhanden !");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='FB03_B_EXOPV_005') on item 'DlgFremdbelegnrFehler.Frame2.DfBelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.DfBelegNrInfo, new RecordItemIndex(36));
-                Validate.AttributeEqual(repo.DlgFremdbelegnrFehler.Frame2.DfBelegNrInfo, "Text", "FB03_B_EXOPV_005", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(36)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'FB03') on item 'DlgFremdbelegnrFehler.Frame2.DfBelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.DfBelegNrInfo, new RecordItemIndex(38));
+            Validate.AttributeContains(repo.DlgFremdbelegnrFehler.Frame2.DfBelegNrInfo, "Text", "FB03");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='FB03_B_EXOPV_005') on item 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(37));
-                Validate.AttributeEqual(repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, "Text", "FB03_B_EXOPV_005", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(37)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'FB03') on item 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(39));
+            Validate.AttributeContains(repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, "Text", "FB03");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr' at Center.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(38));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr' at Center.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(40));
             repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(39));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(41));
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'FB03_B_EXOPV_005_NEU' with focus on 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(40));
-            repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr.PressKeys("FB03_B_EXOPV_005_NEU");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'FB03_EXOPV_005N' with focus on 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(42));
+            repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr.PressKeys("FB03_EXOPV_005N");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(41));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(43));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB03_B_EXOPV_005_NEU') on item 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(42));
-            Validate.AttributeEqual(repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, "Text", "FB03_B_EXOPV_005_NEU");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB03_EXOPV_005N') on item 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(44));
+            Validate.AttributeEqual(repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, "Text", "FB03_EXOPV_005N");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFremdbelegnrFehler.PbOk' at Center.", repo.DlgFremdbelegnrFehler.PbOkInfo, new RecordItemIndex(43));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFremdbelegnrFehler.PbOk' at Center.", repo.DlgFremdbelegnrFehler.PbOkInfo, new RecordItemIndex(45));
             repo.DlgFremdbelegnrFehler.PbOk.Click();
             
         }

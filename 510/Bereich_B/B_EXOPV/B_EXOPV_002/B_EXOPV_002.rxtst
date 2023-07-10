@@ -206,7 +206,7 @@
 			ref="2be607fe-59d9-4c9f-801f-fe860a2220be"
 			type="Recording">
 				<description>
-					<![CDATA[BUG 26881 TICKET 510/KH105 ACHTUNG!! Fehler vom Stapel Lager fehlen in der Protokolldatei!! (Prüfzeilen bis zur Ticketerledigung disabled)]]>
+					<![CDATA[BUG 26881 Fehler vom Stapel Lager fehlen in der Protokolldatei - kein Fehler lt. Ticketeintrag, daher diesen Teil disabled]]>
 				</description>
 			</testmodule>
 			<testsuite
@@ -342,23 +342,6 @@
 					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
 					variableid="01df86ad-6331-4233-afa4-7de9ea1eb4c8"
 					variablename="Protokolldatei_A">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="808964c0-3446-4490-aba5-de3d9a12ea4a"
-			name="Fehler_dopp_FB_Nr_aendern"
-			ref="083d6668-0697-490b-9bc3-4e95b105f1bd"
-			type="Recording">
-				<description>
-					<![CDATA[Zur Testwiederholung FB-Nummer in Beleg zurückändern]]>
-				</description>
-				<databinding>
-					<var
-					dataname="Beleg6_FB_NEU"
-					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
-					variableid="bba620f5-2d81-40c7-9c52-4fc058b5a891"
-					variablename="Beleg6_FB_NEU">
 					</var>
 				</databinding>
 			</testmodule>
@@ -585,7 +568,7 @@
 			name="B_EXOPV_002"
 			reportlevel="Info;20">
 				<description>
-					<![CDATA[<p>TICKET 510/KH105 ACHTUNG!! Fehler vom Stapel Lager fehlen in der Protokolldatei!! <br>(Prüfzeilen bis zur Ticketerledigung disabled)</p><p>Stapel Verkauf vom 16.01.2020 und Lager vom 19.01.2020&nbsp; - Prüfen mit deaktivierter Option "fehlerhafte Zeilen mit Status F speichern"; mit aktivierter Option "Status F" die Belege ohne Fehler verbuchen<br>Stapel Verkauf: <br>Beleg1: R20/0001 Kunde 200006: Fehler: eingetragene Kostenstelle 15 nicht vorhanden, eingetragener Ust-Code M10 für Konto 4000 nicht zulässig (fixer Code M20 bei Konto hinterlegt)<br>Beleg2: R20/0002 Kunde 200007: kein Fehler: keine Kostenstelle eingetragen -&gt; fixe Kostenstelle lt Sachkonto 4580 muss beim Verbuchen automatisch eingetragen werden.<br>Beleg3: R20/0003 Kunde 200008: Fehler: Kostenstelle ist leer trotz Pflichtigkeit bei Konto 4000; kein Ust-Code eingetragen<br>Beleg4: R20/0004 Kunde 200009: kein Fehler<br>Beleg5: R20/0005 Kunde 200009: kein Fehler<br>Beleg6: KLOPO__03 Kunde 200009: dopppelte Fremdbelegnummer - Ändern FB-Nummer beim Prüfen, anschl. ohne Fehler verbuchen<br>Stapel Lager:<br>Beleg Lager: 2020-1: Fehler: Buchungssymbol nicht vorhanden, eingetragener Ust-Code für 4500 und 4580 nicht zulässig</p><p>In B_EXOPV Belege nach Status F und V prüfen<br>In B_BUAB verbuchte Belege2, 4, 5, 6 prüfen (nicht verbucht sind Beleg1, Beleg3 und Beleg_Lager)</p>]]>
+					<![CDATA[<p>Stapel Verkauf vom 16.01.2020 und Lager vom 19.01.2020&nbsp; - Prüfen mit deaktivierter Option "fehlerhafte Zeilen mit Status F speichern"; mit aktivierter Option "Status F" die Belege ohne Fehler verbuchen<br>Stapel Verkauf: <br>Beleg1: R20/0001 Kunde 200006: Fehler: eingetragene Kostenstelle 15 nicht vorhanden, eingetragener Ust-Code M10 für Konto 4000 nicht zulässig (fixer Code M20 bei Konto hinterlegt)<br>Beleg2: R20/0002 Kunde 200007: kein Fehler: keine Kostenstelle eingetragen -&gt; fixe Kostenstelle lt Sachkonto 4580 muss beim Verbuchen automatisch eingetragen werden.<br>Beleg3: R20/0003 Kunde 200008: Fehler: Kostenstelle ist leer trotz Pflichtigkeit bei Konto 4000; kein Ust-Code eingetragen<br>Beleg4: R20/0004 Kunde 200009: kein Fehler<br>Beleg5: R20/0005 Kunde 200009: kein Fehler<br>Beleg6: KLOPO__03 Kunde 200009: kein Fehler (dopp. FB-Nummer in R510 geändert)<br>Stapel Lager:<br>Beleg Lager: 2020-1: Fehler: Buchungssymbol nicht vorhanden, eingetragener Ust-Code für 4500 und 4580 nicht zulässig</p><p>In B_EXOPV Belege nach Status F und V prüfen<br>In B_BUAB verbuchte Belege2, 4, 5, 6 prüfen (nicht verbucht sind Beleg1, Beleg3 und Beleg_Lager)</p><p>BUG 26881 Fehler vom Stapel Lager fehlen in der Protokolldatei - kein Fehler lt. Ticketeintrag, daher bleibt&nbsp;dieser Teil disabled</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -720,10 +703,6 @@
 						<testmodule
 						id="7b84fd28-f6b3-41dc-b674-5f4a2a39607e"
 						name="Pruefen_Stapel_Verkauf_Lager">
-						</testmodule>
-						<testmodule
-						id="808964c0-3446-4490-aba5-de3d9a12ea4a"
-						name="Fehler_dopp_FB_Nr_aendern">
 						</testmodule>
 						<testmodule
 						id="5cade581-248a-4e39-8487-7ef5c9836f62"

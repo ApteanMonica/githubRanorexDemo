@@ -203,33 +203,33 @@ namespace B_EXOPV_005.Recordings_B_BUAB
             
             Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateContainsVar1Var2(Inhalt_Buchungsdatum_Zeile9, Tagesdatum, Tagesdatum2);
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblB.Buchungszeilen_Tabelle.ColDtAendgRow11' and assigning its value to variable 'Inhalt_Buchungsdatum_Zeile11'.", repo.TblB.Buchungszeilen_Tabelle.ColDtAendgRow11Info, new RecordItemIndex(3));
-            Inhalt_Buchungsdatum_Zeile11 = repo.TblB.Buchungszeilen_Tabelle.ColDtAendgRow11.Element.GetAttributeValueText("Text");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblB.Buchungszeilen_Tabelle.Zeile11.ColDtAendgRow11' and assigning its value to variable 'Inhalt_Buchungsdatum_Zeile11'.", repo.TblB.Buchungszeilen_Tabelle.Zeile11.ColDtAendgRow11Info, new RecordItemIndex(3));
+            Inhalt_Buchungsdatum_Zeile11 = repo.TblB.Buchungszeilen_Tabelle.Zeile11.ColDtAendgRow11.Element.GetAttributeValueText("Text");
             
             Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateContainsVar1Var2(Inhalt_Buchungsdatum_Zeile11, Tagesdatum, Tagesdatum2);
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblB.Buchungszeilen_Tabelle.ColDtAendgRow13' and assigning its value to variable 'Inhalt_Buchungsdatum_Zeile13'.", repo.TblB.Buchungszeilen_Tabelle.ColDtAendgRow13Info, new RecordItemIndex(5));
-            Inhalt_Buchungsdatum_Zeile13 = repo.TblB.Buchungszeilen_Tabelle.ColDtAendgRow13.Element.GetAttributeValueText("Text");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblB.Buchungszeilen_Tabelle.Zeile13.ColDtAendgRow13' and assigning its value to variable 'Inhalt_Buchungsdatum_Zeile13'.", repo.TblB.Buchungszeilen_Tabelle.Zeile13.ColDtAendgRow13Info, new RecordItemIndex(5));
+            Inhalt_Buchungsdatum_Zeile13 = repo.TblB.Buchungszeilen_Tabelle.Zeile13.ColDtAendgRow13.Element.GetAttributeValueText("Text");
             
             Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateContainsVar1Var2(Inhalt_Buchungsdatum_Zeile13, Tagesdatum, Tagesdatum2);
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblB.Buchungszeilen_Tabelle.ColDtAendgRow15' and assigning its value to variable 'Inhalt_Buchungsdatum_Zeile15'.", repo.TblB.Buchungszeilen_Tabelle.ColDtAendgRow15Info, new RecordItemIndex(7));
-            Inhalt_Buchungsdatum_Zeile15 = repo.TblB.Buchungszeilen_Tabelle.ColDtAendgRow15.Element.GetAttributeValueText("Text");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblB.Buchungszeilen_Tabelle.Zeile15.ColDtAendgRow15' and assigning its value to variable 'Inhalt_Buchungsdatum_Zeile15'.", repo.TblB.Buchungszeilen_Tabelle.Zeile15.ColDtAendgRow15Info, new RecordItemIndex(7));
+            Inhalt_Buchungsdatum_Zeile15 = repo.TblB.Buchungszeilen_Tabelle.Zeile15.ColDtAendgRow15.Element.GetAttributeValueText("Text");
             
             Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateContainsVar1Var2(Inhalt_Buchungsdatum_Zeile15, Tagesdatum, Tagesdatum2);
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblB.Buchungszeilen_Tabelle.ColDtAendgRow17' and assigning its value to variable 'Inhalt_Buchungsdatum_Zeile17'.", repo.TblB.Buchungszeilen_Tabelle.ColDtAendgRow17Info, new RecordItemIndex(9));
-            Inhalt_Buchungsdatum_Zeile17 = repo.TblB.Buchungszeilen_Tabelle.ColDtAendgRow17.Element.GetAttributeValueText("Text");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblB.Buchungszeilen_Tabelle.Zeile17.ColDtAendgRow17' and assigning its value to variable 'Inhalt_Buchungsdatum_Zeile17'.", repo.TblB.Buchungszeilen_Tabelle.Zeile17.ColDtAendgRow17Info, new RecordItemIndex(9));
+            Inhalt_Buchungsdatum_Zeile17 = repo.TblB.Buchungszeilen_Tabelle.Zeile17.ColDtAendgRow17.Element.GetAttributeValueText("Text");
             
             Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateContainsVar1Var2(Inhalt_Buchungsdatum_Zeile17, Tagesdatum, Tagesdatum2);
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblB.Buchungszeilen_Tabelle.ColDtAendgRow19' and assigning its value to variable 'Inhalt_Buchungsdatum_Zeile19'.", repo.TblB.Buchungszeilen_Tabelle.ColDtAendgRow19Info, new RecordItemIndex(11));
-            Inhalt_Buchungsdatum_Zeile19 = repo.TblB.Buchungszeilen_Tabelle.ColDtAendgRow19.Element.GetAttributeValueText("Text");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblB.Buchungszeilen_Tabelle.Zeile19.ColDtAendgRow19' and assigning its value to variable 'Inhalt_Buchungsdatum_Zeile19'.", repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColDtAendgRow19Info, new RecordItemIndex(11));
+            Inhalt_Buchungsdatum_Zeile19 = repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColDtAendgRow19.Element.GetAttributeValueText("Text");
             
             Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateContainsVar1Var2(Inhalt_Buchungsdatum_Zeile19, Tagesdatum, Tagesdatum2);
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblB.Buchungszeilen_Tabelle.ColDtAendgRow21' and assigning its value to variable 'Inhalt_Buchungsdatum_Zeile21'.", repo.TblB.Buchungszeilen_Tabelle.ColDtAendgRow21Info, new RecordItemIndex(13));
-            Inhalt_Buchungsdatum_Zeile21 = repo.TblB.Buchungszeilen_Tabelle.ColDtAendgRow21.Element.GetAttributeValueText("Text");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblB.Buchungszeilen_Tabelle.Zeile21.ColDtAendgRow21' and assigning its value to variable 'Inhalt_Buchungsdatum_Zeile21'.", repo.TblB.Buchungszeilen_Tabelle.Zeile21.ColDtAendgRow21Info, new RecordItemIndex(13));
+            Inhalt_Buchungsdatum_Zeile21 = repo.TblB.Buchungszeilen_Tabelle.Zeile21.ColDtAendgRow21.Element.GetAttributeValueText("Text");
             
             Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateContainsVar1Var2(Inhalt_Buchungsdatum_Zeile21, Tagesdatum, Tagesdatum2);
             

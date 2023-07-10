@@ -761,6 +761,7 @@ namespace B_BUDA_001
         public partial class Hauptframe_2Folder : RepoGenBaseFolder
         {
             RepoItemInfo _kontoInfo;
+            RepoItemInfo _konto_feld_leer_nach_buchungsendeInfo;
             RepoItemInfo _belegInfo;
             RepoItemInfo _datumInfo;
             RepoItemInfo _datum1Info;
@@ -773,6 +774,7 @@ namespace B_BUDA_001
                     base("Hauptframe_2", "container[@controlname='ClientArea']/container[@controlname='frame2']", parentFolder, 30000, null, false, "a57afa21-54cf-40fc-8b6d-83a01983ecad", "")
             {
                 _kontoInfo = new RepoItemInfo(this, "Konto", "text[@controlname='dfAdr_nr']/text[@accessiblename='Konto']", "", 30000, null, "0c8d50f6-ccf6-4f3b-ae9a-c42c431ae8d9");
+                _konto_feld_leer_nach_buchungsendeInfo = new RepoItemInfo(this, "Konto_Feld_leer_nach_Buchungsende", "text[@controlname='dfAdr_nr']/text[@accessiblename='Konto' and @text='']", "", 30000, null, "16d5e543-e415-49f3-9d14-cc4b85cb88b1");
                 _belegInfo = new RepoItemInfo(this, "Beleg", "text[@controlname='dfBelegnr']/text[@accessiblename='Beleg']", "", 30000, null, "dea794f5-35ca-4275-a74e-342e1a818a09");
                 _datumInfo = new RepoItemInfo(this, "Datum", "text[@controlname='dfDtbeleg']/text[@accessiblename='Datum']", "", 30000, null, "360627c5-32bd-4209-a971-2c032f46641e");
                 _datum1Info = new RepoItemInfo(this, "Datum1", "text[@controlname='dfDtfremdbeleg']/text[@accessiblename='Datum']", "", 30000, null, "221eb331-12b3-4f19-bab6-05c61e28f34a");
@@ -824,6 +826,30 @@ namespace B_BUDA_001
                 get
                 {
                     return _kontoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Konto_Feld_leer_nach_Buchungsende item.
+            /// </summary>
+            [RepositoryItem("16d5e543-e415-49f3-9d14-cc4b85cb88b1")]
+            public virtual Ranorex.Text Konto_Feld_leer_nach_Buchungsende
+            {
+                get
+                {
+                    return _konto_feld_leer_nach_buchungsendeInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Konto_Feld_leer_nach_Buchungsende item info.
+            /// </summary>
+            [RepositoryItemInfo("16d5e543-e415-49f3-9d14-cc4b85cb88b1")]
+            public virtual RepoItemInfo Konto_Feld_leer_nach_BuchungsendeInfo
+            {
+                get
+                {
+                    return _konto_feld_leer_nach_buchungsendeInfo;
                 }
             }
 
