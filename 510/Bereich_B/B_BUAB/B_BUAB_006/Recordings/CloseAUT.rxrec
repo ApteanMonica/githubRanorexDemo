@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a381ae95-e490-4f9e-9d5d-9ee7355e7e45"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_BUAB_006.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="500ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="946e1157-a7f4-4254-a955-3efaf6442254">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="244ee541-14b7-4cf0-ba2e-d6315076c848"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblB']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="0248b8fc-ada7-4083-82bb-3048488e4911"
+	name="B_BUAB_006Repository"
+	relativepath="..\B_BUAB_006Repository.rxrep">
+		<codegen
+		classname="B_BUAB_006Repository"
+		namespace="B_BUAB_006">
+		</codegen>
+		<rootfolder
+		id="74e5497f-73fa-4de6-8dcb-399422e61e95"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
