@@ -135,6 +135,12 @@ namespace N_LISTEN_BULI_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ende_GJ) on item 'FrmBuchungsliste.TextBis'.", repo.FrmBuchungsliste.TextBisInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.FrmBuchungsliste.TextBisInfo, "Text", Ende_GJ);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbOptionenTabelle' at Center.", repo.FrmBuchungsliste.PbOptionenTabelleInfo, new RecordItemIndex(10));
+            repo.FrmBuchungsliste.PbOptionenTabelle.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBuchungsliste.ColTypRow2'", repo.FrmBuchungsliste.ColTypRow2Info, new ActionTimeout(120000), new RecordItemIndex(11));
+            repo.FrmBuchungsliste.ColTypRow2Info.WaitForExists(120000);
+            
         }
 
 #region Image Feature Data

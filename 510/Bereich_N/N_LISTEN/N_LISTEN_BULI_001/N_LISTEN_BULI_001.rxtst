@@ -3,6 +3,12 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
+			id="0aafff3c-aadc-4f76-9a33-99edf3e79fdf"
+			name="Hinweismeldung_Ueberleiten"
+			ref="d432de5d-66d9-43c3-b2ef-8fdb9827d171"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="38afbd31-b39f-4e76-a8a0-64dd3a9a1015"
 			name="AfA_berechnen_und_ueberleiten"
 			ref="de8bcdd4-a249-4004-92ce-4f0d7063ab60"
@@ -61,6 +67,12 @@
 			name="setup">
 			</setup>
 			<testmodule
+			id="775ebf23-bc40-4446-93ab-f50605d627d1"
+			name="Meldung_bereits_erfolgte_Berechnung"
+			ref="62a75978-56c4-4db2-a0db-64d934683a04"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="7c4f043b-3d89-4cdc-b79f-14e0b3241486"
 			name="StartAUT"
 			ref="3147901d-b751-4852-8cd6-719e800cfc45"
@@ -113,6 +125,18 @@
 					name="Kostenstelle_10"
 					value="10">
 					</param>
+					<param
+					name="GWG_AfA_Konto"
+					value="7010">
+					</param>
+					<param
+					name="GWG_AfA_Gegenkonto"
+					value="0680">
+					</param>
+					<param
+					name="Kostenstelle_20"
+					value="20">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -120,11 +144,69 @@
 			name="Ueberpruefung_gerechnete_AfA"
 			ref="26efc609-81a4-473b-ad6f-4c9af1f4156c"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Kostenstelle_20"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="1f2a0ed4-ef5d-4925-9c35-68324f2a6a86"
+					variablename="Kostenstelle_20">
+					</var>
+					<var
+					dataname="GWG_AfA_Gegenkonto"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="0ba1bae1-41f7-49ef-8c43-11f42992546e"
+					variablename="GWG_AfA_Gegenkonto">
+					</var>
+					<var
+					dataname="GWG_AfA_Konto"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="216db4fc-4b7e-4edc-8e9f-c8fc04be0769"
+					variablename="GWG_AfA_Konto">
+					</var>
+					<var
+					dataname="Kostenstelle_10"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="17a21ed9-add6-4d98-bc2e-6d131770a33d"
+					variablename="Kostenstelle_10">
+					</var>
+					<var
+					dataname="AfA_Gegenkonto"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="165314ee-fb09-42e2-9599-7bf70697f753"
+					variablename="AfA_Gegenkonto">
+					</var>
+					<var
+					dataname="Afa_Konto"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="61e70350-6d97-43c3-be07-222da33d4a75"
+					variablename="Afa_Konto">
+					</var>
+				</databinding>
 			</testmodule>
 			<teardown
 			id="af938ef0-2e2c-4f94-b0f5-15fe0f9ccc3b"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="c8f30a91-62a6-419e-b51f-8d6b3b82f86e"
+			name="Wiederholung_Berechnung_AfA"
+			ref="e56ccb67-eb92-48de-b73e-a3f27c9956db"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Beginn_GJ"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="b8032de5-f2d5-48c0-ae91-b7289204c982"
+					variablename="Beginn_GJ">
+					</var>
+					<var
+					dataname="Ende_GJ"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="bc31104d-8d6e-4129-8eb1-cf6896134e2a"
+					variablename="Ende_GJ">
+					</var>
+				</databinding>
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -149,8 +231,20 @@
 						name="AfA_berechnen_und_ueberleiten">
 						</testmodule>
 						<testmodule
+						id="c8f30a91-62a6-419e-b51f-8d6b3b82f86e"
+						name="Wiederholung_Berechnung_AfA">
+						</testmodule>
+						<testmodule
+						id="775ebf23-bc40-4446-93ab-f50605d627d1"
+						name="Meldung_bereits_erfolgte_Berechnung">
+						</testmodule>
+						<testmodule
 						id="abd4dcaf-8d5d-43d7-8ba9-d18e2a51b40b"
 						name="Ueberpruefung_gerechnete_AfA">
+						</testmodule>
+						<testmodule
+						id="0aafff3c-aadc-4f76-9a33-99edf3e79fdf"
+						name="Hinweismeldung_Ueberleiten">
 						</testmodule>
 						<teardown
 						id="af938ef0-2e2c-4f94-b0f5-15fe0f9ccc3b"
