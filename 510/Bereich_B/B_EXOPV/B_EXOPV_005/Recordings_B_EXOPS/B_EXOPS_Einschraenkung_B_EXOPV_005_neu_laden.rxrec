@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="5d91eadb-9556-4888-8dea-b1b80a770e1b"
+id="6e7cc54a-f7bd-4d2a-8aef-251a45d614b2"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,17 +19,65 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="B_EXOPS_neu_laden"
+	classname="B_EXOPS_Einschraenkung_B_EXOPV_005_neu_laden"
 	namespace="B_EXOPV_005.Recordings_B_EXOPS">
 	</codegen>
 	<variables>
 		<var
-		id="c48b93b8-1c9b-432f-8c96-1fffeb97e4c6"
+		id="c74bbbce-573f-499a-8891-92f7c016b9da"
 		name="Stapel_Herkunft">
 			B_EXOPV_005
 		</var>
 	</variables>
 	<recorditems>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="1efa729b-1f5a-4567-965f-7bd4a1bfbb56">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b96a1be5-4e14-4ec6-af46-6ffaa460a66f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXOP']/container[@controlname='ToolBar']/container[@controlname='groupBox2']/container[@controlname='tblEinschr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKls Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="df954919-3a8a-480d-ac22-a4fb21cce9e9">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="19440a32-66c8-4dc2-a388-543ec19f9e63"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXOP']/container[@controlname='ToolBar']/container[@controlname='groupBox2']/container[@controlname='tblEinschr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colStatus Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -67,7 +115,7 @@ mode="Global">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="4d5f6259-7886-4fe0-92b4-9a8de70226ff"
+		searchpropertyid="d164d253-b9c3-47b5-82c1-09b60e95199b"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -121,7 +169,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		B_EXOPS_neu_laden.UserCode.cs
+		B_EXOPS_Einschraenkung_B_EXOPV_005_neu_laden.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

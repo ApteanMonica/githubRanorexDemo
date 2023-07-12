@@ -23,6 +23,11 @@ mode="Global">
 	namespace="B_EXOPV_005.Recordings_B_EXOPS">
 	</codegen>
 	<variables>
+		<var
+		id="3f2d53db-8adc-46a0-9281-8a33af1e97f9"
+		name="LF_01">
+			303201
+		</var>
 	</variables>
 	<recorditems>
 		<validationitem
@@ -48,6 +53,85 @@ mode="Global">
 			</matchname>
 			<matchvalue>
 				F
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e9de7288-5d8d-4960-aa82-e905bfa57b2a">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="LF_01">
+				</binding>
+			</bindings>
+			<info
+			id="b98b4fd3-b6a1-4e09-ba23-cd2c33a75548"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXOP']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAdr_nr Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				ER03_B_EXOPV_005
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e9de7288-5d8d-4960-aa82-e905bfa57b2a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="20a13ddf-4d60-40db-a5bf-db1223426b27"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXOP']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExop_belegnr Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				ER03_B_EXOPV_005
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e9de7288-5d8d-4960-aa82-e905bfa57b2a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d33ba80f-89c1-4d3f-833a-0065e208964d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXOP']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExop_nrfremdbeleg Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				FB02_B_EXOPV_005
 			</matchvalue>
 		</validationitem>
 		<validationitem

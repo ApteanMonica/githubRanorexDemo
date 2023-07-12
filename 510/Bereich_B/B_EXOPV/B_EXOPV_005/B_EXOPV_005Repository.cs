@@ -1700,6 +1700,7 @@ namespace B_EXOPV_005
             RepoItemInfo _row1column0Info;
             RepoItemInfo _coladrnrrow1Info;
             RepoItemInfo _colexopbelegnrrow1Info;
+            RepoItemInfo _colexopnrfremdbelegrow1Info;
             RepoItemInfo _colexopstatusrow1Info;
             RepoItemInfo _colexopjahrrow1Info;
             RepoItemInfo _colexopperioderow1Info;
@@ -1716,6 +1717,7 @@ namespace B_EXOPV_005
                 _row1column0Info = new RepoItemInfo(this, "Row1Column0", "row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "395542a4-f4b6-4ade-8ecb-82496f2c0a41");
                 _coladrnrrow1Info = new RepoItemInfo(this, "ColAdrNrRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colAdr_nr Row 1']", "", 30000, null, "b98b4fd3-b6a1-4e09-ba23-cd2c33a75548");
                 _colexopbelegnrrow1Info = new RepoItemInfo(this, "ColExopBelegnrRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colExop_belegnr Row 1']", "", 30000, null, "20a13ddf-4d60-40db-a5bf-db1223426b27");
+                _colexopnrfremdbelegrow1Info = new RepoItemInfo(this, "ColExopNrfremdbelegRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colExop_nrfremdbeleg Row 1']", "", 30000, null, "d33ba80f-89c1-4d3f-833a-0065e208964d");
                 _colexopstatusrow1Info = new RepoItemInfo(this, "ColExopStatusRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colExop_status Row 1']", "", 30000, null, "358500e2-58c5-4b12-b8f2-048cf465ff69");
                 _colexopjahrrow1Info = new RepoItemInfo(this, "ColExopJahrRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colExop_jahr Row 1']", "", 30000, null, "69affd87-7aef-4f87-b88f-45185ad5932f");
                 _colexopperioderow1Info = new RepoItemInfo(this, "ColExopPeriodeRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colExop_periode Row 1']", "", 30000, null, "c8f8687c-6a1f-4135-8a7c-6f633dc809d6");
@@ -1828,6 +1830,30 @@ namespace B_EXOPV_005
                 get
                 {
                     return _colexopbelegnrrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColExopNrfremdbelegRow1 item.
+            /// </summary>
+            [RepositoryItem("d33ba80f-89c1-4d3f-833a-0065e208964d")]
+            public virtual Ranorex.Cell ColExopNrfremdbelegRow1
+            {
+                get
+                {
+                    return _colexopnrfremdbelegrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColExopNrfremdbelegRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("d33ba80f-89c1-4d3f-833a-0065e208964d")]
+            public virtual RepoItemInfo ColExopNrfremdbelegRow1Info
+            {
+                get
+                {
+                    return _colexopnrfremdbelegrow1Info;
                 }
             }
 
@@ -1961,6 +1987,7 @@ namespace B_EXOPV_005
             RepoItemInfo _row2column0Info;
             RepoItemInfo _coladrnrrow2Info;
             RepoItemInfo _colexopbelegnrrow2Info;
+            RepoItemInfo _colexopnrfremdbelegrow2Info;
             RepoItemInfo _colexopstatusrow2Info;
             RepoItemInfo _colexopjahrrow2Info;
             RepoItemInfo _colexopperioderow2Info;
@@ -1976,6 +2003,7 @@ namespace B_EXOPV_005
                 _row2column0Info = new RepoItemInfo(this, "Row2Column0", "row[@accessiblename='Row 2']/cell[@accessiblename='Row 2 Column 0']", "", 30000, null, "d4f34006-a4cb-43a4-ad9d-61dd3e259c21");
                 _coladrnrrow2Info = new RepoItemInfo(this, "ColAdrNrRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colAdr_nr Row 2']", "", 30000, null, "f09b87b5-268b-4149-90dd-02309c0a7689");
                 _colexopbelegnrrow2Info = new RepoItemInfo(this, "ColExopBelegnrRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colExop_belegnr Row 2']", "", 30000, null, "1f4b96e7-30d2-400f-a117-043b3f30b04e");
+                _colexopnrfremdbelegrow2Info = new RepoItemInfo(this, "ColExopNrfremdbelegRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colExop_nrfremdbeleg Row 2']", "", 30000, null, "50a75b09-d39f-4830-9d72-a9dda417e71f");
                 _colexopstatusrow2Info = new RepoItemInfo(this, "ColExopStatusRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colExop_status Row 2']", "", 30000, null, "b8d1feda-ec09-42cf-ad17-40a7036ae72e");
                 _colexopjahrrow2Info = new RepoItemInfo(this, "ColExopJahrRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colExop_jahr Row 2']", "", 30000, null, "a928211e-2d8b-4522-8a79-3c713ea40319");
                 _colexopperioderow2Info = new RepoItemInfo(this, "ColExopPeriodeRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colExop_periode Row 2']", "", 30000, null, "828c29e0-a6c7-4a39-9a43-6abff9a22dbc");
@@ -2064,6 +2092,30 @@ namespace B_EXOPV_005
                 get
                 {
                     return _colexopbelegnrrow2Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColExopNrfremdbelegRow2 item.
+            /// </summary>
+            [RepositoryItem("50a75b09-d39f-4830-9d72-a9dda417e71f")]
+            public virtual Ranorex.Cell ColExopNrfremdbelegRow2
+            {
+                get
+                {
+                    return _colexopnrfremdbelegrow2Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColExopNrfremdbelegRow2 item info.
+            /// </summary>
+            [RepositoryItemInfo("50a75b09-d39f-4830-9d72-a9dda417e71f")]
+            public virtual RepoItemInfo ColExopNrfremdbelegRow2Info
+            {
+                get
+                {
+                    return _colexopnrfremdbelegrow2Info;
                 }
             }
 
@@ -2197,6 +2249,7 @@ namespace B_EXOPV_005
             RepoItemInfo _row3column0Info;
             RepoItemInfo _coladrnrrow3Info;
             RepoItemInfo _colexopbelegnrrow3Info;
+            RepoItemInfo _colexopnrfremdbelegrow3Info;
             RepoItemInfo _colexopstatusrow3Info;
             RepoItemInfo _colexopjahrrow3Info;
             RepoItemInfo _colexopperioderow3Info;
@@ -2212,6 +2265,7 @@ namespace B_EXOPV_005
                 _row3column0Info = new RepoItemInfo(this, "Row3Column0", "row[@accessiblename='Row 3']/cell[@accessiblename='Row 3 Column 0']", "", 30000, null, "0fc371af-f61c-473d-8f08-03668bb140bb");
                 _coladrnrrow3Info = new RepoItemInfo(this, "ColAdrNrRow3", "row[@accessiblename='Row 3']/cell[@accessiblename='colAdr_nr Row 3']", "", 30000, null, "4a2fb5af-62eb-4648-b4e4-2ff890b0d056");
                 _colexopbelegnrrow3Info = new RepoItemInfo(this, "ColExopBelegnrRow3", "row[@accessiblename='Row 3']/cell[@accessiblename='colExop_belegnr Row 3']", "", 30000, null, "d57edaf3-141e-4a4e-a9b3-2382203549d6");
+                _colexopnrfremdbelegrow3Info = new RepoItemInfo(this, "ColExopNrfremdbelegRow3", "row[@accessiblename='Row 3']/cell[@accessiblename='colExop_nrfremdbeleg Row 3']", "", 30000, null, "da93c666-f2a7-4d2f-bac6-ca8bbe17a24e");
                 _colexopstatusrow3Info = new RepoItemInfo(this, "ColExopStatusRow3", "row[@accessiblename='Row 3']/cell[@accessiblename='colExop_status Row 3']", "", 30000, null, "e77b4f93-af89-4bb4-b361-b161ddd2fbf0");
                 _colexopjahrrow3Info = new RepoItemInfo(this, "ColExopJahrRow3", "row[@accessiblename='Row 3']/cell[@accessiblename='colExop_jahr Row 3']", "", 30000, null, "f9ecd495-a59c-4abc-9c17-db0a46f46d4f");
                 _colexopperioderow3Info = new RepoItemInfo(this, "ColExopPeriodeRow3", "row[@accessiblename='Row 3']/cell[@accessiblename='colExop_periode Row 3']", "", 30000, null, "81335e30-c586-4f24-8330-dd24c0893458");
@@ -2300,6 +2354,30 @@ namespace B_EXOPV_005
                 get
                 {
                     return _colexopbelegnrrow3Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColExopNrfremdbelegRow3 item.
+            /// </summary>
+            [RepositoryItem("da93c666-f2a7-4d2f-bac6-ca8bbe17a24e")]
+            public virtual Ranorex.Cell ColExopNrfremdbelegRow3
+            {
+                get
+                {
+                    return _colexopnrfremdbelegrow3Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColExopNrfremdbelegRow3 item info.
+            /// </summary>
+            [RepositoryItemInfo("da93c666-f2a7-4d2f-bac6-ca8bbe17a24e")]
+            public virtual RepoItemInfo ColExopNrfremdbelegRow3Info
+            {
+                get
+                {
+                    return _colexopnrfremdbelegrow3Info;
                 }
             }
 
@@ -2433,6 +2511,7 @@ namespace B_EXOPV_005
             RepoItemInfo _row4column0Info;
             RepoItemInfo _coladrnrrow4Info;
             RepoItemInfo _colexopbelegnrrow4Info;
+            RepoItemInfo _colexopnrfremdbelegrow4Info;
             RepoItemInfo _colexopstatusrow4Info;
             RepoItemInfo _colexopjahrrow4Info;
             RepoItemInfo _colexopperioderow4Info;
@@ -2448,6 +2527,7 @@ namespace B_EXOPV_005
                 _row4column0Info = new RepoItemInfo(this, "Row4Column0", "row[@accessiblename='Row 4']/cell[@accessiblename='Row 4 Column 0']", "", 30000, null, "63f80c51-1c2b-4e9e-bd16-dd89f1bf3bea");
                 _coladrnrrow4Info = new RepoItemInfo(this, "ColAdrNrRow4", "row[@accessiblename='Row 4']/cell[@accessiblename='colAdr_nr Row 4']", "", 30000, null, "558f75d4-97be-4ff8-b497-349cfce9f51f");
                 _colexopbelegnrrow4Info = new RepoItemInfo(this, "ColExopBelegnrRow4", "row[@accessiblename='Row 4']/cell[@accessiblename='colExop_belegnr Row 4']", "", 30000, null, "2b93f914-b285-4a6d-94b8-eca99c97ab2b");
+                _colexopnrfremdbelegrow4Info = new RepoItemInfo(this, "ColExopNrfremdbelegRow4", "row[@accessiblename='Row 4']/cell[@accessiblename='colExop_nrfremdbeleg Row 4']", "", 30000, null, "19921840-6f76-4098-a8f2-2402bc2c4b29");
                 _colexopstatusrow4Info = new RepoItemInfo(this, "ColExopStatusRow4", "row[@accessiblename='Row 4']/cell[@accessiblename='colExop_status Row 4']", "", 30000, null, "7dece8f1-893b-49d4-9e7e-c0472fd977d6");
                 _colexopjahrrow4Info = new RepoItemInfo(this, "ColExopJahrRow4", "row[@accessiblename='Row 4']/cell[@accessiblename='colExop_jahr Row 4']", "", 30000, null, "b6ecf307-7f67-46e7-9588-13e156eafb58");
                 _colexopperioderow4Info = new RepoItemInfo(this, "ColExopPeriodeRow4", "row[@accessiblename='Row 4']/cell[@accessiblename='colExop_periode Row 4']", "", 30000, null, "484fde4e-1e4e-44f4-aa3f-5172df69aa0d");
@@ -2536,6 +2616,30 @@ namespace B_EXOPV_005
                 get
                 {
                     return _colexopbelegnrrow4Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColExopNrfremdbelegRow4 item.
+            /// </summary>
+            [RepositoryItem("19921840-6f76-4098-a8f2-2402bc2c4b29")]
+            public virtual Ranorex.Cell ColExopNrfremdbelegRow4
+            {
+                get
+                {
+                    return _colexopnrfremdbelegrow4Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColExopNrfremdbelegRow4 item info.
+            /// </summary>
+            [RepositoryItemInfo("19921840-6f76-4098-a8f2-2402bc2c4b29")]
+            public virtual RepoItemInfo ColExopNrfremdbelegRow4Info
+            {
+                get
+                {
+                    return _colexopnrfremdbelegrow4Info;
                 }
             }
 
@@ -2669,6 +2773,7 @@ namespace B_EXOPV_005
             RepoItemInfo _row5column0Info;
             RepoItemInfo _coladrnrrow5Info;
             RepoItemInfo _colexopbelegnrrow5Info;
+            RepoItemInfo _colexopnrfremdbelegrow5Info;
             RepoItemInfo _colexopstatusrow5Info;
             RepoItemInfo _colexopjahrrow5Info;
             RepoItemInfo _colexopperioderow5Info;
@@ -2684,6 +2789,7 @@ namespace B_EXOPV_005
                 _row5column0Info = new RepoItemInfo(this, "Row5Column0", "row[@accessiblename='Row 5']/cell[@accessiblename='Row 5 Column 0']", "", 30000, null, "f17a9063-542c-4f46-a1d3-de2db6fe106d");
                 _coladrnrrow5Info = new RepoItemInfo(this, "ColAdrNrRow5", "row[@accessiblename='Row 5']/cell[@accessiblename='colAdr_nr Row 5']", "", 30000, null, "049386c8-c6e9-4d80-8c1b-c9220f7b1ecf");
                 _colexopbelegnrrow5Info = new RepoItemInfo(this, "ColExopBelegnrRow5", "row[@accessiblename='Row 5']/cell[@accessiblename='colExop_belegnr Row 5']", "", 30000, null, "a379bbff-1646-483d-a735-3548429ea09c");
+                _colexopnrfremdbelegrow5Info = new RepoItemInfo(this, "ColExopNrfremdbelegRow5", "row[@accessiblename='Row 5']/cell[@accessiblename='colExop_nrfremdbeleg Row 5']", "", 30000, null, "7fc325ab-ec4c-4890-8b9c-295fb89057fa");
                 _colexopstatusrow5Info = new RepoItemInfo(this, "ColExopStatusRow5", "row[@accessiblename='Row 5']/cell[@accessiblename='colExop_status Row 5']", "", 30000, null, "a4d5f95a-87c6-490a-aacc-b173bb3f6f21");
                 _colexopjahrrow5Info = new RepoItemInfo(this, "ColExopJahrRow5", "row[@accessiblename='Row 5']/cell[@accessiblename='colExop_jahr Row 5']", "", 30000, null, "6469b6e7-ff4b-4a84-88fa-aa830d32158c");
                 _colexopperioderow5Info = new RepoItemInfo(this, "ColExopPeriodeRow5", "row[@accessiblename='Row 5']/cell[@accessiblename='colExop_periode Row 5']", "", 30000, null, "5198a37c-d804-4f58-b22d-8c948809c811");
@@ -2772,6 +2878,30 @@ namespace B_EXOPV_005
                 get
                 {
                     return _colexopbelegnrrow5Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColExopNrfremdbelegRow5 item.
+            /// </summary>
+            [RepositoryItem("7fc325ab-ec4c-4890-8b9c-295fb89057fa")]
+            public virtual Ranorex.Cell ColExopNrfremdbelegRow5
+            {
+                get
+                {
+                    return _colexopnrfremdbelegrow5Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColExopNrfremdbelegRow5 item info.
+            /// </summary>
+            [RepositoryItemInfo("7fc325ab-ec4c-4890-8b9c-295fb89057fa")]
+            public virtual RepoItemInfo ColExopNrfremdbelegRow5Info
+            {
+                get
+                {
+                    return _colexopnrfremdbelegrow5Info;
                 }
             }
 
@@ -2905,6 +3035,7 @@ namespace B_EXOPV_005
             RepoItemInfo _row6column0Info;
             RepoItemInfo _coladrnrrow6Info;
             RepoItemInfo _colexopbelegnrrow6Info;
+            RepoItemInfo _colexopnrfremdbelegrow6Info;
             RepoItemInfo _colexopstatusrow6Info;
             RepoItemInfo _colexopjahrrow6Info;
             RepoItemInfo _colexopperioderow6Info;
@@ -2920,6 +3051,7 @@ namespace B_EXOPV_005
                 _row6column0Info = new RepoItemInfo(this, "Row6Column0", "row[@accessiblename='Row 6']/cell[@accessiblename='Row 6 Column 0']", "", 30000, null, "2688bf3f-6aae-4be5-aba7-fc1fee27bf01");
                 _coladrnrrow6Info = new RepoItemInfo(this, "ColAdrNrRow6", "row[@accessiblename='Row 6']/cell[@accessiblename='colAdr_nr Row 6']", "", 30000, null, "86a3fa9c-6541-4f5e-8dfc-8adbe6054fc0");
                 _colexopbelegnrrow6Info = new RepoItemInfo(this, "ColExopBelegnrRow6", "row[@accessiblename='Row 6']/cell[@accessiblename='colExop_belegnr Row 6']", "", 30000, null, "c767fb25-5f45-4400-8142-608cc3a5ae22");
+                _colexopnrfremdbelegrow6Info = new RepoItemInfo(this, "ColExopNrfremdbelegRow6", "row[@accessiblename='Row 6']/cell[@accessiblename='colExop_nrfremdbeleg Row 6']", "", 30000, null, "19502ed1-6e28-452a-b2c2-495f67946b4e");
                 _colexopstatusrow6Info = new RepoItemInfo(this, "ColExopStatusRow6", "row[@accessiblename='Row 6']/cell[@accessiblename='colExop_status Row 6']", "", 30000, null, "32cdcc9a-a446-4e07-aa5c-84e23e10f1bf");
                 _colexopjahrrow6Info = new RepoItemInfo(this, "ColExopJahrRow6", "row[@accessiblename='Row 6']/cell[@accessiblename='colExop_jahr Row 6']", "", 30000, null, "fea2c53a-6f53-4ec2-907f-62842f715e3b");
                 _colexopperioderow6Info = new RepoItemInfo(this, "ColExopPeriodeRow6", "row[@accessiblename='Row 6']/cell[@accessiblename='colExop_periode Row 6']", "", 30000, null, "a6e756ba-07e9-4140-9cd5-9424f7d053a3");
@@ -3008,6 +3140,30 @@ namespace B_EXOPV_005
                 get
                 {
                     return _colexopbelegnrrow6Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColExopNrfremdbelegRow6 item.
+            /// </summary>
+            [RepositoryItem("19502ed1-6e28-452a-b2c2-495f67946b4e")]
+            public virtual Ranorex.Cell ColExopNrfremdbelegRow6
+            {
+                get
+                {
+                    return _colexopnrfremdbelegrow6Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColExopNrfremdbelegRow6 item info.
+            /// </summary>
+            [RepositoryItemInfo("19502ed1-6e28-452a-b2c2-495f67946b4e")]
+            public virtual RepoItemInfo ColExopNrfremdbelegRow6Info
+            {
+                get
+                {
+                    return _colexopnrfremdbelegrow6Info;
                 }
             }
 
@@ -3403,6 +3559,7 @@ namespace B_EXOPV_005
             RepoItemInfo _row8column0Info;
             RepoItemInfo _coladrnrrow8Info;
             RepoItemInfo _colexopbelegnrrow8Info;
+            RepoItemInfo _colexopnrfremdbelegrow8Info;
             RepoItemInfo _colexopstatusrow8Info;
             RepoItemInfo _colexopjahrrow8Info;
             RepoItemInfo _colexopperioderow8Info;
@@ -3418,6 +3575,7 @@ namespace B_EXOPV_005
                 _row8column0Info = new RepoItemInfo(this, "Row8Column0", "row[@accessiblename='Row 8']/cell[@accessiblename='Row 8 Column 0']", "", 30000, null, "847a9733-5221-46d9-a532-b14d4765fa0b");
                 _coladrnrrow8Info = new RepoItemInfo(this, "ColAdrNrRow8", "row[@accessiblename='Row 8']/cell[@accessiblename='colAdr_nr Row 8']", "", 30000, null, "52712c10-6d35-44ed-b23c-57f0b9f89d09");
                 _colexopbelegnrrow8Info = new RepoItemInfo(this, "ColExopBelegnrRow8", "row[@accessiblename='Row 8']/cell[@accessiblename='colExop_belegnr Row 8']", "", 30000, null, "369f51b3-083c-4804-9547-a2c426024ade");
+                _colexopnrfremdbelegrow8Info = new RepoItemInfo(this, "ColExopNrfremdbelegRow8", "row[@accessiblename='Row 8']/cell[@accessiblename='colExop_nrfremdbeleg Row 8']", "", 30000, null, "54fa1abe-1823-4ecd-af6f-1e25717e37b0");
                 _colexopstatusrow8Info = new RepoItemInfo(this, "ColExopStatusRow8", "row[@accessiblename='Row 8']/cell[@accessiblename='colExop_status Row 8']", "", 30000, null, "97d86d99-c9c9-4dfd-8004-f47c5234c426");
                 _colexopjahrrow8Info = new RepoItemInfo(this, "ColExopJahrRow8", "row[@accessiblename='Row 8']/cell[@accessiblename='colExop_jahr Row 8']", "", 30000, null, "d25e6d0f-a48a-41f0-8a4b-6bca27592048");
                 _colexopperioderow8Info = new RepoItemInfo(this, "ColExopPeriodeRow8", "row[@accessiblename='Row 8']/cell[@accessiblename='colExop_periode Row 8']", "", 30000, null, "8722eaf5-07f0-40a4-a0a6-73aa90668ec3");
@@ -3506,6 +3664,30 @@ namespace B_EXOPV_005
                 get
                 {
                     return _colexopbelegnrrow8Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColExopNrfremdbelegRow8 item.
+            /// </summary>
+            [RepositoryItem("54fa1abe-1823-4ecd-af6f-1e25717e37b0")]
+            public virtual Ranorex.Cell ColExopNrfremdbelegRow8
+            {
+                get
+                {
+                    return _colexopnrfremdbelegrow8Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColExopNrfremdbelegRow8 item info.
+            /// </summary>
+            [RepositoryItemInfo("54fa1abe-1823-4ecd-af6f-1e25717e37b0")]
+            public virtual RepoItemInfo ColExopNrfremdbelegRow8Info
+            {
+                get
+                {
+                    return _colexopnrfremdbelegrow8Info;
                 }
             }
 

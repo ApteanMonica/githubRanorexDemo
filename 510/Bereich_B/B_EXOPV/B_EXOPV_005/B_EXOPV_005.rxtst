@@ -3,6 +3,20 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
+			id="080e79cc-6e46-4943-815d-9a1bdad97631"
+			name="B_EXOPS_Einschraenkung_B_EXOPV_005_neu_laden"
+			ref="6e7cc54a-f7bd-4d2a-8aef-251a45d614b2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="c74bbbce-573f-499a-8891-92f7c016b9da"
+					variablename="Stapel_Herkunft">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="0a0cad2c-6fe5-4217-a36a-b4f4e75d5406"
 			name="Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen"
 			ref="1cfcac4c-78be-4e27-973f-e15e795219c1"
@@ -72,16 +86,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="9dad8f90-8bfc-486b-8025-0a9b54f65a42"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm_2"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="b63c751a-fec9-469e-844a-1573bcba0e6d"
 					variablename="Programm_2">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="9dad8f90-8bfc-486b-8025-0a9b54f65a42"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -141,34 +155,6 @@
 				<description>
 					<![CDATA[Workaround: Einschränkung Belegnr %EXOPV_005% statt $Stapel_Herkunft wegen verkürzter NEU-Belegnummern BUG 38668]]>
 				</description>
-			</testmodule>
-			<testmodule
-			id="3030fd4b-a955-4cb9-88fa-3174b738ce08"
-			name="B_EXOPS_Einschraenkung_nur_B_EXOPV_005"
-			ref="15736ee8-7921-45fc-a34d-05c6dbed837f"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Stapel_Herkunft"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="ad652474-92e7-4dee-a732-0a3088aace38"
-					variablename="Stapel_Herkunft">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="33541e09-be34-4e76-af83-c3d2e1d4d02c"
-			name="B_EXOPS_neu_laden"
-			ref="5d91eadb-9556-4888-8dea-b1b80a770e1b"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Stapel_Herkunft"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="c48b93b8-1c9b-432f-8c96-1fffeb97e4c6"
-					variablename="Stapel_Herkunft">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="36a37167-209c-4928-805c-ca09598f35a0"
@@ -497,6 +483,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="b4a30dac-a69c-4ea8-bd16-3ae9a9778f51"
+			name="B_EXOPS_Einschraenkung_B_EXOPV_005_neu_laden"
+			ref="6e7cc54a-f7bd-4d2a-8aef-251a45d614b2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="c74bbbce-573f-499a-8891-92f7c016b9da"
+					variablename="Stapel_Herkunft">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="bbf8e029-8ead-4dc0-acfd-e9d630550600"
 			name="B_BUAB_Einschraenkungen_NEU_laden_11_Buchungen"
 			ref="60aa254c-ec39-4c8b-83a9-c677af5c3b5d"
@@ -540,6 +540,20 @@
 				<description>
 					<![CDATA[BUG 37789 nur ER01/ER03 (LF1) + ER03(LF02) sind auf Status F, dopp Belege in Schnittstelle bleiben auf Status N - Fehler?]]>
 				</description>
+				<databinding>
+					<var
+					dataname="LF_01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="9fb19131-9cc7-4465-a9b1-66832a485bc9"
+					variablename="LF_01">
+					</var>
+					<var
+					dataname="LF_02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="36ce7703-a1c3-45b9-92cd-5e1431b792a3"
+					variablename="LF_02">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="ea0ee79a-4bc4-403d-a03e-1a5d8e5c48c4"
@@ -579,6 +593,20 @@
 			name="B_EXOPS_Belegnummern_vor_Pruefung_kontrollieren"
 			ref="1a7d0a79-c1fb-4c03-ac7e-8692e9bf99f8"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="LF_01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="3cbf3947-cb6e-49df-89e0-4fbee6a9f670"
+					variablename="LF_01">
+					</var>
+					<var
+					dataname="LF_02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="39bfb608-9139-4e12-9768-64871bc4265e"
+					variablename="LF_02">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="f8634cf6-df12-495c-b102-8c2bae4614df"
@@ -603,6 +631,14 @@
 			name="B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren"
 			ref="3f436bc6-50d1-42fc-bc76-13c3c726a568"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="LF_01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="3f2d53db-8adc-46a0-9281-8a33af1e97f9"
+					variablename="LF_01">
+					</var>
+				</databinding>
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -696,8 +732,8 @@
 					id="c9f22167-116d-46e5-b2fc-de0a7ff30c6e"
 					name="B_EXOPS_Kontrolle_und_Status_auf_N_zurücksetzen">
 						<testmodule
-						id="3030fd4b-a955-4cb9-88fa-3174b738ce08"
-						name="B_EXOPS_Einschraenkung_nur_B_EXOPV_005">
+						id="080e79cc-6e46-4943-815d-9a1bdad97631"
+						name="B_EXOPS_Einschraenkung_B_EXOPV_005_neu_laden">
 						</testmodule>
 						<testmodule
 						id="e9f8b89f-9ccd-4003-a994-e49b44d5322e"
@@ -740,8 +776,8 @@
 					id="452bfe11-a84b-4803-bd19-94fac97f9f55"
 					name="B_EXOPS_Kontrolle_Status_nach_Verbuchung">
 						<testmodule
-						id="33541e09-be34-4e76-af83-c3d2e1d4d02c"
-						name="B_EXOPS_neu_laden">
+						id="b4a30dac-a69c-4ea8-bd16-3ae9a9778f51"
+						name="B_EXOPS_Einschraenkung_B_EXOPV_005_neu_laden">
 						</testmodule>
 						<testmodule
 						id="fd78c853-899f-4f47-97b8-6252a102302f"

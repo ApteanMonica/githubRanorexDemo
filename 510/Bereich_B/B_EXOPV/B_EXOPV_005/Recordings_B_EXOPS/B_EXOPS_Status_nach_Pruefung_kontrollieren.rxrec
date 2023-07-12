@@ -23,8 +23,27 @@ mode="Global">
 	namespace="B_EXOPV_005.Recordings_B_EXOPS">
 	</codegen>
 	<variables>
+		<var
+		id="9fb19131-9cc7-4465-a9b1-66832a485bc9"
+		name="LF_01">
+			303201
+		</var>
+		<var
+		id="36ce7703-a1c3-45b9-92cd-5e1431b792a3"
+		name="LF_02">
+			303202
+		</var>
 	</variables>
 	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Zeile 1
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -54,6 +73,94 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
+		searchpropertyid="3d393ebc-aa91-402c-968e-e52a7801ba74">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="LF_01">
+				</binding>
+			</bindings>
+			<info
+			id="b98b4fd3-b6a1-4e09-ba23-cd2c33a75548"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXOP']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAdr_nr Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				N
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="3d393ebc-aa91-402c-968e-e52a7801ba74">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="20a13ddf-4d60-40db-a5bf-db1223426b27"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXOP']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExop_belegnr Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				ER01_B_EXOPV_005
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="3d393ebc-aa91-402c-968e-e52a7801ba74">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d33ba80f-89c1-4d3f-833a-0065e208964d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXOP']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExop_nrfremdbeleg Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				FB01_B_EXOPV_005
+			</matchvalue>
+		</validationitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Zeile 2
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
 		searchpropertyid="802bb1ac-4e1d-49bd-a10a-b3fad697e45e">
 			<comment>
 			</comment>
@@ -79,6 +186,94 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
+		searchpropertyid="3d393ebc-aa91-402c-968e-e52a7801ba74">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="LF_01">
+				</binding>
+			</bindings>
+			<info
+			id="f09b87b5-268b-4149-90dd-02309c0a7689"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXOP']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colAdr_nr Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				N
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="3d393ebc-aa91-402c-968e-e52a7801ba74">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1f4b96e7-30d2-400f-a117-043b3f30b04e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXOP']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colExop_belegnr Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				ER03_B_EXOPV_005
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="3d393ebc-aa91-402c-968e-e52a7801ba74">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="50a75b09-d39f-4830-9d72-a9dda417e71f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXOP']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colExop_nrfremdbeleg Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				FB02_B_EXOPV_005
+			</matchvalue>
+		</validationitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Zeile 3
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
 		searchpropertyid="70b61c4a-2cbf-4964-b75f-b8a32d8deda8">
 			<comment>
 			</comment>
@@ -100,6 +295,94 @@ mode="Global">
 				F
 			</matchvalue>
 		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="3d393ebc-aa91-402c-968e-e52a7801ba74">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="LF_02">
+				</binding>
+			</bindings>
+			<info
+			id="4a2fb5af-62eb-4648-b4e4-2ff890b0d056"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXOP']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colAdr_nr Row 3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				N
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="3d393ebc-aa91-402c-968e-e52a7801ba74">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d57edaf3-141e-4a4e-a9b3-2382203549d6"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXOP']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colExop_belegnr Row 3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				ER03_B_EXOPV_005
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="3d393ebc-aa91-402c-968e-e52a7801ba74">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="da93c666-f2a7-4d2f-bac6-ca8bbe17a24e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXOP']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colExop_nrfremdbeleg Row 3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				FB03_B_EXOPV_005
+			</matchvalue>
+		</validationitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Zeilen 4 - 8
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"

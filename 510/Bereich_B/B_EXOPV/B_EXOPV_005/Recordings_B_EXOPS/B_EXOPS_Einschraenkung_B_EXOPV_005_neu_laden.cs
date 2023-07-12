@@ -24,22 +24,22 @@ namespace B_EXOPV_005.Recordings_B_EXOPS
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The B_EXOPS_neu_laden recording.
+    ///The B_EXOPS_Einschraenkung_B_EXOPV_005_neu_laden recording.
     /// </summary>
-    [TestModule("5d91eadb-9556-4888-8dea-b1b80a770e1b", ModuleType.Recording, 1)]
-    public partial class B_EXOPS_neu_laden : ITestModule
+    [TestModule("6e7cc54a-f7bd-4d2a-8aef-251a45d614b2", ModuleType.Recording, 1)]
+    public partial class B_EXOPS_Einschraenkung_B_EXOPV_005_neu_laden : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_005.B_EXOPV_005Repository repository.
         /// </summary>
         public static global::B_EXOPV_005.B_EXOPV_005Repository repo = global::B_EXOPV_005.B_EXOPV_005Repository.Instance;
 
-        static B_EXOPS_neu_laden instance = new B_EXOPS_neu_laden();
+        static B_EXOPS_Einschraenkung_B_EXOPV_005_neu_laden instance = new B_EXOPS_Einschraenkung_B_EXOPV_005_neu_laden();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public B_EXOPS_neu_laden()
+        public B_EXOPS_Einschraenkung_B_EXOPV_005_neu_laden()
         {
             Stapel_Herkunft = "B_EXOPV_005";
         }
@@ -47,7 +47,7 @@ namespace B_EXOPV_005.Recordings_B_EXOPS
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static B_EXOPS_neu_laden Instance
+        public static B_EXOPS_Einschraenkung_B_EXOPV_005_neu_laden Instance
         {
             get { return instance; }
         }
@@ -57,7 +57,7 @@ namespace B_EXOPV_005.Recordings_B_EXOPS
         /// <summary>
         /// Gets or sets the value of variable Stapel_Herkunft.
         /// </summary>
-        [TestVariable("c48b93b8-1c9b-432f-8c96-1fffeb97e4c6")]
+        [TestVariable("c74bbbce-573f-499a-8891-92f7c016b9da")]
         public string Stapel_Herkunft
         {
             get { return repo.Stapel_Herkunft; }
@@ -90,13 +90,19 @@ namespace B_EXOPV_005.Recordings_B_EXOPS
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Stapel_Herkunft) on item 'FrmBEXOP_Verwalten_Schnittstelle.Tabelle_Einschraenkungen.ColHerkunftRow1'.", repo.FrmBEXOP_Verwalten_Schnittstelle.Tabelle_Einschraenkungen.ColHerkunftRow1Info, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmBEXOP_Verwalten_Schnittstelle.Tabelle_Einschraenkungen.ColKlsRow1'.", repo.FrmBEXOP_Verwalten_Schnittstelle.Tabelle_Einschraenkungen.ColKlsRow1Info, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.Tabelle_Einschraenkungen.ColKlsRow1Info, "Text", "");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmBEXOP_Verwalten_Schnittstelle.Tabelle_Einschraenkungen.ColStatusRow1'.", repo.FrmBEXOP_Verwalten_Schnittstelle.Tabelle_Einschraenkungen.ColStatusRow1Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.Tabelle_Einschraenkungen.ColStatusRow1Info, "Text", "");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Stapel_Herkunft) on item 'FrmBEXOP_Verwalten_Schnittstelle.Tabelle_Einschraenkungen.ColHerkunftRow1'.", repo.FrmBEXOP_Verwalten_Schnittstelle.Tabelle_Einschraenkungen.ColHerkunftRow1Info, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.Tabelle_Einschraenkungen.ColHerkunftRow1Info, "Text", Stapel_Herkunft);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBEXOP_Verwalten_Schnittstelle.PbDataAccessLoad' at Center.", repo.FrmBEXOP_Verwalten_Schnittstelle.PbDataAccessLoadInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBEXOP_Verwalten_Schnittstelle.PbDataAccessLoad' at Center.", repo.FrmBEXOP_Verwalten_Schnittstelle.PbDataAccessLoadInfo, new RecordItemIndex(3));
             repo.FrmBEXOP_Verwalten_Schnittstelle.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.Row1'", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.Row1Info, new ActionTimeout(60000), new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.Row1'", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.Row1Info, new ActionTimeout(60000), new RecordItemIndex(4));
             repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.Row1Info.WaitForExists(60000);
             
         }
