@@ -82,8 +82,8 @@ namespace B_BUKA_007.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuka.PbRsDmsButton' at Center.", repo.TblBuka.PbRsDmsButtonInfo, new RecordItemIndex(0));
             repo.TblBuka.PbRsDmsButton.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgDMSExplorer'.", repo.DlgDMSExplorer.SelfInfo, new RecordItemIndex(1));
-            Validate.Exists(repo.DlgDMSExplorer.SelfInfo);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDMSExplorer.TitleBarDMS'", repo.DlgDMSExplorer.TitleBarDMSInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.DlgDMSExplorer.TitleBarDMSInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  DMS Explorer') on item 'DlgDMSExplorer.TitleBarDMS'.", repo.DlgDMSExplorer.TitleBarDMSInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.DlgDMSExplorer.TitleBarDMSInfo, "Text", "[100]  DMS Explorer");
@@ -100,10 +100,13 @@ namespace B_BUKA_007.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBUKA.Hilfe' at Center.", repo.BBUKA.HilfeInfo, new RecordItemIndex(6));
             repo.BBUKA.Hilfe.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Rs2Hilfe.Rs2Hilfe'.", repo.Rs2Hilfe.Rs2HilfeInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Rs2Hilfe.Rs2Hilfe'", repo.Rs2Hilfe.Rs2HilfeInfo, new ActionTimeout(120000), new RecordItemIndex(7));
+            repo.Rs2Hilfe.Rs2HilfeInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Rs2Hilfe.Rs2Hilfe'.", repo.Rs2Hilfe.Rs2HilfeInfo, new RecordItemIndex(8));
             Validate.Exists(repo.Rs2Hilfe.Rs2HilfeInfo);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Rs2Hilfe.Schliessen' at Center.", repo.Rs2Hilfe.SchliessenInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Rs2Hilfe.Schliessen' at Center.", repo.Rs2Hilfe.SchliessenInfo, new RecordItemIndex(9));
             repo.Rs2Hilfe.Schliessen.Click();
             
         }

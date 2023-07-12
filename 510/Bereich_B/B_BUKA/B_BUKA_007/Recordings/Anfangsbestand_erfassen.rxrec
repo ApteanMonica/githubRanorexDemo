@@ -4323,31 +4323,26 @@ FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//
 2Q==
 			</helperscreenshot>
 		</mouseitem>
-		<validationitem
-		action="Exists"
+		<WaitForRecordItem
 		enabled="True"
 		optional="False"
-		searchpropertyid="f1ce070f-2bcf-4f4c-944f-2c9561a2b104">
+		searchpropertyid="7afb51e6-a56e-4bc6-a84b-c8d56ae2bb1b"
+		waitaction="Exists"
+		waittimeout="120000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="37d0adcf-b32c-4a2d-8b7f-ebae62503370"
-			sourcename="ItemRecorderEditor">
+			id="266b2ddb-f4f6-4f3e-b114-d1e5810f7aad"
+			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='dlgAnfang']
+					/form[@controlname='dlgAnfang']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeContains"
 		enabled="True"

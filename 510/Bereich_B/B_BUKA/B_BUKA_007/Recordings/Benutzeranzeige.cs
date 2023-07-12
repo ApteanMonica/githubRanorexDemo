@@ -82,8 +82,8 @@ namespace B_BUKA_007.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuka.PbCommonBenutzeranzeige' at Center.", repo.TblBuka.PbCommonBenutzeranzeigeInfo, new RecordItemIndex(0));
             repo.TblBuka.PbCommonBenutzeranzeige.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgBenutzeranzeige'.", repo.DlgBenutzeranzeige.SelfInfo, new RecordItemIndex(1));
-            Validate.Exists(repo.DlgBenutzeranzeige.SelfInfo);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgBenutzeranzeige.TitleBar100Benutzeranzeige'", repo.DlgBenutzeranzeige.TitleBar100BenutzeranzeigeInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.DlgBenutzeranzeige.TitleBar100BenutzeranzeigeInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Benutzeranzeige') on item 'DlgBenutzeranzeige.TitleBar100Benutzeranzeige'.", repo.DlgBenutzeranzeige.TitleBar100BenutzeranzeigeInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.DlgBenutzeranzeige.TitleBar100BenutzeranzeigeInfo, "Text", "Benutzeranzeige");

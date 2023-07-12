@@ -2736,8 +2736,8 @@ namespace B_BUKA_007
         [RepositoryFolder("e9e1add3-ae0e-46c6-9f5c-772effdea904")]
         public partial class DlgBenutzeranzeigeAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _schliessenInfo;
             RepoItemInfo _titlebar100benutzeranzeigeInfo;
+            RepoItemInfo _schliessenInfo;
             RepoItemInfo _row_for_validate_benutzerInfo;
 
             /// <summary>
@@ -2746,9 +2746,9 @@ namespace B_BUKA_007
             public DlgBenutzeranzeigeAppFolder(RepoGenBaseFolder parentFolder) :
                     base("DlgBenutzeranzeige", "/form[@controlname='dlgBenutzeranzeige']", parentFolder, 30000, null, true, "e9e1add3-ae0e-46c6-9f5c-772effdea904", "")
             {
-                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "?/?/button[@accessiblename='Schließen']", "", 30000, null, "aaf532b5-0629-435a-9ea7-5a6006fe2a32");
                 _titlebar100benutzeranzeigeInfo = new RepoItemInfo(this, "TitleBar100Benutzeranzeige", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "695cb889-538b-4099-8cea-931a03a17302");
-                _row_for_validate_benutzerInfo = new RepoItemInfo(this, "Row_for_validate_Benutzer", "container[@controlname='tblUser']//row[@accessiblename~'Row' and @accessiblerole~'Row' and @accessiblevalue~'RSY']", "", 30000, null, "515d3aeb-b708-4a06-afc7-a4e252007605");
+                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "903fbafa-36d1-4e17-81fb-989d224d4e83");
+                _row_for_validate_benutzerInfo = new RepoItemInfo(this, "Row_for_validate_Benutzer", "container[@controlname='tblUser']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename~'Row' and @accessiblerole~'Row' and @accessiblevalue~'RSY']", "", 30000, null, "515d3aeb-b708-4a06-afc7-a4e252007605");
             }
 
             /// <summary>
@@ -2776,30 +2776,6 @@ namespace B_BUKA_007
             }
 
             /// <summary>
-            /// The Schliessen item.
-            /// </summary>
-            [RepositoryItem("aaf532b5-0629-435a-9ea7-5a6006fe2a32")]
-            public virtual Ranorex.Button Schliessen
-            {
-                get
-                {
-                    return _schliessenInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Schliessen item info.
-            /// </summary>
-            [RepositoryItemInfo("aaf532b5-0629-435a-9ea7-5a6006fe2a32")]
-            public virtual RepoItemInfo SchliessenInfo
-            {
-                get
-                {
-                    return _schliessenInfo;
-                }
-            }
-
-            /// <summary>
             /// The TitleBar100Benutzeranzeige item.
             /// </summary>
             [RepositoryItem("695cb889-538b-4099-8cea-931a03a17302")]
@@ -2820,6 +2796,30 @@ namespace B_BUKA_007
                 get
                 {
                     return _titlebar100benutzeranzeigeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item.
+            /// </summary>
+            [RepositoryItem("903fbafa-36d1-4e17-81fb-989d224d4e83")]
+            public virtual Ranorex.Button Schliessen
+            {
+                get
+                {
+                    return _schliessenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item info.
+            /// </summary>
+            [RepositoryItemInfo("903fbafa-36d1-4e17-81fb-989d224d4e83")]
+            public virtual RepoItemInfo SchliessenInfo
+            {
+                get
+                {
+                    return _schliessenInfo;
                 }
             }
 
@@ -2854,9 +2854,9 @@ namespace B_BUKA_007
         [RepositoryFolder("ae12e344-5785-490e-8f68-6b61b4f30af1")]
         public partial class DlgDMSExplorerAppFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _titlebardmsInfo;
             RepoItemInfo _schliessen_dmsInfo;
             RepoItemInfo _ltitleInfo;
-            RepoItemInfo _titlebardmsInfo;
 
             /// <summary>
             /// Creates a new DlgDMSExplorer  folder.
@@ -2864,9 +2864,9 @@ namespace B_BUKA_007
             public DlgDMSExplorerAppFolder(RepoGenBaseFolder parentFolder) :
                     base("DlgDMSExplorer", "/form[@controlname='FormRsDmsExplorer']", parentFolder, 30000, null, false, "ae12e344-5785-490e-8f68-6b61b4f30af1", "")
             {
+                _titlebardmsInfo = new RepoItemInfo(this, "TitleBarDMS", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "98df0056-a026-4d08-aa65-897bc5a3bb8f");
                 _schliessen_dmsInfo = new RepoItemInfo(this, "Schliessen_DMS", "*[@accessiblevalue~'DMS Explorer']/?/button[@accessiblename='Schließen']", "", 30000, null, "c72bdef4-4d98-46fc-8f73-3b4503f2414c");
                 _ltitleInfo = new RepoItemInfo(this, "LTitle", "container[@controlname='ClientArea']/container[@controlname='explorer']/container[@controlname='rsSplitContainerDetail']/?/?/container[@controlname='rsSplitContainerVorschau']//text[@controlname='lTitle']", "", 30000, null, "19925585-152b-41d5-8b94-e49e6a36280c");
-                _titlebardmsInfo = new RepoItemInfo(this, "TitleBarDMS", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "98df0056-a026-4d08-aa65-897bc5a3bb8f");
             }
 
             /// <summary>
@@ -2890,6 +2890,30 @@ namespace B_BUKA_007
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBarDMS item.
+            /// </summary>
+            [RepositoryItem("98df0056-a026-4d08-aa65-897bc5a3bb8f")]
+            public virtual Ranorex.TitleBar TitleBarDMS
+            {
+                get
+                {
+                    return _titlebardmsInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBarDMS item info.
+            /// </summary>
+            [RepositoryItemInfo("98df0056-a026-4d08-aa65-897bc5a3bb8f")]
+            public virtual RepoItemInfo TitleBarDMSInfo
+            {
+                get
+                {
+                    return _titlebardmsInfo;
                 }
             }
 
@@ -2938,30 +2962,6 @@ namespace B_BUKA_007
                 get
                 {
                     return _ltitleInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TitleBarDMS item.
-            /// </summary>
-            [RepositoryItem("98df0056-a026-4d08-aa65-897bc5a3bb8f")]
-            public virtual Ranorex.TitleBar TitleBarDMS
-            {
-                get
-                {
-                    return _titlebardmsInfo.CreateAdapter<Ranorex.TitleBar>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TitleBarDMS item info.
-            /// </summary>
-            [RepositoryItemInfo("98df0056-a026-4d08-aa65-897bc5a3bb8f")]
-            public virtual RepoItemInfo TitleBarDMSInfo
-            {
-                get
-                {
-                    return _titlebardmsInfo;
                 }
             }
         }

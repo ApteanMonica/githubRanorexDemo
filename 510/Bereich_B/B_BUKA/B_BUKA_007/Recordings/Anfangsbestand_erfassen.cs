@@ -85,8 +85,8 @@ namespace B_BUKA_007.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBUKA.AnfangsbestandErfassen' at .356;.409.", repo.BBUKA.AnfangsbestandErfassenInfo, new RecordItemIndex(1));
             repo.BBUKA.AnfangsbestandErfassen.Click(".356;.409");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgAnfang'.", repo.DlgAnfang.SelfInfo, new RecordItemIndex(2));
-            Validate.Exists(repo.DlgAnfang.SelfInfo);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgAnfang.TitleBar100AnfangsbestandPerEndeM'", repo.DlgAnfang.TitleBar100AnfangsbestandPerEndeMInfo, new ActionTimeout(120000), new RecordItemIndex(2));
+            repo.DlgAnfang.TitleBar100AnfangsbestandPerEndeMInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Anfangsbestand') on item 'DlgAnfang.TitleBar100AnfangsbestandPerEndeM'.", repo.DlgAnfang.TitleBar100AnfangsbestandPerEndeMInfo, new RecordItemIndex(3));
             Validate.AttributeContains(repo.DlgAnfang.TitleBar100AnfangsbestandPerEndeMInfo, "Text", "Anfangsbestand");
