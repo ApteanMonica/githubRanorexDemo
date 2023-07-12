@@ -79,8 +79,8 @@ namespace B_EXOPV_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditor'.", repo.FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditorInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditor, 500);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditor'.", repo.FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditorInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditor, 500);
             
         }
 

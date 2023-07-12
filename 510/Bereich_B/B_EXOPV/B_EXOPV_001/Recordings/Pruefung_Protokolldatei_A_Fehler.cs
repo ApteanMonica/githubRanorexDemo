@@ -145,11 +145,11 @@ namespace B_EXOPV_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(10));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditor'", repo.FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditorInfo, new ActionTimeout(60000), new RecordItemIndex(11));
-            repo.FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditorInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditor'", repo.FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditorInfo, new ActionTimeout(60000), new RecordItemIndex(11));
+            repo.FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditorInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Fehlerprotokoll_b_exopv_001_A') on item 'FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditor'.", repo.FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditorInfo, new RecordItemIndex(12));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditorInfo, "Text", "Fehlerprotokoll_b_exopv_001_A");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Fehlerprotokoll_b_exopv_001_A') on item 'FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditor'.", repo.FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditorInfo, new RecordItemIndex(12));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditorInfo, "Text", "Fehlerprotokoll_b_exopv_001_A");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'B_EXOPV - Starte Prüfung') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(13));
             Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "B_EXOPV - Starte Prüfung");
