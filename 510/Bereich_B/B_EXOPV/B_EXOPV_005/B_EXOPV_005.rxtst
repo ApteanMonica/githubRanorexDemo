@@ -66,6 +66,26 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="182c69d0-10be-4f93-ac48-872317a99201"
+			name="Start_B_EXOPS"
+			ref="2c1809c9-c0c1-475e-b138-e305826b1b49"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="9dad8f90-8bfc-486b-8025-0a9b54f65a42"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_2"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="b63c751a-fec9-469e-844a-1573bcba0e6d"
+					variablename="Programm_2">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="1a440b67-19bc-4e21-83c3-d67adfd320f2"
 			name="Start_B_BUAB"
 			ref="23307373-546d-47a8-b04d-8ea957263cd0"
@@ -167,6 +187,10 @@
 			id="452bfe11-a84b-4803-bd19-94fac97f9f55"
 			name="B_EXOPS_Kontrolle_Status_nach_Verbuchung">
 			</testcase>
+			<testcase
+			id="47b3d845-886c-4462-9f09-53f85d1376be"
+			name="B_EXOPS_Kontrolle_vorhandene_Belege">
+			</testcase>
 			<testmodule
 			id="49c90754-615d-4e19-88cc-249440b7a279"
 			name="Pruefung_ohne_Fehler_mit_Default_Option"
@@ -237,34 +261,10 @@
 			ref="eda0d909-875e-436f-8396-b2160898b5de"
 			type="Recording">
 			</testmodule>
-			<setup
-			id="7c0348f9-6124-470c-add3-83ee733a9cd1"
-			name="setup">
-			</setup>
 			<teardown
 			id="85a66b3d-8220-4cfc-a043-f495ba09ce5a"
 			name="teardown">
 			</teardown>
-			<testmodule
-			id="89a95090-097b-4003-b693-edbd287ac83b"
-			name="Start_B_EXOPS"
-			ref="2c1809c9-c0c1-475e-b138-e305826b1b49"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Startfile"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="9dad8f90-8bfc-486b-8025-0a9b54f65a42"
-					variablename="Startfile">
-					</var>
-					<var
-					dataname="Programm_2"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="b63c751a-fec9-469e-844a-1573bcba0e6d"
-					variablename="Programm_2">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="94cdba0a-630a-4c0a-81d3-1990eed05d65"
 			name="B_BUAB_Tagesdatum_Tagesdatum2_valdieren_Usercode"
@@ -333,6 +333,10 @@
 			ref="446f3ba0-459f-43fd-8aff-78cb4a17eea7"
 			type="Recording">
 			</testmodule>
+			<setup
+			id="9c89764f-de61-46ff-8d84-bf21459dbba7"
+			name="setup">
+			</setup>
 			<testcase
 			id="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 			name="B_EXOPV_005"
@@ -570,6 +574,26 @@
 					<![CDATA[Variable $Stapel_Herkunft geändert auf EXOPV_005 (Verkürzung wegen Bug/belegnummernfeld zu kurz)]]>
 				</description>
 			</testcase>
+			<testmodule
+			id="f410c931-5aeb-45c8-b553-01188914aa93"
+			name="B_EXOPS_Belegnummern_vor_Pruefung_kontrollieren"
+			ref="1a7d0a79-c1fb-4c03-ac7e-8692e9bf99f8"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="f8634cf6-df12-495c-b102-8c2bae4614df"
+			name="B_EXOPS_Einschraenkung_nur_B_EXOPV_005"
+			ref="15736ee8-7921-45fc-a34d-05c6dbed837f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="ad652474-92e7-4dee-a732-0a3088aace38"
+					variablename="Stapel_Herkunft">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="fd2b4934-fcf3-483e-a6d6-dd83499de10b"
 			name="teardown">
@@ -606,6 +630,26 @@
 						<testmodule
 						id="ebc4b947-323b-4036-b95a-47e715b21946"
 						name="B_BUAB_alte_Belege_pruefen">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="47b3d845-886c-4462-9f09-53f85d1376be"
+					name="B_EXOPS_Kontrolle_vorhandene_Belege">
+						<setup
+						id="9c89764f-de61-46ff-8d84-bf21459dbba7"
+						name="setup">
+							<testmodule
+							id="182c69d0-10be-4f93-ac48-872317a99201"
+							name="Start_B_EXOPS">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="f8634cf6-df12-495c-b102-8c2bae4614df"
+						name="B_EXOPS_Einschraenkung_nur_B_EXOPV_005">
+						</testmodule>
+						<testmodule
+						id="f410c931-5aeb-45c8-b553-01188914aa93"
+						name="B_EXOPS_Belegnummern_vor_Pruefung_kontrollieren">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -651,14 +695,6 @@
 					<testcase
 					id="c9f22167-116d-46e5-b2fc-de0a7ff30c6e"
 					name="B_EXOPS_Kontrolle_und_Status_auf_N_zurücksetzen">
-						<setup
-						id="7c0348f9-6124-470c-add3-83ee733a9cd1"
-						name="setup">
-							<testmodule
-							id="89a95090-097b-4003-b693-edbd287ac83b"
-							name="Start_B_EXOPS">
-							</testmodule>
-						</setup>
 						<testmodule
 						id="3030fd4b-a955-4cb9-88fa-3174b738ce08"
 						name="B_EXOPS_Einschraenkung_nur_B_EXOPV_005">
@@ -763,6 +799,9 @@
 			</testcontainer>
 			<testcontainer
 			id="452bfe11-a84b-4803-bd19-94fac97f9f55">
+			</testcontainer>
+			<testcontainer
+			id="47b3d845-886c-4462-9f09-53f85d1376be">
 			</testcontainer>
 			<testcontainer
 			id="6406e09a-057a-43fb-8800-e15265b29c87">
