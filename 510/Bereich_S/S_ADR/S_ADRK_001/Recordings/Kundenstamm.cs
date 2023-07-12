@@ -41,7 +41,7 @@ namespace S_ADRK_001.Recordings
         /// </summary>
         public Kundenstamm()
         {
-            Aptean_Austria = "\r\nAptean Austria GmbH\r\nDorfstraße 67\nAT-5101 Bergheim\r\n\r\nMöchten Sie als gültige UID übernehmen?\r\n";
+            Aptean_Austria = "Aptean Austria GmbH";
         }
 
         /// <summary>
@@ -54,16 +54,14 @@ namespace S_ADRK_001.Recordings
 
 #region Variables
 
-        string _Aptean_Austria;
-
         /// <summary>
         /// Gets or sets the value of variable Aptean_Austria.
         /// </summary>
         [TestVariable("4f127bbc-eddf-499f-91b9-f1799323cadd")]
         public string Aptean_Austria
         {
-            get { return _Aptean_Austria; }
-            set { _Aptean_Austria = value; }
+            get { return repo.Aptean_Austria; }
+            set { repo.Aptean_Austria = value; }
         }
 
 #endregion
@@ -116,8 +114,8 @@ namespace S_ADRK_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'U75601939{Tab down}' with focus on 'FrmAdr.TpAllgemein.Text'.", repo.FrmAdr.TpAllgemein.TextInfo, new RecordItemIndex(7));
             repo.FrmAdr.TpAllgemein.Text.PressKeys("U75601939{Tab down}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Aptean_Austria) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(8));
-            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", Aptean_Austria);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Aptean_Austria) on item 'DlgMessageBox.LabelMeldungstext1'.", repo.DlgMessageBox.LabelMeldungstext1Info, new RecordItemIndex(8));
+            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstext1Info, "Text", Aptean_Austria);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Bestaetigung_Fehlermeldung' at Center.", repo.DlgMessageBox.Bestaetigung_FehlermeldungInfo, new RecordItemIndex(9));
             repo.DlgMessageBox.Bestaetigung_Fehlermeldung.Click();

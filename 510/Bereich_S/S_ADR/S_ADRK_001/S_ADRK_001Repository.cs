@@ -53,6 +53,18 @@ namespace S_ADRK_001
 
 #region Variables
 
+        string _Aptean_Austria = "Aptean Austria GmbH";
+
+        /// <summary>
+        /// Gets or sets the value of variable Aptean_Austria.
+        /// </summary>
+        [TestVariable("b547c3d0-ea17-4988-a3d0-16b0a905f38f")]
+        public string Aptean_Austria
+        {
+            get { return _Aptean_Austria; }
+            set { _Aptean_Austria = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -901,6 +913,7 @@ namespace S_ADRK_001
         {
             RepoItemInfo _labelmeldungstextInfo;
             RepoItemInfo _bestaetigung_fehlermeldungInfo;
+            RepoItemInfo _labelmeldungstext1Info;
 
             /// <summary>
             /// Creates a new DlgMessageBox  folder.
@@ -908,8 +921,9 @@ namespace S_ADRK_001
             public DlgMessageBoxAppFolder(RepoGenBaseFolder parentFolder) :
                     base("DlgMessageBox", "/form[@controlname='dlgMessageBox']", parentFolder, 30000, null, true, "e433ebb7-db4b-4904-825f-990ef1df7a3d", "")
             {
-                _labelmeldungstextInfo = new RepoItemInfo(this, "LabelMeldungstext", "text[@controlname='labelMeldungstext']", "", 30000, null, "bd4a7d2f-888b-4fed-9a09-30fd10fa5488");
+                _labelmeldungstextInfo = new RepoItemInfo(this, "LabelMeldungstext", "text[@controltypename='Label']", "", 30000, null, "bd4a7d2f-888b-4fed-9a09-30fd10fa5488");
                 _bestaetigung_fehlermeldungInfo = new RepoItemInfo(this, "Bestaetigung_Fehlermeldung", "button[@controlname='button0']", "", 30000, null, "5ef1b713-0d1e-4a28-b025-ead9b87a58dd");
+                _labelmeldungstext1Info = new RepoItemInfo(this, "LabelMeldungstext1", "text[@controlname='labelMeldungstext']", "", 30000, null, "e5bebb4c-e814-479f-8577-0da498e43deb");
             }
 
             /// <summary>
@@ -981,6 +995,30 @@ namespace S_ADRK_001
                 get
                 {
                     return _bestaetigung_fehlermeldungInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LabelMeldungstext1 item.
+            /// </summary>
+            [RepositoryItem("e5bebb4c-e814-479f-8577-0da498e43deb")]
+            public virtual Ranorex.Text LabelMeldungstext1
+            {
+                get
+                {
+                    return _labelmeldungstext1Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LabelMeldungstext1 item info.
+            /// </summary>
+            [RepositoryItemInfo("e5bebb4c-e814-479f-8577-0da498e43deb")]
+            public virtual RepoItemInfo LabelMeldungstext1Info
+            {
+                get
+                {
+                    return _labelmeldungstext1Info;
                 }
             }
         }
