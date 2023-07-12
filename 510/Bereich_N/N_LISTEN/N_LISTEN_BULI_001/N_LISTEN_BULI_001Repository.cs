@@ -31,6 +31,8 @@ namespace N_LISTEN_BULI_001
         N_LISTEN_BULI_001RepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
         N_LISTEN_BULI_001RepositoryFolders.Form100AVZAuswertungenBuchungslistAppFolder _form100avzauswertungenbuchungslist;
         N_LISTEN_BULI_001RepositoryFolders.AVZAuswertungenAppFolder _avzauswertungen;
+        N_LISTEN_BULI_001RepositoryFolders.DlgFibuAppFolder _dlgfibu;
+        N_LISTEN_BULI_001RepositoryFolders.FrmBEXOPAppFolder _frmbexop;
 
         /// <summary>
         /// Gets the singleton class instance representing the N_LISTEN_BULI_001Repository element repository.
@@ -51,6 +53,8 @@ namespace N_LISTEN_BULI_001
             _dlgmessagebox = new N_LISTEN_BULI_001RepositoryFolders.DlgMessageBoxAppFolder(this);
             _form100avzauswertungenbuchungslist = new N_LISTEN_BULI_001RepositoryFolders.Form100AVZAuswertungenBuchungslistAppFolder(this);
             _avzauswertungen = new N_LISTEN_BULI_001RepositoryFolders.AVZAuswertungenAppFolder(this);
+            _dlgfibu = new N_LISTEN_BULI_001RepositoryFolders.DlgFibuAppFolder(this);
+            _frmbexop = new N_LISTEN_BULI_001RepositoryFolders.FrmBEXOPAppFolder(this);
         }
 
 #region Variables
@@ -103,6 +107,24 @@ namespace N_LISTEN_BULI_001
         public virtual N_LISTEN_BULI_001RepositoryFolders.AVZAuswertungenAppFolder AVZAuswertungen
         {
             get { return _avzauswertungen; }
+        }
+
+        /// <summary>
+        /// The DlgFibu folder.
+        /// </summary>
+        [RepositoryFolder("9f807c1f-930b-4e8b-bcdb-89cec369dbdb")]
+        public virtual N_LISTEN_BULI_001RepositoryFolders.DlgFibuAppFolder DlgFibu
+        {
+            get { return _dlgfibu; }
+        }
+
+        /// <summary>
+        /// The FrmBEXOP folder.
+        /// </summary>
+        [RepositoryFolder("f1b6605b-3205-406e-9519-2854b7854d11")]
+        public virtual N_LISTEN_BULI_001RepositoryFolders.FrmBEXOPAppFolder FrmBEXOP
+        {
+            get { return _frmbexop; }
         }
     }
 
@@ -996,6 +1018,345 @@ namespace N_LISTEN_BULI_001
                 get
                 {
                     return _buttonjaInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DlgFibuAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("9f807c1f-930b-4e8b-bcdb-89cec369dbdb")]
+        public partial class DlgFibuAppFolder : RepoGenBaseFolder
+        {
+            N_LISTEN_BULI_001RepositoryFolders.Frame2Folder _frame2;
+            RepoItemInfo _titlebar100avzueberleitungfibumitInfo;
+            RepoItemInfo _pbstartInfo;
+
+            /// <summary>
+            /// Creates a new DlgFibu  folder.
+            /// </summary>
+            public DlgFibuAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DlgFibu", "/form[@controlname='dlgFibu']", parentFolder, 30000, null, true, "9f807c1f-930b-4e8b-bcdb-89cec369dbdb", "")
+            {
+                _frame2 = new N_LISTEN_BULI_001RepositoryFolders.Frame2Folder(this);
+                _titlebar100avzueberleitungfibumitInfo = new RepoItemInfo(this, "TitleBar100AVZUEberleitungFibuMIT", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "431d86a4-c1de-4727-8965-aaac68ae1f6d");
+                _pbstartInfo = new RepoItemInfo(this, "PbStart", "button[@controlname='pbStart']", "", 30000, null, "dfd7f986-2f28-4f84-bad8-f6d55a21e4b1");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("9f807c1f-930b-4e8b-bcdb-89cec369dbdb")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("9f807c1f-930b-4e8b-bcdb-89cec369dbdb")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100AVZUEberleitungFibuMIT item.
+            /// </summary>
+            [RepositoryItem("431d86a4-c1de-4727-8965-aaac68ae1f6d")]
+            public virtual Ranorex.TitleBar TitleBar100AVZUEberleitungFibuMIT
+            {
+                get
+                {
+                    return _titlebar100avzueberleitungfibumitInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100AVZUEberleitungFibuMIT item info.
+            /// </summary>
+            [RepositoryItemInfo("431d86a4-c1de-4727-8965-aaac68ae1f6d")]
+            public virtual RepoItemInfo TitleBar100AVZUEberleitungFibuMITInfo
+            {
+                get
+                {
+                    return _titlebar100avzueberleitungfibumitInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbStart item.
+            /// </summary>
+            [RepositoryItem("dfd7f986-2f28-4f84-bad8-f6d55a21e4b1")]
+            public virtual Ranorex.Button PbStart
+            {
+                get
+                {
+                    return _pbstartInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbStart item info.
+            /// </summary>
+            [RepositoryItemInfo("dfd7f986-2f28-4f84-bad8-f6d55a21e4b1")]
+            public virtual RepoItemInfo PbStartInfo
+            {
+                get
+                {
+                    return _pbstartInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Frame2 folder.
+            /// </summary>
+            [RepositoryFolder("dadbaace-9842-4791-a6bb-acc1c6b8230c")]
+            public virtual N_LISTEN_BULI_001RepositoryFolders.Frame2Folder Frame2
+            {
+                get { return _frame2; }
+            }
+        }
+
+        /// <summary>
+        /// The Frame2Folder folder.
+        /// </summary>
+        [RepositoryFolder("dadbaace-9842-4791-a6bb-acc1c6b8230c")]
+        public partial class Frame2Folder : RepoGenBaseFolder
+        {
+            RepoItemInfo _belegdatumInfo;
+            RepoItemInfo _belegnrInfo;
+            RepoItemInfo _ustcodeInfo;
+            RepoItemInfo _text_ueberleitung_monatInfo;
+            RepoItemInfo _text_ueberleitung_jahrInfo;
+
+            /// <summary>
+            /// Creates a new Frame2  folder.
+            /// </summary>
+            public Frame2Folder(RepoGenBaseFolder parentFolder) :
+                    base("Frame2", "container[@controlname='frame2']", parentFolder, 30000, null, false, "dadbaace-9842-4791-a6bb-acc1c6b8230c", "")
+            {
+                _belegdatumInfo = new RepoItemInfo(this, "BelegDatum", "?/?/text[@accessiblename='Beleg Datum']", "", 30000, null, "4d41fd1b-3b46-42d1-b3e8-3cf2e64f4010");
+                _belegnrInfo = new RepoItemInfo(this, "BelegNr", "?/?/text[@accessiblename='Beleg Nr.']", "", 30000, null, "1206b585-dd8c-4af0-85d4-19c17e51a7a4");
+                _ustcodeInfo = new RepoItemInfo(this, "UstCode", "?/?/text[@accessiblename='Ust-Code']", "", 30000, null, "0ab48276-ebb5-49b8-9e06-a0c7f1f62c71");
+                _text_ueberleitung_monatInfo = new RepoItemInfo(this, "Text_UEberleitung_Monat", "?/?/text[@accessiblename='/']", "", 30000, null, "f1831b47-6ef7-4b92-80c0-964285d0e258");
+                _text_ueberleitung_jahrInfo = new RepoItemInfo(this, "Text_UEberleitung_Jahr", "?/?/text[@accessiblename='Jahr / Monat']", "", 30000, null, "29513aa8-829e-4e27-ac24-e217d235569b");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("dadbaace-9842-4791-a6bb-acc1c6b8230c")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("dadbaace-9842-4791-a6bb-acc1c6b8230c")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BelegDatum item.
+            /// </summary>
+            [RepositoryItem("4d41fd1b-3b46-42d1-b3e8-3cf2e64f4010")]
+            public virtual Ranorex.Text BelegDatum
+            {
+                get
+                {
+                    return _belegdatumInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BelegDatum item info.
+            /// </summary>
+            [RepositoryItemInfo("4d41fd1b-3b46-42d1-b3e8-3cf2e64f4010")]
+            public virtual RepoItemInfo BelegDatumInfo
+            {
+                get
+                {
+                    return _belegdatumInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BelegNr item.
+            /// </summary>
+            [RepositoryItem("1206b585-dd8c-4af0-85d4-19c17e51a7a4")]
+            public virtual Ranorex.Text BelegNr
+            {
+                get
+                {
+                    return _belegnrInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BelegNr item info.
+            /// </summary>
+            [RepositoryItemInfo("1206b585-dd8c-4af0-85d4-19c17e51a7a4")]
+            public virtual RepoItemInfo BelegNrInfo
+            {
+                get
+                {
+                    return _belegnrInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UstCode item.
+            /// </summary>
+            [RepositoryItem("0ab48276-ebb5-49b8-9e06-a0c7f1f62c71")]
+            public virtual Ranorex.Text UstCode
+            {
+                get
+                {
+                    return _ustcodeInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UstCode item info.
+            /// </summary>
+            [RepositoryItemInfo("0ab48276-ebb5-49b8-9e06-a0c7f1f62c71")]
+            public virtual RepoItemInfo UstCodeInfo
+            {
+                get
+                {
+                    return _ustcodeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text_UEberleitung_Monat item.
+            /// </summary>
+            [RepositoryItem("f1831b47-6ef7-4b92-80c0-964285d0e258")]
+            public virtual Ranorex.Text Text_UEberleitung_Monat
+            {
+                get
+                {
+                    return _text_ueberleitung_monatInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text_UEberleitung_Monat item info.
+            /// </summary>
+            [RepositoryItemInfo("f1831b47-6ef7-4b92-80c0-964285d0e258")]
+            public virtual RepoItemInfo Text_UEberleitung_MonatInfo
+            {
+                get
+                {
+                    return _text_ueberleitung_monatInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text_UEberleitung_Jahr item.
+            /// </summary>
+            [RepositoryItem("29513aa8-829e-4e27-ac24-e217d235569b")]
+            public virtual Ranorex.Text Text_UEberleitung_Jahr
+            {
+                get
+                {
+                    return _text_ueberleitung_jahrInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text_UEberleitung_Jahr item info.
+            /// </summary>
+            [RepositoryItemInfo("29513aa8-829e-4e27-ac24-e217d235569b")]
+            public virtual RepoItemInfo Text_UEberleitung_JahrInfo
+            {
+                get
+                {
+                    return _text_ueberleitung_jahrInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FrmBEXOPAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("f1b6605b-3205-406e-9519-2854b7854d11")]
+        public partial class FrmBEXOPAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _titlebar100verwaltenschnittstelleeInfo;
+
+            /// <summary>
+            /// Creates a new FrmBEXOP  folder.
+            /// </summary>
+            public FrmBEXOPAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FrmBEXOP", "/form[@controlname='frmB_EXOP']", parentFolder, 30000, null, true, "f1b6605b-3205-406e-9519-2854b7854d11", "")
+            {
+                _titlebar100verwaltenschnittstelleeInfo = new RepoItemInfo(this, "TitleBar100VerwaltenSchnittstelleE", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "1967f7e9-66ce-459b-9831-ba3005e3988a");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("f1b6605b-3205-406e-9519-2854b7854d11")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("f1b6605b-3205-406e-9519-2854b7854d11")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100VerwaltenSchnittstelleE item.
+            /// </summary>
+            [RepositoryItem("1967f7e9-66ce-459b-9831-ba3005e3988a")]
+            public virtual Ranorex.TitleBar TitleBar100VerwaltenSchnittstelleE
+            {
+                get
+                {
+                    return _titlebar100verwaltenschnittstelleeInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100VerwaltenSchnittstelleE item info.
+            /// </summary>
+            [RepositoryItemInfo("1967f7e9-66ce-459b-9831-ba3005e3988a")]
+            public virtual RepoItemInfo TitleBar100VerwaltenSchnittstelleEInfo
+            {
+                get
+                {
+                    return _titlebar100verwaltenschnittstelleeInfo;
                 }
             }
         }

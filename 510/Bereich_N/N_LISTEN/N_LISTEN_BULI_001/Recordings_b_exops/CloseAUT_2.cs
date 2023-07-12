@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace N_LISTEN_BULI_001.Recordings
+namespace N_LISTEN_BULI_001.Recordings_b_exops
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT recording.
+    ///The CloseAUT_2 recording.
     /// </summary>
-    [TestModule("4f2b46e2-96a7-4344-b3a9-97f4b0d5ecee", ModuleType.Recording, 1)]
-    public partial class CloseAUT : ITestModule
+    [TestModule("ed05e554-c16a-456f-81e0-6907c11d6fc3", ModuleType.Recording, 1)]
+    public partial class CloseAUT_2 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repo = global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository.Instance;
 
-        static CloseAUT instance = new CloseAUT();
+        static CloseAUT_2 instance = new CloseAUT_2();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT()
+        public CloseAUT_2()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT Instance
+        public static CloseAUT_2 Instance
         {
             get { return instance; }
         }

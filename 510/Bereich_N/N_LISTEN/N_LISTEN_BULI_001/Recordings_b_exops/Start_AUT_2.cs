@@ -20,38 +20,64 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace N_LISTEN_BULI_001.Recordings
+namespace N_LISTEN_BULI_001.Recordings_b_exops
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT recording.
+    ///The Start_AUT_2 recording.
     /// </summary>
-    [TestModule("4f2b46e2-96a7-4344-b3a9-97f4b0d5ecee", ModuleType.Recording, 1)]
-    public partial class CloseAUT : ITestModule
+    [TestModule("bebf7672-7742-4bf1-885c-88c6ff5b934e", ModuleType.Recording, 1)]
+    public partial class Start_AUT_2 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repo = global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository.Instance;
 
-        static CloseAUT instance = new CloseAUT();
+        static Start_AUT_2 instance = new Start_AUT_2();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT()
+        public Start_AUT_2()
         {
+            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
+            Programm_2 = "B_EXOPS";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT Instance
+        public static Start_AUT_2 Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _Startfile;
+
+        /// <summary>
+        /// Gets or sets the value of variable Startfile.
+        /// </summary>
+        [TestVariable("287b6ae6-43a1-4476-9bbb-6dc155d1ffdd")]
+        public string Startfile
+        {
+            get { return _Startfile; }
+            set { _Startfile = value; }
+        }
+
+        string _Programm_2;
+
+        /// <summary>
+        /// Gets or sets the value of variable Programm_2.
+        /// </summary>
+        [TestVariable("0b2b0a24-4590-4f12-9dc6-d61d87d2f13d")]
+        public string Programm_2
+        {
+            get { return _Programm_2; }
+            set { _Programm_2 = value; }
+        }
 
 #endregion
 
@@ -79,8 +105,14 @@ namespace N_LISTEN_BULI_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmBEXOP.TitleBar100VerwaltenSchnittstelleE'.", repo.FrmBEXOP.TitleBar100VerwaltenSchnittstelleEInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FrmBEXOP.TitleBar100VerwaltenSchnittstelleE, new Duration(0));
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_2 in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile, Programm_2, "", false);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBEXOP.TitleBar100VerwaltenSchnittstelleE'", repo.FrmBEXOP.TitleBar100VerwaltenSchnittstelleEInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FrmBEXOP.TitleBar100VerwaltenSchnittstelleEInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  Verwalten Schnittstelle EXOP') on item 'FrmBEXOP.TitleBar100VerwaltenSchnittstelleE'.", repo.FrmBEXOP.TitleBar100VerwaltenSchnittstelleEInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.FrmBEXOP.TitleBar100VerwaltenSchnittstelleEInfo, "Text", "[100]  Verwalten Schnittstelle EXOP");
             
         }
 

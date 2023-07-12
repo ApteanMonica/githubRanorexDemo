@@ -41,6 +41,9 @@ namespace N_LISTEN_BULI_001.Recordings
         /// </summary>
         public Hinweismeldung_Ueberleiten()
         {
+            Belegnummer_Ueberleitung = "BULI_001_A";
+            Belegdatum_Ueberleitung = "31.12.2022";
+            Ust_Code_Ueberleitung = "V00";
         }
 
         /// <summary>
@@ -52,6 +55,42 @@ namespace N_LISTEN_BULI_001.Recordings
         }
 
 #region Variables
+
+        string _Belegnummer_Ueberleitung;
+
+        /// <summary>
+        /// Gets or sets the value of variable Belegnummer_Ueberleitung.
+        /// </summary>
+        [TestVariable("f8d654e2-68d0-41dd-8440-d05213ffc3bd")]
+        public string Belegnummer_Ueberleitung
+        {
+            get { return _Belegnummer_Ueberleitung; }
+            set { _Belegnummer_Ueberleitung = value; }
+        }
+
+        string _Belegdatum_Ueberleitung;
+
+        /// <summary>
+        /// Gets or sets the value of variable Belegdatum_Ueberleitung.
+        /// </summary>
+        [TestVariable("c92b0199-7c24-48fa-bf9f-9048fb04cdf0")]
+        public string Belegdatum_Ueberleitung
+        {
+            get { return _Belegdatum_Ueberleitung; }
+            set { _Belegdatum_Ueberleitung = value; }
+        }
+
+        string _Ust_Code_Ueberleitung;
+
+        /// <summary>
+        /// Gets or sets the value of variable Ust_Code_Ueberleitung.
+        /// </summary>
+        [TestVariable("bbc9c674-54fd-4dc8-a676-4ad2c1cbcf08")]
+        public string Ust_Code_Ueberleitung
+        {
+            get { return _Ust_Code_Ueberleitung; }
+            set { _Ust_Code_Ueberleitung = value; }
+        }
 
 #endregion
 
@@ -87,6 +126,12 @@ namespace N_LISTEN_BULI_001.Recordings
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AVZAuswertungen.ButtonJa' at Center.", repo.AVZAuswertungen.ButtonJaInfo, new RecordItemIndex(2));
             repo.AVZAuswertungen.ButtonJa.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new ActionTimeout(120000), new RecordItemIndex(3));
+            repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ-Überleitung Fibu MIT Bereiche') on item 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'.", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new RecordItemIndex(4));
+            Validate.AttributeContains(repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, "Text", "[100]  AVZ-Überleitung Fibu MIT Bereiche");
             
         }
 
