@@ -79,8 +79,8 @@ namespace N_LISTEN_BULI_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungs'.", repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungs, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmBEXOP.TitleBar100VerwaltenSchnittstelleE'.", repo.FrmBEXOP.TitleBar100VerwaltenSchnittstelleEInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.FrmBEXOP.TitleBar100VerwaltenSchnittstelleE, new Duration(0));
             
         }
 

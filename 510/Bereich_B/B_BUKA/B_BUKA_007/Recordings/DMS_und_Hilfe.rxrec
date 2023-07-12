@@ -4000,31 +4000,26 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
-		<validationitem
-		action="Exists"
+		<WaitForRecordItem
 		enabled="True"
 		optional="False"
-		searchpropertyid="99b2bad4-9184-43b1-a7c0-a020b7d3754b">
+		searchpropertyid="c90f6500-f1be-4d5f-b52d-bf7828a369c9"
+		waitaction="Exists"
+		waittimeout="120000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="ae12e344-5785-490e-8f68-6b61b4f30af1"
+			id="98df0056-a026-4d08-aa65-897bc5a3bb8f"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='FormRsDmsExplorer']
+					/form[@controlname='FormRsDmsExplorer']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
@@ -10094,6 +10089,26 @@ JLDJ79afRQBWisYIdvlmYBPur57kD8M4pyWcEcvmKhBGcDcSFz1wM4H4VPRQBAtnbqhQRjaUEeCS
 flHQfrQtnAqMu1m3EElnZicHI5JzU9FADUjRHdlGGc5Y56nGP6U6iigAooooAKKKKAP/2Q==
 			</helperscreenshot>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="c56225b4-7603-4562-9d75-c204ff6057b5"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b152a954-53e0-4df5-ab9c-3b63458c8ad3"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='rs2-Hilfe']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="Exists"
 		enabled="True"

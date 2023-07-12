@@ -41,6 +41,8 @@ namespace B_BUCH_004.Recordings
         /// </summary>
         public SaBu_Habenseite_erzeugen()
         {
+            Konto_H = "4100";
+            Buchungstext = "SACHBUCHUNG_TEST_01";
         }
 
         /// <summary>
@@ -52,6 +54,30 @@ namespace B_BUCH_004.Recordings
         }
 
 #region Variables
+
+        string _Konto_H;
+
+        /// <summary>
+        /// Gets or sets the value of variable Konto_H.
+        /// </summary>
+        [TestVariable("a59760a0-c3bb-401e-bca4-636fa1425f3f")]
+        public string Konto_H
+        {
+            get { return _Konto_H; }
+            set { _Konto_H = value; }
+        }
+
+        string _Buchungstext;
+
+        /// <summary>
+        /// Gets or sets the value of variable Buchungstext.
+        /// </summary>
+        [TestVariable("8af5317b-51dc-4900-896e-d8b14efca6da")]
+        public string Buchungstext
+        {
+            get { return _Buchungstext; }
+            set { _Buchungstext = value; }
+        }
 
 #endregion
 
@@ -79,48 +105,51 @@ namespace B_BUCH_004.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '4100' with focus on 'MdiBuch.FrmS.DfKtoNr'.", repo.MdiBuch.FrmS.DfKtoNrInfo, new RecordItemIndex(0));
-            repo.MdiBuch.FrmS.DfKtoNr.PressKeys("4100");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='H') on item 'MdiBuch.FrmS.TextSH'.", repo.MdiBuch.FrmS.TextSHInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.MdiBuch.FrmS.TextSHInfo, "Text", "H");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Buchungstext) on item 'MdiBuch.FrmS.Text'.", repo.MdiBuch.FrmS.TextInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.MdiBuch.FrmS.TextInfo, "Text", Buchungstext);
+            
+            // Erfassen
+            Report.Log(ReportLevel.Info, "Section", "Erfassen", new RecordItemIndex(2));
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Konto_H' with focus on 'MdiBuch.FrmS.DfKtoNr'.", repo.MdiBuch.FrmS.DfKtoNrInfo, new RecordItemIndex(3));
+            repo.MdiBuch.FrmS.DfKtoNr.PressKeys(Konto_H);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(4));
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiBuch.PbStandard7_Bereichsaufteilung' at Center.", repo.MdiBuch.PbStandard7_BereichsaufteilungInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiBuch.PbStandard7_Bereichsaufteilung' at Center.", repo.MdiBuch.PbStandard7_BereichsaufteilungInfo, new RecordItemIndex(5));
             repo.MdiBuch.PbStandard7_Bereichsaufteilung.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'MdiBuch.tblSB_Bereichsbuchungen.Row1'", repo.MdiBuch.tblSB_Bereichsbuchungen.Row1Info, new ActionTimeout(30000), new RecordItemIndex(3));
-            repo.MdiBuch.tblSB_Bereichsbuchungen.Row1Info.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'MdiBuch.tblSB_Bereichsbuchungen.Row1_Bereichsaufteilung'", repo.MdiBuch.tblSB_Bereichsbuchungen.Row1_BereichsaufteilungInfo, new ActionTimeout(60000), new RecordItemIndex(6));
+            repo.MdiBuch.tblSB_Bereichsbuchungen.Row1_BereichsaufteilungInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'MdiBuch.tblSB_Bereichsbuchungen.ColBubeBetragRow1' at Center.", repo.MdiBuch.tblSB_Bereichsbuchungen.ColBubeBetragRow1Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'MdiBuch.tblSB_Bereichsbuchungen.ColBubeBetragRow1' at Center.", repo.MdiBuch.tblSB_Bereichsbuchungen.ColBubeBetragRow1Info, new RecordItemIndex(7));
             repo.MdiBuch.tblSB_Bereichsbuchungen.ColBubeBetragRow1.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Back' Press with focus on 'MdiBuch.tblSB_Bereichsbuchungen.ColBubeBetragRow1'.", repo.MdiBuch.tblSB_Bereichsbuchungen.ColBubeBetragRow1Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Back' Press with focus on 'MdiBuch.tblSB_Bereichsbuchungen.ColBubeBetragRow1'.", repo.MdiBuch.tblSB_Bereichsbuchungen.ColBubeBetragRow1Info, new RecordItemIndex(8));
             Keyboard.PrepareFocus(repo.MdiBuch.tblSB_Bereichsbuchungen.ColBubeBetragRow1);
             Keyboard.Press(System.Windows.Forms.Keys.Back, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '50' with focus on 'MdiBuch.tblSB_Bereichsbuchungen.ColBubeBetragRow1'.", repo.MdiBuch.tblSB_Bereichsbuchungen.ColBubeBetragRow1Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '50' with focus on 'MdiBuch.tblSB_Bereichsbuchungen.ColBubeBetragRow1'.", repo.MdiBuch.tblSB_Bereichsbuchungen.ColBubeBetragRow1Info, new RecordItemIndex(9));
             repo.MdiBuch.tblSB_Bereichsbuchungen.ColBubeBetragRow1.PressKeys("50");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}{Tab}'.", new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}{Tab}'.", new RecordItemIndex(10));
             Keyboard.Press("{Tab}{Tab}{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '40' with focus on 'MdiBuch.tblSB_Bereichsbuchungen.ColBubeBektnr1Row1'.", repo.MdiBuch.tblSB_Bereichsbuchungen.ColBubeBektnr1Row1Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '40' with focus on 'MdiBuch.tblSB_Bereichsbuchungen.ColBubeBektnr1Row1'.", repo.MdiBuch.tblSB_Bereichsbuchungen.ColBubeBektnr1Row1Info, new RecordItemIndex(11));
             repo.MdiBuch.tblSB_Bereichsbuchungen.ColBubeBektnr1Row1.PressKeys("40");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}{Tab}{Tab}{Tab}'.", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}{Tab}{Tab}{Tab}'.", new RecordItemIndex(12));
             Keyboard.Press("{Tab}{Tab}{Tab}{Tab}{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '50' with focus on 'MdiBuch.tblSB_Bereichsbuchungen.ColBubeBektnr1Row2'.", repo.MdiBuch.tblSB_Bereichsbuchungen.ColBubeBektnr1Row2Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '50' with focus on 'MdiBuch.tblSB_Bereichsbuchungen.ColBubeBektnr1Row2'.", repo.MdiBuch.tblSB_Bereichsbuchungen.ColBubeBektnr1Row2Info, new RecordItemIndex(13));
             repo.MdiBuch.tblSB_Bereichsbuchungen.ColBubeBektnr1Row2.PressKeys("50");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(14));
             Keyboard.Press("{Tab}");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiBuch.PbStandard2' at Center.", repo.MdiBuch.PbStandard2Info, new RecordItemIndex(12));
-            repo.MdiBuch.PbStandard2.Click();
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiBuch.PbStandard2' at Center.", repo.MdiBuch.PbStandard2Info, new RecordItemIndex(13));
-            repo.MdiBuch.PbStandard2.Click();
             
         }
 

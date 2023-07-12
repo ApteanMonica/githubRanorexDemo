@@ -23,12 +23,13 @@ name="B_BUCH_002Repository">
 			<item
 			addcaps="titlebar,accessible"
 			capname="titlebar"
-			id="4477e472-1ab9-4d1c-9d35-2f3c3ce99c17"
-			name="TitleBar100Dialogbuchung_mit_Namen"
-			refimgid="7174f564-c0f9-4833-bb38-657995d6b97e"
+			id="d5d898c9-55cb-4c84-9ec5-2164fc29a7b8"
+			name="TitleBar100Dialogbuchung_Periodenauswahl"
+			refimgid="cc0a6a5f-94d1-4cbc-b039-e525bf71e7b5"
+			refpath="/form[@controlname='dlgFirmaPeriode']/titlebar[@accessiblerole='TitleBar']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='dlgFirmaPeriode']/titlebar[@accessiblerole='TitleBar' and @text~'Dialogbuchung']
+				/form[@controlname='dlgFirmaPeriode']/titlebar[@accessiblerole='TitleBar']
 			</item>
 			<item
 			addcaps="text,control,nativewindow"
@@ -711,6 +712,17 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 				/form[@controlname='tblB']/titlebar[@accessiblerole='TitleBar']
 			</item>
 			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="64a3e0db-b7ba-414d-bf81-3867fb8aa3e3"
+			name="Beleg"
+			refimgid="9188c89a-141c-4cf6-b1d5-1306cbe89533"
+			refpath="/form[@controlname='tblB']/container[@controlname='ToolBar']/container[@controlname='cDCC_Tools']/text[@controlname='dfBelegnr']/text[@accessiblename='Beleg']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblB']/container[@controlname='ToolBar']/container[@controlname='cDCC_Tools']/text[@controlname='dfBelegnr']/text[@accessiblename='Beleg']
+			</item>
+			<item
 			addcaps="button,control,nativewindow"
 			capname="button"
 			id="6be5b8b7-f8ae-448b-9517-aeeaa65c3a7a"
@@ -729,6 +741,27 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 			name="Tabelle_FlexGrid"
 			searchtimeout="30000ms"
 			usecache="False">
+				<item
+				addcaps="row,accessible"
+				capname="row"
+				id="b3ab7076-8e68-438a-a0b7-0d2a5929c8f5"
+				name="Row1"
+				refimgid="407593d6-6816-447e-853d-7bcae377f984"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="4a660dd1-2789-43bf-929a-d56e087800c0"
+				name="ColDtAendgRow1"
+				refimgid="c7e6e899-1781-4134-89cf-022508a402ec"
+				refpath="/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colDtAendg Row 1']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colDtAendg Row 1']
+				</item>
 				<item
 				addcaps="cell,accessible"
 				capname="cell"
@@ -858,6 +891,16 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 				robustPath=""
 				searchtimeout="30000ms">
 					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colUser Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="d16db403-ef10-41f3-a77a-b5924288ffec"
+				name="ColDtAendgRow2"
+				refimgid="c7e6e899-1781-4134-89cf-022508a402ec"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colDtAendg Row 2']
 				</item>
 				<item
 				addcaps="cell,accessible"

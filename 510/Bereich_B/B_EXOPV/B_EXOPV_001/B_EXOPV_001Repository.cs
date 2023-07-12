@@ -2572,7 +2572,7 @@ namespace B_EXOPV_001
         [RepositoryFolder("ae7b75e3-ccc5-469d-ac73-63f090c1304d")]
         public partial class FehlerprotokollBExopv001TxtEditorAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _fehlerprotokollbexopv001txteditorInfo;
+            RepoItemInfo _fehlerprotokoll_txteditorInfo;
             RepoItemInfo _text15Info;
             RepoItemInfo _schliessenInfo;
 
@@ -2582,7 +2582,7 @@ namespace B_EXOPV_001
             public FehlerprotokollBExopv001TxtEditorAppFolder(RepoGenBaseFolder parentFolder) :
                     base("FehlerprotokollBExopv001TxtEditor", "/form[@title~'Editor']", parentFolder, 30000, null, true, "ae7b75e3-ccc5-469d-ac73-63f090c1304d", "")
             {
-                _fehlerprotokollbexopv001txteditorInfo = new RepoItemInfo(this, "FehlerprotokollBExopv001TxtEditor", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "90867e14-70b2-4fe6-87d3-bb698ecdd0b9");
+                _fehlerprotokoll_txteditorInfo = new RepoItemInfo(this, "Fehlerprotokoll_TxtEditor", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "90867e14-70b2-4fe6-87d3-bb698ecdd0b9");
                 _text15Info = new RepoItemInfo(this, "Text15", "text[@controlid='15']", "", 30000, null, "ac8e93ef-39e2-41c3-bbd0-4ee6b455357e");
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "05d2e95a-9eb5-4906-9db2-2994e1aee0b9");
             }
@@ -2612,26 +2612,26 @@ namespace B_EXOPV_001
             }
 
             /// <summary>
-            /// The FehlerprotokollBExopv001TxtEditor item.
+            /// The Fehlerprotokoll_TxtEditor item.
             /// </summary>
             [RepositoryItem("90867e14-70b2-4fe6-87d3-bb698ecdd0b9")]
-            public virtual Ranorex.TitleBar FehlerprotokollBExopv001TxtEditor
+            public virtual Ranorex.TitleBar Fehlerprotokoll_TxtEditor
             {
                 get
                 {
-                    return _fehlerprotokollbexopv001txteditorInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                    return _fehlerprotokoll_txteditorInfo.CreateAdapter<Ranorex.TitleBar>(true);
                 }
             }
 
             /// <summary>
-            /// The FehlerprotokollBExopv001TxtEditor item info.
+            /// The Fehlerprotokoll_TxtEditor item info.
             /// </summary>
             [RepositoryItemInfo("90867e14-70b2-4fe6-87d3-bb698ecdd0b9")]
-            public virtual RepoItemInfo FehlerprotokollBExopv001TxtEditorInfo
+            public virtual RepoItemInfo Fehlerprotokoll_TxtEditorInfo
             {
                 get
                 {
-                    return _fehlerprotokollbexopv001txteditorInfo;
+                    return _fehlerprotokoll_txteditorInfo;
                 }
             }
 

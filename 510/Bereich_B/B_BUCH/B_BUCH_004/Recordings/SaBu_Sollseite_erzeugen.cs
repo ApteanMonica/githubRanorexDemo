@@ -43,6 +43,8 @@ namespace B_BUCH_004.Recordings
         {
             Datum_Beleg = "01.01.2020";
             Beleg1 = "SABU_TEST_01";
+            Konto_S = "4000";
+            Buchungstext = "SACHBUCHUNG_TEST_01";
         }
 
         /// <summary>
@@ -77,6 +79,30 @@ namespace B_BUCH_004.Recordings
         {
             get { return _Beleg1; }
             set { _Beleg1 = value; }
+        }
+
+        string _Konto_S;
+
+        /// <summary>
+        /// Gets or sets the value of variable Konto_S.
+        /// </summary>
+        [TestVariable("186ea32d-740c-46d4-98e1-e166b69afe8c")]
+        public string Konto_S
+        {
+            get { return _Konto_S; }
+            set { _Konto_S = value; }
+        }
+
+        string _Buchungstext;
+
+        /// <summary>
+        /// Gets or sets the value of variable Buchungstext.
+        /// </summary>
+        [TestVariable("37a8682f-5ec1-48c1-bfa1-2f99eb0d6852")]
+        public string Buchungstext
+        {
+            get { return _Buchungstext; }
+            set { _Buchungstext = value; }
         }
 
 #endregion
@@ -123,8 +149,8 @@ namespace B_BUCH_004.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'MdiBuch.FrmS.DfKtoNr'", repo.MdiBuch.FrmS.DfKtoNrInfo, new ActionTimeout(30000), new RecordItemIndex(5));
             repo.MdiBuch.FrmS.DfKtoNrInfo.WaitForExists(30000);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '4000' with focus on 'MdiBuch.FrmS.DfKtoNr'.", repo.MdiBuch.FrmS.DfKtoNrInfo, new RecordItemIndex(6));
-            repo.MdiBuch.FrmS.DfKtoNr.PressKeys("4000");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Konto_S' with focus on 'MdiBuch.FrmS.DfKtoNr'.", repo.MdiBuch.FrmS.DfKtoNrInfo, new RecordItemIndex(6));
+            repo.MdiBuch.FrmS.DfKtoNr.PressKeys(Konto_S);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(7));
             Keyboard.Press("{Tab}");
@@ -135,26 +161,14 @@ namespace B_BUCH_004.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}{Tab}'.", new RecordItemIndex(9));
             Keyboard.Press("{Tab}{Tab}{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'SACHBUCHUNG_TEST_01' with focus on 'MdiBuch.FrmS.Text'.", repo.MdiBuch.FrmS.TextInfo, new RecordItemIndex(10));
-            repo.MdiBuch.FrmS.Text.PressKeys("SACHBUCHUNG_TEST_01");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Buchungstext' with focus on 'MdiBuch.FrmS.Text'.", repo.MdiBuch.FrmS.TextInfo, new RecordItemIndex(10));
+            repo.MdiBuch.FrmS.Text.PressKeys(Buchungstext);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}{Tab}'.", new RecordItemIndex(11));
             Keyboard.Press("{Tab}{Tab}{Tab}");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '20' with focus on 'MdiBuch.FrmS.DfBubeBektnr1'.", repo.MdiBuch.FrmS.DfBubeBektnr1Info, new RecordItemIndex(12));
             repo.MdiBuch.FrmS.DfBubeBektnr1.PressKeys("20");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiBuch.PbStandard2' at Center.", repo.MdiBuch.PbStandard2Info, new RecordItemIndex(13));
-            repo.MdiBuch.PbStandard2.Click();
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgMessageBox'.", repo.DlgMessageBox.SelfInfo, new RecordItemIndex(14));
-            Validate.Exists(repo.DlgMessageBox.SelfInfo);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Soll-Buchung') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(15));
-            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Soll-Buchung");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(16));
-            repo.DlgMessageBox.Button0.Click();
             
         }
 

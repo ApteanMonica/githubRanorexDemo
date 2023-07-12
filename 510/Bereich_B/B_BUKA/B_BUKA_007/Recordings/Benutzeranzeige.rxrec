@@ -4028,31 +4028,26 @@ RQBPRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUU
 UAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH/9k=
 			</helperscreenshot>
 		</mouseitem>
-		<validationitem
-		action="Exists"
+		<WaitForRecordItem
 		enabled="True"
 		optional="False"
-		searchpropertyid="cba56c65-dbca-4bbe-818e-428cdbe99162">
+		searchpropertyid="00313f17-4a37-4240-a490-3542b67a164f"
+		waitaction="Exists"
+		waittimeout="120000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="e9e1add3-ae0e-46c6-9f5c-772effdea904"
+			id="695cb889-538b-4099-8cea-931a03a17302"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='dlgBenutzeranzeige']
+					/form[@controlname='dlgBenutzeranzeige']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
@@ -4120,10 +4115,59 @@ UAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH/9k=
 			<bindings>
 			</bindings>
 			<info
-			id="aaf532b5-0629-435a-9ea7-5a6006fe2a32"
-			sourcename="ItemRecorderEditor">
+			id="903fbafa-36d1-4e17-81fb-989d224d4e83"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="button"
+				rect="992,178,34,30"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Schließen
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Drücken
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Schließt das Fenster.
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Schließen
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PushButton
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+				</element>
 				<path>
-					/form[@controlname='dlgBenutzeranzeige']/?/?/button[@accessiblename='Schließen']
+					/form[@controlname='dlgBenutzeranzeige']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']
 				</path>
 				<robustPath>
 				</robustPath>

@@ -22,6 +22,17 @@ name="B_BUCH_001Repository">
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="d5d898c9-55cb-4c84-9ec5-2164fc29a7b8"
+			name="TitleBar100Dialogbuchung_Periodenauswahl"
+			refimgid="cc0a6a5f-94d1-4cbc-b039-e525bf71e7b5"
+			refpath="/form[@controlname='dlgFirmaPeriode']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgFirmaPeriode']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
 			addcaps="button,control,nativewindow"
 			capname="button"
 			id="cedd6635-10e3-46bb-a891-36a90aff248d"
@@ -31,16 +42,6 @@ name="B_BUCH_001Repository">
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='dlgFirmaPeriode']/button[@controlname='pbOK']
-			</item>
-			<item
-			addcaps="titlebar,accessible"
-			capname="titlebar"
-			id="eee3f765-832f-49f1-bf7b-19e0fceb733f"
-			name="TitleBar100Dialogbuchung_mit_Namen"
-			refimgid="2201b46e-fbc3-4e1d-a25e-be41d98d9f92"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgFirmaPeriode']/titlebar[@accessiblerole='TitleBar' and @text~'Dialogbuchung']
 			</item>
 			<item
 			addcaps="text,control,nativewindow"
@@ -1336,46 +1337,6 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
 YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
 nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
-			</icon>
-		</appfolder>
-		<appfolder
-		addcaps="host,nativewindow"
-		capname="host"
-		id="48b58a87-9ead-4d0f-b06e-6e67350a25ab"
-		isrooted="True"
-		name="WSPET"
-		refimgid="05b45d7d-4537-4015-855f-7fdad27ef97b"
-		refpath=""
-		searchtimeout="30000ms"
-		usecache="True">
-			<item
-			addcaps="host,nativewindow"
-			capname="host"
-			id="bb7656cf-c6f1-42fa-aec6-21d869e8552a"
-			name="WSPET"
-			refimgid="81b33a46-3841-483a-aab1-f39d2e4fb895"
-			refpath=""
-			robustPath=""
-			searchtimeout="30000ms">
-			</item>
-			<basepath>
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
-dC5ORVQgdjMuMzE3g3eGAAACtUlEQVQ4T62S6zOUYRiH9w/qYzM1o5moMUyNShmHpISUNhIrHRxW
-DjmXpcah2Ky1TcsSa5ZQ0u62csxxMI4p6URGWFlXz6rGNPu1e+b98sx7Xc/v996v5L/N4OgcPYPT
-WPomaH8zSotpGENbP3UtvVQbutDUWVDVmCjVtlOsaeMPtjNd/VNcfwwyNVwuh4ulEFoMQfchQGHj
-5B0rPlkreN1eRKFsdBQYO8eIroAHz6GgCbLqQa6DqxoIV0JIoV20iU/mCndKDY6CFuMQ4WWgEHCG
-gBOrIKYSpOIsWMCn8n7inbHM0VvzZBfXOwr0rX2cL4H0OkjQQrSoIhU1zooK/nc38MpY4oj8Pe6x
-o6QXPnUUVBk6t1+OewJRKgh78Bu2d7f39kh8h/vVEVwiOki9p3MUqGvN2x2viA94QcCBBeCXu86J
-tG94xM/iFjOES7iFfeeaSVJoHQVlYj2+OWuEihpn8rfwzV7leOoXDsdN4yobwFlqxinkGXtP15KQ
-+9hRUFT5HK/07wTk2/DJ/oFn8mcO3ZzENfqtgI04BTeyJ0DHbj8NN7IqHAUKZRNzn6xMza8zPrfG
-yMwqA5M/6B1bobXzI7UvJijWWgjtCkWWpvxXkJLz8KBG/3pTqXtJYWWz2HM9afe0xOeokKWUII0v
-IEiWjd+lFI4Fx+HmL9u8lFAU+QeXSDQNFv7Opm2LNauNpZWfzH+1MikS2dN0iySmwWVae5aoaZvl
-gHfkTgp1nXkbjjXFsm7d4oNhFwuLG8wsWGl8NUjFU6NIped6porYDBUlugH2n4jYEZTXGrGJm6sG
-9AxPLDA7VE579zRNpnFqWkdQN/RTUt2NQt1BziMzmWVG9nlKdwRFmma5eMhT6sVfVo38biXX0suI
-TCok7EYegVGZ+EqTt/u7+8fg7BVhF8glEonkF6m1M1/+IilrAAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
 		<basepath>

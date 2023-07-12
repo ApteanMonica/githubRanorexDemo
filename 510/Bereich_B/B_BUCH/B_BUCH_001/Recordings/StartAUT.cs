@@ -108,11 +108,17 @@ namespace B_BUCH_001.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgFirmaPeriode.TitleBar100Dialogbuchung_mit_Namen'", repo.DlgFirmaPeriode.TitleBar100Dialogbuchung_mit_NamenInfo, new ActionTimeout(180000), new RecordItemIndex(1));
-            repo.DlgFirmaPeriode.TitleBar100Dialogbuchung_mit_NamenInfo.WaitForExists(180000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'MdiBuch.TitleBar100Dialogbuchung'", repo.MdiBuch.TitleBar100DialogbuchungInfo, new ActionTimeout(300000), new RecordItemIndex(1));
+            repo.MdiBuch.TitleBar100DialogbuchungInfo.WaitForExists(300000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Dialogbuchung') on item 'DlgFirmaPeriode.TitleBar100Dialogbuchung_mit_Namen'.", repo.DlgFirmaPeriode.TitleBar100Dialogbuchung_mit_NamenInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.DlgFirmaPeriode.TitleBar100Dialogbuchung_mit_NamenInfo, "Text", "Dialogbuchung");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Dialogbuchung') on item 'MdiBuch.TitleBar100Dialogbuchung'.", repo.MdiBuch.TitleBar100DialogbuchungInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.MdiBuch.TitleBar100DialogbuchungInfo, "Text", "Dialogbuchung");
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgFirmaPeriode.TitleBar100Dialogbuchung_Periodenauswahl'", repo.DlgFirmaPeriode.TitleBar100Dialogbuchung_PeriodenauswahlInfo, new ActionTimeout(120000), new RecordItemIndex(3));
+            repo.DlgFirmaPeriode.TitleBar100Dialogbuchung_PeriodenauswahlInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Dialogbuchung') on item 'DlgFirmaPeriode.TitleBar100Dialogbuchung_Periodenauswahl'.", repo.DlgFirmaPeriode.TitleBar100Dialogbuchung_PeriodenauswahlInfo, new RecordItemIndex(4));
+            Validate.AttributeContains(repo.DlgFirmaPeriode.TitleBar100Dialogbuchung_PeriodenauswahlInfo, "Text", "Dialogbuchung");
             
         }
 

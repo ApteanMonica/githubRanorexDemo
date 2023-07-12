@@ -171,18 +171,6 @@
       <id>b68985b9-875c-4d7e-9ea0-62b1dd3f3915</id>
       <BoundTo>3a7b4761-cd22-46ce-a3b0-dc1ab799c51a</BoundTo>
     </Compile>
-    <Compile Include="Recordings\CloseAUT_2.cs">
-      <BoundTo>6a008cf8-34ee-44e0-894c-67d86b745c3e</BoundTo>
-      <DependentUpon>CloseAUT_2.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>968d542f-9aff-4152-9218-56b0af8e83c5</id>
-    </Compile>
-    <Compile Include="Recordings\CloseAUT_2.UserCode.cs">
-      <BoundTo>6a008cf8-34ee-44e0-894c-67d86b745c3e</BoundTo>
-      <DependentUpon>CloseAUT_2.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>43e2331b-a3cf-41f4-b9f5-ed630a0f37d6</id>
-    </Compile>
     <Compile Include="Recordings\Eingabe_Jahr_Periode_Busy.cs">
       <DependentUpon>Eingabe_Jahr_Periode_Busy.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -219,18 +207,6 @@
       <UserCode>true</UserCode>
       <id>be854c4e-43c6-4f08-8332-f72c7891c1a7</id>
     </Compile>
-    <Compile Include="Recordings\Grundeinstellungen.cs">
-      <BoundTo>36864b0b-2d19-416e-b34b-2fede7a4af96</BoundTo>
-      <DependentUpon>Grundeinstellungen.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>859aeb65-ecd9-4a61-8b38-ce380d5aa2af</id>
-    </Compile>
-    <Compile Include="Recordings\Grundeinstellungen.UserCode.cs">
-      <BoundTo>36864b0b-2d19-416e-b34b-2fede7a4af96</BoundTo>
-      <DependentUpon>Grundeinstellungen.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>6aac519a-f7ea-4591-a5eb-59a4a96a3d10</id>
-    </Compile>
     <Compile Include="Recordings\StartAUT.cs">
       <DependentUpon>StartAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -242,18 +218,6 @@
       <UserCode>true</UserCode>
       <id>7751f9fb-f7b6-4f98-81ec-bab5d0c811f5</id>
       <BoundTo>bcbcebb1-4c80-402f-8524-51ec26ebb11d</BoundTo>
-    </Compile>
-    <Compile Include="Recordings\StartAUT_2.cs">
-      <BoundTo>44b9dd9d-daab-4a71-a8ac-782c836fdd6b</BoundTo>
-      <DependentUpon>StartAUT_2.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>57c466c7-941c-4b70-b258-1a460e98d39d</id>
-    </Compile>
-    <Compile Include="Recordings\StartAUT_2.UserCode.cs">
-      <BoundTo>44b9dd9d-daab-4a71-a8ac-782c836fdd6b</BoundTo>
-      <DependentUpon>StartAUT_2.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>b92027cd-0b09-452c-bbfa-e6c2d3064a12</id>
     </Compile>
     <Compile Include="Recordings\Pruefung_Maske_nach_Ausgleich.cs">
       <DependentUpon>Pruefung_Maske_nach_Ausgleich.rxrec</DependentUpon>
@@ -278,18 +242,6 @@
       <DependentUpon>Validation_Eingabe_Zahlung.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>6857b37a-3ad0-48f9-bd57-e1203bafa9f4</id>
-    </Compile>
-    <Compile Include="Recordings\Validation_OP_Ausgleich_und_VZ_in_B_KLAB.cs">
-      <BoundTo>2b851a69-9dbb-4518-bcc0-6ae335bce467</BoundTo>
-      <DependentUpon>Validation_OP_Ausgleich_und_VZ_in_B_KLAB.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>90fcd66a-4d8a-4193-b77c-40d4d2a5aa57</id>
-    </Compile>
-    <Compile Include="Recordings\Validation_OP_Ausgleich_und_VZ_in_B_KLAB.UserCode.cs">
-      <BoundTo>2b851a69-9dbb-4518-bcc0-6ae335bce467</BoundTo>
-      <DependentUpon>Validation_OP_Ausgleich_und_VZ_in_B_KLAB.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>66153178-4e1f-465f-bd76-7833dc8aae2e</id>
     </Compile>
     <Compile Include="Recordings\Validation_Jahr_Periode_Busy.cs">
       <BoundTo>64f1a707-0e0c-45f0-a84d-c4656064e022</BoundTo>
@@ -327,6 +279,54 @@
       <UserCode>true</UserCode>
       <id>7644b32f-4040-4aa4-85de-5dd69df3e748</id>
     </Compile>
+    <Compile Include="Recordings_B_KLAB\CloseAUT_2.cs">
+      <DependentUpon>CloseAUT_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>968d542f-9aff-4152-9218-56b0af8e83c5</id>
+      <BoundTo>6a008cf8-34ee-44e0-894c-67d86b745c3e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\CloseAUT_2.UserCode.cs">
+      <DependentUpon>CloseAUT_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>43e2331b-a3cf-41f4-b9f5-ed630a0f37d6</id>
+      <BoundTo>6a008cf8-34ee-44e0-894c-67d86b745c3e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\Beleg_laden.cs">
+      <DependentUpon>Beleg_laden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>859aeb65-ecd9-4a61-8b38-ce380d5aa2af</id>
+      <BoundTo>36864b0b-2d19-416e-b34b-2fede7a4af96</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\Beleg_laden.UserCode.cs">
+      <DependentUpon>Beleg_laden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6aac519a-f7ea-4591-a5eb-59a4a96a3d10</id>
+      <BoundTo>36864b0b-2d19-416e-b34b-2fede7a4af96</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\StartAUT_2.cs">
+      <DependentUpon>StartAUT_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>57c466c7-941c-4b70-b258-1a460e98d39d</id>
+      <BoundTo>44b9dd9d-daab-4a71-a8ac-782c836fdd6b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\StartAUT_2.UserCode.cs">
+      <DependentUpon>StartAUT_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b92027cd-0b09-452c-bbfa-e6c2d3064a12</id>
+      <BoundTo>44b9dd9d-daab-4a71-a8ac-782c836fdd6b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\Validation_OP_Ausgleich_und_VZ_in_B_KLAB.cs">
+      <DependentUpon>Validation_OP_Ausgleich_und_VZ_in_B_KLAB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>90fcd66a-4d8a-4193-b77c-40d4d2a5aa57</id>
+      <BoundTo>2b851a69-9dbb-4518-bcc0-6ae335bce467</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_KLAB\Validation_OP_Ausgleich_und_VZ_in_B_KLAB.UserCode.cs">
+      <DependentUpon>Validation_OP_Ausgleich_und_VZ_in_B_KLAB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>66153178-4e1f-465f-bd76-7833dc8aae2e</id>
+      <BoundTo>2b851a69-9dbb-4518-bcc0-6ae335bce467</BoundTo>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -358,11 +358,6 @@
       <recordtableid>4bf935db-9ca5-4a59-bc3e-9932d57cee1e</recordtableid>
       <BoundTo>fff6d14d-4393-4587-a4f1-abd1799be732</BoundTo>
     </None>
-    <None Include="Recordings\CloseAUT_2.rxrec">
-      <BoundTo>fff6d14d-4393-4587-a4f1-abd1799be732</BoundTo>
-      <id>6a008cf8-34ee-44e0-894c-67d86b745c3e</id>
-      <recordtableid>b960e002-e6f6-4836-8346-4c5eef44a9ec</recordtableid>
-    </None>
     <None Include="Recordings\Eingabe_Jahr_Periode_Busy.rxrec">
       <BoundTo>fff6d14d-4393-4587-a4f1-abd1799be732</BoundTo>
       <id>44cd19fd-8c30-46e0-baa0-c7a97b44b518</id>
@@ -378,20 +373,10 @@
       <id>4e35c52d-d953-47c0-94db-93ab706883a1</id>
       <recordtableid>7a5ec590-fb2c-41f8-a930-97713c856322</recordtableid>
     </None>
-    <None Include="Recordings\Grundeinstellungen.rxrec">
-      <BoundTo>fff6d14d-4393-4587-a4f1-abd1799be732</BoundTo>
-      <id>36864b0b-2d19-416e-b34b-2fede7a4af96</id>
-      <recordtableid>dc49ba58-724d-48e1-bf8e-9b7f1dd83427</recordtableid>
-    </None>
     <None Include="Recordings\StartAUT.rxrec">
       <BoundTo>fff6d14d-4393-4587-a4f1-abd1799be732</BoundTo>
       <id>bcbcebb1-4c80-402f-8524-51ec26ebb11d</id>
       <recordtableid>10df3c68-282e-41ed-a8c3-e2906ee403a4</recordtableid>
-    </None>
-    <None Include="Recordings\StartAUT_2.rxrec">
-      <BoundTo>fff6d14d-4393-4587-a4f1-abd1799be732</BoundTo>
-      <id>44b9dd9d-daab-4a71-a8ac-782c836fdd6b</id>
-      <recordtableid>119d5d60-1454-44fa-b693-46f096dd201c</recordtableid>
     </None>
     <None Include="Recordings\Pruefung_Maske_nach_Ausgleich.rxrec">
       <BoundTo>fff6d14d-4393-4587-a4f1-abd1799be732</BoundTo>
@@ -402,11 +387,6 @@
       <BoundTo>fff6d14d-4393-4587-a4f1-abd1799be732</BoundTo>
       <id>73d17ccd-1ea3-47ff-8974-48fa9e302f9c</id>
       <recordtableid>42d68b07-e481-4e25-82df-5df1497c46cd</recordtableid>
-    </None>
-    <None Include="Recordings\Validation_OP_Ausgleich_und_VZ_in_B_KLAB.rxrec">
-      <BoundTo>fff6d14d-4393-4587-a4f1-abd1799be732</BoundTo>
-      <id>2b851a69-9dbb-4518-bcc0-6ae335bce467</id>
-      <recordtableid>b6b18c9f-70c1-4920-9eea-f69f2112510b</recordtableid>
     </None>
     <None Include="Recordings\Validation_Jahr_Periode_Busy.rxrec">
       <BoundTo>fff6d14d-4393-4587-a4f1-abd1799be732</BoundTo>
@@ -423,6 +403,26 @@
       <id>85866892-a131-4a57-a38a-ce7d9c958fdf</id>
       <recordtableid>067cbe58-00f0-4a0d-bdf6-30b6ac8d81aa</recordtableid>
     </None>
+    <None Include="Recordings_B_KLAB\CloseAUT_2.rxrec">
+      <BoundTo>fff6d14d-4393-4587-a4f1-abd1799be732</BoundTo>
+      <id>6a008cf8-34ee-44e0-894c-67d86b745c3e</id>
+      <recordtableid>b960e002-e6f6-4836-8346-4c5eef44a9ec</recordtableid>
+    </None>
+    <None Include="Recordings_B_KLAB\Beleg_laden.rxrec">
+      <BoundTo>fff6d14d-4393-4587-a4f1-abd1799be732</BoundTo>
+      <id>36864b0b-2d19-416e-b34b-2fede7a4af96</id>
+      <recordtableid>dc49ba58-724d-48e1-bf8e-9b7f1dd83427</recordtableid>
+    </None>
+    <None Include="Recordings_B_KLAB\StartAUT_2.rxrec">
+      <BoundTo>fff6d14d-4393-4587-a4f1-abd1799be732</BoundTo>
+      <id>44b9dd9d-daab-4a71-a8ac-782c836fdd6b</id>
+      <recordtableid>119d5d60-1454-44fa-b693-46f096dd201c</recordtableid>
+    </None>
+    <None Include="Recordings_B_KLAB\Validation_OP_Ausgleich_und_VZ_in_B_KLAB.rxrec">
+      <BoundTo>fff6d14d-4393-4587-a4f1-abd1799be732</BoundTo>
+      <id>2b851a69-9dbb-4518-bcc0-6ae335bce467</id>
+      <recordtableid>b6b18c9f-70c1-4920-9eea-f69f2112510b</recordtableid>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="B_BUCH_003.rxtmg">
@@ -435,6 +435,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Recordings_B_KLAB">
+      <id>5eb7f5c0-0edc-4281-820d-deb0489bd02b</id>
+    </Folder>
     <Folder Include="Recordings">
       <id>627500bf-ebad-42c1-a9ac-48b9b8b6dbc3</id>
     </Folder>

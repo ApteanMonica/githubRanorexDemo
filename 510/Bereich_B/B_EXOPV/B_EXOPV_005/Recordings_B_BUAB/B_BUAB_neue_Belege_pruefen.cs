@@ -171,11 +171,11 @@ namespace B_EXOPV_005.Recordings_B_BUAB
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_02) on item 'TblB.Buchungszeilen_Tabelle.Zeile19.ColAdrNrRow19'.", repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColAdrNrRow19Info, new RecordItemIndex(21));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColAdrNrRow19Info, "Text", LF_02);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER03_B_EXOPV_005_NEU') on item 'TblB.Buchungszeilen_Tabelle.Zeile19.ColBelegnrRow19'.", repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColBelegnrRow19Info, new RecordItemIndex(22));
-            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColBelegnrRow19Info, "Text", "ER03_B_EXOPV_005_NEU");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER03_EXOPV_005N') on item 'TblB.Buchungszeilen_Tabelle.Zeile19.ColBelegnrRow19'.", repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColBelegnrRow19Info, new RecordItemIndex(22));
+            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColBelegnrRow19Info, "Text", "ER03_EXOPV_005N");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB03_B_EXOPV_005_NEU') on item 'TblB.Buchungszeilen_Tabelle.Zeile19.ColBusaNrfremdbelegRow19'.", repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColBusaNrfremdbelegRow19Info, new RecordItemIndex(23));
-            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColBusaNrfremdbelegRow19Info, "Text", "FB03_B_EXOPV_005_NEU");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB03_EXOPV_005N') on item 'TblB.Buchungszeilen_Tabelle.Zeile19.ColBusaNrfremdbelegRow19'.", repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColBusaNrfremdbelegRow19Info, new RecordItemIndex(23));
+            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColBusaNrfremdbelegRow19Info, "Text", "FB03_EXOPV_005N");
             
             // Beleg
             Report.Log(ReportLevel.Info, "Section", "Beleg", new RecordItemIndex(24));

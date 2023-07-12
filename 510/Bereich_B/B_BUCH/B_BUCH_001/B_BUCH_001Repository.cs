@@ -32,7 +32,6 @@ namespace B_BUCH_001
         B_BUCH_001RepositoryFolders.MdiBuchAppFolder _mdibuch;
         B_BUCH_001RepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
         B_BUCH_001RepositoryFolders.TblB_b_buabAppFolder _tblb_b_buab;
-        B_BUCH_001RepositoryFolders.WSPETAppFolder _wspet;
 
         /// <summary>
         /// Gets the singleton class instance representing the B_BUCH_001Repository element repository.
@@ -54,7 +53,6 @@ namespace B_BUCH_001
             _mdibuch = new B_BUCH_001RepositoryFolders.MdiBuchAppFolder(this);
             _dlgmessagebox = new B_BUCH_001RepositoryFolders.DlgMessageBoxAppFolder(this);
             _tblb_b_buab = new B_BUCH_001RepositoryFolders.TblB_b_buabAppFolder(this);
-            _wspet = new B_BUCH_001RepositoryFolders.WSPETAppFolder(this);
         }
 
 #region Variables
@@ -117,15 +115,6 @@ namespace B_BUCH_001
         {
             get { return _tblb_b_buab; }
         }
-
-        /// <summary>
-        /// The WSPET folder.
-        /// </summary>
-        [RepositoryFolder("48b58a87-9ead-4d0f-b06e-6e67350a25ab")]
-        public virtual B_BUCH_001RepositoryFolders.WSPETAppFolder WSPET
-        {
-            get { return _wspet; }
-        }
     }
 
     /// <summary>
@@ -140,8 +129,8 @@ namespace B_BUCH_001
         [RepositoryFolder("91133e7c-1d67-43e3-8224-ce189f8a038c")]
         public partial class DlgFirmaPeriodeAppFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _titlebar100dialogbuchung_periodenauswahlInfo;
             RepoItemInfo _pbokInfo;
-            RepoItemInfo _titlebar100dialogbuchung_mit_namenInfo;
             RepoItemInfo _dfperiodejInfo;
             RepoItemInfo _dfjahrbezjInfo;
 
@@ -151,8 +140,8 @@ namespace B_BUCH_001
             public DlgFirmaPeriodeAppFolder(RepoGenBaseFolder parentFolder) :
                     base("DlgFirmaPeriode", "/form[@controlname='dlgFirmaPeriode']", parentFolder, 30000, null, true, "91133e7c-1d67-43e3-8224-ce189f8a038c", "")
             {
+                _titlebar100dialogbuchung_periodenauswahlInfo = new RepoItemInfo(this, "TitleBar100Dialogbuchung_Periodenauswahl", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "d5d898c9-55cb-4c84-9ec5-2164fc29a7b8");
                 _pbokInfo = new RepoItemInfo(this, "PbOK", "button[@controlname='pbOK']", "", 30000, null, "cedd6635-10e3-46bb-a891-36a90aff248d");
-                _titlebar100dialogbuchung_mit_namenInfo = new RepoItemInfo(this, "TitleBar100Dialogbuchung_mit_Namen", "titlebar[@accessiblerole='TitleBar' and @text~'Dialogbuchung']", "", 30000, null, "eee3f765-832f-49f1-bf7b-19e0fceb733f");
                 _dfperiodejInfo = new RepoItemInfo(this, "DfPeriodeJ", "text[@controlname='dfPeriodeJ']/text[@accessiblename='Monat:']", "", 30000, null, "205da405-7d88-4df6-ab96-824d70fe148a");
                 _dfjahrbezjInfo = new RepoItemInfo(this, "DfJahrbezJ", "text[@controlname='dfJahrbezJ']/text[@accessiblename='Jahr:']", "", 30000, null, "01dc2cc7-026e-4a58-bf3d-1a9dabe2a6e2");
             }
@@ -182,6 +171,30 @@ namespace B_BUCH_001
             }
 
             /// <summary>
+            /// The TitleBar100Dialogbuchung_Periodenauswahl item.
+            /// </summary>
+            [RepositoryItem("d5d898c9-55cb-4c84-9ec5-2164fc29a7b8")]
+            public virtual Ranorex.TitleBar TitleBar100Dialogbuchung_Periodenauswahl
+            {
+                get
+                {
+                    return _titlebar100dialogbuchung_periodenauswahlInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100Dialogbuchung_Periodenauswahl item info.
+            /// </summary>
+            [RepositoryItemInfo("d5d898c9-55cb-4c84-9ec5-2164fc29a7b8")]
+            public virtual RepoItemInfo TitleBar100Dialogbuchung_PeriodenauswahlInfo
+            {
+                get
+                {
+                    return _titlebar100dialogbuchung_periodenauswahlInfo;
+                }
+            }
+
+            /// <summary>
             /// The PbOK item.
             /// </summary>
             [RepositoryItem("cedd6635-10e3-46bb-a891-36a90aff248d")]
@@ -202,30 +215,6 @@ namespace B_BUCH_001
                 get
                 {
                     return _pbokInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TitleBar100Dialogbuchung_mit_Namen item.
-            /// </summary>
-            [RepositoryItem("eee3f765-832f-49f1-bf7b-19e0fceb733f")]
-            public virtual Ranorex.TitleBar TitleBar100Dialogbuchung_mit_Namen
-            {
-                get
-                {
-                    return _titlebar100dialogbuchung_mit_namenInfo.CreateAdapter<Ranorex.TitleBar>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TitleBar100Dialogbuchung_mit_Namen item info.
-            /// </summary>
-            [RepositoryItemInfo("eee3f765-832f-49f1-bf7b-19e0fceb733f")]
-            public virtual RepoItemInfo TitleBar100Dialogbuchung_mit_NamenInfo
-            {
-                get
-                {
-                    return _titlebar100dialogbuchung_mit_namenInfo;
                 }
             }
 
@@ -3571,72 +3560,6 @@ namespace B_BUCH_001
                 get
                 {
                     return _coluvarow3Info;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The WSPETAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("48b58a87-9ead-4d0f-b06e-6e67350a25ab")]
-        public partial class WSPETAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _wspetInfo;
-
-            /// <summary>
-            /// Creates a new WSPET  folder.
-            /// </summary>
-            public WSPETAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("WSPET", "", parentFolder, 30000, null, true, "48b58a87-9ead-4d0f-b06e-6e67350a25ab", "")
-            {
-                _wspetInfo = new RepoItemInfo(this, "WSPET", "", "", 30000, null, "bb7656cf-c6f1-42fa-aec6-21d869e8552a");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("48b58a87-9ead-4d0f-b06e-6e67350a25ab")]
-            public virtual Ranorex.Host Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Host>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("48b58a87-9ead-4d0f-b06e-6e67350a25ab")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The WSPET item.
-            /// </summary>
-            [RepositoryItem("bb7656cf-c6f1-42fa-aec6-21d869e8552a")]
-            public virtual Ranorex.Host WSPET
-            {
-                get
-                {
-                    return _wspetInfo.CreateAdapter<Ranorex.Host>(true);
-                }
-            }
-
-            /// <summary>
-            /// The WSPET item info.
-            /// </summary>
-            [RepositoryItemInfo("bb7656cf-c6f1-42fa-aec6-21d869e8552a")]
-            public virtual RepoItemInfo WSPETInfo
-            {
-                get
-                {
-                    return _wspetInfo;
                 }
             }
         }

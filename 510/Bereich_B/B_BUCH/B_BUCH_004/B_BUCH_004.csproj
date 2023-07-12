@@ -135,6 +135,18 @@
     <Compile Include="Program.cs">
       <id>832051a3-4542-4961-894d-44bc16433491</id>
     </Compile>
+    <Compile Include="Recordings\Abschluss_Soll_Seite_Meldung.cs">
+      <BoundTo>e7bc3d09-a73d-486b-9556-0af8fb3cfc38</BoundTo>
+      <DependentUpon>Abschluss_Soll_Seite_Meldung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6f41d31a-d707-44b3-9782-de503afc5d6e</id>
+    </Compile>
+    <Compile Include="Recordings\Abschluss_Soll_Seite_Meldung.UserCode.cs">
+      <BoundTo>e7bc3d09-a73d-486b-9556-0af8fb3cfc38</BoundTo>
+      <DependentUpon>Abschluss_Soll_Seite_Meldung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>42125742-d6a5-4e65-993a-d1c0ce8b0d47</id>
+    </Compile>
     <Compile Include="Recordings\Benutzer_bucht_schon_Ja_fortfahren.cs">
       <BoundTo>b3dfc33f-9167-40ae-9f91-c6aa4cbbf0fc</BoundTo>
       <DependentUpon>Benutzer_bucht_schon_Ja_fortfahren.rxrec</DependentUpon>
@@ -146,6 +158,18 @@
       <DependentUpon>Benutzer_bucht_schon_Ja_fortfahren.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>d87f7a01-677b-4785-bd56-59dec6a64861</id>
+    </Compile>
+    <Compile Include="Recordings\Buchungsabschluss_Pruefung_Maske.cs">
+      <BoundTo>1e37aef0-8952-4904-9fea-a078c9ff5f93</BoundTo>
+      <DependentUpon>Buchungsabschluss_Pruefung_Maske.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ed108573-6a7d-48a6-b7a6-a5c350b307a6</id>
+    </Compile>
+    <Compile Include="Recordings\Buchungsabschluss_Pruefung_Maske.UserCode.cs">
+      <BoundTo>1e37aef0-8952-4904-9fea-a078c9ff5f93</BoundTo>
+      <DependentUpon>Buchungsabschluss_Pruefung_Maske.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b4a96cc9-567b-49d8-aaf4-01aefec2b3fc</id>
     </Compile>
     <Compile Include="Recordings\CloseAUT.cs">
       <DependentUpon>CloseAUT.rxrec</DependentUpon>
@@ -159,18 +183,6 @@
       <id>5abf08d0-f836-44be-916e-f6b531535ba7</id>
       <BoundTo>cc10eb83-f2ca-4ac8-a663-1cc04cc129eb</BoundTo>
     </Compile>
-    <Compile Include="Recordings\CloseAUT_02.cs">
-      <BoundTo>9cfb65ce-8b82-467d-9054-c090a1dbf921</BoundTo>
-      <DependentUpon>CloseAUT_02.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>b942af08-bad2-430e-b1d7-c4cb4fae4b42</id>
-    </Compile>
-    <Compile Include="Recordings\CloseAUT_02.UserCode.cs">
-      <BoundTo>9cfb65ce-8b82-467d-9054-c090a1dbf921</BoundTo>
-      <DependentUpon>CloseAUT_02.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>8d6ef45b-69b9-4486-b0be-cea745fc818f</id>
-    </Compile>
     <Compile Include="Recordings\Eingabe_Jahr_Periode_Busy.cs">
       <DependentUpon>Eingabe_Jahr_Periode_Busy.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -182,6 +194,18 @@
       <UserCode>true</UserCode>
       <id>27e0a116-1e92-45e0-ae62-e31cda0d2a14</id>
       <BoundTo>c361dabb-5377-4b28-81d1-c166dbfa0e07</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Pruefung_Soll_Zeile.cs">
+      <BoundTo>8cd43a80-1b3f-4fde-bdbe-8b127bb3bbab</BoundTo>
+      <DependentUpon>Pruefung_Soll_Zeile.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9fdb38dd-db39-4c2d-8e4f-8673dd78d2d7</id>
+    </Compile>
+    <Compile Include="Recordings\Pruefung_Soll_Zeile.UserCode.cs">
+      <BoundTo>8cd43a80-1b3f-4fde-bdbe-8b127bb3bbab</BoundTo>
+      <DependentUpon>Pruefung_Soll_Zeile.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ff77efc4-cc56-4d82-8c4f-0bf9e75cbd26</id>
     </Compile>
     <Compile Include="Recordings\SaBu_Habenseite_erzeugen.cs">
       <BoundTo>ebaf9254-17d5-4a03-b97d-a9ad8922b95c</BoundTo>
@@ -219,17 +243,29 @@
       <id>dcd51cfa-8844-42c0-93dc-55a14b3c1a0c</id>
       <BoundTo>3613e2e2-a03f-4ff2-b488-4cb428fb0e8f</BoundTo>
     </Compile>
-    <Compile Include="Recordings\StartAUT_02.cs">
-      <BoundTo>654a9baf-0bab-4231-a80c-bc387ac6782b</BoundTo>
-      <DependentUpon>StartAUT_02.rxrec</DependentUpon>
+    <Compile Include="Recordings\Tagesdatum_ermitteln.cs">
+      <BoundTo>54b2ba1c-0d23-4bb8-a6ca-7e0ed5e1407b</BoundTo>
+      <DependentUpon>Tagesdatum_ermitteln.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>0da6c3ce-c0e4-48c2-8a28-136fb0ae534d</id>
+      <id>cf0c8228-be4b-42cf-ae2e-71eb4ff8f314</id>
     </Compile>
-    <Compile Include="Recordings\StartAUT_02.UserCode.cs">
-      <BoundTo>654a9baf-0bab-4231-a80c-bc387ac6782b</BoundTo>
-      <DependentUpon>StartAUT_02.rxrec</DependentUpon>
+    <Compile Include="Recordings\Tagesdatum_ermitteln.UserCode.cs">
+      <BoundTo>54b2ba1c-0d23-4bb8-a6ca-7e0ed5e1407b</BoundTo>
+      <DependentUpon>Tagesdatum_ermitteln.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>7d007041-5ab6-4cb5-b492-0a46d7199ab0</id>
+      <id>7062ace3-84da-4ed1-a6c5-668b74bad2c0</id>
+    </Compile>
+    <Compile Include="Recordings\Validation_Eingabe_Habenseite.cs">
+      <BoundTo>fb174e21-19ad-4502-aa09-68fcf668df41</BoundTo>
+      <DependentUpon>Validation_Eingabe_Habenseite.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f4294406-79c8-46c0-acf1-511089aeac71</id>
+    </Compile>
+    <Compile Include="Recordings\Validation_Eingabe_Habenseite.UserCode.cs">
+      <BoundTo>fb174e21-19ad-4502-aa09-68fcf668df41</BoundTo>
+      <DependentUpon>Validation_Eingabe_Habenseite.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aa3786cb-3059-44eb-a956-b900c8592604</id>
     </Compile>
     <Compile Include="Recordings\Validation_Eingabe_Sollseite.cs">
       <BoundTo>7808593e-65b2-4561-b70c-db814557a2e0</BoundTo>
@@ -243,30 +279,6 @@
       <UserCode>true</UserCode>
       <id>179c4a66-89ce-400e-9a22-e605a6a80add</id>
     </Compile>
-    <Compile Include="Recordings\Validation_SaBu_Pos1_in_B_BUAB.cs">
-      <BoundTo>1b4e135f-78b3-4440-9ec6-84016d76f83f</BoundTo>
-      <DependentUpon>Validation_SaBu_Pos1_in_B_BUAB.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>f975448c-6b90-4d33-add3-7fcb277f8736</id>
-    </Compile>
-    <Compile Include="Recordings\Validation_SaBu_Pos1_in_B_BUAB.UserCode.cs">
-      <BoundTo>1b4e135f-78b3-4440-9ec6-84016d76f83f</BoundTo>
-      <DependentUpon>Validation_SaBu_Pos1_in_B_BUAB.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>b172ec71-16a3-4bd2-851b-0d604d98516d</id>
-    </Compile>
-    <Compile Include="Recordings\Validation_SaBu_Pos2_in_B_BUAB.cs">
-      <BoundTo>3aa964ee-dd18-4690-be2d-f672667360fc</BoundTo>
-      <DependentUpon>Validation_SaBu_Pos2_in_B_BUAB.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>127c9594-2296-4cff-8ea4-1ea3f6836e9c</id>
-    </Compile>
-    <Compile Include="Recordings\Validation_SaBu_Pos2_in_B_BUAB.UserCode.cs">
-      <BoundTo>3aa964ee-dd18-4690-be2d-f672667360fc</BoundTo>
-      <DependentUpon>Validation_SaBu_Pos2_in_B_BUAB.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>42925a4f-c716-4a29-805b-5d5c662f1e40</id>
-    </Compile>
     <Compile Include="Recordings\Validation_Jahr_Periode_Busy.cs">
       <BoundTo>b8c2ef8d-6241-4883-a2f8-dd4090122d51</BoundTo>
       <DependentUpon>Validation_Jahr_Periode_Busy.rxrec</DependentUpon>
@@ -278,6 +290,78 @@
       <DependentUpon>Validation_Jahr_Periode_Busy.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>3b7c69b5-6489-4077-b312-a2fb549442d0</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Beleg_laden.cs">
+      <BoundTo>4123403e-037d-4758-b329-76f5c8045ab5</BoundTo>
+      <DependentUpon>Beleg_laden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>47d82b8d-6915-4d1b-bdb5-52fe37070acb</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Beleg_laden.UserCode.cs">
+      <BoundTo>4123403e-037d-4758-b329-76f5c8045ab5</BoundTo>
+      <DependentUpon>Beleg_laden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3f7f6f7a-42e1-4261-acd3-2d43e233dfb6</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\CloseAUT_02.cs">
+      <DependentUpon>CloseAUT_02.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b942af08-bad2-430e-b1d7-c4cb4fae4b42</id>
+      <BoundTo>9cfb65ce-8b82-467d-9054-c090a1dbf921</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\CloseAUT_02.UserCode.cs">
+      <DependentUpon>CloseAUT_02.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8d6ef45b-69b9-4486-b0be-cea745fc818f</id>
+      <BoundTo>9cfb65ce-8b82-467d-9054-c090a1dbf921</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\StartAUT_02.cs">
+      <DependentUpon>StartAUT_02.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0da6c3ce-c0e4-48c2-8a28-136fb0ae534d</id>
+      <BoundTo>654a9baf-0bab-4231-a80c-bc387ac6782b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\StartAUT_02.UserCode.cs">
+      <DependentUpon>StartAUT_02.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7d007041-5ab6-4cb5-b492-0a46d7199ab0</id>
+      <BoundTo>654a9baf-0bab-4231-a80c-bc387ac6782b</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Validation_SaBu_Pos1_in_B_BUAB.cs">
+      <DependentUpon>Validation_SaBu_Pos1_in_B_BUAB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f975448c-6b90-4d33-add3-7fcb277f8736</id>
+      <BoundTo>1b4e135f-78b3-4440-9ec6-84016d76f83f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Validation_SaBu_Pos1_in_B_BUAB.UserCode.cs">
+      <DependentUpon>Validation_SaBu_Pos1_in_B_BUAB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b172ec71-16a3-4bd2-851b-0d604d98516d</id>
+      <BoundTo>1b4e135f-78b3-4440-9ec6-84016d76f83f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Validation_SaBu_Pos2_Bereichsaufteilung.cs">
+      <DependentUpon>Validation_SaBu_Pos2_Bereichsaufteilung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d46eb091-6ff7-4ee2-87fd-aa0999659a6a</id>
+      <BoundTo>f5e4e5f5-0960-42a5-ae6e-b23900eaf095</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Validation_SaBu_Pos2_Bereichsaufteilung.UserCode.cs">
+      <DependentUpon>Validation_SaBu_Pos2_Bereichsaufteilung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>530ce52a-cf55-49be-9133-77e5c83538d0</id>
+      <BoundTo>f5e4e5f5-0960-42a5-ae6e-b23900eaf095</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Validation_SaBu_Pos2_in_B_BUAB.cs">
+      <DependentUpon>Validation_SaBu_Pos2_in_B_BUAB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>127c9594-2296-4cff-8ea4-1ea3f6836e9c</id>
+      <BoundTo>3aa964ee-dd18-4690-be2d-f672667360fc</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Validation_SaBu_Pos2_in_B_BUAB.UserCode.cs">
+      <DependentUpon>Validation_SaBu_Pos2_in_B_BUAB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>42925a4f-c716-4a29-805b-5d5c662f1e40</id>
+      <BoundTo>3aa964ee-dd18-4690-be2d-f672667360fc</BoundTo>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -295,25 +379,35 @@
       <repoid>5d055fcb-1faf-40cf-91e8-558e54d4db8b</repoid>
       <reporootid>d5cfaf5c-0128-402b-9460-2b5c690cc35a</reporootid>
     </None>
+    <None Include="Recordings\Abschluss_Soll_Seite_Meldung.rxrec">
+      <BoundTo>db09e1e7-d1e9-4d30-8adc-82183cdafac6</BoundTo>
+      <id>e7bc3d09-a73d-486b-9556-0af8fb3cfc38</id>
+      <recordtableid>1cab2efa-42b1-4695-953e-cda1207f9460</recordtableid>
+    </None>
     <None Include="Recordings\Benutzer_bucht_schon_Ja_fortfahren.rxrec">
       <BoundTo>db09e1e7-d1e9-4d30-8adc-82183cdafac6</BoundTo>
       <id>b3dfc33f-9167-40ae-9f91-c6aa4cbbf0fc</id>
       <recordtableid>e6bf9ec3-a6be-4f74-b088-2ee1be4bb81e</recordtableid>
+    </None>
+    <None Include="Recordings\Buchungsabschluss_Pruefung_Maske.rxrec">
+      <BoundTo>db09e1e7-d1e9-4d30-8adc-82183cdafac6</BoundTo>
+      <id>1e37aef0-8952-4904-9fea-a078c9ff5f93</id>
+      <recordtableid>d2996720-1750-49b4-b1b3-f45b0e39e05a</recordtableid>
     </None>
     <None Include="Recordings\CloseAUT.rxrec">
       <BoundTo>db09e1e7-d1e9-4d30-8adc-82183cdafac6</BoundTo>
       <id>cc10eb83-f2ca-4ac8-a663-1cc04cc129eb</id>
       <recordtableid>a30e0df5-c604-4e00-9fda-fc57451e8629</recordtableid>
     </None>
-    <None Include="Recordings\CloseAUT_02.rxrec">
-      <BoundTo>db09e1e7-d1e9-4d30-8adc-82183cdafac6</BoundTo>
-      <id>9cfb65ce-8b82-467d-9054-c090a1dbf921</id>
-      <recordtableid>5289a0a2-cebc-49cb-b166-7878de573e3f</recordtableid>
-    </None>
     <None Include="Recordings\Eingabe_Jahr_Periode_Busy.rxrec">
       <id>c361dabb-5377-4b28-81d1-c166dbfa0e07</id>
       <recordtableid>cf82f4ba-781f-44b9-8d92-256267b431cd</recordtableid>
       <BoundTo>db09e1e7-d1e9-4d30-8adc-82183cdafac6</BoundTo>
+    </None>
+    <None Include="Recordings\Pruefung_Soll_Zeile.rxrec">
+      <BoundTo>db09e1e7-d1e9-4d30-8adc-82183cdafac6</BoundTo>
+      <id>8cd43a80-1b3f-4fde-bdbe-8b127bb3bbab</id>
+      <recordtableid>2d42aed4-3e78-41fe-9ca8-311e4e8075cb</recordtableid>
     </None>
     <None Include="Recordings\SaBu_Habenseite_erzeugen.rxrec">
       <BoundTo>db09e1e7-d1e9-4d30-8adc-82183cdafac6</BoundTo>
@@ -330,30 +424,55 @@
       <id>3613e2e2-a03f-4ff2-b488-4cb428fb0e8f</id>
       <recordtableid>2472ebb2-cf83-4896-ae16-89645627b8da</recordtableid>
     </None>
-    <None Include="Recordings\StartAUT_02.rxrec">
+    <None Include="Recordings\Tagesdatum_ermitteln.rxrec">
       <BoundTo>db09e1e7-d1e9-4d30-8adc-82183cdafac6</BoundTo>
-      <id>654a9baf-0bab-4231-a80c-bc387ac6782b</id>
-      <recordtableid>c5a8265e-0f30-4e7f-8438-c435361c025c</recordtableid>
+      <id>54b2ba1c-0d23-4bb8-a6ca-7e0ed5e1407b</id>
+      <recordtableid>1b9ac561-d18a-4296-9a2c-10d346ecb7f0</recordtableid>
+    </None>
+    <None Include="Recordings\Validation_Eingabe_Habenseite.rxrec">
+      <BoundTo>db09e1e7-d1e9-4d30-8adc-82183cdafac6</BoundTo>
+      <id>fb174e21-19ad-4502-aa09-68fcf668df41</id>
+      <recordtableid>5be7a203-688b-4672-b90b-29c4bede03c6</recordtableid>
     </None>
     <None Include="Recordings\Validation_Eingabe_Sollseite.rxrec">
       <BoundTo>db09e1e7-d1e9-4d30-8adc-82183cdafac6</BoundTo>
       <id>7808593e-65b2-4561-b70c-db814557a2e0</id>
       <recordtableid>e11c88da-b547-4da2-a0b0-25d4ecef57c4</recordtableid>
     </None>
-    <None Include="Recordings\Validation_SaBu_Pos1_in_B_BUAB.rxrec">
-      <BoundTo>db09e1e7-d1e9-4d30-8adc-82183cdafac6</BoundTo>
-      <id>1b4e135f-78b3-4440-9ec6-84016d76f83f</id>
-      <recordtableid>83012134-2bfe-4882-bd98-8cecec0f70e8</recordtableid>
-    </None>
-    <None Include="Recordings\Validation_SaBu_Pos2_in_B_BUAB.rxrec">
-      <BoundTo>db09e1e7-d1e9-4d30-8adc-82183cdafac6</BoundTo>
-      <id>3aa964ee-dd18-4690-be2d-f672667360fc</id>
-      <recordtableid>b7ab3440-d536-4fd0-a04a-e863f8c2abff</recordtableid>
-    </None>
     <None Include="Recordings\Validation_Jahr_Periode_Busy.rxrec">
       <BoundTo>db09e1e7-d1e9-4d30-8adc-82183cdafac6</BoundTo>
       <id>b8c2ef8d-6241-4883-a2f8-dd4090122d51</id>
       <recordtableid>d65ba12e-8fa9-4175-8e90-8e16c7cb150c</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUAB\Beleg_laden.rxrec">
+      <BoundTo>db09e1e7-d1e9-4d30-8adc-82183cdafac6</BoundTo>
+      <id>4123403e-037d-4758-b329-76f5c8045ab5</id>
+      <recordtableid>7f4ee01f-b534-4a50-9bad-a34403152cb8</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUAB\CloseAUT_02.rxrec">
+      <BoundTo>db09e1e7-d1e9-4d30-8adc-82183cdafac6</BoundTo>
+      <id>9cfb65ce-8b82-467d-9054-c090a1dbf921</id>
+      <recordtableid>5289a0a2-cebc-49cb-b166-7878de573e3f</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUAB\StartAUT_02.rxrec">
+      <BoundTo>db09e1e7-d1e9-4d30-8adc-82183cdafac6</BoundTo>
+      <id>654a9baf-0bab-4231-a80c-bc387ac6782b</id>
+      <recordtableid>c5a8265e-0f30-4e7f-8438-c435361c025c</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUAB\Validation_SaBu_Pos1_in_B_BUAB.rxrec">
+      <BoundTo>db09e1e7-d1e9-4d30-8adc-82183cdafac6</BoundTo>
+      <id>1b4e135f-78b3-4440-9ec6-84016d76f83f</id>
+      <recordtableid>83012134-2bfe-4882-bd98-8cecec0f70e8</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUAB\Validation_SaBu_Pos2_Bereichsaufteilung.rxrec">
+      <BoundTo>db09e1e7-d1e9-4d30-8adc-82183cdafac6</BoundTo>
+      <id>f5e4e5f5-0960-42a5-ae6e-b23900eaf095</id>
+      <recordtableid>0650c312-de6e-4c17-8e68-675149a3d468</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUAB\Validation_SaBu_Pos2_in_B_BUAB.rxrec">
+      <BoundTo>db09e1e7-d1e9-4d30-8adc-82183cdafac6</BoundTo>
+      <id>3aa964ee-dd18-4690-be2d-f672667360fc</id>
+      <recordtableid>b7ab3440-d536-4fd0-a04a-e863f8c2abff</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -367,6 +486,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Recordings_B_BUAB">
+      <id>6f3f7d5e-ac39-4d7b-9d6d-2a9c3fe9e155</id>
+    </Folder>
     <Folder Include="Recordings">
       <id>c13f1742-3b59-4452-a0be-2b4ca71c089b</id>
     </Folder>

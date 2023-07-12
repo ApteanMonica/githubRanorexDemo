@@ -176,6 +176,9 @@
 			name="Tagesdatum_ermitteln"
 			ref="a99d5db0-c2f1-437f-89a3-83e7ec8dd6ad"
 			type="Recording">
+				<description>
+					<![CDATA[Tagesdatum ermitteln unmittelbar vor dem Verbuchen um Datumsunterschiede bei den Kontrollen zu vermeiden]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Tagesdatum"
@@ -642,20 +645,6 @@ Datum,Buchungs-Nr)]]>
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="865536fe-893b-4a04-84a2-855c13618b13"
-			name="Tagesdatum_ermitteln"
-			ref="a99d5db0-c2f1-437f-89a3-83e7ec8dd6ad"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Tagesdatum"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="27128d04-225a-49ea-8c3f-3ba7cb2dd595"
-					variablename="Tagesdatum">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="890c4e25-e8ce-4e54-9a45-9ab5deb1e57c"
 			name="Kontrolle_Bankbeleg_B_ZAHL"
 			ref="eb51d755-4afe-42a6-97af-3d2a3a340321"
@@ -881,21 +870,6 @@ Datum,Buchungs-Nr)]]>
 					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
 					variableid="6ccff321-5516-4826-8fe9-f43cbf218a37"
 					variablename="Programm3">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			enabled="False"
-			id="c25ea927-129a-4718-9a9c-8ee20120c8aa"
-			name="Tagesdatum_ermitteln"
-			ref="a99d5db0-c2f1-437f-89a3-83e7ec8dd6ad"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Tagesdatum"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="27128d04-225a-49ea-8c3f-3ba7cb2dd595"
-					variablename="Tagesdatum">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1347,6 +1321,10 @@ Datum,Buchungs-Nr)]]>
 						name="Bankbeleg_kontrollieren_B_ZAHLV">
 						</testmodule>
 						<testmodule
+						id="1f00ed20-fcce-4967-83e9-30a424550a9c"
+						name="Tagesdatum_ermitteln">
+						</testmodule>
+						<testmodule
 						id="33d53de1-f598-4511-b22e-0a368b10e574"
 						name="Bankbeleg_verbuchen_B_ZAHLV">
 						</testmodule>
@@ -1365,10 +1343,6 @@ Datum,Buchungs-Nr)]]>
 						<setup
 						id="8dda4697-a28d-43f7-a195-63d6aa7c624f"
 						name="setup">
-							<testmodule
-							id="1f00ed20-fcce-4967-83e9-30a424550a9c"
-							name="Tagesdatum_ermitteln">
-							</testmodule>
 							<testmodule
 							id="bfc65ea4-ea53-49cc-8f87-79f11396d5b4"
 							name="Start_B_BUAB">
@@ -1397,10 +1371,6 @@ Datum,Buchungs-Nr)]]>
 						<setup
 						id="a6a946ca-1864-4937-bf26-6b3a13a77236"
 						name="setup">
-							<testmodule
-							id="c25ea927-129a-4718-9a9c-8ee20120c8aa"
-							name="Tagesdatum_ermitteln">
-							</testmodule>
 							<testmodule
 							id="f3860927-48f0-4db6-8e11-9178a9d66eff"
 							name="Start_B_BUAB">
@@ -1445,10 +1415,6 @@ Datum,Buchungs-Nr)]]>
 						<setup
 						id="d7ccb4a1-b96c-4310-84db-6d9bf52f0590"
 						name="setup">
-							<testmodule
-							id="865536fe-893b-4a04-84a2-855c13618b13"
-							name="Tagesdatum_ermitteln">
-							</testmodule>
 							<testmodule
 							id="d8a4358a-9202-469b-bedd-f351fad5a117"
 							name="Start_B_BUAB">

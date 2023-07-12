@@ -68,8 +68,92 @@ mode="Desktop">
 			<bindings>
 			</bindings>
 			<info
-			id="8481007f-8708-4045-90a7-0e18907d0585"
+			id="cd7c5c88-a80e-4a3b-9cc2-7dfdf45e769a"
 			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='mdiBuch']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="6018d7c2-39ac-4496-8560-d8b43212f2c6">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="cd7c5c88-a80e-4a3b-9cc2-7dfdf45e769a"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='mdiBuch']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Dialogbuchung
+			</matchvalue>
+		</validationitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="7e52db81-d15a-4a0b-8d0c-1608994e4d82"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d5d898c9-55cb-4c84-9ec5-2164fc29a7b8"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="18"
+				prefcap="titlebar"
+				rect="444,291,479,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Dialogbuchung
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Dialogbuchung
+					</attribute>
+				</element>
 				<path>
 					/form[@controlname='dlgFirmaPeriode']/titlebar[@accessiblerole='TitleBar']
 				</path>
@@ -87,7 +171,7 @@ mode="Desktop">
 			<bindings>
 			</bindings>
 			<info
-			id="8481007f-8708-4045-90a7-0e18907d0585"
+			id="d5d898c9-55cb-4c84-9ec5-2164fc29a7b8"
 			sourcename="RepositoryEditor">
 				<path>
 					/form[@controlname='dlgFirmaPeriode']/titlebar[@accessiblerole='TitleBar']

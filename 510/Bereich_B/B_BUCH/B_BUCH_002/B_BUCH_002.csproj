@@ -171,18 +171,6 @@
       <id>6508d7d7-cbbf-44c9-8330-aff7d0b570e7</id>
       <BoundTo>1331957d-548d-400f-9363-7e79d59234f1</BoundTo>
     </Compile>
-    <Compile Include="Recordings\CloseAUT_02.cs">
-      <DependentUpon>CloseAUT_02.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>52c89a6b-62d5-481e-8b3a-cf186ca83bc7</id>
-      <BoundTo>09d91564-f166-4288-9510-f11047b53ed8</BoundTo>
-    </Compile>
-    <Compile Include="Recordings\CloseAUT_02.UserCode.cs">
-      <DependentUpon>CloseAUT_02.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>6f211c3e-7280-49df-810c-f59ce3580c92</id>
-      <BoundTo>09d91564-f166-4288-9510-f11047b53ed8</BoundTo>
-    </Compile>
     <Compile Include="Recordings\Eingabe_Buchungssymbol.cs">
       <DependentUpon>Eingabe_Buchungssymbol.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -243,17 +231,17 @@
       <id>0231a78e-946f-43ff-bed8-be1e7fcacb08</id>
       <BoundTo>173591ac-dcc0-44b7-b3e2-27da8288be02</BoundTo>
     </Compile>
-    <Compile Include="Recordings\StartAUT_02.cs">
-      <DependentUpon>StartAUT_02.rxrec</DependentUpon>
+    <Compile Include="Recordings\Tagesdatum_ermitteln.cs">
+      <DependentUpon>Tagesdatum_ermitteln.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>24d04d02-f547-4395-aa72-3761e0b5b1cb</id>
-      <BoundTo>08d927e8-1002-483a-8061-d2581e1c253f</BoundTo>
+      <id>4e331937-f074-42a5-9acf-ccff3ed48c23</id>
+      <BoundTo>2537db4d-6ad0-42a1-a841-35d8211f4e61</BoundTo>
     </Compile>
-    <Compile Include="Recordings\StartAUT_02.UserCode.cs">
-      <DependentUpon>StartAUT_02.rxrec</DependentUpon>
+    <Compile Include="Recordings\Tagesdatum_ermitteln.UserCode.cs">
+      <DependentUpon>Tagesdatum_ermitteln.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>ebdfb02d-c411-4c85-8b61-106252a79bd5</id>
-      <BoundTo>08d927e8-1002-483a-8061-d2581e1c253f</BoundTo>
+      <id>b604fee0-b979-4b69-8905-b941c994d03a</id>
+      <BoundTo>2537db4d-6ad0-42a1-a841-35d8211f4e61</BoundTo>
     </Compile>
     <Compile Include="Recordings\USt_Bereich_Buchungsende.cs">
       <BoundTo>c4bd87c7-4322-4e63-a473-e0a25b4746ed</BoundTo>
@@ -266,18 +254,6 @@
       <DependentUpon>USt_Bereich_Buchungsende.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>5c94b642-28b9-40b5-bd97-7b0a9a63ab78</id>
-    </Compile>
-    <Compile Include="Recordings\Validations_AR_Buchung_in_B_BUAB.cs">
-      <BoundTo>96d8a732-5d4f-461a-b06a-aea987a2a9db</BoundTo>
-      <DependentUpon>Validations_AR_Buchung_in_B_BUAB.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>a265091d-fff3-40cd-8cd4-f04421efb824</id>
-    </Compile>
-    <Compile Include="Recordings\Validations_AR_Buchung_in_B_BUAB.UserCode.cs">
-      <BoundTo>96d8a732-5d4f-461a-b06a-aea987a2a9db</BoundTo>
-      <DependentUpon>Validations_AR_Buchung_in_B_BUAB.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>4afc8244-4b0b-447c-a3e7-035b3c01521e</id>
     </Compile>
     <Compile Include="Recordings\Validation_SollWerte_auf_HabenSeite.cs">
       <BoundTo>399460ff-690d-4866-989b-d3c93aaebe69</BoundTo>
@@ -302,6 +278,54 @@
       <DependentUpon>Validation_Jahr_Periode_Busy.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>8df9b521-9990-45e0-bb52-9b25e07ba00b</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Beleg_laden.cs">
+      <DependentUpon>Beleg_laden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6d2a2ee8-99eb-4df6-b0d1-9c615134ad6a</id>
+      <BoundTo>357d7e31-bcf1-4c6e-8560-d0cd84529d39</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Beleg_laden.UserCode.cs">
+      <DependentUpon>Beleg_laden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ef557c87-ba73-4d73-b46b-7c477500e438</id>
+      <BoundTo>357d7e31-bcf1-4c6e-8560-d0cd84529d39</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\CloseAUT_02.cs">
+      <DependentUpon>CloseAUT_02.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>52c89a6b-62d5-481e-8b3a-cf186ca83bc7</id>
+      <BoundTo>09d91564-f166-4288-9510-f11047b53ed8</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\CloseAUT_02.UserCode.cs">
+      <DependentUpon>CloseAUT_02.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6f211c3e-7280-49df-810c-f59ce3580c92</id>
+      <BoundTo>09d91564-f166-4288-9510-f11047b53ed8</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\StartAUT_02.cs">
+      <DependentUpon>StartAUT_02.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>24d04d02-f547-4395-aa72-3761e0b5b1cb</id>
+      <BoundTo>08d927e8-1002-483a-8061-d2581e1c253f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\StartAUT_02.UserCode.cs">
+      <DependentUpon>StartAUT_02.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ebdfb02d-c411-4c85-8b61-106252a79bd5</id>
+      <BoundTo>08d927e8-1002-483a-8061-d2581e1c253f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Validations_AR_Buchung_in_B_BUAB.cs">
+      <DependentUpon>Validations_AR_Buchung_in_B_BUAB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a265091d-fff3-40cd-8cd4-f04421efb824</id>
+      <BoundTo>96d8a732-5d4f-461a-b06a-aea987a2a9db</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\Validations_AR_Buchung_in_B_BUAB.UserCode.cs">
+      <DependentUpon>Validations_AR_Buchung_in_B_BUAB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4afc8244-4b0b-447c-a3e7-035b3c01521e</id>
+      <BoundTo>96d8a732-5d4f-461a-b06a-aea987a2a9db</BoundTo>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -334,11 +358,6 @@
       <id>1331957d-548d-400f-9363-7e79d59234f1</id>
       <recordtableid>822536f4-df8d-4284-af56-cb804e57dcd6</recordtableid>
     </None>
-    <None Include="Recordings\CloseAUT_02.rxrec">
-      <id>09d91564-f166-4288-9510-f11047b53ed8</id>
-      <recordtableid>b6aed9b6-516c-4d71-b029-a51e02aed5e9</recordtableid>
-      <BoundTo>8c9257be-cde0-4948-a37b-e6a32ccf6054</BoundTo>
-    </None>
     <None Include="Recordings\Eingabe_Buchungssymbol.rxrec">
       <BoundTo>8c9257be-cde0-4948-a37b-e6a32ccf6054</BoundTo>
       <id>5f05b825-9545-4136-87f7-ea54155308fc</id>
@@ -364,20 +383,15 @@
       <id>173591ac-dcc0-44b7-b3e2-27da8288be02</id>
       <recordtableid>28e62599-97b5-4dca-bb94-43b40e7892f1</recordtableid>
     </None>
-    <None Include="Recordings\StartAUT_02.rxrec">
-      <id>08d927e8-1002-483a-8061-d2581e1c253f</id>
-      <recordtableid>8f9b9b30-35ee-4e13-98b5-f04061286677</recordtableid>
+    <None Include="Recordings\Tagesdatum_ermitteln.rxrec">
+      <id>2537db4d-6ad0-42a1-a841-35d8211f4e61</id>
+      <recordtableid>a7be6ab3-c6f1-4c9a-bdf4-7b82171fdabd</recordtableid>
       <BoundTo>8c9257be-cde0-4948-a37b-e6a32ccf6054</BoundTo>
     </None>
     <None Include="Recordings\USt_Bereich_Buchungsende.rxrec">
       <BoundTo>8c9257be-cde0-4948-a37b-e6a32ccf6054</BoundTo>
       <id>c4bd87c7-4322-4e63-a473-e0a25b4746ed</id>
       <recordtableid>6a027953-44f4-486a-97ae-29aeeb069675</recordtableid>
-    </None>
-    <None Include="Recordings\Validations_AR_Buchung_in_B_BUAB.rxrec">
-      <BoundTo>8c9257be-cde0-4948-a37b-e6a32ccf6054</BoundTo>
-      <id>96d8a732-5d4f-461a-b06a-aea987a2a9db</id>
-      <recordtableid>f76425df-6dcd-4e95-92cb-a19cfd709ee7</recordtableid>
     </None>
     <None Include="Recordings\Validation_SollWerte_auf_HabenSeite.rxrec">
       <BoundTo>8c9257be-cde0-4948-a37b-e6a32ccf6054</BoundTo>
@@ -388,6 +402,26 @@
       <BoundTo>8c9257be-cde0-4948-a37b-e6a32ccf6054</BoundTo>
       <id>1c4fcb13-aff6-47d5-9710-6b01a4536dfc</id>
       <recordtableid>9e945422-9b9f-4cec-af56-abc3b907024d</recordtableid>
+    </None>
+    <None Include="Recordings_B_BUAB\Beleg_laden.rxrec">
+      <id>357d7e31-bcf1-4c6e-8560-d0cd84529d39</id>
+      <recordtableid>672272ae-12ba-4137-81b5-ee33827e79fd</recordtableid>
+      <BoundTo>8c9257be-cde0-4948-a37b-e6a32ccf6054</BoundTo>
+    </None>
+    <None Include="Recordings_B_BUAB\CloseAUT_02.rxrec">
+      <id>09d91564-f166-4288-9510-f11047b53ed8</id>
+      <recordtableid>b6aed9b6-516c-4d71-b029-a51e02aed5e9</recordtableid>
+      <BoundTo>8c9257be-cde0-4948-a37b-e6a32ccf6054</BoundTo>
+    </None>
+    <None Include="Recordings_B_BUAB\StartAUT_02.rxrec">
+      <id>08d927e8-1002-483a-8061-d2581e1c253f</id>
+      <recordtableid>8f9b9b30-35ee-4e13-98b5-f04061286677</recordtableid>
+      <BoundTo>8c9257be-cde0-4948-a37b-e6a32ccf6054</BoundTo>
+    </None>
+    <None Include="Recordings_B_BUAB\Validations_AR_Buchung_in_B_BUAB.rxrec">
+      <BoundTo>8c9257be-cde0-4948-a37b-e6a32ccf6054</BoundTo>
+      <id>96d8a732-5d4f-461a-b06a-aea987a2a9db</id>
+      <recordtableid>f76425df-6dcd-4e95-92cb-a19cfd709ee7</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -401,6 +435,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Recordings_B_BUAB">
+      <id>058dbe96-2e81-4f69-8459-4d35843ce79d</id>
+    </Folder>
     <Folder Include="Recordings">
       <id>c3023165-0600-46ac-9231-4b5796eb45e8</id>
     </Folder>

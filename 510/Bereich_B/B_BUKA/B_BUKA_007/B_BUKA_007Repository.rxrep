@@ -1089,17 +1089,6 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
-			addcaps="button,accessible"
-			capname="button"
-			id="aaf532b5-0629-435a-9ea7-5a6006fe2a32"
-			name="Schliessen"
-			refimgid="eac54665-7c3f-4f3c-bbf9-368db7ac8590"
-			refpath="/form[@controlname='dlgBenutzeranzeige']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgBenutzeranzeige']/?/?/button[@accessiblename='Schließen']
-			</item>
-			<item
 			addcaps="titlebar,accessible"
 			capname="titlebar"
 			id="695cb889-538b-4099-8cea-931a03a17302"
@@ -1111,6 +1100,17 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 				/form[@controlname='dlgBenutzeranzeige']/titlebar[@accessiblerole='TitleBar']
 			</item>
 			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="903fbafa-36d1-4e17-81fb-989d224d4e83"
+			name="Schliessen"
+			refimgid="74628449-8bfb-40f1-97b4-459b8c42b998"
+			refpath="/form[@controlname='dlgBenutzeranzeige']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgBenutzeranzeige']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']
+			</item>
+			<item
 			addcaps="row,accessible"
 			capname="row"
 			id="515d3aeb-b708-4a06-afc7-a4e252007605"
@@ -1118,7 +1118,7 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			refimgid="830d361e-63e8-4d1d-a555-7cb2bf6db1ec"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='dlgBenutzeranzeige']/container[@controlname='tblUser']//row[@accessiblename~'Row' and @accessiblerole~'Row' and @accessiblevalue~'RSY']
+				/form[@controlname='dlgBenutzeranzeige']/container[@controlname='tblUser']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename~'Row' and @accessiblerole~'Row' and @accessiblevalue~'RSY']
 			</item>
 			<basepath>
 				/form[@controlname='dlgBenutzeranzeige']
@@ -1138,6 +1138,16 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 		searchtimeout="30000ms"
 		usecache="False">
 			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="98df0056-a026-4d08-aa65-897bc5a3bb8f"
+			name="TitleBarDMS"
+			refimgid="f66f71dd-98e3-414e-afff-910c13b25bf5"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='FormRsDmsExplorer']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
 			addcaps="button,accessible"
 			capname="button"
 			id="c72bdef4-4d98-46fc-8f73-3b4503f2414c"
@@ -1156,16 +1166,6 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='FormRsDmsExplorer']/container[@controlname='ClientArea']/container[@controlname='explorer']/container[@controlname='rsSplitContainerDetail']/?/?/container[@controlname='rsSplitContainerVorschau']//text[@controlname='lTitle']
-			</item>
-			<item
-			addcaps="titlebar,accessible"
-			capname="titlebar"
-			id="98df0056-a026-4d08-aa65-897bc5a3bb8f"
-			name="TitleBarDMS"
-			refimgid="f66f71dd-98e3-414e-afff-910c13b25bf5"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='FormRsDmsExplorer']/titlebar[@accessiblerole='TitleBar']
 			</item>
 			<basepath>
 				/form[@controlname='FormRsDmsExplorer']
