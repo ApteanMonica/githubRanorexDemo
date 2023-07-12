@@ -41,7 +41,7 @@ namespace B_BUAB_006.Recordings
         /// </summary>
         public StartAUT()
         {
-            startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
+            startFile = "C:\\Testdaten\\Allgemein\\Start.bat";
             programm = "B_BUAB";
         }
 
@@ -55,16 +55,16 @@ namespace B_BUAB_006.Recordings
 
 #region Variables
 
-        string _startfile;
+        string _startFile;
 
         /// <summary>
-        /// Gets or sets the value of variable startfile.
+        /// Gets or sets the value of variable startFile.
         /// </summary>
         [TestVariable("700d4d81-4aa6-4f02-a37f-60649c98afbb")]
-        public string startfile
+        public string startFile
         {
-            get { return _startfile; }
-            set { _startfile = value; }
+            get { return _startFile; }
+            set { _startFile = value; }
         }
 
         string _programm;
@@ -105,8 +105,8 @@ namespace B_BUAB_006.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $startfile with arguments from variable $programm in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(startfile, programm, "", false);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $startFile with arguments from variable $programm in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(startFile, programm, "", false);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblB.TitleBar100BuchungenAnzeigen'", repo.TblB.TitleBar100BuchungenAnzeigenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
             repo.TblB.TitleBar100BuchungenAnzeigenInfo.WaitForExists(120000);

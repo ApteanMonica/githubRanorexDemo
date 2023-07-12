@@ -26,7 +26,7 @@ namespace B_BUAB_006.Recordings
     /// <summary>
     ///The Buchungs_Stati recording.
     /// </summary>
-    [TestModule("6c630d43-ce6b-492c-897e-390ab7d6401d", ModuleType.Recording, 1)]
+    [TestModule("1f397e0b-9eb9-44ec-bbb2-15595a300e32", ModuleType.Recording, 1)]
     public partial class Buchungs_Stati : ITestModule
     {
         /// <summary>

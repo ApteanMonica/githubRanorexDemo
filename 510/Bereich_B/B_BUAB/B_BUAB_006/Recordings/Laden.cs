@@ -26,7 +26,7 @@ namespace B_BUAB_006.Recordings
     /// <summary>
     ///The Laden recording.
     /// </summary>
-    [TestModule("b84a7efe-bc45-48d6-8c0a-89792168b098", ModuleType.Recording, 1)]
+    [TestModule("e08e32e7-3b0e-4b4e-b605-c64143ee4fee", ModuleType.Recording, 1)]
     public partial class Laden : ITestModule
     {
         /// <summary>
@@ -41,7 +41,7 @@ namespace B_BUAB_006.Recordings
         /// </summary>
         public Laden()
         {
-            beleg_laden = "BA_2030001_2020";
+            beleg_laden = "AR_DIV1_2030002_2020";
         }
 
         /// <summary>
@@ -59,7 +59,7 @@ namespace B_BUAB_006.Recordings
         /// <summary>
         /// Gets or sets the value of variable beleg_laden.
         /// </summary>
-        [TestVariable("07074eab-9ed3-4ff2-961a-042b832e69f2")]
+        [TestVariable("6201ff94-51c1-4931-a7ba-b7bba02b4536")]
         public string beleg_laden
         {
             get { return _beleg_laden; }

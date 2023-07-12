@@ -2,33 +2,46 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<smartfoldernode
+			id="01b3624e-f6f3-4b9d-972a-919d08e7b4c3"
+			name="Stati_check">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="var_Status_lesen"
+								id="94c50aad-6f3c-489f-955c-25ef01ccfefe">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="True">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testcase
 			id="10db6781-75be-42a2-bc0c-93cdda607226"
 			name="TestCase">
 			</testcase>
 			<testmodule
-			id="172abee5-0f2c-4a83-a140-86d508280c45"
-			name="Existierende_Beleg_aendern"
-			ref="80321e02-a5a2-4d5a-a143-21ebaf95bd0c"
+			id="17baf005-3ab8-47fc-a07e-f76b5f1f9c85"
+			name="Stati_davor"
+			ref="ca2c56c5-a30d-4d33-bb0b-4261b778b014"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="existierende_Beleg_aendern"
+					dataname="var_Status_lesen"
 					datasourceid="94c50aad-6f3c-489f-955c-25ef01ccfefe"
-					variableid="ab952236-7f1e-46ff-ad2f-ad3251dc21c5"
-					variablename="existierende_Beleg_aendern1">
-					</var>
-					<var
-					dataname="text_beleg"
-					datasourceid="94c50aad-6f3c-489f-955c-25ef01ccfefe"
-					variableid="01b22ed1-1ba4-4aff-9b45-101384f6a02f"
-					variablename="text_beleg">
-					</var>
-					<var
-					dataname="alte_Wert"
-					datasourceid="94c50aad-6f3c-489f-955c-25ef01ccfefe"
-					variableid="53deb41f-5c3b-47a2-a6ae-0d37bddd6e48"
-					variablename="alte_Wert">
+					variableid="88567e7c-959e-4daf-a86c-866b32c0ad9e"
+					variablename="var_Status_lesen">
 					</var>
 				</databinding>
 			</testmodule>
@@ -45,32 +58,30 @@
 					variablename="programm">
 					</var>
 					<var
-					dataname="startfile"
+					dataname="startFile"
 					datasourceid="94c50aad-6f3c-489f-955c-25ef01ccfefe"
 					variableid="700d4d81-4aa6-4f02-a37f-60649c98afbb"
 					variablename="startfile">
 					</var>
 				</databinding>
-				<missingdatavariablesbinding>
-					<var
-					dataname="AppProcessID"
-					datasourceid="94c50aad-6f3c-489f-955c-25ef01ccfefe"
-					variableid="04bff6ca-23db-4c7b-aed8-9db73b42cd3b"
-					variablename="StartAutProcessIDVar">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
-			id="35041ea6-8db4-42e5-be6a-5bc2caf52780"
-			name="Loeschen_kontrolle"
-			ref="2899b8d5-914d-4ea5-a303-f31b358dfb93"
+			id="2c753a79-c9c5-49f7-93ff-e36cacfa9185"
+			name="Filter"
+			ref="4c4dc815-6f63-4f93-856f-87965e279b08"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="beleg_loeschen"
+					dataname="kostenstelle"
 					datasourceid="94c50aad-6f3c-489f-955c-25ef01ccfefe"
-					variableid="acf2e05c-88b8-4020-a5c3-08e257a0a0a9"
-					variablename="beleg_loeschen">
+					variableid="055bfbee-ab32-4c4c-aad3-548caf3beb80"
+					variablename="kostenstelle">
+					</var>
+					<var
+					dataname="busy"
+					datasourceid="94c50aad-6f3c-489f-955c-25ef01ccfefe"
+					variableid="ec4fc130-011e-447d-84b3-7a800aafb1ef"
+					variablename="busy">
 					</var>
 				</databinding>
 			</testmodule>
@@ -79,44 +90,59 @@
 			name="teardown">
 			</teardown>
 			<testmodule
-			id="679045ed-daeb-46e4-a4a5-f1ad08d6548e"
-			name="Aendern"
-			ref="f766f43e-27d9-45a8-b222-d060e2544741"
+			id="65b11cd8-6c99-4d36-bdb7-83affa548023"
+			name="Buchungs_Stati"
+			ref="1f397e0b-9eb9-44ec-bbb2-15595a300e32"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="beleg_aendern"
-					datasourceid="94c50aad-6f3c-489f-955c-25ef01ccfefe"
-					variableid="224670bb-01b6-4b5f-9e99-0f5def04ba66"
-					variablename="beleg_aendern">
-					</var>
-				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="6823f990-c071-440c-82f7-b760605ee76d"
+			name="Stati_uncheck">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="var_Status_lesen"
+								id="94c50aad-6f3c-489f-955c-25ef01ccfefe">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="False">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
-			id="78349cb5-8e7b-48f6-aad4-9addc1db38b1"
-			name="Laden"
-			ref="b84a7efe-bc45-48d6-8c0a-89792168b098"
+			id="707cd6fe-0410-4057-b290-8d1573866cb4"
+			name="Aendern_Beleg_UVA"
+			ref="b73c90ba-8767-4211-b480-a60ea9eb7c81"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="beleg_laden"
+					dataname="buchungsMonat"
 					datasourceid="94c50aad-6f3c-489f-955c-25ef01ccfefe"
-					variableid="07074eab-9ed3-4ff2-961a-042b832e69f2"
-					variablename="beleg_laden">
+					variableid="7572d430-f97b-4338-b313-852651e0d830"
+					variablename="buchungsMonat">
 					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="86944c33-5c84-40cb-aeba-ff31850502c6"
-			name="Loeschen_beleg"
-			ref="af958a6b-c2e4-404f-b6a2-8c03c1dc324e"
-			type="Recording">
-				<databinding>
 					<var
-					dataname="beleg_loeschen"
+					dataname="UVA_Periode"
 					datasourceid="94c50aad-6f3c-489f-955c-25ef01ccfefe"
-					variableid="99b59377-f025-4c5b-a944-fc83110a3356"
-					variablename="beleg_loeschen">
+					variableid="48ffd07f-8411-403b-b800-d190233ca2c7"
+					variablename="UVA_Periode">
+					</var>
+					<var
+					dataname="UVA_Termin"
+					datasourceid="94c50aad-6f3c-489f-955c-25ef01ccfefe"
+					variableid="47f40a52-c989-4773-8a1b-5a9430e29041"
+					variablename="UVA_Termin">
 					</var>
 				</databinding>
 			</testmodule>
@@ -124,41 +150,74 @@
 			id="94c50aad-6f3c-489f-955c-25ef01ccfefe"
 			name="B_BUAB_006"
 			reportlevel="Info;20">
+				<description>
+					<![CDATA[<table width="513" style="width: 385pt; border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><font color="#000000" face="Times New Roman" size="3">
+ </font><colgroup><col width="513" style="width: 385pt; mso-width-source: userset; mso-width-alt: 18761;"><font color="#000000" face="Times New Roman" size="3">
+ </font><tbody><tr height="40" style="height: 30pt;"><font color="#000000" face="Times New Roman" size="3">
+
+  </font><td width="513" height="40" style="border: 0px black; width: 385pt; height: 30pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Beleg
+  AR_DIV1_2030002_2020 laden, Text, UVA Periode und buchungsMonat ändern und Filter testen</font></td><font color="#000000" face="Times New Roman" size="3">
+
+ </font></tr><font color="#000000" face="Times New Roman" size="3">
+</font></tbody></table>]]>
+				</description>
 				<parameters>
 					<param
-					name="existierende_Beleg_aendern"
-					value="BA_2030001_2020_2">
-					</param>
-					<param
-					name="beleg_loeschen"
-					value="BA_2030001_2020%">
-					</param>
-					<param
-					name="beleg_aendern"
-					value="BA_2030001_2020_1">
-					</param>
-					<param
 					name="beleg_laden"
-					value="BA_2030001_2020">
+					value="AR_DIV1_2030002_2020">
+					</param>
+					<param
+					name="startFile"
+					value="C:\Testdaten\Allgemein\Start.bat">
 					</param>
 					<param
 					name="programm"
 					value="B_BUAB">
 					</param>
 					<param
-					name="startfile"
-					value="C:\Testdaten\Allgemein\Start.bat">
+					name="text_aendern"
+					value="abc">
 					</param>
 					<param
-					name="text_beleg"
-					value="Belegnummer BA_2030001_2020_2 existiert bereits!">
-					</param>
-					<param
-					name="alte_Wert"
+					name="var_Status_lesen"
 					value="">
+					</param>
+					<param
+					name="UVA_Periode"
+					value="1">
+					</param>
+					<param
+					name="UVA_Termin"
+					value="2020-1">
+					</param>
+					<param
+					name="buchungsMonat"
+					value="2">
+					</param>
+					<param
+					name="kostenstelle"
+					value="50">
+					</param>
+					<param
+					name="busy"
+					value="erg">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="97e0322e-4843-4975-823d-93c2028b3d36"
+			name="Aendern_Zeile"
+			ref="5e3abd75-4e6b-430c-8692-8af0932dfd31"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="text_aendern"
+					datasourceid="94c50aad-6f3c-489f-955c-25ef01ccfefe"
+					variableid="a1a563fe-bce0-4157-8482-360570eb884b"
+					variablename="text_aendern">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="9ba1cd40-8001-460f-a763-9b34bbc58443"
 			name="setup">
@@ -202,10 +261,24 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
-			id="eed911eb-d717-4b9d-b827-67c3d69c8228"
-			name="Buchungs_Stati"
-			ref="6c630d43-ce6b-492c-897e-390ab7d6401d"
+			id="c7c51307-d0b6-4084-b4b3-81d6c1847ecd"
+			name="Buchungs_Stati_1"
+			ref="5cdc5274-4063-48ab-9f24-59aa30f7189f"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="e50e46b6-2c85-405b-86c7-467d88298f22"
+			name="Laden"
+			ref="e08e32e7-3b0e-4b4e-b605-c64143ee4fee"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="beleg_laden"
+					datasourceid="94c50aad-6f3c-489f-955c-25ef01ccfefe"
+					variableid="6201ff94-51c1-4931-a7ba-b7bba02b4536"
+					variablename="beleg_laden">
+					</var>
+				</databinding>
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -227,29 +300,41 @@
 							</testmodule>
 						</setup>
 						<testmodule
-						id="78349cb5-8e7b-48f6-aad4-9addc1db38b1"
+						id="e50e46b6-2c85-405b-86c7-467d88298f22"
 						name="Laden">
 						</testmodule>
 						<testmodule
-						id="679045ed-daeb-46e4-a4a5-f1ad08d6548e"
-						name="Aendern">
+						id="97e0322e-4843-4975-823d-93c2028b3d36"
+						name="Aendern_Zeile">
 						</testmodule>
 						<testmodule
-						id="172abee5-0f2c-4a83-a140-86d508280c45"
-						name="Existierende_Beleg_aendern">
+						id="707cd6fe-0410-4057-b290-8d1573866cb4"
+						name="Aendern_Beleg_UVA">
 						</testmodule>
 						<testmodule
-						id="86944c33-5c84-40cb-aeba-ff31850502c6"
-						name="Loeschen_beleg">
+						id="2c753a79-c9c5-49f7-93ff-e36cacfa9185"
+						name="Filter">
 						</testmodule>
 						<testmodule
-						id="eed911eb-d717-4b9d-b827-67c3d69c8228"
-						name="Buchungs_Stati">
+						id="17baf005-3ab8-47fc-a07e-f76b5f1f9c85"
+						name="Stati_davor">
 						</testmodule>
-						<testmodule
-						id="35041ea6-8db4-42e5-be6a-5bc2caf52780"
-						name="Loeschen_kontrolle">
-						</testmodule>
+						<smartfoldernode
+						id="01b3624e-f6f3-4b9d-972a-919d08e7b4c3"
+						name="Stati_check">
+							<testmodule
+							id="65b11cd8-6c99-4d36-bdb7-83affa548023"
+							name="Buchungs_Stati">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="6823f990-c071-440c-82f7-b760605ee76d"
+						name="Stati_uncheck">
+							<testmodule
+							id="c7c51307-d0b6-4084-b4b3-81d6c1847ecd"
+							name="Buchungs_Stati_1">
+							</testmodule>
+						</smartfoldernode>
 						<teardown
 						id="5b23f7bc-1e8b-4304-905c-644430f14e11"
 						name="teardown">
@@ -270,7 +355,13 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="01b3624e-f6f3-4b9d-972a-919d08e7b4c3">
+			</testcontainer>
+			<testcontainer
 			id="10db6781-75be-42a2-bc0c-93cdda607226">
+			</testcontainer>
+			<testcontainer
+			id="6823f990-c071-440c-82f7-b760605ee76d">
 			</testcontainer>
 			<testcontainer
 			id="94c50aad-6f3c-489f-955c-25ef01ccfefe">

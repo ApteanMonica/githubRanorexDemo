@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_BUAB_006.Recordings
 {
-    public partial class Loeschen_beleg
+    public partial class Filter
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

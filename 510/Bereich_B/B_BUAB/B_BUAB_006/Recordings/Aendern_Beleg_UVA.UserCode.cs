@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_BUAB_006.Recordings
 {
-    public partial class Aendern
+    public partial class Aendern_Beleg_UVA
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

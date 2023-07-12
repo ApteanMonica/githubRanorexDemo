@@ -24,47 +24,34 @@ namespace B_BUAB_006.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Loeschen_kontrolle recording.
+    ///The Buchungs_Stati_1 recording.
     /// </summary>
-    [TestModule("2899b8d5-914d-4ea5-a303-f31b358dfb93", ModuleType.Recording, 1)]
-    public partial class Loeschen_kontrolle : ITestModule
+    [TestModule("5cdc5274-4063-48ab-9f24-59aa30f7189f", ModuleType.Recording, 1)]
+    public partial class Buchungs_Stati_1 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BUAB_006.B_BUAB_006Repository repository.
         /// </summary>
         public static global::B_BUAB_006.B_BUAB_006Repository repo = global::B_BUAB_006.B_BUAB_006Repository.Instance;
 
-        static Loeschen_kontrolle instance = new Loeschen_kontrolle();
+        static Buchungs_Stati_1 instance = new Buchungs_Stati_1();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Loeschen_kontrolle()
+        public Buchungs_Stati_1()
         {
-            beleg_loeschen = "BA_2030001_2020_1";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Loeschen_kontrolle Instance
+        public static Buchungs_Stati_1 Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _beleg_loeschen;
-
-        /// <summary>
-        /// Gets or sets the value of variable beleg_loeschen.
-        /// </summary>
-        [TestVariable("acf2e05c-88b8-4020-a5c3-08e257a0a0a9")]
-        public string beleg_loeschen
-        {
-            get { return _beleg_loeschen; }
-            set { _beleg_loeschen = value; }
-        }
 
 #endregion
 
@@ -92,20 +79,18 @@ namespace B_BUAB_006.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$beleg_loeschen' with focus on 'TblB.Beleg'.", repo.TblB.BelegInfo, new RecordItemIndex(0));
-            repo.TblB.Beleg.PressKeys(beleg_loeschen);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'gelöschte Buchungen') on item 'DlgOptionenStatus.CbGeloescht'.", repo.DlgOptionenStatus.CbGeloeschtInfo, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.DlgOptionenStatus.CbGeloeschtInfo, "Text", "gelöschte Buchungen");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(1));
-            repo.TblB.PbDataAccessLoad.Click();
+            Report.Log(ReportLevel.Info, "User", "UNCHECK", new RecordItemIndex(1));
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'TblB.ColBelegnrRow11'", repo.TblB.ColBelegnrRow11Info, new ActionTimeout(30000), new RecordItemIndex(2));
-            repo.TblB.ColBelegnrRow11Info.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgOptionenStatus.CbGeloescht' at Center.", repo.DlgOptionenStatus.CbGeloeschtInfo, new RecordItemIndex(2));
+            repo.DlgOptionenStatus.CbGeloescht.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$beleg_loeschen) on item 'TblB.ColBelegnrRow11'.", repo.TblB.ColBelegnrRow11Info, new RecordItemIndex(3));
-            Validate.AttributeContains(repo.TblB.ColBelegnrRow11Info, "Text", beleg_loeschen);
+            Report.Log(ReportLevel.Info, "User", "CHECK", new RecordItemIndex(3));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9') on item 'TblB1.Status'.", repo.TblB1.StatusInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.TblB1.StatusInfo, "Text", "9");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgOptionenStatus.PbOk' at Center.", repo.DlgOptionenStatus.PbOkInfo, new RecordItemIndex(4));
+            repo.DlgOptionenStatus.PbOk.Click();
             
         }
 
