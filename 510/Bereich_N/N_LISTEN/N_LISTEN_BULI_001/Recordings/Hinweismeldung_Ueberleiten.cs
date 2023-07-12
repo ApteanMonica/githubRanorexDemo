@@ -56,18 +56,6 @@ namespace N_LISTEN_BULI_001.Recordings
 
 #region Variables
 
-        string _Belegnummer_Ueberleitung;
-
-        /// <summary>
-        /// Gets or sets the value of variable Belegnummer_Ueberleitung.
-        /// </summary>
-        [TestVariable("f8d654e2-68d0-41dd-8440-d05213ffc3bd")]
-        public string Belegnummer_Ueberleitung
-        {
-            get { return _Belegnummer_Ueberleitung; }
-            set { _Belegnummer_Ueberleitung = value; }
-        }
-
         string _Belegdatum_Ueberleitung;
 
         /// <summary>
@@ -90,6 +78,16 @@ namespace N_LISTEN_BULI_001.Recordings
         {
             get { return _Ust_Code_Ueberleitung; }
             set { _Ust_Code_Ueberleitung = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable Belegnummer_Ueberleitung.
+        /// </summary>
+        [TestVariable("f8d654e2-68d0-41dd-8440-d05213ffc3bd")]
+        public string Belegnummer_Ueberleitung
+        {
+            get { return repo.Belegnummer_Ueberleitung; }
+            set { repo.Belegnummer_Ueberleitung = value; }
         }
 
 #endregion
