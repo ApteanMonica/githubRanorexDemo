@@ -109,6 +109,30 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
             // Überprüfung Zeile 4
             Report.Log(ReportLevel.Info, "Section", "Überprüfung Zeile 4", new RecordItemIndex(9));
             
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0660') on item 'FrmBEXSA.FlexGrid.ColExsaKtonrRow4'.", repo.FrmBEXSA.FlexGrid.ColExsaKtonrRow4Info, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.FrmBEXSA.FlexGrid.ColExsaKtonrRow4Info, "Text", "0660");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='H') on item 'FrmBEXSA.FlexGrid.ColExsaShRow4'.", repo.FrmBEXSA.FlexGrid.ColExsaShRow4Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.FrmBEXSA.FlexGrid.ColExsaShRow4Info, "Text", "H");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='208,33') on item 'FrmBEXSA.FlexGrid.ColExsaBetragRow4'.", repo.FrmBEXSA.FlexGrid.ColExsaBetragRow4Info, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.FrmBEXSA.FlexGrid.ColExsaBetragRow4Info, "Text", "208,33");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V00') on item 'FrmBEXSA.FlexGrid.ColUstCdRow4'.", repo.FrmBEXSA.FlexGrid.ColUstCdRow4Info, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.FrmBEXSA.FlexGrid.ColUstCdRow4Info, "Text", "V00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmBEXSA.FlexGrid.ColExsaUstsatzRow4'.", repo.FrmBEXSA.FlexGrid.ColExsaUstsatzRow4Info, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.FrmBEXSA.FlexGrid.ColExsaUstsatzRow4Info, "Text", "0");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmBEXSA.FlexGrid.ColExsaUstmvRow4'.", repo.FrmBEXSA.FlexGrid.ColExsaUstmvRow4Info, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.FrmBEXSA.FlexGrid.ColExsaUstmvRow4Info, "Text", "V");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Valid='True') on item 'FrmBEXSA.FlexGrid.ColExsaUstbetragRow4'.", repo.FrmBEXSA.FlexGrid.ColExsaUstbetragRow4Info, new RecordItemIndex(16));
+            Validate.AttributeEqual(repo.FrmBEXSA.FlexGrid.ColExsaUstbetragRow4Info, "Valid", "True");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'FrmBEXSA.FlexGrid.ColExsaBektNr1Row4'.", repo.FrmBEXSA.FlexGrid.ColExsaBektNr1Row4Info, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.FrmBEXSA.FlexGrid.ColExsaBektNr1Row4Info, "Text", "10");
+            
         }
 
 #region Image Feature Data
