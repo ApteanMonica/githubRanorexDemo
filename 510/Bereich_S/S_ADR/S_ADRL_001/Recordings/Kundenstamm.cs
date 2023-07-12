@@ -41,7 +41,7 @@ namespace S_ADRL_001.Recordings
         /// </summary>
         public Kundenstamm()
         {
-            Aptean_Austria = "\r\nAptean Austria GmbH\r\nDorfstraße 67\nAT-5101 Bergheim\r\n\r\nMöchten Sie als gültige UID übernehmen?\r\n";
+            Aptean_Austria = "Aptean Austria GmbH";
         }
 
         /// <summary>

@@ -45,7 +45,7 @@ namespace S_ADRK_002.Recording
             UID_falsch = "475601939";
             UID_nicht_gueltig = "UID-Prüfung: die angegebene UID ist nicht gültig.";
             Neue_Kundennummer = "";
-            Aptean_Austria = "\r\nAptean Austria GmbH\r\nDorfstraße 67\nAT-5101 Bergheim\r\n\r\nMöchten Sie als gültige UID übernehmen?\r\n";
+            Aptean_Austria = "Aptean Austria GmbH";
         }
 
         /// <summary>
