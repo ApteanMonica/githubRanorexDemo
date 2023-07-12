@@ -24,46 +24,46 @@ namespace B_BUAB_006.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Aendern recording.
+    ///The Stati_davor recording.
     /// </summary>
-    [TestModule("f766f43e-27d9-45a8-b222-d060e2544741", ModuleType.Recording, 1)]
-    public partial class Aendern : ITestModule
+    [TestModule("ca2c56c5-a30d-4d33-bb0b-4261b778b014", ModuleType.Recording, 1)]
+    public partial class Stati_davor : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BUAB_006.B_BUAB_006Repository repository.
         /// </summary>
         public static global::B_BUAB_006.B_BUAB_006Repository repo = global::B_BUAB_006.B_BUAB_006Repository.Instance;
 
-        static Aendern instance = new Aendern();
+        static Stati_davor instance = new Stati_davor();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Aendern()
+        public Stati_davor()
         {
-            beleg_aendern = "BA_2030001_2020_1";
+            var_Status_lesen = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Aendern Instance
+        public static Stati_davor Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _beleg_aendern;
+        string _var_Status_lesen;
 
         /// <summary>
-        /// Gets or sets the value of variable beleg_aendern.
+        /// Gets or sets the value of variable var_Status_lesen.
         /// </summary>
-        [TestVariable("224670bb-01b6-4b5f-9e99-0f5def04ba66")]
-        public string beleg_aendern
+        [TestVariable("88567e7c-959e-4daf-a86c-866b32c0ad9e")]
+        public string var_Status_lesen
         {
-            get { return _beleg_aendern; }
-            set { _beleg_aendern = value; }
+            get { return _var_Status_lesen; }
+            set { _var_Status_lesen = value; }
         }
 
 #endregion
@@ -92,24 +92,14 @@ namespace B_BUAB_006.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB1.PbExtrasAendern' at Center.", repo.TblB1.PbExtrasAendernInfo, new RecordItemIndex(0));
-            repo.TblB1.PbExtrasAendern.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB1.Extras' at Center.", repo.TblB1.ExtrasInfo, new RecordItemIndex(0));
+            repo.TblB1.Extras.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBUAB.BelegAendern' at Center.", repo.BBUAB.BelegAendernInfo, new RecordItemIndex(1));
-            repo.BBUAB.BelegAendern.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBUAB.BuchungsStati' at Center.", repo.BBUAB.BuchungsStatiInfo, new RecordItemIndex(1));
+            repo.BBUAB.BuchungsStati.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$beleg_aendern' with focus on 'DlgAEndern.NeueWerte'.", repo.DlgAEndern.NeueWerteInfo, new RecordItemIndex(2));
-            repo.DlgAEndern.NeueWerte.PressKeys(beleg_aendern);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'DlgAEndern.NeueWerte'.", repo.DlgAEndern.NeueWerteInfo, new RecordItemIndex(3));
-            Keyboard.PrepareFocus(repo.DlgAEndern.NeueWerte);
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$beleg_aendern) on item 'DlgAEndern.NeueWerte'.", repo.DlgAEndern.NeueWerteInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.DlgAEndern.NeueWerteInfo, "Text", beleg_aendern);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgAEndern.PbOK' at Center.", repo.DlgAEndern.PbOKInfo, new RecordItemIndex(5));
-            repo.DlgAEndern.PbOK.Click();
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Checked' from item 'DlgOptionenStatus.Copy_of_CbGeloescht' and assigning its value to variable 'var_Status_lesen'.", repo.DlgOptionenStatus.Copy_of_CbGeloeschtInfo, new RecordItemIndex(2));
+            var_Status_lesen = repo.DlgOptionenStatus.Copy_of_CbGeloescht.Element.GetAttributeValueText("Checked");
             
         }
 

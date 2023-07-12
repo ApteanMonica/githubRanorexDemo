@@ -24,46 +24,46 @@ namespace B_BUAB_006.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Loeschen_beleg recording.
+    ///The Aendern_Zeile recording.
     /// </summary>
-    [TestModule("af958a6b-c2e4-404f-b6a2-8c03c1dc324e", ModuleType.Recording, 1)]
-    public partial class Loeschen_beleg : ITestModule
+    [TestModule("5e3abd75-4e6b-430c-8692-8af0932dfd31", ModuleType.Recording, 1)]
+    public partial class Aendern_Zeile : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BUAB_006.B_BUAB_006Repository repository.
         /// </summary>
         public static global::B_BUAB_006.B_BUAB_006Repository repo = global::B_BUAB_006.B_BUAB_006Repository.Instance;
 
-        static Loeschen_beleg instance = new Loeschen_beleg();
+        static Aendern_Zeile instance = new Aendern_Zeile();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Loeschen_beleg()
+        public Aendern_Zeile()
         {
-            beleg_loeschen = "BA_2030001_2020_1";
+            text_aendern = "abc";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Loeschen_beleg Instance
+        public static Aendern_Zeile Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _beleg_loeschen;
+        string _text_aendern;
 
         /// <summary>
-        /// Gets or sets the value of variable beleg_loeschen.
+        /// Gets or sets the value of variable text_aendern.
         /// </summary>
-        [TestVariable("99b59377-f025-4c5b-a944-fc83110a3356")]
-        public string beleg_loeschen
+        [TestVariable("a1a563fe-bce0-4157-8482-360570eb884b")]
+        public string text_aendern
         {
-            get { return _beleg_loeschen; }
-            set { _beleg_loeschen = value; }
+            get { return _text_aendern; }
+            set { _text_aendern = value; }
         }
 
 #endregion
@@ -92,29 +92,28 @@ namespace B_BUAB_006.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$beleg_loeschen' with focus on 'TblB.Beleg'.", repo.TblB.BelegInfo, new RecordItemIndex(0));
-            repo.TblB.Beleg.PressKeys(beleg_loeschen);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.Row2Column0' at Center.", repo.TblB.Row2Column0Info, new RecordItemIndex(0));
+            repo.TblB.Row2Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(1));
-            repo.TblB.PbDataAccessLoad.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB1.PbExtrasAendern' at Center.", repo.TblB1.PbExtrasAendernInfo, new RecordItemIndex(1));
+            repo.TblB1.PbExtrasAendern.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbExtrasLoeschen' at Center.", repo.TblB.PbExtrasLoeschenInfo, new RecordItemIndex(2));
-            repo.TblB.PbExtrasLoeschen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBUAB.ZeileAendern' at Center.", repo.BBUAB.ZeileAendernInfo, new RecordItemIndex(2));
+            repo.BBUAB.ZeileAendern.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBUAB.Loeschen' at Center.", repo.BBUAB.LoeschenInfo, new RecordItemIndex(3));
-            repo.BBUAB.Loeschen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.ColText1Row2' at Center.", repo.TblB.ColText1Row2Info, new RecordItemIndex(3));
+            repo.TblB.ColText1Row2.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(4));
-            repo.DlgMessageBox.Button0.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'abc' with focus on 'TblB.ColText1Row2'.", repo.TblB.ColText1Row2Info, new RecordItemIndex(4));
+            repo.TblB.ColText1Row2.EnsureVisible();
+            Keyboard.Press("abc");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(5));
-            repo.DlgMessageBox.Button0.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}' with focus on 'TblB'.", repo.TblB.SelfInfo, new RecordItemIndex(5));
+            repo.TblB.Self.EnsureVisible();
+            Keyboard.Press("{F12}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(6));
-            repo.TblB.PbDataAccessLoad.Click();
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(7));
-            repo.DlgMessageBox.Button0.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$text_aendern) on item 'TblB.ColText1Row2'.", repo.TblB.ColText1Row2Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.TblB.ColText1Row2Info, "Text", text_aendern);
             
         }
 

@@ -28,6 +28,30 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="10f3f504-933d-4d2e-877a-6c4a5829ba53"
+			name="Schnittstelle_B_EXOPS">
+			</testcase>
+			<testmodule
+			id="12a8ebf1-4f28-41f1-bb2e-46143312c40e"
+			name="Tagesdatum_einlesen"
+			ref="89074ac8-76a4-48dc-8276-b76893be6b9d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum_ermitteln"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="97e0d63a-4e8b-4c99-9328-900d55d69743"
+					variablename="Tagesdatum_ermitteln">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="28a4d396-7e0c-4411-85f5-13d4b7d8b4b4"
+			name="Ueberpruefung_Buchungen"
+			ref="c941b0cb-fcf8-4d60-95fa-ad8ff03173db"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="38afbd31-b39f-4e76-a8a0-64dd3a9a1015"
 			name="AfA_berechnen_und_ueberleiten"
@@ -48,10 +72,12 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<smartfoldernode
-			id="48fe7c49-f1a3-4194-9bc3-7c8dde3e51e7"
-			name="Schnittstelle_B_EXOPS">
-			</smartfoldernode>
+			<testmodule
+			id="492571ec-ae12-40c4-8cf0-ce90ae8aa943"
+			name="Daten_einschraenken"
+			ref="50662912-3023-4281-a6ad-f48078cf1e9e"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="493f9845-0dc9-464d-b0dd-be080bc10947"
 			name="CloseAUT"
@@ -60,7 +86,7 @@
 			</testmodule>
 			<testcase
 			id="4bcc8d27-c65d-4d90-a663-d47bf3d8cf9e"
-			name="TestCase">
+			name="Buchungsliste">
 			</testcase>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
@@ -91,6 +117,20 @@
 			name="Bestaetigungsmeldung"
 			ref="f1e670fd-616c-4686-929b-5866c287de87"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="5b806c29-5b7e-42c4-b8ff-21ed00f2770d"
+			name="Einschraenkungen_ueberpruefen"
+			ref="e284a7db-38e4-4019-9f0b-19a404c58484"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Belegnummer_Ueberleitung"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="abdf0834-5f13-4293-ad79-c2151b514131"
+					variablename="Belegnummer_Ueberleitung">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="6e96393a-3497-43ad-b3ec-33355b6c7bdc"
@@ -223,6 +263,10 @@
 					name="Programm_2"
 					value="B_EXOPS">
 					</param>
+					<param
+					name="Tagesdatum_ermitteln"
+					value="">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -274,6 +318,20 @@
 			name="Start_AUT_2"
 			ref="bebf7672-7742-4bf1-885c-88c6ff5b934e"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="287b6ae6-43a1-4476-9bbb-6dc155d1ffdd"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_2"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="0b2b0a24-4590-4f12-9dc6-d61d87d2f13d"
+					variablename="Programm_2">
+					</var>
+				</databinding>
 			</testmodule>
 			<teardown
 			id="af938ef0-2e2c-4f94-b0f5-15fe0f9ccc3b"
@@ -299,6 +357,12 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="e6ec1eb6-31ae-4fbd-8d74-8e6b9e0b6344"
+			name="Buchungen_laden"
+			ref="b114639a-f6a7-4ac6-8443-ba25f10c9bd5"
+			type="Recording">
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -309,7 +373,7 @@
 				name="N_LISTEN_BULI_001">
 					<testcase
 					id="4bcc8d27-c65d-4d90-a663-d47bf3d8cf9e"
-					name="TestCase">
+					name="Buchungsliste">
 						<setup
 						id="6ec81fd3-8200-4036-9670-a59a2251df78"
 						name="setup">
@@ -355,8 +419,8 @@
 							</testmodule>
 						</teardown>
 					</testcase>
-					<smartfoldernode
-					id="48fe7c49-f1a3-4194-9bc3-7c8dde3e51e7"
+					<testcase
+					id="10f3f504-933d-4d2e-877a-6c4a5829ba53"
 					name="Schnittstelle_B_EXOPS">
 						<setup
 						id="709abd95-dc28-4e2c-9b3a-07c458467fbf"
@@ -365,7 +429,27 @@
 							id="adf48934-5720-4fb5-8d11-099583e60f24"
 							name="Start_AUT_2">
 							</testmodule>
+							<testmodule
+							id="12a8ebf1-4f28-41f1-bb2e-46143312c40e"
+							name="Tagesdatum_einlesen">
+							</testmodule>
 						</setup>
+						<testmodule
+						id="492571ec-ae12-40c4-8cf0-ce90ae8aa943"
+						name="Daten_einschraenken">
+						</testmodule>
+						<testmodule
+						id="5b806c29-5b7e-42c4-b8ff-21ed00f2770d"
+						name="Einschraenkungen_ueberpruefen">
+						</testmodule>
+						<testmodule
+						id="28a4d396-7e0c-4411-85f5-13d4b7d8b4b4"
+						name="Ueberpruefung_Buchungen">
+						</testmodule>
+						<testmodule
+						id="e6ec1eb6-31ae-4fbd-8d74-8e6b9e0b6344"
+						name="Buchungen_laden">
+						</testmodule>
 						<teardown
 						id="a9214a79-1fc9-4cd3-a2b6-2100c26caac7"
 						name="teardown">
@@ -374,7 +458,7 @@
 							name="CloseAUT_2">
 							</testmodule>
 						</teardown>
-					</smartfoldernode>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -386,7 +470,7 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="48fe7c49-f1a3-4194-9bc3-7c8dde3e51e7">
+			id="10f3f504-933d-4d2e-877a-6c4a5829ba53">
 			</testcontainer>
 			<testcontainer
 			id="4bcc8d27-c65d-4d90-a663-d47bf3d8cf9e">

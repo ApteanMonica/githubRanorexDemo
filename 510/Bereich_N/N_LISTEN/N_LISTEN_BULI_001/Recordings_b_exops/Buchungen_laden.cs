@@ -20,51 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_BUAB_006.Recordings
+namespace N_LISTEN_BULI_001.Recordings_b_exops
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Loeschen_kontrolle recording.
+    ///The Buchungen_laden recording.
     /// </summary>
-    [TestModule("2899b8d5-914d-4ea5-a303-f31b358dfb93", ModuleType.Recording, 1)]
-    public partial class Loeschen_kontrolle : ITestModule
+    [TestModule("b114639a-f6a7-4ac6-8443-ba25f10c9bd5", ModuleType.Recording, 1)]
+    public partial class Buchungen_laden : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_BUAB_006.B_BUAB_006Repository repository.
+        /// Holds an instance of the global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repository.
         /// </summary>
-        public static global::B_BUAB_006.B_BUAB_006Repository repo = global::B_BUAB_006.B_BUAB_006Repository.Instance;
+        public static global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repo = global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository.Instance;
 
-        static Loeschen_kontrolle instance = new Loeschen_kontrolle();
+        static Buchungen_laden instance = new Buchungen_laden();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Loeschen_kontrolle()
+        public Buchungen_laden()
         {
-            beleg_loeschen = "BA_2030001_2020_1";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Loeschen_kontrolle Instance
+        public static Buchungen_laden Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _beleg_loeschen;
-
-        /// <summary>
-        /// Gets or sets the value of variable beleg_loeschen.
-        /// </summary>
-        [TestVariable("acf2e05c-88b8-4020-a5c3-08e257a0a0a9")]
-        public string beleg_loeschen
-        {
-            get { return _beleg_loeschen; }
-            set { _beleg_loeschen = value; }
-        }
 
 #endregion
 
@@ -92,20 +79,17 @@ namespace B_BUAB_006.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$beleg_loeschen' with focus on 'TblB.Beleg'.", repo.TblB.BelegInfo, new RecordItemIndex(0));
-            repo.TblB.Beleg.PressKeys(beleg_loeschen);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBEXOP.PbDataAccessLoad' at Center.", repo.FrmBEXOP.PbDataAccessLoadInfo, new RecordItemIndex(0));
+            repo.FrmBEXOP.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(1));
-            repo.TblB.PbDataAccessLoad.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBEXOP.Row1Column0' at Center.", repo.FrmBEXOP.Row1Column0Info, new RecordItemIndex(1));
+            repo.FrmBEXOP.Row1Column0.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'TblB.ColBelegnrRow11'", repo.TblB.ColBelegnrRow11Info, new ActionTimeout(30000), new RecordItemIndex(2));
-            repo.TblB.ColBelegnrRow11Info.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBEXSA.TitleBar100VerwaltenSchnittstelleE'", repo.FrmBEXSA.TitleBar100VerwaltenSchnittstelleEInfo, new ActionTimeout(120000), new RecordItemIndex(2));
+            repo.FrmBEXSA.TitleBar100VerwaltenSchnittstelleEInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$beleg_loeschen) on item 'TblB.ColBelegnrRow11'.", repo.TblB.ColBelegnrRow11Info, new RecordItemIndex(3));
-            Validate.AttributeContains(repo.TblB.ColBelegnrRow11Info, "Text", beleg_loeschen);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9') on item 'TblB1.Status'.", repo.TblB1.StatusInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.TblB1.StatusInfo, "Text", "9");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  Verwalten Schnittstelle EXSA') on item 'FrmBEXSA.TitleBar100VerwaltenSchnittstelleE'.", repo.FrmBEXSA.TitleBar100VerwaltenSchnittstelleEInfo, new RecordItemIndex(3));
+            Validate.AttributeContains(repo.FrmBEXSA.TitleBar100VerwaltenSchnittstelleEInfo, "Text", "[100]  Verwalten Schnittstelle EXSA");
             
         }
 

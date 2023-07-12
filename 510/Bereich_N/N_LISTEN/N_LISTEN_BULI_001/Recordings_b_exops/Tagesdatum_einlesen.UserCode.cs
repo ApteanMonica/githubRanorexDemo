@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_BUAB_006.Recordings
+namespace N_LISTEN_BULI_001.Recordings_b_exops
 {
-    public partial class Loeschen_beleg
+    public partial class Tagesdatum_einlesen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

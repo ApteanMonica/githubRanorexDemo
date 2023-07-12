@@ -20,63 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_BUAB_006.Recordings
+namespace N_LISTEN_BULI_001.Recordings_b_exops
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The Tagesdatum_einlesen recording.
     /// </summary>
-    [TestModule("c870324e-d08a-454d-89b2-cdf1b7eff740", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    [TestModule("89074ac8-76a4-48dc-8276-b76893be6b9d", ModuleType.Recording, 1)]
+    public partial class Tagesdatum_einlesen : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_BUAB_006.B_BUAB_006Repository repository.
+        /// Holds an instance of the global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repository.
         /// </summary>
-        public static global::B_BUAB_006.B_BUAB_006Repository repo = global::B_BUAB_006.B_BUAB_006Repository.Instance;
+        public static global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repo = global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static Tagesdatum_einlesen instance = new Tagesdatum_einlesen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public Tagesdatum_einlesen()
         {
-            startFile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            programm = "B_BUAB";
+            Tagesdatum_ermitteln = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static Tagesdatum_einlesen Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _startFile;
+        string _Tagesdatum_ermitteln;
 
         /// <summary>
-        /// Gets or sets the value of variable startFile.
+        /// Gets or sets the value of variable Tagesdatum_ermitteln.
         /// </summary>
-        [TestVariable("700d4d81-4aa6-4f02-a37f-60649c98afbb")]
-        public string startFile
+        [TestVariable("97e0d63a-4e8b-4c99-9328-900d55d69743")]
+        public string Tagesdatum_ermitteln
         {
-            get { return _startFile; }
-            set { _startFile = value; }
-        }
-
-        string _programm;
-
-        /// <summary>
-        /// Gets or sets the value of variable programm.
-        /// </summary>
-        [TestVariable("4d061347-4bf7-4a8b-a358-a3f6929bae67")]
-        public string programm
-        {
-            get { return _programm; }
-            set { _programm = value; }
+            get { return _Tagesdatum_ermitteln; }
+            set { _Tagesdatum_ermitteln = value; }
         }
 
 #endregion
@@ -105,14 +92,7 @@ namespace B_BUAB_006.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $startFile with arguments from variable $programm in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(startFile, programm, "", false);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblB.TitleBar100BuchungenAnzeigen'", repo.TblB.TitleBar100BuchungenAnzeigenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.TblB.TitleBar100BuchungenAnzeigenInfo.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Buchungen anzeigen') on item 'TblB.TitleBar100BuchungenAnzeigen'.", repo.TblB.TitleBar100BuchungenAnzeigenInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.TblB.TitleBar100BuchungenAnzeigenInfo, "Text", "Buchungen anzeigen");
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimeAsString("dd.MM.yyyy");
             
         }
 

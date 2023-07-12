@@ -79,6 +79,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\..\Testdaten\Allgemein\UserCode\aptean.cs">
+      <Link>aptean.cs</Link>
+      <id>90c72397-02a5-41a3-8180-f406ffc700b9</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>538c0580-581d-442d-88e9-59165aa1287a</id>
     </Compile>
@@ -199,6 +203,18 @@
       <UserCode>true</UserCode>
       <id>581afd17-1bef-49f4-851f-05a93f184017</id>
     </Compile>
+    <Compile Include="Recordings_b_exops\Buchungen_laden.cs">
+      <BoundTo>bec2ef2e-bb33-4d69-8660-b5bb84ecd9c3</BoundTo>
+      <DependentUpon>Buchungen_laden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>eae1daea-f4c7-4617-ba60-fd994bfa6c0a</id>
+    </Compile>
+    <Compile Include="Recordings_b_exops\Buchungen_laden.UserCode.cs">
+      <BoundTo>bec2ef2e-bb33-4d69-8660-b5bb84ecd9c3</BoundTo>
+      <DependentUpon>Buchungen_laden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ed3b8a21-1a33-44cb-bd0a-271aee01c094</id>
+    </Compile>
     <Compile Include="Recordings_b_exops\CloseAUT_2.cs">
       <BoundTo>0ce916a7-e537-41e7-94ab-f382a1dca914</BoundTo>
       <DependentUpon>CloseAUT_2.rxrec</DependentUpon>
@@ -211,6 +227,30 @@
       <UserCode>true</UserCode>
       <id>34ea307c-849b-40a2-a12c-4a14e94ebda1</id>
     </Compile>
+    <Compile Include="Recordings_b_exops\Daten_einschraenken.cs">
+      <BoundTo>aba429d7-40d7-4151-a45e-e266e2f2b873</BoundTo>
+      <DependentUpon>Daten_einschraenken.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>364ba353-7843-4ace-9bab-426212827572</id>
+    </Compile>
+    <Compile Include="Recordings_b_exops\Daten_einschraenken.UserCode.cs">
+      <BoundTo>aba429d7-40d7-4151-a45e-e266e2f2b873</BoundTo>
+      <DependentUpon>Daten_einschraenken.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5fdb779b-3880-4010-92fa-7891d3213eaf</id>
+    </Compile>
+    <Compile Include="Recordings_b_exops\Einschraenkungen_ueberpruefen.cs">
+      <BoundTo>ac44c0c3-c8e7-4ee0-989a-f5a1ed3e1b69</BoundTo>
+      <DependentUpon>Einschraenkungen_ueberpruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a5a2c154-a460-46f7-a969-52f3fa84fbda</id>
+    </Compile>
+    <Compile Include="Recordings_b_exops\Einschraenkungen_ueberpruefen.UserCode.cs">
+      <BoundTo>ac44c0c3-c8e7-4ee0-989a-f5a1ed3e1b69</BoundTo>
+      <DependentUpon>Einschraenkungen_ueberpruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>19640f8d-0a50-4472-9c9c-e040488d7c37</id>
+    </Compile>
     <Compile Include="Recordings_b_exops\Start_AUT_2.cs">
       <BoundTo>43f3d4ca-542b-4691-b9f7-27efd34a01d7</BoundTo>
       <DependentUpon>Start_AUT_2.rxrec</DependentUpon>
@@ -222,6 +262,30 @@
       <DependentUpon>Start_AUT_2.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>c19d4efd-6c38-4aa6-9646-b9f3638b1910</id>
+    </Compile>
+    <Compile Include="Recordings_b_exops\Tagesdatum_einlesen.cs">
+      <BoundTo>28563b0d-cd95-4401-b94a-b562c718edc6</BoundTo>
+      <DependentUpon>Tagesdatum_einlesen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a3d19d9a-6831-4a5d-b5d1-98a2ea5d91dc</id>
+    </Compile>
+    <Compile Include="Recordings_b_exops\Tagesdatum_einlesen.UserCode.cs">
+      <BoundTo>28563b0d-cd95-4401-b94a-b562c718edc6</BoundTo>
+      <DependentUpon>Tagesdatum_einlesen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b901b7a9-4042-425c-bfe4-dba94c7818a2</id>
+    </Compile>
+    <Compile Include="Recordings_b_exops\Ueberpruefung_Buchungen.cs">
+      <BoundTo>12880100-504e-4fbf-a850-8e6eb839cea6</BoundTo>
+      <DependentUpon>Ueberpruefung_Buchungen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b16d48d8-8941-42b7-af30-26881eda7bf5</id>
+    </Compile>
+    <Compile Include="Recordings_b_exops\Ueberpruefung_Buchungen.UserCode.cs">
+      <BoundTo>12880100-504e-4fbf-a850-8e6eb839cea6</BoundTo>
+      <DependentUpon>Ueberpruefung_Buchungen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6ebbe4c2-8829-4759-ad4c-22a4fb62378b</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -284,15 +348,40 @@
       <id>7e50dc00-742e-4b6a-8535-9b0aedcf1836</id>
       <recordtableid>e56ccb67-eb92-48de-b73e-a3f27c9956db</recordtableid>
     </None>
+    <None Include="Recordings_b_exops\Buchungen_laden.rxrec">
+      <BoundTo>8821a1e8-c924-4b2b-ae66-8ee6e6d8ff06</BoundTo>
+      <id>bec2ef2e-bb33-4d69-8660-b5bb84ecd9c3</id>
+      <recordtableid>b114639a-f6a7-4ac6-8443-ba25f10c9bd5</recordtableid>
+    </None>
     <None Include="Recordings_b_exops\CloseAUT_2.rxrec">
       <BoundTo>8821a1e8-c924-4b2b-ae66-8ee6e6d8ff06</BoundTo>
       <id>0ce916a7-e537-41e7-94ab-f382a1dca914</id>
       <recordtableid>ed05e554-c16a-456f-81e0-6907c11d6fc3</recordtableid>
     </None>
+    <None Include="Recordings_b_exops\Daten_einschraenken.rxrec">
+      <BoundTo>8821a1e8-c924-4b2b-ae66-8ee6e6d8ff06</BoundTo>
+      <id>aba429d7-40d7-4151-a45e-e266e2f2b873</id>
+      <recordtableid>50662912-3023-4281-a6ad-f48078cf1e9e</recordtableid>
+    </None>
+    <None Include="Recordings_b_exops\Einschraenkungen_ueberpruefen.rxrec">
+      <BoundTo>8821a1e8-c924-4b2b-ae66-8ee6e6d8ff06</BoundTo>
+      <id>ac44c0c3-c8e7-4ee0-989a-f5a1ed3e1b69</id>
+      <recordtableid>e284a7db-38e4-4019-9f0b-19a404c58484</recordtableid>
+    </None>
     <None Include="Recordings_b_exops\Start_AUT_2.rxrec">
       <BoundTo>8821a1e8-c924-4b2b-ae66-8ee6e6d8ff06</BoundTo>
       <id>43f3d4ca-542b-4691-b9f7-27efd34a01d7</id>
       <recordtableid>bebf7672-7742-4bf1-885c-88c6ff5b934e</recordtableid>
+    </None>
+    <None Include="Recordings_b_exops\Tagesdatum_einlesen.rxrec">
+      <BoundTo>8821a1e8-c924-4b2b-ae66-8ee6e6d8ff06</BoundTo>
+      <id>28563b0d-cd95-4401-b94a-b562c718edc6</id>
+      <recordtableid>89074ac8-76a4-48dc-8276-b76893be6b9d</recordtableid>
+    </None>
+    <None Include="Recordings_b_exops\Ueberpruefung_Buchungen.rxrec">
+      <BoundTo>8821a1e8-c924-4b2b-ae66-8ee6e6d8ff06</BoundTo>
+      <id>12880100-504e-4fbf-a850-8e6eb839cea6</id>
+      <recordtableid>c941b0cb-fcf8-4d60-95fa-ad8ff03173db</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

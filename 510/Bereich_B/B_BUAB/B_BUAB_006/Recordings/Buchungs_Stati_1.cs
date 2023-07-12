@@ -24,60 +24,34 @@ namespace B_BUAB_006.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The Buchungs_Stati_1 recording.
     /// </summary>
-    [TestModule("c870324e-d08a-454d-89b2-cdf1b7eff740", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    [TestModule("5cdc5274-4063-48ab-9f24-59aa30f7189f", ModuleType.Recording, 1)]
+    public partial class Buchungs_Stati_1 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BUAB_006.B_BUAB_006Repository repository.
         /// </summary>
         public static global::B_BUAB_006.B_BUAB_006Repository repo = global::B_BUAB_006.B_BUAB_006Repository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static Buchungs_Stati_1 instance = new Buchungs_Stati_1();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public Buchungs_Stati_1()
         {
-            startFile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            programm = "B_BUAB";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static Buchungs_Stati_1 Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _startFile;
-
-        /// <summary>
-        /// Gets or sets the value of variable startFile.
-        /// </summary>
-        [TestVariable("700d4d81-4aa6-4f02-a37f-60649c98afbb")]
-        public string startFile
-        {
-            get { return _startFile; }
-            set { _startFile = value; }
-        }
-
-        string _programm;
-
-        /// <summary>
-        /// Gets or sets the value of variable programm.
-        /// </summary>
-        [TestVariable("4d061347-4bf7-4a8b-a358-a3f6929bae67")]
-        public string programm
-        {
-            get { return _programm; }
-            set { _programm = value; }
-        }
 
 #endregion
 
@@ -105,14 +79,18 @@ namespace B_BUAB_006.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $startFile with arguments from variable $programm in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(startFile, programm, "", false);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'gelöschte Buchungen') on item 'DlgOptionenStatus.CbGeloescht'.", repo.DlgOptionenStatus.CbGeloeschtInfo, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.DlgOptionenStatus.CbGeloeschtInfo, "Text", "gelöschte Buchungen");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblB.TitleBar100BuchungenAnzeigen'", repo.TblB.TitleBar100BuchungenAnzeigenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.TblB.TitleBar100BuchungenAnzeigenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "User", "UNCHECK", new RecordItemIndex(1));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Buchungen anzeigen') on item 'TblB.TitleBar100BuchungenAnzeigen'.", repo.TblB.TitleBar100BuchungenAnzeigenInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.TblB.TitleBar100BuchungenAnzeigenInfo, "Text", "Buchungen anzeigen");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgOptionenStatus.CbGeloescht' at Center.", repo.DlgOptionenStatus.CbGeloeschtInfo, new RecordItemIndex(2));
+            repo.DlgOptionenStatus.CbGeloescht.Click();
+            
+            Report.Log(ReportLevel.Info, "User", "CHECK", new RecordItemIndex(3));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgOptionenStatus.PbOk' at Center.", repo.DlgOptionenStatus.PbOkInfo, new RecordItemIndex(4));
+            repo.DlgOptionenStatus.PbOk.Click();
             
         }
 
