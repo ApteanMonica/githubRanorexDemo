@@ -103,6 +103,30 @@
       <UserCode>true</UserCode>
       <id>02a79648-a5db-470b-9bee-1cc673bf953a</id>
     </Compile>
+    <Compile Include="Recordings\AVZ_Ueberleitung.cs">
+      <BoundTo>bf0fc021-01df-4796-b8ed-87d2d6a8092e</BoundTo>
+      <DependentUpon>AVZ_Ueberleitung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8e327627-e29c-4c80-9413-cfb96782ebc2</id>
+    </Compile>
+    <Compile Include="Recordings\AVZ_Ueberleitung.UserCode.cs">
+      <BoundTo>bf0fc021-01df-4796-b8ed-87d2d6a8092e</BoundTo>
+      <DependentUpon>AVZ_Ueberleitung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>78835c85-4a9c-4f5b-b168-0079a2c14d84</id>
+    </Compile>
+    <Compile Include="Recordings\Bestaetigungsmeldung.cs">
+      <BoundTo>855847be-7b93-4121-b0e0-0faae58c6743</BoundTo>
+      <DependentUpon>Bestaetigungsmeldung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>914b3de5-2fbc-427f-93ab-2a26c75293e8</id>
+    </Compile>
+    <Compile Include="Recordings\Bestaetigungsmeldung.UserCode.cs">
+      <BoundTo>855847be-7b93-4121-b0e0-0faae58c6743</BoundTo>
+      <DependentUpon>Bestaetigungsmeldung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>12312694-8538-42ab-8865-4de13b3b1cee</id>
+    </Compile>
     <Compile Include="Recordings\CloseAUT.cs">
       <DependentUpon>CloseAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -175,6 +199,30 @@
       <UserCode>true</UserCode>
       <id>581afd17-1bef-49f4-851f-05a93f184017</id>
     </Compile>
+    <Compile Include="Recordings_b_exops\CloseAUT_2.cs">
+      <BoundTo>0ce916a7-e537-41e7-94ab-f382a1dca914</BoundTo>
+      <DependentUpon>CloseAUT_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b0b95004-fe2b-4d08-8d71-dda32fed856c</id>
+    </Compile>
+    <Compile Include="Recordings_b_exops\CloseAUT_2.UserCode.cs">
+      <BoundTo>0ce916a7-e537-41e7-94ab-f382a1dca914</BoundTo>
+      <DependentUpon>CloseAUT_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>34ea307c-849b-40a2-a12c-4a14e94ebda1</id>
+    </Compile>
+    <Compile Include="Recordings_b_exops\Start_AUT_2.cs">
+      <BoundTo>43f3d4ca-542b-4691-b9f7-27efd34a01d7</BoundTo>
+      <DependentUpon>Start_AUT_2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f3ea02e7-f046-4a98-aa31-619e9c49ef92</id>
+    </Compile>
+    <Compile Include="Recordings_b_exops\Start_AUT_2.UserCode.cs">
+      <BoundTo>43f3d4ca-542b-4691-b9f7-27efd34a01d7</BoundTo>
+      <DependentUpon>Start_AUT_2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c19d4efd-6c38-4aa6-9646-b9f3638b1910</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -195,6 +243,16 @@
       <BoundTo>8821a1e8-c924-4b2b-ae66-8ee6e6d8ff06</BoundTo>
       <id>b63ec326-9941-48bc-a53b-b4689054b8b8</id>
       <recordtableid>de8bcdd4-a249-4004-92ce-4f0d7063ab60</recordtableid>
+    </None>
+    <None Include="Recordings\AVZ_Ueberleitung.rxrec">
+      <BoundTo>8821a1e8-c924-4b2b-ae66-8ee6e6d8ff06</BoundTo>
+      <id>bf0fc021-01df-4796-b8ed-87d2d6a8092e</id>
+      <recordtableid>2a2bec47-aca7-4c5f-a992-a09c20d8764c</recordtableid>
+    </None>
+    <None Include="Recordings\Bestaetigungsmeldung.rxrec">
+      <BoundTo>8821a1e8-c924-4b2b-ae66-8ee6e6d8ff06</BoundTo>
+      <id>855847be-7b93-4121-b0e0-0faae58c6743</id>
+      <recordtableid>f1e670fd-616c-4686-929b-5866c287de87</recordtableid>
     </None>
     <None Include="Recordings\CloseAUT.rxrec">
       <BoundTo>8821a1e8-c924-4b2b-ae66-8ee6e6d8ff06</BoundTo>
@@ -226,6 +284,16 @@
       <id>7e50dc00-742e-4b6a-8535-9b0aedcf1836</id>
       <recordtableid>e56ccb67-eb92-48de-b73e-a3f27c9956db</recordtableid>
     </None>
+    <None Include="Recordings_b_exops\CloseAUT_2.rxrec">
+      <BoundTo>8821a1e8-c924-4b2b-ae66-8ee6e6d8ff06</BoundTo>
+      <id>0ce916a7-e537-41e7-94ab-f382a1dca914</id>
+      <recordtableid>ed05e554-c16a-456f-81e0-6907c11d6fc3</recordtableid>
+    </None>
+    <None Include="Recordings_b_exops\Start_AUT_2.rxrec">
+      <BoundTo>8821a1e8-c924-4b2b-ae66-8ee6e6d8ff06</BoundTo>
+      <id>43f3d4ca-542b-4691-b9f7-27efd34a01d7</id>
+      <recordtableid>bebf7672-7742-4bf1-885c-88c6ff5b934e</recordtableid>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="N_LISTEN_BULI_001.rxtmg">
@@ -238,6 +306,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Recordings_b_exops">
+      <id>ec661ae0-dbfc-453f-8b72-076977620ce2</id>
+    </Folder>
     <Folder Include="Recordings">
       <id>10474349-c505-4469-985a-4797aaf17f27</id>
     </Folder>

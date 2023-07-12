@@ -114,31 +114,34 @@ namespace N_LISTEN_BULI_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBuchungsliste.CbBereich'.", repo.FrmBuchungsliste.CbBereichInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.FrmBuchungsliste.CbBereichInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBuchungsliste.RbMonat'.", repo.FrmBuchungsliste.RbMonatInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.RbMonat' at Center.", repo.FrmBuchungsliste.RbMonatInfo, new RecordItemIndex(3));
+            repo.FrmBuchungsliste.RbMonat.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBuchungsliste.RbMonat'.", repo.FrmBuchungsliste.RbMonatInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.FrmBuchungsliste.RbMonatInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'FrmBuchungsliste.CmbVariante'.", repo.FrmBuchungsliste.CmbVarianteInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'FrmBuchungsliste.CmbVariante'.", repo.FrmBuchungsliste.CmbVarianteInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.FrmBuchungsliste.CmbVarianteInfo, "Text", "1");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Beginn_GJ' with focus on 'FrmBuchungsliste.TextVon'.", repo.FrmBuchungsliste.TextVonInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Beginn_GJ' with focus on 'FrmBuchungsliste.TextVon'.", repo.FrmBuchungsliste.TextVonInfo, new RecordItemIndex(6));
             repo.FrmBuchungsliste.TextVon.PressKeys(Beginn_GJ);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beginn_GJ) on item 'FrmBuchungsliste.TextVon'.", repo.FrmBuchungsliste.TextVonInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beginn_GJ) on item 'FrmBuchungsliste.TextVon'.", repo.FrmBuchungsliste.TextVonInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.FrmBuchungsliste.TextVonInfo, "Text", Beginn_GJ);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Ende_GJ' with focus on 'FrmBuchungsliste.TextBis'.", repo.FrmBuchungsliste.TextBisInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Ende_GJ' with focus on 'FrmBuchungsliste.TextBis'.", repo.FrmBuchungsliste.TextBisInfo, new RecordItemIndex(9));
             repo.FrmBuchungsliste.TextBis.PressKeys(Ende_GJ);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ende_GJ) on item 'FrmBuchungsliste.TextBis'.", repo.FrmBuchungsliste.TextBisInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ende_GJ) on item 'FrmBuchungsliste.TextBis'.", repo.FrmBuchungsliste.TextBisInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.FrmBuchungsliste.TextBisInfo, "Text", Ende_GJ);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbOptionenTabelle' at Center.", repo.FrmBuchungsliste.PbOptionenTabelleInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbOptionenTabelle' at Center.", repo.FrmBuchungsliste.PbOptionenTabelleInfo, new RecordItemIndex(11));
             repo.FrmBuchungsliste.PbOptionenTabelle.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBuchungsliste.ColTypRow2'", repo.FrmBuchungsliste.ColTypRow2Info, new ActionTimeout(120000), new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBuchungsliste.ColTypRow2'", repo.FrmBuchungsliste.ColTypRow2Info, new ActionTimeout(120000), new RecordItemIndex(12));
             repo.FrmBuchungsliste.ColTypRow2Info.WaitForExists(120000);
             
         }

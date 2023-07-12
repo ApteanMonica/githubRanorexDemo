@@ -7,6 +7,26 @@
 			name="Hinweismeldung_Ueberleiten"
 			ref="d432de5d-66d9-43c3-b2ef-8fdb9827d171"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Belegnummer_Ueberleitung"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="f8d654e2-68d0-41dd-8440-d05213ffc3bd"
+					variablename="Belegnummer_Ueberleitung">
+					</var>
+					<var
+					dataname="Belegdatum_Ueberleitung"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="c92b0199-7c24-48fa-bf9f-9048fb04cdf0"
+					variablename="Belegdatum_Ueberleitung">
+					</var>
+					<var
+					dataname="Ust_Code_Ueberleitung"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="bbc9c674-54fd-4dc8-a676-4ad2c1cbcf08"
+					variablename="Ust_Code_Ueberleitung">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="38afbd31-b39f-4e76-a8a0-64dd3a9a1015"
@@ -15,19 +35,23 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Beginn_GJ"
-					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
-					variableid="af31b04c-1e77-4902-ad02-2e6741885bbc"
-					variablename="Beginn_GJ">
-					</var>
-					<var
 					dataname="Ende_GJ"
 					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
 					variableid="92888088-ecdf-4f35-92a1-4a5f244fa1df"
 					variablename="Ende_GJ">
 					</var>
+					<var
+					dataname="Beginn_GJ"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="af31b04c-1e77-4902-ad02-2e6741885bbc"
+					variablename="Beginn_GJ">
+					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="48fe7c49-f1a3-4194-9bc3-7c8dde3e51e7"
+			name="Schnittstelle_B_EXOPS">
+			</smartfoldernode>
 			<testmodule
 			id="493f9845-0dc9-464d-b0dd-be080bc10947"
 			name="CloseAUT"
@@ -62,8 +86,24 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<testmodule
+			id="57d14254-fb8e-49b6-b2ae-17d75bce2da3"
+			name="Bestaetigungsmeldung"
+			ref="f1e670fd-616c-4686-929b-5866c287de87"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="6e96393a-3497-43ad-b3ec-33355b6c7bdc"
+			name="CloseAUT_2"
+			ref="ed05e554-c16a-456f-81e0-6907c11d6fc3"
+			type="Recording">
+			</testmodule>
 			<setup
 			id="6ec81fd3-8200-4036-9670-a59a2251df78"
+			name="setup">
+			</setup>
+			<setup
+			id="709abd95-dc28-4e2c-9b3a-07c458467fbf"
 			name="setup">
 			</setup>
 			<testmodule
@@ -79,19 +119,49 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm"
-					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
-					variableid="52e37faf-2152-4c85-ac91-340dfc64728b"
-					variablename="Programm">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
 					variableid="65bf97cc-f6b4-4e05-b91c-1c0010b6a47e"
 					variablename="Startfile">
 					</var>
+					<var
+					dataname="Programm"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="52e37faf-2152-4c85-ac91-340dfc64728b"
+					variablename="Programm">
+					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="7e318368-e68f-4e4b-84b7-11f50a32937d"
+			name="AVZ_Ueberleitung"
+			ref="2a2bec47-aca7-4c5f-a992-a09c20d8764c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Belegnummer_Ueberleitung"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="e327bd7b-6d6d-40bb-8d3a-d60aa6eb4166"
+					variablename="Belegnummer_Ueberleitung">
+					</var>
+					<var
+					dataname="Belegdatum_Ueberleitung"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="5839be8f-7fb0-4bc7-ac42-ee97dab608d9"
+					variablename="Belegdatum_Ueberleitung">
+					</var>
+					<var
+					dataname="Ust_Code_Ueberleitung"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="52609ef9-fd70-450c-9879-3117fa69470e"
+					variablename="Ust_Code_Ueberleitung">
+					</var>
+				</databinding>
+			</testmodule>
+			<teardown
+			id="a9214a79-1fc9-4cd3-a2b6-2100c26caac7"
+			name="teardown">
+			</teardown>
 			<testcase
 			id="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
 			name="N_LISTEN_BULI_001"
@@ -137,6 +207,22 @@
 					name="Kostenstelle_20"
 					value="20">
 					</param>
+					<param
+					name="Belegnummer_Ueberleitung"
+					value="BULI_001_A">
+					</param>
+					<param
+					name="Belegdatum_Ueberleitung"
+					value="31.12.20222">
+					</param>
+					<param
+					name="Ust_Code_Ueberleitung"
+					value="V00">
+					</param>
+					<param
+					name="Programm_2"
+					value="B_EXOPS">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -146,28 +232,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Kostenstelle_20"
+					dataname="Afa_Konto"
 					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
-					variableid="1f2a0ed4-ef5d-4925-9c35-68324f2a6a86"
-					variablename="Kostenstelle_20">
-					</var>
-					<var
-					dataname="GWG_AfA_Gegenkonto"
-					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
-					variableid="0ba1bae1-41f7-49ef-8c43-11f42992546e"
-					variablename="GWG_AfA_Gegenkonto">
-					</var>
-					<var
-					dataname="GWG_AfA_Konto"
-					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
-					variableid="216db4fc-4b7e-4edc-8e9f-c8fc04be0769"
-					variablename="GWG_AfA_Konto">
-					</var>
-					<var
-					dataname="Kostenstelle_10"
-					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
-					variableid="17a21ed9-add6-4d98-bc2e-6d131770a33d"
-					variablename="Kostenstelle_10">
+					variableid="61e70350-6d97-43c3-be07-222da33d4a75"
+					variablename="Afa_Konto">
 					</var>
 					<var
 					dataname="AfA_Gegenkonto"
@@ -176,12 +244,36 @@
 					variablename="AfA_Gegenkonto">
 					</var>
 					<var
-					dataname="Afa_Konto"
+					dataname="Kostenstelle_10"
 					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
-					variableid="61e70350-6d97-43c3-be07-222da33d4a75"
-					variablename="Afa_Konto">
+					variableid="17a21ed9-add6-4d98-bc2e-6d131770a33d"
+					variablename="Kostenstelle_10">
+					</var>
+					<var
+					dataname="GWG_AfA_Konto"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="216db4fc-4b7e-4edc-8e9f-c8fc04be0769"
+					variablename="GWG_AfA_Konto">
+					</var>
+					<var
+					dataname="GWG_AfA_Gegenkonto"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="0ba1bae1-41f7-49ef-8c43-11f42992546e"
+					variablename="GWG_AfA_Gegenkonto">
+					</var>
+					<var
+					dataname="Kostenstelle_20"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="1f2a0ed4-ef5d-4925-9c35-68324f2a6a86"
+					variablename="Kostenstelle_20">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="adf48934-5720-4fb5-8d11-099583e60f24"
+			name="Start_AUT_2"
+			ref="bebf7672-7742-4bf1-885c-88c6ff5b934e"
+			type="Recording">
 			</testmodule>
 			<teardown
 			id="af938ef0-2e2c-4f94-b0f5-15fe0f9ccc3b"
@@ -194,16 +286,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Beginn_GJ"
-					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
-					variableid="b8032de5-f2d5-48c0-ae91-b7289204c982"
-					variablename="Beginn_GJ">
-					</var>
-					<var
 					dataname="Ende_GJ"
 					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
 					variableid="bc31104d-8d6e-4129-8eb1-cf6896134e2a"
 					variablename="Ende_GJ">
+					</var>
+					<var
+					dataname="Beginn_GJ"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="b8032de5-f2d5-48c0-ae91-b7289204c982"
+					variablename="Beginn_GJ">
 					</var>
 				</databinding>
 			</testmodule>
@@ -246,6 +338,14 @@
 						id="0aafff3c-aadc-4f76-9a33-99edf3e79fdf"
 						name="Hinweismeldung_Ueberleiten">
 						</testmodule>
+						<testmodule
+						id="7e318368-e68f-4e4b-84b7-11f50a32937d"
+						name="AVZ_Ueberleitung">
+						</testmodule>
+						<testmodule
+						id="57d14254-fb8e-49b6-b2ae-17d75bce2da3"
+						name="Bestaetigungsmeldung">
+						</testmodule>
 						<teardown
 						id="af938ef0-2e2c-4f94-b0f5-15fe0f9ccc3b"
 						name="teardown">
@@ -255,6 +355,26 @@
 							</testmodule>
 						</teardown>
 					</testcase>
+					<smartfoldernode
+					id="48fe7c49-f1a3-4194-9bc3-7c8dde3e51e7"
+					name="Schnittstelle_B_EXOPS">
+						<setup
+						id="709abd95-dc28-4e2c-9b3a-07c458467fbf"
+						name="setup">
+							<testmodule
+							id="adf48934-5720-4fb5-8d11-099583e60f24"
+							name="Start_AUT_2">
+							</testmodule>
+						</setup>
+						<teardown
+						id="a9214a79-1fc9-4cd3-a2b6-2100c26caac7"
+						name="teardown">
+							<testmodule
+							id="6e96393a-3497-43ad-b3ec-33355b6c7bdc"
+							name="CloseAUT_2">
+							</testmodule>
+						</teardown>
+					</smartfoldernode>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -265,6 +385,9 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="48fe7c49-f1a3-4194-9bc3-7c8dde3e51e7">
+			</testcontainer>
 			<testcontainer
 			id="4bcc8d27-c65d-4d90-a663-d47bf3d8cf9e">
 			</testcontainer>
