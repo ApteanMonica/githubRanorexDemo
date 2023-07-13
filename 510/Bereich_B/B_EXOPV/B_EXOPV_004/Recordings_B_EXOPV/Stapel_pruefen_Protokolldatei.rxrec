@@ -27,6 +27,11 @@ mode="Global">
 		id="104ed472-3bad-466c-88eb-bb9e26cd4f0b"
 		name="Tagesdatum">
 		</var>
+		<var
+		id="06daed8a-b7ed-4e27-8eac-de7f64fdf62a"
+		name="Fehlerprotokoll_Pruefung_Datei">
+			Fehlerprotokoll_b_exopv_004_pruef.txt
+		</var>
 	</variables>
 	<recorditems>
 		<validationitem
@@ -1957,6 +1962,35 @@ WiigAooooAKKKKACiiigBB99vwoT7ooooAQdG+ppV+6PpRRQAtFFFABRRRQAUUUUAf/Z
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="87accc96-206c-44d7-9287-6c33dc291b77">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Fehlerprotokoll_Pruefung_Datei">
+				</binding>
+			</bindings>
+			<info
+			id="90867e14-70b2-4fe6-87d3-bb698ecdd0b9"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'Editor']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 		<validationitem
 		action="AttributeContains"
 		duration="100ms"

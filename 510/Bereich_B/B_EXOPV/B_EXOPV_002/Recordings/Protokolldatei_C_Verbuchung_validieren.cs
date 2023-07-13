@@ -41,6 +41,7 @@ namespace B_EXOPV_002.Recordings
         /// </summary>
         public Protokolldatei_C_Verbuchung_validieren()
         {
+            Protokolldatei_C_Datei = "Fehlerprotokoll_b_exopv_002_C";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace B_EXOPV_002.Recordings
         }
 
 #region Variables
+
+        string _Protokolldatei_C_Datei;
+
+        /// <summary>
+        /// Gets or sets the value of variable Protokolldatei_C_Datei.
+        /// </summary>
+        [TestVariable("e629fb8e-7fb9-4851-a6e3-f37c55dc4c87")]
+        public string Protokolldatei_C_Datei
+        {
+            get { return _Protokolldatei_C_Datei; }
+            set { _Protokolldatei_C_Datei = value; }
+        }
 
 #endregion
 
@@ -82,8 +95,8 @@ namespace B_EXOPV_002.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditor'", repo.FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditorInfo, new ActionTimeout(120000), new RecordItemIndex(0));
             repo.FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditorInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Fehlerprotokoll_b_exopv_002_C') on item 'FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditor'.", repo.FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditorInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditorInfo, "Text", "Fehlerprotokoll_b_exopv_002_C");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Protokolldatei_C_Datei) on item 'FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditor'.", repo.FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditorInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditorInfo, "Text", Protokolldatei_C_Datei);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'B_EXOPV - Starte Verbuchung') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(2));
             Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "B_EXOPV - Starte Verbuchung");

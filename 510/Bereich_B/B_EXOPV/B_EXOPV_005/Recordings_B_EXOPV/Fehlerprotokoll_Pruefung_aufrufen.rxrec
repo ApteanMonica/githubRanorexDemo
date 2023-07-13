@@ -19,10 +19,15 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Fehlerprotokoll_aufrufen"
+	classname="Fehlerprotokoll_Pruefung_aufrufen"
 	namespace="B_EXOPV_005.Recordings_B_EXOPV">
 	</codegen>
 	<variables>
+		<var
+		id="b7ba6b5e-7dc3-48cf-a16c-d176932f3058"
+		name="Fehlerprotokoll_Pruefung_Datei">
+			Fehlerprotokoll_b_exopv_005_pruef.txt
+		</var>
 	</variables>
 	<recorditems>
 		<WaitForRecordItem
@@ -1979,6 +1984,56 @@ GOKu7TShTmgCt5Io8kVY2mjaaAK/kil8sKCcdPSp9ppdpoApWh8x2kZXVyMBWQgKPxHJpQrf2ase
 b7p+lIv3R9KKKAFooooAKKKKACiiigAooooA/9k=
 			</helperscreenshot>
 		</mouseitem>
+		<WaitForRecordItem
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="f98fc4eb-5039-41f2-993a-b3c5e746e80c"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="90867e14-70b2-4fe6-87d3-bb698ecdd0b9"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'Editor']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="6b939679-7a91-4ce4-b329-d726fdfb0ec2">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Fehlerprotokoll_Pruefung_Datei">
+				</binding>
+			</bindings>
+			<info
+			id="90867e14-70b2-4fe6-87d3-bb698ecdd0b9"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'Editor']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="5a4c68c8-710c-4738-ad0b-11d204b6b604"

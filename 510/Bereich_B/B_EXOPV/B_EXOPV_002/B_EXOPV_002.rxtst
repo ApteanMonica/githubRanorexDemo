@@ -19,10 +19,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Protokolldatei_B"
+					dataname="Stapel2_Lager_Datum"
 					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
-					variableid="15cb4e4e-2348-4820-86e6-89bcdd018d37"
-					variablename="Protokolldatei_B">
+					variableid="71ec8ecc-809e-47cc-9648-8bc026ba53bf"
+					variablename="Stapel2_Lager_Datum">
 					</var>
 					<var
 					dataname="Stapel1_Verkauf_Datum"
@@ -31,10 +31,10 @@
 					variablename="Stapel1_Verkauf_Datum">
 					</var>
 					<var
-					dataname="Stapel2_Lager_Datum"
+					dataname="Protokolldatei_B"
 					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
-					variableid="71ec8ecc-809e-47cc-9648-8bc026ba53bf"
-					variablename="Stapel2_Lager_Datum">
+					variableid="15cb4e4e-2348-4820-86e6-89bcdd018d37"
+					variablename="Protokolldatei_B">
 					</var>
 				</databinding>
 			</testmodule>
@@ -45,16 +45,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Monat"
-					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
-					variableid="801ebabc-a7e3-49d1-a13e-b840883a9c12"
-					variablename="Monat">
-					</var>
-					<var
 					dataname="Jahr"
 					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
 					variableid="f512dc74-6bfd-4687-a447-8abebcfb786c"
 					variablename="Jahr">
+					</var>
+					<var
+					dataname="Monat"
+					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
+					variableid="801ebabc-a7e3-49d1-a13e-b840883a9c12"
+					variablename="Monat">
 					</var>
 				</databinding>
 			</testmodule>
@@ -67,6 +67,14 @@
 			name="Protokolldatei_A_Pruefung_validieren"
 			ref="a1a61660-55d6-4861-8520-335af29fd41a"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Protokolldatei_A_Datei"
+					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
+					variableid="51a717a7-0901-4370-9d0d-809679511e8d"
+					variablename="Protokolldatei_A_Datei">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="1980da87-3565-4363-b288-924d8a22acba"
@@ -87,6 +95,12 @@
 					variablename="Beleg6_FB_NEU">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="24b57a2d-531f-4ed1-91e6-1fd288f2ae79"
+			name="Editor_schliessen"
+			ref="f8646f9d-a496-4a54-a002-7afe3a5efde6"
+			type="Recording">
 			</testmodule>
 			<setup
 			id="2671286e-a3ea-47d4-b080-73cb638537cd"
@@ -141,16 +155,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Stapel1_Verkauf_Datum"
-					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
-					variableid="b0c271b0-02dc-478d-97d5-2ed654cbc40a"
-					variablename="Stapel1_Verkauf_Datum">
-					</var>
-					<var
 					dataname="Stapel2_Lager_Datum"
 					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
 					variableid="71ec8ecc-809e-47cc-9648-8bc026ba53bf"
 					variablename="Stapel2_Lager_Datum">
+					</var>
+					<var
+					dataname="Stapel1_Verkauf_Datum"
+					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
+					variableid="b0c271b0-02dc-478d-97d5-2ed654cbc40a"
+					variablename="Stapel1_Verkauf_Datum">
 					</var>
 				</databinding>
 			</testmodule>
@@ -208,6 +222,14 @@
 				<description>
 					<![CDATA[BUG 26881 Fehler vom Stapel Lager fehlen in der Protokolldatei - kein Fehler lt. Ticketeintrag, daher diesen Teil disabled]]>
 				</description>
+				<databinding>
+					<var
+					dataname="Protokolldatei_B_Datei"
+					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
+					variableid="3183362d-37be-4d25-84eb-ee5847a13521"
+					variablename="Protokolldatei_B_Datei">
+					</var>
+				</databinding>
 			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
@@ -268,6 +290,12 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="5ce5fcf9-38aa-4579-bf51-cb989a4497fc"
+			name="Editor_schliessen"
+			ref="f8646f9d-a496-4a54-a002-7afe3a5efde6"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="5d3f36d5-04f9-4eaf-8ef8-7f4889d63029"
 			name="CloseAUT_2"
 			ref="22c25896-930c-4dee-9442-d92c6d688e2b"
@@ -278,6 +306,14 @@
 			name="Protokolldatei_C_Verbuchung_validieren"
 			ref="b98544e5-b74b-43d8-8494-db2220d685e8"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Protokolldatei_C_Datei"
+					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
+					variableid="e629fb8e-7fb9-4851-a6e3-f37c55dc4c87"
+					variablename="Protokolldatei_C_Datei">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="75ceefb0-61eb-4913-bd0a-8f042b94a58c"
@@ -286,16 +322,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
-					variableid="c0330627-67f4-47b6-a3c5-da886ad16060"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm_2"
 					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
 					variableid="d8ba9957-f63f-4cdb-931a-62291438b9ca"
 					variablename="Programm_2">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
+					variableid="c0330627-67f4-47b6-a3c5-da886ad16060"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -332,16 +368,16 @@
 					variablename="Stapel1_Verkauf_Datum">
 					</var>
 					<var
-					dataname="Stapel2_Lager_Datum"
-					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
-					variableid="71ec8ecc-809e-47cc-9648-8bc026ba53bf"
-					variablename="Stapel2_Lager_Datum">
-					</var>
-					<var
 					dataname="Protokolldatei_A"
 					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
 					variableid="01df86ad-6331-4233-afa4-7de9ea1eb4c8"
 					variablename="Protokolldatei_A">
+					</var>
+					<var
+					dataname="Stapel2_Lager_Datum"
+					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
+					variableid="71ec8ecc-809e-47cc-9648-8bc026ba53bf"
+					variablename="Stapel2_Lager_Datum">
 					</var>
 				</databinding>
 			</testmodule>
@@ -358,16 +394,16 @@
 					variablename="Stapel1_Verkauf_Datum">
 					</var>
 					<var
-					dataname="Stapel2_Lager_Datum"
-					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
-					variableid="71ec8ecc-809e-47cc-9648-8bc026ba53bf"
-					variablename="Stapel2_Lager_Datum">
-					</var>
-					<var
 					dataname="Protokolldatei_C"
 					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
 					variableid="69d349c8-8761-42db-b9e6-7a291bd29e16"
 					variablename="Protokolldatei_C">
+					</var>
+					<var
+					dataname="Stapel2_Lager_Datum"
+					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
+					variableid="71ec8ecc-809e-47cc-9648-8bc026ba53bf"
+					variablename="Stapel2_Lager_Datum">
 					</var>
 				</databinding>
 			</testmodule>
@@ -413,10 +449,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Beleg6"
+					dataname="Beleg4"
 					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
-					variableid="fc43bed3-416c-4e6e-bf84-d9abf6190670"
-					variablename="Beleg6">
+					variableid="58768ec0-8f56-4ab2-b8be-a3099e361ed6"
+					variablename="Beleg4">
 					</var>
 					<var
 					dataname="Beleg5"
@@ -425,22 +461,22 @@
 					variablename="Beleg5">
 					</var>
 					<var
-					dataname="Beleg4"
+					dataname="Beleg6"
 					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
-					variableid="58768ec0-8f56-4ab2-b8be-a3099e361ed6"
-					variablename="Beleg4">
-					</var>
-					<var
-					dataname="Beleg2"
-					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
-					variableid="6b44154f-d582-4498-bb3c-2d5e8eeee3ca"
-					variablename="Beleg2">
+					variableid="fc43bed3-416c-4e6e-bf84-d9abf6190670"
+					variablename="Beleg6">
 					</var>
 					<var
 					dataname="Beleg6_FB_NEU"
 					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
 					variableid="e67f934b-9187-41e1-b4d6-af24cea1d932"
 					variablename="Beleg6_FB_NEU">
+					</var>
+					<var
+					dataname="Beleg2"
+					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
+					variableid="6b44154f-d582-4498-bb3c-2d5e8eeee3ca"
+					variablename="Beleg2">
 					</var>
 				</databinding>
 			</testmodule>
@@ -475,16 +511,16 @@
 					variablename="Beleg3">
 					</var>
 					<var
-					dataname="Beleg1"
-					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
-					variableid="41802574-2ba4-4a57-b5e8-735f3e5049bb"
-					variablename="Beleg1">
-					</var>
-					<var
 					dataname="Beleg_Lager"
 					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
 					variableid="102c9c09-b1e9-494d-ab79-48dc8ff860f2"
 					variablename="Beleg_Lager">
+					</var>
+					<var
+					dataname="Beleg1"
+					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
+					variableid="41802574-2ba4-4a57-b5e8-735f3e5049bb"
+					variablename="Beleg1">
 					</var>
 				</databinding>
 			</testmodule>
@@ -495,16 +531,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
-					variableid="d671e8f9-6e57-45b4-9782-b4edd270c5b3"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm"
 					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
 					variableid="9bdf31e0-8662-40ec-bfd1-380debb0b17a"
 					variablename="Programm">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
+					variableid="d671e8f9-6e57-45b4-9782-b4edd270c5b3"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -521,16 +557,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Jahr"
-					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
-					variableid="d7a04f7c-17e7-4b88-9ca3-e4548f9c6c27"
-					variablename="Jahr">
-					</var>
-					<var
 					dataname="Monat"
 					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
 					variableid="7465cf53-b356-4252-b2f8-d67efe284c8a"
 					variablename="Monat">
+					</var>
+					<var
+					dataname="Jahr"
+					datasourceid="f2bd194e-328a-402e-a518-f156a0b9cd35"
+					variableid="d7a04f7c-17e7-4b88-9ca3-e4548f9c6c27"
+					variablename="Jahr">
 					</var>
 				</databinding>
 			</testmodule>
@@ -608,16 +644,28 @@
 					value="01">
 					</param>
 					<param
-					name="Protokolldatei_B"
-					value="c:\temp\Fehlerprotokoll_b_exopv_002_B.txt">
-					</param>
-					<param
 					name="Protokolldatei_A"
 					value="c:\temp\Fehlerprotokoll_b_exopv_002_A.txt">
 					</param>
 					<param
+					name="Protokolldatei_A_Datei"
+					value="Fehlerprotokoll_b_exopv_002_A.txt">
+					</param>
+					<param
+					name="Protokolldatei_B"
+					value="c:\temp\Fehlerprotokoll_b_exopv_002_B.txt">
+					</param>
+					<param
+					name="Protokolldatei_B_Datei"
+					value="Fehlerprotokoll_b_exopv_002_B.txt">
+					</param>
+					<param
 					name="Protokolldatei_C"
 					value="c:\temp\Fehlerprotokoll_b_exopv_002_C.txt">
+					</param>
+					<param
+					name="Protokolldatei_C_Datei"
+					value="Fehlerprotokoll_b_exopv_002_C.txt">
 					</param>
 					<param
 					name="Stapel1_Verkauf_Datum"
@@ -713,6 +761,10 @@
 						name="Protokolldatei_A_Pruefung_validieren">
 						</testmodule>
 						<testmodule
+						id="c8e7852b-94fd-4340-9973-a5fb3529d2cb"
+						name="Editor_schliessen">
+						</testmodule>
+						<testmodule
 						id="10d3f36a-01f3-4325-ab92-4f9be0ec4914"
 						name="Verbuchung_Stapel_Verkauf_Lager">
 						</testmodule>
@@ -723,6 +775,10 @@
 						<testmodule
 						id="56a96abd-2b52-4de7-b671-e672f56aac52"
 						name="Protokolldatei_B_Verbuchung_validieren">
+						</testmodule>
+						<testmodule
+						id="24b57a2d-531f-4ed1-91e6-1fd288f2ae79"
+						name="Editor_schliessen">
 						</testmodule>
 						<testmodule
 						id="2915679f-04ab-4599-a9c8-f2c84ea40e12"
@@ -744,12 +800,12 @@
 						id="130ac3d8-2b8c-4d95-95ba-9806341f728f"
 						name="teardown">
 							<testmodule
-							id="3a953529-291f-4ae1-b312-f50d8fe04631"
-							name="Optionen_Fehlerstatus_zuruecksetzen">
+							id="5ce5fcf9-38aa-4579-bf51-cb989a4497fc"
+							name="Editor_schliessen">
 							</testmodule>
 							<testmodule
-							id="c8e7852b-94fd-4340-9973-a5fb3529d2cb"
-							name="Editor_schliessen">
+							id="3a953529-291f-4ae1-b312-f50d8fe04631"
+							name="Optionen_Fehlerstatus_zuruecksetzen">
 							</testmodule>
 							<testmodule
 							id="d5c585e4-9f36-4bea-9892-1da82a53e270"

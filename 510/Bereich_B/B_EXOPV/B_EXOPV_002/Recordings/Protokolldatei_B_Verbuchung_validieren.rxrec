@@ -26,6 +26,11 @@ mode="Desktop">
 	namespace="B_EXOPV_002.Recordings">
 	</codegen>
 	<variables>
+		<var
+		id="3183362d-37be-4d25-84eb-ee5847a13521"
+		name="Protokolldatei_B_Datei">
+			Fehlerprotokoll_b_exopv_002_B
+		</var>
 	</variables>
 	<recorditems>
 		<WaitForRecordItem
@@ -57,6 +62,10 @@ mode="Desktop">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Protokolldatei_B_Datei">
+				</binding>
 			</bindings>
 			<info
 			id="90867e14-70b2-4fe6-87d3-bb698ecdd0b9"
@@ -10203,32 +10212,6 @@ TexEfiM6iiipNAooooA//9k=
 				[100] Beende Prüfung RS\2-Lager
 			</matchvalue>
 		</validationitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="675f1af9-60f8-44d5-9a79-60bea123d509"
-		sx="1106"
-		sy="66"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="05d2e95a-9eb5-4906-9db2-2994e1aee0b9"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@title~'Editor']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
 	</recorditems>
 	<repository
 	id="824108c5-55e3-4ec5-8cd5-4fbac1455c6d"

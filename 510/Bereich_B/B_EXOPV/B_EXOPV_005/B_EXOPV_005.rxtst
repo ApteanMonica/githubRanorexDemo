@@ -157,6 +157,16 @@
 				</description>
 			</testmodule>
 			<testmodule
+			id="2b2c7f5d-7ae5-45a4-8c6c-a9da19264fc0"
+			name="Editor_schliessen"
+			ref="4de84d69-3e7f-4c45-a319-4781fe51045f"
+			type="Recording">
+			</testmodule>
+			<teardown
+			id="2b4a51f3-c56b-43c8-900f-f9c0ac9e1c68"
+			name="teardown">
+			</teardown>
+			<testmodule
 			id="36a37167-209c-4928-805c-ca09598f35a0"
 			name="CloseAUT"
 			ref="80d0231f-2329-4041-8791-b90e382fdee8"
@@ -191,10 +201,33 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="4cd6b1bb-a584-4c87-a8a4-199e9c62e0be"
+			name="Fehlerprotokoll_Verbuchung_aufrufen"
+			ref="63ec443e-b1ab-4b2a-ad84-22f092dcee8e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Fehlerprotokoll_Verbuchung_Datei"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="7949f403-4c90-4317-9532-07ad7bd8e69e"
+					variablename="Fehlerprotokoll_Verbuchung_Datei">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="5d172029-04da-494c-b842-c1b853424117"
 			name="setup">
 			</setup>
+			<testmodule
+			id="5f39b879-3474-45df-a310-02ffcd28f3f5"
+			name="Fehlerprotokoll_Verbuchung_pruefen"
+			ref="1bf2f54d-35a5-4bcb-92a7-854c26e69497"
+			type="Recording">
+				<description>
+					<![CDATA[ACHTUNG!!! Ticket erfassen! Protokoll wird nicht automatisch aufgerufen + Beleg mit Status F fehlt in Prüfdatei]]>
+				</description>
+			</testmodule>
 			<testcase
 			id="6406e09a-057a-43fb-8800-e15265b29c87"
 			name="B_BUAB_Kontrolle_Buchungen_Belegnummern">
@@ -314,6 +347,12 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="963d145c-b7be-46e7-a362-e2b67c6ebbad"
+			name="Editor_schliessen"
+			ref="4de84d69-3e7f-4c45-a319-4781fe51045f"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="9b9512ab-a325-4053-b7ac-a9844c0eb031"
 			name="Verbuchung_Meldungen_verbucht_Fehler"
 			ref="446f3ba0-459f-43fd-8aff-78cb4a17eea7"
@@ -364,8 +403,16 @@
 					value="c:\temp\Fehlerprotokoll_b_exopv_005_pruef.txt">
 					</param>
 					<param
+					name="Fehlerprotokoll_Pruefung_Datei"
+					value="Fehlerprotokoll_b_exopv_005_pruef.txt">
+					</param>
+					<param
 					name="Fehlerprotokoll_Verbuchung"
 					value="c:\temp\Fehlerprotokoll_b_exopv_005_verbuch.txt">
+					</param>
+					<param
+					name="Fehlerprotokoll_Verbuchung_Datei"
+					value="Fehlerprotokoll_b_exopv_005_verbuch.txt">
 					</param>
 					<param
 					name="Jahr"
@@ -449,16 +496,16 @@
 				</description>
 				<databinding>
 					<var
-					dataname="LF_01"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="e277e4e7-f0dc-435e-8a22-a387a482d1df"
-					variablename="LF_01">
-					</var>
-					<var
 					dataname="LF_02"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="ec7e78a6-458e-4462-90ad-2fab6730d245"
 					variablename="LF_02">
+					</var>
+					<var
+					dataname="LF_01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="e277e4e7-f0dc-435e-8a22-a387a482d1df"
+					variablename="LF_01">
 					</var>
 				</databinding>
 			</testmodule>
@@ -469,16 +516,16 @@
 			type="Recording">
 				<databinding>
 					<var
+					dataname="Fehlerprotokoll_Verbuchung"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="b5bd3e66-5b63-4d25-8a69-a4177fa8e537"
+					variablename="Fehlerprotokoll_Verbuchung">
+					</var>
+					<var
 					dataname="Stapel_Herkunft"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="80147ceb-e943-46c5-a7c1-f05b59ef1cce"
 					variablename="Stapel_Herkunft">
-					</var>
-					<var
-					dataname="Fehlerprotokoll_Pruefung"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="b5bd3e66-5b63-4d25-8a69-a4177fa8e537"
-					variablename="Fehlerprotokoll_Verbuchung">
 					</var>
 				</databinding>
 			</testmodule>
@@ -507,9 +554,17 @@
 			</testmodule>
 			<testmodule
 			id="be64b191-26b0-436d-a379-41d0577b8a72"
-			name="Fehlerprotokoll_aufrufen"
+			name="Fehlerprotokoll_Pruefung_aufrufen"
 			ref="e832eec0-459c-4f07-8dc5-3837792179c2"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Fehlerprotokoll_Pruefung_Datei"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="b7ba6b5e-7dc3-48cf-a16c-d176932f3058"
+					variablename="Fehlerprotokoll_Pruefung_Datei">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="bf00dd7a-2681-4ad5-ad3e-40f78dbb55cb"
@@ -519,14 +574,6 @@
 				<description>
 					<![CDATA[BUG 37789 Aufbau Protokoll + Plausibilität Meldungen + Protokoll]]>
 				</description>
-				<databinding>
-					<var
-					dataname="Tagesdatum"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="99d1b8e5-78d4-420f-b643-a57158a884e7"
-					variablename="Tagesdatum">
-					</var>
-				</databinding>
 			</testmodule>
 			<testcase
 			id="c9f22167-116d-46e5-b2fc-de0a7ff30c6e"
@@ -721,12 +768,20 @@
 						</testmodule>
 						<testmodule
 						id="be64b191-26b0-436d-a379-41d0577b8a72"
-						name="Fehlerprotokoll_aufrufen">
+						name="Fehlerprotokoll_Pruefung_aufrufen">
 						</testmodule>
 						<testmodule
 						id="bf00dd7a-2681-4ad5-ad3e-40f78dbb55cb"
 						name="Pruefung_dopp_Beleg_L_Protokoll_pruefen">
 						</testmodule>
+						<teardown
+						id="2b4a51f3-c56b-43c8-900f-f9c0ac9e1c68"
+						name="teardown">
+							<testmodule
+							id="963d145c-b7be-46e7-a362-e2b67c6ebbad"
+							name="Editor_schliessen">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="c9f22167-116d-46e5-b2fc-de0a7ff30c6e"
@@ -759,9 +814,21 @@
 						id="9b9512ab-a325-4053-b7ac-a9844c0eb031"
 						name="Verbuchung_Meldungen_verbucht_Fehler">
 						</testmodule>
+						<testmodule
+						id="4cd6b1bb-a584-4c87-a8a4-199e9c62e0be"
+						name="Fehlerprotokoll_Verbuchung_aufrufen">
+						</testmodule>
+						<testmodule
+						id="5f39b879-3474-45df-a310-02ffcd28f3f5"
+						name="Fehlerprotokoll_Verbuchung_pruefen">
+						</testmodule>
 						<teardown
 						id="85a66b3d-8220-4cfc-a043-f495ba09ce5a"
 						name="teardown">
+							<testmodule
+							id="2b2c7f5d-7ae5-45a4-8c6c-a9da19264fc0"
+							name="Editor_schliessen">
+							</testmodule>
 							<testmodule
 							id="ea0ee79a-4bc4-403d-a03e-1a5d8e5c48c4"
 							name="Optionen_Default_setzen_pruefen">

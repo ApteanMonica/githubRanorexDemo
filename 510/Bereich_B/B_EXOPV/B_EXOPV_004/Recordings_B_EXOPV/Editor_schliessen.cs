@@ -20,19 +20,19 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_EXOPV_001.Recordings
+namespace B_EXOPV_004.Recordings_B_EXOPV
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
     ///The Editor_schliessen recording.
     /// </summary>
-    [TestModule("044cebae-8c65-4ec3-a05d-a6ba3845b34b", ModuleType.Recording, 1)]
+    [TestModule("d6a06d71-cd45-40c4-9af3-6ae974448572", ModuleType.Recording, 1)]
     public partial class Editor_schliessen : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_EXOPV_001.B_EXOPV_001Repository repository.
+        /// Holds an instance of the global::B_EXOPV_004.B_EXOPV_004Repository repository.
         /// </summary>
-        public static global::B_EXOPV_001.B_EXOPV_001Repository repo = global::B_EXOPV_001.B_EXOPV_001Repository.Instance;
+        public static global::B_EXOPV_004.B_EXOPV_004Repository repo = global::B_EXOPV_004.B_EXOPV_004Repository.Instance;
 
         static Editor_schliessen instance = new Editor_schliessen();
 
@@ -79,8 +79,8 @@ namespace B_EXOPV_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditor'.", repo.FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditorInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditor, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_Editor'.", repo.FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_EditorInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_Editor, 1000);
             
         }
 

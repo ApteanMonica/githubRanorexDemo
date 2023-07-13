@@ -80,7 +80,7 @@ namespace B_EXOPV_002.Recordings
             Init();
 
             Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FehlerprotokollBExopv001TxtEditor'.", repo.FehlerprotokollBExopv001TxtEditor.SelfInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FehlerprotokollBExopv001TxtEditor.Self, 500);
+            Host.Current.CloseApplication(repo.FehlerprotokollBExopv001TxtEditor.Self, 1000);
             
         }
 

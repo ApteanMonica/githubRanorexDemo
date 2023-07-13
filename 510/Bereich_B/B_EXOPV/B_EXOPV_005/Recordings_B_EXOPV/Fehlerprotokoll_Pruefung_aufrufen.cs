@@ -24,34 +24,47 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verbuchung_Meldungen_verbucht_Fehler recording.
+    ///The Fehlerprotokoll_Pruefung_aufrufen recording.
     /// </summary>
-    [TestModule("446f3ba0-459f-43fd-8aff-78cb4a17eea7", ModuleType.Recording, 1)]
-    public partial class Verbuchung_Meldungen_verbucht_Fehler : ITestModule
+    [TestModule("e832eec0-459c-4f07-8dc5-3837792179c2", ModuleType.Recording, 1)]
+    public partial class Fehlerprotokoll_Pruefung_aufrufen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_005.B_EXOPV_005Repository repository.
         /// </summary>
         public static global::B_EXOPV_005.B_EXOPV_005Repository repo = global::B_EXOPV_005.B_EXOPV_005Repository.Instance;
 
-        static Verbuchung_Meldungen_verbucht_Fehler instance = new Verbuchung_Meldungen_verbucht_Fehler();
+        static Fehlerprotokoll_Pruefung_aufrufen instance = new Fehlerprotokoll_Pruefung_aufrufen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verbuchung_Meldungen_verbucht_Fehler()
+        public Fehlerprotokoll_Pruefung_aufrufen()
         {
+            Fehlerprotokoll_Pruefung_Datei = "Fehlerprotokoll_b_exopv_005_pruef.txt";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verbuchung_Meldungen_verbucht_Fehler Instance
+        public static Fehlerprotokoll_Pruefung_aufrufen Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _Fehlerprotokoll_Pruefung_Datei;
+
+        /// <summary>
+        /// Gets or sets the value of variable Fehlerprotokoll_Pruefung_Datei.
+        /// </summary>
+        [TestVariable("b7ba6b5e-7dc3-48cf-a16c-d176932f3058")]
+        public string Fehlerprotokoll_Pruefung_Datei
+        {
+            get { return _Fehlerprotokoll_Pruefung_Datei; }
+            set { _Fehlerprotokoll_Pruefung_Datei = value; }
+        }
 
 #endregion
 
@@ -82,26 +95,17 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.FakturenPruefung'", repo.DlgMessageBox.FakturenPruefungInfo, new ActionTimeout(60000), new RecordItemIndex(0));
             repo.DlgMessageBox.FakturenPruefungInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Belege, die schon als OP vorhanden waren,\r\nwurden mit Status = <F> gekennzeichnet,\r\nkontrollieren Sie diese mit dem Programm\r\n<Bearbeiten Externe Fakturen>  -\r\n7 Belege wurden verbucht  !') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Belege, die schon als OP vorhanden waren,\r\nwurden mit Status = <F> gekennzeichnet,\r\nkontrollieren Sie diese mit dem Programm\r\n<Bearbeiten Externe Fakturen>  -\r\n7 Belege wurden verbucht  !");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es wurden Fehler/Hinweise protokolliert!\r\n\r\nWollen Sie die Protokoll-Datei öffnen ? ') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es wurden Fehler/Hinweise protokolliert!\r\n\r\nWollen Sie die Protokoll-Datei öffnen ? ");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(3));
-            Delay.Duration(1000, false);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditor'", repo.FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditorInfo, new ActionTimeout(120000), new RecordItemIndex(3));
+            repo.FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditorInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgMessageBox.FakturenPruefung'.", repo.DlgMessageBox.FakturenPruefungInfo, new RecordItemIndex(4));
-            Validate.Exists(repo.DlgMessageBox.FakturenPruefungInfo);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Belege wurden verbucht ! ') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Belege wurden verbucht ! ");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(6));
-            repo.DlgMessageBox.Button0.Click();
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Form100ExterneBuchungenVerbuchen.VerbuchenBeendet'.", repo.Form100ExterneBuchungenVerbuchen.VerbuchenBeendetInfo, new RecordItemIndex(7));
-            Validate.Exists(repo.Form100ExterneBuchungenVerbuchen.VerbuchenBeendetInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Fehlerprotokoll_Pruefung_Datei) on item 'FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditor'.", repo.FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditorInfo, new RecordItemIndex(4));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditorInfo, "Text", Fehlerprotokoll_Pruefung_Datei);
             
         }
 

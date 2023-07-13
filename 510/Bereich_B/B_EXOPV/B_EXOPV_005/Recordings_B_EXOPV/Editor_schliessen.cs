@@ -24,29 +24,29 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Fehlerprotokoll_aufrufen recording.
+    ///The Editor_schliessen recording.
     /// </summary>
-    [TestModule("e832eec0-459c-4f07-8dc5-3837792179c2", ModuleType.Recording, 1)]
-    public partial class Fehlerprotokoll_aufrufen : ITestModule
+    [TestModule("4de84d69-3e7f-4c45-a319-4781fe51045f", ModuleType.Recording, 1)]
+    public partial class Editor_schliessen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_005.B_EXOPV_005Repository repository.
         /// </summary>
         public static global::B_EXOPV_005.B_EXOPV_005Repository repo = global::B_EXOPV_005.B_EXOPV_005Repository.Instance;
 
-        static Fehlerprotokoll_aufrufen instance = new Fehlerprotokoll_aufrufen();
+        static Editor_schliessen instance = new Editor_schliessen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Fehlerprotokoll_aufrufen()
+        public Editor_schliessen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Fehlerprotokoll_aufrufen Instance
+        public static Editor_schliessen Instance
         {
             get { return instance; }
         }
@@ -79,14 +79,8 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.FakturenPruefung'", repo.DlgMessageBox.FakturenPruefungInfo, new ActionTimeout(60000), new RecordItemIndex(0));
-            repo.DlgMessageBox.FakturenPruefungInfo.WaitForExists(60000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es wurden Fehler/Hinweise protokolliert!\r\n\r\nWollen Sie die Protokoll-Datei öffnen ? ') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es wurden Fehler/Hinweise protokolliert!\r\n\r\nWollen Sie die Protokoll-Datei öffnen ? ");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
-            repo.DlgMessageBox.Button0.Click();
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditor'.", repo.FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditorInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_TxtEditor, 1000);
             
         }
 
