@@ -82,13 +82,19 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBEXOP.PbDataAccessLoad' at Center.", repo.FrmBEXOP.PbDataAccessLoadInfo, new RecordItemIndex(0));
             repo.FrmBEXOP.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBEXOP.Row1Column0' at Center.", repo.FrmBEXOP.Row1Column0Info, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmBEXOP.Row1Column0'.", repo.FrmBEXOP.Row1Column0Info, new RecordItemIndex(1));
+            Validate.Exists(repo.FrmBEXOP.Row1Column0Info);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'Form100VerwaltenSchnittstelleEXSA.Row2Column0'.", repo.Form100VerwaltenSchnittstelleEXSA.Row2Column0Info, new RecordItemIndex(2));
+            Validate.NotExists(repo.Form100VerwaltenSchnittstelleEXSA.Row2Column0Info);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBEXOP.Row1Column0' at Center.", repo.FrmBEXOP.Row1Column0Info, new RecordItemIndex(3));
             repo.FrmBEXOP.Row1Column0.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBEXSA.TitleBar100VerwaltenSchnittstelleE'", repo.FrmBEXSA.TitleBar100VerwaltenSchnittstelleEInfo, new ActionTimeout(120000), new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBEXSA.TitleBar100VerwaltenSchnittstelleE'", repo.FrmBEXSA.TitleBar100VerwaltenSchnittstelleEInfo, new ActionTimeout(120000), new RecordItemIndex(4));
             repo.FrmBEXSA.TitleBar100VerwaltenSchnittstelleEInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  Verwalten Schnittstelle EXSA') on item 'FrmBEXSA.TitleBar100VerwaltenSchnittstelleE'.", repo.FrmBEXSA.TitleBar100VerwaltenSchnittstelleEInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  Verwalten Schnittstelle EXSA') on item 'FrmBEXSA.TitleBar100VerwaltenSchnittstelleE'.", repo.FrmBEXSA.TitleBar100VerwaltenSchnittstelleEInfo, new RecordItemIndex(5));
             Validate.AttributeContains(repo.FrmBEXSA.TitleBar100VerwaltenSchnittstelleEInfo, "Text", "[100]  Verwalten Schnittstelle EXSA");
             
         }
