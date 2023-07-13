@@ -1367,7 +1367,6 @@ namespace N_LISTEN_BULI_001
             RepoItemInfo _colherkunftrow1Info;
             RepoItemInfo _coldtherkunftrow1Info;
             RepoItemInfo _pbdataaccessloadInfo;
-            RepoItemInfo _row1column0Info;
             RepoItemInfo _colexopbelegnrrow1Info;
 
             /// <summary>
@@ -1382,7 +1381,6 @@ namespace N_LISTEN_BULI_001
                 _colherkunftrow1Info = new RepoItemInfo(this, "ColHerkunftRow1", "container[@controlname='ToolBar']/container[@controlname='groupBox2']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colHerkunft Row 1']", "", 30000, null, "fd06eddf-01c9-4e7f-8005-d15a69628541");
                 _coldtherkunftrow1Info = new RepoItemInfo(this, "ColDtHerkunftRow1", "container[@controlname='ToolBar']/container[@controlname='groupBox2']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colDtHerkunft Row 1']", "", 30000, null, "da0e8767-552c-46a2-8915-0b0d67e98669");
                 _pbdataaccessloadInfo = new RepoItemInfo(this, "PbDataAccessLoad", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Load']", "", 30000, null, "9659407d-00fc-4cc7-8e48-cdc771217954");
-                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "5dcd3ee8-8845-4f11-ac96-e82ae3e44d32");
                 _colexopbelegnrrow1Info = new RepoItemInfo(this, "ColExopBelegnrRow1", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colExop_belegnr Row 1']", "", 30000, null, "4d8f82bc-b90e-4049-b54c-a5838e2d6dff");
             }
 
@@ -1551,30 +1549,6 @@ namespace N_LISTEN_BULI_001
                 get
                 {
                     return _pbdataaccessloadInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Row1Column0 item.
-            /// </summary>
-            [RepositoryItem("5dcd3ee8-8845-4f11-ac96-e82ae3e44d32")]
-            public virtual Ranorex.Cell Row1Column0
-            {
-                get
-                {
-                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Row1Column0 item info.
-            /// </summary>
-            [RepositoryItemInfo("5dcd3ee8-8845-4f11-ac96-e82ae3e44d32")]
-            public virtual RepoItemInfo Row1Column0Info
-            {
-                get
-                {
-                    return _row1column0Info;
                 }
             }
 
@@ -2148,6 +2122,7 @@ namespace N_LISTEN_BULI_001
             RepoItemInfo _colexsaustmvrow5Info;
             RepoItemInfo _colexsaustmvrow7Info;
             RepoItemInfo _colexsaustmvrow8Info;
+            RepoItemInfo _row1column0Info;
 
             /// <summary>
             /// Creates a new Form100VerwaltenSchnittstelleEXSA  folder.
@@ -2161,6 +2136,7 @@ namespace N_LISTEN_BULI_001
                 _colexsaustmvrow5Info = new RepoItemInfo(this, "ColExsaUstmvRow5", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colExsa_ustmv Row 5']", "", 30000, null, "a4232c2d-8fcd-4bed-b964-2e7de02f8d7c");
                 _colexsaustmvrow7Info = new RepoItemInfo(this, "ColExsaUstmvRow7", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colExsa_ustmv Row 7']", "", 30000, null, "9d78469a-4ba9-4351-9dac-d78d0d039851");
                 _colexsaustmvrow8Info = new RepoItemInfo(this, "ColExsaUstmvRow8", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colExsa_ustmv Row 8']", "", 30000, null, "59def7ae-64d1-4794-a995-8b240cae0ed5");
+                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "ddcac581-60a9-4f84-a13c-083a084a8ef6");
             }
 
             /// <summary>
@@ -2280,6 +2256,30 @@ namespace N_LISTEN_BULI_001
                 get
                 {
                     return _colexsaustmvrow8Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item.
+            /// </summary>
+            [RepositoryItem("ddcac581-60a9-4f84-a13c-083a084a8ef6")]
+            public virtual Ranorex.Cell Row1Column0
+            {
+                get
+                {
+                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("ddcac581-60a9-4f84-a13c-083a084a8ef6")]
+            public virtual RepoItemInfo Row1Column0Info
+            {
+                get
+                {
+                    return _row1column0Info;
                 }
             }
 

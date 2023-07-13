@@ -49,6 +49,9 @@
 			name="Tagesdatum_einlesen"
 			ref="89074ac8-76a4-48dc-8276-b76893be6b9d"
 			type="Recording">
+				<description>
+					<![CDATA[Einlesen des Tagesdatum kurz vor Überleitung um einen Tagesprung zu verhindern.]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Tagesdatum_ermitteln"
@@ -482,6 +485,10 @@
 						name="AVZ_Ueberleitung">
 						</testmodule>
 						<testmodule
+						id="12a8ebf1-4f28-41f1-bb2e-46143312c40e"
+						name="Tagesdatum_einlesen">
+						</testmodule>
+						<testmodule
 						id="57d14254-fb8e-49b6-b2ae-17d75bce2da3"
 						name="Bestaetigungsmeldung">
 						</testmodule>
@@ -515,10 +522,6 @@
 							<testmodule
 							id="adf48934-5720-4fb5-8d11-099583e60f24"
 							name="Start_AUT_2">
-							</testmodule>
-							<testmodule
-							id="12a8ebf1-4f28-41f1-bb2e-46143312c40e"
-							name="Tagesdatum_einlesen">
 							</testmodule>
 						</setup>
 						<testmodule
