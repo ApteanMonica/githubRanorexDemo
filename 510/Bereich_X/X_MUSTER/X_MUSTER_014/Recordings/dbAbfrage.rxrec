@@ -23,13 +23,28 @@ mode="Desktop">
 	namespace="X_MUSTER_014.Recordings">
 	</codegen>
 	<variables>
+		<var
+		id="2198486b-69d8-45d3-80c9-2f59367b5603"
+		name="DB_path">
+			c:/Temp/datenbank.txt
+		</var>
+		<var
+		id="45d2808f-fa44-48b9-b602-56320d79e304"
+		name="path_1">
+			c:/Temp/larisa.txt
+		</var>
+		<var
+		id="195d3ab0-f596-4d41-a4ab-0f089d02e7e6"
+		name="path_2">
+			c:/Temp/datei_2.txt
+		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="sql"
+		classname="ApteanSQL"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="sqlSelect"
+		methodname="SQLStatement"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
 		optional="False">
 			<comment>
@@ -45,17 +60,191 @@ mode="Desktop">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						select * from s_adr;
+						select * from b_busy where busy_cd='ER';
 					</argvalue>
 				</argument>
 				<argument
-				argname="file"
-				id="8131821b-3cc7-4922-9f96-a6719e71e405">
+				argname="dbFile"
+				id="8131821b-3cc7-4922-9f96-a6719e71e405"
+				variable="DB_path">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						c:/Temp/datei_1.txt
+						c:/Temp/datenbank.txt
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="1710c8a1-7b88-4d1c-8080-ca155219e3b2">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						c:/Temp/larisa.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="ApteanSQL"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SQLStatement"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="d572a523-018e-438c-9528-42f42f1e79a9">
+				<argument
+				argname="selectLine"
+				id="048bc591-0d71-4179-b04a-f77f8f1114be">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						select * from b_busy where busy_cd='ER';
+					</argvalue>
+				</argument>
+				<argument
+				argname="dbFile"
+				id="5dba8f30-ab15-4eb1-b5ce-01158e42dd16"
+				variable="DB_path">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						c:/Temp/datenbank.txt
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="26c43e7e-ad12-4dd3-9e25-4b4752771678"
+				variable="path_2">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						c:/Temp/datei_2.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="ApteanSQL"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="SQLStatement"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="04a2c052-19b8-42b9-96da-f6e0a854e1b8">
+				<argument
+				argname="selectLine"
+				id="e01dcd72-1cf0-4e06-b8e6-df80c0a4f22f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						update b_busy set busy_kls = 'L'  where busy_cd='ER';
+					</argvalue>
+				</argument>
+				<argument
+				argname="dbFile"
+				id="cff2abdb-8c4f-4dce-9202-4817ed4b0940"
+				variable="DB_path">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						c:/Temp/datenbank.txt
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="b748c5cf-dcfb-43e9-a677-9cda42677914">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						c:/Temp/update.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="ApteanSQL"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="FileCompareContains"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="dd0eb866-87a5-43ae-ba83-9af2d476d34f">
+				<argument
+				argname="file1"
+				id="10f4cd29-deac-44a1-b68e-50398a6dda61"
+				variable="path_1">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="file2"
+				id="08bd978d-db39-4ddd-94e3-a2a3cbb9e3e1"
+				variable="path_2">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="ApteanSQL"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="FileCompareEqual"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="1caad7d3-3ef0-4e03-b130-3814d97da258">
+				<argument
+				argname="file1"
+				id="36f6f35c-561e-44b8-b0b5-7e547a3fc5da"
+				variable="path_1">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="file2"
+				id="6196f9ce-1150-4b83-b6db-43b713afcf4f"
+				variable="path_2">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
 					</argvalue>
 				</argument>
 			</arguments>
@@ -76,7 +265,7 @@ mode="Desktop">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Recording1.UserCode.cs
+		dbAbfrage.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

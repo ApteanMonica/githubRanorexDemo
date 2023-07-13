@@ -7,14 +7,6 @@
 			name="CloseAUT"
 			ref="137a71d5-1c06-4a29-802b-99fc5b86b943"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="AppProcessID"
-					datasourceid="f7a41591-cc88-4d4d-a3ae-6f24a23da327"
-					variableid="056c640f-a3bd-45e2-a693-cdd6b246b0ee"
-					variablename="CloseAutProcessIDVar">
-					</var>
-				</databinding>
 			</testmodule>
 			<teardown
 			id="1e9203d0-652e-4a86-8c13-c7c38794414b"
@@ -25,14 +17,6 @@
 			name="StartAUT"
 			ref="8f6a85dd-20d3-4464-927a-c36e87df9dcc"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="AppProcessID"
-					datasourceid="f7a41591-cc88-4d4d-a3ae-6f24a23da327"
-					variableid="ef9b1a84-6b81-4d6f-ada7-92940d271a88"
-					variablename="StartAutProcessIDVar">
-					</var>
-				</databinding>
 			</testmodule>
 			<setup
 			id="46c88acf-a423-4f24-9681-4835aa1431fc"
@@ -71,6 +55,32 @@
 			name="DbAbfrage"
 			ref="31847394-0a89-40fb-a8d0-b65fc7cc0529"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="DB_path"
+					datasourceid="f7a41591-cc88-4d4d-a3ae-6f24a23da327"
+					variableid="2198486b-69d8-45d3-80c9-2f59367b5603"
+					variablename="DB_path">
+					</var>
+					<var
+					dataname="path_1"
+					datasourceid="f7a41591-cc88-4d4d-a3ae-6f24a23da327"
+					variableid="45d2808f-fa44-48b9-b602-56320d79e304"
+					variablename="path_1">
+					</var>
+					<var
+					dataname="path_2"
+					datasourceid="f7a41591-cc88-4d4d-a3ae-6f24a23da327"
+					variableid="195d3ab0-f596-4d41-a4ab-0f089d02e7e6"
+					variablename="path_2">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="aad42026-317d-45ab-b7fc-1e7a8490e280"
+			name="Recording1"
+			ref="94fee24c-6359-4a3c-a6d6-7c02ca6bb4ed"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="f7a41591-cc88-4d4d-a3ae-6f24a23da327"
@@ -78,7 +88,15 @@
 			reportlevel="Info;20">
 				<parameters>
 					<param
-					name="AppProcessID"
+					name="DB_path"
+					value="">
+					</param>
+					<param
+					name="path_1"
+					value="">
+					</param>
+					<param
+					name="path_2"
 					value="">
 					</param>
 				</parameters>
@@ -105,6 +123,10 @@
 						<testmodule
 						id="82e46f84-eceb-4758-a923-4c64df0a1404"
 						name="DbAbfrage">
+						</testmodule>
+						<testmodule
+						id="aad42026-317d-45ab-b7fc-1e7a8490e280"
+						name="Recording1">
 						</testmodule>
 						<teardown
 						id="1e9203d0-652e-4a86-8c13-c7c38794414b"

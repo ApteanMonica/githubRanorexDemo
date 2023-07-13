@@ -37,6 +37,9 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ranorex Automation Helpers">
+      <HintPath>..\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll</HintPath>
+    </Reference>
     <Reference Include="Ranorex.Bootstrapper" />
     <Reference Include="Ranorex.Core" />
     <Reference Include="Ranorex.Core.Resolver">
@@ -81,44 +84,50 @@
     <Compile Include="AssemblyInfo.cs">
       <id>8092471b-0596-438e-a407-1e71f9c8bcd4</id>
     </Compile>
-    <Compile Include="CloseAUT.cs">
-      <BoundTo>e755921c-e931-45a9-9b5c-21f92da2169d</BoundTo>
-      <DependentUpon>CloseAUT.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>dca7a519-b6eb-497f-b40f-9caaf4dd8f09</id>
-    </Compile>
-    <Compile Include="CloseAUT.UserCode.cs">
-      <BoundTo>e755921c-e931-45a9-9b5c-21f92da2169d</BoundTo>
-      <DependentUpon>CloseAUT.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>b0a325da-a76a-4ee2-920b-ae4685067cbc</id>
-    </Compile>
     <Compile Include="Program.cs">
       <id>eb1e51a0-3ff8-42f6-9330-764f4715fd99</id>
     </Compile>
-    <Compile Include="Recording1.cs">
-      <BoundTo>6832120e-cd0a-4bef-a8cc-ead276228fab</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+    <Compile Include="Recordings\CloseAUT.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dca7a519-b6eb-497f-b40f-9caaf4dd8f09</id>
+      <BoundTo>e755921c-e931-45a9-9b5c-21f92da2169d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT.UserCode.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b0a325da-a76a-4ee2-920b-ae4685067cbc</id>
+      <BoundTo>e755921c-e931-45a9-9b5c-21f92da2169d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\GetComputerName.cs">
+      <DependentUpon>GetComputerName.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>14e31bf7-1f78-49b6-9888-1415db4b67d7</id>
-    </Compile>
-    <Compile Include="Recording1.UserCode.cs">
       <BoundTo>6832120e-cd0a-4bef-a8cc-ead276228fab</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+    </Compile>
+    <Compile Include="Recordings\GetComputerName.UserCode.cs">
+      <DependentUpon>GetComputerName.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>ce9e8576-11b0-46dd-ae21-1913ebeab4e9</id>
+      <BoundTo>6832120e-cd0a-4bef-a8cc-ead276228fab</BoundTo>
     </Compile>
-    <Compile Include="StartAUT.cs">
-      <BoundTo>6d3c21ee-4340-435f-b3bd-274f82630086</BoundTo>
+    <Compile Include="Recordings\StartAUT.cs">
       <DependentUpon>StartAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>76be3321-140b-4b88-b447-4d00bbb2543f</id>
-    </Compile>
-    <Compile Include="StartAUT.UserCode.cs">
       <BoundTo>6d3c21ee-4340-435f-b3bd-274f82630086</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.UserCode.cs">
       <DependentUpon>StartAUT.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>a1d9cae1-f1b2-4a88-a990-96465eae0dc8</id>
+      <BoundTo>6d3c21ee-4340-435f-b3bd-274f82630086</BoundTo>
+    </Compile>
+    <Compile Include="X_MUSTER_007Repository.cs">
+      <DependentUpon>X_MUSTER_007Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>5aa1c123-4c22-4f80-a63f-85e818eabe24</id>
+      <BoundTo>488e6d16-57ed-4de3-b1b7-8d44e55607f1</BoundTo>
     </Compile>
     <Compile Include="X_MUSTER_013Repository.cs">
       <BoundTo>022adde5-78f8-4cd7-a6d6-e54d46e25011</BoundTo>
@@ -131,20 +140,31 @@
     <None Include="app.config">
       <id>be3545a7-4fb4-4e2e-b64e-006a22be096b</id>
     </None>
-    <None Include="CloseAUT.rxrec">
+    <None Include="Recordings\CloseAUT.rxrec">
       <BoundTo>022adde5-78f8-4cd7-a6d6-e54d46e25011</BoundTo>
       <id>e755921c-e931-45a9-9b5c-21f92da2169d</id>
       <recordtableid>b9dcc292-7f52-4ab8-ac95-26fba94ab69b</recordtableid>
     </None>
-    <None Include="Recording1.rxrec">
+    <None Include="Recordings\GetComputerName.rxrec">
       <BoundTo>022adde5-78f8-4cd7-a6d6-e54d46e25011</BoundTo>
       <id>6832120e-cd0a-4bef-a8cc-ead276228fab</id>
       <recordtableid>080f6c78-543e-41c3-bb65-92ade0fc1485</recordtableid>
     </None>
-    <None Include="StartAUT.rxrec">
+    <None Include="Recordings\StartAUT.rxrec">
       <BoundTo>022adde5-78f8-4cd7-a6d6-e54d46e25011</BoundTo>
       <id>6d3c21ee-4340-435f-b3bd-274f82630086</id>
       <recordtableid>ea119e0d-3c94-401d-ae72-deef3ecdfed7</recordtableid>
+    </None>
+    <None Include="X_MUSTER_007Repository.rximg">
+      <DependentUpon>X_MUSTER_007Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>bd82089f-56ae-438a-9abc-dd1b51e0f1b2</id>
+      <BoundTo>488e6d16-57ed-4de3-b1b7-8d44e55607f1</BoundTo>
+    </None>
+    <None Include="X_MUSTER_007Repository.rxrep">
+      <id>488e6d16-57ed-4de3-b1b7-8d44e55607f1</id>
+      <repoid>29dab69b-202e-4244-8506-ddd898ec97e5</repoid>
+      <reporootid>bc9eb072-1496-4d8b-855f-8024feb271c8</reporootid>
     </None>
     <None Include="X_MUSTER_013Repository.rximg">
       <BoundTo>022adde5-78f8-4cd7-a6d6-e54d46e25011</BoundTo>
@@ -167,6 +187,17 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>b11a9a08-ade0-4565-a6a2-cb5f36886f98</id>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{2726C458-5B2A-40EF-B53B-508721B507BE}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings">
+      <id>5dc75512-ecc2-4c89-80c3-5031df5e44b2</id>
+    </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

@@ -7,7 +7,7 @@ mode="Desktop">
 		1
 	</repeatcount>
 	<turbomode>
-		False
+		True
 	</turbomode>
 	<genreport>
 		True
@@ -23,28 +23,8 @@ mode="Desktop">
 	namespace="X_MUSTER_014.Recordings">
 	</codegen>
 	<variables>
-		<var
-		id="056c640f-a3bd-45e2-a693-cdd6b246b0ee"
-		name="CloseAutProcessIDVar">
-			-1
-		</var>
 	</variables>
 	<recorditems>
-		<closeapprecorditem
-		enabled="True"
-		graceperiod="500ms"
-		method="CloseWindowByProcessID"
-		optional="False"
-		searchpropertyid="87971bf9-4e52-42b1-8ff1-65e1161b9d8b">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="ProcessID"
-				variable="CloseAutProcessIDVar">
-				</binding>
-			</bindings>
-		</closeapprecorditem>
 	</recorditems>
 	<repository
 	id="2450b6d9-5d46-4b2c-b644-4bed25addc54"

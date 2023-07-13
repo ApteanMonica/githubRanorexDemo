@@ -41,7 +41,6 @@ namespace X_MUSTER_014.Recordings
         /// </summary>
         public CloseAUT()
         {
-            CloseAutProcessIDVar = "-1";
         }
 
         /// <summary>
@@ -53,18 +52,6 @@ namespace X_MUSTER_014.Recordings
         }
 
 #region Variables
-
-        string _CloseAutProcessIDVar;
-
-        /// <summary>
-        /// Gets or sets the value of variable CloseAutProcessIDVar.
-        /// </summary>
-        [TestVariable("056c640f-a3bd-45e2-a693-cdd6b246b0ee")]
-        public string CloseAutProcessIDVar
-        {
-            get { return _CloseAutProcessIDVar; }
-            set { _CloseAutProcessIDVar = value; }
-        }
 
 #endregion
 
@@ -86,16 +73,12 @@ namespace X_MUSTER_014.Recordings
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
+            Mouse.DefaultMoveTime = 0;
             Keyboard.DefaultKeyPressTime = 20;
-            Delay.SpeedFactor = 1.00;
+            Delay.SpeedFactor = 0.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application with Process ID bound to variable $CloseAutProcessIDVar.", new RecordItemIndex(0));
-            Host.Current.CloseApplication(int.Parse(CloseAutProcessIDVar), 500);
-            Delay.Milliseconds(0);
-            
         }
 
 #region Image Feature Data

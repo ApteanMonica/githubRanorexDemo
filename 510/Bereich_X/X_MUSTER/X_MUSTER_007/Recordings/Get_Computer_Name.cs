@@ -92,7 +92,7 @@ namespace X_MUSTER_007.Recordings
 
             Init();
 
-            GetHost();
+            computerName = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetHost();
             
             Report.Log(ReportLevel.Info, "User", computerName, new RecordItemIndex(1));
             
