@@ -41,7 +41,7 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
         /// </summary>
         public Daten_einschraenken()
         {
-            Tagesdatum = "yourtext";
+            Tagesdatum_ermitteln = "";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
 
 #region Variables
 
-        string _Tagesdatum;
+        string _Tagesdatum_ermitteln;
 
         /// <summary>
-        /// Gets or sets the value of variable Tagesdatum.
+        /// Gets or sets the value of variable Tagesdatum_ermitteln.
         /// </summary>
         [TestVariable("a6c72867-2a44-404c-ab1d-c0de9cf1b19c")]
-        public string Tagesdatum
+        public string Tagesdatum_ermitteln
         {
-            get { return _Tagesdatum; }
-            set { _Tagesdatum = value; }
+            get { return _Tagesdatum_ermitteln; }
+            set { _Tagesdatum_ermitteln = value; }
         }
 
 #endregion
@@ -119,8 +119,8 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'N_LISTEN{Tab}' with focus on 'FrmBEXOP.ColHerkunftRow1'.", repo.FrmBEXOP.ColHerkunftRow1Info, new RecordItemIndex(8));
             repo.FrmBEXOP.ColHerkunftRow1.PressKeys("N_LISTEN{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum' with focus on 'FrmBEXOP.ColDtHerkunftRow1'.", repo.FrmBEXOP.ColDtHerkunftRow1Info, new RecordItemIndex(9));
-            repo.FrmBEXOP.ColDtHerkunftRow1.PressKeys(Tagesdatum);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum_ermitteln' with focus on 'FrmBEXOP.ColDtHerkunftRow1'.", repo.FrmBEXOP.ColDtHerkunftRow1Info, new RecordItemIndex(9));
+            repo.FrmBEXOP.ColDtHerkunftRow1.PressKeys(Tagesdatum_ermitteln);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);

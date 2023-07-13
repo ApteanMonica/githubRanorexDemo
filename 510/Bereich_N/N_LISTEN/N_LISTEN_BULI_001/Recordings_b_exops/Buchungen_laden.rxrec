@@ -3931,24 +3931,42 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
-		<mouseitem
-		action="DoubleClick"
-		button="Left"
-		duration="300ms"
+		<validationitem
+		action="Exists"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
 		optional="False"
-		searchpropertyid="6a7caba9-496e-4681-8b9c-54bb5dbd42b5"
-		sx="2346"
-		sy="494"
-		warnoutofbounds="False">
+		searchpropertyid="f2c1d103-0a6f-48d2-a7f2-db0de85dce8a">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="5dcd3ee8-8845-4f11-ac96-e82ae3e44d32"
+			id="ddcac581-60a9-4f84-a13c-083a084a8ef6"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title&gt;'[100]  Verwalten Schnittstelle']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="NotExists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="d37aa094-7055-46f5-a20a-d5fcfe6d75ed">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="017e5477-0ea9-4bd0-9d30-abefde0f48b8"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -3958,7 +3976,7 @@ mode="Global">
 				hasfocus="False"
 				index="0"
 				prefcap="cell"
-				rect="2336,485,20,19"
+				rect="1,276,20,19"
 				role="cell"
 				snapElem=""
 				valid="True"
@@ -3985,7 +4003,7 @@ mode="Global">
 					<attribute
 					name="accessiblename"
 					type="System.String">
-						Row 1 Column 0
+						Row 2 Column 0
 					</attribute>
 					<attribute
 					name="accessiblerole"
@@ -4003,7 +4021,39 @@ mode="Global">
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='frmB_EXOP']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 1 Column 0']
+					/form[@title&gt;'[100]  Verwalten Schnittstelle']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 2 Column 0']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="DoubleClick"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="6a7caba9-496e-4681-8b9c-54bb5dbd42b5"
+		sx="2346"
+		sy="494"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ddcac581-60a9-4f84-a13c-083a084a8ef6"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title&gt;'[100]  Verwalten Schnittstelle']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']
 				</path>
 				<robustPath>
 				</robustPath>

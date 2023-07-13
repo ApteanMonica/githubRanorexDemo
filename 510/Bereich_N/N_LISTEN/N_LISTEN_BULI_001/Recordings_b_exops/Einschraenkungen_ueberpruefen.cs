@@ -41,8 +41,7 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
         /// </summary>
         public Einschraenkungen_ueberpruefen()
         {
-            Tagesdatum = "";
-            Belegnummer_Ueberleitung = "BULI_001_A";
+            Tagesdatum_ermitteln = "";
         }
 
         /// <summary>
@@ -55,26 +54,16 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
 
 #region Variables
 
-        string _Tagesdatum;
+        string _Tagesdatum_ermitteln;
 
         /// <summary>
-        /// Gets or sets the value of variable Tagesdatum.
+        /// Gets or sets the value of variable Tagesdatum_ermitteln.
         /// </summary>
         [TestVariable("ddc7f825-89a7-4aa4-a591-d3b0af11c21a")]
-        public string Tagesdatum
+        public string Tagesdatum_ermitteln
         {
-            get { return _Tagesdatum; }
-            set { _Tagesdatum = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Belegnummer_Ueberleitung.
-        /// </summary>
-        [TestVariable("abdf0834-5f13-4293-ad79-c2151b514131")]
-        public string Belegnummer_Ueberleitung
-        {
-            get { return repo.Belegnummer_Ueberleitung; }
-            set { repo.Belegnummer_Ueberleitung = value; }
+            get { return _Tagesdatum_ermitteln; }
+            set { _Tagesdatum_ermitteln = value; }
         }
 
 #endregion
@@ -112,8 +101,8 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='N_LISTEN') on item 'FrmBEXOP.ColHerkunftRow1'.", repo.FrmBEXOP.ColHerkunftRow1Info, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.FrmBEXOP.ColHerkunftRow1Info, "Text", "N_LISTEN");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'FrmBEXOP.ColDtHerkunftRow1'.", repo.FrmBEXOP.ColDtHerkunftRow1Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.FrmBEXOP.ColDtHerkunftRow1Info, "Text", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum_ermitteln) on item 'FrmBEXOP.ColDtHerkunftRow1'.", repo.FrmBEXOP.ColDtHerkunftRow1Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.FrmBEXOP.ColDtHerkunftRow1Info, "Text", Tagesdatum_ermitteln);
             
         }
 

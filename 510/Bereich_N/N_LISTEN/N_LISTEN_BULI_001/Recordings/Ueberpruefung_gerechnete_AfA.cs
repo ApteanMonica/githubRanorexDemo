@@ -157,8 +157,8 @@ namespace N_LISTEN_BULI_001.Recordings
 
             Init();
 
-            // Überprüfung Zeile 2
-            Report.Log(ReportLevel.Info, "Section", "Überprüfung Zeile 2", new RecordItemIndex(0));
+            // Überprüfung Zeile 3
+            Report.Log(ReportLevel.Info, "Section", "Überprüfung Zeile 3", new RecordItemIndex(0));
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='AfA') on item 'FrmBuchungsliste.ColTypRow2'.", repo.FrmBuchungsliste.ColTypRow2Info, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.FrmBuchungsliste.ColTypRow2Info, "Text", "AfA");
