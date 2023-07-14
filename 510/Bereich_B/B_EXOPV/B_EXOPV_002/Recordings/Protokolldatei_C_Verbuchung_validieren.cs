@@ -92,77 +92,77 @@ namespace B_EXOPV_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditor'", repo.FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditorInfo, new ActionTimeout(120000), new RecordItemIndex(0));
-            repo.FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditorInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FehlerprotokollBExopv_TxtEditor.Fehlerprotokoll_TxtEditor'", repo.FehlerprotokollBExopv_TxtEditor.Fehlerprotokoll_TxtEditorInfo, new ActionTimeout(120000), new RecordItemIndex(0));
+            repo.FehlerprotokollBExopv_TxtEditor.Fehlerprotokoll_TxtEditorInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Protokolldatei_C_Datei) on item 'FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditor'.", repo.FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditorInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditorInfo, "Text", Protokolldatei_C_Datei);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Protokolldatei_C_Datei) on item 'FehlerprotokollBExopv_TxtEditor.Fehlerprotokoll_TxtEditor'.", repo.FehlerprotokollBExopv_TxtEditor.Fehlerprotokoll_TxtEditorInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Fehlerprotokoll_TxtEditorInfo, "Text", Protokolldatei_C_Datei);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'B_EXOPV - Starte Verbuchung') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "B_EXOPV - Starte Verbuchung");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'B_EXOPV - Starte Verbuchung') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "B_EXOPV - Starte Verbuchung");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100] Starte Verbuchung RS\\2-Verkauf') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(3));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "[100] Starte Verbuchung RS\\2-Verkauf");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100] Starte Verbuchung RS\\2-Verkauf') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(3));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "[100] Starte Verbuchung RS\\2-Verkauf");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Beleg: R20/0001:') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(4));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Beleg: R20/0001:");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Beleg: R20/0001:') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(4));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "Beleg: R20/0001:");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exsa: 1\tBeleg R20/0001: Bereichskonto <1 / 15> nicht vorhanden!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(5));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exsa: 1\tBeleg R20/0001: Bereichskonto <1 / 15> nicht vorhanden!");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exsa: 1\tBeleg R20/0001: Bereichskonto <1 / 15> nicht vorhanden!') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(5));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "Exsa: 1\tBeleg R20/0001: Bereichskonto <1 / 15> nicht vorhanden!");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Beleg: R20/0003:') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(6));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Beleg: R20/0003:");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Beleg: R20/0003:') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "Beleg: R20/0003:");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exsa: 1\t: Bereichskonto ist leer bei Pflichtigkeit für Firma <100> / Sachkonto <4000> / Bereich <1>!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(7));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exsa: 1\t: Bereichskonto ist leer bei Pflichtigkeit für Firma <100> / Sachkonto <4000> / Bereich <1>!");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exsa: 1\t: Bereichskonto ist leer bei Pflichtigkeit für Firma <100> / Sachkonto <4000> / Bereich <1>!') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(7));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "Exsa: 1\t: Bereichskonto ist leer bei Pflichtigkeit für Firma <100> / Sachkonto <4000> / Bereich <1>!");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Beleg: R20/0003:') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(8));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Beleg: R20/0003:");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Beleg: R20/0003:') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(8));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "Beleg: R20/0003:");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exsa: 1\tSachkonto <4000 Bitte korrekten USt-Code angeben!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(9));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exsa: 1\tSachkonto <4000 Bitte korrekten USt-Code angeben!");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exsa: 1\tSachkonto <4000 Bitte korrekten USt-Code angeben!') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(9));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "Exsa: 1\tSachkonto <4000 Bitte korrekten USt-Code angeben!");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100] Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(10));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "[100] Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100] Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(10));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "[100] Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100] Beende Verbuchung RS\\2-Verkauf') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(11));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "[100] Beende Verbuchung RS\\2-Verkauf");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100] Beende Verbuchung RS\\2-Verkauf') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(11));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "[100] Beende Verbuchung RS\\2-Verkauf");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Anzahl Buchungen gelesen  6\r\nAnzahl Buchungen verbucht 4  Summe verbucht: 4600,00') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(12));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Anzahl Buchungen gelesen  6\r\nAnzahl Buchungen verbucht 4  Summe verbucht: 4600,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Anzahl Buchungen gelesen  6\r\nAnzahl Buchungen verbucht 4  Summe verbucht: 4600,00') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(12));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "Anzahl Buchungen gelesen  6\r\nAnzahl Buchungen verbucht 4  Summe verbucht: 4600,00");
             
             // Stapel Lager
             Report.Log(ReportLevel.Info, "Section", "Stapel Lager", new RecordItemIndex(13));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100] Starte Verbuchung RS\\2-Lager') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(14));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "[100] Starte Verbuchung RS\\2-Lager");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100] Starte Verbuchung RS\\2-Lager') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(14));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "[100] Starte Verbuchung RS\\2-Lager");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Beleg: 2020-01:') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(15));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Beleg: 2020-01:");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Beleg: 2020-01:') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(15));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "Beleg: 2020-01:");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Buchungssymbol <UM> nicht vorhanden!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(16));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Buchungssymbol <UM> nicht vorhanden!");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Buchungssymbol <UM> nicht vorhanden!') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(16));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "Buchungssymbol <UM> nicht vorhanden!");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Beleg: 2020-01:') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(17));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Beleg: 2020-01:");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Beleg: 2020-01:') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(17));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "Beleg: 2020-01:");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exsa: 2\tUst-Code(M20) für Konto (4500) lt. Kontenstamm (M/V) nichtzulässig!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(18));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exsa: 2\tUst-Code(M20) für Konto (4500) lt. Kontenstamm (M/V) nichtzulässig!");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exsa: 2\tUst-Code(M20) für Konto (4500) lt. Kontenstamm (M/V) nichtzulässig!') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(18));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "Exsa: 2\tUst-Code(M20) für Konto (4500) lt. Kontenstamm (M/V) nichtzulässig!");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Beleg: 2020-01') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(19));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Beleg: 2020-01");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Beleg: 2020-01') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(19));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "Beleg: 2020-01");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exsa: 3\tUst-Code(M20) für Konto (4580) lt. Kontenstamm (M/V) nichtzulässig!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(20));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exsa: 3\tUst-Code(M20) für Konto (4580) lt. Kontenstamm (M/V) nichtzulässig!");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exsa: 3\tUst-Code(M20) für Konto (4580) lt. Kontenstamm (M/V) nichtzulässig!') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(20));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "Exsa: 3\tUst-Code(M20) für Konto (4580) lt. Kontenstamm (M/V) nichtzulässig!");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100] Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(21));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "[100] Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100] Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(21));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "[100] Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100] Beende Verbuchung RS\\2-Lager') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(22));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "[100] Beende Verbuchung RS\\2-Lager");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100] Beende Verbuchung RS\\2-Lager') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(22));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "[100] Beende Verbuchung RS\\2-Lager");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Anzahl Buchungen gelesen  1\r\nAnzahl Buchungen verbucht 0  Summe verbucht:') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(23));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Anzahl Buchungen gelesen  1\r\nAnzahl Buchungen verbucht 0  Summe verbucht:");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Anzahl Buchungen gelesen  1\r\nAnzahl Buchungen verbucht 0  Summe verbucht:') on item 'FehlerprotokollBExopv_TxtEditor.Text15'.", repo.FehlerprotokollBExopv_TxtEditor.Text15Info, new RecordItemIndex(23));
+            Validate.AttributeContains(repo.FehlerprotokollBExopv_TxtEditor.Text15Info, "Text", "Anzahl Buchungen gelesen  1\r\nAnzahl Buchungen verbucht 0  Summe verbucht:");
             
         }
 
