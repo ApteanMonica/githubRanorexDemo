@@ -206,6 +206,9 @@
 			name="Fehlerprotokoll_Verbuchung_aufrufen"
 			ref="63ec443e-b1ab-4b2a-ad84-22f092dcee8e"
 			type="Recording">
+				<description>
+					<![CDATA[BUG 41465 - Fehlerprotokoll muss extra aufgerufen werden]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Fehlerprotokoll_Verbuchung_Datei"
@@ -225,7 +228,7 @@
 			ref="1bf2f54d-35a5-4bcb-92a7-854c26e69497"
 			type="Recording">
 				<description>
-					<![CDATA[ACHTUNG!!! Ticket erfassen! Protokoll wird nicht automatisch aufgerufen + Beleg mit Status F fehlt in Prüfdatei]]>
+					<![CDATA[BUG 41465 - im Fehlerprotokoll fehlt der Beleg mit Status F (ER_03/FB02), der mit "Übergehen" nicht verbucht wurde (in Schnittstelle korrekt mit F)]]>
 				</description>
 			</testmodule>
 			<testcase
@@ -585,7 +588,7 @@
 			ref="d8201208-b1ad-4756-b52e-522408436296"
 			type="Recording">
 				<description>
-					<![CDATA[BUG 37789 nur ER01/ER03 (LF1) + ER03(LF02) sind auf Status F, dopp Belege in Schnittstelle bleiben auf Status N - Fehler?]]>
+					<![CDATA[BUG 37789 wird nicht korrigiert nur ER01/ER03 (LF1) + ER03(LF02) sind auf Status F, dopp Belege in Schnittstelle bleiben auf Status N - kein Fehler, siche Vermerk in BUG 37789 "Bzgl. dass Belegnummern nur auf F gestellt werden, wenn ein OP vorhanden ist. Da habe ich mit HOLZ gesprochen und er würde da nichts ändern. Wir können den Beleg nicht auf F setzen, da wir nicht wissen welcher falsch ist."]]>
 				</description>
 				<databinding>
 					<var
