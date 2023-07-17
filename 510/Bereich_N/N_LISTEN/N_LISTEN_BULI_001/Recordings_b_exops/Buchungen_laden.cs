@@ -82,14 +82,14 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBEXOP.PbDataAccessLoad' at Center.", repo.FrmBEXOP.PbDataAccessLoadInfo, new RecordItemIndex(0));
             repo.FrmBEXOP.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Form100VerwaltenSchnittstelleEXSA.Row1Column0'.", repo.Form100VerwaltenSchnittstelleEXSA.Row1Column0Info, new RecordItemIndex(1));
-            Validate.Exists(repo.Form100VerwaltenSchnittstelleEXSA.Row1Column0Info);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmBEXOP.Row_1'.", repo.FrmBEXOP.Row_1Info, new RecordItemIndex(1));
+            Validate.Exists(repo.FrmBEXOP.Row_1Info);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'Form100VerwaltenSchnittstelleEXSA.Row2Column0'.", repo.Form100VerwaltenSchnittstelleEXSA.Row2Column0Info, new RecordItemIndex(2));
-            Validate.NotExists(repo.Form100VerwaltenSchnittstelleEXSA.Row2Column0Info);
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'FrmBEXOP.Row_2'.", repo.FrmBEXOP.Row_2Info, new RecordItemIndex(2));
+            Validate.NotExists(repo.FrmBEXOP.Row_2Info);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'Form100VerwaltenSchnittstelleEXSA.Row1Column0' at Center.", repo.Form100VerwaltenSchnittstelleEXSA.Row1Column0Info, new RecordItemIndex(3));
-            repo.Form100VerwaltenSchnittstelleEXSA.Row1Column0.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBEXOP.Row_1' at Center.", repo.FrmBEXOP.Row_1Info, new RecordItemIndex(3));
+            repo.FrmBEXOP.Row_1.DoubleClick();
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBEXSA.TitleBar100VerwaltenSchnittstelleE'", repo.FrmBEXSA.TitleBar100VerwaltenSchnittstelleEInfo, new ActionTimeout(120000), new RecordItemIndex(4));
             repo.FrmBEXSA.TitleBar100VerwaltenSchnittstelleEInfo.WaitForExists(120000);

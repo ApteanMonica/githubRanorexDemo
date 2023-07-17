@@ -100,9 +100,6 @@ namespace N_LISTEN_BULI_001.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungs'", repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo, new ActionTimeout(5000), new RecordItemIndex(6));
             repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo.WaitForExists(5000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100AVZAuswertungenBuchungslist.WindowsForms10BUTTONApp02804c64R6A' at Center.", repo.Form100AVZAuswertungenBuchungslist.WindowsForms10BUTTONApp02804c64R6AInfo, new RecordItemIndex(7));
-            repo.Form100AVZAuswertungenBuchungslist.WindowsForms10BUTTONApp02804c64R6A.Click();
-            
         }
 
 #region Image Feature Data

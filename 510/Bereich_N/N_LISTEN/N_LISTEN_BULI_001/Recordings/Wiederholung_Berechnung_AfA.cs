@@ -117,8 +117,8 @@ namespace N_LISTEN_BULI_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbOptionenTabelle' at Center.", repo.FrmBuchungsliste.PbOptionenTabelleInfo, new RecordItemIndex(3));
             repo.FrmBuchungsliste.PbOptionenTabelle.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Form100AVZAuswertungenBuchungslist.ColTypRow1'", repo.Form100AVZAuswertungenBuchungslist.ColTypRow1Info, new ActionTimeout(120000), new RecordItemIndex(4));
-            repo.Form100AVZAuswertungenBuchungslist.ColTypRow1Info.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(120000), new RecordItemIndex(4));
+            repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(120000);
             
         }
 

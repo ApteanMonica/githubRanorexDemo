@@ -116,14 +116,14 @@ namespace N_LISTEN_BULI_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'AVZAuswertungen.AVZAuswertungen'", repo.AVZAuswertungen.AVZAuswertungenInfo, new ActionTimeout(120000), new RecordItemIndex(0));
-            repo.AVZAuswertungen.AVZAuswertungenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(120000), new RecordItemIndex(0));
+            repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Soll trotz AVZ-Stammdateneinstellung :\r\n\r\n> Buchungsliste monatlich speichern <\r\n\r\neine Überleitung über mehrere Monate\r\nin die Fibu erfolgen?') on item 'AVZAuswertungen.SollTrotzAVZStammdateneinstellung'.", repo.AVZAuswertungen.SollTrotzAVZStammdateneinstellungInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.AVZAuswertungen.SollTrotzAVZStammdateneinstellungInfo, "Text", "Soll trotz AVZ-Stammdateneinstellung :\r\n\r\n> Buchungsliste monatlich speichern <\r\n\r\neine Überleitung über mehrere Monate\r\nin die Fibu erfolgen?");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Soll trotz AVZ-Stammdateneinstellung :\r\n\r\n> Buchungsliste monatlich speichern <\r\n\r\neine Überleitung über mehrere Monate\r\nin die Fibu erfolgen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Soll trotz AVZ-Stammdateneinstellung :\r\n\r\n> Buchungsliste monatlich speichern <\r\n\r\neine Überleitung über mehrere Monate\r\nin die Fibu erfolgen?");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AVZAuswertungen.ButtonJa' at Center.", repo.AVZAuswertungen.ButtonJaInfo, new RecordItemIndex(2));
-            repo.AVZAuswertungen.ButtonJa.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
+            repo.DlgMessageBox.Button0.Click();
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new ActionTimeout(120000), new RecordItemIndex(3));
             repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo.WaitForExists(120000);

@@ -92,38 +92,32 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBEXOP.ColKlsRow1' at Center.", repo.FrmBEXOP.ColKlsRow1Info, new RecordItemIndex(0));
-            repo.FrmBEXOP.ColKlsRow1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1' at Center.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1Info, new RecordItemIndex(0));
+            repo.FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBEXOP.ColKlsRow1' at Center.", repo.FrmBEXOP.ColKlsRow1Info, new RecordItemIndex(1));
-            repo.FrmBEXOP.ColKlsRow1.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1' at Center.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1Info, new RecordItemIndex(1));
+            repo.FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'S{Tab}' with focus on 'FrmBEXOP.ColKlsRow1'.", repo.FrmBEXOP.ColKlsRow1Info, new RecordItemIndex(2));
-            repo.FrmBEXOP.ColKlsRow1.PressKeys("S{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'S{Tab}' with focus on 'FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1Info, new RecordItemIndex(2));
+            repo.FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1.PressKeys("S{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBEXOP.ColStatusRow1' at Center.", repo.FrmBEXOP.ColStatusRow1Info, new RecordItemIndex(3));
-            repo.FrmBEXOP.ColStatusRow1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1' at Center.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1Info, new RecordItemIndex(3));
+            repo.FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBEXOP.ColStatusRow1' at Center.", repo.FrmBEXOP.ColStatusRow1Info, new RecordItemIndex(4));
-            repo.FrmBEXOP.ColStatusRow1.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1' at Center.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1Info, new RecordItemIndex(4));
+            repo.FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'N{Tab}' with focus on 'FrmBEXOP.ColStatusRow1'.", repo.FrmBEXOP.ColStatusRow1Info, new RecordItemIndex(5));
-            repo.FrmBEXOP.ColStatusRow1.PressKeys("N{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'N{Tab}' with focus on 'FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1Info, new RecordItemIndex(5));
+            repo.FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1.PressKeys("N{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBEXOP.ColHerkunftRow1' at Center.", repo.FrmBEXOP.ColHerkunftRow1Info, new RecordItemIndex(6));
-            repo.FrmBEXOP.ColHerkunftRow1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1' at Center.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1Info, new RecordItemIndex(6));
+            repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBEXOP.ColHerkunftRow1' at Center.", repo.FrmBEXOP.ColHerkunftRow1Info, new RecordItemIndex(7));
-            repo.FrmBEXOP.ColHerkunftRow1.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1' at Center.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1Info, new RecordItemIndex(7));
+            repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'N_LISTEN{Tab}' with focus on 'FrmBEXOP.ColHerkunftRow1'.", repo.FrmBEXOP.ColHerkunftRow1Info, new RecordItemIndex(8));
-            repo.FrmBEXOP.ColHerkunftRow1.PressKeys("N_LISTEN{Tab}");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum_ermitteln' with focus on 'FrmBEXOP.ColDtHerkunftRow1'.", repo.FrmBEXOP.ColDtHerkunftRow1Info, new RecordItemIndex(9));
-            repo.FrmBEXOP.ColDtHerkunftRow1.PressKeys(Tagesdatum_ermitteln);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'N_LISTEN{Tab}' with focus on 'FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1Info, new RecordItemIndex(8));
+            repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1.PressKeys("N_LISTEN{Tab}");
             
         }
 

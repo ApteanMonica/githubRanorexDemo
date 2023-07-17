@@ -141,8 +141,8 @@ namespace N_LISTEN_BULI_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbOptionenTabelle' at Center.", repo.FrmBuchungsliste.PbOptionenTabelleInfo, new RecordItemIndex(11));
             repo.FrmBuchungsliste.PbOptionenTabelle.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBuchungsliste.ColTypRow2'", repo.FrmBuchungsliste.ColTypRow2Info, new ActionTimeout(120000), new RecordItemIndex(12));
-            repo.FrmBuchungsliste.ColTypRow2Info.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBuchungsliste.FlexGrid.ColTypRow1'", repo.FrmBuchungsliste.FlexGrid.ColTypRow1Info, new ActionTimeout(120000), new RecordItemIndex(12));
+            repo.FrmBuchungsliste.FlexGrid.ColTypRow1Info.WaitForExists(120000);
             
         }
 

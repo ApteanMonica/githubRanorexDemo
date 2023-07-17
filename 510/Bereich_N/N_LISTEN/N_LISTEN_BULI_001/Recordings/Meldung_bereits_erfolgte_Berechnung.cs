@@ -79,8 +79,8 @@ namespace N_LISTEN_BULI_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(5000), new RecordItemIndex(0));
-            repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(5000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(120000), new RecordItemIndex(0));
+            repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es sind bereits berechnete Monate vorhanden! \r\n \r\nSollen diese gelöscht und neu erfaßt werden? \r\n \r\nJa\t\t= Löschen und Neu erfassen \r\nNein\t= Bereits vorhandene Buchungszeilen laden \r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es sind bereits berechnete Monate vorhanden! \r\n \r\nSollen diese gelöscht und neu erfaßt werden? \r\n \r\nJa\t\t= Löschen und Neu erfassen \r\nNein\t= Bereits vorhandene Buchungszeilen laden \r\n");
@@ -88,8 +88,8 @@ namespace N_LISTEN_BULI_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBuchungsliste.ColTypRow2'", repo.FrmBuchungsliste.ColTypRow2Info, new ActionTimeout(120000), new RecordItemIndex(3));
-            repo.FrmBuchungsliste.ColTypRow2Info.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBuchungsliste.FlexGrid.ColTypRow2'", repo.FrmBuchungsliste.FlexGrid.ColTypRow2Info, new ActionTimeout(120000), new RecordItemIndex(3));
+            repo.FrmBuchungsliste.FlexGrid.ColTypRow2Info.WaitForExists(120000);
             
         }
 

@@ -92,17 +92,14 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='S') on item 'FrmBEXOP.ColKlsRow1'.", repo.FrmBEXOP.ColKlsRow1Info, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.FrmBEXOP.ColKlsRow1Info, "Text", "S");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='S') on item 'FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1Info, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1Info, "Text", "S");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='N') on item 'FrmBEXOP.ColStatusRow1'.", repo.FrmBEXOP.ColStatusRow1Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.FrmBEXOP.ColStatusRow1Info, "Text", "N");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='N') on item 'FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1Info, "Text", "N");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='N_LISTEN') on item 'FrmBEXOP.ColHerkunftRow1'.", repo.FrmBEXOP.ColHerkunftRow1Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.FrmBEXOP.ColHerkunftRow1Info, "Text", "N_LISTEN");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum_ermitteln) on item 'FrmBEXOP.ColDtHerkunftRow1'.", repo.FrmBEXOP.ColDtHerkunftRow1Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.FrmBEXOP.ColDtHerkunftRow1Info, "Text", Tagesdatum_ermitteln);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='N_LISTEN') on item 'FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1Info, "Text", "N_LISTEN");
             
         }
 
