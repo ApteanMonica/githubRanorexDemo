@@ -41,6 +41,9 @@ namespace X_MUSTER_014.Recordings
         /// </summary>
         public Recording1()
         {
+            DB_path = "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt";
+            path_1 = "c:/Temp/datei1.txt";
+            path_2 = "c:/Temp/datei2.txt";
         }
 
         /// <summary>
@@ -52,6 +55,42 @@ namespace X_MUSTER_014.Recordings
         }
 
 #region Variables
+
+        string _DB_path;
+
+        /// <summary>
+        /// Gets or sets the value of variable DB_path.
+        /// </summary>
+        [TestVariable("be9c7de6-dcfb-4842-b6e0-48aeb7d658a6")]
+        public string DB_path
+        {
+            get { return _DB_path; }
+            set { _DB_path = value; }
+        }
+
+        string _path_1;
+
+        /// <summary>
+        /// Gets or sets the value of variable path_1.
+        /// </summary>
+        [TestVariable("171ec0b7-1ff2-44b4-b0b1-d6395f1812c2")]
+        public string path_1
+        {
+            get { return _path_1; }
+            set { _path_1 = value; }
+        }
+
+        string _path_2;
+
+        /// <summary>
+        /// Gets or sets the value of variable path_2.
+        /// </summary>
+        [TestVariable("31830bee-d6c0-448e-ada4-630764d05906")]
+        public string path_2
+        {
+            get { return _path_2; }
+            set { _path_2 = value; }
+        }
 
 #endregion
 
@@ -73,14 +112,21 @@ namespace X_MUSTER_014.Recordings
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
+            Mouse.DefaultMoveTime = 0;
             Keyboard.DefaultKeyPressTime = 20;
-            Delay.SpeedFactor = 1.00;
+            Delay.SpeedFactor = 0.00;
 
             Init();
 
-            Ranorex.AutomationHelpers.UserCodeCollections.apteanSQL.SQLStatement("update b_busy set busy_kls = 'L'  where busy_cd='ER';", "c:/temp/datenbank.txt", "");
-            Delay.Milliseconds(0);
+            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select * from b_busy where firm_nr='100' and busy_cd ='ER';", DB_path, "c:/Temp/pet.txt");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("update b_busy set busy_kls = 'L'  where busy_cd='ER' and firm_nr='100';", DB_path, "");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select * from b_busy where firm_nr='100' and busy_cd ='ER';", DB_path, "c:/Temp/petAlle.txt");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains("c:/Temp/pet.txt", "c:/Temp/petAlle.txt");
+            
+            //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareEqual("c:/pet.txt", "c:/Temp/petAlle.txt");
             
         }
 
