@@ -24,22 +24,22 @@ namespace B_EXOPV_004.Recordings_B_EXOPS
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Belege_pruefen_vor_Verbuchung recording.
+    ///The Belege_pruefen_vor_Pruefung_Verbuchung recording.
     /// </summary>
     [TestModule("63fa5680-1386-41e3-ba86-30b83e2a0c65", ModuleType.Recording, 1)]
-    public partial class Belege_pruefen_vor_Verbuchung : ITestModule
+    public partial class Belege_pruefen_vor_Pruefung_Verbuchung : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_004.B_EXOPV_004Repository repository.
         /// </summary>
         public static global::B_EXOPV_004.B_EXOPV_004Repository repo = global::B_EXOPV_004.B_EXOPV_004Repository.Instance;
 
-        static Belege_pruefen_vor_Verbuchung instance = new Belege_pruefen_vor_Verbuchung();
+        static Belege_pruefen_vor_Pruefung_Verbuchung instance = new Belege_pruefen_vor_Pruefung_Verbuchung();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Belege_pruefen_vor_Verbuchung()
+        public Belege_pruefen_vor_Pruefung_Verbuchung()
         {
             Beleg2 = "ER_02_B_EXOPV_004";
             Beleg4 = "ER_04_B_EXOPV_004";
@@ -56,7 +56,7 @@ namespace B_EXOPV_004.Recordings_B_EXOPS
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Belege_pruefen_vor_Verbuchung Instance
+        public static Belege_pruefen_vor_Pruefung_Verbuchung Instance
         {
             get { return instance; }
         }

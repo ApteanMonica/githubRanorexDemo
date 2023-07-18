@@ -24,29 +24,29 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Editor_schliessen recording.
+    ///The Fehleroption_Default_pruefen recording.
     /// </summary>
-    [TestModule("d6a06d71-cd45-40c4-9af3-6ae974448572", ModuleType.Recording, 1)]
-    public partial class Editor_schliessen : ITestModule
+    [TestModule("5cd9f441-a840-4ad2-8d33-490f0297a6fc", ModuleType.Recording, 1)]
+    public partial class Fehleroption_Default_pruefen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_004.B_EXOPV_004Repository repository.
         /// </summary>
         public static global::B_EXOPV_004.B_EXOPV_004Repository repo = global::B_EXOPV_004.B_EXOPV_004Repository.Instance;
 
-        static Editor_schliessen instance = new Editor_schliessen();
+        static Fehleroption_Default_pruefen instance = new Fehleroption_Default_pruefen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Editor_schliessen()
+        public Fehleroption_Default_pruefen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Editor_schliessen Instance
+        public static Fehleroption_Default_pruefen Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,20 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'Fehlerprotokoll_Editor.Fehlerprotokoll_Editor'.", repo.Fehlerprotokoll_Editor.Fehlerprotokoll_EditorInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.Fehlerprotokoll_Editor.Fehlerprotokoll_Editor, 1000);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100ExterneBuchungenVerbuchen.PbOptionenOptionen' at Center.", repo.Form100ExterneBuchungenVerbuchen.PbOptionenOptionenInfo, new RecordItemIndex(0));
+            repo.Form100ExterneBuchungenVerbuchen.PbOptionenOptionen.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgOptionenParameter.TitleBar100Optionen'", repo.DlgOptionenParameter.TitleBar100OptionenInfo, new ActionTimeout(60000), new RecordItemIndex(1));
+            repo.DlgOptionenParameter.TitleBar100OptionenInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'True' on item 'DlgOptionenParameter.TpName0.CbFehlerstatus'.", repo.DlgOptionenParameter.TpName0.CbFehlerstatusInfo, new RecordItemIndex(2));
+            repo.DlgOptionenParameter.TpName0.CbFehlerstatus.Element.SetAttributeValue("Checked", "True");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgOptionenParameter.TpName0.CbFehlerstatus'.", repo.DlgOptionenParameter.TpName0.CbFehlerstatusInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.DlgOptionenParameter.TpName0.CbFehlerstatusInfo, "Checked", "True");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgOptionenParameter.PbSpeichern' at Center.", repo.DlgOptionenParameter.PbSpeichernInfo, new RecordItemIndex(4));
+            repo.DlgOptionenParameter.PbSpeichern.Click();
             
         }
 

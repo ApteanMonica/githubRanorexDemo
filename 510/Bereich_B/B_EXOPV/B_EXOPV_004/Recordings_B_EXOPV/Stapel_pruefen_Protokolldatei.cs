@@ -111,74 +111,74 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(1));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_Editor'", repo.FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_EditorInfo, new ActionTimeout(60000), new RecordItemIndex(2));
-            repo.FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_EditorInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'Fehlerprotokoll_Editor.Fehlerprotokoll_Editor'", repo.Fehlerprotokoll_Editor.Fehlerprotokoll_EditorInfo, new ActionTimeout(60000), new RecordItemIndex(2));
+            repo.Fehlerprotokoll_Editor.Fehlerprotokoll_EditorInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Fehlerprotokoll_Pruefung_Datei) on item 'FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_Editor'.", repo.FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_EditorInfo, new RecordItemIndex(3));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Fehlerprotokoll_EditorInfo, "Text", Fehlerprotokoll_Pruefung_Datei);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Fehlerprotokoll_Pruefung_Datei) on item 'Fehlerprotokoll_Editor.Fehlerprotokoll_Editor'.", repo.Fehlerprotokoll_Editor.Fehlerprotokoll_EditorInfo, new RecordItemIndex(3));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Fehlerprotokoll_EditorInfo, "Text", Fehlerprotokoll_Pruefung_Datei);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'B_EXOPV - Starte Prüfung') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(4));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "B_EXOPV - Starte Prüfung");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'B_EXOPV - Starte Prüfung') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(4));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "B_EXOPV - Starte Prüfung");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(5));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100] Starte Prüfung B_EXOPV_004') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(5));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "[100] Starte Prüfung B_EXOPV_004");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100] Starte Prüfung B_EXOPV_004') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(6));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "[100] Starte Prüfung B_EXOPV_004");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 22\tBeleg: ER_01_B_EXOPV_004:') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Exop: 22\tBeleg: ER_01_B_EXOPV_004:");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 22\tBeleg: ER_01_B_EXOPV_004:') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(7));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exop: 22\tBeleg: ER_01_B_EXOPV_004:");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Jahr/Monat außerhalb erlaubter Perioden!') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(7));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Jahr/Monat außerhalb erlaubter Perioden!");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Jahr/Monat außerhalb erlaubter Perioden!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(8));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Jahr/Monat außerhalb erlaubter Perioden!");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 22\tBeleg: ER_01_B_EXOPV_004:') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(8));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Exop: 22\tBeleg: ER_01_B_EXOPV_004:");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 22\tBeleg: ER_01_B_EXOPV_004:') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(9));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exop: 22\tBeleg: ER_01_B_EXOPV_004:");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'UVA - Jahr/Monat 2018 /4 schon abgeschlossen!') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(9));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "UVA - Jahr/Monat 2018 /4 schon abgeschlossen!");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'UVA - Jahr/Monat 2018 /4 schon abgeschlossen!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(10));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "UVA - Jahr/Monat 2018 /4 schon abgeschlossen!");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 23\tBeleg: ER_02_B_EXOPV_004:') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(10));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Exop: 23\tBeleg: ER_02_B_EXOPV_004:");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 23\tBeleg: ER_02_B_EXOPV_004:') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(11));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exop: 23\tBeleg: ER_02_B_EXOPV_004:");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'UVA - Jahr/Monat 2018 /6 schon abgeschlossen!') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(11));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "UVA - Jahr/Monat 2018 /6 schon abgeschlossen!");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'UVA - Jahr/Monat 2018 /6 schon abgeschlossen!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(12));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "UVA - Jahr/Monat 2018 /6 schon abgeschlossen!");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 24\tBeleg: ER_03_B_EXOPV_004:') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(12));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Exop: 24\tBeleg: ER_03_B_EXOPV_004:");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 24\tBeleg: ER_03_B_EXOPV_004:') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(13));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exop: 24\tBeleg: ER_03_B_EXOPV_004:");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'UVA - Jahr/Monat 2018 /5 schon abgeschlossen!') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(13));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "UVA - Jahr/Monat 2018 /5 schon abgeschlossen!");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'UVA - Jahr/Monat 2018 /5 schon abgeschlossen!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(14));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "UVA - Jahr/Monat 2018 /5 schon abgeschlossen!");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 25\tBeleg: ER_04_B_EXOPV_004:') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(14));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Exop: 25\tBeleg: ER_04_B_EXOPV_004:");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 25\tBeleg: ER_04_B_EXOPV_004:') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(15));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exop: 25\tBeleg: ER_04_B_EXOPV_004:");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Jahr/Monat außerhalb erlaubter Perioden!') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(15));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Jahr/Monat außerhalb erlaubter Perioden!");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Jahr/Monat außerhalb erlaubter Perioden!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(16));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Jahr/Monat außerhalb erlaubter Perioden!");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 25\tBeleg: ER_04_B_EXOPV_004:') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(16));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Exop: 25\tBeleg: ER_04_B_EXOPV_004:");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 25\tBeleg: ER_04_B_EXOPV_004:') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(17));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exop: 25\tBeleg: ER_04_B_EXOPV_004:");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'UVA - Jahr/Monat 2018 /5 schon abgeschlossen!') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(17));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "UVA - Jahr/Monat 2018 /5 schon abgeschlossen!");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'UVA - Jahr/Monat 2018 /5 schon abgeschlossen!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(18));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "UVA - Jahr/Monat 2018 /5 schon abgeschlossen!");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 26\tBeleg: ER_05_B_EXOPV_004:') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(18));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Exop: 26\tBeleg: ER_05_B_EXOPV_004:");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 26\tBeleg: ER_05_B_EXOPV_004:') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(19));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exop: 26\tBeleg: ER_05_B_EXOPV_004:");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'UVA - Jahr/Monat 2018 /6 schon abgeschlossen!') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(19));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "UVA - Jahr/Monat 2018 /6 schon abgeschlossen!");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'UVA - Jahr/Monat 2018 /6 schon abgeschlossen!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(20));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "UVA - Jahr/Monat 2018 /6 schon abgeschlossen!");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 27\tBeleg: ER_06_B_EXOPV_004:') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(20));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Exop: 27\tBeleg: ER_06_B_EXOPV_004:");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 27\tBeleg: ER_06_B_EXOPV_004:') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(21));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exop: 27\tBeleg: ER_06_B_EXOPV_004:");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'UVA - Jahr/Monat 2018 /5 schon abgeschlossen!') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(21));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "UVA - Jahr/Monat 2018 /5 schon abgeschlossen!");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'UVA - Jahr/Monat 2018 /5 schon abgeschlossen!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(22));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "UVA - Jahr/Monat 2018 /5 schon abgeschlossen!");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(22));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100] Beende Prüfung B_EXOPV_004') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(23));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "[100] Beende Prüfung B_EXOPV_004");
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100] Beende Prüfung B_EXOPV_004') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(23));
+            //Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "[100] Beende Prüfung B_EXOPV_004");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FehlerprotokollBExopv001TxtEditor.Schliessen' at Center.", repo.FehlerprotokollBExopv001TxtEditor.SchliessenInfo, new RecordItemIndex(24));
-            repo.FehlerprotokollBExopv001TxtEditor.Schliessen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Fehlerprotokoll_Editor.Schliessen' at Center.", repo.Fehlerprotokoll_Editor.SchliessenInfo, new RecordItemIndex(24));
+            repo.Fehlerprotokoll_Editor.Schliessen.Click();
             
         }
 

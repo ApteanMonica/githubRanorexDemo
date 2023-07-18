@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_EXOPV_005.Recordings_B_EXOPV
+namespace B_EXOPV_004.Recordings_B_EXOPS
 {
-    public partial class Loeschen_Optionen_aendern_FB_Pruefung_nur_innerhalb_L
+    public partial class Einschraenkungen_B_EXOPV_004_neu_laden
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

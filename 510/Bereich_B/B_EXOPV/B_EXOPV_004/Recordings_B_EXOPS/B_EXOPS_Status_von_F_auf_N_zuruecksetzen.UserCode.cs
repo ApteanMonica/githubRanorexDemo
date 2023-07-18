@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_EXOPV_004.Recordings_B_EXOPS
 {
-    public partial class Einschraenkungen_L_N_303200
+    public partial class B_EXOPS_Status_von_F_auf_N_zuruecksetzen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -3845,7 +3845,6 @@ namespace B_EXOPV_005
         public partial class BEXOPSAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _zeilenwiederherstellenstatusnInfo;
-            RepoItemInfo _zeilenwiederherstellenstatusn1Info;
 
             /// <summary>
             /// Creates a new BEXOPS  folder.
@@ -3854,7 +3853,6 @@ namespace B_EXOPV_005
                     base("BEXOPS", "/contextmenu[@processname='B_EXOPS']", parentFolder, 30000, null, true, "968cef9d-3230-4fc7-b482-81e2c82af9f0", "")
             {
                 _zeilenwiederherstellenstatusnInfo = new RepoItemInfo(this, "ZeilenWiederherstellenStatusN", "menuitem[@text~'Zeilen Wiederherstellen']", "", 90000, null, "7fc66fef-3937-4e20-80c3-57c555ad522d");
-                _zeilenwiederherstellenstatusn1Info = new RepoItemInfo(this, "ZeilenWiederherstellenStatusN1", "menuitem[@name>'Zeilen Wiederherstellen (Status']", "", 30000, null, "047dbc92-1f3e-43c6-b2ca-005de1a92845");
             }
 
             /// <summary>
@@ -3902,30 +3900,6 @@ namespace B_EXOPV_005
                 get
                 {
                     return _zeilenwiederherstellenstatusnInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ZeilenWiederherstellenStatusN1 item.
-            /// </summary>
-            [RepositoryItem("047dbc92-1f3e-43c6-b2ca-005de1a92845")]
-            public virtual Ranorex.MenuItem ZeilenWiederherstellenStatusN1
-            {
-                get
-                {
-                    return _zeilenwiederherstellenstatusn1Info.CreateAdapter<Ranorex.MenuItem>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ZeilenWiederherstellenStatusN1 item info.
-            /// </summary>
-            [RepositoryItemInfo("047dbc92-1f3e-43c6-b2ca-005de1a92845")]
-            public virtual RepoItemInfo ZeilenWiederherstellenStatusN1Info
-            {
-                get
-                {
-                    return _zeilenwiederherstellenstatusn1Info;
                 }
             }
         }

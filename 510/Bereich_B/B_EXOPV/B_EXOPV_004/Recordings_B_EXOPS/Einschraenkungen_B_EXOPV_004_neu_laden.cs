@@ -20,38 +20,49 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_EXOPV_004.Recordings_B_EXOPV
+namespace B_EXOPV_004.Recordings_B_EXOPS
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Fehleroption_aendern recording.
+    ///The Einschraenkungen_B_EXOPV_004_neu_laden recording.
     /// </summary>
-    [TestModule("5cd9f441-a840-4ad2-8d33-490f0297a6fc", ModuleType.Recording, 1)]
-    public partial class Fehleroption_aendern : ITestModule
+    [TestModule("7901477e-29d3-4acd-bdeb-9355f291447d", ModuleType.Recording, 1)]
+    public partial class Einschraenkungen_B_EXOPV_004_neu_laden : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_004.B_EXOPV_004Repository repository.
         /// </summary>
         public static global::B_EXOPV_004.B_EXOPV_004Repository repo = global::B_EXOPV_004.B_EXOPV_004Repository.Instance;
 
-        static Fehleroption_aendern instance = new Fehleroption_aendern();
+        static Einschraenkungen_B_EXOPV_004_neu_laden instance = new Einschraenkungen_B_EXOPV_004_neu_laden();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Fehleroption_aendern()
+        public Einschraenkungen_B_EXOPV_004_neu_laden()
         {
+            Stapel_Herkunft = "B_EXOPV_004";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Fehleroption_aendern Instance
+        public static Einschraenkungen_B_EXOPV_004_neu_laden Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable Stapel_Herkunft.
+        /// </summary>
+        [TestVariable("74deaf58-fee0-43e2-bf88-a3b4528de2fe")]
+        public string Stapel_Herkunft
+        {
+            get { return repo.Stapel_Herkunft; }
+            set { repo.Stapel_Herkunft = value; }
+        }
 
 #endregion
 
@@ -79,20 +90,14 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100ExterneBuchungenVerbuchen.PbOptionenOptionen' at Center.", repo.Form100ExterneBuchungenVerbuchen.PbOptionenOptionenInfo, new RecordItemIndex(0));
-            repo.Form100ExterneBuchungenVerbuchen.PbOptionenOptionen.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Stapel_Herkunft) on item 'FrmBEXOP_Verwalten_Schnittstelle.Tabelle_Einschraenkungen.ColHerkunftRow1'.", repo.FrmBEXOP_Verwalten_Schnittstelle.Tabelle_Einschraenkungen.ColHerkunftRow1Info, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.Tabelle_Einschraenkungen.ColHerkunftRow1Info, "Text", Stapel_Herkunft);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgOptionenParameter.TitleBar100Optionen'", repo.DlgOptionenParameter.TitleBar100OptionenInfo, new ActionTimeout(60000), new RecordItemIndex(1));
-            repo.DlgOptionenParameter.TitleBar100OptionenInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBEXOP_Verwalten_Schnittstelle.PbDataAccessLoad' at Center.", repo.FrmBEXOP_Verwalten_Schnittstelle.PbDataAccessLoadInfo, new RecordItemIndex(1));
+            repo.FrmBEXOP_Verwalten_Schnittstelle.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'DlgOptionenParameter.TpName0.CbFehlerstatus'.", repo.DlgOptionenParameter.TpName0.CbFehlerstatusInfo, new RecordItemIndex(2));
-            repo.DlgOptionenParameter.TpName0.CbFehlerstatus.Element.SetAttributeValue("Checked", "False");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgOptionenParameter.TpName0.CbFehlerstatus'.", repo.DlgOptionenParameter.TpName0.CbFehlerstatusInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.DlgOptionenParameter.TpName0.CbFehlerstatusInfo, "Checked", "False");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgOptionenParameter.PbSpeichern' at Center.", repo.DlgOptionenParameter.PbSpeichernInfo, new RecordItemIndex(4));
-            repo.DlgOptionenParameter.PbSpeichern.Click();
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.Row1'", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.Row1Info, new ActionTimeout(60000), new RecordItemIndex(2));
+            repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.Row1Info.WaitForExists(60000);
             
         }
 

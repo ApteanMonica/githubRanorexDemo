@@ -2,26 +2,6 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
-			<testmodule
-			id="0b04ae18-5f30-4d79-8a20-709f1eb2276d"
-			name="Stapel_pruefen_starten"
-			ref="7db20743-2694-4f57-b138-4df6a7f37c36"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Fehlerprotokoll_Pruefung"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="ea80b5bd-38bc-462a-8847-46ea0fd510bf"
-					variablename="Fehlerprotokoll_Pruefung">
-					</var>
-					<var
-					dataname="Stapel_Herkunft"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="f49cbd79-1eb3-44bb-944f-1aacebbc6e29"
-					variablename="Stapel_Herkunft">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
 			name="B_EXOPV_004"
@@ -115,8 +95,18 @@
 			</testcase>
 			<testcase
 			id="166b7d8c-78a9-4cfc-9bd5-c39305a1f66d"
-			name="TestCase">
+			name="B_EXOPS_Belege_kontrollieren">
 			</testcase>
+			<testcase
+			id="1a6889db-0d53-4c06-9392-e3d8fa6785f0"
+			name="B_EXOPS_Status_prüfen_und_auf_N_zurücksetzen">
+			</testcase>
+			<testmodule
+			id="24897fad-9b9b-4b69-a8eb-d2a8523404c3"
+			name="B_EXOPS_Status_von_F_auf_N_zuruecksetzen"
+			ref="f02590c4-0911-460d-82e3-f903abf59d88"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="2841d947-823e-464c-b52c-109b6677725a"
 			name="Stapel_validieren"
@@ -135,6 +125,12 @@
 			id="34b437e8-8f4a-4124-9591-93557cec3760"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="38a3eb68-3d2f-4503-bb8b-7f4235e0fa52"
+			name="CloseAUT"
+			ref="2dbd0633-d4b1-43be-a0a9-4fa3134a9220"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="3dfe9f39-a794-43d2-9370-81f9c5802792"
 			name="StartAUT"
@@ -157,7 +153,7 @@
 			</testmodule>
 			<testmodule
 			id="40015223-5cbb-4d17-b2d1-bbca49c405e3"
-			name="Fehleroption_aendern"
+			name="Fehleroption_Default_pruefen"
 			ref="5cd9f441-a840-4ad2-8d33-490f0297a6fc"
 			type="Recording">
 			</testmodule>
@@ -174,24 +170,31 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm_2"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="e23f9c38-642c-43be-ad34-728b88ac6933"
-					variablename="Programm_2">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
 					variableid="433ce59f-3802-446a-8f58-d73092ec6e7e"
 					variablename="Startfile">
 					</var>
+					<var
+					dataname="Programm_2"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="e23f9c38-642c-43be-ad34-728b88ac6933"
+					variablename="Programm_2">
+					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="6500fa25-202f-42db-b1e8-ce5948044d6f"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="68a01840-1177-46bc-ab45-6e4b97f1fdf7"
 			name="Stapel_pruefen_Protokolldatei"
 			ref="0ad15bf6-9ef3-458a-bfdc-b4bc2d8f280a"
 			type="Recording">
+				<description>
+					<![CDATA[Ticket erfassen! FEHLER: Beende Verbuchung - statt beende Prüfung]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Tagesdatum"
@@ -223,27 +226,21 @@
 			</testmodule>
 			<testmodule
 			id="6e07a282-adfb-44d2-95d3-708732a54479"
-			name="Einschraenkungen_L_N_303200"
+			name="Einschraenkungen_B_EXOPV_004"
 			ref="80b2c675-7c5f-4008-9269-1ce0dc94775e"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="LF_303200"
+					dataname="Stapel_Herkunft"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="781f4fbf-6150-4e60-ae94-c1516c6f1eab"
-					variablename="LF_303200">
+					variableid="fee22312-abd3-48a6-98dd-bd578b94fb55"
+					variablename="Stapel_Herkunft">
 					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="74558d66-ce74-47d9-ae5e-4a472f687f40"
-			name="Fehleroption_zuruecksetzen_auf_F"
-			ref="7d9127c9-bbf7-42f7-9f45-1308724ab3d9"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="7879f12b-a77b-460d-b30f-a50e955284a9"
-			name="Stapel_pruefen_starten"
+			name="Stapel_Pruefung_starten"
 			ref="7db20743-2694-4f57-b138-4df6a7f37c36"
 			type="Recording">
 				<databinding>
@@ -261,13 +258,95 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="7aeff25b-c37b-41f0-a359-208a102e88fa"
+			name="Statuskontrolle_nach_Pruefung"
+			ref="9af6b51e-9e68-4d86-9815-b395918539b3"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Jahr"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="493dfc45-e85b-42c0-89d0-867ba1550878"
+					variablename="Jahr">
+					</var>
+					<var
+					dataname="Periode_6_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="bc33c291-1bb0-44a7-ae73-0a376a8f181a"
+					variablename="Periode_6_offen">
+					</var>
+					<var
+					dataname="Periode_5_geschlossen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="7438727d-f23f-4eb0-bb0c-5442e8d1c7bd"
+					variablename="Periode_5_geschlossen">
+					</var>
+					<var
+					dataname="Periode_7_geschlossen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="861f239e-ac89-406b-9443-0381c37f5194"
+					variablename="Periode_7_geschlossen">
+					</var>
+					<var
+					dataname="Beleg1"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="aa8de622-a144-4f67-a2ea-100e36965e2e"
+					variablename="Beleg1">
+					</var>
+					<var
+					dataname="Beleg2"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="514e98df-d64e-4fb5-a098-05a618770241"
+					variablename="Beleg2">
+					</var>
+					<var
+					dataname="Beleg3"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="49acf57b-9bec-4f67-9640-2c454605349e"
+					variablename="Beleg3">
+					</var>
+					<var
+					dataname="Beleg4"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="c70a9809-2dd7-4790-9667-18e9251c7c70"
+					variablename="Beleg4">
+					</var>
+					<var
+					dataname="Beleg5"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="d8543d49-9498-461c-a73b-fbb2955c45b9"
+					variablename="Beleg5">
+					</var>
+					<var
+					dataname="Beleg6"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="00212ea1-967b-4d0b-bcc4-f49e3f07ccb7"
+					variablename="Beleg6">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="866b963c-871f-4999-91b8-ed3dd05ede02"
+			name="Einschraenkungen_B_EXOPV_004_neu_laden"
+			ref="7901477e-29d3-4acd-bdeb-9355f291447d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="74deaf58-fee0-43e2-bf88-a3b4528de2fe"
+					variablename="Stapel_Herkunft">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="870870e5-5d0e-4529-bc82-4adba02b4c50"
 			name="setup">
 			</setup>
 			<testcase
 			id="8ace61e3-5345-4594-b519-f46c633ed06c"
-			name="TestCase">
+			name="Belege_verbuchen">
 			</testcase>
 			<testmodule
 			id="97e1b6d7-f314-4315-a074-510b346438b8"
@@ -283,10 +362,6 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<setup
-			id="98d97c9d-733d-470e-91fb-12652477f80a"
-			name="setup">
-			</setup>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -317,7 +392,7 @@
 			</setup>
 			<testcase
 			id="d7d5ff55-b160-4fe6-88d9-4b0f7f1d2093"
-			name="TestCase">
+			name="Belege_prüfen">
 			</testcase>
 			<testmodule
 			id="e7e61f35-ab09-44f1-bab6-0be975ca2c6a"
@@ -355,57 +430,15 @@
 			</testmodule>
 			<testmodule
 			id="fde998b5-c56f-489a-bfcf-ae7238bfc22d"
-			name="Belege_pruefen_vor_Verbuchung"
+			name="Belege_pruefen_vor_Pruefung_Verbuchung"
 			ref="63fa5680-1386-41e3-ba86-30b83e2a0c65"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Jahr"
+					dataname="Beleg6"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="5399806f-98eb-4b94-af3e-e53ce6476e4f"
-					variablename="Jahr">
-					</var>
-					<var
-					dataname="Periode_6_offen"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="2ed8ba80-5af2-4278-a833-aefa40e7f589"
-					variablename="Periode_6_offen">
-					</var>
-					<var
-					dataname="Periode_5_geschlossen"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="439a5b97-97d7-4409-9088-0d16ca120209"
-					variablename="Periode_5_geschlossen">
-					</var>
-					<var
-					dataname="Periode_7_geschlossen"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="6f2761fa-fbe1-47cb-8885-7e5fad7ef05a"
-					variablename="Periode_7_geschlossen">
-					</var>
-					<var
-					dataname="Beleg1"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="baa05979-5cbb-49d4-ab50-35c706fadb7c"
-					variablename="Beleg1">
-					</var>
-					<var
-					dataname="Beleg2"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="0d35a6a6-abbb-4cae-851c-382c17a3c246"
-					variablename="Beleg2">
-					</var>
-					<var
-					dataname="Beleg3"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="d0e24792-3918-41e6-a4e0-0cf46236b74b"
-					variablename="Beleg3">
-					</var>
-					<var
-					dataname="Beleg4"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="d3807d43-f6fe-40af-8972-979302147aea"
-					variablename="Beleg4">
+					variableid="e602e2b3-9a38-447b-8377-296cf83fe0db"
+					variablename="Beleg6">
 					</var>
 					<var
 					dataname="Beleg5"
@@ -414,10 +447,52 @@
 					variablename="Beleg5">
 					</var>
 					<var
-					dataname="Beleg6"
+					dataname="Beleg4"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="e602e2b3-9a38-447b-8377-296cf83fe0db"
-					variablename="Beleg6">
+					variableid="d3807d43-f6fe-40af-8972-979302147aea"
+					variablename="Beleg4">
+					</var>
+					<var
+					dataname="Beleg3"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="d0e24792-3918-41e6-a4e0-0cf46236b74b"
+					variablename="Beleg3">
+					</var>
+					<var
+					dataname="Beleg2"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="0d35a6a6-abbb-4cae-851c-382c17a3c246"
+					variablename="Beleg2">
+					</var>
+					<var
+					dataname="Beleg1"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="baa05979-5cbb-49d4-ab50-35c706fadb7c"
+					variablename="Beleg1">
+					</var>
+					<var
+					dataname="Periode_7_geschlossen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="6f2761fa-fbe1-47cb-8885-7e5fad7ef05a"
+					variablename="Periode_7_geschlossen">
+					</var>
+					<var
+					dataname="Periode_5_geschlossen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="439a5b97-97d7-4409-9088-0d16ca120209"
+					variablename="Periode_5_geschlossen">
+					</var>
+					<var
+					dataname="Periode_6_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="2ed8ba80-5af2-4278-a833-aefa40e7f589"
+					variablename="Periode_6_offen">
+					</var>
+					<var
+					dataname="Jahr"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="5399806f-98eb-4b94-af3e-e53ce6476e4f"
+					variablename="Jahr">
 					</var>
 				</databinding>
 			</testmodule>
@@ -431,7 +506,7 @@
 				name="B_EXOPV_004">
 					<testcase
 					id="166b7d8c-78a9-4cfc-9bd5-c39305a1f66d"
-					name="TestCase">
+					name="B_EXOPS_Belege_kontrollieren">
 						<setup
 						id="c694f805-22e2-418f-9e40-651fb1fa8e9d"
 						name="setup">
@@ -442,16 +517,16 @@
 						</setup>
 						<testmodule
 						id="6e07a282-adfb-44d2-95d3-708732a54479"
-						name="Einschraenkungen_L_N_303200">
+						name="Einschraenkungen_B_EXOPV_004">
 						</testmodule>
 						<testmodule
 						id="fde998b5-c56f-489a-bfcf-ae7238bfc22d"
-						name="Belege_pruefen_vor_Verbuchung">
+						name="Belege_pruefen_vor_Pruefung_Verbuchung">
 						</testmodule>
 					</testcase>
 					<testcase
 					id="d7d5ff55-b160-4fe6-88d9-4b0f7f1d2093"
-					name="TestCase">
+					name="Belege_prüfen">
 						<setup
 						id="870870e5-5d0e-4529-bc82-4adba02b4c50"
 						name="setup">
@@ -462,7 +537,7 @@
 						</setup>
 						<testmodule
 						id="40015223-5cbb-4d17-b2d1-bbca49c405e3"
-						name="Fehleroption_aendern">
+						name="Fehleroption_Default_pruefen">
 						</testmodule>
 						<testmodule
 						id="2841d947-823e-464c-b52c-109b6677725a"
@@ -470,7 +545,7 @@
 						</testmodule>
 						<testmodule
 						id="7879f12b-a77b-460d-b30f-a50e955284a9"
-						name="Stapel_pruefen_starten">
+						name="Stapel_Pruefung_starten">
 						</testmodule>
 						<testmodule
 						id="e7e61f35-ab09-44f1-bab6-0be975ca2c6a"
@@ -480,40 +555,52 @@
 						id="68a01840-1177-46bc-ab45-6e4b97f1fdf7"
 						name="Stapel_pruefen_Protokolldatei">
 						</testmodule>
+						<teardown
+						id="6500fa25-202f-42db-b1e8-ce5948044d6f"
+						name="teardown">
+							<testmodule
+							id="45f1e6eb-d2b7-4d72-8b73-ea81a084cabb"
+							name="Editor_schliessen">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="1a6889db-0d53-4c06-9392-e3d8fa6785f0"
+					name="B_EXOPS_Status_prüfen_und_auf_N_zurücksetzen">
 						<testmodule
-						id="0b04ae18-5f30-4d79-8a20-709f1eb2276d"
-						name="Stapel_pruefen_starten">
+						id="866b963c-871f-4999-91b8-ed3dd05ede02"
+						name="Einschraenkungen_B_EXOPV_004_neu_laden">
+						</testmodule>
+						<testmodule
+						id="7aeff25b-c37b-41f0-a359-208a102e88fa"
+						name="Statuskontrolle_nach_Pruefung">
+						</testmodule>
+						<testmodule
+						id="24897fad-9b9b-4b69-a8eb-d2a8523404c3"
+						name="B_EXOPS_Status_von_F_auf_N_zuruecksetzen">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="8ace61e3-5345-4594-b519-f46c633ed06c"
+					name="Belege_verbuchen">
+						<testmodule
+						id="fba58829-bf64-449a-8a0f-f38cfcae65e9"
+						name="Stapel_verbuchen_starten">
 						</testmodule>
 						<testmodule
 						id="97e1b6d7-f314-4315-a074-510b346438b8"
 						name="Stapel_pruefen_Meldungen_aendern_ER01_ER02_Fehlermeldungen">
 						</testmodule>
 						<testmodule
-						id="fba58829-bf64-449a-8a0f-f38cfcae65e9"
-						name="Stapel_verbuchen_starten">
-						</testmodule>
-						<testmodule
 						id="6d111dee-0c2f-485c-958a-8c2acbed8e4b"
 						name="Stapel_verbuchen_Meldungen_aendern_ER01_ER02_Fehlermeldungen">
 						</testmodule>
-					</testcase>
-					<testcase
-					id="8ace61e3-5345-4594-b519-f46c633ed06c"
-					name="TestCase">
-						<setup
-						id="98d97c9d-733d-470e-91fb-12652477f80a"
-						name="setup">
-						</setup>
 						<teardown
 						id="34b437e8-8f4a-4124-9591-93557cec3760"
 						name="teardown">
 							<testmodule
-							id="45f1e6eb-d2b7-4d72-8b73-ea81a084cabb"
-							name="Editor_schliessen">
-							</testmodule>
-							<testmodule
-							id="74558d66-ce74-47d9-ae5e-4a472f687f40"
-							name="Fehleroption_zuruecksetzen_auf_F">
+							id="38a3eb68-3d2f-4503-bb8b-7f4235e0fa52"
+							name="CloseAUT">
 							</testmodule>
 						</teardown>
 					</testcase>
@@ -534,6 +621,9 @@
 			id="166b7d8c-78a9-4cfc-9bd5-c39305a1f66d">
 			</testcontainer>
 			<testcontainer
+			id="1a6889db-0d53-4c06-9392-e3d8fa6785f0">
+			</testcontainer>
+			<testcontainer
 			id="8ace61e3-5345-4594-b519-f46c633ed06c">
 			</testcontainer>
 			<testcontainer
@@ -542,5 +632,8 @@
 		</testconfiguration>
 	</testconfigurations>
 	<references>
+		<reference>
+			Ranorex Automation Helpers.dll
+		</reference>
 	</references>
 </testsuitedoc>

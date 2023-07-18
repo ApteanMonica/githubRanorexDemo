@@ -24,22 +24,22 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Stapel_pruefen_starten recording.
+    ///The Stapel_Pruefung_starten recording.
     /// </summary>
     [TestModule("7db20743-2694-4f57-b138-4df6a7f37c36", ModuleType.Recording, 1)]
-    public partial class Stapel_pruefen_starten : ITestModule
+    public partial class Stapel_Pruefung_starten : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_004.B_EXOPV_004Repository repository.
         /// </summary>
         public static global::B_EXOPV_004.B_EXOPV_004Repository repo = global::B_EXOPV_004.B_EXOPV_004Repository.Instance;
 
-        static Stapel_pruefen_starten instance = new Stapel_pruefen_starten();
+        static Stapel_Pruefung_starten instance = new Stapel_Pruefung_starten();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Stapel_pruefen_starten()
+        public Stapel_Pruefung_starten()
         {
             Fehlerprotokoll_Pruefung = "c:\\temp\\Fehlerprotokoll_b_exopv_004_pruef.txt";
         }
@@ -47,7 +47,7 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Stapel_pruefen_starten Instance
+        public static Stapel_Pruefung_starten Instance
         {
             get { return instance; }
         }
