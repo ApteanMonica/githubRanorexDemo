@@ -120,11 +120,11 @@ namespace N_LISTEN_BULI_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anlagennr_002) on item 'FrmBuchungsliste.DfAnlaNrBis'.", repo.FrmBuchungsliste.DfAnlaNrBisInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.FrmBuchungsliste.DfAnlaNrBisInfo, "Text", Anlagennr_002);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.RbJahr' at Center.", repo.FrmBuchungsliste.RbJahrInfo, new RecordItemIndex(5));
-            repo.FrmBuchungsliste.RbJahr.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.RbJahr' at Center.", repo.FrmBuchungsliste.RbJahrInfo, new RecordItemIndex(5));
+            //repo.FrmBuchungsliste.RbJahr.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBuchungsliste.RbJahr'.", repo.FrmBuchungsliste.RbJahrInfo, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.FrmBuchungsliste.RbJahrInfo, "Checked", "True");
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBuchungsliste.RbJahr'.", repo.FrmBuchungsliste.RbJahrInfo, new RecordItemIndex(6));
+            //Validate.AttributeEqual(repo.FrmBuchungsliste.RbJahrInfo, "Checked", "True");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.CbBereich' at Center.", repo.FrmBuchungsliste.CbBereichInfo, new RecordItemIndex(7));
             repo.FrmBuchungsliste.CbBereich.Click();
@@ -132,11 +132,14 @@ namespace N_LISTEN_BULI_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBuchungsliste.CbBereich'.", repo.FrmBuchungsliste.CbBereichInfo, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.FrmBuchungsliste.CbBereichInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbOptionenTabelle' at Center.", repo.FrmBuchungsliste.PbOptionenTabelleInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBuchungsliste.RbMonat'.", repo.FrmBuchungsliste.RbMonatInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.RbMonatInfo, "Checked", "True");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbOptionenTabelle' at Center.", repo.FrmBuchungsliste.PbOptionenTabelleInfo, new RecordItemIndex(10));
             repo.FrmBuchungsliste.PbOptionenTabelle.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'FrmBuchungsliste.FlexGrid.ColTypRow1'", repo.FrmBuchungsliste.FlexGrid.ColTypRow1Info, new ActionTimeout(5000), new RecordItemIndex(10));
-            repo.FrmBuchungsliste.FlexGrid.ColTypRow1Info.WaitForExists(5000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBuchungsliste.FlexGrid.ColTypRow1'", repo.FrmBuchungsliste.FlexGrid.ColTypRow1Info, new ActionTimeout(120000), new RecordItemIndex(11));
+            repo.FrmBuchungsliste.FlexGrid.ColTypRow1Info.WaitForExists(120000);
             
         }
 

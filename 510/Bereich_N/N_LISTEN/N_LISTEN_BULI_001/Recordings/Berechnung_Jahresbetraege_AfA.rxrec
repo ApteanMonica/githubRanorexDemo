@@ -9936,7 +9936,7 @@ mode="Global">
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -13479,7 +13479,7 @@ mode="Global">
 		</mouseitem>
 		<validationitem
 		action="AttributeEqual"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="45ec6e7c-ae11-43bd-925f-daa3acd84d98">
 			<comment>
@@ -17072,6 +17072,31 @@ mode="Global">
 				True
 			</matchvalue>
 		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c9ef765f-df93-43aa-aec6-6567024b7496">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="384ddb80-a339-462e-824f-83741337cad1"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmBuchungsliste']/?/?/container[@controlname='groupBox1']/radiobutton[@controlname='rbMonat']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Checked
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -17103,7 +17128,7 @@ mode="Global">
 		optional="False"
 		searchpropertyid="b4ab694b-5e01-4ffc-9796-c6488171a463"
 		waitaction="Exists"
-		waittimeout="5000ms">
+		waittimeout="120000ms">
 			<comment>
 			</comment>
 			<bindings>
