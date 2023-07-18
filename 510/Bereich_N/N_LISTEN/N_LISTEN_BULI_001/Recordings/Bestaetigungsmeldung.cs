@@ -97,8 +97,8 @@ namespace N_LISTEN_BULI_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(5));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungs'", repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo, new ActionTimeout(5000), new RecordItemIndex(6));
-            repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo.WaitForExists(5000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungs'", repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo, new ActionTimeout(120000), new RecordItemIndex(6));
+            repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo.WaitForExists(120000);
             
         }
 

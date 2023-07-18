@@ -43,6 +43,8 @@ namespace N_LISTEN_BULI_001.Recordings
         {
             Beginn_GJ = "01.01.2022";
             Ende_GJ = "31.12.2022";
+            Anlagennr_001 = "N_LISTEN_001_01";
+            Anlagennr_002 = "N_LISTEN_001_02";
         }
 
         /// <summary>
@@ -77,6 +79,30 @@ namespace N_LISTEN_BULI_001.Recordings
         {
             get { return _Ende_GJ; }
             set { _Ende_GJ = value; }
+        }
+
+        string _Anlagennr_001;
+
+        /// <summary>
+        /// Gets or sets the value of variable Anlagennr_001.
+        /// </summary>
+        [TestVariable("71d79893-24e3-43a5-a1ca-900d5ba9d2bc")]
+        public string Anlagennr_001
+        {
+            get { return _Anlagennr_001; }
+            set { _Anlagennr_001 = value; }
+        }
+
+        string _Anlagennr_002;
+
+        /// <summary>
+        /// Gets or sets the value of variable Anlagennr_002.
+        /// </summary>
+        [TestVariable("f0b117a0-e4c1-48f3-801d-8c1fbf76594a")]
+        public string Anlagennr_002
+        {
+            get { return _Anlagennr_002; }
+            set { _Anlagennr_002 = value; }
         }
 
 #endregion
@@ -138,10 +164,22 @@ namespace N_LISTEN_BULI_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ende_GJ) on item 'FrmBuchungsliste.TextBis'.", repo.FrmBuchungsliste.TextBisInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.FrmBuchungsliste.TextBisInfo, "Text", Ende_GJ);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbOptionenTabelle' at Center.", repo.FrmBuchungsliste.PbOptionenTabelleInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Anlagennr_001' with focus on 'FrmBuchungsliste.AnlageNrVon'.", repo.FrmBuchungsliste.AnlageNrVonInfo, new RecordItemIndex(11));
+            repo.FrmBuchungsliste.AnlageNrVon.PressKeys(Anlagennr_001);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anlagennr_001) on item 'FrmBuchungsliste.AnlageNrVon'.", repo.FrmBuchungsliste.AnlageNrVonInfo, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.AnlageNrVonInfo, "Text", Anlagennr_001);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Anlagennr_002' with focus on 'FrmBuchungsliste.DfAnlaNrBis'.", repo.FrmBuchungsliste.DfAnlaNrBisInfo, new RecordItemIndex(13));
+            repo.FrmBuchungsliste.DfAnlaNrBis.PressKeys(Anlagennr_002);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anlagennr_002) on item 'FrmBuchungsliste.DfAnlaNrBis'.", repo.FrmBuchungsliste.DfAnlaNrBisInfo, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.DfAnlaNrBisInfo, "Text", Anlagennr_002);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbOptionenTabelle' at Center.", repo.FrmBuchungsliste.PbOptionenTabelleInfo, new RecordItemIndex(15));
             repo.FrmBuchungsliste.PbOptionenTabelle.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBuchungsliste.FlexGrid.ColTypRow1'", repo.FrmBuchungsliste.FlexGrid.ColTypRow1Info, new ActionTimeout(120000), new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBuchungsliste.FlexGrid.ColTypRow1'", repo.FrmBuchungsliste.FlexGrid.ColTypRow1Info, new ActionTimeout(120000), new RecordItemIndex(16));
             repo.FrmBuchungsliste.FlexGrid.ColTypRow1Info.WaitForExists(120000);
             
         }

@@ -149,7 +149,10 @@ namespace N_LISTEN_BULI_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ust_Code_Ueberleitung) on item 'DlgFibu.Frame2.UstCode'.", repo.DlgFibu.Frame2.UstCodeInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.DlgFibu.Frame2.UstCodeInfo, "Text", Ust_Code_Ueberleitung);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFibu.PbStart' at Center.", repo.DlgFibu.PbStartInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100') on item 'DlgFibu.Frame2.Firma'.", repo.DlgFibu.Frame2.FirmaInfo, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.DlgFibu.Frame2.FirmaInfo, "Text", "100");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFibu.PbStart' at Center.", repo.DlgFibu.PbStartInfo, new RecordItemIndex(12));
             repo.DlgFibu.PbStart.Click();
             
         }

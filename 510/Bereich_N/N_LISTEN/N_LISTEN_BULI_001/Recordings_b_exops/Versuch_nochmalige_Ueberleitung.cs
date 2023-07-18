@@ -116,19 +116,22 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Soll trotz AVZ-Stammdateneinstellung :\r\n\r\n> Buchungsliste monatlich speichern <\r\n\r\neine Überleitung über mehrere Monate\r\nin die Fibu erfolgen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbUEberleitungFibu' at Center.", repo.FrmBuchungsliste.PbUEberleitungFibuInfo, new RecordItemIndex(0));
+            repo.FrmBuchungsliste.PbUEberleitungFibu.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Soll trotz AVZ-Stammdateneinstellung :\r\n\r\n> Buchungsliste monatlich speichern <\r\n\r\neine Überleitung über mehrere Monate\r\nin die Fibu erfolgen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Soll trotz AVZ-Stammdateneinstellung :\r\n\r\n> Buchungsliste monatlich speichern <\r\n\r\neine Überleitung über mehrere Monate\r\nin die Fibu erfolgen?");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(120000), new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(120000), new RecordItemIndex(3));
             repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es sind bereits berechnete Monate vorhanden! \r\n \r\nSollen diese gelöscht und neu erfaßt werden? \r\n \r\nJa\t\t= Löschen und Neu erfassen \r\nNein\t= Bereits vorhandene Buchungszeilen laden \r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es sind bereits berechnete Monate vorhanden! \r\n \r\nSollen diese gelöscht und neu erfaßt werden? \r\n \r\nJa\t\t= Löschen und Neu erfassen \r\nNein\t= Bereits vorhandene Buchungszeilen laden \r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es sind bereits berechnete Monate vorhanden! \r\n \r\nSollen diese gelöscht und neu erfaßt werden? \r\n \r\nJa\t\t= Löschen und Neu erfassen \r\nNein\t= Bereits vorhandene Buchungszeilen laden \r\n");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(5));
             repo.DlgMessageBox.Button0.Click();
             
         }

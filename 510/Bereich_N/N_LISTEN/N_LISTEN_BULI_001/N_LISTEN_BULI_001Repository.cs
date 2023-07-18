@@ -149,9 +149,12 @@ namespace N_LISTEN_BULI_001
             RepoItemInfo _geschaeftsjahrInfo;
             RepoItemInfo _cbbereichInfo;
             RepoItemInfo _rbmonatInfo;
+            RepoItemInfo _rbjahrInfo;
             RepoItemInfo _cmbvarianteInfo;
             RepoItemInfo _textvonInfo;
             RepoItemInfo _textbisInfo;
+            RepoItemInfo _anlagenrvonInfo;
+            RepoItemInfo _dfanlanrbisInfo;
 
             /// <summary>
             /// Creates a new FrmBuchungsliste  folder.
@@ -167,9 +170,12 @@ namespace N_LISTEN_BULI_001
                 _geschaeftsjahrInfo = new RepoItemInfo(this, "Geschaeftsjahr", "?/?/container[@controlname='frame1']/?/?/text[@accessiblename='Geschäftsjahr']", "", 30000, null, "4736ac10-315d-4c33-bab5-e0f453d74e86");
                 _cbbereichInfo = new RepoItemInfo(this, "CbBereich", "?/?/container[@controlname='frame2']/checkbox[@controlname='cbBereich']", "", 30000, null, "b21c8533-1cf2-4be3-b588-09572b2b95ae");
                 _rbmonatInfo = new RepoItemInfo(this, "RbMonat", "?/?/container[@controlname='groupBox1']/radiobutton[@controlname='rbMonat']", "", 30000, null, "384ddb80-a339-462e-824f-83741337cad1");
+                _rbjahrInfo = new RepoItemInfo(this, "RbJahr", "container[@controlname='ClientArea']/container[@controlname='groupBox1']/radiobutton[@controlname='rbJahr']", "", 30000, null, "6865bd57-03bf-4613-a6ab-281fc7d392cf");
                 _cmbvarianteInfo = new RepoItemInfo(this, "CmbVariante", "?/?/combobox[@controlname='cmbVariante']", "", 30000, null, "b02f5911-16cd-4001-852a-2d2ce2179738");
                 _textvonInfo = new RepoItemInfo(this, "TextVon", "?/?/container[@controlname='groupBox1']/?/?/text[@accessiblename='von']", "", 30000, null, "1fbb83db-b327-4b45-ba1f-e54fdc0008c5");
                 _textbisInfo = new RepoItemInfo(this, "TextBis", "?/?/container[@controlname='groupBox1']/?/?/text[@accessiblename='bis']", "", 30000, null, "759f512a-595b-4909-9a4f-917b5733fb60");
+                _anlagenrvonInfo = new RepoItemInfo(this, "AnlageNrVon", "container[@controlname='ClientArea']/container[@controlname='frame3']/text[@controlname='dfAnla_nr_von']/text[@accessiblename='Anlage Nr. von']", "", 30000, null, "8b4c6f6c-6ab5-40e4-bb89-f298bf5b2be5");
+                _dfanlanrbisInfo = new RepoItemInfo(this, "DfAnlaNrBis", "container[@controlname='ClientArea']/container[@controlname='frame3']/text[@controlname='dfAnla_nr_bis']", "", 30000, null, "fbbd3a41-4053-4527-b7db-be6b7b7c0265");
             }
 
             /// <summary>
@@ -365,6 +371,30 @@ namespace N_LISTEN_BULI_001
             }
 
             /// <summary>
+            /// The RbJahr item.
+            /// </summary>
+            [RepositoryItem("6865bd57-03bf-4613-a6ab-281fc7d392cf")]
+            public virtual Ranorex.RadioButton RbJahr
+            {
+                get
+                {
+                    return _rbjahrInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RbJahr item info.
+            /// </summary>
+            [RepositoryItemInfo("6865bd57-03bf-4613-a6ab-281fc7d392cf")]
+            public virtual RepoItemInfo RbJahrInfo
+            {
+                get
+                {
+                    return _rbjahrInfo;
+                }
+            }
+
+            /// <summary>
             /// The CmbVariante item.
             /// </summary>
             [RepositoryItem("b02f5911-16cd-4001-852a-2d2ce2179738")]
@@ -433,6 +463,54 @@ namespace N_LISTEN_BULI_001
                 get
                 {
                     return _textbisInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AnlageNrVon item.
+            /// </summary>
+            [RepositoryItem("8b4c6f6c-6ab5-40e4-bb89-f298bf5b2be5")]
+            public virtual Ranorex.Text AnlageNrVon
+            {
+                get
+                {
+                    return _anlagenrvonInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AnlageNrVon item info.
+            /// </summary>
+            [RepositoryItemInfo("8b4c6f6c-6ab5-40e4-bb89-f298bf5b2be5")]
+            public virtual RepoItemInfo AnlageNrVonInfo
+            {
+                get
+                {
+                    return _anlagenrvonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfAnlaNrBis item.
+            /// </summary>
+            [RepositoryItem("fbbd3a41-4053-4527-b7db-be6b7b7c0265")]
+            public virtual Ranorex.Text DfAnlaNrBis
+            {
+                get
+                {
+                    return _dfanlanrbisInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfAnlaNrBis item info.
+            /// </summary>
+            [RepositoryItemInfo("fbbd3a41-4053-4527-b7db-be6b7b7c0265")]
+            public virtual RepoItemInfo DfAnlaNrBisInfo
+            {
+                get
+                {
+                    return _dfanlanrbisInfo;
                 }
             }
 
@@ -1004,6 +1082,7 @@ namespace N_LISTEN_BULI_001
             RepoItemInfo _ustcodeInfo;
             RepoItemInfo _text_ueberleitung_monatInfo;
             RepoItemInfo _text_ueberleitung_jahrInfo;
+            RepoItemInfo _firmaInfo;
 
             /// <summary>
             /// Creates a new Frame2  folder.
@@ -1016,6 +1095,7 @@ namespace N_LISTEN_BULI_001
                 _ustcodeInfo = new RepoItemInfo(this, "UstCode", "?/?/text[@accessiblename='Ust-Code']", "", 30000, null, "0ab48276-ebb5-49b8-9e06-a0c7f1f62c71");
                 _text_ueberleitung_monatInfo = new RepoItemInfo(this, "Text_UEberleitung_Monat", "?/?/text[@accessiblename='/']", "", 30000, null, "f1831b47-6ef7-4b92-80c0-964285d0e258");
                 _text_ueberleitung_jahrInfo = new RepoItemInfo(this, "Text_UEberleitung_Jahr", "?/?/text[@accessiblename='Jahr / Monat']", "", 30000, null, "29513aa8-829e-4e27-ac24-e217d235569b");
+                _firmaInfo = new RepoItemInfo(this, "Firma", "text[@controlname='dfFirm_nr']/text[@accessiblename='Firma']", "", 30000, null, "a76759d9-de01-4bd1-b708-375a84aabd51");
             }
 
             /// <summary>
@@ -1159,6 +1239,30 @@ namespace N_LISTEN_BULI_001
                 get
                 {
                     return _text_ueberleitung_jahrInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Firma item.
+            /// </summary>
+            [RepositoryItem("a76759d9-de01-4bd1-b708-375a84aabd51")]
+            public virtual Ranorex.Text Firma
+            {
+                get
+                {
+                    return _firmaInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Firma item info.
+            /// </summary>
+            [RepositoryItemInfo("a76759d9-de01-4bd1-b708-375a84aabd51")]
+            public virtual RepoItemInfo FirmaInfo
+            {
+                get
+                {
+                    return _firmaInfo;
                 }
             }
         }

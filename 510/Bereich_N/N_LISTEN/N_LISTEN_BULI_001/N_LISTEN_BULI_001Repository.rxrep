@@ -99,6 +99,17 @@ name="N_LISTEN_BULI_001Repository">
 				/form[@controlname='frmBuchungsliste']/?/?/container[@controlname='groupBox1']/radiobutton[@controlname='rbMonat']
 			</item>
 			<item
+			addcaps="radiobutton,control,nativewindow"
+			capname="radiobutton"
+			id="6865bd57-03bf-4613-a6ab-281fc7d392cf"
+			name="RbJahr"
+			refimgid="41f77cf6-bc36-4415-8555-bfd0049266ba"
+			refpath="/form[@controlname='frmBuchungsliste']/container[@controlname='ClientArea']/container[@controlname='groupBox1']/radiobutton[@controlname='rbJahr']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmBuchungsliste']/container[@controlname='ClientArea']/container[@controlname='groupBox1']/radiobutton[@controlname='rbJahr']
+			</item>
+			<item
 			addcaps="combobox,control,nativewindow"
 			capname="combobox"
 			id="b02f5911-16cd-4001-852a-2d2ce2179738"
@@ -130,6 +141,28 @@ name="N_LISTEN_BULI_001Repository">
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='frmBuchungsliste']/?/?/container[@controlname='groupBox1']/?/?/text[@accessiblename='bis']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="8b4c6f6c-6ab5-40e4-bb89-f298bf5b2be5"
+			name="AnlageNrVon"
+			refimgid="23f52427-b5ca-4d97-bd9e-b086c58c0b62"
+			refpath="/form[@controlname='frmBuchungsliste']/container[@controlname='ClientArea']/container[@controlname='frame3']/text[@controlname='dfAnla_nr_von']/text[@accessiblename='Anlage Nr. von']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmBuchungsliste']/container[@controlname='ClientArea']/container[@controlname='frame3']/text[@controlname='dfAnla_nr_von']/text[@accessiblename='Anlage Nr. von']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="fbbd3a41-4053-4527-b7db-be6b7b7c0265"
+			name="DfAnlaNrBis"
+			refimgid="20180f7d-6be0-4f20-9d30-641ff0b588c9"
+			refpath="/form[@controlname='frmBuchungsliste']/container[@controlname='ClientArea']/container[@controlname='frame3']/text[@controlname='dfAnla_nr_bis']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmBuchungsliste']/container[@controlname='ClientArea']/container[@controlname='frame3']/text[@controlname='dfAnla_nr_bis']
 			</item>
 			<folder
 			capname="table"
@@ -426,6 +459,17 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 				robustPath=""
 				searchtimeout="30000ms">
 					/form[@controlname='dlgFibu']/container[@controlname='frame2']/?/?/text[@accessiblename='Jahr / Monat']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="a76759d9-de01-4bd1-b708-375a84aabd51"
+				name="Firma"
+				refimgid="7290e52b-af3f-46f9-b642-9ecf46b6368e"
+				refpath="/form[@controlname='dlgFibu']/container[@controlname='frame2']/text[@controlname='dfFirm_nr']/text[@accessiblename='Firma']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='dlgFibu']/container[@controlname='frame2']/text[@controlname='dfFirm_nr']/text[@accessiblename='Firma']
 				</item>
 				<basepath>
 					/form[@controlname='dlgFibu']/container[@controlname='frame2']
