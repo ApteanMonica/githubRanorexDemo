@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren"
+	classname="B_EXOPS_Status_Belege_nach_Verbuchung_kontrollieren"
 	namespace="B_EXOPV_005.Recordings_B_EXOPS">
 	</codegen>
 	<variables>
@@ -27,6 +27,11 @@ mode="Global">
 		id="3f2d53db-8adc-46a0-9281-8a33af1e97f9"
 		name="LF_01">
 			303201
+		</var>
+		<var
+		id="7f5d8d68-bc78-4a54-9c21-594053829b36"
+		name="LF_02">
+			303202
 		</var>
 	</variables>
 	<recorditems>
@@ -288,16 +293,20 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="b2dbc22f-2a57-4d00-8c80-566c022eea08">
+		searchpropertyid="b497fb50-bfcc-4ba3-aadc-91469402337e">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="LF_02">
+				</binding>
 			</bindings>
 			<info
-			id="97d86d99-c9c9-4dfd-8004-f47c5234c426"
+			id="6740779d-df10-4acd-8f10-310aa03a11bf"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='frmB_EXOP']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 8']/cell[@accessiblename='colExop_status Row 8']
+					/form[@controlname='frmB_EXOP']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 7']/cell[@accessiblename='colAdr_nr Row 7']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -306,7 +315,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				V
+				ER03_EXOPV_005N
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -359,6 +368,31 @@ mode="Global">
 				FB03_EXOPV_005N
 			</matchvalue>
 		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b2dbc22f-2a57-4d00-8c80-566c022eea08">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="97d86d99-c9c9-4dfd-8004-f47c5234c426"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXOP']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 8']/cell[@accessiblename='colExop_status Row 8']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				V
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="5a4c68c8-710c-4738-ad0b-11d204b6b604"
@@ -375,7 +409,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren.UserCode.cs
+		B_EXOPS_Status_Belege_nach_Verbuchung_kontrollieren.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

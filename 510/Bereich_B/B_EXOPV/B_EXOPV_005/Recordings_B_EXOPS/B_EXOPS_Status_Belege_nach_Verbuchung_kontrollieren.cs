@@ -24,30 +24,31 @@ namespace B_EXOPV_005.Recordings_B_EXOPS
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren recording.
+    ///The B_EXOPS_Status_Belege_nach_Verbuchung_kontrollieren recording.
     /// </summary>
     [TestModule("3f436bc6-50d1-42fc-bc76-13c3c726a568", ModuleType.Recording, 1)]
-    public partial class B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren : ITestModule
+    public partial class B_EXOPS_Status_Belege_nach_Verbuchung_kontrollieren : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_005.B_EXOPV_005Repository repository.
         /// </summary>
         public static global::B_EXOPV_005.B_EXOPV_005Repository repo = global::B_EXOPV_005.B_EXOPV_005Repository.Instance;
 
-        static B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren instance = new B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren();
+        static B_EXOPS_Status_Belege_nach_Verbuchung_kontrollieren instance = new B_EXOPS_Status_Belege_nach_Verbuchung_kontrollieren();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren()
+        public B_EXOPS_Status_Belege_nach_Verbuchung_kontrollieren()
         {
             LF_01 = "303201";
+            LF_02 = "303202";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren Instance
+        public static B_EXOPS_Status_Belege_nach_Verbuchung_kontrollieren Instance
         {
             get { return instance; }
         }
@@ -64,6 +65,18 @@ namespace B_EXOPV_005.Recordings_B_EXOPS
         {
             get { return _LF_01; }
             set { _LF_01 = value; }
+        }
+
+        string _LF_02;
+
+        /// <summary>
+        /// Gets or sets the value of variable LF_02.
+        /// </summary>
+        [TestVariable("7f5d8d68-bc78-4a54-9c21-594053829b36")]
+        public string LF_02
+        {
+            get { return _LF_02; }
+            set { _LF_02 = value; }
         }
 
 #endregion
@@ -122,14 +135,17 @@ namespace B_EXOPV_005.Recordings_B_EXOPS
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopStatusRow7'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopStatusRow7Info, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopStatusRow7Info, "Text", "V");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColExopStatusRow8'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColExopStatusRow8Info, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColExopStatusRow8Info, "Text", "V");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_02) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColAdrNrRow7'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColAdrNrRow7Info, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColAdrNrRow7Info, "Text", LF_02);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER03_EXOPV_005N') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopBelegnrRow7'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopBelegnrRow7Info, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopBelegnrRow7Info, "Text", "ER03_EXOPV_005N");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB03_EXOPV_005N') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopNrfremdbelegRow7'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopNrfremdbelegRow7Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopNrfremdbelegRow7Info, "Text", "FB03_EXOPV_005N");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColExopStatusRow8'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColExopStatusRow8Info, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColExopStatusRow8Info, "Text", "V");
             
         }
 
