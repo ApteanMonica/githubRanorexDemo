@@ -24,22 +24,22 @@ namespace N_LISTEN_BULI_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The AfA_berechnen_und_ueberleiten recording.
+    ///The AfA_berechnen recording.
     /// </summary>
     [TestModule("de8bcdd4-a249-4004-92ce-4f0d7063ab60", ModuleType.Recording, 1)]
-    public partial class AfA_berechnen_und_ueberleiten : ITestModule
+    public partial class AfA_berechnen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repo = global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository.Instance;
 
-        static AfA_berechnen_und_ueberleiten instance = new AfA_berechnen_und_ueberleiten();
+        static AfA_berechnen instance = new AfA_berechnen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public AfA_berechnen_und_ueberleiten()
+        public AfA_berechnen()
         {
             Beginn_GJ = "01.01.2022";
             Ende_GJ = "31.12.2022";
@@ -50,7 +50,7 @@ namespace N_LISTEN_BULI_001.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static AfA_berechnen_und_ueberleiten Instance
+        public static AfA_berechnen Instance
         {
             get { return instance; }
         }

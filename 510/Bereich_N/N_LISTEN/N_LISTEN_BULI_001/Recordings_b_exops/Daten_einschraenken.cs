@@ -119,6 +119,15 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'N_LISTEN{Tab}' with focus on 'FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1Info, new RecordItemIndex(8));
             repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1.PressKeys("N_LISTEN{Tab}");
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1' at Center.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1Info, new RecordItemIndex(9));
+            repo.FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1' at Center.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1Info, new RecordItemIndex(10));
+            repo.FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1.DoubleClick();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '31.12.2022{Tab}' with focus on 'FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1Info, new RecordItemIndex(11));
+            repo.FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1.PressKeys("31.12.2022{Tab}");
+            
         }
 
 #region Image Feature Data

@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace N_LISTEN_BULI_001.Recordings
 {
-    public partial class Hinweismeldung_bereits_verbucht
+    public partial class Bestaetigungsmeldungen_Ueberleitung
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

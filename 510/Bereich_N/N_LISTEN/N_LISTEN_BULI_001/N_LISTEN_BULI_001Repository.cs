@@ -1614,6 +1614,7 @@ namespace N_LISTEN_BULI_001
             RepoItemInfo _colexopperioderow1Info;
             RepoItemInfo _colexopbusyrow1Info;
             RepoItemInfo _colexopdtherkunftrow1Info;
+            RepoItemInfo _colexopbelegnrrow1Info;
 
             /// <summary>
             /// Creates a new Row1  folder.
@@ -1626,6 +1627,7 @@ namespace N_LISTEN_BULI_001
                 _colexopperioderow1Info = new RepoItemInfo(this, "ColExopPeriodeRow1", "cell[@accessiblename='colExop_periode Row 1']", "", 30000, null, "ed59a1e1-e8cd-4184-b9b5-7891d3a68462");
                 _colexopbusyrow1Info = new RepoItemInfo(this, "ColExopBusyRow1", "cell[@accessiblename='colExop_busy Row 1']", "", 30000, null, "5a63e022-91c5-4b72-a52f-882afb8144d9");
                 _colexopdtherkunftrow1Info = new RepoItemInfo(this, "ColExopDtherkunftRow1", "cell[@accessiblename='colExop_dtherkunft Row 1']", "", 30000, null, "00895487-f676-47f7-8471-785b866c3c65");
+                _colexopbelegnrrow1Info = new RepoItemInfo(this, "ColExopBelegnrRow1", "cell[@accessiblename='colExop_belegnr Row 1']", "", 30000, null, "240fc007-756b-4f44-9913-6d5b7c7eb050");
             }
 
             /// <summary>
@@ -1771,6 +1773,30 @@ namespace N_LISTEN_BULI_001
                     return _colexopdtherkunftrow1Info;
                 }
             }
+
+            /// <summary>
+            /// The ColExopBelegnrRow1 item.
+            /// </summary>
+            [RepositoryItem("240fc007-756b-4f44-9913-6d5b7c7eb050")]
+            public virtual Ranorex.Cell ColExopBelegnrRow1
+            {
+                get
+                {
+                    return _colexopbelegnrrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColExopBelegnrRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("240fc007-756b-4f44-9913-6d5b7c7eb050")]
+            public virtual RepoItemInfo ColExopBelegnrRow1Info
+            {
+                get
+                {
+                    return _colexopbelegnrrow1Info;
+                }
+            }
         }
 
         /// <summary>
@@ -1781,6 +1807,7 @@ namespace N_LISTEN_BULI_001
         {
             N_LISTEN_BULI_001RepositoryFolders.Row1Folder1 _row1;
             RepoItemInfo _titlebar100verwaltenschnittstelleeInfo;
+            RepoItemInfo _belegnummerInfo;
 
             /// <summary>
             /// Creates a new FrmBEXSA  folder.
@@ -1790,6 +1817,7 @@ namespace N_LISTEN_BULI_001
             {
                 _row1 = new N_LISTEN_BULI_001RepositoryFolders.Row1Folder1(this);
                 _titlebar100verwaltenschnittstelleeInfo = new RepoItemInfo(this, "TitleBar100VerwaltenSchnittstelleE", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "bf9026da-2a6d-46e2-9250-0524072897e4");
+                _belegnummerInfo = new RepoItemInfo(this, "Belegnummer", "container[@controlname='ToolBar']/text[@controlname='dfBelegnr']/text[@accessiblename='Belegnummer:']", "", 30000, null, "ec197f0d-a4a4-44a7-aeff-922c88991259");
             }
 
             /// <summary>
@@ -1841,6 +1869,30 @@ namespace N_LISTEN_BULI_001
             }
 
             /// <summary>
+            /// The Belegnummer item.
+            /// </summary>
+            [RepositoryItem("ec197f0d-a4a4-44a7-aeff-922c88991259")]
+            public virtual Ranorex.Text Belegnummer
+            {
+                get
+                {
+                    return _belegnummerInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Belegnummer item info.
+            /// </summary>
+            [RepositoryItemInfo("ec197f0d-a4a4-44a7-aeff-922c88991259")]
+            public virtual RepoItemInfo BelegnummerInfo
+            {
+                get
+                {
+                    return _belegnummerInfo;
+                }
+            }
+
+            /// <summary>
             /// The Row1 folder.
             /// </summary>
             [RepositoryFolder("ba2f8a12-cafb-4f21-a699-030f0e6a10c3")]
@@ -1864,6 +1916,7 @@ namespace N_LISTEN_BULI_001
             RepoItemInfo _colexsaustmvrow1Info;
             RepoItemInfo _colexsaustbetragrow1Info;
             RepoItemInfo _colexsatext1row1Info;
+            RepoItemInfo _colexsabektnr1row1Info;
 
             /// <summary>
             /// Creates a new Row1  folder.
@@ -1879,6 +1932,7 @@ namespace N_LISTEN_BULI_001
                 _colexsaustmvrow1Info = new RepoItemInfo(this, "ColExsaUstmvRow1", "cell[@accessiblename='colExsa_ustmv Row 1']", "", 30000, null, "23f8f8a5-7104-4207-b716-aba985679871");
                 _colexsaustbetragrow1Info = new RepoItemInfo(this, "ColExsaUstbetragRow1", "cell[@accessiblename='colExsa_ustbetrag Row 1']", "", 30000, null, "d10e41c7-cf85-4f6d-a978-1afb3a1d5b24");
                 _colexsatext1row1Info = new RepoItemInfo(this, "ColExsaText1Row1", "cell[@accessiblename='colExsa_text1 Row 1']", "", 30000, null, "8f1c258d-1191-48b7-b320-323441f23687");
+                _colexsabektnr1row1Info = new RepoItemInfo(this, "ColExsaBektNr1Row1", "cell[@accessiblename='colExsa_bekt_nr1 Row 1']", "", 30000, null, "99584d54-12bd-4519-bc47-b79966df3940");
             }
 
             /// <summary>
@@ -2094,6 +2148,30 @@ namespace N_LISTEN_BULI_001
                 get
                 {
                     return _colexsatext1row1Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColExsaBektNr1Row1 item.
+            /// </summary>
+            [RepositoryItem("99584d54-12bd-4519-bc47-b79966df3940")]
+            public virtual Ranorex.Cell ColExsaBektNr1Row1
+            {
+                get
+                {
+                    return _colexsabektnr1row1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColExsaBektNr1Row1 item info.
+            /// </summary>
+            [RepositoryItemInfo("99584d54-12bd-4519-bc47-b79966df3940")]
+            public virtual RepoItemInfo ColExsaBektNr1Row1Info
+            {
+                get
+                {
+                    return _colexsabektnr1row1Info;
                 }
             }
         }

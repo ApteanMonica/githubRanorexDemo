@@ -24,22 +24,22 @@ namespace N_LISTEN_BULI_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The AVZ_Ueberleitung recording.
+    ///The FIBU_Ueberleitung recording.
     /// </summary>
     [TestModule("2a2bec47-aca7-4c5f-a992-a09c20d8764c", ModuleType.Recording, 1)]
-    public partial class AVZ_Ueberleitung : ITestModule
+    public partial class FIBU_Ueberleitung : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repo = global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository.Instance;
 
-        static AVZ_Ueberleitung instance = new AVZ_Ueberleitung();
+        static FIBU_Ueberleitung instance = new FIBU_Ueberleitung();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public AVZ_Ueberleitung()
+        public FIBU_Ueberleitung()
         {
             Belegnummer_Ueberleitung = "BULI_001_A";
             Belegdatum_Ueberleitung = "31.12.2022";
@@ -49,7 +49,7 @@ namespace N_LISTEN_BULI_001.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static AVZ_Ueberleitung Instance
+        public static FIBU_Ueberleitung Instance
         {
             get { return instance; }
         }

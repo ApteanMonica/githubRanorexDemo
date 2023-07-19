@@ -101,6 +101,9 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='N_LISTEN') on item 'FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1Info, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1Info, "Text", "N_LISTEN");
             
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='yourValue') on item 'FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1Info, "Text", "yourValue");
+            
         }
 
 #region Image Feature Data

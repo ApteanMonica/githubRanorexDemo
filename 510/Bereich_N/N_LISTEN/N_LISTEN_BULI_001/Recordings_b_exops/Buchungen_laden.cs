@@ -41,6 +41,7 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
         /// </summary>
         public Buchungen_laden()
         {
+            Tagesdatum = "";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
         }
 
 #region Variables
+
+        string _Tagesdatum;
+
+        /// <summary>
+        /// Gets or sets the value of variable Tagesdatum.
+        /// </summary>
+        [TestVariable("2edfc64a-4a2b-44b9-a1f3-7f8cfd6e9687")]
+        public string Tagesdatum
+        {
+            get { return _Tagesdatum; }
+            set { _Tagesdatum = value; }
+        }
 
 #endregion
 
@@ -96,6 +109,24 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  Verwalten Schnittstelle EXSA') on item 'FrmBEXSA.TitleBar100VerwaltenSchnittstelleE'.", repo.FrmBEXSA.TitleBar100VerwaltenSchnittstelleEInfo, new RecordItemIndex(5));
             Validate.AttributeContains(repo.FrmBEXSA.TitleBar100VerwaltenSchnittstelleEInfo, "Text", "[100]  Verwalten Schnittstelle EXSA");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'FrmBEXOP.Row1.ColExopDtherkunftRow1'.", repo.FrmBEXOP.Row1.ColExopDtherkunftRow1Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmBEXOP.Row1.ColExopDtherkunftRow1Info, "Text", Tagesdatum);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='U') on item 'FrmBEXOP.Row1.ColExopArtRow1'.", repo.FrmBEXOP.Row1.ColExopArtRow1Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.FrmBEXOP.Row1.ColExopArtRow1Info, "Text", "U");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='SA') on item 'FrmBEXOP.Row1.ColExopBusyRow1'.", repo.FrmBEXOP.Row1.ColExopBusyRow1Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.FrmBEXOP.Row1.ColExopBusyRow1Info, "Text", "SA");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2022') on item 'FrmBEXOP.Row1.ColExopJahrRow1'.", repo.FrmBEXOP.Row1.ColExopJahrRow1Info, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmBEXOP.Row1.ColExopJahrRow1Info, "Text", "2022");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='12') on item 'FrmBEXOP.Row1.ColExopPeriodeRow1'.", repo.FrmBEXOP.Row1.ColExopPeriodeRow1Info, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.FrmBEXOP.Row1.ColExopPeriodeRow1Info, "Text", "12");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='BULI_001_A') on item 'FrmBEXOP.Row1.ColExopBelegnrRow1'.", repo.FrmBEXOP.Row1.ColExopBelegnrRow1Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.FrmBEXOP.Row1.ColExopBelegnrRow1Info, "Text", "BULI_001_A");
             
         }
 

@@ -3,12 +3,6 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
-			id="020b2e4d-a53e-4fa1-a710-3b585be16f21"
-			name="Hinweismeldung_bereits_verbucht"
-			ref="c13f7286-6c5d-4afb-96ac-492e3731bb25"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="0aafff3c-aadc-4f76-9a33-99edf3e79fdf"
 			name="Hinweismeldung_Ueberleiten"
 			ref="d432de5d-66d9-43c3-b2ef-8fdb9827d171"
@@ -43,6 +37,12 @@
 			<testcase
 			id="10f3f504-933d-4d2e-877a-6c4a5829ba53"
 			name="Schnittstelle_B_EXOPS">
+				<parameters>
+					<param
+					name="Tagesdatum"
+					value="">
+					</param>
+				</parameters>
 			</testcase>
 			<testmodule
 			id="12a8ebf1-4f28-41f1-bb2e-46143312c40e"
@@ -68,34 +68,8 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="36285ea6-c512-40ed-84c5-7ce55b2684ef"
-			name="Versuch_nochmalige_Ueberleitung"
-			ref="a7e783a5-2033-4695-991d-5c9edba779f4"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Belegnummer_Ueberleitung"
-					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
-					variableid="d58d6872-e365-4653-b3b2-20e189291331"
-					variablename="Belegnummer_Ueberleitung">
-					</var>
-					<var
-					dataname="Belegdatum_Ueberleitung"
-					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
-					variableid="8f3b81aa-4d7e-41cb-8cdd-a11530d6de4f"
-					variablename="Belegdatum_Ueberleitung">
-					</var>
-					<var
-					dataname="Ust_Code_Ueberleitung"
-					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
-					variableid="5d4a1061-7c83-47d4-97e3-1977a55afcfd"
-					variablename="Ust_Code_Ueberleitung">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="38afbd31-b39f-4e76-a8a0-64dd3a9a1015"
-			name="AfA_berechnen_und_ueberleiten"
+			name="AfA_berechnen"
 			ref="de8bcdd4-a249-4004-92ce-4f0d7063ab60"
 			type="Recording">
 				<databinding>
@@ -175,7 +149,7 @@
 			</testsuite>
 			<testmodule
 			id="57d14254-fb8e-49b6-b2ae-17d75bce2da3"
-			name="Bestaetigungsmeldung"
+			name="Bestaetigungsmeldungen_Ueberleitung"
 			ref="f1e670fd-616c-4686-929b-5866c287de87"
 			type="Recording">
 			</testmodule>
@@ -235,7 +209,7 @@
 			</testmodule>
 			<testmodule
 			id="7e318368-e68f-4e4b-84b7-11f50a32937d"
-			name="AVZ_Ueberleitung"
+			name="FIBU_Ueberleitung"
 			ref="2a2bec47-aca7-4c5f-a992-a09c20d8764c"
 			type="Recording">
 				<databinding>
@@ -260,34 +234,8 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="80d78163-85bf-4ae3-9f81-cdd5cf38e13a"
-			name="Eingabe_Ueberleitungsmaske"
-			ref="8e719a0b-e7bc-4407-a4da-797dea3e498e"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Belegnummer_Ueberleitung"
-					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
-					variableid="79acc207-6238-4e52-b748-b92e72e04dfa"
-					variablename="Belegnummer_Ueberleitung">
-					</var>
-					<var
-					dataname="Belegdatum_Ueberleitung"
-					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
-					variableid="7d5381db-5b43-4040-a4a0-96d758ac933e"
-					variablename="Belegdatum_Ueberleitung">
-					</var>
-					<var
-					dataname="Ust_Code_Ueberleitung"
-					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
-					variableid="90a8f7ef-2375-4e0b-ba15-cfca26ced8cc"
-					variablename="Ust_Code_Ueberleitung">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="a2d47d9c-807b-461e-81b6-a98b54f48676"
-			name="Berechnung_Jahresbetraege_AfA"
+			name="Nicht_UEberleitung_einzelner_Anlagen"
 			ref="71d7868f-4549-444e-8b35-666e0fb1d5c2"
 			type="Recording">
 				<databinding>
@@ -492,6 +440,14 @@
 			name="Buchungen_laden"
 			ref="b114639a-f6a7-4ac6-8443-ba25f10c9bd5"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="10f3f504-933d-4d2e-877a-6c4a5829ba53"
+					variableid="2edfc64a-4a2b-44b9-a1f3-7f8cfd6e9687"
+					variablename="Tagesdatum">
+					</var>
+				</databinding>
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -514,7 +470,7 @@
 						</setup>
 						<testmodule
 						id="38afbd31-b39f-4e76-a8a0-64dd3a9a1015"
-						name="AfA_berechnen_und_ueberleiten">
+						name="AfA_berechnen">
 						</testmodule>
 						<testmodule
 						id="c8f30a91-62a6-419e-b51f-8d6b3b82f86e"
@@ -526,7 +482,7 @@
 						</testmodule>
 						<testmodule
 						id="a2d47d9c-807b-461e-81b6-a98b54f48676"
-						name="Berechnung_Jahresbetraege_AfA">
+						name="Nicht_UEberleitung_einzelner_Anlagen">
 						</testmodule>
 						<testmodule
 						id="abd4dcaf-8d5d-43d7-8ba9-d18e2a51b40b"
@@ -538,7 +494,7 @@
 						</testmodule>
 						<testmodule
 						id="7e318368-e68f-4e4b-84b7-11f50a32937d"
-						name="AVZ_Ueberleitung">
+						name="FIBU_Ueberleitung">
 						</testmodule>
 						<testmodule
 						id="12a8ebf1-4f28-41f1-bb2e-46143312c40e"
@@ -546,19 +502,7 @@
 						</testmodule>
 						<testmodule
 						id="57d14254-fb8e-49b6-b2ae-17d75bce2da3"
-						name="Bestaetigungsmeldung">
-						</testmodule>
-						<testmodule
-						id="36285ea6-c512-40ed-84c5-7ce55b2684ef"
-						name="Versuch_nochmalige_Ueberleitung">
-						</testmodule>
-						<testmodule
-						id="80d78163-85bf-4ae3-9f81-cdd5cf38e13a"
-						name="Eingabe_Ueberleitungsmaske">
-						</testmodule>
-						<testmodule
-						id="020b2e4d-a53e-4fa1-a710-3b585be16f21"
-						name="Hinweismeldung_bereits_verbucht">
+						name="Bestaetigungsmeldungen_Ueberleitung">
 						</testmodule>
 						<teardown
 						id="af938ef0-2e2c-4f94-b0f5-15fe0f9ccc3b"

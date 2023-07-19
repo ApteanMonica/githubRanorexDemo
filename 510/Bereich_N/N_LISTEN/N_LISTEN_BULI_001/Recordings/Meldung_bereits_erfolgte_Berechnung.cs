@@ -91,18 +91,6 @@ namespace N_LISTEN_BULI_001.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBuchungsliste.FlexGrid.ColTypRow2'", repo.FrmBuchungsliste.FlexGrid.ColTypRow2Info, new ActionTimeout(120000), new RecordItemIndex(3));
             repo.FrmBuchungsliste.FlexGrid.ColTypRow2Info.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbUEberleitungFibu' at Center.", repo.FrmBuchungsliste.PbUEberleitungFibuInfo, new RecordItemIndex(4));
-            repo.FrmBuchungsliste.PbUEberleitungFibu.Click();
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(120000), new RecordItemIndex(5));
-            repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es kann keine monatliche Fibu-Überleitung durchgeführt\r\nwerden, wenn nicht alle Anlagen verwendet werden !') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es kann keine monatliche Fibu-Überleitung durchgeführt\r\nwerden, wenn nicht alle Anlagen verwendet werden !");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(7));
-            repo.DlgMessageBox.Button0.Click();
-            
         }
 
 #region Image Feature Data

@@ -25,11 +25,75 @@ mode="Global">
 	<variables>
 	</variables>
 	<recorditems>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="21da80f5-425f-412f-9958-9cc39fb169fa">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ec197f0d-a4a4-44a7-aeff-922c88991259"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="2194,108,101,17"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						BULI_001_A
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Belegnummer:
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Text
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						ReadOnly, Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						BULI_001_A
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmB_EXSA']/container[@controlname='ToolBar']/text[@controlname='dfBelegnr']/text[@accessiblename='Belegnummer:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				BULI_001_A
+			</matchvalue>
+		</validationitem>
 		<separatoritem
 		enabled="True"
 		optional="False">
 			<comment>
-				Überprüfung Zeile 3
+				Überprüfung Zeile 1
 			</comment>
 			<bindings>
 			</bindings>
@@ -159,15 +223,448 @@ mode="Global">
 				0
 			</matchvalue>
 		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="8c7b84f0-cc68-4b62-8833-5e652d3e6c4c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="23f8f8a5-7104-4207-b716-aba985679871"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_ustmv Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				V
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="d89d418e-0642-43a9-a6e0-131362ae52f7">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d10e41c7-cf85-4f6d-a978-1afb3a1d5b24"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_ustbetrag Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				0,00
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="fe1e22f7-47ec-4caf-a2b9-21174d7308bc">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8f1c258d-1191-48b7-b320-323441f23687"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_text1 Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				AfA
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="2ab09538-8749-4694-819c-b5b3dec91332">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="99584d54-12bd-4519-bc47-b79966df3940"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="20"
+				prefcap="cell"
+				rect="3097,229,80,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						10
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colExsa_bekt_nr1 Row 1
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						10
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_bekt_nr1 Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				10
+			</matchvalue>
+		</validationitem>
 		<separatoritem
 		enabled="True"
 		optional="False">
 			<comment>
-				Überprüfung Zeile 4
+				Zeile 2
 			</comment>
 			<bindings>
 			</bindings>
 		</separatoritem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="4fe1410b-4cb0-4ce6-a6c3-0bbe9e80bc0a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bfcbc04d-e013-46a8-beea-bb4ba6b09c97"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_ktonr Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				0660
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="315baab7-ab56-4567-8cc3-2ea926402008">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d9863874-b6bd-43d3-849a-36e93a73327e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_sh Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				S
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="2242d293-2554-46b0-8055-8bb80bd75448">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d6ca004f-5906-49eb-ba36-a2a18d7da211"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_betrag Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				208,33
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="6fbf0cbb-a501-43b2-82f1-11660fc8c362">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="65bdc4ec-8602-476e-8f6b-738cebd4c542"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colUst_cd Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				V00
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="4642acf1-1b21-4efc-bb6e-59ca7adc2124">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2db265db-45a4-4a00-b85f-18d9012aaeae"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_ustsatz Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				0
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="8c7b84f0-cc68-4b62-8833-5e652d3e6c4c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="23f8f8a5-7104-4207-b716-aba985679871"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_ustmv Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				V
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="d89d418e-0642-43a9-a6e0-131362ae52f7">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d10e41c7-cf85-4f6d-a978-1afb3a1d5b24"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_ustbetrag Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				0,00
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="fe1e22f7-47ec-4caf-a2b9-21174d7308bc">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8f1c258d-1191-48b7-b320-323441f23687"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_text1 Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				AfA
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="2ab09538-8749-4694-819c-b5b3dec91332">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="99584d54-12bd-4519-bc47-b79966df3940"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="20"
+				prefcap="cell"
+				rect="3097,229,80,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						10
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colExsa_bekt_nr1 Row 1
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						10
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_bekt_nr1 Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				10
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="a571684b-1718-4382-85f0-a148dbf2b821"
