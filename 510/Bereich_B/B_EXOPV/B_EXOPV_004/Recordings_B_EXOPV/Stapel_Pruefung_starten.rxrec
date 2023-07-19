@@ -143,52 +143,6 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="580ef724-bbb8-415b-9ed4-5c5eb72c6d78"
-		waitaction="Exists"
-		waittimeout="60000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="99b12b8f-9b1f-4f94-badc-d50fb63b9e42"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
-		<validationitem
-		action="AttributeContains"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		searchpropertyid="8ba2f7a0-eb9a-4e6d-98ac-b8440f913547">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="5ce71343-fffa-4255-9fc0-c5ddc3eac870"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				Prüfen Buchungsperiode
-			</matchvalue>
-		</validationitem>
 	</recorditems>
 	<repository
 	id="97f67057-ca21-4199-ac02-38c60f65a0ce"
@@ -205,7 +159,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Stapel_validieren_Pruefung_starten.UserCode.cs
+		Stapel_Pruefung_starten.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

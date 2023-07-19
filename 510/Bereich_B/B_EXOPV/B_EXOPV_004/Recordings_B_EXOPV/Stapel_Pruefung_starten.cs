@@ -117,12 +117,6 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100ExterneBuchungenVerbuchen.PbCommonPruefen' at Center.", repo.Form100ExterneBuchungenVerbuchen.PbCommonPruefenInfo, new RecordItemIndex(4));
             repo.Form100ExterneBuchungenVerbuchen.PbCommonPruefen.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(60000), new RecordItemIndex(5));
-            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(60000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Prüfen Buchungsperiode') on item 'DlgMessageBox.FakturenPruefung'.", repo.DlgMessageBox.FakturenPruefungInfo, new RecordItemIndex(6));
-            Validate.AttributeContains(repo.DlgMessageBox.FakturenPruefungInfo, "Text", "Prüfen Buchungsperiode");
-            
         }
 
 #region Image Feature Data

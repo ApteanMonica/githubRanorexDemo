@@ -188,6 +188,7 @@ namespace B_EXOPV_004
             B_EXOPV_004RepositoryFolders.Tabelle_fixe_ZeilennummernFolder _tabelle_fixe_zeilennummern;
             B_EXOPV_004RepositoryFolders.Tabelle_ZeilenFolder _tabelle_zeilen;
             RepoItemInfo _titlebar100externebuchungenverbucheInfo;
+            RepoItemInfo _pbcommonladenInfo;
             RepoItemInfo _pbcommonpruefenInfo;
             RepoItemInfo _pbcommonverbuchenInfo;
             RepoItemInfo _pboptionenoptionenInfo;
@@ -203,6 +204,7 @@ namespace B_EXOPV_004
                 _tabelle_fixe_zeilennummern = new B_EXOPV_004RepositoryFolders.Tabelle_fixe_ZeilennummernFolder(this);
                 _tabelle_zeilen = new B_EXOPV_004RepositoryFolders.Tabelle_ZeilenFolder(this);
                 _titlebar100externebuchungenverbucheInfo = new RepoItemInfo(this, "TitleBar100ExterneBuchungenVerbuche", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "ff9ccb21-1bc6-457e-93d5-220d2c09d96a");
+                _pbcommonladenInfo = new RepoItemInfo(this, "PbCommonLaden", "container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup1']/button[@controlname='pbCommon_Laden']", "", 30000, null, "f8284fe3-3395-40d8-afd9-80da27af9d08");
                 _pbcommonpruefenInfo = new RepoItemInfo(this, "PbCommonPruefen", "container[@controlname='RibbonBar']/container[@controlname='OptionenGroup']/button[@controlname='pbCommon_Prüfen']", "", 30000, null, "130efb4e-0b1b-44f8-81ff-f181022c3c16");
                 _pbcommonverbuchenInfo = new RepoItemInfo(this, "PbCommonVerbuchen", "container[@controlname='RibbonBar']/container[@controlname='OptionenGroup']/button[@controlname='pbCommon_Verbuchen']", "", 30000, null, "f37b4bd5-d05c-40b0-a748-2d638cb57cb0");
                 _pboptionenoptionenInfo = new RepoItemInfo(this, "PbOptionenOptionen", "container[@controlname='RibbonBar']/container[@controlname='OptionenGroup']/button[@controlname='pbOptionen_Optionen']", "", 30000, null, "2efd01bb-abd5-4aa5-becb-7801141b09b3");
@@ -255,6 +257,30 @@ namespace B_EXOPV_004
                 get
                 {
                     return _titlebar100externebuchungenverbucheInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbCommonLaden item.
+            /// </summary>
+            [RepositoryItem("f8284fe3-3395-40d8-afd9-80da27af9d08")]
+            public virtual Ranorex.Button PbCommonLaden
+            {
+                get
+                {
+                    return _pbcommonladenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbCommonLaden item info.
+            /// </summary>
+            [RepositoryItemInfo("f8284fe3-3395-40d8-afd9-80da27af9d08")]
+            public virtual RepoItemInfo PbCommonLadenInfo
+            {
+                get
+                {
+                    return _pbcommonladenInfo;
                 }
             }
 
@@ -7634,8 +7660,8 @@ namespace B_EXOPV_004
         {
             RepoItemInfo _titlebar100uvadatumInfo;
             RepoItemInfo _dftextInfo;
-            RepoItemInfo _textInfo;
-            RepoItemInfo _text1Info;
+            RepoItemInfo _jahr_vorschlagInfo;
+            RepoItemInfo _monat_vorschlagInfo;
             RepoItemInfo _pbverwendenInfo;
             RepoItemInfo _pbnichtverwendenInfo;
             RepoItemInfo _pbkomplettabbrechenInfo;
@@ -7648,8 +7674,8 @@ namespace B_EXOPV_004
             {
                 _titlebar100uvadatumInfo = new RepoItemInfo(this, "TitleBar100UVADatum", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "7e217989-8cf0-4a4b-86dd-50f550aeeea3");
                 _dftextInfo = new RepoItemInfo(this, "DfText", "text[@controlname='dfText']", "", 30000, null, "d50bfa81-b71d-4506-8b0a-71e1f2e27b06");
-                _textInfo = new RepoItemInfo(this, "Text", "text[@controlname='dfJahr']/text[@accessiblerole='Text']", "", 30000, null, "d290e596-ff18-4e65-8214-7aa16a8803ce");
-                _text1Info = new RepoItemInfo(this, "Text1", "text[@controlname='dfMonat']/text[@accessiblerole='Text']", "", 30000, null, "ef2a0652-bbb7-4326-b3d2-b39600de6158");
+                _jahr_vorschlagInfo = new RepoItemInfo(this, "Jahr_Vorschlag", "text[@controlname='dfJahr']/text[@accessiblerole='Text']", "", 30000, null, "d290e596-ff18-4e65-8214-7aa16a8803ce");
+                _monat_vorschlagInfo = new RepoItemInfo(this, "Monat_Vorschlag", "text[@controlname='dfMonat']/text[@accessiblerole='Text']", "", 30000, null, "ef2a0652-bbb7-4326-b3d2-b39600de6158");
                 _pbverwendenInfo = new RepoItemInfo(this, "PbVerwenden", "button[@controlname='pbVerwenden']", "", 30000, null, "d3db2c20-7f7e-4320-b54e-87b4719600cd");
                 _pbnichtverwendenInfo = new RepoItemInfo(this, "PbNichtverwenden", "button[@controlname='pbNichtverwenden']", "", 30000, null, "c723c706-2032-432a-996c-6abbc1f41cbe");
                 _pbkomplettabbrechenInfo = new RepoItemInfo(this, "PbKomplettAbbrechen", "button[@controlname='pbKomplett_abbrechen']", "", 30000, null, "78409696-cc6a-41d9-b39d-f160a8ea124e");
@@ -7728,50 +7754,50 @@ namespace B_EXOPV_004
             }
 
             /// <summary>
-            /// The Text item.
+            /// The Jahr_Vorschlag item.
             /// </summary>
             [RepositoryItem("d290e596-ff18-4e65-8214-7aa16a8803ce")]
-            public virtual Ranorex.Text Text
+            public virtual Ranorex.Text Jahr_Vorschlag
             {
                 get
                 {
-                    return _textInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _jahr_vorschlagInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The Text item info.
+            /// The Jahr_Vorschlag item info.
             /// </summary>
             [RepositoryItemInfo("d290e596-ff18-4e65-8214-7aa16a8803ce")]
-            public virtual RepoItemInfo TextInfo
+            public virtual RepoItemInfo Jahr_VorschlagInfo
             {
                 get
                 {
-                    return _textInfo;
+                    return _jahr_vorschlagInfo;
                 }
             }
 
             /// <summary>
-            /// The Text1 item.
+            /// The Monat_Vorschlag item.
             /// </summary>
             [RepositoryItem("ef2a0652-bbb7-4326-b3d2-b39600de6158")]
-            public virtual Ranorex.Text Text1
+            public virtual Ranorex.Text Monat_Vorschlag
             {
                 get
                 {
-                    return _text1Info.CreateAdapter<Ranorex.Text>(true);
+                    return _monat_vorschlagInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The Text1 item info.
+            /// The Monat_Vorschlag item info.
             /// </summary>
             [RepositoryItemInfo("ef2a0652-bbb7-4326-b3d2-b39600de6158")]
-            public virtual RepoItemInfo Text1Info
+            public virtual RepoItemInfo Monat_VorschlagInfo
             {
                 get
                 {
-                    return _text1Info;
+                    return _monat_vorschlagInfo;
                 }
             }
 
