@@ -117,8 +117,8 @@ namespace Z_SUM_001.Recording
             repo.FrmMain.Einschraenkungen.Df_Dt_Bis_Version_521_510_angepasst.PressKeys("28.02.2022");
             
             // Zeitraum bis geändert von 28.02.2022 auf 06.02 um zu sehen ob der Testfall dann in der Nacht ohne Fehler durchläuft./Dementsprechend wird auch nur die Erste Woche überpürft rest wird ausgeblendet!
-            Report.Log(ReportLevel.Info, "Validation", "Zeitraum bis geändert von 28.02.2022 auf 06.02 um zu sehen ob der Testfall dann in der Nacht ohne Fehler durchläuft./Dementsprechend wird auch nur die Erste Woche überpürft rest wird ausgeblendet!\r\nValidating AttributeEqual (Text='06.02.2022') on item 'FrmMain.Einschraenkungen.Df_Dt_Bis_Version_521_510_angepasst'.", repo.FrmMain.Einschraenkungen.Df_Dt_Bis_Version_521_510_angepasstInfo, new RecordItemIndex(12));
-            Validate.AttributeEqual(repo.FrmMain.Einschraenkungen.Df_Dt_Bis_Version_521_510_angepasstInfo, "Text", "06.02.2022");
+            Report.Log(ReportLevel.Info, "Validation", "Zeitraum bis geändert von 28.02.2022 auf 06.02 um zu sehen ob der Testfall dann in der Nacht ohne Fehler durchläuft./Dementsprechend wird auch nur die Erste Woche überpürft rest wird ausgeblendet!\r\nValidating AttributeEqual (Text='28.02.2022') on item 'FrmMain.Einschraenkungen.Df_Dt_Bis_Version_521_510_angepasst'.", repo.FrmMain.Einschraenkungen.Df_Dt_Bis_Version_521_510_angepasstInfo, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.FrmMain.Einschraenkungen.Df_Dt_Bis_Version_521_510_angepasstInfo, "Text", "28.02.2022");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);

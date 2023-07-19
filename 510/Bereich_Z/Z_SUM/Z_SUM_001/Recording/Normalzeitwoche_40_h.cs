@@ -183,31 +183,34 @@ namespace Z_SUM_001.Recording
 
             Init();
 
-            // Zeile 1
-            Report.Log(ReportLevel.Info, "Section", "Zeile 1", new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmMain.Flexgrid_Tabelle.Row1.Row1Column0'", repo.FrmMain.Flexgrid_Tabelle.Row1.Row1Column0Info, new ActionTimeout(120000), new RecordItemIndex(0));
+            repo.FrmMain.Flexgrid_Tabelle.Row1.Row1Column0Info.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Datum_Woche_1) on item 'FrmMain.Flexgrid_Tabelle.Row1.ColKaldDatum'.", repo.FrmMain.Flexgrid_Tabelle.Row1.ColKaldDatumInfo, new RecordItemIndex(1));
+            // Zeile 1
+            Report.Log(ReportLevel.Info, "Section", "Zeile 1", new RecordItemIndex(1));
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Datum_Woche_1) on item 'FrmMain.Flexgrid_Tabelle.Row1.ColKaldDatum'.", repo.FrmMain.Flexgrid_Tabelle.Row1.ColKaldDatumInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.FrmMain.Flexgrid_Tabelle.Row1.ColKaldDatumInfo, "Text", Datum_Woche_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Zeittyp) on item 'FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol13Row1'.", repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol13Row1Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Zeittyp) on item 'FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol13Row1'.", repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol13Row1Info, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol13Row1Info, "Text", Zeittyp);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beginn_Woche_1) on item 'FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol7Row1'.", repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol7Row1Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beginn_Woche_1) on item 'FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol7Row1'.", repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol7Row1Info, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol7Row1Info, "Text", Beginn_Woche_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ende_Woche_1) on item 'FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol8Row1'.", repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol8Row1Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ende_Woche_1) on item 'FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol8Row1'.", repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol8Row1Info, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol8Row1Info, "Text", Ende_Woche_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ist_Zeit) on item 'FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol1Row1'.", repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol1Row1Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ist_Zeit) on item 'FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol1Row1'.", repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol1Row1Info, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol1Row1Info, "Text", Ist_Zeit);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Pause) on item 'FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol2Row1'.", repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol2Row1Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Pause) on item 'FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol2Row1'.", repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol2Row1Info, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol2Row1Info, "Text", Pause);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$bew_Zeit_Woche_1) on item 'FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol3Row1'.", repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol3Row1Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$bew_Zeit_Woche_1) on item 'FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol3Row1'.", repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol3Row1Info, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol3Row1Info, "Text", bew_Zeit_Woche_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Sollzeit) on item 'FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol4Row1'.", repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol4Row1Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Sollzeit) on item 'FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol4Row1'.", repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol4Row1Info, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.FrmMain.Flexgrid_Tabelle.Row1.CellTmpCol4Row1Info, "Text", Sollzeit);
             
         }

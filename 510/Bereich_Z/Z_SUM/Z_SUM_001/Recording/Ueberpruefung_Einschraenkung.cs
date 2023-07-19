@@ -89,8 +89,8 @@ namespace Z_SUM_001.Recording
             Validate.AttributeEqual(repo.DlgTimeCalc.TextInfo, "Text", "01.02.2022");
             
             // geändert von 28.02.2022 auf 06.02.2022
-            Report.Log(ReportLevel.Info, "Validation", "geändert von 28.02.2022 auf 06.02.2022\r\nValidating AttributeEqual (Text='06.02.2022') on item 'DlgTimeCalc.Text1'.", repo.DlgTimeCalc.Text1Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.DlgTimeCalc.Text1Info, "Text", "06.02.2022");
+            Report.Log(ReportLevel.Info, "Validation", "geändert von 28.02.2022 auf 06.02.2022\r\nValidating AttributeEqual (Text='28.02.2022') on item 'DlgTimeCalc.Text1'.", repo.DlgTimeCalc.Text1Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.DlgTimeCalc.Text1Info, "Text", "28.02.2022");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgTimeCalc.CbZk'.", repo.DlgTimeCalc.CbZkInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.DlgTimeCalc.CbZkInfo, "Checked", "True");

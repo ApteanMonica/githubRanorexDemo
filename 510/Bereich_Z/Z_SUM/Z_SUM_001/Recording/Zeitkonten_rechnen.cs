@@ -109,9 +109,9 @@ namespace Z_SUM_001.Recording
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            // geändert von 28.02.2022 auf 06.02.2022
-            Report.Log(ReportLevel.Info, "Keyboard", "geändert von 28.02.2022 auf 06.02.2022\r\nKey sequence '06.02.2022' with focus on 'DlgTimeCalc.DfPeriodTo'.", repo.DlgTimeCalc.DfPeriodToInfo, new RecordItemIndex(10));
-            repo.DlgTimeCalc.DfPeriodTo.PressKeys("06.02.2022");
+            // zurück geändert von 06.02.2022 auf 28.02.2022
+            Report.Log(ReportLevel.Info, "Keyboard", "zurück geändert von 06.02.2022 auf 28.02.2022\r\nKey sequence '28.02.2022' with focus on 'DlgTimeCalc.DfPeriodTo'.", repo.DlgTimeCalc.DfPeriodToInfo, new RecordItemIndex(10));
+            repo.DlgTimeCalc.DfPeriodTo.PressKeys("28.02.2022");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgTimeCalc.CbZk1_511_521' at Center.", repo.DlgTimeCalc.CbZk1_511_521Info, new RecordItemIndex(11));
             repo.DlgTimeCalc.CbZk1_511_521.Click();
