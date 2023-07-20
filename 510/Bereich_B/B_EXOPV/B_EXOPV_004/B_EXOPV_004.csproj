@@ -79,6 +79,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\..\Testdaten\Allgemein\UserCode\aptean.cs">
+      <Link>aptean.cs</Link>
+      <id>55293033-fb0b-4f23-a1a8-f2b69590bf75</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>a5445076-2d5c-4615-8191-7d4da393c74d</id>
     </Compile>
@@ -90,6 +94,42 @@
     </Compile>
     <Compile Include="Program.cs">
       <id>1cd01d2c-14ac-4239-8f71-ac86d99c5f86</id>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\B_BUAB_Einschraenkungen_Buchungen_laden.cs">
+      <DependentUpon>B_BUAB_Einschraenkungen_Buchungen_laden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9d23480e-f70a-4e31-be10-652069e8dbb1</id>
+      <BoundTo>a14c1618-262d-49f2-a586-bc53ba84b218</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\B_BUAB_Einschraenkungen_Buchungen_laden.UserCode.cs">
+      <DependentUpon>B_BUAB_Einschraenkungen_Buchungen_laden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>737a7b63-ae4e-40e6-96ad-b5778b33012e</id>
+      <BoundTo>a14c1618-262d-49f2-a586-bc53ba84b218</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\B_BUAB_verbuchte_Belege_pruefen.cs">
+      <DependentUpon>B_BUAB_verbuchte_Belege_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>205eeba2-ecd5-4116-9a4c-5ab027900d8f</id>
+      <BoundTo>d3dbc5de-0b78-4e07-aff1-24d0ad859a9a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\B_BUAB_verbuchte_Belege_pruefen.UserCode.cs">
+      <DependentUpon>B_BUAB_verbuchte_Belege_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7c534bd3-f443-4850-abc1-d91e8d9e791a</id>
+      <BoundTo>d3dbc5de-0b78-4e07-aff1-24d0ad859a9a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\B_BUAB_Tagesdatum_Tagesdatum2_valdieren_Usercode.cs">
+      <DependentUpon>B_BUAB_Tagesdatum_Tagesdatum2_valdieren_Usercode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dd0ffb63-c179-4186-8667-1efc3ae4543a</id>
+      <BoundTo>8cc10ff3-baea-45c7-8fa7-0bffdb525dcd</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_BUAB\B_BUAB_Tagesdatum_Tagesdatum2_valdieren_Usercode.UserCode.cs">
+      <DependentUpon>B_BUAB_Tagesdatum_Tagesdatum2_valdieren_Usercode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>560a4d3c-6ba3-4b16-bd01-5de6322ec7eb</id>
+      <BoundTo>8cc10ff3-baea-45c7-8fa7-0bffdb525dcd</BoundTo>
     </Compile>
     <Compile Include="Recordings_B_BUAB\Close_B_BUAB.cs">
       <DependentUpon>Close_B_BUAB.rxrec</DependentUpon>
@@ -198,6 +238,18 @@
       <id>b32753bb-1a61-4b8e-bdd9-153afaad1e7e</id>
       <BoundTo>17c3ac7d-609d-4ee0-b89b-e56ee6141425</BoundTo>
       <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\Statuskontrolle_nach_Verbuchung.cs">
+      <DependentUpon>Statuskontrolle_nach_Verbuchung.rxrec</DependentUpon>
+      <id>3ed50562-4e5a-451d-98ca-e2989eab5ee1</id>
+      <RecorderCode>true</RecorderCode>
+      <BoundTo>d5d1f735-f5fb-49d1-85ee-09a42e97ca5c</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPS\Statuskontrolle_nach_Verbuchung.UserCode.cs">
+      <DependentUpon>Statuskontrolle_nach_Verbuchung.rxrec</DependentUpon>
+      <id>04826e72-9f1b-4ae7-a732-301d6d1fb20c</id>
+      <UserCode>true</UserCode>
+      <BoundTo>d5d1f735-f5fb-49d1-85ee-09a42e97ca5c</BoundTo>
     </Compile>
     <Compile Include="Recordings_B_EXOPV\CloseAUT.cs">
       <DependentUpon>CloseAUT.rxrec</DependentUpon>
@@ -403,6 +455,18 @@
       <BoundTo>a275dacd-38ec-488a-856b-2410339240f8</BoundTo>
       <UserCode>true</UserCode>
     </Compile>
+    <Compile Include="Recordings_B_EXOPV\Tagesdatum_ermitteln.cs">
+      <BoundTo>bcf0ea79-89cd-4e6f-802a-e780ac0f1872</BoundTo>
+      <DependentUpon>Tagesdatum_ermitteln.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>501bc868-e3d2-436e-a070-51770b4fe291</id>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Tagesdatum_ermitteln.UserCode.cs">
+      <BoundTo>bcf0ea79-89cd-4e6f-802a-e780ac0f1872</BoundTo>
+      <DependentUpon>Tagesdatum_ermitteln.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e084cedc-50fa-46d6-b308-82bee0342fac</id>
+    </Compile>
     <Compile Include="Recordings_B_EXOPV\Verbuchen_Protokolldatei_pruefen.cs">
       <BoundTo>b9a1f2ce-40d1-4721-8dff-e84dce0c1081</BoundTo>
       <DependentUpon>Verbuchen_Protokolldatei_pruefen.rxrec</DependentUpon>
@@ -430,6 +494,21 @@
       <id>d268e3b3-7adf-47d2-aba1-85b5395993d0</id>
       <repoid>97f67057-ca21-4199-ac02-38c60f65a0ce</repoid>
       <reporootid>8ba070da-ae86-4ef2-943b-ec1b741e03f0</reporootid>
+    </None>
+    <None Include="Recordings_B_BUAB\B_BUAB_Einschraenkungen_Buchungen_laden.rxrec">
+      <id>a14c1618-262d-49f2-a586-bc53ba84b218</id>
+      <recordtableid>ea5c84f8-ddd8-449d-a0a1-3b9538491c1f</recordtableid>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+    </None>
+    <None Include="Recordings_B_BUAB\B_BUAB_verbuchte_Belege_pruefen.rxrec">
+      <id>d3dbc5de-0b78-4e07-aff1-24d0ad859a9a</id>
+      <recordtableid>9ab18750-e993-4b50-80f8-cb32bf713788</recordtableid>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+    </None>
+    <None Include="Recordings_B_BUAB\B_BUAB_Tagesdatum_Tagesdatum2_valdieren_Usercode.rxrec">
+      <id>8cc10ff3-baea-45c7-8fa7-0bffdb525dcd</id>
+      <recordtableid>dd50b06f-9bf5-4c5c-a283-81f7b6f5e518</recordtableid>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
     </None>
     <None Include="Recordings_B_BUAB\Close_B_BUAB.rxrec">
       <id>cc16366d-d4ae-4535-8bbc-38efb6aa3bf5</id>
@@ -475,6 +554,11 @@
       <id>17c3ac7d-609d-4ee0-b89b-e56ee6141425</id>
       <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
       <recordtableid>03755093-1b36-4ede-83a7-a49e597b4047</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPS\Statuskontrolle_nach_Verbuchung.rxrec">
+      <id>d5d1f735-f5fb-49d1-85ee-09a42e97ca5c</id>
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+      <recordtableid>0a603c18-304d-4aaf-8fc2-5acebb179d58</recordtableid>
     </None>
     <None Include="Recordings_B_EXOPV\CloseAUT.rxrec">
       <id>07ed2147-a3a7-4a0b-ba43-1ae860b92cd7</id>
@@ -560,6 +644,11 @@
       <id>a275dacd-38ec-488a-856b-2410339240f8</id>
       <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
       <recordtableid>4a6830e5-cffc-464d-bdfc-0a408cb1b6fe</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPV\Tagesdatum_ermitteln.rxrec">
+      <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>
+      <id>bcf0ea79-89cd-4e6f-802a-e780ac0f1872</id>
+      <recordtableid>a09b5404-0e71-4a58-a6da-16c4289b589e</recordtableid>
     </None>
     <None Include="Recordings_B_EXOPV\Verbuchen_Protokolldatei_pruefen.rxrec">
       <BoundTo>d268e3b3-7adf-47d2-aba1-85b5395993d0</BoundTo>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9ab18750-e993-4b50-80f8-cb32bf713788"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="B_BUAB_verbuchte_Belege_pruefen"
+	namespace="B_EXOPV_004.Recordings_B_BUAB">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Beleg 1
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="19194eb3-e04f-457c-ad94-9e7c2128d761">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bb167fea-b721-491d-9e8a-8b2bb4872ac9"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBelegnr Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Beleg 2
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Beleg 5
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Beleg 6
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+	</recorditems>
+	<repository
+	id="97f67057-ca21-4199-ac02-38c60f65a0ce"
+	name="B_EXOPV_004Repository"
+	relativepath="..\B_EXOPV_004Repository.rxrep">
+		<codegen
+		classname="B_EXOPV_004Repository"
+		namespace="B_EXOPV_004">
+		</codegen>
+		<rootfolder
+		id="8ba070da-ae86-4ef2-943b-ec1b741e03f0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		B_BUAB_verbuchte_Belege_pruefen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
