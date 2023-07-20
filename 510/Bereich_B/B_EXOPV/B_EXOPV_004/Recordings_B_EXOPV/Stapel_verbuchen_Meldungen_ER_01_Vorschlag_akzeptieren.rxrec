@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Stapel_verbuchen_Meldungen_ER_01_Vorschlag_aktzeptieren"
+	classname="Stapel_verbuchen_Meldungen_ER_01_Vorschlag_akzeptieren"
 	namespace="B_EXOPV_004.Recordings_B_EXOPV">
 	</codegen>
 	<variables>
@@ -30,6 +30,35 @@ mode="Global">
 		</var>
 	</variables>
 	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				ER_01 Meldung Buchungsperiode
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="28dce4c3-0467-4957-b212-797db669cb6e"
+		waitaction="Exists"
+		waittimeout="240000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5ce71343-fffa-4255-9fc0-c5ddc3eac870"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeContains"
 		duration="100ms"
@@ -1163,15 +1192,35 @@ Belege in Periode 2018 / 6 buchen ?&#10;
 				</robustPath>
 			</info>
 		</mouseitem>
-		<explicitdelayitem
-		duration="2000ms"
+		<separatoritem
 		enabled="True"
 		optional="False">
+			<comment>
+				ER_01 Meldung UVA-Periode
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="28dce4c3-0467-4957-b212-797db669cb6e"
+		waitaction="Exists"
+		waittimeout="60000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="5ce71343-fffa-4255-9fc0-c5ddc3eac870"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"
@@ -3071,6 +3120,15 @@ oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAQ/eWloooAKKKKACiiigAooooAT
 /lp+FC/xfWiigAH32/ChPuiiigBaKKKACiiigAooooA//9k=
 			</helperscreenshot>
 		</mouseitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				ER_01 Maske UVA-Periode - neuen UVA-Termin 2018/13 verwenden
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
@@ -6405,7 +6463,7 @@ W1LfacF3I2HgsT3FWp/9RJ/un+VFFRLc1hsQxMdtFFFSWf/Z
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Stapel_verbuchen_Meldungen_ER_01_Vorschlag_aktzeptieren.UserCode.cs
+		Stapel_verbuchen_Meldungen_ER_01_Vorschlag_akzeptieren.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

@@ -119,17 +119,20 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 25\tBeleg: ER_04_B_EXOPV_004: Jahr/Monat außerhalb erlaubter Perioden!') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(8));
             Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Exop: 25\tBeleg: ER_04_B_EXOPV_004: Jahr/Monat außerhalb erlaubter Perioden!");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 25\tBeleg: ER_04_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(9));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Exop: 25\tBeleg: ER_04_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(10));
             Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100] Beende Verbuchung B_EXOPV_004') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100] Beende Verbuchung B_EXOPV_004') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(11));
             Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "[100] Beende Verbuchung B_EXOPV_004");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Anzahl Buchungen gelesen  6') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Anzahl Buchungen gelesen  6') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(12));
             Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Anzahl Buchungen gelesen  6");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(12));
-            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Anzahl Buchungen verbucht 4  Summe verbucht: 16800,00') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(13));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Anzahl Buchungen verbucht 4  Summe verbucht: 16800,00");
             
         }
 

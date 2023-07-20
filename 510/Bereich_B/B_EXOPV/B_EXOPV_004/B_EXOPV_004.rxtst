@@ -16,6 +16,20 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="0b7406c3-a65e-44ce-8a48-59140d92b053"
+			name="Stapel_verbuchen_Meldungen_ER_unklar_B_2_UVA_1_neuer_Termin"
+			ref="a7951846-695d-4a34-b0cf-2956f1975d69"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Jahr"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="a258836a-1880-4043-9f7f-b945a00e6cc6"
+					variablename="Jahr">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
 			name="B_EXOPV_004"
@@ -233,7 +247,7 @@
 			</testmodule>
 			<testmodule
 			id="646da688-9823-4a91-bc69-02ac8fa0602d"
-			name="Stapel_verbuchen_Meldungen_ER_01_Vorschlag_aktzeptieren"
+			name="Stapel_verbuchen_Meldungen_ER_01_Vorschlag_akzeptieren"
 			ref="7d12990c-9158-4471-9449-7893d0c8a7e6"
 			type="Recording">
 				<databinding>
@@ -375,6 +389,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="7ed0a261-8a0f-4a26-ae31-8545d14d53ae"
+			name="Stapel_verbuchen_Meldungen_ER_04_ablehnen"
+			ref="432d1afa-b3ad-403d-ae28-db5974a3a582"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Jahr"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="db595bfc-bd30-47a8-910a-b3b040c8f2c6"
+					variablename="Jahr">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="866b963c-871f-4999-91b8-ed3dd05ede02"
 			name="Einschraenkungen_B_EXOPV_004_neu_laden"
 			ref="7901477e-29d3-4acd-bdeb-9355f291447d"
@@ -395,6 +423,9 @@
 			<testcase
 			id="8ace61e3-5345-4594-b519-f46c633ed06c"
 			name="Belege_verbuchen">
+				<description>
+					<![CDATA[<p>Testwiederholung:</p><p>Verbuchte Belege in b_buab löschen</p><p>in Schnittstelle Status von F+V auf N umstellen Herkunft b_exopv_004 (meldung übergehen)</p><p>oder mit sql talk</p><p>busy_keybel in b_exop entfernen mit sql</p><p>update b_exop set exop_status = 'N', busa_keybel = null where firm_nr = '100' and exop_herkunft = 'B_EXOPV_004';</p><br>]]>
+				</description>
 			</testcase>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
@@ -422,12 +453,9 @@
 			</testsuite>
 			<testmodule
 			id="bd85393c-7821-451f-b581-f19fd8311d4b"
-			name="Stapel_verbuchen_Meldungen_ER_unklar_A_2_UVA_Meldungen"
+			name="Stapel_verbuchen_Meldungen_ER_unklar_A_2_UVA_1_JA_1_NEIN"
 			ref="68df4bac-4497-4fe0-8120-38de04e18f0a"
 			type="Recording">
-				<description>
-					<![CDATA[2 Recordings fehlen noch]]>
-				</description>
 				<databinding>
 					<var
 					dataname="Jahr"
@@ -666,11 +694,19 @@
 						</testmodule>
 						<testmodule
 						id="646da688-9823-4a91-bc69-02ac8fa0602d"
-						name="Stapel_verbuchen_Meldungen_ER_01_Vorschlag_aktzeptieren">
+						name="Stapel_verbuchen_Meldungen_ER_01_Vorschlag_akzeptieren">
 						</testmodule>
 						<testmodule
 						id="bd85393c-7821-451f-b581-f19fd8311d4b"
-						name="Stapel_verbuchen_Meldungen_ER_unklar_A_2_UVA_Meldungen">
+						name="Stapel_verbuchen_Meldungen_ER_unklar_A_2_UVA_1_JA_1_NEIN">
+						</testmodule>
+						<testmodule
+						id="7ed0a261-8a0f-4a26-ae31-8545d14d53ae"
+						name="Stapel_verbuchen_Meldungen_ER_04_ablehnen">
+						</testmodule>
+						<testmodule
+						id="0b7406c3-a65e-44ce-8a48-59140d92b053"
+						name="Stapel_verbuchen_Meldungen_ER_unklar_B_2_UVA_1_neuer_Termin">
 						</testmodule>
 						<testmodule
 						id="4d83b94e-931e-4e05-a0ad-fe56c95c0c58"
