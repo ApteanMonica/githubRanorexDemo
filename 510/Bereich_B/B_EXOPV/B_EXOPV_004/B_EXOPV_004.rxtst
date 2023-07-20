@@ -34,6 +34,12 @@
 					variableid="a258836a-1880-4043-9f7f-b945a00e6cc6"
 					variablename="Jahr">
 					</var>
+					<var
+					dataname="UVA_Monat_13_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="2c2134ec-470b-41a8-a940-cbf766d7544b"
+					variablename="UVA_Monat_13_offen">
+					</var>
 				</databinding>
 			</testmodule>
 			<testcase
@@ -88,6 +94,10 @@
 					<param
 					name="Periode_6_offen"
 					value="6">
+					</param>
+					<param
+					name="UVA_Monat_13_offen"
+					value="13">
 					</param>
 					<param
 					name="Fehlerprotokoll_Pruefung"
@@ -155,12 +165,53 @@
 			</testmodule>
 			<testmodule
 			id="1452ce65-a8bb-4bfa-a107-635dc10ffdc7"
-			name="B_BUAB_verbuchte_Belege_pruefen"
+			name="B_BUAB_verbuchte_Belege_pruefen_Periode_UVA_Datum"
 			ref="9ab18750-e993-4b50-80f8-cb32bf713788"
 			type="Recording">
-				<description>
-					<![CDATA[IN ARBEIT]]>
-				</description>
+				<databinding>
+					<var
+					dataname="Beleg5"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="1806b985-f4a9-46c9-a948-6a72fddd08bd"
+					variablename="Beleg5">
+					</var>
+					<var
+					dataname="Beleg2"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="c45ed5e4-a2ad-4f1f-aa32-66bce6031994"
+					variablename="Beleg2">
+					</var>
+					<var
+					dataname="Beleg1"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="3c522181-d236-4b42-8751-62f26934d2b6"
+					variablename="Beleg1">
+					</var>
+					<var
+					dataname="UVA_Monat_13_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="91f7a0a0-8cbf-4851-8ef9-99e5ed305988"
+					variablename="UVA_Monat_13_offen">
+					</var>
+					<var
+					dataname="Periode_6_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="295281af-2079-4565-947a-44cd24c16dc9"
+					variablename="Periode_6_offen">
+					</var>
+					<var
+					dataname="Jahr"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="268580fc-72a3-45a9-bc68-d883b528ac20"
+					variablename="Jahr">
+					</var>
+					<var
+					dataname="Beleg6"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="8cf38043-01bc-4716-9f2f-fea42cb41313"
+					variablename="Beleg6">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="166b7d8c-78a9-4cfc-9bd5-c39305a1f66d"
@@ -227,7 +278,7 @@
 					variablename="Programm">
 					</var>
 					<var
-					dataname="Inhalt_Buchungsdatum_Zeile1"
+					dataname="Startfile"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
 					variableid="aa436549-e9c7-40aa-92bb-020ce7608590"
 					variablename="Startfile">
@@ -300,6 +351,12 @@
 					variableid="3fc7fe0b-8d97-47f7-ae76-86a1092938ae"
 					variablename="Jahr">
 					</var>
+					<var
+					dataname="UVA_Monat_13_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="566eb65e-8edc-4e2f-be10-c2a8bfb30e05"
+					variablename="UVA_Monat_13_offen">
+					</var>
 				</databinding>
 			</testmodule>
 			<teardown
@@ -316,16 +373,16 @@
 				</description>
 				<databinding>
 					<var
-					dataname="Tagesdatum"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="104ed472-3bad-466c-88eb-bb9e26cd4f0b"
-					variablename="Tagesdatum">
-					</var>
-					<var
 					dataname="Fehlerprotokoll_Pruefung_Datei"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
 					variableid="06daed8a-b7ed-4e27-8eac-de7f64fdf62a"
 					variablename="Fehlerprotokoll_Pruefung_Datei">
+					</var>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="104ed472-3bad-466c-88eb-bb9e26cd4f0b"
+					variablename="Tagesdatum">
 					</var>
 				</databinding>
 			</testmodule>
@@ -350,16 +407,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Fehlerprotokoll_Pruefung"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="ea80b5bd-38bc-462a-8847-46ea0fd510bf"
-					variablename="Fehlerprotokoll_Pruefung">
-					</var>
-					<var
 					dataname="Stapel_Herkunft"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
 					variableid="f49cbd79-1eb3-44bb-944f-1aacebbc6e29"
 					variablename="Stapel_Herkunft">
+					</var>
+					<var
+					dataname="Fehlerprotokoll_Pruefung"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="ea80b5bd-38bc-462a-8847-46ea0fd510bf"
+					variablename="Fehlerprotokoll_Pruefung">
 					</var>
 				</databinding>
 			</testmodule>
@@ -550,6 +607,12 @@
 					variableid="248d5717-0f63-4535-b1ab-6143d5f352a8"
 					variablename="Jahr">
 					</var>
+					<var
+					dataname="UVA_Monat_13_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="e2e4fef8-ae45-4aba-bdab-5456cff2efab"
+					variablename="UVA_Monat_13_offen">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -581,6 +644,12 @@
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
 					variableid="386e59a3-56c1-42e3-804d-effb3e7042f5"
 					variablename="Jahr">
+					</var>
+					<var
+					dataname="UVA_Monat_13_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="9e4dd0fc-0fde-45d9-af84-ab73666865f2"
+					variablename="UVA_Monat_13_offen">
 					</var>
 				</databinding>
 			</testmodule>
@@ -675,6 +744,9 @@
 			name="B_BUAB_Tagesdatum_Tagesdatum2_valdieren_Usercode"
 			ref="dd50b06f-9bf5-4c5c-a283-81f7b6f5e518"
 			type="Recording">
+				<description>
+					<![CDATA[UserCode Tagesdatum oder Tagesdatum 2 um Fehler wegen Datumswechsel vorzubeugen]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Inhalt_Buchungsdatum_Zeile7"
@@ -726,6 +798,12 @@
 					variableid="a4ef5a84-bc72-466f-a733-47530c757092"
 					variablename="Jahr">
 					</var>
+					<var
+					dataname="UVA_Monat_13_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="326ea6fa-8844-41e9-b8d8-7c6effd36c33"
+					variablename="UVA_Monat_13_offen">
+					</var>
 				</databinding>
 			</testmodule>
 			<testcase
@@ -739,16 +817,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Stapel_Herkunft"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="f49cbd79-1eb3-44bb-944f-1aacebbc6e29"
-					variablename="Stapel_Herkunft">
-					</var>
-					<var
 					dataname="Fehlerprotokoll_Verbuchung"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
 					variableid="66cddfda-58b0-49f7-af73-f6b2674b1053"
 					variablename="Fehlerprotokoll_Verbuchung">
+					</var>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="f49cbd79-1eb3-44bb-944f-1aacebbc6e29"
+					variablename="Stapel_Herkunft">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1005,7 +1083,7 @@
 						</testmodule>
 						<testmodule
 						id="1452ce65-a8bb-4bfa-a107-635dc10ffdc7"
-						name="B_BUAB_verbuchte_Belege_pruefen">
+						name="B_BUAB_verbuchte_Belege_pruefen_Periode_UVA_Datum">
 						</testmodule>
 						<teardown
 						id="4c0d8cba-3d56-4929-bcf7-bf0fe6c34134"

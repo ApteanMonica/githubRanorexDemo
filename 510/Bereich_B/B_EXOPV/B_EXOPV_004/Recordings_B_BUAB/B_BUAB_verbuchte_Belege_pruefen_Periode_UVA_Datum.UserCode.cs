@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_EXOPV_004.Recordings_B_BUAB
 {
-    public partial class B_BUAB_verbuchte_Belege_pruefen
+    public partial class B_BUAB_verbuchte_Belege_pruefen_Periode_UVA_Datum
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

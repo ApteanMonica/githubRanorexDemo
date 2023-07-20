@@ -42,6 +42,7 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
         public Stapel_verbuchen_Meldungen_ER_01_Vorschlag_akzeptieren()
         {
             Jahr = "2018";
+            UVA_Monat_13_offen = "13";
         }
 
         /// <summary>
@@ -64,6 +65,18 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
         {
             get { return _Jahr; }
             set { _Jahr = value; }
+        }
+
+        string _UVA_Monat_13_offen;
+
+        /// <summary>
+        /// Gets or sets the value of variable UVA_Monat_13_offen.
+        /// </summary>
+        [TestVariable("566eb65e-8edc-4e2f-be10-c2a8bfb30e05")]
+        public string UVA_Monat_13_offen
+        {
+            get { return _UVA_Monat_13_offen; }
+            set { _UVA_Monat_13_offen = value; }
         }
 
 #endregion
@@ -137,8 +150,8 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'DlgUva.Jahr_Vorschlag'.", repo.DlgUva.Jahr_VorschlagInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.DlgUva.Jahr_VorschlagInfo, "Text", Jahr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='13') on item 'DlgUva.Monat_Vorschlag'.", repo.DlgUva.Monat_VorschlagInfo, new RecordItemIndex(15));
-            Validate.AttributeEqual(repo.DlgUva.Monat_VorschlagInfo, "Text", "13");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_Monat_13_offen) on item 'DlgUva.Monat_Vorschlag'.", repo.DlgUva.Monat_VorschlagInfo, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.DlgUva.Monat_VorschlagInfo, "Text", UVA_Monat_13_offen);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUva.PbVerwenden' at Center.", repo.DlgUva.PbVerwendenInfo, new RecordItemIndex(16));
             repo.DlgUva.PbVerwenden.Click();

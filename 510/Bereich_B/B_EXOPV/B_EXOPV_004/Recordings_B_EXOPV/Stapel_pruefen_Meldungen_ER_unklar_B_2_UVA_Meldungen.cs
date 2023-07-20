@@ -92,8 +92,8 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(0));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.FakturenPruefung'", repo.DlgMessageBox.FakturenPruefungInfo, new ActionTimeout(60000), new RecordItemIndex(0));
+            repo.DlgMessageBox.FakturenPruefungInfo.WaitForExists(60000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='UVA für 2018-6 ist schon abgeschlossen.\r\n\r\nBitte UVA-Termin korrigieren! \r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "UVA für 2018-6 ist schon abgeschlossen.\r\n\r\nBitte UVA-Termin korrigieren! \r\n");
@@ -113,8 +113,8 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUva.PbNichtverwenden' at Center.", repo.DlgUva.PbNichtverwendenInfo, new RecordItemIndex(6));
             repo.DlgUva.PbNichtverwenden.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(7));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.FakturenPruefung'", repo.DlgMessageBox.FakturenPruefungInfo, new ActionTimeout(60000), new RecordItemIndex(7));
+            repo.DlgMessageBox.FakturenPruefungInfo.WaitForExists(60000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='UVA für 2018-5 ist schon abgeschlossen.\r\n\r\nBitte UVA-Termin korrigieren! \r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "UVA für 2018-5 ist schon abgeschlossen.\r\n\r\nBitte UVA-Termin korrigieren! \r\n");

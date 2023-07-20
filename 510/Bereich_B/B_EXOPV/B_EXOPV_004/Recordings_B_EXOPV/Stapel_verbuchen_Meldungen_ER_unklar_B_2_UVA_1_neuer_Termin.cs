@@ -42,6 +42,7 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
         public Stapel_verbuchen_Meldungen_ER_unklar_B_2_UVA_1_neuer_Termin()
         {
             Jahr = "2018";
+            UVA_Monat_13_offen = "13";
         }
 
         /// <summary>
@@ -64,6 +65,18 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
         {
             get { return _Jahr; }
             set { _Jahr = value; }
+        }
+
+        string _UVA_Monat_13_offen;
+
+        /// <summary>
+        /// Gets or sets the value of variable UVA_Monat_13_offen.
+        /// </summary>
+        [TestVariable("2c2134ec-470b-41a8-a940-cbf766d7544b")]
+        public string UVA_Monat_13_offen
+        {
+            get { return _UVA_Monat_13_offen; }
+            set { _UVA_Monat_13_offen = value; }
         }
 
 #endregion
@@ -162,8 +175,8 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(22));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '13' with focus on 'DlgUva.Monat_Vorschlag'.", repo.DlgUva.Monat_VorschlagInfo, new RecordItemIndex(23));
-            repo.DlgUva.Monat_Vorschlag.PressKeys("13");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$UVA_Monat_13_offen' with focus on 'DlgUva.Monat_Vorschlag'.", repo.DlgUva.Monat_VorschlagInfo, new RecordItemIndex(23));
+            repo.DlgUva.Monat_Vorschlag.PressKeys(UVA_Monat_13_offen);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(24));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);

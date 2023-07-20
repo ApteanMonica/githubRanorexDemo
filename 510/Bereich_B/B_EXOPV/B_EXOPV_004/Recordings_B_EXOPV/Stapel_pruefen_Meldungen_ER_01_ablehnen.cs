@@ -42,6 +42,7 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
         public Stapel_pruefen_Meldungen_ER_01_ablehnen()
         {
             Jahr = "2018";
+            UVA_Monat_13_offen = "13";
         }
 
         /// <summary>
@@ -64,6 +65,18 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
         {
             get { return _Jahr; }
             set { _Jahr = value; }
+        }
+
+        string _UVA_Monat_13_offen;
+
+        /// <summary>
+        /// Gets or sets the value of variable UVA_Monat_13_offen.
+        /// </summary>
+        [TestVariable("9e4dd0fc-0fde-45d9-af84-ab73666865f2")]
+        public string UVA_Monat_13_offen
+        {
+            get { return _UVA_Monat_13_offen; }
+            set { _UVA_Monat_13_offen = value; }
         }
 
 #endregion
@@ -92,11 +105,11 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Prüfen Buchungsperiode') on item 'DlgMessageBox.FakturenPruefung'.", repo.DlgMessageBox.FakturenPruefungInfo, new RecordItemIndex(0));
-            Validate.AttributeContains(repo.DlgMessageBox.FakturenPruefungInfo, "Text", "Prüfen Buchungsperiode");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.FakturenPruefung'", repo.DlgMessageBox.FakturenPruefungInfo, new ActionTimeout(120000), new RecordItemIndex(0));
+            repo.DlgMessageBox.FakturenPruefungInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.FakturenPruefung'", repo.DlgMessageBox.FakturenPruefungInfo, new ActionTimeout(60000), new RecordItemIndex(1));
-            repo.DlgMessageBox.FakturenPruefungInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Prüfen Buchungsperiode') on item 'DlgMessageBox.FakturenPruefung'.", repo.DlgMessageBox.FakturenPruefungInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.DlgMessageBox.FakturenPruefungInfo, "Text", "Prüfen Buchungsperiode");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Buchungen für Periode 2018 / 5 vorhanden,\r\nBuchen nur in Periode 2018 / 6 erlaubt !\r\nBuchung mit der Beleg-Nr: ER_01_B_EXOPV_004 \r\n\r\nBelege in Periode 2018 / 6 buchen ?\r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Buchungen für Periode 2018 / 5 vorhanden,\r\nBuchen nur in Periode 2018 / 6 erlaubt !\r\nBuchung mit der Beleg-Nr: ER_01_B_EXOPV_004 \r\n\r\nBelege in Periode 2018 / 6 buchen ?\r\n");
@@ -125,14 +138,11 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'DlgUva.Jahr_Vorschlag'.", repo.DlgUva.Jahr_VorschlagInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.DlgUva.Jahr_VorschlagInfo, "Text", Jahr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='13') on item 'DlgUva.Monat_Vorschlag'.", repo.DlgUva.Monat_VorschlagInfo, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.DlgUva.Monat_VorschlagInfo, "Text", "13");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_Monat_13_offen) on item 'DlgUva.Monat_Vorschlag'.", repo.DlgUva.Monat_VorschlagInfo, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.DlgUva.Monat_VorschlagInfo, "Text", UVA_Monat_13_offen);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUva.PbNichtverwenden' at Center.", repo.DlgUva.PbNichtverwendenInfo, new RecordItemIndex(12));
             repo.DlgUva.PbNichtverwenden.Click();
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(13));
-            Delay.Duration(2000, false);
             
         }
 

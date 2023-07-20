@@ -42,6 +42,7 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
         public Stapel_pruefen_Meldungen_ER_unklar_A_2_UVA_Meldungen()
         {
             Jahr = "2018";
+            UVA_Monat_13_offen = "13";
         }
 
         /// <summary>
@@ -64,6 +65,18 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
         {
             get { return _Jahr; }
             set { _Jahr = value; }
+        }
+
+        string _UVA_Monat_13_offen;
+
+        /// <summary>
+        /// Gets or sets the value of variable UVA_Monat_13_offen.
+        /// </summary>
+        [TestVariable("326ea6fa-8844-41e9-b8d8-7c6effd36c33")]
+        public string UVA_Monat_13_offen
+        {
+            get { return _UVA_Monat_13_offen; }
+            set { _UVA_Monat_13_offen = value; }
         }
 
 #endregion
@@ -92,50 +105,53 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='UVA für 2018-6 ist schon abgeschlossen.\r\n\r\nBitte UVA-Termin korrigieren! \r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.FakturenPruefung'", repo.DlgMessageBox.FakturenPruefungInfo, new ActionTimeout(60000), new RecordItemIndex(0));
+            repo.DlgMessageBox.FakturenPruefungInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='UVA für 2018-6 ist schon abgeschlossen.\r\n\r\nBitte UVA-Termin korrigieren! \r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "UVA für 2018-6 ist schon abgeschlossen.\r\n\r\nBitte UVA-Termin korrigieren! \r\n");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgUva.TitleBar100UVADatum'", repo.DlgUva.TitleBar100UVADatumInfo, new ActionTimeout(60000), new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgUva.TitleBar100UVADatum'", repo.DlgUva.TitleBar100UVADatumInfo, new ActionTimeout(60000), new RecordItemIndex(3));
             repo.DlgUva.TitleBar100UVADatumInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'UVA-Datum') on item 'DlgUva.TitleBar100UVADatum'.", repo.DlgUva.TitleBar100UVADatumInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'UVA-Datum') on item 'DlgUva.TitleBar100UVADatum'.", repo.DlgUva.TitleBar100UVADatumInfo, new RecordItemIndex(4));
             Validate.AttributeContains(repo.DlgUva.TitleBar100UVADatumInfo, "Text", "UVA-Datum");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='UVA für 2018-06 schon abgeschlossen.') on item 'DlgUva.DfText'.", repo.DlgUva.DfTextInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='UVA für 2018-06 schon abgeschlossen.') on item 'DlgUva.DfText'.", repo.DlgUva.DfTextInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.DlgUva.DfTextInfo, "Text", "UVA für 2018-06 schon abgeschlossen.");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'DlgUva.Jahr_Vorschlag'.", repo.DlgUva.Jahr_VorschlagInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'DlgUva.Jahr_Vorschlag'.", repo.DlgUva.Jahr_VorschlagInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.DlgUva.Jahr_VorschlagInfo, "Text", Jahr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='13') on item 'DlgUva.Monat_Vorschlag'.", repo.DlgUva.Monat_VorschlagInfo, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.DlgUva.Monat_VorschlagInfo, "Text", "13");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_Monat_13_offen) on item 'DlgUva.Monat_Vorschlag'.", repo.DlgUva.Monat_VorschlagInfo, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.DlgUva.Monat_VorschlagInfo, "Text", UVA_Monat_13_offen);
             
             // ok bis hierher
-            Report.Log(ReportLevel.Info, "Mouse", "ok bis hierher\r\nMouse Left Click item 'DlgUva.PbNichtverwenden' at Center.", repo.DlgUva.PbNichtverwendenInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "ok bis hierher\r\nMouse Left Click item 'DlgUva.PbNichtverwenden' at Center.", repo.DlgUva.PbNichtverwendenInfo, new RecordItemIndex(8));
             repo.DlgUva.PbNichtverwenden.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(8));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.FakturenPruefung'", repo.DlgMessageBox.FakturenPruefungInfo, new ActionTimeout(60000), new RecordItemIndex(9));
+            repo.DlgMessageBox.FakturenPruefungInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='UVA für 2018-5 ist schon abgeschlossen.\r\n\r\nBitte UVA-Termin korrigieren! \r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='UVA für 2018-5 ist schon abgeschlossen.\r\n\r\nBitte UVA-Termin korrigieren! \r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "UVA für 2018-5 ist schon abgeschlossen.\r\n\r\nBitte UVA-Termin korrigieren! \r\n");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(11));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgUva.TitleBar100UVADatum'", repo.DlgUva.TitleBar100UVADatumInfo, new ActionTimeout(60000), new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgUva.TitleBar100UVADatum'", repo.DlgUva.TitleBar100UVADatumInfo, new ActionTimeout(60000), new RecordItemIndex(12));
             repo.DlgUva.TitleBar100UVADatumInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'UVA-Datum') on item 'DlgUva.TitleBar100UVADatum'.", repo.DlgUva.TitleBar100UVADatumInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'UVA-Datum') on item 'DlgUva.TitleBar100UVADatum'.", repo.DlgUva.TitleBar100UVADatumInfo, new RecordItemIndex(13));
             Validate.AttributeContains(repo.DlgUva.TitleBar100UVADatumInfo, "Text", "UVA-Datum");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='UVA für 2018-05 schon abgeschlossen.') on item 'DlgUva.DfText'.", repo.DlgUva.DfTextInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='UVA für 2018-05 schon abgeschlossen.') on item 'DlgUva.DfText'.", repo.DlgUva.DfTextInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.DlgUva.DfTextInfo, "Text", "UVA für 2018-05 schon abgeschlossen.");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUva.PbNichtverwenden' at Center.", repo.DlgUva.PbNichtverwendenInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUva.PbNichtverwenden' at Center.", repo.DlgUva.PbNichtverwendenInfo, new RecordItemIndex(15));
             repo.DlgUva.PbNichtverwenden.Click();
             
         }

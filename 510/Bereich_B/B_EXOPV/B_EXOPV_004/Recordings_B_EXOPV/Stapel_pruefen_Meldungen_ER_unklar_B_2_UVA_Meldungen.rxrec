@@ -30,15 +30,26 @@ mode="Global">
 		</var>
 	</variables>
 	<recorditems>
-		<explicitdelayitem
-		duration="2000ms"
+		<WaitForRecordItem
 		enabled="True"
-		optional="False">
+		optional="False"
+		searchpropertyid="08e9f24a-3e2a-42d3-b377-dce5793bebc3"
+		waitaction="Exists"
+		waittimeout="60000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="5ce71343-fffa-4255-9fc0-c5ddc3eac870"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"
@@ -8983,15 +8994,26 @@ Iz+NWbeeC53+S5bYcNwRSLcwNLJGHO6IZcYPFACQQtGWaRgzsecDAqY9aZbzRXMfmQsWXOM4xUu2
 gBtFO2iigD//2Q==
 			</helperscreenshot>
 		</mouseitem>
-		<explicitdelayitem
-		duration="2000ms"
+		<WaitForRecordItem
 		enabled="True"
-		optional="False">
+		optional="False"
+		searchpropertyid="08e9f24a-3e2a-42d3-b377-dce5793bebc3"
+		waitaction="Exists"
+		waittimeout="60000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="5ce71343-fffa-4255-9fc0-c5ddc3eac870"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"

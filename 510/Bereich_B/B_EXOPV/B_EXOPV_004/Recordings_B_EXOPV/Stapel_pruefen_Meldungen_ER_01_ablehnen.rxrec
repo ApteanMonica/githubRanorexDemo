@@ -28,8 +28,33 @@ mode="Global">
 		name="Jahr">
 			2018
 		</var>
+		<var
+		id="9e4dd0fc-0fde-45d9-af84-ab73666865f2"
+		name="UVA_Monat_13_offen">
+			13
+		</var>
 	</variables>
 	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="6345d95a-3f84-4946-9f97-ebbb1a15f341"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5ce71343-fffa-4255-9fc0-c5ddc3eac870"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeContains"
 		duration="100ms"
@@ -56,26 +81,6 @@ mode="Global">
 				Prüfen Buchungsperiode
 			</matchvalue>
 		</validationitem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="6345d95a-3f84-4946-9f97-ebbb1a15f341"
-		waitaction="Exists"
-		waittimeout="60000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="5ce71343-fffa-4255-9fc0-c5ddc3eac870"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"
@@ -7217,6 +7222,10 @@ ctsOG4IpFuYGlkjDndEMuMHigBIIWjLNIwZ2POBgVMetMt5ormPzIWLLnGcYqXbQA2inbRRQB//Z
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="UVA_Monat_13_offen">
+				</binding>
 			</bindings>
 			<info
 			id="ef2a0652-bbb7-4326-b3d2-b39600de6158"
@@ -11366,15 +11375,6 @@ urEAKPlx8uee/Wk+wk5VnGwBtoC8jP41Zt54Lnf5Llthw3BFItzA0skYc7ohlxg8UAJBC0ZZpGDO
 x5wMCpj1plvNFcx+ZCxZc4zjFS7aAG0U7aKKAP/Z
 			</helperscreenshot>
 		</mouseitem>
-		<explicitdelayitem
-		duration="2000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 	</recorditems>
 	<repository
 	id="97f67057-ca21-4199-ac02-38c60f65a0ce"

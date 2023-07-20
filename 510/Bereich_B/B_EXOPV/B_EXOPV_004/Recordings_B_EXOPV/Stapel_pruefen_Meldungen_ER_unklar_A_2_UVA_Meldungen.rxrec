@@ -28,8 +28,33 @@ mode="Global">
 		name="Jahr">
 			2018
 		</var>
+		<var
+		id="326ea6fa-8844-41e9-b8d8-7c6effd36c33"
+		name="UVA_Monat_13_offen">
+			13
+		</var>
 	</variables>
 	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="61a9bd6a-95a7-4212-96c4-032e4e6482df"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5ce71343-fffa-4255-9fc0-c5ddc3eac870"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"
@@ -5127,6 +5152,10 @@ ctsOG4IpFuYGlkjDndEMuMHigBIIWjLNIwZ2POBgVMetMt5ormPzIWLLnGcYqXbQA2inbRRQB//Z
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="UVA_Monat_13_offen">
+				</binding>
 			</bindings>
 			<info
 			id="ef2a0652-bbb7-4326-b3d2-b39600de6158"
@@ -9278,15 +9307,26 @@ CTlWcbAG2gLyM/jVm3ngud/kuW2HDcEUi3MDSyRhzuiGXGDxQAkELRlmkYM7HnAwKmPWmW80VzH5
 kLFlzjOMVLtoAbRTtoooA//Z
 			</helperscreenshot>
 		</mouseitem>
-		<explicitdelayitem
-		duration="2000ms"
+		<WaitForRecordItem
 		enabled="True"
-		optional="False">
+		optional="False"
+		searchpropertyid="61a9bd6a-95a7-4212-96c4-032e4e6482df"
+		waitaction="Exists"
+		waittimeout="60000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="5ce71343-fffa-4255-9fc0-c5ddc3eac870"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"
