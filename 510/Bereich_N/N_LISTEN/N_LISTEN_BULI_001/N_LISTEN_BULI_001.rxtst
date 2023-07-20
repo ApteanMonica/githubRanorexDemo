@@ -262,7 +262,7 @@
 			name="N_LISTEN_BULI_001"
 			reportlevel="Info;20">
 				<description>
-					<![CDATA[<p>Zuvor erfasste und übernommene Anlagen aus der FIBU über die Buchungsliste berechnen lassen und anschließend in die Schnittstelle zum Verbuchen überleiten. Überprüfen ob beim Versuch die Buchungen erneut überzuleiten eine entsprechende Hinweismeldung kommt. Kontrolle der betroffenen Buchungen in B_EXOPS</p>]]>
+					<![CDATA[<p>Zuvor erfasste und übernommene Anlagen aus der FIBU über die Buchungsliste berechnen lassen, Ergebnis überprüfen, anschließend in die Schnittstelle überleiten und überpüfen ob die Daten korrekt in die Schnittstelle (B_EXSA) übergeleitet wurden.</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -445,9 +445,22 @@
 					dataname="Tagesdatum"
 					datasourceid="10f3f504-933d-4d2e-877a-6c4a5829ba53"
 					variableid="2edfc64a-4a2b-44b9-a1f3-7f8cfd6e9687"
+					variablename="Tagesdatum_ermitteln">
+					</var>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="10f3f504-933d-4d2e-877a-6c4a5829ba53"
+					variableid="5a5ff5cb-7e9e-4cbb-a243-58b2c4adecf6"
 					variablename="Tagesdatum">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="ff9cba60-fec6-47b5-90aa-e127584aeaff"
+			name="Umgehungsloesung_Meldung_start"
+			ref="b6eb0bd7-41d9-4e20-9204-82d01a8831fa"
+			type="Recording">
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -466,6 +479,10 @@
 							<testmodule
 							id="7c4f043b-3d89-4cdc-b79f-14e0b3241486"
 							name="StartAUT">
+							</testmodule>
+							<testmodule
+							id="ff9cba60-fec6-47b5-90aa-e127584aeaff"
+							name="Umgehungsloesung_Meldung_start">
 							</testmodule>
 						</setup>
 						<testmodule
@@ -497,10 +514,6 @@
 						name="FIBU_Ueberleitung">
 						</testmodule>
 						<testmodule
-						id="12a8ebf1-4f28-41f1-bb2e-46143312c40e"
-						name="Tagesdatum_einlesen">
-						</testmodule>
-						<testmodule
 						id="57d14254-fb8e-49b6-b2ae-17d75bce2da3"
 						name="Bestaetigungsmeldungen_Ueberleitung">
 						</testmodule>
@@ -524,6 +537,10 @@
 							name="Start_AUT_2">
 							</testmodule>
 						</setup>
+						<testmodule
+						id="12a8ebf1-4f28-41f1-bb2e-46143312c40e"
+						name="Tagesdatum_einlesen">
+						</testmodule>
 						<testmodule
 						id="492571ec-ae12-40c4-8cf0-ce90ae8aa943"
 						name="Daten_einschraenken">
@@ -565,9 +582,6 @@
 		name="TestRun">
 			<testcontainer
 			id="10f3f504-933d-4d2e-877a-6c4a5829ba53">
-			</testcontainer>
-			<testcontainer
-			id="4bcc8d27-c65d-4d90-a663-d47bf3d8cf9e">
 			</testcontainer>
 			<testcontainer
 			id="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763">

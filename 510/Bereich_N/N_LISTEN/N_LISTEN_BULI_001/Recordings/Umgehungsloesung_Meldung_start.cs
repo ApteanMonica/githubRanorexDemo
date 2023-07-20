@@ -20,51 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace N_LISTEN_BULI_001.Recordings_b_exops
+namespace N_LISTEN_BULI_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Einschraenkungen_ueberpruefen recording.
+    ///The Umgehungsloesung_Meldung_start recording.
     /// </summary>
-    [TestModule("e284a7db-38e4-4019-9f0b-19a404c58484", ModuleType.Recording, 1)]
-    public partial class Einschraenkungen_ueberpruefen : ITestModule
+    [TestModule("b6eb0bd7-41d9-4e20-9204-82d01a8831fa", ModuleType.Recording, 1)]
+    public partial class Umgehungsloesung_Meldung_start : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repo = global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository.Instance;
 
-        static Einschraenkungen_ueberpruefen instance = new Einschraenkungen_ueberpruefen();
+        static Umgehungsloesung_Meldung_start instance = new Umgehungsloesung_Meldung_start();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Einschraenkungen_ueberpruefen()
+        public Umgehungsloesung_Meldung_start()
         {
-            Tagesdatum_ermitteln = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Einschraenkungen_ueberpruefen Instance
+        public static Umgehungsloesung_Meldung_start Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Tagesdatum_ermitteln;
-
-        /// <summary>
-        /// Gets or sets the value of variable Tagesdatum_ermitteln.
-        /// </summary>
-        [TestVariable("ddc7f825-89a7-4aa4-a591-d3b0af11c21a")]
-        public string Tagesdatum_ermitteln
-        {
-            get { return _Tagesdatum_ermitteln; }
-            set { _Tagesdatum_ermitteln = value; }
-        }
 
 #endregion
 
@@ -92,17 +79,14 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='S') on item 'FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1Info, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1Info, "Text", "S");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(5000), new RecordItemIndex(0));
+            repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(5000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='N') on item 'FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1Info, "Text", "N");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Keine Buchungstypen vorhanden!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Keine Buchungstypen vorhanden!");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='N_LISTEN') on item 'FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1Info, "Text", "N_LISTEN");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='31.12.2022') on item 'FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1Info, "Text", "31.12.2022");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
+            repo.DlgMessageBox.Button0.Click();
             
         }
 

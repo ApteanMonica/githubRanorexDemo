@@ -119,8 +119,8 @@ namespace N_LISTEN_BULI_001.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(120000), new RecordItemIndex(0));
             repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Soll trotz AVZ-Stammdateneinstellung :\r\n\r\n> Buchungsliste monatlich speichern <\r\n\r\neine Überleitung über mehrere Monate\r\nin die Fibu erfolgen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Soll trotz AVZ-Stammdateneinstellung :\r\n\r\n> Buchungsliste monatlich speichern <\r\n\r\neine Überleitung über mehrere Monate\r\nin die Fibu erfolgen?");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Soll trotz AVZ-Stammdateneinstellung :\r\n\r\n> Buchungsliste monatlich speichern <\r\n\r\neine Jahresüberleitung in die Fibu erfolgen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Soll trotz AVZ-Stammdateneinstellung :\r\n\r\n> Buchungsliste monatlich speichern <\r\n\r\neine Jahresüberleitung in die Fibu erfolgen?");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
             repo.DlgMessageBox.Button0.Click();

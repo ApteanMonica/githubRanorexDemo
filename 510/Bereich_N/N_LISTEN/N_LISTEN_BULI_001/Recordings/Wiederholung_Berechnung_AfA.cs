@@ -134,8 +134,8 @@ namespace N_LISTEN_BULI_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbDataAccessNeu' at Center.", repo.FrmBuchungsliste.PbDataAccessNeuInfo, new RecordItemIndex(0));
             repo.FrmBuchungsliste.PbDataAccessNeu.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual ((Choose)='yourValue') on item 'FrmBuchungsliste.RbMonat'.", repo.FrmBuchungsliste.RbMonatInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.FrmBuchungsliste.RbMonatInfo, "(Choose)", "yourValue");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBuchungsliste.RbMonat'.", repo.FrmBuchungsliste.RbMonatInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.RbMonatInfo, "Checked", "True");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beginn_GJ) on item 'FrmBuchungsliste.TextVon'.", repo.FrmBuchungsliste.TextVonInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.FrmBuchungsliste.TextVonInfo, "Text", Beginn_GJ);

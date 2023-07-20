@@ -196,8 +196,8 @@ namespace N_LISTEN_BULI_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.RbJahr' at Center.", repo.FrmBuchungsliste.RbJahrInfo, new RecordItemIndex(12));
             repo.FrmBuchungsliste.RbJahr.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='yourtext') on item 'FrmBuchungsliste.RbJahr'.", repo.FrmBuchungsliste.RbJahrInfo, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.FrmBuchungsliste.RbJahrInfo, "Text", "yourtext");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBuchungsliste.RbJahr'.", repo.FrmBuchungsliste.RbJahrInfo, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.RbJahrInfo, "Checked", "True");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbUEberleitungFibu' at Center.", repo.FrmBuchungsliste.PbUEberleitungFibuInfo, new RecordItemIndex(14));
             repo.FrmBuchungsliste.PbUEberleitungFibu.Click();
