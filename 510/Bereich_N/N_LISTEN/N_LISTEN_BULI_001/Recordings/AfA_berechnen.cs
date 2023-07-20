@@ -137,8 +137,8 @@ namespace N_LISTEN_BULI_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2022') on item 'FrmBuchungsliste.Geschaeftsjahr'.", repo.FrmBuchungsliste.GeschaeftsjahrInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.FrmBuchungsliste.GeschaeftsjahrInfo, "Text", "2022");
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.CbBereich' at Center.", repo.FrmBuchungsliste.CbBereichInfo, new RecordItemIndex(2));
-            //repo.FrmBuchungsliste.CbBereich.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.CbBereich' at Center.", repo.FrmBuchungsliste.CbBereichInfo, new RecordItemIndex(2));
+            repo.FrmBuchungsliste.CbBereich.Click();
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBuchungsliste.CbBereich'.", repo.FrmBuchungsliste.CbBereichInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.FrmBuchungsliste.CbBereichInfo, "Checked", "True");

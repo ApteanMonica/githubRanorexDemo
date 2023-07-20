@@ -101,31 +101,13 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'S{Tab}' with focus on 'FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1Info, new RecordItemIndex(2));
             repo.FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1.PressKeys("S{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1' at Center.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1Info, new RecordItemIndex(3));
-            repo.FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='N') on item 'FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1Info, "Text", "N");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1' at Center.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1Info, new RecordItemIndex(4));
-            repo.FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1.DoubleClick();
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'N{Tab}' with focus on 'FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1Info, new RecordItemIndex(5));
-            repo.FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1.PressKeys("N{Tab}");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1' at Center.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1Info, new RecordItemIndex(6));
-            repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1.Click();
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1' at Center.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1Info, new RecordItemIndex(7));
-            repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1.DoubleClick();
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'N_LISTEN{Tab}' with focus on 'FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'N_LISTEN{Tab}' with focus on 'FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1Info, new RecordItemIndex(4));
             repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1.PressKeys("N_LISTEN{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1' at Center.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1Info, new RecordItemIndex(9));
-            repo.FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1.Click();
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1' at Center.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1Info, new RecordItemIndex(10));
-            repo.FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1.DoubleClick();
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '31.12.2022{Tab}' with focus on 'FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '31.12.2022{Tab}' with focus on 'FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1Info, new RecordItemIndex(5));
             repo.FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1.PressKeys("31.12.2022{Tab}");
             
         }

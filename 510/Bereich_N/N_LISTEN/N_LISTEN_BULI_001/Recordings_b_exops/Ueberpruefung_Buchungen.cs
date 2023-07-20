@@ -118,8 +118,8 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0660') on item 'FrmBEXSA.Row2.ColExsaKtonrRow2'.", repo.FrmBEXSA.Row2.ColExsaKtonrRow2Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.FrmBEXSA.Row2.ColExsaKtonrRow2Info, "Text", "0660");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='S') on item 'FrmBEXSA.Row2.ColExsaShRow2'.", repo.FrmBEXSA.Row2.ColExsaShRow2Info, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.FrmBEXSA.Row2.ColExsaShRow2Info, "Text", "S");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='H') on item 'FrmBEXSA.Row2.ColExsaShRow2'.", repo.FrmBEXSA.Row2.ColExsaShRow2Info, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.FrmBEXSA.Row2.ColExsaShRow2Info, "Text", "H");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='208,33') on item 'FrmBEXSA.Row2.ColExsaBetragRow2'.", repo.FrmBEXSA.Row2.ColExsaBetragRow2Info, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.FrmBEXSA.Row2.ColExsaBetragRow2Info, "Text", "208,33");

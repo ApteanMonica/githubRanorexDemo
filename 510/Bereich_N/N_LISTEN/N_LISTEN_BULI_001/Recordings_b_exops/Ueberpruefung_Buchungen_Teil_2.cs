@@ -103,8 +103,8 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmBEXSA.Row3.ColExsaUstbetragRow3'.", repo.FrmBEXSA.Row3.ColExsaUstbetragRow3Info, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.FrmBEXSA.Row3.ColExsaUstbetragRow3Info, "Text", "0,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='yourtext') on item 'FrmBEXSA.Row3.ColExsaText1Row3'.", repo.FrmBEXSA.Row3.ColExsaText1Row3Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.FrmBEXSA.Row3.ColExsaText1Row3Info, "Text", "yourtext");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='AfA') on item 'FrmBEXSA.Row3.ColExsaText1Row3'.", repo.FrmBEXSA.Row3.ColExsaText1Row3Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.FrmBEXSA.Row3.ColExsaText1Row3Info, "Text", "AfA");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'FrmBEXSA.Row3.ColExsaBektNr1Row3'.", repo.FrmBEXSA.Row3.ColExsaBektNr1Row3Info, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.FrmBEXSA.Row3.ColExsaBektNr1Row3Info, "Text", "20");

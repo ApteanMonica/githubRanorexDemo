@@ -181,6 +181,48 @@
 			id="709abd95-dc28-4e2c-9b3a-07c458467fbf"
 			name="setup">
 			</setup>
+			<smartfoldernode
+			id="741401cd-c255-4c4b-a2c9-c7e598972b16"
+			name="510,_511">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Servername"
+								id="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT2">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Servername"
+								id="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="775ebf23-bc40-4446-93ab-f50605d627d1"
 			name="Meldung_bereits_erfolgte_Berechnung"
@@ -230,6 +272,20 @@
 					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
 					variableid="e327bd7b-6d6d-40bb-8d3a-d60aa6eb4166"
 					variablename="Belegnummer_Ueberleitung">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="a21f0d70-3842-490d-802e-ac5e768a1a34"
+			name="Einlesen_des_Ranoagent"
+			ref="6cb1309a-95d5-4459-9fa2-5bc883c4ad0a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Servername"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="1d013268-9671-4415-9194-d780a490a3a4"
+					variablename="Servername">
 					</var>
 				</databinding>
 			</testmodule>
@@ -311,7 +367,7 @@
 					</param>
 					<param
 					name="Belegdatum_Ueberleitung"
-					value="31.12.20222">
+					value="31.12.2022">
 					</param>
 					<param
 					name="Ust_Code_Ueberleitung"
@@ -332,6 +388,10 @@
 					<param
 					name="Anlagennr_002"
 					value="N_LISTEN_001_02">
+					</param>
+					<param
+					name="Servername"
+					value="">
 					</param>
 				</parameters>
 			</testcase>
@@ -456,7 +516,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="ff9cba60-fec6-47b5-90aa-e127584aeaff"
 			name="Umgehungsloesung_Meldung_start"
 			ref="b6eb0bd7-41d9-4e20-9204-82d01a8831fa"
@@ -486,6 +545,10 @@
 							</testmodule>
 						</setup>
 						<testmodule
+						id="a21f0d70-3842-490d-802e-ac5e768a1a34"
+						name="Einlesen_des_Ranoagent">
+						</testmodule>
+						<testmodule
 						id="38afbd31-b39f-4e76-a8a0-64dd3a9a1015"
 						name="AfA_berechnen">
 						</testmodule>
@@ -493,6 +556,10 @@
 						id="c8f30a91-62a6-419e-b51f-8d6b3b82f86e"
 						name="Wiederholung_Berechnung_AfA">
 						</testmodule>
+						<smartfoldernode
+						id="741401cd-c255-4c4b-a2c9-c7e598972b16"
+						name="510,_511">
+						</smartfoldernode>
 						<testmodule
 						id="775ebf23-bc40-4446-93ab-f50605d627d1"
 						name="Meldung_bereits_erfolgte_Berechnung">
@@ -582,6 +649,12 @@
 		name="TestRun">
 			<testcontainer
 			id="10f3f504-933d-4d2e-877a-6c4a5829ba53">
+			</testcontainer>
+			<testcontainer
+			id="4bcc8d27-c65d-4d90-a663-d47bf3d8cf9e">
+			</testcontainer>
+			<testcontainer
+			id="741401cd-c255-4c4b-a2c9-c7e598972b16">
 			</testcontainer>
 			<testcontainer
 			id="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763">
