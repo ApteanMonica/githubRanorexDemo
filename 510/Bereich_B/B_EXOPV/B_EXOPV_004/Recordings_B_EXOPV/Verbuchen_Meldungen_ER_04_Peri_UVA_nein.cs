@@ -24,22 +24,22 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Stapel_verbuchen_Meldungen_ER_04_ablehnen recording.
+    ///The Verbuchen_Meldungen_ER_04_Peri_UVA_NEIN recording.
     /// </summary>
     [TestModule("432d1afa-b3ad-403d-ae28-db5974a3a582", ModuleType.Recording, 1)]
-    public partial class Stapel_verbuchen_Meldungen_ER_04_ablehnen : ITestModule
+    public partial class Verbuchen_Meldungen_ER_04_Peri_UVA_NEIN : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_004.B_EXOPV_004Repository repository.
         /// </summary>
         public static global::B_EXOPV_004.B_EXOPV_004Repository repo = global::B_EXOPV_004.B_EXOPV_004Repository.Instance;
 
-        static Stapel_verbuchen_Meldungen_ER_04_ablehnen instance = new Stapel_verbuchen_Meldungen_ER_04_ablehnen();
+        static Verbuchen_Meldungen_ER_04_Peri_UVA_NEIN instance = new Verbuchen_Meldungen_ER_04_Peri_UVA_NEIN();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Stapel_verbuchen_Meldungen_ER_04_ablehnen()
+        public Verbuchen_Meldungen_ER_04_Peri_UVA_NEIN()
         {
             Jahr = "2018";
         }
@@ -47,7 +47,7 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Stapel_verbuchen_Meldungen_ER_04_ablehnen Instance
+        public static Verbuchen_Meldungen_ER_04_Peri_UVA_NEIN Instance
         {
             get { return instance; }
         }
@@ -110,8 +110,8 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
             // ER_04 Meldung UVA-Periode
             Report.Log(ReportLevel.Info, "Section", "ER_04 Meldung UVA-Periode", new RecordItemIndex(5));
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.FakturenPruefung'", repo.DlgMessageBox.FakturenPruefungInfo, new ActionTimeout(60000), new RecordItemIndex(6));
-            repo.DlgMessageBox.FakturenPruefungInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(6));
+            Delay.Duration(2000, false);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='UVA für 2018-5 ist schon abgeschlossen.\r\n\r\nBitte UVA-Termin korrigieren! \r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "UVA für 2018-5 ist schon abgeschlossen.\r\n\r\nBitte UVA-Termin korrigieren! \r\n");

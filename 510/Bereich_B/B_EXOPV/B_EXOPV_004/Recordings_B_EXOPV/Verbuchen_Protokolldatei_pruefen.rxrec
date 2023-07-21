@@ -2254,6 +2254,36 @@ H51LRQAwBh2H5075vQfnS0UAJlvQfnRS0UAf/9k=
 				Anzahl Buchungen verbucht 4  Summe verbucht: 16800,00
 			</matchvalue>
 		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a0d2ee86-7da8-4549-934d-ea4783ede905">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ac8e93ef-39e2-41c3-bbd0-4ee6b455357e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Exop: 24	Beleg: ER_03_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!
+Exop: 25	Beleg: ER_04_B_EXOPV_004: Jahr/Monat au&#223;erhalb erlaubter Perioden!
+Exop: 25	Beleg: ER_04_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!
+ 
+------------------------------------------------------------------------------------
+[100] Fehlerhafte Zeilen wurden mit Status &gt;F&lt; in Schnittstelle gespeichert
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="97f67057-ca21-4199-ac02-38c60f65a0ce"

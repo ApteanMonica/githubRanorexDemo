@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_EXOPV_004.Recordings_B_EXOPV
 {
-    public partial class Stapel_verbuchen_Meldungen_ER_unklar_A_2_UVA_1_JA_1_NEIN
+    public partial class Verbuchen_Meldungen_ER_06_nur_UVA_AENDERN
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

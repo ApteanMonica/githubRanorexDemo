@@ -134,6 +134,9 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Anzahl Buchungen verbucht 4  Summe verbucht: 16800,00') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(13));
             Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Anzahl Buchungen verbucht 4  Summe verbucht: 16800,00");
             
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 24\tBeleg: ER_03_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!\r\nExop: 25\tBeleg: ER_04_B_EXOPV_004: Jahr/Monat außerhalb erlaubter Perioden!\r\nExop: 25\tBeleg: ER_04_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!\r\n \r\n------------------------------------------------------------------------------------\r\n[100] Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(14));
+            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Exop: 24\tBeleg: ER_03_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!\r\nExop: 25\tBeleg: ER_04_B_EXOPV_004: Jahr/Monat außerhalb erlaubter Perioden!\r\nExop: 25\tBeleg: ER_04_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!\r\n \r\n------------------------------------------------------------------------------------\r\n[100] Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert");
+            
         }
 
 #region Image Feature Data

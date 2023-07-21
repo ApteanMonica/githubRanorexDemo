@@ -24,22 +24,22 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Stapel_verbuchen_Meldungen_ER_unklar_A_2_UVA_1_JA_1_NEIN recording.
+    ///The Verbuchen_Meldungen_ER_02_nur_UVA_JA recording.
     /// </summary>
     [TestModule("68df4bac-4497-4fe0-8120-38de04e18f0a", ModuleType.Recording, 1)]
-    public partial class Stapel_verbuchen_Meldungen_ER_unklar_A_2_UVA_1_JA_1_NEIN : ITestModule
+    public partial class Verbuchen_Meldungen_ER_02_nur_UVA_JA : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_004.B_EXOPV_004Repository repository.
         /// </summary>
         public static global::B_EXOPV_004.B_EXOPV_004Repository repo = global::B_EXOPV_004.B_EXOPV_004Repository.Instance;
 
-        static Stapel_verbuchen_Meldungen_ER_unklar_A_2_UVA_1_JA_1_NEIN instance = new Stapel_verbuchen_Meldungen_ER_unklar_A_2_UVA_1_JA_1_NEIN();
+        static Verbuchen_Meldungen_ER_02_nur_UVA_JA instance = new Verbuchen_Meldungen_ER_02_nur_UVA_JA();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Stapel_verbuchen_Meldungen_ER_unklar_A_2_UVA_1_JA_1_NEIN()
+        public Verbuchen_Meldungen_ER_02_nur_UVA_JA()
         {
             Jahr = "2018";
             UVA_Monat_13_offen = "13";
@@ -48,7 +48,7 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Stapel_verbuchen_Meldungen_ER_unklar_A_2_UVA_1_JA_1_NEIN Instance
+        public static Verbuchen_Meldungen_ER_02_nur_UVA_JA Instance
         {
             get { return instance; }
         }
@@ -105,8 +105,8 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
 
             Init();
 
-            // ER ??a1 Meldung UVA-Datum
-            Report.Log(ReportLevel.Info, "Section", "ER ??a1 Meldung UVA-Datum", new RecordItemIndex(0));
+            // ER 02 nur Meldung UVA-Datum
+            Report.Log(ReportLevel.Info, "Section", "ER 02 nur Meldung UVA-Datum", new RecordItemIndex(0));
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.FakturenPruefung'", repo.DlgMessageBox.FakturenPruefungInfo, new ActionTimeout(60000), new RecordItemIndex(1));
             repo.DlgMessageBox.FakturenPruefungInfo.WaitForExists(60000);
@@ -117,8 +117,8 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(3));
             repo.DlgMessageBox.Button0.Click();
             
-            // ER ?? Maske UVA-Datum - neuen UVA-Termin verwenden
-            Report.Log(ReportLevel.Info, "Section", "ER ?? Maske UVA-Datum - neuen UVA-Termin verwenden", new RecordItemIndex(4));
+            // ER 02 Maske UVA-Datum - neuen UVA-Termin verwenden
+            Report.Log(ReportLevel.Info, "Section", "ER 02 Maske UVA-Datum - neuen UVA-Termin verwenden", new RecordItemIndex(4));
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgUva.TitleBar100UVADatum'", repo.DlgUva.TitleBar100UVADatumInfo, new ActionTimeout(60000), new RecordItemIndex(5));
             repo.DlgUva.TitleBar100UVADatumInfo.WaitForExists(60000);
@@ -138,39 +138,6 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
             // ok bis hierher
             Report.Log(ReportLevel.Info, "Mouse", "ok bis hierher\r\nMouse Left Click item 'DlgUva.PbVerwenden' at Center.", repo.DlgUva.PbVerwendenInfo, new RecordItemIndex(10));
             repo.DlgUva.PbVerwenden.Click();
-            
-            // ER ??a2 Meldung UVA-Datum
-            Report.Log(ReportLevel.Info, "Section", "ER ??a2 Meldung UVA-Datum", new RecordItemIndex(11));
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.FakturenPruefung'", repo.DlgMessageBox.FakturenPruefungInfo, new ActionTimeout(60000), new RecordItemIndex(12));
-            repo.DlgMessageBox.FakturenPruefungInfo.WaitForExists(60000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='UVA für 2018-5 ist schon abgeschlossen.\r\n\r\nBitte UVA-Termin korrigieren! \r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "UVA für 2018-5 ist schon abgeschlossen.\r\n\r\nBitte UVA-Termin korrigieren! \r\n");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(14));
-            repo.DlgMessageBox.Button0.Click();
-            
-            // ER ??a2 Maske UVA-Datum - ablehnen - Fehler protokollieren und weiterprüfen
-            Report.Log(ReportLevel.Info, "Section", "ER ??a2 Maske UVA-Datum - ablehnen - Fehler protokollieren und weiterprüfen", new RecordItemIndex(15));
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgUva.TitleBar100UVADatum'", repo.DlgUva.TitleBar100UVADatumInfo, new ActionTimeout(60000), new RecordItemIndex(16));
-            repo.DlgUva.TitleBar100UVADatumInfo.WaitForExists(60000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'UVA-Datum') on item 'DlgUva.TitleBar100UVADatum'.", repo.DlgUva.TitleBar100UVADatumInfo, new RecordItemIndex(17));
-            Validate.AttributeContains(repo.DlgUva.TitleBar100UVADatumInfo, "Text", "UVA-Datum");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='UVA für 2018-05 schon abgeschlossen.') on item 'DlgUva.DfText'.", repo.DlgUva.DfTextInfo, new RecordItemIndex(18));
-            Validate.AttributeEqual(repo.DlgUva.DfTextInfo, "Text", "UVA für 2018-05 schon abgeschlossen.");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'DlgUva.Jahr_Vorschlag'.", repo.DlgUva.Jahr_VorschlagInfo, new RecordItemIndex(19));
-            Validate.AttributeEqual(repo.DlgUva.Jahr_VorschlagInfo, "Text", Jahr);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_Monat_13_offen) on item 'DlgUva.Monat_Vorschlag'.", repo.DlgUva.Monat_VorschlagInfo, new RecordItemIndex(20));
-            Validate.AttributeEqual(repo.DlgUva.Monat_VorschlagInfo, "Text", UVA_Monat_13_offen);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUva.PbNichtverwenden' at Center.", repo.DlgUva.PbNichtverwendenInfo, new RecordItemIndex(21));
-            repo.DlgUva.PbNichtverwenden.Click();
             
         }
 

@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_EXOPV_004.Recordings_B_EXOPV
 {
-    public partial class Stapel_pruefen_Meldungen_ER_04_ablehnen
+    public partial class Pruefen_Meldungen_ER_06_nur_UVA_ablehnen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
