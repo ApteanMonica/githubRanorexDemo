@@ -24,7 +24,7 @@ namespace B_EXOPV_003.Recordings_B_EXOPS
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Belege_in_Schnittstelle_pruefen_B_nach_Ueberleitung recording.
+    ///The Belege_in_Schnittstelle_pruefen_B_nach_UEberleitung recording.
     /// </summary>
     [TestModule("c150558c-ff75-42c1-8afb-15785852754b", ModuleType.Recording, 1)]
     public partial class Belege_in_Schnittstelle_pruefen_B_nach_Ueberleitung : ITestModule
