@@ -181,48 +181,6 @@
 			id="709abd95-dc28-4e2c-9b3a-07c458467fbf"
 			name="setup">
 			</setup>
-			<smartfoldernode
-			id="741401cd-c255-4c4b-a2c9-c7e598972b16"
-			name="510,_511">
-				<conditiongroup
-				comparison="AND"
-				enabled="True">
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Servername"
-								id="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="SBG-RANOAGENT2">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Servername"
-								id="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
 			<testmodule
 			id="775ebf23-bc40-4446-93ab-f50605d627d1"
 			name="Meldung_bereits_erfolgte_Berechnung"
@@ -464,6 +422,12 @@
 			name="teardown">
 			</teardown>
 			<testmodule
+			id="c442c9db-9f11-421c-b2a3-7fc79c33bc28"
+			name="Umgehung_SQL_Fehler_521"
+			ref="f68f114f-721e-4b33-9eed-8bc9eba9bd24"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="c8f30a91-62a6-419e-b51f-8d6b3b82f86e"
 			name="Wiederholung_Berechnung_AfA"
 			ref="e56ccb67-eb92-48de-b73e-a3f27c9956db"
@@ -515,11 +479,19 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="fa60cffc-94ba-4a51-b707-5be186611feb"
+			name="510;_511">
+			</smartfoldernode>
 			<testmodule
+			enabled="False"
 			id="ff9cba60-fec6-47b5-90aa-e127584aeaff"
 			name="Umgehungsloesung_Meldung_start"
 			ref="b6eb0bd7-41d9-4e20-9204-82d01a8831fa"
 			type="Recording">
+				<description>
+					<![CDATA[Nach Lösung des Verhaltens wieder rauslöschen]]>
+				</description>
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -548,18 +520,22 @@
 						id="a21f0d70-3842-490d-802e-ac5e768a1a34"
 						name="Einlesen_des_Ranoagent">
 						</testmodule>
+						<smartfoldernode
+						id="fa60cffc-94ba-4a51-b707-5be186611feb"
+						name="510;_511">
+						</smartfoldernode>
 						<testmodule
 						id="38afbd31-b39f-4e76-a8a0-64dd3a9a1015"
 						name="AfA_berechnen">
 						</testmodule>
 						<testmodule
+						id="c442c9db-9f11-421c-b2a3-7fc79c33bc28"
+						name="Umgehung_SQL_Fehler_521">
+						</testmodule>
+						<testmodule
 						id="c8f30a91-62a6-419e-b51f-8d6b3b82f86e"
 						name="Wiederholung_Berechnung_AfA">
 						</testmodule>
-						<smartfoldernode
-						id="741401cd-c255-4c4b-a2c9-c7e598972b16"
-						name="510,_511">
-						</smartfoldernode>
 						<testmodule
 						id="775ebf23-bc40-4446-93ab-f50605d627d1"
 						name="Meldung_bereits_erfolgte_Berechnung">
@@ -654,10 +630,10 @@
 			id="4bcc8d27-c65d-4d90-a663-d47bf3d8cf9e">
 			</testcontainer>
 			<testcontainer
-			id="741401cd-c255-4c4b-a2c9-c7e598972b16">
+			id="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763">
 			</testcontainer>
 			<testcontainer
-			id="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763">
+			id="fa60cffc-94ba-4a51-b707-5be186611feb">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
