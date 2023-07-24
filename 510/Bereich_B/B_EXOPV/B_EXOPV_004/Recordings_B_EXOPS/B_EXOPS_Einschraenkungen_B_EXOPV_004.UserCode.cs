@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_EXOPV_004.Recordings_B_EXOPS
 {
-    public partial class Einschraenkungen_B_EXOPV_004_neu_laden
+    public partial class B_EXOPS_Einschraenkungen_B_EXOPV_004
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

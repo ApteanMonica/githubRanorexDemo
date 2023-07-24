@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_EXOPV_004.Recordings_B_EXOPS
 {
-    public partial class Statuskontrolle_nach_Pruefung
+    public partial class B_EXOPS_Statuskontrolle_nach_Verbuchung
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -7,6 +7,9 @@
 			name="Pruefen_Meldungen_ER_04_Peri_UVA_ablehnen"
 			ref="4f82292a-1313-4531-bfab-ffdb55561c4f"
 			type="Recording">
+				<description>
+					<![CDATA[BUG 37348: BUG 37348: falscher Vorschlag UVA 2019/5]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Jahr"
@@ -29,7 +32,7 @@
 			ref="a7951846-695d-4a34-b0cf-2956f1975d69"
 			type="Recording">
 				<description>
-					<![CDATA[BUG 37348 FEHLER? KEINE UVA-MELDUNG FÜR ER 05 - wird (korrekt) in das UVA-Monat 2018/13 verbucht.]]>
+					<![CDATA[BUG 37348 FEHLER KEINE UVA-MELDUNG beim Verbchen, (beim Prüfen falscher Vorschlag 2019/05 - wird (korrekt) in das UVA-Monat 2018/13 verbucht.]]>
 				</description>
 				<databinding>
 					<var
@@ -51,122 +54,106 @@
 			name="B_EXOPV_004"
 			reportlevel="Info;20">
 				<description>
-					<![CDATA[<table width="1099" style="width: 826pt; border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><font color="#000000" face="Times New Roman" size="3">
+					<![CDATA[<font color="#000000" face="Times New Roman" size="3"><p><font color="#000000" face="Times New Roman" size="3">BUG 37348</font></p><font face="Times New Roman" size="3"><p><table width="859" style="width: 646pt; border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0">
 
- </font><colgroup><col width="60" style="width: 45pt; mso-width-source: userset; mso-width-alt: 2194;"><font color="#000000" face="Times New Roman" size="3">
- </font><col width="93" style="width: 70pt; mso-width-source: userset; mso-width-alt: 3401;"><font color="#000000" face="Times New Roman" size="3">
- </font><col width="112" style="width: 84pt; mso-width-source: userset; mso-width-alt: 4096;"><font color="#000000" face="Times New Roman" size="3">
- </font><col width="96" style="width: 72pt; mso-width-source: userset; mso-width-alt: 3510;"><font color="#000000" face="Times New Roman" size="3">
- </font><col width="122" style="width: 92pt; mso-width-source: userset; mso-width-alt: 4461;"><font color="#000000" face="Times New Roman" size="3">
- </font><col width="106" style="width: 80pt; mso-width-source: userset; mso-width-alt: 3876;"><font color="#000000" face="Times New Roman" size="3">
- </font><col width="53" style="width: 40pt; mso-width-source: userset; mso-width-alt: 1938;"><font color="#000000" face="Times New Roman" size="3">
- </font><col width="80" style="width: 60pt;"><font color="#000000" face="Times New Roman" size="3">
- </font><col width="57" style="width: 43pt; mso-width-source: userset; mso-width-alt: 2084;"><font color="#000000" face="Times New Roman" size="3">
- </font><col width="80" style="width: 60pt;" span="4"><font color="#000000" face="Times New Roman" size="3">
- </font><tbody><tr height="70" style="height: 52.5pt; mso-height-source: userset;"><font color="#000000" face="Times New Roman" size="3">
-  </font><td width="60" height="70" style="border: 0px black; width: 45pt; height: 52.5pt; background-color: transparent;"><strong><font color="#000000" face="Calibri" size="3">Beleg</font></strong></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td width="93" style="border: 0px black; width: 70pt; background-color: transparent;"><strong><font color="#000000" face="Calibri" size="3">Buchungs-<br>
-    Periode 2018</font></strong></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td width="112" style="border: 0px black; width: 84pt; background-color: transparent;"><strong><font color="#000000" face="Calibri" size="3">Buchungs-<br>
-    Periode (offen=2018/6)</font></strong></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td width="96" style="border: 0px black; width: 72pt; background-color: transparent;"><strong><font color="#000000" face="Calibri" size="3">FB-Datum</font></strong></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td width="122" style="border: 0px black; width: 92pt; background-color: transparent;"><strong><font color="#000000" face="Calibri" size="3">UVA-Monat 2018 von FB-Datum</font></strong></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td width="106" style="border: 0px black; width: 80pt; background-color: transparent;"><strong><font color="#000000" face="Calibri" size="3">UVA-Monat (offen=2018/13)</font></strong></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td width="53" style="border: 0px black; width: 40pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">exop keybel</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td width="80" style="border: 0px black; width: 60pt; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td width="57" style="border: 0px black; width: 43pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Periode</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td width="80" style="border: 0px black; width: 60pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">UVA-Monat</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td width="80" style="border: 0px black; width: 60pt; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td width="80" style="border: 0px black; width: 60pt; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td width="80" style="border: 0px black; width: 60pt; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
- </font></tr><font color="#000000" face="Times New Roman" size="3">
- </font><tr height="20" style="height: 15pt;"><font color="#000000" face="Times New Roman" size="3">
-  </font><td height="20" style="border: 0px black; height: 15pt; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">ER_01</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">5</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">gesperrt</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td align="right" style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">30.04.2028</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">4</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">geschlossen</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">22</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">verbuchen</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">2018/6</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">2018/13</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
- </font></tr><font color="#000000" face="Times New Roman" size="3">
- </font><tr height="25" style="height: 18.75pt;"><font color="#000000" face="Times New Roman" size="3">
-  </font><td height="25" style="border: 0px black; height: 18.75pt; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">ER_02</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">5</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">gesperrt</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td align="right" style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">01.06.2018</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">6</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">geschlossen</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">23</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">verbuchen</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">2018/6</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">2018/13</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: transparent; mso-ignore: colspan;" colspan="3"><font color="#000000" face="Calibri" size="3">Fehler? Keine Meldung
-  BU-Periode</font></td><font color="#000000" face="Times New Roman" size="3">
- </font></tr><font color="#000000" face="Times New Roman" size="3">
- </font><tr height="25" style="height: 18.75pt;"><font color="#000000" face="Times New Roman" size="3">
-  </font><td height="25" style="border: 0px windowtext; height: 18.75pt; background-color: rgb(0, 176, 240);"><font color="#000000" face="Calibri" size="3">ER_03</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">5</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">gesperrt</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td align="right" style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">01.05.2018</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">5</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">geschlossen</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">24</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(0, 176, 240);"><font color="#000000" face="Calibri" size="3">ablehnen</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: transparent; mso-ignore: colspan;" colspan="3"><font color="#000000" face="Calibri" size="3">Fehler? Keine Meldung
-  BU-Periode</font></td><font color="#000000" face="Times New Roman" size="3">
- </font></tr><font color="#000000" face="Times New Roman" size="3">
- </font><tr height="25" style="height: 18.75pt;"><font color="#000000" face="Times New Roman" size="3">
-  </font><td height="25" style="border: 0px windowtext; height: 18.75pt; background-color: rgb(0, 176, 240);"><font color="#000000" face="Calibri" size="3">ER_04</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">7</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">gesperrt</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td align="right" style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">30.05.2018</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">5</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">geschlossen</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">25</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(0, 176, 240);"><font color="#000000" face="Calibri" size="3">ablehnen</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: yellow; mso-ignore: colspan;" colspan="3"><font color="#000000" face="Calibri" size="3">Fehler: UVA-Vorschlag
-  2019/5 falsch</font></td><font color="#000000" face="Times New Roman" size="3">
- </font></tr><font color="#000000" face="Times New Roman" size="3">
- </font><tr height="25" style="height: 18.75pt;"><font color="#000000" face="Times New Roman" size="3">
-  </font><td height="25" style="border: 0px black; height: 18.75pt; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">ER_05</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px windowtext; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">6</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px windowtext; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">offen</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td align="right" style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">01.06.2018</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">6</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">geschlossen</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">26</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">verbuchen</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">2018/6</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">2018/13</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: yellow; mso-ignore: colspan;" colspan="3"><font color="#000000" face="Calibri" size="3">Fehler? keine Meldung
-  UVA-Monat</font></td><font color="#000000" face="Times New Roman" size="3">
- </font></tr><font color="#000000" face="Times New Roman" size="3">
- </font><tr height="25" style="height: 18.75pt;"><font color="#000000" face="Times New Roman" size="3">
-  </font><td height="25" style="border: 0px black; height: 18.75pt; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">ER_06</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px windowtext; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">6</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px windowtext; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">offen</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td align="right" style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">25.05.2018</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">5</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">geschlossen</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">27</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">verbuchen</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">2018/6</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">2018/13</font></td><font color="#000000" face="Times New Roman" size="3">
-  </font><td style="border: 0px black; background-color: yellow; mso-ignore: colspan;" colspan="3"><font color="#000000" face="Calibri" size="3">Fehler: UVA-Vorschlag
-  2019/5 falsch</font></td><font color="#000000" face="Times New Roman" size="3">
- </font></tr><font color="#000000" face="Times New Roman" size="3">
+ <colgroup><col width="60" style="width: 45pt; mso-width-source: userset; mso-width-alt: 2194;">
+ <col width="93" style="width: 70pt; mso-width-source: userset; mso-width-alt: 3401;">
+ <col width="112" style="width: 84pt; mso-width-source: userset; mso-width-alt: 4096;">
+ <col width="96" style="width: 72pt; mso-width-source: userset; mso-width-alt: 3510;">
+ <col width="122" style="width: 92pt; mso-width-source: userset; mso-width-alt: 4461;">
+ <col width="106" style="width: 80pt; mso-width-source: userset; mso-width-alt: 3876;">
+ <col width="53" style="width: 40pt; mso-width-source: userset; mso-width-alt: 1938;">
+ <col width="80" style="width: 60pt;">
+ <col width="57" style="width: 43pt; mso-width-source: userset; mso-width-alt: 2084;">
+ <col width="80" style="width: 60pt; mso-width-source: userset; mso-width-alt: 2925;">
+ <tbody><tr height="70" style="height: 52.5pt; mso-height-source: userset;">
+  <td width="60" height="70" style="border: 0px black; width: 45pt; height: 52.5pt; background-color: transparent;"><strong><font face="Calibri">Beleg</font></strong></td>
+  <td width="93" style="border: 0px black; width: 70pt; background-color: transparent;"><strong><font face="Calibri">Buchungs-<br>
+    Periode 2018</font></strong></td>
+  <td width="112" style="border: 0px black; width: 84pt; background-color: transparent;"><strong><font face="Calibri">Buchungs-<br>
+    Periode (offen=2018/6)</font></strong></td>
+  <td width="96" style="border: 0px black; width: 72pt; background-color: transparent;"><strong><font face="Calibri">FB-Datum</font></strong></td>
+  <td width="122" style="border: 0px black; width: 92pt; background-color: transparent;"><strong><font face="Calibri">UVA-Monat 2018 von FB-Datum</font></strong></td>
+  <td width="106" style="border: 0px black; width: 80pt; background-color: transparent;"><strong><font face="Calibri">UVA-Monat (offen=2018/13)</font></strong></td>
+  <td width="53" style="border: 0px black; width: 40pt; background-color: transparent;"><font face="Calibri">exop keybel</font></td>
+  <td width="80" style="border: 0px black; width: 60pt; background-color: transparent;"></td>
+  <td width="57" style="border: 0px black; width: 43pt; background-color: transparent;"><font face="Calibri">Periode</font></td>
+  <td width="80" style="border: 0px black; width: 60pt; background-color: transparent;"><font face="Calibri">UVA-Monat</font></td>
+ </tr>
+ <tr height="20" style="height: 15pt;">
+  <td height="20" style="border: 0px black; height: 15pt; background-color: rgb(226, 239, 218);"><font face="Calibri">ER_01</font></td>
+  <td style="border: 0px black; background-color: rgb(255, 230, 153);"><font face="Calibri">5</font></td>
+  <td style="border: 0px black; background-color: rgb(255, 230, 153);"><font face="Calibri">gesperrt</font></td>
+  <td align="right" style="border: 0px black; background-color: transparent;"><font face="Calibri">30.04.2028</font></td>
+  <td style="border: 0px black; background-color: rgb(255, 230, 153);"><font face="Calibri">4</font></td>
+  <td style="border: 0px black; background-color: rgb(255, 230, 153);"><font face="Calibri">geschlossen</font></td>
+  <td style="border: 0px black; background-color: transparent;"><font face="Calibri">22</font></td>
+  <td style="border: 0px black; background-color: rgb(226, 239, 218);"><font face="Calibri">verbuchen</font></td>
+  <td style="border: 0px black; background-color: rgb(226, 239, 218);"><font face="Calibri">2018/6</font></td>
+  <td style="border: 0px black; background-color: rgb(226, 239, 218);"><font face="Calibri">2018/13</font></td>
+ </tr>
+ <tr height="25" style="height: 18.75pt;">
+  <td height="25" style="border: 0px black; height: 18.75pt; background-color: rgb(226, 239, 218);"><font face="Calibri">ER_02</font></td>
+  <td style="border: 0px black; background-color: rgb(255, 230, 153);"><font face="Calibri">5</font></td>
+  <td style="border: 0px black; background-color: rgb(255, 230, 153);"><font face="Calibri">gesperrt</font></td>
+  <td align="right" style="border: 0px black; background-color: transparent;"><font face="Calibri">01.06.2018</font></td>
+  <td style="border: 0px black; background-color: rgb(255, 230, 153);"><font face="Calibri">6</font></td>
+  <td style="border: 0px black; background-color: rgb(255, 230, 153);"><font face="Calibri">geschlossen</font></td>
+  <td style="border: 0px black; background-color: transparent;"><font face="Calibri">23</font></td>
+  <td style="border: 0px black; background-color: rgb(226, 239, 218);"><font face="Calibri">verbuchen</font></td>
+  <td style="border: 0px black; background-color: rgb(226, 239, 218);"><font face="Calibri">2018/6</font></td>
+  <td style="border: 0px black; background-color: rgb(226, 239, 218);"><font face="Calibri">2018/13</font></td>
+ </tr>
+ <tr height="25" style="height: 18.75pt;">
+  <td height="25" style="border: 0px windowtext; height: 18.75pt; background-color: rgb(0, 176, 240);"><font face="Calibri">ER_03</font></td>
+  <td style="border: 0px black; background-color: rgb(255, 230, 153);"><font face="Calibri">5</font></td>
+  <td style="border: 0px black; background-color: rgb(255, 230, 153);"><font face="Calibri">gesperrt</font></td>
+  <td align="right" style="border: 0px black; background-color: transparent;"><font face="Calibri">01.05.2018</font></td>
+  <td style="border: 0px black; background-color: rgb(255, 230, 153);"><font face="Calibri">5</font></td>
+  <td style="border: 0px black; background-color: rgb(255, 230, 153);"><font face="Calibri">geschlossen</font></td>
+  <td style="border: 0px black; background-color: transparent;"><font face="Calibri">24</font></td>
+  <td style="border: 0px black; background-color: rgb(0, 176, 240);"><font face="Calibri">ablehnen</font></td>
+  <td style="border: 0px black; background-color: transparent;"></td>
+  <td style="border: 0px black; background-color: transparent;"></td>
+ </tr>
+ <tr height="25" style="height: 18.75pt;">
+  <td height="25" style="border: 0px windowtext; height: 18.75pt; background-color: rgb(0, 176, 240);"><font face="Calibri">ER_04</font></td>
+  <td style="border: 0px black; background-color: rgb(255, 230, 153);"><font face="Calibri">7</font></td>
+  <td style="border: 0px black; background-color: rgb(255, 230, 153);"><font face="Calibri">gesperrt</font></td>
+  <td align="right" style="border: 0px black; background-color: transparent;"><font face="Calibri">30.05.2018</font></td>
+  <td style="border: 0px black; background-color: rgb(255, 230, 153);"><font face="Calibri">5</font></td>
+  <td style="border: 0px black; background-color: rgb(255, 230, 153);"><font face="Calibri">geschlossen</font></td>
+  <td style="border: 0px black; background-color: transparent;"><font face="Calibri">25</font></td>
+  <td style="border: 0px black; background-color: rgb(0, 176, 240);"><font face="Calibri">ablehnen</font></td>
+  <td style="border: 0px black; background-color: transparent;"></td>
+  <td style="border: 0px black; background-color: transparent;"></td>
+ </tr>
+ <tr height="25" style="height: 18.75pt;">
+  <td height="25" style="border: 0px black; height: 18.75pt; background-color: rgb(226, 239, 218);"><font face="Calibri">ER_05</font></td>
+  <td style="border: 0px windowtext; background-color: rgb(226, 239, 218);"><font face="Calibri">6</font></td>
+  <td style="border: 0px windowtext; background-color: rgb(226, 239, 218);"><font face="Calibri">offen</font></td>
+  <td align="right" style="border: 0px black; background-color: transparent;"><font face="Calibri">01.06.2018</font></td>
+  <td style="border: 0px black; background-color: rgb(255, 230, 153);"><font face="Calibri">6</font></td>
+  <td style="border: 0px black; background-color: rgb(255, 230, 153);"><font face="Calibri">geschlossen</font></td>
+  <td style="border: 0px black; background-color: transparent;"><font face="Calibri">26</font></td>
+  <td style="border: 0px black; background-color: rgb(226, 239, 218);"><font face="Calibri">verbuchen</font></td>
+  <td style="border: 0px black; background-color: rgb(226, 239, 218);"><font face="Calibri">2018/6</font></td>
+  <td style="border: 0px black; background-color: rgb(226, 239, 218);"><font face="Calibri">2018/13</font></td>
+ </tr>
+ <tr height="25" style="height: 18.75pt;">
+  <td height="25" style="border: 0px black; height: 18.75pt; background-color: rgb(226, 239, 218);"><font face="Calibri">ER_06</font></td>
+  <td style="border: 0px windowtext; background-color: rgb(226, 239, 218);"><font face="Calibri">6</font></td>
+  <td style="border: 0px windowtext; background-color: rgb(226, 239, 218);"><font face="Calibri">offen</font></td>
+  <td align="right" style="border: 0px black; background-color: transparent;"><font face="Calibri">25.05.2018</font></td>
+  <td style="border: 0px black; background-color: rgb(255, 230, 153);"><font face="Calibri">5</font></td>
+  <td style="border: 0px black; background-color: rgb(255, 230, 153);"><font face="Calibri">geschlossen</font></td>
+  <td style="border: 0px black; background-color: transparent;"><font face="Calibri">27</font></td>
+  <td style="border: 0px black; background-color: rgb(226, 239, 218);"><font face="Calibri">verbuchen</font></td>
+  <td style="border: 0px black; background-color: rgb(226, 239, 218);"><font face="Calibri">2018/6</font></td>
+  <td style="border: 0px black; background-color: rgb(226, 239, 218);"><font face="Calibri">2018/13</font></td>
+ </tr>
 
-</font></tbody></table><p><br></p><p>Bei diesem Test müssen Belege in der Schnittstelle für gesperrte Buchungsperioden/UVA-Monate angezeigt und korrigiert werden können. <br>Weiters wird geprüft ob die Ermittlung des UVA-Monats lt. Buchungssteuerung (nach Rechnungsdatum bei Lieferanten) korrekt funktioniert. </p><p>Lieferant 303200, Geschäftsjahr 2018 <br>Buchungs-Periode nur 6 offen, alle anderen gesperrt; <br>UVA Monate 2018 1-12 abgeschlossen, nur 2018/13 offen</p><p>1. Vorhandene Belege in der Schnittstelle werden geprüft und Belege für gesperrte Perioden/geschlossene UVA-Monate auf Status F gestellt. <br>Nach Zurücksetzen auf Status N werden die Belege verbucht.</p><p>2. Verbuchen: <br>ER01 Vorschlag Buchungsperiode 2018/6 und UVA-Monat 2018/13 akzeptieren<br>ER02 Vorschlag UVA-Monat 2018/13 akzeptieren (es wird keine Meldung bzgl. Buchungsperiode ausgegeben)<br>ER03 Vorschlag UVA-Monat 2018/13 ablehnen (Status F) (es wird keine Meldung bzgl. Buchungsperiode ausgegeben)<br>ER04 Vorschlag Buchungsperiode 2018/6 und UVA-Monat ablehnen - Falscher Vorschlag UVA-Monat 2019/5 statt 2018/13<br>ER05 Vorschlag UVA-Monat 2018/13 akzeptieren Fehler: es wird keine Meldung ausgegeben! (ev weil ER02 mit gleichem UVA-Monat 2018-6 akzeptiert wurde?)<br>ER06 Vorschlag UVA-Monat 2018/13 akzeptieren Fehler: Falscher Vorschlag UVA-Monat 2019/5 statt 2018/13</p><p>3. Kontrolle Buchungen</p>]]>
+</tbody></table></p></font></font><p><font color="#000000" face="Times New Roman" size="3"><font face="Times New Roman" size="3"></font><font color="#000000" face="Times New Roman" size="3"><br></font></font></p><p><font color="#000000" face="Times New Roman" size="3"><font color="#000000" face="Times New Roman" size="3">Bei diesem Test müssen Belege in der Schnittstelle für gesperrte Buchungsperioden/UVA-Monate angezeigt und korrigiert werden können. <br>Weiters wird geprüft ob die Ermittlung des UVA-Monats lt. Buchungssteuerung (nach Rechnungsdatum bei Lieferanten) korrekt funktioniert. </font></font></p><p><font color="#000000" face="Times New Roman" size="3">Lieferant 303200, Geschäftsjahr 2018 <br>Buchungs-Periode nur 6 offen, alle anderen gesperrt; <br>UVA Monate 2018 1-12 abgeschlossen, nur 2018/13 offen</font></p><p><font color="#000000" face="Times New Roman" size="3">1. Vorhandene Belege in der Schnittstelle werden geprüft und Belege für gesperrte Perioden/geschlossene UVA-Monate auf Status F gestellt. <br>Nach Zurücksetzen auf Status N werden die Belege verbucht.</font></p><p><font color="#000000" face="Times New Roman" size="3">2. Verbuchen: <br>ER01 Vorschlag Buchungsperiode 2018/6 und UVA-Monat 2018/13 akzeptieren<br>ER02 Vorschlag UVA-Monat 2018/13 akzeptieren <br>ER03 Vorschlag UVA-Monat 2018/13 ablehnen (Status F)<br>ER04 Vorschlag Buchungsperiode 2018/6 und UVA-Monat ablehnen<br>ER05 Vorschlag UVA-Monat 2018/13 akzeptieren<br>ER06 Vorschlag UVA-Monat 2018/13 akzeptieren</font></p><p><font color="#000000" face="Times New Roman" size="3">3. Kontrolle Belege nach Verbuchung: Status in B_EXOPS, verbuchte Buchungen in B_BUAB</font></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -354,6 +341,9 @@
 			name="Pruefen_Meldungen_ER_05_nur_UVA_ablehnen"
 			ref="070a7ae4-bc86-4cdc-8657-7f2779946287"
 			type="Recording">
+				<description>
+					<![CDATA[BUG 37348: falscher Vorschlag UVA 2019/5]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Jahr"
@@ -469,6 +459,9 @@
 			name="Pruefen_Meldungen_ER_06_nur_UVA_ablehnen"
 			ref="b639a367-8acb-4756-8001-f1e5bb06fa39"
 			type="Recording">
+				<description>
+					<![CDATA[BUG 37348: falscher Vorschlag UVA 2019/5]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Jahr"
@@ -524,7 +517,7 @@
 			</teardown>
 			<testmodule
 			id="68a01840-1177-46bc-ab45-6e4b97f1fdf7"
-			name="Stapel_pruefen_Protokolldatei"
+			name="Pruefen_Protokolldatei_kontrollieren"
 			ref="0ad15bf6-9ef3-458a-bfdc-b4bc2d8f280a"
 			type="Recording">
 				<description>
@@ -547,7 +540,7 @@
 			</testmodule>
 			<testmodule
 			id="6e07a282-adfb-44d2-95d3-708732a54479"
-			name="Einschraenkungen_B_EXOPV_004"
+			name="B_EXOPS_Einschraenkungen_B_EXOPV_004"
 			ref="80b2c675-7c5f-4008-9269-1ce0dc94775e"
 			type="Recording">
 				<databinding>
@@ -581,7 +574,7 @@
 			</testmodule>
 			<testmodule
 			id="7aeff25b-c37b-41f0-a359-208a102e88fa"
-			name="Statuskontrolle_nach_Pruefung"
+			name="B_EXOPS_Statuskontrolle_nach_Pruefung"
 			ref="9af6b51e-9e68-4d86-9815-b395918539b3"
 			type="Recording">
 				<databinding>
@@ -666,7 +659,7 @@
 			</testmodule>
 			<testmodule
 			id="866b963c-871f-4999-91b8-ed3dd05ede02"
-			name="Einschraenkungen_B_EXOPV_004_neu_laden"
+			name="B_EXOPS_Einschraenkungen_B_EXOPV_004_neu_laden"
 			ref="7901477e-29d3-4acd-bdeb-9355f291447d"
 			type="Recording">
 				<databinding>
@@ -717,7 +710,7 @@
 			</testmodule>
 			<testmodule
 			id="91a23ade-30ad-41af-bc6a-1f93e1fc0715"
-			name="Einschraenkungen_B_EXOPV_004_neu_laden"
+			name="B_EXOPS_Einschraenkungen_B_EXOPV_004_neu_laden"
 			ref="7901477e-29d3-4acd-bdeb-9355f291447d"
 			type="Recording">
 				<databinding>
@@ -762,6 +755,9 @@
 			name="Pruefen_Meldungen_ER_03_nur_UVA_ablehnen"
 			ref="418a6876-c4d2-41ed-baf4-e73667d3e120"
 			type="Recording">
+				<description>
+					<![CDATA[BUG 37348: keine Peri-, nur UVA-Meldung]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Jahr"
@@ -844,7 +840,7 @@
 			</testcase>
 			<testmodule
 			id="d9335132-db59-4961-b411-7a84723927d9"
-			name="Statuskontrolle_nach_Verbuchung"
+			name="B_EXOPS_Statuskontrolle_nach_Verbuchung"
 			ref="0a603c18-304d-4aaf-8fc2-5acebb179d58"
 			type="Recording">
 				<databinding>
@@ -976,6 +972,9 @@
 			name="Pruefen_Meldungen_ER_02_nur_UVA_ablehnen"
 			ref="5a97b737-5b4c-493b-a638-75aa0dd405e2"
 			type="Recording">
+				<description>
+					<![CDATA[BUG 37348: keine Peri-, nur UVA-Meldung]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Jahr"
@@ -1054,7 +1053,7 @@
 			</testmodule>
 			<testmodule
 			id="fde998b5-c56f-489a-bfcf-ae7238bfc22d"
-			name="Belege_pruefen_vor_Pruefung_Verbuchung"
+			name="B_EXOPS_Belege_pruefen_vor_Pruefung_Verbuchung"
 			ref="63fa5680-1386-41e3-ba86-30b83e2a0c65"
 			type="Recording">
 				<databinding>
@@ -1145,11 +1144,11 @@
 						</setup>
 						<testmodule
 						id="6e07a282-adfb-44d2-95d3-708732a54479"
-						name="Einschraenkungen_B_EXOPV_004">
+						name="B_EXOPS_Einschraenkungen_B_EXOPV_004">
 						</testmodule>
 						<testmodule
 						id="fde998b5-c56f-489a-bfcf-ae7238bfc22d"
-						name="Belege_pruefen_vor_Pruefung_Verbuchung">
+						name="B_EXOPS_Belege_pruefen_vor_Pruefung_Verbuchung">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -1201,7 +1200,7 @@
 						</testmodule>
 						<testmodule
 						id="68a01840-1177-46bc-ab45-6e4b97f1fdf7"
-						name="Stapel_pruefen_Protokolldatei">
+						name="Pruefen_Protokolldatei_kontrollieren">
 						</testmodule>
 						<teardown
 						id="6500fa25-202f-42db-b1e8-ce5948044d6f"
@@ -1217,11 +1216,11 @@
 					name="B_EXOPS_Status_prüfen_und_auf_N_zurücksetzen">
 						<testmodule
 						id="866b963c-871f-4999-91b8-ed3dd05ede02"
-						name="Einschraenkungen_B_EXOPV_004_neu_laden">
+						name="B_EXOPS_Einschraenkungen_B_EXOPV_004_neu_laden">
 						</testmodule>
 						<testmodule
 						id="7aeff25b-c37b-41f0-a359-208a102e88fa"
-						name="Statuskontrolle_nach_Pruefung">
+						name="B_EXOPS_Statuskontrolle_nach_Pruefung">
 						</testmodule>
 						<testmodule
 						id="24897fad-9b9b-4b69-a8eb-d2a8523404c3"
@@ -1289,11 +1288,11 @@
 					name="B_EXOPS_Status_nach_Verbuchung_pruefen">
 						<testmodule
 						id="91a23ade-30ad-41af-bc6a-1f93e1fc0715"
-						name="Einschraenkungen_B_EXOPV_004_neu_laden">
+						name="B_EXOPS_Einschraenkungen_B_EXOPV_004_neu_laden">
 						</testmodule>
 						<testmodule
 						id="d9335132-db59-4961-b411-7a84723927d9"
-						name="Statuskontrolle_nach_Verbuchung">
+						name="B_EXOPS_Statuskontrolle_nach_Verbuchung">
 						</testmodule>
 						<teardown
 						id="437f81ba-655a-4adf-9db8-3f390090169f"

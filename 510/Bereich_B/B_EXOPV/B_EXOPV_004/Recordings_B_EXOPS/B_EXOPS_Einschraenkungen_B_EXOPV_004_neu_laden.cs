@@ -24,22 +24,22 @@ namespace B_EXOPV_004.Recordings_B_EXOPS
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Einschraenkungen_B_EXOPV_004_neu_laden recording.
+    ///The B_EXOPS_Einschraenkungen_B_EXOPV_004_neu_laden recording.
     /// </summary>
     [TestModule("7901477e-29d3-4acd-bdeb-9355f291447d", ModuleType.Recording, 1)]
-    public partial class Einschraenkungen_B_EXOPV_004_neu_laden : ITestModule
+    public partial class B_EXOPS_Einschraenkungen_B_EXOPV_004_neu_laden : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_004.B_EXOPV_004Repository repository.
         /// </summary>
         public static global::B_EXOPV_004.B_EXOPV_004Repository repo = global::B_EXOPV_004.B_EXOPV_004Repository.Instance;
 
-        static Einschraenkungen_B_EXOPV_004_neu_laden instance = new Einschraenkungen_B_EXOPV_004_neu_laden();
+        static B_EXOPS_Einschraenkungen_B_EXOPV_004_neu_laden instance = new B_EXOPS_Einschraenkungen_B_EXOPV_004_neu_laden();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Einschraenkungen_B_EXOPV_004_neu_laden()
+        public B_EXOPS_Einschraenkungen_B_EXOPV_004_neu_laden()
         {
             Stapel_Herkunft = "B_EXOPV_004";
         }
@@ -47,7 +47,7 @@ namespace B_EXOPV_004.Recordings_B_EXOPS
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Einschraenkungen_B_EXOPV_004_neu_laden Instance
+        public static B_EXOPS_Einschraenkungen_B_EXOPV_004_neu_laden Instance
         {
             get { return instance; }
         }
