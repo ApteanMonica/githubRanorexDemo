@@ -29,7 +29,7 @@
 			ref="a7951846-695d-4a34-b0cf-2956f1975d69"
 			type="Recording">
 				<description>
-					<![CDATA[FEHLER? KEINE UVA-MELDUNG FÜR ER 05 - wird (korrekt) in das UVA-Monat 2018/13 verbucht.]]>
+					<![CDATA[BUG 37348 FEHLER? KEINE UVA-MELDUNG FÜR ER 05 - wird (korrekt) in das UVA-Monat 2018/13 verbucht.]]>
 				</description>
 				<databinding>
 					<var
@@ -344,20 +344,6 @@
 			name="B_EXOPS_Status_prüfen_und_auf_N_zurücksetzen">
 			</testcase>
 			<testmodule
-			id="2391a0b5-9d3d-4b48-8573-b4215d1bf84a"
-			name="Tagesdatum_ermitteln"
-			ref="a09b5404-0e71-4a58-a6da-16c4289b589e"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Tagesdatum"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="e4dbbc0b-6189-452d-8b5c-9419f834d2e2"
-					variablename="Tagesdatum">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="24897fad-9b9b-4b69-a8eb-d2a8523404c3"
 			name="B_EXOPS_Status_von_F_auf_N_zuruecksetzen"
 			ref="f02590c4-0911-460d-82e3-f903abf59d88"
@@ -443,7 +429,7 @@
 			ref="3ee30bb1-ec4d-4cf6-a609-5976cd909e4d"
 			type="Recording">
 				<description>
-					<![CDATA[FEHLER: UVA-Vorschlag 2019/5 falsch; Workaround UVA-Datum ändern auf 2018/13]]>
+					<![CDATA[BUG 37348 FEHLER: UVA-Vorschlag 2019/5 falsch; Workaround UVA-Datum ändern auf 2018/13]]>
 				</description>
 				<databinding>
 					<var
@@ -542,7 +528,7 @@
 			ref="0ad15bf6-9ef3-458a-bfdc-b4bc2d8f280a"
 			type="Recording">
 				<description>
-					<![CDATA[FEHLER: Beende Verbuchung - statt beende Prüfung]]>
+					<![CDATA[BUG 37348: FEHLER: Beende Verbuchung - statt beende Prüfung]]>
 				</description>
 				<databinding>
 					<var
@@ -667,7 +653,7 @@
 			ref="432d1afa-b3ad-403d-ae28-db5974a3a582"
 			type="Recording">
 				<description>
-					<![CDATA[FEHLER: UVA-Vorschlag 2019/5 falsch;]]>
+					<![CDATA[BUG 37348 FEHLER: UVA-Vorschlag 2019/5 falsch;]]>
 				</description>
 				<databinding>
 					<var
@@ -797,7 +783,7 @@
 			ref="68df4bac-4497-4fe0-8120-38de04e18f0a"
 			type="Recording">
 				<description>
-					<![CDATA[FEHLER? keine Meldung Buchungsperiode]]>
+					<![CDATA[BUG 37348 FEHLER? keine Meldung Buchungsperiode]]>
 				</description>
 				<databinding>
 					<var
@@ -1049,7 +1035,7 @@
 			ref="02216894-0e8b-47e0-8f31-a14f8eaa113a"
 			type="Recording">
 				<description>
-					<![CDATA[FEHLER? keine Meldung Buchungsperiode]]>
+					<![CDATA[BUG 37348FEHLER? keine Meldung Buchungsperiode]]>
 				</description>
 				<databinding>
 					<var
@@ -1327,10 +1313,6 @@
 							<testmodule
 							id="894cfd11-fdf5-4ae0-b1c7-a8a7e8317108"
 							name="Start_B_BUAB">
-							</testmodule>
-							<testmodule
-							id="2391a0b5-9d3d-4b48-8573-b4215d1bf84a"
-							name="Tagesdatum_ermitteln">
 							</testmodule>
 						</setup>
 						<testmodule
