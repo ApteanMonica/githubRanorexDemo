@@ -41,7 +41,7 @@ namespace B_EXOPV_001.Recordings
         /// </summary>
         public Pruefung_Protokolldatei_A_Fehler()
         {
-            Fehlerprotokoll_A = "c:\\temp\\Fehlerprotokoll_b_exopv_001_A.txt";
+            Fehlerprotokoll_A_Datei = "Fehlerprotokoll_b_exopv_001_A.txt";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace B_EXOPV_001.Recordings
 
 #region Variables
 
-        string _Fehlerprotokoll_A;
+        string _Fehlerprotokoll_A_Datei;
 
         /// <summary>
-        /// Gets or sets the value of variable Fehlerprotokoll_A.
+        /// Gets or sets the value of variable Fehlerprotokoll_A_Datei.
         /// </summary>
-        [TestVariable("0dfa114f-0a65-4bf9-af8c-6457e73675f4")]
-        public string Fehlerprotokoll_A
+        [TestVariable("fa310caf-6869-4d88-a933-8cfcd184d550")]
+        public string Fehlerprotokoll_A_Datei
         {
-            get { return _Fehlerprotokoll_A; }
-            set { _Fehlerprotokoll_A = value; }
+            get { return _Fehlerprotokoll_A_Datei; }
+            set { _Fehlerprotokoll_A_Datei = value; }
         }
 
         /// <summary>
@@ -115,8 +115,8 @@ namespace B_EXOPV_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Form100ExterneBuchungenVerbuchen.TitleBar100ExterneBuchungenVerbuche'.", repo.Form100ExterneBuchungenVerbuchen.TitleBar100ExterneBuchungenVerbucheInfo, new RecordItemIndex(0));
             Validate.Exists(repo.Form100ExterneBuchungenVerbuchen.TitleBar100ExterneBuchungenVerbucheInfo);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute AccessibleValue to '$Fehlerprotokoll_A' on item 'Form100ExterneBuchungenVerbuchen.Text_Pfad_Pruefprotokoll'.", repo.Form100ExterneBuchungenVerbuchen.Text_Pfad_PruefprotokollInfo, new RecordItemIndex(1));
-            repo.Form100ExterneBuchungenVerbuchen.Text_Pfad_Pruefprotokoll.Element.SetAttributeValue("AccessibleValue", Fehlerprotokoll_A);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute AccessibleValue to '$Fehlerprotokoll_A_Datei' on item 'Form100ExterneBuchungenVerbuchen.Text_Pfad_Pruefprotokoll'.", repo.Form100ExterneBuchungenVerbuchen.Text_Pfad_PruefprotokollInfo, new RecordItemIndex(1));
+            repo.Form100ExterneBuchungenVerbuchen.Text_Pfad_Pruefprotokoll.Element.SetAttributeValue("AccessibleValue", Fehlerprotokoll_A_Datei);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen_Stapel1_Kassabuch_Stapel2_ERBuch.Zeile_mit_Stapel1_Kassabuch_14_01_2020.Column0_Stapel1' at Center.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen_Stapel1_Kassabuch_Stapel2_ERBuch.Zeile_mit_Stapel1_Kassabuch_14_01_2020.Column0_Stapel1Info, new RecordItemIndex(2));
             repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen_Stapel1_Kassabuch_Stapel2_ERBuch.Zeile_mit_Stapel1_Kassabuch_14_01_2020.Column0_Stapel1.Click();
@@ -184,9 +184,6 @@ namespace B_EXOPV_001.Recordings
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Anzahl Buchungen gelesen  3\r\nAnzahl Buchungen verbucht 0  Summe verbucht: ') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(23));
             Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Anzahl Buchungen gelesen  3\r\nAnzahl Buchungen verbucht 0  Summe verbucht: ");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FehlerprotokollBExopv001TxtEditor.Schliessen' at Center.", repo.FehlerprotokollBExopv001TxtEditor.SchliessenInfo, new RecordItemIndex(24));
-            repo.FehlerprotokollBExopv001TxtEditor.Schliessen.Click();
             
         }
 

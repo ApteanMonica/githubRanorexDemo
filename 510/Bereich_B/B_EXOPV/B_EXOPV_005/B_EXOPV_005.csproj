@@ -215,14 +215,14 @@
       <UserCode>true</UserCode>
       <id>38767e9d-76f1-4ee8-ac89-c8f427d7449c</id>
     </Compile>
-    <Compile Include="Recordings_B_EXOPS\B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren.cs">
-      <DependentUpon>B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren.rxrec</DependentUpon>
+    <Compile Include="Recordings_B_EXOPS\B_EXOPS_Status_Belege_nach_Verbuchung_kontrollieren.cs">
+      <DependentUpon>B_EXOPS_Status_Belege_nach_Verbuchung_kontrollieren.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>d5ab1ecf-dea2-4b79-8d8a-4f6763f17848</id>
       <BoundTo>5aa42863-23b9-41c9-9579-d38c2080de9b</BoundTo>
     </Compile>
-    <Compile Include="Recordings_B_EXOPS\B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren.UserCode.cs">
-      <DependentUpon>B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren.rxrec</DependentUpon>
+    <Compile Include="Recordings_B_EXOPS\B_EXOPS_Status_Belege_nach_Verbuchung_kontrollieren.UserCode.cs">
+      <DependentUpon>B_EXOPS_Status_Belege_nach_Verbuchung_kontrollieren.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>50af3dbf-2522-4de9-a36d-2002d06c7ef6</id>
       <BoundTo>5aa42863-23b9-41c9-9579-d38c2080de9b</BoundTo>
@@ -287,29 +287,53 @@
       <UserCode>true</UserCode>
       <BoundTo>ba90e786-d72d-4fdf-83ff-433a4b146cc9</BoundTo>
     </Compile>
-    <Compile Include="Recordings_B_EXOPV\Fehlerprotokoll_aufrufen.cs">
+    <Compile Include="Recordings_B_EXOPV\Editor_schliessen.cs">
+      <BoundTo>f3483ecf-d6c6-4be9-b938-ba666cedcfd5</BoundTo>
+      <DependentUpon>Editor_schliessen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0f8d17cf-e2e2-49c7-ad75-912a1f1f2a5f</id>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Editor_schliessen.UserCode.cs">
+      <BoundTo>f3483ecf-d6c6-4be9-b938-ba666cedcfd5</BoundTo>
+      <DependentUpon>Editor_schliessen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e655096d-8d98-406c-9613-613d8e11fe77</id>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Fehlerprotokoll_Pruefung_aufrufen.cs">
       <BoundTo>792ec0d8-5db5-426a-ba11-756995bd99fd</BoundTo>
-      <DependentUpon>Fehlerprotokoll_aufrufen.rxrec</DependentUpon>
+      <DependentUpon>Fehlerprotokoll_Pruefung_aufrufen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>8e2bc0a7-b225-4a70-8dc4-0e7c1c895c72</id>
     </Compile>
-    <Compile Include="Recordings_B_EXOPV\Fehlerprotokoll_aufrufen.UserCode.cs">
+    <Compile Include="Recordings_B_EXOPV\Fehlerprotokoll_Pruefung_aufrufen.UserCode.cs">
       <BoundTo>792ec0d8-5db5-426a-ba11-756995bd99fd</BoundTo>
-      <DependentUpon>Fehlerprotokoll_aufrufen.rxrec</DependentUpon>
+      <DependentUpon>Fehlerprotokoll_Pruefung_aufrufen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>e9cd2344-f1bb-4829-9da3-9f509d334c10</id>
     </Compile>
-    <Compile Include="Recordings_B_EXOPV\loeschen_Optionen_aendern_FB_Pruefung_nur_innerhalb_L.cs">
-      <DependentUpon>loeschen_Optionen_aendern_FB_Pruefung_nur_innerhalb_L.rxrec</DependentUpon>
+    <Compile Include="Recordings_B_EXOPV\Fehlerprotokoll_Verbuchung_aufrufen.cs">
+      <DependentUpon>Fehlerprotokoll_Verbuchung_aufrufen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>4061cf29-dee3-4787-8f89-43ed86478d38</id>
-      <BoundTo>6660667f-f4cb-4180-aa96-14c8f8f6ec7a</BoundTo>
+      <id>003659a4-fa8c-4713-b320-bc568a02e9aa</id>
+      <BoundTo>7f0ac3a3-5c58-4e25-a41b-7345b652e19a</BoundTo>
     </Compile>
-    <Compile Include="Recordings_B_EXOPV\loeschen_Optionen_aendern_FB_Pruefung_nur_innerhalb_L.UserCode.cs">
-      <DependentUpon>loeschen_Optionen_aendern_FB_Pruefung_nur_innerhalb_L.rxrec</DependentUpon>
+    <Compile Include="Recordings_B_EXOPV\Fehlerprotokoll_Verbuchung_aufrufen.UserCode.cs">
+      <DependentUpon>Fehlerprotokoll_Verbuchung_aufrufen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>5ad6ae15-915e-47d6-9f9b-6c774b310ad3</id>
-      <BoundTo>6660667f-f4cb-4180-aa96-14c8f8f6ec7a</BoundTo>
+      <id>f65372e3-68cd-4f41-9ba2-87b060e054fa</id>
+      <BoundTo>7f0ac3a3-5c58-4e25-a41b-7345b652e19a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Fehlerprotokoll_Verbuchung_pruefen.cs">
+      <BoundTo>7c7d3ec1-4302-4b5c-82e9-6a8f15115932</BoundTo>
+      <DependentUpon>Fehlerprotokoll_Verbuchung_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>72fbdf78-e200-4d20-a7cb-240fd5ef6527</id>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Fehlerprotokoll_Verbuchung_pruefen.UserCode.cs">
+      <BoundTo>7c7d3ec1-4302-4b5c-82e9-6a8f15115932</BoundTo>
+      <DependentUpon>Fehlerprotokoll_Verbuchung_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>625937b9-b0b6-4277-b7fb-163b4538638a</id>
     </Compile>
     <Compile Include="Recordings_B_EXOPV\Optionen_Default_setzen_pruefen.cs">
       <BoundTo>ab4ac2d2-5506-4425-99b9-d4e5d354993e</BoundTo>
@@ -506,7 +530,7 @@
       <id>f0705045-62bd-4ccf-af31-28298718fb69</id>
       <recordtableid>d8201208-b1ad-4756-b52e-522408436296</recordtableid>
     </None>
-    <None Include="Recordings_B_EXOPS\B_EXOPS_Status_Belegnr_NEU_nach_Verbuchung_kontrollieren.rxrec">
+    <None Include="Recordings_B_EXOPS\B_EXOPS_Status_Belege_nach_Verbuchung_kontrollieren.rxrec">
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
       <id>5aa42863-23b9-41c9-9579-d38c2080de9b</id>
       <recordtableid>3f436bc6-50d1-42fc-bc76-13c3c726a568</recordtableid>
@@ -536,15 +560,25 @@
       <recordtableid>80d0231f-2329-4041-8791-b90e382fdee8</recordtableid>
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
     </None>
-    <None Include="Recordings_B_EXOPV\Fehlerprotokoll_aufrufen.rxrec">
+    <None Include="Recordings_B_EXOPV\Editor_schliessen.rxrec">
+      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+      <id>f3483ecf-d6c6-4be9-b938-ba666cedcfd5</id>
+      <recordtableid>4de84d69-3e7f-4c45-a319-4781fe51045f</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPV\Fehlerprotokoll_Pruefung_aufrufen.rxrec">
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
       <id>792ec0d8-5db5-426a-ba11-756995bd99fd</id>
       <recordtableid>e832eec0-459c-4f07-8dc5-3837792179c2</recordtableid>
     </None>
-    <None Include="Recordings_B_EXOPV\loeschen_Optionen_aendern_FB_Pruefung_nur_innerhalb_L.rxrec">
+    <None Include="Recordings_B_EXOPV\Fehlerprotokoll_Verbuchung_aufrufen.rxrec">
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
-      <id>6660667f-f4cb-4180-aa96-14c8f8f6ec7a</id>
-      <recordtableid>15fa1e23-9ef3-4217-a4bf-2540605a0bae</recordtableid>
+      <id>7f0ac3a3-5c58-4e25-a41b-7345b652e19a</id>
+      <recordtableid>63ec443e-b1ab-4b2a-ad84-22f092dcee8e</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPV\Fehlerprotokoll_Verbuchung_pruefen.rxrec">
+      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+      <id>7c7d3ec1-4302-4b5c-82e9-6a8f15115932</id>
+      <recordtableid>1bf2f54d-35a5-4bcb-92a7-854c26e69497</recordtableid>
     </None>
     <None Include="Recordings_B_EXOPV\Optionen_Default_setzen_pruefen.rxrec">
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
@@ -625,7 +659,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
-      <Project>{762C3EE8-36AB-4807-B5B0-A0997E95413D}</Project>
+      <Project>{87C86EC2-3F6D-4662-8640-71908CF92258}</Project>
       <Name>Ranorex Automation Helpers</Name>
     </ProjectReference>
   </ItemGroup>

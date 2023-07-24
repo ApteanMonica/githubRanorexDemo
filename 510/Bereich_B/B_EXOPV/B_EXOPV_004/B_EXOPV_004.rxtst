@@ -3,22 +3,46 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
-			id="0b04ae18-5f30-4d79-8a20-709f1eb2276d"
-			name="Stapel_pruefen_starten"
-			ref="7db20743-2694-4f57-b138-4df6a7f37c36"
+			id="04eee043-8a56-441f-834d-65ae1296c390"
+			name="Pruefen_Meldungen_ER_04_Peri_UVA_ablehnen"
+			ref="4f82292a-1313-4531-bfab-ffdb55561c4f"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Stapel_Herkunft"
+					dataname="Jahr"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="f49cbd79-1eb3-44bb-944f-1aacebbc6e29"
-					variablename="Stapel_Herkunft">
+					variableid="e003b7dc-f849-44fb-8b06-7d40ca93ffff"
+					variablename="Jahr">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="07e6c724-85ca-4bfd-b782-405063f728a6"
+			name="Close_B_BUAB"
+			ref="015541fb-3892-40d2-8840-ce2c3eb44405"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="0b7406c3-a65e-44ce-8a48-59140d92b053"
+			name="Verbuchen_Meldungen_ER_05_Meldung_fehlt_Vorschlag_2019_5_falsch_JA"
+			ref="a7951846-695d-4a34-b0cf-2956f1975d69"
+			type="Recording">
+				<description>
+					<![CDATA[BUG 37348 FEHLER? KEINE UVA-MELDUNG FÜR ER 05 - wird (korrekt) in das UVA-Monat 2018/13 verbucht.]]>
+				</description>
+				<databinding>
+					<var
+					dataname="UVA_Monat_13_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="2c2134ec-470b-41a8-a940-cbf766d7544b"
+					variablename="UVA_Monat_13_offen">
 					</var>
 					<var
-					dataname="Fehlerprotokoll_Pruefung"
+					dataname="Jahr"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="ea80b5bd-38bc-462a-8847-46ea0fd510bf"
-					variablename="Fehlerprotokoll_Pruefung">
+					variableid="a258836a-1880-4043-9f7f-b945a00e6cc6"
+					variablename="Jahr">
 					</var>
 				</databinding>
 			</testmodule>
@@ -26,10 +50,128 @@
 			id="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
 			name="B_EXOPV_004"
 			reportlevel="Info;20">
+				<description>
+					<![CDATA[<table width="1099" style="width: 826pt; border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><font color="#000000" face="Times New Roman" size="3">
+
+ </font><colgroup><col width="60" style="width: 45pt; mso-width-source: userset; mso-width-alt: 2194;"><font color="#000000" face="Times New Roman" size="3">
+ </font><col width="93" style="width: 70pt; mso-width-source: userset; mso-width-alt: 3401;"><font color="#000000" face="Times New Roman" size="3">
+ </font><col width="112" style="width: 84pt; mso-width-source: userset; mso-width-alt: 4096;"><font color="#000000" face="Times New Roman" size="3">
+ </font><col width="96" style="width: 72pt; mso-width-source: userset; mso-width-alt: 3510;"><font color="#000000" face="Times New Roman" size="3">
+ </font><col width="122" style="width: 92pt; mso-width-source: userset; mso-width-alt: 4461;"><font color="#000000" face="Times New Roman" size="3">
+ </font><col width="106" style="width: 80pt; mso-width-source: userset; mso-width-alt: 3876;"><font color="#000000" face="Times New Roman" size="3">
+ </font><col width="53" style="width: 40pt; mso-width-source: userset; mso-width-alt: 1938;"><font color="#000000" face="Times New Roman" size="3">
+ </font><col width="80" style="width: 60pt;"><font color="#000000" face="Times New Roman" size="3">
+ </font><col width="57" style="width: 43pt; mso-width-source: userset; mso-width-alt: 2084;"><font color="#000000" face="Times New Roman" size="3">
+ </font><col width="80" style="width: 60pt;" span="4"><font color="#000000" face="Times New Roman" size="3">
+ </font><tbody><tr height="70" style="height: 52.5pt; mso-height-source: userset;"><font color="#000000" face="Times New Roman" size="3">
+  </font><td width="60" height="70" style="border: 0px black; width: 45pt; height: 52.5pt; background-color: transparent;"><strong><font color="#000000" face="Calibri" size="3">Beleg</font></strong></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td width="93" style="border: 0px black; width: 70pt; background-color: transparent;"><strong><font color="#000000" face="Calibri" size="3">Buchungs-<br>
+    Periode 2018</font></strong></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td width="112" style="border: 0px black; width: 84pt; background-color: transparent;"><strong><font color="#000000" face="Calibri" size="3">Buchungs-<br>
+    Periode (offen=2018/6)</font></strong></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td width="96" style="border: 0px black; width: 72pt; background-color: transparent;"><strong><font color="#000000" face="Calibri" size="3">FB-Datum</font></strong></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td width="122" style="border: 0px black; width: 92pt; background-color: transparent;"><strong><font color="#000000" face="Calibri" size="3">UVA-Monat 2018 von FB-Datum</font></strong></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td width="106" style="border: 0px black; width: 80pt; background-color: transparent;"><strong><font color="#000000" face="Calibri" size="3">UVA-Monat (offen=2018/13)</font></strong></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td width="53" style="border: 0px black; width: 40pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">exop keybel</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td width="80" style="border: 0px black; width: 60pt; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td width="57" style="border: 0px black; width: 43pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Periode</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td width="80" style="border: 0px black; width: 60pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">UVA-Monat</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td width="80" style="border: 0px black; width: 60pt; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td width="80" style="border: 0px black; width: 60pt; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td width="80" style="border: 0px black; width: 60pt; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
+ </font></tr><font color="#000000" face="Times New Roman" size="3">
+ </font><tr height="20" style="height: 15pt;"><font color="#000000" face="Times New Roman" size="3">
+  </font><td height="20" style="border: 0px black; height: 15pt; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">ER_01</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">5</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">gesperrt</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td align="right" style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">30.04.2028</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">4</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">geschlossen</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">22</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">verbuchen</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">2018/6</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">2018/13</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
+ </font></tr><font color="#000000" face="Times New Roman" size="3">
+ </font><tr height="25" style="height: 18.75pt;"><font color="#000000" face="Times New Roman" size="3">
+  </font><td height="25" style="border: 0px black; height: 18.75pt; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">ER_02</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">5</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">gesperrt</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td align="right" style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">01.06.2018</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">6</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">geschlossen</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">23</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">verbuchen</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">2018/6</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">2018/13</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: transparent; mso-ignore: colspan;" colspan="3"><font color="#000000" face="Calibri" size="3">Fehler? Keine Meldung
+  BU-Periode</font></td><font color="#000000" face="Times New Roman" size="3">
+ </font></tr><font color="#000000" face="Times New Roman" size="3">
+ </font><tr height="25" style="height: 18.75pt;"><font color="#000000" face="Times New Roman" size="3">
+  </font><td height="25" style="border: 0px windowtext; height: 18.75pt; background-color: rgb(0, 176, 240);"><font color="#000000" face="Calibri" size="3">ER_03</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">5</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">gesperrt</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td align="right" style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">01.05.2018</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">5</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">geschlossen</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">24</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(0, 176, 240);"><font color="#000000" face="Calibri" size="3">ablehnen</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: transparent; mso-ignore: colspan;" colspan="3"><font color="#000000" face="Calibri" size="3">Fehler? Keine Meldung
+  BU-Periode</font></td><font color="#000000" face="Times New Roman" size="3">
+ </font></tr><font color="#000000" face="Times New Roman" size="3">
+ </font><tr height="25" style="height: 18.75pt;"><font color="#000000" face="Times New Roman" size="3">
+  </font><td height="25" style="border: 0px windowtext; height: 18.75pt; background-color: rgb(0, 176, 240);"><font color="#000000" face="Calibri" size="3">ER_04</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">7</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">gesperrt</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td align="right" style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">30.05.2018</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">5</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">geschlossen</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">25</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(0, 176, 240);"><font color="#000000" face="Calibri" size="3">ablehnen</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: transparent;"></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: yellow; mso-ignore: colspan;" colspan="3"><font color="#000000" face="Calibri" size="3">Fehler: UVA-Vorschlag
+  2019/5 falsch</font></td><font color="#000000" face="Times New Roman" size="3">
+ </font></tr><font color="#000000" face="Times New Roman" size="3">
+ </font><tr height="25" style="height: 18.75pt;"><font color="#000000" face="Times New Roman" size="3">
+  </font><td height="25" style="border: 0px black; height: 18.75pt; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">ER_05</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px windowtext; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">6</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px windowtext; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">offen</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td align="right" style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">01.06.2018</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">6</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">geschlossen</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">26</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">verbuchen</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">2018/6</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">2018/13</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: yellow; mso-ignore: colspan;" colspan="3"><font color="#000000" face="Calibri" size="3">Fehler? keine Meldung
+  UVA-Monat</font></td><font color="#000000" face="Times New Roman" size="3">
+ </font></tr><font color="#000000" face="Times New Roman" size="3">
+ </font><tr height="25" style="height: 18.75pt;"><font color="#000000" face="Times New Roman" size="3">
+  </font><td height="25" style="border: 0px black; height: 18.75pt; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">ER_06</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px windowtext; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">6</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px windowtext; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">offen</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td align="right" style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">25.05.2018</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">5</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(255, 230, 153);"><font color="#000000" face="Calibri" size="3">geschlossen</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">27</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">verbuchen</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">2018/6</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">2018/13</font></td><font color="#000000" face="Times New Roman" size="3">
+  </font><td style="border: 0px black; background-color: yellow; mso-ignore: colspan;" colspan="3"><font color="#000000" face="Calibri" size="3">Fehler: UVA-Vorschlag
+  2019/5 falsch</font></td><font color="#000000" face="Times New Roman" size="3">
+ </font></tr><font color="#000000" face="Times New Roman" size="3">
+
+</font></tbody></table><p><br></p><p>Bei diesem Test müssen Belege in der Schnittstelle für gesperrte Buchungsperioden/UVA-Monate angezeigt und korrigiert werden können. <br>Weiters wird geprüft ob die Ermittlung des UVA-Monats lt. Buchungssteuerung (nach Rechnungsdatum bei Lieferanten) korrekt funktioniert. </p><p>Lieferant 303200, Geschäftsjahr 2018 <br>Buchungs-Periode nur 6 offen, alle anderen gesperrt; <br>UVA Monate 2018 1-12 abgeschlossen, nur 2018/13 offen</p><p>1. Vorhandene Belege in der Schnittstelle werden geprüft und Belege für gesperrte Perioden/geschlossene UVA-Monate auf Status F gestellt. <br>Nach Zurücksetzen auf Status N werden die Belege verbucht.</p><p>2. Verbuchen: <br>ER01 Vorschlag Buchungsperiode 2018/6 und UVA-Monat 2018/13 akzeptieren<br>ER02 Vorschlag UVA-Monat 2018/13 akzeptieren (es wird keine Meldung bzgl. Buchungsperiode ausgegeben)<br>ER03 Vorschlag UVA-Monat 2018/13 ablehnen (Status F) (es wird keine Meldung bzgl. Buchungsperiode ausgegeben)<br>ER04 Vorschlag Buchungsperiode 2018/6 und UVA-Monat ablehnen - Falscher Vorschlag UVA-Monat 2019/5 statt 2018/13<br>ER05 Vorschlag UVA-Monat 2018/13 akzeptieren Fehler: es wird keine Meldung ausgegeben! (ev weil ER02 mit gleichem UVA-Monat 2018-6 akzeptiert wurde?)<br>ER06 Vorschlag UVA-Monat 2018/13 akzeptieren Fehler: Falscher Vorschlag UVA-Monat 2019/5 statt 2018/13</p><p>3. Kontrolle Buchungen</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="Startfile"
-					value="C:\Testdaten\Allgemein\Start.bat ">
+					value="C:\Testdaten\Allgemein\Start.bat">
 					</param>
 					<param
 					name="Programm"
@@ -48,6 +190,26 @@
 					value="">
 					</param>
 					<param
+					name="Tagesdatum2"
+					value="">
+					</param>
+					<param
+					name="Inhalt_Buchungsdatum_Zeile1"
+					value="C:\Testdaten\Allgemein\Start.bat ">
+					</param>
+					<param
+					name="Inhalt_Buchungsdatum_Zeile3"
+					value="C:\Testdaten\Allgemein\Start.bat ">
+					</param>
+					<param
+					name="Inhalt_Buchungsdatum_Zeile5"
+					value="C:\Testdaten\Allgemein\Start.bat ">
+					</param>
+					<param
+					name="Inhalt_Buchungsdatum_Zeile7"
+					value="C:\Testdaten\Allgemein\Start.bat ">
+					</param>
+					<param
 					name="Jahr"
 					value="2018">
 					</param>
@@ -56,12 +218,24 @@
 					value="6">
 					</param>
 					<param
+					name="UVA_Monat_13_offen"
+					value="13">
+					</param>
+					<param
 					name="Fehlerprotokoll_Pruefung"
 					value="c:\temp\Fehlerprotokoll_b_exopv_004_pruef.txt">
 					</param>
 					<param
+					name="Fehlerprotokoll_Pruefung_Datei"
+					value="Fehlerprotokoll_b_exopv_004_pruef.txt">
+					</param>
+					<param
 					name="Fehlerprotokoll_Verbuchung"
 					value="c:\temp\Fehlerprotokoll_b_exopv_004_verbuch.txt">
+					</param>
+					<param
+					name="Fehlerprotokoll_Verbuchung_Datei"
+					value="Fehlerprotokoll_b_exopv_004_verbuch.txt">
 					</param>
 					<param
 					name="Periode_5_geschlossen"
@@ -105,10 +279,90 @@
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="1055dda4-a12a-4dfa-8052-d6c61b585bd7"
+			name="Editor_schliessen"
+			ref="d6a06d71-cd45-40c4-9af3-6ae974448572"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="1452ce65-a8bb-4bfa-a107-635dc10ffdc7"
+			name="B_BUAB_verbuchte_Belege_pruefen_Periode_UVA_Datum"
+			ref="9ab18750-e993-4b50-80f8-cb32bf713788"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Beleg5"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="1806b985-f4a9-46c9-a948-6a72fddd08bd"
+					variablename="Beleg5">
+					</var>
+					<var
+					dataname="Beleg2"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="c45ed5e4-a2ad-4f1f-aa32-66bce6031994"
+					variablename="Beleg2">
+					</var>
+					<var
+					dataname="Beleg1"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="3c522181-d236-4b42-8751-62f26934d2b6"
+					variablename="Beleg1">
+					</var>
+					<var
+					dataname="UVA_Monat_13_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="91f7a0a0-8cbf-4851-8ef9-99e5ed305988"
+					variablename="UVA_Monat_13_offen">
+					</var>
+					<var
+					dataname="Periode_6_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="295281af-2079-4565-947a-44cd24c16dc9"
+					variablename="Periode_6_offen">
+					</var>
+					<var
+					dataname="Jahr"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="268580fc-72a3-45a9-bc68-d883b528ac20"
+					variablename="Jahr">
+					</var>
+					<var
+					dataname="Beleg6"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="8cf38043-01bc-4716-9f2f-fea42cb41313"
+					variablename="Beleg6">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="166b7d8c-78a9-4cfc-9bd5-c39305a1f66d"
-			name="TestCase">
+			name="B_EXOPS_Belege_kontrollieren">
 			</testcase>
+			<testcase
+			id="1a6889db-0d53-4c06-9392-e3d8fa6785f0"
+			name="B_EXOPS_Status_prüfen_und_auf_N_zurücksetzen">
+			</testcase>
+			<testmodule
+			id="24897fad-9b9b-4b69-a8eb-d2a8523404c3"
+			name="B_EXOPS_Status_von_F_auf_N_zuruecksetzen"
+			ref="f02590c4-0911-460d-82e3-f903abf59d88"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="278572c2-abcc-4937-94a1-7472c67821f8"
+			name="Pruefen_Meldungen_ER_05_nur_UVA_ablehnen"
+			ref="070a7ae4-bc86-4cdc-8657-7f2779946287"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Jahr"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="f4ac7b2a-4875-43de-900c-e44b62c2587d"
+					variablename="Jahr">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="2841d947-823e-464c-b52c-109b6677725a"
 			name="Stapel_validieren"
@@ -128,30 +382,101 @@
 			name="teardown">
 			</teardown>
 			<testmodule
+			id="38a3eb68-3d2f-4503-bb8b-7f4235e0fa52"
+			name="CloseAUT"
+			ref="2dbd0633-d4b1-43be-a0a9-4fa3134a9220"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="3dfe9f39-a794-43d2-9370-81f9c5802792"
 			name="StartAUT"
 			ref="4a6830e5-cffc-464d-bdfc-0a408cb1b6fe"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="aa436549-e9c7-40aa-92bb-020ce7608590"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
 					variableid="03290285-589b-486b-84c5-53cfe6d2abcb"
 					variablename="Programm">
 					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="aa436549-e9c7-40aa-92bb-020ce7608590"
+					variablename="Startfile">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
 			id="40015223-5cbb-4d17-b2d1-bbca49c405e3"
-			name="Fehleroption_aendern"
+			name="Fehleroption_Default_pruefen"
 			ref="5cd9f441-a840-4ad2-8d33-490f0297a6fc"
 			type="Recording">
+			</testmodule>
+			<teardown
+			id="437f81ba-655a-4adf-9db8-3f390090169f"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="45f1e6eb-d2b7-4d72-8b73-ea81a084cabb"
+			name="Editor_schliessen"
+			ref="d6a06d71-cd45-40c4-9af3-6ae974448572"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="48273b28-8755-463e-8479-8582975c7419"
+			name="Verbuchen_Meldungen_ER_06_nur_UVA_AENDERN"
+			ref="3ee30bb1-ec4d-4cf6-a609-5976cd909e4d"
+			type="Recording">
+				<description>
+					<![CDATA[BUG 37348 FEHLER: UVA-Vorschlag 2019/5 falsch; Workaround UVA-Datum ändern auf 2018/13]]>
+				</description>
+				<databinding>
+					<var
+					dataname="UVA_Monat_13_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="358aed8e-ea09-4bee-bcf9-2774ddc0f775"
+					variablename="UVA_Monat_13_offen">
+					</var>
+					<var
+					dataname="Jahr"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="91c32633-59d0-4139-a730-b58959762069"
+					variablename="Jahr">
+					</var>
+				</databinding>
+			</testmodule>
+			<teardown
+			id="4c0d8cba-3d56-4929-bcf7-bf0fe6c34134"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="4d83b94e-931e-4e05-a0ad-fe56c95c0c58"
+			name="Verbuchen_Protokolldatei_pruefen"
+			ref="cab5a3cd-9aa9-4106-b1fa-ea5a27820c06"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Fehlerprotokoll_Verbuchung_Datei"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="b9f1933d-e17d-4b83-92f3-e73986c8de66"
+					variablename="Fehlerprotokoll_Verbuchung_Datei">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="5037e250-a5b6-4a72-a602-1c39ff3b4c53"
+			name="Pruefen_Meldungen_ER_06_nur_UVA_ablehnen"
+			ref="b639a367-8acb-4756-8001-f1e5bb06fa39"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Jahr"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="3cd1f159-ef5b-401c-9ccc-657be75cb452"
+					variablename="Jahr">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="52cd4585-704b-475a-a0cd-9c732a211eb4"
@@ -160,25 +485,58 @@
 			type="Recording">
 				<databinding>
 					<var
+					dataname="Inhalt_Buchungsdatum_Zeile1"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="433ce59f-3802-446a-8f58-d73092ec6e7e"
+					variablename="Startfile">
+					</var>
+					<var
 					dataname="Programm_2"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
 					variableid="e23f9c38-642c-43be-ad34-728b88ac6933"
 					variablename="Programm_2">
 					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="646da688-9823-4a91-bc69-02ac8fa0602d"
+			name="Verbuchen_Meldungen_ER_01_Peri_UVA_JA"
+			ref="7d12990c-9158-4471-9449-7893d0c8a7e6"
+			type="Recording">
+				<databinding>
 					<var
-					dataname="Startfile"
+					dataname="UVA_Monat_13_offen"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="433ce59f-3802-446a-8f58-d73092ec6e7e"
-					variablename="Startfile">
+					variableid="566eb65e-8edc-4e2f-be10-c2a8bfb30e05"
+					variablename="UVA_Monat_13_offen">
+					</var>
+					<var
+					dataname="Jahr"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="3fc7fe0b-8d97-47f7-ae76-86a1092938ae"
+					variablename="Jahr">
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="6500fa25-202f-42db-b1e8-ce5948044d6f"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="68a01840-1177-46bc-ab45-6e4b97f1fdf7"
 			name="Stapel_pruefen_Protokolldatei"
 			ref="0ad15bf6-9ef3-458a-bfdc-b4bc2d8f280a"
 			type="Recording">
+				<description>
+					<![CDATA[BUG 37348: FEHLER: Beende Verbuchung - statt beende Prüfung]]>
+				</description>
 				<databinding>
+					<var
+					dataname="Fehlerprotokoll_Pruefung_Datei"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="06daed8a-b7ed-4e27-8eac-de7f64fdf62a"
+					variablename="Fehlerprotokoll_Pruefung_Datei">
+					</var>
 					<var
 					dataname="Tagesdatum"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
@@ -188,42 +546,22 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="6d111dee-0c2f-485c-958a-8c2acbed8e4b"
-			name="Stapel_verbuchen_Meldungen_aendern_ER01_ER02_Fehlermeldungen"
-			ref="77fdf61d-13b9-47e6-8211-4afc1b07aa39"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Jahr"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="3f28d276-fc3d-4204-b997-f42b46f527d2"
-					variablename="Jahr">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="6e07a282-adfb-44d2-95d3-708732a54479"
-			name="Einschraenkungen_L_N_303200"
+			name="Einschraenkungen_B_EXOPV_004"
 			ref="80b2c675-7c5f-4008-9269-1ce0dc94775e"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="LF_303200"
+					dataname="Stapel_Herkunft"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="781f4fbf-6150-4e60-ae94-c1516c6f1eab"
-					variablename="LF_303200">
+					variableid="fee22312-abd3-48a6-98dd-bd578b94fb55"
+					variablename="Stapel_Herkunft">
 					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="74558d66-ce74-47d9-ae5e-4a472f687f40"
-			name="Fehleroption_zuruecksetzen_auf_F"
-			ref="7d9127c9-bbf7-42f7-9f45-1308724ab3d9"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="7879f12b-a77b-460d-b30f-a50e955284a9"
-			name="Stapel_pruefen_starten"
+			name="Stapel_Pruefung_starten"
 			ref="7db20743-2694-4f57-b138-4df6a7f37c36"
 			type="Recording">
 				<databinding>
@@ -241,32 +579,160 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<setup
-			id="870870e5-5d0e-4529-bc82-4adba02b4c50"
-			name="setup">
-			</setup>
-			<testcase
-			id="8ace61e3-5345-4594-b519-f46c633ed06c"
-			name="TestCase">
-			</testcase>
 			<testmodule
-			id="97e1b6d7-f314-4315-a074-510b346438b8"
-			name="Stapel_pruefen_Meldungen_aendern_ER01_ER02_Fehlermeldungen"
-			ref="7920d84a-2a66-4159-a938-e662a4ff7a96"
+			id="7aeff25b-c37b-41f0-a359-208a102e88fa"
+			name="Statuskontrolle_nach_Pruefung"
+			ref="9af6b51e-9e68-4d86-9815-b395918539b3"
 			type="Recording">
 				<databinding>
 					<var
 					dataname="Jahr"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="4e078b2f-b426-46d1-aa58-84162077df3a"
+					variableid="493dfc45-e85b-42c0-89d0-867ba1550878"
+					variablename="Jahr">
+					</var>
+					<var
+					dataname="Periode_6_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="bc33c291-1bb0-44a7-ae73-0a376a8f181a"
+					variablename="Periode_6_offen">
+					</var>
+					<var
+					dataname="Periode_5_geschlossen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="7438727d-f23f-4eb0-bb0c-5442e8d1c7bd"
+					variablename="Periode_5_geschlossen">
+					</var>
+					<var
+					dataname="Periode_7_geschlossen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="861f239e-ac89-406b-9443-0381c37f5194"
+					variablename="Periode_7_geschlossen">
+					</var>
+					<var
+					dataname="Beleg1"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="aa8de622-a144-4f67-a2ea-100e36965e2e"
+					variablename="Beleg1">
+					</var>
+					<var
+					dataname="Beleg2"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="514e98df-d64e-4fb5-a098-05a618770241"
+					variablename="Beleg2">
+					</var>
+					<var
+					dataname="Beleg3"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="49acf57b-9bec-4f67-9640-2c454605349e"
+					variablename="Beleg3">
+					</var>
+					<var
+					dataname="Beleg4"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="c70a9809-2dd7-4790-9667-18e9251c7c70"
+					variablename="Beleg4">
+					</var>
+					<var
+					dataname="Beleg5"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="d8543d49-9498-461c-a73b-fbb2955c45b9"
+					variablename="Beleg5">
+					</var>
+					<var
+					dataname="Beleg6"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="00212ea1-967b-4d0b-bcc4-f49e3f07ccb7"
+					variablename="Beleg6">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="7ed0a261-8a0f-4a26-ae31-8545d14d53ae"
+			name="Verbuchen_Meldungen_ER_04_Peri_UVA_NEIN"
+			ref="432d1afa-b3ad-403d-ae28-db5974a3a582"
+			type="Recording">
+				<description>
+					<![CDATA[BUG 37348 FEHLER: UVA-Vorschlag 2019/5 falsch;]]>
+				</description>
+				<databinding>
+					<var
+					dataname="Jahr"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="db595bfc-bd30-47a8-910a-b3b040c8f2c6"
 					variablename="Jahr">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="866b963c-871f-4999-91b8-ed3dd05ede02"
+			name="Einschraenkungen_B_EXOPV_004_neu_laden"
+			ref="7901477e-29d3-4acd-bdeb-9355f291447d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="74deaf58-fee0-43e2-bf88-a3b4528de2fe"
+					variablename="Stapel_Herkunft">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
-			id="98d97c9d-733d-470e-91fb-12652477f80a"
+			id="870870e5-5d0e-4529-bc82-4adba02b4c50"
 			name="setup">
 			</setup>
+			<testmodule
+			id="894cfd11-fdf5-4ae0-b1c7-a8a7e8317108"
+			name="Start_B_BUAB"
+			ref="6fc57c17-6d02-422a-88b2-2f0dc35ba00d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="806467b1-76f4-41f6-bbf4-1194a62e4ff9"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_3"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="d8e770e7-db13-4a13-9f65-2067998939a1"
+					variablename="Programm_3">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="8ace61e3-5345-4594-b519-f46c633ed06c"
+			name="Belege_verbuchen">
+				<description>
+					<![CDATA[<p>für Testwiederholung: Verbuchte Belege in b_buab löschen</p><p>in Schnittstelle Status von F+V auf N umstellen Herkunft b_exopv_004 (meldung übergehen) + busa_keybel in B_EXOP löschen:</p><p>update b_exop set exop_status = 'N', busa_keybel = null where firm_nr = '100' and exop_herkunft = 'B_EXOPV_004';</p><br>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="8bbd2c7d-28cc-459a-afb9-365b89081035"
+			name="Close_B_EXOPS"
+			ref="c094dd1c-e2c7-41b1-af19-fb81ca3f8b75"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="91a23ade-30ad-41af-bc6a-1f93e1fc0715"
+			name="Einschraenkungen_B_EXOPV_004_neu_laden"
+			ref="7901477e-29d3-4acd-bdeb-9355f291447d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="74deaf58-fee0-43e2-bf88-a3b4528de2fe"
+					variablename="Stapel_Herkunft">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="a3c09d25-29d7-4152-bbfc-27e9576f15ae"
+			name="B_EXOPS_Status_nach_Verbuchung_pruefen">
+			</testcase>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -291,17 +757,223 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<testmodule
+			id="bcb3f9b4-7baa-40cb-878e-5912659d7887"
+			name="Pruefen_Meldungen_ER_03_nur_UVA_ablehnen"
+			ref="418a6876-c4d2-41ed-baf4-e73667d3e120"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Jahr"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="642e75c9-3b7f-4501-a495-3dde48dbdda6"
+					variablename="Jahr">
+					</var>
+					<var
+					dataname="UVA_Monat_13_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="b9d29c0d-134c-41ba-915a-f5c9c5b3190d"
+					variablename="UVA_Monat_13_offen">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="bd85393c-7821-451f-b581-f19fd8311d4b"
+			name="Verbuchen_Meldungen_ER_02_nur_UVA_JA"
+			ref="68df4bac-4497-4fe0-8120-38de04e18f0a"
+			type="Recording">
+				<description>
+					<![CDATA[BUG 37348 FEHLER? keine Meldung Buchungsperiode]]>
+				</description>
+				<databinding>
+					<var
+					dataname="UVA_Monat_13_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="e2e4fef8-ae45-4aba-bdab-5456cff2efab"
+					variablename="UVA_Monat_13_offen">
+					</var>
+					<var
+					dataname="Jahr"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="248d5717-0f63-4535-b1ab-6143d5f352a8"
+					variablename="Jahr">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="c57d20c9-6302-495a-aaca-83b9f21ff12b"
+			name="Tagesdatum_ermitteln"
+			ref="a09b5404-0e71-4a58-a6da-16c4289b589e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="e4dbbc0b-6189-452d-8b5c-9419f834d2e2"
+					variablename="Tagesdatum">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="c694f805-22e2-418f-9e40-651fb1fa8e9d"
 			name="setup">
 			</setup>
+			<testmodule
+			id="d2feecd0-3b66-4975-8a21-505432175877"
+			name="Pruefen_Meldungen_ER_01_Peri_UVA_ablehnen"
+			ref="b93436ba-79cb-4b33-a8e4-4ec84a18f76e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Jahr"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="386e59a3-56c1-42e3-804d-effb3e7042f5"
+					variablename="Jahr">
+					</var>
+					<var
+					dataname="UVA_Monat_13_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="9e4dd0fc-0fde-45d9-af84-ab73666865f2"
+					variablename="UVA_Monat_13_offen">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="d7d5ff55-b160-4fe6-88d9-4b0f7f1d2093"
-			name="TestCase">
+			name="Belege_prüfen">
 			</testcase>
 			<testmodule
+			id="d9335132-db59-4961-b411-7a84723927d9"
+			name="Statuskontrolle_nach_Verbuchung"
+			ref="0a603c18-304d-4aaf-8fc2-5acebb179d58"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Jahr"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="38eceb61-f299-43cb-8013-1847424e355e"
+					variablename="Jahr">
+					</var>
+					<var
+					dataname="Periode_6_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="47c13f58-7e73-41bf-9793-e0574fbad45f"
+					variablename="Periode_6_offen">
+					</var>
+					<var
+					dataname="Periode_5_geschlossen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="ff2edf6c-584a-40c6-a5a4-c88ada229677"
+					variablename="Periode_5_geschlossen">
+					</var>
+					<var
+					dataname="Periode_7_geschlossen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="4ab059f7-1dfe-42a9-974f-44a85da3baae"
+					variablename="Periode_7_geschlossen">
+					</var>
+					<var
+					dataname="Beleg1"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="c7c8d668-a8d8-49b1-8eb3-401282dae081"
+					variablename="Beleg1">
+					</var>
+					<var
+					dataname="Beleg2"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="f1ef5c28-e013-45a7-ac7c-e25b279c7175"
+					variablename="Beleg2">
+					</var>
+					<var
+					dataname="Beleg3"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="8d7747ba-38f4-48e8-9b61-8255b5bd93cb"
+					variablename="Beleg3">
+					</var>
+					<var
+					dataname="Beleg4"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="6fed7aaf-925f-4c9b-b1cb-c6de6a4ec220"
+					variablename="Beleg4">
+					</var>
+					<var
+					dataname="Beleg5"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="860a6964-707d-481c-9d0c-cc1b9cc04c2a"
+					variablename="Beleg5">
+					</var>
+					<var
+					dataname="Beleg6"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="c94bbabd-870b-4721-8995-73689bcea24f"
+					variablename="Beleg6">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="dfe9035e-8a31-454b-a066-d14523eccce2"
+			name="B_BUAB_Einschraenkungen_Buchungen_laden"
+			ref="ea5c84f8-ddd8-449d-a0a1-3b9538491c1f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="f82b7ea0-9db5-4809-b3b6-77788b71b354"
+					variablename="Stapel_Herkunft">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="e32e338f-6a5d-4b2a-b506-f3316be0281b"
+			name="B_BUAB_Tagesdatum_Tagesdatum2_valdieren_Usercode"
+			ref="dd50b06f-9bf5-4c5c-a283-81f7b6f5e518"
+			type="Recording">
+				<description>
+					<![CDATA[UserCode Tagesdatum oder Tagesdatum 2 um Fehler wegen Datumswechsel vorzubeugen]]>
+				</description>
+				<databinding>
+					<var
+					dataname="Inhalt_Buchungsdatum_Zeile7"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="60ea32ac-75de-40cb-a8aa-a0845757317e"
+					variablename="Inhalt_Buchungsdatum_Zeile7">
+					</var>
+					<var
+					dataname="Inhalt_Buchungsdatum_Zeile5"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="d0c24a7a-a1ba-4621-bf7b-7d5ad8ed825b"
+					variablename="Inhalt_Buchungsdatum_Zeile5">
+					</var>
+					<var
+					dataname="Inhalt_Buchungsdatum_Zeile3"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="bdbe5f44-4e45-42e2-8458-6676712b18ae"
+					variablename="Inhalt_Buchungsdatum_Zeile3">
+					</var>
+					<var
+					dataname="Inhalt_Buchungsdatum_Zeile1"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="355726ea-507a-4c5d-b971-a1b9f9f7e935"
+					variablename="Inhalt_Buchungsdatum_Zeile1">
+					</var>
+					<var
+					dataname="Tagesdatum2"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="1c5433e8-05cb-4484-8e9b-a564025f5218"
+					variablename="Tagesdatum2">
+					</var>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="7e1184e2-0c6c-4cfa-afaf-9ab7e88e8b1b"
+					variablename="Tagesdatum">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="e7e61f35-ab09-44f1-bab6-0be975ca2c6a"
-			name="Stapel_pruefen_Meldungen_ohne_Aenderung"
+			name="Pruefen_Meldungen_ER_02_nur_UVA_ablehnen"
 			ref="5a97b737-5b4c-493b-a638-75aa0dd405e2"
 			type="Recording">
 				<databinding>
@@ -310,6 +982,30 @@
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
 					variableid="a4ef5a84-bc72-466f-a733-47530c757092"
 					variablename="Jahr">
+					</var>
+					<var
+					dataname="UVA_Monat_13_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="326ea6fa-8844-41e9-b8d8-7c6effd36c33"
+					variablename="UVA_Monat_13_offen">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="e807db19-617e-46f5-9335-52564f433a06"
+			name="B_BUAB_Kontrolle_Buchungen">
+			</testcase>
+			<testmodule
+			id="ebf191b0-e19f-425d-8178-7a5f6adf75b4"
+			name="Stapel_verbucht_pruefen"
+			ref="a853b09e-6b86-47f1-add3-06d5780bd494"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="f49cbd79-1eb3-44bb-944f-1aacebbc6e29"
+					variablename="Stapel_Herkunft">
 					</var>
 				</databinding>
 			</testmodule>
@@ -320,72 +1016,53 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Fehlerprotokoll_Verbuchung"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="66cddfda-58b0-49f7-af73-f6b2674b1053"
-					variablename="Fehlerprotokoll_Verbuchung">
-					</var>
-					<var
 					dataname="Stapel_Herkunft"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
 					variableid="f49cbd79-1eb3-44bb-944f-1aacebbc6e29"
 					variablename="Stapel_Herkunft">
 					</var>
+					<var
+					dataname="Fehlerprotokoll_Verbuchung"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="66cddfda-58b0-49f7-af73-f6b2674b1053"
+					variablename="Fehlerprotokoll_Verbuchung">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="fbf9b5b6-9975-4646-812e-fd1c6d530ad2"
+			name="Verbuchen_Meldungen_ER_03_nur_UVA_NEIN"
+			ref="02216894-0e8b-47e0-8f31-a14f8eaa113a"
+			type="Recording">
+				<description>
+					<![CDATA[BUG 37348FEHLER? keine Meldung Buchungsperiode]]>
+				</description>
+				<databinding>
+					<var
+					dataname="UVA_Monat_13_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="8bc16111-edda-47ba-9a0f-46375651622a"
+					variablename="UVA_Monat_13_offen">
+					</var>
+					<var
+					dataname="Jahr"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="12632d4c-518f-47fc-9754-54288a92b101"
+					variablename="Jahr">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
 			id="fde998b5-c56f-489a-bfcf-ae7238bfc22d"
-			name="Belege_pruefen_vor_Verbuchung"
+			name="Belege_pruefen_vor_Pruefung_Verbuchung"
 			ref="63fa5680-1386-41e3-ba86-30b83e2a0c65"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Jahr"
+					dataname="Beleg6"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="5399806f-98eb-4b94-af3e-e53ce6476e4f"
-					variablename="Jahr">
-					</var>
-					<var
-					dataname="Periode_6_offen"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="2ed8ba80-5af2-4278-a833-aefa40e7f589"
-					variablename="Periode_6_offen">
-					</var>
-					<var
-					dataname="Periode_5_geschlossen"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="439a5b97-97d7-4409-9088-0d16ca120209"
-					variablename="Periode_5_geschlossen">
-					</var>
-					<var
-					dataname="Periode_7_geschlossen"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="6f2761fa-fbe1-47cb-8885-7e5fad7ef05a"
-					variablename="Periode_7_geschlossen">
-					</var>
-					<var
-					dataname="Beleg1"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="baa05979-5cbb-49d4-ab50-35c706fadb7c"
-					variablename="Beleg1">
-					</var>
-					<var
-					dataname="Beleg2"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="0d35a6a6-abbb-4cae-851c-382c17a3c246"
-					variablename="Beleg2">
-					</var>
-					<var
-					dataname="Beleg3"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="d0e24792-3918-41e6-a4e0-0cf46236b74b"
-					variablename="Beleg3">
-					</var>
-					<var
-					dataname="Beleg4"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="d3807d43-f6fe-40af-8972-979302147aea"
-					variablename="Beleg4">
+					variableid="e602e2b3-9a38-447b-8377-296cf83fe0db"
+					variablename="Beleg6">
 					</var>
 					<var
 					dataname="Beleg5"
@@ -394,13 +1071,59 @@
 					variablename="Beleg5">
 					</var>
 					<var
-					dataname="Beleg6"
+					dataname="Beleg4"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="e602e2b3-9a38-447b-8377-296cf83fe0db"
-					variablename="Beleg6">
+					variableid="d3807d43-f6fe-40af-8972-979302147aea"
+					variablename="Beleg4">
+					</var>
+					<var
+					dataname="Beleg3"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="d0e24792-3918-41e6-a4e0-0cf46236b74b"
+					variablename="Beleg3">
+					</var>
+					<var
+					dataname="Beleg2"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="0d35a6a6-abbb-4cae-851c-382c17a3c246"
+					variablename="Beleg2">
+					</var>
+					<var
+					dataname="Beleg1"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="baa05979-5cbb-49d4-ab50-35c706fadb7c"
+					variablename="Beleg1">
+					</var>
+					<var
+					dataname="Periode_7_geschlossen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="6f2761fa-fbe1-47cb-8885-7e5fad7ef05a"
+					variablename="Periode_7_geschlossen">
+					</var>
+					<var
+					dataname="Periode_5_geschlossen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="439a5b97-97d7-4409-9088-0d16ca120209"
+					variablename="Periode_5_geschlossen">
+					</var>
+					<var
+					dataname="Periode_6_offen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="2ed8ba80-5af2-4278-a833-aefa40e7f589"
+					variablename="Periode_6_offen">
+					</var>
+					<var
+					dataname="Jahr"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="5399806f-98eb-4b94-af3e-e53ce6476e4f"
+					variablename="Jahr">
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="ff0a8f74-9516-47b3-b7bd-2631389c9959"
+			name="setup">
+			</setup>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -411,7 +1134,7 @@
 				name="B_EXOPV_004">
 					<testcase
 					id="166b7d8c-78a9-4cfc-9bd5-c39305a1f66d"
-					name="TestCase">
+					name="B_EXOPS_Belege_kontrollieren">
 						<setup
 						id="c694f805-22e2-418f-9e40-651fb1fa8e9d"
 						name="setup">
@@ -422,16 +1145,16 @@
 						</setup>
 						<testmodule
 						id="6e07a282-adfb-44d2-95d3-708732a54479"
-						name="Einschraenkungen_L_N_303200">
+						name="Einschraenkungen_B_EXOPV_004">
 						</testmodule>
 						<testmodule
 						id="fde998b5-c56f-489a-bfcf-ae7238bfc22d"
-						name="Belege_pruefen_vor_Verbuchung">
+						name="Belege_pruefen_vor_Pruefung_Verbuchung">
 						</testmodule>
 					</testcase>
 					<testcase
 					id="d7d5ff55-b160-4fe6-88d9-4b0f7f1d2093"
-					name="TestCase">
+					name="Belege_prüfen">
 						<setup
 						id="870870e5-5d0e-4529-bc82-4adba02b4c50"
 						name="setup">
@@ -442,7 +1165,7 @@
 						</setup>
 						<testmodule
 						id="40015223-5cbb-4d17-b2d1-bbca49c405e3"
-						name="Fehleroption_aendern">
+						name="Fehleroption_Default_pruefen">
 						</testmodule>
 						<testmodule
 						id="2841d947-823e-464c-b52c-109b6677725a"
@@ -450,46 +1173,166 @@
 						</testmodule>
 						<testmodule
 						id="7879f12b-a77b-460d-b30f-a50e955284a9"
-						name="Stapel_pruefen_starten">
+						name="Stapel_Pruefung_starten">
+						</testmodule>
+						<testmodule
+						id="d2feecd0-3b66-4975-8a21-505432175877"
+						name="Pruefen_Meldungen_ER_01_Peri_UVA_ablehnen">
 						</testmodule>
 						<testmodule
 						id="e7e61f35-ab09-44f1-bab6-0be975ca2c6a"
-						name="Stapel_pruefen_Meldungen_ohne_Aenderung">
+						name="Pruefen_Meldungen_ER_02_nur_UVA_ablehnen">
+						</testmodule>
+						<testmodule
+						id="bcb3f9b4-7baa-40cb-878e-5912659d7887"
+						name="Pruefen_Meldungen_ER_03_nur_UVA_ablehnen">
+						</testmodule>
+						<testmodule
+						id="04eee043-8a56-441f-834d-65ae1296c390"
+						name="Pruefen_Meldungen_ER_04_Peri_UVA_ablehnen">
+						</testmodule>
+						<testmodule
+						id="278572c2-abcc-4937-94a1-7472c67821f8"
+						name="Pruefen_Meldungen_ER_05_nur_UVA_ablehnen">
+						</testmodule>
+						<testmodule
+						id="5037e250-a5b6-4a72-a602-1c39ff3b4c53"
+						name="Pruefen_Meldungen_ER_06_nur_UVA_ablehnen">
 						</testmodule>
 						<testmodule
 						id="68a01840-1177-46bc-ab45-6e4b97f1fdf7"
 						name="Stapel_pruefen_Protokolldatei">
 						</testmodule>
+						<teardown
+						id="6500fa25-202f-42db-b1e8-ce5948044d6f"
+						name="teardown">
+							<testmodule
+							id="45f1e6eb-d2b7-4d72-8b73-ea81a084cabb"
+							name="Editor_schliessen">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="1a6889db-0d53-4c06-9392-e3d8fa6785f0"
+					name="B_EXOPS_Status_prüfen_und_auf_N_zurücksetzen">
 						<testmodule
-						id="0b04ae18-5f30-4d79-8a20-709f1eb2276d"
-						name="Stapel_pruefen_starten">
+						id="866b963c-871f-4999-91b8-ed3dd05ede02"
+						name="Einschraenkungen_B_EXOPV_004_neu_laden">
 						</testmodule>
 						<testmodule
-						id="97e1b6d7-f314-4315-a074-510b346438b8"
-						name="Stapel_pruefen_Meldungen_aendern_ER01_ER02_Fehlermeldungen">
+						id="7aeff25b-c37b-41f0-a359-208a102e88fa"
+						name="Statuskontrolle_nach_Pruefung">
+						</testmodule>
+						<testmodule
+						id="24897fad-9b9b-4b69-a8eb-d2a8523404c3"
+						name="B_EXOPS_Status_von_F_auf_N_zuruecksetzen">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="8ace61e3-5345-4594-b519-f46c633ed06c"
+					name="Belege_verbuchen">
+						<testmodule
+						id="c57d20c9-6302-495a-aaca-83b9f21ff12b"
+						name="Tagesdatum_ermitteln">
 						</testmodule>
 						<testmodule
 						id="fba58829-bf64-449a-8a0f-f38cfcae65e9"
 						name="Stapel_verbuchen_starten">
 						</testmodule>
 						<testmodule
-						id="6d111dee-0c2f-485c-958a-8c2acbed8e4b"
-						name="Stapel_verbuchen_Meldungen_aendern_ER01_ER02_Fehlermeldungen">
+						id="646da688-9823-4a91-bc69-02ac8fa0602d"
+						name="Verbuchen_Meldungen_ER_01_Peri_UVA_JA">
 						</testmodule>
-					</testcase>
-					<testcase
-					id="8ace61e3-5345-4594-b519-f46c633ed06c"
-					name="TestCase">
-						<setup
-						id="98d97c9d-733d-470e-91fb-12652477f80a"
-						name="setup">
-						</setup>
+						<testmodule
+						id="bd85393c-7821-451f-b581-f19fd8311d4b"
+						name="Verbuchen_Meldungen_ER_02_nur_UVA_JA">
+						</testmodule>
+						<testmodule
+						id="fbf9b5b6-9975-4646-812e-fd1c6d530ad2"
+						name="Verbuchen_Meldungen_ER_03_nur_UVA_NEIN">
+						</testmodule>
+						<testmodule
+						id="7ed0a261-8a0f-4a26-ae31-8545d14d53ae"
+						name="Verbuchen_Meldungen_ER_04_Peri_UVA_NEIN">
+						</testmodule>
+						<testmodule
+						id="0b7406c3-a65e-44ce-8a48-59140d92b053"
+						name="Verbuchen_Meldungen_ER_05_Meldung_fehlt_Vorschlag_2019_5_falsch_JA">
+						</testmodule>
+						<testmodule
+						id="48273b28-8755-463e-8479-8582975c7419"
+						name="Verbuchen_Meldungen_ER_06_nur_UVA_AENDERN">
+						</testmodule>
+						<testmodule
+						id="4d83b94e-931e-4e05-a0ad-fe56c95c0c58"
+						name="Verbuchen_Protokolldatei_pruefen">
+						</testmodule>
+						<testmodule
+						id="ebf191b0-e19f-425d-8178-7a5f6adf75b4"
+						name="Stapel_verbucht_pruefen">
+						</testmodule>
 						<teardown
 						id="34b437e8-8f4a-4124-9591-93557cec3760"
 						name="teardown">
 							<testmodule
-							id="74558d66-ce74-47d9-ae5e-4a472f687f40"
-							name="Fehleroption_zuruecksetzen_auf_F">
+							id="1055dda4-a12a-4dfa-8052-d6c61b585bd7"
+							name="Editor_schliessen">
+							</testmodule>
+							<testmodule
+							id="38a3eb68-3d2f-4503-bb8b-7f4235e0fa52"
+							name="CloseAUT">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="a3c09d25-29d7-4152-bbfc-27e9576f15ae"
+					name="B_EXOPS_Status_nach_Verbuchung_pruefen">
+						<testmodule
+						id="91a23ade-30ad-41af-bc6a-1f93e1fc0715"
+						name="Einschraenkungen_B_EXOPV_004_neu_laden">
+						</testmodule>
+						<testmodule
+						id="d9335132-db59-4961-b411-7a84723927d9"
+						name="Statuskontrolle_nach_Verbuchung">
+						</testmodule>
+						<teardown
+						id="437f81ba-655a-4adf-9db8-3f390090169f"
+						name="teardown">
+							<testmodule
+							id="8bbd2c7d-28cc-459a-afb9-365b89081035"
+							name="Close_B_EXOPS">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="e807db19-617e-46f5-9335-52564f433a06"
+					name="B_BUAB_Kontrolle_Buchungen">
+						<setup
+						id="ff0a8f74-9516-47b3-b7bd-2631389c9959"
+						name="setup">
+							<testmodule
+							id="894cfd11-fdf5-4ae0-b1c7-a8a7e8317108"
+							name="Start_B_BUAB">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="dfe9035e-8a31-454b-a066-d14523eccce2"
+						name="B_BUAB_Einschraenkungen_Buchungen_laden">
+						</testmodule>
+						<testmodule
+						id="e32e338f-6a5d-4b2a-b506-f3316be0281b"
+						name="B_BUAB_Tagesdatum_Tagesdatum2_valdieren_Usercode">
+						</testmodule>
+						<testmodule
+						id="1452ce65-a8bb-4bfa-a107-635dc10ffdc7"
+						name="B_BUAB_verbuchte_Belege_pruefen_Periode_UVA_Datum">
+						</testmodule>
+						<teardown
+						id="4c0d8cba-3d56-4929-bcf7-bf0fe6c34134"
+						name="teardown">
+							<testmodule
+							id="07e6c724-85ca-4bfd-b782-405063f728a6"
+							name="Close_B_BUAB">
 							</testmodule>
 						</teardown>
 					</testcase>
@@ -510,13 +1353,25 @@
 			id="166b7d8c-78a9-4cfc-9bd5-c39305a1f66d">
 			</testcontainer>
 			<testcontainer
+			id="1a6889db-0d53-4c06-9392-e3d8fa6785f0">
+			</testcontainer>
+			<testcontainer
 			id="8ace61e3-5345-4594-b519-f46c633ed06c">
+			</testcontainer>
+			<testcontainer
+			id="a3c09d25-29d7-4152-bbfc-27e9576f15ae">
 			</testcontainer>
 			<testcontainer
 			id="d7d5ff55-b160-4fe6-88d9-4b0f7f1d2093">
 			</testcontainer>
+			<testcontainer
+			id="e807db19-617e-46f5-9335-52564f433a06">
+			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
+		<reference>
+			Ranorex Automation Helpers.dll
+		</reference>
 	</references>
 </testsuitedoc>

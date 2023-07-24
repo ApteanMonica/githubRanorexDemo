@@ -41,7 +41,6 @@ namespace X_MUSTER_014.Recordings
         /// </summary>
         public StartAUT()
         {
-            StartAutProcessIDVar = "";
         }
 
         /// <summary>
@@ -53,18 +52,6 @@ namespace X_MUSTER_014.Recordings
         }
 
 #region Variables
-
-        string _StartAutProcessIDVar;
-
-        /// <summary>
-        /// Gets or sets the value of variable StartAutProcessIDVar.
-        /// </summary>
-        [TestVariable("ef9b1a84-6b81-4d6f-ada7-92940d271a88")]
-        public string StartAutProcessIDVar
-        {
-            get { return _StartAutProcessIDVar; }
-            set { _StartAutProcessIDVar = value; }
-        }
 
 #endregion
 
@@ -86,16 +73,12 @@ namespace X_MUSTER_014.Recordings
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
+            Mouse.DefaultMoveTime = 0;
             Keyboard.DefaultKeyPressTime = 20;
-            Delay.SpeedFactor = 1.00;
+            Delay.SpeedFactor = 0.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Program Files\\rs2\\rs2\\URS\\bin2\\MENU.exe' in normal mode. Return value bound to $StartAutProcessIDVar.", new RecordItemIndex(0));
-            StartAutProcessIDVar = ValueConverter.ToString(Host.Local.RunApplication("C:\\Program Files\\rs2\\rs2\\URS\\bin2\\MENU.exe", "", "", false));
-            Delay.Milliseconds(0);
-            
         }
 
 #region Image Feature Data

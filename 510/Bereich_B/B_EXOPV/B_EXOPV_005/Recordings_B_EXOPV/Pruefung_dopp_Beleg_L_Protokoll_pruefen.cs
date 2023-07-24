@@ -41,7 +41,6 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
         /// </summary>
         public Pruefung_dopp_Beleg_L_Protokoll_pruefen()
         {
-            Tagesdatum = "";
         }
 
         /// <summary>
@@ -53,18 +52,6 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
         }
 
 #region Variables
-
-        string _Tagesdatum;
-
-        /// <summary>
-        /// Gets or sets the value of variable Tagesdatum.
-        /// </summary>
-        [TestVariable("99d1b8e5-78d4-420f-b643-a57158a884e7")]
-        public string Tagesdatum
-        {
-            get { return _Tagesdatum; }
-            set { _Tagesdatum = value; }
-        }
 
 #endregion
 
@@ -92,60 +79,47 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditor'", repo.FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditorInfo, new ActionTimeout(120000), new RecordItemIndex(0));
-            repo.FehlerprotokollBExopv001TxtEditor.FehlerprotokollBExopv001TxtEditorInfo.WaitForExists(120000);
-            
             // Prüfung Zeilen extra
-            Report.Log(ReportLevel.Info, "Section", "Prüfung Zeilen extra", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Section", "Prüfung Zeilen extra", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Starte Prüfung B_EXOPV_005') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Starte Prüfung B_EXOPV_005') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(1));
             Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Starte Prüfung B_EXOPV_005");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Beende Prüfung B_EXOPV_005') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Beende Prüfung B_EXOPV_005') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(2));
             Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Beende Prüfung B_EXOPV_005");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 0\tBeleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 29,') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 0\tBeleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 29,') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(3));
             Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exop: 0\tBeleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 29,");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 0\tBeleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30,') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 0\tBeleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30,') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(4));
             Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exop: 0\tBeleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30,");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 0\tBeleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 31,') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 0\tBeleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 31,') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(5));
             Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exop: 0\tBeleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 31,");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 0\tBeleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 34,') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 0\tBeleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 34,') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(6));
             Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exop: 0\tBeleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 34,");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 30\tBeleg: ER04_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 32') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 30\tBeleg: ER04_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 32') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(7));
             Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exop: 30\tBeleg: ER04_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 32");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 32\tBeleg: ER06_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 32\tBeleg: ER06_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(8));
             Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exop: 32\tBeleg: ER06_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 28\tBeleg: ER01_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 28\tBeleg: ER01_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(9));
             Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exop: 28\tBeleg: ER01_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 28\tBeleg: ER01_B_EXOPV_005: Fremdbelegnr FB01_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 28\tBeleg: ER01_B_EXOPV_005: Fremdbelegnr FB01_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(10));
             Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exop: 28\tBeleg: ER01_B_EXOPV_005: Fremdbelegnr FB01_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 29\tBeleg: ER03_B_EXOPV_005: Fremdbelegnr FB02_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 29\tBeleg: ER03_B_EXOPV_005: Fremdbelegnr FB02_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(11));
             Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exop: 29\tBeleg: ER03_B_EXOPV_005: Fremdbelegnr FB02_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 34\tBeleg: ER03_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 34\tBeleg: ER03_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(12));
             Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exop: 34\tBeleg: ER03_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 34\tBeleg: ER03_B_EXOPV_005: Fremdbelegnr FB03_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 34\tBeleg: ER03_B_EXOPV_005: Fremdbelegnr FB03_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(13));
             Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exop: 34\tBeleg: ER03_B_EXOPV_005: Fremdbelegnr FB03_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!");
-            
-            // Prüfung gesamt ohne Kopf- und Fußteil
-            Report.Log(ReportLevel.Info, "Section", "Prüfung gesamt ohne Kopf- und Fußteil", new RecordItemIndex(15));
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 0\tBeleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 29, \r\nExop: 0\tBeleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30, \r\nExop: 0\tBeleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 31, \r\nExop: 0\tBeleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 34, \r\nExop: 30\tBeleg: ER04_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 32\r\nExop: 32\tBeleg: ER06_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30\r\nExop: 28\tBeleg: ER01_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!\r\nExop: 28\tBeleg: ER01_B_EXOPV_005: Fremdbelegnr FB01_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!\r\nExop: 29\tBeleg: ER03_B_EXOPV_005: Fremdbelegnr FB02_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!\r\nExop: 34\tBeleg: ER03_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!\r\nExop: 34\tBeleg: ER03_B_EXOPV_005: Fremdbelegnr FB03_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!') on item 'FehlerprotokollBExopv001TxtEditor.Text15'.", repo.FehlerprotokollBExopv001TxtEditor.Text15Info, new RecordItemIndex(16));
-            Validate.AttributeContains(repo.FehlerprotokollBExopv001TxtEditor.Text15Info, "Text", "Exop: 0\tBeleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 29, \r\nExop: 0\tBeleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30, \r\nExop: 0\tBeleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 31, \r\nExop: 0\tBeleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 34, \r\nExop: 30\tBeleg: ER04_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 32\r\nExop: 32\tBeleg: ER06_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30\r\nExop: 28\tBeleg: ER01_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!\r\nExop: 28\tBeleg: ER01_B_EXOPV_005: Fremdbelegnr FB01_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!\r\nExop: 29\tBeleg: ER03_B_EXOPV_005: Fremdbelegnr FB02_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!\r\nExop: 34\tBeleg: ER03_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!\r\nExop: 34\tBeleg: ER03_B_EXOPV_005: Fremdbelegnr FB03_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FehlerprotokollBExopv001TxtEditor'.", repo.FehlerprotokollBExopv001TxtEditor.SelfInfo, new RecordItemIndex(17));
-            Keyboard.PrepareFocus(repo.FehlerprotokollBExopv001TxtEditor.Self);
-            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }
 

@@ -27,7 +27,7 @@ namespace X_MUSTER_013
     public partial class X_MUSTER_013Repository : RepoGenBaseFolder
     {
         static X_MUSTER_013Repository instance = new X_MUSTER_013Repository();
-        X_MUSTER_013RepositoryFolders.FrmZahlMainAppFolder _frmzahlmain;
+        X_MUSTER_013RepositoryFolders.FrmAdrAppFolder _frmadr;
 
         /// <summary>
         /// Gets the singleton class instance representing the X_MUSTER_013Repository element repository.
@@ -44,7 +44,7 @@ namespace X_MUSTER_013
         public X_MUSTER_013Repository() 
             : base("X_MUSTER_013Repository", "/", null, 0, false, "d17931bd-ec14-4c13-92a8-4698b1841f78", ".\\RepositoryImages\\X_MUSTER_013Repositoryd17931bd.rximgres")
         {
-            _frmzahlmain = new X_MUSTER_013RepositoryFolders.FrmZahlMainAppFolder(this);
+            _frmadr = new X_MUSTER_013RepositoryFolders.FrmAdrAppFolder(this);
         }
 
 #region Variables
@@ -64,12 +64,12 @@ namespace X_MUSTER_013
         }
 
         /// <summary>
-        /// The FrmZahlMain folder.
+        /// The FrmAdr folder.
         /// </summary>
-        [RepositoryFolder("3e6d4218-4012-4d97-8272-c7917daa4f3e")]
-        public virtual X_MUSTER_013RepositoryFolders.FrmZahlMainAppFolder FrmZahlMain
+        [RepositoryFolder("b47b82a6-ea62-4fb9-8f15-9da51ed7f57c")]
+        public virtual X_MUSTER_013RepositoryFolders.FrmAdrAppFolder FrmAdr
         {
-            get { return _frmzahlmain; }
+            get { return _frmadr; }
         }
     }
 
@@ -80,26 +80,26 @@ namespace X_MUSTER_013
     public partial class X_MUSTER_013RepositoryFolders
     {
         /// <summary>
-        /// The FrmZahlMainAppFolder folder.
+        /// The FrmAdrAppFolder folder.
         /// </summary>
-        [RepositoryFolder("3e6d4218-4012-4d97-8272-c7917daa4f3e")]
-        public partial class FrmZahlMainAppFolder : RepoGenBaseFolder
+        [RepositoryFolder("b47b82a6-ea62-4fb9-8f15-9da51ed7f57c")]
+        public partial class FrmAdrAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _titlebar100lieferantenzahlungsverInfo;
+            RepoItemInfo _titlebar100kundenstammInfo;
 
             /// <summary>
-            /// Creates a new FrmZahlMain  folder.
+            /// Creates a new FrmAdr  folder.
             /// </summary>
-            public FrmZahlMainAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FrmZahlMain", "/form[@controlname='frmZahlMain']", parentFolder, 30000, null, true, "3e6d4218-4012-4d97-8272-c7917daa4f3e", "")
+            public FrmAdrAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FrmAdr", "/form[@controlname='frmAdr']", parentFolder, 30000, null, true, "b47b82a6-ea62-4fb9-8f15-9da51ed7f57c", "")
             {
-                _titlebar100lieferantenzahlungsverInfo = new RepoItemInfo(this, "TitleBar100LieferantenZahlungsver", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "acc574e5-b92c-475e-82ac-f39a5aabb9f8");
+                _titlebar100kundenstammInfo = new RepoItemInfo(this, "TitleBar100Kundenstamm", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "0100aad8-8f65-4924-8b78-3aa8414f2d5e");
             }
 
             /// <summary>
             /// The Self item.
             /// </summary>
-            [RepositoryItem("3e6d4218-4012-4d97-8272-c7917daa4f3e")]
+            [RepositoryItem("b47b82a6-ea62-4fb9-8f15-9da51ed7f57c")]
             public virtual Ranorex.Form Self
             {
                 get
@@ -111,7 +111,7 @@ namespace X_MUSTER_013
             /// <summary>
             /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("3e6d4218-4012-4d97-8272-c7917daa4f3e")]
+            [RepositoryItemInfo("b47b82a6-ea62-4fb9-8f15-9da51ed7f57c")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
@@ -121,26 +121,26 @@ namespace X_MUSTER_013
             }
 
             /// <summary>
-            /// The TitleBar100LieferantenZahlungsver item.
+            /// The TitleBar100Kundenstamm item.
             /// </summary>
-            [RepositoryItem("acc574e5-b92c-475e-82ac-f39a5aabb9f8")]
-            public virtual Ranorex.TitleBar TitleBar100LieferantenZahlungsver
+            [RepositoryItem("0100aad8-8f65-4924-8b78-3aa8414f2d5e")]
+            public virtual Ranorex.TitleBar TitleBar100Kundenstamm
             {
                 get
                 {
-                    return _titlebar100lieferantenzahlungsverInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                    return _titlebar100kundenstammInfo.CreateAdapter<Ranorex.TitleBar>(true);
                 }
             }
 
             /// <summary>
-            /// The TitleBar100LieferantenZahlungsver item info.
+            /// The TitleBar100Kundenstamm item info.
             /// </summary>
-            [RepositoryItemInfo("acc574e5-b92c-475e-82ac-f39a5aabb9f8")]
-            public virtual RepoItemInfo TitleBar100LieferantenZahlungsverInfo
+            [RepositoryItemInfo("0100aad8-8f65-4924-8b78-3aa8414f2d5e")]
+            public virtual RepoItemInfo TitleBar100KundenstammInfo
             {
                 get
                 {
-                    return _titlebar100lieferantenzahlungsverInfo;
+                    return _titlebar100kundenstammInfo;
                 }
             }
         }

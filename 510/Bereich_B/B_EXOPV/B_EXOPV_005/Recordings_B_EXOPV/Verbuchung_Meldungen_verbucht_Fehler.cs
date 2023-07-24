@@ -100,6 +100,9 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(6));
             repo.DlgMessageBox.Button0.Click();
             
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Form100ExterneBuchungenVerbuchen.VerbuchenBeendet'.", repo.Form100ExterneBuchungenVerbuchen.VerbuchenBeendetInfo, new RecordItemIndex(7));
+            Validate.Exists(repo.Form100ExterneBuchungenVerbuchen.VerbuchenBeendetInfo);
+            
         }
 
 #region Image Feature Data

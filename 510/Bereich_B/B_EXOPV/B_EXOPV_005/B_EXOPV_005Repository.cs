@@ -210,6 +210,7 @@ namespace B_EXOPV_005
             B_EXOPV_005RepositoryFolders.Tabelle_fixe_ZeilennummernFolder _tabelle_fixe_zeilennummern;
             B_EXOPV_005RepositoryFolders.Tabelle_ZeilenFolder _tabelle_zeilen;
             RepoItemInfo _titlebar100externebuchungenverbucheInfo;
+            RepoItemInfo _verbuchenbeendetInfo;
             RepoItemInfo _pbcommonladenInfo;
             RepoItemInfo _pbcommonpruefenInfo;
             RepoItemInfo _pbcommonverbuchenInfo;
@@ -226,6 +227,7 @@ namespace B_EXOPV_005
                 _tabelle_fixe_zeilennummern = new B_EXOPV_005RepositoryFolders.Tabelle_fixe_ZeilennummernFolder(this);
                 _tabelle_zeilen = new B_EXOPV_005RepositoryFolders.Tabelle_ZeilenFolder(this);
                 _titlebar100externebuchungenverbucheInfo = new RepoItemInfo(this, "TitleBar100ExterneBuchungenVerbuche", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "ff9ccb21-1bc6-457e-93d5-220d2c09d96a");
+                _verbuchenbeendetInfo = new RepoItemInfo(this, "VerbuchenBeendet", "statusbar[@controlname='StatusBar']/text[@accessiblename='Verbuchen beendet!']", "", 30000, null, "14e5d918-a2db-4195-9dea-09fba09d0348");
                 _pbcommonladenInfo = new RepoItemInfo(this, "PbCommonLaden", "container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup1']/button[@controlname='pbCommon_Laden']", "", 30000, null, "07f9ecac-474a-4396-94cf-85edc91df6c8");
                 _pbcommonpruefenInfo = new RepoItemInfo(this, "PbCommonPruefen", "container[@controlname='RibbonBar']/container[@controlname='OptionenGroup']/button[@controlname='pbCommon_Prüfen']", "", 30000, null, "130efb4e-0b1b-44f8-81ff-f181022c3c16");
                 _pbcommonverbuchenInfo = new RepoItemInfo(this, "PbCommonVerbuchen", "container[@controlname='RibbonBar']/container[@controlname='OptionenGroup']/button[@controlname='pbCommon_Verbuchen']", "", 30000, null, "f37b4bd5-d05c-40b0-a748-2d638cb57cb0");
@@ -279,6 +281,30 @@ namespace B_EXOPV_005
                 get
                 {
                     return _titlebar100externebuchungenverbucheInfo;
+                }
+            }
+
+            /// <summary>
+            /// The VerbuchenBeendet item.
+            /// </summary>
+            [RepositoryItem("14e5d918-a2db-4195-9dea-09fba09d0348")]
+            public virtual Ranorex.Text VerbuchenBeendet
+            {
+                get
+                {
+                    return _verbuchenbeendetInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The VerbuchenBeendet item info.
+            /// </summary>
+            [RepositoryItemInfo("14e5d918-a2db-4195-9dea-09fba09d0348")]
+            public virtual RepoItemInfo VerbuchenBeendetInfo
+            {
+                get
+                {
+                    return _verbuchenbeendetInfo;
                 }
             }
 
@@ -3819,7 +3845,6 @@ namespace B_EXOPV_005
         public partial class BEXOPSAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _zeilenwiederherstellenstatusnInfo;
-            RepoItemInfo _zeilenwiederherstellenstatusn1Info;
 
             /// <summary>
             /// Creates a new BEXOPS  folder.
@@ -3828,7 +3853,6 @@ namespace B_EXOPV_005
                     base("BEXOPS", "/contextmenu[@processname='B_EXOPS']", parentFolder, 30000, null, true, "968cef9d-3230-4fc7-b482-81e2c82af9f0", "")
             {
                 _zeilenwiederherstellenstatusnInfo = new RepoItemInfo(this, "ZeilenWiederherstellenStatusN", "menuitem[@text~'Zeilen Wiederherstellen']", "", 90000, null, "7fc66fef-3937-4e20-80c3-57c555ad522d");
-                _zeilenwiederherstellenstatusn1Info = new RepoItemInfo(this, "ZeilenWiederherstellenStatusN1", "menuitem[@name>'Zeilen Wiederherstellen (Status']", "", 30000, null, "047dbc92-1f3e-43c6-b2ca-005de1a92845");
             }
 
             /// <summary>
@@ -3876,30 +3900,6 @@ namespace B_EXOPV_005
                 get
                 {
                     return _zeilenwiederherstellenstatusnInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ZeilenWiederherstellenStatusN1 item.
-            /// </summary>
-            [RepositoryItem("047dbc92-1f3e-43c6-b2ca-005de1a92845")]
-            public virtual Ranorex.MenuItem ZeilenWiederherstellenStatusN1
-            {
-                get
-                {
-                    return _zeilenwiederherstellenstatusn1Info.CreateAdapter<Ranorex.MenuItem>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ZeilenWiederherstellenStatusN1 item info.
-            /// </summary>
-            [RepositoryItemInfo("047dbc92-1f3e-43c6-b2ca-005de1a92845")]
-            public virtual RepoItemInfo ZeilenWiederherstellenStatusN1Info
-            {
-                get
-                {
-                    return _zeilenwiederherstellenstatusn1Info;
                 }
             }
         }
@@ -4157,7 +4157,7 @@ namespace B_EXOPV_005
         [RepositoryFolder("ae7b75e3-ccc5-469d-ac73-63f090c1304d")]
         public partial class FehlerprotokollBExopv001TxtEditorAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _fehlerprotokollbexopv001txteditorInfo;
+            RepoItemInfo _fehlerprotokoll_txteditorInfo;
             RepoItemInfo _text15Info;
             RepoItemInfo _schliessenInfo;
 
@@ -4167,7 +4167,7 @@ namespace B_EXOPV_005
             public FehlerprotokollBExopv001TxtEditorAppFolder(RepoGenBaseFolder parentFolder) :
                     base("FehlerprotokollBExopv001TxtEditor", "/form[@title~'Editor']", parentFolder, 30000, null, true, "ae7b75e3-ccc5-469d-ac73-63f090c1304d", "")
             {
-                _fehlerprotokollbexopv001txteditorInfo = new RepoItemInfo(this, "FehlerprotokollBExopv001TxtEditor", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "90867e14-70b2-4fe6-87d3-bb698ecdd0b9");
+                _fehlerprotokoll_txteditorInfo = new RepoItemInfo(this, "Fehlerprotokoll_TxtEditor", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "90867e14-70b2-4fe6-87d3-bb698ecdd0b9");
                 _text15Info = new RepoItemInfo(this, "Text15", "text[@controlid='15']", "", 30000, null, "ac8e93ef-39e2-41c3-bbd0-4ee6b455357e");
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "05d2e95a-9eb5-4906-9db2-2994e1aee0b9");
             }
@@ -4197,26 +4197,26 @@ namespace B_EXOPV_005
             }
 
             /// <summary>
-            /// The FehlerprotokollBExopv001TxtEditor item.
+            /// The Fehlerprotokoll_TxtEditor item.
             /// </summary>
             [RepositoryItem("90867e14-70b2-4fe6-87d3-bb698ecdd0b9")]
-            public virtual Ranorex.TitleBar FehlerprotokollBExopv001TxtEditor
+            public virtual Ranorex.TitleBar Fehlerprotokoll_TxtEditor
             {
                 get
                 {
-                    return _fehlerprotokollbexopv001txteditorInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                    return _fehlerprotokoll_txteditorInfo.CreateAdapter<Ranorex.TitleBar>(true);
                 }
             }
 
             /// <summary>
-            /// The FehlerprotokollBExopv001TxtEditor item info.
+            /// The Fehlerprotokoll_TxtEditor item info.
             /// </summary>
             [RepositoryItemInfo("90867e14-70b2-4fe6-87d3-bb698ecdd0b9")]
-            public virtual RepoItemInfo FehlerprotokollBExopv001TxtEditorInfo
+            public virtual RepoItemInfo Fehlerprotokoll_TxtEditorInfo
             {
                 get
                 {
-                    return _fehlerprotokollbexopv001txteditorInfo;
+                    return _fehlerprotokoll_txteditorInfo;
                 }
             }
 

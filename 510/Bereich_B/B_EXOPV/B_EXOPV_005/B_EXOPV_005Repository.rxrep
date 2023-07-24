@@ -31,6 +31,17 @@ name="B_EXOPV_005Repository">
 				/form[@controlname='frmMain']/titlebar[@accessiblerole='TitleBar']
 			</item>
 			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="14e5d918-a2db-4195-9dea-09fba09d0348"
+			name="VerbuchenBeendet"
+			refimgid="2f2fd301-f509-4823-bc1b-1d8f38e23f93"
+			refpath="/form[@controlname='frmMain']/statusbar[@controlname='StatusBar']/text[@accessiblename='Verbuchen beendet!']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmMain']/statusbar[@controlname='StatusBar']/text[@accessiblename='Verbuchen beendet!']
+			</item>
+			<item
 			addcaps="button,control,nativewindow"
 			capname="button"
 			id="07f9ecac-474a-4396-94cf-85edc91df6c8"
@@ -1334,17 +1345,6 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			searchtimeout="90000ms">
 				/contextmenu[@processname='B_EXOPS']/menuitem[@text~'Zeilen Wiederherstellen']
 			</item>
-			<item
-			addcaps="menuitem,uiautomation,uiautomationinvoke"
-			capname="menuitem"
-			id="047dbc92-1f3e-43c6-b2ca-005de1a92845"
-			name="ZeilenWiederherstellenStatusN1"
-			refimgid="df47d567-102c-43ed-8f91-90b88f70fd3d"
-			refpath="/contextmenu[@processname='B_EXOPS']/menuitem[@name>'Zeilen Wiederherstellen (Status']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/contextmenu[@processname='B_EXOPS']/menuitem[@name&gt;'Zeilen Wiederherstellen (Status']
-			</item>
 			<basepath>
 				/contextmenu[@processname='B_EXOPS']
 			</basepath>
@@ -1510,7 +1510,7 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			addcaps="titlebar,accessible"
 			capname="titlebar"
 			id="90867e14-70b2-4fe6-87d3-bb698ecdd0b9"
-			name="FehlerprotokollBExopv001TxtEditor"
+			name="Fehlerprotokoll_TxtEditor"
 			refimgid="ae1d37fc-6620-42f9-8699-a8cca6bc69a4"
 			robustPath=""
 			searchtimeout="30000ms">
