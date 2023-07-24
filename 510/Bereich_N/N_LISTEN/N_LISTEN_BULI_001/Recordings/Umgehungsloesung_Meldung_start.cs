@@ -24,29 +24,29 @@ namespace N_LISTEN_BULI_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Bestaetigungsmeldung recording.
+    ///The Umgehungsloesung_Meldung_start recording.
     /// </summary>
-    [TestModule("f1e670fd-616c-4686-929b-5866c287de87", ModuleType.Recording, 1)]
-    public partial class Bestaetigungsmeldung : ITestModule
+    [TestModule("b6eb0bd7-41d9-4e20-9204-82d01a8831fa", ModuleType.Recording, 1)]
+    public partial class Umgehungsloesung_Meldung_start : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repo = global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository.Instance;
 
-        static Bestaetigungsmeldung instance = new Bestaetigungsmeldung();
+        static Umgehungsloesung_Meldung_start instance = new Umgehungsloesung_Meldung_start();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Bestaetigungsmeldung()
+        public Umgehungsloesung_Meldung_start()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Bestaetigungsmeldung Instance
+        public static Umgehungsloesung_Meldung_start Instance
         {
             get { return instance; }
         }
@@ -82,26 +82,11 @@ namespace N_LISTEN_BULI_001.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(5000), new RecordItemIndex(0));
             repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(5000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Verbuchung in die Externe Schnittstelle jetzt durchführen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Verbuchung in die Externe Schnittstelle jetzt durchführen?");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Keine Buchungstypen vorhanden!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Keine Buchungstypen vorhanden!");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
             repo.DlgMessageBox.Button0.Click();
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(5000), new RecordItemIndex(3));
-            repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(5000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Verbuchung erfolgreich durchgeführt.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Verbuchung erfolgreich durchgeführt.");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(5));
-            repo.DlgMessageBox.Button0.Click();
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungs'", repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo, new ActionTimeout(5000), new RecordItemIndex(6));
-            repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo.WaitForExists(5000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100AVZAuswertungenBuchungslist.WindowsForms10BUTTONApp02804c64R6A' at Center.", repo.Form100AVZAuswertungenBuchungslist.WindowsForms10BUTTONApp02804c64R6AInfo, new RecordItemIndex(7));
-            repo.Form100AVZAuswertungenBuchungslist.WindowsForms10BUTTONApp02804c64R6A.Click();
             
         }
 

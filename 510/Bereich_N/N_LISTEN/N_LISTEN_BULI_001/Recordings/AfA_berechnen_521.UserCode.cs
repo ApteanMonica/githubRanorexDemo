@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace N_LISTEN_BULI_001.Recordings
 {
-    public partial class Eingabe_Ueberleitungsmaske
+    public partial class AfA_berechnen_521
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

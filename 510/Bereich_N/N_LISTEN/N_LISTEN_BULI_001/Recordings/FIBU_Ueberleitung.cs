@@ -24,22 +24,22 @@ namespace N_LISTEN_BULI_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Eingabe_Ueberleitungsmaske recording.
+    ///The FIBU_Ueberleitung recording.
     /// </summary>
-    [TestModule("8e719a0b-e7bc-4407-a4da-797dea3e498e", ModuleType.Recording, 1)]
-    public partial class Eingabe_Ueberleitungsmaske : ITestModule
+    [TestModule("2a2bec47-aca7-4c5f-a992-a09c20d8764c", ModuleType.Recording, 1)]
+    public partial class FIBU_Ueberleitung : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repo = global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository.Instance;
 
-        static Eingabe_Ueberleitungsmaske instance = new Eingabe_Ueberleitungsmaske();
+        static FIBU_Ueberleitung instance = new FIBU_Ueberleitung();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Eingabe_Ueberleitungsmaske()
+        public FIBU_Ueberleitung()
         {
             Belegnummer_Ueberleitung = "BULI_001_A";
             Belegdatum_Ueberleitung = "31.12.2022";
@@ -49,7 +49,7 @@ namespace N_LISTEN_BULI_001.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Eingabe_Ueberleitungsmaske Instance
+        public static FIBU_Ueberleitung Instance
         {
             get { return instance; }
         }
@@ -61,7 +61,7 @@ namespace N_LISTEN_BULI_001.Recordings
         /// <summary>
         /// Gets or sets the value of variable Belegdatum_Ueberleitung.
         /// </summary>
-        [TestVariable("7d5381db-5b43-4040-a4a0-96d758ac933e")]
+        [TestVariable("5839be8f-7fb0-4bc7-ac42-ee97dab608d9")]
         public string Belegdatum_Ueberleitung
         {
             get { return _Belegdatum_Ueberleitung; }
@@ -73,7 +73,7 @@ namespace N_LISTEN_BULI_001.Recordings
         /// <summary>
         /// Gets or sets the value of variable Ust_Code_Ueberleitung.
         /// </summary>
-        [TestVariable("90a8f7ef-2375-4e0b-ba15-cfca26ced8cc")]
+        [TestVariable("52609ef9-fd70-450c-9879-3117fa69470e")]
         public string Ust_Code_Ueberleitung
         {
             get { return _Ust_Code_Ueberleitung; }
@@ -83,7 +83,7 @@ namespace N_LISTEN_BULI_001.Recordings
         /// <summary>
         /// Gets or sets the value of variable Belegnummer_Ueberleitung.
         /// </summary>
-        [TestVariable("79acc207-6238-4e52-b748-b92e72e04dfa")]
+        [TestVariable("e327bd7b-6d6d-40bb-8d3a-d60aa6eb4166")]
         public string Belegnummer_Ueberleitung
         {
             get { return repo.Belegnummer_Ueberleitung; }
@@ -116,46 +116,43 @@ namespace N_LISTEN_BULI_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new ActionTimeout(120000), new RecordItemIndex(0));
-            repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ-Überleitung Fibu MIT Bereiche') on item 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'.", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, "Text", "[100]  AVZ-Überleitung Fibu MIT Bereiche");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Belegnummer_Ueberleitung' with focus on 'DlgFibu.Frame2.BelegNr'.", repo.DlgFibu.Frame2.BelegNrInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Belegnummer_Ueberleitung' with focus on 'DlgFibu.Frame2.BelegNr'.", repo.DlgFibu.Frame2.BelegNrInfo, new RecordItemIndex(0));
             repo.DlgFibu.Frame2.BelegNr.PressKeys(Belegnummer_Ueberleitung);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(1));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Belegnummer_Ueberleitung) on item 'DlgFibu.Frame2.BelegNr'.", repo.DlgFibu.Frame2.BelegNrInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Belegnummer_Ueberleitung) on item 'DlgFibu.Frame2.BelegNr'.", repo.DlgFibu.Frame2.BelegNrInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.DlgFibu.Frame2.BelegNrInfo, "Text", Belegnummer_Ueberleitung);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Belegdatum_Ueberleitung' with focus on 'DlgFibu.Frame2.BelegDatum'.", repo.DlgFibu.Frame2.BelegDatumInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Belegdatum_Ueberleitung' with focus on 'DlgFibu.Frame2.BelegDatum'.", repo.DlgFibu.Frame2.BelegDatumInfo, new RecordItemIndex(3));
             repo.DlgFibu.Frame2.BelegDatum.PressKeys(Belegdatum_Ueberleitung);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Belegdatum_Ueberleitung) on item 'DlgFibu.Frame2.BelegDatum'.", repo.DlgFibu.Frame2.BelegDatumInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Belegdatum_Ueberleitung) on item 'DlgFibu.Frame2.BelegDatum'.", repo.DlgFibu.Frame2.BelegDatumInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.DlgFibu.Frame2.BelegDatumInfo, "Text", Belegdatum_Ueberleitung);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2022') on item 'DlgFibu.Frame2.Text_UEberleitung_Jahr'.", repo.DlgFibu.Frame2.Text_UEberleitung_JahrInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2022') on item 'DlgFibu.Frame2.Text_UEberleitung_Jahr'.", repo.DlgFibu.Frame2.Text_UEberleitung_JahrInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.DlgFibu.Frame2.Text_UEberleitung_JahrInfo, "Text", "2022");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='12') on item 'DlgFibu.Frame2.Text_UEberleitung_Monat'.", repo.DlgFibu.Frame2.Text_UEberleitung_MonatInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='12') on item 'DlgFibu.Frame2.Text_UEberleitung_Monat'.", repo.DlgFibu.Frame2.Text_UEberleitung_MonatInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.DlgFibu.Frame2.Text_UEberleitung_MonatInfo, "Text", "12");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Ust_Code_Ueberleitung' with focus on 'DlgFibu.Frame2.UstCode'.", repo.DlgFibu.Frame2.UstCodeInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Ust_Code_Ueberleitung' with focus on 'DlgFibu.Frame2.UstCode'.", repo.DlgFibu.Frame2.UstCodeInfo, new RecordItemIndex(8));
             repo.DlgFibu.Frame2.UstCode.PressKeys(Ust_Code_Ueberleitung);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ust_Code_Ueberleitung) on item 'DlgFibu.Frame2.UstCode'.", repo.DlgFibu.Frame2.UstCodeInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ust_Code_Ueberleitung) on item 'DlgFibu.Frame2.UstCode'.", repo.DlgFibu.Frame2.UstCodeInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.DlgFibu.Frame2.UstCodeInfo, "Text", Ust_Code_Ueberleitung);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFibu.PbStart' at Center.", repo.DlgFibu.PbStartInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100') on item 'DlgFibu.Frame2.Firma'.", repo.DlgFibu.Frame2.FirmaInfo, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.DlgFibu.Frame2.FirmaInfo, "Text", "100");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFibu.PbStart' at Center.", repo.DlgFibu.PbStartInfo, new RecordItemIndex(12));
             repo.DlgFibu.PbStart.Click();
             
         }

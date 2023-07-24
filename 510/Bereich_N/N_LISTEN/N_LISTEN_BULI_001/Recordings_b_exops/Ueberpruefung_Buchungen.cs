@@ -79,62 +79,68 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
 
             Init();
 
-            // Überprüfung Zeile 3
-            Report.Log(ReportLevel.Info, "Section", "Überprüfung Zeile 3", new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='BULI_001_A') on item 'FrmBEXSA.Belegnummer'.", repo.FrmBEXSA.BelegnummerInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.FrmBEXSA.BelegnummerInfo, "Text", "BULI_001_A");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0660') on item 'FrmBEXSA.ColExsaKtonrRow3'.", repo.FrmBEXSA.ColExsaKtonrRow3Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.FrmBEXSA.ColExsaKtonrRow3Info, "Text", "0660");
+            // Überprüfung Zeile 1Zeile 1
+            Report.Log(ReportLevel.Info, "Section", "Überprüfung Zeile 1Zeile 1", new RecordItemIndex(1));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='S') on item 'FrmBEXSA.ColExsaShRow3'.", repo.FrmBEXSA.ColExsaShRow3Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.FrmBEXSA.ColExsaShRow3Info, "Text", "S");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0660') on item 'FrmBEXSA.Row1.ColExsaKtonrRow1'.", repo.FrmBEXSA.Row1.ColExsaKtonrRow1Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.FrmBEXSA.Row1.ColExsaKtonrRow1Info, "Text", "0660");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='208,33') on item 'FrmBEXSA.ColExsaBetragRow3'.", repo.FrmBEXSA.ColExsaBetragRow3Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.FrmBEXSA.ColExsaBetragRow3Info, "Text", "208,33");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='S') on item 'FrmBEXSA.Row1.ColExsaShRow1'.", repo.FrmBEXSA.Row1.ColExsaShRow1Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.FrmBEXSA.Row1.ColExsaShRow1Info, "Text", "S");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V00') on item 'FrmBEXSA.ColUstCdRow3'.", repo.FrmBEXSA.ColUstCdRow3Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.FrmBEXSA.ColUstCdRow3Info, "Text", "V00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='208,33') on item 'FrmBEXSA.Row1.ColExsaBetragRow1'.", repo.FrmBEXSA.Row1.ColExsaBetragRow1Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FrmBEXSA.Row1.ColExsaBetragRow1Info, "Text", "208,33");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmBEXSA.ColExsaUstsatzRow3'.", repo.FrmBEXSA.ColExsaUstsatzRow3Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.FrmBEXSA.ColExsaUstsatzRow3Info, "Text", "0");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V00') on item 'FrmBEXSA.Row1.ColUstCdRow1'.", repo.FrmBEXSA.Row1.ColUstCdRow1Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.FrmBEXSA.Row1.ColUstCdRow1Info, "Text", "V00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'Form100VerwaltenSchnittstelleEXSA.ColExsaUstmvRow7'.", repo.Form100VerwaltenSchnittstelleEXSA.ColExsaUstmvRow7Info, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.Form100VerwaltenSchnittstelleEXSA.ColExsaUstmvRow7Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmBEXSA.Row1.ColExsaUstsatzRow1'.", repo.FrmBEXSA.Row1.ColExsaUstsatzRow1Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmBEXSA.Row1.ColExsaUstsatzRow1Info, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmBEXSA.FlexGrid.ColExsaUstmvRow3'.", repo.FrmBEXSA.FlexGrid.ColExsaUstmvRow3Info, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.FrmBEXSA.FlexGrid.ColExsaUstmvRow3Info, "Text", "V");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmBEXSA.Row1.ColExsaUstmvRow1'.", repo.FrmBEXSA.Row1.ColExsaUstmvRow1Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.FrmBEXSA.Row1.ColExsaUstmvRow1Info, "Text", "V");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmBEXSA.FlexGrid.ColExsaUstbetragRow3'.", repo.FrmBEXSA.FlexGrid.ColExsaUstbetragRow3Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.FrmBEXSA.FlexGrid.ColExsaUstbetragRow3Info, "Text", "0,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmBEXSA.Row1.ColExsaUstbetragRow1'.", repo.FrmBEXSA.Row1.ColExsaUstbetragRow1Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.FrmBEXSA.Row1.ColExsaUstbetragRow1Info, "Text", "0,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'FrmBEXSA.FlexGrid.ColExsaBektNr1Row3'.", repo.FrmBEXSA.FlexGrid.ColExsaBektNr1Row3Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.FrmBEXSA.FlexGrid.ColExsaBektNr1Row3Info, "Text", "10");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='AfA') on item 'FrmBEXSA.Row1.ColExsaText1Row1'.", repo.FrmBEXSA.Row1.ColExsaText1Row1Info, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmBEXSA.Row1.ColExsaText1Row1Info, "Text", "AfA");
             
-            // Überprüfung Zeile 4
-            Report.Log(ReportLevel.Info, "Section", "Überprüfung Zeile 4", new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'FrmBEXSA.Row1.ColExsaBektNr1Row1'.", repo.FrmBEXSA.Row1.ColExsaBektNr1Row1Info, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.FrmBEXSA.Row1.ColExsaBektNr1Row1Info, "Text", "10");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0660') on item 'FrmBEXSA.FlexGrid.ColExsaKtonrRow4'.", repo.FrmBEXSA.FlexGrid.ColExsaKtonrRow4Info, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.FrmBEXSA.FlexGrid.ColExsaKtonrRow4Info, "Text", "0660");
+            // Zeile 2
+            Report.Log(ReportLevel.Info, "Section", "Zeile 2", new RecordItemIndex(11));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='H') on item 'FrmBEXSA.FlexGrid.ColExsaShRow4'.", repo.FrmBEXSA.FlexGrid.ColExsaShRow4Info, new RecordItemIndex(12));
-            Validate.AttributeEqual(repo.FrmBEXSA.FlexGrid.ColExsaShRow4Info, "Text", "H");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0660') on item 'FrmBEXSA.Row2.ColExsaKtonrRow2'.", repo.FrmBEXSA.Row2.ColExsaKtonrRow2Info, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.FrmBEXSA.Row2.ColExsaKtonrRow2Info, "Text", "0660");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='208,33') on item 'FrmBEXSA.FlexGrid.ColExsaBetragRow4'.", repo.FrmBEXSA.FlexGrid.ColExsaBetragRow4Info, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.FrmBEXSA.FlexGrid.ColExsaBetragRow4Info, "Text", "208,33");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='H') on item 'FrmBEXSA.Row2.ColExsaShRow2'.", repo.FrmBEXSA.Row2.ColExsaShRow2Info, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.FrmBEXSA.Row2.ColExsaShRow2Info, "Text", "H");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V00') on item 'FrmBEXSA.FlexGrid.ColUstCdRow4'.", repo.FrmBEXSA.FlexGrid.ColUstCdRow4Info, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.FrmBEXSA.FlexGrid.ColUstCdRow4Info, "Text", "V00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='208,33') on item 'FrmBEXSA.Row2.ColExsaBetragRow2'.", repo.FrmBEXSA.Row2.ColExsaBetragRow2Info, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.FrmBEXSA.Row2.ColExsaBetragRow2Info, "Text", "208,33");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmBEXSA.FlexGrid.ColExsaUstsatzRow4'.", repo.FrmBEXSA.FlexGrid.ColExsaUstsatzRow4Info, new RecordItemIndex(15));
-            Validate.AttributeEqual(repo.FrmBEXSA.FlexGrid.ColExsaUstsatzRow4Info, "Text", "0");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V00') on item 'FrmBEXSA.Row2.ColUstCdRow2'.", repo.FrmBEXSA.Row2.ColUstCdRow2Info, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.FrmBEXSA.Row2.ColUstCdRow2Info, "Text", "V00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmBEXSA.FlexGrid.ColExsaUstmvRow4'.", repo.FrmBEXSA.FlexGrid.ColExsaUstmvRow4Info, new RecordItemIndex(16));
-            Validate.AttributeEqual(repo.FrmBEXSA.FlexGrid.ColExsaUstmvRow4Info, "Text", "V");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmBEXSA.Row2.ColExsaUstsatzRow2'.", repo.FrmBEXSA.Row2.ColExsaUstsatzRow2Info, new RecordItemIndex(16));
+            Validate.AttributeEqual(repo.FrmBEXSA.Row2.ColExsaUstsatzRow2Info, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmBEXSA.FlexGrid.ColExsaUstbetragRow4'.", repo.FrmBEXSA.FlexGrid.ColExsaUstbetragRow4Info, new RecordItemIndex(17));
-            Validate.AttributeEqual(repo.FrmBEXSA.FlexGrid.ColExsaUstbetragRow4Info, "Text", "0,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmBEXSA.Row1.ColExsaUstmvRow1'.", repo.FrmBEXSA.Row1.ColExsaUstmvRow1Info, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.FrmBEXSA.Row1.ColExsaUstmvRow1Info, "Text", "V");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'FrmBEXSA.FlexGrid.ColExsaBektNr1Row4'.", repo.FrmBEXSA.FlexGrid.ColExsaBektNr1Row4Info, new RecordItemIndex(18));
-            Validate.AttributeEqual(repo.FrmBEXSA.FlexGrid.ColExsaBektNr1Row4Info, "Text", "10");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmBEXSA.Row2.ColExsaUstbetragRow2'.", repo.FrmBEXSA.Row2.ColExsaUstbetragRow2Info, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.FrmBEXSA.Row2.ColExsaUstbetragRow2Info, "Text", "0,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='AfA') on item 'FrmBEXSA.Row2.ColExsaText1Row2'.", repo.FrmBEXSA.Row2.ColExsaText1Row2Info, new RecordItemIndex(19));
+            Validate.AttributeEqual(repo.FrmBEXSA.Row2.ColExsaText1Row2Info, "Text", "AfA");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'FrmBEXSA.Row2.ColExsaBektNr1Row2'.", repo.FrmBEXSA.Row2.ColExsaBektNr1Row2Info, new RecordItemIndex(20));
+            Validate.AttributeEqual(repo.FrmBEXSA.Row2.ColExsaBektNr1Row2Info, "Text", "10");
             
         }
 

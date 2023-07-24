@@ -1131,6 +1131,7 @@ namespace Z_SUM_001
             RepoItemInfo _celltmpcol3row1Info;
             RepoItemInfo _celltmpcol4row1Info;
             RepoItemInfo _celltmpcol5row1Info;
+            RepoItemInfo _row1column0Info;
 
             /// <summary>
             /// Creates a new Row1  folder.
@@ -1149,6 +1150,7 @@ namespace Z_SUM_001
                 _celltmpcol3row1Info = new RepoItemInfo(this, "CellTmpCol3Row1", "cell[@accessiblename='__tmp__col3 Row 1']", "", 30000, null, "c02638eb-e101-444c-8add-26068cba7212");
                 _celltmpcol4row1Info = new RepoItemInfo(this, "CellTmpCol4Row1", "cell[@accessiblename='__tmp__col4 Row 1']", "", 30000, null, "163bbfe4-9070-4eef-8d32-6397837a039a");
                 _celltmpcol5row1Info = new RepoItemInfo(this, "CellTmpCol5Row1", "cell[@accessiblename='__tmp__col5 Row 1']", "", 30000, null, "30879d6c-ed15-4e98-8c8f-2a9aa40fa795");
+                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "abc4768f-5bf6-444d-a543-dd4e6aa98d79");
             }
 
             /// <summary>
@@ -1436,6 +1438,30 @@ namespace Z_SUM_001
                 get
                 {
                     return _celltmpcol5row1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item.
+            /// </summary>
+            [RepositoryItem("abc4768f-5bf6-444d-a543-dd4e6aa98d79")]
+            public virtual Ranorex.Cell Row1Column0
+            {
+                get
+                {
+                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("abc4768f-5bf6-444d-a543-dd4e6aa98d79")]
+            public virtual RepoItemInfo Row1Column0Info
+            {
+                get
+                {
+                    return _row1column0Info;
                 }
             }
         }

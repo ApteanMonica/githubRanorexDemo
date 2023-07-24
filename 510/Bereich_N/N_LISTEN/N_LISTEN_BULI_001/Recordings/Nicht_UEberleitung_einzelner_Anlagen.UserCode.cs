@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace N_LISTEN_BULI_001.Recordings
 {
-    public partial class Bestaetigungsmeldung
+    public partial class Nicht_UEberleitung_einzelner_Anlagen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

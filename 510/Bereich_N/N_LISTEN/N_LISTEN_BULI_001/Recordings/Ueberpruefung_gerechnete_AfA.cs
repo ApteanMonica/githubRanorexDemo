@@ -157,44 +157,50 @@ namespace N_LISTEN_BULI_001.Recordings
 
             Init();
 
-            // Überprüfung Zeile 3
-            Report.Log(ReportLevel.Info, "Section", "Überprüfung Zeile 3", new RecordItemIndex(0));
+            // Überprüfung Zeile 1
+            Report.Log(ReportLevel.Info, "Section", "Überprüfung Zeile 1", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='AfA') on item 'FrmBuchungsliste.ColTypRow2'.", repo.FrmBuchungsliste.ColTypRow2Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.FrmBuchungsliste.ColTypRow2Info, "Text", "AfA");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='AfA') on item 'FrmBuchungsliste.FlexGrid.ColTypRow1'.", repo.FrmBuchungsliste.FlexGrid.ColTypRow1Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColTypRow1Info, "Text", "AfA");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Afa_Konto) on item 'FrmBuchungsliste.ColKtoNrRow2'.", repo.FrmBuchungsliste.ColKtoNrRow2Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.FrmBuchungsliste.ColKtoNrRow2Info, "Text", Afa_Konto);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Afa_Konto) on item 'FrmBuchungsliste.FlexGrid.ColKtoNrRow1'.", repo.FrmBuchungsliste.FlexGrid.ColKtoNrRow1Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColKtoNrRow1Info, "Text", Afa_Konto);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$AfA_Gegenkonto) on item 'FrmBuchungsliste.ColGktoNrRow2'.", repo.FrmBuchungsliste.ColGktoNrRow2Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.FrmBuchungsliste.ColGktoNrRow2Info, "Text", AfA_Gegenkonto);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$AfA_Gegenkonto) on item 'FrmBuchungsliste.FlexGrid.ColGktoNrRow1'.", repo.FrmBuchungsliste.FlexGrid.ColGktoNrRow1Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColGktoNrRow1Info, "Text", AfA_Gegenkonto);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kostenstelle_10) on item 'FrmBuchungsliste.ColBektNr1Row2'.", repo.FrmBuchungsliste.ColBektNr1Row2Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.FrmBuchungsliste.ColBektNr1Row2Info, "Text", Kostenstelle_10);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kostenstelle_10) on item 'FrmBuchungsliste.FlexGrid.ColBektNr1Row1'.", repo.FrmBuchungsliste.FlexGrid.ColBektNr1Row1Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColBektNr1Row1Info, "Text", Kostenstelle_10);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='208,33') on item 'FrmBuchungsliste.ColBetragRow2'.", repo.FrmBuchungsliste.ColBetragRow2Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.FrmBuchungsliste.ColBetragRow2Info, "Text", "208,33");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='208,33') on item 'FrmBuchungsliste.FlexGrid.ColBetragRow1'.", repo.FrmBuchungsliste.FlexGrid.ColBetragRow1Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColBetragRow1Info, "Text", "208,33");
             
-            // Überprüfung Zeile 4
-            Report.Log(ReportLevel.Info, "Section", "Überprüfung Zeile 4", new RecordItemIndex(6));
+            // Überprüfung Zeile 2
+            Report.Log(ReportLevel.Info, "Section", "Überprüfung Zeile 2", new RecordItemIndex(6));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='AfA') on item 'FrmBuchungsliste.ColTypRow4'.", repo.FrmBuchungsliste.ColTypRow4Info, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.FrmBuchungsliste.ColTypRow4Info, "Text", "AfA");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='AfA') on item 'FrmBuchungsliste.FlexGrid.ColTypRow2'.", repo.FrmBuchungsliste.FlexGrid.ColTypRow2Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColTypRow2Info, "Text", "AfA");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$GWG_AfA_Konto) on item 'FrmBuchungsliste.ColKtoNrRow4'.", repo.FrmBuchungsliste.ColKtoNrRow4Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.FrmBuchungsliste.ColKtoNrRow4Info, "Text", GWG_AfA_Konto);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$GWG_AfA_Konto) on item 'FrmBuchungsliste.FlexGrid.ColKtoNrRow2'.", repo.FrmBuchungsliste.FlexGrid.ColKtoNrRow2Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColKtoNrRow2Info, "Text", GWG_AfA_Konto);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$GWG_AfA_Gegenkonto) on item 'FrmBuchungsliste.ColGktoNrRow4'.", repo.FrmBuchungsliste.ColGktoNrRow4Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.FrmBuchungsliste.ColGktoNrRow4Info, "Text", GWG_AfA_Gegenkonto);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$GWG_AfA_Gegenkonto) on item 'FrmBuchungsliste.FlexGrid.ColGktoNrRow2'.", repo.FrmBuchungsliste.FlexGrid.ColGktoNrRow2Info, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColGktoNrRow2Info, "Text", GWG_AfA_Gegenkonto);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kostenstelle_20) on item 'FrmBuchungsliste.ColBektNr1Row4'.", repo.FrmBuchungsliste.ColBektNr1Row4Info, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.FrmBuchungsliste.ColBektNr1Row4Info, "Text", Kostenstelle_20);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kostenstelle_20) on item 'FrmBuchungsliste.FlexGrid.ColBektNr1Row2'.", repo.FrmBuchungsliste.FlexGrid.ColBektNr1Row2Info, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColBektNr1Row2Info, "Text", Kostenstelle_20);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='291,67') on item 'FrmBuchungsliste.ColBetragRow4'.", repo.FrmBuchungsliste.ColBetragRow4Info, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.FrmBuchungsliste.ColBetragRow4Info, "Text", "291,67");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='291,67') on item 'FrmBuchungsliste.FlexGrid.ColBetragRow2'.", repo.FrmBuchungsliste.FlexGrid.ColBetragRow2Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColBetragRow2Info, "Text", "291,67");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100AVZAuswertungenBuchungslist.WindowsForms10BUTTONApp02804c64R6A' at Center.", repo.Form100AVZAuswertungenBuchungslist.WindowsForms10BUTTONApp02804c64R6AInfo, new RecordItemIndex(12));
-            repo.Form100AVZAuswertungenBuchungslist.WindowsForms10BUTTONApp02804c64R6A.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.RbJahr' at Center.", repo.FrmBuchungsliste.RbJahrInfo, new RecordItemIndex(12));
+            repo.FrmBuchungsliste.RbJahr.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBuchungsliste.RbJahr'.", repo.FrmBuchungsliste.RbJahrInfo, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.RbJahrInfo, "Checked", "True");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbUEberleitungFibu' at Center.", repo.FrmBuchungsliste.PbUEberleitungFibuInfo, new RecordItemIndex(14));
+            repo.FrmBuchungsliste.PbUEberleitungFibu.Click();
             
         }
 

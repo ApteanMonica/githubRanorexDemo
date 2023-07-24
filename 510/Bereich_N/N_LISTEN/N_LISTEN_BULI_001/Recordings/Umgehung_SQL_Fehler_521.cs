@@ -24,29 +24,29 @@ namespace N_LISTEN_BULI_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Hinweismeldung_bereits_verbucht recording.
+    ///The Umgehung_SQL_Fehler_521 recording.
     /// </summary>
-    [TestModule("c13f7286-6c5d-4afb-96ac-492e3731bb25", ModuleType.Recording, 1)]
-    public partial class Hinweismeldung_bereits_verbucht : ITestModule
+    [TestModule("f68f114f-721e-4b33-9eed-8bc9eba9bd24", ModuleType.Recording, 1)]
+    public partial class Umgehung_SQL_Fehler_521 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repo = global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository.Instance;
 
-        static Hinweismeldung_bereits_verbucht instance = new Hinweismeldung_bereits_verbucht();
+        static Umgehung_SQL_Fehler_521 instance = new Umgehung_SQL_Fehler_521();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Hinweismeldung_bereits_verbucht()
+        public Umgehung_SQL_Fehler_521()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Hinweismeldung_bereits_verbucht Instance
+        public static Umgehung_SQL_Fehler_521 Instance
         {
             get { return instance; }
         }
@@ -79,23 +79,18 @@ namespace N_LISTEN_BULI_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(5000), new RecordItemIndex(0));
-            repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(5000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'CdlgSqlFehler.SQLFehler'", repo.CdlgSqlFehler.SQLFehlerInfo, new ActionTimeout(120000), new RecordItemIndex(0));
+            repo.CdlgSqlFehler.SQLFehlerInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Verbuchung per 12.2022 nicht möglich.\r\n\r\nEs ist bereits bis Zeitraum 12.2022  abgeschlossen!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Verbuchung per 12.2022 nicht möglich.\r\n\r\nEs ist bereits bis Zeitraum 12.2022  abgeschlossen!");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='SQL Fehler: 156 - Falsche Syntax in der Nähe des AND-Schlüsselworts.\r\n\r\nFehlerPosition: 7 () - <CN=chGlobal>\r\n\r\nFalsche Syntax in der Nähe des AND-Schlüsselworts.\r\n') on item 'CdlgSqlFehler.Text'.", repo.CdlgSqlFehler.TextInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.CdlgSqlFehler.TextInfo, "Text", "SQL Fehler: 156 - Falsche Syntax in der Nähe des AND-Schlüsselworts.\r\n\r\nFehlerPosition: 7 () - <CN=chGlobal>\r\n\r\nFalsche Syntax in der Nähe des AND-Schlüsselworts.\r\n");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
-            repo.DlgMessageBox.Button0.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'OK' with focus on 'CdlgSqlFehler.SQLFehler'.", repo.CdlgSqlFehler.SQLFehlerInfo, new RecordItemIndex(2));
+            repo.CdlgSqlFehler.SQLFehler.PressKeys("OK");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(120000), new RecordItemIndex(3));
-            repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Unterschiedliche Monatsangaben!\r\n\r\nZeitraum der Eingrenzung (Monat von/bis):\t1.2022\r\nZeitraum lt. Fibu-Schnittstelle:\t\t12.2022\r\n\r\nTrotzdem verbuchen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Unterschiedliche Monatsangaben!\r\n\r\nZeitraum der Eingrenzung (Monat von/bis):\t1.2022\r\nZeitraum lt. Fibu-Schnittstelle:\t\t12.2022\r\n\r\nTrotzdem verbuchen?");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(5));
-            repo.DlgMessageBox.Button1.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press with focus on 'CdlgSqlFehler.SQLFehler'.", repo.CdlgSqlFehler.SQLFehlerInfo, new RecordItemIndex(3));
+            Keyboard.PrepareFocus(repo.CdlgSqlFehler.SQLFehler);
+            Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }
 

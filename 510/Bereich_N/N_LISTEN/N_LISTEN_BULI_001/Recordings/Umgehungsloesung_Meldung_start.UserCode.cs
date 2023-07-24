@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace N_LISTEN_BULI_001.Recordings
 {
-    public partial class AfA_berechnen_und_ueberleiten
+    public partial class Umgehungsloesung_Meldung_start
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

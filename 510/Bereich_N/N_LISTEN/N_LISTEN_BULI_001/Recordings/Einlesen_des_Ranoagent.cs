@@ -20,50 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace N_LISTEN_BULI_001.Recordings_b_exops
+namespace N_LISTEN_BULI_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Einschraenkungen_ueberpruefen recording.
+    ///The Einlesen_des_Ranoagent recording.
     /// </summary>
-    [TestModule("e284a7db-38e4-4019-9f0b-19a404c58484", ModuleType.Recording, 1)]
-    public partial class Einschraenkungen_ueberpruefen : ITestModule
+    [TestModule("6cb1309a-95d5-4459-9fa2-5bc883c4ad0a", ModuleType.Recording, 1)]
+    public partial class Einlesen_des_Ranoagent : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repo = global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository.Instance;
 
-        static Einschraenkungen_ueberpruefen instance = new Einschraenkungen_ueberpruefen();
+        static Einlesen_des_Ranoagent instance = new Einlesen_des_Ranoagent();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Einschraenkungen_ueberpruefen()
+        public Einlesen_des_Ranoagent()
         {
-            Tagesdatum_ermitteln = "";
+            Servername = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Einschraenkungen_ueberpruefen Instance
+        public static Einlesen_des_Ranoagent Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Tagesdatum_ermitteln;
+        string _Servername;
 
         /// <summary>
-        /// Gets or sets the value of variable Tagesdatum_ermitteln.
+        /// Gets or sets the value of variable Servername.
         /// </summary>
-        [TestVariable("ddc7f825-89a7-4aa4-a591-d3b0af11c21a")]
-        public string Tagesdatum_ermitteln
+        [TestVariable("1d013268-9671-4415-9194-d780a490a3a4")]
+        public string Servername
         {
-            get { return _Tagesdatum_ermitteln; }
-            set { _Tagesdatum_ermitteln = value; }
+            get { return _Servername; }
+            set { _Servername = value; }
         }
 
 #endregion
@@ -92,17 +92,9 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='S') on item 'FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1Info, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.FrmBEXOP.Einschraenkungen_BEXOP.ColKlsRow1Info, "Text", "S");
+            Servername = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetHost();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='N') on item 'FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.FrmBEXOP.Einschraenkungen_BEXOP.ColStatusRow1Info, "Text", "N");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='N_LISTEN') on item 'FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.FrmBEXOP.Einschraenkungen_BEXOP.ColHerkunftRow1Info, "Text", "N_LISTEN");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='31.12.2022') on item 'FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1'.", repo.FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.FrmBEXOP.Einschraenkungen_BEXOP.ColDatumRow1Info, "Text", "31.12.2022");
+            Report.Log(ReportLevel.Info, "User", Servername, new RecordItemIndex(1));
             
         }
 

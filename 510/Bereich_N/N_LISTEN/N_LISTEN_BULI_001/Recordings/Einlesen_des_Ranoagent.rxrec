@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="89074ac8-76a4-48dc-8276-b76893be6b9d"
+id="6cb1309a-95d5-4459-9fa2-5bc883c4ad0a"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,13 +19,13 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Tagesdatum_einlesen"
-	namespace="N_LISTEN_BULI_001.Recordings_b_exops">
+	classname="Einlesen_des_Ranoagent"
+	namespace="N_LISTEN_BULI_001.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="97e0d63a-4e8b-4c99-9328-900d55d69743"
-		name="Tagesdatum_ermitteln">
+		id="1d013268-9671-4415-9194-d780a490a3a4"
+		name="Servername">
 		</var>
 	</variables>
 	<recorditems>
@@ -33,7 +33,7 @@ mode="Global">
 		classname="Aptean"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="GetSystemDateTimeAsString"
+		methodname="GetHost"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
 		optional="False">
 			<comment>
@@ -41,23 +41,29 @@ mode="Global">
 			<bindings>
 				<binding
 				target="ReturnVariable"
-				variable="Tagesdatum_ermitteln">
+				variable="Servername">
 				</binding>
 			</bindings>
 			<arguments
-			id="8ac63c83-79e3-47ef-9ffc-7e262348e4c5">
-				<argument
-				argname="expectedFormat"
-				id="cec76d3e-9fd8-4f6a-9b5f-2367e73ac53b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						dd.MM.yyyy
-					</argvalue>
-				</argument>
+			id="970c1195-990e-44b3-9f3d-4021b3d5fd8c">
 			</arguments>
 		</userrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="30690781-ea01-432c-b7ee-7a9fb38fb8dc">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Servername">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="a571684b-1718-4382-85f0-a148dbf2b821"
@@ -74,7 +80,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Tagesdatum_einlesen.UserCode.cs
+		Einlesen_des_Ranoagent.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

@@ -25,11 +25,75 @@ mode="Global">
 	<variables>
 	</variables>
 	<recorditems>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="21da80f5-425f-412f-9958-9cc39fb169fa">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ec197f0d-a4a4-44a7-aeff-922c88991259"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="2194,108,101,17"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						BULI_001_A
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Belegnummer:
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Text
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						ReadOnly, Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						BULI_001_A
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmB_EXSA']/container[@controlname='ToolBar']/text[@controlname='dfBelegnr']/text[@accessiblename='Belegnummer:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				BULI_001_A
+			</matchvalue>
+		</validationitem>
 		<separatoritem
 		enabled="True"
 		optional="False">
 			<comment>
-				Überprüfung Zeile 3
+				Überprüfung Zeile 1Zeile 1
 			</comment>
 			<bindings>
 			</bindings>
@@ -44,64 +108,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="bcde198a-280c-43f6-a8c2-a289253a65f2"
+			id="bfcbc04d-e013-46a8-beea-bb4ba6b09c97"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="1"
-				prefcap="cell"
-				rect="1941,267,61,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						0660
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colExsa_ktonr Row 3
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						0660
-					</attribute>
-				</element>
 				<path>
-					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colExsa_ktonr Row 3']
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_ktonr Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -123,64 +133,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="12c3e8a9-a624-4f24-9967-4f0c032f7012"
+			id="d9863874-b6bd-43d3-849a-36e93a73327e"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="3"
-				prefcap="cell"
-				rect="2052,267,44,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						S
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colExsa_sh Row 3
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						S
-					</attribute>
-				</element>
 				<path>
-					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colExsa_sh Row 3']
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_sh Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -202,64 +158,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="1bfd17a9-829e-4169-827d-2a902e28d7b4"
+			id="d6ca004f-5906-49eb-ba36-a2a18d7da211"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="4"
-				prefcap="cell"
-				rect="2096,267,84,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						208,33
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colExsa_betrag Row 3
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						208,33
-					</attribute>
-				</element>
 				<path>
-					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colExsa_betrag Row 3']
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_betrag Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -281,64 +183,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="ad049297-14c2-41c4-9e3b-077052aabdca"
+			id="65bdc4ec-8602-476e-8f6b-738cebd4c542"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="8"
-				prefcap="cell"
-				rect="2324,267,41,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						V00
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colUst_cd Row 3
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						V00
-					</attribute>
-				</element>
 				<path>
-					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colUst_cd Row 3']
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colUst_cd Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -360,64 +208,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="7cab05e1-a384-4dce-99b7-3cc4dcf5bed2"
+			id="2db265db-45a4-4a00-b85f-18d9012aaeae"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="9"
-				prefcap="cell"
-				rect="2365,267,57,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						0
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colExsa_ustsatz Row 3
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						0
-					</attribute>
-				</element>
 				<path>
-					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colExsa_ustsatz Row 3']
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_ustsatz Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -433,146 +227,16 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="eb7f5eff-7615-49d7-bcd7-1b6dffe03f04">
+		searchpropertyid="8c7b84f0-cc68-4b62-8833-5e652d3e6c4c">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="9d78469a-4ba9-4351-9dac-d78d0d039851"
+			id="23f8f8a5-7104-4207-b716-aba985679871"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="10"
-				prefcap="cell"
-				rect="502,343,48,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colExsa_ustmv Row 7
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-					</attribute>
-				</element>
 				<path>
-					/form[@title&gt;'[100]  Verwalten Schnittstelle']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colExsa_ustmv Row 7']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="c8f45b15-e3c3-479f-a971-0e399fb81f94">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="baaef7a7-919d-43e4-a770-d2902c06b42d"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="10"
-				prefcap="cell"
-				rect="2422,267,48,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						V
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colExsa_ustmv Row 3
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						V
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colExsa_ustmv Row 3']
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_ustmv Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -588,70 +252,16 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="f9f7e1c7-b273-46b3-a9bd-b8cee28ea465">
+		searchpropertyid="d89d418e-0642-43a9-a6e0-131362ae52f7">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="9da57c06-60c5-4ead-982a-50d31e3fcea9"
+			id="d10e41c7-cf85-4f6d-a978-1afb3a1d5b24"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="11"
-				prefcap="cell"
-				rect="2470,267,71,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						0,00
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colExsa_ustbetrag Row 3
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						0,00
-					</attribute>
-				</element>
 				<path>
-					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colExsa_ustbetrag Row 3']
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_ustbetrag Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -667,13 +277,38 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="ef4e9716-c2bd-4ae7-a79f-38b2acdfb1f4">
+		searchpropertyid="fe1e22f7-47ec-4caf-a2b9-21174d7308bc">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="e960bc59-6efe-4d20-b2e9-1e2e7060f657"
+			id="8f1c258d-1191-48b7-b320-323441f23687"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_text1 Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				AfA
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="2ab09538-8749-4694-819c-b5b3dec91332">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="99584d54-12bd-4519-bc47-b79966df3940"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -683,7 +318,7 @@ mode="Global">
 				hasfocus="False"
 				index="20"
 				prefcap="cell"
-				rect="3097,267,80,19"
+				rect="3097,229,80,19"
 				role="cell"
 				snapElem=""
 				valid="True"
@@ -711,7 +346,7 @@ mode="Global">
 					<attribute
 					name="accessiblename"
 					type="System.String">
-						colExsa_bekt_nr1 Row 3
+						colExsa_bekt_nr1 Row 1
 					</attribute>
 					<attribute
 					name="accessiblerole"
@@ -730,7 +365,7 @@ mode="Global">
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colExsa_bekt_nr1 Row 3']
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_bekt_nr1 Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -746,7 +381,7 @@ mode="Global">
 		enabled="True"
 		optional="False">
 			<comment>
-				Überprüfung Zeile 4
+				Zeile 2
 			</comment>
 			<bindings>
 			</bindings>
@@ -755,13 +390,13 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="139e6247-dcfd-422c-b89c-c7b19b6f721b">
+		searchpropertyid="4fe1410b-4cb0-4ce6-a6c3-0bbe9e80bc0a">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="d5e0714f-08db-4fce-a339-4a3660c96f6f"
+			id="cb85d596-3971-4321-8703-609f5b77b703"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -771,7 +406,7 @@ mode="Global">
 				hasfocus="False"
 				index="1"
 				prefcap="cell"
-				rect="21,286,61,19"
+				rect="21,248,61,19"
 				role="cell"
 				snapElem=""
 				valid="True"
@@ -799,7 +434,7 @@ mode="Global">
 					<attribute
 					name="accessiblename"
 					type="System.String">
-						colExsa_ktonr Row 4
+						colExsa_ktonr Row 2
 					</attribute>
 					<attribute
 					name="accessiblerole"
@@ -818,7 +453,7 @@ mode="Global">
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colExsa_ktonr Row 4']
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colExsa_ktonr Row 2']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -834,13 +469,13 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="f971bb4a-bc8f-4450-b712-5fb01fcbfb2c">
+		searchpropertyid="315baab7-ab56-4567-8cc3-2ea926402008">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="51a92010-87d5-40b0-a6c0-3820a63070cf"
+			id="66c2dad4-83f0-401f-a8f1-85e8331e5dd3"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -850,7 +485,7 @@ mode="Global">
 				hasfocus="False"
 				index="3"
 				prefcap="cell"
-				rect="132,286,44,19"
+				rect="132,248,44,19"
 				role="cell"
 				snapElem=""
 				valid="True"
@@ -878,7 +513,7 @@ mode="Global">
 					<attribute
 					name="accessiblename"
 					type="System.String">
-						colExsa_sh Row 4
+						colExsa_sh Row 2
 					</attribute>
 					<attribute
 					name="accessiblerole"
@@ -897,7 +532,7 @@ mode="Global">
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colExsa_sh Row 4']
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colExsa_sh Row 2']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -913,13 +548,13 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="f671f30d-1d29-49ba-b972-efc6cfa597ab">
+		searchpropertyid="2242d293-2554-46b0-8055-8bb80bd75448">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="2e470e83-3dee-4a08-bd54-33ac8622fe50"
+			id="f1dd22d0-d0b3-4885-8d97-9dcebb376138"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -929,7 +564,7 @@ mode="Global">
 				hasfocus="False"
 				index="4"
 				prefcap="cell"
-				rect="176,286,84,19"
+				rect="176,248,84,19"
 				role="cell"
 				snapElem=""
 				valid="True"
@@ -957,7 +592,7 @@ mode="Global">
 					<attribute
 					name="accessiblename"
 					type="System.String">
-						colExsa_betrag Row 4
+						colExsa_betrag Row 2
 					</attribute>
 					<attribute
 					name="accessiblerole"
@@ -976,7 +611,7 @@ mode="Global">
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colExsa_betrag Row 4']
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colExsa_betrag Row 2']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -992,13 +627,13 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="a68669a7-a1ab-4f34-8c7e-a8c7a7f5deb7">
+		searchpropertyid="6fbf0cbb-a501-43b2-82f1-11660fc8c362">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="e67f264d-5a0e-4401-87d2-d1baf388a95a"
+			id="b8270adb-7e15-4432-a720-76b40b9fef04"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -1008,7 +643,7 @@ mode="Global">
 				hasfocus="False"
 				index="8"
 				prefcap="cell"
-				rect="404,286,41,19"
+				rect="404,248,41,19"
 				role="cell"
 				snapElem=""
 				valid="True"
@@ -1036,7 +671,7 @@ mode="Global">
 					<attribute
 					name="accessiblename"
 					type="System.String">
-						colUst_cd Row 4
+						colUst_cd Row 2
 					</attribute>
 					<attribute
 					name="accessiblerole"
@@ -1055,7 +690,7 @@ mode="Global">
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colUst_cd Row 4']
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colUst_cd Row 2']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -1071,13 +706,13 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="0257bdc8-5018-49de-bff8-17a11d6b167b">
+		searchpropertyid="4642acf1-1b21-4efc-bb6e-59ca7adc2124">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="23773c92-ebf2-4134-8fa5-a9e199b1ff16"
+			id="d9e91c6f-0ada-4917-b8f4-dd734546dd1a"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -1087,7 +722,7 @@ mode="Global">
 				hasfocus="False"
 				index="9"
 				prefcap="cell"
-				rect="445,286,57,19"
+				rect="445,248,57,19"
 				role="cell"
 				snapElem=""
 				valid="True"
@@ -1115,7 +750,7 @@ mode="Global">
 					<attribute
 					name="accessiblename"
 					type="System.String">
-						colExsa_ustsatz Row 4
+						colExsa_ustsatz Row 2
 					</attribute>
 					<attribute
 					name="accessiblerole"
@@ -1134,7 +769,7 @@ mode="Global">
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colExsa_ustsatz Row 4']
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colExsa_ustsatz Row 2']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -1150,70 +785,16 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="db53809a-d929-4bec-8748-71a78ff48dd6">
+		searchpropertyid="8c7b84f0-cc68-4b62-8833-5e652d3e6c4c">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="577530a5-972c-4af3-9c22-875b1453e41b"
+			id="23f8f8a5-7104-4207-b716-aba985679871"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="10"
-				prefcap="cell"
-				rect="502,286,48,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						V
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colExsa_ustmv Row 4
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						V
-					</attribute>
-				</element>
 				<path>
-					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colExsa_ustmv Row 4']
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colExsa_ustmv Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -1229,13 +810,13 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="88ee2303-a2e2-45a4-9ea8-508111e58e10">
+		searchpropertyid="d89d418e-0642-43a9-a6e0-131362ae52f7">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="b2d9f3d8-40b7-4785-8021-45004936049e"
+			id="fe3f3a5c-16f3-41c9-bf48-36b2e464896f"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -1245,7 +826,7 @@ mode="Global">
 				hasfocus="False"
 				index="11"
 				prefcap="cell"
-				rect="550,286,71,19"
+				rect="550,248,71,19"
 				role="cell"
 				snapElem=""
 				valid="True"
@@ -1273,7 +854,7 @@ mode="Global">
 					<attribute
 					name="accessiblename"
 					type="System.String">
-						colExsa_ustbetrag Row 4
+						colExsa_ustbetrag Row 2
 					</attribute>
 					<attribute
 					name="accessiblerole"
@@ -1292,7 +873,7 @@ mode="Global">
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colExsa_ustbetrag Row 4']
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colExsa_ustbetrag Row 2']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -1308,13 +889,92 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="97c51756-50c2-4d45-8baa-b76b220a6bce">
+		searchpropertyid="fe1e22f7-47ec-4caf-a2b9-21174d7308bc">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="28d4f60f-d51a-42f6-b76d-29da82dfe69c"
+			id="fc73d609-7b8b-489e-a00c-8446f3e00b84"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="13"
+				prefcap="cell"
+				rect="705,248,86,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						AfA
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colExsa_text1 Row 2
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						AfA
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colExsa_text1 Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				AfA
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="2ab09538-8749-4694-819c-b5b3dec91332">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ec9ce329-73f7-4c05-9445-91420dd6858e"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -1324,7 +984,7 @@ mode="Global">
 				hasfocus="False"
 				index="20"
 				prefcap="cell"
-				rect="1177,286,80,19"
+				rect="1177,248,80,19"
 				role="cell"
 				snapElem=""
 				valid="True"
@@ -1352,7 +1012,7 @@ mode="Global">
 					<attribute
 					name="accessiblename"
 					type="System.String">
-						colExsa_bekt_nr1 Row 4
+						colExsa_bekt_nr1 Row 2
 					</attribute>
 					<attribute
 					name="accessiblerole"
@@ -1371,7 +1031,7 @@ mode="Global">
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colExsa_bekt_nr1 Row 4']
+					/form[@controlname='frmB_EXSA']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colExsa_bekt_nr1 Row 2']
 				</path>
 				<robustPath>
 				</robustPath>

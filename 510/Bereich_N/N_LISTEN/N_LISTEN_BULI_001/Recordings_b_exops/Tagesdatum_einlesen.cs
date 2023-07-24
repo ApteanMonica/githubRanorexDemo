@@ -92,7 +92,7 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
 
             Init();
 
-            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimeAsString("dd.MM.yyyy");
+            Tagesdatum_ermitteln = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimeAsString("dd.MM.yyyy");
             
         }
 

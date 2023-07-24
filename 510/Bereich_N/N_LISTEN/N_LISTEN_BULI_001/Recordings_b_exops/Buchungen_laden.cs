@@ -41,6 +41,8 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
         /// </summary>
         public Buchungen_laden()
         {
+            Tagesdatum_ermitteln = "";
+            Tagesdatum = "";
         }
 
         /// <summary>
@@ -52,6 +54,30 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
         }
 
 #region Variables
+
+        string _Tagesdatum_ermitteln;
+
+        /// <summary>
+        /// Gets or sets the value of variable Tagesdatum_ermitteln.
+        /// </summary>
+        [TestVariable("2edfc64a-4a2b-44b9-a1f3-7f8cfd6e9687")]
+        public string Tagesdatum_ermitteln
+        {
+            get { return _Tagesdatum_ermitteln; }
+            set { _Tagesdatum_ermitteln = value; }
+        }
+
+        string _Tagesdatum;
+
+        /// <summary>
+        /// Gets or sets the value of variable Tagesdatum.
+        /// </summary>
+        [TestVariable("5a5ff5cb-7e9e-4cbb-a243-58b2c4adecf6")]
+        public string Tagesdatum
+        {
+            get { return _Tagesdatum; }
+            set { _Tagesdatum = value; }
+        }
 
 #endregion
 
@@ -82,19 +108,37 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBEXOP.PbDataAccessLoad' at Center.", repo.FrmBEXOP.PbDataAccessLoadInfo, new RecordItemIndex(0));
             repo.FrmBEXOP.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Form100VerwaltenSchnittstelleEXSA.Row1Column0'.", repo.Form100VerwaltenSchnittstelleEXSA.Row1Column0Info, new RecordItemIndex(1));
-            Validate.Exists(repo.Form100VerwaltenSchnittstelleEXSA.Row1Column0Info);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmBEXOP.Row_1'.", repo.FrmBEXOP.Row_1Info, new RecordItemIndex(1));
+            Validate.Exists(repo.FrmBEXOP.Row_1Info);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'Form100VerwaltenSchnittstelleEXSA.Row2Column0'.", repo.Form100VerwaltenSchnittstelleEXSA.Row2Column0Info, new RecordItemIndex(2));
-            Validate.NotExists(repo.Form100VerwaltenSchnittstelleEXSA.Row2Column0Info);
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'FrmBEXOP.Row_2'.", repo.FrmBEXOP.Row_2Info, new RecordItemIndex(2));
+            Validate.NotExists(repo.FrmBEXOP.Row_2Info);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'Form100VerwaltenSchnittstelleEXSA.Row1Column0' at Center.", repo.Form100VerwaltenSchnittstelleEXSA.Row1Column0Info, new RecordItemIndex(3));
-            repo.Form100VerwaltenSchnittstelleEXSA.Row1Column0.DoubleClick();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum_ermitteln) on item 'FrmBEXOP.Row1.ColExopDtherkunftRow1'.", repo.FrmBEXOP.Row1.ColExopDtherkunftRow1Info, new RecordItemIndex(3));
+            Validate.AttributeContains(repo.FrmBEXOP.Row1.ColExopDtherkunftRow1Info, "Text", Tagesdatum_ermitteln);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBEXSA.TitleBar100VerwaltenSchnittstelleE'", repo.FrmBEXSA.TitleBar100VerwaltenSchnittstelleEInfo, new ActionTimeout(120000), new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='U') on item 'FrmBEXOP.Row1.ColExopArtRow1'.", repo.FrmBEXOP.Row1.ColExopArtRow1Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FrmBEXOP.Row1.ColExopArtRow1Info, "Text", "U");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='SA') on item 'FrmBEXOP.Row1.ColExopBusyRow1'.", repo.FrmBEXOP.Row1.ColExopBusyRow1Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.FrmBEXOP.Row1.ColExopBusyRow1Info, "Text", "SA");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2022') on item 'FrmBEXOP.Row1.ColExopJahrRow1'.", repo.FrmBEXOP.Row1.ColExopJahrRow1Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmBEXOP.Row1.ColExopJahrRow1Info, "Text", "2022");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='12') on item 'FrmBEXOP.Row1.ColExopPeriodeRow1'.", repo.FrmBEXOP.Row1.ColExopPeriodeRow1Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.FrmBEXOP.Row1.ColExopPeriodeRow1Info, "Text", "12");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='BULI_001_A') on item 'FrmBEXOP.Row1.ColExopBelegnrRow1'.", repo.FrmBEXOP.Row1.ColExopBelegnrRow1Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.FrmBEXOP.Row1.ColExopBelegnrRow1Info, "Text", "BULI_001_A");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBEXOP.Row_1' at Center.", repo.FrmBEXOP.Row_1Info, new RecordItemIndex(9));
+            repo.FrmBEXOP.Row_1.DoubleClick();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBEXSA.TitleBar100VerwaltenSchnittstelleE'", repo.FrmBEXSA.TitleBar100VerwaltenSchnittstelleEInfo, new ActionTimeout(120000), new RecordItemIndex(10));
             repo.FrmBEXSA.TitleBar100VerwaltenSchnittstelleEInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  Verwalten Schnittstelle EXSA') on item 'FrmBEXSA.TitleBar100VerwaltenSchnittstelleE'.", repo.FrmBEXSA.TitleBar100VerwaltenSchnittstelleEInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  Verwalten Schnittstelle EXSA') on item 'FrmBEXSA.TitleBar100VerwaltenSchnittstelleE'.", repo.FrmBEXSA.TitleBar100VerwaltenSchnittstelleEInfo, new RecordItemIndex(11));
             Validate.AttributeContains(repo.FrmBEXSA.TitleBar100VerwaltenSchnittstelleEInfo, "Text", "[100]  Verwalten Schnittstelle EXSA");
             
         }

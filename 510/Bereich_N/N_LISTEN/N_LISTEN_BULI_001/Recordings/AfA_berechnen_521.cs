@@ -24,22 +24,22 @@ namespace N_LISTEN_BULI_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The AfA_berechnen_und_ueberleiten recording.
+    ///The AfA_berechnen_521 recording.
     /// </summary>
-    [TestModule("de8bcdd4-a249-4004-92ce-4f0d7063ab60", ModuleType.Recording, 1)]
-    public partial class AfA_berechnen_und_ueberleiten : ITestModule
+    [TestModule("ebf716db-8a89-43a2-8ad5-df4a8ce337e8", ModuleType.Recording, 1)]
+    public partial class AfA_berechnen_521 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repo = global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository.Instance;
 
-        static AfA_berechnen_und_ueberleiten instance = new AfA_berechnen_und_ueberleiten();
+        static AfA_berechnen_521 instance = new AfA_berechnen_521();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public AfA_berechnen_und_ueberleiten()
+        public AfA_berechnen_521()
         {
             Beginn_GJ = "01.01.2022";
             Ende_GJ = "31.12.2022";
@@ -48,7 +48,7 @@ namespace N_LISTEN_BULI_001.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static AfA_berechnen_und_ueberleiten Instance
+        public static AfA_berechnen_521 Instance
         {
             get { return instance; }
         }
@@ -60,7 +60,7 @@ namespace N_LISTEN_BULI_001.Recordings
         /// <summary>
         /// Gets or sets the value of variable Beginn_GJ.
         /// </summary>
-        [TestVariable("af31b04c-1e77-4902-ad02-2e6741885bbc")]
+        [TestVariable("252931c2-56e4-4fe2-9d77-15b963a49305")]
         public string Beginn_GJ
         {
             get { return _Beginn_GJ; }
@@ -72,7 +72,7 @@ namespace N_LISTEN_BULI_001.Recordings
         /// <summary>
         /// Gets or sets the value of variable Ende_GJ.
         /// </summary>
-        [TestVariable("92888088-ecdf-4f35-92a1-4a5f244fa1df")]
+        [TestVariable("b0ee4580-2dbe-4fb9-bc2e-be3000126898")]
         public string Ende_GJ
         {
             get { return _Ende_GJ; }
@@ -105,44 +105,44 @@ namespace N_LISTEN_BULI_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2022') on item 'FrmBuchungsliste.Geschaeftsjahr'.", repo.FrmBuchungsliste.GeschaeftsjahrInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press.", new RecordItemIndex(0));
+            Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2022') on item 'FrmBuchungsliste.Geschaeftsjahr'.", repo.FrmBuchungsliste.GeschaeftsjahrInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.FrmBuchungsliste.GeschaeftsjahrInfo, "Text", "2022");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.CbBereich' at Center.", repo.FrmBuchungsliste.CbBereichInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.CbBereich' at Center.", repo.FrmBuchungsliste.CbBereichInfo, new RecordItemIndex(2));
             repo.FrmBuchungsliste.CbBereich.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBuchungsliste.CbBereich'.", repo.FrmBuchungsliste.CbBereichInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBuchungsliste.CbBereich'.", repo.FrmBuchungsliste.CbBereichInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.FrmBuchungsliste.CbBereichInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.RbMonat' at Center.", repo.FrmBuchungsliste.RbMonatInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.RbMonat' at Center.", repo.FrmBuchungsliste.RbMonatInfo, new RecordItemIndex(4));
             repo.FrmBuchungsliste.RbMonat.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBuchungsliste.RbMonat'.", repo.FrmBuchungsliste.RbMonatInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBuchungsliste.RbMonat'.", repo.FrmBuchungsliste.RbMonatInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.FrmBuchungsliste.RbMonatInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'FrmBuchungsliste.CmbVariante'.", repo.FrmBuchungsliste.CmbVarianteInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'FrmBuchungsliste.CmbVariante'.", repo.FrmBuchungsliste.CmbVarianteInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.FrmBuchungsliste.CmbVarianteInfo, "Text", "1");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Beginn_GJ' with focus on 'FrmBuchungsliste.TextVon'.", repo.FrmBuchungsliste.TextVonInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Beginn_GJ' with focus on 'FrmBuchungsliste.TextVon'.", repo.FrmBuchungsliste.TextVonInfo, new RecordItemIndex(7));
             repo.FrmBuchungsliste.TextVon.PressKeys(Beginn_GJ);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beginn_GJ) on item 'FrmBuchungsliste.TextVon'.", repo.FrmBuchungsliste.TextVonInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beginn_GJ) on item 'FrmBuchungsliste.TextVon'.", repo.FrmBuchungsliste.TextVonInfo, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.FrmBuchungsliste.TextVonInfo, "Text", Beginn_GJ);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Ende_GJ' with focus on 'FrmBuchungsliste.TextBis'.", repo.FrmBuchungsliste.TextBisInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Ende_GJ' with focus on 'FrmBuchungsliste.TextBis'.", repo.FrmBuchungsliste.TextBisInfo, new RecordItemIndex(10));
             repo.FrmBuchungsliste.TextBis.PressKeys(Ende_GJ);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ende_GJ) on item 'FrmBuchungsliste.TextBis'.", repo.FrmBuchungsliste.TextBisInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ende_GJ) on item 'FrmBuchungsliste.TextBis'.", repo.FrmBuchungsliste.TextBisInfo, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.FrmBuchungsliste.TextBisInfo, "Text", Ende_GJ);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbOptionenTabelle' at Center.", repo.FrmBuchungsliste.PbOptionenTabelleInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbOptionenTabelle' at Center.", repo.FrmBuchungsliste.PbOptionenTabelleInfo, new RecordItemIndex(12));
             repo.FrmBuchungsliste.PbOptionenTabelle.Click();
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBuchungsliste.ColTypRow2'", repo.FrmBuchungsliste.ColTypRow2Info, new ActionTimeout(120000), new RecordItemIndex(12));
-            repo.FrmBuchungsliste.ColTypRow2Info.WaitForExists(120000);
             
         }
 

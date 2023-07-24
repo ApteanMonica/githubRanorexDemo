@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace N_LISTEN_BULI_001.Recordings_b_exops
+namespace N_LISTEN_BULI_001.Recordings
 {
-    public partial class Versuch_nochmalige_Ueberleitung
+    public partial class Wiederholung_Berechtigung_AfA_521
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
