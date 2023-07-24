@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="de8bcdd4-a249-4004-92ce-4f0d7063ab60"
+id="ebf716db-8a89-43a2-8ad5-df4a8ce337e8"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,29 +19,19 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="AfA_berechnen"
+	classname="AfA_berechnen_521"
 	namespace="N_LISTEN_BULI_001.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="af31b04c-1e77-4902-ad02-2e6741885bbc"
+		id="252931c2-56e4-4fe2-9d77-15b963a49305"
 		name="Beginn_GJ">
 			01.01.2022
 		</var>
 		<var
-		id="92888088-ecdf-4f35-92a1-4a5f244fa1df"
+		id="b0ee4580-2dbe-4fb9-bc2e-be3000126898"
 		name="Ende_GJ">
 			31.12.2022
-		</var>
-		<var
-		id="71d79893-24e3-43a5-a1ca-900d5ba9d2bc"
-		name="Anlagennr_001">
-			N_LISTEN_001_01
-		</var>
-		<var
-		id="f0b117a0-e4c1-48f3-801d-8c1fbf76594a"
-		name="Anlagennr_002">
-			N_LISTEN_001_02
 		</var>
 	</variables>
 	<recorditems>
@@ -15278,80 +15268,6 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="80d76fd0-58be-4083-bf1d-26be55cbcdab"
-		waitaction="Exists"
-		waittimeout="120000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="510fd6f0-3589-474b-a81a-08be094e4664"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="2"
-				prefcap="cell"
-				rect="227,403,60,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						AfA
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colTyp Row 1
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						AfA
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='frmBuchungsliste']/container[@controlname='ClientArea']/container[@controlname='tblListe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colTyp Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
 	</recorditems>
 	<repository
 	id="a571684b-1718-4382-85f0-a148dbf2b821"
@@ -15368,7 +15284,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		AfA_berechnen.UserCode.cs
+		AfA_berechnen_521.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

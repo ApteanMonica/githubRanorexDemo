@@ -32,6 +32,7 @@ namespace N_LISTEN_BULI_001
         N_LISTEN_BULI_001RepositoryFolders.DlgFibuAppFolder _dlgfibu;
         N_LISTEN_BULI_001RepositoryFolders.FrmBEXOPAppFolder _frmbexop;
         N_LISTEN_BULI_001RepositoryFolders.FrmBEXSAAppFolder _frmbexsa;
+        N_LISTEN_BULI_001RepositoryFolders.CdlgSqlFehlerAppFolder _cdlgsqlfehler;
 
         /// <summary>
         /// Gets the singleton class instance representing the N_LISTEN_BULI_001Repository element repository.
@@ -53,6 +54,7 @@ namespace N_LISTEN_BULI_001
             _dlgfibu = new N_LISTEN_BULI_001RepositoryFolders.DlgFibuAppFolder(this);
             _frmbexop = new N_LISTEN_BULI_001RepositoryFolders.FrmBEXOPAppFolder(this);
             _frmbexsa = new N_LISTEN_BULI_001RepositoryFolders.FrmBEXSAAppFolder(this);
+            _cdlgsqlfehler = new N_LISTEN_BULI_001RepositoryFolders.CdlgSqlFehlerAppFolder(this);
         }
 
 #region Variables
@@ -126,6 +128,15 @@ namespace N_LISTEN_BULI_001
         public virtual N_LISTEN_BULI_001RepositoryFolders.FrmBEXSAAppFolder FrmBEXSA
         {
             get { return _frmbexsa; }
+        }
+
+        /// <summary>
+        /// The CdlgSqlFehler folder.
+        /// </summary>
+        [RepositoryFolder("0a682182-fa12-4c99-a5a8-c4caf838c16e")]
+        public virtual N_LISTEN_BULI_001RepositoryFolders.CdlgSqlFehlerAppFolder CdlgSqlFehler
+        {
+            get { return _cdlgsqlfehler; }
         }
     }
 
@@ -3027,6 +3038,98 @@ namespace N_LISTEN_BULI_001
                 get
                 {
                     return _colexsabektnr1row4Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The CdlgSqlFehlerAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("0a682182-fa12-4c99-a5a8-c4caf838c16e")]
+        public partial class CdlgSqlFehlerAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _sqlfehlerInfo;
+            RepoItemInfo _textInfo;
+
+            /// <summary>
+            /// Creates a new CdlgSqlFehler  folder.
+            /// </summary>
+            public CdlgSqlFehlerAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("CdlgSqlFehler", "/form[@controlname='cdlgSqlFehler']", parentFolder, 30000, null, true, "0a682182-fa12-4c99-a5a8-c4caf838c16e", "")
+            {
+                _sqlfehlerInfo = new RepoItemInfo(this, "SQLFehler", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "4ef2310f-95ef-4f86-82d8-972711528d49");
+                _textInfo = new RepoItemInfo(this, "Text", "tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpFehler']/container[@controlname='mlSqlFehler']/text[@controlname='txtMulti']/text[@accessiblerole='Text']", "", 30000, null, "a0ceedf8-3c7e-45a7-b13a-d5250c06199d");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("0a682182-fa12-4c99-a5a8-c4caf838c16e")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("0a682182-fa12-4c99-a5a8-c4caf838c16e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SQLFehler item.
+            /// </summary>
+            [RepositoryItem("4ef2310f-95ef-4f86-82d8-972711528d49")]
+            public virtual Ranorex.TitleBar SQLFehler
+            {
+                get
+                {
+                    return _sqlfehlerInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SQLFehler item info.
+            /// </summary>
+            [RepositoryItemInfo("4ef2310f-95ef-4f86-82d8-972711528d49")]
+            public virtual RepoItemInfo SQLFehlerInfo
+            {
+                get
+                {
+                    return _sqlfehlerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text item.
+            /// </summary>
+            [RepositoryItem("a0ceedf8-3c7e-45a7-b13a-d5250c06199d")]
+            public virtual Ranorex.Text Text
+            {
+                get
+                {
+                    return _textInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text item info.
+            /// </summary>
+            [RepositoryItemInfo("a0ceedf8-3c7e-45a7-b13a-d5250c06199d")]
+            public virtual RepoItemInfo TextInfo
+            {
+                get
+                {
+                    return _textInfo;
                 }
             }
         }

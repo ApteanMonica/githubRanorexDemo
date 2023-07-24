@@ -24,22 +24,22 @@ namespace N_LISTEN_BULI_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Wiederholung_Berechnung_AfA recording.
+    ///The Wiederholung_Berechtigung_AfA_521 recording.
     /// </summary>
-    [TestModule("e56ccb67-eb92-48de-b73e-a3f27c9956db", ModuleType.Recording, 1)]
-    public partial class Wiederholung_Berechnung_AfA : ITestModule
+    [TestModule("3b66e6ec-8487-4334-bf5c-02ebdab041d6", ModuleType.Recording, 1)]
+    public partial class Wiederholung_Berechtigung_AfA_521 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repo = global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository.Instance;
 
-        static Wiederholung_Berechnung_AfA instance = new Wiederholung_Berechnung_AfA();
+        static Wiederholung_Berechtigung_AfA_521 instance = new Wiederholung_Berechtigung_AfA_521();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Wiederholung_Berechnung_AfA()
+        public Wiederholung_Berechtigung_AfA_521()
         {
             Beginn_GJ = "01.01.2022";
             Ende_GJ = "31.12.2022";
@@ -50,7 +50,7 @@ namespace N_LISTEN_BULI_001.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Wiederholung_Berechnung_AfA Instance
+        public static Wiederholung_Berechtigung_AfA_521 Instance
         {
             get { return instance; }
         }
@@ -62,7 +62,7 @@ namespace N_LISTEN_BULI_001.Recordings
         /// <summary>
         /// Gets or sets the value of variable Beginn_GJ.
         /// </summary>
-        [TestVariable("b8032de5-f2d5-48c0-ae91-b7289204c982")]
+        [TestVariable("3885e70f-5e61-4156-b04b-972ef5dda69f")]
         public string Beginn_GJ
         {
             get { return _Beginn_GJ; }
@@ -74,7 +74,7 @@ namespace N_LISTEN_BULI_001.Recordings
         /// <summary>
         /// Gets or sets the value of variable Ende_GJ.
         /// </summary>
-        [TestVariable("bc31104d-8d6e-4129-8eb1-cf6896134e2a")]
+        [TestVariable("573fc437-8882-4a69-ad6a-5085e9352153")]
         public string Ende_GJ
         {
             get { return _Ende_GJ; }
@@ -86,7 +86,7 @@ namespace N_LISTEN_BULI_001.Recordings
         /// <summary>
         /// Gets or sets the value of variable Anlagennr_001.
         /// </summary>
-        [TestVariable("22110fbb-ccfd-42d6-b811-7f06c536e460")]
+        [TestVariable("186ab6e5-3e97-45a6-a9b3-e4811185b2aa")]
         public string Anlagennr_001
         {
             get { return _Anlagennr_001; }
@@ -98,7 +98,7 @@ namespace N_LISTEN_BULI_001.Recordings
         /// <summary>
         /// Gets or sets the value of variable Anlagennr_002.
         /// </summary>
-        [TestVariable("d692a6c6-826e-4870-a8d5-0504c4132d0f")]
+        [TestVariable("16acbcdb-6717-422b-ac6f-494680d035c4")]
         public string Anlagennr_002
         {
             get { return _Anlagennr_002; }

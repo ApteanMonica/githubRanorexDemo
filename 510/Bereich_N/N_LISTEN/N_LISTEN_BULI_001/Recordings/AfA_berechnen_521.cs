@@ -24,33 +24,31 @@ namespace N_LISTEN_BULI_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The AfA_berechnen recording.
+    ///The AfA_berechnen_521 recording.
     /// </summary>
-    [TestModule("de8bcdd4-a249-4004-92ce-4f0d7063ab60", ModuleType.Recording, 1)]
-    public partial class AfA_berechnen : ITestModule
+    [TestModule("ebf716db-8a89-43a2-8ad5-df4a8ce337e8", ModuleType.Recording, 1)]
+    public partial class AfA_berechnen_521 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repo = global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository.Instance;
 
-        static AfA_berechnen instance = new AfA_berechnen();
+        static AfA_berechnen_521 instance = new AfA_berechnen_521();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public AfA_berechnen()
+        public AfA_berechnen_521()
         {
             Beginn_GJ = "01.01.2022";
             Ende_GJ = "31.12.2022";
-            Anlagennr_001 = "N_LISTEN_001_01";
-            Anlagennr_002 = "N_LISTEN_001_02";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static AfA_berechnen Instance
+        public static AfA_berechnen_521 Instance
         {
             get { return instance; }
         }
@@ -62,7 +60,7 @@ namespace N_LISTEN_BULI_001.Recordings
         /// <summary>
         /// Gets or sets the value of variable Beginn_GJ.
         /// </summary>
-        [TestVariable("af31b04c-1e77-4902-ad02-2e6741885bbc")]
+        [TestVariable("252931c2-56e4-4fe2-9d77-15b963a49305")]
         public string Beginn_GJ
         {
             get { return _Beginn_GJ; }
@@ -74,35 +72,11 @@ namespace N_LISTEN_BULI_001.Recordings
         /// <summary>
         /// Gets or sets the value of variable Ende_GJ.
         /// </summary>
-        [TestVariable("92888088-ecdf-4f35-92a1-4a5f244fa1df")]
+        [TestVariable("b0ee4580-2dbe-4fb9-bc2e-be3000126898")]
         public string Ende_GJ
         {
             get { return _Ende_GJ; }
             set { _Ende_GJ = value; }
-        }
-
-        string _Anlagennr_001;
-
-        /// <summary>
-        /// Gets or sets the value of variable Anlagennr_001.
-        /// </summary>
-        [TestVariable("71d79893-24e3-43a5-a1ca-900d5ba9d2bc")]
-        public string Anlagennr_001
-        {
-            get { return _Anlagennr_001; }
-            set { _Anlagennr_001 = value; }
-        }
-
-        string _Anlagennr_002;
-
-        /// <summary>
-        /// Gets or sets the value of variable Anlagennr_002.
-        /// </summary>
-        [TestVariable("f0b117a0-e4c1-48f3-801d-8c1fbf76594a")]
-        public string Anlagennr_002
-        {
-            get { return _Anlagennr_002; }
-            set { _Anlagennr_002 = value; }
         }
 
 #endregion
@@ -169,9 +143,6 @@ namespace N_LISTEN_BULI_001.Recordings
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbOptionenTabelle' at Center.", repo.FrmBuchungsliste.PbOptionenTabelleInfo, new RecordItemIndex(12));
             repo.FrmBuchungsliste.PbOptionenTabelle.Click();
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBuchungsliste.FlexGrid.ColTypRow1'", repo.FrmBuchungsliste.FlexGrid.ColTypRow1Info, new ActionTimeout(120000), new RecordItemIndex(13));
-            repo.FrmBuchungsliste.FlexGrid.ColTypRow1Info.WaitForExists(120000);
             
         }
 

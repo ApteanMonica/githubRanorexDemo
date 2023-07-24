@@ -188,6 +188,29 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="7a3bb740-c92a-4b66-a0ed-85f292496f87"
+			name="AfA_berechnen_521"
+			ref="ebf716db-8a89-43a2-8ad5-df4a8ce337e8"
+			type="Recording">
+				<description>
+					<![CDATA[Recordings und IF-Condition nach Erledigung des Working Items 41665 wieder löschen und die IF-Conditions entfernen]]>
+				</description>
+				<databinding>
+					<var
+					dataname="Beginn_GJ"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="252931c2-56e4-4fe2-9d77-15b963a49305"
+					variablename="Beginn_GJ">
+					</var>
+					<var
+					dataname="Ende_GJ"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="b0ee4580-2dbe-4fb9-bc2e-be3000126898"
+					variablename="Ende_GJ">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="7c4f043b-3d89-4cdc-b79f-14e0b3241486"
 			name="StartAUT"
 			ref="3147901d-b751-4852-8cd6-719e800cfc45"
@@ -230,6 +253,38 @@
 					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
 					variableid="e327bd7b-6d6d-40bb-8d3a-d60aa6eb4166"
 					variablename="Belegnummer_Ueberleitung">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="891dbed0-7f1e-469b-b195-49c6402b55f2"
+			name="Wiederholung_Berechtigung_AfA_521"
+			ref="3b66e6ec-8487-4334-bf5c-02ebdab041d6"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Beginn_GJ"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="3885e70f-5e61-4156-b04b-972ef5dda69f"
+					variablename="Beginn_GJ">
+					</var>
+					<var
+					dataname="Ende_GJ"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="573fc437-8882-4a69-ad6a-5085e9352153"
+					variablename="Ende_GJ">
+					</var>
+					<var
+					dataname="Anlagennr_001"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="186ab6e5-3e97-45a6-a9b3-e4811185b2aa"
+					variablename="Anlagennr_001">
+					</var>
+					<var
+					dataname="Anlagennr_002"
+					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
+					variableid="16acbcdb-6717-422b-ac6f-494680d035c4"
+					variablename="Anlagennr_002">
 					</var>
 				</databinding>
 			</testmodule>
@@ -421,11 +476,56 @@
 			id="af938ef0-2e2c-4f94-b0f5-15fe0f9ccc3b"
 			name="teardown">
 			</teardown>
+			<smartfoldernode
+			id="bad3ce41-102d-4e4e-921e-f78b03a86edd"
+			name="521">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Servername"
+								id="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT2">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Servername"
+								id="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT3">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="c442c9db-9f11-421c-b2a3-7fc79c33bc28"
 			name="Umgehung_SQL_Fehler_521"
 			ref="f68f114f-721e-4b33-9eed-8bc9eba9bd24"
 			type="Recording">
+				<description>
+					<![CDATA[Recordings und IF-Condition nach Erledigung des Working Items 41665 wieder löschen und die IF-Conditions entfernen]]>
+				</description>
 			</testmodule>
 			<testmodule
 			id="c8f30a91-62a6-419e-b51f-8d6b3b82f86e"
@@ -481,7 +581,45 @@
 			</testmodule>
 			<smartfoldernode
 			id="fa60cffc-94ba-4a51-b707-5be186611feb"
-			name="510;_511">
+			name="510;511">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Servername"
+								id="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT2">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Servername"
+								id="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT3">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
 			</smartfoldernode>
 			<testmodule
 			enabled="False"
@@ -522,20 +660,32 @@
 						</testmodule>
 						<smartfoldernode
 						id="fa60cffc-94ba-4a51-b707-5be186611feb"
-						name="510;_511">
+						name="510;511">
+							<testmodule
+							id="38afbd31-b39f-4e76-a8a0-64dd3a9a1015"
+							name="AfA_berechnen">
+							</testmodule>
+							<testmodule
+							id="c8f30a91-62a6-419e-b51f-8d6b3b82f86e"
+							name="Wiederholung_Berechnung_AfA">
+							</testmodule>
 						</smartfoldernode>
-						<testmodule
-						id="38afbd31-b39f-4e76-a8a0-64dd3a9a1015"
-						name="AfA_berechnen">
-						</testmodule>
-						<testmodule
-						id="c442c9db-9f11-421c-b2a3-7fc79c33bc28"
-						name="Umgehung_SQL_Fehler_521">
-						</testmodule>
-						<testmodule
-						id="c8f30a91-62a6-419e-b51f-8d6b3b82f86e"
-						name="Wiederholung_Berechnung_AfA">
-						</testmodule>
+						<smartfoldernode
+						id="bad3ce41-102d-4e4e-921e-f78b03a86edd"
+						name="521">
+							<testmodule
+							id="7a3bb740-c92a-4b66-a0ed-85f292496f87"
+							name="AfA_berechnen_521">
+							</testmodule>
+							<testmodule
+							id="c442c9db-9f11-421c-b2a3-7fc79c33bc28"
+							name="Umgehung_SQL_Fehler_521">
+							</testmodule>
+							<testmodule
+							id="891dbed0-7f1e-469b-b195-49c6402b55f2"
+							name="Wiederholung_Berechtigung_AfA_521">
+							</testmodule>
+						</smartfoldernode>
 						<testmodule
 						id="775ebf23-bc40-4446-93ab-f50605d627d1"
 						name="Meldung_bereits_erfolgte_Berechnung">
@@ -631,6 +781,9 @@
 			</testcontainer>
 			<testcontainer
 			id="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763">
+			</testcontainer>
+			<testcontainer
+			id="bad3ce41-102d-4e4e-921e-f78b03a86edd">
 			</testcontainer>
 			<testcontainer
 			id="fa60cffc-94ba-4a51-b707-5be186611feb">

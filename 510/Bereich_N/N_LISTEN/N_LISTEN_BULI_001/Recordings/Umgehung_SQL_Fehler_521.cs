@@ -79,10 +79,17 @@ namespace N_LISTEN_BULI_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'OK'.", new RecordItemIndex(0));
-            Keyboard.Press("OK");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'CdlgSqlFehler.SQLFehler'", repo.CdlgSqlFehler.SQLFehlerInfo, new ActionTimeout(120000), new RecordItemIndex(0));
+            repo.CdlgSqlFehler.SQLFehlerInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press.", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='SQL Fehler: 156 - Falsche Syntax in der Nähe des AND-Schlüsselworts.\r\n\r\nFehlerPosition: 7 () - <CN=chGlobal>\r\n\r\nFalsche Syntax in der Nähe des AND-Schlüsselworts.\r\n') on item 'CdlgSqlFehler.Text'.", repo.CdlgSqlFehler.TextInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.CdlgSqlFehler.TextInfo, "Text", "SQL Fehler: 156 - Falsche Syntax in der Nähe des AND-Schlüsselworts.\r\n\r\nFehlerPosition: 7 () - <CN=chGlobal>\r\n\r\nFalsche Syntax in der Nähe des AND-Schlüsselworts.\r\n");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'OK' with focus on 'CdlgSqlFehler.SQLFehler'.", repo.CdlgSqlFehler.SQLFehlerInfo, new RecordItemIndex(2));
+            repo.CdlgSqlFehler.SQLFehler.PressKeys("OK");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press with focus on 'CdlgSqlFehler.SQLFehler'.", repo.CdlgSqlFehler.SQLFehlerInfo, new RecordItemIndex(3));
+            Keyboard.PrepareFocus(repo.CdlgSqlFehler.SQLFehler);
             Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }
