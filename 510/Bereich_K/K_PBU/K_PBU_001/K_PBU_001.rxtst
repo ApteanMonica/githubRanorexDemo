@@ -2,6 +2,26 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testmodule
+			id="06d4db14-16ef-468d-8e22-59f56bd78b19"
+			name="Einschraenkungen"
+			ref="ceae965f-c1d3-4694-9518-34719b71e074"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Jahr"
+					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
+					variableid="9418eca6-c319-43a9-b541-ffc2b7105eb2"
+					variablename="Jahr">
+					</var>
+					<var
+					dataname="Kostenstelle"
+					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
+					variableid="6a6c920f-3482-4137-94b1-43a25dad9d99"
+					variablename="Kostenstelle">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="14d5a21d-f8e9-4f6e-bd4f-632b9f1200cf"
 			name="setup">
@@ -30,6 +50,26 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<testmodule
+			id="65f713d4-0392-40ff-b834-613fb10cb448"
+			name="Planwerte1_erfassen"
+			ref="10f43fd0-b27c-4b89-9585-cccef2018247"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Kostentraeger"
+					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
+					variableid="507fa98a-8c68-49b1-b168-666c24584747"
+					variablename="Kostentraeger">
+					</var>
+					<var
+					dataname="Konto"
+					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
+					variableid="6c5ffdf5-5c68-40bc-9404-5e767f93d719"
+					variablename="Konto">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="71c361bb-d6c6-4616-9c45-266acc828012"
 			name="K_PBU_001"
@@ -55,8 +95,32 @@
 					name="Periode_von"
 					value="1">
 					</param>
+					<param
+					name="Kostenstelle"
+					value="10">
+					</param>
+					<param
+					name="Kostentraeger"
+					value="100">
+					</param>
+					<param
+					name="Konto"
+					value="7380">
+					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="7a45e078-ca49-47cf-af5a-b7a5eb417edb"
+			name="Planwerte1_Betraege_erfassen"
+			ref="2b3089ff-3734-4388-ac58-ce7ab7c1a65f"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="80eca595-f4d4-451c-8e2c-cd4a0305a5b9"
+			name="Planwerte1_Betraege_aendern_Auto_Anpassung"
+			ref="54373f93-a5f3-4603-a45e-968500a539dd"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="8ca6ac49-6730-4ff7-9e88-25092820c437"
 			name="TestCase">
@@ -68,16 +132,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
-					variableid="96523d3b-502c-4a2e-9b47-2cc4e1f219c5"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm"
 					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
 					variableid="476441c7-a0d2-416a-aa94-841043d7ac54"
 					variablename="Programm">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
+					variableid="96523d3b-502c-4a2e-9b47-2cc4e1f219c5"
+					variablename="Startfile">
 					</var>
 				</databinding>
 				<missingdatabinding>
@@ -88,6 +152,19 @@
 					variablename="StartAutProcessIDVar">
 					</var>
 				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="b3202ddb-58c5-42b9-a12f-73c249a85f06"
+			name="Ansicht_Planungsgrundlagen_wechseln"
+			ref="8ab36ee0-6651-45a1-bb4e-3792c0d13169"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="c11e4516-1ded-4779-80b5-3e52abb67034"
+			name="Einstellungen_zuruecksetzen"
+			ref="99ad8041-e987-436e-b8a7-083fb4061cea"
+			type="Recording">
 			</testmodule>
 			<teardown
 			id="ce9861e8-69fb-463e-90c7-0a2d34a34e5a"
@@ -126,9 +203,33 @@
 							name="StartAUT">
 							</testmodule>
 						</setup>
+						<testmodule
+						id="06d4db14-16ef-468d-8e22-59f56bd78b19"
+						name="Einschraenkungen">
+						</testmodule>
+						<testmodule
+						id="65f713d4-0392-40ff-b834-613fb10cb448"
+						name="Planwerte1_erfassen">
+						</testmodule>
+						<testmodule
+						id="7a45e078-ca49-47cf-af5a-b7a5eb417edb"
+						name="Planwerte1_Betraege_erfassen">
+						</testmodule>
+						<testmodule
+						id="80eca595-f4d4-451c-8e2c-cd4a0305a5b9"
+						name="Planwerte1_Betraege_aendern_Auto_Anpassung">
+						</testmodule>
+						<testmodule
+						id="b3202ddb-58c5-42b9-a12f-73c249a85f06"
+						name="Ansicht_Planungsgrundlagen_wechseln">
+						</testmodule>
 						<teardown
 						id="ce9861e8-69fb-463e-90c7-0a2d34a34e5a"
 						name="teardown">
+							<testmodule
+							id="c11e4516-1ded-4779-80b5-3e52abb67034"
+							name="Einstellungen_zuruecksetzen">
+							</testmodule>
 							<testmodule
 							id="fa18edf2-2895-4ada-b14c-40547dad5657"
 							name="CloseAUT">
