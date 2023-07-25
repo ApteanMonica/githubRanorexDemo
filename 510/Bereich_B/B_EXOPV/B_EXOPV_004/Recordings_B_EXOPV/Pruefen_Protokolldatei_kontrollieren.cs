@@ -24,22 +24,22 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Stapel_pruefen_Protokolldatei recording.
+    ///The Pruefen_Protokolldatei_kontrollieren recording.
     /// </summary>
     [TestModule("0ad15bf6-9ef3-458a-bfdc-b4bc2d8f280a", ModuleType.Recording, 1)]
-    public partial class Stapel_pruefen_Protokolldatei : ITestModule
+    public partial class Pruefen_Protokolldatei_kontrollieren : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_004.B_EXOPV_004Repository repository.
         /// </summary>
         public static global::B_EXOPV_004.B_EXOPV_004Repository repo = global::B_EXOPV_004.B_EXOPV_004Repository.Instance;
 
-        static Stapel_pruefen_Protokolldatei instance = new Stapel_pruefen_Protokolldatei();
+        static Pruefen_Protokolldatei_kontrollieren instance = new Pruefen_Protokolldatei_kontrollieren();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Stapel_pruefen_Protokolldatei()
+        public Pruefen_Protokolldatei_kontrollieren()
         {
             Tagesdatum = "";
             Fehlerprotokoll_Pruefung_Datei = "Fehlerprotokoll_b_exopv_004_pruef.txt";
@@ -48,7 +48,7 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Stapel_pruefen_Protokolldatei Instance
+        public static Pruefen_Protokolldatei_kontrollieren Instance
         {
             get { return instance; }
         }

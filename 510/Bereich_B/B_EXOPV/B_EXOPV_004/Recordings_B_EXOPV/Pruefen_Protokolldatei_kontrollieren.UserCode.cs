@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_EXOPV_004.Recordings_B_EXOPS
+namespace B_EXOPV_004.Recordings_B_EXOPV
 {
-    public partial class Statuskontrolle_nach_Verbuchung
+    public partial class Pruefen_Protokolldatei_kontrollieren
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="0a603c18-304d-4aaf-8fc2-5acebb179d58"
+id="9af6b51e-9e68-4d86-9815-b395918539b3"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,57 +19,57 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Statuskontrolle_nach_Verbuchung"
+	classname="B_EXOPS_Statuskontrolle_nach_Pruefung"
 	namespace="B_EXOPV_004.Recordings_B_EXOPS">
 	</codegen>
 	<variables>
 		<var
-		id="f1ef5c28-e013-45a7-ac7c-e25b279c7175"
+		id="514e98df-d64e-4fb5-a098-05a618770241"
 		name="Beleg2">
 			ER_02_B_EXOPV_004
 		</var>
 		<var
-		id="6fed7aaf-925f-4c9b-b1cb-c6de6a4ec220"
+		id="c70a9809-2dd7-4790-9667-18e9251c7c70"
 		name="Beleg4">
 			ER_04_B_EXOPV_004
 		</var>
 		<var
-		id="860a6964-707d-481c-9d0c-cc1b9cc04c2a"
+		id="d8543d49-9498-461c-a73b-fbb2955c45b9"
 		name="Beleg5">
 			ER_05_B_EXOPV_004
 		</var>
 		<var
-		id="38eceb61-f299-43cb-8013-1847424e355e"
+		id="493dfc45-e85b-42c0-89d0-867ba1550878"
 		name="Jahr">
 			2018
 		</var>
 		<var
-		id="c7c8d668-a8d8-49b1-8eb3-401282dae081"
+		id="aa8de622-a144-4f67-a2ea-100e36965e2e"
 		name="Beleg1">
 			ER_01_B_EXOPV_004
 		</var>
 		<var
-		id="8d7747ba-38f4-48e8-9b61-8255b5bd93cb"
+		id="49acf57b-9bec-4f67-9640-2c454605349e"
 		name="Beleg3">
 			ER_03_B_EXOPV_004
 		</var>
 		<var
-		id="c94bbabd-870b-4721-8995-73689bcea24f"
+		id="00212ea1-967b-4d0b-bcc4-f49e3f07ccb7"
 		name="Beleg6">
 			ER_06_B_EXOPV_004
 		</var>
 		<var
-		id="47c13f58-7e73-41bf-9793-e0574fbad45f"
+		id="bc33c291-1bb0-44a7-ae73-0a376a8f181a"
 		name="Periode_6_offen">
 			6
 		</var>
 		<var
-		id="ff2edf6c-584a-40c6-a5a4-c88ada229677"
+		id="7438727d-f23f-4eb0-bb0c-5442e8d1c7bd"
 		name="Periode_5_geschlossen">
 			5
 		</var>
 		<var
-		id="4ab059f7-1dfe-42a9-974f-44a85da3baae"
+		id="861f239e-ac89-406b-9443-0381c37f5194"
 		name="Periode_7_geschlossen">
 			7
 		</var>
@@ -94,7 +94,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Beleg3">
+				variable="Beleg1">
 				</binding>
 			</bindings>
 			<info
@@ -157,7 +157,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Beleg4">
+				variable="Beleg2">
 				</binding>
 			</bindings>
 			<info
@@ -220,7 +220,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Beleg1">
+				variable="Beleg3">
 				</binding>
 			</bindings>
 			<info
@@ -261,7 +261,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				V
+				F
 			</matchvalue>
 		</validationitem>
 		<separatoritem
@@ -283,7 +283,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Beleg2">
+				variable="Beleg4">
 				</binding>
 			</bindings>
 			<info
@@ -324,7 +324,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				V
+				F
 			</matchvalue>
 		</validationitem>
 		<separatoritem
@@ -387,7 +387,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				V
+				F
 			</matchvalue>
 		</validationitem>
 		<separatoritem
@@ -450,7 +450,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				V
+				F
 			</matchvalue>
 		</validationitem>
 	</recorditems>
@@ -469,7 +469,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Statuskontrolle_nach_Verbuchung.UserCode.cs
+		Statuskontrolle_nach_Pruefung.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

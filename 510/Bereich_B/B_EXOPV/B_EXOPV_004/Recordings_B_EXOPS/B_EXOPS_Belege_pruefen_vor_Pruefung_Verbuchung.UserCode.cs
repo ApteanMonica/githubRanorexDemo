@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_EXOPV_004.Recordings_B_EXOPV
+namespace B_EXOPV_004.Recordings_B_EXOPS
 {
-    public partial class Stapel_pruefen_Protokolldatei
+    public partial class B_EXOPS_Belege_pruefen_vor_Pruefung_Verbuchung
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
