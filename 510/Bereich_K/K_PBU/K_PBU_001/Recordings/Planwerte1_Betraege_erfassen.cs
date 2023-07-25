@@ -79,14 +79,14 @@ namespace K_PBU_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.FlexGrid.Col00Row1' at Center.", repo.TblK.FlexGrid.Col00Row1Info, new RecordItemIndex(0));
-            repo.TblK.FlexGrid.Col00Row1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.FlexGrid.Row_1.Col00Row1' at Center.", repo.TblK.FlexGrid.Row_1.Col00Row1Info, new RecordItemIndex(0));
+            repo.TblK.FlexGrid.Row_1.Col00Row1.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblK.FlexGrid.Col00Row1' at Center.", repo.TblK.FlexGrid.Col00Row1Info, new RecordItemIndex(1));
-            repo.TblK.FlexGrid.Col00Row1.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblK.FlexGrid.Row_1.Col00Row1' at Center.", repo.TblK.FlexGrid.Row_1.Col00Row1Info, new RecordItemIndex(1));
+            repo.TblK.FlexGrid.Row_1.Col00Row1.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '12000' with focus on 'TblK.FlexGrid.Col00Row1'.", repo.TblK.FlexGrid.Col00Row1Info, new RecordItemIndex(2));
-            repo.TblK.FlexGrid.Col00Row1.PressKeys("12000");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '12000' with focus on 'TblK.FlexGrid.Row_1.Col00Row1'.", repo.TblK.FlexGrid.Row_1.Col00Row1Info, new RecordItemIndex(2));
+            repo.TblK.FlexGrid.Row_1.Col00Row1.PressKeys("12000");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -94,17 +94,17 @@ namespace K_PBU_001.Recordings
             // Zeile 1 prüfen: gleichmäßige Verteilung
             Report.Log(ReportLevel.Info, "Section", "Zeile 1 prüfen: gleichmäßige Verteilung", new RecordItemIndex(4));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='12.000') on item 'TblK.FlexGrid.Col00Row1'.", repo.TblK.FlexGrid.Col00Row1Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.TblK.FlexGrid.Col00Row1Info, "Text", "12.000");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='12.000') on item 'TblK.FlexGrid.Row_1.Col00Row1'.", repo.TblK.FlexGrid.Row_1.Col00Row1Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.TblK.FlexGrid.Row_1.Col00Row1Info, "Text", "12.000");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000') on item 'TblK.FlexGrid.Row1'.", repo.TblK.FlexGrid.Row1Info, new RecordItemIndex(6));
-            Validate.AttributeContains(repo.TblK.FlexGrid.Row1Info, "Text", "1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000') on item 'TblK.FlexGrid.Row_1.Row1'.", repo.TblK.FlexGrid.Row_1.Row1Info, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.TblK.FlexGrid.Row_1.Row1Info, "Text", "1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000");
             
             // Summenzeile prüfen
             Report.Log(ReportLevel.Info, "Section", "Summenzeile prüfen", new RecordItemIndex(7));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='SUMME') on item 'TblK.Fusszeile_Summe.ColPosRow01'.", repo.TblK.Fusszeile_Summe.ColPosRow01Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.TblK.Fusszeile_Summe.ColPosRow01Info, "Text", "SUMME");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='SUMME') on item 'TblK.Fusszeile_Summe.ColPosRow0'.", repo.TblK.Fusszeile_Summe.ColPosRow0Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.TblK.Fusszeile_Summe.ColPosRow0Info, "Text", "SUMME");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='12.000') on item 'TblK.Fusszeile_Summe.Col00Row0'.", repo.TblK.Fusszeile_Summe.Col00Row0Info, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.TblK.Fusszeile_Summe.Col00Row0Info, "Text", "12.000");

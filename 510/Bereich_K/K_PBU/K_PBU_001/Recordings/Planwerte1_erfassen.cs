@@ -108,20 +108,20 @@ namespace K_PBU_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbCommonEinfuegen' at Center.", repo.TblK.PbCommonEinfuegenInfo, new RecordItemIndex(0));
             repo.TblK.PbCommonEinfuegen.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblK.FlexGrid.Row1'", repo.TblK.FlexGrid.Row1Info, new ActionTimeout(60000), new RecordItemIndex(1));
-            repo.TblK.FlexGrid.Row1Info.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblK.FlexGrid.Row_1.Row1'", repo.TblK.FlexGrid.Row_1.Row1Info, new ActionTimeout(60000), new RecordItemIndex(1));
+            repo.TblK.FlexGrid.Row_1.Row1Info.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.FlexGrid.ColKtoNrRow1' at Center.", repo.TblK.FlexGrid.ColKtoNrRow1Info, new RecordItemIndex(2));
-            repo.TblK.FlexGrid.ColKtoNrRow1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.FlexGrid.Row_1.ColKtoNrRow1' at Center.", repo.TblK.FlexGrid.Row_1.ColKtoNrRow1Info, new RecordItemIndex(2));
+            repo.TblK.FlexGrid.Row_1.ColKtoNrRow1.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Konto' with focus on 'TblK.FlexGrid.ColKtoNrRow1'.", repo.TblK.FlexGrid.ColKtoNrRow1Info, new RecordItemIndex(3));
-            repo.TblK.FlexGrid.ColKtoNrRow1.PressKeys(Konto);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Konto' with focus on 'TblK.FlexGrid.Row_1.ColKtoNrRow1'.", repo.TblK.FlexGrid.Row_1.ColKtoNrRow1Info, new RecordItemIndex(3));
+            repo.TblK.FlexGrid.Row_1.ColKtoNrRow1.PressKeys(Konto);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '555' with focus on 'TblK.FlexGrid.ColKs2NrRow1'.", repo.TblK.FlexGrid.ColKs2NrRow1Info, new RecordItemIndex(5));
-            repo.TblK.FlexGrid.ColKs2NrRow1.PressKeys("555");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '555' with focus on 'TblK.FlexGrid.Row_1.ColKs2NrRow1'.", repo.TblK.FlexGrid.Row_1.ColKs2NrRow1Info, new RecordItemIndex(5));
+            repo.TblK.FlexGrid.Row_1.ColKs2NrRow1.PressKeys("555");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -135,14 +135,14 @@ namespace K_PBU_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(9));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblK.FlexGrid.ColKs2NrRow1' at Center.", repo.TblK.FlexGrid.ColKs2NrRow1Info, new RecordItemIndex(10));
-            repo.TblK.FlexGrid.ColKs2NrRow1.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblK.FlexGrid.Row_1.ColKs2NrRow1' at Center.", repo.TblK.FlexGrid.Row_1.ColKs2NrRow1Info, new RecordItemIndex(10));
+            repo.TblK.FlexGrid.Row_1.ColKs2NrRow1.DoubleClick();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(11));
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kostentraeger' with focus on 'TblK.FlexGrid.ColKs2NrRow1'.", repo.TblK.FlexGrid.ColKs2NrRow1Info, new RecordItemIndex(12));
-            repo.TblK.FlexGrid.ColKs2NrRow1.PressKeys(Kostentraeger);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kostentraeger' with focus on 'TblK.FlexGrid.Row_1.ColKs2NrRow1'.", repo.TblK.FlexGrid.Row_1.ColKs2NrRow1Info, new RecordItemIndex(12));
+            repo.TblK.FlexGrid.Row_1.ColKs2NrRow1.PressKeys(Kostentraeger);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
