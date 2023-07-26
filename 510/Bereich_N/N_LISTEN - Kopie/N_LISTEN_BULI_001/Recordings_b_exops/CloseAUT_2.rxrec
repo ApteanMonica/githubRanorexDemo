@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="ed05e554-c16a-456f-81e0-6907c11d6fc3"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT_2"
+	namespace="N_LISTEN_BULI_001.Recordings_b_exops">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="f48f0d3f-40bb-44fa-8e90-5cfba83420b4">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1967f7e9-66ce-459b-9831-ba3005e3988a"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmB_EXOP']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="a571684b-1718-4382-85f0-a148dbf2b821"
+	name="N_LISTEN_BULI_001Repository"
+	relativepath="..\N_LISTEN_BULI_001Repository.rxrep">
+		<codegen
+		classname="N_LISTEN_BULI_001Repository"
+		namespace="N_LISTEN_BULI_001">
+		</codegen>
+		<rootfolder
+		id="b2f923c8-701a-4560-ac72-1116f6373f18"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT_2.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
