@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="75a02ac8-67e2-4b36-909b-008b87ff3a33"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="K_PBU_001.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="1ea6221c-b36e-4faf-ac64-a8595aaa967f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="05d15d02-2855-4f6a-9726-bd40c6195c8b"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="b079714c-2870-4349-b380-dea6daeed062"
+	name="K_PBU_001Repository"
+	relativepath="..\K_PBU_001Repository.rxrep">
+		<codegen
+		classname="K_PBU_001Repository"
+		namespace="K_PBU_001">
+		</codegen>
+		<rootfolder
+		id="f116db28-1abf-43da-83d2-2f81457e3779"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

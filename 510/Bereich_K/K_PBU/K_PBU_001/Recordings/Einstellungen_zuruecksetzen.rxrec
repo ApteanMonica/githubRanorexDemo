@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="6947c70b-e722-4f7f-84e2-779ce7b41a9c"
+id="99ad8041-e987-436e-b8a7-083fb4061cea"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,15 +19,10 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Stapel_verbuchen_starten"
-	namespace="B_EXOPV_004.Recordings_B_EXOPV">
+	classname="Einstellungen_zuruecksetzen"
+	namespace="K_PBU_001.Recordings">
 	</codegen>
 	<variables>
-		<var
-		id="66cddfda-58b0-49f7-af73-f6b2674b1053"
-		name="Fehlerprotokoll_Verbuchung">
-			c:\temp\Fehlerprotokoll_b_exopv_004_verbuch.txt
-		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -38,120 +33,16 @@ mode="Global">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="0da11b63-6692-4a5a-ba86-e6d72b44afc3"
-		sx="0"
-		sy="0"
+		searchpropertyid="82f43202-7ec4-4f38-9f06-8ae1d63f5d8d"
+		sx="28"
+		sy="37"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="ff9ccb21-1bc6-457e-93d5-220d2c09d96a"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmMain']/titlebar[@accessiblerole='TitleBar']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
-		<setvaluerecorditem
-		attrname="AccessibleValue"
-		enabled="True"
-		optional="False"
-		searchpropertyid="fa3ef0e7-785c-4b41-b104-a156eb2b7b06">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="0483058f-bd1e-415d-8803-c037fe0f26d9"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmMain']/container[@controlname='ClientArea']/text[@controlname='dfErrDatei']/text[@accessiblerole='Text']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<AttributeValue>
-			</AttributeValue>
-		</setvaluerecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="1f71fe68-09ef-48e4-a6c5-6076d75f333b"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</mouseitem>
-		<keysequenceitem
-		KeySequence="yourtext"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		searchpropertyid="cc320011-c996-41ae-82e5-7e096c815941">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="KeySequence"
-				variable="Fehlerprotokoll_Verbuchung">
-				</binding>
-			</bindings>
-			<info
-			id="0483058f-bd1e-415d-8803-c037fe0f26d9"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmMain']/container[@controlname='ClientArea']/text[@controlname='dfErrDatei']/text[@accessiblerole='Text']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</keysequenceitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="2d324784-7e85-4c4d-a02b-a34143696d04"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="5adda1da-c2dc-486a-892e-792cf083a8cc"
-		sx="301"
-		sy="157"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="f8284fe3-3395-40d8-afd9-80da27af9d08"
+			id="943b4c40-ae56-40d9-a9ef-a08a9f49ef1a"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="control, nativewindow"
@@ -161,7 +52,7 @@ mode="Global">
 				hasfocus="False"
 				index="0"
 				prefcap="button"
-				rect="281,121,40,72"
+				rect="5,25,47,24"
 				role="button"
 				snapElem=""
 				valid="True"
@@ -173,7 +64,7 @@ mode="Global">
 					<attribute
 					name="controlname"
 					type="System.String">
-						pbCommon_Laden
+						pbCommon_Neu
 					</attribute>
 					<attribute
 					name="controltype"
@@ -198,7 +89,7 @@ mode="Global">
 					<attribute
 					name="handle"
 					type="System.IntPtr">
-						7810078
+						27603954
 					</attribute>
 					<attribute
 					name="instance"
@@ -208,12 +99,12 @@ mode="Global">
 					<attribute
 					name="processid"
 					type="System.Int32">
-						18216
+						13844
 					</attribute>
 					<attribute
 					name="processname"
 					type="System.String">
-						B_EXOPV
+						K_PBU
 					</attribute>
 					<attribute
 					name="windowextendedstyle"
@@ -4034,106 +3925,76 @@ mode="Global">
 					</dynamicaction>
 				</element>
 				<path>
-					/form[@controlname='frmMain']/container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup1']/button[@controlname='pbCommon_Laden']
+					/form[@controlname='tblK']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup01']/button[@controlname='pbCommon_Neu']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 		</mouseitem>
-		<validationitem
-		action="Exists"
+		<setvaluerecorditem
+		attrname="Checked"
 		enabled="True"
 		optional="False"
-		searchpropertyid="85e1885b-b123-416d-b70d-a9d658d1ea5d">
+		searchpropertyid="1ee7b5eb-01bd-41dd-a12d-3f9b40cb8be8">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="d9f8e3e5-32e9-4f38-bf6a-ffd0f14a524d"
+			id="ae3f42bb-56a4-4705-bbba-99cb69f3d078"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='tblExop']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Stapel_Herkunft]/cell[@accessiblename~'Column 0']
+					/form[@controlname='tblK']/container[@controlname='ToolBar']/checkbox[@controlname='cbBereich1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<AttributeValue>
+				False
+			</AttributeValue>
+		</setvaluerecorditem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="30e29ec8-12c7-4250-86a6-ce9acd8a17d8">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ae3f42bb-56a4-4705-bbba-99cb69f3d078"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ToolBar']/checkbox[@controlname='cbBereich1']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 			<matchname>
-				Text
+				Checked
 			</matchname>
 			<matchvalue>
-				yourtext
+				False
 			</matchvalue>
 		</validationitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="60e0fd72-1508-4dd7-9b0c-b77fe45a70dc"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="d9f8e3e5-32e9-4f38-bf6a-ffd0f14a524d"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='tblExop']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Stapel_Herkunft]/cell[@accessiblename~'Column 0']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="100ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="9f407c94-df2f-4e82-8101-22d87f3d1dab"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="f37b4bd5-d05c-40b0-a748-2d638cb57cb0"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmMain']/container[@controlname='RibbonBar']/container[@controlname='OptionenGroup']/button[@controlname='pbCommon_Verbuchen']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
 	</recorditems>
 	<repository
-	id="97f67057-ca21-4199-ac02-38c60f65a0ce"
-	name="B_EXOPV_004Repository"
-	relativepath="..\B_EXOPV_004Repository.rxrep">
+	id="b079714c-2870-4349-b380-dea6daeed062"
+	name="K_PBU_001Repository"
+	relativepath="..\K_PBU_001Repository.rxrep">
 		<codegen
-		classname="B_EXOPV_004Repository"
-		namespace="B_EXOPV_004">
+		classname="K_PBU_001Repository"
+		namespace="K_PBU_001">
 		</codegen>
 		<rootfolder
-		id="8ba070da-ae86-4ef2-943b-ec1b741e03f0"
+		id="f116db28-1abf-43da-83d2-2f81457e3779"
 		name="_rootdummy_">
 		</rootfolder>
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Stapel_verbuchen_starten.UserCode.cs
+		Einstellungen_zuruecksetzen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
