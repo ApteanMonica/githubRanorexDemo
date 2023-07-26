@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace K_PBU_001.Recordings
 {
-    public partial class Einschraenkungen
+    public partial class Planwerte_auf_Monate_zurueckstellen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

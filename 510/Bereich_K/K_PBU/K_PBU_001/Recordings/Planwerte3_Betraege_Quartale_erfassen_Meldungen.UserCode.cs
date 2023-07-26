@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace K_PBU_001.Recordings
 {
-    public partial class Ansicht_Planungsgrundlagen_wechseln
+    public partial class Planwerte3_Betraege_Quartale_erfassen_Meldungen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

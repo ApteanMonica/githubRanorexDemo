@@ -91,15 +91,15 @@
     <Compile Include="Program.cs">
       <id>2d5bdddb-3b11-432e-a0dd-6b49a250210a</id>
     </Compile>
-    <Compile Include="Recordings\Ansicht_Planungsgrundlagen_wechseln.cs">
+    <Compile Include="Recordings\Ansicht_Planungsgrundlagen.cs">
       <BoundTo>fb44cbbf-85e9-4691-af8e-258aa5a16404</BoundTo>
-      <DependentUpon>Ansicht_Planungsgrundlagen_wechseln.rxrec</DependentUpon>
+      <DependentUpon>Ansicht_Planungsgrundlagen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>7aa7df37-660f-4ee0-87a4-6b90af8a285b</id>
     </Compile>
-    <Compile Include="Recordings\Ansicht_Planungsgrundlagen_wechseln.UserCode.cs">
+    <Compile Include="Recordings\Ansicht_Planungsgrundlagen.UserCode.cs">
       <BoundTo>fb44cbbf-85e9-4691-af8e-258aa5a16404</BoundTo>
-      <DependentUpon>Ansicht_Planungsgrundlagen_wechseln.rxrec</DependentUpon>
+      <DependentUpon>Ansicht_Planungsgrundlagen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>8c839819-2ddc-4c94-b316-29eb4f09fadd</id>
     </Compile>
@@ -115,15 +115,15 @@
       <id>ea32643f-3ea0-4fae-9f94-4e6042f78bbc</id>
       <BoundTo>0e059d34-8317-4f12-b4b6-1b9d2308d3df</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Einschraenkungen.cs">
+    <Compile Include="Recordings\Einstellungen_setzen.cs">
       <BoundTo>68226078-da27-4c2e-bbba-cad028b53c7a</BoundTo>
-      <DependentUpon>Einschraenkungen.rxrec</DependentUpon>
+      <DependentUpon>Einstellungen_setzen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>6ad8d4aa-a97f-468a-b1e3-2512287cd6ca</id>
     </Compile>
-    <Compile Include="Recordings\Einschraenkungen.UserCode.cs">
+    <Compile Include="Recordings\Einstellungen_setzen.UserCode.cs">
       <BoundTo>68226078-da27-4c2e-bbba-cad028b53c7a</BoundTo>
-      <DependentUpon>Einschraenkungen.rxrec</DependentUpon>
+      <DependentUpon>Einstellungen_setzen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>3fd6f734-8e7a-45aa-b3f0-d03cf763744a</id>
     </Compile>
@@ -138,6 +138,18 @@
       <DependentUpon>Einstellungen_zuruecksetzen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>b6f6e66e-cf56-4d93-bf72-e5d00850028f</id>
+    </Compile>
+    <Compile Include="Recordings\Kostenstellen_Einschraenkung_von_bis.cs">
+      <BoundTo>d748022f-2a83-4230-ba94-a3afeb4ee6a7</BoundTo>
+      <DependentUpon>Kostenstellen_Einschraenkung_von_bis.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>11a94f01-5717-4c35-84ba-554837880d26</id>
+    </Compile>
+    <Compile Include="Recordings\Kostenstellen_Einschraenkung_von_bis.UserCode.cs">
+      <BoundTo>d748022f-2a83-4230-ba94-a3afeb4ee6a7</BoundTo>
+      <DependentUpon>Kostenstellen_Einschraenkung_von_bis.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9d95062f-f65f-4d62-93de-8defeede9d95</id>
     </Compile>
     <Compile Include="Recordings\Planwerte1_Betraege_erfassen.cs">
       <BoundTo>d2a45f94-7276-4848-8108-382304fe86b1</BoundTo>
@@ -199,6 +211,90 @@
       <id>ed9550d4-92d4-4e0a-b124-631b177632ac</id>
       <BoundTo>ccfa5a59-e690-456b-a05d-e41e8d52f727</BoundTo>
     </Compile>
+    <Compile Include="Recordings\Planwerte3_auf_Quartale_umstellen.cs">
+      <DependentUpon>Planwerte3_auf_Quartale_umstellen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>024cbe13-53ad-4ebe-8bc2-082f61c6b28f</id>
+      <BoundTo>2bba3429-fe2a-467b-b28f-80718bdd5e6a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Planwerte3_auf_Quartale_umstellen.UserCode.cs">
+      <DependentUpon>Planwerte3_auf_Quartale_umstellen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b97e8e11-1cd3-46c8-b4e3-6ff6fc116e46</id>
+      <BoundTo>2bba3429-fe2a-467b-b28f-80718bdd5e6a</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Planwerte3_Betraege_Quartale_aendern.cs">
+      <DependentUpon>Planwerte3_Betraege_Quartale_aendern.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1aff2da1-e631-40b5-a6f0-ddd43cc7cd9b</id>
+      <BoundTo>56a6a059-a77d-4caa-a1e0-e1031ff9c802</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Planwerte3_Betraege_Quartale_aendern.UserCode.cs">
+      <DependentUpon>Planwerte3_Betraege_Quartale_aendern.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0788b208-fdcf-4b7b-87af-e3effe19cf37</id>
+      <BoundTo>56a6a059-a77d-4caa-a1e0-e1031ff9c802</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Planwerte3_Betraege_Quartale_erfassen_Meldungen.cs">
+      <DependentUpon>Planwerte3_Betraege_Quartale_erfassen_Meldungen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9a2c672f-5c62-43ba-a2f0-cde6c2d2a4fa</id>
+      <BoundTo>1ee275f3-fa20-4a33-8d18-3fdb35ec69e9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Planwerte3_Betraege_Quartale_erfassen_Meldungen.UserCode.cs">
+      <DependentUpon>Planwerte3_Betraege_Quartale_erfassen_Meldungen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5fe07645-22d8-4a78-ae72-2fd12cd0ddc1</id>
+      <BoundTo>1ee275f3-fa20-4a33-8d18-3fdb35ec69e9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Planwerte3_Quartale_ohne_Kostentraeger_erfassen.cs">
+      <DependentUpon>Planwerte3_Quartale_ohne_Kostentraeger_erfassen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e91ace2f-19a1-4787-83f1-d8de11f57f1c</id>
+      <BoundTo>a786b94e-74ee-493b-b49f-fc6da48fb3b6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Planwerte3_Quartale_ohne_Kostentraeger_erfassen.UserCode.cs">
+      <DependentUpon>Planwerte3_Quartale_ohne_Kostentraeger_erfassen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>83f4f438-f27e-4585-b291-563f2906968a</id>
+      <BoundTo>a786b94e-74ee-493b-b49f-fc6da48fb3b6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Planwerte_auf_Monate_zurueckstellen.cs">
+      <DependentUpon>Planwerte_auf_Monate_zurueckstellen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0050a56b-ec65-4591-ab65-f9300f926057</id>
+      <BoundTo>5dc5a07a-0ff4-48a4-ac62-ce3cbec03378</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Planwerte_auf_Monate_zurueckstellen.UserCode.cs">
+      <DependentUpon>Planwerte_auf_Monate_zurueckstellen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fe86ab4c-33cc-46cd-b38b-032d32e9473b</id>
+      <BoundTo>5dc5a07a-0ff4-48a4-ac62-ce3cbec03378</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Sortierung_nach_Kontonr_kontrollieren.cs">
+      <BoundTo>72446f40-9c5f-4932-8e66-da6ca3001094</BoundTo>
+      <DependentUpon>Sortierung_nach_Kontonr_kontrollieren.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>75d3a4a0-ac7b-4afe-95ef-73318009fd92</id>
+    </Compile>
+    <Compile Include="Recordings\Sortierung_nach_Kontonr_kontrollieren.UserCode.cs">
+      <BoundTo>72446f40-9c5f-4932-8e66-da6ca3001094</BoundTo>
+      <DependentUpon>Sortierung_nach_Kontonr_kontrollieren.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c18034c4-3026-49c1-8d97-8dd98b2e63af</id>
+    </Compile>
+    <Compile Include="Recordings\Sortierung_nach_Position_kontrollieren.cs">
+      <DependentUpon>Sortierung_nach_Position_kontrollieren.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e008d60a-5317-4521-8a79-5bd99a1fad86</id>
+      <BoundTo>b36ec022-14ae-4aa0-93f8-1e9b8326ab86</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Sortierung_nach_Position_kontrollieren.UserCode.cs">
+      <DependentUpon>Sortierung_nach_Position_kontrollieren.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dcbbf994-7217-4510-989c-7e3bbd1f84c7</id>
+      <BoundTo>b36ec022-14ae-4aa0-93f8-1e9b8326ab86</BoundTo>
+    </Compile>
     <Compile Include="Recordings\StartAUT.cs">
       <DependentUpon>StartAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -227,7 +323,7 @@
       <repoid>b079714c-2870-4349-b380-dea6daeed062</repoid>
       <reporootid>f116db28-1abf-43da-83d2-2f81457e3779</reporootid>
     </None>
-    <None Include="Recordings\Ansicht_Planungsgrundlagen_wechseln.rxrec">
+    <None Include="Recordings\Ansicht_Planungsgrundlagen.rxrec">
       <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
       <id>fb44cbbf-85e9-4691-af8e-258aa5a16404</id>
       <recordtableid>8ab36ee0-6651-45a1-bb4e-3792c0d13169</recordtableid>
@@ -237,7 +333,7 @@
       <id>0e059d34-8317-4f12-b4b6-1b9d2308d3df</id>
       <recordtableid>75a02ac8-67e2-4b36-909b-008b87ff3a33</recordtableid>
     </None>
-    <None Include="Recordings\Einschraenkungen.rxrec">
+    <None Include="Recordings\Einstellungen_setzen.rxrec">
       <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
       <id>68226078-da27-4c2e-bbba-cad028b53c7a</id>
       <recordtableid>ceae965f-c1d3-4694-9518-34719b71e074</recordtableid>
@@ -246,6 +342,11 @@
       <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
       <id>17909b19-238f-4c25-af87-e45a215114de</id>
       <recordtableid>99ad8041-e987-436e-b8a7-083fb4061cea</recordtableid>
+    </None>
+    <None Include="Recordings\Kostenstellen_Einschraenkung_von_bis.rxrec">
+      <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
+      <id>d748022f-2a83-4230-ba94-a3afeb4ee6a7</id>
+      <recordtableid>4734ed7e-3a0d-4877-8588-6b6424afcb68</recordtableid>
     </None>
     <None Include="Recordings\Planwerte1_Betraege_erfassen.rxrec">
       <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
@@ -271,6 +372,41 @@
       <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
       <id>ccfa5a59-e690-456b-a05d-e41e8d52f727</id>
       <recordtableid>57cf5b28-96e5-4b7a-8657-a6c81b63de29</recordtableid>
+    </None>
+    <None Include="Recordings\Planwerte3_auf_Quartale_umstellen.rxrec">
+      <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
+      <id>2bba3429-fe2a-467b-b28f-80718bdd5e6a</id>
+      <recordtableid>7dc26a7d-72c8-451d-860c-4d2d6915d2f6</recordtableid>
+    </None>
+    <None Include="Recordings\Planwerte3_Betraege_Quartale_aendern.rxrec">
+      <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
+      <id>56a6a059-a77d-4caa-a1e0-e1031ff9c802</id>
+      <recordtableid>db9c29ec-5095-4d6b-aadf-956f4cde88ef</recordtableid>
+    </None>
+    <None Include="Recordings\Planwerte3_Betraege_Quartale_erfassen_Meldungen.rxrec">
+      <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
+      <id>1ee275f3-fa20-4a33-8d18-3fdb35ec69e9</id>
+      <recordtableid>5945fe88-13cf-4918-8795-48077266cbd8</recordtableid>
+    </None>
+    <None Include="Recordings\Planwerte3_Quartale_ohne_Kostentraeger_erfassen.rxrec">
+      <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
+      <id>a786b94e-74ee-493b-b49f-fc6da48fb3b6</id>
+      <recordtableid>a0c23ebb-8862-47c5-aa08-e0972c3162bf</recordtableid>
+    </None>
+    <None Include="Recordings\Planwerte_auf_Monate_zurueckstellen.rxrec">
+      <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
+      <id>5dc5a07a-0ff4-48a4-ac62-ce3cbec03378</id>
+      <recordtableid>ece0a022-c231-4fbf-b30e-8adf6d0d3e0f</recordtableid>
+    </None>
+    <None Include="Recordings\Sortierung_nach_Kontonr_kontrollieren.rxrec">
+      <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
+      <id>72446f40-9c5f-4932-8e66-da6ca3001094</id>
+      <recordtableid>a7eb93a5-d012-40c4-8266-7d3f6177fce1</recordtableid>
+    </None>
+    <None Include="Recordings\Sortierung_nach_Position_kontrollieren.rxrec">
+      <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
+      <id>b36ec022-14ae-4aa0-93f8-1e9b8326ab86</id>
+      <recordtableid>b143f678-0e38-47cd-917b-240c0a52f35c</recordtableid>
     </None>
     <None Include="Recordings\StartAUT.rxrec">
       <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
