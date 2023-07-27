@@ -100,9 +100,6 @@ namespace K_PBU_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'TblK.RbMonat'.", repo.TblK.RbMonatInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.TblK.RbMonatInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KPBU.Planungsgrundlagen' at Center.", repo.KPBU.PlanungsgrundlagenInfo, new RecordItemIndex(7));
-            repo.KPBU.Planungsgrundlagen.Click();
-            
         }
 
 #region Image Feature Data
