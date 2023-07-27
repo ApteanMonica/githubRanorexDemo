@@ -91,17 +91,29 @@
     <Compile Include="Program.cs">
       <id>2d5bdddb-3b11-432e-a0dd-6b49a250210a</id>
     </Compile>
-    <Compile Include="Recordings\Ansicht_Planungsgrundlagen.cs">
+    <Compile Include="Recordings\Ansicht_Planungsgrundlagen_setzen.cs">
       <BoundTo>fb44cbbf-85e9-4691-af8e-258aa5a16404</BoundTo>
-      <DependentUpon>Ansicht_Planungsgrundlagen.rxrec</DependentUpon>
+      <DependentUpon>Ansicht_Planungsgrundlagen_setzen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>7aa7df37-660f-4ee0-87a4-6b90af8a285b</id>
     </Compile>
-    <Compile Include="Recordings\Ansicht_Planungsgrundlagen.UserCode.cs">
+    <Compile Include="Recordings\Ansicht_Planungsgrundlagen_setzen.UserCode.cs">
       <BoundTo>fb44cbbf-85e9-4691-af8e-258aa5a16404</BoundTo>
-      <DependentUpon>Ansicht_Planungsgrundlagen.rxrec</DependentUpon>
+      <DependentUpon>Ansicht_Planungsgrundlagen_setzen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>8c839819-2ddc-4c94-b316-29eb4f09fadd</id>
+    </Compile>
+    <Compile Include="Recordings\Ansicht_Planungsgrundlagen_zuruecksetzen.cs">
+      <DependentUpon>Ansicht_Planungsgrundlagen_zuruecksetzen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bae23a75-c20f-4b31-97c6-3db5fe80273b</id>
+      <BoundTo>6cca9a96-78ab-43c8-a0e3-831468fd7db6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Ansicht_Planungsgrundlagen_zuruecksetzen.UserCode.cs">
+      <DependentUpon>Ansicht_Planungsgrundlagen_zuruecksetzen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9182d1f8-ed31-43f2-ba4e-7e1fe8838419</id>
+      <BoundTo>6cca9a96-78ab-43c8-a0e3-831468fd7db6</BoundTo>
     </Compile>
     <Compile Include="Recordings\CloseAUT.cs">
       <DependentUpon>CloseAUT.rxrec</DependentUpon>
@@ -139,15 +151,39 @@
       <UserCode>true</UserCode>
       <id>b6f6e66e-cf56-4d93-bf72-e5d00850028f</id>
     </Compile>
-    <Compile Include="Recordings\Kostenstellen_Einschraenkung_von_bis.cs">
+    <Compile Include="Recordings\Planwerte4_Kst_von_bis_erfassen.cs">
+      <DependentUpon>Planwerte4_Kst_von_bis_erfassen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ad25c4bd-a668-4e33-9ad1-196fd625b69a</id>
+      <BoundTo>f0241898-a436-420e-b6d5-fdca2e77ab36</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Planwerte4_Kst_von_bis_erfassen.UserCode.cs">
+      <DependentUpon>Planwerte4_Kst_von_bis_erfassen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dbc9e15c-3a63-41a3-b7a5-8fcad0a0b240</id>
+      <BoundTo>f0241898-a436-420e-b6d5-fdca2e77ab36</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Planwerte4_Kst_von_bis_kontrollieren.cs">
+      <DependentUpon>Planwerte4_Kst_von_bis_kontrollieren.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>72f3f44f-df4e-43fd-8576-f81a63b0adb5</id>
+      <BoundTo>912b638c-e56b-428b-b99d-1565408749da</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Planwerte4_Kst_von_bis_kontrollieren.UserCode.cs">
+      <DependentUpon>Planwerte4_Kst_von_bis_kontrollieren.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8e8707df-161d-4ae3-b094-1ff92c1b07a6</id>
+      <BoundTo>912b638c-e56b-428b-b99d-1565408749da</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Kostenstellen_Einschraenkung_von_bis_setzen.cs">
       <BoundTo>d748022f-2a83-4230-ba94-a3afeb4ee6a7</BoundTo>
-      <DependentUpon>Kostenstellen_Einschraenkung_von_bis.rxrec</DependentUpon>
+      <DependentUpon>Kostenstellen_Einschraenkung_von_bis_setzen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>11a94f01-5717-4c35-84ba-554837880d26</id>
     </Compile>
-    <Compile Include="Recordings\Kostenstellen_Einschraenkung_von_bis.UserCode.cs">
+    <Compile Include="Recordings\Kostenstellen_Einschraenkung_von_bis_setzen.UserCode.cs">
       <BoundTo>d748022f-2a83-4230-ba94-a3afeb4ee6a7</BoundTo>
-      <DependentUpon>Kostenstellen_Einschraenkung_von_bis.rxrec</DependentUpon>
+      <DependentUpon>Kostenstellen_Einschraenkung_von_bis_setzen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>9d95062f-f65f-4d62-93de-8defeede9d95</id>
     </Compile>
@@ -211,14 +247,14 @@
       <id>ed9550d4-92d4-4e0a-b124-631b177632ac</id>
       <BoundTo>ccfa5a59-e690-456b-a05d-e41e8d52f727</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Planwerte3_auf_Quartale_umstellen.cs">
-      <DependentUpon>Planwerte3_auf_Quartale_umstellen.rxrec</DependentUpon>
+    <Compile Include="Recordings\Planwerte_auf_Quartale_umstellen.cs">
+      <DependentUpon>Planwerte_auf_Quartale_umstellen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>024cbe13-53ad-4ebe-8bc2-082f61c6b28f</id>
       <BoundTo>2bba3429-fe2a-467b-b28f-80718bdd5e6a</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Planwerte3_auf_Quartale_umstellen.UserCode.cs">
-      <DependentUpon>Planwerte3_auf_Quartale_umstellen.rxrec</DependentUpon>
+    <Compile Include="Recordings\Planwerte_auf_Quartale_umstellen.UserCode.cs">
+      <DependentUpon>Planwerte_auf_Quartale_umstellen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>b97e8e11-1cd3-46c8-b4e3-6ff6fc116e46</id>
       <BoundTo>2bba3429-fe2a-467b-b28f-80718bdd5e6a</BoundTo>
@@ -271,26 +307,26 @@
       <id>fe86ab4c-33cc-46cd-b38b-032d32e9473b</id>
       <BoundTo>5dc5a07a-0ff4-48a4-ac62-ce3cbec03378</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Sortierung_nach_Kontonr_kontrollieren.cs">
+    <Compile Include="Recordings\Kontrolle_Monatswerte_Sortierung_nach_Kontonr.cs">
       <BoundTo>72446f40-9c5f-4932-8e66-da6ca3001094</BoundTo>
-      <DependentUpon>Sortierung_nach_Kontonr_kontrollieren.rxrec</DependentUpon>
+      <DependentUpon>Kontrolle_Monatswerte_Sortierung_nach_Kontonr.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>75d3a4a0-ac7b-4afe-95ef-73318009fd92</id>
     </Compile>
-    <Compile Include="Recordings\Sortierung_nach_Kontonr_kontrollieren.UserCode.cs">
+    <Compile Include="Recordings\Kontrolle_Monatswerte_Sortierung_nach_Kontonr.UserCode.cs">
       <BoundTo>72446f40-9c5f-4932-8e66-da6ca3001094</BoundTo>
-      <DependentUpon>Sortierung_nach_Kontonr_kontrollieren.rxrec</DependentUpon>
+      <DependentUpon>Kontrolle_Monatswerte_Sortierung_nach_Kontonr.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>c18034c4-3026-49c1-8d97-8dd98b2e63af</id>
     </Compile>
-    <Compile Include="Recordings\Sortierung_nach_Position_kontrollieren.cs">
-      <DependentUpon>Sortierung_nach_Position_kontrollieren.rxrec</DependentUpon>
+    <Compile Include="Recordings\Sortierung_nach_Position_aendern_kontrollieren.cs">
+      <DependentUpon>Sortierung_nach_Position_aendern_kontrollieren.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>e008d60a-5317-4521-8a79-5bd99a1fad86</id>
       <BoundTo>b36ec022-14ae-4aa0-93f8-1e9b8326ab86</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Sortierung_nach_Position_kontrollieren.UserCode.cs">
-      <DependentUpon>Sortierung_nach_Position_kontrollieren.rxrec</DependentUpon>
+    <Compile Include="Recordings\Sortierung_nach_Position_aendern_kontrollieren.UserCode.cs">
+      <DependentUpon>Sortierung_nach_Position_aendern_kontrollieren.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>dcbbf994-7217-4510-989c-7e3bbd1f84c7</id>
       <BoundTo>b36ec022-14ae-4aa0-93f8-1e9b8326ab86</BoundTo>
@@ -323,10 +359,15 @@
       <repoid>b079714c-2870-4349-b380-dea6daeed062</repoid>
       <reporootid>f116db28-1abf-43da-83d2-2f81457e3779</reporootid>
     </None>
-    <None Include="Recordings\Ansicht_Planungsgrundlagen.rxrec">
+    <None Include="Recordings\Ansicht_Planungsgrundlagen_setzen.rxrec">
       <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
       <id>fb44cbbf-85e9-4691-af8e-258aa5a16404</id>
       <recordtableid>8ab36ee0-6651-45a1-bb4e-3792c0d13169</recordtableid>
+    </None>
+    <None Include="Recordings\Ansicht_Planungsgrundlagen_zuruecksetzen.rxrec">
+      <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
+      <id>6cca9a96-78ab-43c8-a0e3-831468fd7db6</id>
+      <recordtableid>a9cb8dcc-38fc-4082-957d-f1cec6b9acac</recordtableid>
     </None>
     <None Include="Recordings\CloseAUT.rxrec">
       <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
@@ -343,7 +384,17 @@
       <id>17909b19-238f-4c25-af87-e45a215114de</id>
       <recordtableid>99ad8041-e987-436e-b8a7-083fb4061cea</recordtableid>
     </None>
-    <None Include="Recordings\Kostenstellen_Einschraenkung_von_bis.rxrec">
+    <None Include="Recordings\Planwerte4_Kst_von_bis_erfassen.rxrec">
+      <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
+      <id>f0241898-a436-420e-b6d5-fdca2e77ab36</id>
+      <recordtableid>30120b47-70e1-4065-a999-fbd9ae0074d2</recordtableid>
+    </None>
+    <None Include="Recordings\Planwerte4_Kst_von_bis_kontrollieren.rxrec">
+      <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
+      <id>912b638c-e56b-428b-b99d-1565408749da</id>
+      <recordtableid>7f0fc054-d640-4b15-a10f-1df11d6452c2</recordtableid>
+    </None>
+    <None Include="Recordings\Kostenstellen_Einschraenkung_von_bis_setzen.rxrec">
       <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
       <id>d748022f-2a83-4230-ba94-a3afeb4ee6a7</id>
       <recordtableid>4734ed7e-3a0d-4877-8588-6b6424afcb68</recordtableid>
@@ -373,7 +424,7 @@
       <id>ccfa5a59-e690-456b-a05d-e41e8d52f727</id>
       <recordtableid>57cf5b28-96e5-4b7a-8657-a6c81b63de29</recordtableid>
     </None>
-    <None Include="Recordings\Planwerte3_auf_Quartale_umstellen.rxrec">
+    <None Include="Recordings\Planwerte_auf_Quartale_umstellen.rxrec">
       <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
       <id>2bba3429-fe2a-467b-b28f-80718bdd5e6a</id>
       <recordtableid>7dc26a7d-72c8-451d-860c-4d2d6915d2f6</recordtableid>
@@ -398,12 +449,12 @@
       <id>5dc5a07a-0ff4-48a4-ac62-ce3cbec03378</id>
       <recordtableid>ece0a022-c231-4fbf-b30e-8adf6d0d3e0f</recordtableid>
     </None>
-    <None Include="Recordings\Sortierung_nach_Kontonr_kontrollieren.rxrec">
+    <None Include="Recordings\Kontrolle_Monatswerte_Sortierung_nach_Kontonr.rxrec">
       <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
       <id>72446f40-9c5f-4932-8e66-da6ca3001094</id>
       <recordtableid>a7eb93a5-d012-40c4-8266-7d3f6177fce1</recordtableid>
     </None>
-    <None Include="Recordings\Sortierung_nach_Position_kontrollieren.rxrec">
+    <None Include="Recordings\Sortierung_nach_Position_aendern_kontrollieren.rxrec">
       <BoundTo>863ee2e4-47a1-440c-a649-9d7f0738d016</BoundTo>
       <id>b36ec022-14ae-4aa0-93f8-1e9b8326ab86</id>
       <recordtableid>b143f678-0e38-47cd-917b-240c0a52f35c</recordtableid>

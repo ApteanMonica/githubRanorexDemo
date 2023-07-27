@@ -4,7 +4,7 @@
 		<flatlistofchildren>
 			<testmodule
 			id="014b6bd4-06a4-4f56-9d00-b4284c93a370"
-			name="Planwerte3_auf_Quartale_umstellen"
+			name="Planwerte_auf_Quartale_umstellen"
 			ref="7dc26a7d-72c8-451d-860c-4d2d6915d2f6"
 			type="Recording">
 				<databinding>
@@ -18,7 +18,7 @@
 			</testmodule>
 			<testmodule
 			id="0658cd16-0632-4225-a3ed-427bec7de2b1"
-			name="Sortierung_nach_Position_kontrollieren"
+			name="Sortierung_nach_Position_aendern_kontrollieren"
 			ref="b143f678-0e38-47cd-917b-240c0a52f35c"
 			type="Recording">
 				<databinding>
@@ -71,16 +71,60 @@
 			name="Planwerte_3_erfassen">
 			</smartfoldernode>
 			<testmodule
+			id="2b8ac585-498d-4af8-9d22-30cdf8e87966"
+			name="Planwerte4_Kst_von_bis_erfassen"
+			ref="30120b47-70e1-4065-a999-fbd9ae0074d2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Kostentraeger"
+					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
+					variableid="1f80da44-e528-40ee-a3b2-beab54a6e7ad"
+					variablename="Kostentraeger">
+					</var>
+					<var
+					dataname="Konto"
+					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
+					variableid="5bb250c5-e27c-4fee-865c-6ea9618ce0d9"
+					variablename="Konto">
+					</var>
+					<var
+					dataname="Kostenstelle2"
+					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
+					variableid="6b402234-8096-4b25-ad9d-4fdf2a901f50"
+					variablename="Kostenstelle2">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="2cf7e7e0-1e59-4175-9869-e39a4c69d113"
-			name="Sortierung_nach_Kontonr_kontrollieren"
+			name="Kontrolle_Monatswerte_Sortierung_nach_Kontonr"
 			ref="a7eb93a5-d012-40c4-8266-7d3f6177fce1"
 			type="Recording">
 				<databinding>
+					<var
+					dataname="Kostentraeger3"
+					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
+					variableid="7cf03454-8897-44a1-90b1-92860e04e6a4"
+					variablename="Kostentraeger3">
+					</var>
 					<var
 					dataname="Konto3"
 					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
 					variableid="94ffa84e-1ebf-4a16-a0d9-be6a27c29215"
 					variablename="Konto3">
+					</var>
+					<var
+					dataname="Kostentraeger2"
+					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
+					variableid="ccf048a1-faf5-4aac-8980-1781bc92fa62"
+					variablename="Kostentraeger2">
+					</var>
+					<var
+					dataname="Kostentraeger"
+					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
+					variableid="218e82c9-9ae7-42df-99e6-db7ae0701351"
+					variablename="Kostentraeger">
 					</var>
 					<var
 					dataname="Konto2"
@@ -94,8 +138,62 @@
 					variableid="3b98166b-e569-4135-9ce9-5bbc04ff4c53"
 					variablename="Konto">
 					</var>
+					<var
+					dataname="PVT_Code"
+					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
+					variableid="91aecdf5-a413-4eef-83cc-7b6297d10a95"
+					variablename="PVT_Code">
+					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="38b19353-3f68-4fa1-aa57-3ab945133b6d"
+			name="Planwerte4_Kst_von_bis_kontrollieren"
+			ref="7f0fc054-d640-4b15-a10f-1df11d6452c2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Konto2"
+					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
+					variableid="74e2e208-5e7b-4047-879e-335a8a3323a4"
+					variablename="Konto2">
+					</var>
+					<var
+					dataname="Konto"
+					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
+					variableid="2d83aea0-4003-4e4c-b895-a9f55c100de2"
+					variablename="Konto">
+					</var>
+					<var
+					dataname="Kostenstelle2"
+					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
+					variableid="ba2246c7-82fb-4380-852d-2a3daadf6df9"
+					variablename="Kostenstelle2">
+					</var>
+					<var
+					dataname="Kostenstelle"
+					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
+					variableid="ed498f2d-da68-4f92-9f72-4edfd8e9465f"
+					variablename="Kostenstelle">
+					</var>
+					<var
+					dataname="Kostentraeger"
+					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
+					variableid="e773175f-92e7-4ea4-ae27-86eef35ff0b3"
+					variablename="Kostentraeger">
+					</var>
+					<var
+					dataname="Konto3"
+					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
+					variableid="95092546-802b-45b9-8be1-5fdd8f609dc5"
+					variablename="Konto3">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			id="3a343bf3-1dc5-4653-aaeb-4eb8e91c177d"
+			name="Planwerte_4_erfassen_Einschränkung_von_bis">
+			</smartfoldernode>
 			<smartfoldernode
 			id="3aa6847d-2c87-4730-adff-17bb108f193c"
 			name="Planwerte_2_erfassen">
@@ -145,54 +243,38 @@
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
+			enabled="False"
+			id="52dd24c5-7883-422d-aade-8a7f459e61e9"
+			name="Ansicht_Planungsgrundlagen_zuruecksetzen"
+			ref="a9cb8dcc-38fc-4082-957d-f1cec6b9acac"
+			type="Recording">
+				<description>
+					<![CDATA[Disabled: in nächsten Testfall übertragen, in dem mit Planungsgrundlagen gearbeitet wird.]]>
+				</description>
+			</testmodule>
+			<testmodule
 			id="5942ad5b-e161-4a08-9efe-48ea5b61d0e7"
 			name="Planwerte3_Betraege_Quartale_aendern"
 			ref="db9c29ec-5095-4d6b-aadf-956f4cde88ef"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="Kostenstelle"
-					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
-					variableid="4c35611c-b712-4c37-bd29-d28096ad3b9c"
-					variablename="Kostenstelle">
-					</var>
-					<var
-					dataname="Kostentraeger3"
-					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
-					variableid="91f01e93-0714-48c7-ac4d-de61582858d0"
-					variablename="Kostentraeger3">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="63f9d7e4-f022-473e-b85c-e6446571288c"
-			name="Kostenstellen_Einschraenkung_von_bis"
+			name="Kostenstellen_Einschraenkung_von_bis_setzen"
 			ref="4734ed7e-3a0d-4877-8588-6b6424afcb68"
 			type="Recording">
 				<databinding>
+					<var
+					dataname="Kostenstelle2"
+					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
+					variableid="aaddb638-39d3-4dbb-8a60-516b679f8341"
+					variablename="Kostenstelle2">
+					</var>
 					<var
 					dataname="Kostenstelle"
 					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
 					variableid="cf49c119-88f5-46b5-b4f4-e4bc81d509be"
 					variablename="Kostenstelle">
-					</var>
-					<var
-					dataname="Konto"
-					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
-					variableid="7da3b9e6-336e-48c6-a4f7-9fc29b07f356"
-					variablename="Konto">
-					</var>
-					<var
-					dataname="Konto2"
-					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
-					variableid="0044af2a-9744-41af-8d67-9b202ec53f22"
-					variablename="Konto2">
-					</var>
-					<var
-					dataname="Konto3"
-					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
-					variableid="2466c087-f000-458c-b9fb-2ffd0720f8f2"
-					variablename="Konto3">
 					</var>
 				</databinding>
 			</testmodule>
@@ -220,6 +302,9 @@
 			id="71c361bb-d6c6-4616-9c45-266acc828012"
 			name="K_PBU_001"
 			reportlevel="Info;20">
+				<description>
+					<![CDATA[<p>Erfassung und Kontrolle von 4 Planzeilen mit unterschiedlichen Varinanten, Einschränkungen und Einstellungen + Kontrolle der Summen</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="Startfile"
@@ -244,6 +329,10 @@
 					<param
 					name="Kostenstelle"
 					value="10">
+					</param>
+					<param
+					name="Kostenstelle2"
+					value="20">
 					</param>
 					<param
 					name="Konto"
@@ -295,7 +384,7 @@
 			id="8ca6ac49-6730-4ff7-9e88-25092820c437"
 			name="TestCase">
 				<description>
-					<![CDATA[Testwiederholung: 2 Zeilen löschen und Einschränkungen zurücksetzen]]>
+					<![CDATA[Testwiederholung:&nbsp;erfasste&nbsp;Zeilen löschen und Einschränkungen zurücksetzen]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -309,12 +398,6 @@
 					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
 					variableid="d5eb23f8-4fda-4c07-945e-08d329d975fe"
 					variablename="Konto3">
-					</var>
-					<var
-					dataname="Kostenstelle"
-					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
-					variableid="182ca6db-a988-44ba-be8d-5ca1d21b9049"
-					variablename="Kostenstelle">
 					</var>
 				</databinding>
 			</testmodule>
@@ -347,10 +430,14 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="b3202ddb-58c5-42b9-a12f-73c249a85f06"
-			name="Ansicht_Planungsgrundlagen"
+			name="Ansicht_Planungsgrundlagen_setzen"
 			ref="8ab36ee0-6651-45a1-bb4e-3792c0d13169"
 			type="Recording">
+				<description>
+					<![CDATA[Disabled: in nächsten Testfall übertragen, in dem mit Planungsgrundlagen gearbeitet wird.]]>
+				</description>
 			</testmodule>
 			<testmodule
 			id="b397ff11-cac9-44b6-a6c8-ab52076b7ae7"
@@ -382,12 +469,6 @@
 			ref="5945fe88-13cf-4918-8795-48077266cbd8"
 			type="Recording">
 				<databinding>
-					<var
-					dataname="Kostenstelle"
-					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
-					variableid="bc3bd612-25a1-4eab-b3e8-65285ad1078f"
-					variablename="Kostenstelle">
-					</var>
 					<var
 					dataname="Kostentraeger3"
 					datasourceid="71c361bb-d6c6-4616-9c45-266acc828012"
@@ -480,7 +561,7 @@
 						name="Planwerte_3_erfassen">
 							<testmodule
 							id="014b6bd4-06a4-4f56-9d00-b4284c93a370"
-							name="Planwerte3_auf_Quartale_umstellen">
+							name="Planwerte_auf_Quartale_umstellen">
 							</testmodule>
 							<testmodule
 							id="9e26a4d9-5e3b-41e7-baf7-8de80ee2f0dd"
@@ -494,26 +575,42 @@
 							id="5942ad5b-e161-4a08-9efe-48ea5b61d0e7"
 							name="Planwerte3_Betraege_Quartale_aendern">
 							</testmodule>
+							<testmodule
+							id="fdddbea9-fdca-45cf-929e-b4a3e09dd09b"
+							name="Planwerte_auf_Monate_zurueckstellen">
+							</testmodule>
 						</smartfoldernode>
 						<testmodule
-						id="fdddbea9-fdca-45cf-929e-b4a3e09dd09b"
-						name="Planwerte_auf_Monate_zurueckstellen">
-						</testmodule>
-						<testmodule
 						id="2cf7e7e0-1e59-4175-9869-e39a4c69d113"
-						name="Sortierung_nach_Kontonr_kontrollieren">
+						name="Kontrolle_Monatswerte_Sortierung_nach_Kontonr">
 						</testmodule>
 						<testmodule
 						id="0658cd16-0632-4225-a3ed-427bec7de2b1"
-						name="Sortierung_nach_Position_kontrollieren">
+						name="Sortierung_nach_Position_aendern_kontrollieren">
+						</testmodule>
+						<smartfoldernode
+						id="3a343bf3-1dc5-4653-aaeb-4eb8e91c177d"
+						name="Planwerte_4_erfassen_Einschränkung_von_bis">
+							<testmodule
+							id="63f9d7e4-f022-473e-b85c-e6446571288c"
+							name="Kostenstellen_Einschraenkung_von_bis_setzen">
+							</testmodule>
+							<testmodule
+							id="2b8ac585-498d-4af8-9d22-30cdf8e87966"
+							name="Planwerte4_Kst_von_bis_erfassen">
+							</testmodule>
+							<testmodule
+							id="38b19353-3f68-4fa1-aa57-3ab945133b6d"
+							name="Planwerte4_Kst_von_bis_kontrollieren">
+							</testmodule>
+						</smartfoldernode>
+						<testmodule
+						id="52dd24c5-7883-422d-aade-8a7f459e61e9"
+						name="Ansicht_Planungsgrundlagen_zuruecksetzen">
 						</testmodule>
 						<testmodule
 						id="b3202ddb-58c5-42b9-a12f-73c249a85f06"
-						name="Ansicht_Planungsgrundlagen">
-						</testmodule>
-						<testmodule
-						id="63f9d7e4-f022-473e-b85c-e6446571288c"
-						name="Kostenstellen_Einschraenkung_von_bis">
+						name="Ansicht_Planungsgrundlagen_setzen">
 						</testmodule>
 						<teardown
 						id="ce9861e8-69fb-463e-90c7-0a2d34a34e5a"
@@ -540,6 +637,9 @@
 		name="TestRun">
 			<testcontainer
 			id="15636341-5252-491b-a644-e400c84a47d8">
+			</testcontainer>
+			<testcontainer
+			id="3a343bf3-1dc5-4653-aaeb-4eb8e91c177d">
 			</testcontainer>
 			<testcontainer
 			id="3aa6847d-2c87-4730-adff-17bb108f193c">

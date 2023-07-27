@@ -24,22 +24,22 @@ namespace K_PBU_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Planwerte3_auf_Quartale_umstellen recording.
+    ///The Planwerte_auf_Quartale_umstellen recording.
     /// </summary>
     [TestModule("7dc26a7d-72c8-451d-860c-4d2d6915d2f6", ModuleType.Recording, 1)]
-    public partial class Planwerte3_auf_Quartale_umstellen : ITestModule
+    public partial class Planwerte_auf_Quartale_umstellen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::K_PBU_001.K_PBU_001Repository repository.
         /// </summary>
         public static global::K_PBU_001.K_PBU_001Repository repo = global::K_PBU_001.K_PBU_001Repository.Instance;
 
-        static Planwerte3_auf_Quartale_umstellen instance = new Planwerte3_auf_Quartale_umstellen();
+        static Planwerte_auf_Quartale_umstellen instance = new Planwerte_auf_Quartale_umstellen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Planwerte3_auf_Quartale_umstellen()
+        public Planwerte_auf_Quartale_umstellen()
         {
             Kostenstelle = "10";
         }
@@ -47,7 +47,7 @@ namespace K_PBU_001.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Planwerte3_auf_Quartale_umstellen Instance
+        public static Planwerte_auf_Quartale_umstellen Instance
         {
             get { return instance; }
         }

@@ -24,33 +24,31 @@ namespace K_PBU_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Kostenstellen_Einschraenkung_von_bis recording.
+    ///The Kostenstellen_Einschraenkung_von_bis_setzen recording.
     /// </summary>
     [TestModule("4734ed7e-3a0d-4877-8588-6b6424afcb68", ModuleType.Recording, 1)]
-    public partial class Kostenstellen_Einschraenkung_von_bis : ITestModule
+    public partial class Kostenstellen_Einschraenkung_von_bis_setzen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::K_PBU_001.K_PBU_001Repository repository.
         /// </summary>
         public static global::K_PBU_001.K_PBU_001Repository repo = global::K_PBU_001.K_PBU_001Repository.Instance;
 
-        static Kostenstellen_Einschraenkung_von_bis instance = new Kostenstellen_Einschraenkung_von_bis();
+        static Kostenstellen_Einschraenkung_von_bis_setzen instance = new Kostenstellen_Einschraenkung_von_bis_setzen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Kostenstellen_Einschraenkung_von_bis()
+        public Kostenstellen_Einschraenkung_von_bis_setzen()
         {
             Kostenstelle = "10";
-            Konto = "7380";
-            Konto2 = "0100";
-            Konto3 = "0660";
+            Kostenstelle2 = "20";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Kostenstellen_Einschraenkung_von_bis Instance
+        public static Kostenstellen_Einschraenkung_von_bis_setzen Instance
         {
             get { return instance; }
         }
@@ -69,40 +67,16 @@ namespace K_PBU_001.Recordings
             set { _Kostenstelle = value; }
         }
 
-        string _Konto;
+        string _Kostenstelle2;
 
         /// <summary>
-        /// Gets or sets the value of variable Konto.
+        /// Gets or sets the value of variable Kostenstelle2.
         /// </summary>
-        [TestVariable("7da3b9e6-336e-48c6-a4f7-9fc29b07f356")]
-        public string Konto
+        [TestVariable("aaddb638-39d3-4dbb-8a60-516b679f8341")]
+        public string Kostenstelle2
         {
-            get { return _Konto; }
-            set { _Konto = value; }
-        }
-
-        string _Konto2;
-
-        /// <summary>
-        /// Gets or sets the value of variable Konto2.
-        /// </summary>
-        [TestVariable("0044af2a-9744-41af-8d67-9b202ec53f22")]
-        public string Konto2
-        {
-            get { return _Konto2; }
-            set { _Konto2 = value; }
-        }
-
-        string _Konto3;
-
-        /// <summary>
-        /// Gets or sets the value of variable Konto3.
-        /// </summary>
-        [TestVariable("2466c087-f000-458c-b9fb-2ffd0720f8f2")]
-        public string Konto3
-        {
-            get { return _Konto3; }
-            set { _Konto3 = value; }
+            get { return _Kostenstelle2; }
+            set { _Kostenstelle2 = value; }
         }
 
 #endregion
@@ -158,41 +132,14 @@ namespace K_PBU_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kostenstelle' with focus on 'DlgLaden.TextBis'.", repo.DlgLaden.TextBisInfo, new RecordItemIndex(9));
-            repo.DlgLaden.TextBis.PressKeys(Kostenstelle);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kostenstelle2' with focus on 'DlgLaden.TextBis'.", repo.DlgLaden.TextBisInfo, new RecordItemIndex(9));
+            repo.DlgLaden.TextBis.PressKeys(Kostenstelle2);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgLaden.PbOk' at Center.", repo.DlgLaden.PbOkInfo, new RecordItemIndex(11));
             repo.DlgLaden.PbOk.Click();
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'TblK.FlexGrid_Tabelle.Row_1.ColPosRow1'.", repo.TblK.FlexGrid_Tabelle.Row_1.ColPosRow1Info, new RecordItemIndex(12));
-            Validate.AttributeEqual(repo.TblK.FlexGrid_Tabelle.Row_1.ColPosRow1Info, "Text", "1");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Konto) on item 'TblK.FlexGrid_Tabelle.Row_1.ColKtoNrRow1'.", repo.TblK.FlexGrid_Tabelle.Row_1.ColKtoNrRow1Info, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.TblK.FlexGrid_Tabelle.Row_1.ColKtoNrRow1Info, "Text", Konto);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'TblK.FlexGrid_Tabelle.Row_1.ColKs1NrRow1'.", repo.TblK.FlexGrid_Tabelle.Row_1.ColKs1NrRow1Info, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.TblK.FlexGrid_Tabelle.Row_1.ColKs1NrRow1Info, "Text", "10");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2') on item 'TblK.FlexGrid_Tabelle.Row_2.ColPosRow2'.", repo.TblK.FlexGrid_Tabelle.Row_2.ColPosRow2Info, new RecordItemIndex(15));
-            Validate.AttributeEqual(repo.TblK.FlexGrid_Tabelle.Row_2.ColPosRow2Info, "Text", "2");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Konto2) on item 'TblK.FlexGrid_Tabelle.Row_2.ColKtoNrRow2'.", repo.TblK.FlexGrid_Tabelle.Row_2.ColKtoNrRow2Info, new RecordItemIndex(16));
-            Validate.AttributeEqual(repo.TblK.FlexGrid_Tabelle.Row_2.ColKtoNrRow2Info, "Text", Konto2);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'TblK.FlexGrid_Tabelle.Row_2.ColKs1NrRow2'.", repo.TblK.FlexGrid_Tabelle.Row_2.ColKs1NrRow2Info, new RecordItemIndex(17));
-            Validate.AttributeEqual(repo.TblK.FlexGrid_Tabelle.Row_2.ColKs1NrRow2Info, "Text", "10");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'TblK.FlexGrid_Tabelle.Row_3.ColPosRow3'.", repo.TblK.FlexGrid_Tabelle.Row_3.ColPosRow3Info, new RecordItemIndex(18));
-            Validate.AttributeEqual(repo.TblK.FlexGrid_Tabelle.Row_3.ColPosRow3Info, "Text", "3");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Konto3) on item 'TblK.FlexGrid_Tabelle.Row_3.ColKtoNrRow3'.", repo.TblK.FlexGrid_Tabelle.Row_3.ColKtoNrRow3Info, new RecordItemIndex(19));
-            Validate.AttributeEqual(repo.TblK.FlexGrid_Tabelle.Row_3.ColKtoNrRow3Info, "Text", Konto3);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'TblK.FlexGrid_Tabelle.Row_3.ColKs1NrRow3'.", repo.TblK.FlexGrid_Tabelle.Row_3.ColKs1NrRow3Info, new RecordItemIndex(20));
-            Validate.AttributeEqual(repo.TblK.FlexGrid_Tabelle.Row_3.ColKs1NrRow3Info, "Text", "10");
             
         }
 

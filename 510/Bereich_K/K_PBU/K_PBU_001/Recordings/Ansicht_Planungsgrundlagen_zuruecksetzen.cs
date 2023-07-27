@@ -24,29 +24,29 @@ namespace K_PBU_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Einstellungen_zuruecksetzen recording.
+    ///The Ansicht_Planungsgrundlagen_zuruecksetzen recording.
     /// </summary>
-    [TestModule("99ad8041-e987-436e-b8a7-083fb4061cea", ModuleType.Recording, 1)]
-    public partial class Einstellungen_zuruecksetzen : ITestModule
+    [TestModule("a9cb8dcc-38fc-4082-957d-f1cec6b9acac", ModuleType.Recording, 1)]
+    public partial class Ansicht_Planungsgrundlagen_zuruecksetzen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::K_PBU_001.K_PBU_001Repository repository.
         /// </summary>
         public static global::K_PBU_001.K_PBU_001Repository repo = global::K_PBU_001.K_PBU_001Repository.Instance;
 
-        static Einstellungen_zuruecksetzen instance = new Einstellungen_zuruecksetzen();
+        static Ansicht_Planungsgrundlagen_zuruecksetzen instance = new Ansicht_Planungsgrundlagen_zuruecksetzen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Einstellungen_zuruecksetzen()
+        public Ansicht_Planungsgrundlagen_zuruecksetzen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Einstellungen_zuruecksetzen Instance
+        public static Ansicht_Planungsgrundlagen_zuruecksetzen Instance
         {
             get { return instance; }
         }
@@ -79,29 +79,19 @@ namespace K_PBU_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbCommonNeu' at Center.", repo.TblK.PbCommonNeuInfo, new RecordItemIndex(0));
-            repo.TblK.PbCommonNeu.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbAnsichtAnsicht' at Center.", repo.TblK.PbAnsichtAnsichtInfo, new RecordItemIndex(0));
+            repo.TblK.PbAnsichtAnsicht.Click();
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'TblK.CbBereich1'.", repo.TblK.CbBereich1Info, new RecordItemIndex(1));
-            repo.TblK.CbBereich1.Element.SetAttributeValue("Checked", "False");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'TblK.CbBereich1'.", repo.TblK.CbBereich1Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblK.CbBereich1Info, "Checked", "False");
-            
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'TblK.CbPos'.", repo.TblK.CbPosInfo, new RecordItemIndex(3));
-            repo.TblK.CbPos.Element.SetAttributeValue("Checked", "False");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'TblK.CbPos'.", repo.TblK.CbPosInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.TblK.CbPosInfo, "Checked", "False");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.RbMonat' at Center.", repo.TblK.RbMonatInfo, new RecordItemIndex(5));
-            repo.TblK.RbMonat.Click();
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'TblK.RbMonat'.", repo.TblK.RbMonatInfo, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.TblK.RbMonatInfo, "Checked", "True");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KPBU.Planungsgrundlagen' at Center.", repo.KPBU.PlanungsgrundlagenInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KPBU.Planungsgrundlagen' at Center.", repo.KPBU.PlanungsgrundlagenInfo, new RecordItemIndex(1));
             repo.KPBU.Planungsgrundlagen.Click();
+            
+            // search timeout reduziert
+            Report.Log(ReportLevel.Info, "Validation", "search timeout reduziert\r\nValidating AttributeEqual (Visible='False') on item 'TblK.FlexGrid_Tabelle.Row_1_Planungsgrundlagen.ColKsHerkRow1'.", repo.TblK.FlexGrid_Tabelle.Row_1_Planungsgrundlagen.ColKsHerkRow1Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblK.FlexGrid_Tabelle.Row_1_Planungsgrundlagen.ColKsHerkRow1Info, "Visible", "False");
+            
+            // search timeout reduziert
+            Report.Log(ReportLevel.Info, "Validation", "search timeout reduziert\r\nValidating AttributeEqual (Visible='False') on item 'TblK.FlexGrid_Tabelle.Row_1_Planungsgrundlagen.ColJahrmengeRow1'.", repo.TblK.FlexGrid_Tabelle.Row_1_Planungsgrundlagen.ColJahrmengeRow1Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.TblK.FlexGrid_Tabelle.Row_1_Planungsgrundlagen.ColJahrmengeRow1Info, "Visible", "False");
             
         }
 

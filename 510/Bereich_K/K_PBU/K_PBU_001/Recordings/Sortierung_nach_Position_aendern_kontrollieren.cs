@@ -24,22 +24,22 @@ namespace K_PBU_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Sortierung_nach_Position_kontrollieren recording.
+    ///The Sortierung_nach_Position_aendern_kontrollieren recording.
     /// </summary>
     [TestModule("b143f678-0e38-47cd-917b-240c0a52f35c", ModuleType.Recording, 1)]
-    public partial class Sortierung_nach_Position_kontrollieren : ITestModule
+    public partial class Sortierung_nach_Position_aendern_kontrollieren : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::K_PBU_001.K_PBU_001Repository repository.
         /// </summary>
         public static global::K_PBU_001.K_PBU_001Repository repo = global::K_PBU_001.K_PBU_001Repository.Instance;
 
-        static Sortierung_nach_Position_kontrollieren instance = new Sortierung_nach_Position_kontrollieren();
+        static Sortierung_nach_Position_aendern_kontrollieren instance = new Sortierung_nach_Position_aendern_kontrollieren();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Sortierung_nach_Position_kontrollieren()
+        public Sortierung_nach_Position_aendern_kontrollieren()
         {
             Konto2 = "0100";
             Konto = "7380";
@@ -49,7 +49,7 @@ namespace K_PBU_001.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Sortierung_nach_Position_kontrollieren Instance
+        public static Sortierung_nach_Position_aendern_kontrollieren Instance
         {
             get { return instance; }
         }

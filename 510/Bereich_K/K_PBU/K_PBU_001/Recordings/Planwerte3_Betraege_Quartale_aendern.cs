@@ -41,8 +41,6 @@ namespace K_PBU_001.Recordings
         /// </summary>
         public Planwerte3_Betraege_Quartale_aendern()
         {
-            Kostenstelle = "10";
-            Kostentraeger3 = "300";
         }
 
         /// <summary>
@@ -54,30 +52,6 @@ namespace K_PBU_001.Recordings
         }
 
 #region Variables
-
-        string _Kostenstelle;
-
-        /// <summary>
-        /// Gets or sets the value of variable Kostenstelle.
-        /// </summary>
-        [TestVariable("4c35611c-b712-4c37-bd29-d28096ad3b9c")]
-        public string Kostenstelle
-        {
-            get { return _Kostenstelle; }
-            set { _Kostenstelle = value; }
-        }
-
-        string _Kostentraeger3;
-
-        /// <summary>
-        /// Gets or sets the value of variable Kostentraeger3.
-        /// </summary>
-        [TestVariable("91f01e93-0714-48c7-ac4d-de61582858d0")]
-        public string Kostentraeger3
-        {
-            get { return _Kostentraeger3; }
-            set { _Kostentraeger3 = value; }
-        }
 
 #endregion
 

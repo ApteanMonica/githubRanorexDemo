@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="b143f678-0e38-47cd-917b-240c0a52f35c"
+id="a7eb93a5-d012-40c4-8266-7d3f6177fce1"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,78 +19,47 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Sortierung_nach_Position_kontrollieren"
+	classname="Kontrolle_Monatswerte_Sortierung_nach_Kontonr"
 	namespace="K_PBU_001.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="841cd0bc-3c1b-4c0b-a728-765babbdfb1f"
+		id="ab6e29a4-b328-4c6a-892d-ee83f7c1bbd0"
 		name="Konto2">
 			0100
 		</var>
 		<var
-		id="be58cb08-f5f0-4bed-b936-02580ca96e09"
+		id="3b98166b-e569-4135-9ce9-5bbc04ff4c53"
 		name="Konto">
 			7380
 		</var>
 		<var
-		id="6a3bd27f-77f4-46c3-8bd1-6331183c3459"
+		id="94ffa84e-1ebf-4a16-a0d9-be6a27c29215"
 		name="Konto3">
 			0660
 		</var>
+		<var
+		id="ccf048a1-faf5-4aac-8980-1781bc92fa62"
+		name="Kostentraeger2">
+			200
+		</var>
+		<var
+		id="7cf03454-8897-44a1-90b1-92860e04e6a4"
+		name="Kostentraeger3">
+			300
+		</var>
+		<var
+		id="218e82c9-9ae7-42df-99e6-db7ae0701351"
+		name="Kostentraeger">
+			100
+		</var>
+		<var
+		id="91aecdf5-a413-4eef-83cc-7b6297d10a95"
+		name="PVT_Code">
+			PVT_2022
+		</var>
 	</variables>
 	<recorditems>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="b11949a7-5256-42c9-bbd5-730bfa8d6cdb"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="19f1244f-41a9-4946-bebc-be6023ce7206"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblK']/container[@controlname='ToolBar']/checkbox[@controlname='cbPos']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="6ab14168-826e-44b8-bec8-6e71e14031b1">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="19f1244f-41a9-4946-bebc-be6023ce7206"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblK']/container[@controlname='ToolBar']/checkbox[@controlname='cbPos']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Checked
-			</matchname>
-			<matchvalue>
-				True
-			</matchvalue>
-		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -117,6 +86,15 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Zeile 1
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -191,7 +169,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				1
+				2
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -204,7 +182,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Konto">
+				variable="Konto2">
 				</binding>
 			</bindings>
 			<info
@@ -212,6 +190,64 @@ mode="Global">
 			sourcename="RepositoryEditor">
 				<path>
 					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKto_nr Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="35f53a77-363f-42ec-bac5-9a6d83f339c6">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Kostentraeger2">
+				</binding>
+			</bindings>
+			<info
+			id="d9f8f6fc-6666-4351-ae25-0b9f7141dfdd"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKs2_nr Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Kostentrager2
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="fa3a7133-3310-473b-933d-192aa1c9b433">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="PVT_Code">
+				</binding>
+			</bindings>
+			<info
+			id="e38ea5e4-8441-401e-bcff-005349207db1"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colVerteil Row 2']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -245,9 +281,43 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				15.000
+				100.000
 			</matchvalue>
 		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0738d3c8-6bde-49c0-9afb-b826a8c7b070">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6a18556f-b889-4dd8-810a-376f3cd64622"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				15.000	5.000	10.000	20.000	5.000	5.000			10.000	5.000	5.000	20.000
+			</matchvalue>
+		</validationitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Zeile 2
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -322,7 +392,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				2
+				3
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -335,7 +405,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Konto2">
+				variable="Konto3">
 				</binding>
 			</bindings>
 			<info
@@ -352,6 +422,35 @@ mode="Global">
 			</matchname>
 			<matchvalue>
 				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="35f53a77-363f-42ec-bac5-9a6d83f339c6">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Kostentraeger3">
+				</binding>
+			</bindings>
+			<info
+			id="8950188f-9448-4a5b-9d95-6925cc0f5694"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colKs2_nr Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Kostentrager2
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -376,9 +475,43 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				100.000
+				200.000
 			</matchvalue>
 		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="55dacd01-78e5-45e0-969b-8d1005583562">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e10bade5-4aa7-4df6-9be7-ba2ea1baa062"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				16.666	16.667	16.667	16.668	16.666	16.666	16.668	16.666	16.666	16.666	16.667	16.667
+			</matchvalue>
+		</validationitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Zeile 3
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -401,7 +534,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				3
+				1
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -414,7 +547,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Konto3">
+				variable="Konto">
 				</binding>
 			</bindings>
 			<info
@@ -431,6 +564,35 @@ mode="Global">
 			</matchname>
 			<matchvalue>
 				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="35f53a77-363f-42ec-bac5-9a6d83f339c6">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Kostentraeger">
+				</binding>
+			</bindings>
+			<info
+			id="f4b98144-5950-4dc4-be8f-312aa3e14660"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colKs2_nr Row 3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Kostentrager2
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -455,7 +617,116 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				200.000
+				15.000
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="5f14c545-ec5e-4ed8-ac0a-802336bac62d">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5cef2a9a-46e1-4838-95d1-2aaf2ec3ba3c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				1.000	1.000	1.000	1.000	1.000	1.000	1.500	1.500	1.500	1.500	1.500	1.500
+			</matchvalue>
+		</validationitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Summenzeile prüfen
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="18820813-b240-4682-a568-3cc8ffa522a3">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="295f0294-744e-4c30-b3de-84145a445d1c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']/cell[@accessiblename='colPos Row 0']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				SUMME
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="6691aa2c-5249-451b-a7cf-0787a1fe6a00">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ab231c92-31d2-4425-9f57-e1f95502f73c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='col00 Row 0']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				315.000
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="67a844d9-9155-467c-9557-a1db29fe9c8b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="066d4f7c-102d-44c7-bdbe-94ae85b1735e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				32.666	22.667	27.667	37.668	22.666	22.666	18.168	18.166	28.166	23.166	23.167	38.167
 			</matchvalue>
 		</validationitem>
 	</recorditems>
@@ -474,7 +745,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Sortierung_nach_Position_kontrollieren.UserCode.cs
+		Kontrolle_Monatswerte_Sortierung_nach_Kontonr.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

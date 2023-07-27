@@ -41,7 +41,6 @@ namespace K_PBU_001.Recordings
         /// </summary>
         public Planwerte3_Betraege_Quartale_erfassen_Meldungen()
         {
-            Kostenstelle = "10";
             Kostentraeger3 = "300";
         }
 
@@ -54,18 +53,6 @@ namespace K_PBU_001.Recordings
         }
 
 #region Variables
-
-        string _Kostenstelle;
-
-        /// <summary>
-        /// Gets or sets the value of variable Kostenstelle.
-        /// </summary>
-        [TestVariable("bc3bd612-25a1-4eab-b3e8-65285ad1078f")]
-        public string Kostenstelle
-        {
-            get { return _Kostenstelle; }
-            set { _Kostenstelle = value; }
-        }
 
         string _Kostentraeger3;
 

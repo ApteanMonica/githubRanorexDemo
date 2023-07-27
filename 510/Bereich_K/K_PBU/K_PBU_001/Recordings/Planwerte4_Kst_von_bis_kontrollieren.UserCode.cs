@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace K_PBU_001.Recordings
 {
-    public partial class Sortierung_nach_Kontonr_kontrollieren
+    public partial class Planwerte4_Kst_von_bis_kontrollieren
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

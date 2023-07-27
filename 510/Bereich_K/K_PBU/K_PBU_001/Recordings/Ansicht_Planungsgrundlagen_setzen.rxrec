@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="99ad8041-e987-436e-b8a7-083fb4061cea"
+id="8ab36ee0-6651-45a1-bb4e-3792c0d13169"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Einstellungen_zuruecksetzen"
+	classname="Ansicht_Planungsgrundlagen_setzen"
 	namespace="K_PBU_001.Recordings">
 	</codegen>
 	<variables>
@@ -33,17 +33,17 @@ mode="Global">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="82f43202-7ec4-4f38-9f06-8ae1d63f5d8d"
-		sx="28"
-		sy="37"
+		searchpropertyid="839084b8-3fb6-4614-b0ca-ae2fce7914d9"
+		sx="702"
+		sy="55"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="943b4c40-ae56-40d9-a9ef-a08a9f49ef1a"
-			sourcename="RepositoryEditor">
+			id="1a35967f-7865-4d78-a785-65d49da1d158"
+			sourcename="Recorder">
 				<element
 				capabilities="control, nativewindow"
 				dontcache="False"
@@ -52,7 +52,7 @@ mode="Global">
 				hasfocus="False"
 				index="0"
 				prefcap="button"
-				rect="5,25,47,24"
+				rect="679,25,40,72"
 				role="button"
 				snapElem=""
 				valid="True"
@@ -60,11 +60,17 @@ mode="Global">
 					<attribute
 					name="text"
 					type="System.String">
+						Ans&amp;icht
 					</attribute>
 					<attribute
 					name="controlname"
 					type="System.String">
-						pbCommon_Neu
+						pbAnsicht_Ansicht
+					</attribute>
+					<attribute
+					name="controltext"
+					type="System.String">
+						Ans&amp;icht
 					</attribute>
 					<attribute
 					name="controltype"
@@ -89,7 +95,7 @@ mode="Global">
 					<attribute
 					name="handle"
 					type="System.IntPtr">
-						27603954
+						1188022
 					</attribute>
 					<attribute
 					name="instance"
@@ -99,7 +105,7 @@ mode="Global">
 					<attribute
 					name="processid"
 					type="System.Int32">
-						13844
+						8052
 					</attribute>
 					<attribute
 					name="processname"
@@ -119,6 +125,7 @@ mode="Global">
 					<attribute
 					name="windowtext"
 					type="System.String">
+						Ans&amp;icht
 					</attribute>
 					<dynamicattribute
 					description="No description available."
@@ -3925,157 +3932,130 @@ mode="Global">
 					</dynamicaction>
 				</element>
 				<path>
-					/form[@controlname='tblK']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup01']/button[@controlname='pbCommon_Neu']
+					/form[@controlname='tblK']/container[@controlname='RibbonBar']/container[@controlname='AnsichtGroup']/button[@controlname='pbAnsicht_Ansicht']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
+			<helperscreenshot
+			guid="97455e8e-6d5a-4150-aa7e-250e2dcb87cf">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAE+AT4DASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDmqKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooA7f8AsDS/+fX/AMiN/jR/YGl/8+v/AJEb/GtKigDN/sDS/wDn
+1/8AIjf40f2Bpf8Az6/+RG/xrSooAzf7A0v/AJ9f/Ijf40f2Bpf/AD6/+RG/xrSooAzf7A0v/n1/
+8iN/jR/YGl/8+v8A5Eb/ABrSooAzf7A0v/n1/wDIjf40f2Bpf/Pr/wCRG/xrSooAzf7A0v8A59f/
+ACI3+NH9gaX/AM+v/kRv8a0qKAM3+wNL/wCfX/yI3+NH9gaX/wA+v/kRv8a0qKAM3+wNL/59f/Ij
+f40f2Bpf/Pr/AORG/wAa0qKAM3+wNL/59f8AyI3+NH9gaX/z6/8AkRv8a0qKAM3+wNL/AOfX/wAi
+N/jR/YGl/wDPr/5Eb/GtKigDN/sDS/8An1/8iN/jR/YGl/8APr/5Eb/GtKigDN/sDS/+fX/yI3+N
+H9gaX/z6/wDkRv8AGtKigDN/sDS/+fX/AMiN/jR/YGl/8+v/AJEb/GtKigDN/sDS/wDn1/8AIjf4
+0f2Bpf8Az6/+RG/xrSooAzf7A0v/AJ9f/Ijf40f2Bpf/AD6/+RG/xrSooAzf7A0v/n1/8iN/jR/Y
+Gl/8+v8A5Eb/ABrSooAzf7A0v/n1/wDIjf40f2Bpf/Pr/wCRG/xrSooAzf7A0v8A59f/ACI3+NH9
+gaX/AM+v/kRv8a0qKAM3+wNL/wCfX/yI3+NH9gaX/wA+v/kRv8a0qKAM3+wNL/59f/Ijf40f2Bpf
+/Pr/AORG/wAa0qKACimZPrRk+tAD6KZk+tGT60APopmT60ZPrQA+imZPrRk+tAD6Kj3H1NLk+tAD
+6KZk+tGT60APopmT60ZPrQA+imZPrRk+tAD6KjLEdzXP2NlHcwl3ZwQ2OCPapbadka06cZRcpO1j
+pKKw/wCyoP78n5j/AAo/sqD+/J+Y/wAKLy7FclL+b8P+CblFYf8AZUH9+T8x/hR/ZUH9+T8x/hRe
+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
+35j/ABoy/wDzyb8x/jU1FAEOX/55N+Y/xoy//PJvzH+NTUUAQ5f/AJ5N+Y/xoy//ADyb8x/jU1FA
+EPz/APPJvzH+NYtm1zaxFDYzPls5wR/SugoqWrmsKiimmr3Mb7Xcf9A6f9f/AImj7Xcf9A6f9f8A
+4mtmiiz7le0p/wAn4sxvtdx/0Dp/1/8AiaPtdx/0Dp/1/wDia2aKLPuHtKf8n4swZDcXNzbE2cyL
+G+TkE9x7D0rYy/8Azyb8x/jU1FCVialRSSSVrEOX/wCeTfmP8aMv/wA8m/Mf41NRVGRDl/8Ank35
+j/GjL/8APJvzH+NTUUAQ5f8A55N+Y/xoy/8Azyb8x/jU1FAEOX/55N+Y/wAaMv8A88m/Mf41NRQB
+Dl/+eTfmP8aPn/55N+Y/xqaigCHL/wDPJvzH+NGX/wCeTfmP8amooAhy/wDzyb8x/jRl/wDnk35j
+/GpqKAIcv/zyb8x/jRl/+eTfmP8AGpqKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoqNJcmbfgLG2M+2Af60z7XFx82B33
+AqQME55HtQBPRVb7dF5m35sBSzEow24x1GPepJLiKNtrsd3HAUk859PoaAJaKgN3AFDFjgjPCE4H
+vxx+NKbuBWILnIOPunnnHHrzQBNRUK3cLAkMeBnlSO+P59qQ3cIx8zZOfl2Nnj2xnvQBPRUJuodw
+G4nOOQpI56c9qDdwAElyAO5U89uPX8KAJqKZFKkqkoTwcEEEEH6Gn0AFFFFABRRRQAUUUUAFFFFA
+BRRRQAUVALgKZN4bCvtG1C3YHt9aYt7HufcSQGG0ojNxgHt9aALVFFFABRRRQAUUUUAFFFFABRRR
+QAUUUUAFFFFABRRRQBWe2djKvmL5cp+YbDnpjrn29KYtgFHWNT/sRBc8Efj1q5RQBTWxIBBlGGVl
+IC4ABx0546U9bZ/PWWSVWYY+6mOgI9ferNFAFCa2mUMkOW8wEMSBjkk+uR196k+xHzi/mAAsGwFx
+nkHnnnp1xVuigCpJYiRdrPn73Vc9WDf0p0NoIn3AoOCCEjCjnH+FWaKAKH2aVGSJATFlCzEDHGOn
+Oe3pT49PWPGDGNpGCIwCQCDye/SrlFADI49jSHOd7bvpwB/Sn0UUAFFFFABRRRQAUUUUAFFFFABS
+SLvjZdxXIxkdRS0UAU3smcZeRGYklt0eVPAHTPXipYLbyYtm/dyOcY6AD+lT0UAUv33/AD8v/wB8
+r/hSgTEgfaX5/wBlf8KWnJ99frVWIuyP99/z8v8A98r/AIUfvv8An5f/AL5X/Cq12DJKV3uoWIuN
+rEc9jxUEMrG73yByGcKCJWwDsB+709aLILs0P33/AD8v/wB8r/hR++/5+X/75X/CnUUWFdjf33/P
+y/8A3yv+FH77/n5f/vlf8KdRRYLsb++/5+X/AO+V/wAKP33/AD8v/wB8r/hTqKLBdiETA/8AHy//
+AHyv+FJ++/5+X/75X/CmXudiKCRvZVJBwcVmz3KwSCKV5vLVmUbGO7ORjJzzijQd2av77/n5f/vl
+f8KP33/Py/8A3yv+FOHTrmiiyFdjf33/AD8v/wB8r/hR++/5+X/75X/CnUUWC7G/vv8An5f/AL5X
+/Cj99/z8v/3yv+FOoosF2JibAP2l/wDvlf8ACk/ff8/L/wDfK/4U6RtsBYdsn9KowRZZY2eUh4g5
+/eMDu+ueKLDuy5++/wCfl/8Avlf8KP33/Py//fK/4VFZrthJ3MQzEjc5bA+pqeiyC7G/vv8An5f/
+AL5X/Cj99/z8v/3yv+FOoosK7G/vv+fl/wDvlf8ACj99/wA/L/8AfK/4U6iiwXYgExB/0l+P9lf8
+KT99/wA/L/8AfK/4VIvRvp/WqBLecZd7bvO8vG44xj06e9FkO7Lf77/n5f8A75X/AAo/ff8APy//
+AHyv+FU9OZmaQF3bZhX3NnLjOSPQVeosguxv77/n5f8A75X/AAo/ff8APy//AHyv+FOoosK7G/vv
++fl/++V/wo/ff8/L/wDfK/4U6iiwXYgExIH2l+f9lf8ACk/ff8/L/wDfK/4VIn31+tUrsGSUrvdQ
+sRcbWI57HijQd2Wf33/Py/8A3yv+FH77/n5f/vlf8KzEuz9vRGaQysVP3vk2kdMeuf8A9datFkF2
+N/ff8/L/APfK/wCFH77/AJ+X/wC+V/wp1FFhXZ//2Q==
+			</helperscreenshot>
 		</mouseitem>
-		<setvaluerecorditem
-		attrname="Checked"
-		enabled="True"
-		optional="False"
-		searchpropertyid="1ee7b5eb-01bd-41dd-a12d-3f9b40cb8be8">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="ae3f42bb-56a4-4705-bbba-99cb69f3d078"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblK']/container[@controlname='ToolBar']/checkbox[@controlname='cbBereich1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<AttributeValue>
-				False
-			</AttributeValue>
-		</setvaluerecorditem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="30e29ec8-12c7-4250-86a6-ce9acd8a17d8">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="ae3f42bb-56a4-4705-bbba-99cb69f3d078"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblK']/container[@controlname='ToolBar']/checkbox[@controlname='cbBereich1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Checked
-			</matchname>
-			<matchvalue>
-				False
-			</matchvalue>
-		</validationitem>
-		<setvaluerecorditem
-		attrname="Checked"
-		enabled="True"
-		optional="False"
-		searchpropertyid="0e2ec24d-f09b-4b49-9b1b-2ec55c32ccf7">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="19f1244f-41a9-4946-bebc-be6023ce7206"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblK']/container[@controlname='ToolBar']/checkbox[@controlname='cbPos']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<AttributeValue>
-				False
-			</AttributeValue>
-		</setvaluerecorditem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="30e29ec8-12c7-4250-86a6-ce9acd8a17d8">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="19f1244f-41a9-4946-bebc-be6023ce7206"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblK']/container[@controlname='ToolBar']/checkbox[@controlname='cbPos']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Checked
-			</matchname>
-			<matchvalue>
-				False
-			</matchvalue>
-		</validationitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="c9461c5b-6a57-41be-a715-65672179b546"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="751f88db-5dba-40b6-b679-cf0217f39706"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblK']/container[@controlname='ToolBar']/radiobutton[@controlname='rbMonat']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="28e48355-85ef-4dd1-bf77-b9c6589f1c23">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="751f88db-5dba-40b6-b679-cf0217f39706"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblK']/container[@controlname='ToolBar']/radiobutton[@controlname='rbMonat']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Checked
-			</matchname>
-			<matchvalue>
-				True
-			</matchvalue>
-		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4317,6 +4297,699 @@ UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
 RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 			</helperscreenshot>
 		</mouseitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="4c2dac9d-1301-47c3-8a50-f4c4a05ec75c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="604ffce6-2fb3-4620-92f6-77ef01b9c230"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="34"
+				prefcap="cell"
+				rect="187,242,96,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colKs_herk Row 1
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKs_herk Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="58478d47-d2f2-4f8b-8eb0-39010f6c24c5">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="07470941-6b4f-4b94-b9d5-726f976c1b39"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="35"
+				prefcap="cell"
+				rect="283,242,18,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colKz_fixvar Row 1
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKz_fixvar Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="4562e08b-0de6-48aa-bf99-96f12186000b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1dafd616-b1d2-4ae0-be34-ac25a03da5ee"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="37"
+				prefcap="cell"
+				rect="301,242,38,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colAnz Row 1
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAnz Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="66f07bd2-54a7-4e78-8fc6-1e6ae8507d85">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bc45dd1f-59d3-472c-a379-868292b523b7"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="38"
+				prefcap="cell"
+				rect="339,242,57,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colMenge Row 1
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colMenge Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a9d8305a-0c71-4886-88e6-11e89358981c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="17da9efb-e727-4ec7-95a0-9ad6ba9a3953"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="39"
+				prefcap="cell"
+				rect="396,242,37,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colJwrt_cd Row 1
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colJwrt_cd Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="1d0e9a2e-3f0e-455c-bce5-030fae17436f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f9ff262e-c0be-46f2-ace2-ea4ec16fb2fe"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="41"
+				prefcap="cell"
+				rect="481,242,39,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colMeh_cd Row 1
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colMeh_cd Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="219ed85e-4985-47ba-8fff-d33e484f7f65">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="92ea2a17-607c-4c1f-9559-871542a56eb3"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="42"
+				prefcap="cell"
+				rect="520,242,43,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colLeis_faktor Row 1
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLeis_faktor Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="4e606e2e-0834-4cbe-bdde-9da946a8fa9d">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="57f56aaa-cf06-4c17-bf85-b7a152d8f9a2"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="44"
+				prefcap="cell"
+				rect="586,242,72,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colBetrag Row 1
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBetrag Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="dc0f2fb0-c53a-4840-9da3-7a1ed29604b7">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f81fcb5f-71d2-4a53-b9e2-0857c7be03a3"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="45"
+				prefcap="cell"
+				rect="658,242,70,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colJahrmenge Row 1
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colJahrmenge Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="b079714c-2870-4349-b380-dea6daeed062"
@@ -4333,7 +5006,7 @@ RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Einstellungen_zuruecksetzen.UserCode.cs
+		Ansicht_Planungsgrundlagen_setzen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="4734ed7e-3a0d-4877-8588-6b6424afcb68"
+id="7f0fc054-d640-4b15-a10f-1df11d6452c2"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,312 +19,42 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Kostenstellen_Einschraenkung_von_bis"
+	classname="Planwerte4_Kst_von_bis_kontrollieren"
 	namespace="K_PBU_001.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="cf49c119-88f5-46b5-b4f4-e4bc81d509be"
+		id="ed498f2d-da68-4f92-9f72-4edfd8e9465f"
 		name="Kostenstelle">
 			10
 		</var>
 		<var
-		id="7da3b9e6-336e-48c6-a4f7-9fc29b07f356"
+		id="2d83aea0-4003-4e4c-b895-a9f55c100de2"
 		name="Konto">
 			7380
 		</var>
 		<var
-		id="0044af2a-9744-41af-8d67-9b202ec53f22"
+		id="74e2e208-5e7b-4047-879e-335a8a3323a4"
 		name="Konto2">
 			0100
 		</var>
 		<var
-		id="2466c087-f000-458c-b9fb-2ffd0720f8f2"
+		id="95092546-802b-45b9-8be1-5fdd8f609dc5"
 		name="Konto3">
 			0660
 		</var>
+		<var
+		id="ba2246c7-82fb-4380-852d-2a3daadf6df9"
+		name="Kostenstelle2">
+			20
+		</var>
+		<var
+		id="e773175f-92e7-4ea4-ae27-86eef35ff0b3"
+		name="Kostentraeger">
+			100
+		</var>
 	</variables>
 	<recorditems>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="4a129a89-92ba-472b-915d-0a119143cebd"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="943b4c40-ae56-40d9-a9ef-a08a9f49ef1a"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblK']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup01']/button[@controlname='pbCommon_Neu']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="5638d5ad-3d83-4939-adfb-6a8eaf98c47e"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="ae3f42bb-56a4-4705-bbba-99cb69f3d078"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblK']/container[@controlname='ToolBar']/checkbox[@controlname='cbBereich1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="4afd89e3-cfce-4c3e-9915-4b53eca36e74">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="ae3f42bb-56a4-4705-bbba-99cb69f3d078"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblK']/container[@controlname='ToolBar']/checkbox[@controlname='cbBereich1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Checked
-			</matchname>
-			<matchvalue>
-				False
-			</matchvalue>
-		</validationitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="69501a04-0af2-4156-82c9-36d045794b45"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="00c2d482-2a0d-4aff-bb25-649ce738ac95"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblK']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup01']/button[@controlname='pbCommon_Laden']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="1b1085cb-297b-4dce-b09c-b432b9a0334e"
-		waitaction="Exists"
-		waittimeout="60000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="9f2eed5a-a0cb-4e97-a777-47de0630fca1"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='dlgLaden']/titlebar[@accessiblerole='TitleBar']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
-		<validationitem
-		action="AttributeContains"
-		enabled="True"
-		optional="False"
-		searchpropertyid="21fd8e44-edf0-48e8-bc94-2ae240b5b2b1">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="9f2eed5a-a0cb-4e97-a777-47de0630fca1"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='dlgLaden']/titlebar[@accessiblerole='TitleBar']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				Auswahl Kostenstellen
-			</matchvalue>
-		</validationitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="dfd03c9d-41ac-4e14-a1b7-fcb5d8c68e88"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="df5dff34-9491-4dc8-84ae-e96c36d25c1f"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='dlgLaden']/text[@controlname='dfBekt_nr_v']/text[@accessiblename='|Kostenstellen |von']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
-		<keysequenceitem
-		KeySequence="yourtext"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		searchpropertyid="9f2642da-b01f-4d2a-8272-c17df15ac65c">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="KeySequence"
-				variable="Kostenstelle">
-				</binding>
-			</bindings>
-			<info
-			id="df5dff34-9491-4dc8-84ae-e96c36d25c1f"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='dlgLaden']/text[@controlname='dfBekt_nr_v']/text[@accessiblename='|Kostenstellen |von']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</keysequenceitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="afb9d6e4-6d99-4fc7-9258-e29f178fb4dd"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
-		<keysequenceitem
-		KeySequence="20"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		searchpropertyid="3d7cb433-2fd5-49a2-b152-5ab4b6b362a9">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="KeySequence"
-				variable="Kostenstelle">
-				</binding>
-			</bindings>
-			<info
-			id="00952292-c44f-4dbd-bec4-fe731a30ca8a"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='dlgLaden']/text[@controlname='dfBekt_nr_b']/text[@accessiblename='bis']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</keysequenceitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="afb9d6e4-6d99-4fc7-9258-e29f178fb4dd"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="13865b14-3cb2-4206-b301-b27b9b98d888"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="2f68eb16-ac19-4e10-ac8c-5ce5ccf3c8c2"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='dlgLaden']/button[@controlname='pbOk']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -439,6 +169,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Kostenstelle">
+				</binding>
 			</bindings>
 			<info
 			id="575fdddb-0d27-4044-9284-b075df814322"
@@ -570,6 +304,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Kostenstelle">
+				</binding>
 			</bindings>
 			<info
 			id="6326268e-4e25-4a50-8825-385f40f87a7b"
@@ -649,6 +387,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Kostenstelle">
+				</binding>
 			</bindings>
 			<info
 			id="7cbf409d-4167-49e3-bf64-dd64146f6475"
@@ -664,6 +406,143 @@ mode="Global">
 			</matchname>
 			<matchvalue>
 				10
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="151c728e-697f-49dd-9f22-748f789d43d9">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bcb57e7d-f667-4ea6-9853-3a8fce2eceee"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colPos Row 4']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				4
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="4732d668-a4b3-4248-9931-3e19b13dfd1f">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Konto">
+				</binding>
+			</bindings>
+			<info
+			id="1f162b2b-2534-40e2-9f67-bc2de425d80f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colKto_nr Row 4']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="59b7eaaf-36fb-47c7-91cc-760f81208e25">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Kostenstelle2">
+				</binding>
+			</bindings>
+			<info
+			id="f34f65ff-2ce6-4a5e-98e7-0b92cc7b5cc8"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colKs1_nr Row 4']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				20
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a83ef211-ab40-410f-ba40-0027f629aa9b">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Kostentraeger">
+				</binding>
+			</bindings>
+			<info
+			id="12658546-c4f4-4ad4-84f6-770825f4dbc3"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colKs2_nr Row 4']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="76e43ccc-445d-4e72-bd0f-c9b901922c7f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="62f99372-c7de-4b3b-9e45-7617489d87f1"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='col00 Row 4']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				12.000
 			</matchvalue>
 		</validationitem>
 	</recorditems>
@@ -682,7 +561,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Kostenstellen_Einschraenkung_von_bis.UserCode.cs
+		Planwerte4_Kst_von_bis_kontrollieren.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

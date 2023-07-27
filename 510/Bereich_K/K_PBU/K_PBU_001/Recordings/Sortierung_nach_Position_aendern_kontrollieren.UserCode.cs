@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace K_PBU_001.Recordings
 {
-    public partial class Sortierung_nach_Position_kontrollieren
+    public partial class Sortierung_nach_Position_aendern_kontrollieren
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
