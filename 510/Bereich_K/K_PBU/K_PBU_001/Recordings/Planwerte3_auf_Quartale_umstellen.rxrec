@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="99ad8041-e987-436e-b8a7-083fb4061cea"
+id="7dc26a7d-72c8-451d-860c-4d2d6915d2f6"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,10 +19,15 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Einstellungen_zuruecksetzen"
+	classname="Planwerte3_auf_Quartale_umstellen"
 	namespace="K_PBU_001.Recordings">
 	</codegen>
 	<variables>
+		<var
+		id="49482805-8752-4a2b-ba91-70b59b462128"
+		name="Kostenstelle">
+			10
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -33,9 +38,9 @@ mode="Global">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="82f43202-7ec4-4f38-9f06-8ae1d63f5d8d"
-		sx="28"
-		sy="37"
+		searchpropertyid="c3799ec8-866f-4992-88b6-ba63335b6858"
+		sx="0"
+		sy="0"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
@@ -44,37 +49,74 @@ mode="Global">
 			<info
 			id="943b4c40-ae56-40d9-a9ef-a08a9f49ef1a"
 			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup01']/button[@controlname='pbCommon_Neu']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="58ce8e1c-af3b-4ae6-91e9-39b0c20aec1b"
+		sx="262"
+		sy="260"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="585c2a7b-146c-46a6-9eb4-8f5271ebd636"
+			sourcename="RepositoryEditor">
 				<element
 				capabilities="control, nativewindow"
 				dontcache="False"
 				enabled="True"
 				flavor="winforms"
 				hasfocus="False"
-				index="0"
-				prefcap="button"
-				rect="5,25,47,24"
-				role="button"
+				index="53"
+				prefcap="radiobutton"
+				rect="226,250,72,21"
+				role="radiobutton"
 				snapElem=""
 				valid="True"
 				visible="True">
 					<attribute
+					name="checked"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
 					name="text"
 					type="System.String">
+						&amp;Quartale
 					</attribute>
 					<attribute
 					name="controlname"
 					type="System.String">
-						pbCommon_Neu
+						rbQuartal
+					</attribute>
+					<attribute
+					name="controltext"
+					type="System.String">
+						&amp;Quartale
 					</attribute>
 					<attribute
 					name="controltype"
 					type="System.String">
-						rssoft.fwg.basis.pbStandard
+						rssoft.fwg.basis.RSRadioButton
 					</attribute>
 					<attribute
 					name="controltypename"
 					type="System.String">
-						pbStandard
+						RSRadioButton
 					</attribute>
 					<attribute
 					name="apphung"
@@ -89,17 +131,17 @@ mode="Global">
 					<attribute
 					name="handle"
 					type="System.IntPtr">
-						27603954
+						9511490
 					</attribute>
 					<attribute
 					name="instance"
 					type="System.Int32">
-						0
+						4
 					</attribute>
 					<attribute
 					name="processid"
 					type="System.Int32">
-						13844
+						8496
 					</attribute>
 					<attribute
 					name="processname"
@@ -114,18 +156,13 @@ mode="Global">
 					<attribute
 					name="windowstyle"
 					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
-						Tiled, MaximizeBox, ClipChildren, ClipSiblings, Visible, ChildWindow
+						Tiled, ClipChildren, ClipSiblings, Visible, ChildWindow
 					</attribute>
 					<attribute
 					name="windowtext"
 					type="System.String">
+						&amp;Quartale
 					</attribute>
-					<dynamicattribute
-					description="No description available."
-					name="AcceleratorKey"
-					readonly="False"
-					type="System.Windows.Forms.Keys, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
 					name="AccessibleDefaultActionDescription"
@@ -158,33 +195,9 @@ mode="Global">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="AlwaysDropDown"
+					name="AllowHtml"
 					readonly="False"
 					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="AlwaysDropDown_K"
-					readonly="False"
-					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="AlwaysDropDown_M"
-					readonly="False"
-					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="AlwaysDropDown_P"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="AlwaysDropDown_Z"
-					readonly="False"
-					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -206,6 +219,18 @@ mode="Global">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
+					name="Appearance"
+					readonly="False"
+					type="System.Windows.Forms.Appearance, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="AutoCheck"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
 					name="AutoEllipsis"
 					readonly="False"
 					type="System.Boolean">
@@ -221,12 +246,6 @@ mode="Global">
 					name="AutoSize"
 					readonly="False"
 					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="AutoSizeMode"
-					readonly="False"
-					type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -295,11 +314,6 @@ mode="Global">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="ButtonArea"
-					type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="CanFocus"
 					type="System.Boolean">
 					</dynamicattribute>
@@ -322,33 +336,9 @@ mode="Global">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="CheckOnClick"
+					name="CheckAlign"
 					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="CheckOnClick_K"
-					readonly="False"
-					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="CheckOnClick_M"
-					readonly="False"
-					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="CheckOnClick_P"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="CheckOnClick_Z"
-					readonly="False"
-					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					type="System.Drawing.ContentAlignment, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -360,36 +350,6 @@ mode="Global">
 					name="ClientSize"
 					readonly="False"
 					type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="CommandName"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="CommandName_K"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="CommandName_M"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="CommandName_P"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="CommandName_Z"
-					readonly="False"
-					type="System.String">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -416,12 +376,6 @@ mode="Global">
 					description="No description available."
 					name="DeviceDpi"
 					type="System.Int32">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="DialogResult"
-					readonly="False"
-					type="System.Windows.Forms.DialogResult, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -490,9 +444,18 @@ mode="Global">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="FensterName"
-					readonly="False"
-					type="System.String">
+					name="ExecutedQueries_K"
+					type="rssoft.fw.designer.FMListProperty`1[[rssoft.fwg.basis.FMQuery, Basis, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null]], rssoft.fw.designer, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ExecutedQueries_M"
+					type="rssoft.fw.designer.FMListProperty`1[[rssoft.fwg.basis.FMQuery, Basis, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null]], rssoft.fw.designer, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ExecutedQueries_Z"
+					type="rssoft.fw.designer.FMListProperty`1[[rssoft.fwg.basis.FMQuery, Basis, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null]], rssoft.fw.designer, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -549,6 +512,12 @@ mode="Global">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
+					name="GUIAnpassbarOptionen"
+					readonly="False"
+					type="rssoft.fwg.basis.EnGUIAnpassbarOptionen, rssoft.fw.designer, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
 					name="HasChildren"
 					type="System.Boolean">
 					</dynamicattribute>
@@ -584,24 +553,6 @@ mode="Global">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="ImageName"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="ImageNameIRM"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="ImageNameIRMHighlighted"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="ImeMode"
 					readonly="False"
 					type="System.Windows.Forms.ImeMode, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -619,14 +570,14 @@ mode="Global">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="IsChecked"
-					readonly="False"
+					name="IsDisposed"
 					type="System.Boolean">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="IsDisposed"
-					type="System.Boolean">
+					name="IsGUIAnpassbar"
+					readonly="False"
+					type="rssoft.fwg.basis.EnIsGUIAnpassbar, rssoft.fw.designer, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -635,18 +586,7 @@ mode="Global">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="IsHighlighted"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="IsMirrored"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="IsSplitButton"
 					type="System.Boolean">
 					</dynamicattribute>
 					<dynamicattribute
@@ -684,11 +624,6 @@ mode="Global">
 					name="MaximumSize"
 					readonly="False"
 					type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="MenuItemOfButtons"
-					type="System.String">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -762,17 +697,6 @@ mode="Global">
 					name="Size_P"
 					readonly="False"
 					type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="SplitArea"
-					type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="SplitWidth"
-					readonly="False"
-					type="System.Int32">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -884,21 +808,9 @@ mode="Global">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="TextWithImage"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="Top"
 					readonly="False"
 					type="System.Int32">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="TransparentColor"
-					readonly="False"
-					type="System.Drawing.Color, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -963,162 +875,10 @@ mode="Global">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="VisibleWhenMenuItem"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="VisibleWhenMenuItem_K"
-					readonly="False"
-					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="VisibleWhenMenuItem_M"
-					readonly="False"
-					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="VisibleWhenMenuItem_P"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="VisibleWhenMenuItem_Z"
-					readonly="False"
-					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="Width"
 					readonly="False"
 					type="System.Int32">
 					</dynamicattribute>
-					<dynamicaction
-					description="No description available."
-					displayName="__cfBringWindowToTop">
-						<argument
-						description="No description available."
-						displayName="fphFenster"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="__cfInitBenutzer">
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="__cfInitBerechtigungslevel">
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="__cfLesenBerechtigung">
-						<argument
-						description="No description available."
-						displayName="psBtgd_prog"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="psBtgd_funktion"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="__cfLogHinzufügen">
-						<argument
-						description="No description available."
-						displayName="psLog_feld"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="psLog_alt"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="psLog_neu"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="psLog_text"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="pbLog_key"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="__cfLogNeueZeile">
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="__cfLogSchreiben">
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="__cfSetWindowText">
-						<argument
-						description="No description available."
-						displayName="fphFenster"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpsText"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
 					<dynamicaction
 					description="No description available."
 					displayName="BringToFront">
@@ -1129,7 +889,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -1138,1587 +898,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfAnzeigenName">
-						<argument
-						description="No description available."
-						displayName="phItem"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfAufrufMöglich">
-						<argument
-						description="No description available."
-						displayName="psBtgd_prog"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfAusführen">
-						<argument
-						description="No description available."
-						displayName="cpsProgramm"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpsParameter"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpbLoadAndWait"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfBatchmodusDeaktivieren">
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfBerechtigung">
-						<argument
-						description="No description available."
-						displayName="psBtgd_funktion"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfBringWindowToTop">
-						<argument
-						description="No description available."
-						displayName="phFenster"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfCheckFeature">
-						<argument
-						description="No description available."
-						displayName="fpsFeature"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpbFehlermeldung"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfCodieren">
-						<argument
-						description="No description available."
-						displayName="sDecSourceString"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="sDecCodewordDecode"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="sDecSchlüssel"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="sCodeVersion"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfDisable">
-						<argument
-						description="No description available."
-						displayName="chObjekt"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfDisableExt">
-						<argument
-						description="No description available."
-						displayName="chObjekt"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cnFarbe"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfDruckeDatei">
-						<argument
-						description="No description available."
-						displayName="cpsDateiname"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfEnable">
-						<argument
-						description="No description available."
-						displayName="chObjekt"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfEnableExt">
-						<argument
-						description="No description available."
-						displayName="chObjekt"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cnFarbe"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfEnde">
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfFilterTabInto">
-						<argument
-						description="No description available."
-						displayName="psInto"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfFirmenwechsel">
-						<argument
-						description="No description available."
-						displayName="psFirm_nr"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="psFila_nr"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="pbCheckKeybel"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfFrage">
-						<argument
-						description="No description available."
-						displayName="cpsNachricht"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpnID"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfFrageExt">
-						<argument
-						description="No description available."
-						displayName="cpsNachricht"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpnID"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpbDlgKritisch"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfGetButtonType">
-						<argument
-						description="No description available."
-						displayName="phWnd"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfGetFremdSprachTabDef">
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfGetFremdSprachTabDefS">
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfHilfeFensterAllgemein">
-						<argument
-						description="No description available."
-						displayName="fphItem"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fphForm"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfHintPufferLoeschen">
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfHinzufuegenFrom">
-						<argument
-						description="No description available."
-						displayName="psOriginal"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="psZusatz"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfHinzufuegenParameter">
-						<argument
-						description="No description available."
-						displayName="fpsApp_cd"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpsPar_cd"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpnPar_lfdnr"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpsPar_textk"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpsPar_textl"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpnPar_nummer"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfInformation">
-						<argument
-						description="No description available."
-						displayName="cpsText"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpsIcon"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpbOnOff"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfInit">
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfInitDummyVariables">
-						<argument
-						description="No description available."
-						displayName="fpbDefault"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpnInitValue"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpsInitValue"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpdtInitValue"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpbInitValue"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fphInitValueWindowHandle"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpbGlobal"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfIPCRegisterComponent">
-						<argument
-						description="No description available."
-						displayName="fpbRegister"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpnType"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpsName"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpsKomponentenName"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpnStatus"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfLesenBenutzerDaten">
-						<argument
-						description="No description available."
-						displayName="cpsTyp"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpsUsda_cd"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpnUsda_nr"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfLesenBenutzerDatenLong">
-						<argument
-						description="No description available."
-						displayName="fpsTyp"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpsUsda_cd"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfLesenDBDatum">
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfLesenParameter">
-						<argument
-						description="No description available."
-						displayName="cpsApp_cd"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpsPar_cd"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpnPar_lfdnr"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cnbLangText"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpbFehlerMeldung"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfLesenProperty">
-						<argument
-						description="No description available."
-						displayName="cpsProperty"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfLesenPropertyExt">
-						<argument
-						description="No description available."
-						displayName="phWnd"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpsProperty"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfLesenTabInit">
-						<argument
-						description="No description available."
-						displayName="cpsTab_keys"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfListeText">
-						<argument
-						description="No description available."
-						displayName="fpnAnzahl"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfLoeschenBenutzerDaten">
-						<argument
-						description="No description available."
-						displayName="cpsTyp"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpsUsda_cd"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpnUsda_nr"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfLoeschenBenutzerDatenLong">
-						<argument
-						description="No description available."
-						displayName="fpsTyp"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpsUsda_cd"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfMessageBox">
-						<argument
-						description="No description available."
-						displayName="psText"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="psTitle"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="pnFlags"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfMessageBoxExt">
-						<argument
-						description="No description available."
-						displayName="psText"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="psTitle"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="pnFlags"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="psaButtons"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="pbDlgKritisch"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfNachricht">
-						<argument
-						description="No description available."
-						displayName="cpsNachricht"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfNachrichtExt">
-						<argument
-						description="No description available."
-						displayName="cpsNachricht"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpbDlgKritisch"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfProtokollieren">
-						<argument
-						description="No description available."
-						displayName="pbInsert"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="pbTabelle"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfProtokollierenTabelle">
-						<argument
-						description="No description available."
-						displayName="pnZeile"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="psTyp"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfRunden">
-						<argument
-						description="No description available."
-						displayName="pnNumber"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="pnNachKomma"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfRundenBetrag">
-						<argument
-						description="No description available."
-						displayName="pnNumber"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="pnAufBetrag"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfSchreibenBenutzerDaten">
-						<argument
-						description="No description available."
-						displayName="cpsTyp"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpsUsda_cd"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpnUsda_nr"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpsUsda_daten"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfSchreibenBenutzerDatenLong">
-						<argument
-						description="No description available."
-						displayName="fpsTyp"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpsUsda_cd"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpsUsda_daten"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfSchreibenProperty">
-						<argument
-						description="No description available."
-						displayName="cpsProperty"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpsInhalt"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfSchreibenTab">
-						<argument
-						description="No description available."
-						displayName="cpsTab_key"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpsSelect"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpsFrom"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpsWhere"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfSendMsgToChildren">
-						<argument
-						description="No description available."
-						displayName="cphParent"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpnNachricht"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpnWParam"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpnLParam"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpnTyp"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpbAbbrechenBeiFehler"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpbToolbar"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfSendMsgToChildrenExt">
-						<argument
-						description="No description available."
-						displayName="cphParent"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpnNachricht"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpnWParam"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpnLParam"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpnTyp"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpbAbbrechenBeiFehler"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfSetButtonIcon">
-						<argument
-						description="No description available."
-						displayName="bildname"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="resourceDllName"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfSetButtonStyle">
-						<argument
-						description="No description available."
-						displayName="fphButton"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpbToolbarButton"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpbButtonMitIcon"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fsButtonText"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfSetShortCutButton">
-						<argument
-						description="No description available."
-						displayName="fnShortCutButton"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfSetStandardButton">
-						<argument
-						description="No description available."
-						displayName="fnToolbar"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="notSetSize"
-						type="System.Boolean">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfSetWindowLabelText">
-						<argument
-						description="No description available."
-						displayName="phFenster"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="psText"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfSetWindowText">
-						<argument
-						description="No description available."
-						displayName="phFenster"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="psText"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfStartProgramm">
-						<argument
-						description="No description available."
-						displayName="cpsProgramm"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpsParameter"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpnParameter"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfStatusSetText">
-						<argument
-						description="No description available."
-						displayName="phFenster"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="psText"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfStrTrimX">
-						<argument
-						description="No description available."
-						displayName="fpsString"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfTblKillEdit">
-						<argument
-						description="No description available."
-						displayName="fphTabelle"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfTblSetCellBackColor">
-						<argument
-						description="No description available."
-						displayName="phSpalte"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="pnZeile"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="pnFarbe"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfTblSetCellBitmap">
-						<argument
-						description="No description available."
-						displayName="fphSpalte"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpsBitnameName"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fpsDllName"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfTblSetColumnBackColor">
-						<argument
-						description="No description available."
-						displayName="phSpalte"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="pnFarbe"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfTblSetColumnTitle">
-						<argument
-						description="No description available."
-						displayName="phFenster"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="psText"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfTblSetRowBackColor">
-						<argument
-						description="No description available."
-						displayName="phTabelle"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="pnZeile"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="pnFarbe"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfTypEmulieren">
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfUebersetzen">
-						<argument
-						description="No description available."
-						displayName="hTrans"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfUebersetzenFenster">
-						<argument
-						description="No description available."
-						displayName="phFenster"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="pnTyp"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfUebersetzenFensterMenu">
-						<argument
-						description="No description available."
-						displayName="phFenster"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfUebersetzenMenu">
-						<argument
-						description="No description available."
-						displayName="phFenster"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfUebersetzenNachricht">
-						<argument
-						description="No description available."
-						displayName="psText"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfUebersetzenText">
-						<argument
-						description="No description available."
-						displayName="psText"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfWarnung">
-						<argument
-						description="No description available."
-						displayName="cpsNachricht"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfWarnungExt">
-						<argument
-						description="No description available."
-						displayName="cpsNachricht"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cpbDlgKritisch"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfWinHelp">
-						<argument
-						description="No description available."
-						displayName="fhFenster"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fsHilfeDatei"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fsHilfeEinsprung"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="fbContextHilfe"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfÄndernFarbe">
-						<argument
-						description="No description available."
-						displayName="cpnFarbe"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="cphObjekt"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="cfÄnderungAufzeichnen">
-						<argument
-						description="No description available."
-						displayName="hItem"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="psAlterWert"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="psNeuerWert"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -2727,7 +907,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -2736,21 +916,12 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="nType"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="ClearImage">
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -2763,7 +934,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -2772,7 +943,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -2781,7 +952,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -2823,7 +994,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -2832,7 +1003,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -2841,12 +1012,12 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="sWindowName"
-						type="System.Object">
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalWindowHandle, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -2855,22 +1026,22 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="nMsg"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nMywParam"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nMylParam"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -2888,17 +1059,17 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="nFormUnits"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="bVertical"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -2907,7 +1078,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -2916,7 +1087,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -2925,7 +1096,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -2934,40 +1105,12 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="nTypeMask"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="GetImageDescription">
-						<argument
-						description="No description available."
-						displayName="nMaxLen"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="GetImageString">
-						<argument
-						description="No description available."
-						displayName="nFormat"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalWindowHandle, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -2976,7 +1119,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalWindowHandle, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -2985,12 +1128,12 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="nMaxLength"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -2999,7 +1142,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3008,12 +1151,12 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="nTypeMask"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalWindowHandle, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3022,7 +1165,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalWindowHandle, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3045,12 +1188,12 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="sName"
-						type="System.Object">
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3059,12 +1202,12 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="nMaxLen"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3082,12 +1225,12 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="nColorIndex"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3096,7 +1239,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3109,7 +1252,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3118,7 +1261,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3141,7 +1284,16 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="IsChecked">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3155,7 +1307,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3164,7 +1316,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3173,7 +1325,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3182,7 +1334,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3191,12 +1343,12 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="nIDEvent"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3205,12 +1357,12 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="value"
-						type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						type="System.Int32">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						type="System.Int32">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3219,27 +1371,18 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="nXOffset"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nYOffset"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="NotifyDefault">
-						<argument
-						description="No description available."
-						displayName="value"
-						type="System.Boolean">
-						</argument>
 					</dynamicaction>
 					<dynamicaction
 					description="No description available."
@@ -3264,17 +1407,17 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="nNumPixels"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="bVertical"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3311,22 +1454,22 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="nMsg"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nMywParam"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nMylParam"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3418,30 +1561,26 @@ mode="Global">
 					</dynamicaction>
 					<dynamicaction
 					description="No description available."
-					displayName="Select">
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
 					displayName="SendMessage">
 						<argument
 						description="No description available."
 						displayName="nMsg"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nMywParam"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nMylParam"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3450,22 +1589,22 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="nMsg"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nMywParam"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nMylParam"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3506,18 +1645,18 @@ mode="Global">
 					displayName="SetContextMenu">
 						<argument
 						description="No description available."
-						displayName="sMenuName"
-						type="System.Object">
+						displayName="menuType"
+						type="System.Type">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nFlags"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3531,12 +1670,12 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="nType"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3545,26 +1684,17 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="sFile"
-						type="System.Object">
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nType"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="SetDefaultButton">
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3573,7 +1703,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalWindowHandle, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3582,93 +1712,22 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="sName"
-						type="System.Object">
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nSize"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nEnhancement"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="SetImageBytes">
-						<argument
-						description="No description available."
-						displayName="sImageBytes"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="nType"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="SetImageFile">
-						<argument
-						description="No description available."
-						displayName="sFileName"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="SetImageHandle">
-						<argument
-						description="No description available."
-						displayName="nType"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="nHandle"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="SetImageString">
-						<argument
-						description="No description available."
-						displayName="nFormat"
-						type="System.Object">
-						</argument>
-						<argument
-						description="No description available."
-						displayName="sPicture"
-						type="System.Object">
-						</argument>
-						<returns
-						description="No description available."
-						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3677,12 +1736,12 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="sText"
-						type="System.Object">
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3691,17 +1750,17 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="nX"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nY"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3710,12 +1769,12 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="bSet"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3724,22 +1783,22 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="sName"
-						type="System.Object">
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="sValue"
-						type="System.Object">
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nLength"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3748,17 +1807,17 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="nWidth"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nHeight"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3767,12 +1826,12 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="sText"
-						type="System.Object">
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3781,17 +1840,17 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="nIDEvent"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nElapseMilliSec"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3800,17 +1859,17 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="nColorIndex"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nColor"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3823,7 +1882,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3832,7 +1891,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3853,28 +1912,28 @@ mode="Global">
 					displayName="TrackPopupMenu">
 						<argument
 						description="No description available."
-						displayName="sMenuName"
-						type="System.Object">
+						displayName="menuType"
+						type="System.Type">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nFlags"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nX"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nY"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3887,7 +1946,7 @@ mode="Global">
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3896,27 +1955,27 @@ mode="Global">
 						<argument
 						description="No description available."
 						displayName="sFile"
-						type="System.Object">
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nCommand"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="nData"
-						type="System.Object">
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<argument
 						description="No description available."
 						displayName="sData"
-						type="System.Object">
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</argument>
 						<returns
 						description="No description available."
 						displayName="returns"
-						type="System.Object">
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
 						</returns>
 					</dynamicaction>
 					<dynamicaction
@@ -3925,48 +1984,1934 @@ mode="Global">
 					</dynamicaction>
 				</element>
 				<path>
-					/form[@controlname='tblK']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup01']/button[@controlname='pbCommon_Neu']
+					/form[@controlname='tblK']/container[@controlname='ToolBar']/radiobutton[@controlname='rbQuartal']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 		</mouseitem>
-		<setvaluerecorditem
-		attrname="Checked"
-		enabled="True"
-		optional="False"
-		searchpropertyid="1ee7b5eb-01bd-41dd-a12d-3f9b40cb8be8">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="ae3f42bb-56a4-4705-bbba-99cb69f3d078"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblK']/container[@controlname='ToolBar']/checkbox[@controlname='cbBereich1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<AttributeValue>
-				False
-			</AttributeValue>
-		</setvaluerecorditem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="30e29ec8-12c7-4250-86a6-ce9acd8a17d8">
+		searchpropertyid="103ae441-0266-4212-9aff-a3c1c5e4d846">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="ae3f42bb-56a4-4705-bbba-99cb69f3d078"
+			id="585c2a7b-146c-46a6-9eb4-8f5271ebd636"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="control, nativewindow"
+				dontcache="False"
+				enabled="True"
+				flavor="winforms"
+				hasfocus="False"
+				index="53"
+				prefcap="radiobutton"
+				rect="226,250,72,21"
+				role="radiobutton"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="checked"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						&amp;Quartale
+					</attribute>
+					<attribute
+					name="controlname"
+					type="System.String">
+						rbQuartal
+					</attribute>
+					<attribute
+					name="controltext"
+					type="System.String">
+						&amp;Quartale
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						rssoft.fwg.basis.RSRadioButton
+					</attribute>
+					<attribute
+					name="controltypename"
+					type="System.String">
+						RSRadioButton
+					</attribute>
+					<attribute
+					name="apphung"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="class"
+					type="System.String">
+						WindowsForms10.BUTTON.app.0.2804c64_r6_ad1
+					</attribute>
+					<attribute
+					name="handle"
+					type="System.IntPtr">
+						9511490
+					</attribute>
+					<attribute
+					name="instance"
+					type="System.Int32">
+						4
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						8496
+					</attribute>
+					<attribute
+					name="processname"
+					type="System.String">
+						K_PBU
+					</attribute>
+					<attribute
+					name="windowextendedstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowExtendedStyles, Ranorex.Core.WinApi, Culture=neutral">
+						LeftToRightReading
+					</attribute>
+					<attribute
+					name="windowstyle"
+					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
+						Tiled, ClipChildren, ClipSiblings, Visible, ChildWindow
+					</attribute>
+					<attribute
+					name="windowtext"
+					type="System.String">
+						&amp;Quartale
+					</attribute>
+					<dynamicattribute
+					description="No description available."
+					name="AccessibleDefaultActionDescription"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="AccessibleDescription"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="AccessibleName"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="AccessibleRole"
+					readonly="False"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="AllowDrop"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="AllowHtml"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Anchor"
+					readonly="False"
+					type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Anchor_K"
+					readonly="False"
+					type="System.Nullable`1[[System.Windows.Forms.AnchorStyles, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Anchor_P"
+					readonly="False"
+					type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Appearance"
+					readonly="False"
+					type="System.Windows.Forms.Appearance, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="AutoCheck"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="AutoEllipsis"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="AutoScrollOffset"
+					readonly="False"
+					type="System.Drawing.Point, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="AutoSize"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="BackColor"
+					readonly="False"
+					type="System.Drawing.Color, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="BackgroundImage"
+					readonly="False"
+					type="System.Drawing.Image, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="BackgroundImageLayout"
+					readonly="False"
+					type="System.Windows.Forms.ImageLayout, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="BerechtEnabled_K"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="BerechtEnabled_M"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="BerechtEnabled_Z"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="BerechtVisible_K"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="BerechtVisible_M"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="BerechtVisible_Z"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Bottom"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Bounds"
+					readonly="False"
+					type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="CanFocus"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="CanSelect"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Capture"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="CausesValidation"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="CheckAlign"
+					readonly="False"
+					type="System.Drawing.ContentAlignment, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ClientRectangle"
+					type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ClientSize"
+					readonly="False"
+					type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="CompanyName"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ContainsFocus"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Created"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Cursor"
+					readonly="False"
+					type="System.Windows.Forms.Cursor, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="DeviceDpi"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="DisplayRectangle"
+					type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Disposing"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Dock"
+					readonly="False"
+					type="System.Windows.Forms.DockStyle, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Dock_K"
+					readonly="False"
+					type="System.Nullable`1[[System.Windows.Forms.DockStyle, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Dock_P"
+					readonly="False"
+					type="System.Windows.Forms.DockStyle, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Enabled"
+					readonly="False"
+					type="System.Boolean">
+						True
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Enabled_K"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Enabled_M"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Enabled_P"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Enabled_U"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Enabled_Z"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ExecutedQueries_K"
+					type="rssoft.fw.designer.FMListProperty`1[[rssoft.fwg.basis.FMQuery, Basis, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null]], rssoft.fw.designer, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ExecutedQueries_M"
+					type="rssoft.fw.designer.FMListProperty`1[[rssoft.fwg.basis.FMQuery, Basis, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null]], rssoft.fw.designer, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ExecutedQueries_Z"
+					type="rssoft.fw.designer.FMListProperty`1[[rssoft.fwg.basis.FMQuery, Basis, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null]], rssoft.fw.designer, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="FlatStyle"
+					readonly="False"
+					type="System.Windows.Forms.FlatStyle, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Focused"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Font"
+					readonly="False"
+					type="System.Drawing.Font, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Font_K"
+					readonly="False"
+					type="System.Drawing.Font, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Font_M"
+					readonly="False"
+					type="System.Drawing.Font, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Font_P"
+					readonly="False"
+					type="System.Drawing.Font, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Font_U"
+					readonly="False"
+					type="System.Drawing.Font, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Font_Z"
+					readonly="False"
+					type="System.Drawing.Font, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ForeColor"
+					readonly="False"
+					type="System.Drawing.Color, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="GUIAnpassbarOptionen"
+					readonly="False"
+					type="rssoft.fwg.basis.EnGUIAnpassbarOptionen, rssoft.fw.designer, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="HasChildren"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Height"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Image"
+					readonly="False"
+					type="System.Drawing.Image, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ImageAlign"
+					readonly="False"
+					type="System.Drawing.ContentAlignment, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ImageIndex"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ImageKey"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ImeMode"
+					readonly="False"
+					type="System.Windows.Forms.ImeMode, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="InvokeRequired"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="IsAccessible"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="IsDisposed"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="IsGUIAnpassbar"
+					readonly="False"
+					type="rssoft.fwg.basis.EnIsGUIAnpassbar, rssoft.fw.designer, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="IsHandleCreated"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="IsMirrored"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Left"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Location"
+					readonly="False"
+					type="System.Drawing.Point, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Location_K"
+					readonly="False"
+					type="System.Nullable`1[[System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Location_P"
+					readonly="False"
+					type="System.Drawing.Point, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Margin"
+					readonly="False"
+					type="System.Windows.Forms.Padding, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="MaximumSize"
+					readonly="False"
+					type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="MinimumSize"
+					readonly="False"
+					type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Name"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Padding"
+					readonly="False"
+					type="System.Windows.Forms.Padding, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Prevent_Textchange"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ProductName"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="ProductVersion"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="RecreatingHandle"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Right"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="RightToLeft"
+					readonly="False"
+					type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="RS2Version"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Size"
+					readonly="False"
+					type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Size_K"
+					readonly="False"
+					type="System.Nullable`1[[System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Size_P"
+					readonly="False"
+					type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TabIndex"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TabIndex_K"
+					readonly="False"
+					type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TabIndex_M"
+					readonly="False"
+					type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TabIndex_Z"
+					readonly="False"
+					type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TabStop"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TabStop_K"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TabStop_M"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TabStop_P"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TabStop_U"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TabStop_Z"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Tag"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Text_K"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Text_M"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Text_P"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Text_U"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Text_Z"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TextAlign"
+					readonly="False"
+					type="System.Drawing.ContentAlignment, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="TextImageRelation"
+					readonly="False"
+					type="System.Windows.Forms.TextImageRelation, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Top"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="UseCompatibleTextRendering"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="UseMnemonic"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="UseVisualStyleBackColor"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="UseWaitCursor"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Visible"
+					readonly="False"
+					type="System.Boolean">
+						True
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Visible_K"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Visible_M"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Visible_P"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Visible_U"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Visible_Z"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="Width"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicaction
+					description="No description available."
+					displayName="BringToFront">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="BringWindowToTop">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="CenterWindow">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="Clear">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ClearCursor">
+						<argument
+						description="No description available."
+						displayName="nType"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="CreateControl">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="DestroyWindow">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="DisableWindow">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="DisableWindowAndLabel">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="DoDragDrop">
+						<argument
+						description="No description available."
+						displayName="data"
+						type="System.Object">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="allowedEffects"
+						type="System.Windows.Forms.DragDropEffects, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Windows.Forms.DragDropEffects, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="DrawToBitmap">
+						<argument
+						description="No description available."
+						displayName="bitmap"
+						type="System.Drawing.Bitmap, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="targetBounds"
+						type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</argument>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="EnableWindow">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="EnableWindowAndLabel">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="FindChild">
+						<argument
+						description="No description available."
+						displayName="sWindowName"
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalWindowHandle, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="FireWindowActions">
+						<argument
+						description="No description available."
+						displayName="nMsg"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nMywParam"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nMylParam"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="Focus">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Boolean">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="FormUnitsToPixels">
+						<argument
+						description="No description available."
+						displayName="nFormUnits"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="bVertical"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetClassName">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetControlType">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetDataType">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetFirstChild">
+						<argument
+						description="No description available."
+						displayName="nTypeMask"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalWindowHandle, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetLabel">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalWindowHandle, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetLabelText">
+						<argument
+						description="No description available."
+						displayName="nMaxLength"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetName">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetNextChild">
+						<argument
+						description="No description available."
+						displayName="nTypeMask"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalWindowHandle, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetParent">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalWindowHandle, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetPreferredSize">
+						<argument
+						description="No description available."
+						displayName="proposedSize"
+						type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetProperty">
+						<argument
+						description="No description available."
+						displayName="sName"
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetText">
+						<argument
+						description="No description available."
+						displayName="nMaxLen"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetVisibleInternal">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Boolean">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetWindowColor">
+						<argument
+						description="No description available."
+						displayName="nColorIndex"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="GetWindowState">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="Hide">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="HideWindow">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="HideWindowAndLabel">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="Invalidate">
+						<argument
+						description="No description available."
+						displayName="rc"
+						type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="invalidateChildren"
+						type="System.Boolean">
+						</argument>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="InvalidateWindow">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="IsChecked">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="IsDerivedFromClass">
+						<argument
+						description="No description available."
+						displayName="tClass"
+						type="System.Type">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="IsEnabled">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="IsModified">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="IsVisible">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="KillTimer">
+						<argument
+						description="No description available."
+						displayName="nIDEvent"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="LogicalToDeviceUnits">
+						<argument
+						description="No description available."
+						displayName="value"
+						type="System.Int32">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Int32">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="MoveWindow">
+						<argument
+						description="No description available."
+						displayName="nXOffset"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nYOffset"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="OnNachKonfigurationsWechsel">
+						<argument
+						description="No description available."
+						displayName="initial"
+						type="System.Boolean">
+						</argument>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="PerformClick">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="PerformLayout">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="PixelsToFormUnits">
+						<argument
+						description="No description available."
+						displayName="nNumPixels"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="bVertical"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="PointToClient">
+						<argument
+						description="No description available."
+						displayName="p"
+						type="System.Drawing.Point, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Drawing.Point, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="PointToScreen">
+						<argument
+						description="No description available."
+						displayName="p"
+						type="System.Drawing.Point, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Drawing.Point, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="PostMessage">
+						<argument
+						description="No description available."
+						displayName="nMsg"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nMywParam"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nMylParam"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="RectangleToClient">
+						<argument
+						description="No description available."
+						displayName="r"
+						type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="RectangleToScreen">
+						<argument
+						description="No description available."
+						displayName="r"
+						type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="Refresh">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ResetBackColor">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ResetBindings">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ResetCursor">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ResetFont">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ResetForeColor">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ResetImeMode">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ResetRightToLeft">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ResetText">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ResumeLayout">
+						<argument
+						description="No description available."
+						displayName="performLayout"
+						type="System.Boolean">
+						</argument>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="Scale">
+						<argument
+						description="No description available."
+						displayName="dx"
+						type="System.Single">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="dy"
+						type="System.Single">
+						</argument>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SendMessage">
+						<argument
+						description="No description available."
+						displayName="nMsg"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nMywParam"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nMylParam"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SendMessageToChildren">
+						<argument
+						description="No description available."
+						displayName="nMsg"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nMywParam"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nMylParam"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SendToBack">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetBounds">
+						<argument
+						description="No description available."
+						displayName="x"
+						type="System.Int32">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="y"
+						type="System.Int32">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="width"
+						type="System.Int32">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="height"
+						type="System.Int32">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="specified"
+						type="System.Windows.Forms.BoundsSpecified, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						</argument>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetContextMenu">
+						<argument
+						description="No description available."
+						displayName="menuType"
+						type="System.Type">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nFlags"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetCursor">
+						<argument
+						description="No description available."
+						displayName="nResourceId"
+						type="System.Int32">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nType"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetCursorFile">
+						<argument
+						description="No description available."
+						displayName="sFile"
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nType"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetFocus">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalWindowHandle, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetFont">
+						<argument
+						description="No description available."
+						displayName="sName"
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nSize"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nEnhancement"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetLabelText">
+						<argument
+						description="No description available."
+						displayName="sText"
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetLocation">
+						<argument
+						description="No description available."
+						displayName="nX"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nY"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetModified">
+						<argument
+						description="No description available."
+						displayName="bSet"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetProperty">
+						<argument
+						description="No description available."
+						displayName="sName"
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="sValue"
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nLength"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetSize">
+						<argument
+						description="No description available."
+						displayName="nWidth"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nHeight"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetText">
+						<argument
+						description="No description available."
+						displayName="sText"
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetTimer">
+						<argument
+						description="No description available."
+						displayName="nIDEvent"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nElapseMilliSec"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SetWindowColor">
+						<argument
+						description="No description available."
+						displayName="nColorIndex"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nColor"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="Show">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ShowWindow">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ShowWindowAndLabel">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="SuspendLayout">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="ToString">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="System.String">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="TrackPopupMenu">
+						<argument
+						description="No description available."
+						displayName="menuType"
+						type="System.Type">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nFlags"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nX"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nY"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="Update">
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="UpdateWindow">
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="WinHelp">
+						<argument
+						description="No description available."
+						displayName="sFile"
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nCommand"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="nData"
+						type="PPJ.Runtime.SalNumber, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<argument
+						description="No description available."
+						displayName="sData"
+						type="PPJ.Runtime.SalString, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</argument>
+						<returns
+						description="No description available."
+						displayName="returns"
+						type="PPJ.Runtime.SalBoolean, PPJ.Runtime.4, Version=50201.11028.9.0, Culture=neutral, PublicKeyToken=null">
+						</returns>
+					</dynamicaction>
+					<dynamicaction
+					description="No description available."
+					displayName="Yield">
+					</dynamicaction>
+				</element>
 				<path>
-					/form[@controlname='tblK']/container[@controlname='ToolBar']/checkbox[@controlname='cbBereich1']
+					/form[@controlname='tblK']/container[@controlname='ToolBar']/radiobutton[@controlname='rbQuartal']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -3975,45 +3920,23 @@ mode="Global">
 				Checked
 			</matchname>
 			<matchvalue>
-				False
+				True
 			</matchvalue>
 		</validationitem>
-		<setvaluerecorditem
-		attrname="Checked"
-		enabled="True"
-		optional="False"
-		searchpropertyid="0e2ec24d-f09b-4b49-9b1b-2ec55c32ccf7">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="19f1244f-41a9-4946-bebc-be6023ce7206"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblK']/container[@controlname='ToolBar']/checkbox[@controlname='cbPos']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<AttributeValue>
-				False
-			</AttributeValue>
-		</setvaluerecorditem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="30e29ec8-12c7-4250-86a6-ce9acd8a17d8">
+		searchpropertyid="93f8f3f0-74f4-4172-ad01-bf1d6afe628f">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="19f1244f-41a9-4946-bebc-be6023ce7206"
+			id="ae3f42bb-56a4-4705-bbba-99cb69f3d078"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblK']/container[@controlname='ToolBar']/checkbox[@controlname='cbPos']
+					/form[@controlname='tblK']/container[@controlname='ToolBar']/checkbox[@controlname='cbBereich1']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -4022,7 +3945,7 @@ mode="Global">
 				Checked
 			</matchname>
 			<matchvalue>
-				False
+				True
 			</matchvalue>
 		</validationitem>
 		<mouseitem
@@ -4033,7 +3956,7 @@ mode="Global">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="c9461c5b-6a57-41be-a715-65672179b546"
+		searchpropertyid="aff248c8-03c2-4b4c-ba24-4dac4a2a46a6"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -4042,10 +3965,61 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="751f88db-5dba-40b6-b679-cf0217f39706"
+			id="a3ac3ae2-0317-45dd-b381-95dcf67d02f3"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblK']/container[@controlname='ToolBar']/radiobutton[@controlname='rbMonat']
+					/form[@controlname='tblK']/container[@controlname='ToolBar']/text[@controlname='dfKs1_nr']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="b5420e23-2be4-4d6c-9a4c-728665ef36e2">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Kostenstelle">
+				</binding>
+			</bindings>
+			<info
+			id="a3ac3ae2-0317-45dd-b381-95dcf67d02f3"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ToolBar']/text[@controlname='dfKs1_nr']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="5ac7190b-de81-444f-80a2-28b439aa3ee0"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="00c2d482-2a0d-4aff-bb25-649ce738ac95"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup01']/button[@controlname='pbCommon_Laden']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -4055,25 +4029,54 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="28e48355-85ef-4dd1-bf77-b9c6589f1c23">
+		searchpropertyid="f7511146-22e4-4f7b-b12b-242e7ca888bf">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Kostenstelle">
+				</binding>
 			</bindings>
 			<info
-			id="751f88db-5dba-40b6-b679-cf0217f39706"
+			id="a3ac3ae2-0317-45dd-b381-95dcf67d02f3"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblK']/container[@controlname='ToolBar']/radiobutton[@controlname='rbMonat']
+					/form[@controlname='tblK']/container[@controlname='ToolBar']/text[@controlname='dfKs1_nr']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 			<matchname>
-				Checked
+				Text
 			</matchname>
 			<matchvalue>
-				True
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="59aa947f-9fd0-4598-bc10-9dfd844aee9c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1b626e0d-ed6f-4cca-82f5-e92cc7ccbe60"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ToolBar']/text[@controlname='dfKs1_bez']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Fliesen
 			</matchvalue>
 		</validationitem>
 	</recorditems>
@@ -4092,7 +4095,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Einstellungen_zuruecksetzen.UserCode.cs
+		Planwerte3_auf_Quartale_umstellen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

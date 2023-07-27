@@ -79,14 +79,14 @@ namespace K_PBU_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.FlexGrid.Row_1.Col00Row1' at Center.", repo.TblK.FlexGrid.Row_1.Col00Row1Info, new RecordItemIndex(0));
-            repo.TblK.FlexGrid.Row_1.Col00Row1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.FlexGrid_Tabelle.Row_1.Col00Row1' at Center.", repo.TblK.FlexGrid_Tabelle.Row_1.Col00Row1Info, new RecordItemIndex(0));
+            repo.TblK.FlexGrid_Tabelle.Row_1.Col00Row1.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblK.FlexGrid.Row_1.Col00Row1' at Center.", repo.TblK.FlexGrid.Row_1.Col00Row1Info, new RecordItemIndex(1));
-            repo.TblK.FlexGrid.Row_1.Col00Row1.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblK.FlexGrid_Tabelle.Row_1.Col00Row1' at Center.", repo.TblK.FlexGrid_Tabelle.Row_1.Col00Row1Info, new RecordItemIndex(1));
+            repo.TblK.FlexGrid_Tabelle.Row_1.Col00Row1.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '12000' with focus on 'TblK.FlexGrid.Row_1.Col00Row1'.", repo.TblK.FlexGrid.Row_1.Col00Row1Info, new RecordItemIndex(2));
-            repo.TblK.FlexGrid.Row_1.Col00Row1.PressKeys("12000");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '12.000' with focus on 'TblK.FlexGrid_Tabelle.Row_1.Col00Row1'.", repo.TblK.FlexGrid_Tabelle.Row_1.Col00Row1Info, new RecordItemIndex(2));
+            repo.TblK.FlexGrid_Tabelle.Row_1.Col00Row1.PressKeys("12.000");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -94,11 +94,11 @@ namespace K_PBU_001.Recordings
             // Zeile 1 prüfen: gleichmäßige Verteilung
             Report.Log(ReportLevel.Info, "Section", "Zeile 1 prüfen: gleichmäßige Verteilung", new RecordItemIndex(4));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='12.000') on item 'TblK.FlexGrid.Row_1.Col00Row1'.", repo.TblK.FlexGrid.Row_1.Col00Row1Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.TblK.FlexGrid.Row_1.Col00Row1Info, "Text", "12.000");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='12.000') on item 'TblK.FlexGrid_Tabelle.Row_1.Col00Row1'.", repo.TblK.FlexGrid_Tabelle.Row_1.Col00Row1Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.TblK.FlexGrid_Tabelle.Row_1.Col00Row1Info, "Text", "12.000");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000') on item 'TblK.FlexGrid.Row_1.Row1'.", repo.TblK.FlexGrid.Row_1.Row1Info, new RecordItemIndex(6));
-            Validate.AttributeContains(repo.TblK.FlexGrid.Row_1.Row1Info, "Text", "1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000') on item 'TblK.FlexGrid_Tabelle.Row_1.Row1'.", repo.TblK.FlexGrid_Tabelle.Row_1.Row1Info, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.TblK.FlexGrid_Tabelle.Row_1.Row1Info, "Text", "1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.000");
             
             // Summenzeile prüfen
             Report.Log(ReportLevel.Info, "Section", "Summenzeile prüfen", new RecordItemIndex(7));

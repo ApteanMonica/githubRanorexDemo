@@ -24,31 +24,30 @@ namespace K_PBU_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Einschraenkungen recording.
+    ///The Planwerte_auf_Monate_zurueckstellen recording.
     /// </summary>
-    [TestModule("ceae965f-c1d3-4694-9518-34719b71e074", ModuleType.Recording, 1)]
-    public partial class Einschraenkungen : ITestModule
+    [TestModule("ece0a022-c231-4fbf-b30e-8adf6d0d3e0f", ModuleType.Recording, 1)]
+    public partial class Planwerte_auf_Monate_zurueckstellen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::K_PBU_001.K_PBU_001Repository repository.
         /// </summary>
         public static global::K_PBU_001.K_PBU_001Repository repo = global::K_PBU_001.K_PBU_001Repository.Instance;
 
-        static Einschraenkungen instance = new Einschraenkungen();
+        static Planwerte_auf_Monate_zurueckstellen instance = new Planwerte_auf_Monate_zurueckstellen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Einschraenkungen()
+        public Planwerte_auf_Monate_zurueckstellen()
         {
             Kostenstelle = "10";
-            Jahr = "2022";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Einschraenkungen Instance
+        public static Planwerte_auf_Monate_zurueckstellen Instance
         {
             get { return instance; }
         }
@@ -60,23 +59,11 @@ namespace K_PBU_001.Recordings
         /// <summary>
         /// Gets or sets the value of variable Kostenstelle.
         /// </summary>
-        [TestVariable("6a6c920f-3482-4137-94b1-43a25dad9d99")]
+        [TestVariable("22ccff13-c9d2-4294-8b1e-8789430e0d93")]
         public string Kostenstelle
         {
             get { return _Kostenstelle; }
             set { _Kostenstelle = value; }
-        }
-
-        string _Jahr;
-
-        /// <summary>
-        /// Gets or sets the value of variable Jahr.
-        /// </summary>
-        [TestVariable("9418eca6-c319-43a9-b541-ffc2b7105eb2")]
-        public string Jahr
-        {
-            get { return _Jahr; }
-            set { _Jahr = value; }
         }
 
 #endregion
@@ -105,14 +92,14 @@ namespace K_PBU_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'TblK.Plan'.", repo.TblK.PlanInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.TblK.PlanInfo, "Text", "1");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbCommonNeu' at Center.", repo.TblK.PbCommonNeuInfo, new RecordItemIndex(0));
+            repo.TblK.PbCommonNeu.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.CbBereich1' at CenterLeft.", repo.TblK.CbBereich1Info, new RecordItemIndex(1));
-            repo.TblK.CbBereich1.Click(Location.CenterLeft);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'TblK.CbBereich1'.", repo.TblK.CbBereich1Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'TblK.CbBereich1'.", repo.TblK.CbBereich1Info, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.TblK.CbBereich1Info, "Checked", "True");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.DfKs1Nr' at Center.", repo.TblK.DfKs1NrInfo, new RecordItemIndex(2));
+            repo.TblK.DfKs1Nr.Click();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kostenstelle' with focus on 'TblK.DfKs1Nr'.", repo.TblK.DfKs1NrInfo, new RecordItemIndex(3));
             repo.TblK.DfKs1Nr.PressKeys(Kostenstelle);
@@ -120,25 +107,13 @@ namespace K_PBU_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kostenstelle) on item 'TblK.DfKs1Nr'.", repo.TblK.DfKs1NrInfo, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.TblK.DfKs1NrInfo, "Text", Kostenstelle);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.RbMonat' at Center.", repo.TblK.RbMonatInfo, new RecordItemIndex(5));
+            repo.TblK.RbMonat.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Fliesen') on item 'TblK.DfKs1Bez'.", repo.TblK.DfKs1BezInfo, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.TblK.DfKs1BezInfo, "Text", "Fliesen");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'TblK.RbMonat'.", repo.TblK.RbMonatInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.TblK.RbMonatInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblK.Jahr' at Center.", repo.TblK.JahrInfo, new RecordItemIndex(7));
-            repo.TblK.Jahr.DoubleClick();
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(8));
-            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'TblK.Jahr'.", repo.TblK.JahrInfo, new RecordItemIndex(9));
-            repo.TblK.Jahr.PressKeys(Jahr);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbCommonLaden' at Center.", repo.TblK.PbCommonLadenInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbCommonLaden' at Center.", repo.TblK.PbCommonLadenInfo, new RecordItemIndex(7));
             repo.TblK.PbCommonLaden.Click();
             
         }

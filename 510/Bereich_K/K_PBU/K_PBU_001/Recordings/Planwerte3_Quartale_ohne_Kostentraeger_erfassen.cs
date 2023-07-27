@@ -24,59 +24,59 @@ namespace K_PBU_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Planwerte2_erfassen recording.
+    ///The Planwerte3_Quartale_ohne_Kostentraeger_erfassen recording.
     /// </summary>
-    [TestModule("57cf5b28-96e5-4b7a-8657-a6c81b63de29", ModuleType.Recording, 1)]
-    public partial class Planwerte2_erfassen : ITestModule
+    [TestModule("a0c23ebb-8862-47c5-aa08-e0972c3162bf", ModuleType.Recording, 1)]
+    public partial class Planwerte3_Quartale_ohne_Kostentraeger_erfassen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::K_PBU_001.K_PBU_001Repository repository.
         /// </summary>
         public static global::K_PBU_001.K_PBU_001Repository repo = global::K_PBU_001.K_PBU_001Repository.Instance;
 
-        static Planwerte2_erfassen instance = new Planwerte2_erfassen();
+        static Planwerte3_Quartale_ohne_Kostentraeger_erfassen instance = new Planwerte3_Quartale_ohne_Kostentraeger_erfassen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Planwerte2_erfassen()
+        public Planwerte3_Quartale_ohne_Kostentraeger_erfassen()
         {
-            Konto2 = "0100";
-            Kostentraeger2 = "200";
+            Konto3 = "0660";
+            Kostenstelle = "10";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Planwerte2_erfassen Instance
+        public static Planwerte3_Quartale_ohne_Kostentraeger_erfassen Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Konto2;
+        string _Konto3;
 
         /// <summary>
-        /// Gets or sets the value of variable Konto2.
+        /// Gets or sets the value of variable Konto3.
         /// </summary>
-        [TestVariable("f83b68da-1548-4838-a77d-7d86a8e37a2f")]
-        public string Konto2
+        [TestVariable("d5eb23f8-4fda-4c07-945e-08d329d975fe")]
+        public string Konto3
         {
-            get { return _Konto2; }
-            set { _Konto2 = value; }
+            get { return _Konto3; }
+            set { _Konto3 = value; }
         }
 
-        string _Kostentraeger2;
+        string _Kostenstelle;
 
         /// <summary>
-        /// Gets or sets the value of variable Kostentraeger2.
+        /// Gets or sets the value of variable Kostenstelle.
         /// </summary>
-        [TestVariable("9f7c30c4-06ea-4c0a-a3fc-747744c0ad08")]
-        public string Kostentraeger2
+        [TestVariable("182ca6db-a988-44ba-be8d-5ca1d21b9049")]
+        public string Kostenstelle
         {
-            get { return _Kostentraeger2; }
-            set { _Kostentraeger2 = value; }
+            get { return _Kostenstelle; }
+            set { _Kostenstelle = value; }
         }
 
 #endregion
@@ -105,34 +105,31 @@ namespace K_PBU_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'TblK.FlexGrid_Tabelle.Row_1.Row1Column0' at Center.", repo.TblK.FlexGrid_Tabelle.Row_1.Row1Column0Info, new RecordItemIndex(0));
-            repo.TblK.FlexGrid_Tabelle.Row_1.Row1Column0.Click(System.Windows.Forms.MouseButtons.Right);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbCommonEinfuegen' at Center.", repo.TblK.PbCommonEinfuegenInfo, new RecordItemIndex(0));
+            repo.TblK.PbCommonEinfuegen.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KPBU.ZeileEinfuegen' at Center.", repo.KPBU.ZeileEinfuegenInfo, new RecordItemIndex(1));
-            repo.KPBU.ZeileEinfuegen.Click();
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblK.FlexGrid_Tabelle.Row_3.Row3'", repo.TblK.FlexGrid_Tabelle.Row_3.Row3Info, new ActionTimeout(60000), new RecordItemIndex(1));
+            repo.TblK.FlexGrid_Tabelle.Row_3.Row3Info.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblK.FlexGrid_Tabelle.Row_2.Row2'", repo.TblK.FlexGrid_Tabelle.Row_2.Row2Info, new ActionTimeout(60000), new RecordItemIndex(2));
-            repo.TblK.FlexGrid_Tabelle.Row_2.Row2Info.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.FlexGrid_Tabelle.Row_3.ColKtoNrRow3' at Center.", repo.TblK.FlexGrid_Tabelle.Row_3.ColKtoNrRow3Info, new RecordItemIndex(2));
+            repo.TblK.FlexGrid_Tabelle.Row_3.ColKtoNrRow3.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.FlexGrid_Tabelle.Row_2.ColKtoNrRow2' at Center.", repo.TblK.FlexGrid_Tabelle.Row_2.ColKtoNrRow2Info, new RecordItemIndex(3));
-            repo.TblK.FlexGrid_Tabelle.Row_2.ColKtoNrRow2.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Konto3' with focus on 'TblK.FlexGrid_Tabelle.Row_3.ColKtoNrRow3'.", repo.TblK.FlexGrid_Tabelle.Row_3.ColKtoNrRow3Info, new RecordItemIndex(3));
+            repo.TblK.FlexGrid_Tabelle.Row_3.ColKtoNrRow3.PressKeys(Konto3);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Konto2' with focus on 'TblK.FlexGrid_Tabelle.Row_2.ColKtoNrRow2'.", repo.TblK.FlexGrid_Tabelle.Row_2.ColKtoNrRow2Info, new RecordItemIndex(4));
-            repo.TblK.FlexGrid_Tabelle.Row_2.ColKtoNrRow2.PressKeys(Konto2);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kostentraeger2' with focus on 'TblK.FlexGrid_Tabelle.Row_2.ColKs2NrRow2'.", repo.TblK.FlexGrid_Tabelle.Row_2.ColKs2NrRow2Info, new RecordItemIndex(6));
-            repo.TblK.FlexGrid_Tabelle.Row_2.ColKs2NrRow2.PressKeys(Kostentraeger2);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '3' with focus on 'TblK.FlexGrid_Tabelle.Row_3.ColPosRow3'.", repo.TblK.FlexGrid_Tabelle.Row_3.ColPosRow3Info, new RecordItemIndex(6));
+            repo.TblK.FlexGrid_Tabelle.Row_3.ColPosRow3.PressKeys("3");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2' with focus on 'TblK.FlexGrid_Tabelle.Row_2.ColPosRow2'.", repo.TblK.FlexGrid_Tabelle.Row_2.ColPosRow2Info, new RecordItemIndex(8));
-            repo.TblK.FlexGrid_Tabelle.Row_2.ColPosRow2.PressKeys("2");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }

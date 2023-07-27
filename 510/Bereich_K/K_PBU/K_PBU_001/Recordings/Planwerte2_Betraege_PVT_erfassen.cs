@@ -92,43 +92,40 @@ namespace K_PBU_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.FlexGrid.Row_2.ColVerteilRow2' at Center.", repo.TblK.FlexGrid.Row_2.ColVerteilRow2Info, new RecordItemIndex(0));
-            repo.TblK.FlexGrid.Row_2.ColVerteilRow2.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PVT_Code' with focus on 'TblK.FlexGrid_Tabelle.Row_2.ColVerteilRow2'.", repo.TblK.FlexGrid_Tabelle.Row_2.ColVerteilRow2Info, new RecordItemIndex(0));
+            repo.TblK.FlexGrid_Tabelle.Row_2.ColVerteilRow2.PressKeys(PVT_Code);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PVT_Code' with focus on 'TblK.FlexGrid.Row_2.ColVerteilRow2'.", repo.TblK.FlexGrid.Row_2.ColVerteilRow2Info, new RecordItemIndex(1));
-            repo.TblK.FlexGrid.Row_2.ColVerteilRow2.PressKeys(PVT_Code);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(1));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '100.000' with focus on 'TblK.FlexGrid.Row_2.Col00Row2'.", repo.TblK.FlexGrid.Row_2.Col00Row2Info, new RecordItemIndex(3));
-            repo.TblK.FlexGrid.Row_2.Col00Row2.PressKeys("100.000");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '100.000' with focus on 'TblK.FlexGrid_Tabelle.Row_2.Col00Row2'.", repo.TblK.FlexGrid_Tabelle.Row_2.Col00Row2Info, new RecordItemIndex(2));
+            repo.TblK.FlexGrid_Tabelle.Row_2.Col00Row2.PressKeys("100.000");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbCommonSpeichern' at Center.", repo.TblK.PbCommonSpeichernInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbCommonSpeichern' at Center.", repo.TblK.PbCommonSpeichernInfo, new RecordItemIndex(4));
             repo.TblK.PbCommonSpeichern.Click();
             
             // Zeile 1 prüfen: gleichmäßige Verteilung
-            Report.Log(ReportLevel.Info, "Section", "Zeile 1 prüfen: gleichmäßige Verteilung", new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Section", "Zeile 1 prüfen: gleichmäßige Verteilung", new RecordItemIndex(5));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100.000') on item 'TblK.FlexGrid.Row_2.Col00Row2'.", repo.TblK.FlexGrid.Row_2.Col00Row2Info, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.TblK.FlexGrid.Row_2.Col00Row2Info, "Text", "100.000");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100.000') on item 'TblK.FlexGrid_Tabelle.Row_2.Col00Row2'.", repo.TblK.FlexGrid_Tabelle.Row_2.Col00Row2Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.TblK.FlexGrid_Tabelle.Row_2.Col00Row2Info, "Text", "100.000");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'15.000\t5.000\t10.000\t20.000\t5.000\t5.000\t\t\t10.000\t5.000\t5.000\t20.000') on item 'TblK.FlexGrid.Row_2.Row2'.", repo.TblK.FlexGrid.Row_2.Row2Info, new RecordItemIndex(8));
-            Validate.AttributeContains(repo.TblK.FlexGrid.Row_2.Row2Info, "Text", "15.000\t5.000\t10.000\t20.000\t5.000\t5.000\t\t\t10.000\t5.000\t5.000\t20.000");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'15.000\t5.000\t10.000\t20.000\t5.000\t5.000\t\t\t10.000\t5.000\t5.000\t20.000') on item 'TblK.FlexGrid_Tabelle.Row_2.Row2'.", repo.TblK.FlexGrid_Tabelle.Row_2.Row2Info, new RecordItemIndex(7));
+            Validate.AttributeContains(repo.TblK.FlexGrid_Tabelle.Row_2.Row2Info, "Text", "15.000\t5.000\t10.000\t20.000\t5.000\t5.000\t\t\t10.000\t5.000\t5.000\t20.000");
             
             // Summenzeile prüfen
-            Report.Log(ReportLevel.Info, "Section", "Summenzeile prüfen", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Section", "Summenzeile prüfen", new RecordItemIndex(8));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='SUMME') on item 'TblK.Fusszeile_Summe.ColPosRow0'.", repo.TblK.Fusszeile_Summe.ColPosRow0Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='SUMME') on item 'TblK.Fusszeile_Summe.ColPosRow0'.", repo.TblK.Fusszeile_Summe.ColPosRow0Info, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.TblK.Fusszeile_Summe.ColPosRow0Info, "Text", "SUMME");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='115.000') on item 'TblK.Fusszeile_Summe.Col00Row0'.", repo.TblK.Fusszeile_Summe.Col00Row0Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='115.000') on item 'TblK.Fusszeile_Summe.Col00Row0'.", repo.TblK.Fusszeile_Summe.Col00Row0Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.TblK.Fusszeile_Summe.Col00Row0Info, "Text", "115.000");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'16.000\t6.000\t11.000\t21.000\t6.000\t6.000\t1.500\t1.500\t11.500\t6.500\t6.500\t21.500') on item 'TblK.Fusszeile_Summe.Row0'.", repo.TblK.Fusszeile_Summe.Row0Info, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'16.000\t6.000\t11.000\t21.000\t6.000\t6.000\t1.500\t1.500\t11.500\t6.500\t6.500\t21.500') on item 'TblK.Fusszeile_Summe.Row0'.", repo.TblK.Fusszeile_Summe.Row0Info, new RecordItemIndex(11));
             Validate.AttributeContains(repo.TblK.Fusszeile_Summe.Row0Info, "Text", "16.000\t6.000\t11.000\t21.000\t6.000\t6.000\t1.500\t1.500\t11.500\t6.500\t6.500\t21.500");
             
         }
