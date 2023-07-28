@@ -26,7 +26,7 @@ namespace K_VERR_001.Recordings_K_IBUFE
     /// <summary>
     ///The Close_k_ibufe recording.
     /// </summary>
-    [TestModule("cdcfe309-2a77-40f5-a4a1-4ed777727203", ModuleType.Recording, 1)]
+    [TestModule("9934ec9e-446e-4d06-87c9-bb9f498018b5", ModuleType.Recording, 1)]
     public partial class Close_k_ibufe : ITestModule
     {
         /// <summary>
