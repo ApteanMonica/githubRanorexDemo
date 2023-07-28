@@ -2,6 +2,26 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testmodule
+			id="1d1cdf56-6703-493b-b096-c12ef1766389"
+			name="Einschraenkungen_Start_Verrechnungen_rechnen"
+			ref="e2f8e75d-3ab4-4ec1-a3f8-1ed3de546401"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Jahr"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="0c5f89ca-742d-4346-b806-6aa0d956068e"
+					variablename="Jahr">
+					</var>
+					<var
+					dataname="Periode"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="61bdf94e-1a45-4122-a7af-945e18c47ceb"
+					variablename="Periode">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="2cbd019c-ecc5-4101-af36-6659426e9d0f"
 			name="K_IBUFE">
@@ -78,6 +98,12 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testmodule
+			id="b2927888-f898-4b36-972c-6b43f902c1c9"
+			name="Meldungen_Ende_Verrechnungen_rechnen"
+			ref="8d564600-6900-4c22-b6d6-9f12deeb1220"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="b8e78dbb-058f-4872-b131-be7aee015bf1"
 			name="TestCase">
@@ -104,12 +130,12 @@
 					value="2020">
 					</param>
 					<param
-					name="Periode_MM"
-					value="02">
+					name="Periode"
+					value="2">
 					</param>
 					<param
-					name="Periode_M"
-					value="2">
+					name="Periode_MM"
+					value="02">
 					</param>
 				</parameters>
 			</testcase>
@@ -120,16 +146,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
-					variableid="c2686781-9c3d-4d85-ac28-6363a967e810"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm"
 					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
 					variableid="23141506-18d1-4c49-ad82-55f1a31e5922"
 					variablename="Programm">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="c2686781-9c3d-4d85-ac28-6363a967e810"
+					variablename="Startfile">
 					</var>
 				</databinding>
 				<missingdatabinding>
@@ -168,6 +194,14 @@
 							name="StartAUT">
 							</testmodule>
 						</setup>
+						<testmodule
+						id="1d1cdf56-6703-493b-b096-c12ef1766389"
+						name="Einschraenkungen_Start_Verrechnungen_rechnen">
+						</testmodule>
+						<testmodule
+						id="b2927888-f898-4b36-972c-6b43f902c1c9"
+						name="Meldungen_Ende_Verrechnungen_rechnen">
+						</testmodule>
 						<teardown
 						id="45e9800f-50f8-48a6-8beb-d3feecc9622a"
 						name="teardown">
