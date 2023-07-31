@@ -41,6 +41,9 @@ namespace N_ANLA_004.Recordings
         /// </summary>
         public StartAUT_02()
         {
+            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
+            Programm_1 = "N_ANLA";
+            Programm_2 = "N_STAMM Aufrufart ANFI";
         }
 
         /// <summary>
@@ -52,6 +55,42 @@ namespace N_ANLA_004.Recordings
         }
 
 #region Variables
+
+        string _Startfile;
+
+        /// <summary>
+        /// Gets or sets the value of variable Startfile.
+        /// </summary>
+        [TestVariable("f13b14d1-41f3-4174-8fa6-08d13646d63e")]
+        public string Startfile
+        {
+            get { return _Startfile; }
+            set { _Startfile = value; }
+        }
+
+        string _Programm_1;
+
+        /// <summary>
+        /// Gets or sets the value of variable Programm_1.
+        /// </summary>
+        [TestVariable("bbb31ef7-4db2-4621-b960-94e219f2797b")]
+        public string Programm_1
+        {
+            get { return _Programm_1; }
+            set { _Programm_1 = value; }
+        }
+
+        string _Programm_2;
+
+        /// <summary>
+        /// Gets or sets the value of variable Programm_2.
+        /// </summary>
+        [TestVariable("4fb707f9-c999-4c5c-bcf3-86adca103d42")]
+        public string Programm_2
+        {
+            get { return _Programm_2; }
+            set { _Programm_2 = value; }
+        }
 
 #endregion
 
@@ -79,6 +118,15 @@ namespace N_ANLA_004.Recordings
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_2 in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile, Programm_2, "", false);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmAnfi.TitleBar100AVZFirmenstamm'", repo.FrmAnfi.TitleBar100AVZFirmenstammInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FrmAnfi.TitleBar100AVZFirmenstammInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'AVZ - Anlagen') on item 'FrmAnfi.TitleBar100AVZFirmenstamm'.", repo.FrmAnfi.TitleBar100AVZFirmenstammInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.FrmAnfi.TitleBar100AVZFirmenstammInfo, "Text", "AVZ - Anlagen");
+            
         }
 
 #region Image Feature Data

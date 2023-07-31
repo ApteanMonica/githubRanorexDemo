@@ -79,11 +79,23 @@ namespace N_ANLA_004.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es können keine Änderungen im AVZ-Firmenstamm gespeichert werden,  \r\nsolange sich folgende Benutzer noch im Programm 'AVZ-Anlagen' befinden:\r\n\r\n \r\nRS \trs2 \r\n\r\n\r\n\r\nSollen die Benutzer jetzt abgemeldet werden? \r\n\r\n\r\nBeachten Sie bitte, falls die Benutzer tatsächlich noch \r\nim AVZ tätig sind, dass Änderungen, welche hier durchgeführt werden, \r\nerst nach Neustart der Programme (AVZ-Anlagen, AVZ-Auswertungen) wirksam sind. \r\n(Dies gilt insbesonders für jegliche Art von Berechnungen)\r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAnlagen'", repo.DlgMessageBox.AVZAnlagenInfo, new ActionTimeout(120000), new RecordItemIndex(0));
+            repo.DlgMessageBox.AVZAnlagenInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es können keine Änderungen im AVZ-Firmenstamm gespeichert werden,  \r\nsolange sich folgende Benutzer noch im Programm 'AVZ-Anlagen' befinden:\r\n\r\n \r\nRS \trs2 \r\n\r\n\r\n\r\nSollen die Benutzer jetzt abgemeldet werden? \r\n\r\n\r\nBeachten Sie bitte, falls die Benutzer tatsächlich noch \r\nim AVZ tätig sind, dass Änderungen, welche hier durchgeführt werden, \r\nerst nach Neustart der Programme (AVZ-Anlagen, AVZ-Auswertungen) wirksam sind. \r\n(Dies gilt insbesonders für jegliche Art von Berechnungen)\r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es können keine Änderungen im AVZ-Firmenstamm gespeichert werden,  \r\nsolange sich folgende Benutzer noch im Programm 'AVZ-Anlagen' befinden:\r\n\r\n \r\nRS \trs2 \r\n\r\n\r\n\r\nSollen die Benutzer jetzt abgemeldet werden? \r\n\r\n\r\nBeachten Sie bitte, falls die Benutzer tatsächlich noch \r\nim AVZ tätig sind, dass Änderungen, welche hier durchgeführt werden, \r\nerst nach Neustart der Programme (AVZ-Anlagen, AVZ-Auswertungen) wirksam sind. \r\n(Dies gilt insbesonders für jegliche Art von Berechnungen)\r\n");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Benutzer abgemeldet !') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
+            repo.DlgMessageBox.Button0.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAnlagen'", repo.DlgMessageBox.AVZAnlagenInfo, new ActionTimeout(120000), new RecordItemIndex(3));
+            repo.DlgMessageBox.AVZAnlagenInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Benutzer abgemeldet !') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Benutzer abgemeldet !");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(5));
+            repo.DlgMessageBox.Button0.Click();
             
         }
 

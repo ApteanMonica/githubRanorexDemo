@@ -166,7 +166,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			capname="container"
 			id="27d65dd9-b311-4fc0-82d9-5f257e63b72b"
 			isrooted="True"
-			name="ClientArea_Maske_Abang_buchen"
+			name="ClientArea_Maske_Abgang_buchen"
 			refpath="/form[@controlname='dlgBuchen']/container[@controlname='ClientArea']"
 			searchtimeout="30000ms"
 			usecache="False">
@@ -306,7 +306,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 				addcaps="text,accessible"
 				capname="text"
 				id="6c504eb5-086a-4f98-9e61-a89bc2c73779"
-				name="Text_Engabefeld_Text"
+				name="Text_Eingabefeld_Text"
 				refimgid="ff67f012-0b0e-44d3-a653-d141d997ca3b"
 				refpath="/form[@controlname='dlgBuchen']/container[@controlname='ClientArea']/tabpagelist[@controlname='picBuchen']/tabpage[@controlname='tpText']/text[@controlname='mlAnbu_text']/text[@accessiblerole='Text']"
 				robustPath=""
@@ -369,6 +369,17 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='dlgMessageBox']/button[@controlname='button0']
 			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="d3b705c6-e273-4ef7-b2f6-275c99509af9"
+			name="Button1"
+			refimgid="b27ab242-0be5-426d-b7b3-5731f86c91c8"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button1']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button1']
+			</item>
 			<basepath>
 				/form[@controlname='dlgMessageBox']
 			</basepath>
@@ -384,6 +395,115 @@ IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
 7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
 DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
 XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="cbabcc6c-65a9-4905-9fce-c1d89ec6ac48"
+		isrooted="True"
+		name="FrmAnfi"
+		refpath="/form[@controlname='frmAnfi']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="e998a979-02fc-4ceb-9312-00e714d56f22"
+			name="TitleBar100AVZFirmenstamm"
+			refimgid="750924e6-948a-451d-b968-885129c2e79f"
+			refpath="/form[@controlname='frmAnfi']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAnfi']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="89d64df2-cfa9-4ac1-926e-1c9ca88bf654"
+			name="PbDataAccessSave"
+			refimgid="ea6260c2-458e-4a68-9bb8-b27c738db083"
+			refpath="/form[@controlname='frmAnfi']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAnfi']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']
+			</item>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="10715742-2301-4bce-863c-379cf4570969"
+			isrooted="True"
+			name="ClientArea"
+			refpath="/form[@controlname='frmAnfi']/container[@controlname='ClientArea']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="336f57dd-91f8-4e06-a2af-2e99e08f970e"
+				name="PbGjhrAktuell"
+				refimgid="2cea4e98-a376-4680-8a18-9a9da05f70f0"
+				refpath="/form[@controlname='frmAnfi']/container[@controlname='ClientArea']/button[@controlname='pbGjhr_aktuell']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAnfi']/container[@controlname='ClientArea']/button[@controlname='pbGjhr_aktuell']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="2204488c-5d3c-4d94-9e57-b9b0fd7dfd6c"
+				name="DfGjhrBez"
+				refimgid="14ea6b94-d1b8-4a70-b7d1-ff1e821fc8bb"
+				refpath="/form[@controlname='frmAnfi']/container[@controlname='ClientArea']/text[@controlname='dfGjhr_bez']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAnfi']/container[@controlname='ClientArea']/text[@controlname='dfGjhr_bez']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="265db042-b480-4850-963b-df0445f81c6c"
+				name="DfGjhrDtvon"
+				refimgid="65dd8da1-45ae-4332-9b53-dc58a7c0e705"
+				refpath="/form[@controlname='frmAnfi']/container[@controlname='ClientArea']/text[@controlname='dfGjhr_dtvon']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAnfi']/container[@controlname='ClientArea']/text[@controlname='dfGjhr_dtvon']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="16a9b53f-45bc-41b6-ab03-0db3e615dc5a"
+				name="DfGjhrDtbis"
+				refimgid="75026f2f-d9f1-4a5c-9aad-0cb288eacff0"
+				refpath="/form[@controlname='frmAnfi']/container[@controlname='ClientArea']/text[@controlname='dfGjhr_dtbis']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAnfi']/container[@controlname='ClientArea']/text[@controlname='dfGjhr_dtbis']
+				</item>
+				<item
+				addcaps="tabpage,accessible"
+				capname="tabpage"
+				id="2c0cb419-ba42-4389-97fb-23b672456414"
+				name="Steuer"
+				refimgid="62bf900c-32b8-4d4e-96c2-c4b3960c731d"
+				refpath="/form[@controlname='frmAnfi']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='Steuer']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmAnfi']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='Steuer']
+				</item>
+				<basepath>
+					/form[@controlname='frmAnfi']/container[@controlname='ClientArea']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='frmAnfi']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
 		<basepath>

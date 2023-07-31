@@ -33,11 +33,19 @@
 					name="Programm_2"
 					value="N_STAMM Aufrufart ANFI">
 					</param>
+					<param
+					name="Buchungsdatum"
+					value="28.02.2023">
+					</param>
+					<param
+					name="Anlagennr"
+					value="N_ANLA_004_01">
+					</param>
 				</parameters>
 			</testcase>
 			<testcase
 			id="19f0fb35-0313-44f4-b1f0-5a592b11bca4"
-			name="TestCase">
+			name="N_ANLA">
 			</testcase>
 			<testmodule
 			id="1f917090-dc1f-4286-8a94-5ec620973018"
@@ -49,6 +57,10 @@
 			id="24d5ca9a-8741-458a-9f71-3af0467efe79"
 			name="setup">
 			</setup>
+			<testcase
+			id="28951340-e294-4bb3-acf5-18bf61bf6e64"
+			name="Wechsel_in_N_ANLA">
+			</testcase>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -79,6 +91,46 @@
 			ref="e18f24f4-ee3e-4cd9-939e-55f3d200dc33"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="4fd3eef4-eb5e-4429-88b3-435f9edd3419"
+			name="GJ_aendern"
+			ref="1092bdb3-be27-4d8f-a67a-6ccab4e118ed"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="GJ"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="4459e8aa-4be2-4f26-835a-f0dcb5ca5e19"
+					variablename="GJ">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="63250828-b471-4072-81f2-2f92e4f14fda"
+			name="CloseAUT"
+			ref="e18f24f4-ee3e-4cd9-939e-55f3d200dc33"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="637eee3b-b696-4bbe-b554-ebe7c7d57af3"
+			name="StartAUT"
+			ref="c636dfa2-43b2-4743-b1d1-8c9f1a0475f8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Programm_1"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="a4b7c848-ebc1-4c8d-a309-b901e3808da8"
+					variablename="Programm_1">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="5566eb44-dd29-4d05-996f-78c02394565e"
+					variablename="Startfile">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="8ad8cdc7-2553-40d4-9ba6-15195ac0c49f"
 			name="teardown">
@@ -87,6 +139,32 @@
 			id="8eaa7b8d-6d96-4819-a8e7-7adc26065a00"
 			name="GJ_ändern_in_N_STAMM">
 			</testcase>
+			<testmodule
+			id="a9adbfac-19f6-4b46-8fb0-8d4778f5a1bc"
+			name="Abgang_erfassen_Teil_2"
+			ref="7c8878d0-8b94-4aa7-abbb-422ab4b3956f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="GJ"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="a0ff0a0e-dc02-45d2-94b9-b81b6b5a0555"
+					variablename="GJ">
+					</var>
+					<var
+					dataname="Buchungsdatum"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="f6b656f6-e20d-4cd3-9cd0-8aec19829e9e"
+					variablename="Buchungsdatum">
+					</var>
+					<var
+					dataname="Anlagennr"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="46f5ddf5-c3cd-43f7-94f1-826928b7f7a3"
+					variablename="Anlagennr">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="e2528f6c-479c-4bb5-8781-14bc7d7eb18e"
 			name="Abgang_erfassen_Teil_1"
@@ -130,6 +208,26 @@
 			name="StartAUT_02"
 			ref="927c0ae5-86d5-4480-86f0-626057fb538b"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="f13b14d1-41f3-4174-8fa6-08d13646d63e"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_1"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="bbb31ef7-4db2-4621-b960-94e219f2797b"
+					variablename="Programm_1">
+					</var>
+					<var
+					dataname="Programm_2"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="4fb707f9-c999-4c5c-bcf3-86adca103d42"
+					variablename="Programm_2">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="fbaf23f0-9f40-416e-adce-2ec6f9f234ee"
@@ -147,7 +245,7 @@
 				name="N_ANLA_004">
 					<testcase
 					id="19f0fb35-0313-44f4-b1f0-5a592b11bca4"
-					name="TestCase">
+					name="N_ANLA">
 						<setup
 						id="eb4ca57b-b4b3-4434-98f0-052242604226"
 						name="setup">
@@ -185,17 +283,37 @@
 							</testmodule>
 						</setup>
 						<testmodule
-						id="fbaf23f0-9f40-416e-adce-2ec6f9f234ee"
-						name="CloseAUT_02">
-						</testmodule>
-						<testmodule
 						id="1f917090-dc1f-4286-8a94-5ec620973018"
 						name="Benutzermeldung">
+						</testmodule>
+						<testmodule
+						id="4fd3eef4-eb5e-4429-88b3-435f9edd3419"
+						name="GJ_aendern">
 						</testmodule>
 						<teardown
 						id="01ba49ee-2249-4a5e-84b6-961c0aa35411"
 						name="teardown">
+							<testmodule
+							id="fbaf23f0-9f40-416e-adce-2ec6f9f234ee"
+							name="CloseAUT_02">
+							</testmodule>
 						</teardown>
+					</testcase>
+					<testcase
+					id="28951340-e294-4bb3-acf5-18bf61bf6e64"
+					name="Wechsel_in_N_ANLA">
+						<testmodule
+						id="637eee3b-b696-4bbe-b554-ebe7c7d57af3"
+						name="StartAUT">
+						</testmodule>
+						<testmodule
+						id="63250828-b471-4072-81f2-2f92e4f14fda"
+						name="CloseAUT">
+						</testmodule>
+						<testmodule
+						id="a9adbfac-19f6-4b46-8fb0-8d4778f5a1bc"
+						name="Abgang_erfassen_Teil_2">
+						</testmodule>
 					</testcase>
 				</testcase>
 			</testsuite>
@@ -212,6 +330,9 @@
 			</testcontainer>
 			<testcontainer
 			id="19f0fb35-0313-44f4-b1f0-5a592b11bca4">
+			</testcontainer>
+			<testcontainer
+			id="28951340-e294-4bb3-acf5-18bf61bf6e64">
 			</testcontainer>
 			<testcontainer
 			id="8eaa7b8d-6d96-4819-a8e7-7adc26065a00">
