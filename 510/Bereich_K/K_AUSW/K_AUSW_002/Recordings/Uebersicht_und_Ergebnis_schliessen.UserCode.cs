@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace K_AUSW_002.Recordings
 {
-    public partial class Ergebnis_schliessen
+    public partial class Uebersicht_und_Ergebnis_schliessen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

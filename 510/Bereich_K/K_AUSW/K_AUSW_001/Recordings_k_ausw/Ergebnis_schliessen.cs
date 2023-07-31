@@ -79,8 +79,8 @@ namespace K_AUSW_001.Recordings_k_ausw
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblAnzeige'.", repo.TblAnzeige.SelfInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TblAnzeige.Self, new Duration(0));
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblAnzeige.TitleBar100GuVSec231UGBStand2016'.", repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016, new Duration(0));
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
             Delay.Duration(1000, false);
