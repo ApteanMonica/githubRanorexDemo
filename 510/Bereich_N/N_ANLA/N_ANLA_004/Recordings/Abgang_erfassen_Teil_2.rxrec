@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="42584a62-16df-44a1-ab78-cdc1a54e124d"
+id="7c8878d0-8b94-4aa7-abbb-422ab4b3956f"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,14 +19,24 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Abgang_erfassen_Teil_1"
+	classname="Abgang_erfassen_Teil_2"
 	namespace="N_ANLA_004.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="7783e5c8-256f-4516-b907-1fa5e92f06bb"
+		id="a0ff0a0e-dc02-45d2-94b9-b81b6b5a0555"
 		name="GJ">
 			2023
+		</var>
+		<var
+		id="46f5ddf5-c3cd-43f7-94f1-826928b7f7a3"
+		name="Anlagennr">
+			N_ANLA_004_01
+		</var>
+		<var
+		id="f6b656f6-e20d-4cd3-9cd0-8aec19829e9e"
+		name="Buchungsdatum">
+			28.02.2023
 		</var>
 	</variables>
 	<recorditems>
@@ -4646,6 +4656,92 @@ IW+Qgkn7nzc+9FFAD4oFidmUtggDBYnH51LRRQAUUUUAf//Z
 			<bindings>
 			</bindings>
 		</keyitem>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="041e2828-9059-4f86-9d18-09f042c89ff7">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Anlagennr">
+				</binding>
+			</bindings>
+			<info
+			id="64800c1f-ef94-408a-9148-65b2e2bef0f6"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgBuchen']/container[@controlname='ClientArea']/text[@controlname='dfAnla_nr']/text[@accessiblerole='Text']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="a99e0ddd-a230-4e8c-82d0-0c39e79d1da3"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<keysequenceitem
+		KeySequence="0{Tab}"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="b52c7e23-ed19-4f19-8f67-ac53f91b0f3f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ee5520c2-85f2-472c-baf8-176f303003d0"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgBuchen']/container[@controlname='ClientArea']/text[@controlname='dfAnla_pos']/text[@accessiblerole='Text']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="048eb615-b36c-4263-b4b6-075776dd21ff">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Buchungsdatum">
+				</binding>
+			</bindings>
+			<info
+			id="1cb1de2f-be26-40cf-aacd-ce8ce48d60fb"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgBuchen']/container[@controlname='ClientArea']/text[@controlname='dfAnbu_dtbuchung']/text[@accessiblename='Buchungsdatum']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
 	</recorditems>
 	<repository
 	id="ff1b201e-e919-416c-a5c6-90eb72284f24"
@@ -4662,7 +4758,7 @@ IW+Qgkn7nzc+9FFAD4oFidmUtggDBYnH51LRRQAUUUUAf//Z
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Abgang_erfassen_Teil_1.UserCode.cs
+		Abgang_erfassen_Teil_2.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

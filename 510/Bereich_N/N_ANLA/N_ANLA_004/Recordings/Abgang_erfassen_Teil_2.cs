@@ -24,30 +24,32 @@ namespace N_ANLA_004.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Abgang_erfassen_Teil_1 recording.
+    ///The Abgang_erfassen_Teil_2 recording.
     /// </summary>
-    [TestModule("42584a62-16df-44a1-ab78-cdc1a54e124d", ModuleType.Recording, 1)]
-    public partial class Abgang_erfassen_Teil_1 : ITestModule
+    [TestModule("7c8878d0-8b94-4aa7-abbb-422ab4b3956f", ModuleType.Recording, 1)]
+    public partial class Abgang_erfassen_Teil_2 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_ANLA_004.N_ANLA_004Repository repository.
         /// </summary>
         public static global::N_ANLA_004.N_ANLA_004Repository repo = global::N_ANLA_004.N_ANLA_004Repository.Instance;
 
-        static Abgang_erfassen_Teil_1 instance = new Abgang_erfassen_Teil_1();
+        static Abgang_erfassen_Teil_2 instance = new Abgang_erfassen_Teil_2();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Abgang_erfassen_Teil_1()
+        public Abgang_erfassen_Teil_2()
         {
             GJ = "2023";
+            Anlagennr = "N_ANLA_004_01";
+            Buchungsdatum = "28.02.2023";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Abgang_erfassen_Teil_1 Instance
+        public static Abgang_erfassen_Teil_2 Instance
         {
             get { return instance; }
         }
@@ -59,11 +61,35 @@ namespace N_ANLA_004.Recordings
         /// <summary>
         /// Gets or sets the value of variable GJ.
         /// </summary>
-        [TestVariable("7783e5c8-256f-4516-b907-1fa5e92f06bb")]
+        [TestVariable("a0ff0a0e-dc02-45d2-94b9-b81b6b5a0555")]
         public string GJ
         {
             get { return _GJ; }
             set { _GJ = value; }
+        }
+
+        string _Anlagennr;
+
+        /// <summary>
+        /// Gets or sets the value of variable Anlagennr.
+        /// </summary>
+        [TestVariable("46f5ddf5-c3cd-43f7-94f1-826928b7f7a3")]
+        public string Anlagennr
+        {
+            get { return _Anlagennr; }
+            set { _Anlagennr = value; }
+        }
+
+        string _Buchungsdatum;
+
+        /// <summary>
+        /// Gets or sets the value of variable Buchungsdatum.
+        /// </summary>
+        [TestVariable("f6b656f6-e20d-4cd3-9cd0-8aec19829e9e")]
+        public string Buchungsdatum
+        {
+            get { return _Buchungsdatum; }
+            set { _Buchungsdatum = value; }
         }
 
 #endregion
@@ -127,6 +153,18 @@ namespace N_ANLA_004.Recordings
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Anlagennr' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Anlagennr'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_AnlagennrInfo, new RecordItemIndex(12));
+            repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Anlagennr.PressKeys(Anlagennr);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0{Tab}' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Anlagenpos'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_AnlagenposInfo, new RecordItemIndex(14));
+            repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Anlagenpos.PressKeys("0{Tab}");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Buchungsdatum' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Buchungsdatum'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.BuchungsdatumInfo, new RecordItemIndex(15));
+            repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Buchungsdatum.PressKeys(Buchungsdatum);
             
         }
 
