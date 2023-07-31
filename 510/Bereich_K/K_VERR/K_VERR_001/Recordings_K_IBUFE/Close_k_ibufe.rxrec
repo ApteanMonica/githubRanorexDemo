@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9934ec9e-446e-4d06-87c9-bb9f498018b5"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_k_ibufe"
+	namespace="K_VERR_001.Recordings_K_IBUFE">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="1ea6221c-b36e-4faf-ac64-a8595aaa967f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="80a0f6be-e228-4187-b310-ac7b417eefec"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblIbufe']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="fc679875-7512-4736-b294-47faf32c598f"
+	name="K_VERR_001Repository"
+	relativepath="..\K_VERR_001Repository.rxrep">
+		<codegen
+		classname="K_VERR_001Repository"
+		namespace="K_VERR_001">
+		</codegen>
+		<rootfolder
+		id="ee4245ca-104c-4e4c-b8a3-edd0e64afb95"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_k_ibufe.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -46,7 +46,7 @@ mode="Global">
 				</binding>
 			</bindings>
 			<info
-			id="e38ea5e4-8441-401e-bcff-005349207db1"
+			id="8a56c4e4-f2d7-4414-ba05-19ede607e771"
 			sourcename="RepositoryEditor">
 				<path>
 					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colVerteil Row 2']
@@ -136,11 +136,40 @@ mode="Global">
 		enabled="True"
 		optional="False">
 			<comment>
-				Zeile 1 prüfen: gleichmäßige Verteilung
+				Zeile 2 prüfen
 			</comment>
 			<bindings>
 			</bindings>
 		</separatoritem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="fa3a7133-3310-473b-933d-192aa1c9b433">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="PVT_Code">
+				</binding>
+			</bindings>
+			<info
+			id="8a56c4e4-f2d7-4414-ba05-19ede607e771"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colVerteil Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"

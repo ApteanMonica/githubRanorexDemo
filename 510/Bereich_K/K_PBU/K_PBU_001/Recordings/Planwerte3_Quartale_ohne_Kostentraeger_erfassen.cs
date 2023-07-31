@@ -42,7 +42,6 @@ namespace K_PBU_001.Recordings
         public Planwerte3_Quartale_ohne_Kostentraeger_erfassen()
         {
             Konto3 = "0660";
-            Kostenstelle = "10";
         }
 
         /// <summary>
@@ -65,18 +64,6 @@ namespace K_PBU_001.Recordings
         {
             get { return _Konto3; }
             set { _Konto3 = value; }
-        }
-
-        string _Kostenstelle;
-
-        /// <summary>
-        /// Gets or sets the value of variable Kostenstelle.
-        /// </summary>
-        [TestVariable("182ca6db-a988-44ba-be8d-5ca1d21b9049")]
-        public string Kostenstelle
-        {
-            get { return _Kostenstelle; }
-            set { _Kostenstelle = value; }
         }
 
 #endregion
