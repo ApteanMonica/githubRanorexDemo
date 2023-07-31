@@ -2,6 +2,16 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<teardown
+			id="01ba49ee-2249-4a5e-84b6-961c0aa35411"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="1684e315-e661-42ce-b0c1-0e634971ca07"
+			name="Hinweismeldung_GJ"
+			ref="6673b618-8151-4c38-9496-a35ffe26e574"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="18171c63-5e0f-4ab8-8525-8403050526b2"
 			name="N_ANLA_004"
@@ -15,12 +25,30 @@
 					name="Programm_1"
 					value="N_ANLA">
 					</param>
+					<param
+					name="GJ"
+					value="2023">
+					</param>
+					<param
+					name="Programm_2"
+					value="N_STAMM Aufrufart ANFI">
+					</param>
 				</parameters>
 			</testcase>
 			<testcase
 			id="19f0fb35-0313-44f4-b1f0-5a592b11bca4"
 			name="TestCase">
 			</testcase>
+			<testmodule
+			id="1f917090-dc1f-4286-8a94-5ec620973018"
+			name="Benutzermeldung"
+			ref="24b958ec-ac6e-4ad1-a30b-bc1fc3a27f50"
+			type="Recording">
+			</testmodule>
+			<setup
+			id="24d5ca9a-8741-458a-9f71-3af0467efe79"
+			name="setup">
+			</setup>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -55,11 +83,23 @@
 			id="8ad8cdc7-2553-40d4-9ba6-15195ac0c49f"
 			name="teardown">
 			</teardown>
+			<testcase
+			id="8eaa7b8d-6d96-4819-a8e7-7adc26065a00"
+			name="GJ_ändern_in_N_STAMM">
+			</testcase>
 			<testmodule
 			id="e2528f6c-479c-4bb5-8781-14bc7d7eb18e"
 			name="Abgang_erfassen_Teil_1"
 			ref="42584a62-16df-44a1-ab78-cdc1a54e124d"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="GJ"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="7783e5c8-256f-4516-b907-1fa5e92f06bb"
+					variablename="GJ">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="e30fbc5a-05ac-4fb1-a90c-8737d0964658"
@@ -85,6 +125,18 @@
 			id="eb4ca57b-b4b3-4434-98f0-052242604226"
 			name="setup">
 			</setup>
+			<testmodule
+			id="f64a57d3-9990-45d7-9041-607e7b6ab325"
+			name="StartAUT_02"
+			ref="927c0ae5-86d5-4480-86f0-626057fb538b"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="fbaf23f0-9f40-416e-adce-2ec6f9f234ee"
+			name="CloseAUT_02"
+			ref="e9bb5314-dc5b-4d06-a9e7-fadc159cafde"
+			type="Recording">
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -108,6 +160,10 @@
 						id="e2528f6c-479c-4bb5-8781-14bc7d7eb18e"
 						name="Abgang_erfassen_Teil_1">
 						</testmodule>
+						<testmodule
+						id="1684e315-e661-42ce-b0c1-0e634971ca07"
+						name="Hinweismeldung_GJ">
+						</testmodule>
 						<teardown
 						id="8ad8cdc7-2553-40d4-9ba6-15195ac0c49f"
 						name="teardown">
@@ -115,6 +171,30 @@
 							id="46ea7928-c288-4770-9b0b-b254ddc47cec"
 							name="CloseAUT">
 							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="8eaa7b8d-6d96-4819-a8e7-7adc26065a00"
+					name="GJ_ändern_in_N_STAMM">
+						<setup
+						id="24d5ca9a-8741-458a-9f71-3af0467efe79"
+						name="setup">
+							<testmodule
+							id="f64a57d3-9990-45d7-9041-607e7b6ab325"
+							name="StartAUT_02">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="fbaf23f0-9f40-416e-adce-2ec6f9f234ee"
+						name="CloseAUT_02">
+						</testmodule>
+						<testmodule
+						id="1f917090-dc1f-4286-8a94-5ec620973018"
+						name="Benutzermeldung">
+						</testmodule>
+						<teardown
+						id="01ba49ee-2249-4a5e-84b6-961c0aa35411"
+						name="teardown">
 						</teardown>
 					</testcase>
 				</testcase>
@@ -132,6 +212,9 @@
 			</testcontainer>
 			<testcontainer
 			id="19f0fb35-0313-44f4-b1f0-5a592b11bca4">
+			</testcontainer>
+			<testcontainer
+			id="8eaa7b8d-6d96-4819-a8e7-7adc26065a00">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

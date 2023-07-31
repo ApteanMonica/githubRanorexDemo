@@ -102,6 +102,18 @@
       <UserCode>true</UserCode>
       <id>dffcab6e-81d1-4cbb-856d-532725962884</id>
     </Compile>
+    <Compile Include="Recordings\Benutzermeldung.cs">
+      <BoundTo>849b7eec-e36b-4dca-b6be-30c0509f61b8</BoundTo>
+      <DependentUpon>Benutzermeldung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a833aaac-9aa7-49b6-bfea-e7f7818d8f05</id>
+    </Compile>
+    <Compile Include="Recordings\Benutzermeldung.UserCode.cs">
+      <BoundTo>849b7eec-e36b-4dca-b6be-30c0509f61b8</BoundTo>
+      <DependentUpon>Benutzermeldung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3f5572a9-7f10-4a84-ade3-35f8cd3a6ada</id>
+    </Compile>
     <Compile Include="Recordings\CloseAUT.cs">
       <DependentUpon>CloseAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -114,6 +126,30 @@
       <id>0d18d8db-b8db-4407-b7f2-35269e5190d1</id>
       <BoundTo>d9883cfd-9574-4382-9644-f8c4c53bd59c</BoundTo>
     </Compile>
+    <Compile Include="Recordings\CloseAUT_02.cs">
+      <BoundTo>eb8270fa-7c58-4b41-bcf2-2cce7e7ce7ea</BoundTo>
+      <DependentUpon>CloseAUT_02.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6abc3c54-98b2-43ca-8dd6-3826152e5710</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_02.UserCode.cs">
+      <BoundTo>eb8270fa-7c58-4b41-bcf2-2cce7e7ce7ea</BoundTo>
+      <DependentUpon>CloseAUT_02.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e301e280-46b0-4682-8a0d-68331f211ccc</id>
+    </Compile>
+    <Compile Include="Recordings\Hinweismeldung_GJ.cs">
+      <BoundTo>c4b8a97b-c595-4a56-a6c6-3340d6779f29</BoundTo>
+      <DependentUpon>Hinweismeldung_GJ.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>971e25f8-2178-473b-9a0d-02b234885637</id>
+    </Compile>
+    <Compile Include="Recordings\Hinweismeldung_GJ.UserCode.cs">
+      <BoundTo>c4b8a97b-c595-4a56-a6c6-3340d6779f29</BoundTo>
+      <DependentUpon>Hinweismeldung_GJ.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d43711a1-abc3-470f-bfc7-48f10303c52b</id>
+    </Compile>
     <Compile Include="Recordings\StartAUT.cs">
       <DependentUpon>StartAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -125,6 +161,18 @@
       <UserCode>true</UserCode>
       <id>56c25813-d2b2-46a8-91e7-7d95b96a7de0</id>
       <BoundTo>1679fd68-fe01-4602-b96f-5971dfd1d3f4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT_02.cs">
+      <BoundTo>3c3d42a5-b506-4e32-9073-df8c29f7707f</BoundTo>
+      <DependentUpon>StartAUT_02.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7a155b35-2050-4573-be62-5317c920f8c1</id>
+    </Compile>
+    <Compile Include="Recordings\StartAUT_02.UserCode.cs">
+      <BoundTo>3c3d42a5-b506-4e32-9073-df8c29f7707f</BoundTo>
+      <DependentUpon>StartAUT_02.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dd767b41-0892-4adf-8c1a-dd5768bf0b59</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -147,15 +195,35 @@
       <id>c4aeee96-bc8e-4956-b046-ee1e5bb3c007</id>
       <recordtableid>42584a62-16df-44a1-ab78-cdc1a54e124d</recordtableid>
     </None>
+    <None Include="Recordings\Benutzermeldung.rxrec">
+      <BoundTo>7e0541fb-0f50-44cf-b34f-26c6ddbee835</BoundTo>
+      <id>849b7eec-e36b-4dca-b6be-30c0509f61b8</id>
+      <recordtableid>24b958ec-ac6e-4ad1-a30b-bc1fc3a27f50</recordtableid>
+    </None>
     <None Include="Recordings\CloseAUT.rxrec">
       <BoundTo>7e0541fb-0f50-44cf-b34f-26c6ddbee835</BoundTo>
       <id>d9883cfd-9574-4382-9644-f8c4c53bd59c</id>
       <recordtableid>e18f24f4-ee3e-4cd9-939e-55f3d200dc33</recordtableid>
     </None>
+    <None Include="Recordings\CloseAUT_02.rxrec">
+      <BoundTo>7e0541fb-0f50-44cf-b34f-26c6ddbee835</BoundTo>
+      <id>eb8270fa-7c58-4b41-bcf2-2cce7e7ce7ea</id>
+      <recordtableid>e9bb5314-dc5b-4d06-a9e7-fadc159cafde</recordtableid>
+    </None>
+    <None Include="Recordings\Hinweismeldung_GJ.rxrec">
+      <BoundTo>7e0541fb-0f50-44cf-b34f-26c6ddbee835</BoundTo>
+      <id>c4b8a97b-c595-4a56-a6c6-3340d6779f29</id>
+      <recordtableid>6673b618-8151-4c38-9496-a35ffe26e574</recordtableid>
+    </None>
     <None Include="Recordings\StartAUT.rxrec">
       <BoundTo>7e0541fb-0f50-44cf-b34f-26c6ddbee835</BoundTo>
       <id>1679fd68-fe01-4602-b96f-5971dfd1d3f4</id>
       <recordtableid>c636dfa2-43b2-4743-b1d1-8c9f1a0475f8</recordtableid>
+    </None>
+    <None Include="Recordings\StartAUT_02.rxrec">
+      <BoundTo>7e0541fb-0f50-44cf-b34f-26c6ddbee835</BoundTo>
+      <id>3c3d42a5-b506-4e32-9073-df8c29f7707f</id>
+      <recordtableid>927c0ae5-86d5-4480-86f0-626057fb538b</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

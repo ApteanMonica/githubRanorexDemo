@@ -41,6 +41,7 @@ namespace N_ANLA_004.Recordings
         /// </summary>
         public Abgang_erfassen_Teil_1()
         {
+            GJ = "2023";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace N_ANLA_004.Recordings
         }
 
 #region Variables
+
+        string _GJ;
+
+        /// <summary>
+        /// Gets or sets the value of variable GJ.
+        /// </summary>
+        [TestVariable("7783e5c8-256f-4516-b907-1fa5e92f06bb")]
+        public string GJ
+        {
+            get { return _GJ; }
+            set { _GJ = value; }
+        }
 
 #endregion
 
@@ -79,6 +92,42 @@ namespace N_ANLA_004.Recordings
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnla.PbNew' at Center.", repo.FrmAnla.PbNewInfo, new RecordItemIndex(0));
+            repo.FrmAnla.PbNew.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmAnla.TitleBar100AVZAnlagen'", repo.FrmAnla.TitleBar100AVZAnlagenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FrmAnla.TitleBar100AVZAnlagenInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnla.PbBuchenBuchen' at Center.", repo.FrmAnla.PbBuchenBuchenInfo, new RecordItemIndex(2));
+            repo.FrmAnla.PbBuchenBuchen.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'NANLA.Abgang' at Center.", repo.NANLA.AbgangInfo, new RecordItemIndex(3));
+            repo.NANLA.Abgang.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Down' Press.", new RecordItemIndex(4));
+            Keyboard.Press(System.Windows.Forms.Keys.Down, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Down' Press.", new RecordItemIndex(5));
+            Keyboard.Press(System.Windows.Forms.Keys.Down, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press.", new RecordItemIndex(6));
+            Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgBuchen.TitleBar100AVZAbgangBuchen'", repo.DlgBuchen.TitleBar100AVZAbgangBuchenInfo, new ActionTimeout(120000), new RecordItemIndex(7));
+            repo.DlgBuchen.TitleBar100AVZAbgangBuchenInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ - Abgang buchen') on item 'DlgBuchen.TitleBar100AVZAbgangBuchen'.", repo.DlgBuchen.TitleBar100AVZAbgangBuchenInfo, new RecordItemIndex(8));
+            Validate.AttributeContains(repo.DlgBuchen.TitleBar100AVZAbgangBuchenInfo, "Text", "[100]  AVZ - Abgang buchen");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgBuchen.ClientArea_Maske_Abang_buchen.Geschaeftsjahr' at Center.", repo.DlgBuchen.ClientArea_Maske_Abang_buchen.GeschaeftsjahrInfo, new RecordItemIndex(9));
+            repo.DlgBuchen.ClientArea_Maske_Abang_buchen.Geschaeftsjahr.DoubleClick();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GJ' with focus on 'DlgBuchen.ClientArea_Maske_Abang_buchen.Geschaeftsjahr'.", repo.DlgBuchen.ClientArea_Maske_Abang_buchen.GeschaeftsjahrInfo, new RecordItemIndex(10));
+            repo.DlgBuchen.ClientArea_Maske_Abang_buchen.Geschaeftsjahr.PressKeys(GJ);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
         }
 
 #region Image Feature Data
