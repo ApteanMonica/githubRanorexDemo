@@ -202,6 +202,31 @@ mode="Global">
 		</validationitem>
 		<validationitem
 		action="AttributeContains"
+		enabled="False"
+		optional="False"
+		searchpropertyid="375e389d-c404-4634-bd9f-67ed89c59105">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ac8e93ef-39e2-41c3-bbd0-4ee6b455357e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Exop: 29 Beleg: ER03_B_EXOPV_005: Fremdbelegnr FB02_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
 		enabled="True"
 		optional="False"
 		searchpropertyid="375e389d-c404-4634-bd9f-67ed89c59105">

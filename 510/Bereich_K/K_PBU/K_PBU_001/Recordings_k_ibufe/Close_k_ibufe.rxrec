@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="b2773a39-e987-4be0-a175-e557ad0ba536"
-mode="Global">
+id="9a794496-e6a1-4109-bf09-b8b751d173f2"
+mode="Desktop">
 	<repeatcount>
 		1
 	</repeatcount>
@@ -19,27 +19,27 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Ergebnis_schliessen"
-	namespace="K_AUSW_002.Recordings">
+	classname="Close_k_ibufe"
+	namespace="K_PBU_001.Recordings_k_ibufe">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
 		<closeapprecorditem
 		enabled="True"
-		graceperiod="0ms"
+		graceperiod="1000ms"
 		method="CloseWindow"
 		optional="False"
-		searchpropertyid="b0312524-ec32-4bf1-b2ba-122adb4d9077">
+		searchpropertyid="1ea6221c-b36e-4faf-ac64-a8595aaa967f">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="a6672772-aee8-447e-806c-dac0aa137b42"
+			id="d62a4d86-2246-49d7-ab27-257be480adac"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblAnzeige']
+					/form[@controlname='tblIbufe']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -47,21 +47,21 @@ mode="Global">
 		</closeapprecorditem>
 	</recorditems>
 	<repository
-	id="017661d7-3daa-4c0f-87ee-8b97d99a6621"
-	name="K_AUSW_002Repository"
-	relativepath="..\K_AUSW_002Repository.rxrep">
+	id="b079714c-2870-4349-b380-dea6daeed062"
+	name="K_PBU_001Repository"
+	relativepath="..\K_PBU_001Repository.rxrep">
 		<codegen
-		classname="K_AUSW_002Repository"
-		namespace="K_AUSW_002">
+		classname="K_PBU_001Repository"
+		namespace="K_PBU_001">
 		</codegen>
 		<rootfolder
-		id="a9707f99-3948-4eb2-b6fe-2a239e4e0b9d"
+		id="f116db28-1abf-43da-83d2-2f81457e3779"
 		name="_rootdummy_">
 		</rootfolder>
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Ergebnis_schliessen.UserCode.cs
+		Close_k_ibufe.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

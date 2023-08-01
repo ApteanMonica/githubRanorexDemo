@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace K_AUSW_001.Recordings_k_ausw
+namespace K_PBU_001.Recordings_k_ibufe
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Ergebnis_schliessen recording.
+    ///The K_IBUFE_Summenzeile_pruefen recording.
     /// </summary>
-    [TestModule("31a3eaa3-e45e-44cb-8b13-a84134e3c97f", ModuleType.Recording, 1)]
-    public partial class Ergebnis_schliessen : ITestModule
+    [TestModule("79e5e36d-cbaf-47a5-ae9b-f4912441cd40", ModuleType.Recording, 1)]
+    public partial class K_IBUFE_Summenzeile_pruefen : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::K_AUSW_001.K_AUSW_001Repository repository.
+        /// Holds an instance of the global::K_PBU_001.K_PBU_001Repository repository.
         /// </summary>
-        public static global::K_AUSW_001.K_AUSW_001Repository repo = global::K_AUSW_001.K_AUSW_001Repository.Instance;
+        public static global::K_PBU_001.K_PBU_001Repository repo = global::K_PBU_001.K_PBU_001Repository.Instance;
 
-        static Ergebnis_schliessen instance = new Ergebnis_schliessen();
+        static K_IBUFE_Summenzeile_pruefen instance = new K_IBUFE_Summenzeile_pruefen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Ergebnis_schliessen()
+        public K_IBUFE_Summenzeile_pruefen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Ergebnis_schliessen Instance
+        public static K_IBUFE_Summenzeile_pruefen Instance
         {
             get { return instance; }
         }
@@ -79,11 +79,11 @@ namespace K_AUSW_001.Recordings_k_ausw
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblAnzeige.TitleBar100GuVSec231UGBStand2016'.", repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016, new Duration(0));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Summe') on item 'TblIbufe.Fusszeile_Summe.ColKontoRow0'.", repo.TblIbufe.Fusszeile_Summe.ColKontoRow0Info, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.TblIbufe.Fusszeile_Summe.ColKontoRow0Info, "Text", "Summe");
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
-            Delay.Duration(1000, false);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='327.000,00') on item 'TblIbufe.Fusszeile_Summe.ColBetragRow0'.", repo.TblIbufe.Fusszeile_Summe.ColBetragRow0Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblIbufe.Fusszeile_Summe.ColBetragRow0Info, "Text", "327.000,00");
             
         }
 

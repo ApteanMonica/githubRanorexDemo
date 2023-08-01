@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace K_AUSW_002.Recordings
+namespace K_PBU_001.Recordings_k_ibufe
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Ergebnis_schliessen recording.
+    ///The Close_k_ibufe recording.
     /// </summary>
-    [TestModule("b2773a39-e987-4be0-a175-e557ad0ba536", ModuleType.Recording, 1)]
-    public partial class Ergebnis_schliessen : ITestModule
+    [TestModule("9a794496-e6a1-4109-bf09-b8b751d173f2", ModuleType.Recording, 1)]
+    public partial class Close_k_ibufe : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::K_AUSW_002.K_AUSW_002Repository repository.
+        /// Holds an instance of the global::K_PBU_001.K_PBU_001Repository repository.
         /// </summary>
-        public static global::K_AUSW_002.K_AUSW_002Repository repo = global::K_AUSW_002.K_AUSW_002Repository.Instance;
+        public static global::K_PBU_001.K_PBU_001Repository repo = global::K_PBU_001.K_PBU_001Repository.Instance;
 
-        static Ergebnis_schliessen instance = new Ergebnis_schliessen();
+        static Close_k_ibufe instance = new Close_k_ibufe();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Ergebnis_schliessen()
+        public Close_k_ibufe()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Ergebnis_schliessen Instance
+        public static Close_k_ibufe Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,8 @@ namespace K_AUSW_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblAnzeige'.", repo.TblAnzeige.SelfInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TblAnzeige.Self, new Duration(0));
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblIbufe.TitleBar100KOREBuchungenAnzeigen'.", repo.TblIbufe.TitleBar100KOREBuchungenAnzeigenInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.TblIbufe.TitleBar100KOREBuchungenAnzeigen, 1000);
             
         }
 

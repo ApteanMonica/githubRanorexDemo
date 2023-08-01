@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace K_AUSW_001.Recordings_k_ausw
+namespace K_PBU_001.Recordings_k_ibufe
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Ergebnis_schliessen recording.
+    ///The K_IBUFE_Bestandskonten_aktivieren recording.
     /// </summary>
-    [TestModule("31a3eaa3-e45e-44cb-8b13-a84134e3c97f", ModuleType.Recording, 1)]
-    public partial class Ergebnis_schliessen : ITestModule
+    [TestModule("0c8c5ec7-ceb6-4bd7-a1f0-a4d842df0bbe", ModuleType.Recording, 1)]
+    public partial class K_IBUFE_Bestandskonten_aktivieren : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::K_AUSW_001.K_AUSW_001Repository repository.
+        /// Holds an instance of the global::K_PBU_001.K_PBU_001Repository repository.
         /// </summary>
-        public static global::K_AUSW_001.K_AUSW_001Repository repo = global::K_AUSW_001.K_AUSW_001Repository.Instance;
+        public static global::K_PBU_001.K_PBU_001Repository repo = global::K_PBU_001.K_PBU_001Repository.Instance;
 
-        static Ergebnis_schliessen instance = new Ergebnis_schliessen();
+        static K_IBUFE_Bestandskonten_aktivieren instance = new K_IBUFE_Bestandskonten_aktivieren();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Ergebnis_schliessen()
+        public K_IBUFE_Bestandskonten_aktivieren()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Ergebnis_schliessen Instance
+        public static K_IBUFE_Bestandskonten_aktivieren Instance
         {
             get { return instance; }
         }
@@ -79,11 +79,26 @@ namespace K_AUSW_001.Recordings_k_ausw
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblAnzeige.TitleBar100GuVSec231UGBStand2016'.", repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016, new Duration(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblIbufe.PbKontenKonten' at Center.", repo.TblIbufe.PbKontenKontenInfo, new RecordItemIndex(0));
+            repo.TblIbufe.PbKontenKonten.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KIBUFE.Bestandskonten' at Center.", repo.KIBUFE.BestandskontenInfo, new RecordItemIndex(1));
+            repo.KIBUFE.Bestandskonten.Click();
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(2));
             Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblIbufe.PbKontenKonten' at Center.", repo.TblIbufe.PbKontenKontenInfo, new RecordItemIndex(3));
+            repo.TblIbufe.PbKontenKonten.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'KIBUFE.Bestandskonten'.", repo.KIBUFE.BestandskontenInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.KIBUFE.BestandskontenInfo, "Checked", "True");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'KIBUFE.Erfolgskonten'.", repo.KIBUFE.ErfolgskontenInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.KIBUFE.ErfolgskontenInfo, "Checked", "True");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Escape' Press.", new RecordItemIndex(6));
+            Keyboard.Press(System.Windows.Forms.Keys.Escape, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }
 

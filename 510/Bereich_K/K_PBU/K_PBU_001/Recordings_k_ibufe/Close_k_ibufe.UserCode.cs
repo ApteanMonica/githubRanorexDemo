@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace K_AUSW_002.Recordings
+namespace K_PBU_001.Recordings_k_ibufe
 {
-    public partial class Ergebnis_schliessen
+    public partial class Close_k_ibufe
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

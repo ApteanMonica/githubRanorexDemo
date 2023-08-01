@@ -68,6 +68,12 @@
 			ref="d15647a9-4ffe-4fbb-9019-1611331bdfed"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="598be280-8f2a-4264-b1a3-2eb1e62a4597"
+			name="Formular_Einschraenkung_Typ_0_setzen"
+			ref="b0cd00a4-ba29-460c-98aa-e5f10fcff430"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="90ab4d39-4db4-429a-aac8-13a882000124"
 			name="K_AUSW_002"
@@ -194,7 +200,7 @@
 			</setup>
 			<testmodule
 			id="dd4d0be2-df90-4b6d-a846-af7dc8eda0f7"
-			name="Ergebnis_schliessen"
+			name="Uebersicht_und_Ergebnis_schliessen"
 			ref="b2773a39-e987-4be0-a175-e557ad0ba536"
 			type="Recording">
 			</testmodule>
@@ -261,11 +267,15 @@
 						</testmodule>
 						<testmodule
 						id="dd4d0be2-df90-4b6d-a846-af7dc8eda0f7"
-						name="Ergebnis_schliessen">
+						name="Uebersicht_und_Ergebnis_schliessen">
 						</testmodule>
 						<teardown
 						id="0c8dbea4-0481-4c8c-af6e-395e087e35ac"
 						name="teardown">
+							<testmodule
+							id="598be280-8f2a-4264-b1a3-2eb1e62a4597"
+							name="Formular_Einschraenkung_Typ_0_setzen">
+							</testmodule>
 							<testmodule
 							id="09df16fc-dfa4-47dd-82f5-b9ff35bbcfa7"
 							name="CloseAUT">

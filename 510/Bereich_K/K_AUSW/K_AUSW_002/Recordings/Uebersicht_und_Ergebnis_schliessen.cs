@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace K_AUSW_001.Recordings_k_ausw
+namespace K_AUSW_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Ergebnis_schliessen recording.
+    ///The Uebersicht_und_Ergebnis_schliessen recording.
     /// </summary>
-    [TestModule("31a3eaa3-e45e-44cb-8b13-a84134e3c97f", ModuleType.Recording, 1)]
-    public partial class Ergebnis_schliessen : ITestModule
+    [TestModule("b2773a39-e987-4be0-a175-e557ad0ba536", ModuleType.Recording, 1)]
+    public partial class Uebersicht_und_Ergebnis_schliessen : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::K_AUSW_001.K_AUSW_001Repository repository.
+        /// Holds an instance of the global::K_AUSW_002.K_AUSW_002Repository repository.
         /// </summary>
-        public static global::K_AUSW_001.K_AUSW_001Repository repo = global::K_AUSW_001.K_AUSW_001Repository.Instance;
+        public static global::K_AUSW_002.K_AUSW_002Repository repo = global::K_AUSW_002.K_AUSW_002Repository.Instance;
 
-        static Ergebnis_schliessen instance = new Ergebnis_schliessen();
+        static Uebersicht_und_Ergebnis_schliessen instance = new Uebersicht_und_Ergebnis_schliessen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Ergebnis_schliessen()
+        public Uebersicht_und_Ergebnis_schliessen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Ergebnis_schliessen Instance
+        public static Uebersicht_und_Ergebnis_schliessen Instance
         {
             get { return instance; }
         }
@@ -79,11 +79,17 @@ namespace K_AUSW_001.Recordings_k_ausw
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblAnzeige.TitleBar100GuVSec231UGBStand2016'.", repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016, new Duration(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAnzeige.Schliessen' at Center.", repo.TblAnzeige.SchliessenInfo, new RecordItemIndex(0));
+            repo.TblAnzeige.Schliessen.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
-            Delay.Duration(1000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAnzeige.Schliessen' at Center.", repo.TblAnzeige.SchliessenInfo, new RecordItemIndex(2));
+            repo.TblAnzeige.Schliessen.Click();
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));
+            Delay.Duration(2000, false);
             
         }
 
