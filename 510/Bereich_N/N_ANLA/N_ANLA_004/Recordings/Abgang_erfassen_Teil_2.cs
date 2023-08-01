@@ -200,38 +200,50 @@ namespace N_ANLA_004.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Geschaeftsjahr' at Center.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.GeschaeftsjahrInfo, new RecordItemIndex(9));
             repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Geschaeftsjahr.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$GJ' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Geschaeftsjahr'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.GeschaeftsjahrInfo, new RecordItemIndex(10));
-            repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Geschaeftsjahr.PressKeys(GJ);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Anlagennr' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Anlagennr'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_AnlagennrInfo, new RecordItemIndex(10));
+            repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Anlagennr.PressKeys(Anlagennr);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Anlagennr' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Anlagennr'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_AnlagennrInfo, new RecordItemIndex(12));
-            repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Anlagennr.PressKeys(Anlagennr);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0{Tab}' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Anlagenpos'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_AnlagenposInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0{Tab}' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Anlagenpos'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_AnlagenposInfo, new RecordItemIndex(12));
             repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Anlagenpos.PressKeys("0{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Buchungsdatum' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Buchungsdatum'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.BuchungsdatumInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Buchungsdatum' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Buchungsdatum'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.BuchungsdatumInfo, new RecordItemIndex(13));
             repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Buchungsdatum.PressKeys(Buchungsdatum);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Beleg' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Belegnummer'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_BelegnummerInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(14));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Beleg' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Belegnummer'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_BelegnummerInfo, new RecordItemIndex(15));
             repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Belegnummer.PressKeys(Beleg);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(16));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Buchungsdatum' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Belegdatum'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_BelegdatumInfo, new RecordItemIndex(17));
             repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Belegdatum.PressKeys(Buchungsdatum);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Sachbearbeiter' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Sachbearbeiter'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_SachbearbeiterInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(18));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Sachbearbeiter' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Sachbearbeiter'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_SachbearbeiterInfo, new RecordItemIndex(19));
             repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Sachbearbeiter.PressKeys(Sachbearbeiter);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Abgangserloes' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Abgangserloes'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.AbgangserloesInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(20));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Abgangserloes' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Abgangserloes'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.AbgangserloesInfo, new RecordItemIndex(21));
             repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Abgangserloes.PressKeys(Abgangserloes);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Abgabegrund' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Abgangsgrund'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.AbgangsgrundInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(22));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Abgabegrund' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Abgangsgrund'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.AbgangsgrundInfo, new RecordItemIndex(23));
             repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Abgangsgrund.PressKeys(Abgabegrund);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(24));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }
 

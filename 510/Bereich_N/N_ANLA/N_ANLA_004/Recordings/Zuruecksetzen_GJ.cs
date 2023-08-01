@@ -24,72 +24,46 @@ namespace N_ANLA_004.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT_02 recording.
+    ///The Zuruecksetzen_GJ recording.
     /// </summary>
-    [TestModule("927c0ae5-86d5-4480-86f0-626057fb538b", ModuleType.Recording, 1)]
-    public partial class StartAUT_02 : ITestModule
+    [TestModule("a6668a8d-0bcd-4990-90ed-c82e5551c178", ModuleType.Recording, 1)]
+    public partial class Zuruecksetzen_GJ : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_ANLA_004.N_ANLA_004Repository repository.
         /// </summary>
         public static global::N_ANLA_004.N_ANLA_004Repository repo = global::N_ANLA_004.N_ANLA_004Repository.Instance;
 
-        static StartAUT_02 instance = new StartAUT_02();
+        static Zuruecksetzen_GJ instance = new Zuruecksetzen_GJ();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT_02()
+        public Zuruecksetzen_GJ()
         {
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm_1 = "N_ANLA";
-            Programm_2 = "N_STAMM Aufrufart ANFI";
+            GJ = "2023";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT_02 Instance
+        public static Zuruecksetzen_GJ Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Startfile;
+        string _GJ;
 
         /// <summary>
-        /// Gets or sets the value of variable Startfile.
+        /// Gets or sets the value of variable GJ.
         /// </summary>
-        [TestVariable("f13b14d1-41f3-4174-8fa6-08d13646d63e")]
-        public string Startfile
+        [TestVariable("613698ba-497d-4ee8-b3d2-3b126d8a1816")]
+        public string GJ
         {
-            get { return _Startfile; }
-            set { _Startfile = value; }
-        }
-
-        string _Programm_1;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm_1.
-        /// </summary>
-        [TestVariable("bbb31ef7-4db2-4621-b960-94e219f2797b")]
-        public string Programm_1
-        {
-            get { return _Programm_1; }
-            set { _Programm_1 = value; }
-        }
-
-        string _Programm_2;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm_2.
-        /// </summary>
-        [TestVariable("4fb707f9-c999-4c5c-bcf3-86adca103d42")]
-        public string Programm_2
-        {
-            get { return _Programm_2; }
-            set { _Programm_2 = value; }
+            get { return _GJ; }
+            set { _GJ = value; }
         }
 
 #endregion
@@ -118,14 +92,17 @@ namespace N_ANLA_004.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_2 in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm_2, "", false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnfi.ClientArea.PbGjhrAktuell' at Center.", repo.FrmAnfi.ClientArea.PbGjhrAktuellInfo, new RecordItemIndex(0));
+            repo.FrmAnfi.ClientArea.PbGjhrAktuell.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmAnfi.TitleBar100AVZFirmenstamm'", repo.FrmAnfi.TitleBar100AVZFirmenstammInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmAnfi.TitleBar100AVZFirmenstammInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2022{Tab}' with focus on 'FrmAnfi.ClientArea.DfGjhrBez'.", repo.FrmAnfi.ClientArea.DfGjhrBezInfo, new RecordItemIndex(1));
+            repo.FrmAnfi.ClientArea.DfGjhrBez.PressKeys("2022{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'AVZ-Firmenstamm') on item 'FrmAnfi.TitleBar100AVZFirmenstamm'.", repo.FrmAnfi.TitleBar100AVZFirmenstammInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmAnfi.TitleBar100AVZFirmenstammInfo, "Text", "AVZ-Firmenstamm");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2022') on item 'FrmAnfi.ClientArea.DfGjhrBez'.", repo.FrmAnfi.ClientArea.DfGjhrBezInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.FrmAnfi.ClientArea.DfGjhrBezInfo, "Text", "2022");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnfi.PbDataAccessSave' at Center.", repo.FrmAnfi.PbDataAccessSaveInfo, new RecordItemIndex(3));
+            repo.FrmAnfi.PbDataAccessSave.Click();
             
         }
 

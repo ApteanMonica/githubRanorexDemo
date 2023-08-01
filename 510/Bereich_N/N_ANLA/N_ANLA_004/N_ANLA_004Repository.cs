@@ -129,11 +129,12 @@ namespace N_ANLA_004
         [RepositoryFolder("f6fbbd87-ce4b-49d4-84dd-f27a1c727929")]
         public partial class FrmAnlaAppFolder : RepoGenBaseFolder
         {
-            N_ANLA_004RepositoryFolders.GroupBox161Folder _groupbox161;
+            N_ANLA_004RepositoryFolders.GroupBox_Rubrik_AbgangFolder _groupbox_rubrik_abgang;
             RepoItemInfo _titlebar100avzanlagenInfo;
             RepoItemInfo _pbnewInfo;
             RepoItemInfo _pbbuchenbuchenInfo;
             RepoItemInfo _aktuell_anlagennrInfo;
+            RepoItemInfo _textInfo;
             RepoItemInfo _steuerInfo;
             RepoItemInfo _dfanwe1abgafabetragInfo;
 
@@ -143,11 +144,12 @@ namespace N_ANLA_004
             public FrmAnlaAppFolder(RepoGenBaseFolder parentFolder) :
                     base("FrmAnla", "/form[@controlname='frmAnla']", parentFolder, 30000, null, true, "f6fbbd87-ce4b-49d4-84dd-f27a1c727929", "")
             {
-                _groupbox161 = new N_ANLA_004RepositoryFolders.GroupBox161Folder(this);
+                _groupbox_rubrik_abgang = new N_ANLA_004RepositoryFolders.GroupBox_Rubrik_AbgangFolder(this);
                 _titlebar100avzanlagenInfo = new RepoItemInfo(this, "TitleBar100AVZAnlagen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "2272bff5-a5dd-4b37-a676-5c07c4c5c036");
                 _pbnewInfo = new RepoItemInfo(this, "PbNew", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']", "", 30000, null, "29bf8696-585f-4084-a9bc-e8118dac8f0f");
                 _pbbuchenbuchenInfo = new RepoItemInfo(this, "PbBuchenBuchen", "container[@controlname='RibbonBar']/container[@controlname='DMSGroup']/button[@controlname='pbBuchen_Buchen']", "", 30000, null, "d40ca5e4-ec46-4a34-bbe2-4212ac67b72e");
                 _aktuell_anlagennrInfo = new RepoItemInfo(this, "Aktuell_Anlagennr", "container[@controlname='ClientArea']/text[@controlname='dfAnla_nr']/text[@accessiblename='Aktuell']", "", 30000, null, "daa8b618-e567-4b04-ac79-bf5990c1439c");
+                _textInfo = new RepoItemInfo(this, "Text", "container[@controlname='ClientArea']/text[@controlname='dfAnla_nr']/text[@accessiblerole='Text']", "", 30000, null, "7b211afa-6a2f-4b45-bd38-216d47bfd53b");
                 _steuerInfo = new RepoItemInfo(this, "Steuer", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='Steue&r']", "", 30000, null, "8a2984ca-3ef2-4785-b2b3-4847435ab338");
                 _dfanwe1abgafabetragInfo = new RepoItemInfo(this, "DfAnwe1Abgafabetrag", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpSteuer']/container[@controlname='groupBox6_1']/text[@controlname='dfAnwe1_abgafabetrag']", "", 30000, null, "976d45bc-cc60-4687-b0c9-c36227489d30");
             }
@@ -273,6 +275,30 @@ namespace N_ANLA_004
             }
 
             /// <summary>
+            /// The Text item.
+            /// </summary>
+            [RepositoryItem("7b211afa-6a2f-4b45-bd38-216d47bfd53b")]
+            public virtual Ranorex.Text Text
+            {
+                get
+                {
+                    return _textInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text item info.
+            /// </summary>
+            [RepositoryItemInfo("7b211afa-6a2f-4b45-bd38-216d47bfd53b")]
+            public virtual RepoItemInfo TextInfo
+            {
+                get
+                {
+                    return _textInfo;
+                }
+            }
+
+            /// <summary>
             /// The Steuer item.
             /// </summary>
             [RepositoryItem("8a2984ca-3ef2-4785-b2b3-4847435ab338")]
@@ -321,34 +347,34 @@ namespace N_ANLA_004
             }
 
             /// <summary>
-            /// The GroupBox161 folder.
+            /// The GroupBox_Rubrik_Abgang folder.
             /// </summary>
             [RepositoryFolder("18ac6327-8936-4577-b808-b9cfe9498674")]
-            public virtual N_ANLA_004RepositoryFolders.GroupBox161Folder GroupBox161
+            public virtual N_ANLA_004RepositoryFolders.GroupBox_Rubrik_AbgangFolder GroupBox_Rubrik_Abgang
             {
-                get { return _groupbox161; }
+                get { return _groupbox_rubrik_abgang; }
             }
         }
 
         /// <summary>
-        /// The GroupBox161Folder folder.
+        /// The GroupBox_Rubrik_AbgangFolder folder.
         /// </summary>
         [RepositoryFolder("18ac6327-8936-4577-b808-b9cfe9498674")]
-        public partial class GroupBox161Folder : RepoGenBaseFolder
+        public partial class GroupBox_Rubrik_AbgangFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _dfanwe1abgbetragInfo;
-            RepoItemInfo _dfanwe1abgerloesInfo;
+            RepoItemInfo _dfanwe1abgbetrag_ahk_betrag_abgangInfo;
             RepoItemInfo _dfanwe1abgrbwbetragInfo;
+            RepoItemInfo _dfanwe1abgerloesInfo;
 
             /// <summary>
-            /// Creates a new GroupBox161  folder.
+            /// Creates a new GroupBox_Rubrik_Abgang  folder.
             /// </summary>
-            public GroupBox161Folder(RepoGenBaseFolder parentFolder) :
-                    base("GroupBox161", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpSteuer']/container[@controlname='groupBox16_1']", parentFolder, 30000, null, false, "18ac6327-8936-4577-b808-b9cfe9498674", "")
+            public GroupBox_Rubrik_AbgangFolder(RepoGenBaseFolder parentFolder) :
+                    base("GroupBox_Rubrik_Abgang", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpSteuer']/container[@controlname='groupBox16_1']", parentFolder, 30000, null, false, "18ac6327-8936-4577-b808-b9cfe9498674", "")
             {
-                _dfanwe1abgbetragInfo = new RepoItemInfo(this, "DfAnwe1Abgbetrag", "text[@controlname='dfAnwe1_abgbetrag']", "", 30000, null, "9a9887e6-42a6-4126-a5bb-329e1cc8861d");
-                _dfanwe1abgerloesInfo = new RepoItemInfo(this, "DfAnwe1Abgerloes", "text[@controlname='dfAnwe1_abgerloes']", "", 30000, null, "8d409521-9159-476e-a6fd-8f1ea66c4b97");
+                _dfanwe1abgbetrag_ahk_betrag_abgangInfo = new RepoItemInfo(this, "DfAnwe1Abgbetrag_AHK_Betrag_Abgang", "text[@controlname='dfAnwe1_abgbetrag']", "", 30000, null, "9a9887e6-42a6-4126-a5bb-329e1cc8861d");
                 _dfanwe1abgrbwbetragInfo = new RepoItemInfo(this, "DfAnwe1Abgrbwbetrag", "text[@controlname='dfAnwe1_abgrbwbetrag']", "", 30000, null, "1eeaa91d-a513-40d8-bcaf-6c2f8deb2a7a");
+                _dfanwe1abgerloesInfo = new RepoItemInfo(this, "DfAnwe1Abgerloes", "text[@controlname='dfAnwe1_abgerloes']", "", 30000, null, "8d409521-9159-476e-a6fd-8f1ea66c4b97");
             }
 
             /// <summary>
@@ -376,50 +402,26 @@ namespace N_ANLA_004
             }
 
             /// <summary>
-            /// The DfAnwe1Abgbetrag item.
+            /// The DfAnwe1Abgbetrag_AHK_Betrag_Abgang item.
             /// </summary>
             [RepositoryItem("9a9887e6-42a6-4126-a5bb-329e1cc8861d")]
-            public virtual Ranorex.Text DfAnwe1Abgbetrag
+            public virtual Ranorex.Text DfAnwe1Abgbetrag_AHK_Betrag_Abgang
             {
                 get
                 {
-                    return _dfanwe1abgbetragInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _dfanwe1abgbetrag_ahk_betrag_abgangInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The DfAnwe1Abgbetrag item info.
+            /// The DfAnwe1Abgbetrag_AHK_Betrag_Abgang item info.
             /// </summary>
             [RepositoryItemInfo("9a9887e6-42a6-4126-a5bb-329e1cc8861d")]
-            public virtual RepoItemInfo DfAnwe1AbgbetragInfo
+            public virtual RepoItemInfo DfAnwe1Abgbetrag_AHK_Betrag_AbgangInfo
             {
                 get
                 {
-                    return _dfanwe1abgbetragInfo;
-                }
-            }
-
-            /// <summary>
-            /// The DfAnwe1Abgerloes item.
-            /// </summary>
-            [RepositoryItem("8d409521-9159-476e-a6fd-8f1ea66c4b97")]
-            public virtual Ranorex.Text DfAnwe1Abgerloes
-            {
-                get
-                {
-                    return _dfanwe1abgerloesInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The DfAnwe1Abgerloes item info.
-            /// </summary>
-            [RepositoryItemInfo("8d409521-9159-476e-a6fd-8f1ea66c4b97")]
-            public virtual RepoItemInfo DfAnwe1AbgerloesInfo
-            {
-                get
-                {
-                    return _dfanwe1abgerloesInfo;
+                    return _dfanwe1abgbetrag_ahk_betrag_abgangInfo;
                 }
             }
 
@@ -444,6 +446,30 @@ namespace N_ANLA_004
                 get
                 {
                     return _dfanwe1abgrbwbetragInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfAnwe1Abgerloes item.
+            /// </summary>
+            [RepositoryItem("8d409521-9159-476e-a6fd-8f1ea66c4b97")]
+            public virtual Ranorex.Text DfAnwe1Abgerloes
+            {
+                get
+                {
+                    return _dfanwe1abgerloesInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfAnwe1Abgerloes item info.
+            /// </summary>
+            [RepositoryItemInfo("8d409521-9159-476e-a6fd-8f1ea66c4b97")]
+            public virtual RepoItemInfo DfAnwe1AbgerloesInfo
+            {
+                get
+                {
+                    return _dfanwe1abgerloesInfo;
                 }
             }
         }

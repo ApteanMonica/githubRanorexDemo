@@ -6,6 +6,16 @@
 			id="01ba49ee-2249-4a5e-84b6-961c0aa35411"
 			name="teardown">
 			</teardown>
+			<testcase
+			id="0582c3ab-0986-48e0-8877-df5ac2fc1ae1"
+			name="GJ_zurücksetzen">
+			</testcase>
+			<testmodule
+			id="074c949f-8076-4c61-b74c-1c5a5574cad5"
+			name="CloseAUT_03"
+			ref="892c439a-3e50-43df-a445-13a42f234f91"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="1684e315-e661-42ce-b0c1-0e634971ca07"
 			name="Hinweismeldung_GJ"
@@ -16,6 +26,9 @@
 			id="18171c63-5e0f-4ab8-8525-8403050526b2"
 			name="N_ANLA_004"
 			reportlevel="Info;20">
+				<description>
+					<![CDATA[<p>Im GJ 2022 versuchen den Abgang mit 2023 zu erfassen, indem man das GJ auf 2023 umstellt. Sollte nicht mögich sein. Hier muss es zur Fehler/Hinweismeldung kommen. GJ in N_STAMM ändern auf 2023 und anschließend den Abgang erfassen. Erfasste Daten überprüfen und anschließend GJ wieder zurücksetzen auf 2022. </p>]]>
+				</description>
 				<parameters>
 					<param
 					name="Startfile"
@@ -51,7 +64,7 @@
 					</param>
 					<param
 					name="Abgangserloes"
-					value="150">
+					value="150,00">
 					</param>
 					<param
 					name="Abgabegrund"
@@ -65,6 +78,18 @@
 					name="GJ_bis"
 					value="31122023">
 					</param>
+					<param
+					name="Abgangs_AfA"
+					value="1065,00">
+					</param>
+					<param
+					name="AHK_Betrag_Abgang"
+					value="3550">
+					</param>
+					<param
+					name="RBW"
+					value="2485,00">
+					</param>
 				</parameters>
 			</testcase>
 			<testcase
@@ -76,6 +101,46 @@
 			name="Kontrolle_Abgang"
 			ref="e6682aa3-c111-4ae2-9cd7-80afbd22b55c"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Abgangs_AfA"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="0d173fd4-50e5-4911-b6f3-56cf25196f08"
+					variablename="Abgangs_AfA">
+					</var>
+					<var
+					dataname="Anlagennr"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="b6361b1d-a98c-4d96-99c0-76f539745aff"
+					variablename="Anlagennr">
+					</var>
+					<var
+					dataname="AHK_Betrag_Abgang"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="6233f003-53e6-4333-aa01-fda0d433c005"
+					variablename="AHK_Betrag_Abgang">
+					</var>
+					<var
+					dataname="RBW"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="543f2b1f-1e81-4546-8ac3-84f376e042de"
+					variablename="RBW">
+					</var>
+					<var
+					dataname="Abgangserloes"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="5876bc06-97cc-403e-9eb4-d0e26c027a29"
+					variablename="Abgangserloes">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Kontrolle_Erloese"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="5876bc06-97cc-403e-9eb4-d0e26c027a29"
+					variablename="Kontrolle_Erloese">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="1f917090-dc1f-4286-8a94-5ec620973018"
@@ -116,6 +181,7 @@
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
+			enabled="False"
 			id="46ea7928-c288-4770-9b0b-b254ddc47cec"
 			name="CloseAUT"
 			ref="e18f24f4-ee3e-4cd9-939e-55f3d200dc33"
@@ -132,6 +198,26 @@
 					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
 					variableid="4459e8aa-4be2-4f26-835a-f0dcb5ca5e19"
 					variablename="GJ">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="57bfaf67-c13e-4288-a193-3a5a05c89af1"
+			name="StartAUT_03"
+			ref="2e4d3c44-06ba-4a47-ae48-9e5ae95f83e6"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="bb167b43-31dd-4b1c-aa95-046065fe1021"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_2"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="916f6945-3e1e-4ec4-9b6a-d6282ad73243"
+					variablename="Programm_2">
 					</var>
 				</databinding>
 			</testmodule>
@@ -161,6 +247,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="88e41278-27ce-4032-a75d-f2d6a84b5c7a"
+			name="setup">
+			</setup>
 			<teardown
 			id="8ad8cdc7-2553-40d4-9ba6-15195ac0c49f"
 			name="teardown">
@@ -340,11 +430,29 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="fb01b5c3-efca-454c-b7ce-ada8cfb6318e"
+			name="Zuruecksetzen_GJ"
+			ref="a6668a8d-0bcd-4990-90ed-c82e5551c178"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="GJ"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="613698ba-497d-4ee8-b3d2-3b126d8a1816"
+					variablename="GJ">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="fbaf23f0-9f40-416e-adce-2ec6f9f234ee"
 			name="CloseAUT_02"
 			ref="e9bb5314-dc5b-4d06-a9e7-fadc159cafde"
 			type="Recording">
 			</testmodule>
+			<teardown
+			id="ff3da8f2-c71b-45c3-93d0-6e57c28e9bb5"
+			name="teardown">
+			</teardown>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -425,13 +533,37 @@
 						name="Ueberpruefung_Eingabe">
 						</testmodule>
 						<testmodule
-						id="63250828-b471-4072-81f2-2f92e4f14fda"
-						name="CloseAUT">
-						</testmodule>
-						<testmodule
 						id="1d160ae2-f7d0-4421-989b-67147f3f63f0"
 						name="Kontrolle_Abgang">
 						</testmodule>
+						<testmodule
+						id="63250828-b471-4072-81f2-2f92e4f14fda"
+						name="CloseAUT">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="0582c3ab-0986-48e0-8877-df5ac2fc1ae1"
+					name="GJ_zurücksetzen">
+						<setup
+						id="88e41278-27ce-4032-a75d-f2d6a84b5c7a"
+						name="setup">
+							<testmodule
+							id="57bfaf67-c13e-4288-a193-3a5a05c89af1"
+							name="StartAUT_03">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="fb01b5c3-efca-454c-b7ce-ada8cfb6318e"
+						name="Zuruecksetzen_GJ">
+						</testmodule>
+						<teardown
+						id="ff3da8f2-c71b-45c3-93d0-6e57c28e9bb5"
+						name="teardown">
+							<testmodule
+							id="074c949f-8076-4c61-b74c-1c5a5574cad5"
+							name="CloseAUT_03">
+							</testmodule>
+						</teardown>
 					</testcase>
 				</testcase>
 			</testsuite>
@@ -443,6 +575,9 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="0582c3ab-0986-48e0-8877-df5ac2fc1ae1">
+			</testcontainer>
 			<testcontainer
 			id="18171c63-5e0f-4ab8-8525-8403050526b2">
 			</testcontainer>

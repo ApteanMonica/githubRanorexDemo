@@ -47,7 +47,7 @@ namespace N_ANLA_004.Recordings
             Buchungsdatum = "28.02.2023";
             Beleg = "Abgang_N_ANLA_004_01";
             Sachbearbeiter = "BAR";
-            Abgangserloes = "150";
+            Abgangserloes = "150,00";
             Abgabegrund = "A";
         }
 
