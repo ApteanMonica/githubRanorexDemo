@@ -44,6 +44,10 @@ namespace N_ANLA_004.Recordings
             GJ = "2023";
             Anlagennr = "N_ANLA_004_01";
             Buchungsdatum = "28.02.2023";
+            Beleg = "Abgang_N_ANLA_004_01";
+            Sachbearbeiter = "BAR";
+            Abgangserloes = "150";
+            Abgabegrund = "A";
         }
 
         /// <summary>
@@ -90,6 +94,54 @@ namespace N_ANLA_004.Recordings
         {
             get { return _Buchungsdatum; }
             set { _Buchungsdatum = value; }
+        }
+
+        string _Beleg;
+
+        /// <summary>
+        /// Gets or sets the value of variable Beleg.
+        /// </summary>
+        [TestVariable("b78d7320-9f03-4dba-8550-677ca9f0a8c5")]
+        public string Beleg
+        {
+            get { return _Beleg; }
+            set { _Beleg = value; }
+        }
+
+        string _Sachbearbeiter;
+
+        /// <summary>
+        /// Gets or sets the value of variable Sachbearbeiter.
+        /// </summary>
+        [TestVariable("1b1401c6-1622-4474-9491-9c666353cd98")]
+        public string Sachbearbeiter
+        {
+            get { return _Sachbearbeiter; }
+            set { _Sachbearbeiter = value; }
+        }
+
+        string _Abgangserloes;
+
+        /// <summary>
+        /// Gets or sets the value of variable Abgangserloes.
+        /// </summary>
+        [TestVariable("6e214de1-e500-4d59-9224-649935e67ea8")]
+        public string Abgangserloes
+        {
+            get { return _Abgangserloes; }
+            set { _Abgangserloes = value; }
+        }
+
+        string _Abgabegrund;
+
+        /// <summary>
+        /// Gets or sets the value of variable Abgabegrund.
+        /// </summary>
+        [TestVariable("f929911a-69d0-4106-b702-5167d962bfa2")]
+        public string Abgabegrund
+        {
+            get { return _Abgabegrund; }
+            set { _Abgabegrund = value; }
         }
 
 #endregion
@@ -165,6 +217,21 @@ namespace N_ANLA_004.Recordings
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Buchungsdatum' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Buchungsdatum'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.BuchungsdatumInfo, new RecordItemIndex(15));
             repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Buchungsdatum.PressKeys(Buchungsdatum);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Beleg' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Belegnummer'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_BelegnummerInfo, new RecordItemIndex(16));
+            repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Belegnummer.PressKeys(Beleg);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Buchungsdatum' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Belegdatum'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_BelegdatumInfo, new RecordItemIndex(17));
+            repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Belegdatum.PressKeys(Buchungsdatum);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Sachbearbeiter' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Sachbearbeiter'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_SachbearbeiterInfo, new RecordItemIndex(18));
+            repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Text_Sachbearbeiter.PressKeys(Sachbearbeiter);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Abgangserloes' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Abgangserloes'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.AbgangserloesInfo, new RecordItemIndex(19));
+            repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Abgangserloes.PressKeys(Abgangserloes);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Abgabegrund' with focus on 'DlgBuchen.ClientArea_Maske_Abgang_buchen.Abgangsgrund'.", repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.AbgangsgrundInfo, new RecordItemIndex(20));
+            repo.DlgBuchen.ClientArea_Maske_Abgang_buchen.Abgangsgrund.PressKeys(Abgabegrund);
             
         }
 
