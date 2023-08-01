@@ -121,13 +121,16 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100ExterneBuchungenVerbuchen.PbCommonLaden' at Center.", repo.Form100ExterneBuchungenVerbuchen.PbCommonLadenInfo, new RecordItemIndex(5));
             repo.Form100ExterneBuchungenVerbuchen.PbCommonLaden.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_004.Column0_Stapel'.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_004.Column0_StapelInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_004.Column0_Stapel'", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_004.Column0_StapelInfo, new ActionTimeout(60000), new RecordItemIndex(6));
+            repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_004.Column0_StapelInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_004.Column0_Stapel'.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_004.Column0_StapelInfo, new RecordItemIndex(7));
             Validate.Exists(repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_004.Column0_StapelInfo);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_004.Column0_Stapel' at Center.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_004.Column0_StapelInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_004.Column0_Stapel' at Center.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_004.Column0_StapelInfo, new RecordItemIndex(8));
             repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_004.Column0_Stapel.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100ExterneBuchungenVerbuchen.PbCommonVerbuchen' at Center.", repo.Form100ExterneBuchungenVerbuchen.PbCommonVerbuchenInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100ExterneBuchungenVerbuchen.PbCommonVerbuchen' at Center.", repo.Form100ExterneBuchungenVerbuchen.PbCommonVerbuchenInfo, new RecordItemIndex(9));
             repo.Form100ExterneBuchungenVerbuchen.PbCommonVerbuchen.Click();
             
         }
