@@ -168,10 +168,8 @@ namespace B_BUCH_001.Recordings_B_BUAB
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='R') on item 'TblB_b_buab.FlexGrid_b_buab.ColArtRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColArtRow1Info, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColArtRow1Info, "Text", "R");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='*') on item 'TblB_b_buab.FlexGrid_b_buab.ColGKtoNrRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColGKtoNrRow1Info, new RecordItemIndex(8));
-                Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColGKtoNrRow1Info, "Text", "*", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(8)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='*') on item 'TblB_b_buab.FlexGrid_b_buab.ColGKtoNrRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColGKtoNrRow1Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColGKtoNrRow1Info, "Text", "*");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Lieferant) on item 'TblB_b_buab.FlexGrid_b_buab.ColAdrNrRow1'.", repo.TblB_b_buab.FlexGrid_b_buab.ColAdrNrRow1Info, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.TblB_b_buab.FlexGrid_b_buab.ColAdrNrRow1Info, "Text", Lieferant);
