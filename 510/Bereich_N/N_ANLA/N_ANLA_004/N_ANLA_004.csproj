@@ -13,6 +13,7 @@
     <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
     <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>7e0541fb-0f50-44cf-b34f-26c6ddbee835</projectdefaultrepository>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -150,6 +151,18 @@
       <UserCode>true</UserCode>
       <id>e301e280-46b0-4682-8a0d-68331f211ccc</id>
     </Compile>
+    <Compile Include="Recordings\CloseAUT_03.cs">
+      <BoundTo>104e8652-cb36-46b3-a262-8de3b7989f76</BoundTo>
+      <DependentUpon>CloseAUT_03.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5ff5d5d2-3492-49dd-923a-405af1baf2cc</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT_03.UserCode.cs">
+      <BoundTo>104e8652-cb36-46b3-a262-8de3b7989f76</BoundTo>
+      <DependentUpon>CloseAUT_03.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>38c80ca4-d863-4064-806d-91500c166cbe</id>
+    </Compile>
     <Compile Include="Recordings\GJ_aendern.cs">
       <BoundTo>6740e37c-2a31-443e-8be8-59cdc0dda79e</BoundTo>
       <DependentUpon>GJ_aendern.rxrec</DependentUpon>
@@ -210,6 +223,18 @@
       <UserCode>true</UserCode>
       <id>dd767b41-0892-4adf-8c1a-dd5768bf0b59</id>
     </Compile>
+    <Compile Include="Recordings\StartAUT_03.cs">
+      <BoundTo>3845adf1-ef48-4050-a132-d57ee0945263</BoundTo>
+      <DependentUpon>StartAUT_03.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>95a08431-e3f6-4419-aef0-b4c0a090fede</id>
+    </Compile>
+    <Compile Include="Recordings\StartAUT_03.UserCode.cs">
+      <BoundTo>3845adf1-ef48-4050-a132-d57ee0945263</BoundTo>
+      <DependentUpon>StartAUT_03.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9e995b67-ccf4-4c8e-baa6-f2f2bb6ed153</id>
+    </Compile>
     <Compile Include="Recordings\Ueberpruefung_Eingabe.cs">
       <BoundTo>c6921c3b-94a7-47a6-9970-91d3a7f5777e</BoundTo>
       <DependentUpon>Ueberpruefung_Eingabe.rxrec</DependentUpon>
@@ -221,6 +246,18 @@
       <DependentUpon>Ueberpruefung_Eingabe.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>068891bc-17c2-4ed7-880e-5338fec483b9</id>
+    </Compile>
+    <Compile Include="Recordings\Zuruecksetzen_GJ.cs">
+      <BoundTo>621ab513-0843-4f60-9cc8-911df0229037</BoundTo>
+      <DependentUpon>Zuruecksetzen_GJ.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d966a8b3-eafd-49df-ab19-3dab5f2fef56</id>
+    </Compile>
+    <Compile Include="Recordings\Zuruecksetzen_GJ.UserCode.cs">
+      <BoundTo>621ab513-0843-4f60-9cc8-911df0229037</BoundTo>
+      <DependentUpon>Zuruecksetzen_GJ.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ea651339-a522-4e17-9390-cda7dcfffeff</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -263,6 +300,11 @@
       <id>eb8270fa-7c58-4b41-bcf2-2cce7e7ce7ea</id>
       <recordtableid>e9bb5314-dc5b-4d06-a9e7-fadc159cafde</recordtableid>
     </None>
+    <None Include="Recordings\CloseAUT_03.rxrec">
+      <BoundTo>7e0541fb-0f50-44cf-b34f-26c6ddbee835</BoundTo>
+      <id>104e8652-cb36-46b3-a262-8de3b7989f76</id>
+      <recordtableid>892c439a-3e50-43df-a445-13a42f234f91</recordtableid>
+    </None>
     <None Include="Recordings\GJ_aendern.rxrec">
       <BoundTo>7e0541fb-0f50-44cf-b34f-26c6ddbee835</BoundTo>
       <id>6740e37c-2a31-443e-8be8-59cdc0dda79e</id>
@@ -288,10 +330,20 @@
       <id>3c3d42a5-b506-4e32-9073-df8c29f7707f</id>
       <recordtableid>927c0ae5-86d5-4480-86f0-626057fb538b</recordtableid>
     </None>
+    <None Include="Recordings\StartAUT_03.rxrec">
+      <BoundTo>7e0541fb-0f50-44cf-b34f-26c6ddbee835</BoundTo>
+      <id>3845adf1-ef48-4050-a132-d57ee0945263</id>
+      <recordtableid>2e4d3c44-06ba-4a47-ae48-9e5ae95f83e6</recordtableid>
+    </None>
     <None Include="Recordings\Ueberpruefung_Eingabe.rxrec">
       <BoundTo>7e0541fb-0f50-44cf-b34f-26c6ddbee835</BoundTo>
       <id>c6921c3b-94a7-47a6-9970-91d3a7f5777e</id>
       <recordtableid>9bc1fd21-88d4-41ca-81ab-4fba15ff06f5</recordtableid>
+    </None>
+    <None Include="Recordings\Zuruecksetzen_GJ.rxrec">
+      <BoundTo>7e0541fb-0f50-44cf-b34f-26c6ddbee835</BoundTo>
+      <id>621ab513-0843-4f60-9cc8-911df0229037</id>
+      <recordtableid>a6668a8d-0bcd-4990-90ed-c82e5551c178</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

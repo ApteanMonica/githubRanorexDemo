@@ -28,6 +28,26 @@ mode="Global">
 		name="Anlagennr">
 			N_ANLA_004_01
 		</var>
+		<var
+		id="0d173fd4-50e5-4911-b6f3-56cf25196f08"
+		name="Abgangs_AfA">
+			1065,00
+		</var>
+		<var
+		id="6233f003-53e6-4333-aa01-fda0d433c005"
+		name="AHK_Betrag_Abgang">
+			3550
+		</var>
+		<var
+		id="543f2b1f-1e81-4546-8ac3-84f376e042de"
+		name="RBW">
+			2485,00
+		</var>
+		<var
+		id="5876bc06-97cc-403e-9eb4-d0e26c027a29"
+		name="Abgangserloes">
+			150,00
+		</var>
 	</variables>
 	<recorditems>
 		<WaitForRecordItem
@@ -213,7 +233,7 @@ mode="Global">
 				</binding>
 			</bindings>
 			<info
-			id="daa8b618-e567-4b04-ac79-bf5990c1439c"
+			id="7b211afa-6a2f-4b45-bd38-216d47bfd53b"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -223,7 +243,7 @@ mode="Global">
 				hasfocus="False"
 				index="0"
 				prefcap="text"
-				rect="2310,224,77,17"
+				rect="2074,268,77,17"
 				role="text"
 				snapElem=""
 				valid="True"
@@ -231,11 +251,7 @@ mode="Global">
 					<attribute
 					name="text"
 					type="System.String">
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						Aktuell
+						N_ANLA_004_01
 					</attribute>
 					<attribute
 					name="accessiblerole"
@@ -245,15 +261,16 @@ mode="Global">
 					<attribute
 					name="accessiblestate"
 					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
+						ReadOnly, Focusable
 					</attribute>
 					<attribute
 					name="accessiblevalue"
 					type="System.String">
+						N_ANLA_004_01
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='frmAnla']/container[@controlname='ClientArea']/text[@controlname='dfAnla_nr']/text[@accessiblename='Aktuell']
+					/form[@controlname='frmAnla']/container[@controlname='ClientArea']/text[@controlname='dfAnla_nr']/text[@accessiblerole='Text']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -340,6 +357,137 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c9f193cc-a4af-4d76-82bc-dddba7363577">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Abgangs_AfA">
+				</binding>
+			</bindings>
+			<info
+			id="976d45bc-cc60-4687-b0c9-c36227489d30"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmAnla']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpSteuer']/container[@controlname='groupBox6_1']/text[@controlname='dfAnwe1_abgafabetrag']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c9f193cc-a4af-4d76-82bc-dddba7363577">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="AHK_Betrag_Abgang">
+				</binding>
+			</bindings>
+			<info
+			id="9a9887e6-42a6-4126-a5bb-329e1cc8861d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmAnla']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpSteuer']/container[@controlname='groupBox16_1']/text[@controlname='dfAnwe1_abgbetrag']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c9f193cc-a4af-4d76-82bc-dddba7363577">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="RBW">
+				</binding>
+			</bindings>
+			<info
+			id="1eeaa91d-a513-40d8-bcaf-6c2f8deb2a7a"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmAnla']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpSteuer']/container[@controlname='groupBox16_1']/text[@controlname='dfAnwe1_abgrbwbetrag']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c9f193cc-a4af-4d76-82bc-dddba7363577">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Abgangserloes">
+				</binding>
+			</bindings>
+			<info
+			id="8d409521-9159-476e-a6fd-8f1ea66c4b97"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmAnla']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpSteuer']/container[@controlname='groupBox16_1']/text[@controlname='dfAnwe1_abgerloes']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<keyitem
+		action="Press"
+		data="F4, Alt"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="c326ac30-faeb-4c6b-8b2e-3e053b5f6016"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
 	</recorditems>
 	<repository
 	id="ff1b201e-e919-416c-a5c6-90eb72284f24"

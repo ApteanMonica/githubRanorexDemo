@@ -24,32 +24,31 @@ namespace N_ANLA_004.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT_02 recording.
+    ///The StartAUT_03 recording.
     /// </summary>
-    [TestModule("927c0ae5-86d5-4480-86f0-626057fb538b", ModuleType.Recording, 1)]
-    public partial class StartAUT_02 : ITestModule
+    [TestModule("2e4d3c44-06ba-4a47-ae48-9e5ae95f83e6", ModuleType.Recording, 1)]
+    public partial class StartAUT_03 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_ANLA_004.N_ANLA_004Repository repository.
         /// </summary>
         public static global::N_ANLA_004.N_ANLA_004Repository repo = global::N_ANLA_004.N_ANLA_004Repository.Instance;
 
-        static StartAUT_02 instance = new StartAUT_02();
+        static StartAUT_03 instance = new StartAUT_03();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT_02()
+        public StartAUT_03()
         {
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm_1 = "N_ANLA";
             Programm_2 = "N_STAMM Aufrufart ANFI";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT_02 Instance
+        public static StartAUT_03 Instance
         {
             get { return instance; }
         }
@@ -61,23 +60,11 @@ namespace N_ANLA_004.Recordings
         /// <summary>
         /// Gets or sets the value of variable Startfile.
         /// </summary>
-        [TestVariable("f13b14d1-41f3-4174-8fa6-08d13646d63e")]
+        [TestVariable("bb167b43-31dd-4b1c-aa95-046065fe1021")]
         public string Startfile
         {
             get { return _Startfile; }
             set { _Startfile = value; }
-        }
-
-        string _Programm_1;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm_1.
-        /// </summary>
-        [TestVariable("bbb31ef7-4db2-4621-b960-94e219f2797b")]
-        public string Programm_1
-        {
-            get { return _Programm_1; }
-            set { _Programm_1 = value; }
         }
 
         string _Programm_2;
@@ -85,7 +72,7 @@ namespace N_ANLA_004.Recordings
         /// <summary>
         /// Gets or sets the value of variable Programm_2.
         /// </summary>
-        [TestVariable("4fb707f9-c999-4c5c-bcf3-86adca103d42")]
+        [TestVariable("916f6945-3e1e-4ec4-9b6a-d6282ad73243")]
         public string Programm_2
         {
             get { return _Programm_2; }

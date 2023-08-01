@@ -24,73 +24,34 @@ namespace N_ANLA_004.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT_02 recording.
+    ///The CloseAUT_03 recording.
     /// </summary>
-    [TestModule("927c0ae5-86d5-4480-86f0-626057fb538b", ModuleType.Recording, 1)]
-    public partial class StartAUT_02 : ITestModule
+    [TestModule("892c439a-3e50-43df-a445-13a42f234f91", ModuleType.Recording, 1)]
+    public partial class CloseAUT_03 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_ANLA_004.N_ANLA_004Repository repository.
         /// </summary>
         public static global::N_ANLA_004.N_ANLA_004Repository repo = global::N_ANLA_004.N_ANLA_004Repository.Instance;
 
-        static StartAUT_02 instance = new StartAUT_02();
+        static CloseAUT_03 instance = new CloseAUT_03();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT_02()
+        public CloseAUT_03()
         {
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm_1 = "N_ANLA";
-            Programm_2 = "N_STAMM Aufrufart ANFI";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT_02 Instance
+        public static CloseAUT_03 Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Startfile;
-
-        /// <summary>
-        /// Gets or sets the value of variable Startfile.
-        /// </summary>
-        [TestVariable("f13b14d1-41f3-4174-8fa6-08d13646d63e")]
-        public string Startfile
-        {
-            get { return _Startfile; }
-            set { _Startfile = value; }
-        }
-
-        string _Programm_1;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm_1.
-        /// </summary>
-        [TestVariable("bbb31ef7-4db2-4621-b960-94e219f2797b")]
-        public string Programm_1
-        {
-            get { return _Programm_1; }
-            set { _Programm_1 = value; }
-        }
-
-        string _Programm_2;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm_2.
-        /// </summary>
-        [TestVariable("4fb707f9-c999-4c5c-bcf3-86adca103d42")]
-        public string Programm_2
-        {
-            get { return _Programm_2; }
-            set { _Programm_2 = value; }
-        }
 
 #endregion
 
@@ -118,14 +79,8 @@ namespace N_ANLA_004.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_2 in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm_2, "", false);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmAnfi.TitleBar100AVZFirmenstamm'", repo.FrmAnfi.TitleBar100AVZFirmenstammInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmAnfi.TitleBar100AVZFirmenstammInfo.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'AVZ-Firmenstamm') on item 'FrmAnfi.TitleBar100AVZFirmenstamm'.", repo.FrmAnfi.TitleBar100AVZFirmenstammInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmAnfi.TitleBar100AVZFirmenstammInfo, "Text", "AVZ-Firmenstamm");
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmAnfi.TitleBar100AVZFirmenstamm'.", repo.FrmAnfi.TitleBar100AVZFirmenstammInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.FrmAnfi.TitleBar100AVZFirmenstamm, 1000);
             
         }
 

@@ -42,6 +42,10 @@ namespace N_ANLA_004.Recordings
         public Kontrolle_Abgang()
         {
             Anlagennr = "N_ANLA_004_01";
+            Abgangs_AfA = "1065,00";
+            AHK_Betrag_Abgang = "3550";
+            RBW = "2485,00";
+            Abgangserloes = "150,00";
         }
 
         /// <summary>
@@ -64,6 +68,54 @@ namespace N_ANLA_004.Recordings
         {
             get { return _Anlagennr; }
             set { _Anlagennr = value; }
+        }
+
+        string _Abgangs_AfA;
+
+        /// <summary>
+        /// Gets or sets the value of variable Abgangs_AfA.
+        /// </summary>
+        [TestVariable("0d173fd4-50e5-4911-b6f3-56cf25196f08")]
+        public string Abgangs_AfA
+        {
+            get { return _Abgangs_AfA; }
+            set { _Abgangs_AfA = value; }
+        }
+
+        string _AHK_Betrag_Abgang;
+
+        /// <summary>
+        /// Gets or sets the value of variable AHK_Betrag_Abgang.
+        /// </summary>
+        [TestVariable("6233f003-53e6-4333-aa01-fda0d433c005")]
+        public string AHK_Betrag_Abgang
+        {
+            get { return _AHK_Betrag_Abgang; }
+            set { _AHK_Betrag_Abgang = value; }
+        }
+
+        string _RBW;
+
+        /// <summary>
+        /// Gets or sets the value of variable RBW.
+        /// </summary>
+        [TestVariable("543f2b1f-1e81-4546-8ac3-84f376e042de")]
+        public string RBW
+        {
+            get { return _RBW; }
+            set { _RBW = value; }
+        }
+
+        string _Abgangserloes;
+
+        /// <summary>
+        /// Gets or sets the value of variable Abgangserloes.
+        /// </summary>
+        [TestVariable("5876bc06-97cc-403e-9eb4-d0e26c027a29")]
+        public string Abgangserloes
+        {
+            get { return _Abgangserloes; }
+            set { _Abgangserloes = value; }
         }
 
 #endregion
@@ -105,11 +157,26 @@ namespace N_ANLA_004.Recordings
             Keyboard.PrepareFocus(repo.FrmAnla.Aktuell_Anlagennr);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anlagennr) on item 'FrmAnla.Aktuell_Anlagennr'.", repo.FrmAnla.Aktuell_AnlagennrInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.FrmAnla.Aktuell_AnlagennrInfo, "Text", Anlagennr);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Anlagennr) on item 'FrmAnla.Text'.", repo.FrmAnla.TextInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FrmAnla.TextInfo, "Text", Anlagennr);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnla.Steuer' at Center.", repo.FrmAnla.SteuerInfo, new RecordItemIndex(5));
             repo.FrmAnla.Steuer.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Abgangs_AfA) on item 'FrmAnla.DfAnwe1Abgafabetrag'.", repo.FrmAnla.DfAnwe1AbgafabetragInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmAnla.DfAnwe1AbgafabetragInfo, "Text", Abgangs_AfA);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$AHK_Betrag_Abgang) on item 'FrmAnla.GroupBox_Rubrik_Abgang.DfAnwe1Abgbetrag_AHK_Betrag_Abgang'.", repo.FrmAnla.GroupBox_Rubrik_Abgang.DfAnwe1Abgbetrag_AHK_Betrag_AbgangInfo, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.FrmAnla.GroupBox_Rubrik_Abgang.DfAnwe1Abgbetrag_AHK_Betrag_AbgangInfo, "Text", AHK_Betrag_Abgang);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$RBW) on item 'FrmAnla.GroupBox_Rubrik_Abgang.DfAnwe1Abgrbwbetrag'.", repo.FrmAnla.GroupBox_Rubrik_Abgang.DfAnwe1AbgrbwbetragInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.FrmAnla.GroupBox_Rubrik_Abgang.DfAnwe1AbgrbwbetragInfo, "Text", RBW);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Abgangserloes) on item 'FrmAnla.GroupBox_Rubrik_Abgang.DfAnwe1Abgerloes'.", repo.FrmAnla.GroupBox_Rubrik_Abgang.DfAnwe1AbgerloesInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmAnla.GroupBox_Rubrik_Abgang.DfAnwe1AbgerloesInfo, "Text", Abgangserloes);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press.", new RecordItemIndex(10));
+            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }
 
