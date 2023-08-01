@@ -6,6 +6,16 @@
 			id="1a0c51ba-8f22-4b79-ad6c-91e634b76bbc"
 			name="setup">
 			</setup>
+			<testmodule
+			enabled="False"
+			id="3874a79b-97ae-4416-9b69-9dd7a880487c"
+			name="Zeilen_pruefen"
+			ref="76b63d1c-39a0-4fcb-8e4a-860e66b82034"
+			type="Recording">
+				<description>
+					<![CDATA[ändern -kopiert von K_VERR]]>
+				</description>
+			</testmodule>
 			<testcase
 			id="4a209f00-a721-4cac-acff-45733faeb343"
 			name="TestCase">
@@ -66,12 +76,12 @@
 					value="2020">
 					</param>
 					<param
-					name="Periode_MM"
-					value="01">
+					name="Periode"
+					value="1">
 					</param>
 					<param
-					name="Periode_M"
-					value="1">
+					name="Periode_MM"
+					value="01">
 					</param>
 				</parameters>
 			</testcase>
@@ -103,6 +113,29 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testmodule
+			id="df870f9f-3d8a-493d-ae66-e7d95e692860"
+			name="Einschraenkungen_laden"
+			ref="5aa2cc32-2742-49fa-80c3-5d024d96e3cc"
+			type="Recording">
+				<description>
+					<![CDATA[ändern - kopiert von K_VERR]]>
+				</description>
+				<databinding>
+					<var
+					dataname="Jahr"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="813520d3-9c63-426d-ac34-0954c1f1c536"
+					variablename="Jahr">
+					</var>
+					<var
+					dataname="Periode"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="fa444ddd-9a68-437f-a1b7-f79633475a9f"
+					variablename="Periode">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="e3f4c787-8ad1-40e3-82b2-331bf30d2edc"
 			name="teardown">
@@ -126,6 +159,14 @@
 							name="StartAUT">
 							</testmodule>
 						</setup>
+						<testmodule
+						id="df870f9f-3d8a-493d-ae66-e7d95e692860"
+						name="Einschraenkungen_laden">
+						</testmodule>
+						<testmodule
+						id="3874a79b-97ae-4416-9b69-9dd7a880487c"
+						name="Zeilen_pruefen">
+						</testmodule>
 						<teardown
 						id="e3f4c787-8ad1-40e3-82b2-331bf30d2edc"
 						name="teardown">

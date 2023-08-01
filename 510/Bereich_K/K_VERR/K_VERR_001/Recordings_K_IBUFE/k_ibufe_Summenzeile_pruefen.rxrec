@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="2c061442-fb80-468b-84a7-1cfb6161a554"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="k_ibufe_Summenzeile_pruefen"
+	namespace="K_VERR_001.Recordings_K_IBUFE">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="6470f879-67ab-4ebc-b066-bfebbf88865e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7ac1d288-0a54-4957-8577-d2980c69eed7"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='colKonto Row 0']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Summe
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0d8a4351-4431-4e0b-8ef0-c78b06bc3d87">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a66a6ed1-46b9-42d1-80df-cce5fea745bb"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='colBetrag Row 0']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="fc679875-7512-4736-b294-47faf32c598f"
+	name="K_VERR_001Repository"
+	relativepath="..\K_VERR_001Repository.rxrep">
+		<codegen
+		classname="K_VERR_001Repository"
+		namespace="K_VERR_001">
+		</codegen>
+		<rootfolder
+		id="ee4245ca-104c-4e4c-b8a3-edd0e64afb95"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		k_ibufe_Summenzeile_pruefen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
