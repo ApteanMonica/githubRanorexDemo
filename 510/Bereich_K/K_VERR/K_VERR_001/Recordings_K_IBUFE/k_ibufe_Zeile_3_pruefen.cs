@@ -24,29 +24,29 @@ namespace K_VERR_001.Recordings_K_IBUFE
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The k_ibufe_Zeile_1_pruefen recording.
+    ///The k_ibufe_Zeile_3_pruefen recording.
     /// </summary>
     [TestModule("f2ad160e-bcc6-499f-89e4-0f406d5e0f39", ModuleType.Recording, 1)]
-    public partial class k_ibufe_Zeile_1_pruefen : ITestModule
+    public partial class K_ibufe_Zeile_3_pruefen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::K_VERR_001.K_VERR_001Repository repository.
         /// </summary>
         public static global::K_VERR_001.K_VERR_001Repository repo = global::K_VERR_001.K_VERR_001Repository.Instance;
 
-        static k_ibufe_Zeile_1_pruefen instance = new k_ibufe_Zeile_1_pruefen();
+        static K_ibufe_Zeile_3_pruefen instance = new K_ibufe_Zeile_3_pruefen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public k_ibufe_Zeile_1_pruefen()
+        public K_ibufe_Zeile_3_pruefen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static k_ibufe_Zeile_1_pruefen Instance
+        public static K_ibufe_Zeile_3_pruefen Instance
         {
             get { return instance; }
         }

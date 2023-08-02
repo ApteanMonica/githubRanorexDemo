@@ -3,6 +3,32 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
+			id="0705eb2e-5ca9-4aa4-99de-ce70b6dcb40e"
+			name="K_ibufe_Stufe_0_Fibu_Daten_pruefen"
+			ref="5f87688b-2966-4263-b52f-f5a0dba4a8cb"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="KontoB"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="27523636-3096-44ff-a05b-3fa1322052be"
+					variablename="KontoB">
+					</var>
+					<var
+					dataname="Kostenstelle"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="a43fea86-5c39-4159-8603-33f1e56feadd"
+					variablename="Kostenstelle">
+					</var>
+					<var
+					dataname="KontoE"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="0db7a414-f3b5-41a2-ba28-e3caf0c44060"
+					variablename="KontoE">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="0c3ecc88-dd5e-4360-b340-bd5427edfcbd"
 			name="Close_k_vere"
 			ref="56389698-e9f6-42d5-854f-0c407eca0132"
@@ -13,6 +39,26 @@
 			name="K_vere_erfasste_Verrechnungen_pruefen"
 			ref="1643f4ac-37b8-4a9c-9b97-b1bb9a734456"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Kostenstelle"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="a35b5891-b3c1-4903-a2c6-7af17b8152b5"
+					variablename="Kostenstelle">
+					</var>
+					<var
+					dataname="KontoB"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="a8b4be85-bcb1-4f7c-b009-01e65400cd5b"
+					variablename="KontoB">
+					</var>
+					<var
+					dataname="KontoE"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="f0732a3a-d75d-403a-b593-d548c257ec28"
+					variablename="KontoE">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="1aa0cd3d-3fc8-4a44-bde6-0b3e022a310e"
@@ -21,16 +67,42 @@
 			type="Recording">
 				<databinding>
 					<var
+					dataname="Periode"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="317ea4d1-06ee-4154-9edd-306b4997a594"
+					variablename="Periode">
+					</var>
+					<var
 					dataname="Jahr"
 					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
 					variableid="102f0991-951c-46ab-80cf-193ceb980801"
 					variablename="Jahr">
 					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="1cab576f-b155-43fd-8511-f475fd8c1c2f"
+			name="K_ibufe_Stufe_0_Fibu_Daten_pruefen"
+			ref="5f87688b-2966-4263-b52f-f5a0dba4a8cb"
+			type="Recording">
+				<databinding>
 					<var
-					dataname="Periode"
+					dataname="Kostenstelle"
 					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
-					variableid="317ea4d1-06ee-4154-9edd-306b4997a594"
-					variablename="Periode">
+					variableid="a43fea86-5c39-4159-8603-33f1e56feadd"
+					variablename="Kostenstelle">
+					</var>
+					<var
+					dataname="KontoB"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="27523636-3096-44ff-a05b-3fa1322052be"
+					variablename="KontoB">
+					</var>
+					<var
+					dataname="KontoE"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="0db7a414-f3b5-41a2-ba28-e3caf0c44060"
+					variablename="KontoE">
 					</var>
 				</databinding>
 			</testmodule>
@@ -54,6 +126,17 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="24b2273f-729a-4432-8260-d970875044ed"
+			name="K_IBUFE_Kontrolle_Kore_Buchungen">
+			</testcase>
+			<testmodule
+			enabled="False"
+			id="25b808f7-0817-432d-b823-40a89386ea57"
+			name="k_ibufe_vor_Verrechnung_keine_Zeile_3"
+			ref="2f77858c-624c-4a0f-a3ae-fe2d3cfd6f3b"
+			type="Recording">
+			</testmodule>
 			<setup
 			id="2874b30c-e623-40da-8d9c-fcd7f8474e23"
 			name="setup">
@@ -62,26 +145,6 @@
 			id="2cbd019c-ecc5-4101-af36-6659426e9d0f"
 			name="K_IBUFE">
 			</testcase>
-			<testmodule
-			id="43055f11-9c8d-4bfe-8bb2-3f0163526520"
-			name="Start_k_ibufe"
-			ref="49673ee5-b345-4046-8a67-9298b258e5d5"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Startfile"
-					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
-					variableid="7074a84b-56a9-4834-b1e4-57b0882fce1a"
-					variablename="Startfile">
-					</var>
-					<var
-					dataname="Programm2"
-					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
-					variableid="1144b365-ff06-498e-af5c-cebe9f4235cd"
-					variablename="Programm2">
-					</var>
-				</databinding>
-			</testmodule>
 			<teardown
 			id="45e9800f-50f8-48a6-8beb-d3feecc9622a"
 			name="teardown">
@@ -92,14 +155,34 @@
 			ref="9934ec9e-446e-4d06-87c9-bb9f498018b5"
 			type="Recording">
 			</testmodule>
+			<setup
+			id="512b3243-1e41-4317-9395-80d39226b3c4"
+			name="setup">
+			</setup>
 			<testcase
 			id="527f2587-42fc-47dc-a9b5-d43f3acea6f6"
 			name="K_VERE_Kontrolle_erfasste_Verrechnungen">
 			</testcase>
-			<setup
-			id="6257cb33-d5c4-4462-98d2-b9a928a82f08"
-			name="setup">
-			</setup>
+			<testmodule
+			id="63efed8b-75ec-40bc-b56a-9229f7d30978"
+			name="K_ibufe_Einschraenkungen_neu_laden"
+			ref="023f4575-b6db-44e8-a69d-e711c201363c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Jahr"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="96717bc2-5ea2-4779-b3cc-7c829c52a4be"
+					variablename="Jahr">
+					</var>
+					<var
+					dataname="Periode"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="5c0a9733-5d34-4593-a0f6-7cadc85f1954"
+					variablename="Periode">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="6459a829-1088-45e5-becc-9b5371cf9f86"
 			name="k_ibufe_Einschraenkungen_laden"
@@ -107,16 +190,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Jahr"
-					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
-					variableid="b49334fc-c3f3-4920-a8e2-622ac8b2194d"
-					variablename="Jahr">
-					</var>
-					<var
 					dataname="Periode"
 					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
 					variableid="c01406ed-8dec-4c5a-939b-370769d34897"
 					variablename="Periode">
+					</var>
+					<var
+					dataname="Jahr"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="b49334fc-c3f3-4920-a8e2-622ac8b2194d"
+					variablename="Jahr">
 					</var>
 				</databinding>
 			</testmodule>
@@ -159,33 +242,55 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="86cad721-5994-4b04-b55e-83e4526d0ec0"
 			name="k_ibufe_Summenzeile_pruefen"
 			ref="2c061442-fb80-468b-84a7-1cfb6161a554"
 			type="Recording">
-				<description>
-					<![CDATA[Ändern: kopiert von K_PBU_001]]>
-				</description>
 			</testmodule>
 			<testmodule
+			id="89d30889-bc24-4fee-975f-9bc4166e3fad"
+			name="Start_k_ibufe"
+			ref="49673ee5-b345-4046-8a67-9298b258e5d5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Programm2"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="1144b365-ff06-498e-af5c-cebe9f4235cd"
+					variablename="Programm2">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="7074a84b-56a9-4834-b1e4-57b0882fce1a"
+					variablename="Startfile">
+					</var>
+				</databinding>
+			</testmodule>
+			<teardown
+			id="aa921f20-6f9e-4f6c-bb82-7328f43a669f"
+			name="teardown">
+			</teardown>
+			<testmodule
 			id="b2927888-f898-4b36-972c-6b43f902c1c9"
-			name="Meldungen_Ende_Verrechnungen_rechnen"
+			name="Ende_Verrechnungen_rechnen"
 			ref="8d564600-6900-4c22-b6d6-9f12deeb1220"
 			type="Recording">
+				<description>
+					<![CDATA[Meldungen "Kein Kostensatz vorhanden! ..." nur wenn in K_LEMG /PlanIst=0 der Kostensatz nicht auf 0=Ist umgestellt war.]]>
+				</description>
 			</testmodule>
 			<testcase
 			id="b8e78dbb-058f-4872-b131-be7aee015bf1"
 			name="Verrechnungen_rechnen">
 			</testcase>
 			<testmodule
-			enabled="False"
 			id="c460ea81-0d47-404c-b884-65f6ccb87e91"
-			name="k_ibufe_Zeile_1_pruefen"
+			name="K_ibufe_Zeile_3_pruefen"
 			ref="f2ad160e-bcc6-499f-89e4-0f406d5e0f39"
 			type="Recording">
 				<description>
-					<![CDATA[Ändren: kopiert von K_PBU_001]]>
+					<![CDATA[in Arbeit alle Felder von row3 mit Spy übernommen - Sortieren und in weitere Zeilen übernehmen]]>
 				</description>
 			</testmodule>
 			<testmodule
@@ -195,16 +300,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm1"
-					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
-					variableid="537f8a9d-efb9-45a1-b8c5-a53960b14a7d"
-					variablename="Programm1">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
 					variableid="9fc123e8-7876-42cd-9182-f2d78a8f92b4"
 					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm1"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="537f8a9d-efb9-45a1-b8c5-a53960b14a7d"
+					variablename="Programm1">
 					</var>
 				</databinding>
 			</testmodule>
@@ -235,11 +340,23 @@
 					</param>
 					<param
 					name="Periode"
-					value="2">
+					value="6">
 					</param>
 					<param
 					name="Periode_MM"
-					value="02">
+					value="06">
+					</param>
+					<param
+					name="Kostenstelle"
+					value="10">
+					</param>
+					<param
+					name="KontoB"
+					value="B1000">
+					</param>
+					<param
+					name="KontoE"
+					value="E1000">
 					</param>
 				</parameters>
 			</testcase>
@@ -283,6 +400,12 @@
 			id="f1438d48-d412-4ce1-9627-5d37b7e155cd"
 			name="setup">
 			</setup>
+			<testmodule
+			id="f7dd2ab9-57cc-4b0a-9cb3-d911ed0e7247"
+			name="k_ibufe_Verrechnungen_pruefen"
+			ref="7115b934-2386-4e83-90d4-4d46ec9ed82a"
+			type="Recording">
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -291,6 +414,34 @@
 				<testcase
 				id="d3295885-6916-4a08-b67a-8ff255513afb"
 				name="K_VERR_001">
+					<testcase
+					id="24b2273f-729a-4432-8260-d970875044ed"
+					name="K_IBUFE_Kontrolle_Kore_Buchungen">
+						<setup
+						id="512b3243-1e41-4317-9395-80d39226b3c4"
+						name="setup">
+							<testmodule
+							id="89d30889-bc24-4fee-975f-9bc4166e3fad"
+							name="Start_k_ibufe">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="6459a829-1088-45e5-becc-9b5371cf9f86"
+						name="k_ibufe_Einschraenkungen_laden">
+						</testmodule>
+						<testmodule
+						id="0705eb2e-5ca9-4aa4-99de-ce70b6dcb40e"
+						name="K_ibufe_Stufe_0_Fibu_Daten_pruefen">
+						</testmodule>
+						<testmodule
+						id="25b808f7-0817-432d-b823-40a89386ea57"
+						name="k_ibufe_vor_Verrechnung_keine_Zeile_3">
+						</testmodule>
+						<teardown
+						id="aa921f20-6f9e-4f6c-bb82-7328f43a669f"
+						name="teardown">
+						</teardown>
+					</testcase>
 					<testcase
 					id="527f2587-42fc-47dc-a9b5-d43f3acea6f6"
 					name="K_VERE_Kontrolle_erfasste_Verrechnungen">
@@ -336,7 +487,7 @@
 						</testmodule>
 						<testmodule
 						id="b2927888-f898-4b36-972c-6b43f902c1c9"
-						name="Meldungen_Ende_Verrechnungen_rechnen">
+						name="Ende_Verrechnungen_rechnen">
 						</testmodule>
 						<teardown
 						id="45e9800f-50f8-48a6-8beb-d3feecc9622a"
@@ -350,17 +501,17 @@
 					<testcase
 					id="2cbd019c-ecc5-4101-af36-6659426e9d0f"
 					name="K_IBUFE">
-						<setup
-						id="6257cb33-d5c4-4462-98d2-b9a928a82f08"
-						name="setup">
-							<testmodule
-							id="43055f11-9c8d-4bfe-8bb2-3f0163526520"
-							name="Start_k_ibufe">
-							</testmodule>
-						</setup>
 						<testmodule
-						id="6459a829-1088-45e5-becc-9b5371cf9f86"
-						name="k_ibufe_Einschraenkungen_laden">
+						id="63efed8b-75ec-40bc-b56a-9229f7d30978"
+						name="K_ibufe_Einschraenkungen_neu_laden">
+						</testmodule>
+						<testmodule
+						id="1cab576f-b155-43fd-8511-f475fd8c1c2f"
+						name="K_ibufe_Stufe_0_Fibu_Daten_pruefen">
+						</testmodule>
+						<testmodule
+						id="f7dd2ab9-57cc-4b0a-9cb3-d911ed0e7247"
+						name="k_ibufe_Verrechnungen_pruefen">
 						</testmodule>
 						<testmodule
 						id="86cad721-5994-4b04-b55e-83e4526d0ec0"
@@ -368,7 +519,7 @@
 						</testmodule>
 						<testmodule
 						id="c460ea81-0d47-404c-b884-65f6ccb87e91"
-						name="k_ibufe_Zeile_1_pruefen">
+						name="K_ibufe_Zeile_3_pruefen">
 						</testmodule>
 						<teardown
 						id="e6625b40-210f-44c4-a8d3-538d9a4046de"
@@ -389,6 +540,9 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="24b2273f-729a-4432-8260-d970875044ed">
+			</testcontainer>
 			<testcontainer
 			id="2cbd019c-ecc5-4101-af36-6659426e9d0f">
 			</testcontainer>

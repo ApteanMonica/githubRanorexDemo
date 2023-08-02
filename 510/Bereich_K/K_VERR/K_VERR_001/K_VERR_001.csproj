@@ -115,14 +115,14 @@
       <UserCode>true</UserCode>
       <id>a64e2b58-01b9-48e5-926a-f4eae5f362d0</id>
     </Compile>
-    <Compile Include="Recordings\Meldungen_Ende_Verrechnungen_rechnen.cs">
-      <DependentUpon>Meldungen_Ende_Verrechnungen_rechnen.rxrec</DependentUpon>
+    <Compile Include="Recordings\Ende_Verrechnungen_rechnen.cs">
+      <DependentUpon>Ende_Verrechnungen_rechnen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>2b9e9460-cfb3-4d72-803b-e3a28f59ac12</id>
       <BoundTo>015d7e52-96bb-4503-a4f0-f34c81d41a32</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Meldungen_Ende_Verrechnungen_rechnen.UserCode.cs">
-      <DependentUpon>Meldungen_Ende_Verrechnungen_rechnen.rxrec</DependentUpon>
+    <Compile Include="Recordings\Ende_Verrechnungen_rechnen.UserCode.cs">
+      <DependentUpon>Ende_Verrechnungen_rechnen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>c4179ea7-0062-45ba-9b01-01b0e98f1a78</id>
       <BoundTo>015d7e52-96bb-4503-a4f0-f34c81d41a32</BoundTo>
@@ -163,6 +163,30 @@
       <UserCode>true</UserCode>
       <id>a58a82d3-f1ae-4e9d-8c00-4c8cb840bcd1</id>
     </Compile>
+    <Compile Include="Recordings_K_IBUFE\k_ibufe_Einschraenkungen_neu_laden.cs">
+      <DependentUpon>k_ibufe_Einschraenkungen_neu_laden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f5833c98-ae18-4a34-a2f7-bc0606a32669</id>
+      <BoundTo>d488154f-1b79-4768-a8d2-cbbca7965c9d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_K_IBUFE\k_ibufe_Einschraenkungen_NEU_laden.UserCode.cs">
+      <DependentUpon>k_ibufe_Einschraenkungen_neu_laden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0d66c2ae-048e-4728-95a8-b5bf1ff4021d</id>
+      <BoundTo>d488154f-1b79-4768-a8d2-cbbca7965c9d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_K_IBUFE\k_ibufe_Stufe_0_Fibu_Daten_pruefen.cs">
+      <DependentUpon>k_ibufe_Stufe_0_Fibu_Daten_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9c36aca9-059a-4e43-8a4c-270fb20627b0</id>
+      <BoundTo>5275b112-c250-4bcc-91a4-99ebcc05d3fc</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_K_IBUFE\k_ibufe_Stufe_0_Fibu_Daten_pruefen.UserCode.cs">
+      <DependentUpon>k_ibufe_Stufe_0_Fibu_Daten_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>80325c0b-8a55-47a8-812b-7c3ed9010433</id>
+      <BoundTo>5275b112-c250-4bcc-91a4-99ebcc05d3fc</BoundTo>
+    </Compile>
     <Compile Include="Recordings_K_IBUFE\k_ibufe_Summenzeile_pruefen.cs">
       <BoundTo>bcd49a01-e5e9-4d0d-a7f9-06bc68afe055</BoundTo>
       <DependentUpon>k_ibufe_Summenzeile_pruefen.rxrec</DependentUpon>
@@ -175,15 +199,39 @@
       <UserCode>true</UserCode>
       <id>e5e0b9c4-2ac2-4e06-bdd3-442615705888</id>
     </Compile>
-    <Compile Include="Recordings_K_IBUFE\k_ibufe_Zeile_1_pruefen.cs">
+    <Compile Include="Recordings_K_IBUFE\k_ibufe_Verrechnungen_pruefen.cs">
+      <BoundTo>f6f45d75-f0c6-4bc4-acb4-d9cb668a8fce</BoundTo>
+      <DependentUpon>k_ibufe_Verrechnungen_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ac69c7b8-61ea-475e-a985-3dfba68c7c7e</id>
+    </Compile>
+    <Compile Include="Recordings_K_IBUFE\k_ibufe_Verrechnungen_pruefen.UserCode.cs">
+      <BoundTo>f6f45d75-f0c6-4bc4-acb4-d9cb668a8fce</BoundTo>
+      <DependentUpon>k_ibufe_Verrechnungen_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b1779d69-c96e-4c1c-a1d8-429bd76e3d00</id>
+    </Compile>
+    <Compile Include="Recordings_K_IBUFE\k_ibufe_vor_Verrechnung_keine_Zeile_3.cs">
+      <BoundTo>ed4eedbc-d41f-4fdb-90fa-3a2ea2146007</BoundTo>
+      <DependentUpon>k_ibufe_vor_Verrechnung_keine_Zeile_3.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1be5114a-123b-4058-ad2e-a3e45c0516c7</id>
+    </Compile>
+    <Compile Include="Recordings_K_IBUFE\k_ibufe_vor_Verrechnung_keine_Zeile_3.UserCode.cs">
+      <BoundTo>ed4eedbc-d41f-4fdb-90fa-3a2ea2146007</BoundTo>
+      <DependentUpon>k_ibufe_vor_Verrechnung_keine_Zeile_3.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5afe373d-65d9-4bb3-9524-ecc27e2b2516</id>
+    </Compile>
+    <Compile Include="Recordings_K_IBUFE\k_ibufe_Zeile_3_pruefen.cs">
       <BoundTo>a5a2da81-403d-49ff-ac5d-c8d5587126b5</BoundTo>
-      <DependentUpon>k_ibufe_Zeile_1_pruefen.rxrec</DependentUpon>
+      <DependentUpon>k_ibufe_Zeile_3_pruefen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>da6baf04-3d03-4ca3-bb08-66ea5749d8cc</id>
     </Compile>
-    <Compile Include="Recordings_K_IBUFE\k_ibufe_Zeile_1_pruefen.UserCode.cs">
+    <Compile Include="Recordings_K_IBUFE\k_ibufe_Zeile_3_pruefen.UserCode.cs">
       <BoundTo>a5a2da81-403d-49ff-ac5d-c8d5587126b5</BoundTo>
-      <DependentUpon>k_ibufe_Zeile_1_pruefen.rxrec</DependentUpon>
+      <DependentUpon>k_ibufe_Zeile_3_pruefen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>1d19e12a-377e-4b76-929f-715314c70843</id>
     </Compile>
@@ -273,7 +321,7 @@
       <id>cc45f6e7-e289-4e54-93d0-05b8640ce75b</id>
       <recordtableid>e2f8e75d-3ab4-4ec1-a3f8-1ed3de546401</recordtableid>
     </None>
-    <None Include="Recordings\Meldungen_Ende_Verrechnungen_rechnen.rxrec">
+    <None Include="Recordings\Ende_Verrechnungen_rechnen.rxrec">
       <BoundTo>02de330e-dc4e-470d-9fc5-af56bf0f0f0a</BoundTo>
       <id>015d7e52-96bb-4503-a4f0-f34c81d41a32</id>
       <recordtableid>8d564600-6900-4c22-b6d6-9f12deeb1220</recordtableid>
@@ -293,12 +341,32 @@
       <id>992d2026-9105-4e17-ad1f-7c89739c5592</id>
       <recordtableid>98b3ba54-fc18-4e51-84f4-b5bfac5ada2f</recordtableid>
     </None>
+    <None Include="Recordings_K_IBUFE\k_ibufe_Einschraenkungen_neu_laden.rxrec">
+      <BoundTo>02de330e-dc4e-470d-9fc5-af56bf0f0f0a</BoundTo>
+      <id>d488154f-1b79-4768-a8d2-cbbca7965c9d</id>
+      <recordtableid>023f4575-b6db-44e8-a69d-e711c201363c</recordtableid>
+    </None>
+    <None Include="Recordings_K_IBUFE\k_ibufe_Stufe_0_Fibu_Daten_pruefen.rxrec">
+      <BoundTo>02de330e-dc4e-470d-9fc5-af56bf0f0f0a</BoundTo>
+      <id>5275b112-c250-4bcc-91a4-99ebcc05d3fc</id>
+      <recordtableid>5f87688b-2966-4263-b52f-f5a0dba4a8cb</recordtableid>
+    </None>
     <None Include="Recordings_K_IBUFE\k_ibufe_Summenzeile_pruefen.rxrec">
       <BoundTo>02de330e-dc4e-470d-9fc5-af56bf0f0f0a</BoundTo>
       <id>bcd49a01-e5e9-4d0d-a7f9-06bc68afe055</id>
       <recordtableid>2c061442-fb80-468b-84a7-1cfb6161a554</recordtableid>
     </None>
-    <None Include="Recordings_K_IBUFE\k_ibufe_Zeile_1_pruefen.rxrec">
+    <None Include="Recordings_K_IBUFE\k_ibufe_Verrechnungen_pruefen.rxrec">
+      <BoundTo>02de330e-dc4e-470d-9fc5-af56bf0f0f0a</BoundTo>
+      <id>f6f45d75-f0c6-4bc4-acb4-d9cb668a8fce</id>
+      <recordtableid>7115b934-2386-4e83-90d4-4d46ec9ed82a</recordtableid>
+    </None>
+    <None Include="Recordings_K_IBUFE\k_ibufe_vor_Verrechnung_keine_Zeile_3.rxrec">
+      <BoundTo>02de330e-dc4e-470d-9fc5-af56bf0f0f0a</BoundTo>
+      <id>ed4eedbc-d41f-4fdb-90fa-3a2ea2146007</id>
+      <recordtableid>2f77858c-624c-4a0f-a3ae-fe2d3cfd6f3b</recordtableid>
+    </None>
+    <None Include="Recordings_K_IBUFE\k_ibufe_Zeile_3_pruefen.rxrec">
       <BoundTo>02de330e-dc4e-470d-9fc5-af56bf0f0f0a</BoundTo>
       <id>a5a2da81-403d-49ff-ac5d-c8d5587126b5</id>
       <recordtableid>f2ad160e-bcc6-499f-89e4-0f406d5e0f39</recordtableid>

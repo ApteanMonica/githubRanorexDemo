@@ -41,6 +41,9 @@ namespace K_VERR_001.Recordings_K_VERE
         /// </summary>
         public K_vere_erfasste_Verrechnungen_pruefen()
         {
+            KontoE = "E1000";
+            Kostenstelle = "10";
+            KontoB = "B1000";
         }
 
         /// <summary>
@@ -52,6 +55,42 @@ namespace K_VERR_001.Recordings_K_VERE
         }
 
 #region Variables
+
+        string _KontoE;
+
+        /// <summary>
+        /// Gets or sets the value of variable KontoE.
+        /// </summary>
+        [TestVariable("f0732a3a-d75d-403a-b593-d548c257ec28")]
+        public string KontoE
+        {
+            get { return _KontoE; }
+            set { _KontoE = value; }
+        }
+
+        string _Kostenstelle;
+
+        /// <summary>
+        /// Gets or sets the value of variable Kostenstelle.
+        /// </summary>
+        [TestVariable("a35b5891-b3c1-4903-a2c6-7af17b8152b5")]
+        public string Kostenstelle
+        {
+            get { return _Kostenstelle; }
+            set { _Kostenstelle = value; }
+        }
+
+        string _KontoB;
+
+        /// <summary>
+        /// Gets or sets the value of variable KontoB.
+        /// </summary>
+        [TestVariable("a8b4be85-bcb1-4f7c-b009-01e65400cd5b")]
+        public string KontoB
+        {
+            get { return _KontoB; }
+            set { _KontoB = value; }
+        }
 
 #endregion
 
@@ -91,8 +130,8 @@ namespace K_VERR_001.Recordings_K_VERE
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9999999999') on item 'TblVerr.Row2_Zeile_1_in_Tabelle.ColKtoNrVonRow2'.", repo.TblVerr.Row2_Zeile_1_in_Tabelle.ColKtoNrVonRow2Info, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.TblVerr.Row2_Zeile_1_in_Tabelle.ColKtoNrVonRow2Info, "Text", "9999999999");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'TblVerr.Row2_Zeile_1_in_Tabelle.ColKs1NrVonRow2'.", repo.TblVerr.Row2_Zeile_1_in_Tabelle.ColKs1NrVonRow2Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.TblVerr.Row2_Zeile_1_in_Tabelle.ColKs1NrVonRow2Info, "Text", "10");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kostenstelle) on item 'TblVerr.Row2_Zeile_1_in_Tabelle.ColKs1NrVonRow2'.", repo.TblVerr.Row2_Zeile_1_in_Tabelle.ColKs1NrVonRow2Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.TblVerr.Row2_Zeile_1_in_Tabelle.ColKs1NrVonRow2Info, "Text", Kostenstelle);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9999999999') on item 'TblVerr.Row2_Zeile_1_in_Tabelle.ColKtoNrAnRow2'.", repo.TblVerr.Row2_Zeile_1_in_Tabelle.ColKtoNrAnRow2Info, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.TblVerr.Row2_Zeile_1_in_Tabelle.ColKtoNrAnRow2Info, "Text", "9999999999");
@@ -115,14 +154,14 @@ namespace K_VERR_001.Recordings_K_VERE
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='SVE') on item 'TblVerr.Row3_Zeile_2_in_Tabelle.ColVeraCdRow3'.", repo.TblVerr.Row3_Zeile_2_in_Tabelle.ColVeraCdRow3Info, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.TblVerr.Row3_Zeile_2_in_Tabelle.ColVeraCdRow3Info, "Text", "SVE");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='E1000') on item 'TblVerr.Row3_Zeile_2_in_Tabelle.ColKtoNrVonRow3'.", repo.TblVerr.Row3_Zeile_2_in_Tabelle.ColKtoNrVonRow3Info, new RecordItemIndex(12));
-            Validate.AttributeEqual(repo.TblVerr.Row3_Zeile_2_in_Tabelle.ColKtoNrVonRow3Info, "Text", "E1000");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$KontoE) on item 'TblVerr.Row3_Zeile_2_in_Tabelle.ColKtoNrVonRow3'.", repo.TblVerr.Row3_Zeile_2_in_Tabelle.ColKtoNrVonRow3Info, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.TblVerr.Row3_Zeile_2_in_Tabelle.ColKtoNrVonRow3Info, "Text", KontoE);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'TblVerr.Row3_Zeile_2_in_Tabelle.ColKs1NrVonRow3'.", repo.TblVerr.Row3_Zeile_2_in_Tabelle.ColKs1NrVonRow3Info, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.TblVerr.Row3_Zeile_2_in_Tabelle.ColKs1NrVonRow3Info, "Text", "10");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kostenstelle) on item 'TblVerr.Row3_Zeile_2_in_Tabelle.ColKs1NrVonRow3'.", repo.TblVerr.Row3_Zeile_2_in_Tabelle.ColKs1NrVonRow3Info, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.TblVerr.Row3_Zeile_2_in_Tabelle.ColKs1NrVonRow3Info, "Text", Kostenstelle);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='B1000') on item 'TblVerr.Row3_Zeile_2_in_Tabelle.ColKtoNrAnRow3'.", repo.TblVerr.Row3_Zeile_2_in_Tabelle.ColKtoNrAnRow3Info, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.TblVerr.Row3_Zeile_2_in_Tabelle.ColKtoNrAnRow3Info, "Text", "B1000");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$KontoB) on item 'TblVerr.Row3_Zeile_2_in_Tabelle.ColKtoNrAnRow3'.", repo.TblVerr.Row3_Zeile_2_in_Tabelle.ColKtoNrAnRow3Info, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.TblVerr.Row3_Zeile_2_in_Tabelle.ColKtoNrAnRow3Info, "Text", KontoB);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='60') on item 'TblVerr.Row3_Zeile_2_in_Tabelle.ColKs1NrAnRow3'.", repo.TblVerr.Row3_Zeile_2_in_Tabelle.ColKs1NrAnRow3Info, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.TblVerr.Row3_Zeile_2_in_Tabelle.ColKs1NrAnRow3Info, "Text", "60");
@@ -142,11 +181,11 @@ namespace K_VERR_001.Recordings_K_VERE
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='SVE') on item 'TblVerr.Row4_Zeile_3_in_Tabelle.ColVeraCdRow4'.", repo.TblVerr.Row4_Zeile_3_in_Tabelle.ColVeraCdRow4Info, new RecordItemIndex(20));
             Validate.AttributeEqual(repo.TblVerr.Row4_Zeile_3_in_Tabelle.ColVeraCdRow4Info, "Text", "SVE");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='E1000') on item 'TblVerr.Row4_Zeile_3_in_Tabelle.ColKtoNrVonRow4'.", repo.TblVerr.Row4_Zeile_3_in_Tabelle.ColKtoNrVonRow4Info, new RecordItemIndex(21));
-            Validate.AttributeEqual(repo.TblVerr.Row4_Zeile_3_in_Tabelle.ColKtoNrVonRow4Info, "Text", "E1000");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$KontoE) on item 'TblVerr.Row4_Zeile_3_in_Tabelle.ColKtoNrVonRow4'.", repo.TblVerr.Row4_Zeile_3_in_Tabelle.ColKtoNrVonRow4Info, new RecordItemIndex(21));
+            Validate.AttributeEqual(repo.TblVerr.Row4_Zeile_3_in_Tabelle.ColKtoNrVonRow4Info, "Text", KontoE);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'TblVerr.Row4_Zeile_3_in_Tabelle.ColKs1NrVonRow4'.", repo.TblVerr.Row4_Zeile_3_in_Tabelle.ColKs1NrVonRow4Info, new RecordItemIndex(22));
-            Validate.AttributeEqual(repo.TblVerr.Row4_Zeile_3_in_Tabelle.ColKs1NrVonRow4Info, "Text", "10");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kostenstelle) on item 'TblVerr.Row4_Zeile_3_in_Tabelle.ColKs1NrVonRow4'.", repo.TblVerr.Row4_Zeile_3_in_Tabelle.ColKs1NrVonRow4Info, new RecordItemIndex(22));
+            Validate.AttributeEqual(repo.TblVerr.Row4_Zeile_3_in_Tabelle.ColKs1NrVonRow4Info, "Text", Kostenstelle);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='B1000') on item 'TblVerr.Row4_Zeile_3_in_Tabelle.ColKtoNrAnRow4'.", repo.TblVerr.Row4_Zeile_3_in_Tabelle.ColKtoNrAnRow4Info, new RecordItemIndex(23));
             Validate.AttributeEqual(repo.TblVerr.Row4_Zeile_3_in_Tabelle.ColKtoNrAnRow4Info, "Text", "B1000");

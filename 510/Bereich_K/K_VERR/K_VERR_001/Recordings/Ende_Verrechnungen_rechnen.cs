@@ -24,29 +24,29 @@ namespace K_VERR_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Meldungen_Ende_Verrechnungen_rechnen recording.
+    ///The Ende_Verrechnungen_rechnen recording.
     /// </summary>
     [TestModule("8d564600-6900-4c22-b6d6-9f12deeb1220", ModuleType.Recording, 1)]
-    public partial class Meldungen_Ende_Verrechnungen_rechnen : ITestModule
+    public partial class Ende_Verrechnungen_rechnen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::K_VERR_001.K_VERR_001Repository repository.
         /// </summary>
         public static global::K_VERR_001.K_VERR_001Repository repo = global::K_VERR_001.K_VERR_001Repository.Instance;
 
-        static Meldungen_Ende_Verrechnungen_rechnen instance = new Meldungen_Ende_Verrechnungen_rechnen();
+        static Ende_Verrechnungen_rechnen instance = new Ende_Verrechnungen_rechnen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Meldungen_Ende_Verrechnungen_rechnen()
+        public Ende_Verrechnungen_rechnen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Meldungen_Ende_Verrechnungen_rechnen Instance
+        public static Ende_Verrechnungen_rechnen Instance
         {
             get { return instance; }
         }
@@ -82,23 +82,23 @@ namespace K_VERR_001.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.VerrechnungenRechnen'", repo.DlgMessageBox.VerrechnungenRechnenInfo, new ActionTimeout(60000), new RecordItemIndex(0));
             repo.DlgMessageBox.VerrechnungenRechnenInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Kein Kostensatz vorhanden!\r\n\r\nStufe: 21\r\nPlan-Nr: 1\r\nKostenstellen: 10\r\nPeriode: 2\r\nSatz-Nr: 1 (Vollkosten)') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Kein Kostensatz vorhanden!\r\n\r\nStufe: 21\r\nPlan-Nr: 1\r\nKostenstellen: 10\r\nPeriode: 2\r\nSatz-Nr: 1 (Vollkosten)");
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Kein Kostensatz vorhanden!\r\n\r\nStufe: 21\r\nPlan-Nr: 1\r\nKostenstellen: 10\r\nPeriode: 2\r\nSatz-Nr: 1 (Vollkosten)') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
+            //Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Kein Kostensatz vorhanden!\r\n\r\nStufe: 21\r\nPlan-Nr: 1\r\nKostenstellen: 10\r\nPeriode: 2\r\nSatz-Nr: 1 (Vollkosten)");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
-            repo.DlgMessageBox.Button0.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
+            //repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));
-            Delay.Duration(2000, false);
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));
+            //Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Kein Kostensatz vorhanden!\r\n\r\nStufe: 21\r\nPlan-Nr: 1\r\nKostenstellen: 10\r\nPeriode: 2\r\nSatz-Nr: 1 (Vollkosten)') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Kein Kostensatz vorhanden!\r\n\r\nStufe: 21\r\nPlan-Nr: 1\r\nKostenstellen: 10\r\nPeriode: 2\r\nSatz-Nr: 1 (Vollkosten)");
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Kein Kostensatz vorhanden!\r\n\r\nStufe: 21\r\nPlan-Nr: 1\r\nKostenstellen: 10\r\nPeriode: 2\r\nSatz-Nr: 1 (Vollkosten)') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(4));
+            //Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Kein Kostensatz vorhanden!\r\n\r\nStufe: 21\r\nPlan-Nr: 1\r\nKostenstellen: 10\r\nPeriode: 2\r\nSatz-Nr: 1 (Vollkosten)");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(5));
-            repo.DlgMessageBox.Button0.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(5));
+            //repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(6));
-            Delay.Duration(2000, false);
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(6));
+            //Delay.Duration(2000, false);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Verrechnung erfolgreich beendet!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Verrechnung erfolgreich beendet!");
@@ -106,8 +106,8 @@ namespace K_VERR_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(8));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Lauf 1  Periode 2 Stufe 21 Art SVE Konto E1000') on item 'FrmVerr.ClientArea.DfStatus'.", repo.FrmVerr.ClientArea.DfStatusInfo, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.FrmVerr.ClientArea.DfStatusInfo, "Text", "Lauf 1  Periode 2 Stufe 21 Art SVE Konto E1000");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Lauf 1  Periode 6 Stufe 21 Art SVE Konto E1000') on item 'FrmVerr.ClientArea.DfStatus'.", repo.FrmVerr.ClientArea.DfStatusInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmVerr.ClientArea.DfStatusInfo, "Text", "Lauf 1  Periode 6 Stufe 21 Art SVE Konto E1000");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bereich  10') on item 'FrmVerr.ClientArea.DfStatus2'.", repo.FrmVerr.ClientArea.DfStatus2Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.FrmVerr.ClientArea.DfStatus2Info, "Text", "Bereich  10");

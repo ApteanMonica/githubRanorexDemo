@@ -24,29 +24,29 @@ namespace K_VERR_001.Recordings_K_IBUFE
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The k_ibufe_Summenzeile_pruefen recording.
+    ///The k_ibufe_Verrechnungen_pruefen recording.
     /// </summary>
-    [TestModule("2c061442-fb80-468b-84a7-1cfb6161a554", ModuleType.Recording, 1)]
-    public partial class k_ibufe_Summenzeile_pruefen : ITestModule
+    [TestModule("7115b934-2386-4e83-90d4-4d46ec9ed82a", ModuleType.Recording, 1)]
+    public partial class k_ibufe_Verrechnungen_pruefen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::K_VERR_001.K_VERR_001Repository repository.
         /// </summary>
         public static global::K_VERR_001.K_VERR_001Repository repo = global::K_VERR_001.K_VERR_001Repository.Instance;
 
-        static k_ibufe_Summenzeile_pruefen instance = new k_ibufe_Summenzeile_pruefen();
+        static k_ibufe_Verrechnungen_pruefen instance = new k_ibufe_Verrechnungen_pruefen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public k_ibufe_Summenzeile_pruefen()
+        public k_ibufe_Verrechnungen_pruefen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static k_ibufe_Summenzeile_pruefen Instance
+        public static k_ibufe_Verrechnungen_pruefen Instance
         {
             get { return instance; }
         }
@@ -79,15 +79,6 @@ namespace K_VERR_001.Recordings_K_IBUFE
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Summe') on item 'TblIbufe.Fusszeile_Summe.ColKontoRow0'.", repo.TblIbufe.Fusszeile_Summe.ColKontoRow0Info, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.TblIbufe.Fusszeile_Summe.ColKontoRow0Info, "Text", "Summe");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblIbufe.Fusszeile_Summe.ColBetragRow0'.", repo.TblIbufe.Fusszeile_Summe.ColBetragRow0Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblIbufe.Fusszeile_Summe.ColBetragRow0Info, "Text", "0,00");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'TblIbufe.Fusszeile_Summe.ColMengeRow0'.", repo.TblIbufe.Fusszeile_Summe.ColMengeRow0Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblIbufe.Fusszeile_Summe.ColMengeRow0Info, "Text", "0");
-            
         }
 
 #region Image Feature Data

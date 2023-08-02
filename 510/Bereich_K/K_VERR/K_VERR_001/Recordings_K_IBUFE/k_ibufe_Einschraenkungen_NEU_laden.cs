@@ -20,26 +20,26 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace K_VERR_001.Recordings_K_VERE
+namespace K_VERR_001.Recordings_K_IBUFE
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The k_vere_Einschraenkungen recording.
+    ///The k_ibufe_Einschraenkungen_neu_laden recording.
     /// </summary>
-    [TestModule("5e34b604-eb53-4d2f-9fe6-9ea522d0a8de", ModuleType.Recording, 1)]
-    public partial class k_vere_Einschraenkungen : ITestModule
+    [TestModule("023f4575-b6db-44e8-a69d-e711c201363c", ModuleType.Recording, 1)]
+    public partial class K_ibufe_Einschraenkungen_neu_laden : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::K_VERR_001.K_VERR_001Repository repository.
         /// </summary>
         public static global::K_VERR_001.K_VERR_001Repository repo = global::K_VERR_001.K_VERR_001Repository.Instance;
 
-        static k_vere_Einschraenkungen instance = new k_vere_Einschraenkungen();
+        static K_ibufe_Einschraenkungen_neu_laden instance = new K_ibufe_Einschraenkungen_neu_laden();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public k_vere_Einschraenkungen()
+        public K_ibufe_Einschraenkungen_neu_laden()
         {
             Jahr = "2020";
             Periode = "6";
@@ -48,7 +48,7 @@ namespace K_VERR_001.Recordings_K_VERE
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static k_vere_Einschraenkungen Instance
+        public static K_ibufe_Einschraenkungen_neu_laden Instance
         {
             get { return instance; }
         }
@@ -60,7 +60,7 @@ namespace K_VERR_001.Recordings_K_VERE
         /// <summary>
         /// Gets or sets the value of variable Jahr.
         /// </summary>
-        [TestVariable("102f0991-951c-46ab-80cf-193ceb980801")]
+        [TestVariable("96717bc2-5ea2-4779-b3cc-7c829c52a4be")]
         public string Jahr
         {
             get { return _Jahr; }
@@ -72,7 +72,7 @@ namespace K_VERR_001.Recordings_K_VERE
         /// <summary>
         /// Gets or sets the value of variable Periode.
         /// </summary>
-        [TestVariable("317ea4d1-06ee-4154-9edd-306b4997a594")]
+        [TestVariable("5c0a9733-5d34-4593-a0f6-7cadc85f1954")]
         public string Periode
         {
             get { return _Periode; }
@@ -105,29 +105,26 @@ namespace K_VERR_001.Recordings_K_VERE
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'TblVerr.ToolBar.PlanNr'.", repo.TblVerr.ToolBar.PlanNrInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.TblVerr.ToolBar.PlanNrInfo, "Text", "0");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'TblIbufe.ToolBar.Planvariante'.", repo.TblIbufe.ToolBar.PlanvarianteInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.TblIbufe.ToolBar.PlanvarianteInfo, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblVerr.ToolBar.Jahr' at Center.", repo.TblVerr.ToolBar.JahrInfo, new RecordItemIndex(1));
-            repo.TblVerr.ToolBar.Jahr.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'TblIbufe.ToolBar.Jahr_von'.", repo.TblIbufe.ToolBar.Jahr_vonInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblIbufe.ToolBar.Jahr_vonInfo, "Text", Jahr);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'TblVerr.ToolBar.Jahr'.", repo.TblVerr.ToolBar.JahrInfo, new RecordItemIndex(2));
-            repo.TblVerr.ToolBar.Jahr.PressKeys(Jahr);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'TblIbufe.ToolBar.Jahr_bis'.", repo.TblIbufe.ToolBar.Jahr_bisInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblIbufe.ToolBar.Jahr_bisInfo, "Text", Jahr);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode) on item 'TblIbufe.ToolBar.Periode_von'.", repo.TblIbufe.ToolBar.Periode_vonInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.TblIbufe.ToolBar.Periode_vonInfo, "Text", Periode);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Periode' with focus on 'TblVerr.ToolBar.Periode'.", repo.TblVerr.ToolBar.PeriodeInfo, new RecordItemIndex(4));
-            repo.TblVerr.ToolBar.Periode.PressKeys(Periode);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode) on item 'TblIbufe.ToolBar.Periode_bis'.", repo.TblIbufe.ToolBar.Periode_bisInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.TblIbufe.ToolBar.Periode_bisInfo, "Text", Periode);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblIbufe.PbDataAccessLaden' at Center.", repo.TblIbufe.PbDataAccessLadenInfo, new RecordItemIndex(5));
+            repo.TblIbufe.PbDataAccessLaden.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblVerr.PbDataAccessLoad' at Center.", repo.TblVerr.PbDataAccessLoadInfo, new RecordItemIndex(6));
-            repo.TblVerr.PbDataAccessLoad.Click();
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblVerr.Row2_'", repo.TblVerr.Row2_Info, new ActionTimeout(60000), new RecordItemIndex(7));
-            repo.TblVerr.Row2_Info.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblIbufe.Row1'", repo.TblIbufe.Row1Info, new ActionTimeout(60000), new RecordItemIndex(6));
+            repo.TblIbufe.Row1Info.WaitForExists(60000);
             
         }
 

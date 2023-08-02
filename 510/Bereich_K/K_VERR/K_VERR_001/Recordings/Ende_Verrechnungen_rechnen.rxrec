@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Meldungen_Ende_Verrechnungen_rechnen"
+	classname="Ende_Verrechnungen_rechnen"
 	namespace="K_VERR_001.Recordings">
 	</codegen>
 	<variables>
@@ -77,7 +77,7 @@ mode="Global">
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="d57dfa04-846c-43ef-84cb-7c90e19dbce7">
 			<comment>
@@ -1105,7 +1105,7 @@ Satz-Nr: 1 (Vollkosten)
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -2031,7 +2031,7 @@ RQAYoxRRQAYoxRRQAYoxRRQAYoxRRQAYooooAKKKKACiiigD/9k=
 		</mouseitem>
 		<explicitdelayitem
 		duration="2000ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
@@ -2041,7 +2041,7 @@ RQAYoxRRQAYoxRRQAYoxRRQAYoxRRQAYooooAKKKKACiiigD/9k=
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="73315370-33a1-468f-b63d-bd3821eac837">
 			<comment>
@@ -3069,7 +3069,7 @@ Satz-Nr: 1 (Vollkosten)
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -3842,7 +3842,7 @@ Satz-Nr: 1 (Vollkosten)
 		</mouseitem>
 		<explicitdelayitem
 		duration="2000ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
@@ -5609,7 +5609,7 @@ AMUtFFABRRRQB//Z
 				Text
 			</matchname>
 			<matchvalue>
-				Lauf 1  Periode 2 Stufe 21 Art SVE Konto E1000
+				Lauf 1  Periode 6 Stufe 21 Art SVE Konto E1000
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -5653,7 +5653,7 @@ AMUtFFABRRRQB//Z
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Meldungen_Ende_Verrechnungen_rechnen.UserCode.cs
+		Ende_Verrechnungen_rechnen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace K_VERR_001.Recordings
+namespace K_VERR_001.Recordings_K_IBUFE
 {
-    public partial class Meldungen_Ende_Verrechnungen_rechnen
+    public partial class K_ibufe_Einschraenkungen_neu_laden
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace K_VERR_001.Recordings_K_IBUFE
 {
-    public partial class k_ibufe_Zeile_1_pruefen
+    public partial class K_ibufe_Zeile_3_pruefen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

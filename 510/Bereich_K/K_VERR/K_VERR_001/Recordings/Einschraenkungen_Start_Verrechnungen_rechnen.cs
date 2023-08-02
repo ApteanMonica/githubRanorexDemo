@@ -42,7 +42,7 @@ namespace K_VERR_001.Recordings
         public Einschraenkungen_Start_Verrechnungen_rechnen()
         {
             Jahr = "2020";
-            Periode = "2";
+            Periode = "6";
         }
 
         /// <summary>
