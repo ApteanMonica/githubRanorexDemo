@@ -42,9 +42,9 @@ namespace N_ANLA_004.Recordings
         public Kontrolle_Abgang()
         {
             Anlagennr = "N_ANLA_004_01";
-            Abgangs_AfA = "1065,00";
-            AHK_Betrag_Abgang = "3550";
-            RBW = "2485,00";
+            Abgangs_AfA = "1.065,00";
+            AHK_Betrag_Abgang = "3.550,00";
+            RBW = "2.485,00";
             Abgangserloes = "150,00";
         }
 
