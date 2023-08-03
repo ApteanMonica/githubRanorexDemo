@@ -43,7 +43,8 @@ namespace K_VERR_001.Recordings_K_IBUFE
         {
             KontoB = "B1000";
             KontoE = "E1000";
-            Kostenstelle = "10";
+            von_KST_10 = "10";
+            Periode_Jahr = "6.2020";
         }
 
         /// <summary>
@@ -80,16 +81,28 @@ namespace K_VERR_001.Recordings_K_IBUFE
             set { _KontoE = value; }
         }
 
-        string _Kostenstelle;
+        string _von_KST_10;
 
         /// <summary>
-        /// Gets or sets the value of variable Kostenstelle.
+        /// Gets or sets the value of variable von_KST_10.
         /// </summary>
         [TestVariable("a43fea86-5c39-4159-8603-33f1e56feadd")]
-        public string Kostenstelle
+        public string von_KST_10
         {
-            get { return _Kostenstelle; }
-            set { _Kostenstelle = value; }
+            get { return _von_KST_10; }
+            set { _von_KST_10 = value; }
+        }
+
+        string _Periode_Jahr;
+
+        /// <summary>
+        /// Gets or sets the value of variable Periode_Jahr.
+        /// </summary>
+        [TestVariable("3a70451b-68db-441a-9311-acdc9bcdd7ea")]
+        public string Periode_Jahr
+        {
+            get { return _Periode_Jahr; }
+            set { _Periode_Jahr = value; }
         }
 
 #endregion
@@ -121,8 +134,8 @@ namespace K_VERR_001.Recordings_K_IBUFE
             // Zeile 1
             Report.Log(ReportLevel.Info, "Section", "Zeile 1", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='6.2020') on item 'TblIbufe.Row_1.ColJahrPeriodeRow1'.", repo.TblIbufe.Row_1.ColJahrPeriodeRow1Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblIbufe.Row_1.ColJahrPeriodeRow1Info, "Text", "6.2020");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode_Jahr) on item 'TblIbufe.Row_1.ColJahrPeriodeRow1'.", repo.TblIbufe.Row_1.ColJahrPeriodeRow1Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblIbufe.Row_1.ColJahrPeriodeRow1Info, "Text", Periode_Jahr);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'TblIbufe.Row_1.ColVestNrRow1'.", repo.TblIbufe.Row_1.ColVestNrRow1Info, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.TblIbufe.Row_1.ColVestNrRow1Info, "Text", "0");
@@ -160,8 +173,8 @@ namespace K_VERR_001.Recordings_K_IBUFE
             // Zeile 2
             Report.Log(ReportLevel.Info, "Section", "Zeile 2", new RecordItemIndex(13));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='6.2020') on item 'TblIbufe.Row_2.ColJahrPeriodeRow2'.", repo.TblIbufe.Row_2.ColJahrPeriodeRow2Info, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.TblIbufe.Row_2.ColJahrPeriodeRow2Info, "Text", "6.2020");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode_Jahr) on item 'TblIbufe.Row_2.ColJahrPeriodeRow2'.", repo.TblIbufe.Row_2.ColJahrPeriodeRow2Info, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.TblIbufe.Row_2.ColJahrPeriodeRow2Info, "Text", Periode_Jahr);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'TblIbufe.Row_2.ColVestNrRow2'.", repo.TblIbufe.Row_2.ColVestNrRow2Info, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.TblIbufe.Row_2.ColVestNrRow2Info, "Text", "0");
@@ -169,8 +182,8 @@ namespace K_VERR_001.Recordings_K_IBUFE
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$KontoE) on item 'TblIbufe.Row_2.ColKontoRow2'.", repo.TblIbufe.Row_2.ColKontoRow2Info, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.TblIbufe.Row_2.ColKontoRow2Info, "Text", KontoE);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kostenstelle) on item 'TblIbufe.Row_2.ColKs1NrRow2'.", repo.TblIbufe.Row_2.ColKs1NrRow2Info, new RecordItemIndex(17));
-            Validate.AttributeEqual(repo.TblIbufe.Row_2.ColKs1NrRow2Info, "Text", Kostenstelle);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$von_KST_10) on item 'TblIbufe.Row_2.ColKs1NrRow2'.", repo.TblIbufe.Row_2.ColKs1NrRow2Info, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.TblIbufe.Row_2.ColKs1NrRow2Info, "Text", von_KST_10);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9999') on item 'TblIbufe.Row_2.ColKs2NrRow2'.", repo.TblIbufe.Row_2.ColKs2NrRow2Info, new RecordItemIndex(18));
             Validate.AttributeEqual(repo.TblIbufe.Row_2.ColKs2NrRow2Info, "Text", "9999");
@@ -187,8 +200,8 @@ namespace K_VERR_001.Recordings_K_IBUFE
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10.000,00') on item 'TblIbufe.Row_2.ColIbuHabenRow2'.", repo.TblIbufe.Row_2.ColIbuHabenRow2Info, new RecordItemIndex(22));
             Validate.AttributeEqual(repo.TblIbufe.Row_2.ColIbuHabenRow2Info, "Text", "10.000,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10.000,00') on item 'TblIbufe.Row_2.ColBetragRow2'.", repo.TblIbufe.Row_2.ColBetragRow2Info, new RecordItemIndex(23));
-            Validate.AttributeEqual(repo.TblIbufe.Row_2.ColBetragRow2Info, "Text", "10.000,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-10.000,00') on item 'TblIbufe.Row_2.ColBetragRow2'.", repo.TblIbufe.Row_2.ColBetragRow2Info, new RecordItemIndex(23));
+            Validate.AttributeEqual(repo.TblIbufe.Row_2.ColBetragRow2Info, "Text", "-10.000,00");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'TblIbufe.Row_2.ColMengeRow2'.", repo.TblIbufe.Row_2.ColMengeRow2Info, new RecordItemIndex(24));
             Validate.AttributeEqual(repo.TblIbufe.Row_2.ColMengeRow2Info, "Text", "0");

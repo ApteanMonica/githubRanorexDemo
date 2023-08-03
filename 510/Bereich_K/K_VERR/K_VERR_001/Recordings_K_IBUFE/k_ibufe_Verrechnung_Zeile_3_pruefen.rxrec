@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="5f87688b-2966-4263-b52f-f5a0dba4a8cb"
+id="f2ad160e-bcc6-499f-89e4-0f406d5e0f39"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,41 +19,52 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="K_ibufe_Stufe_0_Fibu_Daten_pruefen"
+	classname="K_ibufe_Verrechnung_Zeile_3_pruefen"
 	namespace="K_VERR_001.Recordings_K_IBUFE">
 	</codegen>
 	<variables>
 		<var
-		id="27523636-3096-44ff-a05b-3fa1322052be"
+		id="ed498b91-4412-4e27-acf6-346ca5895fd7"
 		name="KontoB">
 			B1000
 		</var>
 		<var
-		id="0db7a414-f3b5-41a2-ba28-e3caf0c44060"
-		name="KontoE">
-			E1000
-		</var>
-		<var
-		id="a43fea86-5c39-4159-8603-33f1e56feadd"
+		id="048e0d45-180f-4ac0-8ce3-d2f1622c3701"
 		name="von_KST_10">
 			10
 		</var>
 		<var
-		id="3a70451b-68db-441a-9311-acdc9bcdd7ea"
+		id="24445fcf-0808-4cf1-b956-0e77bc3a83a5"
+		name="an_KST_60">
+			60
+		</var>
+		<var
+		id="549f64d6-cf91-4592-bb2b-5089b7fd1b2b"
 		name="Periode_Jahr">
 			6.2020
 		</var>
+		<var
+		id="30736008-d85b-4925-b0b3-ddee95a883c8"
+		name="Text_21_1">
+			Verrechnung K_VERR_001 Menge 150 an KST 60
+		</var>
+		<var
+		id="20d3c420-f10c-4243-b84f-f899e55193e0"
+		name="Stufe_21">
+			21
+		</var>
+		<var
+		id="b946fb56-2173-4bef-b36c-ed8da791f48b"
+		name="Art_SVE">
+			SVE
+		</var>
+		<var
+		id="bad58f1e-527d-43b7-8b31-5ae03a63a600"
+		name="Menge1">
+			150
+		</var>
 	</variables>
 	<recorditems>
-		<separatoritem
-		enabled="True"
-		optional="False">
-			<comment>
-				Zeile 1
-			</comment>
-			<bindings>
-			</bindings>
-		</separatoritem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -68,10 +79,10 @@ mode="Global">
 				</binding>
 			</bindings>
 			<info
-			id="c800ef87-0337-4e0e-8c6f-433b84072132"
+			id="99f79814-909d-414e-9775-a775fb7dcc1d"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colJahrPeriode Row 1']
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colJahrPeriode Row 3']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -91,12 +102,16 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Stufe_21">
+				</binding>
 			</bindings>
 			<info
-			id="8873ae0f-986b-4022-8836-d18389a70df6"
+			id="3c1deca3-f58b-48d2-82c8-62bc50036cb6"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colVest_nr Row 1']
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colVest_nr Row 3']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -105,7 +120,90 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				0
+				21
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="21c03ab0-c9e2-4758-a833-651b77bdd431">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Art_SVE">
+				</binding>
+			</bindings>
+			<info
+			id="657200c0-8a25-4c7e-93f1-e03986a1bb19"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="6"
+				prefcap="cell"
+				rect="107,411,30,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						SVE
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colVera_cd Row 3
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						SVE
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colVera_cd Row 3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				SVE
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -122,81 +220,7 @@ mode="Global">
 				</binding>
 			</bindings>
 			<info
-			id="cad9dce1-03f2-4d9c-aadc-482fde3a4bca"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKonto Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="b3c0a5aa-c21b-46b1-ad0e-f5a4e6f82aca">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="5ccf481d-e4fe-462d-9394-23ba18fdbab0"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKs1_nr Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				99
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="c77ffdd5-8017-4a63-8a0e-51737f17d831">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="c9041ac4-6e4e-4483-a8be-de1bd07e3e99"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKs2_nr Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				9999
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="36aeec60-caaa-4683-9627-7537a08c031a">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="a205e6c6-f91d-49ad-8826-cb59b065da71"
+			id="6a4f1803-9050-4b9b-8625-e8b6ba084f32"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -204,9 +228,9 @@ mode="Global">
 				enabled="True"
 				flavor="msaa"
 				hasfocus="False"
-				index="14"
+				index="8"
 				prefcap="cell"
-				rect="319,373,61,19"
+				rect="137,411,60,19"
 				role="cell"
 				snapElem=""
 				valid="True"
@@ -224,7 +248,7 @@ mode="Global">
 					<attribute
 					name="text"
 					type="System.String">
-						200
+						B1000
 					</attribute>
 					<attribute
 					name="accessibledefaultaction"
@@ -234,7 +258,7 @@ mode="Global">
 					<attribute
 					name="accessiblename"
 					type="System.String">
-						colKs3_nr Row 1
+						colKonto Row 3
 					</attribute>
 					<attribute
 					name="accessiblerole"
@@ -249,415 +273,11 @@ mode="Global">
 					<attribute
 					name="accessiblevalue"
 					type="System.String">
-						200
+						B1000
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKs3_nr Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				99999
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="d1f51ed2-f659-4b64-97a3-4d25892b719c">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="142b9259-60ed-4e68-9f7f-c500e56457ec"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKs4_nr Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				999
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="3cad7e9d-fbde-4f8c-ab95-2635e5825f1e">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="7ab8d6c2-5449-4c18-b51f-d1701fd7d23a"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="22"
-				prefcap="cell"
-				rect="441,373,96,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						True
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						10.000,00
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colIbu_soll Row 1
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Selected, Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						10.000,00
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colIbu_soll Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				10.000,00
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="1b3bd9bd-d93f-4e44-8391-e4e6fc21d1eb">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="2baadc85-738a-4ef3-9219-c4ea0543f285"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="23"
-				prefcap="cell"
-				rect="537,373,96,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						True
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						0,00
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colIbu_haben Row 1
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Selected, Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						0,00
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colIbu_haben Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				0,00
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="97b0b4ee-b2b0-408a-89b1-351f98487530">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="e35291b9-6f23-4d82-93c7-9037be132f62"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBetrag Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				10.000,00
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="3b60912b-357a-4d1f-b62f-7fbc85aa37d5">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="f983ba14-b972-430f-bd77-3525728d9c07"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="25"
-				prefcap="cell"
-				rect="729,373,88,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						True
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						0
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colMenge Row 1
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Selected, Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						0
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colMenge Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				0
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="240427f8-c54b-49f3-a762-6385272c0071">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="d8919819-cb09-4981-a880-ae5851a6d833"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colHerkunft Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				0
-			</matchvalue>
-		</validationitem>
-		<separatoritem
-		enabled="True"
-		optional="False">
-			<comment>
-				Zeile 2
-			</comment>
-			<bindings>
-			</bindings>
-		</separatoritem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="ef63da92-ea14-49f3-b125-d55bb71b8720">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Periode_Jahr">
-				</binding>
-			</bindings>
-			<info
-			id="b9f5c624-da61-4550-a27a-73b5d28e2c84"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colJahrPeriode Row 2']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				6.2020
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="21c03ab0-c9e2-4758-a833-651b77bdd431">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="eeda6d98-a78f-4ee8-b4ea-67ef53bdc981"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colVest_nr Row 2']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				0
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="dca43059-cd16-4b80-b500-74b3cc50deab">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="KontoE">
-				</binding>
-			</bindings>
-			<info
-			id="ad21c058-edc3-4004-8739-7c76668d3a63"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colKonto Row 2']
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colKonto Row 3']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -678,14 +298,68 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="von_KST_10">
+				variable="an_KST_60">
 				</binding>
 			</bindings>
 			<info
-			id="4ca27e82-1bc4-43eb-8da2-62934220a5cc"
+			id="aec49e0e-0f92-4b68-9ec6-dcc9e6e2bdf5"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="10"
+				prefcap="cell"
+				rect="197,411,61,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						60
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colKs1_nr Row 3
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						60
+					</attribute>
+				</element>
 				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colKs1_nr Row 2']
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colKs1_nr Row 3']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -694,7 +368,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				99
+				60
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -707,10 +381,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="cfb8d01a-b26c-4aae-b0f1-44d8d8cb51bf"
+			id="5a1fb2e2-be02-4338-9903-b409c3b48131"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colKs2_nr Row 2']
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colKs2_nr Row 3']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -719,7 +393,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				9999
+				*
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -732,10 +406,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="6e602730-48dd-4204-968f-a0295ebfaea9"
+			id="e1b0c7c0-57d0-43fc-a2d7-187cf60097bf"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colKs3_nr Row 2']
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colKs3_nr Row 3']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -744,7 +418,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				99999
+				*
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -757,10 +431,64 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="5de94b09-8707-44a3-9fdd-5eb1ca0d2b37"
+			id="efc103f3-b7b7-4547-bf58-1b64c66110a8"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="16"
+				prefcap="cell"
+				rect="380,411,61,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						*
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colKs4_nr Row 3
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						*
+					</attribute>
+				</element>
 				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colKs4_nr Row 2']
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colKs4_nr Row 3']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -769,23 +497,48 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				999
+				*
 			</matchvalue>
 		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="3cad7e9d-fbde-4f8c-ab95-2635e5825f1e">
+		searchpropertyid="97b0b4ee-b2b0-408a-89b1-351f98487530">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="92254b56-f478-40cb-a809-c057c2970724"
+			id="e2284055-253e-44fd-9e3d-f856e4e885e7"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colIbu_soll Row 2']
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colIbu_soll Row 3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				18.000,00
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="97b0b4ee-b2b0-408a-89b1-351f98487530">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e2d6eebb-b1ad-4a07-8652-854df9101120"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colIbu_haben Row 3']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -801,41 +554,16 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="1b3bd9bd-d93f-4e44-8391-e4e6fc21d1eb">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="50a08a4a-0670-49f6-b7a0-0e391456acbb"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colIbu_haben Row 2']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				10.000,00
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
 		searchpropertyid="97b0b4ee-b2b0-408a-89b1-351f98487530">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="c2f87529-2832-436e-a1de-7ff8b27df6ec"
+			id="2fa7c5b6-557f-4127-a4e2-f799a91a10fb"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colBetrag Row 2']
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colBetrag Row 3']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -844,32 +572,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				-10.000,00
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="3b60912b-357a-4d1f-b62f-7fbc85aa37d5">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="f5e74ece-b0dc-4323-9992-d57249ef9475"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colMenge Row 2']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				0
+				18.000,00
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -880,12 +583,16 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Menge1">
+				</binding>
 			</bindings>
 			<info
-			id="3f8e73cc-662e-438f-bf71-9a8c418cb51b"
+			id="6bbbd1ec-7983-4614-95c2-71523e7062db"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colHerkunft Row 2']
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colMenge Row 3']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -894,7 +601,218 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				0
+				150
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="1d056a40-3202-46a7-8670-a3cf2212ea6e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="da3849d8-0b16-4acf-b2e9-27870d542509"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colHerkunft Row 3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				1
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="240427f8-c54b-49f3-a762-6385272c0071">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Text_21_1">
+				</binding>
+			</bindings>
+			<info
+			id="12d2de3c-6d52-44cb-bdfd-293cbcfc2821"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colIbu_text Row 3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Verrechnung K_VERR_001 Menge 150 an KST 60
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="1d056a40-3202-46a7-8670-a3cf2212ea6e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1fe8f106-d7ba-40ae-bfb4-009aa228aa09"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colIbu_va Row 3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				1
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="240427f8-c54b-49f3-a762-6385272c0071">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="von_KST_10">
+				</binding>
+			</bindings>
+			<info
+			id="bae49b04-b4cd-4763-8bfe-7acbec747340"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colKs1_nr_va Row 3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="1d056a40-3202-46a7-8670-a3cf2212ea6e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c06e8add-0b7d-4d4b-8516-fb6e8f9ed903"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colLauf Row 3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				1
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="1d056a40-3202-46a7-8670-a3cf2212ea6e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="77685f2c-83f5-413d-83d7-5b1bbcccfcd0"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="49"
+				prefcap="cell"
+				rect="954,411,80,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						2
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colIbu_pos Row 3
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						2
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colIbu_pos Row 3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				2
 			</matchvalue>
 		</validationitem>
 	</recorditems>
@@ -913,7 +831,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		k_ibufe_Stufe_0_Fibu_Daten_pruefen.UserCode.cs
+		k_ibufe_Verrechnung_Zeile_3_pruefen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

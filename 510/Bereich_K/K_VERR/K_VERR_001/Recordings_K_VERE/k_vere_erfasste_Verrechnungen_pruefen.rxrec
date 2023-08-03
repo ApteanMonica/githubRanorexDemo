@@ -30,13 +30,68 @@ mode="Global">
 		</var>
 		<var
 		id="a35b5891-b3c1-4903-a2c6-7af17b8152b5"
-		name="Kostenstelle">
+		name="von_KST_10">
 			10
 		</var>
 		<var
 		id="a8b4be85-bcb1-4f7c-b009-01e65400cd5b"
 		name="KontoB">
 			B1000
+		</var>
+		<var
+		id="9f69ba87-ca5d-4985-8edd-112366b291b1"
+		name="an_KST_60">
+			60
+		</var>
+		<var
+		id="cbb60a60-ea5e-48fe-95eb-26eed00b2ab3"
+		name="an_KST_80">
+			80
+		</var>
+		<var
+		id="2f42e497-b05b-49e2-b6a5-9f03a1c57c74"
+		name="Text_20">
+			Import Stundenerfassung
+		</var>
+		<var
+		id="a616e448-2cea-48f8-be85-ff64df52fc2b"
+		name="Text_21_1">
+			Verrechnung K_VERR_001 Menge 150 an KST 60
+		</var>
+		<var
+		id="593145ba-920b-4bb5-9c86-d03d6b6d56dd"
+		name="Text_21_2">
+			Verrechnung K_VERR_001 Menge 100 an KST 80
+		</var>
+		<var
+		id="5d6bdb08-69cc-4133-9c52-b304807ea0df"
+		name="Art_STS">
+			STS
+		</var>
+		<var
+		id="3c1b082f-7a6b-4667-bc56-727e0d726796"
+		name="Stufe_20">
+			20
+		</var>
+		<var
+		id="95b5809e-afc3-4aad-80f4-c952935c92ba"
+		name="Stufe_21">
+			21
+		</var>
+		<var
+		id="b47cff5f-6047-443a-8c72-2c7b9010f41a"
+		name="Art_SVE">
+			SVE
+		</var>
+		<var
+		id="9220e6bf-5971-4ceb-bdaf-54274ace2888"
+		name="Menge1">
+			150
+		</var>
+		<var
+		id="d3fca533-93bf-4610-a8da-bfdff59ce114"
+		name="Menge2">
+			100
 		</var>
 	</variables>
 	<recorditems>
@@ -57,6 +112,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Stufe_20">
+				</binding>
 			</bindings>
 			<info
 			id="f2b68be0-108d-47e2-a533-60ae37534111"
@@ -136,6 +195,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Art_STS">
+				</binding>
 			</bindings>
 			<info
 			id="0041b75b-8a61-4e11-8854-9c0a082100c4"
@@ -296,7 +359,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Kostenstelle">
+				variable="von_KST_10">
 				</binding>
 			</bindings>
 			<info
@@ -614,6 +677,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Text_20">
+				</binding>
 			</bindings>
 			<info
 			id="6b4820fa-aee4-41c7-9bcf-f1935715bdab"
@@ -702,6 +769,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Stufe_21">
+				</binding>
 			</bindings>
 			<info
 			id="cdbdf61c-61bb-4303-a5c4-57daac07fa58"
@@ -781,6 +852,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Art_SVE">
+				</binding>
 			</bindings>
 			<info
 			id="5221a88c-3ebb-4de8-a065-075112eddb89"
@@ -945,7 +1020,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Kostenstelle">
+				variable="von_KST_10">
 				</binding>
 			</bindings>
 			<info
@@ -1109,6 +1184,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="an_KST_60">
+				</binding>
 			</bindings>
 			<info
 			id="ae79cf02-ed3a-406f-b8b3-c8002ba289c3"
@@ -1188,6 +1267,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Menge1">
+				</binding>
 			</bindings>
 			<info
 			id="5cff6275-7b1c-4797-8958-1913e21f5af0"
@@ -1267,6 +1350,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Text_21_1">
+				</binding>
 			</bindings>
 			<info
 			id="826cd8e4-6f9a-4ed8-a149-7aaca4b90d18"
@@ -1355,6 +1442,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Stufe_21">
+				</binding>
 			</bindings>
 			<info
 			id="f44a2410-eb51-45f2-a761-6efeaf3fef90"
@@ -1434,6 +1525,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Art_SVE">
+				</binding>
 			</bindings>
 			<info
 			id="e8a8b2bc-0711-4bb4-abac-ecade797e0a8"
@@ -1598,7 +1693,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Kostenstelle">
+				variable="von_KST_10">
 				</binding>
 			</bindings>
 			<info
@@ -1679,6 +1774,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="KontoB">
+				</binding>
 			</bindings>
 			<info
 			id="1522ad21-4ce5-4f56-8962-43ea6c639a87"
@@ -1758,6 +1857,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="an_KST_80">
+				</binding>
 			</bindings>
 			<info
 			id="7248a9c4-acb4-456e-96c2-de7b9b74de3a"
@@ -1837,6 +1940,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Menge2">
+				</binding>
 			</bindings>
 			<info
 			id="7fab93f1-ba4a-4ad5-8db2-06555e54ec31"
@@ -1916,6 +2023,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Text_21_2">
+				</binding>
 			</bindings>
 			<info
 			id="78af128f-884c-496f-9dd0-b628a39fb0fc"
