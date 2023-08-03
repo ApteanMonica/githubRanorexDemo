@@ -139,6 +139,30 @@
       <UserCode>true</UserCode>
       <id>8cd64970-9de8-4d10-b8d6-2ede6372152d</id>
     </Compile>
+    <Compile Include="Recordings_K_VEST\Close_k_vest.cs">
+      <DependentUpon>Close_k_vest.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>11a30c7c-ff3d-4949-9838-7d14399fae98</id>
+      <BoundTo>ddd8660b-f528-441a-994c-e4ce79501558</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_K_VEST\Close_k_vest.UserCode.cs">
+      <DependentUpon>Close_k_vest.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5042b5aa-30c9-45e5-85d7-8f82d304e215</id>
+      <BoundTo>ddd8660b-f528-441a-994c-e4ce79501558</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_K_VEST\Start_k_vest.cs">
+      <DependentUpon>Start_k_vest.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9fb3887b-7798-4431-896d-433712ceec9c</id>
+      <BoundTo>24f77c81-d61e-4ea9-8cb0-9d49c016a343</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_K_VEST\Start_k_vest.UserCode.cs">
+      <DependentUpon>Start_k_vest.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>19412c7c-b139-4313-a66d-e9f459e4c4fb</id>
+      <BoundTo>24f77c81-d61e-4ea9-8cb0-9d49c016a343</BoundTo>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -175,6 +199,16 @@
       <id>53a2d5d2-6c32-44ab-bb6d-8a0e2c0e15de</id>
       <recordtableid>76b63d1c-39a0-4fcb-8e4a-860e66b82034</recordtableid>
     </None>
+    <None Include="Recordings_K_VEST\Close_k_vest.rxrec">
+      <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
+      <id>ddd8660b-f528-441a-994c-e4ce79501558</id>
+      <recordtableid>5e244313-8219-455c-9a3d-bbb3d4272f74</recordtableid>
+    </None>
+    <None Include="Recordings_K_VEST\Start_k_vest.rxrec">
+      <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
+      <id>24f77c81-d61e-4ea9-8cb0-9d49c016a343</id>
+      <recordtableid>1ca2a914-bf15-4a56-936d-1c37a85247df</recordtableid>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="K_VERE_001.rxtmg">
@@ -187,6 +221,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Recordings_K_VEST">
+      <id>972c7081-b5f5-4d43-a555-dea3c654827a</id>
+    </Folder>
     <Folder Include="Recordings">
       <id>aa02cf61-0ab6-4588-a96d-b30d78264725</id>
     </Folder>

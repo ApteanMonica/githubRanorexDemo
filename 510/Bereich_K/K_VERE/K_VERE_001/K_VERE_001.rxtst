@@ -2,6 +2,10 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testcase
+			id="0f8883d7-5b17-4cbd-8aa1-81eced117eb5"
+			name="K_VEST_Verrechnungsstamm_aendern">
+			</testcase>
 			<setup
 			id="1a0c51ba-8f22-4b79-ad6c-91e634b76bbc"
 			name="setup">
@@ -18,8 +22,36 @@
 			</testmodule>
 			<testcase
 			id="4a209f00-a721-4cac-acff-45733faeb343"
-			name="TestCase">
+			name="Verrechnung_erfassen">
 			</testcase>
+			<teardown
+			id="4da9a032-17eb-4a70-b624-063acb20da27"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="55e442dd-2ad4-4cd7-bdb8-2b77b56d8cd1"
+			name="Start_k_vest"
+			ref="1ca2a914-bf15-4a56-936d-1c37a85247df"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="ceadf026-7ca3-40e3-bfc1-5dc704a27eb2"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm2"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="25233ad1-4fc2-4e9e-9b03-1127710ebf90"
+					variablename="Programm2">
+					</var>
+				</databinding>
+			</testmodule>
+			<setup
+			id="564f0318-68f7-4307-8726-e075e5141351"
+			name="setup">
+			</setup>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -72,6 +104,10 @@
 					value="K_VERE">
 					</param>
 					<param
+					name="Programm2"
+					value="K_VEST">
+					</param>
+					<param
 					name="Jahr"
 					value="2020">
 					</param>
@@ -80,11 +116,73 @@
 					value="1">
 					</param>
 					<param
-					name="Periode_MM"
-					value="01">
+					name="Periode_Jahr"
+					value="1.2020">
+					</param>
+					<param
+					name="Art_STS"
+					value="STS">
+					</param>
+					<param
+					name="Art_SVE"
+					value="SVE">
+					</param>
+					<param
+					name="Stufe_20"
+					value="20">
+					</param>
+					<param
+					name="Stufe_21"
+					value="21">
+					</param>
+					<param
+					name="KontoE"
+					value="E1000">
+					</param>
+					<param
+					name="KontoB"
+					value="B1000">
+					</param>
+					<param
+					name="von_KST_10"
+					value="10">
+					</param>
+					<param
+					name="an_KST_60"
+					value="60">
+					</param>
+					<param
+					name="an_KST_80"
+					value="80">
+					</param>
+					<param
+					name="Menge1"
+					value="150">
+					</param>
+					<param
+					name="Menge2"
+					value="100">
+					</param>
+					<param
+					name="Text_20"
+					value="Import Stundenerfassung">
+					</param>
+					<param
+					name="Text_21_1"
+					value="Verrechnung K_VERR_001 Menge 150 an KST 60">
+					</param>
+					<param
+					name="Text_21_2"
+					value="Verrechnung K_VERR_001 Menge 100 an KST 80">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="95f1ef6a-6135-47d9-9b6d-cd53457fdcbe"
+			name="Close_k_vest"
+			ref="5e244313-8219-455c-9a3d-bbb3d4272f74"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="d3a317f3-f828-46dc-bf33-a1a2c3b1c559"
 			name="StartAUT"
@@ -150,7 +248,7 @@
 				name="K_VERE_001">
 					<testcase
 					id="4a209f00-a721-4cac-acff-45733faeb343"
-					name="TestCase">
+					name="Verrechnung_erfassen">
 						<setup
 						id="1a0c51ba-8f22-4b79-ad6c-91e634b76bbc"
 						name="setup">
@@ -176,6 +274,26 @@
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="0f8883d7-5b17-4cbd-8aa1-81eced117eb5"
+					name="K_VEST_Verrechnungsstamm_aendern">
+						<setup
+						id="564f0318-68f7-4307-8726-e075e5141351"
+						name="setup">
+							<testmodule
+							id="55e442dd-2ad4-4cd7-bdb8-2b77b56d8cd1"
+							name="Start_k_vest">
+							</testmodule>
+						</setup>
+						<teardown
+						id="4da9a032-17eb-4a70-b624-063acb20da27"
+						name="teardown">
+							<testmodule
+							id="95f1ef6a-6135-47d9-9b6d-cd53457fdcbe"
+							name="Close_k_vest">
+							</testmodule>
+						</teardown>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -186,6 +304,9 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="0f8883d7-5b17-4cbd-8aa1-81eced117eb5">
+			</testcontainer>
 			<testcontainer
 			id="4a209f00-a721-4cac-acff-45733faeb343">
 			</testcontainer>
