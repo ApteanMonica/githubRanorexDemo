@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace K_VERE_001.Recordings
+namespace K_VERE_001.Recordings_K_VEST
 {
-    public partial class Einschraenkungen_laden
+    public partial class Verr_Stamm_pruefen_untere_Tabelle_Default
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

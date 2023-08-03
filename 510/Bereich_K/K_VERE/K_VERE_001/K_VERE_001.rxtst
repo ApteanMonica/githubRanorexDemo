@@ -11,19 +11,49 @@
 			name="setup">
 			</setup>
 			<testmodule
-			enabled="False"
-			id="3874a79b-97ae-4416-9b69-9dd7a880487c"
-			name="Zeilen_pruefen"
-			ref="76b63d1c-39a0-4fcb-8e4a-860e66b82034"
+			id="1b66ac34-9982-4ce0-a2e8-8a1a15fa4f49"
+			name="Stufe_20_Zeile_pruefen"
+			ref="20ebedd7-7bf8-457a-9f1e-d8314882620e"
 			type="Recording">
-				<description>
-					<![CDATA[ändern -kopiert von K_VERR]]>
-				</description>
+				<databinding>
+					<var
+					dataname="von_KST_10"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="a00186d1-19cb-447a-88de-9d10d8c1487b"
+					variablename="von_KST_10">
+					</var>
+					<var
+					dataname="Text_20"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="81ee63cd-8977-4b97-a1dc-f032ca1d151c"
+					variablename="Text_20">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="4a209f00-a721-4cac-acff-45733faeb343"
 			name="Verrechnung_erfassen">
 			</testcase>
+			<testmodule
+			id="4d367820-affe-4509-949c-31d80b800bb4"
+			name="Stufe_20_erfassen"
+			ref="ff9f24aa-a6fe-45c5-bae8-54c713008c4a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="von_KST_10"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="3307ff82-a8b5-4685-95ae-03dc8335b22b"
+					variablename="von_KST_10">
+					</var>
+					<var
+					dataname="Text_20"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="c7f12762-ec41-4605-b09b-e4f46d994007"
+					variablename="Text_20">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="4da9a032-17eb-4a70-b624-063acb20da27"
 			name="teardown">
@@ -52,6 +82,26 @@
 			id="564f0318-68f7-4307-8726-e075e5141351"
 			name="setup">
 			</setup>
+			<testmodule
+			id="650f5719-326a-432f-8249-efb6bbc4e6a1"
+			name="Verr_Stamm_pruefen_obere_Tabelle_Default"
+			ref="ce563591-e7af-4be1-8905-9d7b0e545e05"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Art_SVE"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="42c1a24d-d5a4-4316-99f1-33bb3084167e"
+					variablename="Art_SVE">
+					</var>
+					<var
+					dataname="Art_STS"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="c4cb0dc7-2376-442f-8b7f-44e597217330"
+					variablename="Art_STS">
+					</var>
+				</databinding>
+			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -178,11 +228,59 @@
 				</parameters>
 			</testcase>
 			<testmodule
+			id="8de70de8-db06-4cb9-975d-f9bbc09cc1b6"
+			name="Verr_Stamm_pruefen_untere_Tabelle_Default"
+			ref="ce0d9332-ea47-4f2f-b3cf-734b8e86e8c8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Art_STS"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="1bfaeb57-dec0-4ea4-8085-aa037a130552"
+					variablename="Art_STS">
+					</var>
+					<var
+					dataname="Art_SVE"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="52c0906d-3bd2-4ad6-a295-156f4477f557"
+					variablename="Art_SVE">
+					</var>
+					<var
+					dataname="Stufe_20"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="e1805809-3a53-4c93-8ad0-966b206eb316"
+					variablename="Stufe_20">
+					</var>
+					<var
+					dataname="Stufe_21"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="f116cb40-b508-4611-b07d-1df80b6e81cf"
+					variablename="Stufe_21">
+					</var>
+					<var
+					dataname="KontoE"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="47fb9c0d-1ae7-49f2-a2de-d0b647b4f828"
+					variablename="KontoE">
+					</var>
+					<var
+					dataname="KontoB"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="5ef6a63c-9554-4a08-88d7-887e4c5cf792"
+					variablename="KontoB">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="95f1ef6a-6135-47d9-9b6d-cd53457fdcbe"
 			name="Close_k_vest"
 			ref="5e244313-8219-455c-9a3d-bbb3d4272f74"
 			type="Recording">
 			</testmodule>
+			<smartfoldernode
+			id="c1457c69-468c-48d2-b0c0-3dd1fe9f1a52"
+			name="Stufe_20_erfassen">
+			</smartfoldernode>
 			<testmodule
 			id="d3a317f3-f828-46dc-bf33-a1a2c3b1c559"
 			name="StartAUT"
@@ -190,16 +288,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
-					variableid="812f76e1-61e1-4630-bea9-d7fdbb7dfaaa"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm"
 					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
 					variableid="57393089-9dca-42ec-8ccf-33e93284ed02"
 					variablename="Programm">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="812f76e1-61e1-4630-bea9-d7fdbb7dfaaa"
+					variablename="Startfile">
 					</var>
 				</databinding>
 				<missingdatabinding>
@@ -213,13 +311,16 @@
 			</testmodule>
 			<testmodule
 			id="df870f9f-3d8a-493d-ae66-e7d95e692860"
-			name="Einschraenkungen_laden"
+			name="Stufe_20_Einschraenkungen_laden"
 			ref="5aa2cc32-2742-49fa-80c3-5d024d96e3cc"
 			type="Recording">
-				<description>
-					<![CDATA[ändern - kopiert von K_VERR]]>
-				</description>
 				<databinding>
+					<var
+					dataname="Periode"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="fa444ddd-9a68-437f-a1b7-f79633475a9f"
+					variablename="Periode">
+					</var>
 					<var
 					dataname="Jahr"
 					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
@@ -227,12 +328,24 @@
 					variablename="Jahr">
 					</var>
 					<var
-					dataname="Periode"
+					dataname="Art_STS"
 					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
-					variableid="fa444ddd-9a68-437f-a1b7-f79633475a9f"
-					variablename="Periode">
+					variableid="29492eba-554d-41c6-8ec5-d3eb5ad7b31b"
+					variablename="Art_STS">
+					</var>
+					<var
+					dataname="Stufe_20"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="e09d1ec7-1dfd-46c2-b772-ca62ae7e332d"
+					variablename="Stufe_20">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="df9a0ab9-0d0e-40a7-806a-22f969188a8d"
+			name="Stufe_20_Zeile_einfuegen_sichtbare_Spalten_pruefen"
+			ref="42e7c1cb-c8b4-42b1-aa3d-72de2413574a"
+			type="Recording">
 			</testmodule>
 			<teardown
 			id="e3f4c787-8ad1-40e3-82b2-331bf30d2edc"
@@ -257,14 +370,26 @@
 							name="StartAUT">
 							</testmodule>
 						</setup>
-						<testmodule
-						id="df870f9f-3d8a-493d-ae66-e7d95e692860"
-						name="Einschraenkungen_laden">
-						</testmodule>
-						<testmodule
-						id="3874a79b-97ae-4416-9b69-9dd7a880487c"
-						name="Zeilen_pruefen">
-						</testmodule>
+						<smartfoldernode
+						id="c1457c69-468c-48d2-b0c0-3dd1fe9f1a52"
+						name="Stufe_20_erfassen">
+							<testmodule
+							id="df870f9f-3d8a-493d-ae66-e7d95e692860"
+							name="Stufe_20_Einschraenkungen_laden">
+							</testmodule>
+							<testmodule
+							id="df9a0ab9-0d0e-40a7-806a-22f969188a8d"
+							name="Stufe_20_Zeile_einfuegen_sichtbare_Spalten_pruefen">
+							</testmodule>
+							<testmodule
+							id="4d367820-affe-4509-949c-31d80b800bb4"
+							name="Stufe_20_erfassen">
+							</testmodule>
+							<testmodule
+							id="1b66ac34-9982-4ce0-a2e8-8a1a15fa4f49"
+							name="Stufe_20_Zeile_pruefen">
+							</testmodule>
+						</smartfoldernode>
 						<teardown
 						id="e3f4c787-8ad1-40e3-82b2-331bf30d2edc"
 						name="teardown">
@@ -285,6 +410,14 @@
 							name="Start_k_vest">
 							</testmodule>
 						</setup>
+						<testmodule
+						id="650f5719-326a-432f-8249-efb6bbc4e6a1"
+						name="Verr_Stamm_pruefen_obere_Tabelle_Default">
+						</testmodule>
+						<testmodule
+						id="8de70de8-db06-4cb9-975d-f9bbc09cc1b6"
+						name="Verr_Stamm_pruefen_untere_Tabelle_Default">
+						</testmodule>
 						<teardown
 						id="4da9a032-17eb-4a70-b624-063acb20da27"
 						name="teardown">
@@ -312,6 +445,9 @@
 			</testcontainer>
 			<testcontainer
 			id="7fd4480f-a1ad-4e22-b290-4852ada6e507">
+			</testcontainer>
+			<testcontainer
+			id="c1457c69-468c-48d2-b0c0-3dd1fe9f1a52">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

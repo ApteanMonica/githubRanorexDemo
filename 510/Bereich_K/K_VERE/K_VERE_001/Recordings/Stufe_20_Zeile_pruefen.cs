@@ -20,38 +20,64 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace K_VERE_001.Recordings_K_VEST
+namespace K_VERE_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Close_k_vest recording.
+    ///The Stufe_20_Zeile_pruefen recording.
     /// </summary>
-    [TestModule("5e244313-8219-455c-9a3d-bbb3d4272f74", ModuleType.Recording, 1)]
-    public partial class Close_k_vest : ITestModule
+    [TestModule("20ebedd7-7bf8-457a-9f1e-d8314882620e", ModuleType.Recording, 1)]
+    public partial class Stufe_20_Zeile_pruefen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::K_VERE_001.K_VERE_001Repository repository.
         /// </summary>
         public static global::K_VERE_001.K_VERE_001Repository repo = global::K_VERE_001.K_VERE_001Repository.Instance;
 
-        static Close_k_vest instance = new Close_k_vest();
+        static Stufe_20_Zeile_pruefen instance = new Stufe_20_Zeile_pruefen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Close_k_vest()
+        public Stufe_20_Zeile_pruefen()
         {
+            von_KST_10 = "10";
+            Text_20 = "Import Stundenerfassung";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Close_k_vest Instance
+        public static Stufe_20_Zeile_pruefen Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _von_KST_10;
+
+        /// <summary>
+        /// Gets or sets the value of variable von_KST_10.
+        /// </summary>
+        [TestVariable("a00186d1-19cb-447a-88de-9d10d8c1487b")]
+        public string von_KST_10
+        {
+            get { return _von_KST_10; }
+            set { _von_KST_10 = value; }
+        }
+
+        string _Text_20;
+
+        /// <summary>
+        /// Gets or sets the value of variable Text_20.
+        /// </summary>
+        [TestVariable("81ee63cd-8977-4b97-a1dc-f032ca1d151c")]
+        public string Text_20
+        {
+            get { return _Text_20; }
+            set { _Text_20 = value; }
+        }
 
 #endregion
 
@@ -79,8 +105,14 @@ namespace K_VERE_001.Recordings_K_VEST
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'MdiMain_K_VEST.TitleBar100Verrechnungsstamm'.", repo.MdiMain_K_VEST.TitleBar100VerrechnungsstammInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.MdiMain_K_VEST.TitleBar100Verrechnungsstamm, 1000);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$von_KST_10) on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKs1NrVonRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKs1NrVonRow2Info, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKs1NrVonRow2Info, "Text", von_KST_10);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,1234') on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2Info, "Text", "100,1234");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Text_20) on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrTextRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrTextRow2Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrTextRow2Info, "Text", Text_20);
             
         }
 

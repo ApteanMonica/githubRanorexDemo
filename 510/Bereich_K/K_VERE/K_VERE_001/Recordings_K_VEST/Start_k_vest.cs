@@ -108,11 +108,11 @@ namespace K_VERE_001.Recordings_K_VEST
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm2 in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm2, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'MdiMain.TitleBar100Verrechnungsstamm'", repo.MdiMain.TitleBar100VerrechnungsstammInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.MdiMain.TitleBar100VerrechnungsstammInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'MdiMain_K_VEST.TitleBar100Verrechnungsstamm'", repo.MdiMain_K_VEST.TitleBar100VerrechnungsstammInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.MdiMain_K_VEST.TitleBar100VerrechnungsstammInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Verrechnungsstamm') on item 'MdiMain.TitleBar100Verrechnungsstamm'.", repo.MdiMain.TitleBar100VerrechnungsstammInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.MdiMain.TitleBar100VerrechnungsstammInfo, "Text", "Verrechnungsstamm");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Verrechnungsstamm') on item 'MdiMain_K_VEST.TitleBar100Verrechnungsstamm'.", repo.MdiMain_K_VEST.TitleBar100VerrechnungsstammInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.MdiMain_K_VEST.TitleBar100VerrechnungsstammInfo, "Text", "Verrechnungsstamm");
             
         }
 
