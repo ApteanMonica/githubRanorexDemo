@@ -33,6 +33,10 @@ namespace K_VERR_001
         K_VERR_001RepositoryFolders.TblIbufeAppFolder _tblibufe;
         K_VERR_001RepositoryFolders.KIBUFEAppFolder _kibufe;
         K_VERR_001RepositoryFolders.VerrechnungenRechnenAppFolder _verrechnungenrechnen;
+        K_VERR_001RepositoryFolders.FrmVerpAppFolder _frmverp;
+        K_VERR_001RepositoryFolders.DlgDruckenAppFolder _dlgdrucken;
+        K_VERR_001RepositoryFolders.PbExportItemsAppFolder _pbexportitems;
+        K_VERR_001RepositoryFolders.TblDrucken_DrucktabelleAppFolder _tbldrucken_drucktabelle;
 
         /// <summary>
         /// Gets the singleton class instance representing the K_VERR_001Repository element repository.
@@ -55,6 +59,10 @@ namespace K_VERR_001
             _tblibufe = new K_VERR_001RepositoryFolders.TblIbufeAppFolder(this);
             _kibufe = new K_VERR_001RepositoryFolders.KIBUFEAppFolder(this);
             _verrechnungenrechnen = new K_VERR_001RepositoryFolders.VerrechnungenRechnenAppFolder(this);
+            _frmverp = new K_VERR_001RepositoryFolders.FrmVerpAppFolder(this);
+            _dlgdrucken = new K_VERR_001RepositoryFolders.DlgDruckenAppFolder(this);
+            _pbexportitems = new K_VERR_001RepositoryFolders.PbExportItemsAppFolder(this);
+            _tbldrucken_drucktabelle = new K_VERR_001RepositoryFolders.TblDrucken_DrucktabelleAppFolder(this);
         }
 
 #region Variables
@@ -125,6 +133,42 @@ namespace K_VERR_001
         public virtual K_VERR_001RepositoryFolders.VerrechnungenRechnenAppFolder VerrechnungenRechnen
         {
             get { return _verrechnungenrechnen; }
+        }
+
+        /// <summary>
+        /// The FrmVerp folder.
+        /// </summary>
+        [RepositoryFolder("dea4fecb-593d-4402-b95f-d2fe0403209b")]
+        public virtual K_VERR_001RepositoryFolders.FrmVerpAppFolder FrmVerp
+        {
+            get { return _frmverp; }
+        }
+
+        /// <summary>
+        /// The DlgDrucken folder.
+        /// </summary>
+        [RepositoryFolder("5e383435-843d-45a0-8447-097a4476fc2e")]
+        public virtual K_VERR_001RepositoryFolders.DlgDruckenAppFolder DlgDrucken
+        {
+            get { return _dlgdrucken; }
+        }
+
+        /// <summary>
+        /// The PbExportItems folder.
+        /// </summary>
+        [RepositoryFolder("7abec369-013e-4d17-a5b9-adf330549e80")]
+        public virtual K_VERR_001RepositoryFolders.PbExportItemsAppFolder PbExportItems
+        {
+            get { return _pbexportitems; }
+        }
+
+        /// <summary>
+        /// The TblDrucken_Drucktabelle folder.
+        /// </summary>
+        [RepositoryFolder("8843291e-5bcd-4d97-95b9-7907531a6b7c")]
+        public virtual K_VERR_001RepositoryFolders.TblDrucken_DrucktabelleAppFolder TblDrucken_Drucktabelle
+        {
+            get { return _tbldrucken_drucktabelle; }
         }
     }
 
@@ -5583,6 +5627,633 @@ namespace K_VERR_001
                 get
                 {
                     return _verrechnungenrechnenInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FrmVerpAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("dea4fecb-593d-4402-b95f-d2fe0403209b")]
+        public partial class FrmVerpAppFolder : RepoGenBaseFolder
+        {
+            K_VERR_001RepositoryFolders.ClientAreaFolder1 _clientarea;
+            RepoItemInfo _titlebar100verrechnungsprotokollInfo;
+            RepoItemInfo _pbdruckendruckInfo;
+
+            /// <summary>
+            /// Creates a new FrmVerp  folder.
+            /// </summary>
+            public FrmVerpAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FrmVerp", "/form[@controlname='frmVerp']", parentFolder, 30000, null, true, "dea4fecb-593d-4402-b95f-d2fe0403209b", "")
+            {
+                _clientarea = new K_VERR_001RepositoryFolders.ClientAreaFolder1(this);
+                _titlebar100verrechnungsprotokollInfo = new RepoItemInfo(this, "TitleBar100Verrechnungsprotokoll", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "ddbf9142-7083-4e8d-9bdf-7fc3dbba482a");
+                _pbdruckendruckInfo = new RepoItemInfo(this, "PbDruckenDruck", "container[@controlname='RibbonBar']/container[@controlname='DruckenGroup']/button[@controlname='pbDrucken_Druck']", "", 30000, null, "eeb92fe3-cf32-4b56-b179-259c8a9701ee");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("dea4fecb-593d-4402-b95f-d2fe0403209b")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("dea4fecb-593d-4402-b95f-d2fe0403209b")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100Verrechnungsprotokoll item.
+            /// </summary>
+            [RepositoryItem("ddbf9142-7083-4e8d-9bdf-7fc3dbba482a")]
+            public virtual Ranorex.TitleBar TitleBar100Verrechnungsprotokoll
+            {
+                get
+                {
+                    return _titlebar100verrechnungsprotokollInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100Verrechnungsprotokoll item info.
+            /// </summary>
+            [RepositoryItemInfo("ddbf9142-7083-4e8d-9bdf-7fc3dbba482a")]
+            public virtual RepoItemInfo TitleBar100VerrechnungsprotokollInfo
+            {
+                get
+                {
+                    return _titlebar100verrechnungsprotokollInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbDruckenDruck item.
+            /// </summary>
+            [RepositoryItem("eeb92fe3-cf32-4b56-b179-259c8a9701ee")]
+            public virtual Ranorex.Button PbDruckenDruck
+            {
+                get
+                {
+                    return _pbdruckendruckInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbDruckenDruck item info.
+            /// </summary>
+            [RepositoryItemInfo("eeb92fe3-cf32-4b56-b179-259c8a9701ee")]
+            public virtual RepoItemInfo PbDruckenDruckInfo
+            {
+                get
+                {
+                    return _pbdruckendruckInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClientArea folder.
+            /// </summary>
+            [RepositoryFolder("4767e17e-0086-4221-af5c-2339ba46bd9c")]
+            public virtual K_VERR_001RepositoryFolders.ClientAreaFolder1 ClientArea
+            {
+                get { return _clientarea; }
+            }
+        }
+
+        /// <summary>
+        /// The ClientAreaFolder1 folder.
+        /// </summary>
+        [RepositoryFolder("4767e17e-0086-4221-af5c-2339ba46bd9c")]
+        public partial class ClientAreaFolder1 : RepoGenBaseFolder
+        {
+            RepoItemInfo _jahrperiodeInfo;
+            RepoItemInfo _textInfo;
+            RepoItemInfo _planInfo;
+            RepoItemInfo _stufeInfo;
+            RepoItemInfo _textartInfo;
+            RepoItemInfo _cbbelastInfo;
+            RepoItemInfo _cbentlastInfo;
+
+            /// <summary>
+            /// Creates a new ClientArea  folder.
+            /// </summary>
+            public ClientAreaFolder1(RepoGenBaseFolder parentFolder) :
+                    base("ClientArea", "container[@controlname='ClientArea']", parentFolder, 30000, null, false, "4767e17e-0086-4221-af5c-2339ba46bd9c", "")
+            {
+                _jahrperiodeInfo = new RepoItemInfo(this, "JahrPeriode", "text[@controlname='dfGjhr_bez']/text[@accessiblename='Jahr / Periode']", "", 30000, null, "2d685a87-e944-475c-bf85-3ce8a0aaf952");
+                _textInfo = new RepoItemInfo(this, "Text", "text[@controlname='dfPeriode']/text[@accessiblerole='Text']", "", 30000, null, "6c9a16ca-0cb0-4024-a624-0e3febd7adca");
+                _planInfo = new RepoItemInfo(this, "Plan", "text[@controlname='dfPlv_nr']/text[@accessiblename='Plan']", "", 30000, null, "e1668bd6-fedc-4292-901d-6fe6313c9249");
+                _stufeInfo = new RepoItemInfo(this, "Stufe", "text[@controlname='dfVest_nr']/text[@accessiblename='Stufe']", "", 30000, null, "f11c146f-df9e-4f52-b14b-f9793d8a06d3");
+                _textartInfo = new RepoItemInfo(this, "TextArt", "text[@controlname='dfVera_cd']/text[@accessiblename='Art']", "", 30000, null, "b585861c-2154-40a0-a173-a3de4b4a6752");
+                _cbbelastInfo = new RepoItemInfo(this, "CbBelast", "checkbox[@controlname='cbBelast']", "", 30000, null, "b2831dcd-b069-4f00-b75e-1fdc767583f4");
+                _cbentlastInfo = new RepoItemInfo(this, "CbEntlast", "checkbox[@controlname='cbEntlast']", "", 30000, null, "f5bdd828-7541-45d1-a1bc-249303ce57ee");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("4767e17e-0086-4221-af5c-2339ba46bd9c")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("4767e17e-0086-4221-af5c-2339ba46bd9c")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The JahrPeriode item.
+            /// </summary>
+            [RepositoryItem("2d685a87-e944-475c-bf85-3ce8a0aaf952")]
+            public virtual Ranorex.Text JahrPeriode
+            {
+                get
+                {
+                    return _jahrperiodeInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The JahrPeriode item info.
+            /// </summary>
+            [RepositoryItemInfo("2d685a87-e944-475c-bf85-3ce8a0aaf952")]
+            public virtual RepoItemInfo JahrPeriodeInfo
+            {
+                get
+                {
+                    return _jahrperiodeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text item.
+            /// </summary>
+            [RepositoryItem("6c9a16ca-0cb0-4024-a624-0e3febd7adca")]
+            public virtual Ranorex.Text Text
+            {
+                get
+                {
+                    return _textInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text item info.
+            /// </summary>
+            [RepositoryItemInfo("6c9a16ca-0cb0-4024-a624-0e3febd7adca")]
+            public virtual RepoItemInfo TextInfo
+            {
+                get
+                {
+                    return _textInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Plan item.
+            /// </summary>
+            [RepositoryItem("e1668bd6-fedc-4292-901d-6fe6313c9249")]
+            public virtual Ranorex.Text Plan
+            {
+                get
+                {
+                    return _planInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Plan item info.
+            /// </summary>
+            [RepositoryItemInfo("e1668bd6-fedc-4292-901d-6fe6313c9249")]
+            public virtual RepoItemInfo PlanInfo
+            {
+                get
+                {
+                    return _planInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Stufe item.
+            /// </summary>
+            [RepositoryItem("f11c146f-df9e-4f52-b14b-f9793d8a06d3")]
+            public virtual Ranorex.Text Stufe
+            {
+                get
+                {
+                    return _stufeInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Stufe item info.
+            /// </summary>
+            [RepositoryItemInfo("f11c146f-df9e-4f52-b14b-f9793d8a06d3")]
+            public virtual RepoItemInfo StufeInfo
+            {
+                get
+                {
+                    return _stufeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TextArt item.
+            /// </summary>
+            [RepositoryItem("b585861c-2154-40a0-a173-a3de4b4a6752")]
+            public virtual Ranorex.Text TextArt
+            {
+                get
+                {
+                    return _textartInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextArt item info.
+            /// </summary>
+            [RepositoryItemInfo("b585861c-2154-40a0-a173-a3de4b4a6752")]
+            public virtual RepoItemInfo TextArtInfo
+            {
+                get
+                {
+                    return _textartInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CbBelast item.
+            /// </summary>
+            [RepositoryItem("b2831dcd-b069-4f00-b75e-1fdc767583f4")]
+            public virtual Ranorex.CheckBox CbBelast
+            {
+                get
+                {
+                    return _cbbelastInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CbBelast item info.
+            /// </summary>
+            [RepositoryItemInfo("b2831dcd-b069-4f00-b75e-1fdc767583f4")]
+            public virtual RepoItemInfo CbBelastInfo
+            {
+                get
+                {
+                    return _cbbelastInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CbEntlast item.
+            /// </summary>
+            [RepositoryItem("f5bdd828-7541-45d1-a1bc-249303ce57ee")]
+            public virtual Ranorex.CheckBox CbEntlast
+            {
+                get
+                {
+                    return _cbentlastInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CbEntlast item info.
+            /// </summary>
+            [RepositoryItemInfo("f5bdd828-7541-45d1-a1bc-249303ce57ee")]
+            public virtual RepoItemInfo CbEntlastInfo
+            {
+                get
+                {
+                    return _cbentlastInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DlgDruckenAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("5e383435-843d-45a0-8447-097a4476fc2e")]
+        public partial class DlgDruckenAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _pbexportInfo;
+
+            /// <summary>
+            /// Creates a new DlgDrucken  folder.
+            /// </summary>
+            public DlgDruckenAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DlgDrucken", "/form[@controlname='dlgDrucken']", parentFolder, 30000, null, true, "5e383435-843d-45a0-8447-097a4476fc2e", "")
+            {
+                _pbexportInfo = new RepoItemInfo(this, "PbExport", "button[@controlname='pbExport']", "", 30000, null, "dfd5dce9-bbf7-486b-bbb8-1a799629f7cd");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("5e383435-843d-45a0-8447-097a4476fc2e")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("5e383435-843d-45a0-8447-097a4476fc2e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbExport item.
+            /// </summary>
+            [RepositoryItem("dfd5dce9-bbf7-486b-bbb8-1a799629f7cd")]
+            public virtual Ranorex.Button PbExport
+            {
+                get
+                {
+                    return _pbexportInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbExport item info.
+            /// </summary>
+            [RepositoryItemInfo("dfd5dce9-bbf7-486b-bbb8-1a799629f7cd")]
+            public virtual RepoItemInfo PbExportInfo
+            {
+                get
+                {
+                    return _pbexportInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The PbExportItemsAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("7abec369-013e-4d17-a5b9-adf330549e80")]
+        public partial class PbExportItemsAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _tabelleInfo;
+
+            /// <summary>
+            /// Creates a new PbExportItems  folder.
+            /// </summary>
+            public PbExportItemsAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("PbExportItems", "/contextmenu[@controlname='pbExportItems']", parentFolder, 30000, null, true, "7abec369-013e-4d17-a5b9-adf330549e80", "")
+            {
+                _tabelleInfo = new RepoItemInfo(this, "Tabelle", "menuitem[@accessiblename='Tabelle']", "", 30000, null, "ed507b77-fa4c-44b0-9cbf-6f7296bce935");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("7abec369-013e-4d17-a5b9-adf330549e80")]
+            public virtual Ranorex.ContextMenu Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.ContextMenu>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("7abec369-013e-4d17-a5b9-adf330549e80")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Tabelle item.
+            /// </summary>
+            [RepositoryItem("ed507b77-fa4c-44b0-9cbf-6f7296bce935")]
+            public virtual Ranorex.MenuItem Tabelle
+            {
+                get
+                {
+                    return _tabelleInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Tabelle item info.
+            /// </summary>
+            [RepositoryItemInfo("ed507b77-fa4c-44b0-9cbf-6f7296bce935")]
+            public virtual RepoItemInfo TabelleInfo
+            {
+                get
+                {
+                    return _tabelleInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TblDrucken_DrucktabelleAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("8843291e-5bcd-4d97-95b9-7907531a6b7c")]
+        public partial class TblDrucken_DrucktabelleAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _titlebar100verrechnungsprotokoll_drucktabelleInfo;
+            RepoItemInfo _row1Info;
+            RepoItemInfo _row2Info;
+            RepoItemInfo _row3Info;
+            RepoItemInfo _row4Info;
+
+            /// <summary>
+            /// Creates a new TblDrucken_Drucktabelle  folder.
+            /// </summary>
+            public TblDrucken_DrucktabelleAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TblDrucken_Drucktabelle", "/form[@controlname='tblDrucken']", parentFolder, 30000, null, true, "8843291e-5bcd-4d97-95b9-7907531a6b7c", "")
+            {
+                _titlebar100verrechnungsprotokoll_drucktabelleInfo = new RepoItemInfo(this, "TitleBar100Verrechnungsprotokoll_Drucktabelle", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "b8d62cd6-b017-4a0c-993e-6214c06854ef");
+                _row1Info = new RepoItemInfo(this, "Row1", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']", "", 30000, null, "01317ef1-2099-4538-a38a-7073a5a3b022");
+                _row2Info = new RepoItemInfo(this, "Row2", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']", "", 30000, null, "7ba5fe7b-5a1d-46ee-8a2b-0967606ab8a0");
+                _row3Info = new RepoItemInfo(this, "Row3", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']", "", 30000, null, "6df62566-5493-4c41-8b13-e48500bc138f");
+                _row4Info = new RepoItemInfo(this, "Row4", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']", "", 30000, null, "699408db-818f-4736-bbfb-d255d62449ed");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("8843291e-5bcd-4d97-95b9-7907531a6b7c")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("8843291e-5bcd-4d97-95b9-7907531a6b7c")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100Verrechnungsprotokoll_Drucktabelle item.
+            /// </summary>
+            [RepositoryItem("b8d62cd6-b017-4a0c-993e-6214c06854ef")]
+            public virtual Ranorex.TitleBar TitleBar100Verrechnungsprotokoll_Drucktabelle
+            {
+                get
+                {
+                    return _titlebar100verrechnungsprotokoll_drucktabelleInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100Verrechnungsprotokoll_Drucktabelle item info.
+            /// </summary>
+            [RepositoryItemInfo("b8d62cd6-b017-4a0c-993e-6214c06854ef")]
+            public virtual RepoItemInfo TitleBar100Verrechnungsprotokoll_DrucktabelleInfo
+            {
+                get
+                {
+                    return _titlebar100verrechnungsprotokoll_drucktabelleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Row1 item.
+            /// </summary>
+            [RepositoryItem("01317ef1-2099-4538-a38a-7073a5a3b022")]
+            public virtual Ranorex.Row Row1
+            {
+                get
+                {
+                    return _row1Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1 item info.
+            /// </summary>
+            [RepositoryItemInfo("01317ef1-2099-4538-a38a-7073a5a3b022")]
+            public virtual RepoItemInfo Row1Info
+            {
+                get
+                {
+                    return _row1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row2 item.
+            /// </summary>
+            [RepositoryItem("7ba5fe7b-5a1d-46ee-8a2b-0967606ab8a0")]
+            public virtual Ranorex.Row Row2
+            {
+                get
+                {
+                    return _row2Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row2 item info.
+            /// </summary>
+            [RepositoryItemInfo("7ba5fe7b-5a1d-46ee-8a2b-0967606ab8a0")]
+            public virtual RepoItemInfo Row2Info
+            {
+                get
+                {
+                    return _row2Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row3 item.
+            /// </summary>
+            [RepositoryItem("6df62566-5493-4c41-8b13-e48500bc138f")]
+            public virtual Ranorex.Row Row3
+            {
+                get
+                {
+                    return _row3Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row3 item info.
+            /// </summary>
+            [RepositoryItemInfo("6df62566-5493-4c41-8b13-e48500bc138f")]
+            public virtual RepoItemInfo Row3Info
+            {
+                get
+                {
+                    return _row3Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row4 item.
+            /// </summary>
+            [RepositoryItem("699408db-818f-4736-bbfb-d255d62449ed")]
+            public virtual Ranorex.Row Row4
+            {
+                get
+                {
+                    return _row4Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row4 item info.
+            /// </summary>
+            [RepositoryItemInfo("699408db-818f-4736-bbfb-d255d62449ed")]
+            public virtual RepoItemInfo Row4Info
+            {
+                get
+                {
+                    return _row4Info;
                 }
             }
         }

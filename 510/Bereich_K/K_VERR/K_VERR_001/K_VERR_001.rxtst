@@ -43,6 +43,15 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			id="0b040ae8-6077-4516-8def-e035ecf770ac"
+			name="k_verp_Verrechnungsprotokoll_Tabelle_pruefen"
+			ref="b055b6bf-5332-482e-b184-6f8ee77f46d8"
+			type="Recording">
+				<description>
+					<![CDATA[Zeilenvalidierung, weil die Felder nicht eindeutig ansprechbar sind]]>
+				</description>
+			</testmodule>
+			<testmodule
 			id="0c3ecc88-dd5e-4360-b340-bd5427edfcbd"
 			name="Close_k_vere"
 			ref="56389698-e9f6-42d5-854f-0c407eca0132"
@@ -309,10 +318,22 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="42ce647b-058b-49c1-b80b-4194b9001ccf"
+			name="k_verp_Verrechnungsprotokoll_drucken_Tabelle"
+			ref="553aa30a-88c4-4fd5-ba47-0026efd1a905"
+			type="Recording">
+			</testmodule>
 			<teardown
 			id="45e9800f-50f8-48a6-8beb-d3feecc9622a"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="493917cd-60bb-43e0-801a-46fc957141d7"
+			name="Close_k_verp"
+			ref="124599e7-b1c7-4414-a0b0-da895ecfd8c6"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="4bfd256b-8cd5-40ed-8749-450a4a9b6734"
 			name="Close_k_ibufe"
@@ -447,6 +468,10 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<teardown
+			id="7acc0a35-011f-4de8-af31-79e537a8500c"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="7d56ec35-f864-4024-b90c-a6660ef977dc"
 			name="CloseAUT"
@@ -461,6 +486,10 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<setup
+			id="83b9ba8a-5a33-4a12-b33a-a8cc4f91848c"
+			name="setup">
+			</setup>
 			<testmodule
 			id="86cad721-5994-4b04-b55e-83e4526d0ec0"
 			name="k_ibufe_Summenzeile_pruefen"
@@ -636,6 +665,9 @@
 			id="d3295885-6916-4a08-b67a-8ff255513afb"
 			name="K_VERR_001"
 			reportlevel="Info;20">
+				<description>
+					<![CDATA[<p>Verrechnungen rechnen:<br>1 Kore-Buchung 2020/6 EUR 10.000,00 Beleg K_VERR_001_01 wird mit Verrechnungen umgelegt gemäß der Verrechnungszeilen, die für 2020/6 erfasst sind:<br>Stufe 20 STS Import Stundensatz Betrag 120,00<br>Stufe 21 SVE Verrechnung von Konto E1000 / KST 10 an Konto B1000 / KST 60 mit Menge 150<br>Stufe 21 SVE Verrechnung von Konto E1000 / KST 10 an Konto B1000 / KST 80 mit Menge 100</p><p>In K_LEMG /PlanIst=0 Umlage mit Kostensatz auf 0 = Ist-Daten eingestellt:<br>Stundensatz 120,00 wird mit Menge multipliziert gemäß Verrechnungsstamm V_VEST: Verrechnungsstufe 21 - Formel 3 (Menge x Kostensatz)</p><p>Die Verrechnungen/Umlagen mit den errechneten Beträge (18.000,00 und 12.000,00) werden im Verrechnungsprotokoll (K_VERP) und in den in den Kore-Ist-Buchungen (K_IBUFE) kontrolliert.</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="Startfile"
@@ -652,6 +684,10 @@
 					<param
 					name="Programm2"
 					value="K_IBUFE">
+					</param>
+					<param
+					name="Programm3"
+					value="K_VERP">
 					</param>
 					<param
 					name="Jahr"
@@ -755,14 +791,58 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testmodule
+			id="d97cef84-52fd-4dee-98a1-f1494577b63b"
+			name="k_verp_Einschraenkungen"
+			ref="79f871f6-ca76-470f-9f5b-84ff7f1fe2dc"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Jahr"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="c139bf6d-3d8c-442c-a9ef-18702e153b14"
+					variablename="Jahr">
+					</var>
+					<var
+					dataname="Periode"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="eb89cb47-4773-4b0d-8e91-bb6c9e92ce11"
+					variablename="Periode">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="e6625b40-210f-44c4-a8d3-538d9a4046de"
 			name="teardown">
 			</teardown>
+			<testcase
+			id="ee895404-409f-4ee9-9784-e3a54b79a8bb"
+			name="Verrechnungsprotokoll_drucken">
+			</testcase>
 			<setup
 			id="f1438d48-d412-4ce1-9627-5d37b7e155cd"
 			name="setup">
 			</setup>
+			<testmodule
+			id="f48c1239-c120-4b82-b3a9-6db6b36a9131"
+			name="Start_k_verp"
+			ref="e1549a45-9e5b-40f1-97de-30f431167d5d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Programm3"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="c4d8805f-a194-4d6f-8010-5e9083e88458"
+					variablename="Programm3">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="d3295885-6916-4a08-b67a-8ff255513afb"
+					variableid="4b420a71-d005-4d21-b782-9b92d80d8874"
+					variablename="Startfile">
+					</var>
+				</databinding>
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -852,6 +932,38 @@
 						</teardown>
 					</testcase>
 					<testcase
+					id="ee895404-409f-4ee9-9784-e3a54b79a8bb"
+					name="Verrechnungsprotokoll_drucken">
+						<setup
+						id="83b9ba8a-5a33-4a12-b33a-a8cc4f91848c"
+						name="setup">
+							<testmodule
+							id="f48c1239-c120-4b82-b3a9-6db6b36a9131"
+							name="Start_k_verp">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="d97cef84-52fd-4dee-98a1-f1494577b63b"
+						name="k_verp_Einschraenkungen">
+						</testmodule>
+						<testmodule
+						id="42ce647b-058b-49c1-b80b-4194b9001ccf"
+						name="k_verp_Verrechnungsprotokoll_drucken_Tabelle">
+						</testmodule>
+						<testmodule
+						id="0b040ae8-6077-4516-8def-e035ecf770ac"
+						name="k_verp_Verrechnungsprotokoll_Tabelle_pruefen">
+						</testmodule>
+						<teardown
+						id="7acc0a35-011f-4de8-af31-79e537a8500c"
+						name="teardown">
+							<testmodule
+							id="493917cd-60bb-43e0-801a-46fc957141d7"
+							name="Close_k_verp">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
 					id="2cbd019c-ecc5-4101-af36-6659426e9d0f"
 					name="K_IBUFE">
 						<testmodule
@@ -915,6 +1027,9 @@
 			</testcontainer>
 			<testcontainer
 			id="d3295885-6916-4a08-b67a-8ff255513afb">
+			</testcontainer>
+			<testcontainer
+			id="ee895404-409f-4ee9-9784-e3a54b79a8bb">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
