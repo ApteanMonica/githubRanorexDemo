@@ -134,8 +134,8 @@ namespace K_VERE_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'TblVerr_K_VERE.ToolBar.PlanNr'.", repo.TblVerr_K_VERE.ToolBar.PlanNrInfo, new RecordItemIndex(0));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.ToolBar.PlanNrInfo, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblVerr_K_VERE.ToolBar.Jahr' at Center.", repo.TblVerr_K_VERE.ToolBar.JahrInfo, new RecordItemIndex(1));
-            repo.TblVerr_K_VERE.ToolBar.Jahr.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblVerr_K_VERE.ToolBar.Jahr' at Center.", repo.TblVerr_K_VERE.ToolBar.JahrInfo, new RecordItemIndex(1));
+            repo.TblVerr_K_VERE.ToolBar.Jahr.DoubleClick();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'TblVerr_K_VERE.ToolBar.Jahr'.", repo.TblVerr_K_VERE.ToolBar.JahrInfo, new RecordItemIndex(2));
             repo.TblVerr_K_VERE.ToolBar.Jahr.PressKeys(Jahr);
@@ -170,11 +170,26 @@ namespace K_VERE_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Art_STS) on item 'TblVerr_K_VERE.ToolBar.TextArt'.", repo.TblVerr_K_VERE.ToolBar.TextArtInfo, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.ToolBar.TextArtInfo, "Text", Art_STS);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Stundensatz erfassen') on item 'TblVerr_K_VERE.ToolBar.DfVeraBez'.", repo.TblVerr_K_VERE.ToolBar.DfVeraBezInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Import Stundensatz') on item 'TblVerr_K_VERE.ToolBar.DfVestBez'.", repo.TblVerr_K_VERE.ToolBar.DfVestBezInfo, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.TblVerr_K_VERE.ToolBar.DfVestBezInfo, "Text", "Import Stundensatz");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Stundensatz erfassen') on item 'TblVerr_K_VERE.ToolBar.DfVeraBez'.", repo.TblVerr_K_VERE.ToolBar.DfVeraBezInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.ToolBar.DfVeraBezInfo, "Text", "Stundensatz erfassen");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Import Stundensatz') on item 'TblVerr_K_VERE.ToolBar.DfVestBez'.", repo.TblVerr_K_VERE.ToolBar.DfVestBezInfo, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.TblVerr_K_VERE.ToolBar.DfVestBezInfo, "Text", "Import Stundensatz");
+            // Auswahltabelle Konten Kostenstellen
+            Report.Log(ReportLevel.Info, "Section", "Auswahltabelle Konten Kostenstellen", new RecordItemIndex(15));
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKtoNrRow1'.", repo.TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKtoNrRow1Info, new RecordItemIndex(16));
+            Validate.AttributeEqual(repo.TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKtoNrRow1Info, "Text", "");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKs1NrRow1'.", repo.TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKs1NrRow1Info, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKs1NrRow1Info, "Text", "");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKtoNrRow2'.", repo.TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKtoNrRow2Info, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKtoNrRow2Info, "Text", "");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKs1NrRow2'.", repo.TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKs1NrRow2Info, new RecordItemIndex(19));
+            Validate.AttributeEqual(repo.TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKs1NrRow2Info, "Text", "");
             
         }
 

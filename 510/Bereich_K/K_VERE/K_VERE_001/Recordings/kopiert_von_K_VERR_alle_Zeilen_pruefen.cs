@@ -24,29 +24,29 @@ namespace K_VERE_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The kopiert_von_K_VERR_Zeilen_pruefen recording.
+    ///The kopiert_von_K_VERR_alle_Zeilen_pruefen recording.
     /// </summary>
     [TestModule("76b63d1c-39a0-4fcb-8e4a-860e66b82034", ModuleType.Recording, 1)]
-    public partial class Kopiert_von_K_VERR_Zeilen_pruefen : ITestModule
+    public partial class Kopiert_von_K_VERR_alle_Zeilen_pruefen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::K_VERE_001.K_VERE_001Repository repository.
         /// </summary>
         public static global::K_VERE_001.K_VERE_001Repository repo = global::K_VERE_001.K_VERE_001Repository.Instance;
 
-        static Kopiert_von_K_VERR_Zeilen_pruefen instance = new Kopiert_von_K_VERR_Zeilen_pruefen();
+        static Kopiert_von_K_VERR_alle_Zeilen_pruefen instance = new Kopiert_von_K_VERR_alle_Zeilen_pruefen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Kopiert_von_K_VERR_Zeilen_pruefen()
+        public Kopiert_von_K_VERR_alle_Zeilen_pruefen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Kopiert_von_K_VERR_Zeilen_pruefen Instance
+        public static Kopiert_von_K_VERR_alle_Zeilen_pruefen Instance
         {
             get { return instance; }
         }

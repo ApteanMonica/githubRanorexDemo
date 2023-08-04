@@ -24,22 +24,22 @@ namespace K_VERE_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Stufe_20_Zeile_pruefen recording.
+    ///The Stufe_20_erfasste_Zeile_pruefen recording.
     /// </summary>
     [TestModule("20ebedd7-7bf8-457a-9f1e-d8314882620e", ModuleType.Recording, 1)]
-    public partial class Stufe_20_Zeile_pruefen : ITestModule
+    public partial class Stufe_20_erfasste_Zeile_pruefen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::K_VERE_001.K_VERE_001Repository repository.
         /// </summary>
         public static global::K_VERE_001.K_VERE_001Repository repo = global::K_VERE_001.K_VERE_001Repository.Instance;
 
-        static Stufe_20_Zeile_pruefen instance = new Stufe_20_Zeile_pruefen();
+        static Stufe_20_erfasste_Zeile_pruefen instance = new Stufe_20_erfasste_Zeile_pruefen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Stufe_20_Zeile_pruefen()
+        public Stufe_20_erfasste_Zeile_pruefen()
         {
             von_KST_10 = "10";
             Text_20 = "Import Stundenerfassung";
@@ -48,7 +48,7 @@ namespace K_VERE_001.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Stufe_20_Zeile_pruefen Instance
+        public static Stufe_20_erfasste_Zeile_pruefen Instance
         {
             get { return instance; }
         }

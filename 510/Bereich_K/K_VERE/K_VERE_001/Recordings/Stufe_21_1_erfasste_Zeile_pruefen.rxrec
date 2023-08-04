@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="20ebedd7-7bf8-457a-9f1e-d8314882620e"
+id="3858cb6d-7a38-4818-98a1-5c5c90c41053"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,19 +19,29 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Stufe_20_Zeile_pruefen"
+	classname="Stufe_21_1_erfasste_Zeile_pruefen"
 	namespace="K_VERE_001.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="a00186d1-19cb-447a-88de-9d10d8c1487b"
+		id="c3597dcc-31a0-4de3-b9ad-7d21bfbcb0e5"
 		name="von_KST_10">
 			10
 		</var>
 		<var
-		id="81ee63cd-8977-4b97-a1dc-f032ca1d151c"
-		name="Text_20">
-			Import Stundenerfassung
+		id="a0e9a44a-b826-41c0-8d21-1ece20d6d586"
+		name="an_KST_60">
+			60
+		</var>
+		<var
+		id="c91244ae-84c0-435a-9fba-992691225412"
+		name="Menge1">
+			150
+		</var>
+		<var
+		id="7c8f6abc-e4dd-4baa-8b29-4656b3a6a008"
+		name="Text_21_1">
+			Verrechnung K_VERR_001 Menge 150 an KST 60
 		</var>
 	</variables>
 	<recorditems>
@@ -68,16 +78,49 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
+		searchpropertyid="974a8351-19d5-4aac-b8cb-0499749f392c">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="an_KST_60">
+				</binding>
+			</bindings>
+			<info
+			id="3428901a-1cb4-4c45-a168-eb1d58ccbaf8"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblVerr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colKs1_nr_an Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
 		searchpropertyid="2726f97e-276a-42bc-93a1-cf02094889cd">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Menge1">
+				</binding>
 			</bindings>
 			<info
-			id="3b09fc2d-7415-4cf9-a1fe-4cc08d2bd86f"
+			id="1343e9c5-5c5b-4a55-9105-c0a238251773"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblVerr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colVerr_betrag Row 2']
+					/form[@controlname='tblVerr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colVerr_menge1 Row 2']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -99,7 +142,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Text_20">
+				variable="Text_21_1">
 				</binding>
 			</bindings>
 			<info
@@ -134,7 +177,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Stufe_20_Zeile_pruefen.UserCode.cs
+		Stufe_21_1_erfasste_Zeile_pruefen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

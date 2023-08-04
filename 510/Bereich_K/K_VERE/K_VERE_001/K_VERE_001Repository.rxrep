@@ -36,6 +36,17 @@ name="K_VERE_001Repository">
 			<item
 			addcaps="button,control,nativewindow"
 			capname="button"
+			id="4abec643-dd71-4549-b089-3390e7f6e6db"
+			name="PbDataAccessNew"
+			refimgid="af86ed3c-8291-4c54-859d-8e054a4e7833"
+			refpath="/form[@controlname='tblVerr']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_New']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblVerr']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_New']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
 			id="6c0cf880-8c61-49d8-aef0-09c5e3461bd4"
 			name="PbDataAccessLoad"
 			refimgid="6fcb23ab-1d8d-4d45-bc04-23e59117a9a7"
@@ -122,17 +133,6 @@ name="K_VERE_001Repository">
 				<item
 				addcaps="text,control,nativewindow"
 				capname="text"
-				id="2eae16c1-690e-491f-965e-444ac874f98f"
-				name="DfVeraBez"
-				refimgid="eeae52d7-381c-4d5e-91b6-18d96709f124"
-				refpath="/form[@controlname='tblVerr']/container[@controlname='ToolBar']/text[@controlname='dfVera_bez']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='tblVerr']/container[@controlname='ToolBar']/text[@controlname='dfVera_bez']
-				</item>
-				<item
-				addcaps="text,control,nativewindow"
-				capname="text"
 				id="21737a3a-f815-420f-abd3-38eb43f085d0"
 				name="DfVestBez"
 				refimgid="4d17d806-da65-4a23-9467-db6e584ae81e"
@@ -141,8 +141,74 @@ name="K_VERE_001Repository">
 				searchtimeout="30000ms">
 					/form[@controlname='tblVerr']/container[@controlname='ToolBar']/text[@controlname='dfVest_bez']
 				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="2eae16c1-690e-491f-965e-444ac874f98f"
+				name="DfVeraBez"
+				refimgid="eeae52d7-381c-4d5e-91b6-18d96709f124"
+				refpath="/form[@controlname='tblVerr']/container[@controlname='ToolBar']/text[@controlname='dfVera_bez']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblVerr']/container[@controlname='ToolBar']/text[@controlname='dfVera_bez']
+				</item>
 				<basepath>
 					/form[@controlname='tblVerr']/container[@controlname='ToolBar']
+				</basepath>
+			</folder>
+			<folder
+			capname="table"
+			id="6412777b-af77-4350-9c24-82d51bfc3320"
+			isrooted="True"
+			name="Auswahltabelle_Konten_Kostenstellen"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="42f4ae11-567b-4d35-a198-508cdcf7e50e"
+				name="ColKtoNrRow1"
+				refimgid="95037a01-da1a-4a0b-8778-6c4482492123"
+				refpath="/form[@controlname='tblVerr']/container[@controlname='ToolBar']/container[@controlname='tblAuswahl']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKto_nr Row 1']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblVerr']/container[@controlname='ToolBar']/container[@controlname='tblAuswahl']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKto_nr Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="d80008c3-73be-499b-8f74-d1f92668619f"
+				name="ColKs1NrRow1"
+				refimgid="de701554-a6b6-4fc5-8067-af3d52213e15"
+				refpath="/form[@controlname='tblVerr']/container[@controlname='ToolBar']/container[@controlname='tblAuswahl']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKs1_nr Row 1']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblVerr']/container[@controlname='ToolBar']/container[@controlname='tblAuswahl']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKs1_nr Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="8431f76d-0c66-41cb-8a91-b724812dfa9d"
+				name="ColKtoNrRow2"
+				refimgid="2ece7d1f-869d-41f6-9f03-d99fc7dc9ea3"
+				refpath="/form[@controlname='tblVerr']/container[@controlname='ToolBar']/container[@controlname='tblAuswahl']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colKto_nr Row 2']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblVerr']/container[@controlname='ToolBar']/container[@controlname='tblAuswahl']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colKto_nr Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="21ead94b-af19-4bf1-aa36-da7c99dcae9f"
+				name="ColKs1NrRow2"
+				refimgid="ad89baa7-5618-4ac9-9630-d539e5c5e8a8"
+				refpath="/form[@controlname='tblVerr']/container[@controlname='ToolBar']/container[@controlname='tblAuswahl']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colKs1_nr Row 2']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblVerr']/container[@controlname='ToolBar']/container[@controlname='tblAuswahl']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colKs1_nr Row 2']
+				</item>
+				<basepath>
+					/form[@controlname='tblVerr']/container[@controlname='ToolBar']/container[@controlname='tblAuswahl']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
 				</basepath>
 			</folder>
 			<item
@@ -160,7 +226,7 @@ name="K_VERE_001Repository">
 			capname="table"
 			id="b2d5af6a-81d6-40ca-98e1-98bb81c51c93"
 			isrooted="True"
-			name="Row1_zweite_Ueberschriftszeile"
+			name="Row_0_1_Ueberschriften"
 			searchtimeout="30000ms"
 			usecache="False">
 				<item
@@ -299,6 +365,16 @@ name="K_VERE_001Repository">
 				<item
 				addcaps="cell,accessible"
 				capname="cell"
+				id="1343e9c5-5c5b-4a55-9105-c0a238251773"
+				name="ColVerrMenge1Row2"
+				refimgid="0fb3de0c-e5c5-4650-917e-2de1203a037d"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblVerr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colVerr_menge1 Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
 				id="3b09fc2d-7415-4cf9-a1fe-4cc08d2bd86f"
 				name="ColVerrBetragRow2"
 				refimgid="f3a283d0-edaa-4855-93f4-c55c507e96a0"
@@ -331,6 +407,16 @@ name="K_VERE_001Repository">
 			refpath="/form[@controlname='tblVerr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']"
 			searchtimeout="30000ms"
 			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="row"
+				id="aa3ab1d5-c3e0-4473-baab-cb4fb2d42033"
+				name="Row3_zweite_Erfassungszeile"
+				refimgid="5e76019b-aa50-4ed9-b88c-9f4fe481f727"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblVerr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']
+				</item>
 				<item
 				addcaps="cell,accessible"
 				capname="cell"

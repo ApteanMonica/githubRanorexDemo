@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace K_VERE_001.Recordings
 {
-    public partial class Stufe_20_erfassen
+    public partial class Stufe_21_1_Zeile_einfuegen_sichtbare_Spalten_pruefen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

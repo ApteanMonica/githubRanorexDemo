@@ -24,22 +24,22 @@ namespace K_VERE_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Stufe_20_erfassen recording.
+    ///The Stufe_20_Werte_erfassen recording.
     /// </summary>
     [TestModule("ff9f24aa-a6fe-45c5-bae8-54c713008c4a", ModuleType.Recording, 1)]
-    public partial class Stufe_20_erfassen : ITestModule
+    public partial class Stufe_20_Werte_erfassen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::K_VERE_001.K_VERE_001Repository repository.
         /// </summary>
         public static global::K_VERE_001.K_VERE_001Repository repo = global::K_VERE_001.K_VERE_001Repository.Instance;
 
-        static Stufe_20_erfassen instance = new Stufe_20_erfassen();
+        static Stufe_20_Werte_erfassen instance = new Stufe_20_Werte_erfassen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Stufe_20_erfassen()
+        public Stufe_20_Werte_erfassen()
         {
             von_KST_10 = "10";
             Text_20 = "Import Stundenerfassung";
@@ -48,7 +48,7 @@ namespace K_VERE_001.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Stufe_20_erfassen Instance
+        public static Stufe_20_Werte_erfassen Instance
         {
             get { return instance; }
         }

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="42e7c1cb-c8b4-42b1-aa3d-72de2413574a"
+id="232ee0ad-5af9-4d96-af3c-121d05060f5c"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Stufe_20_Zeile_einfuegen_sichtbare_Spalten_pruefen"
+	classname="Stufe_21_2_Zeile_einfuegen_sichtbare_Spalten_pruefen"
 	namespace="K_VERE_001.Recordings">
 	</codegen>
 	<variables>
@@ -313,10 +313,10 @@ RRQAUUUUAf/Z
 			<bindings>
 			</bindings>
 			<info
-			id="9a29e395-4ee4-47a9-91a7-c865c2226e68"
+			id="aa3ab1d5-c3e0-4473-baab-cb4fb2d42033"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblVerr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']
+					/form[@controlname='tblVerr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -353,6 +353,31 @@ RRQAUUUUAf/Z
 				Visible
 			</matchname>
 			<matchvalue>
+				False
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="51b5fd3f-1116-438a-be7b-36916bf268bb">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3428901a-1cb4-4c45-a168-eb1d58ccbaf8"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblVerr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colKs1_nr_an Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Visible
+			</matchname>
+			<matchvalue>
 				True
 			</matchvalue>
 		</validationitem>
@@ -360,16 +385,16 @@ RRQAUUUUAf/Z
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="dc633514-14ff-4422-9a48-6885396add2b">
+		searchpropertyid="d9ff558c-74f1-438b-8858-9824e7b1c1dd">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="3b09fc2d-7415-4cf9-a1fe-4cc08d2bd86f"
+			id="1343e9c5-5c5b-4a55-9105-c0a238251773"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblVerr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colVerr_betrag Row 2']
+					/form[@controlname='tblVerr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colVerr_menge1 Row 2']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -460,41 +485,16 @@ RRQAUUUUAf/Z
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="51b5fd3f-1116-438a-be7b-36916bf268bb">
+		searchpropertyid="dc633514-14ff-4422-9a48-6885396add2b">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="3428901a-1cb4-4c45-a168-eb1d58ccbaf8"
+			id="3b09fc2d-7415-4cf9-a1fe-4cc08d2bd86f"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblVerr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colKs1_nr_an Row 2']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Visible
-			</matchname>
-			<matchvalue>
-				False
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="d9ff558c-74f1-438b-8858-9824e7b1c1dd">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="1343e9c5-5c5b-4a55-9105-c0a238251773"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblVerr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colVerr_menge1 Row 2']
+					/form[@controlname='tblVerr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colVerr_betrag Row 2']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -522,7 +522,7 @@ RRQAUUUUAf/Z
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Stufe_20_Zeile_einfuegen_sichtbare_Spalten_pruefen.UserCode.cs
+		Stufe_21_2_Zeile_einfuegen_sichtbare_Spalten_pruefen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
