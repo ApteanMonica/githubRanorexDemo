@@ -41,10 +41,9 @@ namespace K_VERE_001.Recordings
         /// </summary>
         public Stufe_21_2_erfasste_Zeile_pruefen()
         {
-            von_KST_10 = "10";
-            an_KST_60 = "60";
-            Menge1 = "150";
-            Text_21_1 = "Verrechnung K_VERR_001 Menge 150 an KST 60";
+            an_KST_80 = "80";
+            Text_21_2 = "Verrechnung K_VERR_001 Menge 100 an KST 80";
+            Menge2 = "100";
         }
 
         /// <summary>
@@ -57,52 +56,40 @@ namespace K_VERE_001.Recordings
 
 #region Variables
 
-        string _von_KST_10;
+        string _an_KST_80;
 
         /// <summary>
-        /// Gets or sets the value of variable von_KST_10.
+        /// Gets or sets the value of variable an_KST_80.
         /// </summary>
-        [TestVariable("b24055ee-5266-4594-a80d-34d094bba9ae")]
-        public string von_KST_10
+        [TestVariable("a0084f46-8859-469f-b395-fd1162762787")]
+        public string an_KST_80
         {
-            get { return _von_KST_10; }
-            set { _von_KST_10 = value; }
+            get { return _an_KST_80; }
+            set { _an_KST_80 = value; }
         }
 
-        string _an_KST_60;
+        string _Text_21_2;
 
         /// <summary>
-        /// Gets or sets the value of variable an_KST_60.
+        /// Gets or sets the value of variable Text_21_2.
         /// </summary>
-        [TestVariable("ac0373e8-3dc9-4487-8c61-ea492639c905")]
-        public string an_KST_60
+        [TestVariable("4739c7dc-8cd9-41c1-b6b6-fa6dda52a039")]
+        public string Text_21_2
         {
-            get { return _an_KST_60; }
-            set { _an_KST_60 = value; }
+            get { return _Text_21_2; }
+            set { _Text_21_2 = value; }
         }
 
-        string _Menge1;
+        string _Menge2;
 
         /// <summary>
-        /// Gets or sets the value of variable Menge1.
+        /// Gets or sets the value of variable Menge2.
         /// </summary>
-        [TestVariable("97f0d6ca-9739-4033-87e6-a0ae1ab84885")]
-        public string Menge1
+        [TestVariable("80e15189-aa63-4503-bfa6-111ac4cc3f49")]
+        public string Menge2
         {
-            get { return _Menge1; }
-            set { _Menge1 = value; }
-        }
-
-        string _Text_21_1;
-
-        /// <summary>
-        /// Gets or sets the value of variable Text_21_1.
-        /// </summary>
-        [TestVariable("161680f8-1a01-479e-9089-3a803f17b3c0")]
-        public string Text_21_1
-        {
-            get { return _Text_21_1; }
-            set { _Text_21_1 = value; }
+            get { return _Menge2; }
+            set { _Menge2 = value; }
         }
 
 #endregion
@@ -134,14 +121,14 @@ namespace K_VERE_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='False') on item 'TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColKs1NrVonRow3'.", repo.TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColKs1NrVonRow3Info, new RecordItemIndex(0));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColKs1NrVonRow3Info, "Visible", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$an_KST_60) on item 'TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColKs1NrAnRow3'.", repo.TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColKs1NrAnRow3Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColKs1NrAnRow3Info, "Text", an_KST_60);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$an_KST_80) on item 'TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColKs1NrAnRow3'.", repo.TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColKs1NrAnRow3Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColKs1NrAnRow3Info, "Text", an_KST_80);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Menge1) on item 'TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColVerrMenge1Row3'.", repo.TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColVerrMenge1Row3Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColVerrMenge1Row3Info, "Text", Menge1);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Menge2) on item 'TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColVerrMenge1Row3'.", repo.TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColVerrMenge1Row3Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColVerrMenge1Row3Info, "Text", Menge2);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Text_21_1) on item 'TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColVerrTextRow3'.", repo.TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColVerrTextRow3Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColVerrTextRow3Info, "Text", Text_21_1);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Text_21_2) on item 'TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColVerrTextRow3'.", repo.TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColVerrTextRow3Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.TblVerr_K_VERE.Row3_zweite_Erfassungszeile.ColVerrTextRow3Info, "Text", Text_21_2);
             
         }
 

@@ -137,58 +137,64 @@ namespace K_VERE_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblVerr_K_VERE.ToolBar.Jahr' at Center.", repo.TblVerr_K_VERE.ToolBar.JahrInfo, new RecordItemIndex(1));
             repo.TblVerr_K_VERE.ToolBar.Jahr.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'TblVerr_K_VERE.ToolBar.Jahr'.", repo.TblVerr_K_VERE.ToolBar.JahrInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(2));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(3));
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'TblVerr_K_VERE.ToolBar.Jahr'.", repo.TblVerr_K_VERE.ToolBar.JahrInfo, new RecordItemIndex(4));
             repo.TblVerr_K_VERE.ToolBar.Jahr.PressKeys(Jahr);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Periode' with focus on 'TblVerr_K_VERE.ToolBar.Periode'.", repo.TblVerr_K_VERE.ToolBar.PeriodeInfo, new RecordItemIndex(4));
-            repo.TblVerr_K_VERE.ToolBar.Periode.PressKeys(Periode);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Stufe_20' with focus on 'TblVerr_K_VERE.ToolBar.Stufe'.", repo.TblVerr_K_VERE.ToolBar.StufeInfo, new RecordItemIndex(6));
-            repo.TblVerr_K_VERE.ToolBar.Stufe.PressKeys(Stufe_20);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Periode' with focus on 'TblVerr_K_VERE.ToolBar.Periode'.", repo.TblVerr_K_VERE.ToolBar.PeriodeInfo, new RecordItemIndex(6));
+            repo.TblVerr_K_VERE.ToolBar.Periode.PressKeys(Periode);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblVerr_K_VERE.PbDataAccessLoad' at Center.", repo.TblVerr_K_VERE.PbDataAccessLoadInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Stufe_20' with focus on 'TblVerr_K_VERE.ToolBar.Stufe'.", repo.TblVerr_K_VERE.ToolBar.StufeInfo, new RecordItemIndex(8));
+            repo.TblVerr_K_VERE.ToolBar.Stufe.PressKeys(Stufe_20);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblVerr_K_VERE.PbDataAccessLoad' at Center.", repo.TblVerr_K_VERE.PbDataAccessLoadInfo, new RecordItemIndex(10));
             repo.TblVerr_K_VERE.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'TblVerr_K_VERE.ToolBar.Jahr'.", repo.TblVerr_K_VERE.ToolBar.JahrInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'TblVerr_K_VERE.ToolBar.Jahr'.", repo.TblVerr_K_VERE.ToolBar.JahrInfo, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.ToolBar.JahrInfo, "Text", Jahr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode) on item 'TblVerr_K_VERE.ToolBar.Periode'.", repo.TblVerr_K_VERE.ToolBar.PeriodeInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode) on item 'TblVerr_K_VERE.ToolBar.Periode'.", repo.TblVerr_K_VERE.ToolBar.PeriodeInfo, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.ToolBar.PeriodeInfo, "Text", Periode);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Stufe_20) on item 'TblVerr_K_VERE.ToolBar.Stufe'.", repo.TblVerr_K_VERE.ToolBar.StufeInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Stufe_20) on item 'TblVerr_K_VERE.ToolBar.Stufe'.", repo.TblVerr_K_VERE.ToolBar.StufeInfo, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.ToolBar.StufeInfo, "Text", Stufe_20);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Art_STS) on item 'TblVerr_K_VERE.ToolBar.TextArt'.", repo.TblVerr_K_VERE.ToolBar.TextArtInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Art_STS) on item 'TblVerr_K_VERE.ToolBar.TextArt'.", repo.TblVerr_K_VERE.ToolBar.TextArtInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.ToolBar.TextArtInfo, "Text", Art_STS);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Import Stundensatz') on item 'TblVerr_K_VERE.ToolBar.DfVestBez'.", repo.TblVerr_K_VERE.ToolBar.DfVestBezInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Import Stundensatz') on item 'TblVerr_K_VERE.ToolBar.DfVestBez'.", repo.TblVerr_K_VERE.ToolBar.DfVestBezInfo, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.ToolBar.DfVestBezInfo, "Text", "Import Stundensatz");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Stundensatz erfassen') on item 'TblVerr_K_VERE.ToolBar.DfVeraBez'.", repo.TblVerr_K_VERE.ToolBar.DfVeraBezInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Stundensatz erfassen') on item 'TblVerr_K_VERE.ToolBar.DfVeraBez'.", repo.TblVerr_K_VERE.ToolBar.DfVeraBezInfo, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.ToolBar.DfVeraBezInfo, "Text", "Stundensatz erfassen");
             
             // Auswahltabelle Konten Kostenstellen
-            Report.Log(ReportLevel.Info, "Section", "Auswahltabelle Konten Kostenstellen", new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Section", "Auswahltabelle Konten Kostenstellen", new RecordItemIndex(17));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKtoNrRow1'.", repo.TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKtoNrRow1Info, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKtoNrRow1'.", repo.TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKtoNrRow1Info, new RecordItemIndex(18));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKtoNrRow1Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKs1NrRow1'.", repo.TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKs1NrRow1Info, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKs1NrRow1'.", repo.TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKs1NrRow1Info, new RecordItemIndex(19));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKs1NrRow1Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKtoNrRow2'.", repo.TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKtoNrRow2Info, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKtoNrRow2'.", repo.TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKtoNrRow2Info, new RecordItemIndex(20));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKtoNrRow2Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKs1NrRow2'.", repo.TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKs1NrRow2Info, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKs1NrRow2'.", repo.TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKs1NrRow2Info, new RecordItemIndex(21));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.Auswahltabelle_Konten_Kostenstellen.ColKs1NrRow2Info, "Text", "");
             
         }

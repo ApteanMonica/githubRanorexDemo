@@ -114,14 +114,14 @@ namespace K_VERE_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '100,1234' with focus on 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2Info, new RecordItemIndex(3));
-            repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2.PressKeys("100,1234");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '100,1256' with focus on 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2Info, new RecordItemIndex(3));
+            repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2.PressKeys("100,1256");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,1234') on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2Info, "Text", "100,1234");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,1256') on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2Info, "Text", "100,1256");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Text_20' with focus on 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrTextRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrTextRow2Info, new RecordItemIndex(6));
             repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrTextRow2.PressKeys(Text_20);

@@ -108,8 +108,8 @@ namespace K_VERE_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$von_KST_10) on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKs1NrVonRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKs1NrVonRow2Info, new RecordItemIndex(0));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKs1NrVonRow2Info, "Text", von_KST_10);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,1234') on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2Info, "Text", "100,1234");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,1256') on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2Info, "Text", "100,1256");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Text_20) on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrTextRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrTextRow2Info, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrTextRow2Info, "Text", Text_20);

@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace K_VERE_001.Recordings
 {
-    public partial class Kopiert_von_K_VERR_alle_Zeilen_pruefen
+    public partial class Stufe_alle_Zeilen_alle_pruefen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
