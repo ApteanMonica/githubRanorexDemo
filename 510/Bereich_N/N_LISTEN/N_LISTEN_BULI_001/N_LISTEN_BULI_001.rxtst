@@ -486,7 +486,7 @@
 				comparison="AND"
 				enabled="True">
 					<condition
-					comparison="IsNotEqual">
+					comparison="IsEqual">
 						<leftvalue>
 							<datavaluesource>
 								<databinding
@@ -498,24 +498,7 @@
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="SBG-RANOAGENT2">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsNotEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Servername"
-								id="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="SBG-RANOAGENT3">
+							value="SBG-RANOAGENT4">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -589,7 +572,7 @@
 				comparison="AND"
 				enabled="True">
 					<condition
-					comparison="IsEqual">
+					comparison="IsNotEqual">
 						<leftvalue>
 							<datavaluesource>
 								<databinding
@@ -601,24 +584,7 @@
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="SBG-RANOAGENT2">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Servername"
-								id="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="SBG-RANOAGENT3">
+							value="SBG-RANOAGENT4">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
