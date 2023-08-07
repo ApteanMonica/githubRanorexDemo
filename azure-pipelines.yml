@@ -1,3 +1,4 @@
+name: API Automation
 trigger:
 - main
 
@@ -13,13 +14,12 @@ steps:
   - task: DownloadBuildArtifacts@1
     inputs:
      buildType: 'specific'
-     project: '25960368-753d-4dcb-a0bc-ab7d1da61ca2'
-     pipeline: '334'
-     specificBuildWithTriggering: true
+     project: '1692ec27-30a7-44ac-bb45-41f0b3ec9f01'
+     pipeline: '99'
      buildVersionToDownload: 'specific'
-     buildId: 'Latest'
+     buildId: '37200'
      downloadType: 'single'
-     artifactName: 'RS2dev530'
+     artifactName: 'RS2Build'
      downloadPath: '$(System.ArtifactsDirectory)'
 
   - task: PowerShell@2
