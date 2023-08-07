@@ -17,7 +17,7 @@ steps:
      project: '1692ec27-30a7-44ac-bb45-41f0b3ec9f01'
      pipeline: '99'
      buildVersionToDownload: 'specific'
-     buildId: '37200'
+     buildId: '$(buildId)'
      downloadType: 'single'
      artifactName: 'RS2Build'
      downloadPath: '$(System.ArtifactsDirectory)'
