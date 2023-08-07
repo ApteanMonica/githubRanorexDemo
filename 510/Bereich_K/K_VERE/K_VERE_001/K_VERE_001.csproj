@@ -103,17 +103,41 @@
       <id>7ecfc009-340b-4fdb-8172-12472d93cc8c</id>
       <BoundTo>171a89eb-ff5d-4ab9-b6dd-1ff58b60a1c9</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Einschraenkungen_laden.cs">
+    <Compile Include="Recordings\Stufe_20_Einschraenkungen_laden.cs">
       <BoundTo>aaef4b51-d788-45a5-861f-204dbd5b1aaf</BoundTo>
-      <DependentUpon>Einschraenkungen_laden.rxrec</DependentUpon>
+      <DependentUpon>Stufe_20_Einschraenkungen_laden.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>691a2118-4ccf-40b7-af81-a7e37fb4139e</id>
     </Compile>
-    <Compile Include="Recordings\Einschraenkungen_laden.UserCode.cs">
+    <Compile Include="Recordings\Stufe_20_Einschraenkungen_laden.UserCode.cs">
       <BoundTo>aaef4b51-d788-45a5-861f-204dbd5b1aaf</BoundTo>
-      <DependentUpon>Einschraenkungen_laden.rxrec</DependentUpon>
+      <DependentUpon>Stufe_20_Einschraenkungen_laden.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>d1d7df94-8b12-4201-85eb-05fbef1e070b</id>
+    </Compile>
+    <Compile Include="Recordings\Stufe_20_Werte_erfassen.cs">
+      <BoundTo>7fa9748e-465b-4ad8-af99-f2d67c31c2ec</BoundTo>
+      <DependentUpon>Stufe_20_Werte_erfassen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>02506987-671c-4902-9f1f-778a1dc944d4</id>
+    </Compile>
+    <Compile Include="Recordings\Stufe_20_Werte_erfassen.UserCode.cs">
+      <BoundTo>7fa9748e-465b-4ad8-af99-f2d67c31c2ec</BoundTo>
+      <DependentUpon>Stufe_20_Werte_erfassen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2f26f369-64cc-4ebb-bc53-d4a83dbc8e69</id>
+    </Compile>
+    <Compile Include="Recordings\Stufe_20_Zeile_einfuegen_sichtbare_Spalten_pruefen.cs">
+      <DependentUpon>Stufe_20_Zeile_einfuegen_sichtbare_Spalten_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ffe8e7e3-eff5-48ac-a293-e25916d7a948</id>
+      <BoundTo>a9303518-8e51-4636-b2ca-9a0e44577752</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Stufe_20_Zeile_einfuegen_sichtbare_Spalten_pruefen.UserCode.cs">
+      <DependentUpon>Stufe_20_Zeile_einfuegen_sichtbare_Spalten_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e9d86a6b-6946-45ce-b9e1-d2bf431a4563</id>
+      <BoundTo>a9303518-8e51-4636-b2ca-9a0e44577752</BoundTo>
     </Compile>
     <Compile Include="Recordings\StartAUT.cs">
       <DependentUpon>StartAUT.rxrec</DependentUpon>
@@ -127,17 +151,209 @@
       <id>03914872-2d90-4ebc-9c72-ec31f5c6de78</id>
       <BoundTo>63bddd24-0673-42d5-8cd8-642c1eb64711</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Zeilen_pruefen.cs">
+    <Compile Include="Recordings\Stufe_20_erfasste_Zeile_pruefen.cs">
+      <BoundTo>d883739d-cb36-4a7f-80f8-970b840e84c2</BoundTo>
+      <DependentUpon>Stufe_20_erfasste_Zeile_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>21a5b1d1-d7f0-4e04-8044-e60506f293e3</id>
+    </Compile>
+    <Compile Include="Recordings\Stufe_20_erfasste_Zeile_pruefen.UserCode.cs">
+      <BoundTo>d883739d-cb36-4a7f-80f8-970b840e84c2</BoundTo>
+      <DependentUpon>Stufe_20_erfasste_Zeile_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2ec12f73-697a-4cb3-88f7-6329dee4a8a0</id>
+    </Compile>
+    <Compile Include="Recordings\kopiert_von_K_VERR_alle_Zeilen_pruefen.cs">
       <BoundTo>53a2d5d2-6c32-44ab-bb6d-8a0e2c0e15de</BoundTo>
-      <DependentUpon>Zeilen_pruefen.rxrec</DependentUpon>
+      <DependentUpon>kopiert_von_K_VERR_alle_Zeilen_pruefen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>bc90d63c-dade-4925-bcc5-b861d149fd00</id>
     </Compile>
-    <Compile Include="Recordings\Zeilen_pruefen.UserCode.cs">
+    <Compile Include="Recordings\kopiert_von_K_VERR_alle_Zeilen_pruefen.UserCode.cs">
       <BoundTo>53a2d5d2-6c32-44ab-bb6d-8a0e2c0e15de</BoundTo>
-      <DependentUpon>Zeilen_pruefen.rxrec</DependentUpon>
+      <DependentUpon>kopiert_von_K_VERR_alle_Zeilen_pruefen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>8cd64970-9de8-4d10-b8d6-2ede6372152d</id>
+    </Compile>
+    <Compile Include="Recordings\Stufe_21_1_erfasste_Zeile_pruefen.cs">
+      <DependentUpon>Stufe_21_1_erfasste_Zeile_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e7c79134-9252-45db-9b1b-fddcb417520f</id>
+      <BoundTo>0ba5d744-e9d3-43b0-8896-deaa39c43cd9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Stufe_21_1_erfasste_Zeile_pruefen.UserCode.cs">
+      <DependentUpon>Stufe_21_1_erfasste_Zeile_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3f5ea703-3344-462c-8955-9633a4f812a0</id>
+      <BoundTo>0ba5d744-e9d3-43b0-8896-deaa39c43cd9</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Stufe_21_1_Werte_erfassen.cs">
+      <DependentUpon>Stufe_21_1_Werte_erfassen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e35c5e5c-e1e5-4bd1-9e71-3a8053df6ef4</id>
+      <BoundTo>80a045c3-de23-41af-9b36-290b05985ac8</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Stufe_21_1_Werte_erfassen.UserCode.cs">
+      <DependentUpon>Stufe_21_1_Werte_erfassen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d506e136-165a-4272-9c1e-b4a46d5bc0e6</id>
+      <BoundTo>80a045c3-de23-41af-9b36-290b05985ac8</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Stufe_21_1_Zeile_einfuegen_sichtbare_Spalten_pruefen.cs">
+      <DependentUpon>Stufe_21_1_Zeile_einfuegen_sichtbare_Spalten_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a7fbb004-443f-4d17-97e4-3b1f5a870e01</id>
+      <BoundTo>2891601d-de7f-47cd-a07d-6e5665fd83af</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Stufe_21_1_Zeile_einfuegen_sichtbare_Spalten_pruefen.UserCode.cs">
+      <DependentUpon>Stufe_21_1_Zeile_einfuegen_sichtbare_Spalten_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0b36b5d2-384a-4c8f-990d-7380d8c42e3f</id>
+      <BoundTo>2891601d-de7f-47cd-a07d-6e5665fd83af</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Stufe_21_1_Einschraenkungen_pruefen.cs">
+      <DependentUpon>Stufe_21_1_Einschraenkungen_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0b150815-c726-45dd-83c2-7ff2e68cfd07</id>
+      <BoundTo>f92cfa5a-8223-43f0-9b03-33c2f3d78794</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Stufe_21_1_Einschraenkungen_pruefen.UserCode.cs">
+      <DependentUpon>Stufe_21_1_Einschraenkungen_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fb06d358-819d-4484-92f5-cba82524dfac</id>
+      <BoundTo>f92cfa5a-8223-43f0-9b03-33c2f3d78794</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Stufe_21_2_Einschraenkungen_pruefen.cs">
+      <DependentUpon>Stufe_21_2_Einschraenkungen_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>96773857-377f-4021-97b9-aad6382f6b66</id>
+      <BoundTo>982cc17f-c378-4d37-8d72-72a3239f88f4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Stufe_21_2_Einschraenkungen_pruefen.UserCode.cs">
+      <DependentUpon>Stufe_21_2_Einschraenkungen_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e516e966-9ae4-47a1-a3a6-8b6b63cd69cc</id>
+      <BoundTo>982cc17f-c378-4d37-8d72-72a3239f88f4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Stufe_21_2_erfasste_Zeile_pruefen.cs">
+      <DependentUpon>Stufe_21_2_erfasste_Zeile_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>de6fb068-a421-4f2a-8f44-788bbbece544</id>
+      <BoundTo>eca01c6c-4ac3-493b-8d08-add55c422fca</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Stufe_21_2_erfasste_Zeile_pruefen.UserCode.cs">
+      <DependentUpon>Stufe_21_2_erfasste_Zeile_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9438a275-6554-436e-b961-d439402caf97</id>
+      <BoundTo>eca01c6c-4ac3-493b-8d08-add55c422fca</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Stufe_21_2_Werte_erfassen.cs">
+      <DependentUpon>Stufe_21_2_Werte_erfassen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4190e941-773d-4c99-a17c-1b0269ee9b5b</id>
+      <BoundTo>68354426-c53c-4ce9-829c-74eacfc02723</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Stufe_21_2_Werte_erfassen.UserCode.cs">
+      <DependentUpon>Stufe_21_2_Werte_erfassen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9c8167c7-378d-4c7f-a20d-7591ca8622bb</id>
+      <BoundTo>68354426-c53c-4ce9-829c-74eacfc02723</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Stufe_21_2_Zeile_einfuegen_sichtbare_Spalten_pruefen.cs">
+      <DependentUpon>Stufe_21_2_Zeile_einfuegen_sichtbare_Spalten_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9327864e-a100-4acb-954a-0c4e631cefdc</id>
+      <BoundTo>bbe26d73-0317-4198-b961-d09e70a5321f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Stufe_21_2_Zeile_einfuegen_sichtbare_Spalten_pruefen.UserCode.cs">
+      <DependentUpon>Stufe_21_2_Zeile_einfuegen_sichtbare_Spalten_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>eceb5cea-30ca-40c7-83d9-f8c64cbe6744</id>
+      <BoundTo>bbe26d73-0317-4198-b961-d09e70a5321f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Stufe_21_Einschraenkungen_laden.cs">
+      <DependentUpon>Stufe_21_Einschraenkungen_laden.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0fb3bdc6-88c5-43bd-872c-ec69c520d6de</id>
+      <BoundTo>73abfb7b-4385-48ae-91cd-b8cafb990c24</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Stufe_21_Einschraenkungen_laden.UserCode.cs">
+      <DependentUpon>Stufe_21_Einschraenkungen_laden.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0b0b96ec-782f-4814-8133-30d6ba53ca6d</id>
+      <BoundTo>73abfb7b-4385-48ae-91cd-b8cafb990c24</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_K_VEST\Close_k_vest.cs">
+      <DependentUpon>Close_k_vest.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>11a30c7c-ff3d-4949-9838-7d14399fae98</id>
+      <BoundTo>ddd8660b-f528-441a-994c-e4ce79501558</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_K_VEST\Close_k_vest.UserCode.cs">
+      <DependentUpon>Close_k_vest.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5042b5aa-30c9-45e5-85d7-8f82d304e215</id>
+      <BoundTo>ddd8660b-f528-441a-994c-e4ce79501558</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_K_VEST\k_vest_Default_zuruecksetzen.cs">
+      <DependentUpon>k_vest_Default_zuruecksetzen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>19030e5a-1160-4c57-8899-7ed82c74245a</id>
+      <BoundTo>51422243-6a57-47ba-8c46-53eba4716a43</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_K_VEST\k_vest_Default_zuruecksetzen.UserCode.cs">
+      <DependentUpon>k_vest_Default_zuruecksetzen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c13ffdce-ff37-43ff-a9d8-f905fd8f481e</id>
+      <BoundTo>51422243-6a57-47ba-8c46-53eba4716a43</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_K_VEST\Start_k_vest.cs">
+      <DependentUpon>Start_k_vest.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9fb3887b-7798-4431-896d-433712ceec9c</id>
+      <BoundTo>24f77c81-d61e-4ea9-8cb0-9d49c016a343</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_K_VEST\Start_k_vest.UserCode.cs">
+      <DependentUpon>Start_k_vest.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>19412c7c-b139-4313-a66d-e9f459e4c4fb</id>
+      <BoundTo>24f77c81-d61e-4ea9-8cb0-9d49c016a343</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_K_VEST\Stufe_21_KST_von_eintragen.cs">
+      <BoundTo>ec6c68d0-62ad-446a-8772-e8298310f543</BoundTo>
+      <DependentUpon>Stufe_21_KST_von_eintragen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3b69a1e1-456b-4d60-b568-de122a3b237e</id>
+    </Compile>
+    <Compile Include="Recordings_K_VEST\Stufe_21_KST_von_eintragen.UserCode.cs">
+      <BoundTo>ec6c68d0-62ad-446a-8772-e8298310f543</BoundTo>
+      <DependentUpon>Stufe_21_KST_von_eintragen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2b027a5e-0282-49af-8fb5-b29ee564a04c</id>
+    </Compile>
+    <Compile Include="Recordings_K_VEST\Verr_Stamm_pruefen_obere_Tabelle_Default.cs">
+      <BoundTo>19fb5a63-74cd-4565-8413-43314dba5024</BoundTo>
+      <DependentUpon>Verr_Stamm_pruefen_obere_Tabelle_Default.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>228b236c-342e-4cd9-9de6-1c864004b7fe</id>
+    </Compile>
+    <Compile Include="Recordings_K_VEST\Verr_Stamm_pruefen_obere_Tabelle_Default.UserCode.cs">
+      <BoundTo>19fb5a63-74cd-4565-8413-43314dba5024</BoundTo>
+      <DependentUpon>Verr_Stamm_pruefen_obere_Tabelle_Default.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2f7fd062-cbd5-4899-9010-6524e6f61762</id>
+    </Compile>
+    <Compile Include="Recordings_K_VEST\Verr_Stamm_pruefen_untere_Tabelle_Default.cs">
+      <BoundTo>8178b8f1-b7b3-4b05-885f-c968f534e723</BoundTo>
+      <DependentUpon>Verr_Stamm_pruefen_untere_Tabelle_Default.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a703961e-6cd8-4b71-9594-62a3bb847920</id>
+    </Compile>
+    <Compile Include="Recordings_K_VEST\Verr_Stamm_pruefen_untere_Tabelle_Default.UserCode.cs">
+      <BoundTo>8178b8f1-b7b3-4b05-885f-c968f534e723</BoundTo>
+      <DependentUpon>Verr_Stamm_pruefen_untere_Tabelle_Default.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7fefe70a-fe20-49d8-8764-a398dcbcae3b</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -160,20 +376,110 @@
       <id>171a89eb-ff5d-4ab9-b6dd-1ff58b60a1c9</id>
       <recordtableid>8ecc8629-d6c7-4bb3-be40-e15033b7261c</recordtableid>
     </None>
-    <None Include="Recordings\Einschraenkungen_laden.rxrec">
+    <None Include="Recordings\Stufe_20_Einschraenkungen_laden.rxrec">
       <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
       <id>aaef4b51-d788-45a5-861f-204dbd5b1aaf</id>
       <recordtableid>5aa2cc32-2742-49fa-80c3-5d024d96e3cc</recordtableid>
+    </None>
+    <None Include="Recordings\Stufe_20_Werte_erfassen.rxrec">
+      <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
+      <id>7fa9748e-465b-4ad8-af99-f2d67c31c2ec</id>
+      <recordtableid>ff9f24aa-a6fe-45c5-bae8-54c713008c4a</recordtableid>
+    </None>
+    <None Include="Recordings\Stufe_20_Zeile_einfuegen_sichtbare_Spalten_pruefen.rxrec">
+      <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
+      <id>a9303518-8e51-4636-b2ca-9a0e44577752</id>
+      <recordtableid>42e7c1cb-c8b4-42b1-aa3d-72de2413574a</recordtableid>
     </None>
     <None Include="Recordings\StartAUT.rxrec">
       <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
       <id>63bddd24-0673-42d5-8cd8-642c1eb64711</id>
       <recordtableid>d42b2295-c2b6-4c60-a017-fb6b779e4717</recordtableid>
     </None>
-    <None Include="Recordings\Zeilen_pruefen.rxrec">
+    <None Include="Recordings\Stufe_20_erfasste_Zeile_pruefen.rxrec">
+      <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
+      <id>d883739d-cb36-4a7f-80f8-970b840e84c2</id>
+      <recordtableid>20ebedd7-7bf8-457a-9f1e-d8314882620e</recordtableid>
+    </None>
+    <None Include="Recordings\kopiert_von_K_VERR_alle_Zeilen_pruefen.rxrec">
       <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
       <id>53a2d5d2-6c32-44ab-bb6d-8a0e2c0e15de</id>
       <recordtableid>76b63d1c-39a0-4fcb-8e4a-860e66b82034</recordtableid>
+    </None>
+    <None Include="Recordings\Stufe_21_1_erfasste_Zeile_pruefen.rxrec">
+      <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
+      <id>0ba5d744-e9d3-43b0-8896-deaa39c43cd9</id>
+      <recordtableid>3858cb6d-7a38-4818-98a1-5c5c90c41053</recordtableid>
+    </None>
+    <None Include="Recordings\Stufe_21_1_Werte_erfassen.rxrec">
+      <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
+      <id>80a045c3-de23-41af-9b36-290b05985ac8</id>
+      <recordtableid>708a4a2c-124c-4346-8fde-fa8101f857c3</recordtableid>
+    </None>
+    <None Include="Recordings\Stufe_21_1_Zeile_einfuegen_sichtbare_Spalten_pruefen.rxrec">
+      <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
+      <id>2891601d-de7f-47cd-a07d-6e5665fd83af</id>
+      <recordtableid>90b49328-9b75-4ff3-ba9b-e6aca1217777</recordtableid>
+    </None>
+    <None Include="Recordings\Stufe_21_1_Einschraenkungen_pruefen.rxrec">
+      <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
+      <id>f92cfa5a-8223-43f0-9b03-33c2f3d78794</id>
+      <recordtableid>c3d7a671-afb6-4f9f-9f88-7a9bcd3591a7</recordtableid>
+    </None>
+    <None Include="Recordings\Stufe_21_2_Einschraenkungen_pruefen.rxrec">
+      <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
+      <id>982cc17f-c378-4d37-8d72-72a3239f88f4</id>
+      <recordtableid>86501c0a-86e0-451d-b3e3-615eec86b4c8</recordtableid>
+    </None>
+    <None Include="Recordings\Stufe_21_2_erfasste_Zeile_pruefen.rxrec">
+      <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
+      <id>eca01c6c-4ac3-493b-8d08-add55c422fca</id>
+      <recordtableid>2141c09a-3ac2-4679-aee7-c367c437f9d2</recordtableid>
+    </None>
+    <None Include="Recordings\Stufe_21_2_Werte_erfassen.rxrec">
+      <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
+      <id>68354426-c53c-4ce9-829c-74eacfc02723</id>
+      <recordtableid>2c957f45-31ff-491d-87b4-0a5a6cf34cf4</recordtableid>
+    </None>
+    <None Include="Recordings\Stufe_21_2_Zeile_einfuegen_sichtbare_Spalten_pruefen.rxrec">
+      <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
+      <id>bbe26d73-0317-4198-b961-d09e70a5321f</id>
+      <recordtableid>232ee0ad-5af9-4d96-af3c-121d05060f5c</recordtableid>
+    </None>
+    <None Include="Recordings\Stufe_21_Einschraenkungen_laden.rxrec">
+      <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
+      <id>73abfb7b-4385-48ae-91cd-b8cafb990c24</id>
+      <recordtableid>c006bf26-7724-42ee-859a-84861a6d4ee5</recordtableid>
+    </None>
+    <None Include="Recordings_K_VEST\Close_k_vest.rxrec">
+      <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
+      <id>ddd8660b-f528-441a-994c-e4ce79501558</id>
+      <recordtableid>5e244313-8219-455c-9a3d-bbb3d4272f74</recordtableid>
+    </None>
+    <None Include="Recordings_K_VEST\k_vest_Default_zuruecksetzen.rxrec">
+      <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
+      <id>51422243-6a57-47ba-8c46-53eba4716a43</id>
+      <recordtableid>cc0fa152-42c9-406e-a177-ba48756bc4f5</recordtableid>
+    </None>
+    <None Include="Recordings_K_VEST\Start_k_vest.rxrec">
+      <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
+      <id>24f77c81-d61e-4ea9-8cb0-9d49c016a343</id>
+      <recordtableid>1ca2a914-bf15-4a56-936d-1c37a85247df</recordtableid>
+    </None>
+    <None Include="Recordings_K_VEST\Stufe_21_KST_von_eintragen.rxrec">
+      <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
+      <id>ec6c68d0-62ad-446a-8772-e8298310f543</id>
+      <recordtableid>3aa5ebd3-c5ea-40f1-846c-743e2838fb2f</recordtableid>
+    </None>
+    <None Include="Recordings_K_VEST\Verr_Stamm_pruefen_obere_Tabelle_Default.rxrec">
+      <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
+      <id>19fb5a63-74cd-4565-8413-43314dba5024</id>
+      <recordtableid>ce563591-e7af-4be1-8905-9d7b0e545e05</recordtableid>
+    </None>
+    <None Include="Recordings_K_VEST\Verr_Stamm_pruefen_untere_Tabelle_Default.rxrec">
+      <BoundTo>e5a32393-1bd1-4bda-a35e-b14308293e8c</BoundTo>
+      <id>8178b8f1-b7b3-4b05-885f-c968f534e723</id>
+      <recordtableid>ce0d9332-ea47-4f2f-b3cf-734b8e86e8c8</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -187,6 +493,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Recordings_K_VEST">
+      <id>972c7081-b5f5-4d43-a555-dea3c654827a</id>
+    </Folder>
     <Folder Include="Recordings">
       <id>aa02cf61-0ab6-4588-a96d-b30d78264725</id>
     </Folder>

@@ -31,7 +31,7 @@ mode="Global">
 		<var
 		id="c01406ed-8dec-4c5a-939b-370769d34897"
 		name="Periode">
-			2
+			6
 		</var>
 	</variables>
 	<recorditems>
@@ -60,21 +60,32 @@ mode="Global">
 				0
 			</matchvalue>
 		</validationitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="20ms"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
 		enabled="True"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="81f445a6-71b1-4877-acdd-7b70b88a5167"
-		setModifiers="True">
+		searchpropertyid="df3ff0be-160a-4d54-8a8d-89592de448dc"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</keyitem>
+			<info
+			id="dad4e375-0f14-4f67-9243-06160e0ab166"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblIbufe']/container[@controlname='ToolBar']/text[@controlname='dfJahrV']/text[@accessiblename='Periode von']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 		<keysequenceitem
 		KeySequence="yourtext"
 		duration="20ms"
@@ -93,45 +104,6 @@ mode="Global">
 			<info
 			id="dad4e375-0f14-4f67-9243-06160e0ab166"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="0"
-				prefcap="text"
-				rect="199,259,44,17"
-				role="text"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="text"
-					type="System.String">
-						2022
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						Periode von
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Text
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						2022
-					</attribute>
-				</element>
 				<path>
 					/form[@controlname='tblIbufe']/container[@controlname='ToolBar']/text[@controlname='dfJahrV']/text[@accessiblename='Periode von']
 				</path>
@@ -381,56 +353,6 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</keyitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="1933264e-d139-467c-9cb6-042b4fc445d9"
-		sx="730"
-		sy="254"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="cc7e6b1f-3186-4d6d-a5c2-6b2ba0e0009f"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="0"
-				prefcap="text"
-				rect="693,246,74,17"
-				role="text"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						None
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						None
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ToolBar']/text[@controlname='dfKs1_von']/text[@accessiblename='Kostenstellen']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"

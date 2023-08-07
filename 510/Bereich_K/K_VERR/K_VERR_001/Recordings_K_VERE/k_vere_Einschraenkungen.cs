@@ -42,7 +42,7 @@ namespace K_VERR_001.Recordings_K_VERE
         public k_vere_Einschraenkungen()
         {
             Jahr = "2020";
-            Periode = "2";
+            Periode = "6";
         }
 
         /// <summary>

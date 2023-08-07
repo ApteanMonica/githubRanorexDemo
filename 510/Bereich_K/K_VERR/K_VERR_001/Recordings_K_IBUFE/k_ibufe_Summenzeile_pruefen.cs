@@ -82,8 +82,11 @@ namespace K_VERR_001.Recordings_K_IBUFE
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Summe') on item 'TblIbufe.Fusszeile_Summe.ColKontoRow0'.", repo.TblIbufe.Fusszeile_Summe.ColKontoRow0Info, new RecordItemIndex(0));
             Validate.AttributeEqual(repo.TblIbufe.Fusszeile_Summe.ColKontoRow0Info, "Text", "Summe");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblIbufe.Fusszeile_Summe.ColBetragRow0'.", repo.TblIbufe.Fusszeile_Summe.ColBetragRow0Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblIbufe.Fusszeile_Summe.ColBetragRow0Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblIbufe.Fusszeile_Summe.ColBetragRow0'.", repo.TblIbufe.Fusszeile_Summe.ColBetragRow0Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblIbufe.Fusszeile_Summe.ColBetragRow0Info, "Text", "0,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'TblIbufe.Fusszeile_Summe.ColMengeRow0'.", repo.TblIbufe.Fusszeile_Summe.ColMengeRow0Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblIbufe.Fusszeile_Summe.ColMengeRow0Info, "Text", "0");
             
         }
 

@@ -79,8 +79,8 @@ namespace K_VERE_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblVerr.TitleBar100VerrechnungenErfassen'.", repo.TblVerr.TitleBar100VerrechnungenErfassenInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TblVerr.TitleBar100VerrechnungenErfassen, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblVerr_K_VERE.TitleBar100VerrechnungenErfassen'.", repo.TblVerr_K_VERE.TitleBar100VerrechnungenErfassenInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.TblVerr_K_VERE.TitleBar100VerrechnungenErfassen, 1000);
             
         }
 
