@@ -1,0 +1,43 @@
+trigger:
+- main
+
+resources:
+- repo: self
+
+pool:
+  name: Automation
+  demands:
+   - agent.name -equals DGA1APP03RNSQA
+
+steps:
+  - task: DownloadBuildArtifacts@1
+    inputs:
+     buildType: 'specific'
+     project: '25960368-753d-4dcb-a0bc-ab7d1da61ca2'
+     pipeline: '334'
+     specificBuildWithTriggering: true
+     buildVersionToDownload: 'specific'
+     buildId: 'Latest'
+     downloadType: 'single'
+     artifactName: 'RS2dev530'
+     downloadPath: '$(System.ArtifactsDirectory)'
+
+  - task: PowerShell@2
+    displayName: 'Run Service Host'
+    inputs:
+     targetType: 'inline'
+     script: |
+       Start-Process -FilePath "$(System.DefaultWorkingDirectory)/API_Automation_Cypress/BatchFile/ServiceHost.bat" -WindowStyle Hidden
+
+  - task: CmdLine@2
+    displayName: 'NPM initialization'
+    inputs:
+      script: |
+       npm install
+       npm i   
+      workingDirectory: '$(System.DefaultWorkingDirectory)/API_Automation_Cypress/Modulewise_TestCases'
+
+  - task: BatchScript@1
+    displayName: 'Run Cypress Scripts'
+    inputs:
+     filename: '$(System.DefaultWorkingDirectory)/API_Automation_Cypress/BatchFile/RunScripts.bat'
