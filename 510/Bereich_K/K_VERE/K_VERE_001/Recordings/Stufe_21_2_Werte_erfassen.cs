@@ -41,7 +41,7 @@ namespace K_VERE_001.Recordings
         /// </summary>
         public Stufe_21_2_Werte_erfassen()
         {
-            an_KST_80 = "90";
+            an_KST_80 = "80";
             Menge2 = "100";
             Text_21_2 = "Verrechnung K_VERR_001 Menge 100 an KST 80";
         }

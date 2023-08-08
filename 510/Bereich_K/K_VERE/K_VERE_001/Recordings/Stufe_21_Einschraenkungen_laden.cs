@@ -41,12 +41,7 @@ namespace K_VERE_001.Recordings
         /// </summary>
         public Stufe_21_Einschraenkungen_laden()
         {
-            Jahr = "2020";
-            Periode = "1";
-            Art_SVE = "SVE";
             Stufe_21 = "21";
-            KontoE = "E1000";
-            KontoB = "B1000";
         }
 
         /// <summary>
@@ -59,42 +54,6 @@ namespace K_VERE_001.Recordings
 
 #region Variables
 
-        string _Jahr;
-
-        /// <summary>
-        /// Gets or sets the value of variable Jahr.
-        /// </summary>
-        [TestVariable("a1f60bb3-0829-46b5-8f30-392003833d6d")]
-        public string Jahr
-        {
-            get { return _Jahr; }
-            set { _Jahr = value; }
-        }
-
-        string _Periode;
-
-        /// <summary>
-        /// Gets or sets the value of variable Periode.
-        /// </summary>
-        [TestVariable("550e2ba8-9b97-4823-acdd-4cc25d2ca1ea")]
-        public string Periode
-        {
-            get { return _Periode; }
-            set { _Periode = value; }
-        }
-
-        string _Art_SVE;
-
-        /// <summary>
-        /// Gets or sets the value of variable Art_SVE.
-        /// </summary>
-        [TestVariable("ceeb831b-9fca-44a4-ac0d-99a6901c8ba6")]
-        public string Art_SVE
-        {
-            get { return _Art_SVE; }
-            set { _Art_SVE = value; }
-        }
-
         string _Stufe_21;
 
         /// <summary>
@@ -105,30 +64,6 @@ namespace K_VERE_001.Recordings
         {
             get { return _Stufe_21; }
             set { _Stufe_21 = value; }
-        }
-
-        string _KontoE;
-
-        /// <summary>
-        /// Gets or sets the value of variable KontoE.
-        /// </summary>
-        [TestVariable("80c813a0-a9c4-44e2-ab2f-7d814dd4d3d6")]
-        public string KontoE
-        {
-            get { return _KontoE; }
-            set { _KontoE = value; }
-        }
-
-        string _KontoB;
-
-        /// <summary>
-        /// Gets or sets the value of variable KontoB.
-        /// </summary>
-        [TestVariable("7f0ef639-d8ac-4f74-b5d2-25c6944cd73c")]
-        public string KontoB
-        {
-            get { return _KontoB; }
-            set { _KontoB = value; }
         }
 
 #endregion
@@ -160,31 +95,22 @@ namespace K_VERE_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblVerr_K_VERE.PbDataAccessNew' at Center.", repo.TblVerr_K_VERE.PbDataAccessNewInfo, new RecordItemIndex(0));
             repo.TblVerr_K_VERE.PbDataAccessNew.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'TblVerr_K_VERE.ToolBar.PlanNr'.", repo.TblVerr_K_VERE.ToolBar.PlanNrInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblVerr_K_VERE.ToolBar.PlanNrInfo, "Text", "0");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblVerr_K_VERE.ToolBar.Stufe' at Center.", repo.TblVerr_K_VERE.ToolBar.StufeInfo, new RecordItemIndex(1));
+            repo.TblVerr_K_VERE.ToolBar.Stufe.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblVerr_K_VERE.ToolBar.Jahr' at Center.", repo.TblVerr_K_VERE.ToolBar.JahrInfo, new RecordItemIndex(2));
-            repo.TblVerr_K_VERE.ToolBar.Jahr.DoubleClick();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(2));
+            Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'TblVerr_K_VERE.ToolBar.Jahr'.", repo.TblVerr_K_VERE.ToolBar.JahrInfo, new RecordItemIndex(3));
-            repo.TblVerr_K_VERE.ToolBar.Jahr.PressKeys(Jahr);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(3));
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Periode' with focus on 'TblVerr_K_VERE.ToolBar.Periode'.", repo.TblVerr_K_VERE.ToolBar.PeriodeInfo, new RecordItemIndex(5));
-            repo.TblVerr_K_VERE.ToolBar.Periode.PressKeys(Periode);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Stufe_21' with focus on 'TblVerr_K_VERE.ToolBar.Stufe'.", repo.TblVerr_K_VERE.ToolBar.StufeInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Stufe_21' with focus on 'TblVerr_K_VERE.ToolBar.Stufe'.", repo.TblVerr_K_VERE.ToolBar.StufeInfo, new RecordItemIndex(4));
             repo.TblVerr_K_VERE.ToolBar.Stufe.PressKeys(Stufe_21);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblVerr_K_VERE.PbDataAccessLoad' at Center.", repo.TblVerr_K_VERE.PbDataAccessLoadInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblVerr_K_VERE.PbDataAccessLoad' at Center.", repo.TblVerr_K_VERE.PbDataAccessLoadInfo, new RecordItemIndex(6));
             repo.TblVerr_K_VERE.PbDataAccessLoad.Click();
             
         }
