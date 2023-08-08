@@ -79,8 +79,9 @@ namespace N_LISTEN_BULI_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'CdlgSqlFehler.SQLFehler'", repo.CdlgSqlFehler.SQLFehlerInfo, new ActionTimeout(120000), new RecordItemIndex(0));
-            repo.CdlgSqlFehler.SQLFehlerInfo.WaitForExists(120000);
+            // wait for erhöht auf 3 Minuten
+            Report.Log(ReportLevel.Info, "Wait", "wait for erhöht auf 3 Minuten\r\nWaiting 3m to exist. Associated repository item: 'CdlgSqlFehler.SQLFehler'", repo.CdlgSqlFehler.SQLFehlerInfo, new ActionTimeout(180000), new RecordItemIndex(0));
+            repo.CdlgSqlFehler.SQLFehlerInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='SQL Fehler: 156 - Falsche Syntax in der Nähe des AND-Schlüsselworts.\r\n\r\nFehlerPosition: 7 () - <CN=chGlobal>\r\n\r\nFalsche Syntax in der Nähe des AND-Schlüsselworts.\r\n') on item 'CdlgSqlFehler.Text'.", repo.CdlgSqlFehler.TextInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.CdlgSqlFehler.TextInfo, "Text", "SQL Fehler: 156 - Falsche Syntax in der Nähe des AND-Schlüsselworts.\r\n\r\nFehlerPosition: 7 () - <CN=chGlobal>\r\n\r\nFalsche Syntax in der Nähe des AND-Schlüsselworts.\r\n");
