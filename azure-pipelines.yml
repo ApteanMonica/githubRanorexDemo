@@ -1,6 +1,11 @@
 name: API Automation
 trigger:
-- main
+  branches:
+    include:
+    - main
+  paths:
+    include:
+    - API_Automation_Cypress
 
 resources:
 - repo: self
