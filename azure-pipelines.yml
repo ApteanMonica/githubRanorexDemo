@@ -1,6 +1,11 @@
 name: API Automation
 trigger:
-- main
+  branches:
+    include:
+    - main
+  paths:
+    include:
+    - API_Automation_Cypress
 
 resources:
 - repo: self
@@ -43,6 +48,7 @@ steps:
      filename: '$(System.DefaultWorkingDirectory)/API_Automation_Cypress/BatchFile/RunScripts.bat'
 
   - task: ArchiveFiles@2
+    condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
     inputs:
      rootFolderOrFile: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports'
      includeRootFolder: true

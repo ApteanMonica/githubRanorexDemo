@@ -175,7 +175,12 @@ namespace N_ANLA_004.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Abgangserloes) on item 'FrmAnla.GroupBox_Rubrik_Abgang.DfAnwe1Abgerloes'.", repo.FrmAnla.GroupBox_Rubrik_Abgang.DfAnwe1AbgerloesInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.FrmAnla.GroupBox_Rubrik_Abgang.DfAnwe1AbgerloesInfo, "Text", Abgangserloes);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press.", new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgBuchen.TitleBar100AVZAbgangBuchen'.", repo.DlgBuchen.TitleBar100AVZAbgangBuchenInfo, new RecordItemIndex(10));
+            Keyboard.PrepareFocus(repo.DlgBuchen.TitleBar100AVZAbgangBuchen);
+            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmAnla.TitleBar100AVZAnlagen'.", repo.FrmAnla.TitleBar100AVZAnlagenInfo, new RecordItemIndex(11));
+            Keyboard.PrepareFocus(repo.FrmAnla.TitleBar100AVZAnlagen);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }
