@@ -228,19 +228,25 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr' at Center.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(40));
             repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(41));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(41));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(42));
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'FB03_EXOPV_005N' with focus on 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(42));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(43));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'FB03_EXOPV_005N' with focus on 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(44));
             repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr.PressKeys("FB03_EXOPV_005N");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(43));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(45));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB03_EXOPV_005N') on item 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(44));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB03_EXOPV_005N') on item 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(46));
             Validate.AttributeEqual(repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, "Text", "FB03_EXOPV_005N");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFremdbelegnrFehler.PbOk' at Center.", repo.DlgFremdbelegnrFehler.PbOkInfo, new RecordItemIndex(45));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFremdbelegnrFehler.PbOk' at Center.", repo.DlgFremdbelegnrFehler.PbOkInfo, new RecordItemIndex(47));
             repo.DlgFremdbelegnrFehler.PbOk.Click();
             
         }
