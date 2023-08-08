@@ -79,6 +79,9 @@ namespace N_ANLA_004.Recordings
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmAnla.TitleBar100AVZAnlagen'.", repo.FrmAnla.TitleBar100AVZAnlagenInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.FrmAnla.TitleBar100AVZAnlagen, 1000);
+            
         }
 
 #region Image Feature Data
