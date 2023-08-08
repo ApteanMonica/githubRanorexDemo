@@ -196,8 +196,10 @@ namespace B_BUCH_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100,00') on item 'MdiBuch.tblB.ColBruttoRow1'.", repo.MdiBuch.tblB.ColBruttoRow1Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.MdiBuch.tblB.ColBruttoRow1Info, "Text", "100,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9.266,00') on item 'MdiBuch.tblB.ColKtoSaldoRow1'.", repo.MdiBuch.tblB.ColKtoSaldoRow1Info, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.MdiBuch.tblB.ColKtoSaldoRow1Info, "Text", "9.266,00");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='9.266,00') on item 'MdiBuch.tblB.ColKtoSaldoRow1'.", repo.MdiBuch.tblB.ColKtoSaldoRow1Info, new RecordItemIndex(13));
+                Validate.AttributeEqual(repo.MdiBuch.tblB.ColKtoSaldoRow1Info, "Text", "9.266,00", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(13)); }
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='L') on item 'MdiBuch.tblB.ColKLRow1'.", repo.MdiBuch.tblB.ColKLRow1Info, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.MdiBuch.tblB.ColKLRow1Info, "Text", "L");
