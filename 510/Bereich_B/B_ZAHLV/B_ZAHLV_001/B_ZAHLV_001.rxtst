@@ -172,6 +172,50 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="1da6975b-21d0-4ee0-b24a-93f04927a75a"
+			name="SQL_Abfrage_Beleg_1001"
+			ref="9d4f59a9-9ef3-4f29-809b-8ca0da01da29"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="output_file_select_b_busa_akt"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="32df8d2d-a9cb-4e59-ae9f-8d2f302926a7"
+					variablename="output_file_select_b_busa_akt">
+					</var>
+					<var
+					dataname="DB_File"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="b2ddc891-35e9-42a4-bb53-685bf4b418bb"
+					variablename="DB_File">
+					</var>
+					<var
+					dataname="SQL_Select_B_BUSA"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="70edba51-7fb8-4239-95ab-25dc436e0ffb"
+					variablename="SQL_Select_B_BUSA">
+					</var>
+					<var
+					dataname="output_file_select_b_busa_ref_1"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="64f5aaec-2205-498c-83d3-79694ec03669"
+					variablename="output_file_select_b_busa_ref_1">
+					</var>
+					<var
+					dataname="output_file_select_b_busa_ref_2"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="9bd40583-7f95-4af8-90b4-1b7c75ecfea7"
+					variablename="output_file_select_b_busa_ref_2">
+					</var>
+					<var
+					dataname="output_file_select_b_busa_ref"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="f6b28cd6-6599-45fa-827f-fcba99142176"
+					variablename="output_file_select_b_busa_ref">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="1f00ed20-fcce-4967-83e9-30a424550a9c"
 			name="Tagesdatum_ermitteln"
 			ref="a99d5db0-c2f1-437f-89a3-83e7ec8dd6ad"
@@ -515,6 +559,10 @@ Datum,Buchungs-Nr)]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="53ba31ae-4a04-48e8-acbe-a88298197076"
+			name="SQL-Kontrolle_B_BUSA">
+			</testcase>
 			<testmodule
 			id="68bbc46b-2746-47ac-8fdf-10867d0a7ba1"
 			name="OP_Tabelle_schliessen_zurueck"
@@ -1149,6 +1197,30 @@ Datum,Buchungs-Nr)]]>
 					name="LF_303023_Saldo"
 					value="0,00">
 					</param>
+					<param
+					name="SQL_Select_B_BUSA"
+					value="select * from b_busa where firm_nr = '100' and busa_belegnr = '1001';">
+					</param>
+					<param
+					name="DB_File"
+					value="C:\Testdaten\Allgemein\UserCode\datenbank.txt">
+					</param>
+					<param
+					name="output_file_select_b_busa_akt"
+					value="C:\Testdaten\Allgemein\UserCode\Files_B_ZAHLV_001\B_ZAHLV_001_B_BUSA_aktuell.txt">
+					</param>
+					<param
+					name="output_file_select_b_busa_ref_1"
+					value="C:\Testdaten\Allgemein\UserCode\Files_B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz_1.txt">
+					</param>
+					<param
+					name="output_file_select_b_busa_ref_2"
+					value="C:\Testdaten\Allgemein\UserCode\Files_B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz_2.txt">
+					</param>
+					<param
+					name="output_file_select_b_busa_ref"
+					value="C:\Testdaten\Allgemein\UserCode\Files_B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz.txt">
+					</param>
 				</parameters>
 			</testcase>
 			<testcase
@@ -1500,10 +1572,6 @@ Datum,Buchungs-Nr)]]>
 							name="OP_Tabelle_Einschraenkungen">
 							</testmodule>
 							<testmodule
-							id="4d2c1b84-9751-4115-b5f0-03a72cfe829b"
-							name="LF_303020_Saldo_Summen_pruefen">
-							</testmodule>
-							<testmodule
 							id="9be806a1-8c32-4292-bf09-6069715fd9b7"
 							name="LF_303020_Zeilen_Belege_pruefen">
 							</testmodule>
@@ -1522,6 +1590,10 @@ Datum,Buchungs-Nr)]]>
 							<testmodule
 							id="7a5e1fc3-1738-4f61-b63b-a800279625e3"
 							name="OP_Tabelle_Einschraenkungen">
+							</testmodule>
+							<testmodule
+							id="4d2c1b84-9751-4115-b5f0-03a72cfe829b"
+							name="LF_303020_Saldo_Summen_pruefen">
 							</testmodule>
 							<testmodule
 							id="d0002632-424c-409a-ab1a-c429a7843a3c"
@@ -1621,6 +1693,14 @@ Datum,Buchungs-Nr)]]>
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="53ba31ae-4a04-48e8-acbe-a88298197076"
+					name="SQL-Kontrolle_B_BUSA">
+						<testmodule
+						id="1da6975b-21d0-4ee0-b24a-93f04927a75a"
+						name="SQL_Abfrage_Beleg_1001">
+						</testmodule>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -1695,6 +1775,9 @@ Datum,Buchungs-Nr)]]>
 			</testcontainer>
 			<testcontainer
 			id="5177c853-4461-4933-8cbd-6d4591513784">
+			</testcontainer>
+			<testcontainer
+			id="53ba31ae-4a04-48e8-acbe-a88298197076">
 			</testcontainer>
 			<testcontainer
 			id="6acbd35d-9bc2-4666-b75f-311afc719f52">
