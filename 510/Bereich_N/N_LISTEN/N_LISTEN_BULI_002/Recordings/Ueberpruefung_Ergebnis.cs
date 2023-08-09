@@ -97,8 +97,11 @@ namespace N_LISTEN_BULI_002.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmBuchungsliste.FlexGrid.ColBektNr1Row2'.", repo.FrmBuchungsliste.FlexGrid.ColBektNr1Row2Info, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColBektNr1Row2Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='yourValue') on item 'FrmBuchungsliste.FlexGrid.ColBetragRow2'.", repo.FrmBuchungsliste.FlexGrid.ColBetragRow2Info, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColBetragRow2Info, "Text", "yourValue");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='67,71') on item 'FrmBuchungsliste.FlexGrid.ColBetragRow2'.", repo.FrmBuchungsliste.FlexGrid.ColBetragRow2Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColBetragRow2Info, "Text", "67,71");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbUEberleitungFibu' at Center.", repo.FrmBuchungsliste.PbUEberleitungFibuInfo, new RecordItemIndex(7));
+            repo.FrmBuchungsliste.PbUEberleitungFibu.Click();
             
         }
 
