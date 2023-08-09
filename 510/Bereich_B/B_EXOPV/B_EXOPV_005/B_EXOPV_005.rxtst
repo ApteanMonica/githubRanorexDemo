@@ -228,7 +228,7 @@
 			ref="1bf2f54d-35a5-4bcb-92a7-854c26e69497"
 			type="Recording">
 				<description>
-					<![CDATA[BUG 41465 - im Fehlerprotokoll fehlt der Beleg mit Status F (ER_03/FB02) exop_keybel 29, der mit "Übergehen" nicht verbucht wurde (in Schnittstelle korrekt mit F)]]>
+					<![CDATA[CONTINUE ON FAIL - BUG 41465 - im Fehlerprotokoll fehlt der Beleg mit Status F (ER_03/FB02) exop_keybel 29, der mit "Übergehen" nicht verbucht wurde (in Schnittstelle korrekt mit F)]]>
 				</description>
 			</testmodule>
 			<testcase
@@ -360,6 +360,9 @@
 			name="Verbuchung_Meldungen_verbucht_Fehler"
 			ref="446f3ba0-459f-43fd-8aff-78cb4a17eea7"
 			type="Recording">
+				<description>
+					<![CDATA[ab 521 SP12: 7 Belege wurden verbucht (vorher ohne Zahl), regex-Oder: (Belege wurden verbucht)|(7 Belege wurden verbucht)]]>
+				</description>
 			</testmodule>
 			<setup
 			id="9c89764f-de61-46ff-8d84-bf21459dbba7"
@@ -599,6 +602,28 @@
 					name="Inhalt_Buchungsdatum_Zeile21"
 					value="">
 					</param>
+					<param
+					name="Protokoll_Pruefung_510_511"
+					value="Exop: 0	Beleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 29, 
+Exop: 0	Beleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30, 
+Exop: 0	Beleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 31, 
+Exop: 0	Beleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 34, 
+Exop: 30	Beleg: ER04_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 32
+Exop: 32	Beleg: ER06_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30
+Exop: 28	Beleg: ER01_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
+Exop: 28	Beleg: ER01_B_EXOPV_005: Fremdbelegnr FB01_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
+Exop: 29	Beleg: ER03_B_EXOPV_005: Fremdbelegnr FB02_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
+Exop: 34	Beleg: ER03_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
+Exop: 34	Beleg: ER03_B_EXOPV_005: Fremdbelegnr FB03_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!">
+					</param>
+					<param
+					name="Protokoll_Pruefung_521"
+					value="Exop: 0&#9;Beleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 29, &#10;Exop: 0&#9;Beleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30, &#10;Exop: 0&#9;Beleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 31, &#10;Exop: 0&#9;Beleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 34, &#10;Exop: 30&#9;Beleg: ER04_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 32&#10;Exop: 32&#9;Beleg: ER06_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30&#10;Exop: 28&#9;Beleg: ER01_B_EXOPV_005: Doppelte Belegnummer! Dieser Satz wird mit Status >F&lt; als Fehler in der Schnittstelle gespeichert!&#10;Exop: 28&#9;Beleg: ER01_B_EXOPV_005: Doppelte Fremdbelegnummer: FB01_B_EXOPV_005! Dieser Satz wird mit Status >F&lt; als Fehler in der Schnittstelle gespeichert!&#10;Exop: 29&#9;Beleg: ER03_B_EXOPV_005: Doppelte Fremdbelegnummer: FB02_B_EXOPV_005! Dieser Satz wird mit Status >F&lt; als Fehler in der Schnittstelle gespeichert!&#10;Exop: 34&#9;Beleg: ER03_B_EXOPV_005: Doppelte Belegnummer! Dieser Satz wird mit Status >F&lt; als Fehler in der Schnittstelle gespeichert!&#10;Exop: 34&#9;Beleg: ER03_B_EXOPV_005: Doppelte Fremdbelegnummer: FB03_B_EXOPV_005! Dieser Satz wird mit Status >F&lt; als Fehler in der Schnittstelle gespeichert!">
+					</param>
+					<param
+					name="Protokoll_Pruefung_Inhalt"
+					value="">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -641,16 +666,16 @@
 				</description>
 				<databinding>
 					<var
-					dataname="LF_02"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="ec7e78a6-458e-4462-90ad-2fab6730d245"
-					variablename="LF_02">
-					</var>
-					<var
 					dataname="LF_01"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="e277e4e7-f0dc-435e-8a22-a387a482d1df"
 					variablename="LF_01">
+					</var>
+					<var
+					dataname="LF_02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="ec7e78a6-458e-4462-90ad-2fab6730d245"
+					variablename="LF_02">
 					</var>
 				</databinding>
 			</testmodule>
@@ -661,16 +686,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Fehlerprotokoll_Verbuchung"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="b5bd3e66-5b63-4d25-8a69-a4177fa8e537"
-					variablename="Fehlerprotokoll_Verbuchung">
-					</var>
-					<var
 					dataname="Stapel_Herkunft"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="80147ceb-e943-46c5-a7c1-f05b59ef1cce"
 					variablename="Stapel_Herkunft">
+					</var>
+					<var
+					dataname="Fehlerprotokoll_Verbuchung"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="b5bd3e66-5b63-4d25-8a69-a4177fa8e537"
+					variablename="Fehlerprotokoll_Verbuchung">
 					</var>
 				</databinding>
 			</testmodule>
@@ -717,8 +742,28 @@
 			ref="52ae346e-0801-4a96-b82c-76aa59b69469"
 			type="Recording">
 				<description>
-					<![CDATA[BUG 37789 Aufbau Protokoll + Plausibilität Meldungen + Protokoll]]>
+					<![CDATA[CONTINUE ON FAIL tw erledigt BUG 37789 Aufbau Protokoll + Plausibilität Meldungen + Protokoll - geändert ab 521 SP12 Prüfung mit Regex-Oder]]>
 				</description>
+				<databinding>
+					<var
+					dataname="Protokoll_Pruefung_521"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="9de6d316-2059-4fbb-9d7a-099ea7c532aa"
+					variablename="Protokoll_Pruefung_521">
+					</var>
+					<var
+					dataname="Protokoll_Pruefung_510_511"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="b86711b1-099a-42e5-a8ab-bdcc1d8c3755"
+					variablename="Protokoll_Pruefung_510_511">
+					</var>
+					<var
+					dataname="Protokoll_Pruefung_Inhalt"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="57bcb87e-f6b2-4946-a102-3683ca9be644"
+					variablename="Protokoll_Pruefung_Inhalt">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="c9f22167-116d-46e5-b2fc-de0a7ff30c6e"
