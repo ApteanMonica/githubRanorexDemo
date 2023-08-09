@@ -79,6 +79,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\..\Testdaten\Allgemein\UserCode\aptean.cs">
+      <Link>aptean.cs</Link>
+      <id>b203edf7-719e-40f7-81f7-d28fefdb281d</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>61a3782d-0c8c-4017-b732-589f277fd66a</id>
     </Compile>
@@ -108,6 +112,18 @@
       <UserCode>true</UserCode>
       <id>ebcfd89b-f990-4b8c-bd4b-121ee646cc2e</id>
       <BoundTo>03ed200c-3b7b-431d-90f5-2405439aeac5</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Einlesen_Ranoagent.cs">
+      <BoundTo>312156f5-7e6b-4e4b-b3cd-c73d8ef67fd7</BoundTo>
+      <DependentUpon>Einlesen_Ranoagent.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9b3478bc-7c33-4dd7-9993-1d11205aceeb</id>
+    </Compile>
+    <Compile Include="Recordings\Einlesen_Ranoagent.UserCode.cs">
+      <BoundTo>312156f5-7e6b-4e4b-b3cd-c73d8ef67fd7</BoundTo>
+      <DependentUpon>Einlesen_Ranoagent.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>eb5965b7-3b74-4622-b471-99965766e472</id>
     </Compile>
     <Compile Include="Recordings\Meldung.cs">
       <BoundTo>4ca55fde-5c21-4ffa-9a56-f2f0376b6265</BoundTo>
@@ -217,6 +233,18 @@
       <UserCode>true</UserCode>
       <id>c5387d1a-4949-4681-aa83-8e6753dfedd3</id>
     </Compile>
+    <Compile Include="Recordings\Zusammenfuehren_Teil_2_521_korrektur_Item.cs">
+      <BoundTo>993d46a5-41d2-4046-a2ff-fa5f3a8574c3</BoundTo>
+      <DependentUpon>Zusammenfuehren_Teil_2_521_korrektur_Item.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>76355a8b-6d36-49d1-ae1e-a1afd0649200</id>
+    </Compile>
+    <Compile Include="Recordings\Zusammenfuehren_Teil_2_521_korrektur_Item.UserCode.cs">
+      <BoundTo>993d46a5-41d2-4046-a2ff-fa5f3a8574c3</BoundTo>
+      <DependentUpon>Zusammenfuehren_Teil_2_521_korrektur_Item.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4c5f79c7-d71c-4ea3-b4d6-c9a0f7208cf0</id>
+    </Compile>
     <Compile Include="Recordings_Anlagenspiegel\Anlagenspiegel_erstellen.cs">
       <BoundTo>eaddf4a5-852e-400b-8ae5-0b3642887b7e</BoundTo>
       <DependentUpon>Anlagenspiegel_erstellen.rxrec</DependentUpon>
@@ -297,6 +325,11 @@
       <recordtableid>931876e6-c49c-4de2-aaa6-7c809f429347</recordtableid>
       <BoundTo>f8a0344b-1399-4d36-8123-8d841a1e8778</BoundTo>
     </None>
+    <None Include="Recordings\Einlesen_Ranoagent.rxrec">
+      <BoundTo>f8a0344b-1399-4d36-8123-8d841a1e8778</BoundTo>
+      <id>312156f5-7e6b-4e4b-b3cd-c73d8ef67fd7</id>
+      <recordtableid>81e808b3-a2d3-45da-aee9-6db685e584cc</recordtableid>
+    </None>
     <None Include="Recordings\Meldung.rxrec">
       <BoundTo>f8a0344b-1399-4d36-8123-8d841a1e8778</BoundTo>
       <id>4ca55fde-5c21-4ffa-9a56-f2f0376b6265</id>
@@ -341,6 +374,11 @@
       <BoundTo>f8a0344b-1399-4d36-8123-8d841a1e8778</BoundTo>
       <id>6e49ec64-3885-478e-b1f3-a5e31b9dce41</id>
       <recordtableid>cdfc25a4-5a02-4121-b193-591189941286</recordtableid>
+    </None>
+    <None Include="Recordings\Zusammenfuehren_Teil_2_521_korrektur_Item.rxrec">
+      <BoundTo>f8a0344b-1399-4d36-8123-8d841a1e8778</BoundTo>
+      <id>993d46a5-41d2-4046-a2ff-fa5f3a8574c3</id>
+      <recordtableid>52930c54-19b0-4cf9-877f-c073de5ccf28</recordtableid>
     </None>
     <None Include="Recordings_Anlagenspiegel\Anlagenspiegel_erstellen.rxrec">
       <BoundTo>f8a0344b-1399-4d36-8123-8d841a1e8778</BoundTo>
