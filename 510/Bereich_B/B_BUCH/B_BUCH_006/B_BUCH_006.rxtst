@@ -33,20 +33,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="2f6bb2b4-b6fb-4371-8b3d-55cfc53cc7a5"
-			name="Host_lesen"
-			ref="49c7f21e-1f9e-488f-b817-d1324318154b"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="computer"
-					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
-					variableid="431f76e2-98f1-4d1e-a676-89f14051b5ad"
-					variablename="computer">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="3e9c3115-fc8c-48c0-9f42-17278bbdd94c"
 			name="StartAUT_2"
 			ref="32490652-4de1-439e-af48-ff014761ee89"
@@ -238,68 +224,6 @@
 			id="5c3e974b-6052-4d19-861a-d1b8d2ec21a3"
 			name="teardown">
 			</teardown>
-			<testmodule
-			id="64c56caa-156a-43a0-8357-61a8702555b0"
-			name="Validierung_B_BUAB_2"
-			ref="ad06e056-7e8c-4612-b825-6e525d64fa14"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="ER_Nr"
-					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
-					variableid="bd3dd3f0-98f7-494a-b120-e15ce3d44514"
-					variablename="ER_Nr">
-					</var>
-					<var
-					dataname="lieferant"
-					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
-					variableid="c87c35b2-d4f2-47f9-aea1-ed62d74afcd7"
-					variablename="lieferant">
-					</var>
-					<var
-					dataname="betrag"
-					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
-					variableid="abcc09f8-8a81-4f4c-ac96-ee6e8c4eeaef"
-					variablename="betrag">
-					</var>
-					<var
-					dataname="aufteilg_Cd"
-					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
-					variableid="d94fc908-9166-42d4-a8cb-0b84be498165"
-					variablename="aufteilg_Cd">
-					</var>
-					<var
-					dataname="konto"
-					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
-					variableid="e609e6ea-cf06-4e14-ae82-bd280e5ba363"
-					variablename="konto">
-					</var>
-					<var
-					dataname="betrag_Ust_Buab"
-					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
-					variableid="d7383930-6488-4319-be1b-245a1a487518"
-					variablename="betrag_Ust_Buab">
-					</var>
-					<var
-					dataname="Ust_Cd"
-					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
-					variableid="b295b5cb-4bd9-416b-b4be-d3c71395f775"
-					variablename="Ust_Cd">
-					</var>
-					<var
-					dataname="variable"
-					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
-					variableid="f922183c-0bed-4399-9218-ef576be0bf5c"
-					variablename="variable">
-					</var>
-					<var
-					dataname="gKonto_2"
-					datasourceid="4e80c994-15bd-4d44-8ba9-ea38300d53f4"
-					variableid="5b228910-e78d-4cb7-ad0b-1089e03392c7"
-					variablename="gKonto_2">
-					</var>
-				</databinding>
-			</testmodule>
 			<teardown
 			id="670c9a86-350b-44dc-b8fc-568431974538"
 			name="teardown">
@@ -430,31 +354,6 @@
 					</param>
 				</parameters>
 			</testcase>
-			<smartfoldernode
-			id="b38b5ace-f315-4416-9b8e-b3e4901f4b46"
-			name="510,511_gegenKonto">
-				<conditiongroup
-				comparison="AND"
-				enabled="True">
-					<condition
-					comparison="IsNotEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="computer"
-								id="4e80c994-15bd-4d44-8ba9-ea38300d53f4">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="SBG-RANOAGENT4">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
 			<testmodule
 			id="cb477fd4-087b-4d3d-8207-d03b947c3ce8"
 			name="CloseAUT_2"
@@ -491,31 +390,6 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
-			<smartfoldernode
-			id="e5528637-fdd5-4eb9-a5f8-593a817b4283"
-			name="521_gegenKonto_mit_*">
-				<conditiongroup
-				comparison="AND"
-				enabled="True">
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="computer"
-								id="4e80c994-15bd-4d44-8ba9-ea38300d53f4">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="SBG-RANOAGENT4">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
 			<testmodule
 			id="fd55fa29-836c-4f09-9046-0581d3a10ae3"
 			name="Validierung_Eingabe_2"
@@ -606,25 +480,9 @@
 							</testmodule>
 						</setup>
 						<testmodule
-						id="2f6bb2b4-b6fb-4371-8b3d-55cfc53cc7a5"
-						name="Host_lesen">
+						id="506800ed-41fa-4d75-b613-6fc298af97a0"
+						name="Validierung_B_BUAB">
 						</testmodule>
-						<smartfoldernode
-						id="b38b5ace-f315-4416-9b8e-b3e4901f4b46"
-						name="510,511_gegenKonto">
-							<testmodule
-							id="506800ed-41fa-4d75-b613-6fc298af97a0"
-							name="Validierung_B_BUAB">
-							</testmodule>
-						</smartfoldernode>
-						<smartfoldernode
-						id="e5528637-fdd5-4eb9-a5f8-593a817b4283"
-						name="521_gegenKonto_mit_*">
-							<testmodule
-							id="64c56caa-156a-43a0-8357-61a8702555b0"
-							name="Validierung_B_BUAB_2">
-							</testmodule>
-						</smartfoldernode>
 						<teardown
 						id="5c3e974b-6052-4d19-861a-d1b8d2ec21a3"
 						name="teardown">
@@ -652,12 +510,6 @@
 			</testcontainer>
 			<testcontainer
 			id="b1aa5434-6d43-45bb-9cf0-0f615509f6a1">
-			</testcontainer>
-			<testcontainer
-			id="b38b5ace-f315-4416-9b8e-b3e4901f4b46">
-			</testcontainer>
-			<testcontainer
-			id="e5528637-fdd5-4eb9-a5f8-593a817b4283">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

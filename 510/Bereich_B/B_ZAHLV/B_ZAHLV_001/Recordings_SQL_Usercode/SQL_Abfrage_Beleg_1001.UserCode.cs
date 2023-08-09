@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_BUCH_006.Recordings
+namespace B_ZAHLV_001.Recordings_SQL_Usercode
 {
-    public partial class Host_lesen
+    public partial class SQL_Abfrage_Beleg_1001
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

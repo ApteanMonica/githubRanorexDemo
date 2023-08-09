@@ -20,51 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_BUCH_006.Recordings
+namespace B_ZAHLV_001.SQL_Usercode
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Host_lesen recording.
+    ///The SQL_Abfrage_Beleg_1001 recording.
     /// </summary>
-    [TestModule("49c7f21e-1f9e-488f-b817-d1324318154b", ModuleType.Recording, 1)]
-    public partial class Host_lesen : ITestModule
+    [TestModule("9d4f59a9-9ef3-4f29-809b-8ca0da01da29", ModuleType.Recording, 1)]
+    public partial class SQL_Abfrage_Beleg_1001 : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_BUCH_006.B_BUCH_006Repository repository.
+        /// Holds an instance of the global::B_ZAHLV_001.B_ZAHLV_001Repository repository.
         /// </summary>
-        public static global::B_BUCH_006.B_BUCH_006Repository repo = global::B_BUCH_006.B_BUCH_006Repository.Instance;
+        public static global::B_ZAHLV_001.B_ZAHLV_001Repository repo = global::B_ZAHLV_001.B_ZAHLV_001Repository.Instance;
 
-        static Host_lesen instance = new Host_lesen();
+        static SQL_Abfrage_Beleg_1001 instance = new SQL_Abfrage_Beleg_1001();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Host_lesen()
+        public SQL_Abfrage_Beleg_1001()
         {
-            computer = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Host_lesen Instance
+        public static SQL_Abfrage_Beleg_1001 Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _computer;
-
-        /// <summary>
-        /// Gets or sets the value of variable computer.
-        /// </summary>
-        [TestVariable("431f76e2-98f1-4d1e-a676-89f14051b5ad")]
-        public string computer
-        {
-            get { return _computer; }
-            set { _computer = value; }
-        }
 
 #endregion
 
@@ -86,14 +73,12 @@ namespace B_BUCH_006.Recordings
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 0;
+            Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 20;
-            Delay.SpeedFactor = 0.00;
+            Delay.SpeedFactor = 1.00;
 
             Init();
 
-            computer = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetHost();
-            
         }
 
 #region Image Feature Data
