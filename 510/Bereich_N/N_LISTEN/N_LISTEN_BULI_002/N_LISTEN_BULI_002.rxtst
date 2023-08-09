@@ -3,9 +3,21 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
+			id="0c223a19-7eb6-4aff-8358-d7041c8a76c5"
+			name="Meldung"
+			ref="5785d1ab-c8b9-4bc7-bb11-d327d8265291"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="12abafa4-15d6-4fb2-ac58-3fe0efc4a663"
 			name="CloseAUT"
 			ref="e23ad14a-e984-4882-b34a-0786c430ce0d"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="1a069da7-a2ad-459e-a655-d4752c5bf13e"
+			name="nochmalige_Ueberleitung"
+			ref="e43fbcf2-7460-45da-b453-afa837393285"
 			type="Recording">
 			</testmodule>
 			<testsuite
@@ -32,10 +44,42 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<testmodule
+			id="40e701e9-ce90-46db-9ac0-f3e95c734bcf"
+			name="Ueberleitungsmeldung"
+			ref="5195d0c7-058d-4bb4-95ae-5c93717e1f7c"
+			type="Recording">
+			</testmodule>
 			<setup
 			id="44252202-9b27-4b8b-8bbb-ae36ab5a6707"
 			name="setup">
 			</setup>
+			<testmodule
+			id="571f26cf-37a4-499e-904d-fa6c28a4ff31"
+			name="Erfolgreich_Meldung"
+			ref="c4cf3c66-caea-45b9-8022-0cdf9a3b4bec"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="5be76c5a-6579-4812-bf2d-d1240214ad24"
+			name="StartAUT_02"
+			ref="4d010060-253e-4090-8a5b-64507568a5c8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="a99b9466-09dd-4d8c-9f08-1505d93cfe1f"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_02"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="3ea8ad14-4e01-4619-8f82-006890491c5c"
+					variablename="Programm_02">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="6fd4cfe5-64b7-4e37-b648-2af7379099bf"
 			name="StartAUT"
@@ -43,19 +87,23 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
-					variableid="29b5f720-533c-4d29-a995-5e154c159af2"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm_01"
 					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
 					variableid="5ecaca10-64c1-454b-981d-b07c1f337fd4"
 					variablename="Programm_01">
 					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="29b5f720-533c-4d29-a995-5e154c159af2"
+					variablename="Startfile">
+					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="72d6d036-4d8d-4098-9073-cd4c52da9c25"
+			name="teardown">
+			</teardown>
 			<testcase
 			id="88f5da10-6d3c-4184-8f91-793b775f0277"
 			name="TestCase">
@@ -63,6 +111,38 @@
 					<![CDATA[<p>Überleitung des monatlichen Afa-Betrags für die Anlage 0630 aus der Buchungsliste in die Schnittstelle. Überprüfung ob nochmalige Überleitung für selben Zeitraum möglich ist --&gt; Sollte nicht mögich sein und anschließend in N_STAMM wechseln um zu überprüfen ob ein Eintrag der Periode nach der monatlichen Überleitung stattgefunden hat. </p>]]>
 				</description>
 			</testcase>
+			<testmodule
+			id="961d3e9b-e0d0-4d30-923f-20df3a49f3a3"
+			name="CloseAUT_02"
+			ref="716cc69f-7519-4536-9ece-3f061ca1b5fe"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="975b9e6f-638a-47ca-918f-2869eab872d4"
+			name="Einschraenkung_ueberpruefen"
+			ref="a828c38c-5d45-4b42-9df6-ad4a3078ae96"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Monat_bis"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="f2fc2888-75c0-431c-a2df-1a777ae56f8d"
+					variablename="Monat_bis">
+					</var>
+					<var
+					dataname="Monat_von"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="4f16587d-f334-4d63-824b-56bececece2a"
+					variablename="Monat_von">
+					</var>
+					<var
+					dataname="GJ"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="c4eaf8ca-9871-41e9-af22-fc9c6c8d4525"
+					variablename="GJ">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="a1176db5-784e-4390-bcf9-eb9cb43208f4"
 			name="N_LISTEN_BULI_002"
@@ -80,7 +160,147 @@
 					name="Programm_02"
 					value="N_STAMM AUFRUFART=ANFI">
 					</param>
+					<param
+					name="GJ"
+					value="2022">
+					</param>
+					<param
+					name="Monat_von"
+					value="01.07.2022">
+					</param>
+					<param
+					name="Monat_bis"
+					value="31.07.2022">
+					</param>
+					<param
+					name="Belegnr"
+					value="BULI_002_01">
+					</param>
+					<param
+					name="Belegdatum"
+					value="31.07.2022">
+					</param>
+					<param
+					name="Ustcode"
+					value="V00">
+					</param>
+					<param
+					name="Ueberleitungsmonat"
+					value="7">
+					</param>
+					<param
+					name="Programm_2"
+					value="">
+					</param>
+					<param
+					name="Buchungsjahr"
+					value="2022">
+					</param>
 				</parameters>
+			</testcase>
+			<setup
+			id="a9425175-372a-45ee-96de-048eee0e4105"
+			name="setup">
+			</setup>
+			<testmodule
+			id="aaa93960-e4f2-4593-b232-c0b174b4cf8b"
+			name="Nicht_moeglich_Meldung"
+			ref="6c9e5d59-7f9a-4dc0-9287-0761b086bec3"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="b48a2c60-6ee6-491c-b02b-39497563331e"
+			name="Einschraenkung_Daten"
+			ref="80fb7873-1a2b-40ac-8742-3f8511c54a79"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="GJ"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="61bc8db5-7208-4cc6-a928-8e532a5a6e6e"
+					variablename="GJ">
+					</var>
+					<var
+					dataname="Monat_von"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="4f6abe4f-98ba-4c4c-8c58-4079496e838b"
+					variablename="Monat_von">
+					</var>
+					<var
+					dataname="Monat_bis"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="428a1aa8-493e-4f43-a40a-0a62f3ba230a"
+					variablename="Monat_bis">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="c18b6f41-5e59-4681-87a2-145dd0bed3a4"
+			name="Ueberpruefung_Ergebnis"
+			ref="1c0c17ea-0d18-43bd-89cd-e173d1819171"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="c4fd3efa-09ae-4692-bb47-99271db9ed4a"
+			name="Eintrag_N_STAMM"
+			ref="01b9c22b-a532-40fc-9f9b-6f3eacb2405f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Ueberleitungsmonat"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="26df3ad2-8124-4961-b9bb-8400a76ed0b9"
+					variablename="Ueberleitungsmonat">
+					</var>
+					<var
+					dataname="Buchungsjahr"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="772aadd9-85be-47ad-8095-60611f17599a"
+					variablename="Buchungsjahr">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="da16ed31-5bf9-49cd-b537-a5a90e339f85"
+			name="FIBU_Ueberleitung"
+			ref="b9b1fdfd-a396-45cf-a38e-d4f6af062db6"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="GJ"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="74238157-65ac-4373-a814-be3763c6187e"
+					variablename="GJ">
+					</var>
+					<var
+					dataname="Belegnr"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="bffe5474-4aa2-4e7f-b9e7-4afb9cbeeb6b"
+					variablename="Belegnr">
+					</var>
+					<var
+					dataname="Belegdatum"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="2d218043-72b9-45e0-8c0f-9f47b190e898"
+					variablename="Belegdatum">
+					</var>
+					<var
+					dataname="Ustcode"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="3b40c430-7d8e-43a4-8f0a-e95e14a21b8d"
+					variablename="Ustcode">
+					</var>
+					<var
+					dataname="Ueberleitungsmonat"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="df7f9bd5-9be5-4412-80ea-21002d8f6efe"
+					variablename="Ueberleitungsmonat">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="e00c906e-71e5-4444-bdcc-a6370b689971"
+			name="N_STAMM">
 			</testcase>
 			<teardown
 			id="fac932dd-6626-4c48-b859-3bd411f0687a"
@@ -105,12 +325,72 @@
 							name="StartAUT">
 							</testmodule>
 						</setup>
+						<testmodule
+						id="b48a2c60-6ee6-491c-b02b-39497563331e"
+						name="Einschraenkung_Daten">
+						</testmodule>
+						<testmodule
+						id="975b9e6f-638a-47ca-918f-2869eab872d4"
+						name="Einschraenkung_ueberpruefen">
+						</testmodule>
+						<testmodule
+						id="0c223a19-7eb6-4aff-8358-d7041c8a76c5"
+						name="Meldung">
+						</testmodule>
+						<testmodule
+						id="c18b6f41-5e59-4681-87a2-145dd0bed3a4"
+						name="Ueberpruefung_Ergebnis">
+						</testmodule>
+						<testmodule
+						id="da16ed31-5bf9-49cd-b537-a5a90e339f85"
+						name="FIBU_Ueberleitung">
+						</testmodule>
+						<testmodule
+						id="40e701e9-ce90-46db-9ac0-f3e95c734bcf"
+						name="Ueberleitungsmeldung">
+						</testmodule>
+						<testmodule
+						id="571f26cf-37a4-499e-904d-fa6c28a4ff31"
+						name="Erfolgreich_Meldung">
+						</testmodule>
+						<testmodule
+						id="1a069da7-a2ad-459e-a655-d4752c5bf13e"
+						name="nochmalige_Ueberleitung">
+						</testmodule>
+						<testmodule
+						id="aaa93960-e4f2-4593-b232-c0b174b4cf8b"
+						name="Nicht_moeglich_Meldung">
+						</testmodule>
 						<teardown
 						id="fac932dd-6626-4c48-b859-3bd411f0687a"
 						name="teardown">
 							<testmodule
 							id="12abafa4-15d6-4fb2-ac58-3fe0efc4a663"
 							name="CloseAUT">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="e00c906e-71e5-4444-bdcc-a6370b689971"
+					name="N_STAMM">
+						<setup
+						id="a9425175-372a-45ee-96de-048eee0e4105"
+						name="setup">
+							<testmodule
+							id="5be76c5a-6579-4812-bf2d-d1240214ad24"
+							name="StartAUT_02">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="c4fd3efa-09ae-4692-bb47-99271db9ed4a"
+						name="Eintrag_N_STAMM">
+						</testmodule>
+						<teardown
+						id="72d6d036-4d8d-4098-9073-cd4c52da9c25"
+						name="teardown">
+							<testmodule
+							id="961d3e9b-e0d0-4d30-923f-20df3a49f3a3"
+							name="CloseAUT_02">
 							</testmodule>
 						</teardown>
 					</testcase>
@@ -129,6 +409,9 @@
 			</testcontainer>
 			<testcontainer
 			id="a1176db5-784e-4390-bcf9-eb9cb43208f4">
+			</testcontainer>
+			<testcontainer
+			id="e00c906e-71e5-4444-bdcc-a6370b689971">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
