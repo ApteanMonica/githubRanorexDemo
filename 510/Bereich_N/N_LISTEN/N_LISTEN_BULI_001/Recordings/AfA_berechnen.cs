@@ -171,8 +171,8 @@ namespace N_LISTEN_BULI_001.Recordings
             repo.FrmBuchungsliste.PbOptionenTabelle.Click();
             
             // Wait for erhöht auf 3 Minuten
-            Report.Log(ReportLevel.Info, "Wait", "Wait for erhöht auf 3 Minuten\r\nWaiting 3m to exist. Associated repository item: 'FrmBuchungsliste.FlexGrid.ColTypRow1'", repo.FrmBuchungsliste.FlexGrid.ColTypRow1Info, new ActionTimeout(180000), new RecordItemIndex(13));
-            repo.FrmBuchungsliste.FlexGrid.ColTypRow1Info.WaitForExists(180000);
+            //Report.Log(ReportLevel.Info, "Wait", "Wait for erhöht auf 3 Minuten\r\nWaiting 3m to exist. Associated repository item: 'FrmBuchungsliste.FlexGrid.ColTypRow1'", repo.FrmBuchungsliste.FlexGrid.ColTypRow1Info, new ActionTimeout(180000), new RecordItemIndex(13));
+            //repo.FrmBuchungsliste.FlexGrid.ColTypRow1Info.WaitForExists(180000);
             
         }
 

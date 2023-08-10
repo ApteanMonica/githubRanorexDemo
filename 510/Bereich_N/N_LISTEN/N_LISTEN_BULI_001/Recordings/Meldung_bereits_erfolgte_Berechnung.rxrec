@@ -1990,15 +1990,14 @@ Nein	= Bereits vorhandene Buchungszeilen laden &#10;
 		waitaction="Exists"
 		waittimeout="120000ms">
 			<comment>
-				Umgehunslösung löschen nach Korrektur von Item
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="4ef2310f-95ef-4f86-82d8-972711528d49"
+			id="9c9f1d4c-9598-4eb9-9fd8-93359397ee0b"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='cdlgSqlFehler']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='frmBuchungsliste']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -2007,11 +2006,11 @@ Nein	= Bereits vorhandene Buchungszeilen laden &#10;
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="4835d00b-f702-486a-8f63-9dd636c6fdd9">
 			<comment>
-				Umgehunslösung löschen nach Korrektur von Item
+				Dieser SQL-Fehler trat nur auf der E521 der  SYSDB RANO_ENTW auf. Auf anderen DB war er bisher nicht nachvollziehbar. Schritte rauslöschen
 			</comment>
 			<bindings>
 			</bindings>
@@ -2411,12 +2410,12 @@ Falsche Syntax in der N&#228;he des AND-Schl&#252;sselworts.&#10;
 		<keysequenceitem
 		KeySequence="OK"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="74fd54cc-f487-4ffd-8c3c-e5f11d6d989b">
 			<comment>
-				Umgehunslösung löschen nach Korrektur von Item
+				Schritt rauslöschen
 			</comment>
 			<bindings>
 			</bindings>
@@ -2473,13 +2472,14 @@ Falsche Syntax in der N&#228;he des AND-Schl&#252;sselworts.&#10;
 		action="Press"
 		data="Return"
 		duration="100ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		scancode="0"
 		searchpropertyid="d3d4b941-32d3-4d4a-874c-f341e8ef8395"
 		setModifiers="True">
 			<comment>
+				Schritt rauslöschen
 			</comment>
 			<bindings>
 			</bindings>
