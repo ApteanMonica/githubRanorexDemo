@@ -49,6 +49,23 @@
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="7a47bbc7-7fdf-4fc7-bfe8-6d2f5a42d40b">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT3">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
 				</conditiongroup>
 			</smartfoldernode>
 			<testmodule
@@ -393,6 +410,23 @@
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="7a47bbc7-7fdf-4fc7-bfe8-6d2f5a42d40b">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT3">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
 				</conditiongroup>
 			</smartfoldernode>
 			<testcase
@@ -464,19 +498,19 @@
 						name="Meldung">
 						</testmodule>
 						<smartfoldernode
-						id="d833a20c-a58c-43dc-82c7-c407a04f9c50"
-						name="521">
-							<testmodule
-							id="a4071e80-b181-4342-95b5-13e288af4844"
-							name="Zusammenfuehren_Teil_2_521_korrektur_Item">
-							</testmodule>
-						</smartfoldernode>
-						<smartfoldernode
 						id="2c4444b0-14fc-4a67-ba54-9e20fcfb7b82"
 						name="510,511">
 							<testmodule
 							id="f6182a88-9b18-41d5-859c-1c6f0716e3cf"
 							name="Zusammenfuehren_Teil_2">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="d833a20c-a58c-43dc-82c7-c407a04f9c50"
+						name="521">
+							<testmodule
+							id="a4071e80-b181-4342-95b5-13e288af4844"
+							name="Zusammenfuehren_Teil_2_521_korrektur_Item">
 							</testmodule>
 						</smartfoldernode>
 						<testmodule
