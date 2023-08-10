@@ -24,22 +24,22 @@ namespace N_LISTEN_BULI_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The FIBU_Ueberleitung recording.
+    ///The FIBU_Ueberleitung_511 recording.
     /// </summary>
-    [TestModule("b9b1fdfd-a396-45cf-a38e-d4f6af062db6", ModuleType.Recording, 1)]
-    public partial class FIBU_Ueberleitung : ITestModule
+    [TestModule("d33db75f-391e-41e2-b194-eede88e4ac84", ModuleType.Recording, 1)]
+    public partial class FIBU_Ueberleitung_511 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository repo = global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository.Instance;
 
-        static FIBU_Ueberleitung instance = new FIBU_Ueberleitung();
+        static FIBU_Ueberleitung_511 instance = new FIBU_Ueberleitung_511();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public FIBU_Ueberleitung()
+        public FIBU_Ueberleitung_511()
         {
             Belegnr = "BULI_002_01";
             Belegdatum = "31.07.2022";
@@ -51,7 +51,7 @@ namespace N_LISTEN_BULI_002.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static FIBU_Ueberleitung Instance
+        public static FIBU_Ueberleitung_511 Instance
         {
             get { return instance; }
         }
@@ -63,7 +63,7 @@ namespace N_LISTEN_BULI_002.Recordings
         /// <summary>
         /// Gets or sets the value of variable Belegnr.
         /// </summary>
-        [TestVariable("bffe5474-4aa2-4e7f-b9e7-4afb9cbeeb6b")]
+        [TestVariable("5190a497-79fe-4e40-bd6d-940b852e899d")]
         public string Belegnr
         {
             get { return _Belegnr; }
@@ -75,7 +75,7 @@ namespace N_LISTEN_BULI_002.Recordings
         /// <summary>
         /// Gets or sets the value of variable Belegdatum.
         /// </summary>
-        [TestVariable("2d218043-72b9-45e0-8c0f-9f47b190e898")]
+        [TestVariable("6312569b-bfcf-441f-a090-ae29d53c53e0")]
         public string Belegdatum
         {
             get { return _Belegdatum; }
@@ -87,7 +87,7 @@ namespace N_LISTEN_BULI_002.Recordings
         /// <summary>
         /// Gets or sets the value of variable Ustcode.
         /// </summary>
-        [TestVariable("3b40c430-7d8e-43a4-8f0a-e95e14a21b8d")]
+        [TestVariable("3cc151bd-a67e-4ead-a331-e867aee66bca")]
         public string Ustcode
         {
             get { return _Ustcode; }
@@ -99,7 +99,7 @@ namespace N_LISTEN_BULI_002.Recordings
         /// <summary>
         /// Gets or sets the value of variable GJ.
         /// </summary>
-        [TestVariable("74238157-65ac-4373-a814-be3763c6187e")]
+        [TestVariable("bb58fa83-fbca-4c80-86e2-fdab8d854407")]
         public string GJ
         {
             get { return _GJ; }
@@ -111,7 +111,7 @@ namespace N_LISTEN_BULI_002.Recordings
         /// <summary>
         /// Gets or sets the value of variable Ueberleitungsmonat.
         /// </summary>
-        [TestVariable("df7f9bd5-9be5-4412-80ea-21002d8f6efe")]
+        [TestVariable("7152f0ea-95db-4937-96d7-e0ecff617260")]
         public string Ueberleitungsmonat
         {
             get { return _Ueberleitungsmonat; }

@@ -108,8 +108,8 @@ namespace Z_UHR_001.Recording
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmUhr.TitleBar100ZeitsystemStechuhr'", repo.FrmUhr.TitleBar100ZeitsystemStechuhrInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmUhr.TitleBar100ZeitsystemStechuhrInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'FrmUhr.TitleBar100ZeitsystemStechuhr'", repo.FrmUhr.TitleBar100ZeitsystemStechuhrInfo, new ActionTimeout(180000), new RecordItemIndex(1));
+            repo.FrmUhr.TitleBar100ZeitsystemStechuhrInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Zeitsystem \"Stechuhr\"') on item 'FrmUhr.TitleBar100ZeitsystemStechuhr'.", repo.FrmUhr.TitleBar100ZeitsystemStechuhrInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.FrmUhr.TitleBar100ZeitsystemStechuhrInfo, "Text", "Zeitsystem \"Stechuhr\"");

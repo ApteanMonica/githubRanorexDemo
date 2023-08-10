@@ -20,63 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Z_UHR_003.Recording
+namespace N_LISTEN_BULI_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The Einlesen_des_Ranoagent recording.
     /// </summary>
-    [TestModule("eb73b193-1b70-4b0f-85f6-3d3e80f6ebb9", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    [TestModule("7467c9ac-6746-4796-b102-7aed5bb2ea62", ModuleType.Recording, 1)]
+    public partial class Einlesen_des_Ranoagent : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::Z_UHR_003.Z_UHR_003Repository repository.
+        /// Holds an instance of the global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository repository.
         /// </summary>
-        public static global::Z_UHR_003.Z_UHR_003Repository repo = global::Z_UHR_003.Z_UHR_003Repository.Instance;
+        public static global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository repo = global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static Einlesen_des_Ranoagent instance = new Einlesen_des_Ranoagent();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public Einlesen_des_Ranoagent()
         {
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm = "Z_UHR";
+            Computername = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static Einlesen_des_Ranoagent Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Startfile;
+        string _Computername;
 
         /// <summary>
-        /// Gets or sets the value of variable Startfile.
+        /// Gets or sets the value of variable Computername.
         /// </summary>
-        [TestVariable("df010724-40d2-408a-a788-8ae3846fccd4")]
-        public string Startfile
+        [TestVariable("dcf1033e-dbba-4755-a618-527576c2d288")]
+        public string Computername
         {
-            get { return _Startfile; }
-            set { _Startfile = value; }
-        }
-
-        string _Programm;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm.
-        /// </summary>
-        [TestVariable("1c31df5e-34c1-4914-8944-a8f45bdea06c")]
-        public string Programm
-        {
-            get { return _Programm; }
-            set { _Programm = value; }
+            get { return _Computername; }
+            set { _Computername = value; }
         }
 
 #endregion
@@ -105,14 +92,9 @@ namespace Z_UHR_003.Recording
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm, "", false);
+            Computername = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetHost();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'FrmUhr.TitleBar100ZeitsystemStechuhr'", repo.FrmUhr.TitleBar100ZeitsystemStechuhrInfo, new ActionTimeout(180000), new RecordItemIndex(1));
-            repo.FrmUhr.TitleBar100ZeitsystemStechuhrInfo.WaitForExists(180000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Zeitsystem \"Stechuhr\"') on item 'FrmUhr.TitleBar100ZeitsystemStechuhr'.", repo.FrmUhr.TitleBar100ZeitsystemStechuhrInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmUhr.TitleBar100ZeitsystemStechuhrInfo, "Text", "Zeitsystem \"Stechuhr\"");
+            Report.Log(ReportLevel.Info, "User", Computername, new RecordItemIndex(1));
             
         }
 

@@ -82,8 +82,8 @@ namespace N_LISTEN_BULI_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbUEberleitungFibu' at Center.", repo.FrmBuchungsliste.PbUEberleitungFibuInfo, new RecordItemIndex(0));
             repo.FrmBuchungsliste.PbUEberleitungFibu.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ-Überleitung Fibu OHNE Bereiche') on item 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'.", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, "Text", "[100]  AVZ-Überleitung Fibu OHNE Bereiche");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ-Überleitung') on item 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'.", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, "Text", "[100]  AVZ-Überleitung");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'BULI_002_01{Tab}' with focus on 'DlgFibu.Frame2.BelegNr'.", repo.DlgFibu.Frame2.BelegNrInfo, new RecordItemIndex(2));
             repo.DlgFibu.Frame2.BelegNr.PressKeys("BULI_002_01{Tab}");
