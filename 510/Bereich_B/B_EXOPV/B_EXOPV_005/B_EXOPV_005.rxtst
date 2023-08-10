@@ -2,6 +2,65 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<smartfoldernode
+			id="049febd6-8aab-4bd7-a0e2-d9153e0e3cd8"
+			name="510,511">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT2">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT3">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="WSPET">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="080e79cc-6e46-4943-815d-9a1bdad97631"
 			name="B_EXOPS_Einschraenkung_B_EXOPV_005_neu_laden"
@@ -16,9 +75,51 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="095da108-3019-4627-aba2-f47e97f88667"
+			name="521">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT2">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT3">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="0a0cad2c-6fe5-4217-a36a-b4f4e75d5406"
-			name="Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen"
+			name="Pruefung_Pfad_Pruefen_aufrufen"
 			ref="1cfcac4c-78be-4e27-973f-e15e795219c1"
 			type="Recording">
 				<databinding>
@@ -38,7 +139,7 @@
 			</testmodule>
 			<testmodule
 			id="0cf89ac8-7411-48da-bb1d-1c521ccfe2d1"
-			name="Pruefung_dopp_Beleg_L_Dialoge"
+			name="Pruefung_Dialoge"
 			ref="358790d0-4e14-46fe-828e-be724e2022a1"
 			type="Recording">
 				<description>
@@ -59,6 +160,65 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="0fcca1f6-9fd6-478c-b4bb-a72af33089c5"
+			name="510,511">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT2">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT3">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="WSPET">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="17c6ae13-bb30-4564-8ea2-088fea244e61"
 			name="StartAUT"
@@ -207,7 +367,7 @@
 			ref="63ec443e-b1ab-4b2a-ad84-22f092dcee8e"
 			type="Recording">
 				<description>
-					<![CDATA[BUG 41465 - Fehlerprotokoll muss extra aufgerufen werden]]>
+					<![CDATA[BUG 41465 - Fehlerprotokoll muss extra aufgerufen werden, ab  521 SP12 behoben mit autom. Aufruf]]>
 				</description>
 				<databinding>
 					<var
@@ -222,15 +382,6 @@
 			id="5d172029-04da-494c-b842-c1b853424117"
 			name="setup">
 			</setup>
-			<testmodule
-			id="5f39b879-3474-45df-a310-02ffcd28f3f5"
-			name="Fehlerprotokoll_Verbuchung_pruefen"
-			ref="1bf2f54d-35a5-4bcb-92a7-854c26e69497"
-			type="Recording">
-				<description>
-					<![CDATA[CONTINUE ON FAIL - BUG 41465 - im Fehlerprotokoll fehlt der Beleg mit Status F (ER_03/FB02) exop_keybel 29, der mit "Übergehen" nicht verbucht wurde (in Schnittstelle korrekt mit F)]]>
-				</description>
-			</testmodule>
 			<testcase
 			id="6406e09a-057a-43fb-8800-e15265b29c87"
 			name="B_BUAB_Kontrolle_Buchungen_Belegnummern">
@@ -287,6 +438,65 @@
 			id="85a66b3d-8220-4cfc-a043-f495ba09ce5a"
 			name="teardown">
 			</teardown>
+			<smartfoldernode
+			id="8b17d980-993b-4896-a681-5422a9e52217"
+			name="510,511">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT2">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT3">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="WSPET">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="94cdba0a-630a-4c0a-81d3-1990eed05d65"
 			name="B_BUAB_Tagesdatum_Tagesdatum2_valdieren_Usercode"
@@ -353,6 +563,12 @@
 			id="963d145c-b7be-46e7-a362-e2b67c6ebbad"
 			name="Editor_schliessen"
 			ref="4de84d69-3e7f-4c45-a319-4781fe51045f"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="986b7462-c88d-4f76-86a9-6306e08af02c"
+			name="Fehlerprotokoll_Verbuchung_kontrollieren_ab_521_SP12"
+			ref="1bf2f54d-35a5-4bcb-92a7-854c26e69497"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -603,25 +819,7 @@
 					value="">
 					</param>
 					<param
-					name="Protokoll_Pruefung_510_511"
-					value="Exop: 0	Beleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 29, 
-Exop: 0	Beleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30, 
-Exop: 0	Beleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 31, 
-Exop: 0	Beleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 34, 
-Exop: 30	Beleg: ER04_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 32
-Exop: 32	Beleg: ER06_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30
-Exop: 28	Beleg: ER01_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
-Exop: 28	Beleg: ER01_B_EXOPV_005: Fremdbelegnr FB01_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
-Exop: 29	Beleg: ER03_B_EXOPV_005: Fremdbelegnr FB02_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
-Exop: 34	Beleg: ER03_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
-Exop: 34	Beleg: ER03_B_EXOPV_005: Fremdbelegnr FB03_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!">
-					</param>
-					<param
-					name="Protokoll_Pruefung_521"
-					value="Exop: 0&#9;Beleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 29, &#10;Exop: 0&#9;Beleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30, &#10;Exop: 0&#9;Beleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 31, &#10;Exop: 0&#9;Beleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 34, &#10;Exop: 30&#9;Beleg: ER04_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 32&#10;Exop: 32&#9;Beleg: ER06_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30&#10;Exop: 28&#9;Beleg: ER01_B_EXOPV_005: Doppelte Belegnummer! Dieser Satz wird mit Status >F&lt; als Fehler in der Schnittstelle gespeichert!&#10;Exop: 28&#9;Beleg: ER01_B_EXOPV_005: Doppelte Fremdbelegnummer: FB01_B_EXOPV_005! Dieser Satz wird mit Status >F&lt; als Fehler in der Schnittstelle gespeichert!&#10;Exop: 29&#9;Beleg: ER03_B_EXOPV_005: Doppelte Fremdbelegnummer: FB02_B_EXOPV_005! Dieser Satz wird mit Status >F&lt; als Fehler in der Schnittstelle gespeichert!&#10;Exop: 34&#9;Beleg: ER03_B_EXOPV_005: Doppelte Belegnummer! Dieser Satz wird mit Status >F&lt; als Fehler in der Schnittstelle gespeichert!&#10;Exop: 34&#9;Beleg: ER03_B_EXOPV_005: Doppelte Fremdbelegnummer: FB03_B_EXOPV_005! Dieser Satz wird mit Status >F&lt; als Fehler in der Schnittstelle gespeichert!">
-					</param>
-					<param
-					name="Protokoll_Pruefung_Inhalt"
+					name="Computername"
 					value="">
 					</param>
 				</parameters>
@@ -723,6 +921,15 @@ Exop: 34	Beleg: ER03_B_EXOPV_005: Fremdbelegnr FB03_B_EXOPV_005: Doppelte Belegn
 				</description>
 			</testmodule>
 			<testmodule
+			id="bc4a071e-3d96-4fd2-bb7d-412a4b75287f"
+			name="Fehlerprotokoll_Pruefung_kontrollieren_ab_521_SP12"
+			ref="7a5cb8fc-5689-4b12-8a7e-db1beabf090b"
+			type="Recording">
+				<description>
+					<![CDATA[tw erledigt BUG 37789 Aufbau Protokoll + Plausibilität Meldungen + Protokoll - geändert ab 521 SP12]]>
+				</description>
+			</testmodule>
+			<testmodule
 			id="be64b191-26b0-436d-a379-41d0577b8a72"
 			name="Fehlerprotokoll_Pruefung_aufrufen"
 			ref="e832eec0-459c-4f07-8dc5-3837792179c2"
@@ -738,37 +945,73 @@ Exop: 34	Beleg: ER03_B_EXOPV_005: Fremdbelegnr FB03_B_EXOPV_005: Doppelte Belegn
 			</testmodule>
 			<testmodule
 			id="bf00dd7a-2681-4ad5-ad3e-40f78dbb55cb"
-			name="Pruefung_dopp_Beleg_L_Protokoll_pruefen"
+			name="Fehlerprotokoll_Pruefung_kontrollieren_511_510_wird_korrigiert"
 			ref="52ae346e-0801-4a96-b82c-76aa59b69469"
 			type="Recording">
 				<description>
-					<![CDATA[CONTINUE ON FAIL tw erledigt BUG 37789 Aufbau Protokoll + Plausibilität Meldungen + Protokoll - geändert ab 521 SP12 Prüfung mit Regex-Oder]]>
+					<![CDATA[tw erledigt BUG 37789 Aufbau Protokoll + Plausibilität Meldungen + Protokoll - geändert ab 521 SP12]]>
 				</description>
-				<databinding>
-					<var
-					dataname="Protokoll_Pruefung_521"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="9de6d316-2059-4fbb-9d7a-099ea7c532aa"
-					variablename="Protokoll_Pruefung_521">
-					</var>
-					<var
-					dataname="Protokoll_Pruefung_510_511"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="b86711b1-099a-42e5-a8ab-bdcc1d8c3755"
-					variablename="Protokoll_Pruefung_510_511">
-					</var>
-					<var
-					dataname="Protokoll_Pruefung_Inhalt"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="57bcb87e-f6b2-4946-a102-3683ca9be644"
-					variablename="Protokoll_Pruefung_Inhalt">
-					</var>
-				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="c1699588-d955-4d76-9eb0-cd33276e1ef5"
+			name="521">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT2">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT3">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testcase
 			id="c9f22167-116d-46e5-b2fc-de0a7ff30c6e"
 			name="B_EXOPS_Kontrolle_und_Status_auf_N_zurücksetzen">
 			</testcase>
+			<testmodule
+			id="e69550a9-b97a-4aab-a4fb-d38fe1868e78"
+			name="Fehlerprotokoll_Verbuchung_kontrollieren_ab_511_510"
+			ref="660e6b58-ea30-4596-905b-b0f266e1c4cb"
+			type="Recording">
+				<missingdatabinding>
+					<var
+					dataname="Protokoll_Verbuchung_510_511"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="9c9a25f0-2486-4dfd-a382-f8218888ea3d"
+					variablename="Protokoll_Verbuchung_510_511">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<testmodule
 			id="e9f8b89f-9ccd-4003-a994-e49b44d5322e"
 			name="B_EXOPS_Status_nach_Pruefung_kontrollieren"
@@ -799,6 +1042,7 @@ Exop: 34	Beleg: ER03_B_EXOPV_005: Fremdbelegnr FB03_B_EXOPV_005: Doppelte Belegn
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="ebc4b947-323b-4036-b95a-47e715b21946"
 			name="B_BUAB_alte_Belege_pruefen"
 			ref="3d284781-66ee-414e-88ae-db1e0cf486af"
@@ -826,6 +1070,7 @@ Exop: 34	Beleg: ER03_B_EXOPV_005: Fremdbelegnr FB03_B_EXOPV_005: Doppelte Belegn
 				</description>
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="f410c931-5aeb-45c8-b553-01188914aa93"
 			name="B_EXOPS_Belegnummern_vor_Pruefung_kontrollieren"
 			ref="1a7d0a79-c1fb-4c03-ac7e-8692e9bf99f8"
@@ -956,20 +1201,32 @@ Exop: 34	Beleg: ER03_B_EXOPV_005: Fremdbelegnr FB03_B_EXOPV_005: Doppelte Belegn
 						</testmodule>
 						<testmodule
 						id="0a0cad2c-6fe5-4217-a36a-b4f4e75d5406"
-						name="Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen">
+						name="Pruefung_Pfad_Pruefen_aufrufen">
 						</testmodule>
 						<testmodule
 						id="0cf89ac8-7411-48da-bb1d-1c521ccfe2d1"
-						name="Pruefung_dopp_Beleg_L_Dialoge">
+						name="Pruefung_Dialoge">
 						</testmodule>
 						<testmodule
 						id="be64b191-26b0-436d-a379-41d0577b8a72"
 						name="Fehlerprotokoll_Pruefung_aufrufen">
 						</testmodule>
-						<testmodule
-						id="bf00dd7a-2681-4ad5-ad3e-40f78dbb55cb"
-						name="Pruefung_dopp_Beleg_L_Protokoll_pruefen">
-						</testmodule>
+						<smartfoldernode
+						id="049febd6-8aab-4bd7-a0e2-d9153e0e3cd8"
+						name="510,511">
+							<testmodule
+							id="bf00dd7a-2681-4ad5-ad3e-40f78dbb55cb"
+							name="Fehlerprotokoll_Pruefung_kontrollieren_511_510_wird_korrigiert">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="095da108-3019-4627-aba2-f47e97f88667"
+						name="521">
+							<testmodule
+							id="bc4a071e-3d96-4fd2-bb7d-412a4b75287f"
+							name="Fehlerprotokoll_Pruefung_kontrollieren_ab_521_SP12">
+							</testmodule>
+						</smartfoldernode>
 						<teardown
 						id="2b4a51f3-c56b-43c8-900f-f9c0ac9e1c68"
 						name="teardown">
@@ -1010,14 +1267,30 @@ Exop: 34	Beleg: ER03_B_EXOPV_005: Fremdbelegnr FB03_B_EXOPV_005: Doppelte Belegn
 						id="9b9512ab-a325-4053-b7ac-a9844c0eb031"
 						name="Verbuchung_Meldungen_verbucht_Fehler">
 						</testmodule>
-						<testmodule
-						id="4cd6b1bb-a584-4c87-a8a4-199e9c62e0be"
-						name="Fehlerprotokoll_Verbuchung_aufrufen">
-						</testmodule>
-						<testmodule
-						id="5f39b879-3474-45df-a310-02ffcd28f3f5"
-						name="Fehlerprotokoll_Verbuchung_pruefen">
-						</testmodule>
+						<smartfoldernode
+						id="8b17d980-993b-4896-a681-5422a9e52217"
+						name="510,511">
+							<testmodule
+							id="4cd6b1bb-a584-4c87-a8a4-199e9c62e0be"
+							name="Fehlerprotokoll_Verbuchung_aufrufen">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="0fcca1f6-9fd6-478c-b4bb-a72af33089c5"
+						name="510,511">
+							<testmodule
+							id="e69550a9-b97a-4aab-a4fb-d38fe1868e78"
+							name="Fehlerprotokoll_Verbuchung_kontrollieren_ab_511_510">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="c1699588-d955-4d76-9eb0-cd33276e1ef5"
+						name="521">
+							<testmodule
+							id="986b7462-c88d-4f76-86a9-6306e08af02c"
+							name="Fehlerprotokoll_Verbuchung_kontrollieren_ab_521_SP12">
+							</testmodule>
+						</smartfoldernode>
 						<teardown
 						id="85a66b3d-8220-4cfc-a043-f495ba09ce5a"
 						name="teardown">
@@ -1094,6 +1367,15 @@ Exop: 34	Beleg: ER03_B_EXOPV_005: Fremdbelegnr FB03_B_EXOPV_005: Doppelte Belegn
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="049febd6-8aab-4bd7-a0e2-d9153e0e3cd8">
+			</testcontainer>
+			<testcontainer
+			id="095da108-3019-4627-aba2-f47e97f88667">
+			</testcontainer>
+			<testcontainer
+			id="0fcca1f6-9fd6-478c-b4bb-a72af33089c5">
+			</testcontainer>
+			<testcontainer
 			id="36e8a639-b265-48ea-90bc-dd5a05738926">
 			</testcontainer>
 			<testcontainer
@@ -1109,7 +1391,13 @@ Exop: 34	Beleg: ER03_B_EXOPV_005: Fremdbelegnr FB03_B_EXOPV_005: Doppelte Belegn
 			id="7170d466-0f40-4267-8615-76aa983568a1">
 			</testcontainer>
 			<testcontainer
+			id="8b17d980-993b-4896-a681-5422a9e52217">
+			</testcontainer>
+			<testcontainer
 			id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
+			</testcontainer>
+			<testcontainer
+			id="c1699588-d955-4d76-9eb0-cd33276e1ef5">
 			</testcontainer>
 			<testcontainer
 			id="c9f22167-116d-46e5-b2fc-de0a7ff30c6e">

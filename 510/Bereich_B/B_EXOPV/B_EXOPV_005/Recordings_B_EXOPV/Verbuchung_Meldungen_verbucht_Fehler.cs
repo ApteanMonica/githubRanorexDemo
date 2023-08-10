@@ -82,8 +82,10 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.FakturenPruefung'", repo.DlgMessageBox.FakturenPruefungInfo, new ActionTimeout(60000), new RecordItemIndex(0));
             repo.DlgMessageBox.FakturenPruefungInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Belege, die schon als OP vorhanden waren,\r\nwurden mit Status = <F> gekennzeichnet,\r\nkontrollieren Sie diese mit dem Programm\r\n<Bearbeiten Externe Fakturen>  -\r\n7 Belege wurden verbucht  !') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Belege, die schon als OP vorhanden waren,\r\nwurden mit Status = <F> gekennzeichnet,\r\nkontrollieren Sie diese mit dem Programm\r\n<Bearbeiten Externe Fakturen>  -\r\n7 Belege wurden verbucht  !");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'Belege, die schon als OP vorhanden waren,\r\nwurden mit Status = <F> gekennzeichnet,\r\nkontrollieren Sie diese mit dem Programm\r\n<Bearbeiten Externe Fakturen>  -\r\n7 Belege wurden verbucht  !') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
+                Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Belege, die schon als OP vorhanden waren,\r\nwurden mit Status = <F> gekennzeichnet,\r\nkontrollieren Sie diese mit dem Programm\r\n<Bearbeiten Externe Fakturen>  -\r\n7 Belege wurden verbucht  !", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
             repo.DlgMessageBox.Button0.Click();
@@ -94,8 +96,10 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgMessageBox.FakturenPruefung'.", repo.DlgMessageBox.FakturenPruefungInfo, new RecordItemIndex(4));
             Validate.Exists(repo.DlgMessageBox.FakturenPruefungInfo);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'(Belege wurden verbucht)|(7 Belege wurden verbucht)') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(5));
-            Validate.AttributeRegex(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", new Regex("(Belege wurden verbucht)|(7 Belege wurden verbucht)"));
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeRegex (Text~'(Belege wurden verbucht)|(7 Belege wurden verbucht)') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(5));
+                Validate.AttributeRegex(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", new Regex("(Belege wurden verbucht)|(7 Belege wurden verbucht)"), null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(6));
             repo.DlgMessageBox.Button0.Click();

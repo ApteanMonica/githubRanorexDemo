@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_EXOPV_005.Recordings_B_EXOPV
 {
-    public partial class Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen
+    public partial class Fehlerprotokoll_Verbuchung_kontrollieren_ab_511_510
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -24,22 +24,22 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen recording.
+    ///The Pruefung_Pfad_Pruefen_aufrufen recording.
     /// </summary>
     [TestModule("1cfcac4c-78be-4e27-973f-e15e795219c1", ModuleType.Recording, 1)]
-    public partial class Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen : ITestModule
+    public partial class Pruefung_Pfad_Pruefen_aufrufen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_005.B_EXOPV_005Repository repository.
         /// </summary>
         public static global::B_EXOPV_005.B_EXOPV_005Repository repo = global::B_EXOPV_005.B_EXOPV_005Repository.Instance;
 
-        static Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen instance = new Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen();
+        static Pruefung_Pfad_Pruefen_aufrufen instance = new Pruefung_Pfad_Pruefen_aufrufen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen()
+        public Pruefung_Pfad_Pruefen_aufrufen()
         {
             Fehlerprotokoll_Pruefung = "c:\\temp\\Fehlerprotokoll_b_exopv_005_pruef.txt";
         }
@@ -47,7 +47,7 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen Instance
+        public static Pruefung_Pfad_Pruefen_aufrufen Instance
         {
             get { return instance; }
         }
