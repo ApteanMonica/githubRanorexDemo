@@ -9,7 +9,7 @@
 			ref="a1791f3c-05e9-4ad0-9df1-f20d260c50ee"
 			type="Recording">
 				<description>
-					<![CDATA[Beleg 1001 mit Buchungsdatum=$Tagesdatum laden]]>
+					<![CDATA[Beleg 1001]]>
 				</description>
 				<databinding>
 					<var
@@ -160,9 +160,6 @@
 			<smartfoldernode
 			id="1731a52b-d88e-483b-bf8c-b21dd4d9622d"
 			name="Kontrolle_Bereichsbuchungen_Button_Bereichsaufteilung">
-				<description>
-					<![CDATA[disabled (ursprüngliche Lösung Teilprüfung Bereichskontierung) Aufruf Maske Bereichsaufteilung; Zeilenvalidierung Bereichsbuchungen: ganze Zeilen]]>
-				</description>
 			</smartfoldernode>
 			<testmodule
 			enabled="False"
@@ -858,7 +855,7 @@ Datum,Buchungs-Nr)]]>
 			ref="a1791f3c-05e9-4ad0-9df1-f20d260c50ee"
 			type="Recording">
 				<description>
-					<![CDATA[Beleg 1001 mit Buchungsdatum=$Tagesdatum laden]]>
+					<![CDATA[Beleg 1001]]>
 				</description>
 				<databinding>
 					<var
@@ -951,7 +948,7 @@ Datum,Buchungs-Nr)]]>
 			ref="a1791f3c-05e9-4ad0-9df1-f20d260c50ee"
 			type="Recording">
 				<description>
-					<![CDATA[Beleg 1001 mit Buchungsdatum=$Tagesdatum laden]]>
+					<![CDATA[Beleg 1001]]>
 				</description>
 				<databinding>
 					<var
@@ -1211,19 +1208,19 @@ Datum,Buchungs-Nr)]]>
 					</param>
 					<param
 					name="output_file_select_b_busa_akt"
-					value="C:\Testdaten\Allgemein\UserCode\Files_B_ZAHLV_001\B_ZAHLV_001_B_BUSA_aktuell.txt">
+					value="C:\temp\B_ZAHLV_001_B_BUSA_aktuell.txt">
 					</param>
 					<param
 					name="output_file_select_b_busa_ref_1"
-					value="C:\Testdaten\Allgemein\UserCode\Files_B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz_1.txt">
+					value="C:\Testdaten\Allgemein\Sonstige\SQL_Files_B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz_1.txt">
 					</param>
 					<param
 					name="output_file_select_b_busa_ref_2"
-					value="C:\Testdaten\Allgemein\UserCode\Files_B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz_2.txt">
+					value="C:\Testdaten\Allgemein\Sonstige\SQL_Files_B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz_2.txt">
 					</param>
 					<param
 					name="output_file_select_b_busa_ref"
-					value="C:\Testdaten\Allgemein\UserCode\Files_B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz.txt">
+					value="C:\Testdaten\Allgemein\Sonstige\SQL_Files_B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz.txt">
 					</param>
 				</parameters>
 			</testcase>
@@ -1576,6 +1573,10 @@ Datum,Buchungs-Nr)]]>
 							name="OP_Tabelle_Einschraenkungen">
 							</testmodule>
 							<testmodule
+							id="4d2c1b84-9751-4115-b5f0-03a72cfe829b"
+							name="LF_303020_Saldo_Summen_pruefen">
+							</testmodule>
+							<testmodule
 							id="9be806a1-8c32-4292-bf09-6069715fd9b7"
 							name="LF_303020_Zeilen_Belege_pruefen">
 							</testmodule>
@@ -1594,10 +1595,6 @@ Datum,Buchungs-Nr)]]>
 							<testmodule
 							id="7a5e1fc3-1738-4f61-b63b-a800279625e3"
 							name="OP_Tabelle_Einschraenkungen">
-							</testmodule>
-							<testmodule
-							id="4d2c1b84-9751-4115-b5f0-03a72cfe829b"
-							name="LF_303020_Saldo_Summen_pruefen">
 							</testmodule>
 							<testmodule
 							id="d0002632-424c-409a-ab1a-c429a7843a3c"
@@ -1781,6 +1778,9 @@ Datum,Buchungs-Nr)]]>
 			id="5177c853-4461-4933-8cbd-6d4591513784">
 			</testcontainer>
 			<testcontainer
+			id="53ba31ae-4a04-48e8-acbe-a88298197076">
+			</testcontainer>
+			<testcontainer
 			id="6acbd35d-9bc2-4666-b75f-311afc719f52">
 			</testcontainer>
 			<testcontainer
@@ -1793,22 +1793,13 @@ Datum,Buchungs-Nr)]]>
 			id="7e762c45-695d-4a17-9d71-1810c8605950">
 			</testcontainer>
 			<testcontainer
-			id="8f830f0c-709a-4903-815b-6f00b6e901f0">
-			</testcontainer>
-			<testcontainer
 			id="af45a05f-151e-4e3c-9c02-b15a8bfdc904">
-			</testcontainer>
-			<testcontainer
-			id="b39ddb24-1cf1-47c9-998a-188d31c32c71">
 			</testcontainer>
 			<testcontainer
 			id="bad038b6-3551-47ff-8bc9-2f16a0e33db2">
 			</testcontainer>
 			<testcontainer
 			id="e65d82d9-6352-4961-98f9-9b57a9f5955f">
-			</testcontainer>
-			<testcontainer
-			id="eb79e375-746f-4c60-9372-eac32a7e40f4">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

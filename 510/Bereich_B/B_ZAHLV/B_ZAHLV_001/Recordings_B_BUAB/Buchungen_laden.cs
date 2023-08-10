@@ -124,37 +124,25 @@ namespace B_ZAHLV_001.Recordings_B_BUAB
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100BuchungenAnzeigen.Buchgdatum' at Center.", repo.Form100BuchungenAnzeigen.BuchgdatumInfo, new RecordItemIndex(3));
-            repo.Form100BuchungenAnzeigen.Buchgdatum.Click();
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum' with focus on 'Form100BuchungenAnzeigen.Buchgdatum'.", repo.Form100BuchungenAnzeigen.BuchgdatumInfo, new RecordItemIndex(4));
-            repo.Form100BuchungenAnzeigen.Buchgdatum.PressKeys(Tagesdatum);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100BuchungenAnzeigen.PbDataAccessLoad' at Center.", repo.Form100BuchungenAnzeigen.PbDataAccessLoadInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100BuchungenAnzeigen.PbDataAccessLoad' at Center.", repo.Form100BuchungenAnzeigen.PbDataAccessLoadInfo, new RecordItemIndex(3));
             repo.Form100BuchungenAnzeigen.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox'", repo.DlgMessageBox.SelfInfo, new ActionTimeout(120000), new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox'", repo.DlgMessageBox.SelfInfo, new ActionTimeout(120000), new RecordItemIndex(4));
             repo.DlgMessageBox.SelfInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Anzahl_OPs) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Anzahl_OPs) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(5));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", Anzahl_OPs);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='15 Buchungen gefunden.\r\n \r\nAnzeigen ? ') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='15 Buchungen gefunden.\r\n \r\nAnzeigen ? ') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "15 Buchungen gefunden.\r\n \r\nAnzeigen ? ");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(7));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_NR) on item 'Form100BuchungenAnzeigen.Beleg'.", repo.Form100BuchungenAnzeigen.BelegInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_NR) on item 'Form100BuchungenAnzeigen.Beleg'.", repo.Form100BuchungenAnzeigen.BelegInfo, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.Form100BuchungenAnzeigen.BelegInfo, "Text", Beleg_NR);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'Form100BuchungenAnzeigen.Buchgdatum'.", repo.Form100BuchungenAnzeigen.BuchgdatumInfo, new RecordItemIndex(12));
-            Validate.AttributeEqual(repo.Form100BuchungenAnzeigen.BuchgdatumInfo, "Text", Tagesdatum);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Form100BuchungenAnzeigen.Zeilen1_39_rows.Row1'", repo.Form100BuchungenAnzeigen.Zeilen1_39_rows.Row1Info, new ActionTimeout(120000), new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Form100BuchungenAnzeigen.Zeilen1_39_rows.Row1'", repo.Form100BuchungenAnzeigen.Zeilen1_39_rows.Row1Info, new ActionTimeout(120000), new RecordItemIndex(9));
             repo.Form100BuchungenAnzeigen.Zeilen1_39_rows.Row1Info.WaitForExists(120000);
             
         }
