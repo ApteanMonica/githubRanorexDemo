@@ -42,23 +42,6 @@
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Computername"
-								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="WSPET">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
 				</conditiongroup>
 			</smartfoldernode>
 			<testmodule
@@ -112,23 +95,6 @@
 						<rightvalue>
 							<simplevaluesource
 							value="SBG-RANOAGENT3">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Computername"
-								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="WSPET">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -214,23 +180,6 @@
 						<rightvalue>
 							<simplevaluesource
 							value="SBG-RANOAGENT3">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Computername"
-								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="WSPET">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -367,7 +316,7 @@
 			id="36e8a639-b265-48ea-90bc-dd5a05738926"
 			name="B_EXOPV_Pruefung_doppelte_Belegnummern">
 				<description>
-					<![CDATA[<p>Für Testwiederholung: mit b_buab NUR die Belege mit Buchungsdatum=Tagesdatum und %B_EXOPV_005% löschen (NICHT die bereits vorher vorhandenen; mit DB-Talk in B_EXOP die busa_keybel auf null setzen bei Herkunft B_EXOPV_005 und in dbtalk oder B_EXOPS den Status von Herkunft B_EXOPV_005 auf N zurückstellen (busa_keybel aus b_exop entfernen um die Meldungen zu vermeiden, dass bereits verbucht, obwohl&nbsp; mit b_buab gelöscht).</p><p>select exop_keybel, exop_status, busa_keybel, exop_belegnr, adr_nr from b_exop where firm_nr = '100' and exop_herkunft = 'B_EXOPV_005';</p><p>update b_exop set exop_status = 'N', busa_keybel = null where firm_nr = '100' and exop_herkunft = 'B_EXOPV_005';</p><p>und mit B_EXOPS bei Belegnr ER03_B_EXOPV_005_NEU und Fremdbelegnr FB03_B_EXOPV_005_NEU "_NEU" entfernen.<br></p><br>]]>
+					<![CDATA[<p>Für Testwiederholung: mit b_buab NUR die Belege mit Buchungsdatum=Tagesdatum und %B_EXOPV_005% löschen (NICHT die bereits vorher vorhandenen; mit DB-Talk in B_EXOP die busa_keybel auf null setzen bei Herkunft B_EXOPV_005 und in dbtalk oder B_EXOPS den Status von Herkunft B_EXOPV_005 auf N zurückstellen (busa_keybel aus b_exop entfernen um die Meldungen zu vermeiden, dass bereits verbucht, obwohl&nbsp; mit b_buab gelöscht) und mit B_EXOPS die Belegnummer und Fremdbelegnummer von Lieferant 303002 wieder auf ER03_B_EXOPV_005 und FB03_B_EXOPV_005 zurückändern.</p><p>select exop_keybel, exop_status, busa_keybel, exop_belegnr, adr_nr from b_exop where firm_nr = '100' and exop_herkunft = 'B_EXOPV_005';</p><p>update b_exop set exop_status = 'N', busa_keybel = null where firm_nr = '100' and exop_herkunft = 'B_EXOPV_005';</p><p>und mit B_EXOPS bei Belegnr ER03_B_EXOPV_005_NEU und Fremdbelegnr FB03_B_EXOPV_005_NEU "_NEU" entfernen.<br></p><br>]]>
 				</description>
 			</testcase>
 			<testcase
@@ -506,23 +455,6 @@
 						<rightvalue>
 							<simplevaluesource
 							value="SBG-RANOAGENT3">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Computername"
-								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="WSPET">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -1034,23 +966,6 @@
 						<rightvalue>
 							<simplevaluesource
 							value="SBG-RANOAGENT3">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsNotEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Computername"
-								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="WSPET">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
