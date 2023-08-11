@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="1bf2f54d-35a5-4bcb-92a7-854c26e69497"
+id="0d5d03d9-80e7-46ca-9c80-cc48b04743c6"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Fehlerprotokoll_Verbuchung_kontrollieren_ab_521_SP12"
+	classname="Fehlerprotokoll_Verbuchung_kontrollieren_510_511"
 	namespace="B_EXOPV_005.Recordings_B_EXOPV">
 	</codegen>
 	<variables>
@@ -48,31 +48,6 @@ mode="Global">
 			</matchname>
 			<matchvalue>
 				[100] Starte Verbuchung B_EXOPV_005
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeContains"
-		enabled="True"
-		optional="False"
-		searchpropertyid="375e389d-c404-4634-bd9f-67ed89c59105">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="ac8e93ef-39e2-41c3-bbd0-4ee6b455357e"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@title~'Editor']/text[@controlid='15']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				[100] Beende Verbuchung B_EXOPV_005
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -172,14 +147,64 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
+				[100] Beende Verbuchung B_EXOPV_005
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="False"
+		optional="False"
+		searchpropertyid="375e389d-c404-4634-bd9f-67ed89c59105">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ac8e93ef-39e2-41c3-bbd0-4ee6b455357e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
 				[100] Fehlerhafte Zeilen wurden mit Status &gt;F&lt; in Schnittstelle gespeichert
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="False"
+		optional="False"
+		searchpropertyid="375e389d-c404-4634-bd9f-67ed89c59105">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ac8e93ef-39e2-41c3-bbd0-4ee6b455357e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Exop: 29 Beleg: ER03_B_EXOPV_005
 			</matchvalue>
 		</validationitem>
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
 		optional="True"
-		searchpropertyid="784945da-fd57-4b01-86ec-02ec944cf3ec">
+		searchpropertyid="0a8d8ebf-1e3b-49e9-8dd4-a369384de78a">
 			<comment>
 			</comment>
 			<bindings>
@@ -204,7 +229,7 @@ mode="Global">
 		action="AttributeContains"
 		enabled="True"
 		optional="True"
-		searchpropertyid="784945da-fd57-4b01-86ec-02ec944cf3ec">
+		searchpropertyid="0a8d8ebf-1e3b-49e9-8dd4-a369384de78a">
 			<comment>
 			</comment>
 			<bindings>
@@ -229,7 +254,7 @@ mode="Global">
 		action="AttributeContains"
 		enabled="True"
 		optional="True"
-		searchpropertyid="784945da-fd57-4b01-86ec-02ec944cf3ec">
+		searchpropertyid="0a8d8ebf-1e3b-49e9-8dd4-a369384de78a">
 			<comment>
 			</comment>
 			<bindings>
@@ -254,7 +279,7 @@ mode="Global">
 		action="AttributeContains"
 		enabled="True"
 		optional="True"
-		searchpropertyid="784945da-fd57-4b01-86ec-02ec944cf3ec">
+		searchpropertyid="0a8d8ebf-1e3b-49e9-8dd4-a369384de78a">
 			<comment>
 			</comment>
 			<bindings>
@@ -279,7 +304,7 @@ mode="Global">
 		action="AttributeContains"
 		enabled="True"
 		optional="True"
-		searchpropertyid="784945da-fd57-4b01-86ec-02ec944cf3ec">
+		searchpropertyid="0a8d8ebf-1e3b-49e9-8dd4-a369384de78a">
 			<comment>
 			</comment>
 			<bindings>
@@ -304,7 +329,7 @@ mode="Global">
 		action="AttributeContains"
 		enabled="True"
 		optional="True"
-		searchpropertyid="784945da-fd57-4b01-86ec-02ec944cf3ec">
+		searchpropertyid="0a8d8ebf-1e3b-49e9-8dd4-a369384de78a">
 			<comment>
 			</comment>
 			<bindings>
@@ -325,55 +350,6 @@ mode="Global">
 				Exop: 30	Beleg: ER04_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 32
 			</matchvalue>
 		</validationitem>
-		<validationitem
-		action="AttributeContains"
-		enabled="True"
-		optional="True"
-		searchpropertyid="784945da-fd57-4b01-86ec-02ec944cf3ec">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="ac8e93ef-39e2-41c3-bbd0-4ee6b455357e"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@title~'Editor']/text[@controlid='15']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				Exop: 29	Beleg: ER03_B_EXOPV_005: Doppelte Fremdbelegnummer: FB02_B_EXOPV_005!
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeContains"
-		enabled="True"
-		optional="True"
-		searchpropertyid="784945da-fd57-4b01-86ec-02ec944cf3ec">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="ac8e93ef-39e2-41c3-bbd0-4ee6b455357e"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@title~'Editor']/text[@controlid='15']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-			</matchvalue>
-		</validationitem>
 	</recorditems>
 	<repository
 	id="5a4c68c8-710c-4738-ad0b-11d204b6b604"
@@ -390,7 +366,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Fehlerprotokoll_Verbuchung_kontrollieren_ab_521_SP12.UserCode.cs
+		Fehlerprotokoll_Verbuchung_kontrollieren_510_511.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
