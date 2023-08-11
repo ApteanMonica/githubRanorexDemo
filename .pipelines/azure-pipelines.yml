@@ -6,6 +6,11 @@ trigger:
   paths:
     include:
     - API_Automation_Cypress
+    exclude:
+    - .pipelines
+    - 510
+    - Hotfixtest
+    - URS_TST
 
 resources:
 - repo: self
