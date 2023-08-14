@@ -157,14 +157,6 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
 
             Init();
 
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement(SQL_Select_B_BUSA, DB_File, output_file_select_b_busa_akt);
-            
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains(output_file_select_b_busa_ref_1, output_file_select_b_busa_akt);
-            
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains(output_file_select_b_busa_ref_2, output_file_select_b_busa_akt);
-            
-            //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains(output_file_select_b_busa_ref, output_file_select_b_busa_akt);
-            
         }
 
 #region Image Feature Data

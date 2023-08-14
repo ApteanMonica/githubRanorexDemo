@@ -24,56 +24,46 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen recording.
+    ///The Einlesen_Ranoagent recording.
     /// </summary>
-    [TestModule("1cfcac4c-78be-4e27-973f-e15e795219c1", ModuleType.Recording, 1)]
-    public partial class Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen : ITestModule
+    [TestModule("9d9c8891-1cab-4f86-9ee5-997d632a9cc1", ModuleType.Recording, 1)]
+    public partial class Einlesen_Ranoagent : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_005.B_EXOPV_005Repository repository.
         /// </summary>
         public static global::B_EXOPV_005.B_EXOPV_005Repository repo = global::B_EXOPV_005.B_EXOPV_005Repository.Instance;
 
-        static Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen instance = new Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen();
+        static Einlesen_Ranoagent instance = new Einlesen_Ranoagent();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen()
+        public Einlesen_Ranoagent()
         {
-            Fehlerprotokoll_Pruefung = "c:\\temp\\Fehlerprotokoll_b_exopv_005_pruef.txt";
+            Computername = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Pruefung_dopp_Beleg_L_Pfad_Pruefen_aufrufen Instance
+        public static Einlesen_Ranoagent Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Fehlerprotokoll_Pruefung;
+        string _Computername;
 
         /// <summary>
-        /// Gets or sets the value of variable Fehlerprotokoll_Pruefung.
+        /// Gets or sets the value of variable Computername.
         /// </summary>
-        [TestVariable("12d7b065-2a01-4bfa-991e-6d21537a9d1b")]
-        public string Fehlerprotokoll_Pruefung
+        [TestVariable("e4152cbf-919e-43d0-80e6-7550949404b6")]
+        public string Computername
         {
-            get { return _Fehlerprotokoll_Pruefung; }
-            set { _Fehlerprotokoll_Pruefung = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Stapel_Herkunft.
-        /// </summary>
-        [TestVariable("80147ceb-e943-46c5-a7c1-f05b59ef1cce")]
-        public string Stapel_Herkunft
-        {
-            get { return repo.Stapel_Herkunft; }
-            set { repo.Stapel_Herkunft = value; }
+            get { return _Computername; }
+            set { _Computername = value; }
         }
 
 #endregion
@@ -102,14 +92,9 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_005.Column0_Stapel1' at Center.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_005.Column0_Stapel1Info, new RecordItemIndex(0));
-            repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen.Zeile_mit_Stapel_Herkunft_B_EXOPV_005.Column0_Stapel1.Click();
+            Computername = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetHost();
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$Fehlerprotokoll_Pruefung' on item 'Form100ExterneBuchungenVerbuchen.Text_Pfad_Pruefprotokoll'.", repo.Form100ExterneBuchungenVerbuchen.Text_Pfad_PruefprotokollInfo, new RecordItemIndex(1));
-            repo.Form100ExterneBuchungenVerbuchen.Text_Pfad_Pruefprotokoll.Element.SetAttributeValue("Text", Fehlerprotokoll_Pruefung);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100ExterneBuchungenVerbuchen.PbCommonPruefen' at Center.", repo.Form100ExterneBuchungenVerbuchen.PbCommonPruefenInfo, new RecordItemIndex(2));
-            repo.Form100ExterneBuchungenVerbuchen.PbCommonPruefen.Click();
+            Report.Log(ReportLevel.Info, "User", Computername, new RecordItemIndex(1));
             
         }
 
