@@ -711,6 +711,18 @@
       <id>578488fc-b51b-4369-b637-6cb8c6560a76</id>
       <BoundTo>3ea74278-ac19-4998-8f09-8f4417fc4d6c</BoundTo>
     </Compile>
+    <Compile Include="Recordings_SQL_Usercode\SQL_Abfrage_Beleg_1001.cs">
+      <BoundTo>c1741fd6-224a-4013-8fa4-475d63e72025</BoundTo>
+      <DependentUpon>SQL_Abfrage_Beleg_1001.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c96b4bf5-31aa-4bb4-8e9b-8d34860b1c9d</id>
+    </Compile>
+    <Compile Include="Recordings_SQL_Usercode\SQL_Abfrage_Beleg_1001.UserCode.cs">
+      <BoundTo>c1741fd6-224a-4013-8fa4-475d63e72025</BoundTo>
+      <DependentUpon>SQL_Abfrage_Beleg_1001.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0c4e1c15-6ea6-4aa2-9fe4-952d0bb52e54</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -967,6 +979,11 @@
       <id>3ea74278-ac19-4998-8f09-8f4417fc4d6c</id>
       <recordtableid>4c538d31-158a-4c60-90e8-37e5500277a9</recordtableid>
     </None>
+    <None Include="Recordings_SQL_Usercode\SQL_Abfrage_Beleg_1001.rxrec">
+      <BoundTo>9680b845-f217-4533-ba39-5927c30173e0</BoundTo>
+      <id>c1741fd6-224a-4013-8fa4-475d63e72025</id>
+      <recordtableid>9d4f59a9-9ef3-4f29-809b-8ca0da01da29</recordtableid>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="B_ZAHLV_001.rxtmg">
@@ -979,6 +996,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Recordings_SQL_Usercode">
+      <id>c2d8c65e-b5e0-4488-a8ca-b08982140f0f</id>
+    </Folder>
     <Folder Include="Recordings_B_KLAB">
       <id>7b1eef2d-6ebb-4431-81a9-371b9fda0f82</id>
     </Folder>

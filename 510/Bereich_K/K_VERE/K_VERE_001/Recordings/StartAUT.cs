@@ -108,11 +108,11 @@ namespace K_VERE_001.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblVerr.TitleBar100VerrechnungenErfassen'", repo.TblVerr.TitleBar100VerrechnungenErfassenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.TblVerr.TitleBar100VerrechnungenErfassenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblVerr_K_VERE.TitleBar100VerrechnungenErfassen'", repo.TblVerr_K_VERE.TitleBar100VerrechnungenErfassenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.TblVerr_K_VERE.TitleBar100VerrechnungenErfassenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Verrechnungen Erfassen') on item 'TblVerr.TitleBar100VerrechnungenErfassen'.", repo.TblVerr.TitleBar100VerrechnungenErfassenInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.TblVerr.TitleBar100VerrechnungenErfassenInfo, "Text", "Verrechnungen Erfassen");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Verrechnungen Erfassen') on item 'TblVerr_K_VERE.TitleBar100VerrechnungenErfassen'.", repo.TblVerr_K_VERE.TitleBar100VerrechnungenErfassenInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.TblVerr_K_VERE.TitleBar100VerrechnungenErfassenInfo, "Text", "Verrechnungen Erfassen");
             
         }
 

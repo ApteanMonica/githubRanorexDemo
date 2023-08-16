@@ -8,6 +8,10 @@ trigger:
   branches:
     include:
     - main
+  paths:
+    exclude:
+    - .pipelines
+    - API_Automation_Cypress
 
 pool:
   name: 'RS2SelfHosted'

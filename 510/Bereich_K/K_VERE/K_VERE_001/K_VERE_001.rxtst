@@ -2,24 +2,210 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testmodule
+			id="009ab5c2-6946-48a9-9414-79037918c12e"
+			name="Verr_Stamm_pruefen_untere_Tabelle_Default"
+			ref="ce0d9332-ea47-4f2f-b3cf-734b8e86e8c8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="KontoB"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="5ef6a63c-9554-4a08-88d7-887e4c5cf792"
+					variablename="KontoB">
+					</var>
+					<var
+					dataname="KontoE"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="47fb9c0d-1ae7-49f2-a2de-d0b647b4f828"
+					variablename="KontoE">
+					</var>
+					<var
+					dataname="Stufe_21"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="f116cb40-b508-4611-b07d-1df80b6e81cf"
+					variablename="Stufe_21">
+					</var>
+					<var
+					dataname="Stufe_20"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="e1805809-3a53-4c93-8ad0-966b206eb316"
+					variablename="Stufe_20">
+					</var>
+					<var
+					dataname="Art_SVE"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="52c0906d-3bd2-4ad6-a295-156f4477f557"
+					variablename="Art_SVE">
+					</var>
+					<var
+					dataname="Art_STS"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="1bfaeb57-dec0-4ea4-8085-aa037a130552"
+					variablename="Art_STS">
+					</var>
+				</databinding>
+			</testmodule>
+			<teardown
+			id="0795bd26-c29f-4a16-b28e-65ca18971417"
+			name="teardown">
+			</teardown>
+			<testcase
+			id="0f8883d7-5b17-4cbd-8aa1-81eced117eb5"
+			name="K_VEST_Verrechnungsstamm_pruefen">
+			</testcase>
 			<setup
 			id="1a0c51ba-8f22-4b79-ad6c-91e634b76bbc"
 			name="setup">
 			</setup>
 			<testmodule
-			enabled="False"
-			id="3874a79b-97ae-4416-9b69-9dd7a880487c"
-			name="Zeilen_pruefen"
-			ref="76b63d1c-39a0-4fcb-8e4a-860e66b82034"
+			id="1b66ac34-9982-4ce0-a2e8-8a1a15fa4f49"
+			name="Stufe_20_erfasste_Zeile_pruefen"
+			ref="20ebedd7-7bf8-457a-9f1e-d8314882620e"
 			type="Recording">
-				<description>
-					<![CDATA[ändern -kopiert von K_VERR]]>
-				</description>
+				<databinding>
+					<var
+					dataname="von_KST_10"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="a00186d1-19cb-447a-88de-9d10d8c1487b"
+					variablename="von_KST_10">
+					</var>
+					<var
+					dataname="Text_20"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="81ee63cd-8977-4b97-a1dc-f032ca1d151c"
+					variablename="Text_20">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="2051a663-3157-4dfd-b53f-146b9c407bf5"
+			name="CloseAUT"
+			ref="8ecc8629-d6c7-4bb3-be40-e15033b7261c"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="2670757c-717e-4895-a207-e1c47152e665"
+			name="K_VEST_Verrechnungsstamm_aendern_B">
+			</testcase>
+			<testcase
+			id="3be7f0a2-232b-4476-8ee4-760db2fbd291"
+			name="K_VEST_Verrechnungsstamm_aendern_A">
+			</testcase>
+			<testmodule
+			id="48c030d8-a9ad-4d0a-8d3f-3fe14bb95fe2"
+			name="Stufe_21_Einschraenkungen_laden"
+			ref="c006bf26-7724-42ee-859a-84861a6d4ee5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Stufe_21"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="b0b57ddb-5a94-4fbd-b0ed-0e1ca04016c4"
+					variablename="Stufe_21">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="4a209f00-a721-4cac-acff-45733faeb343"
-			name="TestCase">
+			name="Verrechnung_erfassen">
 			</testcase>
+			<testmodule
+			id="4b81f9bb-8df1-4656-af73-69f10b553e48"
+			name="Close_k_vest"
+			ref="5e244313-8219-455c-9a3d-bbb3d4272f74"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="4d367820-affe-4509-949c-31d80b800bb4"
+			name="Stufe_20_Werte_erfassen"
+			ref="ff9f24aa-a6fe-45c5-bae8-54c713008c4a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="von_KST_10"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="3307ff82-a8b5-4685-95ae-03dc8335b22b"
+					variablename="von_KST_10">
+					</var>
+					<var
+					dataname="Text_20"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="c7f12762-ec41-4605-b09b-e4f46d994007"
+					variablename="Text_20">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="5350e5d7-1a3e-4fae-9082-a6c75ab40bab"
+			name="Stufe_21_2_Werte_erfassen"
+			ref="2c957f45-31ff-491d-87b4-0a5a6cf34cf4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Text_21_2"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="12ff114a-8ec8-4571-a172-26c5f252b489"
+					variablename="Text_21_2">
+					</var>
+					<var
+					dataname="Menge2"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="c105c7b0-5040-4c35-a72b-b4b1a019c2dd"
+					variablename="Menge2">
+					</var>
+					<var
+					dataname="an_KST_80"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="d77fd0c5-86a3-4155-8f61-09f2a61a77c3"
+					variablename="an_KST_80">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="55e442dd-2ad4-4cd7-bdb8-2b77b56d8cd1"
+			name="Start_k_vest"
+			ref="1ca2a914-bf15-4a56-936d-1c37a85247df"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="ceadf026-7ca3-40e3-bfc1-5dc704a27eb2"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm2"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="25233ad1-4fc2-4e9e-9b03-1127710ebf90"
+					variablename="Programm2">
+					</var>
+				</databinding>
+			</testmodule>
+			<setup
+			id="564f0318-68f7-4307-8726-e075e5141351"
+			name="setup">
+			</setup>
+			<testmodule
+			id="650f5719-326a-432f-8249-efb6bbc4e6a1"
+			name="Verr_Stamm_pruefen_obere_Tabelle_Default"
+			ref="ce563591-e7af-4be1-8905-9d7b0e545e05"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Art_SVE"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="42c1a24d-d5a4-4316-99f1-33bb3084167e"
+					variablename="Art_SVE">
+					</var>
+					<var
+					dataname="Art_STS"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="c4cb0dc7-2376-442f-8b7f-44e597217330"
+					variablename="Art_STS">
+					</var>
+				</databinding>
+			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -45,18 +231,18 @@
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
-			id="6c076ceb-5be2-4cf4-916b-e887d4d2655c"
-			name="CloseAUT"
-			ref="8ecc8629-d6c7-4bb3-be40-e15033b7261c"
+			id="7e8daa8e-c6fe-4f46-81d7-297f8258ea3f"
+			name="Stufe_21_Einschraenkungen_laden"
+			ref="c006bf26-7724-42ee-859a-84861a6d4ee5"
 			type="Recording">
-				<missingdatabinding>
+				<databinding>
 					<var
-					dataname="AppProcessID"
+					dataname="Stufe_21"
 					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
-					variableid="7173f8fc-ca45-4a75-ba60-a376f30890a9"
-					variablename="CloseAutProcessIDVar">
+					variableid="b0b57ddb-5a94-4fbd-b0ed-0e1ca04016c4"
+					variablename="Stufe_21">
 					</var>
-				</missingdatabinding>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="7fd4480f-a1ad-4e22-b290-4852ada6e507"
@@ -72,6 +258,10 @@
 					value="K_VERE">
 					</param>
 					<param
+					name="Programm2"
+					value="K_VEST">
+					</param>
+					<param
 					name="Jahr"
 					value="2020">
 					</param>
@@ -80,11 +270,430 @@
 					value="1">
 					</param>
 					<param
-					name="Periode_MM"
-					value="01">
+					name="Periode_Jahr"
+					value="1.2020">
+					</param>
+					<param
+					name="Art_STS"
+					value="STS">
+					</param>
+					<param
+					name="Art_SVE"
+					value="SVE">
+					</param>
+					<param
+					name="Stufe_20"
+					value="20">
+					</param>
+					<param
+					name="Stufe_21"
+					value="21">
+					</param>
+					<param
+					name="KontoE"
+					value="E1000">
+					</param>
+					<param
+					name="KontoB"
+					value="B1000">
+					</param>
+					<param
+					name="von_KST_10"
+					value="10">
+					</param>
+					<param
+					name="an_KST_60"
+					value="60">
+					</param>
+					<param
+					name="an_KST_80"
+					value="80">
+					</param>
+					<param
+					name="Menge1"
+					value="150">
+					</param>
+					<param
+					name="Menge2"
+					value="100">
+					</param>
+					<param
+					name="Text_20"
+					value="Import Stundenerfassung">
+					</param>
+					<param
+					name="Text_21_1"
+					value="Verrechnung K_VERR_001 Menge 150 an KST 60">
+					</param>
+					<param
+					name="Text_21_2"
+					value="Verrechnung K_VERR_001 Menge 100 an KST 80">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="8405c4e9-d8c3-44ab-9719-b938a98bb8ec"
+			name="Stufe_21_1_Werte_erfassen"
+			ref="708a4a2c-124c-4346-8fde-fa8101f857c3"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="von_KST_10"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="b3ad94c2-55d0-46c2-b337-590345d7d096"
+					variablename="von_KST_10">
+					</var>
+					<var
+					dataname="an_KST_60"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="f322bb3d-5dfe-464c-a0c2-367194123d99"
+					variablename="an_KST_60">
+					</var>
+					<var
+					dataname="Menge1"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="d81dc558-9cbe-4a95-b399-a513d4e54b3b"
+					variablename="Menge1">
+					</var>
+					<var
+					dataname="Text_21_1"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="b863d388-367f-4179-aa65-e681eabf33f6"
+					variablename="Text_21_1">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="8646814e-5df3-437d-8172-5f4c7fd6c1a5"
+			name="Stufe_alle_Einschraenkungen_laden"
+			ref="c6f1cb6b-daa1-4842-9d31-b0e9aaca66c9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Periode"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="478bd8c7-12c4-4ecb-a84b-47f07d5bb3a5"
+					variablename="Periode">
+					</var>
+					<var
+					dataname="Jahr"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="5a5323f8-1ee3-4934-9983-bd5af05be488"
+					variablename="Jahr">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="873c9ec8-fb6f-40eb-ad53-e41398d91095"
+			name="Verrechnung_erfassen_Stufe_21_2_erfassen">
+			</testcase>
+			<testmodule
+			id="8852a50f-8f2f-4b69-acd3-11c9d4075106"
+			name="Stufe_21_1_erfasste_Zeile_pruefen"
+			ref="3858cb6d-7a38-4818-98a1-5c5c90c41053"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="von_KST_10"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="c3597dcc-31a0-4de3-b9ad-7d21bfbcb0e5"
+					variablename="von_KST_10">
+					</var>
+					<var
+					dataname="an_KST_60"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="a0e9a44a-b826-41c0-8d21-1ece20d6d586"
+					variablename="an_KST_60">
+					</var>
+					<var
+					dataname="Menge1"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="c91244ae-84c0-435a-9fba-992691225412"
+					variablename="Menge1">
+					</var>
+					<var
+					dataname="Text_21_1"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="7c8f6abc-e4dd-4baa-8b29-4656b3a6a008"
+					variablename="Text_21_1">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="8a9c2f10-7d9a-4e65-b3e8-09333a3036e4"
+			name="Stufe_alle_Zeilen_alle_pruefen"
+			ref="76b63d1c-39a0-4fcb-8e4a-860e66b82034"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Art_STS"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="9db1a8cf-3e54-433c-9ca7-dcb5935e5493"
+					variablename="Art_STS">
+					</var>
+					<var
+					dataname="Art_SVE"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="0f48e85b-8a5d-42ea-b68a-a8009453e43a"
+					variablename="Art_SVE">
+					</var>
+					<var
+					dataname="Stufe_20"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="544f724f-07b4-41f8-9988-790f55993737"
+					variablename="Stufe_20">
+					</var>
+					<var
+					dataname="Stufe_21"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="0123286a-ebfe-4203-a408-7f00ebb5c9ad"
+					variablename="Stufe_21">
+					</var>
+					<var
+					dataname="KontoE"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="8bb0425d-eae2-4c1e-9e71-3118472450b9"
+					variablename="KontoE">
+					</var>
+					<var
+					dataname="KontoB"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="297fca43-bb5e-48bf-a738-2dc0ef632bea"
+					variablename="KontoB">
+					</var>
+					<var
+					dataname="von_KST_10"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="546073be-e3f6-4b35-b34f-71418c6e27a4"
+					variablename="von_KST_10">
+					</var>
+					<var
+					dataname="an_KST_60"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="4b67043a-9c40-48e0-abb6-bc33ac22f4a6"
+					variablename="an_KST_60">
+					</var>
+					<var
+					dataname="an_KST_80"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="0f2f8962-cc53-490a-a43b-84a5c683bc47"
+					variablename="an_KST_80">
+					</var>
+					<var
+					dataname="Menge1"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="f144891d-56a1-4243-96c2-dcb2a82f6048"
+					variablename="Menge1">
+					</var>
+					<var
+					dataname="Menge2"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="0b3214aa-20b5-404c-92be-4f398d43bdbb"
+					variablename="Menge2">
+					</var>
+					<var
+					dataname="Text_20"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="8753ca92-7211-4ba7-89ad-78eb0526c3aa"
+					variablename="Text_20">
+					</var>
+					<var
+					dataname="Text_21_1"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="6cf87cc8-4cf3-4827-985c-3c7a98cad4a9"
+					variablename="Text_21_1">
+					</var>
+					<var
+					dataname="Text_21_2"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="585accb7-5614-45aa-8e10-4eca563edc8d"
+					variablename="Text_21_2">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="8d2dfa3d-f684-4889-9f2a-4aceb809544b"
+			name="Stufe_21_2_Einschraenkungen_pruefen"
+			ref="86501c0a-86e0-451d-b3e3-615eec86b4c8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="KontoB"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="6c9d09cb-025f-464c-a4df-0fafedb988ac"
+					variablename="KontoB">
+					</var>
+					<var
+					dataname="KontoE"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="02ff6659-f7b2-4e98-a2fd-745adf919b26"
+					variablename="KontoE">
+					</var>
+					<var
+					dataname="Stufe_21"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="e66c76de-9fd9-4b04-8b89-6fdcc035ce80"
+					variablename="Stufe_21">
+					</var>
+					<var
+					dataname="Art_SVE"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="2185dbbd-4ec8-4b0f-b440-75b53a7f2c93"
+					variablename="Art_SVE">
+					</var>
+					<var
+					dataname="Periode"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="dc81bf6c-23e4-441a-ad55-bb257dae1569"
+					variablename="Periode">
+					</var>
+					<var
+					dataname="Jahr"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="178b84ee-a9ad-4d60-98b8-0e6022f32a0b"
+					variablename="Jahr">
+					</var>
+					<var
+					dataname="von_KST_10"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="4b652e64-ed4b-449c-81c4-b5347c7237ee"
+					variablename="von_KST_10">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="8de70de8-db06-4cb9-975d-f9bbc09cc1b6"
+			name="Verr_Stamm_pruefen_untere_Tabelle_Default"
+			ref="ce0d9332-ea47-4f2f-b3cf-734b8e86e8c8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Art_STS"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="1bfaeb57-dec0-4ea4-8085-aa037a130552"
+					variablename="Art_STS">
+					</var>
+					<var
+					dataname="Art_SVE"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="52c0906d-3bd2-4ad6-a295-156f4477f557"
+					variablename="Art_SVE">
+					</var>
+					<var
+					dataname="Stufe_20"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="e1805809-3a53-4c93-8ad0-966b206eb316"
+					variablename="Stufe_20">
+					</var>
+					<var
+					dataname="Stufe_21"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="f116cb40-b508-4611-b07d-1df80b6e81cf"
+					variablename="Stufe_21">
+					</var>
+					<var
+					dataname="KontoE"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="47fb9c0d-1ae7-49f2-a2de-d0b647b4f828"
+					variablename="KontoE">
+					</var>
+					<var
+					dataname="KontoB"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="5ef6a63c-9554-4a08-88d7-887e4c5cf792"
+					variablename="KontoB">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="b1b7144f-b53f-4f1e-b620-7b3a602352e3"
+			name="Stufe_21_1_Einschraenkungen_pruefen"
+			ref="c3d7a671-afb6-4f9f-9f88-7a9bcd3591a7"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Jahr"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="83a251a0-6781-4bfb-949f-f80d44fab230"
+					variablename="Jahr">
+					</var>
+					<var
+					dataname="Periode"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="39a2815b-7fa4-4f70-8b8b-c042dfc215fb"
+					variablename="Periode">
+					</var>
+					<var
+					dataname="Art_SVE"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="ca4d254c-6c43-42e3-b5c4-2ef9bc96a5a4"
+					variablename="Art_SVE">
+					</var>
+					<var
+					dataname="Stufe_21"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="29f35697-92f9-4c55-a5e1-36b44510441b"
+					variablename="Stufe_21">
+					</var>
+					<var
+					dataname="KontoE"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="bf652d50-9b0f-4168-af7b-8b22f1a45853"
+					variablename="KontoE">
+					</var>
+					<var
+					dataname="KontoB"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="c95bc2ed-69c7-4670-852e-92e701fa1b1b"
+					variablename="KontoB">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			id="c1457c69-468c-48d2-b0c0-3dd1fe9f1a52"
+			name="Stufe_20_erfassen">
+			</smartfoldernode>
+			<testmodule
+			id="c85b39ec-06cc-4f2d-9c47-160b91832285"
+			name="Stufe_21_KST_von_eintragen"
+			ref="3aa5ebd3-c5ea-40f1-846c-743e2838fb2f"
+			type="Recording">
+				<description>
+					<![CDATA[Von-Kostenstelle 10 bei Stufe 21 in Verrechnungsstamm eintragen]]>
+				</description>
+				<databinding>
+					<var
+					dataname="Art_SVE"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="913e25cc-536f-4745-8098-3e9e704fb137"
+					variablename="Art_SVE">
+					</var>
+					<var
+					dataname="Stufe_21"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="7785a2c1-b5ae-4539-8b9b-43ea25f18aca"
+					variablename="Stufe_21">
+					</var>
+					<var
+					dataname="KontoE"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="8faf8428-fb8a-4b17-8fd9-bd1717b2e7cb"
+					variablename="KontoE">
+					</var>
+					<var
+					dataname="KontoB"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="aefeec38-5d3b-4304-af31-e0190d053996"
+					variablename="KontoB">
+					</var>
+					<var
+					dataname="von_KST_10"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="8159a067-3c6c-4d6d-96af-4db5308f652d"
+					variablename="von_KST_10">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="d3a317f3-f828-46dc-bf33-a1a2c3b1c559"
 			name="StartAUT"
@@ -114,14 +723,61 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			id="d3c6ffda-60ea-4b75-b6e7-23a1a1f178b2"
+			name="Stufe_21_1_Zeile_einfuegen_sichtbare_Spalten_pruefen"
+			ref="90b49328-9b75-4ff3-ba9b-e6aca1217777"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="d9c7ec29-3b7b-44cb-af49-aed7b64ecd13"
+			name="K_vest_Default_zuruecksetzen"
+			ref="cc0fa152-42c9-406e-a177-ba48756bc4f5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Art_SVE"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="9277141c-a592-4834-a4b1-5c8614a415ff"
+					variablename="Art_SVE">
+					</var>
+					<var
+					dataname="Stufe_21"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="aa3e6919-bb48-4371-8f4f-506a82c81911"
+					variablename="Stufe_21">
+					</var>
+					<var
+					dataname="KontoE"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="00a76133-1510-46cf-b536-896144319aa1"
+					variablename="KontoE">
+					</var>
+					<var
+					dataname="KontoB"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="b67776cb-2b33-4123-a355-ef8fa7110990"
+					variablename="KontoB">
+					</var>
+					<var
+					dataname="von_KST_10"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="f3cb2e41-1b80-49c3-8094-f0f7269a3fcb"
+					variablename="von_KST_10">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="df870f9f-3d8a-493d-ae66-e7d95e692860"
-			name="Einschraenkungen_laden"
+			name="Stufe_20_Einschraenkungen_laden"
 			ref="5aa2cc32-2742-49fa-80c3-5d024d96e3cc"
 			type="Recording">
-				<description>
-					<![CDATA[ändern - kopiert von K_VERR]]>
-				</description>
 				<databinding>
+					<var
+					dataname="Periode"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="fa444ddd-9a68-437f-a1b7-f79633475a9f"
+					variablename="Periode">
+					</var>
 					<var
 					dataname="Jahr"
 					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
@@ -129,17 +785,69 @@
 					variablename="Jahr">
 					</var>
 					<var
-					dataname="Periode"
+					dataname="Art_STS"
 					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
-					variableid="fa444ddd-9a68-437f-a1b7-f79633475a9f"
-					variablename="Periode">
+					variableid="29492eba-554d-41c6-8ec5-d3eb5ad7b31b"
+					variablename="Art_STS">
+					</var>
+					<var
+					dataname="Stufe_20"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="e09d1ec7-1dfd-46c2-b772-ca62ae7e332d"
+					variablename="Stufe_20">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="df9a0ab9-0d0e-40a7-806a-22f969188a8d"
+			name="Stufe_20_Zeile_einfuegen_sichtbare_Spalten_pruefen"
+			ref="42e7c1cb-c8b4-42b1-aa3d-72de2413574a"
+			type="Recording">
 			</testmodule>
 			<teardown
 			id="e3f4c787-8ad1-40e3-82b2-331bf30d2edc"
 			name="teardown">
 			</teardown>
+			<teardown
+			id="e60464e8-3806-4f5a-b2c8-4897fd7918f8"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="ef848053-ed91-4bb8-88a9-1b9cc197485e"
+			name="Stufe_21_2_Zeile_einfuegen_sichtbare_Spalten_pruefen"
+			ref="232ee0ad-5af9-4d96-af3c-121d05060f5c"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="f4f49df6-7ef7-4c15-9200-6416259e6346"
+			name="Stufe_21_2_erfasste_Zeile_pruefen"
+			ref="2141c09a-3ac2-4679-aee7-c367c437f9d2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Menge2"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="80e15189-aa63-4503-bfa6-111ac4cc3f49"
+					variablename="Menge2">
+					</var>
+					<var
+					dataname="Text_21_2"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="4739c7dc-8cd9-41c1-b6b6-fa6dda52a039"
+					variablename="Text_21_2">
+					</var>
+					<var
+					dataname="an_KST_80"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="a0084f46-8859-469f-b395-fd1162762787"
+					variablename="an_KST_80">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			id="f8616086-e45f-4454-a32b-7e8c5fdb3e63"
+			name="Stufe_21_1_erfassen">
+			</smartfoldernode>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -149,8 +857,28 @@
 				id="7fd4480f-a1ad-4e22-b290-4852ada6e507"
 				name="K_VERE_001">
 					<testcase
+					id="0f8883d7-5b17-4cbd-8aa1-81eced117eb5"
+					name="K_VEST_Verrechnungsstamm_pruefen">
+						<setup
+						id="564f0318-68f7-4307-8726-e075e5141351"
+						name="setup">
+							<testmodule
+							id="55e442dd-2ad4-4cd7-bdb8-2b77b56d8cd1"
+							name="Start_k_vest">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="650f5719-326a-432f-8249-efb6bbc4e6a1"
+						name="Verr_Stamm_pruefen_obere_Tabelle_Default">
+						</testmodule>
+						<testmodule
+						id="8de70de8-db06-4cb9-975d-f9bbc09cc1b6"
+						name="Verr_Stamm_pruefen_untere_Tabelle_Default">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="4a209f00-a721-4cac-acff-45733faeb343"
-					name="TestCase">
+					name="Verrechnung_erfassen">
 						<setup
 						id="1a0c51ba-8f22-4b79-ad6c-91e634b76bbc"
 						name="setup">
@@ -159,20 +887,120 @@
 							name="StartAUT">
 							</testmodule>
 						</setup>
-						<testmodule
-						id="df870f9f-3d8a-493d-ae66-e7d95e692860"
-						name="Einschraenkungen_laden">
-						</testmodule>
-						<testmodule
-						id="3874a79b-97ae-4416-9b69-9dd7a880487c"
-						name="Zeilen_pruefen">
-						</testmodule>
+						<smartfoldernode
+						id="c1457c69-468c-48d2-b0c0-3dd1fe9f1a52"
+						name="Stufe_20_erfassen">
+							<testmodule
+							id="df870f9f-3d8a-493d-ae66-e7d95e692860"
+							name="Stufe_20_Einschraenkungen_laden">
+							</testmodule>
+							<testmodule
+							id="df9a0ab9-0d0e-40a7-806a-22f969188a8d"
+							name="Stufe_20_Zeile_einfuegen_sichtbare_Spalten_pruefen">
+							</testmodule>
+							<testmodule
+							id="4d367820-affe-4509-949c-31d80b800bb4"
+							name="Stufe_20_Werte_erfassen">
+							</testmodule>
+							<testmodule
+							id="1b66ac34-9982-4ce0-a2e8-8a1a15fa4f49"
+							name="Stufe_20_erfasste_Zeile_pruefen">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="f8616086-e45f-4454-a32b-7e8c5fdb3e63"
+						name="Stufe_21_1_erfassen">
+							<testmodule
+							id="7e8daa8e-c6fe-4f46-81d7-297f8258ea3f"
+							name="Stufe_21_Einschraenkungen_laden">
+							</testmodule>
+							<testmodule
+							id="b1b7144f-b53f-4f1e-b620-7b3a602352e3"
+							name="Stufe_21_1_Einschraenkungen_pruefen">
+							</testmodule>
+							<testmodule
+							id="d3c6ffda-60ea-4b75-b6e7-23a1a1f178b2"
+							name="Stufe_21_1_Zeile_einfuegen_sichtbare_Spalten_pruefen">
+							</testmodule>
+							<testmodule
+							id="8405c4e9-d8c3-44ab-9719-b938a98bb8ec"
+							name="Stufe_21_1_Werte_erfassen">
+							</testmodule>
+							<testmodule
+							id="8852a50f-8f2f-4b69-acd3-11c9d4075106"
+							name="Stufe_21_1_erfasste_Zeile_pruefen">
+							</testmodule>
+						</smartfoldernode>
 						<teardown
 						id="e3f4c787-8ad1-40e3-82b2-331bf30d2edc"
 						name="teardown">
+						</teardown>
+					</testcase>
+					<testcase
+					id="3be7f0a2-232b-4476-8ee4-760db2fbd291"
+					name="K_VEST_Verrechnungsstamm_aendern_A">
+						<testmodule
+						id="009ab5c2-6946-48a9-9414-79037918c12e"
+						name="Verr_Stamm_pruefen_untere_Tabelle_Default">
+						</testmodule>
+						<testmodule
+						id="c85b39ec-06cc-4f2d-9c47-160b91832285"
+						name="Stufe_21_KST_von_eintragen">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="873c9ec8-fb6f-40eb-ad53-e41398d91095"
+					name="Verrechnung_erfassen_Stufe_21_2_erfassen">
+						<testmodule
+						id="48c030d8-a9ad-4d0a-8d3f-3fe14bb95fe2"
+						name="Stufe_21_Einschraenkungen_laden">
+						</testmodule>
+						<testmodule
+						id="8d2dfa3d-f684-4889-9f2a-4aceb809544b"
+						name="Stufe_21_2_Einschraenkungen_pruefen">
+						</testmodule>
+						<testmodule
+						id="ef848053-ed91-4bb8-88a9-1b9cc197485e"
+						name="Stufe_21_2_Zeile_einfuegen_sichtbare_Spalten_pruefen">
+						</testmodule>
+						<testmodule
+						id="5350e5d7-1a3e-4fae-9082-a6c75ab40bab"
+						name="Stufe_21_2_Werte_erfassen">
+						</testmodule>
+						<testmodule
+						id="f4f49df6-7ef7-4c15-9200-6416259e6346"
+						name="Stufe_21_2_erfasste_Zeile_pruefen">
+						</testmodule>
+						<testmodule
+						id="8646814e-5df3-437d-8172-5f4c7fd6c1a5"
+						name="Stufe_alle_Einschraenkungen_laden">
+						</testmodule>
+						<testmodule
+						id="8a9c2f10-7d9a-4e65-b3e8-09333a3036e4"
+						name="Stufe_alle_Zeilen_alle_pruefen">
+						</testmodule>
+						<teardown
+						id="0795bd26-c29f-4a16-b28e-65ca18971417"
+						name="teardown">
 							<testmodule
-							id="6c076ceb-5be2-4cf4-916b-e887d4d2655c"
+							id="2051a663-3157-4dfd-b53f-146b9c407bf5"
 							name="CloseAUT">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="2670757c-717e-4895-a207-e1c47152e665"
+					name="K_VEST_Verrechnungsstamm_aendern_B">
+						<teardown
+						id="e60464e8-3806-4f5a-b2c8-4897fd7918f8"
+						name="teardown">
+							<testmodule
+							id="d9c7ec29-3b7b-44cb-af49-aed7b64ecd13"
+							name="K_vest_Default_zuruecksetzen">
+							</testmodule>
+							<testmodule
+							id="4b81f9bb-8df1-4656-af73-69f10b553e48"
+							name="Close_k_vest">
 							</testmodule>
 						</teardown>
 					</testcase>
@@ -187,10 +1015,28 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="0f8883d7-5b17-4cbd-8aa1-81eced117eb5">
+			</testcontainer>
+			<testcontainer
+			id="2670757c-717e-4895-a207-e1c47152e665">
+			</testcontainer>
+			<testcontainer
+			id="3be7f0a2-232b-4476-8ee4-760db2fbd291">
+			</testcontainer>
+			<testcontainer
 			id="4a209f00-a721-4cac-acff-45733faeb343">
 			</testcontainer>
 			<testcontainer
 			id="7fd4480f-a1ad-4e22-b290-4852ada6e507">
+			</testcontainer>
+			<testcontainer
+			id="873c9ec8-fb6f-40eb-ad53-e41398d91095">
+			</testcontainer>
+			<testcontainer
+			id="c1457c69-468c-48d2-b0c0-3dd1fe9f1a52">
+			</testcontainer>
+			<testcontainer
+			id="f8616086-e45f-4454-a32b-7e8c5fdb3e63">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

@@ -3,6 +3,20 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
+			id="0369fcef-0ddc-4aa0-bda3-f277dd84c7ff"
+			name="Einlesen_Ranoagent"
+			ref="81e808b3-a2d3-45da-aee9-6db685e584cc"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Computername"
+					datasourceid="7a47bbc7-7fdf-4fc7-bfe8-6d2f5a42d40b"
+					variableid="bb45035f-f206-4842-80f2-25abf61c3a59"
+					variablename="Computername">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="1963b316-846c-4eb8-8f8e-2b30cdfd803b"
 			name="Umbuchung_Maske_2"
 			ref="bb177c96-7ab1-458f-8a27-5d4ec8c82419"
@@ -12,6 +26,31 @@
 			id="26f07307-c532-4a69-b203-cda9f812878c"
 			name="setup">
 			</setup>
+			<smartfoldernode
+			id="2c4444b0-14fc-4a67-ba54-9e20fcfb7b82"
+			name="510,511">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="7a47bbc7-7fdf-4fc7-bfe8-6d2f5a42d40b">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT4">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="2ff60877-16a2-4134-9a8a-464e5a1b179e"
 			name="Meldung_Umbuchung"
@@ -246,6 +285,10 @@
 					name="Bezeichnung_Anlage_07"
 					value="Anlage G">
 					</param>
+					<param
+					name="Computername"
+					value="">
+					</param>
 				</parameters>
 			</testcase>
 			<testsuite
@@ -283,6 +326,35 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="a4071e80-b181-4342-95b5-13e288af4844"
+			name="Zusammenfuehren_Teil_2_521_korrektur_Item"
+			ref="52930c54-19b0-4cf9-877f-c073de5ccf28"
+			type="Recording">
+				<description>
+					<![CDATA[Recording eingebaut da Korrektur des Items 37966 derweil nur in 521 eingepflegt wurde. in 510 und 511 erst mit nächstem Servicepack! Nachdem Korrektur in allen 3 Versionen enthalten IF-Conditions wieder entfernen sowie dieses Recording!]]>
+				</description>
+				<databinding>
+					<var
+					dataname="Anlage_D"
+					datasourceid="7a47bbc7-7fdf-4fc7-bfe8-6d2f5a42d40b"
+					variableid="082e518a-2cb0-4f8e-ab71-89430ffe17cd"
+					variablename="Anlage_D">
+					</var>
+					<var
+					dataname="Anlage_E"
+					datasourceid="7a47bbc7-7fdf-4fc7-bfe8-6d2f5a42d40b"
+					variableid="d0de048d-044e-44ed-8c12-b590ec38cc92"
+					variablename="Anlage_E">
+					</var>
+					<var
+					dataname="Anlage_F"
+					datasourceid="7a47bbc7-7fdf-4fc7-bfe8-6d2f5a42d40b"
+					variableid="09436c41-b3da-4c0f-81a4-ecc04d22f07a"
+					variablename="Anlage_F">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="aa42158a-b54c-4f0d-bd22-3fb4ef95f076"
 			name="CloseAUT"
 			ref="931876e6-c49c-4de2-aaa6-7c809f429347"
@@ -298,6 +370,31 @@
 			ref="412d000f-7064-4ede-b8ae-667916b8f8c7"
 			type="Recording">
 			</testmodule>
+			<smartfoldernode
+			id="d833a20c-a58c-43dc-82c7-c407a04f9c50"
+			name="521">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="7a47bbc7-7fdf-4fc7-bfe8-6d2f5a42d40b">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SGB-RANOAGENT4">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testcase
 			id="f5cfc447-40d8-43f8-a7e4-ce46775c9eb5"
 			name="TestCase">
@@ -307,6 +404,9 @@
 			name="Zusammenfuehren_Teil_2"
 			ref="cdfc25a4-5a02-4121-b193-591189941286"
 			type="Recording">
+				<description>
+					<![CDATA[Nachdem Korrektur des Tickets 37966 in 510 und 511 ebenfalls enthalten ist Schritte zur Umgehungslösung rauslöschen.]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Anlage_F"
@@ -352,6 +452,10 @@
 							</testmodule>
 						</setup>
 						<testmodule
+						id="0369fcef-0ddc-4aa0-bda3-f277dd84c7ff"
+						name="Einlesen_Ranoagent">
+						</testmodule>
+						<testmodule
 						id="72938b99-af87-411f-a54c-3720a4105e93"
 						name="Zusammenfuehren_Teil_1">
 						</testmodule>
@@ -359,10 +463,22 @@
 						id="46462de9-528f-45bf-bea3-017096784b56"
 						name="Meldung">
 						</testmodule>
-						<testmodule
-						id="f6182a88-9b18-41d5-859c-1c6f0716e3cf"
-						name="Zusammenfuehren_Teil_2">
-						</testmodule>
+						<smartfoldernode
+						id="2c4444b0-14fc-4a67-ba54-9e20fcfb7b82"
+						name="510,511">
+							<testmodule
+							id="f6182a88-9b18-41d5-859c-1c6f0716e3cf"
+							name="Zusammenfuehren_Teil_2">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="d833a20c-a58c-43dc-82c7-c407a04f9c50"
+						name="521">
+							<testmodule
+							id="a4071e80-b181-4342-95b5-13e288af4844"
+							name="Zusammenfuehren_Teil_2_521_korrektur_Item">
+							</testmodule>
+						</smartfoldernode>
 						<testmodule
 						id="77646bf1-c1ca-4e42-9c78-ed78af5b5ef3"
 						name="Ueberpruefung_Eingabe">
@@ -431,10 +547,16 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="2c4444b0-14fc-4a67-ba54-9e20fcfb7b82">
+			</testcontainer>
+			<testcontainer
 			id="7a47bbc7-7fdf-4fc7-bfe8-6d2f5a42d40b">
 			</testcontainer>
 			<testcontainer
 			id="7d480dbf-4ef8-4ca0-8745-ca7dd4314350">
+			</testcontainer>
+			<testcontainer
+			id="d833a20c-a58c-43dc-82c7-c407a04f9c50">
 			</testcontainer>
 			<testcontainer
 			id="f5cfc447-40d8-43f8-a7e4-ce46775c9eb5">

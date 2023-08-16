@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="2f77858c-624c-4a0f-a3ae-fe2d3cfd6f3b"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="k_ibufe_vor_Verrechnung_keine_Zeile_3"
+	namespace="K_VERR_001.Recordings_K_IBUFE">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Keine Zeile 3
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<validationitem
+		action="NotExists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="999b1fd1-3af3-48a8-8059-ff7db50effd3">
+			<comment>
+				search timeout reduziert
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="99f3a289-6905-4c79-8fff-326a05fb6ac5"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="fc679875-7512-4736-b294-47faf32c598f"
+	name="K_VERR_001Repository"
+	relativepath="..\K_VERR_001Repository.rxrep">
+		<codegen
+		classname="K_VERR_001Repository"
+		namespace="K_VERR_001">
+		</codegen>
+		<rootfolder
+		id="ee4245ca-104c-4e4c-b8a3-edd0e64afb95"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		k_ibufe_vor_Verrechnung_keine_Zeile_3.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

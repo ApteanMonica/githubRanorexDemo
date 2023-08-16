@@ -73,30 +73,36 @@ namespace Z_SUM_001.Recording
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 0;
+            Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 20;
-            Delay.SpeedFactor = 0.00;
+            Delay.SpeedFactor = 1.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgTimeCalc.RbNeuRechnen'.", repo.DlgTimeCalc.RbNeuRechnenInfo, new RecordItemIndex(0));
             Validate.AttributeEqual(repo.DlgTimeCalc.RbNeuRechnenInfo, "Checked", "True");
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgTimeCalc.RbPeriod'.", repo.DlgTimeCalc.RbPeriodInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.DlgTimeCalc.RbPeriodInfo, "Checked", "True");
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='01.02.2022') on item 'DlgTimeCalc.Text'.", repo.DlgTimeCalc.TextInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.DlgTimeCalc.TextInfo, "Text", "01.02.2022");
+            Delay.Milliseconds(0);
             
             // geändert von 28.02.2022 auf 06.02.2022
             Report.Log(ReportLevel.Info, "Validation", "geändert von 28.02.2022 auf 06.02.2022\r\nValidating AttributeEqual (Text='28.02.2022') on item 'DlgTimeCalc.Text1'.", repo.DlgTimeCalc.Text1Info, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.DlgTimeCalc.Text1Info, "Text", "28.02.2022");
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgTimeCalc.CbZk'.", repo.DlgTimeCalc.CbZkInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.DlgTimeCalc.CbZkInfo, "Checked", "True");
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgTimeCalc.PbExecute' at Center.", repo.DlgTimeCalc.PbExecuteInfo, new RecordItemIndex(5));
             repo.DlgTimeCalc.PbExecute.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 4m to exist. Associated repository item: 'DlgResult.TitleBar100ErgebnisDerZeitkontenA_Titelleiste_Meldung_521'", repo.DlgResult.TitleBar100ErgebnisDerZeitkontenA_Titelleiste_Meldung_521Info, new ActionTimeout(240000), new RecordItemIndex(6));
             repo.DlgResult.TitleBar100ErgebnisDerZeitkontenA_Titelleiste_Meldung_521Info.WaitForExists(240000);
@@ -104,6 +110,7 @@ namespace Z_SUM_001.Recording
             try {
                 Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'Berechnung wurde erfolgreich beendet!') on item 'DlgResult.Text'.", repo.DlgResult.TextInfo, new RecordItemIndex(7));
                 Validate.AttributeContains(repo.DlgResult.TextInfo, "Text", "Berechnung wurde erfolgreich beendet!", null, false);
+                Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
             
             // Zwischenschritte Fehleranalyse
@@ -111,83 +118,108 @@ namespace Z_SUM_001.Recording
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.ScMain.PbDetails' at Center.", repo.DlgResult.ScMain.PbDetailsInfo, new RecordItemIndex(9));
             repo.DlgResult.ScMain.PbDetails.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.Maximieren' at Center.", repo.DlgResult.MaximierenInfo, new RecordItemIndex(10));
             repo.DlgResult.Maximieren.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.ScMain.PbDetails1' at Center.", repo.DlgResult.ScMain.PbDetails1Info, new RecordItemIndex(11));
             repo.DlgResult.ScMain.PbDetails1.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.PbBack' at Center.", repo.DlgResult.PbBackInfo, new RecordItemIndex(12));
             repo.DlgResult.PbBack.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.ScMain.PbDetails2' at Center.", repo.DlgResult.ScMain.PbDetails2Info, new RecordItemIndex(13));
             repo.DlgResult.ScMain.PbDetails2.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.PbBack' at Center.", repo.DlgResult.PbBackInfo, new RecordItemIndex(14));
             repo.DlgResult.PbBack.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.ScMain.PbDetails3' at Center.", repo.DlgResult.ScMain.PbDetails3Info, new RecordItemIndex(15));
             repo.DlgResult.ScMain.PbDetails3.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.PbBack' at Center.", repo.DlgResult.PbBackInfo, new RecordItemIndex(16));
             repo.DlgResult.PbBack.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.ScMain.PbDetails4' at Center.", repo.DlgResult.ScMain.PbDetails4Info, new RecordItemIndex(17));
             repo.DlgResult.ScMain.PbDetails4.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.PbBack' at Center.", repo.DlgResult.PbBackInfo, new RecordItemIndex(18));
             repo.DlgResult.PbBack.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.ScMain.PbDetails5' at Center.", repo.DlgResult.ScMain.PbDetails5Info, new RecordItemIndex(19));
             repo.DlgResult.ScMain.PbDetails5.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.PbBack' at Center.", repo.DlgResult.PbBackInfo, new RecordItemIndex(20));
             repo.DlgResult.PbBack.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.ScMain.PbDetails6' at Center.", repo.DlgResult.ScMain.PbDetails6Info, new RecordItemIndex(21));
             repo.DlgResult.ScMain.PbDetails6.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.PbBack' at Center.", repo.DlgResult.PbBackInfo, new RecordItemIndex(22));
             repo.DlgResult.PbBack.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.ScMain.PbDetails7' at Center.", repo.DlgResult.ScMain.PbDetails7Info, new RecordItemIndex(23));
             repo.DlgResult.ScMain.PbDetails7.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.PbBack' at Center.", repo.DlgResult.PbBackInfo, new RecordItemIndex(24));
             repo.DlgResult.PbBack.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.ScMain.PbDetails8' at Center.", repo.DlgResult.ScMain.PbDetails8Info, new RecordItemIndex(25));
             repo.DlgResult.ScMain.PbDetails8.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.PbBack' at Center.", repo.DlgResult.PbBackInfo, new RecordItemIndex(26));
             repo.DlgResult.PbBack.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.ScMain.PbDetails9' at Center.", repo.DlgResult.ScMain.PbDetails9Info, new RecordItemIndex(27));
             repo.DlgResult.ScMain.PbDetails9.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.PbBack' at Center.", repo.DlgResult.PbBackInfo, new RecordItemIndex(28));
             repo.DlgResult.PbBack.Click();
+            Delay.Milliseconds(0);
             
             // zwischenschritte nach kompletter Fehlermeldung wieder löschen
             Report.Log(ReportLevel.Info, "Keyboard", "zwischenschritte nach kompletter Fehlermeldung wieder löschen\r\nKey 'Alt+F4' Press.", new RecordItemIndex(29));
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Delay.Milliseconds(0);
             
             // Ende Zwischenschritte Fehleranalyse
             Report.Log(ReportLevel.Info, "Section", "Ende Zwischenschritte Fehleranalyse", new RecordItemIndex(30));
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.PbOk' at Center.", repo.DlgResult.PbOkInfo, new RecordItemIndex(31));
             //repo.DlgResult.PbOk.Click();
+            //Delay.Milliseconds(0);
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgResult.PbOk' at Center.", repo.DlgResult.PbOkInfo, new RecordItemIndex(32));
             //repo.DlgResult.PbOk.Click();
+            //Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgTimeCalc.TitleBar100Berechnung'.", repo.DlgTimeCalc.TitleBar100BerechnungInfo, new RecordItemIndex(33));
             Keyboard.PrepareFocus(repo.DlgTimeCalc.TitleBar100Berechnung);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.PbDataAccessLaden' at Center.", repo.FrmMain.PbDataAccessLadenInfo, new RecordItemIndex(34));
             repo.FrmMain.PbDataAccessLaden.Click();
+            Delay.Milliseconds(0);
             
         }
 

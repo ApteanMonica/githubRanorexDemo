@@ -73,48 +73,59 @@ namespace Z_SUM_001.Recording
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 0;
+            Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 20;
-            Delay.SpeedFactor = 0.00;
+            Delay.SpeedFactor = 1.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.PbTimeCalc_Rechnen_Button_521' at LowerCenter.", repo.FrmMain.PbTimeCalc_Rechnen_Button_521Info, new RecordItemIndex(0));
             repo.FrmMain.PbTimeCalc_Rechnen_Button_521.Click(Location.LowerCenter);
+            Delay.Milliseconds(0);
             
             //Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'ZSUM.ErweitertesRechnen_521_511_text'.", repo.ZSUM.ErweitertesRechnen_521_511_textInfo, new RecordItemIndex(1));
             //Validate.Exists(repo.ZSUM.ErweitertesRechnen_521_511_textInfo);
+            //Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ZSUM.ErweitertesRechnen_521_511_text' at Center.", repo.ZSUM.ErweitertesRechnen_521_511_textInfo, new RecordItemIndex(2));
             repo.ZSUM.ErweitertesRechnen_521_511_text.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgTimeCalc.TitleBar100Berechnung'", repo.DlgTimeCalc.TitleBar100BerechnungInfo, new ActionTimeout(120000), new RecordItemIndex(3));
             repo.DlgTimeCalc.TitleBar100BerechnungInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Berechnung') on item 'DlgTimeCalc.TitleBar100Berechnung'.", repo.DlgTimeCalc.TitleBar100BerechnungInfo, new RecordItemIndex(4));
             Validate.AttributeContains(repo.DlgTimeCalc.TitleBar100BerechnungInfo, "Text", "Berechnung");
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgTimeCalc.RbNeuRechnen' at Center.", repo.DlgTimeCalc.RbNeuRechnenInfo, new RecordItemIndex(5));
             repo.DlgTimeCalc.RbNeuRechnen.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgTimeCalc.RbPeriod' at Center.", repo.DlgTimeCalc.RbPeriodInfo, new RecordItemIndex(6));
             repo.DlgTimeCalc.RbPeriod.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgTimeCalc.Text' at Center.", repo.DlgTimeCalc.TextInfo, new RecordItemIndex(7));
             repo.DlgTimeCalc.Text.DoubleClick();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '01.02.2022' with focus on 'DlgTimeCalc.DfPeriodFrom'.", repo.DlgTimeCalc.DfPeriodFromInfo, new RecordItemIndex(8));
             repo.DlgTimeCalc.DfPeriodFrom.PressKeys("01.02.2022");
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Delay.Milliseconds(0);
             
             // zurück geändert von 06.02.2022 auf 28.02.2022
             Report.Log(ReportLevel.Info, "Keyboard", "zurück geändert von 06.02.2022 auf 28.02.2022\r\nKey sequence '28.02.2022' with focus on 'DlgTimeCalc.DfPeriodTo'.", repo.DlgTimeCalc.DfPeriodToInfo, new RecordItemIndex(10));
             repo.DlgTimeCalc.DfPeriodTo.PressKeys("28.02.2022");
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgTimeCalc.CbZk1_511_521' at Center.", repo.DlgTimeCalc.CbZk1_511_521Info, new RecordItemIndex(11));
             repo.DlgTimeCalc.CbZk1_511_521.Click();
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "User", "", new RecordItemIndex(12));
             

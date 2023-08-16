@@ -42,7 +42,7 @@ namespace K_VERR_001.Recordings_K_IBUFE
         public k_ibufe_Einschraenkungen_laden()
         {
             Jahr = "2020";
-            Periode = "2";
+            Periode = "6";
         }
 
         /// <summary>
@@ -108,8 +108,8 @@ namespace K_VERR_001.Recordings_K_IBUFE
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'TblIbufe.ToolBar.Planvariante'.", repo.TblIbufe.ToolBar.PlanvarianteInfo, new RecordItemIndex(0));
             Validate.AttributeEqual(repo.TblIbufe.ToolBar.PlanvarianteInfo, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(1));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblIbufe.ToolBar.Jahr_von' at Center.", repo.TblIbufe.ToolBar.Jahr_vonInfo, new RecordItemIndex(1));
+            repo.TblIbufe.ToolBar.Jahr_von.Click();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'TblIbufe.ToolBar.Jahr_von'.", repo.TblIbufe.ToolBar.Jahr_vonInfo, new RecordItemIndex(2));
             repo.TblIbufe.ToolBar.Jahr_von.PressKeys(Jahr);
@@ -135,28 +135,25 @@ namespace K_VERR_001.Recordings_K_IBUFE
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblIbufe.ToolBar.Kostenstellen_von' at Center.", repo.TblIbufe.ToolBar.Kostenstellen_vonInfo, new RecordItemIndex(10));
-            repo.TblIbufe.ToolBar.Kostenstellen_von.Click();
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'TblIbufe.ToolBar.Planvariante'.", repo.TblIbufe.ToolBar.PlanvarianteInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'TblIbufe.ToolBar.Planvariante'.", repo.TblIbufe.ToolBar.PlanvarianteInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.TblIbufe.ToolBar.PlanvarianteInfo, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'TblIbufe.ToolBar.Jahr_von'.", repo.TblIbufe.ToolBar.Jahr_vonInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'TblIbufe.ToolBar.Jahr_von'.", repo.TblIbufe.ToolBar.Jahr_vonInfo, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.TblIbufe.ToolBar.Jahr_vonInfo, "Text", Jahr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'TblIbufe.ToolBar.Jahr_bis'.", repo.TblIbufe.ToolBar.Jahr_bisInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'TblIbufe.ToolBar.Jahr_bis'.", repo.TblIbufe.ToolBar.Jahr_bisInfo, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.TblIbufe.ToolBar.Jahr_bisInfo, "Text", Jahr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode) on item 'TblIbufe.ToolBar.Periode_von'.", repo.TblIbufe.ToolBar.Periode_vonInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode) on item 'TblIbufe.ToolBar.Periode_von'.", repo.TblIbufe.ToolBar.Periode_vonInfo, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.TblIbufe.ToolBar.Periode_vonInfo, "Text", Periode);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode) on item 'TblIbufe.ToolBar.Periode_bis'.", repo.TblIbufe.ToolBar.Periode_bisInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode) on item 'TblIbufe.ToolBar.Periode_bis'.", repo.TblIbufe.ToolBar.Periode_bisInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.TblIbufe.ToolBar.Periode_bisInfo, "Text", Periode);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblIbufe.PbDataAccessLaden' at Center.", repo.TblIbufe.PbDataAccessLadenInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblIbufe.PbDataAccessLaden' at Center.", repo.TblIbufe.PbDataAccessLadenInfo, new RecordItemIndex(15));
             repo.TblIbufe.PbDataAccessLaden.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblIbufe.Row1'", repo.TblIbufe.Row1Info, new ActionTimeout(60000), new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblIbufe.Row1'", repo.TblIbufe.Row1Info, new ActionTimeout(60000), new RecordItemIndex(16));
             repo.TblIbufe.Row1Info.WaitForExists(60000);
             
         }

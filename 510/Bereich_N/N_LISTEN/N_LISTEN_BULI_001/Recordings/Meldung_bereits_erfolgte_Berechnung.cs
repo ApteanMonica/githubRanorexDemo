@@ -88,21 +88,8 @@ namespace N_LISTEN_BULI_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
             repo.DlgMessageBox.Button0.Click();
             
-            // Umgehunslösung löschen nach Korrektur von Item
-            Report.Log(ReportLevel.Info, "Wait", "Umgehunslösung löschen nach Korrektur von Item\r\nWaiting 2m to exist. Associated repository item: 'CdlgSqlFehler.SQLFehler'", repo.CdlgSqlFehler.SQLFehlerInfo, new ActionTimeout(120000), new RecordItemIndex(3));
-            repo.CdlgSqlFehler.SQLFehlerInfo.WaitForExists(120000);
-            
-            // Umgehunslösung löschen nach Korrektur von Item
-            Report.Log(ReportLevel.Info, "Validation", "Umgehunslösung löschen nach Korrektur von Item\r\nValidating AttributeEqual (Text='SQL Fehler: 156 - Falsche Syntax in der Nähe des AND-Schlüsselworts.\r\n\r\nFehlerPosition: 7 () - <CN=chGlobal>\r\n\r\nFalsche Syntax in der Nähe des AND-Schlüsselworts.\r\n') on item 'CdlgSqlFehler.Text'.", repo.CdlgSqlFehler.TextInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.CdlgSqlFehler.TextInfo, "Text", "SQL Fehler: 156 - Falsche Syntax in der Nähe des AND-Schlüsselworts.\r\n\r\nFehlerPosition: 7 () - <CN=chGlobal>\r\n\r\nFalsche Syntax in der Nähe des AND-Schlüsselworts.\r\n");
-            
-            // Umgehunslösung löschen nach Korrektur von Item
-            Report.Log(ReportLevel.Info, "Keyboard", "Umgehunslösung löschen nach Korrektur von Item\r\nKey sequence 'OK' with focus on 'CdlgSqlFehler.SQLFehler'.", repo.CdlgSqlFehler.SQLFehlerInfo, new RecordItemIndex(5));
-            repo.CdlgSqlFehler.SQLFehler.PressKeys("OK");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press with focus on 'CdlgSqlFehler.SQLFehler'.", repo.CdlgSqlFehler.SQLFehlerInfo, new RecordItemIndex(6));
-            Keyboard.PrepareFocus(repo.CdlgSqlFehler.SQLFehler);
-            Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungs'", repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo, new ActionTimeout(120000), new RecordItemIndex(3));
+            repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo.WaitForExists(120000);
             
         }
 
