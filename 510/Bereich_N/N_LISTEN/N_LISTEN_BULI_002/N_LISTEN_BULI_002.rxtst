@@ -9,44 +9,6 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="1282d758-21c3-4b5f-b6f1-c12ebc96133f"
-			name="FIBU_Ueberleitung_511"
-			ref="d33db75f-391e-41e2-b194-eede88e4ac84"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="GJ"
-					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
-					variableid="bb58fa83-fbca-4c80-86e2-fdab8d854407"
-					variablename="GJ">
-					</var>
-					<var
-					dataname="Belegnr"
-					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
-					variableid="5190a497-79fe-4e40-bd6d-940b852e899d"
-					variablename="Belegnr">
-					</var>
-					<var
-					dataname="Belegdatum"
-					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
-					variableid="6312569b-bfcf-441f-a090-ae29d53c53e0"
-					variablename="Belegdatum">
-					</var>
-					<var
-					dataname="Ustcode"
-					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
-					variableid="3cc151bd-a67e-4ead-a331-e867aee66bca"
-					variablename="Ustcode">
-					</var>
-					<var
-					dataname="Ueberleitungsmonat"
-					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
-					variableid="7152f0ea-95db-4937-96d7-e0ecff617260"
-					variablename="Ueberleitungsmonat">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="12abafa4-15d6-4fb2-ac58-3fe0efc4a663"
 			name="CloseAUT"
 			ref="e23ad14a-e984-4882-b34a-0786c430ce0d"
@@ -181,31 +143,6 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<smartfoldernode
-			id="a09b42f8-516e-419e-8c8d-5f9dc9140d79"
-			name="511">
-				<conditiongroup
-				comparison="AND"
-				enabled="True">
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Computername"
-								id="a1176db5-784e-4390-bcf9-eb9cb43208f4">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="SBG-RANOAGENT3">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
 			<testcase
 			id="a1176db5-784e-4390-bcf9-eb9cb43208f4"
 			name="N_LISTEN_BULI_002"
@@ -265,10 +202,6 @@
 					</param>
 				</parameters>
 			</testcase>
-			<smartfoldernode
-			id="a11ef85c-9127-4d25-9c75-926fb6cb3b1b"
-			name="510,521">
-			</smartfoldernode>
 			<setup
 			id="a9425175-372a-45ee-96de-048eee0e4105"
 			name="setup">
@@ -450,18 +383,6 @@
 						id="aaa93960-e4f2-4593-b232-c0b174b4cf8b"
 						name="Nicht_moeglich_Meldung">
 						</testmodule>
-						<smartfoldernode
-						id="a09b42f8-516e-419e-8c8d-5f9dc9140d79"
-						name="511">
-							<testmodule
-							id="1282d758-21c3-4b5f-b6f1-c12ebc96133f"
-							name="FIBU_Ueberleitung_511">
-							</testmodule>
-						</smartfoldernode>
-						<smartfoldernode
-						id="a11ef85c-9127-4d25-9c75-926fb6cb3b1b"
-						name="510,521">
-						</smartfoldernode>
 						<teardown
 						id="fac932dd-6626-4c48-b859-3bd411f0687a"
 						name="teardown">
@@ -509,13 +430,7 @@
 			id="88f5da10-6d3c-4184-8f91-793b775f0277">
 			</testcontainer>
 			<testcontainer
-			id="a09b42f8-516e-419e-8c8d-5f9dc9140d79">
-			</testcontainer>
-			<testcontainer
 			id="a1176db5-784e-4390-bcf9-eb9cb43208f4">
-			</testcontainer>
-			<testcontainer
-			id="a11ef85c-9127-4d25-9c75-926fb6cb3b1b">
 			</testcontainer>
 			<testcontainer
 			id="e00c906e-71e5-4444-bdcc-a6370b689971">
