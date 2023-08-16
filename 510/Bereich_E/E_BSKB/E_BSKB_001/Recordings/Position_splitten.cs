@@ -109,30 +109,30 @@ namespace E_BSKB_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBskb.PbExtrasSplitten' at Center.", repo.TblBskb.PbExtrasSplittenInfo, new RecordItemIndex(1));
             repo.TblBskb.PbExtrasSplitten.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgSplittenBsp.TblSBsp.ColSBspBestaetigtRow1' at Center.", repo.DlgSplittenBsp.TblSBsp.ColSBspBestaetigtRow1Info, new RecordItemIndex(2));
-            repo.DlgSplittenBsp.TblSBsp.ColSBspBestaetigtRow1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ColBspBestaetigtRow1' at Center.", repo.ColBspBestaetigtRow1Info, new RecordItemIndex(2));
+            repo.ColBspBestaetigtRow1.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgSplittenBsp.TblSBsp.ColSBspBestaetigtRow1' at Center.", repo.DlgSplittenBsp.TblSBsp.ColSBspBestaetigtRow1Info, new RecordItemIndex(3));
-            repo.DlgSplittenBsp.TblSBsp.ColSBspBestaetigtRow1.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ColBspBestaetigtRow1' at Center.", repo.ColBspBestaetigtRow1Info, new RecordItemIndex(3));
+            repo.ColBspBestaetigtRow1.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Menge31' with focus on 'DlgSplittenBsp.TblSBsp.ColSBspBestaetigtRow1'.", repo.DlgSplittenBsp.TblSBsp.ColSBspBestaetigtRow1Info, new RecordItemIndex(4));
-            repo.DlgSplittenBsp.TblSBsp.ColSBspBestaetigtRow1.PressKeys(Menge31);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Menge31' with focus on 'ColBspBestaetigtRow1'.", repo.ColBspBestaetigtRow1Info, new RecordItemIndex(4));
+            repo.ColBspBestaetigtRow1.PressKeys(Menge31);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'DlgSplittenBsp.TblSBsp.ColSBspBestaetigtRow1'.", repo.DlgSplittenBsp.TblSBsp.ColSBspBestaetigtRow1Info, new RecordItemIndex(5));
-            repo.DlgSplittenBsp.TblSBsp.ColSBspBestaetigtRow1.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'ColBspBestaetigtRow1'.", repo.ColBspBestaetigtRow1Info, new RecordItemIndex(5));
+            repo.ColBspBestaetigtRow1.EnsureVisible();
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Insert}' with focus on 'DlgSplittenBsp.TblSBsp.ColSBspBestaetigtRow1'.", repo.DlgSplittenBsp.TblSBsp.ColSBspBestaetigtRow1Info, new RecordItemIndex(6));
-            repo.DlgSplittenBsp.TblSBsp.ColSBspBestaetigtRow1.PressKeys("{Insert}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Insert}' with focus on 'ColBspBestaetigtRow1'.", repo.ColBspBestaetigtRow1Info, new RecordItemIndex(6));
+            repo.ColBspBestaetigtRow1.PressKeys("{Insert}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgSplittenBsp.TblSBsp.ColSBspDtbstgRow2' at Center.", repo.DlgSplittenBsp.TblSBsp.ColSBspDtbstgRow2Info, new RecordItemIndex(7));
-            repo.DlgSplittenBsp.TblSBsp.ColSBspDtbstgRow2.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ColBspDtbstgRow2' at Center.", repo.ColBspDtbstgRow2Info, new RecordItemIndex(7));
+            repo.ColBspDtbstgRow2.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{PageDown}' with focus on 'DlgSplittenBsp.TblSBsp.ColSBspDtbstgRow2'.", repo.DlgSplittenBsp.TblSBsp.ColSBspDtbstgRow2Info, new RecordItemIndex(8));
-            repo.DlgSplittenBsp.TblSBsp.ColSBspDtbstgRow2.PressKeys("{PageDown}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{PageDown}' with focus on 'ColBspDtbstgRow2'.", repo.ColBspDtbstgRow2Info, new RecordItemIndex(8));
+            repo.ColBspDtbstgRow2.PressKeys("{PageDown}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Menge32) on item 'DlgSplittenBsp.TblSBsp.ColSBspBestaetigtRow2'.", repo.DlgSplittenBsp.TblSBsp.ColSBspBestaetigtRow2Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.DlgSplittenBsp.TblSBsp.ColSBspBestaetigtRow2Info, "Text", Menge32);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Menge32) on item 'ColBspBestaetigtRow2'.", repo.ColBspBestaetigtRow2Info, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.ColBspBestaetigtRow2Info, "Text", Menge32);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PbSpeichern' at Center.", repo.PbSpeichernInfo, new RecordItemIndex(10));
             repo.PbSpeichern.Click();
