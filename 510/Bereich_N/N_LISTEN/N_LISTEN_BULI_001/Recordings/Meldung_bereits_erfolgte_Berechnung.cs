@@ -91,19 +91,6 @@ namespace N_LISTEN_BULI_001.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungs'", repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo, new ActionTimeout(120000), new RecordItemIndex(3));
             repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo.WaitForExists(120000);
             
-            // Dieser SQL-Fehler trat nur auf der E521 der  SYSDB RANO_ENTW auf. Auf anderen DB war er bisher nicht nachvollziehbar. Schritte rauslöschen
-            //Report.Log(ReportLevel.Info, "Validation", "Dieser SQL-Fehler trat nur auf der E521 der  SYSDB RANO_ENTW auf. Auf anderen DB war er bisher nicht nachvollziehbar. Schritte rauslöschen\r\nValidating AttributeEqual (Text='SQL Fehler: 156 - Falsche Syntax in der Nähe des AND-Schlüsselworts.\r\n\r\nFehlerPosition: 7 () - <CN=chGlobal>\r\n\r\nFalsche Syntax in der Nähe des AND-Schlüsselworts.\r\n') on item 'CdlgSqlFehler.Text'.", repo.CdlgSqlFehler.TextInfo, new RecordItemIndex(4));
-            //Validate.AttributeEqual(repo.CdlgSqlFehler.TextInfo, "Text", "SQL Fehler: 156 - Falsche Syntax in der Nähe des AND-Schlüsselworts.\r\n\r\nFehlerPosition: 7 () - <CN=chGlobal>\r\n\r\nFalsche Syntax in der Nähe des AND-Schlüsselworts.\r\n");
-            
-            // Schritt rauslöschen
-            //Report.Log(ReportLevel.Info, "Keyboard", "Schritt rauslöschen\r\nKey sequence 'OK' with focus on 'CdlgSqlFehler.SQLFehler'.", repo.CdlgSqlFehler.SQLFehlerInfo, new RecordItemIndex(5));
-            //repo.CdlgSqlFehler.SQLFehler.PressKeys("OK");
-            
-            // Schritt rauslöschen
-            //Report.Log(ReportLevel.Info, "Keyboard", "Schritt rauslöschen\r\nKey 'Enter' Press with focus on 'CdlgSqlFehler.SQLFehler'.", repo.CdlgSqlFehler.SQLFehlerInfo, new RecordItemIndex(6));
-            //Keyboard.PrepareFocus(repo.CdlgSqlFehler.SQLFehler);
-            //Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
         }
 
 #region Image Feature Data
