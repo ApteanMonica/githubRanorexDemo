@@ -61,17 +61,19 @@ steps:
      archiveFile: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports.zip'
      replaceExistingArchive: true
      
+    
   - task: SendEmail
     displayName: 'Send Email'
-    inputs: 
-      subject: "Your Subject Here"
-    body: |
+    inputs:  
+     subject: "Your Subject Here"
+     body: |
          Hello,
 
          This is the body of the email. You can write your content here and use proper alignment.
 
          Thank you,
          Your Name 
+  
          
     recipient: kishore.ramachandraiah@aptean,com
     sender: '$(SMTP_MailID)'
