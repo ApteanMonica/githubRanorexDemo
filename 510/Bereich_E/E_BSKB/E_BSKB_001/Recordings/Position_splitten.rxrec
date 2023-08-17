@@ -25,12 +25,12 @@ mode="Global">
 	<variables>
 		<var
 		id="a8d53b77-8785-49d1-bb57-ef736bf7545b"
-		name="Menge32">
+		name="Splittmenge2">
 			2
 		</var>
 		<var
 		id="c799a7d7-800c-43da-899f-b5f7d0ff4869"
-		name="Menge31">
+		name="Splittmenge1">
 			3
 		</var>
 	</variables>
@@ -4304,7 +4304,7 @@ zFAD6KRXRjhWUn2NLQAUUUUAFFFFABRRRQAUUUUAf//Z
 			<bindings>
 				<binding
 				target="KeySequence"
-				variable="Menge31">
+				variable="Splittmenge1">
 				</binding>
 			</bindings>
 			<info
@@ -4677,89 +4677,39 @@ zFAD6KRXRjhWUn2NLQAUUUUAFFFFABRRRQAUUUUAf//Z
 				</robustPath>
 			</info>
 		</keysequenceitem>
-		<validationitem
-		action="AttributeEqual"
+		<userrecorditem
+		classname="Position_splitten"
 		enabled="True"
-		optional="False"
-		searchpropertyid="5871328e-0fd4-4886-a5de-87345b3c4560">
+		isexternaltestmethod="False"
+		methodname="Validate_ColBspBestaetigtRow2"
+		namespace="E_BSKB_001.Recordings"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Menge32">
-				</binding>
 			</bindings>
-			<info
-			id="e5590acf-5970-4910-9564-9a7da88f5755"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="5"
-				prefcap="cell"
-				rect="564,540,70,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						True
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						2
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colBsp_bestaetigt Row 2
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Selected, Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						2
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='dlgSplittenBsp']/?/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colBsp_bestaetigt Row 2|colSBsp_bestaetigt Row 2']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				2,00
-			</matchvalue>
-		</validationitem>
+			<arguments
+			id="66b54086-dfd0-4bf1-bad5-e9d028681537">
+				<argument
+				argname="cellInfo"
+				id="bfe0f064-a8f5-40e6-aec5-f5842fe24421">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="e5590acf-5970-4910-9564-9a7da88f5755"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@controlname='dlgSplittenBsp']/container[@controlname~'tblBsp|tblSBsp']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colBsp_bestaetigt Row 2|colSBsp_bestaetigt Row 2']
+						</path>
+						<robustPath>
+						</robustPath>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"

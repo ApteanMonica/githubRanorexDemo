@@ -227,81 +227,6 @@ DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
 XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
-		<appfolder
-		addcaps="form,control,nativewindow"
-		capname="form"
-		id="d9e8cd28-b67b-48a0-9b97-0905d71d1d61"
-		isrooted="True"
-		name="DlgSplittenBsp"
-		refimgid="2c0030ad-cde8-4290-a771-91fe229de3fa"
-		refpath="/form[@controlname='dlgSplittenBsp']"
-		searchtimeout="30000ms"
-		usecache="True">
-			<folder
-			addcaps="container,control,nativewindow"
-			capname="container"
-			id="c375bd8f-dfbb-431d-a6fc-6c8c53edb09e"
-			isrooted="True"
-			name="TblSBsp"
-			refpath="/form[@controltypename='dlgSplittenBsp']/container"
-			searchtimeout="30000ms"
-			usecache="False">
-				<basepath>
-					/form[@controlname='dlgSplittenBsp']/container[@controlname='tblSBsp']
-				</basepath>
-			</folder>
-			<item
-			addcaps="cell,accessible"
-			capname="cell"
-			id="82ef8f3d-5559-4fa2-a7aa-83e5742dd72a"
-			name="ColBspGeliefertRow2"
-			refimgid="8e192c6d-c3a3-43ee-8562-b6ebd13c0e7b"
-			refpath="/form[@controlname='dlgSplittenBsp']/container[@controlname='tblBsp']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colBsp_geliefert Row 2']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgSplittenBsp']/container[@controlname='tblBsp']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsp_geliefert Row 2']
-			</item>
-			<basepath>
-				/form[@controlname='dlgSplittenBsp']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
-YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
-nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
-			</icon>
-		</appfolder>
-		<item
-		addcaps="cell,accessible"
-		capname="cell"
-		id="9bf6a198-c998-4801-b545-919382425046"
-		name="ColBspBestaetigtRow1"
-		refimgid="7fb530f0-935f-42ed-bb6e-c25c2ff5a34c"
-		refpath="/form[@controlname='dlgSplittenBsp']/container[@controlname='tblBsp']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBsp_bestaetigt Row 1']"
-		robustPath=""
-		searchtimeout="30000ms">
-			/form[@controlname='dlgSplittenBsp']/container[@controlname='tblBsp']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsp_bestaetigt Row 1']
-		</item>
-		<item
-		addcaps="cell,accessible"
-		capname="cell"
-		id="e5590acf-5970-4910-9564-9a7da88f5755"
-		name="ColBspBestaetigtRow2"
-		refimgid="6a270a4e-a665-4a87-87b3-31a66cbbbb17"
-		robustPath=""
-		searchtimeout="30000ms">
-			/form[@controlname='dlgSplittenBsp']/?/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colBsp_bestaetigt Row 2|colSBsp_bestaetigt Row 2']
-		</item>
-		<item
-		addcaps="cell,accessible"
-		capname="cell"
-		id="627c3ca0-9a01-4b7b-9fd8-04caa6781c7c"
-		name="ColBspDtbstgRow2"
-		refimgid="c2ee04e3-2d26-44c1-abdf-a4112fa59987"
-		robustPath=""
-		searchtimeout="30000ms">
-			/form[@controlname='dlgSplittenBsp']/?/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colBsp_dtbstg Row 2|colSBsp_dtbstg_Row 2']
-		</item>
 		<item
 		addcaps="button,control,nativewindow"
 		capname="button"
@@ -313,6 +238,55 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 		searchtimeout="30000ms">
 			/form[@controlname='dlgSplittenBsp']/button[@controlname='pbSpeichern']
 		</item>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="4c57da6d-4ab4-44a5-a6cc-754407567c08"
+		isrooted="True"
+		name="DlgSplittenBsp"
+		refpath="/form[@controlname='dlgSplittenBsp']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="9bf6a198-c998-4801-b545-919382425046"
+			name="ColBspBestaetigtRow1"
+			refimgid="7fb530f0-935f-42ed-bb6e-c25c2ff5a34c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgSplittenBsp']/container[@controlname~'tblBsp|tblSBsp']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colBsp_bestaetigt Row 1|colSBsp_bestaetigt Row 1']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="e5590acf-5970-4910-9564-9a7da88f5755"
+			name="ColBspBestaetigtRow2"
+			refimgid="6a270a4e-a665-4a87-87b3-31a66cbbbb17"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgSplittenBsp']/container[@controlname~'tblBsp|tblSBsp']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colBsp_bestaetigt Row 2|colSBsp_bestaetigt Row 2']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="627c3ca0-9a01-4b7b-9fd8-04caa6781c7c"
+			name="ColBspDtbstgRow2"
+			refimgid="c2ee04e3-2d26-44c1-abdf-a4112fa59987"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgSplittenBsp']/container[@controlname~'tblBsp|tblSBsp']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colBsp_dtbstg Row 2|colSBsp_dtbstg Row 2']
+			</item>
+			<basepath>
+				/form[@controlname='dlgSplittenBsp']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
@@ -329,7 +303,7 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 		</var>
 		<var
 		id="be9da08c-c7a1-4cde-a22a-abc1cab07008"
-		name="Menge31">
+		name="Splittmenge1">
 			3
 		</var>
 	</variables>
