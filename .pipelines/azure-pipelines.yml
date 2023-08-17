@@ -62,6 +62,7 @@ steps:
      replaceExistingArchive: true
      
   - task: SendEmail@1
+    condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
     inputs:
      To: 'kishore.ramachandraiah@aptean.com'
      From: '$(SMTP_MailID)'
