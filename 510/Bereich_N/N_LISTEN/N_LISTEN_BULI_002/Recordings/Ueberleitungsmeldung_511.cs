@@ -24,29 +24,29 @@ namespace N_LISTEN_BULI_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT recording.
+    ///The Ueberleitungsmeldung_511 recording.
     /// </summary>
-    [TestModule("e23ad14a-e984-4882-b34a-0786c430ce0d", ModuleType.Recording, 1)]
-    public partial class CloseAUT : ITestModule
+    [TestModule("ab5c93f4-ef2a-4a0d-9cac-a29de877cf54", ModuleType.Recording, 1)]
+    public partial class Ueberleitungsmeldung_511 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository repo = global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository.Instance;
 
-        static CloseAUT instance = new CloseAUT();
+        static Ueberleitungsmeldung_511 instance = new Ueberleitungsmeldung_511();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT()
+        public Ueberleitungsmeldung_511()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT Instance
+        public static Ueberleitungsmeldung_511 Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,14 @@ namespace N_LISTEN_BULI_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungs'.", repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungs, 1000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(120000), new RecordItemIndex(0));
+            repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Verbuchung per 7.2022 nicht möglich. Es muss zuerst Zeitraum von 1.0 gebucht werden.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Verbuchung per 7.2022 nicht möglich. Es muss zuerst Zeitraum von 1.0 gebucht werden.");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
+            repo.DlgMessageBox.Button0.Click();
             
         }
 

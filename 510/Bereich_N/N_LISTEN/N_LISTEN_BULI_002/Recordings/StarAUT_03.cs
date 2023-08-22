@@ -24,34 +24,60 @@ namespace N_LISTEN_BULI_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT recording.
+    ///The StarAUT_03 recording.
     /// </summary>
-    [TestModule("e23ad14a-e984-4882-b34a-0786c430ce0d", ModuleType.Recording, 1)]
-    public partial class CloseAUT : ITestModule
+    [TestModule("7f480744-26da-4e0e-b675-dc38385bf24a", ModuleType.Recording, 1)]
+    public partial class StarAUT_03 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository repo = global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository.Instance;
 
-        static CloseAUT instance = new CloseAUT();
+        static StarAUT_03 instance = new StarAUT_03();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT()
+        public StarAUT_03()
         {
+            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
+            Programm_02 = "N_STAMM AUFRUFART=ANFI";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT Instance
+        public static StarAUT_03 Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _Startfile;
+
+        /// <summary>
+        /// Gets or sets the value of variable Startfile.
+        /// </summary>
+        [TestVariable("7bc5bc91-f907-4db7-a87a-55ecafbe7b88")]
+        public string Startfile
+        {
+            get { return _Startfile; }
+            set { _Startfile = value; }
+        }
+
+        string _Programm_02;
+
+        /// <summary>
+        /// Gets or sets the value of variable Programm_02.
+        /// </summary>
+        [TestVariable("b4c27fa9-1d28-42e1-b744-2ceea90ca68d")]
+        public string Programm_02
+        {
+            get { return _Programm_02; }
+            set { _Programm_02 = value; }
+        }
 
 #endregion
 
@@ -79,8 +105,14 @@ namespace N_LISTEN_BULI_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungs'.", repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungs, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_02 in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile, Programm_02, "", false);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmAnfi.TitleBar100AVZFirmenstamm'", repo.FrmAnfi.TitleBar100AVZFirmenstammInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FrmAnfi.TitleBar100AVZFirmenstammInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ-Firmenstamm') on item 'FrmAnfi.TitleBar100AVZFirmenstamm'.", repo.FrmAnfi.TitleBar100AVZFirmenstammInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.FrmAnfi.TitleBar100AVZFirmenstammInfo, "Text", "[100]  AVZ-Firmenstamm");
             
         }
 

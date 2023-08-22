@@ -24,29 +24,29 @@ namespace N_LISTEN_BULI_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseAUT recording.
+    ///The korrekte_Meldung recording.
     /// </summary>
-    [TestModule("e23ad14a-e984-4882-b34a-0786c430ce0d", ModuleType.Recording, 1)]
-    public partial class CloseAUT : ITestModule
+    [TestModule("68aecbe6-9d03-48c0-a765-0f7b36d9240d", ModuleType.Recording, 1)]
+    public partial class korrekte_Meldung : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository repo = global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository.Instance;
 
-        static CloseAUT instance = new CloseAUT();
+        static korrekte_Meldung instance = new korrekte_Meldung();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseAUT()
+        public korrekte_Meldung()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseAUT Instance
+        public static korrekte_Meldung Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,14 @@ namespace N_LISTEN_BULI_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungs'.", repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungs, 1000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(120000), new RecordItemIndex(0));
+            repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es sind bereits Buchungszeilen für 7.2022 vorhanden.\r\n\r\nSollen diese gelöscht und neu erfaßt werden?\r\n\r\nJa\t\t= Löschen und Neu erfassen\r\nNein\t= Bereits vorhandene Buchungszeilen laden\r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es sind bereits Buchungszeilen für 7.2022 vorhanden.\r\n\r\nSollen diese gelöscht und neu erfaßt werden?\r\n\r\nJa\t\t= Löschen und Neu erfassen\r\nNein\t= Bereits vorhandene Buchungszeilen laden\r\n");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
+            repo.DlgMessageBox.Button0.Click();
             
         }
 
