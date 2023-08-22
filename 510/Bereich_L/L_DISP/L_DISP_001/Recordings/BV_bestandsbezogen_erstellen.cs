@@ -148,39 +148,32 @@ namespace L_DISP.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmDispo.GroupBox7.ColWert1Row4' at Center.", repo.FrmDispo.GroupBox7.ColWert1Row4Info, new RecordItemIndex(6));
             repo.FrmDispo.GroupBox7.ColWert1Row4.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{NumPad1}{NumPad0}{NumPad0}{NumPad0}{NumPad2}{NumPad0}' with focus on 'FrmDispo.GroupBox7.ColWert1Row4'.", repo.FrmDispo.GroupBox7.ColWert1Row4Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '100020{Tab}' with focus on 'FrmDispo.GroupBox7.ColWert1Row4'.", repo.FrmDispo.GroupBox7.ColWert1Row4Info, new RecordItemIndex(7));
             repo.FrmDispo.GroupBox7.ColWert1Row4.EnsureVisible();
-            Keyboard.Press("{NumPad1}{NumPad0}{NumPad0}{NumPad0}{NumPad2}{NumPad0}");
+            Keyboard.Press("100020{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmDispo.GroupBox7.ColWert1Row4'.", repo.FrmDispo.GroupBox7.ColWert1Row4Info, new RecordItemIndex(8));
-            repo.FrmDispo.GroupBox7.ColWert1Row4.EnsureVisible();
-            Keyboard.Press("{Tab}");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmDispo.GroupBox7.ColWert2Row4' at Center.", repo.FrmDispo.GroupBox7.ColWert2Row4Info, new RecordItemIndex(8));
+            //repo.FrmDispo.GroupBox7.ColWert2Row4.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmDispo.GroupBox7.ColWert2Row4' at Center.", repo.FrmDispo.GroupBox7.ColWert2Row4Info, new RecordItemIndex(9));
-            repo.FrmDispo.GroupBox7.ColWert2Row4.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '100024{Tab}' with focus on 'FrmDispo.GroupBox7.ColWert2Row4'.", repo.FrmDispo.GroupBox7.ColWert2Row4Info, new RecordItemIndex(9));
+            repo.FrmDispo.GroupBox7.ColWert2Row4.PressKeys("100024{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}{NumPad4}{Tab}' with focus on 'FrmDispo.GroupBox7.SomeText'.", repo.FrmDispo.GroupBox7.SomeTextInfo, new RecordItemIndex(10));
-            repo.FrmDispo.GroupBox7.SomeText.PressKeys("{Back}{NumPad4}{Tab}");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmDispo.PbExtrasListe' at Center.", repo.FrmDispo.PbExtrasListeInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmDispo.PbExtrasListe' at Center.", repo.FrmDispo.PbExtrasListeInfo, new RecordItemIndex(10));
             repo.FrmDispo.PbExtrasListe.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Artikel1) on item 'TblDispVSL.ColArtNrRow1'.", repo.TblDispVSL.ColArtNrRow1Info, new RecordItemIndex(12));
-            Validate.AttributeEqual(repo.TblDispVSL.ColArtNrRow1Info, "Text", Artikel1);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Artikel2) on item 'TblDispVSL.ColArtNrRow1'.", repo.TblDispVSL.ColArtNrRow1Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.TblDispVSL.ColArtNrRow1Info, "Text", Artikel2);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Artikel2) on item 'TblDispVSL.ColArtNrRow2'.", repo.TblDispVSL.ColArtNrRow2Info, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.TblDispVSL.ColArtNrRow2Info, "Text", Artikel2);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDispVSL.Schliessen' at Center.", repo.TblDispVSL.SchliessenInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDispVSL.Schliessen' at Center.", repo.TblDispVSL.SchliessenInfo, new RecordItemIndex(12));
             repo.TblDispVSL.Schliessen.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmDispo.PbExtrasStart' at Center.", repo.FrmDispo.PbExtrasStartInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmDispo.PbExtrasStart' at Center.", repo.FrmDispo.PbExtrasStartInfo, new RecordItemIndex(13));
             repo.FrmDispo.PbExtrasStart.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'neuer Bestellvorschlag mit der Nummer') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'neuer Bestellvorschlag mit der Nummer') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(14));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "neuer Bestellvorschlag mit der Nummer");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(15));
             repo.DlgMessageBox.Button0.Click();
             
         }

@@ -33,5 +33,16 @@ namespace E_BSKB_001.Recordings
             // Your recording specific initialization code goes here.
         }
 
+        public void Validate_ColBspBestaetigtRow2(RepoItemInfo cellInfo)
+        {
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Splittmenge2) on item 'cellInfo'.", cellInfo);
+            
+            string MengeX = Splittmenge2.Replace(",00","");
+            
+            string MengeY = repo.TblBskb.FlexGrid.ColBspBestaetigtRow2.Text.Replace(",00","");
+            
+            Validate.AreEqual(MengeX, MengeY);
+        }
+
     }
 }

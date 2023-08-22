@@ -30,7 +30,6 @@ namespace E_BSKB_001
         E_BSKB_001RepositoryFolders.TblBskbAppFolder _tblbskb;
         E_BSKB_001RepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
         E_BSKB_001RepositoryFolders.DlgSplittenBspAppFolder _dlgsplittenbsp;
-        E_BSKB_001RepositoryFolders.ExplorerAppFolder _explorer;
         RepoItemInfo _titlebar100bestellungenbestaetigenInfo;
         RepoItemInfo _pbspeichernInfo;
 
@@ -52,7 +51,6 @@ namespace E_BSKB_001
             _tblbskb = new E_BSKB_001RepositoryFolders.TblBskbAppFolder(this);
             _dlgmessagebox = new E_BSKB_001RepositoryFolders.DlgMessageBoxAppFolder(this);
             _dlgsplittenbsp = new E_BSKB_001RepositoryFolders.DlgSplittenBspAppFolder(this);
-            _explorer = new E_BSKB_001RepositoryFolders.ExplorerAppFolder(this);
             _titlebar100bestellungenbestaetigenInfo = new RepoItemInfo(this, "TitleBar100BestellungenBestaetigen", "/form[@controlname='tblBskb']/titlebar[@accessiblerole='TitleBar']", 30000, null, "586798d4-3ad4-444c-8b76-61a008b6383f");
             _pbspeichernInfo = new RepoItemInfo(this, "PbSpeichern", "/form[@controlname='dlgSplittenBsp']/button[@controlname='pbSpeichern']", 30000, null, "6dfae804-677a-403f-b884-6c2f25038d89");
         }
@@ -83,16 +81,16 @@ namespace E_BSKB_001
             set { _Kalenderwoche = value; }
         }
 
-        string _Menge31 = "3";
+        string _Splittmenge1 = "3";
 
         /// <summary>
-        /// Gets or sets the value of variable Menge31.
+        /// Gets or sets the value of variable Splittmenge1.
         /// </summary>
         [TestVariable("be9da08c-c7a1-4cde-a22a-abc1cab07008")]
-        public string Menge31
+        public string Splittmenge1
         {
-            get { return _Menge31; }
-            set { _Menge31 = value; }
+            get { return _Splittmenge1; }
+            set { _Splittmenge1 = value; }
         }
 
 #endregion
@@ -178,19 +176,10 @@ namespace E_BSKB_001
         /// <summary>
         /// The DlgSplittenBsp folder.
         /// </summary>
-        [RepositoryFolder("d9e8cd28-b67b-48a0-9b97-0905d71d1d61")]
+        [RepositoryFolder("4c57da6d-4ab4-44a5-a6cc-754407567c08")]
         public virtual E_BSKB_001RepositoryFolders.DlgSplittenBspAppFolder DlgSplittenBsp
         {
             get { return _dlgsplittenbsp; }
-        }
-
-        /// <summary>
-        /// The Explorer folder.
-        /// </summary>
-        [RepositoryFolder("b7146374-8556-4f4b-a54d-ae5dc09d7154")]
-        public virtual E_BSKB_001RepositoryFolders.ExplorerAppFolder Explorer
-        {
-            get { return _explorer; }
         }
     }
 
@@ -697,24 +686,28 @@ namespace E_BSKB_001
         /// <summary>
         /// The DlgSplittenBspAppFolder folder.
         /// </summary>
-        [RepositoryFolder("d9e8cd28-b67b-48a0-9b97-0905d71d1d61")]
+        [RepositoryFolder("4c57da6d-4ab4-44a5-a6cc-754407567c08")]
         public partial class DlgSplittenBspAppFolder : RepoGenBaseFolder
         {
-            E_BSKB_001RepositoryFolders.TblSBspFolder _tblsbsp;
+            RepoItemInfo _colbspbestaetigtrow1Info;
+            RepoItemInfo _colbspbestaetigtrow2Info;
+            RepoItemInfo _colbspdtbstgrow2Info;
 
             /// <summary>
             /// Creates a new DlgSplittenBsp  folder.
             /// </summary>
             public DlgSplittenBspAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DlgSplittenBsp", "/form[@controlname='dlgSplittenBsp']", parentFolder, 30000, null, true, "d9e8cd28-b67b-48a0-9b97-0905d71d1d61", "")
+                    base("DlgSplittenBsp", "/form[@controlname='dlgSplittenBsp']", parentFolder, 30000, null, true, "4c57da6d-4ab4-44a5-a6cc-754407567c08", "")
             {
-                _tblsbsp = new E_BSKB_001RepositoryFolders.TblSBspFolder(this);
+                _colbspbestaetigtrow1Info = new RepoItemInfo(this, "ColBspBestaetigtRow1", "container[@controlname~'tblBsp|tblSBsp']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colBsp_bestaetigt Row 1|colSBsp_bestaetigt Row 1']", "", 30000, null, "9bf6a198-c998-4801-b545-919382425046");
+                _colbspbestaetigtrow2Info = new RepoItemInfo(this, "ColBspBestaetigtRow2", "container[@controlname~'tblBsp|tblSBsp']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colBsp_bestaetigt Row 2|colSBsp_bestaetigt Row 2']", "", 30000, null, "e5590acf-5970-4910-9564-9a7da88f5755");
+                _colbspdtbstgrow2Info = new RepoItemInfo(this, "ColBspDtbstgRow2", "container[@controlname~'tblBsp|tblSBsp']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colBsp_dtbstg Row 2|colSBsp_dtbstg Row 2']", "", 30000, null, "627c3ca0-9a01-4b7b-9fd8-04caa6781c7c");
             }
 
             /// <summary>
             /// The Self item.
             /// </summary>
-            [RepositoryItem("d9e8cd28-b67b-48a0-9b97-0905d71d1d61")]
+            [RepositoryItem("4c57da6d-4ab4-44a5-a6cc-754407567c08")]
             public virtual Ranorex.Form Self
             {
                 get
@@ -726,7 +719,7 @@ namespace E_BSKB_001
             /// <summary>
             /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("d9e8cd28-b67b-48a0-9b97-0905d71d1d61")]
+            [RepositoryItemInfo("4c57da6d-4ab4-44a5-a6cc-754407567c08")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
@@ -736,169 +729,74 @@ namespace E_BSKB_001
             }
 
             /// <summary>
-            /// The TblSBsp folder.
+            /// The ColBspBestaetigtRow1 item.
             /// </summary>
-            [RepositoryFolder("c375bd8f-dfbb-431d-a6fc-6c8c53edb09e")]
-            public virtual E_BSKB_001RepositoryFolders.TblSBspFolder TblSBsp
-            {
-                get { return _tblsbsp; }
-            }
-        }
-
-        /// <summary>
-        /// The TblSBspFolder folder.
-        /// </summary>
-        [RepositoryFolder("c375bd8f-dfbb-431d-a6fc-6c8c53edb09e")]
-        public partial class TblSBspFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _colsbspdtbstgrow2Info;
-            RepoItemInfo _colsbspbestaetigtrow2Info;
-            RepoItemInfo _colsbspbestaetigtrow1Info;
-
-            /// <summary>
-            /// Creates a new TblSBsp  folder.
-            /// </summary>
-            public TblSBspFolder(RepoGenBaseFolder parentFolder) :
-                    base("TblSBsp", "container[@controlname='tblSBsp']", parentFolder, 30000, null, false, "c375bd8f-dfbb-431d-a6fc-6c8c53edb09e", "")
-            {
-                _colsbspdtbstgrow2Info = new RepoItemInfo(this, "ColSBspDtbstgRow2", "?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colSBsp_dtbstg Row 2']", "", 30000, null, "880719a7-ee0c-4f8c-9c03-1269e51bebed");
-                _colsbspbestaetigtrow2Info = new RepoItemInfo(this, "ColSBspBestaetigtRow2", "?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colSBsp_bestaetigt Row 2']", "", 30000, null, "789d1778-8d93-476e-9529-d4a62dadcb88");
-                _colsbspbestaetigtrow1Info = new RepoItemInfo(this, "ColSBspBestaetigtRow1", "?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colSBsp_bestaetigt Row 1']", "", 30000, null, "f445acd1-118a-4652-b953-5c763cf79fdc");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("c375bd8f-dfbb-431d-a6fc-6c8c53edb09e")]
-            public virtual Ranorex.Container Self
+            [RepositoryItem("9bf6a198-c998-4801-b545-919382425046")]
+            public virtual Ranorex.Cell ColBspBestaetigtRow1
             {
                 get
                 {
-                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                    return _colbspbestaetigtrow1Info.CreateAdapter<Ranorex.Cell>(true);
                 }
             }
 
             /// <summary>
-            /// The Self item info.
+            /// The ColBspBestaetigtRow1 item info.
             /// </summary>
-            [RepositoryItemInfo("c375bd8f-dfbb-431d-a6fc-6c8c53edb09e")]
-            public virtual RepoItemInfo SelfInfo
+            [RepositoryItemInfo("9bf6a198-c998-4801-b545-919382425046")]
+            public virtual RepoItemInfo ColBspBestaetigtRow1Info
             {
                 get
                 {
-                    return _selfInfo;
+                    return _colbspbestaetigtrow1Info;
                 }
             }
 
             /// <summary>
-            /// The ColSBspDtbstgRow2 item.
+            /// The ColBspBestaetigtRow2 item.
             /// </summary>
-            [RepositoryItem("880719a7-ee0c-4f8c-9c03-1269e51bebed")]
-            public virtual Ranorex.Cell ColSBspDtbstgRow2
+            [RepositoryItem("e5590acf-5970-4910-9564-9a7da88f5755")]
+            public virtual Ranorex.Cell ColBspBestaetigtRow2
             {
                 get
                 {
-                    return _colsbspdtbstgrow2Info.CreateAdapter<Ranorex.Cell>(true);
+                    return _colbspbestaetigtrow2Info.CreateAdapter<Ranorex.Cell>(true);
                 }
             }
 
             /// <summary>
-            /// The ColSBspDtbstgRow2 item info.
+            /// The ColBspBestaetigtRow2 item info.
             /// </summary>
-            [RepositoryItemInfo("880719a7-ee0c-4f8c-9c03-1269e51bebed")]
-            public virtual RepoItemInfo ColSBspDtbstgRow2Info
+            [RepositoryItemInfo("e5590acf-5970-4910-9564-9a7da88f5755")]
+            public virtual RepoItemInfo ColBspBestaetigtRow2Info
             {
                 get
                 {
-                    return _colsbspdtbstgrow2Info;
+                    return _colbspbestaetigtrow2Info;
                 }
             }
 
             /// <summary>
-            /// The ColSBspBestaetigtRow2 item.
+            /// The ColBspDtbstgRow2 item.
             /// </summary>
-            [RepositoryItem("789d1778-8d93-476e-9529-d4a62dadcb88")]
-            public virtual Ranorex.Cell ColSBspBestaetigtRow2
+            [RepositoryItem("627c3ca0-9a01-4b7b-9fd8-04caa6781c7c")]
+            public virtual Ranorex.Cell ColBspDtbstgRow2
             {
                 get
                 {
-                    return _colsbspbestaetigtrow2Info.CreateAdapter<Ranorex.Cell>(true);
+                    return _colbspdtbstgrow2Info.CreateAdapter<Ranorex.Cell>(true);
                 }
             }
 
             /// <summary>
-            /// The ColSBspBestaetigtRow2 item info.
+            /// The ColBspDtbstgRow2 item info.
             /// </summary>
-            [RepositoryItemInfo("789d1778-8d93-476e-9529-d4a62dadcb88")]
-            public virtual RepoItemInfo ColSBspBestaetigtRow2Info
+            [RepositoryItemInfo("627c3ca0-9a01-4b7b-9fd8-04caa6781c7c")]
+            public virtual RepoItemInfo ColBspDtbstgRow2Info
             {
                 get
                 {
-                    return _colsbspbestaetigtrow2Info;
-                }
-            }
-
-            /// <summary>
-            /// The ColSBspBestaetigtRow1 item.
-            /// </summary>
-            [RepositoryItem("f445acd1-118a-4652-b953-5c763cf79fdc")]
-            public virtual Ranorex.Cell ColSBspBestaetigtRow1
-            {
-                get
-                {
-                    return _colsbspbestaetigtrow1Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColSBspBestaetigtRow1 item info.
-            /// </summary>
-            [RepositoryItemInfo("f445acd1-118a-4652-b953-5c763cf79fdc")]
-            public virtual RepoItemInfo ColSBspBestaetigtRow1Info
-            {
-                get
-                {
-                    return _colsbspbestaetigtrow1Info;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The ExplorerAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("b7146374-8556-4f4b-a54d-ae5dc09d7154")]
-        public partial class ExplorerAppFolder : RepoGenBaseFolder
-        {
-
-            /// <summary>
-            /// Creates a new Explorer  folder.
-            /// </summary>
-            public ExplorerAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Explorer", "/desktop[@processname='explorer']", parentFolder, 30000, null, true, "b7146374-8556-4f4b-a54d-ae5dc09d7154", "")
-            {
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("b7146374-8556-4f4b-a54d-ae5dc09d7154")]
-            public virtual Ranorex.Desktop Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Desktop>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("b7146374-8556-4f4b-a54d-ae5dc09d7154")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
+                    return _colbspdtbstgrow2Info;
                 }
             }
         }

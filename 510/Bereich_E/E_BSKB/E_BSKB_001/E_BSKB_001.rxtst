@@ -37,11 +37,11 @@
 					</param>
 					<param
 					name="Splittmenge1"
-					value="3,00">
+					value="3">
 					</param>
 					<param
 					name="Splittmenge2"
-					value="2,00">
+					value="2">
 					</param>
 				</parameters>
 			</testcase>
@@ -59,16 +59,21 @@
 			VideoFps="15"
 			VideoRecordingMode="Off"
 			VideoSource="Auto"
+			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
 			id="4ac0f825-142e-44fa-87e8-2764a794e068"
+			includeimageschecked="False"
+			includerecordingschecked="False"
 			junitreport="False"
 			name="E_BSKB_001"
+			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testcase
 			id="54b416c1-6b4c-40d3-8c7e-79ea33ca6def"
@@ -154,13 +159,13 @@
 					dataname="Splittmenge1"
 					datasourceid="08b371c4-4cd7-47bc-8072-8d56b295aeee"
 					variableid="c799a7d7-800c-43da-899f-b5f7d0ff4869"
-					variablename="Menge31">
+					variablename="Splittmenge1">
 					</var>
 					<var
 					dataname="Splittmenge2"
 					datasourceid="08b371c4-4cd7-47bc-8072-8d56b295aeee"
 					variableid="a8d53b77-8785-49d1-bb57-ef736bf7545b"
-					variablename="Menge32">
+					variablename="Splittmenge2">
 					</var>
 				</databinding>
 			</testmodule>

@@ -37,7 +37,7 @@ steps:
     inputs:
      targetType: 'inline'
      script: |
-       Start-Process -FilePath "$(System.DefaultWorkingDirectory)/API_Automation_Cypress/BatchFile/ServiceHost.bat" -WindowStyle Hidden
+       Start-Process -FilePath "$(System.DefaultWorkingDirectory)\API_Automation_Cypress\BatchFile\ServiceHost.bat" -WindowStyle Hidden
 
   - task: CmdLine@2
     displayName: 'NPM initialization'
@@ -60,24 +60,25 @@ steps:
      archiveType: 'zip'
      archiveFile: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports.zip'
      replaceExistingArchive: true
-     
-  - task: SendEmail
-    displayName: 'Send Email'
-    inputs: 
-      subject: "Your Subject Here"
-    body: |
-         Hello,
 
-         This is the body of the email. You can write your content here and use proper alignment.
+  - task: SendEmail@1
+    condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
+    inputs:
+     To: 'kishore.ramachandraiah@aptean.com'
+     From: '$(SMTP_MailID)'
+     Subject: 'RS2 Automation reports'
+     Body: |
+           This is the body of the email. You can write your content here and use proper alignment.
+                 
+                          Thank you,
+                          Your Name
+     BodyAsHtml: false
+     AddAttachment: true
+     Attachment: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports.zip'
+     SmtpServer: 'smtp.office365.com'
+     SmtpUsername: '$(SMTP_UserName)'
+     SmtpPassword: '$(SMTP_UserPassword)'
 
-         Thank you,
-         Your Name 
-         
-    recipient: kishore.ramachandraiah@aptean,com
-    sender: '$(SMTP_MailID)'
-    smtpServer: 'smtp.office365.com'
-    smtpPort: 587
-    smtpUsername: '$(SMTP_UserName)'
-    smtpPassword: '$(SMTP_UserPassword)'
-    attachments:
-       - '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports.zip'
+
+
+    

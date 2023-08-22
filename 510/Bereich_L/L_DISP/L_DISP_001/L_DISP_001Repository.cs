@@ -485,7 +485,6 @@ namespace L_DISP
             RepoItemInfo _colwert1row4Info;
             RepoItemInfo _colwert2row4Info;
             RepoItemInfo _rbdezentralInfo;
-            RepoItemInfo _sometextInfo;
             RepoItemInfo _lagerInfo;
             RepoItemInfo _rbbsvkzentralInfo;
 
@@ -498,7 +497,6 @@ namespace L_DISP
                 _colwert1row4Info = new RepoItemInfo(this, "ColWert1Row4", "container[@controlname='groupBox4']//row[@accessiblename='Row 4']/cell[@accessiblename='colWert1 Row 4']", "", 30000, null, "e38037be-82e2-4ea7-ad8f-e201dcae6475");
                 _colwert2row4Info = new RepoItemInfo(this, "ColWert2Row4", ".//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colWert2 Row 4']", "", 30000, null, "4a9f1d59-cfde-40cb-83cf-bd2ea72d4985");
                 _rbdezentralInfo = new RepoItemInfo(this, "RbDezentral", "?/?/radiobutton[@controlname='rbDezentral']", "", 30000, null, "d3871bb7-8858-43ff-9275-6ad8a2a1ef26");
-                _sometextInfo = new RepoItemInfo(this, "SomeText", "container[@controlname='groupBox4']//text[@controltypename='']", "", 30000, null, "9f34783e-b29f-441b-b8c2-754960fc713d");
                 _lagerInfo = new RepoItemInfo(this, "Lager", "?/?/?/text[@accessiblename='Lager']", "", 30000, null, "d26f43a9-3ccc-40ea-a0f9-072271ecd6eb");
                 _rbbsvkzentralInfo = new RepoItemInfo(this, "RbBsvkZentral", "?/?/radiobutton[@controlname='rbBsvk_zentral']", "", 30000, null, "99f5d6de-e233-4e2a-98bb-b57435107860");
             }
@@ -596,30 +594,6 @@ namespace L_DISP
                 get
                 {
                     return _rbdezentralInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SomeText item.
-            /// </summary>
-            [RepositoryItem("9f34783e-b29f-441b-b8c2-754960fc713d")]
-            public virtual Ranorex.Text SomeText
-            {
-                get
-                {
-                    return _sometextInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SomeText item info.
-            /// </summary>
-            [RepositoryItemInfo("9f34783e-b29f-441b-b8c2-754960fc713d")]
-            public virtual RepoItemInfo SomeTextInfo
-            {
-                get
-                {
-                    return _sometextInfo;
                 }
             }
 
