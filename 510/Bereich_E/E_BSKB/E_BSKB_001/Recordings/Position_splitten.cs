@@ -43,6 +43,7 @@ namespace E_BSKB_001.Recordings
         {
             Splittmenge2 = "2";
             Splittmenge1 = "3";
+            colBestaetigt2 = "";
         }
 
         /// <summary>
@@ -65,6 +66,18 @@ namespace E_BSKB_001.Recordings
         {
             get { return _Splittmenge2; }
             set { _Splittmenge2 = value; }
+        }
+
+        string _colBestaetigt2;
+
+        /// <summary>
+        /// Gets or sets the value of variable colBestaetigt2.
+        /// </summary>
+        [TestVariable("6533bba3-2fcc-4747-89bb-9767df5eb187")]
+        public string colBestaetigt2
+        {
+            get { return _colBestaetigt2; }
+            set { _colBestaetigt2 = value; }
         }
 
         /// <summary>
@@ -131,12 +144,15 @@ namespace E_BSKB_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{PageDown}' with focus on 'DlgSplittenBsp.ColBspDtbstgRow2'.", repo.DlgSplittenBsp.ColBspDtbstgRow2Info, new RecordItemIndex(8));
             repo.DlgSplittenBsp.ColBspDtbstgRow2.PressKeys("{PageDown}");
             
-            Validate_ColBspBestaetigtRow2(repo.DlgSplittenBsp.ColBspBestaetigtRow2Info);
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'DlgSplittenBsp.ColBspBestaetigtRow2' and assigning its value to variable 'colBestaetigt2'.", repo.DlgSplittenBsp.ColBspBestaetigtRow2Info, new RecordItemIndex(9));
+            colBestaetigt2 = repo.DlgSplittenBsp.ColBspBestaetigtRow2.Element.GetAttributeValueText("Text");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PbSpeichern' at Center.", repo.PbSpeichernInfo, new RecordItemIndex(10));
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateWithoutDecimals(colBestaetigt2, Splittmenge2);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PbSpeichern' at Center.", repo.PbSpeichernInfo, new RecordItemIndex(11));
             repo.PbSpeichern.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='5') on item 'TblBskb.FlexGrid.ColBspNrRow5'.", repo.TblBskb.FlexGrid.ColBspNrRow5Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='5') on item 'TblBskb.FlexGrid.ColBspNrRow5'.", repo.TblBskb.FlexGrid.ColBspNrRow5Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.TblBskb.FlexGrid.ColBspNrRow5Info, "Text", "5");
             
         }
