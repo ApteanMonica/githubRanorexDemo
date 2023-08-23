@@ -82,8 +82,8 @@ namespace N_LISTEN_BULI_002.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(120000), new RecordItemIndex(0));
             repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Verbuchung per 7.2022 nicht möglich. Es muss zuerst Zeitraum von 1.0 gebucht werden.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Verbuchung per 7.2022 nicht möglich. Es muss zuerst Zeitraum von 1.0 gebucht werden.");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=''Verbuchung·per·7.2022·nicht·möglich.  Es·muß·zuerst·Zeitraum·1.0·gebucht·werden.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "'Verbuchung·per·7.2022·nicht·möglich.  Es·muß·zuerst·Zeitraum·1.0·gebucht·werden.");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
             repo.DlgMessageBox.Button0.Click();
