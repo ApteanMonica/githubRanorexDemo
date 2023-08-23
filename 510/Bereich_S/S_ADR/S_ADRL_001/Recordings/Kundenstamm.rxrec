@@ -28,6 +28,10 @@ mode="Global">
 		name="Aptean_Austria">
 			Aptean Austria GmbH
 		</var>
+		<var
+		id="57e2724e-6c5c-40a5-8bd5-bdd515aac846"
+		name="meldung1">
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -9546,7 +9550,7 @@ hOgiiTyZ44gUQAsA/UnueKKKF0/rqDOhooooA//Z
 		<validationitem
 		action="AttributeContains"
 		duration="100ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="38550495-b4d7-4f43-bb19-25daeb8d31e1">
 			<comment>
@@ -10575,6 +10579,61 @@ AT-5101 Bergheim
 M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 			</matchvalue>
 		</validationitem>
+		<getvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="15921040-fe2e-4f70-97e9-3e2eeffb4616"
+		varname="meldung1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a9973483-6393-44ca-88b4-a8c58f46fbcb"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ValidateTextWithoutWhiteSpaces"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="cbed97ec-7243-435c-bdaf-639448f6ee57">
+				<argument
+				argname="var1"
+				id="320b95c9-c9d0-49b1-b957-f897a58e9967"
+				variable="meldung1">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="variable"
+				id="7a58a236-bbc4-42f4-8c26-7da10cdcf44b"
+				variable="Aptean_Austria">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
