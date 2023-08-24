@@ -33,6 +33,10 @@ mode="Global">
 		name="Splittmenge1">
 			3
 		</var>
+		<var
+		id="6533bba3-2fcc-4747-89bb-9767df5eb187"
+		name="colBestaetigt2">
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -4677,36 +4681,58 @@ zFAD6KRXRjhWUn2NLQAUUUUAFFFFABRRRQAUUUUAf//Z
 				</robustPath>
 			</info>
 		</keysequenceitem>
-		<userrecorditem
-		classname="Position_splitten"
+		<getvaluerecorditem
+		attrname="Text"
 		enabled="True"
-		isexternaltestmethod="False"
-		methodname="Validate_ColBspBestaetigtRow2"
-		namespace="E_BSKB_001.Recordings"
+		optional="False"
+		searchpropertyid="6deebf25-9f3c-45c0-bc71-a313c912685f"
+		varname="colBestaetigt2">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e5590acf-5970-4910-9564-9a7da88f5755"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgSplittenBsp']/container[@controlname~'tblBsp|tblSBsp']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colBsp_bestaetigt Row 2|colSBsp_bestaetigt Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ValidateWithoutDecimals"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
 		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<arguments
-			id="66b54086-dfd0-4bf1-bad5-e9d028681537">
+			id="817ade72-8ca5-4dde-b465-81e6d6516fe2">
 				<argument
-				argname="cellInfo"
-				id="bfe0f064-a8f5-40e6-aec5-f5842fe24421">
+				argname="field_D1"
+				id="6f18fade-49ee-4431-bd38-98c34fc51198"
+				variable="colBestaetigt2">
 					<argvaluetype>
-						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+						System.String
 					</argvaluetype>
 					<argvalue>
 					</argvalue>
-					<info
-					id="e5590acf-5970-4910-9564-9a7da88f5755"
-					sourcename="ItemRecorderEditor">
-						<path>
-							/form[@controlname='dlgSplittenBsp']/container[@controlname~'tblBsp|tblSBsp']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colBsp_bestaetigt Row 2|colSBsp_bestaetigt Row 2']
-						</path>
-						<robustPath>
-						</robustPath>
-					</info>
+				</argument>
+				<argument
+				argname="D1"
+				id="95ba3284-5301-48d9-b51b-91ed733be0dc"
+				variable="Splittmenge2">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>

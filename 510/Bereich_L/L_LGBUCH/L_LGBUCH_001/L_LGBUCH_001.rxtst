@@ -62,16 +62,21 @@
 			VideoFps="15"
 			VideoRecordingMode="Off"
 			VideoSource="Auto"
+			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
 			id="a52a4564-2001-443d-bd43-15b6ae2c9a71"
+			includeimageschecked="False"
+			includerecordingschecked="False"
 			junitreport="False"
 			name="L_LGBUCH_001"
+			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
 			id="a5abb2c6-1aa6-4e33-bb7c-b3b0e0fd6325"
@@ -96,6 +101,18 @@
 					datasourceid="d1781c02-da6f-4f97-9a9e-cc63660a940a"
 					variableid="6ace03c9-17fa-428e-b461-6969cea0306a"
 					variablename="Preis1">
+					</var>
+					<var
+					dataname="mengeFeld"
+					datasourceid="d1781c02-da6f-4f97-9a9e-cc63660a940a"
+					variableid="bdff9ac5-edbc-4d52-bb68-67a7c99c7ea4"
+					variablename="mengeFeld">
+					</var>
+					<var
+					dataname="menge"
+					datasourceid="d1781c02-da6f-4f97-9a9e-cc63660a940a"
+					variableid="e219b9c2-24b8-4cfa-8f2c-6917a0c851a8"
+					variablename="menge">
 					</var>
 				</databinding>
 			</testmodule>
@@ -163,6 +180,14 @@
 					<param
 					name="Abgang"
 					value="A">
+					</param>
+					<param
+					name="mengeFeld"
+					value="">
+					</param>
+					<param
+					name="menge"
+					value="3">
 					</param>
 				</parameters>
 			</testcase>
