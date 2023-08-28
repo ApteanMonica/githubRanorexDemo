@@ -92,8 +92,6 @@ namespace X_MUSTER_015
 
             Init();
 
-            text = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadFile("C:\\Users\\MRizo\\Downloads\\file2.txt");
-            
             Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateTextWithoutBreaks(text, "Aptean Austria GmbH\r\nDorfstraße 67\r\nAT-5101 Bergheim\r\n\r\nMöchten Sie als gültige UID übernehmen?");
             
         }
