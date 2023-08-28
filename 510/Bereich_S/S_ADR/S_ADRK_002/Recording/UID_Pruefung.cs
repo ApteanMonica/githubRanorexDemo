@@ -46,6 +46,7 @@ namespace S_ADRK_002.Recording
             UID_nicht_gueltig = "UID-Prüfung: die angegebene UID ist nicht gültig.";
             Neue_Kundennummer = "";
             Aptean_Austria = "Aptean Austria GmbH";
+            newText = "";
         }
 
         /// <summary>
@@ -118,6 +119,18 @@ namespace S_ADRK_002.Recording
             set { _Aptean_Austria = value; }
         }
 
+        string _newText;
+
+        /// <summary>
+        /// Gets or sets the value of variable newText.
+        /// </summary>
+        [TestVariable("7d021c0e-18d0-4e66-81e4-9f081e53a7b4")]
+        public string newText
+        {
+            get { return _newText; }
+            set { _newText = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -165,70 +178,80 @@ namespace S_ADRK_002.Recording
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmAdr.TpAllgemein.UID_Nr'.", repo.FrmAdr.TpAllgemein.UID_NrInfo, new RecordItemIndex(6));
             repo.FrmAdr.TpAllgemein.UID_Nr.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Aptean_Austria) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
-            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", Aptean_Austria);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Aptean_Austria) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
+            //Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", Aptean_Austria);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.OK' at Center.", repo.DlgMessageBox.OKInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'DlgMessageBox.LabelMeldungstext' and assigning its value to variable 'newText'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(8));
+            newText = repo.DlgMessageBox.LabelMeldungstext.Element.GetAttributeValueText("Text");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateTextWithoutBreaks(newText, Aptean_Austria);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.OK' at Center.", repo.DlgMessageBox.OKInfo, new RecordItemIndex(10));
             repo.DlgMessageBox.OK.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Speicher_Button' at Center.", repo.FrmAdr.Speicher_ButtonInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Speicher_Button' at Center.", repo.FrmAdr.Speicher_ButtonInfo, new RecordItemIndex(11));
             repo.FrmAdr.Speicher_Button.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$UID_falsch' with focus on 'FrmAdr.TpAllgemein.UID_Nr'.", repo.FrmAdr.TpAllgemein.UID_NrInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$UID_falsch' with focus on 'FrmAdr.TpAllgemein.UID_Nr'.", repo.FrmAdr.TpAllgemein.UID_NrInfo, new RecordItemIndex(12));
             repo.FrmAdr.TpAllgemein.UID_Nr.PressKeys(UID_falsch);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmAdr.TpAllgemein.UID_Nr'.", repo.FrmAdr.TpAllgemein.UID_NrInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmAdr.TpAllgemein.UID_Nr'.", repo.FrmAdr.TpAllgemein.UID_NrInfo, new RecordItemIndex(13));
             repo.FrmAdr.TpAllgemein.UID_Nr.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$UID_nicht_gueltig) on item 'DlgMessageBox.Fehlermeldung_UID_Nicht_gueltig'.", repo.DlgMessageBox.Fehlermeldung_UID_Nicht_gueltigInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$UID_nicht_gueltig) on item 'DlgMessageBox.Fehlermeldung_UID_Nicht_gueltig'.", repo.DlgMessageBox.Fehlermeldung_UID_Nicht_gueltigInfo, new RecordItemIndex(14));
             Validate.AttributeContains(repo.DlgMessageBox.Fehlermeldung_UID_Nicht_gueltigInfo, "Text", UID_nicht_gueltig);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.OK' at Center.", repo.DlgMessageBox.OKInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.OK' at Center.", repo.DlgMessageBox.OKInfo, new RecordItemIndex(15));
             repo.DlgMessageBox.OK.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Speicher_Button' at Center.", repo.FrmAdr.Speicher_ButtonInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Speicher_Button' at Center.", repo.FrmAdr.Speicher_ButtonInfo, new RecordItemIndex(16));
             repo.FrmAdr.Speicher_Button.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Extras' at Center.", repo.FrmAdr.ExtrasInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Extras' at Center.", repo.FrmAdr.ExtrasInfo, new RecordItemIndex(17));
             repo.FrmAdr.Extras.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SADR.UIDPruefung' at Center.", repo.SADR.UIDPruefungInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SADR.UIDPruefung' at Center.", repo.SADR.UIDPruefungInfo, new RecordItemIndex(18));
             repo.SADR.UIDPruefung.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Bearbeiten' at Center.", repo.BearbeitenInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Bearbeiten' at Center.", repo.BearbeitenInfo, new RecordItemIndex(19));
             repo.Bearbeiten.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblUidCheck.DfAdrNrVon' at Center.", repo.TblUidCheck.DfAdrNrVonInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblUidCheck.DfAdrNrVon' at Center.", repo.TblUidCheck.DfAdrNrVonInfo, new RecordItemIndex(20));
             repo.TblUidCheck.DfAdrNrVon.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Neue_Kundennummer' with focus on 'TblUidCheck.DfAdrNrVon'.", repo.TblUidCheck.DfAdrNrVonInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Neue_Kundennummer' with focus on 'TblUidCheck.DfAdrNrVon'.", repo.TblUidCheck.DfAdrNrVonInfo, new RecordItemIndex(21));
             repo.TblUidCheck.DfAdrNrVon.PressKeys(Neue_Kundennummer);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblUidCheck.Laden' at Center.", repo.TblUidCheck.LadenInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblUidCheck.Laden' at Center.", repo.TblUidCheck.LadenInfo, new RecordItemIndex(22));
             repo.TblUidCheck.Laden.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ATU75818635') on item 'TblUidCheck.ColAdrUidnrRow1'.", repo.TblUidCheck.ColAdrUidnrRow1Info, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ATU75818635') on item 'TblUidCheck.ColAdrUidnrRow1'.", repo.TblUidCheck.ColAdrUidnrRow1Info, new RecordItemIndex(23));
             Validate.AttributeEqual(repo.TblUidCheck.ColAdrUidnrRow1Info, "Text", "ATU75818635");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblUidCheck.Schliessen' at Center.", repo.TblUidCheck.SchliessenInfo, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblUidCheck.Schliessen' at Center.", repo.TblUidCheck.SchliessenInfo, new RecordItemIndex(24));
             repo.TblUidCheck.Schliessen.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAdr.TpAllgemein.UID_Nr' at Center.", repo.FrmAdr.TpAllgemein.UID_NrInfo, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAdr.TpAllgemein.UID_Nr' at Center.", repo.FrmAdr.TpAllgemein.UID_NrInfo, new RecordItemIndex(25));
             repo.FrmAdr.TpAllgemein.UID_Nr.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$UID_korrekt' with focus on 'FrmAdr.TpAllgemein.UID_Nr'.", repo.FrmAdr.TpAllgemein.UID_NrInfo, new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$UID_korrekt' with focus on 'FrmAdr.TpAllgemein.UID_Nr'.", repo.FrmAdr.TpAllgemein.UID_NrInfo, new RecordItemIndex(26));
             repo.FrmAdr.TpAllgemein.UID_Nr.PressKeys(UID_korrekt);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmAdr.TpAllgemein.UID_Nr'.", repo.FrmAdr.TpAllgemein.UID_NrInfo, new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmAdr.TpAllgemein.UID_Nr'.", repo.FrmAdr.TpAllgemein.UID_NrInfo, new RecordItemIndex(27));
             repo.FrmAdr.TpAllgemein.UID_Nr.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Aptean_Austria) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(26));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", Aptean_Austria);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Aptean_Austria) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(28));
+            //Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", Aptean_Austria);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.OK' at Center.", repo.DlgMessageBox.OKInfo, new RecordItemIndex(27));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'DlgMessageBox.LabelMeldungstext' and assigning its value to variable 'newText'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(29));
+            newText = repo.DlgMessageBox.LabelMeldungstext.Element.GetAttributeValueText("Text");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateTextWithoutBreaks(newText, Aptean_Austria);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.OK' at Center.", repo.DlgMessageBox.OKInfo, new RecordItemIndex(31));
             repo.DlgMessageBox.OK.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Speicher_Button' at Center.", repo.FrmAdr.Speicher_ButtonInfo, new RecordItemIndex(28));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Speicher_Button' at Center.", repo.FrmAdr.Speicher_ButtonInfo, new RecordItemIndex(32));
             repo.FrmAdr.Speicher_Button.Click();
             
         }

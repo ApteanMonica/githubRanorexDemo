@@ -208,7 +208,7 @@ namespace S_ADRK_001.Recordings
             Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'DlgMessageBox.LabelMeldungstext1' and assigning its value to variable 'meldung1'.", repo.DlgMessageBox.LabelMeldungstext1Info, new RecordItemIndex(16));
             meldung1 = repo.DlgMessageBox.LabelMeldungstext1.Element.GetAttributeValueText("Text");
             
-            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateTextWithoutWhiteSpaces(meldung1, "Bitte Kundennummer eingeben !");
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateTextWithoutBreaks(meldung1, "Bitte Kundennummer eingeben !");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Bestaetigung_Fehlermeldung' at Center.", repo.DlgMessageBox.Bestaetigung_FehlermeldungInfo, new RecordItemIndex(18));
             repo.DlgMessageBox.Bestaetigung_Fehlermeldung.Click();
