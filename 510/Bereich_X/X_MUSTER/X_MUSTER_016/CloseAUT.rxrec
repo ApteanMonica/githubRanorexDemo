@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4d645289-69bc-4b78-be30-cedf843c69e3"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="X_MUSTER_016">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="500ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="a0d0b2df-768f-424f-9cb9-378245588358">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="77895aa8-c4b9-44d8-90a2-e2f8ff0953a4"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="7"
+				prefcap="titlebar"
+				rect="642,96,989,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Kundenstamm
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Kundenstamm
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmAdr']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="895dd710-bf85-4dc6-ac77-ba8874d95fc8"
+	name="X_MUSTER_016Repository"
+	relativepath="X_MUSTER_016Repository.rxrep">
+		<codegen
+		classname="X_MUSTER_016Repository"
+		namespace="X_MUSTER_016">
+		</codegen>
+		<rootfolder
+		id="dcc90cb4-f0c9-47bc-8671-b61c2dea631b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
