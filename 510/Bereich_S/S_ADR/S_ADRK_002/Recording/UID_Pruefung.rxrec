@@ -2326,6 +2326,22 @@ M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 				</robustPath>
 			</info>
 		</getvaluerecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="82e4d3bc-caef-4e16-b99f-f4a52663500b">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="newText">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 		<userrecorditem
 		classname="Aptean"
 		enabled="True"
@@ -2350,7 +2366,7 @@ M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 					</argvalue>
 				</argument>
 				<argument
-				argname="variable"
+				argname="var2"
 				id="80a59de7-f1fb-46b3-9816-f07078d8faea"
 				variable="Aptean_Austria">
 					<argvaluetype>
@@ -35014,7 +35030,7 @@ M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 					</argvalue>
 				</argument>
 				<argument
-				argname="variable"
+				argname="var2"
 				id="80a59de7-f1fb-46b3-9816-f07078d8faea"
 				variable="Aptean_Austria">
 					<argvaluetype>

@@ -208,18 +208,20 @@ namespace S_ADRK_001.Recordings
             Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'DlgMessageBox.LabelMeldungstext1' and assigning its value to variable 'meldung1'.", repo.DlgMessageBox.LabelMeldungstext1Info, new RecordItemIndex(16));
             meldung1 = repo.DlgMessageBox.LabelMeldungstext1.Element.GetAttributeValueText("Text");
             
+            Report.Log(ReportLevel.Info, "User", meldung1, new RecordItemIndex(17));
+            
             Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateTextWithoutBreaks(meldung1, "Bitte Kundennummer eingeben !");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Bestaetigung_Fehlermeldung' at Center.", repo.DlgMessageBox.Bestaetigung_FehlermeldungInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Bestaetigung_Fehlermeldung' at Center.", repo.DlgMessageBox.Bestaetigung_FehlermeldungInfo, new RecordItemIndex(19));
             repo.DlgMessageBox.Bestaetigung_Fehlermeldung.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Nummer_Button' at Center.", repo.FrmAdr.Nummer_ButtonInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Nummer_Button' at Center.", repo.FrmAdr.Nummer_ButtonInfo, new RecordItemIndex(20));
             repo.FrmAdr.Nummer_Button.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'\\d{6}') on item 'FrmAdr.ClientArea.DfAdrNr'.", repo.FrmAdr.ClientArea.DfAdrNrInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'\\d{6}') on item 'FrmAdr.ClientArea.DfAdrNr'.", repo.FrmAdr.ClientArea.DfAdrNrInfo, new RecordItemIndex(21));
             Validate.AttributeRegex(repo.FrmAdr.ClientArea.DfAdrNrInfo, "Text", new Regex("\\d{6}"));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Speicher_Button' at Center.", repo.FrmAdr.Speicher_ButtonInfo, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Speicher_Button' at Center.", repo.FrmAdr.Speicher_ButtonInfo, new RecordItemIndex(22));
             repo.FrmAdr.Speicher_Button.Click();
             
         }
