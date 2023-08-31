@@ -82,34 +82,37 @@ namespace K_VERE_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'TblVerr_K_VERE.FlexGrid' at UpperLeft.", repo.TblVerr_K_VERE.FlexGridInfo, new RecordItemIndex(0));
             repo.TblVerr_K_VERE.FlexGrid.Click(System.Windows.Forms.MouseButtons.Right, Location.UpperLeft);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Insert}' with focus on 'TblVerr_K_VERE.FlexGrid'.", repo.TblVerr_K_VERE.FlexGridInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(1));
+            Delay.Duration(300, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Insert}' with focus on 'TblVerr_K_VERE.FlexGrid'.", repo.TblVerr_K_VERE.FlexGridInfo, new RecordItemIndex(2));
             repo.TblVerr_K_VERE.FlexGrid.PressKeys("{Insert}");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.Row2_erste_Erfassungszeile'", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.Row2_erste_ErfassungszeileInfo, new ActionTimeout(60000), new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.Row2_erste_Erfassungszeile'", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.Row2_erste_ErfassungszeileInfo, new ActionTimeout(60000), new RecordItemIndex(3));
             repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.Row2_erste_ErfassungszeileInfo.WaitForExists(60000);
             
             // nicht für die Einschränkung relevante Felder müssen ausgeblendet sein
-            Report.Log(ReportLevel.Info, "Section", "nicht für die Einschränkung relevante Felder müssen ausgeblendet sein", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Section", "nicht für die Einschränkung relevante Felder müssen ausgeblendet sein", new RecordItemIndex(4));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='True') on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKs1NrVonRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKs1NrVonRow2Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='True') on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKs1NrVonRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKs1NrVonRow2Info, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKs1NrVonRow2Info, "Visible", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='True') on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKs1NrAnRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKs1NrAnRow2Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='True') on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKs1NrAnRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKs1NrAnRow2Info, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKs1NrAnRow2Info, "Visible", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='True') on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrMenge1Row2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrMenge1Row2Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='True') on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrMenge1Row2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrMenge1Row2Info, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrMenge1Row2Info, "Visible", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='True') on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrTextRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrTextRow2Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='True') on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrTextRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrTextRow2Info, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrTextRow2Info, "Visible", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='False') on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKtoNrVonRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKtoNrVonRow2Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='False') on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKtoNrVonRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKtoNrVonRow2Info, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKtoNrVonRow2Info, "Visible", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='False') on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKtoNrAnRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKtoNrAnRow2Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='False') on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKtoNrAnRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKtoNrAnRow2Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColKtoNrAnRow2Info, "Visible", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='False') on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='False') on item 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2Info, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrBetragRow2Info, "Visible", "False");
             
         }
