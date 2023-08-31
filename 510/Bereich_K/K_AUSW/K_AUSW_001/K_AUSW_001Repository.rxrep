@@ -17,7 +17,7 @@ name="K_AUSW_001Repository">
 		id="9e3bdf74-cea0-442d-a420-5c4e62b994f9"
 		isrooted="True"
 		name="FrmMain"
-		refimgid="7d993425-8164-43c4-b6a4-957a207c2ae6"
+		refimgid="f2bfd970-303a-4bc0-8982-372499f35153"
 		refpath="/form[@controlname='frmMain']"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -300,6 +300,17 @@ name="K_AUSW_001Repository">
 					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='splitContainer']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='SubForm_tblAtbz']/form[@controlname='tblAtbz']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
 				</basepath>
 			</folder>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="bff54d92-7a1e-4ff7-b34a-0803b12cca05"
+			name="SomeText"
+			refimgid="16a575ae-d340-44ba-9d6b-6148afd11be4"
+			refpath="/form[@controlname='frmMain']/container[@controlname='ClientArea']/container/container[@caption='' and @controltypename='SplitterPanel' and @instance='1']/container/form/container[@controlname='ChildTableWindow']/element/text[@controltypename='']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='splitContainer']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='SubForm_tblAtbz']/form[@controlname='tblAtbz']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/text[@controltypename='']
+			</item>
 			<basepath>
 				/form[@controlname='frmMain']
 			</basepath>
@@ -850,6 +861,7 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 		id="d8c10cfb-4bc1-4a93-8003-dcc2e8ff8eec"
 		isrooted="True"
 		name="DlgListBox"
+		refimgid="d0ff8e08-9213-45b6-ac69-778c5b09ce99"
 		refpath="/form[@controlname='dlgListBox']"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -896,6 +908,39 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='dlgListBox']/container[@controlname='panelButtons']/button[@controlname='pbOk']
+			</item>
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="3f148958-fbf3-4185-99cf-1e7ff758265f"
+			name="FlexGrid"
+			refimgid="6a6c6693-43a5-4b45-a8ac-d4331916d791"
+			refpath="/form/container/container/element/table"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgListBox']/container/container/element/table
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="4e666cb0-c920-45a8-9a45-4ce50de10516"
+			name="Schliessen"
+			refimgid="ce415da5-4af7-4412-894a-03a214a88d04"
+			refpath="/form[@controlname='dlgListBox']/titlebar/button[@accessiblename='Schließen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgListBox']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="81e29e36-517f-438c-b727-ec228a85f4ec"
+			name="Schliessen1"
+			refimgid="5562707e-5a45-47a6-81de-ccef69459caa"
+			refpath="/form/titlebar/button"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgListBox']/titlebar/button
 			</item>
 			<basepath>
 				/form[@controlname='dlgListBox']
