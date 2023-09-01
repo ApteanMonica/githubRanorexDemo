@@ -82,8 +82,8 @@ namespace K_AUSW_001.Recordings_k_ausw
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.FlexGrid_TblAtbz.Row1Column0' at Center.", repo.FrmMain.FlexGrid_TblAtbz.Row1Column0Info, new RecordItemIndex(0));
             repo.FrmMain.FlexGrid_TblAtbz.Row1Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 4s.", new RecordItemIndex(1));
-            Delay.Duration(4000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
+            Delay.Duration(2000, false);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.PbToolBarItemsRechnen' at Center.", repo.FrmMain.PbToolBarItemsRechnenInfo, new RecordItemIndex(2));
             repo.FrmMain.PbToolBarItemsRechnen.Click();
