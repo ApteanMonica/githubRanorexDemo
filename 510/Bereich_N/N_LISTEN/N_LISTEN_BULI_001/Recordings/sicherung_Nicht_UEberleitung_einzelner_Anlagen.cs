@@ -24,59 +24,59 @@ namespace N_LISTEN_BULI_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The Nicht_UEberleitung_einzelner_Anlagen recording.
     /// </summary>
-    [TestModule("3147901d-b751-4852-8cd6-719e800cfc45", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    [TestModule("71d7868f-4549-444e-8b35-666e0fb1d5c2", ModuleType.Recording, 1)]
+    public partial class Nicht_UEberleitung_einzelner_Anlagen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repo = global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static Nicht_UEberleitung_einzelner_Anlagen instance = new Nicht_UEberleitung_einzelner_Anlagen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public Nicht_UEberleitung_einzelner_Anlagen()
         {
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm = "N_LISTEN Aufrufart BULI";
+            Anlagennr_001 = "N_LISTEN_001_01";
+            Anlagennr_002 = "N_LISTEN_001_02";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static Nicht_UEberleitung_einzelner_Anlagen Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Startfile;
+        string _Anlagennr_001;
 
         /// <summary>
-        /// Gets or sets the value of variable Startfile.
+        /// Gets or sets the value of variable Anlagennr_001.
         /// </summary>
-        [TestVariable("65bf97cc-f6b4-4e05-b91c-1c0010b6a47e")]
-        public string Startfile
+        [TestVariable("80b04c51-9ecf-4368-a9d1-62a0dc423946")]
+        public string Anlagennr_001
         {
-            get { return _Startfile; }
-            set { _Startfile = value; }
+            get { return _Anlagennr_001; }
+            set { _Anlagennr_001 = value; }
         }
 
-        string _Programm;
+        string _Anlagennr_002;
 
         /// <summary>
-        /// Gets or sets the value of variable Programm.
+        /// Gets or sets the value of variable Anlagennr_002.
         /// </summary>
-        [TestVariable("52e37faf-2152-4c85-ac91-340dfc64728b")]
-        public string Programm
+        [TestVariable("77b354b4-4a07-4042-a6ab-2ad7d33a1d02")]
+        public string Anlagennr_002
         {
-            get { return _Programm; }
-            set { _Programm = value; }
+            get { return _Anlagennr_002; }
+            set { _Anlagennr_002 = value; }
         }
 
 #endregion
@@ -105,14 +105,17 @@ namespace N_LISTEN_BULI_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm, "", false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbUEberleitungFibu' at Center.", repo.FrmBuchungsliste.PbUEberleitungFibuInfo, new RecordItemIndex(0));
+            repo.FrmBuchungsliste.PbUEberleitungFibu.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungs'", repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'AVZ-Auswertungen Buchungsliste') on item 'FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungs'.", repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo, "Text", "AVZ-Auswertungen Buchungsliste");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es kann keine monatliche Fibu-Überleitung durchgeführt\r\nwerden, wenn nicht alle Anlagen verwendet werden !') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es kann keine monatliche Fibu-Überleitung durchgeführt\r\nwerden, wenn nicht alle Anlagen verwendet werden !");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(3));
+            repo.DlgMessageBox.Button0.Click();
             
         }
 
