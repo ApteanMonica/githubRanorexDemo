@@ -3230,6 +3230,7 @@ namespace K_PBU_001
             RepoItemInfo _titlebar100korebuchungenanzeigenInfo;
             RepoItemInfo _pbkontenkontenInfo;
             RepoItemInfo _pbdataaccessladenInfo;
+            RepoItemInfo _pbdataaccessneuInfo;
             RepoItemInfo _row1Info;
 
             /// <summary>
@@ -3245,6 +3246,7 @@ namespace K_PBU_001
                 _titlebar100korebuchungenanzeigenInfo = new RepoItemInfo(this, "TitleBar100KOREBuchungenAnzeigen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "d62a4d86-2246-49d7-ab27-257be480adac");
                 _pbkontenkontenInfo = new RepoItemInfo(this, "PbKontenKonten", "container[@controlname='RibbonBar']/container[@controlname='KontenGroup']/button[@controlname='pbKonten_Konten']", "", 30000, null, "8b37276c-d429-4ae6-b1db-2981dbb148ec");
                 _pbdataaccessladenInfo = new RepoItemInfo(this, "PbDataAccessLaden", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Laden']", "", 30000, null, "6b9d92ff-6a00-4651-8dc4-f77c6f792673");
+                _pbdataaccessneuInfo = new RepoItemInfo(this, "PbDataAccessNeu", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Neu']", "", 30000, null, "6a1b6762-e4e6-4ad6-ab63-7de404775e28");
                 _row1Info = new RepoItemInfo(this, "Row1", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']", "", 30000, null, "b29fb2d5-d563-47b7-871c-3969bff555f3");
             }
 
@@ -3341,6 +3343,30 @@ namespace K_PBU_001
                 get
                 {
                     return _pbdataaccessladenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessNeu item.
+            /// </summary>
+            [RepositoryItem("6a1b6762-e4e6-4ad6-ab63-7de404775e28")]
+            public virtual Ranorex.Button PbDataAccessNeu
+            {
+                get
+                {
+                    return _pbdataaccessneuInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessNeu item info.
+            /// </summary>
+            [RepositoryItemInfo("6a1b6762-e4e6-4ad6-ab63-7de404775e28")]
+            public virtual RepoItemInfo PbDataAccessNeuInfo
+            {
+                get
+                {
+                    return _pbdataaccessneuInfo;
                 }
             }
 
