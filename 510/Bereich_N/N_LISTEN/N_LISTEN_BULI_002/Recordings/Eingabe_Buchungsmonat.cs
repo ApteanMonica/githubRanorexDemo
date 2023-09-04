@@ -94,22 +94,34 @@ namespace N_LISTEN_BULI_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(4));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAnfi.ColAnvabeBulimonatRow1' at Center.", repo.FrmAnfi.ColAnvabeBulimonatRow1Info, new RecordItemIndex(5));
-            repo.FrmAnfi.ColAnvabeBulimonatRow1.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnfi.ColAnvabeBulijahrRow1' at Center.", repo.FrmAnfi.ColAnvabeBulijahrRow1Info, new RecordItemIndex(5));
+            repo.FrmAnfi.ColAnvabeBulijahrRow1.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '7{Tab}' with focus on 'FrmAnfi.ColAnvabeBulimonatRow1'.", repo.FrmAnfi.ColAnvabeBulimonatRow1Info, new RecordItemIndex(6));
-            repo.FrmAnfi.ColAnvabeBulimonatRow1.PressKeys("7{Tab}");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAnfi.ColAnvabeBulijahrRow1' at Center.", repo.FrmAnfi.ColAnvabeBulijahrRow1Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAnfi.ColAnvabeBulijahrRow1' at Center.", repo.FrmAnfi.ColAnvabeBulijahrRow1Info, new RecordItemIndex(6));
             repo.FrmAnfi.ColAnvabeBulijahrRow1.DoubleClick();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(7));
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2022{Tab}' with focus on 'FrmAnfi.ColAnvabeBulijahrRow1'.", repo.FrmAnfi.ColAnvabeBulijahrRow1Info, new RecordItemIndex(8));
             repo.FrmAnfi.ColAnvabeBulijahrRow1.PressKeys("2022{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnfi.PbDataAccessSave' at Center.", repo.FrmAnfi.PbDataAccessSaveInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnfi.ColAnvabeBulimonatRow1' at Center.", repo.FrmAnfi.ColAnvabeBulimonatRow1Info, new RecordItemIndex(9));
+            repo.FrmAnfi.ColAnvabeBulimonatRow1.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAnfi.ColAnvabeBulimonatRow1' at Center.", repo.FrmAnfi.ColAnvabeBulimonatRow1Info, new RecordItemIndex(10));
+            repo.FrmAnfi.ColAnvabeBulimonatRow1.DoubleClick();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(11));
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '7{Tab}' with focus on 'FrmAnfi.ColAnvabeBulimonatRow1'.", repo.FrmAnfi.ColAnvabeBulimonatRow1Info, new RecordItemIndex(12));
+            repo.FrmAnfi.ColAnvabeBulimonatRow1.PressKeys("7{Tab}");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnfi.PbDataAccessSave' at Center.", repo.FrmAnfi.PbDataAccessSaveInfo, new RecordItemIndex(13));
             repo.FrmAnfi.PbDataAccessSave.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press.", new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press.", new RecordItemIndex(14));
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }

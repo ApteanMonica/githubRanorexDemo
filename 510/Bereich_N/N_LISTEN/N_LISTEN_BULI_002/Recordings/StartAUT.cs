@@ -42,7 +42,7 @@ namespace N_LISTEN_BULI_002.Recordings
         public StartAUT()
         {
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm_01 = "N_LISTEN Aufrufart BULI";
+            Programm = "N_LISTEN Aufrufart BULI";
         }
 
         /// <summary>
@@ -67,16 +67,16 @@ namespace N_LISTEN_BULI_002.Recordings
             set { _Startfile = value; }
         }
 
-        string _Programm_01;
+        string _Programm;
 
         /// <summary>
-        /// Gets or sets the value of variable Programm_01.
+        /// Gets or sets the value of variable Programm.
         /// </summary>
         [TestVariable("5ecaca10-64c1-454b-981d-b07c1f337fd4")]
-        public string Programm_01
+        public string Programm
         {
-            get { return _Programm_01; }
-            set { _Programm_01 = value; }
+            get { return _Programm; }
+            set { _Programm = value; }
         }
 
 #endregion
@@ -105,8 +105,8 @@ namespace N_LISTEN_BULI_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_01 in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm_01, "", false);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile, Programm, "", false);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungs'", repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo, new ActionTimeout(120000), new RecordItemIndex(1));
             repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo.WaitForExists(120000);

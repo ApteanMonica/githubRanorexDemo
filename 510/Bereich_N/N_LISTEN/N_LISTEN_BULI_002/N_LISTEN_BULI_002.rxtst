@@ -24,7 +24,7 @@
 			id="1aa5b1f0-f9cc-44c5-a31b-70a1937e5f0d"
 			name="511">
 				<conditiongroup
-				comparison="AND"
+				comparison="OR"
 				enabled="True">
 					<condition
 					comparison="IsEqual">
@@ -79,7 +79,7 @@
 				</description>
 				<databinding>
 					<var
-					dataname="Programm_02"
+					dataname="Programm03"
 					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
 					variableid="b4c27fa9-1d28-42e1-b744-2ceea90ca68d"
 					variablename="Programm_02">
@@ -130,7 +130,7 @@
 					variablename="Startfile">
 					</var>
 					<var
-					dataname="Programm_02"
+					dataname="Programm03"
 					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
 					variableid="3ea8ad14-4e01-4619-8f82-006890491c5c"
 					variablename="Programm_02">
@@ -144,10 +144,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm_01"
+					dataname="Programm"
 					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
 					variableid="5ecaca10-64c1-454b-981d-b07c1f337fd4"
-					variablename="Programm_01">
+					variablename="Programm">
 					</var>
 					<var
 					dataname="Startfile"
@@ -269,11 +269,15 @@
 					value="C:\Testdaten\Allgemein\Start.bat">
 					</param>
 					<param
-					name="Programm_01"
+					name="Programm"
 					value="N_LISTEN Aufrufart BULI">
 					</param>
 					<param
-					name="Programm_02"
+					name="Programm02"
+					value="N_STAMM AUFRUFART=ANFI">
+					</param>
+					<param
+					name="Programm03"
 					value="N_STAMM AUFRUFART=ANFI">
 					</param>
 					<param
@@ -305,10 +309,6 @@
 					value="7">
 					</param>
 					<param
-					name="Programm_2"
-					value="">
-					</param>
-					<param
 					name="Buchungsjahr"
 					value="2022">
 					</param>
@@ -320,10 +320,6 @@
 			</testcase>
 			<setup
 			id="a9425175-372a-45ee-96de-048eee0e4105"
-			name="setup">
-			</setup>
-			<setup
-			id="a9e38dd1-ffd4-4e40-9248-98e5a3808673"
 			name="setup">
 			</setup>
 			<testmodule
@@ -515,10 +511,6 @@
 						<smartfoldernode
 						id="1aa5b1f0-f9cc-44c5-a31b-70a1937e5f0d"
 						name="511">
-							<setup
-							id="a9e38dd1-ffd4-4e40-9248-98e5a3808673"
-							name="setup">
-							</setup>
 							<testmodule
 							id="41904477-c20a-4967-b732-e6bbf425f0d0"
 							name="Ueberleitungsmeldung_511">

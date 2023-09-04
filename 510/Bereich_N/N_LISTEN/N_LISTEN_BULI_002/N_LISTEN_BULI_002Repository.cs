@@ -122,6 +122,7 @@ namespace N_LISTEN_BULI_002
             RepoItemInfo _titlebar100avzauswertungenbuchungsInfo;
             RepoItemInfo _pbueberleitungfibuInfo;
             RepoItemInfo _pboptionentabelleInfo;
+            RepoItemInfo _pbdataaccessneuInfo;
             RepoItemInfo _geschaeftsjahrInfo;
             RepoItemInfo _rbmonatInfo;
             RepoItemInfo _cmbvarianteInfo;
@@ -138,6 +139,7 @@ namespace N_LISTEN_BULI_002
                 _titlebar100avzauswertungenbuchungsInfo = new RepoItemInfo(this, "TitleBar100AVZAuswertungenBuchungs", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "9c9f1d4c-9598-4eb9-9fd8-93359397ee0b");
                 _pbueberleitungfibuInfo = new RepoItemInfo(this, "PbUEberleitungFibu", "container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup5']/button[@controlname='pbÜberleitung_Fibu']", "", 30000, null, "b7b667d7-ab4c-4e7c-9bb7-5de4952303ec");
                 _pboptionentabelleInfo = new RepoItemInfo(this, "PbOptionenTabelle", "?/?/container[@controlname='cRibbonGroup4']/button[@controlname='pbOptionen_Tabelle']", "", 30000, null, "02dccef5-abfb-445e-986d-44e3a88ea1b8");
+                _pbdataaccessneuInfo = new RepoItemInfo(this, "PbDataAccessNeu", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Neu']", "", 30000, null, "a4042764-81ac-4e22-aa03-9e409360b755");
                 _geschaeftsjahrInfo = new RepoItemInfo(this, "Geschaeftsjahr", "?/?/container[@controlname='frame1']/?/?/text[@accessiblename='Geschäftsjahr']", "", 30000, null, "4736ac10-315d-4c33-bab5-e0f453d74e86");
                 _rbmonatInfo = new RepoItemInfo(this, "RbMonat", "?/?/container[@controlname='groupBox1']/radiobutton[@controlname='rbMonat']", "", 30000, null, "384ddb80-a339-462e-824f-83741337cad1");
                 _cmbvarianteInfo = new RepoItemInfo(this, "CmbVariante", "?/?/combobox[@controlname='cmbVariante']", "", 30000, null, "b02f5911-16cd-4001-852a-2d2ce2179738");
@@ -238,6 +240,30 @@ namespace N_LISTEN_BULI_002
                 get
                 {
                     return _pboptionentabelleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessNeu item.
+            /// </summary>
+            [RepositoryItem("a4042764-81ac-4e22-aa03-9e409360b755")]
+            public virtual Ranorex.Button PbDataAccessNeu
+            {
+                get
+                {
+                    return _pbdataaccessneuInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessNeu item info.
+            /// </summary>
+            [RepositoryItemInfo("a4042764-81ac-4e22-aa03-9e409360b755")]
+            public virtual RepoItemInfo PbDataAccessNeuInfo
+            {
+                get
+                {
+                    return _pbdataaccessneuInfo;
                 }
             }
 
