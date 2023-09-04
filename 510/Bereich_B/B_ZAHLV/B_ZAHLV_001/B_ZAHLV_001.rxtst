@@ -169,26 +169,16 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="1da6975b-21d0-4ee0-b24a-93f04927a75a"
 			name="SQL_Abfrage_Beleg_1001"
 			ref="9d4f59a9-9ef3-4f29-809b-8ca0da01da29"
 			type="Recording">
-				<description>
-					<![CDATA[deaktiviert, weil Testfall auf den Testservern hängen bleibt]]>
-				</description>
 				<databinding>
 					<var
-					dataname="output_file_select_b_busa_akt"
+					dataname="file_selectergebnis_b_busa_aktuell"
 					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
 					variableid="32df8d2d-a9cb-4e59-ae9f-8d2f302926a7"
-					variablename="output_file_select_b_busa_akt">
-					</var>
-					<var
-					dataname="DB_File"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="b2ddc891-35e9-42a4-bb53-685bf4b418bb"
-					variablename="DB_File">
+					variablename="file_selectergebnis_b_busa_aktuell">
 					</var>
 					<var
 					dataname="SQL_Select_B_BUSA"
@@ -197,24 +187,38 @@
 					variablename="SQL_Select_B_BUSA">
 					</var>
 					<var
-					dataname="output_file_select_b_busa_ref_1"
+					dataname="file_SQL_Select_B_BUSA"
 					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="64f5aaec-2205-498c-83d3-79694ec03669"
-					variablename="output_file_select_b_busa_ref_1">
+					variableid="3a2ec336-0c6f-4c58-92bb-683f4131e660"
+					variablename="file_SQL_Select_B_BUSA">
 					</var>
 					<var
-					dataname="output_file_select_b_busa_ref_2"
+					dataname="file_selectergebnis_b_busa_Referenz_Teil_1"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="64f5aaec-2205-498c-83d3-79694ec03669"
+					variablename="file_selectergebnis_b_busa_Referenz_Teil_1">
+					</var>
+					<var
+					dataname="file_selectergebnis_b_busa_Referenz_Teil_2"
 					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
 					variableid="9bd40583-7f95-4af8-90b4-1b7c75ecfea7"
-					variablename="output_file_select_b_busa_ref_2">
+					variablename="file_selectergebnis_b_busa_Referenz_Teil_2">
 					</var>
+					<var
+					dataname="DB_File"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="b2ddc891-35e9-42a4-bb53-685bf4b418bb"
+					variablename="DB_File">
+					</var>
+				</databinding>
+				<missingdatabinding>
 					<var
 					dataname="output_file_select_b_busa_ref"
 					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
 					variableid="f6b28cd6-6599-45fa-827f-fcba99142176"
 					variablename="output_file_select_b_busa_ref">
 					</var>
-				</databinding>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="1f00ed20-fcce-4967-83e9-30a424550a9c"
@@ -1199,28 +1203,36 @@ Datum,Buchungs-Nr)]]>
 					value="0,00">
 					</param>
 					<param
-					name="SQL_Select_B_BUSA"
-					value="select * from b_busa where firm_nr = '100' and busa_belegnr = '1001';">
-					</param>
-					<param
 					name="DB_File"
 					value="C:\Testdaten\Allgemein\UserCode\datenbank.txt">
 					</param>
 					<param
-					name="output_file_select_b_busa_akt"
+					name="SQL_Select_B_BUSA"
+					value="select * from b_busa where firm_nr = '100' and busa_belegnr = '1001';">
+					</param>
+					<param
+					name="file_SQL_Select_B_BUSA"
+					value="C:\Testdaten\Allgemein\Sonstige\SQL_Referenz_Files\B_ZAHLV_001\SQL_Select_B_BUSA.txt">
+					</param>
+					<param
+					name="file_selectergebnis_b_busa_aktuell"
 					value="C:\temp\B_ZAHLV_001_B_BUSA_aktuell.txt">
 					</param>
 					<param
-					name="output_file_select_b_busa_ref_1"
-					value="C:\Testdaten\Allgemein\Sonstige\SQL_Files_B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz_1.txt">
+					name="file_selectergebnis_b_busa_Referenz_Teil_1"
+					value="C:\Testdaten\Allgemein\Sonstige\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz_1.txt">
 					</param>
 					<param
-					name="output_file_select_b_busa_ref_2"
-					value="C:\Testdaten\Allgemein\Sonstige\SQL_Files_B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz_2.txt">
+					name="file_selectergebnis_b_busa_Referenz_Teil_2"
+					value="C:\Testdaten\Allgemein\Sonstige\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz_2.txt">
 					</param>
 					<param
-					name="output_file_select_b_busa_ref"
-					value="C:\Testdaten\Allgemein\Sonstige\SQL_Files_B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz.txt">
+					name="Computername"
+					value="">
+					</param>
+					<param
+					name="NewParameter"
+					value="">
 					</param>
 				</parameters>
 			</testcase>

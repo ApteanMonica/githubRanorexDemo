@@ -43,10 +43,10 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
         {
             SQL_Select_B_BUSA = "select * from b_busa where firm_nr = '100' and busa_belegnr = '1001';";
             DB_File = "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt";
-            output_file_select_b_busa_akt = "C:\\Testdaten\\Allgemein\\UserCode\\Files_B_ZAHLV_001\\B_ZAHLV_001_B_BUSA_aktuell.txt";
-            output_file_select_b_busa_ref_1 = "C:\\Testdaten\\Allgemein\\UserCode\\Files_B_ZAHLV_001\\B_ZAHLV_001_B_BUSA_Referenz_1.txt";
-            output_file_select_b_busa_ref_2 = "C:\\Testdaten\\Allgemein\\UserCode\\Files_B_ZAHLV_001\\B_ZAHLV_001_B_BUSA_Referenz_2.txt";
-            output_file_select_b_busa_ref = "C:\\Testdaten\\Allgemein\\UserCode\\Files_B_ZAHLV_001\\B_ZAHLV_001_B_BUSA_Referenz.txt";
+            file_selectergebnis_b_busa_aktuell = "C:\\temp\\B_ZAHLV_001_B_BUSA_aktuell.txt";
+            file_selectergebnis_b_busa_Referenz_Teil_1 = "C:\\Testdaten\\Sonstige Daten\\SQL_Referenz_Files\\B_ZAHLV_001\\SQL_Referenz_Files\\B_ZAHLV_001B_ZAHLV_001_B_BUSA_Referenz_1.txt";
+            file_selectergebnis_b_busa_Referenz_Teil_2 = "C:\\Testdaten\\Sonstige Daten\\SQL_Referenz_Files\\B_ZAHLV_001B_ZAHLV_001_B_BUSA_Referenz_2.txt";
+            file_SQL_Select_B_BUSA = "C:\\Testdaten\\Sonstige Daten\\SQL_Referenz_Files\\B_ZAHLV_001\\SQL_Select_B_BUSA.txt";
         }
 
         /// <summary>
@@ -83,52 +83,52 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
             set { _DB_File = value; }
         }
 
-        string _output_file_select_b_busa_akt;
+        string _file_selectergebnis_b_busa_aktuell;
 
         /// <summary>
-        /// Gets or sets the value of variable output_file_select_b_busa_akt.
+        /// Gets or sets the value of variable file_selectergebnis_b_busa_aktuell.
         /// </summary>
         [TestVariable("32df8d2d-a9cb-4e59-ae9f-8d2f302926a7")]
-        public string output_file_select_b_busa_akt
+        public string file_selectergebnis_b_busa_aktuell
         {
-            get { return _output_file_select_b_busa_akt; }
-            set { _output_file_select_b_busa_akt = value; }
+            get { return _file_selectergebnis_b_busa_aktuell; }
+            set { _file_selectergebnis_b_busa_aktuell = value; }
         }
 
-        string _output_file_select_b_busa_ref_1;
+        string _file_selectergebnis_b_busa_Referenz_Teil_1;
 
         /// <summary>
-        /// Gets or sets the value of variable output_file_select_b_busa_ref_1.
+        /// Gets or sets the value of variable file_selectergebnis_b_busa_Referenz_Teil_1.
         /// </summary>
         [TestVariable("64f5aaec-2205-498c-83d3-79694ec03669")]
-        public string output_file_select_b_busa_ref_1
+        public string file_selectergebnis_b_busa_Referenz_Teil_1
         {
-            get { return _output_file_select_b_busa_ref_1; }
-            set { _output_file_select_b_busa_ref_1 = value; }
+            get { return _file_selectergebnis_b_busa_Referenz_Teil_1; }
+            set { _file_selectergebnis_b_busa_Referenz_Teil_1 = value; }
         }
 
-        string _output_file_select_b_busa_ref_2;
+        string _file_selectergebnis_b_busa_Referenz_Teil_2;
 
         /// <summary>
-        /// Gets or sets the value of variable output_file_select_b_busa_ref_2.
+        /// Gets or sets the value of variable file_selectergebnis_b_busa_Referenz_Teil_2.
         /// </summary>
         [TestVariable("9bd40583-7f95-4af8-90b4-1b7c75ecfea7")]
-        public string output_file_select_b_busa_ref_2
+        public string file_selectergebnis_b_busa_Referenz_Teil_2
         {
-            get { return _output_file_select_b_busa_ref_2; }
-            set { _output_file_select_b_busa_ref_2 = value; }
+            get { return _file_selectergebnis_b_busa_Referenz_Teil_2; }
+            set { _file_selectergebnis_b_busa_Referenz_Teil_2 = value; }
         }
 
-        string _output_file_select_b_busa_ref;
+        string _file_SQL_Select_B_BUSA;
 
         /// <summary>
-        /// Gets or sets the value of variable output_file_select_b_busa_ref.
+        /// Gets or sets the value of variable file_SQL_Select_B_BUSA.
         /// </summary>
-        [TestVariable("f6b28cd6-6599-45fa-827f-fcba99142176")]
-        public string output_file_select_b_busa_ref
+        [TestVariable("3a2ec336-0c6f-4c58-92bb-683f4131e660")]
+        public string file_SQL_Select_B_BUSA
         {
-            get { return _output_file_select_b_busa_ref; }
-            set { _output_file_select_b_busa_ref = value; }
+            get { return _file_SQL_Select_B_BUSA; }
+            set { _file_SQL_Select_B_BUSA = value; }
         }
 
 #endregion
@@ -157,6 +157,20 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
 
             Init();
 
+            // mit Variablen - funktionioniert nicht
+            Report.Log(ReportLevel.Info, "Section", "mit Variablen - funktionioniert nicht", new RecordItemIndex(0));
+            
+            //file_selectergebnis_b_busa_aktuell = Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement(file_SQL_Select_B_BUSA, DB_File, file_selectergebnis_b_busa_aktuell);
+            
+            //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains(file_selectergebnis_b_busa_aktuell, file_selectergebnis_b_busa_Referenz_Teil_1);
+            
+            //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains(file_selectergebnis_b_busa_aktuell, file_selectergebnis_b_busa_Referenz_Teil_2);
+            
+            // ohne Variablen - String output nur in Argument eingebbar, nicht in Feld
+            Report.Log(ReportLevel.Info, "Section", "ohne Variablen - String output nur in Argument eingebbar, nicht in Feld", new RecordItemIndex(4));
+            
+            //file_selectergebnis_b_busa_aktuell = Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement(file_SQL_Select_B_BUSA, "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", file_SQL_Select_B_BUSA);
+            
         }
 
 #region Image Feature Data
