@@ -95,8 +95,8 @@ steps:
                                   Your Name
       BodyAsHtml: false
       SmtpServer: 'smtp.office365.com'
-      # AddAttachment: true
-      # Attachment: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports.zip'
+      AddAttachment: true
+      Attachment: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports.zip'
       SmtpUsername: '$(SMTP_UserName)'
       SmtpPassword: '$(SMTP_UserPassword)'
 
