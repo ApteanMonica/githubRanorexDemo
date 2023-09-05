@@ -24,29 +24,29 @@ namespace N_LISTEN_BULI_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Ueberpruefung_Ergebnis recording.
+    ///The Ueberpruefung_Ergebnis_row3 recording.
     /// </summary>
     [TestModule("1c0c17ea-0d18-43bd-89cd-e173d1819171", ModuleType.Recording, 1)]
-    public partial class Ueberpruefung_Ergebnis : ITestModule
+    public partial class Ueberpruefung_Ergebnis_row3 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository repo = global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository.Instance;
 
-        static Ueberpruefung_Ergebnis instance = new Ueberpruefung_Ergebnis();
+        static Ueberpruefung_Ergebnis_row3 instance = new Ueberpruefung_Ergebnis_row3();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Ueberpruefung_Ergebnis()
+        public Ueberpruefung_Ergebnis_row3()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Ueberpruefung_Ergebnis Instance
+        public static Ueberpruefung_Ergebnis_row3 Instance
         {
             get { return instance; }
         }

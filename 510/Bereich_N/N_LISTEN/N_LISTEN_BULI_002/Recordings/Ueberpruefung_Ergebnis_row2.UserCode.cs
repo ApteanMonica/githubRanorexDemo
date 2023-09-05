@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace N_LISTEN_BULI_002.Recordings
 {
-    public partial class Ueberpruefung_Ergebnis
+    public partial class Ueberpruefung_Ergebnis_row2
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

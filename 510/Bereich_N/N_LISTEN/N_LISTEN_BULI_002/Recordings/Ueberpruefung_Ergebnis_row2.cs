@@ -24,60 +24,34 @@ namespace N_LISTEN_BULI_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT_03 recording.
+    ///The Ueberpruefung_Ergebnis_row2 recording.
     /// </summary>
-    [TestModule("7f480744-26da-4e0e-b675-dc38385bf24a", ModuleType.Recording, 1)]
-    public partial class StartAUT_03 : ITestModule
+    [TestModule("1a182bbc-7f18-471d-a64d-28a94b438fea", ModuleType.Recording, 1)]
+    public partial class Ueberpruefung_Ergebnis_row2 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository repo = global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository.Instance;
 
-        static StartAUT_03 instance = new StartAUT_03();
+        static Ueberpruefung_Ergebnis_row2 instance = new Ueberpruefung_Ergebnis_row2();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT_03()
+        public Ueberpruefung_Ergebnis_row2()
         {
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm_02 = "N_STAMM AUFRUFART=ANFI";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT_03 Instance
+        public static Ueberpruefung_Ergebnis_row2 Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Startfile;
-
-        /// <summary>
-        /// Gets or sets the value of variable Startfile.
-        /// </summary>
-        [TestVariable("7bc5bc91-f907-4db7-a87a-55ecafbe7b88")]
-        public string Startfile
-        {
-            get { return _Startfile; }
-            set { _Startfile = value; }
-        }
-
-        string _Programm_02;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm_02.
-        /// </summary>
-        [TestVariable("b4c27fa9-1d28-42e1-b744-2ceea90ca68d")]
-        public string Programm_02
-        {
-            get { return _Programm_02; }
-            set { _Programm_02 = value; }
-        }
 
 #endregion
 
@@ -105,14 +79,26 @@ namespace N_LISTEN_BULI_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_02 in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm_02, "", false);
+            // Überprüfung Zeile 2 der Tabelle:
+            Report.Log(ReportLevel.Info, "Section", "Überprüfung Zeile 2 der Tabelle:", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmAnfi.TitleBar100AVZFirmenstamm'", repo.FrmAnfi.TitleBar100AVZFirmenstammInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmAnfi.TitleBar100AVZFirmenstammInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBuchungsliste.FlexGrid.ColTypRow2'", repo.FrmBuchungsliste.FlexGrid.ColTypRow2Info, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FrmBuchungsliste.FlexGrid.ColTypRow2Info.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ-Firmenstamm') on item 'FrmAnfi.TitleBar100AVZFirmenstamm'.", repo.FrmAnfi.TitleBar100AVZFirmenstammInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmAnfi.TitleBar100AVZFirmenstammInfo, "Text", "[100]  AVZ-Firmenstamm");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='AfA') on item 'FrmBuchungsliste.FlexGrid.ColTypRow2'.", repo.FrmBuchungsliste.FlexGrid.ColTypRow2Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColTypRow2Info, "Text", "AfA");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0630') on item 'FrmBuchungsliste.FlexGrid.ColKtoNrRow2'.", repo.FrmBuchungsliste.FlexGrid.ColKtoNrRow2Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColKtoNrRow2Info, "Text", "0630");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0630') on item 'FrmBuchungsliste.FlexGrid.ColGktoNrRow2'.", repo.FrmBuchungsliste.FlexGrid.ColGktoNrRow2Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColGktoNrRow2Info, "Text", "0630");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmBuchungsliste.FlexGrid.ColBektNr1Row2'.", repo.FrmBuchungsliste.FlexGrid.ColBektNr1Row2Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColBektNr1Row2Info, "Text", "");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='67,71') on item 'FrmBuchungsliste.FlexGrid.ColBetragRow2'.", repo.FrmBuchungsliste.FlexGrid.ColBetragRow2Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColBetragRow2Info, "Text", "67,71");
             
         }
 

@@ -18,6 +18,12 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="1979cbf3-e9f3-4ef3-b5d2-3c7f37effe79"
+			name="Ueberpruefung_Ergebnis_row2"
+			ref="1a182bbc-7f18-471d-a64d-28a94b438fea"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="1a069da7-a2ad-459e-a655-d4752c5bf13e"
 			name="nochmalige_Ueberleitung"
 			ref="e43fbcf2-7460-45da-b453-afa837393285"
@@ -25,7 +31,7 @@
 			</testmodule>
 			<smartfoldernode
 			id="1aa5b1f0-f9cc-44c5-a31b-70a1937e5f0d"
-			name="511">
+			name="511,WSPET">
 				<conditiongroup
 				comparison="OR"
 				enabled="True">
@@ -46,8 +52,29 @@
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="a1176db5-784e-4390-bcf9-eb9cb43208f4">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="WSPET">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
 				</conditiongroup>
 			</smartfoldernode>
+			<teardown
+			id="24c6cae5-349a-4b87-a213-684a4b4abdea"
+			name="teardown">
+			</teardown>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -73,29 +100,6 @@
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
-			id="3ce8227a-5df1-4e3f-a9e2-2d96f9bb6f02"
-			name="StartAUT_03"
-			ref="7f480744-26da-4e0e-b675-dc38385bf24a"
-			type="Recording">
-				<description>
-					<![CDATA[Umgehungslösung: Recording wieder lsöchen sobald 511 SP 15 vorhanden --> Verhalten tritt ab Sp 15 nicht mehr auf]]>
-				</description>
-				<databinding>
-					<var
-					dataname="Programm03"
-					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
-					variableid="b4c27fa9-1d28-42e1-b744-2ceea90ca68d"
-					variablename="Programm_02">
-					</var>
-					<var
-					dataname="Startfile"
-					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
-					variableid="7bc5bc91-f907-4db7-a87a-55ecafbe7b88"
-					variablename="Startfile">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="40e701e9-ce90-46db-9ac0-f3e95c734bcf"
 			name="Ueberleitungsmeldung"
 			ref="5195d0c7-058d-4bb4-95ae-5c93717e1f7c"
@@ -114,6 +118,12 @@
 			id="44252202-9b27-4b8b-8bbb-ae36ab5a6707"
 			name="setup">
 			</setup>
+			<testmodule
+			id="44cfde3d-b666-4b45-835d-a35e6706639e"
+			name="CloseAUT_02"
+			ref="716cc69f-7519-4536-9ece-3f061ca1b5fe"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="4b698e86-966a-4a19-a119-5e5b76b1e2cb"
 			name="Tabelle_aufrufen"
@@ -145,13 +155,46 @@
 					variablename="Startfile">
 					</var>
 					<var
-					dataname="Programm03"
+					dataname="Programm_02"
 					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
 					variableid="3ea8ad14-4e01-4619-8f82-006890491c5c"
 					variablename="Programm_02">
 					</var>
 				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="Programm03"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="3ea8ad14-4e01-4619-8f82-006890491c5c"
+					variablename="Programm_02">
+					</var>
+				</missingdatabinding>
 			</testmodule>
+			<smartfoldernode
+			id="6150840d-ac8a-473d-8f6b-f6c0fd65a48f"
+			name="510,521">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="a1176db5-784e-4390-bcf9-eb9cb43208f4">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT3">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="6fd4cfe5-64b7-4e37-b648-2af7379099bf"
 			name="StartAUT"
@@ -184,6 +227,26 @@
 				<description>
 					<![CDATA[Umgehungslösung: Recording wieder löschen sobald Sp 15 vorhanden --> Verhalten tritt ab Sp 15 nicht mehr auf.]]>
 				</description>
+			</testmodule>
+			<testmodule
+			id="7aa8c0c6-f00b-4ea9-80d7-7ff1e0592a59"
+			name="StartAUT_02"
+			ref="4d010060-253e-4090-8a5b-64507568a5c8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="a99b9466-09dd-4d8c-9f08-1505d93cfe1f"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_02"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="3ea8ad14-4e01-4619-8f82-006890491c5c"
+					variablename="Programm_02">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="88f5da10-6d3c-4184-8f91-793b775f0277"
@@ -288,11 +351,7 @@
 					value="N_LISTEN Aufrufart BULI">
 					</param>
 					<param
-					name="Programm02"
-					value="N_STAMM AUFRUFART=ANFI">
-					</param>
-					<param
-					name="Programm03"
+					name="Programm_02"
 					value="N_STAMM AUFRUFART=ANFI">
 					</param>
 					<param
@@ -343,6 +402,48 @@
 			ref="6c9e5d59-7f9a-4dc0-9287-0761b086bec3"
 			type="Recording">
 			</testmodule>
+			<smartfoldernode
+			id="abc53b1c-7278-41bf-9b70-6d10f5962480"
+			name="511,WSPET">
+				<conditiongroup
+				comparison="OR"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="a1176db5-784e-4390-bcf9-eb9cb43208f4">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="SBG-RANOAGENT3">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Computername"
+								id="a1176db5-784e-4390-bcf9-eb9cb43208f4">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="WSPET">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="b48a2c60-6ee6-491c-b02b-39497563331e"
 			name="Einschraenkung_Daten"
@@ -371,7 +472,7 @@
 			</testmodule>
 			<testmodule
 			id="c18b6f41-5e59-4681-87a2-145dd0bed3a4"
-			name="Ueberpruefung_Ergebnis"
+			name="Ueberpruefung_Ergebnis_row3"
 			ref="1c0c17ea-0d18-43bd-89cd-e173d1819171"
 			type="Recording">
 				<description>
@@ -385,16 +486,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Ueberleitungsmonat"
-					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
-					variableid="26df3ad2-8124-4961-b9bb-8400a76ed0b9"
-					variablename="Ueberleitungsmonat">
-					</var>
-					<var
 					dataname="Buchungsjahr"
 					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
 					variableid="772aadd9-85be-47ad-8095-60611f17599a"
 					variablename="Buchungsjahr">
+					</var>
+					<var
+					dataname="Ueberleitungsmonat"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="26df3ad2-8124-4961-b9bb-8400a76ed0b9"
+					variablename="Ueberleitungsmonat">
 					</var>
 				</databinding>
 			</testmodule>
@@ -522,10 +623,22 @@
 						id="0c223a19-7eb6-4aff-8358-d7041c8a76c5"
 						name="Meldung">
 						</testmodule>
-						<testmodule
-						id="c18b6f41-5e59-4681-87a2-145dd0bed3a4"
-						name="Ueberpruefung_Ergebnis">
-						</testmodule>
+						<smartfoldernode
+						id="abc53b1c-7278-41bf-9b70-6d10f5962480"
+						name="511,WSPET">
+							<testmodule
+							id="1979cbf3-e9f3-4ef3-b5d2-3c7f37effe79"
+							name="Ueberpruefung_Ergebnis_row2">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="6150840d-ac8a-473d-8f6b-f6c0fd65a48f"
+						name="510,521">
+							<testmodule
+							id="c18b6f41-5e59-4681-87a2-145dd0bed3a4"
+							name="Ueberpruefung_Ergebnis_row3">
+							</testmodule>
+						</smartfoldernode>
 						<testmodule
 						id="4ca458cc-5a84-4079-b79f-9a4af698d559"
 						name="Fibu_Ueberleitung_starten">
@@ -536,14 +649,14 @@
 						</testmodule>
 						<smartfoldernode
 						id="1aa5b1f0-f9cc-44c5-a31b-70a1937e5f0d"
-						name="511">
+						name="511,WSPET">
 							<testmodule
 							id="41904477-c20a-4967-b732-e6bbf425f0d0"
 							name="Ueberleitungsmeldung_511">
 							</testmodule>
 							<testmodule
-							id="3ce8227a-5df1-4e3f-a9e2-2d96f9bb6f02"
-							name="StartAUT_03">
+							id="7aa8c0c6-f00b-4ea9-80d7-7ff1e0592a59"
+							name="StartAUT_02">
 							</testmodule>
 							<testmodule
 							id="98e29fd9-c50b-4e1a-80bd-aaed9e33be78"
@@ -557,6 +670,14 @@
 							id="77464921-6c23-4fbf-ab4e-5699761fe56a"
 							name="korrekte_Meldung">
 							</testmodule>
+							<teardown
+							id="24c6cae5-349a-4b87-a213-684a4b4abdea"
+							name="teardown">
+								<testmodule
+								id="44cfde3d-b666-4b45-835d-a35e6706639e"
+								name="CloseAUT_02">
+								</testmodule>
+							</teardown>
 						</smartfoldernode>
 						<smartfoldernode
 						id="d9b91910-e326-49ea-9369-7688bf588552"
@@ -625,10 +746,16 @@
 			id="1aa5b1f0-f9cc-44c5-a31b-70a1937e5f0d">
 			</testcontainer>
 			<testcontainer
+			id="6150840d-ac8a-473d-8f6b-f6c0fd65a48f">
+			</testcontainer>
+			<testcontainer
 			id="88f5da10-6d3c-4184-8f91-793b775f0277">
 			</testcontainer>
 			<testcontainer
 			id="a1176db5-784e-4390-bcf9-eb9cb43208f4">
+			</testcontainer>
+			<testcontainer
+			id="abc53b1c-7278-41bf-9b70-6d10f5962480">
 			</testcontainer>
 			<testcontainer
 			id="d9b91910-e326-49ea-9369-7688bf588552">
