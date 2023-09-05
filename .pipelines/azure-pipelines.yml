@@ -23,63 +23,79 @@ pool:
    NODE_TLS_REJECT_UNAUTHORIZED: 0 
 
 steps:
-  - task: DownloadBuildArtifacts@1
-    inputs:
-     buildType: 'specific'
-     project: '1692ec27-30a7-44ac-bb45-41f0b3ec9f01'
-     pipeline: '99'
-     buildVersionToDownload: 'specific'
-     buildId: '$(buildId)'
-     downloadType: 'single'
-     artifactName: 'RS2Build'
-     downloadPath: '$(System.ArtifactsDirectory)'
+  # - task: DownloadBuildArtifacts@1
+  #   inputs:
+  #    buildType: 'specific'
+  #    project: '1692ec27-30a7-44ac-bb45-41f0b3ec9f01'
+  #    pipeline: '99'
+  #    buildVersionToDownload: 'specific'
+  #    buildId: '$(buildId)'
+  #    downloadType: 'single'
+  #    artifactName: 'RS2Build'
+  #    downloadPath: '$(System.ArtifactsDirectory)'
 
-  - task: PowerShell@2
-    displayName: 'Run Service Host'
-    inputs:
-     targetType: 'inline'
-     script: |
-       Start-Process -FilePath "$(System.DefaultWorkingDirectory)\API_Automation_Cypress\BatchFile\ServiceHost.bat" -WindowStyle Hidden
+  # - task: PowerShell@2
+  #   displayName: 'Run Service Host'
+  #   inputs:
+  #    targetType: 'inline'
+  #    script: |
+  #      Start-Process -FilePath "$(System.DefaultWorkingDirectory)\API_Automation_Cypress\BatchFile\ServiceHost.bat" -WindowStyle Hidden
 
-  - task: CmdLine@2
-    displayName: 'NPM initialization'
-    inputs:
-      script: |
-       npm install
-       npm i   
-      workingDirectory: '$(System.DefaultWorkingDirectory)/API_Automation_Cypress/Modulewise_TestCases'
+  # - task: CmdLine@2
+  #   displayName: 'NPM initialization'
+  #   inputs:
+  #     script: |
+  #      npm install
+  #      npm i   
+  #     workingDirectory: '$(System.DefaultWorkingDirectory)/API_Automation_Cypress/Modulewise_TestCases'
 
-  - task: BatchScript@1
-    displayName: 'Run Cypress Scripts'
-    inputs:
-     filename: '$(System.DefaultWorkingDirectory)/API_Automation_Cypress/BatchFile/RunScripts.bat'
+  # - task: BatchScript@1
+  #   displayName: 'Run Cypress Scripts'
+  #   inputs:
+  #    filename: '$(System.DefaultWorkingDirectory)/API_Automation_Cypress/BatchFile/RunScripts.bat'
 
-  - task: ArchiveFiles@2
-    condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
-    inputs:
-     rootFolderOrFile: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports'
-     includeRootFolder: true
-     archiveType: 'zip'
-     archiveFile: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports.zip'
-     replaceExistingArchive: true
+  # - task: ArchiveFiles@2
+  #   condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
+  #   inputs:
+  #    rootFolderOrFile: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports'
+  #    includeRootFolder: true
+  #    archiveType: 'zip'
+  #    archiveFile: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports.zip'
+  #    replaceExistingArchive: true
+
+  # - task: SendEmail@1
+  #   condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
+  #   inputs:
+  #    To: 'kishore.ramachandraiah@aptean.com'
+  #    From: '$(SMTP_MailID)'
+  #    Subject: 'RS2 Automation reports'
+  #    Body: |
+  #          This is the body of the email. You can write your content here and use proper alignment.
+                 
+  #                         Thank you,
+  #                         Your Name
+  #    BodyAsHtml: false
+  #    AddAttachment: true
+  #    Attachment: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports.zip'
+  #    SmtpServer: 'smtp.office365.com'
+  #    SmtpUsername: '$(SMTP_UserName)'
+  #    SmtpPassword: '$(SMTP_UserPassword)'
 
   - task: SendEmail@1
-    condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
     inputs:
-     To: 'kishore.ramachandraiah@aptean.com'
-     From: '$(SMTP_MailID)'
-     Subject: 'RS2 Automation reports'
-     Body: |
-           This is the body of the email. You can write your content here and use proper alignment.
-                 
-                          Thank you,
-                          Your Name
-     BodyAsHtml: false
-     AddAttachment: true
-     Attachment: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports.zip'
-     SmtpServer: 'smtp.office365.com'
-     SmtpUsername: '$(SMTP_UserName)'
-     SmtpPassword: '$(SMTP_UserPassword)'
+      To: 'kishore.ramachandraiah@aptean.com'
+      From: '$(SMTP_MailID)'
+      Subject: 'RS2 Automation reports'
+      Body: |
+        This is the body of the email. You can write your content here and use proper alignment.
+                         
+                                  Thank you,
+                                  Your Name
+      BodyAsHtml: false
+      # AddAttachment: true
+      # Attachment: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports.zip'
+      SmtpUsername: '$(SMTP_UserName)'
+      SmtpPassword: '$(SMTP_UserPassword)'
 
 
 
