@@ -39,7 +39,7 @@ steps:
      inputs:
       targetType: 'inline'
       script: |
-        Start-Process -FilePath "$(System.DefaultWorkingDirectory)\API_Automation_Cypress\BatchFile\ServiceHost.bat"
+        Start-Process -FilePath "$(System.DefaultWorkingDirectory)\API_Automation_Cypress\BatchFile\ServiceHost.bat" -WindowStyle Hidden
 
    - task: CmdLine@2
      displayName: 'NPM initialization'
