@@ -19,6 +19,8 @@ pool:
   name: Automation
   demands:
    - agent.name -equals DGA1APP03RNSQA
+  env:
+   NODE_TLS_REJECT_UNAUTHORIZED: 0 
 
 steps:
   - task: DownloadBuildArtifacts@1
