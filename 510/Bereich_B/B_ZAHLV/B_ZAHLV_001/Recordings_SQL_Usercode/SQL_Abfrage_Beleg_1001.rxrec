@@ -41,17 +41,17 @@ mode="Global">
 		<var
 		id="64f5aaec-2205-498c-83d3-79694ec03669"
 		name="file_selectergebnis_b_busa_Referenz_Teil_1">
-			C:\Testdaten\Sonstige Daten\SQL_Referenz_Files\B_ZAHLV_001\SQL_Referenz_Files\B_ZAHLV_001B_ZAHLV_001_B_BUSA_Referenz_1.txt
+			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz_1.txt
 		</var>
 		<var
 		id="9bd40583-7f95-4af8-90b4-1b7c75ecfea7"
 		name="file_selectergebnis_b_busa_Referenz_Teil_2">
-			C:\Testdaten\Sonstige Daten\SQL_Referenz_Files\B_ZAHLV_001B_ZAHLV_001_B_BUSA_Referenz_2.txt
+			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz_2.txt
 		</var>
 		<var
 		id="3a2ec336-0c6f-4c58-92bb-683f4131e660"
 		name="file_SQL_Select_B_BUSA">
-			C:\Testdaten\Sonstige Daten\SQL_Referenz_Files\B_ZAHLV_001\SQL_Select_B_BUSA.txt
+			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\SQL_Select_B_BUSA.txt
 		</var>
 	</variables>
 	<recorditems>
@@ -74,27 +74,23 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="ReturnVariable"
-				variable="file_selectergebnis_b_busa_aktuell">
-				</binding>
 			</bindings>
 			<arguments
-			id="c99a68b4-5f23-4fc5-8435-bd0326340516">
+			id="b05b6c0a-0b12-4014-af62-666fdd8f1254">
 				<argument
 				argname="selectLine"
-				id="b352a5ce-a6af-4c3d-9dab-3e04586e0ff5"
+				id="6dd54960-bbba-4a82-bf58-e47512bd1ee2"
 				variable="file_SQL_Select_B_BUSA">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\Testdaten\Allgemein\Sonstige\SQL_Referenz_Files\B_ZAHLV_001\SQL_Select_B_BUSA.txt
+						select * from b_busa where firm_nr = '100' and busa_belegnr = '1001';
 					</argvalue>
 				</argument>
 				<argument
 				argname="dbFile"
-				id="20248c76-7889-4002-93c7-f647685216c6"
+				id="8605affd-84f5-43a0-8608-1ecb3555bae5"
 				variable="DB_File">
 					<argvaluetype>
 						System.String
@@ -105,7 +101,7 @@ mode="Global">
 				</argument>
 				<argument
 				argname="file"
-				id="64fc4890-67c5-4175-9ac3-f3e687b108f1"
+				id="3fbadabc-5b6e-49cb-a663-13cc91fdd4b3"
 				variable="file_selectergebnis_b_busa_aktuell">
 					<argvaluetype>
 						System.String
@@ -128,57 +124,21 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<arguments
-			id="acacf52a-1b70-462c-b0af-5fc2b24a829a">
+			id="ee646f54-7e9c-48cc-a966-79f6906e288c">
 				<argument
 				argname="file1"
-				id="273d4b41-cf22-4fb0-b5bf-7aded4aa4f7d"
-				variable="file_selectergebnis_b_busa_aktuell">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-				<argument
-				argname="file2"
-				id="f5109dcd-74d3-4445-b654-58c186730d2a"
+				id="5cdac749-99ec-4088-9900-3cb3d3fcf616"
 				variable="file_selectergebnis_b_busa_Referenz_Teil_1">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\Testdaten\Sonstige Daten\SQL_Referenz_Files\B_ZAHLV_001\SQL_Referenz_Files\B_ZAHLV_001B_ZAHLV_001_B_BUSA_Referenz_1.txt
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="ApteanSQL"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="FileCompareContains"
-		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="acacf52a-1b70-462c-b0af-5fc2b24a829a">
-				<argument
-				argname="file1"
-				id="273d4b41-cf22-4fb0-b5bf-7aded4aa4f7d"
-				variable="file_selectergebnis_b_busa_aktuell">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
 					</argvalue>
 				</argument>
 				<argument
 				argname="file2"
-				id="f5109dcd-74d3-4445-b654-58c186730d2a"
-				variable="file_selectergebnis_b_busa_Referenz_Teil_2">
+				id="f10d61e4-bfd1-490b-9509-cfdc4b0014d1"
+				variable="file_selectergebnis_b_busa_aktuell">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -188,10 +148,10 @@ mode="Global">
 			</arguments>
 		</userrecorditem>
 		<separatoritem
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
-				ohne Variablen - String output nur in Argument eingebbar, nicht in Feld
+				ohne Variablen funktioniert nicht - String output nur in Argument eingebbar, nicht in Feld
 			</comment>
 			<bindings>
 			</bindings>
@@ -206,27 +166,22 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="ReturnVariable"
-				variable="file_selectergebnis_b_busa_aktuell">
-				</binding>
 			</bindings>
 			<arguments
-			id="a732029d-5137-4ce1-96c2-3a5542e79143">
+			id="34bfbadd-3c94-446b-8d3d-8078d7a435ca">
 				<argument
 				argname="selectLine"
-				id="6b02c0bf-7d31-48fe-a637-1bcf8c6998d2"
-				variable="file_SQL_Select_B_BUSA">
+				id="97b60006-ad81-4f18-8a23-e4a95f8508ae">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\Testdaten\Sonstige Daten\SQL_Referenz_Files\B_ZAHLV_001\SQL_Select_B_BUSA.txt
+						select * from b_busa where firm_nr = '100' and busa_belegnr = '1001';
 					</argvalue>
 				</argument>
 				<argument
 				argname="dbFile"
-				id="07afeb1a-4f34-4c32-a2b2-ac5ba70df300">
+				id="f1b0b27f-24d5-4984-afce-dbc60b3717cf">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -236,8 +191,7 @@ mode="Global">
 				</argument>
 				<argument
 				argname="file"
-				id="5a351961-0a89-44a7-9a49-6ac82049feda"
-				variable="file_SQL_Select_B_BUSA">
+				id="311f39e1-b551-4520-a8a0-ce13ac325415">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

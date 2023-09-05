@@ -44,9 +44,9 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
             SQL_Select_B_BUSA = "select * from b_busa where firm_nr = '100' and busa_belegnr = '1001';";
             DB_File = "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt";
             file_selectergebnis_b_busa_aktuell = "C:\\temp\\B_ZAHLV_001_B_BUSA_aktuell.txt";
-            file_selectergebnis_b_busa_Referenz_Teil_1 = "C:\\Testdaten\\Sonstige Daten\\SQL_Referenz_Files\\B_ZAHLV_001\\SQL_Referenz_Files\\B_ZAHLV_001B_ZAHLV_001_B_BUSA_Referenz_1.txt";
-            file_selectergebnis_b_busa_Referenz_Teil_2 = "C:\\Testdaten\\Sonstige Daten\\SQL_Referenz_Files\\B_ZAHLV_001B_ZAHLV_001_B_BUSA_Referenz_2.txt";
-            file_SQL_Select_B_BUSA = "C:\\Testdaten\\Sonstige Daten\\SQL_Referenz_Files\\B_ZAHLV_001\\SQL_Select_B_BUSA.txt";
+            file_selectergebnis_b_busa_Referenz_Teil_1 = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUSA_Referenz_1.txt";
+            file_selectergebnis_b_busa_Referenz_Teil_2 = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUSA_Referenz_2.txt";
+            file_SQL_Select_B_BUSA = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\SQL_Select_B_BUSA.txt";
         }
 
         /// <summary>
@@ -160,16 +160,14 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
             // mit Variablen - funktionioniert nicht
             Report.Log(ReportLevel.Info, "Section", "mit Variablen - funktionioniert nicht", new RecordItemIndex(0));
             
-            //file_selectergebnis_b_busa_aktuell = Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement(file_SQL_Select_B_BUSA, DB_File, file_selectergebnis_b_busa_aktuell);
+            //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement(file_SQL_Select_B_BUSA, DB_File, file_selectergebnis_b_busa_aktuell);
             
-            //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains(file_selectergebnis_b_busa_aktuell, file_selectergebnis_b_busa_Referenz_Teil_1);
+            //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains(file_selectergebnis_b_busa_Referenz_Teil_1, file_selectergebnis_b_busa_aktuell);
             
-            //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains(file_selectergebnis_b_busa_aktuell, file_selectergebnis_b_busa_Referenz_Teil_2);
+            // ohne Variablen funktioniert nicht - String output nur in Argument eingebbar, nicht in Feld
+            //Report.Log(ReportLevel.Info, "Section", "ohne Variablen funktioniert nicht - String output nur in Argument eingebbar, nicht in Feld", new RecordItemIndex(3));
             
-            // ohne Variablen - String output nur in Argument eingebbar, nicht in Feld
-            Report.Log(ReportLevel.Info, "Section", "ohne Variablen - String output nur in Argument eingebbar, nicht in Feld", new RecordItemIndex(4));
-            
-            //file_selectergebnis_b_busa_aktuell = Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement(file_SQL_Select_B_BUSA, "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", file_SQL_Select_B_BUSA);
+            //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select * from b_busa where firm_nr = '100' and busa_belegnr = '1001';", "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "C:\\temp\\B_ZAHLV_001_B_BUSA_aktuell.txt");
             
         }
 
