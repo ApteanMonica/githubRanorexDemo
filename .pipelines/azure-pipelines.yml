@@ -35,7 +35,10 @@ steps:
       downloadType: 'single'
       artifactName: 'RS2Build'
       downloadPath: '$(System.ArtifactsDirectory)'
-
+   - task: PowerShell@2
+     inputs:
+       targetType: 'inline'
+       script: 'Start-Process -FilePath "E:\Automation\PipelineWorkingFolder\1\a\RS2Build\Debug\bin\rs2ServiceHost.exe" -ArgumentList "/HTTP /HTTPPORT=8080 /HTTPJSON=api" -WindowStyle Hidden'
    - task: PowerShell@2
      displayName: 'Run Service Host'
      inputs:
