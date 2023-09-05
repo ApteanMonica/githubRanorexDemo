@@ -23,8 +23,6 @@ pool:
 
 
 steps:
-   - checkout: self
-     clean: true
    - task: DownloadBuildArtifacts@1
      inputs:
       buildType: 'specific'
