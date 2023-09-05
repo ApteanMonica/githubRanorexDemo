@@ -403,6 +403,11 @@ namespace N_LISTEN_BULI_002
         [RepositoryFolder("0529d4a4-365c-49b3-a085-a044f62bb4ff")]
         public partial class FlexGridFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _coltyprow3Info;
+            RepoItemInfo _colktonrrow3Info;
+            RepoItemInfo _colgktonrrow3Info;
+            RepoItemInfo _colbektnr1row3Info;
+            RepoItemInfo _colbetragrow3Info;
             RepoItemInfo _coltyprow2Info;
             RepoItemInfo _colktonrrow2Info;
             RepoItemInfo _colgktonrrow2Info;
@@ -415,6 +420,11 @@ namespace N_LISTEN_BULI_002
             public FlexGridFolder(RepoGenBaseFolder parentFolder) :
                     base("FlexGrid", "container[@controlname='ClientArea']/container[@controlname='tblListe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "0529d4a4-365c-49b3-a085-a044f62bb4ff", "")
             {
+                _coltyprow3Info = new RepoItemInfo(this, "ColTypRow3", "row[@accessiblename='Row 3']/cell[@accessiblename='colTyp Row 3']", "", 30000, null, "5aecf4e6-8070-4798-8e1d-f28158141c62");
+                _colktonrrow3Info = new RepoItemInfo(this, "ColKtoNrRow3", "row[@accessiblename='Row 3']/cell[@accessiblename='colKto_nr Row 3']", "", 30000, null, "0885e356-fc61-43a6-b4ba-ce857ed0015a");
+                _colgktonrrow3Info = new RepoItemInfo(this, "ColGktoNrRow3", "row[@accessiblename='Row 3']/cell[@accessiblename='colGkto_nr Row 3']", "", 30000, null, "6539c6e0-d298-4682-aa99-84d8262b5f9c");
+                _colbektnr1row3Info = new RepoItemInfo(this, "ColBektNr1Row3", "row[@accessiblename='Row 3']/cell[@accessiblename='colBekt_nr1 Row 3']", "", 30000, null, "ed2801bd-fe29-4861-9317-53c96cc36a18");
+                _colbetragrow3Info = new RepoItemInfo(this, "ColBetragRow3", "row[@accessiblename='Row 3']/cell[@accessiblename='colBetrag Row 3']", "", 30000, null, "e5a263b0-11d1-44d7-ad5b-d6d5d48d057c");
                 _coltyprow2Info = new RepoItemInfo(this, "ColTypRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colTyp Row 2']", "", 30000, null, "0e9e86ef-7481-4074-9cc0-581b9dcc01b5");
                 _colktonrrow2Info = new RepoItemInfo(this, "ColKtoNrRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colKto_nr Row 2']", "", 30000, null, "79d2463d-a882-4b64-a583-93d807526925");
                 _colgktonrrow2Info = new RepoItemInfo(this, "ColGktoNrRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colGkto_nr Row 2']", "", 30000, null, "b1d3ac22-90f3-49ef-ac99-7c339beac2fb");
@@ -443,6 +453,126 @@ namespace N_LISTEN_BULI_002
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColTypRow3 item.
+            /// </summary>
+            [RepositoryItem("5aecf4e6-8070-4798-8e1d-f28158141c62")]
+            public virtual Ranorex.Cell ColTypRow3
+            {
+                get
+                {
+                    return _coltyprow3Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColTypRow3 item info.
+            /// </summary>
+            [RepositoryItemInfo("5aecf4e6-8070-4798-8e1d-f28158141c62")]
+            public virtual RepoItemInfo ColTypRow3Info
+            {
+                get
+                {
+                    return _coltyprow3Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColKtoNrRow3 item.
+            /// </summary>
+            [RepositoryItem("0885e356-fc61-43a6-b4ba-ce857ed0015a")]
+            public virtual Ranorex.Cell ColKtoNrRow3
+            {
+                get
+                {
+                    return _colktonrrow3Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColKtoNrRow3 item info.
+            /// </summary>
+            [RepositoryItemInfo("0885e356-fc61-43a6-b4ba-ce857ed0015a")]
+            public virtual RepoItemInfo ColKtoNrRow3Info
+            {
+                get
+                {
+                    return _colktonrrow3Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColGktoNrRow3 item.
+            /// </summary>
+            [RepositoryItem("6539c6e0-d298-4682-aa99-84d8262b5f9c")]
+            public virtual Ranorex.Cell ColGktoNrRow3
+            {
+                get
+                {
+                    return _colgktonrrow3Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColGktoNrRow3 item info.
+            /// </summary>
+            [RepositoryItemInfo("6539c6e0-d298-4682-aa99-84d8262b5f9c")]
+            public virtual RepoItemInfo ColGktoNrRow3Info
+            {
+                get
+                {
+                    return _colgktonrrow3Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColBektNr1Row3 item.
+            /// </summary>
+            [RepositoryItem("ed2801bd-fe29-4861-9317-53c96cc36a18")]
+            public virtual Ranorex.Cell ColBektNr1Row3
+            {
+                get
+                {
+                    return _colbektnr1row3Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBektNr1Row3 item info.
+            /// </summary>
+            [RepositoryItemInfo("ed2801bd-fe29-4861-9317-53c96cc36a18")]
+            public virtual RepoItemInfo ColBektNr1Row3Info
+            {
+                get
+                {
+                    return _colbektnr1row3Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColBetragRow3 item.
+            /// </summary>
+            [RepositoryItem("e5a263b0-11d1-44d7-ad5b-d6d5d48d057c")]
+            public virtual Ranorex.Cell ColBetragRow3
+            {
+                get
+                {
+                    return _colbetragrow3Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBetragRow3 item info.
+            /// </summary>
+            [RepositoryItemInfo("e5a263b0-11d1-44d7-ad5b-d6d5d48d057c")]
+            public virtual RepoItemInfo ColBetragRow3Info
+            {
+                get
+                {
+                    return _colbetragrow3Info;
                 }
             }
 

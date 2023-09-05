@@ -24,29 +24,29 @@ namespace N_LISTEN_BULI_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Nicht_moeglich_Meldung recording.
+    ///The Tabelle_aufrufen recording.
     /// </summary>
-    [TestModule("6c9e5d59-7f9a-4dc0-9287-0761b086bec3", ModuleType.Recording, 1)]
-    public partial class Nicht_moeglich_Meldung : ITestModule
+    [TestModule("e20e5652-2186-4d07-9a11-b1e13f6cc1e0", ModuleType.Recording, 1)]
+    public partial class Tabelle_aufrufen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository repo = global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository.Instance;
 
-        static Nicht_moeglich_Meldung instance = new Nicht_moeglich_Meldung();
+        static Tabelle_aufrufen instance = new Tabelle_aufrufen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Nicht_moeglich_Meldung()
+        public Tabelle_aufrufen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Nicht_moeglich_Meldung Instance
+        public static Tabelle_aufrufen Instance
         {
             get { return instance; }
         }
@@ -79,18 +79,8 @@ namespace N_LISTEN_BULI_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(60000), new RecordItemIndex(0));
-            repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(60000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Verbuchung per 7.2022 nicht möglich.\r\n\r\nEs ist bereits bis Zeitraum 7.2022  abgeschlossen!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Verbuchung per 7.2022 nicht möglich.\r\n\r\nEs ist bereits bis Zeitraum 7.2022  abgeschlossen!");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
-            repo.DlgMessageBox.Button0.Click();
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'.", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new RecordItemIndex(3));
-            Keyboard.PrepareFocus(repo.DlgFibu.TitleBar100AVZUEberleitungFibuMIT);
-            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbOptionenTabelle' at Center.", repo.FrmBuchungsliste.PbOptionenTabelleInfo, new RecordItemIndex(0));
+            repo.FrmBuchungsliste.PbOptionenTabelle.Click();
             
         }
 

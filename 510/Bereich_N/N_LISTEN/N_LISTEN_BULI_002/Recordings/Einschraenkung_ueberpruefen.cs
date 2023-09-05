@@ -136,9 +136,6 @@ namespace N_LISTEN_BULI_002.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Monat_bis) on item 'FrmBuchungsliste.TextBis'.", repo.FrmBuchungsliste.TextBisInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.FrmBuchungsliste.TextBisInfo, "Text", Monat_bis);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbOptionenTabelle' at Center.", repo.FrmBuchungsliste.PbOptionenTabelleInfo, new RecordItemIndex(6));
-            repo.FrmBuchungsliste.PbOptionenTabelle.Click();
-            
         }
 
 #region Image Feature Data

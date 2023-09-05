@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace N_LISTEN_BULI_002.Recordings
 {
-    public partial class StarAUT_03
+    public partial class Fibu_Ueberleitung_starten
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
