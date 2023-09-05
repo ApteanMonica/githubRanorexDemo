@@ -84,6 +84,7 @@ steps:
   #    SmtpPassword: '$(SMTP_UserPassword)'
 
    - task: SendEmail@1
+     condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
      inputs:
       To: 'kishore.ramachandraiah@aptean.com'
       From: 'ApteanOperations-.RSautomation@aptean.com'
