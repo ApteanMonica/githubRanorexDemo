@@ -17,12 +17,11 @@ resources:
 
 pool:
   vmImage: 'windows-latest'
-# pool:
-#   name: Automation
-#   demands:
-#    - agent.name -equals DGA1APP03RNSQA
-#   env:
-#    NODE_TLS_REJECT_UNAUTHORIZED: 0 
+  pool:
+   name: Automation
+   demands:
+     - agent.name -equals DGA1APP03RNSQA
+
 
 steps:
    - task: DownloadBuildArtifacts@1
