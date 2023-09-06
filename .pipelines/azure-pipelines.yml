@@ -21,47 +21,56 @@ pool:
     # demands:
     #  - agent.name -equals DGA1APP03RNSQA
 
-steps:
-   - task: DownloadBuildArtifacts@1
-     inputs:
-      buildType: 'specific'
-      project: '1692ec27-30a7-44ac-bb45-41f0b3ec9f01'
-      pipeline: '99'
-      buildVersionToDownload: 'specific'
-      buildId: '$(buildId)'
-      downloadType: 'single'
-      artifactName: 'RS2Build'
-      downloadPath: '$(System.ArtifactsDirectory)'
+jobs:
+- job: cypress
+  steps:
+    - task: DownloadBuildArtifacts@1
+      inputs:
+        buildType: 'specific'
+        project: '1692ec27-30a7-44ac-bb45-41f0b3ec9f01'
+        pipeline: '99'
+        buildVersionToDownload: 'specific'
+        buildId: '$(buildId)'
+        downloadType: 'single'
+        artifactName: 'RS2Build'
+        downloadPath: '$(System.ArtifactsDirectory)'
 
-   - task: PowerShell@2
-     displayName: 'Run Service Host'
-     inputs:
-      targetType: 'inline'
-      script: |
-        Start-Process -FilePath "$(System.DefaultWorkingDirectory)\API_Automation_Cypress\BatchFile\ServiceHost.bat" -WindowStyle Hidden
+    - task: PowerShell@2
+      displayName: 'Run Service Host'
+      inputs:
+        targetType: 'inline'
+        script: |
+          Start-Process -FilePath "$(System.DefaultWorkingDirectory)\API_Automation_Cypress\BatchFile\ServiceHost.bat" -WindowStyle Hidden
 
-   - task: CmdLine@2
-     displayName: 'NPM initialization'
-     inputs:
-       script: |
-        npm install
-        npm i   
-       workingDirectory: '$(System.DefaultWorkingDirectory)/API_Automation_Cypress/Modulewise_TestCases'
+    - task: CmdLine@2
+      displayName: 'NPM initialization'
+      inputs:
+        script: |
+          npm install
+          npm i   
+        workingDirectory: '$(System.DefaultWorkingDirectory)/API_Automation_Cypress/Modulewise_TestCases'
 
-   - task: BatchScript@1
-     displayName: 'Run Cypress Scripts'
-     inputs:
-      filename: '$(System.DefaultWorkingDirectory)/API_Automation_Cypress/BatchFile/RunScripts.bat'
+    - task: BatchScript@1
+      displayName: 'Run Cypress Scripts'
+      inputs:
+        filename: '$(System.DefaultWorkingDirectory)/API_Automation_Cypress/BatchFile/RunScripts.bat'
 
-   - task: ArchiveFiles@2
-     condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
-     inputs:
-      rootFolderOrFile: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports'
-      includeRootFolder: true
-      archiveType: 'zip'
-      archiveFile: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports.zip'
-      replaceExistingArchive: true
+    - task: ArchiveFiles@2
+      condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
+      inputs:
+        rootFolderOrFile: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports'
+        includeRootFolder: true
+        archiveType: 'zip'
+        archiveFile: '$(Build.ArtifactStagingDirectory)\reports.zip'
+        replaceExistingArchive: true
 
+    - task: PublishBuildArtifacts@1
+      inputs:
+          PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+          ArtifactName: 'drop'
+          publishLocation: 'Container'
+        
+  
   # - task: SendEmail@1
   #   condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
   #   inputs:
@@ -79,7 +88,15 @@ steps:
   #    SmtpServer: 'smtp.office365.com'
   #    SmtpUsername: '$(SMTP_UserName)'
   #    SmtpPassword: '$(SMTP_UserPassword)'
-
+- job: sendEmail
+  pool: windows-latest
+  steps:
+   - task: DownloadBuildArtifacts@1
+     inputs:
+       buildType: 'current'
+       downloadType: 'single'
+       artifactName: 'drop'
+       downloadPath: '$(System.ArtifactsDirectory)'
    - task: SendEmail@1
      condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
      inputs:
@@ -94,6 +111,6 @@ steps:
       BodyAsHtml: false
       SmtpServer: 'smtp.office365.com'
       AddAttachment: true
-      Attachment: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports.zip'
+      Attachment: '$(Build.ArtifactStagingDirectory)\reports.zip'
       SmtpUsername: '$(SMTP_UserName)'
       SmtpPassword: '$(SMTP_UserPassword)'
