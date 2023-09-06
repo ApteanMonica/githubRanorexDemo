@@ -665,7 +665,7 @@ namespace B_KTO_002
         [RepositoryFolder("7931a3b2-af97-43c5-99e1-9c41a0c1dc2b")]
         public partial class DlgMessageBoxAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _meldungstext_verwendungInfo;
+            RepoItemInfo _meldungstextInfo;
             RepoItemInfo _button0Info;
 
             /// <summary>
@@ -674,7 +674,7 @@ namespace B_KTO_002
             public DlgMessageBoxAppFolder(RepoGenBaseFolder parentFolder) :
                     base("DlgMessageBox", "/form[@controlname='dlgMessageBox']", parentFolder, 30000, null, true, "7931a3b2-af97-43c5-99e1-9c41a0c1dc2b", "")
             {
-                _meldungstext_verwendungInfo = new RepoItemInfo(this, "Meldungstext_Verwendung", "text[@controlname='labelMeldungstext']", "", 30000, null, "08131370-b9e7-4b56-bca3-3beba7227077");
+                _meldungstextInfo = new RepoItemInfo(this, "Meldungstext", "text[@controlname='labelMeldungstext']", "", 30000, null, "08131370-b9e7-4b56-bca3-3beba7227077");
                 _button0Info = new RepoItemInfo(this, "Button0", "button[@controlname='button0']", "", 30000, null, "7188eae2-7df6-4961-93af-9aeaa0cdbb92");
             }
 
@@ -703,26 +703,26 @@ namespace B_KTO_002
             }
 
             /// <summary>
-            /// The Meldungstext_Verwendung item.
+            /// The Meldungstext item.
             /// </summary>
             [RepositoryItem("08131370-b9e7-4b56-bca3-3beba7227077")]
-            public virtual Ranorex.Text Meldungstext_Verwendung
+            public virtual Ranorex.Text Meldungstext
             {
                 get
                 {
-                    return _meldungstext_verwendungInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _meldungstextInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The Meldungstext_Verwendung item info.
+            /// The Meldungstext item info.
             /// </summary>
             [RepositoryItemInfo("08131370-b9e7-4b56-bca3-3beba7227077")]
-            public virtual RepoItemInfo Meldungstext_VerwendungInfo
+            public virtual RepoItemInfo MeldungstextInfo
             {
                 get
                 {
-                    return _meldungstext_verwendungInfo;
+                    return _meldungstextInfo;
                 }
             }
 

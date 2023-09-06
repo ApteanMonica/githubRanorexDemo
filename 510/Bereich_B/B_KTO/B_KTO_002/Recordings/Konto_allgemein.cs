@@ -118,8 +118,7 @@ namespace B_KTO_002.Recordings
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Bezeichnung' at Center.", repo.FrmKto.BezeichnungInfo, new RecordItemIndex(7));
             //repo.FrmKto.Bezeichnung.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmKto.Bezeichnung'.", repo.FrmKto.BezeichnungInfo, new RecordItemIndex(8));
-            Keyboard.PrepareFocus(repo.FrmKto.Bezeichnung);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='QS Konto ändern 1') on item 'FrmKto.Bezeichnung'.", repo.FrmKto.BezeichnungInfo, new RecordItemIndex(9));
@@ -132,14 +131,14 @@ namespace B_KTO_002.Recordings
             repo.FrmKto.Verwendung.EnsureVisible();
             Keyboard.Press("p");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmKto.Verwendung'.", repo.FrmKto.VerwendungInfo, new RecordItemIndex(12));
-            repo.FrmKto.Verwendung.PressKeys("{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(12));
+            Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.Meldungstext_Verwendung'", repo.DlgMessageBox.Meldungstext_VerwendungInfo, new ActionTimeout(120000), new RecordItemIndex(13));
-            repo.DlgMessageBox.Meldungstext_VerwendungInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.Meldungstext'", repo.DlgMessageBox.MeldungstextInfo, new ActionTimeout(120000), new RecordItemIndex(13));
+            repo.DlgMessageBox.MeldungstextInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Verwendung wirklich ändern?\r\n') on item 'DlgMessageBox.Meldungstext_Verwendung'.", repo.DlgMessageBox.Meldungstext_VerwendungInfo, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.DlgMessageBox.Meldungstext_VerwendungInfo, "Text", "Verwendung wirklich ändern?\r\n");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Verwendung wirklich ändern?\r\n') on item 'DlgMessageBox.Meldungstext'.", repo.DlgMessageBox.MeldungstextInfo, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.DlgMessageBox.MeldungstextInfo, "Text", "Verwendung wirklich ändern?\r\n");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(15));
             repo.DlgMessageBox.Button0.Click();

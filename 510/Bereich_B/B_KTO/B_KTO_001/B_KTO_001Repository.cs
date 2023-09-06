@@ -98,6 +98,7 @@ namespace B_KTO_001
         {
             B_KTO_001RepositoryFolders.PicTabsFolder _pictabs;
             RepoItemInfo _titlebar100sachkontenverwaltenInfo;
+            RepoItemInfo _pbdataaccesssaveInfo;
             RepoItemInfo _button_newInfo;
             RepoItemInfo _kontoInfo;
             RepoItemInfo _waehrungInfo;
@@ -105,7 +106,6 @@ namespace B_KTO_001
             RepoItemInfo _ustcodeInfo;
             RepoItemInfo _bezeichnungInfo;
             RepoItemInfo _rbaktivInfo;
-            RepoItemInfo _pbdataaccesssaveInfo;
 
             /// <summary>
             /// Creates a new FrmKto  folder.
@@ -115,6 +115,7 @@ namespace B_KTO_001
             {
                 _pictabs = new B_KTO_001RepositoryFolders.PicTabsFolder(this);
                 _titlebar100sachkontenverwaltenInfo = new RepoItemInfo(this, "TitleBar100SachkontenVerwalten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "3e8419b5-e42a-4b01-b91b-1f268b7c65ef");
+                _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "?/?/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "7d8930c2-8c91-4cee-a935-7b794437b07f");
                 _button_newInfo = new RepoItemInfo(this, "Button_New", "?/?/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup2']/button[@controlname='pbNew']", "", 30000, null, "b60788e4-c82f-45bd-8509-7e800470219a");
                 _kontoInfo = new RepoItemInfo(this, "Konto", "container[@controlname='ClientArea']/?/?/text[@accessiblename='Konto']", "", 30000, null, "0894121b-4129-4a6c-844d-987ca981a22d");
                 _waehrungInfo = new RepoItemInfo(this, "Waehrung", "container[@controlname='ClientArea']/?/?/text[@accessiblename='Währung']", "", 30000, null, "7cf50209-db4d-4fda-83f7-b61e0c2cdb48");
@@ -122,7 +123,6 @@ namespace B_KTO_001
                 _ustcodeInfo = new RepoItemInfo(this, "UstCode", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgemein']/?/?/text[@accessiblename='Ust-Code']", "", 30000, null, "e1152c7e-52fb-4a43-82c1-2fc14b134aef");
                 _bezeichnungInfo = new RepoItemInfo(this, "Bezeichnung", "container[@controlname='ClientArea']/?/?/text[@accessiblename='Bezeichnung']", "", 30000, null, "93ff4f20-c2c8-402a-8b05-aec9479b56b2");
                 _rbaktivInfo = new RepoItemInfo(this, "RbAktiv", "?/?/container[@controlname='groupBox1']/radiobutton[@controlname='rbAktiv']", "", 30000, null, "85a9fd74-1fb0-45bc-ade2-6b4e67e58a4e");
-                _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "?/?/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "7d8930c2-8c91-4cee-a935-7b794437b07f");
             }
 
             /// <summary>
@@ -170,6 +170,30 @@ namespace B_KTO_001
                 get
                 {
                     return _titlebar100sachkontenverwaltenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessSave item.
+            /// </summary>
+            [RepositoryItem("7d8930c2-8c91-4cee-a935-7b794437b07f")]
+            public virtual Ranorex.Button PbDataAccessSave
+            {
+                get
+                {
+                    return _pbdataaccesssaveInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessSave item info.
+            /// </summary>
+            [RepositoryItemInfo("7d8930c2-8c91-4cee-a935-7b794437b07f")]
+            public virtual RepoItemInfo PbDataAccessSaveInfo
+            {
+                get
+                {
+                    return _pbdataaccesssaveInfo;
                 }
             }
 
@@ -338,30 +362,6 @@ namespace B_KTO_001
                 get
                 {
                     return _rbaktivInfo;
-                }
-            }
-
-            /// <summary>
-            /// The PbDataAccessSave item.
-            /// </summary>
-            [RepositoryItem("7d8930c2-8c91-4cee-a935-7b794437b07f")]
-            public virtual Ranorex.Button PbDataAccessSave
-            {
-                get
-                {
-                    return _pbdataaccesssaveInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PbDataAccessSave item info.
-            /// </summary>
-            [RepositoryItemInfo("7d8930c2-8c91-4cee-a935-7b794437b07f")]
-            public virtual RepoItemInfo PbDataAccessSaveInfo
-            {
-                get
-                {
-                    return _pbdataaccesssaveInfo;
                 }
             }
 
@@ -553,8 +553,6 @@ namespace B_KTO_001
         {
             RepoItemInfo _button1Info;
             RepoItemInfo _button0Info;
-            RepoItemInfo _meldung_kontoanlage_allgemein_kontoartInfo;
-            RepoItemInfo _meldung_kontoanlage_basis_Info;
             RepoItemInfo _labelmeldungstextInfo;
 
             /// <summary>
@@ -565,8 +563,6 @@ namespace B_KTO_001
             {
                 _button1Info = new RepoItemInfo(this, "Button1", "button[@controlname='button1']", "", 30000, null, "ae430006-2abf-4e96-999e-532f4c76cc6b");
                 _button0Info = new RepoItemInfo(this, "Button0", "button[@controlname='button0']", "", 30000, null, "2848dc13-e4de-47a8-85e3-01eb8f5dd828");
-                _meldung_kontoanlage_allgemein_kontoartInfo = new RepoItemInfo(this, "Meldung_Kontoanlage_allgemein_Kontoart", "text[@text='Bitte wählen Sie zuerst eine Kontoart!']", "", 30000, null, "4c2cdf8f-2557-4918-b9a9-114d5230776c");
-                _meldung_kontoanlage_basis_Info = new RepoItemInfo(this, "Meldung_Kontoanlage_Basis_", "text[@text='Länge der Kontonummer ist nicht 4 Stellen -OK?']", "", 30000, null, "bebc2782-ef8b-4903-b7cd-7ecedde6608d");
                 _labelmeldungstextInfo = new RepoItemInfo(this, "LabelMeldungstext", "text[@controlname='labelMeldungstext']", "", 30000, null, "89af2a25-55a5-4bc4-bac3-305b4830a5f4");
             }
 
@@ -639,54 +635,6 @@ namespace B_KTO_001
                 get
                 {
                     return _button0Info;
-                }
-            }
-
-            /// <summary>
-            /// The Meldung_Kontoanlage_allgemein_Kontoart item.
-            /// </summary>
-            [RepositoryItem("4c2cdf8f-2557-4918-b9a9-114d5230776c")]
-            public virtual Ranorex.Text Meldung_Kontoanlage_allgemein_Kontoart
-            {
-                get
-                {
-                    return _meldung_kontoanlage_allgemein_kontoartInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Meldung_Kontoanlage_allgemein_Kontoart item info.
-            /// </summary>
-            [RepositoryItemInfo("4c2cdf8f-2557-4918-b9a9-114d5230776c")]
-            public virtual RepoItemInfo Meldung_Kontoanlage_allgemein_KontoartInfo
-            {
-                get
-                {
-                    return _meldung_kontoanlage_allgemein_kontoartInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Meldung_Kontoanlage_Basis_ item.
-            /// </summary>
-            [RepositoryItem("bebc2782-ef8b-4903-b7cd-7ecedde6608d")]
-            public virtual Ranorex.Text Meldung_Kontoanlage_Basis_
-            {
-                get
-                {
-                    return _meldung_kontoanlage_basis_Info.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Meldung_Kontoanlage_Basis_ item info.
-            /// </summary>
-            [RepositoryItemInfo("bebc2782-ef8b-4903-b7cd-7ecedde6608d")]
-            public virtual RepoItemInfo Meldung_Kontoanlage_Basis_Info
-            {
-                get
-                {
-                    return _meldung_kontoanlage_basis_Info;
                 }
             }
 

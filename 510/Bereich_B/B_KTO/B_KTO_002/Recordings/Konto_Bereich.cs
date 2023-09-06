@@ -89,8 +89,7 @@ namespace B_KTO_002.Recordings
             repo.FrmKto.PicTabs.Kostenstelle.EnsureVisible();
             Keyboard.Press("P");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmKto.PicTabs.Kostenstelle'.", repo.FrmKto.PicTabs.KostenstelleInfo, new RecordItemIndex(3));
-            Keyboard.PrepareFocus(repo.FrmKto.PicTabs.Kostenstelle);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.Kostentraeger' at Center.", repo.FrmKto.PicTabs.KostentraegerInfo, new RecordItemIndex(4));
@@ -100,8 +99,7 @@ namespace B_KTO_002.Recordings
             repo.FrmKto.PicTabs.Kostentraeger.EnsureVisible();
             Keyboard.Press("W");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmKto.PicTabs.Kostentraeger'.", repo.FrmKto.PicTabs.KostentraegerInfo, new RecordItemIndex(6));
-            Keyboard.PrepareFocus(repo.FrmKto.PicTabs.Kostentraeger);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Speichern' at Center.", repo.FrmKto.SpeichernInfo, new RecordItemIndex(7));

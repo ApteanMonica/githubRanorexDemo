@@ -89,8 +89,7 @@ namespace B_KTO_001.Recordings
             repo.FrmKto.PicTabs.ColKtgrCdRow1.EnsureVisible();
             Keyboard.Press("0035");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmKto'.", repo.FrmKto.SelfInfo, new RecordItemIndex(3));
-            repo.FrmKto.Self.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(3));
             Keyboard.Press("{Tab}");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0035') on item 'FrmKto.PicTabs.ColKtgrCdRow1'.", repo.FrmKto.PicTabs.ColKtgrCdRow1Info, new RecordItemIndex(4));
@@ -106,8 +105,7 @@ namespace B_KTO_001.Recordings
             repo.FrmKto.PicTabs.ColKtbzKzRow1.EnsureVisible();
             Keyboard.Press("p");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmKto.PicTabs.ColKtbzKzRow1'.", repo.FrmKto.PicTabs.ColKtbzKzRow1Info, new RecordItemIndex(8));
-            repo.FrmKto.PicTabs.ColKtbzKzRow1.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(8));
             Keyboard.Press("{Tab}");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='P') on item 'FrmKto.PicTabs.ColKtbzKzRow1'.", repo.FrmKto.PicTabs.ColKtbzKzRow1Info, new RecordItemIndex(9));

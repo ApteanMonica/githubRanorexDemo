@@ -99,8 +99,7 @@ namespace B_KTO_002.Recordings
             repo.FrmKto.PicTabs.Gruppe_GuV.EnsureVisible();
             Keyboard.Press("0190");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmKto.PicTabs.Gruppe_GuV'.", repo.FrmKto.PicTabs.Gruppe_GuVInfo, new RecordItemIndex(6));
-            repo.FrmKto.PicTabs.Gruppe_GuV.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(6));
             Keyboard.Press("{Tab}");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Speichern' at Center.", repo.FrmKto.SpeichernInfo, new RecordItemIndex(7));
