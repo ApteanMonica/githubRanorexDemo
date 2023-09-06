@@ -18,8 +18,8 @@ resources:
 pool:
   # vmImage: 'windows-latest'
   name: Automation
-    # demands:
-    #  - agent.name -equals DGA1APP03RNSQA
+  demands:
+    - agent.name -equals DGA1APP03RNSQA
 
 jobs:
 - job: cypress
@@ -89,7 +89,8 @@ jobs:
   #    SmtpUsername: '$(SMTP_UserName)'
   #    SmtpPassword: '$(SMTP_UserPassword)'
 - job: sendEmail
-  pool: windows-latest
+  pool: 
+    vmImage: 'windows-latest'
   steps:
    - task: DownloadBuildArtifacts@1
      inputs:
