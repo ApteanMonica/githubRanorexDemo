@@ -89,6 +89,7 @@ jobs:
   #    SmtpUsername: '$(SMTP_UserName)'
   #    SmtpPassword: '$(SMTP_UserPassword)'
 - job: sendEmail
+  dependsOn: cypress
   pool: 
     vmImage: 'windows-latest'
   steps:
