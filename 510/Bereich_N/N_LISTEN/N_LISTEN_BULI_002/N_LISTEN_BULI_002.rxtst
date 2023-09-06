@@ -18,12 +18,6 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="1979cbf3-e9f3-4ef3-b5d2-3c7f37effe79"
-			name="Ueberpruefung_Ergebnis_row2"
-			ref="1a182bbc-7f18-471d-a64d-28a94b438fea"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="1a069da7-a2ad-459e-a655-d4752c5bf13e"
 			name="nochmalige_Ueberleitung"
 			ref="e43fbcf2-7460-45da-b453-afa837393285"
@@ -31,7 +25,7 @@
 			</testmodule>
 			<smartfoldernode
 			id="1aa5b1f0-f9cc-44c5-a31b-70a1937e5f0d"
-			name="511,WSPET">
+			name="511">
 				<conditiongroup
 				comparison="OR"
 				enabled="True">
@@ -49,23 +43,6 @@
 						<rightvalue>
 							<simplevaluesource
 							value="SBG-RANOAGENT3">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Computername"
-								id="a1176db5-784e-4390-bcf9-eb9cb43208f4">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="WSPET">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -99,6 +76,15 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<testmodule
+			id="375fd816-bbe3-4e69-8de1-4912270a3290"
+			name="Ueberpruefung_Ergebnis_row2"
+			ref="1a182bbc-7f18-471d-a64d-28a94b438fea"
+			type="Recording">
+				<description>
+					<![CDATA[Continue on Fail, falls wieder man die Zeile 2 im repository die row3 wäre]]>
+				</description>
+			</testmodule>
 			<testmodule
 			id="40e701e9-ce90-46db-9ac0-f3e95c734bcf"
 			name="Ueberleitungsmeldung"
@@ -170,31 +156,6 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
-			<smartfoldernode
-			id="6150840d-ac8a-473d-8f6b-f6c0fd65a48f"
-			name="510,521">
-				<conditiongroup
-				comparison="AND"
-				enabled="True">
-					<condition
-					comparison="IsNotEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Computername"
-								id="a1176db5-784e-4390-bcf9-eb9cb43208f4">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="SBG-RANOAGENT3">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
 			<testmodule
 			id="6fd4cfe5-64b7-4e37-b648-2af7379099bf"
 			name="StartAUT"
@@ -402,48 +363,6 @@
 			ref="6c9e5d59-7f9a-4dc0-9287-0761b086bec3"
 			type="Recording">
 			</testmodule>
-			<smartfoldernode
-			id="abc53b1c-7278-41bf-9b70-6d10f5962480"
-			name="511,WSPET">
-				<conditiongroup
-				comparison="OR"
-				enabled="True">
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Computername"
-								id="a1176db5-784e-4390-bcf9-eb9cb43208f4">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="SBG-RANOAGENT3">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Computername"
-								id="a1176db5-784e-4390-bcf9-eb9cb43208f4">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="WSPET">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
 			<testmodule
 			id="b48a2c60-6ee6-491c-b02b-39497563331e"
 			name="Einschraenkung_Daten"
@@ -469,15 +388,6 @@
 					variablename="Monat_bis">
 					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			id="c18b6f41-5e59-4681-87a2-145dd0bed3a4"
-			name="Ueberpruefung_Ergebnis_row3"
-			ref="1c0c17ea-0d18-43bd-89cd-e173d1819171"
-			type="Recording">
-				<description>
-					<![CDATA[Valdierung von row3 (Zeile 2 = row3)]]>
-				</description>
 			</testmodule>
 			<testmodule
 			id="c4fd3efa-09ae-4692-bb47-99271db9ed4a"
@@ -623,22 +533,10 @@
 						id="0c223a19-7eb6-4aff-8358-d7041c8a76c5"
 						name="Meldung">
 						</testmodule>
-						<smartfoldernode
-						id="abc53b1c-7278-41bf-9b70-6d10f5962480"
-						name="511,WSPET">
-							<testmodule
-							id="1979cbf3-e9f3-4ef3-b5d2-3c7f37effe79"
-							name="Ueberpruefung_Ergebnis_row2">
-							</testmodule>
-						</smartfoldernode>
-						<smartfoldernode
-						id="6150840d-ac8a-473d-8f6b-f6c0fd65a48f"
-						name="510,521">
-							<testmodule
-							id="c18b6f41-5e59-4681-87a2-145dd0bed3a4"
-							name="Ueberpruefung_Ergebnis_row3">
-							</testmodule>
-						</smartfoldernode>
+						<testmodule
+						id="375fd816-bbe3-4e69-8de1-4912270a3290"
+						name="Ueberpruefung_Ergebnis_row2">
+						</testmodule>
 						<testmodule
 						id="4ca458cc-5a84-4079-b79f-9a4af698d559"
 						name="Fibu_Ueberleitung_starten">
@@ -649,7 +547,7 @@
 						</testmodule>
 						<smartfoldernode
 						id="1aa5b1f0-f9cc-44c5-a31b-70a1937e5f0d"
-						name="511,WSPET">
+						name="511">
 							<testmodule
 							id="41904477-c20a-4967-b732-e6bbf425f0d0"
 							name="Ueberleitungsmeldung_511">
@@ -746,16 +644,10 @@
 			id="1aa5b1f0-f9cc-44c5-a31b-70a1937e5f0d">
 			</testcontainer>
 			<testcontainer
-			id="6150840d-ac8a-473d-8f6b-f6c0fd65a48f">
-			</testcontainer>
-			<testcontainer
 			id="88f5da10-6d3c-4184-8f91-793b775f0277">
 			</testcontainer>
 			<testcontainer
 			id="a1176db5-784e-4390-bcf9-eb9cb43208f4">
-			</testcontainer>
-			<testcontainer
-			id="abc53b1c-7278-41bf-9b70-6d10f5962480">
 			</testcontainer>
 			<testcontainer
 			id="d9b91910-e326-49ea-9369-7688bf588552">

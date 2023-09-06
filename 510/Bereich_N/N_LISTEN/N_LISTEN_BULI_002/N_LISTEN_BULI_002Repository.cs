@@ -824,6 +824,7 @@ namespace N_LISTEN_BULI_002
             N_LISTEN_BULI_002RepositoryFolders.Frame2Folder _frame2;
             RepoItemInfo _titlebar100avzueberleitungfibumitInfo;
             RepoItemInfo _pbstartInfo;
+            RepoItemInfo _schliessenInfo;
 
             /// <summary>
             /// Creates a new DlgFibu  folder.
@@ -834,6 +835,7 @@ namespace N_LISTEN_BULI_002
                 _frame2 = new N_LISTEN_BULI_002RepositoryFolders.Frame2Folder(this);
                 _titlebar100avzueberleitungfibumitInfo = new RepoItemInfo(this, "TitleBar100AVZUEberleitungFibuMIT", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "431d86a4-c1de-4727-8965-aaac68ae1f6d");
                 _pbstartInfo = new RepoItemInfo(this, "PbStart", "button[@controlname='pbStart']", "", 30000, null, "dfd7f986-2f28-4f84-bad8-f6d55a21e4b1");
+                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "52f2044e-e38d-46a6-81a9-a6441620279a");
             }
 
             /// <summary>
@@ -905,6 +907,30 @@ namespace N_LISTEN_BULI_002
                 get
                 {
                     return _pbstartInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item.
+            /// </summary>
+            [RepositoryItem("52f2044e-e38d-46a6-81a9-a6441620279a")]
+            public virtual Ranorex.Button Schliessen
+            {
+                get
+                {
+                    return _schliessenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item info.
+            /// </summary>
+            [RepositoryItemInfo("52f2044e-e38d-46a6-81a9-a6441620279a")]
+            public virtual RepoItemInfo SchliessenInfo
+            {
+                get
+                {
+                    return _schliessenInfo;
                 }
             }
 
