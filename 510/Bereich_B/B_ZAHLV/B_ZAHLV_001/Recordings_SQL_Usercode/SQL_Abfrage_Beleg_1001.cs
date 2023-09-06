@@ -157,17 +157,13 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
 
             Init();
 
-            // mit Variablen - funktionioniert nicht
-            Report.Log(ReportLevel.Info, "Section", "mit Variablen - funktionioniert nicht", new RecordItemIndex(0));
-            
-            //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement(file_SQL_Select_B_BUSA, DB_File, file_selectergebnis_b_busa_aktuell);
-            
-            //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains(file_selectergebnis_b_busa_Referenz_Teil_1, file_selectergebnis_b_busa_aktuell);
-            
-            // ohne Variablen funktioniert nicht - String output nur in Argument eingebbar, nicht in Feld
-            //Report.Log(ReportLevel.Info, "Section", "ohne Variablen funktioniert nicht - String output nur in Argument eingebbar, nicht in Feld", new RecordItemIndex(3));
+            file_selectergebnis_b_busa_aktuell = Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement(SQL_Select_B_BUSA, DB_File, "C:\\temp\\B_ZAHLV_001_B_BUSA_aktuell.txt");
             
             //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select * from b_busa where firm_nr = '100' and busa_belegnr = '1001';", "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "C:\\temp\\B_ZAHLV_001_B_BUSA_aktuell.txt");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains(file_selectergebnis_b_busa_Referenz_Teil_1, file_selectergebnis_b_busa_aktuell);
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains(file_selectergebnis_b_busa_Referenz_Teil_2, file_selectergebnis_b_busa_aktuell);
             
         }
 
