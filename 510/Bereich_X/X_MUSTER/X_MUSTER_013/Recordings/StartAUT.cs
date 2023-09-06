@@ -20,50 +20,63 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_ZAHLV_001.Recordings_SQL_Usercode
+namespace X_MUSTER_013.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Computername_einlesen recording.
+    ///The StartAUT recording.
     /// </summary>
-    [TestModule("bbf997d2-b662-4a6a-94e4-07ecd1d62435", ModuleType.Recording, 1)]
-    public partial class Computername_einlesen : ITestModule
+    [TestModule("ea119e0d-3c94-401d-ae72-deef3ecdfed7", ModuleType.Recording, 1)]
+    public partial class StartAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_ZAHLV_001.B_ZAHLV_001Repository repository.
+        /// Holds an instance of the global::X_MUSTER_013.X_MUSTER_013Repository repository.
         /// </summary>
-        public static global::B_ZAHLV_001.B_ZAHLV_001Repository repo = global::B_ZAHLV_001.B_ZAHLV_001Repository.Instance;
+        public static global::X_MUSTER_013.X_MUSTER_013Repository repo = global::X_MUSTER_013.X_MUSTER_013Repository.Instance;
 
-        static Computername_einlesen instance = new Computername_einlesen();
+        static StartAUT instance = new StartAUT();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Computername_einlesen()
+        public StartAUT()
         {
-            Computername = "";
+            startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
+            programm = "S_ADR";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Computername_einlesen Instance
+        public static StartAUT Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Computername;
+        string _startfile;
 
         /// <summary>
-        /// Gets or sets the value of variable Computername.
+        /// Gets or sets the value of variable startfile.
         /// </summary>
-        [TestVariable("ddf4d366-d4b6-4da2-b7c3-deeecf4c10cd")]
-        public string Computername
+        [TestVariable("45bdfa0e-aa14-424d-a017-eebafdd7f110")]
+        public string startfile
         {
-            get { return _Computername; }
-            set { _Computername = value; }
+            get { return _startfile; }
+            set { _startfile = value; }
+        }
+
+        string _programm;
+
+        /// <summary>
+        /// Gets or sets the value of variable programm.
+        /// </summary>
+        [TestVariable("8ae51f5b-c740-454a-8235-de16acb543ea")]
+        public string programm
+        {
+            get { return _programm; }
+            set { _programm = value; }
         }
 
 #endregion
@@ -92,7 +105,14 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
 
             Init();
 
-            Computername = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetHost();
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $startfile with arguments from variable $programm in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(startfile, programm, "", false);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmAdr.TitleBar100Kundenstamm'", repo.FrmAdr.TitleBar100KundenstammInfo, new ActionTimeout(60000), new RecordItemIndex(1));
+            repo.FrmAdr.TitleBar100KundenstammInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Zahlungsverkehr') on item 'FrmAdr.TitleBar100Kundenstamm'.", repo.FrmAdr.TitleBar100KundenstammInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.FrmAdr.TitleBar100KundenstammInfo, "Text", "Zahlungsverkehr");
             
         }
 

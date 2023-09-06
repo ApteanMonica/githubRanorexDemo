@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_ZAHLV_001.Recordings_SQL_Usercode
+namespace X_MUSTER_020
 {
-    public partial class Computername_einlesen
+    public partial class SQL_Pruefung
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
