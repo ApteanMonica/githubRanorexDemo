@@ -79,11 +79,11 @@ namespace B_KTO_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto1.PbCommonStatus' at Center.", repo.FrmKto1.PbCommonStatusInfo, new RecordItemIndex(0));
-            repo.FrmKto1.PbCommonStatus.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PbCommonStatus' at Center.", repo.FrmKto.PbCommonStatusInfo, new RecordItemIndex(0));
+            repo.FrmKto.PbCommonStatus.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto1.OEffnen' at Center.", repo.FrmKto1.OEffnenInfo, new RecordItemIndex(1));
-            repo.FrmKto1.OEffnen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.OEffnen' at Center.", repo.FrmKto.OEffnenInfo, new RecordItemIndex(1));
+            repo.FrmKto.OEffnen.Click();
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Inaktiv' at Center.", repo.List1000.InaktivInfo, new RecordItemIndex(2));
             repo.List1000.Inaktiv.Click();
@@ -91,8 +91,8 @@ namespace B_KTO_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Speichern' at Center.", repo.FrmKto.SpeichernInfo, new RecordItemIndex(3));
             repo.FrmKto.Speichern.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='inaktiv') on item 'FrmKto1.Kontostatus'.", repo.FrmKto1.KontostatusInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.FrmKto1.KontostatusInfo, "Text", "inaktiv");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='inaktiv') on item 'FrmKto.Kontostatus'.", repo.FrmKto.KontostatusInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FrmKto.KontostatusInfo, "Text", "inaktiv");
             
         }
 

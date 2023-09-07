@@ -79,18 +79,18 @@ namespace B_KTO_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.TabPageGruppen' at Center.", repo.FrmKto.PicTabs.TabPageGruppenInfo, new RecordItemIndex(0));
-            repo.FrmKto.PicTabs.TabPageGruppen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.TabPageGruppen' at Center.", repo.FrmKto.TabPageGruppenInfo, new RecordItemIndex(0));
+            repo.FrmKto.TabPageGruppen.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.ColKtgrCdRow1' at Center.", repo.FrmKto.PicTabs.ColKtgrCdRow1Info, new RecordItemIndex(1));
-            repo.FrmKto.PicTabs.ColKtgrCdRow1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.ColKtgrCdRow1' at Center.", repo.FrmKto.ColKtgrCdRow1Info, new RecordItemIndex(1));
+            repo.FrmKto.ColKtgrCdRow1.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0035' with focus on 'FrmKto.PicTabs.TabPageGruppen'.", repo.FrmKto.PicTabs.TabPageGruppenInfo, new RecordItemIndex(2));
-            repo.FrmKto.PicTabs.TabPageGruppen.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0035' with focus on 'FrmKto.TabPageGruppen'.", repo.FrmKto.TabPageGruppenInfo, new RecordItemIndex(2));
+            repo.FrmKto.TabPageGruppen.EnsureVisible();
             Keyboard.Press("0035");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmKto.PicTabs.ColKtgrCdRow1'.", repo.FrmKto.PicTabs.ColKtgrCdRow1Info, new RecordItemIndex(3));
-            repo.FrmKto.PicTabs.ColKtgrCdRow1.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmKto.ColKtgrCdRow1'.", repo.FrmKto.ColKtgrCdRow1Info, new RecordItemIndex(3));
+            repo.FrmKto.ColKtgrCdRow1.EnsureVisible();
             Keyboard.Press("{Tab}");
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(60000), new RecordItemIndex(4));
@@ -102,8 +102,8 @@ namespace B_KTO_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(6));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.TabPageAllgemein' at Center.", repo.FrmKto.PicTabs.TabPageAllgemeinInfo, new RecordItemIndex(7));
-            repo.FrmKto.PicTabs.TabPageAllgemein.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.TabPageAllgemein' at Center.", repo.FrmKto.TabPageAllgemeinInfo, new RecordItemIndex(7));
+            repo.FrmKto.TabPageAllgemein.Click();
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.RbAktiv' at Center.", repo.FrmKto.RbAktivInfo, new RecordItemIndex(8));
             repo.FrmKto.RbAktiv.Click();

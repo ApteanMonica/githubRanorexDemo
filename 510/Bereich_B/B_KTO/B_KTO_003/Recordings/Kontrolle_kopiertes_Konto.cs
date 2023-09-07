@@ -105,8 +105,8 @@ namespace B_KTO_003.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.TabPageAllgemein' at Center.", repo.FrmKto.PicTabs.TabPageAllgemeinInfo, new RecordItemIndex(0));
-            repo.FrmKto.PicTabs.TabPageAllgemein.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.TabPageAllgemein' at Center.", repo.FrmKto.TabPageAllgemeinInfo, new RecordItemIndex(0));
+            repo.FrmKto.TabPageAllgemein.Click();
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Konto_Ziel) on item 'FrmKto.Konto'.", repo.FrmKto.KontoInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.FrmKto.KontoInfo, "Text", Konto_Ziel);
@@ -114,26 +114,26 @@ namespace B_KTO_003.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kontoname_Ziel) on item 'FrmKto.Bezeichnung'.", repo.FrmKto.BezeichnungInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.FrmKto.BezeichnungInfo, "Text", Kontoname_Ziel);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmKto.RbAktiv'.", repo.FrmKto.RbAktivInfo, new RecordItemIndex(3));
-            Validate.Exists(repo.FrmKto.RbAktivInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmKto.RbAktiv'.", repo.FrmKto.RbAktivInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.FrmKto.RbAktivInfo, "Checked", "True");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='EUR') on item 'FrmKto.Waehrung'.", repo.FrmKto.WaehrungInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.FrmKto.WaehrungInfo, "Text", "EUR");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='P') on item 'FrmKto.PicTabs.Verwendung'.", repo.FrmKto.PicTabs.VerwendungInfo, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.FrmKto.PicTabs.VerwendungInfo, "Text", "P");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='P') on item 'FrmKto.Verwendung'.", repo.FrmKto.VerwendungInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.FrmKto.VerwendungInfo, "Text", "P");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.TabPageGruppen' at Center.", repo.FrmKto.PicTabs.TabPageGruppenInfo, new RecordItemIndex(6));
-            repo.FrmKto.PicTabs.TabPageGruppen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.TabPageGruppen' at Center.", repo.FrmKto.TabPageGruppenInfo, new RecordItemIndex(6));
+            repo.FrmKto.TabPageGruppen.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0125') on item 'FrmKto.PicTabs.ColKtgrCdRow1'.", repo.FrmKto.PicTabs.ColKtgrCdRow1Info, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.FrmKto.PicTabs.ColKtgrCdRow1Info, "Text", "0125");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0125') on item 'FrmKto.ColKtgrCdRow1'.", repo.FrmKto.ColKtgrCdRow1Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.FrmKto.ColKtgrCdRow1Info, "Text", "0125");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.Bereiche' at Center.", repo.FrmKto.PicTabs.BereicheInfo, new RecordItemIndex(8));
-            repo.FrmKto.PicTabs.Bereiche.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Bereiche' at Center.", repo.FrmKto.BereicheInfo, new RecordItemIndex(8));
+            repo.FrmKto.Bereiche.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='P') on item 'FrmKto.PicTabs.Bereiche_Pflichtigkeit'.", repo.FrmKto.PicTabs.Bereiche_PflichtigkeitInfo, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.FrmKto.PicTabs.Bereiche_PflichtigkeitInfo, "Text", "P");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='P') on item 'FrmKto.Bereiche_Pflichtigkeit'.", repo.FrmKto.Bereiche_PflichtigkeitInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmKto.Bereiche_PflichtigkeitInfo, "Text", "P");
             
         }
 

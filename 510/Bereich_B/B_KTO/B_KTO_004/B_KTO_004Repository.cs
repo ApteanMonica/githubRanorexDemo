@@ -33,6 +33,7 @@ namespace B_KTO_004
         B_KTO_004RepositoryFolders.DlgDruckenAppFolder _dlgdrucken;
         B_KTO_004RepositoryFolders.PbExportItemsAppFolder _pbexportitems;
         B_KTO_004RepositoryFolders.TblDruckenAppFolder _tbldrucken;
+        B_KTO_004RepositoryFolders.WSPETAppFolder _wspet;
 
         /// <summary>
         /// Gets the singleton class instance representing the B_KTO_004Repository element repository.
@@ -55,6 +56,7 @@ namespace B_KTO_004
             _dlgdrucken = new B_KTO_004RepositoryFolders.DlgDruckenAppFolder(this);
             _pbexportitems = new B_KTO_004RepositoryFolders.PbExportItemsAppFolder(this);
             _tbldrucken = new B_KTO_004RepositoryFolders.TblDruckenAppFolder(this);
+            _wspet = new B_KTO_004RepositoryFolders.WSPETAppFolder(this);
         }
 
 #region Variables
@@ -126,6 +128,15 @@ namespace B_KTO_004
         {
             get { return _tbldrucken; }
         }
+
+        /// <summary>
+        /// The WSPET folder.
+        /// </summary>
+        [RepositoryFolder("c15aee3f-7248-4d32-a463-51f90c175b95")]
+        public virtual B_KTO_004RepositoryFolders.WSPETAppFolder WSPET
+        {
+            get { return _wspet; }
+        }
     }
 
     /// <summary>
@@ -142,17 +153,18 @@ namespace B_KTO_004
         {
             RepoItemInfo _titlebar100sachkontenverwaltenInfo;
             RepoItemInfo _suchtextInfo;
-            RepoItemInfo _status_aendernInfo;
-            RepoItemInfo _oeffnenInfo;
-            RepoItemInfo _speichern_buttonInfo;
-            RepoItemInfo _button_reogarnisierenInfo;
             RepoItemInfo _row1column0Info;
-            RepoItemInfo _cmbktostatusInfo;
-            ClientAreaInfoClass _clientareaInfo;
             RepoItemInfo _pbnavigationbackInfo;
-            RepoItemInfo _row1Info;
+            RepoItemInfo _pbcommonstatusInfo;
+            RepoItemInfo _text1001_statusInfo;
+            RepoItemInfo _oeffnenInfo;
+            RepoItemInfo _pbcommonreorganisierenInfo;
+            RepoItemInfo _speichern_buttonInfo;
             RepoItemInfo _dfktonrInfo;
             RepoItemInfo _dfktobez1Info;
+            ClientAreaInfoClass _clientareaInfo;
+            RepoItemInfo _row1Info;
+            RepoItemInfo _cmbktostatusInfo;
 
             /// <summary>
             /// Creates a new FrmKto  folder.
@@ -161,18 +173,19 @@ namespace B_KTO_004
                     base("FrmKto", "/form[@controlname='frmKto']", parentFolder, 30000, null, true, "c6e49411-55ed-4516-8b5c-f6e11369cd79", "")
             {
                 _titlebar100sachkontenverwaltenInfo = new RepoItemInfo(this, "TitleBar100SachkontenVerwalten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "398f277a-c438-4822-9d74-d52954b81864");
-                _suchtextInfo = new RepoItemInfo(this, "Suchtext", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup1']//text[@accessiblerole='Text']", "", 30000, null, "1dbc29e0-f65b-406d-9ab2-5caec809162d");
-                _status_aendernInfo = new RepoItemInfo(this, "Status_aendern", "?/?/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Status']", "", 30000, null, "20c3b16e-d8d5-4221-b72b-bfaea01fef71");
-                _oeffnenInfo = new RepoItemInfo(this, "OEffnen", "?/?/combobox[@controlname='cmbKto_status']/button[@accessiblename='Öffnen']", "", 30000, null, "056f3077-17c8-4fa7-9c6f-7c77ebdcec89");
-                _speichern_buttonInfo = new RepoItemInfo(this, "Speichern_Button", "?/?/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "01702c97-bb32-4df2-838e-e38a1c1b5a33");
-                _button_reogarnisierenInfo = new RepoItemInfo(this, "Button_Reogarnisieren", "?/?/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Reorganisieren']", "", 30000, null, "931f1b7c-6b49-4cfc-ab7f-36117c965d24");
+                _suchtextInfo = new RepoItemInfo(this, "Suchtext", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/text[@controlname='dfSearchExpression']/text[@accessiblerole='Text']", "", 30000, null, "1dbc29e0-f65b-406d-9ab2-5caec809162d");
                 _row1column0Info = new RepoItemInfo(this, "Row1Column0", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "bf5d924d-8720-4132-90bf-73a2570a0ead");
-                _cmbktostatusInfo = new RepoItemInfo(this, "CmbKtoStatus", "?/?/combobox[@controlname='cmbKto_status']", "", 30000, null, "5b36bc48-8eff-4094-b6ef-1d32db5d6b0c");
+                _pbnavigationbackInfo = new RepoItemInfo(this, "PbNavigationBack", "container[@controlname='RibbonBar']/container[@controlname='NavigationGroup']/button[@controlname='pbNavigation_Back']", "", 30000, null, "328b8126-3a18-484e-82a3-c05c9bff99da");
+                _pbcommonstatusInfo = new RepoItemInfo(this, "PbCommonStatus", "container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Status']", "", 30000, null, "a63148a0-a307-4daf-8aaf-b19c91372acc");
+                _text1001_statusInfo = new RepoItemInfo(this, "Text1001_Status", "container[@controlname='ClientArea']/combobox[@controlname='cmbKto_status']/text[@controlid='1001']", "", 30000, null, "0aaf582c-3a6a-4929-b379-fcbd37326cd8");
+                _oeffnenInfo = new RepoItemInfo(this, "OEffnen", "container[@controlname='ClientArea']/combobox[@controlname='cmbKto_status']/button[@name='Öffnen']", "", 30000, null, "9eff0ac0-f59c-416f-a990-8915e8908c1e");
+                _pbcommonreorganisierenInfo = new RepoItemInfo(this, "PbCommonReorganisieren", "container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Reorganisieren']", "", 30000, null, "a6701a95-83c0-4dc6-bdf8-a6cad6636793");
+                _speichern_buttonInfo = new RepoItemInfo(this, "Speichern_Button", "?/?/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "01702c97-bb32-4df2-838e-e38a1c1b5a33");
+                _dfktonrInfo = new RepoItemInfo(this, "DfKtoNr", "container[@controlname='ClientArea']/text[@controlname='dfKto_nr']/text[@accessiblename='Konto']", "", 30000, null, "519ade2a-7540-44c1-943b-3baa9f265de7");
+                _dfktobez1Info = new RepoItemInfo(this, "DfKtoBez1", "container[@controlname='ClientArea']/text[@controlname='dfKto_bez1']/text[@accessiblename='Bezeichnung']", "", 30000, null, "e5eed13d-734e-44b9-bdf9-311d68b58b10");
                 _clientareaInfo = new ClientAreaInfoClass(this);
-                _pbnavigationbackInfo = new RepoItemInfo(this, "PbNavigationBack", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbNavigation_Back']", "", 30000, null, "cf1b1f0e-a3c5-42c0-854c-23e907d0b6cb");
                 _row1Info = new RepoItemInfo(this, "Row1", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']", "", 30000, null, "de0acad1-94b9-4151-bb48-801daa89ace5");
-                _dfktonrInfo = new RepoItemInfo(this, "DfKtoNr", "?/?/text[@controlname='dfKto_nr']", "", 30000, null, "519ade2a-7540-44c1-943b-3baa9f265de7");
-                _dfktobez1Info = new RepoItemInfo(this, "DfKtoBez1", "?/?/text[@controlname='dfKto_bez1']", "", 30000, null, "e5eed13d-734e-44b9-bdf9-311d68b58b10");
+                _cmbktostatusInfo = new RepoItemInfo(this, "CmbKtoStatus", "container[@controlname='ClientArea']/combobox[@controlname='cmbKto_status']", "", 30000, null, "4cc7cec4-3250-425b-92d3-6ea0594f1844");
             }
 
             /// <summary>
@@ -283,102 +296,6 @@ namespace B_KTO_004
             }
 
             /// <summary>
-            /// The Status_aendern item.
-            /// </summary>
-            [RepositoryItem("20c3b16e-d8d5-4221-b72b-bfaea01fef71")]
-            public virtual Ranorex.Button Status_aendern
-            {
-                get
-                {
-                    return _status_aendernInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Status_aendern item info.
-            /// </summary>
-            [RepositoryItemInfo("20c3b16e-d8d5-4221-b72b-bfaea01fef71")]
-            public virtual RepoItemInfo Status_aendernInfo
-            {
-                get
-                {
-                    return _status_aendernInfo;
-                }
-            }
-
-            /// <summary>
-            /// The OEffnen item.
-            /// </summary>
-            [RepositoryItem("056f3077-17c8-4fa7-9c6f-7c77ebdcec89")]
-            public virtual Ranorex.Button OEffnen
-            {
-                get
-                {
-                    return _oeffnenInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The OEffnen item info.
-            /// </summary>
-            [RepositoryItemInfo("056f3077-17c8-4fa7-9c6f-7c77ebdcec89")]
-            public virtual RepoItemInfo OEffnenInfo
-            {
-                get
-                {
-                    return _oeffnenInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Speichern_Button item.
-            /// </summary>
-            [RepositoryItem("01702c97-bb32-4df2-838e-e38a1c1b5a33")]
-            public virtual Ranorex.Button Speichern_Button
-            {
-                get
-                {
-                    return _speichern_buttonInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Speichern_Button item info.
-            /// </summary>
-            [RepositoryItemInfo("01702c97-bb32-4df2-838e-e38a1c1b5a33")]
-            public virtual RepoItemInfo Speichern_ButtonInfo
-            {
-                get
-                {
-                    return _speichern_buttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Button_Reogarnisieren item.
-            /// </summary>
-            [RepositoryItem("931f1b7c-6b49-4cfc-ab7f-36117c965d24")]
-            public virtual Ranorex.Button Button_Reogarnisieren
-            {
-                get
-                {
-                    return _button_reogarnisierenInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Button_Reogarnisieren item info.
-            /// </summary>
-            [RepositoryItemInfo("931f1b7c-6b49-4cfc-ab7f-36117c965d24")]
-            public virtual RepoItemInfo Button_ReogarnisierenInfo
-            {
-                get
-                {
-                    return _button_reogarnisierenInfo;
-                }
-            }
-
-            /// <summary>
             /// The Row1Column0 item.
             /// </summary>
             [RepositoryItem("bf5d924d-8720-4132-90bf-73a2570a0ead")]
@@ -403,57 +320,9 @@ namespace B_KTO_004
             }
 
             /// <summary>
-            /// The CmbKtoStatus item.
-            /// </summary>
-            [RepositoryItem("5b36bc48-8eff-4094-b6ef-1d32db5d6b0c")]
-            public virtual Ranorex.ComboBox CmbKtoStatus
-            {
-                get
-                {
-                    return _cmbktostatusInfo.CreateAdapter<Ranorex.ComboBox>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CmbKtoStatus item info.
-            /// </summary>
-            [RepositoryItemInfo("5b36bc48-8eff-4094-b6ef-1d32db5d6b0c")]
-            public virtual RepoItemInfo CmbKtoStatusInfo
-            {
-                get
-                {
-                    return _cmbktostatusInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ClientArea item.
-            /// </summary>
-            [RepositoryItem("72886f32-8b44-4d7b-a931-92693ac44da3")]
-            public virtual Ranorex.Container ClientArea
-            {
-                get
-                {
-                    return _clientareaInfo.CreateAdapter<Ranorex.Container>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ClientArea item info.
-            /// </summary>
-            [RepositoryItemInfo("72886f32-8b44-4d7b-a931-92693ac44da3")]
-            public virtual ClientAreaInfoClass ClientAreaInfo
-            {
-                get
-                {
-                    return _clientareaInfo;
-                }
-            }
-
-            /// <summary>
             /// The PbNavigationBack item.
             /// </summary>
-            [RepositoryItem("cf1b1f0e-a3c5-42c0-854c-23e907d0b6cb")]
+            [RepositoryItem("328b8126-3a18-484e-82a3-c05c9bff99da")]
             public virtual Ranorex.Button PbNavigationBack
             {
                 get
@@ -465,7 +334,7 @@ namespace B_KTO_004
             /// <summary>
             /// The PbNavigationBack item info.
             /// </summary>
-            [RepositoryItemInfo("cf1b1f0e-a3c5-42c0-854c-23e907d0b6cb")]
+            [RepositoryItemInfo("328b8126-3a18-484e-82a3-c05c9bff99da")]
             public virtual RepoItemInfo PbNavigationBackInfo
             {
                 get
@@ -475,26 +344,122 @@ namespace B_KTO_004
             }
 
             /// <summary>
-            /// The Row1 item.
+            /// The PbCommonStatus item.
             /// </summary>
-            [RepositoryItem("de0acad1-94b9-4151-bb48-801daa89ace5")]
-            public virtual Ranorex.Row Row1
+            [RepositoryItem("a63148a0-a307-4daf-8aaf-b19c91372acc")]
+            public virtual Ranorex.Button PbCommonStatus
             {
                 get
                 {
-                    return _row1Info.CreateAdapter<Ranorex.Row>(true);
+                    return _pbcommonstatusInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The Row1 item info.
+            /// The PbCommonStatus item info.
             /// </summary>
-            [RepositoryItemInfo("de0acad1-94b9-4151-bb48-801daa89ace5")]
-            public virtual RepoItemInfo Row1Info
+            [RepositoryItemInfo("a63148a0-a307-4daf-8aaf-b19c91372acc")]
+            public virtual RepoItemInfo PbCommonStatusInfo
             {
                 get
                 {
-                    return _row1Info;
+                    return _pbcommonstatusInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text1001_Status item.
+            /// </summary>
+            [RepositoryItem("0aaf582c-3a6a-4929-b379-fcbd37326cd8")]
+            public virtual Ranorex.Text Text1001_Status
+            {
+                get
+                {
+                    return _text1001_statusInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text1001_Status item info.
+            /// </summary>
+            [RepositoryItemInfo("0aaf582c-3a6a-4929-b379-fcbd37326cd8")]
+            public virtual RepoItemInfo Text1001_StatusInfo
+            {
+                get
+                {
+                    return _text1001_statusInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OEffnen item.
+            /// </summary>
+            [RepositoryItem("9eff0ac0-f59c-416f-a990-8915e8908c1e")]
+            public virtual Ranorex.Button OEffnen
+            {
+                get
+                {
+                    return _oeffnenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OEffnen item info.
+            /// </summary>
+            [RepositoryItemInfo("9eff0ac0-f59c-416f-a990-8915e8908c1e")]
+            public virtual RepoItemInfo OEffnenInfo
+            {
+                get
+                {
+                    return _oeffnenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbCommonReorganisieren item.
+            /// </summary>
+            [RepositoryItem("a6701a95-83c0-4dc6-bdf8-a6cad6636793")]
+            public virtual Ranorex.Button PbCommonReorganisieren
+            {
+                get
+                {
+                    return _pbcommonreorganisierenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbCommonReorganisieren item info.
+            /// </summary>
+            [RepositoryItemInfo("a6701a95-83c0-4dc6-bdf8-a6cad6636793")]
+            public virtual RepoItemInfo PbCommonReorganisierenInfo
+            {
+                get
+                {
+                    return _pbcommonreorganisierenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Speichern_Button item.
+            /// </summary>
+            [RepositoryItem("01702c97-bb32-4df2-838e-e38a1c1b5a33")]
+            public virtual Ranorex.Button Speichern_Button
+            {
+                get
+                {
+                    return _speichern_buttonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Speichern_Button item info.
+            /// </summary>
+            [RepositoryItemInfo("01702c97-bb32-4df2-838e-e38a1c1b5a33")]
+            public virtual RepoItemInfo Speichern_ButtonInfo
+            {
+                get
+                {
+                    return _speichern_buttonInfo;
                 }
             }
 
@@ -543,6 +508,78 @@ namespace B_KTO_004
                 get
                 {
                     return _dfktobez1Info;
+                }
+            }
+
+            /// <summary>
+            /// The ClientArea item.
+            /// </summary>
+            [RepositoryItem("72886f32-8b44-4d7b-a931-92693ac44da3")]
+            public virtual Ranorex.Container ClientArea
+            {
+                get
+                {
+                    return _clientareaInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClientArea item info.
+            /// </summary>
+            [RepositoryItemInfo("72886f32-8b44-4d7b-a931-92693ac44da3")]
+            public virtual ClientAreaInfoClass ClientAreaInfo
+            {
+                get
+                {
+                    return _clientareaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Row1 item.
+            /// </summary>
+            [RepositoryItem("de0acad1-94b9-4151-bb48-801daa89ace5")]
+            public virtual Ranorex.Row Row1
+            {
+                get
+                {
+                    return _row1Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1 item info.
+            /// </summary>
+            [RepositoryItemInfo("de0acad1-94b9-4151-bb48-801daa89ace5")]
+            public virtual RepoItemInfo Row1Info
+            {
+                get
+                {
+                    return _row1Info;
+                }
+            }
+
+            /// <summary>
+            /// The CmbKtoStatus item.
+            /// </summary>
+            [RepositoryItem("4cc7cec4-3250-425b-92d3-6ea0594f1844")]
+            public virtual Ranorex.ComboBox CmbKtoStatus
+            {
+                get
+                {
+                    return _cmbktostatusInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CmbKtoStatus item info.
+            /// </summary>
+            [RepositoryItemInfo("4cc7cec4-3250-425b-92d3-6ea0594f1844")]
+            public virtual RepoItemInfo CmbKtoStatusInfo
+            {
+                get
+                {
+                    return _cmbktostatusInfo;
                 }
             }
         }
@@ -1106,6 +1143,72 @@ namespace B_KTO_004
                 get
                 {
                     return _geloescht_Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The WSPETAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("c15aee3f-7248-4d32-a463-51f90c175b95")]
+        public partial class WSPETAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _wspetInfo;
+
+            /// <summary>
+            /// Creates a new WSPET  folder.
+            /// </summary>
+            public WSPETAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("WSPET", "", parentFolder, 30000, null, true, "c15aee3f-7248-4d32-a463-51f90c175b95", "")
+            {
+                _wspetInfo = new RepoItemInfo(this, "WSPET", "", "", 30000, null, "6646d284-e51a-4a33-911f-e70df8781dcd");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c15aee3f-7248-4d32-a463-51f90c175b95")]
+            public virtual Ranorex.Host Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Host>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c15aee3f-7248-4d32-a463-51f90c175b95")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WSPET item.
+            /// </summary>
+            [RepositoryItem("6646d284-e51a-4a33-911f-e70df8781dcd")]
+            public virtual Ranorex.Host WSPET
+            {
+                get
+                {
+                    return _wspetInfo.CreateAdapter<Ranorex.Host>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WSPET item info.
+            /// </summary>
+            [RepositoryItemInfo("6646d284-e51a-4a33-911f-e70df8781dcd")]
+            public virtual RepoItemInfo WSPETInfo
+            {
+                get
+                {
+                    return _wspetInfo;
                 }
             }
         }

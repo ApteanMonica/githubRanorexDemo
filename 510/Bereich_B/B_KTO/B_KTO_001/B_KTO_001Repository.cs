@@ -96,16 +96,20 @@ namespace B_KTO_001
         [RepositoryFolder("d132056c-7f88-4a61-be82-3a6ef7f76284")]
         public partial class FrmKtoAppFolder : RepoGenBaseFolder
         {
-            B_KTO_001RepositoryFolders.PicTabsFolder _pictabs;
             RepoItemInfo _titlebar100sachkontenverwaltenInfo;
             RepoItemInfo _pbdataaccesssaveInfo;
             RepoItemInfo _button_newInfo;
+            RepoItemInfo _rbaktivInfo;
             RepoItemInfo _kontoInfo;
             RepoItemInfo _waehrungInfo;
+            RepoItemInfo _tabpageallgemeinInfo;
             RepoItemInfo _ustpflichtInfo;
             RepoItemInfo _ustcodeInfo;
             RepoItemInfo _bezeichnungInfo;
-            RepoItemInfo _rbaktivInfo;
+            RepoItemInfo _tabpagegruppenInfo;
+            RepoItemInfo _colktgrcdrow1Info;
+            RepoItemInfo _bereicheInfo;
+            RepoItemInfo _colktbzkzrow1Info;
 
             /// <summary>
             /// Creates a new FrmKto  folder.
@@ -113,16 +117,20 @@ namespace B_KTO_001
             public FrmKtoAppFolder(RepoGenBaseFolder parentFolder) :
                     base("FrmKto", "/form[@controlname='frmKto']", parentFolder, 30000, null, true, "d132056c-7f88-4a61-be82-3a6ef7f76284", "")
             {
-                _pictabs = new B_KTO_001RepositoryFolders.PicTabsFolder(this);
                 _titlebar100sachkontenverwaltenInfo = new RepoItemInfo(this, "TitleBar100SachkontenVerwalten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "3e8419b5-e42a-4b01-b91b-1f268b7c65ef");
                 _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "?/?/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "7d8930c2-8c91-4cee-a935-7b794437b07f");
                 _button_newInfo = new RepoItemInfo(this, "Button_New", "?/?/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup2']/button[@controlname='pbNew']", "", 30000, null, "b60788e4-c82f-45bd-8509-7e800470219a");
+                _rbaktivInfo = new RepoItemInfo(this, "RbAktiv", "container[@controlname='ClientArea']/container[@controlname='groupBox1']/radiobutton[@controlname='rbAktiv']", "", 30000, null, "1de6fd7f-3451-42cd-ac4d-7efbf6d1a005");
                 _kontoInfo = new RepoItemInfo(this, "Konto", "container[@controlname='ClientArea']/?/?/text[@accessiblename='Konto']", "", 30000, null, "0894121b-4129-4a6c-844d-987ca981a22d");
                 _waehrungInfo = new RepoItemInfo(this, "Waehrung", "container[@controlname='ClientArea']/?/?/text[@accessiblename='Währung']", "", 30000, null, "7cf50209-db4d-4fda-83f7-b61e0c2cdb48");
-                _ustpflichtInfo = new RepoItemInfo(this, "UstPflicht", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgemein']/?/?/text[@accessiblename='Ust-Pflicht']", "", 30000, null, "9caa3852-95ec-4c3f-b3c4-5d794cfd1a28");
-                _ustcodeInfo = new RepoItemInfo(this, "UstCode", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgemein']/?/?/text[@accessiblename='Ust-Code']", "", 30000, null, "e1152c7e-52fb-4a43-82c1-2fc14b134aef");
+                _tabpageallgemeinInfo = new RepoItemInfo(this, "TabPageAllgemein", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&Allgemein']", "", 30000, null, "c2ccf159-ddd7-487d-9260-63c5b738df20");
+                _ustpflichtInfo = new RepoItemInfo(this, "UstPflicht", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgemein']/?/?/text[@accessiblename='Ust-Pflicht']", "", 30000, null, "9caa3852-95ec-4c3f-b3c4-5d794cfd1a28");
+                _ustcodeInfo = new RepoItemInfo(this, "UstCode", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgemein']/?/?/text[@accessiblename='Ust-Code']", "", 30000, null, "e1152c7e-52fb-4a43-82c1-2fc14b134aef");
                 _bezeichnungInfo = new RepoItemInfo(this, "Bezeichnung", "container[@controlname='ClientArea']/?/?/text[@accessiblename='Bezeichnung']", "", 30000, null, "93ff4f20-c2c8-402a-8b05-aec9479b56b2");
-                _rbaktivInfo = new RepoItemInfo(this, "RbAktiv", "?/?/container[@controlname='groupBox1']/radiobutton[@controlname='rbAktiv']", "", 30000, null, "85a9fd74-1fb0-45bc-ade2-6b4e67e58a4e");
+                _tabpagegruppenInfo = new RepoItemInfo(this, "TabPageGruppen", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&Gruppen']", "", 30000, null, "3692b34f-25fe-461b-8bf7-9618e163d890");
+                _colktgrcdrow1Info = new RepoItemInfo(this, "ColKtgrCdRow1", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpGruppen']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKtgr_cd Row 1']", "", 30000, null, "70913db3-6972-4d7f-b330-f8662af8b072");
+                _bereicheInfo = new RepoItemInfo(this, "Bereiche", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='Be&reiche']", "", 30000, null, "d5b4f562-4cea-4343-a30f-0e2106aa769d");
+                _colktbzkzrow1Info = new RepoItemInfo(this, "ColKtbzKzRow1", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKtbz_kz Row 1']", "", 30000, null, "8bffc19c-4278-4ee0-9702-3f1007a34fe8");
             }
 
             /// <summary>
@@ -222,6 +230,30 @@ namespace B_KTO_001
             }
 
             /// <summary>
+            /// The RbAktiv item.
+            /// </summary>
+            [RepositoryItem("1de6fd7f-3451-42cd-ac4d-7efbf6d1a005")]
+            public virtual Ranorex.RadioButton RbAktiv
+            {
+                get
+                {
+                    return _rbaktivInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RbAktiv item info.
+            /// </summary>
+            [RepositoryItemInfo("1de6fd7f-3451-42cd-ac4d-7efbf6d1a005")]
+            public virtual RepoItemInfo RbAktivInfo
+            {
+                get
+                {
+                    return _rbaktivInfo;
+                }
+            }
+
+            /// <summary>
             /// The Konto item.
             /// </summary>
             [RepositoryItem("0894121b-4129-4a6c-844d-987ca981a22d")]
@@ -266,6 +298,30 @@ namespace B_KTO_001
                 get
                 {
                     return _waehrungInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TabPageAllgemein item.
+            /// </summary>
+            [RepositoryItem("c2ccf159-ddd7-487d-9260-63c5b738df20")]
+            public virtual Ranorex.TabPage TabPageAllgemein
+            {
+                get
+                {
+                    return _tabpageallgemeinInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TabPageAllgemein item info.
+            /// </summary>
+            [RepositoryItemInfo("c2ccf159-ddd7-487d-9260-63c5b738df20")]
+            public virtual RepoItemInfo TabPageAllgemeinInfo
+            {
+                get
+                {
+                    return _tabpageallgemeinInfo;
                 }
             }
 
@@ -338,113 +394,6 @@ namespace B_KTO_001
                 get
                 {
                     return _bezeichnungInfo;
-                }
-            }
-
-            /// <summary>
-            /// The RbAktiv item.
-            /// </summary>
-            [RepositoryItem("85a9fd74-1fb0-45bc-ade2-6b4e67e58a4e")]
-            public virtual Ranorex.RadioButton RbAktiv
-            {
-                get
-                {
-                    return _rbaktivInfo.CreateAdapter<Ranorex.RadioButton>(true);
-                }
-            }
-
-            /// <summary>
-            /// The RbAktiv item info.
-            /// </summary>
-            [RepositoryItemInfo("85a9fd74-1fb0-45bc-ade2-6b4e67e58a4e")]
-            public virtual RepoItemInfo RbAktivInfo
-            {
-                get
-                {
-                    return _rbaktivInfo;
-                }
-            }
-
-            /// <summary>
-            /// The PicTabs folder.
-            /// </summary>
-            [RepositoryFolder("34e7a20b-526b-48fc-b8f0-d8d972f6e5ac")]
-            public virtual B_KTO_001RepositoryFolders.PicTabsFolder PicTabs
-            {
-                get { return _pictabs; }
-            }
-        }
-
-        /// <summary>
-        /// The PicTabsFolder folder.
-        /// </summary>
-        [RepositoryFolder("34e7a20b-526b-48fc-b8f0-d8d972f6e5ac")]
-        public partial class PicTabsFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _tabpageallgemeinInfo;
-            RepoItemInfo _tabpagegruppenInfo;
-            RepoItemInfo _colktgrcdrow1Info;
-            RepoItemInfo _bereicheInfo;
-            RepoItemInfo _colktbzkzrow1Info;
-
-            /// <summary>
-            /// Creates a new PicTabs  folder.
-            /// </summary>
-            public PicTabsFolder(RepoGenBaseFolder parentFolder) :
-                    base("PicTabs", "?/?/tabpagelist[@controlname='picTabs']", parentFolder, 30000, null, false, "34e7a20b-526b-48fc-b8f0-d8d972f6e5ac", "")
-            {
-                _tabpageallgemeinInfo = new RepoItemInfo(this, "TabPageAllgemein", "tabpage[@accessiblename='&Allgemein']", "", 30000, null, "c2ccf159-ddd7-487d-9260-63c5b738df20");
-                _tabpagegruppenInfo = new RepoItemInfo(this, "TabPageGruppen", "tabpage[@accessiblename='&Gruppen']", "", 30000, null, "3692b34f-25fe-461b-8bf7-9618e163d890");
-                _colktgrcdrow1Info = new RepoItemInfo(this, "ColKtgrCdRow1", "tabpage[@controlname='tpGruppen']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKtgr_cd Row 1']", "", 30000, null, "70913db3-6972-4d7f-b330-f8662af8b072");
-                _bereicheInfo = new RepoItemInfo(this, "Bereiche", "tabpage[@accessiblename='Be&reiche']", "", 30000, null, "d5b4f562-4cea-4343-a30f-0e2106aa769d");
-                _colktbzkzrow1Info = new RepoItemInfo(this, "ColKtbzKzRow1", "tabpage[@controlname='tpBereiche']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKtbz_kz Row 1']", "", 30000, null, "8bffc19c-4278-4ee0-9702-3f1007a34fe8");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("34e7a20b-526b-48fc-b8f0-d8d972f6e5ac")]
-            public virtual Ranorex.TabPageList Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.TabPageList>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("34e7a20b-526b-48fc-b8f0-d8d972f6e5ac")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TabPageAllgemein item.
-            /// </summary>
-            [RepositoryItem("c2ccf159-ddd7-487d-9260-63c5b738df20")]
-            public virtual Ranorex.TabPage TabPageAllgemein
-            {
-                get
-                {
-                    return _tabpageallgemeinInfo.CreateAdapter<Ranorex.TabPage>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TabPageAllgemein item info.
-            /// </summary>
-            [RepositoryItemInfo("c2ccf159-ddd7-487d-9260-63c5b738df20")]
-            public virtual RepoItemInfo TabPageAllgemeinInfo
-            {
-                get
-                {
-                    return _tabpageallgemeinInfo;
                 }
             }
 

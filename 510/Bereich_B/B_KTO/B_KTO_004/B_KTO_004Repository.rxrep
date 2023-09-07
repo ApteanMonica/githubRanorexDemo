@@ -38,54 +38,9 @@ name="B_KTO_004Repository">
 			id="1dbc29e0-f65b-406d-9ab2-5caec809162d"
 			name="Suchtext"
 			refimgid="e79400f2-71b3-4110-abc9-0baf3056b2b9"
-			refpath="/form[@controlname='frmKto']/container[@controlname='searchContainer']/form/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container/text/text[@accessiblerole='Text']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='frmKto']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup1']//text[@accessiblerole='Text']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="20c3b16e-d8d5-4221-b72b-bfaea01fef71"
-			name="Status_aendern"
-			refimgid="bc41b47f-7d12-4503-8819-a7eef61b0ec2"
-			refpath="/form[@controlname='frmKto']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Status']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='frmKto']/?/?/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Status']
-			</item>
-			<item
-			addcaps="button,accessible"
-			capname="button"
-			id="056f3077-17c8-4fa7-9c6f-7c77ebdcec89"
-			name="OEffnen"
-			refimgid="404f7971-d39f-4925-b99f-257ada8f2291"
-			refpath="/form[@controlname='frmKto']/container[@controlname='ClientArea']/combobox/button[@accessiblename='Öffnen']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='frmKto']/?/?/combobox[@controlname='cmbKto_status']/button[@accessiblename='Öffnen']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="01702c97-bb32-4df2-838e-e38a1c1b5a33"
-			name="Speichern_Button"
-			refimgid="26711781-1f67-46c7-96e0-a30172dfe542"
-			refpath="/form[@controlname='frmKto']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='frmKto']/?/?/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="931f1b7c-6b49-4cfc-ab7f-36117c965d24"
-			name="Button_Reogarnisieren"
-			refimgid="5018a085-6508-4e6b-972a-5b8a820f998a"
-			refpath="/form[@controlname='frmKto']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Reorganisieren']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='frmKto']/?/?/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Reorganisieren']
+				/form[@controlname='frmKto']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/text[@controlname='dfSearchExpression']/text[@accessiblerole='Text']
 			</item>
 			<item
 			addcaps="cell,accessible"
@@ -99,15 +54,90 @@ name="B_KTO_004Repository">
 				/form[@controlname='frmKto']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']
 			</item>
 			<item
-			addcaps="combobox,control,nativewindow"
-			capname="combobox"
-			id="5b36bc48-8eff-4094-b6ef-1d32db5d6b0c"
-			name="CmbKtoStatus"
-			refimgid="baf318f4-f5c4-4dcc-a2a1-2fdc2095c502"
-			refpath="/form[@controlname='frmKto']/container[@controlname='ClientArea']/combobox[@controlname='cmbKto_status']"
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="328b8126-3a18-484e-82a3-c05c9bff99da"
+			name="PbNavigationBack"
+			refimgid="80da9b7f-1d34-465d-8631-44585e80b470"
+			refpath="/form[@controlname='frmKto']/container[@controlname='RibbonBar']/container[@controlname='NavigationGroup']/button[@controlname='pbNavigation_Back']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='frmKto']/?/?/combobox[@controlname='cmbKto_status']
+				/form[@controlname='frmKto']/container[@controlname='RibbonBar']/container[@controlname='NavigationGroup']/button[@controlname='pbNavigation_Back']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="a63148a0-a307-4daf-8aaf-b19c91372acc"
+			name="PbCommonStatus"
+			refimgid="c354e463-3744-4a16-b851-78b74b10e990"
+			refpath="/form[@controlname='frmKto']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Status']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKto']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Status']
+			</item>
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="0aaf582c-3a6a-4929-b379-fcbd37326cd8"
+			name="Text1001_Status"
+			refimgid="a0a26ea6-899c-4371-9973-cf42545e34ca"
+			refpath="/form[@controlname='frmKto']/container[@controlname='ClientArea']/combobox[@controlname='cmbKto_status']/text[@controlid='1001']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKto']/container[@controlname='ClientArea']/combobox[@controlname='cmbKto_status']/text[@controlid='1001']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="9eff0ac0-f59c-416f-a990-8915e8908c1e"
+			name="OEffnen"
+			refimgid="f37e17e0-d60e-4d10-a105-38a42fa0788d"
+			refpath="/form[@controlname='frmKto']/container[@controlname='ClientArea']/combobox[@controlname='cmbKto_status']/button[@name='Öffnen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKto']/container[@controlname='ClientArea']/combobox[@controlname='cmbKto_status']/button[@name='Öffnen']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="a6701a95-83c0-4dc6-bdf8-a6cad6636793"
+			name="PbCommonReorganisieren"
+			refimgid="ed730205-978f-4da6-a950-03f9f9f18cf7"
+			refpath="/form[@controlname='frmKto']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Reorganisieren']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKto']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Reorganisieren']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="01702c97-bb32-4df2-838e-e38a1c1b5a33"
+			name="Speichern_Button"
+			refimgid="26711781-1f67-46c7-96e0-a30172dfe542"
+			refpath="/form[@controlname='frmKto']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKto']/?/?/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="519ade2a-7540-44c1-943b-3baa9f265de7"
+			name="DfKtoNr"
+			refimgid="56d7bd85-d71d-48e9-b821-7856d885e720"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKto']/container[@controlname='ClientArea']/text[@controlname='dfKto_nr']/text[@accessiblename='Konto']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="e5eed13d-734e-44b9-bdf9-311d68b58b10"
+			name="DfKtoBez1"
+			refimgid="4c938bdf-c3b6-4bcf-9cff-7dd763af591e"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKto']/container[@controlname='ClientArea']/text[@controlname='dfKto_bez1']/text[@accessiblename='Bezeichnung']
 			</item>
 			<item
 			addcaps="container,control,nativewindow"
@@ -377,17 +407,6 @@ uTO1AgDAMf3Lv/wv/qyauKHaeu8AAAAASUVORK5CYII=
 				/form[@controlname='frmKto']/container[@controlname='ClientArea']
 			</item>
 			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="cf1b1f0e-a3c5-42c0-854c-23e907d0b6cb"
-			name="PbNavigationBack"
-			refimgid="0d585728-bfcb-4bd0-b9ac-a5c7e037cbc0"
-			refpath="/form[@controlname='frmKto']/container[@controlname='RibbonBar']/container[@controlname='NavigationGroup']/button[@controlname='pbNavigation_Back']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='frmKto']/container[@controlname='RibbonBar']/?/?/button[@controlname='pbNavigation_Back']
-			</item>
-			<item
 			addcaps="row,accessible"
 			capname="row"
 			id="de0acad1-94b9-4151-bb48-801daa89ace5"
@@ -399,26 +418,15 @@ uTO1AgDAMf3Lv/wv/qyauKHaeu8AAAAASUVORK5CYII=
 				/form[@controlname='frmKto']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
 			</item>
 			<item
-			addcaps="text,control,nativewindow"
-			capname="text"
-			id="519ade2a-7540-44c1-943b-3baa9f265de7"
-			name="DfKtoNr"
-			refimgid="56d7bd85-d71d-48e9-b821-7856d885e720"
-			refpath="/form[@controlname='frmKto']/container[@controlname='ClientArea']/text[@controlname='dfKto_nr']"
+			addcaps="combobox,control,nativewindow"
+			capname="combobox"
+			id="4cc7cec4-3250-425b-92d3-6ea0594f1844"
+			name="CmbKtoStatus"
+			refimgid="b862eab8-cc50-416d-bd5f-a707f323c4ef"
+			refpath="/form[@controlname='frmKto']/container[@controlname='ClientArea']/combobox[@controlname='cmbKto_status']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='frmKto']/?/?/text[@controlname='dfKto_nr']
-			</item>
-			<item
-			addcaps="text,control,nativewindow"
-			capname="text"
-			id="e5eed13d-734e-44b9-bdf9-311d68b58b10"
-			name="DfKtoBez1"
-			refimgid="4c938bdf-c3b6-4bcf-9cff-7dd763af591e"
-			refpath="/form[@controlname='frmKto']/container[@controlname='ClientArea']/text[@controlname='dfKto_bez1']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='frmKto']/?/?/text[@controlname='dfKto_bez1']
+				/form[@controlname='frmKto']/container[@controlname='ClientArea']/combobox[@controlname='cmbKto_status']
 			</item>
 			<basepath>
 				/form[@controlname='frmKto']
@@ -780,6 +788,46 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
 YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
 nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="host,nativewindow"
+		capname="host"
+		id="c15aee3f-7248-4d32-a463-51f90c175b95"
+		isrooted="True"
+		name="WSPET"
+		refimgid="66a04d17-448b-4c07-af3d-d5ee78948da5"
+		refpath=""
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="host,nativewindow"
+			capname="host"
+			id="6646d284-e51a-4a33-911f-e70df8781dcd"
+			name="WSPET"
+			refimgid="c8ea4ef5-b769-4575-bd48-742fe48eeb96"
+			refpath=""
+			robustPath=""
+			searchtimeout="30000ms">
+			</item>
+			<basepath>
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACtUlEQVQ4T62S6zOUYRiH9w/qYzM1o5moMUyNShmHpISUNhIrHRxW
+DjmXpcah2Ky1TcsSa5ZQ0u62csxxMI4p6URGWFlXz6rGNPu1e+b98sx7Xc/v996v5L/N4OgcPYPT
+WPomaH8zSotpGENbP3UtvVQbutDUWVDVmCjVtlOsaeMPtjNd/VNcfwwyNVwuh4ulEFoMQfchQGHj
+5B0rPlkreN1eRKFsdBQYO8eIroAHz6GgCbLqQa6DqxoIV0JIoV20iU/mCndKDY6CFuMQ4WWgEHCG
+gBOrIKYSpOIsWMCn8n7inbHM0VvzZBfXOwr0rX2cL4H0OkjQQrSoIhU1zooK/nc38MpY4oj8Pe6x
+o6QXPnUUVBk6t1+OewJRKgh78Bu2d7f39kh8h/vVEVwiOki9p3MUqGvN2x2viA94QcCBBeCXu86J
+tG94xM/iFjOES7iFfeeaSVJoHQVlYj2+OWuEihpn8rfwzV7leOoXDsdN4yobwFlqxinkGXtP15KQ
++9hRUFT5HK/07wTk2/DJ/oFn8mcO3ZzENfqtgI04BTeyJ0DHbj8NN7IqHAUKZRNzn6xMza8zPrfG
+yMwqA5M/6B1bobXzI7UvJijWWgjtCkWWpvxXkJLz8KBG/3pTqXtJYWWz2HM9afe0xOeokKWUII0v
+IEiWjd+lFI4Fx+HmL9u8lFAU+QeXSDQNFv7Opm2LNauNpZWfzH+1MikS2dN0iySmwWVae5aoaZvl
+gHfkTgp1nXkbjjXFsm7d4oNhFwuLG8wsWGl8NUjFU6NIped6porYDBUlugH2n4jYEZTXGrGJm6sG
+9AxPLDA7VE579zRNpnFqWkdQN/RTUt2NQt1BziMzmWVG9nlKdwRFmma5eMhT6sVfVo38biXX0suI
+TCok7EYegVGZ+EqTt/u7+8fg7BVhF8glEonkF6m1M1/+IilrAAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
 		<basepath>
