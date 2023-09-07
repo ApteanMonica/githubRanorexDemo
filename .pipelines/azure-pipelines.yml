@@ -65,6 +65,7 @@ jobs:
         replaceExistingArchive: true
 
     - task: PublishBuildArtifacts@1
+      condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
       inputs:
           PathtoPublish: '$(Build.ArtifactStagingDirectory)\reports.zip'
           ArtifactName: 'drop'
