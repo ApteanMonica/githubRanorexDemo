@@ -65,6 +65,7 @@ jobs:
         replaceExistingArchive: true
 
     - task: PublishBuildArtifacts@1
+      condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
       inputs:
           PathtoPublish: '$(Build.ArtifactStagingDirectory)\reports.zip'
           ArtifactName: 'drop'
@@ -103,7 +104,7 @@ jobs:
    - task: SendEmail@1
      condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
      inputs:
-      To: 'kishore.ramachandraiah@aptean.com'
+      To: 'ppopuri@aptean.com'
       From: 'RSautomation@aptean.com'
       Subject: 'RS2 Automation reports'
       Body: |
@@ -114,6 +115,6 @@ jobs:
       BodyAsHtml: false
       SmtpServer: 'smtp.office365.com'
       AddAttachment: true
-      Attachment: '$(Build.ArtifactStagingDirectory)\reports.zip'
+      Attachment: '$(Build.ArtifactStagingDirectory)/drop/reports.zip'
       SmtpUsername: '$(SMTP_UserName)'
       SmtpPassword: '$(SMTP_UserPassword)'
