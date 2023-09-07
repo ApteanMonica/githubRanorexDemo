@@ -115,6 +115,6 @@ jobs:
       BodyAsHtml: false
       SmtpServer: 'smtp.office365.com'
       AddAttachment: true
-      Attachment: '$(Build.ArtifactStagingDirectory)drop/reports.zip'
+      Attachment: '$(Build.ArtifactStagingDirectory)/drop/reports.zip'
       SmtpUsername: '$(SMTP_UserName)'
       SmtpPassword: '$(SMTP_UserPassword)'
