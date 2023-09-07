@@ -111,6 +111,7 @@ namespace B_KLSALD_001
             RepoItemInfo _titlebar100saldenlisteperstichtagInfo;
             RepoItemInfo _rbsaldenlisteInfo;
             RepoItemInfo _rbstichtagslisteInfo;
+            RepoItemInfo _rbstichtagsliste_trueInfo;
             RepoItemInfo _pboptionenextrasInfo;
             RepoItemInfo _pbtabelleInfo;
 
@@ -124,6 +125,7 @@ namespace B_KLSALD_001
                 _titlebar100saldenlisteperstichtagInfo = new RepoItemInfo(this, "TitleBar100SaldenlistePerStichtag", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "04ae5e8e-b5eb-4080-80d9-affc7639a5b8");
                 _rbsaldenlisteInfo = new RepoItemInfo(this, "RbSaldenliste", "container[@controlname='ToolBar']/radiobutton[@controlname='rbSaldenliste']", "", 30000, null, "bf762645-45b0-4669-b982-29d42c64cc8e");
                 _rbstichtagslisteInfo = new RepoItemInfo(this, "RbStichtagsliste", "container[@controlname='ToolBar']/radiobutton[@controlname='rbStichtagsliste']", "", 30000, null, "06ec4b5e-bd49-451b-9da0-62c66e7cce9c");
+                _rbstichtagsliste_trueInfo = new RepoItemInfo(this, "RbStichtagsliste_TRUE", "container[@controlname='ToolBar']/radiobutton[@controlname='rbStichtagsliste' and @checked='True']", "", 30000, null, "926f3534-a4d2-4600-bc0a-0e9c7a67b6d2");
                 _pboptionenextrasInfo = new RepoItemInfo(this, "PbOptionenExtras", "container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup2']/button[@controlname='pbOptionen_Extras']", "", 30000, null, "60302bed-1b76-4715-879a-af2f8011253a");
                 _pbtabelleInfo = new RepoItemInfo(this, "PbTabelle", "container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup2']/button[@controlname='pbTabelle']", "", 30000, null, "99f24361-41dc-4f8d-90ef-e28f02466e10");
             }
@@ -221,6 +223,30 @@ namespace B_KLSALD_001
                 get
                 {
                     return _rbstichtagslisteInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RbStichtagsliste_TRUE item.
+            /// </summary>
+            [RepositoryItem("926f3534-a4d2-4600-bc0a-0e9c7a67b6d2")]
+            public virtual Ranorex.RadioButton RbStichtagsliste_TRUE
+            {
+                get
+                {
+                    return _rbstichtagsliste_trueInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RbStichtagsliste_TRUE item info.
+            /// </summary>
+            [RepositoryItemInfo("926f3534-a4d2-4600-bc0a-0e9c7a67b6d2")]
+            public virtual RepoItemInfo RbStichtagsliste_TRUEInfo
+            {
+                get
+                {
+                    return _rbstichtagsliste_trueInfo;
                 }
             }
 
