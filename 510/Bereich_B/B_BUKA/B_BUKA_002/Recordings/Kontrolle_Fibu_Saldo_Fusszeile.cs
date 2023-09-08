@@ -104,8 +104,8 @@ namespace B_BUKA_002.Recordings
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='16.370,00') on item 'TblBuka.Fusszeile.ColEingangRow0'.", repo.TblBuka.Fusszeile.ColEingangRow0Info, new RecordItemIndex(6));
-                Validate.AttributeEqual(repo.TblBuka.Fusszeile.ColEingangRow0Info, "Text", "16.370,00", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='16.730,00') on item 'TblBuka.Fusszeile.ColEingangRow0'.", repo.TblBuka.Fusszeile.ColEingangRow0Info, new RecordItemIndex(6));
+                Validate.AttributeEqual(repo.TblBuka.Fusszeile.ColEingangRow0Info, "Text", "16.730,00", null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
             
             try {
