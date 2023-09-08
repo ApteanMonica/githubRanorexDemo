@@ -79,8 +79,8 @@ namespace K_VERE_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'TblVerr_K_VERE.FlexGrid' at Center.", repo.TblVerr_K_VERE.FlexGridInfo, new RecordItemIndex(0));
-            repo.TblVerr_K_VERE.FlexGrid.Click(System.Windows.Forms.MouseButtons.Right);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblVerr_K_VERE.FlexGrid' at Center.", repo.TblVerr_K_VERE.FlexGridInfo, new RecordItemIndex(0));
+            repo.TblVerr_K_VERE.FlexGrid.Click();
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
             Delay.Duration(1000, false);
