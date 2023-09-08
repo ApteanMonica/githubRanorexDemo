@@ -139,13 +139,10 @@ namespace N_ANLA_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Anlage_B' with focus on 'FrmZuauf.ColAnlaNrRow2'.", repo.FrmZuauf.ColAnlaNrRow2Info, new RecordItemIndex(11));
             repo.FrmZuauf.ColAnlaNrRow2.PressKeys(Anlage_B);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(12));
-            Delay.Duration(1000, false);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(12));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(13));
             Delay.Duration(1000, false);
             
         }
