@@ -104,7 +104,7 @@ jobs:
    - task: SendEmail@1
      condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
      inputs:
-      To: 'ppopuri@aptean.com'
+      To: 'kishore.ramachandraiah@aptean.com'
       From: 'RSautomation@aptean.com'
       Subject: 'RS2 Automation reports'
       Body: |
@@ -112,8 +112,8 @@ jobs:
                          
                                   Thank you,
                                   Your Name
-      BodyAsHtml: false
-      SmtpServer: 'smtp.office365.com'
+      BodyAsHtml: true
+      SmtpServer: 'smtprelay.swg.cdc.root'
       AddAttachment: true
       Attachment: '$(Build.ArtifactStagingDirectory)/drop/reports.zip'
       SmtpUsername: '$(SMTP_UserName)'
