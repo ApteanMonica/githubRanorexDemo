@@ -24,29 +24,29 @@ namespace N_LISTEN_BULI_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Eingabe_Buchungsmonat recording.
+    ///The N_STAMM_Eingabe_Buchungsmonat recording.
     /// </summary>
     [TestModule("97dc9093-d60f-46e3-8a07-1eda6a6905f8", ModuleType.Recording, 1)]
-    public partial class Eingabe_Buchungsmonat : ITestModule
+    public partial class N_STAMM_Eingabe_Buchungsmonat : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository repo = global::N_LISTEN_BULI_002.N_LISTEN_BULI_002Repository.Instance;
 
-        static Eingabe_Buchungsmonat instance = new Eingabe_Buchungsmonat();
+        static N_STAMM_Eingabe_Buchungsmonat instance = new N_STAMM_Eingabe_Buchungsmonat();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Eingabe_Buchungsmonat()
+        public N_STAMM_Eingabe_Buchungsmonat()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Eingabe_Buchungsmonat Instance
+        public static N_STAMM_Eingabe_Buchungsmonat Instance
         {
             get { return instance; }
         }
@@ -115,14 +115,11 @@ namespace N_LISTEN_BULI_002.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(11));
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '7{Tab}' with focus on 'FrmAnfi.ColAnvabeBulimonatRow1'.", repo.FrmAnfi.ColAnvabeBulimonatRow1Info, new RecordItemIndex(12));
-            repo.FrmAnfi.ColAnvabeBulimonatRow1.PressKeys("7{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '6{Tab}' with focus on 'FrmAnfi.ColAnvabeBulimonatRow1'.", repo.FrmAnfi.ColAnvabeBulimonatRow1Info, new RecordItemIndex(12));
+            repo.FrmAnfi.ColAnvabeBulimonatRow1.PressKeys("6{Tab}");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnfi.PbDataAccessSave' at Center.", repo.FrmAnfi.PbDataAccessSaveInfo, new RecordItemIndex(13));
             repo.FrmAnfi.PbDataAccessSave.Click();
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press.", new RecordItemIndex(14));
-            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }
 

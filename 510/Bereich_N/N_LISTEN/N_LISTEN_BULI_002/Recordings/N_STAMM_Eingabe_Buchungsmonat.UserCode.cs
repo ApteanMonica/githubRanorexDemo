@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace N_LISTEN_BULI_002.Recordings
 {
-    public partial class Eingabe_Buchungsmonat
+    public partial class N_STAMM_Eingabe_Buchungsmonat
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

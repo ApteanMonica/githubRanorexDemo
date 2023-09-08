@@ -144,52 +144,59 @@ namespace N_LISTEN_BULI_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbUEberleitungFibu' at Center.", repo.FrmBuchungsliste.PbUEberleitungFibuInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'.", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new RecordItemIndex(0));
+            Keyboard.PrepareFocus(repo.DlgFibu.TitleBar100AVZUEberleitungFibuMIT);
+            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbUEberleitungFibu' at Center.", repo.FrmBuchungsliste.PbUEberleitungFibuInfo, new RecordItemIndex(2));
             repo.FrmBuchungsliste.PbUEberleitungFibu.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new ActionTimeout(120000), new RecordItemIndex(3));
             repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ-Überleitung') on item 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'.", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ-Überleitung') on item 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'.", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new RecordItemIndex(4));
             Validate.AttributeContains(repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, "Text", "[100]  AVZ-Überleitung");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Belegnr' with focus on 'DlgFibu.Frame2.BelegNr'.", repo.DlgFibu.Frame2.BelegNrInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Belegnr' with focus on 'DlgFibu.Frame2.BelegNr'.", repo.DlgFibu.Frame2.BelegNrInfo, new RecordItemIndex(5));
             repo.DlgFibu.Frame2.BelegNr.PressKeys(Belegnr);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Belegnr) on item 'DlgFibu.Frame2.BelegNr'.", repo.DlgFibu.Frame2.BelegNrInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Belegnr) on item 'DlgFibu.Frame2.BelegNr'.", repo.DlgFibu.Frame2.BelegNrInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.DlgFibu.Frame2.BelegNrInfo, "Text", Belegnr);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Belegdatum' with focus on 'DlgFibu.Frame2.BelegDatum'.", repo.DlgFibu.Frame2.BelegDatumInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Belegdatum' with focus on 'DlgFibu.Frame2.BelegDatum'.", repo.DlgFibu.Frame2.BelegDatumInfo, new RecordItemIndex(8));
             repo.DlgFibu.Frame2.BelegDatum.PressKeys(Belegdatum);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Belegdatum) on item 'DlgFibu.Frame2.BelegDatum'.", repo.DlgFibu.Frame2.BelegDatumInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Belegdatum) on item 'DlgFibu.Frame2.BelegDatum'.", repo.DlgFibu.Frame2.BelegDatumInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.DlgFibu.Frame2.BelegDatumInfo, "Text", Belegdatum);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Ustcode' with focus on 'DlgFibu.Frame2.UstCode'.", repo.DlgFibu.Frame2.UstCodeInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Ustcode' with focus on 'DlgFibu.Frame2.UstCode'.", repo.DlgFibu.Frame2.UstCodeInfo, new RecordItemIndex(11));
             repo.DlgFibu.Frame2.UstCode.PressKeys(Ustcode);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(12));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ustcode) on item 'DlgFibu.Frame2.UstCode'.", repo.DlgFibu.Frame2.UstCodeInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ustcode) on item 'DlgFibu.Frame2.UstCode'.", repo.DlgFibu.Frame2.UstCodeInfo, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.DlgFibu.Frame2.UstCodeInfo, "Text", Ustcode);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$GJ) on item 'DlgFibu.Frame2.Text_UEberleitung_Jahr'.", repo.DlgFibu.Frame2.Text_UEberleitung_JahrInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$GJ) on item 'DlgFibu.Frame2.Text_UEberleitung_Jahr'.", repo.DlgFibu.Frame2.Text_UEberleitung_JahrInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.DlgFibu.Frame2.Text_UEberleitung_JahrInfo, "Text", GJ);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ueberleitungsmonat) on item 'DlgFibu.Frame2.Text_UEberleitung_Monat'.", repo.DlgFibu.Frame2.Text_UEberleitung_MonatInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Ueberleitungsmonat) on item 'DlgFibu.Frame2.Text_UEberleitung_Monat'.", repo.DlgFibu.Frame2.Text_UEberleitung_MonatInfo, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.DlgFibu.Frame2.Text_UEberleitung_MonatInfo, "Text", Ueberleitungsmonat);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100') on item 'DlgFibu.Frame2.Firma'.", repo.DlgFibu.Frame2.FirmaInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100') on item 'DlgFibu.Frame2.Firma'.", repo.DlgFibu.Frame2.FirmaInfo, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.DlgFibu.Frame2.FirmaInfo, "Text", "100");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFibu.PbStart' at Center.", repo.DlgFibu.PbStartInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFibu.PbStart' at Center.", repo.DlgFibu.PbStartInfo, new RecordItemIndex(17));
             repo.DlgFibu.PbStart.Click();
             
         }

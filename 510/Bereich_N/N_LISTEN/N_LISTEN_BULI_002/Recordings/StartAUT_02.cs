@@ -42,7 +42,7 @@ namespace N_LISTEN_BULI_002.Recordings
         public StartAUT_02()
         {
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm_02 = "N_STAMM AUFRUFART=ANFI";
+            Programm_02 = "N_STAMM AUFRUFART ANFI";
         }
 
         /// <summary>
