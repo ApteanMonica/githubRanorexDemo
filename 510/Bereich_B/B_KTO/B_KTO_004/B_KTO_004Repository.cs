@@ -157,6 +157,7 @@ namespace B_KTO_004
             RepoItemInfo _pbnavigationbackInfo;
             RepoItemInfo _pbcommonstatusInfo;
             RepoItemInfo _text1001_statusInfo;
+            RepoItemInfo _cmbktostatusInfo;
             RepoItemInfo _oeffnenInfo;
             RepoItemInfo _pbcommonreorganisierenInfo;
             RepoItemInfo _speichern_buttonInfo;
@@ -164,7 +165,6 @@ namespace B_KTO_004
             RepoItemInfo _dfktobez1Info;
             ClientAreaInfoClass _clientareaInfo;
             RepoItemInfo _row1Info;
-            RepoItemInfo _cmbktostatusInfo;
 
             /// <summary>
             /// Creates a new FrmKto  folder.
@@ -178,6 +178,7 @@ namespace B_KTO_004
                 _pbnavigationbackInfo = new RepoItemInfo(this, "PbNavigationBack", "container[@controlname='RibbonBar']/container[@controlname='NavigationGroup']/button[@controlname='pbNavigation_Back']", "", 30000, null, "328b8126-3a18-484e-82a3-c05c9bff99da");
                 _pbcommonstatusInfo = new RepoItemInfo(this, "PbCommonStatus", "container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Status']", "", 30000, null, "a63148a0-a307-4daf-8aaf-b19c91372acc");
                 _text1001_statusInfo = new RepoItemInfo(this, "Text1001_Status", "container[@controlname='ClientArea']/combobox[@controlname='cmbKto_status']/text[@controlid='1001']", "", 30000, null, "0aaf582c-3a6a-4929-b379-fcbd37326cd8");
+                _cmbktostatusInfo = new RepoItemInfo(this, "CmbKtoStatus", "container[@controlname='ClientArea']/combobox[@controlname='cmbKto_status']", "", 30000, null, "4cc7cec4-3250-425b-92d3-6ea0594f1844");
                 _oeffnenInfo = new RepoItemInfo(this, "OEffnen", "container[@controlname='ClientArea']/combobox[@controlname='cmbKto_status']/button[@name='Öffnen']", "", 30000, null, "9eff0ac0-f59c-416f-a990-8915e8908c1e");
                 _pbcommonreorganisierenInfo = new RepoItemInfo(this, "PbCommonReorganisieren", "container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Reorganisieren']", "", 30000, null, "a6701a95-83c0-4dc6-bdf8-a6cad6636793");
                 _speichern_buttonInfo = new RepoItemInfo(this, "Speichern_Button", "?/?/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "01702c97-bb32-4df2-838e-e38a1c1b5a33");
@@ -185,7 +186,6 @@ namespace B_KTO_004
                 _dfktobez1Info = new RepoItemInfo(this, "DfKtoBez1", "container[@controlname='ClientArea']/text[@controlname='dfKto_bez1']/text[@accessiblename='Bezeichnung']", "", 30000, null, "e5eed13d-734e-44b9-bdf9-311d68b58b10");
                 _clientareaInfo = new ClientAreaInfoClass(this);
                 _row1Info = new RepoItemInfo(this, "Row1", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']", "", 30000, null, "de0acad1-94b9-4151-bb48-801daa89ace5");
-                _cmbktostatusInfo = new RepoItemInfo(this, "CmbKtoStatus", "container[@controlname='ClientArea']/combobox[@controlname='cmbKto_status']", "", 30000, null, "4cc7cec4-3250-425b-92d3-6ea0594f1844");
             }
 
             /// <summary>
@@ -392,6 +392,30 @@ namespace B_KTO_004
             }
 
             /// <summary>
+            /// The CmbKtoStatus item.
+            /// </summary>
+            [RepositoryItem("4cc7cec4-3250-425b-92d3-6ea0594f1844")]
+            public virtual Ranorex.ComboBox CmbKtoStatus
+            {
+                get
+                {
+                    return _cmbktostatusInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CmbKtoStatus item info.
+            /// </summary>
+            [RepositoryItemInfo("4cc7cec4-3250-425b-92d3-6ea0594f1844")]
+            public virtual RepoItemInfo CmbKtoStatusInfo
+            {
+                get
+                {
+                    return _cmbktostatusInfo;
+                }
+            }
+
+            /// <summary>
             /// The OEffnen item.
             /// </summary>
             [RepositoryItem("9eff0ac0-f59c-416f-a990-8915e8908c1e")]
@@ -556,30 +580,6 @@ namespace B_KTO_004
                 get
                 {
                     return _row1Info;
-                }
-            }
-
-            /// <summary>
-            /// The CmbKtoStatus item.
-            /// </summary>
-            [RepositoryItem("4cc7cec4-3250-425b-92d3-6ea0594f1844")]
-            public virtual Ranorex.ComboBox CmbKtoStatus
-            {
-                get
-                {
-                    return _cmbktostatusInfo.CreateAdapter<Ranorex.ComboBox>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CmbKtoStatus item info.
-            /// </summary>
-            [RepositoryItemInfo("4cc7cec4-3250-425b-92d3-6ea0594f1844")]
-            public virtual RepoItemInfo CmbKtoStatusInfo
-            {
-                get
-                {
-                    return _cmbktostatusInfo;
                 }
             }
         }

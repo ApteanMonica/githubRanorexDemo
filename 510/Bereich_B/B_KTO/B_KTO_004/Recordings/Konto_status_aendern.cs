@@ -82,60 +82,43 @@ namespace B_KTO_004.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='aktiv') on item 'FrmKto.Text1001_Status'.", repo.FrmKto.Text1001_StatusInfo, new RecordItemIndex(0));
             Validate.AttributeEqual(repo.FrmKto.Text1001_StatusInfo, "Text", "aktiv");
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Status_aktiv' with region {X=238,Y=3,Width=151,Height=36}) on item 'FrmKto.ClientArea'.", repo.FrmKto.ClientAreaInfo, new RecordItemIndex(1));
-            //Validate.ContainsImage(repo.FrmKto.ClientAreaInfo, ClientArea_Status_aktiv, ClientArea_Status_aktiv_Options);
-            
-            // weitere Möglichkeit zu überprüfen der Status an dieser Stelle nicht editier bar ist.
-            //Report.Log(ReportLevel.Info, "Mouse", "weitere Möglichkeit zu überprüfen der Status an dieser Stelle nicht editier bar ist.\r\nMouse Left Click item 'FrmKto.CmbKtoStatus' at Center.", repo.FrmKto.CmbKtoStatusInfo, new RecordItemIndex(2));
-            //repo.FrmKto.CmbKtoStatus.Click();
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Down' Press.", new RecordItemIndex(3));
-            //Keyboard.Press(System.Windows.Forms.Keys.Down, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='aktiv') on item 'FrmKto.CmbKtoStatus'.", repo.FrmKto.CmbKtoStatusInfo, new RecordItemIndex(4));
-            //Validate.AttributeEqual(repo.FrmKto.CmbKtoStatusInfo, "Text", "aktiv");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PbCommonStatus' at Center.", repo.FrmKto.PbCommonStatusInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PbCommonStatus' at Center.", repo.FrmKto.PbCommonStatusInfo, new RecordItemIndex(1));
             repo.FrmKto.PbCommonStatus.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'FrmKto.OEffnen' at Center.", repo.FrmKto.OEffnenInfo, new RecordItemIndex(6));
-            repo.FrmKto.OEffnen.MoveTo();
-            Mouse.ButtonDown(System.Windows.Forms.MouseButtons.Left);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(2));
+            Delay.Duration(1000, false);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Status_Geloescht' at Center.", repo.List1000.Status_GeloeschtInfo, new RecordItemIndex(7));
-            //repo.List1000.Status_Geloescht.Click();
+            // CenterRight für Auswahlelement Pfeil
+            Report.Log(ReportLevel.Info, "Mouse", "CenterRight für Auswahlelement Pfeil\r\nMouse Left Click item 'FrmKto.CmbKtoStatus' at CenterRight.", repo.FrmKto.CmbKtoStatusInfo, new RecordItemIndex(3));
+            repo.FrmKto.CmbKtoStatus.Click(Location.CenterRight);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Down' Press.", new RecordItemIndex(8));
-            Keyboard.Press(System.Windows.Forms.Keys.Down, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Status_Geloescht' at Center.", repo.List1000.Status_GeloeschtInfo, new RecordItemIndex(5));
+            repo.List1000.Status_Geloescht.Click();
+            
+            // Workaround, wenn Auswahl mit Kombobox Probleme macht
+            //Report.Log(ReportLevel.Info, "Keyboard", "Workaround, wenn Auswahl mit Kombobox Probleme macht\r\nKey 'Down' Press with focus on 'FrmKto.CmbKtoStatus'.", repo.FrmKto.CmbKtoStatusInfo, new RecordItemIndex(6));
+            //Keyboard.PrepareFocus(repo.FrmKto.CmbKtoStatus);
+            //Keyboard.Press(System.Windows.Forms.Keys.Down, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             // Pfeil nach unten + Enter zur Auswahl von "gelöscht"
-            Report.Log(ReportLevel.Info, "Keyboard", "Pfeil nach unten + Enter zur Auswahl von \"gelöscht\"\r\nKey 'Enter' Press.", new RecordItemIndex(9));
-            Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Pfeil nach unten + Enter zur Auswahl von \"gelöscht\"\r\nKey 'Enter' Press.", new RecordItemIndex(7));
+            //Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='gelöscht') on item 'FrmKto.Text1001_Status'.", repo.FrmKto.Text1001_StatusInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='gelöscht') on item 'FrmKto.Text1001_Status'.", repo.FrmKto.Text1001_StatusInfo, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.FrmKto.Text1001_StatusInfo, "Text", "gelöscht");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Speichern_Button' at Center.", repo.FrmKto.Speichern_ButtonInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Speichern_Button' at Center.", repo.FrmKto.Speichern_ButtonInfo, new RecordItemIndex(9));
             repo.FrmKto.Speichern_Button.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='gelöscht') on item 'FrmKto.Text1001_Status'.", repo.FrmKto.Text1001_StatusInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='gelöscht') on item 'FrmKto.Text1001_Status'.", repo.FrmKto.Text1001_StatusInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.FrmKto.Text1001_StatusInfo, "Text", "gelöscht");
             
         }
 
 #region Image Feature Data
-        /// <summary>
-        /// DO NOT REFERENCE THIS CODE  - auto generated
-        /// </summary>
-        CompressedImage ClientArea_Status_aktiv
-        { get { return repo.FrmKto.ClientAreaInfo.GetStatus_aktiv(new Rectangle(238, 3, 151, 36)); } }
-
-        /// <summary>
-        /// DO NOT REFERENCE THIS CODE  - auto generated
-        /// </summary>
-        Imaging.FindOptions ClientArea_Status_aktiv_Options
-        { get { return Imaging.FindOptions.Default; } }
-
 #endregion
     }
 #pragma warning restore 0436
