@@ -26,7 +26,7 @@ mode="Global">
 		<var
 		id="70edba51-7fb8-4239-95ab-25dc436e0ffb"
 		name="SQL_Select_B_BUSA">
-			select * from b_busa where firm_nr = '100' and busa_belegnr = '1001';
+			select BUSA_USERAENDG,FIRM_NR,BUSA_KEYPOS,KTO_NR,GKTO_NR,UST_CD,WRG_CD,BUSA_BUSY,ADR_NR,BUSA_STATUS,BUSA_JOURNAL,BUSA_JAHR,BUSA_PERIODE,BUSA_DTBELEG,BUSA_BELEGNR,BUSA_KL,BUSA_SH,BUSA_ART,BUSA_BERKZ,BUSA_SKONTOKZ,BUSA_BETRAG,BUSA_FWBETRAG,BUSA_KURS,BUSA_MENGE,BUSA_USTMV,
 		</var>
 		<var
 		id="b2ddc891-35e9-42a4-bb53-685bf4b418bb"
@@ -40,24 +40,14 @@ mode="Global">
 		</var>
 		<var
 		id="64f5aaec-2205-498c-83d3-79694ec03669"
-		name="file_selectergebnis_b_busa_Referenz_Teil_1">
-			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz_1.txt
-		</var>
-		<var
-		id="9bd40583-7f95-4af8-90b4-1b7c75ecfea7"
-		name="file_selectergebnis_b_busa_Referenz_Teil_2">
-			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz_2.txt
-		</var>
-		<var
-		id="3a2ec336-0c6f-4c58-92bb-683f4131e660"
-		name="file_SQL_Select_B_BUSA">
-			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\SQL_Select_B_BUSA.txt
+		name="file_selectergebnis_b_busa_Referenz">
+			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz.txt
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SQLStatement"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -108,7 +98,7 @@ mode="Global">
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="True"
 		methodname="SQLStatement"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -116,6 +106,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="file_selectergebnis_b_busa_aktuell">
+				</binding>
 			</bindings>
 			<arguments
 			id="4d5cbfd5-27a6-4ef0-827d-2904a84cf91e">
@@ -126,12 +120,18 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						select * from b_busa where firm_nr = '100' and busa_belegnr = '1001';
+						Select
+BUSA_USERAENDG,FIRM_NR,BUSA_KEYPOS,KTO_NR,GKTO_NR,UST_CD,WRG_CD,BUSA_BUSY,ADR_NR,BUSA_STATUS,BUSA_JOURNAL,BUSA_JAHR,BUSA_PERIODE,BUSA_DTBELEG,BUSA_BELEGNR,BUSA_KL,BUSA_SH,BUSA_ART,BUSA_BERKZ,BUSA_SKONTOKZ,BUSA_BETRAG,BUSA_FWBETRAG,BUSA_KURS,BUSA_MENGE,BUSA_USTMV,
+BUSA_USTSATZ,BUSA_USTAUFT,BUSA_USTBETRAG,BUSA_USTFWBETRAG,BUSA_CD1,BUSA_CD2,BUSA_CD3,BUSA_VERARB1,BUSA_VERARB2,BUSA_VERARB3,BUSA_OP,BUSA_NROPAUSGL,BUSA_DTOPAUSGL,BUSA_DTOPFAELL,BUSA_ANZAHLUNG,BUSA_REFART,BUSA_REFBELEGNR,BUSA_REFKEYBEL,BUSA_REFKEYPOS,BUSA_UVAJAHR,BUSA_UVAMONAT,BUSA_UVATAG,BUSA_USTSTATUS,BUSA_TYP,UST_UVACD,BUSA_BEZUG,BUSA_BEZUG2,BUSA_TEXT,BUSA_TEXT2,BUSA_BESTELLNR,BUSA_LIEFSNR,ANLA_NR,ANLA_POS,BUSA_USTAUFTBETRAG,BUSA_NRFREMDBELEG,BUSA_DTFREMDBELEG,BUSA_USERJOURNAL,KTBE_NR,BUSA_USERHERKUNFT,WEOP_BELEGNR,WEOP_STATUS,BUSA_ARCHIVNR,BUSA_UID,BUSA_ARCHIVDOC1,BUSA_DTSTOLOE,BUSA_USERSTOLOE,BUSA_PROGSTOLOE,BUSA_PERI_BUBE_VON,BUSA_PERI_BUBE_BIS,BUSA_FELD1,BUSA_FELD2,BUSA_JAHR_BUBE_VON,BUSA_FELD3,BUSA_JAHR_BUBE_BIS,BUSA_FELD4,PVT_CD,BUSA_HERKUNFT,BUSA_DTHERKUNFT,BUSA_SKBETRAG,BUSA_SKUSTBETRAG,BUSA_SKFWBETRAG,BUSA_SKFWUSTBETRAG,LAND_CD_ONACE,BUSA_SAOPKZEB,BUSA_DTLEISTUNG,BUSA_USEREXOP,BUSA_DTABGLEICH,BUSA_KZSTORNO,BUSA_STORNOGRUND,BUSA_STOKEYBEL,BUSA_STOKEYPOS,BUSA_KZKLEINRG,BUSA_VSECODE,BUSA_VSESUBCODE,BUSA_MENGE2,BUSA_KEYBEL_STORNO,BUSA_KZBN,BUSA_PMTINFID,RST_CD,BUSA_SORT_PK,BUSA_KEYPOS_SKT
+from b_busa
+where firm_nr = '100'
+and busa_belegnr = '1001';
 					</argvalue>
 				</argument>
 				<argument
 				argname="dbFile"
-				id="d89eb6fe-cf81-4172-843c-33398d12e8e9">
+				id="d89eb6fe-cf81-4172-843c-33398d12e8e9"
+				variable="DB_File">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -153,7 +153,7 @@ mode="Global">
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="FileCompareContains"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -167,7 +167,7 @@ mode="Global">
 				<argument
 				argname="file1"
 				id="200c9ccc-0557-49f1-9ac4-dfc32ef26697"
-				variable="file_selectergebnis_b_busa_Referenz_Teil_1">
+				variable="file_selectergebnis_b_busa_Referenz">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -201,22 +201,22 @@ mode="Global">
 			id="cdba2286-3092-4ab7-896d-5b9c50b7bfd6">
 				<argument
 				argname="file1"
-				id="200c9ccc-0557-49f1-9ac4-dfc32ef26697"
-				variable="file_selectergebnis_b_busa_Referenz_Teil_2">
+				id="200c9ccc-0557-49f1-9ac4-dfc32ef26697">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
+						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz.txt
 					</argvalue>
 				</argument>
 				<argument
 				argname="file2"
-				id="8b0c5cbf-8dd9-4354-bef7-63a709f82096"
-				variable="file_selectergebnis_b_busa_aktuell">
+				id="8b0c5cbf-8dd9-4354-bef7-63a709f82096">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
+						C:\temp\B_ZAHLV_001_B_BUSA_aktuell.txt
 					</argvalue>
 				</argument>
 			</arguments>

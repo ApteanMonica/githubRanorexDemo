@@ -169,38 +169,19 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="1da6975b-21d0-4ee0-b24a-93f04927a75a"
 			name="SQL_Abfrage_Beleg_1001"
 			ref="9d4f59a9-9ef3-4f29-809b-8ca0da01da29"
 			type="Recording">
 				<description>
-					<![CDATA[Illegales Zeichen im Pfad]]>
+					<![CDATA[Fehler "Illegales Zeichen im Pfad" bei Verwendung von Variablen für Pfade + Ausführung über Solution; Select wird bei Copy/Paste in den Default-Wert abgeschnitten]]>
 				</description>
 				<databinding>
 					<var
-					dataname="file_selectergebnis_b_busa_Referenz_Teil_2"
+					dataname="DB_File"
 					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="9bd40583-7f95-4af8-90b4-1b7c75ecfea7"
-					variablename="file_selectergebnis_b_busa_Referenz_Teil_2">
-					</var>
-					<var
-					dataname="file_selectergebnis_b_busa_Referenz_Teil_1"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="64f5aaec-2205-498c-83d3-79694ec03669"
-					variablename="file_selectergebnis_b_busa_Referenz_Teil_1">
-					</var>
-					<var
-					dataname="file_selectergebnis_b_busa_aktuell"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="32df8d2d-a9cb-4e59-ae9f-8d2f302926a7"
-					variablename="file_selectergebnis_b_busa_aktuell">
-					</var>
-					<var
-					dataname="file_SQL_Select_B_BUSA"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="3a2ec336-0c6f-4c58-92bb-683f4131e660"
-					variablename="file_SQL_Select_B_BUSA">
+					variableid="b2ddc891-35e9-42a4-bb53-685bf4b418bb"
+					variablename="DB_File">
 					</var>
 					<var
 					dataname="SQL_Select_B_BUSA"
@@ -209,10 +190,16 @@
 					variablename="SQL_Select_B_BUSA">
 					</var>
 					<var
-					dataname="DB_File"
+					dataname="file_selectergebnis_b_busa_aktuell"
 					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="b2ddc891-35e9-42a4-bb53-685bf4b418bb"
-					variablename="DB_File">
+					variableid="32df8d2d-a9cb-4e59-ae9f-8d2f302926a7"
+					variablename="file_selectergebnis_b_busa_aktuell">
+					</var>
+					<var
+					dataname="file_selectergebnis_b_busa_Referenz"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="64f5aaec-2205-498c-83d3-79694ec03669"
+					variablename="file_selectergebnis_b_busa_Referenz">
 					</var>
 				</databinding>
 				<missingdatabinding>
@@ -221,6 +208,12 @@
 					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
 					variableid="f6b28cd6-6599-45fa-827f-fcba99142176"
 					variablename="output_file_select_b_busa_ref">
+					</var>
+					<var
+					dataname="file_SQL_Select_B_BUSA"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="3a2ec336-0c6f-4c58-92bb-683f4131e660"
+					variablename="file_SQL_Select_B_BUSA">
 					</var>
 				</missingdatabinding>
 			</testmodule>
@@ -1212,31 +1205,16 @@ Datum,Buchungs-Nr)]]>
 					</param>
 					<param
 					name="SQL_Select_B_BUSA"
-					value="select * from b_busa where firm_nr = '100' and busa_belegnr = '1001';">
-					</param>
-					<param
-					name="file_SQL_Select_B_BUSA"
-					value="C:\Testdaten\Allgemein\Sonstige\SQL_Referenz_Files\B_ZAHLV_001\SQL_Select_B_BUSA.txt">
+					value="Select BUSA_USERAENDG,FIRM_NR,BUSA_KEYPOS,KTO_NR,GKTO_NR,UST_CD,WRG_CD,BUSA_BUSY,ADR_NR,BUSA_STATUS,BUSA_JOURNAL,BUSA_JAHR,BUSA_PERIODE,BUSA_DTBELEG,BUSA_BELEGNR,BUSA_KL,BUSA_SH,BUSA_ART,BUSA_BERKZ,BUSA_SKONTOKZ,BUSA_BETRAG,BUSA_FWBETRAG,BUSA_KURS,BUSA_MENGE,BUSA_USTMV,
+BUSA_USTSATZ,BUSA_USTAUFT,BUSA_USTBETRAG,BUSA_USTFWBETRAG,BUSA_CD1,BUSA_CD2,BUSA_CD3,BUSA_VERARB1,BUSA_VERARB2,BUSA_VERARB3,BUSA_OP,BUSA_NROPAUSGL,BUSA_DTOPAUSGL,BUSA_DTOPFAELL,BUSA_ANZAHLUNG,BUSA_REFART,BUSA_REFBELEGNR,BUSA_REFKEYBEL,BUSA_REFKEYPOS,BUSA_UVAJAHR,BUSA_UVAMONAT,BUSA_UVATAG,BUSA_USTSTATUS,BUSA_TYP,UST_UVACD,BUSA_BEZUG,BUSA_BEZUG2,BUSA_TEXT,BUSA_TEXT2,BUSA_BESTELLNR,BUSA_LIEFSNR,ANLA_NR,ANLA_POS,BUSA_USTAUFTBETRAG,BUSA_NRFREMDBELEG,BUSA_DTFREMDBELEG,BUSA_USERJOURNAL,KTBE_NR,BUSA_USERHERKUNFT,WEOP_BELEGNR,WEOP_STATUS,BUSA_ARCHIVNR,BUSA_UID,BUSA_ARCHIVDOC1,BUSA_DTSTOLOE,BUSA_USERSTOLOE,BUSA_PROGSTOLOE,BUSA_PERI_BUBE_VON,BUSA_PERI_BUBE_BIS,BUSA_FELD1,BUSA_FELD2,BUSA_JAHR_BUBE_VON,BUSA_FELD3,BUSA_JAHR_BUBE_BIS,BUSA_FELD4,PVT_CD,BUSA_HERKUNFT,BUSA_DTHERKUNFT,BUSA_SKBETRAG,BUSA_SKUSTBETRAG,BUSA_SKFWBETRAG,BUSA_SKFWUSTBETRAG,LAND_CD_ONACE,BUSA_SAOPKZEB,BUSA_DTLEISTUNG,BUSA_USEREXOP,BUSA_DTABGLEICH,BUSA_KZSTORNO,BUSA_STORNOGRUND,BUSA_STOKEYBEL,BUSA_STOKEYPOS,BUSA_KZKLEINRG,BUSA_VSECODE,BUSA_VSESUBCODE,BUSA_MENGE2,BUSA_KEYBEL_STORNO,BUSA_KZBN,BUSA_PMTINFID,RST_CD,BUSA_SORT_PK,BUSA_KEYPOS_SKT from b_busa where firm_nr = '100' and busa_belegnr = '1001';">
 					</param>
 					<param
 					name="file_selectergebnis_b_busa_aktuell"
 					value="C:\temp\B_ZAHLV_001_B_BUSA_aktuell.txt">
 					</param>
 					<param
-					name="file_selectergebnis_b_busa_Referenz_Teil_1"
-					value="C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz_1.txt">
-					</param>
-					<param
-					name="file_selectergebnis_b_busa_Referenz_Teil_2"
-					value="C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz_2.txt">
-					</param>
-					<param
-					name="Computername"
-					value="">
-					</param>
-					<param
-					name="NewParameter"
-					value="">
+					name="file_selectergebnis_b_busa_Referenz"
+					value="C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz.txt">
 					</param>
 				</parameters>
 			</testcase>
@@ -1794,6 +1772,9 @@ Datum,Buchungs-Nr)]]>
 			id="5177c853-4461-4933-8cbd-6d4591513784">
 			</testcontainer>
 			<testcontainer
+			id="53ba31ae-4a04-48e8-acbe-a88298197076">
+			</testcontainer>
+			<testcontainer
 			id="6acbd35d-9bc2-4666-b75f-311afc719f52">
 			</testcontainer>
 			<testcontainer
@@ -1807,9 +1788,6 @@ Datum,Buchungs-Nr)]]>
 			</testcontainer>
 			<testcontainer
 			id="af45a05f-151e-4e3c-9c02-b15a8bfdc904">
-			</testcontainer>
-			<testcontainer
-			id="b39ddb24-1cf1-47c9-998a-188d31c32c71">
 			</testcontainer>
 			<testcontainer
 			id="bad038b6-3551-47ff-8bc9-2f16a0e33db2">

@@ -41,12 +41,10 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
         /// </summary>
         public SQL_Abfrage_Beleg_1001()
         {
-            SQL_Select_B_BUSA = "select * from b_busa where firm_nr = '100' and busa_belegnr = '1001';";
+            SQL_Select_B_BUSA = "select BUSA_USERAENDG,FIRM_NR,BUSA_KEYPOS,KTO_NR,GKTO_NR,UST_CD,WRG_CD,BUSA_BUSY,ADR_NR,BUSA_STATUS,BUSA_JOURNAL,BUSA_JAHR,BUSA_PERIODE,BUSA_DTBELEG,BUSA_BELEGNR,BUSA_KL,BUSA_SH,BUSA_ART,BUSA_BERKZ,BUSA_SKONTOKZ,BUSA_BETRAG,BUSA_FWBETRAG,BUSA_KURS,BUSA_MENGE,BUSA_USTMV,";
             DB_File = "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt";
             file_selectergebnis_b_busa_aktuell = "C:\\temp\\B_ZAHLV_001_B_BUSA_aktuell.txt";
-            file_selectergebnis_b_busa_Referenz_Teil_1 = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUSA_Referenz_1.txt";
-            file_selectergebnis_b_busa_Referenz_Teil_2 = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUSA_Referenz_2.txt";
-            file_SQL_Select_B_BUSA = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\SQL_Select_B_BUSA.txt";
+            file_selectergebnis_b_busa_Referenz = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUSA_Referenz.txt";
         }
 
         /// <summary>
@@ -95,40 +93,16 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
             set { _file_selectergebnis_b_busa_aktuell = value; }
         }
 
-        string _file_selectergebnis_b_busa_Referenz_Teil_1;
+        string _file_selectergebnis_b_busa_Referenz;
 
         /// <summary>
-        /// Gets or sets the value of variable file_selectergebnis_b_busa_Referenz_Teil_1.
+        /// Gets or sets the value of variable file_selectergebnis_b_busa_Referenz.
         /// </summary>
         [TestVariable("64f5aaec-2205-498c-83d3-79694ec03669")]
-        public string file_selectergebnis_b_busa_Referenz_Teil_1
+        public string file_selectergebnis_b_busa_Referenz
         {
-            get { return _file_selectergebnis_b_busa_Referenz_Teil_1; }
-            set { _file_selectergebnis_b_busa_Referenz_Teil_1 = value; }
-        }
-
-        string _file_selectergebnis_b_busa_Referenz_Teil_2;
-
-        /// <summary>
-        /// Gets or sets the value of variable file_selectergebnis_b_busa_Referenz_Teil_2.
-        /// </summary>
-        [TestVariable("9bd40583-7f95-4af8-90b4-1b7c75ecfea7")]
-        public string file_selectergebnis_b_busa_Referenz_Teil_2
-        {
-            get { return _file_selectergebnis_b_busa_Referenz_Teil_2; }
-            set { _file_selectergebnis_b_busa_Referenz_Teil_2 = value; }
-        }
-
-        string _file_SQL_Select_B_BUSA;
-
-        /// <summary>
-        /// Gets or sets the value of variable file_SQL_Select_B_BUSA.
-        /// </summary>
-        [TestVariable("3a2ec336-0c6f-4c58-92bb-683f4131e660")]
-        public string file_SQL_Select_B_BUSA
-        {
-            get { return _file_SQL_Select_B_BUSA; }
-            set { _file_SQL_Select_B_BUSA = value; }
+            get { return _file_selectergebnis_b_busa_Referenz; }
+            set { _file_selectergebnis_b_busa_Referenz = value; }
         }
 
 #endregion
@@ -157,13 +131,13 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
 
             Init();
 
-            file_selectergebnis_b_busa_aktuell = Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement(SQL_Select_B_BUSA, DB_File, "C:\\temp\\B_ZAHLV_001_B_BUSA_aktuell.txt");
+            //file_selectergebnis_b_busa_aktuell = Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement(SQL_Select_B_BUSA, DB_File, "C:\\temp\\B_ZAHLV_001_B_BUSA_aktuell.txt");
             
-            //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select * from b_busa where firm_nr = '100' and busa_belegnr = '1001';", "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "C:\\temp\\B_ZAHLV_001_B_BUSA_aktuell.txt");
+            file_selectergebnis_b_busa_aktuell = Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("Select\r\nBUSA_USERAENDG,FIRM_NR,BUSA_KEYPOS,KTO_NR,GKTO_NR,UST_CD,WRG_CD,BUSA_BUSY,ADR_NR,BUSA_STATUS,BUSA_JOURNAL,BUSA_JAHR,BUSA_PERIODE,BUSA_DTBELEG,BUSA_BELEGNR,BUSA_KL,BUSA_SH,BUSA_ART,BUSA_BERKZ,BUSA_SKONTOKZ,BUSA_BETRAG,BUSA_FWBETRAG,BUSA_KURS,BUSA_MENGE,BUSA_USTMV,\r\nBUSA_USTSATZ,BUSA_USTAUFT,BUSA_USTBETRAG,BUSA_USTFWBETRAG,BUSA_CD1,BUSA_CD2,BUSA_CD3,BUSA_VERARB1,BUSA_VERARB2,BUSA_VERARB3,BUSA_OP,BUSA_NROPAUSGL,BUSA_DTOPAUSGL,BUSA_DTOPFAELL,BUSA_ANZAHLUNG,BUSA_REFART,BUSA_REFBELEGNR,BUSA_REFKEYBEL,BUSA_REFKEYPOS,BUSA_UVAJAHR,BUSA_UVAMONAT,BUSA_UVATAG,BUSA_USTSTATUS,BUSA_TYP,UST_UVACD,BUSA_BEZUG,BUSA_BEZUG2,BUSA_TEXT,BUSA_TEXT2,BUSA_BESTELLNR,BUSA_LIEFSNR,ANLA_NR,ANLA_POS,BUSA_USTAUFTBETRAG,BUSA_NRFREMDBELEG,BUSA_DTFREMDBELEG,BUSA_USERJOURNAL,KTBE_NR,BUSA_USERHERKUNFT,WEOP_BELEGNR,WEOP_STATUS,BUSA_ARCHIVNR,BUSA_UID,BUSA_ARCHIVDOC1,BUSA_DTSTOLOE,BUSA_USERSTOLOE,BUSA_PROGSTOLOE,BUSA_PERI_BUBE_VON,BUSA_PERI_BUBE_BIS,BUSA_FELD1,BUSA_FELD2,BUSA_JAHR_BUBE_VON,BUSA_FELD3,BUSA_JAHR_BUBE_BIS,BUSA_FELD4,PVT_CD,BUSA_HERKUNFT,BUSA_DTHERKUNFT,BUSA_SKBETRAG,BUSA_SKUSTBETRAG,BUSA_SKFWBETRAG,BUSA_SKFWUSTBETRAG,LAND_CD_ONACE,BUSA_SAOPKZEB,BUSA_DTLEISTUNG,BUSA_USEREXOP,BUSA_DTABGLEICH,BUSA_KZSTORNO,BUSA_STORNOGRUND,BUSA_STOKEYBEL,BUSA_STOKEYPOS,BUSA_KZKLEINRG,BUSA_VSECODE,BUSA_VSESUBCODE,BUSA_MENGE2,BUSA_KEYBEL_STORNO,BUSA_KZBN,BUSA_PMTINFID,RST_CD,BUSA_SORT_PK,BUSA_KEYPOS_SKT\r\nfrom b_busa\r\nwhere firm_nr = '100'\r\nand busa_belegnr = '1001';", DB_File, "C:\\temp\\B_ZAHLV_001_B_BUSA_aktuell.txt");
             
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains(file_selectergebnis_b_busa_Referenz_Teil_1, file_selectergebnis_b_busa_aktuell);
+            //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains(file_selectergebnis_b_busa_Referenz, file_selectergebnis_b_busa_aktuell);
             
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains(file_selectergebnis_b_busa_Referenz_Teil_2, file_selectergebnis_b_busa_aktuell);
+            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains("C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUSA_Referenz.txt", "C:\\temp\\B_ZAHLV_001_B_BUSA_aktuell.txt");
             
         }
 
