@@ -105,8 +105,8 @@ namespace B_BUKA_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm, "", false);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile in normal mode. Return value bound to $Programm.", new RecordItemIndex(0));
+            Programm = ValueConverter.ToString(Host.Local.RunApplication(Startfile, "", "", false));
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblBuka.TitleBar100Kassabuch'", repo.TblBuka.TitleBar100KassabuchInfo, new ActionTimeout(120000), new RecordItemIndex(1));
             repo.TblBuka.TitleBar100KassabuchInfo.WaitForExists(120000);
