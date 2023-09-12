@@ -23,10 +23,6 @@ mode="Global">
 	namespace="B_EXOPV_003.Recordings">
 	</codegen>
 	<variables>
-		<var
-		id="3c7c4aed-f4c3-4847-88c9-3c613a8b75cf"
-		name="Tagesdatum">
-		</var>
 	</variables>
 	<recorditems>
 		<validationitem
@@ -52,35 +48,6 @@ mode="Global">
 			</matchname>
 			<matchvalue>
 				RS\2-Verkauf
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeContains"
-		enabled="True"
-		optional="False"
-		searchpropertyid="4db2a2eb-6997-41bf-9bcd-587348f3cc62">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Tagesdatum">
-				</binding>
-			</bindings>
-			<info
-			id="9f3c5bf3-202f-4c3d-9a68-ad5246685301"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@title&gt;'[100] Externe Buchungen v']/container[@controlname='ClientArea']/container[@controlname='tblExop']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Stapel_Betrag]/cell[@accessiblename~'colExop_dtherkunft']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourValue
 			</matchvalue>
 		</validationitem>
 		<validationitem

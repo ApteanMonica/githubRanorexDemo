@@ -41,7 +41,6 @@ namespace B_EXOPV_003.Recordings
         /// </summary>
         public Stapel_validieren()
         {
-            Tagesdatum = "";
         }
 
         /// <summary>
@@ -53,18 +52,6 @@ namespace B_EXOPV_003.Recordings
         }
 
 #region Variables
-
-        string _Tagesdatum;
-
-        /// <summary>
-        /// Gets or sets the value of variable Tagesdatum.
-        /// </summary>
-        [TestVariable("3c7c4aed-f4c3-4847-88c9-3c613a8b75cf")]
-        public string Tagesdatum
-        {
-            get { return _Tagesdatum; }
-            set { _Tagesdatum = value; }
-        }
 
         /// <summary>
         /// Gets or sets the value of variable Stapel_Betrag.
@@ -105,25 +92,22 @@ namespace B_EXOPV_003.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='RS\\2-Verkauf') on item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.Column0_Stapel_4800'.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.Column0_Stapel_4800Info, new RecordItemIndex(0));
             Validate.AttributeEqual(repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.Column0_Stapel_4800Info, "Text", "RS\\2-Verkauf");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColExopDtherkunft_Stapel_4800'.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColExopDtherkunft_Stapel_4800Info, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColExopDtherkunft_Stapel_4800Info, "Text", Tagesdatum);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='K') on item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColExopArt_Stapel_Stapel_4800'.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColExopArt_Stapel_Stapel_4800Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='K') on item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColExopArt_Stapel_Stapel_4800'.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColExopArt_Stapel_Stapel_4800Info, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColExopArt_Stapel_Stapel_4800Info, "Text", "K");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOPCount_Stapel_4800'.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOPCount_Stapel_4800Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOPCount_Stapel_4800'.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOPCount_Stapel_4800Info, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOPCount_Stapel_4800Info, "Text", "3");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOKCount_Stapel_4800'.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOKCount_Stapel_4800Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOKCount_Stapel_4800'.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOKCount_Stapel_4800Info, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOKCount_Stapel_4800Info, "Text", "3");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOPVerbucht_Stapel_4800'.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOPVerbucht_Stapel_4800Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOPVerbucht_Stapel_4800'.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOPVerbucht_Stapel_4800Info, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOPVerbucht_Stapel_4800Info, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4.800,00') on item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOPBetragB_Stapel_4800'.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOPBetragB_Stapel_4800Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4.800,00') on item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOPBetragB_Stapel_4800'.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOPBetragB_Stapel_4800Info, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOPBetragB_Stapel_4800Info, "Text", "4.800,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4.800,00') on item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOPBetragOK_Stapel_48000'.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOPBetragOK_Stapel_48000Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4.800,00') on item 'Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOPBetragOK_Stapel_48000'.", repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOPBetragOK_Stapel_48000Info, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.Form100ExterneBuchungenVerbuchen.Tabelle_Zeilen_mit_Variablen.Zeile_mit_Stapel_Betrag_4800.ColOPBetragOK_Stapel_48000Info, "Text", "4.800,00");
             
         }
