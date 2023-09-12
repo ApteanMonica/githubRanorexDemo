@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="9d4f59a9-9ef3-4f29-809b-8ca0da01da29"
+id="dd9a7fbd-0e01-4711-b4ac-557302826617"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,83 +19,31 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="SQL_Abfrage_Beleg_1001"
+	classname="SQL_Kontrolle_b_bube_Beleg_1001"
 	namespace="B_ZAHLV_001.Recordings_SQL_Usercode">
 	</codegen>
 	<variables>
 		<var
-		id="70edba51-7fb8-4239-95ab-25dc436e0ffb"
-		name="SQL_Select_B_BUSA">
-			select BUSA_USERAENDG,FIRM_NR,BUSA_KEYPOS,KTO_NR,GKTO_NR,UST_CD,WRG_CD,BUSA_BUSY,ADR_NR,BUSA_STATUS,BUSA_JOURNAL,BUSA_JAHR,BUSA_PERIODE,BUSA_DTBELEG,BUSA_BELEGNR,BUSA_KL,BUSA_SH,BUSA_ART,BUSA_BERKZ,BUSA_SKONTOKZ,BUSA_BETRAG,BUSA_FWBETRAG,BUSA_KURS,BUSA_MENGE,BUSA_USTMV,
+		id="c4db1547-c73b-4552-8fd3-b0f72d01a01c"
+		name="SQL_Select_B_BUBE">
 		</var>
 		<var
-		id="b2ddc891-35e9-42a4-bb53-685bf4b418bb"
+		id="092f3f01-0f6d-4794-a21e-f22a26027b09"
 		name="DB_File">
 			C:\Testdaten\Allgemein\UserCode\datenbank.txt
 		</var>
 		<var
-		id="32df8d2d-a9cb-4e59-ae9f-8d2f302926a7"
-		name="file_selectergebnis_b_busa_aktuell">
-			C:\temp\B_ZAHLV_001_B_BUSA_aktuell.txt
+		id="4d200bea-eba2-4785-acb2-a27e784482f4"
+		name="file_selectergebnis_b_bube_aktuell">
+			C:\temp\B_ZAHLV_001_B_BUBE_aktuell.txt
 		</var>
 		<var
-		id="64f5aaec-2205-498c-83d3-79694ec03669"
-		name="file_selectergebnis_b_busa_Referenz">
-			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz.txt
+		id="60728b99-a153-4b95-8157-18096a6233e2"
+		name="file_selectergebnis_b_bube_Referenz">
+			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUBE_Referenz.txt
 		</var>
 	</variables>
 	<recorditems>
-		<userrecorditem
-		classname="ApteanSQL"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="SQLStatement"
-		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="ReturnVariable"
-				variable="file_selectergebnis_b_busa_aktuell">
-				</binding>
-			</bindings>
-			<arguments
-			id="4d5cbfd5-27a6-4ef0-827d-2904a84cf91e">
-				<argument
-				argname="selectLine"
-				id="4431a0c1-5149-40b6-aedd-3b5e1128543b"
-				variable="SQL_Select_B_BUSA">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						select * from b_busa where firm_nr = '100' and busa_belegnr = '1001';
-					</argvalue>
-				</argument>
-				<argument
-				argname="dbFile"
-				id="d89eb6fe-cf81-4172-843c-33398d12e8e9"
-				variable="DB_File">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						C:\Testdaten\Allgemein\UserCode\datenbank.txt
-					</argvalue>
-				</argument>
-				<argument
-				argname="file"
-				id="69f4d073-249e-4011-8f3e-5502ed95338d">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						C:\temp\B_ZAHLV_001_B_BUSA_aktuell.txt
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
 		enabled="True"
@@ -106,16 +54,13 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="ReturnVariable"
-				variable="file_selectergebnis_b_busa_aktuell">
-				</binding>
 			</bindings>
 			<arguments
 			id="4d5cbfd5-27a6-4ef0-827d-2904a84cf91e">
 				<argument
 				argname="selectLine"
-				id="4431a0c1-5149-40b6-aedd-3b5e1128543b">
+				id="4431a0c1-5149-40b6-aedd-3b5e1128543b"
+				variable="SQL_Select_B_BUBE">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -146,42 +91,7 @@ and busa_belegnr = '1001';
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\temp\B_ZAHLV_001_B_BUSA_aktuell.txt
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="ApteanSQL"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="FileCompareContains"
-		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="cdba2286-3092-4ab7-896d-5b9c50b7bfd6">
-				<argument
-				argname="file1"
-				id="200c9ccc-0557-49f1-9ac4-dfc32ef26697"
-				variable="file_selectergebnis_b_busa_Referenz">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-				<argument
-				argname="file2"
-				id="8b0c5cbf-8dd9-4354-bef7-63a709f82096"
-				variable="file_selectergebnis_b_busa_aktuell">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
+						C:\temp\B_ZAHLV_001_B_BUBE_aktuell.txt
 					</argvalue>
 				</argument>
 			</arguments>
@@ -206,7 +116,7 @@ and busa_belegnr = '1001';
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz.txt
+						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUBE_Referenz.txt
 					</argvalue>
 				</argument>
 				<argument
@@ -216,7 +126,7 @@ and busa_belegnr = '1001';
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\temp\B_ZAHLV_001_B_BUSA_aktuell.txt
+						C:\temp\B_ZAHLV_001_B_BUBE_aktuell.txt
 					</argvalue>
 				</argument>
 			</arguments>
@@ -237,7 +147,7 @@ and busa_belegnr = '1001';
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		SQL_Abfrage_Beleg_1001.UserCode.cs
+		SQL_Kontrolle_b_bube_Beleg_1001.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

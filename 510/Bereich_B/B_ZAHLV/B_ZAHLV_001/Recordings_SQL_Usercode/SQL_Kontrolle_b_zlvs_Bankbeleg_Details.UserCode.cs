@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_ZAHLV_001.Recordings_SQL_Usercode
 {
-    public partial class SQL_Abfrage_Beleg_1001
+    public partial class SQL_Kontrolle_b_zlvs_Bankbeleg_Details
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

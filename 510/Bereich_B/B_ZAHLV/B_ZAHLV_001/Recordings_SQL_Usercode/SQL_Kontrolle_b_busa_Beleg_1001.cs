@@ -24,22 +24,22 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The SQL_Abfrage_Beleg_1001 recording.
+    ///The SQL_Kontrolle_b_busa_Beleg_1001 recording.
     /// </summary>
     [TestModule("9d4f59a9-9ef3-4f29-809b-8ca0da01da29", ModuleType.Recording, 1)]
-    public partial class SQL_Abfrage_Beleg_1001 : ITestModule
+    public partial class SQL_Kontrolle_b_busa_Beleg_1001 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ZAHLV_001.B_ZAHLV_001Repository repository.
         /// </summary>
         public static global::B_ZAHLV_001.B_ZAHLV_001Repository repo = global::B_ZAHLV_001.B_ZAHLV_001Repository.Instance;
 
-        static SQL_Abfrage_Beleg_1001 instance = new SQL_Abfrage_Beleg_1001();
+        static SQL_Kontrolle_b_busa_Beleg_1001 instance = new SQL_Kontrolle_b_busa_Beleg_1001();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public SQL_Abfrage_Beleg_1001()
+        public SQL_Kontrolle_b_busa_Beleg_1001()
         {
             SQL_Select_B_BUSA = "select BUSA_USERAENDG,FIRM_NR,BUSA_KEYPOS,KTO_NR,GKTO_NR,UST_CD,WRG_CD,BUSA_BUSY,ADR_NR,BUSA_STATUS,BUSA_JOURNAL,BUSA_JAHR,BUSA_PERIODE,BUSA_DTBELEG,BUSA_BELEGNR,BUSA_KL,BUSA_SH,BUSA_ART,BUSA_BERKZ,BUSA_SKONTOKZ,BUSA_BETRAG,BUSA_FWBETRAG,BUSA_KURS,BUSA_MENGE,BUSA_USTMV,";
             DB_File = "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt";
@@ -50,7 +50,7 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static SQL_Abfrage_Beleg_1001 Instance
+        public static SQL_Kontrolle_b_busa_Beleg_1001 Instance
         {
             get { return instance; }
         }
