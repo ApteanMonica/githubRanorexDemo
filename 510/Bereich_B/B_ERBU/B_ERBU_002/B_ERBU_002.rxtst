@@ -32,6 +32,38 @@
 			ref="7e6cad2c-2b3f-4d6a-aec0-56c386a8835c"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="0d765226-426c-4b81-b57f-1e62ec4acbf9"
+			name="SQL_Kontrolle_b_exop_Belegnr_2200005_2200009"
+			ref="447cfb37-164f-4ac3-a67d-a7ccbd4b4b37"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DB_File"
+					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
+					variableid="3fdfcd40-0782-4ed5-b265-16b0b63d19eb"
+					variablename="DB_File">
+					</var>
+					<var
+					dataname="SQL_Select_B_EXOP"
+					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
+					variableid="836117a8-9d53-428b-827b-522efae00dd9"
+					variablename="SQL_Select_B_EXOP">
+					</var>
+					<var
+					dataname="file_selectergebnis_b_exop_aktuell"
+					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
+					variableid="d3d3c7bc-5d1b-469a-9a3f-7fb7b98d40c7"
+					variablename="file_selectergebnis_b_exop_aktuell">
+					</var>
+					<var
+					dataname="file_selectergebnis_b_exop_Referenz"
+					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
+					variableid="39140b55-00a2-4d54-ada6-851c7f1d7ec2"
+					variablename="file_selectergebnis_b_exop_Referenz">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="11a9572f-019a-4ce6-8532-1992b36cbbf3"
 			name="ERs_verbuchen">
@@ -198,6 +230,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="82e1b999-f3fa-4e25-9c57-6d74722483d6"
+			name="SQL_Kontrolle_B_EXOP_B_EXSA">
+			</testcase>
 			<testmodule
 			id="8353366b-a871-4452-995d-6326b00b18f5"
 			name="StartAUT_B_EXOPV"
@@ -332,6 +368,38 @@
 					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
 					variableid="595a2f0c-7525-41b9-b64a-e23c5d1cfee2"
 					variablename="Tagesdatum">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="91433cdd-0fe6-4705-bf5e-c1f002d5453f"
+			name="SQL_Kontrolle_b_exsa_Belegnr_2200005_2200009"
+			ref="4f488313-2e80-41b2-a189-1bb8c9899cc9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="file_selectergebnis_b_exsa_Referenz"
+					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
+					variableid="2df3520b-febe-4fbe-b3a3-c1bb9b827a6d"
+					variablename="file_selectergebnis_b_exsa_Referenz">
+					</var>
+					<var
+					dataname="file_selectergebnis_b_exsa_aktuell"
+					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
+					variableid="a3893ea3-a461-4a23-8911-5c0ccca51621"
+					variablename="file_selectergebnis_b_exsa_aktuell">
+					</var>
+					<var
+					dataname="SQL_Select_B_EXSA"
+					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
+					variableid="cecc251b-575f-441b-af03-c45eace55a72"
+					variablename="SQL_Select_B_EXSA">
+					</var>
+					<var
+					dataname="DB_File"
+					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
+					variableid="a294cf74-2524-45eb-b468-8cc5154a96c6"
+					variablename="DB_File">
 					</var>
 				</databinding>
 			</testmodule>
@@ -568,6 +636,216 @@
 					<param
 					name="Stapel_Betrag"
 					value="13.700,00">
+					</param>
+					<param
+					name="DB_File"
+					value="C:\Testdaten\Allgemein\UserCode\datenbank.txt">
+					</param>
+					<param
+					name="SQL_Select_B_EXOP"
+					value="select 
+FIRM_NR,
+ADR_NR,
+KLDV_NR,
+KLBK_NR,
+WRG_CD,
+KTO_NR,
+EXOP_STATUS,
+EXOP_ART,
+EXOP_KL,
+EXOP_JAHR,
+EXOP_PERIODE,
+EXOP_BELEGNR,
+EXOP_DTBELEG,
+EXOP_DTFREMDBELEG,
+EXOP_NRFREMDBELEG,
+EXOP_DTFAELLIG,
+EXOP_DTVALUTA,
+EXOP_TAGE1,
+EXOP_SKONTO1,
+EXOP_TAGE2,
+EXOP_SKONTO2,
+EXOP_TAGENETTO,
+EXOP_ZAHLART,
+EXOP_BETRAG,
+EXOP_FWBETRAG,
+EXOP_KURS,
+EXOP_RECHBETRAG,
+EXOP_ZAHLBETRAG,
+EXOP_SKONTOBASIS,
+EXOP_TEXT1,
+EXOP_TEXT2,
+EXOP_UEBERWTEXT,
+EXOP_REFBELEGNR,
+EXOP_BUSY,
+EXOP_MAHNSTUFE,
+EXOP_TEXTCD,
+EXOP_SELECT1,
+EXOP_SELECT2,
+EXOP_MAHNSPERRE,
+EXOP_ZAHLSPERRE,
+EXOP_DTEINHALT,
+EXOP_EHPROZ,
+EXOP_EHBETRAG,
+EXOP_FWEHBETRAG,
+EXOP_DTEINHALT2,
+EXOP_EHPROZ2,
+EXOP_EHBETRAG2,
+EXOP_FWEHBETRAG2,
+EXOP_BEZUG,
+EXOP_BEZUG2,
+EXOP_TEILRECHNR,
+EXOP_KZFIXTAGE,
+EXOP_MONAT1,
+EXOP_MONAT2,
+EXOP_MONATNETTO,
+EXOP_KZDIVERSE,
+EXOP_ADRESSE1,
+EXOP_ADRESSE2,
+EXOP_ADRESSE3,
+EXOP_ADRESSE4,
+EXOP_ADRESSE5,
+LAND_CD,
+PLZ_CD,
+EXOP_ORT,
+SPRA_CD,
+ANRD_CD,
+EXOP_NAME,
+EXOP_PERSONEN,
+EXOP_KZOK,
+EXOP_USEROK,
+EXOP_USERHERKUNFT,
+EXOP_MATPREIS,
+EXOP_UVAJAHR,
+EXOP_UVAMONAT,
+EXOP_UVATAG,
+EXOP_HERKUNFT,
+EXOP_DTHERKUNFT,
+EXOP_SELECT3,
+EXOP_SELECT4,
+EXOP_ARCHIVDOC1,
+USER_CD,
+EXOP_KZEXOPA,
+FIRM_NR_RECH,
+EXOP_FELD1,
+EXOP_FELD2,
+EXOP_FELD3,
+EXOP_FELD4,
+EXOP_USERANLAG,
+EXOP_USERAENDG,
+EXOP_REFKEYBEL,
+EXOP_REFKEYPOS,
+EXOP_KZSKONTO,
+EXOP_SKBETRAG,
+EXOP_FWSKBETRAG,
+EXOP_ARCHIVNR,
+EXOP_ADR_RECHAD,
+EXOP_KLDV_RECHAD,
+SAMK_CD,
+EXOP_DTLEISTUNG,
+EXOP_DTMNSPBIS,
+BUSA_KEYBEL,
+RTK_NR,
+EXOP_KZAUSGL,
+EXOP_KZSTORNO,
+EXOP_STORNOGRUND,
+EXOP_KZZINSEN,
+EXOP_BELTYP,
+EXOP_ZNSBETRAG,
+EXOP_FWZNSBETRAG,
+MNV_NR,
+EXOP_DTZLSPBIS,
+ZART_CD,
+EXOP_KZRECHTSKR,
+ADR_NR_ZAHLUNG,
+KLBK_NR_ZAHLUNG,
+EXBK_NR,
+EXBP_NR,
+EXBO_NR,
+EXOP_RTKREF,
+RST_CD,
+EXOP_FELD01,
+EXOP_FELD02,
+EXOP_FELD03,
+EXOP_FELD04,
+EXOP_FELD05,
+EXOP_USERVWDG
+from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '2200009';">
+					</param>
+					<param
+					name="file_selectergebnis_b_exop_aktuell"
+					value="C:\temp\B_ERBU_002_B_EXOP_aktuell.txt">
+					</param>
+					<param
+					name="file_selectergebnis_b_exop_Referenz"
+					value="C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_002\B_ERBU_002_B_EXOP_Referenz.txt">
+					</param>
+					<param
+					name="SQL_Select_B_EXSA"
+					value="select
+b_exsa.FIRM_NR,
+EXSA_KEYPOS,
+EXSA_BER_CD6,
+EXSA_BEKT_NR6,
+EXSA_BER_CD5,
+EXSA_BEKT_NR5,
+EXSA_BER_CD4,
+EXSA_BEKT_NR4,
+EXSA_BER_CD1,
+EXSA_BEKT_NR1,
+EXSA_BER_CD2,
+EXSA_BEKT_NR2,
+EXSA_BER_CD3,
+EXSA_BEKT_NR3,
+UST_CD,
+EXSA_ART,
+EXSA_KTONR,
+EXSA_SKONTOKZ,
+EXSA_SH,
+EXSA_BETRAG,
+EXSA_FWBETRAG,
+EXSA_MENGE,
+EXSA_USTBETRAG,
+EXSA_USTFWBETRAG,
+EXSA_USTMV,
+EXSA_USTSATZ,
+EXSA_TEXT1,
+EXSA_TEXT2,
+EXSA_TEXTCD,
+EXSA_BESTELLNR,
+EXSA_LIEFSNR,
+ANLA_NR,
+ANLA_POS,
+KTBE_NR,
+PVT_CD,
+EXSA_JAHR_BUBE_VON,
+EXSA_MON_BUBE_VON,
+EXSA_JAHR_BUBE_BIS,
+EXSA_MON_BUBE_BIS,
+EXSA_FELD1,
+EXSA_FELD2,
+EXSA_FELD3,
+EXSA_FELD4,
+EXSA_UID,
+EXSA_ARCHIVNR,
+EXSA_ARCHIVDOC1,
+EXSA_DTLEISTUNG,
+EXSA_MENGE2,
+EXSA_DTOPFAELL,
+EXSA_VNROPAUSGL
+from b_exsa, b_exop
+where b_exop.firm_nr = b_exsa.firm_nr
+AND b_exop.exop_keybel = b_exsa.exop_keybel
+AND b_exop.firm_nr = '100' 
+AND exop_belegnr BETWEEN '2200005' AND '2200009';">
+					</param>
+					<param
+					name="file_selectergebnis_b_exsa_aktuell"
+					value="C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_002\B_ERBU_002_B_EXSA_Referenz.txt">
+					</param>
+					<param
+					name="file_selectergebnis_b_exsa_Referenz"
+					value="C:\temp\B_ERBU_002_B_EXSA_aktuell.txt">
 					</param>
 				</parameters>
 			</testcase>
@@ -887,6 +1165,18 @@
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="82e1b999-f3fa-4e25-9c57-6d74722483d6"
+					name="SQL_Kontrolle_B_EXOP_B_EXSA">
+						<testmodule
+						id="0d765226-426c-4b81-b57f-1e62ec4acbf9"
+						name="SQL_Kontrolle_b_exop_Belegnr_2200005_2200009">
+						</testmodule>
+						<testmodule
+						id="91433cdd-0fe6-4705-bf5e-c1f002d5453f"
+						name="SQL_Kontrolle_b_exsa_Belegnr_2200005_2200009">
+						</testmodule>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -908,6 +1198,9 @@
 			</testcontainer>
 			<testcontainer
 			id="7b5daa57-bfc7-43b5-a1c2-1feef0785fa9">
+			</testcontainer>
+			<testcontainer
+			id="82e1b999-f3fa-4e25-9c57-6d74722483d6">
 			</testcontainer>
 			<testcontainer
 			id="c413a81b-7e43-49b7-b9cc-7da31a80bd0e">
