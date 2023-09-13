@@ -1632,12 +1632,12 @@ FROM	b_buop, b_busa
 	AND		b_busa.busa_belegnr = '1001';">
 					</param>
 					<param
-					name="file_selectergebnis_b_buop_alle_Referenz"
-					value="C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUOP_Referenz.txt">
-					</param>
-					<param
 					name="file_selectergebnis_b_buop_alle_aktuell"
 					value="C:\temp\B_ZAHLV_001_B_BUOP_aktuell.txt">
+					</param>
+					<param
+					name="file_selectergebnis_b_buop_alle_Referenz"
+					value="C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUOP_Referenz.txt">
 					</param>
 					<param
 					name="SQL_Select_B_BUBE"
@@ -1687,12 +1687,16 @@ FROM	b_bube, b_busa
 	AND		b_busa.busa_belegnr = '1001';">
 					</param>
 					<param
-					name="file_selectergebnis_b_bube_Referenz"
+					name="file_selectergebnis_b_bube_aktuell"
 					value="C:\temp\B_ZAHLV_001_B_BUBE_aktuell.txt">
 					</param>
 					<param
-					name="file_selectergebnis_b_bube_aktuell"
+					name="file_selectergebnis_b_bube_Referenz"
 					value="C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUBE_Referenz.txt">
+					</param>
+					<param
+					name="NewParameter"
+					value="">
 					</param>
 				</parameters>
 			</testcase>
