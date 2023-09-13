@@ -248,12 +248,14 @@ namespace S_ADRK_002.Recording
             Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'DlgMessageBox.LabelMeldungstext' and assigning its value to variable 'newText'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(30));
             newText = repo.DlgMessageBox.LabelMeldungstext.Element.GetAttributeValueText("Text");
             
+            Report.Log(ReportLevel.Info, "User", newText, new RecordItemIndex(31));
+            
             Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateTextWithoutBreaks(newText, Aptean_Austria);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.OK' at Center.", repo.DlgMessageBox.OKInfo, new RecordItemIndex(32));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.OK' at Center.", repo.DlgMessageBox.OKInfo, new RecordItemIndex(33));
             repo.DlgMessageBox.OK.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Speicher_Button' at Center.", repo.FrmAdr.Speicher_ButtonInfo, new RecordItemIndex(33));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Speicher_Button' at Center.", repo.FrmAdr.Speicher_ButtonInfo, new RecordItemIndex(34));
             repo.FrmAdr.Speicher_Button.Click();
             
         }
