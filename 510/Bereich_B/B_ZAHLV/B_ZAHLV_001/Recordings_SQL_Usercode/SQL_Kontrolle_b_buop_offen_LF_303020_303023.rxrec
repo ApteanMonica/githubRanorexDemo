@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="b73dbd7c-0631-44ce-86c9-28ebcb4a9100"
+id="de7e28c1-932f-4774-9acd-61c34fac9c94"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,29 +19,29 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="SQL_Kontrolle_b_zlvs_Bankbeleg_Details"
+	classname="SQL_Kontrolle_b_buop_offen_LF_303020_303023"
 	namespace="B_ZAHLV_001.Recordings_SQL_Usercode">
 	</codegen>
 	<variables>
 		<var
-		id="0a122bcd-58da-4679-99ef-9f53b25facc8"
-		name="SQL_Select_B_ZLVS">
-			select * from b_zlvs where firm_nr ='100' and zlvs_vorschlag = '1' and busa_keybel BETWEEN '112' AND '126';
+		id="e0bda171-4f7e-4617-82e5-678f51e22485"
+		name="SQL_Select_B_BUOP_offen">
+			select * from b_buop where firm_nr = '100' and adr_nr BETWEEN '303020' AND '303023' AND busa_keybel BETWEEN '112' AND '126';
 		</var>
 		<var
-		id="915a9a1c-3f12-457e-af39-c4e72e51ca13"
+		id="227fa9d9-c49b-4bc0-b838-e74667b2b79a"
 		name="DB_File">
 			C:\Testdaten\Allgemein\UserCode\datenbank.txt
 		</var>
 		<var
-		id="a0990d32-9ba3-486a-aaf6-f2a1f930c201"
-		name="file_selectergebnis_b_zlvs_aktuell">
-			C:\temp\B_ZAHLV_001_B_ZLVS_aktuell.txt
+		id="c7aa1087-4741-41a8-a359-5566d37c702d"
+		name="file_selectergebnis_b_buop_offen_aktuell">
+			C:\temp\B_ZAHLV_001_B_BUOP_offen_aktuell.txt
 		</var>
 		<var
-		id="c7af9926-6ec7-4ab2-b637-470a8494ebeb"
-		name="file_selectergebnis_b_zlvs_Referenz">
-			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_ZLVS_Referenz.txt
+		id="2d2a881c-6b6a-4475-bf25-9790dbb8e260"
+		name="file_selectergebnis_b_buop_offen_Referenz">
+			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUOP_offen_Referenz.txt
 		</var>
 	</variables>
 	<recorditems>
@@ -61,7 +61,7 @@ mode="Global">
 				<argument
 				argname="selectLine"
 				id="bf75028d-5647-4d99-9d84-edd4dc22697b"
-				variable="SQL_Select_B_ZLVS">
+				variable="SQL_Select_B_BUOP_offen">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -85,7 +85,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\temp\B_ZAHLV_001_B_ZLVS_aktuell.txt
+						C:\temp\B_ZAHLV_001_B_BUOP_offen_aktuell.txt
 					</argvalue>
 				</argument>
 			</arguments>
@@ -106,7 +106,7 @@ mode="Global">
 				<argument
 				argname="file1"
 				id="543bb458-83fc-4910-a368-829e5352a273"
-				variable="file_selectergebnis_b_zlvs_Referenz">
+				variable="file_selectergebnis_b_buop_offen_Referenz">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -116,7 +116,7 @@ mode="Global">
 				<argument
 				argname="file2"
 				id="b8c7e20c-1eb4-4048-86d0-cc01125e924c"
-				variable="file_selectergebnis_b_zlvs_aktuell">
+				variable="file_selectergebnis_b_buop_offen_aktuell">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -141,7 +141,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		SQL_Kontrolle_b_zlvs_Bankbeleg_Details.UserCode.cs
+		SQL_Kontrolle_b_buop_offen_LF_303020_303023.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

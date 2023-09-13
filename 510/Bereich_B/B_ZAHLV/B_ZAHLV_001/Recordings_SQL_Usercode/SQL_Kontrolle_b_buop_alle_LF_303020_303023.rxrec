@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c79c02a2-961d-4632-a1fc-da9beaf7182b"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SQL_Kontrolle_b_buop_alle_LF_303020_303023"
+	namespace="B_ZAHLV_001.Recordings_SQL_Usercode">
+	</codegen>
+	<variables>
+		<var
+		id="08eed36f-0c2b-4aad-94b6-c3fb8f48f362"
+		name="SQL_Select_B_BUOP_alle">
+			select  wird abgeschnitten bei copy/paste in Default Value
+		</var>
+		<var
+		id="40b52840-97a2-4f2d-bf9f-79c636cd4590"
+		name="DB_File">
+			C:\Testdaten\Allgemein\UserCode\datenbank.txt
+		</var>
+		<var
+		id="c7b45639-4aab-4154-8e87-2fa66a781d34"
+		name="file_selectergebnis_b_buop_alle_aktuell">
+			C:\temp\B_ZAHLV_001_B_BUOP_alle_aktuell.txt
+		</var>
+		<var
+		id="3471ed1e-65fb-4199-a4f7-daa0ceaba719"
+		name="file_selectergebnis_b_buop_alle_Referenz">
+			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUOP_alle3_Referenz.txt
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="ApteanSQL"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SQLStatement"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4d5cbfd5-27a6-4ef0-827d-2904a84cf91e">
+				<argument
+				argname="selectLine"
+				id="4431a0c1-5149-40b6-aedd-3b5e1128543b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						select   
+BUSA_USERAENDG,
+FIRM_NR,
+BUSA_KEYPOS,
+WRG_CD,
+BANK_NR,
+ADR_NR,
+KLDV_NR,
+KLBK_NR,
+BUOP_ART,
+BUOP_KL,
+BUOP_BELEGNR,
+BUOP_BELEGPOS,
+BUOP_ZAHLART,
+BUOP_ZAHLPOS,
+BUOP_ZAHLJAHR,
+BUOP_ZAHLPERIODE,
+BUOP_ZAHLDATUM,
+BUOP_ZAHLSTATUS,
+BUOP_STORNO,
+BUOP_DTFREMDBELEG,
+BUOP_NRFREMDBELEG,
+BUOP_KULINR,
+BUOP_DTFAELLIG,
+BUOP_DTVALUTA,
+BUOP_DTSKONTO1,
+BUOP_DTSKONTO2,
+BUOP_TAGEVALUTA,
+BUOP_TAGE1,
+BUOP_SKONTO1,
+BUOP_TAGE2,
+BUOP_SKONTO2,
+BUOP_TAGENETTO,
+BUOP_BETRAG,
+BUOP_OFFEN,
+BUOP_ABZUEGE,
+BUOP_SKONTO,
+BUOP_FWBETRAG,
+BUOP_FWOFFEN,
+BUOP_FWABZUEGE,
+BUOP_FWSKONTO,
+BUOP_KURSDIFF,
+BUOP_RECHBETRAG,
+BUOP_FWRECHBETRAG,
+BUOP_ZAHLBETRAG,
+BUOP_SKONTOBASIS,
+BUOP_MAHNSTUFE,
+BUOP_MAHNSPERRE,
+BUOP_MAHNUNBSKTO,
+BUOP_DTMAHN,
+BUOP_CD1,
+BUOP_CD2,
+BUOP_CD3,
+BUOP_UEBERWTEXT,
+BUOP_SELECT1,
+BUOP_SELECT2,
+BUOP_ZLVS,
+BUOP_ZAHLSTORNO,
+BUOP_DTABGLEICH,
+BUOP_RECHTYP,
+BUOP_KZEINHALT,
+BUOP_DTEINHALT,
+BUOP_EHPROZ,
+BUOP_EHBETRAG,
+BUOP_FWEHBETRAG,
+BUOP_EHKOBETRAG,
+BUOP_FWEHKOBETRAG,
+BUOP_DTEINHALT2,
+BUOP_EHPROZ2,
+BUOP_KZUST,
+BUOP_KZUSTUMB,
+BUOP_USTBETRAG,
+BUOP_FWUSTBETRAG,
+BUOP_SKONTOBASISRE,
+BUOP_ZAHLSPERRE,
+BUOP_BASISBETRAG,
+BUOP_BASISSKONTO,
+BUOP_BASISABZUEGE,
+BUOP_BASISKURSDIFF,
+BUOP_MONATNETTO,
+BUOP_KZFIXTAGE,
+BUOP_MONAT1,
+BUOP_MONAT2,
+BUOP_SKONTOUNB,
+BUOP_FWSKONTOUNB,
+BUOP_KZPROVISION,
+BUOP_ZAHLJAHR2,
+BUOP_ZAHLPERIODE2,
+BUOP_SELECT3,
+BUOP_SELECT4,
+BUOP_ADR_RECHAD,
+BUOP_KLDV_RECHAD,
+BUOP_DTMNSPBIS,
+BUOP_DTMNAENDG,
+RTK_NR,
+BUOP_DTSALD,
+BUOP_KZAUSGL,
+BUOP_KZZINSEN,
+BUOP_MAHNZINSEN,
+ADR_NR_ZAHLUNG,
+BUOP_BELTYP,
+BUOP_DTMNFAELL,
+BUOP_DTMNZAHL,
+MNV_NR,
+KLBK_NR_ZAHLUNG,
+BUOP_KZRECHTSKR,
+BUOP_ZINSBUCH,
+BUOP_ZINSRECH,
+BUOP_SALDJAHR,
+BUOP_SALDPERIODE,
+BUOP_DTIC,
+BUOP_ZS_NR,
+EXBK_NR,
+EXBP_NR,
+EXBO_NR,
+BUOP_KZPROVISIONSV,
+BUOP_KEYBEL_RATE,
+BUOP_KEYPOS_RATE,
+BUOP_FELD01,
+BUOP_FELD02,
+BUOP_FELD03,
+BUOP_FELD04,
+BUOP_FELD05
+from b_buop
+where firm_nr = '100' and adr_nr BETWEEN '303020' AND '303023';
+					</argvalue>
+				</argument>
+				<argument
+				argname="dbFile"
+				id="d89eb6fe-cf81-4172-843c-33398d12e8e9"
+				variable="DB_File">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\Testdaten\Allgemein\UserCode\datenbank.txt
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="69f4d073-249e-4011-8f3e-5502ed95338d">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\temp\B_ZAHLV_001_B_BUOP_alle_aktuell.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="ApteanSQL"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="SQLStatement"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4d5cbfd5-27a6-4ef0-827d-2904a84cf91e">
+				<argument
+				argname="selectLine"
+				id="4431a0c1-5149-40b6-aedd-3b5e1128543b"
+				variable="SQL_Select_B_BUOP_alle">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						select   
+BUSA_USERAENDG,
+FIRM_NR,
+BUSA_KEYPOS,
+WRG_CD,
+BANK_NR,
+ADR_NR,
+KLDV_NR,
+KLBK_NR,
+BUOP_ART,
+BUOP_KL,
+BUOP_BELEGNR,
+BUOP_BELEGPOS,
+BUOP_ZAHLART,
+BUOP_ZAHLPOS,
+BUOP_ZAHLJAHR,
+BUOP_ZAHLPERIODE,
+BUOP_ZAHLDATUM,
+BUOP_ZAHLSTATUS,
+BUOP_STORNO,
+BUOP_DTFREMDBELEG,
+BUOP_NRFREMDBELEG,
+BUOP_KULINR,
+BUOP_DTFAELLIG,
+BUOP_DTVALUTA,
+BUOP_DTSKONTO1,
+BUOP_DTSKONTO2,
+BUOP_TAGEVALUTA,
+BUOP_TAGE1,
+BUOP_SKONTO1,
+BUOP_TAGE2,
+BUOP_SKONTO2,
+BUOP_TAGENETTO,
+BUOP_BETRAG,
+BUOP_OFFEN,
+BUOP_ABZUEGE,
+BUOP_SKONTO,
+BUOP_FWBETRAG,
+BUOP_FWOFFEN,
+BUOP_FWABZUEGE,
+BUOP_FWSKONTO,
+BUOP_KURSDIFF,
+BUOP_RECHBETRAG,
+BUOP_FWRECHBETRAG,
+BUOP_ZAHLBETRAG,
+BUOP_SKONTOBASIS,
+BUOP_MAHNSTUFE,
+BUOP_MAHNSPERRE,
+BUOP_MAHNUNBSKTO,
+BUOP_DTMAHN,
+BUOP_CD1,
+BUOP_CD2,
+BUOP_CD3,
+BUOP_UEBERWTEXT,
+BUOP_SELECT1,
+BUOP_SELECT2,
+BUOP_ZLVS,
+BUOP_ZAHLSTORNO,
+BUOP_DTABGLEICH,
+BUOP_RECHTYP,
+BUOP_KZEINHALT,
+BUOP_DTEINHALT,
+BUOP_EHPROZ,
+BUOP_EHBETRAG,
+BUOP_FWEHBETRAG,
+BUOP_EHKOBETRAG,
+BUOP_FWEHKOBETRAG,
+BUOP_DTEINHALT2,
+BUOP_EHPROZ2,
+BUOP_KZUST,
+BUOP_KZUSTUMB,
+BUOP_USTBETRAG,
+BUOP_FWUSTBETRAG,
+BUOP_SKONTOBASISRE,
+BUOP_ZAHLSPERRE,
+BUOP_BASISBETRAG,
+BUOP_BASISSKONTO,
+BUOP_BASISABZUEGE,
+BUOP_BASISKURSDIFF,
+BUOP_MONATNETTO,
+BUOP_KZFIXTAGE,
+BUOP_MONAT1,
+BUOP_MONAT2,
+BUOP_SKONTOUNB,
+BUOP_FWSKONTOUNB,
+BUOP_KZPROVISION,
+BUOP_ZAHLJAHR2,
+BUOP_ZAHLPERIODE2,
+BUOP_SELECT3,
+BUOP_SELECT4,
+BUOP_ADR_RECHAD,
+BUOP_KLDV_RECHAD,
+BUOP_DTMNSPBIS,
+BUOP_DTMNAENDG,
+RTK_NR,
+BUOP_DTSALD,
+BUOP_KZAUSGL,
+BUOP_KZZINSEN,
+BUOP_MAHNZINSEN,
+ADR_NR_ZAHLUNG,
+BUOP_BELTYP,
+BUOP_DTMNFAELL,
+BUOP_DTMNZAHL,
+MNV_NR,
+KLBK_NR_ZAHLUNG,
+BUOP_KZRECHTSKR,
+BUOP_ZINSBUCH,
+BUOP_ZINSRECH,
+BUOP_SALDJAHR,
+BUOP_SALDPERIODE,
+BUOP_DTIC,
+BUOP_ZS_NR,
+EXBK_NR,
+EXBP_NR,
+EXBO_NR,
+BUOP_KZPROVISIONSV,
+BUOP_KEYBEL_RATE,
+BUOP_KEYPOS_RATE,
+BUOP_FELD01,
+BUOP_FELD02,
+BUOP_FELD03,
+BUOP_FELD04,
+BUOP_FELD05
+from b_buop
+where firm_nr = '100' and adr_nr BETWEEN '303020' AND '303023';
+					</argvalue>
+				</argument>
+				<argument
+				argname="dbFile"
+				id="d89eb6fe-cf81-4172-843c-33398d12e8e9"
+				variable="DB_File">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\Testdaten\Allgemein\UserCode\datenbank.txt
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="69f4d073-249e-4011-8f3e-5502ed95338d">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\temp\B_ZAHLV_001_B_BUOP_alle_aktuell.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="ApteanSQL"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="FileCompareContains"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="cdba2286-3092-4ab7-896d-5b9c50b7bfd6">
+				<argument
+				argname="file1"
+				id="200c9ccc-0557-49f1-9ac4-dfc32ef26697">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUOP_alle_Referenz.txt
+					</argvalue>
+				</argument>
+				<argument
+				argname="file2"
+				id="8b0c5cbf-8dd9-4354-bef7-63a709f82096">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\temp\B_ZAHLV_001_B_BUOP_alle_aktuell.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="7b72118a-62eb-41df-b2e8-9cb72bd3379d"
+	name="B_ZAHLV_001Repository"
+	relativepath="..\B_ZAHLV_001Repository.rxrep">
+		<codegen
+		classname="B_ZAHLV_001Repository"
+		namespace="B_ZAHLV_001">
+		</codegen>
+		<rootfolder
+		id="e679616b-b142-449e-84c8-627d1a3a80c9"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SQL_Kontrolle_b_buop_Beleg_1001.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -24,49 +24,49 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The SQL_Kontrolle_b_buop_Beleg_1001 recording.
+    ///The SQL_Kontrolle_b_buop_offen recording.
     /// </summary>
-    [TestModule("c79c02a2-961d-4632-a1fc-da9beaf7182b", ModuleType.Recording, 1)]
-    public partial class SQL_Kontrolle_b_buop_Beleg_1001 : ITestModule
+    [TestModule("de7e28c1-932f-4774-9acd-61c34fac9c94", ModuleType.Recording, 1)]
+    public partial class SQL_Kontrolle_b_buop_offen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ZAHLV_001.B_ZAHLV_001Repository repository.
         /// </summary>
         public static global::B_ZAHLV_001.B_ZAHLV_001Repository repo = global::B_ZAHLV_001.B_ZAHLV_001Repository.Instance;
 
-        static SQL_Kontrolle_b_buop_Beleg_1001 instance = new SQL_Kontrolle_b_buop_Beleg_1001();
+        static SQL_Kontrolle_b_buop_offen instance = new SQL_Kontrolle_b_buop_offen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public SQL_Kontrolle_b_buop_Beleg_1001()
+        public SQL_Kontrolle_b_buop_offen()
         {
-            SQL_Select_B_BUOP = "";
+            SQL_Select_B_ZLVS = "select * from b_zlvs where firm_nr ='100' and zlvs_vorschlag = '1';";
             DB_File = "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt";
-            file_selectergebnis_b_buop_aktuell = "C:\\temp\\B_ZAHLV_001_B_BUOP_aktuell.txt";
-            file_selectergebnis_b_buop_Referenz = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUOP_Referenz.txt";
+            file_selectergebnis_b_zlvs_aktuell = "C:\\temp\\B_ZAHLV_001_B_ZLVS_aktuell.txt";
+            file_selectergebnis_b_zlvs_Referenz = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_ZLVS_Referenz.txt";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static SQL_Kontrolle_b_buop_Beleg_1001 Instance
+        public static SQL_Kontrolle_b_buop_offen Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _SQL_Select_B_BUOP;
+        string _SQL_Select_B_ZLVS;
 
         /// <summary>
-        /// Gets or sets the value of variable SQL_Select_B_BUOP.
+        /// Gets or sets the value of variable SQL_Select_B_ZLVS.
         /// </summary>
-        [TestVariable("08eed36f-0c2b-4aad-94b6-c3fb8f48f362")]
-        public string SQL_Select_B_BUOP
+        [TestVariable("e0bda171-4f7e-4617-82e5-678f51e22485")]
+        public string SQL_Select_B_ZLVS
         {
-            get { return _SQL_Select_B_BUOP; }
-            set { _SQL_Select_B_BUOP = value; }
+            get { return _SQL_Select_B_ZLVS; }
+            set { _SQL_Select_B_ZLVS = value; }
         }
 
         string _DB_File;
@@ -74,35 +74,35 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
         /// <summary>
         /// Gets or sets the value of variable DB_File.
         /// </summary>
-        [TestVariable("40b52840-97a2-4f2d-bf9f-79c636cd4590")]
+        [TestVariable("227fa9d9-c49b-4bc0-b838-e74667b2b79a")]
         public string DB_File
         {
             get { return _DB_File; }
             set { _DB_File = value; }
         }
 
-        string _file_selectergebnis_b_buop_aktuell;
+        string _file_selectergebnis_b_zlvs_aktuell;
 
         /// <summary>
-        /// Gets or sets the value of variable file_selectergebnis_b_buop_aktuell.
+        /// Gets or sets the value of variable file_selectergebnis_b_zlvs_aktuell.
         /// </summary>
-        [TestVariable("c7b45639-4aab-4154-8e87-2fa66a781d34")]
-        public string file_selectergebnis_b_buop_aktuell
+        [TestVariable("c7aa1087-4741-41a8-a359-5566d37c702d")]
+        public string file_selectergebnis_b_zlvs_aktuell
         {
-            get { return _file_selectergebnis_b_buop_aktuell; }
-            set { _file_selectergebnis_b_buop_aktuell = value; }
+            get { return _file_selectergebnis_b_zlvs_aktuell; }
+            set { _file_selectergebnis_b_zlvs_aktuell = value; }
         }
 
-        string _file_selectergebnis_b_buop_Referenz;
+        string _file_selectergebnis_b_zlvs_Referenz;
 
         /// <summary>
-        /// Gets or sets the value of variable file_selectergebnis_b_buop_Referenz.
+        /// Gets or sets the value of variable file_selectergebnis_b_zlvs_Referenz.
         /// </summary>
-        [TestVariable("3471ed1e-65fb-4199-a4f7-daa0ceaba719")]
-        public string file_selectergebnis_b_buop_Referenz
+        [TestVariable("2d2a881c-6b6a-4475-bf25-9790dbb8e260")]
+        public string file_selectergebnis_b_zlvs_Referenz
         {
-            get { return _file_selectergebnis_b_buop_Referenz; }
-            set { _file_selectergebnis_b_buop_Referenz = value; }
+            get { return _file_selectergebnis_b_zlvs_Referenz; }
+            set { _file_selectergebnis_b_zlvs_Referenz = value; }
         }
 
 #endregion
@@ -131,9 +131,9 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
 
             Init();
 
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement(SQL_Select_B_BUOP, DB_File, "C:\\temp\\B_ZAHLV_001_B_BUOP_aktuell.txt");
+            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement(SQL_Select_B_ZLVS, DB_File, "C:\\temp\\B_ZAHLV_001_B_ZLVS_aktuell.txt");
             
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains("C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUOP_Referenz.txt", "C:\\temp\\B_ZAHLV_001_B_BUOP_aktuell.txt");
+            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains(file_selectergebnis_b_zlvs_Referenz, file_selectergebnis_b_zlvs_aktuell);
             
         }
 

@@ -26,6 +26,7 @@ mode="Global">
 		<var
 		id="c4db1547-c73b-4552-8fd3-b0f72d01a01c"
 		name="SQL_Select_B_BUBE">
+			SELECT wird abgeschnitten bei copy/paste in Default value
 		</var>
 		<var
 		id="092f3f01-0f6d-4794-a21e-f22a26027b09"
@@ -46,7 +47,7 @@ mode="Global">
 	<recorditems>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SQLStatement"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -71,6 +72,94 @@ BUSA_USTSATZ,BUSA_USTAUFT,BUSA_USTBETRAG,BUSA_USTFWBETRAG,BUSA_CD1,BUSA_CD2,BUSA
 from b_busa
 where firm_nr = '100'
 and busa_belegnr = '1001';
+					</argvalue>
+				</argument>
+				<argument
+				argname="dbFile"
+				id="d89eb6fe-cf81-4172-843c-33398d12e8e9"
+				variable="DB_File">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\Testdaten\Allgemein\UserCode\datenbank.txt
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="69f4d073-249e-4011-8f3e-5502ed95338d">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\temp\B_ZAHLV_001_B_BUBE_aktuell.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="ApteanSQL"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SQLStatement"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4d5cbfd5-27a6-4ef0-827d-2904a84cf91e">
+				<argument
+				argname="selectLine"
+				id="4431a0c1-5149-40b6-aedd-3b5e1128543b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						SELECT
+b_bube.BUSA_USERAENDG,
+b_bube.FIRM_NR,
+b_bube.BUSA_KEYPOS,
+BUBE_POS,
+BUBE_BETRAG,
+BUBE_MENGE,
+BER_CD1,
+BEKT_NR1,
+BER_CD2,
+BEKT_NR2,
+BER_CD3,
+BEKT_NR3,
+BER_CD4,
+BEKT_NR4,
+BER_CD5,
+BEKT_NR5,
+BER_CD6,
+BEKT_NR6,
+BUBE_TEXT,
+b_bube.KTBE_NR,
+KTBE_PROZ,
+KTBE_MENGE,
+BUBE_USERANLAG,
+BUBE_USERAENDG,
+BUBE_SKBETRAG,
+BUBE_FELD1,
+BUBE_FELD2,
+BUBE_FELD3,
+BUBE_FELD4,
+BUBE_MENGE2,
+BUBE_PENSBETRAG,
+BUBE_DTPENS,
+BUBE_DTEINZLG,
+BUBE_PENSBETRSTO
+FROM	b_bube, b_busa
+	WHERE	b_busa.busa_belegnr = '1001'
+	AND 	b_busa.firm_nr = b_bube.firm_nr 
+	AND 	b_busa.busa_useraendg = b_bube.busa_useraendg
+	AND 	b_busa.busa_keybel = b_bube.busa_keybel 
+	AND 	b_busa.busa_keypos = b_bube.busa_keypos
+	AND 	b_busa.busa_status BETWEEN '1' AND '8'
+	AND		b_busa.firm_nr = '100';
 					</argvalue>
 				</argument>
 				<argument
