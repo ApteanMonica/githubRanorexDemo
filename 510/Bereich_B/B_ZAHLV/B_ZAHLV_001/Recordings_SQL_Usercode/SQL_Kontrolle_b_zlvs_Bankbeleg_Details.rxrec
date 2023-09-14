@@ -26,7 +26,7 @@ mode="Global">
 		<var
 		id="0a122bcd-58da-4679-99ef-9f53b25facc8"
 		name="SQL_Select_B_ZLVS">
-			select * from b_zlvs where firm_nr ='100' and zlvs_vorschlag = '1' and busa_keybel BETWEEN '112' AND '126';
+			select * from b_zlvs where firm_nr ='100' and zlvs_vorschlag = '1' and busa_keybel BETWEEN 112 AND 126;
 		</var>
 		<var
 		id="915a9a1c-3f12-457e-af39-c4e72e51ca13"
@@ -48,6 +48,41 @@ mode="Global">
 		<userrecorditem
 		classname="ApteanSQL"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ReadVersion"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c846b99a-82cb-440e-9e7e-11bf02c0614f">
+				<argument
+				argname="dbFile"
+				id="f2f0994d-dc0f-44db-99cc-1f0463bf8693">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\Testdaten\Allgemein\UserCode\datenbank.txt
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="bf9e294f-2177-4cdf-a28e-c573c0e62a2c">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						c:\temp\version_b_zlvs.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="ApteanSQL"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SQLStatement"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -94,6 +129,51 @@ mode="Global">
 		classname="ApteanSQL"
 		enabled="True"
 		isexternaltestmethod="True"
+		methodname="SQLStatement"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e437591e-8b53-40fe-b890-88f969cf85b5">
+				<argument
+				argname="selectLine"
+				id="bf75028d-5647-4d99-9d84-edd4dc22697b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						select * from b_zlvs where firm_nr ='100' and zlvs_vorschlag = '1' and busa_keybel BETWEEN '112' AND '126';
+					</argvalue>
+				</argument>
+				<argument
+				argname="dbFile"
+				id="a88c375d-99f3-41b8-ae22-75d2946878e7">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\Testdaten\Allgemein\UserCode\datenbank.txt
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="9d8063e2-b2c4-4071-a7ec-d0b9e34efc38">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\temp\B_ZAHLV_001_B_ZLVS_aktuell.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="ApteanSQL"
+		enabled="False"
+		isexternaltestmethod="True"
 		methodname="FileCompareContains"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
 		optional="False">
@@ -116,6 +196,41 @@ mode="Global">
 				<argument
 				argname="file2"
 				id="b8c7e20c-1eb4-4048-86d0-cc01125e924c"
+				variable="file_selectergebnis_b_zlvs_aktuell">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="ApteanSQL"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="FileCompareEqual"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="f6931ea5-4bac-4166-8ba1-7f34b2bf29ac">
+				<argument
+				argname="file1"
+				id="c150dc0d-b83b-437b-8910-8e48b0822a6b"
+				variable="file_selectergebnis_b_zlvs_Referenz">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="file2"
+				id="ea380345-6f2a-4dc4-b9cd-26b940c8021e"
 				variable="file_selectergebnis_b_zlvs_aktuell">
 					<argvaluetype>
 						System.String

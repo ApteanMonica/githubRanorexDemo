@@ -49,6 +49,41 @@ mode="Global">
 		classname="ApteanSQL"
 		enabled="True"
 		isexternaltestmethod="True"
+		methodname="ReadVersion"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c846b99a-82cb-440e-9e7e-11bf02c0614f">
+				<argument
+				argname="dbFile"
+				id="f2f0994d-dc0f-44db-99cc-1f0463bf8693">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\Testdaten\Allgemein\UserCode\datenbank.txt
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="bf9e294f-2177-4cdf-a28e-c573c0e62a2c">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						c:\temp\version_b_buop_alle.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="ApteanSQL"
+		enabled="True"
+		isexternaltestmethod="True"
 		methodname="SQLStatement"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
 		optional="False">
@@ -437,7 +472,7 @@ where firm_nr = '100' and adr_nr BETWEEN '303020' AND '303023';
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		SQL_Kontrolle_b_buop_Beleg_1001.UserCode.cs
+		SQL_Kontrolle_b_buop_alle_LF_303020_303023.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

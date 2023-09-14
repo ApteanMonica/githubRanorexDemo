@@ -41,7 +41,7 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
         /// </summary>
         public SQL_Kontrolle_b_zlvs_Bankbeleg_Details()
         {
-            SQL_Select_B_ZLVS = "select * from b_zlvs where firm_nr ='100' and zlvs_vorschlag = '1' and busa_keybel BETWEEN '112' AND '126';";
+            SQL_Select_B_ZLVS = "select * from b_zlvs where firm_nr ='100' and zlvs_vorschlag = '1' and busa_keybel BETWEEN 112 AND 126;";
             DB_File = "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt";
             file_selectergebnis_b_zlvs_aktuell = "C:\\temp\\B_ZAHLV_001_B_ZLVS_aktuell.txt";
             file_selectergebnis_b_zlvs_Referenz = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_ZLVS_Referenz.txt";
@@ -131,9 +131,15 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
 
             Init();
 
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement(SQL_Select_B_ZLVS, DB_File, "C:\\temp\\B_ZAHLV_001_B_ZLVS_aktuell.txt");
+            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.ReadVersion("C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "c:\\temp\\version_b_zlvs.txt");
             
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains(file_selectergebnis_b_zlvs_Referenz, file_selectergebnis_b_zlvs_aktuell);
+            //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement(SQL_Select_B_ZLVS, DB_File, "C:\\temp\\B_ZAHLV_001_B_ZLVS_aktuell.txt");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select * from b_zlvs where firm_nr ='100' and zlvs_vorschlag = '1' and busa_keybel BETWEEN '112' AND '126';", "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "C:\\temp\\B_ZAHLV_001_B_ZLVS_aktuell.txt");
+            
+            //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains(file_selectergebnis_b_zlvs_Referenz, file_selectergebnis_b_zlvs_aktuell);
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareEqual(file_selectergebnis_b_zlvs_Referenz, file_selectergebnis_b_zlvs_aktuell);
             
         }
 
