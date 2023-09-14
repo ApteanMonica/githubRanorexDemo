@@ -71,7 +71,7 @@ mode="Global">
 		action="DoubleClick"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -261,7 +261,7 @@ paKAE2j0FG0egpaKAE2j0FG0egpaKAKsHV/99v5mrI6VWg6v/vt/6EasjpQB/9k=
 		<keysequenceitem
 		KeySequence="{Back}"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="ca3853c9-ac52-4399-8406-4a64e3e667fa">
@@ -542,71 +542,15 @@ paKAE2j0FG0egpaKAE2j0FG0egpaKAKsHV/99v5mrI6VWg6v/vt/6EasjpQB/9k=
 			<bindings>
 			</bindings>
 		</keyitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
+		<explicitdelayitem
+		duration="1000ms"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="86714bd0-024f-4606-b37d-8747125d82cb"
-		sx="848"
-		sy="504"
-		warnoutofbounds="False">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="289d8510-67cc-4109-b59b-63700600e437"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="0"
-				prefcap="text"
-				rect="1050,500,20,17"
-				role="text"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="text"
-					type="System.String">
-						2
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						bis:
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Text
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						2
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='frmMain']/container[@controlname='ClientArea']/?/?/text[@accessiblename='bis:']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
+		</explicitdelayitem>
 		<keysequenceitem
 		KeySequence="{Back}"
 		duration="20ms"

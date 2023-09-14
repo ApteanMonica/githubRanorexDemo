@@ -53,7 +53,7 @@ namespace S_ADRK_001
 
 #region Variables
 
-        string _Aptean_Austria = "Aptean Austria GmbH";
+        string _Aptean_Austria = "";
 
         /// <summary>
         /// Gets or sets the value of variable Aptean_Austria.
@@ -923,7 +923,7 @@ namespace S_ADRK_001
             {
                 _labelmeldungstextInfo = new RepoItemInfo(this, "LabelMeldungstext", "text[@controltypename='Label']", "", 30000, null, "bd4a7d2f-888b-4fed-9a09-30fd10fa5488");
                 _bestaetigung_fehlermeldungInfo = new RepoItemInfo(this, "Bestaetigung_Fehlermeldung", "button[@controlname='button0']", "", 30000, null, "5ef1b713-0d1e-4a28-b025-ead9b87a58dd");
-                _labelmeldungstext1Info = new RepoItemInfo(this, "LabelMeldungstext1", "text[@controlname='labelMeldungstext']", "", 30000, null, "e5bebb4c-e814-479f-8577-0da498e43deb");
+                _labelmeldungstext1Info = new RepoItemInfo(this, "LabelMeldungstext1", "text[@controlname='labelMeldungstext']", "", 30000, null, "58044b0a-7ff5-4b17-a62b-d1045fdd5fe2");
             }
 
             /// <summary>
@@ -1001,7 +1001,7 @@ namespace S_ADRK_001
             /// <summary>
             /// The LabelMeldungstext1 item.
             /// </summary>
-            [RepositoryItem("e5bebb4c-e814-479f-8577-0da498e43deb")]
+            [RepositoryItem("58044b0a-7ff5-4b17-a62b-d1045fdd5fe2")]
             public virtual Ranorex.Text LabelMeldungstext1
             {
                 get
@@ -1013,7 +1013,7 @@ namespace S_ADRK_001
             /// <summary>
             /// The LabelMeldungstext1 item info.
             /// </summary>
-            [RepositoryItemInfo("e5bebb4c-e814-479f-8577-0da498e43deb")]
+            [RepositoryItemInfo("58044b0a-7ff5-4b17-a62b-d1045fdd5fe2")]
             public virtual RepoItemInfo LabelMeldungstext1Info
             {
                 get

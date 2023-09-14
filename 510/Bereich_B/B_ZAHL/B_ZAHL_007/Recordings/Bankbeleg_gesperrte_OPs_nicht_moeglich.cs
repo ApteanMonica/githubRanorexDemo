@@ -196,8 +196,8 @@ namespace B_ZAHL_007.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(27));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgMessageBox.Zahlungsverkehr'", repo.DlgMessageBox.ZahlungsverkehrInfo, new ActionTimeout(180000), new RecordItemIndex(28));
-            repo.DlgMessageBox.ZahlungsverkehrInfo.WaitForExists(180000);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(28));
+            Delay.Duration(2000, false);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=' Bitte kontrollieren Sie die nicht übernommenen OP's.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(29));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", " Bitte kontrollieren Sie die nicht übernommenen OP's.");

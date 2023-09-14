@@ -79,39 +79,37 @@ namespace B_KTO_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.TabPageGruppen' at Center.", repo.FrmKto.PicTabs.TabPageGruppenInfo, new RecordItemIndex(0));
-            repo.FrmKto.PicTabs.TabPageGruppen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.TabPageGruppen' at Center.", repo.FrmKto.TabPageGruppenInfo, new RecordItemIndex(0));
+            repo.FrmKto.TabPageGruppen.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.ColKtgrCdRow1' at Center.", repo.FrmKto.PicTabs.ColKtgrCdRow1Info, new RecordItemIndex(1));
-            repo.FrmKto.PicTabs.ColKtgrCdRow1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.ColKtgrCdRow1' at Center.", repo.FrmKto.ColKtgrCdRow1Info, new RecordItemIndex(1));
+            repo.FrmKto.ColKtgrCdRow1.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0035' with focus on 'FrmKto.PicTabs.ColKtgrCdRow1'.", repo.FrmKto.PicTabs.ColKtgrCdRow1Info, new RecordItemIndex(2));
-            repo.FrmKto.PicTabs.ColKtgrCdRow1.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0035' with focus on 'FrmKto.ColKtgrCdRow1'.", repo.FrmKto.ColKtgrCdRow1Info, new RecordItemIndex(2));
+            repo.FrmKto.ColKtgrCdRow1.EnsureVisible();
             Keyboard.Press("0035");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmKto'.", repo.FrmKto.SelfInfo, new RecordItemIndex(3));
-            repo.FrmKto.Self.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(3));
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0035') on item 'FrmKto.PicTabs.ColKtgrCdRow1'.", repo.FrmKto.PicTabs.ColKtgrCdRow1Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.FrmKto.PicTabs.ColKtgrCdRow1Info, "Text", "0035");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0035') on item 'FrmKto.ColKtgrCdRow1'.", repo.FrmKto.ColKtgrCdRow1Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FrmKto.ColKtgrCdRow1Info, "Text", "0035");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.Bereiche' at Center.", repo.FrmKto.PicTabs.BereicheInfo, new RecordItemIndex(5));
-            repo.FrmKto.PicTabs.Bereiche.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Bereiche' at Center.", repo.FrmKto.BereicheInfo, new RecordItemIndex(5));
+            repo.FrmKto.Bereiche.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.ColKtbzKzRow1' at Center.", repo.FrmKto.PicTabs.ColKtbzKzRow1Info, new RecordItemIndex(6));
-            repo.FrmKto.PicTabs.ColKtbzKzRow1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.ColKtbzKzRow1' at Center.", repo.FrmKto.ColKtbzKzRow1Info, new RecordItemIndex(6));
+            repo.FrmKto.ColKtbzKzRow1.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'p' with focus on 'FrmKto.PicTabs.ColKtbzKzRow1'.", repo.FrmKto.PicTabs.ColKtbzKzRow1Info, new RecordItemIndex(7));
-            repo.FrmKto.PicTabs.ColKtbzKzRow1.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'p' with focus on 'FrmKto.ColKtbzKzRow1'.", repo.FrmKto.ColKtbzKzRow1Info, new RecordItemIndex(7));
+            repo.FrmKto.ColKtbzKzRow1.EnsureVisible();
             Keyboard.Press("p");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmKto.PicTabs.ColKtbzKzRow1'.", repo.FrmKto.PicTabs.ColKtbzKzRow1Info, new RecordItemIndex(8));
-            repo.FrmKto.PicTabs.ColKtbzKzRow1.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(8));
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='P') on item 'FrmKto.PicTabs.ColKtbzKzRow1'.", repo.FrmKto.PicTabs.ColKtbzKzRow1Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.FrmKto.PicTabs.ColKtbzKzRow1Info, "Text", "P");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='P') on item 'FrmKto.ColKtbzKzRow1'.", repo.FrmKto.ColKtbzKzRow1Info, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmKto.ColKtbzKzRow1Info, "Text", "P");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PbDataAccessSave' at Center.", repo.FrmKto.PbDataAccessSaveInfo, new RecordItemIndex(10));
             repo.FrmKto.PbDataAccessSave.Click();

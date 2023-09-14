@@ -79,39 +79,37 @@ namespace B_KTO_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.Bereiche' at Center.", repo.FrmKto.PicTabs.BereicheInfo, new RecordItemIndex(0));
-            repo.FrmKto.PicTabs.Bereiche.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Bereiche' at Center.", repo.FrmKto.BereicheInfo, new RecordItemIndex(0));
+            repo.FrmKto.Bereiche.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.Kostenstelle' at Center.", repo.FrmKto.PicTabs.KostenstelleInfo, new RecordItemIndex(1));
-            repo.FrmKto.PicTabs.Kostenstelle.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Kostenstelle' at Center.", repo.FrmKto.KostenstelleInfo, new RecordItemIndex(1));
+            repo.FrmKto.Kostenstelle.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'P' with focus on 'FrmKto.PicTabs.Kostenstelle'.", repo.FrmKto.PicTabs.KostenstelleInfo, new RecordItemIndex(2));
-            repo.FrmKto.PicTabs.Kostenstelle.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'P' with focus on 'FrmKto.Kostenstelle'.", repo.FrmKto.KostenstelleInfo, new RecordItemIndex(2));
+            repo.FrmKto.Kostenstelle.EnsureVisible();
             Keyboard.Press("P");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmKto.PicTabs.Kostenstelle'.", repo.FrmKto.PicTabs.KostenstelleInfo, new RecordItemIndex(3));
-            Keyboard.PrepareFocus(repo.FrmKto.PicTabs.Kostenstelle);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.Kostentraeger' at Center.", repo.FrmKto.PicTabs.KostentraegerInfo, new RecordItemIndex(4));
-            repo.FrmKto.PicTabs.Kostentraeger.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Kostentraeger' at Center.", repo.FrmKto.KostentraegerInfo, new RecordItemIndex(4));
+            repo.FrmKto.Kostentraeger.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'W' with focus on 'FrmKto.PicTabs.Kostentraeger'.", repo.FrmKto.PicTabs.KostentraegerInfo, new RecordItemIndex(5));
-            repo.FrmKto.PicTabs.Kostentraeger.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'W' with focus on 'FrmKto.Kostentraeger'.", repo.FrmKto.KostentraegerInfo, new RecordItemIndex(5));
+            repo.FrmKto.Kostentraeger.EnsureVisible();
             Keyboard.Press("W");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmKto.PicTabs.Kostentraeger'.", repo.FrmKto.PicTabs.KostentraegerInfo, new RecordItemIndex(6));
-            Keyboard.PrepareFocus(repo.FrmKto.PicTabs.Kostentraeger);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Speichern' at Center.", repo.FrmKto.SpeichernInfo, new RecordItemIndex(7));
             repo.FrmKto.Speichern.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='P') on item 'FrmKto.PicTabs.Kostenstelle'.", repo.FrmKto.PicTabs.KostenstelleInfo, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.FrmKto.PicTabs.KostenstelleInfo, "Text", "P");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='P') on item 'FrmKto.Kostenstelle'.", repo.FrmKto.KostenstelleInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.FrmKto.KostenstelleInfo, "Text", "P");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='W') on item 'FrmKto.PicTabs.Kostentraeger'.", repo.FrmKto.PicTabs.KostentraegerInfo, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.FrmKto.PicTabs.KostentraegerInfo, "Text", "W");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='W') on item 'FrmKto.Kostentraeger'.", repo.FrmKto.KostentraegerInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmKto.KostentraegerInfo, "Text", "W");
             
         }
 

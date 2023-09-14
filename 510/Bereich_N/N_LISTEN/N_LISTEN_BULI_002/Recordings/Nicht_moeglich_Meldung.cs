@@ -79,8 +79,8 @@ namespace N_LISTEN_BULI_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(5000), new RecordItemIndex(0));
-            repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(5000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(60000), new RecordItemIndex(0));
+            repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(60000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Verbuchung per 7.2022 nicht möglich.\r\n\r\nEs ist bereits bis Zeitraum 7.2022  abgeschlossen!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Verbuchung per 7.2022 nicht möglich.\r\n\r\nEs ist bereits bis Zeitraum 7.2022  abgeschlossen!");
@@ -88,7 +88,8 @@ namespace N_LISTEN_BULI_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press.", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'.", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new RecordItemIndex(3));
+            Keyboard.PrepareFocus(repo.DlgFibu.TitleBar100AVZUEberleitungFibuMIT);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }

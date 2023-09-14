@@ -18540,26 +18540,15 @@ YCOVOQq9x25NAGisiuWCnJQ4b2OM/wBadWRYzM1wr73aGWTCg8MW8sHLY68A8Vr0AFFFFABRRRQB
 				</robustPath>
 			</info>
 		</mouseitem>
-		<WaitForRecordItem
+		<explicitdelayitem
+		duration="2000ms"
 		enabled="True"
-		optional="False"
-		searchpropertyid="1e42517f-ba71-40ff-b40d-8bd8f4639b2d"
-		waitaction="Exists"
-		waittimeout="180000ms">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="0c8c6237-0a5e-4eaf-bd67-097eb4c9e81d"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
+		</explicitdelayitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -18746,7 +18735,7 @@ YCOVOQq9x25NAGisiuWCnJQ4b2OM/wBadWRYzM1wr73aGWTCg8MW8sHLY68A8Vr0AFFFFABRRRQB
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Bankbeleg_geperrte_OPs_nicht_moeglich.UserCode.cs
+		Bankbeleg_gesperrte_OPs_nicht_moeglich.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

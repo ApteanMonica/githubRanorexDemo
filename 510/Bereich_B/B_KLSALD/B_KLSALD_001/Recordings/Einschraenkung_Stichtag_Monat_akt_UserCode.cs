@@ -108,17 +108,20 @@ namespace B_KLSALD_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKLSL.RbStichtagsliste' at Center.", repo.FrmKLSL.RbStichtagslisteInfo, new RecordItemIndex(0));
             repo.FrmKLSL.RbStichtagsliste.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmKLSL.RbStichtagsliste'.", repo.FrmKLSL.RbStichtagslisteInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmKLSL.RbStichtagsliste_TRUE'", repo.FrmKLSL.RbStichtagsliste_TRUEInfo, new ActionTimeout(60000), new RecordItemIndex(1));
+            repo.FrmKLSL.RbStichtagsliste_TRUEInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmKLSL.RbStichtagsliste'.", repo.FrmKLSL.RbStichtagslisteInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.FrmKLSL.RbStichtagslisteInfo, "Checked", "True");
             
             Jahr_aktuell_yyyy = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimeAsString("yyyy");
             
             Monat_aktuell_M = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimeAsString("M");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Saldenliste per Stichtag: Kunden') on item 'FrmKLSL.TitleBar100SaldenlistePerStichtag'.", repo.FrmKLSL.TitleBar100SaldenlistePerStichtagInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Saldenliste per Stichtag: Kunden') on item 'FrmKLSL.TitleBar100SaldenlistePerStichtag'.", repo.FrmKLSL.TitleBar100SaldenlistePerStichtagInfo, new RecordItemIndex(5));
             Validate.AttributeContains(repo.FrmKLSL.TitleBar100SaldenlistePerStichtagInfo, "Text", "Saldenliste per Stichtag: Kunden");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmKLSL.Einschraenkungen.CbSummeSamk'.", repo.FrmKLSL.Einschraenkungen.CbSummeSamkInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmKLSL.Einschraenkungen.CbSummeSamk'.", repo.FrmKLSL.Einschraenkungen.CbSummeSamkInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.FrmKLSL.Einschraenkungen.CbSummeSamkInfo, "Checked", "True");
             
         }

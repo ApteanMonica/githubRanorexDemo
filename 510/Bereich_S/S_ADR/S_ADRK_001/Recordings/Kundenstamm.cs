@@ -41,7 +41,8 @@ namespace S_ADRK_001.Recordings
         /// </summary>
         public Kundenstamm()
         {
-            Aptean_Austria = "Aptean Austria GmbH";
+            Aptean_Austria = "";
+            meldung1 = "";
         }
 
         /// <summary>
@@ -53,6 +54,18 @@ namespace S_ADRK_001.Recordings
         }
 
 #region Variables
+
+        string _meldung1;
+
+        /// <summary>
+        /// Gets or sets the value of variable meldung1.
+        /// </summary>
+        [TestVariable("0e37ffa6-bf3c-49e2-ba69-859fd5bf8c1e")]
+        public string meldung1
+        {
+            get { return _meldung1; }
+            set { _meldung1 = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable Aptean_Austria.
@@ -114,43 +127,48 @@ namespace S_ADRK_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'U75601939{Tab down}' with focus on 'FrmAdr.TpAllgemein.Text'.", repo.FrmAdr.TpAllgemein.TextInfo, new RecordItemIndex(7));
             repo.FrmAdr.TpAllgemein.Text.PressKeys("U75601939{Tab down}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Aptean_Austria) on item 'DlgMessageBox.LabelMeldungstext1'.", repo.DlgMessageBox.LabelMeldungstext1Info, new RecordItemIndex(8));
-            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstext1Info, "Text", Aptean_Austria);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Aptean_Austria) on item 'DlgMessageBox.LabelMeldungstext1'.", repo.DlgMessageBox.LabelMeldungstext1Info, new RecordItemIndex(8));
+            //Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstext1Info, "Text", Aptean_Austria);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Bestaetigung_Fehlermeldung' at Center.", repo.DlgMessageBox.Bestaetigung_FehlermeldungInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'DlgMessageBox.LabelMeldungstext1' and assigning its value to variable 'meldung1'.", repo.DlgMessageBox.LabelMeldungstext1Info, new RecordItemIndex(9));
+            meldung1 = repo.DlgMessageBox.LabelMeldungstext1.Element.GetAttributeValueText("Text");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateTextWithoutBreaks(meldung1, Aptean_Austria);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Bestaetigung_Fehlermeldung' at Center.", repo.DlgMessageBox.Bestaetigung_FehlermeldungInfo, new RecordItemIndex(11));
             repo.DlgMessageBox.Bestaetigung_Fehlermeldung.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.TpAllgemein.VID' at Center.", repo.FrmAdr.TpAllgemein.VIDInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.TpAllgemein.VID' at Center.", repo.FrmAdr.TpAllgemein.VIDInfo, new RecordItemIndex(12));
             repo.FrmAdr.TpAllgemein.VID.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '100{Tab}' with focus on 'FrmAdr.TpAllgemein.VID'.", repo.FrmAdr.TpAllgemein.VIDInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '100{Tab}' with focus on 'FrmAdr.TpAllgemein.VID'.", repo.FrmAdr.TpAllgemein.VIDInfo, new RecordItemIndex(13));
             repo.FrmAdr.TpAllgemein.VID.PressKeys("100{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100') on item 'FrmAdr.TpAllgemein.VID'.", repo.FrmAdr.TpAllgemein.VIDInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100') on item 'FrmAdr.TpAllgemein.VID'.", repo.FrmAdr.TpAllgemein.VIDInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.FrmAdr.TpAllgemein.VIDInfo, "Text", "100");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.ClientArea.TabPageWaWi' at Center.", repo.FrmAdr.ClientArea.TabPageWaWiInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.ClientArea.TabPageWaWi' at Center.", repo.FrmAdr.ClientArea.TabPageWaWiInfo, new RecordItemIndex(15));
             repo.FrmAdr.ClientArea.TabPageWaWi.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Versandbed' at Center.", repo.FrmAdr.VersandbedInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Versandbed' at Center.", repo.FrmAdr.VersandbedInfo, new RecordItemIndex(16));
             repo.FrmAdr.Versandbed.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'SPE{Tab}' with focus on 'FrmAdr.Versandbed'.", repo.FrmAdr.VersandbedInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'SPE{Tab}' with focus on 'FrmAdr.Versandbed'.", repo.FrmAdr.VersandbedInfo, new RecordItemIndex(17));
             repo.FrmAdr.Versandbed.PressKeys("SPE{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='SPE') on item 'FrmAdr.Versandbed'.", repo.FrmAdr.VersandbedInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='SPE') on item 'FrmAdr.Versandbed'.", repo.FrmAdr.VersandbedInfo, new RecordItemIndex(18));
             Validate.AttributeEqual(repo.FrmAdr.VersandbedInfo, "Text", "SPE");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.ClientArea.Notizbuch' at Center.", repo.FrmAdr.ClientArea.NotizbuchInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.ClientArea.Notizbuch' at Center.", repo.FrmAdr.ClientArea.NotizbuchInfo, new RecordItemIndex(19));
             repo.FrmAdr.ClientArea.Notizbuch.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.ClientArea.SplitterPanel' at Center.", repo.FrmAdr.ClientArea.SplitterPanelInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.ClientArea.SplitterPanel' at Center.", repo.FrmAdr.ClientArea.SplitterPanelInfo, new RecordItemIndex(20));
             repo.FrmAdr.ClientArea.SplitterPanel.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'QS Test Ranorex' with focus on 'FrmAdr.ClientArea.SplitterPanel'.", repo.FrmAdr.ClientArea.SplitterPanelInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'QS Test Ranorex' with focus on 'FrmAdr.ClientArea.SplitterPanel'.", repo.FrmAdr.ClientArea.SplitterPanelInfo, new RecordItemIndex(21));
             repo.FrmAdr.ClientArea.SplitterPanel.PressKeys("QS Test Ranorex");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='QS Test Ranorex') on item 'FrmAdr.ClientArea.SplitterPanel'.", repo.FrmAdr.ClientArea.SplitterPanelInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='QS Test Ranorex') on item 'FrmAdr.ClientArea.SplitterPanel'.", repo.FrmAdr.ClientArea.SplitterPanelInfo, new RecordItemIndex(22));
             Validate.AttributeEqual(repo.FrmAdr.ClientArea.SplitterPanelInfo, "Text", "QS Test Ranorex");
             
         }

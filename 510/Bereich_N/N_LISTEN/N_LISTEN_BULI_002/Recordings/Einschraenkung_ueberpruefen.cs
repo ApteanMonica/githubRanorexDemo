@@ -121,20 +121,20 @@ namespace N_LISTEN_BULI_002.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$GJ) on item 'FrmBuchungsliste.Geschaeftsjahr'.", repo.FrmBuchungsliste.GeschaeftsjahrInfo, new RecordItemIndex(0));
             Validate.AttributeEqual(repo.FrmBuchungsliste.GeschaeftsjahrInfo, "Text", GJ);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBuchungsliste.RbMonat'.", repo.FrmBuchungsliste.RbMonatInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.RbMonat' at Center.", repo.FrmBuchungsliste.RbMonatInfo, new RecordItemIndex(1));
+            repo.FrmBuchungsliste.RbMonat.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBuchungsliste.RbMonat'.", repo.FrmBuchungsliste.RbMonatInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.FrmBuchungsliste.RbMonatInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'FrmBuchungsliste.CmbVariante'.", repo.FrmBuchungsliste.CmbVarianteInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'FrmBuchungsliste.CmbVariante'.", repo.FrmBuchungsliste.CmbVarianteInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.FrmBuchungsliste.CmbVarianteInfo, "Text", "1");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Monat_von) on item 'FrmBuchungsliste.TextVon'.", repo.FrmBuchungsliste.TextVonInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Monat_von) on item 'FrmBuchungsliste.TextVon'.", repo.FrmBuchungsliste.TextVonInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.FrmBuchungsliste.TextVonInfo, "Text", Monat_von);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Monat_bis) on item 'FrmBuchungsliste.TextBis'.", repo.FrmBuchungsliste.TextBisInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Monat_bis) on item 'FrmBuchungsliste.TextBis'.", repo.FrmBuchungsliste.TextBisInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.FrmBuchungsliste.TextBisInfo, "Text", Monat_bis);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbOptionenTabelle' at Center.", repo.FrmBuchungsliste.PbOptionenTabelleInfo, new RecordItemIndex(5));
-            repo.FrmBuchungsliste.PbOptionenTabelle.Click();
             
         }
 

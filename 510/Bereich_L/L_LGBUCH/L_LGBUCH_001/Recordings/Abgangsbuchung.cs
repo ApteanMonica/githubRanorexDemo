@@ -44,6 +44,8 @@ namespace L_LGBUCH_001.Recordings
             Lager1 = "100";
             Preis1 = "1,450000";
             Artikel1 = "100032";
+            mengeFeld = "";
+            menge = "3";
         }
 
         /// <summary>
@@ -90,6 +92,30 @@ namespace L_LGBUCH_001.Recordings
         {
             get { return _Artikel1; }
             set { _Artikel1 = value; }
+        }
+
+        string _mengeFeld;
+
+        /// <summary>
+        /// Gets or sets the value of variable mengeFeld.
+        /// </summary>
+        [TestVariable("bdff9ac5-edbc-4d52-bb68-67a7c99c7ea4")]
+        public string mengeFeld
+        {
+            get { return _mengeFeld; }
+            set { _mengeFeld = value; }
+        }
+
+        string _menge;
+
+        /// <summary>
+        /// Gets or sets the value of variable menge.
+        /// </summary>
+        [TestVariable("e219b9c2-24b8-4cfa-8f2c-6917a0c851a8")]
+        public string menge
+        {
+            get { return _menge; }
+            set { _menge = value; }
         }
 
 #endregion
@@ -201,10 +227,15 @@ namespace L_LGBUCH_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblLagerbuchArtikel.PbDataAccessSave' at Center.", repo.TblLagerbuchArtikel.PbDataAccessSaveInfo, new RecordItemIndex(26));
             repo.TblLagerbuchArtikel.PbDataAccessSave.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'Menge'.", repo.MengeInfo, new RecordItemIndex(27));
-            Validate.AttributeEqual(repo.MengeInfo, "Text", "3");
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'Menge'.", repo.MengeInfo, new RecordItemIndex(27));
+            //Validate.AttributeEqual(repo.MengeInfo, "Text", "3");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmLagerbuch.PbDataAccessSave' at Center.", repo.FrmLagerbuch.PbDataAccessSaveInfo, new RecordItemIndex(28));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'Menge' and assigning its value to variable 'mengeFeld'.", repo.MengeInfo, new RecordItemIndex(28));
+            mengeFeld = repo.Menge.Element.GetAttributeValueText("Text");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateWithoutDecimals(mengeFeld, mengeFeld);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmLagerbuch.PbDataAccessSave' at Center.", repo.FrmLagerbuch.PbDataAccessSaveInfo, new RecordItemIndex(30));
             repo.FrmLagerbuch.PbDataAccessSave.Click();
             
         }

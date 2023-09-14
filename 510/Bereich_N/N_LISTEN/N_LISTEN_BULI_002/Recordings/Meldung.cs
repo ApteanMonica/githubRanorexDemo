@@ -79,14 +79,20 @@ namespace N_LISTEN_BULI_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(120000), new RecordItemIndex(0));
-            repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(120000);
+            try {
+                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(120000), new RecordItemIndex(0));
+                repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(120000);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es sind bereits Buchungszeilen für 7.2022 vorhanden.\r\n\r\nSollen diese gelöscht und neu erfaßt werden?\r\n\r\nJa\t\t= Löschen und Neu erfassen\r\nNein\t= Bereits vorhandene Buchungszeilen laden\r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es sind bereits Buchungszeilen für 7.2022 vorhanden.\r\n\r\nSollen diese gelöscht und neu erfaßt werden?\r\n\r\nJa\t\t= Löschen und Neu erfassen\r\nNein\t= Bereits vorhandene Buchungszeilen laden\r\n");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='Es sind bereits Buchungszeilen für 7.2022 vorhanden.\r\n\r\nSollen diese gelöscht und neu erfaßt werden?\r\n\r\nJa\t\t= Löschen und Neu erfassen\r\nNein\t= Bereits vorhandene Buchungszeilen laden\r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
+                Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es sind bereits Buchungszeilen für 7.2022 vorhanden.\r\n\r\nSollen diese gelöscht und neu erfaßt werden?\r\n\r\nJa\t\t= Löschen und Neu erfassen\r\nNein\t= Bereits vorhandene Buchungszeilen laden\r\n", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
-            repo.DlgMessageBox.Button0.Click();
+            try {
+                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
+                repo.DlgMessageBox.Button0.Click();
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
         }
 

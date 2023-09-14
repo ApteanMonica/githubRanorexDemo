@@ -41,7 +41,6 @@ namespace B_KTO_002.Recordings
         /// </summary>
         public CloseAUT()
         {
-            CloseAutProcessIDVar = "-1";
         }
 
         /// <summary>
@@ -53,18 +52,6 @@ namespace B_KTO_002.Recordings
         }
 
 #region Variables
-
-        string _CloseAutProcessIDVar;
-
-        /// <summary>
-        /// Gets or sets the value of variable CloseAutProcessIDVar.
-        /// </summary>
-        [TestVariable("61f5eea2-651e-4ca4-84c6-8fe49e35040f")]
-        public string CloseAutProcessIDVar
-        {
-            get { return _CloseAutProcessIDVar; }
-            set { _CloseAutProcessIDVar = value; }
-        }
 
 #endregion
 

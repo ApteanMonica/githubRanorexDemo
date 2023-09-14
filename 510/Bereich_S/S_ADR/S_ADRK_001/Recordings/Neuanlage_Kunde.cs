@@ -46,6 +46,7 @@ namespace S_ADRK_001.Recordings
             Strasse = "Dorfstraße 67";
             PLZ = "5020";
             Ort = "Salzburg";
+            meldung1 = "";
         }
 
         /// <summary>
@@ -116,6 +117,18 @@ namespace S_ADRK_001.Recordings
         {
             get { return _Ort; }
             set { _Ort = value; }
+        }
+
+        string _meldung1;
+
+        /// <summary>
+        /// Gets or sets the value of variable meldung1.
+        /// </summary>
+        [TestVariable("6093b6b1-fb01-497b-a1ac-11bcbb819d33")]
+        public string meldung1
+        {
+            get { return _meldung1; }
+            set { _meldung1 = value; }
         }
 
 #endregion
@@ -192,19 +205,23 @@ namespace S_ADRK_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Speicher_Button' at Center.", repo.FrmAdr.Speicher_ButtonInfo, new RecordItemIndex(15));
             repo.FrmAdr.Speicher_Button.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bitte Kundennummer eingeben !') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(16));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Bitte Kundennummer eingeben !");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'DlgMessageBox.LabelMeldungstext1' and assigning its value to variable 'meldung1'.", repo.DlgMessageBox.LabelMeldungstext1Info, new RecordItemIndex(16));
+            meldung1 = repo.DlgMessageBox.LabelMeldungstext1.Element.GetAttributeValueText("Text");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Bestaetigung_Fehlermeldung' at Center.", repo.DlgMessageBox.Bestaetigung_FehlermeldungInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "User", meldung1, new RecordItemIndex(17));
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateTextWithoutBreaks(meldung1, "Bitte Kundennummer eingeben !");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Bestaetigung_Fehlermeldung' at Center.", repo.DlgMessageBox.Bestaetigung_FehlermeldungInfo, new RecordItemIndex(19));
             repo.DlgMessageBox.Bestaetigung_Fehlermeldung.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Nummer_Button' at Center.", repo.FrmAdr.Nummer_ButtonInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Nummer_Button' at Center.", repo.FrmAdr.Nummer_ButtonInfo, new RecordItemIndex(20));
             repo.FrmAdr.Nummer_Button.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'\\d{6}') on item 'FrmAdr.ClientArea.DfAdrNr'.", repo.FrmAdr.ClientArea.DfAdrNrInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'\\d{6}') on item 'FrmAdr.ClientArea.DfAdrNr'.", repo.FrmAdr.ClientArea.DfAdrNrInfo, new RecordItemIndex(21));
             Validate.AttributeRegex(repo.FrmAdr.ClientArea.DfAdrNrInfo, "Text", new Regex("\\d{6}"));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Speicher_Button' at Center.", repo.FrmAdr.Speicher_ButtonInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Speicher_Button' at Center.", repo.FrmAdr.Speicher_ButtonInfo, new RecordItemIndex(22));
             repo.FrmAdr.Speicher_Button.Click();
             
         }

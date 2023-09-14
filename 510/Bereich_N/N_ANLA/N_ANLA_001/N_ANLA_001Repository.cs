@@ -815,6 +815,8 @@ namespace N_ANLA_001
             RepoItemInfo _colanlanrrow3Info;
             RepoItemInfo _pbdataaccesssaveInfo;
             RepoItemInfo _colanweahkbetragrow1Info;
+            RepoItemInfo _flexgridInfo;
+            RepoItemInfo _schliessenInfo;
 
             /// <summary>
             /// Creates a new FrmZuauf  folder.
@@ -830,6 +832,8 @@ namespace N_ANLA_001
                 _colanlanrrow3Info = new RepoItemInfo(this, "ColAnlaNrRow3", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tp1']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAnla_nr Row 3']", "", 30000, null, "d046f2c9-4a28-4061-82f9-6e963dc04078");
                 _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Save']", "", 30000, null, "bb45f6d0-6d69-4d1e-81e0-59ba22709e63");
                 _colanweahkbetragrow1Info = new RepoItemInfo(this, "ColAnweAhkbetragRow1", "?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tp1']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAnwe_ahkbetrag Row 1']", "", 30000, null, "9658a586-bea9-4c11-bb03-17c9eb25618f");
+                _flexgridInfo = new RepoItemInfo(this, "FlexGrid", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tp1']/container[@controlname='tbl1']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", "", 30000, null, "33c74170-51c4-4266-a6d8-2c2610136570");
+                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "245b92c7-75ce-4851-a269-3f80358fda3e");
             }
 
             /// <summary>
@@ -1045,6 +1049,54 @@ namespace N_ANLA_001
                 get
                 {
                     return _colanweahkbetragrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The FlexGrid item.
+            /// </summary>
+            [RepositoryItem("33c74170-51c4-4266-a6d8-2c2610136570")]
+            public virtual Ranorex.Table FlexGrid
+            {
+                get
+                {
+                    return _flexgridInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FlexGrid item info.
+            /// </summary>
+            [RepositoryItemInfo("33c74170-51c4-4266-a6d8-2c2610136570")]
+            public virtual RepoItemInfo FlexGridInfo
+            {
+                get
+                {
+                    return _flexgridInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item.
+            /// </summary>
+            [RepositoryItem("245b92c7-75ce-4851-a269-3f80358fda3e")]
+            public virtual Ranorex.Button Schliessen
+            {
+                get
+                {
+                    return _schliessenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item info.
+            /// </summary>
+            [RepositoryItemInfo("245b92c7-75ce-4851-a269-3f80358fda3e")]
+            public virtual RepoItemInfo SchliessenInfo
+            {
+                get
+                {
+                    return _schliessenInfo;
                 }
             }
         }

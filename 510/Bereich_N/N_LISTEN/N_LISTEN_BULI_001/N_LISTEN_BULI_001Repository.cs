@@ -153,6 +153,7 @@ namespace N_LISTEN_BULI_001
         public partial class FrmBuchungslisteAppFolder : RepoGenBaseFolder
         {
             N_LISTEN_BULI_001RepositoryFolders.FlexGridFolder _flexgrid;
+            N_LISTEN_BULI_001RepositoryFolders.Frame2Folder _frame2;
             RepoItemInfo _titlebar100avzauswertungenbuchungsInfo;
             RepoItemInfo _pbueberleitungfibuInfo;
             RepoItemInfo _pboptionentabelleInfo;
@@ -174,6 +175,7 @@ namespace N_LISTEN_BULI_001
                     base("FrmBuchungsliste", "/form[@controlname='frmBuchungsliste']", parentFolder, 30000, null, true, "bf8865cc-4e64-4a5f-b33d-b4463215e418", "")
             {
                 _flexgrid = new N_LISTEN_BULI_001RepositoryFolders.FlexGridFolder(this);
+                _frame2 = new N_LISTEN_BULI_001RepositoryFolders.Frame2Folder(this);
                 _titlebar100avzauswertungenbuchungsInfo = new RepoItemInfo(this, "TitleBar100AVZAuswertungenBuchungs", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "9c9f1d4c-9598-4eb9-9fd8-93359397ee0b");
                 _pbueberleitungfibuInfo = new RepoItemInfo(this, "PbUEberleitungFibu", "container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup5']/button[@controlname='pbÜberleitung_Fibu']", "", 30000, null, "b7b667d7-ab4c-4e7c-9bb7-5de4952303ec");
                 _pboptionentabelleInfo = new RepoItemInfo(this, "PbOptionenTabelle", "?/?/container[@controlname='cRibbonGroup4']/button[@controlname='pbOptionen_Tabelle']", "", 30000, null, "02dccef5-abfb-445e-986d-44e3a88ea1b8");
@@ -533,6 +535,15 @@ namespace N_LISTEN_BULI_001
             {
                 get { return _flexgrid; }
             }
+
+            /// <summary>
+            /// The Frame2 folder.
+            /// </summary>
+            [RepositoryFolder("108f8bae-998c-4088-b5b6-2a966accf4a5")]
+            public virtual N_LISTEN_BULI_001RepositoryFolders.Frame2Folder Frame2
+            {
+                get { return _frame2; }
+            }
         }
 
         /// <summary>
@@ -836,6 +847,150 @@ namespace N_LISTEN_BULI_001
         }
 
         /// <summary>
+        /// The Frame2Folder folder.
+        /// </summary>
+        [RepositoryFolder("108f8bae-998c-4088-b5b6-2a966accf4a5")]
+        public partial class Frame2Folder : RepoGenBaseFolder
+        {
+            RepoItemInfo _cbber1Info;
+            RepoItemInfo _cbber2Info;
+            RepoItemInfo _cbber3Info;
+            RepoItemInfo _cbber4Info;
+
+            /// <summary>
+            /// Creates a new Frame2  folder.
+            /// </summary>
+            public Frame2Folder(RepoGenBaseFolder parentFolder) :
+                    base("Frame2", "container[@controlname='ClientArea']/container[@controlname='frame2']", parentFolder, 30000, null, false, "108f8bae-998c-4088-b5b6-2a966accf4a5", "")
+            {
+                _cbber1Info = new RepoItemInfo(this, "CbBer1", "checkbox[@controlname='cbBer1']", "", 30000, null, "de1eded2-3232-4795-a060-4de2c6cc6e9f");
+                _cbber2Info = new RepoItemInfo(this, "CbBer2", "checkbox[@controlname='cbBer2']", "", 30000, null, "c50e9448-dfe2-497c-8041-4be5346bf6ad");
+                _cbber3Info = new RepoItemInfo(this, "CbBer3", "checkbox[@controlname='cbBer3']", "", 30000, null, "ff8a55ca-4f25-49be-a8e6-fb1a7965f694");
+                _cbber4Info = new RepoItemInfo(this, "CbBer4", "checkbox[@controlname='cbBer4']", "", 30000, null, "aa7abb18-0352-4805-a1fa-d4412d863924");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("108f8bae-998c-4088-b5b6-2a966accf4a5")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("108f8bae-998c-4088-b5b6-2a966accf4a5")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CbBer1 item.
+            /// </summary>
+            [RepositoryItem("de1eded2-3232-4795-a060-4de2c6cc6e9f")]
+            public virtual Ranorex.CheckBox CbBer1
+            {
+                get
+                {
+                    return _cbber1Info.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CbBer1 item info.
+            /// </summary>
+            [RepositoryItemInfo("de1eded2-3232-4795-a060-4de2c6cc6e9f")]
+            public virtual RepoItemInfo CbBer1Info
+            {
+                get
+                {
+                    return _cbber1Info;
+                }
+            }
+
+            /// <summary>
+            /// The CbBer2 item.
+            /// </summary>
+            [RepositoryItem("c50e9448-dfe2-497c-8041-4be5346bf6ad")]
+            public virtual Ranorex.CheckBox CbBer2
+            {
+                get
+                {
+                    return _cbber2Info.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CbBer2 item info.
+            /// </summary>
+            [RepositoryItemInfo("c50e9448-dfe2-497c-8041-4be5346bf6ad")]
+            public virtual RepoItemInfo CbBer2Info
+            {
+                get
+                {
+                    return _cbber2Info;
+                }
+            }
+
+            /// <summary>
+            /// The CbBer3 item.
+            /// </summary>
+            [RepositoryItem("ff8a55ca-4f25-49be-a8e6-fb1a7965f694")]
+            public virtual Ranorex.CheckBox CbBer3
+            {
+                get
+                {
+                    return _cbber3Info.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CbBer3 item info.
+            /// </summary>
+            [RepositoryItemInfo("ff8a55ca-4f25-49be-a8e6-fb1a7965f694")]
+            public virtual RepoItemInfo CbBer3Info
+            {
+                get
+                {
+                    return _cbber3Info;
+                }
+            }
+
+            /// <summary>
+            /// The CbBer4 item.
+            /// </summary>
+            [RepositoryItem("aa7abb18-0352-4805-a1fa-d4412d863924")]
+            public virtual Ranorex.CheckBox CbBer4
+            {
+                get
+                {
+                    return _cbber4Info.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CbBer4 item info.
+            /// </summary>
+            [RepositoryItemInfo("aa7abb18-0352-4805-a1fa-d4412d863924")]
+            public virtual RepoItemInfo CbBer4Info
+            {
+                get
+                {
+                    return _cbber4Info;
+                }
+            }
+        }
+
+        /// <summary>
         /// The DlgMessageBoxAppFolder folder.
         /// </summary>
         [RepositoryFolder("29a24d74-75bd-4e58-805e-b8abd7352563")]
@@ -985,7 +1140,7 @@ namespace N_LISTEN_BULI_001
         [RepositoryFolder("9f807c1f-930b-4e8b-bcdb-89cec369dbdb")]
         public partial class DlgFibuAppFolder : RepoGenBaseFolder
         {
-            N_LISTEN_BULI_001RepositoryFolders.Frame2Folder _frame2;
+            N_LISTEN_BULI_001RepositoryFolders.Frame2Folder1 _frame2;
             RepoItemInfo _titlebar100avzueberleitungfibumitInfo;
             RepoItemInfo _pbstartInfo;
 
@@ -995,7 +1150,7 @@ namespace N_LISTEN_BULI_001
             public DlgFibuAppFolder(RepoGenBaseFolder parentFolder) :
                     base("DlgFibu", "/form[@controlname='dlgFibu']", parentFolder, 30000, null, true, "9f807c1f-930b-4e8b-bcdb-89cec369dbdb", "")
             {
-                _frame2 = new N_LISTEN_BULI_001RepositoryFolders.Frame2Folder(this);
+                _frame2 = new N_LISTEN_BULI_001RepositoryFolders.Frame2Folder1(this);
                 _titlebar100avzueberleitungfibumitInfo = new RepoItemInfo(this, "TitleBar100AVZUEberleitungFibuMIT", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "431d86a4-c1de-4727-8965-aaac68ae1f6d");
                 _pbstartInfo = new RepoItemInfo(this, "PbStart", "button[@controlname='pbStart']", "", 30000, null, "dfd7f986-2f28-4f84-bad8-f6d55a21e4b1");
             }
@@ -1076,17 +1231,17 @@ namespace N_LISTEN_BULI_001
             /// The Frame2 folder.
             /// </summary>
             [RepositoryFolder("dadbaace-9842-4791-a6bb-acc1c6b8230c")]
-            public virtual N_LISTEN_BULI_001RepositoryFolders.Frame2Folder Frame2
+            public virtual N_LISTEN_BULI_001RepositoryFolders.Frame2Folder1 Frame2
             {
                 get { return _frame2; }
             }
         }
 
         /// <summary>
-        /// The Frame2Folder folder.
+        /// The Frame2Folder1 folder.
         /// </summary>
         [RepositoryFolder("dadbaace-9842-4791-a6bb-acc1c6b8230c")]
-        public partial class Frame2Folder : RepoGenBaseFolder
+        public partial class Frame2Folder1 : RepoGenBaseFolder
         {
             RepoItemInfo _belegdatumInfo;
             RepoItemInfo _belegnrInfo;
@@ -1098,7 +1253,7 @@ namespace N_LISTEN_BULI_001
             /// <summary>
             /// Creates a new Frame2  folder.
             /// </summary>
-            public Frame2Folder(RepoGenBaseFolder parentFolder) :
+            public Frame2Folder1(RepoGenBaseFolder parentFolder) :
                     base("Frame2", "container[@controlname='frame2']", parentFolder, 30000, null, false, "dadbaace-9842-4791-a6bb-acc1c6b8230c", "")
             {
                 _belegdatumInfo = new RepoItemInfo(this, "BelegDatum", "?/?/text[@accessiblename='Beleg Datum']", "", 30000, null, "4d41fd1b-3b46-42d1-b3e8-3cf2e64f4010");

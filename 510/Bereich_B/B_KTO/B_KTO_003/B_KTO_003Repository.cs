@@ -107,15 +107,20 @@ namespace B_KTO_003
         [RepositoryFolder("6f2cb1a4-5471-4340-a15b-ed53ffe45262")]
         public partial class FrmKtoAppFolder : RepoGenBaseFolder
         {
-            B_KTO_003RepositoryFolders.FrmSearchPageFolder _frmsearchpage;
-            B_KTO_003RepositoryFolders.PicTabsFolder _pictabs;
+            RepoItemInfo _textInfo;
+            RepoItemInfo _row1column0Info;
             RepoItemInfo _titlebar100sachkontenverwaltenInfo;
-            RepoItemInfo _button_kopierenInfo;
+            RepoItemInfo _pbtoolbaritemskopierenInfo;
             RepoItemInfo _rbaktivInfo;
-            RepoItemInfo _waehrungInfo;
             RepoItemInfo _kontoInfo;
             RepoItemInfo _bezeichnungInfo;
-            RepoItemInfo _dfktonrInfo;
+            RepoItemInfo _waehrungInfo;
+            RepoItemInfo _tabpageallgemeinInfo;
+            RepoItemInfo _verwendungInfo;
+            RepoItemInfo _tabpagegruppenInfo;
+            RepoItemInfo _colktgrcdrow1Info;
+            RepoItemInfo _bereicheInfo;
+            RepoItemInfo _bereiche_pflichtigkeitInfo;
 
             /// <summary>
             /// Creates a new FrmKto  folder.
@@ -123,15 +128,20 @@ namespace B_KTO_003
             public FrmKtoAppFolder(RepoGenBaseFolder parentFolder) :
                     base("FrmKto", "/form[@controlname='frmKto']", parentFolder, 30000, null, true, "6f2cb1a4-5471-4340-a15b-ed53ffe45262", "")
             {
-                _frmsearchpage = new B_KTO_003RepositoryFolders.FrmSearchPageFolder(this);
-                _pictabs = new B_KTO_003RepositoryFolders.PicTabsFolder(this);
+                _textInfo = new RepoItemInfo(this, "Text", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/text[@controlname='dfSearchExpression']/text[@accessiblerole='Text']", "", 30000, null, "8dc2bfac-3c66-4422-9434-837c0c0a0e58");
+                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "3779bd40-52a2-4dea-92c8-2e89f7d45f67");
                 _titlebar100sachkontenverwaltenInfo = new RepoItemInfo(this, "TitleBar100SachkontenVerwalten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "8dfd4e03-e0d0-4992-a8bd-f15550770448");
-                _button_kopierenInfo = new RepoItemInfo(this, "Button_Kopieren", "?/?/container[@controlname='ShareGroup']/button[@controlname='pbToolBarItems_Kopieren']", "", 30000, null, "d7ae292e-0823-4ddb-8f31-48816831777b");
-                _rbaktivInfo = new RepoItemInfo(this, "RbAktiv", "?/?/container[@controlname='groupBox1']/radiobutton[@controlname='rbAktiv']", "", 30000, null, "6135c5e7-5dd4-4240-9f37-375bb4e70f73");
-                _waehrungInfo = new RepoItemInfo(this, "Waehrung", "container[@controlname='ClientArea']/?/?/text[@accessiblename='Währung']", "", 30000, null, "fe6d3546-0fc0-454a-872c-953fe5d08687");
-                _kontoInfo = new RepoItemInfo(this, "Konto", "container[@controlname='ClientArea']/?/?/text[@accessiblename='Konto']", "", 30000, null, "1b3e695a-c3ad-472c-a002-2b7b1d504760");
-                _bezeichnungInfo = new RepoItemInfo(this, "Bezeichnung", "container[@controlname='ClientArea']/?/?/text[@accessiblename='Bezeichnung']", "", 30000, null, "fc606dab-b191-46e0-84d4-e5b973d05517");
-                _dfktonrInfo = new RepoItemInfo(this, "DfKtoNr", "?/?/text[@controlname='dfKto_nr']", "", 30000, null, "0bcadf06-bd9f-4ccc-9357-571a51b67daf");
+                _pbtoolbaritemskopierenInfo = new RepoItemInfo(this, "PbToolBarItemsKopieren", "container[@controlname='RibbonBar']/container[@controlname='ShareGroup']/button[@controlname='pbToolBarItems_Kopieren']", "", 30000, null, "2cc5e535-f795-43bd-90a5-c61462eaccc8");
+                _rbaktivInfo = new RepoItemInfo(this, "RbAktiv", "container[@controlname='ClientArea']/container[@controlname='groupBox1']/radiobutton[@controlname='rbAktiv']", "", 30000, null, "55611e06-64b3-4258-960f-e972b6f8bf61");
+                _kontoInfo = new RepoItemInfo(this, "Konto", "container[@controlname='ClientArea']/text[@controlname='dfKto_nr']/text[@accessiblename='Konto']", "", 30000, null, "928b039c-314e-444a-b454-17926e640114");
+                _bezeichnungInfo = new RepoItemInfo(this, "Bezeichnung", "container[@controlname='ClientArea']/text[@controlname='dfKto_bez1']/text[@accessiblename='Bezeichnung']", "", 30000, null, "fc606dab-b191-46e0-84d4-e5b973d05517");
+                _waehrungInfo = new RepoItemInfo(this, "Waehrung", "container[@controlname='ClientArea']/text[@controlname='dfWrg_cd']/text[@accessiblename='Währung']", "", 30000, null, "077c9b0a-ba7e-4001-b751-91312d487e88");
+                _tabpageallgemeinInfo = new RepoItemInfo(this, "TabPageAllgemein", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&Allgemein']", "", 30000, null, "40513e80-5b96-44ad-8f93-b824d20a29bc");
+                _verwendungInfo = new RepoItemInfo(this, "Verwendung", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgemein']/?/?/text[@accessiblename='Verwendung']", "", 30000, null, "a23a756d-bc1e-45e0-bc04-feba9d5deaa9");
+                _tabpagegruppenInfo = new RepoItemInfo(this, "TabPageGruppen", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&Gruppen']", "", 30000, null, "6f36a84e-89a3-4121-b8bd-03f826b03804");
+                _colktgrcdrow1Info = new RepoItemInfo(this, "ColKtgrCdRow1", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpGruppen']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKtgr_cd Row 1']", "", 30000, null, "4bcce6cf-3279-407f-964f-f75e623fd873");
+                _bereicheInfo = new RepoItemInfo(this, "Bereiche", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='Be&reiche']", "", 30000, null, "77b03917-3de1-4ad8-b195-8284b01af748");
+                _bereiche_pflichtigkeitInfo = new RepoItemInfo(this, "Bereiche_Pflichtigkeit", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKtbz_kz Row 1']", "", 30000, null, "bc79dac4-36ae-44f4-aa80-578676f1aee6");
             }
 
             /// <summary>
@@ -155,6 +165,54 @@ namespace B_KTO_003
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text item.
+            /// </summary>
+            [RepositoryItem("8dc2bfac-3c66-4422-9434-837c0c0a0e58")]
+            public virtual Ranorex.Text Text
+            {
+                get
+                {
+                    return _textInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text item info.
+            /// </summary>
+            [RepositoryItemInfo("8dc2bfac-3c66-4422-9434-837c0c0a0e58")]
+            public virtual RepoItemInfo TextInfo
+            {
+                get
+                {
+                    return _textInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item.
+            /// </summary>
+            [RepositoryItem("3779bd40-52a2-4dea-92c8-2e89f7d45f67")]
+            public virtual Ranorex.Cell Row1Column0
+            {
+                get
+                {
+                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("3779bd40-52a2-4dea-92c8-2e89f7d45f67")]
+            public virtual RepoItemInfo Row1Column0Info
+            {
+                get
+                {
+                    return _row1column0Info;
                 }
             }
 
@@ -183,33 +241,33 @@ namespace B_KTO_003
             }
 
             /// <summary>
-            /// The Button_Kopieren item.
+            /// The PbToolBarItemsKopieren item.
             /// </summary>
-            [RepositoryItem("d7ae292e-0823-4ddb-8f31-48816831777b")]
-            public virtual Ranorex.Button Button_Kopieren
+            [RepositoryItem("2cc5e535-f795-43bd-90a5-c61462eaccc8")]
+            public virtual Ranorex.Button PbToolBarItemsKopieren
             {
                 get
                 {
-                    return _button_kopierenInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _pbtoolbaritemskopierenInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The Button_Kopieren item info.
+            /// The PbToolBarItemsKopieren item info.
             /// </summary>
-            [RepositoryItemInfo("d7ae292e-0823-4ddb-8f31-48816831777b")]
-            public virtual RepoItemInfo Button_KopierenInfo
+            [RepositoryItemInfo("2cc5e535-f795-43bd-90a5-c61462eaccc8")]
+            public virtual RepoItemInfo PbToolBarItemsKopierenInfo
             {
                 get
                 {
-                    return _button_kopierenInfo;
+                    return _pbtoolbaritemskopierenInfo;
                 }
             }
 
             /// <summary>
             /// The RbAktiv item.
             /// </summary>
-            [RepositoryItem("6135c5e7-5dd4-4240-9f37-375bb4e70f73")]
+            [RepositoryItem("55611e06-64b3-4258-960f-e972b6f8bf61")]
             public virtual Ranorex.RadioButton RbAktiv
             {
                 get
@@ -221,7 +279,7 @@ namespace B_KTO_003
             /// <summary>
             /// The RbAktiv item info.
             /// </summary>
-            [RepositoryItemInfo("6135c5e7-5dd4-4240-9f37-375bb4e70f73")]
+            [RepositoryItemInfo("55611e06-64b3-4258-960f-e972b6f8bf61")]
             public virtual RepoItemInfo RbAktivInfo
             {
                 get
@@ -231,33 +289,9 @@ namespace B_KTO_003
             }
 
             /// <summary>
-            /// The Waehrung item.
-            /// </summary>
-            [RepositoryItem("fe6d3546-0fc0-454a-872c-953fe5d08687")]
-            public virtual Ranorex.Text Waehrung
-            {
-                get
-                {
-                    return _waehrungInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Waehrung item info.
-            /// </summary>
-            [RepositoryItemInfo("fe6d3546-0fc0-454a-872c-953fe5d08687")]
-            public virtual RepoItemInfo WaehrungInfo
-            {
-                get
-                {
-                    return _waehrungInfo;
-                }
-            }
-
-            /// <summary>
             /// The Konto item.
             /// </summary>
-            [RepositoryItem("1b3e695a-c3ad-472c-a002-2b7b1d504760")]
+            [RepositoryItem("928b039c-314e-444a-b454-17926e640114")]
             public virtual Ranorex.Text Konto
             {
                 get
@@ -269,7 +303,7 @@ namespace B_KTO_003
             /// <summary>
             /// The Konto item info.
             /// </summary>
-            [RepositoryItemInfo("1b3e695a-c3ad-472c-a002-2b7b1d504760")]
+            [RepositoryItemInfo("928b039c-314e-444a-b454-17926e640114")]
             public virtual RepoItemInfo KontoInfo
             {
                 get
@@ -303,284 +337,26 @@ namespace B_KTO_003
             }
 
             /// <summary>
-            /// The DfKtoNr item.
+            /// The Waehrung item.
             /// </summary>
-            [RepositoryItem("0bcadf06-bd9f-4ccc-9357-571a51b67daf")]
-            public virtual Ranorex.Text DfKtoNr
+            [RepositoryItem("077c9b0a-ba7e-4001-b751-91312d487e88")]
+            public virtual Ranorex.Text Waehrung
             {
                 get
                 {
-                    return _dfktonrInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _waehrungInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The DfKtoNr item info.
+            /// The Waehrung item info.
             /// </summary>
-            [RepositoryItemInfo("0bcadf06-bd9f-4ccc-9357-571a51b67daf")]
-            public virtual RepoItemInfo DfKtoNrInfo
+            [RepositoryItemInfo("077c9b0a-ba7e-4001-b751-91312d487e88")]
+            public virtual RepoItemInfo WaehrungInfo
             {
                 get
                 {
-                    return _dfktonrInfo;
-                }
-            }
-
-            /// <summary>
-            /// The FrmSearchPage folder.
-            /// </summary>
-            [RepositoryFolder("f7154d3b-627d-4a47-93eb-ad34e7e07506")]
-            public virtual B_KTO_003RepositoryFolders.FrmSearchPageFolder FrmSearchPage
-            {
-                get { return _frmsearchpage; }
-            }
-
-            /// <summary>
-            /// The PicTabs folder.
-            /// </summary>
-            [RepositoryFolder("3aea6f8b-e6e0-46ad-a801-7b18846c47eb")]
-            public virtual B_KTO_003RepositoryFolders.PicTabsFolder PicTabs
-            {
-                get { return _pictabs; }
-            }
-        }
-
-        /// <summary>
-        /// The FrmSearchPageFolder folder.
-        /// </summary>
-        [RepositoryFolder("f7154d3b-627d-4a47-93eb-ad34e7e07506")]
-        public partial class FrmSearchPageFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _suchtext_eingabeInfo;
-            RepoItemInfo _row1column0Info;
-
-            /// <summary>
-            /// Creates a new FrmSearchPage  folder.
-            /// </summary>
-            public FrmSearchPageFolder(RepoGenBaseFolder parentFolder) :
-                    base("FrmSearchPage", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']", parentFolder, 30000, null, false, "f7154d3b-627d-4a47-93eb-ad34e7e07506", "")
-            {
-                _suchtext_eingabeInfo = new RepoItemInfo(this, "Suchtext_Eingabe", "?/?/container[@controlname='SearchGroup1']//text[@accessiblerole='Text']", "", 30000, null, "a1bb148c-d764-4126-a555-156e3c9e272a");
-                _row1column0Info = new RepoItemInfo(this, "Row1Column0", ".//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "52edd4d7-64e3-40de-81b6-bd952e6610a9");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("f7154d3b-627d-4a47-93eb-ad34e7e07506")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("f7154d3b-627d-4a47-93eb-ad34e7e07506")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Suchtext_Eingabe item.
-            /// </summary>
-            [RepositoryItem("a1bb148c-d764-4126-a555-156e3c9e272a")]
-            public virtual Ranorex.Text Suchtext_Eingabe
-            {
-                get
-                {
-                    return _suchtext_eingabeInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Suchtext_Eingabe item info.
-            /// </summary>
-            [RepositoryItemInfo("a1bb148c-d764-4126-a555-156e3c9e272a")]
-            public virtual RepoItemInfo Suchtext_EingabeInfo
-            {
-                get
-                {
-                    return _suchtext_eingabeInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Row1Column0 item.
-            /// </summary>
-            [RepositoryItem("52edd4d7-64e3-40de-81b6-bd952e6610a9")]
-            public virtual Ranorex.Cell Row1Column0
-            {
-                get
-                {
-                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Row1Column0 item info.
-            /// </summary>
-            [RepositoryItemInfo("52edd4d7-64e3-40de-81b6-bd952e6610a9")]
-            public virtual RepoItemInfo Row1Column0Info
-            {
-                get
-                {
-                    return _row1column0Info;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The PicTabsFolder folder.
-        /// </summary>
-        [RepositoryFolder("3aea6f8b-e6e0-46ad-a801-7b18846c47eb")]
-        public partial class PicTabsFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _bereicheInfo;
-            RepoItemInfo _verwendungInfo;
-            RepoItemInfo _bereiche_pflichtigkeitInfo;
-            RepoItemInfo _colktgrcdrow1Info;
-            RepoItemInfo _tabpageallgemeinInfo;
-            RepoItemInfo _tabpagegruppenInfo;
-
-            /// <summary>
-            /// Creates a new PicTabs  folder.
-            /// </summary>
-            public PicTabsFolder(RepoGenBaseFolder parentFolder) :
-                    base("PicTabs", "?/?/tabpagelist[@controlname='picTabs']", parentFolder, 30000, null, false, "3aea6f8b-e6e0-46ad-a801-7b18846c47eb", "")
-            {
-                _bereicheInfo = new RepoItemInfo(this, "Bereiche", "tabpage[@accessiblename='Be&reiche']", "", 30000, null, "77b03917-3de1-4ad8-b195-8284b01af748");
-                _verwendungInfo = new RepoItemInfo(this, "Verwendung", "tabpage[@controlname='tpAllgemein']/?/?/text[@accessiblename='Verwendung']", "", 30000, null, "a23a756d-bc1e-45e0-bc04-feba9d5deaa9");
-                _bereiche_pflichtigkeitInfo = new RepoItemInfo(this, "Bereiche_Pflichtigkeit", "tabpage[@controlname='tpBereiche']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKtbz_kz Row 1']", "", 30000, null, "bc79dac4-36ae-44f4-aa80-578676f1aee6");
-                _colktgrcdrow1Info = new RepoItemInfo(this, "ColKtgrCdRow1", "tabpage[@controlname='tpGruppen']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKtgr_cd Row 1']", "", 30000, null, "4bcce6cf-3279-407f-964f-f75e623fd873");
-                _tabpageallgemeinInfo = new RepoItemInfo(this, "TabPageAllgemein", "tabpage[@accessiblename='&Allgemein']", "", 30000, null, "40513e80-5b96-44ad-8f93-b824d20a29bc");
-                _tabpagegruppenInfo = new RepoItemInfo(this, "TabPageGruppen", "tabpage[@accessiblename='&Gruppen']", "", 30000, null, "6f36a84e-89a3-4121-b8bd-03f826b03804");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("3aea6f8b-e6e0-46ad-a801-7b18846c47eb")]
-            public virtual Ranorex.TabPageList Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.TabPageList>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("3aea6f8b-e6e0-46ad-a801-7b18846c47eb")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Bereiche item.
-            /// </summary>
-            [RepositoryItem("77b03917-3de1-4ad8-b195-8284b01af748")]
-            public virtual Ranorex.TabPage Bereiche
-            {
-                get
-                {
-                    return _bereicheInfo.CreateAdapter<Ranorex.TabPage>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Bereiche item info.
-            /// </summary>
-            [RepositoryItemInfo("77b03917-3de1-4ad8-b195-8284b01af748")]
-            public virtual RepoItemInfo BereicheInfo
-            {
-                get
-                {
-                    return _bereicheInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Verwendung item.
-            /// </summary>
-            [RepositoryItem("a23a756d-bc1e-45e0-bc04-feba9d5deaa9")]
-            public virtual Ranorex.Text Verwendung
-            {
-                get
-                {
-                    return _verwendungInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Verwendung item info.
-            /// </summary>
-            [RepositoryItemInfo("a23a756d-bc1e-45e0-bc04-feba9d5deaa9")]
-            public virtual RepoItemInfo VerwendungInfo
-            {
-                get
-                {
-                    return _verwendungInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Bereiche_Pflichtigkeit item.
-            /// </summary>
-            [RepositoryItem("bc79dac4-36ae-44f4-aa80-578676f1aee6")]
-            public virtual Ranorex.Cell Bereiche_Pflichtigkeit
-            {
-                get
-                {
-                    return _bereiche_pflichtigkeitInfo.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Bereiche_Pflichtigkeit item info.
-            /// </summary>
-            [RepositoryItemInfo("bc79dac4-36ae-44f4-aa80-578676f1aee6")]
-            public virtual RepoItemInfo Bereiche_PflichtigkeitInfo
-            {
-                get
-                {
-                    return _bereiche_pflichtigkeitInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ColKtgrCdRow1 item.
-            /// </summary>
-            [RepositoryItem("4bcce6cf-3279-407f-964f-f75e623fd873")]
-            public virtual Ranorex.Cell ColKtgrCdRow1
-            {
-                get
-                {
-                    return _colktgrcdrow1Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColKtgrCdRow1 item info.
-            /// </summary>
-            [RepositoryItemInfo("4bcce6cf-3279-407f-964f-f75e623fd873")]
-            public virtual RepoItemInfo ColKtgrCdRow1Info
-            {
-                get
-                {
-                    return _colktgrcdrow1Info;
+                    return _waehrungInfo;
                 }
             }
 
@@ -609,6 +385,30 @@ namespace B_KTO_003
             }
 
             /// <summary>
+            /// The Verwendung item.
+            /// </summary>
+            [RepositoryItem("a23a756d-bc1e-45e0-bc04-feba9d5deaa9")]
+            public virtual Ranorex.Text Verwendung
+            {
+                get
+                {
+                    return _verwendungInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Verwendung item info.
+            /// </summary>
+            [RepositoryItemInfo("a23a756d-bc1e-45e0-bc04-feba9d5deaa9")]
+            public virtual RepoItemInfo VerwendungInfo
+            {
+                get
+                {
+                    return _verwendungInfo;
+                }
+            }
+
+            /// <summary>
             /// The TabPageGruppen item.
             /// </summary>
             [RepositoryItem("6f36a84e-89a3-4121-b8bd-03f826b03804")]
@@ -629,6 +429,78 @@ namespace B_KTO_003
                 get
                 {
                     return _tabpagegruppenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColKtgrCdRow1 item.
+            /// </summary>
+            [RepositoryItem("4bcce6cf-3279-407f-964f-f75e623fd873")]
+            public virtual Ranorex.Cell ColKtgrCdRow1
+            {
+                get
+                {
+                    return _colktgrcdrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColKtgrCdRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("4bcce6cf-3279-407f-964f-f75e623fd873")]
+            public virtual RepoItemInfo ColKtgrCdRow1Info
+            {
+                get
+                {
+                    return _colktgrcdrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Bereiche item.
+            /// </summary>
+            [RepositoryItem("77b03917-3de1-4ad8-b195-8284b01af748")]
+            public virtual Ranorex.TabPage Bereiche
+            {
+                get
+                {
+                    return _bereicheInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Bereiche item info.
+            /// </summary>
+            [RepositoryItemInfo("77b03917-3de1-4ad8-b195-8284b01af748")]
+            public virtual RepoItemInfo BereicheInfo
+            {
+                get
+                {
+                    return _bereicheInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Bereiche_Pflichtigkeit item.
+            /// </summary>
+            [RepositoryItem("bc79dac4-36ae-44f4-aa80-578676f1aee6")]
+            public virtual Ranorex.Cell Bereiche_Pflichtigkeit
+            {
+                get
+                {
+                    return _bereiche_pflichtigkeitInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Bereiche_Pflichtigkeit item info.
+            /// </summary>
+            [RepositoryItemInfo("bc79dac4-36ae-44f4-aa80-578676f1aee6")]
+            public virtual RepoItemInfo Bereiche_PflichtigkeitInfo
+            {
+                get
+                {
+                    return _bereiche_pflichtigkeitInfo;
                 }
             }
         }

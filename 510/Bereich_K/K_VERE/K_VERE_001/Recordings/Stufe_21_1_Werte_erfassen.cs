@@ -146,22 +146,25 @@ namespace K_VERE_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Menge1' with focus on 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrMenge1Row2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrMenge1Row2Info, new RecordItemIndex(5));
-            repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrMenge1Row2.PressKeys(Menge1);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Menge1' with focus on 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrMenge1Row2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrMenge1Row2Info, new RecordItemIndex(6));
+            repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrMenge1Row2.PressKeys(Menge1);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Text_21_1' with focus on 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrTextRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrTextRow2Info, new RecordItemIndex(8));
-            repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrTextRow2.PressKeys(Text_21_1);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblVerr_K_VERE.PbDataAccessSave' at Center.", repo.TblVerr_K_VERE.PbDataAccessSaveInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Text_21_1' with focus on 'TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrTextRow2'.", repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrTextRow2Info, new RecordItemIndex(9));
+            repo.TblVerr_K_VERE.Row2_erste_Erfassungszeile.ColVerrTextRow2.PressKeys(Text_21_1);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblVerr_K_VERE.PbDataAccessSave' at Center.", repo.TblVerr_K_VERE.PbDataAccessSaveInfo, new RecordItemIndex(11));
             repo.TblVerr_K_VERE.PbDataAccessSave.Click();
             
         }

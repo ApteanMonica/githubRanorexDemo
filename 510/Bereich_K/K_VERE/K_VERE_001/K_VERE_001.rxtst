@@ -86,7 +86,7 @@
 			</testmodule>
 			<testcase
 			id="2670757c-717e-4895-a207-e1c47152e665"
-			name="K_VEST_Verrechnungsstamm_aendern_B">
+			name="K_VEST_Verrechnungsstamm_zurücksetzen">
 			</testcase>
 			<testcase
 			id="3be7f0a2-232b-4476-8ee4-760db2fbd291"
@@ -248,6 +248,9 @@
 			id="7fd4480f-a1ad-4e22-b290-4852ada6e507"
 			name="K_VERE_001"
 			reportlevel="Info;20">
+				<description>
+					<![CDATA[<p>Getestet wird die Erfassung von Verrechnungen auf unterschiedliche Verrechnungsstufen mit Abhängigkeit der Vorschlagswerte und sichtbaren Eingabefelder von den Grunddaten je Verrechnungsstufe im Verrechnungsstamm.</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="Startfile"
@@ -701,16 +704,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
-					variableid="812f76e1-61e1-4630-bea9-d7fdbb7dfaaa"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm"
 					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
 					variableid="57393089-9dca-42ec-8ccf-33e93284ed02"
 					variablename="Programm">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="7fd4480f-a1ad-4e22-b290-4852ada6e507"
+					variableid="812f76e1-61e1-4630-bea9-d7fdbb7dfaaa"
+					variablename="Startfile">
 					</var>
 				</databinding>
 				<missingdatabinding>
@@ -804,10 +807,6 @@
 			ref="42e7c1cb-c8b4-42b1-aa3d-72de2413574a"
 			type="Recording">
 			</testmodule>
-			<teardown
-			id="e3f4c787-8ad1-40e3-82b2-331bf30d2edc"
-			name="teardown">
-			</teardown>
 			<teardown
 			id="e60464e8-3806-4f5a-b2c8-4897fd7918f8"
 			name="teardown">
@@ -931,10 +930,6 @@
 							name="Stufe_21_1_erfasste_Zeile_pruefen">
 							</testmodule>
 						</smartfoldernode>
-						<teardown
-						id="e3f4c787-8ad1-40e3-82b2-331bf30d2edc"
-						name="teardown">
-						</teardown>
 					</testcase>
 					<testcase
 					id="3be7f0a2-232b-4476-8ee4-760db2fbd291"
@@ -990,7 +985,7 @@
 					</testcase>
 					<testcase
 					id="2670757c-717e-4895-a207-e1c47152e665"
-					name="K_VEST_Verrechnungsstamm_aendern_B">
+					name="K_VEST_Verrechnungsstamm_zurücksetzen">
 						<teardown
 						id="e60464e8-3806-4f5a-b2c8-4897fd7918f8"
 						name="teardown">

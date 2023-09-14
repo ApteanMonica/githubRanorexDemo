@@ -105,32 +105,32 @@ namespace B_KTO_003.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.FrmSearchPage.Suchtext_Eingabe' at Center.", repo.FrmKto.FrmSearchPage.Suchtext_EingabeInfo, new RecordItemIndex(0));
-            repo.FrmKto.FrmSearchPage.Suchtext_Eingabe.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Text' at Center.", repo.FrmKto.TextInfo, new RecordItemIndex(0));
+            repo.FrmKto.Text.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Konto' with focus on 'FrmKto.FrmSearchPage.Suchtext_Eingabe'.", repo.FrmKto.FrmSearchPage.Suchtext_EingabeInfo, new RecordItemIndex(1));
-            repo.FrmKto.FrmSearchPage.Suchtext_Eingabe.PressKeys(Konto);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Konto' with focus on 'FrmKto.Text'.", repo.FrmKto.TextInfo, new RecordItemIndex(1));
+            repo.FrmKto.Text.PressKeys(Konto);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmKto.FrmSearchPage.Suchtext_Eingabe'.", repo.FrmKto.FrmSearchPage.Suchtext_EingabeInfo, new RecordItemIndex(2));
-            repo.FrmKto.FrmSearchPage.Suchtext_Eingabe.PressKeys("{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(2));
+            Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmKto.FrmSearchPage.Row1Column0' at Center.", repo.FrmKto.FrmSearchPage.Row1Column0Info, new RecordItemIndex(3));
-            repo.FrmKto.FrmSearchPage.Row1Column0.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmKto.Row1Column0' at Center.", repo.FrmKto.Row1Column0Info, new RecordItemIndex(3));
+            repo.FrmKto.Row1Column0.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Konto) on item 'FrmKto.DfKtoNr'.", repo.FrmKto.DfKtoNrInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.FrmKto.DfKtoNrInfo, "Text", Konto);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Konto) on item 'FrmKto.Konto'.", repo.FrmKto.KontoInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FrmKto.KontoInfo, "Text", Konto);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kontoname) on item 'FrmKto.Bezeichnung'.", repo.FrmKto.BezeichnungInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.FrmKto.BezeichnungInfo, "Text", Kontoname);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='P') on item 'FrmKto.PicTabs.Verwendung'.", repo.FrmKto.PicTabs.VerwendungInfo, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.FrmKto.PicTabs.VerwendungInfo, "Text", "P");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='P') on item 'FrmKto.Verwendung'.", repo.FrmKto.VerwendungInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmKto.VerwendungInfo, "Text", "P");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.TabPageGruppen' at Center.", repo.FrmKto.PicTabs.TabPageGruppenInfo, new RecordItemIndex(7));
-            repo.FrmKto.PicTabs.TabPageGruppen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.TabPageGruppen' at Center.", repo.FrmKto.TabPageGruppenInfo, new RecordItemIndex(7));
+            repo.FrmKto.TabPageGruppen.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0125') on item 'FrmKto.PicTabs.ColKtgrCdRow1'.", repo.FrmKto.PicTabs.ColKtgrCdRow1Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.FrmKto.PicTabs.ColKtgrCdRow1Info, "Text", "0125");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0125') on item 'FrmKto.ColKtgrCdRow1'.", repo.FrmKto.ColKtgrCdRow1Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.FrmKto.ColKtgrCdRow1Info, "Text", "0125");
             
         }
 

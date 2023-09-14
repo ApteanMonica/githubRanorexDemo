@@ -79,6 +79,9 @@ namespace N_LISTEN_BULI_002.Recordings
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungs'.", repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungsInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.FrmBuchungsliste.TitleBar100AVZAuswertungenBuchungs, 1000);
+            
         }
 
 #region Image Feature Data

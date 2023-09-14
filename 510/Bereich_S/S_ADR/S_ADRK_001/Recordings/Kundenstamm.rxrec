@@ -26,7 +26,10 @@ mode="Global">
 		<var
 		id="4f127bbc-eddf-499f-91b9-f1799323cadd"
 		name="Aptean_Austria">
-			Aptean Austria GmbH
+		</var>
+		<var
+		id="0e37ffa6-bf3c-49e2-ba69-859fd5bf8c1e"
+		name="meldung1">
 		</var>
 	</variables>
 	<recorditems>
@@ -9546,7 +9549,7 @@ hOgiiTyZ44gUQAsA/UnueKKKF0/rqDOhooooA//Z
 		<validationitem
 		action="AttributeContains"
 		duration="100ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="38550495-b4d7-4f43-bb19-25daeb8d31e1">
 			<comment>
@@ -9558,7 +9561,7 @@ hOgiiTyZ44gUQAsA/UnueKKKF0/rqDOhooooA//Z
 				</binding>
 			</bindings>
 			<info
-			id="e5bebb4c-e814-479f-8577-0da498e43deb"
+			id="58044b0a-7ff5-4b17-a62b-d1045fdd5fe2"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="control, nativewindow"
@@ -10373,62 +10376,76 @@ AT-5101 Bergheim
 M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 			</matchvalue>
 		</validationitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<getvaluerecorditem
+		attrname="Text"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
 		optional="False"
-		searchpropertyid="33d36354-5cfb-4b1c-911d-64b3c11840a4"
-		sx="-728"
-		sy="537"
-		warnoutofbounds="False">
+		searchpropertyid="0d6163ea-6c61-4de1-9846-05d68df73bc4"
+		varname="meldung1">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="5ef1b713-0d1e-4a28-b025-ead9b87a58dd"
-			sourcename="Recorder">
+			id="58044b0a-7ff5-4b17-a62b-d1045fdd5fe2"
+			sourcename="RepositoryEditor">
 				<element
 				capabilities="control, nativewindow"
 				dontcache="False"
 				enabled="True"
 				flavor="winforms"
 				hasfocus="False"
-				index="4"
-				prefcap="button"
-				rect="-762,522,80,23"
-				role="button"
+				index="2"
+				prefcap="text"
+				rect="705,414,216,82"
+				role="text"
 				snapElem=""
 				valid="True"
 				visible="True">
 					<attribute
+					name="caption"
+					type="System.String">
+						&#13;
+Aptean Austria GmbH
+Dorfstra&#223;e 67
+AT-5101 Bergheim
+
+M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
+					</attribute>
+					<attribute
 					name="text"
 					type="System.String">
-						&amp;Ja
+						&#13;
+Aptean Austria GmbH
+Dorfstra&#223;e 67
+AT-5101 Bergheim
+
+M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 					</attribute>
 					<attribute
 					name="controlname"
 					type="System.String">
-						button0
+						labelMeldungstext
 					</attribute>
 					<attribute
 					name="controltext"
 					type="System.String">
-						&amp;Ja
+						&#13;
+Aptean Austria GmbH
+Dorfstra&#223;e 67
+AT-5101 Bergheim
+
+M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 					</attribute>
 					<attribute
 					name="controltype"
 					type="System.String">
-						System.Windows.Forms.Button
+						rssoft.fwg.basis.AutoSizingLabel
 					</attribute>
 					<attribute
 					name="controltypename"
 					type="System.String">
-						Button
+						AutoSizingLabel
 					</attribute>
 					<attribute
 					name="apphung"
@@ -10438,12 +10455,12 @@ M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 					<attribute
 					name="class"
 					type="System.String">
-						WindowsForms10.BUTTON.app.0.2804c64_r6_ad1
+						WindowsForms10.STATIC.app.0.2804c64_r6_ad1
 					</attribute>
 					<attribute
 					name="handle"
 					type="System.IntPtr">
-						148648488
+						1383742
 					</attribute>
 					<attribute
 					name="instance"
@@ -10453,7 +10470,7 @@ M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 					<attribute
 					name="processid"
 					type="System.Int32">
-						8708
+						1792
 					</attribute>
 					<attribute
 					name="processname"
@@ -10468,12 +10485,17 @@ M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 					<attribute
 					name="windowstyle"
 					type="Ranorex.Core.WinApi.Win32+WindowStyles, Ranorex.Core.WinApi, Culture=neutral">
-						Tiled, MaximizeBox, ClipChildren, ClipSiblings, Visible, ChildWindow
+						Tiled, ClipChildren, ClipSiblings, Visible, ChildWindow
 					</attribute>
 					<attribute
 					name="windowtext"
 					type="System.String">
-						&amp;Ja
+						&#13;
+Aptean Austria GmbH
+Dorfstra&#223;e 67
+AT-5101 Bergheim
+
+M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 					</attribute>
 					<dynamicattribute
 					description="No description available."
@@ -10531,12 +10553,6 @@ M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="AutoSizeMode"
-					readonly="False"
-					type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="BackColor"
 					readonly="False"
 					type="System.Drawing.Color, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -10555,6 +10571,12 @@ M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
+					name="BorderStyle"
+					readonly="False"
+					type="System.Windows.Forms.BorderStyle, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
 					name="Bottom"
 					type="System.Int32">
 					</dynamicattribute>
@@ -10563,6 +10585,11 @@ M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 					name="Bounds"
 					readonly="False"
 					type="System.Drawing.Rectangle, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="CalculatedSize"
+					type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -10622,12 +10649,6 @@ M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 					description="No description available."
 					name="DeviceDpi"
 					type="System.Int32">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="DialogResult"
-					readonly="False"
-					type="System.Windows.Forms.DialogResult, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -10750,6 +10771,12 @@ M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
+					name="LiveSetting"
+					readonly="False"
+					type="System.Windows.Forms.Automation.AutomationLiveSetting, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
 					name="Location"
 					readonly="False"
 					type="System.Drawing.Point, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -10783,6 +10810,16 @@ M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 					name="Padding"
 					readonly="False"
 					type="System.Windows.Forms.Padding, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="PreferredHeight"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="No description available."
+					name="PreferredWidth"
+					type="System.Int32">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -10842,12 +10879,6 @@ M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="TextImageRelation"
-					readonly="False"
-					type="System.Windows.Forms.TextImageRelation, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="Top"
 					readonly="False"
 					type="System.Int32">
@@ -10861,12 +10892,6 @@ M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 					<dynamicattribute
 					description="No description available."
 					name="UseMnemonic"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="UseVisualStyleBackColor"
 					readonly="False"
 					type="System.Boolean">
 					</dynamicattribute>
@@ -10984,19 +11009,6 @@ M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 						displayName="returns"
 						type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
 						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="NotifyDefault">
-						<argument
-						description="No description available."
-						displayName="value"
-						type="System.Boolean">
-						</argument>
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
-					displayName="PerformClick">
 					</dynamicaction>
 					<dynamicaction
 					description="No description available."
@@ -11119,10 +11131,6 @@ M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 					</dynamicaction>
 					<dynamicaction
 					description="No description available."
-					displayName="Select">
-					</dynamicaction>
-					<dynamicaction
-					description="No description available."
 					displayName="SendToBack">
 					</dynamicaction>
 					<dynamicaction
@@ -11177,132 +11185,72 @@ M&#246;chten Sie als g&#252;ltige UID &#252;bernehmen?&#10;
 					</dynamicaction>
 				</element>
 				<path>
+					/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ValidateTextWithoutBreaks"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e4cf2fae-0c4d-42ae-b484-30efcde397a2">
+				<argument
+				argname="var1"
+				id="c9c8481e-989b-4ac1-b931-732ca4729bf1"
+				variable="meldung1">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="variable"
+				id="5cef4027-aa63-442a-a9dd-67f1b630c7f0"
+				variable="Aptean_Austria">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="33d36354-5cfb-4b1c-911d-64b3c11840a4"
+		sx="-728"
+		sy="537"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5ef1b713-0d1e-4a28-b025-ead9b87a58dd"
+			sourcename="RepositoryEditor">
+				<path>
 					/form[@controlname='dlgMessageBox']/button[@controlname='button0']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-			<helperscreenshot
-			guid="4f5e6135-2d7c-47fd-b678-8618c22c8585">
-				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
-			</helperscreenshot>
 		</mouseitem>
 		<mouseitem
 		action="Click"

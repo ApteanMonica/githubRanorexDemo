@@ -52,7 +52,21 @@
 					variableid="442a57a5-a4b7-4925-9fda-fcd33ada827e"
 					variablename="Aptean_Austria">
 					</var>
+					<var
+					dataname="meldung1"
+					datasourceid="3bfb06b0-498c-46a8-9b02-06989ef9da11"
+					variableid="57e2724e-6c5c-40a5-8bd5-bdd515aac846"
+					variablename="meldung1">
+					</var>
 				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="NewParameter"
+					datasourceid="3bfb06b0-498c-46a8-9b02-06989ef9da11"
+					variableid="d2aa9135-6f9e-4c62-b1a8-fd4d532e21cf"
+					variablename="NewVariable">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testcase
 			id="3bfb06b0-498c-46a8-9b02-06989ef9da11"
@@ -100,11 +114,17 @@
 					</param>
 					<param
 					name="Aptean_Austria"
-					value="Aptean Austria GmbH
+					value="
+Aptean Austria GmbH
 Dorfstraße 67
 AT-5101 Bergheim
 
-Möchten Sie als gültige UID übernehmen?">
+Möchten Sie als gültige UID übernehmen?
+">
+					</param>
+					<param
+					name="meldung1"
+					value="">
 					</param>
 				</parameters>
 			</testcase>
@@ -149,6 +169,14 @@ Möchten Sie als gültige UID übernehmen?">
 					variablename="PLZ">
 					</var>
 				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="NewParameter"
+					datasourceid="3bfb06b0-498c-46a8-9b02-06989ef9da11"
+					variableid="d2aa9135-6f9e-4c62-b1a8-fd4d532e21cf"
+					variablename="NewVariable">
+					</var>
+				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="5d44038a-eb48-4ed4-a51d-1416d8025205"
@@ -253,5 +281,8 @@ Möchten Sie als gültige UID übernehmen?">
 		</testconfiguration>
 	</testconfigurations>
 	<references>
+		<reference>
+			Ranorex Automation Helpers.dll
+		</reference>
 	</references>
 </testsuitedoc>

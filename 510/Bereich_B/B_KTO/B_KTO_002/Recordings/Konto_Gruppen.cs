@@ -79,38 +79,37 @@ namespace B_KTO_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.TabPageGruppen' at Center.", repo.FrmKto.PicTabs.TabPageGruppenInfo, new RecordItemIndex(0));
-            repo.FrmKto.PicTabs.TabPageGruppen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.TabPageGruppen' at Center.", repo.FrmKto.TabPageGruppenInfo, new RecordItemIndex(0));
+            repo.FrmKto.TabPageGruppen.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.Gruppe' at Center.", repo.FrmKto.PicTabs.GruppeInfo, new RecordItemIndex(1));
-            repo.FrmKto.PicTabs.Gruppe.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Gruppe' at Center.", repo.FrmKto.GruppeInfo, new RecordItemIndex(1));
+            repo.FrmKto.Gruppe.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmKto.PicTabs.Gruppe'.", repo.FrmKto.PicTabs.GruppeInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.FrmKto.PicTabs.GruppeInfo, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmKto.Gruppe'.", repo.FrmKto.GruppeInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.FrmKto.GruppeInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0035' with focus on 'FrmKto.PicTabs.Gruppe'.", repo.FrmKto.PicTabs.GruppeInfo, new RecordItemIndex(3));
-            repo.FrmKto.PicTabs.Gruppe.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0035' with focus on 'FrmKto.Gruppe'.", repo.FrmKto.GruppeInfo, new RecordItemIndex(3));
+            repo.FrmKto.Gruppe.EnsureVisible();
             Keyboard.Press("0035");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.Gruppe_GuV' at Center.", repo.FrmKto.PicTabs.Gruppe_GuVInfo, new RecordItemIndex(4));
-            repo.FrmKto.PicTabs.Gruppe_GuV.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Gruppe_GuV' at Center.", repo.FrmKto.Gruppe_GuVInfo, new RecordItemIndex(4));
+            repo.FrmKto.Gruppe_GuV.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0190' with focus on 'FrmKto.PicTabs.Gruppe_GuV'.", repo.FrmKto.PicTabs.Gruppe_GuVInfo, new RecordItemIndex(5));
-            repo.FrmKto.PicTabs.Gruppe_GuV.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0190' with focus on 'FrmKto.Gruppe_GuV'.", repo.FrmKto.Gruppe_GuVInfo, new RecordItemIndex(5));
+            repo.FrmKto.Gruppe_GuV.EnsureVisible();
             Keyboard.Press("0190");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmKto.PicTabs.Gruppe_GuV'.", repo.FrmKto.PicTabs.Gruppe_GuVInfo, new RecordItemIndex(6));
-            repo.FrmKto.PicTabs.Gruppe_GuV.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(6));
             Keyboard.Press("{Tab}");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Speichern' at Center.", repo.FrmKto.SpeichernInfo, new RecordItemIndex(7));
             repo.FrmKto.Speichern.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0035') on item 'FrmKto.PicTabs.Gruppe'.", repo.FrmKto.PicTabs.GruppeInfo, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.FrmKto.PicTabs.GruppeInfo, "Text", "0035");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0035') on item 'FrmKto.Gruppe'.", repo.FrmKto.GruppeInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.FrmKto.GruppeInfo, "Text", "0035");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0190') on item 'FrmKto.PicTabs.Gruppe_GuV'.", repo.FrmKto.PicTabs.Gruppe_GuVInfo, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.FrmKto.PicTabs.Gruppe_GuVInfo, "Text", "0190");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0190') on item 'FrmKto.Gruppe_GuV'.", repo.FrmKto.Gruppe_GuVInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmKto.Gruppe_GuVInfo, "Text", "0190");
             
         }
 

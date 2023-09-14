@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="447cfb37-164f-4ac3-a67d-a7ccbd4b4b37"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SQL_Kontrolle_b_exop_Belegnr_2200005_2200009_verbucht"
+	namespace="B_ERBU_002.Recordings_SQL_Usercode">
+	</codegen>
+	<variables>
+		<var
+		id="836117a8-9d53-428b-827b-522efae00dd9"
+		name="SQL_Select_B_EXOP">
+			select  in default value wird bei copy/paste abgeschnitten
+		</var>
+		<var
+		id="3fdfcd40-0782-4ed5-b265-16b0b63d19eb"
+		name="DB_File">
+			C:\Testdaten\Allgemein\UserCode\datenbank.txt
+		</var>
+		<var
+		id="d3d3c7bc-5d1b-469a-9a3f-7fb7b98d40c7"
+		name="file_selectergebnis_b_exop_verbucht_aktuell">
+			C:\temp\B_ERBU_002_B_EXOP_verbucht_aktuell.txt
+		</var>
+		<var
+		id="39140b55-00a2-4d54-ada6-851c7f1d7ec2"
+		name="file_selectergebnis_b_exop_verbucht_Referenz">
+			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_002\B_ERBU_002_B_EXOP_verbucht_Referenz.txt
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="ApteanSQL"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ReadVersion"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c846b99a-82cb-440e-9e7e-11bf02c0614f">
+				<argument
+				argname="dbFile"
+				id="f2f0994d-dc0f-44db-99cc-1f0463bf8693">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\Testdaten\Allgemein\UserCode\datenbank.txt
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="bf9e294f-2177-4cdf-a28e-c573c0e62a2c">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						c:\temp\version_b_exop.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="ApteanSQL"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SQLStatement"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="873c821d-1912-48dc-bb34-05291851f69e">
+				<argument
+				argname="selectLine"
+				id="31a55c8b-2bcd-4a62-885d-1e82f90a9329">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						select 
+FIRM_NR,
+ADR_NR,
+KLDV_NR,
+KLBK_NR,
+WRG_CD,
+KTO_NR,
+EXOP_STATUS,
+EXOP_ART,
+EXOP_KL,
+EXOP_JAHR,
+EXOP_PERIODE,
+EXOP_BELEGNR,
+EXOP_DTBELEG,
+EXOP_DTFREMDBELEG,
+EXOP_NRFREMDBELEG,
+EXOP_DTFAELLIG,
+EXOP_DTVALUTA,
+EXOP_TAGE1,
+EXOP_SKONTO1,
+EXOP_TAGE2,
+EXOP_SKONTO2,
+EXOP_TAGENETTO,
+EXOP_ZAHLART,
+EXOP_BETRAG,
+EXOP_FWBETRAG,
+EXOP_KURS,
+EXOP_RECHBETRAG,
+EXOP_ZAHLBETRAG,
+EXOP_SKONTOBASIS,
+EXOP_TEXT1,
+EXOP_TEXT2,
+EXOP_UEBERWTEXT,
+EXOP_REFBELEGNR,
+EXOP_BUSY,
+EXOP_MAHNSTUFE,
+EXOP_TEXTCD,
+EXOP_SELECT1,
+EXOP_SELECT2,
+EXOP_MAHNSPERRE,
+EXOP_ZAHLSPERRE,
+EXOP_DTEINHALT,
+EXOP_EHPROZ,
+EXOP_EHBETRAG,
+EXOP_FWEHBETRAG,
+EXOP_DTEINHALT2,
+EXOP_EHPROZ2,
+EXOP_EHBETRAG2,
+EXOP_FWEHBETRAG2,
+EXOP_BEZUG,
+EXOP_BEZUG2,
+EXOP_TEILRECHNR,
+EXOP_KZFIXTAGE,
+EXOP_MONAT1,
+EXOP_MONAT2,
+EXOP_MONATNETTO,
+EXOP_KZDIVERSE,
+EXOP_ADRESSE1,
+EXOP_ADRESSE2,
+EXOP_ADRESSE3,
+EXOP_ADRESSE4,
+EXOP_ADRESSE5,
+LAND_CD,
+PLZ_CD,
+EXOP_ORT,
+SPRA_CD,
+ANRD_CD,
+EXOP_NAME,
+EXOP_PERSONEN,
+EXOP_KZOK,
+EXOP_USEROK,
+EXOP_USERHERKUNFT,
+EXOP_MATPREIS,
+EXOP_UVAJAHR,
+EXOP_UVAMONAT,
+EXOP_UVATAG,
+EXOP_HERKUNFT,
+EXOP_SELECT3,
+EXOP_SELECT4,
+EXOP_ARCHIVDOC1,
+USER_CD,
+EXOP_KZEXOPA,
+FIRM_NR_RECH,
+EXOP_FELD1,
+EXOP_FELD2,
+EXOP_FELD3,
+EXOP_FELD4,
+EXOP_USERANLAG,
+EXOP_USERAENDG,
+EXOP_REFKEYBEL,
+EXOP_REFKEYPOS,
+EXOP_KZSKONTO,
+EXOP_SKBETRAG,
+EXOP_FWSKBETRAG,
+EXOP_ARCHIVNR,
+EXOP_ADR_RECHAD,
+EXOP_KLDV_RECHAD,
+SAMK_CD,
+EXOP_DTLEISTUNG,
+EXOP_DTMNSPBIS,
+RTK_NR,
+EXOP_KZAUSGL,
+EXOP_KZSTORNO,
+EXOP_STORNOGRUND,
+EXOP_KZZINSEN,
+EXOP_BELTYP,
+EXOP_ZNSBETRAG,
+EXOP_FWZNSBETRAG,
+MNV_NR,
+EXOP_DTZLSPBIS,
+ZART_CD,
+EXOP_KZRECHTSKR,
+ADR_NR_ZAHLUNG,
+KLBK_NR_ZAHLUNG,
+EXBK_NR,
+EXBP_NR,
+EXBO_NR,
+EXOP_RTKREF,
+RST_CD,
+EXOP_FELD01,
+EXOP_FELD02,
+EXOP_FELD03,
+EXOP_FELD04,
+EXOP_FELD05,
+EXOP_USERVWDG
+from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '2200009';
+					</argvalue>
+				</argument>
+				<argument
+				argname="dbFile"
+				id="8644b8a5-f959-4679-9312-d6451dfb8e4f"
+				variable="DB_File">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\Testdaten\Allgemein\UserCode\datenbank.txt
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="2a08e20e-6960-4298-984c-1202f090833f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\temp\B_ERBU_002_B_EXOP_verbucht_aktuell.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="ApteanSQL"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="FileCompareEqual"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="d33215fa-433e-4955-9a94-2c35e7022d45">
+				<argument
+				argname="file1"
+				id="306488dc-b70e-4cb1-80dc-85eb96a507d4"
+				variable="file_selectergebnis_b_exop_verbucht_aktuell">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="file2"
+				id="d60b2958-8554-4d59-8247-8ebc76a2705a"
+				variable="file_selectergebnis_b_exop_verbucht_Referenz">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="6b330eef-8fa5-463a-91e6-7ba656f7fb14"
+	name="B_ERBU_002Repository"
+	relativepath="..\B_ERBU_002Repository.rxrep">
+		<codegen
+		classname="B_ERBU_002Repository"
+		namespace="B_ERBU_002">
+		</codegen>
+		<rootfolder
+		id="3331ac05-76c2-4ea1-b1bf-a137c034983c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SQL_Kontrolle_b_exop_Belegnr_2200005_2200009_verbucht.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

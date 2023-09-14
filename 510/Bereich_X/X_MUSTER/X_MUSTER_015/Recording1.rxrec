@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a2e17afa-c683-439d-a272-dd7a6634ba06"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="X_MUSTER_015">
+	</codegen>
+	<variables>
+		<var
+		id="f8a7f04b-f551-42e8-b7b7-917ab99a7284"
+		name="text">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ValidateTextWithoutBreaks"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a55ad21c-e96e-4e8d-b526-5d8e1d5f36ff">
+				<argument
+				argname="var1"
+				id="0415c133-59d9-4e78-b078-baacde9a01c9"
+				variable="text">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="var2"
+				id="4412915d-c655-4254-a41d-1c9de485fb8f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Aptean Austria GmbH
+Dorfstraße 67
+AT-5101 Bergheim
+
+Möchten Sie als gültige UID übernehmen?
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="ceafdf18-02b9-4185-a55d-445da256f18c"
+	name="X_MUSTER_015Repository"
+	relativepath="X_MUSTER_015Repository.rxrep">
+		<codegen
+		classname="X_MUSTER_015Repository"
+		namespace="X_MUSTER_015">
+		</codegen>
+		<rootfolder
+		id="66c4ceaf-368f-425e-a367-f806448c6336"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -82,19 +82,22 @@ namespace N_LISTEN_BULI_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbUEberleitungFibu' at Center.", repo.FrmBuchungsliste.PbUEberleitungFibuInfo, new RecordItemIndex(0));
             repo.FrmBuchungsliste.PbUEberleitungFibu.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ-Überleitung') on item 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'.", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new ActionTimeout(60000), new RecordItemIndex(1));
+            repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ-Überleitung') on item 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'.", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, "Text", "[100]  AVZ-Überleitung");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'BULI_002_01{Tab}' with focus on 'DlgFibu.Frame2.BelegNr'.", repo.DlgFibu.Frame2.BelegNrInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'BULI_002_01{Tab}' with focus on 'DlgFibu.Frame2.BelegNr'.", repo.DlgFibu.Frame2.BelegNrInfo, new RecordItemIndex(3));
             repo.DlgFibu.Frame2.BelegNr.PressKeys("BULI_002_01{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '31.07.2022{Tab}' with focus on 'DlgFibu.Frame2.BelegDatum'.", repo.DlgFibu.Frame2.BelegDatumInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '31.07.2022{Tab}' with focus on 'DlgFibu.Frame2.BelegDatum'.", repo.DlgFibu.Frame2.BelegDatumInfo, new RecordItemIndex(4));
             repo.DlgFibu.Frame2.BelegDatum.PressKeys("31.07.2022{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'V00{Tab}' with focus on 'DlgFibu.Frame2.UstCode'.", repo.DlgFibu.Frame2.UstCodeInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'V00{Tab}' with focus on 'DlgFibu.Frame2.UstCode'.", repo.DlgFibu.Frame2.UstCodeInfo, new RecordItemIndex(5));
             repo.DlgFibu.Frame2.UstCode.PressKeys("V00{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFibu.PbStart' at Center.", repo.DlgFibu.PbStartInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFibu.PbStart' at Center.", repo.DlgFibu.PbStartInfo, new RecordItemIndex(6));
             repo.DlgFibu.PbStart.Click();
             
         }

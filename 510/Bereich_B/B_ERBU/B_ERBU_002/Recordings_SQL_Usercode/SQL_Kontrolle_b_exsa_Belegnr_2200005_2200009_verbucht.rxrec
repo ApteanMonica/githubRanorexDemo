@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4f488313-2e80-41b2-a189-1bb8c9899cc9"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SQL_Kontrolle_b_exsa_Belegnr_2200005_2200009_verbucht"
+	namespace="B_ERBU_002.Recordings_SQL_Usercode">
+	</codegen>
+	<variables>
+		<var
+		id="cecc251b-575f-441b-af03-c45eace55a72"
+		name="SQL_Select_B_EXSA">
+			select  in default value wird bei copy/paste abgeschnitten
+		</var>
+		<var
+		id="a294cf74-2524-45eb-b468-8cc5154a96c6"
+		name="DB_File">
+			C:\Testdaten\Allgemein\UserCode\datenbank.txt
+		</var>
+		<var
+		id="a3893ea3-a461-4a23-8911-5c0ccca51621"
+		name="file_selectergebnis_b_exsa_verbucht_aktuell">
+			C:\temp\B_ERBU_002_B_EXSA_verbucht_aktuell.txt
+		</var>
+		<var
+		id="2df3520b-febe-4fbe-b3a3-c1bb9b827a6d"
+		name="file_selectergebnis_b_exsa_verbucht_Referenz">
+			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_002\B_ERBU_002_B_EXSA_verbucht_Referenz.txt
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="ApteanSQL"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ReadVersion"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c846b99a-82cb-440e-9e7e-11bf02c0614f">
+				<argument
+				argname="dbFile"
+				id="f2f0994d-dc0f-44db-99cc-1f0463bf8693">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\Testdaten\Allgemein\UserCode\datenbank.txt
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="bf9e294f-2177-4cdf-a28e-c573c0e62a2c">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						c:\temp\version_b_exsa.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="ApteanSQL"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SQLStatement"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="873c821d-1912-48dc-bb34-05291851f69e">
+				<argument
+				argname="selectLine"
+				id="31a55c8b-2bcd-4a62-885d-1e82f90a9329">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						select
+b_exsa.FIRM_NR,
+EXSA_KEYPOS,
+EXSA_BER_CD6,
+EXSA_BEKT_NR6,
+EXSA_BER_CD5,
+EXSA_BEKT_NR5,
+EXSA_BER_CD4,
+EXSA_BEKT_NR4,
+EXSA_BER_CD1,
+EXSA_BEKT_NR1,
+EXSA_BER_CD2,
+EXSA_BEKT_NR2,
+EXSA_BER_CD3,
+EXSA_BEKT_NR3,
+UST_CD,
+EXSA_ART,
+EXSA_KTONR,
+EXSA_SKONTOKZ,
+EXSA_SH,
+EXSA_BETRAG,
+EXSA_FWBETRAG,
+EXSA_MENGE,
+EXSA_USTBETRAG,
+EXSA_USTFWBETRAG,
+EXSA_USTMV,
+EXSA_USTSATZ,
+EXSA_TEXT1,
+EXSA_TEXT2,
+EXSA_TEXTCD,
+EXSA_BESTELLNR,
+EXSA_LIEFSNR,
+ANLA_NR,
+ANLA_POS,
+KTBE_NR,
+PVT_CD,
+EXSA_JAHR_BUBE_VON,
+EXSA_MON_BUBE_VON,
+EXSA_JAHR_BUBE_BIS,
+EXSA_MON_BUBE_BIS,
+EXSA_FELD1,
+EXSA_FELD2,
+EXSA_FELD3,
+EXSA_FELD4,
+EXSA_UID,
+EXSA_ARCHIVNR,
+EXSA_ARCHIVDOC1,
+EXSA_DTLEISTUNG,
+EXSA_MENGE2,
+EXSA_DTOPFAELL,
+EXSA_VNROPAUSGL
+from b_exsa, b_exop
+where b_exop.firm_nr = b_exsa.firm_nr
+AND b_exop.exop_keybel = b_exsa.exop_keybel
+AND b_exop.firm_nr = '100' 
+AND exop_belegnr BETWEEN '2200005' AND '2200009';
+					</argvalue>
+				</argument>
+				<argument
+				argname="dbFile"
+				id="8644b8a5-f959-4679-9312-d6451dfb8e4f"
+				variable="DB_File">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\Testdaten\Allgemein\UserCode\datenbank.txt
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="2a08e20e-6960-4298-984c-1202f090833f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\temp\B_ERBU_002_B_EXSA_verbucht_aktuell.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="ApteanSQL"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="FileCompareEqual"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="d33215fa-433e-4955-9a94-2c35e7022d45">
+				<argument
+				argname="file1"
+				id="306488dc-b70e-4cb1-80dc-85eb96a507d4"
+				variable="file_selectergebnis_b_exsa_verbucht_aktuell">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="file2"
+				id="d60b2958-8554-4d59-8247-8ebc76a2705a"
+				variable="file_selectergebnis_b_exsa_verbucht_Referenz">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="6b330eef-8fa5-463a-91e6-7ba656f7fb14"
+	name="B_ERBU_002Repository"
+	relativepath="..\B_ERBU_002Repository.rxrep">
+		<codegen
+		classname="B_ERBU_002Repository"
+		namespace="B_ERBU_002">
+		</codegen>
+		<rootfolder
+		id="3331ac05-76c2-4ea1-b1bf-a137c034983c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SQL_Kontrolle_b_exsa_Belegnr_2200005_2200009_verbucht.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

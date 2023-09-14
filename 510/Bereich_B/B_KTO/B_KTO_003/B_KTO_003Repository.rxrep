@@ -22,6 +22,28 @@ name="B_KTO_003Repository">
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="8dc2bfac-3c66-4422-9434-837c0c0a0e58"
+			name="Text"
+			refimgid="598a9de3-fc14-493d-b758-dce3f193a9bc"
+			refpath="/form[@controlname='frmKto']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/text[@controlname='dfSearchExpression']/text[@accessiblerole='Text']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKto']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/text[@controlname='dfSearchExpression']/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="3779bd40-52a2-4dea-92c8-2e89f7d45f67"
+			name="Row1Column0"
+			refimgid="e58a853b-f2af-4762-82c9-be9e8aa6a560"
+			refpath="/form[@controlname='frmKto']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKto']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']
+			</item>
+			<item
 			addcaps="titlebar,accessible"
 			capname="titlebar"
 			id="8dfd4e03-e0d0-4992-a8bd-f15550770448"
@@ -32,161 +54,38 @@ name="B_KTO_003Repository">
 			searchtimeout="30000ms">
 				/form[@controlname='frmKto']/titlebar[@accessiblerole='TitleBar']
 			</item>
-			<folder
-			capname="form"
-			id="f7154d3b-627d-4a47-93eb-ad34e7e07506"
-			isrooted="True"
-			name="FrmSearchPage"
-			searchtimeout="30000ms"
-			usecache="False">
-				<item
-				addcaps="text,accessible"
-				capname="text"
-				id="a1bb148c-d764-4126-a555-156e3c9e272a"
-				name="Suchtext_Eingabe"
-				refimgid="8bb5f755-4407-4bb2-838a-9d8593f3f725"
-				refpath="/form[@controlname='frmKto']/container[@controlname='searchContainer']/form/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container/text/text[@accessiblerole='Text']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='frmKto']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup1']//text[@accessiblerole='Text']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="52edd4d7-64e3-40de-81b6-bd952e6610a9"
-				name="Row1Column0"
-				refimgid="d8e04886-a854-4148-8af9-b9f5b0f9ad00"
-				refpath="/form[@controlname='frmKto']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='frmKto']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']
-				</item>
-				<basepath>
-					/form[@controlname='frmKto']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']
-				</basepath>
-			</folder>
 			<item
 			addcaps="button,control,nativewindow"
 			capname="button"
-			id="d7ae292e-0823-4ddb-8f31-48816831777b"
-			name="Button_Kopieren"
-			refimgid="9c11976e-95d6-4e34-8d02-343225c66197"
+			id="2cc5e535-f795-43bd-90a5-c61462eaccc8"
+			name="PbToolBarItemsKopieren"
+			refimgid="6d8b9848-2873-4207-a2b6-37a4d7b4f4c2"
 			refpath="/form[@controlname='frmKto']/container[@controlname='RibbonBar']/container[@controlname='ShareGroup']/button[@controlname='pbToolBarItems_Kopieren']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='frmKto']/?/?/container[@controlname='ShareGroup']/button[@controlname='pbToolBarItems_Kopieren']
+				/form[@controlname='frmKto']/container[@controlname='RibbonBar']/container[@controlname='ShareGroup']/button[@controlname='pbToolBarItems_Kopieren']
 			</item>
 			<item
 			addcaps="radiobutton,control,nativewindow"
 			capname="radiobutton"
-			id="6135c5e7-5dd4-4240-9f37-375bb4e70f73"
+			id="55611e06-64b3-4258-960f-e972b6f8bf61"
 			name="RbAktiv"
-			refimgid="50c013a0-0f0b-460c-a728-41d42ad29ca7"
+			refimgid="be49423f-0e6d-4c50-a1a8-e31021bbce8d"
 			refpath="/form[@controlname='frmKto']/container[@controlname='ClientArea']/container[@controlname='groupBox1']/radiobutton[@controlname='rbAktiv']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='frmKto']/?/?/container[@controlname='groupBox1']/radiobutton[@controlname='rbAktiv']
+				/form[@controlname='frmKto']/container[@controlname='ClientArea']/container[@controlname='groupBox1']/radiobutton[@controlname='rbAktiv']
 			</item>
 			<item
 			addcaps="text,accessible"
 			capname="text"
-			id="fe6d3546-0fc0-454a-872c-953fe5d08687"
-			name="Waehrung"
-			refimgid="c21a3274-0af7-4c8a-92a7-0ad8cd69dfb1"
-			refpath="/form[@controlname='frmKto']/container[@controlname='ClientArea']/text[@controlname='dfWrg_cd']/text[@accessiblename='Währung']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='frmKto']/container[@controlname='ClientArea']/?/?/text[@accessiblename='Währung']
-			</item>
-			<folder
-			addcaps="tabpagelist,control,nativewindow"
-			capname="tabpagelist"
-			id="3aea6f8b-e6e0-46ad-a801-7b18846c47eb"
-			isrooted="True"
-			name="PicTabs"
-			refpath="/form[@controlname='frmKto']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']"
-			searchtimeout="30000ms"
-			usecache="False">
-				<item
-				addcaps="tabpage,accessible"
-				capname="tabpage"
-				id="77b03917-3de1-4ad8-b195-8284b01af748"
-				name="Bereiche"
-				refimgid="0c0048a0-7436-4a5e-aa26-d17bc18ef622"
-				refpath="/form[@controlname='frmKto']/container[@controlname='ClientArea']/tabpagelist/tabpage[@accessiblename='Be&amp;reiche']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='frmKto']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='Be&amp;reiche']
-				</item>
-				<item
-				addcaps="text,accessible"
-				capname="text"
-				id="a23a756d-bc1e-45e0-bc04-feba9d5deaa9"
-				name="Verwendung"
-				refimgid="536e5768-eed0-42b2-8322-81f3953b019e"
-				refpath="/form[@controlname='frmKto']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgemein']/text[@controlname='dfKto_verwendg']/text[@accessiblename='Verwendung']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='frmKto']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgemein']/?/?/text[@accessiblename='Verwendung']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="bc79dac4-36ae-44f4-aa80-578676f1aee6"
-				name="Bereiche_Pflichtigkeit"
-				refimgid="7f434f70-82ff-4bd1-9787-6a10241ad4d9"
-				refpath="/form[@controlname='frmKto']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']/container[@controlname='tblKtbz']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKtbz_kz Row 1']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='frmKto']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKtbz_kz Row 1']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="4bcce6cf-3279-407f-964f-f75e623fd873"
-				name="ColKtgrCdRow1"
-				refimgid="681cbbd7-194f-42ae-b165-134917a35f84"
-				refpath="/form[@controlname='frmKto']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpGruppen']/container[@controlname='tblKtgz']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKtgr_cd Row 1']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='frmKto']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpGruppen']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKtgr_cd Row 1']
-				</item>
-				<item
-				addcaps="tabpage,accessible"
-				capname="tabpage"
-				id="40513e80-5b96-44ad-8f93-b824d20a29bc"
-				name="TabPageAllgemein"
-				refimgid="6676a3f6-3eff-4cf5-9ea1-7d24762f0e01"
-				refpath="/form[@controlname='frmKto']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&amp;Allgemein']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='frmKto']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&amp;Allgemein']
-				</item>
-				<item
-				addcaps="tabpage,accessible"
-				capname="tabpage"
-				id="6f36a84e-89a3-4121-b8bd-03f826b03804"
-				name="TabPageGruppen"
-				refimgid="b1319831-c270-4f50-960a-9057e994f93f"
-				refpath="/form[@controlname='frmKto']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&amp;Gruppen']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='frmKto']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&amp;Gruppen']
-				</item>
-				<basepath>
-					/form[@controlname='frmKto']/?/?/tabpagelist[@controlname='picTabs']
-				</basepath>
-			</folder>
-			<item
-			addcaps="text,accessible"
-			capname="text"
-			id="1b3e695a-c3ad-472c-a002-2b7b1d504760"
+			id="928b039c-314e-444a-b454-17926e640114"
 			name="Konto"
-			refimgid="50f37aef-7b60-41aa-89a1-8b9c88e58cf0"
+			refimgid="e06468cb-a1fa-4e34-b1e3-058d970963d1"
 			refpath="/form[@controlname='frmKto']/container[@controlname='ClientArea']/text[@controlname='dfKto_nr']/text[@accessiblename='Konto']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='frmKto']/container[@controlname='ClientArea']/?/?/text[@accessiblename='Konto']
+				/form[@controlname='frmKto']/container[@controlname='ClientArea']/text[@controlname='dfKto_nr']/text[@accessiblename='Konto']
 			</item>
 			<item
 			addcaps="text,accessible"
@@ -194,21 +93,80 @@ name="B_KTO_003Repository">
 			id="fc606dab-b191-46e0-84d4-e5b973d05517"
 			name="Bezeichnung"
 			refimgid="e2d83d5d-ec0f-4659-87cd-cb7505c35d42"
-			refpath="/form[@controlname='frmKto']/container[@controlname='ClientArea']/text[@controlname='dfKto_bez1']/text[@accessiblename='Bezeichnung']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='frmKto']/container[@controlname='ClientArea']/?/?/text[@accessiblename='Bezeichnung']
+				/form[@controlname='frmKto']/container[@controlname='ClientArea']/text[@controlname='dfKto_bez1']/text[@accessiblename='Bezeichnung']
 			</item>
 			<item
-			addcaps="text,control,nativewindow"
+			addcaps="text,accessible"
 			capname="text"
-			id="0bcadf06-bd9f-4ccc-9357-571a51b67daf"
-			name="DfKtoNr"
-			refimgid="7782f12f-18de-44e2-aba2-d185a9cf38cc"
-			refpath="/form[@controlname='frmKto']/container[@controlname='ClientArea']/text[@controlname='dfKto_nr']"
+			id="077c9b0a-ba7e-4001-b751-91312d487e88"
+			name="Waehrung"
+			refimgid="7505fa00-c926-4b0c-a25f-1b457c06998a"
+			refpath="/form[@controlname='frmKto']/container[@controlname='ClientArea']/text[@controlname='dfWrg_cd']/text[@accessiblename='Währung']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='frmKto']/?/?/text[@controlname='dfKto_nr']
+				/form[@controlname='frmKto']/container[@controlname='ClientArea']/text[@controlname='dfWrg_cd']/text[@accessiblename='Währung']
+			</item>
+			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="40513e80-5b96-44ad-8f93-b824d20a29bc"
+			name="TabPageAllgemein"
+			refimgid="6676a3f6-3eff-4cf5-9ea1-7d24762f0e01"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKto']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&amp;Allgemein']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="a23a756d-bc1e-45e0-bc04-feba9d5deaa9"
+			name="Verwendung"
+			refimgid="536e5768-eed0-42b2-8322-81f3953b019e"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKto']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgemein']/?/?/text[@accessiblename='Verwendung']
+			</item>
+			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="6f36a84e-89a3-4121-b8bd-03f826b03804"
+			name="TabPageGruppen"
+			refimgid="b1319831-c270-4f50-960a-9057e994f93f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKto']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&amp;Gruppen']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="4bcce6cf-3279-407f-964f-f75e623fd873"
+			name="ColKtgrCdRow1"
+			refimgid="681cbbd7-194f-42ae-b165-134917a35f84"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKto']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpGruppen']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKtgr_cd Row 1']
+			</item>
+			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="77b03917-3de1-4ad8-b195-8284b01af748"
+			name="Bereiche"
+			refimgid="0c0048a0-7436-4a5e-aa26-d17bc18ef622"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKto']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='Be&amp;reiche']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="bc79dac4-36ae-44f4-aa80-578676f1aee6"
+			name="Bereiche_Pflichtigkeit"
+			refimgid="7f434f70-82ff-4bd1-9787-6a10241ad4d9"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKto']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKtbz_kz Row 1']
 			</item>
 			<basepath>
 				/form[@controlname='frmKto']

@@ -79,8 +79,8 @@ namespace B_KTO_004.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Button_Reogarnisieren' at Center.", repo.FrmKto.Button_ReogarnisierenInfo, new RecordItemIndex(0));
-            repo.FrmKto.Button_Reogarnisieren.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PbCommonReorganisieren' at Center.", repo.FrmKto.PbCommonReorganisierenInfo, new RecordItemIndex(0));
+            repo.FrmKto.PbCommonReorganisieren.Click();
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ACHTUNG! \r\n \r\nDie Reorganisierung löscht alle Konten mit dem Status <gelöscht> \r\nund kann nicht mehr rückgängig gemacht werden. \r\n \r\nWollen Sie wirklich reorganisieren ? \r\n') on item 'DlgMessageBox.Meldung_Reogarnisieren'.", repo.DlgMessageBox.Meldung_ReogarnisierenInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.DlgMessageBox.Meldung_ReogarnisierenInfo, "Text", "ACHTUNG! \r\n \r\nDie Reorganisierung löscht alle Konten mit dem Status <gelöscht> \r\nund kann nicht mehr rückgängig gemacht werden. \r\n \r\nWollen Sie wirklich reorganisieren ? \r\n");

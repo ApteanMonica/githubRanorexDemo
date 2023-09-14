@@ -118,8 +118,8 @@ namespace B_KTO_003.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Button_Kopieren' at Center.", repo.FrmKto.Button_KopierenInfo, new RecordItemIndex(0));
-            repo.FrmKto.Button_Kopieren.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PbToolBarItemsKopieren' at Center.", repo.FrmKto.PbToolBarItemsKopierenInfo, new RecordItemIndex(0));
+            repo.FrmKto.PbToolBarItemsKopieren.Click();
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgCopyKto.NeueKontoNr' at Center.", repo.DlgCopyKto.NeueKontoNrInfo, new RecordItemIndex(1));
             repo.DlgCopyKto.NeueKontoNr.Click();

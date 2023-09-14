@@ -79,36 +79,39 @@ namespace B_KTO_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.TabPageGruppen' at Center.", repo.FrmKto.PicTabs.TabPageGruppenInfo, new RecordItemIndex(0));
-            repo.FrmKto.PicTabs.TabPageGruppen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.TabPageGruppen' at Center.", repo.FrmKto.TabPageGruppenInfo, new RecordItemIndex(0));
+            repo.FrmKto.TabPageGruppen.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.ColKtgrCdRow1' at Center.", repo.FrmKto.PicTabs.ColKtgrCdRow1Info, new RecordItemIndex(1));
-            repo.FrmKto.PicTabs.ColKtgrCdRow1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.ColKtgrCdRow1' at Center.", repo.FrmKto.ColKtgrCdRow1Info, new RecordItemIndex(1));
+            repo.FrmKto.ColKtgrCdRow1.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0035' with focus on 'FrmKto.PicTabs.TabPageGruppen'.", repo.FrmKto.PicTabs.TabPageGruppenInfo, new RecordItemIndex(2));
-            repo.FrmKto.PicTabs.TabPageGruppen.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0035' with focus on 'FrmKto.TabPageGruppen'.", repo.FrmKto.TabPageGruppenInfo, new RecordItemIndex(2));
+            repo.FrmKto.TabPageGruppen.EnsureVisible();
             Keyboard.Press("0035");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmKto.PicTabs.ColKtgrCdRow1'.", repo.FrmKto.PicTabs.ColKtgrCdRow1Info, new RecordItemIndex(3));
-            repo.FrmKto.PicTabs.ColKtgrCdRow1.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmKto.ColKtgrCdRow1'.", repo.FrmKto.ColKtgrCdRow1Info, new RecordItemIndex(3));
+            repo.FrmKto.ColKtgrCdRow1.EnsureVisible();
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bitte wählen Sie zuerst eine Kontoart!') on item 'DlgMessageBox.Meldung_Kontoanlage_allgemein_Kontoart'.", repo.DlgMessageBox.Meldung_Kontoanlage_allgemein_KontoartInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.DlgMessageBox.Meldung_Kontoanlage_allgemein_KontoartInfo, "Text", "Bitte wählen Sie zuerst eine Kontoart!");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(60000), new RecordItemIndex(4));
+            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bitte wählen Sie zuerst eine Kontoart!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Bitte wählen Sie zuerst eine Kontoart!");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(6));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PicTabs.TabPageAllgemein' at Center.", repo.FrmKto.PicTabs.TabPageAllgemeinInfo, new RecordItemIndex(6));
-            repo.FrmKto.PicTabs.TabPageAllgemein.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.TabPageAllgemein' at Center.", repo.FrmKto.TabPageAllgemeinInfo, new RecordItemIndex(7));
+            repo.FrmKto.TabPageAllgemein.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.RbAktiv' at Center.", repo.FrmKto.RbAktivInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.RbAktiv' at Center.", repo.FrmKto.RbAktivInfo, new RecordItemIndex(8));
             repo.FrmKto.RbAktiv.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmKto.RbAktiv'.", repo.FrmKto.RbAktivInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmKto.RbAktiv'.", repo.FrmKto.RbAktivInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.FrmKto.RbAktivInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PbDataAccessSave' at Center.", repo.FrmKto.PbDataAccessSaveInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PbDataAccessSave' at Center.", repo.FrmKto.PbDataAccessSaveInfo, new RecordItemIndex(10));
             repo.FrmKto.PbDataAccessSave.Click();
             
         }

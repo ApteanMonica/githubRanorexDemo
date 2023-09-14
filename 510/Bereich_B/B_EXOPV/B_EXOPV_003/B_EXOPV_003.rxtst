@@ -171,6 +171,10 @@
 					value="">
 					</param>
 					<param
+					name="Feldinhalt_ColExopDtherkunft_Stapel_4800"
+					value="">
+					</param>
+					<param
 					name="Feldinhalt_ColExopDtherkunftRow1"
 					value="">
 					</param>
@@ -290,18 +294,20 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Tagesdatum"
-					datasourceid="1ddc4117-b7a7-4af2-a999-d8e8be323916"
-					variableid="3c7c4aed-f4c3-4847-88c9-3c613a8b75cf"
-					variablename="Tagesdatum">
-					</var>
-					<var
 					dataname="Stapel_Betrag"
 					datasourceid="1ddc4117-b7a7-4af2-a999-d8e8be323916"
 					variableid="48b19637-43c3-4e36-928f-6ad2fe527894"
 					variablename="Stapel_Betrag">
 					</var>
 				</databinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="1ddc4117-b7a7-4af2-a999-d8e8be323916"
+					variableid="3c7c4aed-f4c3-4847-88c9-3c613a8b75cf"
+					variablename="Tagesdatum">
+					</var>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testcase
 			id="2f72726d-9b97-4ecf-ae59-e4ba1139a3ef"
@@ -314,16 +320,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm"
-					datasourceid="1ddc4117-b7a7-4af2-a999-d8e8be323916"
-					variableid="6dfb8f36-af10-4d1e-8a04-149f0f6329e6"
-					variablename="Programm">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="1ddc4117-b7a7-4af2-a999-d8e8be323916"
 					variableid="377116a3-5674-4470-9e0c-53fc532023d0"
 					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm"
+					datasourceid="1ddc4117-b7a7-4af2-a999-d8e8be323916"
+					variableid="6dfb8f36-af10-4d1e-8a04-149f0f6329e6"
+					variablename="Programm">
 					</var>
 				</databinding>
 			</testmodule>
@@ -370,16 +376,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Kunde_NR"
+					dataname="Stapel_Betrag"
 					datasourceid="1ddc4117-b7a7-4af2-a999-d8e8be323916"
-					variableid="ed606e7b-fe30-49d3-aea8-c252497223f4"
-					variablename="Kunde_NR">
-					</var>
-					<var
-					dataname="Beleg2"
-					datasourceid="1ddc4117-b7a7-4af2-a999-d8e8be323916"
-					variableid="3993af81-570d-41a2-a7a3-11594a929593"
-					variablename="Beleg2">
+					variableid="48b19637-43c3-4e36-928f-6ad2fe527894"
+					variablename="Stapel_Betrag">
 					</var>
 					<var
 					dataname="Fehlerprotokoll"
@@ -388,10 +388,16 @@
 					variablename="Fehlerprotokoll">
 					</var>
 					<var
-					dataname="Stapel_Betrag"
+					dataname="Beleg2"
 					datasourceid="1ddc4117-b7a7-4af2-a999-d8e8be323916"
-					variableid="48b19637-43c3-4e36-928f-6ad2fe527894"
-					variablename="Stapel_Betrag">
+					variableid="3993af81-570d-41a2-a7a3-11594a929593"
+					variablename="Beleg2">
+					</var>
+					<var
+					dataname="Kunde_NR"
+					datasourceid="1ddc4117-b7a7-4af2-a999-d8e8be323916"
+					variableid="ed606e7b-fe30-49d3-aea8-c252497223f4"
+					variablename="Kunde_NR">
 					</var>
 				</databinding>
 			</testmodule>
@@ -792,6 +798,49 @@
 			name="CloseAUT_2"
 			ref="566513c5-0901-426e-bacc-f224a10beb33"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="a9179fb0-2067-48cf-bf95-511682d75d39"
+			name="Tagesdatum_in_Stapel_pruefen_Usercode"
+			ref="959f3569-8795-45e1-998b-85b6d1a0e163"
+			type="Recording">
+				<description>
+					<![CDATA[UserCode Validierung Tagesdatum oder Tagesdatum2 in Stapel mit Beleg1 zur Vermeidung von Fehlern bei Tageswechsel]]>
+				</description>
+				<databinding>
+					<var
+					dataname="Tagesdatum2"
+					datasourceid="1ddc4117-b7a7-4af2-a999-d8e8be323916"
+					variableid="3b276ac6-07e0-49bd-a0f2-ef23b787b563"
+					variablename="Tagesdatum2">
+					</var>
+					<var
+					dataname="Stapel_Betrag"
+					datasourceid="1ddc4117-b7a7-4af2-a999-d8e8be323916"
+					variableid="48b19637-43c3-4e36-928f-6ad2fe527894"
+					variablename="Stapel_Betrag">
+					</var>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="1ddc4117-b7a7-4af2-a999-d8e8be323916"
+					variableid="2c9248be-12ff-4f0c-849d-d76b14c5730a"
+					variablename="Tagesdatum">
+					</var>
+					<var
+					dataname="Feldinhalt_ColExopDtherkunft_Stapel_4800"
+					datasourceid="1ddc4117-b7a7-4af2-a999-d8e8be323916"
+					variableid="c6c05335-ff43-42cc-a37f-75e6ed691bde"
+					variablename="Feldinhalt_ColExopDtherkunft_Stapel_4800">
+					</var>
+				</databinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="Beleg1"
+					datasourceid="1ddc4117-b7a7-4af2-a999-d8e8be323916"
+					variableid="0ab07f6b-63f3-4d64-b90b-ec09f32d3206"
+					variablename="Beleg1">
+					</var>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="b1d1436c-e940-40fe-acc8-b959ca2b6827"
@@ -1280,6 +1329,10 @@
 						<testmodule
 						id="2e09ba94-8f30-4e43-b6bc-5f1d5964afc7"
 						name="Stapel_validieren">
+						</testmodule>
+						<testmodule
+						id="a9179fb0-2067-48cf-bf95-511682d75d39"
+						name="Tagesdatum_in_Stapel_pruefen_Usercode">
 						</testmodule>
 						<testmodule
 						id="3f7e1992-199f-472a-9f83-d53425e5a58c"

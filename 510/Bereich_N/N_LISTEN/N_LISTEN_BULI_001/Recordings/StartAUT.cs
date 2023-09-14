@@ -42,7 +42,7 @@ namespace N_LISTEN_BULI_001.Recordings
         public StartAUT()
         {
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm = "N_ANLA";
+            Programm = "N_LISTEN Aufrufart BULI";
         }
 
         /// <summary>

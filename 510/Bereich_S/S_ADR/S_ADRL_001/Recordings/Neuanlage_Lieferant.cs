@@ -189,8 +189,8 @@ namespace S_ADRL_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Speicher_Button' at Center.", repo.FrmAdr.Speicher_ButtonInfo, new RecordItemIndex(14));
             repo.FrmAdr.Speicher_Button.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bitte Lieferantennummer eingeben !') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(15));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Bitte Lieferantennummer eingeben !");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bitte Lieferantennummer eingeben !') on item 'DlgMessageBox.LabelMeldungstext1'.", repo.DlgMessageBox.LabelMeldungstext1Info, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstext1Info, "Text", "Bitte Lieferantennummer eingeben !");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Bestaetigung_Fehlermeldung' at Center.", repo.DlgMessageBox.Bestaetigung_FehlermeldungInfo, new RecordItemIndex(16));
             repo.DlgMessageBox.Bestaetigung_Fehlermeldung.Click();

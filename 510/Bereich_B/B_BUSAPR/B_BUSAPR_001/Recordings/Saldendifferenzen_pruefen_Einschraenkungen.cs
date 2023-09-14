@@ -122,11 +122,11 @@ namespace B_BUSAPR_001.Recordings
             Keyboard.PrepareFocus(repo.FrmMain.Jahr);
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmMain.Jahr' at Center.", repo.FrmMain.JahrInfo, new RecordItemIndex(1));
-            repo.FrmMain.Jahr.DoubleClick();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmMain.Jahr' at Center.", repo.FrmMain.JahrInfo, new RecordItemIndex(1));
+            //repo.FrmMain.Jahr.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}' with focus on 'FrmMain.Jahr'.", repo.FrmMain.JahrInfo, new RecordItemIndex(2));
-            repo.FrmMain.Jahr.PressKeys("{Back}");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}' with focus on 'FrmMain.Jahr'.", repo.FrmMain.JahrInfo, new RecordItemIndex(2));
+            //repo.FrmMain.Jahr.PressKeys("{Back}");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'FrmMain.Jahr'.", repo.FrmMain.JahrInfo, new RecordItemIndex(3));
             repo.FrmMain.Jahr.PressKeys(Jahr);
@@ -144,8 +144,8 @@ namespace B_BUSAPR_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.Bis' at Center.", repo.FrmMain.BisInfo, new RecordItemIndex(8));
-            repo.FrmMain.Bis.Click();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(8));
+            Delay.Duration(1000, false);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Periode_bis' with focus on 'FrmMain.Bis'.", repo.FrmMain.BisInfo, new RecordItemIndex(9));
             repo.FrmMain.Bis.EnsureVisible();

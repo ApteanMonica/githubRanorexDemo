@@ -79,6 +79,9 @@ namespace N_LISTEN_BULI_002.Recordings
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmAnfi.TitleBar100AVZFirmenstamm'.", repo.FrmAnfi.TitleBar100AVZFirmenstammInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.FrmAnfi.TitleBar100AVZFirmenstamm, 1000);
+            
         }
 
 #region Image Feature Data
