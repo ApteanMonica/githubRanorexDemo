@@ -27,7 +27,7 @@ namespace B_ERBU_002.Recordings_SQL_Usercode
 }
 namespace B_ERBU_002.Recordings_SQL_Usercode
 {
-    public partial class SQL_Kontrolle_b_exsa_Belegnr_2200005_2200009
+    public partial class SQL_Kontrolle_b_exsa_Belegnr_2200005_2200009_uebergeleitet
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

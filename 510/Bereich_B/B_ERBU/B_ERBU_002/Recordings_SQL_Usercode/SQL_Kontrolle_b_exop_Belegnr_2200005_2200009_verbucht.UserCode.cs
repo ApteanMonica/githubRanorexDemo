@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_ERBU_002.Recordings_SQL_Usercode
 {
-    public partial class SQL_Kontrolle_b_exop_Belegnr_2200005_2200009
+    public partial class SQL_Kontrolle_b_exop_Belegnr_2200005_2200009_verbucht
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

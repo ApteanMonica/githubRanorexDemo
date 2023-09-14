@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="SQL_Kontrolle_b_exop_Belegnr_2200005_2200009"
+	classname="SQL_Kontrolle_b_exop_Belegnr_2200005_2200009_verbucht"
 	namespace="B_ERBU_002.Recordings_SQL_Usercode">
 	</codegen>
 	<variables>
@@ -35,16 +35,51 @@ mode="Global">
 		</var>
 		<var
 		id="d3d3c7bc-5d1b-469a-9a3f-7fb7b98d40c7"
-		name="file_selectergebnis_b_exop_aktuell">
-			C:\temp\B_ERBU_002_B_EXOP_aktuell.txt
+		name="file_selectergebnis_b_exop_verbucht_aktuell">
+			C:\temp\B_ERBU_002_B_EXOP_verbucht_aktuell.txt
 		</var>
 		<var
 		id="39140b55-00a2-4d54-ada6-851c7f1d7ec2"
-		name="file_selectergebnis_b_exop_Referenz">
-			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_002\B_ERBU_002_B_EXOP_Referenz.txt
+		name="file_selectergebnis_b_exop_verbucht_Referenz">
+			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_002\B_ERBU_002_B_EXOP_verbucht_Referenz.txt
 		</var>
 	</variables>
 	<recorditems>
+		<userrecorditem
+		classname="ApteanSQL"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ReadVersion"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c846b99a-82cb-440e-9e7e-11bf02c0614f">
+				<argument
+				argname="dbFile"
+				id="f2f0994d-dc0f-44db-99cc-1f0463bf8693">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\Testdaten\Allgemein\UserCode\datenbank.txt
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="bf9e294f-2177-4cdf-a28e-c573c0e62a2c">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						c:\temp\version_b_exop.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
 		enabled="True"
@@ -142,7 +177,6 @@ EXOP_UVAJAHR,
 EXOP_UVAMONAT,
 EXOP_UVATAG,
 EXOP_HERKUNFT,
-EXOP_DTHERKUNFT,
 EXOP_SELECT3,
 EXOP_SELECT4,
 EXOP_ARCHIVDOC1,
@@ -166,7 +200,6 @@ EXOP_KLDV_RECHAD,
 SAMK_CD,
 EXOP_DTLEISTUNG,
 EXOP_DTMNSPBIS,
-BUSA_KEYBEL,
 RTK_NR,
 EXOP_KZAUSGL,
 EXOP_KZSTORNO,
@@ -213,7 +246,7 @@ from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '220000
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\temp\B_ERBU_002_B_EXOP_aktuell.txt
+						C:\temp\B_ERBU_002_B_EXOP_verbucht_aktuell.txt
 					</argvalue>
 				</argument>
 			</arguments>
@@ -234,7 +267,7 @@ from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '220000
 				<argument
 				argname="file1"
 				id="306488dc-b70e-4cb1-80dc-85eb96a507d4"
-				variable="file_selectergebnis_b_exop_aktuell">
+				variable="file_selectergebnis_b_exop_verbucht_aktuell">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -244,7 +277,7 @@ from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '220000
 				<argument
 				argname="file2"
 				id="d60b2958-8554-4d59-8247-8ebc76a2705a"
-				variable="file_selectergebnis_b_exop_Referenz">
+				variable="file_selectergebnis_b_exop_verbucht_Referenz">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -269,7 +302,7 @@ from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '220000
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		SQL_Kontrolle_b_exop_Belegnr_2200005_2200009.UserCode.cs
+		SQL_Kontrolle_b_exop_Belegnr_2200005_2200009_verbucht.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
