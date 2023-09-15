@@ -3,42 +3,13 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
-			enabled="False"
-			id="03661f2d-4296-46b2-94b8-617599af82d2"
-			name="Buchungen_laden"
-			ref="a1791f3c-05e9-4ad0-9df1-f20d260c50ee"
-			type="Recording">
-				<description>
-					<![CDATA[Beleg 1001]]>
-				</description>
-				<databinding>
-					<var
-					dataname="Tagesdatum"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="900969ed-27ee-46ac-8539-cd083f8fa4de"
-					variablename="Tagesdatum">
-					</var>
-					<var
-					dataname="Beleg_NR"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="45450412-e2ee-4f6d-b254-75b8172cdacd"
-					variablename="Beleg_NR">
-					</var>
-					<var
-					dataname="Anzahl_OPs"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="1d603bdc-45b2-46b6-952d-2332e1ba932b"
-					variablename="Anzahl_OPs">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="03761cd1-b0bc-4227-a8f5-02ae5aa517fc"
 			name="Lieferantenzahlungen_aufrufen"
 			ref="28e3de5b-14a7-4d69-832d-a0f5acd650c1"
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="08df9d24-c52f-4bbe-ae13-3b46b1369799"
 			name="Bereichs_Buchungen_pruefen_A_ER002_Z_4_6"
 			ref="612baf67-3270-4667-b6ff-95cc17551104"
@@ -61,6 +32,7 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="0bce816f-90da-432a-acff-2bf4588d0603"
 			name="LF_303020_Saldo_pruefen"
 			ref="07071fc7-9f1b-4f7c-981e-b07d78b399c6"
@@ -81,6 +53,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="0c55f75a-402c-4a1b-aca5-11e365fe9a50"
 			name="LF_303022_DIV_2_aufrufen"
 			ref="0ec766e1-5cc1-4597-863e-2c24f7ad45ef"
@@ -95,6 +68,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="0d4b9508-0b53-4adb-8a37-3a169a407851"
 			name="LF_303022_DIV_1_Zeilen_Belege_pruefen"
 			ref="2e344167-6d56-4a50-b8f4-a78b4d4ebbcf"
@@ -118,6 +92,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="0fabd310-cddc-435b-9011-fe5a63cdf780"
 			name="LF_303023_Saldo_Summen_pruefen"
 			ref="8a280b5a-e071-4f44-b545-674b573dd64f"
@@ -138,6 +113,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="114b448a-bf50-453d-8367-b21577cead46"
 			name="Start_B_KLAB"
 			ref="ec3a49f4-b9ef-4328-b3aa-b9381f227982"
@@ -174,7 +150,7 @@
 			ref="9d4f59a9-9ef3-4f29-809b-8ca0da01da29"
 			type="Recording">
 				<description>
-					<![CDATA[39 rows Fehler "Illegales Zeichen im Pfad" bei Verwendung von Variablen für Pfade + Ausführung über Solution; Select wird bei Copy/Paste in den Default-Wert abgeschnitten]]>
+					<![CDATA[39 rows]]>
 				</description>
 				<databinding>
 					<var
@@ -235,6 +211,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="1f868005-1687-40f0-98f5-e367ca436c9d"
 			name="LF_303022_DIV_2_Zeilen_Belege_pruefen"
 			ref="2850d7d0-4e1f-4827-8287-919ab43e1887"
@@ -263,24 +240,6 @@
 			</smartfoldernode>
 			<testmodule
 			enabled="False"
-			id="20a81b15-f597-4712-8527-7d07462ab948"
-			name="Buchungen_pruefen_LF_303023_Zeile_34_39"
-			ref="53b9f960-240d-4245-b279-9646bc5c0f43"
-			type="Recording">
-				<description>
-					<![CDATA[Spalten 1 - 3 NICHT (gebucht am, Änderung/Storno
-Datum,Buchungs-Nr)]]>
-				</description>
-				<databinding>
-					<var
-					dataname="Beleg_NR"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="5abc9ed6-6c4e-42a9-898c-339911c0a153"
-					variablename="Beleg_Nr">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="29a3002d-94b3-4636-b26c-426092afc27e"
 			name="Kontrolle_Bankbeleg_Detail_B_ZAHL"
 			ref="69089942-052f-4d5a-8632-188fc536cc4e"
@@ -329,6 +288,7 @@ Datum,Buchungs-Nr)]]>
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="2d9e0149-df34-404d-a94e-3af8c4d79d97"
 			name="LF_303022_DIV_2_Saldo_Summen_pruefen"
 			ref="724756ae-f171-40d3-ba0d-94bcc73cdb35"
@@ -377,6 +337,7 @@ Datum,Buchungs-Nr)]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="357b839f-7e93-4f9b-bf66-e2e9341d888c"
 			name="Bereichs_Buchungen_pruefen_A_GS002_10_12"
 			ref="e780b013-c2db-4e5c-9590-369717a49b19"
@@ -427,6 +388,7 @@ Datum,Buchungs-Nr)]]>
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
+			enabled="False"
 			id="3b2234a6-088c-49a1-9c6a-8589ba74a38a"
 			name="LF_303022_DIV_1_aufrufen"
 			ref="cdd944df-02fe-4b04-ae62-ab97255f0ab0"
@@ -440,30 +402,12 @@ Datum,Buchungs-Nr)]]>
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			enabled="False"
-			id="3b227551-acc7-494e-901f-b94ee393bd0a"
-			name="Buchungen_pruefen_LF_303022_DIV_Zeile_25_33"
-			ref="213a3c52-3a17-47fb-af18-0cb593ce42f1"
-			type="Recording">
-				<description>
-					<![CDATA[Spalten 1 - 3 NICHT (gebucht am, Änderung/Storno
-Datum,Buchungs-Nr)]]>
-				</description>
-				<databinding>
-					<var
-					dataname="Beleg_NR"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="4adff270-ed7f-495d-ab2d-5627a9a3f4f8"
-					variablename="Beleg_Nr">
-					</var>
-				</databinding>
-			</testmodule>
 			<teardown
 			id="3f86b450-caec-4b41-827d-f20cdf552953"
 			name="teardown">
 			</teardown>
 			<testmodule
+			enabled="False"
 			id="439e8ef6-a85c-4d65-a61d-f4ac8bfa196f"
 			name="Bereichs_Buchungen_pruefen_A_GS003_Z_38"
 			ref="abe38439-b891-41bd-87cb-666d1763934b"
@@ -524,6 +468,7 @@ Datum,Buchungs-Nr)]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="4ab3beee-fdd8-4ebc-bb3b-f3b1a23b87e7"
 			name="Bereichs_Buchungen_pruefen_A_GS001_Z_7_9"
 			ref="e8c4683d-921c-408b-8568-39b5e69ea85f"
@@ -546,6 +491,7 @@ Datum,Buchungs-Nr)]]>
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="4b25a30c-22b9-4b9f-b5c7-41fe727cb5e5"
 			name="LF_303020_Aufruf_Suche"
 			ref="e0f49264-9686-4f87-b248-20537c771b5f"
@@ -560,6 +506,7 @@ Datum,Buchungs-Nr)]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="4d2c1b84-9751-4115-b5f0-03a72cfe829b"
 			name="LF_303020_Saldo_Summen_pruefen"
 			ref="8b271fb2-dcd7-4144-b7e7-2d3be4ada2cb"
@@ -583,10 +530,11 @@ Datum,Buchungs-Nr)]]>
 			id="5177c853-4461-4933-8cbd-6d4591513784"
 			name="Kontrolle_Sachbuchungen_B_BUAB_Summen">
 				<description>
-					<![CDATA[Prüfung nur bei erfolgten B_ZAHLV-Buchungen erfolgreich; Extra Testcase, weil ggv. B_ZAHLV einen Fehler bringen kann, aber der Bankbeleg trotzdem verbucht wurde und die Buchungen kontrolliert werden können.]]>
+					<![CDATA[<p>DISABLED: Ersetzt durch SQL-Kontrolle, bleibt&nbsp;aber als Ersatz für SQL</p>]]>
 				</description>
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="52a660e1-9dfd-4d82-8c0a-58dfcd346418"
 			name="Aufruf_Bankbeleg_bearbeiten"
 			ref="b4ec1fcb-63ac-49b7-b737-001a457aac80"
@@ -605,6 +553,7 @@ Datum,Buchungs-Nr)]]>
 			name="SQL-Kontrolle_B_BUSA">
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="68bbc46b-2746-47ac-8fdf-10867d0a7ba1"
 			name="OP_Tabelle_schliessen_zurueck"
 			ref="93be547d-cf9f-47c3-8764-65272414cf05"
@@ -619,6 +568,7 @@ Datum,Buchungs-Nr)]]>
 			name="LF_303022_DIVERSE_pruefen_B_KLAB">
 			</smartfoldernode>
 			<testmodule
+			enabled="False"
 			id="719c3638-0bcd-4a43-b407-b29d19365a74"
 			name="LF_303023_aufrufen_Saldo_pruefen"
 			ref="74816375-368d-4067-a9da-a6310c0feb75"
@@ -641,76 +591,33 @@ Datum,Buchungs-Nr)]]>
 			<testcase
 			id="7269910b-28bc-4db0-a508-e2903871f34d"
 			name="Kontrolle_Bankbeleg_B_ZAHL">
+				<description>
+					<![CDATA[<p>DISABLED: Ersetzt durch SQL-Kontrolle, bleibt&nbsp;aber als Ersatz für SQL </p>]]>
+				</description>
 			</testcase>
 			<testmodule
 			enabled="False"
-			id="73d5cd62-cb0c-489a-87be-b2444fcd4a6b"
-			name="Buchungen_pruefen_LF_303021_Zeile_10_24"
-			ref="e750d373-076c-41da-bdea-e156a990a4de"
-			type="Recording">
-				<description>
-					<![CDATA[Spalten 1 - 3 NICHT (gebucht am, Änderung/Storno
-Datum,Buchungs-Nr)]]>
-				</description>
-				<databinding>
-					<var
-					dataname="Beleg_NR"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="0478792b-7121-4d6e-9ff5-d684a51a4c90"
-					variablename="Beleg_Nr">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			enabled="False"
-			id="75b65f6f-5b42-4a64-92b4-18ee1be54b9b"
-			name="Buchungen_pruefen_LF_303020_Zeile_1_9"
-			ref="433e97e8-d32c-4a9e-9981-35bd66478b0a"
-			type="Recording">
-				<description>
-					<![CDATA[Spalten 1 - 3 NICHT (gebucht am, Änderung/Storno
-Datum,Buchungs-Nr)]]>
-				</description>
-				<databinding>
-					<var
-					dataname="Beleg_NR"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="75cbae12-1b9a-43f2-9d1b-f82335828285"
-					variablename="Beleg_Nr">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="75ff5943-1634-4d00-8935-90cb8f090479"
 			name="OP_Tabelle_schliessen_zurueck"
 			ref="93be547d-cf9f-47c3-8764-65272414cf05"
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="7a5e1fc3-1738-4f61-b63b-a800279625e3"
 			name="OP_Tabelle_Einschraenkungen"
 			ref="33bacff3-9ca2-4e37-a682-313dc06e8b93"
-			type="Recording">
-			</testmodule>
-			<teardown
-			id="7c288e44-de92-4641-b05d-2f08e091199d"
-			name="teardown">
-			</teardown>
-			<testmodule
-			enabled="False"
-			id="7df97276-cc31-4e10-8c6b-759021b625e1"
-			name="Option_Bereichsaufteilungszeilen_einschalten_laden"
-			ref="9a7422ad-f60d-4595-93ee-ca78cd565e4b"
 			type="Recording">
 			</testmodule>
 			<testcase
 			id="7e762c45-695d-4a17-9d71-1810c8605950"
 			name="Kontrolle_Offene_Posten_B_KLAB">
 				<description>
-					<![CDATA[<p>Achtung bei Fehler: Prüfung nur bei erfolgten B_ZAHLV-Buchungen erfolgreich; Extra Testcase, weil ggv. B_ZAHLV einen Fehler bringen kann, aber der Bankbeleg trotzdem verbucht wurde und die Buchungen kontrolliert werden können.Achtung bei Bei Fehler "Kontrolle Offene Posten B_KLAB" Validierung Saldo Titelleiste OP-Tabelle: Ticket 510/BX728: Betragsformat mit 1000er-Punkt geändert ab 510 SP10, 511 SP03, 521 SP05; in Validierung ist Betrag ohne Punkt. Nach Autotest in den Versionen die Saldo-Variable mit 1000er-Punkt eintragen.</p>]]>
+					<![CDATA[<p>DISABLED: Ersetzt durch SQL-Kontrolle, bleibt&nbsp;aber als Ersatz für SQL</p>]]>
 				</description>
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="8409459b-8e74-40bb-81b0-ba81fe597296"
 			name="LF_303023_Zeilen_Belege_pruefen"
 			ref="d3e75eb7-ab6b-42a9-933c-927c517351e0"
@@ -734,6 +641,7 @@ Datum,Buchungs-Nr)]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="890c4e25-e8ce-4e54-9a45-9ab5deb1e57c"
 			name="Kontrolle_Bankbeleg_B_ZAHL"
 			ref="eb51d755-4afe-42a6-97af-3d2a3a340321"
@@ -796,20 +704,15 @@ Datum,Buchungs-Nr)]]>
 			id="8dda4697-a28d-43f7-a195-63d6aa7c624f"
 			name="setup">
 			</setup>
-			<smartfoldernode
-			id="8f830f0c-709a-4903-815b-6f00b6e901f0"
-			name="Sachbuchungen_prüfen">
-				<description>
-					<![CDATA[ACHTUNG: für Kopieren der Werte aus Spy nicht den Editor verwenden (abw. Zeichen), sondern direkt als Validierungstext übernehmen und die ersten Werte bis inkl. Buchungsnummer entfernen.]]>
-				</description>
-			</smartfoldernode>
 			<testmodule
+			enabled="False"
 			id="911a108c-4fc3-48d2-9a34-95d76be3a95c"
 			name="OP_Tabelle_Einschraenkungen"
 			ref="33bacff3-9ca2-4e37-a682-313dc06e8b93"
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="94665693-7846-42c9-ad2b-dcbd1f70edd0"
 			name="Close_B_BUAB"
 			ref="9a6c42f3-e3c3-4744-9288-400d5dc321bc"
@@ -857,7 +760,7 @@ Datum,Buchungs-Nr)]]>
 			ref="05ffa528-e51a-472c-acf2-dea696d60ab2"
 			type="Recording">
 				<description>
-					<![CDATA[DISABLED Validierung Zeilen: Spalte 1-4 NICHT (Div.Nr., gebucht am, SkF, Buchungsnr) und Leerzeichen der letzten Spalten entfernt]]>
+					<![CDATA[DISABLED Fehler Validierung Zeilen: Spalte 1-4 NICHT (Div.Nr., gebucht am, SkF, Buchungsnr) und Leerzeichen der letzten Spalten entfernt]]>
 				</description>
 				<databinding>
 					<var
@@ -880,26 +783,9 @@ Datum,Buchungs-Nr)]]>
 			</setup>
 			<testmodule
 			enabled="False"
-			id="a4d731f1-50f3-4495-aa40-a3978de0d902"
-			name="Close_B_BUAB"
-			ref="9a6c42f3-e3c3-4744-9288-400d5dc321bc"
-			type="Recording">
-			</testmodule>
-			<setup
-			id="a6a946ca-1864-4937-bf26-6b3a13a77236"
-			name="setup">
-			</setup>
-			<testmodule
 			id="a75b8706-61e5-4bea-8481-3e2ff937080d"
 			name="OP_Tabelle_Einschraenkungen"
 			ref="33bacff3-9ca2-4e37-a682-313dc06e8b93"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			enabled="False"
-			id="a8c68441-9bf8-4425-8b7f-fe3e105f3cfa"
-			name="Option_Bereichsaufteilung_zuruecksetzen"
-			ref="123deb9b-59e4-410e-942a-49e965449b11"
 			type="Recording">
 			</testmodule>
 			<setup
@@ -907,6 +793,7 @@ Datum,Buchungs-Nr)]]>
 			name="setup">
 			</setup>
 			<testmodule
+			enabled="False"
 			id="aca771f9-de84-457e-873f-b80ed52614a8"
 			name="OP_Tabelle_Einschraenkungen"
 			ref="33bacff3-9ca2-4e37-a682-313dc06e8b93"
@@ -919,14 +806,8 @@ Datum,Buchungs-Nr)]]>
 					<![CDATA[<p>Wiederholung nur möglich mit Löschen der Buchungen + Wiederherstellung des ZV/Bankbelegs 1001&nbsp;(aus R510 oder mit&nbsp;SQL-Impport - s.Anforderungsdokument)</p>]]>
 				</description>
 			</testcase>
-			<smartfoldernode
-			id="b39ddb24-1cf1-47c9-998a-188d31c32c71"
-			name="Bereichsbuchungen_mit_Option_Zeilen">
-				<description>
-					<![CDATA[<p>DISABLED, weil keine Lösung gefunden: wenn die Option "Bereichsaufteilung verwenden" bei einem Fehler aktiviert bleibt, laufen nachfolgende Tests auf Fehler, weil Zeilenanzahl nicht mehr passt. Die Option kann aber auch nicht mit einem set value z. B. in tear down deaktiviert werden.</p>]]>
-				</description>
-			</smartfoldernode>
 			<testmodule
+			enabled="False"
 			id="b6302132-7223-43b9-89fe-4311a98111a6"
 			name="LF_303021_aufrufen_Saldo_pruefen"
 			ref="0b147d0e-04c1-4103-98ad-e516eef2071e"
@@ -947,6 +828,7 @@ Datum,Buchungs-Nr)]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="b7a0e200-e256-4869-a20d-2e1199377c17"
 			name="OP_Tabelle_Einschraenkungen"
 			ref="33bacff3-9ca2-4e37-a682-313dc06e8b93"
@@ -964,10 +846,11 @@ Datum,Buchungs-Nr)]]>
 			id="bad038b6-3551-47ff-8bc9-2f16a0e33db2"
 			name="Kontrolle_Bereichsbuchungen_B_BUAB">
 				<description>
-					<![CDATA[Prüfung nur bei erfolgten B_ZAHLV-Buchungen erfolgreich; Extra Testcase, weil ggv. B_ZAHLV einen Fehler bringen kann, aber der Bankbeleg trotzdem verbucht wurde und die Buchungen kontrolliert werden können.]]>
+					<![CDATA[<p>DISABLED: Ersetzt durch SQL-Kontrolle, bleibt&nbsp;aber als Ersatz für SQL</p>]]>
 				</description>
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="baf4433b-d09f-434a-b3ea-bd68e8c297f5"
 			name="Buchungen_laden"
 			ref="a1791f3c-05e9-4ad0-9df1-f20d260c50ee"
@@ -1001,6 +884,7 @@ Datum,Buchungs-Nr)]]>
 			name="teardown">
 			</teardown>
 			<testmodule
+			enabled="False"
 			id="bdff938c-934f-4312-9e27-63f6338c6c13"
 			name="Start_B_ZAHL"
 			ref="4c538d31-158a-4c60-90e8-37e5500277a9"
@@ -1021,6 +905,7 @@ Datum,Buchungs-Nr)]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="bfc65ea4-ea53-49cc-8f87-79f11396d5b4"
 			name="Start_B_BUAB"
 			ref="891c7138-b958-433c-9017-34664847163b"
@@ -1041,6 +926,7 @@ Datum,Buchungs-Nr)]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="c32d6ae4-62c9-4899-a223-d50107340541"
 			name="LF_303022_aufrufen_Saldo_pruefen"
 			ref="a6cf8863-0a01-4af5-bff5-a971a732d38a"
@@ -1061,6 +947,7 @@ Datum,Buchungs-Nr)]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="c9bd5e2c-7e92-476d-a912-016f912fff23"
 			name="Buchungen_laden"
 			ref="a1791f3c-05e9-4ad0-9df1-f20d260c50ee"
@@ -1094,6 +981,7 @@ Datum,Buchungs-Nr)]]>
 			name="setup">
 			</setup>
 			<testmodule
+			enabled="False"
 			id="cb00675f-eb0a-4d58-b170-ae556d2a4291"
 			name="LF_303022_aufrufen_Saldo_pruefen"
 			ref="a6cf8863-0a01-4af5-bff5-a971a732d38a"
@@ -1114,6 +1002,7 @@ Datum,Buchungs-Nr)]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="d0002632-424c-409a-ab1a-c429a7843a3c"
 			name="LF_303021_Saldo_Summen_pruefen"
 			ref="c14098a7-7971-4142-9735-bcf100ace7fb"
@@ -1134,6 +1023,7 @@ Datum,Buchungs-Nr)]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="d0514755-11a0-4cb2-a214-1a98a1e83f6e"
 			name="Buchungen_Summen_pruefen"
 			ref="4fa5da62-f56c-4afb-8c6f-d693e7cb49c2"
@@ -1155,6 +1045,7 @@ Datum,Buchungs-Nr)]]>
 			name="teardown">
 			</teardown>
 			<testmodule
+			enabled="False"
 			id="d5637d55-ce18-4c97-bc64-206c3fd27d4e"
 			name="LF_303022_DIV_1_Saldo_Summen_pruefen"
 			ref="6c443d7f-6b48-425c-9a46-7273a3eb5358"
@@ -1179,6 +1070,7 @@ Datum,Buchungs-Nr)]]>
 			name="setup">
 			</setup>
 			<testmodule
+			enabled="False"
 			id="d8a4358a-9202-469b-bedd-f351fad5a117"
 			name="Start_B_BUAB"
 			ref="891c7138-b958-433c-9017-34664847163b"
@@ -1205,6 +1097,7 @@ Datum,Buchungs-Nr)]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="db9924ee-5723-477d-bd18-08a2d61d7f3d"
 			name="OP_Tabelle_schliessen_zurueck"
 			ref="93be547d-cf9f-47c3-8764-65272414cf05"
@@ -1216,7 +1109,7 @@ Datum,Buchungs-Nr)]]>
 			ref="de7e28c1-932f-4774-9acd-61c34fac9c94"
 			type="Recording">
 				<description>
-					<![CDATA[15 rows, keybels 112 - 126, Kontrolle vor Verbuchung erforderlich, weil nach Verbuchung die Ursprungs-Daten verändert sind]]>
+					<![CDATA[15 rows, keybels 112 - 126, Kontrolle vor Verbuchung erforderlich, weil nach Verbuchung die Ursprungs-Daten verändert sind; nicht * sondern Spalten selectieren (wie bei b_buop_verbucht), weil Spalten/Reihenfolge in 521 abweicht]]>
 				</description>
 				<databinding>
 					<var
@@ -1246,6 +1139,7 @@ Datum,Buchungs-Nr)]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="e4e2e9c4-2988-468d-895b-7b23868edce5"
 			name="Bereichs_Buchungen_pruefen_A_ER012_Z_13_15"
 			ref="94b9035d-aa2c-4133-a898-6c4da83b107a"
@@ -1357,7 +1251,130 @@ Datum,Buchungs-Nr)]]>
 					</param>
 					<param
 					name="SQL_Select_B_BUOP_offen"
-					value="select * from b_buop where firm_nr = '100' and adr_nr BETWEEN '303020' AND '303023' AND busa_keybel BETWEEN 112 AND 126;">
+					value="select BUSA_USERAENDG,
+FIRM_NR,
+BUSA_KEYPOS,
+WRG_CD,
+BANK_NR,
+ADR_NR,
+KLDV_NR,
+KLBK_NR,
+BUOP_ART,
+BUOP_KL,
+BUOP_BELEGNR,
+BUOP_BELEGPOS,
+BUOP_ZAHLART,
+BUOP_ZAHLPOS,
+BUOP_ZAHLJAHR,
+BUOP_ZAHLPERIODE,
+BUOP_ZAHLDATUM,
+BUOP_ZAHLSTATUS,
+BUOP_STORNO,
+BUOP_DTFREMDBELEG,
+BUOP_NRFREMDBELEG,
+BUOP_KULINR,
+BUOP_DTFAELLIG,
+BUOP_DTVALUTA,
+BUOP_DTSKONTO1,
+BUOP_DTSKONTO2,
+BUOP_TAGEVALUTA,
+BUOP_TAGE1,
+BUOP_SKONTO1,
+BUOP_TAGE2,
+BUOP_SKONTO2,
+BUOP_TAGENETTO,
+BUOP_BETRAG,
+BUOP_OFFEN,
+BUOP_ABZUEGE,
+BUOP_SKONTO,
+BUOP_FWBETRAG,
+BUOP_FWOFFEN,
+BUOP_FWABZUEGE,
+BUOP_FWSKONTO,
+BUOP_KURSDIFF,
+BUOP_RECHBETRAG,
+BUOP_FWRECHBETRAG,
+BUOP_ZAHLBETRAG,
+BUOP_SKONTOBASIS,
+BUOP_MAHNSTUFE,
+BUOP_MAHNSPERRE,
+BUOP_MAHNUNBSKTO,
+BUOP_DTMAHN,
+BUOP_CD1,
+BUOP_CD2,
+BUOP_CD3,
+BUOP_UEBERWTEXT,
+BUOP_SELECT1,
+BUOP_SELECT2,
+BUOP_ZLVS,
+BUOP_ZAHLSTORNO,
+BUOP_DTABGLEICH,
+BUOP_RECHTYP,
+BUOP_KZEINHALT,
+BUOP_DTEINHALT,
+BUOP_EHPROZ,
+BUOP_EHBETRAG,
+BUOP_FWEHBETRAG,
+BUOP_EHKOBETRAG,
+BUOP_FWEHKOBETRAG,
+BUOP_DTEINHALT2,
+BUOP_EHPROZ2,
+BUOP_KZUST,
+BUOP_KZUSTUMB,
+BUOP_USTBETRAG,
+BUOP_FWUSTBETRAG,
+BUOP_SKONTOBASISRE,
+BUOP_ZAHLSPERRE,
+BUOP_BASISBETRAG,
+BUOP_BASISSKONTO,
+BUOP_BASISABZUEGE,
+BUOP_BASISKURSDIFF,
+BUOP_MONATNETTO,
+BUOP_KZFIXTAGE,
+BUOP_MONAT1,
+BUOP_MONAT2,
+BUOP_SKONTOUNB,
+BUOP_FWSKONTOUNB,
+BUOP_KZPROVISION,
+BUOP_ZAHLJAHR2,
+BUOP_ZAHLPERIODE2,
+BUOP_SELECT3,
+BUOP_SELECT4,
+BUOP_ADR_RECHAD,
+BUOP_KLDV_RECHAD,
+BUOP_DTMNSPBIS,
+BUOP_DTMNAENDG,
+RTK_NR,
+BUOP_DTSALD,
+BUOP_KZAUSGL,
+BUOP_KZZINSEN,
+BUOP_MAHNZINSEN,
+ADR_NR_ZAHLUNG,
+BUOP_BELTYP,
+BUOP_DTMNFAELL,
+BUOP_DTMNZAHL,
+MNV_NR,
+KLBK_NR_ZAHLUNG,
+BUOP_KZRECHTSKR,
+BUOP_ZINSBUCH,
+BUOP_ZINSRECH,
+BUOP_SALDJAHR,
+BUOP_SALDPERIODE,
+BUOP_DTIC,
+BUOP_ZS_NR,
+EXBK_NR,
+EXBP_NR,
+EXBO_NR,
+BUOP_KZPROVISIONSV,
+BUOP_KEYBEL_RATE,
+BUOP_KEYPOS_RATE,
+BUOP_FELD01,
+BUOP_FELD02,
+BUOP_FELD03,
+BUOP_FELD04,
+BUOP_FELD05
+from b_buop
+where firm_nr = '100' and adr_nr BETWEEN '303020' AND '303023';">
 					</param>
 					<param
 					name="file_selectergebnis_b_buop_offen_Referenz"
@@ -1696,14 +1713,8 @@ FROM	b_bube, b_busa
 					</param>
 				</parameters>
 			</testcase>
-			<testcase
-			id="eb79e375-746f-4c60-9372-eac32a7e40f4"
-			name="Kontrolle_Sachbuchungen_B_BUAB_Detailzeilen">
-				<description>
-					<![CDATA[<p>DISABLED Prüfung Buchungszeilen - Alternative mit SQL nötig</p><p>Prüfung nur bei erfolgten B_ZAHLV-Buchungen erfolgreich; Extra Testcase, weil ggv. B_ZAHLV einen Fehler bringen kann, aber der Bankbeleg trotzdem verbucht wurde und die Buchungen kontrolliert werden können.</p>]]>
-				</description>
-			</testcase>
 			<testmodule
+			enabled="False"
 			id="ef96f550-73cd-469d-84eb-89958e416aae"
 			name="LF_303021_Zeilen_Belege_pruefen"
 			ref="e4378ae2-4893-4644-a44b-8a1ac64512e5"
@@ -1741,27 +1752,6 @@ FROM	b_bube, b_busa
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
-			id="f3860927-48f0-4db6-8e11-9178a9d66eff"
-			name="Start_B_BUAB"
-			ref="891c7138-b958-433c-9017-34664847163b"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Startfile"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="503b65cc-9c92-4119-8b95-2d2fa4d465bf"
-					variablename="Startfile">
-					</var>
-					<var
-					dataname="Programm3"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="6ccff321-5516-4826-8fe9-f43cbf218a37"
-					variablename="Programm3">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="fc9cb145-c6db-4582-891e-1a1bc6837211"
 			name="Bankbeleg_kontrollieren_B_ZAHLV"
 			ref="5bda249e-a5ed-4f78-8aa6-f6ca67a80967"
@@ -1783,24 +1773,20 @@ FROM	b_bube, b_busa
 			</testmodule>
 			<testmodule
 			enabled="False"
-			id="fe0f26bd-f45f-4c08-bfeb-373e66b8cb4f"
-			name="Bereichskonten_in_Buchtungstabelle_pruefen"
-			ref="41906c23-f724-4a96-967a-85cfa7bef346"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="ff97340b-9716-4898-9554-2ff5bd9b8d1d"
 			name="Close_B_ZAHL"
 			ref="187aa65c-2aed-46b4-9ef2-6aaf8bc7eb7c"
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="ffa5ab82-b6fc-4ee7-b785-f6017a2607a6"
 			name="OP_Tabelle_schliessen_zurueck"
 			ref="93be547d-cf9f-47c3-8764-65272414cf05"
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="fffbbee1-c1c8-4c61-a8e3-737a2aff5cf2"
 			name="Close_B_BUAB"
 			ref="9a6c42f3-e3c3-4744-9288-400d5dc321bc"
@@ -1923,50 +1909,6 @@ FROM	b_bube, b_busa
 						</teardown>
 					</testcase>
 					<testcase
-					id="eb79e375-746f-4c60-9372-eac32a7e40f4"
-					name="Kontrolle_Sachbuchungen_B_BUAB_Detailzeilen">
-						<setup
-						id="a6a946ca-1864-4937-bf26-6b3a13a77236"
-						name="setup">
-							<testmodule
-							id="f3860927-48f0-4db6-8e11-9178a9d66eff"
-							name="Start_B_BUAB">
-							</testmodule>
-						</setup>
-						<testmodule
-						id="03661f2d-4296-46b2-94b8-617599af82d2"
-						name="Buchungen_laden">
-						</testmodule>
-						<smartfoldernode
-						id="8f830f0c-709a-4903-815b-6f00b6e901f0"
-						name="Sachbuchungen_prüfen">
-							<testmodule
-							id="75b65f6f-5b42-4a64-92b4-18ee1be54b9b"
-							name="Buchungen_pruefen_LF_303020_Zeile_1_9">
-							</testmodule>
-							<testmodule
-							id="73d5cd62-cb0c-489a-87be-b2444fcd4a6b"
-							name="Buchungen_pruefen_LF_303021_Zeile_10_24">
-							</testmodule>
-							<testmodule
-							id="3b227551-acc7-494e-901f-b94ee393bd0a"
-							name="Buchungen_pruefen_LF_303022_DIV_Zeile_25_33">
-							</testmodule>
-							<testmodule
-							id="20a81b15-f597-4712-8527-7d07462ab948"
-							name="Buchungen_pruefen_LF_303023_Zeile_34_39">
-							</testmodule>
-						</smartfoldernode>
-						<teardown
-						id="7c288e44-de92-4641-b05d-2f08e091199d"
-						name="teardown">
-							<testmodule
-							id="a4d731f1-50f3-4495-aa40-a3978de0d902"
-							name="Close_B_BUAB">
-							</testmodule>
-						</teardown>
-					</testcase>
-					<testcase
 					id="bad038b6-3551-47ff-8bc9-2f16a0e33db2"
 					name="Kontrolle_Bereichsbuchungen_B_BUAB">
 						<setup
@@ -2003,22 +1945,6 @@ FROM	b_bube, b_busa
 							<testmodule
 							id="439e8ef6-a85c-4d65-a61d-f4ac8bfa196f"
 							name="Bereichs_Buchungen_pruefen_A_GS003_Z_38">
-							</testmodule>
-						</smartfoldernode>
-						<smartfoldernode
-						id="b39ddb24-1cf1-47c9-998a-188d31c32c71"
-						name="Bereichsbuchungen_mit_Option_Zeilen">
-							<testmodule
-							id="7df97276-cc31-4e10-8c6b-759021b625e1"
-							name="Option_Bereichsaufteilungszeilen_einschalten_laden">
-							</testmodule>
-							<testmodule
-							id="fe0f26bd-f45f-4c08-bfeb-373e66b8cb4f"
-							name="Bereichskonten_in_Buchtungstabelle_pruefen">
-							</testmodule>
-							<testmodule
-							id="a8c68441-9bf8-4425-8b7f-fe3e105f3cfa"
-							name="Option_Bereichsaufteilung_zuruecksetzen">
 							</testmodule>
 						</smartfoldernode>
 						<teardown
