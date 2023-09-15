@@ -79,6 +79,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\..\Testdaten\Allgemein\UserCode\aptean.cs">
+      <Link>aptean.cs</Link>
+      <id>de26141b-7d84-4f44-b2e5-ff0f38eed17c</id>
+    </Compile>
+    <Compile Include="..\..\..\..\..\Testdaten\Allgemein\UserCode\apteanSQL.cs">
+      <Link>apteanSQL.cs</Link>
+      <id>7118b3b3-74c4-4713-8c29-eb94158694d4</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>e58f0507-c3c5-4cf6-932d-a0e87e3a3dcc</id>
     </Compile>
@@ -295,6 +303,30 @@
       <id>b7783cf2-ae73-4e29-ad22-031c36e88d52</id>
       <BoundTo>dff4dd76-bfa5-4c29-9389-97180ff4aab2</BoundTo>
     </Compile>
+    <Compile Include="Recordings_SQL_Usercode\SQL_Kontrolle_b_exop_Beleg_2300001_2300005.cs">
+      <BoundTo>97e71521-6e36-41a4-88ab-a99db1999140</BoundTo>
+      <DependentUpon>SQL_Kontrolle_b_exop_Beleg_2300001_2300005.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c9fe09f9-82a2-4e05-a538-ff53eade1d93</id>
+    </Compile>
+    <Compile Include="Recordings_SQL_Usercode\SQL_Kontrolle_b_exop_Beleg_2300001_2300005.UserCode.cs">
+      <BoundTo>97e71521-6e36-41a4-88ab-a99db1999140</BoundTo>
+      <DependentUpon>SQL_Kontrolle_b_exop_Beleg_2300001_2300005.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1092f9f4-444c-4940-a89d-0d0a42861150</id>
+    </Compile>
+    <Compile Include="Recordings_SQL_Usercode\SQL_Kontrolle_b_exsa_Beleg_2300001_2300005.cs">
+      <BoundTo>06d0f9c2-1121-454a-a67f-5bf6c738eb56</BoundTo>
+      <DependentUpon>SQL_Kontrolle_b_exsa_Beleg_2300001_2300005.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2e2c3d88-88ce-4ea7-a903-1c28ff262e79</id>
+    </Compile>
+    <Compile Include="Recordings_SQL_Usercode\SQL_Kontrolle_b_exsa_Beleg_2300001_2300005.UserCode.cs">
+      <BoundTo>06d0f9c2-1121-454a-a67f-5bf6c738eb56</BoundTo>
+      <DependentUpon>SQL_Kontrolle_b_exsa_Beleg_2300001_2300005.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bf13cb4a-eae1-4a28-a881-f76830c1c21d</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -396,6 +428,16 @@
       <recordtableid>c2ca4414-7bed-4e5c-8bcd-3ef2cca38574</recordtableid>
       <BoundTo>b71df3b2-4e99-44ca-be96-709e277a7667</BoundTo>
     </None>
+    <None Include="Recordings_SQL_Usercode\SQL_Kontrolle_b_exop_Beleg_2300001_2300005.rxrec">
+      <BoundTo>b71df3b2-4e99-44ca-be96-709e277a7667</BoundTo>
+      <id>97e71521-6e36-41a4-88ab-a99db1999140</id>
+      <recordtableid>33e99997-4d12-4dc3-9b75-48731d3bc6ec</recordtableid>
+    </None>
+    <None Include="Recordings_SQL_Usercode\SQL_Kontrolle_b_exsa_Beleg_2300001_2300005.rxrec">
+      <BoundTo>b71df3b2-4e99-44ca-be96-709e277a7667</BoundTo>
+      <id>06d0f9c2-1121-454a-a67f-5bf6c738eb56</id>
+      <recordtableid>e9303fcd-46d1-4e50-a9db-2a6e90421ab4</recordtableid>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="B_ERBU_003.rxtmg">
@@ -408,6 +450,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Recordings_SQL_Usercode">
+      <id>2d2d2e07-cc5e-4342-843a-39da5ed255da</id>
+    </Folder>
     <Folder Include="Recordings">
       <id>eeabd6dc-ddac-4875-9501-7b8024622137</id>
     </Folder>

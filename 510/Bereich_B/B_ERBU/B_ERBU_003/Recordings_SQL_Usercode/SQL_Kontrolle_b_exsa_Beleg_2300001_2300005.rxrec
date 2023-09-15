@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="e98aced8-eb72-4c51-bcc8-684064813db2"
+id="e9303fcd-46d1-4e50-a9db-2a6e90421ab4"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,29 +19,24 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="SQL_Kontrolle_b_exop_Belegnr_2200005_2200009_uebergeleitet"
-	namespace="B_ERBU_002.Recordings_SQL_Usercode">
+	classname="SQL_Kontrolle_b_exsa_Beleg_2300001_2300005"
+	namespace="B_ERBU_003.Recordings_SQL_Usercode">
 	</codegen>
 	<variables>
 		<var
-		id="b5031cb1-0cd9-4b44-b8d5-99da1726c99e"
-		name="SQL_Select_B_EXOP">
-			select  in default value wird bei copy/paste abgeschnitten
-		</var>
-		<var
-		id="83f47db7-ada9-4a65-9b02-225f1e6db018"
+		id="8af40913-a103-437a-80ec-80c2876578e7"
 		name="DB_File">
 			C:\Testdaten\Allgemein\UserCode\datenbank.txt
 		</var>
 		<var
-		id="e8d79a4a-5796-46cf-a52f-be2b1c9c4d5c"
-		name="file_selectergebnis_b_exop_uebergeleitet_aktuell">
-			C:\temp\B_ERBU_002_B_EXOP_uebergeleitet_aktuell.txt
+		id="0601747b-8a78-41b9-8c7e-36a80ebf8472"
+		name="file_selectergebnis_b_exsa_aktuell">
+			C:\temp\B_ERBU_003_B_EXSA_aktuell.txt
 		</var>
 		<var
-		id="ff0a7335-7365-4d47-9e08-247da1cdd740"
-		name="file_selectergebnis_b_exop_uebergeleitet_Referenz">
-			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_002\B_ERBU_002_B_EXOP_uebergeleitet_Referenz.txt
+		id="fffd72e5-712b-4813-a58b-de17e5d120e1"
+		name="file_selectergebnis_b_exsa_Referenz">
+			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_003\B_ERBU_003_B_EXSA_verbucht_Referenz.txt
 		</var>
 	</variables>
 	<recorditems>
@@ -75,7 +70,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						c:\temp\version_b_erbu_002_b_exop.txt
+						c:\temp\version_b_erbu_003_b_exsa.txt
 					</argvalue>
 				</argument>
 			</arguments>
@@ -100,132 +95,62 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						select 
-FIRM_NR,
-ADR_NR,
-KLDV_NR,
-KLBK_NR,
-WRG_CD,
-KTO_NR,
-EXOP_STATUS,
-EXOP_ART,
-EXOP_KL,
-EXOP_JAHR,
-EXOP_PERIODE,
-EXOP_BELEGNR,
-EXOP_DTBELEG,
-EXOP_DTFREMDBELEG,
-EXOP_NRFREMDBELEG,
-EXOP_DTFAELLIG,
-EXOP_DTVALUTA,
-EXOP_TAGE1,
-EXOP_SKONTO1,
-EXOP_TAGE2,
-EXOP_SKONTO2,
-EXOP_TAGENETTO,
-EXOP_ZAHLART,
-EXOP_BETRAG,
-EXOP_FWBETRAG,
-EXOP_KURS,
-EXOP_RECHBETRAG,
-EXOP_ZAHLBETRAG,
-EXOP_SKONTOBASIS,
-EXOP_TEXT1,
-EXOP_TEXT2,
-EXOP_UEBERWTEXT,
-EXOP_REFBELEGNR,
-EXOP_BUSY,
-EXOP_MAHNSTUFE,
-EXOP_TEXTCD,
-EXOP_SELECT1,
-EXOP_SELECT2,
-EXOP_MAHNSPERRE,
-EXOP_ZAHLSPERRE,
-EXOP_DTEINHALT,
-EXOP_EHPROZ,
-EXOP_EHBETRAG,
-EXOP_FWEHBETRAG,
-EXOP_DTEINHALT2,
-EXOP_EHPROZ2,
-EXOP_EHBETRAG2,
-EXOP_FWEHBETRAG2,
-EXOP_BEZUG,
-EXOP_BEZUG2,
-EXOP_TEILRECHNR,
-EXOP_KZFIXTAGE,
-EXOP_MONAT1,
-EXOP_MONAT2,
-EXOP_MONATNETTO,
-EXOP_KZDIVERSE,
-EXOP_ADRESSE1,
-EXOP_ADRESSE2,
-EXOP_ADRESSE3,
-EXOP_ADRESSE4,
-EXOP_ADRESSE5,
-LAND_CD,
-PLZ_CD,
-EXOP_ORT,
-SPRA_CD,
-ANRD_CD,
-EXOP_NAME,
-EXOP_PERSONEN,
-EXOP_KZOK,
-EXOP_USEROK,
-EXOP_USERHERKUNFT,
-EXOP_MATPREIS,
-EXOP_UVAJAHR,
-EXOP_UVAMONAT,
-EXOP_UVATAG,
-EXOP_HERKUNFT,
-EXOP_SELECT3,
-EXOP_SELECT4,
-EXOP_ARCHIVDOC1,
-USER_CD,
-EXOP_KZEXOPA,
-FIRM_NR_RECH,
-EXOP_FELD1,
-EXOP_FELD2,
-EXOP_FELD3,
-EXOP_FELD4,
-EXOP_USERANLAG,
-EXOP_USERAENDG,
-EXOP_REFKEYBEL,
-EXOP_REFKEYPOS,
-EXOP_KZSKONTO,
-EXOP_SKBETRAG,
-EXOP_FWSKBETRAG,
-EXOP_ARCHIVNR,
-EXOP_ADR_RECHAD,
-EXOP_KLDV_RECHAD,
-SAMK_CD,
-EXOP_DTLEISTUNG,
-EXOP_DTMNSPBIS,
-RTK_NR,
-EXOP_KZAUSGL,
-EXOP_KZSTORNO,
-EXOP_STORNOGRUND,
-EXOP_KZZINSEN,
-EXOP_BELTYP,
-EXOP_ZNSBETRAG,
-EXOP_FWZNSBETRAG,
-MNV_NR,
-EXOP_DTZLSPBIS,
-ZART_CD,
-EXOP_KZRECHTSKR,
-ADR_NR_ZAHLUNG,
-KLBK_NR_ZAHLUNG,
-EXBK_NR,
-EXBP_NR,
-EXBO_NR,
-EXOP_RTKREF,
-RST_CD,
-EXOP_FELD01,
-EXOP_FELD02,
-EXOP_FELD03,
-EXOP_FELD04,
-EXOP_FELD05,
-EXOP_USERVWDG
-from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '2200009';
+						select
+b_exsa.FIRM_NR,
+EXSA_KEYPOS,
+EXSA_BER_CD6,
+EXSA_BEKT_NR6,
+EXSA_BER_CD5,
+EXSA_BEKT_NR5,
+EXSA_BER_CD4,
+EXSA_BEKT_NR4,
+EXSA_BER_CD1,
+EXSA_BEKT_NR1,
+EXSA_BER_CD2,
+EXSA_BEKT_NR2,
+EXSA_BER_CD3,
+EXSA_BEKT_NR3,
+UST_CD,
+EXSA_ART,
+EXSA_KTONR,
+EXSA_SKONTOKZ,
+EXSA_SH,
+EXSA_BETRAG,
+EXSA_FWBETRAG,
+EXSA_MENGE,
+EXSA_USTBETRAG,
+EXSA_USTFWBETRAG,
+EXSA_USTMV,
+EXSA_USTSATZ,
+EXSA_TEXT1,
+EXSA_TEXT2,
+EXSA_TEXTCD,
+EXSA_BESTELLNR,
+EXSA_LIEFSNR,
+ANLA_NR,
+ANLA_POS,
+KTBE_NR,
+PVT_CD,
+EXSA_JAHR_BUBE_VON,
+EXSA_MON_BUBE_VON,
+EXSA_JAHR_BUBE_BIS,
+EXSA_MON_BUBE_BIS,
+EXSA_FELD1,
+EXSA_FELD2,
+EXSA_FELD3,
+EXSA_FELD4,
+EXSA_UID,
+EXSA_ARCHIVNR,
+EXSA_ARCHIVDOC1,
+EXSA_DTLEISTUNG,
+EXSA_MENGE2,
+EXSA_DTOPFAELL,
+EXSA_VNROPAUSGL
+from b_exsa, b_exop
+where b_exop.firm_nr = b_exsa.firm_nr
+AND b_exop.exop_keybel = b_exsa.exop_keybel
+AND b_exop.firm_nr = '100' 
+AND exop_belegnr BETWEEN '2300001' AND '2300005';
 					</argvalue>
 				</argument>
 				<argument
@@ -246,7 +171,7 @@ from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '220000
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\temp\B_ERBU_002_B_EXOP_uebergeleitet_aktuell.txt
+						C:\temp\B_ERBU_003_B_EXSA_aktuell.txt
 					</argvalue>
 				</argument>
 			</arguments>
@@ -267,7 +192,7 @@ from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '220000
 				<argument
 				argname="file1"
 				id="306488dc-b70e-4cb1-80dc-85eb96a507d4"
-				variable="file_selectergebnis_b_exop_uebergeleitet_aktuell">
+				variable="file_selectergebnis_b_exsa_aktuell">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -277,7 +202,7 @@ from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '220000
 				<argument
 				argname="file2"
 				id="d60b2958-8554-4d59-8247-8ebc76a2705a"
-				variable="file_selectergebnis_b_exop_uebergeleitet_Referenz">
+				variable="file_selectergebnis_b_exsa_Referenz">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -288,21 +213,21 @@ from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '220000
 		</userrecorditem>
 	</recorditems>
 	<repository
-	id="6b330eef-8fa5-463a-91e6-7ba656f7fb14"
-	name="B_ERBU_002Repository"
-	relativepath="..\B_ERBU_002Repository.rxrep">
+	id="2eeb926b-9832-4014-b8aa-11e606a83928"
+	name="B_ERBU_003Repository"
+	relativepath="..\B_ERBU_003Repository.rxrep">
 		<codegen
-		classname="B_ERBU_002Repository"
-		namespace="B_ERBU_002">
+		classname="B_ERBU_003Repository"
+		namespace="B_ERBU_003">
 		</codegen>
 		<rootfolder
-		id="3331ac05-76c2-4ea1-b1bf-a137c034983c"
+		id="12dc9f5a-cf3a-4aa0-b316-af3f37a19f9a"
 		name="_rootdummy_">
 		</rootfolder>
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		SQL_Kontrolle_b_exop_Belegnr_2200005_2200009_uebergeleitet.UserCode.cs
+		SQL_Kontrolle_b_exsa_Beleg_2300001_2300005.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

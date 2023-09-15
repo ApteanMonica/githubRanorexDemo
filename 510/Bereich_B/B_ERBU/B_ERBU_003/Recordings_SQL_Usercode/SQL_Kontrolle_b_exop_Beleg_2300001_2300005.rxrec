@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="e98aced8-eb72-4c51-bcc8-684064813db2"
+id="33e99997-4d12-4dc3-9b75-48731d3bc6ec"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,33 +19,29 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="SQL_Kontrolle_b_exop_Belegnr_2200005_2200009_uebergeleitet"
-	namespace="B_ERBU_002.Recordings_SQL_Usercode">
+	classname="SQL_Kontrolle_b_exop_Beleg_2300001_2300005"
+	namespace="B_ERBU_003.Recordings_SQL_Usercode">
 	</codegen>
 	<variables>
 		<var
-		id="b5031cb1-0cd9-4b44-b8d5-99da1726c99e"
-		name="SQL_Select_B_EXOP">
-			select  in default value wird bei copy/paste abgeschnitten
-		</var>
-		<var
-		id="83f47db7-ada9-4a65-9b02-225f1e6db018"
+		id="fa2ead0f-f13b-4d84-8dec-01a15d8010e3"
 		name="DB_File">
 			C:\Testdaten\Allgemein\UserCode\datenbank.txt
 		</var>
 		<var
-		id="e8d79a4a-5796-46cf-a52f-be2b1c9c4d5c"
-		name="file_selectergebnis_b_exop_uebergeleitet_aktuell">
-			C:\temp\B_ERBU_002_B_EXOP_uebergeleitet_aktuell.txt
+		id="f9ee2768-44ea-4dbe-a575-ff674c5180f2"
+		name="file_selectergebnis_b_exop_aktuell">
+			C:\temp\B_ERBU_003_B_EXOP_aktuell.txt
 		</var>
 		<var
-		id="ff0a7335-7365-4d47-9e08-247da1cdd740"
-		name="file_selectergebnis_b_exop_uebergeleitet_Referenz">
-			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_002\B_ERBU_002_B_EXOP_uebergeleitet_Referenz.txt
+		id="8cfdefab-7e1f-4bdd-ad4f-2f4f11a0ba92"
+		name="file_selectergebnis_b_exop_Referenz">
+			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_003\B_ERBU_003_B_EXOP_Referenz.txt
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
+		autogenmethod="True"
 		classname="ApteanSQL"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -75,12 +71,13 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						c:\temp\version_b_erbu_002_b_exop.txt
+						c:\temp\version_b_erbu_003_b_exop.txt
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		autogenmethod="True"
 		classname="ApteanSQL"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -225,7 +222,7 @@ EXOP_FELD03,
 EXOP_FELD04,
 EXOP_FELD05,
 EXOP_USERVWDG
-from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '2200009';
+from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2300001' AND '2300005';
 					</argvalue>
 				</argument>
 				<argument
@@ -246,12 +243,13 @@ from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '220000
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\temp\B_ERBU_002_B_EXOP_uebergeleitet_aktuell.txt
+						C:\temp\B_ERBU_003_B_EXOP_aktuell.txt
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		autogenmethod="True"
 		classname="ApteanSQL"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -267,7 +265,7 @@ from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '220000
 				<argument
 				argname="file1"
 				id="306488dc-b70e-4cb1-80dc-85eb96a507d4"
-				variable="file_selectergebnis_b_exop_uebergeleitet_aktuell">
+				variable="file_selectergebnis_b_exop_aktuell">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -277,7 +275,7 @@ from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '220000
 				<argument
 				argname="file2"
 				id="d60b2958-8554-4d59-8247-8ebc76a2705a"
-				variable="file_selectergebnis_b_exop_uebergeleitet_Referenz">
+				variable="file_selectergebnis_b_exop_Referenz">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -288,21 +286,21 @@ from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '220000
 		</userrecorditem>
 	</recorditems>
 	<repository
-	id="6b330eef-8fa5-463a-91e6-7ba656f7fb14"
-	name="B_ERBU_002Repository"
-	relativepath="..\B_ERBU_002Repository.rxrep">
+	id="2eeb926b-9832-4014-b8aa-11e606a83928"
+	name="B_ERBU_003Repository"
+	relativepath="..\B_ERBU_003Repository.rxrep">
 		<codegen
-		classname="B_ERBU_002Repository"
-		namespace="B_ERBU_002">
+		classname="B_ERBU_003Repository"
+		namespace="B_ERBU_003">
 		</codegen>
 		<rootfolder
-		id="3331ac05-76c2-4ea1-b1bf-a137c034983c"
+		id="12dc9f5a-cf3a-4aa0-b316-af3f37a19f9a"
 		name="_rootdummy_">
 		</rootfolder>
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		SQL_Kontrolle_b_exop_Belegnr_2200005_2200009_uebergeleitet.UserCode.cs
+		SQL_Kontrolle_b_exop_2300001_2300005.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
