@@ -117,4 +117,5 @@ jobs:
       AddAttachment: true
       Attachment: '$(Build.ArtifactStagingDirectory)/drop/reports.zip'
       SmtpUsername: 'RSautomation@aptean.com'
-      SmtpPassword: '$(SMTP_UserPassword)'      
+      SmtpPassword: '$(SMTP_UserPassword)'
+      UseSSL: true      
