@@ -133,6 +133,41 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="1247429e-762b-4ada-8911-06eb33f6f5e7"
+			name="SQL_Kontrolle_b_zlvs_Bankbeleg_Details"
+			ref="b73dbd7c-0631-44ce-86c9-28ebcb4a9100"
+			type="Recording">
+				<description>
+					<![CDATA[15 rows, keybels 112 - 126, Kontrolle vor Verbuchung erforderlich, weil nach Verbuchung die Daten nicht mehr für eine Analyse vorhanden sind]]>
+				</description>
+				<databinding>
+					<var
+					dataname="file_selectergebnis_b_zlvs_aktuell"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="a0990d32-9ba3-486a-aaf6-f2a1f930c201"
+					variablename="file_selectergebnis_b_zlvs_aktuell">
+					</var>
+					<var
+					dataname="file_selectergebnis_b_zlvs_Referenz"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="c7af9926-6ec7-4ab2-b637-470a8494ebeb"
+					variablename="file_selectergebnis_b_zlvs_Referenz">
+					</var>
+					<var
+					dataname="SQL_Select_B_ZLVS"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="0a122bcd-58da-4679-99ef-9f53b25facc8"
+					variablename="SQL_Select_B_ZLVS">
+					</var>
+					<var
+					dataname="DB_File"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="915a9a1c-3f12-457e-af39-c4e72e51ca13"
+					variablename="DB_File">
+					</var>
+				</databinding>
+			</testmodule>
 			<smartfoldernode
 			id="1731a52b-d88e-483b-bf8c-b21dd4d9622d"
 			name="Kontrolle_Bereichsbuchungen_Button_Bereichsaufteilung">
@@ -314,7 +349,7 @@
 			</smartfoldernode>
 			<testcase
 			id="324831c8-adbd-4059-a1e7-7684b08e04aa"
-			name="SQL_Kontrolle_OPs_und_Bankbeleg_vor_Zahlungsbuchung">
+			name="SQL_Kontrolle_OPs_vor_Verbuchung">
 			</testcase>
 			<testmodule
 			id="33d53de1-f598-4511-b22e-0a368b10e574"
@@ -467,6 +502,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="4a0b19ca-fa88-4006-837e-6041ad08f299"
+			name="SQL_Kontrolle_Bankbeleg_vor_Verbuchung">
+			</testcase>
 			<testmodule
 			enabled="False"
 			id="4ab3beee-fdd8-4ebc-bb3b-f3b1a23b87e7"
@@ -658,41 +697,6 @@
 					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
 					variableid="aa3275ba-44d8-4a72-b8d1-18d7724d6b4c"
 					variablename="Beleg_NR">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="8a2b6980-d53a-42e1-ad62-c7dd0d5cf1f4"
-			name="SQL_Kontrolle_b_zlvs_Bankbeleg_Details"
-			ref="b73dbd7c-0631-44ce-86c9-28ebcb4a9100"
-			type="Recording">
-				<description>
-					<![CDATA[15 rows, keybels 112 - 126, Kontrolle vor Verbuchung erforderlich, weil nach Verbuchung die Daten nicht mehr für eine Analyse vorhanden sind]]>
-				</description>
-				<databinding>
-					<var
-					dataname="file_selectergebnis_b_zlvs_aktuell"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="a0990d32-9ba3-486a-aaf6-f2a1f930c201"
-					variablename="file_selectergebnis_b_zlvs_aktuell">
-					</var>
-					<var
-					dataname="file_selectergebnis_b_zlvs_Referenz"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="c7af9926-6ec7-4ab2-b637-470a8494ebeb"
-					variablename="file_selectergebnis_b_zlvs_Referenz">
-					</var>
-					<var
-					dataname="SQL_Select_B_ZLVS"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="0a122bcd-58da-4679-99ef-9f53b25facc8"
-					variablename="SQL_Select_B_ZLVS">
-					</var>
-					<var
-					dataname="DB_File"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="915a9a1c-3f12-457e-af39-c4e72e51ca13"
-					variablename="DB_File">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1834,13 +1838,17 @@ FROM	b_bube, b_busa
 					</testcase>
 					<testcase
 					id="324831c8-adbd-4059-a1e7-7684b08e04aa"
-					name="SQL_Kontrolle_OPs_und_Bankbeleg_vor_Zahlungsbuchung">
+					name="SQL_Kontrolle_OPs_vor_Verbuchung">
 						<testmodule
 						id="e2a4136e-4044-45d1-a42a-bf7b73d72be5"
 						name="SQL_Kontrolle_b_buop_offen_LF_303020_303023">
 						</testmodule>
+					</testcase>
+					<testcase
+					id="4a0b19ca-fa88-4006-837e-6041ad08f299"
+					name="SQL_Kontrolle_Bankbeleg_vor_Verbuchung">
 						<testmodule
-						id="8a2b6980-d53a-42e1-ad62-c7dd0d5cf1f4"
+						id="1247429e-762b-4ada-8911-06eb33f6f5e7"
 						name="SQL_Kontrolle_b_zlvs_Bankbeleg_Details">
 						</testmodule>
 					</testcase>
@@ -2193,6 +2201,9 @@ FROM	b_bube, b_busa
 		name="TestRun">
 			<testcontainer
 			id="324831c8-adbd-4059-a1e7-7684b08e04aa">
+			</testcontainer>
+			<testcontainer
+			id="4a0b19ca-fa88-4006-837e-6041ad08f299">
 			</testcontainer>
 			<testcontainer
 			id="53ba31ae-4a04-48e8-acbe-a88298197076">
