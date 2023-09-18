@@ -6643,7 +6643,7 @@ namespace B_ERBU_002
             /// Creates a new ExoperrTxtEditor  folder.
             /// </summary>
             public ExoperrTxtEditorAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("ExoperrTxtEditor", "/form[@title='exoperr.txt - Editor']", parentFolder, 30000, null, true, "eaed9bac-b816-45a1-9f24-90e656a0327c", "")
+                    base("ExoperrTxtEditor", "/form[@title~'Editor']", parentFolder, 30000, null, true, "eaed9bac-b816-45a1-9f24-90e656a0327c", "")
             {
                 _exoperrtxteditorInfo = new RepoItemInfo(this, "ExoperrTxtEditor", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "3c0b196d-adff-4da4-afe4-0e80a8ec827f");
                 _text15Info = new RepoItemInfo(this, "Text15", "text[@controlid='15']", "", 30000, null, "b049d218-b1f6-421e-8862-be3884c63b17");
