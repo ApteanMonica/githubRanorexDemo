@@ -249,7 +249,7 @@
 			id="7b5daa57-bfc7-43b5-a1c2-1feef0785fa9"
 			name="ERs_in_Schnittstelle_prüfen">
 				<description>
-					<![CDATA[Disabled - ersetzt durch SQL-Kontrolle (Recordings in Testcase belassen als Alternative für die SQL-Kontrolle)]]>
+					<![CDATA[DISABLED&nbsp;- ersetzt durch SQL-Kontrolle (Recordings in Testcase belassen als Alternative für die SQL-Kontrolle)]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -949,20 +949,6 @@ AND exop_belegnr BETWEEN '2200005' AND '2200009';">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="c8c06ce1-e19b-4745-bcd2-58d49ba1dcfb"
-			name="Tagesdatum_ermitteln"
-			ref="14fc9988-f388-43f4-bf65-9ae8a51eee3e"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Tagesdatum"
-					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
-					variableid="e47c2ff8-98c8-468a-8db0-b5ebe4ed0979"
-					variablename="Tagesdatum">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="cfa3445c-84ce-4871-9967-4d9a12889040"
 			name="CloseAUT"
 			ref="84d39391-3c1f-4638-bc99-9e36e81158b1"
@@ -1022,6 +1008,12 @@ AND exop_belegnr BETWEEN '2200005' AND '2200009';">
 					variablename="Monat">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="eba86118-bc0c-4848-ac0a-2f45415a75c7"
+			name="Editor_schliessen"
+			ref="efa8e223-7537-499b-96b6-2114bb6e820d"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			enabled="False"
@@ -1089,10 +1081,6 @@ AND exop_belegnr BETWEEN '2200005' AND '2200009';">
 							<testmodule
 							id="9adf63e4-4dac-48a7-8b93-1c3336b79c0e"
 							name="StartAUT">
-							</testmodule>
-							<testmodule
-							id="c8c06ce1-e19b-4745-bcd2-58d49ba1dcfb"
-							name="Tagesdatum_ermitteln">
 							</testmodule>
 						</setup>
 						<testmodule
@@ -1239,6 +1227,10 @@ AND exop_belegnr BETWEEN '2200005' AND '2200009';">
 						id="b0009670-6f28-4881-a7f9-2bb6c17e5235"
 						name="teardown">
 							<testmodule
+							id="eba86118-bc0c-4848-ac0a-2f45415a75c7"
+							name="Editor_schliessen">
+							</testmodule>
+							<testmodule
 							id="ac6dd348-670e-4489-8822-089d851c5a8b"
 							name="CloseAUT_B_EXOPV">
 							</testmodule>
@@ -1298,6 +1290,9 @@ AND exop_belegnr BETWEEN '2200005' AND '2200009';">
 			</testcontainer>
 			<testcontainer
 			id="7b408756-d454-4af7-b7c1-a08347c22ec0">
+			</testcontainer>
+			<testcontainer
+			id="7b5daa57-bfc7-43b5-a1c2-1feef0785fa9">
 			</testcontainer>
 			<testcontainer
 			id="82e1b999-f3fa-4e25-9c57-6d74722483d6">

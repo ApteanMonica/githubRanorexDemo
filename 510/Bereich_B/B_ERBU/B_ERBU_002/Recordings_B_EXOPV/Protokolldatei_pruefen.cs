@@ -116,10 +116,6 @@ namespace B_ERBU_002.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00') on item 'ExoperrTxtEditor.Text15'.", repo.ExoperrTxtEditor.Text15Info, new RecordItemIndex(7));
             Validate.AttributeContains(repo.ExoperrTxtEditor.Text15Info, "Text", "Anzahl Buchungen verbucht 5  Summe verbucht: 13700,00");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'ExoperrTxtEditor.ExoperrTxtEditor'.", repo.ExoperrTxtEditor.ExoperrTxtEditorInfo, new RecordItemIndex(8));
-            Keyboard.PrepareFocus(repo.ExoperrTxtEditor.ExoperrTxtEditor);
-            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
         }
 
 #region Image Feature Data
