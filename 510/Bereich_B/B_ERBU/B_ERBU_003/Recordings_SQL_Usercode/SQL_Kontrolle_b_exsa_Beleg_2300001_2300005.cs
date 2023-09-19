@@ -43,7 +43,7 @@ namespace B_ERBU_003.Recordings_SQL_Usercode
         {
             DB_File = "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt";
             file_selectergebnis_b_exsa_aktuell = "C:\\temp\\B_ERBU_003_B_EXSA_aktuell.txt";
-            file_selectergebnis_b_exsa_Referenz = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ERBU_003\\B_ERBU_003_B_EXSA_verbucht_Referenz.txt";
+            file_selectergebnis_b_exsa_Referenz = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ERBU_003\\B_ERBU_003_B_EXSA_Referenz.txt";
         }
 
         /// <summary>
