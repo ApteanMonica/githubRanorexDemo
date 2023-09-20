@@ -8,32 +8,6 @@
 			ref="4e5f78a4-8aa1-4aed-b2d8-a8708f036340"
 			type="Recording">
 			</testmodule>
-			<testmodule
-			id="06785602-4ef4-4fd2-8666-ad2dc8ba72fd"
-			name="SQL_Kontrolle_b_exsa_Beleg_2300001_2300005"
-			ref="e9303fcd-46d1-4e50-a9db-2a6e90421ab4"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DB_File"
-					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
-					variableid="8af40913-a103-437a-80ec-80c2876578e7"
-					variablename="DB_File">
-					</var>
-					<var
-					dataname="file_selectergebnis_b_exsa_Referenz"
-					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
-					variableid="fffd72e5-712b-4813-a58b-de17e5d120e1"
-					variablename="file_selectergebnis_b_exsa_Referenz">
-					</var>
-					<var
-					dataname="file_selectergebnis_b_exsa_aktuell"
-					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
-					variableid="0601747b-8a78-41b9-8c7e-36a80ebf8472"
-					variablename="file_selectergebnis_b_exsa_aktuell">
-					</var>
-				</databinding>
-			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -547,7 +521,7 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';">
 			</testcase>
 			<testcase
 			id="7cccf6c3-93f7-4194-90eb-1440366f56ac"
-			name="SQL_Kontrolle_B_EXOP_B_EXSA_Schnittstelle_nach_Ueberleitung">
+			name="SQL_Kontrolle_B_EXOP_Schnittstelle_nach_Ueberleitung">
 			</testcase>
 			<testmodule
 			id="7d68b15f-057e-4637-937b-6900ed4e651e"
@@ -559,6 +533,10 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';">
 			id="7f7d2ac2-f15c-4638-9c2b-1f74388a6e9b"
 			name="TestCase">
 			</testcase>
+			<testcase
+			id="876ea8ba-cbbb-48a2-9184-05e366352d84"
+			name="SQL_Kontrolle_B_EXSA_Schnittstelle_nach_Ueberleitung">
+			</testcase>
 			<setup
 			id="8dd4ffb0-b85a-48f3-92b9-f8ac80573e83"
 			name="setup">
@@ -568,6 +546,32 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';">
 			name="CloseAUT"
 			ref="445ce375-beb1-48a8-a8e8-29546616cc47"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="997f9038-f836-46dd-9d54-a62a14a80281"
+			name="SQL_Kontrolle_b_exsa_Beleg_2300001_2300005"
+			ref="e9303fcd-46d1-4e50-a9db-2a6e90421ab4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="DB_File"
+					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
+					variableid="8af40913-a103-437a-80ec-80c2876578e7"
+					variablename="DB_File">
+					</var>
+					<var
+					dataname="file_selectergebnis_b_exsa_Referenz"
+					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
+					variableid="fffd72e5-712b-4813-a58b-de17e5d120e1"
+					variablename="file_selectergebnis_b_exsa_Referenz">
+					</var>
+					<var
+					dataname="file_selectergebnis_b_exsa_aktuell"
+					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
+					variableid="0601747b-8a78-41b9-8c7e-36a80ebf8472"
+					variablename="file_selectergebnis_b_exsa_aktuell">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="ac0bfbb4-73b6-4bbc-8bde-fe6ba813ac03"
@@ -846,13 +850,17 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';">
 					</testcase>
 					<testcase
 					id="7cccf6c3-93f7-4194-90eb-1440366f56ac"
-					name="SQL_Kontrolle_B_EXOP_B_EXSA_Schnittstelle_nach_Ueberleitung">
+					name="SQL_Kontrolle_B_EXOP_Schnittstelle_nach_Ueberleitung">
 						<testmodule
 						id="ac0bfbb4-73b6-4bbc-8bde-fe6ba813ac03"
 						name="SQL_Kontrolle_b_exop_Beleg_2300001_2300005">
 						</testmodule>
+					</testcase>
+					<testcase
+					id="876ea8ba-cbbb-48a2-9184-05e366352d84"
+					name="SQL_Kontrolle_B_EXSA_Schnittstelle_nach_Ueberleitung">
 						<testmodule
-						id="06785602-4ef4-4fd2-8666-ad2dc8ba72fd"
+						id="997f9038-f836-46dd-9d54-a62a14a80281"
 						name="SQL_Kontrolle_b_exsa_Beleg_2300001_2300005">
 						</testmodule>
 					</testcase>
@@ -874,6 +882,9 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';">
 			</testcontainer>
 			<testcontainer
 			id="7f7d2ac2-f15c-4638-9c2b-1f74388a6e9b">
+			</testcontainer>
+			<testcontainer
+			id="876ea8ba-cbbb-48a2-9184-05e366352d84">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
