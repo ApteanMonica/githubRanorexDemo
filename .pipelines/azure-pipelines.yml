@@ -55,40 +55,22 @@ jobs:
       inputs:
         filename: '$(System.DefaultWorkingDirectory)/API_Automation_Cypress/BatchFile/RunScripts.bat'
 
-    - task: ArchiveFiles@2
-      condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
-      inputs:
-        rootFolderOrFile: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports'
-        includeRootFolder: true
-        archiveType: 'zip'
-        archiveFile: '$(Build.ArtifactStagingDirectory)\reports.zip'
-        replaceExistingArchive: true
+#    - task: ArchiveFiles@2
+#      condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
+#      inputs:
+#        rootFolderOrFile: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports'
+#        includeRootFolder: true
+#        archiveType: 'zip'
+#        archiveFile: '$(Build.ArtifactStagingDirectory)\reports.zip'
+#        replaceExistingArchive: true
 
     - task: PublishBuildArtifacts@1
       condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
       inputs:
-          PathtoPublish: '$(Build.ArtifactStagingDirectory)\reports.zip'
+          PathtoPublish: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports'
           ArtifactName: 'drop'
           publishLocation: 'Container'
         
-  
-  # - task: SendEmail@1
-  #   condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
-  #   inputs:
-  #    To: 'kishore.ramachandraiah@aptean.com'
-  #    From: '$(SMTP_MailID)'
-  #    Subject: 'RS2 Automation reports'
-  #    Body: |
-  #          This is the body of the email. You can write your content here and use proper alignment.
-                 
-  #                         Thank you,
-  #                         Your Name
-  #    BodyAsHtml: false
-  #    AddAttachment: true
-  #    Attachment: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports.zip'
-  #    SmtpServer: 'smtp.office365.com'
-  #    SmtpUsername: '$(SMTP_UserName)'
-  #    SmtpPassword: '$(SMTP_UserPassword)'
 - job: sendEmail
   condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
   dependsOn: cypress
@@ -115,7 +97,7 @@ jobs:
       BodyAsHtml: true
       SmtpServer: 'smtp.office365.com'
       AddAttachment: true
-      Attachment: '$(Build.ArtifactStagingDirectory)/drop/reports.zip'
+      Attachment: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports'
       SmtpUsername: 'RSautomation@aptean.com'
       SmtpPassword: '$(SMTP_UserPassword)'
       UseSSL: true      
