@@ -43,10 +43,11 @@ namespace X_MUSTER_020
         {
             DB_File = "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt";
             file_selectergebnis_b_busa_aktuell = "C:\\temp\\X_MUSTER_020_B_BUSA_aktuell.txt";
-            file_selectergebnis_b_busa_Referenz_Teil_1 = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\X_MUSTER_020\\X_MUSTER_020_B_BUSA_Referenz_1.txt";
-            file_selectergebnis_b_busa_Referenz_Teil_2 = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\X_MUSTER_020\\X_MUSTER_020_B_BUSA_Referenz_2.txt";
+            file2 = "C:\\temp\\file2.txt";
+            file1 = "C:\\temp\\file1.txt";
             SQL_Select_B_BUSA = "select * from b_busa where firm_nr = '100' and busa_belegnr like 'B_JOUR_001%';";
             file_selectergebnis_b_busa_Referenz = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\X_MUSTER_020\\X_MUSTER_020_B_BUSA_Referenz.txt";
+            ProgrammVersion = "";
         }
 
         /// <summary>
@@ -83,28 +84,28 @@ namespace X_MUSTER_020
             set { _file_selectergebnis_b_busa_aktuell = value; }
         }
 
-        string _file_selectergebnis_b_busa_Referenz_Teil_1;
+        string _file2;
 
         /// <summary>
-        /// Gets or sets the value of variable file_selectergebnis_b_busa_Referenz_Teil_1.
+        /// Gets or sets the value of variable file2.
         /// </summary>
-        [TestVariable("46a0cb4e-957c-473b-80c0-458e4b960ba9")]
-        public string file_selectergebnis_b_busa_Referenz_Teil_1
+        [TestVariable("b7e28696-f319-4bc8-b25c-66d4729d6ca5")]
+        public string file2
         {
-            get { return _file_selectergebnis_b_busa_Referenz_Teil_1; }
-            set { _file_selectergebnis_b_busa_Referenz_Teil_1 = value; }
+            get { return _file2; }
+            set { _file2 = value; }
         }
 
-        string _file_selectergebnis_b_busa_Referenz_Teil_2;
+        string _file1;
 
         /// <summary>
-        /// Gets or sets the value of variable file_selectergebnis_b_busa_Referenz_Teil_2.
+        /// Gets or sets the value of variable file1.
         /// </summary>
-        [TestVariable("208f6c6f-e8eb-4683-ae89-0e0d3b34ac86")]
-        public string file_selectergebnis_b_busa_Referenz_Teil_2
+        [TestVariable("cd236022-ef18-4367-aac5-2dd517bf2b96")]
+        public string file1
         {
-            get { return _file_selectergebnis_b_busa_Referenz_Teil_2; }
-            set { _file_selectergebnis_b_busa_Referenz_Teil_2 = value; }
+            get { return _file1; }
+            set { _file1 = value; }
         }
 
         string _SQL_Select_B_BUSA;
@@ -129,6 +130,18 @@ namespace X_MUSTER_020
         {
             get { return _file_selectergebnis_b_busa_Referenz; }
             set { _file_selectergebnis_b_busa_Referenz = value; }
+        }
+
+        string _ProgrammVersion;
+
+        /// <summary>
+        /// Gets or sets the value of variable ProgrammVersion.
+        /// </summary>
+        [TestVariable("bd1f4e20-86ff-4f85-841d-9a4e63ad3b70")]
+        public string ProgrammVersion
+        {
+            get { return _ProgrammVersion; }
+            set { _ProgrammVersion = value; }
         }
 
 #endregion
@@ -157,9 +170,15 @@ namespace X_MUSTER_020
 
             Init();
 
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement(SQL_Select_B_BUSA, DB_File, "C:\\temp\\X_MUSTER_020_B_BUSA_aktuell.txt");
+            //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement(SQL_Select_B_BUSA, DB_File, "C:\\temp\\X_MUSTER_020_B_BUSA_aktuell.txt");
             
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains(file_selectergebnis_b_busa_Referenz, file_selectergebnis_b_busa_aktuell);
+            //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains(file_selectergebnis_b_busa_Referenz, file_selectergebnis_b_busa_aktuell);
+            
+            ProgrammVersion = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadProgrammVersion("");
+            
+            Report.Log(ReportLevel.Info, "User", ProgrammVersion, new RecordItemIndex(3));
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks(file1, file2);
             
         }
 

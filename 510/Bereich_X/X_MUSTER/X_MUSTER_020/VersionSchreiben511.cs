@@ -20,64 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_BUCH_007.Recordings
+namespace X_MUSTER_020
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The VersionEinlesen recording.
+    ///The VersionSchreiben511 recording.
     /// </summary>
-    [TestModule("be5ba4b7-8af3-4c1c-a0a9-83fcbfd7ad54", ModuleType.Recording, 1)]
-    public partial class VersionEinlesen : ITestModule
+    [TestModule("19794135-eae4-4d94-8809-e7b3f3aae7d8", ModuleType.Recording, 1)]
+    public partial class VersionSchreiben511 : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_BUCH_007.B_BUCH_007Repository repository.
+        /// Holds an instance of the X_MUSTER_020Repository repository.
         /// </summary>
-        public static global::B_BUCH_007.B_BUCH_007Repository repo = global::B_BUCH_007.B_BUCH_007Repository.Instance;
+        public static X_MUSTER_020Repository repo = X_MUSTER_020Repository.Instance;
 
-        static VersionEinlesen instance = new VersionEinlesen();
+        static VersionSchreiben511 instance = new VersionSchreiben511();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public VersionEinlesen()
+        public VersionSchreiben511()
         {
-            selectResult = "";
-            dbFile = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static VersionEinlesen Instance
+        public static VersionSchreiben511 Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _selectResult;
-
-        /// <summary>
-        /// Gets or sets the value of variable selectResult.
-        /// </summary>
-        [TestVariable("7a2242fa-fec7-4141-8812-f0590d6bf8e0")]
-        public string selectResult
-        {
-            get { return _selectResult; }
-            set { _selectResult = value; }
-        }
-
-        string _dbFile;
-
-        /// <summary>
-        /// Gets or sets the value of variable dbFile.
-        /// </summary>
-        [TestVariable("1614237e-f09c-4941-8772-dff9494e83a7")]
-        public string dbFile
-        {
-            get { return _dbFile; }
-            set { _dbFile = value; }
-        }
 
 #endregion
 
@@ -105,9 +79,7 @@ namespace B_BUCH_007.Recordings
 
             Init();
 
-            selectResult = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement("select vers_version, vers_sp, vers_hotfix from y_vers;", dbFile, "C:/Temp/sql.txt");
-            
-            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadVersion(dbFile, "");
+            Report.Log(ReportLevel.Info, "User", "511", new RecordItemIndex(0));
             
         }
 

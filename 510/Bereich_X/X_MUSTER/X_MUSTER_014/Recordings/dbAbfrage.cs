@@ -118,15 +118,15 @@ namespace X_MUSTER_014.Recordings
 
             Init();
 
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select * from b_busy where busy_cd='ER';", DB_path, "c:/Temp/larisa.txt");
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement("select * from b_busy where busy_cd='ER';", "c:/Temp/larisa.txt");
             
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select * from b_busy where busy_cd='ER';", DB_path, path_2);
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement("select * from b_busy where busy_cd='ER';", path_2);
             
-            //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("update b_busy set busy_kls = 'L'  where busy_cd='ER';", DB_path, "c:/Temp/update.txt");
+            //SQLStatement("update b_busy set busy_kls = 'L'  where busy_cd='ER';", DB_path, "c:/Temp/update.txt");
             
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains(path_1, path_2);
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareContains(path_1, path_2);
             
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareEqual(path_1, path_2);
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqual(path_1, path_2);
             
         }
 

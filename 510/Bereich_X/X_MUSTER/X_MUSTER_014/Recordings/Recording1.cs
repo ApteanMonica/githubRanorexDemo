@@ -118,15 +118,15 @@ namespace X_MUSTER_014.Recordings
 
             Init();
 
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select * from b_busy where firm_nr='100' and busy_cd ='ER';", DB_path, "c:/Temp/pet.txt");
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement("select * from b_busy where firm_nr='100' and busy_cd ='ER';", "c:/Temp/pet.txt");
             
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("update b_busy set busy_kls = 'L'  where busy_cd='ER' and firm_nr='100';", DB_path, "");
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement("update b_busy set busy_kls = 'L'  where busy_cd='ER' and firm_nr='100';", "");
             
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select * from b_busy where firm_nr='100' and busy_cd ='ER';", DB_path, "c:/Temp/petAlle.txt");
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement("select * from b_busy where firm_nr='100' and busy_cd ='ER';", "c:/Temp/petAlle.txt");
             
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains("c:/Temp/pet.txt", "c:/Temp/petAlle.txt");
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareContains("c:/Temp/pet.txt", "c:/Temp/petAlle.txt");
             
-            //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareEqual("c:/pet.txt", "c:/Temp/petAlle.txt");
+            //Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqual("c:/pet.txt", "c:/Temp/petAlle.txt");
             
         }
 
