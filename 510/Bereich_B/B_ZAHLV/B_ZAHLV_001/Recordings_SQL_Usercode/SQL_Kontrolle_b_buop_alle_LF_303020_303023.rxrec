@@ -41,17 +41,26 @@ mode="Global">
 		<var
 		id="3471ed1e-65fb-4199-a4f7-daa0ceaba719"
 		name="file_selectergebnis_b_buop_alle_Referenz">
-			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUOP_alle3_Referenz.txt
+			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUOP_alle_Referenz.txt
 		</var>
 	</variables>
 	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="True">
+			<comment>
+				alte Methoden mit apteanSQL.cs
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<userrecorditem
 		classname="ApteanSQL"
 		enabled="True"
 		isexternaltestmethod="True"
 		methodname="ReadVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="False">
+		optional="True">
 			<comment>
 			</comment>
 			<bindings>
@@ -86,7 +95,7 @@ mode="Global">
 		isexternaltestmethod="True"
 		methodname="SQLStatement"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="False">
+		optional="True">
 			<comment>
 			</comment>
 			<bindings>
@@ -100,7 +109,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						select   
+						select 
 BUSA_USERAENDG,
 FIRM_NR,
 BUSA_KEYPOS,
@@ -256,7 +265,7 @@ where firm_nr = '100' and adr_nr BETWEEN '303020' AND '303023';
 		isexternaltestmethod="True"
 		methodname="FileCompareContains"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="False">
+		optional="True">
 			<comment>
 			</comment>
 			<bindings>
@@ -270,7 +279,7 @@ where firm_nr = '100' and adr_nr BETWEEN '303020' AND '303023';
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUOP_alle_Referenz.txt
+						C:\temp\B_ZAHLV_001_B_BUOP_alle_aktuell.txt
 					</argvalue>
 				</argument>
 				<argument
@@ -280,7 +289,289 @@ where firm_nr = '100' and adr_nr BETWEEN '303020' AND '303023';
 						System.String
 					</argvaluetype>
 					<argvalue>
+						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUOP_alle_Referenz.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="True">
+			<comment>
+				neue Methoden mit aptean.cs ohne Variablen
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SQLStatement"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c7f0bf33-d84c-43df-9122-45f7c8698126">
+				<argument
+				argname="selectLine"
+				id="66be9f80-bfa3-4529-8628-a89e8c9041d0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						select 
+BUSA_USERAENDG,
+FIRM_NR,
+BUSA_KEYPOS,
+WRG_CD,
+BANK_NR,
+ADR_NR,
+KLDV_NR,
+KLBK_NR,
+BUOP_ART,
+BUOP_KL,
+BUOP_BELEGNR,
+BUOP_BELEGPOS,
+BUOP_ZAHLART,
+BUOP_ZAHLPOS,
+BUOP_ZAHLJAHR,
+BUOP_ZAHLPERIODE,
+BUOP_ZAHLDATUM,
+BUOP_ZAHLSTATUS,
+BUOP_STORNO,
+BUOP_DTFREMDBELEG,
+BUOP_NRFREMDBELEG,
+BUOP_KULINR,
+BUOP_DTFAELLIG,
+BUOP_DTVALUTA,
+BUOP_DTSKONTO1,
+BUOP_DTSKONTO2,
+BUOP_TAGEVALUTA,
+BUOP_TAGE1,
+BUOP_SKONTO1,
+BUOP_TAGE2,
+BUOP_SKONTO2,
+BUOP_TAGENETTO,
+BUOP_BETRAG,
+BUOP_OFFEN,
+BUOP_ABZUEGE,
+BUOP_SKONTO,
+BUOP_FWBETRAG,
+BUOP_FWOFFEN,
+BUOP_FWABZUEGE,
+BUOP_FWSKONTO,
+BUOP_KURSDIFF,
+BUOP_RECHBETRAG,
+BUOP_FWRECHBETRAG,
+BUOP_ZAHLBETRAG,
+BUOP_SKONTOBASIS,
+BUOP_MAHNSTUFE,
+BUOP_MAHNSPERRE,
+BUOP_MAHNUNBSKTO,
+BUOP_DTMAHN,
+BUOP_CD1,
+BUOP_CD2,
+BUOP_CD3,
+BUOP_UEBERWTEXT,
+BUOP_SELECT1,
+BUOP_SELECT2,
+BUOP_ZLVS,
+BUOP_ZAHLSTORNO,
+BUOP_DTABGLEICH,
+BUOP_RECHTYP,
+BUOP_KZEINHALT,
+BUOP_DTEINHALT,
+BUOP_EHPROZ,
+BUOP_EHBETRAG,
+BUOP_FWEHBETRAG,
+BUOP_EHKOBETRAG,
+BUOP_FWEHKOBETRAG,
+BUOP_DTEINHALT2,
+BUOP_EHPROZ2,
+BUOP_KZUST,
+BUOP_KZUSTUMB,
+BUOP_USTBETRAG,
+BUOP_FWUSTBETRAG,
+BUOP_SKONTOBASISRE,
+BUOP_ZAHLSPERRE,
+BUOP_BASISBETRAG,
+BUOP_BASISSKONTO,
+BUOP_BASISABZUEGE,
+BUOP_BASISKURSDIFF,
+BUOP_MONATNETTO,
+BUOP_KZFIXTAGE,
+BUOP_MONAT1,
+BUOP_MONAT2,
+BUOP_SKONTOUNB,
+BUOP_FWSKONTOUNB,
+BUOP_KZPROVISION,
+BUOP_ZAHLJAHR2,
+BUOP_ZAHLPERIODE2,
+BUOP_SELECT3,
+BUOP_SELECT4,
+BUOP_ADR_RECHAD,
+BUOP_KLDV_RECHAD,
+BUOP_DTMNSPBIS,
+BUOP_DTMNAENDG,
+RTK_NR,
+BUOP_DTSALD,
+BUOP_KZAUSGL,
+BUOP_KZZINSEN,
+BUOP_MAHNZINSEN,
+ADR_NR_ZAHLUNG,
+BUOP_BELTYP,
+BUOP_DTMNFAELL,
+BUOP_DTMNZAHL,
+MNV_NR,
+KLBK_NR_ZAHLUNG,
+BUOP_KZRECHTSKR,
+BUOP_ZINSBUCH,
+BUOP_ZINSRECH,
+BUOP_SALDJAHR,
+BUOP_SALDPERIODE,
+BUOP_DTIC,
+BUOP_ZS_NR,
+EXBK_NR,
+EXBP_NR,
+EXBO_NR,
+BUOP_KZPROVISIONSV,
+BUOP_KEYBEL_RATE,
+BUOP_KEYPOS_RATE,
+BUOP_FELD01,
+BUOP_FELD02,
+BUOP_FELD03,
+BUOP_FELD04,
+BUOP_FELD05
+from b_buop
+where firm_nr = '100' and adr_nr BETWEEN '303020' AND '303023';
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="0d7425de-431f-4625-b71f-8fa3105d64cc">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
 						C:\temp\B_ZAHLV_001_B_BUOP_alle_aktuell.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="FileCompareEqualWithoutBreaks"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a8c5e926-d69e-467b-adca-cd5ddc96bffb">
+				<argument
+				argname="file1"
+				id="ea66a06c-a086-4417-b951-b1dd5120b90e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\temp\B_ZAHLV_001_B_BUOP_alle_aktuell.txt
+					</argvalue>
+				</argument>
+				<argument
+				argname="file2"
+				id="6c6b1e2b-e14a-4665-a46a-eaceda65a65b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUOP_alle_Referenz.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="True">
+			<comment>
+				neue Methoden mit aptean.cs mit Variablen
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SQLStatement"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c7f0bf33-d84c-43df-9122-45f7c8698126">
+				<argument
+				argname="selectLine"
+				id="66be9f80-bfa3-4529-8628-a89e8c9041d0"
+				variable="SQL_Select_B_BUOP_alle">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="0d7425de-431f-4625-b71f-8fa3105d64cc"
+				variable="file_selectergebnis_b_buop_alle_aktuell">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="FileCompareEqualWithoutBreaks"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a8c5e926-d69e-467b-adca-cd5ddc96bffb">
+				<argument
+				argname="file1"
+				id="ea66a06c-a086-4417-b951-b1dd5120b90e"
+				variable="file_selectergebnis_b_buop_alle_aktuell">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="file2"
+				id="6c6b1e2b-e14a-4665-a46a-eaceda65a65b"
+				variable="file_selectergebnis_b_buop_alle_Referenz">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
 					</argvalue>
 				</argument>
 			</arguments>
