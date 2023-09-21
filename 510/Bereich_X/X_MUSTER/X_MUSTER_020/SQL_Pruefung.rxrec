@@ -34,14 +34,14 @@ mode="Desktop">
 			C:\temp\X_MUSTER_020_B_BUSA_aktuell.txt
 		</var>
 		<var
-		id="46a0cb4e-957c-473b-80c0-458e4b960ba9"
-		name="file_selectergebnis_b_busa_Referenz_Teil_1">
-			C:\Testdaten\Allgemein\SQL_Referenz_Files\X_MUSTER_020\X_MUSTER_020_B_BUSA_Referenz_1.txt
+		id="b7e28696-f319-4bc8-b25c-66d4729d6ca5"
+		name="file2">
+			C:\temp\file2.txt
 		</var>
 		<var
-		id="208f6c6f-e8eb-4683-ae89-0e0d3b34ac86"
-		name="file_selectergebnis_b_busa_Referenz_Teil_2">
-			C:\Testdaten\Allgemein\SQL_Referenz_Files\X_MUSTER_020\X_MUSTER_020_B_BUSA_Referenz_2.txt
+		id="cd236022-ef18-4367-aac5-2dd517bf2b96"
+		name="file1">
+			C:\temp\file1.txt
 		</var>
 		<var
 		id="77ed371a-f658-4a9b-b227-e809eb0b2fb3"
@@ -53,11 +53,15 @@ mode="Desktop">
 		name="file_selectergebnis_b_busa_Referenz">
 			C:\Testdaten\Allgemein\SQL_Referenz_Files\X_MUSTER_020\X_MUSTER_020_B_BUSA_Referenz.txt
 		</var>
+		<var
+		id="bd1f4e20-86ff-4f85-841d-9a4e63ad3b70"
+		name="ProgrammVersion">
+		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SQLStatement"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -104,7 +108,7 @@ mode="Desktop">
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="FileCompareContains"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -129,6 +133,85 @@ mode="Desktop">
 				argname="file2"
 				id="b504c47f-46de-4252-bf2d-8985cb59af50"
 				variable="file_selectergebnis_b_busa_aktuell">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ReadProgrammVersion"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="ProgrammVersion">
+				</binding>
+			</bindings>
+			<arguments
+			id="d1e458b6-4518-44d7-8654-7746f6e555f1">
+				<argument
+				argname="expectedFormat"
+				id="3e183eaf-331c-4d55-82ed-e085ddb11847">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="b771fef4-e97c-46f3-a4cf-d263e8d168d3">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="ProgrammVersion">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="FileCompareEqualWithoutBreaks"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="888d17fe-eef5-47a4-bdaa-4523f264fd87">
+				<argument
+				argname="file1"
+				id="fce47ae2-59b3-4390-a20c-5a83faabd053"
+				variable="file1">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="file2"
+				id="1c078333-e030-4fe2-8414-5e17863f0aa3"
+				variable="file2">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

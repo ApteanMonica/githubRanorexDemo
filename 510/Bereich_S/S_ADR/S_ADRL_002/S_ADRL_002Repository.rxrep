@@ -32,6 +32,16 @@ name="S_ADRL_002Repository">
 			searchtimeout="30000ms">
 				/form[@controlname='frmAdr']/titlebar[@accessiblerole='TitleBar']
 			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="490bee07-42e0-4c51-85a2-2c267c3ec418"
+			name="UID"
+			refimgid="fc35d0f4-8724-476c-8373-a61d9fb9530d"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']//tabpage[@controlname='tpAllgemein']/container[@controlname='ucUid']/text[@controlname='dfAdr_uid']/text[@accessiblerole='Text']
+			</item>
 			<folder
 			capname="form"
 			id="66b32756-234f-4224-9f74-cc489d992723"
@@ -96,6 +106,28 @@ name="S_ADRL_002Repository">
 			searchtimeout="30000ms">
 				/form[@controlname='frmAdr']/container[@controlname='RibbonBar']/?/?/button[@controlname='pbStandard3']
 			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="afd799bd-6250-474a-b55e-0c9ec373b28d"
+			name="Zahlungsart"
+			refimgid="1f432d0a-8f44-4d7f-9fa7-ca693ec5d9f2"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='ClientArea']/element[@controlname='picTabs']/element[@controlname='tpAllgemein']/element[@controlname='dfKlkt_zahlart']/text[@accessiblename='Zahlungsart:']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']/container[@controlname='ClientArea']//element[@controlname='dfKlkt_zahlart']/text[@accessiblename='Zahlungsart:']
+			</item>
+			<item
+			addcaps="unknown,nativewindow,controlnet11"
+			capname="unknown"
+			id="bcf52289-a165-4075-a95b-b727b6145d6c"
+			name="DfAdrUid"
+			refimgid="4235f919-2d11-42f3-a89a-0221436a9549"
+			refpath="/form[@controlname='frmAdr']/container[@controlname='ClientArea']/element[@controlname='picTabs']/element[@controlname='tpAllgemein']/element[@controlname='ucUid']/element[@controlname='dfAdr_uid']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmAdr']/container[@controlname='ClientArea']//element[@controlname='ucUid']/element[@controlname='dfAdr_uid']
+			</item>
 			<basepath>
 				/form[@controlname='frmAdr']
 			</basepath>
@@ -158,6 +190,49 @@ YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
 nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow,controlnet11"
+		capname="form"
+		id="ed3a5643-8419-4b79-8786-7eb664a76e1b"
+		isrooted="True"
+		name="DlgMessageBox"
+		refimgid="0fa0689c-3f4e-44be-a673-3dc17655ae8d"
+		refpath="/form[@controlname='dlgMessageBox']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="6b2373e6-b6ca-4ab9-9128-52b69842c7db"
+			name="UIDPruefungDieAngegebeneUIDIstNic"
+			refimgid="4713fdfe-a5f0-45e8-9a60-8361b1082715"
+			refpath="/form[@controlname='dlgMessageBox']/element[@controlname='labelMeldungstext']/text[@accessiblename='UID-Prüfung: die angegebene UID ist nicht gültig.']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/?/?/text[@accessiblename&gt;'UID-Pr&#252;fung: die angegebene']
+			</item>
+			<basepath>
+				/form[@controlname='dlgMessageBox']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAACoSURBVDhPY1jHIf4fGc/lEUXB3XzCKLiSTxAF
+jxowMg3Yw84BxmQZ8IiZ5f8sLh4wvgtkYxhwjYX7/zNm1v/n2Lj+b+XkB7OPsnOCNcIMgdn8n4EB
+uwEgzSCbQTQII7sAZgDIdpAr8BoAMwTdBcia8RoA8gIIgzSBnAuiYWEA04xhwCE2QbAmdBes4OID
+GwBiw2IBFhMoBoAwTDMMw5wOw8i2V/IJ/gcA8xK5mQPOL6oAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<item
+		addcaps="button,control,nativewindow"
+		capname="button"
+		id="8b5a81dc-6e9d-4287-a6eb-eb8550acd558"
+		name="Button0"
+		refimgid="6527c403-081d-4759-beb3-5fb52f3e8991"
+		refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button0']"
+		robustPath=""
+		searchtimeout="30000ms">
+			/form[@controlname='dlgMessageBox']/button[@controlname='button0']
+		</item>
 		<basepath>
 		</basepath>
 	</rootfolder>
