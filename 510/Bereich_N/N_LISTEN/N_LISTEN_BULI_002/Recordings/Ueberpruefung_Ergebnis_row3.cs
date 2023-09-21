@@ -109,7 +109,7 @@ namespace N_LISTEN_BULI_002.Recordings
             
             try {
                 Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='67,71') on item 'FrmBuchungsliste.FlexGrid.ColBetragRow3'.", repo.FrmBuchungsliste.FlexGrid.ColBetragRow3Info, new RecordItemIndex(6));
-                Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColBetragRow3Info, "Text", "67,71", null, false);
+                Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColBetragRow3Info, "Text", "67,71", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.Always});
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
             
         }
