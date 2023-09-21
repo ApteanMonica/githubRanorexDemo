@@ -55,19 +55,19 @@ jobs:
       inputs:
         filename: '$(System.DefaultWorkingDirectory)/API_Automation_Cypress/BatchFile/RunScripts.bat'
 
-    # - task: ArchiveFiles@2
-    #   condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
-    #   inputs:
-    #     rootFolderOrFile: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports'
-    #     includeRootFolder: true
-    #     archiveType: 'zip'
-    #     archiveFile: '$(Build.ArtifactStagingDirectory)\reports.zip'
-    #     replaceExistingArchive: true
+    - task: ArchiveFiles@2
+      condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
+      inputs:
+        rootFolderOrFile: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports'
+        includeRootFolder: true
+        archiveType: 'zip'
+        archiveFile: '$(Build.ArtifactStagingDirectory)\reports.zip'
+        replaceExistingArchive: true
 
     - task: PublishBuildArtifacts@1
       condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
       inputs:
-          PathtoPublish: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress'
+          PathtoPublish: '$(Build.ArtifactStagingDirectory)\reports.zip'
           ArtifactName: 'drop'
           publishLocation: 'Container'
         
@@ -115,7 +115,7 @@ jobs:
       BodyAsHtml: true
       SmtpServer: 'smtp.office365.com'
       AddAttachment: true
-      Attachment: '$(Build.ArtifactStagingDirectory)/drop/reports'
+      Attachment: '$(Build.ArtifactStagingDirectory)/drop/reports.zip'
       SmtpUsername: 'RSautomation@aptean.com'
       SmtpPassword: '$(SMTP_UserPassword)'
       UseSSL: true      
