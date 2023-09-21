@@ -145,7 +145,7 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             try {
-                Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains("C:\\temp\\B_ZAHLV_001_B_BUBE_aktuell.txt", "C:\\temp\\B_ZAHLV_001_B_BUBE_aktuell.txt");
+                Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains("C:\\temp\\B_ZAHLV_001_B_BUBE_aktuell.txt", file_selectergebnis_b_bube_Referenz);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             // neue Methoden mit aptean.cs ohne Variablen
