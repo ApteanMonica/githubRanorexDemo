@@ -97,7 +97,7 @@ jobs:
       BodyAsHtml: true
       SmtpServer: 'smtp.office365.com'
       AddAttachment: true
-      Attachment: '$(System.DefaultWorkingDirectory)\API_Automation_Cypress\Modulewise_TestCases\cypress\reports'
+      Attachment: '$(System.ArtifactsDirectory)\drop/reports'
       SmtpUsername: 'RSautomation@aptean.com'
       SmtpPassword: '$(SMTP_UserPassword)'
       UseSSL: true      
