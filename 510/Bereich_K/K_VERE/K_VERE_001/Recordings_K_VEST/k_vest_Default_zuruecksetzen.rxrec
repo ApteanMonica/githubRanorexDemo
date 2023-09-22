@@ -50,6 +50,15 @@ mode="Global">
 		</var>
 	</variables>
 	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Zeile_3 untere Tabelle
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -67,41 +76,39 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="ff991a7e-9b18-4e1a-a920-8566a459c65e"
+			id="21a67102-f34f-4813-8856-255c09b26936"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='mdiMain']/container[@controlname='ClientArea']/container[@controlname='Splitter']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='tblVest']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colKs1_nr_von Row 3']
+					/form[@controlname='mdiMain']/container[@controlname='ClientArea']/container[@controlname='Splitter']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='tblVest']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colKto_nr_von Row 3']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 		</mouseitem>
-		<mouseitem
-		action="DoubleClick"
-		button="Left"
-		duration="300ms"
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
 		optional="False"
-		searchpropertyid="117f10e5-0070-4542-9a93-86495405260c"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="0272aff9-1c74-4f38-b6ff-a1e4e3e48967"
+		setModifiers="True">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="ff991a7e-9b18-4e1a-a920-8566a459c65e"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='mdiMain']/container[@controlname='ClientArea']/container[@controlname='Splitter']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='tblVest']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colKs1_nr_von Row 3']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
+		</keyitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="Delete"
@@ -126,6 +133,15 @@ mode="Global">
 				</robustPath>
 			</info>
 		</keyitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="Tab"
@@ -191,15 +207,6 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
-		<separatoritem
-		enabled="True"
-		optional="False">
-			<comment>
-				Zeile_3 untere Tabelle
-			</comment>
-			<bindings>
-			</bindings>
-		</separatoritem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
