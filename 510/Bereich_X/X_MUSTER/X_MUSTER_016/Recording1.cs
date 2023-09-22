@@ -92,7 +92,7 @@ namespace X_MUSTER_016
 
             Init();
 
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select vers_version, vers_sp from y_vers;", DB_path, "c:/Temp/version_511.txt");
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement("select vers_version, vers_sp from y_vers;", "c:/Temp/version_511.txt");
             
         }
 

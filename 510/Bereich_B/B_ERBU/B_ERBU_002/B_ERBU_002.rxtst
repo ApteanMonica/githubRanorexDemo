@@ -27,38 +27,6 @@
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
-			id="09aece83-d41a-4f64-9a0d-66b309f21834"
-			name="SQL_Kontrolle_b_exsa_Belegnr_2200005_2200009_uebergeleitet"
-			ref="d521659b-71f0-4410-9511-ba1f7a7cd427"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="file_selectergebnis_b_exsa_uebergeleitet_aktuell"
-					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
-					variableid="fe1598f7-913b-4976-bfa4-28ea6a9cdce3"
-					variablename="file_selectergebnis_b_exsa_uebergeleitet_aktuell">
-					</var>
-					<var
-					dataname="file_selectergebnis_b_exsa_uebergeleitet_Referenz"
-					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
-					variableid="52c82d11-f197-41c8-b47b-d9865e73268f"
-					variablename="file_selectergebnis_b_exsa_uebergeleitet_Referenz">
-					</var>
-					<var
-					dataname="SQL_Select_B_EXSA"
-					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
-					variableid="47623fb2-1dae-45fb-9ca6-698fab4b1809"
-					variablename="SQL_Select_B_EXSA">
-					</var>
-					<var
-					dataname="DB_File"
-					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
-					variableid="5af44d52-2332-4d06-beae-0e27379d599e"
-					variablename="DB_File">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="0d7458aa-0383-407d-a723-ec74eb3f293b"
 			name="Meldung_mit_Fehlern_pruefen_ueberleiten"
 			ref="7e6cad2c-2b3f-4d6a-aec0-56c386a8835c"
@@ -71,16 +39,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="DB_File"
+					dataname="file_selectergebnis_b_exop_verbucht_Referenz"
 					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
-					variableid="3fdfcd40-0782-4ed5-b265-16b0b63d19eb"
-					variablename="DB_File">
-					</var>
-					<var
-					dataname="SQL_Select_B_EXOP"
-					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
-					variableid="836117a8-9d53-428b-827b-522efae00dd9"
-					variablename="SQL_Select_B_EXOP">
+					variableid="39140b55-00a2-4d54-ada6-851c7f1d7ec2"
+					variablename="file_selectergebnis_b_exop_verbucht_Referenz">
 					</var>
 					<var
 					dataname="file_selectergebnis_b_exop_verbucht_aktuell"
@@ -89,17 +51,59 @@
 					variablename="file_selectergebnis_b_exop_verbucht_aktuell">
 					</var>
 					<var
-					dataname="file_selectergebnis_b_exop_verbucht_Referenz"
+					dataname="SQL_Select_B_EXOP"
 					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
-					variableid="39140b55-00a2-4d54-ada6-851c7f1d7ec2"
-					variablename="file_selectergebnis_b_exop_verbucht_Referenz">
+					variableid="836117a8-9d53-428b-827b-522efae00dd9"
+					variablename="SQL_Select_B_EXOP">
 					</var>
 				</databinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="DB_File"
+					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
+					variableid="3fdfcd40-0782-4ed5-b265-16b0b63d19eb"
+					variablename="DB_File">
+					</var>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testcase
 			id="11a9572f-019a-4ce6-8532-1992b36cbbf3"
 			name="ERs_verbuchen">
 			</testcase>
+			<testmodule
+			id="120ae5da-84e1-4c07-b8ec-b78ea5770b29"
+			name="SQL_Kontrolle_b_exsa_Belegnr_2200005_2200009_verbucht"
+			ref="4f488313-2e80-41b2-a189-1bb8c9899cc9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="file_selectergebnis_b_exsa_verbucht_Referenz"
+					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
+					variableid="2df3520b-febe-4fbe-b3a3-c1bb9b827a6d"
+					variablename="file_selectergebnis_b_exsa_verbucht_Referenz">
+					</var>
+					<var
+					dataname="file_selectergebnis_b_exsa_verbucht_aktuell"
+					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
+					variableid="a3893ea3-a461-4a23-8911-5c0ccca51621"
+					variablename="file_selectergebnis_b_exsa_verbucht_aktuell">
+					</var>
+					<var
+					dataname="SQL_Select_B_EXSA"
+					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
+					variableid="cecc251b-575f-441b-af03-c45eace55a72"
+					variablename="SQL_Select_B_EXSA">
+					</var>
+				</databinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="DB_File"
+					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
+					variableid="a294cf74-2524-45eb-b468-8cc5154a96c6"
+					variablename="DB_File">
+					</var>
+				</missingdatavariablesbinding>
+			</testmodule>
 			<testmodule
 			id="1b170a72-aa30-4c49-a5a1-424cda06dc71"
 			name="Meldung_mit_Fehlern_pruefen_ueberleiten"
@@ -182,38 +186,6 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="5de51d2e-c31d-48b3-b4c2-6f26dff2d495"
-			name="SQL_Kontrolle_b_exop_Belegnr_2200005_2200009_verbucht"
-			ref="447cfb37-164f-4ac3-a67d-a7ccbd4b4b37"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="DB_File"
-					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
-					variableid="3fdfcd40-0782-4ed5-b265-16b0b63d19eb"
-					variablename="DB_File">
-					</var>
-					<var
-					dataname="SQL_Select_B_EXOP"
-					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
-					variableid="836117a8-9d53-428b-827b-522efae00dd9"
-					variablename="SQL_Select_B_EXOP">
-					</var>
-					<var
-					dataname="file_selectergebnis_b_exop_verbucht_aktuell"
-					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
-					variableid="d3d3c7bc-5d1b-469a-9a3f-7fb7b98d40c7"
-					variablename="file_selectergebnis_b_exop_verbucht_aktuell">
-					</var>
-					<var
-					dataname="file_selectergebnis_b_exop_verbucht_Referenz"
-					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
-					variableid="39140b55-00a2-4d54-ada6-851c7f1d7ec2"
-					variablename="file_selectergebnis_b_exop_verbucht_Referenz">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="67d14cf6-4b0c-47f9-b8f4-b749c5066d57"
 			name="ERs_ueberleiten"
 			ref="6e77f5ca-e879-4252-bdcc-eb61b93ec596"
@@ -232,10 +204,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="file_selectergebnis_b_exop_uebergeleitet_aktuell"
+					dataname="SQL_Select_B_EXOP"
 					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
-					variableid="e8d79a4a-5796-46cf-a52f-be2b1c9c4d5c"
-					variablename="file_selectergebnis_b_exop_uebergeleitet_aktuell">
+					variableid="b5031cb1-0cd9-4b44-b8d5-99da1726c99e"
+					variablename="SQL_Select_B_EXOP">
 					</var>
 					<var
 					dataname="file_selectergebnis_b_exop_uebergeleitet_Referenz"
@@ -244,18 +216,20 @@
 					variablename="file_selectergebnis_b_exop_uebergeleitet_Referenz">
 					</var>
 					<var
-					dataname="SQL_Select_B_EXOP"
+					dataname="file_selectergebnis_b_exop_uebergeleitet_aktuell"
 					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
-					variableid="b5031cb1-0cd9-4b44-b8d5-99da1726c99e"
-					variablename="SQL_Select_B_EXOP">
+					variableid="e8d79a4a-5796-46cf-a52f-be2b1c9c4d5c"
+					variablename="file_selectergebnis_b_exop_uebergeleitet_aktuell">
 					</var>
+				</databinding>
+				<missingdatavariablesbinding>
 					<var
 					dataname="DB_File"
 					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
 					variableid="83f47db7-ada9-4a65-9b02-225f1e6db018"
 					variablename="DB_File">
 					</var>
-				</databinding>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="79e381da-f477-46d0-950f-29d726681624"
@@ -634,6 +608,40 @@
 					variablename="Startfile">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="b5854ab0-15aa-45dd-b3aa-78f87d773c10"
+			name="SQL_Kontrolle_b_exsa_Belegnr_2200005_2200009_uebergeleitet"
+			ref="88e0abf2-2989-4d7e-ac6e-05e71d6a5abe"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="SQL_Select_B_EXSA"
+					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
+					variableid="cafbd0d7-db89-45ec-906d-182434e6380f"
+					variablename="SQL_Select_B_EXSA">
+					</var>
+					<var
+					dataname="file_selectergebnis_b_exsa_uebergeleitet_Referenz"
+					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
+					variableid="1b3c1452-eacc-4fc9-923e-28b5d73a30b2"
+					variablename="file_selectergebnis_b_exsa_uebergeleitet_Referenz">
+					</var>
+					<var
+					dataname="file_selectergebnis_b_exsa_uebergeleitet_aktuell"
+					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
+					variableid="6db3d134-a1c5-41ef-a46f-b4c76f52b627"
+					variablename="file_selectergebnis_b_exsa_uebergeleitet_aktuell">
+					</var>
+				</databinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="DB_File"
+					datasourceid="c413a81b-7e43-49b7-b9cc-7da31a80bd0e"
+					variableid="3e847dff-a18e-465a-9622-e760d448aafc"
+					variablename="DB_File">
+					</var>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testcase
 			id="b6c9af66-c849-45f6-a2a1-8a0e5d1c2195"
@@ -1174,22 +1182,6 @@ AND exop_belegnr BETWEEN '2200005' AND '2200009';">
 						</testmodule>
 					</testcase>
 					<testcase
-					id="dc9ea0d8-da8b-491b-a84f-7819a92b5e7d"
-					name="SQL_Kontrolle_B_EXOP_nach_Ueberleitung">
-						<testmodule
-						id="6a5fc4f7-0576-40b1-827f-0d35d83cfe49"
-						name="SQL_Kontrolle_b_exop_Belegnr_2200005_2200009_uebergeleitet">
-						</testmodule>
-					</testcase>
-					<testcase
-					id="99bca0dc-cf94-42d8-aa1c-679a5f6d72e5"
-					name="SQL_Kontrolle_B_EXSA_nach_Ueberleitung">
-						<testmodule
-						id="09aece83-d41a-4f64-9a0d-66b309f21834"
-						name="SQL_Kontrolle_b_exsa_Belegnr_2200005_2200009_uebergeleitet">
-						</testmodule>
-					</testcase>
-					<testcase
 					id="7b5daa57-bfc7-43b5-a1c2-1feef0785fa9"
 					name="ERs_in_Schnittstelle_prüfen">
 						<setup
@@ -1224,6 +1216,22 @@ AND exop_belegnr BETWEEN '2200005' AND '2200009';">
 							name="CloseAUT_B_EXOPS">
 							</testmodule>
 						</teardown>
+					</testcase>
+					<testcase
+					id="dc9ea0d8-da8b-491b-a84f-7819a92b5e7d"
+					name="SQL_Kontrolle_B_EXOP_nach_Ueberleitung">
+						<testmodule
+						id="6a5fc4f7-0576-40b1-827f-0d35d83cfe49"
+						name="SQL_Kontrolle_b_exop_Belegnr_2200005_2200009_uebergeleitet">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="99bca0dc-cf94-42d8-aa1c-679a5f6d72e5"
+					name="SQL_Kontrolle_B_EXSA_nach_Ueberleitung">
+						<testmodule
+						id="b5854ab0-15aa-45dd-b3aa-78f87d773c10"
+						name="SQL_Kontrolle_b_exsa_Belegnr_2200005_2200009_uebergeleitet">
+						</testmodule>
 					</testcase>
 					<testcase
 					id="11a9572f-019a-4ce6-8532-1992b36cbbf3"
@@ -1305,8 +1313,8 @@ AND exop_belegnr BETWEEN '2200005' AND '2200009';">
 					id="b6c9af66-c849-45f6-a2a1-8a0e5d1c2195"
 					name="SQL_Kontrolle_B_EXSA_nach_Verbuchung">
 						<testmodule
-						id="5de51d2e-c31d-48b3-b4c2-6f26dff2d495"
-						name="SQL_Kontrolle_b_exop_Belegnr_2200005_2200009_verbucht">
+						id="120ae5da-84e1-4c07-b8ec-b78ea5770b29"
+						name="SQL_Kontrolle_b_exsa_Belegnr_2200005_2200009_verbucht">
 						</testmodule>
 					</testcase>
 				</testcase>

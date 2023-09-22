@@ -29,11 +29,6 @@ mode="Global">
 			SELECT wird abgeschnitten bei copy/paste in Default value
 		</var>
 		<var
-		id="092f3f01-0f6d-4794-a21e-f22a26027b09"
-		name="DB_File">
-			C:\Testdaten\Allgemein\UserCode\datenbank.txt
-		</var>
-		<var
 		id="4d200bea-eba2-4785-acb2-a27e784482f4"
 		name="file_selectergebnis_b_bube_aktuell">
 			C:\temp\B_ZAHLV_001_B_BUBE_aktuell.txt
@@ -45,13 +40,22 @@ mode="Global">
 		</var>
 	</variables>
 	<recorditems>
+		<separatoritem
+		enabled="False"
+		optional="True">
+			<comment>
+				alte Methoden mit apteanSQL.cs
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ReadVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="False">
+		optional="True">
 			<comment>
 			</comment>
 			<bindings>
@@ -82,11 +86,11 @@ mode="Global">
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SQLStatement"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="False">
+		optional="True">
 			<comment>
 			</comment>
 			<bindings>
@@ -135,20 +139,20 @@ BUBE_PENSBETRAG,
 BUBE_DTPENS,
 BUBE_DTEINZLG,
 BUBE_PENSBETRSTO
+
 FROM	b_bube, b_busa
-	WHERE	b_busa.busa_belegnr = '1001'
-	AND 	b_busa.firm_nr = b_bube.firm_nr 
+	WHERE	b_busa.firm_nr = b_bube.firm_nr 
 	AND 	b_busa.busa_useraendg = b_bube.busa_useraendg
 	AND 	b_busa.busa_keybel = b_bube.busa_keybel 
 	AND 	b_busa.busa_keypos = b_bube.busa_keypos
 	AND 	b_busa.busa_status BETWEEN '1' AND '8'
-	AND		b_busa.firm_nr = '100';
+	AND		b_busa.firm_nr = '100'
+	AND		b_busa.busa_belegnr = '1001';
 					</argvalue>
 				</argument>
 				<argument
 				argname="dbFile"
-				id="d89eb6fe-cf81-4172-843c-33398d12e8e9"
-				variable="DB_File">
+				id="d89eb6fe-cf81-4172-843c-33398d12e8e9">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -170,11 +174,11 @@ FROM	b_bube, b_busa
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="FileCompareContains"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="False">
+		optional="True">
 			<comment>
 			</comment>
 			<bindings>
@@ -199,6 +203,207 @@ FROM	b_bube, b_busa
 					</argvaluetype>
 					<argvalue>
 						C:\temp\B_ZAHLV_001_B_BUBE_aktuell.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="True">
+			<comment>
+				neue Methoden mit aptean.cs ohne Variablen
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SQLStatement"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c7f0bf33-d84c-43df-9122-45f7c8698126">
+				<argument
+				argname="selectLine"
+				id="66be9f80-bfa3-4529-8628-a89e8c9041d0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						SELECT
+b_bube.BUSA_USERAENDG,
+b_bube.FIRM_NR,
+b_bube.BUSA_KEYPOS,
+BUBE_POS,
+BUBE_BETRAG,
+BUBE_MENGE,
+BER_CD1,
+BEKT_NR1,
+BER_CD2,
+BEKT_NR2,
+BER_CD3,
+BEKT_NR3,
+BER_CD4,
+BEKT_NR4,
+BER_CD5,
+BEKT_NR5,
+BER_CD6,
+BEKT_NR6,
+BUBE_TEXT,
+b_bube.KTBE_NR,
+KTBE_PROZ,
+KTBE_MENGE,
+BUBE_USERANLAG,
+BUBE_USERAENDG,
+BUBE_SKBETRAG,
+BUBE_FELD1,
+BUBE_FELD2,
+BUBE_FELD3,
+BUBE_FELD4,
+BUBE_MENGE2,
+BUBE_PENSBETRAG,
+BUBE_DTPENS,
+BUBE_DTEINZLG,
+BUBE_PENSBETRSTO
+
+FROM	b_bube, b_busa
+	WHERE	b_busa.firm_nr = b_bube.firm_nr 
+	AND 	b_busa.busa_useraendg = b_bube.busa_useraendg
+	AND 	b_busa.busa_keybel = b_bube.busa_keybel 
+	AND 	b_busa.busa_keypos = b_bube.busa_keypos
+	AND 	b_busa.busa_status BETWEEN '1' AND '8'
+	AND		b_busa.firm_nr = '100'
+	AND		b_busa.busa_belegnr = '1001';
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="0d7425de-431f-4625-b71f-8fa3105d64cc">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\temp\B_ZAHLV_001_B_BUBE_aktuell.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="FileCompareEqualWithoutBreaks"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a8c5e926-d69e-467b-adca-cd5ddc96bffb">
+				<argument
+				argname="file1"
+				id="ea66a06c-a086-4417-b951-b1dd5120b90e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUBE_Referenz.txt
+					</argvalue>
+				</argument>
+				<argument
+				argname="file2"
+				id="6c6b1e2b-e14a-4665-a46a-eaceda65a65b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\temp\B_ZAHLV_001_B_BUBE_aktuell.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="True">
+			<comment>
+				neue Methoden mit aptean.cs mit Variablen
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SQLStatement"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c7f0bf33-d84c-43df-9122-45f7c8698126">
+				<argument
+				argname="selectLine"
+				id="66be9f80-bfa3-4529-8628-a89e8c9041d0"
+				variable="SQL_Select_B_BUBE">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="0d7425de-431f-4625-b71f-8fa3105d64cc"
+				variable="file_selectergebnis_b_bube_aktuell">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="FileCompareEqualWithoutBreaks"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a8c5e926-d69e-467b-adca-cd5ddc96bffb">
+				<argument
+				argname="file1"
+				id="ea66a06c-a086-4417-b951-b1dd5120b90e"
+				variable="file_selectergebnis_b_bube_Referenz">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="file2"
+				id="6c6b1e2b-e14a-4665-a46a-eaceda65a65b"
+				variable="file_selectergebnis_b_bube_aktuell">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
 					</argvalue>
 				</argument>
 			</arguments>

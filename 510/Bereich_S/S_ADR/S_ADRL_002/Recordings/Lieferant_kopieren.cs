@@ -133,6 +133,9 @@ namespace S_ADRL_002.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$neuer_Lieferant) on item 'FrmAdr.Lieferantennummer'.", repo.FrmAdr.LieferantennummerInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.FrmAdr.LieferantennummerInfo, "Text", neuer_Lieferant);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Button0' at Center.", repo.Button0Info, new RecordItemIndex(10));
+            repo.Button0.Click();
+            
         }
 
 #region Image Feature Data

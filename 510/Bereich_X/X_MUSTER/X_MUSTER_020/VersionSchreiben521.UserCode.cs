@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_ERBU_002.Recordings_SQL_Usercode
+namespace X_MUSTER_020
 {
-    public partial class SQL_Kontrolle_b_exsa_Belegnr_2200005_2200009_uebergeleitet
+    public partial class VersionSchreiben521
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -29,6 +29,8 @@ namespace S_ADRL_002
         static S_ADRL_002Repository instance = new S_ADRL_002Repository();
         S_ADRL_002RepositoryFolders.FrmAdrAppFolder _frmadr;
         S_ADRL_002RepositoryFolders.DlgcopyadrAppFolder _dlgcopyadr;
+        S_ADRL_002RepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
+        RepoItemInfo _button0Info;
 
         /// <summary>
         /// Gets the singleton class instance representing the S_ADRL_002Repository element repository.
@@ -47,6 +49,8 @@ namespace S_ADRL_002
         {
             _frmadr = new S_ADRL_002RepositoryFolders.FrmAdrAppFolder(this);
             _dlgcopyadr = new S_ADRL_002RepositoryFolders.DlgcopyadrAppFolder(this);
+            _dlgmessagebox = new S_ADRL_002RepositoryFolders.DlgMessageBoxAppFolder(this);
+            _button0Info = new RepoItemInfo(this, "Button0", "/form[@controlname='dlgMessageBox']/button[@controlname='button0']", 30000, null, "8b5a81dc-6e9d-4287-a6eb-eb8550acd558");
         }
 
 #region Variables
@@ -78,6 +82,30 @@ namespace S_ADRL_002
         }
 
         /// <summary>
+        /// The Button0 item.
+        /// </summary>
+        [RepositoryItem("8b5a81dc-6e9d-4287-a6eb-eb8550acd558")]
+        public virtual Ranorex.Button Button0
+        {
+            get
+            {
+                 return _button0Info.CreateAdapter<Ranorex.Button>(true);
+            }
+        }
+
+        /// <summary>
+        /// The Button0 item info.
+        /// </summary>
+        [RepositoryItemInfo("8b5a81dc-6e9d-4287-a6eb-eb8550acd558")]
+        public virtual RepoItemInfo Button0Info
+        {
+            get
+            {
+                return _button0Info;
+            }
+        }
+
+        /// <summary>
         /// The FrmAdr folder.
         /// </summary>
         [RepositoryFolder("023425cf-b46a-4a3e-a23a-8ae41647ac76")]
@@ -93,6 +121,15 @@ namespace S_ADRL_002
         public virtual S_ADRL_002RepositoryFolders.DlgcopyadrAppFolder Dlgcopyadr
         {
             get { return _dlgcopyadr; }
+        }
+
+        /// <summary>
+        /// The DlgMessageBox folder.
+        /// </summary>
+        [RepositoryFolder("ed3a5643-8419-4b79-8786-7eb664a76e1b")]
+        public virtual S_ADRL_002RepositoryFolders.DlgMessageBoxAppFolder DlgMessageBox
+        {
+            get { return _dlgmessagebox; }
         }
     }
 
@@ -110,8 +147,11 @@ namespace S_ADRL_002
         {
             S_ADRL_002RepositoryFolders.FrmSearchPageFolder _frmsearchpage;
             RepoItemInfo _titlebar100lieferantenstammInfo;
+            RepoItemInfo _uidInfo;
             RepoItemInfo _lieferantennummerInfo;
             RepoItemInfo _pbcommonkopierenInfo;
+            RepoItemInfo _zahlungsartInfo;
+            RepoItemInfo _dfadruidInfo;
 
             /// <summary>
             /// Creates a new FrmAdr  folder.
@@ -121,8 +161,11 @@ namespace S_ADRL_002
             {
                 _frmsearchpage = new S_ADRL_002RepositoryFolders.FrmSearchPageFolder(this);
                 _titlebar100lieferantenstammInfo = new RepoItemInfo(this, "TitleBar100Lieferantenstamm", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "2929ff5c-9195-4b3a-977f-5822d7528cc3");
+                _uidInfo = new RepoItemInfo(this, "UID", ".//tabpage[@controlname='tpAllgemein']/container[@controlname='ucUid']/text[@controlname='dfAdr_uid']/text[@accessiblerole='Text']", "", 30000, null, "490bee07-42e0-4c51-85a2-2c267c3ec418");
                 _lieferantennummerInfo = new RepoItemInfo(this, "Lieferantennummer", "?/?/text[@controlname='dfAdr_nr']/text[@accessiblerole='Text']", "", 30000, null, "ae39d3f2-48e2-4d83-8b5a-346a3405c1c0");
                 _pbcommonkopierenInfo = new RepoItemInfo(this, "PbCommonKopieren", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbStandard3']", "", 30000, null, "ddeb4650-37bb-4d3a-b9fd-bebfad93b603");
+                _zahlungsartInfo = new RepoItemInfo(this, "Zahlungsart", "container[@controlname='ClientArea']//element[@controlname='dfKlkt_zahlart']/text[@accessiblename='Zahlungsart:']", "", 30000, null, "afd799bd-6250-474a-b55e-0c9ec373b28d");
+                _dfadruidInfo = new RepoItemInfo(this, "DfAdrUid", "container[@controlname='ClientArea']//element[@controlname='ucUid']/element[@controlname='dfAdr_uid']", "", 30000, null, "bcf52289-a165-4075-a95b-b727b6145d6c");
             }
 
             /// <summary>
@@ -174,6 +217,30 @@ namespace S_ADRL_002
             }
 
             /// <summary>
+            /// The UID item.
+            /// </summary>
+            [RepositoryItem("490bee07-42e0-4c51-85a2-2c267c3ec418")]
+            public virtual Ranorex.Text UID
+            {
+                get
+                {
+                    return _uidInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UID item info.
+            /// </summary>
+            [RepositoryItemInfo("490bee07-42e0-4c51-85a2-2c267c3ec418")]
+            public virtual RepoItemInfo UIDInfo
+            {
+                get
+                {
+                    return _uidInfo;
+                }
+            }
+
+            /// <summary>
             /// The Lieferantennummer item.
             /// </summary>
             [RepositoryItem("ae39d3f2-48e2-4d83-8b5a-346a3405c1c0")]
@@ -218,6 +285,54 @@ namespace S_ADRL_002
                 get
                 {
                     return _pbcommonkopierenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Zahlungsart item.
+            /// </summary>
+            [RepositoryItem("afd799bd-6250-474a-b55e-0c9ec373b28d")]
+            public virtual Ranorex.Text Zahlungsart
+            {
+                get
+                {
+                    return _zahlungsartInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Zahlungsart item info.
+            /// </summary>
+            [RepositoryItemInfo("afd799bd-6250-474a-b55e-0c9ec373b28d")]
+            public virtual RepoItemInfo ZahlungsartInfo
+            {
+                get
+                {
+                    return _zahlungsartInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfAdrUid item.
+            /// </summary>
+            [RepositoryItem("bcf52289-a165-4075-a95b-b727b6145d6c")]
+            public virtual Ranorex.Unknown DfAdrUid
+            {
+                get
+                {
+                    return _dfadruidInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfAdrUid item info.
+            /// </summary>
+            [RepositoryItemInfo("bcf52289-a165-4075-a95b-b727b6145d6c")]
+            public virtual RepoItemInfo DfAdrUidInfo
+            {
+                get
+                {
+                    return _dfadruidInfo;
                 }
             }
 
@@ -463,6 +578,72 @@ namespace S_ADRL_002
                 get
                 {
                     return _pbokInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DlgMessageBoxAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("ed3a5643-8419-4b79-8786-7eb664a76e1b")]
+        public partial class DlgMessageBoxAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _uidpruefungdieangegebeneuidistnicInfo;
+
+            /// <summary>
+            /// Creates a new DlgMessageBox  folder.
+            /// </summary>
+            public DlgMessageBoxAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DlgMessageBox", "/form[@controlname='dlgMessageBox']", parentFolder, 30000, null, true, "ed3a5643-8419-4b79-8786-7eb664a76e1b", "")
+            {
+                _uidpruefungdieangegebeneuidistnicInfo = new RepoItemInfo(this, "UIDPruefungDieAngegebeneUIDIstNic", "?/?/text[@accessiblename>'UID-Prüfung: die angegebene']", "", 30000, null, "6b2373e6-b6ca-4ab9-9128-52b69842c7db");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("ed3a5643-8419-4b79-8786-7eb664a76e1b")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("ed3a5643-8419-4b79-8786-7eb664a76e1b")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UIDPruefungDieAngegebeneUIDIstNic item.
+            /// </summary>
+            [RepositoryItem("6b2373e6-b6ca-4ab9-9128-52b69842c7db")]
+            public virtual Ranorex.Text UIDPruefungDieAngegebeneUIDIstNic
+            {
+                get
+                {
+                    return _uidpruefungdieangegebeneuidistnicInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UIDPruefungDieAngegebeneUIDIstNic item info.
+            /// </summary>
+            [RepositoryItemInfo("6b2373e6-b6ca-4ab9-9128-52b69842c7db")]
+            public virtual RepoItemInfo UIDPruefungDieAngegebeneUIDIstNicInfo
+            {
+                get
+                {
+                    return _uidpruefungdieangegebeneuidistnicInfo;
                 }
             }
         }

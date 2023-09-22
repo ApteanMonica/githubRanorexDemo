@@ -29,11 +29,6 @@ mode="Global">
 			select  in default value wird bei copy/paste abgeschnitten
 		</var>
 		<var
-		id="a294cf74-2524-45eb-b468-8cc5154a96c6"
-		name="DB_File">
-			C:\Testdaten\Allgemein\UserCode\datenbank.txt
-		</var>
-		<var
 		id="a3893ea3-a461-4a23-8911-5c0ccca51621"
 		name="file_selectergebnis_b_exsa_verbucht_aktuell">
 			C:\temp\B_ERBU_002_B_EXSA_verbucht_aktuell.txt
@@ -45,13 +40,22 @@ mode="Global">
 		</var>
 	</variables>
 	<recorditems>
+		<separatoritem
+		enabled="False"
+		optional="False">
+			<comment>
+				alte Methoden mit apteanSQL.cs
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ReadVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="False">
+		optional="True">
 			<comment>
 			</comment>
 			<bindings>
@@ -82,11 +86,11 @@ mode="Global">
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SQLStatement"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="False">
+		optional="True">
 			<comment>
 			</comment>
 			<bindings>
@@ -160,8 +164,7 @@ AND exop_belegnr BETWEEN '2200005' AND '2200009';
 				</argument>
 				<argument
 				argname="dbFile"
-				id="8644b8a5-f959-4679-9312-d6451dfb8e4f"
-				variable="DB_File">
+				id="8644b8a5-f959-4679-9312-d6451dfb8e4f">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -183,11 +186,11 @@ AND exop_belegnr BETWEEN '2200005' AND '2200009';
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="FileCompareEqual"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="False">
+		optional="True">
 			<comment>
 			</comment>
 			<bindings>
@@ -196,8 +199,221 @@ AND exop_belegnr BETWEEN '2200005' AND '2200009';
 			id="d33215fa-433e-4955-9a94-2c35e7022d45">
 				<argument
 				argname="file1"
-				id="306488dc-b70e-4cb1-80dc-85eb96a507d4"
+				id="306488dc-b70e-4cb1-80dc-85eb96a507d4">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_002\B_ERBU_002_B_EXSA_uebergeleitet_Referenz.txt
+					</argvalue>
+				</argument>
+				<argument
+				argname="file2"
+				id="d60b2958-8554-4d59-8247-8ebc76a2705a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\temp\B_ERBU_002_B_EXSA_uebergeleitet_aktuell.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="True">
+			<comment>
+				neue Methoden mit aptean.cs ohne Variablen
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SQLStatement"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c7f0bf33-d84c-43df-9122-45f7c8698126">
+				<argument
+				argname="selectLine"
+				id="66be9f80-bfa3-4529-8628-a89e8c9041d0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						select
+b_exsa.FIRM_NR,
+EXSA_KEYPOS,
+EXSA_BER_CD6,
+EXSA_BEKT_NR6,
+EXSA_BER_CD5,
+EXSA_BEKT_NR5,
+EXSA_BER_CD4,
+EXSA_BEKT_NR4,
+EXSA_BER_CD1,
+EXSA_BEKT_NR1,
+EXSA_BER_CD2,
+EXSA_BEKT_NR2,
+EXSA_BER_CD3,
+EXSA_BEKT_NR3,
+UST_CD,
+EXSA_ART,
+EXSA_KTONR,
+EXSA_SKONTOKZ,
+EXSA_SH,
+EXSA_BETRAG,
+EXSA_FWBETRAG,
+EXSA_MENGE,
+EXSA_USTBETRAG,
+EXSA_USTFWBETRAG,
+EXSA_USTMV,
+EXSA_USTSATZ,
+EXSA_TEXT1,
+EXSA_TEXT2,
+EXSA_TEXTCD,
+EXSA_BESTELLNR,
+EXSA_LIEFSNR,
+ANLA_NR,
+ANLA_POS,
+KTBE_NR,
+PVT_CD,
+EXSA_JAHR_BUBE_VON,
+EXSA_MON_BUBE_VON,
+EXSA_JAHR_BUBE_BIS,
+EXSA_MON_BUBE_BIS,
+EXSA_FELD1,
+EXSA_FELD2,
+EXSA_FELD3,
+EXSA_FELD4,
+EXSA_UID,
+EXSA_ARCHIVNR,
+EXSA_ARCHIVDOC1,
+EXSA_DTLEISTUNG,
+EXSA_MENGE2,
+EXSA_DTOPFAELL,
+EXSA_VNROPAUSGL
+from b_exsa, b_exop
+where b_exop.firm_nr = b_exsa.firm_nr
+AND b_exop.exop_keybel = b_exsa.exop_keybel
+AND b_exop.firm_nr = '100' 
+AND exop_belegnr BETWEEN '2200005' AND '2200009';
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="0d7425de-431f-4625-b71f-8fa3105d64cc">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\temp\B_ERBU_002_B_EXSA_uebergeleitet_aktuell.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="FileCompareEqualWithoutBreaks"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a8c5e926-d69e-467b-adca-cd5ddc96bffb">
+				<argument
+				argname="file1"
+				id="ea66a06c-a086-4417-b951-b1dd5120b90e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_002\B_ERBU_002_B_EXSA_uebergeleitet_Referenz.txt
+					</argvalue>
+				</argument>
+				<argument
+				argname="file2"
+				id="6c6b1e2b-e14a-4665-a46a-eaceda65a65b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						C:\temp\B_ERBU_002_B_EXSA_uebergeleitet_aktuell.txt
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="True">
+			<comment>
+				neue Methoden mit aptean.cs mit Variablen
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SQLStatement"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c7f0bf33-d84c-43df-9122-45f7c8698126">
+				<argument
+				argname="selectLine"
+				id="66be9f80-bfa3-4529-8628-a89e8c9041d0"
+				variable="SQL_Select_B_EXSA">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="file"
+				id="0d7425de-431f-4625-b71f-8fa3105d64cc"
 				variable="file_selectergebnis_b_exsa_verbucht_aktuell">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="FileCompareEqualWithoutBreaks"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a8c5e926-d69e-467b-adca-cd5ddc96bffb">
+				<argument
+				argname="file1"
+				id="ea66a06c-a086-4417-b951-b1dd5120b90e"
+				variable="file_selectergebnis_b_exsa_verbucht_Referenz">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -206,8 +422,8 @@ AND exop_belegnr BETWEEN '2200005' AND '2200009';
 				</argument>
 				<argument
 				argname="file2"
-				id="d60b2958-8554-4d59-8247-8ebc76a2705a"
-				variable="file_selectergebnis_b_exsa_verbucht_Referenz">
+				id="6c6b1e2b-e14a-4665-a46a-eaceda65a65b"
+				variable="file_selectergebnis_b_exsa_verbucht_aktuell">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

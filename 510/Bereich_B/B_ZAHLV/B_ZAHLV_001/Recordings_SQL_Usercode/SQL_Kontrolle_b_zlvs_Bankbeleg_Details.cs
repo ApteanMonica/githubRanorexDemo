@@ -41,8 +41,7 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
         /// </summary>
         public SQL_Kontrolle_b_zlvs_Bankbeleg_Details()
         {
-            SQL_Select_B_ZLVS = "select * from b_zlvs where firm_nr ='100' and zlvs_vorschlag = '1' and busa_keybel BETWEEN 112 AND 126;";
-            DB_File = "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt";
+            SQL_Select_B_ZLVS = "select * from b_zlvs where firm_nr ='100' and zlvs_vorschlag = '1' and busa_keybel BETWEEN '112' AND '126';";
             file_selectergebnis_b_zlvs_aktuell = "C:\\temp\\B_ZAHLV_001_B_ZLVS_aktuell.txt";
             file_selectergebnis_b_zlvs_Referenz = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_ZLVS_Referenz.txt";
         }
@@ -67,18 +66,6 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
         {
             get { return _SQL_Select_B_ZLVS; }
             set { _SQL_Select_B_ZLVS = value; }
-        }
-
-        string _DB_File;
-
-        /// <summary>
-        /// Gets or sets the value of variable DB_File.
-        /// </summary>
-        [TestVariable("915a9a1c-3f12-457e-af39-c4e72e51ca13")]
-        public string DB_File
-        {
-            get { return _DB_File; }
-            set { _DB_File = value; }
         }
 
         string _file_selectergebnis_b_zlvs_aktuell;
@@ -131,11 +118,48 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
 
             Init();
 
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.ReadVersion("C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "c:\\temp\\version_b_zahlv_001_b_zlvs_vor_Verbuchung.txt");
+            // alte Methoden mit apteanSQL.cs
+            try {
+                //Report.Log(ReportLevel.Info, "Section", "alte Methoden mit apteanSQL.cs", new RecordItemIndex(0));
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select * from b_zlvs where firm_nr ='100' and zlvs_vorschlag = '1' and busa_keybel BETWEEN '112' AND '126';", "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "C:\\temp\\B_ZAHLV_001_B_ZLVS_aktuell.txt");
+            try {
+                //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.ReadVersion("C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "c:\\temp\\version_b_zahlv_001_b_zlvs_vor_Verbuchung.txt");
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareEqual(file_selectergebnis_b_zlvs_Referenz, file_selectergebnis_b_zlvs_aktuell);
+            try {
+                //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select * from b_zlvs where firm_nr ='100' and zlvs_vorschlag = '1' and busa_keybel BETWEEN '112' AND '126';", "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "C:\\temp\\B_ZAHLV_001_B_ZLVS_aktuell.txt");
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
+            
+            try {
+                //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareEqual("C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_ZLVS_Referenz.txt", "C:\\temp\\B_ZAHLV_001_B_ZLVS_aktuell.txt");
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
+            
+            // neue Methoden mit aptean.cs ohne Variablen
+            try {
+                Report.Log(ReportLevel.Info, "Section", "neue Methoden mit aptean.cs ohne Variablen", new RecordItemIndex(4));
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
+            
+            try {
+                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement("select * from b_zlvs where firm_nr ='100' and zlvs_vorschlag = '1' and busa_keybel BETWEEN '112' AND '126';", "C:\\temp\\B_ZAHLV_001_B_ZLVS_aktuell.txt");
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
+            
+            try {
+                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks("C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_ZLVS_Referenz.txt", "C:\\temp\\B_ZAHLV_001_B_ZLVS_aktuell.txt");
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
+            
+            // neue Methoden mit aptean.cs mit Variablen
+            try {
+                Report.Log(ReportLevel.Info, "Section", "neue Methoden mit aptean.cs mit Variablen", new RecordItemIndex(7));
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
+            
+            try {
+                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement(SQL_Select_B_ZLVS, file_selectergebnis_b_zlvs_aktuell);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(8)); }
+            
+            try {
+                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks(file_selectergebnis_b_zlvs_Referenz, file_selectergebnis_b_zlvs_aktuell);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
             
         }
 

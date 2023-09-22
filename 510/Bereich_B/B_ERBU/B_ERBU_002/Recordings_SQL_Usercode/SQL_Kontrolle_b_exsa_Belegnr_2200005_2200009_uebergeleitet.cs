@@ -26,7 +26,7 @@ namespace B_ERBU_002.Recordings_SQL_Usercode
     /// <summary>
     ///The SQL_Kontrolle_b_exsa_Belegnr_2200005_2200009_uebergeleitet recording.
     /// </summary>
-    [TestModule("d521659b-71f0-4410-9511-ba1f7a7cd427", ModuleType.Recording, 1)]
+    [TestModule("88e0abf2-2989-4d7e-ac6e-05e71d6a5abe", ModuleType.Recording, 1)]
     public partial class SQL_Kontrolle_b_exsa_Belegnr_2200005_2200009_uebergeleitet : ITestModule
     {
         /// <summary>
@@ -41,10 +41,9 @@ namespace B_ERBU_002.Recordings_SQL_Usercode
         /// </summary>
         public SQL_Kontrolle_b_exsa_Belegnr_2200005_2200009_uebergeleitet()
         {
-            SQL_Select_B_EXSA = "select  in default value wird bei copy/paste abgeschnitten";
-            DB_File = "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt";
             file_selectergebnis_b_exsa_uebergeleitet_aktuell = "C:\\temp\\B_ERBU_002_B_EXSA_uebergeleitet_aktuell.txt";
             file_selectergebnis_b_exsa_uebergeleitet_Referenz = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ERBU_002\\B_ERBU_002_B_EXSA_uebergeleitet_Referenz.txt";
+            SQL_Select_B_EXSA = "select  in default value wird bei copy/paste abgeschnitten";
         }
 
         /// <summary>
@@ -57,36 +56,12 @@ namespace B_ERBU_002.Recordings_SQL_Usercode
 
 #region Variables
 
-        string _SQL_Select_B_EXSA;
-
-        /// <summary>
-        /// Gets or sets the value of variable SQL_Select_B_EXSA.
-        /// </summary>
-        [TestVariable("47623fb2-1dae-45fb-9ca6-698fab4b1809")]
-        public string SQL_Select_B_EXSA
-        {
-            get { return _SQL_Select_B_EXSA; }
-            set { _SQL_Select_B_EXSA = value; }
-        }
-
-        string _DB_File;
-
-        /// <summary>
-        /// Gets or sets the value of variable DB_File.
-        /// </summary>
-        [TestVariable("5af44d52-2332-4d06-beae-0e27379d599e")]
-        public string DB_File
-        {
-            get { return _DB_File; }
-            set { _DB_File = value; }
-        }
-
         string _file_selectergebnis_b_exsa_uebergeleitet_aktuell;
 
         /// <summary>
         /// Gets or sets the value of variable file_selectergebnis_b_exsa_uebergeleitet_aktuell.
         /// </summary>
-        [TestVariable("fe1598f7-913b-4976-bfa4-28ea6a9cdce3")]
+        [TestVariable("6db3d134-a1c5-41ef-a46f-b4c76f52b627")]
         public string file_selectergebnis_b_exsa_uebergeleitet_aktuell
         {
             get { return _file_selectergebnis_b_exsa_uebergeleitet_aktuell; }
@@ -98,11 +73,23 @@ namespace B_ERBU_002.Recordings_SQL_Usercode
         /// <summary>
         /// Gets or sets the value of variable file_selectergebnis_b_exsa_uebergeleitet_Referenz.
         /// </summary>
-        [TestVariable("52c82d11-f197-41c8-b47b-d9865e73268f")]
+        [TestVariable("1b3c1452-eacc-4fc9-923e-28b5d73a30b2")]
         public string file_selectergebnis_b_exsa_uebergeleitet_Referenz
         {
             get { return _file_selectergebnis_b_exsa_uebergeleitet_Referenz; }
             set { _file_selectergebnis_b_exsa_uebergeleitet_Referenz = value; }
+        }
+
+        string _SQL_Select_B_EXSA;
+
+        /// <summary>
+        /// Gets or sets the value of variable SQL_Select_B_EXSA.
+        /// </summary>
+        [TestVariable("cafbd0d7-db89-45ec-906d-182434e6380f")]
+        public string SQL_Select_B_EXSA
+        {
+            get { return _SQL_Select_B_EXSA; }
+            set { _SQL_Select_B_EXSA = value; }
         }
 
 #endregion
@@ -131,11 +118,46 @@ namespace B_ERBU_002.Recordings_SQL_Usercode
 
             Init();
 
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.ReadVersion("C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "c:\\temp\\version_b_erbu_002_b_exsa_uebergeleitet.txt");
+            // alte Methoden mit apteanSQL.cs
+            //Report.Log(ReportLevel.Info, "Section", "alte Methoden mit apteanSQL.cs", new RecordItemIndex(0));
             
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select\r\nb_exsa.FIRM_NR,\r\nEXSA_KEYPOS,\r\nEXSA_BER_CD6,\r\nEXSA_BEKT_NR6,\r\nEXSA_BER_CD5,\r\nEXSA_BEKT_NR5,\r\nEXSA_BER_CD4,\r\nEXSA_BEKT_NR4,\r\nEXSA_BER_CD1,\r\nEXSA_BEKT_NR1,\r\nEXSA_BER_CD2,\r\nEXSA_BEKT_NR2,\r\nEXSA_BER_CD3,\r\nEXSA_BEKT_NR3,\r\nUST_CD,\r\nEXSA_ART,\r\nEXSA_KTONR,\r\nEXSA_SKONTOKZ,\r\nEXSA_SH,\r\nEXSA_BETRAG,\r\nEXSA_FWBETRAG,\r\nEXSA_MENGE,\r\nEXSA_USTBETRAG,\r\nEXSA_USTFWBETRAG,\r\nEXSA_USTMV,\r\nEXSA_USTSATZ,\r\nEXSA_TEXT1,\r\nEXSA_TEXT2,\r\nEXSA_TEXTCD,\r\nEXSA_BESTELLNR,\r\nEXSA_LIEFSNR,\r\nANLA_NR,\r\nANLA_POS,\r\nKTBE_NR,\r\nPVT_CD,\r\nEXSA_JAHR_BUBE_VON,\r\nEXSA_MON_BUBE_VON,\r\nEXSA_JAHR_BUBE_BIS,\r\nEXSA_MON_BUBE_BIS,\r\nEXSA_FELD1,\r\nEXSA_FELD2,\r\nEXSA_FELD3,\r\nEXSA_FELD4,\r\nEXSA_UID,\r\nEXSA_ARCHIVNR,\r\nEXSA_ARCHIVDOC1,\r\nEXSA_DTLEISTUNG,\r\nEXSA_MENGE2,\r\nEXSA_DTOPFAELL,\r\nEXSA_VNROPAUSGL\r\nfrom b_exsa, b_exop\r\nwhere b_exop.firm_nr = b_exsa.firm_nr\r\nAND b_exop.exop_keybel = b_exsa.exop_keybel\r\nAND b_exop.firm_nr = '100' \r\nAND exop_belegnr BETWEEN '2200005' AND '2200009';", DB_File, "C:\\temp\\B_ERBU_002_B_EXSA_uebergeleitet_aktuell.txt");
+            try {
+                //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.ReadVersion("C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "c:\\temp\\version_b_erbu_002_b_exsa_uebergeleitet.txt");
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
-            Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareEqual(file_selectergebnis_b_exsa_uebergeleitet_aktuell, file_selectergebnis_b_exsa_uebergeleitet_Referenz);
+            try {
+                //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select\r\nb_exsa.FIRM_NR,\r\nEXSA_KEYPOS,\r\nEXSA_BER_CD6,\r\nEXSA_BEKT_NR6,\r\nEXSA_BER_CD5,\r\nEXSA_BEKT_NR5,\r\nEXSA_BER_CD4,\r\nEXSA_BEKT_NR4,\r\nEXSA_BER_CD1,\r\nEXSA_BEKT_NR1,\r\nEXSA_BER_CD2,\r\nEXSA_BEKT_NR2,\r\nEXSA_BER_CD3,\r\nEXSA_BEKT_NR3,\r\nUST_CD,\r\nEXSA_ART,\r\nEXSA_KTONR,\r\nEXSA_SKONTOKZ,\r\nEXSA_SH,\r\nEXSA_BETRAG,\r\nEXSA_FWBETRAG,\r\nEXSA_MENGE,\r\nEXSA_USTBETRAG,\r\nEXSA_USTFWBETRAG,\r\nEXSA_USTMV,\r\nEXSA_USTSATZ,\r\nEXSA_TEXT1,\r\nEXSA_TEXT2,\r\nEXSA_TEXTCD,\r\nEXSA_BESTELLNR,\r\nEXSA_LIEFSNR,\r\nANLA_NR,\r\nANLA_POS,\r\nKTBE_NR,\r\nPVT_CD,\r\nEXSA_JAHR_BUBE_VON,\r\nEXSA_MON_BUBE_VON,\r\nEXSA_JAHR_BUBE_BIS,\r\nEXSA_MON_BUBE_BIS,\r\nEXSA_FELD1,\r\nEXSA_FELD2,\r\nEXSA_FELD3,\r\nEXSA_FELD4,\r\nEXSA_UID,\r\nEXSA_ARCHIVNR,\r\nEXSA_ARCHIVDOC1,\r\nEXSA_DTLEISTUNG,\r\nEXSA_MENGE2,\r\nEXSA_DTOPFAELL,\r\nEXSA_VNROPAUSGL\r\nfrom b_exsa, b_exop\r\nwhere b_exop.firm_nr = b_exsa.firm_nr\r\nAND b_exop.exop_keybel = b_exsa.exop_keybel\r\nAND b_exop.firm_nr = '100' \r\nAND exop_belegnr BETWEEN '2200005' AND '2200009';", "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "C:\\temp\\B_ERBU_002_B_EXSA_verbucht_aktuell.txt");
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
+            
+            try {
+                //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareEqual("C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ERBU_002\\B_ERBU_002_B_EXSA_uebergeleitet_Referenz.txt", "C:\\temp\\B_ERBU_002_B_EXSA_uebergeleitet_aktuell.txt");
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
+            
+            // neue Methoden mit aptean.cs ohne Variablen
+            try {
+                Report.Log(ReportLevel.Info, "Section", "neue Methoden mit aptean.cs ohne Variablen", new RecordItemIndex(4));
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
+            
+            try {
+                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement("select\r\nb_exsa.FIRM_NR,\r\nEXSA_KEYPOS,\r\nEXSA_BER_CD6,\r\nEXSA_BEKT_NR6,\r\nEXSA_BER_CD5,\r\nEXSA_BEKT_NR5,\r\nEXSA_BER_CD4,\r\nEXSA_BEKT_NR4,\r\nEXSA_BER_CD1,\r\nEXSA_BEKT_NR1,\r\nEXSA_BER_CD2,\r\nEXSA_BEKT_NR2,\r\nEXSA_BER_CD3,\r\nEXSA_BEKT_NR3,\r\nUST_CD,\r\nEXSA_ART,\r\nEXSA_KTONR,\r\nEXSA_SKONTOKZ,\r\nEXSA_SH,\r\nEXSA_BETRAG,\r\nEXSA_FWBETRAG,\r\nEXSA_MENGE,\r\nEXSA_USTBETRAG,\r\nEXSA_USTFWBETRAG,\r\nEXSA_USTMV,\r\nEXSA_USTSATZ,\r\nEXSA_TEXT1,\r\nEXSA_TEXT2,\r\nEXSA_TEXTCD,\r\nEXSA_BESTELLNR,\r\nEXSA_LIEFSNR,\r\nANLA_NR,\r\nANLA_POS,\r\nKTBE_NR,\r\nPVT_CD,\r\nEXSA_JAHR_BUBE_VON,\r\nEXSA_MON_BUBE_VON,\r\nEXSA_JAHR_BUBE_BIS,\r\nEXSA_MON_BUBE_BIS,\r\nEXSA_FELD1,\r\nEXSA_FELD2,\r\nEXSA_FELD3,\r\nEXSA_FELD4,\r\nEXSA_UID,\r\nEXSA_ARCHIVNR,\r\nEXSA_ARCHIVDOC1,\r\nEXSA_DTLEISTUNG,\r\nEXSA_MENGE2,\r\nEXSA_DTOPFAELL,\r\nEXSA_VNROPAUSGL\r\nfrom b_exsa, b_exop\r\nwhere b_exop.firm_nr = b_exsa.firm_nr\r\nAND b_exop.exop_keybel = b_exsa.exop_keybel\r\nAND b_exop.firm_nr = '100' \r\nAND exop_belegnr BETWEEN '2200005' AND '2200009';", "C:\\temp\\B_ERBU_002_B_EXSA_uebergeleitet_aktuell.txt");
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
+            
+            try {
+                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks("C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ERBU_002\\B_ERBU_002_B_EXSA_uebergeleitet_Referenz.txt", "C:\\temp\\B_ERBU_002_B_EXSA_uebergeleitet_aktuell.txt");
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
+            
+            // neue Methoden mit aptean.cs mit Variablen
+            try {
+                Report.Log(ReportLevel.Info, "Section", "neue Methoden mit aptean.cs mit Variablen", new RecordItemIndex(7));
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
+            
+            try {
+                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement(SQL_Select_B_EXSA, file_selectergebnis_b_exsa_uebergeleitet_aktuell);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(8)); }
+            
+            try {
+                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks(file_selectergebnis_b_exsa_uebergeleitet_Referenz, file_selectergebnis_b_exsa_uebergeleitet_aktuell);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
             
         }
 

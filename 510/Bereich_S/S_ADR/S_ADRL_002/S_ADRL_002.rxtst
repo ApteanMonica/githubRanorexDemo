@@ -3,6 +3,26 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
+			id="1e8c5620-fc37-4f54-b419-c677b8e7968b"
+			name="UID_Pruefung"
+			ref="5173543a-6b35-4a38-8e88-13d1395e6071"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="UID_nicht_gueltig"
+					datasourceid="3d948ae7-7655-4d1c-b9ea-56cb5e117c52"
+					variableid="75453aee-25fd-4876-b483-9fa82ae6eab4"
+					variablename="UID_nicht_gueltig">
+					</var>
+					<var
+					dataname="UID_falsch"
+					datasourceid="3d948ae7-7655-4d1c-b9ea-56cb5e117c52"
+					variableid="ff1245a3-fb46-428c-93ce-bcf7c1ac0eb8"
+					variablename="UID_falsch">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="202cbdde-4166-4d50-8bbe-c656ac8e1f89"
 			name="CloseAUT"
 			ref="a1ebdd3b-d5c3-4007-82be-ba7f52005623"
@@ -53,6 +73,14 @@
 					name="neuer_Lieferant"
 					value="">
 					</param>
+					<param
+					name="UID_falsch"
+					value="475601939">
+					</param>
+					<param
+					name="UID_nicht_gueltig"
+					value="UID-Prüfung: die angegebene UID ist nicht gültig.">
+					</param>
 				</parameters>
 			</testcase>
 			<teardown
@@ -70,16 +98,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="3d948ae7-7655-4d1c-b9ea-56cb5e117c52"
-					variableid="5d00a58a-7cc6-43e4-9484-ce259a3ce0b9"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm"
 					datasourceid="3d948ae7-7655-4d1c-b9ea-56cb5e117c52"
 					variableid="013feacf-f4cc-4d70-a4c7-593c99a8b2be"
 					variablename="Programm">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="3d948ae7-7655-4d1c-b9ea-56cb5e117c52"
+					variableid="5d00a58a-7cc6-43e4-9484-ce259a3ce0b9"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -94,16 +122,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Lieferant"
-					datasourceid="3d948ae7-7655-4d1c-b9ea-56cb5e117c52"
-					variableid="48fc8613-66ec-4788-93c3-0ef839a4ab99"
-					variablename="Lieferant">
-					</var>
-					<var
 					dataname="neuer_Lieferant"
 					datasourceid="3d948ae7-7655-4d1c-b9ea-56cb5e117c52"
 					variableid="85a1243e-04ac-409d-acb4-970c33a9a600"
 					variablename="neuer_Lieferant">
+					</var>
+					<var
+					dataname="Lieferant"
+					datasourceid="3d948ae7-7655-4d1c-b9ea-56cb5e117c52"
+					variableid="48fc8613-66ec-4788-93c3-0ef839a4ab99"
+					variablename="Lieferant">
 					</var>
 				</databinding>
 			</testmodule>
@@ -129,6 +157,10 @@
 						<testmodule
 						id="d7b8b28c-6c39-4030-87a5-106062069eb9"
 						name="Lieferant_kopieren">
+						</testmodule>
+						<testmodule
+						id="1e8c5620-fc37-4f54-b419-c677b8e7968b"
+						name="UID_Pruefung">
 						</testmodule>
 						<teardown
 						id="7155f958-809f-4551-b15f-2f5860f53dcb"
