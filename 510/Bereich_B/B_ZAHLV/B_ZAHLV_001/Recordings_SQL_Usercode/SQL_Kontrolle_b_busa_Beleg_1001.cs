@@ -148,35 +148,31 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
                 Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains("C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUSA_Referenz.txt", "C:\\temp\\B_ZAHLV_001_B_BUSA_aktuell.txt");
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
-            try {
-                Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareEqual(file_selectergebnis_b_busa_aktuell, file_selectergebnis_b_busa_Referenz);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
-            
             // neue Methoden mit aptean.cs ohne Variablen
             try {
-                Report.Log(ReportLevel.Info, "Section", "neue Methoden mit aptean.cs ohne Variablen", new RecordItemIndex(5));
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
+                Report.Log(ReportLevel.Info, "Section", "neue Methoden mit aptean.cs ohne Variablen", new RecordItemIndex(4));
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
             try {
                 Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement("select  \r\nBUSA_USERAENDG,\r\nFIRM_NR,\r\nBUSA_KEYPOS,\r\nKTO_NR,\r\nGKTO_NR,\r\nUST_CD,\r\nWRG_CD,\r\nBUSA_BUSY,\r\nADR_NR,\r\nBUSA_STATUS,\r\nBUSA_JOURNAL,\r\nBUSA_JAHR,\r\nBUSA_PERIODE,\r\nBUSA_DTBELEG,\r\nBUSA_BELEGNR,\r\nBUSA_KL,\r\nBUSA_SH,\r\nBUSA_ART,\r\nBUSA_BERKZ,\r\nBUSA_SKONTOKZ,\r\nBUSA_BETRAG,\r\nBUSA_FWBETRAG,\r\nBUSA_KURS,\r\nBUSA_MENGE,\r\nBUSA_USTMV,\r\nBUSA_USTSATZ,\r\nBUSA_USTAUFT,\r\nBUSA_USTBETRAG,\r\nBUSA_USTFWBETRAG,\r\nBUSA_CD1,\r\nBUSA_CD2,\r\nBUSA_CD3,\r\nBUSA_VERARB1,\r\nBUSA_VERARB2,\r\nBUSA_VERARB3,\r\nBUSA_OP,\r\nBUSA_NROPAUSGL,\r\nBUSA_DTOPAUSGL,\r\nBUSA_DTOPFAELL,\r\nBUSA_ANZAHLUNG,\r\nBUSA_REFART,\r\nBUSA_REFBELEGNR,\r\nBUSA_REFKEYBEL,\r\nBUSA_REFKEYPOS,\r\nBUSA_UVAJAHR,\r\nBUSA_UVAMONAT,\r\nBUSA_UVATAG,\r\nBUSA_USTSTATUS,\r\nBUSA_TYP,\r\nUST_UVACD,\r\nBUSA_BEZUG,\r\nBUSA_BEZUG2,\r\nBUSA_TEXT,\r\nBUSA_TEXT2,\r\nBUSA_BESTELLNR,\r\nBUSA_LIEFSNR,\r\nANLA_NR,\r\nANLA_POS,\r\nBUSA_USTAUFTBETRAG,\r\nBUSA_NRFREMDBELEG,\r\nBUSA_DTFREMDBELEG,\r\nBUSA_USERJOURNAL,\r\nKTBE_NR,\r\nBUSA_USERHERKUNFT,\r\nWEOP_BELEGNR,\r\nWEOP_STATUS,\r\nBUSA_ARCHIVNR,\r\nBUSA_UID,\r\nBUSA_ARCHIVDOC1,\r\nBUSA_DTSTOLOE,\r\nBUSA_USERSTOLOE,\r\nBUSA_PROGSTOLOE,\r\nBUSA_PERI_BUBE_VON,\r\nBUSA_PERI_BUBE_BIS,\r\nBUSA_FELD1,\r\nBUSA_FELD2,\r\nBUSA_JAHR_BUBE_VON,\r\nBUSA_FELD3,\r\nBUSA_JAHR_BUBE_BIS,\r\nBUSA_FELD4,\r\nPVT_CD,\r\nBUSA_HERKUNFT,\r\nBUSA_DTHERKUNFT,\r\nBUSA_SKBETRAG,\r\nBUSA_SKUSTBETRAG,\r\nBUSA_SKFWBETRAG,\r\nBUSA_SKFWUSTBETRAG,\r\nLAND_CD_ONACE,\r\nBUSA_SAOPKZEB,\r\nBUSA_DTLEISTUNG,\r\nBUSA_USEREXOP,\r\nBUSA_DTABGLEICH,\r\nBUSA_KZSTORNO,\r\nBUSA_STORNOGRUND,\r\nBUSA_STOKEYBEL,\r\nBUSA_STOKEYPOS,\r\nBUSA_KZKLEINRG,\r\nBUSA_VSECODE,\r\nBUSA_VSESUBCODE,\r\nBUSA_MENGE2,\r\nBUSA_KEYBEL_STORNO,\r\nBUSA_KZBN,\r\nBUSA_PMTINFID,\r\nRST_CD,\r\nBUSA_SORT_PK,\r\nBUSA_KEYPOS_SKT\r\nfrom b_busa where firm_nr = '100' and busa_belegnr = '1001';", "C:\\temp\\B_ZAHLV_001_B_BUSA_aktuell.txt");
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
             try {
-                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks("C:\\temp\\B_ZAHLV_001_B_BUSA_aktuell.txt", "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUSA_Referenz.txt");
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
+                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks("C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUSA_Referenz.txt", "C:\\temp\\B_ZAHLV_001_B_BUSA_aktuell.txt");
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
             
             // neue Methoden mit aptean.cs mit Variablen
             try {
-                Report.Log(ReportLevel.Info, "Section", "neue Methoden mit aptean.cs mit Variablen", new RecordItemIndex(8));
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(8)); }
+                Report.Log(ReportLevel.Info, "Section", "neue Methoden mit aptean.cs mit Variablen", new RecordItemIndex(7));
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
             
             try {
                 Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement(SQL_Select_B_BUSA, file_selectergebnis_b_busa_aktuell);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(8)); }
             
             try {
-                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks(file_selectergebnis_b_busa_aktuell, file_selectergebnis_b_busa_Referenz);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(10)); }
+                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks(file_selectergebnis_b_busa_Referenz, file_selectergebnis_b_busa_aktuell);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
             
         }
 

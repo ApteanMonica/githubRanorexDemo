@@ -145,7 +145,7 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             try {
-                Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareEqual(file_selectergebnis_b_buop_offen_aktuell, file_selectergebnis_b_buop_offen_Referenz);
+                Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareEqual("C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUOP_offen_Referenz.txt", "C:\\temp\\B_ZAHLV_001_B_BUOP_offen_aktuell.txt");
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             // neue Methoden mit aptean.cs ohne Variablen
@@ -158,7 +158,7 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
             try {
-                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks("C:\\temp\\B_ZAHLV_001_B_BUOP_offen_aktuell.txt", "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUOP_offen_Referenz.txt");
+                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks("C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUOP_offen_Referenz.txt", "C:\\temp\\B_ZAHLV_001_B_BUOP_offen_aktuell.txt");
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
             
             // neue Methoden mit aptean.cs mit Variablen
@@ -171,7 +171,7 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(8)); }
             
             try {
-                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks(file_selectergebnis_b_buop_offen_aktuell, file_selectergebnis_b_buop_offen_Referenz);
+                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks(file_selectergebnis_b_buop_offen_Referenz, file_selectergebnis_b_buop_offen_aktuell);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
             
         }

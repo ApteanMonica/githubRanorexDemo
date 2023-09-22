@@ -276,41 +276,6 @@ from b_busa where firm_nr = '100' and busa_belegnr = '1001';
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<userrecorditem
-		classname="ApteanSQL"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="FileCompareEqual"
-		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="5def6b38-78a8-47d7-9ef0-8e79cd7fc482">
-				<argument
-				argname="file1"
-				id="2f9e577e-915a-4d27-a692-404863e28caa"
-				variable="file_selectergebnis_b_busa_aktuell">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-				<argument
-				argname="file2"
-				id="53ba34a8-c52b-4ea1-be4d-48f0f5b1ba24"
-				variable="file_selectergebnis_b_busa_Referenz">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
 		<separatoritem
 		enabled="True"
 		optional="True">
@@ -482,7 +447,7 @@ from b_busa where firm_nr = '100' and busa_belegnr = '1001';
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\temp\B_ZAHLV_001_B_BUSA_aktuell.txt
+						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz.txt
 					</argvalue>
 				</argument>
 				<argument
@@ -492,7 +457,7 @@ from b_busa where firm_nr = '100' and busa_belegnr = '1001';
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz.txt
+						C:\temp\B_ZAHLV_001_B_BUSA_aktuell.txt
 					</argvalue>
 				</argument>
 			</arguments>
@@ -557,7 +522,7 @@ from b_busa where firm_nr = '100' and busa_belegnr = '1001';
 				<argument
 				argname="file1"
 				id="ea66a06c-a086-4417-b951-b1dd5120b90e"
-				variable="file_selectergebnis_b_busa_aktuell">
+				variable="file_selectergebnis_b_busa_Referenz">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -567,7 +532,7 @@ from b_busa where firm_nr = '100' and busa_belegnr = '1001';
 				<argument
 				argname="file2"
 				id="6c6b1e2b-e14a-4665-a46a-eaceda65a65b"
-				variable="file_selectergebnis_b_busa_Referenz">
+				variable="file_selectergebnis_b_busa_aktuell">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
