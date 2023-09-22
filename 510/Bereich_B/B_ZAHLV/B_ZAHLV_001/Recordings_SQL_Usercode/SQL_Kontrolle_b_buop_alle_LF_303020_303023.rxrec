@@ -29,11 +29,6 @@ mode="Global">
 			select  wird abgeschnitten bei copy/paste in Default Value
 		</var>
 		<var
-		id="40b52840-97a2-4f2d-bf9f-79c636cd4590"
-		name="DB_File">
-			C:\Testdaten\Allgemein\UserCode\datenbank.txt
-		</var>
-		<var
 		id="c7b45639-4aab-4154-8e87-2fa66a781d34"
 		name="file_selectergebnis_b_buop_alle_aktuell">
 			C:\temp\B_ZAHLV_001_B_BUOP_alle_aktuell.txt
@@ -46,7 +41,7 @@ mode="Global">
 	</variables>
 	<recorditems>
 		<separatoritem
-		enabled="True"
+		enabled="False"
 		optional="True">
 			<comment>
 				alte Methoden mit apteanSQL.cs
@@ -56,7 +51,7 @@ mode="Global">
 		</separatoritem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ReadVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -91,7 +86,7 @@ mode="Global">
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SQLStatement"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -238,8 +233,7 @@ where firm_nr = '100' and adr_nr BETWEEN '303020' AND '303023';
 				</argument>
 				<argument
 				argname="dbFile"
-				id="d89eb6fe-cf81-4172-843c-33398d12e8e9"
-				variable="DB_File">
+				id="d89eb6fe-cf81-4172-843c-33398d12e8e9">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -261,7 +255,7 @@ where firm_nr = '100' and adr_nr BETWEEN '303020' AND '303023';
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="FileCompareContains"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -557,7 +551,7 @@ where firm_nr = '100' and adr_nr BETWEEN '303020' AND '303023';
 				<argument
 				argname="file1"
 				id="ea66a06c-a086-4417-b951-b1dd5120b90e"
-				variable="file_selectergebnis_b_buop_alle_aktuell">
+				variable="file_selectergebnis_b_buop_alle_Referenz">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

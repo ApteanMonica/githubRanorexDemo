@@ -42,7 +42,6 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
         public SQL_Kontrolle_b_busa_Beleg_1001()
         {
             SQL_Select_B_BUSA = "select  in default value wird bei copy/paste abgeschnitten";
-            DB_File = "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt";
             file_selectergebnis_b_busa_aktuell = "C:\\temp\\B_ZAHLV_001_B_BUSA_aktuell.txt";
             file_selectergebnis_b_busa_Referenz = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUSA_Referenz.txt";
         }
@@ -67,18 +66,6 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
         {
             get { return _SQL_Select_B_BUSA; }
             set { _SQL_Select_B_BUSA = value; }
-        }
-
-        string _DB_File;
-
-        /// <summary>
-        /// Gets or sets the value of variable DB_File.
-        /// </summary>
-        [TestVariable("b2ddc891-35e9-42a4-bb53-685bf4b418bb")]
-        public string DB_File
-        {
-            get { return _DB_File; }
-            set { _DB_File = value; }
         }
 
         string _file_selectergebnis_b_busa_aktuell;
@@ -133,19 +120,19 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
 
             // alte Methoden mit apteanSQL.cs
             try {
-                Report.Log(ReportLevel.Info, "Section", "alte Methoden mit apteanSQL.cs", new RecordItemIndex(0));
+                //Report.Log(ReportLevel.Info, "Section", "alte Methoden mit apteanSQL.cs", new RecordItemIndex(0));
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
             try {
-                Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.ReadVersion("C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "c:\\temp\\version_b_zahlv_001_b_busa_verbucht.txt");
+                //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.ReadVersion("C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "c:\\temp\\version_b_zahlv_001_b_busa_verbucht.txt");
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             try {
-                Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select  \r\nBUSA_USERAENDG,\r\nFIRM_NR,\r\nBUSA_KEYPOS,\r\nKTO_NR,\r\nGKTO_NR,\r\nUST_CD,\r\nWRG_CD,\r\nBUSA_BUSY,\r\nADR_NR,\r\nBUSA_STATUS,\r\nBUSA_JOURNAL,\r\nBUSA_JAHR,\r\nBUSA_PERIODE,\r\nBUSA_DTBELEG,\r\nBUSA_BELEGNR,\r\nBUSA_KL,\r\nBUSA_SH,\r\nBUSA_ART,\r\nBUSA_BERKZ,\r\nBUSA_SKONTOKZ,\r\nBUSA_BETRAG,\r\nBUSA_FWBETRAG,\r\nBUSA_KURS,\r\nBUSA_MENGE,\r\nBUSA_USTMV,\r\nBUSA_USTSATZ,\r\nBUSA_USTAUFT,\r\nBUSA_USTBETRAG,\r\nBUSA_USTFWBETRAG,\r\nBUSA_CD1,\r\nBUSA_CD2,\r\nBUSA_CD3,\r\nBUSA_VERARB1,\r\nBUSA_VERARB2,\r\nBUSA_VERARB3,\r\nBUSA_OP,\r\nBUSA_NROPAUSGL,\r\nBUSA_DTOPAUSGL,\r\nBUSA_DTOPFAELL,\r\nBUSA_ANZAHLUNG,\r\nBUSA_REFART,\r\nBUSA_REFBELEGNR,\r\nBUSA_REFKEYBEL,\r\nBUSA_REFKEYPOS,\r\nBUSA_UVAJAHR,\r\nBUSA_UVAMONAT,\r\nBUSA_UVATAG,\r\nBUSA_USTSTATUS,\r\nBUSA_TYP,\r\nUST_UVACD,\r\nBUSA_BEZUG,\r\nBUSA_BEZUG2,\r\nBUSA_TEXT,\r\nBUSA_TEXT2,\r\nBUSA_BESTELLNR,\r\nBUSA_LIEFSNR,\r\nANLA_NR,\r\nANLA_POS,\r\nBUSA_USTAUFTBETRAG,\r\nBUSA_NRFREMDBELEG,\r\nBUSA_DTFREMDBELEG,\r\nBUSA_USERJOURNAL,\r\nKTBE_NR,\r\nBUSA_USERHERKUNFT,\r\nWEOP_BELEGNR,\r\nWEOP_STATUS,\r\nBUSA_ARCHIVNR,\r\nBUSA_UID,\r\nBUSA_ARCHIVDOC1,\r\nBUSA_DTSTOLOE,\r\nBUSA_USERSTOLOE,\r\nBUSA_PROGSTOLOE,\r\nBUSA_PERI_BUBE_VON,\r\nBUSA_PERI_BUBE_BIS,\r\nBUSA_FELD1,\r\nBUSA_FELD2,\r\nBUSA_JAHR_BUBE_VON,\r\nBUSA_FELD3,\r\nBUSA_JAHR_BUBE_BIS,\r\nBUSA_FELD4,\r\nPVT_CD,\r\nBUSA_HERKUNFT,\r\nBUSA_DTHERKUNFT,\r\nBUSA_SKBETRAG,\r\nBUSA_SKUSTBETRAG,\r\nBUSA_SKFWBETRAG,\r\nBUSA_SKFWUSTBETRAG,\r\nLAND_CD_ONACE,\r\nBUSA_SAOPKZEB,\r\nBUSA_DTLEISTUNG,\r\nBUSA_USEREXOP,\r\nBUSA_DTABGLEICH,\r\nBUSA_KZSTORNO,\r\nBUSA_STORNOGRUND,\r\nBUSA_STOKEYBEL,\r\nBUSA_STOKEYPOS,\r\nBUSA_KZKLEINRG,\r\nBUSA_VSECODE,\r\nBUSA_VSESUBCODE,\r\nBUSA_MENGE2,\r\nBUSA_KEYBEL_STORNO,\r\nBUSA_KZBN,\r\nBUSA_PMTINFID,\r\nRST_CD,\r\nBUSA_SORT_PK,\r\nBUSA_KEYPOS_SKT\r\nfrom b_busa where firm_nr = '100' and busa_belegnr = '1001';", "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "C:\\temp\\B_ZAHLV_001_B_BUSA_aktuell.txt");
+                //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select  \r\nBUSA_USERAENDG,\r\nFIRM_NR,\r\nBUSA_KEYPOS,\r\nKTO_NR,\r\nGKTO_NR,\r\nUST_CD,\r\nWRG_CD,\r\nBUSA_BUSY,\r\nADR_NR,\r\nBUSA_STATUS,\r\nBUSA_JOURNAL,\r\nBUSA_JAHR,\r\nBUSA_PERIODE,\r\nBUSA_DTBELEG,\r\nBUSA_BELEGNR,\r\nBUSA_KL,\r\nBUSA_SH,\r\nBUSA_ART,\r\nBUSA_BERKZ,\r\nBUSA_SKONTOKZ,\r\nBUSA_BETRAG,\r\nBUSA_FWBETRAG,\r\nBUSA_KURS,\r\nBUSA_MENGE,\r\nBUSA_USTMV,\r\nBUSA_USTSATZ,\r\nBUSA_USTAUFT,\r\nBUSA_USTBETRAG,\r\nBUSA_USTFWBETRAG,\r\nBUSA_CD1,\r\nBUSA_CD2,\r\nBUSA_CD3,\r\nBUSA_VERARB1,\r\nBUSA_VERARB2,\r\nBUSA_VERARB3,\r\nBUSA_OP,\r\nBUSA_NROPAUSGL,\r\nBUSA_DTOPAUSGL,\r\nBUSA_DTOPFAELL,\r\nBUSA_ANZAHLUNG,\r\nBUSA_REFART,\r\nBUSA_REFBELEGNR,\r\nBUSA_REFKEYBEL,\r\nBUSA_REFKEYPOS,\r\nBUSA_UVAJAHR,\r\nBUSA_UVAMONAT,\r\nBUSA_UVATAG,\r\nBUSA_USTSTATUS,\r\nBUSA_TYP,\r\nUST_UVACD,\r\nBUSA_BEZUG,\r\nBUSA_BEZUG2,\r\nBUSA_TEXT,\r\nBUSA_TEXT2,\r\nBUSA_BESTELLNR,\r\nBUSA_LIEFSNR,\r\nANLA_NR,\r\nANLA_POS,\r\nBUSA_USTAUFTBETRAG,\r\nBUSA_NRFREMDBELEG,\r\nBUSA_DTFREMDBELEG,\r\nBUSA_USERJOURNAL,\r\nKTBE_NR,\r\nBUSA_USERHERKUNFT,\r\nWEOP_BELEGNR,\r\nWEOP_STATUS,\r\nBUSA_ARCHIVNR,\r\nBUSA_UID,\r\nBUSA_ARCHIVDOC1,\r\nBUSA_DTSTOLOE,\r\nBUSA_USERSTOLOE,\r\nBUSA_PROGSTOLOE,\r\nBUSA_PERI_BUBE_VON,\r\nBUSA_PERI_BUBE_BIS,\r\nBUSA_FELD1,\r\nBUSA_FELD2,\r\nBUSA_JAHR_BUBE_VON,\r\nBUSA_FELD3,\r\nBUSA_JAHR_BUBE_BIS,\r\nBUSA_FELD4,\r\nPVT_CD,\r\nBUSA_HERKUNFT,\r\nBUSA_DTHERKUNFT,\r\nBUSA_SKBETRAG,\r\nBUSA_SKUSTBETRAG,\r\nBUSA_SKFWBETRAG,\r\nBUSA_SKFWUSTBETRAG,\r\nLAND_CD_ONACE,\r\nBUSA_SAOPKZEB,\r\nBUSA_DTLEISTUNG,\r\nBUSA_USEREXOP,\r\nBUSA_DTABGLEICH,\r\nBUSA_KZSTORNO,\r\nBUSA_STORNOGRUND,\r\nBUSA_STOKEYBEL,\r\nBUSA_STOKEYPOS,\r\nBUSA_KZKLEINRG,\r\nBUSA_VSECODE,\r\nBUSA_VSESUBCODE,\r\nBUSA_MENGE2,\r\nBUSA_KEYBEL_STORNO,\r\nBUSA_KZBN,\r\nBUSA_PMTINFID,\r\nRST_CD,\r\nBUSA_SORT_PK,\r\nBUSA_KEYPOS_SKT\r\nfrom b_busa where firm_nr = '100' and busa_belegnr = '1001';", "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "C:\\temp\\B_ZAHLV_001_B_BUSA_aktuell.txt");
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             try {
-                Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains("C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUSA_Referenz.txt", "C:\\temp\\B_ZAHLV_001_B_BUSA_aktuell.txt");
+                //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareContains("C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUSA_Referenz.txt", "C:\\temp\\B_ZAHLV_001_B_BUSA_aktuell.txt");
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             // neue Methoden mit aptean.cs ohne Variablen

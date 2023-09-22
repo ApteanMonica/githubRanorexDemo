@@ -42,7 +42,6 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
         public SQL_Kontrolle_b_buop_offen_LF_303020_303023()
         {
             SQL_Select_B_BUOP_offen = "select  wir abgeschnitten bei copy/paste in Default value";
-            DB_File = "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt";
             file_selectergebnis_b_buop_offen_aktuell = "C:\\temp\\B_ZAHLV_001_B_BUOP_offen_aktuell.txt";
             file_selectergebnis_b_buop_offen_Referenz = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUOP_offen_Referenz.txt";
         }
@@ -67,18 +66,6 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
         {
             get { return _SQL_Select_B_BUOP_offen; }
             set { _SQL_Select_B_BUOP_offen = value; }
-        }
-
-        string _DB_File;
-
-        /// <summary>
-        /// Gets or sets the value of variable DB_File.
-        /// </summary>
-        [TestVariable("227fa9d9-c49b-4bc0-b838-e74667b2b79a")]
-        public string DB_File
-        {
-            get { return _DB_File; }
-            set { _DB_File = value; }
         }
 
         string _file_selectergebnis_b_buop_offen_aktuell;
@@ -133,19 +120,19 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
 
             // alte Methoden mit apteanSQL.cs
             try {
-                Report.Log(ReportLevel.Info, "Section", "alte Methoden mit apteanSQL.cs", new RecordItemIndex(0));
+                //Report.Log(ReportLevel.Info, "Section", "alte Methoden mit apteanSQL.cs", new RecordItemIndex(0));
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
             try {
-                Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.ReadVersion("C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "c:\\temp\\version_b_zahlv_001_b_buop_vor_Verbuchung.txt");
+                //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.ReadVersion("C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "c:\\temp\\version_b_zahlv_001_b_buop_vor_Verbuchung.txt");
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             try {
-                Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select BUSA_USERAENDG,\r\nFIRM_NR,\r\nBUSA_KEYPOS,\r\nWRG_CD,\r\nBANK_NR,\r\nADR_NR,\r\nKLDV_NR,\r\nKLBK_NR,\r\nBUOP_ART,\r\nBUOP_KL,\r\nBUOP_BELEGNR,\r\nBUOP_BELEGPOS,\r\nBUOP_ZAHLART,\r\nBUOP_ZAHLPOS,\r\nBUOP_ZAHLJAHR,\r\nBUOP_ZAHLPERIODE,\r\nBUOP_ZAHLDATUM,\r\nBUOP_ZAHLSTATUS,\r\nBUOP_STORNO,\r\nBUOP_DTFREMDBELEG,\r\nBUOP_NRFREMDBELEG,\r\nBUOP_KULINR,\r\nBUOP_DTFAELLIG,\r\nBUOP_DTVALUTA,\r\nBUOP_DTSKONTO1,\r\nBUOP_DTSKONTO2,\r\nBUOP_TAGEVALUTA,\r\nBUOP_TAGE1,\r\nBUOP_SKONTO1,\r\nBUOP_TAGE2,\r\nBUOP_SKONTO2,\r\nBUOP_TAGENETTO,\r\nBUOP_BETRAG,\r\nBUOP_OFFEN,\r\nBUOP_ABZUEGE,\r\nBUOP_SKONTO,\r\nBUOP_FWBETRAG,\r\nBUOP_FWOFFEN,\r\nBUOP_FWABZUEGE,\r\nBUOP_FWSKONTO,\r\nBUOP_KURSDIFF,\r\nBUOP_RECHBETRAG,\r\nBUOP_FWRECHBETRAG,\r\nBUOP_ZAHLBETRAG,\r\nBUOP_SKONTOBASIS,\r\nBUOP_MAHNSTUFE,\r\nBUOP_MAHNSPERRE,\r\nBUOP_MAHNUNBSKTO,\r\nBUOP_DTMAHN,\r\nBUOP_CD1,\r\nBUOP_CD2,\r\nBUOP_CD3,\r\nBUOP_UEBERWTEXT,\r\nBUOP_SELECT1,\r\nBUOP_SELECT2,\r\nBUOP_ZLVS,\r\nBUOP_ZAHLSTORNO,\r\nBUOP_DTABGLEICH,\r\nBUOP_RECHTYP,\r\nBUOP_KZEINHALT,\r\nBUOP_DTEINHALT,\r\nBUOP_EHPROZ,\r\nBUOP_EHBETRAG,\r\nBUOP_FWEHBETRAG,\r\nBUOP_EHKOBETRAG,\r\nBUOP_FWEHKOBETRAG,\r\nBUOP_DTEINHALT2,\r\nBUOP_EHPROZ2,\r\nBUOP_KZUST,\r\nBUOP_KZUSTUMB,\r\nBUOP_USTBETRAG,\r\nBUOP_FWUSTBETRAG,\r\nBUOP_SKONTOBASISRE,\r\nBUOP_ZAHLSPERRE,\r\nBUOP_BASISBETRAG,\r\nBUOP_BASISSKONTO,\r\nBUOP_BASISABZUEGE,\r\nBUOP_BASISKURSDIFF,\r\nBUOP_MONATNETTO,\r\nBUOP_KZFIXTAGE,\r\nBUOP_MONAT1,\r\nBUOP_MONAT2,\r\nBUOP_SKONTOUNB,\r\nBUOP_FWSKONTOUNB,\r\nBUOP_KZPROVISION,\r\nBUOP_ZAHLJAHR2,\r\nBUOP_ZAHLPERIODE2,\r\nBUOP_SELECT3,\r\nBUOP_SELECT4,\r\nBUOP_ADR_RECHAD,\r\nBUOP_KLDV_RECHAD,\r\nBUOP_DTMNSPBIS,\r\nBUOP_DTMNAENDG,\r\nRTK_NR,\r\nBUOP_DTSALD,\r\nBUOP_KZAUSGL,\r\nBUOP_KZZINSEN,\r\nBUOP_MAHNZINSEN,\r\nADR_NR_ZAHLUNG,\r\nBUOP_BELTYP,\r\nBUOP_DTMNFAELL,\r\nBUOP_DTMNZAHL,\r\nMNV_NR,\r\nKLBK_NR_ZAHLUNG,\r\nBUOP_KZRECHTSKR,\r\nBUOP_ZINSBUCH,\r\nBUOP_ZINSRECH,\r\nBUOP_SALDJAHR,\r\nBUOP_SALDPERIODE,\r\nBUOP_DTIC,\r\nBUOP_ZS_NR,\r\nEXBK_NR,\r\nEXBP_NR,\r\nEXBO_NR,\r\nBUOP_KZPROVISIONSV,\r\nBUOP_KEYBEL_RATE,\r\nBUOP_KEYPOS_RATE,\r\nBUOP_FELD01,\r\nBUOP_FELD02,\r\nBUOP_FELD03,\r\nBUOP_FELD04,\r\nBUOP_FELD05\r\nfrom b_buop\r\nwhere firm_nr = '100' and adr_nr BETWEEN '303020' AND '303023';", "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "C:\\temp\\B_ZAHLV_001_B_BUOP_offen_aktuell.txt");
+                //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select BUSA_USERAENDG,\r\nFIRM_NR,\r\nBUSA_KEYPOS,\r\nWRG_CD,\r\nBANK_NR,\r\nADR_NR,\r\nKLDV_NR,\r\nKLBK_NR,\r\nBUOP_ART,\r\nBUOP_KL,\r\nBUOP_BELEGNR,\r\nBUOP_BELEGPOS,\r\nBUOP_ZAHLART,\r\nBUOP_ZAHLPOS,\r\nBUOP_ZAHLJAHR,\r\nBUOP_ZAHLPERIODE,\r\nBUOP_ZAHLDATUM,\r\nBUOP_ZAHLSTATUS,\r\nBUOP_STORNO,\r\nBUOP_DTFREMDBELEG,\r\nBUOP_NRFREMDBELEG,\r\nBUOP_KULINR,\r\nBUOP_DTFAELLIG,\r\nBUOP_DTVALUTA,\r\nBUOP_DTSKONTO1,\r\nBUOP_DTSKONTO2,\r\nBUOP_TAGEVALUTA,\r\nBUOP_TAGE1,\r\nBUOP_SKONTO1,\r\nBUOP_TAGE2,\r\nBUOP_SKONTO2,\r\nBUOP_TAGENETTO,\r\nBUOP_BETRAG,\r\nBUOP_OFFEN,\r\nBUOP_ABZUEGE,\r\nBUOP_SKONTO,\r\nBUOP_FWBETRAG,\r\nBUOP_FWOFFEN,\r\nBUOP_FWABZUEGE,\r\nBUOP_FWSKONTO,\r\nBUOP_KURSDIFF,\r\nBUOP_RECHBETRAG,\r\nBUOP_FWRECHBETRAG,\r\nBUOP_ZAHLBETRAG,\r\nBUOP_SKONTOBASIS,\r\nBUOP_MAHNSTUFE,\r\nBUOP_MAHNSPERRE,\r\nBUOP_MAHNUNBSKTO,\r\nBUOP_DTMAHN,\r\nBUOP_CD1,\r\nBUOP_CD2,\r\nBUOP_CD3,\r\nBUOP_UEBERWTEXT,\r\nBUOP_SELECT1,\r\nBUOP_SELECT2,\r\nBUOP_ZLVS,\r\nBUOP_ZAHLSTORNO,\r\nBUOP_DTABGLEICH,\r\nBUOP_RECHTYP,\r\nBUOP_KZEINHALT,\r\nBUOP_DTEINHALT,\r\nBUOP_EHPROZ,\r\nBUOP_EHBETRAG,\r\nBUOP_FWEHBETRAG,\r\nBUOP_EHKOBETRAG,\r\nBUOP_FWEHKOBETRAG,\r\nBUOP_DTEINHALT2,\r\nBUOP_EHPROZ2,\r\nBUOP_KZUST,\r\nBUOP_KZUSTUMB,\r\nBUOP_USTBETRAG,\r\nBUOP_FWUSTBETRAG,\r\nBUOP_SKONTOBASISRE,\r\nBUOP_ZAHLSPERRE,\r\nBUOP_BASISBETRAG,\r\nBUOP_BASISSKONTO,\r\nBUOP_BASISABZUEGE,\r\nBUOP_BASISKURSDIFF,\r\nBUOP_MONATNETTO,\r\nBUOP_KZFIXTAGE,\r\nBUOP_MONAT1,\r\nBUOP_MONAT2,\r\nBUOP_SKONTOUNB,\r\nBUOP_FWSKONTOUNB,\r\nBUOP_KZPROVISION,\r\nBUOP_ZAHLJAHR2,\r\nBUOP_ZAHLPERIODE2,\r\nBUOP_SELECT3,\r\nBUOP_SELECT4,\r\nBUOP_ADR_RECHAD,\r\nBUOP_KLDV_RECHAD,\r\nBUOP_DTMNSPBIS,\r\nBUOP_DTMNAENDG,\r\nRTK_NR,\r\nBUOP_DTSALD,\r\nBUOP_KZAUSGL,\r\nBUOP_KZZINSEN,\r\nBUOP_MAHNZINSEN,\r\nADR_NR_ZAHLUNG,\r\nBUOP_BELTYP,\r\nBUOP_DTMNFAELL,\r\nBUOP_DTMNZAHL,\r\nMNV_NR,\r\nKLBK_NR_ZAHLUNG,\r\nBUOP_KZRECHTSKR,\r\nBUOP_ZINSBUCH,\r\nBUOP_ZINSRECH,\r\nBUOP_SALDJAHR,\r\nBUOP_SALDPERIODE,\r\nBUOP_DTIC,\r\nBUOP_ZS_NR,\r\nEXBK_NR,\r\nEXBP_NR,\r\nEXBO_NR,\r\nBUOP_KZPROVISIONSV,\r\nBUOP_KEYBEL_RATE,\r\nBUOP_KEYPOS_RATE,\r\nBUOP_FELD01,\r\nBUOP_FELD02,\r\nBUOP_FELD03,\r\nBUOP_FELD04,\r\nBUOP_FELD05\r\nfrom b_buop\r\nwhere firm_nr = '100' and adr_nr BETWEEN '303020' AND '303023';", "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "C:\\temp\\B_ZAHLV_001_B_BUOP_offen_aktuell.txt");
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             try {
-                Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareEqual("C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUOP_offen_Referenz.txt", "C:\\temp\\B_ZAHLV_001_B_BUOP_offen_aktuell.txt");
+                //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareEqual("C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUOP_offen_Referenz.txt", "C:\\temp\\B_ZAHLV_001_B_BUOP_offen_aktuell.txt");
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             // neue Methoden mit aptean.cs ohne Variablen

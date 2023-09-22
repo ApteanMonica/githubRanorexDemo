@@ -29,11 +29,6 @@ mode="Global">
 			select * from b_zlvs where firm_nr ='100' and zlvs_vorschlag = '1' and busa_keybel BETWEEN '112' AND '126';
 		</var>
 		<var
-		id="915a9a1c-3f12-457e-af39-c4e72e51ca13"
-		name="DB_File">
-			C:\Testdaten\Allgemein\UserCode\datenbank.txt
-		</var>
-		<var
 		id="a0990d32-9ba3-486a-aaf6-f2a1f930c201"
 		name="file_selectergebnis_b_zlvs_aktuell">
 			C:\temp\B_ZAHLV_001_B_ZLVS_aktuell.txt
@@ -46,7 +41,7 @@ mode="Global">
 	</variables>
 	<recorditems>
 		<separatoritem
-		enabled="True"
+		enabled="False"
 		optional="True">
 			<comment>
 				alte Methoden mit apteanSQL.cs
@@ -56,7 +51,7 @@ mode="Global">
 		</separatoritem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ReadVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -91,7 +86,7 @@ mode="Global">
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SQLStatement"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -136,7 +131,7 @@ mode="Global">
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="FileCompareEqual"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"

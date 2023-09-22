@@ -29,11 +29,6 @@ mode="Global">
 			select  wir abgeschnitten bei copy/paste in Default value
 		</var>
 		<var
-		id="227fa9d9-c49b-4bc0-b838-e74667b2b79a"
-		name="DB_File">
-			C:\Testdaten\Allgemein\UserCode\datenbank.txt
-		</var>
-		<var
 		id="c7aa1087-4741-41a8-a359-5566d37c702d"
 		name="file_selectergebnis_b_buop_offen_aktuell">
 			C:\temp\B_ZAHLV_001_B_BUOP_offen_aktuell.txt
@@ -46,7 +41,7 @@ mode="Global">
 	</variables>
 	<recorditems>
 		<separatoritem
-		enabled="True"
+		enabled="False"
 		optional="True">
 			<comment>
 				alte Methoden mit apteanSQL.cs
@@ -56,7 +51,7 @@ mode="Global">
 		</separatoritem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ReadVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -91,7 +86,7 @@ mode="Global">
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SQLStatement"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -259,7 +254,7 @@ where firm_nr = '100' and adr_nr BETWEEN '303020' AND '303023';
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="FileCompareEqual"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"

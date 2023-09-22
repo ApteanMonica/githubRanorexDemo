@@ -143,12 +143,6 @@
 				</description>
 				<databinding>
 					<var
-					dataname="DB_File"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="915a9a1c-3f12-457e-af39-c4e72e51ca13"
-					variablename="DB_File">
-					</var>
-					<var
 					dataname="SQL_Select_B_ZLVS"
 					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
 					variableid="0a122bcd-58da-4679-99ef-9f53b25facc8"
@@ -167,6 +161,14 @@
 					variablename="file_selectergebnis_b_zlvs_aktuell">
 					</var>
 				</databinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="DB_File"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="915a9a1c-3f12-457e-af39-c4e72e51ca13"
+					variablename="DB_File">
+					</var>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<smartfoldernode
 			id="1731a52b-d88e-483b-bf8c-b21dd4d9622d"
@@ -206,12 +208,6 @@
 					variableid="70edba51-7fb8-4239-95ab-25dc436e0ffb"
 					variablename="SQL_Select_B_BUSA">
 					</var>
-					<var
-					dataname="DB_File"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="b2ddc891-35e9-42a4-bb53-685bf4b418bb"
-					variablename="DB_File">
-					</var>
 				</databinding>
 				<missingdatabinding>
 					<var
@@ -227,6 +223,14 @@
 					variablename="file_SQL_Select_B_BUSA">
 					</var>
 				</missingdatabinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="DB_File"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="b2ddc891-35e9-42a4-bb53-685bf4b418bb"
+					variablename="DB_File">
+					</var>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="1f00ed20-fcce-4967-83e9-30a424550a9c"
@@ -494,13 +498,15 @@
 					variableid="c4db1547-c73b-4552-8fd3-b0f72d01a01c"
 					variablename="SQL_Select_B_BUBE">
 					</var>
+				</databinding>
+				<missingdatavariablesbinding>
 					<var
 					dataname="DB_File"
 					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
 					variableid="092f3f01-0f6d-4794-a21e-f22a26027b09"
 					variablename="DB_File">
 					</var>
-				</databinding>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testcase
 			id="4a0b19ca-fa88-4006-837e-6041ad08f299"
@@ -749,13 +755,15 @@
 					variableid="08eed36f-0c2b-4aad-94b6-c3fb8f48f362"
 					variablename="SQL_Select_B_BUOP_alle">
 					</var>
+				</databinding>
+				<missingdatavariablesbinding>
 					<var
 					dataname="DB_File"
 					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
 					variableid="40b52840-97a2-4f2d-bf9f-79c636cd4590"
 					variablename="DB_File">
 					</var>
-				</databinding>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			enabled="False"
@@ -1134,13 +1142,15 @@
 					variableid="e0bda171-4f7e-4617-82e5-678f51e22485"
 					variablename="SQL_Select_B_BUOP_offen">
 					</var>
+				</databinding>
+				<missingdatavariablesbinding>
 					<var
 					dataname="DB_File"
 					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
 					variableid="227fa9d9-c49b-4bc0-b838-e74667b2b79a"
 					variablename="DB_File">
 					</var>
-				</databinding>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			enabled="False"
@@ -1248,10 +1258,6 @@
 					<param
 					name="LF_303023_Saldo"
 					value="0,00">
-					</param>
-					<param
-					name="DB_File"
-					value="C:\Testdaten\Allgemein\UserCode\datenbank.txt">
 					</param>
 					<param
 					name="SQL_Select_B_BUOP_offen"

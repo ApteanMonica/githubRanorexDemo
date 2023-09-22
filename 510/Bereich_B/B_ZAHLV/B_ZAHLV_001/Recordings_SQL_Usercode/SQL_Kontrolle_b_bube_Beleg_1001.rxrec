@@ -29,11 +29,6 @@ mode="Global">
 			SELECT wird abgeschnitten bei copy/paste in Default value
 		</var>
 		<var
-		id="092f3f01-0f6d-4794-a21e-f22a26027b09"
-		name="DB_File">
-			C:\Testdaten\Allgemein\UserCode\datenbank.txt
-		</var>
-		<var
 		id="4d200bea-eba2-4785-acb2-a27e784482f4"
 		name="file_selectergebnis_b_bube_aktuell">
 			C:\temp\B_ZAHLV_001_B_BUBE_aktuell.txt
@@ -46,7 +41,7 @@ mode="Global">
 	</variables>
 	<recorditems>
 		<separatoritem
-		enabled="True"
+		enabled="False"
 		optional="True">
 			<comment>
 				alte Methoden mit apteanSQL.cs
@@ -56,7 +51,7 @@ mode="Global">
 		</separatoritem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ReadVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -91,7 +86,7 @@ mode="Global">
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SQLStatement"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -157,8 +152,7 @@ FROM	b_bube, b_busa
 				</argument>
 				<argument
 				argname="dbFile"
-				id="d89eb6fe-cf81-4172-843c-33398d12e8e9"
-				variable="DB_File">
+				id="d89eb6fe-cf81-4172-843c-33398d12e8e9">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -180,7 +174,7 @@ FROM	b_bube, b_busa
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="FileCompareContains"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
