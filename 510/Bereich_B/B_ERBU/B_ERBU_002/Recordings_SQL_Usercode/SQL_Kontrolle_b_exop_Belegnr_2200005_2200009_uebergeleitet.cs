@@ -42,7 +42,6 @@ namespace B_ERBU_002.Recordings_SQL_Usercode
         public SQL_Kontrolle_b_exop_Belegnr_2200005_2200009_uebergeleitet()
         {
             SQL_Select_B_EXOP = "select  in default value wird bei copy/paste abgeschnitten";
-            DB_File = "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt";
             file_selectergebnis_b_exop_uebergeleitet_aktuell = "C:\\temp\\B_ERBU_002_B_EXOP_uebergeleitet_aktuell.txt";
             file_selectergebnis_b_exop_uebergeleitet_Referenz = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ERBU_002\\B_ERBU_002_B_EXOP_uebergeleitet_Referenz.txt";
         }
@@ -67,18 +66,6 @@ namespace B_ERBU_002.Recordings_SQL_Usercode
         {
             get { return _SQL_Select_B_EXOP; }
             set { _SQL_Select_B_EXOP = value; }
-        }
-
-        string _DB_File;
-
-        /// <summary>
-        /// Gets or sets the value of variable DB_File.
-        /// </summary>
-        [TestVariable("83f47db7-ada9-4a65-9b02-225f1e6db018")]
-        public string DB_File
-        {
-            get { return _DB_File; }
-            set { _DB_File = value; }
         }
 
         string _file_selectergebnis_b_exop_uebergeleitet_aktuell;
@@ -132,18 +119,18 @@ namespace B_ERBU_002.Recordings_SQL_Usercode
             Init();
 
             // alte Methoden mit apteanSQL.cs
-            Report.Log(ReportLevel.Info, "Section", "alte Methoden mit apteanSQL.cs", new RecordItemIndex(0));
+            //Report.Log(ReportLevel.Info, "Section", "alte Methoden mit apteanSQL.cs", new RecordItemIndex(0));
             
             try {
-                Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.ReadVersion("C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "c:\\temp\\version_b_erbu_002_b_exop_uebergeleitet.txt");
+                //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.ReadVersion("C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "c:\\temp\\version_b_erbu_002_b_exop_uebergeleitet.txt");
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             try {
-                Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select \r\nFIRM_NR,\r\nADR_NR,\r\nKLDV_NR,\r\nKLBK_NR,\r\nWRG_CD,\r\nKTO_NR,\r\nEXOP_STATUS,\r\nEXOP_ART,\r\nEXOP_KL,\r\nEXOP_JAHR,\r\nEXOP_PERIODE,\r\nEXOP_BELEGNR,\r\nEXOP_DTBELEG,\r\nEXOP_DTFREMDBELEG,\r\nEXOP_NRFREMDBELEG,\r\nEXOP_DTFAELLIG,\r\nEXOP_DTVALUTA,\r\nEXOP_TAGE1,\r\nEXOP_SKONTO1,\r\nEXOP_TAGE2,\r\nEXOP_SKONTO2,\r\nEXOP_TAGENETTO,\r\nEXOP_ZAHLART,\r\nEXOP_BETRAG,\r\nEXOP_FWBETRAG,\r\nEXOP_KURS,\r\nEXOP_RECHBETRAG,\r\nEXOP_ZAHLBETRAG,\r\nEXOP_SKONTOBASIS,\r\nEXOP_TEXT1,\r\nEXOP_TEXT2,\r\nEXOP_UEBERWTEXT,\r\nEXOP_REFBELEGNR,\r\nEXOP_BUSY,\r\nEXOP_MAHNSTUFE,\r\nEXOP_TEXTCD,\r\nEXOP_SELECT1,\r\nEXOP_SELECT2,\r\nEXOP_MAHNSPERRE,\r\nEXOP_ZAHLSPERRE,\r\nEXOP_DTEINHALT,\r\nEXOP_EHPROZ,\r\nEXOP_EHBETRAG,\r\nEXOP_FWEHBETRAG,\r\nEXOP_DTEINHALT2,\r\nEXOP_EHPROZ2,\r\nEXOP_EHBETRAG2,\r\nEXOP_FWEHBETRAG2,\r\nEXOP_BEZUG,\r\nEXOP_BEZUG2,\r\nEXOP_TEILRECHNR,\r\nEXOP_KZFIXTAGE,\r\nEXOP_MONAT1,\r\nEXOP_MONAT2,\r\nEXOP_MONATNETTO,\r\nEXOP_KZDIVERSE,\r\nEXOP_ADRESSE1,\r\nEXOP_ADRESSE2,\r\nEXOP_ADRESSE3,\r\nEXOP_ADRESSE4,\r\nEXOP_ADRESSE5,\r\nLAND_CD,\r\nPLZ_CD,\r\nEXOP_ORT,\r\nSPRA_CD,\r\nANRD_CD,\r\nEXOP_NAME,\r\nEXOP_PERSONEN,\r\nEXOP_KZOK,\r\nEXOP_USEROK,\r\nEXOP_USERHERKUNFT,\r\nEXOP_MATPREIS,\r\nEXOP_UVAJAHR,\r\nEXOP_UVAMONAT,\r\nEXOP_UVATAG,\r\nEXOP_HERKUNFT,\r\nEXOP_SELECT3,\r\nEXOP_SELECT4,\r\nEXOP_ARCHIVDOC1,\r\nUSER_CD,\r\nEXOP_KZEXOPA,\r\nFIRM_NR_RECH,\r\nEXOP_FELD1,\r\nEXOP_FELD2,\r\nEXOP_FELD3,\r\nEXOP_FELD4,\r\nEXOP_USERANLAG,\r\nEXOP_USERAENDG,\r\nEXOP_REFKEYBEL,\r\nEXOP_REFKEYPOS,\r\nEXOP_KZSKONTO,\r\nEXOP_SKBETRAG,\r\nEXOP_FWSKBETRAG,\r\nEXOP_ARCHIVNR,\r\nEXOP_ADR_RECHAD,\r\nEXOP_KLDV_RECHAD,\r\nSAMK_CD,\r\nEXOP_DTLEISTUNG,\r\nEXOP_DTMNSPBIS,\r\nRTK_NR,\r\nEXOP_KZAUSGL,\r\nEXOP_KZSTORNO,\r\nEXOP_STORNOGRUND,\r\nEXOP_KZZINSEN,\r\nEXOP_BELTYP,\r\nEXOP_ZNSBETRAG,\r\nEXOP_FWZNSBETRAG,\r\nMNV_NR,\r\nEXOP_DTZLSPBIS,\r\nZART_CD,\r\nEXOP_KZRECHTSKR,\r\nADR_NR_ZAHLUNG,\r\nKLBK_NR_ZAHLUNG,\r\nEXBK_NR,\r\nEXBP_NR,\r\nEXBO_NR,\r\nEXOP_RTKREF,\r\nRST_CD,\r\nEXOP_FELD01,\r\nEXOP_FELD02,\r\nEXOP_FELD03,\r\nEXOP_FELD04,\r\nEXOP_FELD05,\r\nEXOP_USERVWDG\r\nfrom b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '2200009';", DB_File, "C:\\temp\\B_ERBU_002_B_EXOP_uebergeleitet_aktuell.txt");
+                //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.SQLStatement("select \r\nFIRM_NR,\r\nADR_NR,\r\nKLDV_NR,\r\nKLBK_NR,\r\nWRG_CD,\r\nKTO_NR,\r\nEXOP_STATUS,\r\nEXOP_ART,\r\nEXOP_KL,\r\nEXOP_JAHR,\r\nEXOP_PERIODE,\r\nEXOP_BELEGNR,\r\nEXOP_DTBELEG,\r\nEXOP_DTFREMDBELEG,\r\nEXOP_NRFREMDBELEG,\r\nEXOP_DTFAELLIG,\r\nEXOP_DTVALUTA,\r\nEXOP_TAGE1,\r\nEXOP_SKONTO1,\r\nEXOP_TAGE2,\r\nEXOP_SKONTO2,\r\nEXOP_TAGENETTO,\r\nEXOP_ZAHLART,\r\nEXOP_BETRAG,\r\nEXOP_FWBETRAG,\r\nEXOP_KURS,\r\nEXOP_RECHBETRAG,\r\nEXOP_ZAHLBETRAG,\r\nEXOP_SKONTOBASIS,\r\nEXOP_TEXT1,\r\nEXOP_TEXT2,\r\nEXOP_UEBERWTEXT,\r\nEXOP_REFBELEGNR,\r\nEXOP_BUSY,\r\nEXOP_MAHNSTUFE,\r\nEXOP_TEXTCD,\r\nEXOP_SELECT1,\r\nEXOP_SELECT2,\r\nEXOP_MAHNSPERRE,\r\nEXOP_ZAHLSPERRE,\r\nEXOP_DTEINHALT,\r\nEXOP_EHPROZ,\r\nEXOP_EHBETRAG,\r\nEXOP_FWEHBETRAG,\r\nEXOP_DTEINHALT2,\r\nEXOP_EHPROZ2,\r\nEXOP_EHBETRAG2,\r\nEXOP_FWEHBETRAG2,\r\nEXOP_BEZUG,\r\nEXOP_BEZUG2,\r\nEXOP_TEILRECHNR,\r\nEXOP_KZFIXTAGE,\r\nEXOP_MONAT1,\r\nEXOP_MONAT2,\r\nEXOP_MONATNETTO,\r\nEXOP_KZDIVERSE,\r\nEXOP_ADRESSE1,\r\nEXOP_ADRESSE2,\r\nEXOP_ADRESSE3,\r\nEXOP_ADRESSE4,\r\nEXOP_ADRESSE5,\r\nLAND_CD,\r\nPLZ_CD,\r\nEXOP_ORT,\r\nSPRA_CD,\r\nANRD_CD,\r\nEXOP_NAME,\r\nEXOP_PERSONEN,\r\nEXOP_KZOK,\r\nEXOP_USEROK,\r\nEXOP_USERHERKUNFT,\r\nEXOP_MATPREIS,\r\nEXOP_UVAJAHR,\r\nEXOP_UVAMONAT,\r\nEXOP_UVATAG,\r\nEXOP_HERKUNFT,\r\nEXOP_SELECT3,\r\nEXOP_SELECT4,\r\nEXOP_ARCHIVDOC1,\r\nUSER_CD,\r\nEXOP_KZEXOPA,\r\nFIRM_NR_RECH,\r\nEXOP_FELD1,\r\nEXOP_FELD2,\r\nEXOP_FELD3,\r\nEXOP_FELD4,\r\nEXOP_USERANLAG,\r\nEXOP_USERAENDG,\r\nEXOP_REFKEYBEL,\r\nEXOP_REFKEYPOS,\r\nEXOP_KZSKONTO,\r\nEXOP_SKBETRAG,\r\nEXOP_FWSKBETRAG,\r\nEXOP_ARCHIVNR,\r\nEXOP_ADR_RECHAD,\r\nEXOP_KLDV_RECHAD,\r\nSAMK_CD,\r\nEXOP_DTLEISTUNG,\r\nEXOP_DTMNSPBIS,\r\nRTK_NR,\r\nEXOP_KZAUSGL,\r\nEXOP_KZSTORNO,\r\nEXOP_STORNOGRUND,\r\nEXOP_KZZINSEN,\r\nEXOP_BELTYP,\r\nEXOP_ZNSBETRAG,\r\nEXOP_FWZNSBETRAG,\r\nMNV_NR,\r\nEXOP_DTZLSPBIS,\r\nZART_CD,\r\nEXOP_KZRECHTSKR,\r\nADR_NR_ZAHLUNG,\r\nKLBK_NR_ZAHLUNG,\r\nEXBK_NR,\r\nEXBP_NR,\r\nEXBO_NR,\r\nEXOP_RTKREF,\r\nRST_CD,\r\nEXOP_FELD01,\r\nEXOP_FELD02,\r\nEXOP_FELD03,\r\nEXOP_FELD04,\r\nEXOP_FELD05,\r\nEXOP_USERVWDG\r\nfrom b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '2200009';", "C:\\Testdaten\\Allgemein\\UserCode\\datenbank.txt", "C:\\temp\\B_ERBU_002_B_EXOP_uebergeleitet_aktuell.txt");
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             try {
-                Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareEqual(file_selectergebnis_b_exop_uebergeleitet_aktuell, file_selectergebnis_b_exop_uebergeleitet_Referenz);
+                //Ranorex.AutomationHelpers.UserCodeCollections.ApteanSQL.FileCompareEqual("C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ERBU_002\\B_ERBU_002_B_EXOP_uebergeleitet_Referenz.txt", "C:\\temp\\B_ERBU_002_B_EXOP_uebergeleitet_aktuell.txt");
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             // neue Methoden mit aptean.cs ohne Variablen
@@ -156,7 +143,7 @@ namespace B_ERBU_002.Recordings_SQL_Usercode
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
             try {
-                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks("C:\\temp\\B_ERBU_002_B_EXOP_uebergeleitet_aktuell.txt", "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ERBU_002\\B_ERBU_002_B_EXOP_uebergeleitet_Referenz.txt");
+                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks("C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ERBU_002\\B_ERBU_002_B_EXOP_uebergeleitet_Referenz.txt", "C:\\temp\\B_ERBU_002_B_EXOP_uebergeleitet_aktuell.txt");
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
             
             // neue Methoden mit aptean.cs mit Variablen
@@ -169,7 +156,7 @@ namespace B_ERBU_002.Recordings_SQL_Usercode
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(8)); }
             
             try {
-                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks(file_selectergebnis_b_exop_uebergeleitet_aktuell, file_selectergebnis_b_exop_uebergeleitet_Referenz);
+                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks(file_selectergebnis_b_exop_uebergeleitet_Referenz, file_selectergebnis_b_exop_uebergeleitet_aktuell);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
             
         }

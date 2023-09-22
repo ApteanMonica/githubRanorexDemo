@@ -29,11 +29,6 @@ mode="Global">
 			select  in default value wird bei copy/paste abgeschnitten
 		</var>
 		<var
-		id="83f47db7-ada9-4a65-9b02-225f1e6db018"
-		name="DB_File">
-			C:\Testdaten\Allgemein\UserCode\datenbank.txt
-		</var>
-		<var
 		id="e8d79a4a-5796-46cf-a52f-be2b1c9c4d5c"
 		name="file_selectergebnis_b_exop_uebergeleitet_aktuell">
 			C:\temp\B_ERBU_002_B_EXOP_uebergeleitet_aktuell.txt
@@ -46,7 +41,7 @@ mode="Global">
 	</variables>
 	<recorditems>
 		<separatoritem
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 				alte Methoden mit apteanSQL.cs
@@ -56,7 +51,7 @@ mode="Global">
 		</separatoritem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ReadVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -91,7 +86,7 @@ mode="Global">
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SQLStatement"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -239,8 +234,7 @@ from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '220000
 				</argument>
 				<argument
 				argname="dbFile"
-				id="8644b8a5-f959-4679-9312-d6451dfb8e4f"
-				variable="DB_File">
+				id="8644b8a5-f959-4679-9312-d6451dfb8e4f">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -262,7 +256,7 @@ from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '220000
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="FileCompareEqual"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -275,22 +269,22 @@ from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '220000
 			id="d33215fa-433e-4955-9a94-2c35e7022d45">
 				<argument
 				argname="file1"
-				id="306488dc-b70e-4cb1-80dc-85eb96a507d4"
-				variable="file_selectergebnis_b_exop_uebergeleitet_aktuell">
+				id="306488dc-b70e-4cb1-80dc-85eb96a507d4">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
+						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_002\B_ERBU_002_B_EXOP_uebergeleitet_Referenz.txt
 					</argvalue>
 				</argument>
 				<argument
 				argname="file2"
-				id="d60b2958-8554-4d59-8247-8ebc76a2705a"
-				variable="file_selectergebnis_b_exop_uebergeleitet_Referenz">
+				id="d60b2958-8554-4d59-8247-8ebc76a2705a">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
+						C:\temp\B_ERBU_002_B_EXOP_uebergeleitet_aktuell.txt
 					</argvalue>
 				</argument>
 			</arguments>
@@ -484,7 +478,7 @@ from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '220000
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\temp\B_ERBU_002_B_EXOP_uebergeleitet_aktuell.txt
+						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_002\B_ERBU_002_B_EXOP_uebergeleitet_Referenz.txt
 					</argvalue>
 				</argument>
 				<argument
@@ -494,7 +488,7 @@ from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '220000
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_002\B_ERBU_002_B_EXOP_uebergeleitet_Referenz.txt
+						C:\temp\B_ERBU_002_B_EXOP_uebergeleitet_aktuell.txt
 					</argvalue>
 				</argument>
 			</arguments>
@@ -559,7 +553,7 @@ from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '220000
 				<argument
 				argname="file1"
 				id="ea66a06c-a086-4417-b951-b1dd5120b90e"
-				variable="file_selectergebnis_b_exop_uebergeleitet_aktuell">
+				variable="file_selectergebnis_b_exop_uebergeleitet_Referenz">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -569,7 +563,7 @@ from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2200005' AND '220000
 				<argument
 				argname="file2"
 				id="6c6b1e2b-e14a-4665-a46a-eaceda65a65b"
-				variable="file_selectergebnis_b_exop_uebergeleitet_Referenz">
+				variable="file_selectergebnis_b_exop_uebergeleitet_aktuell">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

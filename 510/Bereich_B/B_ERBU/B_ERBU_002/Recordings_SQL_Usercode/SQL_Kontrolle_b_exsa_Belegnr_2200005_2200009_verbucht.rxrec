@@ -29,11 +29,6 @@ mode="Global">
 			select  in default value wird bei copy/paste abgeschnitten
 		</var>
 		<var
-		id="a294cf74-2524-45eb-b468-8cc5154a96c6"
-		name="DB_File">
-			C:\Testdaten\Allgemein\UserCode\datenbank.txt
-		</var>
-		<var
 		id="a3893ea3-a461-4a23-8911-5c0ccca51621"
 		name="file_selectergebnis_b_exsa_verbucht_aktuell">
 			C:\temp\B_ERBU_002_B_EXSA_verbucht_aktuell.txt
@@ -46,7 +41,7 @@ mode="Global">
 	</variables>
 	<recorditems>
 		<separatoritem
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 				alte Methoden mit apteanSQL.cs
@@ -56,7 +51,7 @@ mode="Global">
 		</separatoritem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ReadVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -91,7 +86,7 @@ mode="Global">
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SQLStatement"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -169,8 +164,7 @@ AND exop_belegnr BETWEEN '2200005' AND '2200009';
 				</argument>
 				<argument
 				argname="dbFile"
-				id="8644b8a5-f959-4679-9312-d6451dfb8e4f"
-				variable="DB_File">
+				id="8644b8a5-f959-4679-9312-d6451dfb8e4f">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -192,7 +186,7 @@ AND exop_belegnr BETWEEN '2200005' AND '2200009';
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="FileCompareEqual"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -205,22 +199,22 @@ AND exop_belegnr BETWEEN '2200005' AND '2200009';
 			id="d33215fa-433e-4955-9a94-2c35e7022d45">
 				<argument
 				argname="file1"
-				id="306488dc-b70e-4cb1-80dc-85eb96a507d4"
-				variable="file_selectergebnis_b_exsa_verbucht_aktuell">
+				id="306488dc-b70e-4cb1-80dc-85eb96a507d4">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
+						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_002\B_ERBU_002_B_EXSA_uebergeleitet_Referenz.txt
 					</argvalue>
 				</argument>
 				<argument
 				argname="file2"
-				id="d60b2958-8554-4d59-8247-8ebc76a2705a"
-				variable="file_selectergebnis_b_exsa_verbucht_Referenz">
+				id="d60b2958-8554-4d59-8247-8ebc76a2705a">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
+						C:\temp\B_ERBU_002_B_EXSA_uebergeleitet_aktuell.txt
 					</argvalue>
 				</argument>
 			</arguments>
@@ -344,7 +338,7 @@ AND exop_belegnr BETWEEN '2200005' AND '2200009';
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\temp\B_ERBU_002_B_EXSA_uebergeleitet_aktuell.txt
+						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_002\B_ERBU_002_B_EXSA_uebergeleitet_Referenz.txt
 					</argvalue>
 				</argument>
 				<argument
@@ -354,7 +348,7 @@ AND exop_belegnr BETWEEN '2200005' AND '2200009';
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_002\B_ERBU_002_B_EXSA_uebergeleitet_Referenz.txt
+						C:\temp\B_ERBU_002_B_EXSA_uebergeleitet_aktuell.txt
 					</argvalue>
 				</argument>
 			</arguments>
@@ -419,7 +413,7 @@ AND exop_belegnr BETWEEN '2200005' AND '2200009';
 				<argument
 				argname="file1"
 				id="ea66a06c-a086-4417-b951-b1dd5120b90e"
-				variable="file_selectergebnis_b_exsa_verbucht_aktuell">
+				variable="file_selectergebnis_b_exsa_verbucht_Referenz">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -429,7 +423,7 @@ AND exop_belegnr BETWEEN '2200005' AND '2200009';
 				<argument
 				argname="file2"
 				id="6c6b1e2b-e14a-4665-a46a-eaceda65a65b"
-				variable="file_selectergebnis_b_exsa_verbucht_Referenz">
+				variable="file_selectergebnis_b_exsa_verbucht_aktuell">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

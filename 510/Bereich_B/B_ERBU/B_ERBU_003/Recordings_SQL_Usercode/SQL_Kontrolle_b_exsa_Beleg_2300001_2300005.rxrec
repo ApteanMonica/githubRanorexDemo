@@ -24,11 +24,6 @@ mode="Global">
 	</codegen>
 	<variables>
 		<var
-		id="8af40913-a103-437a-80ec-80c2876578e7"
-		name="DB_File">
-			C:\Testdaten\Allgemein\UserCode\datenbank.txt
-		</var>
-		<var
 		id="0601747b-8a78-41b9-8c7e-36a80ebf8472"
 		name="file_selectergebnis_b_exsa_aktuell">
 			C:\temp\B_ERBU_003_B_EXSA_aktuell.txt
@@ -46,7 +41,7 @@ mode="Global">
 	</variables>
 	<recorditems>
 		<separatoritem
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 				alte Methoden mit apteanSQL.cs
@@ -56,7 +51,7 @@ mode="Global">
 		</separatoritem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ReadVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -91,7 +86,7 @@ mode="Global">
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SQLStatement"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -169,8 +164,7 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';
 				</argument>
 				<argument
 				argname="dbFile"
-				id="8644b8a5-f959-4679-9312-d6451dfb8e4f"
-				variable="DB_File">
+				id="8644b8a5-f959-4679-9312-d6451dfb8e4f">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -192,7 +186,7 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';
 		</userrecorditem>
 		<userrecorditem
 		classname="ApteanSQL"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="FileCompareEqual"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -205,22 +199,22 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';
 			id="d33215fa-433e-4955-9a94-2c35e7022d45">
 				<argument
 				argname="file1"
-				id="306488dc-b70e-4cb1-80dc-85eb96a507d4"
-				variable="file_selectergebnis_b_exsa_aktuell">
+				id="306488dc-b70e-4cb1-80dc-85eb96a507d4">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
+						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_003\B_ERBU_003_B_EXSA_Referenz.txt
 					</argvalue>
 				</argument>
 				<argument
 				argname="file2"
-				id="d60b2958-8554-4d59-8247-8ebc76a2705a"
-				variable="file_selectergebnis_b_exsa_Referenz">
+				id="d60b2958-8554-4d59-8247-8ebc76a2705a">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
+						C:\temp\B_ERBU_003_B_EXSA_aktuell.txt
 					</argvalue>
 				</argument>
 			</arguments>
@@ -344,7 +338,7 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\temp\B_ERBU_003_B_EXSA_aktuell.txt
+						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_003\B_ERBU_003_B_EXSA_Referenz.txt
 					</argvalue>
 				</argument>
 				<argument
@@ -354,7 +348,7 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_003\B_ERBU_003_B_EXSA_Referenz.txt
+						C:\temp\B_ERBU_003_B_EXSA_aktuell.txt
 					</argvalue>
 				</argument>
 			</arguments>
@@ -419,7 +413,7 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';
 				<argument
 				argname="file1"
 				id="ea66a06c-a086-4417-b951-b1dd5120b90e"
-				variable="file_selectergebnis_b_exsa_aktuell">
+				variable="file_selectergebnis_b_exsa_Referenz">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -429,7 +423,7 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';
 				<argument
 				argname="file2"
 				id="6c6b1e2b-e14a-4665-a46a-eaceda65a65b"
-				variable="file_selectergebnis_b_exsa_Referenz">
+				variable="file_selectergebnis_b_exsa_aktuell">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
