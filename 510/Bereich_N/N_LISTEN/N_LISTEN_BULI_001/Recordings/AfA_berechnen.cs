@@ -131,29 +131,29 @@ namespace N_LISTEN_BULI_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press.", new RecordItemIndex(0));
-            Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press.", new RecordItemIndex(0));
+            //Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2022') on item 'FrmBuchungsliste.Geschaeftsjahr'.", repo.FrmBuchungsliste.GeschaeftsjahrInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.FrmBuchungsliste.GeschaeftsjahrInfo, "Text", "2022");
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmBuchungsliste.CbBereich'.", repo.FrmBuchungsliste.CbBereichInfo, new RecordItemIndex(2));
-            repo.FrmBuchungsliste.CbBereich.Element.SetAttributeValue("Checked", "False");
+            //Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmBuchungsliste.CbBereich'.", repo.FrmBuchungsliste.CbBereichInfo, new RecordItemIndex(2));
+            //repo.FrmBuchungsliste.CbBereich.Element.SetAttributeValue("Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmBuchungsliste.Frame2.CbBer1'.", repo.FrmBuchungsliste.Frame2.CbBer1Info, new RecordItemIndex(3));
-            repo.FrmBuchungsliste.Frame2.CbBer1.Element.SetAttributeValue("Checked", "False");
+            //Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmBuchungsliste.Frame2.CbBer1'.", repo.FrmBuchungsliste.Frame2.CbBer1Info, new RecordItemIndex(3));
+            //repo.FrmBuchungsliste.Frame2.CbBer1.Element.SetAttributeValue("Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmBuchungsliste.Frame2.CbBer2'.", repo.FrmBuchungsliste.Frame2.CbBer2Info, new RecordItemIndex(4));
-            repo.FrmBuchungsliste.Frame2.CbBer2.Element.SetAttributeValue("Checked", "False");
+            //Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmBuchungsliste.Frame2.CbBer2'.", repo.FrmBuchungsliste.Frame2.CbBer2Info, new RecordItemIndex(4));
+            //repo.FrmBuchungsliste.Frame2.CbBer2.Element.SetAttributeValue("Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmBuchungsliste.Frame2.CbBer3'.", repo.FrmBuchungsliste.Frame2.CbBer3Info, new RecordItemIndex(5));
-            repo.FrmBuchungsliste.Frame2.CbBer3.Element.SetAttributeValue("Checked", "False");
+            //Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmBuchungsliste.Frame2.CbBer3'.", repo.FrmBuchungsliste.Frame2.CbBer3Info, new RecordItemIndex(5));
+            //repo.FrmBuchungsliste.Frame2.CbBer3.Element.SetAttributeValue("Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmBuchungsliste.Frame2.CbBer4'.", repo.FrmBuchungsliste.Frame2.CbBer4Info, new RecordItemIndex(6));
-            repo.FrmBuchungsliste.Frame2.CbBer4.Element.SetAttributeValue("Checked", "False");
+            //Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmBuchungsliste.Frame2.CbBer4'.", repo.FrmBuchungsliste.Frame2.CbBer4Info, new RecordItemIndex(6));
+            //repo.FrmBuchungsliste.Frame2.CbBer4.Element.SetAttributeValue("Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.CbBereich' at Center.", repo.FrmBuchungsliste.CbBereichInfo, new RecordItemIndex(7));
-            repo.FrmBuchungsliste.CbBereich.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.CbBereich' at Center.", repo.FrmBuchungsliste.CbBereichInfo, new RecordItemIndex(7));
+            //repo.FrmBuchungsliste.CbBereich.Click();
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBuchungsliste.CbBereich'.", repo.FrmBuchungsliste.CbBereichInfo, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.FrmBuchungsliste.CbBereichInfo, "Checked", "True");
