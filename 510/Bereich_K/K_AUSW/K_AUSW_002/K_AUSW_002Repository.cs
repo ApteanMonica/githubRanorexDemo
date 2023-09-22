@@ -35,6 +35,7 @@ namespace K_AUSW_002
         K_AUSW_002RepositoryFolders.TblBkAbAppFolder _tblbkab;
         K_AUSW_002RepositoryFolders.DlgListBoxAppFolder _dlglistbox;
         K_AUSW_002RepositoryFolders.FrmProgressAppFolder _frmprogress;
+        K_AUSW_002RepositoryFolders.Form100AuswahllisteKonditionenAppFolder _form100auswahllistekonditionen;
 
         /// <summary>
         /// Gets the singleton class instance representing the K_AUSW_002Repository element repository.
@@ -59,6 +60,7 @@ namespace K_AUSW_002
             _tblbkab = new K_AUSW_002RepositoryFolders.TblBkAbAppFolder(this);
             _dlglistbox = new K_AUSW_002RepositoryFolders.DlgListBoxAppFolder(this);
             _frmprogress = new K_AUSW_002RepositoryFolders.FrmProgressAppFolder(this);
+            _form100auswahllistekonditionen = new K_AUSW_002RepositoryFolders.Form100AuswahllisteKonditionenAppFolder(this);
         }
 
 #region Variables
@@ -159,6 +161,15 @@ namespace K_AUSW_002
         public virtual K_AUSW_002RepositoryFolders.FrmProgressAppFolder FrmProgress
         {
             get { return _frmprogress; }
+        }
+
+        /// <summary>
+        /// The Form100AuswahllisteKonditionen folder.
+        /// </summary>
+        [RepositoryFolder("543ebfc2-1af2-46c9-bbcb-c6e4d89b3d2e")]
+        public virtual K_AUSW_002RepositoryFolders.Form100AuswahllisteKonditionenAppFolder Form100AuswahllisteKonditionen
+        {
+            get { return _form100auswahllistekonditionen; }
         }
     }
 
@@ -541,6 +552,7 @@ namespace K_AUSW_002
             RepoItemInfo _colvon1row1Info;
             RepoItemInfo _colbis1row1Info;
             RepoItemInfo _colausacdrow1Info;
+            RepoItemInfo _row2column0Info;
 
             /// <summary>
             /// Creates a new FlexGrid_TblAtbz  folder.
@@ -553,6 +565,7 @@ namespace K_AUSW_002
                 _colvon1row1Info = new RepoItemInfo(this, "ColVon1Row1", "row[@accessiblename='Row 1']/cell[@accessiblename='colVon1 Row 1']", "", 30000, null, "7ec9416d-8080-4827-9d84-7186b441c893");
                 _colbis1row1Info = new RepoItemInfo(this, "ColBis1Row1", "row[@accessiblename='Row 1']/cell[@accessiblename='colBis1 Row 1']", "", 30000, null, "6fa5daa7-c1ef-4459-8c30-af8f6f1fe868");
                 _colausacdrow1Info = new RepoItemInfo(this, "ColAusaCdRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colAusa_cd Row 1']", "", 30000, null, "f31c4546-9ef2-4b13-9fb4-a93a88f95163");
+                _row2column0Info = new RepoItemInfo(this, "Row2Column0", "row[@accessiblename='Row 2']/cell[@accessiblename='Row 2 Column 0']", "", 30000, null, "77c1b334-bf82-42c5-a304-5920b403bf21");
             }
 
             /// <summary>
@@ -696,6 +709,30 @@ namespace K_AUSW_002
                 get
                 {
                     return _colausacdrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row2Column0 item.
+            /// </summary>
+            [RepositoryItem("77c1b334-bf82-42c5-a304-5920b403bf21")]
+            public virtual Ranorex.Cell Row2Column0
+            {
+                get
+                {
+                    return _row2column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row2Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("77c1b334-bf82-42c5-a304-5920b403bf21")]
+            public virtual RepoItemInfo Row2Column0Info
+            {
+                get
+                {
+                    return _row2column0Info;
                 }
             }
         }
@@ -2222,6 +2259,98 @@ namespace K_AUSW_002
                 get
                 {
                     return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Form100AuswahllisteKonditionenAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("543ebfc2-1af2-46c9-bbcb-c6e4d89b3d2e")]
+        public partial class Form100AuswahllisteKonditionenAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _titlebar100auswahllistekonditionenInfo;
+            RepoItemInfo _windowsforms10buttonapp02804c64r6aInfo;
+
+            /// <summary>
+            /// Creates a new Form100AuswahllisteKonditionen  folder.
+            /// </summary>
+            public Form100AuswahllisteKonditionenAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Form100AuswahllisteKonditionen", "/form[@title>'[100]  Auswahlliste Kondi']", parentFolder, 30000, null, true, "543ebfc2-1af2-46c9-bbcb-c6e4d89b3d2e", "")
+            {
+                _titlebar100auswahllistekonditionenInfo = new RepoItemInfo(this, "TitleBar100AuswahllisteKonditionen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "5eba6770-e481-4f32-b48e-e740475ebfb6");
+                _windowsforms10buttonapp02804c64r6aInfo = new RepoItemInfo(this, "WindowsForms10BUTTONApp02804c64R6A", "element[@instance='1']/button[@class='WindowsForms10.BUTTON.app.0.2804c64_r6_ad1' and @instance='0']", "", 30000, null, "22342ec4-3342-428c-83ea-401bbd3a0c60");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("543ebfc2-1af2-46c9-bbcb-c6e4d89b3d2e")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("543ebfc2-1af2-46c9-bbcb-c6e4d89b3d2e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100AuswahllisteKonditionen item.
+            /// </summary>
+            [RepositoryItem("5eba6770-e481-4f32-b48e-e740475ebfb6")]
+            public virtual Ranorex.TitleBar TitleBar100AuswahllisteKonditionen
+            {
+                get
+                {
+                    return _titlebar100auswahllistekonditionenInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100AuswahllisteKonditionen item info.
+            /// </summary>
+            [RepositoryItemInfo("5eba6770-e481-4f32-b48e-e740475ebfb6")]
+            public virtual RepoItemInfo TitleBar100AuswahllisteKonditionenInfo
+            {
+                get
+                {
+                    return _titlebar100auswahllistekonditionenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WindowsForms10BUTTONApp02804c64R6A item.
+            /// </summary>
+            [RepositoryItem("22342ec4-3342-428c-83ea-401bbd3a0c60")]
+            public virtual Ranorex.Button WindowsForms10BUTTONApp02804c64R6A
+            {
+                get
+                {
+                    return _windowsforms10buttonapp02804c64r6aInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WindowsForms10BUTTONApp02804c64R6A item info.
+            /// </summary>
+            [RepositoryItemInfo("22342ec4-3342-428c-83ea-401bbd3a0c60")]
+            public virtual RepoItemInfo WindowsForms10BUTTONApp02804c64R6AInfo
+            {
+                get
+                {
+                    return _windowsforms10buttonapp02804c64r6aInfo;
                 }
             }
         }

@@ -769,11 +769,13 @@ namespace K_AUSW_001
         public partial class FlexGrid_TblAtbzFolder : RepoGenBaseFolder
         {
             RepoItemInfo _sometextInfo;
+            RepoItemInfo _row1Info;
+            RepoItemInfo _row1column0Info;
+            RepoItemInfo _row2column0Info;
             RepoItemInfo _colausacdrow1Info;
             RepoItemInfo _coltyprow1Info;
             RepoItemInfo _colvon1row1Info;
             RepoItemInfo _colbis1row1Info;
-            RepoItemInfo _row1column0Info;
             RepoItemInfo _colausacdrow2Info;
             RepoItemInfo _colgra1row1Info;
 
@@ -784,11 +786,13 @@ namespace K_AUSW_001
                     base("FlexGrid_TblAtbz", "container[@controlname='ClientArea']/container[@controlname='splitContainer']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='SubForm_tblAtbz']/form[@controlname='tblAtbz']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "e088212d-5cc2-4061-90ee-888cba2189b2", "")
             {
                 _sometextInfo = new RepoItemInfo(this, "SomeText", "container[@controlname='ClientArea']/container[@controlname='splitContainer']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='SubForm_tblAtbz']/form[@controlname='tblAtbz']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/text[@controltypename='']", "", 30000, null, "d620441e-e7cd-49ef-a222-81f417924533");
+                _row1Info = new RepoItemInfo(this, "Row1", "row[@accessiblename='Row 1']", "", 30000, null, "5e7513f7-3d6a-4e33-9464-dd07497e98a4");
+                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "5f36712b-2411-4b01-bc4c-c4b717838a98");
+                _row2column0Info = new RepoItemInfo(this, "Row2Column0", "row[@accessiblename='Row 2']/cell[@accessiblename='Row 2 Column 0']", "", 30000, null, "47398682-28d7-4044-8058-d3e0ffbc182a");
                 _colausacdrow1Info = new RepoItemInfo(this, "ColAusaCdRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colAusa_cd Row 1']", "", 30000, null, "ed08fefb-0ead-45bc-83ca-65fef9ea250f");
                 _coltyprow1Info = new RepoItemInfo(this, "ColTypRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colTyp Row 1']", "", 30000, null, "35fceb6e-6222-4d71-9ef1-1c4a9c860419");
                 _colvon1row1Info = new RepoItemInfo(this, "ColVon1Row1", "row[@accessiblename='Row 1']/cell[@accessiblename='colVon1 Row 1']", "", 30000, null, "4f218d4c-8245-496c-842e-9f788e4aeea9");
                 _colbis1row1Info = new RepoItemInfo(this, "ColBis1Row1", "row[@accessiblename='Row 1']/cell[@accessiblename='colBis1 Row 1']", "", 30000, null, "50d2d6e4-0a0b-4180-be03-acb0f029f133");
-                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "5f36712b-2411-4b01-bc4c-c4b717838a98");
                 _colausacdrow2Info = new RepoItemInfo(this, "ColAusaCdRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colAusa_cd Row 2']", "", 30000, null, "7a34f9a4-9746-47be-9dab-1759164448be");
                 _colgra1row1Info = new RepoItemInfo(this, "ColGra1Row1", "row[@accessiblename='Row 1']/cell[@accessiblename='colGra1 Row 1']", "", 30000, null, "797ee6c8-9704-488a-b27b-968c27424b2b");
             }
@@ -838,6 +842,78 @@ namespace K_AUSW_001
                 get
                 {
                     return _sometextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Row1 item.
+            /// </summary>
+            [RepositoryItem("5e7513f7-3d6a-4e33-9464-dd07497e98a4")]
+            public virtual Ranorex.Row Row1
+            {
+                get
+                {
+                    return _row1Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1 item info.
+            /// </summary>
+            [RepositoryItemInfo("5e7513f7-3d6a-4e33-9464-dd07497e98a4")]
+            public virtual RepoItemInfo Row1Info
+            {
+                get
+                {
+                    return _row1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item.
+            /// </summary>
+            [RepositoryItem("5f36712b-2411-4b01-bc4c-c4b717838a98")]
+            public virtual Ranorex.Cell Row1Column0
+            {
+                get
+                {
+                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("5f36712b-2411-4b01-bc4c-c4b717838a98")]
+            public virtual RepoItemInfo Row1Column0Info
+            {
+                get
+                {
+                    return _row1column0Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row2Column0 item.
+            /// </summary>
+            [RepositoryItem("47398682-28d7-4044-8058-d3e0ffbc182a")]
+            public virtual Ranorex.Cell Row2Column0
+            {
+                get
+                {
+                    return _row2column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row2Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("47398682-28d7-4044-8058-d3e0ffbc182a")]
+            public virtual RepoItemInfo Row2Column0Info
+            {
+                get
+                {
+                    return _row2column0Info;
                 }
             }
 
@@ -934,30 +1010,6 @@ namespace K_AUSW_001
                 get
                 {
                     return _colbis1row1Info;
-                }
-            }
-
-            /// <summary>
-            /// The Row1Column0 item.
-            /// </summary>
-            [RepositoryItem("5f36712b-2411-4b01-bc4c-c4b717838a98")]
-            public virtual Ranorex.Cell Row1Column0
-            {
-                get
-                {
-                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Row1Column0 item info.
-            /// </summary>
-            [RepositoryItemInfo("5f36712b-2411-4b01-bc4c-c4b717838a98")]
-            public virtual RepoItemInfo Row1Column0Info
-            {
-                get
-                {
-                    return _row1column0Info;
                 }
             }
 

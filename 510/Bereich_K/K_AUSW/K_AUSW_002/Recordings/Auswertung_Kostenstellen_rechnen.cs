@@ -79,28 +79,34 @@ namespace K_AUSW_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.FlexGrid_TblAtbz.Row1Column0' at Center.", repo.FrmMain.FlexGrid_TblAtbz.Row1Column0Info, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.FlexGrid_TblAtbz.Row2Column0' at Center.", repo.FrmMain.FlexGrid_TblAtbz.Row2Column0Info, new RecordItemIndex(0));
+            repo.FrmMain.FlexGrid_TblAtbz.Row2Column0.Click();
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.FlexGrid_TblAtbz.Row1Column0' at Center.", repo.FrmMain.FlexGrid_TblAtbz.Row1Column0Info, new RecordItemIndex(2));
             repo.FrmMain.FlexGrid_TblAtbz.Row1Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 4s.", new RecordItemIndex(1));
-            Delay.Duration(4000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));
+            Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.PbToolBarItemsRechnen' at Center.", repo.FrmMain.PbToolBarItemsRechnenInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.PbToolBarItemsRechnen' at Center.", repo.FrmMain.PbToolBarItemsRechnenInfo, new RecordItemIndex(4));
             repo.FrmMain.PbToolBarItemsRechnen.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(180000), new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(180000), new RecordItemIndex(5));
             repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(180000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Nur markierte Formulare rechnen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Nur markierte Formulare rechnen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Nur markierte Formulare rechnen?");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(7));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'TblAnzeige.TitleBar100GuVSec231UGBStand2016'", repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, new ActionTimeout(300000), new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'TblAnzeige.TitleBar100GuVSec231UGBStand2016'", repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, new ActionTimeout(300000), new RecordItemIndex(8));
             repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info.WaitForExists(300000);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to not exist. Associated repository item: 'FrmProgress'", repo.FrmProgress.SelfInfo, new ActionTimeout(120000), new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to not exist. Associated repository item: 'FrmProgress'", repo.FrmProgress.SelfInfo, new ActionTimeout(120000), new RecordItemIndex(9));
             repo.FrmProgress.SelfInfo.WaitForNotExists(120000);
             
         }
