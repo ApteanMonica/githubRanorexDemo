@@ -24,46 +24,46 @@ namespace K_FIBU_001.SQL_Updates_Selects
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The SQL_Update_y_par_fibu_sperre_auf_0 recording.
+    ///The SQL_Select_y_par_fibu_sperre recording.
     /// </summary>
-    [TestModule("035bc0f5-13d1-432c-901a-6bdf52575abf", ModuleType.Recording, 1)]
-    public partial class SQL_Update_y_par_fibu_sperre_auf_0 : ITestModule
+    [TestModule("52203e43-66db-4dc9-9ba7-315f18fc6aef", ModuleType.Recording, 1)]
+    public partial class SQL_Select_y_par_fibu_sperre : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::K_FIBU_001.K_FIBU_001Repository repository.
         /// </summary>
         public static global::K_FIBU_001.K_FIBU_001Repository repo = global::K_FIBU_001.K_FIBU_001Repository.Instance;
 
-        static SQL_Update_y_par_fibu_sperre_auf_0 instance = new SQL_Update_y_par_fibu_sperre_auf_0();
+        static SQL_Select_y_par_fibu_sperre instance = new SQL_Select_y_par_fibu_sperre();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public SQL_Update_y_par_fibu_sperre_auf_0()
+        public SQL_Select_y_par_fibu_sperre()
         {
-            Update_y_par_Sperre_AUS = "update y_par set par_textk = '0' where par_cd = 'FIBU_SPERRE_100' and par_lfdnr= '0';";
+            Select_y_par_Sperre = "select * from y_par where par_cd = 'FIBU_SPERRE_100' and par_lfdnr= '0';";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static SQL_Update_y_par_fibu_sperre_auf_0 Instance
+        public static SQL_Select_y_par_fibu_sperre Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Update_y_par_Sperre_AUS;
+        string _Select_y_par_Sperre;
 
         /// <summary>
-        /// Gets or sets the value of variable Update_y_par_Sperre_AUS.
+        /// Gets or sets the value of variable Select_y_par_Sperre.
         /// </summary>
-        [TestVariable("912277f7-7311-4d78-a3d0-da98514eba68")]
-        public string Update_y_par_Sperre_AUS
+        [TestVariable("60a2da6b-7413-49ef-8827-c8b0fd5a3112")]
+        public string Select_y_par_Sperre
         {
-            get { return _Update_y_par_Sperre_AUS; }
-            set { _Update_y_par_Sperre_AUS = value; }
+            get { return _Select_y_par_Sperre; }
+            set { _Select_y_par_Sperre = value; }
         }
 
 #endregion
@@ -92,7 +92,7 @@ namespace K_FIBU_001.SQL_Updates_Selects
 
             Init();
 
-            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement(Update_y_par_Sperre_AUS, "");
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement(Select_y_par_Sperre, "");
             
         }
 

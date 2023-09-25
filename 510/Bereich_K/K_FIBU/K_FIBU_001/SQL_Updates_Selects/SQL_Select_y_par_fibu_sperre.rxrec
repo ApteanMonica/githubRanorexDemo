@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="035bc0f5-13d1-432c-901a-6bdf52575abf"
+id="52203e43-66db-4dc9-9ba7-315f18fc6aef"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,14 +19,14 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="SQL_Update_y_par_fibu_sperre_auf_0"
+	classname="SQL_Select_y_par_fibu_sperre"
 	namespace="K_FIBU_001.SQL_Updates_Selects">
 	</codegen>
 	<variables>
 		<var
-		id="912277f7-7311-4d78-a3d0-da98514eba68"
-		name="Update_y_par_Sperre_AUS">
-			update y_par set par_textk = '0' where par_cd = 'FIBU_SPERRE_100' and par_lfdnr= '0';
+		id="60a2da6b-7413-49ef-8827-c8b0fd5a3112"
+		name="Select_y_par_Sperre">
+			select * from y_par where par_cd = 'FIBU_SPERRE_100' and par_lfdnr= '0';
 		</var>
 	</variables>
 	<recorditems>
@@ -46,7 +46,7 @@ mode="Global">
 				<argument
 				argname="selectLine"
 				id="8b007fdb-05f1-450c-96f3-1bacf2d8f392"
-				variable="Update_y_par_Sperre_AUS">
+				variable="Select_y_par_Sperre">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -81,7 +81,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		SQL_Update_y_par_fibu_sperre_auf_0.UserCode.cs
+		SQL_Select_y_par_fibu_sperre.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

@@ -92,6 +92,18 @@
 					name="User_RSX"
 					value="RSX">
 					</param>
+					<param
+					name="Update_y_par_Sperre_EIN"
+					value="update y_par set par_textk = '1' where par_cd = 'FIBU_SPERRE_100' and par_lfdnr= '0';">
+					</param>
+					<param
+					name="Update_y_par_Sperre_AUS"
+					value="update y_par set par_textk = '0' where par_cd = 'FIBU_SPERRE_100' and par_lfdnr= '0';">
+					</param>
+					<param
+					name="Select_y_par_Sperre"
+					value="select * from y_par where par_cd = 'FIBU_SPERRE_100' and par_lfdnr= '0';">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -131,6 +143,14 @@
 				<description>
 					<![CDATA[IN ARBEIT - Update mit Select-Überprüfung statt Maske y_par]]>
 				</description>
+				<databinding>
+					<var
+					dataname="Update_y_par_Sperre_AUS"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="912277f7-7311-4d78-a3d0-da98514eba68"
+					variablename="Update_y_par_Sperre_AUS">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="1c68f9f3-5196-410a-9081-cec8e321d5eb"
@@ -360,6 +380,20 @@
 					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
 					variableid="3bff4f6b-aad5-4517-a9b3-1d8dd8ecaaf8"
 					variablename="User_RS">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="50885563-5444-4355-8b0c-dfc3ced3b04c"
+			name="SQL_Update_y_par_fibu_sperre_auf_1"
+			ref="919a529e-274a-4854-ad4a-2d4d2e713e6a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Update_y_par_Sperre_EIN"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="a1f165c5-d815-4042-90b9-ee5bde1c05a3"
+					variablename="Update_y_par_Sperre_EIN">
 					</var>
 				</databinding>
 			</testmodule>
@@ -734,6 +768,20 @@
 			name="setup">
 			</setup>
 			<testmodule
+			id="dcc82aac-6238-4e6d-a05b-72fe3f9f1038"
+			name="SQL_Select_y_par_fibu_sperre"
+			ref="52203e43-66db-4dc9-9ba7-315f18fc6aef"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Select_y_par_Sperre"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="60a2da6b-7413-49ef-8827-c8b0fd5a3112"
+					variablename="Select_y_par_Sperre">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="ddf6b918-46ea-461a-aedf-9b4ad3ea8060"
 			name="Parameter_bearbeiten_laden"
 			ref="8597d1f2-561a-4d19-86fb-aa9d13b39b7c"
@@ -903,6 +951,14 @@
 							<testmodule
 							id="1c11975e-245e-4491-9873-6433565d3798"
 							name="SQL_Update_y_par_fibu_sperre_auf_0">
+							</testmodule>
+							<testmodule
+							id="dcc82aac-6238-4e6d-a05b-72fe3f9f1038"
+							name="SQL_Select_y_par_fibu_sperre">
+							</testmodule>
+							<testmodule
+							id="50885563-5444-4355-8b0c-dfc3ced3b04c"
+							name="SQL_Update_y_par_fibu_sperre_auf_1">
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
