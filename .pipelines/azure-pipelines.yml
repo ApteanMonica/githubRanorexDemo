@@ -101,21 +101,22 @@ jobs:
        downloadType: 'single'
        artifactName: 'drop'
        downloadPath: '$(System.ArtifactsDirectory)'
-   - task: SendEmail@1
-     condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
-     inputs:
-      To: 'kishore.ramachandraiah@aptean.com'
-      From: 'RSautomation@aptean.com'
-      Subject: 'RS2 Automation reports'
-      Body: |
-        This is the body of the email. You can write your content here and use proper alignment.
-                         
-                                  Thank you,
-                                  Your Name
-      BodyAsHtml: true
-      SmtpServer: 'smtp.office365.com'
-      AddAttachment: true
-      Attachment: '$(Build.ArtifactStagingDirectory)/drop/reports.zip'
-      SmtpUsername: 'RSautomation@aptean.com'
-      SmtpPassword: '$(SMTP_UserPassword)'
-      UseSSL: true      
+   - task: rvo.SendEmailTask.send-email-build-task.SendEmail@1
+          displayName: 'Send an email'
+          condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
+          inputs:           
+            To: 'kishore.ramachandraiah@aptean.com'
+            CC: 
+            From: RSautomation@aptean.com
+            Subject: "RS2 Automation report"
+            Body: |
+                This is the automation report.
+                pipeline <a href="https://dev.azure.com/ApteanDACH/RS2/_build/results?buildId=$(Build.BuildId)&view=artifacts&pathAsName=false&type=publishedArtifacts"> link </a>
+            BodyAsHtml: true
+            AddAttachment: false
+            Attachment: ''
+            SmtpServer: smtp.office365.com
+            SmtpUsername: 'RSautomation@aptean.com'
+            SmtpPassword: $(SMTP_UserPassword)
+            SmtpPort: 587
+            UseSSL: true
