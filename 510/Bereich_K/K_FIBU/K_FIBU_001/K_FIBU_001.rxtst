@@ -36,6 +36,10 @@
 			ref="cb17121c-94e2-43d3-b36d-6349eaea7b5e"
 			type="Recording">
 			</testmodule>
+			<smartfoldernode
+			id="0f4a1d87-81e2-47b6-a808-7605657ac4a9"
+			name="SQL_Update_Y_PAR_Sperre_setzen">
+			</smartfoldernode>
 			<testcase
 			id="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
 			name="K_FIBU_001"
@@ -118,6 +122,15 @@
 					variablename="User_RS">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="1c11975e-245e-4491-9873-6433565d3798"
+			name="SQL_Update_y_par_fibu_sperre_auf_0"
+			ref="035bc0f5-13d1-432c-901a-6bdf52575abf"
+			type="Recording">
+				<description>
+					<![CDATA[IN ARBEIT - Update mit Select-Überprüfung statt Maske y_par]]>
+				</description>
 			</testmodule>
 			<testmodule
 			id="1c68f9f3-5196-410a-9081-cec8e321d5eb"
@@ -884,6 +897,14 @@
 					<testcase
 					id="ab6e3349-6701-419c-856c-719ea1cc62d1"
 					name="K_FIBU_mit_Sperre_Parameter_Y_PAR">
+						<smartfoldernode
+						id="0f4a1d87-81e2-47b6-a808-7605657ac4a9"
+						name="SQL_Update_Y_PAR_Sperre_setzen">
+							<testmodule
+							id="1c11975e-245e-4491-9873-6433565d3798"
+							name="SQL_Update_y_par_fibu_sperre_auf_0">
+							</testmodule>
+						</smartfoldernode>
 						<smartfoldernode
 						id="c8d5a22b-af50-415d-aa5b-86adcd88edaf"
 						name="Y_PAR_Sperre_setzen">
