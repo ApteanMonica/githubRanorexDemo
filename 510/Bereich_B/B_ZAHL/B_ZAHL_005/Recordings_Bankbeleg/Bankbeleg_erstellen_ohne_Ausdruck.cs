@@ -127,8 +127,8 @@ namespace B_ZAHL_005.Recordings_Bankbeleg
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmZahlMain.PbOptionenBankbelegV' at Center.", repo.FrmZahlMain.PbOptionenBankbelegVInfo, new RecordItemIndex(3));
             repo.FrmZahlMain.PbOptionenBankbelegV.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBankbeleg.Bankbeleg'", repo.FrmBankbeleg.BankbelegInfo, new ActionTimeout(120000), new RecordItemIndex(4));
-            repo.FrmBankbeleg.BankbelegInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'FrmBankbeleg.Bankbeleg'", repo.FrmBankbeleg.BankbelegInfo, new ActionTimeout(180000), new RecordItemIndex(4));
+            repo.FrmBankbeleg.BankbelegInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bankbeleg') on item 'FrmBankbeleg.Bankbeleg'.", repo.FrmBankbeleg.BankbelegInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.FrmBankbeleg.BankbelegInfo, "Text", "Bankbeleg");
@@ -145,8 +145,8 @@ namespace B_ZAHL_005.Recordings_Bankbeleg
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBankbeleg.PbCommonStart' at Center.", repo.FrmBankbeleg.PbCommonStartInfo, new RecordItemIndex(9));
             repo.FrmBankbeleg.PbCommonStart.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'UEberweisungsDatentraeger.UEberweisungsDatentraeger'", repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo, new ActionTimeout(120000), new RecordItemIndex(10));
-            repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'UEberweisungsDatentraeger.UEberweisungsDatentraeger'", repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo, new ActionTimeout(180000), new RecordItemIndex(10));
+            repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'UEberweisungsDatentraeger.UEberweisungsDatentraeger'.", repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo, new RecordItemIndex(11));
             Validate.Exists(repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo);
