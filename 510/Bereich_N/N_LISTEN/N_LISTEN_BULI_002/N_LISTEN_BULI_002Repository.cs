@@ -128,6 +128,11 @@ namespace N_LISTEN_BULI_002
             RepoItemInfo _cmbvarianteInfo;
             RepoItemInfo _textvonInfo;
             RepoItemInfo _textbisInfo;
+            RepoItemInfo _cbbereichInfo;
+            RepoItemInfo _cbber1Info;
+            RepoItemInfo _cbber2Info;
+            RepoItemInfo _cbber3Info;
+            RepoItemInfo _cbber4Info;
 
             /// <summary>
             /// Creates a new FrmBuchungsliste  folder.
@@ -145,6 +150,11 @@ namespace N_LISTEN_BULI_002
                 _cmbvarianteInfo = new RepoItemInfo(this, "CmbVariante", "?/?/combobox[@controlname='cmbVariante']", "", 30000, null, "b02f5911-16cd-4001-852a-2d2ce2179738");
                 _textvonInfo = new RepoItemInfo(this, "TextVon", "?/?/container[@controlname='groupBox1']/?/?/text[@accessiblename='von']", "", 30000, null, "1fbb83db-b327-4b45-ba1f-e54fdc0008c5");
                 _textbisInfo = new RepoItemInfo(this, "TextBis", "?/?/container[@controlname='groupBox1']/?/?/text[@accessiblename='bis']", "", 30000, null, "759f512a-595b-4909-9a4f-917b5733fb60");
+                _cbbereichInfo = new RepoItemInfo(this, "CbBereich", "?/?/container[@controlname='frame2']/checkbox[@controlname='cbBereich']", "", 30000, null, "a8061ec7-883a-4731-9c30-9b8a151673da");
+                _cbber1Info = new RepoItemInfo(this, "CbBer1", "container[@controlname='ClientArea']/container[@controlname='frame2']/checkbox[@controlname='cbBer1']", "", 30000, null, "9e18a424-f815-4b74-92f6-b4e8bdb87f67");
+                _cbber2Info = new RepoItemInfo(this, "CbBer2", "container[@controlname='ClientArea']/container[@controlname='frame2']/checkbox[@controlname='cbBer2']", "", 30000, null, "83cf7e4c-6aaa-4ce4-9b57-bd6610a8d95d");
+                _cbber3Info = new RepoItemInfo(this, "CbBer3", "container[@controlname='ClientArea']/container[@controlname='frame2']/checkbox[@controlname='cbBer3']", "", 30000, null, "97888217-7f04-4cc9-96d5-6c1f999e1fed");
+                _cbber4Info = new RepoItemInfo(this, "CbBer4", "container[@controlname='ClientArea']/container[@controlname='frame2']/checkbox[@controlname='cbBer4']", "", 30000, null, "2abf8b9b-aeda-435f-bd1d-86ed92f4a4bb");
             }
 
             /// <summary>
@@ -384,6 +394,126 @@ namespace N_LISTEN_BULI_002
                 get
                 {
                     return _textbisInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CbBereich item.
+            /// </summary>
+            [RepositoryItem("a8061ec7-883a-4731-9c30-9b8a151673da")]
+            public virtual Ranorex.CheckBox CbBereich
+            {
+                get
+                {
+                    return _cbbereichInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CbBereich item info.
+            /// </summary>
+            [RepositoryItemInfo("a8061ec7-883a-4731-9c30-9b8a151673da")]
+            public virtual RepoItemInfo CbBereichInfo
+            {
+                get
+                {
+                    return _cbbereichInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CbBer1 item.
+            /// </summary>
+            [RepositoryItem("9e18a424-f815-4b74-92f6-b4e8bdb87f67")]
+            public virtual Ranorex.CheckBox CbBer1
+            {
+                get
+                {
+                    return _cbber1Info.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CbBer1 item info.
+            /// </summary>
+            [RepositoryItemInfo("9e18a424-f815-4b74-92f6-b4e8bdb87f67")]
+            public virtual RepoItemInfo CbBer1Info
+            {
+                get
+                {
+                    return _cbber1Info;
+                }
+            }
+
+            /// <summary>
+            /// The CbBer2 item.
+            /// </summary>
+            [RepositoryItem("83cf7e4c-6aaa-4ce4-9b57-bd6610a8d95d")]
+            public virtual Ranorex.CheckBox CbBer2
+            {
+                get
+                {
+                    return _cbber2Info.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CbBer2 item info.
+            /// </summary>
+            [RepositoryItemInfo("83cf7e4c-6aaa-4ce4-9b57-bd6610a8d95d")]
+            public virtual RepoItemInfo CbBer2Info
+            {
+                get
+                {
+                    return _cbber2Info;
+                }
+            }
+
+            /// <summary>
+            /// The CbBer3 item.
+            /// </summary>
+            [RepositoryItem("97888217-7f04-4cc9-96d5-6c1f999e1fed")]
+            public virtual Ranorex.CheckBox CbBer3
+            {
+                get
+                {
+                    return _cbber3Info.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CbBer3 item info.
+            /// </summary>
+            [RepositoryItemInfo("97888217-7f04-4cc9-96d5-6c1f999e1fed")]
+            public virtual RepoItemInfo CbBer3Info
+            {
+                get
+                {
+                    return _cbber3Info;
+                }
+            }
+
+            /// <summary>
+            /// The CbBer4 item.
+            /// </summary>
+            [RepositoryItem("2abf8b9b-aeda-435f-bd1d-86ed92f4a4bb")]
+            public virtual Ranorex.CheckBox CbBer4
+            {
+                get
+                {
+                    return _cbber4Info.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CbBer4 item info.
+            /// </summary>
+            [RepositoryItemInfo("2abf8b9b-aeda-435f-bd1d-86ed92f4a4bb")]
+            public virtual RepoItemInfo CbBer4Info
+            {
+                get
+                {
+                    return _cbber4Info;
                 }
             }
 
