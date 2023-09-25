@@ -131,14 +131,14 @@ namespace B_ZAHL_007.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'FrmZlvsAEndern.ChildTableWindow.Row7Column0' at Center.", repo.FrmZlvsAEndern.ChildTableWindow.Row7Column0Info, new RecordItemIndex(7));
             repo.FrmZlvsAEndern.ChildTableWindow.Row7Column0.Click(System.Windows.Forms.MouseButtons.Right);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'BZAHL.BankbelegErstellen'", repo.BZAHL.BankbelegErstellenInfo, new ActionTimeout(120000), new RecordItemIndex(8));
-            repo.BZAHL.BankbelegErstellenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'BZAHL.BankbelegErstellen'", repo.BZAHL.BankbelegErstellenInfo, new ActionTimeout(180000), new RecordItemIndex(8));
+            repo.BZAHL.BankbelegErstellenInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BZAHL.BankbelegErstellen' at Center.", repo.BZAHL.BankbelegErstellenInfo, new RecordItemIndex(9));
             repo.BZAHL.BankbelegErstellen.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBankbeleg.Bankbeleg'", repo.FrmBankbeleg.BankbelegInfo, new ActionTimeout(120000), new RecordItemIndex(10));
-            repo.FrmBankbeleg.BankbelegInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'FrmBankbeleg.Bankbeleg'", repo.FrmBankbeleg.BankbelegInfo, new ActionTimeout(180000), new RecordItemIndex(10));
+            repo.FrmBankbeleg.BankbelegInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bankbeleg aus 5 markierten OPs') on item 'FrmBankbeleg.Bankbeleg'.", repo.FrmBankbeleg.BankbelegInfo, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.FrmBankbeleg.BankbelegInfo, "Text", "Bankbeleg aus 5 markierten OPs");
@@ -174,8 +174,8 @@ namespace B_ZAHL_007.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBankbeleg.PbCommonStart' at Center.", repo.FrmBankbeleg.PbCommonStartInfo, new RecordItemIndex(20));
             repo.FrmBankbeleg.PbCommonStart.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'UEberweisungsDatentraeger.UEberweisungsDatentraeger'", repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo, new ActionTimeout(120000), new RecordItemIndex(21));
-            repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'UEberweisungsDatentraeger.UEberweisungsDatentraeger'", repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo, new ActionTimeout(180000), new RecordItemIndex(21));
+            repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'c:\\temp\\nur_gesperrte_OPs.xml' with focus on 'UEberweisungsDatentraeger.Text1001'.", repo.UEberweisungsDatentraeger.Text1001Info, new RecordItemIndex(22));
             repo.UEberweisungsDatentraeger.Text1001.PressKeys("c:\\temp\\nur_gesperrte_OPs.xml");
@@ -205,8 +205,8 @@ namespace B_ZAHL_007.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(30));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBankbeleg.PbToolBarItemsNichtUebernommen'", repo.FrmBankbeleg.PbToolBarItemsNichtUebernommenInfo, new ActionTimeout(120000), new RecordItemIndex(31));
-            repo.FrmBankbeleg.PbToolBarItemsNichtUebernommenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'FrmBankbeleg.PbToolBarItemsNichtUebernommen'", repo.FrmBankbeleg.PbToolBarItemsNichtUebernommenInfo, new ActionTimeout(180000), new RecordItemIndex(31));
+            repo.FrmBankbeleg.PbToolBarItemsNichtUebernommenInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmBankbeleg.Bankbeleg'.", repo.FrmBankbeleg.BankbelegInfo, new RecordItemIndex(32));
             Keyboard.PrepareFocus(repo.FrmBankbeleg.Bankbeleg);
