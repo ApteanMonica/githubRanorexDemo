@@ -38,192 +38,126 @@ mode="Global">
 		name="file_selectergebnis_b_exsa_verbucht_Referenz">
 			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_002\B_ERBU_002_B_EXSA_verbucht_Referenz.txt
 		</var>
+		<var
+		id="81e7cf39-0c14-44ee-b6fb-447b97760317"
+		name="Programmversion">
+		</var>
+		<var
+		id="f1b5faa9-1102-44c4-910e-4528d0db1fb5"
+		name="Datenbank">
+		</var>
 	</variables>
 	<recorditems>
-		<separatoritem
-		enabled="False"
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ReadDBVersion"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
 		optional="False">
 			<comment>
-				alte Methoden mit apteanSQL.cs
-			</comment>
-			<bindings>
-			</bindings>
-		</separatoritem>
-		<userrecorditem
-		classname="ApteanSQL"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="ReadVersion"
-		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="True">
-			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<arguments
-			id="c846b99a-82cb-440e-9e7e-11bf02c0614f">
-				<argument
-				argname="dbFile"
-				id="f2f0994d-dc0f-44db-99cc-1f0463bf8693">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						C:\Testdaten\Allgemein\UserCode\datenbank.txt
-					</argvalue>
-				</argument>
-				<argument
-				argname="file"
-				id="bf9e294f-2177-4cdf-a28e-c573c0e62a2c">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						c:\temp\version_b_erbu_002_b_exsa_verbucht.txt
-					</argvalue>
-				</argument>
+			id="dca6a288-971d-4ba4-befc-c23c746fcb6e">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="ApteanSQL"
-		enabled="False"
+		classname="Aptean"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SQLStatement"
+		methodname="ReadProgrammVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="True">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Programmversion">
+				</binding>
 			</bindings>
 			<arguments
-			id="873c821d-1912-48dc-bb34-05291851f69e">
+			id="61858c66-b3c5-4e45-97ac-6ab13ec9c602">
 				<argument
-				argname="selectLine"
-				id="31a55c8b-2bcd-4a62-885d-1e82f90a9329">
+				argname="expectedFormat"
+				id="2425fd87-5844-4d48-a7cf-b64337ec77c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						select
-b_exsa.FIRM_NR,
-EXSA_KEYPOS,
-EXSA_BER_CD6,
-EXSA_BEKT_NR6,
-EXSA_BER_CD5,
-EXSA_BEKT_NR5,
-EXSA_BER_CD4,
-EXSA_BEKT_NR4,
-EXSA_BER_CD1,
-EXSA_BEKT_NR1,
-EXSA_BER_CD2,
-EXSA_BEKT_NR2,
-EXSA_BER_CD3,
-EXSA_BEKT_NR3,
-UST_CD,
-EXSA_ART,
-EXSA_KTONR,
-EXSA_SKONTOKZ,
-EXSA_SH,
-EXSA_BETRAG,
-EXSA_FWBETRAG,
-EXSA_MENGE,
-EXSA_USTBETRAG,
-EXSA_USTFWBETRAG,
-EXSA_USTMV,
-EXSA_USTSATZ,
-EXSA_TEXT1,
-EXSA_TEXT2,
-EXSA_TEXTCD,
-EXSA_BESTELLNR,
-EXSA_LIEFSNR,
-ANLA_NR,
-ANLA_POS,
-KTBE_NR,
-PVT_CD,
-EXSA_JAHR_BUBE_VON,
-EXSA_MON_BUBE_VON,
-EXSA_JAHR_BUBE_BIS,
-EXSA_MON_BUBE_BIS,
-EXSA_FELD1,
-EXSA_FELD2,
-EXSA_FELD3,
-EXSA_FELD4,
-EXSA_UID,
-EXSA_ARCHIVNR,
-EXSA_ARCHIVDOC1,
-EXSA_DTLEISTUNG,
-EXSA_MENGE2,
-EXSA_DTOPFAELL,
-EXSA_VNROPAUSGL
-from b_exsa, b_exop
-where b_exop.firm_nr = b_exsa.firm_nr
-AND b_exop.exop_keybel = b_exsa.exop_keybel
-AND b_exop.firm_nr = '100' 
-AND exop_belegnr BETWEEN '2200005' AND '2200009';
-					</argvalue>
-				</argument>
-				<argument
-				argname="dbFile"
-				id="8644b8a5-f959-4679-9312-d6451dfb8e4f">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						C:\Testdaten\Allgemein\UserCode\datenbank.txt
-					</argvalue>
-				</argument>
-				<argument
-				argname="file"
-				id="2a08e20e-6960-4298-984c-1202f090833f">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						C:\temp\B_ERBU_002_B_EXSA_verbucht_aktuell.txt
+						RELSP
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="460844ac-2819-4874-85c4-7becf2757293">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Programmversion">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 		<userrecorditem
-		classname="ApteanSQL"
-		enabled="False"
+		classname="Aptean"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="FileCompareEqual"
+		methodname="ReadProgrammVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="True">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Datenbank">
+				</binding>
 			</bindings>
 			<arguments
-			id="d33215fa-433e-4955-9a94-2c35e7022d45">
+			id="61858c66-b3c5-4e45-97ac-6ab13ec9c602">
 				<argument
-				argname="file1"
-				id="306488dc-b70e-4cb1-80dc-85eb96a507d4">
+				argname="expectedFormat"
+				id="2425fd87-5844-4d48-a7cf-b64337ec77c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_002\B_ERBU_002_B_EXSA_uebergeleitet_Referenz.txt
-					</argvalue>
-				</argument>
-				<argument
-				argname="file2"
-				id="d60b2958-8554-4d59-8247-8ebc76a2705a">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						C:\temp\B_ERBU_002_B_EXSA_uebergeleitet_aktuell.txt
+						DB
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="460844ac-2819-4874-85c4-7becf2757293">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Datenbank">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 		<separatoritem
 		enabled="True"
 		optional="True">
 			<comment>
-				neue Methoden mit aptean.cs ohne Variablen
+				aptean.cs ohne Variablen
 			</comment>
 			<bindings>
 			</bindings>
@@ -357,7 +291,7 @@ AND exop_belegnr BETWEEN '2200005' AND '2200009';
 		enabled="True"
 		optional="True">
 			<comment>
-				neue Methoden mit aptean.cs mit Variablen
+				aptean.cs mit Variablen
 			</comment>
 			<bindings>
 			</bindings>

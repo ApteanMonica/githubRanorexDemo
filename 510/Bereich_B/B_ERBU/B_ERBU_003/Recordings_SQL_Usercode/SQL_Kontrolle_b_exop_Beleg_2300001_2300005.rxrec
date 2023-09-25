@@ -38,262 +38,126 @@ mode="Global">
 		name="SQL_Select_B_EXOP">
 			select  in default value wird bei copy/paste abgeschnitten
 		</var>
+		<var
+		id="05daa1cc-5256-4f49-8848-c34ef83bc732"
+		name="Programmversion">
+		</var>
+		<var
+		id="778cf89d-bfd9-407c-b9f6-007d55538a8b"
+		name="Datenbank">
+		</var>
 	</variables>
 	<recorditems>
-		<separatoritem
-		enabled="False"
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ReadDBVersion"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
 		optional="False">
 			<comment>
-				alte Methoden mit apteanSQL.cs
-			</comment>
-			<bindings>
-			</bindings>
-		</separatoritem>
-		<userrecorditem
-		classname="ApteanSQL"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="ReadVersion"
-		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="True">
-			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<arguments
-			id="c846b99a-82cb-440e-9e7e-11bf02c0614f">
-				<argument
-				argname="dbFile"
-				id="f2f0994d-dc0f-44db-99cc-1f0463bf8693">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						C:\Testdaten\Allgemein\UserCode\datenbank.txt
-					</argvalue>
-				</argument>
-				<argument
-				argname="file"
-				id="bf9e294f-2177-4cdf-a28e-c573c0e62a2c">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						c:\temp\version_b_erbu_003_b_exop.txt
-					</argvalue>
-				</argument>
+			id="dca6a288-971d-4ba4-befc-c23c746fcb6e">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="ApteanSQL"
-		enabled="False"
+		classname="Aptean"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SQLStatement"
+		methodname="ReadProgrammVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="True">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Programmversion">
+				</binding>
 			</bindings>
 			<arguments
-			id="873c821d-1912-48dc-bb34-05291851f69e">
+			id="61858c66-b3c5-4e45-97ac-6ab13ec9c602">
 				<argument
-				argname="selectLine"
-				id="31a55c8b-2bcd-4a62-885d-1e82f90a9329">
+				argname="expectedFormat"
+				id="2425fd87-5844-4d48-a7cf-b64337ec77c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						select 
-FIRM_NR,
-ADR_NR,
-KLDV_NR,
-KLBK_NR,
-WRG_CD,
-KTO_NR,
-EXOP_STATUS,
-EXOP_ART,
-EXOP_KL,
-EXOP_JAHR,
-EXOP_PERIODE,
-EXOP_BELEGNR,
-EXOP_DTBELEG,
-EXOP_DTFREMDBELEG,
-EXOP_NRFREMDBELEG,
-EXOP_DTFAELLIG,
-EXOP_DTVALUTA,
-EXOP_TAGE1,
-EXOP_SKONTO1,
-EXOP_TAGE2,
-EXOP_SKONTO2,
-EXOP_TAGENETTO,
-EXOP_ZAHLART,
-EXOP_BETRAG,
-EXOP_FWBETRAG,
-EXOP_KURS,
-EXOP_RECHBETRAG,
-EXOP_ZAHLBETRAG,
-EXOP_SKONTOBASIS,
-EXOP_TEXT1,
-EXOP_TEXT2,
-EXOP_UEBERWTEXT,
-EXOP_REFBELEGNR,
-EXOP_BUSY,
-EXOP_MAHNSTUFE,
-EXOP_TEXTCD,
-EXOP_SELECT1,
-EXOP_SELECT2,
-EXOP_MAHNSPERRE,
-EXOP_ZAHLSPERRE,
-EXOP_DTEINHALT,
-EXOP_EHPROZ,
-EXOP_EHBETRAG,
-EXOP_FWEHBETRAG,
-EXOP_DTEINHALT2,
-EXOP_EHPROZ2,
-EXOP_EHBETRAG2,
-EXOP_FWEHBETRAG2,
-EXOP_BEZUG,
-EXOP_BEZUG2,
-EXOP_TEILRECHNR,
-EXOP_KZFIXTAGE,
-EXOP_MONAT1,
-EXOP_MONAT2,
-EXOP_MONATNETTO,
-EXOP_KZDIVERSE,
-EXOP_ADRESSE1,
-EXOP_ADRESSE2,
-EXOP_ADRESSE3,
-EXOP_ADRESSE4,
-EXOP_ADRESSE5,
-LAND_CD,
-PLZ_CD,
-EXOP_ORT,
-SPRA_CD,
-ANRD_CD,
-EXOP_NAME,
-EXOP_PERSONEN,
-EXOP_KZOK,
-EXOP_USEROK,
-EXOP_USERHERKUNFT,
-EXOP_MATPREIS,
-EXOP_UVAJAHR,
-EXOP_UVAMONAT,
-EXOP_UVATAG,
-EXOP_HERKUNFT,
-EXOP_SELECT3,
-EXOP_SELECT4,
-EXOP_ARCHIVDOC1,
-USER_CD,
-EXOP_KZEXOPA,
-FIRM_NR_RECH,
-EXOP_FELD1,
-EXOP_FELD2,
-EXOP_FELD3,
-EXOP_FELD4,
-EXOP_USERANLAG,
-EXOP_USERAENDG,
-EXOP_REFKEYBEL,
-EXOP_REFKEYPOS,
-EXOP_KZSKONTO,
-EXOP_SKBETRAG,
-EXOP_FWSKBETRAG,
-EXOP_ARCHIVNR,
-EXOP_ADR_RECHAD,
-EXOP_KLDV_RECHAD,
-SAMK_CD,
-EXOP_DTLEISTUNG,
-EXOP_DTMNSPBIS,
-RTK_NR,
-EXOP_KZAUSGL,
-EXOP_KZSTORNO,
-EXOP_STORNOGRUND,
-EXOP_KZZINSEN,
-EXOP_BELTYP,
-EXOP_ZNSBETRAG,
-EXOP_FWZNSBETRAG,
-MNV_NR,
-EXOP_DTZLSPBIS,
-ZART_CD,
-EXOP_KZRECHTSKR,
-ADR_NR_ZAHLUNG,
-KLBK_NR_ZAHLUNG,
-EXBK_NR,
-EXBP_NR,
-EXBO_NR,
-EXOP_RTKREF,
-RST_CD,
-EXOP_FELD01,
-EXOP_FELD02,
-EXOP_FELD03,
-EXOP_FELD04,
-EXOP_FELD05,
-EXOP_USERVWDG
-from b_exop where firm_nr = '100' and exop_belegnr BETWEEN '2300001' AND '2300005';
-					</argvalue>
-				</argument>
-				<argument
-				argname="dbFile"
-				id="8644b8a5-f959-4679-9312-d6451dfb8e4f">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						C:\Testdaten\Allgemein\UserCode\datenbank.txt
-					</argvalue>
-				</argument>
-				<argument
-				argname="file"
-				id="2a08e20e-6960-4298-984c-1202f090833f">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						C:\temp\B_ERBU_003_B_EXOP_aktuell.txt
+						RELSP
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="460844ac-2819-4874-85c4-7becf2757293">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Programmversion">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 		<userrecorditem
-		classname="ApteanSQL"
-		enabled="False"
+		classname="Aptean"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="FileCompareEqual"
+		methodname="ReadProgrammVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="True">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Datenbank">
+				</binding>
 			</bindings>
 			<arguments
-			id="d33215fa-433e-4955-9a94-2c35e7022d45">
+			id="61858c66-b3c5-4e45-97ac-6ab13ec9c602">
 				<argument
-				argname="file1"
-				id="306488dc-b70e-4cb1-80dc-85eb96a507d4">
+				argname="expectedFormat"
+				id="2425fd87-5844-4d48-a7cf-b64337ec77c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ERBU_003\B_ERBU_003_B_EXOP_Referenz.txt
-					</argvalue>
-				</argument>
-				<argument
-				argname="file2"
-				id="d60b2958-8554-4d59-8247-8ebc76a2705a">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						C:\temp\B_ERBU_003_B_EXOP_aktuell.txt
+						DB
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="460844ac-2819-4874-85c4-7becf2757293">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Datenbank">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 		<separatoritem
 		enabled="True"
 		optional="True">
 			<comment>
-				neue Methoden mit aptean.cs ohne Variablen
+				aptean.cs ohne Variablen
 			</comment>
 			<bindings>
 			</bindings>

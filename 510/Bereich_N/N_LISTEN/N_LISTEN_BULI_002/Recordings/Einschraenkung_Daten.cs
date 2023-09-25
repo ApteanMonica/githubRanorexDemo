@@ -127,36 +127,57 @@ namespace N_LISTEN_BULI_002.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.RbMonat' at Center.", repo.FrmBuchungsliste.RbMonatInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmBuchungsliste.CbBereich'.", repo.FrmBuchungsliste.CbBereichInfo, new RecordItemIndex(3));
+            repo.FrmBuchungsliste.CbBereich.Element.SetAttributeValue("Checked", "False");
+            
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmBuchungsliste.CbBer1'.", repo.FrmBuchungsliste.CbBer1Info, new RecordItemIndex(4));
+            repo.FrmBuchungsliste.CbBer1.Element.SetAttributeValue("Checked", "False");
+            
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmBuchungsliste.CbBer2'.", repo.FrmBuchungsliste.CbBer2Info, new RecordItemIndex(5));
+            repo.FrmBuchungsliste.CbBer2.Element.SetAttributeValue("Checked", "False");
+            
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmBuchungsliste.CbBer3'.", repo.FrmBuchungsliste.CbBer3Info, new RecordItemIndex(6));
+            repo.FrmBuchungsliste.CbBer3.Element.SetAttributeValue("Checked", "False");
+            
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmBuchungsliste.CbBer4'.", repo.FrmBuchungsliste.CbBer4Info, new RecordItemIndex(7));
+            repo.FrmBuchungsliste.CbBer4.Element.SetAttributeValue("Checked", "False");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.CbBereich' at Center.", repo.FrmBuchungsliste.CbBereichInfo, new RecordItemIndex(8));
+            repo.FrmBuchungsliste.CbBereich.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmBuchungsliste.CbBereich'.", repo.FrmBuchungsliste.CbBereichInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.CbBereichInfo, "Checked", "True");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.RbMonat' at Center.", repo.FrmBuchungsliste.RbMonatInfo, new RecordItemIndex(10));
             repo.FrmBuchungsliste.RbMonat.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.TextVon' at Center.", repo.FrmBuchungsliste.TextVonInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.TextVon' at Center.", repo.FrmBuchungsliste.TextVonInfo, new RecordItemIndex(11));
             repo.FrmBuchungsliste.TextVon.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBuchungsliste.TextVon' at Center.", repo.FrmBuchungsliste.TextVonInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBuchungsliste.TextVon' at Center.", repo.FrmBuchungsliste.TextVonInfo, new RecordItemIndex(12));
             repo.FrmBuchungsliste.TextVon.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'FrmBuchungsliste.TextVon'.", repo.FrmBuchungsliste.TextVonInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'FrmBuchungsliste.TextVon'.", repo.FrmBuchungsliste.TextVonInfo, new RecordItemIndex(13));
             Keyboard.PrepareFocus(repo.FrmBuchungsliste.TextVon);
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Monat_von' with focus on 'FrmBuchungsliste.TextVon'.", repo.FrmBuchungsliste.TextVonInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Monat_von' with focus on 'FrmBuchungsliste.TextVon'.", repo.FrmBuchungsliste.TextVonInfo, new RecordItemIndex(14));
             repo.FrmBuchungsliste.TextVon.PressKeys(Monat_von);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(15));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(16));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'FrmBuchungsliste.TextBis'.", repo.FrmBuchungsliste.TextBisInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'FrmBuchungsliste.TextBis'.", repo.FrmBuchungsliste.TextBisInfo, new RecordItemIndex(17));
             Keyboard.PrepareFocus(repo.FrmBuchungsliste.TextBis);
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Monat_bis' with focus on 'FrmBuchungsliste.TextBis'.", repo.FrmBuchungsliste.TextBisInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Monat_bis' with focus on 'FrmBuchungsliste.TextBis'.", repo.FrmBuchungsliste.TextBisInfo, new RecordItemIndex(18));
             repo.FrmBuchungsliste.TextBis.PressKeys(Monat_bis);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmBuchungsliste.TextBis'.", repo.FrmBuchungsliste.TextBisInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmBuchungsliste.TextBis'.", repo.FrmBuchungsliste.TextBisInfo, new RecordItemIndex(19));
             Keyboard.PrepareFocus(repo.FrmBuchungsliste.TextBis);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
