@@ -38,137 +38,126 @@ mode="Global">
 		name="file_selectergebnis_b_zlvs_Referenz">
 			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_ZLVS_Referenz.txt
 		</var>
+		<var
+		id="2e01576f-12f7-4d4d-b57d-a8d116fe8e6f"
+		name="Programmversion">
+		</var>
+		<var
+		id="5ae86979-941f-47de-a4c1-8e83d516664c"
+		name="Datenbank">
+		</var>
 	</variables>
 	<recorditems>
-		<separatoritem
-		enabled="False"
-		optional="True">
-			<comment>
-				alte Methoden mit apteanSQL.cs
-			</comment>
-			<bindings>
-			</bindings>
-		</separatoritem>
 		<userrecorditem
-		classname="ApteanSQL"
-		enabled="False"
+		classname="Aptean"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="ReadVersion"
+		methodname="ReadDBVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="True">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<arguments
-			id="c846b99a-82cb-440e-9e7e-11bf02c0614f">
-				<argument
-				argname="dbFile"
-				id="f2f0994d-dc0f-44db-99cc-1f0463bf8693">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						C:\Testdaten\Allgemein\UserCode\datenbank.txt
-					</argvalue>
-				</argument>
-				<argument
-				argname="file"
-				id="bf9e294f-2177-4cdf-a28e-c573c0e62a2c">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						c:\temp\version_b_zahlv_001_b_zlvs_vor_Verbuchung.txt
-					</argvalue>
-				</argument>
+			id="dca6a288-971d-4ba4-befc-c23c746fcb6e">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="ApteanSQL"
-		enabled="False"
+		classname="Aptean"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SQLStatement"
+		methodname="ReadProgrammVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="True">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Programmversion">
+				</binding>
 			</bindings>
 			<arguments
-			id="e437591e-8b53-40fe-b890-88f969cf85b5">
+			id="61858c66-b3c5-4e45-97ac-6ab13ec9c602">
 				<argument
-				argname="selectLine"
-				id="bf75028d-5647-4d99-9d84-edd4dc22697b">
+				argname="expectedFormat"
+				id="2425fd87-5844-4d48-a7cf-b64337ec77c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						select * from b_zlvs where firm_nr ='100' and zlvs_vorschlag = '1' and busa_keybel BETWEEN '112' AND '126';
-					</argvalue>
-				</argument>
-				<argument
-				argname="dbFile"
-				id="a88c375d-99f3-41b8-ae22-75d2946878e7">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						C:\Testdaten\Allgemein\UserCode\datenbank.txt
-					</argvalue>
-				</argument>
-				<argument
-				argname="file"
-				id="9d8063e2-b2c4-4071-a7ec-d0b9e34efc38">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						C:\temp\B_ZAHLV_001_B_ZLVS_aktuell.txt
+						RELSP
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="460844ac-2819-4874-85c4-7becf2757293">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Programmversion">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 		<userrecorditem
-		classname="ApteanSQL"
-		enabled="False"
+		classname="Aptean"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="FileCompareEqual"
+		methodname="ReadProgrammVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="True">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Datenbank">
+				</binding>
 			</bindings>
 			<arguments
-			id="f6931ea5-4bac-4166-8ba1-7f34b2bf29ac">
+			id="61858c66-b3c5-4e45-97ac-6ab13ec9c602">
 				<argument
-				argname="file1"
-				id="c150dc0d-b83b-437b-8910-8e48b0822a6b">
+				argname="expectedFormat"
+				id="2425fd87-5844-4d48-a7cf-b64337ec77c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_ZLVS_Referenz.txt
-					</argvalue>
-				</argument>
-				<argument
-				argname="file2"
-				id="ea380345-6f2a-4dc4-b9cd-26b940c8021e">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						C:\temp\B_ZAHLV_001_B_ZLVS_aktuell.txt
+						DB
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="460844ac-2819-4874-85c4-7becf2757293">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Datenbank">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 		<separatoritem
 		enabled="True"
 		optional="True">
 			<comment>
-				neue Methoden mit aptean.cs ohne Variablen
+				aptean.cs ohne Variablen
 			</comment>
 			<bindings>
 			</bindings>
@@ -247,7 +236,7 @@ mode="Global">
 		enabled="True"
 		optional="True">
 			<comment>
-				neue Methoden mit aptean.cs mit Variablen
+				aptean.cs mit Variablen
 			</comment>
 			<bindings>
 			</bindings>

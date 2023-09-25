@@ -38,244 +38,126 @@ mode="Global">
 		name="file_selectergebnis_b_busa_Referenz">
 			C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz.txt
 		</var>
+		<var
+		id="2dd11feb-f6aa-4623-b376-acef5a577fac"
+		name="Programmversion">
+		</var>
+		<var
+		id="abf53b46-fcbf-4f7f-89ba-04c560a462f7"
+		name="Datenbank">
+		</var>
 	</variables>
 	<recorditems>
-		<separatoritem
-		enabled="False"
-		optional="True">
-			<comment>
-				alte Methoden mit apteanSQL.cs
-			</comment>
-			<bindings>
-			</bindings>
-		</separatoritem>
 		<userrecorditem
-		classname="ApteanSQL"
-		enabled="False"
+		classname="Aptean"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="ReadVersion"
+		methodname="ReadDBVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="True">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<arguments
-			id="c846b99a-82cb-440e-9e7e-11bf02c0614f">
-				<argument
-				argname="dbFile"
-				id="f2f0994d-dc0f-44db-99cc-1f0463bf8693">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						C:\Testdaten\Allgemein\UserCode\datenbank.txt
-					</argvalue>
-				</argument>
-				<argument
-				argname="file"
-				id="bf9e294f-2177-4cdf-a28e-c573c0e62a2c">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						c:\temp\version_b_zahlv_001_b_busa_verbucht.txt
-					</argvalue>
-				</argument>
+			id="dca6a288-971d-4ba4-befc-c23c746fcb6e">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="ApteanSQL"
-		enabled="False"
+		classname="Aptean"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SQLStatement"
+		methodname="ReadProgrammVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="True">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Programmversion">
+				</binding>
 			</bindings>
 			<arguments
-			id="4d5cbfd5-27a6-4ef0-827d-2904a84cf91e">
+			id="61858c66-b3c5-4e45-97ac-6ab13ec9c602">
 				<argument
-				argname="selectLine"
-				id="4431a0c1-5149-40b6-aedd-3b5e1128543b">
+				argname="expectedFormat"
+				id="2425fd87-5844-4d48-a7cf-b64337ec77c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						select  
-BUSA_USERAENDG,
-FIRM_NR,
-BUSA_KEYPOS,
-KTO_NR,
-GKTO_NR,
-UST_CD,
-WRG_CD,
-BUSA_BUSY,
-ADR_NR,
-BUSA_STATUS,
-BUSA_JOURNAL,
-BUSA_JAHR,
-BUSA_PERIODE,
-BUSA_DTBELEG,
-BUSA_BELEGNR,
-BUSA_KL,
-BUSA_SH,
-BUSA_ART,
-BUSA_BERKZ,
-BUSA_SKONTOKZ,
-BUSA_BETRAG,
-BUSA_FWBETRAG,
-BUSA_KURS,
-BUSA_MENGE,
-BUSA_USTMV,
-BUSA_USTSATZ,
-BUSA_USTAUFT,
-BUSA_USTBETRAG,
-BUSA_USTFWBETRAG,
-BUSA_CD1,
-BUSA_CD2,
-BUSA_CD3,
-BUSA_VERARB1,
-BUSA_VERARB2,
-BUSA_VERARB3,
-BUSA_OP,
-BUSA_NROPAUSGL,
-BUSA_DTOPAUSGL,
-BUSA_DTOPFAELL,
-BUSA_ANZAHLUNG,
-BUSA_REFART,
-BUSA_REFBELEGNR,
-BUSA_REFKEYBEL,
-BUSA_REFKEYPOS,
-BUSA_UVAJAHR,
-BUSA_UVAMONAT,
-BUSA_UVATAG,
-BUSA_USTSTATUS,
-BUSA_TYP,
-UST_UVACD,
-BUSA_BEZUG,
-BUSA_BEZUG2,
-BUSA_TEXT,
-BUSA_TEXT2,
-BUSA_BESTELLNR,
-BUSA_LIEFSNR,
-ANLA_NR,
-ANLA_POS,
-BUSA_USTAUFTBETRAG,
-BUSA_NRFREMDBELEG,
-BUSA_DTFREMDBELEG,
-BUSA_USERJOURNAL,
-KTBE_NR,
-BUSA_USERHERKUNFT,
-WEOP_BELEGNR,
-WEOP_STATUS,
-BUSA_ARCHIVNR,
-BUSA_UID,
-BUSA_ARCHIVDOC1,
-BUSA_DTSTOLOE,
-BUSA_USERSTOLOE,
-BUSA_PROGSTOLOE,
-BUSA_PERI_BUBE_VON,
-BUSA_PERI_BUBE_BIS,
-BUSA_FELD1,
-BUSA_FELD2,
-BUSA_JAHR_BUBE_VON,
-BUSA_FELD3,
-BUSA_JAHR_BUBE_BIS,
-BUSA_FELD4,
-PVT_CD,
-BUSA_HERKUNFT,
-BUSA_DTHERKUNFT,
-BUSA_SKBETRAG,
-BUSA_SKUSTBETRAG,
-BUSA_SKFWBETRAG,
-BUSA_SKFWUSTBETRAG,
-LAND_CD_ONACE,
-BUSA_SAOPKZEB,
-BUSA_DTLEISTUNG,
-BUSA_USEREXOP,
-BUSA_DTABGLEICH,
-BUSA_KZSTORNO,
-BUSA_STORNOGRUND,
-BUSA_STOKEYBEL,
-BUSA_STOKEYPOS,
-BUSA_KZKLEINRG,
-BUSA_VSECODE,
-BUSA_VSESUBCODE,
-BUSA_MENGE2,
-BUSA_KEYBEL_STORNO,
-BUSA_KZBN,
-BUSA_PMTINFID,
-RST_CD,
-BUSA_SORT_PK,
-BUSA_KEYPOS_SKT
-from b_busa where firm_nr = '100' and busa_belegnr = '1001';
-					</argvalue>
-				</argument>
-				<argument
-				argname="dbFile"
-				id="d89eb6fe-cf81-4172-843c-33398d12e8e9">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						C:\Testdaten\Allgemein\UserCode\datenbank.txt
-					</argvalue>
-				</argument>
-				<argument
-				argname="file"
-				id="69f4d073-249e-4011-8f3e-5502ed95338d">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						C:\temp\B_ZAHLV_001_B_BUSA_aktuell.txt
+						RELSP
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="460844ac-2819-4874-85c4-7becf2757293">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Programmversion">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 		<userrecorditem
-		classname="ApteanSQL"
-		enabled="False"
+		classname="Aptean"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="FileCompareContains"
+		methodname="ReadProgrammVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="True">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Datenbank">
+				</binding>
 			</bindings>
 			<arguments
-			id="cdba2286-3092-4ab7-896d-5b9c50b7bfd6">
+			id="61858c66-b3c5-4e45-97ac-6ab13ec9c602">
 				<argument
-				argname="file1"
-				id="200c9ccc-0557-49f1-9ac4-dfc32ef26697">
+				argname="expectedFormat"
+				id="2425fd87-5844-4d48-a7cf-b64337ec77c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUSA_Referenz.txt
-					</argvalue>
-				</argument>
-				<argument
-				argname="file2"
-				id="8b0c5cbf-8dd9-4354-bef7-63a709f82096">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						C:\temp\B_ZAHLV_001_B_BUSA_aktuell.txt
+						DB
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="460844ac-2819-4874-85c4-7becf2757293">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Datenbank">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 		<separatoritem
 		enabled="True"
 		optional="True">
 			<comment>
-				neue Methoden mit aptean.cs ohne Variablen
+				aptean.cs ohne Variablen
 			</comment>
 			<bindings>
 			</bindings>
@@ -461,7 +343,7 @@ from b_busa where firm_nr = '100' and busa_belegnr = '1001';
 		enabled="True"
 		optional="True">
 			<comment>
-				neue Methoden mit aptean.cs mit Variablen
+				aptean.cs mit Variablen
 			</comment>
 			<bindings>
 			</bindings>
