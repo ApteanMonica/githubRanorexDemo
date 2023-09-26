@@ -112,8 +112,8 @@ jobs:
                 pipeline <a href="https://dev.azure.com/ApteanDACH/RS2/_build/results?buildId=$(Build.BuildId)&view=artifacts&pathAsName=false&type=publishedArtifacts"> link </a>
       BodyAsHtml: true
       SmtpServer: 'smtp.office365.com'
-      AddAttachment: true
-      Attachment: '$(Build.ArtifactStagingDirectory)/drop/reports.zip'
+      AddAttachment: false
+      Attachment: ''
       SmtpUsername: 'RSautomation@aptean.com'
       SmtpPassword: '$(SMTP_UserPassword)'
       UseSSL: true      
