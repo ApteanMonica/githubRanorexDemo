@@ -38,7 +38,7 @@
 			</testmodule>
 			<testmodule
 			id="0cf89ac8-7411-48da-bb1d-1c521ccfe2d1"
-			name="Pruefung_Dialoge"
+			name="Pruefung_Dialoge_alt"
 			ref="358790d0-4e14-46fe-828e-be724e2022a1"
 			type="Recording">
 				<description>
@@ -243,6 +243,30 @@
 				<description>
 					<![CDATA[Inhalt 510 und 511 gleich, aber andere Reihenfolge (in 511 kommt exop 32 vor exop 30)]]>
 				</description>
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="37683803-0fd1-47ba-82dd-83ff1e4ad21e"
+			name="Pruefung_Dialoge_NEU"
+			ref="f039a1c9-cc8a-49bb-9778-408f8e7140a7"
+			type="Recording">
+				<description>
+					<![CDATA[IN ARBEIT - Workaround ausbauen, neue Variablen für lange Belegnummern verwenden]]>
+				</description>
+				<databinding>
+					<var
+					dataname="LF_01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="221d8dd0-2b01-46ef-a02d-626a05e5bb77"
+					variablename="LF_01">
+					</var>
+					<var
+					dataname="LF_02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="70ada442-98fe-4fe7-ae05-31782c3a1c72"
+					variablename="LF_02">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="452bfe11-a84b-4803-bd19-94fac97f9f55"
@@ -736,6 +760,74 @@
 					name="Inhalt_Buchungsdatum_Zeile21"
 					value="">
 					</param>
+					<param
+					name="ER01_LF01"
+					value="ER01_B_EXOPV_005">
+					</param>
+					<param
+					name="ER02_LF02"
+					value="ER02_B_EXOPV_005">
+					</param>
+					<param
+					name="ER03_LF01"
+					value="ER03_B_EXOPV_005">
+					</param>
+					<param
+					name="ER03_LF02"
+					value="ER03_B_EXOPV_005">
+					</param>
+					<param
+					name="ER05_LF02"
+					value="ER05_B_EXOPV_005">
+					</param>
+					<param
+					name="ER04a_LF01"
+					value="ER04_B_EXOPV_005">
+					</param>
+					<param
+					name="ER04b_LF01"
+					value="ER04_B_EXOPV_005">
+					</param>
+					<param
+					name="FB01_LF01"
+					value="FB01_B_EXOPV_005">
+					</param>
+					<param
+					name="FB02_LF01"
+					value="FB02_B_EXOPV_005">
+					</param>
+					<param
+					name="FB02_LF02"
+					value="FB02_B_EXOPV_005">
+					</param>
+					<param
+					name="FB03_LF02"
+					value="FB03_B_EXOPV_005">
+					</param>
+					<param
+					name="FB04a_LF01"
+					value="FB04_B_EXOPV_005">
+					</param>
+					<param
+					name="FB04b_LF01"
+					value="FB04_B_EXOPV_005">
+					</param>
+					<param
+					name="FB05_LF01"
+					value="FB05_B_EXOPV_005">
+					</param>
+					<param
+					name="FB05_LF02"
+					value="FB05_B_EXOPV_005">
+					</param>
+					<param
+					name="ER03_LF02_NEU"
+					value="ER03_B_EXOPV_005_NEU">
+					</param>
+					<param
+					name="FB03_LF02_NEU"
+					value="FB03_B_EXOPV_005">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -776,7 +868,7 @@
 			</teardown>
 			<testmodule
 			id="ae6aeab0-2b89-4da8-a804-27f19ef95543"
-			name="Verbuchung_dopp_Beleg_L_Dialoge"
+			name="Verbuchung_Dialoge_alt"
 			ref="f8b28fa4-646a-42df-a9d5-4e45f56b6632"
 			type="Recording">
 				<description>
@@ -799,7 +891,7 @@
 			</testmodule>
 			<testmodule
 			id="b162d7fa-091f-4249-b8fe-d537719c9cc8"
-			name="Verbuchung_dopp_Beleg_L_Laden_Pfad_Verbuchen_aufrufen"
+			name="Verbuchung_Laden_Pfad_Verbuchen_aufrufen"
 			ref="ab3c19d4-f9d2-4921-a2c0-6d1f601a1e86"
 			type="Recording">
 				<databinding>
@@ -814,6 +906,30 @@
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="b5bd3e66-5b63-4d25-8a69-a4177fa8e537"
 					variablename="Fehlerprotokoll_Verbuchung">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="b1c619b5-05d0-4d64-ad9b-4aca6e029b93"
+			name="Verbuchung_Dialoge_NEU"
+			ref="b2534372-fcdf-4b62-a797-324895c85ddf"
+			type="Recording">
+				<description>
+					<![CDATA[IN ARBEIT - Workaround ausbauen, neue Variablen für lange Belegnummern verwenden]]>
+				</description>
+				<databinding>
+					<var
+					dataname="LF_01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="7f7d5e1e-b961-46f9-8629-45d7d3cdd791"
+					variablename="LF_01">
+					</var>
+					<var
+					dataname="LF_02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="d19cfea4-8b15-4e86-b81a-3b445291080e"
+					variablename="LF_02">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1136,7 +1252,11 @@
 						</testmodule>
 						<testmodule
 						id="0cf89ac8-7411-48da-bb1d-1c521ccfe2d1"
-						name="Pruefung_Dialoge">
+						name="Pruefung_Dialoge_alt">
+						</testmodule>
+						<testmodule
+						id="37683803-0fd1-47ba-82dd-83ff1e4ad21e"
+						name="Pruefung_Dialoge_NEU">
 						</testmodule>
 						<testmodule
 						id="be64b191-26b0-436d-a379-41d0577b8a72"
@@ -1196,11 +1316,15 @@
 						</testmodule>
 						<testmodule
 						id="b162d7fa-091f-4249-b8fe-d537719c9cc8"
-						name="Verbuchung_dopp_Beleg_L_Laden_Pfad_Verbuchen_aufrufen">
+						name="Verbuchung_Laden_Pfad_Verbuchen_aufrufen">
 						</testmodule>
 						<testmodule
 						id="ae6aeab0-2b89-4da8-a804-27f19ef95543"
-						name="Verbuchung_dopp_Beleg_L_Dialoge">
+						name="Verbuchung_Dialoge_alt">
+						</testmodule>
+						<testmodule
+						id="b1c619b5-05d0-4d64-ad9b-4aca6e029b93"
+						name="Verbuchung_Dialoge_NEU">
 						</testmodule>
 						<testmodule
 						id="9b9512ab-a325-4053-b7ac-a9844c0eb031"

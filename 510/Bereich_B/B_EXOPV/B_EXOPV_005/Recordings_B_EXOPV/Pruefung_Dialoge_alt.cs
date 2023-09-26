@@ -24,22 +24,22 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Pruefung_Dialoge recording.
+    ///The Pruefung_Dialoge_alt recording.
     /// </summary>
     [TestModule("358790d0-4e14-46fe-828e-be724e2022a1", ModuleType.Recording, 1)]
-    public partial class Pruefung_Dialoge : ITestModule
+    public partial class Pruefung_Dialoge_alt : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_005.B_EXOPV_005Repository repository.
         /// </summary>
         public static global::B_EXOPV_005.B_EXOPV_005Repository repo = global::B_EXOPV_005.B_EXOPV_005Repository.Instance;
 
-        static Pruefung_Dialoge instance = new Pruefung_Dialoge();
+        static Pruefung_Dialoge_alt instance = new Pruefung_Dialoge_alt();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Pruefung_Dialoge()
+        public Pruefung_Dialoge_alt()
         {
             LF_01 = "303201";
             LF_02 = "303202";
@@ -48,7 +48,7 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Pruefung_Dialoge Instance
+        public static Pruefung_Dialoge_alt Instance
         {
             get { return instance; }
         }

@@ -24,22 +24,22 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verbuchung_dopp_Beleg_L_Laden_Pfad_Verbuchen_aufrufen recording.
+    ///The Verbuchung_Laden_Pfad_Verbuchen_aufrufen recording.
     /// </summary>
     [TestModule("ab3c19d4-f9d2-4921-a2c0-6d1f601a1e86", ModuleType.Recording, 1)]
-    public partial class Verbuchung_dopp_Beleg_L_Laden_Pfad_Verbuchen_aufrufen : ITestModule
+    public partial class Verbuchung_Laden_Pfad_Verbuchen_aufrufen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_005.B_EXOPV_005Repository repository.
         /// </summary>
         public static global::B_EXOPV_005.B_EXOPV_005Repository repo = global::B_EXOPV_005.B_EXOPV_005Repository.Instance;
 
-        static Verbuchung_dopp_Beleg_L_Laden_Pfad_Verbuchen_aufrufen instance = new Verbuchung_dopp_Beleg_L_Laden_Pfad_Verbuchen_aufrufen();
+        static Verbuchung_Laden_Pfad_Verbuchen_aufrufen instance = new Verbuchung_Laden_Pfad_Verbuchen_aufrufen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verbuchung_dopp_Beleg_L_Laden_Pfad_Verbuchen_aufrufen()
+        public Verbuchung_Laden_Pfad_Verbuchen_aufrufen()
         {
             Fehlerprotokoll_Verbuchung = "c:\\temp\\Fehlerprotokoll_b_exopv_005_verbuch.txt";
         }
@@ -47,7 +47,7 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verbuchung_dopp_Beleg_L_Laden_Pfad_Verbuchen_aufrufen Instance
+        public static Verbuchung_Laden_Pfad_Verbuchen_aufrufen Instance
         {
             get { return instance; }
         }

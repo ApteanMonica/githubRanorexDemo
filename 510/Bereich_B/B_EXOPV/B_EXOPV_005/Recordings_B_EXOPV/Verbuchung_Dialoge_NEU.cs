@@ -24,22 +24,22 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verbuchung_dopp_Beleg_L_Dialoge recording.
+    ///The Verbuchung_Dialoge_NEU recording.
     /// </summary>
-    [TestModule("f8b28fa4-646a-42df-a9d5-4e45f56b6632", ModuleType.Recording, 1)]
-    public partial class Verbuchung_dopp_Beleg_L_Dialoge : ITestModule
+    [TestModule("b2534372-fcdf-4b62-a797-324895c85ddf", ModuleType.Recording, 1)]
+    public partial class Verbuchung_Dialoge_NEU : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_005.B_EXOPV_005Repository repository.
         /// </summary>
         public static global::B_EXOPV_005.B_EXOPV_005Repository repo = global::B_EXOPV_005.B_EXOPV_005Repository.Instance;
 
-        static Verbuchung_dopp_Beleg_L_Dialoge instance = new Verbuchung_dopp_Beleg_L_Dialoge();
+        static Verbuchung_Dialoge_NEU instance = new Verbuchung_Dialoge_NEU();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verbuchung_dopp_Beleg_L_Dialoge()
+        public Verbuchung_Dialoge_NEU()
         {
             LF_01 = "303201";
             LF_02 = "303202";
@@ -48,7 +48,7 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verbuchung_dopp_Beleg_L_Dialoge Instance
+        public static Verbuchung_Dialoge_NEU Instance
         {
             get { return instance; }
         }
@@ -60,7 +60,7 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
         /// <summary>
         /// Gets or sets the value of variable LF_01.
         /// </summary>
-        [TestVariable("e277e4e7-f0dc-435e-8a22-a387a482d1df")]
+        [TestVariable("7f7d5e1e-b961-46f9-8629-45d7d3cdd791")]
         public string LF_01
         {
             get { return _LF_01; }
@@ -72,7 +72,7 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
         /// <summary>
         /// Gets or sets the value of variable LF_02.
         /// </summary>
-        [TestVariable("ec7e78a6-458e-4462-90ad-2fab6730d245")]
+        [TestVariable("d19cfea4-8b15-4e86-b81a-3b445291080e")]
         public string LF_02
         {
             get { return _LF_02; }

@@ -395,17 +395,29 @@
       <UserCode>true</UserCode>
       <id>e6b6382f-5f45-4f77-87eb-704391fc4c1d</id>
     </Compile>
-    <Compile Include="Recordings_B_EXOPV\Pruefung_Dialoge.cs">
+    <Compile Include="Recordings_B_EXOPV\Pruefung_Dialoge_alt.cs">
       <BoundTo>fbabb056-4050-4499-be77-2b25540209ed</BoundTo>
-      <DependentUpon>Pruefung_Dialoge.rxrec</DependentUpon>
+      <DependentUpon>Pruefung_Dialoge_alt.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>032bef0a-bea4-4888-bd59-67ef576e3926</id>
     </Compile>
-    <Compile Include="Recordings_B_EXOPV\Pruefung_Dialoge.UserCode.cs">
+    <Compile Include="Recordings_B_EXOPV\Pruefung_Dialoge_alt.UserCode.cs">
       <BoundTo>fbabb056-4050-4499-be77-2b25540209ed</BoundTo>
-      <DependentUpon>Pruefung_Dialoge.rxrec</DependentUpon>
+      <DependentUpon>Pruefung_Dialoge_alt.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>646b48f3-fa68-40ba-b02e-58f0349d359f</id>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Pruefung_Dialoge_NEU.cs">
+      <DependentUpon>Pruefung_Dialoge_NEU.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>45dd4c62-a44b-4356-af9b-d6c0c264c6d1</id>
+      <BoundTo>dd945004-8cec-4ce2-84a8-05bde999d690</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Pruefung_Dialoge_NEU.UserCode.cs">
+      <DependentUpon>Pruefung_Dialoge_NEU.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>569c17a3-017d-47dd-9fa3-392de0704c6a</id>
+      <BoundTo>dd945004-8cec-4ce2-84a8-05bde999d690</BoundTo>
     </Compile>
     <Compile Include="Recordings_B_EXOPV\Pruefung_Pfad_Pruefen_aufrufen.cs">
       <DependentUpon>Pruefung_Pfad_Pruefen_aufrufen.rxrec</DependentUpon>
@@ -467,26 +479,38 @@
       <UserCode>true</UserCode>
       <id>21837aa1-efa1-43d4-90ca-8a62089e53f7</id>
     </Compile>
-    <Compile Include="Recordings_B_EXOPV\Verbuchung_dopp_Beleg_L_Dialoge.cs">
-      <DependentUpon>Verbuchung_dopp_Beleg_L_Dialoge.rxrec</DependentUpon>
+    <Compile Include="Recordings_B_EXOPV\Verbuchung_Dialoge_alt.cs">
+      <DependentUpon>Verbuchung_Dialoge_alt.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>7c106f81-41ba-4ab8-98dc-d583bf3ff67c</id>
       <BoundTo>6b681556-0bdd-499b-bf97-bee36c364ef4</BoundTo>
     </Compile>
-    <Compile Include="Recordings_B_EXOPV\Verbuchung_dopp_Beleg_L_Dialoge.UserCode.cs">
-      <DependentUpon>Verbuchung_dopp_Beleg_L_Dialoge.rxrec</DependentUpon>
+    <Compile Include="Recordings_B_EXOPV\Verbuchung_Dialoge_alt.UserCode.cs">
+      <DependentUpon>Verbuchung_Dialoge_alt.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>9371d8c3-93df-4900-b95e-f3f0d81104e7</id>
       <BoundTo>6b681556-0bdd-499b-bf97-bee36c364ef4</BoundTo>
     </Compile>
-    <Compile Include="Recordings_B_EXOPV\Verbuchung_dopp_Beleg_L_Laden_Pfad_Verbuchen_aufrufen.cs">
-      <DependentUpon>Verbuchung_dopp_Beleg_L_Laden_Pfad_Verbuchen_aufrufen.rxrec</DependentUpon>
+    <Compile Include="Recordings_B_EXOPV\Verbuchung_Dialoge_NEU.cs">
+      <DependentUpon>Verbuchung_Dialoge_NEU.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>86fb0c61-b387-4183-8183-6646390723e3</id>
+      <BoundTo>9b426258-678c-44f1-8676-56c58b674e4d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Verbuchung_Dialoge_NEU.UserCode.cs">
+      <DependentUpon>Verbuchung_Dialoge_NEU.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c20574c6-19d4-45ee-88e8-aea8c89e6722</id>
+      <BoundTo>9b426258-678c-44f1-8676-56c58b674e4d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_B_EXOPV\Verbuchung_Laden_Pfad_Verbuchen_aufrufen.cs">
+      <DependentUpon>Verbuchung_Laden_Pfad_Verbuchen_aufrufen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>10d72c5b-e9ec-4b21-bb18-f5e5067cf3af</id>
       <BoundTo>4d21c9b0-3974-4188-9df6-bce8e1395e03</BoundTo>
     </Compile>
-    <Compile Include="Recordings_B_EXOPV\Verbuchung_dopp_Beleg_L_Laden_Pfad_Verbuchen_aufrufen.UserCode.cs">
-      <DependentUpon>Verbuchung_dopp_Beleg_L_Laden_Pfad_Verbuchen_aufrufen.rxrec</DependentUpon>
+    <Compile Include="Recordings_B_EXOPV\Verbuchung_Laden_Pfad_Verbuchen_aufrufen.UserCode.cs">
+      <DependentUpon>Verbuchung_Laden_Pfad_Verbuchen_aufrufen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>a9e54c95-afc4-4131-9070-66dacee52484</id>
       <BoundTo>4d21c9b0-3974-4188-9df6-bce8e1395e03</BoundTo>
@@ -641,10 +665,15 @@
       <id>1c3faa28-29c2-46a0-8c18-b9fc8811befd</id>
       <recordtableid>eda0d909-875e-436f-8396-b2160898b5de</recordtableid>
     </None>
-    <None Include="Recordings_B_EXOPV\Pruefung_Dialoge.rxrec">
+    <None Include="Recordings_B_EXOPV\Pruefung_Dialoge_alt.rxrec">
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
       <id>fbabb056-4050-4499-be77-2b25540209ed</id>
       <recordtableid>358790d0-4e14-46fe-828e-be724e2022a1</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPV\Pruefung_Dialoge_NEU.rxrec">
+      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+      <id>dd945004-8cec-4ce2-84a8-05bde999d690</id>
+      <recordtableid>f039a1c9-cc8a-49bb-9778-408f8e7140a7</recordtableid>
     </None>
     <None Include="Recordings_B_EXOPV\Pruefung_Pfad_Pruefen_aufrufen.rxrec">
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
@@ -671,12 +700,17 @@
       <id>613f9ceb-8c71-4157-a66b-964157a2d9ba</id>
       <recordtableid>be5e1006-7d6d-488e-bdd4-272252b831ee</recordtableid>
     </None>
-    <None Include="Recordings_B_EXOPV\Verbuchung_dopp_Beleg_L_Dialoge.rxrec">
+    <None Include="Recordings_B_EXOPV\Verbuchung_Dialoge_alt.rxrec">
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
       <id>6b681556-0bdd-499b-bf97-bee36c364ef4</id>
       <recordtableid>f8b28fa4-646a-42df-a9d5-4e45f56b6632</recordtableid>
     </None>
-    <None Include="Recordings_B_EXOPV\Verbuchung_dopp_Beleg_L_Laden_Pfad_Verbuchen_aufrufen.rxrec">
+    <None Include="Recordings_B_EXOPV\Verbuchung_Dialoge_NEU.rxrec">
+      <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
+      <id>9b426258-678c-44f1-8676-56c58b674e4d</id>
+      <recordtableid>b2534372-fcdf-4b62-a797-324895c85ddf</recordtableid>
+    </None>
+    <None Include="Recordings_B_EXOPV\Verbuchung_Laden_Pfad_Verbuchen_aufrufen.rxrec">
       <BoundTo>97d0b921-e07a-415f-9aea-9d2b33111f2e</BoundTo>
       <id>4d21c9b0-3974-4188-9df6-bce8e1395e03</id>
       <recordtableid>ab3c19d4-f9d2-4921-a2c0-6d1f601a1e86</recordtableid>

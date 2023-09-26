@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_EXOPV_005.Recordings_B_EXOPV
 {
-    public partial class Pruefung_Dialoge
+    public partial class Verbuchung_Dialoge_NEU
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
