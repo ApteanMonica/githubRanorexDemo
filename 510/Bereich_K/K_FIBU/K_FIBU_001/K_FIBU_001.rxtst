@@ -2,44 +2,56 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
-			<testmodule
-			id="0144a8c0-3875-4788-ade6-e8a06220d8b9"
-			name="CloseAUT"
-			ref="9337b7c2-d32c-40ae-bd5f-4f6ecd5bf943"
-			type="Recording">
-			</testmodule>
+			<setup
+			id="02ad5593-b7e5-48cb-bdf3-3102fa18fa67"
+			name="setup">
+			</setup>
 			<testmodule
 			enabled="False"
-			id="04f2d545-3e60-4a09-add8-9d628e08f377"
-			name="User_RSX_pruefen"
-			ref="fd4ddd92-4383-43eb-a5a5-f1b68f6dd44a"
+			id="0335c138-1889-41fa-997d-380119fd1aed"
+			name="Parameter_bearbeiten_laden"
+			ref="8597d1f2-561a-4d19-86fb-aa9d13b39b7c"
 			type="Recording">
-				<description>
-					<![CDATA[Prüfung User nicht unbedingt erforderlich; für Zeitoptimierung dzt. disabled]]>
-				</description>
 				<databinding>
 					<var
-					dataname="User_RSX"
+					dataname="Parameter"
 					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="2adbdd93-de51-4b34-b14d-384cc6a9c215"
-					variablename="User_RSX">
+					variableid="1e970a54-848b-4b53-9f77-8bb03e565ff0"
+					variablename="Parameter">
 					</var>
 				</databinding>
 			</testmodule>
 			<teardown
-			id="07e25145-de9a-45ac-b976-dcbae278f861"
+			id="0358b3d7-e5d9-4336-b452-682fdfed1e1e"
 			name="teardown">
 			</teardown>
+			<testmodule
+			enabled="False"
+			id="06c0fe3c-70eb-4f8e-9239-daedb59b1518"
+			name="YPAR_Parameter_auf_1_aendern"
+			ref="215c1069-b2fd-4259-b15e-481b5576ceff"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Parameter"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="fe4633d9-ddd3-45d6-8966-bdc6aa34612b"
+					variablename="Parameter">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="0a371978-c613-421f-99ac-e423cde32fb9"
+			name="Meldung_ueberleiten_2017_01_erfolgreich"
+			ref="cb17121c-94e2-43d3-b36d-6349eaea7b5e"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="0dae5e01-9025-4ca7-bd0c-1aeacaf151f2"
 			name="Meldung_ueberleiten_2017_01_erfolgreich"
 			ref="cb17121c-94e2-43d3-b36d-6349eaea7b5e"
 			type="Recording">
 			</testmodule>
-			<smartfoldernode
-			id="0f4a1d87-81e2-47b6-a808-7605657ac4a9"
-			name="SQL_Update_Y_PAR_Sperre_setzen">
-			</smartfoldernode>
 			<testcase
 			id="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
 			name="K_FIBU_001"
@@ -73,16 +85,20 @@
 					value="2017">
 					</param>
 					<param
+					name="Tagesdatum"
+					value="">
+					</param>
+					<param
+					name="Sperre_Kurztext"
+					value="">
+					</param>
+					<param
 					name="Periode"
 					value="01">
 					</param>
 					<param
 					name="Parameter"
 					value="FIBU_SPERRE_100">
-					</param>
-					<param
-					name="Tagesdatum"
-					value="">
 					</param>
 					<param
 					name="User_RS"
@@ -102,12 +118,258 @@
 					</param>
 					<param
 					name="Select_y_par_Sperre"
-					value="select * from y_par where par_cd = 'FIBU_SPERRE_100' and par_lfdnr= '0';">
+					value="select par_textk from y_par where par_cd = 'FIBU_SPERRE_100' and par_lfdnr= '0';">
 					</param>
 				</parameters>
 			</testcase>
+			<smartfoldernode
+			id="1657bfe1-e6e9-4aac-ac3f-0af0dc9dabaf"
+			name="K_FIBU_User_RSX_mit_Sperre">
+			</smartfoldernode>
+			<setup
+			id="178b0a2e-40ad-4571-879f-8c85510c97dd"
+			name="setup">
+			</setup>
 			<testmodule
-			id="17a91834-f039-4cde-a69b-0da44f653814"
+			id="185da086-6ae5-4d97-9e0d-b26e84037539"
+			name="CloseAUT"
+			ref="9337b7c2-d32c-40ae-bd5f-4f6ecd5bf943"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="1d201301-6156-4bde-bcf6-bf16d81be57b"
+			name="Start_User_RSX"
+			ref="f96d9493-d4a6-4858-8a66-e45393d1f7b9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="9cd01264-8739-4fba-aff7-b7f3ce9678eb"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="K_FIBU_USER_RSX"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="32304562-38d2-4d52-bbdf-228996858f1a"
+					variablename="K_FIBU_USER_RSX">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="2825096a-1df8-4ddd-be70-491ff50c9bb4"
+			name="CloseAUT"
+			ref="9337b7c2-d32c-40ae-bd5f-4f6ecd5bf943"
+			type="Recording">
+			</testmodule>
+			<setup
+			id="290f7b87-ade9-4851-a6bb-bbaf87adcfe6"
+			name="setup">
+			</setup>
+			<testmodule
+			id="2ade39e7-4910-48f9-820c-af8977e4ea72"
+			name="Ueberleiten_2017_01"
+			ref="c8e12b48-d854-45b2-bd24-7c8d66e77dd5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Jahr"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="7c4e58b5-f821-4e61-87c3-046bf6c45643"
+					variablename="Jahr">
+					</var>
+					<var
+					dataname="Periode"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="2f7a5408-7b47-4b57-8221-8ad5730184d9"
+					variablename="Periode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="2b1f3154-41d5-4694-8ed8-0531918bba70"
+			name="SQL_Update_y_par_fibu_sperre_auf_1_Select"
+			ref="919a529e-274a-4854-ad4a-2d4d2e713e6a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Sperre_Kurztext"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="897250cd-95b1-40e4-88fe-fe1464fc6f32"
+					variablename="Sperre_Kurztext">
+					</var>
+					<var
+					dataname="Update_y_par_Sperre_EIN"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="a1f165c5-d815-4042-90b9-ee5bde1c05a3"
+					variablename="Update_y_par_Sperre_EIN">
+					</var>
+					<var
+					dataname="Select_y_par_Sperre"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="62f9278d-bcf4-4f42-ba5e-2a144e7e8855"
+					variablename="Select_y_par_Sperre">
+					</var>
+				</databinding>
+			</testmodule>
+			<teardown
+			id="2dfbf3c3-7a36-4882-83ab-9f5b84134732"
+			name="teardown">
+			</teardown>
+			<testmodule
+			enabled="False"
+			id="32946dff-d9d8-4b3f-a3ac-0e944a3455b1"
+			name="Warten_und_Laden"
+			ref="22ce7bb9-58da-4f23-a0f5-6447e6b7f0e6"
+			type="Recording">
+			</testmodule>
+			<testsuite
+			ReportTime="RelativeToTestSuiteStartTime"
+			TracingScreenshotMode="Foreground"
+			TracingScreenshotQuality="40"
+			VideoBitrate="2000"
+			VideoFps="15"
+			VideoRecordingMode="Off"
+			VideoSource="Auto"
+			createsinglereportpdfchecked="False"
+			enabletracingscreenshots="True"
+			id="33073c42-7688-409c-9abc-b900e3b5a17a"
+			includeimageschecked="False"
+			includerecordingschecked="False"
+			junitreport="False"
+			name="K_FIBU_001"
+			overwritefilechecked="False"
+			reportcompress="False"
+			reportdirectoryname="Reports"
+			reportenabled="True"
+			reportfilename="%S_%Y%M%D_%T.rxlog"
+			reporttemplatefolder=""
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
+			</testsuite>
+			<setup
+			id="3cc683ac-338b-4c6b-84c8-200a503cefd2"
+			name="setup">
+			</setup>
+			<testmodule
+			enabled="False"
+			id="3f77ee54-98ea-43f1-83d7-fe82f2eff256"
+			name="User_RS_pruefen"
+			ref="18bca942-7c54-4616-85b9-d515bae84207"
+			type="Recording">
+				<description>
+					<![CDATA[Prüfung User nicht unbedingt erforderlich; für Zeitoptimierung dzt. disabled]]>
+				</description>
+				<databinding>
+					<var
+					dataname="User_RS"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="c58af7bd-9a98-46be-931c-743aae8a6475"
+					variablename="User_RS">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="4046ba5b-0607-4a80-9679-2622f367d717"
+			name="User_RS_pruefen"
+			ref="18bca942-7c54-4616-85b9-d515bae84207"
+			type="Recording">
+				<description>
+					<![CDATA[Prüfung User nicht unbedingt erforderlich; für Zeitoptimierung dzt. disabled]]>
+				</description>
+				<databinding>
+					<var
+					dataname="User_RS"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="c58af7bd-9a98-46be-931c-743aae8a6475"
+					variablename="User_RS">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="40f06805-9f13-4014-92e9-0cd5ac1bd3be"
+			name="Ueberleiten_2017_01"
+			ref="c8e12b48-d854-45b2-bd24-7c8d66e77dd5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Periode"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="2f7a5408-7b47-4b57-8221-8ad5730184d9"
+					variablename="Periode">
+					</var>
+					<var
+					dataname="Jahr"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="7c4e58b5-f821-4e61-87c3-046bf6c45643"
+					variablename="Jahr">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			id="41aaa2ba-ce26-497a-ab42-98c530df98fc"
+			name="SQL_Update_Y_PAR_Sperre_setzen">
+			</smartfoldernode>
+			<testmodule
+			id="58aadc7d-724f-4a61-9064-0077286f51fe"
+			name="Ueberleiten_2017_01"
+			ref="c8e12b48-d854-45b2-bd24-7c8d66e77dd5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Jahr"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="7c4e58b5-f821-4e61-87c3-046bf6c45643"
+					variablename="Jahr">
+					</var>
+					<var
+					dataname="Periode"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="2f7a5408-7b47-4b57-8221-8ad5730184d9"
+					variablename="Periode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="58d47dd8-24a2-4f26-9a29-06e4f085affb"
+			name="SQL_Update_y_par_fibu_sperre_auf_0_Select"
+			ref="035bc0f5-13d1-432c-901a-6bdf52575abf"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Sperre_Kurztext"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="01dd6223-e232-4d18-b034-da4cc4d14e1e"
+					variablename="Sperre_Kurztext">
+					</var>
+					<var
+					dataname="Update_y_par_Sperre_AUS"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="912277f7-7311-4d78-a3d0-da98514eba68"
+					variablename="Update_y_par_Sperre_AUS">
+					</var>
+					<var
+					dataname="Select_y_par_Sperre"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="6b13f560-9b08-46bc-88f0-1ad4017b9f58"
+					variablename="Select_y_par_Sperre">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="5d95f67f-72d2-4d05-9070-e953325a3b9b"
+			name="CloseAUT"
+			ref="9337b7c2-d32c-40ae-bd5f-4f6ecd5bf943"
+			type="Recording">
+			</testmodule>
+			<teardown
+			id="60a8fd9f-6584-4cfc-81c9-f23ce906acb3"
+			name="teardown">
+			</teardown>
+			<testmodule
+			enabled="False"
+			id="6330ad4b-e192-42a8-8cf7-71070ca05764"
 			name="Parameter_1_pruefen"
 			ref="416711f4-0908-42b7-be18-7929ccc94d8e"
 			type="Recording">
@@ -136,44 +398,30 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="1c11975e-245e-4491-9873-6433565d3798"
-			name="SQL_Update_y_par_fibu_sperre_auf_0"
-			ref="035bc0f5-13d1-432c-901a-6bdf52575abf"
+			enabled="False"
+			id="64810206-b66e-4279-badf-ac1cf38dd020"
+			name="Parameter_bearbeiten_laden"
+			ref="8597d1f2-561a-4d19-86fb-aa9d13b39b7c"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Parameter"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="1e970a54-848b-4b53-9f77-8bb03e565ff0"
+					variablename="Parameter">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="6ba03c8f-4530-433c-8870-16239631a534"
+			name="K_FIBU_User_RSX_OHNE_Sperre_Parameter_Y_PAR">
 				<description>
-					<![CDATA[IN ARBEIT - Update mit Select-Überprüfung statt Maske y_par]]>
+					<![CDATA[Repository y_par geändert ab 521 SP05]]>
 				</description>
-				<databinding>
-					<var
-					dataname="Update_y_par_Sperre_AUS"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="912277f7-7311-4d78-a3d0-da98514eba68"
-					variablename="Update_y_par_Sperre_AUS">
-					</var>
-				</databinding>
-			</testmodule>
+			</testcase>
 			<testmodule
-			id="1c68f9f3-5196-410a-9081-cec8e321d5eb"
-			name="Ueberleiten_2017_01"
-			ref="c8e12b48-d854-45b2-bd24-7c8d66e77dd5"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Periode"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="2f7a5408-7b47-4b57-8221-8ad5730184d9"
-					variablename="Periode">
-					</var>
-					<var
-					dataname="Jahr"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="7c4e58b5-f821-4e61-87c3-046bf6c45643"
-					variablename="Jahr">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="1dbf1f67-73ce-4139-99b5-d6fe22bd6c7f"
+			enabled="False"
+			id="6e8b74e8-e605-4ab4-9095-b5e96e1cd6d9"
 			name="Parameter_0_pruefen"
 			ref="0126ec6a-3be8-44ca-a707-591beb5b0d3a"
 			type="Recording">
@@ -199,101 +447,69 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="2485da0c-ae99-4617-a970-2c27a5000545"
-			name="Start_User_RSX"
-			ref="f96d9493-d4a6-4858-8a66-e45393d1f7b9"
+			enabled="False"
+			id="703c5897-8e71-42a8-82fa-a1027b9e31a9"
+			name="Close_YPAR"
+			ref="d0c58025-289a-4b3c-a3ed-acb0b3b431ff"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="79cfbca7-275b-4cf5-a111-86d1fc273ad9"
+			name="Ueberleiten_2017_01"
+			ref="c8e12b48-d854-45b2-bd24-7c8d66e77dd5"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="K_FIBU_USER_RSX"
+					dataname="Jahr"
 					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="32304562-38d2-4d52-bbdf-228996858f1a"
-					variablename="K_FIBU_USER_RSX">
+					variableid="7c4e58b5-f821-4e61-87c3-046bf6c45643"
+					variablename="Jahr">
+					</var>
+					<var
+					dataname="Periode"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="2f7a5408-7b47-4b57-8221-8ad5730184d9"
+					variablename="Periode">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			id="7e79e98f-6ccf-4eca-b849-5a70d6aff50c"
+			name="K_FIBU_User_RSX_Sperre_aufgehoben_ausführen">
+			</smartfoldernode>
+			<testmodule
+			id="80531af5-1fc8-434e-a58a-77f8a06f6fd6"
+			name="Start_User_RS"
+			ref="0dbe3be4-3698-4c5c-a928-a0ed242a561b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="K_FIBU_USER_RS"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="27930b84-0ec1-47f2-bcde-7103700efa3d"
+					variablename="K_FIBU_USER_RS">
 					</var>
 					<var
 					dataname="Startfile"
 					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="9cd01264-8739-4fba-aff7-b7f3ce9678eb"
+					variableid="d3d09a52-e410-4124-ac40-affdf7884f64"
 					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="813a0706-5e5c-46e5-a3d7-e1a4d03d93a3"
+			name="teardown">
+			</teardown>
+			<testcase
+			id="848a92b7-39fa-497e-ab20-f85a0caa6b3c"
+			name="K_FIBU_User_RS_mit_Sperre_Parameter_Y_PAR_fuer_User_RS">
+				<description>
+					<![CDATA[Repository y_par geändert ab 521 SP05]]>
+				</description>
+			</testcase>
 			<testmodule
-			id="258837c4-fbb6-4fac-8047-458579c972d4"
-			name="CloseAUT"
-			ref="9337b7c2-d32c-40ae-bd5f-4f6ecd5bf943"
-			type="Recording">
-			</testmodule>
-			<setup
-			id="290f7b87-ade9-4851-a6bb-bbaf87adcfe6"
-			name="setup">
-			</setup>
-			<testmodule
-			id="2d270ce2-8473-4b4c-b9a4-db7759e11ef8"
-			name="YPAR_Parameter_auf_1_aendern"
-			ref="215c1069-b2fd-4259-b15e-481b5576ceff"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Parameter"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="fe4633d9-ddd3-45d6-8966-bdc6aa34612b"
-					variablename="Parameter">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="2df7d020-bf65-475a-b9d4-534a1811e09c"
-			name="Meldung_ueberleiten_2017_01_erfolgreich"
-			ref="cb17121c-94e2-43d3-b36d-6349eaea7b5e"
-			type="Recording">
-			</testmodule>
-			<testsuite
-			ReportTime="RelativeToTestSuiteStartTime"
-			TracingScreenshotMode="Foreground"
-			TracingScreenshotQuality="40"
-			VideoBitrate="2000"
-			VideoFps="15"
-			VideoRecordingMode="Off"
-			VideoSource="Auto"
-			createsinglereportpdfchecked="False"
-			enabletracingscreenshots="True"
-			id="33073c42-7688-409c-9abc-b900e3b5a17a"
-			includeimageschecked="False"
-			includerecordingschecked="False"
-			junitreport="False"
-			name="K_FIBU_001"
-			overwritefilechecked="False"
-			reportcompress="False"
-			reportdirectoryname="Reports"
-			reportenabled="True"
-			reportfilename="%S_%Y%M%D_%T.rxlog"
-			reporttemplatefolder=""
-			reportwriteinterval="30000ms"
-			singlereportpdfdirectory="SingleReportPDF">
-			</testsuite>
-			<testmodule
-			id="33d68a8a-701c-465d-b947-430fa14dada8"
-			name="Start_YPAR"
-			ref="135a9851-56b0-440a-addc-330e4197f896"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Startfile"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="665a1b29-c629-4f87-94fb-40b8142b5a54"
-					variablename="Startfile">
-					</var>
-					<var
-					dataname="Programm_Y_PAR"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="4a11ef48-1f8c-49b7-821b-4dfe5bc05ee0"
-					variablename="Programm_y_par">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="36693974-e571-4dc8-a06a-bf3d7bf810bb"
+			id="86166e98-05d1-418d-9654-00073eda4061"
 			name="User_RSX_pruefen"
 			ref="fd4ddd92-4383-43eb-a5a5-f1b68f6dd44a"
 			type="Recording">
@@ -310,52 +526,98 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="381cd444-09c6-4914-a9e1-2210bd3bad59"
-			name="Meldung_ueberleiten_2017_01_erfolgreich"
-			ref="cb17121c-94e2-43d3-b36d-6349eaea7b5e"
-			type="Recording">
-			</testmodule>
-			<setup
-			id="3a89dcd0-dd22-480d-9375-c269ac9006e4"
-			name="setup">
-			</setup>
-			<testmodule
 			enabled="False"
-			id="4046ba5b-0607-4a80-9679-2622f367d717"
-			name="User_RS_pruefen"
-			ref="18bca942-7c54-4616-85b9-d515bae84207"
+			id="8abb92af-50a2-4ca2-9155-3f5bcf9dc051"
+			name="YPAR_Parameter_auf_1_aendern"
+			ref="215c1069-b2fd-4259-b15e-481b5576ceff"
 			type="Recording">
-				<description>
-					<![CDATA[Prüfung User nicht unbedingt erforderlich; für Zeitoptimierung dzt. disabled]]>
-				</description>
+				<databinding>
+					<var
+					dataname="Parameter"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="fe4633d9-ddd3-45d6-8966-bdc6aa34612b"
+					variablename="Parameter">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="8de910e7-3d32-4149-b9b8-9ffd069fbb00"
+			name="Meldung_anderer_Benutzer"
+			ref="020cb780-bc99-45b8-8951-fbcccf666781"
+			type="Recording">
 				<databinding>
 					<var
 					dataname="User_RS"
 					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="c58af7bd-9a98-46be-931c-743aae8a6475"
+					variableid="334c3279-dc93-4780-84ec-7440dff0b423"
+					variablename="User_RS">
+					</var>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="87facd4a-0065-45d7-9f06-065cfee004d2"
+					variablename="Tagesdatum">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			id="94ab005b-bc74-4881-a44b-155129c1b4f5"
+			name="Y_PAR_Sperre_setzen">
+				<description>
+					<![CDATA[DISABLED - ersetzt durch SQL-Update (aber Recordings als Alternative belassen)]]>
+				</description>
+			</smartfoldernode>
+			<testmodule
+			enabled="False"
+			id="99d833cb-8fa6-40cf-8739-bcb30bb2fec5"
+			name="Start_YPAR"
+			ref="135a9851-56b0-440a-addc-330e4197f896"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Programm_Y_PAR"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="4a11ef48-1f8c-49b7-821b-4dfe5bc05ee0"
+					variablename="Programm_y_par">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="665a1b29-c629-4f87-94fb-40b8142b5a54"
+					variablename="Startfile">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="9b58ffc9-d018-4b15-ab8b-7697d4e3e277"
+			name="Parameter_1_pruefen"
+			ref="416711f4-0908-42b7-be18-7929ccc94d8e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Parameter"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="42b5736f-63e5-4e29-88d4-b5daab7e1ec3"
+					variablename="Parameter">
+					</var>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="558113a3-6e7c-4097-ab12-35fc2f29e466"
+					variablename="Tagesdatum">
+					</var>
+					<var
+					dataname="User_RS"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="ede7cf96-5f7e-48c2-888b-9b47443c9566"
 					variablename="User_RS">
 					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="434d822f-89d3-4990-9cc9-ad11a7f7a7ea"
-			name="CloseAUT"
-			ref="9337b7c2-d32c-40ae-bd5f-4f6ecd5bf943"
-			type="Recording">
-			</testmodule>
-			<smartfoldernode
-			id="43d82f90-cfd8-460f-87ad-eb9876c53efd"
-			name="Y_PAR_Sperre_erneut_setzen">
-			</smartfoldernode>
-			<testmodule
-			id="467b2b2a-83bc-4a78-89b2-10446136e434"
-			name="Close_YPAR"
-			ref="d0c58025-289a-4b3c-a3ed-acb0b3b431ff"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			enabled="False"
-			id="492063b7-01a2-4021-b516-af4555dd37b6"
+			id="a7c7557a-3e73-4ada-849a-6cf92689f8d6"
 			name="Parameter_0_pruefen"
 			ref="0126ec6a-3be8-44ca-a707-591beb5b0d3a"
 			type="Recording">
@@ -384,206 +646,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="50885563-5444-4355-8b0c-dfc3ced3b04c"
-			name="SQL_Update_y_par_fibu_sperre_auf_1"
-			ref="919a529e-274a-4854-ad4a-2d4d2e713e6a"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Update_y_par_Sperre_EIN"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="a1f165c5-d815-4042-90b9-ee5bde1c05a3"
-					variablename="Update_y_par_Sperre_EIN">
-					</var>
-				</databinding>
-			</testmodule>
-			<setup
-			id="51c18b74-9c73-4583-b10a-62af932b1873"
-			name="setup">
-			</setup>
-			<smartfoldernode
-			id="5517c998-66c5-4ba1-a3c1-faf660de47fa"
-			name="Y_PAR_Sperre_aufheben">
-			</smartfoldernode>
-			<setup
-			id="553e6eb8-45c6-44ec-aed1-8e3cb6cc69d4"
-			name="setup">
-			</setup>
-			<testmodule
-			id="55904da1-fd67-4d3d-97fb-3f723e4d941a"
-			name="Ueberleiten_2017_01"
-			ref="c8e12b48-d854-45b2-bd24-7c8d66e77dd5"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Jahr"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="7c4e58b5-f821-4e61-87c3-046bf6c45643"
-					variablename="Jahr">
-					</var>
-					<var
-					dataname="Periode"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="2f7a5408-7b47-4b57-8221-8ad5730184d9"
-					variablename="Periode">
-					</var>
-				</databinding>
-			</testmodule>
-			<smartfoldernode
-			id="57a5bc44-b62e-4ef9-a49f-1fd6146e180e"
-			name="K_FIBU_User_RSX_mit_Sperre">
-			</smartfoldernode>
-			<testmodule
-			id="58aadc7d-724f-4a61-9064-0077286f51fe"
-			name="Ueberleiten_2017_01"
-			ref="c8e12b48-d854-45b2-bd24-7c8d66e77dd5"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Jahr"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="7c4e58b5-f821-4e61-87c3-046bf6c45643"
-					variablename="Jahr">
-					</var>
-					<var
-					dataname="Periode"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="2f7a5408-7b47-4b57-8221-8ad5730184d9"
-					variablename="Periode">
-					</var>
-				</databinding>
-			</testmodule>
-			<smartfoldernode
-			id="63727df5-f463-4832-815a-1595b9f67c5d"
-			name="K_FIBU_User_RSX_Sperre_aufgehoben_ausführen">
-			</smartfoldernode>
-			<testmodule
-			id="64810206-b66e-4279-badf-ac1cf38dd020"
-			name="Parameter_bearbeiten_laden"
-			ref="8597d1f2-561a-4d19-86fb-aa9d13b39b7c"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Parameter"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="1e970a54-848b-4b53-9f77-8bb03e565ff0"
-					variablename="Parameter">
-					</var>
-				</databinding>
-			</testmodule>
-			<setup
-			id="6a7f0491-47a9-4dbe-add6-b4a7fc5f8412"
-			name="setup">
-			</setup>
-			<testmodule
-			id="6f7be541-b30b-4673-b868-f166fda1af84"
-			name="Parameter_0_pruefen"
-			ref="0126ec6a-3be8-44ca-a707-591beb5b0d3a"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Parameter"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="00ab2518-951c-4749-91e6-2cf2ea8b6f35"
-					variablename="Parameter">
-					</var>
-					<var
-					dataname="Tagesdatum"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="9439e216-91cb-447e-9e07-94418983bd34"
-					variablename="Tagesdatum">
-					</var>
-					<var
-					dataname="User_RS"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="3bff4f6b-aad5-4517-a9b3-1d8dd8ecaaf8"
-					variablename="User_RS">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="7557e7c4-2e98-4292-a7cd-a078f344fc27"
-			name="Meldung_anderer_Benutzer"
-			ref="020cb780-bc99-45b8-8951-fbcccf666781"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="User_RS"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="334c3279-dc93-4780-84ec-7440dff0b423"
-					variablename="User_RS">
-					</var>
-					<var
-					dataname="Tagesdatum"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="87facd4a-0065-45d7-9f06-065cfee004d2"
-					variablename="Tagesdatum">
-					</var>
-				</databinding>
-			</testmodule>
-			<teardown
-			id="813a0706-5e5c-46e5-a3d7-e1a4d03d93a3"
-			name="teardown">
-			</teardown>
-			<teardown
-			id="81c307f6-6cf5-47e9-bae3-fff831687f92"
-			name="teardown">
-			</teardown>
-			<testmodule
-			id="879488ea-4fac-477d-b8c7-230913371f48"
-			name="Warten_und_Laden"
-			ref="22ce7bb9-58da-4f23-a0f5-6447e6b7f0e6"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="99d833cb-8fa6-40cf-8739-bcb30bb2fec5"
-			name="Start_YPAR"
-			ref="135a9851-56b0-440a-addc-330e4197f896"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Programm_Y_PAR"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="4a11ef48-1f8c-49b7-821b-4dfe5bc05ee0"
-					variablename="Programm_y_par">
-					</var>
-					<var
-					dataname="Startfile"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="665a1b29-c629-4f87-94fb-40b8142b5a54"
-					variablename="Startfile">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="9c1bb737-1a01-4620-ac1c-6d3476eb0549"
-			name="YPAR_Parameter_auf_0_aendern"
-			ref="b4e64ec3-bd8d-4a13-8d16-5aab1345f3cd"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Parameter"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="559f1d49-1f22-49fb-ae1c-0036afc7fc6f"
-					variablename="Parameter">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="a0d074a1-a1ae-42ec-b66e-b05ea9d268fd"
-			name="Tagesdatum_ermitteln_Sonderformat"
-			ref="4e65b42f-3734-4ce0-b2d0-baf17f36869d"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Tagesdatum"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="58cefeb3-60f0-4bc4-abfe-680f70d47e88"
-					variablename="Tagesdatum">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
+			enabled="False"
 			id="a7e25ada-1a9c-471f-b293-021e107eca06"
 			name="Parameter_0_pruefen"
 			ref="0126ec6a-3be8-44ca-a707-591beb5b0d3a"
@@ -609,18 +672,12 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<teardown
-			id="a98b203a-f553-4687-af95-c807942194db"
-			name="teardown">
-			</teardown>
-			<testcase
-			id="ab6e3349-6701-419c-856c-719ea1cc62d1"
-			name="K_FIBU_mit_Sperre_Parameter_Y_PAR">
-				<description>
-					<![CDATA[Repository y_par geändert ab 521 SP05]]>
-				</description>
-			</testcase>
+			<setup
+			id="a9388754-6f63-4ce8-8fd1-44aec33ea384"
+			name="setup">
+			</setup>
 			<testmodule
+			enabled="False"
 			id="aee93985-a1ec-4ebe-b91a-447b20cde565"
 			name="YPAR_Parameter_auf_0_aendern"
 			ref="b4e64ec3-bd8d-4a13-8d16-5aab1345f3cd"
@@ -634,6 +691,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="b2c160c0-f886-4238-ae27-c2bf386ed002"
+			name="SQL_Update_Y_PAR_Sperre_aufheben">
+			</smartfoldernode>
 			<testmodule
 			id="b2cfeb01-daed-4bc5-a6f6-24a34b68584f"
 			name="StartAUT"
@@ -668,49 +729,22 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
-			<testmodule
-			id="be723378-ec68-4890-aac8-7bb8564e5a64"
-			name="Parameter_1_pruefen"
-			ref="416711f4-0908-42b7-be18-7929ccc94d8e"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Parameter"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="42b5736f-63e5-4e29-88d4-b5daab7e1ec3"
-					variablename="Parameter">
-					</var>
-					<var
-					dataname="Tagesdatum"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="558113a3-6e7c-4097-ab12-35fc2f29e466"
-					variablename="Tagesdatum">
-					</var>
-					<var
-					dataname="User_RS"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="ede7cf96-5f7e-48c2-888b-9b47443c9566"
-					variablename="User_RS">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			enabled="False"
-			id="bfb02c6f-4a86-4cd4-937e-391cc6805edb"
-			name="User_RS_pruefen"
-			ref="18bca942-7c54-4616-85b9-d515bae84207"
-			type="Recording">
+			<testcase
+			id="b40c7661-bae1-4dc2-895a-4452182d1dc3"
+			name="K_FIBU_User_RSX_mit_Sperre_Parameter_Y_PAR_fuer_User_RS">
 				<description>
-					<![CDATA[Prüfung User nicht unbedingt erforderlich; für Zeitoptimierung dzt. disabled]]>
+					<![CDATA[Repository y_par geändert ab 521 SP05]]>
 				</description>
-				<databinding>
-					<var
-					dataname="User_RS"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="c58af7bd-9a98-46be-931c-743aae8a6475"
-					variablename="User_RS">
-					</var>
-				</databinding>
+			</testcase>
+			<smartfoldernode
+			id="b7fb4f0c-4631-40e1-9d73-4b50171339bd"
+			name="SQL_Update_Y_PAR_Sperre_setzen">
+			</smartfoldernode>
+			<testmodule
+			id="bb5a73d7-ad8e-473b-9f74-c2aa741fa879"
+			name="Meldung_ueberleiten_2017_01_erfolgreich"
+			ref="cb17121c-94e2-43d3-b36d-6349eaea7b5e"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="c346955a-adbc-48dd-b4a8-1bc70e14299a"
@@ -723,15 +757,30 @@
 			name="K_FIBU_ohne_Sperre">
 			</testcase>
 			<smartfoldernode
-			id="c8d5a22b-af50-415d-aa5b-86adcd88edaf"
+			id="ca16c1e9-f635-4802-9c0b-768740fab2d8"
 			name="Y_PAR_Sperre_setzen">
-			</smartfoldernode>
-			<smartfoldernode
-			id="d16c6721-80f4-4cdd-bd28-4086eaeb790a"
-			name="K_FIBU_User_RS_Meldung_ausführen">
+				<description>
+					<![CDATA[<p>DISABLED - ersetzt durch SQL-Update (aber Recordings als Alternative belassen)</p>]]>
+				</description>
 			</smartfoldernode>
 			<testmodule
-			id="d1d5ac72-294b-4954-8be3-e596b59bc6c2"
+			enabled="False"
+			id="cc6fac0b-827c-4622-98c6-241e64261456"
+			name="YPAR_Parameter_auf_0_aendern"
+			ref="b4e64ec3-bd8d-4a13-8d16-5aab1345f3cd"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Parameter"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="559f1d49-1f22-49fb-ae1c-0036afc7fc6f"
+					variablename="Parameter">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="cce97a05-570d-4a39-b386-8563e019b07f"
 			name="Parameter_1_pruefen"
 			ref="416711f4-0908-42b7-be18-7929ccc94d8e"
 			type="Recording">
@@ -759,44 +808,8 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<teardown
-			id="d551fa11-53c9-49ce-a25f-b3e5701fb9c5"
-			name="teardown">
-			</teardown>
-			<setup
-			id="d967e1d3-f974-4bff-a509-100a55a4112f"
-			name="setup">
-			</setup>
 			<testmodule
-			id="dcc82aac-6238-4e6d-a05b-72fe3f9f1038"
-			name="SQL_Select_y_par_fibu_sperre"
-			ref="52203e43-66db-4dc9-9ba7-315f18fc6aef"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Select_y_par_Sperre"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="60a2da6b-7413-49ef-8827-c8b0fd5a3112"
-					variablename="Select_y_par_Sperre">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="ddf6b918-46ea-461a-aedf-9b4ad3ea8060"
-			name="Parameter_bearbeiten_laden"
-			ref="8597d1f2-561a-4d19-86fb-aa9d13b39b7c"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Parameter"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="1e970a54-848b-4b53-9f77-8bb03e565ff0"
-					variablename="Parameter">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="e20cf2f2-b476-4c67-99ab-70fd6d0b57bb"
+			id="cd57d604-03b5-41cf-abd2-a066e0d7c1ae"
 			name="Meldung_gleicher_Benutzer_bestaetigen"
 			ref="8ccfb95d-1767-4cb5-a47c-4b48afd490d4"
 			type="Recording">
@@ -815,93 +828,196 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="d2508f74-312a-4cd8-8702-ce4498fd8da4"
+			name="Y_PAR_Sperre_aufheben">
+				<description>
+					<![CDATA[<p>DISABLED - ersetzt durch SQL-Update (aber Recordings als Alternative belassen)</p>]]>
+				</description>
+			</smartfoldernode>
 			<testmodule
-			id="e604a6b7-d43c-4617-8ba8-cf573de1d90f"
-			name="Start_User_RS"
-			ref="0dbe3be4-3698-4c5c-a928-a0ed242a561b"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="K_FIBU_USER_RS"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="27930b84-0ec1-47f2-bcde-7103700efa3d"
-					variablename="K_FIBU_USER_RS">
-					</var>
-					<var
-					dataname="Startfile"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="d3d09a52-e410-4124-ac40-affdf7884f64"
-					variablename="Startfile">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="e60cca17-e3f7-48ff-8ae5-b68829696a56"
+			id="d4bb3c91-0752-4d78-8f9b-1b06b9c71ff6"
 			name="Start_User_RSX"
 			ref="f96d9493-d4a6-4858-8a66-e45393d1f7b9"
 			type="Recording">
 				<databinding>
-					<var
-					dataname="Startfile"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="9cd01264-8739-4fba-aff7-b7f3ce9678eb"
-					variablename="Startfile">
-					</var>
 					<var
 					dataname="K_FIBU_USER_RSX"
 					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
 					variableid="32304562-38d2-4d52-bbdf-228996858f1a"
 					variablename="K_FIBU_USER_RSX">
 					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="9cd01264-8739-4fba-aff7-b7f3ce9678eb"
+					variablename="Startfile">
+					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="d551fa11-53c9-49ce-a25f-b3e5701fb9c5"
+			name="teardown">
+			</teardown>
+			<setup
+			id="d967e1d3-f974-4bff-a509-100a55a4112f"
+			name="setup">
+			</setup>
 			<testmodule
-			id="efab9a6f-65d4-45c6-9181-a38be641a551"
-			name="YPAR_Parameter_auf_1_aendern"
-			ref="215c1069-b2fd-4259-b15e-481b5576ceff"
+			id="dda3225f-1843-4749-8912-2ee880348f08"
+			name="SQL_Update_y_par_fibu_sperre_auf_1_Select"
+			ref="919a529e-274a-4854-ad4a-2d4d2e713e6a"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Parameter"
+					dataname="Sperre_Kurztext"
 					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="fe4633d9-ddd3-45d6-8966-bdc6aa34612b"
-					variablename="Parameter">
+					variableid="897250cd-95b1-40e4-88fe-fe1464fc6f32"
+					variablename="Sperre_Kurztext">
+					</var>
+					<var
+					dataname="Update_y_par_Sperre_EIN"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="a1f165c5-d815-4042-90b9-ee5bde1c05a3"
+					variablename="Update_y_par_Sperre_EIN">
+					</var>
+					<var
+					dataname="Select_y_par_Sperre"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="62f9278d-bcf4-4f42-ba5e-2a144e7e8855"
+					variablename="Select_y_par_Sperre">
 					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
+			id="deeaf2a6-1077-4713-a6ef-e5f7cd808b04"
+			name="Tagesdatum_ermitteln_Sonderformat"
+			ref="4e65b42f-3734-4ce0-b2d0-baf17f36869d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="58cefeb3-60f0-4bc4-abfe-680f70d47e88"
+					variablename="Tagesdatum">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="e1d8fd93-8b0d-4ca6-b435-9cb3e9562227"
+			name="Start_YPAR"
+			ref="135a9851-56b0-440a-addc-330e4197f896"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="665a1b29-c629-4f87-94fb-40b8142b5a54"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_Y_PAR"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="4a11ef48-1f8c-49b7-821b-4dfe5bc05ee0"
+					variablename="Programm_y_par">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="ea9136b0-e5d2-4871-bc8b-ab02117dbede"
+			name="User_RSX_pruefen"
+			ref="fd4ddd92-4383-43eb-a5a5-f1b68f6dd44a"
+			type="Recording">
+				<description>
+					<![CDATA[Prüfung User nicht unbedingt erforderlich; für Zeitoptimierung dzt. disabled]]>
+				</description>
+				<databinding>
+					<var
+					dataname="User_RSX"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="2adbdd93-de51-4b34-b14d-384cc6a9c215"
+					variablename="User_RSX">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
 			id="f34627fe-ffb2-471d-b8f4-fc9db0dd04fc"
 			name="Close_YPAR"
 			ref="d0c58025-289a-4b3c-a3ed-acb0b3b431ff"
 			type="Recording">
 			</testmodule>
-			<testmodule
-			id="f38aedce-6dc2-4eb8-9589-188ce2930519"
-			name="Ueberleiten_2017_01"
-			ref="c8e12b48-d854-45b2-bd24-7c8d66e77dd5"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Jahr"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="7c4e58b5-f821-4e61-87c3-046bf6c45643"
-					variablename="Jahr">
-					</var>
-					<var
-					dataname="Periode"
-					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
-					variableid="2f7a5408-7b47-4b57-8221-8ad5730184d9"
-					variablename="Periode">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="f850fb34-1e50-40f6-ac6a-2f513f633176"
 			name="Y_PAR_zurücksetzen_auf_Kurztext_0">
 				<description>
-					<![CDATA[Falls der Test auf Fehler läuft und die Sperre bestehen bleibt, wird mit diesem Schritt die Sperre in jedem Fall zurückgesetzt, damit die nachfolgenden Testfälle k_fibu_002 etc. ausgeführt werden können.]]>
+					<![CDATA[<p>DISABLED - ersetzt durch SQL-Update in TEARDOWN&nbsp;(aber Recordings als Alternative belassen)</p><p>Falls der Test auf Fehler läuft und die Sperre bestehen bleibt, wird mit diesem Schritt die Sperre in jedem Fall zurückgesetzt, damit die nachfolgenden Testfälle k_fibu_002 etc. ausgeführt werden können.</p>]]>
 				</description>
 			</testcase>
+			<teardown
+			id="f85c195b-b971-4220-b8d9-dc39a6ef6b0b"
+			name="teardown">
+			</teardown>
+			<testmodule
+			enabled="False"
+			id="f85ef207-e9ab-491f-aafa-7e4ec68a0853"
+			name="Parameter_0_pruefen"
+			ref="0126ec6a-3be8-44ca-a707-591beb5b0d3a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Parameter"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="00ab2518-951c-4749-91e6-2cf2ea8b6f35"
+					variablename="Parameter">
+					</var>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="9439e216-91cb-447e-9e07-94418983bd34"
+					variablename="Tagesdatum">
+					</var>
+					<var
+					dataname="User_RS"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="3bff4f6b-aad5-4517-a9b3-1d8dd8ecaaf8"
+					variablename="User_RS">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="fe904c8d-8a27-4247-9a0e-0b4ec24d58f8"
+			name="SQL_Update_y_par_fibu_sperre_auf_0_Select"
+			ref="035bc0f5-13d1-432c-901a-6bdf52575abf"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Sperre_Kurztext"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="01dd6223-e232-4d18-b034-da4cc4d14e1e"
+					variablename="Sperre_Kurztext">
+					</var>
+					<var
+					dataname="Update_y_par_Sperre_AUS"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="912277f7-7311-4d78-a3d0-da98514eba68"
+					variablename="Update_y_par_Sperre_AUS">
+					</var>
+					<var
+					dataname="Select_y_par_Sperre"
+					datasourceid="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d"
+					variableid="6b13f560-9b08-46bc-88f0-1ad4017b9f58"
+					variablename="Select_y_par_Sperre">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			id="ff9ffb94-fe58-4338-b848-1b20d9528dbe"
+			name="K_FIBU_User_RS_Meldung_ausführen">
+			</smartfoldernode>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -943,193 +1059,217 @@
 						</teardown>
 					</testcase>
 					<testcase
-					id="ab6e3349-6701-419c-856c-719ea1cc62d1"
-					name="K_FIBU_mit_Sperre_Parameter_Y_PAR">
+					id="848a92b7-39fa-497e-ab20-f85a0caa6b3c"
+					name="K_FIBU_User_RS_mit_Sperre_Parameter_Y_PAR_fuer_User_RS">
 						<smartfoldernode
-						id="0f4a1d87-81e2-47b6-a808-7605657ac4a9"
-						name="SQL_Update_Y_PAR_Sperre_setzen">
-							<testmodule
-							id="1c11975e-245e-4491-9873-6433565d3798"
-							name="SQL_Update_y_par_fibu_sperre_auf_0">
-							</testmodule>
-							<testmodule
-							id="dcc82aac-6238-4e6d-a05b-72fe3f9f1038"
-							name="SQL_Select_y_par_fibu_sperre">
-							</testmodule>
-							<testmodule
-							id="50885563-5444-4355-8b0c-dfc3ced3b04c"
-							name="SQL_Update_y_par_fibu_sperre_auf_1">
-							</testmodule>
-						</smartfoldernode>
-						<smartfoldernode
-						id="c8d5a22b-af50-415d-aa5b-86adcd88edaf"
+						id="94ab005b-bc74-4881-a44b-155129c1b4f5"
 						name="Y_PAR_Sperre_setzen">
 							<setup
-							id="553e6eb8-45c6-44ec-aed1-8e3cb6cc69d4"
+							id="3cc683ac-338b-4c6b-84c8-200a503cefd2"
 							name="setup">
 								<testmodule
-								id="33d68a8a-701c-465d-b947-430fa14dada8"
+								id="e1d8fd93-8b0d-4ca6-b435-9cb3e9562227"
 								name="Start_YPAR">
 								</testmodule>
 								<testmodule
-								id="a0d074a1-a1ae-42ec-b66e-b05ea9d268fd"
+								id="deeaf2a6-1077-4713-a6ef-e5f7cd808b04"
 								name="Tagesdatum_ermitteln_Sonderformat">
 								</testmodule>
 							</setup>
 							<testmodule
-							id="ddf6b918-46ea-461a-aedf-9b4ad3ea8060"
+							id="0335c138-1889-41fa-997d-380119fd1aed"
 							name="Parameter_bearbeiten_laden">
 							</testmodule>
 							<testmodule
-							id="1dbf1f67-73ce-4139-99b5-d6fe22bd6c7f"
+							id="6e8b74e8-e605-4ab4-9095-b5e96e1cd6d9"
 							name="Parameter_0_pruefen">
 							</testmodule>
 							<testmodule
-							id="efab9a6f-65d4-45c6-9181-a38be641a551"
+							id="8abb92af-50a2-4ca2-9155-3f5bcf9dc051"
 							name="YPAR_Parameter_auf_1_aendern">
 							</testmodule>
 							<testmodule
-							id="d1d5ac72-294b-4954-8be3-e596b59bc6c2"
+							id="6330ad4b-e192-42a8-8cf7-71070ca05764"
 							name="Parameter_1_pruefen">
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
-						id="d16c6721-80f4-4cdd-bd28-4086eaeb790a"
+						id="41aaa2ba-ce26-497a-ab42-98c530df98fc"
+						name="SQL_Update_Y_PAR_Sperre_setzen">
+							<testmodule
+							id="dda3225f-1843-4749-8912-2ee880348f08"
+							name="SQL_Update_y_par_fibu_sperre_auf_1_Select">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="ff9ffb94-fe58-4338-b848-1b20d9528dbe"
 						name="K_FIBU_User_RS_Meldung_ausführen">
 							<setup
-							id="51c18b74-9c73-4583-b10a-62af932b1873"
+							id="a9388754-6f63-4ce8-8fd1-44aec33ea384"
 							name="setup">
 								<testmodule
-								id="e604a6b7-d43c-4617-8ba8-cf573de1d90f"
+								id="80531af5-1fc8-434e-a58a-77f8a06f6fd6"
 								name="Start_User_RS">
 								</testmodule>
 							</setup>
 							<testmodule
-							id="bfb02c6f-4a86-4cd4-937e-391cc6805edb"
+							id="3f77ee54-98ea-43f1-83d7-fe82f2eff256"
 							name="User_RS_pruefen">
 							</testmodule>
 							<testmodule
-							id="f38aedce-6dc2-4eb8-9589-188ce2930519"
+							id="79cfbca7-275b-4cf5-a111-86d1fc273ad9"
 							name="Ueberleiten_2017_01">
 							</testmodule>
 							<testmodule
-							id="e20cf2f2-b476-4c67-99ab-70fd6d0b57bb"
+							id="cd57d604-03b5-41cf-abd2-a066e0d7c1ae"
 							name="Meldung_gleicher_Benutzer_bestaetigen">
 							</testmodule>
 							<testmodule
-							id="2df7d020-bf65-475a-b9d4-534a1811e09c"
+							id="0a371978-c613-421f-99ac-e423cde32fb9"
 							name="Meldung_ueberleiten_2017_01_erfolgreich">
 							</testmodule>
 							<teardown
-							id="81c307f6-6cf5-47e9-bae3-fff831687f92"
+							id="2dfbf3c3-7a36-4882-83ab-9f5b84134732"
 							name="teardown">
 								<testmodule
-								id="0144a8c0-3875-4788-ade6-e8a06220d8b9"
+								id="5d95f67f-72d2-4d05-9070-e953325a3b9b"
 								name="CloseAUT">
 								</testmodule>
 							</teardown>
 						</smartfoldernode>
+					</testcase>
+					<testcase
+					id="b40c7661-bae1-4dc2-895a-4452182d1dc3"
+					name="K_FIBU_User_RSX_mit_Sperre_Parameter_Y_PAR_fuer_User_RS">
 						<smartfoldernode
-						id="43d82f90-cfd8-460f-87ad-eb9876c53efd"
-						name="Y_PAR_Sperre_erneut_setzen">
+						id="ca16c1e9-f635-4802-9c0b-768740fab2d8"
+						name="Y_PAR_Sperre_setzen">
 							<testmodule
-							id="879488ea-4fac-477d-b8c7-230913371f48"
+							id="32946dff-d9d8-4b3f-a3ac-0e944a3455b1"
 							name="Warten_und_Laden">
 							</testmodule>
 							<testmodule
-							id="492063b7-01a2-4021-b516-af4555dd37b6"
+							id="a7c7557a-3e73-4ada-849a-6cf92689f8d6"
 							name="Parameter_0_pruefen">
 							</testmodule>
 							<testmodule
-							id="2d270ce2-8473-4b4c-b9a4-db7759e11ef8"
+							id="06c0fe3c-70eb-4f8e-9239-daedb59b1518"
 							name="YPAR_Parameter_auf_1_aendern">
 							</testmodule>
 							<testmodule
-							id="17a91834-f039-4cde-a69b-0da44f653814"
+							id="cce97a05-570d-4a39-b386-8563e019b07f"
 							name="Parameter_1_pruefen">
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
-						id="57a5bc44-b62e-4ef9-a49f-1fd6146e180e"
+						id="b7fb4f0c-4631-40e1-9d73-4b50171339bd"
+						name="SQL_Update_Y_PAR_Sperre_setzen">
+							<testmodule
+							id="2b1f3154-41d5-4694-8ed8-0531918bba70"
+							name="SQL_Update_y_par_fibu_sperre_auf_1_Select">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="1657bfe1-e6e9-4aac-ac3f-0af0dc9dabaf"
 						name="K_FIBU_User_RSX_mit_Sperre">
 							<setup
-							id="6a7f0491-47a9-4dbe-add6-b4a7fc5f8412"
+							id="178b0a2e-40ad-4571-879f-8c85510c97dd"
 							name="setup">
 								<testmodule
-								id="e60cca17-e3f7-48ff-8ae5-b68829696a56"
+								id="1d201301-6156-4bde-bcf6-bf16d81be57b"
 								name="Start_User_RSX">
 								</testmodule>
 							</setup>
 							<testmodule
-							id="04f2d545-3e60-4a09-add8-9d628e08f377"
+							id="ea9136b0-e5d2-4871-bc8b-ab02117dbede"
 							name="User_RSX_pruefen">
 							</testmodule>
 							<testmodule
-							id="1c68f9f3-5196-410a-9081-cec8e321d5eb"
+							id="40f06805-9f13-4014-92e9-0cd5ac1bd3be"
 							name="Ueberleiten_2017_01">
 							</testmodule>
 							<testmodule
-							id="7557e7c4-2e98-4292-a7cd-a078f344fc27"
+							id="8de910e7-3d32-4149-b9b8-9ffd069fbb00"
 							name="Meldung_anderer_Benutzer">
 							</testmodule>
 							<teardown
-							id="a98b203a-f553-4687-af95-c807942194db"
+							id="60a8fd9f-6584-4cfc-81c9-f23ce906acb3"
 							name="teardown">
 								<testmodule
-								id="258837c4-fbb6-4fac-8047-458579c972d4"
+								id="185da086-6ae5-4d97-9e0d-b26e84037539"
 								name="CloseAUT">
 								</testmodule>
 							</teardown>
 						</smartfoldernode>
+					</testcase>
+					<testcase
+					id="6ba03c8f-4530-433c-8870-16239631a534"
+					name="K_FIBU_User_RSX_OHNE_Sperre_Parameter_Y_PAR">
 						<smartfoldernode
-						id="5517c998-66c5-4ba1-a3c1-faf660de47fa"
+						id="d2508f74-312a-4cd8-8702-ce4498fd8da4"
 						name="Y_PAR_Sperre_aufheben">
 							<testmodule
-							id="be723378-ec68-4890-aac8-7bb8564e5a64"
+							id="9b58ffc9-d018-4b15-ab8b-7697d4e3e277"
 							name="Parameter_1_pruefen">
 							</testmodule>
 							<testmodule
-							id="9c1bb737-1a01-4620-ac1c-6d3476eb0549"
+							id="cc6fac0b-827c-4622-98c6-241e64261456"
 							name="YPAR_Parameter_auf_0_aendern">
 							</testmodule>
 							<testmodule
-							id="6f7be541-b30b-4673-b868-f166fda1af84"
+							id="f85ef207-e9ab-491f-aafa-7e4ec68a0853"
 							name="Parameter_0_pruefen">
+							</testmodule>
+							<teardown
+							id="f85c195b-b971-4220-b8d9-dc39a6ef6b0b"
+							name="teardown">
+								<testmodule
+								id="703c5897-8e71-42a8-82fa-a1027b9e31a9"
+								name="Close_YPAR">
+								</testmodule>
+							</teardown>
+						</smartfoldernode>
+						<smartfoldernode
+						id="b2c160c0-f886-4238-ae27-c2bf386ed002"
+						name="SQL_Update_Y_PAR_Sperre_aufheben">
+							<testmodule
+							id="58d47dd8-24a2-4f26-9a29-06e4f085affb"
+							name="SQL_Update_y_par_fibu_sperre_auf_0_Select">
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
-						id="63727df5-f463-4832-815a-1595b9f67c5d"
+						id="7e79e98f-6ccf-4eca-b849-5a70d6aff50c"
 						name="K_FIBU_User_RSX_Sperre_aufgehoben_ausführen">
 							<setup
-							id="3a89dcd0-dd22-480d-9375-c269ac9006e4"
+							id="02ad5593-b7e5-48cb-bdf3-3102fa18fa67"
 							name="setup">
 								<testmodule
-								id="2485da0c-ae99-4617-a970-2c27a5000545"
+								id="d4bb3c91-0752-4d78-8f9b-1b06b9c71ff6"
 								name="Start_User_RSX">
 								</testmodule>
 							</setup>
 							<testmodule
-							id="36693974-e571-4dc8-a06a-bf3d7bf810bb"
+							id="86166e98-05d1-418d-9654-00073eda4061"
 							name="User_RSX_pruefen">
 							</testmodule>
 							<testmodule
-							id="55904da1-fd67-4d3d-97fb-3f723e4d941a"
+							id="2ade39e7-4910-48f9-820c-af8977e4ea72"
 							name="Ueberleiten_2017_01">
 							</testmodule>
 							<testmodule
-							id="381cd444-09c6-4914-a9e1-2210bd3bad59"
+							id="bb5a73d7-ad8e-473b-9f74-c2aa741fa879"
 							name="Meldung_ueberleiten_2017_01_erfolgreich">
 							</testmodule>
 							<teardown
-							id="07e25145-de9a-45ac-b976-dcbae278f861"
+							id="0358b3d7-e5d9-4336-b452-682fdfed1e1e"
 							name="teardown">
 								<testmodule
-								id="434d822f-89d3-4990-9cc9-ad11a7f7a7ea"
-								name="CloseAUT">
+								id="fe904c8d-8a27-4247-9a0e-0b4ec24d58f8"
+								name="SQL_Update_y_par_fibu_sperre_auf_0_Select">
 								</testmodule>
 								<testmodule
-								id="467b2b2a-83bc-4a78-89b2-10446136e434"
-								name="Close_YPAR">
+								id="2825096a-1df8-4ddd-be70-491ff50c9bb4"
+								name="CloseAUT">
 								</testmodule>
 							</teardown>
 						</smartfoldernode>
@@ -1180,31 +1320,34 @@
 			id="15b14fc9-9297-4f28-8d55-f6b0b94b5d1d">
 			</testcontainer>
 			<testcontainer
-			id="43d82f90-cfd8-460f-87ad-eb9876c53efd">
+			id="1657bfe1-e6e9-4aac-ac3f-0af0dc9dabaf">
 			</testcontainer>
 			<testcontainer
-			id="5517c998-66c5-4ba1-a3c1-faf660de47fa">
+			id="41aaa2ba-ce26-497a-ab42-98c530df98fc">
 			</testcontainer>
 			<testcontainer
-			id="57a5bc44-b62e-4ef9-a49f-1fd6146e180e">
+			id="6ba03c8f-4530-433c-8870-16239631a534">
 			</testcontainer>
 			<testcontainer
-			id="63727df5-f463-4832-815a-1595b9f67c5d">
+			id="7e79e98f-6ccf-4eca-b849-5a70d6aff50c">
 			</testcontainer>
 			<testcontainer
-			id="ab6e3349-6701-419c-856c-719ea1cc62d1">
+			id="848a92b7-39fa-497e-ab20-f85a0caa6b3c">
+			</testcontainer>
+			<testcontainer
+			id="b2c160c0-f886-4238-ae27-c2bf386ed002">
+			</testcontainer>
+			<testcontainer
+			id="b40c7661-bae1-4dc2-895a-4452182d1dc3">
+			</testcontainer>
+			<testcontainer
+			id="b7fb4f0c-4631-40e1-9d73-4b50171339bd">
 			</testcontainer>
 			<testcontainer
 			id="c63c2df0-028f-4402-ad6b-80638e133b0e">
 			</testcontainer>
 			<testcontainer
-			id="c8d5a22b-af50-415d-aa5b-86adcd88edaf">
-			</testcontainer>
-			<testcontainer
-			id="d16c6721-80f4-4cdd-bd28-4086eaeb790a">
-			</testcontainer>
-			<testcontainer
-			id="f850fb34-1e50-40f6-ac6a-2f513f633176">
+			id="ff9ffb94-fe58-4338-b848-1b20d9528dbe">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

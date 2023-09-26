@@ -24,30 +24,32 @@ namespace K_FIBU_001.SQL_Updates_Selects
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The SQL_Update_y_par_fibu_sperre_auf_1 recording.
+    ///The SQL_Update_y_par_fibu_sperre_auf_1_Select recording.
     /// </summary>
     [TestModule("919a529e-274a-4854-ad4a-2d4d2e713e6a", ModuleType.Recording, 1)]
-    public partial class SQL_Update_y_par_fibu_sperre_auf_1 : ITestModule
+    public partial class SQL_Update_y_par_fibu_sperre_auf_1_Select : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::K_FIBU_001.K_FIBU_001Repository repository.
         /// </summary>
         public static global::K_FIBU_001.K_FIBU_001Repository repo = global::K_FIBU_001.K_FIBU_001Repository.Instance;
 
-        static SQL_Update_y_par_fibu_sperre_auf_1 instance = new SQL_Update_y_par_fibu_sperre_auf_1();
+        static SQL_Update_y_par_fibu_sperre_auf_1_Select instance = new SQL_Update_y_par_fibu_sperre_auf_1_Select();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public SQL_Update_y_par_fibu_sperre_auf_1()
+        public SQL_Update_y_par_fibu_sperre_auf_1_Select()
         {
             Update_y_par_Sperre_EIN = "update y_par set par_textk = '1' where par_cd = 'FIBU_SPERRE_100' and par_lfdnr= '0';";
+            Sperre_Kurztext = "";
+            Select_y_par_Sperre = "select par_textk from y_par where par_cd = 'FIBU_SPERRE_100' and par_lfdnr= '0';";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static SQL_Update_y_par_fibu_sperre_auf_1 Instance
+        public static SQL_Update_y_par_fibu_sperre_auf_1_Select Instance
         {
             get { return instance; }
         }
@@ -64,6 +66,30 @@ namespace K_FIBU_001.SQL_Updates_Selects
         {
             get { return _Update_y_par_Sperre_EIN; }
             set { _Update_y_par_Sperre_EIN = value; }
+        }
+
+        string _Sperre_Kurztext;
+
+        /// <summary>
+        /// Gets or sets the value of variable Sperre_Kurztext.
+        /// </summary>
+        [TestVariable("897250cd-95b1-40e4-88fe-fe1464fc6f32")]
+        public string Sperre_Kurztext
+        {
+            get { return _Sperre_Kurztext; }
+            set { _Sperre_Kurztext = value; }
+        }
+
+        string _Select_y_par_Sperre;
+
+        /// <summary>
+        /// Gets or sets the value of variable Select_y_par_Sperre.
+        /// </summary>
+        [TestVariable("62f9278d-bcf4-4f42-ba5e-2a144e7e8855")]
+        public string Select_y_par_Sperre
+        {
+            get { return _Select_y_par_Sperre; }
+            set { _Select_y_par_Sperre = value; }
         }
 
 #endregion
@@ -93,6 +119,10 @@ namespace K_FIBU_001.SQL_Updates_Selects
             Init();
 
             Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement(Update_y_par_Sperre_EIN, "");
+            
+            Sperre_Kurztext = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement(Select_y_par_Sperre, "");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.Validate2Digits(Sperre_Kurztext, "1");
             
         }
 

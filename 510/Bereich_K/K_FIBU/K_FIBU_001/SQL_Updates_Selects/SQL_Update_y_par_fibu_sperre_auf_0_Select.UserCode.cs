@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace Z_UHR_004.Recording
+namespace K_FIBU_001.SQL_Updates_Selects
 {
-    public partial class Einlesen_des_Ranoagent
+    public partial class SQL_Update_y_par_fibu_sperre_auf_0_Select
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

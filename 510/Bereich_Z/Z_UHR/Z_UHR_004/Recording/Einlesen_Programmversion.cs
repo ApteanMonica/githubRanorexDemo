@@ -20,50 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace K_FIBU_001.SQL_Updates_Selects
+namespace Z_UHR_004.Recording
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The SQL_Update_y_par_fibu_sperre_auf_0 recording.
+    ///The Einlesen_Programmversion recording.
     /// </summary>
-    [TestModule("035bc0f5-13d1-432c-901a-6bdf52575abf", ModuleType.Recording, 1)]
-    public partial class SQL_Update_y_par_fibu_sperre_auf_0 : ITestModule
+    [TestModule("2f4d2357-6403-402d-b60a-96aa028bfea6", ModuleType.Recording, 1)]
+    public partial class Einlesen_Programmversion : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::K_FIBU_001.K_FIBU_001Repository repository.
+        /// Holds an instance of the global::Z_UHR_004.Z_UHR_004Repository repository.
         /// </summary>
-        public static global::K_FIBU_001.K_FIBU_001Repository repo = global::K_FIBU_001.K_FIBU_001Repository.Instance;
+        public static global::Z_UHR_004.Z_UHR_004Repository repo = global::Z_UHR_004.Z_UHR_004Repository.Instance;
 
-        static SQL_Update_y_par_fibu_sperre_auf_0 instance = new SQL_Update_y_par_fibu_sperre_auf_0();
+        static Einlesen_Programmversion instance = new Einlesen_Programmversion();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public SQL_Update_y_par_fibu_sperre_auf_0()
+        public Einlesen_Programmversion()
         {
-            Update_y_par_Sperre_AUS = "update y_par set par_textk = '0' where par_cd = 'FIBU_SPERRE_100' and par_lfdnr= '0';";
+            Programmversion = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static SQL_Update_y_par_fibu_sperre_auf_0 Instance
+        public static Einlesen_Programmversion Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Update_y_par_Sperre_AUS;
+        string _Programmversion;
 
         /// <summary>
-        /// Gets or sets the value of variable Update_y_par_Sperre_AUS.
+        /// Gets or sets the value of variable Programmversion.
         /// </summary>
-        [TestVariable("912277f7-7311-4d78-a3d0-da98514eba68")]
-        public string Update_y_par_Sperre_AUS
+        [TestVariable("f3ef2bff-f2e4-40aa-b29a-58e58a317d8a")]
+        public string Programmversion
         {
-            get { return _Update_y_par_Sperre_AUS; }
-            set { _Update_y_par_Sperre_AUS = value; }
+            get { return _Programmversion; }
+            set { _Programmversion = value; }
         }
 
 #endregion
@@ -92,7 +92,9 @@ namespace K_FIBU_001.SQL_Updates_Selects
 
             Init();
 
-            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement(Update_y_par_Sperre_AUS, "");
+            Programmversion = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadProgrammVersion("");
+            
+            Report.Log(ReportLevel.Info, "User", Programmversion, new RecordItemIndex(1));
             
         }
 
