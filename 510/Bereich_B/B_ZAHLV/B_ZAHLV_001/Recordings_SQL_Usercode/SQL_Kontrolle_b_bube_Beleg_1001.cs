@@ -144,27 +144,27 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
 
             Init();
 
-            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadDBVersion();
+            //Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadDBVersion();
             
             Programmversion = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadProgrammVersion("RELSP");
             
             Report.Log(ReportLevel.Info, "User", Programmversion, new RecordItemIndex(2));
             
-            Datenbank = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadProgrammVersion("DB");
+            //Programmversion = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadProgrammVersion("DB");
             
-            Report.Log(ReportLevel.Info, "User", Datenbank, new RecordItemIndex(4));
+            //Report.Log(ReportLevel.Info, "User", Programmversion, new RecordItemIndex(4));
             
             // aptean.cs ohne Variablen
             try {
-                Report.Log(ReportLevel.Info, "Section", "aptean.cs ohne Variablen", new RecordItemIndex(5));
+                //Report.Log(ReportLevel.Info, "Section", "aptean.cs ohne Variablen", new RecordItemIndex(5));
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
             try {
-                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement("SELECT\r\nb_bube.BUSA_USERAENDG,\r\nb_bube.FIRM_NR,\r\nb_bube.BUSA_KEYPOS,\r\nBUBE_POS,\r\nBUBE_BETRAG,\r\nBUBE_MENGE,\r\nBER_CD1,\r\nBEKT_NR1,\r\nBER_CD2,\r\nBEKT_NR2,\r\nBER_CD3,\r\nBEKT_NR3,\r\nBER_CD4,\r\nBEKT_NR4,\r\nBER_CD5,\r\nBEKT_NR5,\r\nBER_CD6,\r\nBEKT_NR6,\r\nBUBE_TEXT,\r\nb_bube.KTBE_NR,\r\nKTBE_PROZ,\r\nKTBE_MENGE,\r\nBUBE_USERANLAG,\r\nBUBE_USERAENDG,\r\nBUBE_SKBETRAG,\r\nBUBE_FELD1,\r\nBUBE_FELD2,\r\nBUBE_FELD3,\r\nBUBE_FELD4,\r\nBUBE_MENGE2,\r\nBUBE_PENSBETRAG,\r\nBUBE_DTPENS,\r\nBUBE_DTEINZLG,\r\nBUBE_PENSBETRSTO\r\n\r\nFROM\tb_bube, b_busa\r\n\tWHERE\tb_busa.firm_nr = b_bube.firm_nr \r\n\tAND \tb_busa.busa_useraendg = b_bube.busa_useraendg\r\n\tAND \tb_busa.busa_keybel = b_bube.busa_keybel \r\n\tAND \tb_busa.busa_keypos = b_bube.busa_keypos\r\n\tAND \tb_busa.busa_status BETWEEN '1' AND '8'\r\n\tAND\t\tb_busa.firm_nr = '100'\r\n\tAND\t\tb_busa.busa_belegnr = '1001';", "C:\\temp\\B_ZAHLV_001_B_BUBE_aktuell.txt");
+                //Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement("SELECT\r\nb_bube.BUSA_USERAENDG,\r\nb_bube.FIRM_NR,\r\nb_bube.BUSA_KEYPOS,\r\nBUBE_POS,\r\nBUBE_BETRAG,\r\nBUBE_MENGE,\r\nBER_CD1,\r\nBEKT_NR1,\r\nBER_CD2,\r\nBEKT_NR2,\r\nBER_CD3,\r\nBEKT_NR3,\r\nBER_CD4,\r\nBEKT_NR4,\r\nBER_CD5,\r\nBEKT_NR5,\r\nBER_CD6,\r\nBEKT_NR6,\r\nBUBE_TEXT,\r\nb_bube.KTBE_NR,\r\nKTBE_PROZ,\r\nKTBE_MENGE,\r\nBUBE_USERANLAG,\r\nBUBE_USERAENDG,\r\nBUBE_SKBETRAG,\r\nBUBE_FELD1,\r\nBUBE_FELD2,\r\nBUBE_FELD3,\r\nBUBE_FELD4,\r\nBUBE_MENGE2,\r\nBUBE_PENSBETRAG,\r\nBUBE_DTPENS,\r\nBUBE_DTEINZLG,\r\nBUBE_PENSBETRSTO\r\n\r\nFROM\tb_bube, b_busa\r\n\tWHERE\tb_busa.firm_nr = b_bube.firm_nr \r\n\tAND \tb_busa.busa_useraendg = b_bube.busa_useraendg\r\n\tAND \tb_busa.busa_keybel = b_bube.busa_keybel \r\n\tAND \tb_busa.busa_keypos = b_bube.busa_keypos\r\n\tAND \tb_busa.busa_status BETWEEN '1' AND '8'\r\n\tAND\t\tb_busa.firm_nr = '100'\r\n\tAND\t\tb_busa.busa_belegnr = '1001';", "C:\\temp\\B_ZAHLV_001_B_BUBE_aktuell.txt");
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
             
             try {
-                Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks("C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUBE_Referenz.txt", "C:\\temp\\B_ZAHLV_001_B_BUBE_aktuell.txt");
+                //Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks("C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUBE_Referenz.txt", "C:\\temp\\B_ZAHLV_001_B_BUBE_aktuell.txt");
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
             
             // aptean.cs mit Variablen

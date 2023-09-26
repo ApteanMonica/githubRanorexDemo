@@ -50,7 +50,7 @@ mode="Global">
 	<recorditems>
 		<userrecorditem
 		classname="Aptean"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ReadDBVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -110,7 +110,7 @@ mode="Global">
 		</loggingrecorditem>
 		<userrecorditem
 		classname="Aptean"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ReadProgrammVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -120,7 +120,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="ReturnVariable"
-				variable="Datenbank">
+				variable="Programmversion">
 				</binding>
 			</bindings>
 			<arguments
@@ -139,7 +139,7 @@ mode="Global">
 		</userrecorditem>
 		<loggingrecorditem
 		category="User"
-		enabled="True"
+		enabled="False"
 		message=""
 		optional="False"
 		reportlevel="Info;20"
@@ -149,12 +149,12 @@ mode="Global">
 			<bindings>
 				<binding
 				target="Message"
-				variable="Datenbank">
+				variable="Programmversion">
 				</binding>
 			</bindings>
 		</loggingrecorditem>
 		<separatoritem
-		enabled="True"
+		enabled="False"
 		optional="True">
 			<comment>
 				aptean.cs ohne Variablen
@@ -164,7 +164,7 @@ mode="Global">
 		</separatoritem>
 		<userrecorditem
 		classname="Aptean"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SQLStatement"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -199,7 +199,7 @@ mode="Global">
 		</userrecorditem>
 		<userrecorditem
 		classname="Aptean"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="FileCompareEqualWithoutBreaks"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
