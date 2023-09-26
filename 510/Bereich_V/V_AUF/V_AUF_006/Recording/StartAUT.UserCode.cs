@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace Z_UHR_004.Recording
+namespace V_AUF_006.Recording
 {
-    public partial class Einlesen_des_Ranoagent
+    public partial class StartAUT
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace V_AUF_006
+namespace V_AUF_006.Recording
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
@@ -30,9 +30,9 @@ namespace V_AUF_006
     public partial class StartAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the V_AUF_006Repository repository.
+        /// Holds an instance of the global::V_AUF_006.V_AUF_006Repository repository.
         /// </summary>
-        public static V_AUF_006Repository repo = V_AUF_006Repository.Instance;
+        public static global::V_AUF_006.V_AUF_006Repository repo = global::V_AUF_006.V_AUF_006Repository.Instance;
 
         static StartAUT instance = new StartAUT();
 

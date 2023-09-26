@@ -19,13 +19,13 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Einlesen_des_Ranoagent"
+	classname="Einlesen_Programmversion"
 	namespace="Z_UHR_004.Recording">
 	</codegen>
 	<variables>
 		<var
 		id="f3ef2bff-f2e4-40aa-b29a-58e58a317d8a"
-		name="computerName">
+		name="Programmversion">
 		</var>
 	</variables>
 	<recorditems>
@@ -33,7 +33,7 @@ mode="Global">
 		classname="Aptean"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="GetHost"
+		methodname="ReadProgrammVersion"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
 		optional="False">
 			<comment>
@@ -41,11 +41,20 @@ mode="Global">
 			<bindings>
 				<binding
 				target="ReturnVariable"
-				variable="computerName">
+				variable="Programmversion">
 				</binding>
 			</bindings>
 			<arguments
-			id="d541446d-3f14-43fa-a63a-12065342732c">
+			id="612c403b-107b-4742-92f0-c8eb3c8ab797">
+				<argument
+				argname="expectedFormat"
+				id="91e0e147-2494-46f0-9d02-a24e9c71d57a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
 			</arguments>
 		</userrecorditem>
 		<loggingrecorditem
@@ -60,7 +69,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="Message"
-				variable="computerName">
+				variable="Programmversion">
 				</binding>
 			</bindings>
 		</loggingrecorditem>
@@ -80,7 +89,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Einlesen_des_Ranoagent.UserCode.cs
+		Einlesen_Programmversion.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

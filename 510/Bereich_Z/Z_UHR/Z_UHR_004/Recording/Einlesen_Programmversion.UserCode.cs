@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace V_AUF_006
+namespace Z_UHR_004.Recording
 {
-    public partial class CloseAUT
+    public partial class Einlesen_Programmversion
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

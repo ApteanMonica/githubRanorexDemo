@@ -62,15 +62,15 @@
 			</testmodule>
 			<testmodule
 			id="2078879f-2937-4be4-b0e3-33c15dde20a0"
-			name="Einlesen_des_Ranoagent"
+			name="Einlesen_Programmversion"
 			ref="2f4d2357-6403-402d-b60a-96aa028bfea6"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="computerName"
+					dataname="Programmversion"
 					datasourceid="9a5f6a39-68d8-46de-8df3-623bc060cb9a"
 					variableid="f3ef2bff-f2e4-40aa-b29a-58e58a317d8a"
-					variablename="computerName">
+					variablename="Programmversion">
 					</var>
 				</databinding>
 			</testmodule>
@@ -86,14 +86,14 @@
 							<datavaluesource>
 								<databinding
 								bindingtype="Parameter"
-								dataname="computerName"
+								dataname="Programmversion"
 								id="9a5f6a39-68d8-46de-8df3-623bc060cb9a">
 								</databinding>
 							</datavaluesource>
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="SBG-RANOAGENT2">
+							value="510">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -107,22 +107,39 @@
 			id="25487ef4-8c8d-4176-ab88-77b30882925e"
 			name="511,521">
 				<conditiongroup
-				comparison="AND"
+				comparison="OR"
 				enabled="True">
 					<condition
-					comparison="IsNotEqual">
+					comparison="IsEqual">
 						<leftvalue>
 							<datavaluesource>
 								<databinding
 								bindingtype="Parameter"
-								dataname="computerName"
+								dataname="Programmversion"
 								id="9a5f6a39-68d8-46de-8df3-623bc060cb9a">
 								</databinding>
 							</datavaluesource>
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="SBG-RANOAGENT2">
+							value="511">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Programmversion"
+								id="9a5f6a39-68d8-46de-8df3-623bc060cb9a">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="521">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -501,7 +518,7 @@
 					value="Genehmigt">
 					</param>
 					<param
-					name="computerName"
+					name="Programmversion"
 					value="">
 					</param>
 				</parameters>
@@ -771,7 +788,7 @@
 						</testmodule>
 						<testmodule
 						id="2078879f-2937-4be4-b0e3-33c15dde20a0"
-						name="Einlesen_des_Ranoagent">
+						name="Einlesen_Programmversion">
 						</testmodule>
 						<smartfoldernode
 						id="20d2fb06-a7bc-4b51-ae17-2d532ecfcd73"

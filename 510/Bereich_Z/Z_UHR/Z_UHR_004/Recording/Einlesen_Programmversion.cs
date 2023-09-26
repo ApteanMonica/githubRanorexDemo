@@ -24,46 +24,46 @@ namespace Z_UHR_004.Recording
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Einlesen_des_Ranoagent recording.
+    ///The Einlesen_Programmversion recording.
     /// </summary>
     [TestModule("2f4d2357-6403-402d-b60a-96aa028bfea6", ModuleType.Recording, 1)]
-    public partial class Einlesen_des_Ranoagent : ITestModule
+    public partial class Einlesen_Programmversion : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::Z_UHR_004.Z_UHR_004Repository repository.
         /// </summary>
         public static global::Z_UHR_004.Z_UHR_004Repository repo = global::Z_UHR_004.Z_UHR_004Repository.Instance;
 
-        static Einlesen_des_Ranoagent instance = new Einlesen_des_Ranoagent();
+        static Einlesen_Programmversion instance = new Einlesen_Programmversion();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Einlesen_des_Ranoagent()
+        public Einlesen_Programmversion()
         {
-            computerName = "";
+            Programmversion = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Einlesen_des_Ranoagent Instance
+        public static Einlesen_Programmversion Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _computerName;
+        string _Programmversion;
 
         /// <summary>
-        /// Gets or sets the value of variable computerName.
+        /// Gets or sets the value of variable Programmversion.
         /// </summary>
         [TestVariable("f3ef2bff-f2e4-40aa-b29a-58e58a317d8a")]
-        public string computerName
+        public string Programmversion
         {
-            get { return _computerName; }
-            set { _computerName = value; }
+            get { return _Programmversion; }
+            set { _Programmversion = value; }
         }
 
 #endregion
@@ -92,9 +92,9 @@ namespace Z_UHR_004.Recording
 
             Init();
 
-            computerName = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetHost();
+            Programmversion = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadProgrammVersion("");
             
-            Report.Log(ReportLevel.Info, "User", computerName, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "User", Programmversion, new RecordItemIndex(1));
             
         }
 

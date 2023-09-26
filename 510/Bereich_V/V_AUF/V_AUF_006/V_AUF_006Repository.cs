@@ -177,6 +177,7 @@ namespace V_AUF_006
             RepoItemInfo _dfaufkadrwareInfo;
             RepoItemInfo _maximierenInfo;
             RepoItemInfo _dfartnrInfo;
+            RepoItemInfo _artnr1Info;
 
             /// <summary>
             /// Creates a new FrmAufk  folder.
@@ -210,6 +211,7 @@ namespace V_AUF_006
                 _dfaufkadrwareInfo = new RepoItemInfo(this, "DfAufkAdrWare", ".//tabpage[@controlname='tpKopf']/text[@controlname='dfAufk_adr_ware']", "", 30000, null, "e826993b-c8e2-452d-bf01-0568406b0e8f");
                 _maximierenInfo = new RepoItemInfo(this, "Maximieren", "?/?/button[@accessiblename='Maximieren']", "", 30000, null, "099501f1-098e-4194-b081-cc39a5d42ee8");
                 _dfartnrInfo = new RepoItemInfo(this, "DfArtNr", ".//tabpage[@controlname='tpPos']//tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfArt_nr']", "", 30000, null, "2493ed89-40b4-48cc-a81c-ce1c6a6b47c6");
+                _artnr1Info = new RepoItemInfo(this, "ArtNr1", ".//tabpage[@controlname='tpPos']/?/?/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/?/?/text[@accessiblename='Art-Nr.']", "", 30000, null, "6108411a-7171-4bd9-8438-921d822fb7c2");
             }
 
             /// <summary>
@@ -833,6 +835,30 @@ namespace V_AUF_006
                 get
                 {
                     return _dfartnrInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ArtNr1 item.
+            /// </summary>
+            [RepositoryItem("6108411a-7171-4bd9-8438-921d822fb7c2")]
+            public virtual Ranorex.Text ArtNr1
+            {
+                get
+                {
+                    return _artnr1Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ArtNr1 item info.
+            /// </summary>
+            [RepositoryItemInfo("6108411a-7171-4bd9-8438-921d822fb7c2")]
+            public virtual RepoItemInfo ArtNr1Info
+            {
+                get
+                {
+                    return _artnr1Info;
                 }
             }
 
