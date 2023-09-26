@@ -24,22 +24,22 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Fehlerprotokoll_Verbuchung_aufrufen recording.
+    ///The Fehlerprotokoll_Verbuchung_aufrufen_510 recording.
     /// </summary>
     [TestModule("63ec443e-b1ab-4b2a-ad84-22f092dcee8e", ModuleType.Recording, 1)]
-    public partial class Fehlerprotokoll_Verbuchung_aufrufen : ITestModule
+    public partial class Fehlerprotokoll_Verbuchung_aufrufen_510 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_005.B_EXOPV_005Repository repository.
         /// </summary>
         public static global::B_EXOPV_005.B_EXOPV_005Repository repo = global::B_EXOPV_005.B_EXOPV_005Repository.Instance;
 
-        static Fehlerprotokoll_Verbuchung_aufrufen instance = new Fehlerprotokoll_Verbuchung_aufrufen();
+        static Fehlerprotokoll_Verbuchung_aufrufen_510 instance = new Fehlerprotokoll_Verbuchung_aufrufen_510();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Fehlerprotokoll_Verbuchung_aufrufen()
+        public Fehlerprotokoll_Verbuchung_aufrufen_510()
         {
             Fehlerprotokoll_Verbuchung_Datei = "Fehlerprotokoll_b_exopv_005_verbuch.txt";
         }
@@ -47,7 +47,7 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Fehlerprotokoll_Verbuchung_aufrufen Instance
+        public static Fehlerprotokoll_Verbuchung_aufrufen_510 Instance
         {
             get { return instance; }
         }

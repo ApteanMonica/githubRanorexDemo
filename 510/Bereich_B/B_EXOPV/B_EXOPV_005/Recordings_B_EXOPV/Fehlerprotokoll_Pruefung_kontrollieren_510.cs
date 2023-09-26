@@ -24,29 +24,29 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Fehlerprotokoll_Pruefung_kontrollieren_510_511 recording.
+    ///The Fehlerprotokoll_Pruefung_kontrollieren_510 recording.
     /// </summary>
     [TestModule("304c655b-ed07-4a16-9e9c-c93d868439c4", ModuleType.Recording, 1)]
-    public partial class Fehlerprotokoll_Pruefung_kontrollieren_510_511 : ITestModule
+    public partial class Fehlerprotokoll_Pruefung_kontrollieren_510 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_005.B_EXOPV_005Repository repository.
         /// </summary>
         public static global::B_EXOPV_005.B_EXOPV_005Repository repo = global::B_EXOPV_005.B_EXOPV_005Repository.Instance;
 
-        static Fehlerprotokoll_Pruefung_kontrollieren_510_511 instance = new Fehlerprotokoll_Pruefung_kontrollieren_510_511();
+        static Fehlerprotokoll_Pruefung_kontrollieren_510 instance = new Fehlerprotokoll_Pruefung_kontrollieren_510();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Fehlerprotokoll_Pruefung_kontrollieren_510_511()
+        public Fehlerprotokoll_Pruefung_kontrollieren_510()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Fehlerprotokoll_Pruefung_kontrollieren_510_511 Instance
+        public static Fehlerprotokoll_Pruefung_kontrollieren_510 Instance
         {
             get { return instance; }
         }

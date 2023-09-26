@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_EXOPV_005.Recordings_B_EXOPV
 {
-    public partial class Fehlerprotokoll_Verbuchung_aufrufen
+    public partial class Einlesen_Programmversion
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

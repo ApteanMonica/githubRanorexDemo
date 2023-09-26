@@ -23,16 +23,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Stapel_Herkunft"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="80147ceb-e943-46c5-a7c1-f05b59ef1cce"
-					variablename="Stapel_Herkunft">
-					</var>
-					<var
 					dataname="Fehlerprotokoll_Pruefung"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="12d7b065-2a01-4bfa-991e-6d21537a9d1b"
 					variablename="Fehlerprotokoll_Pruefung">
+					</var>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="80147ceb-e943-46c5-a7c1-f05b59ef1cce"
+					variablename="Stapel_Herkunft">
 					</var>
 				</databinding>
 			</testmodule>
@@ -46,16 +46,16 @@
 				</description>
 				<databinding>
 					<var
-					dataname="LF_01"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="bc21bb92-472a-4554-aa1b-3c095fcb6ff1"
-					variablename="LF_01">
-					</var>
-					<var
 					dataname="LF_02"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="38d8351a-ae3e-4f48-a34f-bf2101fe0e21"
 					variablename="LF_02">
+					</var>
+					<var
+					dataname="LF_01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="bc21bb92-472a-4554-aa1b-3c095fcb6ff1"
+					variablename="LF_01">
 					</var>
 				</databinding>
 			</testmodule>
@@ -66,16 +66,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="5a4f1278-f69f-4a30-96ae-4fcc7e8fe361"
-					variablename="Programm">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="5479e8eb-b655-444d-89c6-64953acc0dfd"
 					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="5a4f1278-f69f-4a30-96ae-4fcc7e8fe361"
+					variablename="Programm">
 					</var>
 				</databinding>
 			</testmodule>
@@ -125,15 +125,15 @@
 			</setup>
 			<testmodule
 			id="20d64d40-d955-47be-be3e-ab97514867b0"
-			name="Einlesen_Ranoagent"
+			name="Einlesen_Programmversion"
 			ref="9d9c8891-1cab-4f86-9ee5-997d632a9cc1"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Computername"
+					dataname="Programmversion"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="e4152cbf-919e-43d0-80e6-7550949404b6"
-					variablename="Computername">
+					variablename="Programmversion">
 					</var>
 				</databinding>
 			</testmodule>
@@ -182,41 +182,41 @@
 			</teardown>
 			<smartfoldernode
 			id="3493d726-dda9-4a66-aa8e-eeb65c12fe33"
-			name="521_(NOT_510,511)">
+			name="521,511">
 				<conditiongroup
-				comparison="AND"
+				comparison="OR"
 				enabled="True">
 					<condition
-					comparison="IsNotEqual">
+					comparison="IsEqual">
 						<leftvalue>
 							<datavaluesource>
 								<databinding
 								bindingtype="Parameter"
-								dataname="Computername"
+								dataname="Programmversion"
 								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
 								</databinding>
 							</datavaluesource>
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="SBG-RANOAGENT2">
+							value="521">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
 					<condition
-					comparison="IsNotEqual">
+					comparison="IsEqual">
 						<leftvalue>
 							<datavaluesource>
 								<databinding
 								bindingtype="Parameter"
-								dataname="Computername"
+								dataname="Programmversion"
 								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
 								</databinding>
 							</datavaluesource>
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="SBG-RANOAGENT3">
+							value="511">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -237,7 +237,7 @@
 			</testcase>
 			<testmodule
 			id="375b4426-142a-4e69-a479-cfd8c6217331"
-			name="Fehlerprotokoll_Verbuchung_kontrollieren_510_511"
+			name="Fehlerprotokoll_Verbuchung_kontrollieren_510"
 			ref="0d5d03d9-80e7-46ca-9c80-cc48b04743c6"
 			type="Recording">
 				<description>
@@ -268,7 +268,7 @@
 			</testmodule>
 			<testmodule
 			id="4cd6b1bb-a584-4c87-a8a4-199e9c62e0be"
-			name="Fehlerprotokoll_Verbuchung_aufrufen"
+			name="Fehlerprotokoll_Verbuchung_aufrufen_510"
 			ref="63ec443e-b1ab-4b2a-ad84-22f092dcee8e"
 			type="Recording">
 				<description>
@@ -289,7 +289,7 @@
 			</setup>
 			<smartfoldernode
 			id="63b36fc8-5215-4dbd-bc3b-9ee2b3ad9e77"
-			name="510,511,WSPET">
+			name="510">
 				<conditiongroup
 				comparison="OR"
 				enabled="True">
@@ -299,48 +299,14 @@
 							<datavaluesource>
 								<databinding
 								bindingtype="Parameter"
-								dataname="Computername"
+								dataname="Programmversion"
 								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
 								</databinding>
 							</datavaluesource>
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="SBG-RANOAGENT2">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Computername"
-								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="SBG-RANOAGENT3">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Computername"
-								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="WSPET">
+							value="510">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -408,7 +374,7 @@
 			</teardown>
 			<smartfoldernode
 			id="8b17d980-993b-4896-a681-5422a9e52217"
-			name="510,511,WSPET">
+			name="510">
 				<conditiongroup
 				comparison="OR"
 				enabled="True">
@@ -418,78 +384,30 @@
 							<datavaluesource>
 								<databinding
 								bindingtype="Parameter"
-								dataname="Computername"
+								dataname="Programmversion"
 								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
 								</databinding>
 							</datavaluesource>
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="SBG-RANOAGENT2">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Computername"
-								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="SBG-RANOAGENT3">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Computername"
-								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="WSPET">
+							value="510">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
 				</conditiongroup>
 			</smartfoldernode>
 			<testmodule
-			id="8b352851-9f96-4498-be12-0ae18f83f1bb"
-			name="Einlesen_Ranoagent"
-			ref="9d9c8891-1cab-4f86-9ee5-997d632a9cc1"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Computername"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="e4152cbf-919e-43d0-80e6-7550949404b6"
-					variablename="Computername">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="9452f4d0-01e5-4ad9-bf12-1cf061736ac9"
-			name="Einlesen_Ranoagent"
+			name="Einlesen_Programmversion"
 			ref="9d9c8891-1cab-4f86-9ee5-997d632a9cc1"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Computername"
+					dataname="Programmversion"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="e4152cbf-919e-43d0-80e6-7550949404b6"
-					variablename="Computername">
+					variablename="Programmversion">
 					</var>
 				</databinding>
 			</testmodule>
@@ -563,7 +481,7 @@
 			</testmodule>
 			<testmodule
 			id="986b7462-c88d-4f76-86a9-6306e08af02c"
-			name="Fehlerprotokoll_Verbuchung_kontrollieren_ab_521_SP12"
+			name="Fehlerprotokoll_Verbuchung_kontrollieren"
 			ref="1bf2f54d-35a5-4bcb-92a7-854c26e69497"
 			type="Recording">
 			</testmodule>
@@ -755,6 +673,10 @@
 					value="">
 					</param>
 					<param
+					name="Programmversion"
+					value="">
+					</param>
+					<param
 					name="Stapel_Herkunft"
 					value="B_EXOPV_005">
 					</param>
@@ -814,10 +736,6 @@
 					name="Inhalt_Buchungsdatum_Zeile21"
 					value="">
 					</param>
-					<param
-					name="Computername"
-					value="">
-					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -828,7 +746,7 @@
 			</testmodule>
 			<testmodule
 			id="a7c6b2fd-58f7-4a74-b4c4-f793135eba91"
-			name="Fehlerprotokoll_Pruefung_kontrollieren_510_511"
+			name="Fehlerprotokoll_Pruefung_kontrollieren_510"
 			ref="304c655b-ed07-4a16-9e9c-c93d868439c4"
 			type="Recording">
 			</testmodule>
@@ -938,49 +856,7 @@
 			</testmodule>
 			<smartfoldernode
 			id="c1699588-d955-4d76-9eb0-cd33276e1ef5"
-			name="521_(NOT_510,511)">
-				<conditiongroup
-				comparison="AND"
-				enabled="True">
-					<condition
-					comparison="IsNotEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Computername"
-								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="SBG-RANOAGENT2">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsNotEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Computername"
-								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="SBG-RANOAGENT3">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
-			<smartfoldernode
-			id="c54a212a-19ec-4574-a711-de66a944c10c"
-			name="510,511,WSPET">
+			name="521,511">
 				<conditiongroup
 				comparison="OR"
 				enabled="True">
@@ -990,14 +866,14 @@
 							<datavaluesource>
 								<databinding
 								bindingtype="Parameter"
-								dataname="Computername"
+								dataname="Programmversion"
 								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
 								</databinding>
 							</datavaluesource>
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="SBG-RANOAGENT2">
+							value="521">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -1007,31 +883,39 @@
 							<datavaluesource>
 								<databinding
 								bindingtype="Parameter"
-								dataname="Computername"
+								dataname="Programmversion"
 								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
 								</databinding>
 							</datavaluesource>
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="SBG-RANOAGENT3">
+							value="511">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
+				</conditiongroup>
+			</smartfoldernode>
+			<smartfoldernode
+			id="c54a212a-19ec-4574-a711-de66a944c10c"
+			name="510">
+				<conditiongroup
+				comparison="OR"
+				enabled="True">
 					<condition
 					comparison="IsEqual">
 						<leftvalue>
 							<datavaluesource>
 								<databinding
 								bindingtype="Parameter"
-								dataname="Computername"
+								dataname="Programmversion"
 								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
 								</databinding>
 							</datavaluesource>
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="WSPET">
+							value="510">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -1213,10 +1097,6 @@
 							id="182c69d0-10be-4f93-ac48-872317a99201"
 							name="Start_B_EXOPS">
 							</testmodule>
-							<testmodule
-							id="8b352851-9f96-4498-be12-0ae18f83f1bb"
-							name="Einlesen_Ranoagent">
-							</testmodule>
 						</setup>
 						<testmodule
 						id="f8634cf6-df12-495c-b102-8c2bae4614df"
@@ -1236,10 +1116,6 @@
 							<testmodule
 							id="17c6ae13-bb30-4564-8ea2-088fea244e61"
 							name="StartAUT">
-							</testmodule>
-							<testmodule
-							id="20d64d40-d955-47be-be3e-ab97514867b0"
-							name="Einlesen_Ranoagent">
 							</testmodule>
 						</setup>
 						<testmodule
@@ -1266,17 +1142,21 @@
 						id="be64b191-26b0-436d-a379-41d0577b8a72"
 						name="Fehlerprotokoll_Pruefung_aufrufen">
 						</testmodule>
+						<testmodule
+						id="20d64d40-d955-47be-be3e-ab97514867b0"
+						name="Einlesen_Programmversion">
+						</testmodule>
 						<smartfoldernode
 						id="c54a212a-19ec-4574-a711-de66a944c10c"
-						name="510,511,WSPET">
+						name="510">
 							<testmodule
 							id="a7c6b2fd-58f7-4a74-b4c4-f793135eba91"
-							name="Fehlerprotokoll_Pruefung_kontrollieren_510_511">
+							name="Fehlerprotokoll_Pruefung_kontrollieren_510">
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
 						id="3493d726-dda9-4a66-aa8e-eeb65c12fe33"
-						name="521_(NOT_510,511)">
+						name="521,511">
 							<testmodule
 							id="efc8c5f2-827c-460d-b33f-eee945b6e1db"
 							name="Fehlerprotokoll_Pruefung_kontrollieren">
@@ -1311,10 +1191,6 @@
 					id="7170d466-0f40-4267-8615-76aa983568a1"
 					name="B_EXOPV_verbuchen_mit_Akzeptieren_und_neuer_Belegnummer">
 						<testmodule
-						id="9452f4d0-01e5-4ad9-bf12-1cf061736ac9"
-						name="Einlesen_Ranoagent">
-						</testmodule>
-						<testmodule
 						id="d2c51767-9b26-45e3-8479-5bb85f77b077"
 						name="Tagesdatum_ermitteln">
 						</testmodule>
@@ -1330,28 +1206,32 @@
 						id="9b9512ab-a325-4053-b7ac-a9844c0eb031"
 						name="Verbuchung_Meldungen_verbucht_Fehler">
 						</testmodule>
+						<testmodule
+						id="9452f4d0-01e5-4ad9-bf12-1cf061736ac9"
+						name="Einlesen_Programmversion">
+						</testmodule>
 						<smartfoldernode
 						id="8b17d980-993b-4896-a681-5422a9e52217"
-						name="510,511,WSPET">
+						name="510">
 							<testmodule
 							id="4cd6b1bb-a584-4c87-a8a4-199e9c62e0be"
-							name="Fehlerprotokoll_Verbuchung_aufrufen">
+							name="Fehlerprotokoll_Verbuchung_aufrufen_510">
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
 						id="63b36fc8-5215-4dbd-bc3b-9ee2b3ad9e77"
-						name="510,511,WSPET">
+						name="510">
 							<testmodule
 							id="375b4426-142a-4e69-a479-cfd8c6217331"
-							name="Fehlerprotokoll_Verbuchung_kontrollieren_510_511">
+							name="Fehlerprotokoll_Verbuchung_kontrollieren_510">
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
 						id="c1699588-d955-4d76-9eb0-cd33276e1ef5"
-						name="521_(NOT_510,511)">
+						name="521,511">
 							<testmodule
 							id="986b7462-c88d-4f76-86a9-6306e08af02c"
-							name="Fehlerprotokoll_Verbuchung_kontrollieren_ab_521_SP12">
+							name="Fehlerprotokoll_Verbuchung_kontrollieren">
 							</testmodule>
 						</smartfoldernode>
 						<teardown

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="1bf2f54d-35a5-4bcb-92a7-854c26e69497"
+id="304c655b-ed07-4a16-9e9c-c93d868439c4"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,17 +19,26 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Fehlerprotokoll_Verbuchung_kontrollieren_ab_521_SP12"
+	classname="Fehlerprotokoll_Pruefung_kontrollieren_510"
 	namespace="B_EXOPV_005.Recordings_B_EXOPV">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Prüfung Zeilen extra
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
 		optional="False"
-		searchpropertyid="375e389d-c404-4634-bd9f-67ed89c59105">
+		searchpropertyid="21e3fa43-2d1c-4c10-893e-97fc2e06e142">
 			<comment>
 			</comment>
 			<bindings>
@@ -47,14 +56,14 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				[100] Starte Verbuchung B_EXOPV_005
+				Starte Prüfung B_EXOPV_005
 			</matchvalue>
 		</validationitem>
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
 		optional="False"
-		searchpropertyid="375e389d-c404-4634-bd9f-67ed89c59105">
+		searchpropertyid="21e3fa43-2d1c-4c10-893e-97fc2e06e142">
 			<comment>
 			</comment>
 			<bindings>
@@ -72,89 +81,14 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				[100] Beende Verbuchung B_EXOPV_005
+				Beende Prüfung B_EXOPV_005
 			</matchvalue>
 		</validationitem>
 		<validationitem
 		action="AttributeContains"
-		enabled="True"
+		enabled="False"
 		optional="False"
-		searchpropertyid="375e389d-c404-4634-bd9f-67ed89c59105">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="ac8e93ef-39e2-41c3-bbd0-4ee6b455357e"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@title~'Editor']/text[@controlid='15']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				Anzahl Buchungen gelesen  8
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeContains"
-		enabled="True"
-		optional="False"
-		searchpropertyid="375e389d-c404-4634-bd9f-67ed89c59105">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="ac8e93ef-39e2-41c3-bbd0-4ee6b455357e"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@title~'Editor']/text[@controlid='15']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				Anzahl Buchungen verbucht 7
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeContains"
-		enabled="True"
-		optional="False"
-		searchpropertyid="375e389d-c404-4634-bd9f-67ed89c59105">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="ac8e93ef-39e2-41c3-bbd0-4ee6b455357e"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@title~'Editor']/text[@controlid='15']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				Summe verbucht: 4170,00
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeContains"
-		enabled="True"
-		optional="False"
-		searchpropertyid="375e389d-c404-4634-bd9f-67ed89c59105">
+		searchpropertyid="770ac7d7-d78a-4070-b5d0-0a5636728756">
 			<comment>
 			</comment>
 			<bindings>
@@ -179,7 +113,7 @@ mode="Global">
 		action="AttributeContains"
 		enabled="True"
 		optional="True"
-		searchpropertyid="784945da-fd57-4b01-86ec-02ec944cf3ec">
+		searchpropertyid="451d5218-87cf-4fb6-9153-e61985ea64c9">
 			<comment>
 			</comment>
 			<bindings>
@@ -204,7 +138,7 @@ mode="Global">
 		action="AttributeContains"
 		enabled="True"
 		optional="True"
-		searchpropertyid="784945da-fd57-4b01-86ec-02ec944cf3ec">
+		searchpropertyid="451d5218-87cf-4fb6-9153-e61985ea64c9">
 			<comment>
 			</comment>
 			<bindings>
@@ -229,7 +163,7 @@ mode="Global">
 		action="AttributeContains"
 		enabled="True"
 		optional="True"
-		searchpropertyid="784945da-fd57-4b01-86ec-02ec944cf3ec">
+		searchpropertyid="451d5218-87cf-4fb6-9153-e61985ea64c9">
 			<comment>
 			</comment>
 			<bindings>
@@ -254,7 +188,7 @@ mode="Global">
 		action="AttributeContains"
 		enabled="True"
 		optional="True"
-		searchpropertyid="784945da-fd57-4b01-86ec-02ec944cf3ec">
+		searchpropertyid="451d5218-87cf-4fb6-9153-e61985ea64c9">
 			<comment>
 			</comment>
 			<bindings>
@@ -279,7 +213,7 @@ mode="Global">
 		action="AttributeContains"
 		enabled="True"
 		optional="True"
-		searchpropertyid="784945da-fd57-4b01-86ec-02ec944cf3ec">
+		searchpropertyid="451d5218-87cf-4fb6-9153-e61985ea64c9">
 			<comment>
 			</comment>
 			<bindings>
@@ -304,7 +238,7 @@ mode="Global">
 		action="AttributeContains"
 		enabled="True"
 		optional="True"
-		searchpropertyid="784945da-fd57-4b01-86ec-02ec944cf3ec">
+		searchpropertyid="451d5218-87cf-4fb6-9153-e61985ea64c9">
 			<comment>
 			</comment>
 			<bindings>
@@ -329,7 +263,7 @@ mode="Global">
 		action="AttributeContains"
 		enabled="True"
 		optional="True"
-		searchpropertyid="784945da-fd57-4b01-86ec-02ec944cf3ec">
+		searchpropertyid="451d5218-87cf-4fb6-9153-e61985ea64c9">
 			<comment>
 			</comment>
 			<bindings>
@@ -347,14 +281,14 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				Exop: 29	Beleg: ER03_B_EXOPV_005: Doppelte Fremdbelegnummer: FB02_B_EXOPV_005!
+				Exop: 28	Beleg: ER01_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
 			</matchvalue>
 		</validationitem>
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
 		optional="True"
-		searchpropertyid="784945da-fd57-4b01-86ec-02ec944cf3ec">
+		searchpropertyid="451d5218-87cf-4fb6-9153-e61985ea64c9">
 			<comment>
 			</comment>
 			<bindings>
@@ -372,6 +306,82 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
+				Exop: 28	Beleg: ER01_B_EXOPV_005: Fremdbelegnr FB01_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="True"
+		searchpropertyid="451d5218-87cf-4fb6-9153-e61985ea64c9">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ac8e93ef-39e2-41c3-bbd0-4ee6b455357e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Exop: 29	Beleg: ER03_B_EXOPV_005: Fremdbelegnr FB02_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="True"
+		searchpropertyid="451d5218-87cf-4fb6-9153-e61985ea64c9">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ac8e93ef-39e2-41c3-bbd0-4ee6b455357e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Exop: 34	Beleg: ER03_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="True"
+		searchpropertyid="451d5218-87cf-4fb6-9153-e61985ea64c9">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ac8e93ef-39e2-41c3-bbd0-4ee6b455357e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Exop: 34	Beleg: ER03_B_EXOPV_005: Fremdbelegnr FB03_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
 			</matchvalue>
 		</validationitem>
 	</recorditems>
@@ -390,7 +400,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Fehlerprotokoll_Verbuchung_kontrollieren_ab_521_SP12.UserCode.cs
+		Fehlerprotokoll_Pruefung_kontrollieren_510_511.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

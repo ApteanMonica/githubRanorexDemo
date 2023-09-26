@@ -24,29 +24,29 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Fehlerprotokoll_Verbuchung_kontrollieren_ab_521_SP12 recording.
+    ///The Fehlerprotokoll_Verbuchung_kontrollieren recording.
     /// </summary>
     [TestModule("1bf2f54d-35a5-4bcb-92a7-854c26e69497", ModuleType.Recording, 1)]
-    public partial class Fehlerprotokoll_Verbuchung_kontrollieren_ab_521_SP12 : ITestModule
+    public partial class Fehlerprotokoll_Verbuchung_kontrollieren : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_005.B_EXOPV_005Repository repository.
         /// </summary>
         public static global::B_EXOPV_005.B_EXOPV_005Repository repo = global::B_EXOPV_005.B_EXOPV_005Repository.Instance;
 
-        static Fehlerprotokoll_Verbuchung_kontrollieren_ab_521_SP12 instance = new Fehlerprotokoll_Verbuchung_kontrollieren_ab_521_SP12();
+        static Fehlerprotokoll_Verbuchung_kontrollieren instance = new Fehlerprotokoll_Verbuchung_kontrollieren();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Fehlerprotokoll_Verbuchung_kontrollieren_ab_521_SP12()
+        public Fehlerprotokoll_Verbuchung_kontrollieren()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Fehlerprotokoll_Verbuchung_kontrollieren_ab_521_SP12 Instance
+        public static Fehlerprotokoll_Verbuchung_kontrollieren Instance
         {
             get { return instance; }
         }
