@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace V_AUF_006
+namespace S_ADRL_002.Recordings
 {
-    public partial class Recording1
+    public partial class UID_Pruefung
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
