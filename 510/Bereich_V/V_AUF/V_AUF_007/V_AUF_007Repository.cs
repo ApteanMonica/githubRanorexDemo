@@ -1501,6 +1501,7 @@ namespace V_AUF_007
             RepoItemInfo _celltmpcols1row1Info;
             RepoItemInfo _pbokInfo;
             RepoItemInfo _sometextInfo;
+            RepoItemInfo _celltmpcols1row11Info;
 
             /// <summary>
             /// Creates a new DlgListBox  folder.
@@ -1512,6 +1513,7 @@ namespace V_AUF_007
                 _celltmpcols1row1Info = new RepoItemInfo(this, "CellTmpColS1Row1", "container[@controlname='panelAuswahl']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='__tmp__colS1 Row 1']", "", 30000, null, "a3d17f37-655a-42b2-8ba1-8357cf5d2daf");
                 _pbokInfo = new RepoItemInfo(this, "PbOk", "?/?/button[@controlname='pbOk']", "", 30000, null, "93a44bb2-e77f-4b98-aeae-d3208d001c44");
                 _sometextInfo = new RepoItemInfo(this, "SomeText", "container[@controlname='panelEins']//text[@controltypename='']", "", 30000, null, "700af33a-b8be-4c77-b8ba-89548a39cc34");
+                _celltmpcols1row11Info = new RepoItemInfo(this, "CellTmpColS1Row11", "container[@controlname='panelEins']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='__tmp__colS1 Row 1']", "", 30000, null, "0cdadc80-8f1a-4de0-9658-f3c0d1a60a94");
             }
 
             /// <summary>
@@ -1631,6 +1633,30 @@ namespace V_AUF_007
                 get
                 {
                     return _sometextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CellTmpColS1Row11 item.
+            /// </summary>
+            [RepositoryItem("0cdadc80-8f1a-4de0-9658-f3c0d1a60a94")]
+            public virtual Ranorex.Cell CellTmpColS1Row11
+            {
+                get
+                {
+                    return _celltmpcols1row11Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellTmpColS1Row11 item info.
+            /// </summary>
+            [RepositoryItemInfo("0cdadc80-8f1a-4de0-9658-f3c0d1a60a94")]
+            public virtual RepoItemInfo CellTmpColS1Row11Info
+            {
+                get
+                {
+                    return _celltmpcols1row11Info;
                 }
             }
         }

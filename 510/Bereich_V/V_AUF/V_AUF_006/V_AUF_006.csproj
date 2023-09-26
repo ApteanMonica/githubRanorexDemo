@@ -126,32 +126,20 @@
     <Compile Include="AssemblyInfo.cs">
       <id>f5abb6e8-fb57-4a12-a7e3-57deef187649</id>
     </Compile>
-    <Compile Include="CloseAUT.cs">
-      <BoundTo>a4dcb1e8-21bc-4cbe-b4d9-b63fe74b263e</BoundTo>
-      <DependentUpon>CloseAUT.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>009b6dc2-7ca9-42ff-a2ef-fb09dd4de902</id>
-    </Compile>
-    <Compile Include="CloseAUT.UserCode.cs">
-      <BoundTo>a4dcb1e8-21bc-4cbe-b4d9-b63fe74b263e</BoundTo>
-      <DependentUpon>CloseAUT.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>b21852d8-6011-4fa1-9ceb-64468a60a63b</id>
-    </Compile>
     <Compile Include="Program.cs">
       <id>ff625e04-1f47-4f98-ad5c-4ac64a905d80</id>
     </Compile>
-    <Compile Include="Recording1.cs">
-      <BoundTo>2ce6af06-c0a9-4224-8e6e-685e1d1bd64a</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+    <Compile Include="Recording\CloseAUT.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>9a03978c-6c6e-456d-96db-8d75399c47a4</id>
+      <id>009b6dc2-7ca9-42ff-a2ef-fb09dd4de902</id>
+      <BoundTo>a4dcb1e8-21bc-4cbe-b4d9-b63fe74b263e</BoundTo>
     </Compile>
-    <Compile Include="Recording1.UserCode.cs">
-      <BoundTo>2ce6af06-c0a9-4224-8e6e-685e1d1bd64a</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+    <Compile Include="Recording\CloseAUT.UserCode.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>57edf73a-d9c8-46bb-927d-275f38ea86d8</id>
+      <id>b21852d8-6011-4fa1-9ceb-64468a60a63b</id>
+      <BoundTo>a4dcb1e8-21bc-4cbe-b4d9-b63fe74b263e</BoundTo>
     </Compile>
     <Compile Include="Recording\Kreditlimit100.cs">
       <BoundTo>addef2ba-2bbc-44ff-b4fd-9304358f7dfe</BoundTo>
@@ -213,6 +201,18 @@
       <UserCode>true</UserCode>
       <id>608c0266-0623-425d-a54c-5d8e10e57ef4</id>
     </Compile>
+    <Compile Include="Recording\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>65e4c952-0db7-46fe-b555-6e3855cbec22</id>
+      <BoundTo>74843b2a-75d5-430e-b58c-3b8b129e9041</BoundTo>
+    </Compile>
+    <Compile Include="Recording\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5b1faec8-2e2d-4973-bc5f-198a54bd3a2a</id>
+      <BoundTo>74843b2a-75d5-430e-b58c-3b8b129e9041</BoundTo>
+    </Compile>
     <Compile Include="Recording\Tabellenerfassung.cs">
       <BoundTo>992b20d7-fbfd-4ecd-85d2-64ac6ba8e867</BoundTo>
       <DependentUpon>Tabellenerfassung.rxrec</DependentUpon>
@@ -237,18 +237,6 @@
       <UserCode>true</UserCode>
       <id>24ffaf7d-c0ff-42a0-a340-f2408f9f5b96</id>
     </Compile>
-    <Compile Include="StartAUT.cs">
-      <BoundTo>74843b2a-75d5-430e-b58c-3b8b129e9041</BoundTo>
-      <DependentUpon>StartAUT.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>65e4c952-0db7-46fe-b555-6e3855cbec22</id>
-    </Compile>
-    <Compile Include="StartAUT.UserCode.cs">
-      <BoundTo>74843b2a-75d5-430e-b58c-3b8b129e9041</BoundTo>
-      <DependentUpon>StartAUT.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>5b1faec8-2e2d-4973-bc5f-198a54bd3a2a</id>
-    </Compile>
     <Compile Include="V_AUF_006Repository.cs">
       <BoundTo>835b8267-6779-464c-8bd8-3649e24a3a9c</BoundTo>
       <DependentUpon>V_AUF_006Repository.rxrep</DependentUpon>
@@ -260,15 +248,10 @@
     <None Include="app.config">
       <id>557d16a5-e5b5-4b74-a75e-050b04bb9d8f</id>
     </None>
-    <None Include="CloseAUT.rxrec">
+    <None Include="Recording\CloseAUT.rxrec">
       <BoundTo>835b8267-6779-464c-8bd8-3649e24a3a9c</BoundTo>
       <id>a4dcb1e8-21bc-4cbe-b4d9-b63fe74b263e</id>
       <recordtableid>a4daa6f0-91fd-45bc-987e-b626cdb6ea0c</recordtableid>
-    </None>
-    <None Include="Recording1.rxrec">
-      <BoundTo>835b8267-6779-464c-8bd8-3649e24a3a9c</BoundTo>
-      <id>2ce6af06-c0a9-4224-8e6e-685e1d1bd64a</id>
-      <recordtableid>8ae326e5-2c04-4797-98b0-874cd34601c6</recordtableid>
     </None>
     <None Include="Recording\Kreditlimit100.rxrec">
       <BoundTo>835b8267-6779-464c-8bd8-3649e24a3a9c</BoundTo>
@@ -295,6 +278,11 @@
       <id>1cad3ee3-8771-4a81-9760-6a9083921bfc</id>
       <recordtableid>69158349-f7d5-41f5-80d3-05dd852347dd</recordtableid>
     </None>
+    <None Include="Recording\StartAUT.rxrec">
+      <BoundTo>835b8267-6779-464c-8bd8-3649e24a3a9c</BoundTo>
+      <id>74843b2a-75d5-430e-b58c-3b8b129e9041</id>
+      <recordtableid>2ee5f662-cd0e-439d-a422-605f4f921764</recordtableid>
+    </None>
     <None Include="Recording\Tabellenerfassung.rxrec">
       <BoundTo>835b8267-6779-464c-8bd8-3649e24a3a9c</BoundTo>
       <id>992b20d7-fbfd-4ecd-85d2-64ac6ba8e867</id>
@@ -304,11 +292,6 @@
       <BoundTo>835b8267-6779-464c-8bd8-3649e24a3a9c</BoundTo>
       <id>08daddca-0874-492f-89d6-733223a11769</id>
       <recordtableid>e539ce61-2741-4eb8-93a7-e291b934125d</recordtableid>
-    </None>
-    <None Include="StartAUT.rxrec">
-      <BoundTo>835b8267-6779-464c-8bd8-3649e24a3a9c</BoundTo>
-      <id>74843b2a-75d5-430e-b58c-3b8b129e9041</id>
-      <recordtableid>2ee5f662-cd0e-439d-a422-605f4f921764</recordtableid>
     </None>
     <None Include="V_AUF_006Repository.rximg">
       <BoundTo>835b8267-6779-464c-8bd8-3649e24a3a9c</BoundTo>
@@ -336,6 +319,12 @@
     <Folder Include="Recording">
       <id>9c399f72-093f-4f70-83bd-94fb926b0548</id>
     </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{8DE5E080-DDD8-4ABD-8F63-5F5636668FCF}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

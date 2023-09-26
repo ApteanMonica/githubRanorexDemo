@@ -50,7 +50,7 @@ namespace S_ADRL_002
             _frmadr = new S_ADRL_002RepositoryFolders.FrmAdrAppFolder(this);
             _dlgcopyadr = new S_ADRL_002RepositoryFolders.DlgcopyadrAppFolder(this);
             _dlgmessagebox = new S_ADRL_002RepositoryFolders.DlgMessageBoxAppFolder(this);
-            _button0Info = new RepoItemInfo(this, "Button0", "/form[@controlname='dlgMessageBox']/button[@controlname='button0']", 30000, null, "8b5a81dc-6e9d-4287-a6eb-eb8550acd558");
+            _button0Info = new RepoItemInfo(this, "Button0", "/form[@controlname='dlgMessageBox']/form[@controlname='dlgMessageBox']/button[@controlname='button0']", 30000, null, "8b5a81dc-6e9d-4287-a6eb-eb8550acd558");
         }
 
 #region Variables
@@ -589,6 +589,8 @@ namespace S_ADRL_002
         public partial class DlgMessageBoxAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _uidpruefungdieangegebeneuidistnicInfo;
+            RepoItemInfo _labelmeldungstextInfo;
+            RepoItemInfo _pictabsInfo;
 
             /// <summary>
             /// Creates a new DlgMessageBox  folder.
@@ -597,6 +599,8 @@ namespace S_ADRL_002
                     base("DlgMessageBox", "/form[@controlname='dlgMessageBox']", parentFolder, 30000, null, true, "ed3a5643-8419-4b79-8786-7eb664a76e1b", "")
             {
                 _uidpruefungdieangegebeneuidistnicInfo = new RepoItemInfo(this, "UIDPruefungDieAngegebeneUIDIstNic", "?/?/text[@accessiblename>'UID-Prüfung: die angegebene']", "", 30000, null, "6b2373e6-b6ca-4ab9-9128-52b69842c7db");
+                _labelmeldungstextInfo = new RepoItemInfo(this, "LabelMeldungstext", "text[@controlname='labelMeldungstext']", "", 30000, null, "e1a0e083-037a-46b8-aa31-6f8cb7b6d933");
+                _pictabsInfo = new RepoItemInfo(this, "PicTabs", "?/?/tabpagelist[@controlname='picTabs']", "", 30000, null, "a91aa057-ae38-4550-8aba-c5e38fac9ca7");
             }
 
             /// <summary>
@@ -644,6 +648,54 @@ namespace S_ADRL_002
                 get
                 {
                     return _uidpruefungdieangegebeneuidistnicInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LabelMeldungstext item.
+            /// </summary>
+            [RepositoryItem("e1a0e083-037a-46b8-aa31-6f8cb7b6d933")]
+            public virtual Ranorex.Text LabelMeldungstext
+            {
+                get
+                {
+                    return _labelmeldungstextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LabelMeldungstext item info.
+            /// </summary>
+            [RepositoryItemInfo("e1a0e083-037a-46b8-aa31-6f8cb7b6d933")]
+            public virtual RepoItemInfo LabelMeldungstextInfo
+            {
+                get
+                {
+                    return _labelmeldungstextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PicTabs item.
+            /// </summary>
+            [RepositoryItem("a91aa057-ae38-4550-8aba-c5e38fac9ca7")]
+            public virtual Ranorex.TabPageList PicTabs
+            {
+                get
+                {
+                    return _pictabsInfo.CreateAdapter<Ranorex.TabPageList>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PicTabs item info.
+            /// </summary>
+            [RepositoryItemInfo("a91aa057-ae38-4550-8aba-c5e38fac9ca7")]
+            public virtual RepoItemInfo PicTabsInfo
+            {
+                get
+                {
+                    return _pictabsInfo;
                 }
             }
         }

@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace V_AUF_006
+namespace V_AUF_006.Recording
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Recording1 recording.
+    ///The CloseAUT recording.
     /// </summary>
-    [TestModule("8ae326e5-2c04-4797-98b0-874cd34601c6", ModuleType.Recording, 1)]
-    public partial class Recording1 : ITestModule
+    [TestModule("a4daa6f0-91fd-45bc-987e-b626cdb6ea0c", ModuleType.Recording, 1)]
+    public partial class CloseAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the V_AUF_006Repository repository.
+        /// Holds an instance of the global::V_AUF_006.V_AUF_006Repository repository.
         /// </summary>
-        public static V_AUF_006Repository repo = V_AUF_006Repository.Instance;
+        public static global::V_AUF_006.V_AUF_006Repository repo = global::V_AUF_006.V_AUF_006Repository.Instance;
 
-        static Recording1 instance = new Recording1();
+        static CloseAUT instance = new CloseAUT();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Recording1()
+        public CloseAUT()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Recording1 Instance
+        public static CloseAUT Instance
         {
             get { return instance; }
         }
@@ -73,12 +73,15 @@ namespace V_AUF_006
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
-            Delay.SpeedFactor = 1.00;
+            Mouse.DefaultMoveTime = 0;
+            Keyboard.DefaultKeyPressTime = 20;
+            Delay.SpeedFactor = 0.00;
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmAufk.TitleBar100Auftragserfassung'.", repo.FrmAufk.TitleBar100AuftragserfassungInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.FrmAufk.TitleBar100Auftragserfassung, 1000);
+            
         }
 
 #region Image Feature Data

@@ -18,6 +18,7 @@ name="S_ADRL_002Repository">
 		id="023425cf-b46a-4a3e-a23a-8ae41647ac76"
 		isrooted="True"
 		name="FrmAdr"
+		refimgid="d9dac644-a259-45c2-8cdc-cfe6e66bb779"
 		refpath="/form[@controlname='frmAdr']"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -190,6 +191,16 @@ YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
 nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
+		<item
+		addcaps="button,control,nativewindow"
+		capname="button"
+		id="8b5a81dc-6e9d-4287-a6eb-eb8550acd558"
+		name="Button0"
+		refimgid="6527c403-081d-4759-beb3-5fb52f3e8991"
+		robustPath=""
+		searchtimeout="30000ms">
+			/form[@controlname='dlgMessageBox']/form[@controlname='dlgMessageBox']/button[@controlname='button0']
+		</item>
 		<appfolder
 		addcaps="form,nativewindow,controlnet11"
 		capname="form"
@@ -211,6 +222,27 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='dlgMessageBox']/?/?/text[@accessiblename&gt;'UID-Pr&#252;fung: die angegebene']
 			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="e1a0e083-037a-46b8-aa31-6f8cb7b6d933"
+			name="LabelMeldungstext"
+			refimgid="0ce38f5e-1d84-4767-8c65-144a5e1c8753"
+			refpath="/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+			</item>
+			<item
+			addcaps="tabpagelist,control,nativewindow"
+			capname="tabpagelist"
+			id="a91aa057-ae38-4550-8aba-c5e38fac9ca7"
+			name="PicTabs"
+			refimgid="c0c75119-cb75-4ad6-948b-08907a7c08a7"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/?/?/tabpagelist[@controlname='picTabs']
+			</item>
 			<basepath>
 				/form[@controlname='dlgMessageBox']
 			</basepath>
@@ -222,17 +254,6 @@ uwEgzSCbQTQII7sAZgDIdpAr8BoAMwTdBcia8RoA8gIIgzSBnAuiYWEA04xhwCE2QbAmdBes4OID
 GwBiw2IBFhMoBoAwTDMMw5wOw8i2V/IJ/gcA8xK5mQPOL6oAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
-		<item
-		addcaps="button,control,nativewindow"
-		capname="button"
-		id="8b5a81dc-6e9d-4287-a6eb-eb8550acd558"
-		name="Button0"
-		refimgid="6527c403-081d-4759-beb3-5fb52f3e8991"
-		refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button0']"
-		robustPath=""
-		searchtimeout="30000ms">
-			/form[@controlname='dlgMessageBox']/button[@controlname='button0']
-		</item>
 		<basepath>
 		</basepath>
 	</rootfolder>
