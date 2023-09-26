@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace K_FIBU_001.SQL_Updates_Selects
 {
-    public partial class SQL_Select_y_par_fibu_sperre
+    public partial class SQL_Update_y_par_fibu_sperre_auf_1_Select
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
