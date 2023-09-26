@@ -270,6 +270,14 @@
 					value="">
 					</param>
 					<param
+					name="Programmversion"
+					value="">
+					</param>
+					<param
+					name="Datenbank"
+					value="">
+					</param>
+					<param
 					name="LF_303104"
 					value="303104">
 					</param>
@@ -308,10 +316,6 @@
 					<param
 					name="Monat_3"
 					value="3">
-					</param>
-					<param
-					name="DB_File"
-					value="C:\Testdaten\Allgemein\UserCode\datenbank.txt">
 					</param>
 					<param
 					name="SQL_Select_B_EXOP"
@@ -554,10 +558,10 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="file_selectergebnis_b_exsa_Referenz"
+					dataname="Datenbank"
 					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
-					variableid="fffd72e5-712b-4813-a58b-de17e5d120e1"
-					variablename="file_selectergebnis_b_exsa_Referenz">
+					variableid="71c37dad-c76b-47bf-b478-b95e88d76a84"
+					variablename="Datenbank">
 					</var>
 					<var
 					dataname="SQL_Select_B_EXSA"
@@ -566,20 +570,24 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';">
 					variablename="SQL_Select_B_EXSA">
 					</var>
 					<var
+					dataname="Programmversion"
+					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
+					variableid="8ab74771-a61f-42cd-ac76-95f4ed34d8e2"
+					variablename="Programmversion">
+					</var>
+					<var
+					dataname="file_selectergebnis_b_exsa_Referenz"
+					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
+					variableid="fffd72e5-712b-4813-a58b-de17e5d120e1"
+					variablename="file_selectergebnis_b_exsa_Referenz">
+					</var>
+					<var
 					dataname="file_selectergebnis_b_exsa_aktuell"
 					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
 					variableid="0601747b-8a78-41b9-8c7e-36a80ebf8472"
 					variablename="file_selectergebnis_b_exsa_aktuell">
 					</var>
 				</databinding>
-				<missingdatavariablesbinding>
-					<var
-					dataname="DB_File"
-					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
-					variableid="8af40913-a103-437a-80ec-80c2876578e7"
-					variablename="DB_File">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="ac0bfbb4-73b6-4bbc-8bde-fe6ba813ac03"
@@ -588,10 +596,16 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="file_selectergebnis_b_exop_Referenz"
+					dataname="Datenbank"
 					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
-					variableid="8cfdefab-7e1f-4bdd-ad4f-2f4f11a0ba92"
-					variablename="file_selectergebnis_b_exop_Referenz">
+					variableid="778cf89d-bfd9-407c-b9f6-007d55538a8b"
+					variablename="Datenbank">
+					</var>
+					<var
+					dataname="Programmversion"
+					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
+					variableid="05daa1cc-5256-4f49-8848-c34ef83bc732"
+					variablename="Programmversion">
 					</var>
 					<var
 					dataname="SQL_Select_B_EXOP"
@@ -600,20 +614,18 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';">
 					variablename="SQL_Select_B_EXOP">
 					</var>
 					<var
+					dataname="file_selectergebnis_b_exop_Referenz"
+					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
+					variableid="8cfdefab-7e1f-4bdd-ad4f-2f4f11a0ba92"
+					variablename="file_selectergebnis_b_exop_Referenz">
+					</var>
+					<var
 					dataname="file_selectergebnis_b_exop_aktuell"
 					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
 					variableid="f9ee2768-44ea-4dbe-a575-ff674c5180f2"
 					variablename="file_selectergebnis_b_exop_aktuell">
 					</var>
 				</databinding>
-				<missingdatavariablesbinding>
-					<var
-					dataname="DB_File"
-					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
-					variableid="fa2ead0f-f13b-4d84-8dec-01a15d8010e3"
-					variablename="DB_File">
-					</var>
-				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="c4f16b65-b942-4b40-b5d2-9f71a791ad8b"

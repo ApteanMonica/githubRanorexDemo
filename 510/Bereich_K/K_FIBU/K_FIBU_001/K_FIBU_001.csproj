@@ -123,6 +123,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\..\Testdaten\Allgemein\UserCode\aptean.cs">
+      <Link>aptean.cs</Link>
+      <id>1580a254-695a-480b-8595-7c6c9ad1544a</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>06d36e5f-8e97-4a3c-b610-2474e52c4bda</id>
     </Compile>
@@ -363,6 +367,30 @@
       <id>2ae6dfae-3332-4cc3-9461-8e1bac93f361</id>
       <BoundTo>28aa238e-20d6-4192-bc03-6eba29dc8974</BoundTo>
     </Compile>
+    <Compile Include="SQL_Updates_Selects\SQL_Update_y_par_fibu_sperre_auf_0_Select.cs">
+      <BoundTo>1011cad0-f279-4e59-9e62-dbce1f41f686</BoundTo>
+      <DependentUpon>SQL_Update_y_par_fibu_sperre_auf_0_Select.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>51dc997c-3745-4096-b625-657c29184147</id>
+    </Compile>
+    <Compile Include="SQL_Updates_Selects\SQL_Update_y_par_fibu_sperre_auf_0_Select.UserCode.cs">
+      <BoundTo>1011cad0-f279-4e59-9e62-dbce1f41f686</BoundTo>
+      <DependentUpon>SQL_Update_y_par_fibu_sperre_auf_0_Select.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7928f6c9-c559-4a6a-8d97-6e0f3511e465</id>
+    </Compile>
+    <Compile Include="SQL_Updates_Selects\SQL_Update_y_par_fibu_sperre_auf_1_Select.cs">
+      <DependentUpon>SQL_Update_y_par_fibu_sperre_auf_1_Select.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a683ce7a-9ccb-4677-9d89-a1a6d6fc6fad</id>
+      <BoundTo>06f2ad10-1831-4451-aabf-0eda5979aaa4</BoundTo>
+    </Compile>
+    <Compile Include="SQL_Updates_Selects\SQL_Update_y_par_fibu_sperre_auf_1_Select.UserCode.cs">
+      <DependentUpon>SQL_Update_y_par_fibu_sperre_auf_1_Select.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7d3c50a7-a283-4882-b6eb-6066357b48c3</id>
+      <BoundTo>06f2ad10-1831-4451-aabf-0eda5979aaa4</BoundTo>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -474,6 +502,16 @@
       <id>28aa238e-20d6-4192-bc03-6eba29dc8974</id>
       <recordtableid>135a9851-56b0-440a-addc-330e4197f896</recordtableid>
     </None>
+    <None Include="SQL_Updates_Selects\SQL_Update_y_par_fibu_sperre_auf_0_Select.rxrec">
+      <BoundTo>e3eb4deb-64b3-4361-965a-fe11874efd10</BoundTo>
+      <id>1011cad0-f279-4e59-9e62-dbce1f41f686</id>
+      <recordtableid>035bc0f5-13d1-432c-901a-6bdf52575abf</recordtableid>
+    </None>
+    <None Include="SQL_Updates_Selects\SQL_Update_y_par_fibu_sperre_auf_1_Select.rxrec">
+      <BoundTo>e3eb4deb-64b3-4361-965a-fe11874efd10</BoundTo>
+      <id>06f2ad10-1831-4451-aabf-0eda5979aaa4</id>
+      <recordtableid>919a529e-274a-4854-ad4a-2d4d2e713e6a</recordtableid>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="K_FIBU_001.rxtmg">
@@ -486,6 +524,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="SQL_Updates_Selects">
+      <id>b5b39ec7-788a-4c07-bd18-b5dc705d3cb3</id>
+    </Folder>
     <Folder Include="Recordings_YPAR">
       <id>f4394815-7257-42c0-9de1-6897c1b61ff6</id>
     </Folder>

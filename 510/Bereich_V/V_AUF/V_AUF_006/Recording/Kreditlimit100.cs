@@ -105,92 +105,92 @@ namespace V_AUF_006.Recording
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='40,000') on item 'FrmAufk.DfAufpPreis'.", repo.FrmAufk.DfAufpPreisInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.FrmAufk.DfAufpPreisInfo, "Text", "40,000");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.PbNew' at Center.", repo.FrmAufk.PbNewInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.PbNew' at Center.", repo.FrmAufk.PbNewInfo, new RecordItemIndex(0));
             repo.FrmAufk.PbNew.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.Kunde' at Center.", repo.FrmAufk.KundeInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.Kunde' at Center.", repo.FrmAufk.KundeInfo, new RecordItemIndex(1));
             repo.FrmAufk.Kunde.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kunde_Kreditlimit100' with focus on 'FrmAufk.Kunde'.", repo.FrmAufk.KundeInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kunde_Kreditlimit100' with focus on 'FrmAufk.Kunde'.", repo.FrmAufk.KundeInfo, new RecordItemIndex(2));
             repo.FrmAufk.Kunde.PressKeys(Kunde_Kreditlimit100);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmAufk.Kunde'.", repo.FrmAufk.KundeInfo, new RecordItemIndex(4));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmAufk.Kunde'.", repo.FrmAufk.KundeInfo, new RecordItemIndex(3));
             //repo.FrmAufk.Kunde.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(4));
             Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.DfAufkAdrWare' at Center.", repo.FrmAufk.DfAufkAdrWareInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.DfAufkAdrWare' at Center.", repo.FrmAufk.DfAufkAdrWareInfo, new RecordItemIndex(5));
             repo.FrmAufk.DfAufkAdrWare.Click();
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
             //Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1.5m for the attribute 'Text' to equal the specified value $Kunde_Kreditlimit100. Associated repository item: 'FrmAufk.DfAufkAdrWare'", repo.FrmAufk.DfAufkAdrWareInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1.5m for the attribute 'Text' to equal the specified value $Kunde_Kreditlimit100. Associated repository item: 'FrmAufk.DfAufkAdrWare'", repo.FrmAufk.DfAufkAdrWareInfo, new RecordItemIndex(7));
             repo.FrmAufk.DfAufkAdrWareInfo.WaitForAttributeEqual(90000, "Text", Kunde_Kreditlimit100);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kunde_Kreditlimit100) on item 'FrmAufk.Kunde'.", repo.FrmAufk.KundeInfo, new RecordItemIndex(9));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kunde_Kreditlimit100) on item 'FrmAufk.Kunde'.", repo.FrmAufk.KundeInfo, new RecordItemIndex(8));
             //Validate.AttributeEqual(repo.FrmAufk.KundeInfo, "Text", Kunde_Kreditlimit100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='S') on item 'FrmAufk.DfAufkZahlart'.", repo.FrmAufk.DfAufkZahlartInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='S') on item 'FrmAufk.DfAufkZahlart'.", repo.FrmAufk.DfAufkZahlartInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.FrmAufk.DfAufkZahlartInfo, "Text", "S");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.TabPagePositionen' at Center.", repo.FrmAufk.TabPagePositionenInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.TabPagePositionen' at Center.", repo.FrmAufk.TabPagePositionenInfo, new RecordItemIndex(10));
             repo.FrmAufk.TabPagePositionen.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.ArtNr' at Center.", repo.FrmAufk.ArtNrInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.ArtNr' at Center.", repo.FrmAufk.ArtNrInfo, new RecordItemIndex(11));
             repo.FrmAufk.ArtNr.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Art_Nr_Kreditlimit' with focus on 'FrmAufk.ArtNr'.", repo.FrmAufk.ArtNrInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Art_Nr_Kreditlimit' with focus on 'FrmAufk.ArtNr'.", repo.FrmAufk.ArtNrInfo, new RecordItemIndex(12));
             repo.FrmAufk.ArtNr.PressKeys(Art_Nr_Kreditlimit);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.Menge' at Center.", repo.FrmAufk.MengeInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.Menge' at Center.", repo.FrmAufk.MengeInfo, new RecordItemIndex(13));
             repo.FrmAufk.Menge.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2{Tab}' with focus on 'FrmAufk.Menge'.", repo.FrmAufk.MengeInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2{Tab}' with focus on 'FrmAufk.Menge'.", repo.FrmAufk.MengeInfo, new RecordItemIndex(14));
             repo.FrmAufk.Menge.PressKeys("2{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.DfAufpPreis' at Center.", repo.FrmAufk.DfAufpPreisInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.DfAufpPreis' at Center.", repo.FrmAufk.DfAufpPreisInfo, new RecordItemIndex(15));
             repo.FrmAufk.DfAufpPreis.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '50{Tab}' with focus on 'FrmAufk.DfAufpPreis'.", repo.FrmAufk.DfAufpPreisInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '50{Tab}' with focus on 'FrmAufk.DfAufpPreis'.", repo.FrmAufk.DfAufpPreisInfo, new RecordItemIndex(16));
             repo.FrmAufk.DfAufpPreis.PressKeys("50{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='50,000') on item 'FrmAufk.DfAufpPreis'.", repo.FrmAufk.DfAufpPreisInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='50,000') on item 'FrmAufk.DfAufpPreis'.", repo.FrmAufk.DfAufpPreisInfo, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.FrmAufk.DfAufpPreisInfo, "Text", "50,000");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Die maximal zulässige Preisabweichung von 10,00 %  wurde überschritten\r\n\r\nZulässiger Preisbereich: 9,900 - 12,100  EUR') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Die maximal zulässige Preisabweichung von 10,00 %  wurde überschritten\r\n\r\nZulässiger Preisbereich: 9,900 - 12,100  EUR') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(18));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Die maximal zulässige Preisabweichung von 10,00 %  wurde überschritten\r\n\r\nZulässiger Preisbereich: 9,900 - 12,100  EUR");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(19));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.PbCommonSave' at Center.", repo.FrmAufk.PbCommonSaveInfo, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.PbCommonSave' at Center.", repo.FrmAufk.PbCommonSaveInfo, new RecordItemIndex(20));
             repo.FrmAufk.PbCommonSave.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ACHTUNG: Kreditlimit um 20,00 EUR überschritten\r\n\r\nWollen Sie die Position trotzdem speichern?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ACHTUNG: Kreditlimit um 20,00 EUR überschritten\r\n\r\nWollen Sie die Position trotzdem speichern?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(21));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "ACHTUNG: Kreditlimit um 20,00 EUR überschritten\r\n\r\nWollen Sie die Position trotzdem speichern?");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(22));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.Row1Column0' at Center.", repo.FrmAufk.Row1Column0Info, new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.Row1Column0' at Center.", repo.FrmAufk.Row1Column0Info, new RecordItemIndex(23));
             repo.FrmAufk.Row1Column0.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.DfAufpPreis' at Center.", repo.FrmAufk.DfAufpPreisInfo, new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.DfAufpPreis' at Center.", repo.FrmAufk.DfAufpPreisInfo, new RecordItemIndex(24));
             repo.FrmAufk.DfAufpPreis.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.DfAufpPreis' at Center.", repo.FrmAufk.DfAufpPreisInfo, new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.DfAufpPreis' at Center.", repo.FrmAufk.DfAufpPreisInfo, new RecordItemIndex(25));
             repo.FrmAufk.DfAufpPreis.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '40{Tab}' with focus on 'FrmAufk.DfAufpPreis'.", repo.FrmAufk.DfAufpPreisInfo, new RecordItemIndex(27));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '40{Tab}' with focus on 'FrmAufk.DfAufpPreis'.", repo.FrmAufk.DfAufpPreisInfo, new RecordItemIndex(26));
             repo.FrmAufk.DfAufpPreis.PressKeys("40{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Die maximal zulässige Preisabweichung von 10,00 %  wurde überschritten\r\n\r\nZulässiger Preisbereich: 9,900 - 12,100  EUR') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(28));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Die maximal zulässige Preisabweichung von 10,00 %  wurde überschritten\r\n\r\nZulässiger Preisbereich: 9,900 - 12,100  EUR') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(27));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Die maximal zulässige Preisabweichung von 10,00 %  wurde überschritten\r\n\r\nZulässiger Preisbereich: 9,900 - 12,100  EUR");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='40,000') on item 'FrmAufk.DfAufpPreis'.", repo.FrmAufk.DfAufpPreisInfo, new RecordItemIndex(28));
+            Validate.AttributeEqual(repo.FrmAufk.DfAufpPreisInfo, "Text", "40,000");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(29));
             repo.DlgMessageBox.Button0.Click();
