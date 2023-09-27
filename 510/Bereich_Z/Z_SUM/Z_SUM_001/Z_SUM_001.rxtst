@@ -90,15 +90,15 @@
 			</testmodule>
 			<testmodule
 			id="22775f11-2209-4ff6-9945-1a0e54f4d57d"
-			name="Einlesen_des_Ranoagent"
+			name="Einlesen_Programmversion"
 			ref="dd97e8c8-73ed-40ee-b8c2-f17fdb6d1795"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Servername"
+					dataname="Programmversion"
 					datasourceid="26798098-70b7-4d33-8ce5-02370cbac235"
 					variableid="56f87d24-ed15-4706-b410-675960b08a62"
-					variablename="Servername">
+					variablename="Programmversion">
 					</var>
 				</databinding>
 			</testmodule>
@@ -396,7 +396,7 @@
 					value="1:00">
 					</param>
 					<param
-					name="Servername"
+					name="Programmversion"
 					value="">
 					</param>
 				</parameters>
@@ -512,14 +512,14 @@
 							<datavaluesource>
 								<databinding
 								bindingtype="Parameter"
-								dataname="Servername"
+								dataname="Programmversion"
 								id="26798098-70b7-4d33-8ce5-02370cbac235">
 								</databinding>
 							</datavaluesource>
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="SBG-RANOAGENT2">
+							value="510">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -703,22 +703,39 @@
 			id="bfcb0f7d-1fc9-416e-9b52-c05f9157c28d"
 			name="ab_511">
 				<conditiongroup
-				comparison="AND"
+				comparison="OR"
 				enabled="True">
 					<condition
-					comparison="IsNotEqual">
+					comparison="IsEqual">
 						<leftvalue>
 							<datavaluesource>
 								<databinding
 								bindingtype="Parameter"
-								dataname="Servername"
+								dataname="Programmversion"
 								id="26798098-70b7-4d33-8ce5-02370cbac235">
 								</databinding>
 							</datavaluesource>
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="SBG-RANOAGENT2">
+							value="511">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Programmversion"
+								id="26798098-70b7-4d33-8ce5-02370cbac235">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="521">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -1191,7 +1208,7 @@
 						</setup>
 						<testmodule
 						id="22775f11-2209-4ff6-9945-1a0e54f4d57d"
-						name="Einlesen_des_Ranoagent">
+						name="Einlesen_Programmversion">
 						</testmodule>
 						<testmodule
 						id="8e4cb175-a1e2-458e-b6e1-2fb2eef24173"

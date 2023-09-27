@@ -24,46 +24,46 @@ namespace Z_SUM_001.Recording
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Einlesen_des_Ranoagent recording.
+    ///The Einlesen_Programmversion recording.
     /// </summary>
     [TestModule("dd97e8c8-73ed-40ee-b8c2-f17fdb6d1795", ModuleType.Recording, 1)]
-    public partial class Einlesen_des_Ranoagent : ITestModule
+    public partial class Einlesen_Programmversion : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::Z_SUM_001.Z_SUM_001Repository repository.
         /// </summary>
         public static global::Z_SUM_001.Z_SUM_001Repository repo = global::Z_SUM_001.Z_SUM_001Repository.Instance;
 
-        static Einlesen_des_Ranoagent instance = new Einlesen_des_Ranoagent();
+        static Einlesen_Programmversion instance = new Einlesen_Programmversion();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Einlesen_des_Ranoagent()
+        public Einlesen_Programmversion()
         {
-            Servername = "";
+            Programmversion = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Einlesen_des_Ranoagent Instance
+        public static Einlesen_Programmversion Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Servername;
+        string _Programmversion;
 
         /// <summary>
-        /// Gets or sets the value of variable Servername.
+        /// Gets or sets the value of variable Programmversion.
         /// </summary>
         [TestVariable("56f87d24-ed15-4706-b410-675960b08a62")]
-        public string Servername
+        public string Programmversion
         {
-            get { return _Servername; }
-            set { _Servername = value; }
+            get { return _Programmversion; }
+            set { _Programmversion = value; }
         }
 
 #endregion
@@ -92,9 +92,9 @@ namespace Z_SUM_001.Recording
 
             Init();
 
-            Servername = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetHost();
+            Programmversion = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadProgrammVersion("REL");
             
-            Report.Log(ReportLevel.Info, "User", Servername, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "User", Programmversion, new RecordItemIndex(1));
             
         }
 
