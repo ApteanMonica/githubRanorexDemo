@@ -562,7 +562,7 @@
 			</testmodule>
 			<smartfoldernode
 			id="94ab005b-bc74-4881-a44b-155129c1b4f5"
-			name="Y_PAR_Sperre_setzen">
+			name="DISABLED_Y_PAR_Sperre_setzen">
 				<description>
 					<![CDATA[DISABLED - ersetzt durch SQL-Update (aber Recordings als Alternative belassen)]]>
 				</description>
@@ -700,6 +700,9 @@
 			name="StartAUT"
 			ref="7398b9c4-d38b-41ff-b9cb-f31f636d233d"
 			type="Recording">
+				<description>
+					<![CDATA[WIEDER ENABLEN - wegen Anlayse deaktiviert]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Startfile"
@@ -758,7 +761,7 @@
 			</testcase>
 			<smartfoldernode
 			id="ca16c1e9-f635-4802-9c0b-768740fab2d8"
-			name="Y_PAR_Sperre_setzen">
+			name="DISABLED_Y_PAR_Sperre_setzen">
 				<description>
 					<![CDATA[<p>DISABLED - ersetzt durch SQL-Update (aber Recordings als Alternative belassen)</p>]]>
 				</description>
@@ -830,7 +833,7 @@
 			</testmodule>
 			<smartfoldernode
 			id="d2508f74-312a-4cd8-8702-ce4498fd8da4"
-			name="Y_PAR_Sperre_aufheben">
+			name="DISABLED_Y_PAR_Sperre_aufheben">
 				<description>
 					<![CDATA[<p>DISABLED - ersetzt durch SQL-Update (aber Recordings als Alternative belassen)</p>]]>
 				</description>
@@ -952,7 +955,7 @@
 			</testmodule>
 			<testcase
 			id="f850fb34-1e50-40f6-ac6a-2f513f633176"
-			name="Y_PAR_zurücksetzen_auf_Kurztext_0">
+			name="DISABLED_Y_PAR_zurücksetzen_auf_Kurztext_0">
 				<description>
 					<![CDATA[<p>DISABLED - ersetzt durch SQL-Update in TEARDOWN&nbsp;(aber Recordings als Alternative belassen)</p><p>Falls der Test auf Fehler läuft und die Sperre bestehen bleibt, wird mit diesem Schritt die Sperre in jedem Fall zurückgesetzt, damit die nachfolgenden Testfälle k_fibu_002 etc. ausgeführt werden können.</p>]]>
 				</description>
@@ -993,6 +996,9 @@
 			name="SQL_Update_y_par_fibu_sperre_auf_0_Select"
 			ref="035bc0f5-13d1-432c-901a-6bdf52575abf"
 			type="Recording">
+				<description>
+					<![CDATA[Aufheben der Sperre im Teardown, damit die nachfolgenden Tests ohne Fehler ausgeführt werden, falls dieser Test auf Fehler läuft]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Sperre_Kurztext"
@@ -1063,7 +1069,7 @@
 					name="K_FIBU_User_RS_mit_Sperre_Parameter_Y_PAR_fuer_User_RS">
 						<smartfoldernode
 						id="94ab005b-bc74-4881-a44b-155129c1b4f5"
-						name="Y_PAR_Sperre_setzen">
+						name="DISABLED_Y_PAR_Sperre_setzen">
 							<setup
 							id="3cc683ac-338b-4c6b-84c8-200a503cefd2"
 							name="setup">
@@ -1143,7 +1149,7 @@
 					name="K_FIBU_User_RSX_mit_Sperre_Parameter_Y_PAR_fuer_User_RS">
 						<smartfoldernode
 						id="ca16c1e9-f635-4802-9c0b-768740fab2d8"
-						name="Y_PAR_Sperre_setzen">
+						name="DISABLED_Y_PAR_Sperre_setzen">
 							<testmodule
 							id="32946dff-d9d8-4b3f-a3ac-0e944a3455b1"
 							name="Warten_und_Laden">
@@ -1207,7 +1213,7 @@
 					name="K_FIBU_User_RSX_OHNE_Sperre_Parameter_Y_PAR">
 						<smartfoldernode
 						id="d2508f74-312a-4cd8-8702-ce4498fd8da4"
-						name="Y_PAR_Sperre_aufheben">
+						name="DISABLED_Y_PAR_Sperre_aufheben">
 							<testmodule
 							id="9b58ffc9-d018-4b15-ab8b-7697d4e3e277"
 							name="Parameter_1_pruefen">
@@ -1276,7 +1282,7 @@
 					</testcase>
 					<testcase
 					id="f850fb34-1e50-40f6-ac6a-2f513f633176"
-					name="Y_PAR_zurücksetzen_auf_Kurztext_0">
+					name="DISABLED_Y_PAR_zurücksetzen_auf_Kurztext_0">
 						<setup
 						id="d967e1d3-f974-4bff-a509-100a55a4112f"
 						name="setup">
@@ -1342,9 +1348,6 @@
 			</testcontainer>
 			<testcontainer
 			id="b7fb4f0c-4631-40e1-9d73-4b50171339bd">
-			</testcontainer>
-			<testcontainer
-			id="c63c2df0-028f-4402-ad6b-80638e133b0e">
 			</testcontainer>
 			<testcontainer
 			id="ff9ffb94-fe58-4338-b848-1b20d9528dbe">
