@@ -140,11 +140,11 @@ namespace V_AUF_007.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgImportLS.Lieferschein' at CenterRight.", repo.DlgImportLS.LieferscheinInfo, new RecordItemIndex(15));
             repo.DlgImportLS.Lieferschein.Click(Location.CenterRight);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgListBox.SomeText' at Center.", repo.DlgListBox.SomeTextInfo, new RecordItemIndex(16));
-            repo.DlgListBox.SomeText.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgListBox.CellTmpColS1Row11' at Center.", repo.DlgListBox.CellTmpColS1Row11Info, new RecordItemIndex(16));
+            repo.DlgListBox.CellTmpColS1Row11.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '3123456' with focus on 'DlgListBox.SomeText'.", repo.DlgListBox.SomeTextInfo, new RecordItemIndex(17));
-            repo.DlgListBox.SomeText.PressKeys("3123456");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '3123456' with focus on 'DlgListBox.CellTmpColS1Row11'.", repo.DlgListBox.CellTmpColS1Row11Info, new RecordItemIndex(17));
+            repo.DlgListBox.CellTmpColS1Row11.PressKeys("3123456");
             
             //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'DlgImportLS.Lieferschein'.", repo.DlgImportLS.LieferscheinInfo, new RecordItemIndex(18));
             //repo.DlgImportLS.Lieferschein.PressKeys("{Tab}");
