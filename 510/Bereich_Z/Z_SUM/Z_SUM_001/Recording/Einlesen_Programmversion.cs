@@ -92,7 +92,7 @@ namespace Z_SUM_001.Recording
 
             Init();
 
-            Programmversion = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadProgrammVersion("");
+            Programmversion = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadProgrammVersion("REL");
             
             Report.Log(ReportLevel.Info, "User", Programmversion, new RecordItemIndex(1));
             
