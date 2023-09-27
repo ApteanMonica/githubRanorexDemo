@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace N_ANLA_002.Recordings
 {
-    public partial class Einlesen_Ranoagent
+    public partial class Einlesen_Programmversion
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

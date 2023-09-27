@@ -24,46 +24,46 @@ namespace N_ANLA_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Einlesen_Ranoagent recording.
+    ///The Einlesen_Programmversion recording.
     /// </summary>
     [TestModule("81e808b3-a2d3-45da-aee9-6db685e584cc", ModuleType.Recording, 1)]
-    public partial class Einlesen_Ranoagent : ITestModule
+    public partial class Einlesen_Programmversion : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_ANLA_002.N_ANLA_002Repository repository.
         /// </summary>
         public static global::N_ANLA_002.N_ANLA_002Repository repo = global::N_ANLA_002.N_ANLA_002Repository.Instance;
 
-        static Einlesen_Ranoagent instance = new Einlesen_Ranoagent();
+        static Einlesen_Programmversion instance = new Einlesen_Programmversion();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Einlesen_Ranoagent()
+        public Einlesen_Programmversion()
         {
-            Computername = "";
+            Programmversion = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Einlesen_Ranoagent Instance
+        public static Einlesen_Programmversion Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Computername;
+        string _Programmversion;
 
         /// <summary>
-        /// Gets or sets the value of variable Computername.
+        /// Gets or sets the value of variable Programmversion.
         /// </summary>
         [TestVariable("bb45035f-f206-4842-80f2-25abf61c3a59")]
-        public string Computername
+        public string Programmversion
         {
-            get { return _Computername; }
-            set { _Computername = value; }
+            get { return _Programmversion; }
+            set { _Programmversion = value; }
         }
 
 #endregion
@@ -92,9 +92,9 @@ namespace N_ANLA_002.Recordings
 
             Init();
 
-            Computername = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetHost();
+            Programmversion = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadProgrammVersion("");
             
-            Report.Log(ReportLevel.Info, "User", Computername, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "User", Programmversion, new RecordItemIndex(1));
             
         }
 
