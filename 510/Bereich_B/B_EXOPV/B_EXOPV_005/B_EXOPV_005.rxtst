@@ -23,16 +23,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Fehlerprotokoll_Pruefung"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="12d7b065-2a01-4bfa-991e-6d21537a9d1b"
-					variablename="Fehlerprotokoll_Pruefung">
-					</var>
-					<var
 					dataname="Stapel_Herkunft"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="80147ceb-e943-46c5-a7c1-f05b59ef1cce"
 					variablename="Stapel_Herkunft">
+					</var>
+					<var
+					dataname="Fehlerprotokoll_Pruefung"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="12d7b065-2a01-4bfa-991e-6d21537a9d1b"
+					variablename="Fehlerprotokoll_Pruefung">
 					</var>
 				</databinding>
 			</testmodule>
@@ -46,16 +46,16 @@
 				</description>
 				<databinding>
 					<var
-					dataname="LF_02"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="38d8351a-ae3e-4f48-a34f-bf2101fe0e21"
-					variablename="LF_02">
-					</var>
-					<var
 					dataname="LF_01"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="bc21bb92-472a-4554-aa1b-3c095fcb6ff1"
 					variablename="LF_01">
+					</var>
+					<var
+					dataname="LF_02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="38d8351a-ae3e-4f48-a34f-bf2101fe0e21"
+					variablename="LF_02">
 					</var>
 				</databinding>
 			</testmodule>
@@ -66,16 +66,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="5479e8eb-b655-444d-89c6-64953acc0dfd"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="5a4f1278-f69f-4a30-96ae-4fcc7e8fe361"
 					variablename="Programm">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="5479e8eb-b655-444d-89c6-64953acc0dfd"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -251,9 +251,15 @@
 			ref="f039a1c9-cc8a-49bb-9778-408f8e7140a7"
 			type="Recording">
 				<description>
-					<![CDATA[IN ARBEIT - Workaround ausbauen, neue Variablen für lange Belegnummern verwenden]]>
+					<![CDATA[IN ARBEIT - neue Variablen für lange Belegnummern eingebaut - Test 510 OK]]>
 				</description>
 				<databinding>
+					<var
+					dataname="LF_02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="70ada442-98fe-4fe7-ae05-31782c3a1c72"
+					variablename="LF_02">
+					</var>
 					<var
 					dataname="LF_01"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
@@ -261,10 +267,34 @@
 					variablename="LF_01">
 					</var>
 					<var
-					dataname="LF_02"
+					dataname="ER01_LF01"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="70ada442-98fe-4fe7-ae05-31782c3a1c72"
-					variablename="LF_02">
+					variableid="e778b188-fc1e-4630-9c54-e6dcfd5187ce"
+					variablename="ER01_LF01">
+					</var>
+					<var
+					dataname="FB01_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="a6e8c447-da3e-4fb9-a7c7-bae4cfa857e0"
+					variablename="FB01_LF01">
+					</var>
+					<var
+					dataname="FB02_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="fd41e1c3-9b31-4d6f-8e50-2dc2ee63f23d"
+					variablename="FB02_LF01">
+					</var>
+					<var
+					dataname="ER03_LF02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="487f7410-9f68-4c31-b6e1-91bc43fd37c0"
+					variablename="ER03_LF02">
+					</var>
+					<var
+					dataname="FB03_LF02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="a6fe2c7c-44f2-4021-890a-27cf44cca829"
+					variablename="FB03_LF02">
 					</var>
 				</databinding>
 			</testmodule>
@@ -765,56 +795,60 @@
 					value="ER01_B_EXOPV_005">
 					</param>
 					<param
-					name="ER02_LF02"
-					value="ER02_B_EXOPV_005">
+					name="FB01_LF01"
+					value="FB01_B_EXOPV_005">
 					</param>
 					<param
 					name="ER03_LF01"
 					value="ER03_B_EXOPV_005">
 					</param>
 					<param
-					name="ER03_LF02"
-					value="ER03_B_EXOPV_005">
-					</param>
-					<param
-					name="ER05_LF02"
-					value="ER05_B_EXOPV_005">
+					name="FB02_LF01"
+					value="FB02_B_EXOPV_005">
 					</param>
 					<param
 					name="ER04a_LF01"
 					value="ER04_B_EXOPV_005">
 					</param>
 					<param
+					name="FB04a_LF01"
+					value="FB04_B_EXOPV_005">
+					</param>
+					<param
 					name="ER04b_LF01"
 					value="ER04_B_EXOPV_005">
 					</param>
 					<param
-					name="FB01_LF01"
-					value="FB01_B_EXOPV_005">
+					name="FB05_LF01"
+					value="FB05_B_EXOPV_005">
 					</param>
 					<param
-					name="FB02_LF01"
-					value="FB02_B_EXOPV_005">
-					</param>
-					<param
-					name="FB02_LF02"
-					value="FB02_B_EXOPV_005">
-					</param>
-					<param
-					name="FB03_LF02"
-					value="FB03_B_EXOPV_005">
-					</param>
-					<param
-					name="FB04a_LF01"
-					value="FB04_B_EXOPV_005">
+					name="ER06_LF01"
+					value="ER06_B_EXOPV_005">
 					</param>
 					<param
 					name="FB04b_LF01"
 					value="FB04_B_EXOPV_005">
 					</param>
 					<param
-					name="FB05_LF01"
-					value="FB05_B_EXOPV_005">
+					name="ER02_LF02"
+					value="ER02_B_EXOPV_005">
+					</param>
+					<param
+					name="FB02_LF02"
+					value="FB02_B_EXOPV_005">
+					</param>
+					<param
+					name="ER03_LF02"
+					value="ER03_B_EXOPV_005">
+					</param>
+					<param
+					name="FB03_LF02"
+					value="FB03_B_EXOPV_005">
+					</param>
+					<param
+					name="ER05_LF02"
+					value="ER05_B_EXOPV_005">
 					</param>
 					<param
 					name="FB05_LF02"
@@ -826,7 +860,7 @@
 					</param>
 					<param
 					name="FB03_LF02_NEU"
-					value="FB03_B_EXOPV_005">
+					value="FB03_B_EXOPV_005_NEU">
 					</param>
 				</parameters>
 			</testcase>
