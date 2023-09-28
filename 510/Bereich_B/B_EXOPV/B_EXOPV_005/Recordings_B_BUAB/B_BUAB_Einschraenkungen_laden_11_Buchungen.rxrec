@@ -19,12 +19,48 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="B_BUAB_Einschraenkungen_NEU_laden_11_Buchungen"
+	classname="B_BUAB_Einschraenkungen_laden_11_Buchungen"
 	namespace="B_EXOPV_005.Recordings_B_BUAB">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
+		<keysequenceitem
+		KeySequence="%EXOPV_005%"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="c0b8f0b1-0d9a-4f38-9132-2eb1e40cbff5">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b2f3f768-083d-4b5f-90fa-b23f5dbf751f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblB']/container[@controlname='ToolBar']/container[@controlname='cDCC_Tools']/text[@controlname='dfBelegnr']/text[@accessiblename='Beleg']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="d2e73315-c549-4ecf-bef9-8ccb88656160"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
@@ -50,6 +86,52 @@ mode="Global">
 				%EXOPV_005%
 			</matchvalue>
 		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="e96d4600-94b7-48ef-949b-f2c56d4f20a8"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f89aac8a-3374-4cf9-8497-e0f940354cf2"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblB']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="57a25947-9db5-43c9-ab3c-3661b11dde95"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="63d6519a-a383-45ea-aaf9-99fd7ce3124a"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -1125,7 +1207,7 @@ Anzeigen ?&#32;
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		B_BUAB_Einschraenkungen_NEU_laden_11_Buchungen.UserCode.cs
+		B_BUAB_Einschraenkungen_laden_11_Buchungen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

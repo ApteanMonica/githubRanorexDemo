@@ -24,22 +24,22 @@ namespace B_EXOPV_005.Recordings_B_EXOPS
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The B_EXOPS_Einschraenkung_nur_B_EXOPV_005 recording.
+    ///The B_EXOPS_Einschraenkung_B_EXOPV_005 recording.
     /// </summary>
     [TestModule("15736ee8-7921-45fc-a34d-05c6dbed837f", ModuleType.Recording, 1)]
-    public partial class B_EXOPS_Einschraenkung_nur_B_EXOPV_005 : ITestModule
+    public partial class B_EXOPS_Einschraenkung_B_EXOPV_005 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_005.B_EXOPV_005Repository repository.
         /// </summary>
         public static global::B_EXOPV_005.B_EXOPV_005Repository repo = global::B_EXOPV_005.B_EXOPV_005Repository.Instance;
 
-        static B_EXOPS_Einschraenkung_nur_B_EXOPV_005 instance = new B_EXOPS_Einschraenkung_nur_B_EXOPV_005();
+        static B_EXOPS_Einschraenkung_B_EXOPV_005 instance = new B_EXOPS_Einschraenkung_B_EXOPV_005();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public B_EXOPS_Einschraenkung_nur_B_EXOPV_005()
+        public B_EXOPS_Einschraenkung_B_EXOPV_005()
         {
             Stapel_Herkunft = "B_EXOPV_005";
         }
@@ -47,7 +47,7 @@ namespace B_EXOPV_005.Recordings_B_EXOPS
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static B_EXOPS_Einschraenkung_nur_B_EXOPV_005 Instance
+        public static B_EXOPS_Einschraenkung_B_EXOPV_005 Instance
         {
             get { return instance; }
         }
