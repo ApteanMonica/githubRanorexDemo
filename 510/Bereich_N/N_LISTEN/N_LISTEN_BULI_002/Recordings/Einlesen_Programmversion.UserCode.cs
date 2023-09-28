@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace N_LISTEN_BULI_002.Recordings
 {
-    public partial class Einlesen_des_Ranoagent
+    public partial class Einlesen_Programmversion
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
