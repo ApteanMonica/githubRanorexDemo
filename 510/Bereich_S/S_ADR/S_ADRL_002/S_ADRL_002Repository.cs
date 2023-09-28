@@ -30,7 +30,8 @@ namespace S_ADRL_002
         S_ADRL_002RepositoryFolders.FrmAdrAppFolder _frmadr;
         S_ADRL_002RepositoryFolders.DlgcopyadrAppFolder _dlgcopyadr;
         S_ADRL_002RepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
-        RepoItemInfo _button0Info;
+        S_ADRL_002RepositoryFolders.SADRAppFolder _sadr;
+        RepoItemInfo _button0_uidInfo;
 
         /// <summary>
         /// Gets the singleton class instance representing the S_ADRL_002Repository element repository.
@@ -50,7 +51,8 @@ namespace S_ADRL_002
             _frmadr = new S_ADRL_002RepositoryFolders.FrmAdrAppFolder(this);
             _dlgcopyadr = new S_ADRL_002RepositoryFolders.DlgcopyadrAppFolder(this);
             _dlgmessagebox = new S_ADRL_002RepositoryFolders.DlgMessageBoxAppFolder(this);
-            _button0Info = new RepoItemInfo(this, "Button0", "/form[@controlname='dlgMessageBox']/form[@controlname='dlgMessageBox']/button[@controlname='button0']", 30000, null, "8b5a81dc-6e9d-4287-a6eb-eb8550acd558");
+            _sadr = new S_ADRL_002RepositoryFolders.SADRAppFolder(this);
+            _button0_uidInfo = new RepoItemInfo(this, "Button0_UID", "/form[@controlname='dlgMessageBox']/button[@controlname='button0']", 30000, null, "8b5a81dc-6e9d-4287-a6eb-eb8550acd558");
         }
 
 #region Variables
@@ -82,26 +84,26 @@ namespace S_ADRL_002
         }
 
         /// <summary>
-        /// The Button0 item.
+        /// The Button0_UID item.
         /// </summary>
         [RepositoryItem("8b5a81dc-6e9d-4287-a6eb-eb8550acd558")]
-        public virtual Ranorex.Button Button0
+        public virtual Ranorex.Button Button0_UID
         {
             get
             {
-                 return _button0Info.CreateAdapter<Ranorex.Button>(true);
+                 return _button0_uidInfo.CreateAdapter<Ranorex.Button>(true);
             }
         }
 
         /// <summary>
-        /// The Button0 item info.
+        /// The Button0_UID item info.
         /// </summary>
         [RepositoryItemInfo("8b5a81dc-6e9d-4287-a6eb-eb8550acd558")]
-        public virtual RepoItemInfo Button0Info
+        public virtual RepoItemInfo Button0_UIDInfo
         {
             get
             {
-                return _button0Info;
+                return _button0_uidInfo;
             }
         }
 
@@ -131,6 +133,15 @@ namespace S_ADRL_002
         {
             get { return _dlgmessagebox; }
         }
+
+        /// <summary>
+        /// The SADR folder.
+        /// </summary>
+        [RepositoryFolder("23c2df35-6593-4437-a0d1-81fd99a2ff38")]
+        public virtual S_ADRL_002RepositoryFolders.SADRAppFolder SADR
+        {
+            get { return _sadr; }
+        }
     }
 
     /// <summary>
@@ -152,6 +163,9 @@ namespace S_ADRL_002
             RepoItemInfo _pbcommonkopierenInfo;
             RepoItemInfo _zahlungsartInfo;
             RepoItemInfo _dfadruidInfo;
+            RepoItemInfo _dftextsadresse3Info;
+            RepoItemInfo _pbdataaccesssaveInfo;
+            RepoItemInfo _zahlungsart1Info;
 
             /// <summary>
             /// Creates a new FrmAdr  folder.
@@ -166,6 +180,9 @@ namespace S_ADRL_002
                 _pbcommonkopierenInfo = new RepoItemInfo(this, "PbCommonKopieren", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbStandard3']", "", 30000, null, "ddeb4650-37bb-4d3a-b9fd-bebfad93b603");
                 _zahlungsartInfo = new RepoItemInfo(this, "Zahlungsart", "container[@controlname='ClientArea']//element[@controlname='dfKlkt_zahlart']/text[@accessiblename='Zahlungsart:']", "", 30000, null, "afd799bd-6250-474a-b55e-0c9ec373b28d");
                 _dfadruidInfo = new RepoItemInfo(this, "DfAdrUid", "container[@controlname='ClientArea']//element[@controlname='ucUid']/element[@controlname='dfAdr_uid']", "", 30000, null, "bcf52289-a165-4075-a95b-b727b6145d6c");
+                _dftextsadresse3Info = new RepoItemInfo(this, "DfTextSADRESSE3", "container[@controlname='ClientArea']/?/?/text[@controlname='dfText_S_ADRESSE_3']", "", 30000, null, "ef1e7793-bb35-48a5-8fbe-e415014be1a9");
+                _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "?/?/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "430594e4-23f7-4dc0-a131-c68a593f5f26");
+                _zahlungsart1Info = new RepoItemInfo(this, "Zahlungsart1", ".//tabpage[@controlname='tpAllgemein']/text[@controlname='dfKlkt_zahlart']/text[@accessiblename='Zahlungsart:']", "", 30000, null, "3cbea438-7c77-4fe9-852a-85a74a34f50e");
             }
 
             /// <summary>
@@ -333,6 +350,78 @@ namespace S_ADRL_002
                 get
                 {
                     return _dfadruidInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfTextSADRESSE3 item.
+            /// </summary>
+            [RepositoryItem("ef1e7793-bb35-48a5-8fbe-e415014be1a9")]
+            public virtual Ranorex.Text DfTextSADRESSE3
+            {
+                get
+                {
+                    return _dftextsadresse3Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfTextSADRESSE3 item info.
+            /// </summary>
+            [RepositoryItemInfo("ef1e7793-bb35-48a5-8fbe-e415014be1a9")]
+            public virtual RepoItemInfo DfTextSADRESSE3Info
+            {
+                get
+                {
+                    return _dftextsadresse3Info;
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessSave item.
+            /// </summary>
+            [RepositoryItem("430594e4-23f7-4dc0-a131-c68a593f5f26")]
+            public virtual Ranorex.Button PbDataAccessSave
+            {
+                get
+                {
+                    return _pbdataaccesssaveInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessSave item info.
+            /// </summary>
+            [RepositoryItemInfo("430594e4-23f7-4dc0-a131-c68a593f5f26")]
+            public virtual RepoItemInfo PbDataAccessSaveInfo
+            {
+                get
+                {
+                    return _pbdataaccesssaveInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Zahlungsart1 item.
+            /// </summary>
+            [RepositoryItem("3cbea438-7c77-4fe9-852a-85a74a34f50e")]
+            public virtual Ranorex.Text Zahlungsart1
+            {
+                get
+                {
+                    return _zahlungsart1Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Zahlungsart1 item info.
+            /// </summary>
+            [RepositoryItemInfo("3cbea438-7c77-4fe9-852a-85a74a34f50e")]
+            public virtual RepoItemInfo Zahlungsart1Info
+            {
+                get
+                {
+                    return _zahlungsart1Info;
                 }
             }
 
@@ -589,8 +678,9 @@ namespace S_ADRL_002
         public partial class DlgMessageBoxAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _uidpruefungdieangegebeneuidistnicInfo;
-            RepoItemInfo _labelmeldungstextInfo;
             RepoItemInfo _pictabsInfo;
+            RepoItemInfo _button0_bankInfo;
+            RepoItemInfo _button0Info;
 
             /// <summary>
             /// Creates a new DlgMessageBox  folder.
@@ -598,9 +688,10 @@ namespace S_ADRL_002
             public DlgMessageBoxAppFolder(RepoGenBaseFolder parentFolder) :
                     base("DlgMessageBox", "/form[@controlname='dlgMessageBox']", parentFolder, 30000, null, true, "ed3a5643-8419-4b79-8786-7eb664a76e1b", "")
             {
-                _uidpruefungdieangegebeneuidistnicInfo = new RepoItemInfo(this, "UIDPruefungDieAngegebeneUIDIstNic", "?/?/text[@accessiblename>'UID-Prüfung: die angegebene']", "", 30000, null, "6b2373e6-b6ca-4ab9-9128-52b69842c7db");
-                _labelmeldungstextInfo = new RepoItemInfo(this, "LabelMeldungstext", "text[@controlname='labelMeldungstext']", "", 30000, null, "e1a0e083-037a-46b8-aa31-6f8cb7b6d933");
+                _uidpruefungdieangegebeneuidistnicInfo = new RepoItemInfo(this, "UIDPruefungDieAngegebeneUIDIstNic", "text[@controlname='labelMeldungstext']", "", 30000, null, "6b2373e6-b6ca-4ab9-9128-52b69842c7db");
                 _pictabsInfo = new RepoItemInfo(this, "PicTabs", "?/?/tabpagelist[@controlname='picTabs']", "", 30000, null, "a91aa057-ae38-4550-8aba-c5e38fac9ca7");
+                _button0_bankInfo = new RepoItemInfo(this, "Button0_bank", "button[@controlname='button0']", "", 30000, null, "54c8fb25-ad86-4b56-b252-e4eb611a1aba");
+                _button0Info = new RepoItemInfo(this, "Button0", "button", "", 30000, null, "bc9c6e88-3744-4df4-b9e1-20c1e0e642af");
             }
 
             /// <summary>
@@ -652,30 +743,6 @@ namespace S_ADRL_002
             }
 
             /// <summary>
-            /// The LabelMeldungstext item.
-            /// </summary>
-            [RepositoryItem("e1a0e083-037a-46b8-aa31-6f8cb7b6d933")]
-            public virtual Ranorex.Text LabelMeldungstext
-            {
-                get
-                {
-                    return _labelmeldungstextInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The LabelMeldungstext item info.
-            /// </summary>
-            [RepositoryItemInfo("e1a0e083-037a-46b8-aa31-6f8cb7b6d933")]
-            public virtual RepoItemInfo LabelMeldungstextInfo
-            {
-                get
-                {
-                    return _labelmeldungstextInfo;
-                }
-            }
-
-            /// <summary>
             /// The PicTabs item.
             /// </summary>
             [RepositoryItem("a91aa057-ae38-4550-8aba-c5e38fac9ca7")]
@@ -696,6 +763,120 @@ namespace S_ADRL_002
                 get
                 {
                     return _pictabsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Button0_bank item.
+            /// </summary>
+            [RepositoryItem("54c8fb25-ad86-4b56-b252-e4eb611a1aba")]
+            public virtual Ranorex.Button Button0_bank
+            {
+                get
+                {
+                    return _button0_bankInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Button0_bank item info.
+            /// </summary>
+            [RepositoryItemInfo("54c8fb25-ad86-4b56-b252-e4eb611a1aba")]
+            public virtual RepoItemInfo Button0_bankInfo
+            {
+                get
+                {
+                    return _button0_bankInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Button0 item.
+            /// </summary>
+            [RepositoryItem("bc9c6e88-3744-4df4-b9e1-20c1e0e642af")]
+            public virtual Ranorex.Button Button0
+            {
+                get
+                {
+                    return _button0Info.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Button0 item info.
+            /// </summary>
+            [RepositoryItemInfo("bc9c6e88-3744-4df4-b9e1-20c1e0e642af")]
+            public virtual RepoItemInfo Button0Info
+            {
+                get
+                {
+                    return _button0Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SADRAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("23c2df35-6593-4437-a0d1-81fd99a2ff38")]
+        public partial class SADRAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _dropdownInfo;
+
+            /// <summary>
+            /// Creates a new SADR  folder.
+            /// </summary>
+            public SADRAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("SADR", "/toolbar[@processname='S_ADR']", parentFolder, 30000, null, true, "23c2df35-6593-4437-a0d1-81fd99a2ff38", "")
+            {
+                _dropdownInfo = new RepoItemInfo(this, "DropDown", "contextmenu[@accessiblename='DropDown']", "", 30000, null, "87aaeeec-852a-48de-80d4-3fb2456f9750");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("23c2df35-6593-4437-a0d1-81fd99a2ff38")]
+            public virtual Ranorex.ToolBar Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.ToolBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("23c2df35-6593-4437-a0d1-81fd99a2ff38")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DropDown item.
+            /// </summary>
+            [RepositoryItem("87aaeeec-852a-48de-80d4-3fb2456f9750")]
+            public virtual Ranorex.ContextMenu DropDown
+            {
+                get
+                {
+                    return _dropdownInfo.CreateAdapter<Ranorex.ContextMenu>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DropDown item info.
+            /// </summary>
+            [RepositoryItemInfo("87aaeeec-852a-48de-80d4-3fb2456f9750")]
+            public virtual RepoItemInfo DropDownInfo
+            {
+                get
+                {
+                    return _dropdownInfo;
                 }
             }
         }

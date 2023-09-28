@@ -11778,17 +11778,13 @@ uv8A98GpqKAId4/uv/3waN4/uv8A98GpqKAId4/uv/3waN4/uv8A98GpqKAP/9k=
 			</helperscreenshot>
 		</mouseitem>
 		<validationitem
-		action="AttributeEqual"
+		action="AttributeRegex"
 		enabled="True"
 		optional="False"
 		searchpropertyid="e3d1e362-2759-4518-b037-8b11e155e927">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Artikel2">
-				</binding>
 			</bindings>
 			<info
 			id="a21ac366-e375-4128-be43-4ab3265516c6"
@@ -11837,7 +11833,7 @@ uv8A98GpqKAId4/uv/3waN4/uv8A98GpqKAId4/uv/3waN4/uv8A98GpqKAP/9k=
 				Text
 			</matchname>
 			<matchvalue>
-				yourtext
+				[$Artikel1] | [$Artikel2]
 			</matchvalue>
 		</validationitem>
 		<mouseitem

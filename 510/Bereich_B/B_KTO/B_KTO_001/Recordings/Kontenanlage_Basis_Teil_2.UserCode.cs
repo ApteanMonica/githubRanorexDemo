@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace N_LISTEN_BULI_002.Recordings
+namespace B_KTO_001.Recordings
 {
-    public partial class Einlesen_des_Ranoagent
+    public partial class Kontenanlage_Basis_Teil_2
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

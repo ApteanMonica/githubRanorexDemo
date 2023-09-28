@@ -43,6 +43,7 @@ namespace S_ADRL_002.Recordings
         {
             Lieferant = "300001";
             neuer_Lieferant = "";
+            bankVerbindungMeldung = "Die Zahlungsart benötigt eine Bankverbindung!";
         }
 
         /// <summary>
@@ -65,6 +66,18 @@ namespace S_ADRL_002.Recordings
         {
             get { return _neuer_Lieferant; }
             set { _neuer_Lieferant = value; }
+        }
+
+        string _bankVerbindungMeldung;
+
+        /// <summary>
+        /// Gets or sets the value of variable bankVerbindungMeldung.
+        /// </summary>
+        [TestVariable("618817ab-49ad-4c79-88bc-f76f4359aef4")]
+        public string bankVerbindungMeldung
+        {
+            get { return _bankVerbindungMeldung; }
+            set { _bankVerbindungMeldung = value; }
         }
 
         /// <summary>
@@ -130,11 +143,23 @@ namespace S_ADRL_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Dlgcopyadr.Pbok' at Center.", repo.Dlgcopyadr.PbokInfo, new RecordItemIndex(8));
             repo.Dlgcopyadr.Pbok.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$neuer_Lieferant) on item 'FrmAdr.Lieferantennummer'.", repo.FrmAdr.LieferantennummerInfo, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.FrmAdr.LieferantennummerInfo, "Text", neuer_Lieferant);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$bankVerbindungMeldung) on item 'DlgMessageBox.UIDPruefungDieAngegebeneUIDIstNic'.", repo.DlgMessageBox.UIDPruefungDieAngegebeneUIDIstNicInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.DlgMessageBox.UIDPruefungDieAngegebeneUIDIstNicInfo, "Text", bankVerbindungMeldung);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Button0' at Center.", repo.Button0Info, new RecordItemIndex(10));
-            repo.Button0.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0_bank' at Center.", repo.DlgMessageBox.Button0_bankInfo, new RecordItemIndex(10));
+            repo.DlgMessageBox.Button0_bank.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAdr.Zahlungsart1' at Center.", repo.FrmAdr.Zahlungsart1Info, new RecordItemIndex(11));
+            repo.FrmAdr.Zahlungsart1.DoubleClick();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}'.", new RecordItemIndex(12));
+            Keyboard.Press("{Back}");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'B' with focus on 'FrmAdr.Zahlungsart1'.", repo.FrmAdr.Zahlungsart1Info, new RecordItemIndex(13));
+            repo.FrmAdr.Zahlungsart1.PressKeys("B");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$neuer_Lieferant) on item 'FrmAdr.Lieferantennummer'.", repo.FrmAdr.LieferantennummerInfo, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.FrmAdr.LieferantennummerInfo, "Text", neuer_Lieferant);
             
         }
 

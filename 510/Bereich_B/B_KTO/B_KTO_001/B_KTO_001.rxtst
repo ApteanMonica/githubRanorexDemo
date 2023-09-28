@@ -72,6 +72,12 @@
 			ref="045be40b-0dcd-4e07-83e5-d5ad5ee1c2d1"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="b41e9860-9c09-4705-b73d-26211e91cfe6"
+			name="Kontenanlage_Basis_Teil_2"
+			ref="575a1f99-e50b-4d72-b1fc-f2b5f79b2258"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="c153debd-57ca-420d-95cd-ea70f5a26d3c"
 			name="B_KTO_001"
@@ -96,6 +102,10 @@
 					name="KontoName"
 					value="QSB-KTO">
 					</param>
+					<param
+					name="Kontonummer"
+					value="12345">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -115,6 +125,12 @@
 					datasourceid="c153debd-57ca-420d-95cd-ea70f5a26d3c"
 					variableid="7331115d-01d2-4639-a096-3648ce023c81"
 					variablename="Konto">
+					</var>
+					<var
+					dataname="Kontonummer"
+					datasourceid="c153debd-57ca-420d-95cd-ea70f5a26d3c"
+					variableid="0db89922-383b-42ad-9bc6-2f4b50202792"
+					variablename="Kontonummer">
 					</var>
 				</databinding>
 			</testmodule>
@@ -144,6 +160,10 @@
 						<testmodule
 						id="d0d287f4-5ef8-4f19-aa3f-02f1e6f0aed9"
 						name="Kontenanlage_Basis">
+						</testmodule>
+						<testmodule
+						id="b41e9860-9c09-4705-b73d-26211e91cfe6"
+						name="Kontenanlage_Basis_Teil_2">
 						</testmodule>
 						<testmodule
 						id="a511795d-32a7-4c74-b603-c61839d0b2e1"
