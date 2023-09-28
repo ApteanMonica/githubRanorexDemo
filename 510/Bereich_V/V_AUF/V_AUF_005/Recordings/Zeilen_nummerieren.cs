@@ -121,8 +121,8 @@ namespace V_AUF_005.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgZeilenNeuNummerieren.TblZeilenNeuNummerieren.ColZeileAnzeigeNeuRow1' at Center.", repo.DlgZeilenNeuNummerieren.TblZeilenNeuNummerieren.ColZeileAnzeigeNeuRow1Info, new RecordItemIndex(11));
             repo.DlgZeilenNeuNummerieren.TblZeilenNeuNummerieren.ColZeileAnzeigeNeuRow1.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '3' with focus on 'FrmAufk.ColAufpZeileAnzeigeRow1'.", repo.FrmAufk.ColAufpZeileAnzeigeRow1Info, new RecordItemIndex(12));
-            repo.FrmAufk.ColAufpZeileAnzeigeRow1.PressKeys("3");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '3' with focus on 'DlgZeilenNeuNummerieren.TblZeilenNeuNummerieren.ColZeileAnzeigeNeuRow1'.", repo.DlgZeilenNeuNummerieren.TblZeilenNeuNummerieren.ColZeileAnzeigeNeuRow1Info, new RecordItemIndex(12));
+            repo.DlgZeilenNeuNummerieren.TblZeilenNeuNummerieren.ColZeileAnzeigeNeuRow1.PressKeys("3");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgZeilenNeuNummerieren.TblZeilenNeuNummerieren.ColZeileAnzeigeNeuRow3' at Center.", repo.DlgZeilenNeuNummerieren.TblZeilenNeuNummerieren.ColZeileAnzeigeNeuRow3Info, new RecordItemIndex(13));
             repo.DlgZeilenNeuNummerieren.TblZeilenNeuNummerieren.ColZeileAnzeigeNeuRow3.Click();

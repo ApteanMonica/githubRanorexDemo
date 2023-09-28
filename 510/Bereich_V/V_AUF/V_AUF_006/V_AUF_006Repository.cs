@@ -177,7 +177,7 @@ namespace V_AUF_006
             RepoItemInfo _dfaufkadrwareInfo;
             RepoItemInfo _maximierenInfo;
             RepoItemInfo _dfartnrInfo;
-            RepoItemInfo _artnr1Info;
+            RepoItemInfo _artnr_511Info;
 
             /// <summary>
             /// Creates a new FrmAufk  folder.
@@ -191,10 +191,10 @@ namespace V_AUF_006
                 _kundeInfo = new RepoItemInfo(this, "Kunde", ".//tabpage[@controlname='tpKopf']/text[@controlname='dfAufk_adr_kunde']/text[@accessiblename='Kunde']", "", 30000, null, "5e7cb6b9-68e3-4d75-a6cd-ed527f9e9f40");
                 _dfaufkzahlartInfo = new RepoItemInfo(this, "DfAufkZahlart", ".//tabpage[@controlname='tpKopf']/tabpagelist[@controlname='picTabsAufk']/tabpage[@controlname='tpAllgemein']/?/?/text[@controlname='dfAufk_zahlart']", "", 30000, null, "3119903c-e2fd-4b75-9a54-050b3b86f654");
                 _tabpagepositionenInfo = new RepoItemInfo(this, "TabPagePositionen", "container[@controlname='ClientArea']/?/?/tabpage[@accessiblename='&Positionen']", "", 30000, null, "03771aa3-4602-47a8-a406-40da6f5a46cc");
-                _artnrInfo = new RepoItemInfo(this, "ArtNr", ".//tabpage[@controlname='tpPos']/?/?/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/?/?/text[@controlname='dfArt_nr']", "", 30000, null, "39b5e25f-a4e8-495c-a4c1-caaa119a72ca");
-                _mengeInfo = new RepoItemInfo(this, "Menge", ".//tabpage[@controlname='tpPos']/?/?/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_menge']/text[@accessiblerole='Text']", "", 30000, null, "8fe9df58-5b3d-4838-aa5c-83df5d035143");
+                _artnrInfo = new RepoItemInfo(this, "ArtNr", "container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfArt_nr']/text[@accessiblename='Art-Nr.']", "", 30000, null, "39b5e25f-a4e8-495c-a4c1-caaa119a72ca");
+                _mengeInfo = new RepoItemInfo(this, "Menge", "container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_menge']/text[@accessiblerole='Text']", "", 30000, null, "8fe9df58-5b3d-4838-aa5c-83df5d035143");
                 _pbcommonsaveInfo = new RepoItemInfo(this, "PbCommonSave", "?/?/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Save']", "", 30000, null, "75f6d68c-8cb0-430c-bcc2-7f457083e674");
-                _dfaufppreisInfo = new RepoItemInfo(this, "DfAufpPreis", ".//tabpage[@controlname='tpPos']//tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_preis']", "", 30000, null, "f06c5964-184f-4cf8-94f5-25d24fb24e63");
+                _dfaufppreisInfo = new RepoItemInfo(this, "DfAufpPreis", "container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_preis']/text[@accessiblename='Pr.']", "", 30000, null, "f06c5964-184f-4cf8-94f5-25d24fb24e63");
                 _row1column0Info = new RepoItemInfo(this, "Row1Column0", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "230d9d84-f5ee-43ce-abdb-38536552b9c2");
                 _kopfInfo = new RepoItemInfo(this, "Kopf", "container[@controlname='ClientArea']/?/?/tabpage[@accessiblename='K&opf']", "", 30000, null, "24c00fc1-3ffd-47cf-a746-9f24cbd36b20");
                 _pbcommmon1newloadInfo = new RepoItemInfo(this, "PbCommmon1NewLoad", "?/?/container[@controlname='CommonGroup']/button[@controlname='pbCommmon1_NewLoad']", "", 30000, null, "45fbac4d-a3d7-4a43-b7a4-b5e45f31b2e6");
@@ -211,7 +211,7 @@ namespace V_AUF_006
                 _dfaufkadrwareInfo = new RepoItemInfo(this, "DfAufkAdrWare", ".//tabpage[@controlname='tpKopf']/text[@controlname='dfAufk_adr_ware']", "", 30000, null, "e826993b-c8e2-452d-bf01-0568406b0e8f");
                 _maximierenInfo = new RepoItemInfo(this, "Maximieren", "?/?/button[@accessiblename='Maximieren']", "", 30000, null, "099501f1-098e-4194-b081-cc39a5d42ee8");
                 _dfartnrInfo = new RepoItemInfo(this, "DfArtNr", ".//tabpage[@controlname='tpPos']//tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfArt_nr']", "", 30000, null, "2493ed89-40b4-48cc-a81c-ce1c6a6b47c6");
-                _artnr1Info = new RepoItemInfo(this, "ArtNr1", ".//tabpage[@controlname='tpPos']/?/?/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/?/?/text[@accessiblename='Art-Nr.']", "", 30000, null, "6108411a-7171-4bd9-8438-921d822fb7c2");
+                _artnr_511Info = new RepoItemInfo(this, "ArtNr_511", "container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfArt_nr']/text[@accessiblename='Art-Nr.']", "", 30000, null, "c69d55f5-bf80-4164-a33e-ad41a1a9a5df");
             }
 
             /// <summary>
@@ -839,26 +839,26 @@ namespace V_AUF_006
             }
 
             /// <summary>
-            /// The ArtNr1 item.
+            /// The ArtNr_511 item.
             /// </summary>
-            [RepositoryItem("6108411a-7171-4bd9-8438-921d822fb7c2")]
-            public virtual Ranorex.Text ArtNr1
+            [RepositoryItem("c69d55f5-bf80-4164-a33e-ad41a1a9a5df")]
+            public virtual Ranorex.Text ArtNr_511
             {
                 get
                 {
-                    return _artnr1Info.CreateAdapter<Ranorex.Text>(true);
+                    return _artnr_511Info.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The ArtNr1 item info.
+            /// The ArtNr_511 item info.
             /// </summary>
-            [RepositoryItemInfo("6108411a-7171-4bd9-8438-921d822fb7c2")]
-            public virtual RepoItemInfo ArtNr1Info
+            [RepositoryItemInfo("c69d55f5-bf80-4164-a33e-ad41a1a9a5df")]
+            public virtual RepoItemInfo ArtNr_511Info
             {
                 get
                 {
-                    return _artnr1Info;
+                    return _artnr_511Info;
                 }
             }
 
