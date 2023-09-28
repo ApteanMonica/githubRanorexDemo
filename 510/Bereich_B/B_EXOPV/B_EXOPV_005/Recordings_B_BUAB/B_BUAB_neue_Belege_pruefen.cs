@@ -43,6 +43,20 @@ namespace B_EXOPV_005.Recordings_B_BUAB
         {
             LF_01 = "303201";
             LF_02 = "303202";
+            ER01_LF01 = "ER01_B_EXOPV_005";
+            FB01_LF01 = "FB01_B_EXOPV_005";
+            ER04a_LF01 = "ER04_B_EXOPV_005";
+            FB04a_LF01 = "FB04_B_EXOPV_005";
+            ER04b_LF01 = "ER04_B_EXOPV_005";
+            FB05_LF01 = "FB05_B_EXOPV_005";
+            ER06_LF01 = "ER06_B_EXOPV_005";
+            FB04b_LF01 = "FB04_B_EXOPV_005";
+            ER02_LF02 = "ER02_B_EXOPV_005";
+            FB02_LF02 = "FB02_B_EXOPV_005";
+            ER03_LF02_NEU = "ER03_B_EXOPV_005_NEU";
+            FB03_LF02_NEU = "FB03_B_EXOPV_005_NEU";
+            ER05_LF02 = "ER05_B_EXOPV_005";
+            FB05_LF02 = "FB05_B_EXOPV_005";
         }
 
         /// <summary>
@@ -79,6 +93,174 @@ namespace B_EXOPV_005.Recordings_B_BUAB
             set { _LF_02 = value; }
         }
 
+        string _ER01_LF01;
+
+        /// <summary>
+        /// Gets or sets the value of variable ER01_LF01.
+        /// </summary>
+        [TestVariable("06ddf614-92fc-4f1a-86e9-1886d1d127b1")]
+        public string ER01_LF01
+        {
+            get { return _ER01_LF01; }
+            set { _ER01_LF01 = value; }
+        }
+
+        string _FB01_LF01;
+
+        /// <summary>
+        /// Gets or sets the value of variable FB01_LF01.
+        /// </summary>
+        [TestVariable("e5bdc247-b751-4a61-9414-d023335fed9e")]
+        public string FB01_LF01
+        {
+            get { return _FB01_LF01; }
+            set { _FB01_LF01 = value; }
+        }
+
+        string _ER04a_LF01;
+
+        /// <summary>
+        /// Gets or sets the value of variable ER04a_LF01.
+        /// </summary>
+        [TestVariable("368f4f2d-8a58-413c-bb83-67e92f11582d")]
+        public string ER04a_LF01
+        {
+            get { return _ER04a_LF01; }
+            set { _ER04a_LF01 = value; }
+        }
+
+        string _FB04a_LF01;
+
+        /// <summary>
+        /// Gets or sets the value of variable FB04a_LF01.
+        /// </summary>
+        [TestVariable("442d727c-84e3-4b0a-938d-ab65eda312be")]
+        public string FB04a_LF01
+        {
+            get { return _FB04a_LF01; }
+            set { _FB04a_LF01 = value; }
+        }
+
+        string _ER04b_LF01;
+
+        /// <summary>
+        /// Gets or sets the value of variable ER04b_LF01.
+        /// </summary>
+        [TestVariable("6d6903b4-7e9a-4ea1-96f5-e1b54b705e67")]
+        public string ER04b_LF01
+        {
+            get { return _ER04b_LF01; }
+            set { _ER04b_LF01 = value; }
+        }
+
+        string _FB05_LF01;
+
+        /// <summary>
+        /// Gets or sets the value of variable FB05_LF01.
+        /// </summary>
+        [TestVariable("7cfe839a-4d06-473d-9c2a-3fd21f00ccee")]
+        public string FB05_LF01
+        {
+            get { return _FB05_LF01; }
+            set { _FB05_LF01 = value; }
+        }
+
+        string _ER06_LF01;
+
+        /// <summary>
+        /// Gets or sets the value of variable ER06_LF01.
+        /// </summary>
+        [TestVariable("de150aaa-7848-4c71-91a3-cb02d4ff07da")]
+        public string ER06_LF01
+        {
+            get { return _ER06_LF01; }
+            set { _ER06_LF01 = value; }
+        }
+
+        string _FB04b_LF01;
+
+        /// <summary>
+        /// Gets or sets the value of variable FB04b_LF01.
+        /// </summary>
+        [TestVariable("a873e9aa-25d4-444b-8149-0fef1258e8be")]
+        public string FB04b_LF01
+        {
+            get { return _FB04b_LF01; }
+            set { _FB04b_LF01 = value; }
+        }
+
+        string _ER02_LF02;
+
+        /// <summary>
+        /// Gets or sets the value of variable ER02_LF02.
+        /// </summary>
+        [TestVariable("112c9fdf-d204-4e2e-9e18-09e2a7947ecf")]
+        public string ER02_LF02
+        {
+            get { return _ER02_LF02; }
+            set { _ER02_LF02 = value; }
+        }
+
+        string _FB02_LF02;
+
+        /// <summary>
+        /// Gets or sets the value of variable FB02_LF02.
+        /// </summary>
+        [TestVariable("fd09070e-94d3-4f25-88bc-2794fa494c74")]
+        public string FB02_LF02
+        {
+            get { return _FB02_LF02; }
+            set { _FB02_LF02 = value; }
+        }
+
+        string _ER03_LF02_NEU;
+
+        /// <summary>
+        /// Gets or sets the value of variable ER03_LF02_NEU.
+        /// </summary>
+        [TestVariable("80b65947-2cf8-46d6-9b9d-f3899cc6e81f")]
+        public string ER03_LF02_NEU
+        {
+            get { return _ER03_LF02_NEU; }
+            set { _ER03_LF02_NEU = value; }
+        }
+
+        string _FB03_LF02_NEU;
+
+        /// <summary>
+        /// Gets or sets the value of variable FB03_LF02_NEU.
+        /// </summary>
+        [TestVariable("f0f2a232-6334-4da7-a0de-2cf7817d2c44")]
+        public string FB03_LF02_NEU
+        {
+            get { return _FB03_LF02_NEU; }
+            set { _FB03_LF02_NEU = value; }
+        }
+
+        string _ER05_LF02;
+
+        /// <summary>
+        /// Gets or sets the value of variable ER05_LF02.
+        /// </summary>
+        [TestVariable("b06a5899-7e9f-44f3-ab2b-68b84333d831")]
+        public string ER05_LF02
+        {
+            get { return _ER05_LF02; }
+            set { _ER05_LF02 = value; }
+        }
+
+        string _FB05_LF02;
+
+        /// <summary>
+        /// Gets or sets the value of variable FB05_LF02.
+        /// </summary>
+        [TestVariable("b0f61936-0f42-4172-8602-d59284132557")]
+        public string FB05_LF02
+        {
+            get { return _FB05_LF02; }
+            set { _FB05_LF02 = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -111,11 +293,11 @@ namespace B_EXOPV_005.Recordings_B_BUAB
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_01) on item 'TblB.Buchungszeilen_Tabelle.Zeile9.ColAdrNrRow9'.", repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColAdrNrRow9Info, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColAdrNrRow9Info, "Text", LF_01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER01_B_EXOPV_005') on item 'TblB.Buchungszeilen_Tabelle.Zeile9.ColBelegnrRow9'.", repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColBelegnrRow9Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColBelegnrRow9Info, "Text", "ER01_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER01_LF01) on item 'TblB.Buchungszeilen_Tabelle.Zeile9.ColBelegnrRow9'.", repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColBelegnrRow9Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColBelegnrRow9Info, "Text", ER01_LF01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB01_B_EXOPV_005') on item 'TblB.Buchungszeilen_Tabelle.Zeile9.ColBusaNrfremdbelegRow9'.", repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColBusaNrfremdbelegRow9Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColBusaNrfremdbelegRow9Info, "Text", "FB01_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FB01_LF01) on item 'TblB.Buchungszeilen_Tabelle.Zeile9.ColBusaNrfremdbelegRow9'.", repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColBusaNrfremdbelegRow9Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile9.ColBusaNrfremdbelegRow9Info, "Text", FB01_LF01);
             
             // Beleg
             Report.Log(ReportLevel.Info, "Section", "Beleg", new RecordItemIndex(4));
@@ -123,11 +305,11 @@ namespace B_EXOPV_005.Recordings_B_BUAB
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_01) on item 'TblB.Buchungszeilen_Tabelle.Zeile11.ColAdrNrRow11'.", repo.TblB.Buchungszeilen_Tabelle.Zeile11.ColAdrNrRow11Info, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile11.ColAdrNrRow11Info, "Text", LF_01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER04_B_EXOPV_005') on item 'TblB.Buchungszeilen_Tabelle.Zeile11.ColBelegnrRow11'.", repo.TblB.Buchungszeilen_Tabelle.Zeile11.ColBelegnrRow11Info, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile11.ColBelegnrRow11Info, "Text", "ER04_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER04a_LF01) on item 'TblB.Buchungszeilen_Tabelle.Zeile11.ColBelegnrRow11'.", repo.TblB.Buchungszeilen_Tabelle.Zeile11.ColBelegnrRow11Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile11.ColBelegnrRow11Info, "Text", ER04a_LF01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB04_B_EXOPV_005') on item 'TblB.Buchungszeilen_Tabelle.Zeile11.ColBusaNrfremdbelegRow11'.", repo.TblB.Buchungszeilen_Tabelle.Zeile11.ColBusaNrfremdbelegRow11Info, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile11.ColBusaNrfremdbelegRow11Info, "Text", "FB04_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FB04a_LF01) on item 'TblB.Buchungszeilen_Tabelle.Zeile11.ColBusaNrfremdbelegRow11'.", repo.TblB.Buchungszeilen_Tabelle.Zeile11.ColBusaNrfremdbelegRow11Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile11.ColBusaNrfremdbelegRow11Info, "Text", FB04a_LF01);
             
             // Beleg
             Report.Log(ReportLevel.Info, "Section", "Beleg", new RecordItemIndex(8));
@@ -135,11 +317,11 @@ namespace B_EXOPV_005.Recordings_B_BUAB
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_01) on item 'TblB.Buchungszeilen_Tabelle.Zeile13.ColAdrNrRow13'.", repo.TblB.Buchungszeilen_Tabelle.Zeile13.ColAdrNrRow13Info, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile13.ColAdrNrRow13Info, "Text", LF_01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER04_B_EXOPV_005') on item 'TblB.Buchungszeilen_Tabelle.Zeile13.ColBelegnrRow13'.", repo.TblB.Buchungszeilen_Tabelle.Zeile13.ColBelegnrRow13Info, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile13.ColBelegnrRow13Info, "Text", "ER04_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER04b_LF01) on item 'TblB.Buchungszeilen_Tabelle.Zeile13.ColBelegnrRow13'.", repo.TblB.Buchungszeilen_Tabelle.Zeile13.ColBelegnrRow13Info, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile13.ColBelegnrRow13Info, "Text", ER04b_LF01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB05_B_EXOPV_005') on item 'TblB.Buchungszeilen_Tabelle.Zeile13.ColBusaNrfremdbelegRow13'.", repo.TblB.Buchungszeilen_Tabelle.Zeile13.ColBusaNrfremdbelegRow13Info, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile13.ColBusaNrfremdbelegRow13Info, "Text", "FB05_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FB05_LF01) on item 'TblB.Buchungszeilen_Tabelle.Zeile13.ColBusaNrfremdbelegRow13'.", repo.TblB.Buchungszeilen_Tabelle.Zeile13.ColBusaNrfremdbelegRow13Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile13.ColBusaNrfremdbelegRow13Info, "Text", FB05_LF01);
             
             // Beleg
             Report.Log(ReportLevel.Info, "Section", "Beleg", new RecordItemIndex(12));
@@ -147,11 +329,11 @@ namespace B_EXOPV_005.Recordings_B_BUAB
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_01) on item 'TblB.Buchungszeilen_Tabelle.Zeile15.ColAdrNrRow15'.", repo.TblB.Buchungszeilen_Tabelle.Zeile15.ColAdrNrRow15Info, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile15.ColAdrNrRow15Info, "Text", LF_01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER06_B_EXOPV_005') on item 'TblB.Buchungszeilen_Tabelle.Zeile15.ColBelegnrRow15'.", repo.TblB.Buchungszeilen_Tabelle.Zeile15.ColBelegnrRow15Info, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile15.ColBelegnrRow15Info, "Text", "ER06_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER06_LF01) on item 'TblB.Buchungszeilen_Tabelle.Zeile15.ColBelegnrRow15'.", repo.TblB.Buchungszeilen_Tabelle.Zeile15.ColBelegnrRow15Info, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile15.ColBelegnrRow15Info, "Text", ER06_LF01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB04_B_EXOPV_005') on item 'TblB.Buchungszeilen_Tabelle.Zeile15.ColBusaNrfremdbelegRow15'.", repo.TblB.Buchungszeilen_Tabelle.Zeile15.ColBusaNrfremdbelegRow15Info, new RecordItemIndex(15));
-            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile15.ColBusaNrfremdbelegRow15Info, "Text", "FB04_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FB04b_LF01) on item 'TblB.Buchungszeilen_Tabelle.Zeile15.ColBusaNrfremdbelegRow15'.", repo.TblB.Buchungszeilen_Tabelle.Zeile15.ColBusaNrfremdbelegRow15Info, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile15.ColBusaNrfremdbelegRow15Info, "Text", FB04b_LF01);
             
             // Beleg
             Report.Log(ReportLevel.Info, "Section", "Beleg", new RecordItemIndex(16));
@@ -159,11 +341,11 @@ namespace B_EXOPV_005.Recordings_B_BUAB
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_02) on item 'TblB.Buchungszeilen_Tabelle.Zeile17.ColAdrNrRow17'.", repo.TblB.Buchungszeilen_Tabelle.Zeile17.ColAdrNrRow17Info, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile17.ColAdrNrRow17Info, "Text", LF_02);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER02_B_EXOPV_005') on item 'TblB.Buchungszeilen_Tabelle.Zeile17.ColBelegnrRow17'.", repo.TblB.Buchungszeilen_Tabelle.Zeile17.ColBelegnrRow17Info, new RecordItemIndex(18));
-            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile17.ColBelegnrRow17Info, "Text", "ER02_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER02_LF02) on item 'TblB.Buchungszeilen_Tabelle.Zeile17.ColBelegnrRow17'.", repo.TblB.Buchungszeilen_Tabelle.Zeile17.ColBelegnrRow17Info, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile17.ColBelegnrRow17Info, "Text", ER02_LF02);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB02_B_EXOPV_005') on item 'TblB.Buchungszeilen_Tabelle.Zeile17.ColBusaNrfremdbelegRow17'.", repo.TblB.Buchungszeilen_Tabelle.Zeile17.ColBusaNrfremdbelegRow17Info, new RecordItemIndex(19));
-            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile17.ColBusaNrfremdbelegRow17Info, "Text", "FB02_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FB02_LF02) on item 'TblB.Buchungszeilen_Tabelle.Zeile17.ColBusaNrfremdbelegRow17'.", repo.TblB.Buchungszeilen_Tabelle.Zeile17.ColBusaNrfremdbelegRow17Info, new RecordItemIndex(19));
+            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile17.ColBusaNrfremdbelegRow17Info, "Text", FB02_LF02);
             
             // Beleg
             Report.Log(ReportLevel.Info, "Section", "Beleg", new RecordItemIndex(20));
@@ -171,11 +353,11 @@ namespace B_EXOPV_005.Recordings_B_BUAB
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_02) on item 'TblB.Buchungszeilen_Tabelle.Zeile19.ColAdrNrRow19'.", repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColAdrNrRow19Info, new RecordItemIndex(21));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColAdrNrRow19Info, "Text", LF_02);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER03_EXOPV_005N') on item 'TblB.Buchungszeilen_Tabelle.Zeile19.ColBelegnrRow19'.", repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColBelegnrRow19Info, new RecordItemIndex(22));
-            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColBelegnrRow19Info, "Text", "ER03_EXOPV_005N");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER03_LF02_NEU) on item 'TblB.Buchungszeilen_Tabelle.Zeile19.ColBelegnrRow19'.", repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColBelegnrRow19Info, new RecordItemIndex(22));
+            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColBelegnrRow19Info, "Text", ER03_LF02_NEU);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB03_EXOPV_005N') on item 'TblB.Buchungszeilen_Tabelle.Zeile19.ColBusaNrfremdbelegRow19'.", repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColBusaNrfremdbelegRow19Info, new RecordItemIndex(23));
-            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColBusaNrfremdbelegRow19Info, "Text", "FB03_EXOPV_005N");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FB03_LF02_NEU) on item 'TblB.Buchungszeilen_Tabelle.Zeile19.ColBusaNrfremdbelegRow19'.", repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColBusaNrfremdbelegRow19Info, new RecordItemIndex(23));
+            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile19.ColBusaNrfremdbelegRow19Info, "Text", FB03_LF02_NEU);
             
             // Beleg
             Report.Log(ReportLevel.Info, "Section", "Beleg", new RecordItemIndex(24));
@@ -183,11 +365,11 @@ namespace B_EXOPV_005.Recordings_B_BUAB
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_02) on item 'TblB.Buchungszeilen_Tabelle.Zeile21.ColAdrNrRow21'.", repo.TblB.Buchungszeilen_Tabelle.Zeile21.ColAdrNrRow21Info, new RecordItemIndex(25));
             Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile21.ColAdrNrRow21Info, "Text", LF_02);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER05_B_EXOPV_005') on item 'TblB.Buchungszeilen_Tabelle.Zeile21.ColBelegnrRow21'.", repo.TblB.Buchungszeilen_Tabelle.Zeile21.ColBelegnrRow21Info, new RecordItemIndex(26));
-            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile21.ColBelegnrRow21Info, "Text", "ER05_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER05_LF02) on item 'TblB.Buchungszeilen_Tabelle.Zeile21.ColBelegnrRow21'.", repo.TblB.Buchungszeilen_Tabelle.Zeile21.ColBelegnrRow21Info, new RecordItemIndex(26));
+            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile21.ColBelegnrRow21Info, "Text", ER05_LF02);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB05_B_EXOPV_005') on item 'TblB.Buchungszeilen_Tabelle.Zeile21.ColBusaNrfremdbelegRow21'.", repo.TblB.Buchungszeilen_Tabelle.Zeile21.ColBusaNrfremdbelegRow21Info, new RecordItemIndex(27));
-            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile21.ColBusaNrfremdbelegRow21Info, "Text", "FB05_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FB05_LF02) on item 'TblB.Buchungszeilen_Tabelle.Zeile21.ColBusaNrfremdbelegRow21'.", repo.TblB.Buchungszeilen_Tabelle.Zeile21.ColBusaNrfremdbelegRow21Info, new RecordItemIndex(27));
+            Validate.AttributeEqual(repo.TblB.Buchungszeilen_Tabelle.Zeile21.ColBusaNrfremdbelegRow21Info, "Text", FB05_LF02);
             
             // ---
             Report.Log(ReportLevel.Info, "Section", "---", new RecordItemIndex(28));

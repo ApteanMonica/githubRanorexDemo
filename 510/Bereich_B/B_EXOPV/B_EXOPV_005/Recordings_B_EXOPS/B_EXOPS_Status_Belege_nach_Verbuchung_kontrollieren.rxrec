@@ -33,6 +33,26 @@ mode="Global">
 		name="LF_02">
 			303202
 		</var>
+		<var
+		id="20a1c3ad-d389-4b8c-811a-5ead8fdfb44e"
+		name="ER03_LF02_NEU">
+			ER03_B_EXOPV_005_NEU
+		</var>
+		<var
+		id="d34f25a9-4679-4a93-8c47-3d0343332821"
+		name="FB03_LF02_NEU">
+			FB03_B_EXOPV_005_NEU
+		</var>
+		<var
+		id="6bccc318-1680-46f3-943d-7c1ed27963b9"
+		name="ER03_LF01">
+			ER03_B_EXOPV_005
+		</var>
+		<var
+		id="5b47a6c0-923e-4bc7-ab44-543f1200db5a"
+		name="FB02_LF01">
+			FB02_B_EXOPV_005
+		</var>
 	</variables>
 	<recorditems>
 		<validationitem
@@ -97,6 +117,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="ER03_LF01">
+				</binding>
 			</bindings>
 			<info
 			id="20a13ddf-4d60-40db-a5bf-db1223426b27"
@@ -122,6 +146,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="FB02_LF01">
+				</binding>
 			</bindings>
 			<info
 			id="d33ba80f-89c1-4d3f-833a-0065e208964d"
@@ -326,6 +354,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="ER03_LF02_NEU">
+				</binding>
 			</bindings>
 			<info
 			id="6822039c-be3b-46dc-a442-f381a17f4e8e"
@@ -351,6 +383,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="FB03_LF02_NEU">
+				</binding>
 			</bindings>
 			<info
 			id="579772ef-9d41-45f9-9652-0b78499b8f87"

@@ -41,6 +41,7 @@ namespace B_EXOPV_005.Recordings_B_BUAB
         /// </summary>
         public B_BUAB_Einschraenkungen_laden_4_Buchungen()
         {
+            Stapel_Herkunft = "B_EXOPV_005";
         }
 
         /// <summary>
@@ -52,6 +53,16 @@ namespace B_EXOPV_005.Recordings_B_BUAB
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable Stapel_Herkunft.
+        /// </summary>
+        [TestVariable("180e3d3e-cc36-4710-a829-9c2460f29544")]
+        public string Stapel_Herkunft
+        {
+            get { return repo.Stapel_Herkunft; }
+            set { repo.Stapel_Herkunft = value; }
+        }
 
 #endregion
 
@@ -79,19 +90,28 @@ namespace B_EXOPV_005.Recordings_B_BUAB
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '%EXOPV_005%' with focus on 'TblB.CDCCTools_Einschraenkungen.Beleg'.", repo.TblB.CDCCTools_Einschraenkungen.BelegInfo, new RecordItemIndex(0));
-            repo.TblB.CDCCTools_Einschraenkungen.Beleg.PressKeys("%EXOPV_005%");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '%' with focus on 'TblB.CDCCTools_Einschraenkungen.Beleg'.", repo.TblB.CDCCTools_Einschraenkungen.BelegInfo, new RecordItemIndex(0));
+            repo.TblB.CDCCTools_Einschraenkungen.Beleg.PressKeys("%");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Stapel_Herkunft' with focus on 'TblB.CDCCTools_Einschraenkungen.Beleg'.", repo.TblB.CDCCTools_Einschraenkungen.BelegInfo, new RecordItemIndex(1));
+            repo.TblB.CDCCTools_Einschraenkungen.Beleg.PressKeys(Stapel_Herkunft);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '%' with focus on 'TblB.CDCCTools_Einschraenkungen.Beleg'.", repo.TblB.CDCCTools_Einschraenkungen.BelegInfo, new RecordItemIndex(2));
+            repo.TblB.CDCCTools_Einschraenkungen.Beleg.PressKeys("%");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'%EXOPV_005%') on item 'TblB.CDCCTools_Einschraenkungen.Beleg'.", repo.TblB.CDCCTools_Einschraenkungen.BelegInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.TblB.CDCCTools_Einschraenkungen.BelegInfo, "Text", "%EXOPV_005%");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Stapel_Herkunft) on item 'TblB.CDCCTools_Einschraenkungen.Beleg'.", repo.TblB.CDCCTools_Einschraenkungen.BelegInfo, new RecordItemIndex(4));
+            Validate.AttributeContains(repo.TblB.CDCCTools_Einschraenkungen.BelegInfo, "Text", Stapel_Herkunft);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'%') on item 'TblB.CDCCTools_Einschraenkungen.Beleg'.", repo.TblB.CDCCTools_Einschraenkungen.BelegInfo, new RecordItemIndex(5));
+            Validate.AttributeContains(repo.TblB.CDCCTools_Einschraenkungen.BelegInfo, "Text", "%");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(6));
             repo.TblB.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblB.Buchungszeilen_Tabelle.Row1'", repo.TblB.Buchungszeilen_Tabelle.Row1Info, new ActionTimeout(60000), new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblB.Buchungszeilen_Tabelle.Row1'", repo.TblB.Buchungszeilen_Tabelle.Row1Info, new ActionTimeout(60000), new RecordItemIndex(7));
             repo.TblB.Buchungszeilen_Tabelle.Row1Info.WaitForExists(60000);
             
         }
