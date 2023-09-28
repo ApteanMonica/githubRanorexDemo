@@ -43,6 +43,7 @@ namespace B_KTO_001.Recordings
         {
             Konto = "2431";
             KontoName = "QSB-KTO";
+            Kontonummer = "12345";
         }
 
         /// <summary>
@@ -79,6 +80,18 @@ namespace B_KTO_001.Recordings
             set { _KontoName = value; }
         }
 
+        string _Kontonummer;
+
+        /// <summary>
+        /// Gets or sets the value of variable Kontonummer.
+        /// </summary>
+        [TestVariable("0db89922-383b-42ad-9bc6-2f4b50202792")]
+        public string Kontonummer
+        {
+            get { return _Kontonummer; }
+            set { _Kontonummer = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -111,9 +124,9 @@ namespace B_KTO_001.Recordings
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '12345' with focus on 'FrmKto.Konto'.", repo.FrmKto.KontoInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kontonummer' with focus on 'FrmKto.Konto'.", repo.FrmKto.KontoInfo, new RecordItemIndex(2));
             repo.FrmKto.Konto.EnsureVisible();
-            Keyboard.Press("12345");
+            Keyboard.Press(Kontonummer);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(3));
             Keyboard.Press("{Tab}");
