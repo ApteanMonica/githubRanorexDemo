@@ -33,6 +33,31 @@ mode="Global">
 		name="LF_02">
 			303202
 		</var>
+		<var
+		id="e778b188-fc1e-4630-9c54-e6dcfd5187ce"
+		name="ER01_LF01">
+			ER01_B_EXOPV_005
+		</var>
+		<var
+		id="a6e8c447-da3e-4fb9-a7c7-bae4cfa857e0"
+		name="FB01_LF01">
+			FB01_B_EXOPV_005
+		</var>
+		<var
+		id="fd41e1c3-9b31-4d6f-8e50-2dc2ee63f23d"
+		name="FB02_LF01">
+			FB02_B_EXOPV_005
+		</var>
+		<var
+		id="487f7410-9f68-4c31-b6e1-91bc43fd37c0"
+		name="ER03_LF02">
+			ER03_B_EXOPV_005
+		</var>
+		<var
+		id="a6fe2c7c-44f2-4021-890a-27cf44cca829"
+		name="FB03_LF02">
+			FB03_B_EXOPV_005
+		</var>
 	</variables>
 	<recorditems>
 		<separatoritem
@@ -2733,6 +2758,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="ER01_LF01">
+				</binding>
 			</bindings>
 			<info
 			id="bedb27fc-5ed5-4eb2-99df-1515d3a2f2d8"
@@ -5300,6 +5329,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="ER01_LF01">
+				</binding>
 			</bindings>
 			<info
 			id="4e5afc41-61a6-4412-bec0-64d0246cba70"
@@ -11899,6 +11932,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="FB01_LF01">
+				</binding>
 			</bindings>
 			<info
 			id="3437b51d-6167-47de-b11d-afe50741fca9"
@@ -21065,6 +21102,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="FB02_LF01">
+				</binding>
 			</bindings>
 			<info
 			id="3437b51d-6167-47de-b11d-afe50741fca9"
@@ -23632,6 +23673,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="FB02_LF01">
+				</binding>
 			</bindings>
 			<info
 			id="0ac467cc-5346-4ac6-9841-7ac13a4903b4"
@@ -25830,7 +25875,7 @@ mode="Global">
 		<validationitem
 		action="Exists"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="a3b7b3bd-00ff-4c72-a656-1b42641da996">
 			<comment>
 			</comment>
@@ -25855,7 +25900,7 @@ mode="Global">
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="39498d79-2302-49e3-8e87-db09cbd2f7d2">
 			<comment>
 			</comment>
@@ -28426,7 +28471,7 @@ mode="Global">
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="39498d79-2302-49e3-8e87-db09cbd2f7d2">
 			<comment>
 			</comment>
@@ -28451,11 +28496,15 @@ mode="Global">
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="2a3acf8b-50c0-4bff-9523-024167b88621">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="ER03_LF02">
+				</binding>
 			</bindings>
 			<info
 			id="bedb27fc-5ed5-4eb2-99df-1515d3a2f2d8"
@@ -31018,11 +31067,15 @@ mode="Global">
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="2a3acf8b-50c0-4bff-9523-024167b88621">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="ER03_LF02">
+				</binding>
 			</bindings>
 			<info
 			id="4e5afc41-61a6-4412-bec0-64d0246cba70"
@@ -31071,7 +31124,7 @@ mode="Global">
 		enabled="True"
 		loc="Center"
 		movetime="300ms"
-		optional="True"
+		optional="False"
 		searchpropertyid="f94cb50e-fc80-4b3e-b17d-8b8d8d067e1c"
 		sx="0"
 		sy="0"
@@ -33221,7 +33274,7 @@ mode="Global">
 		<validationitem
 		action="Exists"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="a3b7b3bd-00ff-4c72-a656-1b42641da996">
 			<comment>
 			</comment>
@@ -33246,7 +33299,7 @@ mode="Global">
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="39498d79-2302-49e3-8e87-db09cbd2f7d2">
 			<comment>
 			</comment>
@@ -35817,7 +35870,7 @@ mode="Global">
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="39498d79-2302-49e3-8e87-db09cbd2f7d2">
 			<comment>
 			</comment>
@@ -37617,11 +37670,15 @@ mode="Global">
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="2a3acf8b-50c0-4bff-9523-024167b88621">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="FB03_LF02">
+				</binding>
 			</bindings>
 			<info
 			id="3437b51d-6167-47de-b11d-afe50741fca9"
@@ -40184,11 +40241,15 @@ mode="Global">
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="2a3acf8b-50c0-4bff-9523-024167b88621">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="FB03_LF02">
+				</binding>
 			</bindings>
 			<info
 			id="0ac467cc-5346-4ac6-9841-7ac13a4903b4"
@@ -40237,7 +40298,7 @@ mode="Global">
 		enabled="True"
 		loc="Center"
 		movetime="300ms"
-		optional="True"
+		optional="False"
 		searchpropertyid="f94cb50e-fc80-4b3e-b17d-8b8d8d067e1c"
 		sx="0"
 		sy="0"
