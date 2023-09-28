@@ -211,7 +211,6 @@ namespace V_AUF_005
             RepoItemInfo _text1Info;
             RepoItemInfo _pbspec1uebersichtInfo;
             RepoItemInfo _tabpagepositionenInfo;
-            RepoItemInfo _row1column0Info;
             RepoItemInfo _row2column0Info;
             RepoItemInfo _row5column0Info;
             RepoItemInfo _row6column0Info;
@@ -222,6 +221,7 @@ namespace V_AUF_005
             RepoItemInfo _colartnrrow3Info;
             RepoItemInfo _pspec2belegabschliessenInfo;
             RepoItemInfo _row4column0Info;
+            RepoItemInfo _row1column0Info;
 
             /// <summary>
             /// Creates a new FrmAufk  folder.
@@ -234,17 +234,17 @@ namespace V_AUF_005
                 _text1Info = new RepoItemInfo(this, "Text1", ".//tabpage[@controlname='tpKopf']/text[@controlname='dfAufk_nr']/text[@accessiblerole='Text']", "", 30000, null, "4433da4d-6ba1-4cf6-a942-2a996047e4af");
                 _pbspec1uebersichtInfo = new RepoItemInfo(this, "PbSpec1Uebersicht", "?/?/container[@controlname='Spec1Group']/button[@controlname='pbSpec1_Uebersicht']", "", 30000, null, "64876165-206d-4093-9e64-77221fd730b3");
                 _tabpagepositionenInfo = new RepoItemInfo(this, "TabPagePositionen", "container[@controlname='ClientArea']/?/?/tabpage[@accessiblename='&Positionen']", "", 30000, null, "7ec8e391-5722-4ff7-8116-16cacd59cb06");
-                _row1column0Info = new RepoItemInfo(this, "Row1Column0", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "5fab95b0-9f3f-4065-ac3a-064a4a3cb5a5");
-                _row2column0Info = new RepoItemInfo(this, "Row2Column0", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 2 Column 0']", "", 30000, null, "0201ba91-ab2b-42ae-a15f-a1f13a9fe550");
-                _row5column0Info = new RepoItemInfo(this, "Row5Column0", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 5 Column 0']", "", 30000, null, "330543cc-0dcb-48a8-8ef6-e88dced7982b");
-                _row6column0Info = new RepoItemInfo(this, "Row6Column0", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 6 Column 0']", "", 30000, null, "694b1442-017b-4d2b-baf6-272596333d6c");
+                _row2column0Info = new RepoItemInfo(this, "Row2Column0", "container/tabpagelist/tabpage/container/element/table/row[@accessiblename='Row 2']/cell[@accessiblename='Row 2 Column 0']", "", 30000, null, "0201ba91-ab2b-42ae-a15f-a1f13a9fe550");
+                _row5column0Info = new RepoItemInfo(this, "Row5Column0", "container/tabpagelist/tabpage/container/element/table/row[@accessiblename='Row 5']/cell[@accessiblename='Row 5 Column 0']", "", 30000, null, "330543cc-0dcb-48a8-8ef6-e88dced7982b");
+                _row6column0Info = new RepoItemInfo(this, "Row6Column0", "container/tabpagelist/tabpage/container/element/table/row[@accessiblename='Row 6']/cell[@accessiblename='Row 6 Column 0']", "", 30000, null, "694b1442-017b-4d2b-baf6-272596333d6c");
                 _cbstornierteInfo = new RepoItemInfo(this, "CbStornierte", ".//tabpage[@controlname='tpPos']/checkbox[@controlname='cbStornierte']", "", 30000, null, "76b601d6-6178-4d98-a74b-2046d35c20b8");
                 _colaufpzeileanzeigerow1Info = new RepoItemInfo(this, "ColAufpZeileAnzeigeRow1", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename>'colAufp_zeile_anzeige Row' and @text='1']", "", 30000, null, "81f85a3a-d9e7-4550-bfc1-a6e15b6ad000");
-                _row3column0Info = new RepoItemInfo(this, "Row3Column0", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 3 Column 0']", "", 30000, null, "efdff104-8f1f-4b50-a1c9-f2d2999c2c41");
+                _row3column0Info = new RepoItemInfo(this, "Row3Column0", "container/tabpagelist/tabpage/container/element/table/row[@accessiblename='Row 3']/cell[@accessiblename='Row 3 Column 0']", "", 30000, null, "efdff104-8f1f-4b50-a1c9-f2d2999c2c41");
                 _colartnrrow1Info = new RepoItemInfo(this, "ColArtNrRow1", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colArt_nr Row 1']", "", 30000, null, "4ce21b75-3788-405f-b6ef-f871d40c205d");
                 _colartnrrow3Info = new RepoItemInfo(this, "ColArtNrRow3", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colArt_nr Row 3']", "", 30000, null, "f6f1c2eb-577c-4c6a-97f4-a370f3b526fe");
                 _pspec2belegabschliessenInfo = new RepoItemInfo(this, "PSpec2BelegAbschliessen", "?/?/container[@controlname='Spec2Group']/button[@controlname='pSpec2_BelegAbschliessen']", "", 30000, null, "029f8ff8-81a1-4fc9-9eba-5cf19ce84a46");
-                _row4column0Info = new RepoItemInfo(this, "Row4Column0", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 4 Column 0']", "", 30000, null, "3506b890-1c21-4ada-88ea-e49675132f81");
+                _row4column0Info = new RepoItemInfo(this, "Row4Column0", "container/tabpagelist/tabpage/container/element/table/row[@accessiblename='Row 4']/cell[@accessiblename='Row 4 Column 0']", "", 30000, null, "3506b890-1c21-4ada-88ea-e49675132f81");
+                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "container/tabpagelist/tabpage/container/element/table/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "5fab95b0-9f3f-4065-ac3a-064a4a3cb5a5");
             }
 
             /// <summary>
@@ -364,30 +364,6 @@ namespace V_AUF_005
                 get
                 {
                     return _tabpagepositionenInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Row1Column0 item.
-            /// </summary>
-            [RepositoryItem("5fab95b0-9f3f-4065-ac3a-064a4a3cb5a5")]
-            public virtual Ranorex.Cell Row1Column0
-            {
-                get
-                {
-                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Row1Column0 item info.
-            /// </summary>
-            [RepositoryItemInfo("5fab95b0-9f3f-4065-ac3a-064a4a3cb5a5")]
-            public virtual RepoItemInfo Row1Column0Info
-            {
-                get
-                {
-                    return _row1column0Info;
                 }
             }
 
@@ -628,6 +604,30 @@ namespace V_AUF_005
                 get
                 {
                     return _row4column0Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item.
+            /// </summary>
+            [RepositoryItem("5fab95b0-9f3f-4065-ac3a-064a4a3cb5a5")]
+            public virtual Ranorex.Cell Row1Column0
+            {
+                get
+                {
+                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("5fab95b0-9f3f-4065-ac3a-064a4a3cb5a5")]
+            public virtual RepoItemInfo Row1Column0Info
+            {
+                get
+                {
+                    return _row1column0Info;
                 }
             }
 
