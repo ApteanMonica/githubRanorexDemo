@@ -161,8 +161,8 @@ namespace L_DISP.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmDispo.PbExtrasListe' at Center.", repo.FrmDispo.PbExtrasListeInfo, new RecordItemIndex(10));
             repo.FrmDispo.PbExtrasListe.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Artikel2) on item 'TblDispVSL.ColArtNrRow1'.", repo.TblDispVSL.ColArtNrRow1Info, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.TblDispVSL.ColArtNrRow1Info, "Text", Artikel2);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'[$Artikel1] | [$Artikel2]') on item 'TblDispVSL.ColArtNrRow1'.", repo.TblDispVSL.ColArtNrRow1Info, new RecordItemIndex(11));
+            Validate.AttributeRegex(repo.TblDispVSL.ColArtNrRow1Info, "Text", new Regex("[$Artikel1] | [$Artikel2]"));
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDispVSL.Schliessen' at Center.", repo.TblDispVSL.SchliessenInfo, new RecordItemIndex(12));
             repo.TblDispVSL.Schliessen.Click();

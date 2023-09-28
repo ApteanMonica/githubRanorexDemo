@@ -657,6 +657,7 @@ namespace L_DISP
             RepoItemInfo _schliessenInfo;
             RepoItemInfo _colmengeoffenrow1Info;
             RepoItemInfo _colmengeoffenrow2Info;
+            RepoItemInfo _colbsvstextrow1Info;
 
             /// <summary>
             /// Creates a new TblDispVSL  folder.
@@ -669,6 +670,7 @@ namespace L_DISP
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "?/?/button[@accessiblename='Schließen']", "", 30000, null, "5be4dc47-613e-493d-be63-8e8206415413");
                 _colmengeoffenrow1Info = new RepoItemInfo(this, "ColMengeOffenRow1", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colMengeOffen Row 1']", "", 30000, null, "fbac7ebf-1aef-4292-8d35-16e457cbd731");
                 _colmengeoffenrow2Info = new RepoItemInfo(this, "ColMengeOffenRow2", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colMengeOffen Row 2']", "", 30000, null, "ff3def61-1a98-42bb-be29-567a1c9a6455");
+                _colbsvstextrow1Info = new RepoItemInfo(this, "ColBsvsTextRow1", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsvs_text Row 1']", "", 30000, null, "f01edf94-1e60-44ce-9899-02ccae7fee70");
             }
 
             /// <summary>
@@ -812,6 +814,30 @@ namespace L_DISP
                 get
                 {
                     return _colmengeoffenrow2Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColBsvsTextRow1 item.
+            /// </summary>
+            [RepositoryItem("f01edf94-1e60-44ce-9899-02ccae7fee70")]
+            public virtual Ranorex.Cell ColBsvsTextRow1
+            {
+                get
+                {
+                    return _colbsvstextrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBsvsTextRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("f01edf94-1e60-44ce-9899-02ccae7fee70")]
+            public virtual RepoItemInfo ColBsvsTextRow1Info
+            {
+                get
+                {
+                    return _colbsvstextrow1Info;
                 }
             }
         }
