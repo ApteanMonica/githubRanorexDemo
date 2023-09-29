@@ -147,56 +147,59 @@ namespace K_VERE_001.Recordings_K_VEST
             // Zeile_3 untere Tabelle
             Report.Log(ReportLevel.Info, "Section", "Zeile_3 untere Tabelle", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColKtoNrVonRow3' at Center.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKtoNrVonRow3Info, new RecordItemIndex(1));
-            repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKtoNrVonRow3.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3' at Center.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3Info, new RecordItemIndex(1));
+            repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(2));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3' at Center.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3Info, new RecordItemIndex(3));
+            repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3.DoubleClick();
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3Info, new RecordItemIndex(5));
             Keyboard.PrepareFocus(repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3);
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(6));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3Info, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiMain_K_VEST.PbDataAccessSpeichern' at Center.", repo.MdiMain_K_VEST.PbDataAccessSpeichernInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiMain_K_VEST.PbDataAccessSpeichern' at Center.", repo.MdiMain_K_VEST.PbDataAccessSpeichernInfo, new RecordItemIndex(9));
             repo.MdiMain_K_VEST.PbDataAccessSpeichern.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Stufe_21) on item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestNrRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestNrRow3Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Stufe_21) on item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestNrRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestNrRow3Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestNrRow3Info, "Text", Stufe_21);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Werkstattstunden verrechnen') on item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestBezRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestBezRow3Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Werkstattstunden verrechnen') on item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestBezRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestBezRow3Info, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestBezRow3Info, "Text", "Werkstattstunden verrechnen");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Art_SVE) on item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestVeraCdRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestVeraCdRow3Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Art_SVE) on item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestVeraCdRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestVeraCdRow3Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestVeraCdRow3Info, "Text", Art_SVE);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestVeraFormelRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestVeraFormelRow3Info, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestVeraFormelRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestVeraFormelRow3Info, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestVeraFormelRow3Info, "Text", "3");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Stunden verrechnen') on item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestVeraBezRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestVeraBezRow3Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Stunden verrechnen') on item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestVeraBezRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestVeraBezRow3Info, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColVestVeraBezRow3Info, "Text", "Stunden verrechnen");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$KontoE) on item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColKtoNrVonRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKtoNrVonRow3Info, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$KontoE) on item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColKtoNrVonRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKtoNrVonRow3Info, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKtoNrVonRow3Info, "Text", KontoE);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3Info, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3Info, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$KontoB) on item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColKtoNrAnRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKtoNrAnRow3Info, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$KontoB) on item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColKtoNrAnRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKtoNrAnRow3Info, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKtoNrAnRow3Info, "Text", KontoB);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrAnRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrAnRow3Info, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrAnRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrAnRow3Info, new RecordItemIndex(18));
             Validate.AttributeEqual(repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrAnRow3Info, "Text", "");
             
         }
