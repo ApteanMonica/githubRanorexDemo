@@ -24,22 +24,22 @@ namespace B_EXOPV_005.Recordings_B_BUAB
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The B_BUAB_Einschraenkungen_laden_4_Buchungen recording.
+    ///The B_BUAB_Einschraenkungen_laden_11_Buchungen recording.
     /// </summary>
-    [TestModule("973ed37e-c79a-4680-a38b-260909411bf7", ModuleType.Recording, 1)]
-    public partial class B_BUAB_Einschraenkungen_laden_4_Buchungen : ITestModule
+    [TestModule("60aa254c-ec39-4c8b-83a9-c677af5c3b5d", ModuleType.Recording, 1)]
+    public partial class B_BUAB_Einschraenkungen_laden_11_Buchungen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EXOPV_005.B_EXOPV_005Repository repository.
         /// </summary>
         public static global::B_EXOPV_005.B_EXOPV_005Repository repo = global::B_EXOPV_005.B_EXOPV_005Repository.Instance;
 
-        static B_BUAB_Einschraenkungen_laden_4_Buchungen instance = new B_BUAB_Einschraenkungen_laden_4_Buchungen();
+        static B_BUAB_Einschraenkungen_laden_11_Buchungen instance = new B_BUAB_Einschraenkungen_laden_11_Buchungen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public B_BUAB_Einschraenkungen_laden_4_Buchungen()
+        public B_BUAB_Einschraenkungen_laden_11_Buchungen()
         {
             Stapel_Herkunft = "B_EXOPV_005";
         }
@@ -47,7 +47,7 @@ namespace B_EXOPV_005.Recordings_B_BUAB
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static B_BUAB_Einschraenkungen_laden_4_Buchungen Instance
+        public static B_BUAB_Einschraenkungen_laden_11_Buchungen Instance
         {
             get { return instance; }
         }
@@ -57,7 +57,7 @@ namespace B_EXOPV_005.Recordings_B_BUAB
         /// <summary>
         /// Gets or sets the value of variable Stapel_Herkunft.
         /// </summary>
-        [TestVariable("180e3d3e-cc36-4710-a829-9c2460f29544")]
+        [TestVariable("5f3b92d8-281e-454d-b4c6-c11e9bf626d7")]
         public string Stapel_Herkunft
         {
             get { return repo.Stapel_Herkunft; }
@@ -108,10 +108,22 @@ namespace B_EXOPV_005.Recordings_B_BUAB
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'%') on item 'TblB.CDCCTools_Einschraenkungen.Beleg'.", repo.TblB.CDCCTools_Einschraenkungen.BelegInfo, new RecordItemIndex(5));
             Validate.AttributeContains(repo.TblB.CDCCTools_Einschraenkungen.BelegInfo, "Text", "%");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(7));
             repo.TblB.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblB.Buchungszeilen_Tabelle.Row1'", repo.TblB.Buchungszeilen_Tabelle.Row1Info, new ActionTimeout(60000), new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox'", repo.DlgMessageBox.SelfInfo, new ActionTimeout(60000), new RecordItemIndex(8));
+            repo.DlgMessageBox.SelfInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='11 Buchungen gefunden.\r\n \r\nAnzeigen ? ') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "11 Buchungen gefunden.\r\n \r\nAnzeigen ? ");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(10));
+            repo.DlgMessageBox.Button0.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblB.Buchungszeilen_Tabelle.Row1'", repo.TblB.Buchungszeilen_Tabelle.Row1Info, new ActionTimeout(60000), new RecordItemIndex(11));
             repo.TblB.Buchungszeilen_Tabelle.Row1Info.WaitForExists(60000);
             
         }

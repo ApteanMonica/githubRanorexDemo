@@ -2,19 +2,15 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<teardown
+			id="05412a5b-0870-4b6c-b49d-d54a3476c1e2"
+			name="teardown">
+			</teardown>
 			<testmodule
-			id="080e79cc-6e46-4943-815d-9a1bdad97631"
-			name="B_EXOPS_Einschraenkung_B_EXOPV_005_neu_laden"
-			ref="6e7cc54a-f7bd-4d2a-8aef-251a45d614b2"
+			id="063ea842-7d70-4c56-a600-54bc0f3e49bb"
+			name="Close_B_EXOPS"
+			ref="d9313597-5739-419a-bbf2-077d9ac0bc6c"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="Stapel_Herkunft"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="c74bbbce-573f-499a-8891-92f7c016b9da"
-					variablename="Stapel_Herkunft">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="0a0cad2c-6fe5-4217-a36a-b4f4e75d5406"
@@ -36,7 +32,12 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<setup
+			id="0cd654e8-fe08-4aa3-b1d1-6f8b4e2f93a6"
+			name="setup">
+			</setup>
 			<testmodule
+			enabled="False"
 			id="0cf89ac8-7411-48da-bb1d-1c521ccfe2d1"
 			name="Pruefung_Dialoge_alt"
 			ref="358790d0-4e14-46fe-828e-be724e2022a1"
@@ -56,6 +57,20 @@
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="38d8351a-ae3e-4f48-a34f-bf2101fe0e21"
 					variablename="LF_02">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="1748c93c-7544-474d-bd41-dc9b7976d549"
+			name="B_EXOPS_Einschraenkung_B_EXOPV_005"
+			ref="15736ee8-7921-45fc-a34d-05c6dbed837f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="ad652474-92e7-4dee-a732-0a3088aace38"
+					variablename="Stapel_Herkunft">
 					</var>
 				</databinding>
 			</testmodule>
@@ -106,16 +121,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="f4d059c4-6c64-4ed4-8b05-48ddb68a667e"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm_3"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="334effdd-578f-400c-85ee-8a062d4b05f0"
 					variablename="Programm_3">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="f4d059c4-6c64-4ed4-8b05-48ddb68a667e"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -166,9 +181,14 @@
 			name="B_BUAB_Einschraenkungen_laden_4_Buchungen"
 			ref="973ed37e-c79a-4680-a38b-260909411bf7"
 			type="Recording">
-				<description>
-					<![CDATA[Workaround: Einschränkung Belegnr %EXOPV_005% statt $Stapel_Herkunft wegen verkürzter NEU-Belegnummern BUG 38668]]>
-				</description>
+				<databinding>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="180e3d3e-cc36-4710-a829-9c2460f29544"
+					variablename="Stapel_Herkunft">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="2b2c7f5d-7ae5-45a4-8c6c-a9da19264fc0"
@@ -180,6 +200,64 @@
 			id="2b4a51f3-c56b-43c8-900f-f9c0ac9e1c68"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="2e02ca17-f2ce-4638-8f7c-4bb3fa67c85d"
+			name="B_EXOPS_Einschraenkung_B_EXOPV_005"
+			ref="15736ee8-7921-45fc-a34d-05c6dbed837f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="ad652474-92e7-4dee-a732-0a3088aace38"
+					variablename="Stapel_Herkunft">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="2e6049e2-a0c6-4a07-be19-5929984c43c5"
+			name="Start_B_EXOPS"
+			ref="2c1809c9-c0c1-475e-b138-e305826b1b49"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Programm_2"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="b63c751a-fec9-469e-844a-1573bcba0e6d"
+					variablename="Programm_2">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="9dad8f90-8bfc-486b-8025-0a9b54f65a42"
+					variablename="Startfile">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="30fa2b46-41a0-4d84-823f-5f6db1e6865b"
+			name="Verbuchung_Dialog3_FB02_LF01_uebergehen"
+			ref="7792f5dc-5019-42ac-ace0-ab476ea130fc"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="LF_01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="26bb6a01-bcd6-4574-b67f-a1d1a2637563"
+					variablename="LF_01">
+					</var>
+					<var
+					dataname="FB02_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="46a2f0da-e809-4524-b370-153c502bc80d"
+					variablename="FB02_LF01">
+					</var>
+				</databinding>
+			</testmodule>
+			<setup
+			id="346ded3a-bd17-4b81-b87c-5386fa5e8819"
+			name="setup">
+			</setup>
 			<smartfoldernode
 			id="3493d726-dda9-4a66-aa8e-eeb65c12fe33"
 			name="521,511">
@@ -240,19 +318,12 @@
 			name="Fehlerprotokoll_Verbuchung_kontrollieren_510"
 			ref="0d5d03d9-80e7-46ca-9c80-cc48b04743c6"
 			type="Recording">
-				<description>
-					<![CDATA[Inhalt 510 und 511 gleich, aber andere Reihenfolge (in 511 kommt exop 32 vor exop 30)]]>
-				</description>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="37683803-0fd1-47ba-82dd-83ff1e4ad21e"
-			name="Pruefung_Dialoge_NEU"
+			name="Pruefung_Dialog5_FB03_LF02"
 			ref="f039a1c9-cc8a-49bb-9778-408f8e7140a7"
 			type="Recording">
-				<description>
-					<![CDATA[IN ARBEIT - neue Variablen für lange Belegnummern eingebaut - Test 510 OK]]>
-				</description>
 				<databinding>
 					<var
 					dataname="LF_02"
@@ -261,42 +332,38 @@
 					variablename="LF_02">
 					</var>
 					<var
-					dataname="LF_01"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="221d8dd0-2b01-46ef-a02d-626a05e5bb77"
-					variablename="LF_01">
-					</var>
-					<var
-					dataname="ER01_LF01"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="e778b188-fc1e-4630-9c54-e6dcfd5187ce"
-					variablename="ER01_LF01">
-					</var>
-					<var
-					dataname="FB01_LF01"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="a6e8c447-da3e-4fb9-a7c7-bae4cfa857e0"
-					variablename="FB01_LF01">
-					</var>
-					<var
-					dataname="FB02_LF01"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="fd41e1c3-9b31-4d6f-8e50-2dc2ee63f23d"
-					variablename="FB02_LF01">
-					</var>
-					<var
-					dataname="ER03_LF02"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="487f7410-9f68-4c31-b6e1-91bc43fd37c0"
-					variablename="ER03_LF02">
-					</var>
-					<var
 					dataname="FB03_LF02"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="a6fe2c7c-44f2-4021-890a-27cf44cca829"
 					variablename="FB03_LF02">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="3a146630-e4b5-4b69-aaaf-df6fa816ad11"
+			name="Verbuchung_Dialog1_ER01_LF01_akzeptieren"
+			ref="c418bb28-b660-4cc8-9582-67c5e3cb09c8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="LF_01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="947ca208-b9ac-40f0-b217-23b5c522a93e"
+					variablename="LF_01">
+					</var>
+					<var
+					dataname="ER01_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="f1a53a23-1e68-426a-bb10-417efda10573"
+					variablename="ER01_LF01">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="3eaf63ab-56bd-45c9-b76b-8791cad934d6"
+			name="Close_B_BUAB"
+			ref="cea34e66-1428-4211-8eac-405e1dd8744b"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="452bfe11-a84b-4803-bd19-94fac97f9f55"
@@ -341,6 +408,32 @@
 			id="5d172029-04da-494c-b842-c1b853424117"
 			name="setup">
 			</setup>
+			<testmodule
+			id="601d898e-dc29-4591-8603-f27df9fc09ea"
+			name="Verbuchung_Dialog4_ER03_LF02_neue_Belegnr"
+			ref="0db30e68-cfdd-4345-ab87-8fabd00b07db"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="LF_02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="ae75fbfa-b634-451c-9243-3b31d6a3a51e"
+					variablename="LF_02">
+					</var>
+					<var
+					dataname="ER03_LF02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="97043709-b40a-47b5-819b-810a3019d122"
+					variablename="ER03_LF02">
+					</var>
+					<var
+					dataname="ER03_LF02_NEU"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="d4ab38d9-f2ee-4924-a50d-a70822bcdc50"
+					variablename="ER03_LF02_NEU">
+					</var>
+				</databinding>
+			</testmodule>
 			<smartfoldernode
 			id="63b36fc8-5215-4dbd-bc3b-9ee2b3ad9e77"
 			name="510">
@@ -394,11 +487,65 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="67a300a0-24cd-4d8c-a6df-22d23996aabc"
+			name="teardown">
+			</teardown>
+			<teardown
+			id="683e3331-1e20-41bb-9323-09789694167e"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="698a29e1-09b5-4b61-90bc-b78f9fba2276"
 			name="Optionen_Default_setzen_pruefen"
 			ref="2003cd04-3fb1-42b1-b685-92ace9a44eb6"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="69e53b92-07fa-4099-baa1-3f9cd41daee4"
+			name="Pruefung_Dialog1_ER01_LF01"
+			ref="637ce0b4-e3d1-47fd-b054-41d0b14b08af"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="LF_01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="9de9c9b8-7383-4529-9b14-743c10d771ad"
+					variablename="LF_01">
+					</var>
+					<var
+					dataname="ER01_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="5ef214dc-1f59-404d-a9d0-d2ba56a61f92"
+					variablename="ER01_LF01">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="6d983fb2-c2f1-4faa-b6cb-070087933a34"
+			name="Verbuchung_Dialog5_FB03_LF02_neue_Fremdbelegnr"
+			ref="92bc1926-0d17-4312-82a3-826966217121"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="LF_02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="67e34842-001d-42ce-9fbd-bcda35245c10"
+					variablename="LF_02">
+					</var>
+					<var
+					dataname="FB03_LF02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="11693dd3-ab3e-42e3-b512-cd8780d00bff"
+					variablename="FB03_LF02">
+					</var>
+					<var
+					dataname="FB03_LF02_NEU"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="a294cd94-aa95-4d72-935e-6e23aa63fff2"
+					variablename="FB03_LF02_NEU">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="6e449cdc-c25c-418a-9980-9189ed2a822a"
@@ -422,10 +569,34 @@
 			ref="eda0d909-875e-436f-8396-b2160898b5de"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="80612651-8a41-4f94-b74f-3646e3486da9"
+			name="Pruefung_Dialog3_FB02_LF01"
+			ref="8990dbba-2b80-4bb4-bd29-af3b4b8e46eb"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="FB02_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="8b0dafd8-61d0-49cd-b729-922778c10e1b"
+					variablename="FB02_LF01">
+					</var>
+					<var
+					dataname="LF_01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="2d769c42-7632-41ee-81ae-4c06ff2118c3"
+					variablename="LF_01">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="85a66b3d-8220-4cfc-a043-f495ba09ce5a"
 			name="teardown">
 			</teardown>
+			<setup
+			id="866cc3c5-2ead-4197-a03a-05f00c3bf9f4"
+			name="setup">
+			</setup>
 			<smartfoldernode
 			id="8b17d980-993b-4896-a681-5422a9e52217"
 			name="510">
@@ -451,6 +622,26 @@
 					</condition>
 				</conditiongroup>
 			</smartfoldernode>
+			<testmodule
+			id="8dc26680-efd5-4fe5-80d4-3866d6be929d"
+			name="Start_B_BUAB"
+			ref="23307373-546d-47a8-b04d-8ea957263cd0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="f4d059c4-6c64-4ed4-8b05-48ddb68a667e"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_3"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="334effdd-578f-400c-85ee-8a062d4b05f0"
+					variablename="Programm_3">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="9452f4d0-01e5-4ad9-bf12-1cf061736ac9"
 			name="Einlesen_Programmversion"
@@ -538,6 +729,9 @@
 			name="Fehlerprotokoll_Verbuchung_kontrollieren"
 			ref="1bf2f54d-35a5-4bcb-92a7-854c26e69497"
 			type="Recording">
+				<description>
+					<![CDATA[TODO Prüfen: ev andere Reihenfolge (in 511 kommt exop 32 vor exop 30)]]>
+				</description>
 			</testmodule>
 			<testmodule
 			id="9b9512ab-a325-4053-b7ac-a9844c0eb031"
@@ -894,6 +1088,90 @@
 					variableid="dd949b62-15c0-4997-9e56-a792f6117f24"
 					variablename="LF_01">
 					</var>
+					<var
+					dataname="ER01_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="06ddf614-92fc-4f1a-86e9-1886d1d127b1"
+					variablename="ER01_LF01">
+					</var>
+					<var
+					dataname="FB01_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="e5bdc247-b751-4a61-9414-d023335fed9e"
+					variablename="FB01_LF01">
+					</var>
+					<var
+					dataname="ER04a_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="368f4f2d-8a58-413c-bb83-67e92f11582d"
+					variablename="ER04a_LF01">
+					</var>
+					<var
+					dataname="FB04a_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="442d727c-84e3-4b0a-938d-ab65eda312be"
+					variablename="FB04a_LF01">
+					</var>
+					<var
+					dataname="ER04b_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="6d6903b4-7e9a-4ea1-96f5-e1b54b705e67"
+					variablename="ER04b_LF01">
+					</var>
+					<var
+					dataname="FB05_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="7cfe839a-4d06-473d-9c2a-3fd21f00ccee"
+					variablename="FB05_LF01">
+					</var>
+					<var
+					dataname="ER06_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="de150aaa-7848-4c71-91a3-cb02d4ff07da"
+					variablename="ER06_LF01">
+					</var>
+					<var
+					dataname="FB04b_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="a873e9aa-25d4-444b-8149-0fef1258e8be"
+					variablename="FB04b_LF01">
+					</var>
+					<var
+					dataname="ER02_LF02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="112c9fdf-d204-4e2e-9e18-09e2a7947ecf"
+					variablename="ER02_LF02">
+					</var>
+					<var
+					dataname="FB02_LF02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="fd09070e-94d3-4f25-88bc-2794fa494c74"
+					variablename="FB02_LF02">
+					</var>
+					<var
+					dataname="ER05_LF02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="b06a5899-7e9f-44f3-ab2b-68b84333d831"
+					variablename="ER05_LF02">
+					</var>
+					<var
+					dataname="FB05_LF02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="b0f61936-0f42-4172-8602-d59284132557"
+					variablename="FB05_LF02">
+					</var>
+					<var
+					dataname="ER03_LF02_NEU"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="80b65947-2cf8-46d6-9b9d-f3899cc6e81f"
+					variablename="ER03_LF02_NEU">
+					</var>
+					<var
+					dataname="FB03_LF02_NEU"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="f0f2a232-6334-4da7-a0de-2cf7817d2c44"
+					variablename="FB03_LF02_NEU">
+					</var>
 				</databinding>
 			</testmodule>
 			<teardown
@@ -901,6 +1179,7 @@
 			name="teardown">
 			</teardown>
 			<testmodule
+			enabled="False"
 			id="ae6aeab0-2b89-4da8-a804-27f19ef95543"
 			name="Verbuchung_Dialoge_alt"
 			ref="f8b28fa4-646a-42df-a9d5-4e45f56b6632"
@@ -944,51 +1223,38 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
-			id="b1c619b5-05d0-4d64-ad9b-4aca6e029b93"
-			name="Verbuchung_Dialoge_NEU"
-			ref="b2534372-fcdf-4b62-a797-324895c85ddf"
+			id="b6b70ecb-a261-4ab5-a4e2-e80dba06f25c"
+			name="Pruefung_Dialog4_ER03_LF02"
+			ref="7696a6ff-669e-4fb0-a385-3208906635e4"
 			type="Recording">
-				<description>
-					<![CDATA[IN ARBEIT - Workaround ausbauen, neue Variablen für lange Belegnummern verwenden]]>
-				</description>
 				<databinding>
 					<var
-					dataname="LF_01"
+					dataname="ER03_LF02"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="7f7d5e1e-b961-46f9-8629-45d7d3cdd791"
-					variablename="LF_01">
+					variableid="597ab34a-4153-4c9e-be21-1fea41b29910"
+					variablename="ER03_LF02">
 					</var>
 					<var
 					dataname="LF_02"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="d19cfea4-8b15-4e86-b81a-3b445291080e"
+					variableid="694b7e20-d203-42de-baf3-0fdfbca474d1"
 					variablename="LF_02">
 					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="b4a30dac-a69c-4ea8-bd16-3ae9a9778f51"
-			name="B_EXOPS_Einschraenkung_B_EXOPV_005_neu_laden"
-			ref="6e7cc54a-f7bd-4d2a-8aef-251a45d614b2"
+			id="bbf8e029-8ead-4dc0-acfd-e9d630550600"
+			name="B_BUAB_Einschraenkungen_laden_11_Buchungen"
+			ref="60aa254c-ec39-4c8b-83a9-c677af5c3b5d"
 			type="Recording">
 				<databinding>
 					<var
 					dataname="Stapel_Herkunft"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="c74bbbce-573f-499a-8891-92f7c016b9da"
+					variableid="5f3b92d8-281e-454d-b4c6-c11e9bf626d7"
 					variablename="Stapel_Herkunft">
 					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			id="bbf8e029-8ead-4dc0-acfd-e9d630550600"
-			name="B_BUAB_Einschraenkungen_NEU_laden_11_Buchungen"
-			ref="60aa254c-ec39-4c8b-83a9-c677af5c3b5d"
-			type="Recording">
-				<description>
-					<![CDATA[Workaround: Einschränkung Belegnr %EXOPV_005% statt $Stapel_Herkunft wegen verkürzter NEU-Belegnummern BUG 38668]]>
-				</description>
 			</testmodule>
 			<testmodule
 			id="be64b191-26b0-436d-a379-41d0577b8a72"
@@ -1090,6 +1356,32 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="d94789f8-d3b8-49d6-97b7-6dfe196ad2fd"
+			name="Start_B_EXOPS"
+			ref="2c1809c9-c0c1-475e-b138-e305826b1b49"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Programm_2"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="b63c751a-fec9-469e-844a-1573bcba0e6d"
+					variablename="Programm_2">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="9dad8f90-8bfc-486b-8025-0a9b54f65a42"
+					variablename="Startfile">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="e2020d5e-b47d-4ec9-9503-c0478e8d3e7e"
+			name="Close_B_EXOPS"
+			ref="d9313597-5739-419a-bbf2-077d9ac0bc6c"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="e9f8b89f-9ccd-4003-a994-e49b44d5322e"
 			name="B_EXOPS_Status_nach_Pruefung_kontrollieren"
 			ref="d8201208-b1ad-4756-b52e-522408436296"
@@ -1099,16 +1391,112 @@
 				</description>
 				<databinding>
 					<var
+					dataname="LF_02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="36ce7703-a1c3-45b9-92cd-5e1431b792a3"
+					variablename="LF_02">
+					</var>
+					<var
 					dataname="LF_01"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="9fb19131-9cc7-4465-a9b1-66832a485bc9"
 					variablename="LF_01">
 					</var>
 					<var
-					dataname="LF_02"
+					dataname="ER01_LF01"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="36ce7703-a1c3-45b9-92cd-5e1431b792a3"
-					variablename="LF_02">
+					variableid="8554cf5d-0978-42cf-854a-9af8a3da0fec"
+					variablename="ER01_LF01">
+					</var>
+					<var
+					dataname="FB01_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="5a15e913-ce34-4689-a41d-eddd822ff12f"
+					variablename="FB01_LF01">
+					</var>
+					<var
+					dataname="ER03_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="29c83a17-a0b8-4f6f-971f-deae11630da0"
+					variablename="ER03_LF01">
+					</var>
+					<var
+					dataname="FB02_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="9d445deb-1f84-4683-b1b9-732d64d27d5b"
+					variablename="FB02_LF01">
+					</var>
+					<var
+					dataname="ER04a_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="b99b1841-5d8f-4b2c-b954-279e916cdf3d"
+					variablename="ER04a_LF01">
+					</var>
+					<var
+					dataname="FB04a_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="3ce5e715-0d4f-47c8-b378-992e20bf5c74"
+					variablename="FB04a_LF01">
+					</var>
+					<var
+					dataname="ER04b_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="b1f20a08-9117-42a2-af78-eb6a31022a55"
+					variablename="ER04b_LF01">
+					</var>
+					<var
+					dataname="FB05_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="f7f8e08f-f980-413e-aa4e-7c8e2a44655c"
+					variablename="FB05_LF01">
+					</var>
+					<var
+					dataname="ER06_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="fb441c2a-6c01-459a-a40e-7edcd21d0ee9"
+					variablename="ER06_LF01">
+					</var>
+					<var
+					dataname="FB04b_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="e6a3e327-b299-4996-8771-73a43199f2d0"
+					variablename="FB04b_LF01">
+					</var>
+					<var
+					dataname="ER02_LF02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="2f6640a3-2461-4b12-87db-8ca1f393aaa9"
+					variablename="ER02_LF02">
+					</var>
+					<var
+					dataname="FB02_LF02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="77ef9767-1b90-4384-8af7-88bfaf42267a"
+					variablename="FB02_LF02">
+					</var>
+					<var
+					dataname="ER03_LF02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="557e6edd-c56a-40db-a8c4-b50fd9a28980"
+					variablename="ER03_LF02">
+					</var>
+					<var
+					dataname="FB03_LF02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="83336498-ff26-482f-a2ac-d48eea00d391"
+					variablename="FB03_LF02">
+					</var>
+					<var
+					dataname="ER05_LF02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="bdea8eae-2951-418a-b0f7-500bf52ad22a"
+					variablename="ER05_LF02">
+					</var>
+					<var
+					dataname="FB05_LF02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="7b2ff56b-aa5d-45b5-8d8e-6987754dbaca"
+					variablename="FB05_LF02">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1125,16 +1513,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="LF_01"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="030d7652-77a0-49b5-a98a-460273284a00"
-					variablename="LF_01">
-					</var>
-					<var
 					dataname="LF_02"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="86f8f0b8-5284-404e-a52b-84da45f0705f"
 					variablename="LF_02">
+					</var>
+					<var
+					dataname="LF_01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="030d7652-77a0-49b5-a98a-460273284a00"
+					variablename="LF_01">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1151,6 +1539,46 @@
 					<![CDATA[Variable $Stapel_Herkunft geändert auf EXOPV_005 (Verkürzung wegen Bug/belegnummernfeld zu kurz)]]>
 				</description>
 			</testcase>
+			<testmodule
+			id="f05bc999-8858-42d6-8011-eb62f979ba51"
+			name="Verbuchung_Dialog2_FB01_LF01_akzeptieren"
+			ref="ab768a92-d85e-4d0e-8141-1073fc880a74"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="LF_01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="63dae783-5636-45ce-b9d5-91a3df6a744b"
+					variablename="LF_01">
+					</var>
+					<var
+					dataname="FB01_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="2269fae1-3b66-4cc4-9c3d-191a50b36ebb"
+					variablename="FB01_LF01">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="f1eaa143-339c-4822-b5fd-b747bb3013c6"
+			name="Pruefung_Dialog2_FB01_LF01"
+			ref="09468aac-ac8c-4bfc-a84e-e3750f7c114b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="FB01_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="becfce26-adf1-44d1-8fc7-86d06c6205c5"
+					variablename="FB01_LF01">
+					</var>
+					<var
+					dataname="LF_01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="b6eda0d8-9e2c-46a5-92fe-9002dbfd94f7"
+					variablename="LF_01">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="f410c931-5aeb-45c8-b553-01188914aa93"
 			name="B_EXOPS_Belegnummern_vor_Pruefung_kontrollieren"
@@ -1173,7 +1601,7 @@
 			</testmodule>
 			<testmodule
 			id="f8634cf6-df12-495c-b102-8c2bae4614df"
-			name="B_EXOPS_Einschraenkung_nur_B_EXOPV_005"
+			name="B_EXOPS_Einschraenkung_B_EXOPV_005"
 			ref="15736ee8-7921-45fc-a34d-05c6dbed837f"
 			type="Recording">
 				<databinding>
@@ -1196,16 +1624,40 @@
 			type="Recording">
 				<databinding>
 					<var
+					dataname="LF_02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="7f5d8d68-bc78-4a54-9c21-594053829b36"
+					variablename="LF_02">
+					</var>
+					<var
 					dataname="LF_01"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="3f2d53db-8adc-46a0-9281-8a33af1e97f9"
 					variablename="LF_01">
 					</var>
 					<var
-					dataname="LF_02"
+					dataname="ER03_LF01"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="7f5d8d68-bc78-4a54-9c21-594053829b36"
-					variablename="LF_02">
+					variableid="6bccc318-1680-46f3-943d-7c1ed27963b9"
+					variablename="ER03_LF01">
+					</var>
+					<var
+					dataname="FB02_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="5b47a6c0-923e-4bc7-ab44-543f1200db5a"
+					variablename="FB02_LF01">
+					</var>
+					<var
+					dataname="ER03_LF02_NEU"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="20a1c3ad-d389-4b8c-811a-5ead8fdfb44e"
+					variablename="ER03_LF02_NEU">
+					</var>
+					<var
+					dataname="FB03_LF02_NEU"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="d34f25a9-4679-4a93-8c47-3d0343332821"
+					variablename="FB03_LF02_NEU">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1236,6 +1688,14 @@
 						id="ebc4b947-323b-4036-b95a-47e715b21946"
 						name="B_BUAB_alte_Belege_pruefen">
 						</testmodule>
+						<teardown
+						id="67a300a0-24cd-4d8c-a6df-22d23996aabc"
+						name="teardown">
+							<testmodule
+							id="3eaf63ab-56bd-45c9-b76b-8791cad934d6"
+							name="Close_B_BUAB">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="47b3d845-886c-4462-9f09-53f85d1376be"
@@ -1250,12 +1710,20 @@
 						</setup>
 						<testmodule
 						id="f8634cf6-df12-495c-b102-8c2bae4614df"
-						name="B_EXOPS_Einschraenkung_nur_B_EXOPV_005">
+						name="B_EXOPS_Einschraenkung_B_EXOPV_005">
 						</testmodule>
 						<testmodule
 						id="f410c931-5aeb-45c8-b553-01188914aa93"
 						name="B_EXOPS_Belegnummern_vor_Pruefung_kontrollieren">
 						</testmodule>
+						<teardown
+						id="683e3331-1e20-41bb-9323-09789694167e"
+						name="teardown">
+							<testmodule
+							id="e2020d5e-b47d-4ec9-9503-c0478e8d3e7e"
+							name="Close_B_EXOPS">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="36e8a639-b265-48ea-90bc-dd5a05738926"
@@ -1289,8 +1757,24 @@
 						name="Pruefung_Dialoge_alt">
 						</testmodule>
 						<testmodule
+						id="69e53b92-07fa-4099-baa1-3f9cd41daee4"
+						name="Pruefung_Dialog1_ER01_LF01">
+						</testmodule>
+						<testmodule
+						id="f1eaa143-339c-4822-b5fd-b747bb3013c6"
+						name="Pruefung_Dialog2_FB01_LF01">
+						</testmodule>
+						<testmodule
+						id="80612651-8a41-4f94-b74f-3646e3486da9"
+						name="Pruefung_Dialog3_FB02_LF01">
+						</testmodule>
+						<testmodule
+						id="b6b70ecb-a261-4ab5-a4e2-e80dba06f25c"
+						name="Pruefung_Dialog4_ER03_LF02">
+						</testmodule>
+						<testmodule
 						id="37683803-0fd1-47ba-82dd-83ff1e4ad21e"
-						name="Pruefung_Dialoge_NEU">
+						name="Pruefung_Dialog5_FB03_LF02">
 						</testmodule>
 						<testmodule
 						id="be64b191-26b0-436d-a379-41d0577b8a72"
@@ -1328,9 +1812,17 @@
 					<testcase
 					id="c9f22167-116d-46e5-b2fc-de0a7ff30c6e"
 					name="B_EXOPS_Kontrolle_und_Status_auf_N_zurücksetzen">
+						<setup
+						id="866cc3c5-2ead-4197-a03a-05f00c3bf9f4"
+						name="setup">
+							<testmodule
+							id="2e6049e2-a0c6-4a07-be19-5929984c43c5"
+							name="Start_B_EXOPS">
+							</testmodule>
+						</setup>
 						<testmodule
-						id="080e79cc-6e46-4943-815d-9a1bdad97631"
-						name="B_EXOPS_Einschraenkung_B_EXOPV_005_neu_laden">
+						id="2e02ca17-f2ce-4638-8f7c-4bb3fa67c85d"
+						name="B_EXOPS_Einschraenkung_B_EXOPV_005">
 						</testmodule>
 						<testmodule
 						id="e9f8b89f-9ccd-4003-a994-e49b44d5322e"
@@ -1340,6 +1832,14 @@
 						id="a700f7be-f33c-4977-8fe9-22844f391e61"
 						name="B_EXOPS_Status_von_F_auf_N_zuruecksetzen">
 						</testmodule>
+						<teardown
+						id="05412a5b-0870-4b6c-b49d-d54a3476c1e2"
+						name="teardown">
+							<testmodule
+							id="063ea842-7d70-4c56-a600-54bc0f3e49bb"
+							name="Close_B_EXOPS">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="7170d466-0f40-4267-8615-76aa983568a1"
@@ -1357,8 +1857,24 @@
 						name="Verbuchung_Dialoge_alt">
 						</testmodule>
 						<testmodule
-						id="b1c619b5-05d0-4d64-ad9b-4aca6e029b93"
-						name="Verbuchung_Dialoge_NEU">
+						id="3a146630-e4b5-4b69-aaaf-df6fa816ad11"
+						name="Verbuchung_Dialog1_ER01_LF01_akzeptieren">
+						</testmodule>
+						<testmodule
+						id="f05bc999-8858-42d6-8011-eb62f979ba51"
+						name="Verbuchung_Dialog2_FB01_LF01_akzeptieren">
+						</testmodule>
+						<testmodule
+						id="30fa2b46-41a0-4d84-823f-5f6db1e6865b"
+						name="Verbuchung_Dialog3_FB02_LF01_uebergehen">
+						</testmodule>
+						<testmodule
+						id="601d898e-dc29-4591-8603-f27df9fc09ea"
+						name="Verbuchung_Dialog4_ER03_LF02_neue_Belegnr">
+						</testmodule>
+						<testmodule
+						id="6d983fb2-c2f1-4faa-b6cb-070087933a34"
+						name="Verbuchung_Dialog5_FB03_LF02_neue_Fremdbelegnr">
 						</testmodule>
 						<testmodule
 						id="9b9512ab-a325-4053-b7ac-a9844c0eb031"
@@ -1412,9 +1928,17 @@
 					<testcase
 					id="452bfe11-a84b-4803-bd19-94fac97f9f55"
 					name="B_EXOPS_Kontrolle_Status_nach_Verbuchung">
+						<setup
+						id="0cd654e8-fe08-4aa3-b1d1-6f8b4e2f93a6"
+						name="setup">
+							<testmodule
+							id="d94789f8-d3b8-49d6-97b7-6dfe196ad2fd"
+							name="Start_B_EXOPS">
+							</testmodule>
+						</setup>
 						<testmodule
-						id="b4a30dac-a69c-4ea8-bd16-3ae9a9778f51"
-						name="B_EXOPS_Einschraenkung_B_EXOPV_005_neu_laden">
+						id="1748c93c-7544-474d-bd41-dc9b7976d549"
+						name="B_EXOPS_Einschraenkung_B_EXOPV_005">
 						</testmodule>
 						<testmodule
 						id="fd78c853-899f-4f47-97b8-6252a102302f"
@@ -1432,9 +1956,17 @@
 					<testcase
 					id="6406e09a-057a-43fb-8800-e15265b29c87"
 					name="B_BUAB_Kontrolle_Buchungen_Belegnummern">
+						<setup
+						id="346ded3a-bd17-4b81-b87c-5386fa5e8819"
+						name="setup">
+							<testmodule
+							id="8dc26680-efd5-4fe5-80d4-3866d6be929d"
+							name="Start_B_BUAB">
+							</testmodule>
+						</setup>
 						<testmodule
 						id="bbf8e029-8ead-4dc0-acfd-e9d630550600"
-						name="B_BUAB_Einschraenkungen_NEU_laden_11_Buchungen">
+						name="B_BUAB_Einschraenkungen_laden_11_Buchungen">
 						</testmodule>
 						<testmodule
 						id="663368c7-d2e7-4a30-b824-596b8a045fb8"

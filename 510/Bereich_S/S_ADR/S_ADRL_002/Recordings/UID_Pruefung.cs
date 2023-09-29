@@ -44,6 +44,7 @@ namespace S_ADRL_002.Recordings
             UID_falsch = "475601939";
             UID_nicht_gueltig = "UID-Prüfung: die angegebene UID ist nicht gültig.";
             UID = "U75601939";
+            meldung = "";
         }
 
         /// <summary>
@@ -92,6 +93,18 @@ namespace S_ADRL_002.Recordings
             set { _UID = value; }
         }
 
+        string _meldung;
+
+        /// <summary>
+        /// Gets or sets the value of variable meldung.
+        /// </summary>
+        [TestVariable("65f3ade1-91c5-4921-91f6-c397bcf0a831")]
+        public string meldung
+        {
+            get { return _meldung; }
+            set { _meldung = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -127,23 +140,34 @@ namespace S_ADRL_002.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmAdr.UID'.", repo.FrmAdr.UIDInfo, new RecordItemIndex(2));
             repo.FrmAdr.UID.PressKeys("{Tab}");
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UID_nicht_gueltig) on item 'DlgMessageBox.UIDPruefungDieAngegebeneUIDIstNic'.", repo.DlgMessageBox.UIDPruefungDieAngegebeneUIDIstNicInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'DlgMessageBox.UIDPruefungDieAngegebeneUIDIstNic' and assigning its value to variable 'meldung'.", repo.DlgMessageBox.UIDPruefungDieAngegebeneUIDIstNicInfo, new RecordItemIndex(3));
+            meldung = repo.DlgMessageBox.UIDPruefungDieAngegebeneUIDIstNic.Element.GetAttributeValueText("Text");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateTextWithoutBreaks(meldung, UID_nicht_gueltig);
+            
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UID_nicht_gueltig) on item 'DlgMessageBox.UIDPruefungDieAngegebeneUIDIstNic'.", repo.DlgMessageBox.UIDPruefungDieAngegebeneUIDIstNicInfo, new RecordItemIndex(5));
             //Validate.AttributeEqual(repo.DlgMessageBox.UIDPruefungDieAngegebeneUIDIstNicInfo, "Text", UID_nicht_gueltig);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Button0' at Center.", repo.Button0Info, new RecordItemIndex(4));
-            repo.Button0.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Button0_UID' at Center.", repo.Button0_UIDInfo, new RecordItemIndex(6));
+            repo.Button0_UID.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAdr.UID' at Center.", repo.FrmAdr.UIDInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAdr.UID' at Center.", repo.FrmAdr.UIDInfo, new RecordItemIndex(7));
             repo.FrmAdr.UID.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$UID' with focus on 'FrmAdr.UID'.", repo.FrmAdr.UIDInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}{Delete}'.", new RecordItemIndex(8));
+            Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}{Delete}");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$UID' with focus on 'FrmAdr.UID'.", repo.FrmAdr.UIDInfo, new RecordItemIndex(9));
             repo.FrmAdr.UID.PressKeys(UID);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmAdr.UID'.", repo.FrmAdr.UIDInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmAdr.UID'.", repo.FrmAdr.UIDInfo, new RecordItemIndex(10));
             repo.FrmAdr.UID.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Button0' at Center.", repo.Button0Info, new RecordItemIndex(8));
-            repo.Button0.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Button0_UID' at Center.", repo.Button0_UIDInfo, new RecordItemIndex(11));
+            repo.Button0_UID.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.PbDataAccessSave' at Center.", repo.FrmAdr.PbDataAccessSaveInfo, new RecordItemIndex(12));
+            repo.FrmAdr.PbDataAccessSave.Click();
             
         }
 

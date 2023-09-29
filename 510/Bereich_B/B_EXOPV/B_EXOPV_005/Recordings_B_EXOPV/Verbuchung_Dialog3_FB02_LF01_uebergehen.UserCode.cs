@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_EXOPV_005.Recordings_B_EXOPS
+namespace B_EXOPV_005.Recordings_B_EXOPV
 {
-    public partial class B_EXOPS_Einschraenkung_B_EXOPV_005_neu_laden
+    public partial class Verbuchung_Dialog3_FB02_LF01_uebergehen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

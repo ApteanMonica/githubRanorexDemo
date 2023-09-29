@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_EXOPV_005.Recordings_B_EXOPV
+namespace B_EXOPV_005.Recordings_B_BUAB
 {
-    public partial class Verbuchung_Dialoge_NEU
+    public partial class B_BUAB_Einschraenkungen_laden_11_Buchungen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
