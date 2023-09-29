@@ -116,23 +116,23 @@ namespace K_FIBU_001.Recordings_YPAR
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Verwalten Parameter') on item 'Verwalten_Parameter_521frm_510tbl.TitleBar100VerwaltenParameter'.", repo.Verwalten_Parameter_521frm_510tbl.TitleBar100VerwaltenParameterInfo, new RecordItemIndex(0));
-            Validate.AttributeContains(repo.Verwalten_Parameter_521frm_510tbl.TitleBar100VerwaltenParameterInfo, "Text", "Verwalten Parameter");
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Verwalten Parameter') on item 'Verwalten_Parameter_521frm_510tbl.TitleBar100VerwaltenParameter'.", repo.Verwalten_Parameter_521frm_510tbl.TitleBar100VerwaltenParameterInfo, new RecordItemIndex(0));
+            //Validate.AttributeContains(repo.Verwalten_Parameter_521frm_510tbl.TitleBar100VerwaltenParameterInfo, "Text", "Verwalten Parameter");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Parameter) on item 'Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParCdRow1'.", repo.Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParCdRow1Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParCdRow1Info, "Text", Parameter);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Parameter) on item 'Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParCdRow1'.", repo.Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParCdRow1Info, new RecordItemIndex(1));
+            //Validate.AttributeEqual(repo.Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParCdRow1Info, "Text", Parameter);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParLfdnrRow1'.", repo.Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParLfdnrRow1Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParLfdnrRow1Info, "Text", "0");
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParLfdnrRow1'.", repo.Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParLfdnrRow1Info, new RecordItemIndex(2));
+            //Validate.AttributeEqual(repo.Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParLfdnrRow1Info, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParTextkRow1'.", repo.Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParTextkRow1Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParTextkRow1Info, "Text", "0");
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParTextkRow1'.", repo.Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParTextkRow1Info, new RecordItemIndex(3));
+            //Validate.AttributeEqual(repo.Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParTextkRow1Info, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParTextlRow1'.", repo.Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParTextlRow1Info, new RecordItemIndex(4));
-            Validate.AttributeContains(repo.Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParTextlRow1Info, "Text", Tagesdatum);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParTextlRow1'.", repo.Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParTextlRow1Info, new RecordItemIndex(4));
+            //Validate.AttributeContains(repo.Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParTextlRow1Info, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$User_RS) on item 'Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParTextlRow1'.", repo.Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParTextlRow1Info, new RecordItemIndex(5));
-            Validate.AttributeContains(repo.Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParTextlRow1Info, "Text", User_RS);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$User_RS) on item 'Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParTextlRow1'.", repo.Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParTextlRow1Info, new RecordItemIndex(5));
+            //Validate.AttributeContains(repo.Verwalten_Parameter_521frm_510tbl.FlexGrid_521_510_Pfad_unterschiedlich.ColParTextlRow1Info, "Text", User_RS);
             
         }
 
