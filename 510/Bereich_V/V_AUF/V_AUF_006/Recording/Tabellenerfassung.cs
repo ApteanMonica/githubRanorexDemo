@@ -186,53 +186,59 @@ namespace V_AUF_006.Recording
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'TblTabellenerfassung.FlexGrid1.ColArtNrRow2'.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow2Info, new RecordItemIndex(20));
             repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow2.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2{Tab}' with focus on 'TblTabellenerfassung.FlexGrid1.ColAufpMengeRow2'.", repo.TblTabellenerfassung.FlexGrid1.ColAufpMengeRow2Info, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblTabellenerfassung.FlexGrid1.ColAufpMengeRow2' at Center.", repo.TblTabellenerfassung.FlexGrid1.ColAufpMengeRow2Info, new RecordItemIndex(21));
+            repo.TblTabellenerfassung.FlexGrid1.ColAufpMengeRow2.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2{Tab}' with focus on 'TblTabellenerfassung.FlexGrid1.ColAufpMengeRow2'.", repo.TblTabellenerfassung.FlexGrid1.ColAufpMengeRow2Info, new RecordItemIndex(22));
             repo.TblTabellenerfassung.FlexGrid1.ColAufpMengeRow2.EnsureVisible();
             Keyboard.Press("2{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Insert}' with focus on 'TblTabellenerfassung.FlexGrid'.", repo.TblTabellenerfassung.FlexGridInfo, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Insert}' with focus on 'TblTabellenerfassung.FlexGrid'.", repo.TblTabellenerfassung.FlexGridInfo, new RecordItemIndex(23));
             repo.TblTabellenerfassung.FlexGrid.PressKeys("{Insert}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblTabellenerfassung.FlexGrid1.ColArtNrRow3' at Center.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow3Info, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblTabellenerfassung.FlexGrid1.ColArtNrRow3' at Center.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow3Info, new RecordItemIndex(24));
             repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow3.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Art_NR_TabErf_3' with focus on 'TblTabellenerfassung.FlexGrid1.ColArtNrRow3'.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow3Info, new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Art_NR_TabErf_3' with focus on 'TblTabellenerfassung.FlexGrid1.ColArtNrRow3'.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow3Info, new RecordItemIndex(25));
             repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow3.EnsureVisible();
             Keyboard.Press(Art_NR_TabErf_3);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblTabellenerfassung.FlexGrid1.ColArtNrRow3'", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow3Info, new ActionTimeout(60000), new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblTabellenerfassung.FlexGrid1.ColArtNrRow3'", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow3Info, new ActionTimeout(60000), new RecordItemIndex(26));
             repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow3Info.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'TblTabellenerfassung.FlexGrid1.ColArtNrRow3'.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow3Info, new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'TblTabellenerfassung.FlexGrid1.ColArtNrRow3'.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow3Info, new RecordItemIndex(27));
             repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow3.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2{Tab}' with focus on 'TblTabellenerfassung.FlexGrid1.ColAufpMengeRow3'.", repo.TblTabellenerfassung.FlexGrid1.ColAufpMengeRow3Info, new RecordItemIndex(27));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblTabellenerfassung.FlexGrid1.ColAufpMengeRow3' at Center.", repo.TblTabellenerfassung.FlexGrid1.ColAufpMengeRow3Info, new RecordItemIndex(28));
+            repo.TblTabellenerfassung.FlexGrid1.ColAufpMengeRow3.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2{Tab}' with focus on 'TblTabellenerfassung.FlexGrid1.ColAufpMengeRow3'.", repo.TblTabellenerfassung.FlexGrid1.ColAufpMengeRow3Info, new RecordItemIndex(29));
             repo.TblTabellenerfassung.FlexGrid1.ColAufpMengeRow3.EnsureVisible();
             Keyboard.Press("2{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Art_NR_TabErf_1) on item 'TblTabellenerfassung.FlexGrid1.ColArtNrRow1'.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow1Info, new RecordItemIndex(28));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Art_NR_TabErf_1) on item 'TblTabellenerfassung.FlexGrid1.ColArtNrRow1'.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow1Info, new RecordItemIndex(30));
             Validate.AttributeEqual(repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow1Info, "Text", Art_NR_TabErf_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Art_NR_TabErf_2) on item 'TblTabellenerfassung.FlexGrid1.ColArtNrRow2'.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow2Info, new RecordItemIndex(29));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Art_NR_TabErf_2) on item 'TblTabellenerfassung.FlexGrid1.ColArtNrRow2'.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow2Info, new RecordItemIndex(31));
             Validate.AttributeEqual(repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow2Info, "Text", Art_NR_TabErf_2);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Art_NR_TabErf_3) on item 'TblTabellenerfassung.FlexGrid1.ColArtNrRow3'.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow3Info, new RecordItemIndex(30));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Art_NR_TabErf_3) on item 'TblTabellenerfassung.FlexGrid1.ColArtNrRow3'.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow3Info, new RecordItemIndex(32));
             Validate.AttributeEqual(repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow3Info, "Text", Art_NR_TabErf_3);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}' with focus on 'TblTabellenerfassung.FlexGrid'.", repo.TblTabellenerfassung.FlexGridInfo, new RecordItemIndex(31));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}' with focus on 'TblTabellenerfassung.FlexGrid'.", repo.TblTabellenerfassung.FlexGridInfo, new RecordItemIndex(33));
             repo.TblTabellenerfassung.FlexGrid.EnsureVisible();
             Keyboard.Press("{F12}");
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ACHTUNG: Kreditlimit um 11,20 EUR überschritten\r\n\r\nWollen Sie die Position trotzdem speichern?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(32));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ACHTUNG: Kreditlimit um 11,20 EUR überschritten\r\n\r\nWollen Sie die Position trotzdem speichern?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(34));
             //Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "ACHTUNG: Kreditlimit um 11,20 EUR überschritten\r\n\r\nWollen Sie die Position trotzdem speichern?");
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(33));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(35));
             //repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Keine weiteren Positionen zu erfassen') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(34));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Keine weiteren Positionen zu erfassen') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(36));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Keine weiteren Positionen zu erfassen");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(35));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(37));
             repo.DlgMessageBox.Button0.Click();
             
         }
