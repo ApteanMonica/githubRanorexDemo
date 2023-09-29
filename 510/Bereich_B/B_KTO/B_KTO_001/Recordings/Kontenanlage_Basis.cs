@@ -169,25 +169,6 @@ namespace B_KTO_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PbDataAccessSave' at Center.", repo.FrmKto.PbDataAccessSaveInfo, new RecordItemIndex(15));
             repo.FrmKto.PbDataAccessSave.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'v' with focus on 'FrmKto.UstPflicht'.", repo.FrmKto.UstPflichtInfo, new RecordItemIndex(16));
-            repo.FrmKto.UstPflicht.PressKeys("v");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmKto.UstPflicht'.", repo.FrmKto.UstPflichtInfo, new RecordItemIndex(17));
-            repo.FrmKto.UstPflicht.PressKeys("{Tab}");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmKto.UstPflicht'.", repo.FrmKto.UstPflichtInfo, new RecordItemIndex(18));
-            Validate.AttributeEqual(repo.FrmKto.UstPflichtInfo, "Text", "V");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'v20' with focus on 'FrmKto.UstCode'.", repo.FrmKto.UstCodeInfo, new RecordItemIndex(19));
-            repo.FrmKto.UstCode.EnsureVisible();
-            Keyboard.Press("v20");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmKto.UstCode'.", repo.FrmKto.UstCodeInfo, new RecordItemIndex(20));
-            repo.FrmKto.UstCode.PressKeys("{Tab}");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V20') on item 'FrmKto.UstCode'.", repo.FrmKto.UstCodeInfo, new RecordItemIndex(21));
-            Validate.AttributeEqual(repo.FrmKto.UstCodeInfo, "Text", "V20");
-            
         }
 
 #region Image Feature Data
