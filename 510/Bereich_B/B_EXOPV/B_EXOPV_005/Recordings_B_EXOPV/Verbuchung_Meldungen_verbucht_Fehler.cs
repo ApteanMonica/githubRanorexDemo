@@ -94,10 +94,8 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgMessageBox.FakturenPruefung'.", repo.DlgMessageBox.FakturenPruefungInfo, new RecordItemIndex(4));
             Validate.Exists(repo.DlgMessageBox.FakturenPruefungInfo);
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'7 Belege wurden verbucht') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(5));
-                Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "7 Belege wurden verbucht", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'(7 Belege wurden verbucht)|(Belege wurden verbucht)') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(5));
+            Validate.AttributeRegex(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", new Regex("(7 Belege wurden verbucht)|(Belege wurden verbucht)"));
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(6));
             repo.DlgMessageBox.Button0.Click();
