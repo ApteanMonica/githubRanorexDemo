@@ -196,6 +196,7 @@ namespace K_AUSW_002
             RepoItemInfo _jahrInfo;
             RepoItemInfo _periodeInfo;
             RepoItemInfo _bisverrstufeInfo;
+            RepoItemInfo _sometextInfo;
 
             /// <summary>
             /// Creates a new FrmMain  folder.
@@ -214,6 +215,7 @@ namespace K_AUSW_002
                 _jahrInfo = new RepoItemInfo(this, "Jahr", "container[@controlname='ToolBar']/text[@controlname='dfJahrbez']/text[@accessiblename='Jahr']", "", 30000, null, "c155af4f-c563-4674-b23e-e3664b17df5c");
                 _periodeInfo = new RepoItemInfo(this, "Periode", "container[@controlname='ToolBar']/text[@controlname='dfPeriode']/text[@accessiblename='Periode']", "", 30000, null, "26541aca-9792-4c60-8a63-fd47ea23d0e5");
                 _bisverrstufeInfo = new RepoItemInfo(this, "BisVerrStufe", "container[@controlname='ToolBar']/text[@controlname='dfVest_nr']/text[@accessiblename='bis Verr.-Stufe']", "", 30000, null, "cb73f59e-2e19-4f5d-a8be-ca0e70ee838e");
+                _sometextInfo = new RepoItemInfo(this, "SomeText", "container[@controlname='ClientArea']/container[@controlname='splitContainer']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='SubForm_tblAtbz']/form[@controlname='tblAtbz']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/text[@controltypename='']", "", 30000, null, "0e3e86ef-4e2d-4615-84bb-68fdcccdf189");
             }
 
             /// <summary>
@@ -457,6 +459,30 @@ namespace K_AUSW_002
             }
 
             /// <summary>
+            /// The SomeText item.
+            /// </summary>
+            [RepositoryItem("0e3e86ef-4e2d-4615-84bb-68fdcccdf189")]
+            public virtual Ranorex.Text SomeText
+            {
+                get
+                {
+                    return _sometextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SomeText item info.
+            /// </summary>
+            [RepositoryItemInfo("0e3e86ef-4e2d-4615-84bb-68fdcccdf189")]
+            public virtual RepoItemInfo SomeTextInfo
+            {
+                get
+                {
+                    return _sometextInfo;
+                }
+            }
+
+            /// <summary>
             /// The FlexGrid_TblAtbs folder.
             /// </summary>
             [RepositoryFolder("f14973fc-208d-4bde-9513-c3901e6baf0a")]
@@ -553,6 +579,7 @@ namespace K_AUSW_002
             RepoItemInfo _colbis1row1Info;
             RepoItemInfo _colausacdrow1Info;
             RepoItemInfo _row2column0Info;
+            RepoItemInfo _flexgridInfo;
 
             /// <summary>
             /// Creates a new FlexGrid_TblAtbz  folder.
@@ -566,6 +593,7 @@ namespace K_AUSW_002
                 _colbis1row1Info = new RepoItemInfo(this, "ColBis1Row1", "row[@accessiblename='Row 1']/cell[@accessiblename='colBis1 Row 1']", "", 30000, null, "6fa5daa7-c1ef-4459-8c30-af8f6f1fe868");
                 _colausacdrow1Info = new RepoItemInfo(this, "ColAusaCdRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colAusa_cd Row 1']", "", 30000, null, "f31c4546-9ef2-4b13-9fb4-a93a88f95163");
                 _row2column0Info = new RepoItemInfo(this, "Row2Column0", "row[@accessiblename='Row 2']/cell[@accessiblename='Row 2 Column 0']", "", 30000, null, "77c1b334-bf82-42c5-a304-5920b403bf21");
+                _flexgridInfo = new RepoItemInfo(this, "FlexGrid", "", "", 30000, null, "b99e0455-20c2-427a-8bf2-d03e1dcaa687");
             }
 
             /// <summary>
@@ -733,6 +761,30 @@ namespace K_AUSW_002
                 get
                 {
                     return _row2column0Info;
+                }
+            }
+
+            /// <summary>
+            /// The FlexGrid item.
+            /// </summary>
+            [RepositoryItem("b99e0455-20c2-427a-8bf2-d03e1dcaa687")]
+            public virtual Ranorex.Table FlexGrid
+            {
+                get
+                {
+                    return _flexgridInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FlexGrid item info.
+            /// </summary>
+            [RepositoryItemInfo("b99e0455-20c2-427a-8bf2-d03e1dcaa687")]
+            public virtual RepoItemInfo FlexGridInfo
+            {
+                get
+                {
+                    return _flexgridInfo;
                 }
             }
         }
@@ -2271,6 +2323,7 @@ namespace K_AUSW_002
         {
             RepoItemInfo _titlebar100auswahllistekonditionenInfo;
             RepoItemInfo _windowsforms10buttonapp02804c64r6aInfo;
+            RepoItemInfo _schliessenInfo;
 
             /// <summary>
             /// Creates a new Form100AuswahllisteKonditionen  folder.
@@ -2280,6 +2333,7 @@ namespace K_AUSW_002
             {
                 _titlebar100auswahllistekonditionenInfo = new RepoItemInfo(this, "TitleBar100AuswahllisteKonditionen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "5eba6770-e481-4f32-b48e-e740475ebfb6");
                 _windowsforms10buttonapp02804c64r6aInfo = new RepoItemInfo(this, "WindowsForms10BUTTONApp02804c64R6A", "element[@instance='1']/button[@class='WindowsForms10.BUTTON.app.0.2804c64_r6_ad1' and @instance='0']", "", 30000, null, "22342ec4-3342-428c-83ea-401bbd3a0c60");
+                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "32d5e765-5909-4c69-8e82-c7b67f75dc96");
             }
 
             /// <summary>
@@ -2351,6 +2405,30 @@ namespace K_AUSW_002
                 get
                 {
                     return _windowsforms10buttonapp02804c64r6aInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item.
+            /// </summary>
+            [RepositoryItem("32d5e765-5909-4c69-8e82-c7b67f75dc96")]
+            public virtual Ranorex.Button Schliessen
+            {
+                get
+                {
+                    return _schliessenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item info.
+            /// </summary>
+            [RepositoryItemInfo("32d5e765-5909-4c69-8e82-c7b67f75dc96")]
+            public virtual RepoItemInfo SchliessenInfo
+            {
+                get
+                {
+                    return _schliessenInfo;
                 }
             }
         }

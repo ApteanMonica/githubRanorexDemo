@@ -43,6 +43,22 @@ namespace B_EXOPV_005.Recordings_B_EXOPS
         {
             LF_01 = "303201";
             LF_02 = "303202";
+            ER01_LF01 = "ER01_B_EXOPV_005";
+            FB01_LF01 = "FB01_B_EXOPV_005";
+            ER03_LF01 = "ER03_B_EXOPV_005";
+            FB02_LF01 = "FB02_B_EXOPV_005";
+            ER03_LF02 = "ER03_B_EXOPV_005";
+            FB03_LF02 = "FB03_B_EXOPV_005";
+            ER04a_LF01 = "ER04_B_EXOPV_005";
+            FB04a_LF01 = "FB04_B_EXOPV_005";
+            ER04b_LF01 = "ER04_B_EXOPV_005";
+            FB05_LF01 = "FB05_B_EXOPV_005";
+            ER06_LF01 = "ER06_B_EXOPV_005";
+            FB04b_LF01 = "FB04_B_EXOPV_005";
+            ER02_LF02 = "ER02_B_EXOPV_005";
+            FB02_LF02 = "FB02_B_EXOPV_005";
+            ER05_LF02 = "ER05_B_EXOPV_005";
+            FB05_LF02 = "FB05_B_EXOPV_005";
         }
 
         /// <summary>
@@ -77,6 +93,198 @@ namespace B_EXOPV_005.Recordings_B_EXOPS
         {
             get { return _LF_02; }
             set { _LF_02 = value; }
+        }
+
+        string _ER01_LF01;
+
+        /// <summary>
+        /// Gets or sets the value of variable ER01_LF01.
+        /// </summary>
+        [TestVariable("3ebb9da8-8ef3-4999-bf8a-e82b64e891c9")]
+        public string ER01_LF01
+        {
+            get { return _ER01_LF01; }
+            set { _ER01_LF01 = value; }
+        }
+
+        string _FB01_LF01;
+
+        /// <summary>
+        /// Gets or sets the value of variable FB01_LF01.
+        /// </summary>
+        [TestVariable("6b828134-dfed-408f-94e9-8ebb4943c995")]
+        public string FB01_LF01
+        {
+            get { return _FB01_LF01; }
+            set { _FB01_LF01 = value; }
+        }
+
+        string _ER03_LF01;
+
+        /// <summary>
+        /// Gets or sets the value of variable ER03_LF01.
+        /// </summary>
+        [TestVariable("af63169a-2044-4682-94fa-06a009ed041c")]
+        public string ER03_LF01
+        {
+            get { return _ER03_LF01; }
+            set { _ER03_LF01 = value; }
+        }
+
+        string _FB02_LF01;
+
+        /// <summary>
+        /// Gets or sets the value of variable FB02_LF01.
+        /// </summary>
+        [TestVariable("9a253a26-0cee-4274-a8e0-216602145d90")]
+        public string FB02_LF01
+        {
+            get { return _FB02_LF01; }
+            set { _FB02_LF01 = value; }
+        }
+
+        string _ER03_LF02;
+
+        /// <summary>
+        /// Gets or sets the value of variable ER03_LF02.
+        /// </summary>
+        [TestVariable("f28cb24a-0fd4-4588-9121-25eda84447b1")]
+        public string ER03_LF02
+        {
+            get { return _ER03_LF02; }
+            set { _ER03_LF02 = value; }
+        }
+
+        string _FB03_LF02;
+
+        /// <summary>
+        /// Gets or sets the value of variable FB03_LF02.
+        /// </summary>
+        [TestVariable("2c167864-3af9-40cc-97a3-a3b9ec51c57e")]
+        public string FB03_LF02
+        {
+            get { return _FB03_LF02; }
+            set { _FB03_LF02 = value; }
+        }
+
+        string _ER04a_LF01;
+
+        /// <summary>
+        /// Gets or sets the value of variable ER04a_LF01.
+        /// </summary>
+        [TestVariable("6c87e1c8-fa0e-45f1-aea3-ecba94bfd9b7")]
+        public string ER04a_LF01
+        {
+            get { return _ER04a_LF01; }
+            set { _ER04a_LF01 = value; }
+        }
+
+        string _FB04a_LF01;
+
+        /// <summary>
+        /// Gets or sets the value of variable FB04a_LF01.
+        /// </summary>
+        [TestVariable("16d547b1-60db-4496-afc2-8d37c3ed8359")]
+        public string FB04a_LF01
+        {
+            get { return _FB04a_LF01; }
+            set { _FB04a_LF01 = value; }
+        }
+
+        string _ER04b_LF01;
+
+        /// <summary>
+        /// Gets or sets the value of variable ER04b_LF01.
+        /// </summary>
+        [TestVariable("614373d9-680e-4030-9aee-756d8dd41d3d")]
+        public string ER04b_LF01
+        {
+            get { return _ER04b_LF01; }
+            set { _ER04b_LF01 = value; }
+        }
+
+        string _FB05_LF01;
+
+        /// <summary>
+        /// Gets or sets the value of variable FB05_LF01.
+        /// </summary>
+        [TestVariable("86942483-10cb-4e4f-b9d5-4b603d422f0e")]
+        public string FB05_LF01
+        {
+            get { return _FB05_LF01; }
+            set { _FB05_LF01 = value; }
+        }
+
+        string _ER06_LF01;
+
+        /// <summary>
+        /// Gets or sets the value of variable ER06_LF01.
+        /// </summary>
+        [TestVariable("e6406cda-9283-422e-a2ce-0b40437927bd")]
+        public string ER06_LF01
+        {
+            get { return _ER06_LF01; }
+            set { _ER06_LF01 = value; }
+        }
+
+        string _FB04b_LF01;
+
+        /// <summary>
+        /// Gets or sets the value of variable FB04b_LF01.
+        /// </summary>
+        [TestVariable("2c9c2242-bc1c-4bf2-b382-1fa0ea9697cd")]
+        public string FB04b_LF01
+        {
+            get { return _FB04b_LF01; }
+            set { _FB04b_LF01 = value; }
+        }
+
+        string _ER02_LF02;
+
+        /// <summary>
+        /// Gets or sets the value of variable ER02_LF02.
+        /// </summary>
+        [TestVariable("c60ac4a1-1b0c-4cd2-b53d-49e7e9d7a41b")]
+        public string ER02_LF02
+        {
+            get { return _ER02_LF02; }
+            set { _ER02_LF02 = value; }
+        }
+
+        string _FB02_LF02;
+
+        /// <summary>
+        /// Gets or sets the value of variable FB02_LF02.
+        /// </summary>
+        [TestVariable("f3e11812-9b0d-4f9e-bd31-40d982ce5c5c")]
+        public string FB02_LF02
+        {
+            get { return _FB02_LF02; }
+            set { _FB02_LF02 = value; }
+        }
+
+        string _ER05_LF02;
+
+        /// <summary>
+        /// Gets or sets the value of variable ER05_LF02.
+        /// </summary>
+        [TestVariable("e520d7e4-80ca-4625-979e-6c09d6f0d17d")]
+        public string ER05_LF02
+        {
+            get { return _ER05_LF02; }
+            set { _ER05_LF02 = value; }
+        }
+
+        string _FB05_LF02;
+
+        /// <summary>
+        /// Gets or sets the value of variable FB05_LF02.
+        /// </summary>
+        [TestVariable("8017042f-018b-452f-b110-ea5b659e3bbc")]
+        public string FB05_LF02
+        {
+            get { return _FB05_LF02; }
+            set { _FB05_LF02 = value; }
         }
 
 #endregion
@@ -114,11 +322,11 @@ namespace B_EXOPV_005.Recordings_B_EXOPS
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_01) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.ColAdrNrRow1'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.ColAdrNrRow1Info, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.ColAdrNrRow1Info, "Text", LF_01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER01_B_EXOPV_005') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.ColExopBelegnrRow1'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.ColExopBelegnrRow1Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.ColExopBelegnrRow1Info, "Text", "ER01_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER01_LF01) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.ColExopBelegnrRow1'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.ColExopBelegnrRow1Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.ColExopBelegnrRow1Info, "Text", ER01_LF01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB01_B_EXOPV_005') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.ColExopNrfremdbelegRow1'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.ColExopNrfremdbelegRow1Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.ColExopNrfremdbelegRow1Info, "Text", "FB01_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FB01_LF01) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.ColExopNrfremdbelegRow1'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.ColExopNrfremdbelegRow1Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_1.ColExopNrfremdbelegRow1Info, "Text", FB01_LF01);
             
             // Beleg2
             Report.Log(ReportLevel.Info, "Section", "Beleg2", new RecordItemIndex(5));
@@ -129,11 +337,11 @@ namespace B_EXOPV_005.Recordings_B_EXOPS
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_01) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_2.ColAdrNrRow2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_2.ColAdrNrRow2Info, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_2.ColAdrNrRow2Info, "Text", LF_01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER03_B_EXOPV_005') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_2.ColExopBelegnrRow2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_2.ColExopBelegnrRow2Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_2.ColExopBelegnrRow2Info, "Text", "ER03_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER03_LF01) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_2.ColExopBelegnrRow2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_2.ColExopBelegnrRow2Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_2.ColExopBelegnrRow2Info, "Text", ER03_LF01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB02_B_EXOPV_005') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_2.ColExopNrfremdbelegRow2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_2.ColExopNrfremdbelegRow2Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_2.ColExopNrfremdbelegRow2Info, "Text", "FB02_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FB02_LF01) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_2.ColExopNrfremdbelegRow2'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_2.ColExopNrfremdbelegRow2Info, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_2.ColExopNrfremdbelegRow2Info, "Text", FB02_LF01);
             
             // Beleg3
             Report.Log(ReportLevel.Info, "Section", "Beleg3", new RecordItemIndex(10));
@@ -144,11 +352,11 @@ namespace B_EXOPV_005.Recordings_B_EXOPS
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_01) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_3.ColAdrNrRow3'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_3.ColAdrNrRow3Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_3.ColAdrNrRow3Info, "Text", LF_01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER04_B_EXOPV_005') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_3.ColExopBelegnrRow3'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_3.ColExopBelegnrRow3Info, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_3.ColExopBelegnrRow3Info, "Text", "ER04_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER04a_LF01) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_3.ColExopBelegnrRow3'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_3.ColExopBelegnrRow3Info, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_3.ColExopBelegnrRow3Info, "Text", ER04a_LF01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB04_B_EXOPV_005') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_3.ColExopNrfremdbelegRow3'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_3.ColExopNrfremdbelegRow3Info, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_3.ColExopNrfremdbelegRow3Info, "Text", "FB04_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FB04a_LF01) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_3.ColExopNrfremdbelegRow3'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_3.ColExopNrfremdbelegRow3Info, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_3.ColExopNrfremdbelegRow3Info, "Text", FB04a_LF01);
             
             // Beleg4
             Report.Log(ReportLevel.Info, "Section", "Beleg4", new RecordItemIndex(15));
@@ -159,11 +367,11 @@ namespace B_EXOPV_005.Recordings_B_EXOPS
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_01) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_4.ColAdrNrRow4'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_4.ColAdrNrRow4Info, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_4.ColAdrNrRow4Info, "Text", LF_01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER04_B_EXOPV_005') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_4.ColExopBelegnrRow4'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_4.ColExopBelegnrRow4Info, new RecordItemIndex(18));
-            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_4.ColExopBelegnrRow4Info, "Text", "ER04_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER04b_LF01) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_4.ColExopBelegnrRow4'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_4.ColExopBelegnrRow4Info, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_4.ColExopBelegnrRow4Info, "Text", ER04b_LF01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB05_B_EXOPV_005') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_4.ColExopNrfremdbelegRow4'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_4.ColExopNrfremdbelegRow4Info, new RecordItemIndex(19));
-            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_4.ColExopNrfremdbelegRow4Info, "Text", "FB05_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FB05_LF01) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_4.ColExopNrfremdbelegRow4'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_4.ColExopNrfremdbelegRow4Info, new RecordItemIndex(19));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_4.ColExopNrfremdbelegRow4Info, "Text", FB05_LF01);
             
             // Beleg5
             Report.Log(ReportLevel.Info, "Section", "Beleg5", new RecordItemIndex(20));
@@ -174,11 +382,11 @@ namespace B_EXOPV_005.Recordings_B_EXOPS
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_01) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_5.ColAdrNrRow5'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_5.ColAdrNrRow5Info, new RecordItemIndex(22));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_5.ColAdrNrRow5Info, "Text", LF_01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER06_B_EXOPV_005') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_5.ColExopBelegnrRow5'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_5.ColExopBelegnrRow5Info, new RecordItemIndex(23));
-            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_5.ColExopBelegnrRow5Info, "Text", "ER06_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER06_LF01) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_5.ColExopBelegnrRow5'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_5.ColExopBelegnrRow5Info, new RecordItemIndex(23));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_5.ColExopBelegnrRow5Info, "Text", ER06_LF01);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB04_B_EXOPV_005') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_5.ColExopNrfremdbelegRow5'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_5.ColExopNrfremdbelegRow5Info, new RecordItemIndex(24));
-            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_5.ColExopNrfremdbelegRow5Info, "Text", "FB04_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FB04b_LF01) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_5.ColExopNrfremdbelegRow5'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_5.ColExopNrfremdbelegRow5Info, new RecordItemIndex(24));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_5.ColExopNrfremdbelegRow5Info, "Text", FB04b_LF01);
             
             // Beleg6
             Report.Log(ReportLevel.Info, "Section", "Beleg6", new RecordItemIndex(25));
@@ -189,11 +397,11 @@ namespace B_EXOPV_005.Recordings_B_EXOPS
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_02) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_6.ColAdrNrRow6'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_6.ColAdrNrRow6Info, new RecordItemIndex(27));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_6.ColAdrNrRow6Info, "Text", LF_02);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER02_B_EXOPV_005') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_6.ColExopBelegnrRow6'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_6.ColExopBelegnrRow6Info, new RecordItemIndex(28));
-            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_6.ColExopBelegnrRow6Info, "Text", "ER02_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER02_LF02) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_6.ColExopBelegnrRow6'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_6.ColExopBelegnrRow6Info, new RecordItemIndex(28));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_6.ColExopBelegnrRow6Info, "Text", ER02_LF02);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB02_B_EXOPV_005') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_6.ColExopNrfremdbelegRow6'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_6.ColExopNrfremdbelegRow6Info, new RecordItemIndex(29));
-            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_6.ColExopNrfremdbelegRow6Info, "Text", "FB02_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FB02_LF02) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_6.ColExopNrfremdbelegRow6'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_6.ColExopNrfremdbelegRow6Info, new RecordItemIndex(29));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_6.ColExopNrfremdbelegRow6Info, "Text", FB02_LF02);
             
             // Beleg7
             Report.Log(ReportLevel.Info, "Section", "Beleg7", new RecordItemIndex(30));
@@ -204,11 +412,11 @@ namespace B_EXOPV_005.Recordings_B_EXOPS
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_02) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColAdrNrRow7'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColAdrNrRow7Info, new RecordItemIndex(32));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColAdrNrRow7Info, "Text", LF_02);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER03_B_EXOPV_005') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopBelegnrRow7'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopBelegnrRow7Info, new RecordItemIndex(33));
-            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopBelegnrRow7Info, "Text", "ER03_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER03_LF02) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopBelegnrRow7'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopBelegnrRow7Info, new RecordItemIndex(33));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopBelegnrRow7Info, "Text", ER03_LF02);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB03_B_EXOPV_005') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopNrfremdbelegRow7'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopNrfremdbelegRow7Info, new RecordItemIndex(34));
-            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopNrfremdbelegRow7Info, "Text", "FB03_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FB03_LF02) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopNrfremdbelegRow7'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopNrfremdbelegRow7Info, new RecordItemIndex(34));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_7.ColExopNrfremdbelegRow7Info, "Text", FB03_LF02);
             
             // Beleg8
             Report.Log(ReportLevel.Info, "Section", "Beleg8", new RecordItemIndex(35));
@@ -219,11 +427,11 @@ namespace B_EXOPV_005.Recordings_B_EXOPS
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LF_02) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColAdrNrRow8'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColAdrNrRow8Info, new RecordItemIndex(37));
             Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColAdrNrRow8Info, "Text", LF_02);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ER05_B_EXOPV_005') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColExopBelegnrRow8'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColExopBelegnrRow8Info, new RecordItemIndex(38));
-            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColExopBelegnrRow8Info, "Text", "ER05_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER05_LF02) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColExopBelegnrRow8'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColExopBelegnrRow8Info, new RecordItemIndex(38));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColExopBelegnrRow8Info, "Text", ER05_LF02);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='FB05_B_EXOPV_005') on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColExopNrfremdbelegRow8'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColExopNrfremdbelegRow8Info, new RecordItemIndex(39));
-            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColExopNrfremdbelegRow8Info, "Text", "FB05_B_EXOPV_005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FB05_LF02) on item 'FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColExopNrfremdbelegRow8'.", repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColExopNrfremdbelegRow8Info, new RecordItemIndex(39));
+            Validate.AttributeEqual(repo.FrmBEXOP_Verwalten_Schnittstelle.FlexGrid_EXOP_Belege_fixe_Zeilennr.Zeile_8.ColExopNrfremdbelegRow8Info, "Text", FB05_LF02);
             
         }
 

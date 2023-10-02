@@ -111,60 +111,58 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
-		<explicitdelayitem
-		duration="1000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
-		<keyitem
-		action="Press"
-		data="Down"
-		duration="100ms"
+		<WaitForRecordItem
 		enabled="True"
 		optional="False"
-		presstime="100ms"
-		scancode="0"
-		searchpropertyid="fe03c604-103b-4277-9829-88a711726c1c"
-		setModifiers="True">
+		searchpropertyid="b31a5654-fdaa-4206-b822-acea4686c0a4"
+		waitaction="Exists"
+		waittimeout="120000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</keyitem>
-		<explicitdelayitem
-		duration="1000ms"
+			<info
+			id="0ed30b6d-4624-4e34-ae5e-230f1a6cb9fd"
+			sourcename="RepositoryEditor">
+				<path>
+					/contextmenu[@processname='K_AUSW']/menuitem[@accessiblename='Auswahlliste']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
 		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
-		<keyitem
-		action="Press"
-		data="Return"
-		duration="100ms"
-		enabled="True"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		presstime="100ms"
-		scancode="0"
-		searchpropertyid="01b21876-7593-444b-8fab-f06d86daed11"
-		setModifiers="True">
+		searchpropertyid="9830db28-cf1c-4d24-bda8-6aa3c26bbb39"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</keyitem>
+			<info
+			id="0ed30b6d-4624-4e34-ae5e-230f1a6cb9fd"
+			sourcename="RepositoryEditor">
+				<path>
+					/contextmenu[@processname='K_AUSW']/menuitem[@accessiblename='Auswahlliste']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
 		searchpropertyid="4a5751d0-9ece-4c49-8f02-f13e3a65abf6"
 		waitaction="Exists"
-		waittimeout="60000ms">
+		waittimeout="120000ms">
 			<comment>
 			</comment>
 			<bindings>
@@ -531,6 +529,15 @@ mode="Global">
 			</comment>
 			<bindings>
 			</bindings>
+			<info
+			id="7ec9416d-8080-4827-9d84-7186b441c893"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='splitContainer']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='SubForm_tblAtbz']/form[@controlname='tblAtbz']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colVon1 Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
 		</keysequenceitem>
 		<explicitdelayitem
 		duration="1000ms"
@@ -591,6 +598,15 @@ mode="Global">
 			</comment>
 			<bindings>
 			</bindings>
+			<info
+			id="6fa5daa7-c1ef-4459-8c30-af8f6f1fe868"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='splitContainer']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='SubForm_tblAtbz']/form[@controlname='tblAtbz']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBis1 Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
 		</keysequenceitem>
 		<explicitdelayitem
 		duration="1000ms"

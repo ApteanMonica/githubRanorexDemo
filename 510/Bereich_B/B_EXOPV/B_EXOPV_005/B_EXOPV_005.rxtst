@@ -101,16 +101,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="9dad8f90-8bfc-486b-8025-0a9b54f65a42"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm_2"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="b63c751a-fec9-469e-844a-1573bcba0e6d"
 					variablename="Programm_2">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="9dad8f90-8bfc-486b-8025-0a9b54f65a42"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -318,6 +318,9 @@
 			name="Fehlerprotokoll_Verbuchung_kontrollieren_510"
 			ref="0d5d03d9-80e7-46ca-9c80-cc48b04743c6"
 			type="Recording">
+				<description>
+					<![CDATA[Validierung einzelne Zeilen auf continue on fail, damit bei Fehler  weitergeprüft wird.]]>
+				</description>
 			</testmodule>
 			<testmodule
 			id="37683803-0fd1-47ba-82dd-83ff1e4ad21e"
@@ -730,7 +733,7 @@
 			ref="1bf2f54d-35a5-4bcb-92a7-854c26e69497"
 			type="Recording">
 				<description>
-					<![CDATA[TODO Prüfen: ev andere Reihenfolge (in 511 kommt exop 32 vor exop 30)]]>
+					<![CDATA[TODO Prüfen: ev andere Reihenfolge (in 511 kommt exop 32 vor exop 30) - Validierung einzelne Zeilen auf continue on fail, damit bei Fehler  weitergeprüft wird.]]>
 				</description>
 			</testmodule>
 			<testmodule
@@ -1069,6 +1072,9 @@
 			name="Fehlerprotokoll_Pruefung_kontrollieren_510"
 			ref="304c655b-ed07-4a16-9e9c-c93d868439c4"
 			type="Recording">
+				<description>
+					<![CDATA[Validierung einzelne Zeilen auf continue on fail, damit bei Fehler  weitergeprüft wird.]]>
+				</description>
 			</testmodule>
 			<testmodule
 			id="a8e6e6b2-c081-4c05-a607-b7e38f5fccee"
@@ -1531,6 +1537,9 @@
 			name="Fehlerprotokoll_Pruefung_kontrollieren"
 			ref="7a5cb8fc-5689-4b12-8a7e-db1beabf090b"
 			type="Recording">
+				<description>
+					<![CDATA[Validierung einzelne Zeilen auf continue on fail, damit bei Fehler  weitergeprüft wird.]]>
+				</description>
 			</testmodule>
 			<testcase
 			id="eff58893-0f83-4fa6-b1c4-4a24bd39223d"
@@ -1586,16 +1595,112 @@
 			type="Recording">
 				<databinding>
 					<var
+					dataname="LF_01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="3cbf3947-cb6e-49df-89e0-4fbee6a9f670"
+					variablename="LF_01">
+					</var>
+					<var
 					dataname="LF_02"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="39bfb608-9139-4e12-9768-64871bc4265e"
 					variablename="LF_02">
 					</var>
 					<var
-					dataname="LF_01"
+					dataname="ER01_LF01"
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="3cbf3947-cb6e-49df-89e0-4fbee6a9f670"
-					variablename="LF_01">
+					variableid="3ebb9da8-8ef3-4999-bf8a-e82b64e891c9"
+					variablename="ER01_LF01">
+					</var>
+					<var
+					dataname="FB01_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="6b828134-dfed-408f-94e9-8ebb4943c995"
+					variablename="FB01_LF01">
+					</var>
+					<var
+					dataname="ER03_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="af63169a-2044-4682-94fa-06a009ed041c"
+					variablename="ER03_LF01">
+					</var>
+					<var
+					dataname="FB02_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="9a253a26-0cee-4274-a8e0-216602145d90"
+					variablename="FB02_LF01">
+					</var>
+					<var
+					dataname="ER04a_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="6c87e1c8-fa0e-45f1-aea3-ecba94bfd9b7"
+					variablename="ER04a_LF01">
+					</var>
+					<var
+					dataname="FB04a_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="16d547b1-60db-4496-afc2-8d37c3ed8359"
+					variablename="FB04a_LF01">
+					</var>
+					<var
+					dataname="ER04b_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="614373d9-680e-4030-9aee-756d8dd41d3d"
+					variablename="ER04b_LF01">
+					</var>
+					<var
+					dataname="FB05_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="86942483-10cb-4e4f-b9d5-4b603d422f0e"
+					variablename="FB05_LF01">
+					</var>
+					<var
+					dataname="ER06_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="e6406cda-9283-422e-a2ce-0b40437927bd"
+					variablename="ER06_LF01">
+					</var>
+					<var
+					dataname="FB04b_LF01"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="2c9c2242-bc1c-4bf2-b382-1fa0ea9697cd"
+					variablename="FB04b_LF01">
+					</var>
+					<var
+					dataname="ER02_LF02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="c60ac4a1-1b0c-4cd2-b53d-49e7e9d7a41b"
+					variablename="ER02_LF02">
+					</var>
+					<var
+					dataname="FB02_LF02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="f3e11812-9b0d-4f9e-bd31-40d982ce5c5c"
+					variablename="FB02_LF02">
+					</var>
+					<var
+					dataname="ER03_LF02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="f28cb24a-0fd4-4588-9121-25eda84447b1"
+					variablename="ER03_LF02">
+					</var>
+					<var
+					dataname="FB03_LF02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="2c167864-3af9-40cc-97a3-a3b9ec51c57e"
+					variablename="FB03_LF02">
+					</var>
+					<var
+					dataname="ER05_LF02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="e520d7e4-80ca-4625-979e-6c09d6f0d17d"
+					variablename="ER05_LF02">
+					</var>
+					<var
+					dataname="FB05_LF02"
+					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
+					variableid="8017042f-018b-452f-b110-ea5b659e3bbc"
+					variablename="FB05_LF02">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2009,9 +2114,6 @@
 			id="452bfe11-a84b-4803-bd19-94fac97f9f55">
 			</testcontainer>
 			<testcontainer
-			id="47b3d845-886c-4462-9f09-53f85d1376be">
-			</testcontainer>
-			<testcontainer
 			id="63b36fc8-5215-4dbd-bc3b-9ee2b3ad9e77">
 			</testcontainer>
 			<testcontainer
@@ -2034,9 +2136,6 @@
 			</testcontainer>
 			<testcontainer
 			id="c9f22167-116d-46e5-b2fc-de0a7ff30c6e">
-			</testcontainer>
-			<testcontainer
-			id="eff58893-0f83-4fa6-b1c4-4a24bd39223d">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
