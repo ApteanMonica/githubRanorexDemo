@@ -37,7 +37,7 @@ mode="Global">
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="21e3fa43-2d1c-4c10-893e-97fc2e06e142">
 			<comment>
 			</comment>
@@ -62,7 +62,7 @@ mode="Global">
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="21e3fa43-2d1c-4c10-893e-97fc2e06e142">
 			<comment>
 			</comment>
@@ -82,6 +82,42 @@ mode="Global">
 			</matchname>
 			<matchvalue>
 				Beende Prüfung B_EXOPV_005
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="True"
+		searchpropertyid="030b0d68-1f6a-43a0-9da5-d854ae5ee9aa">
+			<comment>
+				gesamter Textblock mit allen Belegen
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ac8e93ef-39e2-41c3-bbd0-4ee6b455357e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Exop: 0	Beleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 29, 
+Exop: 0	Beleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30, 
+Exop: 0	Beleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 31, 
+Exop: 0	Beleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 34, 
+Exop: 30	Beleg: ER04_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 32
+Exop: 32	Beleg: ER06_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30
+Exop: 28	Beleg: ER01_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
+Exop: 28	Beleg: ER01_B_EXOPV_005: Fremdbelegnr FB01_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
+Exop: 29	Beleg: ER03_B_EXOPV_005: Fremdbelegnr FB02_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
+Exop: 34	Beleg: ER03_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
+Exop: 34	Beleg: ER03_B_EXOPV_005: Fremdbelegnr FB03_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -231,7 +267,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				Exop: 32	Beleg: ER06_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30
+				Exop: 30	Beleg: ER04_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 32
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -256,7 +292,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				Exop: 30	Beleg: ER04_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 32
+				Exop: 32	Beleg: ER06_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30
 			</matchvalue>
 		</validationitem>
 		<validationitem
