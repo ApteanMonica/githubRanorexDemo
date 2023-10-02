@@ -105,7 +105,9 @@ namespace X_MUSTER_021
 
             Init();
 
-            //Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement("select par_textk from y_par where par_cd = 'FIBU_SPERRE_100' and par_lfdnr= '0';", "$PAR_TEXTK");
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadDBVersion();
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement("select par_textk from y_par where par_cd = 'FIBU_SPERRE_100' and par_lfdnr= '1';", "$PAR_TEXTK");
             
             Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateVar1Var2("", PAR_TEXTK, PAR_TEXTK_0);
             

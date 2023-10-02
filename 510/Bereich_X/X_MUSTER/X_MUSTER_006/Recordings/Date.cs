@@ -92,7 +92,7 @@ namespace X_MUSTER_006.Recordings
 
             Init();
 
-            datum = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimeAsString("MM.yyyy");
+            datum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("MM.yyyy");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$datum'.", new RecordItemIndex(1));
             Keyboard.Press(datum);
