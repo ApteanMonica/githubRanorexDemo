@@ -99,9 +99,9 @@ namespace V_AUF_004.Recordings
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
-            Delay.SpeedFactor = 1.00;
+            Mouse.DefaultMoveTime = 0;
+            Keyboard.DefaultKeyPressTime = 20;
+            Delay.SpeedFactor = 0.00;
 
             Init();
 
@@ -110,73 +110,57 @@ namespace V_AUF_004.Recordings
             
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DruckausgabeSpeichernUnter.DruckausgabeSpeichernUnter'.", repo.DruckausgabeSpeichernUnter.DruckausgabeSpeichernUnterInfo, new RecordItemIndex(1));
             Validate.Exists(repo.DruckausgabeSpeichernUnter.DruckausgabeSpeichernUnterInfo);
-            Delay.Milliseconds(10000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DruckausgabeSpeichernUnter.ToolBar1001' at CenterRight.", repo.DruckausgabeSpeichernUnter.ToolBar1001Info, new RecordItemIndex(2));
             repo.DruckausgabeSpeichernUnter.ToolBar1001.Click(Location.CenterRight);
-            Delay.Milliseconds(200);
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DruckausgabeSpeichernUnter.ToolBar1001' at CenterRight.", repo.DruckausgabeSpeichernUnter.ToolBar1001Info, new RecordItemIndex(3));
             //repo.DruckausgabeSpeichernUnter.ToolBar1001.DoubleClick(Location.CenterRight);
-            //Delay.Milliseconds(200);
             
             //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}' with focus on 'DruckausgabeSpeichernUnter.ToolBar1001'.", repo.DruckausgabeSpeichernUnter.ToolBar1001Info, new RecordItemIndex(4));
             //repo.DruckausgabeSpeichernUnter.ToolBar1001.EnsureVisible();
             //Keyboard.Press("{Delete}");
-            //Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Temp_Laufwerk' with focus on 'DruckausgabeSpeichernUnter.ToolBar1001'.", repo.DruckausgabeSpeichernUnter.ToolBar1001Info, new RecordItemIndex(5));
             repo.DruckausgabeSpeichernUnter.ToolBar1001.EnsureVisible();
             Keyboard.Press(Temp_Laufwerk);
-            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}' with focus on 'DruckausgabeSpeichernUnter.ToolBar1001'.", repo.DruckausgabeSpeichernUnter.ToolBar1001Info, new RecordItemIndex(6));
             repo.DruckausgabeSpeichernUnter.ToolBar1001.EnsureVisible();
             Keyboard.Press("{Return}");
-            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DruckausgabeSpeichernUnter.VorherigeSpeicherorte' at Center.", repo.DruckausgabeSpeichernUnter.VorherigeSpeicherorteInfo, new RecordItemIndex(7));
             repo.DruckausgabeSpeichernUnter.VorherigeSpeicherorte.Click();
-            Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DruckausgabeSpeichernUnter.Text41477' at Center.", repo.DruckausgabeSpeichernUnter.Text41477Info, new RecordItemIndex(8));
             repo.DruckausgabeSpeichernUnter.Text41477.Click();
-            Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DruckausgabeSpeichernUnter.Text41477' at Center.", repo.DruckausgabeSpeichernUnter.Text41477Info, new RecordItemIndex(9));
             repo.DruckausgabeSpeichernUnter.Text41477.Click();
-            Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Temp_Laufwerk) on item 'DruckausgabeSpeichernUnter.Text41477'.", repo.DruckausgabeSpeichernUnter.Text41477Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.DruckausgabeSpeichernUnter.Text41477Info, "Text", Temp_Laufwerk);
-            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DruckausgabeSpeichernUnter.Text10011' at UpperCenter.", repo.DruckausgabeSpeichernUnter.Text10011Info, new RecordItemIndex(11));
             repo.DruckausgabeSpeichernUnter.Text10011.Click(Location.UpperCenter);
-            Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DruckausgabeSpeichernUnter.Text10011' at UpperCenter.", repo.DruckausgabeSpeichernUnter.Text10011Info, new RecordItemIndex(12));
             repo.DruckausgabeSpeichernUnter.Text10011.Click(Location.UpperCenter);
-            Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'BV_TEST_V_AUF_004' with focus on 'DruckausgabeSpeichernUnter.Text10011'.", repo.DruckausgabeSpeichernUnter.Text10011Info, new RecordItemIndex(13));
             repo.DruckausgabeSpeichernUnter.Text10011.PressKeys("BV_TEST_V_AUF_004");
-            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DruckausgabeSpeichernUnter.ButtonSpeichern' at Center.", repo.DruckausgabeSpeichernUnter.ButtonSpeichernInfo, new RecordItemIndex(14));
             repo.DruckausgabeSpeichernUnter.ButtonSpeichern.Click();
-            Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblFadr.ColRechNrRow1'", repo.TblFadr.ColRechNrRow1Info, new ActionTimeout(120000), new RecordItemIndex(15));
             repo.TblFadr.ColRechNrRow1Info.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.ColRechNrRow1' at Center.", repo.TblFadr.ColRechNrRow1Info, new RecordItemIndex(16));
             repo.TblFadr.ColRechNrRow1.Click();
-            Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'R([0-9]{2})[\\/]([0-9]{5})$') on item 'TblFadr.ColRechNrRow1'.", repo.TblFadr.ColRechNrRow1Info, new RecordItemIndex(17));
             Validate.AttributeRegex(repo.TblFadr.ColRechNrRow1Info, "Text", new Regex("R([0-9]{2})[\\/]([0-9]{5})$"));
-            Delay.Milliseconds(100);
             
         }
 
