@@ -28,12 +28,12 @@
 			</setup>
 			<smartfoldernode
 			id="2c4444b0-14fc-4a67-ba54-9e20fcfb7b82"
-			name="510,511">
+			name="510">
 				<conditiongroup
 				comparison="AND"
 				enabled="True">
 					<condition
-					comparison="IsNotEqual">
+					comparison="IsEqual">
 						<leftvalue>
 							<datavaluesource>
 								<databinding
@@ -45,7 +45,7 @@
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="521">
+							value="510">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -331,7 +331,7 @@
 			ref="52930c54-19b0-4cf9-877f-c073de5ccf28"
 			type="Recording">
 				<description>
-					<![CDATA[Recording eingebaut da Korrektur des Items 37966 derweil nur in 521 eingepflegt wurde. in 510 und 511 erst mit nächstem Servicepack! Nachdem Korrektur in allen 3 Versionen enthalten IF-Conditions wieder entfernen sowie dieses Recording!]]>
+					<![CDATA[Recording eingebaut da Korrektur des Items 37966 derweil nur in 521 eingepflegt wurde. Mittlerweile Korrektur auch in 511 erfolgt -->Versionen enthalten IF-Conditions wieder entfernen sowie dieses Recording, soabld Korrektur auch in 510 eingespielt wurde!]]>
 				</description>
 				<databinding>
 					<var
@@ -372,12 +372,12 @@
 			</testmodule>
 			<smartfoldernode
 			id="d833a20c-a58c-43dc-82c7-c407a04f9c50"
-			name="521">
+			name="511,_521">
 				<conditiongroup
 				comparison="AND"
 				enabled="True">
 					<condition
-					comparison="IsEqual">
+					comparison="IsNotEqual">
 						<leftvalue>
 							<datavaluesource>
 								<databinding
@@ -389,7 +389,7 @@
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="521">
+							value="510">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -405,7 +405,7 @@
 			ref="cdfc25a4-5a02-4121-b193-591189941286"
 			type="Recording">
 				<description>
-					<![CDATA[Nachdem Korrektur des Tickets 37966 in 510 und 511 ebenfalls enthalten ist Schritte zur Umgehungslösung rauslöschen.]]>
+					<![CDATA[Nachdem Korrektur des Tickets 37966 in 510 die enhaltenen Schritte zur Umgehungslösung wieder löschen (Korrektur für 510 im SP 16)]]>
 				</description>
 				<databinding>
 					<var
@@ -465,7 +465,7 @@
 						</testmodule>
 						<smartfoldernode
 						id="2c4444b0-14fc-4a67-ba54-9e20fcfb7b82"
-						name="510,511">
+						name="510">
 							<testmodule
 							id="f6182a88-9b18-41d5-859c-1c6f0716e3cf"
 							name="Zusammenfuehren_Teil_2">
@@ -473,7 +473,7 @@
 						</smartfoldernode>
 						<smartfoldernode
 						id="d833a20c-a58c-43dc-82c7-c407a04f9c50"
-						name="521">
+						name="511,_521">
 							<testmodule
 							id="a4071e80-b181-4342-95b5-13e288af4844"
 							name="Zusammenfuehren_Teil_2_521_korrektur_Item">
