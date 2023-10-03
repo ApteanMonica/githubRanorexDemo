@@ -2,6 +2,10 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testcase
+			id="323ccb60-1cbf-4eec-ab0a-f367f04023ab"
+			name="von_B_ZAHLV_001_kopiert">
+			</testcase>
 			<testmodule
 			id="34ea2e4b-8abc-4ca7-b38d-6b9d1eecc449"
 			name="Select_Validate"
@@ -44,6 +48,22 @@
 					name="PAR_TEXTK_0"
 					value="0">
 					</param>
+					<param
+					name="file_selectergebnis_b_zlvs_aktuell"
+					value="C:\temp\B_ZAHLV_001_B_ZLVS_aktuell.txt">
+					</param>
+					<param
+					name="file_selectergebnis_b_zlvs_Referenz"
+					value="C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_ZLVS_Referenz.txt">
+					</param>
+					<param
+					name="SQL_Select_B_ZLVS"
+					value="select * from b_zlvs where firm_nr ='100' and zlvs_vorschlag = '1' and busa_keybel BETWEEN '112' AND '126';">
+					</param>
+					<param
+					name="Programmversion"
+					value="">
+					</param>
 				</parameters>
 			</testcase>
 			<testsuite
@@ -70,6 +90,38 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<testmodule
+			id="c7116b80-2224-4631-916b-70d26d5a708a"
+			name="SQL_Kontrolle_b_zlvs_Bankbeleg_Details"
+			ref="1ba98c21-a89b-4ddc-8130-47b3a1e1ec2d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="SQL_Select_B_ZLVS"
+					datasourceid="47324e1a-5adf-422b-9197-a96916d23726"
+					variableid="d6b6830d-d11a-4f23-b13d-b98ca7baaa56"
+					variablename="SQL_Select_B_ZLVS">
+					</var>
+					<var
+					dataname="file_selectergebnis_b_zlvs_Referenz"
+					datasourceid="47324e1a-5adf-422b-9197-a96916d23726"
+					variableid="cb404efe-69ca-4571-932a-79d16573f1a7"
+					variablename="file_selectergebnis_b_zlvs_Referenz">
+					</var>
+					<var
+					dataname="file_selectergebnis_b_zlvs_aktuell"
+					datasourceid="47324e1a-5adf-422b-9197-a96916d23726"
+					variableid="8185ff7b-b0e3-4ffa-b762-0affedc239d6"
+					variablename="file_selectergebnis_b_zlvs_aktuell">
+					</var>
+					<var
+					dataname="Programmversion"
+					datasourceid="47324e1a-5adf-422b-9197-a96916d23726"
+					variableid="b29dcccd-9523-4b75-861d-68223c9d4d4a"
+					variablename="Programmversion">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="fa01731d-dfd2-4b46-9342-b247000533be"
 			name="TestCase">
@@ -94,6 +146,14 @@
 						name="Select_Validate">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="323ccb60-1cbf-4eec-ab0a-f367f04023ab"
+					name="von_B_ZAHLV_001_kopiert">
+						<testmodule
+						id="c7116b80-2224-4631-916b-70d26d5a708a"
+						name="SQL_Kontrolle_b_zlvs_Bankbeleg_Details">
+						</testmodule>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -104,6 +164,9 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="323ccb60-1cbf-4eec-ab0a-f367f04023ab">
+			</testcontainer>
 			<testcontainer
 			id="47324e1a-5adf-422b-9197-a96916d23726">
 			</testcontainer>
