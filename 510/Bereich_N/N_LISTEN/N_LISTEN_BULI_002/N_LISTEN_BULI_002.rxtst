@@ -23,35 +23,6 @@
 			ref="e43fbcf2-7460-45da-b453-afa837393285"
 			type="Recording">
 			</testmodule>
-			<smartfoldernode
-			id="1aa5b1f0-f9cc-44c5-a31b-70a1937e5f0d"
-			name="511">
-				<conditiongroup
-				comparison="OR"
-				enabled="True">
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Programmversion"
-								id="a1176db5-784e-4390-bcf9-eb9cb43208f4">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="511">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
-			<teardown
-			id="24c6cae5-349a-4b87-a213-684a4b4abdea"
-			name="teardown">
-			</teardown>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -91,25 +62,10 @@
 			ref="5195d0c7-058d-4bb4-95ae-5c93717e1f7c"
 			type="Recording">
 			</testmodule>
-			<testmodule
-			id="41904477-c20a-4967-b732-e6bbf425f0d0"
-			name="Ueberleitungsmeldung_511"
-			ref="ab5c93f4-ef2a-4a0d-9cac-a29de877cf54"
-			type="Recording">
-				<description>
-					<![CDATA[Meldung tritt ev 2x auf! Umgehungslösung: Recording wieder löschen sobald 511 Sp15 erreicht hat]]>
-				</description>
-			</testmodule>
 			<setup
 			id="44252202-9b27-4b8b-8bbb-ae36ab5a6707"
 			name="setup">
 			</setup>
-			<testmodule
-			id="44cfde3d-b666-4b45-835d-a35e6706639e"
-			name="CloseAUT_02"
-			ref="716cc69f-7519-4536-9ece-3f061ca1b5fe"
-			type="Recording">
-			</testmodule>
 			<testmodule
 			id="4b698e86-966a-4a19-a119-5e5b76b1e2cb"
 			name="Tabelle_aufrufen"
@@ -189,36 +145,6 @@
 			id="72d6d036-4d8d-4098-9073-cd4c52da9c25"
 			name="teardown">
 			</teardown>
-			<testmodule
-			enabled="False"
-			id="77464921-6c23-4fbf-ab4e-5699761fe56a"
-			name="korrekte_Meldung"
-			ref="68aecbe6-9d03-48c0-a765-0f7b36d9240d"
-			type="Recording">
-				<description>
-					<![CDATA[Meldung tritt nicht auf - disabled Umgehungslösung: Recording wieder löschen sobald Sp 15 vorhanden --> Verhalten tritt ab Sp 15 nicht mehr auf.]]>
-				</description>
-			</testmodule>
-			<testmodule
-			id="7aa8c0c6-f00b-4ea9-80d7-7ff1e0592a59"
-			name="StartAUT_02"
-			ref="4d010060-253e-4090-8a5b-64507568a5c8"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Programm_02"
-					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
-					variableid="3ea8ad14-4e01-4619-8f82-006890491c5c"
-					variablename="Programm_02">
-					</var>
-					<var
-					dataname="Startfile"
-					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
-					variableid="a99b9466-09dd-4d8c-9f08-1505d93cfe1f"
-					variablename="Startfile">
-					</var>
-				</databinding>
-			</testmodule>
 			<testcase
 			id="88f5da10-6d3c-4184-8f91-793b775f0277"
 			name="TestCase">
@@ -226,47 +152,6 @@
 					<![CDATA[<p>Überleitung des monatlichen Afa-Betrags für die Anlage 0630 aus der Buchungsliste in die Schnittstelle. Überprüfung ob nochmalige Überleitung für selben Zeitraum möglich ist --&gt; Sollte nicht mögich sein und anschließend in N_STAMM wechseln um zu überprüfen ob ein Eintrag der Periode nach der monatlichen Überleitung stattgefunden hat. </p>]]>
 				</description>
 			</testcase>
-			<testmodule
-			id="8c5e11d2-8fc8-48f8-a780-0ea46bae264d"
-			name="korrekte_Ueberleitung_511"
-			ref="dc96ac0c-7854-4c0e-8ba3-de56412a4782"
-			type="Recording">
-				<description>
-					<![CDATA[Umgehungslösung: Recording wieder löschen sobald 511 Sp 15 vorhanden --> Verhalten tritt ab SP15 nicht mehr auf]]>
-				</description>
-				<databinding>
-					<var
-					dataname="Ueberleitungsmonat"
-					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
-					variableid="2e1c756c-4cd7-480c-9180-1dbe9202cbc1"
-					variablename="Ueberleitungsmonat">
-					</var>
-					<var
-					dataname="Ustcode"
-					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
-					variableid="eccc583d-4af4-4b52-905b-6679c69deda4"
-					variablename="Ustcode">
-					</var>
-					<var
-					dataname="Belegdatum"
-					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
-					variableid="e4b20633-34ae-4d51-896a-97d493fb15d9"
-					variablename="Belegdatum">
-					</var>
-					<var
-					dataname="Belegnr"
-					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
-					variableid="9cd6358d-3891-4470-a88d-18e0bc34c7ac"
-					variablename="Belegnr">
-					</var>
-					<var
-					dataname="GJ"
-					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
-					variableid="152719d4-b12b-4bce-9290-b8eee278b50b"
-					variablename="GJ">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="961d3e9b-e0d0-4d30-923f-20df3a49f3a3"
 			name="CloseAUT_02"
@@ -298,15 +183,6 @@
 					variablename="GJ">
 					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			id="98e29fd9-c50b-4e1a-80bd-aaed9e33be78"
-			name="N_STAMM_Eingabe_Buchungsmonat"
-			ref="97dc9093-d60f-46e3-8a07-1eda6a6905f8"
-			type="Recording">
-				<description>
-					<![CDATA[Buchungsmonat 6 erfassen! Umgehungslösung: Recording wieder löschen sobald 511 SP 15 vorhanden --> Verhalten tritt ab SP15 nicht mehr auf]]>
-				</description>
 			</testmodule>
 			<testcase
 			id="a1176db5-784e-4390-bcf9-eb9cb43208f4"
@@ -537,38 +413,6 @@
 						id="da16ed31-5bf9-49cd-b537-a5a90e339f85"
 						name="FIBU_Ueberleitung">
 						</testmodule>
-						<smartfoldernode
-						id="1aa5b1f0-f9cc-44c5-a31b-70a1937e5f0d"
-						name="511">
-							<testmodule
-							id="41904477-c20a-4967-b732-e6bbf425f0d0"
-							name="Ueberleitungsmeldung_511">
-							</testmodule>
-							<testmodule
-							id="7aa8c0c6-f00b-4ea9-80d7-7ff1e0592a59"
-							name="StartAUT_02">
-							</testmodule>
-							<testmodule
-							id="98e29fd9-c50b-4e1a-80bd-aaed9e33be78"
-							name="N_STAMM_Eingabe_Buchungsmonat">
-							</testmodule>
-							<testmodule
-							id="44cfde3d-b666-4b45-835d-a35e6706639e"
-							name="CloseAUT_02">
-							</testmodule>
-							<testmodule
-							id="8c5e11d2-8fc8-48f8-a780-0ea46bae264d"
-							name="korrekte_Ueberleitung_511">
-							</testmodule>
-							<testmodule
-							id="77464921-6c23-4fbf-ab4e-5699761fe56a"
-							name="korrekte_Meldung">
-							</testmodule>
-							<teardown
-							id="24c6cae5-349a-4b87-a213-684a4b4abdea"
-							name="teardown">
-							</teardown>
-						</smartfoldernode>
 						<testmodule
 						id="40e701e9-ce90-46db-9ac0-f3e95c734bcf"
 						name="Ueberleitungsmeldung">
@@ -628,9 +472,6 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
-			<testcontainer
-			id="1aa5b1f0-f9cc-44c5-a31b-70a1937e5f0d">
-			</testcontainer>
 			<testcontainer
 			id="88f5da10-6d3c-4184-8f91-793b775f0277">
 			</testcontainer>
