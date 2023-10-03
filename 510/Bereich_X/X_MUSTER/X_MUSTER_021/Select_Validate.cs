@@ -20,50 +20,63 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace X_MUSTER_006.Recordings
+namespace X_MUSTER_021
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Date recording.
+    ///The Select_Validate recording.
     /// </summary>
-    [TestModule("013e5a06-c40f-4b5f-8547-a54f4a106fb1", ModuleType.Recording, 1)]
-    public partial class Date : ITestModule
+    [TestModule("cc7690f7-41b2-458c-8dab-18cbe2fa347a", ModuleType.Recording, 1)]
+    public partial class Select_Validate : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::X_MUSTER_006.X_MUSTER_006Repository repository.
+        /// Holds an instance of the X_MUSTER_021Repository repository.
         /// </summary>
-        public static global::X_MUSTER_006.X_MUSTER_006Repository repo = global::X_MUSTER_006.X_MUSTER_006Repository.Instance;
+        public static X_MUSTER_021Repository repo = X_MUSTER_021Repository.Instance;
 
-        static Date instance = new Date();
+        static Select_Validate instance = new Select_Validate();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Date()
+        public Select_Validate()
         {
-            datum = "";
+            PAR_TEXTK = "";
+            PAR_TEXTK_0 = "0";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Date Instance
+        public static Select_Validate Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _datum;
+        string _PAR_TEXTK;
 
         /// <summary>
-        /// Gets or sets the value of variable datum.
+        /// Gets or sets the value of variable PAR_TEXTK.
         /// </summary>
-        [TestVariable("7efbe86c-8179-48ba-a643-55211033cc95")]
-        public string datum
+        [TestVariable("74972e38-3a88-48b3-867a-9383e4a95a0c")]
+        public string PAR_TEXTK
         {
-            get { return _datum; }
-            set { _datum = value; }
+            get { return _PAR_TEXTK; }
+            set { _PAR_TEXTK = value; }
+        }
+
+        string _PAR_TEXTK_0;
+
+        /// <summary>
+        /// Gets or sets the value of variable PAR_TEXTK_0.
+        /// </summary>
+        [TestVariable("9c05e721-4612-4b01-bbdb-ead3bead2d15")]
+        public string PAR_TEXTK_0
+        {
+            get { return _PAR_TEXTK_0; }
+            set { _PAR_TEXTK_0 = value; }
         }
 
 #endregion
@@ -92,12 +105,11 @@ namespace X_MUSTER_006.Recordings
 
             Init();
 
-            datum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("MM.yyyy");
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadDBVersion();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$datum'.", new RecordItemIndex(1));
-            Keyboard.Press(datum);
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement("select par_textk from y_par where par_cd = 'FIBU_SPERRE_100' and par_lfdnr= '1';", "$PAR_TEXTK");
             
-            Report.Log(ReportLevel.Info, "User", datum, new RecordItemIndex(2));
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateVar1Var2("", PAR_TEXTK, PAR_TEXTK_0);
             
         }
 

@@ -1,18 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{45F372B1-7381-463E-8A94-39D2D072106A}</ProjectGuid>
+    <ProjectGuid>{9783A050-1EF4-4454-9011-32338BF008D9}</ProjectGuid>
     <TargetFrameworkProfile />
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>Exe</OutputType>
-    <RootNamespace>X_MUSTER_005</RootNamespace>
-    <AssemblyName>X_MUSTER_005</AssemblyName>
+    <RootNamespace>X_MUSTER_021</RootNamespace>
+    <AssemblyName>X_MUSTER_021</AssemblyName>
     <NoWarn>1591</NoWarn>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
     <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
-    <projectdefaultrepository>fff1d311-5fd4-4972-921f-76aa7cba49f4</projectdefaultrepository>
+    <projectdefaultrepository>c107d05a-59ad-40c0-958f-f4f4687a46e7</projectdefaultrepository>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -78,83 +79,82 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\..\Testdaten\Allgemein\UserCode\aptean.cs">
+      <Link>aptean.cs</Link>
+      <id>d2b1fb3b-05bd-4bfa-91da-42fc4facd66c</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
-      <id>fcf8e6b9-9cb6-4ebf-a0e9-bebee111e98e</id>
+      <id>175bd8e0-6eb2-47b8-a837-94f3d695fd2d</id>
     </Compile>
     <Compile Include="Program.cs">
-      <id>01a09007-7466-4647-8b4a-8ba38b307f12</id>
+      <id>ba0fc229-6c60-4501-970d-468f8678398b</id>
     </Compile>
-    <Compile Include="Recordings\CloseAUT.cs">
-      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+    <Compile Include="Select_Validate.cs">
+      <BoundTo>610f3dbf-ca2b-485b-91bd-777b62677ad2</BoundTo>
+      <DependentUpon>Select_Validate.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>79d2817d-96dc-4278-aeb8-34e70eaef738</id>
-      <BoundTo>25f1783f-d06d-476f-b97e-1b685bf2844b</BoundTo>
+      <id>3872a072-2ef7-4f64-84dd-f37cd28efe4a</id>
     </Compile>
-    <Compile Include="Recordings\CloseAUT.UserCode.cs">
-      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+    <Compile Include="Select_Validate.UserCode.cs">
+      <BoundTo>610f3dbf-ca2b-485b-91bd-777b62677ad2</BoundTo>
+      <DependentUpon>Select_Validate.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>126cadb9-fea8-4283-becf-8562871c6142</id>
-      <BoundTo>25f1783f-d06d-476f-b97e-1b685bf2844b</BoundTo>
+      <id>f5111dca-a0f6-449e-a64b-a32fc2a2fac6</id>
     </Compile>
-    <Compile Include="Recordings\StartAUT.cs">
-      <DependentUpon>StartAUT.rxrec</DependentUpon>
+    <Compile Include="Update.cs">
+      <BoundTo>b127523a-7b2b-4cf6-a8f6-7a9edcb3ff33</BoundTo>
+      <DependentUpon>Update.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>76d39144-1d10-440f-98fe-ec0575ad9a44</id>
-      <BoundTo>52e65a0f-d4f7-436b-a734-fd661b73ade0</BoundTo>
+      <id>3a2b6c9e-ae67-4d4c-9d42-2de04e8ab1a3</id>
     </Compile>
-    <Compile Include="Recordings\StartAUT.UserCode.cs">
-      <DependentUpon>StartAUT.rxrec</DependentUpon>
+    <Compile Include="Update.UserCode.cs">
+      <BoundTo>b127523a-7b2b-4cf6-a8f6-7a9edcb3ff33</BoundTo>
+      <DependentUpon>Update.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>8e6a64c7-d2ac-488e-a469-f627d46d3b31</id>
-      <BoundTo>52e65a0f-d4f7-436b-a734-fd661b73ade0</BoundTo>
+      <id>78c25f48-e11f-4c40-be3b-9c9e6193cbe5</id>
     </Compile>
-    <Compile Include="X_MUSTER_005Repository.cs">
-      <BoundTo>fff1d311-5fd4-4972-921f-76aa7cba49f4</BoundTo>
-      <DependentUpon>X_MUSTER_005Repository.rxrep</DependentUpon>
+    <Compile Include="X_MUSTER_021Repository.cs">
+      <BoundTo>c107d05a-59ad-40c0-958f-f4f4687a46e7</BoundTo>
+      <DependentUpon>X_MUSTER_021Repository.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
-      <id>c4cbca5a-6336-47bb-a55b-31fba0b79640</id>
+      <id>c55da026-8f75-4ebc-aaba-c1cb631992c3</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
-      <id>dfda3734-dcb9-4a3d-b813-577153f9ad7c</id>
+      <id>629b2805-7b81-44ad-b4e2-19b7998053e7</id>
     </None>
-    <None Include="Recordings\CloseAUT.rxrec">
-      <BoundTo>fff1d311-5fd4-4972-921f-76aa7cba49f4</BoundTo>
-      <id>25f1783f-d06d-476f-b97e-1b685bf2844b</id>
-      <recordtableid>1f4d2f7d-8133-4dcb-a56e-0a1f17207bf1</recordtableid>
+    <None Include="Select_Validate.rxrec">
+      <BoundTo>c107d05a-59ad-40c0-958f-f4f4687a46e7</BoundTo>
+      <id>610f3dbf-ca2b-485b-91bd-777b62677ad2</id>
+      <recordtableid>cc7690f7-41b2-458c-8dab-18cbe2fa347a</recordtableid>
     </None>
-    <None Include="Recordings\StartAUT.rxrec">
-      <BoundTo>fff1d311-5fd4-4972-921f-76aa7cba49f4</BoundTo>
-      <id>52e65a0f-d4f7-436b-a734-fd661b73ade0</id>
-      <recordtableid>60f5add6-d40d-4ad7-99e2-1328f7775696</recordtableid>
+    <None Include="Update.rxrec">
+      <BoundTo>c107d05a-59ad-40c0-958f-f4f4687a46e7</BoundTo>
+      <id>b127523a-7b2b-4cf6-a8f6-7a9edcb3ff33</id>
+      <recordtableid>ec5cdcf6-a8af-4c59-a08c-aaae2e666959</recordtableid>
     </None>
-    <None Include="X_MUSTER_005Repository.rximg">
-      <BoundTo>fff1d311-5fd4-4972-921f-76aa7cba49f4</BoundTo>
-      <DependentUpon>X_MUSTER_005Repository.rxrep</DependentUpon>
+    <None Include="X_MUSTER_021Repository.rximg">
+      <BoundTo>c107d05a-59ad-40c0-958f-f4f4687a46e7</BoundTo>
+      <DependentUpon>X_MUSTER_021Repository.rxrep</DependentUpon>
       <imageblob>true</imageblob>
-      <id>90e14380-9167-412e-892f-82388616d375</id>
+      <id>f90ac4f6-05c1-4781-9d7c-591ee3d6ec68</id>
     </None>
-    <None Include="X_MUSTER_005Repository.rxrep">
-      <id>fff1d311-5fd4-4972-921f-76aa7cba49f4</id>
-      <repoid>5456f789-3a87-4765-9d98-c4830bea8973</repoid>
-      <reporootid>af9fca3b-9d61-4721-9bc1-515191d1068a</reporootid>
+    <None Include="X_MUSTER_021Repository.rxrep">
+      <id>c107d05a-59ad-40c0-958f-f4f4687a46e7</id>
+      <repoid>5a31ca37-669c-4663-b0bc-0a68d4eec2e1</repoid>
+      <reporootid>1dd4c29b-47d3-4a8c-b90b-4a9d5099a44f</reporootid>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="X_MUSTER_005.rxtmg">
+    <Content Include="X_MUSTER_021.rxtmg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <id>95cf4729-9baf-470c-914c-752b64922ef9</id>
+      <id>2a19a169-3785-4700-a70a-35f6e3f350b4</id>
     </Content>
-    <Content Include="X_MUSTER_005.rxtst">
+    <Content Include="X_MUSTER_021.rxtst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <id>75297575-308d-4da6-b49a-2e19085821c4</id>
+      <id>8326fec8-c8a3-45e7-b8e6-68c261ca5153</id>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Recordings">
-      <id>306c4c9a-85f0-4b83-b212-da4bb2712f0a</id>
-    </Folder>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">

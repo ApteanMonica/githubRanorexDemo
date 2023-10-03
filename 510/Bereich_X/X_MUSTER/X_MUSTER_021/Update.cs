@@ -20,51 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace X_MUSTER_006.Recordings
+namespace X_MUSTER_021
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Date recording.
+    ///The Update recording.
     /// </summary>
-    [TestModule("013e5a06-c40f-4b5f-8547-a54f4a106fb1", ModuleType.Recording, 1)]
-    public partial class Date : ITestModule
+    [TestModule("ec5cdcf6-a8af-4c59-a08c-aaae2e666959", ModuleType.Recording, 1)]
+    public partial class Update : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::X_MUSTER_006.X_MUSTER_006Repository repository.
+        /// Holds an instance of the X_MUSTER_021Repository repository.
         /// </summary>
-        public static global::X_MUSTER_006.X_MUSTER_006Repository repo = global::X_MUSTER_006.X_MUSTER_006Repository.Instance;
+        public static X_MUSTER_021Repository repo = X_MUSTER_021Repository.Instance;
 
-        static Date instance = new Date();
+        static Update instance = new Update();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Date()
+        public Update()
         {
-            datum = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Date Instance
+        public static Update Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _datum;
-
-        /// <summary>
-        /// Gets or sets the value of variable datum.
-        /// </summary>
-        [TestVariable("7efbe86c-8179-48ba-a643-55211033cc95")]
-        public string datum
-        {
-            get { return _datum; }
-            set { _datum = value; }
-        }
 
 #endregion
 
@@ -92,12 +79,9 @@ namespace X_MUSTER_006.Recordings
 
             Init();
 
-            datum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("MM.yyyy");
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadDBVersion();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$datum'.", new RecordItemIndex(1));
-            Keyboard.Press(datum);
-            
-            Report.Log(ReportLevel.Info, "User", datum, new RecordItemIndex(2));
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement("update y_par set par_textk = '0' where par_cd = 'FIBU_SPERRE_100' and par_lfdnr= '0';", "c.\\temp\\X_MUSTER_021_update.txt");
             
         }
 

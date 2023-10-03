@@ -41,7 +41,7 @@ namespace B_UVA_004.Recordings
         /// </summary>
         public UVA_Druck_Form_NEU_auswaehlen()
         {
-            Form_Name_NEU = "";
+            Form_Name_NEU = "UVA-Österreich 2023";
         }
 
         /// <summary>

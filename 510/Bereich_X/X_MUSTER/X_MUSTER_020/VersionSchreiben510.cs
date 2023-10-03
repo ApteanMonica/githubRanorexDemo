@@ -20,51 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace X_MUSTER_006.Recordings
+namespace X_MUSTER_020
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Date recording.
+    ///The VersionSchreiben510 recording.
     /// </summary>
-    [TestModule("013e5a06-c40f-4b5f-8547-a54f4a106fb1", ModuleType.Recording, 1)]
-    public partial class Date : ITestModule
+    [TestModule("b9111e55-0a17-4a8a-98a3-dd9d839787b8", ModuleType.Recording, 1)]
+    public partial class VersionSchreiben510 : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::X_MUSTER_006.X_MUSTER_006Repository repository.
+        /// Holds an instance of the X_MUSTER_020Repository repository.
         /// </summary>
-        public static global::X_MUSTER_006.X_MUSTER_006Repository repo = global::X_MUSTER_006.X_MUSTER_006Repository.Instance;
+        public static X_MUSTER_020Repository repo = X_MUSTER_020Repository.Instance;
 
-        static Date instance = new Date();
+        static VersionSchreiben510 instance = new VersionSchreiben510();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Date()
+        public VersionSchreiben510()
         {
-            datum = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Date Instance
+        public static VersionSchreiben510 Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _datum;
-
-        /// <summary>
-        /// Gets or sets the value of variable datum.
-        /// </summary>
-        [TestVariable("7efbe86c-8179-48ba-a643-55211033cc95")]
-        public string datum
-        {
-            get { return _datum; }
-            set { _datum = value; }
-        }
 
 #endregion
 
@@ -92,12 +79,7 @@ namespace X_MUSTER_006.Recordings
 
             Init();
 
-            datum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("MM.yyyy");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$datum'.", new RecordItemIndex(1));
-            Keyboard.Press(datum);
-            
-            Report.Log(ReportLevel.Info, "User", datum, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "User", "510", new RecordItemIndex(0));
             
         }
 

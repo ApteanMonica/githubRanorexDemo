@@ -127,50 +127,55 @@ namespace B_BUAB_006.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBUAB.BelegAendern' at Center.", repo.BBUAB.BelegAendernInfo, new RecordItemIndex(2));
             repo.BBUAB.BelegAendern.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgAEndern.Text' at Center.", repo.DlgAEndern.TextInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgAEndern.TitleBar100BelegAEnderungen'", repo.DlgAEndern.TitleBar100BelegAEnderungenInfo, new ActionTimeout(120000), new RecordItemIndex(3));
+            repo.DlgAEndern.TitleBar100BelegAEnderungenInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgAEndern.Text' at Center.", repo.DlgAEndern.TextInfo, new RecordItemIndex(4));
             repo.DlgAEndern.Text.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}' with focus on 'DlgAEndern.Text'.", repo.DlgAEndern.TextInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}' with focus on 'DlgAEndern.Text'.", repo.DlgAEndern.TextInfo, new RecordItemIndex(5));
             repo.DlgAEndern.Text.PressKeys("{Back}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$UVA_Periode' with focus on 'DlgAEndern.Text'.", repo.DlgAEndern.TextInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$UVA_Periode' with focus on 'DlgAEndern.Text'.", repo.DlgAEndern.TextInfo, new RecordItemIndex(6));
             repo.DlgAEndern.Text.EnsureVisible();
             Keyboard.Press(UVA_Periode);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}' with focus on 'DlgAEndern.Text1'.", repo.DlgAEndern.Text1Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}' with focus on 'DlgAEndern.Text1'.", repo.DlgAEndern.Text1Info, new RecordItemIndex(7));
             repo.DlgAEndern.Text1.EnsureVisible();
             Keyboard.Press("{Tab}{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}' with focus on 'DlgAEndern.Text1'.", repo.DlgAEndern.Text1Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}' with focus on 'DlgAEndern.Text1'.", repo.DlgAEndern.Text1Info, new RecordItemIndex(8));
             repo.DlgAEndern.Text1.EnsureVisible();
             Keyboard.Press("{Back}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$buchungsMonat'.", new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$buchungsMonat'.", new RecordItemIndex(9));
             Keyboard.Press(buchungsMonat);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}' with focus on 'DlgAEndern'.", repo.DlgAEndern.SelfInfo, new RecordItemIndex(9));
-            repo.DlgAEndern.Self.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}'.", new RecordItemIndex(10));
             Keyboard.Press("{F12}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(11));
             repo.TblB.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$buchungsMonat) on item 'TblB1.ColPeriRow1'.", repo.TblB1.ColPeriRow1Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$buchungsMonat) on item 'TblB1.ColPeriRow1'.", repo.TblB1.ColPeriRow1Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.TblB1.ColPeriRow1Info, "Text", buchungsMonat);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_Termin) on item 'TblB1.ColUvaRow1'.", repo.TblB1.ColUvaRow1Info, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_Termin) on item 'TblB1.ColUvaRow1'.", repo.TblB1.ColUvaRow1Info, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.TblB1.ColUvaRow1Info, "Text", UVA_Termin);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbCommonOPAnzeige' at Center.", repo.TblB.PbCommonOPAnzeigeInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbCommonOPAnzeige' at Center.", repo.TblB.PbCommonOPAnzeigeInfo, new RecordItemIndex(14));
             repo.TblB.PbCommonOPAnzeige.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$buchungsMonat) on item 'TblBuop.ColBusaPeriodeRow1'.", repo.TblBuop.ColBusaPeriodeRow1Info, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblBuop.TitleBar100OPs2030002KUNDEDIVBK'", repo.TblBuop.TitleBar100OPs2030002KUNDEDIVBKInfo, new ActionTimeout(120000), new RecordItemIndex(15));
+            repo.TblBuop.TitleBar100OPs2030002KUNDEDIVBKInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$buchungsMonat) on item 'TblBuop.ColBusaPeriodeRow1'.", repo.TblBuop.ColBusaPeriodeRow1Info, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.TblBuop.ColBusaPeriodeRow1Info, "Text", buchungsMonat);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuop.Schliessen' at Center.", repo.TblBuop.SchliessenInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuop.Schliessen' at Center.", repo.TblBuop.SchliessenInfo, new RecordItemIndex(17));
             repo.TblBuop.Schliessen.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblBuop.TitleBar100OPs2030002KUNDEDIVBK'.", repo.TblBuop.TitleBar100OPs2030002KUNDEDIVBKInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblBuop.TitleBar100OPs2030002KUNDEDIVBK'.", repo.TblBuop.TitleBar100OPs2030002KUNDEDIVBKInfo, new RecordItemIndex(18));
             Validate.NotExists(repo.TblBuop.TitleBar100OPs2030002KUNDEDIVBKInfo);
             
         }
