@@ -81,6 +81,8 @@ namespace X_MUSTER_021
 
             Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadDBVersion();
             
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadProgrammVersion("");
+            
             Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement("update y_par set par_textk = '0' where par_cd = 'FIBU_SPERRE_100' and par_lfdnr= '0';", "c.\\temp\\X_MUSTER_021_update.txt");
             
         }

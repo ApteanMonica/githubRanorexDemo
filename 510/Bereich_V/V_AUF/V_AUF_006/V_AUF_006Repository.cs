@@ -1978,6 +1978,7 @@ namespace V_AUF_006
             RepoItemInfo _dfrabattInfo;
             RepoItemInfo _pbokInfo;
             RepoItemInfo _dfrabacdInfo;
+            RepoItemInfo _rabattInfo;
 
             /// <summary>
             /// Creates a new DlgRabaMehrPos  folder.
@@ -1988,6 +1989,7 @@ namespace V_AUF_006
                 _dfrabattInfo = new RepoItemInfo(this, "DfRabatt", "text[@controlname='dfRabatt']", "", 30000, null, "4a14b9f9-e60a-4489-942f-40e0ec47cf8c");
                 _pbokInfo = new RepoItemInfo(this, "PbOk", "button[@controlname='pbOk']", "", 30000, null, "932918a7-281f-4f62-81d7-01bcc26f1d57");
                 _dfrabacdInfo = new RepoItemInfo(this, "DfRabaCd", "text[@controlname='dfRaba_cd']", "", 30000, null, "6f5db32d-66c3-4aa1-8b52-56bfe70e12f6");
+                _rabattInfo = new RepoItemInfo(this, "Rabatt", "text[@controlname='dfRabatt']/text[@accessiblename='Rabatt']", "", 30000, null, "8c5c360b-7e23-45ad-8e01-4af8c4ac0973");
             }
 
             /// <summary>
@@ -2083,6 +2085,30 @@ namespace V_AUF_006
                 get
                 {
                     return _dfrabacdInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Rabatt item.
+            /// </summary>
+            [RepositoryItem("8c5c360b-7e23-45ad-8e01-4af8c4ac0973")]
+            public virtual Ranorex.Text Rabatt
+            {
+                get
+                {
+                    return _rabattInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Rabatt item info.
+            /// </summary>
+            [RepositoryItemInfo("8c5c360b-7e23-45ad-8e01-4af8c4ac0973")]
+            public virtual RepoItemInfo RabattInfo
+            {
+                get
+                {
+                    return _rabattInfo;
                 }
             }
         }
