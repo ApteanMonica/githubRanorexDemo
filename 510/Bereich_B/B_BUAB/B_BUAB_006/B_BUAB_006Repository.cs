@@ -854,6 +854,7 @@ namespace B_BUAB_006
         [RepositoryFolder("6bc69ac1-d388-4437-a078-b3592d623aba")]
         public partial class DlgAEndernAppFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _titlebar100belegaenderungenInfo;
             RepoItemInfo _neuewerteInfo;
             RepoItemInfo _pbokInfo;
             RepoItemInfo _textInfo;
@@ -865,6 +866,7 @@ namespace B_BUAB_006
             public DlgAEndernAppFolder(RepoGenBaseFolder parentFolder) :
                     base("DlgAEndern", "/form[@controlname='dlgÄndern']", parentFolder, 30000, null, true, "6bc69ac1-d388-4437-a078-b3592d623aba", "")
             {
+                _titlebar100belegaenderungenInfo = new RepoItemInfo(this, "TitleBar100BelegAEnderungen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "aa942cec-46f2-4b75-90db-33fd2a045dfc");
                 _neuewerteInfo = new RepoItemInfo(this, "NeueWerte", "text[@controlname='dfBelegnr']/text[@accessiblename='Neue Werte:']", "?/text[@accessiblename='Neue Werte:']", 30000, null, "574205c5-8afd-480b-99e4-8dc904c6b1a1");
                 _pbokInfo = new RepoItemInfo(this, "PbOK", "button[@controlname='pbOK']", "", 30000, null, "f93ab90f-2e78-41c4-8d4c-757ce11e6c5d");
                 _textInfo = new RepoItemInfo(this, "Text", "text[@controlname='dfBusa_uvamonat']/text[@accessiblerole='Text']", "", 30000, null, "44817e47-3f52-4d0c-a463-6b77d369fcb4");
@@ -892,6 +894,30 @@ namespace B_BUAB_006
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100BelegAEnderungen item.
+            /// </summary>
+            [RepositoryItem("aa942cec-46f2-4b75-90db-33fd2a045dfc")]
+            public virtual Ranorex.TitleBar TitleBar100BelegAEnderungen
+            {
+                get
+                {
+                    return _titlebar100belegaenderungenInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100BelegAEnderungen item info.
+            /// </summary>
+            [RepositoryItemInfo("aa942cec-46f2-4b75-90db-33fd2a045dfc")]
+            public virtual RepoItemInfo TitleBar100BelegAEnderungenInfo
+            {
+                get
+                {
+                    return _titlebar100belegaenderungenInfo;
                 }
             }
 
@@ -1234,9 +1260,9 @@ namespace B_BUAB_006
         [RepositoryFolder("c1a07cd1-d142-48d5-adf7-e8a9d5727483")]
         public partial class TblBuopAppFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _titlebar100ops2030002kundedivbkInfo;
             RepoItemInfo _colbusaperioderow1Info;
             RepoItemInfo _schliessenInfo;
-            RepoItemInfo _titlebar100ops2030002kundedivbkInfo;
 
             /// <summary>
             /// Creates a new TblBuop  folder.
@@ -1244,9 +1270,9 @@ namespace B_BUAB_006
             public TblBuopAppFolder(RepoGenBaseFolder parentFolder) :
                     base("TblBuop", "/form[@controlname='tblBuop']", parentFolder, 30000, null, true, "c1a07cd1-d142-48d5-adf7-e8a9d5727483", "")
             {
+                _titlebar100ops2030002kundedivbkInfo = new RepoItemInfo(this, "TitleBar100OPs2030002KUNDEDIVBK", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "e4bdb5cf-2485-4766-bcba-c512e35ea2e4");
                 _colbusaperioderow1Info = new RepoItemInfo(this, "ColBusaPeriodeRow1", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBusa_periode Row 1']", ".//cell[@accessiblename='colBusa_periode Row 1']", 30000, null, "2b5c24e9-252e-47d9-a9eb-d7dbd3db49d5");
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "?/button[@accessiblename='Schließen']", 30000, null, "d0f375cf-685e-48c3-8fef-44259e16c4a0");
-                _titlebar100ops2030002kundedivbkInfo = new RepoItemInfo(this, "TitleBar100OPs2030002KUNDEDIVBK", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "e4bdb5cf-2485-4766-bcba-c512e35ea2e4");
             }
 
             /// <summary>
@@ -1270,6 +1296,30 @@ namespace B_BUAB_006
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100OPs2030002KUNDEDIVBK item.
+            /// </summary>
+            [RepositoryItem("e4bdb5cf-2485-4766-bcba-c512e35ea2e4")]
+            public virtual Ranorex.TitleBar TitleBar100OPs2030002KUNDEDIVBK
+            {
+                get
+                {
+                    return _titlebar100ops2030002kundedivbkInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100OPs2030002KUNDEDIVBK item info.
+            /// </summary>
+            [RepositoryItemInfo("e4bdb5cf-2485-4766-bcba-c512e35ea2e4")]
+            public virtual RepoItemInfo TitleBar100OPs2030002KUNDEDIVBKInfo
+            {
+                get
+                {
+                    return _titlebar100ops2030002kundedivbkInfo;
                 }
             }
 
@@ -1318,30 +1368,6 @@ namespace B_BUAB_006
                 get
                 {
                     return _schliessenInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TitleBar100OPs2030002KUNDEDIVBK item.
-            /// </summary>
-            [RepositoryItem("e4bdb5cf-2485-4766-bcba-c512e35ea2e4")]
-            public virtual Ranorex.TitleBar TitleBar100OPs2030002KUNDEDIVBK
-            {
-                get
-                {
-                    return _titlebar100ops2030002kundedivbkInfo.CreateAdapter<Ranorex.TitleBar>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TitleBar100OPs2030002KUNDEDIVBK item info.
-            /// </summary>
-            [RepositoryItemInfo("e4bdb5cf-2485-4766-bcba-c512e35ea2e4")]
-            public virtual RepoItemInfo TitleBar100OPs2030002KUNDEDIVBKInfo
-            {
-                get
-                {
-                    return _titlebar100ops2030002kundedivbkInfo;
                 }
             }
         }

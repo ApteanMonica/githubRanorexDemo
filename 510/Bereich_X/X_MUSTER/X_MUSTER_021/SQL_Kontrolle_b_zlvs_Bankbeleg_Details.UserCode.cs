@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace N_LISTEN_BULI_002.Recordings
+namespace X_MUSTER_021
 {
-    public partial class korrekte_Ueberleitung_511
+    public partial class SQL_Kontrolle_b_zlvs_Bankbeleg_Details
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -20,19 +20,19 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_ZAHLV_001.Recordings_SQL_Usercode
+namespace X_MUSTER_021
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
     ///The SQL_Kontrolle_b_zlvs_Bankbeleg_Details recording.
     /// </summary>
-    [TestModule("b73dbd7c-0631-44ce-86c9-28ebcb4a9100", ModuleType.Recording, 1)]
+    [TestModule("1ba98c21-a89b-4ddc-8130-47b3a1e1ec2d", ModuleType.Recording, 1)]
     public partial class SQL_Kontrolle_b_zlvs_Bankbeleg_Details : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_ZAHLV_001.B_ZAHLV_001Repository repository.
+        /// Holds an instance of the X_MUSTER_021Repository repository.
         /// </summary>
-        public static global::B_ZAHLV_001.B_ZAHLV_001Repository repo = global::B_ZAHLV_001.B_ZAHLV_001Repository.Instance;
+        public static X_MUSTER_021Repository repo = X_MUSTER_021Repository.Instance;
 
         static SQL_Kontrolle_b_zlvs_Bankbeleg_Details instance = new SQL_Kontrolle_b_zlvs_Bankbeleg_Details();
 
@@ -41,11 +41,10 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
         /// </summary>
         public SQL_Kontrolle_b_zlvs_Bankbeleg_Details()
         {
+            Programmversion = "";
             SQL_Select_B_ZLVS = "select * from b_zlvs where firm_nr ='100' and zlvs_vorschlag = '1' and busa_keybel BETWEEN '112' AND '126';";
             file_selectergebnis_b_zlvs_aktuell = "C:\\temp\\B_ZAHLV_001_B_ZLVS_aktuell.txt";
             file_selectergebnis_b_zlvs_Referenz = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_ZLVS_Referenz.txt";
-            Programmversion = "";
-            Datenbank = "";
         }
 
         /// <summary>
@@ -58,12 +57,24 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
 
 #region Variables
 
+        string _Programmversion;
+
+        /// <summary>
+        /// Gets or sets the value of variable Programmversion.
+        /// </summary>
+        [TestVariable("b29dcccd-9523-4b75-861d-68223c9d4d4a")]
+        public string Programmversion
+        {
+            get { return _Programmversion; }
+            set { _Programmversion = value; }
+        }
+
         string _SQL_Select_B_ZLVS;
 
         /// <summary>
         /// Gets or sets the value of variable SQL_Select_B_ZLVS.
         /// </summary>
-        [TestVariable("0a122bcd-58da-4679-99ef-9f53b25facc8")]
+        [TestVariable("d6b6830d-d11a-4f23-b13d-b98ca7baaa56")]
         public string SQL_Select_B_ZLVS
         {
             get { return _SQL_Select_B_ZLVS; }
@@ -75,7 +86,7 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
         /// <summary>
         /// Gets or sets the value of variable file_selectergebnis_b_zlvs_aktuell.
         /// </summary>
-        [TestVariable("a0990d32-9ba3-486a-aaf6-f2a1f930c201")]
+        [TestVariable("8185ff7b-b0e3-4ffa-b762-0affedc239d6")]
         public string file_selectergebnis_b_zlvs_aktuell
         {
             get { return _file_selectergebnis_b_zlvs_aktuell; }
@@ -87,35 +98,11 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
         /// <summary>
         /// Gets or sets the value of variable file_selectergebnis_b_zlvs_Referenz.
         /// </summary>
-        [TestVariable("c7af9926-6ec7-4ab2-b637-470a8494ebeb")]
+        [TestVariable("cb404efe-69ca-4571-932a-79d16573f1a7")]
         public string file_selectergebnis_b_zlvs_Referenz
         {
             get { return _file_selectergebnis_b_zlvs_Referenz; }
             set { _file_selectergebnis_b_zlvs_Referenz = value; }
-        }
-
-        string _Programmversion;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programmversion.
-        /// </summary>
-        [TestVariable("2e01576f-12f7-4d4d-b57d-a8d116fe8e6f")]
-        public string Programmversion
-        {
-            get { return _Programmversion; }
-            set { _Programmversion = value; }
-        }
-
-        string _Datenbank;
-
-        /// <summary>
-        /// Gets or sets the value of variable Datenbank.
-        /// </summary>
-        [TestVariable("5ae86979-941f-47de-a4c1-8e83d516664c")]
-        public string Datenbank
-        {
-            get { return _Datenbank; }
-            set { _Datenbank = value; }
         }
 
 #endregion
@@ -144,37 +131,17 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
 
             Init();
 
-            //Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadDBVersion();
-            
             Programmversion = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadProgrammVersion("RELSP");
             
-            Report.Log(ReportLevel.Info, "User", Programmversion, new RecordItemIndex(2));
-            
-            //Programmversion = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadProgrammVersion("DB");
-            
-            //Report.Log(ReportLevel.Info, "User", Programmversion, new RecordItemIndex(4));
-            
-            // aptean.cs ohne Variablen
-            try {
-                //Report.Log(ReportLevel.Info, "Section", "aptean.cs ohne Variablen", new RecordItemIndex(5));
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
-            
-            //Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement("select * from b_zlvs where firm_nr ='100' and zlvs_vorschlag = '1' and busa_keybel BETWEEN '112' AND '126';", "C:\\temp\\B_ZAHLV_001_B_ZLVS_aktuell.txt");
-            
-            //Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks("C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_ZLVS_Referenz.txt", "C:\\temp\\B_ZAHLV_001_B_ZLVS_aktuell.txt");
-            
-            // aptean.cs mit Variablen
-            try {
-                Report.Log(ReportLevel.Info, "Section", "aptean.cs mit Variablen", new RecordItemIndex(8));
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(8)); }
+            Report.Log(ReportLevel.Info, "User", Programmversion, new RecordItemIndex(1));
             
             try {
                 Ranorex.AutomationHelpers.UserCodeCollections.Aptean.SQLStatement(SQL_Select_B_ZLVS, file_selectergebnis_b_zlvs_aktuell);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             try {
                 Ranorex.AutomationHelpers.UserCodeCollections.Aptean.FileCompareEqualWithoutBreaks(file_selectergebnis_b_zlvs_Referenz, file_selectergebnis_b_zlvs_aktuell);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(10)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
         }
 
