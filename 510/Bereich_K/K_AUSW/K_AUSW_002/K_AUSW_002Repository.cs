@@ -1697,7 +1697,7 @@ namespace K_AUSW_002
                     base("TblBkAb", "/form[@controlname='tblBkAb']", parentFolder, 30000, null, true, "89b5e4e7-43d0-45f1-ba54-15b2ad73c6cf", "")
             {
                 _toolbar = new K_AUSW_002RepositoryFolders.ToolBarFolder(this);
-                _titlebar100bereichskontenabfrageInfo = new RepoItemInfo(this, "TitleBar100Bereichskontenabfrage", "titlebar[@accessiblerole='TitleBar']", "", 120000, null, "ab1a801a-199e-45fa-9fc5-db36145c6c7a");
+                _titlebar100bereichskontenabfrageInfo = new RepoItemInfo(this, "TitleBar100Bereichskontenabfrage", "titlebar[@accessiblerole='TitleBar']", "", 60000, null, "ab1a801a-199e-45fa-9fc5-db36145c6c7a");
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "b24b289e-9a8a-43a7-9780-daa91b4fbc71");
                 _colsollrow1_haupttabelleInfo = new RepoItemInfo(this, "ColSollRow1_Haupttabelle", "container[@controlname='ChildTableWindow']/*[@controlname='mainGrid']/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colSoll Row 1']", "", 30000, null, "9baa4311-9ca9-4d1d-abc8-9e627a30c741");
                 _row3_fusszeileInfo = new RepoItemInfo(this, "Row3_Fusszeile", "container[@controlname='ChildTableWindow']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']", "", 30000, null, "1a64344e-1c4c-4ec5-9e83-252c2132070b");

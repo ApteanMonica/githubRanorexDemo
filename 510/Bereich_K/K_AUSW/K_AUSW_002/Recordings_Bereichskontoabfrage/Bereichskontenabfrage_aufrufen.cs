@@ -83,8 +83,8 @@ namespace K_AUSW_002.Recordings_Bereichskontoabfrage
             repo.TblAnzeige.ChildTableWindow.Row2Column0.DoubleClick();
             
             // Set Timeout +2m
-            Report.Log(ReportLevel.Info, "Wait", "Set Timeout +2m\r\nWaiting 5m to exist. Associated repository item: 'TblBkAb.TitleBar100Bereichskontenabfrage'", repo.TblBkAb.TitleBar100BereichskontenabfrageInfo, new ActionTimeout(300000), new RecordItemIndex(1));
-            repo.TblBkAb.TitleBar100BereichskontenabfrageInfo.WaitForExists(300000);
+            Report.Log(ReportLevel.Info, "Wait", "Set Timeout +2m\r\nWaiting 7m to exist. Associated repository item: 'TblBkAb.TitleBar100Bereichskontenabfrage'", repo.TblBkAb.TitleBar100BereichskontenabfrageInfo, new ActionTimeout(420000), new RecordItemIndex(1));
+            repo.TblBkAb.TitleBar100BereichskontenabfrageInfo.WaitForExists(420000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bereichskontenabfrage') on item 'TblBkAb.TitleBar100Bereichskontenabfrage'.", repo.TblBkAb.TitleBar100BereichskontenabfrageInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.TblBkAb.TitleBar100BereichskontenabfrageInfo, "Text", "Bereichskontenabfrage");

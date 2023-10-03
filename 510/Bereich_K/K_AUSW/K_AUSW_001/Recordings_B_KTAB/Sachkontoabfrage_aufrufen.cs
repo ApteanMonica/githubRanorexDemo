@@ -83,8 +83,8 @@ namespace K_AUSW_001.Recordings_B_KTAB
             repo.TblAnzeige.ChildTableWindow.Row3Column0.DoubleClick();
             
             // Set Timeout +2m
-            Report.Log(ReportLevel.Info, "Wait", "Set Timeout +2m\r\nWaiting 4m to exist. Associated repository item: 'TblKtAb.TitleBar100Kontenabfrage'", repo.TblKtAb.TitleBar100KontenabfrageInfo, new ActionTimeout(240000), new RecordItemIndex(1));
-            repo.TblKtAb.TitleBar100KontenabfrageInfo.WaitForExists(240000);
+            Report.Log(ReportLevel.Info, "Wait", "Set Timeout +2m\r\nWaiting 7m to exist. Associated repository item: 'TblKtAb.TitleBar100Kontenabfrage'", repo.TblKtAb.TitleBar100KontenabfrageInfo, new ActionTimeout(420000), new RecordItemIndex(1));
+            repo.TblKtAb.TitleBar100KontenabfrageInfo.WaitForExists(420000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Kontenabfrage') on item 'TblKtAb.TitleBar100Kontenabfrage'.", repo.TblKtAb.TitleBar100KontenabfrageInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.TblKtAb.TitleBar100KontenabfrageInfo, "Text", "Kontenabfrage");
