@@ -31,18 +31,22 @@ mode="Global">
 		<var
 		id="9508b03c-8d84-4153-9dff-9cec08daacdf"
 		name="Form_Name_NEU_VORJAHR">
+			UVA-Österreich 2022
 		</var>
 		<var
 		id="5dc4c520-b303-4919-ad7a-6d26e181663d"
 		name="Form_Code_NEU_VORJAHR">
+			A22
 		</var>
 		<var
 		id="36996c1e-725c-4912-9a0b-4c0e6d4a7e5f"
 		name="Form_Name_A20">
+			UVA-Österreich 2020
 		</var>
 		<var
 		id="9be3f5b7-4162-4e17-a869-e97c74e4d776"
 		name="Form_Code_A20">
+			A20
 		</var>
 	</variables>
 	<recorditems>
@@ -7429,6 +7433,15 @@ JpCMjod7Utx/rrX/AK6n/wBAagCeiiigD//Z
 			<AttributeValue>
 			</AttributeValue>
 		</setvaluerecorditem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="Tab"
@@ -12903,6 +12916,15 @@ JpCMjod7Utx/rrX/AK6n/wBAagCeiiigD//Z
 				</robustPath>
 			</info>
 		</setvaluerecorditem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="Tab"
@@ -15630,6 +15652,32 @@ JpCMjod7Utx/rrX/AK6n/wBAagCeiiigD//Z
 				</robustPath>
 			</info>
 		</keyitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="43b6bd28-afa5-49af-b435-291bc022faf5"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="97017848-967b-4930-bac9-4146d03a0234"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmUVAK']/container[@controlname='ClientArea']/?/?/text[@accessiblerole='Text']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"

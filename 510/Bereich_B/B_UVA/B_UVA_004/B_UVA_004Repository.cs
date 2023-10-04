@@ -109,7 +109,7 @@ namespace B_UVA_004
             set { _Form_Name_NEU = value; }
         }
 
-        string _Form_Name_NEU_VORJAHR = "";
+        string _Form_Name_NEU_VORJAHR = "UVA-Österreich 2022";
 
         /// <summary>
         /// Gets or sets the value of variable Form_Name_NEU_VORJAHR.
