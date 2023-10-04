@@ -103,31 +103,34 @@ namespace V_AUF_007.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.PbSpec2Artikel' at Center.", repo.FrmAufk.PbSpec2ArtikelInfo, new RecordItemIndex(7));
             repo.FrmAufk.PbSpec2Artikel.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100017') on item 'FrmArt.DfArtNr'.", repo.FrmArt.DfArtNrInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmArt.TitleBar100ArtikelstammVerwalten'", repo.FrmArt.TitleBar100ArtikelstammVerwaltenInfo, new ActionTimeout(60000), new RecordItemIndex(8));
+            repo.FrmArt.TitleBar100ArtikelstammVerwaltenInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100017') on item 'FrmArt.DfArtNr'.", repo.FrmArt.DfArtNrInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.FrmArt.DfArtNrInfo, "Text", "100017");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmArt.Schliessen' at Center.", repo.FrmArt.SchliessenInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmArt.Schliessen' at Center.", repo.FrmArt.SchliessenInfo, new RecordItemIndex(10));
             repo.FrmArt.Schliessen.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'FrmArt.TitleBar100ArtikelstammVerwalten'.", repo.FrmArt.TitleBar100ArtikelstammVerwaltenInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'FrmArt.TitleBar100ArtikelstammVerwalten'.", repo.FrmArt.TitleBar100ArtikelstammVerwaltenInfo, new RecordItemIndex(11));
             Validate.NotExists(repo.FrmArt.TitleBar100ArtikelstammVerwaltenInfo);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.TpPos.PbLagerPreisInfo' at Center.", repo.FrmAufk.TpPos.PbLagerPreisInfoInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.TpPos.PbLagerPreisInfo' at Center.", repo.FrmAufk.TpPos.PbLagerPreisInfoInfo, new RecordItemIndex(12));
             repo.FrmAufk.TpPos.PbLagerPreisInfo.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'MditblPreise.TitleBar100PreisLagerInfo'.", repo.MditblPreise.TitleBar100PreisLagerInfoInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'MditblPreise.TitleBar100PreisLagerInfo'.", repo.MditblPreise.TitleBar100PreisLagerInfoInfo, new RecordItemIndex(13));
             Validate.Exists(repo.MditblPreise.TitleBar100PreisLagerInfoInfo);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100017') on item 'MditblPreise.Text'.", repo.MditblPreise.TextInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100017') on item 'MditblPreise.Text'.", repo.MditblPreise.TextInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.MditblPreise.TextInfo, "Text", "100017");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'MditblPreise.ColArlgBedarfRow1'.", repo.MditblPreise.ColArlgBedarfRow1Info, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'MditblPreise.ColArlgBedarfRow1'.", repo.MditblPreise.ColArlgBedarfRow1Info, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.MditblPreise.ColArlgBedarfRow1Info, "Text", "3");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MditblPreise.Schliessen' at Center.", repo.MditblPreise.SchliessenInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MditblPreise.Schliessen' at Center.", repo.MditblPreise.SchliessenInfo, new RecordItemIndex(16));
             repo.MditblPreise.Schliessen.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'MditblPreise.TitleBar100PreisLagerInfo'.", repo.MditblPreise.TitleBar100PreisLagerInfoInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'MditblPreise.TitleBar100PreisLagerInfo'.", repo.MditblPreise.TitleBar100PreisLagerInfoInfo, new RecordItemIndex(17));
             Validate.NotExists(repo.MditblPreise.TitleBar100PreisLagerInfoInfo);
             
         }
