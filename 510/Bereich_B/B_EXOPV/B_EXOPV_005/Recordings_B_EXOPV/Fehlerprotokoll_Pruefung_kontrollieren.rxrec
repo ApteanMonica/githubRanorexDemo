@@ -86,11 +86,11 @@ mode="Global">
 		</validationitem>
 		<validationitem
 		action="AttributeContains"
-		enabled="True"
+		enabled="False"
 		optional="True"
 		searchpropertyid="8f5f899f-4839-4e02-aeed-b602cfa9c414">
 			<comment>
-				gesamter Textblock mit allen Belegnummern
+				Zeilen-/Beleg-Reihenfolge wechselt - deshalb Validerung gesamter Textblock deaktiviert (Textblock mit allen Belegnummern)
 			</comment>
 			<bindings>
 			</bindings>
@@ -113,11 +113,11 @@ Exop: 0	Beleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle 
 Exop: 0	Beleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 34, 
 Exop: 30	Beleg: ER04_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 32
 Exop: 32	Beleg: ER06_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30
-Exop: 28	Beleg: ER01_B_EXOPV_005: Doppelte Belegnummer! Dieser Satz wird mit Status &gt;F&lt; als Fehler in der Schnittstelle gespeichert!
-Exop: 28	Beleg: ER01_B_EXOPV_005: Doppelte Fremdbelegnummer: FB01_B_EXOPV_005! Dieser Satz wird mit Status &gt;F&lt; als Fehler in der Schnittstelle gespeichert!
-Exop: 29	Beleg: ER03_B_EXOPV_005: Doppelte Fremdbelegnummer: FB02_B_EXOPV_005! Dieser Satz wird mit Status &gt;F&lt; als Fehler in der Schnittstelle gespeichert!
-Exop: 34	Beleg: ER03_B_EXOPV_005: Doppelte Belegnummer! Dieser Satz wird mit Status &gt;F&lt; als Fehler in der Schnittstelle gespeichert!
-Exop: 34	Beleg: ER03_B_EXOPV_005: Doppelte Fremdbelegnummer: FB03_B_EXOPV_005! Dieser Satz wird mit Status &gt;F&lt; als Fehler in der Schnittstelle gespeichert!
+Exop: 28	Beleg: ER01_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
+Exop: 28	Beleg: ER01_B_EXOPV_005: Fremdbelegnr FB01_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
+Exop: 29	Beleg: ER03_B_EXOPV_005: Fremdbelegnr FB02_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
+Exop: 34	Beleg: ER03_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
+Exop: 34	Beleg: ER03_B_EXOPV_005: Fremdbelegnr FB03_B_EXOPV_005: Doppelte Belegnummer: Status = (F)ehler!
 			</matchvalue>
 		</validationitem>
 		<validationitem
