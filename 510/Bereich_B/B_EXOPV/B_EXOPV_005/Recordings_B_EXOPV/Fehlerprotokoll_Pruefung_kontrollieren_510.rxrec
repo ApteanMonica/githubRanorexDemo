@@ -86,11 +86,11 @@ mode="Global">
 		</validationitem>
 		<validationitem
 		action="AttributeContains"
-		enabled="True"
+		enabled="False"
 		optional="True"
 		searchpropertyid="030b0d68-1f6a-43a0-9da5-d854ae5ee9aa">
 			<comment>
-				gesamter Textblock mit allen Belegen
+				Zeilen-/Beleg-Reihenfolge wechselt - deshalb Validerung gesamter Textblock deaktiviert (Textblock mit allen Belegnummern)
 			</comment>
 			<bindings>
 			</bindings>
@@ -126,6 +126,7 @@ Exop: 34	Beleg: ER03_B_EXOPV_005: Fremdbelegnr FB03_B_EXOPV_005: Doppelte Belegn
 		optional="True"
 		searchpropertyid="770ac7d7-d78a-4070-b5d0-0a5636728756">
 			<comment>
+				fehlt in 510
 			</comment>
 			<bindings>
 			</bindings>
