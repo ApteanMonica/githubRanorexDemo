@@ -36,6 +36,7 @@ namespace K_AUSW_002
         K_AUSW_002RepositoryFolders.DlgListBoxAppFolder _dlglistbox;
         K_AUSW_002RepositoryFolders.FrmProgressAppFolder _frmprogress;
         K_AUSW_002RepositoryFolders.Form100AuswahllisteKonditionenAppFolder _form100auswahllistekonditionen;
+        K_AUSW_002RepositoryFolders.WSPETAppFolder _wspet;
 
         /// <summary>
         /// Gets the singleton class instance representing the K_AUSW_002Repository element repository.
@@ -61,6 +62,7 @@ namespace K_AUSW_002
             _dlglistbox = new K_AUSW_002RepositoryFolders.DlgListBoxAppFolder(this);
             _frmprogress = new K_AUSW_002RepositoryFolders.FrmProgressAppFolder(this);
             _form100auswahllistekonditionen = new K_AUSW_002RepositoryFolders.Form100AuswahllisteKonditionenAppFolder(this);
+            _wspet = new K_AUSW_002RepositoryFolders.WSPETAppFolder(this);
         }
 
 #region Variables
@@ -170,6 +172,15 @@ namespace K_AUSW_002
         public virtual K_AUSW_002RepositoryFolders.Form100AuswahllisteKonditionenAppFolder Form100AuswahllisteKonditionen
         {
             get { return _form100auswahllistekonditionen; }
+        }
+
+        /// <summary>
+        /// The WSPET folder.
+        /// </summary>
+        [RepositoryFolder("dac7dc7e-8e82-41b5-bf3e-cfff53600921")]
+        public virtual K_AUSW_002RepositoryFolders.WSPETAppFolder WSPET
+        {
+            get { return _wspet; }
         }
     }
 
@@ -2138,9 +2149,12 @@ namespace K_AUSW_002
         public partial class DlgListBoxAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _titlebar100auswahllistekonditionenInfo;
-            RepoItemInfo _row1column0Info;
-            RepoItemInfo _row6column0Info;
             RepoItemInfo _pbokInfo;
+            RepoItemInfo _schliessenInfo;
+            RepoItemInfo _row1column0Info;
+            RepoItemInfo _celltmpcols2row1Info;
+            RepoItemInfo _row6column0Info;
+            RepoItemInfo _celltmpcols2row6Info;
 
             /// <summary>
             /// Creates a new DlgListBox  folder.
@@ -2149,9 +2163,12 @@ namespace K_AUSW_002
                     base("DlgListBox", "/form[@controlname='dlgListBox']", parentFolder, 30000, null, true, "52ce6758-2358-4e73-87f6-48fd1e1daa7b", "")
             {
                 _titlebar100auswahllistekonditionenInfo = new RepoItemInfo(this, "TitleBar100AuswahllisteKonditionen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "83b1904d-4ad1-452a-b1b3-9390d8c5a998");
-                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "container[@controlname='panelAuswahl']/container[@controlname='tblAuswahl']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "5c37d1fa-29bb-4f2e-969c-6bb5de5cd9ef");
-                _row6column0Info = new RepoItemInfo(this, "Row6Column0", "container[@controlname='panelAuswahl']/container[@controlname='tblAuswahl']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 6']/cell[@accessiblename='Row 6 Column 0']", "", 30000, null, "32133e6e-13c1-41c4-8e25-c40a61fb3963");
                 _pbokInfo = new RepoItemInfo(this, "PbOk", "container[@controlname='panelButtons']/button[@controlname='pbOk']", "", 30000, null, "096416d4-0b3d-42c2-8c8a-273f463b40cf");
+                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "32d5e765-5909-4c69-8e82-c7b67f75dc96");
+                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "container[@controlname='panelAuswahl']/container[@controlname='tblAuswahl']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "5c37d1fa-29bb-4f2e-969c-6bb5de5cd9ef");
+                _celltmpcols2row1Info = new RepoItemInfo(this, "CellTmpColS2Row1", "container[@controlname='panelAuswahl']/container[@controlname='tblAuswahl']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='__tmp__colS2 Row 1']", "", 30000, null, "ab54dd59-3c88-4d3d-93e1-972f79358019");
+                _row6column0Info = new RepoItemInfo(this, "Row6Column0", "container[@controlname='panelAuswahl']/container[@controlname='tblAuswahl']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 6']/cell[@accessiblename='Row 6 Column 0']", "", 30000, null, "32133e6e-13c1-41c4-8e25-c40a61fb3963");
+                _celltmpcols2row6Info = new RepoItemInfo(this, "CellTmpColS2Row6", "container[@controlname='panelAuswahl']/container[@controlname='tblAuswahl']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 6']/cell[@accessiblename='__tmp__colS2 Row 6']", "", 30000, null, "195b583f-c4a0-4e9d-912c-ffe578acf049");
             }
 
             /// <summary>
@@ -2203,6 +2220,54 @@ namespace K_AUSW_002
             }
 
             /// <summary>
+            /// The PbOk item.
+            /// </summary>
+            [RepositoryItem("096416d4-0b3d-42c2-8c8a-273f463b40cf")]
+            public virtual Ranorex.Button PbOk
+            {
+                get
+                {
+                    return _pbokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbOk item info.
+            /// </summary>
+            [RepositoryItemInfo("096416d4-0b3d-42c2-8c8a-273f463b40cf")]
+            public virtual RepoItemInfo PbOkInfo
+            {
+                get
+                {
+                    return _pbokInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item.
+            /// </summary>
+            [RepositoryItem("32d5e765-5909-4c69-8e82-c7b67f75dc96")]
+            public virtual Ranorex.Button Schliessen
+            {
+                get
+                {
+                    return _schliessenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item info.
+            /// </summary>
+            [RepositoryItemInfo("32d5e765-5909-4c69-8e82-c7b67f75dc96")]
+            public virtual RepoItemInfo SchliessenInfo
+            {
+                get
+                {
+                    return _schliessenInfo;
+                }
+            }
+
+            /// <summary>
             /// The Row1Column0 item.
             /// </summary>
             [RepositoryItem("5c37d1fa-29bb-4f2e-969c-6bb5de5cd9ef")]
@@ -2223,6 +2288,30 @@ namespace K_AUSW_002
                 get
                 {
                     return _row1column0Info;
+                }
+            }
+
+            /// <summary>
+            /// The CellTmpColS2Row1 item.
+            /// </summary>
+            [RepositoryItem("ab54dd59-3c88-4d3d-93e1-972f79358019")]
+            public virtual Ranorex.Cell CellTmpColS2Row1
+            {
+                get
+                {
+                    return _celltmpcols2row1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellTmpColS2Row1 item info.
+            /// </summary>
+            [RepositoryItemInfo("ab54dd59-3c88-4d3d-93e1-972f79358019")]
+            public virtual RepoItemInfo CellTmpColS2Row1Info
+            {
+                get
+                {
+                    return _celltmpcols2row1Info;
                 }
             }
 
@@ -2251,26 +2340,26 @@ namespace K_AUSW_002
             }
 
             /// <summary>
-            /// The PbOk item.
+            /// The CellTmpColS2Row6 item.
             /// </summary>
-            [RepositoryItem("096416d4-0b3d-42c2-8c8a-273f463b40cf")]
-            public virtual Ranorex.Button PbOk
+            [RepositoryItem("195b583f-c4a0-4e9d-912c-ffe578acf049")]
+            public virtual Ranorex.Cell CellTmpColS2Row6
             {
                 get
                 {
-                    return _pbokInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _celltmpcols2row6Info.CreateAdapter<Ranorex.Cell>(true);
                 }
             }
 
             /// <summary>
-            /// The PbOk item info.
+            /// The CellTmpColS2Row6 item info.
             /// </summary>
-            [RepositoryItemInfo("096416d4-0b3d-42c2-8c8a-273f463b40cf")]
-            public virtual RepoItemInfo PbOkInfo
+            [RepositoryItemInfo("195b583f-c4a0-4e9d-912c-ffe578acf049")]
+            public virtual RepoItemInfo CellTmpColS2Row6Info
             {
                 get
                 {
-                    return _pbokInfo;
+                    return _celltmpcols2row6Info;
                 }
             }
         }
@@ -2323,7 +2412,6 @@ namespace K_AUSW_002
         {
             RepoItemInfo _titlebar100auswahllistekonditionenInfo;
             RepoItemInfo _windowsforms10buttonapp02804c64r6aInfo;
-            RepoItemInfo _schliessenInfo;
 
             /// <summary>
             /// Creates a new Form100AuswahllisteKonditionen  folder.
@@ -2333,7 +2421,6 @@ namespace K_AUSW_002
             {
                 _titlebar100auswahllistekonditionenInfo = new RepoItemInfo(this, "TitleBar100AuswahllisteKonditionen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "5eba6770-e481-4f32-b48e-e740475ebfb6");
                 _windowsforms10buttonapp02804c64r6aInfo = new RepoItemInfo(this, "WindowsForms10BUTTONApp02804c64R6A", "element[@instance='1']/button[@class='WindowsForms10.BUTTON.app.0.2804c64_r6_ad1' and @instance='0']", "", 30000, null, "22342ec4-3342-428c-83ea-401bbd3a0c60");
-                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "32d5e765-5909-4c69-8e82-c7b67f75dc96");
             }
 
             /// <summary>
@@ -2407,28 +2494,70 @@ namespace K_AUSW_002
                     return _windowsforms10buttonapp02804c64r6aInfo;
                 }
             }
+        }
+
+        /// <summary>
+        /// The WSPETAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("dac7dc7e-8e82-41b5-bf3e-cfff53600921")]
+        public partial class WSPETAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _wspetInfo;
 
             /// <summary>
-            /// The Schliessen item.
+            /// Creates a new WSPET  folder.
             /// </summary>
-            [RepositoryItem("32d5e765-5909-4c69-8e82-c7b67f75dc96")]
-            public virtual Ranorex.Button Schliessen
+            public WSPETAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("WSPET", "", parentFolder, 30000, null, true, "dac7dc7e-8e82-41b5-bf3e-cfff53600921", "")
+            {
+                _wspetInfo = new RepoItemInfo(this, "WSPET", "", "", 30000, null, "c38c353e-8237-48d0-9875-5a2ad27bcb70");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("dac7dc7e-8e82-41b5-bf3e-cfff53600921")]
+            public virtual Ranorex.Host Self
             {
                 get
                 {
-                    return _schliessenInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _selfInfo.CreateAdapter<Ranorex.Host>(true);
                 }
             }
 
             /// <summary>
-            /// The Schliessen item info.
+            /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("32d5e765-5909-4c69-8e82-c7b67f75dc96")]
-            public virtual RepoItemInfo SchliessenInfo
+            [RepositoryItemInfo("dac7dc7e-8e82-41b5-bf3e-cfff53600921")]
+            public virtual RepoItemInfo SelfInfo
             {
                 get
                 {
-                    return _schliessenInfo;
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WSPET item.
+            /// </summary>
+            [RepositoryItem("c38c353e-8237-48d0-9875-5a2ad27bcb70")]
+            public virtual Ranorex.Host WSPET
+            {
+                get
+                {
+                    return _wspetInfo.CreateAdapter<Ranorex.Host>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WSPET item info.
+            /// </summary>
+            [RepositoryItemInfo("c38c353e-8237-48d0-9875-5a2ad27bcb70")]
+            public virtual RepoItemInfo WSPETInfo
+            {
+                get
+                {
+                    return _wspetInfo;
                 }
             }
         }

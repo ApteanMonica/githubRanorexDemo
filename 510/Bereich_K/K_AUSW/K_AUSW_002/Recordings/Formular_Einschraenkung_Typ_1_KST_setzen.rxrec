@@ -157,6 +157,15 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Auswahlliste Konditionen
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
@@ -216,56 +225,20 @@ mode="Global">
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
-		<keysequenceitem
-		KeySequence="1"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		presstime="100ms"
-		searchpropertyid="a510a1ae-d047-465c-9690-cf1a41c8b85c">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keysequenceitem>
-		<explicitdelayitem
-		duration="2000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
-		<keyitem
-		action="Press"
-		data="Return"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		presstime="100ms"
-		scancode="0"
-		searchpropertyid="ed62b642-8cb7-4c2e-b9dd-a0f091a3e419"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="c4b8c3f2-5d52-4276-9038-0ec09c90646a">
+		searchpropertyid="b2f77211-c6da-4b58-89d6-d7bdcb3aa5e9">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="35fceb6e-6222-4d71-9ef1-1c4a9c860419"
+			id="195b583f-c4a0-4e9d-912c-ffe578acf049"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='splitContainer']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='SubForm_tblAtbz']/form[@controlname='tblAtbz']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colTyp Row 1']
+					/form[@controlname='dlgListBox']/container[@controlname='panelAuswahl']/container[@controlname='tblAuswahl']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 6']/cell[@accessiblename='__tmp__colS2 Row 6']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -277,193 +250,101 @@ mode="Global">
 				1
 			</matchvalue>
 		</validationitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		presstime="100ms"
-		scancode="0"
-		searchpropertyid="f9e2f989-1d70-4812-aacb-19ab2e05bfc1"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="c4b8c3f2-5d52-4276-9038-0ec09c90646a">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="35fceb6e-6222-4d71-9ef1-1c4a9c860419"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='splitContainer']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='SubForm_tblAtbz']/form[@controlname='tblAtbz']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colTyp Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				1
-			</matchvalue>
-		</validationitem>
-		<separatoritem
-		enabled="True"
-		optional="False">
-			<comment>
-				neu Ende
-			</comment>
-			<bindings>
-			</bindings>
-		</separatoritem>
-		<separatoritem
-		enabled="True"
-		optional="False">
-			<comment>
-				alt Beginn
-			</comment>
-			<bindings>
-			</bindings>
-		</separatoritem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="False"
-		loc="CenterLeft"
+		enabled="True"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="b885f7b7-db53-4d24-ba03-8df9cf6261c7"
+		searchpropertyid="d6882e4c-98f4-40f5-ae2b-2536b4156bbb"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
 			<comment>
-				Center Left um nicht auf ... zu klicken
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="f31c4546-9ef2-4b13-9fb4-a93a88f95163"
+			id="32133e6e-13c1-41c4-8e25-c40a61fb3963"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='splitContainer']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='SubForm_tblAtbz']/form[@controlname='tblAtbz']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAusa_cd Row 1']
+					/form[@controlname='dlgListBox']/container[@controlname='panelAuswahl']/container[@controlname='tblAuswahl']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 6']/cell[@accessiblename='Row 6 Column 0']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="2000ms"
-		enabled="False"
+		duration="1ms"
+		enabled="True"
 		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="100ms"
-		enabled="False"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		presstime="100ms"
-		scancode="0"
-		searchpropertyid="ac300b78-a91a-48fd-9da9-0ddd807608a6"
-		setModifiers="True">
+		searchpropertyid="aca72625-d956-431c-9856-c51709135fdb"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</keyitem>
-		<explicitdelayitem
-		duration="1000ms"
-		enabled="False"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
-		<keyitem
-		action="Press"
-		data="Delete"
-		duration="100ms"
-		enabled="False"
-		optional="False"
-		presstime="100ms"
-		scancode="0"
-		searchpropertyid="d161348f-6f43-4836-bdb6-f5f6d7b02a01"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
-		<explicitdelayitem
-		duration="1000ms"
-		enabled="False"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
-		<keysequenceitem
-		KeySequence="1"
-		duration="100ms"
-		enabled="False"
-		optional="False"
-		presstime="100ms"
-		searchpropertyid="f872fc3a-3a47-4663-968d-24c69966a6b2">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keysequenceitem>
-		<explicitdelayitem
-		duration="1000ms"
-		enabled="False"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="100ms"
-		enabled="False"
-		optional="False"
-		presstime="100ms"
-		scancode="0"
-		searchpropertyid="ac300b78-a91a-48fd-9da9-0ddd807608a6"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
+			<info
+			id="096416d4-0b3d-42c2-8c8a-273f463b40cf"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgListBox']/container[@controlname='panelButtons']/button[@controlname='pbOk']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 		<separatoritem
 		enabled="True"
 		optional="False">
 			<comment>
-				alt Ende
+				zurück zum Formular Kostenstellenauswahl ändern
 			</comment>
 			<bindings>
 			</bindings>
 		</separatoritem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="c4b8c3f2-5d52-4276-9038-0ec09c90646a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="35fceb6e-6222-4d71-9ef1-1c4a9c860419"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='splitContainer']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='SubForm_tblAtbz']/form[@controlname='tblAtbz']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colTyp Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				1
+			</matchvalue>
+		</validationitem>
 		<keyitem
 		action="Press"
 		data="Tab"
@@ -658,6 +539,15 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Formularauswahl prüfen
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
