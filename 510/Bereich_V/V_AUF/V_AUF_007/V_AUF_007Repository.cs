@@ -2175,7 +2175,7 @@ namespace V_AUF_007
                     base("FrmArt", "/form[@controlname='frmArt']", parentFolder, 30000, null, true, "1a418551-0036-4798-9346-a59066fae421", "")
             {
                 _titlebar100artikelstammverwaltenInfo = new RepoItemInfo(this, "TitleBar100ArtikelstammVerwalten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "b248bb3b-1c06-423c-9b1f-180f2d48504e");
-                _dfartnrInfo = new RepoItemInfo(this, "DfArtNr", "?/?/text[@controlname='dfArt_nr']", "", 30000, null, "214ca63a-d88a-45eb-9d0f-276b7aca42bd");
+                _dfartnrInfo = new RepoItemInfo(this, "DfArtNr", "container[@controlname='ClientArea']/text[@controlname='dfArt_nr']/text[@accessiblename='Artikel-Nr.']", "", 30000, null, "214ca63a-d88a-45eb-9d0f-276b7aca42bd");
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "?/?/button[@accessiblename='Schließen']", "", 30000, null, "d5ebdc09-21f7-4d82-b2b3-a14065145648");
             }
 

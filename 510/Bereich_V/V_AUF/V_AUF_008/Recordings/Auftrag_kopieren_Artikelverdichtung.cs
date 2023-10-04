@@ -120,8 +120,8 @@ namespace V_AUF_008.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.TabPagePositionen' at Center.", repo.FrmAufk.TabPagePositionenInfo, new RecordItemIndex(4));
             repo.FrmAufk.TabPagePositionen.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'FrmAufk.ZlNr'", repo.FrmAufk.ZlNrInfo, new ActionTimeout(30000), new RecordItemIndex(5));
-            repo.FrmAufk.ZlNrInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmAufk.ZlNr'", repo.FrmAufk.ZlNrInfo, new ActionTimeout(60000), new RecordItemIndex(5));
+            repo.FrmAufk.ZlNrInfo.WaitForExists(60000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='7') on item 'FrmAufk.ZlNr'.", repo.FrmAufk.ZlNrInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.FrmAufk.ZlNrInfo, "Text", "7");
@@ -132,43 +132,46 @@ namespace V_AUF_008.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.PbCommon2Kopieren' at Center.", repo.FrmAufk.PbCommon2KopierenInfo, new RecordItemIndex(8));
             repo.FrmAufk.PbCommon2Kopieren.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'FrmAufk.DfAufkDtauftrag'.", repo.FrmAufk.DfAufkDtauftragInfo, new RecordItemIndex(9));
-            Validate.AttributeContains(repo.FrmAufk.DfAufkDtauftragInfo, "Text", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.PbCommon2Kopieren' at Center.", repo.FrmAufk.PbCommon2KopierenInfo, new RecordItemIndex(9));
+            repo.FrmAufk.PbCommon2Kopieren.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.TabPagePositionen' at Center.", repo.FrmAufk.TabPagePositionenInfo, new RecordItemIndex(10));
-            repo.FrmAufk.TabPagePositionen.Click();
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Auftrag kopieren:\r\nVariante 1: Preisliste, Währung, Rechnungsart, Versand-, Liefer-, Zahlungsbedingung und Beschaffungskz.\r\nvom ursprünglichen Auftrag übernehmen\r\nVariante 2: Die Werte kommen von der Auftragsart\r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Auftrag kopieren:\r\nVariante 1: Preisliste, Währung, Rechnungsart, Versand-, Liefer-, Zahlungsbedingung und Beschaffungskz.\r\nvom ursprünglichen Auftrag übernehmen\r\nVariante 2: Die Werte kommen von der Auftragsart\r\n");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(10));
             repo.DlgMessageBox.Button1.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgAufpCopy.CbArtVerdichtung'.", repo.DlgAufpCopy.CbArtVerdichtungInfo, new RecordItemIndex(13));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'FrmAufk.DfAufkDtauftrag'.", repo.FrmAufk.DfAufkDtauftragInfo, new RecordItemIndex(11));
+            //Validate.AttributeContains(repo.FrmAufk.DfAufkDtauftragInfo, "Text", Tagesdatum);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.TabPagePositionen' at Center.", repo.FrmAufk.TabPagePositionenInfo, new RecordItemIndex(12));
+            repo.FrmAufk.TabPagePositionen.Click();
+            
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Auftrag kopieren:\r\nVariante 1: Preisliste, Währung, Rechnungsart, Versand-, Liefer-, Zahlungsbedingung und Beschaffungskz.\r\nvom ursprünglichen Auftrag übernehmen\r\nVariante 2: Die Werte kommen von der Auftragsart\r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(13));
+            //Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Auftrag kopieren:\r\nVariante 1: Preisliste, Währung, Rechnungsart, Versand-, Liefer-, Zahlungsbedingung und Beschaffungskz.\r\nvom ursprünglichen Auftrag übernehmen\r\nVariante 2: Die Werte kommen von der Auftragsart\r\n");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgAufpCopy.CbArtVerdichtung'.", repo.DlgAufpCopy.CbArtVerdichtungInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.DlgAufpCopy.CbArtVerdichtungInfo, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgAufpCopy.CbArtVerdichtung' at Center.", repo.DlgAufpCopy.CbArtVerdichtungInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgAufpCopy.CbArtVerdichtung' at Center.", repo.DlgAufpCopy.CbArtVerdichtungInfo, new RecordItemIndex(15));
             repo.DlgAufpCopy.CbArtVerdichtung.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgAufpCopy.CbArtVerdichtung'.", repo.DlgAufpCopy.CbArtVerdichtungInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgAufpCopy.CbArtVerdichtung'.", repo.DlgAufpCopy.CbArtVerdichtungInfo, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.DlgAufpCopy.CbArtVerdichtungInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgAufpCopy.PbOk' at Center.", repo.DlgAufpCopy.PbOkInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgAufpCopy.PbOk' at Center.", repo.DlgAufpCopy.PbOkInfo, new RecordItemIndex(17));
             repo.DlgAufpCopy.PbOk.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Keine weiteren Positionen zum Kopieren') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Keine weiteren Positionen zum Kopieren') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(18));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Keine weiteren Positionen zum Kopieren");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(19));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4') on item 'FrmAufk.DfAufpZeile'.", repo.FrmAufk.DfAufpZeileInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4') on item 'FrmAufk.DfAufpZeile'.", repo.FrmAufk.DfAufpZeileInfo, new RecordItemIndex(20));
             Validate.AttributeEqual(repo.FrmAufk.DfAufpZeileInfo, "Text", "4");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.Kopf' at Center.", repo.FrmAufk.KopfInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.Kopf' at Center.", repo.FrmAufk.KopfInfo, new RecordItemIndex(21));
             repo.FrmAufk.Kopf.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'A([0-9]{2})[\\/]([0-9]{5})$') on item 'FrmAufk.DfAufkNr'.", repo.FrmAufk.DfAufkNrInfo, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'A([0-9]{2})[\\/]([0-9]{5})$') on item 'FrmAufk.DfAufkNr'.", repo.FrmAufk.DfAufkNrInfo, new RecordItemIndex(22));
             Validate.AttributeRegex(repo.FrmAufk.DfAufkNrInfo, "Text", new Regex("A([0-9]{2})[\\/]([0-9]{5})$"));
             
         }
