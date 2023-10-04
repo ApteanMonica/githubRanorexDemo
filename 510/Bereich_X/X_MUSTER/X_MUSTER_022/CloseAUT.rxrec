@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="fa450a81-9014-465d-8ba0-de72b4d53860"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="X_MUSTER_022">
+	</codegen>
+	<variables>
+		<var
+		id="d1eb5415-49a5-4455-b341-2064d6cc22b9"
+		name="CloseAutProcessIDVar">
+			-1
+		</var>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="500ms"
+		method="CloseWindowByProcessID"
+		optional="False"
+		searchpropertyid="b8350864-d3c3-4530-974a-df30bb2eb759">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ProcessID"
+				variable="CloseAutProcessIDVar">
+				</binding>
+			</bindings>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="7f942497-86e7-46ee-9843-0b3da7c942be"
+	name="X_MUSTER_022Repository"
+	relativepath="X_MUSTER_022Repository.rxrep">
+		<codegen
+		classname="X_MUSTER_022Repository"
+		namespace="X_MUSTER_022">
+		</codegen>
+		<rootfolder
+		id="5aee14a7-b185-4183-9b02-8f7d52d510d9"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

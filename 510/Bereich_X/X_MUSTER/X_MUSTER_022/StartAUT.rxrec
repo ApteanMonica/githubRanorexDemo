@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d98a27d2-eb6e-4925-a9f3-b69621a52dba"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartAUT"
+	namespace="X_MUSTER_022">
+	</codegen>
+	<variables>
+		<var
+		id="33d1c888-b9b8-4cf9-8573-352303dd5718"
+		name="StartAutProcessIDVar">
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="StartAutProcessIDVar">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Program Files\Google\Chrome\Application\chrome.exe
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+	</recorditems>
+	<repository
+	id="7f942497-86e7-46ee-9843-0b3da7c942be"
+	name="X_MUSTER_022Repository"
+	relativepath="X_MUSTER_022Repository.rxrep">
+		<codegen
+		classname="X_MUSTER_022Repository"
+		namespace="X_MUSTER_022">
+		</codegen>
+		<rootfolder
+		id="5aee14a7-b185-4183-9b02-8f7d52d510d9"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
