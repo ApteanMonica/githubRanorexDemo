@@ -24,68 +24,42 @@ namespace B_BUAB_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The Tagesdatum_ermitteln recording.
     /// </summary>
-    [TestModule("a2749891-95fa-4292-b021-786add4593fa", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    [TestModule("750e228b-63b1-4a46-8d94-88d65938ef40", ModuleType.Recording, 1)]
+    public partial class Tagesdatum_ermitteln : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BUAB_002.B_BUAB_002Repository repository.
         /// </summary>
         public static global::B_BUAB_002.B_BUAB_002Repository repo = global::B_BUAB_002.B_BUAB_002Repository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static Tagesdatum_ermitteln instance = new Tagesdatum_ermitteln();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public Tagesdatum_ermitteln()
         {
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm = "B_BUAB";
             Tagesdatum = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static Tagesdatum_ermitteln Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Startfile;
-
-        /// <summary>
-        /// Gets or sets the value of variable Startfile.
-        /// </summary>
-        [TestVariable("620852cc-ffdb-40de-b681-36515095e859")]
-        public string Startfile
-        {
-            get { return _Startfile; }
-            set { _Startfile = value; }
-        }
-
-        string _Programm;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm.
-        /// </summary>
-        [TestVariable("a3f86488-96a5-497a-929a-167a0ecf7a21")]
-        public string Programm
-        {
-            get { return _Programm; }
-            set { _Programm = value; }
-        }
-
         string _Tagesdatum;
 
         /// <summary>
         /// Gets or sets the value of variable Tagesdatum.
         /// </summary>
-        [TestVariable("f5317fa0-75fd-4c85-a202-48bc384c931d")]
+        [TestVariable("e3868bca-17b2-4af4-97d1-18a5fea6ee0b")]
         public string Tagesdatum
         {
             get { return _Tagesdatum; }
@@ -118,14 +92,7 @@ namespace B_BUAB_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm, "", false);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblB.TitleBar100BuchungenAnzeigen'", repo.TblB.TitleBar100BuchungenAnzeigenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.TblB.TitleBar100BuchungenAnzeigenInfo.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Buchungen anzeigen') on item 'TblB.TitleBar100BuchungenAnzeigen'.", repo.TblB.TitleBar100BuchungenAnzeigenInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.TblB.TitleBar100BuchungenAnzeigenInfo, "Text", "Buchungen anzeigen");
+            Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("dd.MM.yyyy");
             
         }
 
