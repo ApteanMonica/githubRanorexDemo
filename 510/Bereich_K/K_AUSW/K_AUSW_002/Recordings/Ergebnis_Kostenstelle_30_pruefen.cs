@@ -79,75 +79,35 @@ namespace K_AUSW_002.Recordings
 
             Init();
 
-            // Button verursacht unklare Repository-Fehler
-            //Report.Log(ReportLevel.Info, "Mouse", "Button verursacht unklare Repository-Fehler\r\nMouse Left Click item 'TblAnzeige.PbToolBarItemsVorwaerts' at Center.", repo.TblAnzeige.PbToolBarItemsVorwaertsInfo, new RecordItemIndex(0));
-            //repo.TblAnzeige.PbToolBarItemsVorwaerts.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='30') on item 'TblAnzeige.DfNr'.", repo.TblAnzeige.DfNrInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.TblAnzeige.DfNrInfo, "Text", "30");
             
-            // Klick auf 1. Zeile, damit das Fenster sicher für F8 aktiv ist
-            Report.Log(ReportLevel.Info, "Mouse", "Klick auf 1. Zeile, damit das Fenster sicher für F8 aktiv ist\r\nMouse Left Click item 'TblAnzeige.ChildTableWindow.Row1Column0' at Center.", repo.TblAnzeige.ChildTableWindow.Row1Column0Info, new RecordItemIndex(1));
-            repo.TblAnzeige.ChildTableWindow.Row1Column0.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='KST 30') on item 'TblAnzeige.DfBez'.", repo.TblAnzeige.DfBezInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblAnzeige.DfBezInfo, "Text", "KST 30");
             
-            // F8 = Button "Vorwärts"
-            Report.Log(ReportLevel.Info, "Keyboard", "F8 = Button \"Vorwärts\"\r\nKey 'F8' Press.", new RecordItemIndex(2));
-            Keyboard.Press(System.Windows.Forms.Keys.F8, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(3));
-            Delay.Duration(1000, false);
-            
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblAnzeige.DfNr_Kostenstelle_30'", repo.TblAnzeige.DfNr_Kostenstelle_30Info, new ActionTimeout(60000), new RecordItemIndex(4));
-            //repo.TblAnzeige.DfNr_Kostenstelle_30Info.WaitForExists(60000);
-            
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='30') on item 'TblAnzeige.DfNr'.", repo.TblAnzeige.DfNrInfo, new RecordItemIndex(5));
-            //Validate.AttributeEqual(repo.TblAnzeige.DfNrInfo, "Text", "30");
-            
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='KST 30') on item 'TblAnzeige.DfBez'.", repo.TblAnzeige.DfBezInfo, new RecordItemIndex(6));
-            //Validate.AttributeEqual(repo.TblAnzeige.DfBezInfo, "Text", "KST 30");
-            
-            // Search Timeout + 1m
-            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'4810\tMieterträge') on item 'TblAnzeige.ChildTableWindow.Row3'.", repo.TblAnzeige.ChildTableWindow.Row3Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'4810\tMieterträge') on item 'TblAnzeige.ChildTableWindow.Row3'.", repo.TblAnzeige.ChildTableWindow.Row3Info, new RecordItemIndex(2));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row3Info, "Text", "4810\tMieterträge");
             
-            // Search Timeout + 1m
-            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'454,55') on item 'TblAnzeige.ChildTableWindow.Row3'.", repo.TblAnzeige.ChildTableWindow.Row3Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'454,55') on item 'TblAnzeige.ChildTableWindow.Row3'.", repo.TblAnzeige.ChildTableWindow.Row3Info, new RecordItemIndex(3));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row3Info, "Text", "454,55");
             
-            // Search Timeout + 1m
-            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'5880\tLieferantenskonti (Klasse 5)') on item 'TblAnzeige.ChildTableWindow.Row6'.", repo.TblAnzeige.ChildTableWindow.Row6Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'5880\tLieferantenskonti (Klasse 5)') on item 'TblAnzeige.ChildTableWindow.Row6'.", repo.TblAnzeige.ChildTableWindow.Row6Info, new RecordItemIndex(4));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row6Info, "Text", "5880\tLieferantenskonti (Klasse 5)");
             
-            // Search Timeout + 1m
-            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'-7,17') on item 'TblAnzeige.ChildTableWindow.Row6'.", repo.TblAnzeige.ChildTableWindow.Row6Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'-7,17') on item 'TblAnzeige.ChildTableWindow.Row6'.", repo.TblAnzeige.ChildTableWindow.Row6Info, new RecordItemIndex(5));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row6Info, "Text", "-7,17");
             
-            // Search Timeout + 1m
-            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'7650\tWerbekosten') on item 'TblAnzeige.ChildTableWindow.Row8'.", repo.TblAnzeige.ChildTableWindow.Row8Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'7650\tWerbekosten') on item 'TblAnzeige.ChildTableWindow.Row8'.", repo.TblAnzeige.ChildTableWindow.Row8Info, new RecordItemIndex(6));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row8Info, "Text", "7650\tWerbekosten");
             
-            // Search Timeout + 1m
-            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'-1.758,33') on item 'TblAnzeige.ChildTableWindow.Row8'.", repo.TblAnzeige.ChildTableWindow.Row8Info, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'-1.758,33') on item 'TblAnzeige.ChildTableWindow.Row8'.", repo.TblAnzeige.ChildTableWindow.Row8Info, new RecordItemIndex(7));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row8Info, "Text", "-1.758,33");
             
-            // Search Timeout + 1m
-            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'26. Bilanzgewinn/Bilanzverlust') on item 'TblAnzeige.ChildTableWindow.Row13'.", repo.TblAnzeige.ChildTableWindow.Row13Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'26. Bilanzgewinn/Bilanzverlust') on item 'TblAnzeige.ChildTableWindow.Row13'.", repo.TblAnzeige.ChildTableWindow.Row13Info, new RecordItemIndex(8));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row13Info, "Text", "26. Bilanzgewinn/Bilanzverlust");
             
-            // Search Timeout + 1m
-            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'-1.310,95') on item 'TblAnzeige.ChildTableWindow.Row13'.", repo.TblAnzeige.ChildTableWindow.Row13Info, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'-1.310,95') on item 'TblAnzeige.ChildTableWindow.Row13'.", repo.TblAnzeige.ChildTableWindow.Row13Info, new RecordItemIndex(9));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row13Info, "Text", "-1.310,95");
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAnzeige.PbToolBarItemsAnfang' at Center.", repo.TblAnzeige.PbToolBarItemsAnfangInfo, new RecordItemIndex(15));
-            //repo.TblAnzeige.PbToolBarItemsAnfang.Click();
-            
-            // Klick auf 1. Zeile, damit das Fenster sicher für F9 aktiv ist
-            Report.Log(ReportLevel.Info, "Mouse", "Klick auf 1. Zeile, damit das Fenster sicher für F9 aktiv ist\r\nMouse Left Click item 'TblAnzeige.ChildTableWindow.Row1Column0' at Center.", repo.TblAnzeige.ChildTableWindow.Row1Column0Info, new RecordItemIndex(16));
-            repo.TblAnzeige.ChildTableWindow.Row1Column0.Click();
-            
-            // F9 = Button "Anfang"
-            Report.Log(ReportLevel.Info, "Keyboard", "F9 = Button \"Anfang\"\r\nKey 'F9' Press.", new RecordItemIndex(17));
-            Keyboard.Press(System.Windows.Forms.Keys.F9, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(18));
-            Delay.Duration(500, false);
             
         }
 

@@ -24,29 +24,29 @@ namespace K_AUSW_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Uebersicht_und_Ergebnis_schliessen recording.
+    ///The Zeilenuebersicht_und_Ergebnis_schliessen recording.
     /// </summary>
     [TestModule("b2773a39-e987-4be0-a175-e557ad0ba536", ModuleType.Recording, 1)]
-    public partial class Uebersicht_und_Ergebnis_schliessen : ITestModule
+    public partial class Zeilenuebersicht_und_Ergebnis_schliessen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::K_AUSW_002.K_AUSW_002Repository repository.
         /// </summary>
         public static global::K_AUSW_002.K_AUSW_002Repository repo = global::K_AUSW_002.K_AUSW_002Repository.Instance;
 
-        static Uebersicht_und_Ergebnis_schliessen instance = new Uebersicht_und_Ergebnis_schliessen();
+        static Zeilenuebersicht_und_Ergebnis_schliessen instance = new Zeilenuebersicht_und_Ergebnis_schliessen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Uebersicht_und_Ergebnis_schliessen()
+        public Zeilenuebersicht_und_Ergebnis_schliessen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Uebersicht_und_Ergebnis_schliessen Instance
+        public static Zeilenuebersicht_und_Ergebnis_schliessen Instance
         {
             get { return instance; }
         }

@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace K_AUSW_002.Recordings_Bereichskontoabfrage
+namespace K_AUSW_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Bereichskontenabfrage_aufrufen recording.
+    ///The Ergebnis_Zeilenuebersicht_aufrufen recording.
     /// </summary>
-    [TestModule("c49832f8-dd48-4d33-b764-4db855184e97", ModuleType.Recording, 1)]
-    public partial class Bereichskontenabfrage_aufrufen : ITestModule
+    [TestModule("789a19b4-b636-43be-9cc3-bf749c01488d", ModuleType.Recording, 1)]
+    public partial class Ergebnis_Zeilenuebersicht_aufrufen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::K_AUSW_002.K_AUSW_002Repository repository.
         /// </summary>
         public static global::K_AUSW_002.K_AUSW_002Repository repo = global::K_AUSW_002.K_AUSW_002Repository.Instance;
 
-        static Bereichskontenabfrage_aufrufen instance = new Bereichskontenabfrage_aufrufen();
+        static Ergebnis_Zeilenuebersicht_aufrufen instance = new Ergebnis_Zeilenuebersicht_aufrufen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Bereichskontenabfrage_aufrufen()
+        public Ergebnis_Zeilenuebersicht_aufrufen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Bereichskontenabfrage_aufrufen Instance
+        public static Ergebnis_Zeilenuebersicht_aufrufen Instance
         {
             get { return instance; }
         }
@@ -79,14 +79,26 @@ namespace K_AUSW_002.Recordings_Bereichskontoabfrage
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblAnzeige.ChildTableWindow.Row2Column0' at Center.", repo.TblAnzeige.ChildTableWindow.Row2Column0Info, new RecordItemIndex(0));
-            repo.TblAnzeige.ChildTableWindow.Row2Column0.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAnzeige.PbUEbersichtUEbersicht' at Center.", repo.TblAnzeige.PbUEbersichtUEbersichtInfo, new RecordItemIndex(0));
+            repo.TblAnzeige.PbUEbersichtUEbersicht.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 7m to exist. Associated repository item: 'TblBkAb.TitleBar100Bereichskontenabfrage'", repo.TblBkAb.TitleBar100BereichskontenabfrageInfo, new ActionTimeout(420000), new RecordItemIndex(1));
-            repo.TblBkAb.TitleBar100BereichskontenabfrageInfo.WaitForExists(420000);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KAUSW.ZeilenUEbersicht' at Center.", repo.KAUSW.ZeilenUEbersichtInfo, new RecordItemIndex(1));
+            repo.KAUSW.ZeilenUEbersicht.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bereichskontenabfrage') on item 'TblBkAb.TitleBar100Bereichskontenabfrage'.", repo.TblBkAb.TitleBar100BereichskontenabfrageInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.TblBkAb.TitleBar100BereichskontenabfrageInfo, "Text", "Bereichskontenabfrage");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgSpalte.TitleBar100ZeilenUEbersicht'", repo.DlgSpalte.TitleBar100ZeilenUEbersichtInfo, new ActionTimeout(120000), new RecordItemIndex(2));
+            repo.DlgSpalte.TitleBar100ZeilenUEbersichtInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'DlgSpalte.Bereich'.", repo.DlgSpalte.BereichInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.DlgSpalte.BereichInfo, "Text", "1");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='A') on item 'DlgSpalte.Spalte'.", repo.DlgSpalte.SpalteInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.DlgSpalte.SpalteInfo, "Text", "A");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgSpalte.PbOk' at Center.", repo.DlgSpalte.PbOkInfo, new RecordItemIndex(5));
+            repo.DlgSpalte.PbOk.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblAnzeige.ChildTableWindow.Zeilenuebersicht_Zeile1_Spalte1_mit_KST20'", repo.TblAnzeige.ChildTableWindow.Zeilenuebersicht_Zeile1_Spalte1_mit_KST20Info, new ActionTimeout(120000), new RecordItemIndex(6));
+            repo.TblAnzeige.ChildTableWindow.Zeilenuebersicht_Zeile1_Spalte1_mit_KST20Info.WaitForExists(120000);
             
         }
 

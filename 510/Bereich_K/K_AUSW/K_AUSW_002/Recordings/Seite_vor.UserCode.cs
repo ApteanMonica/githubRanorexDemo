@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace K_AUSW_002.Recordings
 {
-    public partial class Ergebnis_Kostenstellen_Zeilenuebersicht
+    public partial class Seite_vor
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

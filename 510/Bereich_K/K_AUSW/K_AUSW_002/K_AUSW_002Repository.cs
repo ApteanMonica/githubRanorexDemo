@@ -36,7 +36,6 @@ namespace K_AUSW_002
         K_AUSW_002RepositoryFolders.DlgListBoxAppFolder _dlglistbox;
         K_AUSW_002RepositoryFolders.FrmProgressAppFolder _frmprogress;
         K_AUSW_002RepositoryFolders.Form100AuswahllisteKonditionenAppFolder _form100auswahllistekonditionen;
-        K_AUSW_002RepositoryFolders.WSPETAppFolder _wspet;
 
         /// <summary>
         /// Gets the singleton class instance representing the K_AUSW_002Repository element repository.
@@ -62,7 +61,6 @@ namespace K_AUSW_002
             _dlglistbox = new K_AUSW_002RepositoryFolders.DlgListBoxAppFolder(this);
             _frmprogress = new K_AUSW_002RepositoryFolders.FrmProgressAppFolder(this);
             _form100auswahllistekonditionen = new K_AUSW_002RepositoryFolders.Form100AuswahllisteKonditionenAppFolder(this);
-            _wspet = new K_AUSW_002RepositoryFolders.WSPETAppFolder(this);
         }
 
 #region Variables
@@ -172,15 +170,6 @@ namespace K_AUSW_002
         public virtual K_AUSW_002RepositoryFolders.Form100AuswahllisteKonditionenAppFolder Form100AuswahllisteKonditionen
         {
             get { return _form100auswahllistekonditionen; }
-        }
-
-        /// <summary>
-        /// The WSPET folder.
-        /// </summary>
-        [RepositoryFolder("dac7dc7e-8e82-41b5-bf3e-cfff53600921")]
-        public virtual K_AUSW_002RepositoryFolders.WSPETAppFolder WSPET
-        {
-            get { return _wspet; }
         }
     }
 
@@ -814,8 +803,9 @@ namespace K_AUSW_002
             RepoItemInfo _pbtoolbaritemsanfangInfo;
             RepoItemInfo _schliessenInfo;
             RepoItemInfo _dfnrInfo;
-            RepoItemInfo _dfnr_kostenstelle_30Info;
             RepoItemInfo _dfbezInfo;
+            RepoItemInfo _dfnr_kostenstelle_30Info;
+            RepoItemInfo _dfnr_kostenstelle_20Info;
 
             /// <summary>
             /// Creates a new TblAnzeige  folder.
@@ -831,8 +821,9 @@ namespace K_AUSW_002
                 _pbtoolbaritemsanfangInfo = new RepoItemInfo(this, "PbToolBarItemsAnfang", "container[@controlname='RibbonBar']/container[@controlname='ToolBarItemsGroup']/button[@controlname='pbToolBarItems_Anfang']", "", 30000, null, "5c98f58c-b7bb-4ece-b2a2-4890ebf31279");
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 120000, null, "3b64f2c4-6f2a-4ddf-b896-587d1e0bb041");
                 _dfnrInfo = new RepoItemInfo(this, "DfNr", "container[@controlname='ToolBar']/text[@controlname='dfNr']", "", 30000, null, "5ced95f5-918e-4264-92a6-2688d2c7fb0b");
-                _dfnr_kostenstelle_30Info = new RepoItemInfo(this, "DfNr_Kostenstelle_30", "container[@controlname='ToolBar']/text[@controlname='dfNr' and @text='30']", "", 30000, null, "f4717922-de03-4509-a3e6-3e91b9829971");
                 _dfbezInfo = new RepoItemInfo(this, "DfBez", "container[@controlname='ToolBar']/text[@controlname='dfBez']", "", 30000, null, "89154214-917f-4c67-b24c-84e46417ddba");
+                _dfnr_kostenstelle_30Info = new RepoItemInfo(this, "DfNr_Kostenstelle_30", "container[@controlname='ToolBar']/text[@controlname='dfNr' and @text='30']", "", 30000, null, "f4717922-de03-4509-a3e6-3e91b9829971");
+                _dfnr_kostenstelle_20Info = new RepoItemInfo(this, "DfNr_Kostenstelle_20", "container[@controlname='ToolBar']/text[@controlname='dfNr' and @text='20']", "", 30000, null, "c7d27a0f-a567-4e60-a104-352de3fb5ec4");
             }
 
             /// <summary>
@@ -1028,6 +1019,30 @@ namespace K_AUSW_002
             }
 
             /// <summary>
+            /// The DfBez item.
+            /// </summary>
+            [RepositoryItem("89154214-917f-4c67-b24c-84e46417ddba")]
+            public virtual Ranorex.Text DfBez
+            {
+                get
+                {
+                    return _dfbezInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfBez item info.
+            /// </summary>
+            [RepositoryItemInfo("89154214-917f-4c67-b24c-84e46417ddba")]
+            public virtual RepoItemInfo DfBezInfo
+            {
+                get
+                {
+                    return _dfbezInfo;
+                }
+            }
+
+            /// <summary>
             /// The DfNr_Kostenstelle_30 item.
             /// </summary>
             [RepositoryItem("f4717922-de03-4509-a3e6-3e91b9829971")]
@@ -1052,26 +1067,26 @@ namespace K_AUSW_002
             }
 
             /// <summary>
-            /// The DfBez item.
+            /// The DfNr_Kostenstelle_20 item.
             /// </summary>
-            [RepositoryItem("89154214-917f-4c67-b24c-84e46417ddba")]
-            public virtual Ranorex.Text DfBez
+            [RepositoryItem("c7d27a0f-a567-4e60-a104-352de3fb5ec4")]
+            public virtual Ranorex.Text DfNr_Kostenstelle_20
             {
                 get
                 {
-                    return _dfbezInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _dfnr_kostenstelle_20Info.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The DfBez item info.
+            /// The DfNr_Kostenstelle_20 item info.
             /// </summary>
-            [RepositoryItemInfo("89154214-917f-4c67-b24c-84e46417ddba")]
-            public virtual RepoItemInfo DfBezInfo
+            [RepositoryItemInfo("c7d27a0f-a567-4e60-a104-352de3fb5ec4")]
+            public virtual RepoItemInfo DfNr_Kostenstelle_20Info
             {
                 get
                 {
-                    return _dfbezInfo;
+                    return _dfnr_kostenstelle_20Info;
                 }
             }
 
@@ -1100,6 +1115,7 @@ namespace K_AUSW_002
             RepoItemInfo _row7Info;
             RepoItemInfo _row8Info;
             RepoItemInfo _row13Info;
+            RepoItemInfo _zeilenuebersicht_zeile1_spalte1_mit_kst20Info;
 
             /// <summary>
             /// Creates a new ChildTableWindow  folder.
@@ -1110,12 +1126,13 @@ namespace K_AUSW_002
                 _row1Info = new RepoItemInfo(this, "Row1", "row[@accessiblename='Row 1']", "", 30000, null, "2cb7cbba-29a6-49b6-8416-14902f78844a");
                 _row1column0Info = new RepoItemInfo(this, "Row1Column0", "row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "9a4af768-ad7f-45e2-a7d3-52792de4e18e");
                 _row2column0Info = new RepoItemInfo(this, "Row2Column0", "row[@accessiblename='Row 2']/cell[@accessiblename='Row 2 Column 0']", "", 30000, null, "b21cbb35-8a16-46a1-aa03-ec694f7561f4");
-                _row2Info = new RepoItemInfo(this, "Row2", "row[@accessiblename='Row 2']", "", 60000, null, "ae2f37c8-85fb-4dfd-bbf5-34ff1034eed1");
-                _row3Info = new RepoItemInfo(this, "Row3", "row[@accessiblename='Row 3']", "", 60000, null, "83288cc5-f4a4-41e6-96e3-601ba5b4607a");
-                _row6Info = new RepoItemInfo(this, "Row6", "row[@accessiblename='Row 6']", "", 60000, null, "e8e38684-1f1c-420b-88a0-3f7707a234cc");
-                _row7Info = new RepoItemInfo(this, "Row7", "row[@accessiblename='Row 7']", "", 60000, null, "94f49fdc-8948-441d-a8de-8234c57ba467");
-                _row8Info = new RepoItemInfo(this, "Row8", "row[@accessiblename='Row 8']", "", 60000, null, "8330670c-29c2-4e60-837d-673e71d83750");
-                _row13Info = new RepoItemInfo(this, "Row13", "row[@accessiblename='Row 13']", "", 60000, null, "2fa8220a-1386-4b4d-a1c7-a5ec4cf0050a");
+                _row2Info = new RepoItemInfo(this, "Row2", "row[@accessiblename='Row 2']", "", 30000, null, "ae2f37c8-85fb-4dfd-bbf5-34ff1034eed1");
+                _row3Info = new RepoItemInfo(this, "Row3", "row[@accessiblename='Row 3']", "", 30000, null, "83288cc5-f4a4-41e6-96e3-601ba5b4607a");
+                _row6Info = new RepoItemInfo(this, "Row6", "row[@accessiblename='Row 6']", "", 30000, null, "e8e38684-1f1c-420b-88a0-3f7707a234cc");
+                _row7Info = new RepoItemInfo(this, "Row7", "row[@accessiblename='Row 7']", "", 30000, null, "94f49fdc-8948-441d-a8de-8234c57ba467");
+                _row8Info = new RepoItemInfo(this, "Row8", "row[@accessiblename='Row 8']", "", 30000, null, "8330670c-29c2-4e60-837d-673e71d83750");
+                _row13Info = new RepoItemInfo(this, "Row13", "row[@accessiblename='Row 13']", "", 30000, null, "2fa8220a-1386-4b4d-a1c7-a5ec4cf0050a");
+                _zeilenuebersicht_zeile1_spalte1_mit_kst20Info = new RepoItemInfo(this, "Zeilenuebersicht_Zeile1_Spalte1_mit_KST20", "row[@accessiblename='Row 1']/cell[@accessiblename='colStruktur Row 1' and @text='20']", "", 30000, null, "e2f9ee64-797e-464d-b3f1-153b3931df75");
             }
 
             /// <summary>
@@ -1355,6 +1372,30 @@ namespace K_AUSW_002
                 get
                 {
                     return _row13Info;
+                }
+            }
+
+            /// <summary>
+            /// The Zeilenuebersicht_Zeile1_Spalte1_mit_KST20 item.
+            /// </summary>
+            [RepositoryItem("e2f9ee64-797e-464d-b3f1-153b3931df75")]
+            public virtual Ranorex.Cell Zeilenuebersicht_Zeile1_Spalte1_mit_KST20
+            {
+                get
+                {
+                    return _zeilenuebersicht_zeile1_spalte1_mit_kst20Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Zeilenuebersicht_Zeile1_Spalte1_mit_KST20 item info.
+            /// </summary>
+            [RepositoryItemInfo("e2f9ee64-797e-464d-b3f1-153b3931df75")]
+            public virtual RepoItemInfo Zeilenuebersicht_Zeile1_Spalte1_mit_KST20Info
+            {
+                get
+                {
+                    return _zeilenuebersicht_zeile1_spalte1_mit_kst20Info;
                 }
             }
         }
@@ -1708,7 +1749,7 @@ namespace K_AUSW_002
                     base("TblBkAb", "/form[@controlname='tblBkAb']", parentFolder, 30000, null, true, "89b5e4e7-43d0-45f1-ba54-15b2ad73c6cf", "")
             {
                 _toolbar = new K_AUSW_002RepositoryFolders.ToolBarFolder(this);
-                _titlebar100bereichskontenabfrageInfo = new RepoItemInfo(this, "TitleBar100Bereichskontenabfrage", "titlebar[@accessiblerole='TitleBar']", "", 60000, null, "ab1a801a-199e-45fa-9fc5-db36145c6c7a");
+                _titlebar100bereichskontenabfrageInfo = new RepoItemInfo(this, "TitleBar100Bereichskontenabfrage", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "ab1a801a-199e-45fa-9fc5-db36145c6c7a");
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "b24b289e-9a8a-43a7-9780-daa91b4fbc71");
                 _colsollrow1_haupttabelleInfo = new RepoItemInfo(this, "ColSollRow1_Haupttabelle", "container[@controlname='ChildTableWindow']/*[@controlname='mainGrid']/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colSoll Row 1']", "", 30000, null, "9baa4311-9ca9-4d1d-abc8-9e627a30c741");
                 _row3_fusszeileInfo = new RepoItemInfo(this, "Row3_Fusszeile", "container[@controlname='ChildTableWindow']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']", "", 30000, null, "1a64344e-1c4c-4ec5-9e83-252c2132070b");
@@ -2492,72 +2533,6 @@ namespace K_AUSW_002
                 get
                 {
                     return _windowsforms10buttonapp02804c64r6aInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The WSPETAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("dac7dc7e-8e82-41b5-bf3e-cfff53600921")]
-        public partial class WSPETAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _wspetInfo;
-
-            /// <summary>
-            /// Creates a new WSPET  folder.
-            /// </summary>
-            public WSPETAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("WSPET", "", parentFolder, 30000, null, true, "dac7dc7e-8e82-41b5-bf3e-cfff53600921", "")
-            {
-                _wspetInfo = new RepoItemInfo(this, "WSPET", "", "", 30000, null, "c38c353e-8237-48d0-9875-5a2ad27bcb70");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("dac7dc7e-8e82-41b5-bf3e-cfff53600921")]
-            public virtual Ranorex.Host Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Host>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("dac7dc7e-8e82-41b5-bf3e-cfff53600921")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The WSPET item.
-            /// </summary>
-            [RepositoryItem("c38c353e-8237-48d0-9875-5a2ad27bcb70")]
-            public virtual Ranorex.Host WSPET
-            {
-                get
-                {
-                    return _wspetInfo.CreateAdapter<Ranorex.Host>(true);
-                }
-            }
-
-            /// <summary>
-            /// The WSPET item info.
-            /// </summary>
-            [RepositoryItemInfo("c38c353e-8237-48d0-9875-5a2ad27bcb70")]
-            public virtual RepoItemInfo WSPETInfo
-            {
-                get
-                {
-                    return _wspetInfo;
                 }
             }
         }

@@ -82,8 +82,8 @@ namespace K_AUSW_002.Recordings_Bereichskontoabfrage
             Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblBkAb.TitleBar100Bereichskontenabfrage'.", repo.TblBkAb.TitleBar100BereichskontenabfrageInfo, new RecordItemIndex(0));
             Host.Current.CloseApplication(repo.TblBkAb.TitleBar100Bereichskontenabfrage, 1000);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
-            Delay.Duration(1000, false);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to not exist. Associated repository item: 'TblBkAb.TitleBar100Bereichskontenabfrage'", repo.TblBkAb.TitleBar100BereichskontenabfrageInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.TblBkAb.TitleBar100BereichskontenabfrageInfo.WaitForNotExists(120000);
             
         }
 
