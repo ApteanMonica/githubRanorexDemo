@@ -135,7 +135,6 @@ namespace V_AUF_008
             RepoItemInfo _row1column0Info;
             RepoItemInfo _dfaufknrInfo;
             RepoItemInfo _tabpagepositionenInfo;
-            RepoItemInfo _zlnrInfo;
             RepoItemInfo _tpposInfo;
             RepoItemInfo _kopfInfo;
             RepoItemInfo _pbcommon2kopierenInfo;
@@ -143,7 +142,6 @@ namespace V_AUF_008
             RepoItemInfo _dfaufpzeileInfo;
             RepoItemInfo _row1column01Info;
             RepoItemInfo _row3column0Info;
-            RepoItemInfo _artnrInfo;
             RepoItemInfo _pbcommonsaveInfo;
             RepoItemInfo _cbkomponentenInfo;
 
@@ -159,7 +157,6 @@ namespace V_AUF_008
                 _row1column0Info = new RepoItemInfo(this, "Row1Column0", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "3b3c2b8b-a7f7-4d4d-aa37-2aa29bfe7642");
                 _dfaufknrInfo = new RepoItemInfo(this, "DfAufkNr", ".//tabpage[@controlname='tpKopf']/text[@controlname='dfAufk_nr']", "", 30000, null, "283a9352-9b45-47de-91e8-bb7acdfd9255");
                 _tabpagepositionenInfo = new RepoItemInfo(this, "TabPagePositionen", "container[@controlname='ClientArea']/?/?/tabpage[@accessiblename='&Positionen']", "", 30000, null, "32b8d3b4-fe3d-4ed5-a59a-02f9be944e62");
-                _zlnrInfo = new RepoItemInfo(this, "ZlNr", "container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_zeile']/text[@accessiblename='Zl-Nr.']", "", 30000, null, "2a4ad4ec-217d-4493-932b-4cb929717f91");
                 _tpposInfo = new RepoItemInfo(this, "TpPos", "container[@controlname='ClientArea']/?/?/tabpage[@controlname='tpPos']", "", 30000, null, "df4772d2-332b-4c3e-b56b-f6383cb65378");
                 _kopfInfo = new RepoItemInfo(this, "Kopf", "container[@controlname='ClientArea']/?/?/tabpage[@accessiblename='K&opf']", "", 30000, null, "584eea99-01ba-4ce0-87d4-06b31a3f683c");
                 _pbcommon2kopierenInfo = new RepoItemInfo(this, "PbCommon2Kopieren", "?/?/container[@controlname='Common2Group']/button[@controlname='pbCommon2_Kopieren']", "", 30000, null, "45c1ada7-4cee-433b-b41e-65aa0907e4f3");
@@ -167,7 +164,6 @@ namespace V_AUF_008
                 _dfaufpzeileInfo = new RepoItemInfo(this, "DfAufpZeile", ".//tabpage[@controlname='tpPos']//tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_zeile']", "", 30000, null, "6687ae50-e528-41aa-97bf-5bc96dc2f084");
                 _row1column01Info = new RepoItemInfo(this, "Row1Column01", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "3d773499-d667-4c14-a250-9dbce79c624b");
                 _row3column0Info = new RepoItemInfo(this, "Row3Column0", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 3 Column 0']", "", 30000, null, "1ed3b748-348c-4dce-adcd-26eac9c41932");
-                _artnrInfo = new RepoItemInfo(this, "ArtNr", "form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfArt_nr']/text[@accessiblename='Art-Nr.']", "", 30000, null, "eb5a0aa3-f261-4fa7-b4d2-4a835ba7c6f2");
                 _pbcommonsaveInfo = new RepoItemInfo(this, "PbCommonSave", "?/?/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Save']", "", 30000, null, "7227db0d-ad76-441b-afd2-70c13747e32c");
                 _cbkomponentenInfo = new RepoItemInfo(this, "CbKomponenten", ".//tabpage[@controlname='tpPos']/checkbox[@controlname='cbKomponenten']", "", 30000, null, "6f795651-ac65-497f-8a92-b3c0160da4f0");
             }
@@ -313,30 +309,6 @@ namespace V_AUF_008
                 get
                 {
                     return _tabpagepositionenInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ZlNr item.
-            /// </summary>
-            [RepositoryItem("2a4ad4ec-217d-4493-932b-4cb929717f91")]
-            public virtual Ranorex.Text ZlNr
-            {
-                get
-                {
-                    return _zlnrInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ZlNr item info.
-            /// </summary>
-            [RepositoryItemInfo("2a4ad4ec-217d-4493-932b-4cb929717f91")]
-            public virtual RepoItemInfo ZlNrInfo
-            {
-                get
-                {
-                    return _zlnrInfo;
                 }
             }
 
@@ -509,30 +481,6 @@ namespace V_AUF_008
             }
 
             /// <summary>
-            /// The ArtNr item.
-            /// </summary>
-            [RepositoryItem("eb5a0aa3-f261-4fa7-b4d2-4a835ba7c6f2")]
-            public virtual Ranorex.Text ArtNr
-            {
-                get
-                {
-                    return _artnrInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ArtNr item info.
-            /// </summary>
-            [RepositoryItemInfo("eb5a0aa3-f261-4fa7-b4d2-4a835ba7c6f2")]
-            public virtual RepoItemInfo ArtNrInfo
-            {
-                get
-                {
-                    return _artnrInfo;
-                }
-            }
-
-            /// <summary>
             /// The PbCommonSave item.
             /// </summary>
             [RepositoryItem("7227db0d-ad76-441b-afd2-70c13747e32c")]
@@ -596,6 +544,7 @@ namespace V_AUF_008
         [RepositoryFolder("74bf1ead-0068-4ab8-b2bd-5702308c95b5")]
         public partial class TpPos1Folder : RepoGenBaseFolder
         {
+            V_AUF_008RepositoryFolders.Tab_AufPFolder _tab_aufp;
             RepoItemInfo _row2column0Info;
             RepoItemInfo _colaufpzeileanzeigerow2Info;
             RepoItemInfo _text1Info;
@@ -607,9 +556,10 @@ namespace V_AUF_008
             /// Creates a new TpPos1  folder.
             /// </summary>
             public TpPos1Folder(RepoGenBaseFolder parentFolder) :
-                    base("TpPos1", ".//tabpage[@controlname='tpPos']", parentFolder, 30000, null, false, "74bf1ead-0068-4ab8-b2bd-5702308c95b5", "")
+                    base("TpPos1", "container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']", parentFolder, 30000, null, false, "74bf1ead-0068-4ab8-b2bd-5702308c95b5", "")
             {
-                _row2column0Info = new RepoItemInfo(this, "Row2Column0", "?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 2 Column 0']", "", 30000, null, "8f02f894-403d-45a2-b559-f48eaa127215");
+                _tab_aufp = new V_AUF_008RepositoryFolders.Tab_AufPFolder(this);
+                _row2column0Info = new RepoItemInfo(this, "Row2Column0", "container[@controlname='tblAufp']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']", "", 30000, null, "8f02f894-403d-45a2-b559-f48eaa127215");
                 _colaufpzeileanzeigerow2Info = new RepoItemInfo(this, "ColAufpZeileAnzeigeRow2", "?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@text='1.1']", "", 30000, null, "69021b74-4547-41f1-8352-854dac5dbfb5");
                 _text1Info = new RepoItemInfo(this, "Text1", "?/?/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfArt_bez1']/text[@accessiblerole='Text']", "", 30000, null, "e2ea08f1-adc4-4563-b4fa-87afb1e34095");
                 _textInfo = new RepoItemInfo(this, "Text", "?/?/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_menge']/text[@accessiblerole='Text']", "", 30000, null, "107825b4-d3a2-4b3e-8f86-05cd105cc661");
@@ -645,11 +595,11 @@ namespace V_AUF_008
             /// The Row2Column0 item.
             /// </summary>
             [RepositoryItem("8f02f894-403d-45a2-b559-f48eaa127215")]
-            public virtual Ranorex.Cell Row2Column0
+            public virtual Ranorex.Row Row2Column0
             {
                 get
                 {
-                    return _row2column0Info.CreateAdapter<Ranorex.Cell>(true);
+                    return _row2column0Info.CreateAdapter<Ranorex.Row>(true);
                 }
             }
 
@@ -782,6 +732,133 @@ namespace V_AUF_008
                 get
                 {
                     return _dfaufppreisInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Tab_AufP folder.
+            /// </summary>
+            [RepositoryFolder("ad8867ee-c3cf-4c6f-a43b-58f51debf7f4")]
+            public virtual V_AUF_008RepositoryFolders.Tab_AufPFolder Tab_AufP
+            {
+                get { return _tab_aufp; }
+            }
+        }
+
+        /// <summary>
+        /// The Tab_AufPFolder folder.
+        /// </summary>
+        [RepositoryFolder("ad8867ee-c3cf-4c6f-a43b-58f51debf7f4")]
+        public partial class Tab_AufPFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _zlnrInfo;
+            RepoItemInfo _artnrInfo;
+            RepoItemInfo _textpr1Info;
+
+            /// <summary>
+            /// Creates a new Tab_AufP  folder.
+            /// </summary>
+            public Tab_AufPFolder(RepoGenBaseFolder parentFolder) :
+                    base("Tab_AufP", "container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']", parentFolder, 30000, null, false, "ad8867ee-c3cf-4c6f-a43b-58f51debf7f4", "")
+            {
+                _zlnrInfo = new RepoItemInfo(this, "ZlNr", "text[@controlname='dfAufp_zeile']/text[@accessiblename='Zl-Nr.']", "", 30000, null, "2a4ad4ec-217d-4493-932b-4cb929717f91");
+                _artnrInfo = new RepoItemInfo(this, "ArtNr", "text[@controlname='dfArt_nr']/text[@accessiblename='Art-Nr.']", "", 30000, null, "eb5a0aa3-f261-4fa7-b4d2-4a835ba7c6f2");
+                _textpr1Info = new RepoItemInfo(this, "TextPr1", "text[@controlname='dfAufp_preis']/text[@accessiblename='Pr.']", "", 30000, null, "5f1e8f29-31dc-4606-bd4a-a6752d75bda1");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("ad8867ee-c3cf-4c6f-a43b-58f51debf7f4")]
+            public virtual Ranorex.TabPage Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("ad8867ee-c3cf-4c6f-a43b-58f51debf7f4")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ZlNr item.
+            /// </summary>
+            [RepositoryItem("2a4ad4ec-217d-4493-932b-4cb929717f91")]
+            public virtual Ranorex.Text ZlNr
+            {
+                get
+                {
+                    return _zlnrInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ZlNr item info.
+            /// </summary>
+            [RepositoryItemInfo("2a4ad4ec-217d-4493-932b-4cb929717f91")]
+            public virtual RepoItemInfo ZlNrInfo
+            {
+                get
+                {
+                    return _zlnrInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ArtNr item.
+            /// </summary>
+            [RepositoryItem("eb5a0aa3-f261-4fa7-b4d2-4a835ba7c6f2")]
+            public virtual Ranorex.Text ArtNr
+            {
+                get
+                {
+                    return _artnrInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ArtNr item info.
+            /// </summary>
+            [RepositoryItemInfo("eb5a0aa3-f261-4fa7-b4d2-4a835ba7c6f2")]
+            public virtual RepoItemInfo ArtNrInfo
+            {
+                get
+                {
+                    return _artnrInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TextPr1 item.
+            /// </summary>
+            [RepositoryItem("5f1e8f29-31dc-4606-bd4a-a6752d75bda1")]
+            public virtual Ranorex.Text TextPr1
+            {
+                get
+                {
+                    return _textpr1Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextPr1 item info.
+            /// </summary>
+            [RepositoryItemInfo("5f1e8f29-31dc-4606-bd4a-a6752d75bda1")]
+            public virtual RepoItemInfo TextPr1Info
+            {
+                get
+                {
+                    return _textpr1Info;
                 }
             }
         }
@@ -1007,7 +1084,6 @@ namespace V_AUF_008
             RepoItemInfo _textprInfo;
             RepoItemInfo _pushbuttonInfo;
             RepoItemInfo _colaufpzeileanzeigerow6Info;
-            RepoItemInfo _textpr1Info;
             RepoItemInfo _colartnrrow1Info;
             RepoItemInfo _colartnrrow2Info;
             RepoItemInfo _colartnrrow3Info;
@@ -1023,7 +1099,6 @@ namespace V_AUF_008
                 _textprInfo = new RepoItemInfo(this, "TextPr", "element[@instance='2']//element[@controlid='4']/element[@instance='0']/element[36]/text[@accessiblename='Pr.']", "", 30000, null, "13280721-5b28-4fe9-aecf-c8502e153204");
                 _pushbuttonInfo = new RepoItemInfo(this, "PushButton", "element[@instance='0']/element[@instance='1']/?/?/button[@accessiblerole='PushButton']", "", 30000, null, "35f02391-3360-4ee5-ac24-392fe4755f33");
                 _colaufpzeileanzeigerow6Info = new RepoItemInfo(this, "ColAufpZeileAnzeigeRow6", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@text='1.5']", "", 30000, null, "0a5dae05-70be-4881-bac3-34a02d91b510");
-                _textpr1Info = new RepoItemInfo(this, "TextPr1", ".//tabpage[@controlname='tpPos']/?/?/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/?/?/text[@accessiblename='Pr.']", "", 30000, null, "5f1e8f29-31dc-4606-bd4a-a6752d75bda1");
                 _colartnrrow1Info = new RepoItemInfo(this, "ColArtNrRow1", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colArt_nr Row 1']", "", 30000, null, "6701f923-4cf4-45de-8c77-394a4c44e3c8");
                 _colartnrrow2Info = new RepoItemInfo(this, "ColArtNrRow2", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colArt_nr Row 2']", "", 30000, null, "6bb78d49-d1b5-49bc-b41e-68c56809549a");
                 _colartnrrow3Info = new RepoItemInfo(this, "ColArtNrRow3", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colArt_nr Row 3']", "", 30000, null, "dae7a8d8-b0f7-4f0b-b8bb-a9353ef58a80");
@@ -1146,30 +1221,6 @@ namespace V_AUF_008
                 get
                 {
                     return _colaufpzeileanzeigerow6Info;
-                }
-            }
-
-            /// <summary>
-            /// The TextPr1 item.
-            /// </summary>
-            [RepositoryItem("5f1e8f29-31dc-4606-bd4a-a6752d75bda1")]
-            public virtual Ranorex.Text TextPr1
-            {
-                get
-                {
-                    return _textpr1Info.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TextPr1 item info.
-            /// </summary>
-            [RepositoryItemInfo("5f1e8f29-31dc-4606-bd4a-a6752d75bda1")]
-            public virtual RepoItemInfo TextPr1Info
-            {
-                get
-                {
-                    return _textpr1Info;
                 }
             }
 

@@ -77,16 +77,6 @@ name="V_AUF_008Repository">
 				/form[@controlname='frmAufk']/container[@controlname='ClientArea']/?/?/tabpage[@accessiblename='&amp;Positionen']
 			</item>
 			<item
-			addcaps="text,accessible"
-			capname="text"
-			id="2a4ad4ec-217d-4493-932b-4cb929717f91"
-			name="ZlNr"
-			refimgid="da094d32-8987-42e9-868f-9f17ff9e960d"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_zeile']/text[@accessiblename='Zl-Nr.']
-			</item>
-			<item
 			addcaps="tabpage,control,nativewindow"
 			capname="tabpage"
 			id="df4772d2-332b-4c3e-b56b-f6383cb65378"
@@ -164,16 +154,6 @@ name="V_AUF_008Repository">
 				/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 3 Column 0']
 			</item>
 			<item
-			addcaps="text,accessible"
-			capname="text"
-			id="eb5a0aa3-f261-4fa7-b4d2-4a835ba7c6f2"
-			name="ArtNr"
-			refimgid="55d3edbc-828d-40b8-b07b-096193dfdd07"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='frmAufk']/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfArt_nr']/text[@accessiblename='Art-Nr.']
-			</item>
-			<item
 			addcaps="button,control,nativewindow"
 			capname="button"
 			id="7227db0d-ad76-441b-afd2-70c13747e32c"
@@ -204,14 +184,13 @@ name="V_AUF_008Repository">
 			usecache="False">
 				<item
 				addcaps="cell,accessible"
-				capname="cell"
+				capname="row"
 				id="8f02f894-403d-45a2-b559-f48eaa127215"
 				name="Row2Column0"
 				refimgid="a35a1e09-3c0e-45f6-a309-a01262d2fb1c"
-				refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']/table/row[@accessiblename='Row 2']/cell[@accessiblename='Row 2 Column 0']"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 2 Column 0']
+					/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -219,10 +198,9 @@ name="V_AUF_008Repository">
 				id="69021b74-4547-41f1-8352-854dac5dbfb5"
 				name="ColAufpZeileAnzeigeRow2"
 				refimgid="b624879b-fef8-4ddd-9122-c111371dd403"
-				refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colAufp_zeile_anzeige Row 2']"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@text='1.1']
+					/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@text='1.1']
 				</item>
 				<item
 				addcaps="text,accessible"
@@ -230,10 +208,9 @@ name="V_AUF_008Repository">
 				id="e2ea08f1-adc4-4563-b4fa-87afb1e34095"
 				name="Text1"
 				refimgid="31a93c94-ed7a-46ba-ae98-be1f42ab35ab"
-				refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfArt_bez1']/text[@accessiblerole='Text']"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfArt_bez1']/text[@accessiblerole='Text']
+					/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/?/?/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfArt_bez1']/text[@accessiblerole='Text']
 				</item>
 				<item
 				addcaps="text,accessible"
@@ -241,10 +218,9 @@ name="V_AUF_008Repository">
 				id="107825b4-d3a2-4b3e-8f86-05cd105cc661"
 				name="Text"
 				refimgid="2ba918e7-9f47-4d45-bfd4-66b3a03bdd2e"
-				refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form/tabpagelist/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_menge']/text[@accessiblerole='Text']"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_menge']/text[@accessiblerole='Text']
+					/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/?/?/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_menge']/text[@accessiblerole='Text']
 				</item>
 				<item
 				addcaps="text,control,nativewindow"
@@ -252,10 +228,9 @@ name="V_AUF_008Repository">
 				id="1490fd5c-863a-40f8-91b7-7cde5d3d376c"
 				name="DfAufkWert1D"
 				refimgid="9951786e-1fc5-4cd7-af86-fd0807dae2c2"
-				refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/text[@controlname='dfAufk_wert1_d']"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/form[@controlname='dlgAufp']/text[@controlname='dfAufk_wert1_d']
+					/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/?/?/form[@controlname='dlgAufp']/text[@controlname='dfAufk_wert1_d']
 				</item>
 				<item
 				addcaps="text,control,nativewindow"
@@ -263,13 +238,53 @@ name="V_AUF_008Repository">
 				id="050ea1fa-2209-48a1-ac30-ecc5e97d4d19"
 				name="DfAufpPreis"
 				refimgid="3043fcd4-98b5-4697-b4bd-bb77653ab2ae"
-				refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_preis']"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']//tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_preis']
+					/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']//tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_preis']
 				</item>
+				<folder
+				capname="tabpage"
+				id="ad8867ee-c3cf-4c6f-a43b-58f51debf7f4"
+				isrooted="True"
+				name="Tab_AufP"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="text,accessible"
+					capname="text"
+					id="2a4ad4ec-217d-4493-932b-4cb929717f91"
+					name="ZlNr"
+					refimgid="da094d32-8987-42e9-868f-9f17ff9e960d"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_zeile']/text[@accessiblename='Zl-Nr.']
+					</item>
+					<item
+					addcaps="text,accessible"
+					capname="text"
+					id="eb5a0aa3-f261-4fa7-b4d2-4a835ba7c6f2"
+					name="ArtNr"
+					refimgid="55d3edbc-828d-40b8-b07b-096193dfdd07"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfArt_nr']/text[@accessiblename='Art-Nr.']
+					</item>
+					<item
+					addcaps="text,accessible"
+					capname="text"
+					id="5f1e8f29-31dc-4606-bd4a-a6752d75bda1"
+					name="TextPr1"
+					refimgid="4f0d8895-7581-47eb-abd8-e5e25dc33cbb"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_preis']/text[@accessiblename='Pr.']
+					</item>
+					<basepath>
+						/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']
+					</basepath>
+				</folder>
 				<basepath>
-					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']
+					/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']
 				</basepath>
 			</folder>
 			<basepath>
@@ -435,17 +450,6 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@title&gt;'[100]  Auftragserfassung zu']//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@text='1.5']
-			</item>
-			<item
-			addcaps="text,accessible"
-			capname="text"
-			id="5f1e8f29-31dc-4606-bd4a-a6752d75bda1"
-			name="TextPr1"
-			refimgid="4f0d8895-7581-47eb-abd8-e5e25dc33cbb"
-			refpath="/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_preis']/text[@accessiblename='Pr.']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@title&gt;'[100]  Auftragserfassung zu']//tabpage[@controlname='tpPos']/?/?/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/?/?/text[@accessiblename='Pr.']
 			</item>
 			<folder
 			addcaps="table,accessible"

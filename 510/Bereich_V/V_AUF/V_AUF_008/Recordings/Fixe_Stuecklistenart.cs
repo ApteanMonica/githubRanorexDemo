@@ -92,11 +92,11 @@ namespace V_AUF_008.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.ArtNr' at Center.", repo.FrmAufk.ArtNrInfo, new RecordItemIndex(0));
-            repo.FrmAufk.ArtNr.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.TpPos1.Tab_AufP.ArtNr' at Center.", repo.FrmAufk.TpPos1.Tab_AufP.ArtNrInfo, new RecordItemIndex(0));
+            repo.FrmAufk.TpPos1.Tab_AufP.ArtNr.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Fixe_Stkl' with focus on 'FrmAufk.ArtNr'.", repo.FrmAufk.ArtNrInfo, new RecordItemIndex(1));
-            repo.FrmAufk.ArtNr.PressKeys(Fixe_Stkl);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Fixe_Stkl' with focus on 'FrmAufk.TpPos1.Tab_AufP.ArtNr'.", repo.FrmAufk.TpPos1.Tab_AufP.ArtNrInfo, new RecordItemIndex(1));
+            repo.FrmAufk.TpPos1.Tab_AufP.ArtNr.PressKeys(Fixe_Stkl);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -146,20 +146,20 @@ namespace V_AUF_008.Recordings
             //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Editierbarkeit_übeprüfen') on item 'Form100AuftragserfassungZuAuftrag.KArtNr'.", repo.Form100AuftragserfassungZuAuftrag.KArtNrInfo, new RecordItemIndex(17));
             //Validate.AttributeEqual(repo.Form100AuftragserfassungZuAuftrag.KArtNrInfo, "Text", "Editierbarkeit_übeprüfen");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Form100AuftragserfassungZuAuftrag.TextPr1' at Center.", repo.Form100AuftragserfassungZuAuftrag.TextPr1Info, new RecordItemIndex(18));
-            repo.Form100AuftragserfassungZuAuftrag.TextPr1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.TpPos1.Tab_AufP.TextPr1' at Center.", repo.FrmAufk.TpPos1.Tab_AufP.TextPr1Info, new RecordItemIndex(18));
+            repo.FrmAufk.TpPos1.Tab_AufP.TextPr1.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'Form100AuftragserfassungZuAuftrag.TextPr1' at Center.", repo.Form100AuftragserfassungZuAuftrag.TextPr1Info, new RecordItemIndex(19));
-            repo.Form100AuftragserfassungZuAuftrag.TextPr1.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.TpPos1.Tab_AufP.TextPr1' at Center.", repo.FrmAufk.TpPos1.Tab_AufP.TextPr1Info, new RecordItemIndex(19));
+            repo.FrmAufk.TpPos1.Tab_AufP.TextPr1.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'Form100AuftragserfassungZuAuftrag.TextPr1' at Center.", repo.Form100AuftragserfassungZuAuftrag.TextPr1Info, new RecordItemIndex(20));
-            repo.Form100AuftragserfassungZuAuftrag.TextPr1.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.TpPos1.Tab_AufP.TextPr1' at Center.", repo.FrmAufk.TpPos1.Tab_AufP.TextPr1Info, new RecordItemIndex(20));
+            repo.FrmAufk.TpPos1.Tab_AufP.TextPr1.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '12{Tab}' with focus on 'Form100AuftragserfassungZuAuftrag.TextPr1'.", repo.Form100AuftragserfassungZuAuftrag.TextPr1Info, new RecordItemIndex(21));
-            repo.Form100AuftragserfassungZuAuftrag.TextPr1.PressKeys("12{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '12{Tab}' with focus on 'FrmAufk.TpPos1.Tab_AufP.TextPr1'.", repo.FrmAufk.TpPos1.Tab_AufP.TextPr1Info, new RecordItemIndex(21));
+            repo.FrmAufk.TpPos1.Tab_AufP.TextPr1.PressKeys("12{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='12,000') on item 'Form100AuftragserfassungZuAuftrag.TextPr1'.", repo.Form100AuftragserfassungZuAuftrag.TextPr1Info, new RecordItemIndex(22));
-            Validate.AttributeEqual(repo.Form100AuftragserfassungZuAuftrag.TextPr1Info, "Text", "12,000");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='12,000') on item 'FrmAufk.TpPos1.Tab_AufP.TextPr1'.", repo.FrmAufk.TpPos1.Tab_AufP.TextPr1Info, new RecordItemIndex(22));
+            Validate.AttributeEqual(repo.FrmAufk.TpPos1.Tab_AufP.TextPr1Info, "Text", "12,000");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.PbCommonSave' at Center.", repo.FrmAufk.PbCommonSaveInfo, new RecordItemIndex(23));
             repo.FrmAufk.PbCommonSave.Click();

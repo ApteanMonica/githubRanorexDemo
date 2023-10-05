@@ -120,11 +120,11 @@ namespace V_AUF_008.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.TabPagePositionen' at Center.", repo.FrmAufk.TabPagePositionenInfo, new RecordItemIndex(4));
             repo.FrmAufk.TabPagePositionen.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmAufk.ZlNr'", repo.FrmAufk.ZlNrInfo, new ActionTimeout(60000), new RecordItemIndex(5));
-            repo.FrmAufk.ZlNrInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmAufk.TpPos1.Tab_AufP.ZlNr'", repo.FrmAufk.TpPos1.Tab_AufP.ZlNrInfo, new ActionTimeout(60000), new RecordItemIndex(5));
+            repo.FrmAufk.TpPos1.Tab_AufP.ZlNrInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='7') on item 'FrmAufk.ZlNr'.", repo.FrmAufk.ZlNrInfo, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.FrmAufk.ZlNrInfo, "Text", "7");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='7') on item 'FrmAufk.TpPos1.Tab_AufP.ZlNr'.", repo.FrmAufk.TpPos1.Tab_AufP.ZlNrInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmAufk.TpPos1.Tab_AufP.ZlNrInfo, "Text", "7");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.Kopf' at Center.", repo.FrmAufk.KopfInfo, new RecordItemIndex(7));
             repo.FrmAufk.Kopf.Click();
@@ -165,8 +165,8 @@ namespace V_AUF_008.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(19));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4') on item 'FrmAufk.DfAufpZeile'.", repo.FrmAufk.DfAufpZeileInfo, new RecordItemIndex(20));
-            Validate.AttributeEqual(repo.FrmAufk.DfAufpZeileInfo, "Text", "4");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4') on item 'FrmAufk.TpPos1.Tab_AufP.ZlNr'.", repo.FrmAufk.TpPos1.Tab_AufP.ZlNrInfo, new RecordItemIndex(20));
+            Validate.AttributeEqual(repo.FrmAufk.TpPos1.Tab_AufP.ZlNrInfo, "Text", "4");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.Kopf' at Center.", repo.FrmAufk.KopfInfo, new RecordItemIndex(21));
             repo.FrmAufk.Kopf.Click();

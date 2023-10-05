@@ -92,11 +92,11 @@ namespace V_AUF_008.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.ArtNr' at Center.", repo.FrmAufk.ArtNrInfo, new RecordItemIndex(0));
-            repo.FrmAufk.ArtNr.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.TpPos1.Tab_AufP.ArtNr' at Center.", repo.FrmAufk.TpPos1.Tab_AufP.ArtNrInfo, new RecordItemIndex(0));
+            repo.FrmAufk.TpPos1.Tab_AufP.ArtNr.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Variable_Stkl' with focus on 'FrmAufk.ArtNr'.", repo.FrmAufk.ArtNrInfo, new RecordItemIndex(1));
-            repo.FrmAufk.ArtNr.PressKeys(Variable_Stkl);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Variable_Stkl' with focus on 'FrmAufk.TpPos1.Tab_AufP.ArtNr'.", repo.FrmAufk.TpPos1.Tab_AufP.ArtNrInfo, new RecordItemIndex(1));
+            repo.FrmAufk.TpPos1.Tab_AufP.ArtNr.PressKeys(Variable_Stkl);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
