@@ -1618,7 +1618,7 @@ namespace K_AUSW_001
                 _kopfbereich = new K_AUSW_001RepositoryFolders.KopfbereichFolder(this);
                 _tabelle = new K_AUSW_001RepositoryFolders.TabelleFolder(this);
                 _fusszeile = new K_AUSW_001RepositoryFolders.FusszeileFolder(this);
-                _titlebar100kontenabfrageInfo = new RepoItemInfo(this, "TitleBar100Kontenabfrage", "titlebar[@accessiblerole='TitleBar']", "", 120000, null, "124814bf-67ea-4b56-9e5f-534a6c5645d9");
+                _titlebar100kontenabfrageInfo = new RepoItemInfo(this, "TitleBar100Kontenabfrage", "titlebar[@accessiblerole='TitleBar']", "", 60000, null, "124814bf-67ea-4b56-9e5f-534a6c5645d9");
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "a10b89c3-b1cd-4fe5-beb7-3a854c327eb2");
             }
 

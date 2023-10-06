@@ -127,7 +127,7 @@ namespace V_AUF_008
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'Auftragserfassung') on item 'FrmAufk.TitleBar100Auftragserfassung'.", repo.FrmAufk.TitleBar100AuftragserfassungInfo, new RecordItemIndex(2));
             Validate.AttributeRegex(repo.FrmAufk.TitleBar100AuftragserfassungInfo, "Text", new Regex("Auftragserfassung"));
             
-            GetDateTimeAsString("dd.MM.yyyy");
+            Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("dd.MM.yyyy");
             
         }
 

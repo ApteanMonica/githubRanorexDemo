@@ -20,38 +20,51 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace K_AUSW_002.Recordings
+namespace B_BUAB_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Uebersicht_und_Ergebnis_schliessen recording.
+    ///The Tagesdatum_ermitteln recording.
     /// </summary>
-    [TestModule("b2773a39-e987-4be0-a175-e557ad0ba536", ModuleType.Recording, 1)]
-    public partial class Uebersicht_und_Ergebnis_schliessen : ITestModule
+    [TestModule("750e228b-63b1-4a46-8d94-88d65938ef40", ModuleType.Recording, 1)]
+    public partial class Tagesdatum_ermitteln : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::K_AUSW_002.K_AUSW_002Repository repository.
+        /// Holds an instance of the global::B_BUAB_002.B_BUAB_002Repository repository.
         /// </summary>
-        public static global::K_AUSW_002.K_AUSW_002Repository repo = global::K_AUSW_002.K_AUSW_002Repository.Instance;
+        public static global::B_BUAB_002.B_BUAB_002Repository repo = global::B_BUAB_002.B_BUAB_002Repository.Instance;
 
-        static Uebersicht_und_Ergebnis_schliessen instance = new Uebersicht_und_Ergebnis_schliessen();
+        static Tagesdatum_ermitteln instance = new Tagesdatum_ermitteln();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Uebersicht_und_Ergebnis_schliessen()
+        public Tagesdatum_ermitteln()
         {
+            Tagesdatum = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Uebersicht_und_Ergebnis_schliessen Instance
+        public static Tagesdatum_ermitteln Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _Tagesdatum;
+
+        /// <summary>
+        /// Gets or sets the value of variable Tagesdatum.
+        /// </summary>
+        [TestVariable("e3868bca-17b2-4af4-97d1-18a5fea6ee0b")]
+        public string Tagesdatum
+        {
+            get { return _Tagesdatum; }
+            set { _Tagesdatum = value; }
+        }
 
 #endregion
 
@@ -79,17 +92,7 @@ namespace K_AUSW_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAnzeige.Schliessen' at Center.", repo.TblAnzeige.SchliessenInfo, new RecordItemIndex(0));
-            repo.TblAnzeige.Schliessen.Click();
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
-            Delay.Duration(2000, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAnzeige.Schliessen' at Center.", repo.TblAnzeige.SchliessenInfo, new RecordItemIndex(2));
-            repo.TblAnzeige.Schliessen.Click();
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));
-            Delay.Duration(2000, false);
+            Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("dd.MM.yyyy");
             
         }
 

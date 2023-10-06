@@ -82,162 +82,82 @@ namespace K_AUSW_002.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='GUV') on item 'FrmMain.FlexGrid_TblAtbz.ColAusaCdRow1'.", repo.FrmMain.FlexGrid_TblAtbz.ColAusaCdRow1Info, new RecordItemIndex(0));
             Validate.AttributeEqual(repo.FrmMain.FlexGrid_TblAtbz.ColAusaCdRow1Info, "Text", "GUV");
             
-            // neu Beginn
-            Report.Log(ReportLevel.Info, "Section", "neu Beginn", new RecordItemIndex(1));
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.FlexGrid_TblAtbz.ColTypRow1' at Center.", repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.FlexGrid_TblAtbz.ColTypRow1' at Center.", repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1Info, new RecordItemIndex(1));
             repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'FrmMain.FlexGrid_TblAtbz.ColTypRow1' at Center.", repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'FrmMain.FlexGrid_TblAtbz.ColTypRow1' at Center.", repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1Info, new RecordItemIndex(2));
             repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1.Click(System.Windows.Forms.MouseButtons.Right);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'KAUSW.Auswahlliste'", repo.KAUSW.AuswahllisteInfo, new ActionTimeout(120000), new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'KAUSW.Auswahlliste'", repo.KAUSW.AuswahllisteInfo, new ActionTimeout(120000), new RecordItemIndex(3));
             repo.KAUSW.AuswahllisteInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KAUSW.Auswahlliste' at Center.", repo.KAUSW.AuswahllisteInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KAUSW.Auswahlliste' at Center.", repo.KAUSW.AuswahllisteInfo, new RecordItemIndex(4));
             repo.KAUSW.Auswahlliste.Click();
+            
+            // Auswahlliste Konditionen
+            Report.Log(ReportLevel.Info, "Section", "Auswahlliste Konditionen", new RecordItemIndex(5));
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Form100AuswahllisteKonditionen.TitleBar100AuswahllisteKonditionen'", repo.Form100AuswahllisteKonditionen.TitleBar100AuswahllisteKonditionenInfo, new ActionTimeout(120000), new RecordItemIndex(6));
             repo.Form100AuswahllisteKonditionen.TitleBar100AuswahllisteKonditionenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0'.", new RecordItemIndex(7));
-            Keyboard.Press("0");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'DlgListBox.CellTmpColS2Row1'.", repo.DlgListBox.CellTmpColS2Row1Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.DlgListBox.CellTmpColS2Row1Info, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(8));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgListBox.Row1Column0' at Center.", repo.DlgListBox.Row1Column0Info, new RecordItemIndex(8));
+            repo.DlgListBox.Row1Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press.", new RecordItemIndex(9));
-            Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1ms.", new RecordItemIndex(9));
+            Delay.Duration(1, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmMain.FlexGrid_TblAtbz.ColTypRow1'.", repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1Info, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1Info, "Text", "0");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgListBox.PbOk' at Center.", repo.DlgListBox.PbOkInfo, new RecordItemIndex(10));
+            repo.DlgListBox.PbOk.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            // zurück zum Formular Kostenstellenauswahl ändern
+            Report.Log(ReportLevel.Info, "Section", "zurück zum Formular Kostenstellenauswahl ändern", new RecordItemIndex(11));
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmMain.FlexGrid_TblAtbz.ColTypRow1'.", repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1Info, "Text", "0");
             
-            // neu Ende
-            Report.Log(ReportLevel.Info, "Section", "neu Ende", new RecordItemIndex(13));
-            
-            // alt2 Beginn
-            //Report.Log(ReportLevel.Info, "Section", "alt2 Beginn", new RecordItemIndex(14));
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.FlexGrid_TblAtbz.ColTypRow1' at Center.", repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1Info, new RecordItemIndex(15));
-            //repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1.Click();
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'FrmMain.FlexGrid_TblAtbz.ColTypRow1' at Center.", repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1Info, new RecordItemIndex(16));
-            //repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1.Click(System.Windows.Forms.MouseButtons.Right);
-            
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(17));
-            //Delay.Duration(1000, false);
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Down' Press.", new RecordItemIndex(18));
-            //Keyboard.Press(System.Windows.Forms.Keys.Down, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(19));
-            //Delay.Duration(1000, false);
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press.", new RecordItemIndex(20));
-            //Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'Form100AuswahllisteKonditionen.TitleBar100AuswahllisteKonditionen'", repo.Form100AuswahllisteKonditionen.TitleBar100AuswahllisteKonditionenInfo, new ActionTimeout(60000), new RecordItemIndex(21));
-            //repo.Form100AuswahllisteKonditionen.TitleBar100AuswahllisteKonditionenInfo.WaitForExists(60000);
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0'.", new RecordItemIndex(22));
-            //Keyboard.Press("0");
-            
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(23));
-            //Delay.Duration(2000, false);
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press.", new RecordItemIndex(24));
-            //Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmMain.FlexGrid_TblAtbz.ColTypRow1'.", repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1Info, new RecordItemIndex(25));
-            //Validate.AttributeEqual(repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1Info, "Text", "0");
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(26));
-            //Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmMain.FlexGrid_TblAtbz.ColTypRow1'.", repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1Info, new RecordItemIndex(27));
-            //Validate.AttributeEqual(repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1Info, "Text", "0");
-            
-            // alt2 Ende
-            Report.Log(ReportLevel.Info, "Section", "alt2 Ende", new RecordItemIndex(28));
-            
-            // alt Beginn
-            Report.Log(ReportLevel.Info, "Section", "alt Beginn", new RecordItemIndex(29));
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.FlexGrid_TblAtbz.ColAusaCdRow1' at Center.", repo.FrmMain.FlexGrid_TblAtbz.ColAusaCdRow1Info, new RecordItemIndex(30));
-            //repo.FrmMain.FlexGrid_TblAtbz.ColAusaCdRow1.Click();
-            
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(31));
-            //Delay.Duration(2000, false);
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(32));
-            //Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(33));
-            //Delay.Duration(1000, false);
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(34));
-            //Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(35));
-            //Delay.Duration(1000, false);
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0'.", new RecordItemIndex(36));
-            //Keyboard.Press("0");
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(37));
-            //Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            // alt Ende
-            Report.Log(ReportLevel.Info, "Section", "alt Ende", new RecordItemIndex(38));
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(39));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmMain.FlexGrid_TblAtbz.ColTypRow1'.", repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1Info, new RecordItemIndex(13));
+            Keyboard.PrepareFocus(repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(40));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(14));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(41));
-            Delay.Duration(1000, false);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'FrmMain.FlexGrid_TblAtbz.ColVon1Row1'.", repo.FrmMain.FlexGrid_TblAtbz.ColVon1Row1Info, new RecordItemIndex(42));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'FrmMain.FlexGrid_TblAtbz.ColVon1Row1'.", repo.FrmMain.FlexGrid_TblAtbz.ColVon1Row1Info, new RecordItemIndex(15));
             Keyboard.PrepareFocus(repo.FrmMain.FlexGrid_TblAtbz.ColVon1Row1);
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(43));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(16));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(44));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(17));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(45));
-            Delay.Duration(1000, false);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'FrmMain.FlexGrid_TblAtbz.ColBis1Row1'.", repo.FrmMain.FlexGrid_TblAtbz.ColBis1Row1Info, new RecordItemIndex(46));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'FrmMain.FlexGrid_TblAtbz.ColBis1Row1'.", repo.FrmMain.FlexGrid_TblAtbz.ColBis1Row1Info, new RecordItemIndex(18));
             Keyboard.PrepareFocus(repo.FrmMain.FlexGrid_TblAtbz.ColBis1Row1);
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(47));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(19));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(48));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(20));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.PbDataAccessSpeichern' at Center.", repo.FrmMain.PbDataAccessSpeichernInfo, new RecordItemIndex(49));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.PbDataAccessSpeichern' at Center.", repo.FrmMain.PbDataAccessSpeichernInfo, new RecordItemIndex(21));
             repo.FrmMain.PbDataAccessSpeichern.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmMain.FlexGrid_TblAtbz.ColTypRow1'.", repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1Info, new RecordItemIndex(50));
+            // Formularauswahl prüfen
+            Report.Log(ReportLevel.Info, "Section", "Formularauswahl prüfen", new RecordItemIndex(22));
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmMain.FlexGrid_TblAtbz.ColTypRow1'.", repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1Info, new RecordItemIndex(23));
             Validate.AttributeEqual(repo.FrmMain.FlexGrid_TblAtbz.ColTypRow1Info, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmMain.FlexGrid_TblAtbz.ColVon1Row1'.", repo.FrmMain.FlexGrid_TblAtbz.ColVon1Row1Info, new RecordItemIndex(51));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmMain.FlexGrid_TblAtbz.ColVon1Row1'.", repo.FrmMain.FlexGrid_TblAtbz.ColVon1Row1Info, new RecordItemIndex(24));
             Validate.AttributeEqual(repo.FrmMain.FlexGrid_TblAtbz.ColVon1Row1Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmMain.FlexGrid_TblAtbz.ColBis1Row1'.", repo.FrmMain.FlexGrid_TblAtbz.ColBis1Row1Info, new RecordItemIndex(52));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmMain.FlexGrid_TblAtbz.ColBis1Row1'.", repo.FrmMain.FlexGrid_TblAtbz.ColBis1Row1Info, new RecordItemIndex(25));
             Validate.AttributeEqual(repo.FrmMain.FlexGrid_TblAtbz.ColBis1Row1Info, "Text", "");
             
         }

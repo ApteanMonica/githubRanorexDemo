@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace K_AUSW_002.Recordings
+namespace X_MUSTER_022
 {
-    public partial class Uebersicht_und_Ergebnis_schliessen
+    public partial class CloseAUT
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

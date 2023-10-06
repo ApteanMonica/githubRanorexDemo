@@ -69,7 +69,7 @@
 				comparison="AND"
 				enabled="True">
 					<condition
-					comparison="IsEqual">
+					comparison="IsNotEqual">
 						<leftvalue>
 							<datavaluesource>
 								<databinding
@@ -81,7 +81,24 @@
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="521">
+							value="510">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="ProgrammVersion"
+								id="ba1022ec-dfe2-4f89-9d36-ba074c4b6a74">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="511">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>

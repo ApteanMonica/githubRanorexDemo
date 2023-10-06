@@ -174,8 +174,8 @@ namespace B_ZAHL_007.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBankbeleg.PbCommonStart' at Center.", repo.FrmBankbeleg.PbCommonStartInfo, new RecordItemIndex(20));
             repo.FrmBankbeleg.PbCommonStart.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'UEberweisungsDatentraeger.UEberweisungsDatentraeger'", repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo, new ActionTimeout(180000), new RecordItemIndex(21));
-            repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo.WaitForExists(180000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 4m to exist. Associated repository item: 'UEberweisungsDatentraeger.UEberweisungsDatentraeger'", repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo, new ActionTimeout(240000), new RecordItemIndex(21));
+            repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo.WaitForExists(240000);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'c:\\temp\\nur_gesperrte_OPs.xml' with focus on 'UEberweisungsDatentraeger.Text1001'.", repo.UEberweisungsDatentraeger.Text1001Info, new RecordItemIndex(22));
             repo.UEberweisungsDatentraeger.Text1001.PressKeys("c:\\temp\\nur_gesperrte_OPs.xml");

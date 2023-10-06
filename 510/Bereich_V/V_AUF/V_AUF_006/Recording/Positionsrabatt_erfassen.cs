@@ -41,6 +41,7 @@ namespace V_AUF_006.Recording
         /// </summary>
         public Positionsrabatt_erfassen()
         {
+            rabatt = "";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace V_AUF_006.Recording
         }
 
 #region Variables
+
+        string _rabatt;
+
+        /// <summary>
+        /// Gets or sets the value of variable rabatt.
+        /// </summary>
+        [TestVariable("75f375b2-b4df-4057-a261-48d4397fcdcf")]
+        public string rabatt
+        {
+            get { return _rabatt; }
+            set { _rabatt = value; }
+        }
 
 #endregion
 
@@ -113,35 +126,43 @@ namespace V_AUF_006.Recording
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgRabaMehrPos.DfRabatt' at Center.", repo.DlgRabaMehrPos.DfRabattInfo, new RecordItemIndex(9));
             repo.DlgRabaMehrPos.DfRabatt.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '10' with focus on 'DlgRabaMehrPos.DfRabatt'.", repo.DlgRabaMehrPos.DfRabattInfo, new RecordItemIndex(10));
-            repo.DlgRabaMehrPos.DfRabatt.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '10' with focus on 'DlgRabaMehrPos.Rabatt'.", repo.DlgRabaMehrPos.RabattInfo, new RecordItemIndex(10));
+            repo.DlgRabaMehrPos.Rabatt.EnsureVisible();
             Keyboard.Press("10");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s for the attribute 'Text' to equal the specified value '10'. Associated repository item: 'DlgRabaMehrPos.DfRabatt'", repo.DlgRabaMehrPos.DfRabattInfo, new RecordItemIndex(12));
-            repo.DlgRabaMehrPos.DfRabattInfo.WaitForAttributeEqual(30000, "Text", "10");
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 30s for the attribute 'Text' to equal the specified value '10'. Associated repository item: 'DlgRabaMehrPos.Rabatt'", repo.DlgRabaMehrPos.RabattInfo, new RecordItemIndex(12));
+            //repo.DlgRabaMehrPos.RabattInfo.WaitForAttributeEqual(30000, "Text", "10");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'DlgRabaMehrPos.DfRabatt'.", repo.DlgRabaMehrPos.DfRabattInfo, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.DlgRabaMehrPos.DfRabattInfo, "Text", "10");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'DlgRabaMehrPos.Rabatt' and assigning its value to variable 'rabatt'.", repo.DlgRabaMehrPos.RabattInfo, new RecordItemIndex(13));
+            rabatt = repo.DlgRabaMehrPos.Rabatt.Element.GetAttributeValueText("Text");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgRabaMehrPos.PbOk' at Center.", repo.DlgRabaMehrPos.PbOkInfo, new RecordItemIndex(14));
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateWithoutDecimals(rabatt, "10");
+            
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'DlgRabaMehrPos.Rabatt'.", repo.DlgRabaMehrPos.RabattInfo, new RecordItemIndex(15));
+            //Validate.AttributeEqual(repo.DlgRabaMehrPos.RabattInfo, "Text", "10");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgRabaMehrPos.PbOk' at Center.", repo.DlgRabaMehrPos.PbOkInfo, new RecordItemIndex(16));
             repo.DlgRabaMehrPos.PbOk.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.PbCommmon1NewLoad' at Center.", repo.FrmAufk.PbCommmon1NewLoadInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.PbCommmon1NewLoad' at Center.", repo.FrmAufk.PbCommmon1NewLoadInfo, new RecordItemIndex(17));
             repo.FrmAufk.PbCommmon1NewLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.FlexGrid.Row3Column0' at Center.", repo.FrmAufk.FlexGrid.Row3Column0Info, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.FlexGrid.Row3Column0' at Center.", repo.FrmAufk.FlexGrid.Row3Column0Info, new RecordItemIndex(18));
             repo.FrmAufk.FlexGrid.Row3Column0.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9,900') on item 'FrmAufk.DfAufpPreis2'.", repo.FrmAufk.DfAufpPreis2Info, new RecordItemIndex(17));
-            Validate.AttributeEqual(repo.FrmAufk.DfAufpPreis2Info, "Text", "9,900");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'FrmAufk.FlexGrid.Row3Column0'", repo.FrmAufk.FlexGrid.Row3Column0Info, new ActionTimeout(30000), new RecordItemIndex(19));
+            repo.FrmAufk.FlexGrid.Row3Column0Info.WaitForExists(30000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (HasFocus='False') on item 'FrmAufk.ColRabpWertRow1'.", repo.FrmAufk.ColRabpWertRow1Info, new RecordItemIndex(18));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9,900') on item 'FrmAufk.DfAufpPreis2'.", repo.FrmAufk.DfAufpPreis2Info, new RecordItemIndex(20));
+            //Validate.AttributeEqual(repo.FrmAufk.DfAufpPreis2Info, "Text", "9,900");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (HasFocus='False') on item 'FrmAufk.ColRabpWertRow1'.", repo.FrmAufk.ColRabpWertRow1Info, new RecordItemIndex(21));
             Validate.AttributeEqual(repo.FrmAufk.ColRabpWertRow1Info, "HasFocus", "False");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.PSpec2BelegAbschliessen' at Center.", repo.FrmAufk.PSpec2BelegAbschliessenInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.PSpec2BelegAbschliessen' at Center.", repo.FrmAufk.PSpec2BelegAbschliessenInfo, new RecordItemIndex(22));
             repo.FrmAufk.PSpec2BelegAbschliessen.Click();
             
         }

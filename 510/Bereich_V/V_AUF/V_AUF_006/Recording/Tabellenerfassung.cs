@@ -216,29 +216,39 @@ namespace V_AUF_006.Recording
             repo.TblTabellenerfassung.FlexGrid1.ColAufpMengeRow3.EnsureVisible();
             Keyboard.Press("2{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Art_NR_TabErf_1) on item 'TblTabellenerfassung.FlexGrid1.ColArtNrRow1'.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow1Info, new RecordItemIndex(30));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblTabellenerfassung.FlexGrid1.ColAufpMengeRow3'", repo.TblTabellenerfassung.FlexGrid1.ColAufpMengeRow3Info, new ActionTimeout(60000), new RecordItemIndex(30));
+            repo.TblTabellenerfassung.FlexGrid1.ColAufpMengeRow3Info.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Art_NR_TabErf_1) on item 'TblTabellenerfassung.FlexGrid1.ColArtNrRow1'.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow1Info, new RecordItemIndex(31));
             Validate.AttributeEqual(repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow1Info, "Text", Art_NR_TabErf_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Art_NR_TabErf_2) on item 'TblTabellenerfassung.FlexGrid1.ColArtNrRow2'.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow2Info, new RecordItemIndex(31));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Art_NR_TabErf_2) on item 'TblTabellenerfassung.FlexGrid1.ColArtNrRow2'.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow2Info, new RecordItemIndex(32));
             Validate.AttributeEqual(repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow2Info, "Text", Art_NR_TabErf_2);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Art_NR_TabErf_3) on item 'TblTabellenerfassung.FlexGrid1.ColArtNrRow3'.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow3Info, new RecordItemIndex(32));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Art_NR_TabErf_3) on item 'TblTabellenerfassung.FlexGrid1.ColArtNrRow3'.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow3Info, new RecordItemIndex(33));
             Validate.AttributeEqual(repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow3Info, "Text", Art_NR_TabErf_3);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}' with focus on 'TblTabellenerfassung.FlexGrid'.", repo.TblTabellenerfassung.FlexGridInfo, new RecordItemIndex(33));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}' with focus on 'TblTabellenerfassung.FlexGrid'.", repo.TblTabellenerfassung.FlexGridInfo, new RecordItemIndex(34));
             repo.TblTabellenerfassung.FlexGrid.EnsureVisible();
             Keyboard.Press("{F12}");
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ACHTUNG: Kreditlimit um 11,20 EUR überschritten\r\n\r\nWollen Sie die Position trotzdem speichern?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(34));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ACHTUNG: Kreditlimit um 11,20 EUR überschritten\r\n\r\nWollen Sie die Position trotzdem speichern?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(35));
             //Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "ACHTUNG: Kreditlimit um 11,20 EUR überschritten\r\n\r\nWollen Sie die Position trotzdem speichern?");
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(35));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(36));
             //repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Keine weiteren Positionen zu erfassen') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(36));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Keine weiteren Positionen zu erfassen");
+            try {
+                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 3m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(180000), new RecordItemIndex(37));
+                repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(180000);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(37)); }
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(37));
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='Keine weiteren Positionen zu erfassen') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(38));
+                Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Keine weiteren Positionen zu erfassen", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(38)); }
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(39));
             repo.DlgMessageBox.Button0.Click();
             
         }

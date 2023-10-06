@@ -153,18 +153,19 @@ namespace K_VERE_001.Recordings_K_VEST
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(2));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3' at Center.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3Info, new RecordItemIndex(3));
-            repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3.DoubleClick();
+            // mit Taste Pos2 zum Beginn des Feldes gehen
+            Report.Log(ReportLevel.Info, "Keyboard", "mit Taste Pos2 zum Beginn des Feldes gehen\r\nKey 'Home' Press.", new RecordItemIndex(3));
+            Keyboard.Press(System.Windows.Forms.Keys.Home, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3'.", repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3Info, new RecordItemIndex(5));
-            Keyboard.PrepareFocus(repo.MdiMain_K_VEST.Untere_Tabelle.Row3.ColKs1NrVonRow3);
+            // 2x entfernen
+            Report.Log(ReportLevel.Info, "Keyboard", "2x entfernen\r\nKey 'Delete' Press.", new RecordItemIndex(5));
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(6));
-            Delay.Duration(1000, false);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(6));
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);

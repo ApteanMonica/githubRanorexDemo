@@ -3084,6 +3084,15 @@ JpCMjod7Utx/rrX/AK6n/wBAagCeiiigD//Z
 			<AttributeValue>
 			</AttributeValue>
 		</setvaluerecorditem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="Tab"
@@ -5832,6 +5841,35 @@ JpCMjod7Utx/rrX/AK6n/wBAagCeiiigD//Z
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="fcb36bc2-fce6-429f-ae2a-37dfbdd86b89">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Form_Name_A20">
+				</binding>
+			</bindings>
+			<info
+			id="130c07d6-ab35-4546-9c57-0094cfb76f63"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmUVAK']/?/?/combobox[@controlname='cmbUvak1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
 		<setvaluerecorditem
 		attrname="ControlText"
 		enabled="True"
@@ -8558,6 +8596,15 @@ JpCMjod7Utx/rrX/AK6n/wBAagCeiiigD//Z
 				</robustPath>
 			</info>
 		</setvaluerecorditem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="Tab"
@@ -11285,6 +11332,61 @@ JpCMjod7Utx/rrX/AK6n/wBAagCeiiigD//Z
 				</robustPath>
 			</info>
 		</keyitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="fcb36bc2-fce6-429f-ae2a-37dfbdd86b89">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Form_Name_NEU">
+				</binding>
+			</bindings>
+			<info
+			id="1b0db995-0efd-4cd7-bb65-fa58cf6b8771"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmUVAK']/?/?/combobox[@controlname='cmbUvak2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="43b6bd28-afa5-49af-b435-291bc022faf5"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="97017848-967b-4930-bac9-4146d03a0234"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmUVAK']/container[@controlname='ClientArea']/?/?/text[@accessiblerole='Text']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"

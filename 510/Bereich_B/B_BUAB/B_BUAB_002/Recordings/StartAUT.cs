@@ -127,8 +127,6 @@ namespace B_BUAB_002.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Buchungen anzeigen') on item 'TblB.TitleBar100BuchungenAnzeigen'.", repo.TblB.TitleBar100BuchungenAnzeigenInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.TblB.TitleBar100BuchungenAnzeigenInfo, "Text", "Buchungen anzeigen");
             
-            Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("dd.MM.yyyy");
-            
         }
 
 #region Image Feature Data

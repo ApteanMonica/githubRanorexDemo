@@ -45,15 +45,26 @@ mode="Global">
 				</robustPath>
 			</info>
 		</closeapprecorditem>
-		<explicitdelayitem
-		duration="1000ms"
+		<WaitForRecordItem
 		enabled="True"
-		optional="False">
+		optional="False"
+		searchpropertyid="b29a6816-9d06-4dcc-8572-f1c2d211a2a3"
+		waitaction="NotExists"
+		waittimeout="120000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="ab1a801a-199e-45fa-9fc5-db36145c6c7a"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblBkAb']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 	</recorditems>
 	<repository
 	id="017661d7-3daa-4c0f-87ee-8b97d99a6621"

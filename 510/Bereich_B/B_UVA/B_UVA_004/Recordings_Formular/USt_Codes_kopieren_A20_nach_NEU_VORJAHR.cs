@@ -42,10 +42,10 @@ namespace B_UVA_004.Recordings_Formular
         public USt_Codes_kopieren_A20_nach_NEU_VORJAHR()
         {
             Firma_2 = "200";
-            Form_Name_NEU_VORJAHR = "";
-            Form_Code_NEU_VORJAHR = "";
-            Form_Name_A20 = "";
-            Form_Code_A20 = "";
+            Form_Name_NEU_VORJAHR = "UVA-Österreich 2022";
+            Form_Code_NEU_VORJAHR = "A22";
+            Form_Name_A20 = "UVA-Österreich 2020";
+            Form_Code_A20 = "A20";
         }
 
         /// <summary>
@@ -157,60 +157,75 @@ namespace B_UVA_004.Recordings_Formular
             Report.Log(ReportLevel.Info, "Set value", "Setting attribute ControlText to '$Form_Name_A20' on item 'FrmUVAK.CmbUvak1'.", repo.FrmUVAK.CmbUvak1Info, new RecordItemIndex(4));
             repo.FrmUVAK.CmbUvak1.Element.SetAttributeValue("ControlText", Form_Name_A20);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmUVAK.CmbUvak1'.", repo.FrmUVAK.CmbUvak1Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(5));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmUVAK.CmbUvak1'.", repo.FrmUVAK.CmbUvak1Info, new RecordItemIndex(6));
             Keyboard.PrepareFocus(repo.FrmUVAK.CmbUvak1);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(7));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute ControlText to '$Form_Name_NEU_VORJAHR' on item 'FrmUVAK.CmbUvak2'.", repo.FrmUVAK.CmbUvak2Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Form_Name_A20) on item 'FrmUVAK.CmbUvak1'.", repo.FrmUVAK.CmbUvak1Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.FrmUVAK.CmbUvak1Info, "Text", Form_Name_A20);
+            
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute ControlText to '$Form_Name_NEU_VORJAHR' on item 'FrmUVAK.CmbUvak2'.", repo.FrmUVAK.CmbUvak2Info, new RecordItemIndex(9));
             repo.FrmUVAK.CmbUvak2.Element.SetAttributeValue("ControlText", Form_Name_NEU_VORJAHR);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmUVAK.CmbUvak2'.", repo.FrmUVAK.CmbUvak2Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(10));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmUVAK.CmbUvak2'.", repo.FrmUVAK.CmbUvak2Info, new RecordItemIndex(11));
             Keyboard.PrepareFocus(repo.FrmUVAK.CmbUvak2);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Firma_2) on item 'FrmUVAK.Text'.", repo.FrmUVAK.TextInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Form_Name_NEU_VORJAHR) on item 'FrmUVAK.CmbUvak2'.", repo.FrmUVAK.CmbUvak2Info, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.FrmUVAK.CmbUvak2Info, "Text", Form_Name_NEU_VORJAHR);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUVAK.Text' at Center.", repo.FrmUVAK.TextInfo, new RecordItemIndex(13));
+            repo.FrmUVAK.Text.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Firma_2) on item 'FrmUVAK.Text'.", repo.FrmUVAK.TextInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.FrmUVAK.TextInfo, "Text", Firma_2);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmUVAK.CbNurZuordnung'.", repo.FrmUVAK.CbNurZuordnungInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmUVAK.CbNurZuordnung'.", repo.FrmUVAK.CbNurZuordnungInfo, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.FrmUVAK.CbNurZuordnungInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (ControlText=$Form_Name_A20) on item 'FrmUVAK.CmbUvak1'.", repo.FrmUVAK.CmbUvak1Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (ControlText=$Form_Name_A20) on item 'FrmUVAK.CmbUvak1'.", repo.FrmUVAK.CmbUvak1Info, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.FrmUVAK.CmbUvak1Info, "ControlText", Form_Name_A20);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (ControlText=$Form_Name_NEU_VORJAHR) on item 'FrmUVAK.CmbUvak2'.", repo.FrmUVAK.CmbUvak2Info, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (ControlText=$Form_Name_NEU_VORJAHR) on item 'FrmUVAK.CmbUvak2'.", repo.FrmUVAK.CmbUvak2Info, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.FrmUVAK.CmbUvak2Info, "ControlText", Form_Name_NEU_VORJAHR);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Form_Code_A20) on item 'FrmUVAK.DfCode1'.", repo.FrmUVAK.DfCode1Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Form_Code_A20) on item 'FrmUVAK.DfCode1'.", repo.FrmUVAK.DfCode1Info, new RecordItemIndex(18));
             Validate.AttributeEqual(repo.FrmUVAK.DfCode1Info, "Text", Form_Code_A20);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUVAK.PbUVAKKopieren' at Center.", repo.FrmUVAK.PbUVAKKopierenInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUVAK.PbUVAKKopieren' at Center.", repo.FrmUVAK.PbUVAKKopierenInfo, new RecordItemIndex(19));
             repo.FrmUVAK.PbUVAKKopieren.Click();
             
             // nur für Test nötig, wenn Zuordnungen bereits vorhanden
-            //Report.Log(ReportLevel.Info, "Validation", "nur für Test nötig, wenn Zuordnungen bereits vorhanden\r\nValidating AttributeEqual (Text='\r\r\nZuordnungen sind bei Firma 200 in Formular A21 bereits vorhanden!\r\n\r\nDie bestehende Daten werden überschrieben!\r\n\r\nTrotzdem kopieren?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(15));
+            //Report.Log(ReportLevel.Info, "Validation", "nur für Test nötig, wenn Zuordnungen bereits vorhanden\r\nValidating AttributeEqual (Text='\r\r\nZuordnungen sind bei Firma 200 in Formular A21 bereits vorhanden!\r\n\r\nDie bestehende Daten werden überschrieben!\r\n\r\nTrotzdem kopieren?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(20));
             //Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "\r\r\nZuordnungen sind bei Firma 200 in Formular A21 bereits vorhanden!\r\n\r\nDie bestehende Daten werden überschrieben!\r\n\r\nTrotzdem kopieren?");
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(16));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(21));
             //repo.DlgMessageBox.Button0.Click();
             
             // Wenn Zurodnungen bereits vorhanden sind durch Test b_uva_003
-            Report.Log(ReportLevel.Info, "Keyboard", "Wenn Zurodnungen bereits vorhanden sind durch Test b_uva_003\r\nKey sequence 'J'.", new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Keyboard", "Wenn Zurodnungen bereits vorhanden sind durch Test b_uva_003\r\nKey sequence 'J'.", new RecordItemIndex(22));
             Keyboard.Press("J");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(120000), new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(120000), new RecordItemIndex(23));
             repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Kopiervorgang beendet') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Kopiervorgang beendet') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(24));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Kopiervorgang beendet");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(25));
             repo.DlgMessageBox.Button0.Click();
             
             // Validierung am Ende wegen tw Zeitverzögerung beim Laden
-            Report.Log(ReportLevel.Info, "Validation", "Validierung am Ende wegen tw Zeitverzögerung beim Laden\r\nValidating AttributeEqual (Text=$Form_Code_NEU_VORJAHR) on item 'FrmUVAK.DfCode2'.", repo.FrmUVAK.DfCode2Info, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Validation", "Validierung am Ende wegen tw Zeitverzögerung beim Laden\r\nValidating AttributeEqual (Text=$Form_Code_NEU_VORJAHR) on item 'FrmUVAK.DfCode2'.", repo.FrmUVAK.DfCode2Info, new RecordItemIndex(26));
             Validate.AttributeEqual(repo.FrmUVAK.DfCode2Info, "Text", Form_Code_NEU_VORJAHR);
             
         }

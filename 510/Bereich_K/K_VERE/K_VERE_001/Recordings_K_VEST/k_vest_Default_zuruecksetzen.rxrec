@@ -94,32 +94,22 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
-		<mouseitem
-		action="DoubleClick"
-		button="Left"
-		duration="300ms"
+		<keyitem
+		action="Press"
+		data="Home"
+		duration="20ms"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
 		optional="False"
-		searchpropertyid="117f10e5-0070-4542-9a93-86495405260c"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="2f8e025e-ab60-4d0d-970e-c75d9aeb07cd"
+		setModifiers="True">
 			<comment>
+				mit Taste Pos2 zum Beginn des Feldes gehen
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="ff991a7e-9b18-4e1a-a920-8566a459c65e"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='mdiMain']/container[@controlname='ClientArea']/container[@controlname='Splitter']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='tblVest']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colKs1_nr_von Row 3']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
+		</keyitem>
 		<explicitdelayitem
 		duration="1000ms"
 		enabled="True"
@@ -137,31 +127,29 @@ mode="Global">
 		optional="False"
 		presstime="20ms"
 		scancode="0"
-		searchpropertyid="028562bb-a5f8-43ad-889e-9e7c36ee3d7b"
+		searchpropertyid="9a01ad38-dbab-4306-b3a5-7c633eb5de31"
+		setModifiers="True">
+			<comment>
+				2x entfernen
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<keyitem
+		action="Press"
+		data="Delete"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="9a01ad38-dbab-4306-b3a5-7c633eb5de31"
 		setModifiers="True">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="ff991a7e-9b18-4e1a-a920-8566a459c65e"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='mdiMain']/container[@controlname='ClientArea']/container[@controlname='Splitter']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='tblVest']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colKs1_nr_von Row 3']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
 		</keyitem>
-		<explicitdelayitem
-		duration="1000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="Tab"

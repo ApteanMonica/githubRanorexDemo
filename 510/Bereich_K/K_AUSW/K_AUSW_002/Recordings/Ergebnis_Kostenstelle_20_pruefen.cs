@@ -79,32 +79,25 @@ namespace K_AUSW_002.Recordings
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblAnzeige.TitleBar_mit_Text'.", repo.TblAnzeige.TitleBar_mit_TextInfo, new RecordItemIndex(0));
-            //Validate.Exists(repo.TblAnzeige.TitleBar_mit_TextInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Code <GB / Geschäftsbericht>') on item 'TblAnzeige.TitleBar100GuVSec231UGBStand2016'.", repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, "Text", "Code <GB / Geschäftsbericht>");
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Code <GB / Geschäftsbericht>') on item 'TblAnzeige.TitleBar_mit_Text'.", repo.TblAnzeige.TitleBar_mit_TextInfo, new RecordItemIndex(1));
-            //Validate.AttributeContains(repo.TblAnzeige.TitleBar_mit_TextInfo, "Text", "Code <GB / Geschäftsbericht>");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'TblAnzeige.DfNr'.", repo.TblAnzeige.DfNrInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblAnzeige.DfNrInfo, "Text", "20");
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'TblAnzeige.DfNr'.", repo.TblAnzeige.DfNrInfo, new RecordItemIndex(2));
-            //Validate.AttributeEqual(repo.TblAnzeige.DfNrInfo, "Text", "20");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Baustoffe') on item 'TblAnzeige.DfBez'.", repo.TblAnzeige.DfBezInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblAnzeige.DfBezInfo, "Text", "Baustoffe");
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Baustoffe') on item 'TblAnzeige.DfBez'.", repo.TblAnzeige.DfBezInfo, new RecordItemIndex(3));
-            //Validate.AttributeEqual(repo.TblAnzeige.DfBezInfo, "Text", "Baustoffe");
-            
-            // Search Timeout + 1m
-            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'7650\tWerbekosten') on item 'TblAnzeige.ChildTableWindow.Row2'.", repo.TblAnzeige.ChildTableWindow.Row2Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'7650\tWerbekosten') on item 'TblAnzeige.ChildTableWindow.Row2'.", repo.TblAnzeige.ChildTableWindow.Row2Info, new RecordItemIndex(3));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row2Info, "Text", "7650\tWerbekosten");
             
-            // Search Timeout + 1m
-            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'-1.000,00') on item 'TblAnzeige.ChildTableWindow.Row2'.", repo.TblAnzeige.ChildTableWindow.Row2Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'-1.000,00') on item 'TblAnzeige.ChildTableWindow.Row2'.", repo.TblAnzeige.ChildTableWindow.Row2Info, new RecordItemIndex(4));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row2Info, "Text", "-1.000,00");
             
-            // Search Timeout + 1m
-            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'26. Bilanzgewinn/Bilanzverlust') on item 'TblAnzeige.ChildTableWindow.Row7'.", repo.TblAnzeige.ChildTableWindow.Row7Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'26. Bilanzgewinn/Bilanzverlust') on item 'TblAnzeige.ChildTableWindow.Row7'.", repo.TblAnzeige.ChildTableWindow.Row7Info, new RecordItemIndex(5));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row7Info, "Text", "26. Bilanzgewinn/Bilanzverlust");
             
-            // Search Timeout + 1m
-            Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'-1.000,00') on item 'TblAnzeige.ChildTableWindow.Row7'.", repo.TblAnzeige.ChildTableWindow.Row7Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'-1.000,00') on item 'TblAnzeige.ChildTableWindow.Row7'.", repo.TblAnzeige.ChildTableWindow.Row7Info, new RecordItemIndex(6));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row7Info, "Text", "-1.000,00");
             
         }
