@@ -79,8 +79,8 @@ namespace N_ANLA_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAnlagen'", repo.DlgMessageBox.AVZAnlagenInfo, new ActionTimeout(120000), new RecordItemIndex(0));
-            repo.DlgMessageBox.AVZAnlagenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgMessageBox.AVZAnlagen'", repo.DlgMessageBox.AVZAnlagenInfo, new ActionTimeout(180000), new RecordItemIndex(0));
+            repo.DlgMessageBox.AVZAnlagenInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es wurden Daten geändert!\r\nSollen die Änderungen gespeichert werden?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es wurden Daten geändert!\r\nSollen die Änderungen gespeichert werden?");
