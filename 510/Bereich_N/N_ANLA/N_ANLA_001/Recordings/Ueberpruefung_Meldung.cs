@@ -88,8 +88,8 @@ namespace N_ANLA_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
             repo.DlgMessageBox.Button0.Click();
             
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));
-            //Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));
+            Delay.Duration(2000, false);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmZuauf.TitleBar100AVZAnlagenZusammenfuehr'.", repo.FrmZuauf.TitleBar100AVZAnlagenZusammenfuehrInfo, new RecordItemIndex(4));
             Keyboard.PrepareFocus(repo.FrmZuauf.TitleBar100AVZAnlagenZusammenfuehr);
