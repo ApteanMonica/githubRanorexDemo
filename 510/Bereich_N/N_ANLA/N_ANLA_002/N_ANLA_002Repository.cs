@@ -37,6 +37,7 @@ namespace N_ANLA_002
         N_ANLA_002RepositoryFolders.PbExportItemsAppFolder _pbexportitems;
         N_ANLA_002RepositoryFolders.TblDruckenAppFolder _tbldrucken;
         N_ANLA_002RepositoryFolders.TblSpiegelAppFolder _tblspiegel;
+        N_ANLA_002RepositoryFolders.WSBARAppFolder _wsbar;
 
         /// <summary>
         /// Gets the singleton class instance representing the N_ANLA_002Repository element repository.
@@ -63,6 +64,7 @@ namespace N_ANLA_002
             _pbexportitems = new N_ANLA_002RepositoryFolders.PbExportItemsAppFolder(this);
             _tbldrucken = new N_ANLA_002RepositoryFolders.TblDruckenAppFolder(this);
             _tblspiegel = new N_ANLA_002RepositoryFolders.TblSpiegelAppFolder(this);
+            _wsbar = new N_ANLA_002RepositoryFolders.WSBARAppFolder(this);
         }
 
 #region Variables
@@ -169,6 +171,15 @@ namespace N_ANLA_002
         public virtual N_ANLA_002RepositoryFolders.TblSpiegelAppFolder TblSpiegel
         {
             get { return _tblspiegel; }
+        }
+
+        /// <summary>
+        /// The WSBAR folder.
+        /// </summary>
+        [RepositoryFolder("6865d178-cceb-404c-9f1e-abc7fe8e7452")]
+        public virtual N_ANLA_002RepositoryFolders.WSBARAppFolder WSBAR
+        {
+            get { return _wsbar; }
         }
     }
 
@@ -2367,6 +2378,72 @@ namespace N_ANLA_002
                 get
                 {
                     return _colafalfdrow0Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The WSBARAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("6865d178-cceb-404c-9f1e-abc7fe8e7452")]
+        public partial class WSBARAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _wsbarInfo;
+
+            /// <summary>
+            /// Creates a new WSBAR  folder.
+            /// </summary>
+            public WSBARAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("WSBAR", "", parentFolder, 30000, null, true, "6865d178-cceb-404c-9f1e-abc7fe8e7452", "")
+            {
+                _wsbarInfo = new RepoItemInfo(this, "WSBAR", "", "", 30000, null, "23e80015-d2df-409c-9c74-d1a6bd0f2d21");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("6865d178-cceb-404c-9f1e-abc7fe8e7452")]
+            public virtual Ranorex.Host Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Host>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("6865d178-cceb-404c-9f1e-abc7fe8e7452")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WSBAR item.
+            /// </summary>
+            [RepositoryItem("23e80015-d2df-409c-9c74-d1a6bd0f2d21")]
+            public virtual Ranorex.Host WSBAR
+            {
+                get
+                {
+                    return _wsbarInfo.CreateAdapter<Ranorex.Host>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WSBAR item info.
+            /// </summary>
+            [RepositoryItemInfo("23e80015-d2df-409c-9c74-d1a6bd0f2d21")]
+            public virtual RepoItemInfo WSBARInfo
+            {
+                get
+                {
+                    return _wsbarInfo;
                 }
             }
         }
