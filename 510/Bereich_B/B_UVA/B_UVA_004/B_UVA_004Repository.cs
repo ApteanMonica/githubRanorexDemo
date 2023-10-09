@@ -2446,13 +2446,13 @@ namespace B_UVA_004
                     base("FrmUVAK", "/form[@controlname='frmUVAK']", parentFolder, 30000, null, true, "7ed73012-442a-491f-b089-141341f5884f", "")
             {
                 _formularkopierenInfo = new RepoItemInfo(this, "FormularKopieren", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "4d072818-c386-4f84-adc7-aaef173ff153");
-                _cmbuvak1Info = new RepoItemInfo(this, "CmbUvak1", "?/?/combobox[@controlname='cmbUvak1']", "", 30000, null, "130c07d6-ab35-4546-9c57-0094cfb76f63");
-                _cmbuvak2Info = new RepoItemInfo(this, "CmbUvak2", "?/?/combobox[@controlname='cmbUvak2']", "", 30000, null, "1b0db995-0efd-4cd7-bb65-fa58cf6b8771");
-                _textInfo = new RepoItemInfo(this, "Text", "container[@controlname='ClientArea']/?/?/text[@accessiblerole='Text']", "", 30000, null, "97017848-967b-4930-bac9-4146d03a0234");
-                _cbnurzuordnungInfo = new RepoItemInfo(this, "CbNurZuordnung", "?/?/checkbox[@controlname='cbNurZuordnung']", "", 30000, null, "d300a1ee-b1a8-4eb2-a573-c9e8777e4b70");
-                _dfcode1Info = new RepoItemInfo(this, "DfCode1", "?/?/text[@controlname='dfCode1']", "", 30000, null, "38ba685f-b77c-407e-b0d6-070a8c8326cc");
-                _dfcode2Info = new RepoItemInfo(this, "DfCode2", "?/?/text[@controlname='dfCode2']", "", 30000, null, "57c07637-df50-4dd0-8af2-cabe8a6044e3");
-                _pbuvakkopierenInfo = new RepoItemInfo(this, "PbUVAKKopieren", "?/?/button[@controlname='pbUVAK_Kopieren']", "", 30000, null, "e9ecc27f-a445-47aa-aaa7-6d8073d6816e");
+                _cmbuvak1Info = new RepoItemInfo(this, "CmbUvak1", "container[@controlname='ClientArea']/combobox[@controlname='cmbUvak1']", "", 30000, null, "130c07d6-ab35-4546-9c57-0094cfb76f63");
+                _cmbuvak2Info = new RepoItemInfo(this, "CmbUvak2", "container[@controlname='ClientArea']/combobox[@controlname='cmbUvak2']", "", 30000, null, "1b0db995-0efd-4cd7-bb65-fa58cf6b8771");
+                _textInfo = new RepoItemInfo(this, "Text", "container[@controlname='ClientArea']/text[@controlname='dfZuordnung_zielfirma']/text[@accessiblerole='Text']", "", 30000, null, "97017848-967b-4930-bac9-4146d03a0234");
+                _cbnurzuordnungInfo = new RepoItemInfo(this, "CbNurZuordnung", "container[@controlname='ClientArea']/checkbox[@controlname='cbNurZuordnung']", "", 30000, null, "d300a1ee-b1a8-4eb2-a573-c9e8777e4b70");
+                _dfcode1Info = new RepoItemInfo(this, "DfCode1", "container[@controlname='ClientArea']/text[@controlname='dfCode1']", "", 30000, null, "38ba685f-b77c-407e-b0d6-070a8c8326cc");
+                _dfcode2Info = new RepoItemInfo(this, "DfCode2", "container[@controlname='ClientArea']/text[@controlname='dfCode2']", "", 30000, null, "57c07637-df50-4dd0-8af2-cabe8a6044e3");
+                _pbuvakkopierenInfo = new RepoItemInfo(this, "PbUVAKKopieren", "container[@controlname='ClientArea']/button[@controlname='pbUVAK_Kopieren']", "", 30000, null, "e9ecc27f-a445-47aa-aaa7-6d8073d6816e");
             }
 
             /// <summary>
