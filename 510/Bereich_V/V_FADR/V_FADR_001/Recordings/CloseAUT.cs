@@ -79,8 +79,8 @@ namespace V_FADR_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TitleBar100Fakturierung'.", repo.TitleBar100FakturierungInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TitleBar100Fakturierung, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblFadr.TitleBar100Fakturierung'.", repo.TblFadr.TitleBar100FakturierungInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.TblFadr.TitleBar100Fakturierung, 1000);
             Delay.Milliseconds(0);
             
         }
