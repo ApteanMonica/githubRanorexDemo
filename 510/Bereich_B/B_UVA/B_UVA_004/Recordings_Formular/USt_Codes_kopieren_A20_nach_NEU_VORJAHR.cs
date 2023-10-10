@@ -164,8 +164,8 @@ namespace B_UVA_004.Recordings_Formular
             Keyboard.PrepareFocus(repo.FrmUVAK.CmbUvak1);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(7));
-            Delay.Duration(1000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(7));
+            Delay.Duration(2000, false);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (ControlText=$Form_Name_A20) on item 'FrmUVAK.CmbUvak1'.", repo.FrmUVAK.CmbUvak1Info, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.FrmUVAK.CmbUvak1Info, "ControlText", Form_Name_A20);
@@ -230,6 +230,10 @@ namespace B_UVA_004.Recordings_Formular
             // Validierung am Ende wegen tw Zeitverzögerung beim Laden
             Report.Log(ReportLevel.Info, "Validation", "Validierung am Ende wegen tw Zeitverzögerung beim Laden\r\nValidating AttributeEqual (Text=$Form_Code_NEU_VORJAHR) on item 'FrmUVAK.DfCode2'.", repo.FrmUVAK.DfCode2Info, new RecordItemIndex(27));
             Validate.AttributeEqual(repo.FrmUVAK.DfCode2Info, "Text", Form_Code_NEU_VORJAHR);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmUVAK.FormularKopieren'.", repo.FrmUVAK.FormularKopierenInfo, new RecordItemIndex(28));
+            Keyboard.PrepareFocus(repo.FrmUVAK.FormularKopieren);
+            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }
 
