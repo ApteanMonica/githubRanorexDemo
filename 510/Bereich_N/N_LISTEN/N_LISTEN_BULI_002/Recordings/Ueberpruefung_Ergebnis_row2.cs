@@ -82,35 +82,23 @@ namespace N_LISTEN_BULI_002.Recordings
             // Überprüfung Zeile 2 der Tabelle:
             Report.Log(ReportLevel.Info, "Section", "Überprüfung Zeile 2 der Tabelle:", new RecordItemIndex(0));
             
-            try {
-                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 2m to exist. Associated repository item: 'FrmBuchungsliste.FlexGrid.ColTypRow2'", repo.FrmBuchungsliste.FlexGrid.ColTypRow2Info, new ActionTimeout(120000), new RecordItemIndex(1));
-                repo.FrmBuchungsliste.FlexGrid.ColTypRow2Info.WaitForExists(120000);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmBuchungsliste.FlexGrid.ColTypRow2'", repo.FrmBuchungsliste.FlexGrid.ColTypRow2Info, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FrmBuchungsliste.FlexGrid.ColTypRow2Info.WaitForExists(120000);
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='AfA') on item 'FrmBuchungsliste.FlexGrid.ColTypRow2'.", repo.FrmBuchungsliste.FlexGrid.ColTypRow2Info, new RecordItemIndex(2));
-                Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColTypRow2Info, "Text", "AfA", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'AfA') on item 'FrmBuchungsliste.FlexGrid.ColTypRow2'.", repo.FrmBuchungsliste.FlexGrid.ColTypRow2Info, new RecordItemIndex(2));
+            Validate.AttributeRegex(repo.FrmBuchungsliste.FlexGrid.ColTypRow2Info, "Text", new Regex("AfA"));
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='0630') on item 'FrmBuchungsliste.FlexGrid.ColKtoNrRow2'.", repo.FrmBuchungsliste.FlexGrid.ColKtoNrRow2Info, new RecordItemIndex(3));
-                Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColKtoNrRow2Info, "Text", "0630", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0630') on item 'FrmBuchungsliste.FlexGrid.ColKtoNrRow2'.", repo.FrmBuchungsliste.FlexGrid.ColKtoNrRow2Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColKtoNrRow2Info, "Text", "0630");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='0630') on item 'FrmBuchungsliste.FlexGrid.ColGktoNrRow2'.", repo.FrmBuchungsliste.FlexGrid.ColGktoNrRow2Info, new RecordItemIndex(4));
-                Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColGktoNrRow2Info, "Text", "0630", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0630') on item 'FrmBuchungsliste.FlexGrid.ColGktoNrRow2'.", repo.FrmBuchungsliste.FlexGrid.ColGktoNrRow2Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColGktoNrRow2Info, "Text", "0630");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='') on item 'FrmBuchungsliste.FlexGrid.ColBektNr1Row2'.", repo.FrmBuchungsliste.FlexGrid.ColBektNr1Row2Info, new RecordItemIndex(5));
-                Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColBektNr1Row2Info, "Text", "", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmBuchungsliste.FlexGrid.ColBektNr1Row2'.", repo.FrmBuchungsliste.FlexGrid.ColBektNr1Row2Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColBektNr1Row2Info, "Text", "");
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='67,71') on item 'FrmBuchungsliste.FlexGrid.ColBetragRow2'.", repo.FrmBuchungsliste.FlexGrid.ColBetragRow2Info, new RecordItemIndex(6));
-                Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColBetragRow2Info, "Text", "67,71", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.Always});
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='67,71') on item 'FrmBuchungsliste.FlexGrid.ColBetragRow2'.", repo.FrmBuchungsliste.FlexGrid.ColBetragRow2Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmBuchungsliste.FlexGrid.ColBetragRow2Info, "Text", "67,71", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.Always});
             
         }
 
