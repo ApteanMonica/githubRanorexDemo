@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9a9cada1-120f-4cbe-a44c-2823f93f563b"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Variable_Konto_Row_2_und_3_einlesen"
+	namespace="N_LISTEN_BULI_002.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="6e816710-ae31-4a09-bb10-d8629668ac66"
+		name="Konto_Row_2">
+		</var>
+		<var
+		id="beec24b0-1e83-4fbc-8518-3939df0622f7"
+		name="Konto_Row_3">
+		</var>
+	</variables>
+	<recorditems>
+		<getvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="6776e1f1-219c-4854-a862-44e8fdd9e364"
+		varname="Konto_Row_2">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="79d2463d-a882-4b64-a583-93d807526925"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmBuchungsliste']/container[@controlname='ClientArea']/container[@controlname='tblListe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colKto_nr Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
+		<getvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="93cea2ef-634a-42a0-866c-d46d11daf109"
+		varname="Konto_Row_3">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0885e356-fc61-43a6-b4ba-ce857ed0015a"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmBuchungsliste']/container[@controlname='ClientArea']/container[@controlname='tblListe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colKto_nr Row 3']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
+	</recorditems>
+	<repository
+	id="0a00d893-4ca0-4588-bc77-69cbef8cc66c"
+	name="N_LISTEN_BULI_002Repository"
+	relativepath="..\N_LISTEN_BULI_002Repository.rxrep">
+		<codegen
+		classname="N_LISTEN_BULI_002Repository"
+		namespace="N_LISTEN_BULI_002">
+		</codegen>
+		<rootfolder
+		id="df6cefd4-3040-4c19-8e8a-90a8a4035a7b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Variable_Konto_Row_2_und_3_einlesen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

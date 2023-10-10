@@ -47,14 +47,39 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<smartfoldernode
+			id="2f974aa6-974c-4153-b541-8f947b257dbf"
+			name="IF_N_ANLA_002_vorher_durchgelaufen_ist">
+				<description>
+					<![CDATA[<p>IF_Condition eingebaut weil der Testfall N_ANLA_002 unsichtbare Zeilen beeinflusst, wenn N_ANLA_002 zuvor ausgeführt wird ist sichtbare Zeile mit Row_2 als repositroy ausgegeben bzw. validiert.</p>]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Konto_Row_3"
+								id="a1176db5-784e-4390-bcf9-eb9cb43208f4">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="0630">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="375fd816-bbe3-4e69-8de1-4912270a3290"
 			name="Ueberpruefung_Ergebnis_row2"
 			ref="1a182bbc-7f18-471d-a64d-28a94b438fea"
 			type="Recording">
-				<description>
-					<![CDATA[Continue on Fail, wenn Zeile 2 im repository die row2 wäre]]>
-				</description>
 			</testmodule>
 			<testmodule
 			id="40e701e9-ce90-46db-9ac0-f3e95c734bcf"
@@ -83,9 +108,6 @@
 			name="Ueberpruefung_Ergebnis_row3"
 			ref="1c0c17ea-0d18-43bd-89cd-e173d1819171"
 			type="Recording">
-				<description>
-					<![CDATA[Continue on Fail, wenn die Zeile 2 im repository die row3 ist]]>
-				</description>
 			</testmodule>
 			<testmodule
 			id="571f26cf-37a4-499e-904d-fa6c28a4ff31"
@@ -153,6 +175,26 @@
 				</description>
 			</testcase>
 			<testmodule
+			id="908af120-7cd7-4b6f-ba4d-54d8d4bbe2ee"
+			name="Variable_Konto_Row_2_und_3_einlesen"
+			ref="9a9cada1-120f-4cbe-a44c-2823f93f563b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Konto_Row_2"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="6e816710-ae31-4a09-bb10-d8629668ac66"
+					variablename="Konto_Row_2">
+					</var>
+					<var
+					dataname="Konto_Row_3"
+					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
+					variableid="beec24b0-1e83-4fbc-8518-3939df0622f7"
+					variablename="Konto_Row_3">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="961d3e9b-e0d0-4d30-923f-20df3a49f3a3"
 			name="CloseAUT_02"
 			ref="716cc69f-7519-4536-9ece-3f061ca1b5fe"
@@ -184,6 +226,34 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="99082838-b040-4397-a106-a420293be9d1"
+			name="IF_N_ANLA_002_nicht_vorher_durchgelaufen_ist">
+				<description>
+					<![CDATA[IF_Condition eingebaut weil der Testfall N_ANLA_002 unsichtbare Zeilen beeinflusst, wenn N_ANLA_002 zuvor ausgeführt wird ist sichtbare Zeile mit ROW_3 als repository vorgegeben]]>
+				</description>
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Konto_Row_2"
+								id="a1176db5-784e-4390-bcf9-eb9cb43208f4">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="0630">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testcase
 			id="a1176db5-784e-4390-bcf9-eb9cb43208f4"
 			name="N_LISTEN_BULI_002"
@@ -235,6 +305,14 @@
 					</param>
 					<param
 					name="Programmversion"
+					value="">
+					</param>
+					<param
+					name="Konto_Row_2"
+					value="">
+					</param>
+					<param
+					name="Konto_Row_3"
 					value="">
 					</param>
 				</parameters>
@@ -398,13 +476,25 @@
 						name="Meldung">
 						</testmodule>
 						<testmodule
-						id="375fd816-bbe3-4e69-8de1-4912270a3290"
-						name="Ueberpruefung_Ergebnis_row2">
+						id="908af120-7cd7-4b6f-ba4d-54d8d4bbe2ee"
+						name="Variable_Konto_Row_2_und_3_einlesen">
 						</testmodule>
-						<testmodule
-						id="56fbf25a-cab4-459f-94e9-a36ec48d87c4"
-						name="Ueberpruefung_Ergebnis_row3">
-						</testmodule>
+						<smartfoldernode
+						id="99082838-b040-4397-a106-a420293be9d1"
+						name="IF_N_ANLA_002_nicht_vorher_durchgelaufen_ist">
+							<testmodule
+							id="375fd816-bbe3-4e69-8de1-4912270a3290"
+							name="Ueberpruefung_Ergebnis_row2">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="2f974aa6-974c-4153-b541-8f947b257dbf"
+						name="IF_N_ANLA_002_vorher_durchgelaufen_ist">
+							<testmodule
+							id="56fbf25a-cab4-459f-94e9-a36ec48d87c4"
+							name="Ueberpruefung_Ergebnis_row3">
+							</testmodule>
+						</smartfoldernode>
 						<testmodule
 						id="4ca458cc-5a84-4079-b79f-9a4af698d559"
 						name="Fibu_Ueberleitung_starten">
@@ -473,7 +563,13 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="2f974aa6-974c-4153-b541-8f947b257dbf">
+			</testcontainer>
+			<testcontainer
 			id="88f5da10-6d3c-4184-8f91-793b775f0277">
+			</testcontainer>
+			<testcontainer
+			id="99082838-b040-4397-a106-a420293be9d1">
 			</testcontainer>
 			<testcontainer
 			id="a1176db5-784e-4390-bcf9-eb9cb43208f4">

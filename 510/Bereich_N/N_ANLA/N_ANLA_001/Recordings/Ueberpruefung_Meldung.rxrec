@@ -1936,7 +1936,7 @@ Konto.Nr wie Originalanlage (Kto.Nr.: 0660)
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="2000ms"
+		duration="1000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -1944,11 +1944,37 @@ Konto.Nr wie Originalanlage (Kto.Nr.: 0660)
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="f195c270-c000-4ddc-a91e-006ac42e6734"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="245b92c7-75ce-4851-a269-3f80358fda3e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZuauf']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 		<keyitem
 		action="Press"
 		data="F4, Alt"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		scancode="0"
