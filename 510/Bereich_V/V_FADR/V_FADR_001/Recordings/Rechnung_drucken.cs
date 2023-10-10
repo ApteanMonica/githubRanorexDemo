@@ -91,14 +91,25 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VFADR.Tabelle' at Center.", repo.VFADR.TabelleInfo, new RecordItemIndex(3));
             repo.VFADR.Tabelle.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='13') on item 'TblDrucken.CColumnRow7'.", repo.TblDrucken.CColumnRow7Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.TblDrucken.CColumnRow7Info, "Text", "13");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblDrucken'", repo.TblDrucken.SelfInfo, new ActionTimeout(60000), new RecordItemIndex(4));
+            repo.TblDrucken.SelfInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDrucken.Schliessen' at Center.", repo.TblDrucken.SchliessenInfo, new RecordItemIndex(5));
-            repo.TblDrucken.Schliessen.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'R23/00001\t201900005\t13') on item 'TblDrucken.Row7'.", repo.TblDrucken.Row7Info, new RecordItemIndex(5));
+            Validate.AttributeContains(repo.TblDrucken.Row7Info, "Text", "R23/00001\t201900005\t13");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.Schliessen' at Center.", repo.DlgDrucken.SchliessenInfo, new RecordItemIndex(6));
-            repo.DlgDrucken.Schliessen.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblDrucken'.", repo.TblDrucken.SelfInfo, new RecordItemIndex(6));
+            Keyboard.PrepareFocus(repo.TblDrucken.Self);
+            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgDrucken'.", repo.DlgDrucken.SelfInfo, new RecordItemIndex(7));
+            Keyboard.PrepareFocus(repo.DlgDrucken.Self);
+            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDrucken.Schliessen' at Center.", repo.TblDrucken.SchliessenInfo, new RecordItemIndex(8));
+            //repo.TblDrucken.Schliessen.Click();
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDrucken.Schliessen' at Center.", repo.TblDrucken.SchliessenInfo, new RecordItemIndex(9));
+            //repo.TblDrucken.Schliessen.Click();
             
         }
 

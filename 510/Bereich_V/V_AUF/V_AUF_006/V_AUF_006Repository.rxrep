@@ -427,6 +427,14 @@ name="V_AUF_006Repository">
 			searchtimeout="30000ms">
 				/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfArt_nr']/text[@accessiblename='Art-Nr.']
 			</item>
+			<item
+			capname="unknown"
+			id="23e4db10-bd9d-4d38-86c2-7872cbdece67"
+			name="TabelleUnten_FlexGrid"
+			robustPath="/form[@controlname='frmAufk']/element"
+			searchtimeout="30000ms">
+				/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']
+			</item>
 			<basepath>
 				/form[@controlname='frmAufk']
 			</basepath>
@@ -694,14 +702,13 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			</item>
 			<item
 			addcaps="table,accessible"
-			capname="table"
+			capname="unknown"
 			id="b2856d06-5246-4a3d-b815-a41b2751c309"
 			name="FlexGrid"
 			refimgid="d0ca3d7b-5b40-452e-bd5c-996128c8cd3b"
-			refpath="/form[@controlname='tblTabellenerfassung']/container[@controlname='ChildTableWindow']/element/table[@accessiblename='FlexGrid']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='tblTabellenerfassung']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']
+				/form[@controlname='tblTabellenerfassung']/form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']
 			</item>
 			<folder
 			addcaps="table,accessible"

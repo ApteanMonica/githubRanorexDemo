@@ -268,7 +268,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="1ms"
+		duration="1000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -377,6 +377,30 @@ mode="Global">
 		</keyitem>
 		<keyitem
 		action="Press"
+		data="Tab"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="ac300b78-a91a-48fd-9da9-0ddd807608a6"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keyitem
+		action="Press"
 		data="Delete"
 		duration="100ms"
 		enabled="True"
@@ -423,6 +447,39 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</keyitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="28452221-4dc1-4002-a58c-c051bae4c678">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7ec9416d-8080-4827-9d84-7186b441c893"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='splitContainer']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='SubForm_tblAtbz']/form[@controlname='tblAtbz']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colVon1 Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
 		<keyitem
 		action="Press"
 		data="Delete"
@@ -471,6 +528,39 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</keyitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="28452221-4dc1-4002-a58c-c051bae4c678">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7ec9416d-8080-4827-9d84-7186b441c893"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='splitContainer']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='SubForm_tblAtbz']/form[@controlname='tblAtbz']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colVon1 Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"

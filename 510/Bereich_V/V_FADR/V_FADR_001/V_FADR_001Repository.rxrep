@@ -23,6 +23,17 @@ name="V_FADR_001Repository">
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="1dc81752-b411-4c29-947c-e8c8dbe2e9af"
+			name="TitleBar100Fakturierung"
+			refimgid="77847a7c-f311-4a15-8af0-04faeaa4b2cb"
+			refpath="/form[@controlname='tblFadr']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblFadr']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
 			addcaps="button,control,nativewindow"
 			capname="button"
 			id="077cad46-e897-4023-a1f5-c62d755b4df6"
@@ -149,6 +160,17 @@ name="V_FADR_001Repository">
 			searchtimeout="30000ms">
 				/form[@controlname='tblFadr']/?/?/radiobutton[@controlname='rbLadenDruck']
 			</item>
+			<item
+			addcaps="checkbox,control,nativewindow"
+			capname="checkbox"
+			id="156bdce0-9733-4af8-a0af-521a3079c43e"
+			name="CbZahlschein"
+			refimgid="66e978db-3c69-4afb-8615-e4e95ba168eb"
+			refpath="/form[@controlname='tblFadr']/container[@controlname='ToolBar']/checkbox[@controlname='cbZahlschein']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblFadr']/?/?/checkbox[@controlname='cbZahlschein']
+			</item>
 			<basepath>
 				/form[@controlname='tblFadr']
 			</basepath>
@@ -159,17 +181,6 @@ YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
 nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
-		<item
-		addcaps="titlebar,accessible"
-		capname="titlebar"
-		id="1dc81752-b411-4c29-947c-e8c8dbe2e9af"
-		name="TitleBar100Fakturierung"
-		refimgid="77847a7c-f311-4a15-8af0-04faeaa4b2cb"
-		refpath="/form[@controlname='tblFadr']/titlebar[@accessiblerole='TitleBar']"
-		robustPath=""
-		searchtimeout="30000ms">
-			/form[@controlname='tblFadr']/titlebar[@accessiblerole='TitleBar']
-		</item>
 		<appfolder
 		addcaps="contextmenu,control,nativewindow"
 		capname="contextmenu"
@@ -503,10 +514,9 @@ FUD96oJX8AAAAABJRU5ErkJggg==
 			id="4d0be3e7-c0fc-464c-a8c9-04ac493e80c3"
 			name="Schliessen"
 			refimgid="eae27b69-dd97-4ffe-b16c-b0fbcd86b497"
-			refpath="/form[@controlname='tblDrucken']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='tblDrucken']/?/?/button[@accessiblename='Schließen']
+				/form[@controlname='tblDrucken']/titlebar/button[@accessiblename='Schließen']
 			</item>
 			<item
 			addcaps="cell,accessible"
@@ -514,10 +524,19 @@ FUD96oJX8AAAAABJRU5ErkJggg==
 			id="cd6cd4a9-351b-4aec-9382-a19b0fb63d95"
 			name="CColumnRow7"
 			refimgid="ca7868f2-d77b-453c-8f4f-874631157f62"
-			refpath="/form[@controlname='tblDrucken']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 7']/cell[@accessiblename='cColumn Row 7' and @text='13']"
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='tblDrucken']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='cColumn Row 7' and @text='13']
+			</item>
+			<item
+			addcaps="row,accessible"
+			capname="row"
+			id="3292027d-914f-4490-b79c-ff5759dd73b1"
+			name="Row7"
+			refimgid="bfe86ef7-6729-45a6-8f1b-aa8f9c0a8650"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblDrucken']/container/element/table/row[@accessiblename='Row 7']
 			</item>
 			<basepath>
 				/form[@controlname='tblDrucken']

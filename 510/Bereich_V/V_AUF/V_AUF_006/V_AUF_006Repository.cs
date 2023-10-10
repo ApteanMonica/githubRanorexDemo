@@ -178,6 +178,7 @@ namespace V_AUF_006
             RepoItemInfo _maximierenInfo;
             RepoItemInfo _dfartnrInfo;
             RepoItemInfo _artnr_511Info;
+            RepoItemInfo _tabelleunten_flexgridInfo;
 
             /// <summary>
             /// Creates a new FrmAufk  folder.
@@ -212,6 +213,7 @@ namespace V_AUF_006
                 _maximierenInfo = new RepoItemInfo(this, "Maximieren", "?/?/button[@accessiblename='Maximieren']", "", 30000, null, "099501f1-098e-4194-b081-cc39a5d42ee8");
                 _dfartnrInfo = new RepoItemInfo(this, "DfArtNr", ".//tabpage[@controlname='tpPos']//tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfArt_nr']", "", 30000, null, "2493ed89-40b4-48cc-a81c-ce1c6a6b47c6");
                 _artnr_511Info = new RepoItemInfo(this, "ArtNr_511", "container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='SubForm_dlgAufp']/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfArt_nr']/text[@accessiblename='Art-Nr.']", "", 30000, null, "c69d55f5-bf80-4164-a33e-ad41a1a9a5df");
+                _tabelleunten_flexgridInfo = new RepoItemInfo(this, "TabelleUnten_FlexGrid", "container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']", "element", 30000, null, "23e4db10-bd9d-4d38-86c2-7872cbdece67");
             }
 
             /// <summary>
@@ -859,6 +861,30 @@ namespace V_AUF_006
                 get
                 {
                     return _artnr_511Info;
+                }
+            }
+
+            /// <summary>
+            /// The TabelleUnten_FlexGrid item.
+            /// </summary>
+            [RepositoryItem("23e4db10-bd9d-4d38-86c2-7872cbdece67")]
+            public virtual Ranorex.Unknown TabelleUnten_FlexGrid
+            {
+                get
+                {
+                    return _tabelleunten_flexgridInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TabelleUnten_FlexGrid item info.
+            /// </summary>
+            [RepositoryItemInfo("23e4db10-bd9d-4d38-86c2-7872cbdece67")]
+            public virtual RepoItemInfo TabelleUnten_FlexGridInfo
+            {
+                get
+                {
+                    return _tabelleunten_flexgridInfo;
                 }
             }
 
@@ -1596,7 +1622,7 @@ namespace V_AUF_006
             {
                 _flexgrid1 = new V_AUF_006RepositoryFolders.FlexGrid1Folder(this);
                 _titlebar100tabellenerfassungauftrInfo = new RepoItemInfo(this, "TitleBar100TabellenerfassungAuftr", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "f77dc3f3-0dd0-48f1-903b-9be51797c532");
-                _flexgridInfo = new RepoItemInfo(this, "FlexGrid", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']", "", 30000, null, "b2856d06-5246-4a3d-b815-a41b2751c309");
+                _flexgridInfo = new RepoItemInfo(this, "FlexGrid", "form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']", "", 30000, null, "b2856d06-5246-4a3d-b815-a41b2751c309");
             }
 
             /// <summary>
@@ -1651,11 +1677,11 @@ namespace V_AUF_006
             /// The FlexGrid item.
             /// </summary>
             [RepositoryItem("b2856d06-5246-4a3d-b815-a41b2751c309")]
-            public virtual Ranorex.Table FlexGrid
+            public virtual Ranorex.Unknown FlexGrid
             {
                 get
                 {
-                    return _flexgridInfo.CreateAdapter<Ranorex.Table>(true);
+                    return _flexgridInfo.CreateAdapter<Ranorex.Unknown>(true);
                 }
             }
 
