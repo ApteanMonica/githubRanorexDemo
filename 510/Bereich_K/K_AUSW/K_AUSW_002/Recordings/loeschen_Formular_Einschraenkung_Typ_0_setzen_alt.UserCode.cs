@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace K_AUSW_002.Recordings
 {
-    public partial class Formular_Einschraenkung_Typ_0_setzen
+    public partial class Loeschen_Formular_Einschraenkung_Typ_0_setzen_alt
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
