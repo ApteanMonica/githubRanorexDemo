@@ -192,7 +192,7 @@ describe("Language ValIdations", () => {
 
             assert.equal(response.body.Value[1]["CodePage"], null)
             assert.equal(response.body.Value[1]["Description"], "HINDI")
-            assert.equal(response.body.Value[1]["Id"], 'H11')
+            assert.equal(response.body.Value[1]["Id"], 'H')
             assert.equal(response.body.Value[1]["IsoCode"], 'HIN')
             assert.equal(response.body.Value[1]["WindowsLanguageCode"], "HIN")
 

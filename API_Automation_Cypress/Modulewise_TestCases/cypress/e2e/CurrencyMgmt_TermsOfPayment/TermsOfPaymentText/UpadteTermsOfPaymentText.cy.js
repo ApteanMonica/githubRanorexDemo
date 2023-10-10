@@ -1,4 +1,4 @@
-describe("Update terms of payment validations", () => {
+describe("Update terms of payment text validations", () => {
 
     //Parameters used to Terms of payment text 
     var context = '';
@@ -262,8 +262,8 @@ describe("Update terms of payment validations", () => {
         })
     })
 
-        /**
-    * This it block is used to verify if the user not having the permission to Delete a terms of payment text, can not delete a Terms of payment text
+     /**
+    * This it block is used to verify if the user not having the permission to Update a terms of payment text, can not update a Terms of payment text
     */
         var context2 = ""
         var updateDescription="Test Description"

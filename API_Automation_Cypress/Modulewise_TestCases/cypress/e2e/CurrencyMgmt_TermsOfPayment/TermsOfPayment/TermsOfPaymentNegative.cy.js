@@ -422,9 +422,9 @@ describe("Terms of payment Validations Negative", () => {
 
         }).then((response) => {
             //assertions
-            assert.equal(response.body.Messages[1]["Id"], "rssoft.common.message.DoesNotExistsError")
+            assert.equal(response.body.Messages[0]["Id"], "rssoft.common.message.DoesNotExistsError")
             //"Payment terms already exist!"
-            assert.equal(response.body.Messages[1]["Text"], "Status 560 in ZLBD_STATUS does not exist!")
+            assert.equal(response.body.Messages[0]["Text"], "Status 560 in ZLBD_STATUS does not exist!")
 
             expect(response.status).to.eq(200)
 

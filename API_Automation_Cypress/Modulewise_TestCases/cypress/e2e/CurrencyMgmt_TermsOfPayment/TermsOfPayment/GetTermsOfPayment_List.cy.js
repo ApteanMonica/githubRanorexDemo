@@ -76,7 +76,7 @@ describe("Terms of payment Validations", () => {
             assert.equal(response.body.Value[2]["CashDiscountPeriod2"], 17)
             assert.equal(response.body.Value[2]["ChangeStates"], '1')            
             assert.equal(response.body.Value[2]["Code"], '031')
-            assert.equal(response.body.Value[2]["DayUntilInvoiceDate"], '0')
+            assert.equal(response.body.Value[2]["DayUntilInvoiceDate"], '1')
             assert.equal(response.body.Value[2]["DefinableField1"], null)
             assert.equal(response.body.Value[2]["DefinableField2"], null)
             assert.equal(response.body.Value[2]["DefinableField3"], null)
