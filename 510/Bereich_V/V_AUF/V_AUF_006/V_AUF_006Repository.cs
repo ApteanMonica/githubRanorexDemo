@@ -1612,7 +1612,7 @@ namespace V_AUF_006
         {
             V_AUF_006RepositoryFolders.FlexGrid1Folder _flexgrid1;
             RepoItemInfo _titlebar100tabellenerfassungauftrInfo;
-            RepoItemInfo _flexgridInfo;
+            RepoItemInfo _tabellenerfassung_flexgridInfo;
 
             /// <summary>
             /// Creates a new TblTabellenerfassung  folder.
@@ -1622,7 +1622,7 @@ namespace V_AUF_006
             {
                 _flexgrid1 = new V_AUF_006RepositoryFolders.FlexGrid1Folder(this);
                 _titlebar100tabellenerfassungauftrInfo = new RepoItemInfo(this, "TitleBar100TabellenerfassungAuftr", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "f77dc3f3-0dd0-48f1-903b-9be51797c532");
-                _flexgridInfo = new RepoItemInfo(this, "FlexGrid", "form[@controlname='frmAufk']/container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']", "", 30000, null, "b2856d06-5246-4a3d-b815-a41b2751c309");
+                _tabellenerfassung_flexgridInfo = new RepoItemInfo(this, "Tabellenerfassung_FlexGrid", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", "", 30000, null, "b2856d06-5246-4a3d-b815-a41b2751c309");
             }
 
             /// <summary>
@@ -1674,26 +1674,26 @@ namespace V_AUF_006
             }
 
             /// <summary>
-            /// The FlexGrid item.
+            /// The Tabellenerfassung_FlexGrid item.
             /// </summary>
             [RepositoryItem("b2856d06-5246-4a3d-b815-a41b2751c309")]
-            public virtual Ranorex.Unknown FlexGrid
+            public virtual Ranorex.Table Tabellenerfassung_FlexGrid
             {
                 get
                 {
-                    return _flexgridInfo.CreateAdapter<Ranorex.Unknown>(true);
+                    return _tabellenerfassung_flexgridInfo.CreateAdapter<Ranorex.Table>(true);
                 }
             }
 
             /// <summary>
-            /// The FlexGrid item info.
+            /// The Tabellenerfassung_FlexGrid item info.
             /// </summary>
             [RepositoryItemInfo("b2856d06-5246-4a3d-b815-a41b2751c309")]
-            public virtual RepoItemInfo FlexGridInfo
+            public virtual RepoItemInfo Tabellenerfassung_FlexGridInfo
             {
                 get
                 {
-                    return _flexgridInfo;
+                    return _tabellenerfassung_flexgridInfo;
                 }
             }
 

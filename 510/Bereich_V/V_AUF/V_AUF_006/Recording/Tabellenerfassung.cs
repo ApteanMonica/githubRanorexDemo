@@ -142,11 +142,11 @@ namespace V_AUF_006.Recording
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblTabellenerfassung.TitleBar100TabellenerfassungAuftr'.", repo.TblTabellenerfassung.TitleBar100TabellenerfassungAuftrInfo, new RecordItemIndex(7));
             Validate.Exists(repo.TblTabellenerfassung.TitleBar100TabellenerfassungAuftrInfo);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblTabellenerfassung.FlexGrid' at Center.", repo.TblTabellenerfassung.FlexGridInfo, new RecordItemIndex(8));
-            repo.TblTabellenerfassung.FlexGrid.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblTabellenerfassung.Tabellenerfassung_FlexGrid' at Center.", repo.TblTabellenerfassung.Tabellenerfassung_FlexGridInfo, new RecordItemIndex(8));
+            repo.TblTabellenerfassung.Tabellenerfassung_FlexGrid.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Insert' Press with focus on 'TblTabellenerfassung.FlexGrid'.", repo.TblTabellenerfassung.FlexGridInfo, new RecordItemIndex(9));
-            Keyboard.PrepareFocus(repo.TblTabellenerfassung.FlexGrid);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Insert' Press with focus on 'TblTabellenerfassung.Tabellenerfassung_FlexGrid'.", repo.TblTabellenerfassung.Tabellenerfassung_FlexGridInfo, new RecordItemIndex(9));
+            Keyboard.PrepareFocus(repo.TblTabellenerfassung.Tabellenerfassung_FlexGrid);
             Keyboard.Press(System.Windows.Forms.Keys.Insert, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 500ms.", new RecordItemIndex(10));
@@ -169,8 +169,8 @@ namespace V_AUF_006.Recording
             repo.TblTabellenerfassung.FlexGrid1.ColAufpMengeRow1.EnsureVisible();
             Keyboard.Press("2{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Insert' Press with focus on 'TblTabellenerfassung.FlexGrid'.", repo.TblTabellenerfassung.FlexGridInfo, new RecordItemIndex(16));
-            Keyboard.PrepareFocus(repo.TblTabellenerfassung.FlexGrid);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Insert' Press with focus on 'TblTabellenerfassung.Tabellenerfassung_FlexGrid'.", repo.TblTabellenerfassung.Tabellenerfassung_FlexGridInfo, new RecordItemIndex(16));
+            Keyboard.PrepareFocus(repo.TblTabellenerfassung.Tabellenerfassung_FlexGrid);
             Keyboard.Press(System.Windows.Forms.Keys.Insert, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblTabellenerfassung.FlexGrid1.ColArtNrRow2' at Center.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow2Info, new RecordItemIndex(17));
@@ -193,8 +193,8 @@ namespace V_AUF_006.Recording
             repo.TblTabellenerfassung.FlexGrid1.ColAufpMengeRow2.EnsureVisible();
             Keyboard.Press("2{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Insert}' with focus on 'TblTabellenerfassung.FlexGrid'.", repo.TblTabellenerfassung.FlexGridInfo, new RecordItemIndex(23));
-            repo.TblTabellenerfassung.FlexGrid.PressKeys("{Insert}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Insert}' with focus on 'TblTabellenerfassung.Tabellenerfassung_FlexGrid'.", repo.TblTabellenerfassung.Tabellenerfassung_FlexGridInfo, new RecordItemIndex(23));
+            repo.TblTabellenerfassung.Tabellenerfassung_FlexGrid.PressKeys("{Insert}");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblTabellenerfassung.FlexGrid1.ColArtNrRow3' at Center.", repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow3Info, new RecordItemIndex(24));
             repo.TblTabellenerfassung.FlexGrid1.ColArtNrRow3.Click();
@@ -231,8 +231,8 @@ namespace V_AUF_006.Recording
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblTabellenerfassung.TitleBar100TabellenerfassungAuftr' at Center.", repo.TblTabellenerfassung.TitleBar100TabellenerfassungAuftrInfo, new RecordItemIndex(34));
             repo.TblTabellenerfassung.TitleBar100TabellenerfassungAuftr.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}' with focus on 'FrmAufk.TabelleUnten_FlexGrid'.", repo.FrmAufk.TabelleUnten_FlexGridInfo, new RecordItemIndex(35));
-            repo.FrmAufk.TabelleUnten_FlexGrid.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}' with focus on 'TblTabellenerfassung.Tabellenerfassung_FlexGrid'.", repo.TblTabellenerfassung.Tabellenerfassung_FlexGridInfo, new RecordItemIndex(35));
+            repo.TblTabellenerfassung.Tabellenerfassung_FlexGrid.EnsureVisible();
             Keyboard.Press("{F12}");
             
             //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ACHTUNG: Kreditlimit um 11,20 EUR überschritten\r\n\r\nWollen Sie die Position trotzdem speichern?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(36));
