@@ -690,6 +690,7 @@ namespace L_DISP_002
         {
             RepoItemInfo _labelmeldungstextInfo;
             RepoItemInfo _button0Info;
+            RepoItemInfo _dispositionInfo;
 
             /// <summary>
             /// Creates a new DlgMessageBox  folder.
@@ -699,6 +700,7 @@ namespace L_DISP_002
             {
                 _labelmeldungstextInfo = new RepoItemInfo(this, "LabelMeldungstext", "text[@controlname='labelMeldungstext']", "", 30000, null, "87b51774-8d77-43a9-8eb4-be663086694a");
                 _button0Info = new RepoItemInfo(this, "Button0", "button[@controlname='button0']", "", 30000, null, "ee760519-2d8d-463a-be71-886bbd830eff");
+                _dispositionInfo = new RepoItemInfo(this, "Disposition", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "1197243f-f2dd-44ea-a798-0f63b7bc35b4");
             }
 
             /// <summary>
@@ -770,6 +772,30 @@ namespace L_DISP_002
                 get
                 {
                     return _button0Info;
+                }
+            }
+
+            /// <summary>
+            /// The Disposition item.
+            /// </summary>
+            [RepositoryItem("1197243f-f2dd-44ea-a798-0f63b7bc35b4")]
+            public virtual Ranorex.TitleBar Disposition
+            {
+                get
+                {
+                    return _dispositionInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Disposition item info.
+            /// </summary>
+            [RepositoryItemInfo("1197243f-f2dd-44ea-a798-0f63b7bc35b4")]
+            public virtual RepoItemInfo DispositionInfo
+            {
+                get
+                {
+                    return _dispositionInfo;
                 }
             }
         }
@@ -902,6 +928,7 @@ namespace L_DISP_002
             RepoItemInfo _pbdataaccessloadInfo;
             RepoItemInfo _cbverdichtungInfo;
             RepoItemInfo _schliessenInfo;
+            RepoItemInfo _titlebar100bestellvorschlagbearbeitInfo;
 
             /// <summary>
             /// Creates a new FrmBsvs  folder.
@@ -913,6 +940,7 @@ namespace L_DISP_002
                 _pbdataaccessloadInfo = new RepoItemInfo(this, "PbDataAccessLoad", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Load']", "", 30000, null, "1cb3bc92-152f-4a96-9be0-b2c0032cd229");
                 _cbverdichtungInfo = new RepoItemInfo(this, "CbVerdichtung", "?/?/checkbox[@controlname='cbVerdichtung']", "", 30000, null, "f8db02f2-7374-4ee5-b480-bce0fdf883f4");
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "?/?/button[@accessiblename='Schließen']", "", 30000, null, "6e2db58e-c24d-4669-876d-f49bdce68d9f");
+                _titlebar100bestellvorschlagbearbeitInfo = new RepoItemInfo(this, "TitleBar100BestellvorschlagBearbeit", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "9e04b063-74df-4447-b0c1-31334944b17e");
             }
 
             /// <summary>
@@ -1008,6 +1036,30 @@ namespace L_DISP_002
                 get
                 {
                     return _schliessenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100BestellvorschlagBearbeit item.
+            /// </summary>
+            [RepositoryItem("9e04b063-74df-4447-b0c1-31334944b17e")]
+            public virtual Ranorex.TitleBar TitleBar100BestellvorschlagBearbeit
+            {
+                get
+                {
+                    return _titlebar100bestellvorschlagbearbeitInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100BestellvorschlagBearbeit item info.
+            /// </summary>
+            [RepositoryItemInfo("9e04b063-74df-4447-b0c1-31334944b17e")]
+            public virtual RepoItemInfo TitleBar100BestellvorschlagBearbeitInfo
+            {
+                get
+                {
+                    return _titlebar100bestellvorschlagbearbeitInfo;
                 }
             }
 

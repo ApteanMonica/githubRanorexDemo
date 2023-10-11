@@ -95,31 +95,43 @@ namespace L_DISP.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmDispo.PbShareDruck' at 21;29.", repo.FrmDispo.PbShareDruckInfo, new RecordItemIndex(0));
             repo.FrmDispo.PbShareDruck.Click("21;29");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDruckenLoeschen.VorschlagsnummerVon' at CenterRight.", repo.DlgDruckenLoeschen.VorschlagsnummerVonInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgDruckenLoeschen.TitleBar100BestellvorschlagDrucken'", repo.DlgDruckenLoeschen.TitleBar100BestellvorschlagDruckenInfo, new ActionTimeout(60000), new RecordItemIndex(1));
+            repo.DlgDruckenLoeschen.TitleBar100BestellvorschlagDruckenInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDruckenLoeschen.VorschlagsnummerVon' at CenterRight.", repo.DlgDruckenLoeschen.VorschlagsnummerVonInfo, new RecordItemIndex(2));
             repo.DlgDruckenLoeschen.VorschlagsnummerVon.Click(Location.CenterRight);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LDISP.DropDown' at UpperCenter.", repo.LDISP.DropDownInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LDISP.DropDown' at UpperCenter.", repo.LDISP.DropDownInfo, new RecordItemIndex(3));
             repo.LDISP.DropDown.Click(Location.UpperCenter);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'DlgDruckenLoeschen.VorschlagsnummerVon'.", repo.DlgDruckenLoeschen.VorschlagsnummerVonInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'DlgDruckenLoeschen.VorschlagsnummerVon'.", repo.DlgDruckenLoeschen.VorschlagsnummerVonInfo, new RecordItemIndex(4));
             repo.DlgDruckenLoeschen.VorschlagsnummerVon.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$BV_Nr) on item 'DlgDruckenLoeschen.VorschlagsnummerVon'.", repo.DlgDruckenLoeschen.VorschlagsnummerVonInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$BV_Nr) on item 'DlgDruckenLoeschen.VorschlagsnummerVon'.", repo.DlgDruckenLoeschen.VorschlagsnummerVonInfo, new RecordItemIndex(5));
             Validate.AttributeRegex(repo.DlgDruckenLoeschen.VorschlagsnummerVonInfo, "Text", new Regex(BV_Nr));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDruckenLoeschen.PbLoeschen' at Center.", repo.DlgDruckenLoeschen.PbLoeschenInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDruckenLoeschen.PbLoeschen' at Center.", repo.DlgDruckenLoeschen.PbLoeschenInfo, new RecordItemIndex(6));
             repo.DlgDruckenLoeschen.PbLoeschen.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbVorschau' at Center.", repo.DlgDrucken.PbVorschauInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbVorschau' at Center.", repo.DlgDrucken.PbVorschauInfo, new RecordItemIndex(7));
             repo.DlgDrucken.PbVorschau.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Vorschau.DruckvorschauSchliessen' at Center.", repo.Vorschau.DruckvorschauSchliessenInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'Vorschau.TitleBar'", repo.Vorschau.TitleBarInfo, new ActionTimeout(60000), new RecordItemIndex(8));
+            repo.Vorschau.TitleBarInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Vorschau.DruckvorschauSchliessen' at Center.", repo.Vorschau.DruckvorschauSchliessenInfo, new RecordItemIndex(9));
             repo.Vorschau.DruckvorschauSchliessen.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.Schliessen' at Center.", repo.DlgDrucken.SchliessenInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgDrucken.TitleBar100Drucke0'", repo.DlgDrucken.TitleBar100Drucke0Info, new ActionTimeout(60000), new RecordItemIndex(10));
+            repo.DlgDrucken.TitleBar100Drucke0Info.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.Schliessen' at Center.", repo.DlgDrucken.SchliessenInfo, new RecordItemIndex(11));
             repo.DlgDrucken.Schliessen.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDruckenLoeschen.Schliessen' at Center.", repo.DlgDruckenLoeschen.SchliessenInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgDruckenLoeschen.TitleBar100BestellvorschlagDrucken'", repo.DlgDruckenLoeschen.TitleBar100BestellvorschlagDruckenInfo, new ActionTimeout(60000), new RecordItemIndex(12));
+            repo.DlgDruckenLoeschen.TitleBar100BestellvorschlagDruckenInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDruckenLoeschen.Schliessen' at Center.", repo.DlgDruckenLoeschen.SchliessenInfo, new RecordItemIndex(13));
             repo.DlgDruckenLoeschen.Schliessen.Click();
             
         }

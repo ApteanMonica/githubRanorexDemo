@@ -1360,6 +1360,7 @@ namespace L_DISP
             RepoItemInfo _vorschlagsnummervonInfo;
             RepoItemInfo _pbloeschenInfo;
             RepoItemInfo _schliessenInfo;
+            RepoItemInfo _titlebar100bestellvorschlagdruckenInfo;
 
             /// <summary>
             /// Creates a new DlgDruckenLoeschen  folder.
@@ -1370,6 +1371,7 @@ namespace L_DISP
                 _vorschlagsnummervonInfo = new RepoItemInfo(this, "VorschlagsnummerVon", "?/?/text[@accessiblename='Vorschlagsnummer von']", "", 30000, null, "896bd1e6-512a-467a-9699-45daf091b762");
                 _pbloeschenInfo = new RepoItemInfo(this, "PbLoeschen", "button[@controlname='pbLoeschen']", "", 30000, null, "79c550de-0444-4b5e-afa0-f93a28af74b2");
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "?/?/button[@accessiblename='Schließen']", "", 30000, null, "49d83820-ab92-4c84-911d-9f72c901a77e");
+                _titlebar100bestellvorschlagdruckenInfo = new RepoItemInfo(this, "TitleBar100BestellvorschlagDrucken", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "d1d05413-141a-4d13-bdd4-3fe7f0460631");
             }
 
             /// <summary>
@@ -1467,6 +1469,30 @@ namespace L_DISP
                     return _schliessenInfo;
                 }
             }
+
+            /// <summary>
+            /// The TitleBar100BestellvorschlagDrucken item.
+            /// </summary>
+            [RepositoryItem("d1d05413-141a-4d13-bdd4-3fe7f0460631")]
+            public virtual Ranorex.TitleBar TitleBar100BestellvorschlagDrucken
+            {
+                get
+                {
+                    return _titlebar100bestellvorschlagdruckenInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100BestellvorschlagDrucken item info.
+            /// </summary>
+            [RepositoryItemInfo("d1d05413-141a-4d13-bdd4-3fe7f0460631")]
+            public virtual RepoItemInfo TitleBar100BestellvorschlagDruckenInfo
+            {
+                get
+                {
+                    return _titlebar100bestellvorschlagdruckenInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -1543,6 +1569,7 @@ namespace L_DISP
         {
             RepoItemInfo _pbvorschauInfo;
             RepoItemInfo _schliessenInfo;
+            RepoItemInfo _titlebar100drucke0Info;
 
             /// <summary>
             /// Creates a new DlgDrucken  folder.
@@ -1552,6 +1579,7 @@ namespace L_DISP
             {
                 _pbvorschauInfo = new RepoItemInfo(this, "PbVorschau", "button[@controlname='pbVorschau']", "", 30000, null, "97b76714-1001-44f1-832a-4e8cb6f78257");
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "?/?/button[@accessiblename='Schließen']", "", 30000, null, "c2317fe8-a681-444b-90ed-d41718faf14b");
+                _titlebar100drucke0Info = new RepoItemInfo(this, "TitleBar100Drucke0", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "e2fbe43c-a90a-4ff9-9581-87e36d4010f5");
             }
 
             /// <summary>
@@ -1625,6 +1653,30 @@ namespace L_DISP
                     return _schliessenInfo;
                 }
             }
+
+            /// <summary>
+            /// The TitleBar100Drucke0 item.
+            /// </summary>
+            [RepositoryItem("e2fbe43c-a90a-4ff9-9581-87e36d4010f5")]
+            public virtual Ranorex.TitleBar TitleBar100Drucke0
+            {
+                get
+                {
+                    return _titlebar100drucke0Info.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100Drucke0 item info.
+            /// </summary>
+            [RepositoryItemInfo("e2fbe43c-a90a-4ff9-9581-87e36d4010f5")]
+            public virtual RepoItemInfo TitleBar100Drucke0Info
+            {
+                get
+                {
+                    return _titlebar100drucke0Info;
+                }
+            }
         }
 
         /// <summary>
@@ -1634,6 +1686,7 @@ namespace L_DISP
         public partial class VorschauAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _druckvorschauschliessenInfo;
+            RepoItemInfo _titlebarInfo;
 
             /// <summary>
             /// Creates a new Vorschau  folder.
@@ -1642,6 +1695,7 @@ namespace L_DISP
                     base("Vorschau", "/form[@title='Vorschau']", parentFolder, 30000, null, true, "671c85a3-ec44-45d1-95ba-907f4743e4bf", "")
             {
                 _druckvorschauschliessenInfo = new RepoItemInfo(this, "DruckvorschauSchliessen", "element[3]//container[@accessiblename='Unteres Menüband']/?/?/container[@accessiblename='Vorschau']/toolbar[@accessiblename='']/button[@accessiblename='Druckvorschau schließen']", "", 30000, null, "37628890-4903-426c-ad8a-11bb733cea0a");
+                _titlebarInfo = new RepoItemInfo(this, "TitleBar", "titlebar[@automationid='TitleBar']", "", 30000, null, "36df4e3f-88b3-49d0-9137-b6a170beb5dd");
             }
 
             /// <summary>
@@ -1689,6 +1743,30 @@ namespace L_DISP
                 get
                 {
                     return _druckvorschauschliessenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar item.
+            /// </summary>
+            [RepositoryItem("36df4e3f-88b3-49d0-9137-b6a170beb5dd")]
+            public virtual Ranorex.TitleBar TitleBar
+            {
+                get
+                {
+                    return _titlebarInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar item info.
+            /// </summary>
+            [RepositoryItemInfo("36df4e3f-88b3-49d0-9137-b6a170beb5dd")]
+            public virtual RepoItemInfo TitleBarInfo
+            {
+                get
+                {
+                    return _titlebarInfo;
                 }
             }
         }

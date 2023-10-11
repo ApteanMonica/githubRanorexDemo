@@ -125,46 +125,52 @@ namespace L_DISP_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmDispo.PbExtrasStart' at Center.", repo.FrmDispo.PbExtrasStartInfo, new RecordItemIndex(6));
             repo.FrmDispo.PbExtrasStart.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'neuer Bestellvorschlag mit der Nummer') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.Disposition'", repo.DlgMessageBox.DispositionInfo, new ActionTimeout(60000), new RecordItemIndex(7));
+            repo.DlgMessageBox.DispositionInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'neuer Bestellvorschlag mit der Nummer') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(8));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "neuer Bestellvorschlag mit der Nummer");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(9));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmDispo.PbExtrasBearbeiten' at Center.", repo.FrmDispo.PbExtrasBearbeitenInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmDispo.PbExtrasBearbeiten' at Center.", repo.FrmDispo.PbExtrasBearbeitenInfo, new RecordItemIndex(10));
             repo.FrmDispo.PbExtrasBearbeiten.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBsvs.PbDataAccessLoad' at Center.", repo.FrmBsvs.PbDataAccessLoadInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmBsvs.TitleBar100BestellvorschlagBearbeit'", repo.FrmBsvs.TitleBar100BestellvorschlagBearbeitInfo, new ActionTimeout(60000), new RecordItemIndex(11));
+            repo.FrmBsvs.TitleBar100BestellvorschlagBearbeitInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBsvs.PbDataAccessLoad' at Center.", repo.FrmBsvs.PbDataAccessLoadInfo, new RecordItemIndex(12));
             repo.FrmBsvs.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Artikel1) on item 'FrmBsvs.FlexGrid.ColArtNrRow1'.", repo.FrmBsvs.FlexGrid.ColArtNrRow1Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Artikel1) on item 'FrmBsvs.FlexGrid.ColArtNrRow1'.", repo.FrmBsvs.FlexGrid.ColArtNrRow1Info, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.FrmBsvs.FlexGrid.ColArtNrRow1Info, "Text", Artikel1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmBsvs.FlexGrid.ColBsvsKzausloesRow1'.", repo.FrmBsvs.FlexGrid.ColBsvsKzausloesRow1Info, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmBsvs.FlexGrid.ColBsvsKzausloesRow1'.", repo.FrmBsvs.FlexGrid.ColBsvsKzausloesRow1Info, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.FrmBsvs.FlexGrid.ColBsvsKzausloesRow1Info, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Artikel1) on item 'FrmBsvs.FlexGrid.ColArtNrRow2'.", repo.FrmBsvs.FlexGrid.ColArtNrRow2Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Artikel1) on item 'FrmBsvs.FlexGrid.ColArtNrRow2'.", repo.FrmBsvs.FlexGrid.ColArtNrRow2Info, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.FrmBsvs.FlexGrid.ColArtNrRow2Info, "Text", Artikel1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='A') on item 'FrmBsvs.FlexGrid.ColBsvsKzausloesRow2'.", repo.FrmBsvs.FlexGrid.ColBsvsKzausloesRow2Info, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='A') on item 'FrmBsvs.FlexGrid.ColBsvsKzausloesRow2'.", repo.FrmBsvs.FlexGrid.ColBsvsKzausloesRow2Info, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.FrmBsvs.FlexGrid.ColBsvsKzausloesRow2Info, "Text", "A");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1,00') on item 'FrmBsvs.FlexGrid.ColBsvsFehlmRow1'.", repo.FrmBsvs.FlexGrid.ColBsvsFehlmRow1Info, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1,00') on item 'FrmBsvs.FlexGrid.ColBsvsFehlmRow1'.", repo.FrmBsvs.FlexGrid.ColBsvsFehlmRow1Info, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.FrmBsvs.FlexGrid.ColBsvsFehlmRow1Info, "Text", "1,00");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBsvs.CbVerdichtung' at Center.", repo.FrmBsvs.CbVerdichtungInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBsvs.CbVerdichtung' at Center.", repo.FrmBsvs.CbVerdichtungInfo, new RecordItemIndex(18));
             repo.FrmBsvs.CbVerdichtung.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBsvs.PbDataAccessLoad' at Center.", repo.FrmBsvs.PbDataAccessLoadInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBsvs.PbDataAccessLoad' at Center.", repo.FrmBsvs.PbDataAccessLoadInfo, new RecordItemIndex(19));
             repo.FrmBsvs.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Artikel1) on item 'FrmBsvs.FlexGrid.ColArtNrRow1'.", repo.FrmBsvs.FlexGrid.ColArtNrRow1Info, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Artikel1) on item 'FrmBsvs.FlexGrid.ColArtNrRow1'.", repo.FrmBsvs.FlexGrid.ColArtNrRow1Info, new RecordItemIndex(20));
             Validate.AttributeEqual(repo.FrmBsvs.FlexGrid.ColArtNrRow1Info, "Text", Artikel1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2,00') on item 'FrmBsvs.FlexGrid.ColBsvsFehlmRow1'.", repo.FrmBsvs.FlexGrid.ColBsvsFehlmRow1Info, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2,00') on item 'FrmBsvs.FlexGrid.ColBsvsFehlmRow1'.", repo.FrmBsvs.FlexGrid.ColBsvsFehlmRow1Info, new RecordItemIndex(21));
             Validate.AttributeEqual(repo.FrmBsvs.FlexGrid.ColBsvsFehlmRow1Info, "Text", "2,00");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBsvs.Schliessen' at Center.", repo.FrmBsvs.SchliessenInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBsvs.Schliessen' at Center.", repo.FrmBsvs.SchliessenInfo, new RecordItemIndex(22));
             repo.FrmBsvs.Schliessen.Click();
             
         }
