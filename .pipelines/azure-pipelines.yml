@@ -104,7 +104,7 @@ jobs:
    - task: SendEmail@1
      condition: AND(succeededOrFailed(),ne(canceled(), 'true'))
      inputs:
-      To: 'ApteanOperations-DeepMatrix@aptean.com'
+      To: 'kishore.ramachandraiah@aptean.com'
       From: 'RSautomation@aptean.com'
       Subject: 'RS2 Automation reports'
       Body: |
