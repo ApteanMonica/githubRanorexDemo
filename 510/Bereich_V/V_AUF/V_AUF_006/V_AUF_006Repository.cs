@@ -1613,6 +1613,7 @@ namespace V_AUF_006
             V_AUF_006RepositoryFolders.FlexGrid1Folder _flexgrid1;
             RepoItemInfo _titlebar100tabellenerfassungauftrInfo;
             RepoItemInfo _tabellenerfassung_flexgridInfo;
+            RepoItemInfo _pbcommonsaveInfo;
 
             /// <summary>
             /// Creates a new TblTabellenerfassung  folder.
@@ -1623,6 +1624,7 @@ namespace V_AUF_006
                 _flexgrid1 = new V_AUF_006RepositoryFolders.FlexGrid1Folder(this);
                 _titlebar100tabellenerfassungauftrInfo = new RepoItemInfo(this, "TitleBar100TabellenerfassungAuftr", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "f77dc3f3-0dd0-48f1-903b-9be51797c532");
                 _tabellenerfassung_flexgridInfo = new RepoItemInfo(this, "Tabellenerfassung_FlexGrid", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", "", 30000, null, "b2856d06-5246-4a3d-b815-a41b2751c309");
+                _pbcommonsaveInfo = new RepoItemInfo(this, "PbCommonSave", "container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Save']", "", 30000, null, "a917a64a-e31a-4f5d-a712-f99ce1c9ee54");
             }
 
             /// <summary>
@@ -1694,6 +1696,30 @@ namespace V_AUF_006
                 get
                 {
                     return _tabellenerfassung_flexgridInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbCommonSave item.
+            /// </summary>
+            [RepositoryItem("a917a64a-e31a-4f5d-a712-f99ce1c9ee54")]
+            public virtual Ranorex.Button PbCommonSave
+            {
+                get
+                {
+                    return _pbcommonsaveInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbCommonSave item info.
+            /// </summary>
+            [RepositoryItemInfo("a917a64a-e31a-4f5d-a712-f99ce1c9ee54")]
+            public virtual RepoItemInfo PbCommonSaveInfo
+            {
+                get
+                {
+                    return _pbcommonsaveInfo;
                 }
             }
 

@@ -231,23 +231,26 @@ namespace V_AUF_006.Recording
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblTabellenerfassung.TitleBar100TabellenerfassungAuftr' at Center.", repo.TblTabellenerfassung.TitleBar100TabellenerfassungAuftrInfo, new RecordItemIndex(34));
             repo.TblTabellenerfassung.TitleBar100TabellenerfassungAuftr.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}' with focus on 'TblTabellenerfassung.Tabellenerfassung_FlexGrid'.", repo.TblTabellenerfassung.Tabellenerfassung_FlexGridInfo, new RecordItemIndex(35));
-            repo.TblTabellenerfassung.Tabellenerfassung_FlexGrid.EnsureVisible();
-            Keyboard.Press("{F12}");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblTabellenerfassung.PbCommonSave' at Center.", repo.TblTabellenerfassung.PbCommonSaveInfo, new RecordItemIndex(35));
+            repo.TblTabellenerfassung.PbCommonSave.Click();
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ACHTUNG: Kreditlimit um 11,20 EUR überschritten\r\n\r\nWollen Sie die Position trotzdem speichern?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(36));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{F12}' with focus on 'TblTabellenerfassung.Tabellenerfassung_FlexGrid'.", repo.TblTabellenerfassung.Tabellenerfassung_FlexGridInfo, new RecordItemIndex(36));
+            //repo.TblTabellenerfassung.Tabellenerfassung_FlexGrid.EnsureVisible();
+            //Keyboard.Press("{F12}");
+            
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ACHTUNG: Kreditlimit um 11,20 EUR überschritten\r\n\r\nWollen Sie die Position trotzdem speichern?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(37));
             //Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "ACHTUNG: Kreditlimit um 11,20 EUR überschritten\r\n\r\nWollen Sie die Position trotzdem speichern?");
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(37));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(38));
             //repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(180000), new RecordItemIndex(38));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(180000), new RecordItemIndex(39));
             repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(180000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Keine weiteren Positionen zu erfassen') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(39));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Keine weiteren Positionen zu erfassen') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(40));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Keine weiteren Positionen zu erfassen");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(40));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(41));
             repo.DlgMessageBox.Button0.Click();
             
         }

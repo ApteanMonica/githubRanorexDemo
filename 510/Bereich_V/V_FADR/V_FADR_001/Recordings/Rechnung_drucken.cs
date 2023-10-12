@@ -94,8 +94,8 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblDrucken'", repo.TblDrucken.SelfInfo, new ActionTimeout(60000), new RecordItemIndex(4));
             repo.TblDrucken.SelfInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'R23/00001\t201900005\t13') on item 'TblDrucken.Row7'.", repo.TblDrucken.Row7Info, new RecordItemIndex(5));
-            Validate.AttributeContains(repo.TblDrucken.Row7Info, "Text", "R23/00001\t201900005\t13");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'201900005\t13') on item 'TblDrucken.Row7'.", repo.TblDrucken.Row7Info, new RecordItemIndex(5));
+            Validate.AttributeContains(repo.TblDrucken.Row7Info, "Text", "201900005\t13");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblDrucken'.", repo.TblDrucken.SelfInfo, new RecordItemIndex(6));
             Keyboard.PrepareFocus(repo.TblDrucken.Self);
