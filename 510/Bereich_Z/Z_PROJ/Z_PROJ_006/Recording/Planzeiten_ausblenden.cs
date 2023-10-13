@@ -82,10 +82,16 @@ namespace Z_PROJ_006.Recording
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.PbExtrasExtras' at Center.", repo.FrmTabProjekt.PbExtrasExtrasInfo, new RecordItemIndex(0));
             repo.FrmTabProjekt.PbExtrasExtras.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ZPROJ.PhasenDetails' at Center.", repo.ZPROJ.PhasenDetailsInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'ZPROJ.PhasenDetails'", repo.ZPROJ.PhasenDetailsInfo, new ActionTimeout(180000), new RecordItemIndex(1));
+            repo.ZPROJ.PhasenDetailsInfo.WaitForExists(180000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ZPROJ.PhasenDetails' at Center.", repo.ZPROJ.PhasenDetailsInfo, new RecordItemIndex(2));
             repo.ZPROJ.PhasenDetails.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ZPROJ.Integriert' at Center.", repo.ZPROJ.IntegriertInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'ZPROJ.Integriert'", repo.ZPROJ.IntegriertInfo, new ActionTimeout(180000), new RecordItemIndex(3));
+            repo.ZPROJ.IntegriertInfo.WaitForExists(180000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ZPROJ.Integriert' at Center.", repo.ZPROJ.IntegriertInfo, new RecordItemIndex(4));
             repo.ZPROJ.Integriert.Click();
             
         }

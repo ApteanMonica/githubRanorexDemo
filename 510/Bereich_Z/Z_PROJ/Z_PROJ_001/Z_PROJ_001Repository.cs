@@ -29,7 +29,6 @@ namespace Z_PROJ_001
         static Z_PROJ_001Repository instance = new Z_PROJ_001Repository();
         Z_PROJ_001RepositoryFolders.FrmTabProjektAppFolder _frmtabprojekt;
         Z_PROJ_001RepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
-        Z_PROJ_001RepositoryFolders.FrmNkrAppFolder _frmnkr;
         Z_PROJ_001RepositoryFolders.TblBektAppFolder _tblbekt;
 
         /// <summary>
@@ -49,7 +48,6 @@ namespace Z_PROJ_001
         {
             _frmtabprojekt = new Z_PROJ_001RepositoryFolders.FrmTabProjektAppFolder(this);
             _dlgmessagebox = new Z_PROJ_001RepositoryFolders.DlgMessageBoxAppFolder(this);
-            _frmnkr = new Z_PROJ_001RepositoryFolders.FrmNkrAppFolder(this);
             _tblbekt = new Z_PROJ_001RepositoryFolders.TblBektAppFolder(this);
         }
 
@@ -136,15 +134,6 @@ namespace Z_PROJ_001
         }
 
         /// <summary>
-        /// The FrmNkr folder.
-        /// </summary>
-        [RepositoryFolder("466d6f48-ad9c-42bd-a340-a6a02782f369")]
-        public virtual Z_PROJ_001RepositoryFolders.FrmNkrAppFolder FrmNkr
-        {
-            get { return _frmnkr; }
-        }
-
-        /// <summary>
         /// The TblBekt folder.
         /// </summary>
         [RepositoryFolder("cee97138-caae-4ad3-ab3b-8b420e8c9688")]
@@ -182,7 +171,6 @@ namespace Z_PROJ_001
             RepoItemInfo _vorlageprojektnrInfo;
             RepoItemInfo _cmbstatusInfo;
             RepoItemInfo _bezeichnungInfo;
-            RepoItemInfo _projektInfo;
             RepoItemInfo _allgemeinInfo;
             RepoItemInfo _tabpagephasenInfo;
 
@@ -205,12 +193,11 @@ namespace Z_PROJ_001
                 _pbcommondelInfo = new RepoItemInfo(this, "PbCommonDel", "container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Del']", "", 30000, null, "44a16704-7436-4374-b0a3-fbc3701113b4");
                 _projektnrInfo = new RepoItemInfo(this, "Projektnr", "container[@controlname='ClientArea']/?/?/text[@accessiblename='Projektnr.']", "", 30000, null, "65ad1853-7a8a-42c5-97ef-7550259630d5");
                 _textartInfo = new RepoItemInfo(this, "TextArt", "container[@controlname='ClientArea']/text[@controlname='dfPa_cd']/text[@accessiblename='Art']", "", 30000, null, "0c626696-8d8a-4e94-b4f0-bd3771093cdd");
-                _vorlageprojektnrInfo = new RepoItemInfo(this, "VorlageProjektnr", "container[@controlname='ClientArea']/text[@controlname='dfProj_nr_vorlage']/text[@accessiblename='Vorlage-Projektnr.']", "", 30000, null, "cf13eecd-7cb1-4ab5-bfee-d871961406df");
+                _vorlageprojektnrInfo = new RepoItemInfo(this, "VorlageProjektnr", "container[@controlname='ClientArea']/text[@controlname='dfProj_nr_vorlage']/text[@accessiblename~'Vorlage-Projektnr']", "", 30000, null, "cf13eecd-7cb1-4ab5-bfee-d871961406df");
                 _cmbstatusInfo = new RepoItemInfo(this, "CmbStatus", "container[@controlname='ClientArea']/combobox[@controlname='cmbStatus']", "", 30000, null, "40360e18-265e-4c6e-80bd-2f011a5fc5e5");
                 _bezeichnungInfo = new RepoItemInfo(this, "Bezeichnung", "container[@controlname='ClientArea']/text[@controlname='dfBez']/text[@accessiblename='Bezeichnung']", "", 30000, null, "516b6b62-c6d4-4a5a-bb37-33fbf3783f87");
-                _projektInfo = new RepoItemInfo(this, "Projekt", "container/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpProjekt']", "", 30000, null, "5731d5c5-7108-4e59-8a34-55de3f864026");
-                _allgemeinInfo = new RepoItemInfo(this, "Allgemein", "container/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='All&gemein']", "", 30000, null, "728b42dc-9953-4385-9a76-0920b4af80a2");
-                _tabpagephasenInfo = new RepoItemInfo(this, "TabPagePhasen", "container/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&Phasen']", "", 30000, null, "6af4ca96-30ea-4d55-8f1b-db9455c40de7");
+                _allgemeinInfo = new RepoItemInfo(this, "Allgemein", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename~'All']", "", 30000, null, "728b42dc-9953-4385-9a76-0920b4af80a2");
+                _tabpagephasenInfo = new RepoItemInfo(this, "TabPagePhasen", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename~'Phasen']", "", 30000, null, "6af4ca96-30ea-4d55-8f1b-db9455c40de7");
             }
 
             /// <summary>
@@ -554,30 +541,6 @@ namespace Z_PROJ_001
                 get
                 {
                     return _bezeichnungInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Projekt item.
-            /// </summary>
-            [RepositoryItem("5731d5c5-7108-4e59-8a34-55de3f864026")]
-            public virtual Ranorex.TabPage Projekt
-            {
-                get
-                {
-                    return _projektInfo.CreateAdapter<Ranorex.TabPage>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Projekt item info.
-            /// </summary>
-            [RepositoryItemInfo("5731d5c5-7108-4e59-8a34-55de3f864026")]
-            public virtual RepoItemInfo ProjektInfo
-            {
-                get
-                {
-                    return _projektInfo;
                 }
             }
 
@@ -1517,7 +1480,7 @@ namespace Z_PROJ_001
             /// Creates a new Phasen_Felder  folder.
             /// </summary>
             public Phasen_FelderFolder(RepoGenBaseFolder parentFolder) :
-                    base("Phasen_Felder", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controltypename='C1FlexGridEx']/table", parentFolder, 30000, null, false, "ba64ad8e-3d54-4148-9c35-609f777e31b2", "")
+                    base("Phasen_Felder", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "ba64ad8e-3d54-4148-9c35-609f777e31b2", "")
             {
                 _colphaspspcoderow1Info = new RepoItemInfo(this, "ColPhasPspCodeRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colPhas_psp_code Row 1']", "", 30000, null, "8bd30799-e12b-400c-972f-481515b52da5");
                 _colphascdrow1Info = new RepoItemInfo(this, "ColPhasCdRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colPhas_cd Row 1']", "", 30000, null, "454ce75c-e2af-4be3-bdfd-85a4169c240c");
@@ -2354,7 +2317,7 @@ namespace Z_PROJ_001
             /// Creates a new Phasen_Zeilen  folder.
             /// </summary>
             public Phasen_ZeilenFolder(RepoGenBaseFolder parentFolder) :
-                    base("Phasen_Zeilen", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controltypename='C1FlexGridEx']/table", parentFolder, 30000, null, false, "be444675-3430-4bed-ae55-1eb491b17e26", "")
+                    base("Phasen_Zeilen", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "be444675-3430-4bed-ae55-1eb491b17e26", "")
             {
                 _phasen_row1Info = new RepoItemInfo(this, "Phasen_Row1", "row[@accessiblename='Row 1']", "", 30000, null, "31d30eca-4d41-4845-bd41-217ea2994489");
                 _phasen_row2Info = new RepoItemInfo(this, "Phasen_Row2", "row[@accessiblename='Row 2']", "", 30000, null, "aed270d3-9590-4359-8bc9-6ec6dbc04c47");
@@ -3021,202 +2984,6 @@ namespace Z_PROJ_001
                 get
                 {
                     return _button0Info;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The FrmNkrAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("466d6f48-ad9c-42bd-a340-a6a02782f369")]
-        public partial class FrmNkrAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _titlebar100nummernkreisverwaltungInfo;
-            RepoItemInfo _textInfo;
-            RepoItemInfo _pbeditInfo;
-            RepoItemInfo _column0_mit_nummernkreis_proj_kInfo;
-            RepoItemInfo _text1Info;
-            RepoItemInfo _pbdataaccesssaveInfo;
-
-            /// <summary>
-            /// Creates a new FrmNkr  folder.
-            /// </summary>
-            public FrmNkrAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FrmNkr", "/form[@controlname='frmNkr']", parentFolder, 30000, null, true, "466d6f48-ad9c-42bd-a340-a6a02782f369", "")
-            {
-                _titlebar100nummernkreisverwaltungInfo = new RepoItemInfo(this, "TitleBar100Nummernkreisverwaltung", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "6b831be1-1d33-4e10-9376-8d92b1458d23");
-                _textInfo = new RepoItemInfo(this, "Text", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup1']//text[@accessiblerole='Text']", "", 30000, null, "c8ff85b1-dcef-4f1c-82cb-ead6619b8722");
-                _pbeditInfo = new RepoItemInfo(this, "PbEdit", "?/?/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup2']/button[@controlname='pbEdit']", "", 30000, null, "2ffb7c13-8cee-410c-9d2f-348359189004");
-                _column0_mit_nummernkreis_proj_kInfo = new RepoItemInfo(this, "Column0_mit_Nummernkreis_PROJ_K", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']//table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Nummernkreis]/cell[@accessiblename~'Column 0']", "", 30000, null, "9cef30d4-13c0-4686-912a-50c0b889aaf5");
-                _text1Info = new RepoItemInfo(this, "Text1", "container[@controlname='ClientArea']//text[@controlname='dfNkr_lfdnr']/text[@accessiblerole='Text']", "", 30000, null, "1d0de2f6-1215-483d-8722-36b8a1e675d1");
-                _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Save']", "", 30000, null, "faba97ef-3d7d-4366-ad76-51faece1b9a3");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("466d6f48-ad9c-42bd-a340-a6a02782f369")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("466d6f48-ad9c-42bd-a340-a6a02782f369")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TitleBar100Nummernkreisverwaltung item.
-            /// </summary>
-            [RepositoryItem("6b831be1-1d33-4e10-9376-8d92b1458d23")]
-            public virtual Ranorex.TitleBar TitleBar100Nummernkreisverwaltung
-            {
-                get
-                {
-                    return _titlebar100nummernkreisverwaltungInfo.CreateAdapter<Ranorex.TitleBar>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TitleBar100Nummernkreisverwaltung item info.
-            /// </summary>
-            [RepositoryItemInfo("6b831be1-1d33-4e10-9376-8d92b1458d23")]
-            public virtual RepoItemInfo TitleBar100NummernkreisverwaltungInfo
-            {
-                get
-                {
-                    return _titlebar100nummernkreisverwaltungInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Text item.
-            /// </summary>
-            [RepositoryItem("c8ff85b1-dcef-4f1c-82cb-ead6619b8722")]
-            public virtual Ranorex.Text Text
-            {
-                get
-                {
-                    return _textInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Text item info.
-            /// </summary>
-            [RepositoryItemInfo("c8ff85b1-dcef-4f1c-82cb-ead6619b8722")]
-            public virtual RepoItemInfo TextInfo
-            {
-                get
-                {
-                    return _textInfo;
-                }
-            }
-
-            /// <summary>
-            /// The PbEdit item.
-            /// </summary>
-            [RepositoryItem("2ffb7c13-8cee-410c-9d2f-348359189004")]
-            public virtual Ranorex.Button PbEdit
-            {
-                get
-                {
-                    return _pbeditInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PbEdit item info.
-            /// </summary>
-            [RepositoryItemInfo("2ffb7c13-8cee-410c-9d2f-348359189004")]
-            public virtual RepoItemInfo PbEditInfo
-            {
-                get
-                {
-                    return _pbeditInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Column0_mit_Nummernkreis_PROJ_K item.
-            /// </summary>
-            [RepositoryItem("9cef30d4-13c0-4686-912a-50c0b889aaf5")]
-            public virtual Ranorex.Cell Column0_mit_Nummernkreis_PROJ_K
-            {
-                get
-                {
-                    return _column0_mit_nummernkreis_proj_kInfo.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Column0_mit_Nummernkreis_PROJ_K item info.
-            /// </summary>
-            [RepositoryItemInfo("9cef30d4-13c0-4686-912a-50c0b889aaf5")]
-            public virtual RepoItemInfo Column0_mit_Nummernkreis_PROJ_KInfo
-            {
-                get
-                {
-                    return _column0_mit_nummernkreis_proj_kInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Text1 item.
-            /// </summary>
-            [RepositoryItem("1d0de2f6-1215-483d-8722-36b8a1e675d1")]
-            public virtual Ranorex.Text Text1
-            {
-                get
-                {
-                    return _text1Info.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Text1 item info.
-            /// </summary>
-            [RepositoryItemInfo("1d0de2f6-1215-483d-8722-36b8a1e675d1")]
-            public virtual RepoItemInfo Text1Info
-            {
-                get
-                {
-                    return _text1Info;
-                }
-            }
-
-            /// <summary>
-            /// The PbDataAccessSave item.
-            /// </summary>
-            [RepositoryItem("faba97ef-3d7d-4366-ad76-51faece1b9a3")]
-            public virtual Ranorex.Button PbDataAccessSave
-            {
-                get
-                {
-                    return _pbdataaccesssaveInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PbDataAccessSave item info.
-            /// </summary>
-            [RepositoryItemInfo("faba97ef-3d7d-4366-ad76-51faece1b9a3")]
-            public virtual RepoItemInfo PbDataAccessSaveInfo
-            {
-                get
-                {
-                    return _pbdataaccesssaveInfo;
                 }
             }
         }

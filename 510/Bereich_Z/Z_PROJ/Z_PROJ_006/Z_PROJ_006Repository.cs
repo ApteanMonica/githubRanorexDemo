@@ -29,7 +29,6 @@ namespace Z_PROJ_006
         static Z_PROJ_006Repository instance = new Z_PROJ_006Repository();
         Z_PROJ_006RepositoryFolders.FrmTabProjektAppFolder _frmtabprojekt;
         Z_PROJ_006RepositoryFolders.ZPROJAppFolder _zproj;
-        Z_PROJ_006RepositoryFolders.WSBARAppFolder _wsbar;
 
         /// <summary>
         /// Gets the singleton class instance representing the Z_PROJ_006Repository element repository.
@@ -48,7 +47,6 @@ namespace Z_PROJ_006
         {
             _frmtabprojekt = new Z_PROJ_006RepositoryFolders.FrmTabProjektAppFolder(this);
             _zproj = new Z_PROJ_006RepositoryFolders.ZPROJAppFolder(this);
-            _wsbar = new Z_PROJ_006RepositoryFolders.WSBARAppFolder(this);
         }
 
 #region Variables
@@ -132,15 +130,6 @@ namespace Z_PROJ_006
         {
             get { return _zproj; }
         }
-
-        /// <summary>
-        /// The WSBAR folder.
-        /// </summary>
-        [RepositoryFolder("64fb1597-ea5a-4e25-85c7-5b527b4b8c84")]
-        public virtual Z_PROJ_006RepositoryFolders.WSBARAppFolder WSBAR
-        {
-            get { return _wsbar; }
-        }
     }
 
     /// <summary>
@@ -176,7 +165,7 @@ namespace Z_PROJ_006
                 _selfInfo = new SelfInfoClass(this);
                 _titlebar100projektverwaltenInfo = new RepoItemInfo(this, "TitleBar100ProjektVerwalten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "c5e91bb2-a1d3-496e-be40-fdeb5c4e2ce8");
                 _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "6e5b6408-0d1d-4138-894f-2536aba0ce73");
-                _tabpagephasenInfo = new RepoItemInfo(this, "TabPagePhasen", "container/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&Phasen']", "", 30000, null, "6af4ca96-30ea-4d55-8f1b-db9455c40de7");
+                _tabpagephasenInfo = new RepoItemInfo(this, "TabPagePhasen", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename~'Phasen']", "", 30000, null, "6af4ca96-30ea-4d55-8f1b-db9455c40de7");
                 _pbextrasextrasInfo = new RepoItemInfo(this, "PbExtrasExtras", "container[@controlname='RibbonBar']/container[@controlname='ExtrasGroup']/button[@controlname='pbExtras_Extras']", "", 30000, null, "37e3617a-73b4-4482-8be7-15fd07d012fc");
                 _maximierenInfo = new RepoItemInfo(this, "Maximieren", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Maximieren']", "", 30000, null, "c828e334-ac30-4082-96a6-becd883af3fa");
                 _pbdataaccessreloadInfo = new RepoItemInfo(this, "PbDataAccessReload", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Reload']", "", 30000, null, "f68fb07a-9d06-4875-a356-c32ac0f34a02");
@@ -490,7 +479,7 @@ namespace Z_PROJ_006
             public SuchergebnisFolder(RepoGenBaseFolder parentFolder) :
                     base("Suchergebnis", "container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "7c170763-d6ea-4de1-b678-e65e6fdf5680", "")
             {
-                _row_mit_variable_projektInfo = new RepoItemInfo(this, "Row_mit_Variable_Projekt", "row[@accessiblename~'Row ']/cell[@text=$Projekt and @accessiblerole='Cell']", "", 30000, null, "5ebefd01-9a89-4c63-8a12-c47a5c745b4a");
+                _row_mit_variable_projektInfo = new RepoItemInfo(this, "Row_mit_Variable_Projekt", "row[@accessiblename~'Row ']/cell[@text=$projekt and @accessiblerole='Cell']", "", 30000, null, "5ebefd01-9a89-4c63-8a12-c47a5c745b4a");
             }
 
             /// <summary>
@@ -566,7 +555,7 @@ namespace Z_PROJ_006
                     base("Register_Phasen", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpPhase']", parentFolder, 30000, null, false, "afe9a97a-be87-4bf8-b5b7-d884b92fd9fd", "")
             {
                 _phasen_felder = new Z_PROJ_006RepositoryFolders.Phasen_FelderFolder(this);
-                _tabpagedatenzahlenInfo = new RepoItemInfo(this, "TabPageDatenZahlen", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='ucPhaseDetail1']/tabpagelist[@controlname='tabPagePhase']/tabpage[@accessiblename='&Daten/Zahlen']", "", 30000, null, "c901c95e-caac-4ec1-a824-4c46e55e64ae");
+                _tabpagedatenzahlenInfo = new RepoItemInfo(this, "TabPageDatenZahlen", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='ucPhaseDetail1']/tabpagelist[@controlname='tabPagePhase']/tabpage[@accessiblename~'Daten']", "", 30000, null, "c901c95e-caac-4ec1-a824-4c46e55e64ae");
                 _einheit_511_521Info = new RepoItemInfo(this, "Einheit_511_521", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='ucPhaseDetail1']/tabpagelist[@controlname='tabPagePhase']/tabpage[@controlname='tabPageZahlen']/?/text[@text='STD']", "", 30000, null, "6cc42af4-3373-4305-bbab-130f1782a340");
                 _syncdfphasplanmengeInfo = new RepoItemInfo(this, "SyncdfPhasPlanmenge", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='1']/container[@controlname='ucPhaseDetail1']/tabpagelist[@controlname='tabPagePhase']/tabpage[@controlname='tabPageZahlen']/container[@controlname='gbPlan']/text[@controlname='syncdfPhas_planmenge']", "", 30000, null, "774fdbd1-732d-4873-93d7-8713ffb385bb");
                 _rightInfo = new RepoItemInfo(this, "Right", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/scrollbar[@style='Horizontal']/button[@text='Right']", "", 30000, null, "b7445f91-7add-4906-8fcc-2ebe23e22225");
@@ -871,7 +860,7 @@ namespace Z_PROJ_006
             /// Creates a new Phasen_Felder  folder.
             /// </summary>
             public Phasen_FelderFolder(RepoGenBaseFolder parentFolder) :
-                    base("Phasen_Felder", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controltypename='C1FlexGridEx']/table", parentFolder, 30000, null, false, "ba64ad8e-3d54-4148-9c35-609f777e31b2", "")
+                    base("Phasen_Felder", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "ba64ad8e-3d54-4148-9c35-609f777e31b2", "")
             {
                 _row4column0Info = new RepoItemInfo(this, "Row4Column0", "row[@accessiblename='Row 4']/cell[@accessiblename='Row 4 Column 0']", "", 30000, null, "2bf72cb0-749b-4dae-89b2-d493bdbf90bb");
                 _row7column0Info = new RepoItemInfo(this, "Row7Column0", "row[@accessiblename='Row 7']/cell[@accessiblename='Row 7 Column 0']", "", 30000, null, "9de0489d-eb10-482c-8ae9-0e726c8678e4");
@@ -1813,72 +1802,6 @@ namespace Z_PROJ_006
                 get
                 {
                     return _integriertInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The WSBARAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("64fb1597-ea5a-4e25-85c7-5b527b4b8c84")]
-        public partial class WSBARAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _wsbarInfo;
-
-            /// <summary>
-            /// Creates a new WSBAR  folder.
-            /// </summary>
-            public WSBARAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("WSBAR", "", parentFolder, 30000, null, true, "64fb1597-ea5a-4e25-85c7-5b527b4b8c84", "")
-            {
-                _wsbarInfo = new RepoItemInfo(this, "WSBAR", "", "", 30000, null, "36a8e148-ad11-42f9-8717-5c232daa8abf");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("64fb1597-ea5a-4e25-85c7-5b527b4b8c84")]
-            public virtual Ranorex.Host Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Host>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("64fb1597-ea5a-4e25-85c7-5b527b4b8c84")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The WSBAR item.
-            /// </summary>
-            [RepositoryItem("36a8e148-ad11-42f9-8717-5c232daa8abf")]
-            public virtual Ranorex.Host WSBAR
-            {
-                get
-                {
-                    return _wsbarInfo.CreateAdapter<Ranorex.Host>(true);
-                }
-            }
-
-            /// <summary>
-            /// The WSBAR item info.
-            /// </summary>
-            [RepositoryItemInfo("36a8e148-ad11-42f9-8717-5c232daa8abf")]
-            public virtual RepoItemInfo WSBARInfo
-            {
-                get
-                {
-                    return _wsbarInfo;
                 }
             }
         }
