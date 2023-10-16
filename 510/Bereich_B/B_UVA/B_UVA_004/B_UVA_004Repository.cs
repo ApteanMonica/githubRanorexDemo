@@ -97,7 +97,7 @@ namespace B_UVA_004
             set { _Form_Name_A22 = value; }
         }
 
-        string _Form_Name_NEU = "UVA-Österreich 2023";
+        string _Form_Name_NEU = "sterreich 2023";
 
         /// <summary>
         /// Gets or sets the value of variable Form_Name_NEU.
@@ -941,6 +941,7 @@ namespace B_UVA_004
         [RepositoryFolder("08cea955-e266-4637-bbc9-4ec7cccb9d4c")]
         public partial class List1000AppFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _uvaoesterreich2023_umlautproblem_521_scriptInfo;
             RepoItemInfo _uvaoesterreich2022Info;
             RepoItemInfo _uvaoesterreich2021Info;
             RepoItemInfo _uvaoesterreich_neuInfo;
@@ -952,6 +953,7 @@ namespace B_UVA_004
             public List1000AppFolder(RepoGenBaseFolder parentFolder) :
                     base("List1000", "/list[@controlid='1000']", parentFolder, 30000, null, true, "08cea955-e266-4637-bbc9-4ec7cccb9d4c", "")
             {
+                _uvaoesterreich2023_umlautproblem_521_scriptInfo = new RepoItemInfo(this, "UVAOEsterreich2023_Umlautproblem_521_Script", "listitem[@text~'sterreich 2023']", "", 30000, null, "7332ba5b-8648-4f14-b3b0-bbdd5d50fe46");
                 _uvaoesterreich2022Info = new RepoItemInfo(this, "UVAOEsterreich2022", "listitem[@text='UVA-Österreich 2022']", "", 30000, null, "e6aa37ec-2080-4d8c-89bb-3dd612a6699a");
                 _uvaoesterreich2021Info = new RepoItemInfo(this, "UVAOEsterreich2021", "listitem[@text='UVA-Österreich 2021']", "", 30000, null, "de5d555b-719e-4735-9cd3-26c10b018e80");
                 _uvaoesterreich_neuInfo = new RepoItemInfo(this, "UVAOEsterreich_NEU", "listitem[@text~$Form_Name_NEU]", "", 30000, null, "9e5e62d5-18b6-4788-bd24-c8f2190586db");
@@ -979,6 +981,30 @@ namespace B_UVA_004
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UVAOEsterreich2023_Umlautproblem_521_Script item.
+            /// </summary>
+            [RepositoryItem("7332ba5b-8648-4f14-b3b0-bbdd5d50fe46")]
+            public virtual Ranorex.ListItem UVAOEsterreich2023_Umlautproblem_521_Script
+            {
+                get
+                {
+                    return _uvaoesterreich2023_umlautproblem_521_scriptInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UVAOEsterreich2023_Umlautproblem_521_Script item info.
+            /// </summary>
+            [RepositoryItemInfo("7332ba5b-8648-4f14-b3b0-bbdd5d50fe46")]
+            public virtual RepoItemInfo UVAOEsterreich2023_Umlautproblem_521_ScriptInfo
+            {
+                get
+                {
+                    return _uvaoesterreich2023_umlautproblem_521_scriptInfo;
                 }
             }
 
@@ -2440,6 +2466,7 @@ namespace B_UVA_004
             RepoItemInfo _dfcode1Info;
             RepoItemInfo _dfcode2Info;
             RepoItemInfo _pbuvakkopierenInfo;
+            RepoItemInfo _oeffnenInfo;
 
             /// <summary>
             /// Creates a new FrmUVAK  folder.
@@ -2457,6 +2484,7 @@ namespace B_UVA_004
                 _dfcode1Info = new RepoItemInfo(this, "DfCode1", "container[@controlname='ClientArea']/text[@controlname='dfCode1']", "", 30000, null, "38ba685f-b77c-407e-b0d6-070a8c8326cc");
                 _dfcode2Info = new RepoItemInfo(this, "DfCode2", "container[@controlname='ClientArea']/text[@controlname='dfCode2']", "", 30000, null, "57c07637-df50-4dd0-8af2-cabe8a6044e3");
                 _pbuvakkopierenInfo = new RepoItemInfo(this, "PbUVAKKopieren", "container[@controlname='ClientArea']/button[@controlname='pbUVAK_Kopieren']", "", 30000, null, "e9ecc27f-a445-47aa-aaa7-6d8073d6816e");
+                _oeffnenInfo = new RepoItemInfo(this, "OEffnen", "container[@controlname='ClientArea']/combobox[@controlname='cmbUvak2']/button[@accessiblename='Öffnen']", "", 30000, null, "75ac35cd-6a56-44da-8c57-c514ffbaa5a7");
             }
 
             /// <summary>
@@ -2720,6 +2748,30 @@ namespace B_UVA_004
                 get
                 {
                     return _pbuvakkopierenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OEffnen item.
+            /// </summary>
+            [RepositoryItem("75ac35cd-6a56-44da-8c57-c514ffbaa5a7")]
+            public virtual Ranorex.Button OEffnen
+            {
+                get
+                {
+                    return _oeffnenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OEffnen item info.
+            /// </summary>
+            [RepositoryItemInfo("75ac35cd-6a56-44da-8c57-c514ffbaa5a7")]
+            public virtual RepoItemInfo OEffnenInfo
+            {
+                get
+                {
+                    return _oeffnenInfo;
                 }
             }
         }

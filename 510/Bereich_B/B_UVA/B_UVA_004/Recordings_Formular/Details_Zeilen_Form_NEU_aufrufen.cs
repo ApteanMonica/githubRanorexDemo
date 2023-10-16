@@ -110,8 +110,8 @@ namespace B_UVA_004.Recordings_Formular
             repo.TblUVAF.FlexGrid.ColUvaDrucken_Zeile_mit_Form_Name_NEUInfo.WaitForExists(120000);
             
             // TODO: variabel Zeile mit A21 elektieren
-            Report.Log(ReportLevel.Info, "Validation", "TODO: variabel Zeile mit A21 elektieren\r\nValidating AttributeEqual (Text=$Form_Name_NEU) on item 'TblUVAF.FlexGrid.UVA_Form_Bez_in_zeile_mit_Form_Name_NEU'.", repo.TblUVAF.FlexGrid.UVA_Form_Bez_in_zeile_mit_Form_Name_NEUInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblUVAF.FlexGrid.UVA_Form_Bez_in_zeile_mit_Form_Name_NEUInfo, "Text", Form_Name_NEU);
+            Report.Log(ReportLevel.Info, "Validation", "TODO: variabel Zeile mit A21 elektieren\r\nValidating AttributeContains (Text>$Form_Name_NEU) on item 'TblUVAF.FlexGrid.UVA_Form_Bez_in_zeile_mit_Form_Name_NEU'.", repo.TblUVAF.FlexGrid.UVA_Form_Bez_in_zeile_mit_Form_Name_NEUInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.TblUVAF.FlexGrid.UVA_Form_Bez_in_zeile_mit_Form_Name_NEUInfo, "Text", Form_Name_NEU);
             
             // TODO: variabel Zeile mit A21_ selektieren
             Report.Log(ReportLevel.Info, "Validation", "TODO: variabel Zeile mit A21_ selektieren\r\nValidating AttributeEqual (AccessibleValue='True') on item 'TblUVAF.FlexGrid.ColUvaDrucken_Zeile_mit_Form_Name_NEU'.", repo.TblUVAF.FlexGrid.ColUvaDrucken_Zeile_mit_Form_Name_NEUInfo, new RecordItemIndex(3));
