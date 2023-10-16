@@ -45,7 +45,6 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
             file_selectergebnis_b_buop_offen_aktuell = "C:\\temp\\B_ZAHLV_001_B_BUOP_offen_aktuell.txt";
             file_selectergebnis_b_buop_offen_Referenz = "C:\\Testdaten\\Allgemein\\SQL_Referenz_Files\\B_ZAHLV_001\\B_ZAHLV_001_B_BUOP_offen_Referenz.txt";
             Programmversion = "";
-            Datenbank = "";
         }
 
         /// <summary>
@@ -104,18 +103,6 @@ namespace B_ZAHLV_001.Recordings_SQL_Usercode
         {
             get { return _Programmversion; }
             set { _Programmversion = value; }
-        }
-
-        string _Datenbank;
-
-        /// <summary>
-        /// Gets or sets the value of variable Datenbank.
-        /// </summary>
-        [TestVariable("9f15a789-1930-4fce-9487-1ebc5cf5286f")]
-        public string Datenbank
-        {
-            get { return _Datenbank; }
-            set { _Datenbank = value; }
         }
 
 #endregion

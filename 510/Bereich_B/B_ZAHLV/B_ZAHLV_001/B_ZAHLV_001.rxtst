@@ -194,12 +194,6 @@
 					variablename="Programmversion">
 					</var>
 					<var
-					dataname="Datenbank"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="abf53b46-fcbf-4f7f-89ba-04c560a462f7"
-					variablename="Datenbank">
-					</var>
-					<var
 					dataname="SQL_Select_B_BUSA"
 					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
 					variableid="70edba51-7fb8-4239-95ab-25dc436e0ffb"
@@ -232,6 +226,14 @@
 					variablename="file_SQL_Select_B_BUSA">
 					</var>
 				</missingdatabinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="Datenbank"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="abf53b46-fcbf-4f7f-89ba-04c560a462f7"
+					variablename="Datenbank">
+					</var>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="1f00ed20-fcce-4967-83e9-30a424550a9c"
@@ -351,7 +353,7 @@
 			</smartfoldernode>
 			<testcase
 			id="324831c8-adbd-4059-a1e7-7684b08e04aa"
-			name="SQL_Kontrolle_OPs_vor_Verbuchung">
+			name="SQL_Kontrolle_OPs_offen_vor_Verbuchung">
 			</testcase>
 			<testmodule
 			id="33d53de1-f598-4511-b22e-0a368b10e574"
@@ -482,28 +484,28 @@
 					variablename="SQL_Select_B_BUBE">
 					</var>
 					<var
-					dataname="file_selectergebnis_b_bube_aktuell"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="4d200bea-eba2-4785-acb2-a27e784482f4"
-					variablename="file_selectergebnis_b_bube_aktuell">
-					</var>
-					<var
 					dataname="Datenbank"
 					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
 					variableid="40e610d0-9084-4a7e-ae1f-695798771043"
 					variablename="Datenbank">
 					</var>
 					<var
-					dataname="Programmversion"
+					dataname="file_selectergebnis_b_bube_aktuell"
 					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="e20ea27c-18a2-4115-b86e-0483caffc5f4"
-					variablename="Programmversion">
+					variableid="4d200bea-eba2-4785-acb2-a27e784482f4"
+					variablename="file_selectergebnis_b_bube_aktuell">
 					</var>
 					<var
 					dataname="file_selectergebnis_b_bube_Referenz"
 					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
 					variableid="60728b99-a153-4b95-8157-18096a6233e2"
 					variablename="file_selectergebnis_b_bube_Referenz">
+					</var>
+					<var
+					dataname="Programmversion"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="e20ea27c-18a2-4115-b86e-0483caffc5f4"
+					variablename="Programmversion">
 					</var>
 				</databinding>
 			</testmodule>
@@ -590,7 +592,7 @@
 			</testmodule>
 			<testcase
 			id="53ba31ae-4a04-48e8-acbe-a88298197076"
-			name="SQL-Kontrolle_B_BUSA">
+			name="SQL-Kontrolle_B_BUSA_nach_Verbuchung">
 			</testcase>
 			<testmodule
 			id="68bbc46b-2746-47ac-8fdf-10867d0a7ba1"
@@ -697,7 +699,7 @@
 			</testmodule>
 			<testcase
 			id="8bcc4f56-1646-4532-b554-a919124e4ffe"
-			name="SQL-Kontrolle_B_BUBE">
+			name="SQL-Kontrolle_B_BUBE_nach_Verbuchung">
 			</testcase>
 			<setup
 			id="8dda4697-a28d-43f7-a195-63d6aa7c624f"
@@ -725,24 +727,6 @@
 				</description>
 				<databinding>
 					<var
-					dataname="Programmversion"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="8e41bfc6-57ef-4be9-8889-24a281c4ccd8"
-					variablename="Programmversion">
-					</var>
-					<var
-					dataname="Datenbank"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="9c27c8e3-3b4a-421d-b855-07b31a8aca31"
-					variablename="Datenbank">
-					</var>
-					<var
-					dataname="SQL_Select_B_BUOP_alle"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="08eed36f-0c2b-4aad-94b6-c3fb8f48f362"
-					variablename="SQL_Select_B_BUOP_alle">
-					</var>
-					<var
 					dataname="file_selectergebnis_b_buop_alle_aktuell"
 					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
 					variableid="c7b45639-4aab-4154-8e87-2fa66a781d34"
@@ -753,6 +737,24 @@
 					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
 					variableid="3471ed1e-65fb-4199-a4f7-daa0ceaba719"
 					variablename="file_selectergebnis_b_buop_alle_Referenz">
+					</var>
+					<var
+					dataname="SQL_Select_B_BUOP_alle"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="08eed36f-0c2b-4aad-94b6-c3fb8f48f362"
+					variablename="SQL_Select_B_BUOP_alle">
+					</var>
+					<var
+					dataname="Programmversion"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="8e41bfc6-57ef-4be9-8889-24a281c4ccd8"
+					variablename="Programmversion">
+					</var>
+					<var
+					dataname="Datenbank"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="9c27c8e3-3b4a-421d-b855-07b31a8aca31"
+					variablename="Datenbank">
 					</var>
 				</databinding>
 			</testmodule>
@@ -834,7 +836,7 @@
 			</testmodule>
 			<testcase
 			id="b85fede0-b8b6-4bad-89d3-4c82b0c96537"
-			name="SQL-Kontrolle_B_BUOP">
+			name="SQL-Kontrolle_B_BUOP_alle_nach_Verbuchung">
 			</testcase>
 			<teardown
 			id="ba662bcf-2004-443b-975e-570cea633ea9"
@@ -1100,12 +1102,6 @@
 				</description>
 				<databinding>
 					<var
-					dataname="Datenbank"
-					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
-					variableid="9f15a789-1930-4fce-9487-1ebc5cf5286f"
-					variablename="Datenbank">
-					</var>
-					<var
 					dataname="Programmversion"
 					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
 					variableid="42d493aa-729c-4c3b-82ed-25a917a0520a"
@@ -1130,6 +1126,14 @@
 					variablename="file_selectergebnis_b_buop_offen_aktuell">
 					</var>
 				</databinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="Datenbank"
+					datasourceid="e65d82d9-6352-4961-98f9-9b57a9f5955f"
+					variableid="9f15a789-1930-4fce-9487-1ebc5cf5286f"
+					variablename="Datenbank">
+					</var>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="e4e2e9c4-2988-468d-895b-7b23868edce5"
@@ -1374,11 +1378,11 @@ where firm_nr = '100' and adr_nr BETWEEN '303020' AND '303023';">
 					</param>
 					<param
 					name="file_selectergebnis_b_buop_offen_Referenz"
-					value="C:\temp\B_ZAHLV_001_B_BUOP_offen_aktuell.txt">
+					value="C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUOP_offen_Referenz.txt">
 					</param>
 					<param
 					name="file_selectergebnis_b_buop_offen_aktuell"
-					value="C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUOP_offen_Referenz.txt">
+					value="C:\temp\B_ZAHLV_001_B_BUOP_offen_aktuell.txt">
 					</param>
 					<param
 					name="SQL_Select_B_ZLVS"
@@ -1389,13 +1393,8 @@ where firm_nr = '100' and adr_nr BETWEEN '303020' AND '303023';">
 					value="C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_ZLVS_Referenz.txt">
 					</param>
 					<param
-					name="file_selectergebnis_b_zlvs_aktuell"
-					value="C:\temp\B_ZAHLV_001_B_ZLVS_aktuell.txt">
-					</param>
-					<param
 					name="SQL_Select_B_BUSA"
-					value="select  
-BUSA_USERAENDG,
+					value="select BUSA_USERAENDG,
 FIRM_NR,
 BUSA_KEYPOS,
 KTO_NR,
@@ -1504,6 +1503,10 @@ BUSA_KEYPOS_SKT
 from b_busa where firm_nr = '100' and busa_belegnr = '1001';">
 					</param>
 					<param
+					name="file_selectergebnis_b_zlvs_aktuell"
+					value="C:\temp\B_ZAHLV_001_B_ZLVS_aktuell.txt">
+					</param>
+					<param
 					name="file_selectergebnis_b_busa_aktuell"
 					value="C:\temp\B_ZAHLV_001_B_BUSA_aktuell.txt">
 					</param>
@@ -1513,8 +1516,7 @@ from b_busa where firm_nr = '100' and busa_belegnr = '1001';">
 					</param>
 					<param
 					name="SQL_Select_B_BUOP_alle"
-					value="select   
-BUSA_USERAENDG,
+					value="select BUSA_USERAENDG,
 FIRM_NR,
 BUSA_KEYPOS,
 WRG_CD,
@@ -1640,17 +1642,16 @@ from b_buop
 where firm_nr = '100' and adr_nr BETWEEN '303020' AND '303023';">
 					</param>
 					<param
-					name="file_selectergebnis_b_buop_alle_aktuell"
-					value="C:\temp\B_ZAHLV_001_B_BUOP_alle_aktuell.txt">
-					</param>
-					<param
 					name="file_selectergebnis_b_buop_alle_Referenz"
 					value="C:\Testdaten\Allgemein\SQL_Referenz_Files\B_ZAHLV_001\B_ZAHLV_001_B_BUOP_alle_Referenz.txt">
 					</param>
 					<param
+					name="file_selectergebnis_b_buop_alle_aktuell"
+					value="C:\temp\B_ZAHLV_001_B_BUOP_alle_aktuell.txt">
+					</param>
+					<param
 					name="SQL_Select_B_BUBE"
-					value="SELECT
-b_bube.BUSA_USERAENDG,
+					value="SELECT b_bube.BUSA_USERAENDG,
 b_bube.FIRM_NR,
 b_bube.BUSA_KEYPOS,
 BUBE_POS,
@@ -1789,7 +1790,7 @@ FROM	b_bube, b_busa
 				name="B_ZAHLV_001">
 					<testcase
 					id="324831c8-adbd-4059-a1e7-7684b08e04aa"
-					name="SQL_Kontrolle_OPs_vor_Verbuchung">
+					name="SQL_Kontrolle_OPs_offen_vor_Verbuchung">
 						<testmodule
 						id="e2a4136e-4044-45d1-a42a-bf7b73d72be5"
 						name="SQL_Kontrolle_b_buop_offen_LF_303020_303023">
@@ -2097,7 +2098,7 @@ FROM	b_bube, b_busa
 					</testcase>
 					<testcase
 					id="53ba31ae-4a04-48e8-acbe-a88298197076"
-					name="SQL-Kontrolle_B_BUSA">
+					name="SQL-Kontrolle_B_BUSA_nach_Verbuchung">
 						<testmodule
 						id="1da6975b-21d0-4ee0-b24a-93f04927a75a"
 						name="SQL_Kontrolle_b_busa_Beleg_1001">
@@ -2105,7 +2106,7 @@ FROM	b_bube, b_busa
 					</testcase>
 					<testcase
 					id="b85fede0-b8b6-4bad-89d3-4c82b0c96537"
-					name="SQL-Kontrolle_B_BUOP">
+					name="SQL-Kontrolle_B_BUOP_alle_nach_Verbuchung">
 						<testmodule
 						id="9963dc92-64a3-4e5f-88f4-8c5af7ecd6d1"
 						name="SQL_Kontrolle_b_buop_alle_LF_303020_303023">
@@ -2113,7 +2114,7 @@ FROM	b_bube, b_busa
 					</testcase>
 					<testcase
 					id="8bcc4f56-1646-4532-b554-a919124e4ffe"
-					name="SQL-Kontrolle_B_BUBE">
+					name="SQL-Kontrolle_B_BUBE_nach_Verbuchung">
 						<testmodule
 						id="47def4a9-8d94-4137-848b-21980222bc67"
 						name="SQL_Kontrolle_b_bube_Beleg_1001">

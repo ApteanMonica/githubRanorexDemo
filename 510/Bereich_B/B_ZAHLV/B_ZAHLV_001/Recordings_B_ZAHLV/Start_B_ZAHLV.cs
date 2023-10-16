@@ -119,8 +119,8 @@ namespace B_ZAHLV_001.Recordings_B_ZAHLV
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmVerbuch.TitleBar100VerbuchenZahlungen'", repo.FrmVerbuch.TitleBar100VerbuchenZahlungenInfo, new ActionTimeout(60000), new RecordItemIndex(1));
-            repo.FrmVerbuch.TitleBar100VerbuchenZahlungenInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'FrmVerbuch.TitleBar100VerbuchenZahlungen'", repo.FrmVerbuch.TitleBar100VerbuchenZahlungenInfo, new ActionTimeout(180000), new RecordItemIndex(1));
+            repo.FrmVerbuch.TitleBar100VerbuchenZahlungenInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Verbuchen Zahlungen') on item 'FrmVerbuch.TitleBar100VerbuchenZahlungen'.", repo.FrmVerbuch.TitleBar100VerbuchenZahlungenInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.FrmVerbuch.TitleBar100VerbuchenZahlungenInfo, "Text", "Verbuchen Zahlungen");
