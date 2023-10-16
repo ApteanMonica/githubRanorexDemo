@@ -115,26 +115,35 @@ namespace Z_PROJ_001.Recordings_z_proj
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PROJ_BEZ_3_V' with focus on 'FrmTabProjekt.Register_Phasen.Phasen_Felder.ColPhasBezRow1'.", repo.FrmTabProjekt.Register_Phasen.Phasen_Felder.ColPhasBezRow1Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(7));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PROJ_BEZ_3_V' with focus on 'FrmTabProjekt.Register_Phasen.Phasen_Felder.ColPhasBezRow1'.", repo.FrmTabProjekt.Register_Phasen.Phasen_Felder.ColPhasBezRow1Info, new RecordItemIndex(8));
             repo.FrmTabProjekt.Register_Phasen.Phasen_Felder.ColPhasBezRow1.EnsureVisible();
             Keyboard.Press(PROJ_BEZ_3_V);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(9));
             Delay.Duration(1000, false);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'KA' with focus on 'FrmTabProjekt.Register_Phasen.Phasen_Felder.ColZtypCdRow1'.", repo.FrmTabProjekt.Register_Phasen.Phasen_Felder.ColZtypCdRow1Info, new RecordItemIndex(11));
-            repo.FrmTabProjekt.Register_Phasen.Phasen_Felder.ColZtypCdRow1.PressKeys("KA");
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(11));
+            Delay.Duration(1000, false);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(12));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.PbDataAccessSave' at Center.", repo.FrmTabProjekt.PbDataAccessSaveInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'KA' with focus on 'FrmTabProjekt.Register_Phasen.Phasen_Felder.ColZtypCdRow1'.", repo.FrmTabProjekt.Register_Phasen.Phasen_Felder.ColZtypCdRow1Info, new RecordItemIndex(13));
+            repo.FrmTabProjekt.Register_Phasen.Phasen_Felder.ColZtypCdRow1.PressKeys("KA");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(14));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(15));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.PbDataAccessSave' at Center.", repo.FrmTabProjekt.PbDataAccessSaveInfo, new RecordItemIndex(16));
             repo.FrmTabProjekt.PbDataAccessSave.Click();
             
         }
