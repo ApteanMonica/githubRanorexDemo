@@ -28,6 +28,14 @@ mode="Global">
 		name="Art_Nr_Kreditlimit">
 			100015
 		</var>
+		<var
+		id="77899f60-880d-4d49-a6ad-b7d1e0393500"
+		name="AufpMenge_1">
+		</var>
+		<var
+		id="8fd9a196-79d9-4634-8c33-d1b8e18bd61d"
+		name="AufpMenge_2">
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -43943,7 +43951,7 @@ CQooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="d0e618ea-97dd-4f4b-b55c-eb821f4d5fb1">
 			<comment>
@@ -44096,10 +44104,65 @@ jcB5oG0+hApgf//Z
 				0,00
 			</matchvalue>
 		</validationitem>
+		<getvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="376c692d-7749-4ced-bfab-dd70d89a5074"
+		varname="AufpMenge_1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2282b3c7-33cb-435a-899d-02e1570a81de"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAufp_menge Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ValidateWithoutDecimals"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="02765563-b60b-4712-90ff-47ac7bb46f5c">
+				<argument
+				argname="field_D1"
+				id="87a8ef28-a166-4650-88f7-57b85ebfb2e8"
+				variable="AufpMenge_1">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="D1"
+				id="bf7f37c2-af57-405e-a642-42afabd25377">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="089f1f47-39fb-49ca-a403-2a87d069c431">
 			<comment>
@@ -44251,6 +44314,61 @@ eVEzDyoUn0zyf/rU+2lkM0kMzRs6BWyikDBz2JPoaf5JDTMGGZMYyuQOMfjTLO1W2Vvubm6iNNij
 				0,00
 			</matchvalue>
 		</validationitem>
+		<getvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="376c692d-7749-4ced-bfab-dd70d89a5074"
+		varname="AufpMenge_2">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ba6e8da9-7b37-412f-ae00-17f5502959a9"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAufp_menge Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ValidateWithoutDecimals"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="02765563-b60b-4712-90ff-47ac7bb46f5c">
+				<argument
+				argname="field_D1"
+				id="87a8ef28-a166-4650-88f7-57b85ebfb2e8"
+				variable="AufpMenge_2">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="D1"
+				id="bf7f37c2-af57-405e-a642-42afabd25377">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
