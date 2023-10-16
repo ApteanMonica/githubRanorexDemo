@@ -2432,7 +2432,9 @@ namespace B_UVA_004
         {
             RepoItemInfo _formularkopierenInfo;
             RepoItemInfo _cmbuvak1Info;
+            RepoItemInfo _uva_formular_vonInfo;
             RepoItemInfo _cmbuvak2Info;
+            RepoItemInfo _uva_formular_kopierennachInfo;
             RepoItemInfo _textInfo;
             RepoItemInfo _cbnurzuordnungInfo;
             RepoItemInfo _dfcode1Info;
@@ -2447,7 +2449,9 @@ namespace B_UVA_004
             {
                 _formularkopierenInfo = new RepoItemInfo(this, "FormularKopieren", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "4d072818-c386-4f84-adc7-aaef173ff153");
                 _cmbuvak1Info = new RepoItemInfo(this, "CmbUvak1", "container[@controlname='ClientArea']/combobox[@controlname='cmbUvak1']", "", 30000, null, "130c07d6-ab35-4546-9c57-0094cfb76f63");
+                _uva_formular_vonInfo = new RepoItemInfo(this, "UVA_Formular_von", "container[@controlname='ClientArea']/combobox[@controlname='cmbUvak1']/text[@controltype='Text']", "", 30000, null, "19429ec5-ad87-448e-9452-f5bebc90dcf3");
                 _cmbuvak2Info = new RepoItemInfo(this, "CmbUvak2", "container[@controlname='ClientArea']/combobox[@controlname='cmbUvak2']", "", 30000, null, "1b0db995-0efd-4cd7-bb65-fa58cf6b8771");
+                _uva_formular_kopierennachInfo = new RepoItemInfo(this, "UVA_Formular_KopierenNach", "container[@controlname='ClientArea']/combobox[@controlname='cmbUvak2']/text[@accessiblename='kopieren nach']", "", 30000, null, "f03012ca-39dc-4732-97ee-556af27d580b");
                 _textInfo = new RepoItemInfo(this, "Text", "container[@controlname='ClientArea']/text[@controlname='dfZuordnung_zielfirma']/text[@accessiblerole='Text']", "", 30000, null, "97017848-967b-4930-bac9-4146d03a0234");
                 _cbnurzuordnungInfo = new RepoItemInfo(this, "CbNurZuordnung", "container[@controlname='ClientArea']/checkbox[@controlname='cbNurZuordnung']", "", 30000, null, "d300a1ee-b1a8-4eb2-a573-c9e8777e4b70");
                 _dfcode1Info = new RepoItemInfo(this, "DfCode1", "container[@controlname='ClientArea']/text[@controlname='dfCode1']", "", 30000, null, "38ba685f-b77c-407e-b0d6-070a8c8326cc");
@@ -2528,6 +2532,30 @@ namespace B_UVA_004
             }
 
             /// <summary>
+            /// The UVA_Formular_von item.
+            /// </summary>
+            [RepositoryItem("19429ec5-ad87-448e-9452-f5bebc90dcf3")]
+            public virtual Ranorex.Text UVA_Formular_von
+            {
+                get
+                {
+                    return _uva_formular_vonInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UVA_Formular_von item info.
+            /// </summary>
+            [RepositoryItemInfo("19429ec5-ad87-448e-9452-f5bebc90dcf3")]
+            public virtual RepoItemInfo UVA_Formular_vonInfo
+            {
+                get
+                {
+                    return _uva_formular_vonInfo;
+                }
+            }
+
+            /// <summary>
             /// The CmbUvak2 item.
             /// </summary>
             [RepositoryItem("1b0db995-0efd-4cd7-bb65-fa58cf6b8771")]
@@ -2548,6 +2576,30 @@ namespace B_UVA_004
                 get
                 {
                     return _cmbuvak2Info;
+                }
+            }
+
+            /// <summary>
+            /// The UVA_Formular_KopierenNach item.
+            /// </summary>
+            [RepositoryItem("f03012ca-39dc-4732-97ee-556af27d580b")]
+            public virtual Ranorex.Text UVA_Formular_KopierenNach
+            {
+                get
+                {
+                    return _uva_formular_kopierennachInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UVA_Formular_KopierenNach item info.
+            /// </summary>
+            [RepositoryItemInfo("f03012ca-39dc-4732-97ee-556af27d580b")]
+            public virtual RepoItemInfo UVA_Formular_KopierenNachInfo
+            {
+                get
+                {
+                    return _uva_formular_kopierennachInfo;
                 }
             }
 
