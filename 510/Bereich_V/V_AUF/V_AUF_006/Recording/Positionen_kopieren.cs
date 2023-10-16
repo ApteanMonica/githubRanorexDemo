@@ -42,6 +42,8 @@ namespace V_AUF_006.Recording
         public Positionen_kopieren()
         {
             Art_Nr_Kreditlimit = "100015";
+            AufpMenge_1 = "";
+            AufpMenge_2 = "";
         }
 
         /// <summary>
@@ -64,6 +66,30 @@ namespace V_AUF_006.Recording
         {
             get { return _Art_Nr_Kreditlimit; }
             set { _Art_Nr_Kreditlimit = value; }
+        }
+
+        string _AufpMenge_1;
+
+        /// <summary>
+        /// Gets or sets the value of variable AufpMenge_1.
+        /// </summary>
+        [TestVariable("77899f60-880d-4d49-a6ad-b7d1e0393500")]
+        public string AufpMenge_1
+        {
+            get { return _AufpMenge_1; }
+            set { _AufpMenge_1 = value; }
+        }
+
+        string _AufpMenge_2;
+
+        /// <summary>
+        /// Gets or sets the value of variable AufpMenge_2.
+        /// </summary>
+        [TestVariable("8fd9a196-79d9-4634-8c33-d1b8e18bd61d")]
+        public string AufpMenge_2
+        {
+            get { return _AufpMenge_2; }
+            set { _AufpMenge_2 = value; }
         }
 
 #endregion
@@ -175,13 +201,23 @@ namespace V_AUF_006.Recording
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.CbStornierte' at Center.", repo.FrmAufk.CbStornierteInfo, new RecordItemIndex(26));
             repo.FrmAufk.CbStornierte.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmAufk.FlexGrid.ColAufpMengeRow1'.", repo.FrmAufk.FlexGrid.ColAufpMengeRow1Info, new RecordItemIndex(27));
-            Validate.AttributeEqual(repo.FrmAufk.FlexGrid.ColAufpMengeRow1Info, "Text", "0,00");
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmAufk.FlexGrid.ColAufpMengeRow1'.", repo.FrmAufk.FlexGrid.ColAufpMengeRow1Info, new RecordItemIndex(27));
+            //Validate.AttributeEqual(repo.FrmAufk.FlexGrid.ColAufpMengeRow1Info, "Text", "0,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmAufk.FlexGrid.ColAufpMengeRow2'.", repo.FrmAufk.FlexGrid.ColAufpMengeRow2Info, new RecordItemIndex(28));
-            Validate.AttributeEqual(repo.FrmAufk.FlexGrid.ColAufpMengeRow2Info, "Text", "0,00");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'FrmAufk.FlexGrid.ColAufpMengeRow1' and assigning its value to variable 'AufpMenge_1'.", repo.FrmAufk.FlexGrid.ColAufpMengeRow1Info, new RecordItemIndex(28));
+            AufpMenge_1 = repo.FrmAufk.FlexGrid.ColAufpMengeRow1.Element.GetAttributeValueText("Text");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.CbStornierte' at Center.", repo.FrmAufk.CbStornierteInfo, new RecordItemIndex(29));
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateWithoutDecimals(AufpMenge_1, "0");
+            
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmAufk.FlexGrid.ColAufpMengeRow2'.", repo.FrmAufk.FlexGrid.ColAufpMengeRow2Info, new RecordItemIndex(30));
+            //Validate.AttributeEqual(repo.FrmAufk.FlexGrid.ColAufpMengeRow2Info, "Text", "0,00");
+            
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'FrmAufk.FlexGrid.ColAufpMengeRow2' and assigning its value to variable 'AufpMenge_2'.", repo.FrmAufk.FlexGrid.ColAufpMengeRow2Info, new RecordItemIndex(31));
+            AufpMenge_2 = repo.FrmAufk.FlexGrid.ColAufpMengeRow2.Element.GetAttributeValueText("Text");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateWithoutDecimals(AufpMenge_2, "0");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.CbStornierte' at Center.", repo.FrmAufk.CbStornierteInfo, new RecordItemIndex(33));
             repo.FrmAufk.CbStornierte.Click();
             
         }
