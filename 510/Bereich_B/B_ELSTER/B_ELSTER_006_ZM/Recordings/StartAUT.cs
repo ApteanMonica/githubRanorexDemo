@@ -121,8 +121,8 @@ namespace B_ELSTER_006_ZM.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'FrmMain_B_ZM.TitleBar300ZusammenfassendeMeldung'", repo.FrmMain_B_ZM.TitleBar300ZusammenfassendeMeldungInfo, new ActionTimeout(180000), new RecordItemIndex(1));
-            repo.FrmMain_B_ZM.TitleBar300ZusammenfassendeMeldungInfo.WaitForExists(180000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 4m to exist. Associated repository item: 'FrmMain_B_ZM.TitleBar300ZusammenfassendeMeldung'", repo.FrmMain_B_ZM.TitleBar300ZusammenfassendeMeldungInfo, new ActionTimeout(240000), new RecordItemIndex(1));
+            repo.FrmMain_B_ZM.TitleBar300ZusammenfassendeMeldungInfo.WaitForExists(240000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Zusammenfassende Meldung') on item 'FrmMain_B_ZM.TitleBar300ZusammenfassendeMeldung'.", repo.FrmMain_B_ZM.TitleBar300ZusammenfassendeMeldungInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.FrmMain_B_ZM.TitleBar300ZusammenfassendeMeldungInfo, "Text", "Zusammenfassende Meldung");

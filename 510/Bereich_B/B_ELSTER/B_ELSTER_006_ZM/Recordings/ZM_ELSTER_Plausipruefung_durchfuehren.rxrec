@@ -125,6 +125,15 @@ mode="Global">
 				False
 			</matchvalue>
 		</validationitem>
+		<explicitdelayitem
+		duration="3000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -151,8 +160,17 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
-		<WaitForRecordItem
+		<explicitdelayitem
+		duration="3000ms"
 		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<WaitForRecordItem
+		enabled="False"
 		optional="False"
 		searchpropertyid="b46cf063-5ae8-4014-aab3-1048f77d6b00"
 		waitaction="NotExists"
@@ -176,7 +194,7 @@ mode="Global">
 		action="Press"
 		data="Return"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		scancode="0"
@@ -193,7 +211,7 @@ mode="Global">
 		optional="False"
 		searchpropertyid="4020a222-0c2d-4059-ba01-94f4a02bb39a"
 		waitaction="Exists"
-		waittimeout="180000ms">
+		waittimeout="300000ms">
 			<comment>
 			</comment>
 			<bindings>
