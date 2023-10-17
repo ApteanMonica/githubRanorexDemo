@@ -107,10 +107,13 @@ namespace B_ELSTER_003.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElsterDSGVO.CbDSGVO' at Center.", repo.DlgElsterDSGVO.CbDSGVOInfo, new RecordItemIndex(4));
             repo.DlgElsterDSGVO.CbDSGVO.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgElsterDSGVO.CbDSGVO'.", repo.DlgElsterDSGVO.CbDSGVOInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(5));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgElsterDSGVO.CbDSGVO'.", repo.DlgElsterDSGVO.CbDSGVOInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.DlgElsterDSGVO.CbDSGVOInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElsterDSGVO.PbWeiter' at Center.", repo.DlgElsterDSGVO.PbWeiterInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElsterDSGVO.PbWeiter' at Center.", repo.DlgElsterDSGVO.PbWeiterInfo, new RecordItemIndex(7));
             repo.DlgElsterDSGVO.PbWeiter.Click();
             
         }

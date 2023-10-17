@@ -107,22 +107,25 @@ namespace B_ELSTER_002_ZM.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElsterDSGVO.CbDSGVO' at Center.", repo.DlgElsterDSGVO.CbDSGVOInfo, new RecordItemIndex(4));
             repo.DlgElsterDSGVO.CbDSGVO.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgElsterDSGVO.CbDSGVO'.", repo.DlgElsterDSGVO.CbDSGVOInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(5));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgElsterDSGVO.CbDSGVO'.", repo.DlgElsterDSGVO.CbDSGVOInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.DlgElsterDSGVO.CbDSGVOInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElsterDSGVO.PbWeiter' at Center.", repo.DlgElsterDSGVO.PbWeiterInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElsterDSGVO.PbWeiter' at Center.", repo.DlgElsterDSGVO.PbWeiterInfo, new RecordItemIndex(7));
             repo.DlgElsterDSGVO.PbWeiter.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 7m to exist. Associated repository item: 'Hinweis.Hinweis'", repo.Hinweis.HinweisInfo, new ActionTimeout(420000), new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 7m to exist. Associated repository item: 'Hinweis.Hinweis'", repo.Hinweis.HinweisInfo, new ActionTimeout(420000), new RecordItemIndex(8));
             repo.Hinweis.HinweisInfo.WaitForExists(420000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Arbeitsgruppe: GURUS\r\nBenutzer: RS\r\n\r\nNur Testübermittlung möglich!') on item 'Hinweis.Text65535'.", repo.Hinweis.Text65535Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Arbeitsgruppe: GURUS\r\nBenutzer: RS\r\n\r\nNur Testübermittlung möglich!') on item 'Hinweis.Text65535'.", repo.Hinweis.Text65535Info, new RecordItemIndex(9));
             Validate.AttributeContains(repo.Hinweis.Text65535Info, "Text", "Arbeitsgruppe: GURUS\r\nBenutzer: RS\r\n\r\nNur Testübermittlung möglich!");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Hinweis.Button' at Center.", repo.Hinweis.ButtonInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Hinweis.Button' at Center.", repo.Hinweis.ButtonInfo, new RecordItemIndex(10));
             repo.Hinweis.Button.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(11));
             Delay.Duration(2000, false);
             
         }

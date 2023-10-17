@@ -192,7 +192,7 @@ namespace B_ELSTER_002_ZM
             /// Creates a new FrmMain_B_ZM  folder.
             /// </summary>
             public FrmMain_B_ZMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FrmMain_B_ZM", "/form[@controltext~'Zusammenfassende Meldung']", parentFolder, 30000, null, true, "c3862348-c99d-426e-9a55-acb887edc773", "")
+                    base("FrmMain_B_ZM", "/form[@title~'Zusammenfassende Meldung']", parentFolder, 30000, null, true, "c3862348-c99d-426e-9a55-acb887edc773", "")
             {
                 _clientarea = new B_ELSTER_002_ZMRepositoryFolders.ClientAreaFolder(this);
                 _titlebar300zusammenfassendemeldungInfo = new RepoItemInfo(this, "TitleBar300ZusammenfassendeMeldung", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "55b9561c-4850-4750-aafe-14fce9caefa6");
