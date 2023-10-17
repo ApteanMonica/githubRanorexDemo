@@ -44,6 +44,7 @@ namespace V_AUF_001.Recordings
             Preis1 = "11,000";
             Artikel1 = "";
             Menge1 = "";
+            getMenge1 = "";
         }
 
         /// <summary>
@@ -90,6 +91,18 @@ namespace V_AUF_001.Recordings
         {
             get { return _Menge1; }
             set { _Menge1 = value; }
+        }
+
+        string _getMenge1;
+
+        /// <summary>
+        /// Gets or sets the value of variable getMenge1.
+        /// </summary>
+        [TestVariable("77e0d3cc-6632-4feb-94b1-e27f0e7c219a")]
+        public string getMenge1
+        {
+            get { return _getMenge1; }
+            set { _getMenge1 = value; }
         }
 
 #endregion
@@ -146,9 +159,14 @@ namespace V_AUF_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Artikel1) on item 'FrmAufk.TpPos.ColArtNrRow1'.", repo.FrmAufk.TpPos.ColArtNrRow1Info, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.FrmAufk.TpPos.ColArtNrRow1Info, "Text", Artikel1);
             
-            Validate_ColAufpMengeRow1(repo.FrmAufk.TpPos.ColAufpMengeRow1Info);
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'FrmAufk.TpPos.ColAufpMengeRow1' and assigning its value to variable 'getMenge1'.", repo.FrmAufk.TpPos.ColAufpMengeRow1Info, new RecordItemIndex(9));
+            getMenge1 = repo.FrmAufk.TpPos.ColAufpMengeRow1.Element.GetAttributeValueText("Text");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Preis1) on item 'FrmAufk.TpPos.ColAufpPreisRow1'.", repo.FrmAufk.TpPos.ColAufpPreisRow1Info, new RecordItemIndex(10));
+            Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateWithoutDecimals(Menge1, getMenge1);
+            
+            //Validate_ColAufpMengeRow1(repo.FrmAufk.TpPos.ColAufpMengeRow1Info);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Preis1) on item 'FrmAufk.TpPos.ColAufpPreisRow1'.", repo.FrmAufk.TpPos.ColAufpPreisRow1Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.FrmAufk.TpPos.ColAufpPreisRow1Info, "Text", Preis1);
             
         }

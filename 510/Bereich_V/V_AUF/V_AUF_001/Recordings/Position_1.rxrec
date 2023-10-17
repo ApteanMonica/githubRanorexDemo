@@ -36,6 +36,10 @@ mode="Global">
 		id="5c0af7cb-b6d3-47bf-8c7f-89ca4c462e63"
 		name="Menge1">
 		</var>
+		<var
+		id="77e0d3cc-6632-4feb-94b1-e27f0e7c219a"
+		name="getMenge1">
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -4793,9 +4797,64 @@ FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//9k=
 				100001
 			</matchvalue>
 		</validationitem>
+		<getvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="6fe5a973-3aa4-405a-bc41-07f216ecf5a0"
+		varname="getMenge1">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6196c978-4a06-4ae7-8920-7202fb11b407"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmAufk']//tabpage[@controlname='tpPos']/form[@controltypename='frmAufk']/container/tabpagelist/tabpage/container/element/table/row[@accessiblename='Row 1']/cell[@accessiblename='colAufp_menge Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ValidateWithoutDecimals"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="943dae9e-543c-48fc-89c2-0aa79d555276">
+				<argument
+				argname="field_D1"
+				id="ae0c7cf4-2979-4fd4-b0b9-6c7901a46f67"
+				variable="Menge1">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+				<argument
+				argname="D1"
+				id="dcf4884b-62ce-4d99-8528-2b9db98dc6b9"
+				variable="getMenge1">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<userrecorditem
 		classname="Position_1"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="False"
 		methodname="Validate_ColAufpMengeRow1"
 		namespace="V_AUF_001.Recordings"
