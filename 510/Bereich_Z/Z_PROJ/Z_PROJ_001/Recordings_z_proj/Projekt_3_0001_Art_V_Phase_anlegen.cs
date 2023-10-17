@@ -122,8 +122,8 @@ namespace Z_PROJ_001.Recordings_z_proj
             repo.FrmTabProjekt.Register_Phasen.Phasen_Felder.ColPhasBezRow1.EnsureVisible();
             Keyboard.Press(PROJ_BEZ_3_V);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(9));
-            Delay.Duration(1000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(9));
+            Delay.Duration(2000, false);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);

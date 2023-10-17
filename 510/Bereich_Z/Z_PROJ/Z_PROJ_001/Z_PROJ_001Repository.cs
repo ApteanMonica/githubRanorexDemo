@@ -1480,7 +1480,7 @@ namespace Z_PROJ_001
             /// Creates a new Phasen_Felder  folder.
             /// </summary>
             public Phasen_FelderFolder(RepoGenBaseFolder parentFolder) :
-                    base("Phasen_Felder", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "ba64ad8e-3d54-4148-9c35-609f777e31b2", "")
+                    base("Phasen_Felder", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "ba64ad8e-3d54-4148-9c35-609f777e31b2", "")
             {
                 _colphaspspcoderow1Info = new RepoItemInfo(this, "ColPhasPspCodeRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colPhas_psp_code Row 1']", "", 30000, null, "8bd30799-e12b-400c-972f-481515b52da5");
                 _colphascdrow1Info = new RepoItemInfo(this, "ColPhasCdRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colPhas_cd Row 1']", "", 30000, null, "454ce75c-e2af-4be3-bdfd-85a4169c240c");
