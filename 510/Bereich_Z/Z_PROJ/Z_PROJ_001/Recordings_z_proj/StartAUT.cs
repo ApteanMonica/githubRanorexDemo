@@ -108,8 +108,8 @@ namespace Z_PROJ_001.Recordings_z_proj
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmTabProjekt.TitleBar100ProjektVerwalten'", repo.FrmTabProjekt.TitleBar100ProjektVerwaltenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmTabProjekt.TitleBar100ProjektVerwaltenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'FrmTabProjekt.TitleBar100ProjektVerwalten'", repo.FrmTabProjekt.TitleBar100ProjektVerwaltenInfo, new ActionTimeout(180000), new RecordItemIndex(1));
+            repo.FrmTabProjekt.TitleBar100ProjektVerwaltenInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Projekt verwalten') on item 'FrmTabProjekt.TitleBar100ProjektVerwalten'.", repo.FrmTabProjekt.TitleBar100ProjektVerwaltenInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.FrmTabProjekt.TitleBar100ProjektVerwaltenInfo, "Text", "Projekt verwalten");
