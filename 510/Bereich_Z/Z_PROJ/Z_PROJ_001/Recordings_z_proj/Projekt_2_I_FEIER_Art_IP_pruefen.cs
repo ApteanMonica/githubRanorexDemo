@@ -182,8 +182,8 @@ namespace Z_PROJ_001.Recordings_z_proj
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$User_RSX) on item 'FrmTabProjekt.Register_Projekt.ColPersNrRow2'.", repo.FrmTabProjekt.Register_Projekt.ColPersNrRow2Info, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.FrmTabProjekt.Register_Projekt.ColPersNrRow2Info, "Text", User_RSX);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Allgemein' at Center.", repo.FrmTabProjekt.AllgemeinInfo, new RecordItemIndex(9));
-            repo.FrmTabProjekt.Allgemein.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Allgemein_Tab_regex_Sonderzeichen' at Center.", repo.FrmTabProjekt.Allgemein_Tab_regex_SonderzeichenInfo, new RecordItemIndex(9));
+            repo.FrmTabProjekt.Allgemein_Tab_regex_Sonderzeichen.Click();
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'FrmTabProjekt.Register_Allgemein.Text1'.", repo.FrmTabProjekt.Register_Allgemein.Text1Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.FrmTabProjekt.Register_Allgemein.Text1Info, "Text", "1");

@@ -41,11 +41,11 @@ namespace Z_PROJ_001.Recordings_z_proj
         /// </summary>
         public Projekt_3_0001_Art_V_pruefen()
         {
-            PROJ_NR_3_V = "";
-            bis_Datum = "";
+            PROJ_NR_3_V = "0001";
+            bis_Datum = "31.12.2099";
             Tagesdatum = "";
-            User_RSX = "";
-            User_RS = "";
+            User_RSX = "RSX";
+            User_RS = "RS";
         }
 
         /// <summary>
@@ -142,46 +142,55 @@ namespace Z_PROJ_001.Recordings_z_proj
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$PROJ_NR_3_V) on item 'FrmTabProjekt.Projektnr'.", repo.FrmTabProjekt.ProjektnrInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Projekt_Tab_regex_Sonderzeichen' at Center.", repo.FrmTabProjekt.Projekt_Tab_regex_SonderzeichenInfo, new RecordItemIndex(0));
+            repo.FrmTabProjekt.Projekt_Tab_regex_Sonderzeichen.Click();
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$PROJ_NR_3_V) on item 'FrmTabProjekt.Projektnr'.", repo.FrmTabProjekt.ProjektnrInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.FrmTabProjekt.ProjektnrInfo, "Text", PROJ_NR_3_V);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmTabProjekt.TextArt'.", repo.FrmTabProjekt.TextArtInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmTabProjekt.TextArt'.", repo.FrmTabProjekt.TextArtInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.FrmTabProjekt.TextArtInfo, "Text", "V");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmTabProjekt.VorlageProjektnr'.", repo.FrmTabProjekt.VorlageProjektnrInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmTabProjekt.VorlageProjektnr'.", repo.FrmTabProjekt.VorlageProjektnrInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.FrmTabProjekt.VorlageProjektnrInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'FrmTabProjekt.Register_Projekt.Zeitraum'.", repo.FrmTabProjekt.Register_Projekt.ZeitraumInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'FrmTabProjekt.Register_Projekt.Zeitraum'.", repo.FrmTabProjekt.Register_Projekt.ZeitraumInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.FrmTabProjekt.Register_Projekt.ZeitraumInfo, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$bis_Datum) on item 'FrmTabProjekt.Register_Projekt.TextBis'.", repo.FrmTabProjekt.Register_Projekt.TextBisInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$bis_Datum) on item 'FrmTabProjekt.Register_Projekt.TextBis'.", repo.FrmTabProjekt.Register_Projekt.TextBisInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.FrmTabProjekt.Register_Projekt.TextBisInfo, "Text", bis_Datum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Aktiv') on item 'FrmTabProjekt.CmbStatus'.", repo.FrmTabProjekt.CmbStatusInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Aktiv') on item 'FrmTabProjekt.CmbStatus'.", repo.FrmTabProjekt.CmbStatusInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.FrmTabProjekt.CmbStatusInfo, "Text", "Aktiv");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmTabProjekt.Register_Projekt.DfProjStatusExt'.", repo.FrmTabProjekt.Register_Projekt.DfProjStatusExtInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmTabProjekt.Register_Projekt.DfProjStatusExt'.", repo.FrmTabProjekt.Register_Projekt.DfProjStatusExtInfo, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.FrmTabProjekt.Register_Projekt.DfProjStatusExtInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$User_RSX) on item 'FrmTabProjekt.Register_Projekt.ColPersNrRow1'.", repo.FrmTabProjekt.Register_Projekt.ColPersNrRow1Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$User_RSX) on item 'FrmTabProjekt.Register_Projekt.ColPersNrRow1'.", repo.FrmTabProjekt.Register_Projekt.ColPersNrRow1Info, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.FrmTabProjekt.Register_Projekt.ColPersNrRow1Info, "Text", User_RSX);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$User_RS) on item 'FrmTabProjekt.Register_Projekt.ColPersNrRow2'.", repo.FrmTabProjekt.Register_Projekt.ColPersNrRow2Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$User_RS) on item 'FrmTabProjekt.Register_Projekt.ColPersNrRow2'.", repo.FrmTabProjekt.Register_Projekt.ColPersNrRow2Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.FrmTabProjekt.Register_Projekt.ColPersNrRow2Info, "Text", User_RS);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Allgemein' at Center.", repo.FrmTabProjekt.AllgemeinInfo, new RecordItemIndex(9));
-            repo.FrmTabProjekt.Allgemein.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Allgemein_Tab_regex_Sonderzeichen' at Center.", repo.FrmTabProjekt.Allgemein_Tab_regex_SonderzeichenInfo, new RecordItemIndex(11));
+            repo.FrmTabProjekt.Allgemein_Tab_regex_Sonderzeichen.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='KA') on item 'FrmTabProjekt.Register_Allgemein.Text1'.", repo.FrmTabProjekt.Register_Allgemein.Text1Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(12));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='KA') on item 'FrmTabProjekt.Register_Allgemein.Text1'.", repo.FrmTabProjekt.Register_Allgemein.Text1Info, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.FrmTabProjekt.Register_Allgemein.Text1Info, "Text", "KA");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmTabProjekt.Register_Allgemein.CbProjBukzzeit'.", repo.FrmTabProjekt.Register_Allgemein.CbProjBukzzeitInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmTabProjekt.Register_Allgemein.CbProjBukzzeit'.", repo.FrmTabProjekt.Register_Allgemein.CbProjBukzzeitInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.FrmTabProjekt.Register_Allgemein.CbProjBukzzeitInfo, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmTabProjekt.Register_Allgemein.CbProjKzuhr'.", repo.FrmTabProjekt.Register_Allgemein.CbProjKzuhrInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmTabProjekt.Register_Allgemein.CbProjKzuhr'.", repo.FrmTabProjekt.Register_Allgemein.CbProjKzuhrInfo, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.FrmTabProjekt.Register_Allgemein.CbProjKzuhrInfo, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmTabProjekt.Register_Allgemein.CbProjKzdauer'.", repo.FrmTabProjekt.Register_Allgemein.CbProjKzdauerInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmTabProjekt.Register_Allgemein.CbProjKzdauer'.", repo.FrmTabProjekt.Register_Allgemein.CbProjKzdauerInfo, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.FrmTabProjekt.Register_Allgemein.CbProjKzdauerInfo, "Checked", "True");
             
         }

@@ -26,10 +26,12 @@ mode="Global">
 		<var
 		id="46fae0b3-4b7a-44c3-acb8-bdf24bbb5ede"
 		name="PROJ_NR_3_V">
+			0001
 		</var>
 		<var
 		id="c3d978a6-2703-4eb6-ab8b-c794812bf357"
 		name="bis_Datum">
+			31.12.2099
 		</var>
 		<var
 		id="20eec8ce-2059-4f5d-9faa-18280b772270"
@@ -38,13 +40,50 @@ mode="Global">
 		<var
 		id="18d1a7a6-e1d5-4cf7-89a2-36b553833a37"
 		name="User_RSX">
+			RSX
 		</var>
 		<var
 		id="e1de90a8-7ca7-446a-93c4-d09c610e90c9"
 		name="User_RS">
+			RS
 		</var>
 	</variables>
 	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="b4292554-1cff-48cd-a8aa-49a2db534e9d"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3d4309fb-0cd2-4297-b01c-3731ff0c746d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmTabProjekt']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename~'Pro']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"
@@ -9995,6 +10034,15 @@ UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/9k=
 				</robustPath>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"

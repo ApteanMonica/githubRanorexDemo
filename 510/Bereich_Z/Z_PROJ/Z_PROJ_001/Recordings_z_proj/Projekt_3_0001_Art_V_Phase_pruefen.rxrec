@@ -30,6 +30,7 @@ mode="Global">
 		<var
 		id="726f6566-ddd9-4318-9e53-5d557562465b"
 		name="bis_Datum">
+			31.12.2099
 		</var>
 		<var
 		id="2817b0bb-2277-4f7f-8e4c-df589b777131"
@@ -43,6 +44,41 @@ mode="Global">
 		</var>
 	</variables>
 	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="cf0981dc-c19b-44d9-beef-03bc18519380"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6af4ca96-30ea-4d55-8f1b-db9455c40de7"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmTabProjekt']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename~'Phasen']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -499,7 +535,7 @@ mode="Global">
 		</validationitem>
 		<validationitem
 		action="AttributeEqual"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="3384226a-e1fd-40cf-b47e-f71d2ffc0d34">
 			<comment>

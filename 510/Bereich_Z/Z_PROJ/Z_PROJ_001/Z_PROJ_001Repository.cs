@@ -171,8 +171,9 @@ namespace Z_PROJ_001
             RepoItemInfo _vorlageprojektnrInfo;
             RepoItemInfo _cmbstatusInfo;
             RepoItemInfo _bezeichnungInfo;
-            RepoItemInfo _allgemeinInfo;
-            RepoItemInfo _tabpagephasenInfo;
+            RepoItemInfo _projekt_tab_regex_sonderzeichenInfo;
+            RepoItemInfo _allgemein_tab_regex_sonderzeichenInfo;
+            RepoItemInfo _phasen_tab_regex_sonderzeichenInfo;
 
             /// <summary>
             /// Creates a new FrmTabProjekt  folder.
@@ -196,8 +197,9 @@ namespace Z_PROJ_001
                 _vorlageprojektnrInfo = new RepoItemInfo(this, "VorlageProjektnr", "container[@controlname='ClientArea']/text[@controlname='dfProj_nr_vorlage']/text[@accessiblename~'Vorlage-Projektnr']", "", 30000, null, "cf13eecd-7cb1-4ab5-bfee-d871961406df");
                 _cmbstatusInfo = new RepoItemInfo(this, "CmbStatus", "container[@controlname='ClientArea']/combobox[@controlname='cmbStatus']", "", 30000, null, "40360e18-265e-4c6e-80bd-2f011a5fc5e5");
                 _bezeichnungInfo = new RepoItemInfo(this, "Bezeichnung", "container[@controlname='ClientArea']/text[@controlname='dfBez']/text[@accessiblename='Bezeichnung']", "", 30000, null, "516b6b62-c6d4-4a5a-bb37-33fbf3783f87");
-                _allgemeinInfo = new RepoItemInfo(this, "Allgemein", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename~'All']", "", 30000, null, "728b42dc-9953-4385-9a76-0920b4af80a2");
-                _tabpagephasenInfo = new RepoItemInfo(this, "TabPagePhasen", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename~'Phasen']", "", 30000, null, "6af4ca96-30ea-4d55-8f1b-db9455c40de7");
+                _projekt_tab_regex_sonderzeichenInfo = new RepoItemInfo(this, "Projekt_Tab_regex_Sonderzeichen", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename~'Pro']", "", 30000, null, "3d4309fb-0cd2-4297-b01c-3731ff0c746d");
+                _allgemein_tab_regex_sonderzeichenInfo = new RepoItemInfo(this, "Allgemein_Tab_regex_Sonderzeichen", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename~'All']", "", 30000, null, "728b42dc-9953-4385-9a76-0920b4af80a2");
+                _phasen_tab_regex_sonderzeichenInfo = new RepoItemInfo(this, "Phasen_Tab_regex_Sonderzeichen", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename~'Phasen']", "", 30000, null, "6af4ca96-30ea-4d55-8f1b-db9455c40de7");
             }
 
             /// <summary>
@@ -545,50 +547,74 @@ namespace Z_PROJ_001
             }
 
             /// <summary>
-            /// The Allgemein item.
+            /// The Projekt_Tab_regex_Sonderzeichen item.
+            /// </summary>
+            [RepositoryItem("3d4309fb-0cd2-4297-b01c-3731ff0c746d")]
+            public virtual Ranorex.TabPage Projekt_Tab_regex_Sonderzeichen
+            {
+                get
+                {
+                    return _projekt_tab_regex_sonderzeichenInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Projekt_Tab_regex_Sonderzeichen item info.
+            /// </summary>
+            [RepositoryItemInfo("3d4309fb-0cd2-4297-b01c-3731ff0c746d")]
+            public virtual RepoItemInfo Projekt_Tab_regex_SonderzeichenInfo
+            {
+                get
+                {
+                    return _projekt_tab_regex_sonderzeichenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Allgemein_Tab_regex_Sonderzeichen item.
             /// </summary>
             [RepositoryItem("728b42dc-9953-4385-9a76-0920b4af80a2")]
-            public virtual Ranorex.TabPage Allgemein
+            public virtual Ranorex.TabPage Allgemein_Tab_regex_Sonderzeichen
             {
                 get
                 {
-                    return _allgemeinInfo.CreateAdapter<Ranorex.TabPage>(true);
+                    return _allgemein_tab_regex_sonderzeichenInfo.CreateAdapter<Ranorex.TabPage>(true);
                 }
             }
 
             /// <summary>
-            /// The Allgemein item info.
+            /// The Allgemein_Tab_regex_Sonderzeichen item info.
             /// </summary>
             [RepositoryItemInfo("728b42dc-9953-4385-9a76-0920b4af80a2")]
-            public virtual RepoItemInfo AllgemeinInfo
+            public virtual RepoItemInfo Allgemein_Tab_regex_SonderzeichenInfo
             {
                 get
                 {
-                    return _allgemeinInfo;
+                    return _allgemein_tab_regex_sonderzeichenInfo;
                 }
             }
 
             /// <summary>
-            /// The TabPagePhasen item.
+            /// The Phasen_Tab_regex_Sonderzeichen item.
             /// </summary>
             [RepositoryItem("6af4ca96-30ea-4d55-8f1b-db9455c40de7")]
-            public virtual Ranorex.TabPage TabPagePhasen
+            public virtual Ranorex.TabPage Phasen_Tab_regex_Sonderzeichen
             {
                 get
                 {
-                    return _tabpagephasenInfo.CreateAdapter<Ranorex.TabPage>(true);
+                    return _phasen_tab_regex_sonderzeichenInfo.CreateAdapter<Ranorex.TabPage>(true);
                 }
             }
 
             /// <summary>
-            /// The TabPagePhasen item info.
+            /// The Phasen_Tab_regex_Sonderzeichen item info.
             /// </summary>
             [RepositoryItemInfo("6af4ca96-30ea-4d55-8f1b-db9455c40de7")]
-            public virtual RepoItemInfo TabPagePhasenInfo
+            public virtual RepoItemInfo Phasen_Tab_regex_SonderzeichenInfo
             {
                 get
                 {
-                    return _tabpagephasenInfo;
+                    return _phasen_tab_regex_sonderzeichenInfo;
                 }
             }
 

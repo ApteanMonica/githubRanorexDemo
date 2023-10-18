@@ -119,8 +119,8 @@ namespace Z_PROJ_001.Recordings_z_proj
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$PROJ_NR_1_K) on item 'FrmTabProjekt.Projektnr'.", repo.FrmTabProjekt.ProjektnrInfo, new RecordItemIndex(0));
             Validate.AttributeEqual(repo.FrmTabProjekt.ProjektnrInfo, "Text", PROJ_NR_1_K);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.TabPagePhasen' at Center.", repo.FrmTabProjekt.TabPagePhasenInfo, new RecordItemIndex(1));
-            repo.FrmTabProjekt.TabPagePhasen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Phasen_Tab_regex_Sonderzeichen' at Center.", repo.FrmTabProjekt.Phasen_Tab_regex_SonderzeichenInfo, new RecordItemIndex(1));
+            repo.FrmTabProjekt.Phasen_Tab_regex_Sonderzeichen.Click();
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'FrmTabProjekt.Register_Phasen.Phasen_Felder.ColPhasPspCodeRow1'.", repo.FrmTabProjekt.Register_Phasen.Phasen_Felder.ColPhasPspCodeRow1Info, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Phasen_Felder.ColPhasPspCodeRow1Info, "Text", "1");

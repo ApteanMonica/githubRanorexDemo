@@ -204,8 +204,8 @@ namespace Z_PROJ_001.Recordings_z_proj
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmTabProjekt.Register_Projekt.ColPersNrRow2'.", repo.FrmTabProjekt.Register_Projekt.ColPersNrRow2Info, new RecordItemIndex(19));
             repo.FrmTabProjekt.Register_Projekt.ColPersNrRow2.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Allgemein' at Center.", repo.FrmTabProjekt.AllgemeinInfo, new RecordItemIndex(20));
-            repo.FrmTabProjekt.Allgemein.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Allgemein_Tab_regex_Sonderzeichen' at Center.", repo.FrmTabProjekt.Allgemein_Tab_regex_SonderzeichenInfo, new RecordItemIndex(20));
+            repo.FrmTabProjekt.Allgemein_Tab_regex_Sonderzeichen.Click();
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmTabProjekt.Register_Allgemein.Text1'.", repo.FrmTabProjekt.Register_Allgemein.Text1Info, new RecordItemIndex(21));
             Validate.AttributeEqual(repo.FrmTabProjekt.Register_Allgemein.Text1Info, "Text", "");
