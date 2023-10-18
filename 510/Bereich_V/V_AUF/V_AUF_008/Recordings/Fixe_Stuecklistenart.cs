@@ -101,14 +101,14 @@ namespace V_AUF_008.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.TpPos1.Text' at Center.", repo.FrmAufk.TpPos1.TextInfo, new RecordItemIndex(3));
-            repo.FrmAufk.TpPos1.Text.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.TpPos1.Text_Menge' at Center.", repo.FrmAufk.TpPos1.Text_MengeInfo, new RecordItemIndex(3));
+            repo.FrmAufk.TpPos1.Text_Menge.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1' with focus on 'FrmAufk.TpPos1.Text'.", repo.FrmAufk.TpPos1.TextInfo, new RecordItemIndex(4));
-            repo.FrmAufk.TpPos1.Text.PressKeys("1");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1' with focus on 'FrmAufk.TpPos1.Text_Menge'.", repo.FrmAufk.TpPos1.Text_MengeInfo, new RecordItemIndex(4));
+            repo.FrmAufk.TpPos1.Text_Menge.PressKeys("1");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmAufk.TpPos1.Text'.", repo.FrmAufk.TpPos1.TextInfo, new RecordItemIndex(5));
-            repo.FrmAufk.TpPos1.Text.PressKeys("{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmAufk.TpPos1.Text_Menge'.", repo.FrmAufk.TpPos1.Text_MengeInfo, new RecordItemIndex(5));
+            repo.FrmAufk.TpPos1.Text_Menge.PressKeys("{Tab}");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Fixe Stückliste') on item 'FrmAufk.TpPos1.Text1'.", repo.FrmAufk.TpPos1.Text1Info, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.FrmAufk.TpPos1.Text1Info, "Text", "Fixe Stückliste");
@@ -131,17 +131,17 @@ namespace V_AUF_008.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.TpPos1.Row2Column0' at Center.", repo.FrmAufk.TpPos1.Row2Column0Info, new RecordItemIndex(12));
             repo.FrmAufk.TpPos1.Row2Column0.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.TpPos1.Text' at Center.", repo.FrmAufk.TpPos1.TextInfo, new RecordItemIndex(13));
-            repo.FrmAufk.TpPos1.Text.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.TpPos1.Text_Menge' at Center.", repo.FrmAufk.TpPos1.Text_MengeInfo, new RecordItemIndex(13));
+            repo.FrmAufk.TpPos1.Text_Menge.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.TpPos1.Text' at Center.", repo.FrmAufk.TpPos1.TextInfo, new RecordItemIndex(14));
-            repo.FrmAufk.TpPos1.Text.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.TpPos1.Text_Menge' at Center.", repo.FrmAufk.TpPos1.Text_MengeInfo, new RecordItemIndex(14));
+            repo.FrmAufk.TpPos1.Text_Menge.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2{Tab}' with focus on 'FrmAufk.TpPos1.Text'.", repo.FrmAufk.TpPos1.TextInfo, new RecordItemIndex(15));
-            repo.FrmAufk.TpPos1.Text.PressKeys("2{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2{Tab}' with focus on 'FrmAufk.TpPos1.Text_Menge'.", repo.FrmAufk.TpPos1.Text_MengeInfo, new RecordItemIndex(15));
+            repo.FrmAufk.TpPos1.Text_Menge.PressKeys("2{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1,00') on item 'FrmAufk.TpPos1.Text'.", repo.FrmAufk.TpPos1.TextInfo, new RecordItemIndex(16));
-            Validate.AttributeEqual(repo.FrmAufk.TpPos1.TextInfo, "Text", "1,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1,00') on item 'FrmAufk.TpPos1.Text_Menge'.", repo.FrmAufk.TpPos1.Text_MengeInfo, new RecordItemIndex(16));
+            Validate.AttributeEqual(repo.FrmAufk.TpPos1.Text_MengeInfo, "Text", "1,00");
             
             //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Editierbarkeit_übeprüfen') on item 'Form100AuftragserfassungZuAuftrag.KArtNr'.", repo.Form100AuftragserfassungZuAuftrag.KArtNrInfo, new RecordItemIndex(17));
             //Validate.AttributeEqual(repo.Form100AuftragserfassungZuAuftrag.KArtNrInfo, "Text", "Editierbarkeit_übeprüfen");
@@ -152,19 +152,22 @@ namespace V_AUF_008.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.TpPos1.Tab_AufP.TextPr1' at Center.", repo.FrmAufk.TpPos1.Tab_AufP.TextPr1Info, new RecordItemIndex(19));
             repo.FrmAufk.TpPos1.Tab_AufP.TextPr1.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.TpPos1.Tab_AufP.TextPr1' at Center.", repo.FrmAufk.TpPos1.Tab_AufP.TextPr1Info, new RecordItemIndex(20));
-            repo.FrmAufk.TpPos1.Tab_AufP.TextPr1.DoubleClick();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}' with focus on 'FrmAufk.TpPos1.Tab_AufP.TextPr1'.", repo.FrmAufk.TpPos1.Tab_AufP.TextPr1Info, new RecordItemIndex(20));
+            repo.FrmAufk.TpPos1.Tab_AufP.TextPr1.PressKeys("{Delete}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '12{Tab}' with focus on 'FrmAufk.TpPos1.Tab_AufP.TextPr1'.", repo.FrmAufk.TpPos1.Tab_AufP.TextPr1Info, new RecordItemIndex(21));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.TpPos1.Tab_AufP.TextPr1' at Center.", repo.FrmAufk.TpPos1.Tab_AufP.TextPr1Info, new RecordItemIndex(21));
+            //repo.FrmAufk.TpPos1.Tab_AufP.TextPr1.DoubleClick();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '12{Tab}' with focus on 'FrmAufk.TpPos1.Tab_AufP.TextPr1'.", repo.FrmAufk.TpPos1.Tab_AufP.TextPr1Info, new RecordItemIndex(22));
             repo.FrmAufk.TpPos1.Tab_AufP.TextPr1.PressKeys("12{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='12,000') on item 'FrmAufk.TpPos1.Tab_AufP.TextPr1'.", repo.FrmAufk.TpPos1.Tab_AufP.TextPr1Info, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='12,000') on item 'FrmAufk.TpPos1.Tab_AufP.TextPr1'.", repo.FrmAufk.TpPos1.Tab_AufP.TextPr1Info, new RecordItemIndex(23));
             Validate.AttributeEqual(repo.FrmAufk.TpPos1.Tab_AufP.TextPr1Info, "Text", "12,000");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.PbCommonSave' at Center.", repo.FrmAufk.PbCommonSaveInfo, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.PbCommonSave' at Center.", repo.FrmAufk.PbCommonSaveInfo, new RecordItemIndex(24));
             repo.FrmAufk.PbCommonSave.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='53,00') on item 'FrmAufk.TpPos1.DfAufkWert1D'.", repo.FrmAufk.TpPos1.DfAufkWert1DInfo, new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='53,00') on item 'FrmAufk.TpPos1.DfAufkWert1D'.", repo.FrmAufk.TpPos1.DfAufkWert1DInfo, new RecordItemIndex(25));
             Validate.AttributeEqual(repo.FrmAufk.TpPos1.DfAufkWert1DInfo, "Text", "53,00");
             
         }

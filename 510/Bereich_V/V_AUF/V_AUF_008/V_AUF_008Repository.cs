@@ -162,8 +162,8 @@ namespace V_AUF_008
                 _pbcommon2kopierenInfo = new RepoItemInfo(this, "PbCommon2Kopieren", "?/?/container[@controlname='Common2Group']/button[@controlname='pbCommon2_Kopieren']", "", 30000, null, "45c1ada7-4cee-433b-b41e-65aa0907e4f3");
                 _dfaufkdtauftragInfo = new RepoItemInfo(this, "DfAufkDtauftrag", ".//tabpage[@controlname='tpKopf']/tabpagelist[@controlname='picTabsAufk']/tabpage[@controlname='tpAllgemein']/?/?/text[@controlname='dfAufk_dtauftrag']", "", 30000, null, "cdc420b7-9144-463f-8e42-bd4c07a51d4a");
                 _dfaufpzeileInfo = new RepoItemInfo(this, "DfAufpZeile", ".//tabpage[@controlname='tpPos']//tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_zeile']", "", 30000, null, "6687ae50-e528-41aa-97bf-5bc96dc2f084");
-                _row1column01Info = new RepoItemInfo(this, "Row1Column01", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "3d773499-d667-4c14-a250-9dbce79c624b");
-                _row3column0Info = new RepoItemInfo(this, "Row3Column0", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='Row 3 Column 0']", "", 30000, null, "1ed3b748-348c-4dce-adcd-26eac9c41932");
+                _row1column01Info = new RepoItemInfo(this, "Row1Column01", "container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "3d773499-d667-4c14-a250-9dbce79c624b");
+                _row3column0Info = new RepoItemInfo(this, "Row3Column0", "container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='Row 3 Column 0']", "", 30000, null, "1ed3b748-348c-4dce-adcd-26eac9c41932");
                 _pbcommonsaveInfo = new RepoItemInfo(this, "PbCommonSave", "?/?/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Save']", "", 30000, null, "7227db0d-ad76-441b-afd2-70c13747e32c");
                 _cbkomponentenInfo = new RepoItemInfo(this, "CbKomponenten", ".//tabpage[@controlname='tpPos']/checkbox[@controlname='cbKomponenten']", "", 30000, null, "6f795651-ac65-497f-8a92-b3c0160da4f0");
             }
@@ -548,7 +548,7 @@ namespace V_AUF_008
             RepoItemInfo _row2column0Info;
             RepoItemInfo _colaufpzeileanzeigerow2Info;
             RepoItemInfo _text1Info;
-            RepoItemInfo _textInfo;
+            RepoItemInfo _text_mengeInfo;
             RepoItemInfo _dfaufkwert1dInfo;
             RepoItemInfo _dfaufppreisInfo;
 
@@ -562,7 +562,7 @@ namespace V_AUF_008
                 _row2column0Info = new RepoItemInfo(this, "Row2Column0", "container[@controlname='tblAufp']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']", "", 30000, null, "8f02f894-403d-45a2-b559-f48eaa127215");
                 _colaufpzeileanzeigerow2Info = new RepoItemInfo(this, "ColAufpZeileAnzeigeRow2", "?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@text='1.1']", "", 30000, null, "69021b74-4547-41f1-8352-854dac5dbfb5");
                 _text1Info = new RepoItemInfo(this, "Text1", "?/?/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfArt_bez1']/text[@accessiblerole='Text']", "", 30000, null, "e2ea08f1-adc4-4563-b4fa-87afb1e34095");
-                _textInfo = new RepoItemInfo(this, "Text", "?/?/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_menge']/text[@accessiblerole='Text']", "", 30000, null, "107825b4-d3a2-4b3e-8f86-05cd105cc661");
+                _text_mengeInfo = new RepoItemInfo(this, "Text_Menge", "?/?/form[@controlname='dlgAufp']/tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_menge']/text[@accessiblerole='Text']", "", 30000, null, "107825b4-d3a2-4b3e-8f86-05cd105cc661");
                 _dfaufkwert1dInfo = new RepoItemInfo(this, "DfAufkWert1D", "?/?/form[@controlname='dlgAufp']/text[@controlname='dfAufk_wert1_d']", "", 30000, null, "1490fd5c-863a-40f8-91b7-7cde5d3d376c");
                 _dfaufppreisInfo = new RepoItemInfo(this, "DfAufpPreis", ".//tabpagelist[@controlname='picTabsAufp']/tabpage[@controlname='tpPosAllgemein']/text[@controlname='dfAufp_preis']", "", 30000, null, "050ea1fa-2209-48a1-ac30-ecc5e97d4d19");
             }
@@ -664,26 +664,26 @@ namespace V_AUF_008
             }
 
             /// <summary>
-            /// The Text item.
+            /// The Text_Menge item.
             /// </summary>
             [RepositoryItem("107825b4-d3a2-4b3e-8f86-05cd105cc661")]
-            public virtual Ranorex.Text Text
+            public virtual Ranorex.Text Text_Menge
             {
                 get
                 {
-                    return _textInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _text_mengeInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The Text item info.
+            /// The Text_Menge item info.
             /// </summary>
             [RepositoryItemInfo("107825b4-d3a2-4b3e-8f86-05cd105cc661")]
-            public virtual RepoItemInfo TextInfo
+            public virtual RepoItemInfo Text_MengeInfo
             {
                 get
                 {
-                    return _textInfo;
+                    return _text_mengeInfo;
                 }
             }
 
@@ -1084,9 +1084,6 @@ namespace V_AUF_008
             RepoItemInfo _textprInfo;
             RepoItemInfo _pushbuttonInfo;
             RepoItemInfo _colaufpzeileanzeigerow6Info;
-            RepoItemInfo _colartnrrow1Info;
-            RepoItemInfo _colartnrrow2Info;
-            RepoItemInfo _colartnrrow3Info;
 
             /// <summary>
             /// Creates a new Form100AuftragserfassungZuAuftrag  folder.
@@ -1099,9 +1096,6 @@ namespace V_AUF_008
                 _textprInfo = new RepoItemInfo(this, "TextPr", "element[@instance='2']//element[@controlid='4']/element[@instance='0']/element[36]/text[@accessiblename='Pr.']", "", 30000, null, "13280721-5b28-4fe9-aecf-c8502e153204");
                 _pushbuttonInfo = new RepoItemInfo(this, "PushButton", "element[@instance='0']/element[@instance='1']/?/?/button[@accessiblerole='PushButton']", "", 30000, null, "35f02391-3360-4ee5-ac24-392fe4755f33");
                 _colaufpzeileanzeigerow6Info = new RepoItemInfo(this, "ColAufpZeileAnzeigeRow6", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@text='1.5']", "", 30000, null, "0a5dae05-70be-4881-bac3-34a02d91b510");
-                _colartnrrow1Info = new RepoItemInfo(this, "ColArtNrRow1", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colArt_nr Row 1']", "", 30000, null, "6701f923-4cf4-45de-8c77-394a4c44e3c8");
-                _colartnrrow2Info = new RepoItemInfo(this, "ColArtNrRow2", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colArt_nr Row 2']", "", 30000, null, "6bb78d49-d1b5-49bc-b41e-68c56809549a");
-                _colartnrrow3Info = new RepoItemInfo(this, "ColArtNrRow3", ".//tabpage[@controlname='tpPos']/?/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colArt_nr Row 3']", "", 30000, null, "dae7a8d8-b0f7-4f0b-b8bb-a9353ef58a80");
             }
 
             /// <summary>
@@ -1225,81 +1219,9 @@ namespace V_AUF_008
             }
 
             /// <summary>
-            /// The ColArtNrRow1 item.
-            /// </summary>
-            [RepositoryItem("6701f923-4cf4-45de-8c77-394a4c44e3c8")]
-            public virtual Ranorex.Cell ColArtNrRow1
-            {
-                get
-                {
-                    return _colartnrrow1Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColArtNrRow1 item info.
-            /// </summary>
-            [RepositoryItemInfo("6701f923-4cf4-45de-8c77-394a4c44e3c8")]
-            public virtual RepoItemInfo ColArtNrRow1Info
-            {
-                get
-                {
-                    return _colartnrrow1Info;
-                }
-            }
-
-            /// <summary>
-            /// The ColArtNrRow2 item.
-            /// </summary>
-            [RepositoryItem("6bb78d49-d1b5-49bc-b41e-68c56809549a")]
-            public virtual Ranorex.Cell ColArtNrRow2
-            {
-                get
-                {
-                    return _colartnrrow2Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColArtNrRow2 item info.
-            /// </summary>
-            [RepositoryItemInfo("6bb78d49-d1b5-49bc-b41e-68c56809549a")]
-            public virtual RepoItemInfo ColArtNrRow2Info
-            {
-                get
-                {
-                    return _colartnrrow2Info;
-                }
-            }
-
-            /// <summary>
-            /// The ColArtNrRow3 item.
-            /// </summary>
-            [RepositoryItem("dae7a8d8-b0f7-4f0b-b8bb-a9353ef58a80")]
-            public virtual Ranorex.Cell ColArtNrRow3
-            {
-                get
-                {
-                    return _colartnrrow3Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColArtNrRow3 item info.
-            /// </summary>
-            [RepositoryItemInfo("dae7a8d8-b0f7-4f0b-b8bb-a9353ef58a80")]
-            public virtual RepoItemInfo ColArtNrRow3Info
-            {
-                get
-                {
-                    return _colartnrrow3Info;
-                }
-            }
-
-            /// <summary>
             /// The FlexGrid folder.
             /// </summary>
-            [RepositoryFolder("4cfb5e6c-56cd-4681-be3d-c99040d962cf")]
+            [RepositoryFolder("3bdf0f23-3335-407d-ae13-44e9d0c5de50")]
             public virtual V_AUF_008RepositoryFolders.FlexGridFolder FlexGrid
             {
                 get { return _flexgrid; }
@@ -1309,7 +1231,7 @@ namespace V_AUF_008
         /// <summary>
         /// The FlexGridFolder folder.
         /// </summary>
-        [RepositoryFolder("4cfb5e6c-56cd-4681-be3d-c99040d962cf")]
+        [RepositoryFolder("3bdf0f23-3335-407d-ae13-44e9d0c5de50")]
         public partial class FlexGridFolder : RepoGenBaseFolder
         {
             RepoItemInfo _colartnrrow1Info;
@@ -1320,17 +1242,17 @@ namespace V_AUF_008
             /// Creates a new FlexGrid  folder.
             /// </summary>
             public FlexGridFolder(RepoGenBaseFolder parentFolder) :
-                    base("FlexGrid", "?/?/element[@controlid='2']/element[@instance='0']/element[2]/element[@instance='0']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "4cfb5e6c-56cd-4681-be3d-c99040d962cf", "")
+                    base("FlexGrid", "container[@controlname='ClientArea']/tabpagelist[@controlname='tabMain']/tabpage[@controlname='tpPos']/container[@controlname='tblAufp']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "3bdf0f23-3335-407d-ae13-44e9d0c5de50", "")
             {
-                _colartnrrow1Info = new RepoItemInfo(this, "ColArtNrRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colArt_nr Row 1']", "", 30000, null, "956463cb-897a-48a0-b895-8f0c67b73653");
-                _colartnrrow2Info = new RepoItemInfo(this, "ColArtNrRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colArt_nr Row 2']", "", 30000, null, "49cabe1f-3f26-4d18-9d6e-e622e491d9ff");
-                _colartnrrow3Info = new RepoItemInfo(this, "ColArtNrRow3", "row[@accessiblename='Row 3']/cell[@accessiblename='colArt_nr Row 3']", "", 30000, null, "815c4044-1443-4c17-97b9-4d35437de2ce");
+                _colartnrrow1Info = new RepoItemInfo(this, "ColArtNrRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colArt_nr Row 1']", "", 30000, null, "5bd54592-1ae1-47f4-8d89-294c3963d86b");
+                _colartnrrow2Info = new RepoItemInfo(this, "ColArtNrRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colArt_nr Row 2']", "", 30000, null, "03c1858b-185a-49e6-8822-15f72dede7ef");
+                _colartnrrow3Info = new RepoItemInfo(this, "ColArtNrRow3", "row[@accessiblename='Row 3']/cell[@accessiblename='colArt_nr Row 3']", "", 30000, null, "cef7fcb6-8adc-474c-a3bd-ced23f46c47b");
             }
 
             /// <summary>
             /// The Self item.
             /// </summary>
-            [RepositoryItem("4cfb5e6c-56cd-4681-be3d-c99040d962cf")]
+            [RepositoryItem("3bdf0f23-3335-407d-ae13-44e9d0c5de50")]
             public virtual Ranorex.Table Self
             {
                 get
@@ -1342,7 +1264,7 @@ namespace V_AUF_008
             /// <summary>
             /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("4cfb5e6c-56cd-4681-be3d-c99040d962cf")]
+            [RepositoryItemInfo("3bdf0f23-3335-407d-ae13-44e9d0c5de50")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
@@ -1354,7 +1276,7 @@ namespace V_AUF_008
             /// <summary>
             /// The ColArtNrRow1 item.
             /// </summary>
-            [RepositoryItem("956463cb-897a-48a0-b895-8f0c67b73653")]
+            [RepositoryItem("5bd54592-1ae1-47f4-8d89-294c3963d86b")]
             public virtual Ranorex.Cell ColArtNrRow1
             {
                 get
@@ -1366,7 +1288,7 @@ namespace V_AUF_008
             /// <summary>
             /// The ColArtNrRow1 item info.
             /// </summary>
-            [RepositoryItemInfo("956463cb-897a-48a0-b895-8f0c67b73653")]
+            [RepositoryItemInfo("5bd54592-1ae1-47f4-8d89-294c3963d86b")]
             public virtual RepoItemInfo ColArtNrRow1Info
             {
                 get
@@ -1378,7 +1300,7 @@ namespace V_AUF_008
             /// <summary>
             /// The ColArtNrRow2 item.
             /// </summary>
-            [RepositoryItem("49cabe1f-3f26-4d18-9d6e-e622e491d9ff")]
+            [RepositoryItem("03c1858b-185a-49e6-8822-15f72dede7ef")]
             public virtual Ranorex.Cell ColArtNrRow2
             {
                 get
@@ -1390,7 +1312,7 @@ namespace V_AUF_008
             /// <summary>
             /// The ColArtNrRow2 item info.
             /// </summary>
-            [RepositoryItemInfo("49cabe1f-3f26-4d18-9d6e-e622e491d9ff")]
+            [RepositoryItemInfo("03c1858b-185a-49e6-8822-15f72dede7ef")]
             public virtual RepoItemInfo ColArtNrRow2Info
             {
                 get
@@ -1402,7 +1324,7 @@ namespace V_AUF_008
             /// <summary>
             /// The ColArtNrRow3 item.
             /// </summary>
-            [RepositoryItem("815c4044-1443-4c17-97b9-4d35437de2ce")]
+            [RepositoryItem("cef7fcb6-8adc-474c-a3bd-ced23f46c47b")]
             public virtual Ranorex.Cell ColArtNrRow3
             {
                 get
@@ -1414,7 +1336,7 @@ namespace V_AUF_008
             /// <summary>
             /// The ColArtNrRow3 item info.
             /// </summary>
-            [RepositoryItemInfo("815c4044-1443-4c17-97b9-4d35437de2ce")]
+            [RepositoryItemInfo("cef7fcb6-8adc-474c-a3bd-ced23f46c47b")]
             public virtual RepoItemInfo ColArtNrRow3Info
             {
                 get

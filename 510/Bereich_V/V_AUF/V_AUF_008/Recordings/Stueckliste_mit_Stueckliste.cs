@@ -101,14 +101,14 @@ namespace V_AUF_008.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.TpPos1.Text' at Center.", repo.FrmAufk.TpPos1.TextInfo, new RecordItemIndex(3));
-            repo.FrmAufk.TpPos1.Text.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.TpPos1.Text_Menge' at Center.", repo.FrmAufk.TpPos1.Text_MengeInfo, new RecordItemIndex(3));
+            repo.FrmAufk.TpPos1.Text_Menge.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1' with focus on 'FrmAufk.TpPos1.Text'.", repo.FrmAufk.TpPos1.TextInfo, new RecordItemIndex(4));
-            repo.FrmAufk.TpPos1.Text.PressKeys("1");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1' with focus on 'FrmAufk.TpPos1.Text_Menge'.", repo.FrmAufk.TpPos1.Text_MengeInfo, new RecordItemIndex(4));
+            repo.FrmAufk.TpPos1.Text_Menge.PressKeys("1");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmAufk.TpPos1.Text'.", repo.FrmAufk.TpPos1.TextInfo, new RecordItemIndex(5));
-            repo.FrmAufk.TpPos1.Text.PressKeys("{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmAufk.TpPos1.Text_Menge'.", repo.FrmAufk.TpPos1.Text_MengeInfo, new RecordItemIndex(5));
+            repo.FrmAufk.TpPos1.Text_Menge.PressKeys("{Tab}");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Stückliste mit Stückliste') on item 'FrmAufk.TpPos1.Text1'.", repo.FrmAufk.TpPos1.Text1Info, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.FrmAufk.TpPos1.Text1Info, "Text", "Stückliste mit Stückliste");
@@ -119,14 +119,14 @@ namespace V_AUF_008.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.CbKomponenten' at Center.", repo.FrmAufk.CbKomponentenInfo, new RecordItemIndex(8));
             repo.FrmAufk.CbKomponenten.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100009') on item 'Form100AuftragserfassungZuAuftrag.ColArtNrRow1'.", repo.Form100AuftragserfassungZuAuftrag.ColArtNrRow1Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.Form100AuftragserfassungZuAuftrag.ColArtNrRow1Info, "Text", "100009");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100009') on item 'Form100AuftragserfassungZuAuftrag.FlexGrid.ColArtNrRow1'.", repo.Form100AuftragserfassungZuAuftrag.FlexGrid.ColArtNrRow1Info, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.Form100AuftragserfassungZuAuftrag.FlexGrid.ColArtNrRow1Info, "Text", "100009");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100005') on item 'Form100AuftragserfassungZuAuftrag.ColArtNrRow2'.", repo.Form100AuftragserfassungZuAuftrag.ColArtNrRow2Info, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.Form100AuftragserfassungZuAuftrag.ColArtNrRow2Info, "Text", "100005");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100005') on item 'Form100AuftragserfassungZuAuftrag.FlexGrid.ColArtNrRow2'.", repo.Form100AuftragserfassungZuAuftrag.FlexGrid.ColArtNrRow2Info, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.Form100AuftragserfassungZuAuftrag.FlexGrid.ColArtNrRow2Info, "Text", "100005");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100001') on item 'Form100AuftragserfassungZuAuftrag.ColArtNrRow3'.", repo.Form100AuftragserfassungZuAuftrag.ColArtNrRow3Info, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.Form100AuftragserfassungZuAuftrag.ColArtNrRow3Info, "Text", "100001");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100001') on item 'Form100AuftragserfassungZuAuftrag.FlexGrid.ColArtNrRow3'.", repo.Form100AuftragserfassungZuAuftrag.FlexGrid.ColArtNrRow3Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.Form100AuftragserfassungZuAuftrag.FlexGrid.ColArtNrRow3Info, "Text", "100001");
             
         }
 

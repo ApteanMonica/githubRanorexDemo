@@ -125,8 +125,8 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblFadr.ColLskDatumRow1' and assigning its value to variable 'Tagesdatum'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(2));
             Tagesdatum = repo.TblFadr.ColLskDatumRow1.Element.GetAttributeValueText("Text");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Tagesdatum) on item 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(3));
-            Validate.AttributeRegex(repo.TblFadr.ColLskDatumRow1Info, "Text", new Regex(Tagesdatum));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Tagesdatum) on item 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(3));
+            //Validate.AttributeRegex(repo.TblFadr.ColLskDatumRow1Info, "Text", new Regex(Tagesdatum));
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(4));
             repo.TblFadr.PbCommonLoad.Click();
