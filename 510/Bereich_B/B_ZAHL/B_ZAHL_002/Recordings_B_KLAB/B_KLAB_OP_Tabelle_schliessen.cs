@@ -79,8 +79,8 @@ namespace B_ZAHL_002.Recordings_B_KLAB
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblBuop.TitleBar100OPs303025Saldo6060'.", repo.TblBuop.TitleBar100OPs303025Saldo6060Info, new RecordItemIndex(0));
-            Keyboard.PrepareFocus(repo.TblBuop.TitleBar100OPs303025Saldo6060);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblBuop_aus_b_zahl.TitleBar100OPs_aus_b_zahl'.", repo.TblBuop_aus_b_zahl.TitleBar100OPs_aus_b_zahlInfo, new RecordItemIndex(0));
+            Keyboard.PrepareFocus(repo.TblBuop_aus_b_zahl.TitleBar100OPs_aus_b_zahl);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }

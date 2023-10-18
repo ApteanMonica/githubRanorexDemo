@@ -58,18 +58,6 @@ namespace B_ZAHL_002.Recordings
 
 #region Variables
 
-        string _LF_303025;
-
-        /// <summary>
-        /// Gets or sets the value of variable LF_303025.
-        /// </summary>
-        [TestVariable("648d3a3a-b06d-47cc-8af9-e5b71c5244d0")]
-        public string LF_303025
-        {
-            get { return _LF_303025; }
-            set { _LF_303025 = value; }
-        }
-
         string _Beleg_ER033;
 
         /// <summary>
@@ -118,6 +106,16 @@ namespace B_ZAHL_002.Recordings
             set { _Beleg_ER030 = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable LF_303025.
+        /// </summary>
+        [TestVariable("648d3a3a-b06d-47cc-8af9-e5b71c5244d0")]
+        public string LF_303025
+        {
+            get { return repo.LF_303025; }
+            set { repo.LF_303025 = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -144,62 +142,62 @@ namespace B_ZAHL_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblBuop.TitleBar100OPs303025Saldo6060'", repo.TblBuop.TitleBar100OPs303025Saldo6060Info, new ActionTimeout(120000), new RecordItemIndex(0));
-            repo.TblBuop.TitleBar100OPs303025Saldo6060Info.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblBuop_aus_b_zahl.TitleBar100OPs_aus_b_zahl'", repo.TblBuop_aus_b_zahl.TitleBar100OPs_aus_b_zahlInfo, new ActionTimeout(120000), new RecordItemIndex(0));
+            repo.TblBuop_aus_b_zahl.TitleBar100OPs_aus_b_zahlInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$LF_303025) on item 'TblBuop.TitleBar100OPs303025Saldo6060'.", repo.TblBuop.TitleBar100OPs303025Saldo6060Info, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.TblBuop.TitleBar100OPs303025Saldo6060Info, "Text", LF_303025);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$LF_303025) on item 'TblBuop_aus_b_zahl.TitleBar100OPs_aus_b_zahl'.", repo.TblBuop_aus_b_zahl.TitleBar100OPs_aus_b_zahlInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.TblBuop_aus_b_zahl.TitleBar100OPs_aus_b_zahlInfo, "Text", LF_303025);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblBuop.OP_Tabelle.ColBelegnrRow1'", repo.TblBuop.OP_Tabelle.ColBelegnrRow1Info, new ActionTimeout(120000), new RecordItemIndex(2));
-            repo.TblBuop.OP_Tabelle.ColBelegnrRow1Info.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow1'", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow1Info, new ActionTimeout(120000), new RecordItemIndex(2));
+            repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow1Info.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_ER033) on item 'TblBuop.OP_Tabelle.ColBelegnrRow1'.", repo.TblBuop.OP_Tabelle.ColBelegnrRow1Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBelegnrRow1Info, "Text", Beleg_ER033);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_ER033) on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow1'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow1Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow1Info, "Text", Beleg_ER033);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.400,00') on item 'TblBuop.OP_Tabelle.ColOffenRow1'.", repo.TblBuop.OP_Tabelle.ColOffenRow1Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColOffenRow1Info, "Text", "2.400,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.400,00') on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColOffenRow1'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColOffenRow1Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColOffenRow1Info, "Text", "2.400,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblBuop.OP_Tabelle.ColBuopSkontobasisRow1'.", repo.TblBuop.OP_Tabelle.ColBuopSkontobasisRow1Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBuopSkontobasisRow1Info, "Text", "0,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColBuopSkontobasisRow1'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBuopSkontobasisRow1Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBuopSkontobasisRow1Info, "Text", "0,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBuop.OP_Tabelle.ColZlvsRow1'.", repo.TblBuop.OP_Tabelle.ColZlvsRow1Info, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColZlvsRow1Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow1'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow1Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow1Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_ER034) on item 'TblBuop.OP_Tabelle.ColBelegnrRow2'.", repo.TblBuop.OP_Tabelle.ColBelegnrRow2Info, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBelegnrRow2Info, "Text", Beleg_ER034);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_ER034) on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow2'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow2Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow2Info, "Text", Beleg_ER034);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='300,00') on item 'TblBuop.OP_Tabelle.ColOffenRow2'.", repo.TblBuop.OP_Tabelle.ColOffenRow2Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColOffenRow2Info, "Text", "300,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='300,00') on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColOffenRow2'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColOffenRow2Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColOffenRow2Info, "Text", "300,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='300,00') on item 'TblBuop.OP_Tabelle.ColBuopSkontobasisRow2'.", repo.TblBuop.OP_Tabelle.ColBuopSkontobasisRow2Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBuopSkontobasisRow2Info, "Text", "300,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='300,00') on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColBuopSkontobasisRow2'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBuopSkontobasisRow2Info, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBuopSkontobasisRow2Info, "Text", "300,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBuop.OP_Tabelle.ColZlvsRow2'.", repo.TblBuop.OP_Tabelle.ColZlvsRow2Info, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColZlvsRow2Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow2'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow2Info, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow2Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_ER031) on item 'TblBuop.OP_Tabelle.ColBelegnrRow3'.", repo.TblBuop.OP_Tabelle.ColBelegnrRow3Info, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBelegnrRow3Info, "Text", Beleg_ER031);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_ER031) on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow3'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow3Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow3Info, "Text", Beleg_ER031);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='600,00') on item 'TblBuop.OP_Tabelle.ColOffenRow3'.", repo.TblBuop.OP_Tabelle.ColOffenRow3Info, new RecordItemIndex(12));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColOffenRow3Info, "Text", "600,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='600,00') on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColOffenRow3'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColOffenRow3Info, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColOffenRow3Info, "Text", "600,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='300,00') on item 'TblBuop.OP_Tabelle.ColBuopSkontobasisRow3'.", repo.TblBuop.OP_Tabelle.ColBuopSkontobasisRow3Info, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBuopSkontobasisRow3Info, "Text", "300,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='300,00') on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColBuopSkontobasisRow3'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBuopSkontobasisRow3Info, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBuopSkontobasisRow3Info, "Text", "300,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBuop.OP_Tabelle.ColZlvsRow3'.", repo.TblBuop.OP_Tabelle.ColZlvsRow3Info, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColZlvsRow3Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow3'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow3Info, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow3Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_ER030) on item 'TblBuop.OP_Tabelle.ColBelegnrRow4'.", repo.TblBuop.OP_Tabelle.ColBelegnrRow4Info, new RecordItemIndex(15));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBelegnrRow4Info, "Text", Beleg_ER030);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_ER030) on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow4'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow4Info, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow4Info, "Text", Beleg_ER030);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.200,00') on item 'TblBuop.OP_Tabelle.ColOffenRow4'.", repo.TblBuop.OP_Tabelle.ColOffenRow4Info, new RecordItemIndex(16));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColOffenRow4Info, "Text", "1.200,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.200,00') on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColOffenRow4'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColOffenRow4Info, new RecordItemIndex(16));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColOffenRow4Info, "Text", "1.200,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.200,00') on item 'TblBuop.OP_Tabelle.ColBuopSkontobasisRow4'.", repo.TblBuop.OP_Tabelle.ColBuopSkontobasisRow4Info, new RecordItemIndex(17));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBuopSkontobasisRow4Info, "Text", "1.200,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.200,00') on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColBuopSkontobasisRow4'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBuopSkontobasisRow4Info, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBuopSkontobasisRow4Info, "Text", "1.200,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBuop.OP_Tabelle.ColZlvsRow4'.", repo.TblBuop.OP_Tabelle.ColZlvsRow4Info, new RecordItemIndex(18));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColZlvsRow4Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow4'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow4Info, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow4Info, "Text", "");
             
         }
 

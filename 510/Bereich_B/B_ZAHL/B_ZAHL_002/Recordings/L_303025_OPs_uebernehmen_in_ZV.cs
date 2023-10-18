@@ -79,28 +79,28 @@ namespace B_ZAHL_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuop.OP_Tabelle.Row1Column0' at Center.", repo.TblBuop.OP_Tabelle.Row1Column0Info, new RecordItemIndex(0));
-            repo.TblBuop.OP_Tabelle.Row1Column0.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuop_aus_b_zahl.OP_Tabelle.Row1Column0' at Center.", repo.TblBuop_aus_b_zahl.OP_Tabelle.Row1Column0Info, new RecordItemIndex(0));
+            repo.TblBuop_aus_b_zahl.OP_Tabelle.Row1Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}' with focus on 'TblBuop.OP_Tabelle.Row1Column0'.", repo.TblBuop.OP_Tabelle.Row1Column0Info, new RecordItemIndex(1));
-            repo.TblBuop.OP_Tabelle.Row1Column0.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}' with focus on 'TblBuop_aus_b_zahl.OP_Tabelle.Row1Column0'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.Row1Column0Info, new RecordItemIndex(1));
+            repo.TblBuop_aus_b_zahl.OP_Tabelle.Row1Column0.EnsureVisible();
             Keyboard.Press("{LControlKey down}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuop.OP_Tabelle.Row2Column0' at Center.", repo.TblBuop.OP_Tabelle.Row2Column0Info, new RecordItemIndex(2));
-            repo.TblBuop.OP_Tabelle.Row2Column0.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuop_aus_b_zahl.OP_Tabelle.Row2Column0' at Center.", repo.TblBuop_aus_b_zahl.OP_Tabelle.Row2Column0Info, new RecordItemIndex(2));
+            repo.TblBuop_aus_b_zahl.OP_Tabelle.Row2Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuop.OP_Tabelle.Row3Column0' at Center.", repo.TblBuop.OP_Tabelle.Row3Column0Info, new RecordItemIndex(3));
-            repo.TblBuop.OP_Tabelle.Row3Column0.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuop_aus_b_zahl.OP_Tabelle.Row3Column0' at Center.", repo.TblBuop_aus_b_zahl.OP_Tabelle.Row3Column0Info, new RecordItemIndex(3));
+            repo.TblBuop_aus_b_zahl.OP_Tabelle.Row3Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuop.OP_Tabelle.Row4Column0' at Center.", repo.TblBuop.OP_Tabelle.Row4Column0Info, new RecordItemIndex(4));
-            repo.TblBuop.OP_Tabelle.Row4Column0.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuop_aus_b_zahl.OP_Tabelle.Row4Column0' at Center.", repo.TblBuop_aus_b_zahl.OP_Tabelle.Row4Column0Info, new RecordItemIndex(4));
+            repo.TblBuop_aus_b_zahl.OP_Tabelle.Row4Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey up}' with focus on 'TblBuop.OP_Tabelle.Row4Column0'.", repo.TblBuop.OP_Tabelle.Row4Column0Info, new RecordItemIndex(5));
-            repo.TblBuop.OP_Tabelle.Row4Column0.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey up}' with focus on 'TblBuop_aus_b_zahl.OP_Tabelle.Row4Column0'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.Row4Column0Info, new RecordItemIndex(5));
+            repo.TblBuop_aus_b_zahl.OP_Tabelle.Row4Column0.EnsureVisible();
             Keyboard.Press("{LControlKey up}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuop.PbCommonOk' at Center.", repo.TblBuop.PbCommonOkInfo, new RecordItemIndex(6));
-            repo.TblBuop.PbCommonOk.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuop_aus_b_zahl.PbCommonOk' at Center.", repo.TblBuop_aus_b_zahl.PbCommonOkInfo, new RecordItemIndex(6));
+            repo.TblBuop_aus_b_zahl.PbCommonOk.Click();
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(120000), new RecordItemIndex(7));
             repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(120000);

@@ -33,7 +33,7 @@ namespace B_ZAHL_002
         B_ZAHL_002RepositoryFolders.BZAHLAppFolder _bzahl;
         B_ZAHL_002RepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
         B_ZAHL_002RepositoryFolders.FrmKlAbAppFolder _frmklab;
-        B_ZAHL_002RepositoryFolders.TblBuopAppFolder _tblbuop;
+        B_ZAHL_002RepositoryFolders.TblBuop_aus_b_zahlAppFolder _tblbuop_aus_b_zahl;
 
         /// <summary>
         /// Gets the singleton class instance representing the B_ZAHL_002Repository element repository.
@@ -56,7 +56,7 @@ namespace B_ZAHL_002
             _bzahl = new B_ZAHL_002RepositoryFolders.BZAHLAppFolder(this);
             _dlgmessagebox = new B_ZAHL_002RepositoryFolders.DlgMessageBoxAppFolder(this);
             _frmklab = new B_ZAHL_002RepositoryFolders.FrmKlAbAppFolder(this);
-            _tblbuop = new B_ZAHL_002RepositoryFolders.TblBuopAppFolder(this);
+            _tblbuop_aus_b_zahl = new B_ZAHL_002RepositoryFolders.TblBuop_aus_b_zahlAppFolder(this);
         }
 
 #region Variables
@@ -71,6 +71,18 @@ namespace B_ZAHL_002
         {
             get { return _ZV_TEXT; }
             set { _ZV_TEXT = value; }
+        }
+
+        string _LF_303025 = "303025";
+
+        /// <summary>
+        /// Gets or sets the value of variable LF_303025.
+        /// </summary>
+        [TestVariable("00f95cbb-8265-47fd-97ff-d501c1550757")]
+        public string LF_303025
+        {
+            get { return _LF_303025; }
+            set { _LF_303025 = value; }
         }
 
 #endregion
@@ -142,12 +154,12 @@ namespace B_ZAHL_002
         }
 
         /// <summary>
-        /// The TblBuop folder.
+        /// The TblBuop_aus_b_zahl folder.
         /// </summary>
         [RepositoryFolder("725c7360-b075-4318-922e-3715dbdc3f86")]
-        public virtual B_ZAHL_002RepositoryFolders.TblBuopAppFolder TblBuop
+        public virtual B_ZAHL_002RepositoryFolders.TblBuop_aus_b_zahlAppFolder TblBuop_aus_b_zahl
         {
-            get { return _tblbuop; }
+            get { return _tblbuop_aus_b_zahl; }
         }
     }
 
@@ -2372,24 +2384,26 @@ namespace B_ZAHL_002
         }
 
         /// <summary>
-        /// The TblBuopAppFolder folder.
+        /// The TblBuop_aus_b_zahlAppFolder folder.
         /// </summary>
         [RepositoryFolder("725c7360-b075-4318-922e-3715dbdc3f86")]
-        public partial class TblBuopAppFolder : RepoGenBaseFolder
+        public partial class TblBuop_aus_b_zahlAppFolder : RepoGenBaseFolder
         {
             B_ZAHL_002RepositoryFolders.OP_TabelleFolder _op_tabelle;
-            RepoItemInfo _titlebar100ops303025saldo6060Info;
+            RepoItemInfo _titlebar100ops_aus_b_zahlInfo;
+            RepoItemInfo _titlebar_mit_303025_aus_b_zahlInfo;
             RepoItemInfo _pbcommonladenInfo;
             RepoItemInfo _pbcommonokInfo;
 
             /// <summary>
-            /// Creates a new TblBuop  folder.
+            /// Creates a new TblBuop_aus_b_zahl  folder.
             /// </summary>
-            public TblBuopAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("TblBuop", "/form[@controlname='tblBuop']", parentFolder, 30000, null, true, "725c7360-b075-4318-922e-3715dbdc3f86", "")
+            public TblBuop_aus_b_zahlAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TblBuop_aus_b_zahl", "/form[@controlname='tblBuop']", parentFolder, 30000, null, true, "725c7360-b075-4318-922e-3715dbdc3f86", "")
             {
                 _op_tabelle = new B_ZAHL_002RepositoryFolders.OP_TabelleFolder(this);
-                _titlebar100ops303025saldo6060Info = new RepoItemInfo(this, "TitleBar100OPs303025Saldo6060", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "928bd501-b654-4aa7-ad58-c53dbc4268ad");
+                _titlebar100ops_aus_b_zahlInfo = new RepoItemInfo(this, "TitleBar100OPs_aus_b_zahl", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "928bd501-b654-4aa7-ad58-c53dbc4268ad");
+                _titlebar_mit_303025_aus_b_zahlInfo = new RepoItemInfo(this, "TitleBar_mit_303025_aus_b_zahl", "titlebar[@accessiblerole='TitleBar' and @accessiblevalue~$LF_303025]", "", 30000, null, "49ed1705-2c5f-4794-b7d5-1c41e2dbf007");
                 _pbcommonladenInfo = new RepoItemInfo(this, "PbCommonLaden", "container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Laden']", "", 30000, null, "e2e01c52-bf46-4776-96ec-a192160717c8");
                 _pbcommonokInfo = new RepoItemInfo(this, "PbCommonOk", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbCommon_Ok']", "", 30000, null, "139fb814-f574-43f0-ad42-fff9e060d919");
             }
@@ -2419,26 +2433,50 @@ namespace B_ZAHL_002
             }
 
             /// <summary>
-            /// The TitleBar100OPs303025Saldo6060 item.
+            /// The TitleBar100OPs_aus_b_zahl item.
             /// </summary>
             [RepositoryItem("928bd501-b654-4aa7-ad58-c53dbc4268ad")]
-            public virtual Ranorex.TitleBar TitleBar100OPs303025Saldo6060
+            public virtual Ranorex.TitleBar TitleBar100OPs_aus_b_zahl
             {
                 get
                 {
-                    return _titlebar100ops303025saldo6060Info.CreateAdapter<Ranorex.TitleBar>(true);
+                    return _titlebar100ops_aus_b_zahlInfo.CreateAdapter<Ranorex.TitleBar>(true);
                 }
             }
 
             /// <summary>
-            /// The TitleBar100OPs303025Saldo6060 item info.
+            /// The TitleBar100OPs_aus_b_zahl item info.
             /// </summary>
             [RepositoryItemInfo("928bd501-b654-4aa7-ad58-c53dbc4268ad")]
-            public virtual RepoItemInfo TitleBar100OPs303025Saldo6060Info
+            public virtual RepoItemInfo TitleBar100OPs_aus_b_zahlInfo
             {
                 get
                 {
-                    return _titlebar100ops303025saldo6060Info;
+                    return _titlebar100ops_aus_b_zahlInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar_mit_303025_aus_b_zahl item.
+            /// </summary>
+            [RepositoryItem("49ed1705-2c5f-4794-b7d5-1c41e2dbf007")]
+            public virtual Ranorex.TitleBar TitleBar_mit_303025_aus_b_zahl
+            {
+                get
+                {
+                    return _titlebar_mit_303025_aus_b_zahlInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar_mit_303025_aus_b_zahl item info.
+            /// </summary>
+            [RepositoryItemInfo("49ed1705-2c5f-4794-b7d5-1c41e2dbf007")]
+            public virtual RepoItemInfo TitleBar_mit_303025_aus_b_zahlInfo
+            {
+                get
+                {
+                    return _titlebar_mit_303025_aus_b_zahlInfo;
                 }
             }
 

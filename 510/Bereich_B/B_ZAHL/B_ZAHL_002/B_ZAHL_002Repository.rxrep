@@ -900,7 +900,7 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 		capname="form"
 		id="725c7360-b075-4318-922e-3715dbdc3f86"
 		isrooted="True"
-		name="TblBuop"
+		name="TblBuop_aus_b_zahl"
 		refimgid="141c92c6-fd59-4994-ac91-111aae1464f9"
 		refpath="/form[@controlname='tblBuop']"
 		searchtimeout="30000ms"
@@ -909,12 +909,22 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			addcaps="titlebar,accessible"
 			capname="titlebar"
 			id="928bd501-b654-4aa7-ad58-c53dbc4268ad"
-			name="TitleBar100OPs303025Saldo6060"
+			name="TitleBar100OPs_aus_b_zahl"
 			refimgid="3590fcd5-1e9e-4217-8948-abd2de51370c"
 			refpath="/form[@controlname='tblBuop']/titlebar[@accessiblerole='TitleBar']"
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='tblBuop']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="49ed1705-2c5f-4794-b7d5-1c41e2dbf007"
+			name="TitleBar_mit_303025_aus_b_zahl"
+			refimgid="3590fcd5-1e9e-4217-8948-abd2de51370c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBuop']/titlebar[@accessiblerole='TitleBar' and @accessiblevalue~$LF_303025]
 			</item>
 			<item
 			addcaps="button,control,nativewindow"
@@ -1240,6 +1250,11 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 		id="41e6e624-acca-4e43-8327-6296f62209fe"
 		name="ZV_TEXT">
 			B_ZAHL_002
+		</var>
+		<var
+		id="00f95cbb-8265-47fd-97ff-d501c1550757"
+		name="LF_303025">
+			303025
 		</var>
 	</variables>
 </repository>

@@ -54,16 +54,14 @@ namespace B_ZAHL_002.Recordings
 
 #region Variables
 
-        string _LF_303025;
-
         /// <summary>
         /// Gets or sets the value of variable LF_303025.
         /// </summary>
         [TestVariable("093b81d9-c471-46e4-9cc1-44a09c47d4e8")]
         public string LF_303025
         {
-            get { return _LF_303025; }
-            set { _LF_303025 = value; }
+            get { return repo.LF_303025; }
+            set { repo.LF_303025 = value; }
         }
 
 #endregion

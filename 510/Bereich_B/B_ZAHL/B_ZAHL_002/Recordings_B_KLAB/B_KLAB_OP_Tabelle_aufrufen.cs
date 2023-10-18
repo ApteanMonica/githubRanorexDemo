@@ -54,16 +54,14 @@ namespace B_ZAHL_002.Recordings_B_KLAB
 
 #region Variables
 
-        string _LF_303025;
-
         /// <summary>
         /// Gets or sets the value of variable LF_303025.
         /// </summary>
         [TestVariable("ff50f666-2a37-4f7e-92d0-af536f17137f")]
         public string LF_303025
         {
-            get { return _LF_303025; }
-            set { _LF_303025 = value; }
+            get { return repo.LF_303025; }
+            set { repo.LF_303025 = value; }
         }
 
 #endregion
@@ -98,14 +96,14 @@ namespace B_ZAHL_002.Recordings_B_KLAB
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKlAb.PbOPLaden' at Center.", repo.FrmKlAb.PbOPLadenInfo, new RecordItemIndex(1));
             repo.FrmKlAb.PbOPLaden.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblBuop.TitleBar100OPs303025Saldo6060'", repo.TblBuop.TitleBar100OPs303025Saldo6060Info, new ActionTimeout(120000), new RecordItemIndex(2));
-            repo.TblBuop.TitleBar100OPs303025Saldo6060Info.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblBuop_aus_b_zahl.TitleBar100OPs_aus_b_zahl'", repo.TblBuop_aus_b_zahl.TitleBar100OPs_aus_b_zahlInfo, new ActionTimeout(120000), new RecordItemIndex(2));
+            repo.TblBuop_aus_b_zahl.TitleBar100OPs_aus_b_zahlInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$LF_303025) on item 'TblBuop.TitleBar100OPs303025Saldo6060'.", repo.TblBuop.TitleBar100OPs303025Saldo6060Info, new RecordItemIndex(3));
-            Validate.AttributeContains(repo.TblBuop.TitleBar100OPs303025Saldo6060Info, "Text", LF_303025);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$LF_303025) on item 'TblBuop_aus_b_zahl.TitleBar100OPs_aus_b_zahl'.", repo.TblBuop_aus_b_zahl.TitleBar100OPs_aus_b_zahlInfo, new RecordItemIndex(3));
+            Validate.AttributeContains(repo.TblBuop_aus_b_zahl.TitleBar100OPs_aus_b_zahlInfo, "Text", LF_303025);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblBuop.OP_Tabelle.Row1'", repo.TblBuop.OP_Tabelle.Row1Info, new ActionTimeout(120000), new RecordItemIndex(4));
-            repo.TblBuop.OP_Tabelle.Row1Info.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblBuop_aus_b_zahl.OP_Tabelle.Row1'", repo.TblBuop_aus_b_zahl.OP_Tabelle.Row1Info, new ActionTimeout(120000), new RecordItemIndex(4));
+            repo.TblBuop_aus_b_zahl.OP_Tabelle.Row1Info.WaitForExists(120000);
             
         }
 

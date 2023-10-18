@@ -157,47 +157,47 @@ namespace B_ZAHL_002.Recordings_B_KLAB
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuop.PbCommonLaden' at Center.", repo.TblBuop.PbCommonLadenInfo, new RecordItemIndex(0));
-            repo.TblBuop.PbCommonLaden.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuop_aus_b_zahl.PbCommonLaden' at Center.", repo.TblBuop_aus_b_zahl.PbCommonLadenInfo, new RecordItemIndex(0));
+            repo.TblBuop_aus_b_zahl.PbCommonLaden.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblBuop.OP_Tabelle.Row1'", repo.TblBuop.OP_Tabelle.Row1Info, new ActionTimeout(60000), new RecordItemIndex(1));
-            repo.TblBuop.OP_Tabelle.Row1Info.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblBuop_aus_b_zahl.OP_Tabelle.Row1'", repo.TblBuop_aus_b_zahl.OP_Tabelle.Row1Info, new ActionTimeout(60000), new RecordItemIndex(1));
+            repo.TblBuop_aus_b_zahl.OP_Tabelle.Row1Info.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_ER032) on item 'TblBuop.OP_Tabelle.ColBelegnrRow1'.", repo.TblBuop.OP_Tabelle.ColBelegnrRow1Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBelegnrRow1Info, "Text", Beleg_ER032);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_ER032) on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow1'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow1Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow1Info, "Text", Beleg_ER032);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'TblBuop.OP_Tabelle.ColZlvsRow1'.", repo.TblBuop.OP_Tabelle.ColZlvsRow1Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColZlvsRow1Info, "Text", "3");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow1'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow1Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow1Info, "Text", "3");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_ER033) on item 'TblBuop.OP_Tabelle.ColBelegnrRow2'.", repo.TblBuop.OP_Tabelle.ColBelegnrRow2Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBelegnrRow2Info, "Text", Beleg_ER033);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_ER033) on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow2'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow2Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow2Info, "Text", Beleg_ER033);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBuop.OP_Tabelle.ColZlvsRow2'.", repo.TblBuop.OP_Tabelle.ColZlvsRow2Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColZlvsRow2Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow2'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow2Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow2Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_ER034) on item 'TblBuop.OP_Tabelle.ColBelegnrRow3'.", repo.TblBuop.OP_Tabelle.ColBelegnrRow3Info, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBelegnrRow3Info, "Text", Beleg_ER034);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_ER034) on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow3'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow3Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow3Info, "Text", Beleg_ER034);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBuop.OP_Tabelle.ColZlvsRow3'.", repo.TblBuop.OP_Tabelle.ColZlvsRow3Info, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColZlvsRow3Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow3'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow3Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow3Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_GS007) on item 'TblBuop.OP_Tabelle.ColBelegnrRow4'.", repo.TblBuop.OP_Tabelle.ColBelegnrRow4Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBelegnrRow4Info, "Text", Beleg_GS007);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_GS007) on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow4'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow4Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow4Info, "Text", Beleg_GS007);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'TblBuop.OP_Tabelle.ColZlvsRow4'.", repo.TblBuop.OP_Tabelle.ColZlvsRow4Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColZlvsRow4Info, "Text", "3");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow4'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow4Info, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow4Info, "Text", "3");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_ER031) on item 'TblBuop.OP_Tabelle.ColBelegnrRow5'.", repo.TblBuop.OP_Tabelle.ColBelegnrRow5Info, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBelegnrRow5Info, "Text", Beleg_ER031);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_ER031) on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow5'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow5Info, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow5Info, "Text", Beleg_ER031);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBuop.OP_Tabelle.ColZlvsRow5'.", repo.TblBuop.OP_Tabelle.ColZlvsRow5Info, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColZlvsRow5Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow5'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow5Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow5Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_ER030) on item 'TblBuop.OP_Tabelle.ColBelegnrRow6'.", repo.TblBuop.OP_Tabelle.ColBelegnrRow6Info, new RecordItemIndex(12));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBelegnrRow6Info, "Text", Beleg_ER030);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg_ER030) on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow6'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow6Info, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColBelegnrRow6Info, "Text", Beleg_ER030);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBuop.OP_Tabelle.ColZlvsRow6'.", repo.TblBuop.OP_Tabelle.ColZlvsRow6Info, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColZlvsRow6Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow6'.", repo.TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow6Info, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.TblBuop_aus_b_zahl.OP_Tabelle.ColZlvsRow6Info, "Text", "");
             
         }
 
