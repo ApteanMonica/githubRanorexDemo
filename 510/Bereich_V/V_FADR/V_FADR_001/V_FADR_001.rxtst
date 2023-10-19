@@ -56,16 +56,21 @@
 			VideoFps="15"
 			VideoRecordingMode="Off"
 			VideoSource="Auto"
+			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
 			id="9c86334a-0322-4ed7-87af-bf91c0fa787c"
+			includeimageschecked="False"
+			includerecordingschecked="False"
 			junitreport="False"
 			name="V_FADR_001"
+			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
 			id="bd905e4c-6b2a-46ad-8d85-79beb8df063c"
@@ -160,6 +165,10 @@
 					name="Zahlungsbedingung"
 					value="">
 					</param>
+					<param
+					name="getDatumRow"
+					value="">
+					</param>
 				</parameters>
 			</testcase>
 			<setup
@@ -189,6 +198,12 @@
 					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
 					variableid="c90b0d38-39f9-41e3-8abe-e775fd870d3a"
 					variablename="Lieferscheinnummer">
+					</var>
+					<var
+					dataname="getDatumRow"
+					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
+					variableid="c6742321-376f-48ec-bb69-0c215121217b"
+					variablename="getDatumRow">
 					</var>
 				</databinding>
 			</testmodule>

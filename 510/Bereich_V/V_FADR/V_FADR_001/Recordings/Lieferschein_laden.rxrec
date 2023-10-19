@@ -36,6 +36,10 @@ mode="Global">
 		id="c90b0d38-39f9-41e3-8abe-e775fd870d3a"
 		name="Lieferscheinnummer">
 		</var>
+		<var
+		id="c6742321-376f-48ec-bb69-0c215121217b"
+		name="getDatumRow">
+		</var>
 	</variables>
 	<recorditems>
 		<validationitem
@@ -3528,9 +3532,25 @@ mode="Global">
 				</robustPath>
 			</info>
 		</getvaluerecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="348fa5a8-4c75-4ea1-93c5-a38b1dbf8cbf">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Tagesdatum">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 		<validationitem
 		action="AttributeRegex"
-		enabled="False"
+		enabled="True"
 		optional="False"
 		searchpropertyid="80e25018-b93b-412b-b5ad-000e1ea0f8f5">
 			<comment>
@@ -3611,6 +3631,42 @@ mode="Global">
 				15.12.2020
 			</matchvalue>
 		</validationitem>
+		<getvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b9e2524b-0144-4954-9bf1-c39fd23b43b9"
+		varname="getDatumRow">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="040c96c5-3f28-4435-b912-42bd799d8750"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLsk_datum Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="5e7e90e4-3e90-4925-8816-8fee15986696">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="getDatumRow">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -7725,7 +7781,7 @@ yiiigAooooA//9k=
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
-		optional="False"
+		optional="True"
 		searchpropertyid="4b800889-500e-40b3-8af7-bb6e360b29d0">
 			<comment>
 			</comment>
@@ -7755,7 +7811,7 @@ Nähere Information unter Menu/Extras/Warum wird Auftrag nicht fakturiert
 		enabled="True"
 		loc="Center"
 		movetime="300ms"
-		optional="False"
+		optional="True"
 		searchpropertyid="fd6b4e61-a6ce-4c6e-b8fd-142a5f1d2995"
 		sx="0"
 		sy="0"

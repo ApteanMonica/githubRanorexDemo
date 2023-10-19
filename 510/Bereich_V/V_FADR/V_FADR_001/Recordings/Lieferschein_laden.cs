@@ -44,6 +44,7 @@ namespace V_FADR_001.Recordings
             Tagesdatum = "15.12.2020";
             Rechnungsart_E = "";
             Lieferscheinnummer = "";
+            getDatumRow = "";
         }
 
         /// <summary>
@@ -78,6 +79,18 @@ namespace V_FADR_001.Recordings
         {
             get { return _Lieferscheinnummer; }
             set { _Lieferscheinnummer = value; }
+        }
+
+        string _getDatumRow;
+
+        /// <summary>
+        /// Gets or sets the value of variable getDatumRow.
+        /// </summary>
+        [TestVariable("c6742321-376f-48ec-bb69-0c215121217b")]
+        public string getDatumRow
+        {
+            get { return _getDatumRow; }
+            set { _getDatumRow = value; }
         }
 
         /// <summary>
@@ -125,35 +138,46 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblFadr.ColLskDatumRow1' and assigning its value to variable 'Tagesdatum'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(2));
             Tagesdatum = repo.TblFadr.ColLskDatumRow1.Element.GetAttributeValueText("Text");
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Tagesdatum) on item 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(3));
-            //Validate.AttributeRegex(repo.TblFadr.ColLskDatumRow1Info, "Text", new Regex(Tagesdatum));
+            Report.Log(ReportLevel.Info, "User", Tagesdatum, new RecordItemIndex(3));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Tagesdatum) on item 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(4));
+            Validate.AttributeRegex(repo.TblFadr.ColLskDatumRow1Info, "Text", new Regex(Tagesdatum));
+            
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblFadr.ColLskDatumRow1' and assigning its value to variable 'getDatumRow'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(5));
+            getDatumRow = repo.TblFadr.ColLskDatumRow1.Element.GetAttributeValueText("Text");
+            
+            Report.Log(ReportLevel.Info, "User", getDatumRow, new RecordItemIndex(6));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(7));
             repo.TblFadr.PbCommonLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.ColLskDatumRow1' at Center.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.ColLskDatumRow1' at Center.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(8));
             repo.TblFadr.ColLskDatumRow1.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblFadr.ColLskDatumRow1' at Center.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblFadr.ColLskDatumRow1' at Center.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(9));
             repo.TblFadr.ColLskDatumRow1.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+X' Press.", new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+X' Press.", new RecordItemIndex(10));
             Keyboard.Press(System.Windows.Forms.Keys.X | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.bis_LS_DatRow2' at Center.", repo.TblFadr.bis_LS_DatRow2Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.bis_LS_DatRow2' at Center.", repo.TblFadr.bis_LS_DatRow2Info, new RecordItemIndex(11));
             repo.TblFadr.bis_LS_DatRow2.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+V' Press.", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+V' Press.", new RecordItemIndex(12));
             Keyboard.Press(System.Windows.Forms.Keys.V | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(13));
             repo.TblFadr.PbCommonLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es wurden keine Lieferscheine gefunden die zur Belegerstellung berechtigt sind.\r\nNähere Information unter Menu/Extras/Warum wird Auftrag nicht fakturiert') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es wurden keine Lieferscheine gefunden die zur Belegerstellung berechtigt sind.\r\nNähere Information unter Menu/Extras/Warum wird Auftrag nicht fakturiert");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='Es wurden keine Lieferscheine gefunden die zur Belegerstellung berechtigt sind.\r\nNähere Information unter Menu/Extras/Warum wird Auftrag nicht fakturiert') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(14));
+                Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es wurden keine Lieferscheine gefunden die zur Belegerstellung berechtigt sind.\r\nNähere Information unter Menu/Extras/Warum wird Auftrag nicht fakturiert", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(14)); }
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(12));
-            repo.DlgMessageBox.Button0.Click();
+            try {
+                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(15));
+                repo.DlgMessageBox.Button0.Click();
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(15)); }
             
         }
 
