@@ -235,6 +235,35 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</keyitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="50c172d4-46cc-40a7-90ec-51702382174a">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="PROJ_BEZ_3_V">
+				</binding>
+			</bindings>
+			<info
+			id="00591e78-558a-4a01-860e-6ca0b18791ea"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmTabProjekt']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpPhase']/container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colPhas_bez Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 		<explicitdelayitem
 		duration="1000ms"
 		enabled="True"

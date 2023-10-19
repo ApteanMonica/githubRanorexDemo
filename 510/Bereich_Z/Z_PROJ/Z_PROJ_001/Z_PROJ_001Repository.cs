@@ -65,18 +65,6 @@ namespace Z_PROJ_001
             set { _PROJ_NR_1_K = value; }
         }
 
-        string _Nummernkreis = "";
-
-        /// <summary>
-        /// Gets or sets the value of variable Nummernkreis.
-        /// </summary>
-        [TestVariable("b0498f5b-9db7-4ba0-8a38-6bc17533a372")]
-        public string Nummernkreis
-        {
-            get { return _Nummernkreis; }
-            set { _Nummernkreis = value; }
-        }
-
         string _PROJ_NR_2_IP = "I-FEIER";
 
         /// <summary>
