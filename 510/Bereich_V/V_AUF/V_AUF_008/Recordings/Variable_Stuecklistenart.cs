@@ -131,19 +131,22 @@ namespace V_AUF_008.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmAufk.TpPos1.Text_Menge' at Center.", repo.FrmAufk.TpPos1.Text_MengeInfo, new RecordItemIndex(12));
             repo.FrmAufk.TpPos1.Text_Menge.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2{Tab}' with focus on 'FrmAufk.TpPos1.Text_Menge'.", repo.FrmAufk.TpPos1.Text_MengeInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}' with focus on 'FrmAufk.TpPos1.Text_Menge'.", repo.FrmAufk.TpPos1.Text_MengeInfo, new RecordItemIndex(13));
+            repo.FrmAufk.TpPos1.Text_Menge.PressKeys("{Delete}");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2{Tab}' with focus on 'FrmAufk.TpPos1.Text_Menge'.", repo.FrmAufk.TpPos1.Text_MengeInfo, new RecordItemIndex(14));
             repo.FrmAufk.TpPos1.Text_Menge.PressKeys("2{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2,00') on item 'FrmAufk.TpPos1.Text_Menge'.", repo.FrmAufk.TpPos1.Text_MengeInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2,00') on item 'FrmAufk.TpPos1.Text_Menge'.", repo.FrmAufk.TpPos1.Text_MengeInfo, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.FrmAufk.TpPos1.Text_MengeInfo, "Text", "2,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='52,00') on item 'FrmAufk.TpPos1.DfAufkWert1D'.", repo.FrmAufk.TpPos1.DfAufkWert1DInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='52,00') on item 'FrmAufk.TpPos1.DfAufkWert1D'.", repo.FrmAufk.TpPos1.DfAufkWert1DInfo, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.FrmAufk.TpPos1.DfAufkWert1DInfo, "Text", "52,00");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.PbCommonSave' at Center.", repo.FrmAufk.PbCommonSaveInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAufk.PbCommonSave' at Center.", repo.FrmAufk.PbCommonSaveInfo, new RecordItemIndex(17));
             repo.FrmAufk.PbCommonSave.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='63,00') on item 'FrmAufk.TpPos1.DfAufkWert1D'.", repo.FrmAufk.TpPos1.DfAufkWert1DInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='63,00') on item 'FrmAufk.TpPos1.DfAufkWert1D'.", repo.FrmAufk.TpPos1.DfAufkWert1DInfo, new RecordItemIndex(18));
             Validate.AttributeEqual(repo.FrmAufk.TpPos1.DfAufkWert1DInfo, "Text", "63,00");
             
         }
