@@ -111,8 +111,8 @@ namespace B_UVA_003.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(1));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblUVAF.TitleBar200VerwaltenUVAFormulare'", repo.TblUVAF.TitleBar200VerwaltenUVAFormulareInfo, new ActionTimeout(120000), new RecordItemIndex(2));
-            repo.TblUVAF.TitleBar200VerwaltenUVAFormulareInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'TblUVAF.TitleBar200VerwaltenUVAFormulare'", repo.TblUVAF.TitleBar200VerwaltenUVAFormulareInfo, new ActionTimeout(180000), new RecordItemIndex(2));
+            repo.TblUVAF.TitleBar200VerwaltenUVAFormulareInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Verwalten UVA-Formulare') on item 'TblUVAF.TitleBar200VerwaltenUVAFormulare'.", repo.TblUVAF.TitleBar200VerwaltenUVAFormulareInfo, new RecordItemIndex(3));
             Validate.AttributeContains(repo.TblUVAF.TitleBar200VerwaltenUVAFormulareInfo, "Text", "Verwalten UVA-Formulare");
