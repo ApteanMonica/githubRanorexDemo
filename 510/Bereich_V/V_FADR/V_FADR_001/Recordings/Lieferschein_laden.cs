@@ -169,10 +169,10 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblFadr.ColLskDatumRow1'", repo.TblFadr.ColLskDatumRow1Info, new ActionTimeout(60000), new RecordItemIndex(13));
             repo.TblFadr.ColLskDatumRow1Info.WaitForExists(60000);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(14));
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.bis_LS_DatRow2' at Center.", repo.TblFadr.bis_LS_DatRow2Info, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.bis_LS_DatRow2' at Center.", repo.TblFadr.bis_LS_DatRow2Info, new RecordItemIndex(14));
             repo.TblFadr.bis_LS_DatRow2.Click();
+            
+            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(15));
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+V' Press with focus on 'TblFadr.bis_LS_DatRow2'.", repo.TblFadr.bis_LS_DatRow2Info, new RecordItemIndex(16));
             Keyboard.PrepareFocus(repo.TblFadr.bis_LS_DatRow2);
