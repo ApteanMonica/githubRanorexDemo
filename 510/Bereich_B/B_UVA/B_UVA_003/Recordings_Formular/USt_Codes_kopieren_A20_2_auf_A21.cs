@@ -148,8 +148,8 @@ namespace B_UVA_003.Recordings_Formular
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblUVAF.PbCommonKopieren' at Center.", repo.TblUVAF.PbCommonKopierenInfo, new RecordItemIndex(1));
             repo.TblUVAF.PbCommonKopieren.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmUVAK.FormularKopieren'", repo.FrmUVAK.FormularKopierenInfo, new ActionTimeout(120000), new RecordItemIndex(2));
-            repo.FrmUVAK.FormularKopierenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'FrmUVAK.FormularKopieren'", repo.FrmUVAK.FormularKopierenInfo, new ActionTimeout(180000), new RecordItemIndex(2));
+            repo.FrmUVAK.FormularKopierenInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmUVAK.FormularKopieren'.", repo.FrmUVAK.FormularKopierenInfo, new RecordItemIndex(3));
             Validate.Exists(repo.FrmUVAK.FormularKopierenInfo);
@@ -189,23 +189,27 @@ namespace B_UVA_003.Recordings_Formular
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUVAK.PbUVAKKopieren' at Center.", repo.FrmUVAK.PbUVAKKopierenInfo, new RecordItemIndex(14));
             repo.FrmUVAK.PbUVAKKopieren.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(120000), new RecordItemIndex(15));
+            // Wenn Zurodnungen bereits vorhanden sind durch Test b_uva_003
+            Report.Log(ReportLevel.Info, "Keyboard", "Wenn Zurodnungen bereits vorhanden sind durch Test b_uva_003\r\nKey sequence 'J'.", new RecordItemIndex(15));
+            Keyboard.Press("J");
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(120000), new RecordItemIndex(16));
             repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Kopiervorgang beendet') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Kopiervorgang beendet') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Kopiervorgang beendet");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(18));
             repo.DlgMessageBox.Button0.Click();
             
             // Validierung am Ende wegen tw Zeitverzögerung beim Laden
-            Report.Log(ReportLevel.Info, "Validation", "Validierung am Ende wegen tw Zeitverzögerung beim Laden\r\nValidating AttributeEqual (Text=$UVA_A21_Form_Code) on item 'FrmUVAK.DfCode2'.", repo.FrmUVAK.DfCode2Info, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Validation", "Validierung am Ende wegen tw Zeitverzögerung beim Laden\r\nValidating AttributeEqual (Text=$UVA_A21_Form_Code) on item 'FrmUVAK.DfCode2'.", repo.FrmUVAK.DfCode2Info, new RecordItemIndex(19));
             Validate.AttributeEqual(repo.FrmUVAK.DfCode2Info, "Text", UVA_A21_Form_Code);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmUVAK.FormularKopieren'.", repo.FrmUVAK.FormularKopierenInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmUVAK.FormularKopieren'.", repo.FrmUVAK.FormularKopierenInfo, new RecordItemIndex(20));
             Validate.Exists(repo.FrmUVAK.FormularKopierenInfo);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmUVAK.FormularKopieren'.", repo.FrmUVAK.FormularKopierenInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmUVAK.FormularKopieren'.", repo.FrmUVAK.FormularKopierenInfo, new RecordItemIndex(21));
             Keyboard.PrepareFocus(repo.FrmUVAK.FormularKopieren);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
