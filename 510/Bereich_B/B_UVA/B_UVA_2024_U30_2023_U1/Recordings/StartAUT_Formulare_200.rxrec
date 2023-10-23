@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a895727f-1886-4135-9b67-8242a6bfe319"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartAUT_Formulare_200"
+	namespace="B_UVA_2024_U30_2023_U1.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="0438bd2c-9d64-443a-acfe-dac59a2b0b31"
+		name="Programm">
+			B_UVA AUFRUFART UVAF x 200
+		</var>
+		<var
+		id="a11aa4e5-0ee7-4f9c-9cde-f8826edbcaad"
+		name="Startfile">
+			C:\Testdaten\Allgemein\Start.bat
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Arguments"
+				variable="Programm">
+				</binding>
+				<binding
+				target="FileName"
+				variable="Startfile">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Program Files\rs2\rs2\510_SP08\bin\B_UVA.exe
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="2ac6133d-58e5-4bc3-9e30-a11973ba4cfb"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="22267f79-171b-43c5-aa1c-65c086b8ccde"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="12"
+				prefcap="titlebar"
+				rect="-1357,330,916,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[200]  Verwalten UVA-Formulare
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[200]  Verwalten UVA-Formulare
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblUVAF']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="2091c49e-2006-4bf7-aba2-23555fd2f523">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="22267f79-171b-43c5-aa1c-65c086b8ccde"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="12"
+				prefcap="titlebar"
+				rect="-1357,330,916,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[200]  Verwalten UVA-Formulare
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[200]  Verwalten UVA-Formulare
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblUVAF']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Verwalten UVA-Formulare
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="56f8bed0-ae00-45ad-8e8c-0c284f7a6220"
+	name="B_UVA_004Repository"
+	relativepath="..\B_UVA_004Repository.rxrep">
+		<codegen
+		classname="B_UVA_004Repository"
+		namespace="B_UVA_2024_U30_2023_U1">
+		</codegen>
+		<rootfolder
+		id="6447d753-8887-4756-a9ec-59ad7264be14"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartAUT_Formulare_200.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

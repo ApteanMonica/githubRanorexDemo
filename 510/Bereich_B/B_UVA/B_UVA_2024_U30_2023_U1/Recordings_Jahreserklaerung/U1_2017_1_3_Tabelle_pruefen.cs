@@ -20,50 +20,63 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_UVA_004.Recordings
+namespace B_UVA_2024_U30_2023_U1.Recordings_Jahreserklaerung
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Tagesdatum_ermitteln recording.
+    ///The U1_2017_1_3_Tabelle_ausgeben_pruefen recording.
     /// </summary>
-    [TestModule("d7e6ae51-507c-4f15-8d42-99e4c968891a", ModuleType.Recording, 1)]
-    public partial class Tagesdatum_ermitteln : ITestModule
+    [TestModule("5309d791-1de2-409b-b456-66c90ecb2703", ModuleType.Recording, 1)]
+    public partial class U1_2017_1_3_Tabelle_pruefen : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_UVA_004.B_UVA_004Repository repository.
+        /// Holds an instance of the global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repository.
         /// </summary>
-        public static global::B_UVA_004.B_UVA_004Repository repo = global::B_UVA_004.B_UVA_004Repository.Instance;
+        public static global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository repo = global::B_UVA_2024_U30_2023_U1.B_UVA_004Repository.Instance;
 
-        static Tagesdatum_ermitteln instance = new Tagesdatum_ermitteln();
+        static U1_2017_1_3_Tabelle_pruefen instance = new U1_2017_1_3_Tabelle_pruefen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Tagesdatum_ermitteln()
+        public U1_2017_1_3_Tabelle_pruefen()
         {
-            Tagesdatum = "";
+            Tabelle_Werte_U1_2017_1_3_Teil_1 = "";
+            Tabelle_Werte_U1_2017_1_3_Teil_2 = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Tagesdatum_ermitteln Instance
+        public static U1_2017_1_3_Tabelle_pruefen Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Tagesdatum;
+        string _Tabelle_Werte_U1_2017_1_3_Teil_1;
 
         /// <summary>
-        /// Gets or sets the value of variable Tagesdatum.
+        /// Gets or sets the value of variable Tabelle_Werte_U1_2017_1_3_Teil_1.
         /// </summary>
-        [TestVariable("b849e7c4-fcc1-4e98-9633-d69ad8700c84")]
-        public string Tagesdatum
+        [TestVariable("b1b0e783-fd21-4d93-8d82-67554d2501bb")]
+        public string Tabelle_Werte_U1_2017_1_3_Teil_1
         {
-            get { return _Tagesdatum; }
-            set { _Tagesdatum = value; }
+            get { return _Tabelle_Werte_U1_2017_1_3_Teil_1; }
+            set { _Tabelle_Werte_U1_2017_1_3_Teil_1 = value; }
+        }
+
+        string _Tabelle_Werte_U1_2017_1_3_Teil_2;
+
+        /// <summary>
+        /// Gets or sets the value of variable Tabelle_Werte_U1_2017_1_3_Teil_2.
+        /// </summary>
+        [TestVariable("6f6299d2-7567-4f33-abe6-023cf2f4417c")]
+        public string Tabelle_Werte_U1_2017_1_3_Teil_2
+        {
+            get { return _Tabelle_Werte_U1_2017_1_3_Teil_2; }
+            set { _Tabelle_Werte_U1_2017_1_3_Teil_2 = value; }
         }
 
 #endregion
@@ -92,7 +105,11 @@ namespace B_UVA_004.Recordings
 
             Init();
 
-            Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("yyyy-MM-dd");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tabelle_Werte_U1_2017_1_3_Teil_1) on item 'TblDrucken.Row1'.", repo.TblDrucken.Row1Info, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.TblDrucken.Row1Info, "Text", Tabelle_Werte_U1_2017_1_3_Teil_1);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tabelle_Werte_U1_2017_1_3_Teil_2) on item 'TblDrucken.Row1'.", repo.TblDrucken.Row1Info, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.TblDrucken.Row1Info, "Text", Tabelle_Werte_U1_2017_1_3_Teil_2);
             
         }
 

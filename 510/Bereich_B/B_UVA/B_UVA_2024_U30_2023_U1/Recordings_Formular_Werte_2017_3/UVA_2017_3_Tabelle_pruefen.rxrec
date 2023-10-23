@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="54070552-6436-406a-8266-eb3f457d558c"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="UVA_2017_3_Tabelle_pruefen"
+	namespace="B_UVA_2024_U30_2023_U1.Recordings_Formular_Werte_2017_3">
+	</codegen>
+	<variables>
+		<var
+		id="fdfecb13-9036-4b3b-b07b-e5f075fac7c7"
+		name="Tabelle_Werte_U30_2017_3">
+		</var>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="925ce433-c72b-4612-a609-156c33759316">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Tabelle_Werte_U30_2017_3">
+				</binding>
+			</bindings>
+			<info
+			id="11b90354-1d2b-4147-9780-cbdd95b529b7"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblDrucken']/container[@controlname='ChildTableWindow']//row[@accessiblename='Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Tabelle_Werte_A20_2017_1
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="56f8bed0-ae00-45ad-8e8c-0c284f7a6220"
+	name="B_UVA_004Repository"
+	relativepath="..\B_UVA_004Repository.rxrep">
+		<codegen
+		classname="B_UVA_004Repository"
+		namespace="B_UVA_2024_U30_2023_U1">
+		</codegen>
+		<rootfolder
+		id="6447d753-8887-4756-a9ec-59ad7264be14"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		UVA_2017_3_Tabelle_pruefen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

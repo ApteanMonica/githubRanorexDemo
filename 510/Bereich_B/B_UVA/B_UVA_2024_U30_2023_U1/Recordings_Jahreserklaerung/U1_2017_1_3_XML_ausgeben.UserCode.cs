@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_UVA_004.Recordings
+namespace B_UVA_2024_U30_2023_U1.Recordings_Jahreserklaerung
 {
-    public partial class Tagesdatum_ermitteln
+    public partial class U1_2017_1_3_XML_ausgeben
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

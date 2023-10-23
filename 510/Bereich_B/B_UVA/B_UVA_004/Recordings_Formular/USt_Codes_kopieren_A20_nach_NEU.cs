@@ -230,26 +230,32 @@ namespace B_UVA_004.Recordings_Formular
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(28));
             //repo.DlgMessageBox.Button0.Click();
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(29));
+            Delay.Duration(1000, false);
+            
             // Wenn Zurodnungen bereits vorhanden sind durch Tests
-            Report.Log(ReportLevel.Info, "Keyboard", "Wenn Zurodnungen bereits vorhanden sind durch Tests\r\nKey sequence 'J'.", new RecordItemIndex(29));
+            Report.Log(ReportLevel.Info, "Keyboard", "Wenn Zurodnungen bereits vorhanden sind durch Tests\r\nKey sequence 'J'.", new RecordItemIndex(30));
             Keyboard.Press("J");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(120000), new RecordItemIndex(30));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(31));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(120000), new RecordItemIndex(32));
             repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Kopiervorgang beendet') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(31));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Kopiervorgang beendet') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(33));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Kopiervorgang beendet");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(32));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(34));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmUVAK.FormularKopieren'.", repo.FrmUVAK.FormularKopierenInfo, new RecordItemIndex(33));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmUVAK.FormularKopieren'.", repo.FrmUVAK.FormularKopierenInfo, new RecordItemIndex(35));
             Validate.Exists(repo.FrmUVAK.FormularKopierenInfo);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Form_Code_NEU) on item 'FrmUVAK.DfCode2'.", repo.FrmUVAK.DfCode2Info, new RecordItemIndex(34));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Form_Code_NEU) on item 'FrmUVAK.DfCode2'.", repo.FrmUVAK.DfCode2Info, new RecordItemIndex(36));
             Validate.AttributeEqual(repo.FrmUVAK.DfCode2Info, "Text", Form_Code_NEU);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmUVAK.FormularKopieren'.", repo.FrmUVAK.FormularKopierenInfo, new RecordItemIndex(35));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmUVAK.FormularKopieren'.", repo.FrmUVAK.FormularKopierenInfo, new RecordItemIndex(37));
             Keyboard.PrepareFocus(repo.FrmUVAK.FormularKopieren);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             

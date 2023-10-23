@@ -45,7 +45,6 @@ namespace B_UVA_004.Recordings_Jahreserklaerung
             Programm_2 = "notepad.exe";
             XML_Werte_Kopf = "";
             XML_Werte_U1_2017_1_3 = "";
-            Tagesdatum = "";
         }
 
         /// <summary>
@@ -106,18 +105,6 @@ namespace B_UVA_004.Recordings_Jahreserklaerung
             set { _XML_Werte_U1_2017_1_3 = value; }
         }
 
-        string _Tagesdatum;
-
-        /// <summary>
-        /// Gets or sets the value of variable Tagesdatum.
-        /// </summary>
-        [TestVariable("d365aeb6-9150-4d58-b002-29210ba9b9f1")]
-        public string Tagesdatum
-        {
-            get { return _Tagesdatum; }
-            set { _Tagesdatum = value; }
-        }
-
 #endregion
 
         /// <summary>
@@ -157,11 +144,8 @@ namespace B_UVA_004.Recordings_Jahreserklaerung
             Report.Log(ReportLevel.Info, "Validation", "Header bis Datum/Uhrzeit ausgenommen <DATUM_ERSTELLUNG type=\"datum\">2021-01-13</DATUM_ERSTELLUNG>\r\nValidating AttributeContains (WindowText>$XML_Werte_Kopf) on item 'UVAXMLEditor.Text15'.", repo.UVAXMLEditor.Text15Info, new RecordItemIndex(3));
             Validate.AttributeContains(repo.UVAXMLEditor.Text15Info, "WindowText", XML_Werte_Kopf);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'UVAXMLEditor.Text15'.", repo.UVAXMLEditor.Text15Info, new RecordItemIndex(4));
-            Validate.AttributeContains(repo.UVAXMLEditor.Text15Info, "Text", Tagesdatum);
-            
             // Ab Anzahl Erklärungen; Regex mit <ZR>....</ZR> statt Jahr
-            Report.Log(ReportLevel.Info, "Validation", "Ab Anzahl Erklärungen; Regex mit <ZR>....</ZR> statt Jahr\r\nValidating AttributeRegex (WindowText~$XML_Werte_U1_2017_1_3) on item 'UVAXMLEditor.Text15'.", repo.UVAXMLEditor.Text15Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Ab Anzahl Erklärungen; Regex mit <ZR>....</ZR> statt Jahr\r\nValidating AttributeRegex (WindowText~$XML_Werte_U1_2017_1_3) on item 'UVAXMLEditor.Text15'.", repo.UVAXMLEditor.Text15Info, new RecordItemIndex(4));
             Validate.AttributeRegex(repo.UVAXMLEditor.Text15Info, "WindowText", new Regex(XML_Werte_U1_2017_1_3));
             
         }

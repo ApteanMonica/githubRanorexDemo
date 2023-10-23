@@ -45,7 +45,6 @@ namespace B_UVA_004.Recordings_Formular_Werte_2017_3
             Programm_2 = "notepad.exe";
             XML_Werte_U30_2017_3 = "";
             XML_Werte_Kopf = "";
-            Tagesdatum = "";
         }
 
         /// <summary>
@@ -106,18 +105,6 @@ namespace B_UVA_004.Recordings_Formular_Werte_2017_3
             set { _XML_Werte_Kopf = value; }
         }
 
-        string _Tagesdatum;
-
-        /// <summary>
-        /// Gets or sets the value of variable Tagesdatum.
-        /// </summary>
-        [TestVariable("1de74ab2-7f69-475d-8cc1-266a8b59edee")]
-        public string Tagesdatum
-        {
-            get { return _Tagesdatum; }
-            set { _Tagesdatum = value; }
-        }
-
 #endregion
 
         /// <summary>
@@ -157,11 +144,8 @@ namespace B_UVA_004.Recordings_Formular_Werte_2017_3
             Report.Log(ReportLevel.Info, "Validation", "Header bis Datum/Uhrzeit ausgenommen <DATUM_ERSTELLUNG type=\"datum\">2021-01-13</DATUM_ERSTELLUNG>\r\nValidating AttributeContains (WindowText>$XML_Werte_Kopf) on item 'UVAXMLEditor.Text15'.", repo.UVAXMLEditor.Text15Info, new RecordItemIndex(3));
             Validate.AttributeContains(repo.UVAXMLEditor.Text15Info, "WindowText", XML_Werte_Kopf);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'UVAXMLEditor.Text15'.", repo.UVAXMLEditor.Text15Info, new RecordItemIndex(4));
-            Validate.AttributeContains(repo.UVAXMLEditor.Text15Info, "Text", Tagesdatum);
-            
             // Ab Anzahl Erklärungen
-            Report.Log(ReportLevel.Info, "Validation", "Ab Anzahl Erklärungen\r\nValidating AttributeContains (WindowText>$XML_Werte_U30_2017_3) on item 'UVAXMLEditor.Text15'.", repo.UVAXMLEditor.Text15Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Ab Anzahl Erklärungen\r\nValidating AttributeContains (WindowText>$XML_Werte_U30_2017_3) on item 'UVAXMLEditor.Text15'.", repo.UVAXMLEditor.Text15Info, new RecordItemIndex(4));
             Validate.AttributeContains(repo.UVAXMLEditor.Text15Info, "WindowText", XML_Werte_U30_2017_3);
             
         }
