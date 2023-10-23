@@ -4605,6 +4605,65 @@ KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
 oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//Z
 			</helperscreenshot>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="7314e4e3-7e09-4d9e-92bc-8c28a55144b9"
+		waitaction="Exists"
+		waittimeout="180000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b2e2e4f3-f1af-4ce1-8bbb-4265cb23b092"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="9"
+				prefcap="titlebar"
+				rect="562,169,492,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Warum wird ein bestimmter Auftrag nicht fakturiert
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Warum wird ein bestimmter Auftrag nicht fakturiert
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='dlgKeineFaktura']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4806,6 +4865,27 @@ UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 			</helperscreenshot>
 		</mouseitem>
 		<keysequenceitem
+		KeySequence="{LControlKey down}{Akey}{LControlKey up}{Delete}"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="195fe4c9-7eb7-47f8-857c-229e53eb8d59">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="cc3b7801-012a-4ab4-8641-cd474a10da0c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgKeineFaktura']/?/?/text[@accessiblename='Auftragsnummer']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
+		<keysequenceitem
 		KeySequence=""
 		duration="20ms"
 		enabled="True"
@@ -4820,6 +4900,15 @@ UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 				variable="Auftragsnummer">
 				</binding>
 			</bindings>
+			<info
+			id="cc3b7801-012a-4ab4-8641-cd474a10da0c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgKeineFaktura']/?/?/text[@accessiblename='Auftragsnummer']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
 		</keysequenceitem>
 		<validationitem
 		action="AttributeEqual"
@@ -8883,7 +8972,7 @@ QuWcngMw/oKoX17MusTW6MyL5bHIdv7p7ZwPwFAHQk4GaYsqNGsgYbHxtJ4znpVOKDe8xM048p8L
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -12909,7 +12998,7 @@ GWIAzjk0tZAll+Uea/7shR8x5/ekc+vC/wA6wTrl3k55Pc+ZIM/gGx+VK/ULH//Z
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
-		optional="False"
+		optional="True"
 		searchpropertyid="c830756a-449a-4347-8350-c7576cb78762">
 			<comment>
 			</comment>

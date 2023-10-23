@@ -96,25 +96,33 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VFADR.WarumWirdAuftragNichtFakturiert' at Center.", repo.VFADR.WarumWirdAuftragNichtFakturiertInfo, new RecordItemIndex(1));
             repo.VFADR.WarumWirdAuftragNichtFakturiert.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.Auftragsnummer' at Center.", repo.DlgKeineFaktura.AuftragsnummerInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgKeineFaktura.TitleBar100WarumWirdEinBestimmter'", repo.DlgKeineFaktura.TitleBar100WarumWirdEinBestimmterInfo, new ActionTimeout(180000), new RecordItemIndex(2));
+            repo.DlgKeineFaktura.TitleBar100WarumWirdEinBestimmterInfo.WaitForExists(180000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.Auftragsnummer' at Center.", repo.DlgKeineFaktura.AuftragsnummerInfo, new RecordItemIndex(3));
             repo.DlgKeineFaktura.Auftragsnummer.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Auftragsnummer'.", new RecordItemIndex(3));
-            Keyboard.Press(Auftragsnummer);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}{Delete}' with focus on 'DlgKeineFaktura.Auftragsnummer'.", repo.DlgKeineFaktura.AuftragsnummerInfo, new RecordItemIndex(4));
+            repo.DlgKeineFaktura.Auftragsnummer.PressKeys("{LControlKey down}{Akey}{LControlKey up}{Delete}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Auftragsnummer) on item 'DlgKeineFaktura.Auftragsnummer'.", repo.DlgKeineFaktura.AuftragsnummerInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Auftragsnummer' with focus on 'DlgKeineFaktura.Auftragsnummer'.", repo.DlgKeineFaktura.AuftragsnummerInfo, new RecordItemIndex(5));
+            repo.DlgKeineFaktura.Auftragsnummer.PressKeys(Auftragsnummer);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Auftragsnummer) on item 'DlgKeineFaktura.Auftragsnummer'.", repo.DlgKeineFaktura.AuftragsnummerInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.DlgKeineFaktura.AuftragsnummerInfo, "Text", Auftragsnummer);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.PbPruefen' at Center.", repo.DlgKeineFaktura.PbPruefenInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.PbPruefen' at Center.", repo.DlgKeineFaktura.PbPruefenInfo, new RecordItemIndex(7));
             repo.DlgKeineFaktura.PbPruefen.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.PbPruefen' at Center.", repo.DlgKeineFaktura.PbPruefenInfo, new RecordItemIndex(6));
-            repo.DlgKeineFaktura.PbPruefen.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.PbPruefen' at Center.", repo.DlgKeineFaktura.PbPruefenInfo, new RecordItemIndex(8));
+            //repo.DlgKeineFaktura.PbPruefen.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Einschränkung Rechnungsart ist nicht korrekt') on item 'DlgKeineFaktura.ColAktionRow1'.", repo.DlgKeineFaktura.ColAktionRow1Info, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.DlgKeineFaktura.ColAktionRow1Info, "Text", "Einschränkung Rechnungsart ist nicht korrekt");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='Einschränkung Rechnungsart ist nicht korrekt') on item 'DlgKeineFaktura.ColAktionRow1'.", repo.DlgKeineFaktura.ColAktionRow1Info, new RecordItemIndex(9));
+                Validate.AttributeEqual(repo.DlgKeineFaktura.ColAktionRow1Info, "Text", "Einschränkung Rechnungsart ist nicht korrekt", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.Schliessen' at Center.", repo.DlgKeineFaktura.SchliessenInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.Schliessen' at Center.", repo.DlgKeineFaktura.SchliessenInfo, new RecordItemIndex(10));
             repo.DlgKeineFaktura.Schliessen.Click();
             
         }

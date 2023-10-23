@@ -841,6 +841,7 @@ namespace V_FADR_001
             RepoItemInfo _pbpruefenInfo;
             RepoItemInfo _schliessenInfo;
             RepoItemInfo _colaktionrow1Info;
+            RepoItemInfo _titlebar100warumwirdeinbestimmterInfo;
 
             /// <summary>
             /// Creates a new DlgKeineFaktura  folder.
@@ -852,6 +853,7 @@ namespace V_FADR_001
                 _pbpruefenInfo = new RepoItemInfo(this, "PbPruefen", "button[@controlname='pbPrüfen']", "", 30000, null, "2c060f38-6f6f-4bde-b19b-15b2499783ce");
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "?/?/button[@accessiblename='Schließen']", "", 30000, null, "e64b62c8-06b9-4000-bb7a-fcc0ff8c65b3");
                 _colaktionrow1Info = new RepoItemInfo(this, "ColAktionRow1", "container[@controlname='groupBox3']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAktion Row 1']", "", 30000, null, "3e724424-b188-47ee-a119-0883eac49b70");
+                _titlebar100warumwirdeinbestimmterInfo = new RepoItemInfo(this, "TitleBar100WarumWirdEinBestimmter", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "b2e2e4f3-f1af-4ce1-8bbb-4265cb23b092");
             }
 
             /// <summary>
@@ -971,6 +973,30 @@ namespace V_FADR_001
                 get
                 {
                     return _colaktionrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100WarumWirdEinBestimmter item.
+            /// </summary>
+            [RepositoryItem("b2e2e4f3-f1af-4ce1-8bbb-4265cb23b092")]
+            public virtual Ranorex.TitleBar TitleBar100WarumWirdEinBestimmter
+            {
+                get
+                {
+                    return _titlebar100warumwirdeinbestimmterInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100WarumWirdEinBestimmter item info.
+            /// </summary>
+            [RepositoryItemInfo("b2e2e4f3-f1af-4ce1-8bbb-4265cb23b092")]
+            public virtual RepoItemInfo TitleBar100WarumWirdEinBestimmterInfo
+            {
+                get
+                {
+                    return _titlebar100warumwirdeinbestimmterInfo;
                 }
             }
         }
