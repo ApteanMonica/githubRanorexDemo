@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="57b4963d-6d50-4210-8279-deac29c25b43"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT_Elster"
+	namespace="B_ELSTER_004.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="ed04b093-ebba-417b-876d-873fefc83794">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="661c45b4-4f5d-495f-9f43-cc972f395692"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmMain']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="ac76d4fa-4ef5-4999-8b24-65637f380b4e"
+	name="B_ELSTER_004Repository"
+	relativepath="..\B_ELSTER_004Repository.rxrep">
+		<codegen
+		classname="B_ELSTER_004Repository"
+		namespace="B_ELSTER_004">
+		</codegen>
+		<rootfolder
+		id="208cbd1f-bd0e-4a9e-822b-73c1e7736c9b"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT_Elster.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
