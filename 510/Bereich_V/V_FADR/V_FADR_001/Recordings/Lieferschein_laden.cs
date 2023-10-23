@@ -178,13 +178,13 @@ namespace V_FADR_001.Recordings
             Keyboard.PrepareFocus(repo.TblFadr.bis_LS_DatRow2);
             Keyboard.Press(System.Windows.Forms.Keys.V | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(17));
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblFadr.bis_LS_DatRow2'", repo.TblFadr.bis_LS_DatRow2Info, new ActionTimeout(60000), new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblFadr.bis_LS_DatRow2'", repo.TblFadr.bis_LS_DatRow2Info, new ActionTimeout(60000), new RecordItemIndex(17));
             repo.TblFadr.bis_LS_DatRow2Info.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(18));
             repo.TblFadr.PbCommonLoad.Click();
+            
+            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(19));
             
             try {
                 Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='Es wurden keine Lieferscheine gefunden die zur Belegerstellung berechtigt sind.\r\nNähere Information unter Menu/Extras/Warum wird Auftrag nicht fakturiert') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(20));
