@@ -24,47 +24,34 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Tagesdatum2_ermitteln_eric recording.
+    ///The CloseAUT_JUVA recording.
     /// </summary>
-    [TestModule("c438ac4f-6133-4d2a-866a-1b812bd034b2", ModuleType.Recording, 1)]
-    public partial class Tagesdatum2_ermitteln_eric : ITestModule
+    [TestModule("d0e040b9-1073-4093-9e9d-64ce981c597c", ModuleType.Recording, 1)]
+    public partial class CloseAUT_JUVA : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository.Instance;
 
-        static Tagesdatum2_ermitteln_eric instance = new Tagesdatum2_ermitteln_eric();
+        static CloseAUT_JUVA instance = new CloseAUT_JUVA();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Tagesdatum2_ermitteln_eric()
+        public CloseAUT_JUVA()
         {
-            Tagesdatum2_yyyy_MM_dd = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Tagesdatum2_ermitteln_eric Instance
+        public static CloseAUT_JUVA Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Tagesdatum2_yyyy_MM_dd;
-
-        /// <summary>
-        /// Gets or sets the value of variable Tagesdatum2_yyyy_MM_dd.
-        /// </summary>
-        [TestVariable("4db27eb5-4ce3-40d3-8356-064e84c1e2a3")]
-        public string Tagesdatum2_yyyy_MM_dd
-        {
-            get { return _Tagesdatum2_yyyy_MM_dd; }
-            set { _Tagesdatum2_yyyy_MM_dd = value; }
-        }
 
 #endregion
 
@@ -92,7 +79,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA
 
             Init();
 
-            Tagesdatum2_yyyy_MM_dd = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("yyyy-MM-dd");
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblUVAF.TitleBar100VerwaltenUVAFormulare'.", repo.TblUVAF.TitleBar100VerwaltenUVAFormulareInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.TblUVAF.TitleBar100VerwaltenUVAFormulare, 1000);
             
         }
 

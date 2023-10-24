@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA
 {
-    public partial class Tagesdatum2_ermitteln_eric
+    public partial class StartAUT_JUVA
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

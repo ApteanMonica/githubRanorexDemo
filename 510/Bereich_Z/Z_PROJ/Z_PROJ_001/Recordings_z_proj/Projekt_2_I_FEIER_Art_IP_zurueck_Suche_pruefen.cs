@@ -144,17 +144,17 @@ namespace Z_PROJ_001.Recordings_z_proj
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmTabProjekt.Suche.Text'.", repo.FrmTabProjekt.Suche.TextInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.FrmTabProjekt.Suche.TextInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$PROJ_NR_2_IP) on item 'FrmTabProjekt.Suche.Suchergebnis.Row_mit_PROJ_NR_2_Art_IP'.", repo.FrmTabProjekt.Suche.Suchergebnis.Row_mit_PROJ_NR_2_Art_IPInfo, new RecordItemIndex(5));
-            Validate.AttributeContains(repo.FrmTabProjekt.Suche.Suchergebnis.Row_mit_PROJ_NR_2_Art_IPInfo, "Text", PROJ_NR_2_IP);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$PROJ_NR_2_IP) on item 'FrmTabProjekt.Suche.Row_mit_PROJ_NR_2_Art_IP'.", repo.FrmTabProjekt.Suche.Row_mit_PROJ_NR_2_Art_IPInfo, new RecordItemIndex(5));
+            Validate.AttributeContains(repo.FrmTabProjekt.Suche.Row_mit_PROJ_NR_2_Art_IPInfo, "Text", PROJ_NR_2_IP);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$PROJ_BEZ_2_IP) on item 'FrmTabProjekt.Suche.Suchergebnis.Row_mit_PROJ_NR_2_Art_IP'.", repo.FrmTabProjekt.Suche.Suchergebnis.Row_mit_PROJ_NR_2_Art_IPInfo, new RecordItemIndex(6));
-            Validate.AttributeContains(repo.FrmTabProjekt.Suche.Suchergebnis.Row_mit_PROJ_NR_2_Art_IPInfo, "Text", PROJ_BEZ_2_IP);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$PROJ_BEZ_2_IP) on item 'FrmTabProjekt.Suche.Row_mit_PROJ_NR_2_Art_IP'.", repo.FrmTabProjekt.Suche.Row_mit_PROJ_NR_2_Art_IPInfo, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.FrmTabProjekt.Suche.Row_mit_PROJ_NR_2_Art_IPInfo, "Text", PROJ_BEZ_2_IP);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'FrmTabProjekt.Suche.Suchergebnis.Row_mit_PROJ_NR_2_Art_IP'.", repo.FrmTabProjekt.Suche.Suchergebnis.Row_mit_PROJ_NR_2_Art_IPInfo, new RecordItemIndex(7));
-            Validate.AttributeContains(repo.FrmTabProjekt.Suche.Suchergebnis.Row_mit_PROJ_NR_2_Art_IPInfo, "Text", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'FrmTabProjekt.Suche.Row_mit_PROJ_NR_2_Art_IP'.", repo.FrmTabProjekt.Suche.Row_mit_PROJ_NR_2_Art_IPInfo, new RecordItemIndex(7));
+            Validate.AttributeContains(repo.FrmTabProjekt.Suche.Row_mit_PROJ_NR_2_Art_IPInfo, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$bis_Datum) on item 'FrmTabProjekt.Suche.Suchergebnis.Row_mit_PROJ_NR_2_Art_IP'.", repo.FrmTabProjekt.Suche.Suchergebnis.Row_mit_PROJ_NR_2_Art_IPInfo, new RecordItemIndex(8));
-            Validate.AttributeContains(repo.FrmTabProjekt.Suche.Suchergebnis.Row_mit_PROJ_NR_2_Art_IPInfo, "Text", bis_Datum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$bis_Datum) on item 'FrmTabProjekt.Suche.Row_mit_PROJ_NR_2_Art_IP'.", repo.FrmTabProjekt.Suche.Row_mit_PROJ_NR_2_Art_IPInfo, new RecordItemIndex(8));
+            Validate.AttributeContains(repo.FrmTabProjekt.Suche.Row_mit_PROJ_NR_2_Art_IPInfo, "Text", bis_Datum);
             
         }
 
