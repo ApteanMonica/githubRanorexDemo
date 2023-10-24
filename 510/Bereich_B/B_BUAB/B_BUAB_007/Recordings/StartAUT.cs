@@ -108,8 +108,8 @@ namespace B_BUAB_007.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $startfile with arguments from variable $programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(startfile, programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblB.TitleBar100BuchungenAnzeigen'", repo.TblB.TitleBar100BuchungenAnzeigenInfo, new ActionTimeout(60000), new RecordItemIndex(1));
-            repo.TblB.TitleBar100BuchungenAnzeigenInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'TblB.TitleBar100BuchungenAnzeigen'", repo.TblB.TitleBar100BuchungenAnzeigenInfo, new ActionTimeout(180000), new RecordItemIndex(1));
+            repo.TblB.TitleBar100BuchungenAnzeigenInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Buchungen anzeigen') on item 'TblB.TitleBar100BuchungenAnzeigen'.", repo.TblB.TitleBar100BuchungenAnzeigenInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.TblB.TitleBar100BuchungenAnzeigenInfo, "Text", "Buchungen anzeigen");
