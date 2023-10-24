@@ -30,9 +30,9 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_ZM
     public partial class ZM_Einschraenkungen_VORJAHR_12 : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_006_ZMRepository repository.
+        /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
-        public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_006_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_006_ZMRepository.Instance;
+        public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
         static ZM_Einschraenkungen_VORJAHR_12 instance = new ZM_Einschraenkungen_VORJAHR_12();
 
@@ -42,7 +42,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_ZM
         public ZM_Einschraenkungen_VORJAHR_12()
         {
             Firma = "300";
-            VORJAHR = "2023";
+            VORJAHR = "2022";
         }
 
         /// <summary>

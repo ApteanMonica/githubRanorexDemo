@@ -30,9 +30,9 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad
     public partial class Pruefung_Inhalt_XML_ZM_Datei_JAHRNEU_01_quart_21 : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_006_ZMRepository repository.
+        /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
-        public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_006_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_006_ZMRepository.Instance;
+        public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
         static Pruefung_Inhalt_XML_ZM_Datei_JAHRNEU_01_quart_21 instance = new Pruefung_Inhalt_XML_ZM_Datei_JAHRNEU_01_quart_21();
 

@@ -30,9 +30,9 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
     public partial class Oeffnen_notepad_XML_JUVA_Datei : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository repository.
+        /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
-        public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository.Instance;
+        public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
         static Oeffnen_notepad_XML_JUVA_Datei instance = new Oeffnen_notepad_XML_JUVA_Datei();
 
@@ -121,11 +121,11 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $XML_JUVA_Pfad_Datei with arguments from variable $Programm_2 in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(XML_JUVA_Pfad_Datei, Programm_2, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'XMLEditor_UVA_ZM.XMLEditor'", repo.XMLEditor_UVA_ZM.XMLEditorInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.XMLEditor_UVA_ZM.XMLEditorInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'XMLEditor_UVA_ZM1.XMLEditor'", repo.XMLEditor_UVA_ZM1.XMLEditorInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.XMLEditor_UVA_ZM1.XMLEditorInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$XML_JUVA_Datei) on item 'XMLEditor_UVA_ZM.XMLEditor'.", repo.XMLEditor_UVA_ZM.XMLEditorInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.XMLEditor_UVA_ZM.XMLEditorInfo, "Text", XML_JUVA_Datei);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$XML_JUVA_Datei) on item 'XMLEditor_UVA_ZM1.XMLEditor'.", repo.XMLEditor_UVA_ZM1.XMLEditorInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.XMLEditor_UVA_ZM1.XMLEditorInfo, "Text", XML_JUVA_Datei);
             
         }
 

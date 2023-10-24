@@ -30,9 +30,9 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
     public partial class Pruefung_Inhalt_XML_Zeitraum_Ende : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository repository.
+        /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
-        public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository.Instance;
+        public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
         static Pruefung_Inhalt_XML_Zeitraum_Ende instance = new Pruefung_Inhalt_XML_Zeitraum_Ende();
 
@@ -41,9 +41,9 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
         /// </summary>
         public Pruefung_Inhalt_XML_Zeitraum_Ende()
         {
-            Jahr = "";
-            XML_JUVA_2021_Vorsatz = "";
-            XML_JUVA_2021_Ende = "";
+            VORJAHR = "";
+            XML_JUVA_VORJAHR_Vorsatz = "";
+            XML_JUVA_VORJAHR_Ende = "";
         }
 
         /// <summary>
@@ -56,40 +56,40 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 
 #region Variables
 
-        string _Jahr;
+        string _VORJAHR;
 
         /// <summary>
-        /// Gets or sets the value of variable Jahr.
+        /// Gets or sets the value of variable VORJAHR.
         /// </summary>
         [TestVariable("b99ef79a-09a8-46d9-8e52-2991c4107ae2")]
-        public string Jahr
+        public string VORJAHR
         {
-            get { return _Jahr; }
-            set { _Jahr = value; }
+            get { return _VORJAHR; }
+            set { _VORJAHR = value; }
         }
 
-        string _XML_JUVA_2021_Vorsatz;
+        string _XML_JUVA_VORJAHR_Vorsatz;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_JUVA_2021_Vorsatz.
+        /// Gets or sets the value of variable XML_JUVA_VORJAHR_Vorsatz.
         /// </summary>
         [TestVariable("5784283a-e343-4647-8ebd-c9f7902bcf30")]
-        public string XML_JUVA_2021_Vorsatz
+        public string XML_JUVA_VORJAHR_Vorsatz
         {
-            get { return _XML_JUVA_2021_Vorsatz; }
-            set { _XML_JUVA_2021_Vorsatz = value; }
+            get { return _XML_JUVA_VORJAHR_Vorsatz; }
+            set { _XML_JUVA_VORJAHR_Vorsatz = value; }
         }
 
-        string _XML_JUVA_2021_Ende;
+        string _XML_JUVA_VORJAHR_Ende;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_JUVA_2021_Ende.
+        /// Gets or sets the value of variable XML_JUVA_VORJAHR_Ende.
         /// </summary>
         [TestVariable("876c1747-5c9e-4cd4-b45c-c6ed238439a8")]
-        public string XML_JUVA_2021_Ende
+        public string XML_JUVA_VORJAHR_Ende
         {
-            get { return _XML_JUVA_2021_Ende; }
-            set { _XML_JUVA_2021_Ende = value; }
+            get { return _XML_JUVA_VORJAHR_Ende; }
+            set { _XML_JUVA_VORJAHR_Ende = value; }
         }
 
 #endregion
@@ -119,18 +119,18 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
             Init();
 
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2021_Vorsatz) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(0));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_JUVA_2021_Vorsatz, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_VORJAHR_Vorsatz) on item 'XMLEditor_UVA_ZM9.Text15'.", repo.XMLEditor_UVA_ZM9.Text15Info, new RecordItemIndex(0));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM9.Text15Info, "Text", XML_JUVA_VORJAHR_Vorsatz, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$Jahr) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(1));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", Jahr, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$VORJAHR) on item 'XMLEditor_UVA_ZM9.Text15'.", repo.XMLEditor_UVA_ZM9.Text15Info, new RecordItemIndex(1));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM9.Text15Info, "Text", VORJAHR, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2021_Ende) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(2));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_JUVA_2021_Ende, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_VORJAHR_Ende) on item 'XMLEditor_UVA_ZM9.Text15'.", repo.XMLEditor_UVA_ZM9.Text15Info, new RecordItemIndex(2));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM9.Text15Info, "Text", XML_JUVA_VORJAHR_Ende, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
         }

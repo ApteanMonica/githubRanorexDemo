@@ -30,9 +30,9 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
     public partial class Pruefung_Inhalt_XML_JUVA_INLAND_Best_Art_1 : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository repository.
+        /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
-        public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository.Instance;
+        public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
         static Pruefung_Inhalt_XML_JUVA_INLAND_Best_Art_1 instance = new Pruefung_Inhalt_XML_JUVA_INLAND_Best_Art_1();
 
@@ -41,7 +41,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
         /// </summary>
         public Pruefung_Inhalt_XML_JUVA_INLAND_Best_Art_1()
         {
-            XML_JUVA_2021_INLAND_U_Best_Art_1 = "";
+            XML_JUVA_VORJAHR_INLAND_U_Best_Art_1 = "";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 
 #region Variables
 
-        string _XML_JUVA_2021_INLAND_U_Best_Art_1;
+        string _XML_JUVA_VORJAHR_INLAND_U_Best_Art_1;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_JUVA_2021_INLAND_U_Best_Art_1.
+        /// Gets or sets the value of variable XML_JUVA_VORJAHR_INLAND_U_Best_Art_1.
         /// </summary>
         [TestVariable("a4683142-d3da-434a-a7ad-3cd9c913f8b8")]
-        public string XML_JUVA_2021_INLAND_U_Best_Art_1
+        public string XML_JUVA_VORJAHR_INLAND_U_Best_Art_1
         {
-            get { return _XML_JUVA_2021_INLAND_U_Best_Art_1; }
-            set { _XML_JUVA_2021_INLAND_U_Best_Art_1 = value; }
+            get { return _XML_JUVA_VORJAHR_INLAND_U_Best_Art_1; }
+            set { _XML_JUVA_VORJAHR_INLAND_U_Best_Art_1 = value; }
         }
 
 #endregion
@@ -93,8 +93,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
             Init();
 
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2021_INLAND_U_Best_Art_1) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(0));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_JUVA_2021_INLAND_U_Best_Art_1, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_VORJAHR_INLAND_U_Best_Art_1) on item 'XMLEditor_UVA_ZM6.Text15'.", repo.XMLEditor_UVA_ZM6.Text15Info, new RecordItemIndex(0));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM6.Text15Info, "Text", XML_JUVA_VORJAHR_INLAND_U_Best_Art_1, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
         }

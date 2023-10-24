@@ -30,9 +30,9 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
     public partial class Pruefung_Inhalt_XML_JUVA_Header : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository repository.
+        /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
-        public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository.Instance;
+        public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
         static Pruefung_Inhalt_XML_JUVA_Header instance = new Pruefung_Inhalt_XML_JUVA_Header();
 
@@ -41,9 +41,9 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
         /// </summary>
         public Pruefung_Inhalt_XML_JUVA_Header()
         {
-            XML_JUVA_2021_Header_1 = "";
-            XML_JUVA_2021_Header_2 = "";
-            XML_JUVA_2021_Header_3 = "";
+            XML_JUVA_VORJAHR_Header_1 = "";
+            XML_JUVA_VORJAHR_Header_2 = "";
+            XML_JUVA_VORJAHR_Header_3 = "";
         }
 
         /// <summary>
@@ -56,40 +56,40 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 
 #region Variables
 
-        string _XML_JUVA_2021_Header_1;
+        string _XML_JUVA_VORJAHR_Header_1;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_JUVA_2021_Header_1.
+        /// Gets or sets the value of variable XML_JUVA_VORJAHR_Header_1.
         /// </summary>
         [TestVariable("cc9aa451-beae-4d31-ba3e-2887b5281bec")]
-        public string XML_JUVA_2021_Header_1
+        public string XML_JUVA_VORJAHR_Header_1
         {
-            get { return _XML_JUVA_2021_Header_1; }
-            set { _XML_JUVA_2021_Header_1 = value; }
+            get { return _XML_JUVA_VORJAHR_Header_1; }
+            set { _XML_JUVA_VORJAHR_Header_1 = value; }
         }
 
-        string _XML_JUVA_2021_Header_2;
+        string _XML_JUVA_VORJAHR_Header_2;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_JUVA_2021_Header_2.
+        /// Gets or sets the value of variable XML_JUVA_VORJAHR_Header_2.
         /// </summary>
         [TestVariable("abe019ba-8d25-40c3-b714-e5265caa7a07")]
-        public string XML_JUVA_2021_Header_2
+        public string XML_JUVA_VORJAHR_Header_2
         {
-            get { return _XML_JUVA_2021_Header_2; }
-            set { _XML_JUVA_2021_Header_2 = value; }
+            get { return _XML_JUVA_VORJAHR_Header_2; }
+            set { _XML_JUVA_VORJAHR_Header_2 = value; }
         }
 
-        string _XML_JUVA_2021_Header_3;
+        string _XML_JUVA_VORJAHR_Header_3;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_JUVA_2021_Header_3.
+        /// Gets or sets the value of variable XML_JUVA_VORJAHR_Header_3.
         /// </summary>
         [TestVariable("6b67dacf-f998-4ed9-9361-2a6dcfe28536")]
-        public string XML_JUVA_2021_Header_3
+        public string XML_JUVA_VORJAHR_Header_3
         {
-            get { return _XML_JUVA_2021_Header_3; }
-            set { _XML_JUVA_2021_Header_3 = value; }
+            get { return _XML_JUVA_VORJAHR_Header_3; }
+            set { _XML_JUVA_VORJAHR_Header_3 = value; }
         }
 
 #endregion
@@ -119,18 +119,18 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
             Init();
 
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2021_Header_1) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(0));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_JUVA_2021_Header_1, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_VORJAHR_Header_1) on item 'XMLEditor_UVA_ZM3.Text15'.", repo.XMLEditor_UVA_ZM3.Text15Info, new RecordItemIndex(0));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM3.Text15Info, "Text", XML_JUVA_VORJAHR_Header_1, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2021_Header_2) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(1));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_JUVA_2021_Header_2, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_VORJAHR_Header_2) on item 'XMLEditor_UVA_ZM3.Text15'.", repo.XMLEditor_UVA_ZM3.Text15Info, new RecordItemIndex(1));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM3.Text15Info, "Text", XML_JUVA_VORJAHR_Header_2, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2021_Header_3) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(2));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_JUVA_2021_Header_3, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_VORJAHR_Header_3) on item 'XMLEditor_UVA_ZM3.Text15'.", repo.XMLEditor_UVA_ZM3.Text15Info, new RecordItemIndex(2));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM3.Text15Info, "Text", XML_JUVA_VORJAHR_Header_3, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
         }
