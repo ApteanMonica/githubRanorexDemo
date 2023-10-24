@@ -98,18 +98,17 @@ namespace Z_PROJ_001.Recordings_z_proj
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Register_Phasen.FlexGrid_Phasen' at Center.", repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo, new RecordItemIndex(1));
             repo.FrmTabProjekt.Register_Phasen.FlexGrid_Phasen.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Insert}' with focus on 'FrmTabProjekt.Register_Phasen.FlexGrid_Phasen'.", repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo, new RecordItemIndex(2));
-            repo.FrmTabProjekt.Register_Phasen.FlexGrid_Phasen.EnsureVisible();
-            Keyboard.Press("{Insert}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Insert' Press.", new RecordItemIndex(2));
+            Keyboard.Press(System.Windows.Forms.Keys.Insert, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Register_Phasen.ColPhasCdRow1' at Center.", repo.FrmTabProjekt.Register_Phasen.ColPhasCdRow1Info, new RecordItemIndex(4));
-            repo.FrmTabProjekt.Register_Phasen.ColPhasCdRow1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasCdRow1' at Center.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasCdRow1Info, new RecordItemIndex(4));
+            repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasCdRow1.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '*' with focus on 'FrmTabProjekt.Register_Phasen.ColPhasCdRow1'.", repo.FrmTabProjekt.Register_Phasen.ColPhasCdRow1Info, new RecordItemIndex(5));
-            repo.FrmTabProjekt.Register_Phasen.ColPhasCdRow1.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '*' with focus on 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasCdRow1'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasCdRow1Info, new RecordItemIndex(5));
+            repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasCdRow1.EnsureVisible();
             Keyboard.Press("*");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
@@ -118,14 +117,14 @@ namespace Z_PROJ_001.Recordings_z_proj
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(7));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Register_Phasen.ColPhasBezRow1' at Center.", repo.FrmTabProjekt.Register_Phasen.ColPhasBezRow1Info, new RecordItemIndex(8));
-            repo.FrmTabProjekt.Register_Phasen.ColPhasBezRow1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow1' at Center.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow1Info, new RecordItemIndex(8));
+            repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow1.Click();
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(9));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PROJ_BEZ_3_V' with focus on 'FrmTabProjekt.Register_Phasen.ColPhasBezRow1'.", repo.FrmTabProjekt.Register_Phasen.ColPhasBezRow1Info, new RecordItemIndex(10));
-            repo.FrmTabProjekt.Register_Phasen.ColPhasBezRow1.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PROJ_BEZ_3_V' with focus on 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow1'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow1Info, new RecordItemIndex(10));
+            repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow1.EnsureVisible();
             Keyboard.Press(PROJ_BEZ_3_V);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
@@ -134,8 +133,8 @@ namespace Z_PROJ_001.Recordings_z_proj
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(12));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$PROJ_BEZ_3_V) on item 'FrmTabProjekt.Register_Phasen.ColPhasBezRow1'.", repo.FrmTabProjekt.Register_Phasen.ColPhasBezRow1Info, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.ColPhasBezRow1Info, "Text", PROJ_BEZ_3_V);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$PROJ_BEZ_3_V) on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow1'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow1Info, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow1Info, "Text", PROJ_BEZ_3_V);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(14));
             Delay.Duration(1000, false);
@@ -143,11 +142,11 @@ namespace Z_PROJ_001.Recordings_z_proj
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(15));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Register_Phasen.ColZtypCdRow1' at Center.", repo.FrmTabProjekt.Register_Phasen.ColZtypCdRow1Info, new RecordItemIndex(16));
-            repo.FrmTabProjekt.Register_Phasen.ColZtypCdRow1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColZtypCdRow1' at Center.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColZtypCdRow1Info, new RecordItemIndex(16));
+            repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColZtypCdRow1.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'KA' with focus on 'FrmTabProjekt.Register_Phasen.ColZtypCdRow1'.", repo.FrmTabProjekt.Register_Phasen.ColZtypCdRow1Info, new RecordItemIndex(17));
-            repo.FrmTabProjekt.Register_Phasen.ColZtypCdRow1.PressKeys("KA");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'KA' with focus on 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColZtypCdRow1'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColZtypCdRow1Info, new RecordItemIndex(17));
+            repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColZtypCdRow1.PressKeys("KA");
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(18));
             Delay.Duration(1000, false);

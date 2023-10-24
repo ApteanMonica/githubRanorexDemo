@@ -132,8 +132,8 @@ namespace Z_PROJ_001.Recordings_z_proj
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmTabProjekt.TitleBar100ProjektVerwalten'.", repo.FrmTabProjekt.TitleBar100ProjektVerwaltenInfo, new RecordItemIndex(0));
             Validate.Exists(repo.FrmTabProjekt.TitleBar100ProjektVerwaltenInfo);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Suche.PbNew' at Center.", repo.FrmTabProjekt.Suche.PbNewInfo, new RecordItemIndex(1));
-            repo.FrmTabProjekt.Suche.PbNew.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.PbNew_Suchmaske' at Center.", repo.FrmTabProjekt.PbNew_SuchmaskeInfo, new RecordItemIndex(1));
+            repo.FrmTabProjekt.PbNew_Suchmaske.Click();
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmTabProjekt.TextArt' at Center.", repo.FrmTabProjekt.TextArtInfo, new RecordItemIndex(2));
             repo.FrmTabProjekt.TextArt.DoubleClick();

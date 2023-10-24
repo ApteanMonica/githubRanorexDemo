@@ -132,29 +132,29 @@ namespace Z_PROJ_001.Recordings_z_proj
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.PbNavigationBack' at Center.", repo.FrmTabProjekt.PbNavigationBackInfo, new RecordItemIndex(0));
             repo.FrmTabProjekt.PbNavigationBack.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmTabProjekt.Suche.Text' at Center.", repo.FrmTabProjekt.Suche.TextInfo, new RecordItemIndex(1));
-            repo.FrmTabProjekt.Suche.Text.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmTabProjekt.Text_Suchmaske' at Center.", repo.FrmTabProjekt.Text_SuchmaskeInfo, new RecordItemIndex(1));
+            repo.FrmTabProjekt.Text_Suchmaske.DoubleClick();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(2));
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Suche.PbPerformSimpleSearch' at Center.", repo.FrmTabProjekt.Suche.PbPerformSimpleSearchInfo, new RecordItemIndex(3));
-            repo.FrmTabProjekt.Suche.PbPerformSimpleSearch.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.PbPerformSimpleSearch_Lupe_Suche' at Center.", repo.FrmTabProjekt.PbPerformSimpleSearch_Lupe_SucheInfo, new RecordItemIndex(3));
+            repo.FrmTabProjekt.PbPerformSimpleSearch_Lupe_Suche.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmTabProjekt.Suche.Text'.", repo.FrmTabProjekt.Suche.TextInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Suche.TextInfo, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmTabProjekt.Text_Suchmaske'.", repo.FrmTabProjekt.Text_SuchmaskeInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FrmTabProjekt.Text_SuchmaskeInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$PROJ_NR_3_V) on item 'FrmTabProjekt.Suche.Row_mit_PROJ_NR_3_Art_V'.", repo.FrmTabProjekt.Suche.Row_mit_PROJ_NR_3_Art_VInfo, new RecordItemIndex(5));
-            Validate.AttributeContains(repo.FrmTabProjekt.Suche.Row_mit_PROJ_NR_3_Art_VInfo, "Text", PROJ_NR_3_V);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$PROJ_NR_3_V) on item 'FrmTabProjekt.Zeilen_Suche.Row_mit_PROJ_NR_3_Art_V'.", repo.FrmTabProjekt.Zeilen_Suche.Row_mit_PROJ_NR_3_Art_VInfo, new RecordItemIndex(5));
+            Validate.AttributeContains(repo.FrmTabProjekt.Zeilen_Suche.Row_mit_PROJ_NR_3_Art_VInfo, "Text", PROJ_NR_3_V);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$PROJ_BEZ_3_V) on item 'FrmTabProjekt.Suche.Row_mit_PROJ_NR_3_Art_V'.", repo.FrmTabProjekt.Suche.Row_mit_PROJ_NR_3_Art_VInfo, new RecordItemIndex(6));
-            Validate.AttributeContains(repo.FrmTabProjekt.Suche.Row_mit_PROJ_NR_3_Art_VInfo, "Text", PROJ_BEZ_3_V);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$PROJ_BEZ_3_V) on item 'FrmTabProjekt.Zeilen_Suche.Row_mit_PROJ_NR_3_Art_V'.", repo.FrmTabProjekt.Zeilen_Suche.Row_mit_PROJ_NR_3_Art_VInfo, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.FrmTabProjekt.Zeilen_Suche.Row_mit_PROJ_NR_3_Art_VInfo, "Text", PROJ_BEZ_3_V);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'FrmTabProjekt.Suche.Row_mit_PROJ_NR_3_Art_V'.", repo.FrmTabProjekt.Suche.Row_mit_PROJ_NR_3_Art_VInfo, new RecordItemIndex(7));
-            Validate.AttributeContains(repo.FrmTabProjekt.Suche.Row_mit_PROJ_NR_3_Art_VInfo, "Text", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'FrmTabProjekt.Zeilen_Suche.Row_mit_PROJ_NR_3_Art_V'.", repo.FrmTabProjekt.Zeilen_Suche.Row_mit_PROJ_NR_3_Art_VInfo, new RecordItemIndex(7));
+            Validate.AttributeContains(repo.FrmTabProjekt.Zeilen_Suche.Row_mit_PROJ_NR_3_Art_VInfo, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$bis_Datum) on item 'FrmTabProjekt.Suche.Row_mit_PROJ_NR_3_Art_V'.", repo.FrmTabProjekt.Suche.Row_mit_PROJ_NR_3_Art_VInfo, new RecordItemIndex(8));
-            Validate.AttributeContains(repo.FrmTabProjekt.Suche.Row_mit_PROJ_NR_3_Art_VInfo, "Text", bis_Datum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$bis_Datum) on item 'FrmTabProjekt.Zeilen_Suche.Row_mit_PROJ_NR_3_Art_V'.", repo.FrmTabProjekt.Zeilen_Suche.Row_mit_PROJ_NR_3_Art_VInfo, new RecordItemIndex(8));
+            Validate.AttributeContains(repo.FrmTabProjekt.Zeilen_Suche.Row_mit_PROJ_NR_3_Art_VInfo, "Text", bis_Datum);
             
         }
 

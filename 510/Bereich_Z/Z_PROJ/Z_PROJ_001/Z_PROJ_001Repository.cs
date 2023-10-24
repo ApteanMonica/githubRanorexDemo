@@ -143,17 +143,20 @@ namespace Z_PROJ_001
         [RepositoryFolder("40f68ecd-8fe0-48fc-b1fa-b19e2f256d27")]
         public partial class FrmTabProjektAppFolder : RepoGenBaseFolder
         {
-            Z_PROJ_001RepositoryFolders.SucheFolder _suche;
+            Z_PROJ_001RepositoryFolders.Zeilen_SucheFolder _zeilen_suche;
             Z_PROJ_001RepositoryFolders.Register_ProjektFolder _register_projekt;
             Z_PROJ_001RepositoryFolders.Register_AllgemeinFolder _register_allgemein;
             Z_PROJ_001RepositoryFolders.Register_PhasenFolder _register_phasen;
             SelfInfoClass _selfInfo;
             RepoItemInfo _titlebar100projektverwaltenInfo;
+            RepoItemInfo _pbnew_suchmaskeInfo;
+            RepoItemInfo _text_suchmaskeInfo;
+            RepoItemInfo _pbperformsimplesearch_lupe_sucheInfo;
+            RepoItemInfo _pbedit_suchmaskeInfo;
             RepoItemInfo _pbdataaccessreloadInfo;
             RepoItemInfo _pbnavigationbackInfo;
             RepoItemInfo _pbtoolbaritemsnummerInfo;
             RepoItemInfo _pbdataaccesssaveInfo;
-            RepoItemInfo _pbcommondelInfo;
             RepoItemInfo _projektnrInfo;
             RepoItemInfo _textartInfo;
             RepoItemInfo _vorlageprojektnrInfo;
@@ -169,17 +172,20 @@ namespace Z_PROJ_001
             public FrmTabProjektAppFolder(RepoGenBaseFolder parentFolder) :
                     base("FrmTabProjekt", "/form[@controlname='frmTabProjekt']", parentFolder, 30000, null, true, "40f68ecd-8fe0-48fc-b1fa-b19e2f256d27", "")
             {
-                _suche = new Z_PROJ_001RepositoryFolders.SucheFolder(this);
+                _zeilen_suche = new Z_PROJ_001RepositoryFolders.Zeilen_SucheFolder(this);
                 _register_projekt = new Z_PROJ_001RepositoryFolders.Register_ProjektFolder(this);
                 _register_allgemein = new Z_PROJ_001RepositoryFolders.Register_AllgemeinFolder(this);
                 _register_phasen = new Z_PROJ_001RepositoryFolders.Register_PhasenFolder(this);
                 _selfInfo = new SelfInfoClass(this);
                 _titlebar100projektverwaltenInfo = new RepoItemInfo(this, "TitleBar100ProjektVerwalten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "c5e91bb2-a1d3-496e-be40-fdeb5c4e2ce8");
+                _pbnew_suchmaskeInfo = new RepoItemInfo(this, "PbNew_Suchmaske", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']", "", 30000, null, "38c897f7-5d76-481a-9492-7a5886dac6ef");
+                _text_suchmaskeInfo = new RepoItemInfo(this, "Text_Suchmaske", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/text[@controlname='dfSearchExpression']/text[@accessiblerole='Text']", "", 30000, null, "67fceff6-eeea-48ff-8702-a1d184ba4f6a");
+                _pbperformsimplesearch_lupe_sucheInfo = new RepoItemInfo(this, "PbPerformSimpleSearch_Lupe_Suche", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/button[@controlname='pbPerformSimpleSearch']", "", 30000, null, "1863a4b2-08ed-4d5c-8063-1ea879a5d300");
+                _pbedit_suchmaskeInfo = new RepoItemInfo(this, "PbEdit_Suchmaske", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbEdit']", "", 30000, null, "2081cc30-21a8-4a62-8cc5-e9af5e5c77b6");
                 _pbdataaccessreloadInfo = new RepoItemInfo(this, "PbDataAccessReload", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Reload']", "", 30000, null, "265037d5-a20a-47b1-92a7-123b99b7ba37");
                 _pbnavigationbackInfo = new RepoItemInfo(this, "PbNavigationBack", "container[@controlname='RibbonBar']/container[@controlname='NavigationGroup']/button[@controlname='pbNavigation_Back']", "", 30000, null, "cb2e3176-fad7-4cbf-b769-be802f437b0b");
                 _pbtoolbaritemsnummerInfo = new RepoItemInfo(this, "PbToolBarItemsNummer", "container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbToolBarItems_Nummer']", "", 30000, null, "a839dc96-fea8-4abd-9231-e5ba7d3ae516");
                 _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "6e5b6408-0d1d-4138-894f-2536aba0ce73");
-                _pbcommondelInfo = new RepoItemInfo(this, "PbCommonDel", "container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Del']", "", 30000, null, "44a16704-7436-4374-b0a3-fbc3701113b4");
                 _projektnrInfo = new RepoItemInfo(this, "Projektnr", "container[@controlname='ClientArea']/text[@controlname='dfProj_nr']/text[@accessiblename~'Projektnr']", "", 30000, null, "65ad1853-7a8a-42c5-97ef-7550259630d5");
                 _textartInfo = new RepoItemInfo(this, "TextArt", "container[@controlname='ClientArea']/text[@controlname='dfPa_cd']/text[@accessiblename='Art']", "", 30000, null, "0c626696-8d8a-4e94-b4f0-bd3771093cdd");
                 _vorlageprojektnrInfo = new RepoItemInfo(this, "VorlageProjektnr", "container[@controlname='ClientArea']/text[@controlname='dfProj_nr_vorlage']/text[@accessiblename~'Vorlage-Projektnr']", "", 30000, null, "cf13eecd-7cb1-4ab5-bfee-d871961406df");
@@ -295,6 +301,102 @@ namespace Z_PROJ_001
             }
 
             /// <summary>
+            /// The PbNew_Suchmaske item.
+            /// </summary>
+            [RepositoryItem("38c897f7-5d76-481a-9492-7a5886dac6ef")]
+            public virtual Ranorex.Button PbNew_Suchmaske
+            {
+                get
+                {
+                    return _pbnew_suchmaskeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbNew_Suchmaske item info.
+            /// </summary>
+            [RepositoryItemInfo("38c897f7-5d76-481a-9492-7a5886dac6ef")]
+            public virtual RepoItemInfo PbNew_SuchmaskeInfo
+            {
+                get
+                {
+                    return _pbnew_suchmaskeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text_Suchmaske item.
+            /// </summary>
+            [RepositoryItem("67fceff6-eeea-48ff-8702-a1d184ba4f6a")]
+            public virtual Ranorex.Text Text_Suchmaske
+            {
+                get
+                {
+                    return _text_suchmaskeInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text_Suchmaske item info.
+            /// </summary>
+            [RepositoryItemInfo("67fceff6-eeea-48ff-8702-a1d184ba4f6a")]
+            public virtual RepoItemInfo Text_SuchmaskeInfo
+            {
+                get
+                {
+                    return _text_suchmaskeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbPerformSimpleSearch_Lupe_Suche item.
+            /// </summary>
+            [RepositoryItem("1863a4b2-08ed-4d5c-8063-1ea879a5d300")]
+            public virtual Ranorex.Button PbPerformSimpleSearch_Lupe_Suche
+            {
+                get
+                {
+                    return _pbperformsimplesearch_lupe_sucheInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbPerformSimpleSearch_Lupe_Suche item info.
+            /// </summary>
+            [RepositoryItemInfo("1863a4b2-08ed-4d5c-8063-1ea879a5d300")]
+            public virtual RepoItemInfo PbPerformSimpleSearch_Lupe_SucheInfo
+            {
+                get
+                {
+                    return _pbperformsimplesearch_lupe_sucheInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbEdit_Suchmaske item.
+            /// </summary>
+            [RepositoryItem("2081cc30-21a8-4a62-8cc5-e9af5e5c77b6")]
+            public virtual Ranorex.Button PbEdit_Suchmaske
+            {
+                get
+                {
+                    return _pbedit_suchmaskeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbEdit_Suchmaske item info.
+            /// </summary>
+            [RepositoryItemInfo("2081cc30-21a8-4a62-8cc5-e9af5e5c77b6")]
+            public virtual RepoItemInfo PbEdit_SuchmaskeInfo
+            {
+                get
+                {
+                    return _pbedit_suchmaskeInfo;
+                }
+            }
+
+            /// <summary>
             /// The PbDataAccessReload item.
             /// </summary>
             [RepositoryItem("265037d5-a20a-47b1-92a7-123b99b7ba37")]
@@ -387,30 +489,6 @@ namespace Z_PROJ_001
                 get
                 {
                     return _pbdataaccesssaveInfo;
-                }
-            }
-
-            /// <summary>
-            /// The PbCommonDel item.
-            /// </summary>
-            [RepositoryItem("44a16704-7436-4374-b0a3-fbc3701113b4")]
-            public virtual Ranorex.Button PbCommonDel
-            {
-                get
-                {
-                    return _pbcommondelInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PbCommonDel item info.
-            /// </summary>
-            [RepositoryItemInfo("44a16704-7436-4374-b0a3-fbc3701113b4")]
-            public virtual RepoItemInfo PbCommonDelInfo
-            {
-                get
-                {
-                    return _pbcommondelInfo;
                 }
             }
 
@@ -607,12 +685,12 @@ namespace Z_PROJ_001
             }
 
             /// <summary>
-            /// The Suche folder.
+            /// The Zeilen_Suche folder.
             /// </summary>
-            [RepositoryFolder("96731966-dff1-4118-8928-8a6e899c086a")]
-            public virtual Z_PROJ_001RepositoryFolders.SucheFolder Suche
+            [RepositoryFolder("e39d09f3-6167-4e0f-94af-8758c1434e83")]
+            public virtual Z_PROJ_001RepositoryFolders.Zeilen_SucheFolder Zeilen_Suche
             {
-                get { return _suche; }
+                get { return _zeilen_suche; }
             }
 
             /// <summary>
@@ -644,155 +722,47 @@ namespace Z_PROJ_001
         }
 
         /// <summary>
-        /// The SucheFolder folder.
+        /// The Zeilen_SucheFolder folder.
         /// </summary>
-        [RepositoryFolder("96731966-dff1-4118-8928-8a6e899c086a")]
-        public partial class SucheFolder : RepoGenBaseFolder
+        [RepositoryFolder("e39d09f3-6167-4e0f-94af-8758c1434e83")]
+        public partial class Zeilen_SucheFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _textInfo;
-            RepoItemInfo _pbperformsimplesearchInfo;
-            RepoItemInfo _pbnewInfo;
-            RepoItemInfo _pbeditInfo;
             RepoItemInfo _row_mit_proj_nr_1_art_kInfo;
             RepoItemInfo _row_mit_proj_nr_2_art_ipInfo;
             RepoItemInfo _row_mit_proj_nr_3_art_vInfo;
-            RepoItemInfo _column0_zeile_mit_proj_nr_1_art_kInfo;
-            RepoItemInfo _row1Info;
 
             /// <summary>
-            /// Creates a new Suche  folder.
+            /// Creates a new Zeilen_Suche  folder.
             /// </summary>
-            public SucheFolder(RepoGenBaseFolder parentFolder) :
-                    base("Suche", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']", parentFolder, 30000, null, false, "96731966-dff1-4118-8928-8a6e899c086a", "")
+            public Zeilen_SucheFolder(RepoGenBaseFolder parentFolder) :
+                    base("Zeilen_Suche", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "e39d09f3-6167-4e0f-94af-8758c1434e83", "")
             {
-                _textInfo = new RepoItemInfo(this, "Text", "container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/text[@controlname='dfSearchExpression']/text[@accessiblerole='Text']", "", 30000, null, "67fceff6-eeea-48ff-8702-a1d184ba4f6a");
-                _pbperformsimplesearchInfo = new RepoItemInfo(this, "PbPerformSimpleSearch", "container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/button[@controlname='pbPerformSimpleSearch']", "", 30000, null, "1863a4b2-08ed-4d5c-8063-1ea879a5d300");
-                _pbnewInfo = new RepoItemInfo(this, "PbNew", "container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']", "", 30000, null, "38c897f7-5d76-481a-9492-7a5886dac6ef");
-                _pbeditInfo = new RepoItemInfo(this, "PbEdit", "container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbEdit']", "", 30000, null, "2081cc30-21a8-4a62-8cc5-e9af5e5c77b6");
-                _row_mit_proj_nr_1_art_kInfo = new RepoItemInfo(this, "Row_mit_PROJ_NR_1_Art_K", "container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$PROJ_NR_1_K]", "", 30000, null, "e4d32204-dfaf-423c-83d3-26f03d448b49");
-                _row_mit_proj_nr_2_art_ipInfo = new RepoItemInfo(this, "Row_mit_PROJ_NR_2_Art_IP", "container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$PROJ_NR_2_IP]", "", 30000, null, "5fb31e88-3c4e-4fd0-b418-9932abc03463");
-                _row_mit_proj_nr_3_art_vInfo = new RepoItemInfo(this, "Row_mit_PROJ_NR_3_Art_V", "container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$PROJ_NR_3_V]", "", 30000, null, "c49756d1-9cab-4cd3-a43a-8ec399f6ac10");
-                _column0_zeile_mit_proj_nr_1_art_kInfo = new RepoItemInfo(this, "Column0_Zeile_mit_PROJ_NR_1_Art_K", "container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$PROJ_NR_1_K]/cell[@accessiblename~'Column 0']", "", 30000, null, "6fd05923-62b4-4228-b11b-07b301f5439f");
-                _row1Info = new RepoItemInfo(this, "Row1", "container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']", "", 30000, null, "c7b1fc1a-6b9f-48e6-810e-56c3326ba476");
+                _row_mit_proj_nr_1_art_kInfo = new RepoItemInfo(this, "Row_mit_PROJ_NR_1_Art_K", "row[@accessiblerole='Row' and @accessiblevalue~$PROJ_NR_1_K]", "", 30000, null, "e4d32204-dfaf-423c-83d3-26f03d448b49");
+                _row_mit_proj_nr_2_art_ipInfo = new RepoItemInfo(this, "Row_mit_PROJ_NR_2_Art_IP", "row[@accessiblerole='Row' and @accessiblevalue~$PROJ_NR_2_IP]", "", 30000, null, "5fb31e88-3c4e-4fd0-b418-9932abc03463");
+                _row_mit_proj_nr_3_art_vInfo = new RepoItemInfo(this, "Row_mit_PROJ_NR_3_Art_V", "row[@accessiblerole='Row' and @accessiblevalue~$PROJ_NR_3_V]", "", 30000, null, "c49756d1-9cab-4cd3-a43a-8ec399f6ac10");
             }
 
             /// <summary>
             /// The Self item.
             /// </summary>
-            [RepositoryItem("96731966-dff1-4118-8928-8a6e899c086a")]
-            public virtual Ranorex.Form Self
+            [RepositoryItem("e39d09f3-6167-4e0f-94af-8758c1434e83")]
+            public virtual Ranorex.Table Self
             {
                 get
                 {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                    return _selfInfo.CreateAdapter<Ranorex.Table>(true);
                 }
             }
 
             /// <summary>
             /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("96731966-dff1-4118-8928-8a6e899c086a")]
+            [RepositoryItemInfo("e39d09f3-6167-4e0f-94af-8758c1434e83")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Text item.
-            /// </summary>
-            [RepositoryItem("67fceff6-eeea-48ff-8702-a1d184ba4f6a")]
-            public virtual Ranorex.Text Text
-            {
-                get
-                {
-                    return _textInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Text item info.
-            /// </summary>
-            [RepositoryItemInfo("67fceff6-eeea-48ff-8702-a1d184ba4f6a")]
-            public virtual RepoItemInfo TextInfo
-            {
-                get
-                {
-                    return _textInfo;
-                }
-            }
-
-            /// <summary>
-            /// The PbPerformSimpleSearch item.
-            /// </summary>
-            [RepositoryItem("1863a4b2-08ed-4d5c-8063-1ea879a5d300")]
-            public virtual Ranorex.Button PbPerformSimpleSearch
-            {
-                get
-                {
-                    return _pbperformsimplesearchInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PbPerformSimpleSearch item info.
-            /// </summary>
-            [RepositoryItemInfo("1863a4b2-08ed-4d5c-8063-1ea879a5d300")]
-            public virtual RepoItemInfo PbPerformSimpleSearchInfo
-            {
-                get
-                {
-                    return _pbperformsimplesearchInfo;
-                }
-            }
-
-            /// <summary>
-            /// The PbNew item.
-            /// </summary>
-            [RepositoryItem("38c897f7-5d76-481a-9492-7a5886dac6ef")]
-            public virtual Ranorex.Button PbNew
-            {
-                get
-                {
-                    return _pbnewInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PbNew item info.
-            /// </summary>
-            [RepositoryItemInfo("38c897f7-5d76-481a-9492-7a5886dac6ef")]
-            public virtual RepoItemInfo PbNewInfo
-            {
-                get
-                {
-                    return _pbnewInfo;
-                }
-            }
-
-            /// <summary>
-            /// The PbEdit item.
-            /// </summary>
-            [RepositoryItem("2081cc30-21a8-4a62-8cc5-e9af5e5c77b6")]
-            public virtual Ranorex.Button PbEdit
-            {
-                get
-                {
-                    return _pbeditInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PbEdit item info.
-            /// </summary>
-            [RepositoryItemInfo("2081cc30-21a8-4a62-8cc5-e9af5e5c77b6")]
-            public virtual RepoItemInfo PbEditInfo
-            {
-                get
-                {
-                    return _pbeditInfo;
                 }
             }
 
@@ -865,54 +835,6 @@ namespace Z_PROJ_001
                 get
                 {
                     return _row_mit_proj_nr_3_art_vInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Column0_Zeile_mit_PROJ_NR_1_Art_K item.
-            /// </summary>
-            [RepositoryItem("6fd05923-62b4-4228-b11b-07b301f5439f")]
-            public virtual Ranorex.Cell Column0_Zeile_mit_PROJ_NR_1_Art_K
-            {
-                get
-                {
-                    return _column0_zeile_mit_proj_nr_1_art_kInfo.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Column0_Zeile_mit_PROJ_NR_1_Art_K item info.
-            /// </summary>
-            [RepositoryItemInfo("6fd05923-62b4-4228-b11b-07b301f5439f")]
-            public virtual RepoItemInfo Column0_Zeile_mit_PROJ_NR_1_Art_KInfo
-            {
-                get
-                {
-                    return _column0_zeile_mit_proj_nr_1_art_kInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Row1 item.
-            /// </summary>
-            [RepositoryItem("c7b1fc1a-6b9f-48e6-810e-56c3326ba476")]
-            public virtual Ranorex.Row Row1
-            {
-                get
-                {
-                    return _row1Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Row1 item info.
-            /// </summary>
-            [RepositoryItemInfo("c7b1fc1a-6b9f-48e6-810e-56c3326ba476")]
-            public virtual RepoItemInfo Row1Info
-            {
-                get
-                {
-                    return _row1Info;
                 }
             }
         }
@@ -1237,8 +1159,8 @@ namespace Z_PROJ_001
         [RepositoryFolder("afe9a97a-be87-4bf8-b5b7-d884b92fd9fd")]
         public partial class Register_PhasenFolder : RepoGenBaseFolder
         {
-            FlexGrid_Screenshots_BildvalidierungInfoClass _flexgrid_screenshots_bildvalidierungInfo;
-            RepoItemInfo _flexgrid_phasenInfo;
+            Z_PROJ_001RepositoryFolders.Register_Phasen_FelderFolder _register_phasen_felder;
+            FlexGrid_PhasenInfoClass _flexgrid_phasenInfo;
             RepoItemInfo _phasen_row1Info;
             RepoItemInfo _phasen_row2Info;
             RepoItemInfo _phasen_row3Info;
@@ -1261,37 +1183,6 @@ namespace Z_PROJ_001
             RepoItemInfo _phasen_row20Info;
             RepoItemInfo _phasen_row21Info;
             RepoItemInfo _phasen_row22Info;
-            RepoItemInfo _colphaspspcoderow1Info;
-            RepoItemInfo _colphascdrow1Info;
-            RepoItemInfo _colphasbezrow1Info;
-            RepoItemInfo _colphasartrow1Info;
-            RepoItemInfo _colztypcdrow1Info;
-            RepoItemInfo _coldtphasvonrow1Info;
-            RepoItemInfo _coldtphasbisrow1Info;
-            RepoItemInfo _colphasstatusrow1Info;
-            RepoItemInfo _colphasstatusextrow1Info;
-            RepoItemInfo _colphasbukzzeitrow1Info;
-            RepoItemInfo _colphaskzfortschrittrow1Info;
-            RepoItemInfo _colphaspspcoderow10Info;
-            RepoItemInfo _colphascdrow10Info;
-            RepoItemInfo _phasbezrow10Info;
-            RepoItemInfo _colphasartrow10Info;
-            RepoItemInfo _coldtphasvonrow10Info;
-            RepoItemInfo _coldtphasbisrow10Info;
-            RepoItemInfo _colphasstatusrow10Info;
-            RepoItemInfo _colphasstatusextrow10Info;
-            RepoItemInfo _colphasbukzzeitrow10Info;
-            RepoItemInfo _colphaskzfortschrittrow10Info;
-            RepoItemInfo _colphaspspcoderow22Info;
-            RepoItemInfo _colphascdrow22Info;
-            RepoItemInfo _colphasbezrow22Info;
-            RepoItemInfo _colphasartrow22Info;
-            RepoItemInfo _coldtphasvonrow22Info;
-            RepoItemInfo _coldtphasbisrow22Info;
-            RepoItemInfo _colphasstatusrow22Info;
-            RepoItemInfo _colphasstatusextrow22Info;
-            RepoItemInfo _colphasbukzzeitrow22Info;
-            RepoItemInfo _colphaskzfortschrittrow22Info;
 
             /// <summary>
             /// Creates a new Register_Phasen  folder.
@@ -1299,8 +1190,8 @@ namespace Z_PROJ_001
             public Register_PhasenFolder(RepoGenBaseFolder parentFolder) :
                     base("Register_Phasen", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpPhase']", parentFolder, 30000, null, false, "afe9a97a-be87-4bf8-b5b7-d884b92fd9fd", "")
             {
-                _flexgrid_screenshots_bildvalidierungInfo = new FlexGrid_Screenshots_BildvalidierungInfoClass(this);
-                _flexgrid_phasenInfo = new RepoItemInfo(this, "FlexGrid_Phasen", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", "", 30000, null, "b757521d-5615-429b-8ece-fb474c46f185");
+                _register_phasen_felder = new Z_PROJ_001RepositoryFolders.Register_Phasen_FelderFolder(this);
+                _flexgrid_phasenInfo = new FlexGrid_PhasenInfoClass(this);
                 _phasen_row1Info = new RepoItemInfo(this, "Phasen_Row1", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']", "", 30000, null, "31d30eca-4d41-4845-bd41-217ea2994489");
                 _phasen_row2Info = new RepoItemInfo(this, "Phasen_Row2", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']", "", 30000, null, "aed270d3-9590-4359-8bc9-6ec6dbc04c47");
                 _phasen_row3Info = new RepoItemInfo(this, "Phasen_Row3", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']", "", 30000, null, "f709dfce-edf2-4743-a281-41a346cc47aa");
@@ -1323,50 +1214,19 @@ namespace Z_PROJ_001
                 _phasen_row20Info = new RepoItemInfo(this, "Phasen_Row20", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 20']", "", 30000, null, "436771b9-0648-43e7-8a17-af6bc1d83d87");
                 _phasen_row21Info = new RepoItemInfo(this, "Phasen_Row21", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 21']", "", 30000, null, "a5f3e179-22f8-40f5-abfe-8072ef081fe6");
                 _phasen_row22Info = new RepoItemInfo(this, "Phasen_Row22", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 22']", "", 30000, null, "7b93d783-8fbd-4497-9ae4-3a8bd3078a92");
-                _colphaspspcoderow1Info = new RepoItemInfo(this, "ColPhasPspCodeRow1", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colPhas_psp_code Row 1']", "", 30000, null, "8bd30799-e12b-400c-972f-481515b52da5");
-                _colphascdrow1Info = new RepoItemInfo(this, "ColPhasCdRow1", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colPhas_cd Row 1']", "", 30000, null, "454ce75c-e2af-4be3-bdfd-85a4169c240c");
-                _colphasbezrow1Info = new RepoItemInfo(this, "ColPhasBezRow1", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colPhas_bez Row 1']", "", 30000, null, "00591e78-558a-4a01-860e-6ca0b18791ea");
-                _colphasartrow1Info = new RepoItemInfo(this, "ColPhasArtRow1", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colPhas_art Row 1']", "", 30000, null, "9adab6d8-683e-4b27-96dc-9dbef5215c92");
-                _colztypcdrow1Info = new RepoItemInfo(this, "ColZtypCdRow1", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colZtyp_cd Row 1']", "", 30000, null, "29b9dc8b-8463-4352-b64f-f844f8fef368");
-                _coldtphasvonrow1Info = new RepoItemInfo(this, "ColdtPhasVonRow1", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='coldtPhas_von Row 1']", "", 30000, null, "a7999dc3-8c0b-4930-8ae8-69c402b22fa9");
-                _coldtphasbisrow1Info = new RepoItemInfo(this, "ColdtPhasBisRow1", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='coldtPhas_bis Row 1']", "", 30000, null, "548c038b-a49b-45b9-a69e-868525cef0c5");
-                _colphasstatusrow1Info = new RepoItemInfo(this, "ColPhasStatusRow1", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colPhas_status Row 1']", "", 30000, null, "89d9d12b-476f-4028-a40a-afac156da71f");
-                _colphasstatusextrow1Info = new RepoItemInfo(this, "ColPhasStatusExtRow1", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colPhas_status_ext Row 1']", "", 30000, null, "cb1e056c-80aa-48c0-9ea2-fb298d70793b");
-                _colphasbukzzeitrow1Info = new RepoItemInfo(this, "ColPhasBukzzeitRow1", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colPhas_bukzzeit Row 1']", "", 30000, null, "ae2242fb-5988-4f89-817a-1197f61ca06b");
-                _colphaskzfortschrittrow1Info = new RepoItemInfo(this, "ColPhasKzfortschrittRow1", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename>'colPhas_kzfortschritt Row 1']", "", 30000, null, "16142367-f1b9-4dd6-acae-f4039ea795f0");
-                _colphaspspcoderow10Info = new RepoItemInfo(this, "ColPhasPspCodeRow10", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 10']/cell[@accessiblename='colPhas_psp_code Row 10']", "", 30000, null, "028fba9a-a207-44ea-942f-ab3c08126289");
-                _colphascdrow10Info = new RepoItemInfo(this, "ColPhasCdRow10", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 10']/cell[@accessiblename='colPhas_cd Row 10']", "", 30000, null, "e943eb7a-5099-41f9-95cd-03158e74252e");
-                _phasbezrow10Info = new RepoItemInfo(this, "PhasBezRow10", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 10']/cell[@accessiblename='colPhas_bez Row 10']", "", 30000, null, "2beb0ff2-6cb8-4e0f-9919-d2f97d8994e7");
-                _colphasartrow10Info = new RepoItemInfo(this, "ColPhasArtRow10", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 10']/cell[@accessiblename='colPhas_art Row 10']", "", 30000, null, "b519b761-e6e5-41ea-b5f2-81a796a2dc7d");
-                _coldtphasvonrow10Info = new RepoItemInfo(this, "ColdtPhasVonRow10", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 10']/cell[@accessiblename='coldtPhas_von Row 10']", "", 30000, null, "92d82b88-1e38-474d-87fb-10f7f00f4bb9");
-                _coldtphasbisrow10Info = new RepoItemInfo(this, "ColdtPhasBisRow10", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 10']/cell[@accessiblename='coldtPhas_bis Row 10']", "", 30000, null, "92f77b1e-0ba9-45c4-9431-940ea135ac3e");
-                _colphasstatusrow10Info = new RepoItemInfo(this, "ColPhasStatusRow10", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 10']/cell[@accessiblename='colPhas_status Row 10']", "", 30000, null, "5ca5bb52-ac81-428a-a967-b881914db4ab");
-                _colphasstatusextrow10Info = new RepoItemInfo(this, "ColPhasStatusExtRow10", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 10']/cell[@accessiblename='colPhas_status_ext Row 10']", "", 30000, null, "70b23a75-5071-490c-b47f-21f0b7130550");
-                _colphasbukzzeitrow10Info = new RepoItemInfo(this, "ColPhasBukzzeitRow10", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 10']/cell[@accessiblename='colPhas_bukzzeit Row 10']", "", 30000, null, "de9c205b-52dc-4c27-b15d-38eaee641c08");
-                _colphaskzfortschrittrow10Info = new RepoItemInfo(this, "ColPhasKzfortschrittRow10", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 10']/cell[@accessiblename>'colPhas_kzfortschritt Row 10']", "", 30000, null, "3d6bce5d-4714-485e-81ee-1bb81f45b99c");
-                _colphaspspcoderow22Info = new RepoItemInfo(this, "ColPhasPspCodeRow22", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 22']/cell[@accessiblename='colPhas_psp_code Row 22']", "", 30000, null, "0598602d-5c52-430b-bc80-44a99269bc38");
-                _colphascdrow22Info = new RepoItemInfo(this, "ColPhasCdRow22", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 22']/cell[@accessiblename='colPhas_cd Row 22']", "", 30000, null, "80c6ca90-5f6b-4766-8460-46421e75dd9b");
-                _colphasbezrow22Info = new RepoItemInfo(this, "ColPhasBezRow22", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 22']/cell[@accessiblename='colPhas_bez Row 22']", "", 30000, null, "d880442e-8eb4-494e-bdca-a72eb8c8bed3");
-                _colphasartrow22Info = new RepoItemInfo(this, "ColPhasArtRow22", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 22']/cell[@accessiblename='colPhas_art Row 22']", "", 30000, null, "d168b4c6-eee3-4b0c-8416-5e19d3511b64");
-                _coldtphasvonrow22Info = new RepoItemInfo(this, "ColdtPhasVonRow22", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 22']/cell[@accessiblename='coldtPhas_von Row 22']", "", 30000, null, "0ad38c66-eacb-45f4-9a0f-8a8db274de7c");
-                _coldtphasbisrow22Info = new RepoItemInfo(this, "ColdtPhasBisRow22", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 22']/cell[@accessiblename='coldtPhas_bis Row 22']", "", 30000, null, "f56145ea-6908-46e3-8300-ed20e11b68b2");
-                _colphasstatusrow22Info = new RepoItemInfo(this, "ColPhasStatusRow22", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 22']/cell[@accessiblename='colPhas_status Row 22']", "", 30000, null, "26c650fd-fe9b-4da6-92bf-e3b8b25358c7");
-                _colphasstatusextrow22Info = new RepoItemInfo(this, "ColPhasStatusExtRow22", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 22']/cell[@accessiblename='colPhas_status_ext Row 22']", "", 30000, null, "d73c2339-29e7-4c13-b5e0-5fa02664d10a");
-                _colphasbukzzeitrow22Info = new RepoItemInfo(this, "ColPhasBukzzeitRow22", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 22']/cell[@accessiblename='colPhas_bukzzeit Row 22']", "", 30000, null, "9939da46-96a1-4b11-9660-7d026681b06e");
-                _colphaskzfortschrittrow22Info = new RepoItemInfo(this, "ColPhasKzfortschrittRow22", "container[@controlname='cSplitContainer1']/*/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 22']/cell[@accessiblename>'colPhas_kzfortschritt Row 22']", "", 30000, null, "1e217333-0ce8-4eaf-9452-6f6cdcbcc0e1");
             }
 
             /// <summary>
-            /// The FlexGrid_Screenshots_BildvalidierungInfoClass folder.
+            /// The FlexGrid_PhasenInfoClass folder.
             /// </summary>
             [RepositoryItemInfo("6a0e9595-d04a-49af-9b5c-f5d9375ffabd")]
-            public class FlexGrid_Screenshots_BildvalidierungInfoClass : RepoItemInfo
+            public class FlexGrid_PhasenInfoClass : RepoItemInfo
             {
                 /// <summary>
-                /// FlexGrid_Screenshots_BildvalidierungInfoClass class constructor.
+                /// FlexGrid_PhasenInfoClass class constructor.
                 /// </summary>
-                public FlexGrid_Screenshots_BildvalidierungInfoClass(RepoGenBaseFolder parentFolder)
-                    : base(parentFolder, "FlexGrid_Screenshots_Bildvalidierung", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", 30000, null, "6a0e9595-d04a-49af-9b5c-f5d9375ffabd")
+                public FlexGrid_PhasenInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "FlexGrid_Phasen", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", 30000, null, "6a0e9595-d04a-49af-9b5c-f5d9375ffabd")
                 { }
 
                 /// <summary>
@@ -1437,33 +1297,9 @@ namespace Z_PROJ_001
             }
 
             /// <summary>
-            /// The FlexGrid_Screenshots_Bildvalidierung item.
-            /// </summary>
-            [RepositoryItem("6a0e9595-d04a-49af-9b5c-f5d9375ffabd")]
-            public virtual Ranorex.Table FlexGrid_Screenshots_Bildvalidierung
-            {
-                get
-                {
-                    return _flexgrid_screenshots_bildvalidierungInfo.CreateAdapter<Ranorex.Table>(true);
-                }
-            }
-
-            /// <summary>
-            /// The FlexGrid_Screenshots_Bildvalidierung item info.
-            /// </summary>
-            [RepositoryItemInfo("6a0e9595-d04a-49af-9b5c-f5d9375ffabd")]
-            public virtual FlexGrid_Screenshots_BildvalidierungInfoClass FlexGrid_Screenshots_BildvalidierungInfo
-            {
-                get
-                {
-                    return _flexgrid_screenshots_bildvalidierungInfo;
-                }
-            }
-
-            /// <summary>
             /// The FlexGrid_Phasen item.
             /// </summary>
-            [RepositoryItem("b757521d-5615-429b-8ece-fb474c46f185")]
+            [RepositoryItem("6a0e9595-d04a-49af-9b5c-f5d9375ffabd")]
             public virtual Ranorex.Table FlexGrid_Phasen
             {
                 get
@@ -1475,8 +1311,8 @@ namespace Z_PROJ_001
             /// <summary>
             /// The FlexGrid_Phasen item info.
             /// </summary>
-            [RepositoryItemInfo("b757521d-5615-429b-8ece-fb474c46f185")]
-            public virtual RepoItemInfo FlexGrid_PhasenInfo
+            [RepositoryItemInfo("6a0e9595-d04a-49af-9b5c-f5d9375ffabd")]
+            public virtual FlexGrid_PhasenInfoClass FlexGrid_PhasenInfo
             {
                 get
                 {
@@ -2009,6 +1845,117 @@ namespace Z_PROJ_001
                 get
                 {
                     return _phasen_row22Info;
+                }
+            }
+
+            /// <summary>
+            /// The Register_Phasen_Felder folder.
+            /// </summary>
+            [RepositoryFolder("51bc3d8b-cb26-40a9-b8f6-4f0c47211c81")]
+            public virtual Z_PROJ_001RepositoryFolders.Register_Phasen_FelderFolder Register_Phasen_Felder
+            {
+                get { return _register_phasen_felder; }
+            }
+        }
+
+        /// <summary>
+        /// The Register_Phasen_FelderFolder folder.
+        /// </summary>
+        [RepositoryFolder("51bc3d8b-cb26-40a9-b8f6-4f0c47211c81")]
+        public partial class Register_Phasen_FelderFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _colphaspspcoderow1Info;
+            RepoItemInfo _colphascdrow1Info;
+            RepoItemInfo _colphasbezrow1Info;
+            RepoItemInfo _colphasartrow1Info;
+            RepoItemInfo _colztypcdrow1Info;
+            RepoItemInfo _coldtphasvonrow1Info;
+            RepoItemInfo _coldtphasbisrow1Info;
+            RepoItemInfo _colphasstatusrow1Info;
+            RepoItemInfo _colphasstatusextrow1Info;
+            RepoItemInfo _colphasbukzzeitrow1Info;
+            RepoItemInfo _colphaskzfortschrittrow1Info;
+            RepoItemInfo _colphaspspcoderow10Info;
+            RepoItemInfo _colphascdrow10Info;
+            RepoItemInfo _phasbezrow10Info;
+            RepoItemInfo _colphasartrow10Info;
+            RepoItemInfo _coldtphasvonrow10Info;
+            RepoItemInfo _coldtphasbisrow10Info;
+            RepoItemInfo _colphasstatusrow10Info;
+            RepoItemInfo _colphasstatusextrow10Info;
+            RepoItemInfo _colphasbukzzeitrow10Info;
+            RepoItemInfo _colphaskzfortschrittrow10Info;
+            RepoItemInfo _colphaspspcoderow22Info;
+            RepoItemInfo _colphascdrow22Info;
+            RepoItemInfo _colphasbezrow22Info;
+            RepoItemInfo _colphasartrow22Info;
+            RepoItemInfo _coldtphasvonrow22Info;
+            RepoItemInfo _coldtphasbisrow22Info;
+            RepoItemInfo _colphasstatusrow22Info;
+            RepoItemInfo _colphasstatusextrow22Info;
+            RepoItemInfo _colphasbukzzeitrow22Info;
+            RepoItemInfo _colphaskzfortschrittrow22Info;
+
+            /// <summary>
+            /// Creates a new Register_Phasen_Felder  folder.
+            /// </summary>
+            public Register_Phasen_FelderFolder(RepoGenBaseFolder parentFolder) :
+                    base("Register_Phasen_Felder", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "51bc3d8b-cb26-40a9-b8f6-4f0c47211c81", "")
+            {
+                _colphaspspcoderow1Info = new RepoItemInfo(this, "ColPhasPspCodeRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colPhas_psp_code Row 1']", "", 30000, null, "8bd30799-e12b-400c-972f-481515b52da5");
+                _colphascdrow1Info = new RepoItemInfo(this, "ColPhasCdRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colPhas_cd Row 1']", "", 30000, null, "454ce75c-e2af-4be3-bdfd-85a4169c240c");
+                _colphasbezrow1Info = new RepoItemInfo(this, "ColPhasBezRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colPhas_bez Row 1']", "", 30000, null, "00591e78-558a-4a01-860e-6ca0b18791ea");
+                _colphasartrow1Info = new RepoItemInfo(this, "ColPhasArtRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colPhas_art Row 1']", "", 30000, null, "9adab6d8-683e-4b27-96dc-9dbef5215c92");
+                _colztypcdrow1Info = new RepoItemInfo(this, "ColZtypCdRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colZtyp_cd Row 1']", "", 30000, null, "29b9dc8b-8463-4352-b64f-f844f8fef368");
+                _coldtphasvonrow1Info = new RepoItemInfo(this, "ColdtPhasVonRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='coldtPhas_von Row 1']", "", 30000, null, "a7999dc3-8c0b-4930-8ae8-69c402b22fa9");
+                _coldtphasbisrow1Info = new RepoItemInfo(this, "ColdtPhasBisRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='coldtPhas_bis Row 1']", "", 30000, null, "548c038b-a49b-45b9-a69e-868525cef0c5");
+                _colphasstatusrow1Info = new RepoItemInfo(this, "ColPhasStatusRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colPhas_status Row 1']", "", 30000, null, "89d9d12b-476f-4028-a40a-afac156da71f");
+                _colphasstatusextrow1Info = new RepoItemInfo(this, "ColPhasStatusExtRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colPhas_status_ext Row 1']", "", 30000, null, "cb1e056c-80aa-48c0-9ea2-fb298d70793b");
+                _colphasbukzzeitrow1Info = new RepoItemInfo(this, "ColPhasBukzzeitRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colPhas_bukzzeit Row 1']", "", 30000, null, "ae2242fb-5988-4f89-817a-1197f61ca06b");
+                _colphaskzfortschrittrow1Info = new RepoItemInfo(this, "ColPhasKzfortschrittRow1", "row[@accessiblename='Row 1']/cell[@accessiblename>'colPhas_kzfortschritt Row 1']", "", 30000, null, "16142367-f1b9-4dd6-acae-f4039ea795f0");
+                _colphaspspcoderow10Info = new RepoItemInfo(this, "ColPhasPspCodeRow10", "row[@accessiblename='Row 10']/cell[@accessiblename='colPhas_psp_code Row 10']", "", 30000, null, "028fba9a-a207-44ea-942f-ab3c08126289");
+                _colphascdrow10Info = new RepoItemInfo(this, "ColPhasCdRow10", "row[@accessiblename='Row 10']/cell[@accessiblename='colPhas_cd Row 10']", "", 30000, null, "e943eb7a-5099-41f9-95cd-03158e74252e");
+                _phasbezrow10Info = new RepoItemInfo(this, "PhasBezRow10", "row[@accessiblename='Row 10']/cell[@accessiblename='colPhas_bez Row 10']", "", 30000, null, "2beb0ff2-6cb8-4e0f-9919-d2f97d8994e7");
+                _colphasartrow10Info = new RepoItemInfo(this, "ColPhasArtRow10", "row[@accessiblename='Row 10']/cell[@accessiblename='colPhas_art Row 10']", "", 30000, null, "b519b761-e6e5-41ea-b5f2-81a796a2dc7d");
+                _coldtphasvonrow10Info = new RepoItemInfo(this, "ColdtPhasVonRow10", "row[@accessiblename='Row 10']/cell[@accessiblename='coldtPhas_von Row 10']", "", 30000, null, "92d82b88-1e38-474d-87fb-10f7f00f4bb9");
+                _coldtphasbisrow10Info = new RepoItemInfo(this, "ColdtPhasBisRow10", "row[@accessiblename='Row 10']/cell[@accessiblename='coldtPhas_bis Row 10']", "", 30000, null, "92f77b1e-0ba9-45c4-9431-940ea135ac3e");
+                _colphasstatusrow10Info = new RepoItemInfo(this, "ColPhasStatusRow10", "row[@accessiblename='Row 10']/cell[@accessiblename='colPhas_status Row 10']", "", 30000, null, "5ca5bb52-ac81-428a-a967-b881914db4ab");
+                _colphasstatusextrow10Info = new RepoItemInfo(this, "ColPhasStatusExtRow10", "row[@accessiblename='Row 10']/cell[@accessiblename='colPhas_status_ext Row 10']", "", 30000, null, "70b23a75-5071-490c-b47f-21f0b7130550");
+                _colphasbukzzeitrow10Info = new RepoItemInfo(this, "ColPhasBukzzeitRow10", "row[@accessiblename='Row 10']/cell[@accessiblename='colPhas_bukzzeit Row 10']", "", 30000, null, "de9c205b-52dc-4c27-b15d-38eaee641c08");
+                _colphaskzfortschrittrow10Info = new RepoItemInfo(this, "ColPhasKzfortschrittRow10", "row[@accessiblename='Row 10']/cell[@accessiblename>'colPhas_kzfortschritt Row 10']", "", 30000, null, "3d6bce5d-4714-485e-81ee-1bb81f45b99c");
+                _colphaspspcoderow22Info = new RepoItemInfo(this, "ColPhasPspCodeRow22", "row[@accessiblename='Row 22']/cell[@accessiblename='colPhas_psp_code Row 22']", "", 30000, null, "0598602d-5c52-430b-bc80-44a99269bc38");
+                _colphascdrow22Info = new RepoItemInfo(this, "ColPhasCdRow22", "row[@accessiblename='Row 22']/cell[@accessiblename='colPhas_cd Row 22']", "", 30000, null, "80c6ca90-5f6b-4766-8460-46421e75dd9b");
+                _colphasbezrow22Info = new RepoItemInfo(this, "ColPhasBezRow22", "row[@accessiblename='Row 22']/cell[@accessiblename='colPhas_bez Row 22']", "", 30000, null, "d880442e-8eb4-494e-bdca-a72eb8c8bed3");
+                _colphasartrow22Info = new RepoItemInfo(this, "ColPhasArtRow22", "row[@accessiblename='Row 22']/cell[@accessiblename='colPhas_art Row 22']", "", 30000, null, "d168b4c6-eee3-4b0c-8416-5e19d3511b64");
+                _coldtphasvonrow22Info = new RepoItemInfo(this, "ColdtPhasVonRow22", "row[@accessiblename='Row 22']/cell[@accessiblename='coldtPhas_von Row 22']", "", 30000, null, "0ad38c66-eacb-45f4-9a0f-8a8db274de7c");
+                _coldtphasbisrow22Info = new RepoItemInfo(this, "ColdtPhasBisRow22", "row[@accessiblename='Row 22']/cell[@accessiblename='coldtPhas_bis Row 22']", "", 30000, null, "f56145ea-6908-46e3-8300-ed20e11b68b2");
+                _colphasstatusrow22Info = new RepoItemInfo(this, "ColPhasStatusRow22", "row[@accessiblename='Row 22']/cell[@accessiblename='colPhas_status Row 22']", "", 30000, null, "26c650fd-fe9b-4da6-92bf-e3b8b25358c7");
+                _colphasstatusextrow22Info = new RepoItemInfo(this, "ColPhasStatusExtRow22", "row[@accessiblename='Row 22']/cell[@accessiblename='colPhas_status_ext Row 22']", "", 30000, null, "d73c2339-29e7-4c13-b5e0-5fa02664d10a");
+                _colphasbukzzeitrow22Info = new RepoItemInfo(this, "ColPhasBukzzeitRow22", "row[@accessiblename='Row 22']/cell[@accessiblename='colPhas_bukzzeit Row 22']", "", 30000, null, "9939da46-96a1-4b11-9660-7d026681b06e");
+                _colphaskzfortschrittrow22Info = new RepoItemInfo(this, "ColPhasKzfortschrittRow22", "row[@accessiblename='Row 22']/cell[@accessiblename>'colPhas_kzfortschritt Row 22']", "", 30000, null, "1e217333-0ce8-4eaf-9452-6f6cdcbcc0e1");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("51bc3d8b-cb26-40a9-b8f6-4f0c47211c81")]
+            public virtual Ranorex.Table Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("51bc3d8b-cb26-40a9-b8f6-4f0c47211c81")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
                 }
             }
 
