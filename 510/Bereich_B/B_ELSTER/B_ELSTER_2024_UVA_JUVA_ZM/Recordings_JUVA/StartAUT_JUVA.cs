@@ -24,22 +24,22 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The StartAUT_JUVA recording.
     /// </summary>
     [TestModule("cc589370-2dc0-4ea4-a645-9b68fba3e950", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    public partial class StartAUT_JUVA : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static StartAUT_JUVA instance = new StartAUT_JUVA();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public StartAUT_JUVA()
         {
             Programm = "B_UVA AUFRUFART UVAF x 300";
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
@@ -49,7 +49,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static StartAUT_JUVA Instance
         {
             get { return instance; }
         }

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="caff1299-745b-4631-b80a-091b707dcc9a"
-mode="Global">
+id="d0e040b9-1073-4093-9e9d-64ce981c597c"
+mode="Desktop">
 	<repeatcount>
 		1
 	</repeatcount>
@@ -19,45 +19,32 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Tagesdatum_ermitteln_eric"
+	classname="CloseAUT_JUVA"
 	namespace="B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA">
 	</codegen>
 	<variables>
-		<var
-		id="1c4dc0a2-2b39-4829-bf7b-5f4ccfb428b2"
-		name="Tagesdatum_yyyy_MM_dd">
-		</var>
 	</variables>
 	<recorditems>
-		<userrecorditem
-		classname="SystemLibrary"
+		<closeapprecorditem
 		enabled="True"
-		isexternaltestmethod="True"
-		methodname="GetDateTimeAsString"
-		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="False">
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="ed04b093-ebba-417b-876d-873fefc83794">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="ReturnVariable"
-				variable="Tagesdatum_yyyy_MM_dd">
-				</binding>
 			</bindings>
-			<arguments
-			id="031d05fc-0f71-41dc-89bd-e7e5bc98e6ab">
-				<argument
-				argname="expectedFormat"
-				id="799a23f1-69cb-4d9c-b54f-b409635a0ec9">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						yyyy-MM-dd
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
+			<info
+			id="d757038e-0460-45d8-b6e4-c9c042358cd2"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblUVAF']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
 	</recorditems>
 	<repository
 	id="65874318-788c-4182-868e-9e7afe670edd"
@@ -74,7 +61,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Tagesdatum_ermitteln_eric.UserCode.cs
+		CloseAUT_UVA.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
