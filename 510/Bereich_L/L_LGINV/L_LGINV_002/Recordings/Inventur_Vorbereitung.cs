@@ -147,70 +147,80 @@ namespace L_LGINV_002.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmVorbereitung.ArtikelnummerVon'.", repo.FrmVorbereitung.ArtikelnummerVonInfo, new RecordItemIndex(5));
             repo.FrmVorbereitung.ArtikelnummerVon.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorbereitung.ArtikelnummerBis' at Center.", repo.FrmVorbereitung.ArtikelnummerBisInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ArtikelnummerVon) on item 'FrmVorbereitung.ArtikelnummerVon'.", repo.FrmVorbereitung.ArtikelnummerVonInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmVorbereitung.ArtikelnummerVonInfo, "Text", ArtikelnummerVon);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorbereitung.ArtikelnummerBis' at Center.", repo.FrmVorbereitung.ArtikelnummerBisInfo, new RecordItemIndex(7));
             repo.FrmVorbereitung.ArtikelnummerBis.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}' with focus on 'FrmVorbereitung.ArtikelnummerBis'.", repo.FrmVorbereitung.ArtikelnummerBisInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}' with focus on 'FrmVorbereitung.ArtikelnummerBis'.", repo.FrmVorbereitung.ArtikelnummerBisInfo, new RecordItemIndex(8));
             repo.FrmVorbereitung.ArtikelnummerBis.PressKeys("{Back}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '9' with focus on 'FrmVorbereitung.ArtikelnummerBis'.", repo.FrmVorbereitung.ArtikelnummerBisInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '9' with focus on 'FrmVorbereitung.ArtikelnummerBis'.", repo.FrmVorbereitung.ArtikelnummerBisInfo, new RecordItemIndex(9));
             repo.FrmVorbereitung.ArtikelnummerBis.PressKeys("9");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmVorbereitung.ArtikelnummerBis'.", repo.FrmVorbereitung.ArtikelnummerBisInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmVorbereitung.ArtikelnummerBis'.", repo.FrmVorbereitung.ArtikelnummerBisInfo, new RecordItemIndex(10));
             repo.FrmVorbereitung.ArtikelnummerBis.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorbereitung.DieAmLaengstenNichtGezaehlten' at Center.", repo.FrmVorbereitung.DieAmLaengstenNichtGezaehltenInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ArtikelnummerBis) on item 'FrmVorbereitung.ArtikelnummerBis'.", repo.FrmVorbereitung.ArtikelnummerBisInfo, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.FrmVorbereitung.ArtikelnummerBisInfo, "Text", ArtikelnummerBis);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorbereitung.DieAmLaengstenNichtGezaehlten' at Center.", repo.FrmVorbereitung.DieAmLaengstenNichtGezaehltenInfo, new RecordItemIndex(12));
             repo.FrmVorbereitung.DieAmLaengstenNichtGezaehlten.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{NumPad5}' with focus on 'FrmVorbereitung.DieAmLaengstenNichtGezaehlten'.", repo.FrmVorbereitung.DieAmLaengstenNichtGezaehltenInfo, new RecordItemIndex(11));
-            repo.FrmVorbereitung.DieAmLaengstenNichtGezaehlten.PressKeys("{NumPad5}");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{NumPad5}' with focus on 'FrmVorbereitung.DieAmLaengstenNichtGezaehlten'.", repo.FrmVorbereitung.DieAmLaengstenNichtGezaehltenInfo, new RecordItemIndex(13));
+            //repo.FrmVorbereitung.DieAmLaengstenNichtGezaehlten.PressKeys("{NumPad5}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmVorbereitung.DieAmLaengstenNichtGezaehlten'.", repo.FrmVorbereitung.DieAmLaengstenNichtGezaehltenInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key '5' Press with focus on 'FrmVorbereitung.DieAmLaengstenNichtGezaehlten'.", repo.FrmVorbereitung.DieAmLaengstenNichtGezaehltenInfo, new RecordItemIndex(14));
+            Keyboard.PrepareFocus(repo.FrmVorbereitung.DieAmLaengstenNichtGezaehlten);
+            Keyboard.Press(System.Windows.Forms.Keys.D5, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmVorbereitung.DieAmLaengstenNichtGezaehlten'.", repo.FrmVorbereitung.DieAmLaengstenNichtGezaehltenInfo, new RecordItemIndex(15));
             repo.FrmVorbereitung.DieAmLaengstenNichtGezaehlten.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorbereitung.NullbestandBeruecks' at CenterRight.", repo.FrmVorbereitung.NullbestandBeruecksInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorbereitung.NullbestandBeruecks' at CenterRight.", repo.FrmVorbereitung.NullbestandBeruecksInfo, new RecordItemIndex(16));
             repo.FrmVorbereitung.NullbestandBeruecks.Click(Location.CenterRight);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LLGINV.DropDown' at UpperCenter.", repo.LLGINV.DropDownInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LLGINV.DropDown' at UpperCenter.", repo.LLGINV.DropDownInfo, new RecordItemIndex(17));
             repo.LLGINV.DropDown.Click(Location.UpperCenter);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmVorbereitung.NullbestandBeruecks'.", repo.FrmVorbereitung.NullbestandBeruecksInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmVorbereitung.NullbestandBeruecks'.", repo.FrmVorbereitung.NullbestandBeruecksInfo, new RecordItemIndex(18));
             Validate.AttributeEqual(repo.FrmVorbereitung.NullbestandBeruecksInfo, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorbereitung.PbCommonStart' at 28;6.", repo.FrmVorbereitung.PbCommonStartInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorbereitung.PbCommonStart' at 28;6.", repo.FrmVorbereitung.PbCommonStartInfo, new RecordItemIndex(19));
             repo.FrmVorbereitung.PbCommonStart.Click("28;6");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Wollen Sie wirklich für ALLE Läger eine Inventurvorbereitung') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Wollen Sie wirklich für ALLE Läger eine Inventurvorbereitung') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(20));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Wollen Sie wirklich für ALLE Läger eine Inventurvorbereitung");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(21));
             repo.DlgMessageBox.Button1.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorbereitung.LagerVon' at Center.", repo.FrmVorbereitung.LagerVonInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorbereitung.LagerVon' at Center.", repo.FrmVorbereitung.LagerVonInfo, new RecordItemIndex(22));
             repo.FrmVorbereitung.LagerVon.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{NumPad1}{NumPad0}{NumPad0}' with focus on 'FrmVorbereitung.LagerVon'.", repo.FrmVorbereitung.LagerVonInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{NumPad1}{NumPad0}{NumPad0}' with focus on 'FrmVorbereitung.LagerVon'.", repo.FrmVorbereitung.LagerVonInfo, new RecordItemIndex(23));
             repo.FrmVorbereitung.LagerVon.PressKeys("{NumPad1}{NumPad0}{NumPad0}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmVorbereitung.LagerVon'.", repo.FrmVorbereitung.LagerVonInfo, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmVorbereitung.LagerVon'.", repo.FrmVorbereitung.LagerVonInfo, new RecordItemIndex(24));
             repo.FrmVorbereitung.LagerVon.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorbereitung.PbCommonStart' at Center.", repo.FrmVorbereitung.PbCommonStartInfo, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorbereitung.PbCommonStart' at Center.", repo.FrmVorbereitung.PbCommonStartInfo, new RecordItemIndex(25));
             repo.FrmVorbereitung.PbCommonStart.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblInvVorschau.PbOk' at Center.", repo.TblInvVorschau.PbOkInfo, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblInvVorschau.PbOk' at Center.", repo.TblInvVorschau.PbOkInfo, new RecordItemIndex(26));
             repo.TblInvVorschau.PbOk.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Inventur wurde unter Nummer') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Inventur wurde unter Nummer') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(27));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Inventur wurde unter Nummer");
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'DlgMessageBox.LabelMeldungstext' and assigning the part of its value captured by '\\d' to variable 'Inventur_Nr'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'DlgMessageBox.LabelMeldungstext' and assigning the part of its value captured by '\\d' to variable 'Inventur_Nr'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(28));
             Inventur_Nr = repo.DlgMessageBox.LabelMeldungstext.Element.GetAttributeValueText("Text", new Regex("\\d"));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Inventur_Nr) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Inventur_Nr) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(29));
             Validate.AttributeRegex(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", new Regex(Inventur_Nr));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(27));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(30));
             repo.DlgMessageBox.Button0.Click();
             
         }

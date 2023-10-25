@@ -117,12 +117,13 @@ namespace V_FADR_001.Recordings
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.PbPruefen' at Center.", repo.DlgKeineFaktura.PbPruefenInfo, new RecordItemIndex(8));
             //repo.DlgKeineFaktura.PbPruefen.Click();
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='Einschränkung Rechnungsart ist nicht korrekt') on item 'DlgKeineFaktura.ColAktionRow1'.", repo.DlgKeineFaktura.ColAktionRow1Info, new RecordItemIndex(9));
-                Validate.AttributeEqual(repo.DlgKeineFaktura.ColAktionRow1Info, "Text", "Einschränkung Rechnungsart ist nicht korrekt", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Einschränkung Rechnungsart ist nicht korrekt') on item 'DlgKeineFaktura.ColAktionRow1'.", repo.DlgKeineFaktura.ColAktionRow1Info, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.DlgKeineFaktura.ColAktionRow1Info, "Text", "Einschränkung Rechnungsart ist nicht korrekt");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.Schliessen' at Center.", repo.DlgKeineFaktura.SchliessenInfo, new RecordItemIndex(10));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es wurden noch keine Positionen geliefert') on item 'DlgKeineFaktura.ColAktionRow1'.", repo.DlgKeineFaktura.ColAktionRow1Info, new RecordItemIndex(10));
+            //Validate.AttributeEqual(repo.DlgKeineFaktura.ColAktionRow1Info, "Text", "Es wurden noch keine Positionen geliefert");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.Schliessen' at Center.", repo.DlgKeineFaktura.SchliessenInfo, new RecordItemIndex(11));
             repo.DlgKeineFaktura.Schliessen.Click();
             
         }

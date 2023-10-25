@@ -107,16 +107,19 @@ namespace L_KMSM_002.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'TblKMSM.KoScheinNr'.", repo.TblKMSM.KoScheinNrInfo, new RecordItemIndex(4));
             repo.TblKMSM.KoScheinNr.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblKMSM.FlexGrid.Row1Column0' at Center.", repo.TblKMSM.FlexGrid.Row1Column0Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblKMSM.FlexGrid.Row1Column0'", repo.TblKMSM.FlexGrid.Row1Column0Info, new ActionTimeout(60000), new RecordItemIndex(5));
+            repo.TblKMSM.FlexGrid.Row1Column0Info.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblKMSM.FlexGrid.Row1Column0' at Center.", repo.TblKMSM.FlexGrid.Row1Column0Info, new RecordItemIndex(6));
             repo.TblKMSM.FlexGrid.Row1Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblKMSM.PbExtrasSplit' at Center.", repo.TblKMSM.PbExtrasSplitInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblKMSM.PbExtrasSplit' at Center.", repo.TblKMSM.PbExtrasSplitInfo, new RecordItemIndex(7));
             repo.TblKMSM.PbExtrasSplit.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'(Die Ist-Menge muss größer als 0 und kleiner als die Sollmenge sein!)|(Menge muss größer 0 und kleiner als Sollmenge sein)') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'(Die Ist-Menge muss größer als 0 und kleiner als die Sollmenge sein!)|(Menge muss größer 0 und kleiner als Sollmenge sein)') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(8));
             Validate.AttributeRegex(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", new Regex("(Die Ist-Menge muss größer als 0 und kleiner als die Sollmenge sein!)|(Menge muss größer 0 und kleiner als Sollmenge sein)"));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(9));
             repo.DlgMessageBox.Button0.Click();
             
         }
