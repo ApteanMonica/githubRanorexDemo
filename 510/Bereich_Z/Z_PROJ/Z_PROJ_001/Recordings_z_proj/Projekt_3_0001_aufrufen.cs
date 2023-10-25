@@ -93,11 +93,11 @@ namespace Z_PROJ_001.Recordings_z_proj
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmTabProjekt.TitleBar100ProjektVerwalten'.", repo.FrmTabProjekt.TitleBar100ProjektVerwaltenInfo, new RecordItemIndex(0));
             Validate.Exists(repo.FrmTabProjekt.TitleBar100ProjektVerwaltenInfo);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PROJ_NR_3_V' with focus on 'FrmTabProjekt.Suche.Text'.", repo.FrmTabProjekt.Suche.TextInfo, new RecordItemIndex(1));
-            repo.FrmTabProjekt.Suche.Text.PressKeys(PROJ_NR_3_V);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PROJ_NR_3_V' with focus on 'FrmTabProjekt.Text_Suchmaske'.", repo.FrmTabProjekt.Text_SuchmaskeInfo, new RecordItemIndex(1));
+            repo.FrmTabProjekt.Text_Suchmaske.PressKeys(PROJ_NR_3_V);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Suche.PbEdit' at Center.", repo.FrmTabProjekt.Suche.PbEditInfo, new RecordItemIndex(2));
-            repo.FrmTabProjekt.Suche.PbEdit.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.PbEdit_Suchmaske' at Center.", repo.FrmTabProjekt.PbEdit_SuchmaskeInfo, new RecordItemIndex(2));
+            repo.FrmTabProjekt.PbEdit_Suchmaske.Click();
             
         }
 

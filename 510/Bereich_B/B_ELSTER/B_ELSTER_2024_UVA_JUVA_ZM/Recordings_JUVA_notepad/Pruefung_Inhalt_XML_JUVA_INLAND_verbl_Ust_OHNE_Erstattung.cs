@@ -30,9 +30,9 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
     public partial class Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository repository.
+        /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
-        public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository.Instance;
+        public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
         static Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung instance = new Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung();
 
@@ -41,7 +41,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
         /// </summary>
         public Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung()
         {
-            XML_JUVA_2021_Berech_Ust = "";
+            XML_JUVA_VORJAHR_Berech_Ust = "";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 
 #region Variables
 
-        string _XML_JUVA_2021_Berech_Ust;
+        string _XML_JUVA_VORJAHR_Berech_Ust;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_JUVA_2021_Berech_Ust.
+        /// Gets or sets the value of variable XML_JUVA_VORJAHR_Berech_Ust.
         /// </summary>
         [TestVariable("9e4754b4-99fe-4033-9821-aa98e4991754")]
-        public string XML_JUVA_2021_Berech_Ust
+        public string XML_JUVA_VORJAHR_Berech_Ust
         {
-            get { return _XML_JUVA_2021_Berech_Ust; }
-            set { _XML_JUVA_2021_Berech_Ust = value; }
+            get { return _XML_JUVA_VORJAHR_Berech_Ust; }
+            set { _XML_JUVA_VORJAHR_Berech_Ust = value; }
         }
 
 #endregion
@@ -93,8 +93,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
             Init();
 
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_2021_Berech_Ust) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(0));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_JUVA_2021_Berech_Ust, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_JUVA_VORJAHR_Berech_Ust) on item 'XMLEditor_UVA_ZM8.Text15'.", repo.XMLEditor_UVA_ZM8.Text15Info, new RecordItemIndex(0));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM8.Text15Info, "Text", XML_JUVA_VORJAHR_Berech_Ust, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
         }

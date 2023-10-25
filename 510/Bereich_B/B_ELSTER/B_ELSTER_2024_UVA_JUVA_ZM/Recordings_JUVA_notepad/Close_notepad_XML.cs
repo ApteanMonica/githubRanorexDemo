@@ -30,9 +30,9 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
     public partial class Close_notepad_XML : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository repository.
+        /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
-        public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_005Repository.Instance;
+        public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
         static Close_notepad_XML instance = new Close_notepad_XML();
 
@@ -79,8 +79,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'XMLEditor_UVA_ZM.XMLEditor'.", repo.XMLEditor_UVA_ZM.XMLEditorInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.XMLEditor_UVA_ZM.XMLEditor, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'XMLEditor_UVA_ZM10.XMLEditor'.", repo.XMLEditor_UVA_ZM10.XMLEditorInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.XMLEditor_UVA_ZM10.XMLEditor, 1000);
             
         }
 
