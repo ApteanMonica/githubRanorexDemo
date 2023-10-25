@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="84dafa9b-db5f-4796-aa19-24d1ee018fb3"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseBrowser"
+	namespace="AEKOOE_001">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="5abdaf6e-3f00-4766-bd67-8106cfce4f01">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="da813e88-e1cf-4569-875b-328c5a9be540"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname='chrome']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="ea8dc27d-4b43-438c-bd14-00e352da043f"
+	name="AEKOOE_001Repository"
+	relativepath="AEKOOE_001Repository.rxrep">
+		<codegen
+		classname="AEKOOE_001Repository"
+		namespace="AEKOOE_001">
+		</codegen>
+		<rootfolder
+		id="fc975900-4291-493f-9350-c6707626f77d"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

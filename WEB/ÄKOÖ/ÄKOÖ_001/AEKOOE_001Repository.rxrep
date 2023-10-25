@@ -1,0 +1,130 @@
+﻿<repository
+id="ea8dc27d-4b43-438c-bd14-00e352da043f"
+name="AEKOOE_001Repository">
+	<codegen
+	classname="AEKOOE_001Repository"
+	namespace="AEKOOE_001">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="fc975900-4291-493f-9350-c6707626f77d"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="da813e88-e1cf-4569-875b-328c5a9be540"
+		isrooted="True"
+		name="ApplicationUnderTest"
+		searchtimeout="30000ms"
+		usecache="False">
+			<basepath>
+				/dom[@domain='http://192.168.192.139/521_SP12/#login']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="e1232ab5-2b86-4d28-a6fc-d7451804a17e"
+		isrooted="True"
+		name="Login"
+		refpath="/dom[@domain='192.168.192.139']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="baaf8e86-d9cd-470b-9b00-c4637169a98e"
+			name="PanelHeading"
+			refimgid="00263f45-192d-4bea-a49c-0793a99b991f"
+			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/div/div/div[2]/div/div[1]"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='192.168.192.139']//section[#'appModule']/div/div/div[2]/div/div[1]
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="38c0cfc1-4c35-45d6-b03f-5ad7eb7354c0"
+			name="Text_benutzer"
+			refimgid="744dbbd3-2a9b-40c1-b7c5-e2fa2f2e601d"
+			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/div/div/div[2]/div/div[2]/form[@action='http://192.168.192.139/521_SP12/#login']/fieldset/div/div/div[1]/div/input[@type='text']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='192.168.192.139']//section[#'appModule']/div/div/div[2]/div/div[2]/form[@action='http://192.168.192.139/521_SP12/#login']/fieldset/div/div/div[1]/?/?/input[@type='text']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="a703c90b-2828-4e06-a553-193923c90db0"
+			name="Password"
+			refimgid="091fe80b-51d5-45c8-9799-194cc7bac545"
+			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/div/div/div[2]/div/div[2]/form[@action='http://192.168.192.139/521_SP12/#login']/fieldset/div/div/div[2]/div/input[@type='password']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='192.168.192.139']//section[#'appModule']/div/div/div[2]/div/div[2]/form[@action='http://192.168.192.139/521_SP12/#login']/fieldset/div/div/div[2]/?/?/input[@type='password']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="94d766dc-0b5e-4ef6-a22e-1214dccf39a2"
+			name="LoginDataDb"
+			refimgid="16818b9e-87ac-4126-88b1-189e82de6ada"
+			refpath="/dom[@domain='192.168.192.139']//input[#'login-data-db']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='192.168.192.139']//input[#'login-data-db']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="d513ff3d-fb9d-4f2e-9c01-42c20dbb86b1"
+			name="LoginDataFirmnr"
+			refimgid="6665beb2-5047-4682-a575-4b7f9c92f1e9"
+			refpath="/dom[@domain='192.168.192.139']//input[#'login-data-firmnr']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='192.168.192.139']//input[#'login-data-firmnr']
+			</item>
+			<basepath>
+				/dom[@domain='192.168.192.139']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>
