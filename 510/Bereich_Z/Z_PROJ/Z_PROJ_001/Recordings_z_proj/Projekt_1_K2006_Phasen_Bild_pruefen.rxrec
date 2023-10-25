@@ -119,6 +119,15 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keysequenceitem
 		KeySequence="{LWin down}{Up}{LWin up}"
 		duration="20ms"
@@ -141,6 +150,15 @@ mode="Global">
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4046,6 +4064,41 @@ mode="Global">
 				</element>
 				<path>
 					/form[@controlname='frmTabProjekt']/?/?/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Reload']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Move"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="LowerCenter"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="fe14be1f-4446-4af9-98e5-6e04167b48d2"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6a0e9595-d04a-49af-9b5c-f5d9375ffabd"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmTabProjekt']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpPhase']/container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
 				</path>
 				<robustPath>
 				</robustPath>
