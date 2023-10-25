@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="54b00635-55c2-481d-aed8-883fd0348a20"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenBrowser"
+	namespace="AEKOOE_001">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<openwebsiterecorditem
+		args=""
+		browser="chrome"
+		clearcache="False"
+		clearcodecache="False"
+		clearcookies="False"
+		clearserviceworker="False"
+		enabled="True"
+		incognito="False"
+		instrument="True"
+		killexisting="False"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<url>
+				http://192.168.192.139/521_SP12/#login
+			</url>
+		</openwebsiterecorditem>
+	</recorditems>
+	<repository
+	id="ea8dc27d-4b43-438c-bd14-00e352da043f"
+	name="AEKOOE_001Repository"
+	relativepath="AEKOOE_001Repository.rxrep">
+		<codegen
+		classname="AEKOOE_001Repository"
+		namespace="AEKOOE_001">
+		</codegen>
+		<rootfolder
+		id="fc975900-4291-493f-9350-c6707626f77d"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
