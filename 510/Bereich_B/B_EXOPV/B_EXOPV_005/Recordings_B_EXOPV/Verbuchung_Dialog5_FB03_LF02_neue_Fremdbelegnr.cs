@@ -141,28 +141,34 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr' at Center.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(6));
             repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr' at Center.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(7));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr' at Center.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(8));
             repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(9));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(10));
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(10));
-            Delay.Duration(1000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(11));
+            Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$FB03_LF02_NEU' with focus on 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$FB03_LF02_NEU' with focus on 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(12));
             repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr.PressKeys(FB03_LF02_NEU);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(13));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(14));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FB03_LF02_NEU) on item 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FB03_LF02_NEU) on item 'DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNr'.", repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.DlgFremdbelegnrFehler.Frame2.NeueFremdbelegNrInfo, "Text", FB03_LF02_NEU);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFremdbelegnrFehler.PbOk' at Center.", repo.DlgFremdbelegnrFehler.PbOkInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgFremdbelegnrFehler.PbOk' at Center.", repo.DlgFremdbelegnrFehler.PbOkInfo, new RecordItemIndex(16));
             repo.DlgFremdbelegnrFehler.PbOk.Click();
             
         }

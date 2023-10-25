@@ -139,7 +139,6 @@ namespace L_KMSM_002
             RepoItemInfo _koscheinnrInfo;
             RepoItemInfo _pbextrassplitInfo;
             RepoItemInfo _pbdataaccesssaveInfo;
-            RepoItemInfo _sometextInfo;
 
             /// <summary>
             /// Creates a new TblKMSM  folder.
@@ -153,7 +152,6 @@ namespace L_KMSM_002
                 _koscheinnrInfo = new RepoItemInfo(this, "KoScheinNr", "container[@controlname='ToolBar']//text[@accessiblename='Ko-schein-Nr.']", "", 30000, null, "48af20a6-0b69-4e2c-b854-9a5558d635cc");
                 _pbextrassplitInfo = new RepoItemInfo(this, "PbExtrasSplit", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbExtras_Split']", "", 30000, null, "bb14592d-c352-4341-bf77-0b7a5ceb54b1");
                 _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Save']", "", 30000, null, "151f8562-d7bd-469e-9a96-c13cea5d240f");
-                _sometextInfo = new RepoItemInfo(this, "SomeText", "container[@controlname='ChildTableWindow']/?/?/text[@controltypename='']", "", 30000, null, "278817ba-8098-4daf-a989-d7b816a0e17d");
             }
 
             /// <summary>
@@ -301,30 +299,6 @@ namespace L_KMSM_002
             }
 
             /// <summary>
-            /// The SomeText item.
-            /// </summary>
-            [RepositoryItem("278817ba-8098-4daf-a989-d7b816a0e17d")]
-            public virtual Ranorex.Text SomeText
-            {
-                get
-                {
-                    return _sometextInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SomeText item info.
-            /// </summary>
-            [RepositoryItemInfo("278817ba-8098-4daf-a989-d7b816a0e17d")]
-            public virtual RepoItemInfo SomeTextInfo
-            {
-                get
-                {
-                    return _sometextInfo;
-                }
-            }
-
-            /// <summary>
             /// The FlexGrid folder.
             /// </summary>
             [RepositoryFolder("6e343ea4-ed60-4a97-ac10-438eb878a073")]
@@ -352,6 +326,7 @@ namespace L_KMSM_002
             RepoItemInfo _colkmspmgistrow5Info;
             RepoItemInfo _colzuteilungrow6Info;
             RepoItemInfo _colkmspmgistrow6Info;
+            RepoItemInfo _collgpbchgnrrow3Info;
             RepoItemInfo _collgpbchgnrrow4Info;
 
             /// <summary>
@@ -360,19 +335,20 @@ namespace L_KMSM_002
             public FlexGridFolder(RepoGenBaseFolder parentFolder) :
                     base("FlexGrid", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "6e343ea4-ed60-4a97-ac10-438eb878a073", "")
             {
-                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "?/?/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "eafe51ab-bb68-48ac-8eeb-0df85127172e");
-                _row3column0Info = new RepoItemInfo(this, "Row3Column0", "?/?/cell[@accessiblename='Row 3 Column 0']", "", 30000, null, "cee60bdf-5379-4d0a-abe1-f2b8dcda9ab6");
-                _colkmspmgistrow1Info = new RepoItemInfo(this, "ColKmspMgistRow1", "?/?/cell[@accessiblename='colKmsp_mgist Row 1']", "", 30000, null, "6541bd71-14b7-424a-8b43-af5da17def57");
-                _colkmspmgistrow2Info = new RepoItemInfo(this, "ColKmspMgistRow2", "?/?/cell[@accessiblename='colKmsp_mgist Row 2']", "", 30000, null, "c3af5adb-c635-4d7e-9c9a-05e7485d4ea5");
-                _colzuteilungrow2Info = new RepoItemInfo(this, "ColZuteilungRow2", "?/?/cell[@accessiblename='colZuteilung Row 2']", "", 30000, null, "3bfbddbd-bd5e-4bbf-9ef8-fdc81f5c521b");
-                _colkmspmgistrow3Info = new RepoItemInfo(this, "ColKmspMgistRow3", "?/?/cell[@accessiblename='colKmsp_mgist Row 3']", "", 30000, null, "ede990c1-0655-4676-8f0a-93c927d9aa08");
-                _colzuteilungrow4Info = new RepoItemInfo(this, "ColZuteilungRow4", "?/?/cell[@accessiblename='colZuteilung Row 4']", "", 30000, null, "e0e8fd12-ceaa-4d5f-a89f-5eceab5d9317");
-                _colkmspmgistrow4Info = new RepoItemInfo(this, "ColKmspMgistRow4", "?/?/cell[@accessiblename='colKmsp_mgist Row 4']", "", 30000, null, "e9e599d9-8026-4697-b106-3dfef005079a");
-                _row5column0Info = new RepoItemInfo(this, "Row5Column0", "?/?/cell[@accessiblename='Row 5 Column 0']", "", 30000, null, "0cb2f4aa-bd32-4009-9246-fa36ea082205");
-                _colkmspmgistrow5Info = new RepoItemInfo(this, "ColKmspMgistRow5", "?/?/cell[@accessiblename='colKmsp_mgist Row 5']", "", 30000, null, "98767433-88b6-41b8-9ec9-9cc8a39a56c9");
-                _colzuteilungrow6Info = new RepoItemInfo(this, "ColZuteilungRow6", "?/?/cell[@accessiblename='colZuteilung Row 6']", "", 30000, null, "41934213-baed-4924-95cf-c0b1e09b61ef");
-                _colkmspmgistrow6Info = new RepoItemInfo(this, "ColKmspMgistRow6", "?/?/cell[@accessiblename='colKmsp_mgist Row 6']", "", 30000, null, "1a1ab205-afb0-4ee5-8acf-13a7b3debb89");
-                _collgpbchgnrrow4Info = new RepoItemInfo(this, "ColLgpbChgnrRow4", "?/?/cell[@accessiblename='colLgpb_chgnr Row 4']", "", 30000, null, "144076a3-4da5-40e9-8d5c-050508f78719");
+                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "eafe51ab-bb68-48ac-8eeb-0df85127172e");
+                _row3column0Info = new RepoItemInfo(this, "Row3Column0", "row[@accessiblename='Row 3']/cell[@accessiblename='Row 3 Column 0']", "", 30000, null, "cee60bdf-5379-4d0a-abe1-f2b8dcda9ab6");
+                _colkmspmgistrow1Info = new RepoItemInfo(this, "ColKmspMgistRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colKmsp_mgist Row 1']", "", 30000, null, "6541bd71-14b7-424a-8b43-af5da17def57");
+                _colkmspmgistrow2Info = new RepoItemInfo(this, "ColKmspMgistRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colKmsp_mgist Row 2']", "", 30000, null, "c3af5adb-c635-4d7e-9c9a-05e7485d4ea5");
+                _colzuteilungrow2Info = new RepoItemInfo(this, "ColZuteilungRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colZuteilung Row 2']", "", 30000, null, "3bfbddbd-bd5e-4bbf-9ef8-fdc81f5c521b");
+                _colkmspmgistrow3Info = new RepoItemInfo(this, "ColKmspMgistRow3", "row[@accessiblename='Row 3']/cell[@accessiblename='colKmsp_mgist Row 3']", "", 30000, null, "ede990c1-0655-4676-8f0a-93c927d9aa08");
+                _colzuteilungrow4Info = new RepoItemInfo(this, "ColZuteilungRow4", "row[@accessiblename='Row 4']/cell[@accessiblename='colZuteilung Row 4']", "", 30000, null, "e0e8fd12-ceaa-4d5f-a89f-5eceab5d9317");
+                _colkmspmgistrow4Info = new RepoItemInfo(this, "ColKmspMgistRow4", "row[@accessiblename='Row 4']/cell[@accessiblename='colKmsp_mgist Row 4']", "", 30000, null, "e9e599d9-8026-4697-b106-3dfef005079a");
+                _row5column0Info = new RepoItemInfo(this, "Row5Column0", "row[@accessiblename='Row 5']/cell[@accessiblename='Row 5 Column 0']", "", 30000, null, "0cb2f4aa-bd32-4009-9246-fa36ea082205");
+                _colkmspmgistrow5Info = new RepoItemInfo(this, "ColKmspMgistRow5", "row[@accessiblename='Row 5']/cell[@accessiblename='colKmsp_mgist Row 5']", "", 30000, null, "98767433-88b6-41b8-9ec9-9cc8a39a56c9");
+                _colzuteilungrow6Info = new RepoItemInfo(this, "ColZuteilungRow6", "row[@accessiblename='Row 6']/cell[@accessiblename='colZuteilung Row 6']", "", 30000, null, "41934213-baed-4924-95cf-c0b1e09b61ef");
+                _colkmspmgistrow6Info = new RepoItemInfo(this, "ColKmspMgistRow6", "row[@accessiblename='Row 6']/cell[@accessiblename='colKmsp_mgist Row 6']", "", 30000, null, "1a1ab205-afb0-4ee5-8acf-13a7b3debb89");
+                _collgpbchgnrrow3Info = new RepoItemInfo(this, "ColLgpbChgnrRow3", "row[@accessiblename='Row 3']/cell[@accessiblename='colLgpb_chgnr Row 3']", "", 30000, null, "830648aa-f03e-4f23-b073-b57a9d772b2d");
+                _collgpbchgnrrow4Info = new RepoItemInfo(this, "ColLgpbChgnrRow4", "row[@accessiblename='Row 4']/cell[@accessiblename='colLgpb_chgnr Row 4']", "", 30000, null, "144076a3-4da5-40e9-8d5c-050508f78719");
             }
 
             /// <summary>
@@ -684,6 +660,30 @@ namespace L_KMSM_002
                 get
                 {
                     return _colkmspmgistrow6Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColLgpbChgnrRow3 item.
+            /// </summary>
+            [RepositoryItem("830648aa-f03e-4f23-b073-b57a9d772b2d")]
+            public virtual Ranorex.Cell ColLgpbChgnrRow3
+            {
+                get
+                {
+                    return _collgpbchgnrrow3Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColLgpbChgnrRow3 item info.
+            /// </summary>
+            [RepositoryItemInfo("830648aa-f03e-4f23-b073-b57a9d772b2d")]
+            public virtual RepoItemInfo ColLgpbChgnrRow3Info
+            {
+                get
+                {
+                    return _collgpbchgnrrow3Info;
                 }
             }
 

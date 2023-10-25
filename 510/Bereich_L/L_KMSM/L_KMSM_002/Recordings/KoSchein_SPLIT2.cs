@@ -142,17 +142,17 @@ namespace L_KMSM_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(19));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblKMSM.SomeText' at Center.", repo.TblKMSM.SomeTextInfo, new RecordItemIndex(20));
-            repo.TblKMSM.SomeText.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblKMSM.FlexGrid.ColLgpbChgnrRow3' at Center.", repo.TblKMSM.FlexGrid.ColLgpbChgnrRow3Info, new RecordItemIndex(20));
+            repo.TblKMSM.FlexGrid.ColLgpbChgnrRow3.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'B' with focus on 'TblKMSM.SomeText'.", repo.TblKMSM.SomeTextInfo, new RecordItemIndex(21));
-            repo.TblKMSM.SomeText.PressKeys("B");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'B' with focus on 'TblKMSM.FlexGrid.ColLgpbChgnrRow3'.", repo.TblKMSM.FlexGrid.ColLgpbChgnrRow3Info, new RecordItemIndex(21));
+            repo.TblKMSM.FlexGrid.ColLgpbChgnrRow3.PressKeys("B");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblKMSM.FlexGrid.ColLgpbChgnrRow4' at Center.", repo.TblKMSM.FlexGrid.ColLgpbChgnrRow4Info, new RecordItemIndex(22));
             repo.TblKMSM.FlexGrid.ColLgpbChgnrRow4.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'B' with focus on 'TblKMSM.SomeText'.", repo.TblKMSM.SomeTextInfo, new RecordItemIndex(23));
-            repo.TblKMSM.SomeText.PressKeys("B");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'B' with focus on 'TblKMSM.FlexGrid.ColLgpbChgnrRow4'.", repo.TblKMSM.FlexGrid.ColLgpbChgnrRow4Info, new RecordItemIndex(23));
+            repo.TblKMSM.FlexGrid.ColLgpbChgnrRow4.PressKeys("B");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblKMSM.PbDataAccessSave' at Center.", repo.TblKMSM.PbDataAccessSaveInfo, new RecordItemIndex(24));
             repo.TblKMSM.PbDataAccessSave.Click();

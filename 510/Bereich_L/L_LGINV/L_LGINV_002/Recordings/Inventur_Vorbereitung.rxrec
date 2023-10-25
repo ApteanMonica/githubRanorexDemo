@@ -4478,6 +4478,35 @@ AooooAKKKKACiiigAooqtI8sL7QQwc/LntQBZopsasqAM249zTqACiiigAooooAKKKKACiiigD//
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ac9363a7-9a5f-4d1b-a32b-008b7be668bd">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="ArtikelnummerVon">
+				</binding>
+			</bindings>
+			<info
+			id="8506b84f-833a-49af-93a9-b5a663635dfe"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmVorbereitung']/?/?/container[@controlname='groupBox1']/?/?/text[@accessiblename='Von']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4758,6 +4787,59 @@ wOnFNK7A/9k=
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ac9363a7-9a5f-4d1b-a32b-008b7be668bd">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="ArtikelnummerBis">
+				</binding>
+			</bindings>
+			<info
+			id="7dcce94e-7c17-4d92-9f00-68ff568c18d6"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="2115,423,123,17"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmVorbereitung']/?/?/container[@controlname='groupBox1']/?/?/text[@accessiblename='Bis']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4869,7 +4951,7 @@ r/dH5UbV/uj8qAFopNq/3R+VG1f7o/KgBaKTav8AdH5UUAf/2Q==
 		<keysequenceitem
 		KeySequence="{NumPad5}"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="0146547c-b81b-4c4b-9082-de5140c11578">
@@ -4924,6 +5006,67 @@ r/dH5UbV/uj8qAFopNq/3R+VG1f7o/KgBaKTav8AdH5UUAf/2Q==
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="D5"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="c2b92f25-9654-49bc-8337-bc55515934fb"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="dd6a489b-699d-4a4c-b402-730179561a4d"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="2655,598,47,17"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Die am längsten nicht gezählten
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Text
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmVorbereitung']/?/?/container[@controlname='groupBox3']/?/?/text[@accessiblename&gt;'Die am l&#228;ngsten nicht gez']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keyitem>
 		<keysequenceitem
 		KeySequence="{Tab}"
 		duration="20ms"

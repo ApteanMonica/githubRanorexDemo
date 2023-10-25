@@ -139,28 +139,34 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgBelegnrFehler.Frame2.NeueBelegNr' at Center.", repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, new RecordItemIndex(6));
             repo.DlgBelegnrFehler.Frame2.NeueBelegNr.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgBelegnrFehler.Frame2.NeueBelegNr' at Center.", repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(7));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgBelegnrFehler.Frame2.NeueBelegNr' at Center.", repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, new RecordItemIndex(8));
             repo.DlgBelegnrFehler.Frame2.NeueBelegNr.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(9));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(10));
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(10));
-            Delay.Duration(1000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(11));
+            Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ER03_LF02_NEU' with focus on 'DlgBelegnrFehler.Frame2.NeueBelegNr'.", repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$ER03_LF02_NEU' with focus on 'DlgBelegnrFehler.Frame2.NeueBelegNr'.", repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, new RecordItemIndex(12));
             repo.DlgBelegnrFehler.Frame2.NeueBelegNr.PressKeys(ER03_LF02_NEU);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(13));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(14));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER03_LF02_NEU) on item 'DlgBelegnrFehler.Frame2.NeueBelegNr'.", repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ER03_LF02_NEU) on item 'DlgBelegnrFehler.Frame2.NeueBelegNr'.", repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.DlgBelegnrFehler.Frame2.NeueBelegNrInfo, "Text", ER03_LF02_NEU);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgBelegnrFehler.PbOk' at Center.", repo.DlgBelegnrFehler.PbOkInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgBelegnrFehler.PbOk' at Center.", repo.DlgBelegnrFehler.PbOkInfo, new RecordItemIndex(16));
             repo.DlgBelegnrFehler.PbOk.Click();
             
         }
