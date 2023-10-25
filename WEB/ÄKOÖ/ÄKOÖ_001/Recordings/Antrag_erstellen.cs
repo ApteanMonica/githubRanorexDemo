@@ -24,29 +24,29 @@ namespace AEKOOE_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The WEB_LOGIN recording.
+    ///The Antrag_erstellen recording.
     /// </summary>
-    [TestModule("e156141f-9cd2-40b2-9a46-2a5e147ea068", ModuleType.Recording, 1)]
-    public partial class WEB_LOGIN : ITestModule
+    [TestModule("c1fc7f03-4be8-4d0a-96ba-9449c089f93c", ModuleType.Recording, 1)]
+    public partial class Antrag_erstellen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::AEKOOE_001.AEKOOE_001Repository repository.
         /// </summary>
         public static global::AEKOOE_001.AEKOOE_001Repository repo = global::AEKOOE_001.AEKOOE_001Repository.Instance;
 
-        static WEB_LOGIN instance = new WEB_LOGIN();
+        static Antrag_erstellen instance = new Antrag_erstellen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public WEB_LOGIN()
+        public Antrag_erstellen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static WEB_LOGIN Instance
+        public static Antrag_erstellen Instance
         {
             get { return instance; }
         }
@@ -79,29 +79,20 @@ namespace AEKOOE_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.PanelHeading'", repo.Login.PanelHeadingInfo, new ActionTimeout(120000), new RecordItemIndex(0));
-            repo.Login.PanelHeadingInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.Card1_Button_Antraege_' at Center.", repo.Login.Card1_Button_Antraege_Info, new RecordItemIndex(0));
+            repo.Login.Card1_Button_Antraege_.Click();
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='') on item 'Login.PanelHeading'.", repo.Login.PanelHeadingInfo, new RecordItemIndex(1));
-            //Validate.AttributeEqual(repo.Login.PanelHeadingInfo, "InnerText", "");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.SomeH2Tag'", repo.Login.SomeH2TagInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.Login.SomeH2TagInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'rs{Tab}' with focus on 'Login.Text_benutzer'.", repo.Login.Text_benutzerInfo, new RecordItemIndex(2));
-            repo.Login.Text_benutzer.PressKeys("rs{Tab}");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.ButtonTagBtn_Neu' at Center.", repo.Login.ButtonTagBtn_NeuInfo, new RecordItemIndex(2));
+            repo.Login.ButtonTagBtn_Neu.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'rsc{Tab}' with focus on 'Login.Password'.", repo.Login.PasswordInfo, new RecordItemIndex(3));
-            repo.Login.Password.PressKeys("rsc{Tab}");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.Antragskategorie'", repo.Login.AntragskategorieInfo, new ActionTimeout(120000), new RecordItemIndex(3));
+            repo.Login.AntragskategorieInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'k.aeko{Tab}' with focus on 'Login.LoginDataDb'.", repo.Login.LoginDataDbInfo, new RecordItemIndex(4));
-            repo.Login.LoginDataDb.PressKeys("k.aeko{Tab}");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'WFK{Tab}' with focus on 'Login.LoginDataFirmnr'.", repo.Login.LoginDataFirmnrInfo, new RecordItemIndex(5));
-            repo.Login.LoginDataFirmnr.PressKeys("WFK{Tab}");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.Anmelden' at Center.", repo.Login.AnmeldenInfo, new RecordItemIndex(6));
-            repo.Login.Anmelden.Click();
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.Card_Button_Stammdaten'", repo.Login.Card_Button_StammdatenInfo, new ActionTimeout(120000), new RecordItemIndex(7));
-            repo.Login.Card_Button_StammdatenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Antragskategorie') on item 'Login.Antragskategorie'.", repo.Login.AntragskategorieInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.Login.AntragskategorieInfo, "InnerText", "Antragskategorie");
             
         }
 

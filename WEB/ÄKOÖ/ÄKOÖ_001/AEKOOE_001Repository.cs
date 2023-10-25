@@ -141,6 +141,16 @@ namespace AEKOOE_001
             RepoItemInfo _passwordInfo;
             RepoItemInfo _logindatadbInfo;
             RepoItemInfo _logindatafirmnrInfo;
+            RepoItemInfo _anmeldenInfo;
+            RepoItemInfo _http192168192139521sp12hashhomeInfo;
+            RepoItemInfo _card_button_stammdatenInfo;
+            RepoItemInfo _card1_button_antraege_Info;
+            RepoItemInfo _someh2tagInfo;
+            RepoItemInfo _buttontagbtn_neuInfo;
+            RepoItemInfo _antragskategorieInfo;
+            RepoItemInfo _kinput_ebenenInfo;
+            RepoItemInfo _buttontagneuInfo;
+            RepoItemInfo _alertalertinfoInfo;
 
             /// <summary>
             /// Creates a new Login  folder.
@@ -153,6 +163,16 @@ namespace AEKOOE_001
                 _passwordInfo = new RepoItemInfo(this, "Password", ".//section[#'appModule']/div/div/div[2]/div/div[2]/form[@action='http://192.168.192.139/521_SP12/#login']/fieldset/div/div/div[2]/?/?/input[@type='password']", "", 30000, null, "a703c90b-2828-4e06-a553-193923c90db0");
                 _logindatadbInfo = new RepoItemInfo(this, "LoginDataDb", ".//input[#'login-data-db']", "", 30000, null, "94d766dc-0b5e-4ef6-a22e-1214dccf39a2");
                 _logindatafirmnrInfo = new RepoItemInfo(this, "LoginDataFirmnr", ".//input[#'login-data-firmnr']", "", 30000, null, "d513ff3d-fb9d-4f2e-9c01-42c20dbb86b1");
+                _anmeldenInfo = new RepoItemInfo(this, "Anmelden", ".//section[#'appModule']/div/div/div[2]/div/div[2]/form[@action='http://192.168.192.139/521_SP12/#login']/fieldset/div/div/div[6]/button[@innertext='Anmelden']", "", 30000, null, "5d32d4dc-b15d-40db-a75f-6e07cd6a7580");
+                _http192168192139521sp12hashhomeInfo = new RepoItemInfo(this, "Http192168192139521SP12Hashhome", ".//section[#'layout-spa']/header/?/?/nav/div[1]//a[@href>'http://192.168.192.139/52']", "", 30000, null, "541b0ae4-b65a-4412-b023-61a7b8ba07fb");
+                _card_button_stammdatenInfo = new RepoItemInfo(this, "Card_Button_Stammdaten", ".//div[#'widget-info']/div/tag/div/div[2]/div/div[1]/?/?/div/span/a[1]/div", "", 30000, null, "782220c7-1531-4b8e-9d89-9b719b32dd1e");
+                _card1_button_antraege_Info = new RepoItemInfo(this, "Card1_Button_Antraege_", ".//div[#'widget-info']/div/tag/div/div[2]/div/div[1]/?/?/div/span/a[2]/div", "", 30000, null, "7d58ef25-2f08-4790-bc34-54e9766f75e9");
+                _someh2tagInfo = new RepoItemInfo(this, "SomeH2Tag", ".//section[#'appModule']/section//h2", "", 30000, null, "a7a134a6-3306-4223-af79-0e8f5de0fdda");
+                _buttontagbtn_neuInfo = new RepoItemInfo(this, "ButtonTagBtn_Neu", ".//section[#'appModule']/section/div[1]/?/?/table//button", "", 30000, null, "b8e59893-cebe-4743-9b62-ca8dae4fee5e");
+                _antragskategorieInfo = new RepoItemInfo(this, "Antragskategorie", ".//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[1]/h4[@innertext='Antragskategorie']", "", 30000, null, "374cfcbe-bdb1-421b-a888-4e7322b7c93c");
+                _kinput_ebenenInfo = new RepoItemInfo(this, "KInput_Ebenen", ".//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div/div[2]/span/span/span[1]", "", 30000, null, "817bc8b5-a5ad-4c9f-a053-e4c45db06b9f");
+                _buttontagneuInfo = new RepoItemInfo(this, "ButtonTagNeu", ".//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[3]/button[@innertext='Neu']", "", 30000, null, "fbf3ce06-3774-4b36-8376-5d678806f84c");
+                _alertalertinfoInfo = new RepoItemInfo(this, "AlertAlertInfo", ".//div[#'panel-request']/div[2]/div[1]/div[1]/div", "", 30000, null, "bc8c0e90-1a09-4fd5-865c-4df73e785745");
             }
 
             /// <summary>
@@ -296,6 +316,246 @@ namespace AEKOOE_001
                 get
                 {
                     return _logindatafirmnrInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Anmelden item.
+            /// </summary>
+            [RepositoryItem("5d32d4dc-b15d-40db-a75f-6e07cd6a7580")]
+            public virtual Ranorex.ButtonTag Anmelden
+            {
+                get
+                {
+                    return _anmeldenInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Anmelden item info.
+            /// </summary>
+            [RepositoryItemInfo("5d32d4dc-b15d-40db-a75f-6e07cd6a7580")]
+            public virtual RepoItemInfo AnmeldenInfo
+            {
+                get
+                {
+                    return _anmeldenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Http192168192139521SP12Hashhome item.
+            /// </summary>
+            [RepositoryItem("541b0ae4-b65a-4412-b023-61a7b8ba07fb")]
+            public virtual Ranorex.ATag Http192168192139521SP12Hashhome
+            {
+                get
+                {
+                    return _http192168192139521sp12hashhomeInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Http192168192139521SP12Hashhome item info.
+            /// </summary>
+            [RepositoryItemInfo("541b0ae4-b65a-4412-b023-61a7b8ba07fb")]
+            public virtual RepoItemInfo Http192168192139521SP12HashhomeInfo
+            {
+                get
+                {
+                    return _http192168192139521sp12hashhomeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Card_Button_Stammdaten item.
+            /// </summary>
+            [RepositoryItem("782220c7-1531-4b8e-9d89-9b719b32dd1e")]
+            public virtual Ranorex.DivTag Card_Button_Stammdaten
+            {
+                get
+                {
+                    return _card_button_stammdatenInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Card_Button_Stammdaten item info.
+            /// </summary>
+            [RepositoryItemInfo("782220c7-1531-4b8e-9d89-9b719b32dd1e")]
+            public virtual RepoItemInfo Card_Button_StammdatenInfo
+            {
+                get
+                {
+                    return _card_button_stammdatenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Card1_Button_Antraege_ item.
+            /// </summary>
+            [RepositoryItem("7d58ef25-2f08-4790-bc34-54e9766f75e9")]
+            public virtual Ranorex.DivTag Card1_Button_Antraege_
+            {
+                get
+                {
+                    return _card1_button_antraege_Info.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Card1_Button_Antraege_ item info.
+            /// </summary>
+            [RepositoryItemInfo("7d58ef25-2f08-4790-bc34-54e9766f75e9")]
+            public virtual RepoItemInfo Card1_Button_Antraege_Info
+            {
+                get
+                {
+                    return _card1_button_antraege_Info;
+                }
+            }
+
+            /// <summary>
+            /// The SomeH2Tag item.
+            /// </summary>
+            [RepositoryItem("a7a134a6-3306-4223-af79-0e8f5de0fdda")]
+            public virtual Ranorex.H2Tag SomeH2Tag
+            {
+                get
+                {
+                    return _someh2tagInfo.CreateAdapter<Ranorex.H2Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SomeH2Tag item info.
+            /// </summary>
+            [RepositoryItemInfo("a7a134a6-3306-4223-af79-0e8f5de0fdda")]
+            public virtual RepoItemInfo SomeH2TagInfo
+            {
+                get
+                {
+                    return _someh2tagInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonTagBtn_Neu item.
+            /// </summary>
+            [RepositoryItem("b8e59893-cebe-4743-9b62-ca8dae4fee5e")]
+            public virtual Ranorex.ButtonTag ButtonTagBtn_Neu
+            {
+                get
+                {
+                    return _buttontagbtn_neuInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonTagBtn_Neu item info.
+            /// </summary>
+            [RepositoryItemInfo("b8e59893-cebe-4743-9b62-ca8dae4fee5e")]
+            public virtual RepoItemInfo ButtonTagBtn_NeuInfo
+            {
+                get
+                {
+                    return _buttontagbtn_neuInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Antragskategorie item.
+            /// </summary>
+            [RepositoryItem("374cfcbe-bdb1-421b-a888-4e7322b7c93c")]
+            public virtual Ranorex.H4Tag Antragskategorie
+            {
+                get
+                {
+                    return _antragskategorieInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Antragskategorie item info.
+            /// </summary>
+            [RepositoryItemInfo("374cfcbe-bdb1-421b-a888-4e7322b7c93c")]
+            public virtual RepoItemInfo AntragskategorieInfo
+            {
+                get
+                {
+                    return _antragskategorieInfo;
+                }
+            }
+
+            /// <summary>
+            /// The KInput_Ebenen item.
+            /// </summary>
+            [RepositoryItem("817bc8b5-a5ad-4c9f-a053-e4c45db06b9f")]
+            public virtual Ranorex.SpanTag KInput_Ebenen
+            {
+                get
+                {
+                    return _kinput_ebenenInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The KInput_Ebenen item info.
+            /// </summary>
+            [RepositoryItemInfo("817bc8b5-a5ad-4c9f-a053-e4c45db06b9f")]
+            public virtual RepoItemInfo KInput_EbenenInfo
+            {
+                get
+                {
+                    return _kinput_ebenenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonTagNeu item.
+            /// </summary>
+            [RepositoryItem("fbf3ce06-3774-4b36-8376-5d678806f84c")]
+            public virtual Ranorex.ButtonTag ButtonTagNeu
+            {
+                get
+                {
+                    return _buttontagneuInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonTagNeu item info.
+            /// </summary>
+            [RepositoryItemInfo("fbf3ce06-3774-4b36-8376-5d678806f84c")]
+            public virtual RepoItemInfo ButtonTagNeuInfo
+            {
+                get
+                {
+                    return _buttontagneuInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AlertAlertInfo item.
+            /// </summary>
+            [RepositoryItem("bc8c0e90-1a09-4fd5-865c-4df73e785745")]
+            public virtual Ranorex.DivTag AlertAlertInfo
+            {
+                get
+                {
+                    return _alertalertinfoInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AlertAlertInfo item info.
+            /// </summary>
+            [RepositoryItemInfo("bc8c0e90-1a09-4fd5-865c-4df73e785745")]
+            public virtual RepoItemInfo AlertAlertInfoInfo
+            {
+                get
+                {
+                    return _alertalertinfoInfo;
                 }
             }
         }

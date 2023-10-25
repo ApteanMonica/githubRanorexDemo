@@ -13,6 +13,7 @@
     <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
     <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>19abdcd8-b0fe-483b-8b80-6d898afae252</projectdefaultrepository>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -114,6 +115,42 @@
     <Compile Include="Program.cs">
       <id>8fd9c6cd-a41c-4ff2-8941-1d6ccb46705c</id>
     </Compile>
+    <Compile Include="Recordings\Antrag_erstellen.cs">
+      <BoundTo>8da8ceed-d863-40c7-be18-0da3fd2a7d08</BoundTo>
+      <DependentUpon>Antrag_erstellen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a4bd1aa0-7383-40e1-ba4c-976b463ff2a7</id>
+    </Compile>
+    <Compile Include="Recordings\Antrag_erstellen.UserCode.cs">
+      <BoundTo>8da8ceed-d863-40c7-be18-0da3fd2a7d08</BoundTo>
+      <DependentUpon>Antrag_erstellen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ed6181b2-57df-4284-bd10-a3110748d991</id>
+    </Compile>
+    <Compile Include="Recordings\Auswahl_Ebenen.cs">
+      <BoundTo>88a84bd7-b1df-4a43-992e-e1d582f99bc7</BoundTo>
+      <DependentUpon>Auswahl_Ebenen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>37697b43-0b46-4a8c-833e-01dd26ec904c</id>
+    </Compile>
+    <Compile Include="Recordings\Auswahl_Ebenen.UserCode.cs">
+      <BoundTo>88a84bd7-b1df-4a43-992e-e1d582f99bc7</BoundTo>
+      <DependentUpon>Auswahl_Ebenen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>560135f0-75fb-4c02-8ea1-23ef1cddfc55</id>
+    </Compile>
+    <Compile Include="Recordings\Daten_eingeben.cs">
+      <BoundTo>fba860d2-f7ea-462a-b56a-2bc82766d8b1</BoundTo>
+      <DependentUpon>Daten_eingeben.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7c97e7c4-26d3-4f59-89b2-f1fbffc9f685</id>
+    </Compile>
+    <Compile Include="Recordings\Daten_eingeben.UserCode.cs">
+      <BoundTo>fba860d2-f7ea-462a-b56a-2bc82766d8b1</BoundTo>
+      <DependentUpon>Daten_eingeben.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1376e36f-d26b-4c13-a969-b8ea7a93220f</id>
+    </Compile>
     <Compile Include="Recordings\WEB_LOGIN.cs">
       <BoundTo>2065862e-0156-46c5-ab66-cbba44efe6c3</BoundTo>
       <DependentUpon>WEB_LOGIN.rxrec</DependentUpon>
@@ -151,6 +188,21 @@
       <BoundTo>19abdcd8-b0fe-483b-8b80-6d898afae252</BoundTo>
       <id>755b91ba-2581-4554-99ec-86c5f02becbb</id>
       <recordtableid>54b00635-55c2-481d-aed8-883fd0348a20</recordtableid>
+    </None>
+    <None Include="Recordings\Antrag_erstellen.rxrec">
+      <BoundTo>19abdcd8-b0fe-483b-8b80-6d898afae252</BoundTo>
+      <id>8da8ceed-d863-40c7-be18-0da3fd2a7d08</id>
+      <recordtableid>c1fc7f03-4be8-4d0a-96ba-9449c089f93c</recordtableid>
+    </None>
+    <None Include="Recordings\Auswahl_Ebenen.rxrec">
+      <BoundTo>19abdcd8-b0fe-483b-8b80-6d898afae252</BoundTo>
+      <id>88a84bd7-b1df-4a43-992e-e1d582f99bc7</id>
+      <recordtableid>8d687c52-f158-4a87-ab6e-cf148dd1cd5a</recordtableid>
+    </None>
+    <None Include="Recordings\Daten_eingeben.rxrec">
+      <BoundTo>19abdcd8-b0fe-483b-8b80-6d898afae252</BoundTo>
+      <id>fba860d2-f7ea-462a-b56a-2bc82766d8b1</id>
+      <recordtableid>60e57da4-e037-4924-a40b-b934f5712eff</recordtableid>
     </None>
     <None Include="Recordings\WEB_LOGIN.rxrec">
       <BoundTo>19abdcd8-b0fe-483b-8b80-6d898afae252</BoundTo>
