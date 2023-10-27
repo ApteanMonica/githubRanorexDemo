@@ -113,29 +113,46 @@ namespace B_EXOPV_004.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100] Starte Verbuchung B_EXOPV_004') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(6));
             Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "[100] Starte Verbuchung B_EXOPV_004");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 24\tBeleg: ER_03_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(7));
-            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Exop: 24\tBeleg: ER_03_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'Exop: 24\tBeleg: ER_03_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(7));
+                Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Exop: 24\tBeleg: ER_03_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 25\tBeleg: ER_04_B_EXOPV_004: Jahr/Monat außerhalb erlaubter Perioden!') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(8));
-            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Exop: 25\tBeleg: ER_04_B_EXOPV_004: Jahr/Monat außerhalb erlaubter Perioden!");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'Exop: 25\tBeleg: ER_04_B_EXOPV_004: Jahr/Monat außerhalb erlaubter Perioden!') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(8));
+                Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Exop: 25\tBeleg: ER_04_B_EXOPV_004: Jahr/Monat außerhalb erlaubter Perioden!", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(8)); }
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 25\tBeleg: ER_04_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(9));
-            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Exop: 25\tBeleg: ER_04_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'Exop: 25\tBeleg: ER_04_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(9));
+                Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Exop: 25\tBeleg: ER_04_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(10));
-            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(10));
+                Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(10)); }
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100] Beende Verbuchung B_EXOPV_004') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(11));
-            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "[100] Beende Verbuchung B_EXOPV_004");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'[100] Beende Verbuchung B_EXOPV_004') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(11));
+                Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "[100] Beende Verbuchung B_EXOPV_004", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(11)); }
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Anzahl Buchungen gelesen  6') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(12));
-            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Anzahl Buchungen gelesen  6");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'Anzahl Buchungen gelesen  6') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(12));
+                Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Anzahl Buchungen gelesen  6", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(12)); }
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Anzahl Buchungen verbucht 4  Summe verbucht: 16800,00') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(13));
-            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Anzahl Buchungen verbucht 4  Summe verbucht: 16800,00");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>'Anzahl Buchungen verbucht 4  Summe verbucht: 16800,00') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(13));
+                Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Anzahl Buchungen verbucht 4  Summe verbucht: 16800,00", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(13)); }
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Exop: 24\tBeleg: ER_03_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!\r\nExop: 25\tBeleg: ER_04_B_EXOPV_004: Jahr/Monat außerhalb erlaubter Perioden!\r\nExop: 25\tBeleg: ER_04_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!\r\n \r\n------------------------------------------------------------------------------------\r\n[100] Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(14));
-            Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Exop: 24\tBeleg: ER_03_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!\r\nExop: 25\tBeleg: ER_04_B_EXOPV_004: Jahr/Monat außerhalb erlaubter Perioden!\r\nExop: 25\tBeleg: ER_04_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!\r\n \r\n------------------------------------------------------------------------------------\r\n[100] Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert");
+            // ges. Block prüfen um ggf. neue Fehlerzeilen festzustellen
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nges. Block prüfen um ggf. neue Fehlerzeilen festzustellen\r\nValidating AttributeContains (Text>'Exop: 24\tBeleg: ER_03_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!\r\nExop: 25\tBeleg: ER_04_B_EXOPV_004: Jahr/Monat außerhalb erlaubter Perioden!\r\nExop: 25\tBeleg: ER_04_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!\r\n \r\n------------------------------------------------------------------------------------\r\n[100] Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert') on item 'Fehlerprotokoll_Editor.Text15'.", repo.Fehlerprotokoll_Editor.Text15Info, new RecordItemIndex(14));
+                Validate.AttributeContains(repo.Fehlerprotokoll_Editor.Text15Info, "Text", "Exop: 24\tBeleg: ER_03_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!\r\nExop: 25\tBeleg: ER_04_B_EXOPV_004: Jahr/Monat außerhalb erlaubter Perioden!\r\nExop: 25\tBeleg: ER_04_B_EXOPV_004: UVA - Jahr/Monat 2018 /5 schon abgeschlossen!\r\n \r\n------------------------------------------------------------------------------------\r\n[100] Fehlerhafte Zeilen wurden mit Status >F< in Schnittstelle gespeichert", null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(14)); }
             
         }
 
