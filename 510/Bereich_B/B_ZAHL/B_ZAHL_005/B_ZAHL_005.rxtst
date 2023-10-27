@@ -23,15 +23,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="16b4acb9-79f6-4e3e-afb2-b88d2cfa203c"
-			name="Skontokorrektur_ER051_Skontobasis_0"
-			ref="3be3251b-5332-410e-afd2-6501ff8311ab"
-			type="Recording">
-				<description>
-					<![CDATA[nach BUG ERL entfernen: Korrektur bis Ticketerledigung BUG 38605 (26715 / MC844 hat nur B_ZAHL_002 + 004 gelöst, nicht Teilzahlungen)]]>
-				</description>
-			</testmodule>
-			<testmodule
 			id="17bd6a18-8fdf-4f6c-9926-012f1ad5f7c8"
 			name="Skonto_ermitteln"
 			ref="c0eacddc-8e99-4a86-a14a-029a6ea940cf"
@@ -70,7 +61,66 @@
 			name="B_ZAHL_005"
 			reportlevel="Info;20">
 				<description>
-					<![CDATA[<p>Ticket 510/MC844: Fehler bei der Skontoermittlung bei abw. Skontobasis (Korrekturschritte eingebaut) </p><p>Zahlungsvorschlag Nr. 5 B_ZAHL_005 mit Lieferant 303050&nbsp; und ER49, ER50 (Skontobasis 300,00 / 50%), ER51 (Skontobasis=0,00), Keybels 175, 176, 177</p><p>1. Teilzahlungen mit Berücksichtung von abweichender Skontobasis (50% Skontobasis, Skontobasis 0,00)</p><p>ER049 mit Skontobasis=Rechnungsbetrag: Bei T/A=2 (Teilausgleich inkl. Skonto) und Änderung des Zahlbetrags auf 600,00 (die Hälfte des Rechnungsbetrags 1.200,00) muss sich der Skontobetrag auf 12,00 EUR (die Hälfte von urspr. 24,00) ändern und sich bei Neuerrechnung des Skontos (weil Skontofristen bereits abgelaufen sind) der Zahlbetrag auf 588,00 (600 abzgl. 12 bzw. die Hälfte des ursprünglichen Zahlbetrags von 1.176,00 ändern) </p><p>ER050 mit Skontobasis=50% des Rechnungsbetrags (300,00): Bei T/A=2 (Teilausgleich inkl. Skonto) und Änderung des Zahlbetrags auf 300,00 (die Hälfte des Rechnungsbetrags 600,00) muss sich der Skontobetrag auf 3,00 EUR (die Hälfte von urspr. 6,00) ändern und sich bei Neuerrechnung des Skontos (weil Skontofristen bereits abgelaufen sind) der Zahlbetrag auf 297,00 (600 abzgl. 12 bzw. die Hälfte des ursprünglichen Zahlbetrags von 594,00 ändern) <br>--&gt; Fehler Ticket XXX (Deshalb Korrekturschritt eingebaut bis zur Ticketerledigung)</p><p>ER051 mit Skontobasis= 0,00 : Bei T/A=1 (Teilausgleich exkl. Skonto) und Änderung des Zahlbetrags auf 1.200 (die Hälfte des Rechnungsbetrags 2.400,00) muss sich der Skontobetrag auf 0,00 EUR ändern und bei Neuerrechnung des Skontos (weil Skontofristen bereits abgelaufen sind) auf 0,00 bleiben. <br>--&gt; Fehler Ticket XXX (Deshalb Korrekturschritt eingebaut bis zur Ticketerledigung)</p><p>2. Bankbeleg erstellen, Bankbeleg entfernen und Kontrolle ob Zahlungsvorschlag wieder mit korrekten Daten vorhanden ist. </p><p>3. Kontrolle XML-Datei</p>]]>
+					<![CDATA[<p>Teilzahlungen mit abweichender Skontobasis
+</p><p><font color="#000000" face="Times New Roman" size="3">
+
+ </font><font color="#000000" face="Times New Roman" size="3">
+ </font><font color="#000000" face="Times New Roman" size="3">
+ </font><font color="#000000" face="Times New Roman" size="3">
+ </font><font color="#000000" face="Times New Roman" size="3">
+ </font><font color="#000000" face="Times New Roman" size="3">
+ </font><font color="#000000" face="Times New Roman" size="3">
+ </font><font color="#000000" face="Times New Roman" size="3">
+ </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+ </font><font color="#000000" face="Times New Roman" size="3">
+ </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+ </font><font color="#000000" face="Times New Roman" size="3">
+ </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+ </font><font color="#000000" face="Times New Roman" size="3">
+ </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+  </font><font color="#000000" face="Times New Roman" size="3">
+ </font><font color="#000000" face="Times New Roman" size="3">
+
+</font></p><table width="959" style="width: 720pt; border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><colgroup><col width="121" style="width: 91pt; mso-width-source: userset; mso-width-alt: 4425;"><colgroup><col width="80" style="width: 60pt;" span="4"><colgroup><col width="127" style="width: 95pt; mso-width-source: userset; mso-width-alt: 4644;"><colgroup><col width="126" style="width: 95pt; mso-width-source: userset; mso-width-alt: 4608;"><colgroup><col width="80" style="width: 60pt;"><colgroup><col width="105" style="width: 79pt; mso-width-source: userset; mso-width-alt: 3840;"><colgroup><col width="80" style="width: 60pt;"><tbody><tr height="25" style="height: 18.75pt;"><td width="121" height="25" style="border: 0px black; border-image: none; width: 91pt; height: 18.75pt; background-color: transparent;"><p><br></p><br></td><td width="80" style="border: 0px black; border-image: none; width: 60pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Offen</font></td><td width="80" style="border: 0px black; border-image: none; width: 60pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Skontobasis</font></td><td width="80" style="border: 0px black; border-image: none; width: 60pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Skonto</font></td><td width="80" style="border: 0px black; border-image: none; width: 60pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Zahlbetrag</font></td><td width="127" style="border: 0px black; border-image: none; width: 95pt; background-color: rgb(146, 208, 80);"><font color="#000000" face="Calibri" size="3">&nbsp; T/A</font></td><td width="126" style="border: 0px black; border-image: none; width: 95pt; background-color: rgb(146, 208, 80);"><font color="#000000" face="Calibri" size="3">Eingabe Zahlbetrag</font></td><td width="80" style="border: 0px black; border-image: none; width: 60pt; background-color: rgb(146, 208, 80);"><font color="#000000" face="Calibri" size="3">Skonto</font></td><td width="105" style="border: 0px black; border-image: none; width: 79pt; background-color: rgb(146, 208, 80);"><font color="#000000" face="Calibri" size="3">korr. Zahlbetrag</font></td><td width="80" style="border: 0px black; border-image: none; width: 60pt; background-color: rgb(146, 208, 80);"><font color="#000000" face="Calibri" size="3">Sk %</font></td></tr><tr height="25" style="height: 18.75pt;"><td height="25" style="border: 0px black; border-image: none; height: 18.75pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">ER049</font></td><td align="right" style="border: 0px black; border-image: none; background-color: transparent;"><font color="#000000" face="Calibri" size="3">1.200,00</font></td><td align="right" style="border: 0px black; border-image: none; background-color: transparent;"><font color="#000000" face="Calibri" size="3">1.200,00</font></td><td align="right" style="border: 0px black; border-image: none; background-color: transparent;"><font color="#000000" face="Calibri" size="3">24,00</font></td><td align="right" style="border: 0px black; border-image: none; background-color: transparent;"><font color="#000000" face="Calibri" size="3">1.176,00</font></td><td style="border: 0px black; border-image: none; background-color: rgb(146, 208, 80);"><font color="#000000" face="Calibri" size="3">&nbsp; 2 (inkl. Skonto)</font></td><td align="right" style="border: 0px black; border-image: none; background-color: rgb(146, 208, 80);"><font color="#000000" face="Calibri" size="3">600,00</font></td><td align="right" style="border: 0px black; border-image: none; background-color: rgb(146, 208, 80);"><font color="#000000" face="Calibri" size="3">12,00</font></td><td align="right" style="border: 0px black; border-image: none; background-color: rgb(146, 208, 80);"><font color="#000000" face="Calibri" size="3">588,00</font></td><td align="right" style="border: 0px black; border-image: none; background-color: rgb(146, 208, 80);"><font color="#000000" face="Calibri" size="3">2%</font></td></tr><tr height="25" style="height: 18.75pt;"><td height="25" style="border: 0px black; border-image: none; height: 18.75pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">ER050</font></td><td align="right" style="border: 0px black; border-image: none; background-color: transparent;"><font color="#000000" face="Calibri" size="3">600,00</font></td><td align="right" style="border: 0px black; border-image: none; background-color: transparent;"><font color="#000000" face="Calibri" size="3">300,00</font></td><td align="right" style="border: 0px black; border-image: none; background-color: transparent;"><font color="#000000" face="Calibri" size="3">6,00</font></td><td align="right" style="border: 0px black; border-image: none; background-color: transparent;"><font color="#000000" face="Calibri" size="3">594,00</font></td><td style="border: 0px black; border-image: none; background-color: rgb(146, 208, 80);"><font color="#000000" face="Calibri" size="3">&nbsp; 2 (inkl Skonto)</font></td><td align="right" style="border: 0px black; border-image: none; background-color: rgb(146, 208, 80);"><font color="#000000" face="Calibri" size="3">300,00</font></td><td align="right" style="border: 0px black; border-image: none; background-color: rgb(146, 208, 80);"><font color="#000000" face="Calibri" size="3">3,00</font></td><td align="right" style="border: 0px black; border-image: none; background-color: rgb(146, 208, 80);"><font color="#000000" face="Calibri" size="3">297,00</font></td><td align="right" style="border: 0px black; border-image: none; background-color: rgb(146, 208, 80);"><font color="#000000" face="Calibri" size="3">2%</font></td></tr><tr height="25" style="height: 18.75pt;"><td height="25" style="border: 0px black; border-image: none; height: 18.75pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">ER051</font></td><td align="right" style="border: 0px black; border-image: none; background-color: transparent;"><font color="#000000" face="Calibri" size="3">2.400,00</font></td><td align="right" style="border: 0px black; border-image: none; background-color: transparent;"><font color="#000000" face="Calibri" size="3">0,00</font></td><td align="right" style="border: 0px black; border-image: none; background-color: transparent;"><font color="#000000" face="Calibri" size="3">0,00</font></td><td align="right" style="border: 0px black; border-image: none; background-color: transparent;"><font color="#000000" face="Calibri" size="3">2.400,00</font></td><td style="border: 0px black; border-image: none; background-color: rgb(146, 208, 80);"><font color="#000000" face="Calibri" size="3">&nbsp; 1 (exkl. Skonto)</font></td><td align="right" style="border: 0px black; border-image: none; background-color: rgb(146, 208, 80);"><font color="#000000" face="Calibri" size="3">1.200,00</font></td><td align="right" style="border: 0px black; border-image: none; background-color: rgb(146, 208, 80);"><font color="#000000" face="Calibri" size="3">0,00</font></td><td align="right" style="border: 0px black; border-image: none; background-color: rgb(146, 208, 80);"><font color="#000000" face="Calibri" size="3">1.200,00</font></td><td align="right" style="border: 0px black; border-image: none; background-color: rgb(146, 208, 80);"><font color="#000000" face="Calibri" size="3">2%</font></td></tr></tbody></table><p>Zahlungsvorschlag Nr. 5 B_ZAHL_005 mit Lieferant 303050&nbsp; und ER49, ER50 (Skontobasis 300,00 / 50%), ER51 (Skontobasis=0,00), Keybels 175, 176, 177</p><p>1. Teilzahlungen mit Berücksichtung von abweichender Skontobasis (50% Skontobasis, Skontobasis 0,00)</p><p>ER049 mit Skontobasis=Rechnungsbetrag: Bei T/A=2 (Teilausgleich inkl. Skonto) und Änderung des Zahlbetrags auf 600,00 (die Hälfte des Rechnungsbetrags 1.200,00) muss sich der Skontobetrag auf 12,00 EUR (die Hälfte von urspr. 24,00) ändern und sich bei Neuerrechnung des Skontos (weil Skontofristen bereits abgelaufen sind) der Zahlbetrag auf 588,00 (600 abzgl. 12 bzw. die Hälfte des ursprünglichen Zahlbetrags von 1.176,00 ändern) </p><p>ER050 mit Skontobasis=50% des Rechnungsbetrags (300,00): Bei T/A=2 (Teilausgleich inkl. Skonto) und Änderung des Zahlbetrags auf 300,00 (die Hälfte des Rechnungsbetrags 600,00) muss sich der Skontobetrag auf 3,00 EUR (die Hälfte von urspr. 6,00) ändern und sich bei Neuerrechnung des Skontos (weil Skontofristen bereits abgelaufen sind) der Zahlbetrag auf 297,00 (600 abzgl. 12 bzw. die Hälfte des ursprünglichen Zahlbetrags von 594,00 ändern) <br></p><p>ER051 mit Skontobasis= 0,00 : Bei T/A=1 (Teilausgleich exkl. Skonto) und Änderung des Zahlbetrags auf 1.200 (die Hälfte des Rechnungsbetrags 2.400,00) muss sich der Skontobetrag auf 0,00 EUR ändern und bei Neuerrechnung des Skontos (weil Skontofristen bereits abgelaufen sind) auf 0,00 bleiben. <br></p><p>2. Bankbeleg erstellen, Bankbeleg entfernen und Kontrolle ob Zahlungsvorschlag wieder mit korrekten Daten vorhanden ist. </p><p>3. Kontrolle XML-Datei</p><p>ERL BUG 38605 (510/FE666) und 510/MC844: Bei reduzierter Skontobasis + Teilzahlung wird der Skonto falsch berechnet (vom Re-Betrag statt von der Skontobasis)</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -298,9 +348,6 @@
 			name="OPs_in_Zahlungsvorschlag_geaendert_pruefen"
 			ref="c90fea45-1318-4400-ad72-f4b3d3ef9498"
 			type="Recording">
-				<description>
-					<![CDATA[nach BUG ERL anpassen: 38605 Regex-Oder Sk% 0,00|2,00 ER50 Skontoprozenz vor und nach Workaround unterschiedlich (2% korrekt - nach Workaround 0%]]>
-				</description>
 			</testmodule>
 			<testmodule
 			id="bdba30f0-e484-465a-8ea9-369b95c25f2a"
@@ -350,15 +397,6 @@
 			id="e88c2ead-6a8b-4e19-88ee-63d960131ed3"
 			name="XML_Datei_pruefen">
 			</testcase>
-			<testmodule
-			id="ec4555a9-e65f-4b6b-b816-5cd90fd810eb"
-			name="Skontokorrektur_ER050_Skontobasis_300"
-			ref="ac0157e6-c952-4097-be4c-8f98a2bdfe90"
-			type="Recording">
-				<description>
-					<![CDATA[nach BUG ERL entfernen: Korrektur bis Ticketerledigung BUG 38605 (26715 / MC844 hat nur B_ZAHL_002 + 004 gelöst, nicht Teilzahlungen)]]>
-				</description>
-			</testmodule>
 			<testmodule
 			id="f6903d2a-983f-4d68-b504-61cd27f62c99"
 			name="StartAUT"
@@ -452,14 +490,6 @@
 						<testmodule
 						id="17bd6a18-8fdf-4f6c-9926-012f1ad5f7c8"
 						name="Skonto_ermitteln">
-						</testmodule>
-						<testmodule
-						id="ec4555a9-e65f-4b6b-b816-5cd90fd810eb"
-						name="Skontokorrektur_ER050_Skontobasis_300">
-						</testmodule>
-						<testmodule
-						id="16b4acb9-79f6-4e3e-afb2-b88d2cfa203c"
-						name="Skontokorrektur_ER051_Skontobasis_0">
 						</testmodule>
 						<testmodule
 						id="adfecf49-aefc-4387-bb8f-24cbfd4daa6d"

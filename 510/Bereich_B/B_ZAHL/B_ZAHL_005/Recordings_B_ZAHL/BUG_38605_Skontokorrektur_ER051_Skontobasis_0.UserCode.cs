@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_ZAHL_005.Recordings_B_ZAHL
 {
-    public partial class Skontokorrektur_ER051_Skontobasis_0
+    public partial class BUG_38605_Skontokorrektur_ER051_Skontobasis_0
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -24,29 +24,29 @@ namespace B_ZAHL_005.Recordings_B_ZAHL
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Skontokorrektur_ER050_Skontobasis_300 recording.
+    ///The BUG_38605_Skontokorrektur_ER050_Skontobasis_300 recording.
     /// </summary>
     [TestModule("ac0157e6-c952-4097-be4c-8f98a2bdfe90", ModuleType.Recording, 1)]
-    public partial class Skontokorrektur_ER050_Skontobasis_300 : ITestModule
+    public partial class BUG_38605_Skontokorrektur_ER050_Skontobasis_300 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ZAHL_005.B_ZAHL_005Repository repository.
         /// </summary>
         public static global::B_ZAHL_005.B_ZAHL_005Repository repo = global::B_ZAHL_005.B_ZAHL_005Repository.Instance;
 
-        static Skontokorrektur_ER050_Skontobasis_300 instance = new Skontokorrektur_ER050_Skontobasis_300();
+        static BUG_38605_Skontokorrektur_ER050_Skontobasis_300 instance = new BUG_38605_Skontokorrektur_ER050_Skontobasis_300();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Skontokorrektur_ER050_Skontobasis_300()
+        public BUG_38605_Skontokorrektur_ER050_Skontobasis_300()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Skontokorrektur_ER050_Skontobasis_300 Instance
+        public static BUG_38605_Skontokorrektur_ER050_Skontobasis_300 Instance
         {
             get { return instance; }
         }
