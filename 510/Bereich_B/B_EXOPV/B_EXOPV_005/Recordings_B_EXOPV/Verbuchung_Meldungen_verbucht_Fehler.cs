@@ -94,13 +94,16 @@ namespace B_EXOPV_005.Recordings_B_EXOPV
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgMessageBox.FakturenPruefung'.", repo.DlgMessageBox.FakturenPruefungInfo, new RecordItemIndex(4));
             Validate.Exists(repo.DlgMessageBox.FakturenPruefungInfo);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'(7 Belege wurden verbucht)|(Belege wurden verbucht)') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(5));
-            Validate.AttributeRegex(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", new Regex("(7 Belege wurden verbucht)|(Belege wurden verbucht)"));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'7 Belege wurden verbucht') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(5));
+            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "7 Belege wurden verbucht");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'\r\n\r\nEs wurden Fehler/Hinweise protokolliert!\r\nWollen Sie die Protokoll-Datei öffnen ') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "\r\n\r\nEs wurden Fehler/Hinweise protokolliert!\r\nWollen Sie die Protokoll-Datei öffnen ");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(7));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Form100ExterneBuchungenVerbuchen.VerbuchenBeendet'.", repo.Form100ExterneBuchungenVerbuchen.VerbuchenBeendetInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Form100ExterneBuchungenVerbuchen.VerbuchenBeendet'.", repo.Form100ExterneBuchungenVerbuchen.VerbuchenBeendetInfo, new RecordItemIndex(8));
             Validate.Exists(repo.Form100ExterneBuchungenVerbuchen.VerbuchenBeendetInfo);
             
         }

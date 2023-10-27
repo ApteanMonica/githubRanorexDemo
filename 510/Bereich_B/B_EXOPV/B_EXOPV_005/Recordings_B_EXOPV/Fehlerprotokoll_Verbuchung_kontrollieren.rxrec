@@ -152,38 +152,6 @@ mode="Global">
 		</validationitem>
 		<validationitem
 		action="AttributeContains"
-		enabled="False"
-		optional="True"
-		searchpropertyid="375e389d-c404-4634-bd9f-67ed89c59105">
-			<comment>
-				Zeilen-/Beleg-Reihenfolge wechselt - deshalb Validerung gesamter Textblock deaktiviert (Textblock mit allen Belegnummern)
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="ac8e93ef-39e2-41c3-bbd0-4ee6b455357e"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@title~'Editor']/text[@controlid='15']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				Exop: 0	Beleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 29, 
-Exop: 0	Beleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30, 
-Exop: 0	Beleg: ER04_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 31, 
-Exop: 0	Beleg: ER03_B_EXOPV_005: Belegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 34, 
-Exop: 30	Beleg: ER04_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 32
-Exop: 32	Beleg: ER06_B_EXOPV_005: Fremdbeleg FB04_B_EXOPV_005: Fremdbelegnummer mehrfach in externer Schnittstelle vorhanden in Zeile 30
-Exop: 29	Beleg: ER03_B_EXOPV_005: Doppelte Fremdbelegnummer: FB02_B_EXOPV_005! Dieser Satz wird mit Status &gt;F&lt; als Fehler in der Schnittstelle gespeichert!
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeContains"
 		enabled="True"
 		optional="True"
 		searchpropertyid="375e389d-c404-4634-bd9f-67ed89c59105">

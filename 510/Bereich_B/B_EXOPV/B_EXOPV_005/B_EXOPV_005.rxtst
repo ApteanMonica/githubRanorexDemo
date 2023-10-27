@@ -114,20 +114,6 @@
 			id="1d8653e9-0786-4373-9513-fedecb8cf257"
 			name="setup">
 			</setup>
-			<testmodule
-			id="20d64d40-d955-47be-be3e-ab97514867b0"
-			name="Einlesen_Programmversion"
-			ref="9d9c8891-1cab-4f86-9ee5-997d632a9cc1"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Programmversion"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="e4152cbf-919e-43d0-80e6-7550949404b6"
-					variablename="Programmversion">
-					</var>
-				</databinding>
-			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -234,48 +220,6 @@
 			id="346ded3a-bd17-4b81-b87c-5386fa5e8819"
 			name="setup">
 			</setup>
-			<smartfoldernode
-			id="3493d726-dda9-4a66-aa8e-eeb65c12fe33"
-			name="521,511">
-				<conditiongroup
-				comparison="OR"
-				enabled="True">
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Programmversion"
-								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="521">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Programmversion"
-								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="511">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
 			<testmodule
 			id="36a37167-209c-4928-805c-ca09598f35a0"
 			name="CloseAUT"
@@ -289,15 +233,6 @@
 					<![CDATA[<p>Für Testwiederholung: mit b_buab NUR die Belege mit Buchungsdatum=Tagesdatum und %B_EXOPV_005% löschen (NICHT die bereits vorher vorhandenen; mit DB-Talk in B_EXOP die busa_keybel auf null setzen bei Herkunft B_EXOPV_005 und in dbtalk oder B_EXOPS den Status von Herkunft B_EXOPV_005 auf N zurückstellen (busa_keybel aus b_exop entfernen um die Meldungen zu vermeiden, dass bereits verbucht, obwohl&nbsp; mit b_buab gelöscht) und mit B_EXOPS die Belegnummer und Fremdbelegnummer von Lieferant 303002 wieder auf ER03_B_EXOPV_005 und FB03_B_EXOPV_005 zurückändern.</p><p>select exop_keybel, exop_status, busa_keybel, exop_belegnr, adr_nr from b_exop where firm_nr = '100' and exop_herkunft = 'B_EXOPV_005';</p><p>update b_exop set exop_status = 'N', busa_keybel = null where firm_nr = '100' and exop_herkunft = 'B_EXOPV_005';</p><p>und mit B_EXOPS bei Belegnr ER03_B_EXOPV_005_NEU und Fremdbelegnr FB03_B_EXOPV_005_NEU "_NEU" entfernen.<br></p><br>]]>
 				</description>
 			</testcase>
-			<testmodule
-			id="375b4426-142a-4e69-a479-cfd8c6217331"
-			name="Fehlerprotokoll_Verbuchung_kontrollieren_510"
-			ref="0d5d03d9-80e7-46ca-9c80-cc48b04743c6"
-			type="Recording">
-				<description>
-					<![CDATA[BUG 41465 - Beleg fehlt // Validierung einzelne Zeilen auf continue on fail, damit bei Fehler weitergeprüft wird.]]>
-				</description>
-			</testmodule>
 			<testmodule
 			id="37683803-0fd1-47ba-82dd-83ff1e4ad21e"
 			name="Pruefung_Dialog5_FB03_LF02"
@@ -369,23 +304,6 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="4cd6b1bb-a584-4c87-a8a4-199e9c62e0be"
-			name="Fehlerprotokoll_Verbuchung_aufrufen_510"
-			ref="63ec443e-b1ab-4b2a-ad84-22f092dcee8e"
-			type="Recording">
-				<description>
-					<![CDATA[BUG 41465- Fehlerprotokoll muss extra über Button aufgerufen werden, ab  521 SP12 behoben mit Aufruf aus Meldung davor]]>
-				</description>
-				<databinding>
-					<var
-					dataname="Fehlerprotokoll_Verbuchung_Datei"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="7949f403-4c90-4317-9532-07ad7bd8e69e"
-					variablename="Fehlerprotokoll_Verbuchung_Datei">
-					</var>
-				</databinding>
-			</testmodule>
 			<setup
 			id="5d172029-04da-494c-b842-c1b853424117"
 			name="setup">
@@ -416,31 +334,6 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<smartfoldernode
-			id="63b36fc8-5215-4dbd-bc3b-9ee2b3ad9e77"
-			name="510">
-				<conditiongroup
-				comparison="OR"
-				enabled="True">
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Programmversion"
-								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="510">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
 			<testcase
 			id="6406e09a-057a-43fb-8800-e15265b29c87"
 			name="B_BUAB_Kontrolle_Buchungen_Belegnummern">
@@ -582,31 +475,6 @@
 			id="866cc3c5-2ead-4197-a03a-05f00c3bf9f4"
 			name="setup">
 			</setup>
-			<smartfoldernode
-			id="8b17d980-993b-4896-a681-5422a9e52217"
-			name="510">
-				<conditiongroup
-				comparison="OR"
-				enabled="True">
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Programmversion"
-								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="510">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
 			<testmodule
 			id="8dc26680-efd5-4fe5-80d4-3866d6be929d"
 			name="Start_B_BUAB"
@@ -624,20 +492,6 @@
 					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
 					variableid="334effdd-578f-400c-85ee-8a062d4b05f0"
 					variablename="Programm_3">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="9452f4d0-01e5-4ad9-bf12-1cf061736ac9"
-			name="Einlesen_Programmversion"
-			ref="9d9c8891-1cab-4f86-9ee5-997d632a9cc1"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Programmversion"
-					datasourceid="a27fa1ea-50c1-45b4-b453-4331d9eb0813"
-					variableid="e4152cbf-919e-43d0-80e6-7550949404b6"
-					variablename="Programmversion">
 					</var>
 				</databinding>
 			</testmodule>
@@ -715,7 +569,7 @@
 			ref="1bf2f54d-35a5-4bcb-92a7-854c26e69497"
 			type="Recording">
 				<description>
-					<![CDATA[Validierung einzelne Zeilen auf continue on fail, damit bei Fehler weitergeprüft wird.]]>
+					<![CDATA[Validierung einzelne Zeilen wgen unterschiedl. Sortierung + continue on fail, damit bei Fehler weitergeprüft wird.]]>
 				</description>
 			</testmodule>
 			<testmodule
@@ -723,9 +577,6 @@
 			name="Verbuchung_Meldungen_verbucht_Fehler"
 			ref="446f3ba0-459f-43fd-8aff-78cb4a17eea7"
 			type="Recording">
-				<description>
-					<![CDATA[regex wegen: ab 521 SP12 + 511 SP15: 7 Belege wurden verbucht, bis 510 SP15: ohne "7"]]>
-				</description>
 			</testmodule>
 			<setup
 			id="9c89764f-de61-46ff-8d84-bf21459dbba7"
@@ -879,7 +730,7 @@
  </font><font color="#000000" face="Times New Roman" size="3">
 
 </font></p><table width="883" style="width: 663pt; border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><colgroup><col width="124" style="width: 93pt; mso-width-source: userset; mso-width-alt: 4534;"><colgroup><col width="53" style="width: 40pt; mso-width-source: userset; mso-width-alt: 1938;"><colgroup><col width="84" style="width: 63pt; mso-width-source: userset; mso-width-alt: 3072;"><colgroup><col width="52" style="width: 39pt; mso-width-source: userset; mso-width-alt: 1901;"><colgroup><col width="63" style="width: 47pt; mso-width-source: userset; mso-width-alt: 2304;"><colgroup><col width="80" style="width: 60pt;" span="3"><colgroup><col width="53" style="width: 40pt; mso-width-source: userset; mso-width-alt: 1938;"><colgroup><col width="80" style="width: 60pt;"><colgroup><col width="134" style="width: 101pt; mso-width-source: userset; mso-width-alt: 4900;"><tbody><tr height="35" style="height: 26.25pt;"><td width="124" height="35" style="border-width: 0.5pt 0px 0px 0.5pt; border-style: solid none none solid; border-color: windowtext black black windowtext; width: 93pt; height: 26.25pt; background-color: transparent;"><p><font color="#000000" face="Calibri" size="3">Verbuchte
-  Belege</font></p></td><td width="53" style="border-width: 0.5pt 0px 0px; border-style: solid none none; border-color: windowtext black black; width: 40pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td width="84" style="border-width: 0.5pt 0px 0px; border-style: solid none none; border-color: windowtext black black; width: 63pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td width="52" style="border-width: 0.5pt 0px 0px; border-style: solid none none; border-color: windowtext black black; width: 39pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td width="63" style="border-width: 0.5pt 0.5pt 0px 0px; border-style: solid solid none none; border-color: windowtext windowtext black black; width: 47pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td width="160" style="border-width: 0.5pt 0px 0px 0.5pt; border-style: solid none none solid; border-color: windowtext black black windowtext; width: 120pt; background-color: transparent; mso-ignore: colspan;" colspan="2"><font color="#000000" face="Calibri" size="3">Schnittstelle</font></td><td width="80" style="border-width: 0.5pt 0px 0px; border-style: solid none none; border-color: windowtext black black; width: 60pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td width="53" style="border-width: 0.5pt 0px 0px; border-style: solid none none; border-color: windowtext black black; width: 40pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td width="80" style="border-width: 0.5pt 0.5pt 0px 0px; border-style: solid solid none none; border-color: windowtext windowtext black black; width: 60pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td width="134" style="border: 0px black; border-image: none; width: 101pt; background-color: transparent;"></td></tr><tr height="41" style="height: 30.75pt; mso-height-source: userset;"><td height="41" style="border-width: 0.5pt 0px 0.5pt 0.5pt; border-style: solid none solid solid; border-color: windowtext black windowtext windowtext; height: 30.75pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Lieferant</font></td><td style="border-width: 0.5pt 0px; border-style: solid none; border-color: windowtext black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Beleg</font></td><td style="border-width: 0.5pt 0px; border-style: solid none; border-color: windowtext black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Fremdbeleg</font></td><td width="52" style="border-width: 0.5pt 0px; border-style: solid none; border-color: windowtext black; width: 39pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">busa keybel</font></td><td style="border-width: 0.5pt 0.5pt 0.5pt 0px; border-style: solid solid solid none; border-color: windowtext windowtext windowtext black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Periode</font></td><td style="border-width: 0.5pt 0px; border-style: solid none; border-color: windowtext black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Lieferant</font></td><td style="border-width: 0.5pt 0px; border-style: solid none; border-color: windowtext black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Beleg</font></td><td style="border-width: 0.5pt 0px; border-style: solid none; border-color: windowtext black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Fremdbeleg</font></td><td width="53" style="border-width: 0.5pt 0px; border-style: solid none; border-color: windowtext black; width: 40pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">exop keybel</font></td><td style="border-width: 0.5pt 0.5pt 0.5pt 0px; border-style: solid solid solid none; border-color: windowtext windowtext windowtext black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Periode</font></td><td style="border: 0px black; border-image: none; background-color: transparent;"></td></tr><tr height="25" style="height: 18.75pt;"><td height="25" align="right" style="border-width: 0px 0px 0px 0.5pt; border-style: none none none solid; border-color: black black black windowtext; height: 18.75pt; background-color: yellow;"><font color="#000000" face="Calibri" size="3">303201</font></td><td style="border: 0px red; border-image: none; background-color: yellow;"><font color="#ff0000" face="Calibri" size="3">ER01</font></td><td style="border: 0px red; border-image: none; background-color: yellow;"><font color="#ff0000" face="Calibri" size="3">FB01</font></td><td align="right" style="border: 0px rgb(112, 48, 160); border-image: none; background-color: yellow;"><font color="#7030a0" face="Calibri" size="3">249</font></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: black windowtext black black; background-color: yellow;"><font color="#000000" face="Calibri" size="3">2023/05</font></td><td align="right" style="border: 0px black; border-image: none; background-color: yellow;"><font color="#000000" face="Calibri" size="3">303201</font></td><td style="border: 0px red; border-image: none; background-color: yellow;"><font color="#ff0000" face="Calibri" size="3">ER01</font></td><td style="border: 0px red; border-image: none; background-color: yellow;"><font color="#ff0000" face="Calibri" size="3">FB01</font></td><td align="right" style="border: 0px rgb(112, 48, 160); border-image: none; background-color: yellow;"><font color="#7030a0" face="Calibri" size="3">28</font></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: black windowtext black black; background-color: yellow;"><font color="#000000" face="Calibri" size="3">2023/05</font></td><td style="border: 0px black; border-image: none; background-color: yellow;"><font color="#000000" face="Calibri" size="3">akzeptieren</font></td></tr><tr height="25" style="height: 18.75pt;"><td height="25" align="right" style="border-width: 0px 0px 0px 0.5pt; border-style: none none none solid; border-color: black black black windowtext; height: 18.75pt; background-color: yellow;"><font color="#000000" face="Calibri" size="3">303201</font></td><td style="border: 0px black; border-image: none; background-color: rgb(155, 194, 230);"><font color="#000000" face="Calibri" size="3">ER02</font></td><td style="border: 0px red; border-image: none; background-color: rgb(198, 224, 180);"><font color="#ff0000" face="Calibri" size="3">FB02</font></td><td align="right" style="border: 0px rgb(112, 48, 160); border-image: none; background-color: yellow;"><font color="#7030a0" face="Calibri" size="3">250</font></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: black windowtext black black; background-color: yellow;"><font color="#000000" face="Calibri" size="3">2023/05</font></td><td align="right" style="border: 0px black; border-image: none; background-color: yellow;"><font color="#000000" face="Calibri" size="3">303201</font></td><td style="border: 0px black; border-image: none; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">ER03</font></td><td style="border: 0px red; border-image: none; background-color: yellow;"><font color="#ff0000" face="Calibri" size="3">FB02</font></td><td align="right" style="border: 0px rgb(112, 48, 160); border-image: none; background-color: yellow;"><font color="#7030a0" face="Calibri" size="3">29</font></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: black windowtext black black; background-color: yellow;"><font color="#000000" face="Calibri" size="3">2023/05</font></td><td style="border: 0px black; border-image: none; background-color: yellow;"><font color="#000000" face="Calibri" size="3">übergehen (F)</font></td></tr><tr height="25" style="height: 18.75pt;"><td height="25" style="border-width: 0px 0px 0px 0.5pt; border-style: none none none solid; border-color: black black black windowtext; height: 18.75pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td style="border: 0px black; border-image: none; background-color: transparent;"></td><td style="border: 0px black; border-image: none; background-color: transparent;"></td><td style="border: 0px black; border-image: none; background-color: transparent;"></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: black windowtext black black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td align="right" style="border: 0px black; border-image: none; background-color: transparent;"><font color="#000000" face="Calibri" size="3">303201</font></td><td style="border: 0px windowtext; border-image: none; background-color: rgb(255, 192, 0);"><font color="#000000" face="Calibri" size="3">ER04</font></td><td style="border: 0px windowtext; border-image: none; background-color: rgb(255, 192, 0);"><font color="#000000" face="Calibri" size="3">FB04</font></td><td align="right" style="border: 0px rgb(198, 89, 17); border-image: none; background-color: rgb(242, 242, 242);"><font color="#c65911" face="Calibri" size="3">30</font></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: black windowtext black black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">2023/05</font></td><td style="border: 0px black; border-image: none; background-color: transparent;"></td></tr><tr height="25" style="height: 18.75pt; mso-height-source: userset;"><td height="25" style="border-width: 0px 0px 0px 0.5pt; border-style: none none none solid; border-color: black black black windowtext; height: 18.75pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td style="border: 0px black; border-image: none; background-color: transparent;"></td><td style="border: 0px black; border-image: none; background-color: transparent;"></td><td style="border: 0px black; border-image: none; background-color: transparent;"></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: black windowtext black black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td align="right" style="border: 0px black; border-image: none; background-color: transparent;"><font color="#000000" face="Calibri" size="3">303201</font></td><td style="border: 0px windowtext; border-image: none; background-color: rgb(255, 192, 0);"><font color="#000000" face="Calibri" size="3">ER04</font></td><td style="border: 0px black; border-image: none; background-color: transparent;"><font color="#000000" face="Calibri" size="3">FB05</font></td><td align="right" style="border: 0px black; border-image: none; background-color: transparent;"><font color="#000000" face="Calibri" size="3">31</font></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: black windowtext black black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">2023/05</font></td><td style="border: 0px black; border-image: none; background-color: transparent;"></td></tr><tr height="25" style="height: 18.75pt;"><td height="25" style="border-width: 0px 0px 0.5pt 0.5pt; border-style: none none solid solid; border-color: black black windowtext windowtext; height: 18.75pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: black black windowtext; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: black black windowtext; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: black black windowtext; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td style="border-width: 0px 0.5pt 0.5pt 0px; border-style: none solid solid none; border-color: black windowtext windowtext black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td align="right" style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: black black windowtext; background-color: transparent;"><font color="#000000" face="Calibri" size="3">303201</font></td><td style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: windowtext; background-color: transparent;"><font color="#000000" face="Calibri" size="3">ER06</font></td><td style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: windowtext; background-color: rgb(255, 192, 0);"><font color="#000000" face="Calibri" size="3">FB04</font></td><td align="right" style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: rgb(198, 89, 17) rgb(198, 89, 17) windowtext; background-color: rgb(242, 242, 242);"><font color="#c65911" face="Calibri" size="3">32</font></td><td style="border-width: 0px 0.5pt 0.5pt 0px; border-style: none solid solid none; border-color: black windowtext windowtext black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">2023/05</font></td><td style="border: 0px black; border-image: none; background-color: transparent;"></td></tr><tr height="25" style="height: 18.75pt;"><td height="25" align="right" style="border-width: 0px 0px 0px 0.5pt; border-style: none none none solid; border-color: black black black windowtext; height: 18.75pt; background-color: yellow;"><font color="#000000" face="Calibri" size="3">303202</font></td><td style="border: 0px red; border-image: none; background-color: yellow;"><font color="#ff0000" face="Calibri" size="3">ER03</font></td><td style="border: 0px red; border-image: none; background-color: yellow;"><font color="#ff0000" face="Calibri" size="3">FB03</font></td><td align="right" style="border: 0px rgb(112, 48, 160); border-image: none; background-color: yellow;"><font color="#7030a0" face="Calibri" size="3">251</font></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: black windowtext black black; background-color: yellow;"><font color="#000000" face="Calibri" size="3">2023/05</font></td><td align="right" style="border: 0px windowtext; border-image: none; background-color: yellow;"><font color="#000000" face="Calibri" size="3">303202</font></td><td style="border: 0px red; border-image: none; background-color: yellow;"><font color="#ff0000" face="Calibri" size="3">ER03</font></td><td style="border: 0px red; border-image: none; background-color: yellow;"><font color="#ff0000" face="Calibri" size="3">FB03</font></td><td align="right" style="border: 0px rgb(112, 48, 160); border-image: none; background-color: yellow;"><font color="#7030a0" face="Calibri" size="3">34</font></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: windowtext; background-color: yellow;"><font color="#000000" face="Calibri" size="3">2023/05</font></td><td style="border: 0px windowtext; border-image: none; background-color: yellow;"><font color="#000000" face="Calibri" size="3">neue Belegnr. OK</font></td></tr><tr height="25" style="height: 18.75pt;"><td height="25" align="right" style="border-width: 0px 0px 0px 0.5pt; border-style: none none none solid; border-color: windowtext; height: 18.75pt; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">303202</font></td><td style="border: 0px windowtext; border-image: none; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">ER05</font></td><td style="border: 0px windowtext; border-image: none; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">FB05</font></td><td align="right" style="border: 0px windowtext; border-image: none; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">252</font></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: red windowtext red red; background-color: rgb(226, 239, 218);"><font color="#ff0000" face="Calibri" size="3">2020/05</font></td><td align="right" style="border: 0px windowtext; border-image: none; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">303202</font></td><td style="border: 0px windowtext; border-image: none; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">ER05</font></td><td style="border: 0px windowtext; border-image: none; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">FB05</font></td><td align="right" style="border: 0px windowtext; border-image: none; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">35</font></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: red windowtext red red; background-color: rgb(226, 239, 218);"><font color="#ff0000" face="Calibri" size="3">2023/05</font></td><td style="border: 0px red; border-image: none; background-color: rgb(226, 239, 218);"><font color="#ff0000" face="Calibri" size="3">&nbsp;</font></td></tr><tr height="25" style="height: 18.75pt;"><td height="25" style="border-width: 0px 0px 0.5pt 0.5pt; border-style: none none solid solid; border-color: black black windowtext windowtext; height: 18.75pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: black black windowtext; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: black black windowtext; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: black black windowtext; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td style="border-width: 0px 0.5pt 0.5pt 0px; border-style: none solid solid none; border-color: black windowtext windowtext black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td align="right" style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: windowtext; background-color: rgb(198, 224, 180);"><font color="#000000" face="Calibri" size="3">303202</font></td><td style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: windowtext; background-color: rgb(198, 224, 180);"><font color="#000000" face="Calibri" size="3">ER02</font></td><td style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: windowtext; background-color: rgb(198, 224, 180);"><font color="#000000" face="Calibri" size="3">FB02</font></td><td align="right" style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: windowtext; background-color: rgb(198, 224, 180);"><font color="#000000" face="Calibri" size="3">33</font></td><td style="border-width: 0px 0.5pt 0.5pt 0px; border-style: none solid solid none; border-color: windowtext; background-color: rgb(198, 224, 180);"><font color="#000000" face="Calibri" size="3">2023/05</font></td><td style="border: 0px windowtext; border-image: none; background-color: rgb(198, 224, 180);"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td></tr></tbody></table><br><p>Vorhandene Belege in der Schnittstelle werden geprüft und verbucht. Dabei müssen doppelte Beleg- und Fremdbeleg-nummern angezeigt werden und korrigiert werden können. Lieferanten 303201 + 303202, Herkunft/Stapel: B_EXOPV_005, Periode 2023/5</p><p>1. mit default-Option (bei Lieferanten keine dopp. Belegprüfung) B_EXOPV_005 prüfen: keine Fehler<br>2. Optionen umstellen: Lieferanten doppelte Belege + Fremdbelege + jew. auch in Schnittstelle + FB nur innerhalb gleicher Adr-Nr. prüfen. <br>Option "Fehlerhafte Belege in Statuf F in Schnittstelle speichern" NICHT deaktiveren, weil nur die aktivierte Option ein vollständiges Prüfprotokoll sicherstellt (siehe Vermerk bei BUG 26881)<br>3. Stapel prüfen und alle Prüfergebnisse mit Änderungs-Vorschlägen übergehen (einzeln um Meldungen zur prüfen) <br>4. Status der Belege in der Schnittstelle wieder auf N zurücksetzen<br>5. Stapel verbuchen: Meldungen: LF01 ER01 + FB01 akzeptieren mit doppelter Belegnummer, LF01 FB02 übergehen (auf Status F stellen), LF02 ER03/FB03 neue Beleg- und Fremdbeleg-Nummer vergeben (_NEU anhängen)<br>6. Schnittstelle prüfen: Status und neue Beleg/Fremdbeleg-Nummer<br>7. Buchungsabfrage: verbuchte Belege prüfen + neue Beleg/Fremdbeleg-Nummer</p><p>BUG 41465 Fehlerprot. Verbuchen - Beleg mit F fehlt + Aufruf manuell nötig</p><p>BUG 37789 Bei Prüfung werden die Belege mit doppelter Belegnummer in der Schnittstelle nicht auf Status F gestellt (nur jene Belege, die einen OP mit gleicher Beleg-/Fremdbelegnummer beim gleichen Lieferanten haben) - bleibt voraussichtlich so - siehe Kommentart Ticket + Auswirkung der Option "Fremdbelege nur innerhalb gleicher Adr-Nr prüfen unklar - gilt für doppelte Belege innhalb der Schnittstelle, aber bei vorhandenen OPs nicht nachvollziehbar</p><p>BUG 38668 erledigt: In den Belegnummer-Prüfmasken sind die Beleg-Nr-Felder zu kurz erl. In 510 SP15/521 SP12/511 SP15</p><br>]]>
+  Belege</font></p></td><td width="53" style="border-width: 0.5pt 0px 0px; border-style: solid none none; border-color: windowtext black black; width: 40pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td width="84" style="border-width: 0.5pt 0px 0px; border-style: solid none none; border-color: windowtext black black; width: 63pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td width="52" style="border-width: 0.5pt 0px 0px; border-style: solid none none; border-color: windowtext black black; width: 39pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td width="63" style="border-width: 0.5pt 0.5pt 0px 0px; border-style: solid solid none none; border-color: windowtext windowtext black black; width: 47pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td width="160" style="border-width: 0.5pt 0px 0px 0.5pt; border-style: solid none none solid; border-color: windowtext black black windowtext; width: 120pt; background-color: transparent; mso-ignore: colspan;" colspan="2"><font color="#000000" face="Calibri" size="3">Schnittstelle</font></td><td width="80" style="border-width: 0.5pt 0px 0px; border-style: solid none none; border-color: windowtext black black; width: 60pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td width="53" style="border-width: 0.5pt 0px 0px; border-style: solid none none; border-color: windowtext black black; width: 40pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td width="80" style="border-width: 0.5pt 0.5pt 0px 0px; border-style: solid solid none none; border-color: windowtext windowtext black black; width: 60pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td width="134" style="border: 0px black; border-image: none; width: 101pt; background-color: transparent;"></td></tr><tr height="41" style="height: 30.75pt; mso-height-source: userset;"><td height="41" style="border-width: 0.5pt 0px 0.5pt 0.5pt; border-style: solid none solid solid; border-color: windowtext black windowtext windowtext; height: 30.75pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Lieferant</font></td><td style="border-width: 0.5pt 0px; border-style: solid none; border-color: windowtext black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Beleg</font></td><td style="border-width: 0.5pt 0px; border-style: solid none; border-color: windowtext black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Fremdbeleg</font></td><td width="52" style="border-width: 0.5pt 0px; border-style: solid none; border-color: windowtext black; width: 39pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">busa keybel</font></td><td style="border-width: 0.5pt 0.5pt 0.5pt 0px; border-style: solid solid solid none; border-color: windowtext windowtext windowtext black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Periode</font></td><td style="border-width: 0.5pt 0px; border-style: solid none; border-color: windowtext black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Lieferant</font></td><td style="border-width: 0.5pt 0px; border-style: solid none; border-color: windowtext black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Beleg</font></td><td style="border-width: 0.5pt 0px; border-style: solid none; border-color: windowtext black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Fremdbeleg</font></td><td width="53" style="border-width: 0.5pt 0px; border-style: solid none; border-color: windowtext black; width: 40pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">exop keybel</font></td><td style="border-width: 0.5pt 0.5pt 0.5pt 0px; border-style: solid solid solid none; border-color: windowtext windowtext windowtext black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">Periode</font></td><td style="border: 0px black; border-image: none; background-color: transparent;"></td></tr><tr height="25" style="height: 18.75pt;"><td height="25" align="right" style="border-width: 0px 0px 0px 0.5pt; border-style: none none none solid; border-color: black black black windowtext; height: 18.75pt; background-color: yellow;"><font color="#000000" face="Calibri" size="3">303201</font></td><td style="border: 0px red; border-image: none; background-color: yellow;"><font color="#ff0000" face="Calibri" size="3">ER01</font></td><td style="border: 0px red; border-image: none; background-color: yellow;"><font color="#ff0000" face="Calibri" size="3">FB01</font></td><td align="right" style="border: 0px rgb(112, 48, 160); border-image: none; background-color: yellow;"><font color="#7030a0" face="Calibri" size="3">249</font></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: black windowtext black black; background-color: yellow;"><font color="#000000" face="Calibri" size="3">2023/05</font></td><td align="right" style="border: 0px black; border-image: none; background-color: yellow;"><font color="#000000" face="Calibri" size="3">303201</font></td><td style="border: 0px red; border-image: none; background-color: yellow;"><font color="#ff0000" face="Calibri" size="3">ER01</font></td><td style="border: 0px red; border-image: none; background-color: yellow;"><font color="#ff0000" face="Calibri" size="3">FB01</font></td><td align="right" style="border: 0px rgb(112, 48, 160); border-image: none; background-color: yellow;"><font color="#7030a0" face="Calibri" size="3">28</font></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: black windowtext black black; background-color: yellow;"><font color="#000000" face="Calibri" size="3">2023/05</font></td><td style="border: 0px black; border-image: none; background-color: yellow;"><font color="#000000" face="Calibri" size="3">akzeptieren</font></td></tr><tr height="25" style="height: 18.75pt;"><td height="25" align="right" style="border-width: 0px 0px 0px 0.5pt; border-style: none none none solid; border-color: black black black windowtext; height: 18.75pt; background-color: yellow;"><font color="#000000" face="Calibri" size="3">303201</font></td><td style="border: 0px black; border-image: none; background-color: rgb(155, 194, 230);"><font color="#000000" face="Calibri" size="3">ER02</font></td><td style="border: 0px red; border-image: none; background-color: rgb(198, 224, 180);"><font color="#ff0000" face="Calibri" size="3">FB02</font></td><td align="right" style="border: 0px rgb(112, 48, 160); border-image: none; background-color: yellow;"><font color="#7030a0" face="Calibri" size="3">250</font></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: black windowtext black black; background-color: yellow;"><font color="#000000" face="Calibri" size="3">2023/05</font></td><td align="right" style="border: 0px black; border-image: none; background-color: yellow;"><font color="#000000" face="Calibri" size="3">303201</font></td><td style="border: 0px black; border-image: none; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">ER03</font></td><td style="border: 0px red; border-image: none; background-color: yellow;"><font color="#ff0000" face="Calibri" size="3">FB02</font></td><td align="right" style="border: 0px rgb(112, 48, 160); border-image: none; background-color: yellow;"><font color="#7030a0" face="Calibri" size="3">29</font></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: black windowtext black black; background-color: yellow;"><font color="#000000" face="Calibri" size="3">2023/05</font></td><td style="border: 0px black; border-image: none; background-color: yellow;"><font color="#000000" face="Calibri" size="3">übergehen (F)</font></td></tr><tr height="25" style="height: 18.75pt;"><td height="25" style="border-width: 0px 0px 0px 0.5pt; border-style: none none none solid; border-color: black black black windowtext; height: 18.75pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td style="border: 0px black; border-image: none; background-color: transparent;"></td><td style="border: 0px black; border-image: none; background-color: transparent;"></td><td style="border: 0px black; border-image: none; background-color: transparent;"></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: black windowtext black black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td align="right" style="border: 0px black; border-image: none; background-color: transparent;"><font color="#000000" face="Calibri" size="3">303201</font></td><td style="border: 0px windowtext; border-image: none; background-color: rgb(255, 192, 0);"><font color="#000000" face="Calibri" size="3">ER04</font></td><td style="border: 0px windowtext; border-image: none; background-color: rgb(255, 192, 0);"><font color="#000000" face="Calibri" size="3">FB04</font></td><td align="right" style="border: 0px rgb(198, 89, 17); border-image: none; background-color: rgb(242, 242, 242);"><font color="#c65911" face="Calibri" size="3">30</font></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: black windowtext black black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">2023/05</font></td><td style="border: 0px black; border-image: none; background-color: transparent;"></td></tr><tr height="25" style="height: 18.75pt; mso-height-source: userset;"><td height="25" style="border-width: 0px 0px 0px 0.5pt; border-style: none none none solid; border-color: black black black windowtext; height: 18.75pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td style="border: 0px black; border-image: none; background-color: transparent;"></td><td style="border: 0px black; border-image: none; background-color: transparent;"></td><td style="border: 0px black; border-image: none; background-color: transparent;"></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: black windowtext black black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td align="right" style="border: 0px black; border-image: none; background-color: transparent;"><font color="#000000" face="Calibri" size="3">303201</font></td><td style="border: 0px windowtext; border-image: none; background-color: rgb(255, 192, 0);"><font color="#000000" face="Calibri" size="3">ER04</font></td><td style="border: 0px black; border-image: none; background-color: transparent;"><font color="#000000" face="Calibri" size="3">FB05</font></td><td align="right" style="border: 0px black; border-image: none; background-color: transparent;"><font color="#000000" face="Calibri" size="3">31</font></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: black windowtext black black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">2023/05</font></td><td style="border: 0px black; border-image: none; background-color: transparent;"></td></tr><tr height="25" style="height: 18.75pt;"><td height="25" style="border-width: 0px 0px 0.5pt 0.5pt; border-style: none none solid solid; border-color: black black windowtext windowtext; height: 18.75pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: black black windowtext; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: black black windowtext; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: black black windowtext; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td style="border-width: 0px 0.5pt 0.5pt 0px; border-style: none solid solid none; border-color: black windowtext windowtext black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td align="right" style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: black black windowtext; background-color: transparent;"><font color="#000000" face="Calibri" size="3">303201</font></td><td style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: windowtext; background-color: transparent;"><font color="#000000" face="Calibri" size="3">ER06</font></td><td style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: windowtext; background-color: rgb(255, 192, 0);"><font color="#000000" face="Calibri" size="3">FB04</font></td><td align="right" style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: rgb(198, 89, 17) rgb(198, 89, 17) windowtext; background-color: rgb(242, 242, 242);"><font color="#c65911" face="Calibri" size="3">32</font></td><td style="border-width: 0px 0.5pt 0.5pt 0px; border-style: none solid solid none; border-color: black windowtext windowtext black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">2023/05</font></td><td style="border: 0px black; border-image: none; background-color: transparent;"></td></tr><tr height="25" style="height: 18.75pt;"><td height="25" align="right" style="border-width: 0px 0px 0px 0.5pt; border-style: none none none solid; border-color: black black black windowtext; height: 18.75pt; background-color: yellow;"><font color="#000000" face="Calibri" size="3">303202</font></td><td style="border: 0px red; border-image: none; background-color: yellow;"><font color="#ff0000" face="Calibri" size="3">ER03</font></td><td style="border: 0px red; border-image: none; background-color: yellow;"><font color="#ff0000" face="Calibri" size="3">FB03</font></td><td align="right" style="border: 0px rgb(112, 48, 160); border-image: none; background-color: yellow;"><font color="#7030a0" face="Calibri" size="3">251</font></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: black windowtext black black; background-color: yellow;"><font color="#000000" face="Calibri" size="3">2023/05</font></td><td align="right" style="border: 0px windowtext; border-image: none; background-color: yellow;"><font color="#000000" face="Calibri" size="3">303202</font></td><td style="border: 0px red; border-image: none; background-color: yellow;"><font color="#ff0000" face="Calibri" size="3">ER03</font></td><td style="border: 0px red; border-image: none; background-color: yellow;"><font color="#ff0000" face="Calibri" size="3">FB03</font></td><td align="right" style="border: 0px rgb(112, 48, 160); border-image: none; background-color: yellow;"><font color="#7030a0" face="Calibri" size="3">34</font></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: windowtext; background-color: yellow;"><font color="#000000" face="Calibri" size="3">2023/05</font></td><td style="border: 0px windowtext; border-image: none; background-color: yellow;"><font color="#000000" face="Calibri" size="3">neue Belegnr. OK</font></td></tr><tr height="25" style="height: 18.75pt;"><td height="25" align="right" style="border-width: 0px 0px 0px 0.5pt; border-style: none none none solid; border-color: windowtext; height: 18.75pt; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">303202</font></td><td style="border: 0px windowtext; border-image: none; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">ER05</font></td><td style="border: 0px windowtext; border-image: none; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">FB05</font></td><td align="right" style="border: 0px windowtext; border-image: none; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">252</font></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: red windowtext red red; background-color: rgb(226, 239, 218);"><font color="#ff0000" face="Calibri" size="3">2020/05</font></td><td align="right" style="border: 0px windowtext; border-image: none; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">303202</font></td><td style="border: 0px windowtext; border-image: none; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">ER05</font></td><td style="border: 0px windowtext; border-image: none; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">FB05</font></td><td align="right" style="border: 0px windowtext; border-image: none; background-color: rgb(226, 239, 218);"><font color="#000000" face="Calibri" size="3">35</font></td><td style="border-width: 0px 0.5pt 0px 0px; border-style: none solid none none; border-color: red windowtext red red; background-color: rgb(226, 239, 218);"><font color="#ff0000" face="Calibri" size="3">2023/05</font></td><td style="border: 0px red; border-image: none; background-color: rgb(226, 239, 218);"><font color="#ff0000" face="Calibri" size="3">&nbsp;</font></td></tr><tr height="25" style="height: 18.75pt;"><td height="25" style="border-width: 0px 0px 0.5pt 0.5pt; border-style: none none solid solid; border-color: black black windowtext windowtext; height: 18.75pt; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: black black windowtext; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: black black windowtext; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: black black windowtext; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td style="border-width: 0px 0.5pt 0.5pt 0px; border-style: none solid solid none; border-color: black windowtext windowtext black; background-color: transparent;"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td><td align="right" style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: windowtext; background-color: rgb(198, 224, 180);"><font color="#000000" face="Calibri" size="3">303202</font></td><td style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: windowtext; background-color: rgb(198, 224, 180);"><font color="#000000" face="Calibri" size="3">ER02</font></td><td style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: windowtext; background-color: rgb(198, 224, 180);"><font color="#000000" face="Calibri" size="3">FB02</font></td><td align="right" style="border-width: 0px 0px 0.5pt; border-style: none none solid; border-color: windowtext; background-color: rgb(198, 224, 180);"><font color="#000000" face="Calibri" size="3">33</font></td><td style="border-width: 0px 0.5pt 0.5pt 0px; border-style: none solid solid none; border-color: windowtext; background-color: rgb(198, 224, 180);"><font color="#000000" face="Calibri" size="3">2023/05</font></td><td style="border: 0px windowtext; border-image: none; background-color: rgb(198, 224, 180);"><font color="#000000" face="Calibri" size="3">&nbsp;</font></td></tr></tbody></table><br><p>Vorhandene Belege in der Schnittstelle werden geprüft und verbucht. Dabei müssen doppelte Beleg- und Fremdbeleg-nummern angezeigt werden und korrigiert werden können. Lieferanten 303201 + 303202, Herkunft/Stapel: B_EXOPV_005, Periode 2023/5</p><p>1. mit default-Option (bei Lieferanten keine dopp. Belegprüfung) B_EXOPV_005 prüfen: keine Fehler<br>2. Optionen umstellen: Lieferanten doppelte Belege + Fremdbelege + jew. auch in Schnittstelle + FB nur innerhalb gleicher Adr-Nr. prüfen. <br>Option "Fehlerhafte Belege in Statuf F in Schnittstelle speichern" NICHT deaktiveren, weil nur die aktivierte Option ein vollständiges Prüfprotokoll sicherstellt (siehe Vermerk bei BUG 26881)<br>3. Stapel prüfen und alle Prüfergebnisse mit Änderungs-Vorschlägen übergehen (einzeln um Meldungen zur prüfen) <br>4. Status der Belege in der Schnittstelle wieder auf N zurücksetzen<br>5. Stapel verbuchen: Meldungen: LF01 ER01 + FB01 akzeptieren mit doppelter Belegnummer, LF01 FB02 übergehen (auf Status F stellen), LF02 ER03/FB03 neue Beleg- und Fremdbeleg-Nummer vergeben (_NEU anhängen)<br>6. Schnittstelle prüfen: Status und neue Beleg/Fremdbeleg-Nummer<br>7. Buchungsabfrage: verbuchte Belege prüfen + neue Beleg/Fremdbeleg-Nummer</p><p>BUG 41465 erledigt: Fehlerprot. Verbuchen - Beleg mit F fehlt + Aufruf Protokoll manuell nötig</p><p>BUG 37789 kein Fehler; Bei Prüfung werden die Belege mit doppelter Belegnummer in der Schnittstelle nicht auf Status F gestellt (nur jene Belege, die einen OP mit gleicher Beleg-/Fremdbelegnummer beim gleichen Lieferanten haben) - bleibt voraussichtlich so - siehe Kommentart Ticket + Auswirkung der Option "Fremdbelege nur innerhalb gleicher Adr-Nr prüfen unklar - gilt für doppelte Belege innhalb der Schnittstelle, aber bei vorhandenen OPs nicht nachvollziehbar: wird nicht geändert siehe Kommentar in BUG.</p><p>BUG 38668 erledigt: In den Belegnummer-Prüfmasken sind die Beleg-Nr-Felder zu kurz erl. In 510 SP15/521 SP12/511 SP15</p><br>]]>
 				</description>
 				<parameters>
 					<param
@@ -1049,15 +900,6 @@
 			name="B_EXOPS_Status_von_F_auf_N_zuruecksetzen"
 			ref="0829892c-ee03-4722-a0ed-7d78e5ad829a"
 			type="Recording">
-			</testmodule>
-			<testmodule
-			id="a7c6b2fd-58f7-4a74-b4c4-f793135eba91"
-			name="Fehlerprotokoll_Pruefung_kontrollieren_510"
-			ref="304c655b-ed07-4a16-9e9c-c93d868439c4"
-			type="Recording">
-				<description>
-					<![CDATA[BUG 41465 - Status-F-Hinweis fehlt / einzelne Zeilen auf continue on fail, damit bei Fehler weitergeprüft wird.]]>
-				</description>
 			</testmodule>
 			<testmodule
 			id="a8e6e6b2-c081-4c05-a607-b7e38f5fccee"
@@ -1235,73 +1077,6 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<smartfoldernode
-			id="c1699588-d955-4d76-9eb0-cd33276e1ef5"
-			name="521,511">
-				<conditiongroup
-				comparison="OR"
-				enabled="True">
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Programmversion"
-								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="521">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Programmversion"
-								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="511">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
-			<smartfoldernode
-			id="c54a212a-19ec-4574-a711-de66a944c10c"
-			name="510">
-				<conditiongroup
-				comparison="OR"
-				enabled="True">
-					<condition
-					comparison="IsEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Programmversion"
-								id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="510">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-				</conditiongroup>
-			</smartfoldernode>
 			<testcase
 			id="c9f22167-116d-46e5-b2fc-de0a7ff30c6e"
 			name="B_EXOPS_Kontrolle_und_Status_auf_N_zurücksetzen">
@@ -1352,7 +1127,7 @@
 			ref="d8201208-b1ad-4756-b52e-522408436296"
 			type="Recording">
 				<description>
-					<![CDATA[BUG 37789 wird nicht korrigiert nur ER01/ER03 (LF1) + ER03(LF02) sind auf Status F, dopp Belege in Schnittstelle bleiben auf Status N - kein Fehler, siche Vermerk in BUG 37789 "Bzgl. dass Belegnummern nur auf F gestellt werden, wenn ein OP vorhanden ist. Da habe ich mit HOLZ gesprochen und er würde da nichts ändern. Wir können den Beleg nicht auf F setzen, da wir nicht wissen welcher falsch ist."]]>
+					<![CDATA[BUG 37789 wird nicht geändert (kein Fehler) nur ER01/ER03 (LF1) + ER03(LF02) dopp. Belege sind auf Status F, dopp Belege in Schnittstelle bleiben auf Status N - (Kommentar in BUG: Da habe ich mit HOLZ gesprochen und er würde da nichts ändern. Wir können den Beleg nicht auf F setzen, da wir nicht wissen welcher falsch ist.")]]>
 				</description>
 				<databinding>
 					<var
@@ -1497,7 +1272,7 @@
 			ref="7a5cb8fc-5689-4b12-8a7e-db1beabf090b"
 			type="Recording">
 				<description>
-					<![CDATA[Validierung einzelne Zeilen auf continue on fail, damit bei Fehler weitergeprüft wird.]]>
+					<![CDATA[Validierung einzelne Zeilen wgen unterschiedl. Sortierung + continue on fail, damit bei Fehler weitergeprüft wird.]]>
 				</description>
 			</testmodule>
 			<testcase
@@ -1841,25 +1616,9 @@
 						name="Fehlerprotokoll_Pruefung_aufrufen">
 						</testmodule>
 						<testmodule
-						id="20d64d40-d955-47be-be3e-ab97514867b0"
-						name="Einlesen_Programmversion">
+						id="efc8c5f2-827c-460d-b33f-eee945b6e1db"
+						name="Fehlerprotokoll_Pruefung_kontrollieren">
 						</testmodule>
-						<smartfoldernode
-						id="c54a212a-19ec-4574-a711-de66a944c10c"
-						name="510">
-							<testmodule
-							id="a7c6b2fd-58f7-4a74-b4c4-f793135eba91"
-							name="Fehlerprotokoll_Pruefung_kontrollieren_510">
-							</testmodule>
-						</smartfoldernode>
-						<smartfoldernode
-						id="3493d726-dda9-4a66-aa8e-eeb65c12fe33"
-						name="521,511">
-							<testmodule
-							id="efc8c5f2-827c-460d-b33f-eee945b6e1db"
-							name="Fehlerprotokoll_Pruefung_kontrollieren">
-							</testmodule>
-						</smartfoldernode>
 						<teardown
 						id="2b4a51f3-c56b-43c8-900f-f9c0ac9e1c68"
 						name="teardown">
@@ -1937,33 +1696,9 @@
 						name="Verbuchung_Meldungen_verbucht_Fehler">
 						</testmodule>
 						<testmodule
-						id="9452f4d0-01e5-4ad9-bf12-1cf061736ac9"
-						name="Einlesen_Programmversion">
+						id="986b7462-c88d-4f76-86a9-6306e08af02c"
+						name="Fehlerprotokoll_Verbuchung_kontrollieren">
 						</testmodule>
-						<smartfoldernode
-						id="8b17d980-993b-4896-a681-5422a9e52217"
-						name="510">
-							<testmodule
-							id="4cd6b1bb-a584-4c87-a8a4-199e9c62e0be"
-							name="Fehlerprotokoll_Verbuchung_aufrufen_510">
-							</testmodule>
-						</smartfoldernode>
-						<smartfoldernode
-						id="63b36fc8-5215-4dbd-bc3b-9ee2b3ad9e77"
-						name="510">
-							<testmodule
-							id="375b4426-142a-4e69-a479-cfd8c6217331"
-							name="Fehlerprotokoll_Verbuchung_kontrollieren_510">
-							</testmodule>
-						</smartfoldernode>
-						<smartfoldernode
-						id="c1699588-d955-4d76-9eb0-cd33276e1ef5"
-						name="521,511">
-							<testmodule
-							id="986b7462-c88d-4f76-86a9-6306e08af02c"
-							name="Fehlerprotokoll_Verbuchung_kontrollieren">
-							</testmodule>
-						</smartfoldernode>
 						<teardown
 						id="85a66b3d-8220-4cfc-a043-f495ba09ce5a"
 						name="teardown">
@@ -2056,9 +1791,6 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="3493d726-dda9-4a66-aa8e-eeb65c12fe33">
-			</testcontainer>
-			<testcontainer
 			id="36e8a639-b265-48ea-90bc-dd5a05738926">
 			</testcontainer>
 			<testcontainer
@@ -2068,25 +1800,13 @@
 			id="47b3d845-886c-4462-9f09-53f85d1376be">
 			</testcontainer>
 			<testcontainer
-			id="63b36fc8-5215-4dbd-bc3b-9ee2b3ad9e77">
-			</testcontainer>
-			<testcontainer
 			id="6406e09a-057a-43fb-8800-e15265b29c87">
 			</testcontainer>
 			<testcontainer
 			id="7170d466-0f40-4267-8615-76aa983568a1">
 			</testcontainer>
 			<testcontainer
-			id="8b17d980-993b-4896-a681-5422a9e52217">
-			</testcontainer>
-			<testcontainer
 			id="a27fa1ea-50c1-45b4-b453-4331d9eb0813">
-			</testcontainer>
-			<testcontainer
-			id="c1699588-d955-4d76-9eb0-cd33276e1ef5">
-			</testcontainer>
-			<testcontainer
-			id="c54a212a-19ec-4574-a711-de66a944c10c">
 			</testcontainer>
 			<testcontainer
 			id="c9f22167-116d-46e5-b2fc-de0a7ff30c6e">
