@@ -131,7 +131,7 @@ mode="Global">
 		<keysequenceitem
 		KeySequence="{LWin down}{Up}{LWin up}"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="c9df3192-20de-42b6-a15d-b34653fb36a8">
@@ -150,6 +150,81 @@ mode="Global">
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="641978d2-8aff-4c6d-abe3-8e0e04cf1f57"
+		sx="1167"
+		sy="20"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4093620d-3df8-4fd1-a196-7c89f40e7b18"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="1"
+				prefcap="button"
+				rect="1144,5,46,30"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Maximieren
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Drücken
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Maximiert das Fenster.
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Maximieren
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PushButton
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmTabProjekt']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Maximieren']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 		<explicitdelayitem
 		duration="2000ms"
 		enabled="True"
@@ -4082,7 +4157,7 @@ mode="Global">
 		action="Move"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="LowerCenter"
 		movetime="300ms"
 		optional="False"
@@ -4317,7 +4392,7 @@ mode="Global">
 		<keysequenceitem
 		KeySequence="{LWin down}{Down}{LWin up}"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="c9df3192-20de-42b6-a15d-b34653fb36a8">
@@ -4336,6 +4411,32 @@ mode="Global">
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="d799b253-bc8e-4198-af03-7b8db82f801a"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8778e896-1daa-4258-bd5b-b97ecaafecb4"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmTabProjekt']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Minimieren']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="14c11188-9619-42c0-9f6d-ea1d005fff2f"

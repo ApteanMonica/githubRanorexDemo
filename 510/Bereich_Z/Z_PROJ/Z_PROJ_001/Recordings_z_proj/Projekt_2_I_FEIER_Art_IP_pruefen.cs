@@ -185,8 +185,8 @@ namespace Z_PROJ_001.Recordings_z_proj
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Allgemein_Tab_regex_Sonderzeichen' at Center.", repo.FrmTabProjekt.Allgemein_Tab_regex_SonderzeichenInfo, new RecordItemIndex(9));
             repo.FrmTabProjekt.Allgemein_Tab_regex_Sonderzeichen.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'FrmTabProjekt.Register_Allgemein.Text1'.", repo.FrmTabProjekt.Register_Allgemein.Text1Info, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Allgemein.Text1Info, "Text", "1");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'FrmTabProjekt.Register_Allgemein.Text_Zeittyp'.", repo.FrmTabProjekt.Register_Allgemein.Text_ZeittypInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Allgemein.Text_ZeittypInfo, "Text", "1");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmTabProjekt.Register_Allgemein.CbProjBukzzeit'.", repo.FrmTabProjekt.Register_Allgemein.CbProjBukzzeitInfo, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.FrmTabProjekt.Register_Allgemein.CbProjBukzzeitInfo, "Checked", "True");

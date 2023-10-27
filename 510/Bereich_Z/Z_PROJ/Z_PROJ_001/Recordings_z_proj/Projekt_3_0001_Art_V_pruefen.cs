@@ -181,8 +181,8 @@ namespace Z_PROJ_001.Recordings_z_proj
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(12));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='KA') on item 'FrmTabProjekt.Register_Allgemein.Text1'.", repo.FrmTabProjekt.Register_Allgemein.Text1Info, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Allgemein.Text1Info, "Text", "KA");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='KA') on item 'FrmTabProjekt.Register_Allgemein.Text_Zeittyp'.", repo.FrmTabProjekt.Register_Allgemein.Text_ZeittypInfo, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Allgemein.Text_ZeittypInfo, "Text", "KA");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmTabProjekt.Register_Allgemein.CbProjBukzzeit'.", repo.FrmTabProjekt.Register_Allgemein.CbProjBukzzeitInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.FrmTabProjekt.Register_Allgemein.CbProjBukzzeitInfo, "Checked", "False");

@@ -149,6 +149,8 @@ namespace Z_PROJ_001
             Z_PROJ_001RepositoryFolders.Register_PhasenFolder _register_phasen;
             SelfInfoClass _selfInfo;
             RepoItemInfo _titlebar100projektverwaltenInfo;
+            RepoItemInfo _maximierenInfo;
+            RepoItemInfo _minimierenInfo;
             RepoItemInfo _pbnew_suchmaskeInfo;
             RepoItemInfo _text_suchmaskeInfo;
             RepoItemInfo _pbperformsimplesearch_lupe_sucheInfo;
@@ -178,6 +180,8 @@ namespace Z_PROJ_001
                 _register_phasen = new Z_PROJ_001RepositoryFolders.Register_PhasenFolder(this);
                 _selfInfo = new SelfInfoClass(this);
                 _titlebar100projektverwaltenInfo = new RepoItemInfo(this, "TitleBar100ProjektVerwalten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "c5e91bb2-a1d3-496e-be40-fdeb5c4e2ce8");
+                _maximierenInfo = new RepoItemInfo(this, "Maximieren", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Maximieren']", "", 30000, null, "4093620d-3df8-4fd1-a196-7c89f40e7b18");
+                _minimierenInfo = new RepoItemInfo(this, "Minimieren", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Minimieren']", "", 30000, null, "8778e896-1daa-4258-bd5b-b97ecaafecb4");
                 _pbnew_suchmaskeInfo = new RepoItemInfo(this, "PbNew_Suchmaske", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']", "", 30000, null, "38c897f7-5d76-481a-9492-7a5886dac6ef");
                 _text_suchmaskeInfo = new RepoItemInfo(this, "Text_Suchmaske", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/text[@controlname='dfSearchExpression']/text[@accessiblerole='Text']", "", 30000, null, "67fceff6-eeea-48ff-8702-a1d184ba4f6a");
                 _pbperformsimplesearch_lupe_sucheInfo = new RepoItemInfo(this, "PbPerformSimpleSearch_Lupe_Suche", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/button[@controlname='pbPerformSimpleSearch']", "", 30000, null, "1863a4b2-08ed-4d5c-8063-1ea879a5d300");
@@ -297,6 +301,54 @@ namespace Z_PROJ_001
                 get
                 {
                     return _titlebar100projektverwaltenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Maximieren item.
+            /// </summary>
+            [RepositoryItem("4093620d-3df8-4fd1-a196-7c89f40e7b18")]
+            public virtual Ranorex.Button Maximieren
+            {
+                get
+                {
+                    return _maximierenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Maximieren item info.
+            /// </summary>
+            [RepositoryItemInfo("4093620d-3df8-4fd1-a196-7c89f40e7b18")]
+            public virtual RepoItemInfo MaximierenInfo
+            {
+                get
+                {
+                    return _maximierenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Minimieren item.
+            /// </summary>
+            [RepositoryItem("8778e896-1daa-4258-bd5b-b97ecaafecb4")]
+            public virtual Ranorex.Button Minimieren
+            {
+                get
+                {
+                    return _minimierenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Minimieren item info.
+            /// </summary>
+            [RepositoryItemInfo("8778e896-1daa-4258-bd5b-b97ecaafecb4")]
+            public virtual RepoItemInfo MinimierenInfo
+            {
+                get
+                {
+                    return _minimierenInfo;
                 }
             }
 
@@ -1015,7 +1067,7 @@ namespace Z_PROJ_001
         [RepositoryFolder("fa854689-e72b-4215-b1ad-cb2f44384cda")]
         public partial class Register_AllgemeinFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _text1Info;
+            RepoItemInfo _text_zeittypInfo;
             RepoItemInfo _cbprojbukzzeitInfo;
             RepoItemInfo _cbprojkzuhrInfo;
             RepoItemInfo _cbprojkzdauerInfo;
@@ -1026,7 +1078,7 @@ namespace Z_PROJ_001
             public Register_AllgemeinFolder(RepoGenBaseFolder parentFolder) :
                     base("Register_Allgemein", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgemein']", parentFolder, 30000, null, false, "fa854689-e72b-4215-b1ad-cb2f44384cda", "")
             {
-                _text1Info = new RepoItemInfo(this, "Text1", "text[@controlname='dfZtyp_cd']/text[@accessiblerole='Text']", "", 30000, null, "32799cf4-0377-43e3-a189-f4bd70f4e06f");
+                _text_zeittypInfo = new RepoItemInfo(this, "Text_Zeittyp", "text[@controlname='dfZtyp_cd']/text[@accessiblerole='Text']", "", 30000, null, "32799cf4-0377-43e3-a189-f4bd70f4e06f");
                 _cbprojbukzzeitInfo = new RepoItemInfo(this, "CbProjBukzzeit", "checkbox[@controlname='cbProj_bukzzeit']", "", 30000, null, "50b9ce1b-e4b1-4590-b923-e7d5cb8aba2b");
                 _cbprojkzuhrInfo = new RepoItemInfo(this, "CbProjKzuhr", "checkbox[@controlname='cbProj_kzuhr']", "", 30000, null, "e82b47c7-6883-4de3-95e1-3f93bc3adadd");
                 _cbprojkzdauerInfo = new RepoItemInfo(this, "CbProjKzdauer", "checkbox[@controlname='cbProj_kzdauer']", "", 30000, null, "a3f0a287-756c-41a3-9e5f-8c28357ef7e5");
@@ -1057,26 +1109,26 @@ namespace Z_PROJ_001
             }
 
             /// <summary>
-            /// The Text1 item.
+            /// The Text_Zeittyp item.
             /// </summary>
             [RepositoryItem("32799cf4-0377-43e3-a189-f4bd70f4e06f")]
-            public virtual Ranorex.Text Text1
+            public virtual Ranorex.Text Text_Zeittyp
             {
                 get
                 {
-                    return _text1Info.CreateAdapter<Ranorex.Text>(true);
+                    return _text_zeittypInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The Text1 item info.
+            /// The Text_Zeittyp item info.
             /// </summary>
             [RepositoryItemInfo("32799cf4-0377-43e3-a189-f4bd70f4e06f")]
-            public virtual RepoItemInfo Text1Info
+            public virtual RepoItemInfo Text_ZeittypInfo
             {
                 get
                 {
-                    return _text1Info;
+                    return _text_zeittypInfo;
                 }
             }
 
@@ -1160,29 +1212,8 @@ namespace Z_PROJ_001
         public partial class Register_PhasenFolder : RepoGenBaseFolder
         {
             Z_PROJ_001RepositoryFolders.Register_Phasen_FelderFolder _register_phasen_felder;
+            Z_PROJ_001RepositoryFolders.Register_Phasen_ZeilenFolder _register_phasen_zeilen;
             FlexGrid_PhasenInfoClass _flexgrid_phasenInfo;
-            RepoItemInfo _phasen_row1Info;
-            RepoItemInfo _phasen_row2Info;
-            RepoItemInfo _phasen_row3Info;
-            RepoItemInfo _phasen_row4Info;
-            RepoItemInfo _phasen_row5Info;
-            RepoItemInfo _phasen_row6Info;
-            RepoItemInfo _phasen_row7Info;
-            RepoItemInfo _phasen_row8Info;
-            RepoItemInfo _phasen_row9Info;
-            RepoItemInfo _phasen_row10Info;
-            RepoItemInfo _phasen_row11Info;
-            RepoItemInfo _phasen_row12Info;
-            RepoItemInfo _phasen_row13Info;
-            RepoItemInfo _phasen_row14Info;
-            RepoItemInfo _phasen_row15Info;
-            RepoItemInfo _phasen_row16Info;
-            RepoItemInfo _phasen_row17Info;
-            RepoItemInfo _phasen_row18Info;
-            RepoItemInfo _phasen_row19Info;
-            RepoItemInfo _phasen_row20Info;
-            RepoItemInfo _phasen_row21Info;
-            RepoItemInfo _phasen_row22Info;
 
             /// <summary>
             /// Creates a new Register_Phasen  folder.
@@ -1191,29 +1222,8 @@ namespace Z_PROJ_001
                     base("Register_Phasen", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpPhase']", parentFolder, 30000, null, false, "afe9a97a-be87-4bf8-b5b7-d884b92fd9fd", "")
             {
                 _register_phasen_felder = new Z_PROJ_001RepositoryFolders.Register_Phasen_FelderFolder(this);
+                _register_phasen_zeilen = new Z_PROJ_001RepositoryFolders.Register_Phasen_ZeilenFolder(this);
                 _flexgrid_phasenInfo = new FlexGrid_PhasenInfoClass(this);
-                _phasen_row1Info = new RepoItemInfo(this, "Phasen_Row1", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']", "", 30000, null, "31d30eca-4d41-4845-bd41-217ea2994489");
-                _phasen_row2Info = new RepoItemInfo(this, "Phasen_Row2", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']", "", 30000, null, "aed270d3-9590-4359-8bc9-6ec6dbc04c47");
-                _phasen_row3Info = new RepoItemInfo(this, "Phasen_Row3", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']", "", 30000, null, "f709dfce-edf2-4743-a281-41a346cc47aa");
-                _phasen_row4Info = new RepoItemInfo(this, "Phasen_Row4", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']", "", 30000, null, "c8d7b0d9-e3d1-4f5c-9996-c27b2168cabf");
-                _phasen_row5Info = new RepoItemInfo(this, "Phasen_Row5", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']", "", 30000, null, "9cd74c6d-c147-4133-91bb-ca43c7663f9e");
-                _phasen_row6Info = new RepoItemInfo(this, "Phasen_Row6", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 6']", "", 30000, null, "a06164fd-58d1-4d2e-8f0a-a51d9ddfaa11");
-                _phasen_row7Info = new RepoItemInfo(this, "Phasen_Row7", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 7']", "", 30000, null, "2b0a32a8-67f8-4a85-901a-8ca381366ed5");
-                _phasen_row8Info = new RepoItemInfo(this, "Phasen_Row8", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 8']", "", 30000, null, "8f0a092d-5510-4368-b5a2-b13322486852");
-                _phasen_row9Info = new RepoItemInfo(this, "Phasen_Row9", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 9']", "", 30000, null, "32af5f41-5040-48aa-9451-8bb439138076");
-                _phasen_row10Info = new RepoItemInfo(this, "Phasen_Row10", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 10']", "", 30000, null, "9d16e76e-2291-432d-a031-d5b7c7e51cda");
-                _phasen_row11Info = new RepoItemInfo(this, "Phasen_Row11", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 11']", "", 30000, null, "69fc284e-76af-478f-87db-ec04d1d7a82d");
-                _phasen_row12Info = new RepoItemInfo(this, "Phasen_Row12", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 12']", "", 30000, null, "731229c3-6aee-4243-a7f7-3d7e6d098312");
-                _phasen_row13Info = new RepoItemInfo(this, "Phasen_Row13", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 13']", "", 30000, null, "bdb47326-7755-4537-b963-f41b8d38af9d");
-                _phasen_row14Info = new RepoItemInfo(this, "Phasen_Row14", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 14']", "", 30000, null, "394b92fc-cf6b-4243-876b-79de552cefce");
-                _phasen_row15Info = new RepoItemInfo(this, "Phasen_Row15", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 15']", "", 30000, null, "7927a717-4d26-4602-af51-451b879a12f7");
-                _phasen_row16Info = new RepoItemInfo(this, "Phasen_Row16", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 16']", "", 30000, null, "a00fa882-8b6a-4b22-af77-52178d210764");
-                _phasen_row17Info = new RepoItemInfo(this, "Phasen_Row17", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 17']", "", 30000, null, "b3ceb486-65b1-4486-9445-9f83efc9e449");
-                _phasen_row18Info = new RepoItemInfo(this, "Phasen_Row18", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 18']", "", 30000, null, "82eed960-0e0d-4685-81af-ea8c3bbc9e6c");
-                _phasen_row19Info = new RepoItemInfo(this, "Phasen_Row19", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 19']", "", 30000, null, "cd490c94-5863-42da-8463-c8d5208084a8");
-                _phasen_row20Info = new RepoItemInfo(this, "Phasen_Row20", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 20']", "", 30000, null, "436771b9-0648-43e7-8a17-af6bc1d83d87");
-                _phasen_row21Info = new RepoItemInfo(this, "Phasen_Row21", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 21']", "", 30000, null, "a5f3e179-22f8-40f5-abfe-8072ef081fe6");
-                _phasen_row22Info = new RepoItemInfo(this, "Phasen_Row22", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 22']", "", 30000, null, "7b93d783-8fbd-4497-9ae4-3a8bd3078a92");
             }
 
             /// <summary>
@@ -1251,6 +1261,27 @@ namespace Z_PROJ_001
                 }
 
                 /// <summary>
+                /// Gets the Screenshot_I_FEIER_Phasen_Spalten_einzeln_Sicherung item image.
+                /// </summary>
+                /// <returns>The Screenshot_I_FEIER_Phasen_Spalten_einzeln_Sicherung image.</returns>
+                [RepositoryImage("0126061c-de94-435c-af71-d593b1cccb16")]
+                public CompressedImage GetScreenshot_I_FEIER_Phasen_Spalten_einzeln_Sicherung()
+                {
+                    return GetImage("0126061c-de94-435c-af71-d593b1cccb16");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot_I_FEIER_Phasen_Spalten_einzeln_Sicherung item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("0126061c-de94-435c-af71-d593b1cccb16")]
+                public CompressedImage GetScreenshot_I_FEIER_Phasen_Spalten_einzeln_Sicherung(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("0126061c-de94-435c-af71-d593b1cccb16", cropRect);
+                }
+
+                /// <summary>
                 /// Gets the Screenshot_K_2006_Phasen_Spalten_einzeln item image.
                 /// </summary>
                 /// <returns>The Screenshot_K_2006_Phasen_Spalten_einzeln image.</returns>
@@ -1269,6 +1300,27 @@ namespace Z_PROJ_001
                 public CompressedImage GetScreenshot_K_2006_Phasen_Spalten_einzeln(System.Drawing.Rectangle cropRect)
                 {
                     return GetImage("0710bc96-f015-4cd3-a772-3aeb278d63d7", cropRect);
+                }
+
+                /// <summary>
+                /// Gets the Screenshot_K_2006_Phasen_Spalten_einzeln_Sicherung item image.
+                /// </summary>
+                /// <returns>The Screenshot_K_2006_Phasen_Spalten_einzeln_Sicherung image.</returns>
+                [RepositoryImage("65bb1237-533f-4562-bcdb-257d3f4fc685")]
+                public CompressedImage GetScreenshot_K_2006_Phasen_Spalten_einzeln_Sicherung()
+                {
+                    return GetImage("65bb1237-533f-4562-bcdb-257d3f4fc685");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot_K_2006_Phasen_Spalten_einzeln_Sicherung item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("65bb1237-533f-4562-bcdb-257d3f4fc685")]
+                public CompressedImage GetScreenshot_K_2006_Phasen_Spalten_einzeln_Sicherung(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("65bb1237-533f-4562-bcdb-257d3f4fc685", cropRect);
                 }
             }
 
@@ -1321,540 +1373,21 @@ namespace Z_PROJ_001
             }
 
             /// <summary>
-            /// The Phasen_Row1 item.
-            /// </summary>
-            [RepositoryItem("31d30eca-4d41-4845-bd41-217ea2994489")]
-            public virtual Ranorex.Row Phasen_Row1
-            {
-                get
-                {
-                    return _phasen_row1Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row1 item info.
-            /// </summary>
-            [RepositoryItemInfo("31d30eca-4d41-4845-bd41-217ea2994489")]
-            public virtual RepoItemInfo Phasen_Row1Info
-            {
-                get
-                {
-                    return _phasen_row1Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row2 item.
-            /// </summary>
-            [RepositoryItem("aed270d3-9590-4359-8bc9-6ec6dbc04c47")]
-            public virtual Ranorex.Row Phasen_Row2
-            {
-                get
-                {
-                    return _phasen_row2Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row2 item info.
-            /// </summary>
-            [RepositoryItemInfo("aed270d3-9590-4359-8bc9-6ec6dbc04c47")]
-            public virtual RepoItemInfo Phasen_Row2Info
-            {
-                get
-                {
-                    return _phasen_row2Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row3 item.
-            /// </summary>
-            [RepositoryItem("f709dfce-edf2-4743-a281-41a346cc47aa")]
-            public virtual Ranorex.Row Phasen_Row3
-            {
-                get
-                {
-                    return _phasen_row3Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row3 item info.
-            /// </summary>
-            [RepositoryItemInfo("f709dfce-edf2-4743-a281-41a346cc47aa")]
-            public virtual RepoItemInfo Phasen_Row3Info
-            {
-                get
-                {
-                    return _phasen_row3Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row4 item.
-            /// </summary>
-            [RepositoryItem("c8d7b0d9-e3d1-4f5c-9996-c27b2168cabf")]
-            public virtual Ranorex.Row Phasen_Row4
-            {
-                get
-                {
-                    return _phasen_row4Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row4 item info.
-            /// </summary>
-            [RepositoryItemInfo("c8d7b0d9-e3d1-4f5c-9996-c27b2168cabf")]
-            public virtual RepoItemInfo Phasen_Row4Info
-            {
-                get
-                {
-                    return _phasen_row4Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row5 item.
-            /// </summary>
-            [RepositoryItem("9cd74c6d-c147-4133-91bb-ca43c7663f9e")]
-            public virtual Ranorex.Row Phasen_Row5
-            {
-                get
-                {
-                    return _phasen_row5Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row5 item info.
-            /// </summary>
-            [RepositoryItemInfo("9cd74c6d-c147-4133-91bb-ca43c7663f9e")]
-            public virtual RepoItemInfo Phasen_Row5Info
-            {
-                get
-                {
-                    return _phasen_row5Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row6 item.
-            /// </summary>
-            [RepositoryItem("a06164fd-58d1-4d2e-8f0a-a51d9ddfaa11")]
-            public virtual Ranorex.Row Phasen_Row6
-            {
-                get
-                {
-                    return _phasen_row6Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row6 item info.
-            /// </summary>
-            [RepositoryItemInfo("a06164fd-58d1-4d2e-8f0a-a51d9ddfaa11")]
-            public virtual RepoItemInfo Phasen_Row6Info
-            {
-                get
-                {
-                    return _phasen_row6Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row7 item.
-            /// </summary>
-            [RepositoryItem("2b0a32a8-67f8-4a85-901a-8ca381366ed5")]
-            public virtual Ranorex.Row Phasen_Row7
-            {
-                get
-                {
-                    return _phasen_row7Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row7 item info.
-            /// </summary>
-            [RepositoryItemInfo("2b0a32a8-67f8-4a85-901a-8ca381366ed5")]
-            public virtual RepoItemInfo Phasen_Row7Info
-            {
-                get
-                {
-                    return _phasen_row7Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row8 item.
-            /// </summary>
-            [RepositoryItem("8f0a092d-5510-4368-b5a2-b13322486852")]
-            public virtual Ranorex.Row Phasen_Row8
-            {
-                get
-                {
-                    return _phasen_row8Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row8 item info.
-            /// </summary>
-            [RepositoryItemInfo("8f0a092d-5510-4368-b5a2-b13322486852")]
-            public virtual RepoItemInfo Phasen_Row8Info
-            {
-                get
-                {
-                    return _phasen_row8Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row9 item.
-            /// </summary>
-            [RepositoryItem("32af5f41-5040-48aa-9451-8bb439138076")]
-            public virtual Ranorex.Row Phasen_Row9
-            {
-                get
-                {
-                    return _phasen_row9Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row9 item info.
-            /// </summary>
-            [RepositoryItemInfo("32af5f41-5040-48aa-9451-8bb439138076")]
-            public virtual RepoItemInfo Phasen_Row9Info
-            {
-                get
-                {
-                    return _phasen_row9Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row10 item.
-            /// </summary>
-            [RepositoryItem("9d16e76e-2291-432d-a031-d5b7c7e51cda")]
-            public virtual Ranorex.Row Phasen_Row10
-            {
-                get
-                {
-                    return _phasen_row10Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row10 item info.
-            /// </summary>
-            [RepositoryItemInfo("9d16e76e-2291-432d-a031-d5b7c7e51cda")]
-            public virtual RepoItemInfo Phasen_Row10Info
-            {
-                get
-                {
-                    return _phasen_row10Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row11 item.
-            /// </summary>
-            [RepositoryItem("69fc284e-76af-478f-87db-ec04d1d7a82d")]
-            public virtual Ranorex.Row Phasen_Row11
-            {
-                get
-                {
-                    return _phasen_row11Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row11 item info.
-            /// </summary>
-            [RepositoryItemInfo("69fc284e-76af-478f-87db-ec04d1d7a82d")]
-            public virtual RepoItemInfo Phasen_Row11Info
-            {
-                get
-                {
-                    return _phasen_row11Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row12 item.
-            /// </summary>
-            [RepositoryItem("731229c3-6aee-4243-a7f7-3d7e6d098312")]
-            public virtual Ranorex.Row Phasen_Row12
-            {
-                get
-                {
-                    return _phasen_row12Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row12 item info.
-            /// </summary>
-            [RepositoryItemInfo("731229c3-6aee-4243-a7f7-3d7e6d098312")]
-            public virtual RepoItemInfo Phasen_Row12Info
-            {
-                get
-                {
-                    return _phasen_row12Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row13 item.
-            /// </summary>
-            [RepositoryItem("bdb47326-7755-4537-b963-f41b8d38af9d")]
-            public virtual Ranorex.Row Phasen_Row13
-            {
-                get
-                {
-                    return _phasen_row13Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row13 item info.
-            /// </summary>
-            [RepositoryItemInfo("bdb47326-7755-4537-b963-f41b8d38af9d")]
-            public virtual RepoItemInfo Phasen_Row13Info
-            {
-                get
-                {
-                    return _phasen_row13Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row14 item.
-            /// </summary>
-            [RepositoryItem("394b92fc-cf6b-4243-876b-79de552cefce")]
-            public virtual Ranorex.Row Phasen_Row14
-            {
-                get
-                {
-                    return _phasen_row14Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row14 item info.
-            /// </summary>
-            [RepositoryItemInfo("394b92fc-cf6b-4243-876b-79de552cefce")]
-            public virtual RepoItemInfo Phasen_Row14Info
-            {
-                get
-                {
-                    return _phasen_row14Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row15 item.
-            /// </summary>
-            [RepositoryItem("7927a717-4d26-4602-af51-451b879a12f7")]
-            public virtual Ranorex.Row Phasen_Row15
-            {
-                get
-                {
-                    return _phasen_row15Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row15 item info.
-            /// </summary>
-            [RepositoryItemInfo("7927a717-4d26-4602-af51-451b879a12f7")]
-            public virtual RepoItemInfo Phasen_Row15Info
-            {
-                get
-                {
-                    return _phasen_row15Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row16 item.
-            /// </summary>
-            [RepositoryItem("a00fa882-8b6a-4b22-af77-52178d210764")]
-            public virtual Ranorex.Row Phasen_Row16
-            {
-                get
-                {
-                    return _phasen_row16Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row16 item info.
-            /// </summary>
-            [RepositoryItemInfo("a00fa882-8b6a-4b22-af77-52178d210764")]
-            public virtual RepoItemInfo Phasen_Row16Info
-            {
-                get
-                {
-                    return _phasen_row16Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row17 item.
-            /// </summary>
-            [RepositoryItem("b3ceb486-65b1-4486-9445-9f83efc9e449")]
-            public virtual Ranorex.Row Phasen_Row17
-            {
-                get
-                {
-                    return _phasen_row17Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row17 item info.
-            /// </summary>
-            [RepositoryItemInfo("b3ceb486-65b1-4486-9445-9f83efc9e449")]
-            public virtual RepoItemInfo Phasen_Row17Info
-            {
-                get
-                {
-                    return _phasen_row17Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row18 item.
-            /// </summary>
-            [RepositoryItem("82eed960-0e0d-4685-81af-ea8c3bbc9e6c")]
-            public virtual Ranorex.Row Phasen_Row18
-            {
-                get
-                {
-                    return _phasen_row18Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row18 item info.
-            /// </summary>
-            [RepositoryItemInfo("82eed960-0e0d-4685-81af-ea8c3bbc9e6c")]
-            public virtual RepoItemInfo Phasen_Row18Info
-            {
-                get
-                {
-                    return _phasen_row18Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row19 item.
-            /// </summary>
-            [RepositoryItem("cd490c94-5863-42da-8463-c8d5208084a8")]
-            public virtual Ranorex.Row Phasen_Row19
-            {
-                get
-                {
-                    return _phasen_row19Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row19 item info.
-            /// </summary>
-            [RepositoryItemInfo("cd490c94-5863-42da-8463-c8d5208084a8")]
-            public virtual RepoItemInfo Phasen_Row19Info
-            {
-                get
-                {
-                    return _phasen_row19Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row20 item.
-            /// </summary>
-            [RepositoryItem("436771b9-0648-43e7-8a17-af6bc1d83d87")]
-            public virtual Ranorex.Row Phasen_Row20
-            {
-                get
-                {
-                    return _phasen_row20Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row20 item info.
-            /// </summary>
-            [RepositoryItemInfo("436771b9-0648-43e7-8a17-af6bc1d83d87")]
-            public virtual RepoItemInfo Phasen_Row20Info
-            {
-                get
-                {
-                    return _phasen_row20Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row21 item.
-            /// </summary>
-            [RepositoryItem("a5f3e179-22f8-40f5-abfe-8072ef081fe6")]
-            public virtual Ranorex.Row Phasen_Row21
-            {
-                get
-                {
-                    return _phasen_row21Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row21 item info.
-            /// </summary>
-            [RepositoryItemInfo("a5f3e179-22f8-40f5-abfe-8072ef081fe6")]
-            public virtual RepoItemInfo Phasen_Row21Info
-            {
-                get
-                {
-                    return _phasen_row21Info;
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row22 item.
-            /// </summary>
-            [RepositoryItem("7b93d783-8fbd-4497-9ae4-3a8bd3078a92")]
-            public virtual Ranorex.Row Phasen_Row22
-            {
-                get
-                {
-                    return _phasen_row22Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Phasen_Row22 item info.
-            /// </summary>
-            [RepositoryItemInfo("7b93d783-8fbd-4497-9ae4-3a8bd3078a92")]
-            public virtual RepoItemInfo Phasen_Row22Info
-            {
-                get
-                {
-                    return _phasen_row22Info;
-                }
-            }
-
-            /// <summary>
             /// The Register_Phasen_Felder folder.
             /// </summary>
             [RepositoryFolder("51bc3d8b-cb26-40a9-b8f6-4f0c47211c81")]
             public virtual Z_PROJ_001RepositoryFolders.Register_Phasen_FelderFolder Register_Phasen_Felder
             {
                 get { return _register_phasen_felder; }
+            }
+
+            /// <summary>
+            /// The Register_Phasen_Zeilen folder.
+            /// </summary>
+            [RepositoryFolder("0042a476-24fd-4155-89dc-630e8ae3dd3c")]
+            public virtual Z_PROJ_001RepositoryFolders.Register_Phasen_ZeilenFolder Register_Phasen_Zeilen
+            {
+                get { return _register_phasen_zeilen; }
             }
         }
 
@@ -2700,6 +2233,618 @@ namespace Z_PROJ_001
                 get
                 {
                     return _colphaskzfortschrittrow22Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Register_Phasen_ZeilenFolder folder.
+        /// </summary>
+        [RepositoryFolder("0042a476-24fd-4155-89dc-630e8ae3dd3c")]
+        public partial class Register_Phasen_ZeilenFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _phasen_row1Info;
+            RepoItemInfo _phasen_row2Info;
+            RepoItemInfo _phasen_row3Info;
+            RepoItemInfo _phasen_row4Info;
+            RepoItemInfo _phasen_row5Info;
+            RepoItemInfo _phasen_row6Info;
+            RepoItemInfo _phasen_row7Info;
+            RepoItemInfo _phasen_row8Info;
+            RepoItemInfo _phasen_row9Info;
+            RepoItemInfo _phasen_row10Info;
+            RepoItemInfo _phasen_row11Info;
+            RepoItemInfo _phasen_row12Info;
+            RepoItemInfo _phasen_row13Info;
+            RepoItemInfo _phasen_row14Info;
+            RepoItemInfo _phasen_row15Info;
+            RepoItemInfo _phasen_row16Info;
+            RepoItemInfo _phasen_row17Info;
+            RepoItemInfo _phasen_row18Info;
+            RepoItemInfo _phasen_row19Info;
+            RepoItemInfo _phasen_row20Info;
+            RepoItemInfo _phasen_row21Info;
+            RepoItemInfo _phasen_row22Info;
+
+            /// <summary>
+            /// Creates a new Register_Phasen_Zeilen  folder.
+            /// </summary>
+            public Register_Phasen_ZeilenFolder(RepoGenBaseFolder parentFolder) :
+                    base("Register_Phasen_Zeilen", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "0042a476-24fd-4155-89dc-630e8ae3dd3c", "")
+            {
+                _phasen_row1Info = new RepoItemInfo(this, "Phasen_Row1", "row[@accessiblename='Row 1']", "", 30000, null, "31d30eca-4d41-4845-bd41-217ea2994489");
+                _phasen_row2Info = new RepoItemInfo(this, "Phasen_Row2", "row[@accessiblename='Row 2']", "", 30000, null, "aed270d3-9590-4359-8bc9-6ec6dbc04c47");
+                _phasen_row3Info = new RepoItemInfo(this, "Phasen_Row3", "row[@accessiblename='Row 3']", "", 30000, null, "f709dfce-edf2-4743-a281-41a346cc47aa");
+                _phasen_row4Info = new RepoItemInfo(this, "Phasen_Row4", "row[@accessiblename='Row 4']", "", 30000, null, "c8d7b0d9-e3d1-4f5c-9996-c27b2168cabf");
+                _phasen_row5Info = new RepoItemInfo(this, "Phasen_Row5", "row[@accessiblename='Row 5']", "", 30000, null, "9cd74c6d-c147-4133-91bb-ca43c7663f9e");
+                _phasen_row6Info = new RepoItemInfo(this, "Phasen_Row6", "row[@accessiblename='Row 6']", "", 30000, null, "a06164fd-58d1-4d2e-8f0a-a51d9ddfaa11");
+                _phasen_row7Info = new RepoItemInfo(this, "Phasen_Row7", "row[@accessiblename='Row 7']", "", 30000, null, "2b0a32a8-67f8-4a85-901a-8ca381366ed5");
+                _phasen_row8Info = new RepoItemInfo(this, "Phasen_Row8", "row[@accessiblename='Row 8']", "", 30000, null, "8f0a092d-5510-4368-b5a2-b13322486852");
+                _phasen_row9Info = new RepoItemInfo(this, "Phasen_Row9", "row[@accessiblename='Row 9']", "", 30000, null, "32af5f41-5040-48aa-9451-8bb439138076");
+                _phasen_row10Info = new RepoItemInfo(this, "Phasen_Row10", "row[@accessiblename='Row 10']", "", 30000, null, "9d16e76e-2291-432d-a031-d5b7c7e51cda");
+                _phasen_row11Info = new RepoItemInfo(this, "Phasen_Row11", "row[@accessiblename='Row 11']", "", 30000, null, "69fc284e-76af-478f-87db-ec04d1d7a82d");
+                _phasen_row12Info = new RepoItemInfo(this, "Phasen_Row12", "row[@accessiblename='Row 12']", "", 30000, null, "731229c3-6aee-4243-a7f7-3d7e6d098312");
+                _phasen_row13Info = new RepoItemInfo(this, "Phasen_Row13", "row[@accessiblename='Row 13']", "", 30000, null, "bdb47326-7755-4537-b963-f41b8d38af9d");
+                _phasen_row14Info = new RepoItemInfo(this, "Phasen_Row14", "row[@accessiblename='Row 14']", "", 30000, null, "394b92fc-cf6b-4243-876b-79de552cefce");
+                _phasen_row15Info = new RepoItemInfo(this, "Phasen_Row15", "row[@accessiblename='Row 15']", "", 30000, null, "7927a717-4d26-4602-af51-451b879a12f7");
+                _phasen_row16Info = new RepoItemInfo(this, "Phasen_Row16", "row[@accessiblename='Row 16']", "", 30000, null, "a00fa882-8b6a-4b22-af77-52178d210764");
+                _phasen_row17Info = new RepoItemInfo(this, "Phasen_Row17", "row[@accessiblename='Row 17']", "", 30000, null, "b3ceb486-65b1-4486-9445-9f83efc9e449");
+                _phasen_row18Info = new RepoItemInfo(this, "Phasen_Row18", "row[@accessiblename='Row 18']", "", 30000, null, "82eed960-0e0d-4685-81af-ea8c3bbc9e6c");
+                _phasen_row19Info = new RepoItemInfo(this, "Phasen_Row19", "row[@accessiblename='Row 19']", "", 30000, null, "cd490c94-5863-42da-8463-c8d5208084a8");
+                _phasen_row20Info = new RepoItemInfo(this, "Phasen_Row20", "row[@accessiblename='Row 20']", "", 30000, null, "436771b9-0648-43e7-8a17-af6bc1d83d87");
+                _phasen_row21Info = new RepoItemInfo(this, "Phasen_Row21", "row[@accessiblename='Row 21']", "", 30000, null, "a5f3e179-22f8-40f5-abfe-8072ef081fe6");
+                _phasen_row22Info = new RepoItemInfo(this, "Phasen_Row22", "row[@accessiblename='Row 22']", "", 30000, null, "7b93d783-8fbd-4497-9ae4-3a8bd3078a92");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("0042a476-24fd-4155-89dc-630e8ae3dd3c")]
+            public virtual Ranorex.Table Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("0042a476-24fd-4155-89dc-630e8ae3dd3c")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row1 item.
+            /// </summary>
+            [RepositoryItem("31d30eca-4d41-4845-bd41-217ea2994489")]
+            public virtual Ranorex.Row Phasen_Row1
+            {
+                get
+                {
+                    return _phasen_row1Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row1 item info.
+            /// </summary>
+            [RepositoryItemInfo("31d30eca-4d41-4845-bd41-217ea2994489")]
+            public virtual RepoItemInfo Phasen_Row1Info
+            {
+                get
+                {
+                    return _phasen_row1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row2 item.
+            /// </summary>
+            [RepositoryItem("aed270d3-9590-4359-8bc9-6ec6dbc04c47")]
+            public virtual Ranorex.Row Phasen_Row2
+            {
+                get
+                {
+                    return _phasen_row2Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row2 item info.
+            /// </summary>
+            [RepositoryItemInfo("aed270d3-9590-4359-8bc9-6ec6dbc04c47")]
+            public virtual RepoItemInfo Phasen_Row2Info
+            {
+                get
+                {
+                    return _phasen_row2Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row3 item.
+            /// </summary>
+            [RepositoryItem("f709dfce-edf2-4743-a281-41a346cc47aa")]
+            public virtual Ranorex.Row Phasen_Row3
+            {
+                get
+                {
+                    return _phasen_row3Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row3 item info.
+            /// </summary>
+            [RepositoryItemInfo("f709dfce-edf2-4743-a281-41a346cc47aa")]
+            public virtual RepoItemInfo Phasen_Row3Info
+            {
+                get
+                {
+                    return _phasen_row3Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row4 item.
+            /// </summary>
+            [RepositoryItem("c8d7b0d9-e3d1-4f5c-9996-c27b2168cabf")]
+            public virtual Ranorex.Row Phasen_Row4
+            {
+                get
+                {
+                    return _phasen_row4Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row4 item info.
+            /// </summary>
+            [RepositoryItemInfo("c8d7b0d9-e3d1-4f5c-9996-c27b2168cabf")]
+            public virtual RepoItemInfo Phasen_Row4Info
+            {
+                get
+                {
+                    return _phasen_row4Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row5 item.
+            /// </summary>
+            [RepositoryItem("9cd74c6d-c147-4133-91bb-ca43c7663f9e")]
+            public virtual Ranorex.Row Phasen_Row5
+            {
+                get
+                {
+                    return _phasen_row5Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row5 item info.
+            /// </summary>
+            [RepositoryItemInfo("9cd74c6d-c147-4133-91bb-ca43c7663f9e")]
+            public virtual RepoItemInfo Phasen_Row5Info
+            {
+                get
+                {
+                    return _phasen_row5Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row6 item.
+            /// </summary>
+            [RepositoryItem("a06164fd-58d1-4d2e-8f0a-a51d9ddfaa11")]
+            public virtual Ranorex.Row Phasen_Row6
+            {
+                get
+                {
+                    return _phasen_row6Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row6 item info.
+            /// </summary>
+            [RepositoryItemInfo("a06164fd-58d1-4d2e-8f0a-a51d9ddfaa11")]
+            public virtual RepoItemInfo Phasen_Row6Info
+            {
+                get
+                {
+                    return _phasen_row6Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row7 item.
+            /// </summary>
+            [RepositoryItem("2b0a32a8-67f8-4a85-901a-8ca381366ed5")]
+            public virtual Ranorex.Row Phasen_Row7
+            {
+                get
+                {
+                    return _phasen_row7Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row7 item info.
+            /// </summary>
+            [RepositoryItemInfo("2b0a32a8-67f8-4a85-901a-8ca381366ed5")]
+            public virtual RepoItemInfo Phasen_Row7Info
+            {
+                get
+                {
+                    return _phasen_row7Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row8 item.
+            /// </summary>
+            [RepositoryItem("8f0a092d-5510-4368-b5a2-b13322486852")]
+            public virtual Ranorex.Row Phasen_Row8
+            {
+                get
+                {
+                    return _phasen_row8Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row8 item info.
+            /// </summary>
+            [RepositoryItemInfo("8f0a092d-5510-4368-b5a2-b13322486852")]
+            public virtual RepoItemInfo Phasen_Row8Info
+            {
+                get
+                {
+                    return _phasen_row8Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row9 item.
+            /// </summary>
+            [RepositoryItem("32af5f41-5040-48aa-9451-8bb439138076")]
+            public virtual Ranorex.Row Phasen_Row9
+            {
+                get
+                {
+                    return _phasen_row9Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row9 item info.
+            /// </summary>
+            [RepositoryItemInfo("32af5f41-5040-48aa-9451-8bb439138076")]
+            public virtual RepoItemInfo Phasen_Row9Info
+            {
+                get
+                {
+                    return _phasen_row9Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row10 item.
+            /// </summary>
+            [RepositoryItem("9d16e76e-2291-432d-a031-d5b7c7e51cda")]
+            public virtual Ranorex.Row Phasen_Row10
+            {
+                get
+                {
+                    return _phasen_row10Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row10 item info.
+            /// </summary>
+            [RepositoryItemInfo("9d16e76e-2291-432d-a031-d5b7c7e51cda")]
+            public virtual RepoItemInfo Phasen_Row10Info
+            {
+                get
+                {
+                    return _phasen_row10Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row11 item.
+            /// </summary>
+            [RepositoryItem("69fc284e-76af-478f-87db-ec04d1d7a82d")]
+            public virtual Ranorex.Row Phasen_Row11
+            {
+                get
+                {
+                    return _phasen_row11Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row11 item info.
+            /// </summary>
+            [RepositoryItemInfo("69fc284e-76af-478f-87db-ec04d1d7a82d")]
+            public virtual RepoItemInfo Phasen_Row11Info
+            {
+                get
+                {
+                    return _phasen_row11Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row12 item.
+            /// </summary>
+            [RepositoryItem("731229c3-6aee-4243-a7f7-3d7e6d098312")]
+            public virtual Ranorex.Row Phasen_Row12
+            {
+                get
+                {
+                    return _phasen_row12Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row12 item info.
+            /// </summary>
+            [RepositoryItemInfo("731229c3-6aee-4243-a7f7-3d7e6d098312")]
+            public virtual RepoItemInfo Phasen_Row12Info
+            {
+                get
+                {
+                    return _phasen_row12Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row13 item.
+            /// </summary>
+            [RepositoryItem("bdb47326-7755-4537-b963-f41b8d38af9d")]
+            public virtual Ranorex.Row Phasen_Row13
+            {
+                get
+                {
+                    return _phasen_row13Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row13 item info.
+            /// </summary>
+            [RepositoryItemInfo("bdb47326-7755-4537-b963-f41b8d38af9d")]
+            public virtual RepoItemInfo Phasen_Row13Info
+            {
+                get
+                {
+                    return _phasen_row13Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row14 item.
+            /// </summary>
+            [RepositoryItem("394b92fc-cf6b-4243-876b-79de552cefce")]
+            public virtual Ranorex.Row Phasen_Row14
+            {
+                get
+                {
+                    return _phasen_row14Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row14 item info.
+            /// </summary>
+            [RepositoryItemInfo("394b92fc-cf6b-4243-876b-79de552cefce")]
+            public virtual RepoItemInfo Phasen_Row14Info
+            {
+                get
+                {
+                    return _phasen_row14Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row15 item.
+            /// </summary>
+            [RepositoryItem("7927a717-4d26-4602-af51-451b879a12f7")]
+            public virtual Ranorex.Row Phasen_Row15
+            {
+                get
+                {
+                    return _phasen_row15Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row15 item info.
+            /// </summary>
+            [RepositoryItemInfo("7927a717-4d26-4602-af51-451b879a12f7")]
+            public virtual RepoItemInfo Phasen_Row15Info
+            {
+                get
+                {
+                    return _phasen_row15Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row16 item.
+            /// </summary>
+            [RepositoryItem("a00fa882-8b6a-4b22-af77-52178d210764")]
+            public virtual Ranorex.Row Phasen_Row16
+            {
+                get
+                {
+                    return _phasen_row16Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row16 item info.
+            /// </summary>
+            [RepositoryItemInfo("a00fa882-8b6a-4b22-af77-52178d210764")]
+            public virtual RepoItemInfo Phasen_Row16Info
+            {
+                get
+                {
+                    return _phasen_row16Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row17 item.
+            /// </summary>
+            [RepositoryItem("b3ceb486-65b1-4486-9445-9f83efc9e449")]
+            public virtual Ranorex.Row Phasen_Row17
+            {
+                get
+                {
+                    return _phasen_row17Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row17 item info.
+            /// </summary>
+            [RepositoryItemInfo("b3ceb486-65b1-4486-9445-9f83efc9e449")]
+            public virtual RepoItemInfo Phasen_Row17Info
+            {
+                get
+                {
+                    return _phasen_row17Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row18 item.
+            /// </summary>
+            [RepositoryItem("82eed960-0e0d-4685-81af-ea8c3bbc9e6c")]
+            public virtual Ranorex.Row Phasen_Row18
+            {
+                get
+                {
+                    return _phasen_row18Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row18 item info.
+            /// </summary>
+            [RepositoryItemInfo("82eed960-0e0d-4685-81af-ea8c3bbc9e6c")]
+            public virtual RepoItemInfo Phasen_Row18Info
+            {
+                get
+                {
+                    return _phasen_row18Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row19 item.
+            /// </summary>
+            [RepositoryItem("cd490c94-5863-42da-8463-c8d5208084a8")]
+            public virtual Ranorex.Row Phasen_Row19
+            {
+                get
+                {
+                    return _phasen_row19Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row19 item info.
+            /// </summary>
+            [RepositoryItemInfo("cd490c94-5863-42da-8463-c8d5208084a8")]
+            public virtual RepoItemInfo Phasen_Row19Info
+            {
+                get
+                {
+                    return _phasen_row19Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row20 item.
+            /// </summary>
+            [RepositoryItem("436771b9-0648-43e7-8a17-af6bc1d83d87")]
+            public virtual Ranorex.Row Phasen_Row20
+            {
+                get
+                {
+                    return _phasen_row20Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row20 item info.
+            /// </summary>
+            [RepositoryItemInfo("436771b9-0648-43e7-8a17-af6bc1d83d87")]
+            public virtual RepoItemInfo Phasen_Row20Info
+            {
+                get
+                {
+                    return _phasen_row20Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row21 item.
+            /// </summary>
+            [RepositoryItem("a5f3e179-22f8-40f5-abfe-8072ef081fe6")]
+            public virtual Ranorex.Row Phasen_Row21
+            {
+                get
+                {
+                    return _phasen_row21Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row21 item info.
+            /// </summary>
+            [RepositoryItemInfo("a5f3e179-22f8-40f5-abfe-8072ef081fe6")]
+            public virtual RepoItemInfo Phasen_Row21Info
+            {
+                get
+                {
+                    return _phasen_row21Info;
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row22 item.
+            /// </summary>
+            [RepositoryItem("7b93d783-8fbd-4497-9ae4-3a8bd3078a92")]
+            public virtual Ranorex.Row Phasen_Row22
+            {
+                get
+                {
+                    return _phasen_row22Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Phasen_Row22 item info.
+            /// </summary>
+            [RepositoryItemInfo("7b93d783-8fbd-4497-9ae4-3a8bd3078a92")]
+            public virtual RepoItemInfo Phasen_Row22Info
+            {
+                get
+                {
+                    return _phasen_row22Info;
                 }
             }
         }

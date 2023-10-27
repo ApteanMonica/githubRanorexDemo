@@ -207,8 +207,8 @@ namespace Z_PROJ_001.Recordings_z_proj
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Allgemein_Tab_regex_Sonderzeichen' at Center.", repo.FrmTabProjekt.Allgemein_Tab_regex_SonderzeichenInfo, new RecordItemIndex(20));
             repo.FrmTabProjekt.Allgemein_Tab_regex_Sonderzeichen.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmTabProjekt.Register_Allgemein.Text1'.", repo.FrmTabProjekt.Register_Allgemein.Text1Info, new RecordItemIndex(21));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Allgemein.Text1Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmTabProjekt.Register_Allgemein.Text_Zeittyp'.", repo.FrmTabProjekt.Register_Allgemein.Text_ZeittypInfo, new RecordItemIndex(21));
+            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Allgemein.Text_ZeittypInfo, "Text", "");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmTabProjekt.Register_Allgemein.CbProjBukzzeit'.", repo.FrmTabProjekt.Register_Allgemein.CbProjBukzzeitInfo, new RecordItemIndex(22));
             Validate.AttributeEqual(repo.FrmTabProjekt.Register_Allgemein.CbProjBukzzeitInfo, "Checked", "False");
@@ -219,8 +219,8 @@ namespace Z_PROJ_001.Recordings_z_proj
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmTabProjekt.Register_Allgemein.CbProjKzdauer'.", repo.FrmTabProjekt.Register_Allgemein.CbProjKzdauerInfo, new RecordItemIndex(24));
             Validate.AttributeEqual(repo.FrmTabProjekt.Register_Allgemein.CbProjKzdauerInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'KA' with focus on 'FrmTabProjekt.Register_Allgemein.Text1'.", repo.FrmTabProjekt.Register_Allgemein.Text1Info, new RecordItemIndex(25));
-            repo.FrmTabProjekt.Register_Allgemein.Text1.PressKeys("KA");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'KA' with focus on 'FrmTabProjekt.Register_Allgemein.Text_Zeittyp'.", repo.FrmTabProjekt.Register_Allgemein.Text_ZeittypInfo, new RecordItemIndex(25));
+            repo.FrmTabProjekt.Register_Allgemein.Text_Zeittyp.PressKeys("KA");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.PbDataAccessSave' at Center.", repo.FrmTabProjekt.PbDataAccessSaveInfo, new RecordItemIndex(26));
             repo.FrmTabProjekt.PbDataAccessSave.Click();
