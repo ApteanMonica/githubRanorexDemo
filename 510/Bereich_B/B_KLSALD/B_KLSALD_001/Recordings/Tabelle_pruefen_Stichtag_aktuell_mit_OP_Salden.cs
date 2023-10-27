@@ -125,8 +125,8 @@ namespace B_KLSALD_001.Recordings
             Validate.AttributeEqual(repo.TblAnzeige.FlexGrid_Tabelle.Zeile_1.ColAdrNrRow1Info, "Text", "2000");
             
             // BUG Bezeichnung SAMK wird falsch eingelesen
-            //Report.Log(ReportLevel.Info, "Validation", "BUG Bezeichnung SAMK wird falsch eingelesen\r\nValidating AttributeEqual (Text='2000 SK Kunden Inland') on item 'TblAnzeige.FlexGrid_Tabelle.Zeile_1.ColAdrNameRow1'.", repo.TblAnzeige.FlexGrid_Tabelle.Zeile_1.ColAdrNameRow1Info, new RecordItemIndex(2));
-            //Validate.AttributeEqual(repo.TblAnzeige.FlexGrid_Tabelle.Zeile_1.ColAdrNameRow1Info, "Text", "2000 SK Kunden Inland");
+            Report.Log(ReportLevel.Info, "Validation", "BUG Bezeichnung SAMK wird falsch eingelesen\r\nValidating AttributeEqual (Text='2000 SK Kunden Inland') on item 'TblAnzeige.FlexGrid_Tabelle.Zeile_1.ColAdrNameRow1'.", repo.TblAnzeige.FlexGrid_Tabelle.Zeile_1.ColAdrNameRow1Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblAnzeige.FlexGrid_Tabelle.Zeile_1.ColAdrNameRow1Info, "Text", "2000 SK Kunden Inland");
             
             // Zeile_2
             Report.Log(ReportLevel.Info, "Section", "Zeile_2", new RecordItemIndex(3));
@@ -186,8 +186,8 @@ namespace B_KLSALD_001.Recordings
             Validate.AttributeEqual(repo.TblAnzeige.FlexGrid_Tabelle.Zeile_6.ColAdrNrRow6Info, "Text", "2100");
             
             // BUG Bezeichnung SAMK wird falsch eingelesen
-            //Report.Log(ReportLevel.Info, "Validation", "BUG Bezeichnung SAMK wird falsch eingelesen\r\nValidating AttributeEqual (Text='2100 SK Kunden EU') on item 'TblAnzeige.FlexGrid_Tabelle.Zeile_6.ColAdrNameRow6'.", repo.TblAnzeige.FlexGrid_Tabelle.Zeile_6.ColAdrNameRow6Info, new RecordItemIndex(22));
-            //Validate.AttributeEqual(repo.TblAnzeige.FlexGrid_Tabelle.Zeile_6.ColAdrNameRow6Info, "Text", "2100 SK Kunden EU");
+            Report.Log(ReportLevel.Info, "Validation", "BUG Bezeichnung SAMK wird falsch eingelesen\r\nValidating AttributeEqual (Text='2100 SK Kunden EU') on item 'TblAnzeige.FlexGrid_Tabelle.Zeile_6.ColAdrNameRow6'.", repo.TblAnzeige.FlexGrid_Tabelle.Zeile_6.ColAdrNameRow6Info, new RecordItemIndex(22));
+            Validate.AttributeEqual(repo.TblAnzeige.FlexGrid_Tabelle.Zeile_6.ColAdrNameRow6Info, "Text", "2100 SK Kunden EU");
             
             // Zeile_7
             Report.Log(ReportLevel.Info, "Section", "Zeile_7", new RecordItemIndex(23));
