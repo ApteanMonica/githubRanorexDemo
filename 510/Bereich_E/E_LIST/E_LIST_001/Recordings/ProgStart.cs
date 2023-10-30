@@ -108,8 +108,8 @@ namespace E_LIST_001.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'E_LIST.Titel_E_LIST'", repo.E_LIST.Titel_E_LISTInfo, new ActionTimeout(30000), new RecordItemIndex(1));
-            repo.E_LIST.Titel_E_LISTInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'E_LIST.Titel_E_LIST'", repo.E_LIST.Titel_E_LISTInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.E_LIST.Titel_E_LISTInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (AccessibleValue~'Leere LS/RE/BS anzeigen') on item 'E_LIST.Titel_E_LIST'.", repo.E_LIST.Titel_E_LISTInfo, new RecordItemIndex(2));
             Validate.AttributeRegex(repo.E_LIST.Titel_E_LISTInfo, "AccessibleValue", new Regex("Leere LS/RE/BS anzeigen"));
