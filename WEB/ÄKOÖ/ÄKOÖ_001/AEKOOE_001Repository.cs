@@ -136,6 +136,7 @@ namespace AEKOOE_001
         [RepositoryFolder("e1232ab5-2b86-4d28-a6fc-d7451804a17e")]
         public partial class LoginAppFolder : RepoGenBaseFolder
         {
+            AEKOOE_001RepositoryFolders.AKAT011RequestFormRowFolder _akat011requestformrow;
             RepoItemInfo _panelheadingInfo;
             RepoItemInfo _text_benutzerInfo;
             RepoItemInfo _passwordInfo;
@@ -151,6 +152,8 @@ namespace AEKOOE_001
             RepoItemInfo _kinput_ebenenInfo;
             RepoItemInfo _buttontagneuInfo;
             RepoItemInfo _alertalertinfoInfo;
+            RepoItemInfo _formcontrolInfo;
+            RepoItemInfo _auswahl_bankverbindungInfo;
 
             /// <summary>
             /// Creates a new Login  folder.
@@ -158,6 +161,7 @@ namespace AEKOOE_001
             public LoginAppFolder(RepoGenBaseFolder parentFolder) :
                     base("Login", "/dom[@domain='192.168.192.139']", parentFolder, 30000, null, false, "e1232ab5-2b86-4d28-a6fc-d7451804a17e", "")
             {
+                _akat011requestformrow = new AEKOOE_001RepositoryFolders.AKAT011RequestFormRowFolder(this);
                 _panelheadingInfo = new RepoItemInfo(this, "PanelHeading", ".//section[#'appModule']/div/div/div[2]/div/div[1]", "", 30000, null, "baaf8e86-d9cd-470b-9b00-c4637169a98e");
                 _text_benutzerInfo = new RepoItemInfo(this, "Text_benutzer", ".//section[#'appModule']/div/div/div[2]/div/div[2]/form[@action='http://192.168.192.139/521_SP12/#login']/fieldset/div/div/div[1]/?/?/input[@type='text']", "", 30000, null, "38c0cfc1-4c35-45d6-b03f-5ad7eb7354c0");
                 _passwordInfo = new RepoItemInfo(this, "Password", ".//section[#'appModule']/div/div/div[2]/div/div[2]/form[@action='http://192.168.192.139/521_SP12/#login']/fieldset/div/div/div[2]/?/?/input[@type='password']", "", 30000, null, "a703c90b-2828-4e06-a553-193923c90db0");
@@ -173,6 +177,8 @@ namespace AEKOOE_001
                 _kinput_ebenenInfo = new RepoItemInfo(this, "KInput_Ebenen", ".//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div/div[2]/span/span/span[1]", "", 30000, null, "817bc8b5-a5ad-4c9f-a053-e4c45db06b9f");
                 _buttontagneuInfo = new RepoItemInfo(this, "ButtonTagNeu", ".//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[3]/button[@innertext='Neu']", "", 30000, null, "fbf3ce06-3774-4b36-8376-5d678806f84c");
                 _alertalertinfoInfo = new RepoItemInfo(this, "AlertAlertInfo", ".//div[#'panel-request']/div[2]/div[1]/div[1]/div", "", 30000, null, "bc8c0e90-1a09-4fd5-865c-4df73e785745");
+                _formcontrolInfo = new RepoItemInfo(this, "FormControl", ".//div[#'panel-request']/div[2]/div[1]/div[2]/tag/div/div/div/select", "", 30000, null, "42b55ab3-53b9-4478-be37-0ec9f68fcbe9");
+                _auswahl_bankverbindungInfo = new RepoItemInfo(this, "Auswahl_Bankverbindung", "body/div[4]//ul/li[@innertext='AT351100018481974718']", "", 30000, null, "f658bfd4-adea-457e-a1a9-0ec82cec2c50");
             }
 
             /// <summary>
@@ -556,6 +562,545 @@ namespace AEKOOE_001
                 get
                 {
                     return _alertalertinfoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FormControl item.
+            /// </summary>
+            [RepositoryItem("42b55ab3-53b9-4478-be37-0ec9f68fcbe9")]
+            public virtual Ranorex.SelectTag FormControl
+            {
+                get
+                {
+                    return _formcontrolInfo.CreateAdapter<Ranorex.SelectTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FormControl item info.
+            /// </summary>
+            [RepositoryItemInfo("42b55ab3-53b9-4478-be37-0ec9f68fcbe9")]
+            public virtual RepoItemInfo FormControlInfo
+            {
+                get
+                {
+                    return _formcontrolInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Auswahl_Bankverbindung item.
+            /// </summary>
+            [RepositoryItem("f658bfd4-adea-457e-a1a9-0ec82cec2c50")]
+            public virtual Ranorex.LiTag Auswahl_Bankverbindung
+            {
+                get
+                {
+                    return _auswahl_bankverbindungInfo.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Auswahl_Bankverbindung item info.
+            /// </summary>
+            [RepositoryItemInfo("f658bfd4-adea-457e-a1a9-0ec82cec2c50")]
+            public virtual RepoItemInfo Auswahl_BankverbindungInfo
+            {
+                get
+                {
+                    return _auswahl_bankverbindungInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AKAT011RequestFormRow folder.
+            /// </summary>
+            [RepositoryFolder("d97c4b00-0a00-4181-98d5-fe3995cec1ea")]
+            public virtual AEKOOE_001RepositoryFolders.AKAT011RequestFormRowFolder AKAT011RequestFormRow
+            {
+                get { return _akat011requestformrow; }
+            }
+        }
+
+        /// <summary>
+        /// The AKAT011RequestFormRowFolder folder.
+        /// </summary>
+        [RepositoryFolder("d97c4b00-0a00-4181-98d5-fe3995cec1ea")]
+        public partial class AKAT011RequestFormRowFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _text_svnrInfo;
+            RepoItemInfo _text_zeitraum_berufsunfaehigkeit_abInfo;
+            RepoItemInfo _text_zeitraum_berufsunfaehigkeit_bisInfo;
+            RepoItemInfo _kinput_bankverbindungInfo;
+            RepoItemInfo _false_eingabe_diagnoseInfo;
+            RepoItemInfo _kinput_aufenthaltsortInfo;
+            RepoItemInfo _checkbox_fremdverschuldenInfo;
+            RepoItemInfo _btnbtndefaultbtnexpandsmallInfo;
+            RepoItemInfo _uploadInfo;
+            RepoItemInfo _fileInfo;
+            RepoItemInfo _analysenlistenbuli002docxInfo;
+            RepoItemInfo _filesuploadedsuccessfullyInfo;
+            RepoItemInfo _text_bezeichnung_uploadfileInfo;
+            RepoItemInfo _sonstigeranhangInfo;
+            RepoItemInfo _dokumenttypwaehlenInfo;
+            RepoItemInfo _speichernInfo;
+            RepoItemInfo _kselectInfo;
+
+            /// <summary>
+            /// Creates a new AKAT011RequestFormRow  folder.
+            /// </summary>
+            public AKAT011RequestFormRowFolder(RepoGenBaseFolder parentFolder) :
+                    base("AKAT011RequestFormRow", ".//div[#'panel-request']/div[2]/div[1]", parentFolder, 30000, null, false, "d97c4b00-0a00-4181-98d5-fe3995cec1ea", "")
+            {
+                _text_svnrInfo = new RepoItemInfo(this, "Text_SVNR", "div[10]//tag[@tagname='svnrfield']/div/div/div/input[@type='text']", "", 30000, null, "21377f03-3db8-4b45-aa11-12647ebd0e18");
+                _text_zeitraum_berufsunfaehigkeit_abInfo = new RepoItemInfo(this, "Text_Zeitraum_Berufsunfaehigkeit_ab", "div[3]/tag/div/div/div//input[@type='text']", "", 30000, null, "f26b7948-5246-4310-8484-25f8d1a7b6ac");
+                _text_zeitraum_berufsunfaehigkeit_bisInfo = new RepoItemInfo(this, "Text_Zeitraum_Berufsunfaehigkeit_bis", "div[4]/tag/div/div/div//input[@type='text']", "", 30000, null, "ab9e97bf-08f1-4e4d-b97d-12a9facbfc37");
+                _kinput_bankverbindungInfo = new RepoItemInfo(this, "KInput_Bankverbindung", "div[11]//tag[@tagname='kendodropdownlist']/div/div/div/span[@title='']/span/span[1]", "", 30000, null, "9a9a97e8-c184-4f6a-9676-e5e0f8e0200a");
+                _false_eingabe_diagnoseInfo = new RepoItemInfo(this, "False_Eingabe_Diagnose", "div[12]//tag[@tagname='multilinetextfield']/div/div/div/textarea[@required='False']", "", 30000, null, "fe6026ca-bc4e-4268-8e44-f46919e9c0f9");
+                _kinput_aufenthaltsortInfo = new RepoItemInfo(this, "KInput_Aufenthaltsort", "div[13]//tag[@tagname='kendodropdownlist']/div/div/div/span[@title='']/span/span[1]", "", 30000, null, "c49255ec-a423-47f9-98f0-f3da2129826f");
+                _checkbox_fremdverschuldenInfo = new RepoItemInfo(this, "Checkbox_Fremdverschulden", "div[14]//tag[@tagname='checkbox']/div/div/?/?/input[@type='checkbox']", "", 30000, null, "493b8031-4fbe-4dc8-b033-7c07f91c904b");
+                _btnbtndefaultbtnexpandsmallInfo = new RepoItemInfo(this, "BtnBtnDefaultBtnExpandSmall", "div[25]/div//tag[@tagname='dmscontrol']/div/button[2]", "", 30000, null, "334078b7-4b43-4cb9-a05f-8f2834526784");
+                _uploadInfo = new RepoItemInfo(this, "Upload", "div[25]/div/tag/div/div//tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[1]/h4[@innertext='Upload']", "", 30000, null, "d5fc5a13-4152-4fed-9955-6da5dd1bd9db");
+                _fileInfo = new RepoItemInfo(this, "File", "div[25]//tag[@tagname='dmscontrol']/div/tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[1]/div[1]/div[2]/form[@action='http://192.168.192.139/521_SP12/#request']/div/div/div/input[@type='file']", "", 30000, null, "731f4d3f-f36b-4555-ad0c-110b63959fca");
+                _analysenlistenbuli002docxInfo = new RepoItemInfo(this, "AnalyseNLISTENBULI002Docx", "div[25]/?/?/tag[@tagname='dmsfield']/div//tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[1]/div[1]/div[2]/form[@action='http://192.168.192.139/521_SP12/#request']/?/?/ul/li/span[2]/span[@title>'Analyse N_LISTEN_BULI_002']", "", 30000, null, "ff90d0ed-adf1-4b8a-8dd6-931844585afa");
+                _filesuploadedsuccessfullyInfo = new RepoItemInfo(this, "FileSUploadedSuccessfully", "div[25]/?/?/tag[@tagname='dmsfield']/div//tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[1]/div[1]/div[2]/form[@action='http://192.168.192.139/521_SP12/#request']/?/?/ul/li/span[2]/span[@innertext>'File(s) uploaded successf']", "", 30000, null, "2d9af843-dbed-42a2-8af2-fb68c118410e");
+                _text_bezeichnung_uploadfileInfo = new RepoItemInfo(this, "Text_Bezeichnung_Uploadfile", "div[25]//tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[3]/div[2]/div[1]/tag/div/div/div/?/?/input[@type='text']", "", 30000, null, "80e2faf0-3f6c-445f-b800-8ab4e3d12fe3");
+                _sonstigeranhangInfo = new RepoItemInfo(this, "SonstigerAnhang", "div[25]/?/?/tag[@tagname='dmsfield']/div/div/?/?/tag[@tagname='dmscontrol']/div/tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[3]/div[2]/tag[@tagname='kendodropdownlist']/div/div/div/span[@title='']/span/span[@innertext='sonstiger Anhang']", "", 30000, null, "161fde86-0680-4336-9d82-5829d270725d");
+                _dokumenttypwaehlenInfo = new RepoItemInfo(this, "DokumenttypWaehlen", "div[25]/?/?/tag[@tagname='dmsfield']/div/div/?/?/tag[@tagname='dmscontrol']/div/tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[3]/div[2]/tag[@tagname='kendodropdownlist']/div/div/div/span[@title='']/span/span[@innertext='Dokumenttyp wählen']", "", 30000, null, "1061be69-ab66-42a8-bfeb-b85438d2de45");
+                _speichernInfo = new RepoItemInfo(this, "Speichern", "div[25]/div/tag/div/div//tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[3]/button[@innertext='Speichern']", "", 30000, null, "75475c8a-117c-4f25-907a-d199fa724d9f");
+                _kselectInfo = new RepoItemInfo(this, "KSelect", "div[11]//tag[@tagname='kendodropdownlist']/div/div/div/span[@title='']/span/span[2]", "", 30000, null, "73bfb15f-a5f6-4cc5-91c1-6bbc35f612f2");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("d97c4b00-0a00-4181-98d5-fe3995cec1ea")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("d97c4b00-0a00-4181-98d5-fe3995cec1ea")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text_SVNR item.
+            /// </summary>
+            [RepositoryItem("21377f03-3db8-4b45-aa11-12647ebd0e18")]
+            public virtual Ranorex.InputTag Text_SVNR
+            {
+                get
+                {
+                    return _text_svnrInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text_SVNR item info.
+            /// </summary>
+            [RepositoryItemInfo("21377f03-3db8-4b45-aa11-12647ebd0e18")]
+            public virtual RepoItemInfo Text_SVNRInfo
+            {
+                get
+                {
+                    return _text_svnrInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text_Zeitraum_Berufsunfaehigkeit_ab item.
+            /// </summary>
+            [RepositoryItem("f26b7948-5246-4310-8484-25f8d1a7b6ac")]
+            public virtual Ranorex.InputTag Text_Zeitraum_Berufsunfaehigkeit_ab
+            {
+                get
+                {
+                    return _text_zeitraum_berufsunfaehigkeit_abInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text_Zeitraum_Berufsunfaehigkeit_ab item info.
+            /// </summary>
+            [RepositoryItemInfo("f26b7948-5246-4310-8484-25f8d1a7b6ac")]
+            public virtual RepoItemInfo Text_Zeitraum_Berufsunfaehigkeit_abInfo
+            {
+                get
+                {
+                    return _text_zeitraum_berufsunfaehigkeit_abInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text_Zeitraum_Berufsunfaehigkeit_bis item.
+            /// </summary>
+            [RepositoryItem("ab9e97bf-08f1-4e4d-b97d-12a9facbfc37")]
+            public virtual Ranorex.InputTag Text_Zeitraum_Berufsunfaehigkeit_bis
+            {
+                get
+                {
+                    return _text_zeitraum_berufsunfaehigkeit_bisInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text_Zeitraum_Berufsunfaehigkeit_bis item info.
+            /// </summary>
+            [RepositoryItemInfo("ab9e97bf-08f1-4e4d-b97d-12a9facbfc37")]
+            public virtual RepoItemInfo Text_Zeitraum_Berufsunfaehigkeit_bisInfo
+            {
+                get
+                {
+                    return _text_zeitraum_berufsunfaehigkeit_bisInfo;
+                }
+            }
+
+            /// <summary>
+            /// The KInput_Bankverbindung item.
+            /// </summary>
+            [RepositoryItem("9a9a97e8-c184-4f6a-9676-e5e0f8e0200a")]
+            public virtual Ranorex.SpanTag KInput_Bankverbindung
+            {
+                get
+                {
+                    return _kinput_bankverbindungInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The KInput_Bankverbindung item info.
+            /// </summary>
+            [RepositoryItemInfo("9a9a97e8-c184-4f6a-9676-e5e0f8e0200a")]
+            public virtual RepoItemInfo KInput_BankverbindungInfo
+            {
+                get
+                {
+                    return _kinput_bankverbindungInfo;
+                }
+            }
+
+            /// <summary>
+            /// The False_Eingabe_Diagnose item.
+            /// </summary>
+            [RepositoryItem("fe6026ca-bc4e-4268-8e44-f46919e9c0f9")]
+            public virtual Ranorex.TextAreaTag False_Eingabe_Diagnose
+            {
+                get
+                {
+                    return _false_eingabe_diagnoseInfo.CreateAdapter<Ranorex.TextAreaTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The False_Eingabe_Diagnose item info.
+            /// </summary>
+            [RepositoryItemInfo("fe6026ca-bc4e-4268-8e44-f46919e9c0f9")]
+            public virtual RepoItemInfo False_Eingabe_DiagnoseInfo
+            {
+                get
+                {
+                    return _false_eingabe_diagnoseInfo;
+                }
+            }
+
+            /// <summary>
+            /// The KInput_Aufenthaltsort item.
+            /// </summary>
+            [RepositoryItem("c49255ec-a423-47f9-98f0-f3da2129826f")]
+            public virtual Ranorex.SpanTag KInput_Aufenthaltsort
+            {
+                get
+                {
+                    return _kinput_aufenthaltsortInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The KInput_Aufenthaltsort item info.
+            /// </summary>
+            [RepositoryItemInfo("c49255ec-a423-47f9-98f0-f3da2129826f")]
+            public virtual RepoItemInfo KInput_AufenthaltsortInfo
+            {
+                get
+                {
+                    return _kinput_aufenthaltsortInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Checkbox_Fremdverschulden item.
+            /// </summary>
+            [RepositoryItem("493b8031-4fbe-4dc8-b033-7c07f91c904b")]
+            public virtual Ranorex.InputTag Checkbox_Fremdverschulden
+            {
+                get
+                {
+                    return _checkbox_fremdverschuldenInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Checkbox_Fremdverschulden item info.
+            /// </summary>
+            [RepositoryItemInfo("493b8031-4fbe-4dc8-b033-7c07f91c904b")]
+            public virtual RepoItemInfo Checkbox_FremdverschuldenInfo
+            {
+                get
+                {
+                    return _checkbox_fremdverschuldenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnBtnDefaultBtnExpandSmall item.
+            /// </summary>
+            [RepositoryItem("334078b7-4b43-4cb9-a05f-8f2834526784")]
+            public virtual Ranorex.ButtonTag BtnBtnDefaultBtnExpandSmall
+            {
+                get
+                {
+                    return _btnbtndefaultbtnexpandsmallInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnBtnDefaultBtnExpandSmall item info.
+            /// </summary>
+            [RepositoryItemInfo("334078b7-4b43-4cb9-a05f-8f2834526784")]
+            public virtual RepoItemInfo BtnBtnDefaultBtnExpandSmallInfo
+            {
+                get
+                {
+                    return _btnbtndefaultbtnexpandsmallInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Upload item.
+            /// </summary>
+            [RepositoryItem("d5fc5a13-4152-4fed-9955-6da5dd1bd9db")]
+            public virtual Ranorex.H4Tag Upload
+            {
+                get
+                {
+                    return _uploadInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Upload item info.
+            /// </summary>
+            [RepositoryItemInfo("d5fc5a13-4152-4fed-9955-6da5dd1bd9db")]
+            public virtual RepoItemInfo UploadInfo
+            {
+                get
+                {
+                    return _uploadInfo;
+                }
+            }
+
+            /// <summary>
+            /// The File item.
+            /// </summary>
+            [RepositoryItem("731f4d3f-f36b-4555-ad0c-110b63959fca")]
+            public virtual Ranorex.InputTag File
+            {
+                get
+                {
+                    return _fileInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The File item info.
+            /// </summary>
+            [RepositoryItemInfo("731f4d3f-f36b-4555-ad0c-110b63959fca")]
+            public virtual RepoItemInfo FileInfo
+            {
+                get
+                {
+                    return _fileInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AnalyseNLISTENBULI002Docx item.
+            /// </summary>
+            [RepositoryItem("ff90d0ed-adf1-4b8a-8dd6-931844585afa")]
+            public virtual Ranorex.SpanTag AnalyseNLISTENBULI002Docx
+            {
+                get
+                {
+                    return _analysenlistenbuli002docxInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AnalyseNLISTENBULI002Docx item info.
+            /// </summary>
+            [RepositoryItemInfo("ff90d0ed-adf1-4b8a-8dd6-931844585afa")]
+            public virtual RepoItemInfo AnalyseNLISTENBULI002DocxInfo
+            {
+                get
+                {
+                    return _analysenlistenbuli002docxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FileSUploadedSuccessfully item.
+            /// </summary>
+            [RepositoryItem("2d9af843-dbed-42a2-8af2-fb68c118410e")]
+            public virtual Ranorex.SpanTag FileSUploadedSuccessfully
+            {
+                get
+                {
+                    return _filesuploadedsuccessfullyInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FileSUploadedSuccessfully item info.
+            /// </summary>
+            [RepositoryItemInfo("2d9af843-dbed-42a2-8af2-fb68c118410e")]
+            public virtual RepoItemInfo FileSUploadedSuccessfullyInfo
+            {
+                get
+                {
+                    return _filesuploadedsuccessfullyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text_Bezeichnung_Uploadfile item.
+            /// </summary>
+            [RepositoryItem("80e2faf0-3f6c-445f-b800-8ab4e3d12fe3")]
+            public virtual Ranorex.InputTag Text_Bezeichnung_Uploadfile
+            {
+                get
+                {
+                    return _text_bezeichnung_uploadfileInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text_Bezeichnung_Uploadfile item info.
+            /// </summary>
+            [RepositoryItemInfo("80e2faf0-3f6c-445f-b800-8ab4e3d12fe3")]
+            public virtual RepoItemInfo Text_Bezeichnung_UploadfileInfo
+            {
+                get
+                {
+                    return _text_bezeichnung_uploadfileInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SonstigerAnhang item.
+            /// </summary>
+            [RepositoryItem("161fde86-0680-4336-9d82-5829d270725d")]
+            public virtual Ranorex.SpanTag SonstigerAnhang
+            {
+                get
+                {
+                    return _sonstigeranhangInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SonstigerAnhang item info.
+            /// </summary>
+            [RepositoryItemInfo("161fde86-0680-4336-9d82-5829d270725d")]
+            public virtual RepoItemInfo SonstigerAnhangInfo
+            {
+                get
+                {
+                    return _sonstigeranhangInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DokumenttypWaehlen item.
+            /// </summary>
+            [RepositoryItem("1061be69-ab66-42a8-bfeb-b85438d2de45")]
+            public virtual Ranorex.SpanTag DokumenttypWaehlen
+            {
+                get
+                {
+                    return _dokumenttypwaehlenInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DokumenttypWaehlen item info.
+            /// </summary>
+            [RepositoryItemInfo("1061be69-ab66-42a8-bfeb-b85438d2de45")]
+            public virtual RepoItemInfo DokumenttypWaehlenInfo
+            {
+                get
+                {
+                    return _dokumenttypwaehlenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Speichern item.
+            /// </summary>
+            [RepositoryItem("75475c8a-117c-4f25-907a-d199fa724d9f")]
+            public virtual Ranorex.ButtonTag Speichern
+            {
+                get
+                {
+                    return _speichernInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Speichern item info.
+            /// </summary>
+            [RepositoryItemInfo("75475c8a-117c-4f25-907a-d199fa724d9f")]
+            public virtual RepoItemInfo SpeichernInfo
+            {
+                get
+                {
+                    return _speichernInfo;
+                }
+            }
+
+            /// <summary>
+            /// The KSelect item.
+            /// </summary>
+            [RepositoryItem("73bfb15f-a5f6-4cc5-91c1-6bbc35f612f2")]
+            public virtual Ranorex.SpanTag KSelect
+            {
+                get
+                {
+                    return _kselectInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The KSelect item info.
+            /// </summary>
+            [RepositoryItemInfo("73bfb15f-a5f6-4cc5-91c1-6bbc35f612f2")]
+            public virtual RepoItemInfo KSelectInfo
+            {
+                get
+                {
+                    return _kselectInfo;
                 }
             }
         }
