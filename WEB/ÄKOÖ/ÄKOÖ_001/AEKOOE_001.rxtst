@@ -11,6 +11,38 @@
 			name="Daten_eingeben"
 			ref="60e57da4-e037-4924-a40b-b934f5712eff"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Diagnose"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="a438f4cc-cc00-44e9-abf0-2e5c71a5523b"
+					variablename="Diagnose">
+					</var>
+					<var
+					dataname="Bankverbindung_1"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="2f74c417-ab9d-4fb6-a39b-0a2319b5dc3c"
+					variablename="Bankverbindung_1">
+					</var>
+					<var
+					dataname="SVNR"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="8411f75b-d750-46cb-9056-bbdbda43b5e1"
+					variablename="SVNR">
+					</var>
+					<var
+					dataname="berufsunfaehig_bis"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="c816944d-0fd4-4dfd-ae4f-9810927fc148"
+					variablename="berufsunfaehig_bis">
+					</var>
+					<var
+					dataname="berufsunfaehig_ab"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="cf14cf99-63ff-4e7e-a423-0a064763a006"
+					variablename="berufsunfaehig_ab">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="186e5205-32f3-40bb-9819-b85028859f12"
@@ -24,10 +56,106 @@
 			ref="e156141f-9cd2-40b2-9a46-2a5e147ea068"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="3f67b637-c3d4-4512-b4ca-53f4985e9835"
+			name="UEberpruefung_Eingabe_Daten"
+			ref="82c0f73d-58aa-4fd2-8126-0893ee354f55"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Bankverbindung_1"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="0b2959be-f748-494b-ae1e-718a1fdf5041"
+					variablename="Bankverbindung_1">
+					</var>
+					<var
+					dataname="SVNR"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="1d8ba898-de50-4486-8dc5-0094a937de6f"
+					variablename="SVNR">
+					</var>
+					<var
+					dataname="berufsunfaehig_bis"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="192f9cf1-95b8-4982-bbb1-b7a2bd043221"
+					variablename="berufsunfaehig_bis">
+					</var>
+					<var
+					dataname="berufsunfaehig_ab"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="7241be5c-324a-4476-b396-10a9a127205a"
+					variablename="berufsunfaehig_ab">
+					</var>
+					<var
+					dataname="Diagnose"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="37e2007d-e564-4473-bfb5-4dba4d1398fa"
+					variablename="Diagnose">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="40b1ca13-9d1e-4299-9d46-fd9b7bba2fbb"
+			name="Datei_hochladen"
+			ref="71bdcd98-380b-49e4-b356-a029e6858ec8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ausgewaehlte_Testdatei"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="87b9d4d6-80e0-4201-96f0-3f9130ca8ac0"
+					variablename="ausgewaehlte_Testdatei">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="55c37dc4-3003-400b-b91c-632e91105fa7"
+			name="Antrag_absenden"
+			ref="89e3af79-bde1-4450-bb97-840bf0ad8fee"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="berufsunfaehig_ab"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="25971411-3be1-4b00-8edf-bee9fb637ea1"
+					variablename="berufsunfaehig_ab">
+					</var>
+					<var
+					dataname="berufsunfaehig_bis"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="c33bb05e-595c-49ac-a121-1c6ba5d50a89"
+					variablename="berufsunfaehig_bis">
+					</var>
+					<var
+					dataname="SVNR"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="b0123890-9283-4a23-b603-c6df3ea2e650"
+					variablename="SVNR">
+					</var>
+					<var
+					dataname="Bankverbindung_1"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="fdedc181-64f5-4bbb-89aa-9d15c57e0d0d"
+					variablename="Bankverbindung_1">
+					</var>
+					<var
+					dataname="Diagnose"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="a200dd6e-a680-467b-bcca-34c13ad29532"
+					variablename="Diagnose">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="62e97938-76d0-4e50-ad03-f3bf0953f918"
 			name="setup">
 			</setup>
+			<testmodule
+			id="657d6bed-4626-42a0-950e-5da17a20d97b"
+			name="Antrag_laden"
+			ref="e01227a8-09b9-4f72-8555-1e5e512ee68c"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="759dd012-2a57-4207-813c-4ddd642fee2d"
 			name="Auswahl_Ebenen"
@@ -41,6 +169,32 @@
 				<description>
 					<![CDATA[verwendeter Browser ist google chrome]]>
 				</description>
+				<parameters>
+					<param
+					name="berufsunfaehig_ab"
+					value="02.01.2023">
+					</param>
+					<param
+					name="berufsunfaehig_bis"
+					value="10.01.2023">
+					</param>
+					<param
+					name="SVNR"
+					value="1679050956">
+					</param>
+					<param
+					name="Bankverbindung_1"
+					value="AT351100018481974718">
+					</param>
+					<param
+					name="Diagnose"
+					value="Testdiagnose zum Krankengeld">
+					</param>
+					<param
+					name="ausgewaehlte_Testdatei"
+					value="Testdatei Antrag Krankengeld">
+					</param>
+				</parameters>
 			</testcase>
 			<testmodule
 			id="b69df083-c5d9-4913-ac0d-28bb287eafa6"
@@ -116,6 +270,22 @@
 						<testmodule
 						id="119427db-77db-4cc3-92be-9eb6c10f32fe"
 						name="Daten_eingeben">
+						</testmodule>
+						<testmodule
+						id="3f67b637-c3d4-4512-b4ca-53f4985e9835"
+						name="UEberpruefung_Eingabe_Daten">
+						</testmodule>
+						<testmodule
+						id="40b1ca13-9d1e-4299-9d46-fd9b7bba2fbb"
+						name="Datei_hochladen">
+						</testmodule>
+						<testmodule
+						id="55c37dc4-3003-400b-b91c-632e91105fa7"
+						name="Antrag_absenden">
+						</testmodule>
+						<testmodule
+						id="657d6bed-4626-42a0-950e-5da17a20d97b"
+						name="Antrag_laden">
 						</testmodule>
 						<teardown
 						id="0c4ddb05-079e-49aa-aca9-7350fccd969f"

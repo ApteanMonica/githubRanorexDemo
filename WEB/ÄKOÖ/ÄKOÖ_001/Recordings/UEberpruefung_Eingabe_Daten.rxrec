@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="60e57da4-e037-4924-a40b-b934f5712eff"
+id="82c0f73d-58aa-4fd2-8126-0893ee354f55"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,218 +19,47 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Daten_eingeben"
+	classname="UEberpruefung_Eingabe_Daten"
 	namespace="AEKOOE_001.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="cf14cf99-63ff-4e7e-a423-0a064763a006"
+		id="7241be5c-324a-4476-b396-10a9a127205a"
 		name="berufsunfaehig_ab">
-			02.05.2022
+			02.01.2023
 		</var>
 		<var
-		id="c816944d-0fd4-4dfd-ae4f-9810927fc148"
+		id="192f9cf1-95b8-4982-bbb1-b7a2bd043221"
 		name="berufsunfaehig_bis">
-			10.06.2022
+			10.01.2023
 		</var>
 		<var
-		id="8411f75b-d750-46cb-9056-bbdbda43b5e1"
+		id="1d8ba898-de50-4486-8dc5-0094a937de6f"
 		name="SVNR">
 			1679050956
 		</var>
 		<var
-		id="2f74c417-ab9d-4fb6-a39b-0a2319b5dc3c"
+		id="0b2959be-f748-494b-ae1e-718a1fdf5041"
 		name="Bankverbindung_1">
 			AT351100018481974718
 		</var>
 		<var
-		id="a438f4cc-cc00-44e9-abf0-2e5c71a5523b"
+		id="37e2007d-e564-4473-bfb5-4dba4d1398fa"
 		name="Diagnose">
 			Testdiganose zum Krankengeld
 		</var>
 	</variables>
 	<recorditems>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="bce472d1-5359-46b9-9627-2aa88d022fb2"
-		waitaction="Exists"
-		waittimeout="120000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="bc8c0e90-1a09-4fd5-865c-4df73e785745"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, divtag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="divtag"
-				rect="943,417,610,62"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						alert alert-info
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						alert alert-info
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						div
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="role"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[1]/div
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="e1dde7b5-a667-4b74-bc60-0f785f61a23b">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="42b55ab3-53b9-4478-be37-0ec9f68fcbe9"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, selecttag"
-				dontcache="True"
-				enabled="False"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="selecttag"
-				rect="1103,273,636,34"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						form-control
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						dropdownlist_1
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						form-control
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						select
-					</attribute>
-					<attribute
-					name="tagvalue"
-					type="System.String">
-						AKAT.011
-					</attribute>
-					<attribute
-					name="autofocus"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="size"
-					type="System.String">
-						0
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-bind"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="disabled"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[2]/tag/div/div/div/select
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				InnerText
-			</matchname>
-			<matchvalue>
-				Krankengeld
-			</matchvalue>
-		</validationitem>
-		<keysequenceitem
-		KeySequence="02.01.2023{Tab}"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		searchpropertyid="18d29c74-9512-4c7f-a3fe-8aa7ad39bb8d">
+		searchpropertyid="e1f59b2e-accd-44e0-a3d7-0bf65345f99d">
 			<comment>
 			</comment>
 			<bindings>
 				<binding
-				target="KeySequence"
+				target="MatchValue"
 				variable="berufsunfaehig_ab">
 				</binding>
 			</bindings>
@@ -394,34 +223,22 @@ mode="Global">
 				<robustPath>
 				</robustPath>
 			</info>
-		</keysequenceitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="20ms"
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="6c123924-8104-4f05-9eed-6b67dc54d3a0"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
-		<keysequenceitem
-		KeySequence="yourtext"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		searchpropertyid="8ca4ac34-d8af-478b-be30-d980ed2ee958">
+		searchpropertyid="5e0f8385-8294-4951-a447-0892fd9b0d0f">
 			<comment>
 			</comment>
 			<bindings>
 				<binding
-				target="KeySequence"
+				target="MatchValue"
 				variable="berufsunfaehig_bis">
 				</binding>
 			</bindings>
@@ -585,50 +402,37 @@ mode="Global">
 				<robustPath>
 				</robustPath>
 			</info>
-		</keysequenceitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="20ms"
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="6c123924-8104-4f05-9eed-6b67dc54d3a0"
-		setModifiers="True">
+		searchpropertyid="6876850d-3a5e-443f-90f9-5746a6ae0144">
 			<comment>
 			</comment>
 			<bindings>
-			</bindings>
-		</keyitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="b35b7291-4238-4f23-8dce-3a4861f42da8"
-		sx="1472"
-		sy="518"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
+				<binding
+				target="MatchValue"
+				variable="SVNR">
+				</binding>
 			</bindings>
 			<info
-			id="73bfb15f-a5f6-4cc5-91c1-6bbc35f612f2"
+			id="21377f03-3db8-4b45-aa11-12647ebd0e18"
 			sourcename="RepositoryEditor">
 				<element
-				capabilities="webelement, spantag"
+				capabilities="webelement, inputtag"
 				dontcache="True"
 				enabled="True"
 				flavor="chromeweb"
-				hasfocus="False"
-				index="1"
-				prefcap="spantag"
-				rect="1837,501,34,34"
+				hasfocus="True"
+				index="0"
+				prefcap="inputtag"
+				rect="1103,431,770,34"
 				role="unknown"
 				snapElem=""
 				valid="True"
@@ -636,7 +440,7 @@ mode="Global">
 					<attribute
 					name="class"
 					type="System.String">
-						k-select
+						form-control
 					</attribute>
 					<attribute
 					name="draggable"
@@ -649,60 +453,125 @@ mode="Global">
 						False
 					</attribute>
 					<attribute
+					name="id"
+					type="System.String">
+						svnrfield_36
+					</attribute>
+					<attribute
 					name="innertext"
 					type="System.String">
 					</attribute>
 					<attribute
 					name="safeclass"
 					type="System.String">
-						k-select
+						form-control
 					</attribute>
 					<attribute
 					name="tagname"
 					type="System.String">
-						span
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						1679050956
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						10
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="pattern"
+					type="System.String">
+						[0-9.]+
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="tabindex"
+					type="System.String">
+						3
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						1679050956
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
 					</attribute>
 					<dynamicattribute
 					description="Dynamic HTML attribute."
-					name="aria-label"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="role"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="unselectable"
+					name="data-bind"
 					readonly="False"
 					type="System.String">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[11]//tag[@tagname='kendodropdownlist']/div/div/div/span[@title='']/span/span[2]
+					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[10]//tag[@tagname='svnrfield']/div/div/div/input[@type='text']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
 		optional="False"
-		searchpropertyid="c44fa207-daba-4e06-9596-d79c87afbf33"
-		sx="0"
-		sy="109"
-		warnoutofbounds="False">
+		searchpropertyid="045871e9-a749-469c-b226-b893d28967ef">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Bankverbindung_1">
+				</binding>
 			</bindings>
 			<info
 			id="f658bfd4-adea-457e-a1a9-0ec82cec2c50"
@@ -802,19 +671,23 @@ mode="Global">
 				<robustPath>
 				</robustPath>
 			</info>
-		</mouseitem>
-		<keysequenceitem
-		KeySequence="Testdiganose zum Krankengeld{Tab}"
-		duration="20ms"
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				AT351100018481974718
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		presstime="20ms"
-		searchpropertyid="c5d397b7-5b2e-4e7c-974e-72a390efef3b">
+		searchpropertyid="ab32525f-aad8-4b81-8b34-6a3669cf2c2a">
 			<comment>
 			</comment>
 			<bindings>
 				<binding
-				target="KeySequence"
+				target="MatchValue"
 				variable="Diagnose">
 				</binding>
 			</bindings>
@@ -906,43 +779,17 @@ mode="Global">
 				<robustPath>
 				</robustPath>
 			</info>
-		</keysequenceitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="20ms"
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="19700629-4995-47af-9975-bd63202632a5"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="fe6026ca-bc4e-4268-8e44-f46919e9c0f9"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[12]//tag[@tagname='multilinetextfield']/div/div/div/textarea[@required='False']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</keyitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="29f3e1a6-c812-4186-b5da-a0b9ccc3d87b"
-		sx="1472"
-		sy="676"
-		warnoutofbounds="False">
+		searchpropertyid="41b5281d-b332-4fe1-96cb-f93185332d9f">
 			<comment>
 			</comment>
 			<bindings>
@@ -1023,201 +870,18 @@ mode="Global">
 				<robustPath>
 				</robustPath>
 			</info>
-		</mouseitem>
-		<keyitem
-		action="Press"
-		data="Down"
-		duration="20ms"
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				ordentlicher Wohnsitz
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="c8a045cb-8b30-47a8-91ee-13e146e146d0"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="c49255ec-a423-47f9-98f0-f3da2129826f"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, spantag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="spantag"
-				rect="1107,659,731,34"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						k-input
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						cc93b380-54b9-4469-8567-af7167ec5978
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						ordentlicher Wohnsitz
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						k-input
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						span
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="aria-selected"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="role"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="unselectable"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[13]//tag[@tagname='kendodropdownlist']/div/div/div/span[@title='']/span/span[1]
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</keyitem>
-		<keyitem
-		action="Press"
-		data="Return"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="5f5ce051-173a-4fc2-8f65-322f481e3f81"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="c49255ec-a423-47f9-98f0-f3da2129826f"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, spantag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="spantag"
-				rect="1107,659,731,34"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						k-input
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						cc93b380-54b9-4469-8567-af7167ec5978
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						ordentlicher Wohnsitz
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						k-input
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						span
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="aria-selected"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="role"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="unselectable"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[13]//tag[@tagname='kendodropdownlist']/div/div/div/span[@title='']/span/span[1]
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</keyitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="0ba14256-0036-4bcb-af27-e628e272bced"
-		sx="1099"
-		sy="727"
-		warnoutofbounds="False">
+		searchpropertyid="c6aa53b1-c7ea-424b-9e54-ae40cccf5c0e">
 			<comment>
 			</comment>
 			<bindings>
@@ -1330,7 +994,13 @@ mode="Global">
 				<robustPath>
 				</robustPath>
 			</info>
-		</mouseitem>
+			<matchname>
+				Checked
+			</matchname>
+			<matchvalue>
+				False
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="ea8dc27d-4b43-438c-bd14-00e352da043f"
@@ -1347,7 +1017,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Daten_eingeben.UserCode.cs
+		UEberpruefung_Eingabe_Daten.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
