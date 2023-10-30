@@ -146,35 +146,37 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblFadr.ColLskDatumRow1' and assigning its value to variable 'getDatumRow'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(5));
             getDatumRow = repo.TblFadr.ColLskDatumRow1.Element.GetAttributeValueText("Text");
             
-            Report.Log(ReportLevel.Info, "User", getDatumRow, new RecordItemIndex(6));
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(6));
             repo.TblFadr.PbCommonLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.ColLskDatumRow1' at Center.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.ColLskDatumRow1' at Center.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(7));
             repo.TblFadr.ColLskDatumRow1.Click();
             
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(9));
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblFadr.ColLskDatumRow1' at Center.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(10));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblFadr.ColLskDatumRow1' at Center.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(8));
             //repo.TblFadr.ColLskDatumRow1.DoubleClick();
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(11));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(9));
             //repo.TblFadr.ColLskDatumRow1.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(10));
+            Delay.Duration(30000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(11));
             Keyboard.PrepareFocus(repo.TblFadr.ColLskDatumRow1);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(12));
+            Delay.Duration(30000, false);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+X' Press with focus on 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(13));
             Keyboard.PrepareFocus(repo.TblFadr.ColLskDatumRow1);
             Keyboard.Press(System.Windows.Forms.Keys.X | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblFadr.ColLskDatumRow1'", repo.TblFadr.ColLskDatumRow1Info, new ActionTimeout(60000), new RecordItemIndex(14));
-            repo.TblFadr.ColLskDatumRow1Info.WaitForExists(60000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.bis_LS_DatRow2' at Center.", repo.TblFadr.bis_LS_DatRow2Info, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.bis_LS_DatRow2' at Center.", repo.TblFadr.bis_LS_DatRow2Info, new RecordItemIndex(14));
             repo.TblFadr.bis_LS_DatRow2.Click();
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(15));
+            Delay.Duration(30000, false);
             
             Report.Screenshot(ReportLevel.Info, "User", "beide Datumszeilen ohne Datum", null, false, new RecordItemIndex(16));
             
@@ -182,11 +184,11 @@ namespace V_FADR_001.Recordings
             Keyboard.PrepareFocus(repo.TblFadr.bis_LS_DatRow2);
             Keyboard.Press(System.Windows.Forms.Keys.V | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblFadr.bis_LS_DatRow2'", repo.TblFadr.bis_LS_DatRow2Info, new ActionTimeout(120000), new RecordItemIndex(18));
-            repo.TblFadr.bis_LS_DatRow2Info.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(18));
             repo.TblFadr.PbCommonLoad.Click();
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(19));
+            Delay.Duration(30000, false);
             
             Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(20));
             

@@ -24,29 +24,29 @@ namespace B_ZAHL_005.Recordings_B_ZAHL
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Skonto_ermitteln recording.
+    ///The Skonto_neu_ermitteln recording.
     /// </summary>
     [TestModule("c0eacddc-8e99-4a86-a14a-029a6ea940cf", ModuleType.Recording, 1)]
-    public partial class Skonto_ermitteln : ITestModule
+    public partial class Skonto_neu_ermitteln : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ZAHL_005.B_ZAHL_005Repository repository.
         /// </summary>
         public static global::B_ZAHL_005.B_ZAHL_005Repository repo = global::B_ZAHL_005.B_ZAHL_005Repository.Instance;
 
-        static Skonto_ermitteln instance = new Skonto_ermitteln();
+        static Skonto_neu_ermitteln instance = new Skonto_neu_ermitteln();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Skonto_ermitteln()
+        public Skonto_neu_ermitteln()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Skonto_ermitteln Instance
+        public static Skonto_neu_ermitteln Instance
         {
             get { return instance; }
         }
@@ -117,6 +117,15 @@ namespace B_ZAHL_005.Recordings_B_ZAHL
             // Ersatz für Elementsuche: Tab + Enter für 1. Listenelement
             Report.Log(ReportLevel.Info, "Keyboard", "Ersatz für Elementsuche: Tab + Enter für 1. Listenelement\r\nKey 'Enter' Press.", new RecordItemIndex(10));
             Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZBetragZRow2_mit_Betrag_297'", repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZBetragZRow2_mit_Betrag_297Info, new ActionTimeout(120000), new RecordItemIndex(11));
+            repo.FrmZlvsAEndern.ChildTableWindow.Zeile_2.ColZBetragZRow2_mit_Betrag_297Info.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmZlvsAEndern.PbDataAccessSpeichern' at Center.", repo.FrmZlvsAEndern.PbDataAccessSpeichernInfo, new RecordItemIndex(12));
+            repo.FrmZlvsAEndern.PbDataAccessSpeichern.Click();
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(13));
+            Delay.Duration(2000, false);
             
         }
 
