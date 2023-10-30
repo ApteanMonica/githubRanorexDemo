@@ -41,10 +41,11 @@ namespace AEKOOE_001.Recordings
         /// </summary>
         public Daten_eingeben()
         {
-            berufsunfaehig_ab = "02.01.2023";
-            berugsunfaehig_bis = "10.01.2023";
+            berufsunfaehig_ab = "02.05.2022";
+            berufsunfaehig_bis = "10.06.2022";
             SVNR = "1679050956";
             Bankverbindung_1 = "AT351100018481974718";
+            Diagnose = "Testdiganose zum Krankengeld";
         }
 
         /// <summary>
@@ -69,16 +70,16 @@ namespace AEKOOE_001.Recordings
             set { _berufsunfaehig_ab = value; }
         }
 
-        string _berugsunfaehig_bis;
+        string _berufsunfaehig_bis;
 
         /// <summary>
-        /// Gets or sets the value of variable berugsunfaehig_bis.
+        /// Gets or sets the value of variable berufsunfaehig_bis.
         /// </summary>
         [TestVariable("c816944d-0fd4-4dfd-ae4f-9810927fc148")]
-        public string berugsunfaehig_bis
+        public string berufsunfaehig_bis
         {
-            get { return _berugsunfaehig_bis; }
-            set { _berugsunfaehig_bis = value; }
+            get { return _berufsunfaehig_bis; }
+            set { _berufsunfaehig_bis = value; }
         }
 
         string _SVNR;
@@ -103,6 +104,18 @@ namespace AEKOOE_001.Recordings
         {
             get { return _Bankverbindung_1; }
             set { _Bankverbindung_1 = value; }
+        }
+
+        string _Diagnose;
+
+        /// <summary>
+        /// Gets or sets the value of variable Diagnose.
+        /// </summary>
+        [TestVariable("a438f4cc-cc00-44e9-abf0-2e5c71a5523b")]
+        public string Diagnose
+        {
+            get { return _Diagnose; }
+            set { _Diagnose = value; }
         }
 
 #endregion
@@ -143,29 +156,38 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$berufsunfaehig_ab) on item 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_abInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_abInfo, "InnerText", berufsunfaehig_ab);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$berufsunfaehig_bis' with focus on 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bis'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bisInfo, new RecordItemIndex(4));
+            repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bis.PressKeys(berufsunfaehig_bis);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$berugsunfaehig_bis' with focus on 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bis'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bisInfo, new RecordItemIndex(5));
-            repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bis.PressKeys(berugsunfaehig_bis);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$berugsunfaehig_bis) on item 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bis'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bisInfo, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bisInfo, "InnerText", berugsunfaehig_bis);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$SVNR) on item 'Login.AKAT011RequestFormRow.Text_SVNR'.", repo.Login.AKAT011RequestFormRow.Text_SVNRInfo, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_SVNRInfo, "InnerText", SVNR);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.KSelect' at Center.", repo.Login.AKAT011RequestFormRow.KSelectInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.KSelect' at Center.", repo.Login.AKAT011RequestFormRow.KSelectInfo, new RecordItemIndex(6));
             repo.Login.AKAT011RequestFormRow.KSelect.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.Auswahl_Bankverbindung' at Center.", repo.Login.Auswahl_BankverbindungInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.Auswahl_Bankverbindung' at Center.", repo.Login.Auswahl_BankverbindungInfo, new RecordItemIndex(7));
             repo.Login.Auswahl_Bankverbindung.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Bankverbindung_1) on item 'Login.Auswahl_Bankverbindung'.", repo.Login.Auswahl_BankverbindungInfo, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.Login.Auswahl_BankverbindungInfo, "InnerText", Bankverbindung_1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Diagnose' with focus on 'Login.AKAT011RequestFormRow.False_Eingabe_Diagnose'.", repo.Login.AKAT011RequestFormRow.False_Eingabe_DiagnoseInfo, new RecordItemIndex(8));
+            repo.Login.AKAT011RequestFormRow.False_Eingabe_Diagnose.PressKeys(Diagnose);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'Login.AKAT011RequestFormRow.False_Eingabe_Diagnose'.", repo.Login.AKAT011RequestFormRow.False_Eingabe_DiagnoseInfo, new RecordItemIndex(9));
+            Keyboard.PrepareFocus(repo.Login.AKAT011RequestFormRow.False_Eingabe_Diagnose);
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.KInput_Aufenthaltsort' at Center.", repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, new RecordItemIndex(10));
+            repo.Login.AKAT011RequestFormRow.KInput_Aufenthaltsort.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Down' Press with focus on 'Login.AKAT011RequestFormRow.KInput_Aufenthaltsort'.", repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, new RecordItemIndex(11));
+            Keyboard.PrepareFocus(repo.Login.AKAT011RequestFormRow.KInput_Aufenthaltsort);
+            Keyboard.Press(System.Windows.Forms.Keys.Down, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press with focus on 'Login.AKAT011RequestFormRow.KInput_Aufenthaltsort'.", repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, new RecordItemIndex(12));
+            Keyboard.PrepareFocus(repo.Login.AKAT011RequestFormRow.KInput_Aufenthaltsort);
+            Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.Checkbox_Fremdverschulden' at Center.", repo.Login.AKAT011RequestFormRow.Checkbox_FremdverschuldenInfo, new RecordItemIndex(13));
+            repo.Login.AKAT011RequestFormRow.Checkbox_Fremdverschulden.Click();
             
         }
 
