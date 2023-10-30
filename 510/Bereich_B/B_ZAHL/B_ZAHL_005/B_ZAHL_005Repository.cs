@@ -1157,6 +1157,7 @@ namespace B_ZAHL_005
         {
             RepoItemInfo _colbelegrow2Info;
             RepoItemInfo _colzbetragzrow2Info;
+            RepoItemInfo _colzbetragzrow2_mit_betrag_297Info;
             RepoItemInfo _colsbetragzrow2Info;
             RepoItemInfo _colsprozrow2Info;
             RepoItemInfo _coloffenzrow2Info;
@@ -1170,6 +1171,7 @@ namespace B_ZAHL_005
             {
                 _colbelegrow2Info = new RepoItemInfo(this, "ColBelegRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colBeleg Row 2']", "", 30000, null, "51590f49-6868-42eb-abb9-29daac8b1364");
                 _colzbetragzrow2Info = new RepoItemInfo(this, "ColZBetragZRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colZBetragZ Row 2']", "", 30000, null, "5b225339-a791-40f4-b866-6edddbdcb4e0");
+                _colzbetragzrow2_mit_betrag_297Info = new RepoItemInfo(this, "ColZBetragZRow2_mit_Betrag_297", "row[@accessiblename='Row 2']/cell[@accessiblename='colZBetragZ Row 2' and @text='297,00']", "", 30000, null, "c809ce7d-2c07-465a-8200-343263c41e00");
                 _colsbetragzrow2Info = new RepoItemInfo(this, "ColSBetragZRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colSBetragZ Row 2']", "", 30000, null, "d2ce57a9-91dd-4fe2-8b3b-1700c8f30488");
                 _colsprozrow2Info = new RepoItemInfo(this, "ColSProzRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colSProz Row 2']", "", 30000, null, "3798567b-2bcb-4db5-b751-d358326cca0f");
                 _coloffenzrow2Info = new RepoItemInfo(this, "ColOffenZRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colOffenZ Row 2']", "", 30000, null, "8528459f-198b-469c-bac4-a25f15525308");
@@ -1233,6 +1235,30 @@ namespace B_ZAHL_005
                 get
                 {
                     return _colzbetragzrow2Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColZBetragZRow2_mit_Betrag_297 item.
+            /// </summary>
+            [RepositoryItem("c809ce7d-2c07-465a-8200-343263c41e00")]
+            public virtual Ranorex.Cell ColZBetragZRow2_mit_Betrag_297
+            {
+                get
+                {
+                    return _colzbetragzrow2_mit_betrag_297Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColZBetragZRow2_mit_Betrag_297 item info.
+            /// </summary>
+            [RepositoryItemInfo("c809ce7d-2c07-465a-8200-343263c41e00")]
+            public virtual RepoItemInfo ColZBetragZRow2_mit_Betrag_297Info
+            {
+                get
+                {
+                    return _colzbetragzrow2_mit_betrag_297Info;
                 }
             }
 
