@@ -146,59 +146,58 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblFadr.ColLskDatumRow1' and assigning its value to variable 'getDatumRow'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(5));
             getDatumRow = repo.TblFadr.ColLskDatumRow1.Element.GetAttributeValueText("Text");
             
-            Report.Log(ReportLevel.Info, "User", getDatumRow, new RecordItemIndex(6));
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(6));
             repo.TblFadr.PbCommonLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.ColLskDatumRow1' at Center.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.ColLskDatumRow1' at Center.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(7));
             repo.TblFadr.ColLskDatumRow1.Click();
             
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(9));
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblFadr.ColLskDatumRow1' at Center.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(10));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblFadr.ColLskDatumRow1' at Center.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(8));
             //repo.TblFadr.ColLskDatumRow1.DoubleClick();
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(11));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(9));
             //repo.TblFadr.ColLskDatumRow1.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(10));
             Keyboard.PrepareFocus(repo.TblFadr.ColLskDatumRow1);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+X' Press with focus on 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(11));
+            Delay.Duration(30000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+X' Press with focus on 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(12));
             Keyboard.PrepareFocus(repo.TblFadr.ColLskDatumRow1);
             Keyboard.Press(System.Windows.Forms.Keys.X | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblFadr.ColLskDatumRow1'", repo.TblFadr.ColLskDatumRow1Info, new ActionTimeout(60000), new RecordItemIndex(14));
-            repo.TblFadr.ColLskDatumRow1Info.WaitForExists(60000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.bis_LS_DatRow2' at Center.", repo.TblFadr.bis_LS_DatRow2Info, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.bis_LS_DatRow2' at Center.", repo.TblFadr.bis_LS_DatRow2Info, new RecordItemIndex(13));
             repo.TblFadr.bis_LS_DatRow2.Click();
             
-            Report.Screenshot(ReportLevel.Info, "User", "beide Datumszeilen ohne Datum", null, false, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(14));
+            Delay.Duration(30000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+V' Press with focus on 'TblFadr.bis_LS_DatRow2'.", repo.TblFadr.bis_LS_DatRow2Info, new RecordItemIndex(17));
+            Report.Screenshot(ReportLevel.Info, "User", "beide Datumszeilen ohne Datum", null, false, new RecordItemIndex(15));
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+V' Press with focus on 'TblFadr.bis_LS_DatRow2'.", repo.TblFadr.bis_LS_DatRow2Info, new RecordItemIndex(16));
             Keyboard.PrepareFocus(repo.TblFadr.bis_LS_DatRow2);
             Keyboard.Press(System.Windows.Forms.Keys.V | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblFadr.bis_LS_DatRow2'", repo.TblFadr.bis_LS_DatRow2Info, new ActionTimeout(120000), new RecordItemIndex(18));
-            repo.TblFadr.bis_LS_DatRow2Info.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(17));
             repo.TblFadr.PbCommonLoad.Click();
             
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(18));
+            Delay.Duration(30000, false);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(19));
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='Es wurden keine Lieferscheine gefunden die zur Belegerstellung berechtigt sind.\r\nNähere Information unter Menu/Extras/Warum wird Auftrag nicht fakturiert') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(21));
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='Es wurden keine Lieferscheine gefunden die zur Belegerstellung berechtigt sind.\r\nNähere Information unter Menu/Extras/Warum wird Auftrag nicht fakturiert') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(20));
                 Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es wurden keine Lieferscheine gefunden die zur Belegerstellung berechtigt sind.\r\nNähere Information unter Menu/Extras/Warum wird Auftrag nicht fakturiert", null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(21)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(20)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(22));
+                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(21));
                 repo.DlgMessageBox.Button0.Click();
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(22)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(21)); }
             
         }
 

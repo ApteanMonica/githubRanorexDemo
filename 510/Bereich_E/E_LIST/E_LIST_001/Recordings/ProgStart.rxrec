@@ -61,7 +61,7 @@ rxversion="8.3">
 		optional="False"
 		searchpropertyid="d662357e-68f5-4d1e-9c2d-42d8e5345779"
 		waitaction="Exists"
-		waittimeout="30000ms">
+		waittimeout="120000ms">
 			<comment>
 			</comment>
 			<bindings>
@@ -72,6 +72,8 @@ rxversion="8.3">
 				<path>
 					/form[@controlname='tblLeer']/titlebar[@accessiblerole='TitleBar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<validationitem
@@ -89,6 +91,8 @@ rxversion="8.3">
 				<path>
 					/form[@controlname='tblLeer']/titlebar[@accessiblerole='TitleBar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<matchname>
 				AccessibleValue
