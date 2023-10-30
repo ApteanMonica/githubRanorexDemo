@@ -90,82 +90,82 @@ namespace Z_PROJ_001.Recordings_z_proj
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$PROJ_NR_1_K) on item 'FrmTabProjekt.Projektnr'.", repo.FrmTabProjekt.ProjektnrInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.FrmTabProjekt.ProjektnrInfo, "Text", PROJ_NR_1_K);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$PROJ_NR_1_K) on item 'FrmTabProjekt_alt.Projektnr'.", repo.FrmTabProjekt_alt.ProjektnrInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.ProjektnrInfo, "Text", PROJ_NR_1_K);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Phasen_Tab_regex_Sonderzeichen' at Center.", repo.FrmTabProjekt.Phasen_Tab_regex_SonderzeichenInfo, new RecordItemIndex(1));
-            repo.FrmTabProjekt.Phasen_Tab_regex_Sonderzeichen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt_alt.Phasen_Tab_regex_Sonderzeichen' at Center.", repo.FrmTabProjekt_alt.Phasen_Tab_regex_SonderzeichenInfo, new RecordItemIndex(1));
+            repo.FrmTabProjekt_alt.Phasen_Tab_regex_Sonderzeichen.Click();
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(2));
             Delay.Duration(2000, false);
             
             // Fenster maximieren
-            //Report.Log(ReportLevel.Info, "Keyboard", "Fenster maximieren\r\nKey sequence '{LWin down}{Up}{LWin up}' with focus on 'FrmTabProjekt.TitleBar100ProjektVerwalten'.", repo.FrmTabProjekt.TitleBar100ProjektVerwaltenInfo, new RecordItemIndex(3));
-            //repo.FrmTabProjekt.TitleBar100ProjektVerwalten.PressKeys("{LWin down}{Up}{LWin up}");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Fenster maximieren\r\nKey sequence '{LWin down}{Up}{LWin up}' with focus on 'TitleBar100ProjektVerwalten'.", repo.TitleBar100ProjektVerwaltenInfo, new RecordItemIndex(3));
+            //repo.TitleBar100ProjektVerwalten.PressKeys("{LWin down}{Up}{LWin up}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Maximieren' at Center.", repo.FrmTabProjekt.MaximierenInfo, new RecordItemIndex(4));
-            repo.FrmTabProjekt.Maximieren.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt_alt.Maximieren' at Center.", repo.FrmTabProjekt_alt.MaximierenInfo, new RecordItemIndex(4));
+            repo.FrmTabProjekt_alt.Maximieren.Click();
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(5));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.PbDataAccessReload' at Center.", repo.FrmTabProjekt.PbDataAccessReloadInfo, new RecordItemIndex(6));
-            repo.FrmTabProjekt.PbDataAccessReload.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt_alt.PbDataAccessReload' at Center.", repo.FrmTabProjekt_alt.PbDataAccessReloadInfo, new RecordItemIndex(6));
+            repo.FrmTabProjekt_alt.PbDataAccessReload.Click();
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(7));
             Delay.Duration(2000, false);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'FrmTabProjekt.Register_Phasen.FlexGrid_Phasen' at LowerCenter.", repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo, new RecordItemIndex(8));
-            //repo.FrmTabProjekt.Register_Phasen.FlexGrid_Phasen.MoveTo(Location.LowerCenter);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'FrmTabProjekt_alt.Register_Phasen.FlexGrid_Phasen' at LowerCenter.", repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo, new RecordItemIndex(8));
+            //repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_Phasen.MoveTo(Location.LowerCenter);
             
             // Spalten 2. Teil
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nSpalten 2. Teil\r\nValidating ContainsImage (Screenshot: 'Screenshot_K_2006_Phasen_Spalten_einzeln' with region {X=22,Y=32,Width=17,Height=412}) on item 'FrmTabProjekt.Register_Phasen.FlexGrid_Phasen'.", repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo, new RecordItemIndex(9));
-                Validate.ContainsImage(repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_Options, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nSpalten 2. Teil\r\nValidating ContainsImage (Screenshot: 'Screenshot_K_2006_Phasen_Spalten_einzeln' with region {X=22,Y=32,Width=17,Height=412}) on item 'FrmTabProjekt_alt.Register_Phasen.FlexGrid_Phasen'.", repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo, new RecordItemIndex(9));
+                Validate.ContainsImage(repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_Options, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
             
             // Spalten 2. Teil
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nSpalten 2. Teil\r\nValidating ContainsImage (Screenshot: 'Screenshot_K_2006_Phasen_Spalten_einzeln' with region {X=58,Y=32,Width=30,Height=413}) on item 'FrmTabProjekt.Register_Phasen.FlexGrid_Phasen'.", repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo, new RecordItemIndex(10));
-                Validate.ContainsImage(repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_2, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_2_Options, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nSpalten 2. Teil\r\nValidating ContainsImage (Screenshot: 'Screenshot_K_2006_Phasen_Spalten_einzeln' with region {X=58,Y=32,Width=30,Height=413}) on item 'FrmTabProjekt_alt.Register_Phasen.FlexGrid_Phasen'.", repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo, new RecordItemIndex(10));
+                Validate.ContainsImage(repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_2, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_2_Options, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(10)); }
             
             // Spalten 2. Teil
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nSpalten 2. Teil\r\nValidating ContainsImage (Screenshot: 'Screenshot_K_2006_Phasen_Spalten_einzeln' with region {X=106,Y=32,Width=30,Height=414}) on item 'FrmTabProjekt.Register_Phasen.FlexGrid_Phasen'.", repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo, new RecordItemIndex(11));
-                Validate.ContainsImage(repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_3, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_3_Options, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nSpalten 2. Teil\r\nValidating ContainsImage (Screenshot: 'Screenshot_K_2006_Phasen_Spalten_einzeln' with region {X=106,Y=32,Width=30,Height=414}) on item 'FrmTabProjekt_alt.Register_Phasen.FlexGrid_Phasen'.", repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo, new RecordItemIndex(11));
+                Validate.ContainsImage(repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_3, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_3_Options, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(11)); }
             
             // Spalten 2. Teil
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nSpalten 2. Teil\r\nValidating ContainsImage (Screenshot: 'Screenshot_K_2006_Phasen_Spalten_einzeln' with region {X=145,Y=32,Width=189,Height=410}) on item 'FrmTabProjekt.Register_Phasen.FlexGrid_Phasen'.", repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo, new RecordItemIndex(12));
-                Validate.ContainsImage(repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_4, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_4_Options, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nSpalten 2. Teil\r\nValidating ContainsImage (Screenshot: 'Screenshot_K_2006_Phasen_Spalten_einzeln' with region {X=145,Y=32,Width=189,Height=410}) on item 'FrmTabProjekt_alt.Register_Phasen.FlexGrid_Phasen'.", repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo, new RecordItemIndex(12));
+                Validate.ContainsImage(repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_4, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_4_Options, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(12)); }
             
             // Spalten 2. Teil
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nSpalten 2. Teil\r\nValidating ContainsImage (Screenshot: 'Screenshot_K_2006_Phasen_Spalten_einzeln' with region {X=341,Y=32,Width=21,Height=413}) on item 'FrmTabProjekt.Register_Phasen.FlexGrid_Phasen'.", repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo, new RecordItemIndex(13));
-                Validate.ContainsImage(repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_5, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_5_Options, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nSpalten 2. Teil\r\nValidating ContainsImage (Screenshot: 'Screenshot_K_2006_Phasen_Spalten_einzeln' with region {X=341,Y=32,Width=21,Height=413}) on item 'FrmTabProjekt_alt.Register_Phasen.FlexGrid_Phasen'.", repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo, new RecordItemIndex(13));
+                Validate.ContainsImage(repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_5, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_5_Options, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(13)); }
             
             // Spalten 2. Teil
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nSpalten 2. Teil\r\nValidating ContainsImage (Screenshot: 'Screenshot_K_2006_Phasen_Spalten_einzeln' with region {X=775,Y=31,Width=58,Height=412}) on item 'FrmTabProjekt.Register_Phasen.FlexGrid_Phasen'.", repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo, new RecordItemIndex(14));
-                Validate.ContainsImage(repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_6, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_6_Options, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nSpalten 2. Teil\r\nValidating ContainsImage (Screenshot: 'Screenshot_K_2006_Phasen_Spalten_einzeln' with region {X=775,Y=31,Width=58,Height=412}) on item 'FrmTabProjekt_alt.Register_Phasen.FlexGrid_Phasen'.", repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo, new RecordItemIndex(14));
+                Validate.ContainsImage(repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_6, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_6_Options, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(14)); }
             
             // Spalten 2. Teil
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nSpalten 2. Teil\r\nValidating ContainsImage (Screenshot: 'Screenshot_K_2006_Phasen_Spalten_einzeln' with region {X=1213,Y=32,Width=12,Height=412}) on item 'FrmTabProjekt.Register_Phasen.FlexGrid_Phasen'.", repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo, new RecordItemIndex(15));
-                Validate.ContainsImage(repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_7, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_7_Options, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nSpalten 2. Teil\r\nValidating ContainsImage (Screenshot: 'Screenshot_K_2006_Phasen_Spalten_einzeln' with region {X=1213,Y=32,Width=12,Height=412}) on item 'FrmTabProjekt_alt.Register_Phasen.FlexGrid_Phasen'.", repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo, new RecordItemIndex(15));
+                Validate.ContainsImage(repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_7, FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_7_Options, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(15)); }
             
             // Fenster minimieren
-            //Report.Log(ReportLevel.Info, "Keyboard", "Fenster minimieren\r\nKey sequence '{LWin down}{Down}{LWin up}' with focus on 'FrmTabProjekt.TitleBar100ProjektVerwalten'.", repo.FrmTabProjekt.TitleBar100ProjektVerwaltenInfo, new RecordItemIndex(16));
-            //repo.FrmTabProjekt.TitleBar100ProjektVerwalten.PressKeys("{LWin down}{Down}{LWin up}");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Fenster minimieren\r\nKey sequence '{LWin down}{Down}{LWin up}' with focus on 'TitleBar100ProjektVerwalten'.", repo.TitleBar100ProjektVerwaltenInfo, new RecordItemIndex(16));
+            //repo.TitleBar100ProjektVerwalten.PressKeys("{LWin down}{Down}{LWin up}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Minimieren' at Center.", repo.FrmTabProjekt.MinimierenInfo, new RecordItemIndex(17));
-            repo.FrmTabProjekt.Minimieren.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt_alt.Wiederherstellen' at Center.", repo.FrmTabProjekt_alt.WiederherstellenInfo, new RecordItemIndex(17));
+            repo.FrmTabProjekt_alt.Wiederherstellen.Click();
             
         }
 
@@ -174,7 +174,7 @@ namespace Z_PROJ_001.Recordings_z_proj
         /// DO NOT REFERENCE THIS CODE  - auto generated
         /// </summary>
         CompressedImage FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln
-        { get { return repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo.GetScreenshot_K_2006_Phasen_Spalten_einzeln(new Rectangle(22, 32, 17, 412)); } }
+        { get { return repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo.GetScreenshot_K_2006_Phasen_Spalten_einzeln(new Rectangle(22, 32, 17, 412)); } }
 
         /// <summary>
         /// DO NOT REFERENCE THIS CODE  - auto generated
@@ -186,7 +186,7 @@ namespace Z_PROJ_001.Recordings_z_proj
         /// DO NOT REFERENCE THIS CODE  - auto generated
         /// </summary>
         CompressedImage FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_2
-        { get { return repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo.GetScreenshot_K_2006_Phasen_Spalten_einzeln(new Rectangle(58, 32, 30, 413)); } }
+        { get { return repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo.GetScreenshot_K_2006_Phasen_Spalten_einzeln(new Rectangle(58, 32, 30, 413)); } }
 
         /// <summary>
         /// DO NOT REFERENCE THIS CODE  - auto generated
@@ -198,7 +198,7 @@ namespace Z_PROJ_001.Recordings_z_proj
         /// DO NOT REFERENCE THIS CODE  - auto generated
         /// </summary>
         CompressedImage FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_3
-        { get { return repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo.GetScreenshot_K_2006_Phasen_Spalten_einzeln(new Rectangle(106, 32, 30, 414)); } }
+        { get { return repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo.GetScreenshot_K_2006_Phasen_Spalten_einzeln(new Rectangle(106, 32, 30, 414)); } }
 
         /// <summary>
         /// DO NOT REFERENCE THIS CODE  - auto generated
@@ -210,7 +210,7 @@ namespace Z_PROJ_001.Recordings_z_proj
         /// DO NOT REFERENCE THIS CODE  - auto generated
         /// </summary>
         CompressedImage FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_4
-        { get { return repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo.GetScreenshot_K_2006_Phasen_Spalten_einzeln(new Rectangle(145, 32, 189, 410)); } }
+        { get { return repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo.GetScreenshot_K_2006_Phasen_Spalten_einzeln(new Rectangle(145, 32, 189, 410)); } }
 
         /// <summary>
         /// DO NOT REFERENCE THIS CODE  - auto generated
@@ -222,7 +222,7 @@ namespace Z_PROJ_001.Recordings_z_proj
         /// DO NOT REFERENCE THIS CODE  - auto generated
         /// </summary>
         CompressedImage FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_5
-        { get { return repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo.GetScreenshot_K_2006_Phasen_Spalten_einzeln(new Rectangle(341, 32, 21, 413)); } }
+        { get { return repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo.GetScreenshot_K_2006_Phasen_Spalten_einzeln(new Rectangle(341, 32, 21, 413)); } }
 
         /// <summary>
         /// DO NOT REFERENCE THIS CODE  - auto generated
@@ -234,7 +234,7 @@ namespace Z_PROJ_001.Recordings_z_proj
         /// DO NOT REFERENCE THIS CODE  - auto generated
         /// </summary>
         CompressedImage FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_6
-        { get { return repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo.GetScreenshot_K_2006_Phasen_Spalten_einzeln(new Rectangle(775, 31, 58, 412)); } }
+        { get { return repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo.GetScreenshot_K_2006_Phasen_Spalten_einzeln(new Rectangle(775, 31, 58, 412)); } }
 
         /// <summary>
         /// DO NOT REFERENCE THIS CODE  - auto generated
@@ -246,7 +246,7 @@ namespace Z_PROJ_001.Recordings_z_proj
         /// DO NOT REFERENCE THIS CODE  - auto generated
         /// </summary>
         CompressedImage FlexGrid_Phasen_Screenshot_K_2006_Phasen_Spalten_einzeln_7
-        { get { return repo.FrmTabProjekt.Register_Phasen.FlexGrid_PhasenInfo.GetScreenshot_K_2006_Phasen_Spalten_einzeln(new Rectangle(1213, 32, 12, 412)); } }
+        { get { return repo.FrmTabProjekt_alt.Register_Phasen.FlexGrid_PhasenInfo.GetScreenshot_K_2006_Phasen_Spalten_einzeln(new Rectangle(1213, 32, 12, 412)); } }
 
         /// <summary>
         /// DO NOT REFERENCE THIS CODE  - auto generated

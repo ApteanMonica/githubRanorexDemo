@@ -116,46 +116,46 @@ namespace Z_PROJ_001.Recordings_z_proj
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmTabProjekt.TitleBar100ProjektVerwalten'.", repo.FrmTabProjekt.TitleBar100ProjektVerwaltenInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.FrmTabProjekt.TitleBar100ProjektVerwaltenInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TitleBar100ProjektVerwalten'.", repo.TitleBar100ProjektVerwaltenInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.TitleBar100ProjektVerwaltenInfo);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.PbNew_Suchmaske' at Center.", repo.FrmTabProjekt.PbNew_SuchmaskeInfo, new RecordItemIndex(1));
-            repo.FrmTabProjekt.PbNew_Suchmaske.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt_alt.PbNew_Suchmaske' at Center.", repo.FrmTabProjekt_alt.PbNew_SuchmaskeInfo, new RecordItemIndex(1));
+            repo.FrmTabProjekt_alt.PbNew_Suchmaske.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmTabProjekt.TextArt' at Center.", repo.FrmTabProjekt.TextArtInfo, new RecordItemIndex(2));
-            repo.FrmTabProjekt.TextArt.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmTabProjekt_alt.TextArt' at Center.", repo.FrmTabProjekt_alt.TextArtInfo, new RecordItemIndex(2));
+            repo.FrmTabProjekt_alt.TextArt.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Back' Press with focus on 'FrmTabProjekt.TextArt'.", repo.FrmTabProjekt.TextArtInfo, new RecordItemIndex(3));
-            Keyboard.PrepareFocus(repo.FrmTabProjekt.TextArt);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Back' Press with focus on 'FrmTabProjekt_alt.TextArt'.", repo.FrmTabProjekt_alt.TextArtInfo, new RecordItemIndex(3));
+            Keyboard.PrepareFocus(repo.FrmTabProjekt_alt.TextArt);
             Keyboard.Press(System.Windows.Forms.Keys.Back, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'IP' with focus on 'FrmTabProjekt.TextArt'.", repo.FrmTabProjekt.TextArtInfo, new RecordItemIndex(4));
-            repo.FrmTabProjekt.TextArt.PressKeys("IP");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'IP' with focus on 'FrmTabProjekt_alt.TextArt'.", repo.FrmTabProjekt_alt.TextArtInfo, new RecordItemIndex(4));
+            repo.FrmTabProjekt_alt.TextArt.PressKeys("IP");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmTabProjekt.TextArt'.", repo.FrmTabProjekt.TextArtInfo, new RecordItemIndex(5));
-            Keyboard.PrepareFocus(repo.FrmTabProjekt.TextArt);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmTabProjekt_alt.TextArt'.", repo.FrmTabProjekt_alt.TextArtInfo, new RecordItemIndex(5));
+            Keyboard.PrepareFocus(repo.FrmTabProjekt_alt.TextArt);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='VORLAGE_IP') on item 'FrmTabProjekt.VorlageProjektnr'.", repo.FrmTabProjekt.VorlageProjektnrInfo, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.FrmTabProjekt.VorlageProjektnrInfo, "Text", "VORLAGE_IP");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='VORLAGE_IP') on item 'FrmTabProjekt_alt.VorlageProjektnr'.", repo.FrmTabProjekt_alt.VorlageProjektnrInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.VorlageProjektnrInfo, "Text", "VORLAGE_IP");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PROJ_NR_2_IP' with focus on 'FrmTabProjekt.Projektnr'.", repo.FrmTabProjekt.ProjektnrInfo, new RecordItemIndex(7));
-            repo.FrmTabProjekt.Projektnr.PressKeys(PROJ_NR_2_IP);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PROJ_NR_2_IP' with focus on 'FrmTabProjekt_alt.Projektnr'.", repo.FrmTabProjekt_alt.ProjektnrInfo, new RecordItemIndex(7));
+            repo.FrmTabProjekt_alt.Projektnr.PressKeys(PROJ_NR_2_IP);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '' on item 'FrmTabProjekt.Bezeichnung'.", repo.FrmTabProjekt.BezeichnungInfo, new RecordItemIndex(8));
-            repo.FrmTabProjekt.Bezeichnung.Element.SetAttributeValue("Text", "");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '' on item 'FrmTabProjekt_alt.Bezeichnung'.", repo.FrmTabProjekt_alt.BezeichnungInfo, new RecordItemIndex(8));
+            repo.FrmTabProjekt_alt.Bezeichnung.Element.SetAttributeValue("Text", "");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PROJ_BEZ_2_IP' with focus on 'FrmTabProjekt.Bezeichnung'.", repo.FrmTabProjekt.BezeichnungInfo, new RecordItemIndex(9));
-            repo.FrmTabProjekt.Bezeichnung.PressKeys(PROJ_BEZ_2_IP);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PROJ_BEZ_2_IP' with focus on 'FrmTabProjekt_alt.Bezeichnung'.", repo.FrmTabProjekt_alt.BezeichnungInfo, new RecordItemIndex(9));
+            repo.FrmTabProjekt_alt.Bezeichnung.PressKeys(PROJ_BEZ_2_IP);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$bis_Datum' with focus on 'FrmTabProjekt.Register_Projekt.TextBis'.", repo.FrmTabProjekt.Register_Projekt.TextBisInfo, new RecordItemIndex(10));
-            repo.FrmTabProjekt.Register_Projekt.TextBis.PressKeys(bis_Datum);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$bis_Datum' with focus on 'FrmTabProjekt_alt.Register_Projekt.TextBis'.", repo.FrmTabProjekt_alt.Register_Projekt.TextBisInfo, new RecordItemIndex(10));
+            repo.FrmTabProjekt_alt.Register_Projekt.TextBis.PressKeys(bis_Datum);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmTabProjekt.Register_Projekt.TextBis'.", repo.FrmTabProjekt.Register_Projekt.TextBisInfo, new RecordItemIndex(11));
-            repo.FrmTabProjekt.Register_Projekt.TextBis.PressKeys("{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmTabProjekt_alt.Register_Projekt.TextBis'.", repo.FrmTabProjekt_alt.Register_Projekt.TextBisInfo, new RecordItemIndex(11));
+            repo.FrmTabProjekt_alt.Register_Projekt.TextBis.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.PbDataAccessSave' at Center.", repo.FrmTabProjekt.PbDataAccessSaveInfo, new RecordItemIndex(12));
-            repo.FrmTabProjekt.PbDataAccessSave.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt_alt.PbDataAccessSave' at Center.", repo.FrmTabProjekt_alt.PbDataAccessSaveInfo, new RecordItemIndex(12));
+            repo.FrmTabProjekt_alt.PbDataAccessSave.Click();
             
         }
 

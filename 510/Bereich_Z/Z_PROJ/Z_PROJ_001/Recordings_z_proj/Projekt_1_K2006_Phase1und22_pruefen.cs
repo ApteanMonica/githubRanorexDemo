@@ -116,71 +116,71 @@ namespace Z_PROJ_001.Recordings_z_proj
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$PROJ_NR_1_K) on item 'FrmTabProjekt.Projektnr'.", repo.FrmTabProjekt.ProjektnrInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.FrmTabProjekt.ProjektnrInfo, "Text", PROJ_NR_1_K);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$PROJ_NR_1_K) on item 'FrmTabProjekt_alt.Projektnr'.", repo.FrmTabProjekt_alt.ProjektnrInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.ProjektnrInfo, "Text", PROJ_NR_1_K);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Phasen_Tab_regex_Sonderzeichen' at Center.", repo.FrmTabProjekt.Phasen_Tab_regex_SonderzeichenInfo, new RecordItemIndex(1));
-            repo.FrmTabProjekt.Phasen_Tab_regex_Sonderzeichen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt_alt.Phasen_Tab_regex_Sonderzeichen' at Center.", repo.FrmTabProjekt_alt.Phasen_Tab_regex_SonderzeichenInfo, new RecordItemIndex(1));
+            repo.FrmTabProjekt_alt.Phasen_Tab_regex_Sonderzeichen.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasPspCodeRow1'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasPspCodeRow1Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasPspCodeRow1Info, "Text", "1");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasPspCodeRow1'.", repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasPspCodeRow1Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasPspCodeRow1Info, "Text", "1");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasCdRow1'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasCdRow1Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasCdRow1Info, "Text", "10");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasCdRow1'.", repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasCdRow1Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasCdRow1Info, "Text", "10");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Projektleitung') on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow1'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow1Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow1Info, "Text", "Projektleitung");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Projektleitung') on item 'FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow1'.", repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow1Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow1Info, "Text", "Projektleitung");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasArtRow1'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasArtRow1Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasArtRow1Info, "Text", "3");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasArtRow1'.", repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasArtRow1Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasArtRow1Info, "Text", "3");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColdtPhasVonRow1'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColdtPhasVonRow1Info, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColdtPhasVonRow1Info, "Text", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColdtPhasVonRow1'.", repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColdtPhasVonRow1Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColdtPhasVonRow1Info, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$bis_Datum) on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColdtPhasBisRow1'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColdtPhasBisRow1Info, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColdtPhasBisRow1Info, "Text", bis_Datum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$bis_Datum) on item 'FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColdtPhasBisRow1'.", repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColdtPhasBisRow1Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColdtPhasBisRow1Info, "Text", bis_Datum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusRow1'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusRow1Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusRow1Info, "Text", "0");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusRow1'.", repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusRow1Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusRow1Info, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2') on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusExtRow1'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusExtRow1Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusExtRow1Info, "Text", "2");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2') on item 'FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusExtRow1'.", repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusExtRow1Info, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusExtRow1Info, "Text", "2");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='True') on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBukzzeitRow1'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBukzzeitRow1Info, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBukzzeitRow1Info, "AccessibleValue", "True");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='True') on item 'FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasBukzzeitRow1'.", repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasBukzzeitRow1Info, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasBukzzeitRow1Info, "AccessibleValue", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='False') on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasKzfortschrittRow1'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasKzfortschrittRow1Info, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasKzfortschrittRow1Info, "AccessibleValue", "False");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='False') on item 'FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasKzfortschrittRow1'.", repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasKzfortschrittRow1Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasKzfortschrittRow1Info, "AccessibleValue", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='6.2') on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasPspCodeRow22'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasPspCodeRow22Info, new RecordItemIndex(12));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasPspCodeRow22Info, "Text", "6.2");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='6.2') on item 'FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasPspCodeRow22'.", repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasPspCodeRow22Info, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasPspCodeRow22Info, "Text", "6.2");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='RP2') on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasCdRow22'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasCdRow22Info, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasCdRow22Info, "Text", "RP2");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='RP2') on item 'FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasCdRow22'.", repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasCdRow22Info, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasCdRow22Info, "Text", "RP2");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='RP - Angebot') on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow22'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow22Info, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow22Info, "Text", "RP - Angebot");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='RP - Angebot') on item 'FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow22'.", repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow22Info, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasBezRow22Info, "Text", "RP - Angebot");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasArtRow22'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasArtRow22Info, new RecordItemIndex(15));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasArtRow22Info, "Text", "3");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasArtRow22'.", repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasArtRow22Info, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasArtRow22Info, "Text", "3");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColdtPhasVonRow22'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColdtPhasVonRow22Info, new RecordItemIndex(16));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColdtPhasVonRow22Info, "Text", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColdtPhasVonRow22'.", repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColdtPhasVonRow22Info, new RecordItemIndex(16));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColdtPhasVonRow22Info, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$bis_Datum) on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColdtPhasBisRow22'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColdtPhasBisRow22Info, new RecordItemIndex(17));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColdtPhasBisRow22Info, "Text", bis_Datum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$bis_Datum) on item 'FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColdtPhasBisRow22'.", repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColdtPhasBisRow22Info, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColdtPhasBisRow22Info, "Text", bis_Datum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusRow22'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusRow22Info, new RecordItemIndex(18));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusRow22Info, "Text", "0");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusRow22'.", repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusRow22Info, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusRow22Info, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2') on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusExtRow22'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusExtRow22Info, new RecordItemIndex(19));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusExtRow22Info, "Text", "2");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2') on item 'FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusExtRow22'.", repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusExtRow22Info, new RecordItemIndex(19));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasStatusExtRow22Info, "Text", "2");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='True') on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBukzzeitRow22'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBukzzeitRow22Info, new RecordItemIndex(20));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasBukzzeitRow22Info, "AccessibleValue", "True");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='True') on item 'FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasBukzzeitRow22'.", repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasBukzzeitRow22Info, new RecordItemIndex(20));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasBukzzeitRow22Info, "AccessibleValue", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='False') on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasKzfortschrittRow22'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasKzfortschrittRow22Info, new RecordItemIndex(21));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasKzfortschrittRow22Info, "AccessibleValue", "False");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='False') on item 'FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasKzfortschrittRow22'.", repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasKzfortschrittRow22Info, new RecordItemIndex(21));
+            Validate.AttributeEqual(repo.FrmTabProjekt_alt.Register_Phasen.Register_Phasen_Felder.ColPhasKzfortschrittRow22Info, "AccessibleValue", "False");
             
         }
 
