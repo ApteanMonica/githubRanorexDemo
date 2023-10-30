@@ -41,7 +41,7 @@ namespace B_UVA_004.Recordings_Formular
         /// </summary>
         public Zuordnungen_Form_NEU_KZ000_aufrufen()
         {
-            Form_Name_NEU = "";
+            Form_Name_NEU = "UVA-Österreich 2023";
         }
 
         /// <summary>

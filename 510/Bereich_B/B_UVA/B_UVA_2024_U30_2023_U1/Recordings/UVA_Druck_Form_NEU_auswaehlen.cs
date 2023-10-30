@@ -116,8 +116,8 @@ namespace B_UVA_2024_U30_2023_U1.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='AT') on item 'DlgUVADruck.Land'.", repo.DlgUVADruck.LandInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.DlgUVADruck.LandInfo, "Text", "AT");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Form_Name_NEU) on item 'DlgUVADruck.CmbUvaFBez'.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(8));
-            Validate.AttributeContains(repo.DlgUVADruck.CmbUvaFBezInfo, "Text", Form_Name_NEU);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Form_Name_NEU) on item 'DlgUVADruck.CmbUvaFBez'.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.DlgUVADruck.CmbUvaFBezInfo, "Text", Form_Name_NEU);
             
         }
 

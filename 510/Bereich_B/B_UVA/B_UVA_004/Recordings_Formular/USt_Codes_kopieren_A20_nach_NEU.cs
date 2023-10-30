@@ -44,7 +44,7 @@ namespace B_UVA_004.Recordings_Formular
             Firma_2 = "200";
             Form_Name_A20 = "UVA-Österreich 2020";
             Form_Code_A20 = "A20";
-            Form_Name_NEU = "sterreich 2023";
+            Form_Name_NEU = "UVA-Österreich 2023";
             Form_Code_NEU = "A23";
         }
 
@@ -196,11 +196,11 @@ namespace B_UVA_004.Recordings_Formular
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUVAK.CmbUvak2' at Center.", repo.FrmUVAK.CmbUvak2Info, new RecordItemIndex(17));
             repo.FrmUVAK.CmbUvak2.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.UVAOEsterreich2023_Umlautproblem_521_Script' at Center.", repo.List1000.UVAOEsterreich2023_Umlautproblem_521_ScriptInfo, new RecordItemIndex(18));
-            repo.List1000.UVAOEsterreich2023_Umlautproblem_521_Script.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.UVAOEsterreich2023' at Center.", repo.List1000.UVAOEsterreich2023Info, new RecordItemIndex(18));
+            repo.List1000.UVAOEsterreich2023.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Form_Name_NEU) on item 'FrmUVAK.CmbUvak2'.", repo.FrmUVAK.CmbUvak2Info, new RecordItemIndex(19));
-            Validate.AttributeContains(repo.FrmUVAK.CmbUvak2Info, "Text", Form_Name_NEU);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Form_Name_NEU) on item 'FrmUVAK.CmbUvak2'.", repo.FrmUVAK.CmbUvak2Info, new RecordItemIndex(19));
+            Validate.AttributeEqual(repo.FrmUVAK.CmbUvak2Info, "Text", Form_Name_NEU);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUVAK.Text' at Center.", repo.FrmUVAK.TextInfo, new RecordItemIndex(20));
             repo.FrmUVAK.Text.Click();
@@ -214,8 +214,8 @@ namespace B_UVA_004.Recordings_Formular
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (ControlText=$Form_Name_A20) on item 'FrmUVAK.CmbUvak1'.", repo.FrmUVAK.CmbUvak1Info, new RecordItemIndex(23));
             Validate.AttributeEqual(repo.FrmUVAK.CmbUvak1Info, "ControlText", Form_Name_A20);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (ControlText>$Form_Name_NEU) on item 'FrmUVAK.CmbUvak2'.", repo.FrmUVAK.CmbUvak2Info, new RecordItemIndex(24));
-            Validate.AttributeContains(repo.FrmUVAK.CmbUvak2Info, "ControlText", Form_Name_NEU);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (ControlText=$Form_Name_NEU) on item 'FrmUVAK.CmbUvak2'.", repo.FrmUVAK.CmbUvak2Info, new RecordItemIndex(24));
+            Validate.AttributeEqual(repo.FrmUVAK.CmbUvak2Info, "ControlText", Form_Name_NEU);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Form_Code_A20) on item 'FrmUVAK.DfCode1'.", repo.FrmUVAK.DfCode1Info, new RecordItemIndex(25));
             Validate.AttributeEqual(repo.FrmUVAK.DfCode1Info, "Text", Form_Code_A20);
