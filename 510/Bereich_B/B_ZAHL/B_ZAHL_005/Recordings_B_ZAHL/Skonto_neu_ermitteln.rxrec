@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Skonto_ermitteln"
+	classname="Skonto_neu_ermitteln"
 	namespace="B_ZAHL_005.Recordings_B_ZAHL">
 	</codegen>
 	<variables>
@@ -7709,6 +7709,61 @@ n/jp/wAKAI9L/wBSau1S0v8A1Jq7QAUUUUAFFFFABRRRQAUUUUAFFFFAH//Z
 			<bindings>
 			</bindings>
 		</keyitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="62f0e7d8-e7f7-4605-8473-fd4ecfdfcefd"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c809ce7d-2c07-465a-8200-343263c41e00"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZlvsÄndern']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colZBetragZ Row 2' and @text='594,00']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="d799ccfd-ce88-4491-a365-5612c737bcfc"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="29a9da2f-e835-4326-844e-96a2a87fb22f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmZlvsÄndern']/container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Speichern']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 	</recorditems>
 	<repository
 	id="900e697a-4331-485f-90e1-a1f49d26c342"
@@ -7725,7 +7780,7 @@ n/jp/wAKAI9L/wBSau1S0v8A1Jq7QAUUUUAFFFFABRRRQAUUUUAFFFFAH//Z
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Skonto_ermitteln.UserCode.cs
+		Skonto_neu_ermitteln.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

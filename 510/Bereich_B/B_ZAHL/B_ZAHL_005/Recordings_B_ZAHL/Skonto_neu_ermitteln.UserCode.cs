@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_ZAHL_005.Recordings_B_ZAHL
 {
-    public partial class Skonto_ermitteln
+    public partial class Skonto_neu_ermitteln
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
