@@ -30,9 +30,9 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad
     public partial class Pruefung_Inhalt_XML_UVA_Datei : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_004Repository repository.
+        /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
-        public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_004Repository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_004Repository.Instance;
+        public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
         static Pruefung_Inhalt_XML_UVA_Datei instance = new Pruefung_Inhalt_XML_UVA_Datei();
 
@@ -41,14 +41,13 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad
         /// </summary>
         public Pruefung_Inhalt_XML_UVA_Datei()
         {
-            Tagesdatum_yyyyMMdd = "";
-            XML_UVA_VERSION = "";
-            XML_UVA_2023_01_Teil_1 = "";
-            XML_UVA_2023_01_Teil_2 = "";
-            XML_UVA_2023_01_Teil_3 = "";
-            XML_UVA_2023_01_Teil_4 = "";
-            Jahr = "";
-            XML_UVA_2023_01_Teil_5 = "";
+            XML_UVA_VERSION_JAHRNEU = "";
+            XML_UVA_JAHRNEU_01_Teil_1 = "";
+            XML_UVA_JAHRNEU_01_Teil_2 = "";
+            XML_UVA_JAHRNEU_01_Teil_3 = "";
+            XML_UVA_JAHRNEU_01_Teil_4 = "";
+            JAHRNEU = "";
+            XML_UVA_JAHRNEU_01_Teil_5 = "";
         }
 
         /// <summary>
@@ -61,100 +60,88 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad
 
 #region Variables
 
-        string _Tagesdatum_yyyyMMdd;
+        string _XML_UVA_VERSION_JAHRNEU;
 
         /// <summary>
-        /// Gets or sets the value of variable Tagesdatum_yyyyMMdd.
-        /// </summary>
-        [TestVariable("27664176-58b2-4716-aba2-72b328de4b65")]
-        public string Tagesdatum_yyyyMMdd
-        {
-            get { return _Tagesdatum_yyyyMMdd; }
-            set { _Tagesdatum_yyyyMMdd = value; }
-        }
-
-        string _XML_UVA_VERSION;
-
-        /// <summary>
-        /// Gets or sets the value of variable XML_UVA_VERSION.
+        /// Gets or sets the value of variable XML_UVA_VERSION_JAHRNEU.
         /// </summary>
         [TestVariable("c80c0ae6-ca76-433d-8d76-e456929dfee9")]
-        public string XML_UVA_VERSION
+        public string XML_UVA_VERSION_JAHRNEU
         {
-            get { return _XML_UVA_VERSION; }
-            set { _XML_UVA_VERSION = value; }
+            get { return _XML_UVA_VERSION_JAHRNEU; }
+            set { _XML_UVA_VERSION_JAHRNEU = value; }
         }
 
-        string _XML_UVA_2023_01_Teil_1;
+        string _XML_UVA_JAHRNEU_01_Teil_1;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_UVA_2023_01_Teil_1.
+        /// Gets or sets the value of variable XML_UVA_JAHRNEU_01_Teil_1.
         /// </summary>
         [TestVariable("ec60737a-6339-4563-a9e4-7aadfa5e61f1")]
-        public string XML_UVA_2023_01_Teil_1
+        public string XML_UVA_JAHRNEU_01_Teil_1
         {
-            get { return _XML_UVA_2023_01_Teil_1; }
-            set { _XML_UVA_2023_01_Teil_1 = value; }
+            get { return _XML_UVA_JAHRNEU_01_Teil_1; }
+            set { _XML_UVA_JAHRNEU_01_Teil_1 = value; }
         }
 
-        string _XML_UVA_2023_01_Teil_2;
+        string _XML_UVA_JAHRNEU_01_Teil_2;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_UVA_2023_01_Teil_2.
+        /// Gets or sets the value of variable XML_UVA_JAHRNEU_01_Teil_2.
         /// </summary>
         [TestVariable("f6f24fed-cac8-40fe-aba2-443e2eab3f3d")]
-        public string XML_UVA_2023_01_Teil_2
+        public string XML_UVA_JAHRNEU_01_Teil_2
         {
-            get { return _XML_UVA_2023_01_Teil_2; }
-            set { _XML_UVA_2023_01_Teil_2 = value; }
+            get { return _XML_UVA_JAHRNEU_01_Teil_2; }
+            set { _XML_UVA_JAHRNEU_01_Teil_2 = value; }
         }
 
-        string _XML_UVA_2023_01_Teil_3;
+        string _XML_UVA_JAHRNEU_01_Teil_3;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_UVA_2023_01_Teil_3.
+        /// Gets or sets the value of variable XML_UVA_JAHRNEU_01_Teil_3.
         /// </summary>
         [TestVariable("913808dd-d29e-4eb6-a2dd-9642b11211d5")]
-        public string XML_UVA_2023_01_Teil_3
+        public string XML_UVA_JAHRNEU_01_Teil_3
         {
-            get { return _XML_UVA_2023_01_Teil_3; }
-            set { _XML_UVA_2023_01_Teil_3 = value; }
+            get { return _XML_UVA_JAHRNEU_01_Teil_3; }
+            set { _XML_UVA_JAHRNEU_01_Teil_3 = value; }
         }
 
-        string _XML_UVA_2023_01_Teil_4;
+        string _XML_UVA_JAHRNEU_01_Teil_4;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_UVA_2023_01_Teil_4.
+        /// Gets or sets the value of variable XML_UVA_JAHRNEU_01_Teil_4.
         /// </summary>
         [TestVariable("2ec2c4fd-92e1-4366-bd20-41d963e7b15e")]
-        public string XML_UVA_2023_01_Teil_4
+        public string XML_UVA_JAHRNEU_01_Teil_4
         {
-            get { return _XML_UVA_2023_01_Teil_4; }
-            set { _XML_UVA_2023_01_Teil_4 = value; }
+            get { return _XML_UVA_JAHRNEU_01_Teil_4; }
+            set { _XML_UVA_JAHRNEU_01_Teil_4 = value; }
         }
 
-        string _Jahr;
+        string _JAHRNEU;
 
         /// <summary>
-        /// Gets or sets the value of variable Jahr.
+        /// Gets or sets the value of variable JAHRNEU.
         /// </summary>
         [TestVariable("6bab4199-4553-4821-81c4-e305079649ad")]
-        public string Jahr
+        public string JAHRNEU
         {
-            get { return _Jahr; }
-            set { _Jahr = value; }
+            get { return _JAHRNEU; }
+            set { _JAHRNEU = value; }
         }
 
-        string _XML_UVA_2023_01_Teil_5;
+        string _XML_UVA_JAHRNEU_01_Teil_5;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_UVA_2023_01_Teil_5.
+        /// Gets or sets the value of variable XML_UVA_JAHRNEU_01_Teil_5.
         /// </summary>
         [TestVariable("28f3fb56-9c7d-4275-9d66-4c2f6791653b")]
-        public string XML_UVA_2023_01_Teil_5
+        public string XML_UVA_JAHRNEU_01_Teil_5
         {
-            get { return _XML_UVA_2023_01_Teil_5; }
-            set { _XML_UVA_2023_01_Teil_5 = value; }
+            get { return _XML_UVA_JAHRNEU_01_Teil_5; }
+            set { _XML_UVA_JAHRNEU_01_Teil_5 = value; }
         }
 
 #endregion
@@ -184,44 +171,39 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad
             Init();
 
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_2023_01_Teil_1) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(0));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_UVA_2023_01_Teil_1, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_JAHRNEU_01_Teil_1) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(0));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_UVA_JAHRNEU_01_Teil_1, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_2023_01_Teil_2) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(1));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_UVA_2023_01_Teil_2, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_JAHRNEU_01_Teil_2) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(1));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_UVA_JAHRNEU_01_Teil_2, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_2023_01_Teil_3) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(2));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_UVA_2023_01_Teil_3, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_JAHRNEU_01_Teil_3) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(2));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_UVA_JAHRNEU_01_Teil_3, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_VERSION) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(3));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_UVA_VERSION, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_VERSION_JAHRNEU) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(3));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_UVA_VERSION_JAHRNEU, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             try {
-                //Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$Tagesdatum_yyyyMMdd) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(4));
-                //Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", Tagesdatum_yyyyMMdd, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_JAHRNEU_01_Teil_4) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(4));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_UVA_JAHRNEU_01_Teil_4, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_2023_01_Teil_4) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(5));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_UVA_2023_01_Teil_4, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$JAHRNEU) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(5));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", JAHRNEU, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$Jahr) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(6));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", Jahr, null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_JAHRNEU_01_Teil_5) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(6));
+                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_UVA_JAHRNEU_01_Teil_5, null, false);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
-            
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeContains (Text>$XML_UVA_2023_01_Teil_5) on item 'XMLEditor_UVA_ZM.Text15'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(7));
-                Validate.AttributeContains(repo.XMLEditor_UVA_ZM.Text15Info, "Text", XML_UVA_2023_01_Teil_5, null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
             
         }
 

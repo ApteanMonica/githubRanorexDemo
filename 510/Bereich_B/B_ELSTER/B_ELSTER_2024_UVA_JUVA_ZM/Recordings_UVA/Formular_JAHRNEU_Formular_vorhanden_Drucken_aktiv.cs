@@ -20,76 +20,61 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Oeffnen_notepad_XML_Datei recording.
+    ///The Formular_JAHRNEU_Formular_vorhanden_Drucken_aktiv recording.
     /// </summary>
-    [TestModule("86383f54-919d-42f4-a0a5-75cf61184fe3", ModuleType.Recording, 1)]
-    public partial class Oeffnen_notepad_XML_Datei : ITestModule
+    [TestModule("e409184a-dad1-4326-968a-8fe36694dcf2", ModuleType.Recording, 1)]
+    public partial class Formular_JAHRNEU_Formular_vorhanden_Drucken_aktiv : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Oeffnen_notepad_XML_Datei instance = new Oeffnen_notepad_XML_Datei();
+        static Formular_JAHRNEU_Formular_vorhanden_Drucken_aktiv instance = new Formular_JAHRNEU_Formular_vorhanden_Drucken_aktiv();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Oeffnen_notepad_XML_Datei()
+        public Formular_JAHRNEU_Formular_vorhanden_Drucken_aktiv()
         {
-            Programm_2 = "notepad.exe";
-            XML_UVA_Pfad_Datei = "C:\\temp\\STADUEV.XML";
-            XML_UVA_Datei = "STADUEV.XML";
+            UVA_JAHRNEU_Form_Code = "D23";
+            UVA_JAHRNEU_Form_Name = "UVA-Deutschland 2023 Elster";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Oeffnen_notepad_XML_Datei Instance
+        public static Formular_JAHRNEU_Formular_vorhanden_Drucken_aktiv Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Programm_2;
+        string _UVA_JAHRNEU_Form_Code;
 
         /// <summary>
-        /// Gets or sets the value of variable Programm_2.
+        /// Gets or sets the value of variable UVA_JAHRNEU_Form_Code.
         /// </summary>
-        [TestVariable("6638446f-c51a-456d-92ba-02636d7bb748")]
-        public string Programm_2
+        [TestVariable("52477e55-87af-4559-b0f7-7bc4c097aa0f")]
+        public string UVA_JAHRNEU_Form_Code
         {
-            get { return _Programm_2; }
-            set { _Programm_2 = value; }
+            get { return _UVA_JAHRNEU_Form_Code; }
+            set { _UVA_JAHRNEU_Form_Code = value; }
         }
 
-        string _XML_UVA_Pfad_Datei;
-
         /// <summary>
-        /// Gets or sets the value of variable XML_UVA_Pfad_Datei.
+        /// Gets or sets the value of variable UVA_JAHRNEU_Form_Name.
         /// </summary>
-        [TestVariable("45c635e3-2140-4abe-a2a5-4bec112023be")]
-        public string XML_UVA_Pfad_Datei
+        [TestVariable("8dbdf37e-bc89-494d-bdce-3e940116728c")]
+        public string UVA_JAHRNEU_Form_Name
         {
-            get { return _XML_UVA_Pfad_Datei; }
-            set { _XML_UVA_Pfad_Datei = value; }
-        }
-
-        string _XML_UVA_Datei;
-
-        /// <summary>
-        /// Gets or sets the value of variable XML_UVA_Datei.
-        /// </summary>
-        [TestVariable("9a617ced-bff6-497b-9ff6-f6654650da33")]
-        public string XML_UVA_Datei
-        {
-            get { return _XML_UVA_Datei; }
-            set { _XML_UVA_Datei = value; }
+            get { return repo.UVA_JAHRNEU_Form_Name; }
+            set { repo.UVA_JAHRNEU_Form_Name = value; }
         }
 
 #endregion
@@ -118,14 +103,14 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $XML_UVA_Pfad_Datei with arguments from variable $Programm_2 in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(XML_UVA_Pfad_Datei, Programm_2, "", false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblUVAF.PageDown' at Center.", repo.TblUVAF.PageDownInfo, new RecordItemIndex(0));
+            repo.TblUVAF.PageDown.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'XMLEditor_UVA_ZM.XMLEditor'", repo.XMLEditor_UVA_ZM.XMLEditorInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.XMLEditor_UVA_ZM.XMLEditorInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_JAHRNEU_Form_Code) on item 'TblUVAF.Tabelle_flexgrid.ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name'.", repo.TblUVAF.Tabelle_flexgrid.ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_NameInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblUVAF.Tabelle_flexgrid.ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_NameInfo, "Text", UVA_JAHRNEU_Form_Code);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$XML_UVA_Datei) on item 'XMLEditor_UVA_ZM.XMLEditor'.", repo.XMLEditor_UVA_ZM.XMLEditorInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.XMLEditor_UVA_ZM.XMLEditorInfo, "Text", XML_UVA_Datei);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='True') on item 'TblUVAF.Tabelle_flexgrid.ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name'.", repo.TblUVAF.Tabelle_flexgrid.ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_NameInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblUVAF.Tabelle_flexgrid.ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_NameInfo, "AccessibleValue", "True");
             
         }
 
