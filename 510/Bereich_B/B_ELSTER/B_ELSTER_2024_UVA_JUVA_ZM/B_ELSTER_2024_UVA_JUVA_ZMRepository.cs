@@ -127,6 +127,18 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             set { _UVA_VORJAHR_Form_Name = value; }
         }
 
+        string _UVA_JAHRNEU_Form_Name = "UVA-Deutschland 2023 Elster";
+
+        /// <summary>
+        /// Gets or sets the value of variable UVA_JAHRNEU_Form_Name.
+        /// </summary>
+        [TestVariable("3751c4e7-3923-4ce1-a791-05ede3e7ff24")]
+        public string UVA_JAHRNEU_Form_Name
+        {
+            get { return _UVA_JAHRNEU_Form_Name; }
+            set { _UVA_JAHRNEU_Form_Name = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -1584,6 +1596,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             RepoItemInfo _uvadeutschland2020elsterInfo;
             RepoItemInfo _uvadeutschland2022elsterInfo;
             RepoItemInfo _dezemberInfo;
+            RepoItemInfo _uvadeutschland2023elsterInfo;
 
             /// <summary>
             /// Creates a new List1000  folder.
@@ -1595,6 +1608,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 _uvadeutschland2020elsterInfo = new RepoItemInfo(this, "UVADeutschland2020Elster", "listitem[@text~'UVA-Deutschland 2020']", "", 30000, null, "eaa61b5d-83a7-4b98-80c9-59bd16c12a00");
                 _uvadeutschland2022elsterInfo = new RepoItemInfo(this, "UVADeutschland2022Elster", "listitem[@text~'UVA-Deutschland 2022']", "", 30000, null, "bce0ed16-da5f-46b9-abc3-cb27cf466b58");
                 _dezemberInfo = new RepoItemInfo(this, "Dezember", "listitem[@text='Dezember']", "", 30000, null, "38ccb2dc-0e9d-4c87-8c0a-bcc335459f31");
+                _uvadeutschland2023elsterInfo = new RepoItemInfo(this, "UVADeutschland2023Elster", "listitem[@text~'UVA-Deutschland 2023']", "", 30000, null, "ec671726-981c-4612-8bc5-6a9172b902c3");
             }
 
             /// <summary>
@@ -1714,6 +1728,30 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 get
                 {
                     return _dezemberInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UVADeutschland2023Elster item.
+            /// </summary>
+            [RepositoryItem("ec671726-981c-4612-8bc5-6a9172b902c3")]
+            public virtual Ranorex.ListItem UVADeutschland2023Elster
+            {
+                get
+                {
+                    return _uvadeutschland2023elsterInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UVADeutschland2023Elster item info.
+            /// </summary>
+            [RepositoryItemInfo("ec671726-981c-4612-8bc5-6a9172b902c3")]
+            public virtual RepoItemInfo UVADeutschland2023ElsterInfo
+            {
+                get
+                {
+                    return _uvadeutschland2023elsterInfo;
                 }
             }
         }
@@ -2403,6 +2441,9 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             RepoItemInfo _coluvacdin_zeile_mit_variable_uva_vorjahr_form_nameInfo;
             RepoItemInfo _coluvadruckenrowmit_variable_uva_vorjahr_form_nameInfo;
             RepoItemInfo _column0_in_zeile_mit_variable_uva_vorjahr_form_nameInfo;
+            RepoItemInfo _coluvacdin_zeile_mit_variable_uva_jahrneu_form_nameInfo;
+            RepoItemInfo _coluvadruckenrowmit_variable_uva_jahrneu_form_nameInfo;
+            RepoItemInfo _column0_in_zeile_mit_variable_uva_jahrneu_form_nameInfo;
 
             /// <summary>
             /// Creates a new Tabelle_flexgrid  folder.
@@ -2413,6 +2454,9 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 _coluvacdin_zeile_mit_variable_uva_vorjahr_form_nameInfo = new RepoItemInfo(this, "ColUvaCdin_Zeile_mit_Variable_UVA_VORJAHR_Form_Name", "row[@accessiblerole='Row' and @accessiblevalue~$UVA_VORJAHR_Form_Name]/cell[@accessiblename~'colUva_cd']", "", 30000, null, "d2839d24-2308-46fc-bf1e-47897f131c79");
                 _coluvadruckenrowmit_variable_uva_vorjahr_form_nameInfo = new RepoItemInfo(this, "ColUvaDruckenRowmit_Variable_UVA_VORJAHR_Form_Name", "row[@accessiblerole='Row' and @accessiblevalue~$UVA_VORJAHR_Form_Name]/cell[@accessiblename~'colUva_drucken']", "", 30000, null, "f8ccc04a-84a0-417c-8a7f-798e5a215cf6");
                 _column0_in_zeile_mit_variable_uva_vorjahr_form_nameInfo = new RepoItemInfo(this, "Column0_in_Zeile_mit_Variable_UVA_VORJAHR_Form_Name", "row[@accessiblerole='Row' and @accessiblevalue~$UVA_VORJAHR_Form_Name]/cell[@accessiblename~'Column 0']", "", 30000, null, "5ec261f1-fce7-48eb-a9f8-54ae4a3f443c");
+                _coluvacdin_zeile_mit_variable_uva_jahrneu_form_nameInfo = new RepoItemInfo(this, "ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name", "row[@accessiblerole='Row' and @accessiblevalue~$UVA_JAHRNEU_Form_Name]/cell[@accessiblename~'colUva_cd']", "", 30000, null, "3ca05721-55d2-4df3-9add-083afc2d200e");
+                _coluvadruckenrowmit_variable_uva_jahrneu_form_nameInfo = new RepoItemInfo(this, "ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name", "row[@accessiblerole='Row' and @accessiblevalue~$UVA_JAHRNEU_Form_Name]/cell[@accessiblename~'colUva_drucken']", "", 30000, null, "6c1a270d-76d5-44bf-b42f-103c538fcf6b");
+                _column0_in_zeile_mit_variable_uva_jahrneu_form_nameInfo = new RepoItemInfo(this, "Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name", "row[@accessiblerole='Row' and @accessiblevalue~$UVA_JAHRNEU_Form_Name]/cell[@accessiblename~'Column 0']", "", 30000, null, "93058e13-eb43-4ab7-aa3d-868b03c43386");
             }
 
             /// <summary>
@@ -2508,6 +2552,78 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 get
                 {
                     return _column0_in_zeile_mit_variable_uva_vorjahr_form_nameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name item.
+            /// </summary>
+            [RepositoryItem("3ca05721-55d2-4df3-9add-083afc2d200e")]
+            public virtual Ranorex.Cell ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name
+            {
+                get
+                {
+                    return _coluvacdin_zeile_mit_variable_uva_jahrneu_form_nameInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name item info.
+            /// </summary>
+            [RepositoryItemInfo("3ca05721-55d2-4df3-9add-083afc2d200e")]
+            public virtual RepoItemInfo ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_NameInfo
+            {
+                get
+                {
+                    return _coluvacdin_zeile_mit_variable_uva_jahrneu_form_nameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name item.
+            /// </summary>
+            [RepositoryItem("6c1a270d-76d5-44bf-b42f-103c538fcf6b")]
+            public virtual Ranorex.Cell ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name
+            {
+                get
+                {
+                    return _coluvadruckenrowmit_variable_uva_jahrneu_form_nameInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name item info.
+            /// </summary>
+            [RepositoryItemInfo("6c1a270d-76d5-44bf-b42f-103c538fcf6b")]
+            public virtual RepoItemInfo ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_NameInfo
+            {
+                get
+                {
+                    return _coluvadruckenrowmit_variable_uva_jahrneu_form_nameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name item.
+            /// </summary>
+            [RepositoryItem("93058e13-eb43-4ab7-aa3d-868b03c43386")]
+            public virtual Ranorex.Cell Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name
+            {
+                get
+                {
+                    return _column0_in_zeile_mit_variable_uva_jahrneu_form_nameInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name item info.
+            /// </summary>
+            [RepositoryItemInfo("93058e13-eb43-4ab7-aa3d-868b03c43386")]
+            public virtual RepoItemInfo Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_NameInfo
+            {
+                get
+                {
+                    return _column0_in_zeile_mit_variable_uva_jahrneu_form_nameInfo;
                 }
             }
         }
@@ -3369,6 +3485,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             RepoItemInfo _cmbuvafbezInfo;
             RepoItemInfo _tabpagejahreserklaerungInfo;
             RepoItemInfo _umsatzsteuererklaerungfuerjahrInfo;
+            RepoItemInfo _formulardruckfuerjahrmonatvonInfo;
+            RepoItemInfo _textInfo;
 
             /// <summary>
             /// Creates a new DlgUVADruck  folder.
@@ -3382,6 +3500,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 _cmbuvafbezInfo = new RepoItemInfo(this, "CmbUvaFBez", "tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpFormular']/combobox[@controlname='cmbUvaF_bez']", "", 30000, null, "d47ce18c-0016-462f-9549-90fe4c69d1d9");
                 _tabpagejahreserklaerungInfo = new RepoItemInfo(this, "TabPageJahreserklaerung", "tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&Jahreserklärung']", "", 30000, null, "3c8444b8-a2fa-48c8-98e2-512cbd062d3a");
                 _umsatzsteuererklaerungfuerjahrInfo = new RepoItemInfo(this, "UmsatzsteuererklaerungFuerJahr", "tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpJahreserklärung']/text[@controlname='dfZR']/text[@accessiblename>'Umsatzsteuererklärung für']", "", 30000, null, "bb5fd26e-42e9-4f60-b4de-5593d9091ead");
+                _formulardruckfuerjahrmonatvonInfo = new RepoItemInfo(this, "FormulardruckFuerJahrMonatVon", "tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpFormular']/text[@controlname='dfJahr']/text[@accessiblename>'Formulardruck für Jahr / Monat']", "", 30000, null, "e4e01c66-4488-41b0-a434-dbf40c82636c");
+                _textInfo = new RepoItemInfo(this, "Text", "tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpFormular']/text[@controlname='dfMonat']/text[@accessiblerole='Text']", "", 30000, null, "b2b42119-c36e-4a55-a044-64c99e140639");
             }
 
             /// <summary>
@@ -3549,6 +3669,54 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 get
                 {
                     return _umsatzsteuererklaerungfuerjahrInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FormulardruckFuerJahrMonatVon item.
+            /// </summary>
+            [RepositoryItem("e4e01c66-4488-41b0-a434-dbf40c82636c")]
+            public virtual Ranorex.Text FormulardruckFuerJahrMonatVon
+            {
+                get
+                {
+                    return _formulardruckfuerjahrmonatvonInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FormulardruckFuerJahrMonatVon item info.
+            /// </summary>
+            [RepositoryItemInfo("e4e01c66-4488-41b0-a434-dbf40c82636c")]
+            public virtual RepoItemInfo FormulardruckFuerJahrMonatVonInfo
+            {
+                get
+                {
+                    return _formulardruckfuerjahrmonatvonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text item.
+            /// </summary>
+            [RepositoryItem("b2b42119-c36e-4a55-a044-64c99e140639")]
+            public virtual Ranorex.Text Text
+            {
+                get
+                {
+                    return _textInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text item info.
+            /// </summary>
+            [RepositoryItemInfo("b2b42119-c36e-4a55-a044-64c99e140639")]
+            public virtual RepoItemInfo TextInfo
+            {
+                get
+                {
+                    return _textInfo;
                 }
             }
         }

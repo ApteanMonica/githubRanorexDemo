@@ -497,6 +497,16 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/list[@controlid='1000']/listitem[@text='Dezember']
 			</item>
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
+			id="ec671726-981c-4612-8bc5-6a9172b902c3"
+			name="UVADeutschland2023Elster"
+			refimgid="524cdb85-2d31-4e1d-85e1-6fc9dd80e681"
+			robustPath=""
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text~'UVA-Deutschland 2023']
+			</item>
 			<basepath>
 				/list[@controlid='1000']
 			</basepath>
@@ -2153,6 +2163,36 @@ F0Wgr4voafeUAAAAAElFTkSuQmCC
 				searchtimeout="30000ms">
 					/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UVA_VORJAHR_Form_Name]/cell[@accessiblename~'Column 0']
 				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="3ca05721-55d2-4df3-9add-083afc2d200e"
+				name="ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name"
+				refimgid="0d3e094c-abeb-4fc2-a7e5-2123906caef2"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UVA_JAHRNEU_Form_Name]/cell[@accessiblename~'colUva_cd']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="6c1a270d-76d5-44bf-b42f-103c538fcf6b"
+				name="ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name"
+				refimgid="270a19d5-442c-4428-a558-3343e3f48a63"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UVA_JAHRNEU_Form_Name]/cell[@accessiblename~'colUva_drucken']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="93058e13-eb43-4ab7-aa3d-868b03c43386"
+				name="Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name"
+				refimgid="d1a11992-6b7a-4a2c-b6de-ca161dab8491"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UVA_JAHRNEU_Form_Name]/cell[@accessiblename~'Column 0']
+				</item>
 				<basepath>
 					/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
 				</basepath>
@@ -2576,6 +2616,28 @@ iQGlGgC6HTBAdPsLgewbF6W61N1ckdcAAAAASUVORK5CYII=
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='dlgUVA_druck']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpJahreserkl&#228;rung']/text[@controlname='dfZR']/text[@accessiblename&gt;'Umsatzsteuererkl&#228;rung f&#252;r']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="e4e01c66-4488-41b0-a434-dbf40c82636c"
+			name="FormulardruckFuerJahrMonatVon"
+			refimgid="b718b9b3-39e8-42ca-8e9a-c6599e770fef"
+			refpath="/form[@controlname='dlgUVA_druck']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpFormular']/text[@controlname='dfJahr']/text[@accessiblename='Formulardruck für Jahr / Monat  von']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgUVA_druck']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpFormular']/text[@controlname='dfJahr']/text[@accessiblename&gt;'Formulardruck f&#252;r Jahr / Monat']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="b2b42119-c36e-4a55-a044-64c99e140639"
+			name="Text"
+			refimgid="a7f2b0b6-019e-4eb1-aac3-4df45e715847"
+			refpath="/form[@controlname='dlgUVA_druck']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpFormular']/text[@controlname='dfMonat']/text[@accessiblerole='Text']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgUVA_druck']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpFormular']/text[@controlname='dfMonat']/text[@accessiblerole='Text']
 			</item>
 			<basepath>
 				/form[@controlname='dlgUVA_druck']
@@ -3537,6 +3599,11 @@ SUVORK5CYII=
 		id="f9e0c706-5661-4b4b-8b5f-4d8d6c9eaec8"
 		name="UVA_VORJAHR_Form_Name">
 			UVA-Deutschland 2022 Elster
+		</var>
+		<var
+		id="3751c4e7-3923-4ce1-a791-05ede3e7ff24"
+		name="UVA_JAHRNEU_Form_Name">
+			UVA-Deutschland 2023 Elster
 		</var>
 	</variables>
 </repository>

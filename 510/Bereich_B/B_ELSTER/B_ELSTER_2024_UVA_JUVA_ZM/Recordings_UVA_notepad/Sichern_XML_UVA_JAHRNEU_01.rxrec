@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="e913ecb5-9e28-4d8c-932c-9b3e7d55c731"
+id="151f365f-fdc4-4186-ae87-438eb412af6a"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,26 +19,41 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Loeschen_XML_UVA"
+	classname="Sichern_XML_UVA_JAHRNEU_01"
 	namespace="B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad">
 	</codegen>
 	<variables>
 		<var
-		id="be048278-7473-4332-b476-d8d5506486af"
-		name="XML_UVA_Datei">
-		</var>
-		<var
-		id="452fee4c-86be-4eab-b309-afdc65151d57"
-		name="Pfad">
-			c:\temp
+		id="ee0a5432-78df-4e82-b55f-d3eda92cee94"
+		name="XML_Inhalt_aktuell">
 		</var>
 	</variables>
 	<recorditems>
+		<getvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="d9afe67e-7d58-44df-a23f-203c288230b0"
+		varname="XML_Inhalt_aktuell">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1c2b40ee-20f3-4c54-81ea-58d195a219b1"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'.XML - Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
 		<userrecorditem
 		classname="FileLibrary"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="DeleteFiles"
+		methodname="WriteToFile"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
 		optional="False">
 			<comment>
@@ -46,27 +61,35 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<arguments
-			id="4c487ddb-b723-4761-9f1b-bcde58e045cc">
+			id="9b5bc4d6-558d-42b1-bc61-b53ec2b533f4">
 				<argument
-				argname="path"
-				id="3db60b04-f432-4a58-9ce0-7422f11a956d"
-				variable="Pfad">
+				argname="text"
+				id="5ffabbf8-5162-4d5e-af20-1c97d6b8702c"
+				variable="XML_Inhalt_aktuell">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						c:\temp
 					</argvalue>
 				</argument>
 				<argument
-				argname="pattern"
-				id="f8b53938-0429-47a7-a86c-eb9136d1c9a8"
-				variable="XML_UVA_Datei">
+				argname="filenamePrefix"
+				id="0a8d5092-c590-4298-9a79-2b82bb618926">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						eric.log
+						c:\temp\STADUEV_JAHRNEU_01
+					</argvalue>
+				</argument>
+				<argument
+				argname="fileExtension"
+				id="c4e55a43-ef64-4786-aed2-d68ef97bdac7">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						xml
 					</argvalue>
 				</argument>
 			</arguments>
@@ -87,7 +110,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		loeschen_XML_UVA.UserCode.cs
+		Sichern_XML_UVA_JAHRNEU_01.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

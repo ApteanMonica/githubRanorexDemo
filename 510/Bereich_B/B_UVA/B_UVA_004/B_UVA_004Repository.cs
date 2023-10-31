@@ -97,7 +97,7 @@ namespace B_UVA_004
             set { _Form_Name_A22 = value; }
         }
 
-        string _Form_Name_NEU = "sterreich 2023";
+        string _Form_Name_NEU = "UVA-Österreich 2023";
 
         /// <summary>
         /// Gets or sets the value of variable Form_Name_NEU.
@@ -941,7 +941,7 @@ namespace B_UVA_004
         [RepositoryFolder("08cea955-e266-4637-bbc9-4ec7cccb9d4c")]
         public partial class List1000AppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _uvaoesterreich2023_umlautproblem_521_scriptInfo;
+            RepoItemInfo _uvaoesterreich2023Info;
             RepoItemInfo _uvaoesterreich2022Info;
             RepoItemInfo _uvaoesterreich2021Info;
             RepoItemInfo _uvaoesterreich_neuInfo;
@@ -953,7 +953,7 @@ namespace B_UVA_004
             public List1000AppFolder(RepoGenBaseFolder parentFolder) :
                     base("List1000", "/list[@controlid='1000']", parentFolder, 30000, null, true, "08cea955-e266-4637-bbc9-4ec7cccb9d4c", "")
             {
-                _uvaoesterreich2023_umlautproblem_521_scriptInfo = new RepoItemInfo(this, "UVAOEsterreich2023_Umlautproblem_521_Script", "listitem[@text~'sterreich 2023']", "", 30000, null, "7332ba5b-8648-4f14-b3b0-bbdd5d50fe46");
+                _uvaoesterreich2023Info = new RepoItemInfo(this, "UVAOEsterreich2023", "listitem[@text='UVA-Österreich 2023']", "", 30000, null, "7332ba5b-8648-4f14-b3b0-bbdd5d50fe46");
                 _uvaoesterreich2022Info = new RepoItemInfo(this, "UVAOEsterreich2022", "listitem[@text='UVA-Österreich 2022']", "", 30000, null, "e6aa37ec-2080-4d8c-89bb-3dd612a6699a");
                 _uvaoesterreich2021Info = new RepoItemInfo(this, "UVAOEsterreich2021", "listitem[@text='UVA-Österreich 2021']", "", 30000, null, "de5d555b-719e-4735-9cd3-26c10b018e80");
                 _uvaoesterreich_neuInfo = new RepoItemInfo(this, "UVAOEsterreich_NEU", "listitem[@text~$Form_Name_NEU]", "", 30000, null, "9e5e62d5-18b6-4788-bd24-c8f2190586db");
@@ -985,26 +985,26 @@ namespace B_UVA_004
             }
 
             /// <summary>
-            /// The UVAOEsterreich2023_Umlautproblem_521_Script item.
+            /// The UVAOEsterreich2023 item.
             /// </summary>
             [RepositoryItem("7332ba5b-8648-4f14-b3b0-bbdd5d50fe46")]
-            public virtual Ranorex.ListItem UVAOEsterreich2023_Umlautproblem_521_Script
+            public virtual Ranorex.ListItem UVAOEsterreich2023
             {
                 get
                 {
-                    return _uvaoesterreich2023_umlautproblem_521_scriptInfo.CreateAdapter<Ranorex.ListItem>(true);
+                    return _uvaoesterreich2023Info.CreateAdapter<Ranorex.ListItem>(true);
                 }
             }
 
             /// <summary>
-            /// The UVAOEsterreich2023_Umlautproblem_521_Script item info.
+            /// The UVAOEsterreich2023 item info.
             /// </summary>
             [RepositoryItemInfo("7332ba5b-8648-4f14-b3b0-bbdd5d50fe46")]
-            public virtual RepoItemInfo UVAOEsterreich2023_Umlautproblem_521_ScriptInfo
+            public virtual RepoItemInfo UVAOEsterreich2023Info
             {
                 get
                 {
-                    return _uvaoesterreich2023_umlautproblem_521_scriptInfo;
+                    return _uvaoesterreich2023Info;
                 }
             }
 
