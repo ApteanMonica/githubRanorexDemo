@@ -136,14 +136,14 @@ namespace B_BUDA_002.Recordings_B_BUDA
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'1\t174\tRS\t\tR\tB_BUDA_002-0\t3300\t*\t303091\t2.188,00\tH\t\t\t0,00\t0,00\t\tB_BUDA_002\t\tN\t\t2021-12-01-00.00.00.000000\t\t\t0\t\t3300\tEUR\tER\t2021-12-13-10.26.08.660000\t21\t99\tL\t\t\t\t\t0\t\t\t\t\t\t\t\t\t\t2021\t13\t1\t0\t0\t\t\t\t\t\t3300\t2.188,00\t0,00\tN\t1') on item 'DlgDetail.TblDetail.Row1'.", repo.DlgDetail.TblDetail.Row1Info, new RecordItemIndex(18));
             Validate.AttributeContains(repo.DlgDetail.TblDetail.Row1Info, "Text", "1\t174\tRS\t\tR\tB_BUDA_002-0\t3300\t*\t303091\t2.188,00\tH\t\t\t0,00\t0,00\t\tB_BUDA_002\t\tN\t\t2021-12-01-00.00.00.000000\t\t\t0\t\t3300\tEUR\tER\t2021-12-13-10.26.08.660000\t21\t99\tL\t\t\t\t\t0\t\t\t\t\t\t\t\t\t\t2021\t13\t1\t0\t0\t\t\t\t\t\t3300\t2.188,00\t0,00\tN\t1");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'50+|20+') on item 'DlgDetail.TblDetail.ColBektNr1Row1'.", repo.DlgDetail.TblDetail.ColBektNr1Row1Info, new RecordItemIndex(19));
-            Validate.AttributeRegex(repo.DlgDetail.TblDetail.ColBektNr1Row1Info, "Text", new Regex("50+|20+"));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20 +') on item 'DlgDetail.TblDetail.ColBektNr1Row1'.", repo.DlgDetail.TblDetail.ColBektNr1Row1Info, new RecordItemIndex(19));
+            Validate.AttributeEqual(repo.DlgDetail.TblDetail.ColBektNr1Row1Info, "Text", "20 +");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'2\t174\tRS\t\tS\tB_BUDA_002-0\t7778\t3300\t303091\t990,00\tS\tV20\tV20\t198,00\t0,00\t0,00\tB_BUDA_002\t\tJ\tV\t2021-12-01-00.00.00.000000\t20,00\tV20\t198\t\t7778\tEUR\tER\t2021-12-13-10.26.08.963000\t21\t99\tL\tJ\t\tV\t0,00\t0\t\t\t\t\t\t\t\t\t\t2021\t13\t1\t0\t0\t\t\t\t\t\t7778\t1.188,00\t0,00\tN\t1') on item 'DlgDetail.TblDetail.Row2'.", repo.DlgDetail.TblDetail.Row2Info, new RecordItemIndex(20));
             Validate.AttributeContains(repo.DlgDetail.TblDetail.Row2Info, "Text", "2\t174\tRS\t\tS\tB_BUDA_002-0\t7778\t3300\t303091\t990,00\tS\tV20\tV20\t198,00\t0,00\t0,00\tB_BUDA_002\t\tJ\tV\t2021-12-01-00.00.00.000000\t20,00\tV20\t198\t\t7778\tEUR\tER\t2021-12-13-10.26.08.963000\t21\t99\tL\tJ\t\tV\t0,00\t0\t\t\t\t\t\t\t\t\t\t2021\t13\t1\t0\t0\t\t\t\t\t\t7778\t1.188,00\t0,00\tN\t1");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'50+|30+') on item 'DlgDetail.TblDetail.ColBektNr1Row2'.", repo.DlgDetail.TblDetail.ColBektNr1Row2Info, new RecordItemIndex(21));
-            Validate.AttributeRegex(repo.DlgDetail.TblDetail.ColBektNr1Row2Info, "Text", new Regex("50+|30+"));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='30 +') on item 'DlgDetail.TblDetail.ColBektNr1Row2'.", repo.DlgDetail.TblDetail.ColBektNr1Row2Info, new RecordItemIndex(21));
+            Validate.AttributeEqual(repo.DlgDetail.TblDetail.ColBektNr1Row2Info, "Text", "30 +");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.TblDetail.Row1Column0' at Center.", repo.DlgDetail.TblDetail.Row1Column0Info, new RecordItemIndex(22));
             repo.DlgDetail.TblDetail.Row1Column0.Click();
