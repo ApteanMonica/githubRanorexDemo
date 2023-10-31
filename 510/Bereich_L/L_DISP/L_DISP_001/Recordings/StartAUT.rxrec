@@ -62,7 +62,7 @@ mode="Desktop">
 		optional="False"
 		searchpropertyid="537cf660-0545-413b-b6f6-5f29cae16849"
 		waitaction="Exists"
-		waittimeout="60000ms">
+		waittimeout="120000ms">
 			<comment>
 			</comment>
 			<bindings>
@@ -112,6 +112,8 @@ mode="Desktop">
 				<path>
 					/form[@controlname='frmDispo']/titlebar[@accessiblerole='TitleBar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<validationitem
@@ -168,6 +170,8 @@ mode="Desktop">
 				<path>
 					/form[@controlname='frmDispo']/titlebar[@accessiblerole='TitleBar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<matchname>
 				Text
