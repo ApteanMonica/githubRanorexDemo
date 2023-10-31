@@ -150,24 +150,24 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.ColLskDatumRow1' at Center.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(6));
             repo.TblFadr.ColLskDatumRow1.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblFadr.ColLskDatumRow1' at Center.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(7));
+            Delay.Duration(30000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblFadr.ColLskDatumRow1' at Center.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(8));
             repo.TblFadr.ColLskDatumRow1.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}' with focus on 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(9));
+            Delay.Duration(30000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}' with focus on 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(10));
             repo.TblFadr.ColLskDatumRow1.PressKeys("{Delete}");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(9));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(11));
             //repo.TblFadr.ColLskDatumRow1.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
             
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(10));
-            //Delay.Duration(30000, false);
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(11));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(12));
             //Keyboard.PrepareFocus(repo.TblFadr.ColLskDatumRow1);
             //Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(12));
-            //Delay.Duration(30000, false);
             
             //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+X' Press with focus on 'TblFadr.ColLskDatumRow1'.", repo.TblFadr.ColLskDatumRow1Info, new RecordItemIndex(13));
             //Keyboard.PrepareFocus(repo.TblFadr.ColLskDatumRow1);
