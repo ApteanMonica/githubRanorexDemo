@@ -20,38 +20,64 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace AEKOOE_001
+namespace AEKOOE_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseBrowser recording.
+    ///The Tagesdatum_einlesen recording.
     /// </summary>
-    [TestModule("84dafa9b-db5f-4796-aa19-24d1ee018fb3", ModuleType.Recording, 1)]
-    public partial class CloseBrowser : ITestModule
+    [TestModule("ce9b86df-a685-4b2d-a411-f4b4c1b378ca", ModuleType.Recording, 1)]
+    public partial class Tagesdatum_einlesen : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the AEKOOE_001Repository repository.
+        /// Holds an instance of the global::AEKOOE_001.AEKOOE_001Repository repository.
         /// </summary>
-        public static AEKOOE_001Repository repo = AEKOOE_001Repository.Instance;
+        public static global::AEKOOE_001.AEKOOE_001Repository repo = global::AEKOOE_001.AEKOOE_001Repository.Instance;
 
-        static CloseBrowser instance = new CloseBrowser();
+        static Tagesdatum_einlesen instance = new Tagesdatum_einlesen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseBrowser()
+        public Tagesdatum_einlesen()
         {
+            Tagesdatum = "";
+            Tagesdatum_plus_7_Tage = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseBrowser Instance
+        public static Tagesdatum_einlesen Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _Tagesdatum;
+
+        /// <summary>
+        /// Gets or sets the value of variable Tagesdatum.
+        /// </summary>
+        [TestVariable("71a4024f-5fff-4445-8853-0654123f3199")]
+        public string Tagesdatum
+        {
+            get { return _Tagesdatum; }
+            set { _Tagesdatum = value; }
+        }
+
+        string _Tagesdatum_plus_7_Tage;
+
+        /// <summary>
+        /// Gets or sets the value of variable Tagesdatum_plus_7_Tage.
+        /// </summary>
+        [TestVariable("88cad7d4-2b03-4cb3-acd5-b3d83824356c")]
+        public string Tagesdatum_plus_7_Tage
+        {
+            get { return _Tagesdatum_plus_7_Tage; }
+            set { _Tagesdatum_plus_7_Tage = value; }
+        }
 
 #endregion
 
@@ -79,8 +105,13 @@ namespace AEKOOE_001
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'StartseiteGoogleChrome.AdressUndSuchleiste'.", repo.StartseiteGoogleChrome.AdressUndSuchleisteInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.StartseiteGoogleChrome.AdressUndSuchleiste, 1000);
+            Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimeAsString("dd.MM.yyyy");
+            
+            Report.Log(ReportLevel.Info, "User", Tagesdatum, new RecordItemIndex(1));
+            
+            Tagesdatum_plus_7_Tage = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimePlus("d", ValueConverter.ArgumentFromString<int>("counter", "7"));
+            
+            Report.Log(ReportLevel.Info, "User", Tagesdatum_plus_7_Tage, new RecordItemIndex(3));
             
         }
 
