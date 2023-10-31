@@ -103,89 +103,92 @@ namespace B_BUDA_002.Recordings_B_BUDA
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.PbSpeichern' at Center.", repo.DlgDetail.PbSpeichernInfo, new RecordItemIndex(7));
             repo.DlgDetail.PbSpeichern.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'\nKeine Soll/Haben-Gleichheit.\r\nSoll        : 2188,00\r\nHaben  : 2200,00\r\n--------------------------------------------------------------\r\nDifferenz: -12,00\r\n\r\nBitte korrigieren!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Speichern nicht möglich!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(8));
+            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Speichern nicht möglich!");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'\nKeine Soll/Haben-Gleichheit.\r\nSoll        : 2188,00\r\nHaben  : 2200,00\r\n--------------------------------------------------------------\r\nDifferenz: -12,00\r\n\r\nBitte korrigieren!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(9));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "\nKeine Soll/Haben-Gleichheit.\r\nSoll        : 2188,00\r\nHaben  : 2200,00\r\n--------------------------------------------------------------\r\nDifferenz: -12,00\r\n\r\nBitte korrigieren!");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(10));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.PbAendern' at Center.", repo.DlgDetail.PbAendernInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.PbAendern' at Center.", repo.DlgDetail.PbAendernInfo, new RecordItemIndex(11));
             repo.DlgDetail.PbAendern.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2.188,00' with focus on 'DlgDetail.TblDetail.ColDetBetragRow1'.", repo.DlgDetail.TblDetail.ColDetBetragRow1Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2.188,00' with focus on 'DlgDetail.TblDetail.ColDetBetragRow1'.", repo.DlgDetail.TblDetail.ColDetBetragRow1Info, new RecordItemIndex(12));
             repo.DlgDetail.TblDetail.ColDetBetragRow1.PressKeys("2.188,00");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.PbSpeichern' at Center.", repo.DlgDetail.PbSpeichernInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.PbSpeichern' at Center.", repo.DlgDetail.PbSpeichernInfo, new RecordItemIndex(14));
             repo.DlgDetail.PbSpeichern.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Beträge der Bereichsaufteilung automatisch anpassen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Beträge der Bereichsaufteilung automatisch anpassen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Beträge der Bereichsaufteilung automatisch anpassen?");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(16));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Beträge der Bereichsaufteilung automatisch anpassen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Beträge der Bereichsaufteilung automatisch anpassen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Beträge der Bereichsaufteilung automatisch anpassen?");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(18));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'1\t174\tRS\t\tR\tB_BUDA_002-0\t3300\t*\t303091\t2.188,00\tH\t\t\t0,00\t0,00\t\tB_BUDA_002\t\tN\t\t2021-12-01-00.00.00.000000\t\t\t0\t\t3300\tEUR\tER\t2021-12-13-10.26.08.660000\t21\t99\tL\t\t\t\t\t0\t\t\t\t\t\t\t\t\t\t2021\t13\t1\t0\t0\t\t\t\t\t\t3300\t2.188,00\t0,00\tN\t1') on item 'DlgDetail.TblDetail.Row1'.", repo.DlgDetail.TblDetail.Row1Info, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'1\t174\tRS\t\tR\tB_BUDA_002-0\t3300\t*\t303091\t2.188,00\tH\t\t\t0,00\t0,00\t\tB_BUDA_002\t\tN\t\t2021-12-01-00.00.00.000000\t\t\t0\t\t3300\tEUR\tER\t2021-12-13-10.26.08.660000\t21\t99\tL\t\t\t\t\t0\t\t\t\t\t\t\t\t\t\t2021\t13\t1\t0\t0\t\t\t\t\t\t3300\t2.188,00\t0,00\tN\t1') on item 'DlgDetail.TblDetail.Row1'.", repo.DlgDetail.TblDetail.Row1Info, new RecordItemIndex(19));
             Validate.AttributeContains(repo.DlgDetail.TblDetail.Row1Info, "Text", "1\t174\tRS\t\tR\tB_BUDA_002-0\t3300\t*\t303091\t2.188,00\tH\t\t\t0,00\t0,00\t\tB_BUDA_002\t\tN\t\t2021-12-01-00.00.00.000000\t\t\t0\t\t3300\tEUR\tER\t2021-12-13-10.26.08.660000\t21\t99\tL\t\t\t\t\t0\t\t\t\t\t\t\t\t\t\t2021\t13\t1\t0\t0\t\t\t\t\t\t3300\t2.188,00\t0,00\tN\t1");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'50+|20+') on item 'DlgDetail.TblDetail.ColBektNr1Row1'.", repo.DlgDetail.TblDetail.ColBektNr1Row1Info, new RecordItemIndex(19));
-            Validate.AttributeRegex(repo.DlgDetail.TblDetail.ColBektNr1Row1Info, "Text", new Regex("50+|20+"));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20 +') on item 'DlgDetail.TblDetail.ColBektNr1Row1'.", repo.DlgDetail.TblDetail.ColBektNr1Row1Info, new RecordItemIndex(20));
+            Validate.AttributeEqual(repo.DlgDetail.TblDetail.ColBektNr1Row1Info, "Text", "20 +");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'2\t174\tRS\t\tS\tB_BUDA_002-0\t7778\t3300\t303091\t990,00\tS\tV20\tV20\t198,00\t0,00\t0,00\tB_BUDA_002\t\tJ\tV\t2021-12-01-00.00.00.000000\t20,00\tV20\t198\t\t7778\tEUR\tER\t2021-12-13-10.26.08.963000\t21\t99\tL\tJ\t\tV\t0,00\t0\t\t\t\t\t\t\t\t\t\t2021\t13\t1\t0\t0\t\t\t\t\t\t7778\t1.188,00\t0,00\tN\t1') on item 'DlgDetail.TblDetail.Row2'.", repo.DlgDetail.TblDetail.Row2Info, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'2\t174\tRS\t\tS\tB_BUDA_002-0\t7778\t3300\t303091\t990,00\tS\tV20\tV20\t198,00\t0,00\t0,00\tB_BUDA_002\t\tJ\tV\t2021-12-01-00.00.00.000000\t20,00\tV20\t198\t\t7778\tEUR\tER\t2021-12-13-10.26.08.963000\t21\t99\tL\tJ\t\tV\t0,00\t0\t\t\t\t\t\t\t\t\t\t2021\t13\t1\t0\t0\t\t\t\t\t\t7778\t1.188,00\t0,00\tN\t1') on item 'DlgDetail.TblDetail.Row2'.", repo.DlgDetail.TblDetail.Row2Info, new RecordItemIndex(21));
             Validate.AttributeContains(repo.DlgDetail.TblDetail.Row2Info, "Text", "2\t174\tRS\t\tS\tB_BUDA_002-0\t7778\t3300\t303091\t990,00\tS\tV20\tV20\t198,00\t0,00\t0,00\tB_BUDA_002\t\tJ\tV\t2021-12-01-00.00.00.000000\t20,00\tV20\t198\t\t7778\tEUR\tER\t2021-12-13-10.26.08.963000\t21\t99\tL\tJ\t\tV\t0,00\t0\t\t\t\t\t\t\t\t\t\t2021\t13\t1\t0\t0\t\t\t\t\t\t7778\t1.188,00\t0,00\tN\t1");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'50+|30+') on item 'DlgDetail.TblDetail.ColBektNr1Row2'.", repo.DlgDetail.TblDetail.ColBektNr1Row2Info, new RecordItemIndex(21));
-            Validate.AttributeRegex(repo.DlgDetail.TblDetail.ColBektNr1Row2Info, "Text", new Regex("50+|30+"));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='30 +') on item 'DlgDetail.TblDetail.ColBektNr1Row2'.", repo.DlgDetail.TblDetail.ColBektNr1Row2Info, new RecordItemIndex(22));
+            Validate.AttributeEqual(repo.DlgDetail.TblDetail.ColBektNr1Row2Info, "Text", "30 +");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.TblDetail.Row1Column0' at Center.", repo.DlgDetail.TblDetail.Row1Column0Info, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.TblDetail.Row1Column0' at Center.", repo.DlgDetail.TblDetail.Row1Column0Info, new RecordItemIndex(23));
             repo.DlgDetail.TblDetail.Row1Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.PbBereich' at Center.", repo.DlgDetail.PbBereichInfo, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.PbBereich' at Center.", repo.DlgDetail.PbBereichInfo, new RecordItemIndex(24));
             repo.DlgDetail.PbBereich.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bereichs-Aufteilung - Konto: 3300') on item 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bereichs-Aufteilung - Konto: 3300') on item 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(25));
             Validate.AttributeContains(repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, "Text", "Bereichs-Aufteilung - Konto: 3300");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'9,04\t\t\t\t20\tBaustoffe') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row1'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row1Info, new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'9,04\t\t\t\t20\tBaustoffe') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row1'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row1Info, new RecordItemIndex(26));
             Validate.AttributeContains(repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row1Info, "Text", "9,04\t\t\t\t20\tBaustoffe");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'593,99\t\t\t\t30\tKST 30') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row2'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row2Info, new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'593,99\t\t\t\t30\tKST 30') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row2'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row2Info, new RecordItemIndex(27));
             Validate.AttributeContains(repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row2Info, "Text", "593,99\t\t\t\t30\tKST 30");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'990,96\t\t\t\t40\tKST 40') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row3'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row3Info, new RecordItemIndex(27));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'990,96\t\t\t\t40\tKST 40') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row3'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row3Info, new RecordItemIndex(28));
             Validate.AttributeContains(repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row3Info, "Text", "990,96\t\t\t\t40\tKST 40");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'594,01\t\t\t\t50\tKST 50') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row4'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row4Info, new RecordItemIndex(28));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'594,01\t\t\t\t50\tKST 50') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row4'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row4Info, new RecordItemIndex(29));
             Validate.AttributeContains(repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row4Info, "Text", "594,01\t\t\t\t50\tKST 50");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(29));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(30));
             Keyboard.PrepareFocus(repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKonto);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.TblDetail.Row2Column0' at Center.", repo.DlgDetail.TblDetail.Row2Column0Info, new RecordItemIndex(30));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.TblDetail.Row2Column0' at Center.", repo.DlgDetail.TblDetail.Row2Column0Info, new RecordItemIndex(31));
             repo.DlgDetail.TblDetail.Row2Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.PbBereich' at Center.", repo.DlgDetail.PbBereichInfo, new RecordItemIndex(31));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDetail.PbBereich' at Center.", repo.DlgDetail.PbBereichInfo, new RecordItemIndex(32));
             repo.DlgDetail.PbBereich.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bereichs-Aufteilung - Konto: 7778') on item 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(32));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bereichs-Aufteilung - Konto: 7778') on item 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(33));
             Validate.AttributeContains(repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, "Text", "Bereichs-Aufteilung - Konto: 7778");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'494,99\t\t0\t0\t30\tKST 30') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row1'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row1Info, new RecordItemIndex(33));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'494,99\t\t0\t0\t30\tKST 30') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row1'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row1Info, new RecordItemIndex(34));
             Validate.AttributeContains(repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row1Info, "Text", "494,99\t\t0\t0\t30\tKST 30");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'495,01\t\t0\t0\t50\tKST 50') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row2'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row2Info, new RecordItemIndex(34));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'495,01\t\t0\t0\t50\tKST 50') on item 'FrmSB_Bereichsaufteilung.FlexGrid1.Row2'.", repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row2Info, new RecordItemIndex(35));
             Validate.AttributeContains(repo.FrmSB_Bereichsaufteilung.FlexGrid1.Row2Info, "Text", "495,01\t\t0\t0\t50\tKST 50");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(35));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'FrmSB_Bereichsaufteilung.BereichsAufteilungKonto'.", repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKontoInfo, new RecordItemIndex(36));
             Keyboard.PrepareFocus(repo.FrmSB_Bereichsaufteilung.BereichsAufteilungKonto);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             

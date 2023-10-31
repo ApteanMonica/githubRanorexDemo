@@ -77,9 +77,6 @@
 			name="Dauerbuchung_aendern_Buchungsbetrag"
 			ref="1f174c0a-bfb0-4ce5-b7b7-06d34aa2d74c"
 			type="Recording">
-				<description>
-					<![CDATA[BUG 26699 / WN334 tw. erl. in 521 regex - Andere Darstelltung ab 521 SP12 20+ bzw. 30+ statt 50+ (wenn Bereichsaufteilung 20/30 und 50 enthält)]]>
-				</description>
 			</testmodule>
 			<testmodule
 			id="3e4b4455-405d-484a-a847-1009984ad1d2"
@@ -174,9 +171,6 @@
 			name="Dauerbuchungsvorlage_geaendert_Details_pruefen"
 			ref="7bcb9f03-74ce-479e-859b-ed5ff5f00f1a"
 			type="Recording">
-				<description>
-					<![CDATA[BUG 26699 / WN334 tw. erl. in 521 regex - Andere Darstelltung ab 521 SP12 20+ und 20+ (Änderung) statt 50+ (wenn Bereichsaufteilung 20 und 50 enthält)]]>
-				</description>
 				<databinding>
 					<var
 					dataname="Beleg_Nr"
@@ -201,9 +195,6 @@
 			name="Dauerbuchungsvorlage_original_Details_pruefen"
 			ref="9ff38d92-63fd-40f0-9bdb-6d04da0c7768"
 			type="Recording">
-				<description>
-					<![CDATA[BUG 26699 / WN334 tw. erl. in 521 regex - Andere Darstelltung ab 521 SP12 20+ bzw. 30+ statt 50+ (wenn Bereichsaufteilung 20/30 und 50 enthält)]]>
-				</description>
 				<databinding>
 					<var
 					dataname="Beleg_Nr"
@@ -282,7 +273,7 @@
 			name="B_BUDA_002"
 			reportlevel="Info;20">
 				<description>
-					<![CDATA[<p>Ticket 510/WN334; Vorhandene Dauerbuchungsvorlage keybel Nr. 174 mit Lieferant 303091 (ER 2 Ust-Codes, Bereichsaufteilung, strukturierte Beleg-Nr. - gleiche Konten/Beträge wie bei b_buda_001) ändern: (Ust-Code, Buchungsbeträge, Bereichsaufteilung, Konditionen - Belegnummernart und Ende-Datum)</p><p>Geänderte Dauerbuchung&nbsp; 2 Perioden verbuchen</p><p>Kontrolle in b_buab: verbuchte Dauerbuchungen und Dauerbuchungsvorlage</p>]]>
+					<![CDATA[<p>Vorhandene Dauerbuchungsvorlage keybel Nr. 174 mit Lieferant 303091 (ER 2 Ust-Codes, Bereichsaufteilung, strukturierte Beleg-Nr. - gleiche Konten/Beträge wie bei b_buda_001) ändern: (Ust-Code, Buchungsbeträge, Bereichsaufteilung, Konditionen - Belegnummernart und Ende-Datum)</p><p>Geänderte Dauerbuchung&nbsp; 2 Perioden verbuchen</p><p>Kontrolle in b_buab: verbuchte Dauerbuchungen und Dauerbuchungsvorlage</p><p>BUG 26699 Bruttobetrag bei E20 lt. Entwicklung ok; nicht korr: OK statt Speichern-Button bei Änderung der Dauerbuchung; nicht korrigiert; Korrigiert: Darstellung Kostenstellen 20 + (statt 50 + bei 20 + 50); Änderungsdatum in B_BUAB Dauerbuchungsvorlage in allen geänderten Positionen;</p>]]>
 				</description>
 				<parameters>
 					<param

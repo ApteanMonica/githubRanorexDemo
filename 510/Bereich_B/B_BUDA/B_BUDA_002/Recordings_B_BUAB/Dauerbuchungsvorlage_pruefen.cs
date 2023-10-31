@@ -111,151 +111,157 @@ namespace B_BUDA_002.Recordings_B_BUAB
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BUDA_Beleg_NR_1) on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColBelegnrRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColBelegnrRow1Info, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColBelegnrRow1Info, "Text", BUDA_Beleg_NR_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='174') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColKeybelRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColKeybelRow1Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColBusaDtstoloeRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColBusaDtstoloeRow1Info, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColBusaDtstoloeRow1Info, "Text", Tagesdatum);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='174') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColKeybelRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColKeybelRow1Info, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColKeybelRow1Info, "Text", "174");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColKeyposRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColKeyposRow1Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColKeyposRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColKeyposRow1Info, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColKeyposRow1Info, "Text", "1");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColStatusRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColStatusRow1Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColStatusRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColStatusRow1Info, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColStatusRow1Info, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='99') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColPeriRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColPeriRow1Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='99') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColPeriRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColPeriRow1Info, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColPeriRow1Info, "Text", "99");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20 +') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColCd1Row1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColCd1Row1Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20 +') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColCd1Row1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColCd1Row1Info, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColCd1Row1Info, "Text", "20 +");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.188,00') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColBetragRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColBetragRow1Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.188,00') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColBetragRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColBetragRow1Info, new RecordItemIndex(8));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColBetragRow1Info, "Text", "2.188,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUstbetragRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUstbetragRow1Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUstbetragRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUstbetragRow1Info, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUstbetragRow1Info, "Text", "0,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.188,00') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColBruttoRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColBruttoRow1Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.188,00') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColBruttoRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColBruttoRow1Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColBruttoRow1Info, "Text", "2.188,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2021-13') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUvaRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUvaRow1Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2021-13') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUvaRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUvaRow1Info, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUvaRow1Info, "Text", "2021-13");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUstcdRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUstcdRow1Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUstcdRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUstcdRow1Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUstcdRow1Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUstsatzRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUstsatzRow1Info, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUstsatzRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUstsatzRow1Info, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUstsatzRow1Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUstmvRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUstmvRow1Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUstmvRow1'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUstmvRow1Info, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_1.ColUstmvRow1Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BUDA_Beleg_NR_1) on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColBelegnrRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColBelegnrRow2Info, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BUDA_Beleg_NR_1) on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColBelegnrRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColBelegnrRow2Info, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColBelegnrRow2Info, "Text", BUDA_Beleg_NR_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColBusaDtstoloeRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColBusaDtstoloeRow2Info, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColBusaDtstoloeRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColBusaDtstoloeRow2Info, new RecordItemIndex(16));
             Validate.AttributeContains(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColBusaDtstoloeRow2Info, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColKeyposRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColKeyposRow2Info, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColKeyposRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColKeyposRow2Info, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColKeyposRow2Info, "Text", "2");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColStatusRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColStatusRow2Info, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColStatusRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColStatusRow2Info, new RecordItemIndex(18));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColStatusRow2Info, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='99') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColPeriRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColPeriRow2Info, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='99') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColPeriRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColPeriRow2Info, new RecordItemIndex(19));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColPeriRow2Info, "Text", "99");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20 +') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColCd1Row2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColCd1Row2Info, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20 +') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColCd1Row2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColCd1Row2Info, new RecordItemIndex(20));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColCd1Row2Info, "Text", "20 +");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='990,00') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColBetragRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColBetragRow2Info, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='990,00') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColBetragRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColBetragRow2Info, new RecordItemIndex(21));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColBetragRow2Info, "Text", "990,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='198,00') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUstbetragRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUstbetragRow2Info, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='198,00') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUstbetragRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUstbetragRow2Info, new RecordItemIndex(22));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUstbetragRow2Info, "Text", "198,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.188,00') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColBruttoRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColBruttoRow2Info, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.188,00') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColBruttoRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColBruttoRow2Info, new RecordItemIndex(23));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColBruttoRow2Info, "Text", "1.188,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2021-13') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUvaRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUvaRow2Info, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2021-13') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUvaRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUvaRow2Info, new RecordItemIndex(24));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUvaRow2Info, "Text", "2021-13");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V20') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUstcdRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUstcdRow2Info, new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V20') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUstcdRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUstcdRow2Info, new RecordItemIndex(25));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUstcdRow2Info, "Text", "V20");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUstmvRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUstmvRow2Info, new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUstmvRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUstmvRow2Info, new RecordItemIndex(26));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUstmvRow2Info, "Text", "V");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUstsatzRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUstsatzRow2Info, new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUstsatzRow2'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUstsatzRow2Info, new RecordItemIndex(27));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_2.ColUstsatzRow2Info, "Text", "20");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BUDA_Beleg_NR_1) on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColBelegnrRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColBelegnrRow3Info, new RecordItemIndex(27));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BUDA_Beleg_NR_1) on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColBelegnrRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColBelegnrRow3Info, new RecordItemIndex(28));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColBelegnrRow3Info, "Text", BUDA_Beleg_NR_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColKeyposRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColKeyposRow3Info, new RecordItemIndex(28));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColKeyposRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColKeyposRow3Info, new RecordItemIndex(29));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColKeyposRow3Info, "Text", "3");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColStatusRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColStatusRow3Info, new RecordItemIndex(29));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColStatusRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColStatusRow3Info, new RecordItemIndex(30));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColStatusRow3Info, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='99') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColPeriRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColPeriRow3Info, new RecordItemIndex(30));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='99') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColPeriRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColPeriRow3Info, new RecordItemIndex(31));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColPeriRow3Info, "Text", "99");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='40') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColCd1Row3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColCd1Row3Info, new RecordItemIndex(31));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='40') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColCd1Row3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColCd1Row3Info, new RecordItemIndex(32));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColCd1Row3Info, "Text", "40");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='990,96') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColBetragRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColBetragRow3Info, new RecordItemIndex(32));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='990,96') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColBetragRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColBetragRow3Info, new RecordItemIndex(33));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColBetragRow3Info, "Text", "990,96");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='198,19') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUstbetragRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUstbetragRow3Info, new RecordItemIndex(33));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='198,19') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUstbetragRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUstbetragRow3Info, new RecordItemIndex(34));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUstbetragRow3Info, "Text", "198,19");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='990,96') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColBruttoRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColBruttoRow3Info, new RecordItemIndex(34));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='990,96') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColBruttoRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColBruttoRow3Info, new RecordItemIndex(35));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColBruttoRow3Info, "Text", "990,96");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2021-13') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUvaRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUvaRow3Info, new RecordItemIndex(35));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2021-13') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUvaRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUvaRow3Info, new RecordItemIndex(36));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUvaRow3Info, "Text", "2021-13");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='E20') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUstcdRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUstcdRow3Info, new RecordItemIndex(36));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='E20') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUstcdRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUstcdRow3Info, new RecordItemIndex(37));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUstcdRow3Info, "Text", "E20");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='E') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUstmvRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUstmvRow3Info, new RecordItemIndex(37));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='E') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUstmvRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUstmvRow3Info, new RecordItemIndex(38));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUstmvRow3Info, "Text", "E");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUstsatzRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUstsatzRow3Info, new RecordItemIndex(38));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUstsatzRow3'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUstsatzRow3Info, new RecordItemIndex(39));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_3.ColUstsatzRow3Info, "Text", "20");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BUDA_Beleg_NR_1) on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColBelegnrRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColBelegnrRow4Info, new RecordItemIndex(39));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BUDA_Beleg_NR_1) on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColBelegnrRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColBelegnrRow4Info, new RecordItemIndex(40));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColBelegnrRow4Info, "Text", BUDA_Beleg_NR_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColKeyposRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColKeyposRow4Info, new RecordItemIndex(40));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColBusaDtstoloeRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColBusaDtstoloeRow4Info, new RecordItemIndex(41));
+            Validate.AttributeContains(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColBusaDtstoloeRow4Info, "Text", Tagesdatum);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColKeyposRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColKeyposRow4Info, new RecordItemIndex(42));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColKeyposRow4Info, "Text", "4");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColStatusRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColStatusRow4Info, new RecordItemIndex(41));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColStatusRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColStatusRow4Info, new RecordItemIndex(43));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColStatusRow4Info, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='99') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColPeriRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColPeriRow4Info, new RecordItemIndex(42));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='99') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColPeriRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColPeriRow4Info, new RecordItemIndex(44));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColPeriRow4Info, "Text", "99");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColCd1Row4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColCd1Row4Info, new RecordItemIndex(43));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColCd1Row4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColCd1Row4Info, new RecordItemIndex(45));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColCd1Row4Info, "Text", "20");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9,04') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColBetragRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColBetragRow4Info, new RecordItemIndex(44));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9,04') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColBetragRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColBetragRow4Info, new RecordItemIndex(46));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColBetragRow4Info, "Text", "9,04");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1,81') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUstbetragRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUstbetragRow4Info, new RecordItemIndex(45));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1,81') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUstbetragRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUstbetragRow4Info, new RecordItemIndex(47));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUstbetragRow4Info, "Text", "1,81");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9,04') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColBruttoRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColBruttoRow4Info, new RecordItemIndex(46));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9,04') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColBruttoRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColBruttoRow4Info, new RecordItemIndex(48));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColBruttoRow4Info, "Text", "9,04");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2021-13') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUvaRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUvaRow4Info, new RecordItemIndex(47));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2021-13') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUvaRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUvaRow4Info, new RecordItemIndex(49));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUvaRow4Info, "Text", "2021-13");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='E20') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUstcdRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUstcdRow4Info, new RecordItemIndex(48));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='E20') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUstcdRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUstcdRow4Info, new RecordItemIndex(50));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUstcdRow4Info, "Text", "E20");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='E') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUstmvRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUstmvRow4Info, new RecordItemIndex(49));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='E') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUstmvRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUstmvRow4Info, new RecordItemIndex(51));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUstmvRow4Info, "Text", "E");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUstsatzRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUstsatzRow4Info, new RecordItemIndex(50));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUstsatzRow4'.", repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUstsatzRow4Info, new RecordItemIndex(52));
             Validate.AttributeEqual(repo.tblB_Form100BuchungenAnzeigen.FlexGrid.Row_4.ColUstsatzRow4Info, "Text", "20");
             
         }

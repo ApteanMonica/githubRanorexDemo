@@ -3265,6 +3265,7 @@ namespace B_BUDA_002
             RepoItemInfo _coltyprow1Info;
             RepoItemInfo _coljahrrow1Info;
             RepoItemInfo _coluvarow1Info;
+            RepoItemInfo _colbusadtstoloerow1Info;
 
             /// <summary>
             /// Creates a new Row_1  folder.
@@ -3290,6 +3291,7 @@ namespace B_BUDA_002
                 _coltyprow1Info = new RepoItemInfo(this, "ColTypRow1", "cell[@accessiblename='colTyp Row 1']", "", 30000, null, "6b3ee57d-299a-45e8-91ef-b249759bcd1d");
                 _coljahrrow1Info = new RepoItemInfo(this, "ColJahrRow1", "cell[@accessiblename='colJahr Row 1']", "", 30000, null, "8ee52de8-692d-40f7-835c-d841d920c53e");
                 _coluvarow1Info = new RepoItemInfo(this, "ColUvaRow1", "cell[@accessiblename='colUva Row 1']", "", 30000, null, "e3441715-db10-4ea6-8d9d-b0215ffbaa87");
+                _colbusadtstoloerow1Info = new RepoItemInfo(this, "ColBusaDtstoloeRow1", "cell[@accessiblename='colBusa_dtstoloe Row 1']", "", 30000, null, "f7bab34e-1701-4d7b-a0ed-c5ebd1ec515f");
             }
 
             /// <summary>
@@ -3745,6 +3747,30 @@ namespace B_BUDA_002
                 get
                 {
                     return _coluvarow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColBusaDtstoloeRow1 item.
+            /// </summary>
+            [RepositoryItem("f7bab34e-1701-4d7b-a0ed-c5ebd1ec515f")]
+            public virtual Ranorex.Cell ColBusaDtstoloeRow1
+            {
+                get
+                {
+                    return _colbusadtstoloerow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBusaDtstoloeRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("f7bab34e-1701-4d7b-a0ed-c5ebd1ec515f")]
+            public virtual RepoItemInfo ColBusaDtstoloeRow1Info
+            {
+                get
+                {
+                    return _colbusadtstoloerow1Info;
                 }
             }
         }
@@ -4550,6 +4576,7 @@ namespace B_BUDA_002
             RepoItemInfo _colbelegnrrow4Info;
             RepoItemInfo _colcd1row4Info;
             RepoItemInfo _coluvarow4Info;
+            RepoItemInfo _colbusadtstoloerow4Info;
 
             /// <summary>
             /// Creates a new Row_4  folder.
@@ -4570,6 +4597,7 @@ namespace B_BUDA_002
                 _colbelegnrrow4Info = new RepoItemInfo(this, "ColBelegnrRow4", "cell[@accessiblename='colBelegnr Row 4']", "", 30000, null, "b1c051be-296e-4acd-9309-594d6849a7d9");
                 _colcd1row4Info = new RepoItemInfo(this, "ColCd1Row4", "cell[@accessiblename='colCd1 Row 4']", "", 30000, null, "4825239e-675a-404a-b5e4-9103910f48dd");
                 _coluvarow4Info = new RepoItemInfo(this, "ColUvaRow4", "cell[@accessiblename='colUva Row 4']", "", 30000, null, "ac5090f9-0368-4e2a-8446-d36bb71eab5f");
+                _colbusadtstoloerow4Info = new RepoItemInfo(this, "ColBusaDtstoloeRow4", "cell[@accessiblename='colBusa_dtstoloe Row 4']", "", 30000, null, "21457c42-8239-4d50-8fd9-c8734b46feb4");
             }
 
             /// <summary>
@@ -4905,6 +4933,30 @@ namespace B_BUDA_002
                 get
                 {
                     return _coluvarow4Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColBusaDtstoloeRow4 item.
+            /// </summary>
+            [RepositoryItem("21457c42-8239-4d50-8fd9-c8734b46feb4")]
+            public virtual Ranorex.Cell ColBusaDtstoloeRow4
+            {
+                get
+                {
+                    return _colbusadtstoloerow4Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBusaDtstoloeRow4 item info.
+            /// </summary>
+            [RepositoryItemInfo("21457c42-8239-4d50-8fd9-c8734b46feb4")]
+            public virtual RepoItemInfo ColBusaDtstoloeRow4Info
+            {
+                get
+                {
+                    return _colbusadtstoloerow4Info;
                 }
             }
         }
