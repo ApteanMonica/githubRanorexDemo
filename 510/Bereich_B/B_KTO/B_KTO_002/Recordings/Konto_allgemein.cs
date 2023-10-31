@@ -92,8 +92,8 @@ namespace B_KTO_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Text' at Center.", repo.FrmKto.TextInfo, new RecordItemIndex(0));
-            repo.FrmKto.Text.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Text' at Center.", repo.FrmKto.TextInfo, new RecordItemIndex(0));
+            //repo.FrmKto.Text.Click();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Konto' with focus on 'FrmKto.Text'.", repo.FrmKto.TextInfo, new RecordItemIndex(1));
             repo.FrmKto.Text.PressKeys(Konto);
@@ -104,43 +104,51 @@ namespace B_KTO_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Bezeichnung' at Center.", repo.FrmKto.BezeichnungInfo, new RecordItemIndex(3));
             repo.FrmKto.Bezeichnung.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Bezeichnung' at Center.", repo.FrmKto.BezeichnungInfo, new RecordItemIndex(4));
-            repo.FrmKto.Bezeichnung.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'FrmKto.Bezeichnung'.", repo.FrmKto.BezeichnungInfo, new RecordItemIndex(4));
+            Keyboard.PrepareFocus(repo.FrmKto.Bezeichnung);
+            Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}' with focus on 'FrmKto.Bezeichnung'.", repo.FrmKto.BezeichnungInfo, new RecordItemIndex(5));
-            repo.FrmKto.Bezeichnung.EnsureVisible();
-            Keyboard.Press("{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'FrmKto.Bezeichnung'.", repo.FrmKto.BezeichnungInfo, new RecordItemIndex(5));
+            Keyboard.PrepareFocus(repo.FrmKto.Bezeichnung);
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'QS Konto ändern 1' with focus on 'FrmKto.Bezeichnung'.", repo.FrmKto.BezeichnungInfo, new RecordItemIndex(6));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Bezeichnung' at Center.", repo.FrmKto.BezeichnungInfo, new RecordItemIndex(6));
+            //repo.FrmKto.Bezeichnung.Click();
+            
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}' with focus on 'FrmKto.Bezeichnung'.", repo.FrmKto.BezeichnungInfo, new RecordItemIndex(7));
+            //repo.FrmKto.Bezeichnung.EnsureVisible();
+            //Keyboard.Press("{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'QS Konto ändern 1' with focus on 'FrmKto.Bezeichnung'.", repo.FrmKto.BezeichnungInfo, new RecordItemIndex(8));
             repo.FrmKto.Bezeichnung.EnsureVisible();
             Keyboard.Press("QS Konto ändern 1");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='QS Konto ändern 1') on item 'FrmKto.Bezeichnung'.", repo.FrmKto.BezeichnungInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='QS Konto ändern 1') on item 'FrmKto.Bezeichnung'.", repo.FrmKto.BezeichnungInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.FrmKto.BezeichnungInfo, "Text", "QS Konto ändern 1");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Verwendung' at Center.", repo.FrmKto.VerwendungInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Verwendung' at Center.", repo.FrmKto.VerwendungInfo, new RecordItemIndex(11));
             repo.FrmKto.Verwendung.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'p' with focus on 'FrmKto.Verwendung'.", repo.FrmKto.VerwendungInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'p' with focus on 'FrmKto.Verwendung'.", repo.FrmKto.VerwendungInfo, new RecordItemIndex(12));
             repo.FrmKto.Verwendung.EnsureVisible();
             Keyboard.Press("p");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(13));
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.Meldungstext'", repo.DlgMessageBox.MeldungstextInfo, new ActionTimeout(120000), new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.Meldungstext'", repo.DlgMessageBox.MeldungstextInfo, new ActionTimeout(120000), new RecordItemIndex(14));
             repo.DlgMessageBox.MeldungstextInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Verwendung wirklich ändern?\r\n') on item 'DlgMessageBox.Meldungstext'.", repo.DlgMessageBox.MeldungstextInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Verwendung wirklich ändern?\r\n') on item 'DlgMessageBox.Meldungstext'.", repo.DlgMessageBox.MeldungstextInfo, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.DlgMessageBox.MeldungstextInfo, "Text", "Verwendung wirklich ändern?\r\n");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(16));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='P') on item 'FrmKto.Verwendung'.", repo.FrmKto.VerwendungInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='P') on item 'FrmKto.Verwendung'.", repo.FrmKto.VerwendungInfo, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.FrmKto.VerwendungInfo, "Text", "P");
             
         }
