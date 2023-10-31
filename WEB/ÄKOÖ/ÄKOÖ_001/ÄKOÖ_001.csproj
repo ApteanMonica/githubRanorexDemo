@@ -79,6 +79,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\Testdaten\Allgemein\UserCode\aptean.cs">
+      <Link>aptean.cs</Link>
+      <id>3da7f24a-23a9-4406-a37a-b69298889155</id>
+    </Compile>
     <Compile Include="AEKOOE_001Repository.cs">
       <BoundTo>19abdcd8-b0fe-483b-8b80-6d898afae252</BoundTo>
       <DependentUpon>AEKOOE_001Repository.rxrep</DependentUpon>
@@ -187,6 +191,18 @@
       <UserCode>true</UserCode>
       <id>1376e36f-d26b-4c13-a969-b8ea7a93220f</id>
     </Compile>
+    <Compile Include="Recordings\Tagesdatum_einlesen.cs">
+      <BoundTo>262c07ab-80ac-45b5-8a5f-34d0bf50c94f</BoundTo>
+      <DependentUpon>Tagesdatum_einlesen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>689ceb25-7d6f-459d-a810-5001d75364b7</id>
+    </Compile>
+    <Compile Include="Recordings\Tagesdatum_einlesen.UserCode.cs">
+      <BoundTo>262c07ab-80ac-45b5-8a5f-34d0bf50c94f</BoundTo>
+      <DependentUpon>Tagesdatum_einlesen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2d303c4a-6b48-4c00-a5ac-fe5b6f23a81f</id>
+    </Compile>
     <Compile Include="Recordings\UEberpruefung_Eingabe_Daten.cs">
       <BoundTo>f2602125-5f21-4d8b-b22c-b92339cd4f23</BoundTo>
       <DependentUpon>UEberpruefung_Eingabe_Daten.rxrec</DependentUpon>
@@ -266,6 +282,11 @@
       <BoundTo>19abdcd8-b0fe-483b-8b80-6d898afae252</BoundTo>
       <id>fba860d2-f7ea-462a-b56a-2bc82766d8b1</id>
       <recordtableid>60e57da4-e037-4924-a40b-b934f5712eff</recordtableid>
+    </None>
+    <None Include="Recordings\Tagesdatum_einlesen.rxrec">
+      <BoundTo>19abdcd8-b0fe-483b-8b80-6d898afae252</BoundTo>
+      <id>262c07ab-80ac-45b5-8a5f-34d0bf50c94f</id>
+      <recordtableid>ce9b86df-a685-4b2d-a411-f4b4c1b378ca</recordtableid>
     </None>
     <None Include="Recordings\UEberpruefung_Eingabe_Daten.rxrec">
       <BoundTo>19abdcd8-b0fe-483b-8b80-6d898afae252</BoundTo>

@@ -7,7 +7,7 @@ mode="Desktop">
 		1
 	</repeatcount>
 	<turbomode>
-		False
+		True
 	</turbomode>
 	<genreport>
 		True
@@ -27,7 +27,7 @@ mode="Desktop">
 	<recorditems>
 		<closeapprecorditem
 		enabled="True"
-		graceperiod="0ms"
+		graceperiod="1000ms"
 		method="CloseWindow"
 		optional="False"
 		searchpropertyid="5abdaf6e-3f00-4766-bd67-8106cfce4f01">
@@ -36,10 +36,54 @@ mode="Desktop">
 			<bindings>
 			</bindings>
 			<info
-			id="da813e88-e1cf-4569-875b-328c5a9be540"
+			id="d40e7a0d-11ea-49b6-b516-9f6b9c85b7d8"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="1"
+				prefcap="text"
+				rect="-1688,40,1448,30"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						192.168.192.139/521_SP12/#request
+					</attribute>
+					<attribute
+					name="accessiblekeyboardshortcut"
+					type="System.String">
+						Ctrl+L
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Adress- und Suchleiste
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Text
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						192.168.192.139/521_SP12/#request
+					</attribute>
+				</element>
 				<path>
-					/form[@processname='chrome']
+					/form[@title&gt;'Startseite - Google Chrom']/container[@accessiblename&gt;'Startseite&#160;&#8211; Arbeitsspeichernutzung']/container/container[@accessiblerole='Pane']/container[2]/container[1]/toolbar[1]/?/?/container[@accessiblerole='Grouping']/text[@accessiblename='Adress- und Suchleiste']
 				</path>
 				<robustPath>
 				</robustPath>

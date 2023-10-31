@@ -13,6 +13,18 @@
 			type="Recording">
 				<databinding>
 					<var
+					dataname="Tagesdatum_plus_7_Tage"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="28992d41-1fc0-4116-9977-6040fb52a494"
+					variablename="Tagesdatum_plus_7_Tage">
+					</var>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="0b20a6c3-01c6-478d-a42a-cd1605d0f3be"
+					variablename="Tagesdatum">
+					</var>
+					<var
 					dataname="Diagnose"
 					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
 					variableid="a438f4cc-cc00-44e9-abf0-2e5c71a5523b"
@@ -155,6 +167,50 @@
 			name="Antrag_laden"
 			ref="e01227a8-09b9-4f72-8555-1e5e512ee68c"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Diagnose"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="375c692f-06e1-41e9-8893-781acd30415c"
+					variablename="Diagnose">
+					</var>
+					<var
+					dataname="Bankverbindung_1"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="e7922989-49f4-4d65-aaf5-9c7e70425f13"
+					variablename="Bankverbindung_1">
+					</var>
+					<var
+					dataname="SVNR"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="0d832c8b-ec38-4a66-8923-68047beb93af"
+					variablename="SVNR">
+					</var>
+					<var
+					dataname="berufsunfaehig_bis"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="c0797257-9902-46f5-8f78-289d2df15dd8"
+					variablename="berufsunfaehig_bis">
+					</var>
+					<var
+					dataname="berufsunfaehig_ab"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="a1cd83c8-4e45-4946-891d-ade98c98da24"
+					variablename="berufsunfaehig_ab">
+					</var>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="93a74749-d290-4ea1-b2b2-026dd6c0c9aa"
+					variablename="Tagesdatum">
+					</var>
+					<var
+					dataname="Tagesdatum_plus_7_Tage"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="80406f81-7f38-4855-893d-20e7f005f5ad"
+					variablename="Tagesdatum_plus_7_Tage">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="759dd012-2a57-4207-813c-4ddd642fee2d"
@@ -193,6 +249,14 @@
 					<param
 					name="ausgewaehlte_Testdatei"
 					value="Testdatei Antrag Krankengeld">
+					</param>
+					<param
+					name="Tagesdatum"
+					value="">
+					</param>
+					<param
+					name="Tagesdatum_plus_7_Tage"
+					value="">
 					</param>
 				</parameters>
 			</testcase>
@@ -236,6 +300,26 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<testmodule
+			id="efa47765-8451-4bf0-a7e2-8b1998d75ba0"
+			name="Tagesdatum_einlesen"
+			ref="ce9b86df-a685-4b2d-a411-f4b4c1b378ca"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum_plus_7_Tage"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="88cad7d4-2b03-4cb3-acd5-b3d83824356c"
+					variablename="Tagesdatum_plus_7_Tage">
+					</var>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="abbf6251-14d9-43e1-b06a-b9fce7f398cc"
+					variableid="71a4024f-5fff-4445-8853-0654123f3199"
+					variablename="Tagesdatum">
+					</var>
+				</databinding>
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -250,6 +334,10 @@
 						<setup
 						id="62e97938-76d0-4e50-ad03-f3bf0953f918"
 						name="setup">
+							<testmodule
+							id="efa47765-8451-4bf0-a7e2-8b1998d75ba0"
+							name="Tagesdatum_einlesen">
+							</testmodule>
 							<testmodule
 							id="186e5205-32f3-40bb-9819-b85028859f12"
 							name="OpenBrowser">

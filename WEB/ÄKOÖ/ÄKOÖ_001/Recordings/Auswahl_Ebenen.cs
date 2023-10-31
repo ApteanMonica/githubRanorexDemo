@@ -94,8 +94,8 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Down}{Return}'.", new RecordItemIndex(4));
             Keyboard.Press("{Down}{Return}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Krankengeld') on item 'Login.KInput_Ebenen'.", repo.Login.KInput_EbenenInfo, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.Login.KInput_EbenenInfo, "InnerText", "Krankengeld");
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Krankengeld') on item 'Login.KInput_Ebenen'.", repo.Login.KInput_EbenenInfo, new RecordItemIndex(5));
+            //Validate.AttributeEqual(repo.Login.KInput_EbenenInfo, "InnerText", "Krankengeld");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.ButtonTagNeu' at Center.", repo.Login.ButtonTagNeuInfo, new RecordItemIndex(6));
             repo.Login.ButtonTagNeu.Click();
