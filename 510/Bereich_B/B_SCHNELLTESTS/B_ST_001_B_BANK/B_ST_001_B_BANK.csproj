@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{C7C9D1D3-A147-4370-8D46-9D325A8AFA2D}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>B_ST_001_B_BANK</RootNamespace>
+    <AssemblyName>B_ST_001_B_BANK</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>ec0240bf-7cd3-44da-9b01-95f84f932ef1</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper" />
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Delphi" />
+    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.WinForms.Core" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="Ranorex.Plugin.Wpf.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>95a1c26c-a125-4318-968f-171afe38cf44</id>
+    </Compile>
+    <Compile Include="B_ST_001_B_BANKRepository.cs">
+      <BoundTo>ec0240bf-7cd3-44da-9b01-95f84f932ef1</BoundTo>
+      <DependentUpon>B_ST_001_B_BANKRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>ea8daab8-41f6-4dd7-bbb0-78340341f2bd</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>84c7157b-5144-49ee-b29d-234a47dc7a1a</id>
+    </Compile>
+    <Compile Include="Recordings\Aenderung_Bankverbindung.cs">
+      <BoundTo>e7580a72-5670-4ead-8cc2-38c1a59591e0</BoundTo>
+      <DependentUpon>Aenderung_Bankverbindung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ca015c5b-c3fc-4326-9cd6-374bdda5720a</id>
+    </Compile>
+    <Compile Include="Recordings\Aenderung_Bankverbindung.UserCode.cs">
+      <BoundTo>e7580a72-5670-4ead-8cc2-38c1a59591e0</BoundTo>
+      <DependentUpon>Aenderung_Bankverbindung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dbeb5f81-6056-4450-8bdf-86bafbbeaa4e</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1de25f3e-32f9-4a31-8f55-8bef916f291a</id>
+      <BoundTo>3ef50c5b-d0d1-41a5-a040-f586b5561100</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT.UserCode.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f3993b46-1c86-4242-962c-b8bd0d925602</id>
+      <BoundTo>3ef50c5b-d0d1-41a5-a040-f586b5561100</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Neuanlage_Bankverbindung.cs">
+      <BoundTo>88a3b342-b9e7-46d7-a0c9-67329fad556c</BoundTo>
+      <DependentUpon>Neuanlage_Bankverbindung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7837d023-3c5d-40ae-846a-ff4bb61908d7</id>
+    </Compile>
+    <Compile Include="Recordings\Neuanlage_Bankverbindung.UserCode.cs">
+      <BoundTo>88a3b342-b9e7-46d7-a0c9-67329fad556c</BoundTo>
+      <DependentUpon>Neuanlage_Bankverbindung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>226ca980-78e5-462d-8d90-956039e92c91</id>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>537bb75e-b805-4d60-8f73-e737a36d47d6</id>
+      <BoundTo>e3d34418-ccd1-4818-b9fb-d1a9961a84d6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a9998ce5-6d49-4347-a1d3-4966e7a5ff85</id>
+      <BoundTo>e3d34418-ccd1-4818-b9fb-d1a9961a84d6</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Suchen_Loeschen_Status_9_Bankverbindung.cs">
+      <BoundTo>2ee13eee-d8cf-45c8-848c-69ccf23b8de5</BoundTo>
+      <DependentUpon>Suchen_Loeschen_Status_9_Bankverbindung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8e6db3be-10d4-470d-9c45-a0c1b037584f</id>
+    </Compile>
+    <Compile Include="Recordings\Suchen_Loeschen_Status_9_Bankverbindung.UserCode.cs">
+      <BoundTo>2ee13eee-d8cf-45c8-848c-69ccf23b8de5</BoundTo>
+      <DependentUpon>Suchen_Loeschen_Status_9_Bankverbindung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>829e6103-8c7a-4c0d-8b19-1be17e38f627</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>f5aa297d-e1b8-4ec5-b0c1-9b91bd136606</id>
+    </None>
+    <None Include="B_ST_001_B_BANKRepository.rximg">
+      <BoundTo>ec0240bf-7cd3-44da-9b01-95f84f932ef1</BoundTo>
+      <DependentUpon>B_ST_001_B_BANKRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>6b44e897-b953-46bc-b562-2aca4253125c</id>
+    </None>
+    <None Include="B_ST_001_B_BANKRepository.rxrep">
+      <id>ec0240bf-7cd3-44da-9b01-95f84f932ef1</id>
+      <repoid>e1dc7736-e2a0-4f6e-9bac-b9970807436c</repoid>
+      <reporootid>9fdaf88a-f645-431e-9d4f-e8bf416e1439</reporootid>
+    </None>
+    <None Include="Recordings\Aenderung_Bankverbindung.rxrec">
+      <BoundTo>ec0240bf-7cd3-44da-9b01-95f84f932ef1</BoundTo>
+      <id>e7580a72-5670-4ead-8cc2-38c1a59591e0</id>
+      <recordtableid>c8076c0b-cec5-4deb-9235-1af22efd3f3d</recordtableid>
+    </None>
+    <None Include="Recordings\CloseAUT.rxrec">
+      <BoundTo>ec0240bf-7cd3-44da-9b01-95f84f932ef1</BoundTo>
+      <id>3ef50c5b-d0d1-41a5-a040-f586b5561100</id>
+      <recordtableid>421f4a66-ec5b-40c8-9024-a3d06f7f89bf</recordtableid>
+    </None>
+    <None Include="Recordings\Neuanlage_Bankverbindung.rxrec">
+      <BoundTo>ec0240bf-7cd3-44da-9b01-95f84f932ef1</BoundTo>
+      <id>88a3b342-b9e7-46d7-a0c9-67329fad556c</id>
+      <recordtableid>245a434e-9a22-478c-8e63-3268ec839e39</recordtableid>
+    </None>
+    <None Include="Recordings\StartAUT.rxrec">
+      <BoundTo>ec0240bf-7cd3-44da-9b01-95f84f932ef1</BoundTo>
+      <id>e3d34418-ccd1-4818-b9fb-d1a9961a84d6</id>
+      <recordtableid>34855731-5dd3-413a-b86a-a938ec2b8e98</recordtableid>
+    </None>
+    <None Include="Recordings\Suchen_Loeschen_Status_9_Bankverbindung.rxrec">
+      <BoundTo>ec0240bf-7cd3-44da-9b01-95f84f932ef1</BoundTo>
+      <id>2ee13eee-d8cf-45c8-848c-69ccf23b8de5</id>
+      <recordtableid>d795756a-a9f5-4979-9d07-d40cd63d6463</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="B_ST_001_B_BANK.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>6383a704-5a0f-44fb-bed0-057de1d63072</id>
+    </Content>
+    <Content Include="B_ST_001_B_BANK.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>186fb5ea-c97b-47fb-a04d-9f9ada39025a</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings">
+      <id>813b6ef3-99ad-4016-9fe9-0475344bf11e</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>
