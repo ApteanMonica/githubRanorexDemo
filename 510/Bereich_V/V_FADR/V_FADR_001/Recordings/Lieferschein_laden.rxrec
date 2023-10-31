@@ -3532,22 +3532,6 @@ mode="Global">
 				</robustPath>
 			</info>
 		</getvaluerecorditem>
-		<loggingrecorditem
-		category="User"
-		enabled="True"
-		message=""
-		optional="False"
-		reportlevel="Info;20"
-		searchpropertyid="348fa5a8-4c75-4ea1-93c5-a38b1dbf8cbf">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="Message"
-				variable="Tagesdatum">
-				</binding>
-			</bindings>
-		</loggingrecorditem>
 		<validationitem
 		action="AttributeRegex"
 		enabled="True"
@@ -7654,11 +7638,20 @@ yiiigAooooA//9k=
 				</robustPath>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="30000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="DoubleClick"
 		button="Left"
 		duration="300ms"
-		enabled="False"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -7680,6 +7673,36 @@ yiiigAooooA//9k=
 				</robustPath>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="30000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keysequenceitem
+		KeySequence="{Delete}"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="cacdcdbc-5ea1-4c6d-bde2-498d957256ff">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="040c96c5-3f28-4435-b912-42bd799d8750"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLsk_datum Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
 		<keysequenceitem
 		KeySequence="{LControlKey down}{Akey}{LControlKey up}"
 		duration="20ms"
@@ -7701,20 +7724,11 @@ yiiigAooooA//9k=
 				</robustPath>
 			</info>
 		</keysequenceitem>
-		<explicitdelayitem
-		duration="30000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="A, Control"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		scancode="0"
@@ -7734,20 +7748,11 @@ yiiigAooooA//9k=
 				</robustPath>
 			</info>
 		</keyitem>
-		<explicitdelayitem
-		duration="30000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="X, Control"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		scancode="0"
@@ -7771,7 +7776,7 @@ yiiigAooooA//9k=
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -7795,7 +7800,7 @@ yiiigAooooA//9k=
 		</mouseitem>
 		<explicitdelayitem
 		duration="30000ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
@@ -7805,7 +7810,7 @@ yiiigAooooA//9k=
 		<loggingrecorditem
 		action="Screenshot"
 		category="User"
-		enabled="True"
+		enabled="False"
 		message="beide Datumszeilen ohne Datum"
 		optional="False"
 		reportlevel="Info;20"
@@ -7819,7 +7824,7 @@ yiiigAooooA//9k=
 		action="Press"
 		data="V, Control"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		scancode="0"
@@ -7839,6 +7844,31 @@ yiiigAooooA//9k=
 				</robustPath>
 			</info>
 		</keyitem>
+		<keysequenceitem
+		KeySequence=""
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="c53177c6-bdf9-4e6d-9ef1-2dc0495c0e1e">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Tagesdatum">
+				</binding>
+			</bindings>
+			<info
+			id="f3d7eeca-cb56-4d62-a2bd-1d8467a0d8bf"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLsk_datum Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -7867,7 +7897,7 @@ yiiigAooooA//9k=
 		</mouseitem>
 		<explicitdelayitem
 		duration="30000ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
@@ -7877,7 +7907,7 @@ yiiigAooooA//9k=
 		<loggingrecorditem
 		action="Screenshot"
 		category="User"
-		enabled="True"
+		enabled="False"
 		message=""
 		optional="False"
 		reportlevel="Info;20"
@@ -7890,7 +7920,7 @@ yiiigAooooA//9k=
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
-		optional="True"
+		optional="False"
 		searchpropertyid="4b800889-500e-40b3-8af7-bb6e360b29d0">
 			<comment>
 			</comment>
@@ -7920,7 +7950,7 @@ Nähere Information unter Menu/Extras/Warum wird Auftrag nicht fakturiert
 		enabled="True"
 		loc="Center"
 		movetime="300ms"
-		optional="True"
+		optional="False"
 		searchpropertyid="fd6b4e61-a6ce-4c6e-b8fd-142a5f1d2995"
 		sx="0"
 		sy="0"
