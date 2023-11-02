@@ -77,6 +77,17 @@ name="B_BANK_Schnelltest_Repository">
 				/form[@controlname='frmBank']/container[@controlname='RibbonBar']/container[@controlname='AllgemeinGroup']/button[@controlname='pbAllgemein_Löschen']
 			</item>
 			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="ede41e8c-1ccf-428a-8c37-b775caa1b59b"
+			name="TabPageAllgemein"
+			refimgid="1df864bc-be59-4517-b052-3bacf4019625"
+			refpath="/form[@controlname='frmBank']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&amp;Allgemein']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmBank']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&amp;Allgemein']
+			</item>
+			<item
 			addcaps="text,accessible"
 			capname="text"
 			id="db902066-2fbc-4fbe-8cb2-8b49e8c2a567"
@@ -91,11 +102,11 @@ name="B_BANK_Schnelltest_Repository">
 			addcaps="text,accessible"
 			capname="text"
 			id="7fbf8cc0-6f90-4ab3-8400-4c66bd7b0d3e"
-			name="Bank_B_BANK_ST"
+			name="Bank_Bank_NR"
 			refimgid="6c912747-8377-4946-b583-8709abf50679"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='frmBank']/container[@controlname='ClientArea']/text[@controlname='dfBank_nr']/text[@accessiblename='Bank' and @text=$Bank]
+				/form[@controlname='frmBank']/container[@controlname='ClientArea']/text[@controlname='dfBank_nr']/text[@accessiblename='Bank' and @text=$Bank_NR]
 			</item>
 			<item
 			addcaps="text,accessible"
@@ -151,17 +162,6 @@ name="B_BANK_Schnelltest_Repository">
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='frmBank']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&amp;Konten']
-			</item>
-			<item
-			addcaps="tabpage,accessible"
-			capname="tabpage"
-			id="ede41e8c-1ccf-428a-8c37-b775caa1b59b"
-			name="TabPageAllgemein"
-			refimgid="1df864bc-be59-4517-b052-3bacf4019625"
-			refpath="/form[@controlname='frmBank']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&amp;Allgemein']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='frmBank']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&amp;Allgemein']
 			</item>
 			<item
 			addcaps="text,control,nativewindow"
@@ -228,11 +228,11 @@ name="B_BANK_Schnelltest_Repository">
 				addcaps="cell,accessible"
 				capname="cell"
 				id="2e7986de-3d5d-407b-9ff7-9c8291fb74ae"
-				name="CellTmpBANKNRRow1_mit_B_BANK_ST"
+				name="CellTmpBANKNRRow1_mit_Bank_NR"
 				refimgid="1709917b-fdad-4f14-8f05-a2e97fe2b3c6"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='frmBank']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename~'BANK_NR Row 1' and @accessiblevalue=$Bank]
+					/form[@controlname='frmBank']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename~'BANK_NR Row 1' and @accessiblevalue=$Bank_NR]
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -340,7 +340,7 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 	<variables>
 		<var
 		id="d1e07b1e-fad0-40ea-9d1d-09d65a9fda8a"
-		name="Bank">
+		name="Bank_NR">
 			B_BANK_ST
 		</var>
 	</variables>

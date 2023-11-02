@@ -19,19 +19,19 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Suchen_Loeschen_Status_9_Bankverbindung"
+	classname="Suchen_Loeschen_auf_Status_9_setzen"
 	namespace="B_ST_001_B_BANK.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="01b2fa43-5219-44c2-a509-ccfde0869425"
-		name="Bank">
-			B_BANK_ST
+		id="5d5aadd0-b641-42cf-b179-fbb9dff50a91"
+		name="Bank_Name_AEN">
+			B_BANK_SCHNELLTEST
 		</var>
 		<var
-		id="5d5aadd0-b641-42cf-b179-fbb9dff50a91"
-		name="Bankname_AEN">
-			B_BANK_SCHNELLTEST
+		id="d1e07b1e-fad0-40ea-9d1d-09d65a9fda8a"
+		name="Bank_NR">
+			B_BANK_ST
 		</var>
 	</variables>
 	<recorditems>
@@ -71,7 +71,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Bank">
+				variable="Bank_NR">
 				</binding>
 			</bindings>
 			<info
@@ -100,7 +100,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Bankname_AEN">
+				variable="Bank_Name_AEN">
 				</binding>
 			</bindings>
 			<info
@@ -5983,6 +5983,15 @@ uZP7q/8AfX/1qMyf3V/76/8ArUAOopuZP7q/99f/AFqMyf3V/wC+v/rUAOopuZP7q/8AfX/1qMyf
 3V/76/8ArUAOopuZP7q/99f/AFqMyf3V/wC+v/rUAf/Z
 			</helperscreenshot>
 		</mouseitem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<validationitem
 		action="AttributeContains"
 		duration="100ms"
@@ -7874,77 +7883,6 @@ ZS+9mwNxVefrj/8AXUtFAEFmCsJzu5YkFhgkZ6kVPRRQAUUUUAFFFFABRRTcyf3V/wC+v/rUAOop
 uZP7q/8AfX/1qMyf3V/76/8ArUAOopuZP7q/99f/AFqMyf3V/wC+v/rUAOopuZP7q/8AfX/1qMyf
 3V/76/8ArUAOopuZP7q/99f/AFqMyf3V/wC+v/rUAf/Z
 			</helperscreenshot>
-		</mouseitem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="66775bec-2e04-466a-87b0-eaf1ae9539a7"
-		waitaction="Exists"
-		waittimeout="60000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="7c919a92-e80f-4103-a918-666c5621fca1"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmBank']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='__tmp__BANK_NR Row 0' and @accessiblevalue='Bank']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
-		<validationitem
-		action="Exists"
-		enabled="True"
-		optional="False"
-		searchpropertyid="90990916-b4f7-42ca-b50e-b36e02f7c9e6">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="2e7986de-3d5d-407b-9ff7-9c8291fb74ae"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmBank']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename~'BANK_NR Row 1' and @accessiblevalue=$Bank]
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				(Choose)
-			</matchname>
-			<matchvalue>
-				yourValue
-			</matchvalue>
-		</validationitem>
-		<mouseitem
-		action="DoubleClick"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="4a2790c8-a397-4d85-9187-e701f92a5979"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="d187e2a2-aeb7-4853-9e76-d5a78dd38912"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmBank']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
 		</mouseitem>
 	</recorditems>
 	<repository

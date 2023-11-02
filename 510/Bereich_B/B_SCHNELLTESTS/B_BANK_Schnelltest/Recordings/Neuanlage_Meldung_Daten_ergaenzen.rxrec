@@ -19,18 +19,18 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Neuanlage_Bankverbindung"
+	classname="Neuanlage_Meldung_Daten_ergaenzen"
 	namespace="B_ST_001_B_BANK.Recordings">
 	</codegen>
 	<variables>
 		<var
 		id="adfd5bea-f068-45ea-a5d5-0cd5dfd72b6b"
-		name="Bank">
+		name="Bank_NR">
 			B_BANK_ST
 		</var>
 		<var
 		id="38887dd7-166f-4ad4-b51e-11bc0767388f"
-		name="Bankname">
+		name="Bank_Name">
 			B_BANK_ST_SCHNELLTEST
 		</var>
 	</variables>
@@ -132,7 +132,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="KeySequence"
-				variable="Bank">
+				variable="Bank_NR">
 				</binding>
 			</bindings>
 			<info
@@ -211,7 +211,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="KeySequence"
-				variable="Bankname">
+				variable="Bank_Name">
 				</binding>
 			</bindings>
 			<info
@@ -6730,32 +6730,6 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</keyitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="4336f1fc-cd83-4332-8ec2-fd1d427bf397"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="e77a85ca-da6f-40d9-bce7-7af7db1df954"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='frmBank']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
 	</recorditems>
 	<repository
 	id="e1dc7736-e2a0-4f6e-9bac-b9970807436c"
@@ -6772,7 +6746,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Neuanlage_Bankverbindung.UserCode.cs
+		Neuanlage_Meldung_Daten_ergaenzen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

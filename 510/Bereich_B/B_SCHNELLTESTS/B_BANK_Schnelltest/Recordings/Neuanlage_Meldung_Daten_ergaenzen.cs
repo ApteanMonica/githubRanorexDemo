@@ -24,57 +24,57 @@ namespace B_ST_001_B_BANK.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Neuanlage_Bankverbindung recording.
+    ///The Neuanlage_Meldung_Daten_ergaenzen recording.
     /// </summary>
     [TestModule("245a434e-9a22-478c-8e63-3268ec839e39", ModuleType.Recording, 1)]
-    public partial class Neuanlage_Bankverbindung : ITestModule
+    public partial class Neuanlage_Meldung_Daten_ergaenzen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository repository.
         /// </summary>
         public static global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository repo = global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository.Instance;
 
-        static Neuanlage_Bankverbindung instance = new Neuanlage_Bankverbindung();
+        static Neuanlage_Meldung_Daten_ergaenzen instance = new Neuanlage_Meldung_Daten_ergaenzen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Neuanlage_Bankverbindung()
+        public Neuanlage_Meldung_Daten_ergaenzen()
         {
-            Bank = "B_BANK_ST";
-            Bankname = "B_BANK_ST_SCHNELLTEST";
+            Bank_NR = "B_BANK_ST";
+            Bank_Name = "B_BANK_ST_SCHNELLTEST";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Neuanlage_Bankverbindung Instance
+        public static Neuanlage_Meldung_Daten_ergaenzen Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Bankname;
+        string _Bank_Name;
 
         /// <summary>
-        /// Gets or sets the value of variable Bankname.
+        /// Gets or sets the value of variable Bank_Name.
         /// </summary>
         [TestVariable("38887dd7-166f-4ad4-b51e-11bc0767388f")]
-        public string Bankname
+        public string Bank_Name
         {
-            get { return _Bankname; }
-            set { _Bankname = value; }
+            get { return _Bank_Name; }
+            set { _Bank_Name = value; }
         }
 
         /// <summary>
-        /// Gets or sets the value of variable Bank.
+        /// Gets or sets the value of variable Bank_NR.
         /// </summary>
         [TestVariable("adfd5bea-f068-45ea-a5d5-0cd5dfd72b6b")]
-        public string Bank
+        public string Bank_NR
         {
-            get { return repo.Bank; }
-            set { repo.Bank = value; }
+            get { return repo.Bank_NR; }
+            set { repo.Bank_NR = value; }
         }
 
 #endregion
@@ -109,14 +109,14 @@ namespace B_ST_001_B_BANK.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmBank.Bank'", repo.FrmBank.BankInfo, new ActionTimeout(60000), new RecordItemIndex(1));
             repo.FrmBank.BankInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Bank' with focus on 'FrmBank.Bank'.", repo.FrmBank.BankInfo, new RecordItemIndex(2));
-            repo.FrmBank.Bank.PressKeys(Bank);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Bank_NR' with focus on 'FrmBank.Bank'.", repo.FrmBank.BankInfo, new RecordItemIndex(2));
+            repo.FrmBank.Bank.PressKeys(Bank_NR);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Bankname' with focus on 'FrmBank.Name'.", repo.FrmBank.NameInfo, new RecordItemIndex(4));
-            repo.FrmBank.Name.PressKeys(Bankname);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Bank_Name' with focus on 'FrmBank.Name'.", repo.FrmBank.NameInfo, new RecordItemIndex(4));
+            repo.FrmBank.Name.PressKeys(Bank_Name);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -144,9 +144,6 @@ namespace B_ST_001_B_BANK.Recordings
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBank.PbDataAccessSave' at Center.", repo.FrmBank.PbDataAccessSaveInfo, new RecordItemIndex(14));
-            repo.FrmBank.PbDataAccessSave.Click();
             
         }
 

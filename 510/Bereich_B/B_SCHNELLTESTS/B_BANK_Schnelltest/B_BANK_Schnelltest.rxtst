@@ -4,21 +4,21 @@
 		<flatlistofchildren>
 			<testmodule
 			id="22ac8982-1238-4e63-8833-f6c48093ef00"
-			name="Suchen_Loeschen_Status_9_Bankverbindung"
+			name="Suchen_Loeschen_auf_Status_9_setzen"
 			ref="d795756a-a9f5-4979-9d07-d40cd63d6463"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Bankname_AEN"
+					dataname="Bank_Name_AEN"
 					datasourceid="96c2c40d-043d-4924-8ca9-a8c17c64983f"
 					variableid="5d5aadd0-b641-42cf-b179-fbb9dff50a91"
-					variablename="Bankname_AEN">
+					variablename="Bank_Name_AEN">
 					</var>
 					<var
-					dataname="Bank"
+					dataname="Bank_NR"
 					datasourceid="96c2c40d-043d-4924-8ca9-a8c17c64983f"
-					variableid="01b2fa43-5219-44c2-a509-ccfde0869425"
-					variablename="Bank">
+					variableid="d1e07b1e-fad0-40ea-9d1d-09d65a9fda8a"
+					variablename="Bank_NR">
 					</var>
 				</databinding>
 			</testmodule>
@@ -28,21 +28,67 @@
 			</testcase>
 			<testmodule
 			id="3ed2d90a-92aa-401a-b1a6-1be873d0f4d7"
-			name="Neuanlage_Bankverbindung"
+			name="Neuanlage_Meldung_Daten_ergaenzen"
 			ref="245a434e-9a22-478c-8e63-3268ec839e39"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Bankname"
+					dataname="Bank_Name"
 					datasourceid="96c2c40d-043d-4924-8ca9-a8c17c64983f"
 					variableid="38887dd7-166f-4ad4-b51e-11bc0767388f"
-					variablename="Bankname">
+					variablename="Bank_Name">
 					</var>
 					<var
-					dataname="Bank"
+					dataname="Bank_NR"
 					datasourceid="96c2c40d-043d-4924-8ca9-a8c17c64983f"
 					variableid="adfd5bea-f068-45ea-a5d5-0cd5dfd72b6b"
-					variablename="Bank">
+					variablename="Bank_NR">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="40213ba0-652c-4fc7-a0b3-81aff336e24f"
+			name="Speichern_Aenderung_Daten_pruefen"
+			ref="741b1de3-f60a-4714-9ef7-d029107f364c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Bank_Name"
+					datasourceid="96c2c40d-043d-4924-8ca9-a8c17c64983f"
+					variableid="baab0c48-5c12-401b-9b00-e22c4a6a49d8"
+					variablename="Bank_Name">
+					</var>
+					<var
+					dataname="Bank_Name_AEN"
+					datasourceid="96c2c40d-043d-4924-8ca9-a8c17c64983f"
+					variableid="d45e8da9-fcae-4b8f-be44-a34765006e44"
+					variablename="Bank_Name_AEN">
+					</var>
+					<var
+					dataname="Bank_NR"
+					datasourceid="96c2c40d-043d-4924-8ca9-a8c17c64983f"
+					variableid="0742f9a1-d08b-4edf-8f2c-77b31453e660"
+					variablename="Bank_NR">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="4616b4b1-1ad6-4151-812f-e094a47d0474"
+			name="Speichern_Neuanlage_Daten_pruefen"
+			ref="c722c0d9-100a-4eda-bb75-ef9d2c1c0528"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Bank_NR"
+					datasourceid="96c2c40d-043d-4924-8ca9-a8c17c64983f"
+					variableid="d402d358-ac6b-43f3-b5a0-11b232f568bb"
+					variablename="Bank_NR">
+					</var>
+					<var
+					dataname="Bank_Name"
+					datasourceid="96c2c40d-043d-4924-8ca9-a8c17c64983f"
+					variableid="6bc044fe-12d0-448c-9808-472a50f842a3"
+					variablename="Bank_Name">
 					</var>
 				</databinding>
 			</testmodule>
@@ -80,6 +126,20 @@
 			ref="421f4a66-ec5b-40c8-9024-a3d06f7f89bf"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="8370a8f8-1172-4671-af33-bdb226a76e2c"
+			name="Status_9_pruefen"
+			ref="12ce4803-f6be-4280-9e0b-b0d5a1255e55"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Bank_NR"
+					datasourceid="96c2c40d-043d-4924-8ca9-a8c17c64983f"
+					variableid="f7f8538c-9399-4669-88dc-cc87ba3d43fd"
+					variablename="Bank_NR">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="96c2c40d-043d-4924-8ca9-a8c17c64983f"
 			name="B_BANK_Schnelltest"
@@ -94,15 +154,15 @@
 					value="B_BANK">
 					</param>
 					<param
-					name="Bank"
+					name="Bank_NR"
 					value="B_BANK_ST">
 					</param>
 					<param
-					name="Bankname"
+					name="Bank_Name"
 					value="B_BANK_ST_SCHNELLTEST">
 					</param>
 					<param
-					name="Bankname_AEN"
+					name="Bank_Name_AEN"
 					value="B_BANK_SCHNELLTEST">
 					</param>
 				</parameters>
@@ -138,10 +198,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Bankname_AEN"
+					dataname="Bank_Name_AEN"
 					datasourceid="96c2c40d-043d-4924-8ca9-a8c17c64983f"
 					variableid="ede4aa1b-2d75-477b-a3b0-945b2e34dd65"
-					variablename="Bankname_AEN">
+					variablename="Bank_Name_AEN">
 					</var>
 				</databinding>
 			</testmodule>
@@ -166,15 +226,27 @@
 						</setup>
 						<testmodule
 						id="3ed2d90a-92aa-401a-b1a6-1be873d0f4d7"
-						name="Neuanlage_Bankverbindung">
+						name="Neuanlage_Meldung_Daten_ergaenzen">
+						</testmodule>
+						<testmodule
+						id="4616b4b1-1ad6-4151-812f-e094a47d0474"
+						name="Speichern_Neuanlage_Daten_pruefen">
 						</testmodule>
 						<testmodule
 						id="d73d37b3-1865-4cb0-88a6-af4e3066e129"
 						name="Aenderung_Bankverbindung">
 						</testmodule>
 						<testmodule
+						id="40213ba0-652c-4fc7-a0b3-81aff336e24f"
+						name="Speichern_Aenderung_Daten_pruefen">
+						</testmodule>
+						<testmodule
 						id="22ac8982-1238-4e63-8833-f6c48093ef00"
-						name="Suchen_Loeschen_Status_9_Bankverbindung">
+						name="Suchen_Loeschen_auf_Status_9_setzen">
+						</testmodule>
+						<testmodule
+						id="8370a8f8-1172-4671-af33-bdb226a76e2c"
+						name="Status_9_pruefen">
 						</testmodule>
 						<teardown
 						id="635f49c3-a6cb-44ab-b530-3dd19ce0432f"
