@@ -55,19 +55,15 @@ namespace AEKOOE_001.Recordings
 
 #region Variables
 
-        string _Tagesdatum;
-
         /// <summary>
         /// Gets or sets the value of variable Tagesdatum.
         /// </summary>
         [TestVariable("71a4024f-5fff-4445-8853-0654123f3199")]
         public string Tagesdatum
         {
-            get { return _Tagesdatum; }
-            set { _Tagesdatum = value; }
+            get { return repo.Tagesdatum; }
+            set { repo.Tagesdatum = value; }
         }
-
-        string _Tagesdatum_plus_7_Tage;
 
         /// <summary>
         /// Gets or sets the value of variable Tagesdatum_plus_7_Tage.
@@ -75,8 +71,8 @@ namespace AEKOOE_001.Recordings
         [TestVariable("88cad7d4-2b03-4cb3-acd5-b3d83824356c")]
         public string Tagesdatum_plus_7_Tage
         {
-            get { return _Tagesdatum_plus_7_Tage; }
-            set { _Tagesdatum_plus_7_Tage = value; }
+            get { return repo.Tagesdatum_plus_7_Tage; }
+            set { repo.Tagesdatum_plus_7_Tage = value; }
         }
 
 #endregion

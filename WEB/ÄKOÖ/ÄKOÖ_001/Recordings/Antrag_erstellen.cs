@@ -88,20 +88,27 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Antrag') on item 'Login.Antrag'.", repo.Login.AntragInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.Login.AntragInfo, "InnerText", "Antrag");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.BtnBtnSecondary_Button_Krankenversicherung'", repo.Login.BtnBtnSecondary_Button_KrankenversicherungInfo, new ActionTimeout(120000), new RecordItemIndex(3));
-            repo.Login.BtnBtnSecondary_Button_KrankenversicherungInfo.WaitForExists(120000);
+            // wurde eingebaut, weil die WEboberfläche Button "Neu" anzeigt bevor er richtig geladen wird, weshalb sich beim Klick drauf nichts tut.
+            Report.Log(ReportLevel.Info, "Wait", "wurde eingebaut, weil die WEboberfläche Button \"Neu\" anzeigt bevor er richtig geladen wird, weshalb sich beim Klick drauf nichts tut.\r\nWaiting 2m to exist. Associated repository item: 'Login.BtnBtnSecondary'", repo.Login.BtnBtnSecondaryInfo, new ActionTimeout(120000), new RecordItemIndex(3));
+            repo.Login.BtnBtnSecondaryInfo.WaitForExists(120000);
             
             //Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(4));
             //Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Login.ButtonTagBtn_neu'.", repo.Login.ButtonTagBtn_neuInfo, new RecordItemIndex(5));
-            Validate.Exists(repo.Login.ButtonTagBtn_neuInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Login.ButtonTagBtn'.", repo.Login.ButtonTagBtnInfo, new RecordItemIndex(5));
+            Validate.Exists(repo.Login.ButtonTagBtnInfo);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.ButtonTagBtn_neu' at Center.", repo.Login.ButtonTagBtn_neuInfo, new RecordItemIndex(6));
-            repo.Login.ButtonTagBtn_neu.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.ButtonTagBtn' at Center.", repo.Login.ButtonTagBtnInfo, new RecordItemIndex(6));
+            repo.Login.ButtonTagBtn.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.Antragskategorie'", repo.Login.AntragskategorieInfo, new ActionTimeout(120000), new RecordItemIndex(7));
-            repo.Login.AntragskategorieInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.Antragskategorie1' at Center.", repo.Login.Antragskategorie1Info, new RecordItemIndex(7));
+            repo.Login.Antragskategorie1.Click();
+            
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.Antragskategorie1'", repo.Login.Antragskategorie1Info, new ActionTimeout(120000), new RecordItemIndex(8));
+            //repo.Login.Antragskategorie1Info.WaitForExists(120000);
+            
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Antragskategorie') on item 'Login.Antragskategorie1'.", repo.Login.Antragskategorie1Info, new RecordItemIndex(9));
+            //Validate.AttributeEqual(repo.Login.Antragskategorie1Info, "InnerText", "Antragskategorie");
             
         }
 

@@ -89,35 +89,31 @@ mode="Global">
 			</info>
 		</WaitForRecordItem>
 		<validationitem
-		action="AttributeEqual"
+		action="AttributeContains"
+		duration="100ms"
 		enabled="True"
 		optional="False"
-		searchpropertyid="fc148c4d-fd17-4e52-a8ad-50bc2ca91491">
+		searchpropertyid="17afd409-6171-4aa5-ac6a-7119740c0e0a">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="baaf8e86-d9cd-470b-9b00-c4637169a98e"
-			sourcename="RepositoryEditor">
+			id="7742cfe7-eea4-47bd-b4e7-9d84be255ab3"
+			sourcename="ElementTree">
 				<element
-				capabilities="webelement, divtag"
+				capabilities="webelement, spantag"
 				dontcache="True"
 				enabled="True"
 				flavor="chromeweb"
 				hasfocus="False"
 				index="0"
-				prefcap="divtag"
-				rect="763,322,378,41"
+				prefcap="spantag"
+				rect="618,202,133,16"
 				role="unknown"
 				snapElem=""
 				valid="True"
 				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						panel-heading
-					</attribute>
 					<attribute
 					name="draggable"
 					type="System.String">
@@ -131,28 +127,77 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						panel-heading
+						RS2.WEB: Anmelden
 					</attribute>
 					<attribute
 					name="tagname"
 					type="System.String">
-						div
+						span
 					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-bind"
+					readonly="False"
+					type="System.String">
+						ttext: 'login_headline'
+					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='192.168.192.139']//section[#'appModule']/div/div/div[2]/div/div[1]
+					/dom[@domain='192.168.192.139']//section[#'appModule']/div/div/div[2]/div/div[1]/span[@innertext='RS2.WEB: Anmelden']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
+			<helperscreenshot
+			guid="3606c8df-fae3-4f85-a620-a65d81b25af0">
+				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
+			</helperscreenshot>
 			<matchname>
 				InnerText
 			</matchname>
 			<matchvalue>
+				RS2.WEB: Anmelden
 			</matchvalue>
 		</validationitem>
 		<keysequenceitem
@@ -430,6 +475,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<WaitForRecordItem
+		duration="100ms"
 		enabled="True"
 		optional="False"
 		searchpropertyid="2ab768ae-9a2d-434c-96cf-a1bea6bf233c"

@@ -82,8 +82,8 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 4m to exist. Associated repository item: 'Login.PanelHeading'", repo.Login.PanelHeadingInfo, new ActionTimeout(240000), new RecordItemIndex(0));
             repo.Login.PanelHeadingInfo.WaitForExists(240000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='') on item 'Login.PanelHeading'.", repo.Login.PanelHeadingInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.Login.PanelHeadingInfo, "InnerText", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'RS2.WEB: Anmelden') on item 'Login.RS2WEBAnmelden'.", repo.Login.RS2WEBAnmeldenInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.Login.RS2WEBAnmeldenInfo, "InnerText", "RS2.WEB: Anmelden");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'rs{Tab}' with focus on 'Login.Text_benutzer'.", repo.Login.Text_benutzerInfo, new RecordItemIndex(2));
             repo.Login.Text_benutzer.PressKeys("rs{Tab}");

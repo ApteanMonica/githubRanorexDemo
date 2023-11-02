@@ -108,19 +108,15 @@ namespace AEKOOE_001.Recordings
             set { _Bankverbindung_1 = value; }
         }
 
-        string _Diagnose;
-
         /// <summary>
         /// Gets or sets the value of variable Diagnose.
         /// </summary>
         [TestVariable("a438f4cc-cc00-44e9-abf0-2e5c71a5523b")]
         public string Diagnose
         {
-            get { return _Diagnose; }
-            set { _Diagnose = value; }
+            get { return repo.Diagnose; }
+            set { repo.Diagnose = value; }
         }
-
-        string _Tagesdatum;
 
         /// <summary>
         /// Gets or sets the value of variable Tagesdatum.
@@ -128,11 +124,9 @@ namespace AEKOOE_001.Recordings
         [TestVariable("0b20a6c3-01c6-478d-a42a-cd1605d0f3be")]
         public string Tagesdatum
         {
-            get { return _Tagesdatum; }
-            set { _Tagesdatum = value; }
+            get { return repo.Tagesdatum; }
+            set { repo.Tagesdatum = value; }
         }
-
-        string _Tagesdatum_plus_7_Tage;
 
         /// <summary>
         /// Gets or sets the value of variable Tagesdatum_plus_7_Tage.
@@ -140,8 +134,8 @@ namespace AEKOOE_001.Recordings
         [TestVariable("28992d41-1fc0-4116-9977-6040fb52a494")]
         public string Tagesdatum_plus_7_Tage
         {
-            get { return _Tagesdatum_plus_7_Tage; }
-            set { _Tagesdatum_plus_7_Tage = value; }
+            get { return repo.Tagesdatum_plus_7_Tage; }
+            set { repo.Tagesdatum_plus_7_Tage = value; }
         }
 
 #endregion
@@ -181,10 +175,10 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.AlertAlertInfo'", repo.Login.AlertAlertInfoInfo, new ActionTimeout(120000), new RecordItemIndex(4));
             repo.Login.AlertAlertInfoInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Krankengeld') on item 'Login.FormControl'.", repo.Login.FormControlInfo, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.Login.FormControlInfo, "InnerText", "Krankengeld");
+            Report.Log(ReportLevel.Info, "User", Tagesdatum, new RecordItemIndex(5));
             
-            Report.Log(ReportLevel.Info, "User", Tagesdatum, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Krankengeld') on item 'Login.FormControl'.", repo.Login.FormControlInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.Login.FormControlInfo, "InnerText", "Krankengeld");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum' with focus on 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_abInfo, new RecordItemIndex(7));
             repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_ab.PressKeys(Tagesdatum);

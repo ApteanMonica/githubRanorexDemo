@@ -108,19 +108,15 @@ namespace AEKOOE_001.Recordings
             set { _Bankverbindung_1 = value; }
         }
 
-        string _Diagnose;
-
         /// <summary>
         /// Gets or sets the value of variable Diagnose.
         /// </summary>
         [TestVariable("375c692f-06e1-41e9-8893-781acd30415c")]
         public string Diagnose
         {
-            get { return _Diagnose; }
-            set { _Diagnose = value; }
+            get { return repo.Diagnose; }
+            set { repo.Diagnose = value; }
         }
-
-        string _Tagesdatum;
 
         /// <summary>
         /// Gets or sets the value of variable Tagesdatum.
@@ -128,11 +124,9 @@ namespace AEKOOE_001.Recordings
         [TestVariable("93a74749-d290-4ea1-b2b2-026dd6c0c9aa")]
         public string Tagesdatum
         {
-            get { return _Tagesdatum; }
-            set { _Tagesdatum = value; }
+            get { return repo.Tagesdatum; }
+            set { repo.Tagesdatum = value; }
         }
-
-        string _Tagesdatum_plus_7_Tage;
 
         /// <summary>
         /// Gets or sets the value of variable Tagesdatum_plus_7_Tage.
@@ -140,8 +134,8 @@ namespace AEKOOE_001.Recordings
         [TestVariable("80406f81-7f38-4855-893d-20e7f005f5ad")]
         public string Tagesdatum_plus_7_Tage
         {
-            get { return _Tagesdatum_plus_7_Tage; }
-            set { _Tagesdatum_plus_7_Tage = value; }
+            get { return repo.Tagesdatum_plus_7_Tage; }
+            set { repo.Tagesdatum_plus_7_Tage = value; }
         }
 
 #endregion
