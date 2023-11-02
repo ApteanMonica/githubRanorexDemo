@@ -223,11 +223,9 @@ namespace V_FADR_001
         [RepositoryFolder("7945c520-37b9-4e25-99e4-9e45f0b49842")]
         public partial class TblFadrAppFolder : RepoGenBaseFolder
         {
+            V_FADR_001RepositoryFolders.Rech_art_FlexGridFolder _rech_art_flexgrid;
             RepoItemInfo _titlebar100fakturierungInfo;
             RepoItemInfo _pbcommonloadInfo;
-            RepoItemInfo _rechnungsartInfo;
-            RepoItemInfo _bis_ls_datrow2Info;
-            RepoItemInfo _collskdatumrow1Info;
             RepoItemInfo _pbspec3extrasInfo;
             RepoItemInfo _pbspec2fakturenerstellungInfo;
             RepoItemInfo _auftragsnummerInfo;
@@ -244,11 +242,9 @@ namespace V_FADR_001
             public TblFadrAppFolder(RepoGenBaseFolder parentFolder) :
                     base("TblFadr", "/form[@controlname='tblFadr']", parentFolder, 30000, null, true, "7945c520-37b9-4e25-99e4-9e45f0b49842", "")
             {
+                _rech_art_flexgrid = new V_FADR_001RepositoryFolders.Rech_art_FlexGridFolder(this);
                 _titlebar100fakturierungInfo = new RepoItemInfo(this, "TitleBar100Fakturierung", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "1dc81752-b411-4c29-947c-e8c8dbe2e9af");
                 _pbcommonloadInfo = new RepoItemInfo(this, "PbCommonLoad", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbCommon_Load']", "", 30000, null, "077cad46-e897-4023-a1f5-c62d755b4df6");
-                _rechnungsartInfo = new RepoItemInfo(this, "Rechnungsart", "container[@controlname='ToolBar']/container[@controlname='tblRech_art']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colRech_art Row 1']", "", 30000, null, "66aa28fa-e465-4f91-aa65-97b931a960d6");
-                _bis_ls_datrow2Info = new RepoItemInfo(this, "bis_LS_DatRow2", "container[@controlname='ToolBar']/container[@controlname='tblRech_art']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLsk_datum Row 2']", "", 30000, null, "f3d7eeca-cb56-4d62-a2bd-1d8467a0d8bf");
-                _collskdatumrow1Info = new RepoItemInfo(this, "ColLskDatumRow1", "container[@controlname='ToolBar']/container[@controlname='tblRech_art']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLsk_datum Row 1']", "", 30000, null, "040c96c5-3f28-4435-b912-42bd799d8750");
                 _pbspec3extrasInfo = new RepoItemInfo(this, "PbSpec3Extras", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbSpec3_Extras']", "", 30000, null, "17c39c50-33f6-4bfe-9f9e-9e53d12aa3f9");
                 _pbspec2fakturenerstellungInfo = new RepoItemInfo(this, "PbSpec2Fakturenerstellung", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbSpec2_Fakturenerstellung']", "", 30000, null, "f8b74144-c9e6-4dbf-9899-235ec102237d");
                 _auftragsnummerInfo = new RepoItemInfo(this, "Auftragsnummer", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colAufk_nr' and @text=$Auftragsnummer]", "", 30000, null, "bae9fdbf-a898-4818-9ed7-df08915f3392");
@@ -329,78 +325,6 @@ namespace V_FADR_001
                 get
                 {
                     return _pbcommonloadInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Rechnungsart item.
-            /// </summary>
-            [RepositoryItem("66aa28fa-e465-4f91-aa65-97b931a960d6")]
-            public virtual Ranorex.Cell Rechnungsart
-            {
-                get
-                {
-                    return _rechnungsartInfo.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Rechnungsart item info.
-            /// </summary>
-            [RepositoryItemInfo("66aa28fa-e465-4f91-aa65-97b931a960d6")]
-            public virtual RepoItemInfo RechnungsartInfo
-            {
-                get
-                {
-                    return _rechnungsartInfo;
-                }
-            }
-
-            /// <summary>
-            /// The bis_LS_DatRow2 item.
-            /// </summary>
-            [RepositoryItem("f3d7eeca-cb56-4d62-a2bd-1d8467a0d8bf")]
-            public virtual Ranorex.Cell bis_LS_DatRow2
-            {
-                get
-                {
-                    return _bis_ls_datrow2Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The bis_LS_DatRow2 item info.
-            /// </summary>
-            [RepositoryItemInfo("f3d7eeca-cb56-4d62-a2bd-1d8467a0d8bf")]
-            public virtual RepoItemInfo bis_LS_DatRow2Info
-            {
-                get
-                {
-                    return _bis_ls_datrow2Info;
-                }
-            }
-
-            /// <summary>
-            /// The ColLskDatumRow1 item.
-            /// </summary>
-            [RepositoryItem("040c96c5-3f28-4435-b912-42bd799d8750")]
-            public virtual Ranorex.Cell ColLskDatumRow1
-            {
-                get
-                {
-                    return _collskdatumrow1Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColLskDatumRow1 item info.
-            /// </summary>
-            [RepositoryItemInfo("040c96c5-3f28-4435-b912-42bd799d8750")]
-            public virtual RepoItemInfo ColLskDatumRow1Info
-            {
-                get
-                {
-                    return _collskdatumrow1Info;
                 }
             }
 
@@ -617,6 +541,133 @@ namespace V_FADR_001
                 get
                 {
                     return _cbzahlscheinInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Rech_art_FlexGrid folder.
+            /// </summary>
+            [RepositoryFolder("74563929-125c-497e-87f4-cc5cefa7a726")]
+            public virtual V_FADR_001RepositoryFolders.Rech_art_FlexGridFolder Rech_art_FlexGrid
+            {
+                get { return _rech_art_flexgrid; }
+            }
+        }
+
+        /// <summary>
+        /// The Rech_art_FlexGridFolder folder.
+        /// </summary>
+        [RepositoryFolder("74563929-125c-497e-87f4-cc5cefa7a726")]
+        public partial class Rech_art_FlexGridFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _rechnungsartInfo;
+            RepoItemInfo _bis_ls_datrow2Info;
+            RepoItemInfo _collskdatumrow1Info;
+
+            /// <summary>
+            /// Creates a new Rech_art_FlexGrid  folder.
+            /// </summary>
+            public Rech_art_FlexGridFolder(RepoGenBaseFolder parentFolder) :
+                    base("Rech_art_FlexGrid", "container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "74563929-125c-497e-87f4-cc5cefa7a726", "")
+            {
+                _rechnungsartInfo = new RepoItemInfo(this, "Rechnungsart", "row[@accessiblename='Row 1']/cell[@accessiblename='colRech_art Row 1']", "", 30000, null, "66aa28fa-e465-4f91-aa65-97b931a960d6");
+                _bis_ls_datrow2Info = new RepoItemInfo(this, "bis_LS_DatRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colLsk_datum Row 2']", "", 30000, null, "f3d7eeca-cb56-4d62-a2bd-1d8467a0d8bf");
+                _collskdatumrow1Info = new RepoItemInfo(this, "ColLskDatumRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1']", "", 30000, null, "040c96c5-3f28-4435-b912-42bd799d8750");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("74563929-125c-497e-87f4-cc5cefa7a726")]
+            public virtual Ranorex.Table Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("74563929-125c-497e-87f4-cc5cefa7a726")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Rechnungsart item.
+            /// </summary>
+            [RepositoryItem("66aa28fa-e465-4f91-aa65-97b931a960d6")]
+            public virtual Ranorex.Cell Rechnungsart
+            {
+                get
+                {
+                    return _rechnungsartInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Rechnungsart item info.
+            /// </summary>
+            [RepositoryItemInfo("66aa28fa-e465-4f91-aa65-97b931a960d6")]
+            public virtual RepoItemInfo RechnungsartInfo
+            {
+                get
+                {
+                    return _rechnungsartInfo;
+                }
+            }
+
+            /// <summary>
+            /// The bis_LS_DatRow2 item.
+            /// </summary>
+            [RepositoryItem("f3d7eeca-cb56-4d62-a2bd-1d8467a0d8bf")]
+            public virtual Ranorex.Cell bis_LS_DatRow2
+            {
+                get
+                {
+                    return _bis_ls_datrow2Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The bis_LS_DatRow2 item info.
+            /// </summary>
+            [RepositoryItemInfo("f3d7eeca-cb56-4d62-a2bd-1d8467a0d8bf")]
+            public virtual RepoItemInfo bis_LS_DatRow2Info
+            {
+                get
+                {
+                    return _bis_ls_datrow2Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColLskDatumRow1 item.
+            /// </summary>
+            [RepositoryItem("040c96c5-3f28-4435-b912-42bd799d8750")]
+            public virtual Ranorex.Cell ColLskDatumRow1
+            {
+                get
+                {
+                    return _collskdatumrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColLskDatumRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("040c96c5-3f28-4435-b912-42bd799d8750")]
+            public virtual RepoItemInfo ColLskDatumRow1Info
+            {
+                get
+                {
+                    return _collskdatumrow1Info;
                 }
             }
         }
