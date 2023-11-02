@@ -20,21 +20,21 @@ namespace B_ST_001_B_BANK
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    /// The class representing the B_ST_001_B_BANKRepository element repository.
+    /// The class representing the B_BANK_Schnelltest_Repository element repository.
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
     [RepositoryFolder("9fdaf88a-f645-431e-9d4f-e8bf416e1439")]
-    public partial class B_ST_001_B_BANKRepository : RepoGenBaseFolder
+    public partial class B_BANK_Schnelltest_Repository : RepoGenBaseFolder
     {
-        static B_ST_001_B_BANKRepository instance = new B_ST_001_B_BANKRepository();
-        B_ST_001_B_BANKRepositoryFolders.FrmBankAppFolder _frmbank;
-        B_ST_001_B_BANKRepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
+        static B_BANK_Schnelltest_Repository instance = new B_BANK_Schnelltest_Repository();
+        B_BANK_Schnelltest_RepositoryFolders.FrmBankAppFolder _frmbank;
+        B_BANK_Schnelltest_RepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
 
         /// <summary>
-        /// Gets the singleton class instance representing the B_ST_001_B_BANKRepository element repository.
+        /// Gets the singleton class instance representing the B_BANK_Schnelltest_Repository element repository.
         /// </summary>
         [RepositoryFolder("9fdaf88a-f645-431e-9d4f-e8bf416e1439")]
-        public static B_ST_001_B_BANKRepository Instance
+        public static B_BANK_Schnelltest_Repository Instance
         {
             get { return instance; }
         }
@@ -42,14 +42,26 @@ namespace B_ST_001_B_BANK
         /// <summary>
         /// Repository class constructor.
         /// </summary>
-        public B_ST_001_B_BANKRepository() 
-            : base("B_ST_001_B_BANKRepository", "/", null, 0, false, "9fdaf88a-f645-431e-9d4f-e8bf416e1439", ".\\RepositoryImages\\B_ST_001_B_BANKRepository9fdaf88a.rximgres")
+        public B_BANK_Schnelltest_Repository() 
+            : base("B_BANK_Schnelltest_Repository", "/", null, 0, false, "9fdaf88a-f645-431e-9d4f-e8bf416e1439", ".\\RepositoryImages\\B_BANK_Schnelltest_Repository9fdaf88a.rximgres")
         {
-            _frmbank = new B_ST_001_B_BANKRepositoryFolders.FrmBankAppFolder(this);
-            _dlgmessagebox = new B_ST_001_B_BANKRepositoryFolders.DlgMessageBoxAppFolder(this);
+            _frmbank = new B_BANK_Schnelltest_RepositoryFolders.FrmBankAppFolder(this);
+            _dlgmessagebox = new B_BANK_Schnelltest_RepositoryFolders.DlgMessageBoxAppFolder(this);
         }
 
 #region Variables
+
+        string _Bank = "B_BANK_ST";
+
+        /// <summary>
+        /// Gets or sets the value of variable Bank.
+        /// </summary>
+        [TestVariable("d1e07b1e-fad0-40ea-9d1d-09d65a9fda8a")]
+        public string Bank
+        {
+            get { return _Bank; }
+            set { _Bank = value; }
+        }
 
 #endregion
 
@@ -69,7 +81,7 @@ namespace B_ST_001_B_BANK
         /// The FrmBank folder.
         /// </summary>
         [RepositoryFolder("94fb2696-a65f-4084-83aa-e1df56ee93e1")]
-        public virtual B_ST_001_B_BANKRepositoryFolders.FrmBankAppFolder FrmBank
+        public virtual B_BANK_Schnelltest_RepositoryFolders.FrmBankAppFolder FrmBank
         {
             get { return _frmbank; }
         }
@@ -78,7 +90,7 @@ namespace B_ST_001_B_BANK
         /// The DlgMessageBox folder.
         /// </summary>
         [RepositoryFolder("55c49c0d-d526-480c-b1f6-6c8686cb4e54")]
-        public virtual B_ST_001_B_BANKRepositoryFolders.DlgMessageBoxAppFolder DlgMessageBox
+        public virtual B_BANK_Schnelltest_RepositoryFolders.DlgMessageBoxAppFolder DlgMessageBox
         {
             get { return _dlgmessagebox; }
         }
@@ -88,7 +100,7 @@ namespace B_ST_001_B_BANK
     /// Inner folder classes.
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
-    public partial class B_ST_001_B_BANKRepositoryFolders
+    public partial class B_BANK_Schnelltest_RepositoryFolders
     {
         /// <summary>
         /// The FrmBankAppFolder folder.
@@ -96,13 +108,14 @@ namespace B_ST_001_B_BANK
         [RepositoryFolder("94fb2696-a65f-4084-83aa-e1df56ee93e1")]
         public partial class FrmBankAppFolder : RepoGenBaseFolder
         {
-            B_ST_001_B_BANKRepositoryFolders.Suchergebis_TabelleFolder _suchergebis_tabelle;
+            B_BANK_Schnelltest_RepositoryFolders.Suchergebis_TabelleFolder _suchergebis_tabelle;
             RepoItemInfo _titlebar100verwaltungbankverbindungInfo;
             RepoItemInfo _pbnavigationbackInfo;
             RepoItemInfo _pbnewInfo;
             RepoItemInfo _pbdataaccesssaveInfo;
             RepoItemInfo _pballgemeinloeschenInfo;
             RepoItemInfo _bankInfo;
+            RepoItemInfo _bank_b_bank_stInfo;
             RepoItemInfo _nameInfo;
             RepoItemInfo _landInfo;
             RepoItemInfo _text_statusInfo;
@@ -118,13 +131,14 @@ namespace B_ST_001_B_BANK
             public FrmBankAppFolder(RepoGenBaseFolder parentFolder) :
                     base("FrmBank", "/form[@controlname='frmBank']", parentFolder, 30000, null, true, "94fb2696-a65f-4084-83aa-e1df56ee93e1", "")
             {
-                _suchergebis_tabelle = new B_ST_001_B_BANKRepositoryFolders.Suchergebis_TabelleFolder(this);
+                _suchergebis_tabelle = new B_BANK_Schnelltest_RepositoryFolders.Suchergebis_TabelleFolder(this);
                 _titlebar100verwaltungbankverbindungInfo = new RepoItemInfo(this, "TitleBar100VerwaltungBankverbindung", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "fca82e71-6a58-4f21-a751-7d5f17b33541");
                 _pbnavigationbackInfo = new RepoItemInfo(this, "PbNavigationBack", "container[@controlname='RibbonBar']/container[@controlname='NavigationGroup']/button[@controlname='pbNavigation_Back']", "", 30000, null, "5a4942aa-fb63-4854-8387-3a744d45f523");
                 _pbnewInfo = new RepoItemInfo(this, "PbNew", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']", "", 30000, null, "842afed1-6e86-4e9c-b971-8a217cf4e060");
                 _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "e77a85ca-da6f-40d9-bce7-7af7db1df954");
                 _pballgemeinloeschenInfo = new RepoItemInfo(this, "PbAllgemeinLoeschen", "container[@controlname='RibbonBar']/container[@controlname='AllgemeinGroup']/button[@controlname='pbAllgemein_Löschen']", "", 30000, null, "b88da893-1824-4aef-8b7f-b8dd67a480a8");
                 _bankInfo = new RepoItemInfo(this, "Bank", "container[@controlname='ClientArea']/text[@controlname='dfBank_nr']/text[@accessiblename='Bank']", "", 30000, null, "db902066-2fbc-4fbe-8cb2-8b49e8c2a567");
+                _bank_b_bank_stInfo = new RepoItemInfo(this, "Bank_B_BANK_ST", "container[@controlname='ClientArea']/text[@controlname='dfBank_nr']/text[@accessiblename='Bank' and @text=$Bank]", "", 30000, null, "7fbf8cc0-6f90-4ab3-8400-4c66bd7b0d3e");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='ClientArea']/text[@controlname='dfBank_name']/text[@accessiblename='Name']", "", 30000, null, "1cdf5620-bfca-4a63-a4a3-6b59eca56a9b");
                 _landInfo = new RepoItemInfo(this, "Land", "container[@controlname='ClientArea']/text[@controlname='dfLand_cd']/text[@accessiblename='Land']", "", 30000, null, "6fb956e0-8c7c-43f8-a76b-a5be97faced5");
                 _text_statusInfo = new RepoItemInfo(this, "Text_Status", "container[@controlname='ClientArea']/text[@controlname='dfBank_Status']/text[@accessiblerole='Text']", "", 30000, null, "3ce4efcd-9efd-49f4-948a-fc91f5c7976c");
@@ -300,6 +314,30 @@ namespace B_ST_001_B_BANK
                 get
                 {
                     return _bankInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Bank_B_BANK_ST item.
+            /// </summary>
+            [RepositoryItem("7fbf8cc0-6f90-4ab3-8400-4c66bd7b0d3e")]
+            public virtual Ranorex.Text Bank_B_BANK_ST
+            {
+                get
+                {
+                    return _bank_b_bank_stInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Bank_B_BANK_ST item info.
+            /// </summary>
+            [RepositoryItemInfo("7fbf8cc0-6f90-4ab3-8400-4c66bd7b0d3e")]
+            public virtual RepoItemInfo Bank_B_BANK_STInfo
+            {
+                get
+                {
+                    return _bank_b_bank_stInfo;
                 }
             }
 
@@ -499,7 +537,7 @@ namespace B_ST_001_B_BANK
             /// The Suchergebis_Tabelle folder.
             /// </summary>
             [RepositoryFolder("b597f144-438c-4fea-8aa7-972cf32aafe8")]
-            public virtual B_ST_001_B_BANKRepositoryFolders.Suchergebis_TabelleFolder Suchergebis_Tabelle
+            public virtual B_BANK_Schnelltest_RepositoryFolders.Suchergebis_TabelleFolder Suchergebis_Tabelle
             {
                 get { return _suchergebis_tabelle; }
             }
@@ -511,10 +549,12 @@ namespace B_ST_001_B_BANK
         [RepositoryFolder("b597f144-438c-4fea-8aa7-972cf32aafe8")]
         public partial class Suchergebis_TabelleFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _row1column0Info;
-            RepoItemInfo _row1Info;
+            RepoItemInfo _row1column01Info;
+            RepoItemInfo _celltmpbanknrrow0_ueberschrift_bankInfo;
             RepoItemInfo _celltmpbanknrrow1Info;
-            RepoItemInfo _row11Info;
+            RepoItemInfo _celltmpbanknrrow1_mit_b_bank_stInfo;
+            RepoItemInfo _celltmpbanknamerow1Info;
+            RepoItemInfo _row1Info;
 
             /// <summary>
             /// Creates a new Suchergebis_Tabelle  folder.
@@ -522,10 +562,12 @@ namespace B_ST_001_B_BANK
             public Suchergebis_TabelleFolder(RepoGenBaseFolder parentFolder) :
                     base("Suchergebis_Tabelle", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "b597f144-438c-4fea-8aa7-972cf32aafe8", "")
             {
-                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "e96cef6b-b146-42be-be76-25c8cf4cd947");
+                _row1column01Info = new RepoItemInfo(this, "Row1Column01", "row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "d187e2a2-aeb7-4853-9e76-d5a78dd38912");
+                _celltmpbanknrrow0_ueberschrift_bankInfo = new RepoItemInfo(this, "CellTmpBANKNRRow0_Ueberschrift_Bank", "row[@accessiblename='Row 0']/cell[@accessiblename='__tmp__BANK_NR Row 0' and @accessiblevalue='Bank']", "", 30000, null, "7c919a92-e80f-4103-a918-666c5621fca1");
+                _celltmpbanknrrow1Info = new RepoItemInfo(this, "CellTmpBANKNRRow1", "row[@accessiblename='Row 1']/cell[@accessiblename~'BANK_NR Row 1']", "", 30000, null, "3f574734-e05c-4d57-8901-496d9a5598c7");
+                _celltmpbanknrrow1_mit_b_bank_stInfo = new RepoItemInfo(this, "CellTmpBANKNRRow1_mit_B_BANK_ST", "row[@accessiblename='Row 1']/cell[@accessiblename~'BANK_NR Row 1' and @accessiblevalue=$Bank]", "", 30000, null, "2e7986de-3d5d-407b-9ff7-9c8291fb74ae");
+                _celltmpbanknamerow1Info = new RepoItemInfo(this, "CellTmpBANKNAMERow1", "row[@accessiblename='Row 1']/cell[@accessiblename~'BANK_NAME Row 1']", "", 30000, null, "ce1d44c4-df0e-4fec-acdd-a7205a032eb1");
                 _row1Info = new RepoItemInfo(this, "Row1", "row[@accessiblename='Row 1']", "", 30000, null, "f15fef2d-13e1-4c43-8db4-d5837f77a33e");
-                _celltmpbanknrrow1Info = new RepoItemInfo(this, "CellTmpBANKNRRow1", "cell[@accessiblename='__tmp__BANK_NR Row 1']", "", 30000, null, "da0b97ef-7c1c-4b5f-b52e-5abac6a6a95f");
-                _row11Info = new RepoItemInfo(this, "Row11", "", "", 30000, null, "be4e405a-8fe9-41f9-9b53-845d4b394fa2");
             }
 
             /// <summary>
@@ -553,26 +595,122 @@ namespace B_ST_001_B_BANK
             }
 
             /// <summary>
-            /// The Row1Column0 item.
+            /// The Row1Column01 item.
             /// </summary>
-            [RepositoryItem("e96cef6b-b146-42be-be76-25c8cf4cd947")]
-            public virtual Ranorex.Cell Row1Column0
+            [RepositoryItem("d187e2a2-aeb7-4853-9e76-d5a78dd38912")]
+            public virtual Ranorex.Cell Row1Column01
             {
                 get
                 {
-                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
+                    return _row1column01Info.CreateAdapter<Ranorex.Cell>(true);
                 }
             }
 
             /// <summary>
-            /// The Row1Column0 item info.
+            /// The Row1Column01 item info.
             /// </summary>
-            [RepositoryItemInfo("e96cef6b-b146-42be-be76-25c8cf4cd947")]
-            public virtual RepoItemInfo Row1Column0Info
+            [RepositoryItemInfo("d187e2a2-aeb7-4853-9e76-d5a78dd38912")]
+            public virtual RepoItemInfo Row1Column01Info
             {
                 get
                 {
-                    return _row1column0Info;
+                    return _row1column01Info;
+                }
+            }
+
+            /// <summary>
+            /// The CellTmpBANKNRRow0_Ueberschrift_Bank item.
+            /// </summary>
+            [RepositoryItem("7c919a92-e80f-4103-a918-666c5621fca1")]
+            public virtual Ranorex.Cell CellTmpBANKNRRow0_Ueberschrift_Bank
+            {
+                get
+                {
+                    return _celltmpbanknrrow0_ueberschrift_bankInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellTmpBANKNRRow0_Ueberschrift_Bank item info.
+            /// </summary>
+            [RepositoryItemInfo("7c919a92-e80f-4103-a918-666c5621fca1")]
+            public virtual RepoItemInfo CellTmpBANKNRRow0_Ueberschrift_BankInfo
+            {
+                get
+                {
+                    return _celltmpbanknrrow0_ueberschrift_bankInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CellTmpBANKNRRow1 item.
+            /// </summary>
+            [RepositoryItem("3f574734-e05c-4d57-8901-496d9a5598c7")]
+            public virtual Ranorex.Cell CellTmpBANKNRRow1
+            {
+                get
+                {
+                    return _celltmpbanknrrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellTmpBANKNRRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("3f574734-e05c-4d57-8901-496d9a5598c7")]
+            public virtual RepoItemInfo CellTmpBANKNRRow1Info
+            {
+                get
+                {
+                    return _celltmpbanknrrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The CellTmpBANKNRRow1_mit_B_BANK_ST item.
+            /// </summary>
+            [RepositoryItem("2e7986de-3d5d-407b-9ff7-9c8291fb74ae")]
+            public virtual Ranorex.Cell CellTmpBANKNRRow1_mit_B_BANK_ST
+            {
+                get
+                {
+                    return _celltmpbanknrrow1_mit_b_bank_stInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellTmpBANKNRRow1_mit_B_BANK_ST item info.
+            /// </summary>
+            [RepositoryItemInfo("2e7986de-3d5d-407b-9ff7-9c8291fb74ae")]
+            public virtual RepoItemInfo CellTmpBANKNRRow1_mit_B_BANK_STInfo
+            {
+                get
+                {
+                    return _celltmpbanknrrow1_mit_b_bank_stInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CellTmpBANKNAMERow1 item.
+            /// </summary>
+            [RepositoryItem("ce1d44c4-df0e-4fec-acdd-a7205a032eb1")]
+            public virtual Ranorex.Cell CellTmpBANKNAMERow1
+            {
+                get
+                {
+                    return _celltmpbanknamerow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellTmpBANKNAMERow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("ce1d44c4-df0e-4fec-acdd-a7205a032eb1")]
+            public virtual RepoItemInfo CellTmpBANKNAMERow1Info
+            {
+                get
+                {
+                    return _celltmpbanknamerow1Info;
                 }
             }
 
@@ -597,54 +735,6 @@ namespace B_ST_001_B_BANK
                 get
                 {
                     return _row1Info;
-                }
-            }
-
-            /// <summary>
-            /// The CellTmpBANKNRRow1 item.
-            /// </summary>
-            [RepositoryItem("da0b97ef-7c1c-4b5f-b52e-5abac6a6a95f")]
-            public virtual Ranorex.Cell CellTmpBANKNRRow1
-            {
-                get
-                {
-                    return _celltmpbanknrrow1Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CellTmpBANKNRRow1 item info.
-            /// </summary>
-            [RepositoryItemInfo("da0b97ef-7c1c-4b5f-b52e-5abac6a6a95f")]
-            public virtual RepoItemInfo CellTmpBANKNRRow1Info
-            {
-                get
-                {
-                    return _celltmpbanknrrow1Info;
-                }
-            }
-
-            /// <summary>
-            /// The Row11 item.
-            /// </summary>
-            [RepositoryItem("be4e405a-8fe9-41f9-9b53-845d4b394fa2")]
-            public virtual Ranorex.Table Row11
-            {
-                get
-                {
-                    return _row11Info.CreateAdapter<Ranorex.Table>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Row11 item info.
-            /// </summary>
-            [RepositoryItemInfo("be4e405a-8fe9-41f9-9b53-845d4b394fa2")]
-            public virtual RepoItemInfo Row11Info
-            {
-                get
-                {
-                    return _row11Info;
                 }
             }
         }

@@ -9,16 +9,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Bank"
-					datasourceid="96c2c40d-043d-4924-8ca9-a8c17c64983f"
-					variableid="01b2fa43-5219-44c2-a509-ccfde0869425"
-					variablename="Bank">
-					</var>
-					<var
 					dataname="Bankname_AEN"
 					datasourceid="96c2c40d-043d-4924-8ca9-a8c17c64983f"
 					variableid="5d5aadd0-b641-42cf-b179-fbb9dff50a91"
 					variablename="Bankname_AEN">
+					</var>
+					<var
+					dataname="Bank"
+					datasourceid="96c2c40d-043d-4924-8ca9-a8c17c64983f"
+					variableid="01b2fa43-5219-44c2-a509-ccfde0869425"
+					variablename="Bank">
 					</var>
 				</databinding>
 			</testmodule>
@@ -33,16 +33,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Bank"
-					datasourceid="96c2c40d-043d-4924-8ca9-a8c17c64983f"
-					variableid="adfd5bea-f068-45ea-a5d5-0cd5dfd72b6b"
-					variablename="Bank">
-					</var>
-					<var
 					dataname="Bankname"
 					datasourceid="96c2c40d-043d-4924-8ca9-a8c17c64983f"
 					variableid="38887dd7-166f-4ad4-b51e-11bc0767388f"
 					variablename="Bankname">
+					</var>
+					<var
+					dataname="Bank"
+					datasourceid="96c2c40d-043d-4924-8ca9-a8c17c64983f"
+					variableid="adfd5bea-f068-45ea-a5d5-0cd5dfd72b6b"
+					variablename="Bank">
 					</var>
 				</databinding>
 			</testmodule>
@@ -57,16 +57,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm"
-					datasourceid="96c2c40d-043d-4924-8ca9-a8c17c64983f"
-					variableid="55ade643-2191-4148-a20d-b6885c74e43a"
-					variablename="Programm">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="96c2c40d-043d-4924-8ca9-a8c17c64983f"
 					variableid="e2d12010-f0a3-4095-9741-020706f6536d"
 					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm"
+					datasourceid="96c2c40d-043d-4924-8ca9-a8c17c64983f"
+					variableid="55ade643-2191-4148-a20d-b6885c74e43a"
+					variablename="Programm">
 					</var>
 				</databinding>
 			</testmodule>
@@ -82,7 +82,7 @@
 			</testmodule>
 			<testcase
 			id="96c2c40d-043d-4924-8ca9-a8c17c64983f"
-			name="B_ST_001_B_BANK"
+			name="B_BANK_Schnelltest"
 			reportlevel="Info;20">
 				<parameters>
 					<param
@@ -91,19 +91,19 @@
 					</param>
 					<param
 					name="Programm"
-					value="B_KTO">
+					value="B_BANK">
 					</param>
 					<param
 					name="Bank"
-					value="B_ST_001">
+					value="B_BANK_ST">
 					</param>
 					<param
 					name="Bankname"
-					value="BANK_SCHNELLTEST_001_B_BANK">
+					value="B_BANK_ST_SCHNELLTEST">
 					</param>
 					<param
 					name="Bankname_AEN"
-					value="SCHNELLTEST_001_B_BANK">
+					value="B_BANK_SCHNELLTEST">
 					</param>
 				</parameters>
 			</testcase>
@@ -121,7 +121,7 @@
 			includeimageschecked="False"
 			includerecordingschecked="False"
 			junitreport="False"
-			name="B_ST_001_B_BANK"
+			name="B_BANK_Schnelltest"
 			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
@@ -149,10 +149,10 @@
 		<childhierarchy>
 			<testsuite
 			id="9edb3a36-ef71-4784-9fea-efe53c8903a9"
-			name="B_ST_001_B_BANK">
+			name="B_BANK_Schnelltest">
 				<testcase
 				id="96c2c40d-043d-4924-8ca9-a8c17c64983f"
-				name="B_ST_001_B_BANK">
+				name="B_BANK_Schnelltest">
 					<testcase
 					id="2731c7a2-8bea-45b7-97b1-09b79a7099e2"
 					name="TestCase">

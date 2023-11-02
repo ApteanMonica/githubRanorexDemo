@@ -30,9 +30,9 @@ namespace B_ST_001_B_BANK.Recordings
     public partial class Aenderung_Bankverbindung : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_ST_001_B_BANK.B_ST_001_B_BANKRepository repository.
+        /// Holds an instance of the global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository repository.
         /// </summary>
-        public static global::B_ST_001_B_BANK.B_ST_001_B_BANKRepository repo = global::B_ST_001_B_BANK.B_ST_001_B_BANKRepository.Instance;
+        public static global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository repo = global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository.Instance;
 
         static Aenderung_Bankverbindung instance = new Aenderung_Bankverbindung();
 
@@ -41,7 +41,7 @@ namespace B_ST_001_B_BANK.Recordings
         /// </summary>
         public Aenderung_Bankverbindung()
         {
-            Bankname_AEN = "SCHNELLTEST_001_B_BANK";
+            Bankname_AEN = "B_BANK_SCHNELLTEST";
         }
 
         /// <summary>

@@ -1,8 +1,8 @@
 ﻿<repository
 id="e1dc7736-e2a0-4f6e-9bac-b9970807436c"
-name="B_ST_001_B_BANKRepository">
+name="B_BANK_Schnelltest_Repository">
 	<codegen
-	classname="B_ST_001_B_BANKRepository"
+	classname="B_BANK_Schnelltest_Repository"
 	namespace="B_ST_001_B_BANK">
 	</codegen>
 	<rootfolder
@@ -86,6 +86,16 @@ name="B_ST_001_B_BANKRepository">
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='frmBank']/container[@controlname='ClientArea']/text[@controlname='dfBank_nr']/text[@accessiblename='Bank']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="7fbf8cc0-6f90-4ab3-8400-4c66bd7b0d3e"
+			name="Bank_B_BANK_ST"
+			refimgid="6c912747-8377-4946-b583-8709abf50679"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmBank']/container[@controlname='ClientArea']/text[@controlname='dfBank_nr']/text[@accessiblename='Bank' and @text=$Bank]
 			</item>
 			<item
 			addcaps="text,accessible"
@@ -186,12 +196,53 @@ name="B_ST_001_B_BANKRepository">
 				<item
 				addcaps="cell,accessible"
 				capname="cell"
-				id="e96cef6b-b146-42be-be76-25c8cf4cd947"
-				name="Row1Column0"
-				refimgid="a2dc2a70-3f12-477a-96d3-b5f6abe6f709"
+				id="d187e2a2-aeb7-4853-9e76-d5a78dd38912"
+				name="Row1Column01"
+				refimgid="bfbea7ea-c831-4369-8f6b-80d51b0c0517"
+				refpath="/form[@controlname='frmBank']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='frmBank']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/cell[@accessiblename='Row 1 Column 0']
+					/form[@controlname='frmBank']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="7c919a92-e80f-4103-a918-666c5621fca1"
+				name="CellTmpBANKNRRow0_Ueberschrift_Bank"
+				refimgid="8f758a23-a4d4-4b46-a005-64c5381e12f2"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmBank']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='__tmp__BANK_NR Row 0' and @accessiblevalue='Bank']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="3f574734-e05c-4d57-8901-496d9a5598c7"
+				name="CellTmpBANKNRRow1"
+				refimgid="1709917b-fdad-4f14-8f05-a2e97fe2b3c6"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmBank']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename~'BANK_NR Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="2e7986de-3d5d-407b-9ff7-9c8291fb74ae"
+				name="CellTmpBANKNRRow1_mit_B_BANK_ST"
+				refimgid="1709917b-fdad-4f14-8f05-a2e97fe2b3c6"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmBank']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename~'BANK_NR Row 1' and @accessiblevalue=$Bank]
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="ce1d44c4-df0e-4fec-acdd-a7205a032eb1"
+				name="CellTmpBANKNAMERow1"
+				refimgid="97729e08-2ae0-424b-bbab-6d80bd4045af"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='frmBank']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename~'BANK_NAME Row 1']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -202,26 +253,6 @@ name="B_ST_001_B_BANKRepository">
 				robustPath=""
 				searchtimeout="30000ms">
 					/form[@controlname='frmBank']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="da0b97ef-7c1c-4b5f-b52e-5abac6a6a95f"
-				name="CellTmpBANKNRRow1"
-				refimgid="44fe043b-993f-422f-b876-a9d8952b9a55"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='frmBank']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/cell[@accessiblename='__tmp__BANK_NR Row 1']
-				</item>
-				<item
-				addcaps="row,accessible"
-				capname="table"
-				id="be4e405a-8fe9-41f9-9b53-845d4b394fa2"
-				name="Row11"
-				refimgid="b3d948d8-d0d3-48a8-ac8f-fd1e2dde7b76"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='frmBank']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
 				</item>
 				<basepath>
 					/form[@controlname='frmBank']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='ClientArea']/container[@controlname='searchResult']/container[@controlname='tblSearchResult']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
@@ -307,5 +338,10 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 		</basepath>
 	</rootfolder>
 	<variables>
+		<var
+		id="d1e07b1e-fad0-40ea-9d1d-09d65a9fda8a"
+		name="Bank">
+			B_BANK_ST
+		</var>
 	</variables>
 </repository>
