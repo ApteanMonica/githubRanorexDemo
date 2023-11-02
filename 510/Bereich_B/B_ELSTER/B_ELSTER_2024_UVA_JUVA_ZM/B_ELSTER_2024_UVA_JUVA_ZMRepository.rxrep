@@ -195,6 +195,17 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 				/form[@title='Hinweis']/titlebar[@accessiblerole='TitleBar']
 			</item>
 			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="13f65712-f36d-489e-9ad8-537565e52c34"
+			name="LabelMeldungstext"
+			refimgid="2720dc20-ba11-4cba-a5c7-0c4213692f8c"
+			refpath="/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Hinweis']/text[@controlname='labelMeldungstext']
+			</item>
+			<item
 			addcaps="text,nativewindow"
 			capname="text"
 			id="6449da5f-5163-4ebc-94a6-69aff227cd4b"
@@ -206,6 +217,16 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 				/form[@title='Hinweis']/text[@controlid='65535']
 			</item>
 			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="683d2b13-8de3-40a4-aecd-4a0f66bbcce4"
+			name="Text65535_Meldung_Testuebermittlung"
+			refimgid="eafca6bc-2a4d-45e7-b268-1d04dbe97dd6"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Hinweis']/text[@controlid='65535' and @text~'Nur Testübermittlung möglich!']
+			</item>
+			<item
 			addcaps="button,nativewindow"
 			capname="button"
 			id="3c3e0c91-f5b2-4609-b889-f5f9ed4d7df2"
@@ -214,17 +235,6 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@title='Hinweis']/button
-			</item>
-			<item
-			addcaps="text,control,nativewindow"
-			capname="text"
-			id="13f65712-f36d-489e-9ad8-537565e52c34"
-			name="LabelMeldungstext"
-			refimgid="2720dc20-ba11-4cba-a5c7-0c4213692f8c"
-			refpath="/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@title='Hinweis']/text[@controlname='labelMeldungstext']
 			</item>
 			<basepath>
 				/form[@title='Hinweis']
@@ -470,6 +480,16 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			<item
 			addcaps="listitem,nativeitem,checkable"
 			capname="listitem"
+			id="38ccb2dc-0e9d-4c87-8c0a-bcc335459f31"
+			name="Dezember"
+			refimgid="60a1ef9d-e981-4014-8364-e27190b90021"
+			robustPath=""
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text='Dezember']
+			</item>
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
 			id="eaa61b5d-83a7-4b98-80c9-59bd16c12a00"
 			name="UVADeutschland2020Elster"
 			refimgid="38fe2698-ce56-490a-8821-42b8967ff412"
@@ -490,22 +510,32 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			<item
 			addcaps="listitem,nativeitem,checkable"
 			capname="listitem"
-			id="38ccb2dc-0e9d-4c87-8c0a-bcc335459f31"
-			name="Dezember"
-			refimgid="60a1ef9d-e981-4014-8364-e27190b90021"
-			robustPath=""
-			searchtimeout="30000ms">
-				/list[@controlid='1000']/listitem[@text='Dezember']
-			</item>
-			<item
-			addcaps="listitem,nativeitem,checkable"
-			capname="listitem"
 			id="ec671726-981c-4612-8bc5-6a9172b902c3"
 			name="UVADeutschland2023Elster"
 			refimgid="524cdb85-2d31-4e1d-85e1-6fc9dd80e681"
 			robustPath=""
 			searchtimeout="30000ms">
 				/list[@controlid='1000']/listitem[@text~'UVA-Deutschland 2023']
+			</item>
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
+			id="b2dbe03c-4b7a-47ae-93ee-0141bc6778da"
+			name="Formular_Elster_VORJAHR"
+			refimgid="524cdb85-2d31-4e1d-85e1-6fc9dd80e681"
+			robustPath=""
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text=$UVA_VORJAHR_Form_Name]
+			</item>
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
+			id="2af648bd-a59f-49a8-a494-d4198b993867"
+			name="Formular_Elster_JAHRNEU"
+			refimgid="524cdb85-2d31-4e1d-85e1-6fc9dd80e681"
+			robustPath=""
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text=$UVA_JAHRNEU_Form_Name]
 			</item>
 			<basepath>
 				/list[@controlid='1000']

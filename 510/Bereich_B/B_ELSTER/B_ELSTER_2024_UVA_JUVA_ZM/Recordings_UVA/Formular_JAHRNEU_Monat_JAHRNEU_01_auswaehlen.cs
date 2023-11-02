@@ -119,8 +119,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUVADruck.CmbUvaFBez' at Center.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(0));
             repo.DlgUVADruck.CmbUvaFBez.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.UVADeutschland2023Elster' at Center.", repo.List1000.UVADeutschland2023ElsterInfo, new RecordItemIndex(1));
-            repo.List1000.UVADeutschland2023Elster.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Formular_Elster_JAHRNEU' at Center.", repo.List1000.Formular_Elster_JAHRNEUInfo, new RecordItemIndex(1));
+            repo.List1000.Formular_Elster_JAHRNEU.Click();
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_JAHRNEU_Form_Name) on item 'DlgUVADruck.CmbUvaFBez'.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.DlgUVADruck.CmbUvaFBezInfo, "Text", UVA_JAHRNEU_Form_Name);
