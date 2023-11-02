@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="dd0e6cd7-5a99-4ccf-aba8-3bd917f544ba"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_B_BER"
+	namespace="B_BER_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="4595e7ae-a427-45c7-a775-6638732f025b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="324a5e3d-8c65-4913-8cc1-db9249829c2f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblBer']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="f65fc292-89a4-480c-aff8-2bb01151fb3d"
+	name="B_BER_SchnelltestRepository"
+	relativepath="..\B_BER_SchnelltestRepository.rxrep">
+		<codegen
+		classname="B_BER_SchnelltestRepository"
+		namespace="B_BER_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="94cddb6c-e595-4fec-b0a1-57e5d7e7efe0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_B_BER.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
