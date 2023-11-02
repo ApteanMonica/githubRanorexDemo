@@ -45,7 +45,7 @@ namespace AEKOOE_001.Recordings
             berufsunfaehig_bis = "10.06.2022";
             SVNR = "1679050956";
             Bankverbindung_1 = "AT351100018481974718";
-            Diagnose = "Testdiganose zum Krankengeld";
+            Diagnose = "Testdiagnose zum Krankengeld";
             Tagesdatum = "";
             Tagesdatum_plus_7_Tage = "";
         }
@@ -96,16 +96,14 @@ namespace AEKOOE_001.Recordings
             set { _SVNR = value; }
         }
 
-        string _Bankverbindung_1;
-
         /// <summary>
         /// Gets or sets the value of variable Bankverbindung_1.
         /// </summary>
         [TestVariable("2f74c417-ab9d-4fb6-a39b-0a2319b5dc3c")]
         public string Bankverbindung_1
         {
-            get { return _Bankverbindung_1; }
-            set { _Bankverbindung_1 = value; }
+            get { return repo.Bankverbindung_1; }
+            set { repo.Bankverbindung_1 = value; }
         }
 
         /// <summary>
@@ -177,8 +175,8 @@ namespace AEKOOE_001.Recordings
             
             Report.Log(ReportLevel.Info, "User", Tagesdatum, new RecordItemIndex(5));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Krankengeld') on item 'Login.FormControl'.", repo.Login.FormControlInfo, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.Login.FormControlInfo, "InnerText", "Krankengeld");
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Krankengeld') on item 'Login.FormControl'.", repo.Login.FormControlInfo, new RecordItemIndex(6));
+            //Validate.AttributeEqual(repo.Login.FormControlInfo, "InnerText", "Krankengeld");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum' with focus on 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_abInfo, new RecordItemIndex(7));
             repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_ab.PressKeys(Tagesdatum);

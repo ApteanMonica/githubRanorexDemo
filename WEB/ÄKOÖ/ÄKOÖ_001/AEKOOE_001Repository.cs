@@ -79,7 +79,7 @@ namespace AEKOOE_001
             set { _Tagesdatum = value; }
         }
 
-        string _Diagnose = "Testdiganose zum Krankengeld";
+        string _Diagnose = "Testdiagnose zum Krankengeld";
 
         /// <summary>
         /// Gets or sets the value of variable Diagnose.
@@ -101,6 +101,18 @@ namespace AEKOOE_001
         {
             get { return _Antragskategorie_Krankengeld; }
             set { _Antragskategorie_Krankengeld = value; }
+        }
+
+        string _Bankverbindung_1 = "AT351100018481974718";
+
+        /// <summary>
+        /// Gets or sets the value of variable Bankverbindung_1.
+        /// </summary>
+        [TestVariable("f7428658-18df-4fba-aec7-95b78b120c35")]
+        public string Bankverbindung_1
+        {
+            get { return _Bankverbindung_1; }
+            set { _Bankverbindung_1 = value; }
         }
 
 #endregion
@@ -272,7 +284,7 @@ namespace AEKOOE_001
                 _buttontagneuInfo = new RepoItemInfo(this, "ButtonTagNeu", ".//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[3]/button[@innertext='Neu']", "", 30000, null, "fbf3ce06-3774-4b36-8376-5d678806f84c");
                 _alertalertinfoInfo = new RepoItemInfo(this, "AlertAlertInfo", ".//div[#'panel-request']/div[2]/div[1]/div[1]/div", "", 30000, null, "bc8c0e90-1a09-4fd5-865c-4df73e785745");
                 _formcontrolInfo = new RepoItemInfo(this, "FormControl", ".//div[#'panel-request']/div[2]/div[1]/div[2]/tag/div/div/div/select", "", 30000, null, "42b55ab3-53b9-4478-be37-0ec9f68fcbe9");
-                _copy_of_formcontrolInfo = new RepoItemInfo(this, "Copy_of_FormControl", ".//div[#'panel-request']/div[2]/div[1]/div[2]/tag/div/div/div/select", "", 30000, null, "ce40f9c2-859e-4dbe-b3e7-81a92a320328");
+                _copy_of_formcontrolInfo = new RepoItemInfo(this, "Copy_of_FormControl", ".//div[#'panel-request']/div[2]/div[1]/div[2]/tag/div/div/div/select", "", 30000, null, "ce46929e-e822-43cf-9856-69be3a3f79e0");
                 _auswahl_bankverbindungInfo = new RepoItemInfo(this, "Auswahl_Bankverbindung", "body/div[4]//ul/li[@innertext='AT351100018481974718']", "", 30000, null, "f658bfd4-adea-457e-a1a9-0ec82cec2c50");
                 _btnbtnsecondarysendbtn_absendenInfo = new RepoItemInfo(this, "BtnBtnSecondarySendBtn_Absenden", ".//div[#'panel-request']/div[2]/div[2]/div/button[1]", "", 30000, null, "3bf2ddc8-5a6b-4584-bee0-a9aa2c55cb31");
                 _tdtag00141Info = new RepoItemInfo(this, "TdTag00141", ".//div[#'requestgrid']/div[2]/table//td[@innertext='00141']", "", 30000, null, "6f286abb-8a56-41f0-aa27-4849fe125532");
@@ -688,7 +700,7 @@ namespace AEKOOE_001
             /// <summary>
             /// The Copy_of_FormControl item.
             /// </summary>
-            [RepositoryItem("ce40f9c2-859e-4dbe-b3e7-81a92a320328")]
+            [RepositoryItem("ce46929e-e822-43cf-9856-69be3a3f79e0")]
             public virtual Ranorex.SelectTag Copy_of_FormControl
             {
                 get
@@ -700,7 +712,7 @@ namespace AEKOOE_001
             /// <summary>
             /// The Copy_of_FormControl item info.
             /// </summary>
-            [RepositoryItemInfo("ce40f9c2-859e-4dbe-b3e7-81a92a320328")]
+            [RepositoryItemInfo("ce46929e-e822-43cf-9856-69be3a3f79e0")]
             public virtual RepoItemInfo Copy_of_FormControlInfo
             {
                 get
@@ -1370,6 +1382,8 @@ namespace AEKOOE_001
             RepoItemInfo _arbeitsunfaehigkeitsmeldung_dokumenttypInfo;
             RepoItemInfo _bezeichnung_dokumentInfo;
             RepoItemInfo _modulemoduledvrdropdownlistInfo;
+            RepoItemInfo _kdropzoneInfo;
+            RepoItemInfo _colmd6colxs12Info;
 
             /// <summary>
             /// Creates a new AKAT011RequestFormRow  folder.
@@ -1398,6 +1412,8 @@ namespace AEKOOE_001
                 _arbeitsunfaehigkeitsmeldung_dokumenttypInfo = new RepoItemInfo(this, "Arbeitsunfaehigkeitsmeldung_Dokumenttyp", "div[25]//tag[@tagname='dmscontrol']/div/div[1]/div[2]/table/tbody/?/?/td[@innertext>'Arbeitsunfähigkeitsmeldun']", "", 30000, null, "ff0de1e4-4933-4e1e-b57f-2053f30a3ee4");
                 _bezeichnung_dokumentInfo = new RepoItemInfo(this, "Bezeichnung_Dokument", "div[25]//tag[@tagname='dmscontrol']/div/div[1]/div[2]/table/tbody/?/?/td[@innertext='Test_BAR']", "", 30000, null, "edf2f2a2-a62f-4c22-9454-38ad3b6a8ab1");
                 _modulemoduledvrdropdownlistInfo = new RepoItemInfo(this, "ModuleModuleDvrDropdownlist", "div[2]/tag/div", "", 30000, null, "58de15a4-df5c-4c89-bdd2-af0b912e93c9");
+                _kdropzoneInfo = new RepoItemInfo(this, "KDropzone", "div[25]/div/tag/div/div/div/tag[@tagname='dmscontrol']/div/tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[1]/div[1]/div[2]/form[@action='http://192.168.192.139/521_SP12/#request']/div/div", "", 30000, null, "27bb2dcd-7b5b-430a-b7a5-f12b005ccee2");
+                _colmd6colxs12Info = new RepoItemInfo(this, "ColMd6ColXs12", "div[25]/div/tag/div/div/div/tag[@tagname='dmscontrol']/div/tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[1]/div[1]/div[2]", "", 30000, null, "519072c8-b08f-4fa3-a19e-3bb8c39ed74b");
             }
 
             /// <summary>
@@ -1925,6 +1941,54 @@ namespace AEKOOE_001
                 get
                 {
                     return _modulemoduledvrdropdownlistInfo;
+                }
+            }
+
+            /// <summary>
+            /// The KDropzone item.
+            /// </summary>
+            [RepositoryItem("27bb2dcd-7b5b-430a-b7a5-f12b005ccee2")]
+            public virtual Ranorex.DivTag KDropzone
+            {
+                get
+                {
+                    return _kdropzoneInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The KDropzone item info.
+            /// </summary>
+            [RepositoryItemInfo("27bb2dcd-7b5b-430a-b7a5-f12b005ccee2")]
+            public virtual RepoItemInfo KDropzoneInfo
+            {
+                get
+                {
+                    return _kdropzoneInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColMd6ColXs12 item.
+            /// </summary>
+            [RepositoryItem("519072c8-b08f-4fa3-a19e-3bb8c39ed74b")]
+            public virtual Ranorex.DivTag ColMd6ColXs12
+            {
+                get
+                {
+                    return _colmd6colxs12Info.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColMd6ColXs12 item info.
+            /// </summary>
+            [RepositoryItemInfo("519072c8-b08f-4fa3-a19e-3bb8c39ed74b")]
+            public virtual RepoItemInfo ColMd6ColXs12Info
+            {
+                get
+                {
+                    return _colmd6colxs12Info;
                 }
             }
         }

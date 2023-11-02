@@ -96,16 +96,14 @@ namespace AEKOOE_001.Recordings
             set { _SVNR = value; }
         }
 
-        string _Bankverbindung_1;
-
         /// <summary>
         /// Gets or sets the value of variable Bankverbindung_1.
         /// </summary>
         [TestVariable("e7922989-49f4-4d65-aaf5-9c7e70425f13")]
         public string Bankverbindung_1
         {
-            get { return _Bankverbindung_1; }
-            set { _Bankverbindung_1 = value; }
+            get { return repo.Bankverbindung_1; }
+            set { repo.Bankverbindung_1 = value; }
         }
 
         /// <summary>

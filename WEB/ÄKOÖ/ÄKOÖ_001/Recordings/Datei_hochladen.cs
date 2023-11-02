@@ -101,8 +101,8 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Upload') on item 'Login.AKAT011RequestFormRow.Upload'.", repo.Login.AKAT011RequestFormRow.UploadInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.UploadInfo, "InnerText", "Upload");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.File_Button_Datei_auswaehlen' at Center.", repo.Login.AKAT011RequestFormRow.File_Button_Datei_auswaehlenInfo, new RecordItemIndex(3));
-            repo.Login.AKAT011RequestFormRow.File_Button_Datei_auswaehlen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'Login.AKAT011RequestFormRow.File_Button_Datei_auswaehlen' at Center.", repo.Login.AKAT011RequestFormRow.File_Button_Datei_auswaehlenInfo, new RecordItemIndex(3));
+            repo.Login.AKAT011RequestFormRow.File_Button_Datei_auswaehlen.Click(System.Windows.Forms.MouseButtons.Right);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'OEffnen.OEffnen'", repo.OEffnen.OEffnenInfo, new ActionTimeout(120000), new RecordItemIndex(4));
             repo.OEffnen.OEffnenInfo.WaitForExists(120000);
