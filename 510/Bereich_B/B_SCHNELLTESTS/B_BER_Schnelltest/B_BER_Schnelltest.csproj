@@ -91,53 +91,101 @@
     <Compile Include="Program.cs">
       <id>7dbc7859-ee49-4dc2-892d-487f4d337b24</id>
     </Compile>
-    <Compile Include="Recordings\Close_B_BER.cs">
+    <Compile Include="Recordings_Bereiche\Close_B_BER.cs">
       <DependentUpon>Close_B_BER.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>83b65c9f-a302-4373-ad6f-ab749a234d01</id>
       <BoundTo>62f5ccdf-f73e-4354-9fb2-20d0dd6e73ed</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Close_B_BER.UserCode.cs">
+    <Compile Include="Recordings_Bereiche\Close_B_BER.UserCode.cs">
       <DependentUpon>Close_B_BER.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>89d1b1eb-a601-4f83-9d54-adbe965e9899</id>
       <BoundTo>62f5ccdf-f73e-4354-9fb2-20d0dd6e73ed</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Close_B_BER_BEKT.cs">
-      <DependentUpon>Close_B_BER_BEKT.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>0f475c06-e71e-42f8-bdb2-3e26ce9fac20</id>
-      <BoundTo>c4e9361d-d63b-4abf-b4c6-7a6bdfc9e295</BoundTo>
-    </Compile>
-    <Compile Include="Recordings\Close_B_BER_BEKT.UserCode.cs">
-      <DependentUpon>Close_B_BER_BEKT.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>499d9120-a4e6-4140-8427-0a3c8b045294</id>
-      <BoundTo>c4e9361d-d63b-4abf-b4c6-7a6bdfc9e295</BoundTo>
-    </Compile>
-    <Compile Include="Recordings\Start_B_BER_BEKT.cs">
-      <DependentUpon>Start_B_BER_BEKT.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>69bc202a-4828-4436-a720-269dced8887f</id>
-      <BoundTo>1d93fd8b-102a-4654-99c3-0ec2c2b95144</BoundTo>
-    </Compile>
-    <Compile Include="Recordings\Start_B_BER_BEKT.UserCode.cs">
-      <DependentUpon>Start_B_BER_BEKT.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>137435c0-f63e-4f02-a2cd-3a252f31d60c</id>
-      <BoundTo>1d93fd8b-102a-4654-99c3-0ec2c2b95144</BoundTo>
-    </Compile>
-    <Compile Include="Recordings\Start_B_BER.cs">
+    <Compile Include="Recordings_Bereiche\Start_B_BER.cs">
       <DependentUpon>Start_B_BER.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>6c69434a-a964-4f0f-bd3f-ba5036d4bd7e</id>
       <BoundTo>bb7114cc-9fbb-4867-80ec-0cc2fbad359e</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Start_B_BER.UserCode.cs">
+    <Compile Include="Recordings_Bereiche\Start_B_BER.UserCode.cs">
       <DependentUpon>Start_B_BER.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>bb068169-688b-4003-8ec1-2fb05fb3253e</id>
       <BoundTo>bb7114cc-9fbb-4867-80ec-0cc2fbad359e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Bereichskonten\Close_B_BER_BEKT.cs">
+      <DependentUpon>Close_B_BER_BEKT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0f475c06-e71e-42f8-bdb2-3e26ce9fac20</id>
+      <BoundTo>c4e9361d-d63b-4abf-b4c6-7a6bdfc9e295</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Bereichskonten\Close_B_BER_BEKT.UserCode.cs">
+      <DependentUpon>Close_B_BER_BEKT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>499d9120-a4e6-4140-8427-0a3c8b045294</id>
+      <BoundTo>c4e9361d-d63b-4abf-b4c6-7a6bdfc9e295</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Bereichskonten\Start_B_BER_BEKT.cs">
+      <DependentUpon>Start_B_BER_BEKT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>69bc202a-4828-4436-a720-269dced8887f</id>
+      <BoundTo>1d93fd8b-102a-4654-99c3-0ec2c2b95144</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Bereichskonten\Start_B_BER_BEKT.UserCode.cs">
+      <DependentUpon>Start_B_BER_BEKT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>137435c0-f63e-4f02-a2cd-3a252f31d60c</id>
+      <BoundTo>1d93fd8b-102a-4654-99c3-0ec2c2b95144</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Gruppen\Aufruf_Bereichsgruppen.cs">
+      <DependentUpon>Aufruf_Bereichsgruppen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8df483a0-9c63-4f71-bd94-77f5d432030c</id>
+      <BoundTo>ce08a0cf-094b-4218-be1e-ee63e49ad0dd</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Gruppen\Aufruf_Bereichsgruppen.UserCode.cs">
+      <DependentUpon>Aufruf_Bereichsgruppen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1317f272-ea05-4f9c-ab15-02462e9f7ede</id>
+      <BoundTo>ce08a0cf-094b-4218-be1e-ee63e49ad0dd</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Gruppen\Close_B_BER_BEGR.cs">
+      <DependentUpon>Close_B_BER_BEGR.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c84021b2-fe1d-4953-975a-e6cdd5dff01a</id>
+      <BoundTo>a8633821-2035-4695-87ae-ddd0ccc8c6d4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Gruppen\Close_B_BER_BEGR.UserCode.cs">
+      <DependentUpon>Close_B_BER_BEGR.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b2f4c6e2-32aa-45f7-9f06-22f1b990bde8</id>
+      <BoundTo>a8633821-2035-4695-87ae-ddd0ccc8c6d4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Zuordnung\Aufruf_Bereichskontenzuordung.cs">
+      <DependentUpon>Aufruf_Bereichskontenzuordung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>16d7e9a3-77bf-4347-a380-e0a4144d87fe</id>
+      <BoundTo>a09476d9-3c28-47f3-9b2c-4a392348090d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Zuordnung\Aufruf_Bereichskontenzuordung.UserCode.cs">
+      <DependentUpon>Aufruf_Bereichskontenzuordung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>45dc2979-eb27-49df-85cd-d437c51ca66c</id>
+      <BoundTo>a09476d9-3c28-47f3-9b2c-4a392348090d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Zuordnung\Close_B_BER_BEREZ.cs">
+      <DependentUpon>Close_B_BER_BEREZ.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b0e1f65a-ea89-4fca-8ccd-9647f075a62a</id>
+      <BoundTo>0cd8ceb5-51cf-4315-bee3-f8e108da9594</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Zuordnung\Close_B_BER_BEREZ.UserCode.cs">
+      <DependentUpon>Close_B_BER_BEREZ.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e413e267-9250-4a3e-afba-ee2ee877f98e</id>
+      <BoundTo>0cd8ceb5-51cf-4315-bee3-f8e108da9594</BoundTo>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -155,25 +203,45 @@
       <repoid>f65fc292-89a4-480c-aff8-2bb01151fb3d</repoid>
       <reporootid>94cddb6c-e595-4fec-b0a1-57e5d7e7efe0</reporootid>
     </None>
-    <None Include="Recordings\Close_B_BER.rxrec">
+    <None Include="Recordings_Bereiche\Close_B_BER.rxrec">
       <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
       <id>62f5ccdf-f73e-4354-9fb2-20d0dd6e73ed</id>
       <recordtableid>dd0e6cd7-5a99-4ccf-aba8-3bd917f544ba</recordtableid>
     </None>
-    <None Include="Recordings\Close_B_BER_BEKT.rxrec">
+    <None Include="Recordings_Bereiche\Start_B_BER.rxrec">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <id>bb7114cc-9fbb-4867-80ec-0cc2fbad359e</id>
+      <recordtableid>2a0e3fae-4c6e-4c6a-8fe0-9dff8acfc17e</recordtableid>
+    </None>
+    <None Include="Recordings_Bereichskonten\Close_B_BER_BEKT.rxrec">
       <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
       <id>c4e9361d-d63b-4abf-b4c6-7a6bdfc9e295</id>
       <recordtableid>046d8486-6e9b-41a5-a28e-bd746879d2b5</recordtableid>
     </None>
-    <None Include="Recordings\Start_B_BER_BEKT.rxrec">
+    <None Include="Recordings_Bereichskonten\Start_B_BER_BEKT.rxrec">
       <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
       <id>1d93fd8b-102a-4654-99c3-0ec2c2b95144</id>
       <recordtableid>4d784fe1-d508-4a9c-aa1e-6d73b2cca66e</recordtableid>
     </None>
-    <None Include="Recordings\Start_B_BER.rxrec">
+    <None Include="Recordings_Gruppen\Aufruf_Bereichsgruppen.rxrec">
       <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
-      <id>bb7114cc-9fbb-4867-80ec-0cc2fbad359e</id>
-      <recordtableid>2a0e3fae-4c6e-4c6a-8fe0-9dff8acfc17e</recordtableid>
+      <id>ce08a0cf-094b-4218-be1e-ee63e49ad0dd</id>
+      <recordtableid>448de88d-4842-41e8-9e2a-894d26aee9b6</recordtableid>
+    </None>
+    <None Include="Recordings_Gruppen\Close_B_BER_BEGR.rxrec">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <id>a8633821-2035-4695-87ae-ddd0ccc8c6d4</id>
+      <recordtableid>466bd9e8-a67d-4fdb-aaa6-f636e7acf274</recordtableid>
+    </None>
+    <None Include="Recordings_Zuordnung\Aufruf_Bereichskontenzuordung.rxrec">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <id>a09476d9-3c28-47f3-9b2c-4a392348090d</id>
+      <recordtableid>0761ff1b-18cb-4ba0-8622-6c05761663df</recordtableid>
+    </None>
+    <None Include="Recordings_Zuordnung\Close_B_BER_BEREZ.rxrec">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <id>0cd8ceb5-51cf-4315-bee3-f8e108da9594</id>
+      <recordtableid>82581317-92b0-414a-a407-c9674930b6a4</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -187,7 +255,16 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Recordings">
+    <Folder Include="Recordings_Gruppen">
+      <id>a7e60b83-f111-49cb-9c1c-281bbb5097e2</id>
+    </Folder>
+    <Folder Include="Recordings_Zuordnung">
+      <id>a81203ce-f63a-485e-a62e-bb9944bb16ba</id>
+    </Folder>
+    <Folder Include="Recordings_Bereichskonten">
+      <id>031d29ca-5c45-439d-8ea4-1e33e7556337</id>
+    </Folder>
+    <Folder Include="Recordings_Bereiche">
       <id>e434eb57-f990-4027-b957-137c4fdf3efc</id>
     </Folder>
   </ItemGroup>

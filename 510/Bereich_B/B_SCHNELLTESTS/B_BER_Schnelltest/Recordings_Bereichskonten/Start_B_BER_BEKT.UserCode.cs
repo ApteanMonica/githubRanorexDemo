@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_BER_Schnelltest.Recordings
+namespace B_BER_Schnelltest.Recordings_Bereichskonten
 {
-    public partial class Start_B_BER
+    public partial class Start_B_BER_BEKT
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

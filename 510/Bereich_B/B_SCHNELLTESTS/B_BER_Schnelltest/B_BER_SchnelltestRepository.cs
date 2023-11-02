@@ -29,6 +29,8 @@ namespace B_BER_Schnelltest
         static B_BER_SchnelltestRepository instance = new B_BER_SchnelltestRepository();
         B_BER_SchnelltestRepositoryFolders.TblBerAppFolder _tblber;
         B_BER_SchnelltestRepositoryFolders.TblBektAppFolder _tblbekt;
+        B_BER_SchnelltestRepositoryFolders.TblBegrAppFolder _tblbegr;
+        B_BER_SchnelltestRepositoryFolders.TblZuAppFolder _tblzu;
 
         /// <summary>
         /// Gets the singleton class instance representing the B_BER_SchnelltestRepository element repository.
@@ -47,6 +49,8 @@ namespace B_BER_Schnelltest
         {
             _tblber = new B_BER_SchnelltestRepositoryFolders.TblBerAppFolder(this);
             _tblbekt = new B_BER_SchnelltestRepositoryFolders.TblBektAppFolder(this);
+            _tblbegr = new B_BER_SchnelltestRepositoryFolders.TblBegrAppFolder(this);
+            _tblzu = new B_BER_SchnelltestRepositoryFolders.TblZuAppFolder(this);
         }
 
 #region Variables
@@ -82,6 +86,24 @@ namespace B_BER_Schnelltest
         {
             get { return _tblbekt; }
         }
+
+        /// <summary>
+        /// The TblBegr folder.
+        /// </summary>
+        [RepositoryFolder("b90c0d9d-b8a4-4d0a-8a42-adada82ec3c8")]
+        public virtual B_BER_SchnelltestRepositoryFolders.TblBegrAppFolder TblBegr
+        {
+            get { return _tblbegr; }
+        }
+
+        /// <summary>
+        /// The TblZu folder.
+        /// </summary>
+        [RepositoryFolder("b854be38-0eac-4306-bd46-a18aaca80ad9")]
+        public virtual B_BER_SchnelltestRepositoryFolders.TblZuAppFolder TblZu
+        {
+            get { return _tblzu; }
+        }
     }
 
     /// <summary>
@@ -97,6 +119,7 @@ namespace B_BER_Schnelltest
         public partial class TblBerAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _titlebar100verwaltenbereicheInfo;
+            RepoItemInfo _pbtoolbaritemsbekt_button_bereichsgruppenInfo;
 
             /// <summary>
             /// Creates a new TblBer  folder.
@@ -105,6 +128,7 @@ namespace B_BER_Schnelltest
                     base("TblBer", "/form[@controlname='tblBer']", parentFolder, 30000, null, true, "5ca18a05-8a21-4ba0-a74d-7a111516bdae", "")
             {
                 _titlebar100verwaltenbereicheInfo = new RepoItemInfo(this, "TitleBar100VerwaltenBereiche", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "324a5e3d-8c65-4913-8cc1-db9249829c2f");
+                _pbtoolbaritemsbekt_button_bereichsgruppenInfo = new RepoItemInfo(this, "PbToolBarItemsBekt_Button_Bereichsgruppen", "container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup1']/button[@controlname='pbToolBarItems_Bekt']", "", 30000, null, "49f43b6e-ad68-4a5d-9bb1-f012e4922d58");
             }
 
             /// <summary>
@@ -154,6 +178,30 @@ namespace B_BER_Schnelltest
                     return _titlebar100verwaltenbereicheInfo;
                 }
             }
+
+            /// <summary>
+            /// The PbToolBarItemsBekt_Button_Bereichsgruppen item.
+            /// </summary>
+            [RepositoryItem("49f43b6e-ad68-4a5d-9bb1-f012e4922d58")]
+            public virtual Ranorex.Button PbToolBarItemsBekt_Button_Bereichsgruppen
+            {
+                get
+                {
+                    return _pbtoolbaritemsbekt_button_bereichsgruppenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbToolBarItemsBekt_Button_Bereichsgruppen item info.
+            /// </summary>
+            [RepositoryItemInfo("49f43b6e-ad68-4a5d-9bb1-f012e4922d58")]
+            public virtual RepoItemInfo PbToolBarItemsBekt_Button_BereichsgruppenInfo
+            {
+                get
+                {
+                    return _pbtoolbaritemsbekt_button_bereichsgruppenInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -163,6 +211,7 @@ namespace B_BER_Schnelltest
         public partial class TblBektAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _titlebar100verwaltenbereichskontenInfo;
+            RepoItemInfo _pbtoolbaritemszuInfo;
 
             /// <summary>
             /// Creates a new TblBekt  folder.
@@ -171,6 +220,7 @@ namespace B_BER_Schnelltest
                     base("TblBekt", "/form[@controlname='tblBekt']", parentFolder, 30000, null, true, "35dda94f-9492-440a-a15f-7a9ed95e8bef", "")
             {
                 _titlebar100verwaltenbereichskontenInfo = new RepoItemInfo(this, "TitleBar100VerwaltenBereichskonten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "d32af058-a88a-4f7b-9e67-b244dbe8b8cd");
+                _pbtoolbaritemszuInfo = new RepoItemInfo(this, "PbToolBarItemsZu", "container[@controlname='RibbonBar']/container[@controlname='ToolBarItemsGroup']/button[@controlname='pbToolBarItems_Zu']", "", 30000, null, "1f0d91c7-3ad5-461a-86f5-cc2b169970a4");
             }
 
             /// <summary>
@@ -218,6 +268,162 @@ namespace B_BER_Schnelltest
                 get
                 {
                     return _titlebar100verwaltenbereichskontenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbToolBarItemsZu item.
+            /// </summary>
+            [RepositoryItem("1f0d91c7-3ad5-461a-86f5-cc2b169970a4")]
+            public virtual Ranorex.Button PbToolBarItemsZu
+            {
+                get
+                {
+                    return _pbtoolbaritemszuInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbToolBarItemsZu item info.
+            /// </summary>
+            [RepositoryItemInfo("1f0d91c7-3ad5-461a-86f5-cc2b169970a4")]
+            public virtual RepoItemInfo PbToolBarItemsZuInfo
+            {
+                get
+                {
+                    return _pbtoolbaritemszuInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TblBegrAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("b90c0d9d-b8a4-4d0a-8a42-adada82ec3c8")]
+        public partial class TblBegrAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _titlebar100verwaltengruppenInfo;
+
+            /// <summary>
+            /// Creates a new TblBegr  folder.
+            /// </summary>
+            public TblBegrAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TblBegr", "/form[@controlname='tblBegr']", parentFolder, 30000, null, true, "b90c0d9d-b8a4-4d0a-8a42-adada82ec3c8", "")
+            {
+                _titlebar100verwaltengruppenInfo = new RepoItemInfo(this, "TitleBar100VerwaltenGruppen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "315ddd31-6347-48b5-b554-b73e9622b10e");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("b90c0d9d-b8a4-4d0a-8a42-adada82ec3c8")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("b90c0d9d-b8a4-4d0a-8a42-adada82ec3c8")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100VerwaltenGruppen item.
+            /// </summary>
+            [RepositoryItem("315ddd31-6347-48b5-b554-b73e9622b10e")]
+            public virtual Ranorex.TitleBar TitleBar100VerwaltenGruppen
+            {
+                get
+                {
+                    return _titlebar100verwaltengruppenInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100VerwaltenGruppen item info.
+            /// </summary>
+            [RepositoryItemInfo("315ddd31-6347-48b5-b554-b73e9622b10e")]
+            public virtual RepoItemInfo TitleBar100VerwaltenGruppenInfo
+            {
+                get
+                {
+                    return _titlebar100verwaltengruppenInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TblZuAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("b854be38-0eac-4306-bd46-a18aaca80ad9")]
+        public partial class TblZuAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _titlebar100bereichskontozuordnungInfo;
+
+            /// <summary>
+            /// Creates a new TblZu  folder.
+            /// </summary>
+            public TblZuAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TblZu", "/form[@controlname='tblZu']", parentFolder, 30000, null, true, "b854be38-0eac-4306-bd46-a18aaca80ad9", "")
+            {
+                _titlebar100bereichskontozuordnungInfo = new RepoItemInfo(this, "TitleBar100Bereichskontozuordnung", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "9e08d6c6-8815-45ac-9754-596c07ba1958");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("b854be38-0eac-4306-bd46-a18aaca80ad9")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("b854be38-0eac-4306-bd46-a18aaca80ad9")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100Bereichskontozuordnung item.
+            /// </summary>
+            [RepositoryItem("9e08d6c6-8815-45ac-9754-596c07ba1958")]
+            public virtual Ranorex.TitleBar TitleBar100Bereichskontozuordnung
+            {
+                get
+                {
+                    return _titlebar100bereichskontozuordnungInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100Bereichskontozuordnung item info.
+            /// </summary>
+            [RepositoryItemInfo("9e08d6c6-8815-45ac-9754-596c07ba1958")]
+            public virtual RepoItemInfo TitleBar100BereichskontozuordnungInfo
+            {
+                get
+                {
+                    return _titlebar100bereichskontozuordnungInfo;
                 }
             }
         }

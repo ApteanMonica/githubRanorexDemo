@@ -24,60 +24,34 @@ namespace B_BER_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Start_B_BER_BEKT recording.
+    ///The Close_B_BER_BEGR recording.
     /// </summary>
-    [TestModule("4d784fe1-d508-4a9c-aa1e-6d73b2cca66e", ModuleType.Recording, 1)]
-    public partial class Start_B_BER_BEKT : ITestModule
+    [TestModule("466bd9e8-a67d-4fdb-aaa6-f636e7acf274", ModuleType.Recording, 1)]
+    public partial class Close_B_BER_BEGR : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BER_Schnelltest.B_BER_SchnelltestRepository repository.
         /// </summary>
         public static global::B_BER_Schnelltest.B_BER_SchnelltestRepository repo = global::B_BER_Schnelltest.B_BER_SchnelltestRepository.Instance;
 
-        static Start_B_BER_BEKT instance = new Start_B_BER_BEKT();
+        static Close_B_BER_BEGR instance = new Close_B_BER_BEGR();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Start_B_BER_BEKT()
+        public Close_B_BER_BEGR()
         {
-            Programm_BEKT = "B_BER Aufrufart BEKT";
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Start_B_BER_BEKT Instance
+        public static Close_B_BER_BEGR Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Programm_BEKT;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm_BEKT.
-        /// </summary>
-        [TestVariable("6895b48b-0492-4671-9136-610bbe1a600d")]
-        public string Programm_BEKT
-        {
-            get { return _Programm_BEKT; }
-            set { _Programm_BEKT = value; }
-        }
-
-        string _Startfile;
-
-        /// <summary>
-        /// Gets or sets the value of variable Startfile.
-        /// </summary>
-        [TestVariable("b6866913-a9be-4f3f-91d3-7a5bb492786c")]
-        public string Startfile
-        {
-            get { return _Startfile; }
-            set { _Startfile = value; }
-        }
 
 #endregion
 
@@ -105,14 +79,8 @@ namespace B_BER_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_BEKT in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm_BEKT, "", false);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblBekt.TitleBar100VerwaltenBereichskonten'", repo.TblBekt.TitleBar100VerwaltenBereichskontenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.TblBekt.TitleBar100VerwaltenBereichskontenInfo.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Verwalten Bereichskonten') on item 'TblBekt.TitleBar100VerwaltenBereichskonten'.", repo.TblBekt.TitleBar100VerwaltenBereichskontenInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.TblBekt.TitleBar100VerwaltenBereichskontenInfo, "Text", "Verwalten Bereichskonten");
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblBegr.TitleBar100VerwaltenGruppen'.", repo.TblBegr.TitleBar100VerwaltenGruppenInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.TblBegr.TitleBar100VerwaltenGruppen, 1000);
             
         }
 

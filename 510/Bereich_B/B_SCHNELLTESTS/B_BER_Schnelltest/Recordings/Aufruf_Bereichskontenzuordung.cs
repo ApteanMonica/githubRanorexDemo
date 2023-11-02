@@ -24,60 +24,34 @@ namespace B_BER_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Start_B_BER recording.
+    ///The Aufruf_Bereichskontenzuordung recording.
     /// </summary>
-    [TestModule("2a0e3fae-4c6e-4c6a-8fe0-9dff8acfc17e", ModuleType.Recording, 1)]
-    public partial class Start_B_BER : ITestModule
+    [TestModule("0761ff1b-18cb-4ba0-8622-6c05761663df", ModuleType.Recording, 1)]
+    public partial class Aufruf_Bereichskontenzuordung : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BER_Schnelltest.B_BER_SchnelltestRepository repository.
         /// </summary>
         public static global::B_BER_Schnelltest.B_BER_SchnelltestRepository repo = global::B_BER_Schnelltest.B_BER_SchnelltestRepository.Instance;
 
-        static Start_B_BER instance = new Start_B_BER();
+        static Aufruf_Bereichskontenzuordung instance = new Aufruf_Bereichskontenzuordung();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Start_B_BER()
+        public Aufruf_Bereichskontenzuordung()
         {
-            Programm_BER = "B_BER Aufrufart BER";
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Start_B_BER Instance
+        public static Aufruf_Bereichskontenzuordung Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Programm_BER;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm_BER.
-        /// </summary>
-        [TestVariable("aa21c9c6-8146-45ba-9cc6-8c788718bd7b")]
-        public string Programm_BER
-        {
-            get { return _Programm_BER; }
-            set { _Programm_BER = value; }
-        }
-
-        string _Startfile;
-
-        /// <summary>
-        /// Gets or sets the value of variable Startfile.
-        /// </summary>
-        [TestVariable("0c05adea-fe9d-4f6a-80e4-3134af39cb06")]
-        public string Startfile
-        {
-            get { return _Startfile; }
-            set { _Startfile = value; }
-        }
 
 #endregion
 
@@ -105,14 +79,14 @@ namespace B_BER_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_BER in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm_BER, "", false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBer.PbToolBarItemsBekt_Button_Bereichsgruppen' at Center.", repo.TblBer.PbToolBarItemsBekt_Button_BereichsgruppenInfo, new RecordItemIndex(0));
+            repo.TblBer.PbToolBarItemsBekt_Button_Bereichsgruppen.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblBer.TitleBar100VerwaltenBereiche'", repo.TblBer.TitleBar100VerwaltenBereicheInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.TblBer.TitleBar100VerwaltenBereicheInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblBegr.TitleBar100VerwaltenGruppen'", repo.TblBegr.TitleBar100VerwaltenGruppenInfo, new ActionTimeout(60000), new RecordItemIndex(1));
+            repo.TblBegr.TitleBar100VerwaltenGruppenInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Verwalten Bereiche') on item 'TblBer.TitleBar100VerwaltenBereiche'.", repo.TblBer.TitleBar100VerwaltenBereicheInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.TblBer.TitleBar100VerwaltenBereicheInfo, "Text", "Verwalten Bereiche");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Verwalten Gruppen') on item 'TblBegr.TitleBar100VerwaltenGruppen'.", repo.TblBegr.TitleBar100VerwaltenGruppenInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.TblBegr.TitleBar100VerwaltenGruppenInfo, "Text", "Verwalten Gruppen");
             
         }
 

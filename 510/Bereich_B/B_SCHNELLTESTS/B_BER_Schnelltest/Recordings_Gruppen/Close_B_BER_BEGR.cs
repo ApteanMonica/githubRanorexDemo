@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_BER_Schnelltest.Recordings
+namespace B_BER_Schnelltest.Recordings_Gruppen
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Close_B_BER_BEKT recording.
+    ///The Close_B_BER_BEGR recording.
     /// </summary>
-    [TestModule("046d8486-6e9b-41a5-a28e-bd746879d2b5", ModuleType.Recording, 1)]
-    public partial class Close_B_BER_BEKT : ITestModule
+    [TestModule("466bd9e8-a67d-4fdb-aaa6-f636e7acf274", ModuleType.Recording, 1)]
+    public partial class Close_B_BER_BEGR : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BER_Schnelltest.B_BER_SchnelltestRepository repository.
         /// </summary>
         public static global::B_BER_Schnelltest.B_BER_SchnelltestRepository repo = global::B_BER_Schnelltest.B_BER_SchnelltestRepository.Instance;
 
-        static Close_B_BER_BEKT instance = new Close_B_BER_BEKT();
+        static Close_B_BER_BEGR instance = new Close_B_BER_BEGR();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Close_B_BER_BEKT()
+        public Close_B_BER_BEGR()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Close_B_BER_BEKT Instance
+        public static Close_B_BER_BEGR Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,8 @@ namespace B_BER_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblBekt.TitleBar100VerwaltenBereichskonten'.", repo.TblBekt.TitleBar100VerwaltenBereichskontenInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TblBekt.TitleBar100VerwaltenBereichskonten, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblBegr.TitleBar100VerwaltenGruppen'.", repo.TblBegr.TitleBar100VerwaltenGruppenInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.TblBegr.TitleBar100VerwaltenGruppen, 1000);
             
         }
 

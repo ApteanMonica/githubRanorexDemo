@@ -20,6 +20,16 @@
 			id="1905357d-ae7c-4b25-8d92-179d428152e6"
 			name="Bereiche_B_BER_Aufrufart_BER">
 			</testcase>
+			<testmodule
+			id="24f0dba8-6366-4630-ba17-60e61310a4e6"
+			name="Aufruf_Bereichskontenzuordung"
+			ref="0761ff1b-18cb-4ba0-8622-6c05761663df"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="2edd3f5e-263d-4215-83aa-5a6b1c5324fb"
+			name="Bereichskontenzuordung_ueber_B_BER_Aufrufart_BEKT">
+			</testcase>
 			<testcase
 			id="2f8e5b54-213e-4afd-ae94-b70823c03882"
 			name="Bereichskonten_B_BER_Aufrufart_BEKT">
@@ -48,10 +58,78 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<testmodule
+			id="3abed1fe-6c8d-42a2-bf4d-f6965767c4a0"
+			name="Close_B_BER_BEGR"
+			ref="466bd9e8-a67d-4fdb-aaa6-f636e7acf274"
+			type="Recording">
+			</testmodule>
+			<teardown
+			id="3b1def1e-0bda-49cc-9f20-572f9ebee482"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="49aea39f-7f6f-4b63-99d7-4635e0f418e0"
+			name="Close_B_BER_BEKT"
+			ref="046d8486-6e9b-41a5-a28e-bd746879d2b5"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="4ce92c29-ae98-4745-86bc-52ab40158355"
+			name="Start_B_BER"
+			ref="2a0e3fae-4c6e-4c6a-8fe0-9dff8acfc17e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
+					variableid="0c05adea-fe9d-4f6a-80e4-3134af39cb06"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_BER"
+					datasourceid="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
+					variableid="aa21c9c6-8146-45ba-9cc6-8c788718bd7b"
+					variablename="Programm_BER">
+					</var>
+				</databinding>
+				<missingdatabinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
+					variableid="ce8e78ed-84ea-4cd5-bb93-75374111bd53"
+					variablename="StartAutProcessIDVar">
+					</var>
+				</missingdatabinding>
+			</testmodule>
 			<teardown
 			id="4de3b15c-6705-40fd-a873-97460f8fdb8d"
 			name="teardown">
 			</teardown>
+			<setup
+			id="54a6cd16-521b-40fe-ab53-3cfe680e12f9"
+			name="setup">
+			</setup>
+			<testmodule
+			id="57d0e86a-214e-4f83-a2bb-0332265d93eb"
+			name="Start_B_BER_BEKT"
+			ref="4d784fe1-d508-4a9c-aa1e-6d73b2cca66e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Programm_BEKT"
+					datasourceid="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
+					variableid="6895b48b-0492-4671-9136-610bbe1a600d"
+					variablename="Programm_BEKT">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
+					variableid="b6866913-a9be-4f3f-91d3-7a5bb492786c"
+					variablename="Startfile">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="668ab827-6013-4857-a503-f6cabd877181"
 			name="teardown">
@@ -88,6 +166,22 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testmodule
+			id="7f29bdc8-b072-41bc-9dac-e00e8d7f75cb"
+			name="Close_B_BER_BEREZ"
+			ref="82581317-92b0-414a-a407-c9674930b6a4"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="86428169-631a-45a7-ad0a-a31edfec4ac0"
+			name="Bereichsgruppen_ueber_B_BER_Aufrufart_BER">
+			</testcase>
+			<testmodule
+			id="888f9c92-ced2-451b-a5ac-d9754c99be90"
+			name="Aufruf_Bereichsgruppen"
+			ref="448de88d-4842-41e8-9e2a-894d26aee9b6"
+			type="Recording">
+			</testmodule>
 			<setup
 			id="9867c0e2-a89a-4e58-b116-b2ecfd6dee74"
 			name="setup">
@@ -117,6 +211,14 @@
 			ref="046d8486-6e9b-41a5-a28e-bd746879d2b5"
 			type="Recording">
 			</testmodule>
+			<setup
+			id="c6e781c6-f814-4385-8dac-57a3520d7a77"
+			name="setup">
+			</setup>
+			<teardown
+			id="e5b96fc5-5916-4abe-88db-b903991044b0"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="f88852a8-5fb5-4146-b858-b781cb0b2836"
 			name="Start_B_BER_BEKT"
@@ -185,6 +287,58 @@
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="86428169-631a-45a7-ad0a-a31edfec4ac0"
+					name="Bereichsgruppen_ueber_B_BER_Aufrufart_BER">
+						<setup
+						id="54a6cd16-521b-40fe-ab53-3cfe680e12f9"
+						name="setup">
+							<testmodule
+							id="4ce92c29-ae98-4745-86bc-52ab40158355"
+							name="Start_B_BER">
+							</testmodule>
+							<testmodule
+							id="888f9c92-ced2-451b-a5ac-d9754c99be90"
+							name="Aufruf_Bereichsgruppen">
+							</testmodule>
+						</setup>
+						<teardown
+						id="3b1def1e-0bda-49cc-9f20-572f9ebee482"
+						name="teardown">
+							<testmodule
+							id="3abed1fe-6c8d-42a2-bf4d-f6965767c4a0"
+							name="Close_B_BER_BEGR">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="2edd3f5e-263d-4215-83aa-5a6b1c5324fb"
+					name="Bereichskontenzuordung_ueber_B_BER_Aufrufart_BEKT">
+						<setup
+						id="c6e781c6-f814-4385-8dac-57a3520d7a77"
+						name="setup">
+							<testmodule
+							id="57d0e86a-214e-4f83-a2bb-0332265d93eb"
+							name="Start_B_BER_BEKT">
+							</testmodule>
+							<testmodule
+							id="24f0dba8-6366-4630-ba17-60e61310a4e6"
+							name="Aufruf_Bereichskontenzuordung">
+							</testmodule>
+						</setup>
+						<teardown
+						id="e5b96fc5-5916-4abe-88db-b903991044b0"
+						name="teardown">
+							<testmodule
+							id="7f29bdc8-b072-41bc-9dac-e00e8d7f75cb"
+							name="Close_B_BER_BEREZ">
+							</testmodule>
+							<testmodule
+							id="49aea39f-7f6f-4b63-99d7-4635e0f418e0"
+							name="Close_B_BER_BEKT">
+							</testmodule>
+						</teardown>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -196,10 +350,7 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="1905357d-ae7c-4b25-8d92-179d428152e6">
-			</testcontainer>
-			<testcontainer
-			id="2f8e5b54-213e-4afd-ae94-b70823c03882">
+			id="2edd3f5e-263d-4215-83aa-5a6b1c5324fb">
 			</testcontainer>
 			<testcontainer
 			id="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce">
