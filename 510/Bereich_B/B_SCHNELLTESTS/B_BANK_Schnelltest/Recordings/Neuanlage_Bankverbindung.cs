@@ -30,9 +30,9 @@ namespace B_ST_001_B_BANK.Recordings
     public partial class Neuanlage_Bankverbindung : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_ST_001_B_BANK.B_ST_001_B_BANKRepository repository.
+        /// Holds an instance of the global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository repository.
         /// </summary>
-        public static global::B_ST_001_B_BANK.B_ST_001_B_BANKRepository repo = global::B_ST_001_B_BANK.B_ST_001_B_BANKRepository.Instance;
+        public static global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository repo = global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository.Instance;
 
         static Neuanlage_Bankverbindung instance = new Neuanlage_Bankverbindung();
 
@@ -41,8 +41,8 @@ namespace B_ST_001_B_BANK.Recordings
         /// </summary>
         public Neuanlage_Bankverbindung()
         {
-            Bank = "B_ST_001";
-            Bankname = "BANK_SCHNELLTEST_001_B_BANK";
+            Bank = "B_BANK_ST";
+            Bankname = "B_BANK_ST_SCHNELLTEST";
         }
 
         /// <summary>
@@ -55,18 +55,6 @@ namespace B_ST_001_B_BANK.Recordings
 
 #region Variables
 
-        string _Bank;
-
-        /// <summary>
-        /// Gets or sets the value of variable Bank.
-        /// </summary>
-        [TestVariable("adfd5bea-f068-45ea-a5d5-0cd5dfd72b6b")]
-        public string Bank
-        {
-            get { return _Bank; }
-            set { _Bank = value; }
-        }
-
         string _Bankname;
 
         /// <summary>
@@ -77,6 +65,16 @@ namespace B_ST_001_B_BANK.Recordings
         {
             get { return _Bankname; }
             set { _Bankname = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable Bank.
+        /// </summary>
+        [TestVariable("adfd5bea-f068-45ea-a5d5-0cd5dfd72b6b")]
+        public string Bank
+        {
+            get { return repo.Bank; }
+            set { repo.Bank = value; }
         }
 
 #endregion
@@ -146,6 +144,9 @@ namespace B_ST_001_B_BANK.Recordings
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBank.PbDataAccessSave' at Center.", repo.FrmBank.PbDataAccessSaveInfo, new RecordItemIndex(14));
+            repo.FrmBank.PbDataAccessSave.Click();
             
         }
 

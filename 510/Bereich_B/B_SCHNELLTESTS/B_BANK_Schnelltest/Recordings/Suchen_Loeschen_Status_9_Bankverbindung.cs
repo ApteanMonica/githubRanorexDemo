@@ -30,9 +30,9 @@ namespace B_ST_001_B_BANK.Recordings
     public partial class Suchen_Loeschen_Status_9_Bankverbindung : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_ST_001_B_BANK.B_ST_001_B_BANKRepository repository.
+        /// Holds an instance of the global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository repository.
         /// </summary>
-        public static global::B_ST_001_B_BANK.B_ST_001_B_BANKRepository repo = global::B_ST_001_B_BANK.B_ST_001_B_BANKRepository.Instance;
+        public static global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository repo = global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository.Instance;
 
         static Suchen_Loeschen_Status_9_Bankverbindung instance = new Suchen_Loeschen_Status_9_Bankverbindung();
 
@@ -41,8 +41,8 @@ namespace B_ST_001_B_BANK.Recordings
         /// </summary>
         public Suchen_Loeschen_Status_9_Bankverbindung()
         {
-            Bank = "B_ST_001";
-            Bankname_AEN = "SCHNELLTEST_001_B_BANK";
+            Bank = "B_BANK_ST";
+            Bankname_AEN = "B_BANK_SCHNELLTEST";
         }
 
         /// <summary>
@@ -55,18 +55,6 @@ namespace B_ST_001_B_BANK.Recordings
 
 #region Variables
 
-        string _Bank;
-
-        /// <summary>
-        /// Gets or sets the value of variable Bank.
-        /// </summary>
-        [TestVariable("01b2fa43-5219-44c2-a509-ccfde0869425")]
-        public string Bank
-        {
-            get { return _Bank; }
-            set { _Bank = value; }
-        }
-
         string _Bankname_AEN;
 
         /// <summary>
@@ -77,6 +65,16 @@ namespace B_ST_001_B_BANK.Recordings
         {
             get { return _Bankname_AEN; }
             set { _Bankname_AEN = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable Bank.
+        /// </summary>
+        [TestVariable("01b2fa43-5219-44c2-a509-ccfde0869425")]
+        public string Bank
+        {
+            get { return repo.Bank; }
+            set { repo.Bank = value; }
         }
 
 #endregion
@@ -108,17 +106,17 @@ namespace B_ST_001_B_BANK.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBank.PbNavigationBack' at Center.", repo.FrmBank.PbNavigationBackInfo, new RecordItemIndex(0));
             repo.FrmBank.PbNavigationBack.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Bank) on item 'FrmBank.Suchergebis_Tabelle.Row1'.", repo.FrmBank.Suchergebis_Tabelle.Row1Info, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.FrmBank.Suchergebis_Tabelle.Row1Info, "Text", Bank);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Bank) on item 'FrmBank.Suchergebis_Tabelle.CellTmpBANKNRRow1'.", repo.FrmBank.Suchergebis_Tabelle.CellTmpBANKNRRow1Info, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.FrmBank.Suchergebis_Tabelle.CellTmpBANKNRRow1Info, "Text", Bank);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Bankname_AEN) on item 'FrmBank.Suchergebis_Tabelle.Row1'.", repo.FrmBank.Suchergebis_Tabelle.Row1Info, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmBank.Suchergebis_Tabelle.Row1Info, "Text", Bankname_AEN);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Bankname_AEN) on item 'FrmBank.Suchergebis_Tabelle.CellTmpBANKNAMERow1'.", repo.FrmBank.Suchergebis_Tabelle.CellTmpBANKNAMERow1Info, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.FrmBank.Suchergebis_Tabelle.CellTmpBANKNAMERow1Info, "Text", Bankname_AEN);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBank.Suchergebis_Tabelle.Row1Column0' at Center.", repo.FrmBank.Suchergebis_Tabelle.Row1Column0Info, new RecordItemIndex(3));
-            repo.FrmBank.Suchergebis_Tabelle.Row1Column0.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBank.Suchergebis_Tabelle.Row1Column01' at Center.", repo.FrmBank.Suchergebis_Tabelle.Row1Column01Info, new RecordItemIndex(3));
+            repo.FrmBank.Suchergebis_Tabelle.Row1Column01.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1s to exist. Associated repository item: 'FrmBank.Bank'", repo.FrmBank.BankInfo, new ActionTimeout(1000), new RecordItemIndex(4));
-            repo.FrmBank.BankInfo.WaitForExists(1000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmBank.Bank_B_BANK_ST'", repo.FrmBank.Bank_B_BANK_STInfo, new ActionTimeout(60000), new RecordItemIndex(4));
+            repo.FrmBank.Bank_B_BANK_STInfo.WaitForExists(60000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBank.PbAllgemeinLoeschen' at Center.", repo.FrmBank.PbAllgemeinLoeschenInfo, new RecordItemIndex(5));
             repo.FrmBank.PbAllgemeinLoeschen.Click();
@@ -126,17 +124,26 @@ namespace B_ST_001_B_BANK.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(120000), new RecordItemIndex(6));
             repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Möchten Sie den Status von Bank B_ST_001_B - SCHNELLTEST_001_B_BANK  auf gelöscht setzen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
-            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Möchten Sie den Status von Bank B_ST_001_B - SCHNELLTEST_001_B_BANK  auf gelöscht setzen?");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Möchten Sie den Status von Bank B_BANK_ST - B_BANK_SCHNELLTEST  auf gelöscht setzen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
+            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Möchten Sie den Status von Bank B_BANK_ST - B_BANK_SCHNELLTEST  auf gelöscht setzen?");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(8));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Der Status von Bank B_ST_001_B - SCHNELLTEST_001_B_BANK  wurde auf gelöscht gesetzt.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(9));
-            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Der Status von Bank B_ST_001_B - SCHNELLTEST_001_B_BANK  wurde auf gelöscht gesetzt.");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Der Status von Bank B_BANK_ST - B_BANK_SCHNELLTEST  wurde auf gelöscht gesetzt.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(9));
+            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Der Status von Bank B_BANK_ST - B_BANK_SCHNELLTEST  wurde auf gelöscht gesetzt.");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(10));
             repo.DlgMessageBox.Button0.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmBank.Suchergebis_Tabelle.CellTmpBANKNRRow0_Ueberschrift_Bank'", repo.FrmBank.Suchergebis_Tabelle.CellTmpBANKNRRow0_Ueberschrift_BankInfo, new ActionTimeout(60000), new RecordItemIndex(11));
+            repo.FrmBank.Suchergebis_Tabelle.CellTmpBANKNRRow0_Ueberschrift_BankInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmBank.Suchergebis_Tabelle.CellTmpBANKNRRow1_mit_B_BANK_ST'.", repo.FrmBank.Suchergebis_Tabelle.CellTmpBANKNRRow1_mit_B_BANK_STInfo, new RecordItemIndex(12));
+            Validate.Exists(repo.FrmBank.Suchergebis_Tabelle.CellTmpBANKNRRow1_mit_B_BANK_STInfo);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBank.Suchergebis_Tabelle.Row1Column01' at Center.", repo.FrmBank.Suchergebis_Tabelle.Row1Column01Info, new RecordItemIndex(13));
+            repo.FrmBank.Suchergebis_Tabelle.Row1Column01.DoubleClick();
             
         }
 

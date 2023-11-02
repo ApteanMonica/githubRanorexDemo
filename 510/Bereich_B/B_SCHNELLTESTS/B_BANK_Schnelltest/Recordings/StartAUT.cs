@@ -30,9 +30,9 @@ namespace B_ST_001_B_BANK.Recordings
     public partial class StartAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_ST_001_B_BANK.B_ST_001_B_BANKRepository repository.
+        /// Holds an instance of the global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository repository.
         /// </summary>
-        public static global::B_ST_001_B_BANK.B_ST_001_B_BANKRepository repo = global::B_ST_001_B_BANK.B_ST_001_B_BANKRepository.Instance;
+        public static global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository repo = global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository.Instance;
 
         static StartAUT instance = new StartAUT();
 
@@ -41,7 +41,7 @@ namespace B_ST_001_B_BANK.Recordings
         /// </summary>
         public StartAUT()
         {
-            Programm = "B_KTO";
+            Programm = "B_BANK";
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
         }
 
