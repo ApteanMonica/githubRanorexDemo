@@ -27,10 +27,9 @@ namespace Z_PROJ_001
     public partial class Z_PROJ_001Repository : RepoGenBaseFolder
     {
         static Z_PROJ_001Repository instance = new Z_PROJ_001Repository();
-        Z_PROJ_001RepositoryFolders.FrmTabProjekt_altAppFolder _frmtabprojekt_alt;
+        Z_PROJ_001RepositoryFolders.FrmTabProjektAppFolder _frmtabprojekt;
         Z_PROJ_001RepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
         Z_PROJ_001RepositoryFolders.TblBektAppFolder _tblbekt;
-        RepoItemInfo _titlebar100projektverwaltenInfo;
 
         /// <summary>
         /// Gets the singleton class instance representing the Z_PROJ_001Repository element repository.
@@ -47,10 +46,9 @@ namespace Z_PROJ_001
         public Z_PROJ_001Repository() 
             : base("Z_PROJ_001Repository", "/", null, 0, false, "2c52df68-016b-477e-b4b2-d0969ffa0a85", ".\\RepositoryImages\\Z_PROJ_001Repository2c52df68.rximgres")
         {
-            _frmtabprojekt_alt = new Z_PROJ_001RepositoryFolders.FrmTabProjekt_altAppFolder(this);
+            _frmtabprojekt = new Z_PROJ_001RepositoryFolders.FrmTabProjektAppFolder(this);
             _dlgmessagebox = new Z_PROJ_001RepositoryFolders.DlgMessageBoxAppFolder(this);
             _tblbekt = new Z_PROJ_001RepositoryFolders.TblBektAppFolder(this);
-            _titlebar100projektverwaltenInfo = new RepoItemInfo(this, "TitleBar100ProjektVerwalten", "/form[@controlname='frmTabProjekt']/titlebar[@accessiblerole='TitleBar']", 30000, null, "8ad59196-483c-488c-b582-18deef4d26c6");
         }
 
 #region Variables
@@ -106,36 +104,12 @@ namespace Z_PROJ_001
         }
 
         /// <summary>
-        /// The TitleBar100ProjektVerwalten item.
-        /// </summary>
-        [RepositoryItem("8ad59196-483c-488c-b582-18deef4d26c6")]
-        public virtual Ranorex.TitleBar TitleBar100ProjektVerwalten
-        {
-            get
-            {
-                 return _titlebar100projektverwaltenInfo.CreateAdapter<Ranorex.TitleBar>(true);
-            }
-        }
-
-        /// <summary>
-        /// The TitleBar100ProjektVerwalten item info.
-        /// </summary>
-        [RepositoryItemInfo("8ad59196-483c-488c-b582-18deef4d26c6")]
-        public virtual RepoItemInfo TitleBar100ProjektVerwaltenInfo
-        {
-            get
-            {
-                return _titlebar100projektverwaltenInfo;
-            }
-        }
-
-        /// <summary>
-        /// The FrmTabProjekt_alt folder.
+        /// The FrmTabProjekt folder.
         /// </summary>
         [RepositoryFolder("40f68ecd-8fe0-48fc-b1fa-b19e2f256d27")]
-        public virtual Z_PROJ_001RepositoryFolders.FrmTabProjekt_altAppFolder FrmTabProjekt_alt
+        public virtual Z_PROJ_001RepositoryFolders.FrmTabProjektAppFolder FrmTabProjekt
         {
-            get { return _frmtabprojekt_alt; }
+            get { return _frmtabprojekt; }
         }
 
         /// <summary>
@@ -164,21 +138,21 @@ namespace Z_PROJ_001
     public partial class Z_PROJ_001RepositoryFolders
     {
         /// <summary>
-        /// The FrmTabProjekt_altAppFolder folder.
+        /// The FrmTabProjektAppFolder folder.
         /// </summary>
         [RepositoryFolder("40f68ecd-8fe0-48fc-b1fa-b19e2f256d27")]
-        public partial class FrmTabProjekt_altAppFolder : RepoGenBaseFolder
+        public partial class FrmTabProjektAppFolder : RepoGenBaseFolder
         {
             Z_PROJ_001RepositoryFolders.Zeilen_SucheFolder _zeilen_suche;
             Z_PROJ_001RepositoryFolders.Register_ProjektFolder _register_projekt;
             Z_PROJ_001RepositoryFolders.Register_AllgemeinFolder _register_allgemein;
             Z_PROJ_001RepositoryFolders.Register_PhasenFolder _register_phasen;
             SelfInfoClass _selfInfo;
+            RepoItemInfo _titlebar100projektverwaltenInfo;
             RepoItemInfo _maximierenInfo;
             RepoItemInfo _wiederherstellenInfo;
             RepoItemInfo _pbnew_suchmaskeInfo;
             RepoItemInfo _text_suchmaskeInfo;
-            RepoItemInfo _text_suchmaske_mit_textfeldInfo;
             RepoItemInfo _pbperformsimplesearch_lupe_sucheInfo;
             RepoItemInfo _pbedit_suchmaskeInfo;
             RepoItemInfo _pbdataaccessreloadInfo;
@@ -195,21 +169,21 @@ namespace Z_PROJ_001
             RepoItemInfo _phasen_tab_regex_sonderzeichenInfo;
 
             /// <summary>
-            /// Creates a new FrmTabProjekt_alt  folder.
+            /// Creates a new FrmTabProjekt  folder.
             /// </summary>
-            public FrmTabProjekt_altAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FrmTabProjekt_alt", "/form[@controlname='frmTabProjekt']", parentFolder, 30000, null, true, "40f68ecd-8fe0-48fc-b1fa-b19e2f256d27", "")
+            public FrmTabProjektAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FrmTabProjekt", "/form[@controlname='frmTabProjekt']", parentFolder, 30000, null, true, "40f68ecd-8fe0-48fc-b1fa-b19e2f256d27", "")
             {
                 _zeilen_suche = new Z_PROJ_001RepositoryFolders.Zeilen_SucheFolder(this);
                 _register_projekt = new Z_PROJ_001RepositoryFolders.Register_ProjektFolder(this);
                 _register_allgemein = new Z_PROJ_001RepositoryFolders.Register_AllgemeinFolder(this);
                 _register_phasen = new Z_PROJ_001RepositoryFolders.Register_PhasenFolder(this);
                 _selfInfo = new SelfInfoClass(this);
+                _titlebar100projektverwaltenInfo = new RepoItemInfo(this, "TitleBar100ProjektVerwalten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "8ad59196-483c-488c-b582-18deef4d26c6");
                 _maximierenInfo = new RepoItemInfo(this, "Maximieren", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Maximieren']", "", 30000, null, "4093620d-3df8-4fd1-a196-7c89f40e7b18");
                 _wiederherstellenInfo = new RepoItemInfo(this, "Wiederherstellen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Wiederherstellen']", "", 30000, null, "aeb4b6e1-de6d-4219-bbd4-437536ae307e");
                 _pbnew_suchmaskeInfo = new RepoItemInfo(this, "PbNew_Suchmaske", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']", "", 30000, null, "38c897f7-5d76-481a-9492-7a5886dac6ef");
                 _text_suchmaskeInfo = new RepoItemInfo(this, "Text_Suchmaske", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/text[@controlname='dfSearchExpression']/text[@accessiblerole='Text']", "", 30000, null, "67fceff6-eeea-48ff-8702-a1d184ba4f6a");
-                _text_suchmaske_mit_textfeldInfo = new RepoItemInfo(this, "Text_Suchmaske_mit_Textfeld", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/text[@controlname='dfSearchExpression']/text[@accessiblerole='Text']", "", 30000, null, "7c902b13-8ec8-4894-a635-39205854fac7");
                 _pbperformsimplesearch_lupe_sucheInfo = new RepoItemInfo(this, "PbPerformSimpleSearch_Lupe_Suche", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/button[@controlname='pbPerformSimpleSearch']", "", 30000, null, "1863a4b2-08ed-4d5c-8063-1ea879a5d300");
                 _pbedit_suchmaskeInfo = new RepoItemInfo(this, "PbEdit_Suchmaske", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbEdit']", "", 30000, null, "2081cc30-21a8-4a62-8cc5-e9af5e5c77b6");
                 _pbdataaccessreloadInfo = new RepoItemInfo(this, "PbDataAccessReload", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Reload']", "", 30000, null, "265037d5-a20a-47b1-92a7-123b99b7ba37");
@@ -307,6 +281,30 @@ namespace Z_PROJ_001
             }
 
             /// <summary>
+            /// The TitleBar100ProjektVerwalten item.
+            /// </summary>
+            [RepositoryItem("8ad59196-483c-488c-b582-18deef4d26c6")]
+            public virtual Ranorex.TitleBar TitleBar100ProjektVerwalten
+            {
+                get
+                {
+                    return _titlebar100projektverwaltenInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100ProjektVerwalten item info.
+            /// </summary>
+            [RepositoryItemInfo("8ad59196-483c-488c-b582-18deef4d26c6")]
+            public virtual RepoItemInfo TitleBar100ProjektVerwaltenInfo
+            {
+                get
+                {
+                    return _titlebar100projektverwaltenInfo;
+                }
+            }
+
+            /// <summary>
             /// The Maximieren item.
             /// </summary>
             [RepositoryItem("4093620d-3df8-4fd1-a196-7c89f40e7b18")]
@@ -399,30 +397,6 @@ namespace Z_PROJ_001
                 get
                 {
                     return _text_suchmaskeInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Text_Suchmaske_mit_Textfeld item.
-            /// </summary>
-            [RepositoryItem("7c902b13-8ec8-4894-a635-39205854fac7")]
-            public virtual Ranorex.Text Text_Suchmaske_mit_Textfeld
-            {
-                get
-                {
-                    return _text_suchmaske_mit_textfeldInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Text_Suchmaske_mit_Textfeld item info.
-            /// </summary>
-            [RepositoryItemInfo("7c902b13-8ec8-4894-a635-39205854fac7")]
-            public virtual RepoItemInfo Text_Suchmaske_mit_TextfeldInfo
-            {
-                get
-                {
-                    return _text_suchmaske_mit_textfeldInfo;
                 }
             }
 
@@ -926,7 +900,6 @@ namespace Z_PROJ_001
             RepoItemInfo _zeitraumInfo;
             RepoItemInfo _textbisInfo;
             RepoItemInfo _dfprojstatusextInfo;
-            RepoItemInfo _dfprojstatusext_mit_textfeldInfo;
             RepoItemInfo _colpersnrrow1Info;
             RepoItemInfo _colpersnrrow2Info;
 
@@ -939,7 +912,6 @@ namespace Z_PROJ_001
                 _zeitraumInfo = new RepoItemInfo(this, "Zeitraum", "text[@controlname='dfVon']/text[@accessiblename='Zeitraum']", "", 30000, null, "54a3636f-b1ea-4885-92af-fc00695141ba");
                 _textbisInfo = new RepoItemInfo(this, "TextBis", "text[@controlname='dfBis']/text[@accessiblename='bis']", "", 30000, null, "5bf1fd69-a873-4185-b743-e8d42ccde53c");
                 _dfprojstatusextInfo = new RepoItemInfo(this, "DfProjStatusExt", "text[@controlname='dfProj_status_ext']/text[@accessiblerole='Text']", "", 30000, null, "f32c15b9-c38d-4a2b-ab3a-88abaedb7958");
-                _dfprojstatusext_mit_textfeldInfo = new RepoItemInfo(this, "DfProjStatusExt_mit_Textfeld", "text[@controlname='dfProj_status_ext']/text[@accessiblerole='Text']", "", 30000, null, "5386af67-28cd-49cd-b400-b6334d875409");
                 _colpersnrrow1Info = new RepoItemInfo(this, "ColPersNrRow1", "container[@controlname='tblPrpe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colPers_nr Row 1']", "", 30000, null, "749d1f0e-02db-48be-aa35-cb06fb9c0def");
                 _colpersnrrow2Info = new RepoItemInfo(this, "ColPersNrRow2", "container[@controlname='tblPrpe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colPers_nr Row 2']", "", 30000, null, "38118988-909d-4a6a-840d-85197bc82b62");
             }
@@ -1037,30 +1009,6 @@ namespace Z_PROJ_001
                 get
                 {
                     return _dfprojstatusextInfo;
-                }
-            }
-
-            /// <summary>
-            /// The DfProjStatusExt_mit_Textfeld item.
-            /// </summary>
-            [RepositoryItem("5386af67-28cd-49cd-b400-b6334d875409")]
-            public virtual Ranorex.Text DfProjStatusExt_mit_Textfeld
-            {
-                get
-                {
-                    return _dfprojstatusext_mit_textfeldInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The DfProjStatusExt_mit_Textfeld item info.
-            /// </summary>
-            [RepositoryItemInfo("5386af67-28cd-49cd-b400-b6334d875409")]
-            public virtual RepoItemInfo DfProjStatusExt_mit_TextfeldInfo
-            {
-                get
-                {
-                    return _dfprojstatusext_mit_textfeldInfo;
                 }
             }
 

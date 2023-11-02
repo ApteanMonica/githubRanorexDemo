@@ -595,8 +595,8 @@ namespace Z_PROJ_002
         public partial class Register_ProjektFolder : RepoGenBaseFolder
         {
             RepoItemInfo _dfprojstatusextInfo;
-            RepoItemInfo _zeitraumInfo;
-            RepoItemInfo _textbisInfo;
+            RepoItemInfo _zeitraum_vonInfo;
+            RepoItemInfo _textbis_zeitraum_bisInfo;
             RepoItemInfo _colpersnrrow1Info;
             RepoItemInfo _colpersnrrow2Info;
 
@@ -607,8 +607,8 @@ namespace Z_PROJ_002
                     base("Register_Projekt", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpProjekt']", parentFolder, 30000, null, false, "8b1d4d00-08a3-4c62-b0df-8004ce9d303a", "")
             {
                 _dfprojstatusextInfo = new RepoItemInfo(this, "DfProjStatusExt", "text[@controlname='dfProj_status_ext']/text[@accessiblerole='Text']", "", 30000, null, "0ded2bea-e710-4572-a30a-17349f8daafd");
-                _zeitraumInfo = new RepoItemInfo(this, "Zeitraum", "text[@controlname='dfVon']/text[@accessiblename='Zeitraum']", "", 30000, null, "8adb6e7c-e7a9-486a-9e39-3bb0e646257b");
-                _textbisInfo = new RepoItemInfo(this, "TextBis", "text[@controlname='dfBis']/text[@accessiblename='bis']", "", 30000, null, "065048ce-3519-4684-9e5b-6689d4d7153f");
+                _zeitraum_vonInfo = new RepoItemInfo(this, "Zeitraum_von", "text[@controlname='dfVon']/text[@accessiblename='Zeitraum']", "", 30000, null, "8adb6e7c-e7a9-486a-9e39-3bb0e646257b");
+                _textbis_zeitraum_bisInfo = new RepoItemInfo(this, "TextBis_Zeitraum_bis", "text[@controlname='dfBis']/text[@accessiblename='bis']", "", 30000, null, "065048ce-3519-4684-9e5b-6689d4d7153f");
                 _colpersnrrow1Info = new RepoItemInfo(this, "ColPersNrRow1", "container[@controlname='tblPrpe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colPers_nr Row 1']", "", 30000, null, "efe40814-e772-44c7-8e98-f7a07759f011");
                 _colpersnrrow2Info = new RepoItemInfo(this, "ColPersNrRow2", "container[@controlname='tblPrpe']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colPers_nr Row 2']", "", 30000, null, "a27ce238-2d18-430e-abc6-a87460f753f0");
             }
@@ -662,50 +662,50 @@ namespace Z_PROJ_002
             }
 
             /// <summary>
-            /// The Zeitraum item.
+            /// The Zeitraum_von item.
             /// </summary>
             [RepositoryItem("8adb6e7c-e7a9-486a-9e39-3bb0e646257b")]
-            public virtual Ranorex.Text Zeitraum
+            public virtual Ranorex.Text Zeitraum_von
             {
                 get
                 {
-                    return _zeitraumInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _zeitraum_vonInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The Zeitraum item info.
+            /// The Zeitraum_von item info.
             /// </summary>
             [RepositoryItemInfo("8adb6e7c-e7a9-486a-9e39-3bb0e646257b")]
-            public virtual RepoItemInfo ZeitraumInfo
+            public virtual RepoItemInfo Zeitraum_vonInfo
             {
                 get
                 {
-                    return _zeitraumInfo;
+                    return _zeitraum_vonInfo;
                 }
             }
 
             /// <summary>
-            /// The TextBis item.
+            /// The TextBis_Zeitraum_bis item.
             /// </summary>
             [RepositoryItem("065048ce-3519-4684-9e5b-6689d4d7153f")]
-            public virtual Ranorex.Text TextBis
+            public virtual Ranorex.Text TextBis_Zeitraum_bis
             {
                 get
                 {
-                    return _textbisInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _textbis_zeitraum_bisInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The TextBis item info.
+            /// The TextBis_Zeitraum_bis item info.
             /// </summary>
             [RepositoryItemInfo("065048ce-3519-4684-9e5b-6689d4d7153f")]
-            public virtual RepoItemInfo TextBisInfo
+            public virtual RepoItemInfo TextBis_Zeitraum_bisInfo
             {
                 get
                 {
-                    return _textbisInfo;
+                    return _textbis_zeitraum_bisInfo;
                 }
             }
 

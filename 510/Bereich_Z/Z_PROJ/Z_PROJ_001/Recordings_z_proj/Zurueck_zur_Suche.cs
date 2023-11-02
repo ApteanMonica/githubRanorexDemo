@@ -79,8 +79,8 @@ namespace Z_PROJ_001.Recordings_z_proj
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt_alt.PbNavigationBack' at Center.", repo.FrmTabProjekt_alt.PbNavigationBackInfo, new RecordItemIndex(0));
-            repo.FrmTabProjekt_alt.PbNavigationBack.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.PbNavigationBack' at Center.", repo.FrmTabProjekt.PbNavigationBackInfo, new RecordItemIndex(0));
+            repo.FrmTabProjekt.PbNavigationBack.Click();
             
         }
 

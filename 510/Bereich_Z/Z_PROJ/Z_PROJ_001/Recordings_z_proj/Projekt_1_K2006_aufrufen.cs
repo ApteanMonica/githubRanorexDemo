@@ -90,14 +90,14 @@ namespace Z_PROJ_001.Recordings_z_proj
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TitleBar100ProjektVerwalten'.", repo.TitleBar100ProjektVerwaltenInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.TitleBar100ProjektVerwaltenInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmTabProjekt.TitleBar100ProjektVerwalten'.", repo.FrmTabProjekt.TitleBar100ProjektVerwaltenInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.FrmTabProjekt.TitleBar100ProjektVerwaltenInfo);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PROJ_NR_1_K' with focus on 'FrmTabProjekt_alt.Text_Suchmaske'.", repo.FrmTabProjekt_alt.Text_SuchmaskeInfo, new RecordItemIndex(1));
-            repo.FrmTabProjekt_alt.Text_Suchmaske.PressKeys(PROJ_NR_1_K);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PROJ_NR_1_K' with focus on 'FrmTabProjekt.Text_Suchmaske'.", repo.FrmTabProjekt.Text_SuchmaskeInfo, new RecordItemIndex(1));
+            repo.FrmTabProjekt.Text_Suchmaske.PressKeys(PROJ_NR_1_K);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt_alt.PbEdit_Suchmaske' at Center.", repo.FrmTabProjekt_alt.PbEdit_SuchmaskeInfo, new RecordItemIndex(2));
-            repo.FrmTabProjekt_alt.PbEdit_Suchmaske.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.PbEdit_Suchmaske' at Center.", repo.FrmTabProjekt.PbEdit_SuchmaskeInfo, new RecordItemIndex(2));
+            repo.FrmTabProjekt.PbEdit_Suchmaske.Click();
             
         }
 

@@ -103,6 +103,58 @@ mode="Global">
 				yourValue
 			</matchvalue>
 		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="912acc71-f2a7-44c2-89cc-9c4b21843586"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8adb6e7c-e7a9-486a-9e39-3bb0e646257b"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmTabProjekt']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpProjekt']/text[@controlname='dfVon']/text[@accessiblename='Zeitraum']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="DoubleClick"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="912acc71-f2a7-44c2-89cc-9c4b21843586"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8adb6e7c-e7a9-486a-9e39-3bb0e646257b"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmTabProjekt']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpProjekt']/text[@controlname='dfVon']/text[@accessiblename='Zeitraum']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 		<keysequenceitem
 		KeySequence=""
 		duration="20ms"
@@ -142,16 +194,27 @@ mode="Global">
 			</comment>
 			<bindings>
 			</bindings>
+		</keyitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="90b65d7e-a4d8-4a62-aee9-1c34bf15cf48"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
 			<info
-			id="8adb6e7c-e7a9-486a-9e39-3bb0e646257b"
+			id="43ed0e65-03af-48b1-a711-dfb7dfdaf9b3"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='frmTabProjekt']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpProjekt']/?/?/text[@accessiblename='Zeitraum']
+					/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</keyitem>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"

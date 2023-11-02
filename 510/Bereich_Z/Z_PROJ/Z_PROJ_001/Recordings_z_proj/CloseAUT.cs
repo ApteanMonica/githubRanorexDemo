@@ -79,8 +79,8 @@ namespace Z_PROJ_001.Recordings_z_proj
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TitleBar100ProjektVerwalten'.", repo.TitleBar100ProjektVerwaltenInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.TitleBar100ProjektVerwalten, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmTabProjekt.TitleBar100ProjektVerwalten'.", repo.FrmTabProjekt.TitleBar100ProjektVerwaltenInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.FrmTabProjekt.TitleBar100ProjektVerwalten, 1000);
             
         }
 
