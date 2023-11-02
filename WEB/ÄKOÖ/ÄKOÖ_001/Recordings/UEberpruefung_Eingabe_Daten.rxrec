@@ -26,12 +26,12 @@ mode="Global">
 		<var
 		id="7241be5c-324a-4476-b396-10a9a127205a"
 		name="berufsunfaehig_ab">
-			02.01.2023
+			Tagesdatum
 		</var>
 		<var
 		id="192f9cf1-95b8-4982-bbb1-b7a2bd043221"
 		name="berufsunfaehig_bis">
-			10.01.2023
+			Tagesdatum_plus_7
 		</var>
 		<var
 		id="1d8ba898-de50-4486-8dc5-0094a937de6f"
@@ -46,7 +46,15 @@ mode="Global">
 		<var
 		id="37e2007d-e564-4473-bfb5-4dba4d1398fa"
 		name="Diagnose">
-			Testdiganose zum Krankengeld
+			Testdiagnose zum Krankengeld
+		</var>
+		<var
+		id="b8bbb522-bf68-47b8-a0b8-8b7ec1181d43"
+		name="Tagesdatum">
+		</var>
+		<var
+		id="52dc3457-2ab2-4259-afb7-334fa8620857"
+		name="Tagesdatum_plus_7_Tage">
 		</var>
 	</variables>
 	<recorditems>
@@ -60,7 +68,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="berufsunfaehig_ab">
+				variable="Tagesdatum">
 				</binding>
 			</bindings>
 			<info
@@ -239,7 +247,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="berufsunfaehig_bis">
+				variable="Tagesdatum_plus_7_Tage">
 				</binding>
 			</bindings>
 			<info
@@ -410,7 +418,270 @@ mode="Global">
 		</validationitem>
 		<validationitem
 		action="AttributeEqual"
+		duration="100ms"
 		enabled="True"
+		optional="False"
+		searchpropertyid="d1c01287-53a8-45cc-b1db-5f5b19629bba">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="SVNR">
+				</binding>
+			</bindings>
+			<info
+			id="21377f03-3db8-4b45-aa11-12647ebd0e18"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="inputtag"
+				rect="943,617,610,34"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						svnrfield_36
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						form-control
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						1679050956
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						10
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="pattern"
+					type="System.String">
+						[0-9.]+
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="tabindex"
+					type="System.String">
+						3
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						1679050956
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-bind"
+					readonly="False"
+					type="System.String">
+						textInput: model.value,
+            enable: enabled,
+            attr: { id: id }, 
+            event: { 
+                keypress: $component.keyPress.bind($component)
+            }
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[10]//tag[@tagname='svnrfield']/div/div/div/input[@type='text']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="4d1105e9-edb4-4de9-93e9-2f292590d6a5">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABZAfQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKhv
+LpLO2aZ+QOgHc1mHWZYlhkmiwkucqEYFR6gnhvwoA2aKRWDqGU5BGQaWgAooooAKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCnqto15ZGND
+84O5c9zWXNay3VrbWqwXCyw8F5AAuD157+1W/wCwof8AnrJ+n+FH9hQ/89ZP0/wqby7E80uxpQxi
+GFIxyEUKPwp9ZX9hQ/8APWT9P8KP7Ch/56yfp/hReXYV5djVorK/sKH/AJ6yfp/hR/YUP/PWT9P8
+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
+			</helperscreenshot>
+			<matchname>
+				Value
+			</matchname>
+			<matchvalue>
+				1679050956
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="False"
 		optional="False"
 		searchpropertyid="6876850d-3a5e-443f-90f9-5746a6ae0144">
 			<comment>
@@ -680,9 +951,10 @@ mode="Global">
 		</validationitem>
 		<validationitem
 		action="AttributeEqual"
+		duration="100ms"
 		enabled="True"
 		optional="False"
-		searchpropertyid="ab32525f-aad8-4b81-8b34-6a3669cf2c2a">
+		searchpropertyid="b6afc54d-50d7-47d4-991f-e9074b17869c">
 			<comment>
 			</comment>
 			<bindings>
@@ -693,7 +965,7 @@ mode="Global">
 			</bindings>
 			<info
 			id="fe6026ca-bc4e-4268-8e44-f46919e9c0f9"
-			sourcename="RepositoryEditor">
+			sourcename="ElementTree">
 				<element
 				capabilities="webelement, textareatag"
 				dontcache="True"
@@ -702,7 +974,7 @@ mode="Global">
 				hasfocus="False"
 				index="0"
 				prefcap="textareatag"
-				rect="1103,569,770,54"
+				rect="943,555,610,54"
 				role="unknown"
 				snapElem=""
 				valid="True"
@@ -742,6 +1014,11 @@ mode="Global">
 						textarea
 					</attribute>
 					<attribute
+					name="tagvalue"
+					type="System.String">
+						Testdiagnose zum Krankengeld
+					</attribute>
+					<attribute
 					name="autofocus"
 					type="System.String">
 						False
@@ -771,6 +1048,12 @@ mode="Global">
 					name="data-bind"
 					readonly="False"
 					type="System.String">
+						textInput: model.value,
+                enable: enabled,
+                attr: {
+                    id: id,
+                    rows: rows
+                }
 					</dynamicattribute>
 				</element>
 				<path>
@@ -779,10 +1062,94 @@ mode="Global">
 				<robustPath>
 				</robustPath>
 			</info>
+			<helperscreenshot
+			guid="578e0a9b-69b0-4177-96ba-d8776c6c89c5">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABtAfQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKhk
+uoYnVGYl2GQqKWOPXAoa7gVUO4neMqApLEfQDNAE1FMhmjniEkTBkPQin0AFFUL/AFH7NNHbxJvl
+f2J2j1wOTTbPVPNvHtZQA4PysFK7vwPIoA0aKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigDKuLJ8J5aXHmxxBFlikVd3scnNK1nci4hnl3TkR
+bJPLk2NnrnqM0n9hQ/8APWT9P8KP7Ch/56yfp/hU3l2IvLsXrKJYYSqQmEFidrNuP16mp6yv7Ch/
+56yfp/hR/YUP/PWT9P8ACi8uwXl2E1Kzk/tCK9RZHVcb1j+9x6U21s3m1Y3vlyRRjkCUYYnHp6U/
++wof+esn6f4Uf2FD/wA9ZP0/woTl2C8uxq0Vlf2FD/z1k/T/AAo/sKH/AJ6yfp/hReXYLy7GrRWV
+/YUP/PWT9P8ACj+wof8AnrJ+n+FF5dgvLsatFZX9hQ/89ZP0/wAKP7Ch/wCesn6f4UXl2C8uxq0V
+lf2FD/z1k/T/AAo/sKH/AJ6yfp/hReXYLy7GrRWV/YUP/PWT9P8ACj+wof8AnrJ+n+FF5dgvLsat
+FZX9hQ/89ZP0/wAKP7Ch/wCesn6f4UXl2C8uxq0Vlf2FD/z1k/T/AAo/sKH/AJ6yfp/hReXYLy7G
+rRWV/YUP/PWT9P8ACj+wof8AnrJ+n+FF5dgvLsatFZX9hQ/89ZP0/wAKP7Ch/wCesn6f4UXl2C8u
+xq0Vlf2FD/z1k/T/AAo/sKH/AJ6yfp/hReXYLy7GrRWV/YUP/PWT9P8ACj+wof8AnrJ+n+FF5dgv
+LsatFZX9hQ/89ZP0/wAKP7Ch/wCesn6f4UXl2C8uxq0Vlf2FD/z1k/T/AAo/sKH/AJ6yfp/hReXY
+Ly7GrRWV/YUP/PWT9P8ACj+wof8AnrJ+n+FF5dgvLsatFZX9hQ/89ZP0/wAKP7Ch/wCesn6f4UXl
+2C8uxq0Vlf2FD/z1k/T/AAo/sKH/AJ6yfp/hReXYLy7GrRWV/YUP/PWT9P8ACj+wof8AnrJ+n+FF
+5dgvLsatFZX9hQ/89ZP0/wAKP7Ch/wCesn6f4UXl2C8uxq0Vlf2FD/z1k/T/AAo/sKH/AJ6yfp/h
+ReXYLy7GrRWV/YUP/PWT9P8ACj+wof8AnrJ+n+FF5dgvLsatFZX9hQ/89ZP0/wAKP7Ch/wCesn6f
+4UXl2C8uxq0Vlf2FD/z1k/T/AAo/sKH/AJ6yfp/hReXYLy7GrRWV/YUP/PWT9P8ACj+wof8AnrJ+
+n+FF5dgvLsatFZX9hQ/89ZP0/wAKP7Ch/wCesn6f4UXl2C8uxq0Vlf2FD/z1k/T/AAo/sKH/AJ6y
+fp/hReXYLy7GrRWV/YUP/PWT9P8ACj+wof8AnrJ+n+FF5dgvLsatFZX9hQ/89ZP0/wAKP7Ch/wCe
+sn6f4UXl2C8uxq0Vlf2FD/z1k/T/AAo/sKH/AJ6yfp/hReXYLy7GrRWV/YUP/PWT9P8ACii8uwXl
+2NRWDKGUgg8gjvS1QVmligUb2fygxJlKD6kjkmlhkadbdHc4ZGJKtgsQcdRVFl6iqCFmESCV9pnd
+chzkgA8ZpSzL5kXmOE84LuLEkAgHGevX+dAF6iqbBw00MUhwNuN7nv1GevT+dRmVxGI1V0YyBXDy
+5xkZ4bk+lAGhRUFssiF1kIxkFV3lyPxIzUdwnmziONpFc4LssjAKPpnGTQBboqo0hUXmXI2DjJ6f
+LTVUyyOGkkAESEBXI5554oAu0jMqjLEAZxyapwlgLSQu7NKPnyxwflz06DpUmoZ+zjbgnzExn/eF
+AFguocIWG48gZ5NLVFWK29zvJFyEJY59jgj2p7rtSJAZXeTnmUrnA7nt+FAFumu6xruc4GQPzqir
+yNGELsMXGzKvnjHTPeifKJcICzKrRlQzZPJHc0AaFFUWlcW8spYrMCFZScCMZ/w70kgmihmO/aNm
+QBKXOfXJFAF+iqjFoJzsZ2zEzEMxOSMfl17U1RtktWErs0mScuSG+XPTpQBdpqOsi7kORyKpW/ny
+CKbcoyfmJlJz7bcYFEGXEMRZlRjITtJBJDdMigC6jq+dpzgkH606q9iAI5ApyBI2DnPf1qxQAUUU
+UAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQ
+AUUUUAFFFFABRRRQAUUUUAFFFFADGhiYKGiQhfugqOPpTJoPMRUURBQc7Xj3D8uKmooAjhgWJFXA
+JBLZx3PXHpTiiEMCikN97jr9adRQAzyYhH5flJs/u7Rj8qBFGsZjEaBD1UKMflT6KAGxxxxDEaKg
+POFGKa9vBI254Y2b1ZQTUlFADGhidgzRIxAwCVBwKcEUHIUAkY6dqWigBAiAKAq4X7vHT6UMqsMM
+ARnPIpaKAGtGjnLIrHBGSM8Gh40kXa6Ky+hGRTqKAGiKNQAEUAHIwO9BRDnKKc4zx1x0p1FACFEL
+biq7sYzjnHpTFt4UBCQxqG6gKBmpKKAEKjO7A3AYBxVeG12SiRjGSP7ke3J9TzzVmigBnkxeZ5nl
+Jv8A720Z/OhoYmTY0aFc52lRin0UAIqqgwqhR7DFLRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQ
+AUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAB
+RRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFF
+FFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUU
+UAFFFFABRRRQAUUUUAZX2XVf+fiD/vkf/E0fZdV/5+IP++R/8TWrRU8vmRyeZlfZdV/5+IP++R/8
+TR9l1X/n4g/75H/xNatFHL5hyeZlfZdV/wCfiD/vkf8AxNH2XVf+fiD/AL5H/wATWrRRy+YcnmZX
+2XVf+fiD/vkf/E0fZdV/5+IP++R/8TWrRRy+YcnmZX2XVf8An4g/75H/AMTR9l1X/n4g/wC+R/8A
+E1q0UcvmHJ5mV9l1X/n4g/75H/xNH2XVf+fiD/vkf/E1q0UcvmHJ5mV9l1X/AJ+IP++R/wDE0fZd
+V/5+IP8Avkf/ABNatFHL5hyeZlfZdV/5+IP++R/8TR9l1X/n4g/75H/xNatFHL5hyeZlfZdV/wCf
+iD/vkf8AxNH2XVf+fiD/AL5H/wATWrRRy+YcnmZX2XVf+fiD/vkf/E0fZdV/5+IP++R/8TWrRRy+
+YcnmZX2XVf8An4g/75H/AMTR9l1X/n4g/wC+R/8AE1q0EgdSBRy+YcnmZX2XVf8An4g/75H/AMTR
+9l1X/n4g/wC+R/8AE1qb1/vD86N6/wB4fnRy+YcnmZf2XVf+fiD/AL5H/wATR9l1X/n4g/75H/xN
+am9f7w/Ojev94fnRy+YcnmZf2XVf+fiD/vkf/E0fZdV/5+IP++R/8TWpvX+8Pzo3r/eH50cvmHJ5
+mX9l1X/n4g/75H/xNH2XVf8An4g/75H/AMTWpvX+8Pzo3r/eH50cvmHJ5mX9l1X/AJ+IP++R/wDE
+0fZdV/5+IP8Avkf/ABNam9f7w/Ojev8AeH50cvmHJ5mX9l1X/n4g/wC+R/8AE0fZdV/5+IP++R/8
+TWpvX+8Pzo3r/eH50cvmHJ5mX9l1X/n4g/75H/xNH2XVf+fiD/vkf/E1qb1/vD86N6/3h+dHL5hy
+eZl/ZdV/5+IP++R/8TR9l1X/AJ+IP++R/wDE1qb1/vD86N6/3h+dHL5hyeZl/ZdV/wCfiD/vkf8A
+xNH2XVf+fiD/AL5H/wATWpvX+8Pzo3r/AHh+dHL5hyeZl/ZdV/5+IP8Avkf/ABNH2XVf+fiD/vkf
+/E1qb1/vD86N6/3h+dHL5hyeZl/ZdV/5+IP++R/8TR9l1X/n4g/75H/xNam9f7w/Ojev94fnRy+Y
+cnmZf2XVf+fiD/vkf/E0fZdV/wCfiD/vkf8AxNam9f7w/Ojev94fnRy+YcnmZf2XVf8An4g/75H/
+AMTR9l1X/n4g/wC+R/8AE1qb1/vD86N6/wB4fnRy+YcnmZf2XVf+fiD/AL5H/wATR9l1X/n4g/75
+H/xNam9f7w/Ojev94fnRy+YcnmZf2XVf+fiD/vkf/E0fZdV/5+IP++R/8TWpvX+8Pzo3r/eH50cv
+mHJ5mX9l1X/n4g/75H/xNH2XVf8An4g/75H/AMTWpvX+8Pzo3r/eH50cvmHJ5mX9l1X/AJ+IP++R
+/wDE0fZdV/5+IP8Avkf/ABNam9f7w/Ojev8AeH50cvmHJ5mX9l1X/n4g/wC+R/8AE0fZdV/5+IP+
++R/8TWpvX+8Pzo3r/eH50cvmHJ5mX9l1X/n4g/75H/xNH2XVf+fiD/vkf/E1qb1/vD86N6/3h+dH
+L5hyeZl/ZdV/5+IP++R/8TR9l1X/AJ+IP++R/wDE1qb1/vD86N6/3h+dHL5hyeZl/ZdV/wCfiD/v
+kf8AxNFam9f7w/Oijl8w5PMq2moRXEeXKRMXKqpcZbHpU0lzbxNtknjRvRnANYWANFcgDJuev41c
+upZbhr+IybI4I+FUD5sjPOf6VXQvqXZrsRXkMBXiUMd27G3AotL6C7DeU3KkgqSM4Hf6VnQHNzpO
+f+eTfyqXTIRcadcwsSA8rgkUAaMdxBM22KaN2xnCsCaI7iGRykc0bsOoVgSKx5jPamW0eYSqLUlG
+2BSo6YGPpTyAqaQVG05HI+gzQBqG6twCTPHxn+MdutMs7yG8i3xN9VJG4fUVS0mKNkupDGhkEzgM
+VGR+NTaF/wAgqL6t/M0Ay/Va+vYrGHfLkk8Ko6mrNYviFCZrRlbB3ED26c0AWoNWikuVgfYrOAVK
+PuX6Z9a0KwdVhP8Aa9oS+S+0E49DW9QAUUUUAFFFFABRRRQAUUUUAFMf7w+hp9Mf7w+hoASiiigA
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKACiiigAooooAKKKKAP/2Q==
+			</helperscreenshot>
 			<matchname>
-				InnerText
+				TagValue
 			</matchname>
 			<matchvalue>
+				Testdiagnose zum Krankengeld
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -998,7 +1365,7 @@ mode="Global">
 				Checked
 			</matchname>
 			<matchvalue>
-				False
+				True
 			</matchvalue>
 		</validationitem>
 	</recorditems>
