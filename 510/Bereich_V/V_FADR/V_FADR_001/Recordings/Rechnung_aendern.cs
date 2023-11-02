@@ -98,22 +98,31 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VFADR.RechnungAendern' at Center.", repo.VFADR.RechnungAendernInfo, new RecordItemIndex(1));
             repo.VFADR.RechnungAendern.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgRechAenderung.Zahlungsbedingung' at CenterRight.", repo.DlgRechAenderung.ZahlungsbedingungInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgRechAenderung'", repo.DlgRechAenderung.SelfInfo, new ActionTimeout(60000), new RecordItemIndex(2));
+            repo.DlgRechAenderung.SelfInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgRechAenderung.Zahlungsbedingung' at CenterRight.", repo.DlgRechAenderung.ZahlungsbedingungInfo, new RecordItemIndex(3));
             repo.DlgRechAenderung.Zahlungsbedingung.Click(Location.CenterRight);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VFADR1.DropDown' at Center.", repo.VFADR1.DropDownInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VFADR1.DropDown' at Center.", repo.VFADR1.DropDownInfo, new RecordItemIndex(4));
             repo.VFADR1.DropDown.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Zahlungsbedingung'.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Zahlungsbedingung'.", new RecordItemIndex(5));
             Keyboard.Press(Zahlungsbedingung);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Zahlungsbedingung) on item 'DlgRechAenderung.Zahlungsbedingung'.", repo.DlgRechAenderung.ZahlungsbedingungInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Zahlungsbedingung) on item 'DlgRechAenderung.Zahlungsbedingung'.", repo.DlgRechAenderung.ZahlungsbedingungInfo, new RecordItemIndex(7));
             Validate.AttributeRegex(repo.DlgRechAenderung.ZahlungsbedingungInfo, "Text", new Regex(Zahlungsbedingung));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgRechAenderung.PbSpeichern' at Center.", repo.DlgRechAenderung.PbSpeichernInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgRechAenderung.PbSpeichern' at Center.", repo.DlgRechAenderung.PbSpeichernInfo, new RecordItemIndex(8));
             repo.DlgRechAenderung.PbSpeichern.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgRechAenderung.Schliessen' at Center.", repo.DlgRechAenderung.SchliessenInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(9));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgRechAenderung.Schliessen' at Center.", repo.DlgRechAenderung.SchliessenInfo, new RecordItemIndex(10));
             repo.DlgRechAenderung.Schliessen.Click();
             
         }

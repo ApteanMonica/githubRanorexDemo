@@ -45,36 +45,6 @@ name="V_FADR_001Repository">
 				/form[@controlname='tblFadr']/container[@controlname='RibbonBar']/?/?/button[@controlname='pbCommon_Load']
 			</item>
 			<item
-			addcaps="text,control,nativewindow"
-			capname="cell"
-			id="66aa28fa-e465-4f91-aa65-97b931a960d6"
-			name="Rechnungsart"
-			refimgid="8915730a-1b5a-4326-ad78-d4bc0baf0e63"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colRech_art Row 1']
-			</item>
-			<item
-			addcaps="cell,accessible"
-			capname="cell"
-			id="f3d7eeca-cb56-4d62-a2bd-1d8467a0d8bf"
-			name="bis_LS_DatRow2"
-			refimgid="b8c1b522-c24c-4eac-aedd-861a216acd9a"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLsk_datum Row 2']
-			</item>
-			<item
-			addcaps="cell,accessible"
-			capname="cell"
-			id="040c96c5-3f28-4435-b912-42bd799d8750"
-			name="ColLskDatumRow1"
-			refimgid="127c4dcd-8244-4e20-a5dd-2192f4a217ec"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLsk_datum Row 1']
-			</item>
-			<item
 			addcaps="button,control,nativewindow"
 			capname="button"
 			id="17c39c50-33f6-4bfe-9f9e-9e53d12aa3f9"
@@ -171,6 +141,47 @@ name="V_FADR_001Repository">
 			searchtimeout="30000ms">
 				/form[@controlname='tblFadr']/?/?/checkbox[@controlname='cbZahlschein']
 			</item>
+			<folder
+			capname="table"
+			id="74563929-125c-497e-87f4-cc5cefa7a726"
+			isrooted="True"
+			name="Rech_art_FlexGrid"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,control,nativewindow"
+				capname="cell"
+				id="66aa28fa-e465-4f91-aa65-97b931a960d6"
+				name="Rechnungsart"
+				refimgid="8915730a-1b5a-4326-ad78-d4bc0baf0e63"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colRech_art Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="f3d7eeca-cb56-4d62-a2bd-1d8467a0d8bf"
+				name="bis_LS_DatRow2"
+				refimgid="b8c1b522-c24c-4eac-aedd-861a216acd9a"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colLsk_datum Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="040c96c5-3f28-4435-b912-42bd799d8750"
+				name="ColLskDatumRow1"
+				refimgid="127c4dcd-8244-4e20-a5dd-2192f4a217ec"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1']
+				</item>
+				<basepath>
+					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controlname='tblFadr']
 			</basepath>

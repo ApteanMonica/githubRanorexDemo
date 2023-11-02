@@ -77,6 +77,14 @@
 			name="Rechnung_drucken"
 			ref="92ec4531-0bc5-4b26-a552-daa7609802f3"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Auftragsnummer"
+					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
+					variableid="1c8af4fd-6843-4a68-a1d3-273d46effe9b"
+					variablename="Auftragsnummer">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="be30797e-87c2-45a2-9b76-588fec5fbdf9"
@@ -85,10 +93,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
+					dataname="Tagesdatum"
 					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
-					variableid="5475040a-4cc7-4cab-b85c-1d03ddf3ff08"
-					variablename="Startfile">
+					variableid="b2600755-24e4-4043-a141-445844ed094f"
+					variablename="Tagesdatum">
 					</var>
 					<var
 					dataname="Programm"
@@ -97,10 +105,10 @@
 					variablename="Programm">
 					</var>
 					<var
-					dataname="Tagesdatum"
+					dataname="Startfile"
 					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
-					variableid="b2600755-24e4-4043-a141-445844ed094f"
-					variablename="Tagesdatum">
+					variableid="5475040a-4cc7-4cab-b85c-1d03ddf3ff08"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -111,16 +119,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Auftragsnummer"
-					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
-					variableid="3f603517-740d-47df-bc01-ff6361981830"
-					variablename="Auftragsnummer">
-					</var>
-					<var
 					dataname="Rechnungsnummer"
 					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
 					variableid="8107eb30-6054-42ba-8953-5373fde332b2"
 					variablename="Rechnungsnummer">
+					</var>
+					<var
+					dataname="Auftragsnummer"
+					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
+					variableid="3f603517-740d-47df-bc01-ff6361981830"
+					variablename="Auftragsnummer">
 					</var>
 				</databinding>
 			</testmodule>
@@ -182,18 +190,6 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Rechnungsart_E"
-					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
-					variableid="e08984a4-0fde-4419-a22f-13edf9a4f30a"
-					variablename="Rechnungsart_E">
-					</var>
-					<var
-					dataname="Tagesdatum"
-					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
-					variableid="71655e56-a900-458b-95bd-e37436f5f81e"
-					variablename="Tagesdatum">
-					</var>
-					<var
 					dataname="Lieferscheinnummer"
 					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
 					variableid="c90b0d38-39f9-41e3-8abe-e775fd870d3a"
@@ -204,6 +200,18 @@
 					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
 					variableid="c6742321-376f-48ec-bb69-0c215121217b"
 					variablename="getDatumRow">
+					</var>
+					<var
+					dataname="Rechnungsart_E"
+					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
+					variableid="e08984a4-0fde-4419-a22f-13edf9a4f30a"
+					variablename="Rechnungsart_E">
+					</var>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
+					variableid="71655e56-a900-458b-95bd-e37436f5f81e"
+					variablename="Tagesdatum">
 					</var>
 				</databinding>
 			</testmodule>
