@@ -890,9 +890,10 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
         public partial class HinweisAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _hinweisInfo;
-            RepoItemInfo _text65535Info;
-            RepoItemInfo _buttonInfo;
             RepoItemInfo _labelmeldungstextInfo;
+            RepoItemInfo _text65535Info;
+            RepoItemInfo _text65535_meldung_testuebermittlungInfo;
+            RepoItemInfo _buttonInfo;
 
             /// <summary>
             /// Creates a new Hinweis  folder.
@@ -901,9 +902,10 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                     base("Hinweis", "/form[@title='Hinweis']", parentFolder, 30000, null, true, "fa6d3380-7645-47c5-8e79-043c0a1a737f", "")
             {
                 _hinweisInfo = new RepoItemInfo(this, "Hinweis", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "8e57c758-2040-4842-9ddf-d754ad53bd41");
-                _text65535Info = new RepoItemInfo(this, "Text65535", "text[@controlid='65535']", "", 30000, null, "6449da5f-5163-4ebc-94a6-69aff227cd4b");
-                _buttonInfo = new RepoItemInfo(this, "Button", "button", "", 30000, null, "3c3e0c91-f5b2-4609-b889-f5f9ed4d7df2");
                 _labelmeldungstextInfo = new RepoItemInfo(this, "LabelMeldungstext", "text[@controlname='labelMeldungstext']", "", 30000, null, "13f65712-f36d-489e-9ad8-537565e52c34");
+                _text65535Info = new RepoItemInfo(this, "Text65535", "text[@controlid='65535']", "", 30000, null, "6449da5f-5163-4ebc-94a6-69aff227cd4b");
+                _text65535_meldung_testuebermittlungInfo = new RepoItemInfo(this, "Text65535_Meldung_Testuebermittlung", "text[@controlid='65535' and @text~'Nur Testübermittlung möglich!']", "", 30000, null, "683d2b13-8de3-40a4-aecd-4a0f66bbcce4");
+                _buttonInfo = new RepoItemInfo(this, "Button", "button", "", 30000, null, "3c3e0c91-f5b2-4609-b889-f5f9ed4d7df2");
             }
 
             /// <summary>
@@ -955,6 +957,30 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             }
 
             /// <summary>
+            /// The LabelMeldungstext item.
+            /// </summary>
+            [RepositoryItem("13f65712-f36d-489e-9ad8-537565e52c34")]
+            public virtual Ranorex.Text LabelMeldungstext
+            {
+                get
+                {
+                    return _labelmeldungstextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LabelMeldungstext item info.
+            /// </summary>
+            [RepositoryItemInfo("13f65712-f36d-489e-9ad8-537565e52c34")]
+            public virtual RepoItemInfo LabelMeldungstextInfo
+            {
+                get
+                {
+                    return _labelmeldungstextInfo;
+                }
+            }
+
+            /// <summary>
             /// The Text65535 item.
             /// </summary>
             [RepositoryItem("6449da5f-5163-4ebc-94a6-69aff227cd4b")]
@@ -979,6 +1005,30 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             }
 
             /// <summary>
+            /// The Text65535_Meldung_Testuebermittlung item.
+            /// </summary>
+            [RepositoryItem("683d2b13-8de3-40a4-aecd-4a0f66bbcce4")]
+            public virtual Ranorex.Text Text65535_Meldung_Testuebermittlung
+            {
+                get
+                {
+                    return _text65535_meldung_testuebermittlungInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text65535_Meldung_Testuebermittlung item info.
+            /// </summary>
+            [RepositoryItemInfo("683d2b13-8de3-40a4-aecd-4a0f66bbcce4")]
+            public virtual RepoItemInfo Text65535_Meldung_TestuebermittlungInfo
+            {
+                get
+                {
+                    return _text65535_meldung_testuebermittlungInfo;
+                }
+            }
+
+            /// <summary>
             /// The Button item.
             /// </summary>
             [RepositoryItem("3c3e0c91-f5b2-4609-b889-f5f9ed4d7df2")]
@@ -999,30 +1049,6 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 get
                 {
                     return _buttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The LabelMeldungstext item.
-            /// </summary>
-            [RepositoryItem("13f65712-f36d-489e-9ad8-537565e52c34")]
-            public virtual Ranorex.Text LabelMeldungstext
-            {
-                get
-                {
-                    return _labelmeldungstextInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The LabelMeldungstext item info.
-            /// </summary>
-            [RepositoryItemInfo("13f65712-f36d-489e-9ad8-537565e52c34")]
-            public virtual RepoItemInfo LabelMeldungstextInfo
-            {
-                get
-                {
-                    return _labelmeldungstextInfo;
                 }
             }
         }
@@ -1593,10 +1619,12 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
         public partial class List1000AppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _jaennerInfo;
+            RepoItemInfo _dezemberInfo;
             RepoItemInfo _uvadeutschland2020elsterInfo;
             RepoItemInfo _uvadeutschland2022elsterInfo;
-            RepoItemInfo _dezemberInfo;
             RepoItemInfo _uvadeutschland2023elsterInfo;
+            RepoItemInfo _formular_elster_vorjahrInfo;
+            RepoItemInfo _formular_elster_jahrneuInfo;
 
             /// <summary>
             /// Creates a new List1000  folder.
@@ -1605,10 +1633,12 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                     base("List1000", "/list[@controlid='1000']", parentFolder, 30000, null, true, "5efbaa5c-2f05-4d69-b730-7a37addf82a9", "")
             {
                 _jaennerInfo = new RepoItemInfo(this, "Jaenner", "listitem[@text='Jänner']", "", 30000, null, "1d415287-a245-4169-9070-4712e6890df7");
+                _dezemberInfo = new RepoItemInfo(this, "Dezember", "listitem[@text='Dezember']", "", 30000, null, "38ccb2dc-0e9d-4c87-8c0a-bcc335459f31");
                 _uvadeutschland2020elsterInfo = new RepoItemInfo(this, "UVADeutschland2020Elster", "listitem[@text~'UVA-Deutschland 2020']", "", 30000, null, "eaa61b5d-83a7-4b98-80c9-59bd16c12a00");
                 _uvadeutschland2022elsterInfo = new RepoItemInfo(this, "UVADeutschland2022Elster", "listitem[@text~'UVA-Deutschland 2022']", "", 30000, null, "bce0ed16-da5f-46b9-abc3-cb27cf466b58");
-                _dezemberInfo = new RepoItemInfo(this, "Dezember", "listitem[@text='Dezember']", "", 30000, null, "38ccb2dc-0e9d-4c87-8c0a-bcc335459f31");
                 _uvadeutschland2023elsterInfo = new RepoItemInfo(this, "UVADeutschland2023Elster", "listitem[@text~'UVA-Deutschland 2023']", "", 30000, null, "ec671726-981c-4612-8bc5-6a9172b902c3");
+                _formular_elster_vorjahrInfo = new RepoItemInfo(this, "Formular_Elster_VORJAHR", "listitem[@text=$UVA_VORJAHR_Form_Name]", "", 30000, null, "b2dbe03c-4b7a-47ae-93ee-0141bc6778da");
+                _formular_elster_jahrneuInfo = new RepoItemInfo(this, "Formular_Elster_JAHRNEU", "listitem[@text=$UVA_JAHRNEU_Form_Name]", "", 30000, null, "2af648bd-a59f-49a8-a494-d4198b993867");
             }
 
             /// <summary>
@@ -1656,6 +1686,30 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 get
                 {
                     return _jaennerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Dezember item.
+            /// </summary>
+            [RepositoryItem("38ccb2dc-0e9d-4c87-8c0a-bcc335459f31")]
+            public virtual Ranorex.ListItem Dezember
+            {
+                get
+                {
+                    return _dezemberInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Dezember item info.
+            /// </summary>
+            [RepositoryItemInfo("38ccb2dc-0e9d-4c87-8c0a-bcc335459f31")]
+            public virtual RepoItemInfo DezemberInfo
+            {
+                get
+                {
+                    return _dezemberInfo;
                 }
             }
 
@@ -1708,30 +1762,6 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             }
 
             /// <summary>
-            /// The Dezember item.
-            /// </summary>
-            [RepositoryItem("38ccb2dc-0e9d-4c87-8c0a-bcc335459f31")]
-            public virtual Ranorex.ListItem Dezember
-            {
-                get
-                {
-                    return _dezemberInfo.CreateAdapter<Ranorex.ListItem>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Dezember item info.
-            /// </summary>
-            [RepositoryItemInfo("38ccb2dc-0e9d-4c87-8c0a-bcc335459f31")]
-            public virtual RepoItemInfo DezemberInfo
-            {
-                get
-                {
-                    return _dezemberInfo;
-                }
-            }
-
-            /// <summary>
             /// The UVADeutschland2023Elster item.
             /// </summary>
             [RepositoryItem("ec671726-981c-4612-8bc5-6a9172b902c3")]
@@ -1752,6 +1782,54 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 get
                 {
                     return _uvadeutschland2023elsterInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Formular_Elster_VORJAHR item.
+            /// </summary>
+            [RepositoryItem("b2dbe03c-4b7a-47ae-93ee-0141bc6778da")]
+            public virtual Ranorex.ListItem Formular_Elster_VORJAHR
+            {
+                get
+                {
+                    return _formular_elster_vorjahrInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Formular_Elster_VORJAHR item info.
+            /// </summary>
+            [RepositoryItemInfo("b2dbe03c-4b7a-47ae-93ee-0141bc6778da")]
+            public virtual RepoItemInfo Formular_Elster_VORJAHRInfo
+            {
+                get
+                {
+                    return _formular_elster_vorjahrInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Formular_Elster_JAHRNEU item.
+            /// </summary>
+            [RepositoryItem("2af648bd-a59f-49a8-a494-d4198b993867")]
+            public virtual Ranorex.ListItem Formular_Elster_JAHRNEU
+            {
+                get
+                {
+                    return _formular_elster_jahrneuInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Formular_Elster_JAHRNEU item info.
+            /// </summary>
+            [RepositoryItemInfo("2af648bd-a59f-49a8-a494-d4198b993867")]
+            public virtual RepoItemInfo Formular_Elster_JAHRNEUInfo
+            {
+                get
+                {
+                    return _formular_elster_jahrneuInfo;
                 }
             }
         }

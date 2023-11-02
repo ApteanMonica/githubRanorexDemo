@@ -82,8 +82,8 @@ namespace B_ELSTER_005.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'FrmMain.TitleBar300ELSTERSchnittstelleUVA'", repo.FrmMain.TitleBar300ELSTERSchnittstelleUVAInfo, new ActionTimeout(300000), new RecordItemIndex(0));
             repo.FrmMain.TitleBar300ELSTERSchnittstelleUVAInfo.WaitForExists(300000);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to not exist. Associated repository item: 'Hinweis'", repo.Hinweis.SelfInfo, new ActionTimeout(300000), new RecordItemIndex(1));
-            repo.Hinweis.SelfInfo.WaitForNotExists(300000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to not exist. Associated repository item: 'Hinweis.Text65535_Meldung_Testuebermittlung'", repo.Hinweis.Text65535_Meldung_TestuebermittlungInfo, new ActionTimeout(300000), new RecordItemIndex(1));
+            repo.Hinweis.Text65535_Meldung_TestuebermittlungInfo.WaitForNotExists(300000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ELSTER-Schnittstelle') on item 'FrmMain.TitleBar300ELSTERSchnittstelleUVA'.", repo.FrmMain.TitleBar300ELSTERSchnittstelleUVAInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.FrmMain.TitleBar300ELSTERSchnittstelleUVAInfo, "Text", "ELSTER-Schnittstelle");

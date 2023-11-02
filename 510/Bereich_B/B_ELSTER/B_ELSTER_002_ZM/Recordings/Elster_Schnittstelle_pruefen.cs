@@ -82,8 +82,8 @@ namespace B_ELSTER_002_ZM.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelle'", repo.FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleInfo, new ActionTimeout(300000), new RecordItemIndex(0));
             repo.FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleInfo.WaitForExists(300000);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to not exist. Associated repository item: 'Hinweis'", repo.Hinweis.SelfInfo, new ActionTimeout(300000), new RecordItemIndex(1));
-            repo.Hinweis.SelfInfo.WaitForNotExists(300000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to not exist. Associated repository item: 'Hinweis.Text65535_Meldung_Testuebermittlung'", repo.Hinweis.Text65535_Meldung_TestuebermittlungInfo, new ActionTimeout(300000), new RecordItemIndex(1));
+            repo.Hinweis.Text65535_Meldung_TestuebermittlungInfo.WaitForNotExists(300000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ELSTER-Schnittstelle') on item 'FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelle'.", repo.FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleInfo, "Text", "ELSTER-Schnittstelle");

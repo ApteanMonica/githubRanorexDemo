@@ -172,11 +172,11 @@ namespace Z_PROJ_002.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmTabProjekt.Register_Projekt.DfProjStatusExt'.", repo.FrmTabProjekt.Register_Projekt.DfProjStatusExtInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.FrmTabProjekt.Register_Projekt.DfProjStatusExtInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$von_Datum) on item 'FrmTabProjekt.Register_Projekt.Zeitraum'.", repo.FrmTabProjekt.Register_Projekt.ZeitraumInfo, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Projekt.ZeitraumInfo, "Text", von_Datum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$von_Datum) on item 'FrmTabProjekt.Register_Projekt.Zeitraum_von'.", repo.FrmTabProjekt.Register_Projekt.Zeitraum_vonInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Projekt.Zeitraum_vonInfo, "Text", von_Datum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$bis_Datum) on item 'FrmTabProjekt.Register_Projekt.TextBis'.", repo.FrmTabProjekt.Register_Projekt.TextBisInfo, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Projekt.TextBisInfo, "Text", bis_Datum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$bis_Datum) on item 'FrmTabProjekt.Register_Projekt.TextBis_Zeitraum_bis'.", repo.FrmTabProjekt.Register_Projekt.TextBis_Zeitraum_bisInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmTabProjekt.Register_Projekt.TextBis_Zeitraum_bisInfo, "Text", bis_Datum);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$User_RS) on item 'FrmTabProjekt.Register_Projekt.ColPersNrRow1'.", repo.FrmTabProjekt.Register_Projekt.ColPersNrRow1Info, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.FrmTabProjekt.Register_Projekt.ColPersNrRow1Info, "Text", User_RS);

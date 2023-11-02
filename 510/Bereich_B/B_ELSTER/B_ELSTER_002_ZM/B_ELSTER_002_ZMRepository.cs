@@ -603,6 +603,7 @@ namespace B_ELSTER_002_ZM
         {
             RepoItemInfo _hinweisInfo;
             RepoItemInfo _text65535Info;
+            RepoItemInfo _text65535_meldung_testuebermittlungInfo;
             RepoItemInfo _buttonInfo;
 
             /// <summary>
@@ -613,6 +614,7 @@ namespace B_ELSTER_002_ZM
             {
                 _hinweisInfo = new RepoItemInfo(this, "Hinweis", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "8e57c758-2040-4842-9ddf-d754ad53bd41");
                 _text65535Info = new RepoItemInfo(this, "Text65535", "text[@controlid='65535']", "", 30000, null, "6449da5f-5163-4ebc-94a6-69aff227cd4b");
+                _text65535_meldung_testuebermittlungInfo = new RepoItemInfo(this, "Text65535_Meldung_Testuebermittlung", "text[@controlid='65535' and @text~'Nur Testübermittlung möglich!']", "", 30000, null, "683d2b13-8de3-40a4-aecd-4a0f66bbcce4");
                 _buttonInfo = new RepoItemInfo(this, "Button", "button", "", 30000, null, "3c3e0c91-f5b2-4609-b889-f5f9ed4d7df2");
             }
 
@@ -685,6 +687,30 @@ namespace B_ELSTER_002_ZM
                 get
                 {
                     return _text65535Info;
+                }
+            }
+
+            /// <summary>
+            /// The Text65535_Meldung_Testuebermittlung item.
+            /// </summary>
+            [RepositoryItem("683d2b13-8de3-40a4-aecd-4a0f66bbcce4")]
+            public virtual Ranorex.Text Text65535_Meldung_Testuebermittlung
+            {
+                get
+                {
+                    return _text65535_meldung_testuebermittlungInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text65535_Meldung_Testuebermittlung item info.
+            /// </summary>
+            [RepositoryItemInfo("683d2b13-8de3-40a4-aecd-4a0f66bbcce4")]
+            public virtual RepoItemInfo Text65535_Meldung_TestuebermittlungInfo
+            {
+                get
+                {
+                    return _text65535_meldung_testuebermittlungInfo;
                 }
             }
 

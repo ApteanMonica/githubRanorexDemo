@@ -12,22 +12,12 @@ name="Z_PROJ_001Repository">
 	name="Root"
 	searchtimeout="0ms"
 	usecache="True">
-		<item
-		addcaps="titlebar,accessible"
-		capname="titlebar"
-		id="8ad59196-483c-488c-b582-18deef4d26c6"
-		name="TitleBar100ProjektVerwalten"
-		refimgid="4f94166b-0055-4bfe-bac2-e57cd6dde07e"
-		robustPath=""
-		searchtimeout="30000ms">
-			/form[@controlname='frmTabProjekt']/titlebar[@accessiblerole='TitleBar']
-		</item>
 		<appfolder
 		addcaps="form,control,nativewindow"
 		capname="form"
 		id="40f68ecd-8fe0-48fc-b1fa-b19e2f256d27"
 		isrooted="True"
-		name="FrmTabProjekt_alt"
+		name="FrmTabProjekt"
 		refimgid="cbeeb74f-adaa-4648-be12-8bc4eede7cde"
 		refpath="/form[@controlname='frmTabProjekt']"
 		searchtimeout="30000ms"
@@ -3410,6 +3400,16 @@ AAAAkCBYAwAAAACQIFgDAAAAAJAgWAMAAAAAkCBYAwAAAACQ8LvBGgAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4MPLyz+hqEAW/uMNzgAAAABJRU5ErkJggg==
 			</image>
 			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="8ad59196-483c-488c-b582-18deef4d26c6"
+			name="TitleBar100ProjektVerwalten"
+			refimgid="4f94166b-0055-4bfe-bac2-e57cd6dde07e"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmTabProjekt']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
 			addcaps="button,accessible"
 			capname="button"
 			id="4093620d-3df8-4fd1-a196-7c89f40e7b18"
@@ -3446,16 +3446,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4MPLyz+hqEAW/uMNzgAAAABJRU5ErkJggg==
 			capname="text"
 			id="67fceff6-eeea-48ff-8702-a1d184ba4f6a"
 			name="Text_Suchmaske"
-			refimgid="dc9bf4f0-1202-4ffa-a676-3a1f974bb1c0"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='frmTabProjekt']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/text[@controlname='dfSearchExpression']/text[@accessiblerole='Text']
-			</item>
-			<item
-			addcaps="text,accessible"
-			capname="text"
-			id="7c902b13-8ec8-4894-a635-39205854fac7"
-			name="Text_Suchmaske_mit_Textfeld"
 			refimgid="dc9bf4f0-1202-4ffa-a676-3a1f974bb1c0"
 			robustPath=""
 			searchtimeout="30000ms">
@@ -3675,16 +3665,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4MPLyz+hqEAW/uMNzgAAAABJRU5ErkJggg==
 				capname="text"
 				id="f32c15b9-c38d-4a2b-ab3a-88abaedb7958"
 				name="DfProjStatusExt"
-				refimgid="c48dbec0-b6ef-4f2d-a1a2-cf0ef7960b18"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='frmTabProjekt']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpProjekt']/text[@controlname='dfProj_status_ext']/text[@accessiblerole='Text']
-				</item>
-				<item
-				addcaps="text,control,nativewindow"
-				capname="text"
-				id="5386af67-28cd-49cd-b400-b6334d875409"
-				name="DfProjStatusExt_mit_Textfeld"
 				refimgid="c48dbec0-b6ef-4f2d-a1a2-cf0ef7960b18"
 				robustPath=""
 				searchtimeout="30000ms">

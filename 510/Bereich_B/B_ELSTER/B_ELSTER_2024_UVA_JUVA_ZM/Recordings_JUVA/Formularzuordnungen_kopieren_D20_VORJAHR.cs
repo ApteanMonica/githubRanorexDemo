@@ -131,11 +131,11 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUVAK.ClientArea1.CmbUvak2' at Center.", repo.FrmUVAK.ClientArea1.CmbUvak2Info, new RecordItemIndex(4));
             repo.FrmUVAK.ClientArea1.CmbUvak2.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'List1000.UVADeutschland2022Elster'.", repo.List1000.UVADeutschland2022ElsterInfo, new RecordItemIndex(5));
-            Validate.Exists(repo.List1000.UVADeutschland2022ElsterInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'List1000.Formular_Elster_VORJAHR'.", repo.List1000.Formular_Elster_VORJAHRInfo, new RecordItemIndex(5));
+            Validate.Exists(repo.List1000.Formular_Elster_VORJAHRInfo);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.UVADeutschland2022Elster' at Center.", repo.List1000.UVADeutschland2022ElsterInfo, new RecordItemIndex(6));
-            repo.List1000.UVADeutschland2022Elster.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Formular_Elster_VORJAHR' at Center.", repo.List1000.Formular_Elster_VORJAHRInfo, new RecordItemIndex(6));
+            repo.List1000.Formular_Elster_VORJAHR.Click();
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_D20_Form_Name) on item 'FrmUVAK.ClientArea1.CmbUvak1'.", repo.FrmUVAK.ClientArea1.CmbUvak1Info, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.FrmUVAK.ClientArea1.CmbUvak1Info, "Text", UVA_D20_Form_Name);

@@ -137,46 +137,54 @@ namespace Z_PROJ_002.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$PROJ_BEZ_I_UMWELT2_Ziel) on item 'FrmTabProjekt.Bezeichnung'.", repo.FrmTabProjekt.BezeichnungInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.FrmTabProjekt.BezeichnungInfo, "Text", PROJ_BEZ_I_UMWELT2_Ziel);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$von_Datum2' with focus on 'FrmTabProjekt.Register_Projekt.Zeitraum'.", repo.FrmTabProjekt.Register_Projekt.ZeitraumInfo, new RecordItemIndex(2));
-            repo.FrmTabProjekt.Register_Projekt.Zeitraum.PressKeys(von_Datum2);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Register_Projekt.Zeitraum_von' at Center.", repo.FrmTabProjekt.Register_Projekt.Zeitraum_vonInfo, new RecordItemIndex(2));
+            repo.FrmTabProjekt.Register_Projekt.Zeitraum_von.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmTabProjekt.Register_Projekt.Zeitraum'.", repo.FrmTabProjekt.Register_Projekt.ZeitraumInfo, new RecordItemIndex(3));
-            Keyboard.PrepareFocus(repo.FrmTabProjekt.Register_Projekt.Zeitraum);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmTabProjekt.Register_Projekt.Zeitraum_von' at Center.", repo.FrmTabProjekt.Register_Projekt.Zeitraum_vonInfo, new RecordItemIndex(3));
+            repo.FrmTabProjekt.Register_Projekt.Zeitraum_von.DoubleClick();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$von_Datum2' with focus on 'FrmTabProjekt.Register_Projekt.Zeitraum_von'.", repo.FrmTabProjekt.Register_Projekt.Zeitraum_vonInfo, new RecordItemIndex(4));
+            repo.FrmTabProjekt.Register_Projekt.Zeitraum_von.PressKeys(von_Datum2);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Beginndatum auf den 27.05.2021 setzen bei allen Phasen mit dem Beginndatum 28.05.2021? \r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(60000), new RecordItemIndex(6));
+            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Beginndatum auf den 27.05.2021 setzen bei allen Phasen mit dem Beginndatum 28.05.2021? \r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Beginndatum auf den 27.05.2021 setzen bei allen Phasen mit dem Beginndatum 28.05.2021? \r\n");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(8));
             repo.DlgMessageBox.Button1.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$bis_Datum2' with focus on 'FrmTabProjekt.Register_Projekt.TextBis'.", repo.FrmTabProjekt.Register_Projekt.TextBisInfo, new RecordItemIndex(6));
-            repo.FrmTabProjekt.Register_Projekt.TextBis.PressKeys(bis_Datum2);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$bis_Datum2' with focus on 'FrmTabProjekt.Register_Projekt.TextBis_Zeitraum_bis'.", repo.FrmTabProjekt.Register_Projekt.TextBis_Zeitraum_bisInfo, new RecordItemIndex(9));
+            repo.FrmTabProjekt.Register_Projekt.TextBis_Zeitraum_bis.PressKeys(bis_Datum2);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmTabProjekt.Register_Projekt.TextBis'.", repo.FrmTabProjekt.Register_Projekt.TextBisInfo, new RecordItemIndex(7));
-            Keyboard.PrepareFocus(repo.FrmTabProjekt.Register_Projekt.TextBis);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmTabProjekt.Register_Projekt.TextBis_Zeitraum_bis'.", repo.FrmTabProjekt.Register_Projekt.TextBis_Zeitraum_bisInfo, new RecordItemIndex(10));
+            Keyboard.PrepareFocus(repo.FrmTabProjekt.Register_Projekt.TextBis_Zeitraum_bis);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Endedatum aller Phasen außerhalb des Projektzeitraums auf das Endedatum 31.12.2050 des Projekts setzen? \r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Endedatum aller Phasen außerhalb des Projektzeitraums auf das Endedatum 31.12.2050 des Projekts setzen? \r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Endedatum aller Phasen außerhalb des Projektzeitraums auf das Endedatum 31.12.2050 des Projekts setzen? \r\n");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(12));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0' with focus on 'FrmTabProjekt.Register_Projekt.DfProjStatusExt'.", repo.FrmTabProjekt.Register_Projekt.DfProjStatusExtInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0' with focus on 'FrmTabProjekt.Register_Projekt.DfProjStatusExt'.", repo.FrmTabProjekt.Register_Projekt.DfProjStatusExtInfo, new RecordItemIndex(13));
             repo.FrmTabProjekt.Register_Projekt.DfProjStatusExt.PressKeys("0");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmTabProjekt.Register_Projekt.DfProjStatusExt'.", repo.FrmTabProjekt.Register_Projekt.DfProjStatusExtInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmTabProjekt.Register_Projekt.DfProjStatusExt'.", repo.FrmTabProjekt.Register_Projekt.DfProjStatusExtInfo, new RecordItemIndex(14));
             Keyboard.PrepareFocus(repo.FrmTabProjekt.Register_Projekt.DfProjStatusExt);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Soll diese Änderung bei den Phasen auch durchgeführt werden?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Soll diese Änderung bei den Phasen auch durchgeführt werden?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Soll diese Änderung bei den Phasen auch durchgeführt werden?");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(16));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.PbDataAccessSave' at Center.", repo.FrmTabProjekt.PbDataAccessSaveInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.PbDataAccessSave' at Center.", repo.FrmTabProjekt.PbDataAccessSaveInfo, new RecordItemIndex(17));
             repo.FrmTabProjekt.PbDataAccessSave.Click();
             
         }
