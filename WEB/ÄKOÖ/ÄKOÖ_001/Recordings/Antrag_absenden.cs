@@ -106,16 +106,14 @@ namespace AEKOOE_001.Recordings
             set { _Bankverbindung_1 = value; }
         }
 
-        string _Diagnose;
-
         /// <summary>
         /// Gets or sets the value of variable Diagnose.
         /// </summary>
         [TestVariable("a200dd6e-a680-467b-bcca-34c13ad29532")]
         public string Diagnose
         {
-            get { return _Diagnose; }
-            set { _Diagnose = value; }
+            get { return repo.Diagnose; }
+            set { repo.Diagnose = value; }
         }
 
 #endregion

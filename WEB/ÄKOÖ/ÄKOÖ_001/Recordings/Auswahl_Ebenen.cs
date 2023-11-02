@@ -79,26 +79,32 @@ namespace AEKOOE_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.KInput_Ebenen' at Center.", repo.Login.KInput_EbenenInfo, new RecordItemIndex(0));
-            repo.Login.KInput_Ebenen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.KSelect_drop_down_1_Ebene' at Center.", repo.Login.KSelect_drop_down_1_EbeneInfo, new RecordItemIndex(0));
+            repo.Login.KSelect_drop_down_1_Ebene.Click();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Down}{Return}'.", new RecordItemIndex(1));
             Keyboard.Press("{Down}{Return}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Krankenversicherung') on item 'Login.KInput_Ebenen'.", repo.Login.KInput_EbenenInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.Login.KInput_EbenenInfo, "InnerText", "Krankenversicherung");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Krankenversicherung') on item 'Login.Krankenversicherung'.", repo.Login.KrankenversicherungInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.Login.KrankenversicherungInfo, "InnerText", "Krankenversicherung");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Down}{Return}'.", new RecordItemIndex(4));
-            Keyboard.Press("{Down}{Return}");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.KIArrow60DownKIcon_2_Ebene' at Center.", repo.Login.KIArrow60DownKIcon_2_EbeneInfo, new RecordItemIndex(4));
+            repo.Login.KIArrow60DownKIcon_2_Ebene.Click();
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Krankengeld') on item 'Login.KInput_Ebenen'.", repo.Login.KInput_EbenenInfo, new RecordItemIndex(5));
-            //Validate.AttributeEqual(repo.Login.KInput_EbenenInfo, "InnerText", "Krankengeld");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Down' Press.", new RecordItemIndex(5));
+            Keyboard.Press(System.Windows.Forms.Keys.Down, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.ButtonTagNeu' at Center.", repo.Login.ButtonTagNeuInfo, new RecordItemIndex(6));
-            repo.Login.ButtonTagNeu.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press.", new RecordItemIndex(6));
+            Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Krankengeld') on item 'Login.KSelect_drop_down_1_Ebene'.", repo.Login.KSelect_drop_down_1_EbeneInfo, new RecordItemIndex(7));
+            //Validate.AttributeEqual(repo.Login.KSelect_drop_down_1_EbeneInfo, "InnerText", "Krankengeld");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.ButtonTagNeu_Antragskategorie' at Center.", repo.Login.ButtonTagNeu_AntragskategorieInfo, new RecordItemIndex(8));
+            repo.Login.ButtonTagNeu_Antragskategorie.Click();
             
         }
 
