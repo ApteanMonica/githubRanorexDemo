@@ -105,46 +105,61 @@ namespace K_PBU_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'TblK.Plan'.", repo.TblK.PlanInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.TblK.PlanInfo, "Text", "1");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbCommonNeu' at Center.", repo.TblK.PbCommonNeuInfo, new RecordItemIndex(0));
+            repo.TblK.PbCommonNeu.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.CbBereich1' at Center.", repo.TblK.CbBereich1Info, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'TblK.CbBereich1'.", repo.TblK.CbBereich1Info, new RecordItemIndex(2));
+            repo.TblK.CbBereich1.Element.SetAttributeValue("Checked", "False");
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.CbBereich1' at Center.", repo.TblK.CbBereich1Info, new RecordItemIndex(4));
             repo.TblK.CbBereich1.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'TblK.CbBereich1'.", repo.TblK.CbBereich1Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(5));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'TblK.Plan'.", repo.TblK.PlanInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.TblK.PlanInfo, "Text", "1");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'TblK.CbBereich1'.", repo.TblK.CbBereich1Info, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.TblK.CbBereich1Info, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kostenstelle' with focus on 'TblK.DfKs1Nr'.", repo.TblK.DfKs1NrInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kostenstelle' with focus on 'TblK.DfKs1Nr'.", repo.TblK.DfKs1NrInfo, new RecordItemIndex(8));
             repo.TblK.DfKs1Nr.PressKeys(Kostenstelle);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblK.Jahr' at Center.", repo.TblK.JahrInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblK.Jahr' at Center.", repo.TblK.JahrInfo, new RecordItemIndex(10));
             repo.TblK.Jahr.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(11));
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'TblK.Jahr'.", repo.TblK.JahrInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'TblK.Jahr'.", repo.TblK.JahrInfo, new RecordItemIndex(12));
             repo.TblK.Jahr.PressKeys(Jahr);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kostenstelle) on item 'TblK.DfKs1Nr'.", repo.TblK.DfKs1NrInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kostenstelle) on item 'TblK.DfKs1Nr'.", repo.TblK.DfKs1NrInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.TblK.DfKs1NrInfo, "Text", Kostenstelle);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Fliesen') on item 'TblK.DfKs1Bez'.", repo.TblK.DfKs1BezInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Fliesen') on item 'TblK.DfKs1Bez'.", repo.TblK.DfKs1BezInfo, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.TblK.DfKs1BezInfo, "Text", "Fliesen");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'TblK.Jahr'.", repo.TblK.JahrInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'TblK.Jahr'.", repo.TblK.JahrInfo, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.TblK.JahrInfo, "Text", Jahr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'TblK.CbPos'.", repo.TblK.CbPosInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'TblK.CbPos'.", repo.TblK.CbPosInfo, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.TblK.CbPosInfo, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbCommonLaden' at Center.", repo.TblK.PbCommonLadenInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbCommonLaden' at Center.", repo.TblK.PbCommonLadenInfo, new RecordItemIndex(18));
             repo.TblK.PbCommonLaden.Click();
             
         }
