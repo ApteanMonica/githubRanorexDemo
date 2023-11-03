@@ -38,70 +38,72 @@ mode="Global">
 		</var>
 	</variables>
 	<recorditems>
-		<validationitem
-		action="AttributeEqual"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
 		enabled="True"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		searchpropertyid="ae2cccf8-303b-4098-9597-34a1abe3598f">
+		searchpropertyid="766ec530-2e23-4acc-a568-35da2e54793c"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="b0c72b34-ffa2-44b3-b87f-b8e8b9a3e732"
+			id="943b4c40-ae56-40d9-a9ef-a08a9f49ef1a"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="0"
-				prefcap="text"
-				rect="41,112,31,17"
-				role="text"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="text"
-					type="System.String">
-						1
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						Plan:
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Text
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						1
-					</attribute>
-				</element>
 				<path>
-					/form[@controlname='tblK']/container[@controlname='ToolBar']/text[@controlname='dfPlv_nr']/text[@accessiblename='Plan:']
+					/form[@controlname='tblK']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup01']/button[@controlname='pbCommon_Neu']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				1
-			</matchvalue>
-		</validationitem>
+		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<setvaluerecorditem
+		attrname="Checked"
+		enabled="True"
+		optional="False"
+		searchpropertyid="018d1266-e208-4173-839d-87aed09a5d76">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ae3f42bb-56a4-4705-bbba-99cb69f3d078"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ToolBar']/checkbox[@controlname='cbBereich1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<AttributeValue>
+				False
+			</AttributeValue>
+		</setvaluerecorditem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -2020,6 +2022,79 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ae2cccf8-303b-4098-9597-34a1abe3598f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b0c72b34-ffa2-44b3-b87f-b8e8b9a3e732"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="41,112,31,17"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						1
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Plan:
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Text
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						1
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblK']/container[@controlname='ToolBar']/text[@controlname='dfPlv_nr']/text[@accessiblename='Plan:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				1
+			</matchvalue>
+		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -19619,7 +19694,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Einschraenkungen.UserCode.cs
+		Einstellungen_setzen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

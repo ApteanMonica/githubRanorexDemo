@@ -103,40 +103,43 @@ namespace K_PBU_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbCommonSpeichern' at Center.", repo.TblK.PbCommonSpeichernInfo, new RecordItemIndex(7));
             repo.TblK.PbCommonSpeichern.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbCommonLaden' at Center.", repo.TblK.PbCommonLadenInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(8));
+            Delay.Duration(300, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblK.PbCommonLaden' at Center.", repo.TblK.PbCommonLadenInfo, new RecordItemIndex(9));
             repo.TblK.PbCommonLaden.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='15.000') on item 'TblK.FlexGrid_Tabelle.Row_1.Col00Row1'.", repo.TblK.FlexGrid_Tabelle.Row_1.Col00Row1Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='15.000') on item 'TblK.FlexGrid_Tabelle.Row_1.Col00Row1'.", repo.TblK.FlexGrid_Tabelle.Row_1.Col00Row1Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.TblK.FlexGrid_Tabelle.Row_1.Col00Row1Info, "Text", "15.000");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.000') on item 'TblK.FlexGrid_Tabelle.Row_1.Col01Row1'.", repo.TblK.FlexGrid_Tabelle.Row_1.Col01Row1Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.000') on item 'TblK.FlexGrid_Tabelle.Row_1.Col01Row1'.", repo.TblK.FlexGrid_Tabelle.Row_1.Col01Row1Info, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.TblK.FlexGrid_Tabelle.Row_1.Col01Row1Info, "Text", "1.000");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.000') on item 'TblK.FlexGrid_Tabelle.Row_1.Col06Row1'.", repo.TblK.FlexGrid_Tabelle.Row_1.Col06Row1Info, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.000') on item 'TblK.FlexGrid_Tabelle.Row_1.Col06Row1'.", repo.TblK.FlexGrid_Tabelle.Row_1.Col06Row1Info, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.TblK.FlexGrid_Tabelle.Row_1.Col06Row1Info, "Text", "1.000");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.500') on item 'TblK.FlexGrid_Tabelle.Row_1.Col07Row1'.", repo.TblK.FlexGrid_Tabelle.Row_1.Col07Row1Info, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.500') on item 'TblK.FlexGrid_Tabelle.Row_1.Col07Row1'.", repo.TblK.FlexGrid_Tabelle.Row_1.Col07Row1Info, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.TblK.FlexGrid_Tabelle.Row_1.Col07Row1Info, "Text", "1.500");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.500') on item 'TblK.FlexGrid_Tabelle.Row_1.Col08Row1'.", repo.TblK.FlexGrid_Tabelle.Row_1.Col08Row1Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.500') on item 'TblK.FlexGrid_Tabelle.Row_1.Col08Row1'.", repo.TblK.FlexGrid_Tabelle.Row_1.Col08Row1Info, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.TblK.FlexGrid_Tabelle.Row_1.Col08Row1Info, "Text", "1.500");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.500') on item 'TblK.FlexGrid_Tabelle.Row_1.Col12Row1'.", repo.TblK.FlexGrid_Tabelle.Row_1.Col12Row1Info, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1.500') on item 'TblK.FlexGrid_Tabelle.Row_1.Col12Row1'.", repo.TblK.FlexGrid_Tabelle.Row_1.Col12Row1Info, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.TblK.FlexGrid_Tabelle.Row_1.Col12Row1Info, "Text", "1.500");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.500\t1.500\t1.500\t1.500\t1.500\t1.500') on item 'TblK.FlexGrid_Tabelle.Row_1.Row1'.", repo.TblK.FlexGrid_Tabelle.Row_1.Row1Info, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.500\t1.500\t1.500\t1.500\t1.500\t1.500') on item 'TblK.FlexGrid_Tabelle.Row_1.Row1'.", repo.TblK.FlexGrid_Tabelle.Row_1.Row1Info, new RecordItemIndex(16));
             Validate.AttributeContains(repo.TblK.FlexGrid_Tabelle.Row_1.Row1Info, "Text", "1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.500\t1.500\t1.500\t1.500\t1.500\t1.500");
             
             // Summenzeile prüfen
-            Report.Log(ReportLevel.Info, "Section", "Summenzeile prüfen", new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Section", "Summenzeile prüfen", new RecordItemIndex(17));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='SUMME') on item 'TblK.Fusszeile_Summe.ColPosRow0'.", repo.TblK.Fusszeile_Summe.ColPosRow0Info, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='SUMME') on item 'TblK.Fusszeile_Summe.ColPosRow0'.", repo.TblK.Fusszeile_Summe.ColPosRow0Info, new RecordItemIndex(18));
             Validate.AttributeEqual(repo.TblK.Fusszeile_Summe.ColPosRow0Info, "Text", "SUMME");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='15.000') on item 'TblK.Fusszeile_Summe.Col00Row0'.", repo.TblK.Fusszeile_Summe.Col00Row0Info, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='15.000') on item 'TblK.Fusszeile_Summe.Col00Row0'.", repo.TblK.Fusszeile_Summe.Col00Row0Info, new RecordItemIndex(19));
             Validate.AttributeEqual(repo.TblK.Fusszeile_Summe.Col00Row0Info, "Text", "15.000");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.500\t1.500\t1.500\t1.500\t1.500\t1.500') on item 'TblK.Fusszeile_Summe.Row0'.", repo.TblK.Fusszeile_Summe.Row0Info, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.500\t1.500\t1.500\t1.500\t1.500\t1.500') on item 'TblK.Fusszeile_Summe.Row0'.", repo.TblK.Fusszeile_Summe.Row0Info, new RecordItemIndex(20));
             Validate.AttributeContains(repo.TblK.Fusszeile_Summe.Row0Info, "Text", "1.000\t1.000\t1.000\t1.000\t1.000\t1.000\t1.500\t1.500\t1.500\t1.500\t1.500\t1.500");
             
         }
