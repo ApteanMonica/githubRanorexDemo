@@ -244,8 +244,8 @@ mode="Global">
 			</bindings>
 		</loggingrecorditem>
 		<validationitem
-		action="AttributeEqual"
-		enabled="False"
+		action="AttributeContains"
+		enabled="True"
 		optional="False"
 		searchpropertyid="e1dde7b5-a667-4b74-bc60-0f785f61a23b">
 			<comment>
@@ -253,16 +253,16 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="42b55ab3-53b9-4478-be37-0ec9f68fcbe9"
+			id="e2fd22fe-9c1b-4648-bd79-7cb334fd8b2f"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[2]/tag/div/div/div/select
+					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[2]/tag/div/div/div/select[@visible='True']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 			<matchname>
-				InnerText
+				Name
 			</matchname>
 			<matchvalue>
 				Krankengeld
@@ -679,6 +679,7 @@ mode="Global">
 		sy="518"
 		warnoutofbounds="False">
 			<comment>
+				funktioniert wieder en Bug 62089korrigiert ist
 			</comment>
 			<bindings>
 			</bindings>
@@ -766,6 +767,7 @@ mode="Global">
 		sy="109"
 		warnoutofbounds="False">
 			<comment>
+				funktioniert wieder wenn Bug 62089 korrigiert ist
 			</comment>
 			<bindings>
 			</bindings>

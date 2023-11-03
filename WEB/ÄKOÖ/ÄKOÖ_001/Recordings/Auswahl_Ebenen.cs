@@ -100,8 +100,9 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press.", new RecordItemIndex(6));
             Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Krankengeld') on item 'Login.KSelect_drop_down_1_Ebene'.", repo.Login.KSelect_drop_down_1_EbeneInfo, new RecordItemIndex(7));
-            //Validate.AttributeEqual(repo.Login.KSelect_drop_down_1_EbeneInfo, "InnerText", "Krankengeld");
+            // Validierung auf Text 2.Ebene funktioniert nicht --> Lösung finden
+            //Report.Log(ReportLevel.Info, "Validation", "Validierung auf Text 2.Ebene funktioniert nicht --> Lösung finden\r\nValidating AttributeEqual (InnerText='Krankengeld') on item 'Login.KIArrow60DownKIcon_2_Ebene'.", repo.Login.KIArrow60DownKIcon_2_EbeneInfo, new RecordItemIndex(7));
+            //Validate.AttributeEqual(repo.Login.KIArrow60DownKIcon_2_EbeneInfo, "InnerText", "Krankengeld");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.ButtonTagNeu_Antragskategorie' at Center.", repo.Login.ButtonTagNeu_AntragskategorieInfo, new RecordItemIndex(8));
             repo.Login.ButtonTagNeu_Antragskategorie.Click();

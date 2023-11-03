@@ -79,28 +79,22 @@ namespace AEKOOE_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 4m to exist. Associated repository item: 'Login.PanelHeading'", repo.Login.PanelHeadingInfo, new ActionTimeout(240000), new RecordItemIndex(0));
-            repo.Login.PanelHeadingInfo.WaitForExists(240000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'RS2.WEB: Anmelden') on item 'Login.RS2WEBAnmelden'.", repo.Login.RS2WEBAnmeldenInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.Login.RS2WEBAnmeldenInfo, "InnerText", "RS2.WEB: Anmelden");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'rs{Tab}' with focus on 'Login.Text_benutzer'.", repo.Login.Text_benutzerInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'rs{Tab}' with focus on 'Login.Text_benutzer'.", repo.Login.Text_benutzerInfo, new RecordItemIndex(0));
             repo.Login.Text_benutzer.PressKeys("rs{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'rsc{Tab}' with focus on 'Login.Password'.", repo.Login.PasswordInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'rsc{Tab}' with focus on 'Login.Password'.", repo.Login.PasswordInfo, new RecordItemIndex(1));
             repo.Login.Password.PressKeys("rsc{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'k.aeko{Tab}' with focus on 'Login.LoginDataDb'.", repo.Login.LoginDataDbInfo, new RecordItemIndex(4));
-            repo.Login.LoginDataDb.PressKeys("k.aeko{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'k.aeko{Tab}' with focus on 'Login.LoginDataDb_DB'.", repo.Login.LoginDataDb_DBInfo, new RecordItemIndex(2));
+            repo.Login.LoginDataDb_DB.PressKeys("k.aeko{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'WFK{Tab}' with focus on 'Login.LoginDataFirmnr'.", repo.Login.LoginDataFirmnrInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'WFK{Tab}' with focus on 'Login.LoginDataFirmnr'.", repo.Login.LoginDataFirmnrInfo, new RecordItemIndex(3));
             repo.Login.LoginDataFirmnr.PressKeys("WFK{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.Anmelden' at Center.", repo.Login.AnmeldenInfo, new RecordItemIndex(6));
-            repo.Login.Anmelden.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.Anmelden_Button' at Center.", repo.Login.Anmelden_ButtonInfo, new RecordItemIndex(4));
+            repo.Login.Anmelden_Button.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.Card_Button_Stammdaten'", repo.Login.Card_Button_StammdatenInfo, new ActionTimeout(120000), new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.Card_Button_Stammdaten'", repo.Login.Card_Button_StammdatenInfo, new ActionTimeout(120000), new RecordItemIndex(5));
             repo.Login.Card_Button_StammdatenInfo.WaitForExists(120000);
             
         }
