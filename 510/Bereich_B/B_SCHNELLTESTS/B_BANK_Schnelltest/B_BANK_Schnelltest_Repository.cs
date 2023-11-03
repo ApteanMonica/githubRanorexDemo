@@ -51,16 +51,16 @@ namespace B_ST_001_B_BANK
 
 #region Variables
 
-        string _Bank = "B_BANK_ST";
+        string _Bank_NR = "B_BANK_ST";
 
         /// <summary>
-        /// Gets or sets the value of variable Bank.
+        /// Gets or sets the value of variable Bank_NR.
         /// </summary>
         [TestVariable("d1e07b1e-fad0-40ea-9d1d-09d65a9fda8a")]
-        public string Bank
+        public string Bank_NR
         {
-            get { return _Bank; }
-            set { _Bank = value; }
+            get { return _Bank_NR; }
+            set { _Bank_NR = value; }
         }
 
 #endregion
@@ -114,14 +114,14 @@ namespace B_ST_001_B_BANK
             RepoItemInfo _pbnewInfo;
             RepoItemInfo _pbdataaccesssaveInfo;
             RepoItemInfo _pballgemeinloeschenInfo;
+            RepoItemInfo _tabpageallgemeinInfo;
             RepoItemInfo _bankInfo;
-            RepoItemInfo _bank_b_bank_stInfo;
+            RepoItemInfo _bank_bank_nrInfo;
             RepoItemInfo _nameInfo;
             RepoItemInfo _landInfo;
             RepoItemInfo _text_statusInfo;
             RepoItemInfo _sepa_versionInfo;
             RepoItemInfo _tabpagekontenInfo;
-            RepoItemInfo _tabpageallgemeinInfo;
             RepoItemInfo _dfbankktobankInfo;
             RepoItemInfo _text_spesenInfo;
 
@@ -137,14 +137,14 @@ namespace B_ST_001_B_BANK
                 _pbnewInfo = new RepoItemInfo(this, "PbNew", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']", "", 30000, null, "842afed1-6e86-4e9c-b971-8a217cf4e060");
                 _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "e77a85ca-da6f-40d9-bce7-7af7db1df954");
                 _pballgemeinloeschenInfo = new RepoItemInfo(this, "PbAllgemeinLoeschen", "container[@controlname='RibbonBar']/container[@controlname='AllgemeinGroup']/button[@controlname='pbAllgemein_Löschen']", "", 30000, null, "b88da893-1824-4aef-8b7f-b8dd67a480a8");
+                _tabpageallgemeinInfo = new RepoItemInfo(this, "TabPageAllgemein", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&Allgemein']", "", 30000, null, "ede41e8c-1ccf-428a-8c37-b775caa1b59b");
                 _bankInfo = new RepoItemInfo(this, "Bank", "container[@controlname='ClientArea']/text[@controlname='dfBank_nr']/text[@accessiblename='Bank']", "", 30000, null, "db902066-2fbc-4fbe-8cb2-8b49e8c2a567");
-                _bank_b_bank_stInfo = new RepoItemInfo(this, "Bank_B_BANK_ST", "container[@controlname='ClientArea']/text[@controlname='dfBank_nr']/text[@accessiblename='Bank' and @text=$Bank]", "", 30000, null, "7fbf8cc0-6f90-4ab3-8400-4c66bd7b0d3e");
+                _bank_bank_nrInfo = new RepoItemInfo(this, "Bank_Bank_NR", "container[@controlname='ClientArea']/text[@controlname='dfBank_nr']/text[@accessiblename='Bank' and @text=$Bank_NR]", "", 30000, null, "7fbf8cc0-6f90-4ab3-8400-4c66bd7b0d3e");
                 _nameInfo = new RepoItemInfo(this, "Name", "container[@controlname='ClientArea']/text[@controlname='dfBank_name']/text[@accessiblename='Name']", "", 30000, null, "1cdf5620-bfca-4a63-a4a3-6b59eca56a9b");
                 _landInfo = new RepoItemInfo(this, "Land", "container[@controlname='ClientArea']/text[@controlname='dfLand_cd']/text[@accessiblename='Land']", "", 30000, null, "6fb956e0-8c7c-43f8-a76b-a5be97faced5");
                 _text_statusInfo = new RepoItemInfo(this, "Text_Status", "container[@controlname='ClientArea']/text[@controlname='dfBank_Status']/text[@accessiblerole='Text']", "", 30000, null, "3ce4efcd-9efd-49f4-948a-fc91f5c7976c");
                 _sepa_versionInfo = new RepoItemInfo(this, "SEPA_Version", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgeein']/container[@controlname='gBSepa']/text[@controlname='dfSepa_Vers']/text[@accessiblename='Version']", "", 30000, null, "ca8223db-fce6-4c78-a1b6-efa02473ecf1");
                 _tabpagekontenInfo = new RepoItemInfo(this, "TabPageKonten", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&Konten']", "", 30000, null, "0c2a2eb6-3d90-4ab8-a428-82beecac0ac1");
-                _tabpageallgemeinInfo = new RepoItemInfo(this, "TabPageAllgemein", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&Allgemein']", "", 30000, null, "ede41e8c-1ccf-428a-8c37-b775caa1b59b");
                 _dfbankktobankInfo = new RepoItemInfo(this, "DfBankKtobank", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpKonten']/text[@controlname='dfBank_ktobank']", "", 30000, null, "656ececb-bd78-46f4-9fdb-190846dffb30");
                 _text_spesenInfo = new RepoItemInfo(this, "Text_Spesen", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpKonten']/text[@controlname='dfBank_ktospesen']/text[@accessiblerole='Text']", "", 30000, null, "86210241-8af0-4587-ab75-ee18b2aa8416");
             }
@@ -294,6 +294,30 @@ namespace B_ST_001_B_BANK
             }
 
             /// <summary>
+            /// The TabPageAllgemein item.
+            /// </summary>
+            [RepositoryItem("ede41e8c-1ccf-428a-8c37-b775caa1b59b")]
+            public virtual Ranorex.TabPage TabPageAllgemein
+            {
+                get
+                {
+                    return _tabpageallgemeinInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TabPageAllgemein item info.
+            /// </summary>
+            [RepositoryItemInfo("ede41e8c-1ccf-428a-8c37-b775caa1b59b")]
+            public virtual RepoItemInfo TabPageAllgemeinInfo
+            {
+                get
+                {
+                    return _tabpageallgemeinInfo;
+                }
+            }
+
+            /// <summary>
             /// The Bank item.
             /// </summary>
             [RepositoryItem("db902066-2fbc-4fbe-8cb2-8b49e8c2a567")]
@@ -318,26 +342,26 @@ namespace B_ST_001_B_BANK
             }
 
             /// <summary>
-            /// The Bank_B_BANK_ST item.
+            /// The Bank_Bank_NR item.
             /// </summary>
             [RepositoryItem("7fbf8cc0-6f90-4ab3-8400-4c66bd7b0d3e")]
-            public virtual Ranorex.Text Bank_B_BANK_ST
+            public virtual Ranorex.Text Bank_Bank_NR
             {
                 get
                 {
-                    return _bank_b_bank_stInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _bank_bank_nrInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The Bank_B_BANK_ST item info.
+            /// The Bank_Bank_NR item info.
             /// </summary>
             [RepositoryItemInfo("7fbf8cc0-6f90-4ab3-8400-4c66bd7b0d3e")]
-            public virtual RepoItemInfo Bank_B_BANK_STInfo
+            public virtual RepoItemInfo Bank_Bank_NRInfo
             {
                 get
                 {
-                    return _bank_b_bank_stInfo;
+                    return _bank_bank_nrInfo;
                 }
             }
 
@@ -462,30 +486,6 @@ namespace B_ST_001_B_BANK
             }
 
             /// <summary>
-            /// The TabPageAllgemein item.
-            /// </summary>
-            [RepositoryItem("ede41e8c-1ccf-428a-8c37-b775caa1b59b")]
-            public virtual Ranorex.TabPage TabPageAllgemein
-            {
-                get
-                {
-                    return _tabpageallgemeinInfo.CreateAdapter<Ranorex.TabPage>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TabPageAllgemein item info.
-            /// </summary>
-            [RepositoryItemInfo("ede41e8c-1ccf-428a-8c37-b775caa1b59b")]
-            public virtual RepoItemInfo TabPageAllgemeinInfo
-            {
-                get
-                {
-                    return _tabpageallgemeinInfo;
-                }
-            }
-
-            /// <summary>
             /// The DfBankKtobank item.
             /// </summary>
             [RepositoryItem("656ececb-bd78-46f4-9fdb-190846dffb30")]
@@ -552,7 +552,7 @@ namespace B_ST_001_B_BANK
             RepoItemInfo _row1column01Info;
             RepoItemInfo _celltmpbanknrrow0_ueberschrift_bankInfo;
             RepoItemInfo _celltmpbanknrrow1Info;
-            RepoItemInfo _celltmpbanknrrow1_mit_b_bank_stInfo;
+            RepoItemInfo _celltmpbanknrrow1_mit_bank_nrInfo;
             RepoItemInfo _celltmpbanknamerow1Info;
             RepoItemInfo _row1Info;
 
@@ -565,7 +565,7 @@ namespace B_ST_001_B_BANK
                 _row1column01Info = new RepoItemInfo(this, "Row1Column01", "row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "d187e2a2-aeb7-4853-9e76-d5a78dd38912");
                 _celltmpbanknrrow0_ueberschrift_bankInfo = new RepoItemInfo(this, "CellTmpBANKNRRow0_Ueberschrift_Bank", "row[@accessiblename='Row 0']/cell[@accessiblename='__tmp__BANK_NR Row 0' and @accessiblevalue='Bank']", "", 30000, null, "7c919a92-e80f-4103-a918-666c5621fca1");
                 _celltmpbanknrrow1Info = new RepoItemInfo(this, "CellTmpBANKNRRow1", "row[@accessiblename='Row 1']/cell[@accessiblename~'BANK_NR Row 1']", "", 30000, null, "3f574734-e05c-4d57-8901-496d9a5598c7");
-                _celltmpbanknrrow1_mit_b_bank_stInfo = new RepoItemInfo(this, "CellTmpBANKNRRow1_mit_B_BANK_ST", "row[@accessiblename='Row 1']/cell[@accessiblename~'BANK_NR Row 1' and @accessiblevalue=$Bank]", "", 30000, null, "2e7986de-3d5d-407b-9ff7-9c8291fb74ae");
+                _celltmpbanknrrow1_mit_bank_nrInfo = new RepoItemInfo(this, "CellTmpBANKNRRow1_mit_Bank_NR", "row[@accessiblename='Row 1']/cell[@accessiblename~'BANK_NR Row 1' and @accessiblevalue=$Bank_NR]", "", 30000, null, "2e7986de-3d5d-407b-9ff7-9c8291fb74ae");
                 _celltmpbanknamerow1Info = new RepoItemInfo(this, "CellTmpBANKNAMERow1", "row[@accessiblename='Row 1']/cell[@accessiblename~'BANK_NAME Row 1']", "", 30000, null, "ce1d44c4-df0e-4fec-acdd-a7205a032eb1");
                 _row1Info = new RepoItemInfo(this, "Row1", "row[@accessiblename='Row 1']", "", 30000, null, "f15fef2d-13e1-4c43-8db4-d5837f77a33e");
             }
@@ -667,26 +667,26 @@ namespace B_ST_001_B_BANK
             }
 
             /// <summary>
-            /// The CellTmpBANKNRRow1_mit_B_BANK_ST item.
+            /// The CellTmpBANKNRRow1_mit_Bank_NR item.
             /// </summary>
             [RepositoryItem("2e7986de-3d5d-407b-9ff7-9c8291fb74ae")]
-            public virtual Ranorex.Cell CellTmpBANKNRRow1_mit_B_BANK_ST
+            public virtual Ranorex.Cell CellTmpBANKNRRow1_mit_Bank_NR
             {
                 get
                 {
-                    return _celltmpbanknrrow1_mit_b_bank_stInfo.CreateAdapter<Ranorex.Cell>(true);
+                    return _celltmpbanknrrow1_mit_bank_nrInfo.CreateAdapter<Ranorex.Cell>(true);
                 }
             }
 
             /// <summary>
-            /// The CellTmpBANKNRRow1_mit_B_BANK_ST item info.
+            /// The CellTmpBANKNRRow1_mit_Bank_NR item info.
             /// </summary>
             [RepositoryItemInfo("2e7986de-3d5d-407b-9ff7-9c8291fb74ae")]
-            public virtual RepoItemInfo CellTmpBANKNRRow1_mit_B_BANK_STInfo
+            public virtual RepoItemInfo CellTmpBANKNRRow1_mit_Bank_NRInfo
             {
                 get
                 {
-                    return _celltmpbanknrrow1_mit_b_bank_stInfo;
+                    return _celltmpbanknrrow1_mit_bank_nrInfo;
                 }
             }
 

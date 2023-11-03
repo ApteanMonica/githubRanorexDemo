@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{69769617-B554-43CF-9FFF-24BB28F5FA0D}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>B_BER_Schnelltest</RootNamespace>
+    <AssemblyName>B_BER_Schnelltest</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper" />
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Delphi" />
+    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.WinForms.Core" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="Ranorex.Plugin.Wpf.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>fd76ba36-85bd-48d2-99e5-8996795f0fa5</id>
+    </Compile>
+    <Compile Include="B_BER_SchnelltestRepository.cs">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <DependentUpon>B_BER_SchnelltestRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>0f6dadaa-b497-4f31-8912-445e026da3d2</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>7dbc7859-ee49-4dc2-892d-487f4d337b24</id>
+    </Compile>
+    <Compile Include="Recordings_Bereiche\Close_B_BER.cs">
+      <DependentUpon>Close_B_BER.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>83b65c9f-a302-4373-ad6f-ab749a234d01</id>
+      <BoundTo>62f5ccdf-f73e-4354-9fb2-20d0dd6e73ed</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Bereiche\Close_B_BER.UserCode.cs">
+      <DependentUpon>Close_B_BER.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>89d1b1eb-a601-4f83-9d54-adbe965e9899</id>
+      <BoundTo>62f5ccdf-f73e-4354-9fb2-20d0dd6e73ed</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Bereiche\Start_B_BER.cs">
+      <DependentUpon>Start_B_BER.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6c69434a-a964-4f0f-bd3f-ba5036d4bd7e</id>
+      <BoundTo>bb7114cc-9fbb-4867-80ec-0cc2fbad359e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Bereiche\Start_B_BER.UserCode.cs">
+      <DependentUpon>Start_B_BER.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bb068169-688b-4003-8ec1-2fb05fb3253e</id>
+      <BoundTo>bb7114cc-9fbb-4867-80ec-0cc2fbad359e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Bereichskonten\Close_B_BER_BEKT.cs">
+      <DependentUpon>Close_B_BER_BEKT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0f475c06-e71e-42f8-bdb2-3e26ce9fac20</id>
+      <BoundTo>c4e9361d-d63b-4abf-b4c6-7a6bdfc9e295</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Bereichskonten\Close_B_BER_BEKT.UserCode.cs">
+      <DependentUpon>Close_B_BER_BEKT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>499d9120-a4e6-4140-8427-0a3c8b045294</id>
+      <BoundTo>c4e9361d-d63b-4abf-b4c6-7a6bdfc9e295</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Bereichskonten\Start_B_BER_BEKT.cs">
+      <DependentUpon>Start_B_BER_BEKT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>69bc202a-4828-4436-a720-269dced8887f</id>
+      <BoundTo>1d93fd8b-102a-4654-99c3-0ec2c2b95144</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Bereichskonten\Start_B_BER_BEKT.UserCode.cs">
+      <DependentUpon>Start_B_BER_BEKT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>137435c0-f63e-4f02-a2cd-3a252f31d60c</id>
+      <BoundTo>1d93fd8b-102a-4654-99c3-0ec2c2b95144</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Gruppen\Aufruf_Bereichsgruppen.cs">
+      <DependentUpon>Aufruf_Bereichsgruppen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8df483a0-9c63-4f71-bd94-77f5d432030c</id>
+      <BoundTo>ce08a0cf-094b-4218-be1e-ee63e49ad0dd</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Gruppen\Aufruf_Bereichsgruppen.UserCode.cs">
+      <DependentUpon>Aufruf_Bereichsgruppen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1317f272-ea05-4f9c-ab15-02462e9f7ede</id>
+      <BoundTo>ce08a0cf-094b-4218-be1e-ee63e49ad0dd</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Gruppen\Close_B_BER_BEGR.cs">
+      <DependentUpon>Close_B_BER_BEGR.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c84021b2-fe1d-4953-975a-e6cdd5dff01a</id>
+      <BoundTo>a8633821-2035-4695-87ae-ddd0ccc8c6d4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Gruppen\Close_B_BER_BEGR.UserCode.cs">
+      <DependentUpon>Close_B_BER_BEGR.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b2f4c6e2-32aa-45f7-9f06-22f1b990bde8</id>
+      <BoundTo>a8633821-2035-4695-87ae-ddd0ccc8c6d4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Zuordnung\Aufruf_Bereichskontenzuordung.cs">
+      <DependentUpon>Aufruf_Bereichskontenzuordung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>16d7e9a3-77bf-4347-a380-e0a4144d87fe</id>
+      <BoundTo>a09476d9-3c28-47f3-9b2c-4a392348090d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Zuordnung\Aufruf_Bereichskontenzuordung.UserCode.cs">
+      <DependentUpon>Aufruf_Bereichskontenzuordung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>45dc2979-eb27-49df-85cd-d437c51ca66c</id>
+      <BoundTo>a09476d9-3c28-47f3-9b2c-4a392348090d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Zuordnung\Close_B_BER_BEREZ.cs">
+      <DependentUpon>Close_B_BER_BEREZ.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b0e1f65a-ea89-4fca-8ccd-9647f075a62a</id>
+      <BoundTo>0cd8ceb5-51cf-4315-bee3-f8e108da9594</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Zuordnung\Close_B_BER_BEREZ.UserCode.cs">
+      <DependentUpon>Close_B_BER_BEREZ.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e413e267-9250-4a3e-afba-ee2ee877f98e</id>
+      <BoundTo>0cd8ceb5-51cf-4315-bee3-f8e108da9594</BoundTo>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>12199c15-7a5d-4640-abc8-fd4d8b057873</id>
+    </None>
+    <None Include="B_BER_SchnelltestRepository.rximg">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <DependentUpon>B_BER_SchnelltestRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>a9e6c399-30ae-4370-817f-33c1b034ec9d</id>
+    </None>
+    <None Include="B_BER_SchnelltestRepository.rxrep">
+      <id>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</id>
+      <repoid>f65fc292-89a4-480c-aff8-2bb01151fb3d</repoid>
+      <reporootid>94cddb6c-e595-4fec-b0a1-57e5d7e7efe0</reporootid>
+    </None>
+    <None Include="Recordings_Bereiche\Close_B_BER.rxrec">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <id>62f5ccdf-f73e-4354-9fb2-20d0dd6e73ed</id>
+      <recordtableid>dd0e6cd7-5a99-4ccf-aba8-3bd917f544ba</recordtableid>
+    </None>
+    <None Include="Recordings_Bereiche\Start_B_BER.rxrec">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <id>bb7114cc-9fbb-4867-80ec-0cc2fbad359e</id>
+      <recordtableid>2a0e3fae-4c6e-4c6a-8fe0-9dff8acfc17e</recordtableid>
+    </None>
+    <None Include="Recordings_Bereichskonten\Close_B_BER_BEKT.rxrec">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <id>c4e9361d-d63b-4abf-b4c6-7a6bdfc9e295</id>
+      <recordtableid>046d8486-6e9b-41a5-a28e-bd746879d2b5</recordtableid>
+    </None>
+    <None Include="Recordings_Bereichskonten\Start_B_BER_BEKT.rxrec">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <id>1d93fd8b-102a-4654-99c3-0ec2c2b95144</id>
+      <recordtableid>4d784fe1-d508-4a9c-aa1e-6d73b2cca66e</recordtableid>
+    </None>
+    <None Include="Recordings_Gruppen\Aufruf_Bereichsgruppen.rxrec">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <id>ce08a0cf-094b-4218-be1e-ee63e49ad0dd</id>
+      <recordtableid>448de88d-4842-41e8-9e2a-894d26aee9b6</recordtableid>
+    </None>
+    <None Include="Recordings_Gruppen\Close_B_BER_BEGR.rxrec">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <id>a8633821-2035-4695-87ae-ddd0ccc8c6d4</id>
+      <recordtableid>466bd9e8-a67d-4fdb-aaa6-f636e7acf274</recordtableid>
+    </None>
+    <None Include="Recordings_Zuordnung\Aufruf_Bereichskontenzuordung.rxrec">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <id>a09476d9-3c28-47f3-9b2c-4a392348090d</id>
+      <recordtableid>0761ff1b-18cb-4ba0-8622-6c05761663df</recordtableid>
+    </None>
+    <None Include="Recordings_Zuordnung\Close_B_BER_BEREZ.rxrec">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <id>0cd8ceb5-51cf-4315-bee3-f8e108da9594</id>
+      <recordtableid>82581317-92b0-414a-a407-c9674930b6a4</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="B_BER_Schnelltest.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>523d971d-a58c-496b-9e99-725ee842c5ed</id>
+    </Content>
+    <Content Include="B_BER_Schnelltest.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>2ff52f6f-18ce-4faa-b829-87ace2c97d6a</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings_Gruppen">
+      <id>a7e60b83-f111-49cb-9c1c-281bbb5097e2</id>
+    </Folder>
+    <Folder Include="Recordings_Zuordnung">
+      <id>a81203ce-f63a-485e-a62e-bb9944bb16ba</id>
+    </Folder>
+    <Folder Include="Recordings_Bereichskonten">
+      <id>031d29ca-5c45-439d-8ea4-1e33e7556337</id>
+    </Folder>
+    <Folder Include="Recordings_Bereiche">
+      <id>e434eb57-f990-4027-b957-137c4fdf3efc</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_ST_001_B_BANK.Recordings
+namespace B_BER_Schnelltest.Recordings_Gruppen
 {
-    public partial class Suchen_Loeschen_Status_9_Bankverbindung
+    public partial class Close_B_BER_BEGR
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

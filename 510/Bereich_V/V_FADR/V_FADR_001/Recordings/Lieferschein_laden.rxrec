@@ -7639,7 +7639,7 @@ yiiigAooooA//9k=
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="30000ms"
+		duration="2000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -7674,7 +7674,7 @@ yiiigAooooA//9k=
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="30000ms"
+		duration="2000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -7685,7 +7685,7 @@ yiiigAooooA//9k=
 		<keysequenceitem
 		KeySequence="{Delete}"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="cacdcdbc-5ea1-4c6d-bde2-498d957256ff">
@@ -7703,6 +7703,54 @@ yiiigAooooA//9k=
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Delete"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="d558a6af-513e-4bca-ad48-51c801b6435f"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="040c96c5-3f28-4435-b912-42bd799d8750"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLsk_datum Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keyitem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="fe15ae58-1efc-470a-8131-074a4f9cce0e"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
 		<keysequenceitem
 		KeySequence="{LControlKey down}{Akey}{LControlKey up}"
 		duration="20ms"
@@ -7869,6 +7917,21 @@ yiiigAooooA//9k=
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="04a4cd6b-e520-47b8-934e-153a598ffb33"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -7917,6 +7980,26 @@ yiiigAooooA//9k=
 			<bindings>
 			</bindings>
 		</loggingrecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="89a03635-e6a2-4cbc-851c-6230c9f04d8d"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f4ea5d40-15d5-4ad1-93b5-dc1b7028369f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"

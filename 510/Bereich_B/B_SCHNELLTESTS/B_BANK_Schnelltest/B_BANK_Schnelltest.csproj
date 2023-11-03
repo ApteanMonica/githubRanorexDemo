@@ -115,17 +115,41 @@
       <id>f3993b46-1c86-4242-962c-b8bd0d925602</id>
       <BoundTo>3ef50c5b-d0d1-41a5-a040-f586b5561100</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Neuanlage_Bankverbindung.cs">
+    <Compile Include="Recordings\Neuanlage_Meldung_Daten_ergaenzen.cs">
       <BoundTo>88a3b342-b9e7-46d7-a0c9-67329fad556c</BoundTo>
-      <DependentUpon>Neuanlage_Bankverbindung.rxrec</DependentUpon>
+      <DependentUpon>Neuanlage_Meldung_Daten_ergaenzen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>7837d023-3c5d-40ae-846a-ff4bb61908d7</id>
     </Compile>
-    <Compile Include="Recordings\Neuanlage_Bankverbindung.UserCode.cs">
+    <Compile Include="Recordings\Neuanlage_Meldung_Daten_ergaenzen.UserCode.cs">
       <BoundTo>88a3b342-b9e7-46d7-a0c9-67329fad556c</BoundTo>
-      <DependentUpon>Neuanlage_Bankverbindung.rxrec</DependentUpon>
+      <DependentUpon>Neuanlage_Meldung_Daten_ergaenzen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>226ca980-78e5-462d-8d90-956039e92c91</id>
+    </Compile>
+    <Compile Include="Recordings\Speichern_Aenderung_Daten_pruefen.cs">
+      <DependentUpon>Speichern_Aenderung_Daten_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3958389a-b510-4b20-985f-0012e001211f</id>
+      <BoundTo>57ac0830-8c93-4616-b39f-6fd38d4dbe79</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Speichern_Aenderung_Daten_pruefen.UserCode.cs">
+      <DependentUpon>Speichern_Aenderung_Daten_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>04b48cae-a1f7-435a-bd28-e8c7ccbaccbc</id>
+      <BoundTo>57ac0830-8c93-4616-b39f-6fd38d4dbe79</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Speichern_Neuanlage_Daten_pruefen.cs">
+      <BoundTo>230f92a5-33bb-496e-a812-ee1f0cf29a71</BoundTo>
+      <DependentUpon>Speichern_Neuanlage_Daten_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f214c268-0954-48b5-a31b-5a214fccc4d6</id>
+    </Compile>
+    <Compile Include="Recordings\Speichern_Neuanlage_Daten_pruefen.UserCode.cs">
+      <BoundTo>230f92a5-33bb-496e-a812-ee1f0cf29a71</BoundTo>
+      <DependentUpon>Speichern_Neuanlage_Daten_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>57b90fd7-4e78-4042-9959-4635c42bc80a</id>
     </Compile>
     <Compile Include="Recordings\StartAUT.cs">
       <DependentUpon>StartAUT.rxrec</DependentUpon>
@@ -139,15 +163,27 @@
       <id>a9998ce5-6d49-4347-a1d3-4966e7a5ff85</id>
       <BoundTo>e3d34418-ccd1-4818-b9fb-d1a9961a84d6</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Suchen_Loeschen_Status_9_Bankverbindung.cs">
+    <Compile Include="Recordings\Status_9_pruefen.cs">
+      <BoundTo>dfb6e1da-d162-43b1-b9c8-021901157890</BoundTo>
+      <DependentUpon>Status_9_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ca1a6b62-d87e-42b2-9483-5e2a6c89eb02</id>
+    </Compile>
+    <Compile Include="Recordings\Status_9_pruefen.UserCode.cs">
+      <BoundTo>dfb6e1da-d162-43b1-b9c8-021901157890</BoundTo>
+      <DependentUpon>Status_9_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5b35853b-5f15-4dc8-bf68-b762fce2136a</id>
+    </Compile>
+    <Compile Include="Recordings\Suchen_Loeschen_auf_Status_9_setzen.cs">
       <BoundTo>2ee13eee-d8cf-45c8-848c-69ccf23b8de5</BoundTo>
-      <DependentUpon>Suchen_Loeschen_Status_9_Bankverbindung.rxrec</DependentUpon>
+      <DependentUpon>Suchen_Loeschen_auf_Status_9_setzen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>8e6db3be-10d4-470d-9c45-a0c1b037584f</id>
     </Compile>
-    <Compile Include="Recordings\Suchen_Loeschen_Status_9_Bankverbindung.UserCode.cs">
+    <Compile Include="Recordings\Suchen_Loeschen_auf_Status_9_setzen.UserCode.cs">
       <BoundTo>2ee13eee-d8cf-45c8-848c-69ccf23b8de5</BoundTo>
-      <DependentUpon>Suchen_Loeschen_Status_9_Bankverbindung.rxrec</DependentUpon>
+      <DependentUpon>Suchen_Loeschen_auf_Status_9_setzen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>829e6103-8c7a-4c0d-8b19-1be17e38f627</id>
     </Compile>
@@ -177,17 +213,32 @@
       <id>3ef50c5b-d0d1-41a5-a040-f586b5561100</id>
       <recordtableid>421f4a66-ec5b-40c8-9024-a3d06f7f89bf</recordtableid>
     </None>
-    <None Include="Recordings\Neuanlage_Bankverbindung.rxrec">
+    <None Include="Recordings\Neuanlage_Meldung_Daten_ergaenzen.rxrec">
       <BoundTo>ec0240bf-7cd3-44da-9b01-95f84f932ef1</BoundTo>
       <id>88a3b342-b9e7-46d7-a0c9-67329fad556c</id>
       <recordtableid>245a434e-9a22-478c-8e63-3268ec839e39</recordtableid>
+    </None>
+    <None Include="Recordings\Speichern_Aenderung_Daten_pruefen.rxrec">
+      <BoundTo>ec0240bf-7cd3-44da-9b01-95f84f932ef1</BoundTo>
+      <id>57ac0830-8c93-4616-b39f-6fd38d4dbe79</id>
+      <recordtableid>741b1de3-f60a-4714-9ef7-d029107f364c</recordtableid>
+    </None>
+    <None Include="Recordings\Speichern_Neuanlage_Daten_pruefen.rxrec">
+      <BoundTo>ec0240bf-7cd3-44da-9b01-95f84f932ef1</BoundTo>
+      <id>230f92a5-33bb-496e-a812-ee1f0cf29a71</id>
+      <recordtableid>c722c0d9-100a-4eda-bb75-ef9d2c1c0528</recordtableid>
     </None>
     <None Include="Recordings\StartAUT.rxrec">
       <BoundTo>ec0240bf-7cd3-44da-9b01-95f84f932ef1</BoundTo>
       <id>e3d34418-ccd1-4818-b9fb-d1a9961a84d6</id>
       <recordtableid>34855731-5dd3-413a-b86a-a938ec2b8e98</recordtableid>
     </None>
-    <None Include="Recordings\Suchen_Loeschen_Status_9_Bankverbindung.rxrec">
+    <None Include="Recordings\Status_9_pruefen.rxrec">
+      <BoundTo>ec0240bf-7cd3-44da-9b01-95f84f932ef1</BoundTo>
+      <id>dfb6e1da-d162-43b1-b9c8-021901157890</id>
+      <recordtableid>12ce4803-f6be-4280-9e0b-b0d5a1255e55</recordtableid>
+    </None>
+    <None Include="Recordings\Suchen_Loeschen_auf_Status_9_setzen.rxrec">
       <BoundTo>ec0240bf-7cd3-44da-9b01-95f84f932ef1</BoundTo>
       <id>2ee13eee-d8cf-45c8-848c-69ccf23b8de5</id>
       <recordtableid>d795756a-a9f5-4979-9d07-d40cd63d6463</recordtableid>

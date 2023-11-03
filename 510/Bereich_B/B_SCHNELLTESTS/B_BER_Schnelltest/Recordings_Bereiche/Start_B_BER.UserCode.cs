@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_ST_001_B_BANK.Recordings
+namespace B_BER_Schnelltest.Recordings_Bereiche
 {
-    public partial class Neuanlage_Bankverbindung
+    public partial class Start_B_BER
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

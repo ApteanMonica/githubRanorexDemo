@@ -41,7 +41,7 @@ namespace B_ST_001_B_BANK.Recordings
         /// </summary>
         public Aenderung_Bankverbindung()
         {
-            Bankname_AEN = "B_BANK_SCHNELLTEST";
+            Bank_Name_AEN = "B_BANK_SCHNELLTEST";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace B_ST_001_B_BANK.Recordings
 
 #region Variables
 
-        string _Bankname_AEN;
+        string _Bank_Name_AEN;
 
         /// <summary>
-        /// Gets or sets the value of variable Bankname_AEN.
+        /// Gets or sets the value of variable Bank_Name_AEN.
         /// </summary>
         [TestVariable("ede4aa1b-2d75-477b-a3b0-945b2e34dd65")]
-        public string Bankname_AEN
+        public string Bank_Name_AEN
         {
-            get { return _Bankname_AEN; }
-            set { _Bankname_AEN = value; }
+            get { return _Bank_Name_AEN; }
+            set { _Bank_Name_AEN = value; }
         }
 
 #endregion
@@ -122,14 +122,11 @@ namespace B_ST_001_B_BANK.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmBank.Name' at Center.", repo.FrmBank.NameInfo, new RecordItemIndex(9));
             repo.FrmBank.Name.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Bankname_AEN' with focus on 'FrmBank.Name'.", repo.FrmBank.NameInfo, new RecordItemIndex(10));
-            repo.FrmBank.Name.PressKeys(Bankname_AEN);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Bank_Name_AEN' with focus on 'FrmBank.Name'.", repo.FrmBank.NameInfo, new RecordItemIndex(10));
+            repo.FrmBank.Name.PressKeys(Bank_Name_AEN);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBank.PbDataAccessSave' at Center.", repo.FrmBank.PbDataAccessSaveInfo, new RecordItemIndex(12));
-            repo.FrmBank.PbDataAccessSave.Click();
             
         }
 
