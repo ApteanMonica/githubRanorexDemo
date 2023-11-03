@@ -124,47 +124,20 @@ namespace N_ANLA_002.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(1));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            // Beginn_Umgehungslösung für Work Item 37966
-            Report.Log(ReportLevel.Info, "Section", "Beginn_Umgehungslösung für Work Item 37966", new RecordItemIndex(2));
-            
             // Umgehungsschritte nach Lösung des Items 37966 wieder raus löschen
-            Report.Log(ReportLevel.Info, "Wait", "Umgehungsschritte nach Lösung des Items 37966 wieder raus löschen\r\nWaiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAnlagen'", repo.DlgMessageBox.AVZAnlagenInfo, new ActionTimeout(120000), new RecordItemIndex(3));
-            repo.DlgMessageBox.AVZAnlagenInfo.WaitForExists(120000);
-            
-            // Umgehungsschritte nach Lösung des Items 37966 wieder raus löschen
-            Report.Log(ReportLevel.Info, "Validation", "Umgehungsschritte nach Lösung des Items 37966 wieder raus löschen\r\nValidating AttributeEqual (Text='Anlage N_ANLA_002_04 0 hat nicht den gleichen Anlagenstatus (1) wie Originalanlage (1).\r\n\r\nFortfahren?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Anlage N_ANLA_002_04 0 hat nicht den gleichen Anlagenstatus (1) wie Originalanlage (1).\r\n\r\nFortfahren?");
-            
-            // Umgehungsschritte nach Lösung des Items 37966 wieder raus löschen
-            Report.Log(ReportLevel.Info, "Mouse", "Umgehungsschritte nach Lösung des Items 37966 wieder raus löschen\r\nMouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(5));
-            repo.DlgMessageBox.Button1.Click();
-            
-            // Umgehungsschritte nach Lösung des Items 37966 wieder raus löschen
-            Report.Log(ReportLevel.Info, "Keyboard", "Umgehungsschritte nach Lösung des Items 37966 wieder raus löschen\r\nKey sequence from variable '$Anlage_D' with focus on 'FrmZuauf.TabPageTp1.ColAnlaNrRow2'.", repo.FrmZuauf.TabPageTp1.ColAnlaNrRow2Info, new RecordItemIndex(6));
-            repo.FrmZuauf.TabPageTp1.ColAnlaNrRow2.PressKeys(Anlage_D);
-            
-            // Umgehungsschritte nach Lösung des Items 37966 wieder raus löschen
-            Report.Log(ReportLevel.Info, "Keyboard", "Umgehungsschritte nach Lösung des Items 37966 wieder raus löschen\r\nKey 'Tab' Press with focus on 'FrmZuauf.TabPageTp1.ColAnlaNrRow2'.", repo.FrmZuauf.TabPageTp1.ColAnlaNrRow2Info, new RecordItemIndex(7));
-            Keyboard.PrepareFocus(repo.FrmZuauf.TabPageTp1.ColAnlaNrRow2);
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            // End_Umgehungsschritte für Work Item
-            Report.Log(ReportLevel.Info, "Section", "End_Umgehungsschritte für Work Item", new RecordItemIndex(8));
-            
-            // Umgehungsschritte nach Lösung des Items 37966 wieder raus löschen
-            Report.Log(ReportLevel.Info, "Keyboard", "Umgehungsschritte nach Lösung des Items 37966 wieder raus löschen\r\nKey sequence '{Insert}' with focus on 'FrmZuauf.FlexGrid'.", repo.FrmZuauf.FlexGridInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Umgehungsschritte nach Lösung des Items 37966 wieder raus löschen\r\nKey sequence '{Insert}' with focus on 'FrmZuauf.FlexGrid'.", repo.FrmZuauf.FlexGridInfo, new RecordItemIndex(2));
             repo.FrmZuauf.FlexGrid.PressKeys("{Insert}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Anlage_E' with focus on 'FrmZuauf.TabPageTp1.ColAnlaNrRow3'.", repo.FrmZuauf.TabPageTp1.ColAnlaNrRow3Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Anlage_E' with focus on 'FrmZuauf.TabPageTp1.ColAnlaNrRow3'.", repo.FrmZuauf.TabPageTp1.ColAnlaNrRow3Info, new RecordItemIndex(3));
             repo.FrmZuauf.TabPageTp1.ColAnlaNrRow3.PressKeys(Anlage_E);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Insert}' with focus on 'FrmZuauf.FlexGrid'.", repo.FrmZuauf.FlexGridInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Insert}' with focus on 'FrmZuauf.FlexGrid'.", repo.FrmZuauf.FlexGridInfo, new RecordItemIndex(4));
             repo.FrmZuauf.FlexGrid.PressKeys("{Insert}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Anlage_F'.", new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Anlage_F'.", new RecordItemIndex(5));
             Keyboard.Press(Anlage_F);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }
