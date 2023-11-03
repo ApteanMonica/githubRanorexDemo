@@ -84,16 +84,14 @@ namespace AEKOOE_001.Recordings
             set { _berufsunfaehig_bis = value; }
         }
 
-        string _SVNR;
-
         /// <summary>
         /// Gets or sets the value of variable SVNR.
         /// </summary>
         [TestVariable("1d8ba898-de50-4486-8dc5-0094a937de6f")]
         public string SVNR
         {
-            get { return _SVNR; }
-            set { _SVNR = value; }
+            get { return repo.SVNR; }
+            set { repo.SVNR = value; }
         }
 
         /// <summary>
@@ -174,14 +172,14 @@ namespace AEKOOE_001.Recordings
             //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$SVNR) on item 'Login.AKAT011RequestFormRow.Text_SVNR'.", repo.Login.AKAT011RequestFormRow.Text_SVNRInfo, new RecordItemIndex(3));
             //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_SVNRInfo, "InnerText", SVNR);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Bankverbindung_1) on item 'Login.Auswahl_Bankverbindung'.", repo.Login.Auswahl_BankverbindungInfo, new RecordItemIndex(4));
-            //Validate.AttributeEqual(repo.Login.Auswahl_BankverbindungInfo, "InnerText", Bankverbindung_1);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Bankverbindung_1) on item 'Login.Auswahl_Bankverbindung'.", repo.Login.Auswahl_BankverbindungInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.Login.Auswahl_BankverbindungInfo, "InnerText", Bankverbindung_1);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue=$Diagnose) on item 'Login.AKAT011RequestFormRow.False_Eingabe_Diagnose'.", repo.Login.AKAT011RequestFormRow.False_Eingabe_DiagnoseInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.False_Eingabe_DiagnoseInfo, "TagValue", Diagnose);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='ordentlicher Wohnsitz') on item 'Login.AKAT011RequestFormRow.KInput_Aufenthaltsort'.", repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, new RecordItemIndex(6));
-            //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, "InnerText", "ordentlicher Wohnsitz");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='ordentlicher Wohnsitz') on item 'Login.AKAT011RequestFormRow.KInput_Aufenthaltsort'.", repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, "InnerText", "ordentlicher Wohnsitz");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'Login.AKAT011RequestFormRow.Checkbox_Fremdverschulden'.", repo.Login.AKAT011RequestFormRow.Checkbox_FremdverschuldenInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Checkbox_FremdverschuldenInfo, "Checked", "True");

@@ -85,7 +85,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			addcaps="unknown,webelement,inputtag"
 			capname="inputtag"
 			id="94d766dc-0b5e-4ef6-a22e-1214dccf39a2"
-			name="LoginDataDb"
+			name="LoginDataDb_DB"
 			refimgid="16818b9e-87ac-4126-88b1-189e82de6ada"
 			refpath="/dom[@domain='192.168.192.139']//input[#'login-data-db']"
 			robustPath=""
@@ -107,7 +107,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			addcaps="button,webelement,buttontag"
 			capname="buttontag"
 			id="5d32d4dc-b15d-40db-a75f-6e07cd6a7580"
-			name="Anmelden"
+			name="Anmelden_Button"
 			refimgid="d1208f46-e66e-40ef-8e0a-039ad47fb863"
 			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/div/div/div[2]/div/div[2]/form[@action='http://192.168.192.139/521_SP12/#login']/fieldset/div/div/div[6]/button[@innertext='Anmelden']"
 			robustPath=""
@@ -216,13 +216,12 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			<item
 			addcaps="unknown,webelement,selecttag"
 			capname="selecttag"
-			id="ce46929e-e822-43cf-9856-69be3a3f79e0"
-			name="Copy_of_FormControl"
+			id="e2fd22fe-9c1b-4648-bd79-7cb334fd8b2f"
+			name="FormControl_Select_Tag_Krankengeld"
 			refimgid="ee3b4ca0-1384-4064-941e-e70306dfe47e"
-			refpath="/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[2]/tag[@tagname='dropdownlist']/div/div/div/select"
 			robustPath=""
 			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[2]/tag/div/div/div/select
+				/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[2]/tag/div/div/div/select[@visible='True']
 			</item>
 			<folder
 			addcaps="unknown,webelement,divtag"
@@ -485,6 +484,17 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[25]/div/tag/div/div/div/tag[@tagname='dmscontrol']/div/tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[1]/div[1]/div[2]
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="5b32d70e-013e-4a8b-bc77-6948c0b94e1a"
+				name="Arbeitsunfaehigkeitsmeldung"
+				refimgid="d57b71c6-f623-4b2a-95fc-387e38c5f8e2"
+				refpath="/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[25]/div/tag[@tagname='dmsfield']/div/div/div/tag[@tagname='dmscontrol']/div/tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[3]/div[2]/tag[@tagname='kendodropdownlist']/div/div/div/span[@title='']/span/span[@innertext='Arbeitsunfähigkeitsmeldung']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[25]/div/tag/div/div/div/tag[@tagname='dmscontrol']/div/tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[3]/div[2]/tag[@tagname='kendodropdownlist']/div/div/div/span[@title='']/span/span[@innertext&gt;'Arbeitsunf&#228;higkeitsmeldun']
 				</item>
 				<basepath>
 					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]
@@ -783,6 +793,17 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/dom[@domain='192.168.192.139']//section[#'appModule']/div/div/div[2]/div/div[1]/span[@innertext='Anmeldung']
 			</item>
+			<item
+			addcaps="unknown,webelement,tdtag"
+			capname="tdtag"
+			id="c75d307d-a48f-4542-9c12-80fca8c2dd2b"
+			name="SomeTdTag_Neu"
+			refimgid="2a80a88c-0b81-4801-af5c-5d03562391ac"
+			refpath="/dom[@domain='192.168.192.139']//div[#'panel-request']/div[1]/table/tbody/tr/td[1]"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='192.168.192.139']//div[#'panel-request']/div[1]/table/tbody/tr/td[1]
+			</item>
 			<basepath>
 				/dom[@domain='192.168.192.139']
 			</basepath>
@@ -963,6 +984,11 @@ Njn9vo296k/D73fbfL8GElzKQIKkt+klCH8ARJYkm8QxdZEAAAAASUVORK5CYII=
 		id="f7428658-18df-4fba-aec7-95b78b120c35"
 		name="Bankverbindung_1">
 			AT351100018481974718
+		</var>
+		<var
+		id="2dcbc05d-3710-47a4-bec6-3f7f2dc508b0"
+		name="SVNR">
+			1679050956
 		</var>
 	</variables>
 </repository>

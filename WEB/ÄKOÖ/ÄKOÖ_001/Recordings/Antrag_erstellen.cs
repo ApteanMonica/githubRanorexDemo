@@ -104,12 +104,6 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.Antragskategorie1' at Center.", repo.Login.Antragskategorie1Info, new RecordItemIndex(7));
             repo.Login.Antragskategorie1.Click();
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.Antragskategorie1'", repo.Login.Antragskategorie1Info, new ActionTimeout(120000), new RecordItemIndex(8));
-            //repo.Login.Antragskategorie1Info.WaitForExists(120000);
-            
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Antragskategorie') on item 'Login.Antragskategorie1'.", repo.Login.Antragskategorie1Info, new RecordItemIndex(9));
-            //Validate.AttributeEqual(repo.Login.Antragskategorie1Info, "InnerText", "Antragskategorie");
-            
         }
 
 #region Image Feature Data

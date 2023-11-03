@@ -61,10 +61,49 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="bc8c0e90-1a09-4fd5-865c-4df73e785745"
+			id="c75d307d-a48f-4542-9c12-80fca8c2dd2b"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, tdtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="tdtag"
+				rect="943,185,573,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						td
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
 				<path>
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[1]/div
+					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[1]/table/tbody/tr/td[1]
 				</path>
 				<robustPath>
 				</robustPath>
@@ -451,6 +490,70 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0020cc05-6b42-4093-9e96-e891e9eff695">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c75d307d-a48f-4542-9c12-80fca8c2dd2b"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, tdtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="tdtag"
+				rect="943,185,573,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						td
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[1]/table/tbody/tr/td[1]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				TagValue
+			</matchname>
+			<matchvalue>
+				Neu
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="ea8dc27d-4b43-438c-bd14-00e352da043f"

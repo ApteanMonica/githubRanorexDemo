@@ -84,16 +84,14 @@ namespace AEKOOE_001.Recordings
             set { _berufsunfaehig_bis = value; }
         }
 
-        string _SVNR;
-
         /// <summary>
         /// Gets or sets the value of variable SVNR.
         /// </summary>
         [TestVariable("0d832c8b-ec38-4a66-8923-68047beb93af")]
         public string SVNR
         {
-            get { return _SVNR; }
-            set { _SVNR = value; }
+            get { return repo.SVNR; }
+            set { repo.SVNR = value; }
         }
 
         /// <summary>
@@ -165,17 +163,19 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.ColMd6ColXs12'", repo.Login.ColMd6ColXs12Info, new ActionTimeout(120000), new RecordItemIndex(0));
             repo.Login.ColMd6ColXs12Info.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Login.TdTag_mit_Datum_02_05_2022'.", repo.Login.TdTag_mit_Datum_02_05_2022Info, new RecordItemIndex(1));
+            // ändern auf Validierung aktuelles Tagesdatum
+            Report.Log(ReportLevel.Info, "Validation", "ändern auf Validierung aktuelles Tagesdatum\r\nValidating Exists on item 'Login.TdTag_mit_Datum_02_05_2022'.", repo.Login.TdTag_mit_Datum_02_05_2022Info, new RecordItemIndex(1));
             Validate.Exists(repo.Login.TdTag_mit_Datum_02_05_2022Info);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.TdTag_mit_Datum_02_05_2022' at Center.", repo.Login.TdTag_mit_Datum_02_05_2022Info, new RecordItemIndex(2));
+            // ändern auf Validierung aktuelles Tagesdatum
+            Report.Log(ReportLevel.Info, "Mouse", "ändern auf Validierung aktuelles Tagesdatum\r\nMouse Left Click item 'Login.TdTag_mit_Datum_02_05_2022' at Center.", repo.Login.TdTag_mit_Datum_02_05_2022Info, new RecordItemIndex(2));
             repo.Login.TdTag_mit_Datum_02_05_2022.Click();
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Antrag auf Krankengeld') on item 'Login.AlertAlertInfo'.", repo.Login.AlertAlertInfoInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.Login.AlertAlertInfoInfo, "InnerText", "Antrag auf Krankengeld");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Krankengeld') on item 'Login.FormControl'.", repo.Login.FormControlInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.Login.FormControlInfo, "InnerText", "Krankengeld");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Name='Krankengeld') on item 'Login.FormControl_Select_Tag_Krankengeld'.", repo.Login.FormControl_Select_Tag_KrankengeldInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.Login.FormControl_Select_Tag_KrankengeldInfo, "Name", "Krankengeld");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$berufsunfaehig_ab) on item 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_abInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_abInfo, "InnerText", berufsunfaehig_ab);

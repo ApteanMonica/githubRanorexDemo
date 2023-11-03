@@ -84,16 +84,14 @@ namespace AEKOOE_001.Recordings
             set { _berufsunfaehig_bis = value; }
         }
 
-        string _SVNR;
-
         /// <summary>
         /// Gets or sets the value of variable SVNR.
         /// </summary>
         [TestVariable("8411f75b-d750-46cb-9056-bbdbda43b5e1")]
         public string SVNR
         {
-            get { return _SVNR; }
-            set { _SVNR = value; }
+            get { return repo.SVNR; }
+            set { repo.SVNR = value; }
         }
 
         /// <summary>
@@ -175,8 +173,8 @@ namespace AEKOOE_001.Recordings
             
             Report.Log(ReportLevel.Info, "User", Tagesdatum, new RecordItemIndex(5));
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Krankengeld') on item 'Login.FormControl'.", repo.Login.FormControlInfo, new RecordItemIndex(6));
-            //Validate.AttributeEqual(repo.Login.FormControlInfo, "InnerText", "Krankengeld");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Name>'Krankengeld') on item 'Login.FormControl_Select_Tag_Krankengeld'.", repo.Login.FormControl_Select_Tag_KrankengeldInfo, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.Login.FormControl_Select_Tag_KrankengeldInfo, "Name", "Krankengeld");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum' with focus on 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_abInfo, new RecordItemIndex(7));
             repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_ab.PressKeys(Tagesdatum);
@@ -192,11 +190,13 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.KSelect' at Center.", repo.Login.AKAT011RequestFormRow.KSelectInfo, new RecordItemIndex(12));
-            //repo.Login.AKAT011RequestFormRow.KSelect.Click();
+            // funktioniert wieder en Bug 62089korrigiert ist
+            Report.Log(ReportLevel.Info, "Mouse", "funktioniert wieder en Bug 62089korrigiert ist\r\nMouse Left Click item 'Login.AKAT011RequestFormRow.KSelect' at Center.", repo.Login.AKAT011RequestFormRow.KSelectInfo, new RecordItemIndex(12));
+            repo.Login.AKAT011RequestFormRow.KSelect.Click();
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.Auswahl_Bankverbindung' at Center.", repo.Login.Auswahl_BankverbindungInfo, new RecordItemIndex(13));
-            //repo.Login.Auswahl_Bankverbindung.Click();
+            // funktioniert wieder wenn Bug 62089 korrigiert ist
+            Report.Log(ReportLevel.Info, "Mouse", "funktioniert wieder wenn Bug 62089 korrigiert ist\r\nMouse Left Click item 'Login.Auswahl_Bankverbindung' at Center.", repo.Login.Auswahl_BankverbindungInfo, new RecordItemIndex(13));
+            repo.Login.Auswahl_Bankverbindung.Click();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Diagnose' with focus on 'Login.AKAT011RequestFormRow.False_Eingabe_Diagnose'.", repo.Login.AKAT011RequestFormRow.False_Eingabe_DiagnoseInfo, new RecordItemIndex(14));
             repo.Login.AKAT011RequestFormRow.False_Eingabe_Diagnose.PressKeys(Diagnose);

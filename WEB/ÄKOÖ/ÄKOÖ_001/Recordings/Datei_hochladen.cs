@@ -138,8 +138,9 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue='Testdatei zur Krankmeldung') on item 'Login.AKAT011RequestFormRow.Text_Bezeichnung_Uploadfile'.", repo.Login.AKAT011RequestFormRow.Text_Bezeichnung_UploadfileInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Bezeichnung_UploadfileInfo, "TagValue", "Testdatei zur Krankmeldung");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue='Arbeitsunfähigkeitsmeldung') on item 'Login.AKAT011RequestFormRow.DokumenttypWaehlen'.", repo.Login.AKAT011RequestFormRow.DokumenttypWaehlenInfo, new RecordItemIndex(15));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.DokumenttypWaehlenInfo, "TagValue", "Arbeitsunfähigkeitsmeldung");
+            // hier muss noch eine Lösung für die Validierung gefunden werde
+            Report.Log(ReportLevel.Info, "Validation", "hier muss noch eine Lösung für die Validierung gefunden werde\r\nValidating AttributeEqual (InnerText='Arbeitsunfähigkeitsmeldung') on item 'Login.AKAT011RequestFormRow.DokumenttypWaehlen'.", repo.Login.AKAT011RequestFormRow.DokumenttypWaehlenInfo, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.DokumenttypWaehlenInfo, "InnerText", "Arbeitsunfähigkeitsmeldung");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.Speichern' at Center.", repo.Login.AKAT011RequestFormRow.SpeichernInfo, new RecordItemIndex(16));
             repo.Login.AKAT011RequestFormRow.Speichern.Click();

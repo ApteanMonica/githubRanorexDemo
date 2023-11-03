@@ -82,6 +82,12 @@ namespace AEKOOE_001
             Report.Log(ReportLevel.Info, "Website", "Opening web site 'http://192.168.192.139/521_SP12/#login' with browser 'chrome' in normal mode.", new RecordItemIndex(0));
             Host.Current.OpenBrowser("http://192.168.192.139/521_SP12/#login", "chrome", "", false, false, false, false, false, false, false, true);
             
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 4m to exist. Associated repository item: 'Login.PanelHeading'", repo.Login.PanelHeadingInfo, new ActionTimeout(240000), new RecordItemIndex(1));
+            repo.Login.PanelHeadingInfo.WaitForExists(240000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Anmeldung') on item 'Login.Anmeldung'.", repo.Login.AnmeldungInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.Login.AnmeldungInfo, "InnerText", "Anmeldung");
+            
         }
 
 #region Image Feature Data
