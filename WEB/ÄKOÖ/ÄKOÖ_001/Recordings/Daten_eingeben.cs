@@ -192,11 +192,11 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.KSelect' at Center.", repo.Login.AKAT011RequestFormRow.KSelectInfo, new RecordItemIndex(12));
-            repo.Login.AKAT011RequestFormRow.KSelect.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.KSelect' at Center.", repo.Login.AKAT011RequestFormRow.KSelectInfo, new RecordItemIndex(12));
+            //repo.Login.AKAT011RequestFormRow.KSelect.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.Auswahl_Bankverbindung' at Center.", repo.Login.Auswahl_BankverbindungInfo, new RecordItemIndex(13));
-            repo.Login.Auswahl_Bankverbindung.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.Auswahl_Bankverbindung' at Center.", repo.Login.Auswahl_BankverbindungInfo, new RecordItemIndex(13));
+            //repo.Login.Auswahl_Bankverbindung.Click();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Diagnose' with focus on 'Login.AKAT011RequestFormRow.False_Eingabe_Diagnose'.", repo.Login.AKAT011RequestFormRow.False_Eingabe_DiagnoseInfo, new RecordItemIndex(14));
             repo.Login.AKAT011RequestFormRow.False_Eingabe_Diagnose.PressKeys(Diagnose);

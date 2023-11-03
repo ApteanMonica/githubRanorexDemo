@@ -79,7 +79,7 @@ namespace AEKOOE_001
             set { _Tagesdatum = value; }
         }
 
-        string _Diagnose = "Testdiagnose zum Krankengeld";
+        string _Diagnose = "Testdiagnose·zum·Krankengeld";
 
         /// <summary>
         /// Gets or sets the value of variable Diagnose.
@@ -261,6 +261,7 @@ namespace AEKOOE_001
             RepoItemInfo _kiarrow60downkicon1Info;
             RepoItemInfo _kdropdownwrapkstatedefaultInfo;
             RepoItemInfo _buttontagneu_antragskategorieInfo;
+            RepoItemInfo _anmeldungInfo;
 
             /// <summary>
             /// Creates a new Login  folder.
@@ -311,6 +312,7 @@ namespace AEKOOE_001
                 _kiarrow60downkicon1Info = new RepoItemInfo(this, "KIArrow60DownKIcon1", ".//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div[1]/div[2]/span[@title='']/span/span[2]/span", "", 30000, null, "13aba6b7-49f3-4abd-a6e4-9fc51d3c3a7a");
                 _kdropdownwrapkstatedefaultInfo = new RepoItemInfo(this, "KDropdownWrapKStateDefault", ".//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div[2]/div[2]/span[@title='']/span", "", 30000, null, "571a80bb-cc34-4ea7-b940-bd628f8772e5");
                 _buttontagneu_antragskategorieInfo = new RepoItemInfo(this, "ButtonTagNeu_Antragskategorie", ".//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[3]/button[@innertext='Neu']", "", 30000, null, "035625dd-0f92-4f75-b1e7-1bf07e51f28d");
+                _anmeldungInfo = new RepoItemInfo(this, "Anmeldung", ".//section[#'appModule']/div/div/div[2]/div/div[1]/span[@innertext='Anmeldung']", "", 30000, null, "d93a1c78-fd3f-44ef-b43b-a7c5a3060730");
             }
 
             /// <summary>
@@ -1342,6 +1344,30 @@ namespace AEKOOE_001
                 get
                 {
                     return _buttontagneu_antragskategorieInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Anmeldung item.
+            /// </summary>
+            [RepositoryItem("d93a1c78-fd3f-44ef-b43b-a7c5a3060730")]
+            public virtual Ranorex.SpanTag Anmeldung
+            {
+                get
+                {
+                    return _anmeldungInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Anmeldung item info.
+            /// </summary>
+            [RepositoryItemInfo("d93a1c78-fd3f-44ef-b43b-a7c5a3060730")]
+            public virtual RepoItemInfo AnmeldungInfo
+            {
+                get
+                {
+                    return _anmeldungInfo;
                 }
             }
 
