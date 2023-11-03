@@ -24,22 +24,22 @@ namespace B_ST_001_B_BANK.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Speichern_Aenderung_Daten_pruefen recording.
+    ///The Aenderung_speichern_pruefen recording.
     /// </summary>
     [TestModule("741b1de3-f60a-4714-9ef7-d029107f364c", ModuleType.Recording, 1)]
-    public partial class Speichern_Aenderung_Daten_pruefen : ITestModule
+    public partial class Aenderung_speichern_pruefen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository repository.
         /// </summary>
         public static global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository repo = global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository.Instance;
 
-        static Speichern_Aenderung_Daten_pruefen instance = new Speichern_Aenderung_Daten_pruefen();
+        static Aenderung_speichern_pruefen instance = new Aenderung_speichern_pruefen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Speichern_Aenderung_Daten_pruefen()
+        public Aenderung_speichern_pruefen()
         {
             Bank_NR = "B_BANK_ST";
             Bank_Name = "B_BANK_ST_SCHNELLTEST";
@@ -49,7 +49,7 @@ namespace B_ST_001_B_BANK.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Speichern_Aenderung_Daten_pruefen Instance
+        public static Aenderung_speichern_pruefen Instance
         {
             get { return instance; }
         }

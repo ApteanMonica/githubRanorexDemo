@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="c722c0d9-100a-4eda-bb75-ef9d2c1c0528"
+id="741b1de3-f60a-4714-9ef7-d029107f364c"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,19 +19,24 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Speichern_Neuanlage_Daten_pruefen"
+	classname="Aenderung_speichern_pruefen"
 	namespace="B_ST_001_B_BANK.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="d402d358-ac6b-43f3-b5a0-11b232f568bb"
+		id="0742f9a1-d08b-4edf-8f2c-77b31453e660"
 		name="Bank_NR">
 			B_BANK_ST
 		</var>
 		<var
-		id="6bc044fe-12d0-448c-9808-472a50f842a3"
+		id="baab0c48-5c12-401b-9b00-e22c4a6a49d8"
 		name="Bank_Name">
 			B_BANK_ST_SCHNELLTEST
+		</var>
+		<var
+		id="d45e8da9-fcae-4b8f-be44-a34765006e44"
+		name="Bank_Name_AEN">
+			B_BANK_SCHNELLTEST
 		</var>
 	</variables>
 	<recorditems>
@@ -99,7 +104,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Bank_Name">
+				variable="Bank_Name_AEN">
 				</binding>
 			</bindings>
 			<info
@@ -117,6 +122,32 @@ mode="Global">
 			<matchvalue>
 			</matchvalue>
 		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="db118c4b-d7be-41e7-89f4-e878c61ba1c8"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0c2a2eb6-3d90-4ab8-a428-82beecac0ac1"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmBank']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&amp;Konten']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -127,10 +158,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="6fb956e0-8c7c-43f8-a76b-a5be97faced5"
+			id="656ececb-bd78-46f4-9fdb-190846dffb30"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='frmBank']/container[@controlname='ClientArea']/text[@controlname='dfLand_cd']/text[@accessiblename='Land']
+					/form[@controlname='frmBank']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpKonten']/text[@controlname='dfBank_ktobank']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -139,7 +170,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				AT
+				2800
 			</matchvalue>
 		</validationitem>
 		<validationitem
@@ -152,10 +183,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="3ce4efcd-9efd-49f4-948a-fc91f5c7976c"
+			id="86210241-8af0-4587-ab75-ee18b2aa8416"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='frmBank']/container[@controlname='ClientArea']/text[@controlname='dfBank_Status']/text[@accessiblerole='Text']
+					/form[@controlname='frmBank']/container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpKonten']/text[@controlname='dfBank_ktospesen']/text[@accessiblerole='Text']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -164,7 +195,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				0
+				7300
 			</matchvalue>
 		</validationitem>
 	</recorditems>
@@ -183,7 +214,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Speichern_Daten_Neuanlage_pruefen.UserCode.cs
+		Speichern_Aenderung_Daten_pruefen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

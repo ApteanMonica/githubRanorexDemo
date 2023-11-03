@@ -91,6 +91,30 @@
     <Compile Include="Program.cs">
       <id>7dbc7859-ee49-4dc2-892d-487f4d337b24</id>
     </Compile>
+    <Compile Include="Recordings_Bereiche\Aenderung_Bereich_Meldung.cs">
+      <BoundTo>fb1d2223-8312-495f-bc45-63b84fb41b61</BoundTo>
+      <DependentUpon>Aenderung_Bereich_Meldung.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>97e30022-e8cc-4c44-8455-4a5055e79029</id>
+    </Compile>
+    <Compile Include="Recordings_Bereiche\Aenderung_Bereich_Meldung.UserCode.cs">
+      <BoundTo>fb1d2223-8312-495f-bc45-63b84fb41b61</BoundTo>
+      <DependentUpon>Aenderung_Bereich_Meldung.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>39588ede-1ead-4ce6-8a08-0ae875486ae2</id>
+    </Compile>
+    <Compile Include="Recordings_Bereiche\Aenderung_Speichern_pruefen.cs">
+      <BoundTo>7dbb1235-f61e-4e46-8b2b-f8a1539ea4cd</BoundTo>
+      <DependentUpon>Aenderung_Speichern_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>262358b1-6973-4b21-bb41-f7ed5ab79b55</id>
+    </Compile>
+    <Compile Include="Recordings_Bereiche\Aenderung_Speichern_pruefen.UserCode.cs">
+      <BoundTo>7dbb1235-f61e-4e46-8b2b-f8a1539ea4cd</BoundTo>
+      <DependentUpon>Aenderung_Speichern_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>187006f0-0047-4bb3-aaef-8768a0f848e8</id>
+    </Compile>
     <Compile Include="Recordings_Bereiche\Close_B_BER.cs">
       <DependentUpon>Close_B_BER.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -102,6 +126,42 @@
       <UserCode>true</UserCode>
       <id>89d1b1eb-a601-4f83-9d54-adbe965e9899</id>
       <BoundTo>62f5ccdf-f73e-4354-9fb2-20d0dd6e73ed</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Bereiche\Loeschen_Bereich_pruefen.cs">
+      <BoundTo>d5afa243-03ad-4366-a121-ff3aef12141d</BoundTo>
+      <DependentUpon>Loeschen_Bereich_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c77abb82-bb83-43e2-b258-05c716b12e8e</id>
+    </Compile>
+    <Compile Include="Recordings_Bereiche\Loeschen_Bereich_pruefen.UserCode.cs">
+      <BoundTo>d5afa243-03ad-4366-a121-ff3aef12141d</BoundTo>
+      <DependentUpon>Loeschen_Bereich_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2bbdb918-ae4c-46eb-ad15-16beaeff005f</id>
+    </Compile>
+    <Compile Include="Recordings_Bereiche\Neuanlage_Bereich.cs">
+      <BoundTo>38a5b184-24ea-473a-8d08-03274895e1de</BoundTo>
+      <DependentUpon>Neuanlage_Bereich.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>478f312e-c3b4-46a5-9297-f6b1fda6f000</id>
+    </Compile>
+    <Compile Include="Recordings_Bereiche\Neuanlage_Bereich.UserCode.cs">
+      <BoundTo>38a5b184-24ea-473a-8d08-03274895e1de</BoundTo>
+      <DependentUpon>Neuanlage_Bereich.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c3346be3-99c3-416a-b89a-73153c07a0ef</id>
+    </Compile>
+    <Compile Include="Recordings_Bereiche\Neuanlage_Speichern_pruefen.cs">
+      <BoundTo>cd46f004-0f29-4aba-93a2-54413f279d6b</BoundTo>
+      <DependentUpon>Neuanlage_Speichern_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b04a0b60-3899-4107-987b-a6c582f13883</id>
+    </Compile>
+    <Compile Include="Recordings_Bereiche\Neuanlage_Speichern_pruefen.UserCode.cs">
+      <BoundTo>cd46f004-0f29-4aba-93a2-54413f279d6b</BoundTo>
+      <DependentUpon>Neuanlage_Speichern_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8b5fb093-a32c-4e60-8609-8db258e846b5</id>
     </Compile>
     <Compile Include="Recordings_Bereiche\Start_B_BER.cs">
       <DependentUpon>Start_B_BER.rxrec</DependentUpon>
@@ -203,10 +263,35 @@
       <repoid>f65fc292-89a4-480c-aff8-2bb01151fb3d</repoid>
       <reporootid>94cddb6c-e595-4fec-b0a1-57e5d7e7efe0</reporootid>
     </None>
+    <None Include="Recordings_Bereiche\Aenderung_Bereich_Meldung.rxrec">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <id>fb1d2223-8312-495f-bc45-63b84fb41b61</id>
+      <recordtableid>bd66f7a1-21ea-4ef5-8935-a441854e2842</recordtableid>
+    </None>
+    <None Include="Recordings_Bereiche\Aenderung_Speichern_pruefen.rxrec">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <id>7dbb1235-f61e-4e46-8b2b-f8a1539ea4cd</id>
+      <recordtableid>40ec6915-edf3-4bb6-a3ac-707777132d34</recordtableid>
+    </None>
     <None Include="Recordings_Bereiche\Close_B_BER.rxrec">
       <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
       <id>62f5ccdf-f73e-4354-9fb2-20d0dd6e73ed</id>
       <recordtableid>dd0e6cd7-5a99-4ccf-aba8-3bd917f544ba</recordtableid>
+    </None>
+    <None Include="Recordings_Bereiche\Loeschen_Bereich_pruefen.rxrec">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <id>d5afa243-03ad-4366-a121-ff3aef12141d</id>
+      <recordtableid>6a00bf48-7410-4b4a-a6e2-401ed7dbd8f4</recordtableid>
+    </None>
+    <None Include="Recordings_Bereiche\Neuanlage_Bereich.rxrec">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <id>38a5b184-24ea-473a-8d08-03274895e1de</id>
+      <recordtableid>e96046f2-7447-4de2-87b1-7d28c8a0a004</recordtableid>
+    </None>
+    <None Include="Recordings_Bereiche\Neuanlage_Speichern_pruefen.rxrec">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <id>cd46f004-0f29-4aba-93a2-54413f279d6b</id>
+      <recordtableid>e901ba6f-e9cd-4441-b170-26270ebe0766</recordtableid>
     </None>
     <None Include="Recordings_Bereiche\Start_B_BER.rxrec">
       <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
