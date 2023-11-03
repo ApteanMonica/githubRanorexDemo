@@ -31,6 +31,8 @@ namespace B_BER_Schnelltest
         B_BER_SchnelltestRepositoryFolders.TblBektAppFolder _tblbekt;
         B_BER_SchnelltestRepositoryFolders.TblBegrAppFolder _tblbegr;
         B_BER_SchnelltestRepositoryFolders.TblZuAppFolder _tblzu;
+        B_BER_SchnelltestRepositoryFolders.BBERAppFolder _bber;
+        B_BER_SchnelltestRepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
 
         /// <summary>
         /// Gets the singleton class instance representing the B_BER_SchnelltestRepository element repository.
@@ -51,9 +53,23 @@ namespace B_BER_Schnelltest
             _tblbekt = new B_BER_SchnelltestRepositoryFolders.TblBektAppFolder(this);
             _tblbegr = new B_BER_SchnelltestRepositoryFolders.TblBegrAppFolder(this);
             _tblzu = new B_BER_SchnelltestRepositoryFolders.TblZuAppFolder(this);
+            _bber = new B_BER_SchnelltestRepositoryFolders.BBERAppFolder(this);
+            _dlgmessagebox = new B_BER_SchnelltestRepositoryFolders.DlgMessageBoxAppFolder(this);
         }
 
 #region Variables
+
+        string _FIBU_POS_AEN = "6";
+
+        /// <summary>
+        /// Gets or sets the value of variable FIBU_POS_AEN.
+        /// </summary>
+        [TestVariable("2b315b87-ba96-4e9d-91e6-ee1e6c73ec5e")]
+        public string FIBU_POS_AEN
+        {
+            get { return _FIBU_POS_AEN; }
+            set { _FIBU_POS_AEN = value; }
+        }
 
 #endregion
 
@@ -104,6 +120,24 @@ namespace B_BER_Schnelltest
         {
             get { return _tblzu; }
         }
+
+        /// <summary>
+        /// The BBER folder.
+        /// </summary>
+        [RepositoryFolder("33e41625-c01c-4685-9d03-63acb30fdbd3")]
+        public virtual B_BER_SchnelltestRepositoryFolders.BBERAppFolder BBER
+        {
+            get { return _bber; }
+        }
+
+        /// <summary>
+        /// The DlgMessageBox folder.
+        /// </summary>
+        [RepositoryFolder("06f124c4-23d1-4da9-b278-f8d27fde2dd8")]
+        public virtual B_BER_SchnelltestRepositoryFolders.DlgMessageBoxAppFolder DlgMessageBox
+        {
+            get { return _dlgmessagebox; }
+        }
     }
 
     /// <summary>
@@ -118,7 +152,9 @@ namespace B_BER_Schnelltest
         [RepositoryFolder("5ca18a05-8a21-4ba0-a74d-7a111516bdae")]
         public partial class TblBerAppFolder : RepoGenBaseFolder
         {
+            B_BER_SchnelltestRepositoryFolders.FlexGrid_TabelleFolder _flexgrid_tabelle;
             RepoItemInfo _titlebar100verwaltenbereicheInfo;
+            RepoItemInfo _pbdataaccesssaveInfo;
             RepoItemInfo _pbtoolbaritemsbekt_button_bereichsgruppenInfo;
 
             /// <summary>
@@ -127,7 +163,9 @@ namespace B_BER_Schnelltest
             public TblBerAppFolder(RepoGenBaseFolder parentFolder) :
                     base("TblBer", "/form[@controlname='tblBer']", parentFolder, 30000, null, true, "5ca18a05-8a21-4ba0-a74d-7a111516bdae", "")
             {
+                _flexgrid_tabelle = new B_BER_SchnelltestRepositoryFolders.FlexGrid_TabelleFolder(this);
                 _titlebar100verwaltenbereicheInfo = new RepoItemInfo(this, "TitleBar100VerwaltenBereiche", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "324a5e3d-8c65-4913-8cc1-db9249829c2f");
+                _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "87babf53-c0b2-487a-bde1-4b0d61272336");
                 _pbtoolbaritemsbekt_button_bereichsgruppenInfo = new RepoItemInfo(this, "PbToolBarItemsBekt_Button_Bereichsgruppen", "container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup1']/button[@controlname='pbToolBarItems_Bekt']", "", 30000, null, "49f43b6e-ad68-4a5d-9bb1-f012e4922d58");
             }
 
@@ -180,6 +218,30 @@ namespace B_BER_Schnelltest
             }
 
             /// <summary>
+            /// The PbDataAccessSave item.
+            /// </summary>
+            [RepositoryItem("87babf53-c0b2-487a-bde1-4b0d61272336")]
+            public virtual Ranorex.Button PbDataAccessSave
+            {
+                get
+                {
+                    return _pbdataaccesssaveInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessSave item info.
+            /// </summary>
+            [RepositoryItemInfo("87babf53-c0b2-487a-bde1-4b0d61272336")]
+            public virtual RepoItemInfo PbDataAccessSaveInfo
+            {
+                get
+                {
+                    return _pbdataaccesssaveInfo;
+                }
+            }
+
+            /// <summary>
             /// The PbToolBarItemsBekt_Button_Bereichsgruppen item.
             /// </summary>
             [RepositoryItem("49f43b6e-ad68-4a5d-9bb1-f012e4922d58")]
@@ -200,6 +262,341 @@ namespace B_BER_Schnelltest
                 get
                 {
                     return _pbtoolbaritemsbekt_button_bereichsgruppenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FlexGrid_Tabelle folder.
+            /// </summary>
+            [RepositoryFolder("34331042-9b0d-4cab-8c6b-db1a607cc5b5")]
+            public virtual B_BER_SchnelltestRepositoryFolders.FlexGrid_TabelleFolder FlexGrid_Tabelle
+            {
+                get { return _flexgrid_tabelle; }
+            }
+        }
+
+        /// <summary>
+        /// The FlexGrid_TabelleFolder folder.
+        /// </summary>
+        [RepositoryFolder("34331042-9b0d-4cab-8c6b-db1a607cc5b5")]
+        public partial class FlexGrid_TabelleFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _flexgridInfo;
+            RepoItemInfo _colbercdrow4Info;
+            RepoItemInfo _colbercdrow5Info;
+            RepoItemInfo _row5Info;
+            RepoItemInfo _colberbezrow5Info;
+            RepoItemInfo _colberposrow5Info;
+            RepoItemInfo _colberkontrbestandrow5Info;
+            RepoItemInfo _colberkontrerfolgrow5Info;
+            RepoItemInfo _colberkzherkrow5Info;
+            RepoItemInfo _colbercd1verrrow5Info;
+            RepoItemInfo _row5column0Info;
+
+            /// <summary>
+            /// Creates a new FlexGrid_Tabelle  folder.
+            /// </summary>
+            public FlexGrid_TabelleFolder(RepoGenBaseFolder parentFolder) :
+                    base("FlexGrid_Tabelle", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "34331042-9b0d-4cab-8c6b-db1a607cc5b5", "")
+            {
+                _flexgridInfo = new RepoItemInfo(this, "FlexGrid", "", "", 30000, null, "5037ea74-99dd-4ae3-9894-6f03eb4487d3");
+                _colbercdrow4Info = new RepoItemInfo(this, "ColBerCdRow4", "row[@accessiblename='Row 4']/cell[@accessiblename='colBer_cd Row 4']", "", 30000, null, "5f3c3b89-4ef8-4003-859c-f771920126ed");
+                _colbercdrow5Info = new RepoItemInfo(this, "ColBerCdRow5", "row[@accessiblename='Row 5']/cell[@accessiblename='colBer_cd Row 5']", "", 5000, null, "daabeb4b-32f1-4220-bffc-82ef52eb38b6");
+                _row5Info = new RepoItemInfo(this, "Row5", "row[@accessiblename='Row 5']", "", 5000, null, "0a158f8f-1fab-4c52-badd-2ab40dc335d9");
+                _colberbezrow5Info = new RepoItemInfo(this, "ColBerBezRow5", "row[@accessiblename='Row 5']/cell[@accessiblename='colBer_bez Row 5']", "", 30000, null, "85a5e474-25f1-42f6-851b-b6d2423ba7a9");
+                _colberposrow5Info = new RepoItemInfo(this, "ColBerPosRow5", "row[@accessiblename='Row 5']/cell[@accessiblename='colBer_pos Row 5']", "", 30000, null, "bb94143b-7e1c-4bfe-9398-b70f4332fc02");
+                _colberkontrbestandrow5Info = new RepoItemInfo(this, "ColBerKontrBestandRow5", "row[@accessiblename='Row 5']/cell[@accessiblename>'colBer_kontr_bestand Row']", "", 30000, null, "903fb3ea-2049-4e69-a7f3-4e66d1d11343");
+                _colberkontrerfolgrow5Info = new RepoItemInfo(this, "ColBerKontrErfolgRow5", "row[@accessiblename='Row 5']/cell[@accessiblename='colBer_kontr_erfolg Row 5']", "", 30000, null, "e182306d-7ba6-476a-a25a-1e571d0fda85");
+                _colberkzherkrow5Info = new RepoItemInfo(this, "ColBerKzherkRow5", "row[@accessiblename='Row 5']/cell[@accessiblename='colBer_kzherk Row 5']", "", 30000, null, "b5a26bad-55e8-47d5-adaf-fdd471286f54");
+                _colbercd1verrrow5Info = new RepoItemInfo(this, "ColBerCd1VerrRow5", "row[@accessiblename='Row 5']/cell[@accessiblename='colBer_cd1_verr Row 5']", "", 30000, null, "f01d03ca-b930-47d6-8643-64c37366b973");
+                _row5column0Info = new RepoItemInfo(this, "Row5Column0", "row[@accessiblename='Row 5']/cell[@accessiblename='Row 5 Column 0']", "", 30000, null, "ab9b232e-9e6e-4f27-a37d-f4238f894af0");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("34331042-9b0d-4cab-8c6b-db1a607cc5b5")]
+            public virtual Ranorex.Table Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("34331042-9b0d-4cab-8c6b-db1a607cc5b5")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FlexGrid item.
+            /// </summary>
+            [RepositoryItem("5037ea74-99dd-4ae3-9894-6f03eb4487d3")]
+            public virtual Ranorex.Table FlexGrid
+            {
+                get
+                {
+                    return _flexgridInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FlexGrid item info.
+            /// </summary>
+            [RepositoryItemInfo("5037ea74-99dd-4ae3-9894-6f03eb4487d3")]
+            public virtual RepoItemInfo FlexGridInfo
+            {
+                get
+                {
+                    return _flexgridInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColBerCdRow4 item.
+            /// </summary>
+            [RepositoryItem("5f3c3b89-4ef8-4003-859c-f771920126ed")]
+            public virtual Ranorex.Cell ColBerCdRow4
+            {
+                get
+                {
+                    return _colbercdrow4Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBerCdRow4 item info.
+            /// </summary>
+            [RepositoryItemInfo("5f3c3b89-4ef8-4003-859c-f771920126ed")]
+            public virtual RepoItemInfo ColBerCdRow4Info
+            {
+                get
+                {
+                    return _colbercdrow4Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColBerCdRow5 item.
+            /// </summary>
+            [RepositoryItem("daabeb4b-32f1-4220-bffc-82ef52eb38b6")]
+            public virtual Ranorex.Cell ColBerCdRow5
+            {
+                get
+                {
+                    return _colbercdrow5Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBerCdRow5 item info.
+            /// </summary>
+            [RepositoryItemInfo("daabeb4b-32f1-4220-bffc-82ef52eb38b6")]
+            public virtual RepoItemInfo ColBerCdRow5Info
+            {
+                get
+                {
+                    return _colbercdrow5Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row5 item.
+            /// </summary>
+            [RepositoryItem("0a158f8f-1fab-4c52-badd-2ab40dc335d9")]
+            public virtual Ranorex.Row Row5
+            {
+                get
+                {
+                    return _row5Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row5 item info.
+            /// </summary>
+            [RepositoryItemInfo("0a158f8f-1fab-4c52-badd-2ab40dc335d9")]
+            public virtual RepoItemInfo Row5Info
+            {
+                get
+                {
+                    return _row5Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColBerBezRow5 item.
+            /// </summary>
+            [RepositoryItem("85a5e474-25f1-42f6-851b-b6d2423ba7a9")]
+            public virtual Ranorex.Cell ColBerBezRow5
+            {
+                get
+                {
+                    return _colberbezrow5Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBerBezRow5 item info.
+            /// </summary>
+            [RepositoryItemInfo("85a5e474-25f1-42f6-851b-b6d2423ba7a9")]
+            public virtual RepoItemInfo ColBerBezRow5Info
+            {
+                get
+                {
+                    return _colberbezrow5Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColBerPosRow5 item.
+            /// </summary>
+            [RepositoryItem("bb94143b-7e1c-4bfe-9398-b70f4332fc02")]
+            public virtual Ranorex.Cell ColBerPosRow5
+            {
+                get
+                {
+                    return _colberposrow5Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBerPosRow5 item info.
+            /// </summary>
+            [RepositoryItemInfo("bb94143b-7e1c-4bfe-9398-b70f4332fc02")]
+            public virtual RepoItemInfo ColBerPosRow5Info
+            {
+                get
+                {
+                    return _colberposrow5Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColBerKontrBestandRow5 item.
+            /// </summary>
+            [RepositoryItem("903fb3ea-2049-4e69-a7f3-4e66d1d11343")]
+            public virtual Ranorex.Cell ColBerKontrBestandRow5
+            {
+                get
+                {
+                    return _colberkontrbestandrow5Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBerKontrBestandRow5 item info.
+            /// </summary>
+            [RepositoryItemInfo("903fb3ea-2049-4e69-a7f3-4e66d1d11343")]
+            public virtual RepoItemInfo ColBerKontrBestandRow5Info
+            {
+                get
+                {
+                    return _colberkontrbestandrow5Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColBerKontrErfolgRow5 item.
+            /// </summary>
+            [RepositoryItem("e182306d-7ba6-476a-a25a-1e571d0fda85")]
+            public virtual Ranorex.Cell ColBerKontrErfolgRow5
+            {
+                get
+                {
+                    return _colberkontrerfolgrow5Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBerKontrErfolgRow5 item info.
+            /// </summary>
+            [RepositoryItemInfo("e182306d-7ba6-476a-a25a-1e571d0fda85")]
+            public virtual RepoItemInfo ColBerKontrErfolgRow5Info
+            {
+                get
+                {
+                    return _colberkontrerfolgrow5Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColBerKzherkRow5 item.
+            /// </summary>
+            [RepositoryItem("b5a26bad-55e8-47d5-adaf-fdd471286f54")]
+            public virtual Ranorex.Cell ColBerKzherkRow5
+            {
+                get
+                {
+                    return _colberkzherkrow5Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBerKzherkRow5 item info.
+            /// </summary>
+            [RepositoryItemInfo("b5a26bad-55e8-47d5-adaf-fdd471286f54")]
+            public virtual RepoItemInfo ColBerKzherkRow5Info
+            {
+                get
+                {
+                    return _colberkzherkrow5Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColBerCd1VerrRow5 item.
+            /// </summary>
+            [RepositoryItem("f01d03ca-b930-47d6-8643-64c37366b973")]
+            public virtual Ranorex.Cell ColBerCd1VerrRow5
+            {
+                get
+                {
+                    return _colbercd1verrrow5Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBerCd1VerrRow5 item info.
+            /// </summary>
+            [RepositoryItemInfo("f01d03ca-b930-47d6-8643-64c37366b973")]
+            public virtual RepoItemInfo ColBerCd1VerrRow5Info
+            {
+                get
+                {
+                    return _colbercd1verrrow5Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row5Column0 item.
+            /// </summary>
+            [RepositoryItem("ab9b232e-9e6e-4f27-a37d-f4238f894af0")]
+            public virtual Ranorex.Cell Row5Column0
+            {
+                get
+                {
+                    return _row5column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row5Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("ab9b232e-9e6e-4f27-a37d-f4238f894af0")]
+            public virtual RepoItemInfo Row5Column0Info
+            {
+                get
+                {
+                    return _row5column0Info;
                 }
             }
         }
@@ -424,6 +821,216 @@ namespace B_BER_Schnelltest
                 get
                 {
                     return _titlebar100bereichskontozuordnungInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The BBERAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("33e41625-c01c-4685-9d03-63acb30fdbd3")]
+        public partial class BBERAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _zeileeinfuegenInfo;
+
+            /// <summary>
+            /// Creates a new BBER  folder.
+            /// </summary>
+            public BBERAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("BBER", "/contextmenu[@processname='B_BER']", parentFolder, 30000, null, true, "33e41625-c01c-4685-9d03-63acb30fdbd3", "")
+            {
+                _zeileeinfuegenInfo = new RepoItemInfo(this, "ZeileEinfuegen", "menuitem[@accessiblename='Zeile einfügen']", "", 30000, null, "5c6a8f7f-5931-40c4-a8f6-4f898fede5a0");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("33e41625-c01c-4685-9d03-63acb30fdbd3")]
+            public virtual Ranorex.ContextMenu Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.ContextMenu>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("33e41625-c01c-4685-9d03-63acb30fdbd3")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ZeileEinfuegen item.
+            /// </summary>
+            [RepositoryItem("5c6a8f7f-5931-40c4-a8f6-4f898fede5a0")]
+            public virtual Ranorex.MenuItem ZeileEinfuegen
+            {
+                get
+                {
+                    return _zeileeinfuegenInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ZeileEinfuegen item info.
+            /// </summary>
+            [RepositoryItemInfo("5c6a8f7f-5931-40c4-a8f6-4f898fede5a0")]
+            public virtual RepoItemInfo ZeileEinfuegenInfo
+            {
+                get
+                {
+                    return _zeileeinfuegenInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DlgMessageBoxAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("06f124c4-23d1-4da9-b278-f8d27fde2dd8")]
+        public partial class DlgMessageBoxAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _verwaltenbereicheInfo;
+            RepoItemInfo _labelmeldungstextInfo;
+            RepoItemInfo _button0Info;
+            RepoItemInfo _button01Info;
+
+            /// <summary>
+            /// Creates a new DlgMessageBox  folder.
+            /// </summary>
+            public DlgMessageBoxAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DlgMessageBox", "/form[@controlname='dlgMessageBox']", parentFolder, 30000, null, true, "06f124c4-23d1-4da9-b278-f8d27fde2dd8", "")
+            {
+                _verwaltenbereicheInfo = new RepoItemInfo(this, "VerwaltenBereiche", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "6a9fbf34-5edd-4288-a24c-17a9c696810d");
+                _labelmeldungstextInfo = new RepoItemInfo(this, "LabelMeldungstext", "text[@controlname='labelMeldungstext']", "", 30000, null, "26392070-08b9-48b6-816d-f82508bf08dd");
+                _button0Info = new RepoItemInfo(this, "Button0", "button[@controlname='button0']", "", 30000, null, "7cd4e52a-15ff-46fd-b5a5-c88182ea2234");
+                _button01Info = new RepoItemInfo(this, "Button01", "button", "", 30000, null, "8f12a750-329d-4843-8e81-edc13f4753aa");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("06f124c4-23d1-4da9-b278-f8d27fde2dd8")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("06f124c4-23d1-4da9-b278-f8d27fde2dd8")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The VerwaltenBereiche item.
+            /// </summary>
+            [RepositoryItem("6a9fbf34-5edd-4288-a24c-17a9c696810d")]
+            public virtual Ranorex.TitleBar VerwaltenBereiche
+            {
+                get
+                {
+                    return _verwaltenbereicheInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The VerwaltenBereiche item info.
+            /// </summary>
+            [RepositoryItemInfo("6a9fbf34-5edd-4288-a24c-17a9c696810d")]
+            public virtual RepoItemInfo VerwaltenBereicheInfo
+            {
+                get
+                {
+                    return _verwaltenbereicheInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LabelMeldungstext item.
+            /// </summary>
+            [RepositoryItem("26392070-08b9-48b6-816d-f82508bf08dd")]
+            public virtual Ranorex.Text LabelMeldungstext
+            {
+                get
+                {
+                    return _labelmeldungstextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LabelMeldungstext item info.
+            /// </summary>
+            [RepositoryItemInfo("26392070-08b9-48b6-816d-f82508bf08dd")]
+            public virtual RepoItemInfo LabelMeldungstextInfo
+            {
+                get
+                {
+                    return _labelmeldungstextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Button0 item.
+            /// </summary>
+            [RepositoryItem("7cd4e52a-15ff-46fd-b5a5-c88182ea2234")]
+            public virtual Ranorex.Button Button0
+            {
+                get
+                {
+                    return _button0Info.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Button0 item info.
+            /// </summary>
+            [RepositoryItemInfo("7cd4e52a-15ff-46fd-b5a5-c88182ea2234")]
+            public virtual RepoItemInfo Button0Info
+            {
+                get
+                {
+                    return _button0Info;
+                }
+            }
+
+            /// <summary>
+            /// The Button01 item.
+            /// </summary>
+            [RepositoryItem("8f12a750-329d-4843-8e81-edc13f4753aa")]
+            public virtual Ranorex.Button Button01
+            {
+                get
+                {
+                    return _button01Info.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Button01 item info.
+            /// </summary>
+            [RepositoryItemInfo("8f12a750-329d-4843-8e81-edc13f4753aa")]
+            public virtual RepoItemInfo Button01Info
+            {
+                get
+                {
+                    return _button01Info;
                 }
             }
         }

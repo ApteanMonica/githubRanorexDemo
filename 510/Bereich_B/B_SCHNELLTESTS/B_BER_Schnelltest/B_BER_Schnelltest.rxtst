@@ -16,6 +16,32 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testmodule
+			id="056cffc9-bc0d-4c12-a068-6375e39a6eac"
+			name="Neuanlage_Speichern_pruefen"
+			ref="e901ba6f-e9cd-4441-b170-26270ebe0766"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BER_BEZ_NEU"
+					datasourceid="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
+					variableid="17eeab68-b84d-42fd-bd6f-ba30b70c3496"
+					variablename="BER_BEZ_NEU">
+					</var>
+					<var
+					dataname="BER_CD_NEU"
+					datasourceid="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
+					variableid="78fa645e-572f-4564-b052-5619eb8ad071"
+					variablename="BER_CD_NEU">
+					</var>
+					<var
+					dataname="FIBU_POS_NEU"
+					datasourceid="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
+					variableid="1c241ad9-4950-4b27-8234-044262f7d1af"
+					variablename="FIBU_POS_NEU">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="1905357d-ae7c-4b25-8d92-179d428152e6"
 			name="Bereiche_B_BER_Aufrufart_BER">
@@ -139,22 +165,45 @@
 			name="setup">
 			</setup>
 			<testmodule
+			id="6fc9f641-8372-4105-9bdb-98eb941fac68"
+			name="Aenderung_Bereich_Meldung"
+			ref="bd66f7a1-21ea-4ef5-8935-a441854e2842"
+			type="Recording">
+				<description>
+					<![CDATA[in Arbeit: nach Meldung kann Bereichskonto * nicht gelöscht werden]]>
+				</description>
+				<databinding>
+					<var
+					dataname="BER_BEZ_AEN"
+					datasourceid="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
+					variableid="ce8eaf31-67c2-46d6-bdf4-30e1057b7833"
+					variablename="BER_BEZ_AEN">
+					</var>
+					<var
+					dataname="FIBU_POS_AEN"
+					datasourceid="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
+					variableid="2c73edd3-71cc-4cd2-aa6c-a159ceb3ce9b"
+					variablename="FIBU_POS_AEN">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="76f3ba98-0c24-465c-aea3-9d722dc2c842"
 			name="Start_B_BER"
 			ref="2a0e3fae-4c6e-4c6a-8fe0-9dff8acfc17e"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm_BER"
-					datasourceid="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
-					variableid="aa21c9c6-8146-45ba-9cc6-8c788718bd7b"
-					variablename="Programm_BER">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
 					variableid="0c05adea-fe9d-4f6a-80e4-3134af39cb06"
 					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_BER"
+					datasourceid="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
+					variableid="aa21c9c6-8146-45ba-9cc6-8c788718bd7b"
+					variablename="Programm_BER">
 					</var>
 				</databinding>
 				<missingdatabinding>
@@ -171,6 +220,32 @@
 			name="Close_B_BER_BEREZ"
 			ref="82581317-92b0-414a-a407-c9674930b6a4"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="827d36b2-6dde-4fc9-9c7d-97c8f2235e02"
+			name="Neuanlage_Bereich"
+			ref="e96046f2-7447-4de2-87b1-7d28c8a0a004"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BER_CD_NEU"
+					datasourceid="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
+					variableid="adb9b1de-7280-4683-a1d7-5f0933c323bb"
+					variablename="BER_CD_NEU">
+					</var>
+					<var
+					dataname="FIBU_POS_NEU"
+					datasourceid="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
+					variableid="3cb9052b-eef6-488d-8a96-e48478c50314"
+					variablename="FIBU_POS_NEU">
+					</var>
+					<var
+					dataname="BER_BEZ_NEU"
+					datasourceid="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
+					variableid="09a108b1-f4df-4031-b305-8169b0837bcf"
+					variablename="BER_BEZ_NEU">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="86428169-631a-45a7-ad0a-a31edfec4ac0"
@@ -203,8 +278,38 @@
 					name="Programm_BEKT"
 					value="B_BER Aufrufart BEKT">
 					</param>
+					<param
+					name="***B_BER Aufrufart BER***"
+					value="">
+					</param>
+					<param
+					name="BER_CD_NEU"
+					value="5">
+					</param>
+					<param
+					name="BER_BEZ_NEU"
+					value="B_BER_ST">
+					</param>
+					<param
+					name="BER_BEZ_AEN"
+					value="B_BER_ST_AEN">
+					</param>
+					<param
+					name="FIBU_POS_NEU"
+					value="5">
+					</param>
+					<param
+					name="FIBU_POS_AEN"
+					value="6">
+					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="a8bc2e2a-766c-4f77-b9ee-2e49bd800d81"
+			name="Loeschen_Bereich_pruefen"
+			ref="6a00bf48-7410-4b4a-a6e2-401ed7dbd8f4"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="addc9cd0-3efd-4b44-a5a6-78a861732bda"
 			name="Close_B_BER_BEKT"
@@ -219,6 +324,32 @@
 			id="e5b96fc5-5916-4abe-88db-b903991044b0"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="f5b947e6-6955-46a5-9c7d-6e0d8cec0028"
+			name="Aenderung_Speichern_pruefen"
+			ref="40ec6915-edf3-4bb6-a3ac-707777132d34"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="FIBU_POS_AEN"
+					datasourceid="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
+					variableid="6193bbd4-2df7-4591-8f2e-492462885733"
+					variablename="FIBU_POS_AEN">
+					</var>
+					<var
+					dataname="BER_BEZ_AEN"
+					datasourceid="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
+					variableid="54900ff4-b00e-44ae-88d0-50ebf383b46a"
+					variablename="BER_BEZ_AEN">
+					</var>
+					<var
+					dataname="BER_CD_NEU"
+					datasourceid="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
+					variableid="1f0edb3a-0de0-4df0-bf36-02df4c03a9c3"
+					variablename="BER_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="f88852a8-5fb5-4146-b858-b781cb0b2836"
 			name="Start_B_BER_BEKT"
@@ -258,6 +389,26 @@
 							name="Start_B_BER">
 							</testmodule>
 						</setup>
+						<testmodule
+						id="827d36b2-6dde-4fc9-9c7d-97c8f2235e02"
+						name="Neuanlage_Bereich">
+						</testmodule>
+						<testmodule
+						id="056cffc9-bc0d-4c12-a068-6375e39a6eac"
+						name="Neuanlage_Speichern_pruefen">
+						</testmodule>
+						<testmodule
+						id="6fc9f641-8372-4105-9bdb-98eb941fac68"
+						name="Aenderung_Bereich_Meldung">
+						</testmodule>
+						<testmodule
+						id="f5b947e6-6955-46a5-9c7d-6e0d8cec0028"
+						name="Aenderung_Speichern_pruefen">
+						</testmodule>
+						<testmodule
+						id="a8bc2e2a-766c-4f77-b9ee-2e49bd800d81"
+						name="Loeschen_Bereich_pruefen">
+						</testmodule>
 						<teardown
 						id="4de3b15c-6705-40fd-a873-97460f8fdb8d"
 						name="teardown">
@@ -350,7 +501,7 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="2edd3f5e-263d-4215-83aa-5a6b1c5324fb">
+			id="1905357d-ae7c-4b25-8d92-179d428152e6">
 			</testcontainer>
 			<testcontainer
 			id="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce">

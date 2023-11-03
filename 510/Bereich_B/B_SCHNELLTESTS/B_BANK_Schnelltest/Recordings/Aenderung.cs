@@ -27,19 +27,19 @@ namespace B_ST_001_B_BANK.Recordings
     ///The Aenderung_Bankverbindung recording.
     /// </summary>
     [TestModule("c8076c0b-cec5-4deb-9235-1af22efd3f3d", ModuleType.Recording, 1)]
-    public partial class Aenderung_Bankverbindung : ITestModule
+    public partial class Aenderung : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository repository.
         /// </summary>
         public static global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository repo = global::B_ST_001_B_BANK.B_BANK_Schnelltest_Repository.Instance;
 
-        static Aenderung_Bankverbindung instance = new Aenderung_Bankverbindung();
+        static Aenderung instance = new Aenderung();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Aenderung_Bankverbindung()
+        public Aenderung()
         {
             Bank_Name_AEN = "B_BANK_SCHNELLTEST";
         }
@@ -47,7 +47,7 @@ namespace B_ST_001_B_BANK.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Aenderung_Bankverbindung Instance
+        public static Aenderung Instance
         {
             get { return instance; }
         }

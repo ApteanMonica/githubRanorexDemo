@@ -91,15 +91,15 @@
     <Compile Include="Program.cs">
       <id>84c7157b-5144-49ee-b29d-234a47dc7a1a</id>
     </Compile>
-    <Compile Include="Recordings\Aenderung_Bankverbindung.cs">
+    <Compile Include="Recordings\Aenderung.cs">
       <BoundTo>e7580a72-5670-4ead-8cc2-38c1a59591e0</BoundTo>
-      <DependentUpon>Aenderung_Bankverbindung.rxrec</DependentUpon>
+      <DependentUpon>Aenderung.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>ca015c5b-c3fc-4326-9cd6-374bdda5720a</id>
     </Compile>
-    <Compile Include="Recordings\Aenderung_Bankverbindung.UserCode.cs">
+    <Compile Include="Recordings\Aenderung.UserCode.cs">
       <BoundTo>e7580a72-5670-4ead-8cc2-38c1a59591e0</BoundTo>
-      <DependentUpon>Aenderung_Bankverbindung.rxrec</DependentUpon>
+      <DependentUpon>Aenderung.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>dbeb5f81-6056-4450-8bdf-86bafbbeaa4e</id>
     </Compile>
@@ -127,27 +127,27 @@
       <UserCode>true</UserCode>
       <id>226ca980-78e5-462d-8d90-956039e92c91</id>
     </Compile>
-    <Compile Include="Recordings\Speichern_Aenderung_Daten_pruefen.cs">
-      <DependentUpon>Speichern_Aenderung_Daten_pruefen.rxrec</DependentUpon>
+    <Compile Include="Recordings\Aenderung_speichern_pruefen.cs">
+      <DependentUpon>Aenderung_speichern_pruefen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>3958389a-b510-4b20-985f-0012e001211f</id>
       <BoundTo>57ac0830-8c93-4616-b39f-6fd38d4dbe79</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Speichern_Aenderung_Daten_pruefen.UserCode.cs">
-      <DependentUpon>Speichern_Aenderung_Daten_pruefen.rxrec</DependentUpon>
+    <Compile Include="Recordings\Aenderung_speichern_pruefen.UserCode.cs">
+      <DependentUpon>Aenderung_speichern_pruefen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>04b48cae-a1f7-435a-bd28-e8c7ccbaccbc</id>
       <BoundTo>57ac0830-8c93-4616-b39f-6fd38d4dbe79</BoundTo>
     </Compile>
-    <Compile Include="Recordings\Speichern_Neuanlage_Daten_pruefen.cs">
+    <Compile Include="Recordings\Neuanlage_speichern_pruefen.cs">
       <BoundTo>230f92a5-33bb-496e-a812-ee1f0cf29a71</BoundTo>
-      <DependentUpon>Speichern_Neuanlage_Daten_pruefen.rxrec</DependentUpon>
+      <DependentUpon>Neuanlage_speichern_pruefen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>f214c268-0954-48b5-a31b-5a214fccc4d6</id>
     </Compile>
-    <Compile Include="Recordings\Speichern_Neuanlage_Daten_pruefen.UserCode.cs">
+    <Compile Include="Recordings\Neuanlage_speichern_pruefen.UserCode.cs">
       <BoundTo>230f92a5-33bb-496e-a812-ee1f0cf29a71</BoundTo>
-      <DependentUpon>Speichern_Neuanlage_Daten_pruefen.rxrec</DependentUpon>
+      <DependentUpon>Neuanlage_speichern_pruefen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>57b90fd7-4e78-4042-9959-4635c42bc80a</id>
     </Compile>
@@ -203,7 +203,7 @@
       <repoid>e1dc7736-e2a0-4f6e-9bac-b9970807436c</repoid>
       <reporootid>9fdaf88a-f645-431e-9d4f-e8bf416e1439</reporootid>
     </None>
-    <None Include="Recordings\Aenderung_Bankverbindung.rxrec">
+    <None Include="Recordings\Aenderung.rxrec">
       <BoundTo>ec0240bf-7cd3-44da-9b01-95f84f932ef1</BoundTo>
       <id>e7580a72-5670-4ead-8cc2-38c1a59591e0</id>
       <recordtableid>c8076c0b-cec5-4deb-9235-1af22efd3f3d</recordtableid>
@@ -218,12 +218,12 @@
       <id>88a3b342-b9e7-46d7-a0c9-67329fad556c</id>
       <recordtableid>245a434e-9a22-478c-8e63-3268ec839e39</recordtableid>
     </None>
-    <None Include="Recordings\Speichern_Aenderung_Daten_pruefen.rxrec">
+    <None Include="Recordings\Aenderung_speichern_pruefen.rxrec">
       <BoundTo>ec0240bf-7cd3-44da-9b01-95f84f932ef1</BoundTo>
       <id>57ac0830-8c93-4616-b39f-6fd38d4dbe79</id>
       <recordtableid>741b1de3-f60a-4714-9ef7-d029107f364c</recordtableid>
     </None>
-    <None Include="Recordings\Speichern_Neuanlage_Daten_pruefen.rxrec">
+    <None Include="Recordings\Neuanlage_speichern_pruefen.rxrec">
       <BoundTo>ec0240bf-7cd3-44da-9b01-95f84f932ef1</BoundTo>
       <id>230f92a5-33bb-496e-a812-ee1f0cf29a71</id>
       <recordtableid>c722c0d9-100a-4eda-bb75-ef9d2c1c0528</recordtableid>

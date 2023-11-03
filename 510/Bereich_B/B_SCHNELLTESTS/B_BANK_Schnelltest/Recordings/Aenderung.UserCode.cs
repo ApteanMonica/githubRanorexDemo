@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_ST_001_B_BANK.Recordings
 {
-    public partial class Speichern_Aenderung_Daten_pruefen
+    public partial class Aenderung
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
