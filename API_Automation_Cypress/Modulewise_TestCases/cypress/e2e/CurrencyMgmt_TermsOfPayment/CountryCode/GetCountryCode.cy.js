@@ -17,11 +17,7 @@ it("GetCountryCode", () => {
         var IdValue = ["VN"]
         cy.request({
             method: "POST",
-            url: `${BaseURL}CountryManagementService.svc/json/Country/CountriesByFilterContainer?context=${context}`,
-            Headers: {
-
-
-            },
+            url: `${BaseURL}CountryManagementService.svc/json/Country/CountriesByFilterContainer?context=${context}`,           
             body: {
                 "Filter": [
                     {
@@ -69,10 +65,7 @@ it("GetCountryCodeWithSort", () => {
     cy.request({
         method: "POST",
         url: `${BaseURL}CountryManagementService.svc/json/Country/CountriesByFilterContainer?context=${context}`,
-        Headers: {
-
-
-        },
+       
         body: {
             "Filter": [
                 {
@@ -158,10 +151,7 @@ it("GetCountryCodeWithMultipleValue", () => {
     cy.request({
         method: "POST",
         url: `${BaseURL}CountryManagementService.svc/json/Country/CountriesByFilterContainer?context=${context}`,
-        Headers: {
 
-
-        },
         body: {
             "Filter": [
                 {
@@ -235,10 +225,7 @@ it("GetCountryCodeWithGreaterThanEqual", () => {
     cy.request({
         method: "POST",
         url: `${BaseURL}CountryManagementService.svc/json/Country/CountriesByFilterContainer?context=${context}`,
-        Headers: {
-
-
-        },
+       
         body: {
             "Filter": [
                 {

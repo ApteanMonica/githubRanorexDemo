@@ -18,10 +18,7 @@ describe("Language ValIdations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}LanguageService.svc/json/Language/LanguagesByFilterContainer?context=${context}`,
-            Headers: {
-
-
-            },
+            
             body: {
                 "Filter": [
                     {
@@ -60,10 +57,7 @@ describe("Language ValIdations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}LanguageService.svc/json/Language/LanguagesByFilterContainer?context=${context}`,
-            Headers: {
-
-
-            },
+            
             body: {
                 "Filter": [
                     {
@@ -107,10 +101,7 @@ describe("Language ValIdations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}LanguageService.svc/json/Language/LanguagesByFilterContainer?context=${context}`,
-            Headers: {
-
-
-            },
+            
             body: {
                 "Filter": [
                     {
@@ -143,9 +134,6 @@ describe("Language ValIdations", () => {
             assert.equal(response.body.Value[1]["WindowsLanguageCode"], "DEU")
 
 
-
-
-
             cy.log("Length: " + response.body.Value.length)
             assert.equal(response.body.Value.length, '2')
             expect(response.status).to.eq(200)
@@ -161,10 +149,7 @@ describe("Language ValIdations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}LanguageService.svc/json/Language/LanguagesByFilterContainer?context=${context}`,
-            Headers: {
-
-
-            },
+            
             body: {
                 "Filter": [
                     {

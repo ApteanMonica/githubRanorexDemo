@@ -11,20 +11,15 @@ it("prerequisites", () => {
         })
     })
 
-    //This testcase is to retrieve the get country code 
-it("GetAreaByAreaID", () => {
+    //This testcase is to verify the user is able to get a single value
+it("Verify the user is able to get a single value", () => {
 
 
-        var IdValue = ["3"]
+        var AreaID = ["3"]
         cy.request({
             method: "GET",
-            url: `${AreaBaseURL}AreaService.svc/json/Area/${IdValue}/?context=${context}`,
-            Headers: {
-
-
-            },
-            body: {
-            }
+            url: `${AreaBaseURL}AreaService.svc/json/Area/${AreaID}/?context=${context}`,
+            
         }).then((response) => {
 
             //Assertions 

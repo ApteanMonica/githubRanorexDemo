@@ -21,12 +21,7 @@ describe("Terms of payment Validations", () => {
         cy.request({
             method: "GET",
             url: `${BaseURL}api-rw-fi-v1-TermsOfPaymentService.svc/json/TermsOfPayment/TermsOfPayments?context=${context}`,
-            Headers: {
-
-            },
-            body: {
-                                
-            }
+            
 
         }).then((response) => {
             //assertions

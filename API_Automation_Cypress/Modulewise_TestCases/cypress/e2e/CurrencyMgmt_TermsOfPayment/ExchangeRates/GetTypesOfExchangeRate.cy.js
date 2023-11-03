@@ -1,4 +1,4 @@
-describe("Language ValIdations", () => {
+describe("GetExchangeTypes", () => {
 
     var context = '';
     var BaseURL = 'localhost:8080//api-rw-fi-v1-'
@@ -17,13 +17,7 @@ describe("Language ValIdations", () => {
         cy.request({
             method: "GET",
             url: `${BaseURL}CurrencyService.svc/json/Currency/TypesOfExchangeRate?context=${context}`,
-            Headers: {
-
-
-            },
-            body: {
-                
-            }
+            
 
         }).then((response) => {
             //assertions

@@ -19,9 +19,7 @@ it("Verify the user is able to get value by the search  filter", () => {
         cy.request({
             method: "Post",
             url: `${AreaBaseURL}AreaService.svc/json/Area/AreasByFilterContainer?context=${context}`,
-            Headers: {
-                
-            },
+           
             body: {
                 
                 

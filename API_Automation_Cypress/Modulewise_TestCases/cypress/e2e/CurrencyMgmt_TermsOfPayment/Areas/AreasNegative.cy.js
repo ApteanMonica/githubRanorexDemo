@@ -27,12 +27,7 @@ describe("GetAreaByAreaID", () => {
         cy.request({
             method: "GET",
             url: `${AreaBaseURL}AreaService.svc/json/Area/AreasByCompany?context=${context2}`,
-            Headers: {
 
-
-            },
-            body: {
-            }
         }).then((response) => {
 
             //assertions
@@ -54,12 +49,7 @@ describe("GetAreaByAreaID", () => {
             cy.request({
             method: "GET",
             url: `${AreaBaseURL}AreaService.svc/json/Area/AreasByCompany?context=123456789`,
-            Headers: {
-
-
-            },
-            body: {
-            }
+            
         }).then((response) => {
 
             //assertions
@@ -82,12 +72,7 @@ it("Verify the user is unable to get a single value with invalid ref_code", () =
     cy.request({
         method: "GET",
         url: `${AreaBaseURL}AreaService.svc/json/Area/${AreaID}/?context=${context}`,
-        Headers: {
-
-
-        },
-        body: {
-        }
+        
     }).then((response) => {
 
          //assertions
@@ -110,12 +95,7 @@ it("Verify the user is unable to get a single value with invalid ref_code", () =
         cy.request({
             method: "GET",
             url: `${AreaBaseURL}AreaService.svc/json/Area/${AreaID}/?context=${context2}`,
-            Headers: {
-
-
-            },
-            body: {
-            }
+           
         }).then((response) => {
 
              //assertions
@@ -129,20 +109,15 @@ it("Verify the user is unable to get a single value with invalid ref_code", () =
         })
     });
 
-    //This testcase is to verify the user is not able to area with an invalid context
-    it("Verify the user is not able to area with an invalid context", () => {
+    //This testcase is to verify the user is not able to get area with an invalid context
+    it("Verify the user is not able to get area with an invalid context", () => {
 
 
         var AreaID = ["3"]
         cy.request({
             method: "GET",
             url: `${AreaBaseURL}AreaService.svc/json/Area/${AreaID}/?context=123456789`,
-            Headers: {
-
-
-            },
-            body: {
-            }
+            
         }).then((response) => {
 
              //assertions
@@ -156,33 +131,7 @@ it("Verify the user is unable to get a single value with invalid ref_code", () =
         })
     });
 
-    // //This testcase is to verify if the user is not able get Area when passing the request with null object
-    // it("Verify if the user is not able get Area when passing the request with null object", () => {
-
-
-    //     var AreaID = ""
-    //     cy.request({
-    //         method: "GET",
-    //         url: `${AreaBaseURL}AreaService.svc/json/Area/${AreaID}/?context=${context}`,
-    //         Headers: {
-
-
-    //         },
-    //         body: {
-    //         }
-    //     }).then((response) => {
-
-    //          //assertions
-    //         assert.equal(response.body.Messages[0]["Id"], "rssoft.common.rs2.authentication.InvalidContextValueError")
-    //         //"The specified login context (123456789) is invalid"
-    //         assert.equal(response.body.Messages[0]["Text"], "Der angegebene Anmelde-Context (123456789) ist ungültig")
-
-    //         expect(response.status).to.eq(200)
- 
-
-    //     })
-    // });
-
+   
     //This testcase is to verify if the user not having permission to get  area using filter, can not get area using filter
     it("Verify if the user not having permission to get  area using filter, can not get area using filter", () => {
 
@@ -191,9 +140,7 @@ it("Verify the user is unable to get a single value with invalid ref_code", () =
         cy.request({
             method: "Post",
             url: `${AreaBaseURL}AreaService.svc/json/Area/AreasByFilterContainer?context=${context2}`,
-            Headers: {
-                
-            },
+           
             body: {
                 
                 
@@ -236,9 +183,7 @@ it("Verify the user is unable to get a single value with invalid ref_code", () =
         cy.request({
             method: "Post",
             url: `${AreaBaseURL}AreaService.svc/json/Area/AreasByFilterContainer?context=123456789`,
-            Headers: {
-                
-            },
+           
             body: {
                 
                 
@@ -267,9 +212,6 @@ it("Verify the user is unable to get a single value with invalid ref_code", () =
   
               expect(response.status).to.eq(200)
 
-
-            
-            
         })
     });
 

@@ -29,9 +29,7 @@ describe("Create terms of payment text validations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentCode}/TermsOfPaymentText?context=${context}`,
-            Headers: {
-
-            },
+            
             body:
             {
                 "Language": languageCode,
@@ -58,9 +56,7 @@ describe("Create terms of payment text validations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentCode}/TermsOfPaymentText?context=${context}`,
-            Headers: {
-
-            },
+            
             body:
             {
                 "Language": languageCode,
@@ -86,9 +82,7 @@ describe("Create terms of payment text validations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentCode}/TermsOfPaymentText?context=${context}`,
-            Headers: {
-
-            },
+            
             body:
             {
                 "Language": "",
@@ -114,9 +108,7 @@ describe("Create terms of payment text validations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/invalidtermsOfPaymentCode/TermsOfPaymentText?context=${context}`,
-            Headers: {
-
-            },
+            
             body:
             {
                 "Language": languageCode,
@@ -143,9 +135,7 @@ describe("Create terms of payment text validations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentCode}/TermsOfPaymentText?context=${context}`,
-            Headers: {
-
-            },
+            
             body:
             {
                 "Language": "Z",
@@ -171,9 +161,7 @@ describe("Create terms of payment text validations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentCode}/TermsOfPaymentText?context=${context}`,
-            Headers: {
-
-            },
+            
             body:
             {
             }
@@ -201,9 +189,7 @@ describe("Create terms of payment text validations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentCode}/TermsOfPaymentText?context=${context}`,
-            Headers: {
-
-            },
+            
             body:
             {
                 "Language": null,
@@ -233,9 +219,7 @@ describe("Create terms of payment text validations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentCode}/TermsOfPaymentText?context=invalidcontext`,
-            Headers: {
-
-            },
+            
             body:
             {
                 "Language": null,
@@ -268,9 +252,7 @@ describe("Create terms of payment text validations", () => {
             cy.request({
                 method: "POST",
                 url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentCode}/TermsOfPaymentText?context=${context2}`,
-                Headers: {
-    
-                },
+                
                 body:
                 {
                     "Language": languageCode,
@@ -299,11 +281,7 @@ describe("Create terms of payment text validations", () => {
         cy.request({
             method: "DELETE",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${invalidTermsOfPaymentCode}/TermsOfPaymentText?languageCode=${languageCode}&context=${context}`,
-            Headers: {
-
-            },
-            body: {
-            }
+            
 
         }).then((response) => {
             //assertions
@@ -324,11 +302,7 @@ describe("Create terms of payment text validations", () => {
         cy.request({
             method: "DELETE",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentCode}/TermsOfPaymentText?languageCode=${invalidLanguageCode}&context=${context}`,
-            Headers: {
-
-            },
-            body: {
-            }
+            
 
         }).then((response) => {
             //assertions
@@ -351,11 +325,7 @@ describe("Create terms of payment text validations", () => {
         cy.request({
             method: "DELETE",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${invalidTermsOfPaymentCode}/TermsOfPaymentText?languageCode=${invalidLanguageCode}&context=${context}`,
-            Headers: {
-
-            },
-            body: {
-            }
+            
 
         }).then((response) => {
             //assertions
@@ -376,11 +346,7 @@ describe("Create terms of payment text validations", () => {
         cy.request({
             method: "DELETE",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentCode}/TermsOfPaymentText?languageCode=${languageCode}&context=${invalidContext}`,
-            Headers: {
-
-            },
-            body: {
-            }
+            
 
         }).then((response) => {
             //assertions
@@ -403,11 +369,7 @@ describe("Create terms of payment text validations", () => {
         cy.request({
             method: "DELETE",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentCode}/TermsOfPaymentText?languageCode=${languageCode}&context=${context}`,
-            Headers: {
-
-            },
-            body: {
-            }
+            
 
         }).then((response) => {
             //assertions
@@ -418,12 +380,7 @@ describe("Create terms of payment text validations", () => {
         cy.request({
             method: "GET",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${languageCode}/TermsOfPaymentText?context=${context}`,
-            Headers: {
-
-            },
-            body: {
-
-            }
+            
 
         }).then((response) => {
             //assertions
@@ -461,11 +418,7 @@ describe("Create terms of payment text validations", () => {
         cy.request({
             method: "DELETE",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentCode}/TermsOfPaymentText?languageCode=${languageCode}&context=${context}`,
-            Headers: {
-
-            },
-            body: {
-            }
+            
 
         }).then((response) => {
             //assertions
@@ -492,11 +445,7 @@ describe("Create terms of payment text validations", () => {
             cy.request({
                 method: "DELETE",
                 url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentCode}/TermsOfPaymentText?languageCode=${languageCode}&context=${context2}`,
-                Headers: {
-
-                },
-                body: {
-                }
+                
 
             }).then((response) => {
                 //assertions

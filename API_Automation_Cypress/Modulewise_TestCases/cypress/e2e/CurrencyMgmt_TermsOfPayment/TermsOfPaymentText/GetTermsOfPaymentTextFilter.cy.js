@@ -21,9 +21,7 @@ describe("Get terms of payment text Validations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPaymentText/TermsOfPaymentTextBySearchFilter?context=${context}`,
-            Headers: {
-
-            },
+            
             body: {
 
                 "Filter": "D",
@@ -58,9 +56,7 @@ describe("Get terms of payment text Validations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPaymentText/TermsOfPaymentTextBySearchFilter?context=${context}`,
-            Headers: {
-
-            },
+            
             body: {
 
                 "Filter": "D",
@@ -88,9 +84,7 @@ describe("Get terms of payment text Validations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPaymentText/TermsOfPaymentTextBySearchFilter?context=${context}`,
-            Headers: {
-
-            },
+            
             body: {
 
                 "Filter": "E",
@@ -124,9 +118,7 @@ describe("Get terms of payment text Validations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPaymentText/TermsOfPaymentTextBySearchFilter?context=${context}`,
-            Headers: {
-
-            },
+            
             body: {
 
                 "Filter": "E",
@@ -160,9 +152,7 @@ describe("Get terms of payment text Validations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPaymentText/TermsOfPaymentTextBySearchFilter?context=${context}`,
-            Headers: {
-
-            },
+            
             body: {
             }
 

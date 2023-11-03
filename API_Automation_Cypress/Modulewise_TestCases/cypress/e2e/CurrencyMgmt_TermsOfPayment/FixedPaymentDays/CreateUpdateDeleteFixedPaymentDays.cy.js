@@ -35,9 +35,7 @@ describe("Fixed Payment Days Validations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentCode}/FixedPaymentDays?context=${context}`,
-            Headers: {
-
-            },
+            
             body: [{
 
                 "InvoiceDateDay": invoiceDateDay,
@@ -84,9 +82,7 @@ describe("Fixed Payment Days Validations", () => {
         cy.request({
             method: "PUT",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentCode}/FixedPaymentDays?context=${context}`,
-            Headers: {
-
-            },
+            
             body: [{
                 "InvoiceDateDay": invoiceDateDay,
                 "CashDiscountEndDay1": cashDiscountEndDay1,
@@ -127,12 +123,7 @@ describe("Fixed Payment Days Validations", () => {
         cy.request({
         method: "DELETE",
         url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentCode}/FixedPaymentDays/1?context=${context}`,
-        Headers: {
-
-        },
-        body: {
-            
-        }
+        
 
     }).then((response) => {
         //assertions
@@ -149,9 +140,7 @@ describe("Fixed Payment Days Validations", () => {
         cy.request({
             method: "PUT",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment?context=${context}`,
-            Headers: {
-
-            },
+            
             body: {
                 "Code": termsOfPaymentCode,
                 "State": 9,

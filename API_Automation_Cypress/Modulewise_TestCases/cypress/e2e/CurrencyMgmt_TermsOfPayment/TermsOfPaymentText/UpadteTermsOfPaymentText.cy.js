@@ -212,11 +212,7 @@ describe("Update terms of payment text validations", () => {
         cy.request({
             method: "DELETE",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentCode}/TermsOfPaymentText?languageCode=E&context=${context}`,
-            Headers: {
-
-            },
-            body: {
-            }})
+            })
 
         cy.request({
             method: "PUT",
@@ -251,9 +247,7 @@ describe("Update terms of payment text validations", () => {
         cy.request({
             method: "PUT",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentCode}/TermsOfPaymentText?context=${context}`,
-            Headers: {
-
-            },
+            
             body:
             {
                 "Language": languageCode,

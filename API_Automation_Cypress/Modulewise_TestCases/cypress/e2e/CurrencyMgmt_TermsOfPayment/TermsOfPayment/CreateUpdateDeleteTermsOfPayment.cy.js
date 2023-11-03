@@ -35,9 +35,7 @@ describe("Terms of payment Validations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment?context=${context}`,
-            Headers: {
-
-            },
+            
             body: {
                 "Code": code,
                 "State": state,
@@ -90,9 +88,7 @@ describe("Terms of payment Validations", () => {
         cy.request({
             method: "PUT",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment?context=${context}`,
-            Headers: {
-
-            },
+           
             body: {
                 "Code": code,
                 "State": updateState,
@@ -143,12 +139,7 @@ describe("Terms of payment Validations", () => {
             cy.request({
             method: "DELETE",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${code}?context=${context}`,
-            Headers: {
-
-            },
-            body: {
-                
-            }
+            
 
         }).then((response) => {
             //assertions
@@ -160,12 +151,7 @@ describe("Terms of payment Validations", () => {
         cy.request({
             method: "GET",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${code}?context=${context}`,
-            Headers: {
-
-            },
-            body: {
-                                
-            }
+            
 
         }).then((response) => {
             //assertions

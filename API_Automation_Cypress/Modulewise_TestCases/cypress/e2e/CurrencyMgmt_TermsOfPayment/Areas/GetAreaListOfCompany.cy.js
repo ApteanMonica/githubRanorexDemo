@@ -19,12 +19,7 @@ it("Verify the user can get all the value", () => {
         cy.request({
             method: "GET",
             url: `${AreaBaseURL}AreaService.svc/json/Area/AreasByCompany?context=${context}`,
-            Headers: {
-
-
-            },
-            body: {
-            }
+            
         }).then((response) => {
 
             //Assertions 

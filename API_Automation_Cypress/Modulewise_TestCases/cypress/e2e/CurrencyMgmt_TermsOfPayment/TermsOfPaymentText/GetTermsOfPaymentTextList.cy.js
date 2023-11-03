@@ -22,12 +22,7 @@ describe("Get Terms of payment Text List", () => {
         cy.request({
             method: "GET",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentTextCode}/TermsOfPaymentText?context=${context}`,
-            Headers: {
-
-            },
-            body: {
-
-            }
+            
 
         }).then((response) => {
             //assertions
@@ -76,12 +71,7 @@ describe("Get Terms of payment Text List", () => {
         cy.request({
             method: "GET",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentTextCode}/TermsOfPaymentText?context=${context}`,
-            Headers: {
-
-            },
-            body: {
-
-            }
+            
 
         }).then((response) => {
             //assertions
@@ -102,55 +92,7 @@ describe("Get Terms of payment Text List", () => {
         })
     })
 
-    /** 
-     * This it block is used to verify the user is not able to get all the terms of payment text with invalid language
-    */
-    // it("GetTermsOfPaymentTextWithInvalidCode", () => {
-    //     var termsOfPaymentTextCode='ZA'        
-    //     cy.request({
-    //         method: "GET",
-    //         url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentTextCode}/TermsOfPaymentText?context=${context}`,
-    //         Headers: {
-
-    //         },
-    //         body: {
-
-    //         }
-
-    //     }).then((response) => {
-    //         //assertions
-
-
-    //         expect(response.status).to.eq(200)
-
-
-    //     })
-    // })
-
-    /** 
-     * This it block is used to verify the user is not able to get all terms of payment text with an invalid URL
-    */
-    // it("GetTermsOfPaymentTextWithInvalidURL", () => {
-    //     var termsOfPaymentTextCode='ZA'        
-    //     cy.request({
-    //         method: "GET",
-    //         url: `${BaseURL}invalidURL/context=${context}`,
-    //         Headers: {
-
-    //         },
-    //         body: {
-
-    //         }
-
-    //     }).then((response) => {
-    //         //assertions
-
-
-    //         expect(response.status).to.eq(200)
-
-
-    //     })
-    // })
+   
 
     /** 
      * This it block is used to verify the user not get terms of payment text with invalid context
@@ -161,12 +103,7 @@ describe("Get Terms of payment Text List", () => {
         cy.request({
             method: "GET",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment/${termsOfPaymentTextCode}/TermsOfPaymentText?context=${invalidContext}`,
-            Headers: {
-
-            },
-            body: {
-
-            }
+            
 
         }).then((response) => {
             //assertions

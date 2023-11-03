@@ -19,10 +19,7 @@ describe("TaxCode ValIdations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TaxCodeAdministrationService.svc/json/TaxCode/TaxCodeByFilterContainer?context=${context}`,
-            Headers: {
-
-
-            },
+            
             body: {
                 "Filter" : [
                     {
@@ -77,10 +74,7 @@ describe("TaxCode ValIdations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TaxCodeAdministrationService.svc/json/TaxCode/TaxCodeByFilterContainer?context=${context}`,
-            Headers: {
-
-
-            },
+            
             body: {
                 "Filter" : [
                     {
@@ -155,10 +149,7 @@ describe("TaxCode ValIdations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TaxCodeAdministrationService.svc/json/TaxCode/TaxCodeByFilterContainer?context=${context}`,
-            Headers: {
-
-
-            },
+            
             body: {
                 "Filter" : [
                     {
@@ -232,10 +223,7 @@ describe("TaxCode ValIdations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TaxCodeAdministrationService.svc/json/TaxCode/TaxCodeByFilterContainer?context=${context}`,
-            Headers: {
-
-
-            },
+            
             body: {
                 "Filter" : [
                     {

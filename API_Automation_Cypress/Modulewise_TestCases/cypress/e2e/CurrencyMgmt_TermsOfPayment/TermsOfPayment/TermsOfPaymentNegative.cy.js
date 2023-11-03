@@ -40,9 +40,7 @@ describe("Terms of payment Validations Negative", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment?context=${context}`,
-            Headers: {
-
-            },
+            
             body: {
                 "Code": code,
                 "State": state,
@@ -83,9 +81,7 @@ describe("Terms of payment Validations Negative", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment?context=${context}`,
-            Headers: {
-
-            },
+            
             body: {
                 "Code": code,
                 "State": state,
@@ -124,9 +120,7 @@ describe("Terms of payment Validations Negative", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment?context=${context}`,
-            Headers: {
-
-            },
+            
             body: {
                 "Code": code,
                 "State": state,
@@ -163,9 +157,7 @@ describe("Terms of payment Validations Negative", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment?context=${context}`,
-            Headers: {
-
-            },
+            
             body: {
                 "Code": code,
                 "State": state,
@@ -203,9 +195,7 @@ describe("Terms of payment Validations Negative", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment?context=${context}`,
-            Headers: {
-
-            },
+            
             body: {
                 "Code": code,
                 "State": state,
@@ -248,9 +238,7 @@ describe("Terms of payment Validations Negative", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment?context=${context}`,
-            Headers: {
-
-            },
+            
             body: {
                 "Code": code,
                 "State": state,
@@ -291,9 +279,7 @@ describe("Terms of payment Validations Negative", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment?context=${context}`,
-            Headers: {
-
-            },
+            
             body: {
                 "Code": code,
                 "State": state,
@@ -329,9 +315,7 @@ describe("Terms of payment Validations Negative", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment?context=${context}`,
-            Headers: {
-
-            },
+            
             body: {
                 "Code": code,
                 "State": state,
@@ -362,9 +346,7 @@ describe("Terms of payment Validations Negative", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment?context=${context}`,
-            Headers: {
-
-            },
+            
             body: {
                 "Code": code,
                 "State": state,
@@ -404,9 +386,7 @@ describe("Terms of payment Validations Negative", () => {
         cy.request({
             method: "PUT",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment?context=${context}`,
-            Headers: {
-
-            },
+            
             body: {
                 "Code": code,
                 "State": updateState,
@@ -444,9 +424,7 @@ describe("Terms of payment Validations Negative", () => {
         cy.request({
             method: "PUT",
             url: `${BaseURL}TermsOfPaymentService.svc/json/TermsOfPayment?context=${context}`,
-            Headers: {
-
-            },
+            
             body: {
                 "Code": code,
                 "State": updateState,

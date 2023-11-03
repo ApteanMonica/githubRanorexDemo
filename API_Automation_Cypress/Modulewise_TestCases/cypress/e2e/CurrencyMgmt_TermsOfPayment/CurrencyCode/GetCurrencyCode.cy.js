@@ -17,10 +17,6 @@ describe("Currency Code ValIdations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}CurrencyService.svc/json/Currency/CurrenciesByFilterContainer?context=${context}`,
-            Headers: {
-
-
-            },
             body: {
                 "Filter" : [
                     {
@@ -65,10 +61,7 @@ describe("Currency Code ValIdations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}CurrencyService.svc/json/Currency/CurrenciesByFilterContainer?context=${context}`,
-            Headers: {
 
-
-            },
             body: {
                 "Filter" : [
                     {
@@ -130,10 +123,7 @@ describe("Currency Code ValIdations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}CurrencyService.svc/json/Currency/CurrenciesByFilterContainer?context=${context}`,
-            Headers: {
 
-
-            },
             body: {
                 "Filter" : [
                     {
@@ -193,10 +183,6 @@ describe("Currency Code ValIdations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}CurrencyService.svc/json/Currency/CurrenciesByFilterContainer?context=${context}`,
-            Headers: {
-
-
-            },
             body: {
                 "Filter" : [
                     {

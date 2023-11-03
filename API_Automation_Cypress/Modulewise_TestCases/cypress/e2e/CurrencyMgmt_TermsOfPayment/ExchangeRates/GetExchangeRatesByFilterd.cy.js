@@ -17,10 +17,7 @@ describe("Language ValIdations", () => {
         cy.request({
             method: "POST",
             url: `${BaseURL}CurrencyService.svc/json/Currency/ExchangeRatesByFilterContainer?context=${context}`,
-            Headers: {
-
-
-            },
+           
             body: {
                 "Filter" : [
                     {
