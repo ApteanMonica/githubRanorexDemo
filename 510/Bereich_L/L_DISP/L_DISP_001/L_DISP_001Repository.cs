@@ -1242,6 +1242,7 @@ namespace L_DISP
             RepoItemInfo _schliessenInfo;
             RepoItemInfo _colmengerow12Info;
             RepoItemInfo _colbaumdarstellungrow0Info;
+            RepoItemInfo _paneloptionenInfo;
 
             /// <summary>
             /// Creates a new FormProtokollFenster  folder.
@@ -1252,6 +1253,7 @@ namespace L_DISP
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "?/?/button[@accessiblename='Schließen']", "", 30000, null, "8731c8a9-6f65-45fc-ac43-c7aa4e5a06fb");
                 _colmengerow12Info = new RepoItemInfo(this, "ColMengeRow12", ".//table[@accessiblename='FlexGrid']/row[@accessiblename='Row 12']/cell[@accessiblename='colMenge Row 12']", "", 30000, null, "23088762-af61-4ec9-a4ad-a9843abf8ff7");
                 _colbaumdarstellungrow0Info = new RepoItemInfo(this, "ColBaumdarstellungRow0", "container[@controlname='tabelle']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBaumdarstellung Row 0']", "", 30000, null, "94a19c03-8595-4fd9-a4a6-d8475a2b564a");
+                _paneloptionenInfo = new RepoItemInfo(this, "PanelOptionen", "container[@controlname='panelOptionen']", "", 30000, null, "38ff79eb-d472-46fe-9e36-4b4eef5e8383");
             }
 
             /// <summary>
@@ -1347,6 +1349,30 @@ namespace L_DISP
                 get
                 {
                     return _colbaumdarstellungrow0Info;
+                }
+            }
+
+            /// <summary>
+            /// The PanelOptionen item.
+            /// </summary>
+            [RepositoryItem("38ff79eb-d472-46fe-9e36-4b4eef5e8383")]
+            public virtual Ranorex.Container PanelOptionen
+            {
+                get
+                {
+                    return _paneloptionenInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PanelOptionen item info.
+            /// </summary>
+            [RepositoryItemInfo("38ff79eb-d472-46fe-9e36-4b4eef5e8383")]
+            public virtual RepoItemInfo PanelOptionenInfo
+            {
+                get
+                {
+                    return _paneloptionenInfo;
                 }
             }
         }

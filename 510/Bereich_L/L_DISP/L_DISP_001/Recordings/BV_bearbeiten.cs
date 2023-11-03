@@ -132,19 +132,27 @@ namespace L_DISP.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBsvs.PbCommonBerechnung' at Center.", repo.FrmBsvs.PbCommonBerechnungInfo, new RecordItemIndex(8));
             repo.FrmBsvs.PbCommonBerechnung.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormProtokollFenster.ColBaumdarstellungRow0' at 43;6.", repo.FormProtokollFenster.ColBaumdarstellungRow0Info, new RecordItemIndex(9));
-            repo.FormProtokollFenster.ColBaumdarstellungRow0.Click("43;6");
+            // Mit Recoding eingefügt, damit die Baumstruktur beim Klick geöffnet wird
+            Report.Log(ReportLevel.Info, "Mouse", "Mit Recoding eingefügt, damit die Baumstruktur beim Klick geöffnet wird\r\nMouse Left Click item 'FormProtokollFenster.ColBaumdarstellungRow0' at 32;12.", repo.FormProtokollFenster.ColBaumdarstellungRow0Info, new RecordItemIndex(9));
+            repo.FormProtokollFenster.ColBaumdarstellungRow0.Click("32;12");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormProtokollFenster.ColBaumdarstellungRow0' at 57;8.", repo.FormProtokollFenster.ColBaumdarstellungRow0Info, new RecordItemIndex(10));
-            repo.FormProtokollFenster.ColBaumdarstellungRow0.Click("57;8");
+            // Mit Recoding eingefügt, damit die Baumstruktur beim Klick geöffnet wird
+            Report.Log(ReportLevel.Info, "Mouse", "Mit Recoding eingefügt, damit die Baumstruktur beim Klick geöffnet wird\r\nMouse Left Click item 'FormProtokollFenster.ColBaumdarstellungRow0' at 43;8.", repo.FormProtokollFenster.ColBaumdarstellungRow0Info, new RecordItemIndex(10));
+            repo.FormProtokollFenster.ColBaumdarstellungRow0.Click("43;8");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1,00') on item 'FormProtokollFenster.ColMengeRow12'.", repo.FormProtokollFenster.ColMengeRow12Info, new RecordItemIndex(11));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormProtokollFenster.ColBaumdarstellungRow0' at 43;6.", repo.FormProtokollFenster.ColBaumdarstellungRow0Info, new RecordItemIndex(11));
+            //repo.FormProtokollFenster.ColBaumdarstellungRow0.Click("43;6");
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormProtokollFenster.ColBaumdarstellungRow0' at 57;8.", repo.FormProtokollFenster.ColBaumdarstellungRow0Info, new RecordItemIndex(12));
+            //repo.FormProtokollFenster.ColBaumdarstellungRow0.Click("57;8");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1,00') on item 'FormProtokollFenster.ColMengeRow12'.", repo.FormProtokollFenster.ColMengeRow12Info, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.FormProtokollFenster.ColMengeRow12Info, "Text", "1,00");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormProtokollFenster.Schliessen' at Center.", repo.FormProtokollFenster.SchliessenInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormProtokollFenster.Schliessen' at Center.", repo.FormProtokollFenster.SchliessenInfo, new RecordItemIndex(14));
             repo.FormProtokollFenster.Schliessen.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBsvs.Schliessen' at Center.", repo.FrmBsvs.SchliessenInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBsvs.Schliessen' at Center.", repo.FrmBsvs.SchliessenInfo, new RecordItemIndex(15));
             repo.FrmBsvs.Schliessen.Click();
             
         }
