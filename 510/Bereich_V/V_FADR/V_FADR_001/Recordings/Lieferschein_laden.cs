@@ -166,11 +166,12 @@ namespace V_FADR_001.Recordings
             Keyboard.PrepareFocus(repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1);
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(12));
-            Delay.Duration(2000, false);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
+            // BAR: Schritt 13 und 14 von der Reihenfolge umgetauscht vorher war zuerst Delay und dann Tab
+            Report.Log(ReportLevel.Info, "Keyboard", "BAR: Schritt 13 und 14 von der Reihenfolge umgetauscht vorher war zuerst Delay und dann Tab\r\nKey 'Tab' Press.", new RecordItemIndex(12));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(13));
+            Delay.Duration(2000, false);
             
             //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(14));
             //repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
