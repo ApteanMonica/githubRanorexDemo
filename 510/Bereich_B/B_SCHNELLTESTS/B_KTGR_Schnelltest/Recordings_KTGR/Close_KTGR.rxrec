@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="cb2aed51-82f4-429c-8688-e1dfd010aec1"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_KTGR"
+	namespace="B_KTGR_Schnelltest.Recordings_KTGR">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="4595e7ae-a427-45c7-a775-6638732f025b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1b7a9db0-1498-4b90-9069-361fec43cf47"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblKtgr']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="914c728b-0c41-403a-8fdc-9a70dc7d6fb7"
+	name="B_KTGR_SchnelltestRepository"
+	relativepath="..\B_KTGR_SchnelltestRepository.rxrep">
+		<codegen
+		classname="B_KTGR_SchnelltestRepository"
+		namespace="B_KTGR_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="0c368f31-0d4b-43e7-a9f4-0b2459bebe68"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_KTGR.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

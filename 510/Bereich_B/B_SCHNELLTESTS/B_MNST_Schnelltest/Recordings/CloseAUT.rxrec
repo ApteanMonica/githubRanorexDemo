@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f9777123-7d0a-403b-99c9-442b2050e3f4"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_MNST.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="4595e7ae-a427-45c7-a775-6638732f025b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="913dcc76-a879-4b13-bfff-3d7764840779"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblMahnvarianten']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="51841172-52da-45cd-ac47-b3ccc656ee52"
+	name="B_MNST_SchnelltestRepository"
+	relativepath="..\B_MNST_SchnelltestRepository.rxrep">
+		<codegen
+		classname="B_MNST_SchnelltestRepository"
+		namespace="B_MNST">
+		</codegen>
+		<rootfolder
+		id="8ed3ac30-66c5-4d55-9191-ab5275ad3f63"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

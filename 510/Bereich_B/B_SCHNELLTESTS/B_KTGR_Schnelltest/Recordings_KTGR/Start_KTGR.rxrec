@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8879bf2b-ddba-45f0-827d-2159f2848de6"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Start_KTGR"
+	namespace="B_KTGR_Schnelltest.Recordings_KTGR">
+	</codegen>
+	<variables>
+		<var
+		id="d77118d2-ecb3-47e6-9f9c-7706ed0c05e9"
+		name="Programm_KTGR">
+			B_KTGR Aufrufart KTGR
+		</var>
+		<var
+		id="9b08cffd-f088-4337-9065-2ab25c6ca448"
+		name="Startfile">
+			C:\Testdaten\Allgemein\Start.bat
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		duration="100ms"
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Arguments"
+				variable="Programm_KTGR">
+				</binding>
+				<binding
+				target="FileName"
+				variable="Startfile">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Program Files\Microsoft Office\Office16\EXCEL.EXE
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="89723d13-abb7-4d4b-acc7-72357c4811fa"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1b7a9db0-1498-4b90-9069-361fec43cf47"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="19"
+				prefcap="titlebar"
+				rect="371,124,641,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Verwalten Kontengruppen
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Verwalten Kontengruppen
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblKtgr']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e9d2bb62-6cdc-4795-bc1f-27a431fed335">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1b7a9db0-1498-4b90-9069-361fec43cf47"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="19"
+				prefcap="titlebar"
+				rect="371,124,641,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Verwalten Kontengruppen
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Verwalten Kontengruppen
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblKtgr']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Verwalten Kontengruppen
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="914c728b-0c41-403a-8fdc-9a70dc7d6fb7"
+	name="B_KTGR_SchnelltestRepository"
+	relativepath="..\B_KTGR_SchnelltestRepository.rxrep">
+		<codegen
+		classname="B_KTGR_SchnelltestRepository"
+		namespace="B_KTGR_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="0c368f31-0d4b-43e7-a9f4-0b2459bebe68"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Start_KTGR.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

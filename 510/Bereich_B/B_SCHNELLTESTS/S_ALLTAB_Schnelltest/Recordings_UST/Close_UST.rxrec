@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c746a204-5273-4979-8668-3c286bf51e57"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_UST"
+	namespace="S_ALLTAB_Schnelltest.Recordings_UST">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="4595e7ae-a427-45c7-a775-6638732f025b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="101814db-4806-4339-8f6f-5a766278e8d7"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblUstVerwalten']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="e3834078-795f-4923-b053-58d50595caf9"
+	name="S_ALLTAB_SchnelltestRepository"
+	relativepath="..\S_ALLTAB_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_ALLTAB_SchnelltestRepository"
+		namespace="S_ALLTAB_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="3d368c45-82dd-4a56-a404-f23075cf2bc0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_UST.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
