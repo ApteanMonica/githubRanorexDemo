@@ -15,33 +15,6 @@ name="AEKOOE_001Repository">
 		<appfolder
 		addcaps="container,webdocument"
 		capname="webdocument"
-		id="da813e88-e1cf-4569-875b-328c5a9be540"
-		isrooted="True"
-		name="ApplicationUnderTest"
-		searchtimeout="30000ms"
-		usecache="False">
-			<basepath>
-				/dom[@domain='http://192.168.192.139/521_SP12/#login']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
-dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
-yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
-9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
-cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
-bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
-dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
-6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
-lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
-zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
-8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
-F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
-			</icon>
-		</appfolder>
-		<appfolder
-		addcaps="container,webdocument"
-		capname="webdocument"
 		id="e1232ab5-2b86-4d28-a6fc-d7451804a17e"
 		isrooted="True"
 		name="Login"
@@ -115,17 +88,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 				/dom[@domain='192.168.192.139']//section[#'appModule']/div/div/div[2]/div/div[2]/form[@action='http://192.168.192.139/521_SP12/#login']/fieldset/div/div/div[6]/button[@innertext='Anmelden']
 			</item>
 			<item
-			addcaps="unknown,webelement,atag"
-			capname="atag"
-			id="541b0ae4-b65a-4412-b023-61a7b8ba07fb"
-			name="Http192168192139521SP12Hashhome"
-			refimgid="32be750a-9d82-48f2-a84c-a84b73091d0c"
-			refpath="/dom[@domain='192.168.192.139']//section[#'layout-spa']/header/tag[@tagname='statusbarportal']/nav/div[1]/div[1]/div/div[1]/a[@href='http://192.168.192.139/521_SP12/#home']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'layout-spa']/header/?/?/nav/div[1]//a[@href&gt;'http://192.168.192.139/52']
-			</item>
-			<item
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
 			id="782220c7-1531-4b8e-9d89-9b719b32dd1e"
@@ -146,50 +108,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			robustPath=""
 			searchtimeout="30000ms">
 				/dom[@domain='192.168.192.139']//div[#'widget-info']/div/tag/div/div[2]/div/div[1]/?/?/div/span/a[2]/div
-			</item>
-			<item
-			addcaps="unknown,webelement,h2tag"
-			capname="h2tag"
-			id="a7a134a6-3306-4223-af79-0e8f5de0fdda"
-			name="SomeH2Tag"
-			refimgid="e4e4e95a-1dab-49f6-af9a-4c538d8806fe"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[1]/div[1]/h2"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section//h2
-			</item>
-			<item
-			addcaps="unknown,webelement,h4tag"
-			capname="h4tag"
-			id="374cfcbe-bdb1-421b-a888-4e7322b7c93c"
-			name="Antragskategorie"
-			refimgid="1e18def1-cefa-4ffb-a216-b24ab63a6677"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[1]/h4[@innertext='Antragskategorie']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[1]/h4[@innertext='Antragskategorie']
-			</item>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="817bc8b5-a5ad-4c9f-a053-e4c45db06b9f"
-			name="KInput_Ebenen"
-			refimgid="cb6541a5-f25d-4465-be44-1e62a94d5bed"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div/div[2]/span[@title='']/span/span[1]"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div/div[2]/span/span/span[1]
-			</item>
-			<item
-			addcaps="button,webelement,buttontag"
-			capname="buttontag"
-			id="fbf3ce06-3774-4b36-8376-5d678806f84c"
-			name="ButtonTagNeu"
-			refimgid="e2e64404-4ec1-43ac-b313-280a60a987c1"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[3]/button[@innertext='Neu']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[3]/button[@innertext='Neu']
 			</item>
 			<item
 			addcaps="unknown,webelement,divtag"
@@ -334,17 +252,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 				<item
 				addcaps="unknown,webelement,spantag"
 				capname="spantag"
-				id="ff90d0ed-adf1-4b8a-8dd6-931844585afa"
-				name="AnalyseNLISTENBULI002Docx"
-				refimgid="68e1fa70-2803-420f-b0fd-f78a2f7474e2"
-				refpath="/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[25]/div/tag[@tagname='dmsfield']/div/div/div/tag[@tagname='dmscontrol']/div/tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[1]/div[1]/div[2]/form[@action='http://192.168.192.139/521_SP12/#request']/div/ul/li/span[2]/span[@title='Analyse N_LISTEN_BULI_002.docx']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[25]/?/?/tag[@tagname='dmsfield']/div//tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[1]/div[1]/div[2]/form[@action='http://192.168.192.139/521_SP12/#request']/?/?/ul/li/span[2]/span[@title&gt;'Analyse N_LISTEN_BULI_002']
-				</item>
-				<item
-				addcaps="unknown,webelement,spantag"
-				capname="spantag"
 				id="2d9af843-dbed-42a2-8af2-fb68c118410e"
 				name="FileSUploadedSuccessfully"
 				refimgid="dd3b4ec9-7b07-4226-abdf-7b161f16f19b"
@@ -363,17 +270,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 				robustPath=""
 				searchtimeout="30000ms">
 					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[25]//tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[3]/div[2]/div[1]/tag/div/div/div/?/?/input[@type='text']
-				</item>
-				<item
-				addcaps="unknown,webelement,spantag"
-				capname="spantag"
-				id="161fde86-0680-4336-9d82-5829d270725d"
-				name="SonstigerAnhang"
-				refimgid="44d904b1-f17b-40c0-93d0-ab61cf925576"
-				refpath="/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[25]/div/tag[@tagname='dmsfield']/div/div/div/tag[@tagname='dmscontrol']/div/tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[3]/div[2]/tag[@tagname='kendodropdownlist']/div/div/div/span[@title='']/span/span[@innertext='sonstiger Anhang']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[25]/?/?/tag[@tagname='dmsfield']/div/div/?/?/tag[@tagname='dmscontrol']/div/tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[3]/div[2]/tag[@tagname='kendodropdownlist']/div/div/div/span[@title='']/span/span[@innertext='sonstiger Anhang']
 				</item>
 				<item
 				addcaps="unknown,webelement,spantag"
@@ -452,50 +348,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 				searchtimeout="30000ms">
 					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[25]//tag[@tagname='dmscontrol']/div/div[1]/div[2]/table/tbody/?/?/td[@innertext='Test_BAR']
 				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="divtag"
-				id="58de15a4-df5c-4c89-bdd2-af0b912e93c9"
-				name="ModuleModuleDvrDropdownlist"
-				refimgid="f0c7d186-9358-4e57-aeeb-91adf80ac4ff"
-				refpath="/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[2]/tag[@tagname='dropdownlist']/div"
-				robustPath=""
-				searchtimeout="30000ms">
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[2]/tag/div
-				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="divtag"
-				id="27bb2dcd-7b5b-430a-b7a5-f12b005ccee2"
-				name="KDropzone"
-				refimgid="ce47101b-f7ac-4d2f-85dd-1311c14473f9"
-				refpath="/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[25]/div/tag[@tagname='dmsfield']/div/div/div/tag[@tagname='dmscontrol']/div/tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[1]/div[1]/div[2]/form[@action='http://192.168.192.139/521_SP12/#request']/div/div"
-				robustPath=""
-				searchtimeout="30000ms">
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[25]/div/tag/div/div/div/tag[@tagname='dmscontrol']/div/tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[1]/div[1]/div[2]/form[@action='http://192.168.192.139/521_SP12/#request']/div/div
-				</item>
-				<item
-				addcaps="unknown,webelement,divtag"
-				capname="divtag"
-				id="519072c8-b08f-4fa3-a19e-3bb8c39ed74b"
-				name="ColMd6ColXs12"
-				refimgid="6c867e2d-d380-4d2b-a9bc-27a35f0b9039"
-				refpath="/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[25]/div/tag[@tagname='dmsfield']/div/div/div/tag[@tagname='dmscontrol']/div/tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[1]/div[1]/div[2]"
-				robustPath=""
-				searchtimeout="30000ms">
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[25]/div/tag/div/div/div/tag[@tagname='dmscontrol']/div/tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[1]/div[1]/div[2]
-				</item>
-				<item
-				addcaps="unknown,webelement,spantag"
-				capname="spantag"
-				id="5b32d70e-013e-4a8b-bc77-6948c0b94e1a"
-				name="Arbeitsunfaehigkeitsmeldung"
-				refimgid="d57b71c6-f623-4b2a-95fc-387e38c5f8e2"
-				refpath="/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[25]/div/tag[@tagname='dmsfield']/div/div/div/tag[@tagname='dmscontrol']/div/tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[3]/div[2]/tag[@tagname='kendodropdownlist']/div/div/div/span[@title='']/span/span[@innertext='Arbeitsunfähigkeitsmeldung']"
-				robustPath=""
-				searchtimeout="30000ms">
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[25]/div/tag/div/div/div/tag[@tagname='dmscontrol']/div/tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[3]/div[2]/tag[@tagname='kendodropdownlist']/div/div/div/span[@title='']/span/span[@innertext&gt;'Arbeitsunf&#228;higkeitsmeldun']
-				</item>
 				<basepath>
 					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]
 				</basepath>
@@ -525,23 +377,12 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			<item
 			addcaps="unknown,webelement,tdtag"
 			capname="tdtag"
-			id="6f286abb-8a56-41f0-aa27-4849fe125532"
-			name="TdTag00141"
-			refimgid="60ea3eee-4d57-4bd3-ac2c-8f68c0af9ca6"
-			refpath="/dom[@domain='192.168.192.139']//div[#'requestgrid']/div[2]/table/tbody/tr[3]/td[@innertext='00141']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//div[#'requestgrid']/div[2]/table//td[@innertext='00141']
-			</item>
-			<item
-			addcaps="unknown,webelement,tdtag"
-			capname="tdtag"
 			id="2ac00e76-ec68-4d29-a392-c6fc0b491328"
-			name="TdTag_mit_Datum_02_05_2022"
+			name="TdTag_mit_Tagesdatum"
 			refimgid="7e4eed03-8bcb-477b-ae64-56176f7c7a90"
 			robustPath=""
 			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//div[#'requestgrid']/div[2]/table//td[@innertext='02.05.2022']
+				/dom[@domain='192.168.192.139']//div[#'requestgrid']/div[2]/table//td[@innertext='$Tagesdatum$']
 			</item>
 			<item
 			addcaps="unknown,webelement,divtag"
@@ -555,39 +396,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[1]/div[1]
 			</item>
 			<item
-			addcaps="unknown,webelement,sectiontag"
-			capname="sectiontag"
-			id="8e6ef510-61f9-4026-a8e8-baed2c8f82d3"
-			name="ModuleModuleIvAekoReqRequest"
-			refimgid="94995d4e-f530-4f5f-8ecc-c9dc4a37a670"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section
-			</item>
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="9a82fdfe-fb20-44e8-8c3e-87a8676b9e43"
-			name="DivTagRow"
-			refimgid="e140334f-dfcc-41e4-86d0-358e76098e7f"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[1]"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[1]
-			</item>
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="61a47c1f-334d-414f-a47b-568bdbce7020"
-			name="ModalHeader"
-			refimgid="27142f2d-a56c-4f54-a580-918e0b165279"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[1]"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[1]
-			</item>
-			<item
 			addcaps="unknown,webelement,spantag"
 			capname="spantag"
 			id="551da38a-6b85-4989-8419-2344bf62d3f0"
@@ -597,48 +405,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			robustPath=""
 			searchtimeout="30000ms">
 				/dom[@domain='192.168.192.139']//section[#'appModule']/section//span[@innertext='Antrag']
-			</item>
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="f67654a2-40ce-48e7-8c39-d4549153e5b4"
-			name="ColMd6ColXs121"
-			refimgid="cd779939-fc09-4972-aba5-ae82b76eb713"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[1]/div[2]"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[1]/div[2]
-			</item>
-			<item
-			addcaps="button,webelement,buttontag"
-			capname="buttontag"
-			id="51feaadb-9cf7-45aa-8fb4-2e7ae6fef2b9"
-			name="ButtonTagBtn_neu"
-			refimgid="3de30201-e345-4904-afd0-10f1463c2a32"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[1]/div[2]/table/tbody/tr/td[2]/button"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[1]/div[2]/table/tbody/tr/td[2]/button
-			</item>
-			<item
-			addcaps="button,webelement,buttontag"
-			capname="buttontag"
-			id="f9e497c1-7500-4ca2-9536-3872fe5cd8a9"
-			name="visible_ButtonTagBtn"
-			refimgid="3de30201-e345-4904-afd0-10f1463c2a32"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[1]/div[2]/table/tbody/tr/td[2]/button[@visible='True']
-			</item>
-			<item
-			addcaps="button,webelement,buttontag"
-			capname="buttontag"
-			id="5443087c-845b-4c36-9ab5-ea825b312a2b"
-			name="BtnBtnSecondary_Button_Krankenversicherung"
-			refimgid="e8a4ef16-8382-4e5d-a66a-e3322a4f77e9"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[2]/div/button[@visible='True']
 			</item>
 			<item
 			addcaps="button,webelement,buttontag"
@@ -684,39 +450,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[1]/h4[@innertext='Antragskategorie' and @visible='True']
 			</item>
 			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="cee022c4-b7c1-423f-9fed-f50026a40354"
-			name="ModalHeader1"
-			refimgid="a49baa51-bfea-4ef2-a802-478007268ad3"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[1]"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[1]
-			</item>
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="6ef0fc32-4b09-4692-b952-26953d34659e"
-			name="DivTag_1_Ebene"
-			refimgid="5ad7e20d-65c1-4e3e-9623-82343966d1fe"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div/div[@innertext='.']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div/div[@innertext='.']
-			</item>
-			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="8fcf8772-a1c1-4c70-9174-c234ccda8904"
-			name="DivTag2_Ebene"
-			refimgid="03a7104a-2ce1-4daf-a1a2-4cb1963d5a93"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div[2]/div[@innertext='.']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div[2]/div[@innertext='.']
-			</item>
-			<item
 			addcaps="unknown,webelement,spantag"
 			capname="spantag"
 			id="a00145fd-d42f-41d7-a6e7-65bf76eccb22"
@@ -750,28 +483,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div[2]/div[2]/span[@title='']/span/span[2]/span
 			</item>
 			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="13aba6b7-49f3-4abd-a6e4-9fc51d3c3a7a"
-			name="KIArrow60DownKIcon1"
-			refimgid="0173ddf9-d417-4fcc-951e-83e593afa131"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div[1]/div[2]/span[@title='']/span/span[2]/span"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div[1]/div[2]/span[@title='']/span/span[2]/span
-			</item>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="571a80bb-cc34-4ea7-b940-bd628f8772e5"
-			name="KDropdownWrapKStateDefault"
-			refimgid="6e9aa360-bd19-4803-803c-141d8812cb1a"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div[2]/div[2]/span[@title='']/span"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div[2]/div[2]/span[@title='']/span
-			</item>
-			<item
 			addcaps="button,webelement,buttontag"
 			capname="buttontag"
 			id="035625dd-0f92-4f75-b1e7-1bf07e51f28d"
@@ -781,17 +492,6 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			robustPath=""
 			searchtimeout="30000ms">
 				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[3]/button[@innertext='Neu']
-			</item>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="d93a1c78-fd3f-44ef-b43b-a7c5a3060730"
-			name="Anmeldung"
-			refimgid="e28bced6-8453-48ad-8ab9-c6a864cc3a2f"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/div/div/div[2]/div/div[1]/span[@innertext='Anmeldung']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/div/div/div[2]/div/div[1]/span[@innertext='Anmeldung']
 			</item>
 			<item
 			addcaps="unknown,webelement,tdtag"
@@ -926,17 +626,6 @@ Njn9vo296k/D73fbfL8GElzKQIKkt+klCH8ARJYkm8QxdZEAAAAASUVORK5CYII=
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@title&gt;'Startseite - Google Chrom']/container[@accessiblename&gt;'Startseite&#160;&#8211; Arbeitsspeichernutzung']/container/container[@accessiblerole='Pane']/container[2]/container[1]/toolbar[1]/?/?/container[@accessiblerole='Grouping']/text[@accessiblename='Adress- und Suchleiste']
-			</item>
-			<item
-			addcaps="container,accessible"
-			capname="container"
-			id="1aa0a1c0-8f81-490d-8f2e-41ae9a4bddaf"
-			name="Pane"
-			refimgid="60772392-19bb-4cb6-8711-3c9a7cc0d217"
-			refpath="/form[@title='Startseite - Google Chrome']/container[@accessiblename='Startseite – Arbeitsspeichernutzung – 86,2 MB - Google Chrome']/container[@accessiblerole='Pane']/container[@accessiblerole='Pane']/container[2]/container[1]"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@title&gt;'Startseite - Google Chrom']/container[@accessiblename&gt;'Startseite&#160;&#8211; Arbeitsspeichernutzung']/container/container[@accessiblerole='Pane']/container[2]/container[1]
 			</item>
 			<basepath>
 				/form[@title&gt;'Startseite - Google Chrom']
