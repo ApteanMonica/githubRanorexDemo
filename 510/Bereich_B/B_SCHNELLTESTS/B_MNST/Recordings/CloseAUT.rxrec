@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f9777123-7d0a-403b-99c9-442b2050e3f4"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_MNST.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="5c77a589-744f-4700-bfb6-2c7f92ae42d3"
+		name="CloseAutProcessIDVar">
+			-1
+		</var>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="4595e7ae-a427-45c7-a775-6638732f025b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="58eaee9f-ee7b-461e-9e6b-917ea803a991"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmBusy']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="51841172-52da-45cd-ac47-b3ccc656ee52"
+	name="B_MNSTRepository"
+	relativepath="..\B_MNSTRepository.rxrep">
+		<codegen
+		classname="B_MNSTRepository"
+		namespace="B_MNST">
+		</codegen>
+		<rootfolder
+		id="8ed3ac30-66c5-4d55-9191-ab5275ad3f63"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

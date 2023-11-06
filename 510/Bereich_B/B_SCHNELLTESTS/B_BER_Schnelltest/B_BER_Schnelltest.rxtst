@@ -55,10 +55,16 @@
 			<testcase
 			id="2edd3f5e-263d-4215-83aa-5a6b1c5324fb"
 			name="Bereichskontenzuordung_ueber_B_BER_Aufrufart_BEKT">
+				<description>
+					<![CDATA[OFFEN]]>
+				</description>
 			</testcase>
 			<testcase
 			id="2f8e5b54-213e-4afd-ae94-b70823c03882"
 			name="Bereichskonten_B_BER_Aufrufart_BEKT">
+				<description>
+					<![CDATA[OFFEN]]>
+				</description>
 			</testcase>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
@@ -169,9 +175,6 @@
 			name="Aenderung_Bereich_Meldung"
 			ref="bd66f7a1-21ea-4ef5-8935-a441854e2842"
 			type="Recording">
-				<description>
-					<![CDATA[in Arbeit: nach Meldung kann Bereichskonto * nicht gelöscht werden]]>
-				</description>
 				<databinding>
 					<var
 					dataname="BER_BEZ_AEN"
@@ -216,12 +219,6 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
-			id="7f29bdc8-b072-41bc-9dac-e00e8d7f75cb"
-			name="Close_B_BER_BEREZ"
-			ref="82581317-92b0-414a-a407-c9674930b6a4"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="827d36b2-6dde-4fc9-9c7d-97c8f2235e02"
 			name="Neuanlage_Bereich"
 			ref="e96046f2-7447-4de2-87b1-7d28c8a0a004"
@@ -250,6 +247,9 @@
 			<testcase
 			id="86428169-631a-45a7-ad0a-a31edfec4ac0"
 			name="Bereichsgruppen_ueber_B_BER_Aufrufart_BER">
+				<description>
+					<![CDATA[OFFEN]]>
+				</description>
 			</testcase>
 			<testmodule
 			id="888f9c92-ced2-451b-a5ac-d9754c99be90"
@@ -265,6 +265,9 @@
 			id="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
 			name="B_BER_Schnelltest"
 			reportlevel="Info;20">
+				<description>
+					<![CDATA[<p>TODO + Einzelzuordung + Baumzuordnung</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="Startfile"
@@ -481,10 +484,6 @@
 						id="e5b96fc5-5916-4abe-88db-b903991044b0"
 						name="teardown">
 							<testmodule
-							id="7f29bdc8-b072-41bc-9dac-e00e8d7f75cb"
-							name="Close_B_BER_BEREZ">
-							</testmodule>
-							<testmodule
 							id="49aea39f-7f6f-4b63-99d7-4635e0f418e0"
 							name="Close_B_BER_BEKT">
 							</testmodule>
@@ -502,6 +501,15 @@
 		name="TestRun">
 			<testcontainer
 			id="1905357d-ae7c-4b25-8d92-179d428152e6">
+			</testcontainer>
+			<testcontainer
+			id="2edd3f5e-263d-4215-83aa-5a6b1c5324fb">
+			</testcontainer>
+			<testcontainer
+			id="2f8e5b54-213e-4afd-ae94-b70823c03882">
+			</testcontainer>
+			<testcontainer
+			id="86428169-631a-45a7-ad0a-a31edfec4ac0">
 			</testcontainer>
 			<testcontainer
 			id="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce">

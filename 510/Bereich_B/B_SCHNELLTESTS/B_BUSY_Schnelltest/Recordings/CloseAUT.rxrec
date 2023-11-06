@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="2f9abcf0-db4b-4172-bb54-25fcec7ed29a"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_BUSY_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="4595e7ae-a427-45c7-a775-6638732f025b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d74cf5ba-8073-4304-9a59-c32ada95c364"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmBusy']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="c9ac4cd3-61a8-43db-a5b7-f52c53878122"
+	name="B_BUSY_SchnelltestRepository"
+	relativepath="..\B_BUSY_SchnelltestRepository.rxrep">
+		<codegen
+		classname="B_BUSY_SchnelltestRepository"
+		namespace="B_BUSY_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="94585fac-1128-4595-a14c-fa247f2dfc4e"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

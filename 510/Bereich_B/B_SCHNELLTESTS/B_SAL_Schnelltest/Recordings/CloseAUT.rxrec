@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a2073e0e-d44c-48f1-b166-9316a00f1d3d"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_SAL_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="4595e7ae-a427-45c7-a775-6638732f025b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="774b0729-4c7a-40f9-9bd1-06012f61c24d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblForm']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="c8bd48f4-c659-4178-97d2-0bd2d6221d6c"
+	name="B_SAL_SchnelltestRepository"
+	relativepath="..\B_SAL_SchnelltestRepository.rxrep">
+		<codegen
+		classname="B_SAL_SchnelltestRepository"
+		namespace="B_SAL_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="091242a1-2795-4c6d-8968-1872398f322c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -121,8 +121,8 @@ namespace B_BER_Schnelltest.Recordings_Bereiche
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}{Tab}'.", new RecordItemIndex(5));
             Keyboard.Press("{Tab}{Tab}{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '*' with focus on 'TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5'.", repo.TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5Info, new RecordItemIndex(6));
-            repo.TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5.PressKeys("*");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '9' with focus on 'TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5'.", repo.TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5Info, new RecordItemIndex(6));
+            repo.TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5.PressKeys("9");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -130,18 +130,17 @@ namespace B_BER_Schnelltest.Recordings_Bereiche
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(60000), new RecordItemIndex(8));
             repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bereichskonto '5' / '*' nicht vorhanden !') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Bereichskonto '5' / '*' nicht vorhanden !");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bereichskonto '5' / '9' nicht vorhanden !') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Bereichskonto '5' / '9' nicht vorhanden !");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(10));
             repo.DlgMessageBox.Button0.Click();
             
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(11));
-            //Delay.Duration(1000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(11));
+            Delay.Duration(1000, false);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click at {X=687,Y=352}.", new RecordItemIndex(12));
-            //Mouse.MoveTo(687, 352);
-            //Mouse.Click(System.Windows.Forms.MouseButtons.Left);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5' at Center.", repo.TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5Info, new RecordItemIndex(12));
+            repo.TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5.Click();
             
             //Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(13));
             //Delay.Duration(1000, false);
@@ -149,27 +148,41 @@ namespace B_BER_Schnelltest.Recordings_Bereiche
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5' at Center.", repo.TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5Info, new RecordItemIndex(14));
             //repo.TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5.DoubleClick();
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5'.", repo.TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5Info, new RecordItemIndex(15));
-            //Keyboard.PrepareFocus(repo.TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5);
-            //Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Back' Press.", new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Back' Press.", new RecordItemIndex(15));
             Keyboard.Press(System.Windows.Forms.Keys.Back, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '' with focus on 'TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5'.", repo.TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5Info, new RecordItemIndex(17));
-            //repo.TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5.PressKeys("");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(16));
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            //Report.Log(ReportLevel.Info, "Set value", "Setting attribute AccessibleValue to '' on item 'TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5'.", repo.TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5Info, new RecordItemIndex(18));
-            //repo.TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5.Element.SetAttributeValue("AccessibleValue", "");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(17));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}'.", new RecordItemIndex(20));
-            Keyboard.Press("{Tab}{Tab}{Tab}{Tab}{Tab}{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}{Tab}{Tab}'.", new RecordItemIndex(18));
+            Keyboard.Press("{Tab}{Tab}{Tab}{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBer.FlexGrid_Tabelle.ColBerCd1VerrRow5' at Center.", repo.TblBer.FlexGrid_Tabelle.ColBerCd1VerrRow5Info, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBer.FlexGrid_Tabelle.ColBerKzherkRow5' at Center.", repo.TblBer.FlexGrid_Tabelle.ColBerKzherkRow5Info, new RecordItemIndex(19));
+            repo.TblBer.FlexGrid_Tabelle.ColBerKzherkRow5.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBer.FlexGrid_Tabelle.ColBerCd1VerrRow5' at Center.", repo.TblBer.FlexGrid_Tabelle.ColBerCd1VerrRow5Info, new RecordItemIndex(20));
             repo.TblBer.FlexGrid_Tabelle.ColBerCd1VerrRow5.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBer.PbDataAccessSave' at Center.", repo.TblBer.PbDataAccessSaveInfo, new RecordItemIndex(21));
+            repo.TblBer.PbDataAccessSave.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(60000), new RecordItemIndex(22));
+            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Mehrere Herkunftsbereiche nicht zulässig') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(23));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Mehrere Herkunftsbereiche nicht zulässig");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(24));
+            repo.DlgMessageBox.Button0.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBer.FlexGrid_Tabelle.ColBerKzherkRow5' at Center.", repo.TblBer.FlexGrid_Tabelle.ColBerKzherkRow5Info, new RecordItemIndex(25));
+            repo.TblBer.FlexGrid_Tabelle.ColBerKzherkRow5.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBer.PbDataAccessSave' at Center.", repo.TblBer.PbDataAccessSaveInfo, new RecordItemIndex(26));
+            repo.TblBer.PbDataAccessSave.Click();
             
         }
 
