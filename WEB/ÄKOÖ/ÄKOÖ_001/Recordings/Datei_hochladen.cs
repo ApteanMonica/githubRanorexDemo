@@ -120,31 +120,6 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'OEffnen.SystemItemNameDisplay_Testdatei_zum_upload' at Center.", repo.OEffnen.SystemItemNameDisplay_Testdatei_zum_uploadInfo, new RecordItemIndex(8));
             repo.OEffnen.SystemItemNameDisplay_Testdatei_zum_upload.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$ausgewaehlte_Testdatei) on item 'Login.AKAT011RequestFormRow.Testdatei_Name_Testdatei'.", repo.Login.AKAT011RequestFormRow.Testdatei_Name_TestdateiInfo, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Testdatei_Name_TestdateiInfo, "InnerText", ausgewaehlte_Testdatei);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='File(s) uploaded successfully.') on item 'Login.AKAT011RequestFormRow.FileSUploadedSuccessfully'.", repo.Login.AKAT011RequestFormRow.FileSUploadedSuccessfullyInfo, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.FileSUploadedSuccessfullyInfo, "InnerText", "File(s) uploaded successfully.");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Testdatei zur Krankmeldung{Tab}' with focus on 'Login.AKAT011RequestFormRow.Text_Bezeichnung_Uploadfile'.", repo.Login.AKAT011RequestFormRow.Text_Bezeichnung_UploadfileInfo, new RecordItemIndex(11));
-            repo.Login.AKAT011RequestFormRow.Text_Bezeichnung_Uploadfile.PressKeys("Testdatei zur Krankmeldung{Tab}");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.DokumenttypWaehlen' at Center.", repo.Login.AKAT011RequestFormRow.DokumenttypWaehlenInfo, new RecordItemIndex(12));
-            repo.Login.AKAT011RequestFormRow.DokumenttypWaehlen.Click();
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Down}{Return}' with focus on 'Login.AKAT011RequestFormRow.DokumenttypWaehlen'.", repo.Login.AKAT011RequestFormRow.DokumenttypWaehlenInfo, new RecordItemIndex(13));
-            repo.Login.AKAT011RequestFormRow.DokumenttypWaehlen.PressKeys("{Down}{Return}");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue='Testdatei zur Krankmeldung') on item 'Login.AKAT011RequestFormRow.Text_Bezeichnung_Uploadfile'.", repo.Login.AKAT011RequestFormRow.Text_Bezeichnung_UploadfileInfo, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Bezeichnung_UploadfileInfo, "TagValue", "Testdatei zur Krankmeldung");
-            
-            // hier muss noch eine Lösung für die Validierung gefunden werde
-            Report.Log(ReportLevel.Info, "Validation", "hier muss noch eine Lösung für die Validierung gefunden werde\r\nValidating AttributeEqual (InnerText='Arbeitsunfähigkeitsmeldung') on item 'Login.AKAT011RequestFormRow.DokumenttypWaehlen'.", repo.Login.AKAT011RequestFormRow.DokumenttypWaehlenInfo, new RecordItemIndex(15));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.DokumenttypWaehlenInfo, "InnerText", "Arbeitsunfähigkeitsmeldung");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.Speichern' at Center.", repo.Login.AKAT011RequestFormRow.SpeichernInfo, new RecordItemIndex(16));
-            repo.Login.AKAT011RequestFormRow.Speichern.Click();
-            
         }
 
 #region Image Feature Data

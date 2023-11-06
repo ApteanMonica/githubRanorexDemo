@@ -164,12 +164,12 @@ namespace AEKOOE_001.Recordings
             repo.Login.ColMd6ColXs12Info.WaitForExists(120000);
             
             // ändern auf Validierung aktuelles Tagesdatum
-            Report.Log(ReportLevel.Info, "Validation", "ändern auf Validierung aktuelles Tagesdatum\r\nValidating Exists on item 'Login.TdTag_mit_Datum_02_05_2022'.", repo.Login.TdTag_mit_Datum_02_05_2022Info, new RecordItemIndex(1));
-            Validate.Exists(repo.Login.TdTag_mit_Datum_02_05_2022Info);
+            Report.Log(ReportLevel.Info, "Validation", "ändern auf Validierung aktuelles Tagesdatum\r\nValidating Exists on item 'Login.TdTag_mit_Tagesdatum'.", repo.Login.TdTag_mit_TagesdatumInfo, new RecordItemIndex(1));
+            Validate.Exists(repo.Login.TdTag_mit_TagesdatumInfo);
             
             // ändern auf Validierung aktuelles Tagesdatum
-            Report.Log(ReportLevel.Info, "Mouse", "ändern auf Validierung aktuelles Tagesdatum\r\nMouse Left Click item 'Login.TdTag_mit_Datum_02_05_2022' at Center.", repo.Login.TdTag_mit_Datum_02_05_2022Info, new RecordItemIndex(2));
-            repo.Login.TdTag_mit_Datum_02_05_2022.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "ändern auf Validierung aktuelles Tagesdatum\r\nMouse Left Click item 'Login.TdTag_mit_Tagesdatum' at Center.", repo.Login.TdTag_mit_TagesdatumInfo, new RecordItemIndex(2));
+            repo.Login.TdTag_mit_Tagesdatum.Click();
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Antrag auf Krankengeld') on item 'Login.AlertAlertInfo'.", repo.Login.AlertAlertInfoInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.Login.AlertAlertInfoInfo, "InnerText", "Antrag auf Krankengeld");

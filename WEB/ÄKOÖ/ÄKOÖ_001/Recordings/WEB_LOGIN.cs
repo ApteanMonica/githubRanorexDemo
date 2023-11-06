@@ -82,19 +82,31 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'rs{Tab}' with focus on 'Login.Text_benutzer'.", repo.Login.Text_benutzerInfo, new RecordItemIndex(0));
             repo.Login.Text_benutzer.PressKeys("rs{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'rsc{Tab}' with focus on 'Login.Password'.", repo.Login.PasswordInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue='rs') on item 'Login.Text_benutzer'.", repo.Login.Text_benutzerInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.Login.Text_benutzerInfo, "TagValue", "rs");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'rsc{Tab}' with focus on 'Login.Password'.", repo.Login.PasswordInfo, new RecordItemIndex(2));
             repo.Login.Password.PressKeys("rsc{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'k.aeko{Tab}' with focus on 'Login.LoginDataDb_DB'.", repo.Login.LoginDataDb_DBInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue='rsc') on item 'Login.Password'.", repo.Login.PasswordInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.Login.PasswordInfo, "TagValue", "rsc");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'k.aeko{Tab}' with focus on 'Login.LoginDataDb_DB'.", repo.Login.LoginDataDb_DBInfo, new RecordItemIndex(4));
             repo.Login.LoginDataDb_DB.PressKeys("k.aeko{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'WFK{Tab}' with focus on 'Login.LoginDataFirmnr'.", repo.Login.LoginDataFirmnrInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue='k.aeko') on item 'Login.LoginDataDb_DB'.", repo.Login.LoginDataDb_DBInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.Login.LoginDataDb_DBInfo, "TagValue", "k.aeko");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'WFK{Tab}' with focus on 'Login.LoginDataFirmnr'.", repo.Login.LoginDataFirmnrInfo, new RecordItemIndex(6));
             repo.Login.LoginDataFirmnr.PressKeys("WFK{Tab}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.Anmelden_Button' at Center.", repo.Login.Anmelden_ButtonInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue='WFK') on item 'Login.LoginDataFirmnr'.", repo.Login.LoginDataFirmnrInfo, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.Login.LoginDataFirmnrInfo, "TagValue", "WFK");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.Anmelden_Button' at Center.", repo.Login.Anmelden_ButtonInfo, new RecordItemIndex(8));
             repo.Login.Anmelden_Button.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.Card_Button_Stammdaten'", repo.Login.Card_Button_StammdatenInfo, new ActionTimeout(120000), new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.Card_Button_Stammdaten'", repo.Login.Card_Button_StammdatenInfo, new ActionTimeout(120000), new RecordItemIndex(9));
             repo.Login.Card_Button_StammdatenInfo.WaitForExists(120000);
             
         }
