@@ -82,8 +82,9 @@ namespace V_AUF_003.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Beleg_abschliessen_.Beleg_abschliessen_ReKorr' at Center.", repo.Beleg_abschliessen_.Beleg_abschliessen_ReKorrInfo, new RecordItemIndex(0));
             repo.Beleg_abschliessen_.Beleg_abschliessen_ReKorr.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblFadr.TitleBar100Rechnungskorrektur'", repo.TblFadr.TitleBar100RechnungskorrekturInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.TblFadr.TitleBar100RechnungskorrekturInfo.WaitForExists(120000);
+            // BAR: Wait for erhöht von 2 auf 3 Minuten
+            Report.Log(ReportLevel.Info, "Wait", "BAR: Wait for erhöht von 2 auf 3 Minuten\r\nWaiting 3m to exist. Associated repository item: 'TblFadr.TitleBar100Rechnungskorrektur'", repo.TblFadr.TitleBar100RechnungskorrekturInfo, new ActionTimeout(180000), new RecordItemIndex(1));
+            repo.TblFadr.TitleBar100RechnungskorrekturInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'Rechnungskorrektur') on item 'TblFadr.TitleBar100Rechnungskorrektur'.", repo.TblFadr.TitleBar100RechnungskorrekturInfo, new RecordItemIndex(2));
             Validate.AttributeRegex(repo.TblFadr.TitleBar100RechnungskorrekturInfo, "Text", new Regex("Rechnungskorrektur"));
