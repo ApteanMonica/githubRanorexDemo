@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="6e453e92-7948-47fc-b078-2b54490259ad"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_KLUMSJ_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="4595e7ae-a427-45c7-a775-6638732f025b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ce3ef273-3b8b-41b8-9570-88d291639ff3"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='[100]  Jahres-Umsatzliste']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="136a2918-8c4e-4698-a68c-4ca0440931f1"
+	name="B_KLUMSJ_SchnelltestRepository"
+	relativepath="..\B_KLUMSJ_SchnelltestRepository.rxrep">
+		<codegen
+		classname="B_KLUMSJ_SchnelltestRepository"
+		namespace="B_KLUMSJ_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="a22e659c-4094-4d34-87ac-e0523210442c"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
