@@ -1184,6 +1184,7 @@ namespace B_ELSTER_001
             RepoItemInfo _titlebar300elsterinformationInfo;
             RepoItemInfo _cbdsgvoInfo;
             RepoItemInfo _pbweiterInfo;
+            RepoItemInfo _lblmessage_preview_generation_failedInfo;
 
             /// <summary>
             /// Creates a new DlgElsterDSGVO  folder.
@@ -1191,9 +1192,10 @@ namespace B_ELSTER_001
             public DlgElsterDSGVOAppFolder(RepoGenBaseFolder parentFolder) :
                     base("DlgElsterDSGVO", "/form[@controlname='dlgElster_DSGVO']", parentFolder, 30000, null, true, "d72babd7-b672-4e7a-963b-548639d3851c", "")
             {
-                _titlebar300elsterinformationInfo = new RepoItemInfo(this, "TitleBar300ElsterInformation", "titlebar[@accessiblerole='TitleBar']", "", 270000, null, "f96b6b96-fe54-46bb-aef3-c6bd98fbb908");
+                _titlebar300elsterinformationInfo = new RepoItemInfo(this, "TitleBar300ElsterInformation", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "f96b6b96-fe54-46bb-aef3-c6bd98fbb908");
                 _cbdsgvoInfo = new RepoItemInfo(this, "CbDSGVO", "checkbox[@controlname='cbDSGVO']", "", 30000, null, "c48cb6eb-023c-4ee8-ae3b-54d9c5ebe011");
                 _pbweiterInfo = new RepoItemInfo(this, "PbWeiter", "button[@controlname='pbWeiter']", "", 30000, null, "3a570e26-4e52-4f2c-b8bc-ded6cbe7eaf9");
+                _lblmessage_preview_generation_failedInfo = new RepoItemInfo(this, "LblMessage_Preview_Generation_Failed", "container[@controlname='cPdfVorschau1']/container[@controlname='PreviewHandlerHostControl']/text[@controlname='lblMessage' and @text~'Preview Generation Failed']", "", 30000, null, "1136a1fa-20c7-4379-94e8-eb985bdb805e");
             }
 
             /// <summary>
@@ -1289,6 +1291,30 @@ namespace B_ELSTER_001
                 get
                 {
                     return _pbweiterInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LblMessage_Preview_Generation_Failed item.
+            /// </summary>
+            [RepositoryItem("1136a1fa-20c7-4379-94e8-eb985bdb805e")]
+            public virtual Ranorex.Text LblMessage_Preview_Generation_Failed
+            {
+                get
+                {
+                    return _lblmessage_preview_generation_failedInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LblMessage_Preview_Generation_Failed item info.
+            /// </summary>
+            [RepositoryItemInfo("1136a1fa-20c7-4379-94e8-eb985bdb805e")]
+            public virtual RepoItemInfo LblMessage_Preview_Generation_FailedInfo
+            {
+                get
+                {
+                    return _lblmessage_preview_generation_failedInfo;
                 }
             }
         }
