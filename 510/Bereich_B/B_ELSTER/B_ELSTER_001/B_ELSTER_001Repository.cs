@@ -1191,7 +1191,7 @@ namespace B_ELSTER_001
             public DlgElsterDSGVOAppFolder(RepoGenBaseFolder parentFolder) :
                     base("DlgElsterDSGVO", "/form[@controlname='dlgElster_DSGVO']", parentFolder, 30000, null, true, "d72babd7-b672-4e7a-963b-548639d3851c", "")
             {
-                _titlebar300elsterinformationInfo = new RepoItemInfo(this, "TitleBar300ElsterInformation", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "f96b6b96-fe54-46bb-aef3-c6bd98fbb908");
+                _titlebar300elsterinformationInfo = new RepoItemInfo(this, "TitleBar300ElsterInformation", "titlebar[@accessiblerole='TitleBar']", "", 270000, null, "f96b6b96-fe54-46bb-aef3-c6bd98fbb908");
                 _cbdsgvoInfo = new RepoItemInfo(this, "CbDSGVO", "checkbox[@controlname='cbDSGVO']", "", 30000, null, "c48cb6eb-023c-4ee8-ae3b-54d9c5ebe011");
                 _pbweiterInfo = new RepoItemInfo(this, "PbWeiter", "button[@controlname='pbWeiter']", "", 30000, null, "3a570e26-4e52-4f2c-b8bc-ded6cbe7eaf9");
             }
