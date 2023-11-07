@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="0767ac19-5fec-4804-a67b-0f31d6f0a29e"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_KLBL_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="4595e7ae-a427-45c7-a775-6638732f025b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="983af920-a265-434d-9459-a149e58b8e60"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmKlBl']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="c1d2d6ff-e189-4d64-ace4-31858f2a42b8"
+	name="B_KLBL_SchnelltestRepository"
+	relativepath="..\B_KLBL_SchnelltestRepository.rxrep">
+		<codegen
+		classname="B_KLBL_SchnelltestRepository"
+		namespace="B_KLBL_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="2149adad-26be-48ab-b368-c7dfb413c2a1"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

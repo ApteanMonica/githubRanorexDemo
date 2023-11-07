@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="b2f0fc34-8fb5-4ac4-9a61-0945061bbe0a"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartAUT"
+	namespace="B_KLBL_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+		<var
+		id="26109c78-72c6-48a4-9b87-cce4ce2f5f43"
+		name="Programm">
+			B_KLBL KL L
+		</var>
+		<var
+		id="2cf04365-999e-4322-9ba3-26b0002f6de1"
+		name="Startfile">
+			C:\Testdaten\Allgemein\Start.bat
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		duration="100ms"
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Arguments"
+				variable="Programm">
+				</binding>
+				<binding
+				target="FileName"
+				variable="Startfile">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Program Files\Microsoft Office\Office16\EXCEL.EXE
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="89723d13-abb7-4d4b-acc7-72357c4811fa"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="983af920-a265-434d-9459-a149e58b8e60"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="5"
+				prefcap="titlebar"
+				rect="-833,25,645,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100] Kontoblatt Kunden
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100] Kontoblatt Kunden
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmKlBl']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e9d2bb62-6cdc-4795-bc1f-27a431fed335">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="983af920-a265-434d-9459-a149e58b8e60"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="5"
+				prefcap="titlebar"
+				rect="-833,25,645,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100] Kontoblatt Kunden
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100] Kontoblatt Kunden
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmKlBl']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Kontoblatt Lieferanten
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="c1d2d6ff-e189-4d64-ace4-31858f2a42b8"
+	name="B_KLBL_SchnelltestRepository"
+	relativepath="..\B_KLBL_SchnelltestRepository.rxrep">
+		<codegen
+		classname="B_KLBL_SchnelltestRepository"
+		namespace="B_KLBL_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="2149adad-26be-48ab-b368-c7dfb413c2a1"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
