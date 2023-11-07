@@ -108,8 +108,9 @@ namespace V_AUF_001.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmAufk.TitleBar100Auftragserfassung'", repo.FrmAufk.TitleBar100AuftragserfassungInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmAufk.TitleBar100AuftragserfassungInfo.WaitForExists(120000);
+            // BAR: Wait for erhöht von 2 auf 3 Minuten
+            Report.Log(ReportLevel.Info, "Wait", "BAR: Wait for erhöht von 2 auf 3 Minuten\r\nWaiting 3m to exist. Associated repository item: 'FrmAufk.TitleBar100Auftragserfassung'", repo.FrmAufk.TitleBar100AuftragserfassungInfo, new ActionTimeout(180000), new RecordItemIndex(1));
+            repo.FrmAufk.TitleBar100AuftragserfassungInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'Auftragserfassung') on item 'FrmAufk.TitleBar100Auftragserfassung'.", repo.FrmAufk.TitleBar100AuftragserfassungInfo, new RecordItemIndex(2));
             Validate.AttributeRegex(repo.FrmAufk.TitleBar100AuftragserfassungInfo, "Text", new Regex("Auftragserfassung"));
