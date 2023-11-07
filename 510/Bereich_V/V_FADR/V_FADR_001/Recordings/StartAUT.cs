@@ -80,16 +80,14 @@ namespace V_FADR_001.Recordings
             set { _Programm = value; }
         }
 
-        string _Tagesdatum;
-
         /// <summary>
         /// Gets or sets the value of variable Tagesdatum.
         /// </summary>
         [TestVariable("b2600755-24e4-4043-a141-445844ed094f")]
         public string Tagesdatum
         {
-            get { return _Tagesdatum; }
-            set { _Tagesdatum = value; }
+            get { return repo.Tagesdatum; }
+            set { repo.Tagesdatum = value; }
         }
 
 #endregion
@@ -121,8 +119,8 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'TblFadr.TitleBar100Fakturierung'", repo.TblFadr.TitleBar100FakturierungInfo, new ActionTimeout(180000), new RecordItemIndex(1));
-            repo.TblFadr.TitleBar100FakturierungInfo.WaitForExists(180000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'TblFadr.TitleBar100Fakturierung'", repo.TblFadr.TitleBar100FakturierungInfo, new ActionTimeout(300000), new RecordItemIndex(1));
+            repo.TblFadr.TitleBar100FakturierungInfo.WaitForExists(300000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Fakturierung') on item 'TblFadr.TitleBar100Fakturierung'.", repo.TblFadr.TitleBar100FakturierungInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.TblFadr.TitleBar100FakturierungInfo, "Text", "Fakturierung");

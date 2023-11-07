@@ -124,8 +124,8 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Column0' at Center.", repo.TblFadr.Column0Info, new RecordItemIndex(6));
             repo.TblFadr.Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Auftragsnummer) on item 'TblFadr.Auftragsnummer'.", repo.TblFadr.AuftragsnummerInfo, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.TblFadr.AuftragsnummerInfo, "Text", Auftragsnummer);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Auftragsnummer) on item 'TblFadr.untere_Tabelle.Auftragsnummer_mit_Auftrnr'.", repo.TblFadr.untere_Tabelle.Auftragsnummer_mit_AuftrnrInfo, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.TblFadr.untere_Tabelle.Auftragsnummer_mit_AuftrnrInfo, "Text", Auftragsnummer);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbSpec2VSRechnung' at Center.", repo.TblFadr.PbSpec2VSRechnungInfo, new RecordItemIndex(8));
             repo.TblFadr.PbSpec2VSRechnung.Click();
@@ -136,26 +136,32 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbVorschau' at Center.", repo.DlgDrucken.PbVorschauInfo, new RecordItemIndex(10));
             repo.DlgDrucken.PbVorschau.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Vorschau.DruckvorschauSchliessen' at Center.", repo.Vorschau.DruckvorschauSchliessenInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Vorschau.ChkPPreviewClientArea25'", repo.Vorschau.ChkPPreviewClientArea25Info, new ActionTimeout(120000), new RecordItemIndex(11));
+            repo.Vorschau.ChkPPreviewClientArea25Info.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Vorschau.DruckvorschauSchliessen' at Center.", repo.Vorschau.DruckvorschauSchliessenInfo, new RecordItemIndex(12));
             repo.Vorschau.DruckvorschauSchliessen.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.Schliessen' at Center.", repo.DlgDrucken.SchliessenInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(13));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.Schliessen' at Center.", repo.DlgDrucken.SchliessenInfo, new RecordItemIndex(14));
             repo.DlgDrucken.Schliessen.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Column0' at Center.", repo.TblFadr.Column0Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Column0' at Center.", repo.TblFadr.Column0Info, new RecordItemIndex(15));
             repo.TblFadr.Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbSpec2Fakturenerstellung' at Center.", repo.TblFadr.PbSpec2FakturenerstellungInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbSpec2Fakturenerstellung' at Center.", repo.TblFadr.PbSpec2FakturenerstellungInfo, new RecordItemIndex(16));
             repo.TblFadr.PbSpec2Fakturenerstellung.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Rechnungsnummer' with focus on 'TblFadr.Rechnungsnummer'.", repo.TblFadr.RechnungsnummerInfo, new RecordItemIndex(15));
-            repo.TblFadr.Rechnungsnummer.PressKeys(Rechnungsnummer);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Rechnungsnummer' with focus on 'TblFadr.untere_Tabelle.Rechnungsnummer'.", repo.TblFadr.untere_Tabelle.RechnungsnummerInfo, new RecordItemIndex(17));
+            repo.TblFadr.untere_Tabelle.Rechnungsnummer.PressKeys(Rechnungsnummer);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(18));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Rechnungsnummer) on item 'TblFadr.Rechnungsnummer'.", repo.TblFadr.RechnungsnummerInfo, new RecordItemIndex(17));
-            Validate.AttributeRegex(repo.TblFadr.RechnungsnummerInfo, "Text", new Regex(Rechnungsnummer));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Rechnungsnummer) on item 'TblFadr.untere_Tabelle.Rechnungsnummer'.", repo.TblFadr.untere_Tabelle.RechnungsnummerInfo, new RecordItemIndex(19));
+            Validate.AttributeRegex(repo.TblFadr.untere_Tabelle.RechnungsnummerInfo, "Text", new Regex(Rechnungsnummer));
             
         }
 

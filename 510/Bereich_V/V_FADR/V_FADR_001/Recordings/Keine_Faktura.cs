@@ -93,37 +93,40 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbSpec3Extras' at Center.", repo.TblFadr.PbSpec3ExtrasInfo, new RecordItemIndex(0));
             repo.TblFadr.PbSpec3Extras.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VFADR.WarumWirdAuftragNichtFakturiert' at Center.", repo.VFADR.WarumWirdAuftragNichtFakturiertInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'VFADR.WarumWirdAuftragNichtFakturiert'", repo.VFADR.WarumWirdAuftragNichtFakturiertInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.VFADR.WarumWirdAuftragNichtFakturiertInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VFADR.WarumWirdAuftragNichtFakturiert' at Center.", repo.VFADR.WarumWirdAuftragNichtFakturiertInfo, new RecordItemIndex(2));
             repo.VFADR.WarumWirdAuftragNichtFakturiert.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgKeineFaktura.TitleBar100WarumWirdEinBestimmter'", repo.DlgKeineFaktura.TitleBar100WarumWirdEinBestimmterInfo, new ActionTimeout(180000), new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgKeineFaktura.TitleBar100WarumWirdEinBestimmter'", repo.DlgKeineFaktura.TitleBar100WarumWirdEinBestimmterInfo, new ActionTimeout(180000), new RecordItemIndex(3));
             repo.DlgKeineFaktura.TitleBar100WarumWirdEinBestimmterInfo.WaitForExists(180000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.Auftragsnummer' at Center.", repo.DlgKeineFaktura.AuftragsnummerInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.Auftragsnummer' at Center.", repo.DlgKeineFaktura.AuftragsnummerInfo, new RecordItemIndex(4));
             repo.DlgKeineFaktura.Auftragsnummer.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}{Delete}' with focus on 'DlgKeineFaktura.Auftragsnummer'.", repo.DlgKeineFaktura.AuftragsnummerInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}{Delete}' with focus on 'DlgKeineFaktura.Auftragsnummer'.", repo.DlgKeineFaktura.AuftragsnummerInfo, new RecordItemIndex(5));
             repo.DlgKeineFaktura.Auftragsnummer.PressKeys("{LControlKey down}{Akey}{LControlKey up}{Delete}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Auftragsnummer' with focus on 'DlgKeineFaktura.Auftragsnummer'.", repo.DlgKeineFaktura.AuftragsnummerInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Auftragsnummer' with focus on 'DlgKeineFaktura.Auftragsnummer'.", repo.DlgKeineFaktura.AuftragsnummerInfo, new RecordItemIndex(6));
             repo.DlgKeineFaktura.Auftragsnummer.PressKeys(Auftragsnummer);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Auftragsnummer) on item 'DlgKeineFaktura.Auftragsnummer'.", repo.DlgKeineFaktura.AuftragsnummerInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Auftragsnummer) on item 'DlgKeineFaktura.Auftragsnummer'.", repo.DlgKeineFaktura.AuftragsnummerInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.DlgKeineFaktura.AuftragsnummerInfo, "Text", Auftragsnummer);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.PbPruefen' at Center.", repo.DlgKeineFaktura.PbPruefenInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.PbPruefen' at Center.", repo.DlgKeineFaktura.PbPruefenInfo, new RecordItemIndex(8));
             repo.DlgKeineFaktura.PbPruefen.Click();
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.PbPruefen' at Center.", repo.DlgKeineFaktura.PbPruefenInfo, new RecordItemIndex(8));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.PbPruefen' at Center.", repo.DlgKeineFaktura.PbPruefenInfo, new RecordItemIndex(9));
             //repo.DlgKeineFaktura.PbPruefen.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Einschränkung Rechnungsart ist nicht korrekt') on item 'DlgKeineFaktura.ColAktionRow1'.", repo.DlgKeineFaktura.ColAktionRow1Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Einschränkung Rechnungsart ist nicht korrekt') on item 'DlgKeineFaktura.ColAktionRow1'.", repo.DlgKeineFaktura.ColAktionRow1Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.DlgKeineFaktura.ColAktionRow1Info, "Text", "Einschränkung Rechnungsart ist nicht korrekt");
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es wurden noch keine Positionen geliefert') on item 'DlgKeineFaktura.ColAktionRow1'.", repo.DlgKeineFaktura.ColAktionRow1Info, new RecordItemIndex(10));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es wurden noch keine Positionen geliefert') on item 'DlgKeineFaktura.ColAktionRow1'.", repo.DlgKeineFaktura.ColAktionRow1Info, new RecordItemIndex(11));
             //Validate.AttributeEqual(repo.DlgKeineFaktura.ColAktionRow1Info, "Text", "Es wurden noch keine Positionen geliefert");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.Schliessen' at Center.", repo.DlgKeineFaktura.SchliessenInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.Schliessen' at Center.", repo.DlgKeineFaktura.SchliessenInfo, new RecordItemIndex(12));
             repo.DlgKeineFaktura.Schliessen.Click();
             
         }
