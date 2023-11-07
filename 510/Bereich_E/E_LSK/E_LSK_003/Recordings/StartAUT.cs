@@ -108,8 +108,8 @@ namespace E_LSK_003.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'MdiLSR.TitleBar100LieferscheineLagerzuga'", repo.MdiLSR.TitleBar100LieferscheineLagerzugaInfo, new ActionTimeout(60000), new RecordItemIndex(1));
-            repo.MdiLSR.TitleBar100LieferscheineLagerzugaInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'MdiLSR.TitleBar100LieferscheineLagerzuga'", repo.MdiLSR.TitleBar100LieferscheineLagerzugaInfo, new ActionTimeout(180000), new RecordItemIndex(1));
+            repo.MdiLSR.TitleBar100LieferscheineLagerzugaInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (AccessibleValue~'Rechnungskontrolle') on item 'MdiLSR.TitleBar100LieferscheineLagerzuga'.", repo.MdiLSR.TitleBar100LieferscheineLagerzugaInfo, new RecordItemIndex(2));
             Validate.AttributeRegex(repo.MdiLSR.TitleBar100LieferscheineLagerzugaInfo, "AccessibleValue", new Regex("Rechnungskontrolle"));

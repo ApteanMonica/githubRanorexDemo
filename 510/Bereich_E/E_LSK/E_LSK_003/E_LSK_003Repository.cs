@@ -1392,7 +1392,6 @@ namespace E_LSK_003
             E_LSK_003RepositoryFolders.FlexGridFolder _flexgrid;
             RepoItemInfo _cbpositionautomatischInfo;
             RepoItemInfo _pbdataaccessokInfo;
-            RepoItemInfo _sometextInfo;
 
             /// <summary>
             /// Creates a new TblImportBsp  folder.
@@ -1403,7 +1402,6 @@ namespace E_LSK_003
                 _flexgrid = new E_LSK_003RepositoryFolders.FlexGridFolder(this);
                 _cbpositionautomatischInfo = new RepoItemInfo(this, "CbPositionAutomatisch", "container[@controlname='ToolBar']/?/?/checkbox[@controlname='cbPositionAutomatisch']", "", 30000, null, "337793a9-5511-414d-9dc2-16ced56cbd57");
                 _pbdataaccessokInfo = new RepoItemInfo(this, "PbDataAccessOk", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Ok']", "", 30000, null, "49bb10fe-ca13-42ce-89c1-5c56339e838e");
-                _sometextInfo = new RepoItemInfo(this, "SomeText", "container[@controlname='ChildTableWindow']/?/?/text[@controltypename='']", "", 30000, null, "8f5dedee-3675-4eaa-878e-45249ffa7866");
             }
 
             /// <summary>
@@ -1475,30 +1473,6 @@ namespace E_LSK_003
                 get
                 {
                     return _pbdataaccessokInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SomeText item.
-            /// </summary>
-            [RepositoryItem("8f5dedee-3675-4eaa-878e-45249ffa7866")]
-            public virtual Ranorex.Text SomeText
-            {
-                get
-                {
-                    return _sometextInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SomeText item info.
-            /// </summary>
-            [RepositoryItemInfo("8f5dedee-3675-4eaa-878e-45249ffa7866")]
-            public virtual RepoItemInfo SomeTextInfo
-            {
-                get
-                {
-                    return _sometextInfo;
                 }
             }
 
