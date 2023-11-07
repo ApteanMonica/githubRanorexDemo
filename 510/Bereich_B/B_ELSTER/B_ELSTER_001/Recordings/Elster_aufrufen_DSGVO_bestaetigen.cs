@@ -104,16 +104,19 @@ namespace B_ELSTER_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Firma) on item 'DlgElsterDSGVO.TitleBar300ElsterInformation'.", repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo, new RecordItemIndex(3));
             Validate.AttributeContains(repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo, "Text", Firma);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElsterDSGVO.CbDSGVO' at Center.", repo.DlgElsterDSGVO.CbDSGVOInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgElsterDSGVO.LblMessage_Preview_Generation_Failed'", repo.DlgElsterDSGVO.LblMessage_Preview_Generation_FailedInfo, new ActionTimeout(120000), new RecordItemIndex(4));
+            repo.DlgElsterDSGVO.LblMessage_Preview_Generation_FailedInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElsterDSGVO.CbDSGVO' at Center.", repo.DlgElsterDSGVO.CbDSGVOInfo, new RecordItemIndex(5));
             repo.DlgElsterDSGVO.CbDSGVO.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(6));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgElsterDSGVO.CbDSGVO'.", repo.DlgElsterDSGVO.CbDSGVOInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgElsterDSGVO.CbDSGVO'.", repo.DlgElsterDSGVO.CbDSGVOInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.DlgElsterDSGVO.CbDSGVOInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElsterDSGVO.PbWeiter' at Center.", repo.DlgElsterDSGVO.PbWeiterInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElsterDSGVO.PbWeiter' at Center.", repo.DlgElsterDSGVO.PbWeiterInfo, new RecordItemIndex(8));
             repo.DlgElsterDSGVO.PbWeiter.Click();
             
         }
