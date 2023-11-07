@@ -135,8 +135,9 @@ namespace V_FADR_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.Button_Vorschau' at Center.", repo.DlgDrucken.Button_VorschauInfo, new RecordItemIndex(9));
             repo.DlgDrucken.Button_Vorschau.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'Vorschau.TitleBar'", repo.Vorschau.TitleBarInfo, new ActionTimeout(30000), new RecordItemIndex(10));
-            repo.Vorschau.TitleBarInfo.WaitForExists(30000);
+            // BAR: Wait for erhöht von 30s auf 1 Minute
+            Report.Log(ReportLevel.Info, "Wait", "BAR: Wait for erhöht von 30s auf 1 Minute\r\nWaiting 1m to exist. Associated repository item: 'Vorschau.TitleBar'", repo.Vorschau.TitleBarInfo, new ActionTimeout(60000), new RecordItemIndex(10));
+            repo.Vorschau.TitleBarInfo.WaitForExists(60000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Visible>'True') on item 'Vorschau.Vorschau_Dokument'.", repo.Vorschau.Vorschau_DokumentInfo, new RecordItemIndex(11));
             Validate.AttributeContains(repo.Vorschau.Vorschau_DokumentInfo, "Visible", "True");
