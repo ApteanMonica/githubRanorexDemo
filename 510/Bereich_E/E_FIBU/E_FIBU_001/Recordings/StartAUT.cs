@@ -108,8 +108,9 @@ namespace E_FIBU_001.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblFibu.TitleBar100FibuUEberleitungEinkauf'", repo.TblFibu.TitleBar100FibuUEberleitungEinkaufInfo, new ActionTimeout(60000), new RecordItemIndex(1));
-            repo.TblFibu.TitleBar100FibuUEberleitungEinkaufInfo.WaitForExists(60000);
+            // BAR: Wait for erhöht auf von 1 auf 2 Minuten
+            Report.Log(ReportLevel.Info, "Wait", "BAR: Wait for erhöht auf von 1 auf 2 Minuten\r\nWaiting 3m to exist. Associated repository item: 'TblFibu.TitleBar100FibuUEberleitungEinkauf'", repo.TblFibu.TitleBar100FibuUEberleitungEinkaufInfo, new ActionTimeout(180000), new RecordItemIndex(1));
+            repo.TblFibu.TitleBar100FibuUEberleitungEinkaufInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (AccessibleValue~'Fibu Überleitung Einkauf') on item 'TblFibu.TitleBar100FibuUEberleitungEinkauf'.", repo.TblFibu.TitleBar100FibuUEberleitungEinkaufInfo, new RecordItemIndex(2));
             Validate.AttributeRegex(repo.TblFibu.TitleBar100FibuUEberleitungEinkaufInfo, "AccessibleValue", new Regex("Fibu Überleitung Einkauf"));
