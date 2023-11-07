@@ -686,7 +686,7 @@ namespace V_FADR_001
                     base("untere_Tabelle", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "0d8b66a3-f07f-46e1-ba83-693b49be8675", "")
             {
                 _rechnungsnummerInfo = new RepoItemInfo(this, "Rechnungsnummer", "row[@accessiblename='Row 1']/cell[@accessiblename='colRech_nr Row 1']", "", 30000, null, "64118f8d-9a82-4ffb-bcf4-4b863078f3a3");
-                _auftragsnummer_mit_auftrnrInfo = new RepoItemInfo(this, "Auftragsnummer_mit_Auftrnr", "row[@accessiblename='Row 1']/cell[@accessiblename~'colAufk_nr' and @text=$Auftragsnummer]", "", 30000, null, "bae9fdbf-a898-4818-9ed7-df08915f3392");
+                _auftragsnummer_mit_auftrnrInfo = new RepoItemInfo(this, "Auftragsnummer_mit_Auftrnr", "row[@accessiblename='Row 1']/cell[@accessiblename~'colAufk_nr']", "", 30000, null, "bae9fdbf-a898-4818-9ed7-df08915f3392");
                 _row1Info = new RepoItemInfo(this, "row1", "row[@accessiblename='Row 1']", "", 30000, null, "8d6cec8d-92c4-449d-8e8a-de02b81f5c51");
             }
 
