@@ -7,6 +7,20 @@
 			name="teardown">
 			</teardown>
 			<testmodule
+			id="40dbbecd-f1be-495f-90ef-f3a6e79a1de6"
+			name="Neuanlage_UST_Code"
+			ref="46f1cc56-de29-4d68-aa20-1c7dbe0bf731"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="UST_CD_NEU"
+					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
+					variableid="85b605f1-ad10-4ea3-a962-241f2cc67be5"
+					variablename="UST_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="4fd5fe5e-2bfe-4632-be45-da18afab7a2e"
 			name="Close_SAMK"
 			ref="954c1eae-bd40-47d2-adeb-e5bf5833ccd3"
@@ -107,6 +121,14 @@
 					name="Programm_SAMK"
 					value="S_ALLTAB Aufrufart SAMK">
 					</param>
+					<param
+					name="UST_CD_NEU"
+					value="R77">
+					</param>
+					<param
+					name="UST_CD_ALT"
+					value="V20">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -156,6 +178,10 @@
 							name="Start_UST">
 							</testmodule>
 						</setup>
+						<testmodule
+						id="40dbbecd-f1be-495f-90ef-f3a6e79a1de6"
+						name="Neuanlage_UST_Code">
+						</testmodule>
 						<teardown
 						id="1fe8f1b3-6e2f-4dea-9e73-50585e0509e4"
 						name="teardown">
