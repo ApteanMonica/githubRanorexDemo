@@ -113,8 +113,9 @@ namespace E_FIBU_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbOk' at Center.", repo.DlgDrucken.PbOkInfo, new RecordItemIndex(6));
             repo.DlgDrucken.PbOk.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DruckausgabeSpeichernUnter.ToolBar1001'", repo.DruckausgabeSpeichernUnter.ToolBar1001Info, new ActionTimeout(60000), new RecordItemIndex(7));
-            repo.DruckausgabeSpeichernUnter.ToolBar1001Info.WaitForExists(60000);
+            // BAR: Wait for auf von 1 auf 2 Minuten erhöht
+            Report.Log(ReportLevel.Info, "Wait", "BAR: Wait for auf von 1 auf 2 Minuten erhöht\r\nWaiting 2m to exist. Associated repository item: 'DruckausgabeSpeichernUnter.ToolBar1001'", repo.DruckausgabeSpeichernUnter.ToolBar1001Info, new ActionTimeout(120000), new RecordItemIndex(7));
+            repo.DruckausgabeSpeichernUnter.ToolBar1001Info.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DruckausgabeSpeichernUnter.ToolBar1001' at CenterRight.", repo.DruckausgabeSpeichernUnter.ToolBar1001Info, new RecordItemIndex(8));
             repo.DruckausgabeSpeichernUnter.ToolBar1001.Click(Location.CenterRight);
