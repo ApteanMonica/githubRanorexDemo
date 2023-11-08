@@ -3512,28 +3512,57 @@ mode="Global">
 				E
 			</matchvalue>
 		</validationitem>
-		<getvaluerecorditem
-		attrname="Text"
-		enabled="True"
+		<WaitForRecordItem
+		enabled="False"
 		optional="False"
-		searchpropertyid="c3276ff6-2e50-4f3c-a87c-9b8823a24788"
-		varname="Tagesdatum">
+		searchpropertyid="c50ec418-947d-4a27-b5ed-759928941b9c"
+		waitaction="Exists"
+		waittimeout="60000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="040c96c5-3f28-4435-b912-42bd799d8750"
+			id="28d1d1d7-f48c-4686-b655-e4451d5120ab"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLsk_datum Row 1']
+					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @accessiblevalue=$Tagesdatum]
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</getvaluerecorditem>
+		</WaitForRecordItem>
+		<userrecorditem
+		classname="SystemLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="GetDateTimeAsString"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Tagesdatum">
+				</binding>
+			</bindings>
+			<arguments
+			id="9e3e5131-7301-4e28-80a7-5f534ae2fc1a">
+				<argument
+				argname="expectedFormat"
+				id="917f490b-57ca-4e61-995f-7d417ecb7d16">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						dd.MM.yyyy
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<validationitem
-		action="AttributeRegex"
+		action="AttributeEqual"
 		enabled="True"
 		optional="False"
 		searchpropertyid="80e25018-b93b-412b-b5ad-000e1ea0f8f5">
@@ -3615,26 +3644,6 @@ mode="Global">
 				15.12.2020
 			</matchvalue>
 		</validationitem>
-		<getvaluerecorditem
-		attrname="Text"
-		enabled="True"
-		optional="False"
-		searchpropertyid="b9e2524b-0144-4954-9bf1-c39fd23b43b9"
-		varname="getDatumRow">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="040c96c5-3f28-4435-b912-42bd799d8750"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLsk_datum Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</getvaluerecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -7623,10 +7632,64 @@ yiiigAooooA//9k=
 			<bindings>
 			</bindings>
 			<info
-			id="8d6cec8d-92c4-449d-8e8a-de02b81f5c51"
+			id="b2effbf4-30c9-4d8c-888a-2356dca7d621"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="11"
+				prefcap="cell"
+				rect="814,509,73,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						200002
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colAufk_adr_kunde Row 1
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Selected, Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						200002
+					</attribute>
+				</element>
 				<path>
-					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename~'colAufk_nr']
+					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAufk_adr_kunde Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -7683,15 +7746,6 @@ yiiigAooooA//9k=
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="040c96c5-3f28-4435-b912-42bd799d8750"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLsk_datum Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
 		</mouseitem>
 		<explicitdelayitem
 		duration="2000ms"
@@ -7709,85 +7763,6 @@ yiiigAooooA//9k=
 		optional="False"
 		presstime="20ms"
 		searchpropertyid="cacdcdbc-5ea1-4c6d-bde2-498d957256ff">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="040c96c5-3f28-4435-b912-42bd799d8750"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLsk_datum Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</keysequenceitem>
-		<keyitem
-		action="Press"
-		data="Delete"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="d558a6af-513e-4bca-ad48-51c801b6435f"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="040c96c5-3f28-4435-b912-42bd799d8750"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLsk_datum Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</keyitem>
-		<explicitdelayitem
-		duration="1000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="fe15ae58-1efc-470a-8131-074a4f9cce0e"
-		setModifiers="True">
-			<comment>
-				BAR: Schritt 13 und 14 von der Reihenfolge umgetauscht vorher war zuerst Delay und dann Tab
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
-		<explicitdelayitem
-		duration="2000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
-		<keysequenceitem
-		KeySequence="{LControlKey down}{Akey}{LControlKey up}"
-		duration="20ms"
-		enabled="False"
-		optional="False"
-		presstime="20ms"
-		searchpropertyid="4f96a306-46e0-495f-a847-899c5a33d4d1">
 			<comment>
 			</comment>
 			<bindings>
@@ -7850,35 +7825,69 @@ yiiigAooooA//9k=
 				</robustPath>
 			</info>
 		</keyitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="False"
-		loc="Center"
-		movetime="300ms"
+		<keyitem
+		action="Press"
+		data="Delete"
+		duration="20ms"
+		enabled="True"
 		optional="False"
-		searchpropertyid="c4430e43-e39a-4c14-8cf6-85daf8787772"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="d558a6af-513e-4bca-ad48-51c801b6435f"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="fe15ae58-1efc-470a-8131-074a4f9cce0e"
+		setModifiers="True">
+			<comment>
+				BAR: Schritt 13 und 14 von der Reihenfolge umgetauscht vorher war zuerst Delay und dann Tab
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="59256565-51d1-4861-aa11-3606134c61c2"
+		waitaction="Exists"
+		waittimeout="300000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="f3d7eeca-cb56-4d62-a2bd-1d8467a0d8bf"
+			id="144197f5-eefc-41b1-96d5-972abaae8274"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLsk_datum Row 2']
+					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @text=null()]
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</mouseitem>
+		</WaitForRecordItem>
 		<explicitdelayitem
-		duration="30000ms"
-		enabled="False"
+		duration="2000ms"
+		enabled="True"
 		optional="False">
 			<comment>
 			</comment>
@@ -7886,7 +7895,6 @@ yiiigAooooA//9k=
 			</bindings>
 		</explicitdelayitem>
 		<loggingrecorditem
-		action="Screenshot"
 		category="User"
 		enabled="True"
 		message="beide Datumszeilen ohne Datum"
