@@ -69,16 +69,6 @@ name="V_FADR_001Repository">
 			<item
 			addcaps="cell,accessible"
 			capname="cell"
-			id="bae9fdbf-a898-4818-9ed7-df08915f3392"
-			name="Auftragsnummer"
-			refimgid="1acc743d-178f-4911-8a7e-19fc96ce99c5"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colAufk_nr' and @text=$Auftragsnummer]
-			</item>
-			<item
-			addcaps="cell,accessible"
-			capname="cell"
 			id="5685564b-cb2a-47d7-91d7-fd48537a4cc9"
 			name="Column0"
 			refimgid="fc284d3c-ce8d-4665-9055-e5e8398fb010"
@@ -96,17 +86,6 @@ name="V_FADR_001Repository">
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='tblFadr']/container[@controlname='RibbonBar']/?/?/button[@controlname='pbSpec2_VSRechnung']
-			</item>
-			<item
-			addcaps="cell,accessible"
-			capname="cell"
-			id="64118f8d-9a82-4ffb-bcf4-4b863078f3a3"
-			name="Rechnungsnummer"
-			refimgid="48adb459-2075-47b6-8587-9c3a91e0d5b7"
-			refpath="/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element/table/row[@accessiblename='Row 1']/cell[@accessiblename='colRech_nr Row 1']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colRech_nr Row 1']
 			</item>
 			<item
 			addcaps="button,control,nativewindow"
@@ -178,8 +157,59 @@ name="V_FADR_001Repository">
 				searchtimeout="30000ms">
 					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1']
 				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="28d1d1d7-f48c-4686-b655-e4451d5120ab"
+				name="ColLskDatumRow1_mit_Tagesdatum"
+				refimgid="127c4dcd-8244-4e20-a5dd-2192f4a217ec"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @accessiblevalue=$Tagesdatum]
+				</item>
 				<basepath>
 					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+				</basepath>
+			</folder>
+			<folder
+			capname="table"
+			id="0d8b66a3-f07f-46e1-ba83-693b49be8675"
+			isrooted="True"
+			name="untere_Tabelle"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="64118f8d-9a82-4ffb-bcf4-4b863078f3a3"
+				name="Rechnungsnummer"
+				refimgid="48adb459-2075-47b6-8587-9c3a91e0d5b7"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colRech_nr Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="bae9fdbf-a898-4818-9ed7-df08915f3392"
+				name="Auftragsnummer_mit_Auftrnr"
+				refimgid="1acc743d-178f-4911-8a7e-19fc96ce99c5"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename~'colAufk_nr']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="row"
+				id="8d6cec8d-92c4-449d-8e8a-de02b81f5c51"
+				name="row1"
+				refimgid="1acc743d-178f-4911-8a7e-19fc96ce99c5"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
+				</item>
+				<basepath>
+					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
 				</basepath>
 			</folder>
 			<basepath>
@@ -713,6 +743,11 @@ b0gm01DVQnAHZAHvdu/FFjyK+3eJ4IYiuKEIbng/SBe1JRbLNoYtcwAAAABJRU5ErkJggg==
 		id="1c8af4fd-6843-4a68-a1d3-273d46effe9b"
 		name="Auftragsnummer">
 			201900005
+		</var>
+		<var
+		id="2f457d80-98e3-4002-af7c-321f2a2e5814"
+		name="Tagesdatum">
+			15.12.2020
 		</var>
 	</variables>
 </repository>

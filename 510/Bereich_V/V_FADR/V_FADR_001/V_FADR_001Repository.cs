@@ -91,6 +91,18 @@ namespace V_FADR_001
             set { _Auftragsnummer = value; }
         }
 
+        string _Tagesdatum = "15.12.2020";
+
+        /// <summary>
+        /// Gets or sets the value of variable Tagesdatum.
+        /// </summary>
+        [TestVariable("2f457d80-98e3-4002-af7c-321f2a2e5814")]
+        public string Tagesdatum
+        {
+            get { return _Tagesdatum; }
+            set { _Tagesdatum = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -224,14 +236,13 @@ namespace V_FADR_001
         public partial class TblFadrAppFolder : RepoGenBaseFolder
         {
             V_FADR_001RepositoryFolders.Rech_art_FlexGridFolder _rech_art_flexgrid;
+            V_FADR_001RepositoryFolders.Untere_TabelleFolder _untere_tabelle;
             RepoItemInfo _titlebar100fakturierungInfo;
             RepoItemInfo _pbcommonloadInfo;
             RepoItemInfo _pbspec3extrasInfo;
             RepoItemInfo _pbspec2fakturenerstellungInfo;
-            RepoItemInfo _auftragsnummerInfo;
             RepoItemInfo _column0Info;
             RepoItemInfo _pbspec2vsrechnungInfo;
-            RepoItemInfo _rechnungsnummerInfo;
             RepoItemInfo _pbsharedruckenInfo;
             RepoItemInfo _rbladendruckInfo;
             RepoItemInfo _cbzahlscheinInfo;
@@ -243,14 +254,13 @@ namespace V_FADR_001
                     base("TblFadr", "/form[@controlname='tblFadr']", parentFolder, 30000, null, true, "7945c520-37b9-4e25-99e4-9e45f0b49842", "")
             {
                 _rech_art_flexgrid = new V_FADR_001RepositoryFolders.Rech_art_FlexGridFolder(this);
+                _untere_tabelle = new V_FADR_001RepositoryFolders.Untere_TabelleFolder(this);
                 _titlebar100fakturierungInfo = new RepoItemInfo(this, "TitleBar100Fakturierung", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "1dc81752-b411-4c29-947c-e8c8dbe2e9af");
                 _pbcommonloadInfo = new RepoItemInfo(this, "PbCommonLoad", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbCommon_Load']", "", 30000, null, "077cad46-e897-4023-a1f5-c62d755b4df6");
                 _pbspec3extrasInfo = new RepoItemInfo(this, "PbSpec3Extras", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbSpec3_Extras']", "", 30000, null, "17c39c50-33f6-4bfe-9f9e-9e53d12aa3f9");
                 _pbspec2fakturenerstellungInfo = new RepoItemInfo(this, "PbSpec2Fakturenerstellung", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbSpec2_Fakturenerstellung']", "", 30000, null, "f8b74144-c9e6-4dbf-9899-235ec102237d");
-                _auftragsnummerInfo = new RepoItemInfo(this, "Auftragsnummer", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colAufk_nr' and @text=$Auftragsnummer]", "", 30000, null, "bae9fdbf-a898-4818-9ed7-df08915f3392");
                 _column0Info = new RepoItemInfo(this, "Column0", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/*[@accessiblevalue~$Auftragsnummer]/?/cell[@accessiblename~'Column 0']", "", 30000, null, "5685564b-cb2a-47d7-91d7-fd48537a4cc9");
                 _pbspec2vsrechnungInfo = new RepoItemInfo(this, "PbSpec2VSRechnung", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbSpec2_VSRechnung']", "", 30000, null, "ed36d0cb-083f-41a0-8130-2cc9fc186b42");
-                _rechnungsnummerInfo = new RepoItemInfo(this, "Rechnungsnummer", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colRech_nr Row 1']", "", 30000, null, "64118f8d-9a82-4ffb-bcf4-4b863078f3a3");
                 _pbsharedruckenInfo = new RepoItemInfo(this, "PbShareDrucken", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbShare_Drucken']", "", 30000, null, "755d51a6-e446-41a9-9543-6d88d5003c23");
                 _rbladendruckInfo = new RepoItemInfo(this, "RbLadenDruck", "?/?/radiobutton[@controlname='rbLadenDruck']", "", 30000, null, "e8657d49-c845-4989-8887-5b76d676cda5");
                 _cbzahlscheinInfo = new RepoItemInfo(this, "CbZahlschein", "?/?/checkbox[@controlname='cbZahlschein']", "", 30000, null, "156bdce0-9733-4af8-a0af-521a3079c43e");
@@ -377,30 +387,6 @@ namespace V_FADR_001
             }
 
             /// <summary>
-            /// The Auftragsnummer item.
-            /// </summary>
-            [RepositoryItem("bae9fdbf-a898-4818-9ed7-df08915f3392")]
-            public virtual Ranorex.Cell Auftragsnummer
-            {
-                get
-                {
-                    return _auftragsnummerInfo.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Auftragsnummer item info.
-            /// </summary>
-            [RepositoryItemInfo("bae9fdbf-a898-4818-9ed7-df08915f3392")]
-            public virtual RepoItemInfo AuftragsnummerInfo
-            {
-                get
-                {
-                    return _auftragsnummerInfo;
-                }
-            }
-
-            /// <summary>
             /// The Column0 item.
             /// </summary>
             [RepositoryItem("5685564b-cb2a-47d7-91d7-fd48537a4cc9")]
@@ -445,30 +431,6 @@ namespace V_FADR_001
                 get
                 {
                     return _pbspec2vsrechnungInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Rechnungsnummer item.
-            /// </summary>
-            [RepositoryItem("64118f8d-9a82-4ffb-bcf4-4b863078f3a3")]
-            public virtual Ranorex.Cell Rechnungsnummer
-            {
-                get
-                {
-                    return _rechnungsnummerInfo.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Rechnungsnummer item info.
-            /// </summary>
-            [RepositoryItemInfo("64118f8d-9a82-4ffb-bcf4-4b863078f3a3")]
-            public virtual RepoItemInfo RechnungsnummerInfo
-            {
-                get
-                {
-                    return _rechnungsnummerInfo;
                 }
             }
 
@@ -552,6 +514,15 @@ namespace V_FADR_001
             {
                 get { return _rech_art_flexgrid; }
             }
+
+            /// <summary>
+            /// The untere_Tabelle folder.
+            /// </summary>
+            [RepositoryFolder("0d8b66a3-f07f-46e1-ba83-693b49be8675")]
+            public virtual V_FADR_001RepositoryFolders.Untere_TabelleFolder untere_Tabelle
+            {
+                get { return _untere_tabelle; }
+            }
         }
 
         /// <summary>
@@ -563,6 +534,7 @@ namespace V_FADR_001
             RepoItemInfo _rechnungsartInfo;
             RepoItemInfo _bis_ls_datrow2Info;
             RepoItemInfo _collskdatumrow1Info;
+            RepoItemInfo _collskdatumrow1_mit_tagesdatumInfo;
 
             /// <summary>
             /// Creates a new Rech_art_FlexGrid  folder.
@@ -573,6 +545,7 @@ namespace V_FADR_001
                 _rechnungsartInfo = new RepoItemInfo(this, "Rechnungsart", "row[@accessiblename='Row 1']/cell[@accessiblename='colRech_art Row 1']", "", 30000, null, "66aa28fa-e465-4f91-aa65-97b931a960d6");
                 _bis_ls_datrow2Info = new RepoItemInfo(this, "bis_LS_DatRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colLsk_datum Row 2']", "", 30000, null, "f3d7eeca-cb56-4d62-a2bd-1d8467a0d8bf");
                 _collskdatumrow1Info = new RepoItemInfo(this, "ColLskDatumRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1']", "", 30000, null, "040c96c5-3f28-4435-b912-42bd799d8750");
+                _collskdatumrow1_mit_tagesdatumInfo = new RepoItemInfo(this, "ColLskDatumRow1_mit_Tagesdatum", "row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @accessiblevalue=$Tagesdatum]", "", 30000, null, "28d1d1d7-f48c-4686-b655-e4451d5120ab");
             }
 
             /// <summary>
@@ -668,6 +641,148 @@ namespace V_FADR_001
                 get
                 {
                     return _collskdatumrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColLskDatumRow1_mit_Tagesdatum item.
+            /// </summary>
+            [RepositoryItem("28d1d1d7-f48c-4686-b655-e4451d5120ab")]
+            public virtual Ranorex.Cell ColLskDatumRow1_mit_Tagesdatum
+            {
+                get
+                {
+                    return _collskdatumrow1_mit_tagesdatumInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColLskDatumRow1_mit_Tagesdatum item info.
+            /// </summary>
+            [RepositoryItemInfo("28d1d1d7-f48c-4686-b655-e4451d5120ab")]
+            public virtual RepoItemInfo ColLskDatumRow1_mit_TagesdatumInfo
+            {
+                get
+                {
+                    return _collskdatumrow1_mit_tagesdatumInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Untere_TabelleFolder folder.
+        /// </summary>
+        [RepositoryFolder("0d8b66a3-f07f-46e1-ba83-693b49be8675")]
+        public partial class Untere_TabelleFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _rechnungsnummerInfo;
+            RepoItemInfo _auftragsnummer_mit_auftrnrInfo;
+            RepoItemInfo _row1Info;
+
+            /// <summary>
+            /// Creates a new untere_Tabelle  folder.
+            /// </summary>
+            public Untere_TabelleFolder(RepoGenBaseFolder parentFolder) :
+                    base("untere_Tabelle", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "0d8b66a3-f07f-46e1-ba83-693b49be8675", "")
+            {
+                _rechnungsnummerInfo = new RepoItemInfo(this, "Rechnungsnummer", "row[@accessiblename='Row 1']/cell[@accessiblename='colRech_nr Row 1']", "", 30000, null, "64118f8d-9a82-4ffb-bcf4-4b863078f3a3");
+                _auftragsnummer_mit_auftrnrInfo = new RepoItemInfo(this, "Auftragsnummer_mit_Auftrnr", "row[@accessiblename='Row 1']/cell[@accessiblename~'colAufk_nr']", "", 30000, null, "bae9fdbf-a898-4818-9ed7-df08915f3392");
+                _row1Info = new RepoItemInfo(this, "row1", "row[@accessiblename='Row 1']", "", 30000, null, "8d6cec8d-92c4-449d-8e8a-de02b81f5c51");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("0d8b66a3-f07f-46e1-ba83-693b49be8675")]
+            public virtual Ranorex.Table Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("0d8b66a3-f07f-46e1-ba83-693b49be8675")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Rechnungsnummer item.
+            /// </summary>
+            [RepositoryItem("64118f8d-9a82-4ffb-bcf4-4b863078f3a3")]
+            public virtual Ranorex.Cell Rechnungsnummer
+            {
+                get
+                {
+                    return _rechnungsnummerInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Rechnungsnummer item info.
+            /// </summary>
+            [RepositoryItemInfo("64118f8d-9a82-4ffb-bcf4-4b863078f3a3")]
+            public virtual RepoItemInfo RechnungsnummerInfo
+            {
+                get
+                {
+                    return _rechnungsnummerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Auftragsnummer_mit_Auftrnr item.
+            /// </summary>
+            [RepositoryItem("bae9fdbf-a898-4818-9ed7-df08915f3392")]
+            public virtual Ranorex.Cell Auftragsnummer_mit_Auftrnr
+            {
+                get
+                {
+                    return _auftragsnummer_mit_auftrnrInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Auftragsnummer_mit_Auftrnr item info.
+            /// </summary>
+            [RepositoryItemInfo("bae9fdbf-a898-4818-9ed7-df08915f3392")]
+            public virtual RepoItemInfo Auftragsnummer_mit_AuftrnrInfo
+            {
+                get
+                {
+                    return _auftragsnummer_mit_auftrnrInfo;
+                }
+            }
+
+            /// <summary>
+            /// The row1 item.
+            /// </summary>
+            [RepositoryItem("8d6cec8d-92c4-449d-8e8a-de02b81f5c51")]
+            public virtual Ranorex.Row row1
+            {
+                get
+                {
+                    return _row1Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The row1 item info.
+            /// </summary>
+            [RepositoryItemInfo("8d6cec8d-92c4-449d-8e8a-de02b81f5c51")]
+            public virtual RepoItemInfo row1Info
+            {
+                get
+                {
+                    return _row1Info;
                 }
             }
         }

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="aa79a810-19dd-42c2-b45a-a0154b87795b"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_SALDB_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="4595e7ae-a427-45c7-a775-6638732f025b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5ee5c2c5-7a1e-4ddd-b762-81709f82e8b6"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title&gt;'[100] Saldenbest&#228;tigung L']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="d8ec1e48-1e8a-4f4b-82cc-5a7b8d024d75"
+	name="B_SALDB_SchnelltestRepository"
+	relativepath="..\B_SALDB_SchnelltestRepository.rxrep">
+		<codegen
+		classname="B_SALDB_SchnelltestRepository"
+		namespace="B_SALDB_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="f9fd894e-8b9e-439a-bb32-f26e602ef8b7"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

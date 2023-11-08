@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="16eeeaee-b5aa-4e0b-a974-9fcb873f1f2d"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_WUMS_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="4595e7ae-a427-45c7-a775-6638732f025b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c96e2e2d-29d2-477f-8131-9ed3f3439bf0"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title&gt;'[100] Ermittlung Warenumsatz']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="61f3c6d9-fdae-470e-b1b4-ce3c37184fb5"
+	name="B_WUMS_SchnelltestRepository"
+	relativepath="..\B_WUMS_SchnelltestRepository.rxrep">
+		<codegen
+		classname="B_WUMS_SchnelltestRepository"
+		namespace="B_WUMS_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="1b204752-c5e7-4edc-9ae8-b4d0c28da763"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

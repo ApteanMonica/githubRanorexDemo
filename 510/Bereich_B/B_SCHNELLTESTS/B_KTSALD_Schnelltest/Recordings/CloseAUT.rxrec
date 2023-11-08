@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f16ee7ff-d5f0-443a-b482-af020fb9a3f7"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="B_KTSALD_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="4595e7ae-a427-45c7-a775-6638732f025b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b64ea80c-15b4-41d7-9dad-5888b562fda2"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmKtSali']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="a6189ecb-a1c2-44be-b7e8-6c876e79a5a6"
+	name="B_KTSALD_SchnelltestRepository"
+	relativepath="..\B_KTSALD_SchnelltestRepository.rxrep">
+		<codegen
+		classname="B_KTSALD_SchnelltestRepository"
+		namespace="B_KTSALD_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="f7ec50de-1c4a-4a10-95e8-bff2ccfb0542"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
