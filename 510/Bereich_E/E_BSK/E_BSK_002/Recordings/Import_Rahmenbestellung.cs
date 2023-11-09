@@ -172,13 +172,16 @@ namespace E_BSK_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Schliessen' at Center.", repo.SchliessenInfo, new RecordItemIndex(20));
             repo.Schliessen.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Import_Ende) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgMessageBox.BestellungenVerwalten'", repo.DlgMessageBox.BestellungenVerwaltenInfo, new ActionTimeout(180000), new RecordItemIndex(21));
+            repo.DlgMessageBox.BestellungenVerwaltenInfo.WaitForExists(180000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Import_Ende) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(22));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", Import_Ende);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(23));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'MdiBestellung.FrmBsp.Row1Column0'.", repo.MdiBestellung.FrmBsp.Row1Column0Info, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'MdiBestellung.FrmBsp.Row1Column0'.", repo.MdiBestellung.FrmBsp.Row1Column0Info, new RecordItemIndex(24));
             Validate.Exists(repo.MdiBestellung.FrmBsp.Row1Column0Info);
             
         }
