@@ -124,8 +124,8 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Column0' at Center.", repo.TblFadr.Column0Info, new RecordItemIndex(6));
             repo.TblFadr.Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Auftragsnummer) on item 'TblFadr.untere_Tabelle.Auftragsnummer_mit_Auftrnr'.", repo.TblFadr.untere_Tabelle.Auftragsnummer_mit_AuftrnrInfo, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.TblFadr.untere_Tabelle.Auftragsnummer_mit_AuftrnrInfo, "Text", Auftragsnummer);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Auftragsnummer) on item 'TblFadr.untere_Tabelle.ColAufkNr'.", repo.TblFadr.untere_Tabelle.ColAufkNrInfo, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.TblFadr.untere_Tabelle.ColAufkNrInfo, "Text", Auftragsnummer);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbSpec2VSRechnung' at Center.", repo.TblFadr.PbSpec2VSRechnungInfo, new RecordItemIndex(8));
             repo.TblFadr.PbSpec2VSRechnung.Click();
@@ -136,8 +136,8 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbVorschau' at Center.", repo.DlgDrucken.PbVorschauInfo, new RecordItemIndex(10));
             repo.DlgDrucken.PbVorschau.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Vorschau.ChkPPreviewClientArea25'", repo.Vorschau.ChkPPreviewClientArea25Info, new ActionTimeout(120000), new RecordItemIndex(11));
-            repo.Vorschau.ChkPPreviewClientArea25Info.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Vorschau.TitleBar'", repo.Vorschau.TitleBarInfo, new ActionTimeout(120000), new RecordItemIndex(11));
+            repo.Vorschau.TitleBarInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Vorschau.DruckvorschauSchliessen' at Center.", repo.Vorschau.DruckvorschauSchliessenInfo, new RecordItemIndex(12));
             repo.Vorschau.DruckvorschauSchliessen.Click();

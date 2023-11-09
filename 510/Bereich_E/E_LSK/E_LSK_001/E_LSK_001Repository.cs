@@ -888,7 +888,6 @@ namespace E_LSK_001
             E_LSK_001RepositoryFolders.FlexGridFolder _flexgrid;
             RepoItemInfo _cbpositionautomatischInfo;
             RepoItemInfo _pbdataaccessokInfo;
-            RepoItemInfo _sometextInfo;
 
             /// <summary>
             /// Creates a new TblImportBsp  folder.
@@ -899,7 +898,6 @@ namespace E_LSK_001
                 _flexgrid = new E_LSK_001RepositoryFolders.FlexGridFolder(this);
                 _cbpositionautomatischInfo = new RepoItemInfo(this, "CbPositionAutomatisch", "container[@controlname='ToolBar']/?/?/checkbox[@controlname='cbPositionAutomatisch']", "", 30000, null, "40c7bc49-a493-4eac-8f61-835dabdb3991");
                 _pbdataaccessokInfo = new RepoItemInfo(this, "PbDataAccessOk", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Ok']", "", 30000, null, "498f3cff-c7c8-4ed6-8035-cd60c5afc60e");
-                _sometextInfo = new RepoItemInfo(this, "SomeText", "container[@controlname='ChildTableWindow']/?/?/text[@controltypename='']", "", 30000, null, "11245527-3b44-4b7f-8061-7e203ed0cae9");
             }
 
             /// <summary>
@@ -971,30 +969,6 @@ namespace E_LSK_001
                 get
                 {
                     return _pbdataaccessokInfo;
-                }
-            }
-
-            /// <summary>
-            /// The SomeText item.
-            /// </summary>
-            [RepositoryItem("11245527-3b44-4b7f-8061-7e203ed0cae9")]
-            public virtual Ranorex.Text SomeText
-            {
-                get
-                {
-                    return _sometextInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The SomeText item info.
-            /// </summary>
-            [RepositoryItemInfo("11245527-3b44-4b7f-8061-7e203ed0cae9")]
-            public virtual RepoItemInfo SomeTextInfo
-            {
-                get
-                {
-                    return _sometextInfo;
                 }
             }
 

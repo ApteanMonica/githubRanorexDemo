@@ -41,8 +41,8 @@ namespace E_LSK_002.Recordings
         /// </summary>
         public StartAUT()
         {
-            Startfile = "";
-            Programm = "";
+            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
+            Programm = "E_LSK";
             Datum = "";
             Jahr = "";
             Monat = "";

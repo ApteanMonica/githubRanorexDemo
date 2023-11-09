@@ -2,10 +2,80 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testmodule
+			id="0b33db47-719d-48aa-a3cb-60c13e50df36"
+			name="Aenderung_SAMK_Speichern_Pruefung"
+			ref="620406c6-c20a-4aec-97fe-41597f21cf5d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="SAMK_CD_NEU"
+					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
+					variableid="df6cf195-d1da-4af2-bd8c-f4d78ab0f0aa"
+					variablename="SAMK_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="137d0838-50b0-4340-8af2-1099e78cf20a"
+			name="Speichern_Pruefen_Neuanlage_UST_CD"
+			ref="dfafb521-466b-407e-9588-8f2bd9a34b3d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="UST_CD_NEU"
+					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
+					variableid="f318fc56-2aa4-4257-9b49-17419e7449b3"
+					variablename="UST_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="1c829b37-ff2b-4f6e-a5d6-8af18dfaf9b0"
+			name="Loeschen_UST_CD_NEU_pruefen"
+			ref="e39c5976-273f-427e-9a4d-f498fe185648"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="UST_CD_NEU"
+					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
+					variableid="f318fc56-2aa4-4257-9b49-17419e7449b3"
+					variablename="UST_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="1c8b5ed6-0a88-40ab-b743-d61bb9b2a08c"
+			name="Loeschen_SAMK_ALT_nicht_moeglich"
+			ref="9547e9b6-6362-4651-b81f-792c55c831da"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="SAMK_CD_ALT"
+					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
+					variableid="dd20fb60-051f-494b-b0d8-6fbb904c5b83"
+					variablename="SAMK_CD_ALT">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="1fe8f1b3-6e2f-4dea-9e73-50585e0509e4"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="29dc3ab2-afee-4689-8617-c6ff243d061f"
+			name="Loeschen_SAMK_CD_NEU_pruefen"
+			ref="e6f2dd2c-807e-44ea-bc76-cc3c04e42b61"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="SAMK_CD_NEU"
+					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
+					variableid="df6cf195-d1da-4af2-bd8c-f4d78ab0f0aa"
+					variablename="SAMK_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="40dbbecd-f1be-495f-90ef-f3a6e79a1de6"
 			name="Neuanlage_UST_Code"
@@ -17,6 +87,20 @@
 					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
 					variableid="85b605f1-ad10-4ea3-a962-241f2cc67be5"
 					variablename="UST_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="4d00c67a-09db-44f3-a54b-e9ee348eda37"
+			name="Loeschen_UST_CD_ALT_nicht_moeglich"
+			ref="6ce76315-5c61-4ab9-8064-262dd0c5c6e8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="UST_CD_ALT"
+					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
+					variableid="276a3156-8f5f-47e1-b8f2-859462de2d86"
+					variablename="UST_CD_ALT">
 					</var>
 				</databinding>
 			</testmodule>
@@ -76,6 +160,20 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testmodule
+			id="be9a220b-9ea3-4cb4-9318-464b2484d3c8"
+			name="Neuanlage_SAMK"
+			ref="b313d928-40c5-4484-8a8c-ac62667fdc47"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="SAMK_CD_NEU"
+					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
+					variableid="6f5c86b5-5118-4595-8da1-af8f7ef01e32"
+					variablename="SAMK_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -127,10 +225,46 @@
 					</param>
 					<param
 					name="UST_CD_ALT"
-					value="V20">
+					value="M20">
+					</param>
+					<param
+					name="SAMK_CD_NEU"
+					value="KX">
+					</param>
+					<param
+					name="SAMK_CD_ALT"
+					value="KI">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="de1bacda-0695-4f56-803c-a3e0cadb520b"
+			name="Speichern_Pruefen_Neuanlage_SAMK"
+			ref="878b8378-fe4a-4756-b262-316a472dab2e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="SAMK_CD_NEU"
+					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
+					variableid="df6cf195-d1da-4af2-bd8c-f4d78ab0f0aa"
+					variablename="SAMK_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="de2afcff-55d2-4855-8f40-75c95079bd75"
+			name="Pruefen_Aenderung_UST_CD_NEU"
+			ref="9dadf8b0-977c-4e69-8901-7d2d802447be"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="UST_CD_NEU"
+					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
+					variableid="d58ad8d3-ae4d-4d10-9554-7d90c53a1b60"
+					variablename="UST_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="e2543c64-4bd1-47c9-970c-c3cc4a699daf"
 			name="Start_SAMK"
@@ -138,16 +272,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
-					variableid="5c18c78b-4859-4e87-ad05-6f7459cbf4c6"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm_SAMK"
 					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
 					variableid="94c3d809-eb01-4df6-9cfd-4201027663d3"
 					variablename="Programm_SAMK">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
+					variableid="5c18c78b-4859-4e87-ad05-6f7459cbf4c6"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -155,6 +289,20 @@
 			id="eb55eb6d-5bf9-4e52-9ccf-703a175ddc67"
 			name="setup">
 			</setup>
+			<testmodule
+			id="ed37d39b-e518-4def-817a-053384bb431a"
+			name="Aenderung_UST_Code_Konten"
+			ref="e15f3ead-5f7a-4b18-a046-3daf1ccbed57"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="UST_CD_NEU"
+					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
+					variableid="f318fc56-2aa4-4257-9b49-17419e7449b3"
+					variablename="UST_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="feeeef68-68c8-42d8-9e87-b42a46bfd08c"
 			name="teardown">
@@ -182,6 +330,26 @@
 						id="40dbbecd-f1be-495f-90ef-f3a6e79a1de6"
 						name="Neuanlage_UST_Code">
 						</testmodule>
+						<testmodule
+						id="137d0838-50b0-4340-8af2-1099e78cf20a"
+						name="Speichern_Pruefen_Neuanlage_UST_CD">
+						</testmodule>
+						<testmodule
+						id="ed37d39b-e518-4def-817a-053384bb431a"
+						name="Aenderung_UST_Code_Konten">
+						</testmodule>
+						<testmodule
+						id="de2afcff-55d2-4855-8f40-75c95079bd75"
+						name="Pruefen_Aenderung_UST_CD_NEU">
+						</testmodule>
+						<testmodule
+						id="1c829b37-ff2b-4f6e-a5d6-8af18dfaf9b0"
+						name="Loeschen_UST_CD_NEU_pruefen">
+						</testmodule>
+						<testmodule
+						id="4d00c67a-09db-44f3-a54b-e9ee348eda37"
+						name="Loeschen_UST_CD_ALT_nicht_moeglich">
+						</testmodule>
 						<teardown
 						id="1fe8f1b3-6e2f-4dea-9e73-50585e0509e4"
 						name="teardown">
@@ -200,6 +368,26 @@
 							<testmodule
 							id="e2543c64-4bd1-47c9-970c-c3cc4a699daf"
 							name="Start_SAMK">
+							</testmodule>
+							<testmodule
+							id="be9a220b-9ea3-4cb4-9318-464b2484d3c8"
+							name="Neuanlage_SAMK">
+							</testmodule>
+							<testmodule
+							id="de1bacda-0695-4f56-803c-a3e0cadb520b"
+							name="Speichern_Pruefen_Neuanlage_SAMK">
+							</testmodule>
+							<testmodule
+							id="0b33db47-719d-48aa-a3cb-60c13e50df36"
+							name="Aenderung_SAMK_Speichern_Pruefung">
+							</testmodule>
+							<testmodule
+							id="29dc3ab2-afee-4689-8617-c6ff243d061f"
+							name="Loeschen_SAMK_CD_NEU_pruefen">
+							</testmodule>
+							<testmodule
+							id="1c8b5ed6-0a88-40ab-b743-d61bb9b2a08c"
+							name="Loeschen_SAMK_ALT_nicht_moeglich">
 							</testmodule>
 						</setup>
 						<teardown

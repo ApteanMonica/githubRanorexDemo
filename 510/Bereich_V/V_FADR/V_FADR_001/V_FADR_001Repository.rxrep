@@ -228,6 +228,16 @@ name="V_FADR_001Repository">
 				searchtimeout="30000ms">
 					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAufk_adr_kunde Row 1' and @text='200002']
 				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="18dead42-6c77-4207-994f-cf8e3ae4db7d"
+				name="ColAufkNr"
+				refimgid="c868c332-c9f1-4719-af95-901be86cc9ad"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/*[@accessiblerole='Row' and @accessiblevalue~$Auftragsnummer]/cell[@accessiblename~'colAufk_nr']
+				</item>
 				<basepath>
 					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
 				</basepath>
@@ -570,6 +580,17 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@title='Vorschau']/element[3]//container[@accessiblename='Unteres Menüband']/?/?/container[@accessiblename='Vorschau']/toolbar[@accessiblename='']/button[@accessiblename='Druckvorschau schließen']
 			</item>
+			<item
+			addcaps="titlebar,uiautomation,uiautomationvalue"
+			capname="titlebar"
+			id="0883cc0a-a346-4ec1-a94e-944933c6e7f5"
+			name="TitleBar"
+			refimgid="c9dea0ca-bff8-40d8-a484-1a69e4cff95d"
+			refpath="/form[@title='Vorschau']/titlebar[@automationid='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Vorschau']/titlebar[@automationid='TitleBar']
+			</item>
 			<basepath>
 				/form[@title='Vorschau']
 			</basepath>
@@ -778,7 +799,7 @@ b0gm01DVQnAHZAHvdu/FFjyK+3eJ4IYiuKEIbng/SBe1JRbLNoYtcwAAAABJRU5ErkJggg==
 		<var
 		id="2f457d80-98e3-4002-af7c-321f2a2e5814"
 		name="Tagesdatum">
-			15.12.2020
+			15.12.2023
 		</var>
 	</variables>
 </repository>

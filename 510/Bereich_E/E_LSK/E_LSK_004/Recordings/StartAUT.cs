@@ -41,8 +41,8 @@ namespace E_LSK_004.Recordings
         /// </summary>
         public StartAUT()
         {
-            Startfile = "";
-            Programm = "";
+            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
+            Programm = "E_LSK";
         }
 
         /// <summary>
@@ -99,22 +99,20 @@ namespace E_LSK_004.Recordings
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
-            Delay.SpeedFactor = 1.00;
+            Mouse.DefaultMoveTime = 0;
+            Keyboard.DefaultKeyPressTime = 20;
+            Delay.SpeedFactor = 0.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
-            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'MdiLSR.TitleBar100LieferscheineLagerzuga'", repo.MdiLSR.TitleBar100LieferscheineLagerzugaInfo, new ActionTimeout(180000), new RecordItemIndex(1));
             repo.MdiLSR.TitleBar100LieferscheineLagerzugaInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (AccessibleValue~'Rechnungskontrolle') on item 'MdiLSR.TitleBar100LieferscheineLagerzuga'.", repo.MdiLSR.TitleBar100LieferscheineLagerzugaInfo, new RecordItemIndex(2));
             Validate.AttributeRegex(repo.MdiLSR.TitleBar100LieferscheineLagerzugaInfo, "AccessibleValue", new Regex("Rechnungskontrolle"));
-            Delay.Milliseconds(0);
             
         }
 
