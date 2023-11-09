@@ -576,7 +576,9 @@ namespace K_AUSW_002
             RepoItemInfo _coltyprow1Info;
             RepoItemInfo _row1column0Info;
             RepoItemInfo _colvon1row1Info;
+            RepoItemInfo _colvon1row1_mit_kst_20Info;
             RepoItemInfo _colbis1row1Info;
+            RepoItemInfo _colbis1row1_mit_kst_30Info;
             RepoItemInfo _colausacdrow1Info;
             RepoItemInfo _row2column0Info;
             RepoItemInfo _flexgridInfo;
@@ -590,7 +592,9 @@ namespace K_AUSW_002
                 _coltyprow1Info = new RepoItemInfo(this, "ColTypRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colTyp Row 1']", "", 30000, null, "35fceb6e-6222-4d71-9ef1-1c4a9c860419");
                 _row1column0Info = new RepoItemInfo(this, "Row1Column0", "row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "5f36712b-2411-4b01-bc4c-c4b717838a98");
                 _colvon1row1Info = new RepoItemInfo(this, "ColVon1Row1", "row[@accessiblename='Row 1']/cell[@accessiblename='colVon1 Row 1']", "", 30000, null, "7ec9416d-8080-4827-9d84-7186b441c893");
+                _colvon1row1_mit_kst_20Info = new RepoItemInfo(this, "ColVon1Row1_mit_KST_20", "row[@accessiblename='Row 1']/cell[@accessiblename='colVon1 Row 1' and @accessiblevalue='20']", "", 30000, null, "9a3298e1-cee2-4162-83af-6669c6edc43d");
                 _colbis1row1Info = new RepoItemInfo(this, "ColBis1Row1", "row[@accessiblename='Row 1']/cell[@accessiblename='colBis1 Row 1']", "", 30000, null, "6fa5daa7-c1ef-4459-8c30-af8f6f1fe868");
+                _colbis1row1_mit_kst_30Info = new RepoItemInfo(this, "ColBis1Row1_mit_KST_30", "row[@accessiblename='Row 1']/cell[@accessiblename='colBis1 Row 1' and @accessiblevalue='30']", "", 30000, null, "918e07c1-0b96-4979-836f-01d7d394f0df");
                 _colausacdrow1Info = new RepoItemInfo(this, "ColAusaCdRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colAusa_cd Row 1']", "", 30000, null, "f31c4546-9ef2-4b13-9fb4-a93a88f95163");
                 _row2column0Info = new RepoItemInfo(this, "Row2Column0", "row[@accessiblename='Row 2']/cell[@accessiblename='Row 2 Column 0']", "", 30000, null, "77c1b334-bf82-42c5-a304-5920b403bf21");
                 _flexgridInfo = new RepoItemInfo(this, "FlexGrid", "", "", 30000, null, "b99e0455-20c2-427a-8bf2-d03e1dcaa687");
@@ -693,6 +697,30 @@ namespace K_AUSW_002
             }
 
             /// <summary>
+            /// The ColVon1Row1_mit_KST_20 item.
+            /// </summary>
+            [RepositoryItem("9a3298e1-cee2-4162-83af-6669c6edc43d")]
+            public virtual Ranorex.Cell ColVon1Row1_mit_KST_20
+            {
+                get
+                {
+                    return _colvon1row1_mit_kst_20Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColVon1Row1_mit_KST_20 item info.
+            /// </summary>
+            [RepositoryItemInfo("9a3298e1-cee2-4162-83af-6669c6edc43d")]
+            public virtual RepoItemInfo ColVon1Row1_mit_KST_20Info
+            {
+                get
+                {
+                    return _colvon1row1_mit_kst_20Info;
+                }
+            }
+
+            /// <summary>
             /// The ColBis1Row1 item.
             /// </summary>
             [RepositoryItem("6fa5daa7-c1ef-4459-8c30-af8f6f1fe868")]
@@ -713,6 +741,30 @@ namespace K_AUSW_002
                 get
                 {
                     return _colbis1row1Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColBis1Row1_mit_KST_30 item.
+            /// </summary>
+            [RepositoryItem("918e07c1-0b96-4979-836f-01d7d394f0df")]
+            public virtual Ranorex.Cell ColBis1Row1_mit_KST_30
+            {
+                get
+                {
+                    return _colbis1row1_mit_kst_30Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBis1Row1_mit_KST_30 item info.
+            /// </summary>
+            [RepositoryItemInfo("918e07c1-0b96-4979-836f-01d7d394f0df")]
+            public virtual RepoItemInfo ColBis1Row1_mit_KST_30Info
+            {
+                get
+                {
+                    return _colbis1row1_mit_kst_30Info;
                 }
             }
 

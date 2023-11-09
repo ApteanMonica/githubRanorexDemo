@@ -160,6 +160,16 @@ name="V_FADR_001Repository">
 				<item
 				addcaps="cell,accessible"
 				capname="cell"
+				id="144197f5-eefc-41b1-96d5-972abaae8274"
+				name="ColLskDatumRow1_ohne_Tagesdatum"
+				refimgid="127c4dcd-8244-4e20-a5dd-2192f4a217ec"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @text='']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
 				id="28d1d1d7-f48c-4686-b655-e4451d5120ab"
 				name="ColLskDatumRow1_mit_Tagesdatum"
 				refimgid="127c4dcd-8244-4e20-a5dd-2192f4a217ec"
@@ -208,10 +218,31 @@ name="V_FADR_001Repository">
 				searchtimeout="30000ms">
 					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
 				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="b2effbf4-30c9-4d8c-888a-2356dca7d621"
+				name="ColAufkAdrKundeRow_mit_Kunde_200002"
+				refimgid="6e8987c8-1146-45b0-8afd-45130afc690b"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAufk_adr_kunde Row 1' and @text='200002']
+				</item>
 				<basepath>
 					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
 				</basepath>
 			</folder>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="1e5d8938-78ec-411c-919e-5a56435de54f"
+			name="SomeText"
+			refimgid="e878b3f7-c1aa-464e-957b-c606c03c38c0"
+			refpath="/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/text[@controltypename='']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/text[@controltypename='']
+			</item>
 			<basepath>
 				/form[@controlname='tblFadr']
 			</basepath>

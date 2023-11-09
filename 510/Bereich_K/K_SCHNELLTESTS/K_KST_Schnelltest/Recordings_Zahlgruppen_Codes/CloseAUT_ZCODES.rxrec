@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c1b270a3-ed1d-4892-a56f-bd78a3186258"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT_ZCODES"
+	namespace="K_KST_Schnelltest.Recordings_Zahlgruppen_Codes">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="4595e7ae-a427-45c7-a775-6638732f025b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="17375fc2-b267-46a4-95c2-9f923a8a22fd"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblZlcd']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="f70266d5-51b4-4a90-ac99-68606581a1b7"
+	name="K_KST_SchnelltestRepository"
+	relativepath="..\K_KST_SchnelltestRepository.rxrep">
+		<codegen
+		classname="K_KST_SchnelltestRepository"
+		namespace="K_KST_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="2731b73d-d8ed-46a2-9a64-f6bac5b14186"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT_ZCODES.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

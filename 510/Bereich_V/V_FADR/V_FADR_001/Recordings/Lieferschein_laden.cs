@@ -133,20 +133,19 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='E') on item 'TblFadr.Rech_art_FlexGrid.Rechnungsart'.", repo.TblFadr.Rech_art_FlexGrid.RechnungsartInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid.RechnungsartInfo, "Text", "E");
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1' and assigning its value to variable 'Tagesdatum'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(2));
-            Tagesdatum = repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1.Element.GetAttributeValueText("Text");
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1_mit_Tagesdatum'", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1_mit_TagesdatumInfo, new ActionTimeout(60000), new RecordItemIndex(2));
+            //repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1_mit_TagesdatumInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Tagesdatum) on item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(3));
-            Validate.AttributeRegex(repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, "Text", new Regex(Tagesdatum));
+            Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("dd.MM.yyyy");
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1' and assigning its value to variable 'getDatumRow'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(4));
-            getDatumRow = repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1.Element.GetAttributeValueText("Text");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, "Text", Tagesdatum);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(5));
             repo.TblFadr.PbCommonLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblFadr.untere_Tabelle.row1'", repo.TblFadr.untere_Tabelle.row1Info, new ActionTimeout(120000), new RecordItemIndex(6));
-            repo.TblFadr.untere_Tabelle.row1Info.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblFadr.untere_Tabelle.ColAufkAdrKundeRow_mit_Kunde_200002'", repo.TblFadr.untere_Tabelle.ColAufkAdrKundeRow_mit_Kunde_200002Info, new ActionTimeout(120000), new RecordItemIndex(6));
+            repo.TblFadr.untere_Tabelle.ColAufkAdrKundeRow_mit_Kunde_200002Info.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1' at Center.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(7));
             repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1.Click();
@@ -154,8 +153,9 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(8));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1' at Center.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(9));
-            repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick at {X=0,Y=0}.", new RecordItemIndex(9));
+            Mouse.MoveTo(0, 0);
+            Mouse.DoubleClick(System.Windows.Forms.MouseButtons.Left);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(10));
             Delay.Duration(2000, false);
@@ -163,64 +163,57 @@ namespace V_FADR_001.Recordings
             //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}' with focus on 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(11));
             //repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1.PressKeys("{Delete}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(12));
-            Keyboard.PrepareFocus(repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1);
-            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(13));
-            Delay.Duration(1000, false);
-            
-            // BAR: Schritt 13 und 14 von der Reihenfolge umgetauscht vorher war zuerst Delay und dann Tab
-            Report.Log(ReportLevel.Info, "Keyboard", "BAR: Schritt 13 und 14 von der Reihenfolge umgetauscht vorher war zuerst Delay und dann Tab\r\nKey 'Tab' Press.", new RecordItemIndex(14));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(15));
-            Delay.Duration(2000, false);
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LControlKey down}{Akey}{LControlKey up}' with focus on 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(16));
-            //repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(17));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(12));
             //Keyboard.PrepareFocus(repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1);
             //Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+X' Press with focus on 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(18));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+X' Press with focus on 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(13));
             //Keyboard.PrepareFocus(repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1);
             //Keyboard.Press(System.Windows.Forms.Keys.X | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2' at Center.", repo.TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2Info, new RecordItemIndex(19));
-            //repo.TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(14));
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(20));
-            //Delay.Duration(30000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(15));
+            Delay.Duration(1000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "beide Datumszeilen ohne Datum", null, false, new RecordItemIndex(21));
+            // BAR: Schritt 13 und 14 von der Reihenfolge umgetauscht vorher war zuerst Delay und dann Tab
+            Report.Log(ReportLevel.Info, "Keyboard", "BAR: Schritt 13 und 14 von der Reihenfolge umgetauscht vorher war zuerst Delay und dann Tab\r\nKey 'Tab' Press.", new RecordItemIndex(16));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+V' Press with focus on 'TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2'.", repo.TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2Info, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1_ohne_Tagesdatum'", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1_ohne_TagesdatumInfo, new ActionTimeout(300000), new RecordItemIndex(17));
+            repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1_ohne_TagesdatumInfo.WaitForExists(300000);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(18));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "User", "beide Datumszeilen ohne Datum", new RecordItemIndex(19));
+            
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+V' Press with focus on 'TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2'.", repo.TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2Info, new RecordItemIndex(20));
             //Keyboard.PrepareFocus(repo.TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2);
             //Keyboard.Press(System.Windows.Forms.Keys.V | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum' with focus on 'TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2'.", repo.TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2Info, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum' with focus on 'TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2'.", repo.TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2Info, new RecordItemIndex(21));
             repo.TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2.PressKeys(Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(22));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(25));
+            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(23));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(24));
             repo.TblFadr.PbCommonLoad.Click();
             
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(27));
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(25));
             //Delay.Duration(30000, false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(120000), new RecordItemIndex(28));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(120000), new RecordItemIndex(26));
             repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es wurden keine Lieferscheine gefunden die zur Belegerstellung berechtigt sind.\r\nNähere Information unter Menu/Extras/Warum wird Auftrag nicht fakturiert') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(29));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es wurden keine Lieferscheine gefunden die zur Belegerstellung berechtigt sind.\r\nNähere Information unter Menu/Extras/Warum wird Auftrag nicht fakturiert') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(27));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es wurden keine Lieferscheine gefunden die zur Belegerstellung berechtigt sind.\r\nNähere Information unter Menu/Extras/Warum wird Auftrag nicht fakturiert");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(30));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(28));
             repo.DlgMessageBox.Button0.Click();
             
         }
