@@ -97,22 +97,20 @@ namespace E_BSKB_001.Recordings
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
+            Mouse.DefaultMoveTime = 0;
             Keyboard.DefaultKeyPressTime = 20;
-            Delay.SpeedFactor = 1.00;
+            Delay.SpeedFactor = 0.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
-            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TitleBar100BestellungenBestaetigen'", repo.TitleBar100BestellungenBestaetigenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
             repo.TitleBar100BestellungenBestaetigenInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bestellungen bestätigen') on item 'TitleBar100BestellungenBestaetigen'.", repo.TitleBar100BestellungenBestaetigenInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.TitleBar100BestellungenBestaetigenInfo, "Text", "Bestellungen bestätigen");
-            Delay.Milliseconds(0);
             
         }
 
