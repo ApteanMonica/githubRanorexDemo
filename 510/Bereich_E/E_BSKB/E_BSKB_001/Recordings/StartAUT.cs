@@ -106,8 +106,8 @@ namespace E_BSKB_001.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TitleBar100BestellungenBestaetigen'", repo.TitleBar100BestellungenBestaetigenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.TitleBar100BestellungenBestaetigenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'TitleBar100BestellungenBestaetigen'", repo.TitleBar100BestellungenBestaetigenInfo, new ActionTimeout(180000), new RecordItemIndex(1));
+            repo.TitleBar100BestellungenBestaetigenInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bestellungen bestätigen') on item 'TitleBar100BestellungenBestaetigen'.", repo.TitleBar100BestellungenBestaetigenInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.TitleBar100BestellungenBestaetigenInfo, "Text", "Bestellungen bestätigen");
