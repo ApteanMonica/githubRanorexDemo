@@ -54,16 +54,14 @@ namespace S_ALLTAB_Schnelltest.Recordings_UST
 
 #region Variables
 
-        string _UST_CD_NEU;
-
         /// <summary>
         /// Gets or sets the value of variable UST_CD_NEU.
         /// </summary>
         [TestVariable("85b605f1-ad10-4ea3-a962-241f2cc67be5")]
         public string UST_CD_NEU
         {
-            get { return _UST_CD_NEU; }
-            set { _UST_CD_NEU = value; }
+            get { return repo.UST_CD_NEU; }
+            set { repo.UST_CD_NEU = value; }
         }
 
 #endregion
@@ -92,71 +90,113 @@ namespace S_ALLTAB_Schnelltest.Recordings_UST
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblUstVerwalten.ChildTableWindow.Row1Column0' at Center.", repo.TblUstVerwalten.ChildTableWindow.Row1Column0Info, new RecordItemIndex(0));
-            repo.TblUstVerwalten.ChildTableWindow.Row1Column0.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblUstVerwalten.PbDataAccessNew' at Center.", repo.TblUstVerwalten.PbDataAccessNewInfo, new RecordItemIndex(0));
+            repo.TblUstVerwalten.PbDataAccessNew.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Insert' Press.", new RecordItemIndex(1));
-            Keyboard.Press(System.Windows.Forms.Keys.Insert, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'TblUstVerwalten.Row1_'", repo.TblUstVerwalten.Row1_.SelfInfo, new ActionTimeout(30000), new RecordItemIndex(1));
+            repo.TblUstVerwalten.Row1_.SelfInfo.WaitForNotExists(30000);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$UST_CD_NEU' with focus on 'TblUstVerwalten.ChildTableWindow.SomeText'.", repo.TblUstVerwalten.ChildTableWindow.SomeTextInfo, new RecordItemIndex(2));
-            //repo.TblUstVerwalten.ChildTableWindow.SomeText.PressKeys(UST_CD_NEU);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'TblUstVerwalten.FlexGrid' at Center.", repo.TblUstVerwalten.FlexGridInfo, new RecordItemIndex(2));
+            repo.TblUstVerwalten.FlexGrid.Click(System.Windows.Forms.MouseButtons.Right);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$UST_CD_NEU' with focus on 'TblUstVerwalten.ChildTableWindow.ColUstCdRow32'.", repo.TblUstVerwalten.ChildTableWindow.ColUstCdRow32Info, new RecordItemIndex(3));
-            repo.TblUstVerwalten.ChildTableWindow.ColUstCdRow32.PressKeys(UST_CD_NEU);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'SALLTAB.ZeileEinfuegen_510_511_521'", repo.SALLTAB.ZeileEinfuegen_510_511_521Info, new ActionTimeout(10000), new RecordItemIndex(3));
+            repo.SALLTAB.ZeileEinfuegen_510_511_521Info.WaitForExists(10000);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SALLTAB.ZeileEinfuegen_510_511_521' at Center.", repo.SALLTAB.ZeileEinfuegen_510_511_521Info, new RecordItemIndex(4));
+            repo.SALLTAB.ZeileEinfuegen_510_511_521.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'TblUstVerwalten.Row1'", repo.TblUstVerwalten.Row1Info, new ActionTimeout(30000), new RecordItemIndex(5));
+            repo.TblUstVerwalten.Row1Info.WaitForExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$UST_CD_NEU'.", new RecordItemIndex(6));
+            Keyboard.Press(UST_CD_NEU);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '7,70' with focus on 'TblUstVerwalten.ChildTableWindow.ColUstSatzRow32'.", repo.TblUstVerwalten.ChildTableWindow.ColUstSatzRow32Info, new RecordItemIndex(5));
-            repo.TblUstVerwalten.ChildTableWindow.ColUstSatzRow32.PressKeys("7,70");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UST_CD_NEU) on item 'TblUstVerwalten.Row1_.ColUstCdRow1'.", repo.TblUstVerwalten.Row1_.ColUstCdRow1Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.TblUstVerwalten.Row1_.ColUstCdRow1Info, "Text", UST_CD_NEU);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}{Tab}{Tab}{Tab}'.", new RecordItemIndex(6));
-            Keyboard.Press("{Tab}{Tab}{Tab}{Tab}{Tab}");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'E' with focus on 'TblUstVerwalten.ChildTableWindow.ColUstArtRow32'.", repo.TblUstVerwalten.ChildTableWindow.ColUstArtRow32Info, new RecordItemIndex(7));
-            repo.TblUstVerwalten.ChildTableWindow.ColUstArtRow32.PressKeys("E");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '7,7'.", new RecordItemIndex(9));
+            Keyboard.Press("7,7");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2599' with focus on 'TblUstVerwalten.ChildTableWindow.ColUstVstkontoRow32'.", repo.TblUstVerwalten.ChildTableWindow.ColUstVstkontoRow32Info, new RecordItemIndex(11));
-            repo.TblUstVerwalten.ChildTableWindow.ColUstVstkontoRow32.PressKeys("2599");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='7,70') on item 'TblUstVerwalten.Row1_.ColUstSatzRow1'.", repo.TblUstVerwalten.Row1_.ColUstSatzRow1Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.TblUstVerwalten.Row1_.ColUstSatzRow1Info, "Text", "7,70");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '50'.", new RecordItemIndex(12));
+            Keyboard.Press("50");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'UStVerwaltung.Konto2599IstNichtVorhandenOderKein'", repo.UStVerwaltung.Konto2599IstNichtVorhandenOderKeinInfo, new ActionTimeout(60000), new RecordItemIndex(13));
-            repo.UStVerwaltung.Konto2599IstNichtVorhandenOderKeinInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='50,00') on item 'TblUstVerwalten.Row1_.ColUstAuftRow1'.", repo.TblUstVerwalten.Row1_.ColUstAuftRow1Info, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.TblUstVerwalten.Row1_.ColUstAuftRow1Info, "Text", "50,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Konto 2599 ist nicht vorhanden oder kein USt/VSt-Konto.') on item 'UStVerwaltung.Konto2599IstNichtVorhandenOderKein'.", repo.UStVerwaltung.Konto2599IstNichtVorhandenOderKeinInfo, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.UStVerwaltung.Konto2599IstNichtVorhandenOderKeinInfo, "Text", "Konto 2599 ist nicht vorhanden oder kein USt/VSt-Konto.");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'UStVerwaltung.ButtonOK' at Center.", repo.UStVerwaltung.ButtonOKInfo, new RecordItemIndex(15));
-            repo.UStVerwaltung.ButtonOK.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(15));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(16));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '3510' with focus on 'TblUstVerwalten.ChildTableWindow.ColUstMwstkontoRow32'.", repo.TblUstVerwalten.ChildTableWindow.ColUstMwstkontoRow32Info, new RecordItemIndex(17));
-            repo.TblUstVerwalten.ChildTableWindow.ColUstMwstkontoRow32.PressKeys("3510");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(17));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'E'.", new RecordItemIndex(18));
+            Keyboard.Press("E");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(19));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'AT' with focus on 'TblUstVerwalten.ChildTableWindow.ColUstLandCdRow3'.", repo.TblUstVerwalten.ChildTableWindow.ColUstLandCdRow3Info, new RecordItemIndex(20));
-            repo.TblUstVerwalten.ChildTableWindow.ColUstLandCdRow3.PressKeys("AT");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='E') on item 'TblUstVerwalten.Row1_.ColUstArtRow1'.", repo.TblUstVerwalten.Row1_.ColUstArtRow1Info, new RecordItemIndex(20));
+            Validate.AttributeEqual(repo.TblUstVerwalten.Row1_.ColUstArtRow1Info, "Text", "E");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(21));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(22));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2599'.", new RecordItemIndex(23));
+            Keyboard.Press("2599");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(24));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(60000), new RecordItemIndex(25));
+            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Konto 2599 ist nicht vorhanden oder kein USt/VSt-Konto.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(26));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Konto 2599 ist nicht vorhanden oder kein USt/VSt-Konto.");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(27));
+            repo.DlgMessageBox.Button0.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2599') on item 'TblUstVerwalten.Row1_.ColUstVstkontoRow1'.", repo.TblUstVerwalten.Row1_.ColUstVstkontoRow1Info, new RecordItemIndex(28));
+            Validate.AttributeEqual(repo.TblUstVerwalten.Row1_.ColUstVstkontoRow1Info, "Text", "2599");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '3510'.", new RecordItemIndex(29));
+            Keyboard.Press("3510");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(30));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3510') on item 'TblUstVerwalten.Row1_.ColUstMwstkontoRow1'.", repo.TblUstVerwalten.Row1_.ColUstMwstkontoRow1Info, new RecordItemIndex(31));
+            Validate.AttributeEqual(repo.TblUstVerwalten.Row1_.ColUstMwstkontoRow1Info, "Text", "3510");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(32));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'AT'.", new RecordItemIndex(33));
+            Keyboard.Press("AT");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(34));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='AT') on item 'TblUstVerwalten.Row1_.ColUstLandCdRow1'.", repo.TblUstVerwalten.Row1_.ColUstLandCdRow1Info, new RecordItemIndex(35));
+            Validate.AttributeEqual(repo.TblUstVerwalten.Row1_.ColUstLandCdRow1Info, "Text", "AT");
             
         }
 
