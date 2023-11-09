@@ -30,6 +30,26 @@ mode="Global">
 		</var>
 	</variables>
 	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="3b0d4410-9b8a-4f33-ba51-c53eebdd03d4"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="62d0cb5d-d2fe-437b-8a16-b3b802bf7622"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgUVA_druck']/button[@controlname='pbElster' and @visible='True' and @enabled='True']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -2389,18 +2409,18 @@ mode="Global">
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
-		searchpropertyid="518db293-c14c-413c-93c1-d45623f24810"
+		searchpropertyid="fb9fd175-a106-4a04-a561-b64e682715d5"
 		waitaction="Exists"
-		waittimeout="120000ms">
+		waittimeout="60000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="1136a1fa-20c7-4379-94e8-eb985bdb805e"
+			id="52e6e77f-90c9-4a13-98cf-ece5a67b991e"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='dlgElster_DSGVO']/container[@controlname='cPdfVorschau1']/container[@controlname='PreviewHandlerHostControl']/text[@controlname='lblMessage' and @text~'Preview Generation Failed']
+					/form[@controlname='dlgElster_DSGVO']/checkbox[@controlname='cbDSGVO' and @checked='False' and @controltype='rssoft.fwg.basis.cCheckBox']
 				</path>
 				<robustPath>
 				</robustPath>

@@ -40,6 +40,16 @@ name="B_ELSTER_2024_UVA_JUVA_ZMRepository">
 			searchtimeout="30000ms">
 				/form[@title~'Zusammenfassende Meldung']/container[@controlname='ClientArea']/container[@controlname='groupBox1']/button[@controlname='pbElster']
 			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="3cbdab6f-ff03-4fb8-961b-2245091e2882"
+			name="ZM_PbElster_visible_enabled"
+			refimgid="aef14ed2-0f0d-43e6-9933-04e490d09011"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title~'Zusammenfassende Meldung']/container[@controlname='ClientArea']/container[@controlname='groupBox1']/button[@controlname='pbElster' and @visible='True' and @enabled='True']
+			</item>
 			<folder
 			addcaps="container,control,nativewindow"
 			capname="container"
@@ -152,6 +162,16 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='dlgElster_DSGVO']/checkbox[@controlname='cbDSGVO']
+			</item>
+			<item
+			addcaps="checkbox,control,nativewindow"
+			capname="checkbox"
+			id="52e6e77f-90c9-4a13-98cf-ece5a67b991e"
+			name="CbDSGVO_unchecked"
+			refimgid="23695f34-0394-41a8-afbb-3f85784982dd"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgElster_DSGVO']/checkbox[@controlname='cbDSGVO' and @checked='False' and @controltype='rssoft.fwg.basis.cCheckBox']
 			</item>
 			<item
 			addcaps="button,control,nativewindow"
@@ -2612,6 +2632,16 @@ iQGlGgC6HTBAdPsLgewbF6W61N1ckdcAAAAASUVORK5CYII=
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='dlgUVA_druck']/button[@controlname='pbElster']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="62d0cb5d-d2fe-437b-8a16-b3b802bf7622"
+			name="PbElster_visible_enabled"
+			refimgid="aef14ed2-0f0d-43e6-9933-04e490d09011"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgUVA_druck']/button[@controlname='pbElster' and @visible='True' and @enabled='True']
 			</item>
 			<item
 			addcaps="text,accessible"

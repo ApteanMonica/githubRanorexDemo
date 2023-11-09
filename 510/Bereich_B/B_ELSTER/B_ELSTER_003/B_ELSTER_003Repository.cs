@@ -506,6 +506,7 @@ namespace B_ELSTER_003
         {
             RepoItemInfo _titlebar300druckuvawerteInfo;
             RepoItemInfo _pbelsterInfo;
+            RepoItemInfo _pbelster_visible_enabledInfo;
             RepoItemInfo _tabpageformularInfo;
             RepoItemInfo _landInfo;
             RepoItemInfo _cmbuvafbezInfo;
@@ -523,6 +524,7 @@ namespace B_ELSTER_003
             {
                 _titlebar300druckuvawerteInfo = new RepoItemInfo(this, "TitleBar300DruckUVAWerte", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "184251bd-fb32-4586-9e5f-f0d12b897ce3");
                 _pbelsterInfo = new RepoItemInfo(this, "PbElster", "button[@controlname='pbElster']", "", 30000, null, "4b83ce64-ea4b-424b-b085-5bc96417331f");
+                _pbelster_visible_enabledInfo = new RepoItemInfo(this, "PbElster_visible_enabled", "button[@controlname='pbElster' and @visible='True' and @enabled='True']", "", 30000, null, "62d0cb5d-d2fe-437b-8a16-b3b802bf7622");
                 _tabpageformularInfo = new RepoItemInfo(this, "TabPageFormular", "tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&Formular']", "", 30000, null, "1ec97d00-f4cc-4af0-abb3-401350cf5be6");
                 _landInfo = new RepoItemInfo(this, "Land", "tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpFormular']/text[@controlname='dfLand_cd']/text[@accessiblename='Land']", "", 30000, null, "44dd8cde-53ce-4166-9d6c-8d214a997cdb");
                 _cmbuvafbezInfo = new RepoItemInfo(this, "CmbUvaFBez", "tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpFormular']/combobox[@controlname='cmbUvaF_bez']", "", 30000, null, "d47ce18c-0016-462f-9549-90fe4c69d1d9");
@@ -602,6 +604,30 @@ namespace B_ELSTER_003
                 get
                 {
                     return _pbelsterInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbElster_visible_enabled item.
+            /// </summary>
+            [RepositoryItem("62d0cb5d-d2fe-437b-8a16-b3b802bf7622")]
+            public virtual Ranorex.Button PbElster_visible_enabled
+            {
+                get
+                {
+                    return _pbelster_visible_enabledInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbElster_visible_enabled item info.
+            /// </summary>
+            [RepositoryItemInfo("62d0cb5d-d2fe-437b-8a16-b3b802bf7622")]
+            public virtual RepoItemInfo PbElster_visible_enabledInfo
+            {
+                get
+                {
+                    return _pbelster_visible_enabledInfo;
                 }
             }
 
@@ -872,6 +898,7 @@ namespace B_ELSTER_003
         {
             RepoItemInfo _titlebar300elsterinformationInfo;
             RepoItemInfo _cbdsgvoInfo;
+            RepoItemInfo _cbdsgvo_uncheckedInfo;
             RepoItemInfo _pbweiterInfo;
             RepoItemInfo _lblmessage_preview_generation_failedInfo;
 
@@ -883,6 +910,7 @@ namespace B_ELSTER_003
             {
                 _titlebar300elsterinformationInfo = new RepoItemInfo(this, "TitleBar300ElsterInformation", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "f96b6b96-fe54-46bb-aef3-c6bd98fbb908");
                 _cbdsgvoInfo = new RepoItemInfo(this, "CbDSGVO", "checkbox[@controlname='cbDSGVO']", "", 30000, null, "c48cb6eb-023c-4ee8-ae3b-54d9c5ebe011");
+                _cbdsgvo_uncheckedInfo = new RepoItemInfo(this, "CbDSGVO_unchecked", "checkbox[@controlname='cbDSGVO' and @checked='False' and @controltype='rssoft.fwg.basis.cCheckBox']", "", 30000, null, "52e6e77f-90c9-4a13-98cf-ece5a67b991e");
                 _pbweiterInfo = new RepoItemInfo(this, "PbWeiter", "button[@controlname='pbWeiter']", "", 30000, null, "3a570e26-4e52-4f2c-b8bc-ded6cbe7eaf9");
                 _lblmessage_preview_generation_failedInfo = new RepoItemInfo(this, "LblMessage_Preview_Generation_Failed", "container[@controlname='cPdfVorschau1']/container[@controlname='PreviewHandlerHostControl']/text[@controlname='lblMessage' and @text~'Preview Generation Failed']", "", 30000, null, "1136a1fa-20c7-4379-94e8-eb985bdb805e");
             }
@@ -956,6 +984,30 @@ namespace B_ELSTER_003
                 get
                 {
                     return _cbdsgvoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CbDSGVO_unchecked item.
+            /// </summary>
+            [RepositoryItem("52e6e77f-90c9-4a13-98cf-ece5a67b991e")]
+            public virtual Ranorex.CheckBox CbDSGVO_unchecked
+            {
+                get
+                {
+                    return _cbdsgvo_uncheckedInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CbDSGVO_unchecked item info.
+            /// </summary>
+            [RepositoryItemInfo("52e6e77f-90c9-4a13-98cf-ece5a67b991e")]
+            public virtual RepoItemInfo CbDSGVO_uncheckedInfo
+            {
+                get
+                {
+                    return _cbdsgvo_uncheckedInfo;
                 }
             }
 
