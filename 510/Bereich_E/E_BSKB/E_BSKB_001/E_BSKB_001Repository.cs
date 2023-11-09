@@ -599,6 +599,7 @@ namespace E_BSKB_001
         {
             RepoItemInfo _labelmeldungstextInfo;
             RepoItemInfo _button0Info;
+            RepoItemInfo _bestellungbestaetigenInfo;
 
             /// <summary>
             /// Creates a new DlgMessageBox  folder.
@@ -608,6 +609,7 @@ namespace E_BSKB_001
             {
                 _labelmeldungstextInfo = new RepoItemInfo(this, "LabelMeldungstext", "text[@controlname='labelMeldungstext']", "", 30000, null, "dfde29b6-7a9f-4d28-ac19-bd5fbc6004dd");
                 _button0Info = new RepoItemInfo(this, "Button0", "button[@controlname='button0']", "", 30000, null, "e25e7fbf-e5b0-4675-88d1-ca56a17aa05f");
+                _bestellungbestaetigenInfo = new RepoItemInfo(this, "BestellungBestaetigen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "3c49dc0d-48bb-46b7-b9b6-41b2106e77d2");
             }
 
             /// <summary>
@@ -679,6 +681,30 @@ namespace E_BSKB_001
                 get
                 {
                     return _button0Info;
+                }
+            }
+
+            /// <summary>
+            /// The BestellungBestaetigen item.
+            /// </summary>
+            [RepositoryItem("3c49dc0d-48bb-46b7-b9b6-41b2106e77d2")]
+            public virtual Ranorex.TitleBar BestellungBestaetigen
+            {
+                get
+                {
+                    return _bestellungbestaetigenInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BestellungBestaetigen item info.
+            /// </summary>
+            [RepositoryItemInfo("3c49dc0d-48bb-46b7-b9b6-41b2106e77d2")]
+            public virtual RepoItemInfo BestellungBestaetigenInfo
+            {
+                get
+                {
+                    return _bestellungbestaetigenInfo;
                 }
             }
         }

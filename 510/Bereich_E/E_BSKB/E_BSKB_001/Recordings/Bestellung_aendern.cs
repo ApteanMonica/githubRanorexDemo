@@ -161,16 +161,20 @@ namespace E_BSKB_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBskb.PbDataAccessSave' at Center.", repo.TblBskb.PbDataAccessSaveInfo, new RecordItemIndex(11));
             repo.TblBskb.PbDataAccessSave.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ACHTUNG: Der Preis mind. einer Position') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(12));
+            // BAR: wait for für Bestätigungsmeldung  hinzugefügt!
+            Report.Log(ReportLevel.Info, "Wait", "BAR: wait for für Bestätigungsmeldung  hinzugefügt!\r\nWaiting 3m to exist. Associated repository item: 'DlgMessageBox.BestellungBestaetigen'", repo.DlgMessageBox.BestellungBestaetigenInfo, new ActionTimeout(180000), new RecordItemIndex(12));
+            repo.DlgMessageBox.BestellungBestaetigenInfo.WaitForExists(180000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ACHTUNG: Der Preis mind. einer Position') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(13));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "ACHTUNG: Der Preis mind. einer Position");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(14));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Ihre eigene Mindesteinkaufsmenge wurde unterschritten!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Ihre eigene Mindesteinkaufsmenge wurde unterschritten!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(15));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Ihre eigene Mindesteinkaufsmenge wurde unterschritten!");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(16));
             repo.DlgMessageBox.Button0.Click();
             
         }
