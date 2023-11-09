@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace S_ALLTAB_Schnelltest.Recordings_UST
 {
-    public partial class Speichern_Pruefen_Neuanlage
+    public partial class Speichern_Pruefen_Neuanlage_UST_CD
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

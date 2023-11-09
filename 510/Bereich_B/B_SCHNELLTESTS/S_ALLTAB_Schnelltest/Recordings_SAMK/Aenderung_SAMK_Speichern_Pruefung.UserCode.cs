@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace S_ALLTAB_Schnelltest.Recordings_UST
+namespace S_ALLTAB_Schnelltest.Recordings_SAMK
 {
-    public partial class Pruefen_Aenderung
+    public partial class Aenderung_SAMK_Speichern_Pruefung
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -24,22 +24,22 @@ namespace S_ALLTAB_Schnelltest.Recordings_UST
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Speichern_Pruefen_Neuanlage recording.
+    ///The Speichern_Pruefen_Neuanlage_UST_CD recording.
     /// </summary>
     [TestModule("dfafb521-466b-407e-9588-8f2bd9a34b3d", ModuleType.Recording, 1)]
-    public partial class Speichern_Pruefen_Neuanlage : ITestModule
+    public partial class Speichern_Pruefen_Neuanlage_UST_CD : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_ALLTAB_Schnelltest.S_ALLTAB_SchnelltestRepository repository.
         /// </summary>
         public static global::S_ALLTAB_Schnelltest.S_ALLTAB_SchnelltestRepository repo = global::S_ALLTAB_Schnelltest.S_ALLTAB_SchnelltestRepository.Instance;
 
-        static Speichern_Pruefen_Neuanlage instance = new Speichern_Pruefen_Neuanlage();
+        static Speichern_Pruefen_Neuanlage_UST_CD instance = new Speichern_Pruefen_Neuanlage_UST_CD();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Speichern_Pruefen_Neuanlage()
+        public Speichern_Pruefen_Neuanlage_UST_CD()
         {
             UST_CD_NEU = "R77";
         }
@@ -47,7 +47,7 @@ namespace S_ALLTAB_Schnelltest.Recordings_UST
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Speichern_Pruefen_Neuanlage Instance
+        public static Speichern_Pruefen_Neuanlage_UST_CD Instance
         {
             get { return instance; }
         }

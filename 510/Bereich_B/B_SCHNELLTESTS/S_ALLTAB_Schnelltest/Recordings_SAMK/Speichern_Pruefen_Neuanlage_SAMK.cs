@@ -20,33 +20,34 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace S_ALLTAB_Schnelltest.Recordings_UST
+namespace S_ALLTAB_Schnelltest.Recordings_SAMK
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Loeschen_UST_CD_NEU_pruefen recording.
+    ///The Speichern_Pruefen_Neuanlage_SAMK recording.
     /// </summary>
-    [TestModule("e39c5976-273f-427e-9a4d-f498fe185648", ModuleType.Recording, 1)]
-    public partial class Loeschen_UST_CD_NEU_pruefen : ITestModule
+    [TestModule("878b8378-fe4a-4756-b262-316a472dab2e", ModuleType.Recording, 1)]
+    public partial class Speichern_Pruefen_Neuanlage_SAMK : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_ALLTAB_Schnelltest.S_ALLTAB_SchnelltestRepository repository.
         /// </summary>
         public static global::S_ALLTAB_Schnelltest.S_ALLTAB_SchnelltestRepository repo = global::S_ALLTAB_Schnelltest.S_ALLTAB_SchnelltestRepository.Instance;
 
-        static Loeschen_UST_CD_NEU_pruefen instance = new Loeschen_UST_CD_NEU_pruefen();
+        static Speichern_Pruefen_Neuanlage_SAMK instance = new Speichern_Pruefen_Neuanlage_SAMK();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Loeschen_UST_CD_NEU_pruefen()
+        public Speichern_Pruefen_Neuanlage_SAMK()
         {
+            SAMK_CD_NEU = "KX";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Loeschen_UST_CD_NEU_pruefen Instance
+        public static Speichern_Pruefen_Neuanlage_SAMK Instance
         {
             get { return instance; }
         }
@@ -54,13 +55,13 @@ namespace S_ALLTAB_Schnelltest.Recordings_UST
 #region Variables
 
         /// <summary>
-        /// Gets or sets the value of variable UST_CD_NEU.
+        /// Gets or sets the value of variable SAMK_CD_NEU.
         /// </summary>
-        [TestVariable("f318fc56-2aa4-4257-9b49-17419e7449b3")]
-        public string UST_CD_NEU
+        [TestVariable("df6cf195-d1da-4af2-bd8c-f4d78ab0f0aa")]
+        public string SAMK_CD_NEU
         {
-            get { return repo.UST_CD_NEU; }
-            set { repo.UST_CD_NEU = value; }
+            get { return repo.SAMK_CD_NEU; }
+            set { repo.SAMK_CD_NEU = value; }
         }
 
 #endregion
@@ -89,19 +90,23 @@ namespace S_ALLTAB_Schnelltest.Recordings_UST
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblUstVerwalten.Row_mit_UST_CD_NEU.Column0' at Center.", repo.TblUstVerwalten.Row_mit_UST_CD_NEU.Column0Info, new RecordItemIndex(0));
-            repo.TblUstVerwalten.Row_mit_UST_CD_NEU.Column0.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblSamk.PbDataAccessSave' at Center.", repo.TblSamk.PbDataAccessSaveInfo, new RecordItemIndex(0));
+            repo.TblSamk.PbDataAccessSave.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'TblUstVerwalten.Row_mit_UST_CD_NEU.Column0'.", repo.TblUstVerwalten.Row_mit_UST_CD_NEU.Column0Info, new RecordItemIndex(1));
-            Keyboard.PrepareFocus(repo.TblUstVerwalten.Row_mit_UST_CD_NEU.Column0);
-            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'TblSamk.Row_mit_SAMK_CD_NEU.row'", repo.TblSamk.Row_mit_SAMK_CD_NEU.rowInfo, new ActionTimeout(5000), new RecordItemIndex(1));
+            repo.TblSamk.Row_mit_SAMK_CD_NEU.rowInfo.WaitForExists(5000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblUstVerwalten.PbDataAccessSave' at Center.", repo.TblUstVerwalten.PbDataAccessSaveInfo, new RecordItemIndex(2));
-            repo.TblUstVerwalten.PbDataAccessSave.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$SAMK_CD_NEU) on item 'TblSamk.Row_mit_SAMK_CD_NEU.ColSamkCd'.", repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkCdInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkCdInfo, "Text", SAMK_CD_NEU);
             
-            // search timeout reduziert
-            Report.Log(ReportLevel.Info, "Validation", "search timeout reduziert\r\nValidating NotExists on item 'TblUstVerwalten.Row_mit_UST_CD_NEU.row'.", repo.TblUstVerwalten.Row_mit_UST_CD_NEU.rowInfo, new RecordItemIndex(3));
-            Validate.NotExists(repo.TblUstVerwalten.Row_mit_UST_CD_NEU.rowInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='K') on item 'TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKl'.", repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKlInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKlInfo, "Text", "K");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='test') on item 'TblSamk.Row_mit_SAMK_CD_NEU.ColSamkBez'.", repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkBezInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkBezInfo, "Text", "test");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2000') on item 'TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKto'.", repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKtoInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKtoInfo, "Text", "2000");
             
         }
 

@@ -24,22 +24,22 @@ namespace S_ALLTAB_Schnelltest.Recordings_UST
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Pruefen_Aenderung recording.
+    ///The Pruefen_Aenderung_UST_CD_NEU recording.
     /// </summary>
     [TestModule("9dadf8b0-977c-4e69-8901-7d2d802447be", ModuleType.Recording, 1)]
-    public partial class Pruefen_Aenderung : ITestModule
+    public partial class Pruefen_Aenderung_UST_CD_NEU : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_ALLTAB_Schnelltest.S_ALLTAB_SchnelltestRepository repository.
         /// </summary>
         public static global::S_ALLTAB_Schnelltest.S_ALLTAB_SchnelltestRepository repo = global::S_ALLTAB_Schnelltest.S_ALLTAB_SchnelltestRepository.Instance;
 
-        static Pruefen_Aenderung instance = new Pruefen_Aenderung();
+        static Pruefen_Aenderung_UST_CD_NEU instance = new Pruefen_Aenderung_UST_CD_NEU();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Pruefen_Aenderung()
+        public Pruefen_Aenderung_UST_CD_NEU()
         {
             UST_CD_NEU = "R77";
         }
@@ -47,7 +47,7 @@ namespace S_ALLTAB_Schnelltest.Recordings_UST
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Pruefen_Aenderung Instance
+        public static Pruefen_Aenderung_UST_CD_NEU Instance
         {
             get { return instance; }
         }
