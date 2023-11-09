@@ -41,8 +41,8 @@ namespace E_LSK_005.Recordings
         /// </summary>
         public StartAUT()
         {
-            Startfile = "";
-            Programm = "";
+            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
+            Programm = "E_LSK";
         }
 
         /// <summary>
