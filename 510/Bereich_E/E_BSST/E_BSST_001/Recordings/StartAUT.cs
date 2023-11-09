@@ -41,8 +41,8 @@ namespace E_BSST_001.Recordings
         /// </summary>
         public StartAUT()
         {
-            Startfile = "";
-            Programm = "";
+            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
+            Programm = "E_BSST";
         }
 
         /// <summary>

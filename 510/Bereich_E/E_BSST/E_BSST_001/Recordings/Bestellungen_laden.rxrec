@@ -25528,7 +25528,7 @@ AEOyjZU22jbQBDso2VNto20AQ7KNlTbaNtAEOyjZU22jbQBDso2VNto20AQ7KNlTbaNtAEOyjZU2
 			</helperscreenshot>
 		</mouseitem>
 		<validationitem
-		action="AttributeRegex"
+		action="AttributeEqual"
 		enabled="True"
 		optional="False"
 		searchpropertyid="ad67cd9e-a851-4e75-8a3e-10e5a18af64c">
@@ -25544,7 +25544,7 @@ AEOyjZU22jbQBDso2VNto20AQ7KNlTbaNtAEOyjZU22jbQBDso2VNto20AQ7KNlTbaNtAEOyjZU2
 			id="31ef7618-0e42-4cab-a3bc-7263697b6ec4"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsk_nr Row 1']
+					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename~'colBsk_nr Row' and @text=$Bestellung_2]
 				</path>
 				<robustPath>
 				</robustPath>
