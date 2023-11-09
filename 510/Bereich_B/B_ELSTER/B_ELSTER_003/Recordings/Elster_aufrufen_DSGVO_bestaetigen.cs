@@ -92,31 +92,37 @@ namespace B_ELSTER_003.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUVADruck.PbElster' at Center.", repo.DlgUVADruck.PbElsterInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgUVADruck.PbElster_visible_enabled'", repo.DlgUVADruck.PbElster_visible_enabledInfo, new ActionTimeout(60000), new RecordItemIndex(0));
+            repo.DlgUVADruck.PbElster_visible_enabledInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUVADruck.PbElster' at Center.", repo.DlgUVADruck.PbElsterInfo, new RecordItemIndex(1));
             repo.DlgUVADruck.PbElster.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'DlgElsterDSGVO.TitleBar300ElsterInformation'", repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo, new ActionTimeout(300000), new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'DlgElsterDSGVO.TitleBar300ElsterInformation'", repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo, new ActionTimeout(300000), new RecordItemIndex(2));
             repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo.WaitForExists(300000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Elster Information') on item 'DlgElsterDSGVO.TitleBar300ElsterInformation'.", repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Elster Information') on item 'DlgElsterDSGVO.TitleBar300ElsterInformation'.", repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo, new RecordItemIndex(3));
             Validate.AttributeContains(repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo, "Text", "Elster Information");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Firma) on item 'DlgElsterDSGVO.TitleBar300ElsterInformation'.", repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Firma) on item 'DlgElsterDSGVO.TitleBar300ElsterInformation'.", repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo, new RecordItemIndex(4));
             Validate.AttributeContains(repo.DlgElsterDSGVO.TitleBar300ElsterInformationInfo, "Text", Firma);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgElsterDSGVO.LblMessage_Preview_Generation_Failed'", repo.DlgElsterDSGVO.LblMessage_Preview_Generation_FailedInfo, new ActionTimeout(120000), new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgElsterDSGVO.LblMessage_Preview_Generation_Failed'", repo.DlgElsterDSGVO.LblMessage_Preview_Generation_FailedInfo, new ActionTimeout(120000), new RecordItemIndex(5));
             repo.DlgElsterDSGVO.LblMessage_Preview_Generation_FailedInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElsterDSGVO.CbDSGVO' at Center.", repo.DlgElsterDSGVO.CbDSGVOInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgElsterDSGVO.CbDSGVO_unchecked'", repo.DlgElsterDSGVO.CbDSGVO_uncheckedInfo, new ActionTimeout(60000), new RecordItemIndex(6));
+            repo.DlgElsterDSGVO.CbDSGVO_uncheckedInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElsterDSGVO.CbDSGVO' at Center.", repo.DlgElsterDSGVO.CbDSGVOInfo, new RecordItemIndex(7));
             repo.DlgElsterDSGVO.CbDSGVO.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(8));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgElsterDSGVO.CbDSGVO'.", repo.DlgElsterDSGVO.CbDSGVOInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgElsterDSGVO.CbDSGVO'.", repo.DlgElsterDSGVO.CbDSGVOInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.DlgElsterDSGVO.CbDSGVOInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElsterDSGVO.PbWeiter' at Center.", repo.DlgElsterDSGVO.PbWeiterInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElsterDSGVO.PbWeiter' at Center.", repo.DlgElsterDSGVO.PbWeiterInfo, new RecordItemIndex(10));
             repo.DlgElsterDSGVO.PbWeiter.Click();
             
         }
