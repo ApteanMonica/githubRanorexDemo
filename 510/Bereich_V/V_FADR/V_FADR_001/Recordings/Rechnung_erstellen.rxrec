@@ -4477,64 +4477,10 @@ nOC/fX/eH86vL1ooqJbmsNgaq0v+vg/66f0NFFSWXKKKKACiiigAooooAKKKKACiiigD/9k=
 				</binding>
 			</bindings>
 			<info
-			id="bae9fdbf-a898-4818-9ed7-df08915f3392"
+			id="18dead42-6c77-4207-994f-cf8e3ae4db7d"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="1"
-				prefcap="cell"
-				rect="387,663,83,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						201900005
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colAufk_nr Row 1
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						201900005
-					</attribute>
-				</element>
 				<path>
-					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colAufk_nr Row 1']
+					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/*[@accessiblerole='Row' and @accessiblevalue~$Auftragsnummer]/cell[@accessiblename~'colAufk_nr']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -12685,10 +12631,69 @@ cUUUUALRRRQB/9k=
 			<bindings>
 			</bindings>
 			<info
-			id="63f44605-e2ae-4583-9588-c694a1941c6b"
+			id="0883cc0a-a346-4ec1-a94e-944933c6e7f5"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="uiautomation, uiautomationvalue"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="False"
+				index="3"
+				prefcap="titlebar"
+				rect="16,-5,1904,31"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="automationid"
+					type="System.String">
+						TitleBar
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						TitleBar
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						Titelleiste
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						960
+					</attribute>
+					<attribute
+					name="uiautomationvalueisreadonly"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="uiautomationvaluevalue"
+					type="System.String">
+						Vorschau
+					</attribute>
+				</element>
 				<path>
-					/form[@title='Vorschau']/?/?/element[@class='ChkPPreviewClientArea25']
+					/form[@title='Vorschau']/titlebar[@automationid='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>

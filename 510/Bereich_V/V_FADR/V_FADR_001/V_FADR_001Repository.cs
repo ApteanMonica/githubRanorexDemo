@@ -91,7 +91,7 @@ namespace V_FADR_001
             set { _Auftragsnummer = value; }
         }
 
-        string _Tagesdatum = "15.12.2020";
+        string _Tagesdatum = "15.12.2023";
 
         /// <summary>
         /// Gets or sets the value of variable Tagesdatum.
@@ -731,6 +731,7 @@ namespace V_FADR_001
             RepoItemInfo _auftragsnummer_mit_auftrnrInfo;
             RepoItemInfo _row1Info;
             RepoItemInfo _colaufkadrkunderow_mit_kunde_200002Info;
+            RepoItemInfo _colaufknrInfo;
 
             /// <summary>
             /// Creates a new untere_Tabelle  folder.
@@ -742,6 +743,7 @@ namespace V_FADR_001
                 _auftragsnummer_mit_auftrnrInfo = new RepoItemInfo(this, "Auftragsnummer_mit_Auftrnr", "row[@accessiblename='Row 1']/cell[@accessiblename~'colAufk_nr']", "", 30000, null, "bae9fdbf-a898-4818-9ed7-df08915f3392");
                 _row1Info = new RepoItemInfo(this, "row1", "row[@accessiblename='Row 1']", "", 30000, null, "8d6cec8d-92c4-449d-8e8a-de02b81f5c51");
                 _colaufkadrkunderow_mit_kunde_200002Info = new RepoItemInfo(this, "ColAufkAdrKundeRow_mit_Kunde_200002", "row[@accessiblename='Row 1']/cell[@accessiblename='colAufk_adr_kunde Row 1' and @text='200002']", "", 30000, null, "b2effbf4-30c9-4d8c-888a-2356dca7d621");
+                _colaufknrInfo = new RepoItemInfo(this, "ColAufkNr", "*[@accessiblerole='Row' and @accessiblevalue~$Auftragsnummer]/cell[@accessiblename~'colAufk_nr']", "", 30000, null, "18dead42-6c77-4207-994f-cf8e3ae4db7d");
             }
 
             /// <summary>
@@ -861,6 +863,30 @@ namespace V_FADR_001
                 get
                 {
                     return _colaufkadrkunderow_mit_kunde_200002Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColAufkNr item.
+            /// </summary>
+            [RepositoryItem("18dead42-6c77-4207-994f-cf8e3ae4db7d")]
+            public virtual Ranorex.Cell ColAufkNr
+            {
+                get
+                {
+                    return _colaufknrInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColAufkNr item info.
+            /// </summary>
+            [RepositoryItemInfo("18dead42-6c77-4207-994f-cf8e3ae4db7d")]
+            public virtual RepoItemInfo ColAufkNrInfo
+            {
+                get
+                {
+                    return _colaufknrInfo;
                 }
             }
         }
@@ -1371,6 +1397,7 @@ namespace V_FADR_001
         {
             RepoItemInfo _chkppreviewclientarea25Info;
             RepoItemInfo _druckvorschauschliessenInfo;
+            RepoItemInfo _titlebarInfo;
 
             /// <summary>
             /// Creates a new Vorschau  folder.
@@ -1380,6 +1407,7 @@ namespace V_FADR_001
             {
                 _chkppreviewclientarea25Info = new RepoItemInfo(this, "ChkPPreviewClientArea25", "?/?/element[@class='ChkPPreviewClientArea25']", "", 30000, null, "63f44605-e2ae-4583-9588-c694a1941c6b");
                 _druckvorschauschliessenInfo = new RepoItemInfo(this, "DruckvorschauSchliessen", "element[3]//container[@accessiblename='Unteres Menüband']/?/?/container[@accessiblename='Vorschau']/toolbar[@accessiblename='']/button[@accessiblename='Druckvorschau schließen']", "", 30000, null, "6062223f-9b08-4beb-9670-37b830798c65");
+                _titlebarInfo = new RepoItemInfo(this, "TitleBar", "titlebar[@automationid='TitleBar']", "", 30000, null, "0883cc0a-a346-4ec1-a94e-944933c6e7f5");
             }
 
             /// <summary>
@@ -1451,6 +1479,30 @@ namespace V_FADR_001
                 get
                 {
                     return _druckvorschauschliessenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar item.
+            /// </summary>
+            [RepositoryItem("0883cc0a-a346-4ec1-a94e-944933c6e7f5")]
+            public virtual Ranorex.TitleBar TitleBar
+            {
+                get
+                {
+                    return _titlebarInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar item info.
+            /// </summary>
+            [RepositoryItemInfo("0883cc0a-a346-4ec1-a94e-944933c6e7f5")]
+            public virtual RepoItemInfo TitleBarInfo
+            {
+                get
+                {
+                    return _titlebarInfo;
                 }
             }
         }

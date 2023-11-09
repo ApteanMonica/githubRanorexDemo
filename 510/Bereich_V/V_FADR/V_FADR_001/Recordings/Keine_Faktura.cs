@@ -123,10 +123,7 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Einschränkung Rechnungsart ist nicht korrekt') on item 'DlgKeineFaktura.ColAktionRow1'.", repo.DlgKeineFaktura.ColAktionRow1Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.DlgKeineFaktura.ColAktionRow1Info, "Text", "Einschränkung Rechnungsart ist nicht korrekt");
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es wurden noch keine Positionen geliefert') on item 'DlgKeineFaktura.ColAktionRow1'.", repo.DlgKeineFaktura.ColAktionRow1Info, new RecordItemIndex(11));
-            //Validate.AttributeEqual(repo.DlgKeineFaktura.ColAktionRow1Info, "Text", "Es wurden noch keine Positionen geliefert");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.Schliessen' at Center.", repo.DlgKeineFaktura.SchliessenInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgKeineFaktura.Schliessen' at Center.", repo.DlgKeineFaktura.SchliessenInfo, new RecordItemIndex(11));
             repo.DlgKeineFaktura.Schliessen.Click();
             
         }
