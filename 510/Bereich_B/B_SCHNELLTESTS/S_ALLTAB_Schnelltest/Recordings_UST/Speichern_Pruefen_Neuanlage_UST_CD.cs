@@ -42,6 +42,7 @@ namespace S_ALLTAB_Schnelltest.Recordings_UST
         public Speichern_Pruefen_Neuanlage_UST_CD()
         {
             UST_CD_NEU = "R77";
+            UST_BEZ = "S_ALLTAB_Schnelltest";
         }
 
         /// <summary>
@@ -53,6 +54,18 @@ namespace S_ALLTAB_Schnelltest.Recordings_UST
         }
 
 #region Variables
+
+        string _UST_BEZ;
+
+        /// <summary>
+        /// Gets or sets the value of variable UST_BEZ.
+        /// </summary>
+        [TestVariable("3851f6cc-2617-4ab6-8812-eb0455c4f298")]
+        public string UST_BEZ
+        {
+            get { return _UST_BEZ; }
+            set { _UST_BEZ = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable UST_CD_NEU.
@@ -128,6 +141,9 @@ namespace S_ALLTAB_Schnelltest.Recordings_UST
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='A') on item 'TblUstVerwalten.Row_mit_UST_CD_NEU.ColUstStatus'.", repo.TblUstVerwalten.Row_mit_UST_CD_NEU.ColUstStatusInfo, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.TblUstVerwalten.Row_mit_UST_CD_NEU.ColUstStatusInfo, "Text", "A");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UST_BEZ) on item 'TblUstVerwalten.Row_mit_UST_CD_NEU.ColUstText'.", repo.TblUstVerwalten.Row_mit_UST_CD_NEU.ColUstTextInfo, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.TblUstVerwalten.Row_mit_UST_CD_NEU.ColUstTextInfo, "Text", UST_BEZ);
             
         }
 

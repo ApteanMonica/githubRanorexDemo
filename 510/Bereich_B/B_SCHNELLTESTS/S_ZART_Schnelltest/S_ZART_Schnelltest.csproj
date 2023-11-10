@@ -85,6 +85,18 @@
     <Compile Include="Program.cs">
       <id>503a3aea-7ffb-4712-a805-ae0f16642f6d</id>
     </Compile>
+    <Compile Include="Recordings\Aenderung_ZART_Speichern_Pruefen.cs">
+      <BoundTo>24a4a471-e7f3-4b3b-b49c-e5aaf06c121b</BoundTo>
+      <DependentUpon>Aenderung_ZART_Speichern_Pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9388671c-cf85-4fd6-b5eb-3a2a4c7a19bf</id>
+    </Compile>
+    <Compile Include="Recordings\Aenderung_ZART_Speichern_Pruefen.UserCode.cs">
+      <BoundTo>24a4a471-e7f3-4b3b-b49c-e5aaf06c121b</BoundTo>
+      <DependentUpon>Aenderung_ZART_Speichern_Pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4391c2e1-e937-448d-b4ae-7d7f4aa07993</id>
+    </Compile>
     <Compile Include="Recordings\CloseAUT.cs">
       <DependentUpon>CloseAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -96,6 +108,66 @@
       <UserCode>true</UserCode>
       <id>9be1daaf-afa2-4b0f-aebf-872fd92b4d10</id>
       <BoundTo>e3befa2d-e8f5-444b-94b4-2a4dccdbf713</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_Kunden_ZART_alt_nicht_moeglich.cs">
+      <BoundTo>5b34c503-d869-4fe4-a76d-13e0153f7d0f</BoundTo>
+      <DependentUpon>Loeschen_Kunden_ZART_alt_nicht_moeglich.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bf561dae-5a4b-4679-875d-ebc7ea58546e</id>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_Kunden_ZART_alt_nicht_moeglich.UserCode.cs">
+      <BoundTo>5b34c503-d869-4fe4-a76d-13e0153f7d0f</BoundTo>
+      <DependentUpon>Loeschen_Kunden_ZART_alt_nicht_moeglich.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9ea4b067-6855-4e98-8768-8889e7c89f7f</id>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_ZART_NEU_pruefen.cs">
+      <BoundTo>2ea579f3-595d-4184-b650-e23f945f3349</BoundTo>
+      <DependentUpon>Loeschen_ZART_NEU_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a8919aee-8b7a-4ac1-80ce-98147fe91e28</id>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_ZART_NEU_pruefen.UserCode.cs">
+      <BoundTo>2ea579f3-595d-4184-b650-e23f945f3349</BoundTo>
+      <DependentUpon>Loeschen_ZART_NEU_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4f041939-de49-442b-b862-198547b330c2</id>
+    </Compile>
+    <Compile Include="Recordings\Neuanlage_ZART_Werte_erfassen.cs">
+      <BoundTo>d27f499f-25ef-426e-af15-6993370fb77a</BoundTo>
+      <DependentUpon>Neuanlage_ZART_Werte_erfassen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>96d55eb1-872b-4b43-bc14-92ea55fd84a9</id>
+    </Compile>
+    <Compile Include="Recordings\Neuanlage_ZART_Werte_erfassen.UserCode.cs">
+      <BoundTo>d27f499f-25ef-426e-af15-6993370fb77a</BoundTo>
+      <DependentUpon>Neuanlage_ZART_Werte_erfassen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>361c50c2-b2ff-4b62-9bc5-23b17969617d</id>
+    </Compile>
+    <Compile Include="Recordings\Neuanlage_ZART_neue_Zeile_einfuegen.cs">
+      <DependentUpon>Neuanlage_ZART_neue_Zeile_einfuegen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8636e509-a068-4941-bc16-ba60332836e6</id>
+      <BoundTo>d845892a-cd4e-4bdc-815e-f0c62a4e429e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Neuanlage_ZART_neue_Zeile_einfuegen.UserCode.cs">
+      <DependentUpon>Neuanlage_ZART_neue_Zeile_einfuegen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>75fec2aa-f0f9-4a95-b9d2-80d9992381f2</id>
+      <BoundTo>d845892a-cd4e-4bdc-815e-f0c62a4e429e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Speichern_Pruefen_Neuanlage_ZART.cs">
+      <BoundTo>90a8ec3c-7a8c-4b3e-a16f-d1a02cfb8410</BoundTo>
+      <DependentUpon>Speichern_Pruefen_Neuanlage_ZART.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cb7a9270-f3f1-4ce2-9511-e7a1981d5e04</id>
+    </Compile>
+    <Compile Include="Recordings\Speichern_Pruefen_Neuanlage_ZART.UserCode.cs">
+      <BoundTo>90a8ec3c-7a8c-4b3e-a16f-d1a02cfb8410</BoundTo>
+      <DependentUpon>Speichern_Pruefen_Neuanlage_ZART.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fa379402-2893-41e9-b543-2ea650babb86</id>
     </Compile>
     <Compile Include="Recordings\StartAUT.cs">
       <DependentUpon>StartAUT.rxrec</DependentUpon>
@@ -109,6 +181,18 @@
       <id>40bb0d1b-df87-47c4-97f2-03facd06e78d</id>
       <BoundTo>3e77a647-af19-44ae-ad10-c2c990ab21df</BoundTo>
     </Compile>
+    <Compile Include="Recordings\Wechsel_Lieferanten_Zahlungsarten.cs">
+      <BoundTo>a8255ba8-e8f8-4f57-b935-653732c5bf21</BoundTo>
+      <DependentUpon>Wechsel_Lieferanten_Zahlungsarten.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>95e531b3-431e-45ee-b4d5-5227c3984c97</id>
+    </Compile>
+    <Compile Include="Recordings\Wechsel_Lieferanten_Zahlungsarten.UserCode.cs">
+      <BoundTo>a8255ba8-e8f8-4f57-b935-653732c5bf21</BoundTo>
+      <DependentUpon>Wechsel_Lieferanten_Zahlungsarten.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0655085f-3125-48c1-931e-7e66d389ff2f</id>
+    </Compile>
     <Compile Include="S_ZART_SchnelltestRepository.cs">
       <BoundTo>27e63a80-051e-4ce7-bf30-a7d045d9f9ce</BoundTo>
       <DependentUpon>S_ZART_SchnelltestRepository.rxrep</DependentUpon>
@@ -120,15 +204,50 @@
     <None Include="app.config">
       <id>f4755b73-ddce-41db-92fc-db79eadcc307</id>
     </None>
+    <None Include="Recordings\Aenderung_ZART_Speichern_Pruefen.rxrec">
+      <BoundTo>27e63a80-051e-4ce7-bf30-a7d045d9f9ce</BoundTo>
+      <id>24a4a471-e7f3-4b3b-b49c-e5aaf06c121b</id>
+      <recordtableid>dbdff1f9-3118-47b5-abf5-9e90766c5830</recordtableid>
+    </None>
     <None Include="Recordings\CloseAUT.rxrec">
       <BoundTo>27e63a80-051e-4ce7-bf30-a7d045d9f9ce</BoundTo>
       <id>e3befa2d-e8f5-444b-94b4-2a4dccdbf713</id>
       <recordtableid>dd6ae71b-6911-4f90-81d0-e6e7c8342524</recordtableid>
     </None>
+    <None Include="Recordings\Loeschen_Kunden_ZART_alt_nicht_moeglich.rxrec">
+      <BoundTo>27e63a80-051e-4ce7-bf30-a7d045d9f9ce</BoundTo>
+      <id>5b34c503-d869-4fe4-a76d-13e0153f7d0f</id>
+      <recordtableid>52785dc9-76fe-4840-bc88-1f5dee315831</recordtableid>
+    </None>
+    <None Include="Recordings\Loeschen_ZART_NEU_pruefen.rxrec">
+      <BoundTo>27e63a80-051e-4ce7-bf30-a7d045d9f9ce</BoundTo>
+      <id>2ea579f3-595d-4184-b650-e23f945f3349</id>
+      <recordtableid>03f1b9bb-e702-49d1-8c3a-c813f8a2d99b</recordtableid>
+    </None>
+    <None Include="Recordings\Neuanlage_ZART_Werte_erfassen.rxrec">
+      <BoundTo>27e63a80-051e-4ce7-bf30-a7d045d9f9ce</BoundTo>
+      <id>d27f499f-25ef-426e-af15-6993370fb77a</id>
+      <recordtableid>43da60c0-98c4-4c49-b788-a172f799dab7</recordtableid>
+    </None>
+    <None Include="Recordings\Neuanlage_ZART_neue_Zeile_einfuegen.rxrec">
+      <BoundTo>27e63a80-051e-4ce7-bf30-a7d045d9f9ce</BoundTo>
+      <id>d845892a-cd4e-4bdc-815e-f0c62a4e429e</id>
+      <recordtableid>d77c7c6f-2f61-4deb-96c3-fa4c40a98d82</recordtableid>
+    </None>
+    <None Include="Recordings\Speichern_Pruefen_Neuanlage_ZART.rxrec">
+      <BoundTo>27e63a80-051e-4ce7-bf30-a7d045d9f9ce</BoundTo>
+      <id>90a8ec3c-7a8c-4b3e-a16f-d1a02cfb8410</id>
+      <recordtableid>6e82401c-454a-4b6f-bab8-fd5e905b77c1</recordtableid>
+    </None>
     <None Include="Recordings\StartAUT.rxrec">
       <BoundTo>27e63a80-051e-4ce7-bf30-a7d045d9f9ce</BoundTo>
       <id>3e77a647-af19-44ae-ad10-c2c990ab21df</id>
       <recordtableid>1afc7b78-e43b-4afb-b6e1-144de1f9afeb</recordtableid>
+    </None>
+    <None Include="Recordings\Wechsel_Lieferanten_Zahlungsarten.rxrec">
+      <BoundTo>27e63a80-051e-4ce7-bf30-a7d045d9f9ce</BoundTo>
+      <id>a8255ba8-e8f8-4f57-b935-653732c5bf21</id>
+      <recordtableid>828971d0-ded3-40df-b55d-9ad8804400ef</recordtableid>
     </None>
     <None Include="S_ZART_SchnelltestRepository.rximg">
       <BoundTo>27e63a80-051e-4ce7-bf30-a7d045d9f9ce</BoundTo>

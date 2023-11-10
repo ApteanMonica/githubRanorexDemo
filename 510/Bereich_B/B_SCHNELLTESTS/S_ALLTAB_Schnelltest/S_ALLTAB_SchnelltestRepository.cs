@@ -440,6 +440,7 @@ namespace S_ALLTAB_Schnelltest
             RepoItemInfo _colustmwstkontorow1Info;
             RepoItemInfo _colustlandcdrow1Info;
             RepoItemInfo _coluststatusrow1Info;
+            RepoItemInfo _colusttextrow1Info;
 
             /// <summary>
             /// Creates a new Row1_  folder.
@@ -455,6 +456,7 @@ namespace S_ALLTAB_Schnelltest
                 _colustmwstkontorow1Info = new RepoItemInfo(this, "ColUstMwstkontoRow1", "cell[@accessiblename='colUst_mwstkonto Row 1']", "", 30000, null, "0f9eedfc-66cd-4be2-9d57-55de75136c2e");
                 _colustlandcdrow1Info = new RepoItemInfo(this, "ColUstLandCdRow1", "cell[@accessiblename='colUst_land_cd Row 1']", "", 30000, null, "054a1e61-a802-4a0c-9c90-95b9dc654cd8");
                 _coluststatusrow1Info = new RepoItemInfo(this, "ColUstStatusRow1", "cell[@accessiblename='colUst_status Row 1']", "", 30000, null, "522b7787-2814-4371-befe-e87c3b2574ca");
+                _colusttextrow1Info = new RepoItemInfo(this, "ColUstTextRow1", "cell[@accessiblename='colUst_text Row 1']", "", 30000, null, "67eee0a9-d825-46a9-8131-946428b82f96");
             }
 
             /// <summary>
@@ -672,6 +674,30 @@ namespace S_ALLTAB_Schnelltest
                     return _coluststatusrow1Info;
                 }
             }
+
+            /// <summary>
+            /// The ColUstTextRow1 item.
+            /// </summary>
+            [RepositoryItem("67eee0a9-d825-46a9-8131-946428b82f96")]
+            public virtual Ranorex.Cell ColUstTextRow1
+            {
+                get
+                {
+                    return _colusttextrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColUstTextRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("67eee0a9-d825-46a9-8131-946428b82f96")]
+            public virtual RepoItemInfo ColUstTextRow1Info
+            {
+                get
+                {
+                    return _colusttextrow1Info;
+                }
+            }
         }
 
         /// <summary>
@@ -690,6 +716,7 @@ namespace S_ALLTAB_Schnelltest
             RepoItemInfo _colustmwstkontoInfo;
             RepoItemInfo _colustlandcdInfo;
             RepoItemInfo _coluststatusInfo;
+            RepoItemInfo _colusttextInfo;
 
             /// <summary>
             /// Creates a new Row_mit_UST_CD_NEU  folder.
@@ -707,6 +734,7 @@ namespace S_ALLTAB_Schnelltest
                 _colustmwstkontoInfo = new RepoItemInfo(this, "ColUstMwstkonto", "cell[@accessiblename~'colUst_mwstkonto']", "", 30000, null, "58272c75-4ed7-42e6-a233-ac2708e10d8e");
                 _colustlandcdInfo = new RepoItemInfo(this, "ColUstLandCd", "cell[@accessiblename~'colUst_land_cd']", "", 30000, null, "11486c7e-4d26-4e35-a23e-deef69c9e73a");
                 _coluststatusInfo = new RepoItemInfo(this, "ColUstStatus", "cell[@accessiblename~'colUst_status']", "", 30000, null, "96f31014-e439-4162-8b4d-3c769fce5bd9");
+                _colusttextInfo = new RepoItemInfo(this, "ColUstText", "cell[@accessiblename~'colUst_text']", "", 30000, null, "64784743-2d13-4a00-b925-11014c0937a5");
             }
 
             /// <summary>
@@ -970,6 +998,30 @@ namespace S_ALLTAB_Schnelltest
                 get
                 {
                     return _coluststatusInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColUstText item.
+            /// </summary>
+            [RepositoryItem("64784743-2d13-4a00-b925-11014c0937a5")]
+            public virtual Ranorex.Cell ColUstText
+            {
+                get
+                {
+                    return _colusttextInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColUstText item info.
+            /// </summary>
+            [RepositoryItemInfo("64784743-2d13-4a00-b925-11014c0937a5")]
+            public virtual RepoItemInfo ColUstTextInfo
+            {
+                get
+                {
+                    return _colusttextInfo;
                 }
             }
         }

@@ -28,6 +28,11 @@ mode="Global">
 		name="UST_CD_NEU">
 			R77
 		</var>
+		<var
+		id="3851f6cc-2617-4ab6-8812-eb0455c4f298"
+		name="UST_BEZ">
+			S_ALLTAB_Schnelltest
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -6235,6 +6240,35 @@ p+B6UYHpQB//2Q==
 				A
 			</matchvalue>
 		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="d4c1d2ff-c8a7-4bd3-984f-83acb244bb28">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="UST_BEZ">
+				</binding>
+			</bindings>
+			<info
+			id="64784743-2d13-4a00-b925-11014c0937a5"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblUstVerwalten']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UST_CD_NEU]/cell[@accessiblename~'colUst_text']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				A
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="e3834078-795f-4923-b053-58d50595caf9"
@@ -6251,7 +6285,7 @@ p+B6UYHpQB//2Q==
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Speichern_Pruefen_Neuanlage.UserCode.cs
+		Speichern_Pruefen_Neuanlage_UST_CD.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

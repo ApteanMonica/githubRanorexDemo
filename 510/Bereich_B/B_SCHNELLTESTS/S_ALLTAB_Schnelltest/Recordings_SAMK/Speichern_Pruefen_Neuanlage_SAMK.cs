@@ -42,6 +42,7 @@ namespace S_ALLTAB_Schnelltest.Recordings_SAMK
         public Speichern_Pruefen_Neuanlage_SAMK()
         {
             SAMK_CD_NEU = "KX";
+            SAMK_BEZ = "S_ALLTAB_Schnelltest";
         }
 
         /// <summary>
@@ -53,6 +54,18 @@ namespace S_ALLTAB_Schnelltest.Recordings_SAMK
         }
 
 #region Variables
+
+        string _SAMK_BEZ;
+
+        /// <summary>
+        /// Gets or sets the value of variable SAMK_BEZ.
+        /// </summary>
+        [TestVariable("4c5ef476-dbe8-4eac-9e25-59553b538062")]
+        public string SAMK_BEZ
+        {
+            get { return _SAMK_BEZ; }
+            set { _SAMK_BEZ = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable SAMK_CD_NEU.
@@ -93,19 +106,25 @@ namespace S_ALLTAB_Schnelltest.Recordings_SAMK
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblSamk.PbDataAccessSave' at Center.", repo.TblSamk.PbDataAccessSaveInfo, new RecordItemIndex(0));
             repo.TblSamk.PbDataAccessSave.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'TblSamk.Row_mit_SAMK_CD_NEU.row'", repo.TblSamk.Row_mit_SAMK_CD_NEU.rowInfo, new ActionTimeout(5000), new RecordItemIndex(1));
-            repo.TblSamk.Row_mit_SAMK_CD_NEU.rowInfo.WaitForExists(5000);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$SAMK_CD_NEU) on item 'TblSamk.Row_mit_SAMK_CD_NEU.ColSamkCd'.", repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkCdInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblSamk.PbDataAccessLoad' at Center.", repo.TblSamk.PbDataAccessLoadInfo, new RecordItemIndex(2));
+            repo.TblSamk.PbDataAccessLoad.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'TblSamk.Row_mit_SAMK_CD_NEU.row'", repo.TblSamk.Row_mit_SAMK_CD_NEU.rowInfo, new ActionTimeout(30000), new RecordItemIndex(3));
+            repo.TblSamk.Row_mit_SAMK_CD_NEU.rowInfo.WaitForExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$SAMK_CD_NEU) on item 'TblSamk.Row_mit_SAMK_CD_NEU.ColSamkCd'.", repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkCdInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkCdInfo, "Text", SAMK_CD_NEU);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='K') on item 'TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKl'.", repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKlInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='K') on item 'TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKl'.", repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKlInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKlInfo, "Text", "K");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='test') on item 'TblSamk.Row_mit_SAMK_CD_NEU.ColSamkBez'.", repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkBezInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkBezInfo, "Text", "test");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$SAMK_BEZ) on item 'TblSamk.Row_mit_SAMK_CD_NEU.ColSamkBez'.", repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkBezInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkBezInfo, "Text", SAMK_BEZ);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2000') on item 'TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKto'.", repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKtoInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2000') on item 'TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKto'.", repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKtoInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKtoInfo, "Text", "2000");
             
         }

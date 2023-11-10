@@ -133,17 +133,29 @@
       <UserCode>true</UserCode>
       <id>e892a120-513a-4adb-9841-02126ab3249d</id>
     </Compile>
-    <Compile Include="Recordings_SAMK\Neuanlage_SAMK.cs">
+    <Compile Include="Recordings_SAMK\Neuanlage_SAMK_Werte_erfassen.cs">
       <BoundTo>81eb0937-f91d-404d-a3d3-13f467ec7025</BoundTo>
-      <DependentUpon>Neuanlage_SAMK.rxrec</DependentUpon>
+      <DependentUpon>Neuanlage_SAMK_Werte_erfassen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>1b05e4d0-28a1-4030-be98-b95111e19a43</id>
     </Compile>
-    <Compile Include="Recordings_SAMK\Neuanlage_SAMK.UserCode.cs">
+    <Compile Include="Recordings_SAMK\Neuanlage_SAMK_Werte_erfassen.UserCode.cs">
       <BoundTo>81eb0937-f91d-404d-a3d3-13f467ec7025</BoundTo>
-      <DependentUpon>Neuanlage_SAMK.rxrec</DependentUpon>
+      <DependentUpon>Neuanlage_SAMK_Werte_erfassen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>df3b8048-cc20-4359-a4d5-80db82d98cbb</id>
+    </Compile>
+    <Compile Include="Recordings_SAMK\Neuanlage_SAMK_neue_Zeile_einfuegen.cs">
+      <DependentUpon>Neuanlage_SAMK_neue_Zeile_einfuegen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8df239fd-4d56-4f87-b213-aa21d499f288</id>
+      <BoundTo>6808c9fa-03a4-4003-8803-e883c07c13bd</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_SAMK\Neuanlage_SAMK_neue_Zeile_einfuegen.UserCode.cs">
+      <DependentUpon>Neuanlage_SAMK_neue_Zeile_einfuegen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a28ce3e9-274e-48a6-8a64-5e73059f4ea6</id>
+      <BoundTo>6808c9fa-03a4-4003-8803-e883c07c13bd</BoundTo>
     </Compile>
     <Compile Include="Recordings_SAMK\Speichern_Pruefen_Neuanlage_SAMK.cs">
       <BoundTo>caabed19-2252-43bb-a0a3-8b16eb227cf7</BoundTo>
@@ -217,17 +229,29 @@
       <UserCode>true</UserCode>
       <id>67c84f83-a0b5-4697-a254-5ca3e622564e</id>
     </Compile>
-    <Compile Include="Recordings_UST\Neuanlage_UST_Code.cs">
+    <Compile Include="Recordings_UST\Neuanlage_UST_Code_Werte_erfassen.cs">
       <BoundTo>89cd08ea-e668-493e-a2df-2278a17f9e5d</BoundTo>
-      <DependentUpon>Neuanlage_UST_Code.rxrec</DependentUpon>
+      <DependentUpon>Neuanlage_UST_Code_Werte_erfassen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>2f75772a-6f1c-4e69-bd87-5a2117a2333e</id>
     </Compile>
-    <Compile Include="Recordings_UST\Neuanlage_UST_Code.UserCode.cs">
+    <Compile Include="Recordings_UST\Neuanlage_UST_Code_Werte_erfassen.UserCode.cs">
       <BoundTo>89cd08ea-e668-493e-a2df-2278a17f9e5d</BoundTo>
-      <DependentUpon>Neuanlage_UST_Code.rxrec</DependentUpon>
+      <DependentUpon>Neuanlage_UST_Code_Werte_erfassen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>aca1d96e-9640-475f-916d-c28901517669</id>
+    </Compile>
+    <Compile Include="Recordings_UST\Neuanlage_UST_Code_neue_Zeile_einfuegen.cs">
+      <DependentUpon>Neuanlage_UST_Code_neue_Zeile_einfuegen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cb21156f-082f-49ed-a76e-a0da3e5f98fb</id>
+      <BoundTo>8320ff31-8cd1-4161-bb10-db2a54db2a4e</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_UST\Neuanlage_UST_Code_neue_Zeile_einfuegen.UserCode.cs">
+      <DependentUpon>Neuanlage_UST_Code_neue_Zeile_einfuegen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f0330ceb-6a18-45c4-9d9e-aaf23cb07921</id>
+      <BoundTo>8320ff31-8cd1-4161-bb10-db2a54db2a4e</BoundTo>
     </Compile>
     <Compile Include="Recordings_UST\Pruefen_Aenderung_UST_CD_NEU.cs">
       <BoundTo>4ee6d6a2-349a-4fad-9ce6-1c08bcc2d95b</BoundTo>
@@ -296,10 +320,15 @@
       <id>aebdd588-69fe-47aa-a628-122b50f06e47</id>
       <recordtableid>e6f2dd2c-807e-44ea-bc76-cc3c04e42b61</recordtableid>
     </None>
-    <None Include="Recordings_SAMK\Neuanlage_SAMK.rxrec">
+    <None Include="Recordings_SAMK\Neuanlage_SAMK_Werte_erfassen.rxrec">
       <BoundTo>a4d6aa9a-cde5-48c2-a049-9c7224e662e0</BoundTo>
       <id>81eb0937-f91d-404d-a3d3-13f467ec7025</id>
       <recordtableid>b313d928-40c5-4484-8a8c-ac62667fdc47</recordtableid>
+    </None>
+    <None Include="Recordings_SAMK\Neuanlage_SAMK_neue_Zeile_einfuegen.rxrec">
+      <BoundTo>a4d6aa9a-cde5-48c2-a049-9c7224e662e0</BoundTo>
+      <id>6808c9fa-03a4-4003-8803-e883c07c13bd</id>
+      <recordtableid>f3bb7c66-7cd8-458b-9eca-9971a464025f</recordtableid>
     </None>
     <None Include="Recordings_SAMK\Speichern_Pruefen_Neuanlage_SAMK.rxrec">
       <BoundTo>a4d6aa9a-cde5-48c2-a049-9c7224e662e0</BoundTo>
@@ -331,10 +360,15 @@
       <id>141c8ab1-e7bc-41d5-8554-4a5b21f497db</id>
       <recordtableid>e39c5976-273f-427e-9a4d-f498fe185648</recordtableid>
     </None>
-    <None Include="Recordings_UST\Neuanlage_UST_Code.rxrec">
+    <None Include="Recordings_UST\Neuanlage_UST_Code_Werte_erfassen.rxrec">
       <BoundTo>a4d6aa9a-cde5-48c2-a049-9c7224e662e0</BoundTo>
       <id>89cd08ea-e668-493e-a2df-2278a17f9e5d</id>
       <recordtableid>46f1cc56-de29-4d68-aa20-1c7dbe0bf731</recordtableid>
+    </None>
+    <None Include="Recordings_UST\Neuanlage_UST_Code_neue_Zeile_einfuegen.rxrec">
+      <BoundTo>a4d6aa9a-cde5-48c2-a049-9c7224e662e0</BoundTo>
+      <id>8320ff31-8cd1-4161-bb10-db2a54db2a4e</id>
+      <recordtableid>c717fe68-964b-4667-b130-cc07b3c7cd86</recordtableid>
     </None>
     <None Include="Recordings_UST\Pruefen_Aenderung_UST_CD_NEU.rxrec">
       <BoundTo>a4d6aa9a-cde5-48c2-a049-9c7224e662e0</BoundTo>

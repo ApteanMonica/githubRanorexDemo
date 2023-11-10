@@ -28,6 +28,11 @@ mode="Global">
 		name="SAMK_CD_NEU">
 			KX
 		</var>
+		<var
+		id="4c5ef476-dbe8-4eac-9e25-59553b538062"
+		name="SAMK_BEZ">
+			S_ALLTAB_Schnelltest
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -56,12 +61,47 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="e492dc97-b33a-4411-b8cb-bdae7141d3e4"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="baf3d0d8-d51f-4993-ba37-40d42bc8d40c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblSamk']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
 		searchpropertyid="2c2e58f0-2995-4542-b2e6-8a2cc91defda"
 		waitaction="Exists"
-		waittimeout="5000ms">
+		waittimeout="30000ms">
 			<comment>
 			</comment>
 			<bindings>
@@ -138,6 +178,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="SAMK_BEZ">
+				</binding>
 			</bindings>
 			<info
 			id="1a3d95ee-e446-4ebc-83b0-6640d2539625"

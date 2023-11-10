@@ -14,6 +14,12 @@
 					variableid="df6cf195-d1da-4af2-bd8c-f4d78ab0f0aa"
 					variablename="SAMK_CD_NEU">
 					</var>
+					<var
+					dataname="SAMK_BEZ"
+					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
+					variableid="f093573f-1c7b-492c-8eb3-ddcb732ffcc4"
+					variablename="SAMK_BEZ">
+					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -23,12 +29,24 @@
 			type="Recording">
 				<databinding>
 					<var
+					dataname="UST_BEZ"
+					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
+					variableid="3851f6cc-2617-4ab6-8812-eb0455c4f298"
+					variablename="UST_BEZ">
+					</var>
+					<var
 					dataname="UST_CD_NEU"
 					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
 					variableid="f318fc56-2aa4-4257-9b49-17419e7449b3"
 					variablename="UST_CD_NEU">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="194f7bc4-3d27-41b6-be9c-153ac646c17f"
+			name="Neuanlage_UST_Code_neue_Zeile_einfuegen"
+			ref="c717fe68-964b-4667-b130-cc07b3c7cd86"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="1c829b37-ff2b-4f6e-a5d6-8af18dfaf9b0"
@@ -78,7 +96,7 @@
 			</testmodule>
 			<testmodule
 			id="40dbbecd-f1be-495f-90ef-f3a6e79a1de6"
-			name="Neuanlage_UST_Code"
+			name="Neuanlage_UST_Code_Werte_erfassen"
 			ref="46f1cc56-de29-4d68-aa20-1c7dbe0bf731"
 			type="Recording">
 				<databinding>
@@ -87,6 +105,12 @@
 					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
 					variableid="85b605f1-ad10-4ea3-a962-241f2cc67be5"
 					variablename="UST_CD_NEU">
+					</var>
+					<var
+					dataname="UST_BEZ"
+					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
+					variableid="0f2536d9-29f2-4a97-ab84-4468a2178ca8"
+					variablename="UST_BEZ">
 					</var>
 				</databinding>
 			</testmodule>
@@ -103,6 +127,12 @@
 					variablename="UST_CD_ALT">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="4e84be61-826b-4444-9723-0b922c04b3e1"
+			name="Neuanlage_SAMK_neue_Zeile_einfuegen"
+			ref="f3bb7c66-7cd8-458b-9eca-9971a464025f"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="4fd5fe5e-2bfe-4632-be45-da18afab7a2e"
@@ -162,7 +192,7 @@
 			</testmodule>
 			<testmodule
 			id="be9a220b-9ea3-4cb4-9318-464b2484d3c8"
-			name="Neuanlage_SAMK"
+			name="Neuanlage_SAMK_Werte_erfassen"
 			ref="b313d928-40c5-4484-8a8c-ac62667fdc47"
 			type="Recording">
 				<databinding>
@@ -171,6 +201,12 @@
 					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
 					variableid="6f5c86b5-5118-4595-8da1-af8f7ef01e32"
 					variablename="SAMK_CD_NEU">
+					</var>
+					<var
+					dataname="SAMK_BEZ"
+					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
+					variableid="ac8c2a14-63ae-4f84-9ed7-d78da996c018"
+					variablename="SAMK_BEZ">
 					</var>
 				</databinding>
 			</testmodule>
@@ -224,12 +260,20 @@
 					value="R77">
 					</param>
 					<param
+					name="UST_BEZ"
+					value="S_ALLTAB_Schnelltest">
+					</param>
+					<param
 					name="UST_CD_ALT"
 					value="M20">
 					</param>
 					<param
 					name="SAMK_CD_NEU"
 					value="KX">
+					</param>
+					<param
+					name="SAMK_BEZ"
+					value="S_ALLTAB_Schnelltest">
 					</param>
 					<param
 					name="SAMK_CD_ALT"
@@ -248,6 +292,12 @@
 					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
 					variableid="df6cf195-d1da-4af2-bd8c-f4d78ab0f0aa"
 					variablename="SAMK_CD_NEU">
+					</var>
+					<var
+					dataname="SAMK_BEZ"
+					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
+					variableid="4c5ef476-dbe8-4eac-9e25-59553b538062"
+					variablename="SAMK_BEZ">
 					</var>
 				</databinding>
 			</testmodule>
@@ -272,16 +322,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm_SAMK"
-					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
-					variableid="94c3d809-eb01-4df6-9cfd-4201027663d3"
-					variablename="Programm_SAMK">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
 					variableid="5c18c78b-4859-4e87-ad05-6f7459cbf4c6"
 					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_SAMK"
+					datasourceid="d912f9da-6ebe-493e-bcef-37505d4df3c6"
+					variableid="94c3d809-eb01-4df6-9cfd-4201027663d3"
+					variablename="Programm_SAMK">
 					</var>
 				</databinding>
 			</testmodule>
@@ -327,8 +377,12 @@
 							</testmodule>
 						</setup>
 						<testmodule
+						id="194f7bc4-3d27-41b6-be9c-153ac646c17f"
+						name="Neuanlage_UST_Code_neue_Zeile_einfuegen">
+						</testmodule>
+						<testmodule
 						id="40dbbecd-f1be-495f-90ef-f3a6e79a1de6"
-						name="Neuanlage_UST_Code">
+						name="Neuanlage_UST_Code_Werte_erfassen">
 						</testmodule>
 						<testmodule
 						id="137d0838-50b0-4340-8af2-1099e78cf20a"
@@ -370,8 +424,12 @@
 							name="Start_SAMK">
 							</testmodule>
 							<testmodule
+							id="4e84be61-826b-4444-9723-0b922c04b3e1"
+							name="Neuanlage_SAMK_neue_Zeile_einfuegen">
+							</testmodule>
+							<testmodule
 							id="be9a220b-9ea3-4cb4-9318-464b2484d3c8"
-							name="Neuanlage_SAMK">
+							name="Neuanlage_SAMK_Werte_erfassen">
 							</testmodule>
 							<testmodule
 							id="de1bacda-0695-4f56-803c-a3e0cadb520b"
