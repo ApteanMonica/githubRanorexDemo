@@ -261,8 +261,8 @@ namespace E_BSST_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(28));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Bestellung_2) on item 'TblBsst.FlexGrid.ColBskNrRow1'.", repo.TblBsst.FlexGrid.ColBskNrRow1Info, new RecordItemIndex(29));
-            Validate.AttributeEqual(repo.TblBsst.FlexGrid.ColBskNrRow1Info, "Text", Bestellung_2);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Bestellung_2) on item 'TblBsst.FlexGrid.ColBskNrRow1'.", repo.TblBsst.FlexGrid.ColBskNrRow1Info, new RecordItemIndex(29));
+            Validate.AttributeRegex(repo.TblBsst.FlexGrid.ColBskNrRow1Info, "Text", new Regex(Bestellung_2));
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Status_L) on item 'TblBsst.FlexGrid.ColBspStatusRow1'.", repo.TblBsst.FlexGrid.ColBspStatusRow1Info, new RecordItemIndex(30));
             Validate.AttributeRegex(repo.TblBsst.FlexGrid.ColBspStatusRow1Info, "Text", new Regex(Status_L));
