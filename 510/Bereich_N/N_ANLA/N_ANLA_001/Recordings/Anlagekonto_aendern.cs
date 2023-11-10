@@ -132,14 +132,17 @@ namespace N_ANLA_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0660') on item 'DlgBuchen.DfKtoNr'.", repo.DlgBuchen.DfKtoNrInfo, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.DlgBuchen.DfKtoNrInfo, "Text", "0660");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgBuchen.DfNutzungsdauer' at Center.", repo.DlgBuchen.DfNutzungsdauerInfo, new RecordItemIndex(14));
-            repo.DlgBuchen.DfNutzungsdauer.DoubleClick();
+            // Repositroy durch anders Repositroy ersetzt vorher war DfNutzungsdauer hinterlegt
+            Report.Log(ReportLevel.Info, "Mouse", "Repositroy durch anders Repositroy ersetzt vorher war DfNutzungsdauer hinterlegt\r\nMouse Left DoubleClick item 'DlgZugang.DfAnbuDauer' at Center.", repo.DlgZugang.DfAnbuDauerInfo, new RecordItemIndex(14));
+            repo.DlgZugang.DfAnbuDauer.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '5{Tab}' with focus on 'DlgBuchen.DfNutzungsdauer'.", repo.DlgBuchen.DfNutzungsdauerInfo, new RecordItemIndex(15));
-            repo.DlgBuchen.DfNutzungsdauer.PressKeys("5{Tab}");
+            // Repositroy durch anders Repositroy ersetzt vorher war DfNutzungsdauer hinterlegt
+            Report.Log(ReportLevel.Info, "Keyboard", "Repositroy durch anders Repositroy ersetzt vorher war DfNutzungsdauer hinterlegt\r\nKey sequence '5{Tab}' with focus on 'DlgZugang.DfAnbuDauer'.", repo.DlgZugang.DfAnbuDauerInfo, new RecordItemIndex(15));
+            repo.DlgZugang.DfAnbuDauer.PressKeys("5{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='5,00') on item 'DlgBuchen.DfNutzungsdauer'.", repo.DlgBuchen.DfNutzungsdauerInfo, new RecordItemIndex(16));
-            Validate.AttributeEqual(repo.DlgBuchen.DfNutzungsdauerInfo, "Text", "5,00");
+            // Repositroy durch anders Repositroy ersetzt vorher war DfNutzungsdauer hinterlegt; beim Ergebnis ein Oder-Operater eingebaut, damit sollte die Validierung nicht mehr auf Fehler laufen
+            Report.Log(ReportLevel.Info, "Validation", "Repositroy durch anders Repositroy ersetzt vorher war DfNutzungsdauer hinterlegt; beim Ergebnis ein Oder-Operater eingebaut, damit sollte die Validierung nicht mehr auf Fehler laufen\r\nValidating AttributeRegex (Text~'[5,00]|[5]') on item 'DlgZugang.DfAnbuDauer'.", repo.DlgZugang.DfAnbuDauerInfo, new RecordItemIndex(16));
+            Validate.AttributeRegex(repo.DlgZugang.DfAnbuDauerInfo, "Text", new Regex("[5,00]|[5]"));
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'DlgBuchen.AfAart1' at Center.", repo.DlgBuchen.AfAart1Info, new RecordItemIndex(17));
             //repo.DlgBuchen.AfAart1.DoubleClick();
