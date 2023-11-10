@@ -38,6 +38,7 @@ namespace N_ANLA_001
         N_ANLA_001RepositoryFolders.PbExportItemsAppFolder _pbexportitems;
         N_ANLA_001RepositoryFolders.TblDruckenAppFolder _tbldrucken;
         N_ANLA_001RepositoryFolders.TblSpiegelAppFolder _tblspiegel;
+        N_ANLA_001RepositoryFolders.DlgZugangAppFolder _dlgzugang;
         RepoItemInfo _tabpagetp1Info;
 
         /// <summary>
@@ -66,6 +67,7 @@ namespace N_ANLA_001
             _pbexportitems = new N_ANLA_001RepositoryFolders.PbExportItemsAppFolder(this);
             _tbldrucken = new N_ANLA_001RepositoryFolders.TblDruckenAppFolder(this);
             _tblspiegel = new N_ANLA_001RepositoryFolders.TblSpiegelAppFolder(this);
+            _dlgzugang = new N_ANLA_001RepositoryFolders.DlgZugangAppFolder(this);
             _tabpagetp1Info = new RepoItemInfo(this, "TabPageTp1", "/form[@controlname='frmZuauf']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tp1']", 30000, null, "681f3dd8-dc20-44ee-a165-f947a2ffabeb");
         }
 
@@ -218,6 +220,15 @@ namespace N_ANLA_001
         public virtual N_ANLA_001RepositoryFolders.TblSpiegelAppFolder TblSpiegel
         {
             get { return _tblspiegel; }
+        }
+
+        /// <summary>
+        /// The DlgZugang folder.
+        /// </summary>
+        [RepositoryFolder("1f55721e-e003-4caa-81e6-04ca364259c6")]
+        public virtual N_ANLA_001RepositoryFolders.DlgZugangAppFolder DlgZugang
+        {
+            get { return _dlgzugang; }
         }
     }
 
@@ -2378,6 +2389,72 @@ namespace N_ANLA_001
                 get
                 {
                     return _row2column0Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DlgZugangAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("1f55721e-e003-4caa-81e6-04ca364259c6")]
+        public partial class DlgZugangAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _dfanbudauerInfo;
+
+            /// <summary>
+            /// Creates a new DlgZugang  folder.
+            /// </summary>
+            public DlgZugangAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DlgZugang", "/form[@controlname='dlgZugang']", parentFolder, 30000, null, true, "1f55721e-e003-4caa-81e6-04ca364259c6", "")
+            {
+                _dfanbudauerInfo = new RepoItemInfo(this, "DfAnbuDauer", "tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpWerte']/text[@controlname='dfAnbu_dauer']", "", 30000, null, "67820042-2a78-416d-8bc7-4d31e7c20bc2");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("1f55721e-e003-4caa-81e6-04ca364259c6")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1f55721e-e003-4caa-81e6-04ca364259c6")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfAnbuDauer item.
+            /// </summary>
+            [RepositoryItem("67820042-2a78-416d-8bc7-4d31e7c20bc2")]
+            public virtual Ranorex.Text DfAnbuDauer
+            {
+                get
+                {
+                    return _dfanbudauerInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfAnbuDauer item info.
+            /// </summary>
+            [RepositoryItemInfo("67820042-2a78-416d-8bc7-4d31e7c20bc2")]
+            public virtual RepoItemInfo DfAnbuDauerInfo
+            {
+                get
+                {
+                    return _dfanbudauerInfo;
                 }
             }
         }
