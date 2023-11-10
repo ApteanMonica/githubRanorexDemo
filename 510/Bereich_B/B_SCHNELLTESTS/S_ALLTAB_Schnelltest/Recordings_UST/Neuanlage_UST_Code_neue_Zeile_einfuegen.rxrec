@@ -51,18 +51,17 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
-		<WaitForRecordItem
+		<validationitem
+		action="NotExists"
 		enabled="True"
 		optional="False"
-		searchpropertyid="66046c31-5af9-47b1-976d-0293cb34af76"
-		waitaction="NotExists"
-		waittimeout="30000ms">
+		searchpropertyid="446acaa0-d5a0-4bdb-90d3-e039e050f5df">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="5c280ffe-7b58-41c3-b63e-0cab0fcb3f1c"
+			id="a3ca8518-1d1a-4085-8e1e-3dffdf78e3c5"
 			sourcename="RepositoryEditor">
 				<path>
 					/form[@controlname='tblUstVerwalten']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
@@ -70,7 +69,13 @@ mode="Global">
 				<robustPath>
 				</robustPath>
 			</info>
-		</WaitForRecordItem>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Right"
@@ -298,6 +303,31 @@ mode="Global">
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="446acaa0-d5a0-4bdb-90d3-e039e050f5df">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a3ca8518-1d1a-4085-8e1e-3dffdf78e3c5"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblUstVerwalten']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="e3834078-795f-4923-b053-58d50595caf9"

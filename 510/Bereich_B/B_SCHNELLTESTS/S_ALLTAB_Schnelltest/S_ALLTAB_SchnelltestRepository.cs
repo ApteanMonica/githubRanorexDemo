@@ -177,7 +177,7 @@ namespace S_ALLTAB_Schnelltest
         [RepositoryFolder("fda1dc63-2d2a-4181-b1c5-5a6111c57e4c")]
         public partial class TblUstVerwaltenAppFolder : RepoGenBaseFolder
         {
-            S_ALLTAB_SchnelltestRepositoryFolders.Row1_Folder _row1_;
+            S_ALLTAB_SchnelltestRepositoryFolders.Row1Folder _row1;
             S_ALLTAB_SchnelltestRepositoryFolders.Row_mit_UST_CD_NEUFolder _row_mit_ust_cd_neu;
             S_ALLTAB_SchnelltestRepositoryFolders.Row_mit_UST_CD_ALTFolder _row_mit_ust_cd_alt;
             RepoItemInfo _titlebar100verwaltenumsatzsteuerInfo;
@@ -186,7 +186,6 @@ namespace S_ALLTAB_Schnelltest
             RepoItemInfo _pbtoolbaritemskontenInfo;
             RepoItemInfo _pbdataaccessloadInfo;
             RepoItemInfo _flexgridInfo;
-            RepoItemInfo _row1Info;
 
             /// <summary>
             /// Creates a new TblUstVerwalten  folder.
@@ -194,7 +193,7 @@ namespace S_ALLTAB_Schnelltest
             public TblUstVerwaltenAppFolder(RepoGenBaseFolder parentFolder) :
                     base("TblUstVerwalten", "/form[@controlname='tblUstVerwalten']", parentFolder, 30000, null, true, "fda1dc63-2d2a-4181-b1c5-5a6111c57e4c", "")
             {
-                _row1_ = new S_ALLTAB_SchnelltestRepositoryFolders.Row1_Folder(this);
+                _row1 = new S_ALLTAB_SchnelltestRepositoryFolders.Row1Folder(this);
                 _row_mit_ust_cd_neu = new S_ALLTAB_SchnelltestRepositoryFolders.Row_mit_UST_CD_NEUFolder(this);
                 _row_mit_ust_cd_alt = new S_ALLTAB_SchnelltestRepositoryFolders.Row_mit_UST_CD_ALTFolder(this);
                 _titlebar100verwaltenumsatzsteuerInfo = new RepoItemInfo(this, "TitleBar100VerwaltenUmsatzsteuer", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "101814db-4806-4339-8f6f-5a766278e8d7");
@@ -203,7 +202,6 @@ namespace S_ALLTAB_Schnelltest
                 _pbtoolbaritemskontenInfo = new RepoItemInfo(this, "PbToolBarItemsKonten", "container[@controlname='RibbonBar']/container[@controlname='ToolBarItemsGroup']/button[@controlname='pbToolBarItems_Konten']", "", 30000, null, "bbe99231-3020-47e4-ad91-11284ca0e4f7");
                 _pbdataaccessloadInfo = new RepoItemInfo(this, "PbDataAccessLoad", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']", "", 30000, null, "8bdbd5d1-749f-4471-b090-6d400c125445");
                 _flexgridInfo = new RepoItemInfo(this, "FlexGrid", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", "", 30000, null, "8cbc015f-99e3-483c-b2c3-c64558c986e5");
-                _row1Info = new RepoItemInfo(this, "Row1", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']", "", 30000, null, "a3ca8518-1d1a-4085-8e1e-3dffdf78e3c5");
             }
 
             /// <summary>
@@ -375,36 +373,12 @@ namespace S_ALLTAB_Schnelltest
             }
 
             /// <summary>
-            /// The Row1 item.
-            /// </summary>
-            [RepositoryItem("a3ca8518-1d1a-4085-8e1e-3dffdf78e3c5")]
-            public virtual Ranorex.Row Row1
-            {
-                get
-                {
-                    return _row1Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Row1 item info.
-            /// </summary>
-            [RepositoryItemInfo("a3ca8518-1d1a-4085-8e1e-3dffdf78e3c5")]
-            public virtual RepoItemInfo Row1Info
-            {
-                get
-                {
-                    return _row1Info;
-                }
-            }
-
-            /// <summary>
-            /// The Row1_ folder.
+            /// The Row1 folder.
             /// </summary>
             [RepositoryFolder("5c280ffe-7b58-41c3-b63e-0cab0fcb3f1c")]
-            public virtual S_ALLTAB_SchnelltestRepositoryFolders.Row1_Folder Row1_
+            public virtual S_ALLTAB_SchnelltestRepositoryFolders.Row1Folder Row1
             {
-                get { return _row1_; }
+                get { return _row1; }
             }
 
             /// <summary>
@@ -427,11 +401,12 @@ namespace S_ALLTAB_Schnelltest
         }
 
         /// <summary>
-        /// The Row1_Folder folder.
+        /// The Row1Folder folder.
         /// </summary>
         [RepositoryFolder("5c280ffe-7b58-41c3-b63e-0cab0fcb3f1c")]
-        public partial class Row1_Folder : RepoGenBaseFolder
+        public partial class Row1Folder : RepoGenBaseFolder
         {
+            RepoItemInfo _row1Info;
             RepoItemInfo _colustcdrow1Info;
             RepoItemInfo _colustsatzrow1Info;
             RepoItemInfo _colustauftrow1Info;
@@ -443,11 +418,12 @@ namespace S_ALLTAB_Schnelltest
             RepoItemInfo _colusttextrow1Info;
 
             /// <summary>
-            /// Creates a new Row1_  folder.
+            /// Creates a new Row1  folder.
             /// </summary>
-            public Row1_Folder(RepoGenBaseFolder parentFolder) :
-                    base("Row1_", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']", parentFolder, 30000, null, false, "5c280ffe-7b58-41c3-b63e-0cab0fcb3f1c", "")
+            public Row1Folder(RepoGenBaseFolder parentFolder) :
+                    base("Row1", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']", parentFolder, 30000, null, false, "5c280ffe-7b58-41c3-b63e-0cab0fcb3f1c", "")
             {
+                _row1Info = new RepoItemInfo(this, "Row1", "", "", 30000, null, "a3ca8518-1d1a-4085-8e1e-3dffdf78e3c5");
                 _colustcdrow1Info = new RepoItemInfo(this, "ColUstCdRow1", "cell[@accessiblename='colUst_cd Row 1']", "", 30000, null, "7c92c597-9a3d-48ec-abcf-67f5f5506d27");
                 _colustsatzrow1Info = new RepoItemInfo(this, "ColUstSatzRow1", "cell[@accessiblename='colUst_satz Row 1']", "", 30000, null, "6a9d766e-fc4b-4023-8c8c-2055ff3fe4f1");
                 _colustauftrow1Info = new RepoItemInfo(this, "ColUstAuftRow1", "cell[@accessiblename='colUst_auft Row 1']", "", 30000, null, "36675ec3-b5f2-439f-b14f-eb54374d9af5");
@@ -480,6 +456,30 @@ namespace S_ALLTAB_Schnelltest
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Row1 item.
+            /// </summary>
+            [RepositoryItem("a3ca8518-1d1a-4085-8e1e-3dffdf78e3c5")]
+            public virtual Ranorex.Row Row1
+            {
+                get
+                {
+                    return _row1Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1 item info.
+            /// </summary>
+            [RepositoryItemInfo("a3ca8518-1d1a-4085-8e1e-3dffdf78e3c5")]
+            public virtual RepoItemInfo Row1Info
+            {
+                get
+                {
+                    return _row1Info;
                 }
             }
 
@@ -1332,14 +1332,13 @@ namespace S_ALLTAB_Schnelltest
         [RepositoryFolder("5bb66bf1-418e-46c4-8a29-68cbbcf421ba")]
         public partial class TblSamkAppFolder : RepoGenBaseFolder
         {
-            S_ALLTAB_SchnelltestRepositoryFolders.Row1_Folder1 _row1_;
+            S_ALLTAB_SchnelltestRepositoryFolders.Row1Folder1 _row1;
             S_ALLTAB_SchnelltestRepositoryFolders.Row_mit_SAMK_CD_NEUFolder _row_mit_samk_cd_neu;
             S_ALLTAB_SchnelltestRepositoryFolders.Row_mit_SAMK_CD_ALTFolder _row_mit_samk_cd_alt;
             RepoItemInfo _titlebar100verwaltensammelkontenInfo;
             RepoItemInfo _pbdataaccessnewInfo;
             RepoItemInfo _pbdataaccesssaveInfo;
             RepoItemInfo _pbdataaccessloadInfo;
-            RepoItemInfo _row1Info;
             RepoItemInfo _flexgridInfo;
             RepoItemInfo _colsamkcdrow5Info;
             RepoItemInfo _colsamkcdrow2Info;
@@ -1350,14 +1349,13 @@ namespace S_ALLTAB_Schnelltest
             public TblSamkAppFolder(RepoGenBaseFolder parentFolder) :
                     base("TblSamk", "/form[@controlname='tblSamk']", parentFolder, 30000, null, true, "5bb66bf1-418e-46c4-8a29-68cbbcf421ba", "")
             {
-                _row1_ = new S_ALLTAB_SchnelltestRepositoryFolders.Row1_Folder1(this);
+                _row1 = new S_ALLTAB_SchnelltestRepositoryFolders.Row1Folder1(this);
                 _row_mit_samk_cd_neu = new S_ALLTAB_SchnelltestRepositoryFolders.Row_mit_SAMK_CD_NEUFolder(this);
                 _row_mit_samk_cd_alt = new S_ALLTAB_SchnelltestRepositoryFolders.Row_mit_SAMK_CD_ALTFolder(this);
                 _titlebar100verwaltensammelkontenInfo = new RepoItemInfo(this, "TitleBar100VerwaltenSammelkonten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "60271f5b-0329-401d-9a2b-f44f673e50b2");
                 _pbdataaccessnewInfo = new RepoItemInfo(this, "PbDataAccessNew", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_New']", "", 30000, null, "45b10a9b-1b1f-4281-ad51-8464c05de473");
                 _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "45fb40a2-1bc1-40db-86d5-128e6ca2f8d6");
                 _pbdataaccessloadInfo = new RepoItemInfo(this, "PbDataAccessLoad", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']", "", 30000, null, "baf3d0d8-d51f-4993-ba37-40d42bc8d40c");
-                _row1Info = new RepoItemInfo(this, "Row1", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']", "", 30000, null, "7d1122e2-d48c-4eb1-83ec-968222c5b826");
                 _flexgridInfo = new RepoItemInfo(this, "FlexGrid", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", "", 30000, null, "c1ffc2f9-3c86-4c99-80d7-afa42078c220");
                 _colsamkcdrow5Info = new RepoItemInfo(this, "ColSamkCdRow5", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colSamk_cd Row 5']", "", 30000, null, "d8e07885-957c-41b2-84bb-b4ba16eba392");
                 _colsamkcdrow2Info = new RepoItemInfo(this, "ColSamkCdRow2", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colSamk_cd Row 2']", "", 30000, null, "d6ad7501-6c7c-48be-b2bb-4d06cefcc8f2");
@@ -1484,30 +1482,6 @@ namespace S_ALLTAB_Schnelltest
             }
 
             /// <summary>
-            /// The Row1 item.
-            /// </summary>
-            [RepositoryItem("7d1122e2-d48c-4eb1-83ec-968222c5b826")]
-            public virtual Ranorex.Row Row1
-            {
-                get
-                {
-                    return _row1Info.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Row1 item info.
-            /// </summary>
-            [RepositoryItemInfo("7d1122e2-d48c-4eb1-83ec-968222c5b826")]
-            public virtual RepoItemInfo Row1Info
-            {
-                get
-                {
-                    return _row1Info;
-                }
-            }
-
-            /// <summary>
             /// The FlexGrid item.
             /// </summary>
             [RepositoryItem("c1ffc2f9-3c86-4c99-80d7-afa42078c220")]
@@ -1580,12 +1554,12 @@ namespace S_ALLTAB_Schnelltest
             }
 
             /// <summary>
-            /// The Row1_ folder.
+            /// The Row1 folder.
             /// </summary>
             [RepositoryFolder("09eb3788-fa32-4535-aea5-3e8487c890cf")]
-            public virtual S_ALLTAB_SchnelltestRepositoryFolders.Row1_Folder1 Row1_
+            public virtual S_ALLTAB_SchnelltestRepositoryFolders.Row1Folder1 Row1
             {
-                get { return _row1_; }
+                get { return _row1; }
             }
 
             /// <summary>
@@ -1608,11 +1582,12 @@ namespace S_ALLTAB_Schnelltest
         }
 
         /// <summary>
-        /// The Row1_Folder1 folder.
+        /// The Row1Folder1 folder.
         /// </summary>
         [RepositoryFolder("09eb3788-fa32-4535-aea5-3e8487c890cf")]
-        public partial class Row1_Folder1 : RepoGenBaseFolder
+        public partial class Row1Folder1 : RepoGenBaseFolder
         {
+            RepoItemInfo _row1Info;
             RepoItemInfo _row1column0Info;
             RepoItemInfo _colsamkcdrow1Info;
             RepoItemInfo _colsamkklrow1Info;
@@ -1620,11 +1595,12 @@ namespace S_ALLTAB_Schnelltest
             RepoItemInfo _colsamkktorow1Info;
 
             /// <summary>
-            /// Creates a new Row1_  folder.
+            /// Creates a new Row1  folder.
             /// </summary>
-            public Row1_Folder1(RepoGenBaseFolder parentFolder) :
-                    base("Row1_", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']", parentFolder, 30000, null, false, "09eb3788-fa32-4535-aea5-3e8487c890cf", "")
+            public Row1Folder1(RepoGenBaseFolder parentFolder) :
+                    base("Row1", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']", parentFolder, 30000, null, false, "09eb3788-fa32-4535-aea5-3e8487c890cf", "")
             {
+                _row1Info = new RepoItemInfo(this, "Row1", "", "", 30000, null, "7d1122e2-d48c-4eb1-83ec-968222c5b826");
                 _row1column0Info = new RepoItemInfo(this, "Row1Column0", "cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "1d385b28-ba8e-4e82-a4d8-8f38b3dd61ee");
                 _colsamkcdrow1Info = new RepoItemInfo(this, "ColSamkCdRow1", "cell[@accessiblename='colSamk_cd Row 1']", "", 30000, null, "90cb4356-0f9a-4858-a52a-3444b15e0aad");
                 _colsamkklrow1Info = new RepoItemInfo(this, "ColSamkKlRow1", "cell[@accessiblename='colSamk_kl Row 1']", "", 30000, null, "95c3f5b1-10cf-41f0-94e6-07cdac2b8e02");
@@ -1653,6 +1629,30 @@ namespace S_ALLTAB_Schnelltest
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Row1 item.
+            /// </summary>
+            [RepositoryItem("7d1122e2-d48c-4eb1-83ec-968222c5b826")]
+            public virtual Ranorex.Row Row1
+            {
+                get
+                {
+                    return _row1Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1 item info.
+            /// </summary>
+            [RepositoryItemInfo("7d1122e2-d48c-4eb1-83ec-968222c5b826")]
+            public virtual RepoItemInfo Row1Info
+            {
+                get
+                {
+                    return _row1Info;
                 }
             }
 

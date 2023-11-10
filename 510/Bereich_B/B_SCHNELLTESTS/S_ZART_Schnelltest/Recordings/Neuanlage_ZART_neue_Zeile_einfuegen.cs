@@ -82,8 +82,8 @@ namespace S_ZART_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblZahlungsarten.PbDataAccessNew' at Center.", repo.TblZahlungsarten.PbDataAccessNewInfo, new RecordItemIndex(0));
             repo.TblZahlungsarten.PbDataAccessNew.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'TblZahlungsarten.row1.Row1'", repo.TblZahlungsarten.row1.Row1Info, new ActionTimeout(30000), new RecordItemIndex(1));
-            repo.TblZahlungsarten.row1.Row1Info.WaitForNotExists(30000);
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblZahlungsarten.row1.Row1'.", repo.TblZahlungsarten.row1.Row1Info, new RecordItemIndex(1));
+            Validate.NotExists(repo.TblZahlungsarten.row1.Row1Info);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'TblZahlungsarten.FlexGrid' at Center.", repo.TblZahlungsarten.FlexGridInfo, new RecordItemIndex(2));
             repo.TblZahlungsarten.FlexGrid.Click(System.Windows.Forms.MouseButtons.Right);
@@ -96,6 +96,9 @@ namespace S_ZART_Schnelltest.Recordings
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'TblZahlungsarten.row1.Row1'", repo.TblZahlungsarten.row1.Row1Info, new ActionTimeout(30000), new RecordItemIndex(5));
             repo.TblZahlungsarten.row1.Row1Info.WaitForExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblZahlungsarten.row1.Row1'.", repo.TblZahlungsarten.row1.Row1Info, new RecordItemIndex(6));
+            Validate.Exists(repo.TblZahlungsarten.row1.Row1Info);
             
         }
 

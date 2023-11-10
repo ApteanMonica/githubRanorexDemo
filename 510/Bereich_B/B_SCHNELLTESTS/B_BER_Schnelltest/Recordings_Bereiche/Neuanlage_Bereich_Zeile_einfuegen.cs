@@ -24,29 +24,29 @@ namespace B_BER_Schnelltest.Recordings_Bereiche
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Loeschen_Bereich_pruefen recording.
+    ///The Neuanlage_Bereich_Zeile_einfuegen recording.
     /// </summary>
-    [TestModule("6a00bf48-7410-4b4a-a6e2-401ed7dbd8f4", ModuleType.Recording, 1)]
-    public partial class Loeschen_Bereich_pruefen : ITestModule
+    [TestModule("90907124-69ea-4a9e-948f-4a40de5c363d", ModuleType.Recording, 1)]
+    public partial class Neuanlage_Bereich_Zeile_einfuegen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BER_Schnelltest.B_BER_SchnelltestRepository repository.
         /// </summary>
         public static global::B_BER_Schnelltest.B_BER_SchnelltestRepository repo = global::B_BER_Schnelltest.B_BER_SchnelltestRepository.Instance;
 
-        static Loeschen_Bereich_pruefen instance = new Loeschen_Bereich_pruefen();
+        static Neuanlage_Bereich_Zeile_einfuegen instance = new Neuanlage_Bereich_Zeile_einfuegen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Loeschen_Bereich_pruefen()
+        public Neuanlage_Bereich_Zeile_einfuegen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Loeschen_Bereich_pruefen Instance
+        public static Neuanlage_Bereich_Zeile_einfuegen Instance
         {
             get { return instance; }
         }
@@ -79,22 +79,20 @@ namespace B_BER_Schnelltest.Recordings_Bereiche
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBer.FlexGrid_Tabelle.Row5Column0' at Center.", repo.TblBer.FlexGrid_Tabelle.Row5Column0Info, new RecordItemIndex(0));
-            repo.TblBer.FlexGrid_Tabelle.Row5Column0.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'TblBer.FlexGrid' at Center.", repo.TblBer.FlexGridInfo, new RecordItemIndex(0));
+            repo.TblBer.FlexGrid.Click(System.Windows.Forms.MouseButtons.Right);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'TblBer.FlexGrid_Tabelle.Row5Column0'.", repo.TblBer.FlexGrid_Tabelle.Row5Column0Info, new RecordItemIndex(1));
-            Keyboard.PrepareFocus(repo.TblBer.FlexGrid_Tabelle.Row5Column0);
-            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'BBER.ZeileEinfuegen'", repo.BBER.ZeileEinfuegenInfo, new ActionTimeout(60000), new RecordItemIndex(1));
+            repo.BBER.ZeileEinfuegenInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBer.PbDataAccessSave' at Center.", repo.TblBer.PbDataAccessSaveInfo, new RecordItemIndex(2));
-            repo.TblBer.PbDataAccessSave.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBER.ZeileEinfuegen' at Center.", repo.BBER.ZeileEinfuegenInfo, new RecordItemIndex(2));
+            repo.BBER.ZeileEinfuegen.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4') on item 'TblBer.FlexGrid_Tabelle.ColBerCdRow4'.", repo.TblBer.FlexGrid_Tabelle.ColBerCdRow4Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.TblBer.FlexGrid_Tabelle.ColBerCdRow4Info, "Text", "4");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'TblBer.row5.Row5'", repo.TblBer.row5.Row5Info, new ActionTimeout(30000), new RecordItemIndex(3));
+            repo.TblBer.row5.Row5Info.WaitForExists(30000);
             
-            // search timeout reduziert
-            Report.Log(ReportLevel.Info, "Validation", "search timeout reduziert\r\nValidating NotExists on item 'TblBer.FlexGrid_Tabelle.Row5'.", repo.TblBer.FlexGrid_Tabelle.Row5Info, new RecordItemIndex(4));
-            Validate.NotExists(repo.TblBer.FlexGrid_Tabelle.Row5Info);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblBer.row5.Row5'.", repo.TblBer.row5.Row5Info, new RecordItemIndex(4));
+            Validate.Exists(repo.TblBer.row5.Row5Info);
             
         }
 

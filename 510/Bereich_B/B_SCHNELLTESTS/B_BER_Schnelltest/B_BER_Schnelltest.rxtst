@@ -42,6 +42,20 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="105bde77-706e-484d-96a8-2e0d6517fa80"
+			name="Loeschen_Bereich_Alt_Kostenstellen_nicht_moeglich"
+			ref="b9560b63-2aff-4553-8d9b-4f12b75a286e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="BER_BEZ_ALT"
+					datasourceid="9cbeec1c-f5c2-4a9c-aa01-f314bbcf21ce"
+					variableid="4a814fd1-54aa-48b8-8d1f-d4f11d8db3c0"
+					variablename="BER_BEZ_ALT">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="1905357d-ae7c-4b25-8d92-179d428152e6"
 			name="Bereiche_B_BER_Aufrufart_BER">
@@ -143,6 +157,12 @@
 			name="setup">
 			</setup>
 			<testmodule
+			id="572adfd9-ec5f-4a86-b1e2-bb7e61be5c64"
+			name="Neuanlage_Bereich_Zeile_einfuegen"
+			ref="90907124-69ea-4a9e-948f-4a40de5c363d"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="57d0e86a-214e-4f83-a2bb-0332265d93eb"
 			name="Start_B_BER_BEKT"
 			ref="4d784fe1-d508-4a9c-aa1e-6d73b2cca66e"
@@ -220,7 +240,7 @@
 			</testmodule>
 			<testmodule
 			id="827d36b2-6dde-4fc9-9c7d-97c8f2235e02"
-			name="Neuanlage_Bereich"
+			name="Neuanlage_Bereich_Werte_erfassen"
 			ref="e96046f2-7447-4de2-87b1-7d28c8a0a004"
 			type="Recording">
 				<databinding>
@@ -291,11 +311,11 @@
 					</param>
 					<param
 					name="BER_BEZ_NEU"
-					value="B_BER_ST">
+					value="B_BER_Schnelltest">
 					</param>
 					<param
 					name="BER_BEZ_AEN"
-					value="B_BER_ST_AEN">
+					value="B_BER_Schnelltest_AEN">
 					</param>
 					<param
 					name="FIBU_POS_NEU"
@@ -305,11 +325,15 @@
 					name="FIBU_POS_AEN"
 					value="6">
 					</param>
+					<param
+					name="BER_BEZ_ALT"
+					value="Kostenstellen">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
 			id="a8bc2e2a-766c-4f77-b9ee-2e49bd800d81"
-			name="Loeschen_Bereich_pruefen"
+			name="Loeschen_BER_CD_NEU_pruefen"
 			ref="6a00bf48-7410-4b4a-a6e2-401ed7dbd8f4"
 			type="Recording">
 			</testmodule>
@@ -393,8 +417,12 @@
 							</testmodule>
 						</setup>
 						<testmodule
+						id="572adfd9-ec5f-4a86-b1e2-bb7e61be5c64"
+						name="Neuanlage_Bereich_Zeile_einfuegen">
+						</testmodule>
+						<testmodule
 						id="827d36b2-6dde-4fc9-9c7d-97c8f2235e02"
-						name="Neuanlage_Bereich">
+						name="Neuanlage_Bereich_Werte_erfassen">
 						</testmodule>
 						<testmodule
 						id="056cffc9-bc0d-4c12-a068-6375e39a6eac"
@@ -410,7 +438,11 @@
 						</testmodule>
 						<testmodule
 						id="a8bc2e2a-766c-4f77-b9ee-2e49bd800d81"
-						name="Loeschen_Bereich_pruefen">
+						name="Loeschen_BER_CD_NEU_pruefen">
+						</testmodule>
+						<testmodule
+						id="105bde77-706e-484d-96a8-2e0d6517fa80"
+						name="Loeschen_Bereich_Alt_Kostenstellen_nicht_moeglich">
 						</testmodule>
 						<teardown
 						id="4de3b15c-6705-40fd-a873-97460f8fdb8d"

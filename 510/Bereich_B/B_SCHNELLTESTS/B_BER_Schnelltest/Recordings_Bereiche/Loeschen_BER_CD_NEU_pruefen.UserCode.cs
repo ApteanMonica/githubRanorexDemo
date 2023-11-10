@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_BER_Schnelltest.Recordings_Bereiche
 {
-    public partial class Loeschen_Bereich_pruefen
+    public partial class Loeschen_BER_CD_NEU_pruefen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

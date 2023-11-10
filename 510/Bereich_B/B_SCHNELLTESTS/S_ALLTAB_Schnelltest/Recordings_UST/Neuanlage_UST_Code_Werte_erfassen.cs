@@ -109,8 +109,8 @@ namespace S_ALLTAB_Schnelltest.Recordings_UST
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(1));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UST_CD_NEU) on item 'TblUstVerwalten.Row1_.ColUstCdRow1'.", repo.TblUstVerwalten.Row1_.ColUstCdRow1Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblUstVerwalten.Row1_.ColUstCdRow1Info, "Text", UST_CD_NEU);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UST_CD_NEU) on item 'TblUstVerwalten.Row1.ColUstCdRow1'.", repo.TblUstVerwalten.Row1.ColUstCdRow1Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblUstVerwalten.Row1.ColUstCdRow1Info, "Text", UST_CD_NEU);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '7,7'.", new RecordItemIndex(3));
             Keyboard.Press("7,7");
@@ -118,8 +118,8 @@ namespace S_ALLTAB_Schnelltest.Recordings_UST
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='7,70') on item 'TblUstVerwalten.Row1_.ColUstSatzRow1'.", repo.TblUstVerwalten.Row1_.ColUstSatzRow1Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.TblUstVerwalten.Row1_.ColUstSatzRow1Info, "Text", "7,70");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='7,70') on item 'TblUstVerwalten.Row1.ColUstSatzRow1'.", repo.TblUstVerwalten.Row1.ColUstSatzRow1Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.TblUstVerwalten.Row1.ColUstSatzRow1Info, "Text", "7,70");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '50'.", new RecordItemIndex(6));
             Keyboard.Press("50");
@@ -127,8 +127,8 @@ namespace S_ALLTAB_Schnelltest.Recordings_UST
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='50,00') on item 'TblUstVerwalten.Row1_.ColUstAuftRow1'.", repo.TblUstVerwalten.Row1_.ColUstAuftRow1Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.TblUstVerwalten.Row1_.ColUstAuftRow1Info, "Text", "50,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='50,00') on item 'TblUstVerwalten.Row1.ColUstAuftRow1'.", repo.TblUstVerwalten.Row1.ColUstAuftRow1Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.TblUstVerwalten.Row1.ColUstAuftRow1Info, "Text", "50,00");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -145,8 +145,8 @@ namespace S_ALLTAB_Schnelltest.Recordings_UST
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='E') on item 'TblUstVerwalten.Row1_.ColUstArtRow1'.", repo.TblUstVerwalten.Row1_.ColUstArtRow1Info, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.TblUstVerwalten.Row1_.ColUstArtRow1Info, "Text", "E");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='E') on item 'TblUstVerwalten.Row1.ColUstArtRow1'.", repo.TblUstVerwalten.Row1.ColUstArtRow1Info, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.TblUstVerwalten.Row1.ColUstArtRow1Info, "Text", "E");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(15));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -169,8 +169,8 @@ namespace S_ALLTAB_Schnelltest.Recordings_UST
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(21));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2599') on item 'TblUstVerwalten.Row1_.ColUstVstkontoRow1'.", repo.TblUstVerwalten.Row1_.ColUstVstkontoRow1Info, new RecordItemIndex(22));
-            Validate.AttributeEqual(repo.TblUstVerwalten.Row1_.ColUstVstkontoRow1Info, "Text", "2599");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2599') on item 'TblUstVerwalten.Row1.ColUstVstkontoRow1'.", repo.TblUstVerwalten.Row1.ColUstVstkontoRow1Info, new RecordItemIndex(22));
+            Validate.AttributeEqual(repo.TblUstVerwalten.Row1.ColUstVstkontoRow1Info, "Text", "2599");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '3510'.", new RecordItemIndex(23));
             Keyboard.Press("3510");
@@ -178,8 +178,8 @@ namespace S_ALLTAB_Schnelltest.Recordings_UST
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(24));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3510') on item 'TblUstVerwalten.Row1_.ColUstMwstkontoRow1'.", repo.TblUstVerwalten.Row1_.ColUstMwstkontoRow1Info, new RecordItemIndex(25));
-            Validate.AttributeEqual(repo.TblUstVerwalten.Row1_.ColUstMwstkontoRow1Info, "Text", "3510");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3510') on item 'TblUstVerwalten.Row1.ColUstMwstkontoRow1'.", repo.TblUstVerwalten.Row1.ColUstMwstkontoRow1Info, new RecordItemIndex(25));
+            Validate.AttributeEqual(repo.TblUstVerwalten.Row1.ColUstMwstkontoRow1Info, "Text", "3510");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(26));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -190,8 +190,8 @@ namespace S_ALLTAB_Schnelltest.Recordings_UST
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(28));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='AT') on item 'TblUstVerwalten.Row1_.ColUstLandCdRow1'.", repo.TblUstVerwalten.Row1_.ColUstLandCdRow1Info, new RecordItemIndex(29));
-            Validate.AttributeEqual(repo.TblUstVerwalten.Row1_.ColUstLandCdRow1Info, "Text", "AT");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='AT') on item 'TblUstVerwalten.Row1.ColUstLandCdRow1'.", repo.TblUstVerwalten.Row1.ColUstLandCdRow1Info, new RecordItemIndex(29));
+            Validate.AttributeEqual(repo.TblUstVerwalten.Row1.ColUstLandCdRow1Info, "Text", "AT");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(30));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -208,8 +208,8 @@ namespace S_ALLTAB_Schnelltest.Recordings_UST
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(34));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UST_BEZ) on item 'TblUstVerwalten.Row1_.ColUstTextRow1'.", repo.TblUstVerwalten.Row1_.ColUstTextRow1Info, new RecordItemIndex(35));
-            Validate.AttributeEqual(repo.TblUstVerwalten.Row1_.ColUstTextRow1Info, "Text", UST_BEZ);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UST_BEZ) on item 'TblUstVerwalten.Row1.ColUstTextRow1'.", repo.TblUstVerwalten.Row1.ColUstTextRow1Info, new RecordItemIndex(35));
+            Validate.AttributeEqual(repo.TblUstVerwalten.Row1.ColUstTextRow1Info, "Text", UST_BEZ);
             
         }
 

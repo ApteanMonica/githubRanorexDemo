@@ -82,8 +82,8 @@ namespace S_ALLTAB_Schnelltest.Recordings_SAMK
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblSamk.PbDataAccessNew' at Center.", repo.TblSamk.PbDataAccessNewInfo, new RecordItemIndex(0));
             repo.TblSamk.PbDataAccessNew.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to not exist. Associated repository item: 'TblSamk.Row1'", repo.TblSamk.Row1Info, new ActionTimeout(30000), new RecordItemIndex(1));
-            repo.TblSamk.Row1Info.WaitForNotExists(30000);
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblSamk.Row1.Row1'.", repo.TblSamk.Row1.Row1Info, new RecordItemIndex(1));
+            Validate.NotExists(repo.TblSamk.Row1.Row1Info);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'TblSamk.FlexGrid' at Center.", repo.TblSamk.FlexGridInfo, new RecordItemIndex(2));
             repo.TblSamk.FlexGrid.Click(System.Windows.Forms.MouseButtons.Right);
@@ -94,8 +94,11 @@ namespace S_ALLTAB_Schnelltest.Recordings_SAMK
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SALLTAB.ZeileEinfuegen_510_511_521' at Center.", repo.SALLTAB.ZeileEinfuegen_510_511_521Info, new RecordItemIndex(4));
             repo.SALLTAB.ZeileEinfuegen_510_511_521.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'TblSamk.Row1'", repo.TblSamk.Row1Info, new ActionTimeout(30000), new RecordItemIndex(5));
-            repo.TblSamk.Row1Info.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'TblSamk.Row1.Row1'", repo.TblSamk.Row1.Row1Info, new ActionTimeout(30000), new RecordItemIndex(5));
+            repo.TblSamk.Row1.Row1Info.WaitForExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblSamk.Row1.Row1'.", repo.TblSamk.Row1.Row1Info, new RecordItemIndex(6));
+            Validate.Exists(repo.TblSamk.Row1.Row1Info);
             
         }
 

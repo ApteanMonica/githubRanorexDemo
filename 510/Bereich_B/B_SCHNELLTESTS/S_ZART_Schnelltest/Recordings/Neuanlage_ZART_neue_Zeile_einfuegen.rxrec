@@ -51,12 +51,11 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
-		<WaitForRecordItem
+		<validationitem
+		action="NotExists"
 		enabled="True"
 		optional="False"
-		searchpropertyid="0d35f968-91d4-4da1-8d11-651fff9ac7c9"
-		waitaction="NotExists"
-		waittimeout="30000ms">
+		searchpropertyid="277a5bcc-03f1-4c40-a72f-f3a1317b657a">
 			<comment>
 			</comment>
 			<bindings>
@@ -70,7 +69,13 @@ mode="Global">
 				<robustPath>
 				</robustPath>
 			</info>
-		</WaitForRecordItem>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Right"
@@ -411,6 +416,31 @@ RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="277a5bcc-03f1-4c40-a72f-f3a1317b657a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="48caf4e2-44a3-4652-b77c-074f51e481de"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblZahlungsarten']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="4420b360-f9aa-401f-9d8c-c1e32fdde0f3"

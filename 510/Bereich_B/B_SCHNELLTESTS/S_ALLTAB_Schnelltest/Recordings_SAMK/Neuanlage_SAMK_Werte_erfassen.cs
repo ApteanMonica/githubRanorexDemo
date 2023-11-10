@@ -109,8 +109,8 @@ namespace S_ALLTAB_Schnelltest.Recordings_SAMK
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(1));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$SAMK_CD_NEU) on item 'TblSamk.Row1_.ColSamkCdRow1'.", repo.TblSamk.Row1_.ColSamkCdRow1Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblSamk.Row1_.ColSamkCdRow1Info, "Text", SAMK_CD_NEU);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$SAMK_CD_NEU) on item 'TblSamk.Row1.ColSamkCdRow1'.", repo.TblSamk.Row1.ColSamkCdRow1Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblSamk.Row1.ColSamkCdRow1Info, "Text", SAMK_CD_NEU);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'K'.", new RecordItemIndex(3));
             Keyboard.Press("K");
@@ -118,8 +118,8 @@ namespace S_ALLTAB_Schnelltest.Recordings_SAMK
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='K') on item 'TblSamk.Row1_.ColSamkKlRow1'.", repo.TblSamk.Row1_.ColSamkKlRow1Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.TblSamk.Row1_.ColSamkKlRow1Info, "Text", "K");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='K') on item 'TblSamk.Row1.ColSamkKlRow1'.", repo.TblSamk.Row1.ColSamkKlRow1Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.TblSamk.Row1.ColSamkKlRow1Info, "Text", "K");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$SAMK_BEZ'.", new RecordItemIndex(6));
             Keyboard.Press(SAMK_BEZ);
@@ -127,8 +127,8 @@ namespace S_ALLTAB_Schnelltest.Recordings_SAMK
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$SAMK_BEZ) on item 'TblSamk.Row1_.ColSamkBezRow1'.", repo.TblSamk.Row1_.ColSamkBezRow1Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.TblSamk.Row1_.ColSamkBezRow1Info, "Text", SAMK_BEZ);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$SAMK_BEZ) on item 'TblSamk.Row1.ColSamkBezRow1'.", repo.TblSamk.Row1.ColSamkBezRow1Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.TblSamk.Row1.ColSamkBezRow1Info, "Text", SAMK_BEZ);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2000'.", new RecordItemIndex(9));
             Keyboard.Press("2000");
@@ -136,8 +136,8 @@ namespace S_ALLTAB_Schnelltest.Recordings_SAMK
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2000') on item 'TblSamk.Row1_.ColSamkKtoRow1'.", repo.TblSamk.Row1_.ColSamkKtoRow1Info, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.TblSamk.Row1_.ColSamkKtoRow1Info, "Text", "2000");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2000') on item 'TblSamk.Row1.ColSamkKtoRow1'.", repo.TblSamk.Row1.ColSamkKtoRow1Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.TblSamk.Row1.ColSamkKtoRow1Info, "Text", "2000");
             
         }
 

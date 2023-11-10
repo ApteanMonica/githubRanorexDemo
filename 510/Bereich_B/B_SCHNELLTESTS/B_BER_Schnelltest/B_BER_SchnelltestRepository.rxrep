@@ -47,6 +47,28 @@ name="B_BER_SchnelltestRepository">
 			<item
 			addcaps="button,control,nativewindow"
 			capname="button"
+			id="baa9e6a3-aaa7-4a6d-a5b4-2cd58bc3e96f"
+			name="PbDataAccessNew"
+			refimgid="db9d7fbe-54b3-44bc-ae09-f5112efb615c"
+			refpath="/form[@controlname='tblBer']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_New']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBer']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_New']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="cc65688c-3d09-4d68-81ac-dc4eed493cc5"
+			name="PbDataAccessLoad"
+			refimgid="ba67ccc8-cb81-47c7-9e41-786ffe08534d"
+			refpath="/form[@controlname='tblBer']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBer']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
 			id="49f43b6e-ad68-4a5d-9bb1-f012e4922d58"
 			name="PbToolBarItemsBekt_Button_Bereichsgruppen"
 			refimgid="dda6798c-2046-45ba-a2cc-1589b1186940"
@@ -55,35 +77,53 @@ name="B_BER_SchnelltestRepository">
 			searchtimeout="30000ms">
 				/form[@controlname='tblBer']/container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup1']/button[@controlname='pbToolBarItems_Bekt']
 			</item>
-			<folder
+			<item
 			addcaps="table,accessible"
 			capname="table"
+			id="5037ea74-99dd-4ae3-9894-6f03eb4487d3"
+			name="FlexGrid"
+			refimgid="959c6220-889e-49b2-aa72-98e34af25e04"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="5f3c3b89-4ef8-4003-859c-f771920126ed"
+			name="ColBerCdRow4"
+			refimgid="43beba24-bd85-4b9e-a28a-63635666356f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colBer_cd Row 4']
+			</item>
+			<folder
+			addcaps="table,accessible"
+			capname="row"
 			id="34331042-9b0d-4cab-8c6b-db1a607cc5b5"
 			isrooted="True"
-			name="FlexGrid_Tabelle"
-			refpath="/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']"
+			name="row5"
 			searchtimeout="30000ms"
 			usecache="False">
 				<item
-				addcaps="table,accessible"
-				capname="table"
-				id="5037ea74-99dd-4ae3-9894-6f03eb4487d3"
-				name="FlexGrid"
-				refimgid="959c6220-889e-49b2-aa72-98e34af25e04"
-				refpath="/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element/table[@accessiblename='FlexGrid']"
+				addcaps="cell,accessible"
+				capname="row"
+				id="0a158f8f-1fab-4c52-badd-2ab40dc335d9"
+				name="Row5"
+				refimgid="43beba24-bd85-4b9e-a28a-63635666356f"
 				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+				searchtimeout="5000ms">
+					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']
 				</item>
 				<item
 				addcaps="cell,accessible"
 				capname="cell"
-				id="5f3c3b89-4ef8-4003-859c-f771920126ed"
-				name="ColBerCdRow4"
-				refimgid="43beba24-bd85-4b9e-a28a-63635666356f"
+				id="ab9b232e-9e6e-4f27-a37d-f4238f894af0"
+				name="Row5Column0"
+				refimgid="2188b335-9fff-4135-835a-55ee76a70bfb"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colBer_cd Row 4']
+					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='Row 5 Column 0']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -94,16 +134,6 @@ name="B_BER_SchnelltestRepository">
 				robustPath=""
 				searchtimeout="5000ms">
 					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBer_cd Row 5']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="row"
-				id="0a158f8f-1fab-4c52-badd-2ab40dc335d9"
-				name="Row5"
-				refimgid="43beba24-bd85-4b9e-a28a-63635666356f"
-				robustPath=""
-				searchtimeout="5000ms">
-					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -121,7 +151,6 @@ name="B_BER_SchnelltestRepository">
 				id="bb94143b-7e1c-4bfe-9398-b70f4332fc02"
 				name="ColBerPosRow5"
 				refimgid="f9adb8d7-7857-4117-a16d-7a30a9ce6aa1"
-				refpath="/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element/table/row[@accessiblename='Row 5']/cell[@accessiblename='colBer_pos Row 5']"
 				robustPath=""
 				searchtimeout="30000ms">
 					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBer_pos Row 5']
@@ -132,10 +161,9 @@ name="B_BER_SchnelltestRepository">
 				id="903fb3ea-2049-4e69-a7f3-4e66d1d11343"
 				name="ColBerKontrBestandRow5"
 				refimgid="a9ea518c-ce2b-40ce-8591-3a9c2d929d33"
-				refpath="/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBer_kontr_bestand Row 5']"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename&gt;'colBer_kontr_bestand Row']
+					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBer_kontr_bestand Row 5']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -143,7 +171,6 @@ name="B_BER_SchnelltestRepository">
 				id="e182306d-7ba6-476a-a25a-1e571d0fda85"
 				name="ColBerKontrErfolgRow5"
 				refimgid="5b4b3d9f-29c8-4fcf-b41a-8f9b10ab33f2"
-				refpath="/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBer_kontr_erfolg Row 5']"
 				robustPath=""
 				searchtimeout="30000ms">
 					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBer_kontr_erfolg Row 5']
@@ -154,7 +181,6 @@ name="B_BER_SchnelltestRepository">
 				id="b5a26bad-55e8-47d5-adaf-fdd471286f54"
 				name="ColBerKzherkRow5"
 				refimgid="90360810-5f35-45b1-9254-8ff98baf2117"
-				refpath="/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBer_kzherk Row 5']"
 				robustPath=""
 				searchtimeout="30000ms">
 					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBer_kzherk Row 5']
@@ -165,24 +191,74 @@ name="B_BER_SchnelltestRepository">
 				id="f01d03ca-b930-47d6-8643-64c37366b973"
 				name="ColBerCd1VerrRow5"
 				refimgid="44f44011-d258-4f8f-b43f-8b9bd8b62d8a"
-				refpath="/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBer_cd1_verr Row 5']"
 				robustPath=""
 				searchtimeout="30000ms">
 					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBer_cd1_verr Row 5']
 				</item>
+				<basepath>
+					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']
+				</basepath>
+			</folder>
+			<folder
+			addcaps="table,accessible"
+			capname="row"
+			id="e14957f1-39bb-43f6-9473-45cccd2bd496"
+			isrooted="True"
+			name="row_mit_BER_BEZ_ALT"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="row"
+				id="6827d63e-23f1-4304-9890-2318dc5646ab"
+				name="Row"
+				refimgid="43beba24-bd85-4b9e-a28a-63635666356f"
+				robustPath=""
+				searchtimeout="5000ms">
+					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$BER_BEZ_ALT]
+				</item>
 				<item
 				addcaps="cell,accessible"
 				capname="cell"
-				id="ab9b232e-9e6e-4f27-a37d-f4238f894af0"
-				name="Row5Column0"
+				id="a6cff1ca-04b7-4a81-9432-058e1be3f6ca"
+				name="Column0"
 				refimgid="2188b335-9fff-4135-835a-55ee76a70bfb"
-				refpath="/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='Row 5 Column 0']"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='Row 5 Column 0']
+					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$BER_BEZ_ALT]/cell[@accessiblename~'Column 0']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="b2906e29-92c3-4735-899d-9b85d298fc6b"
+				name="ColBerCd"
+				refimgid="43beba24-bd85-4b9e-a28a-63635666356f"
+				robustPath=""
+				searchtimeout="5000ms">
+					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$BER_BEZ_ALT]/cell[@accessiblename~'colBer_cd']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="df3db424-1859-4b38-98d8-777e90b454ad"
+				name="ColBerBez"
+				refimgid="9de85dda-538a-441b-98cb-d4881e3b26c7"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$BER_BEZ_ALT]/cell[@accessiblename~'colBer_bez']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="9eff7bd0-7e46-4743-8272-a54ce14f8ced"
+				name="ColBerPos"
+				refimgid="f9adb8d7-7857-4117-a16d-7a30a9ce6aa1"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$BER_BEZ_ALT]/cell[@accessiblename~'colBer_pos']
 				</item>
 				<basepath>
-					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$BER_BEZ_ALT]
 				</basepath>
 			</folder>
 			<basepath>
@@ -445,16 +521,6 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/form[@controlname='dlgMessageBox']/button[@controlname='button0']
 			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="8f12a750-329d-4843-8e81-edc13f4753aa"
-			name="Button01"
-			refpath="/form/button"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgMessageBox']/button
-			</item>
 			<basepath>
 				/form[@controlname='dlgMessageBox']
 			</basepath>
@@ -480,6 +546,11 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 		id="2b315b87-ba96-4e9d-91e6-ee1e6c73ec5e"
 		name="FIBU_POS_AEN">
 			6
+		</var>
+		<var
+		id="4a814fd1-54aa-48b8-8d1f-d4f11d8db3c0"
+		name="BER_BEZ_ALT">
+			Kostenstellen
 		</var>
 	</variables>
 </repository>
