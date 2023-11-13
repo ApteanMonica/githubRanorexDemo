@@ -43,7 +43,6 @@ namespace B_BUAB_002.Recordings
         {
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
             Programm = "B_BUAB";
-            Tagesdatum = "";
         }
 
         /// <summary>
@@ -78,18 +77,6 @@ namespace B_BUAB_002.Recordings
         {
             get { return _Programm; }
             set { _Programm = value; }
-        }
-
-        string _Tagesdatum;
-
-        /// <summary>
-        /// Gets or sets the value of variable Tagesdatum.
-        /// </summary>
-        [TestVariable("f5317fa0-75fd-4c85-a202-48bc384c931d")]
-        public string Tagesdatum
-        {
-            get { return _Tagesdatum; }
-            set { _Tagesdatum = value; }
         }
 
 #endregion

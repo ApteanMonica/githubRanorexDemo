@@ -43,26 +43,6 @@ name="B_BUAB_002Repository">
 				/form[@controlname='tblB']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']
 			</item>
 			<item
-			addcaps="text,accessible"
-			capname="text"
-			id="93a4caa0-051b-4187-a3d5-1737dee68c92"
-			name="Beleg"
-			refimgid="4834f384-fd55-4db2-81aa-769658195407"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblB']/container[@controlname='ToolBar']/container[@controlname='cDCC_Tools']/text[@controlname='dfBelegnr']/text[@accessiblename='Beleg']
-			</item>
-			<item
-			addcaps="cell,accessible"
-			capname="cell"
-			id="38df31f9-7b9b-45b5-b06b-c3eecc9b7724"
-			name="Row1Column0"
-			refimgid="9cc9d5ff-0db8-42b9-8564-ccf9f6d460e4"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']
-			</item>
-			<item
 			addcaps="button,control,nativewindow"
 			capname="button"
 			id="73758393-d7d3-488a-8d0b-6dec7183400f"
@@ -84,6 +64,16 @@ name="B_BUAB_002Repository">
 			searchtimeout="30000ms">
 				/form[@controlname='tblB']/container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_New']
 			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="93a4caa0-051b-4187-a3d5-1737dee68c92"
+			name="Beleg"
+			refimgid="4834f384-fd55-4db2-81aa-769658195407"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblB']/container[@controlname='ToolBar']/container[@controlname='cDCC_Tools']/text[@controlname='dfBelegnr']/text[@accessiblename='Beleg']
+			</item>
 			<folder
 			addcaps="table,accessible"
 			capname="table"
@@ -101,6 +91,16 @@ name="B_BUAB_002Repository">
 				robustPath=""
 				searchtimeout="30000ms">
 					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="38df31f9-7b9b-45b5-b06b-c3eecc9b7724"
+				name="Row1Column0"
+				refimgid="9cc9d5ff-0db8-42b9-8564-ccf9f6d460e4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -285,6 +285,17 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="1a7423b2-37e4-4c9b-add6-57c14e4f38a8"
+			name="Storno"
+			refimgid="13110a23-5bff-4b54-9dc5-9657dd866c97"
+			refpath="/form[@controlname='dlgNeuerBeleg']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgNeuerBeleg']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
 			addcaps="button,control,nativewindow"
 			capname="button"
 			id="734da529-159f-4e07-951f-decfbe6ebbe4"
@@ -301,10 +312,9 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			id="018ce126-5d9d-42d8-94d2-7bef4a80b3b5"
 			name="Jahr"
 			refimgid="f5889efc-151c-4335-9922-05651979c6f0"
-			refpath="/form[@controlname='dlgNeuerBeleg']/text[@controlname='dfJahrbezJ']/text[@accessiblename='Monat']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='dlgNeuerBeleg']/?/?/text[@accessiblename='Monat']
+				/form[@controlname='dlgNeuerBeleg']/text[@controlname='dfJahrbezJ']/text[@accessiblename='Monat']
 			</item>
 			<item
 			addcaps="text,accessible"
@@ -319,13 +329,13 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			</item>
 			<item
 			addcaps="button,accessible"
-			capname="text"
+			capname="button"
 			id="edfc520b-b56f-44ef-ad99-0d9c68d386fb"
 			name="UVA_Jahr"
 			refimgid="63702f27-0eb3-42c2-9e83-1585a405214d"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='dlgNeuerBeleg']/text[@controlname='dfUvajahr']
+				/form[@controlname='dlgNeuerBeleg']/text[@controlname='dfUvajahr']/button[@accessiblename='UVA-Termin']
 			</item>
 			<item
 			addcaps="text,accessible"
@@ -339,26 +349,14 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 				/form[@controlname='dlgNeuerBeleg']/text[@controlname='dfUvamonat']/text[@accessiblerole='Text']
 			</item>
 			<item
-			addcaps="titlebar,accessible"
-			capname="titlebar"
-			id="1a7423b2-37e4-4c9b-add6-57c14e4f38a8"
-			name="Storno"
-			refimgid="13110a23-5bff-4b54-9dc5-9657dd866c97"
-			refpath="/form[@controlname='dlgNeuerBeleg']/titlebar[@accessiblerole='TitleBar']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgNeuerBeleg']/titlebar[@accessiblerole='TitleBar']
-			</item>
-			<item
 			addcaps="text,accessible"
 			capname="text"
 			id="94b60762-dbd9-4b4b-b6f6-195fe559c96b"
 			name="NeueBelegNr"
 			refimgid="46e4749a-878e-4b35-b23d-c621862ba4a1"
-			refpath="/form[@controlname='dlgNeuerBeleg']/text[@controlname='dfBelegNeu']/text[@accessiblename='Neue Beleg-Nr:']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='dlgNeuerBeleg']/?/?/text[@accessiblename='Neue Beleg-Nr:']
+				/form[@controlname='dlgNeuerBeleg']/text[@controlname='dfBelegNeu']/text[@accessiblename='Neue Beleg-Nr:']
 			</item>
 			<basepath>
 				/form[@controlname='dlgNeuerBeleg']

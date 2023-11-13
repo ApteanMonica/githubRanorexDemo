@@ -273,6 +273,12 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="117a22dc-4af2-4ec2-ab27-bf42677b4409"
+			name="Close_B_EXOPS"
+			ref="c094dd1c-e2c7-41b1-af19-fb81ca3f8b75"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="1452ce65-a8bb-4bfa-a107-635dc10ffdc7"
 			name="B_BUAB_verbuchte_Belege_pruefen_Periode_UVA_Datum"
 			ref="9ab18750-e993-4b50-80f8-cb32bf713788"
@@ -481,7 +487,7 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Inhalt_Buchungsdatum_Zeile1"
+					dataname="Startfile"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
 					variableid="433ce59f-3802-446a-8f58-d73092ec6e7e"
 					variablename="Startfile">
@@ -491,6 +497,20 @@
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
 					variableid="e23f9c38-642c-43be-ad34-728b88ac6933"
 					variablename="Programm_2">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="56e2de58-637e-45fa-b4ce-bec6a032be64"
+			name="B_EXOPS_Einschraenkungen_B_EXOPV_004"
+			ref="80b2c675-7c5f-4008-9269-1ce0dc94775e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Stapel_Herkunft"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="fee22312-abd3-48a6-98dd-bd578b94fb55"
+					variablename="Stapel_Herkunft">
 					</var>
 				</databinding>
 			</testmodule>
@@ -518,6 +538,26 @@
 			id="6500fa25-202f-42db-b1e8-ce5948044d6f"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="67f29ec7-91d5-468b-a5c1-a2c84315deb7"
+			name="Start_B_EXOPS"
+			ref="03755093-1b36-4ede-83a7-a49e597b4047"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="433ce59f-3802-446a-8f58-d73092ec6e7e"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_2"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="e23f9c38-642c-43be-ad34-728b88ac6933"
+					variablename="Programm_2">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="68a01840-1177-46bc-ab45-6e4b97f1fdf7"
 			name="Pruefen_Protokolldatei_kontrollieren"
@@ -660,20 +700,10 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="866b963c-871f-4999-91b8-ed3dd05ede02"
-			name="B_EXOPS_Einschraenkungen_B_EXOPV_004_neu_laden"
-			ref="7901477e-29d3-4acd-bdeb-9355f291447d"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Stapel_Herkunft"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="74deaf58-fee0-43e2-bf88-a3b4528de2fe"
-					variablename="Stapel_Herkunft">
-					</var>
-				</databinding>
-			</testmodule>
+			<setup
+			id="843424ec-f1c1-44a5-9589-dc770d7f4db2"
+			name="setup">
+			</setup>
 			<setup
 			id="870870e5-5d0e-4529-bc82-4adba02b4c50"
 			name="setup">
@@ -817,6 +847,10 @@
 			id="c694f805-22e2-418f-9e40-651fb1fa8e9d"
 			name="setup">
 			</setup>
+			<teardown
+			id="cfc402a8-4b6c-4b35-bd84-165503ce2ca1"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="d2feecd0-3b66-4975-8a21-505432175877"
 			name="Pruefen_Meldungen_ER_01_Peri_UVA_ablehnen"
@@ -1061,52 +1095,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Beleg6"
+					dataname="Jahr"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="e602e2b3-9a38-447b-8377-296cf83fe0db"
-					variablename="Beleg6">
-					</var>
-					<var
-					dataname="Beleg5"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="c7fe6f20-6d4b-45d8-b4a9-82ac1d3233a6"
-					variablename="Beleg5">
-					</var>
-					<var
-					dataname="Beleg4"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="d3807d43-f6fe-40af-8972-979302147aea"
-					variablename="Beleg4">
-					</var>
-					<var
-					dataname="Beleg3"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="d0e24792-3918-41e6-a4e0-0cf46236b74b"
-					variablename="Beleg3">
-					</var>
-					<var
-					dataname="Beleg2"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="0d35a6a6-abbb-4cae-851c-382c17a3c246"
-					variablename="Beleg2">
-					</var>
-					<var
-					dataname="Beleg1"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="baa05979-5cbb-49d4-ab50-35c706fadb7c"
-					variablename="Beleg1">
-					</var>
-					<var
-					dataname="Periode_7_geschlossen"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="6f2761fa-fbe1-47cb-8885-7e5fad7ef05a"
-					variablename="Periode_7_geschlossen">
-					</var>
-					<var
-					dataname="Periode_5_geschlossen"
-					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="439a5b97-97d7-4409-9088-0d16ca120209"
-					variablename="Periode_5_geschlossen">
+					variableid="5399806f-98eb-4b94-af3e-e53ce6476e4f"
+					variablename="Jahr">
 					</var>
 					<var
 					dataname="Periode_6_offen"
@@ -1115,10 +1107,52 @@
 					variablename="Periode_6_offen">
 					</var>
 					<var
-					dataname="Jahr"
+					dataname="Periode_5_geschlossen"
 					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
-					variableid="5399806f-98eb-4b94-af3e-e53ce6476e4f"
-					variablename="Jahr">
+					variableid="439a5b97-97d7-4409-9088-0d16ca120209"
+					variablename="Periode_5_geschlossen">
+					</var>
+					<var
+					dataname="Periode_7_geschlossen"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="6f2761fa-fbe1-47cb-8885-7e5fad7ef05a"
+					variablename="Periode_7_geschlossen">
+					</var>
+					<var
+					dataname="Beleg1"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="baa05979-5cbb-49d4-ab50-35c706fadb7c"
+					variablename="Beleg1">
+					</var>
+					<var
+					dataname="Beleg2"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="0d35a6a6-abbb-4cae-851c-382c17a3c246"
+					variablename="Beleg2">
+					</var>
+					<var
+					dataname="Beleg3"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="d0e24792-3918-41e6-a4e0-0cf46236b74b"
+					variablename="Beleg3">
+					</var>
+					<var
+					dataname="Beleg4"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="d3807d43-f6fe-40af-8972-979302147aea"
+					variablename="Beleg4">
+					</var>
+					<var
+					dataname="Beleg5"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="c7fe6f20-6d4b-45d8-b4a9-82ac1d3233a6"
+					variablename="Beleg5">
+					</var>
+					<var
+					dataname="Beleg6"
+					datasourceid="0e6f1a63-a49f-4863-9f9a-50900f7bc507"
+					variableid="e602e2b3-9a38-447b-8377-296cf83fe0db"
+					variablename="Beleg6">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1153,6 +1187,14 @@
 						id="fde998b5-c56f-489a-bfcf-ae7238bfc22d"
 						name="B_EXOPS_Belege_pruefen_vor_Pruefung_Verbuchung">
 						</testmodule>
+						<teardown
+						id="cfc402a8-4b6c-4b35-bd84-165503ce2ca1"
+						name="teardown">
+							<testmodule
+							id="117a22dc-4af2-4ec2-ab27-bf42677b4409"
+							name="Close_B_EXOPS">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="d7d5ff55-b160-4fe6-88d9-4b0f7f1d2093"
@@ -1217,9 +1259,17 @@
 					<testcase
 					id="1a6889db-0d53-4c06-9392-e3d8fa6785f0"
 					name="B_EXOPS_Status_prüfen_und_auf_N_zurücksetzen">
+						<setup
+						id="843424ec-f1c1-44a5-9589-dc770d7f4db2"
+						name="setup">
+							<testmodule
+							id="67f29ec7-91d5-468b-a5c1-a2c84315deb7"
+							name="Start_B_EXOPS">
+							</testmodule>
+						</setup>
 						<testmodule
-						id="866b963c-871f-4999-91b8-ed3dd05ede02"
-						name="B_EXOPS_Einschraenkungen_B_EXOPV_004_neu_laden">
+						id="56e2de58-637e-45fa-b4ce-bec6a032be64"
+						name="B_EXOPS_Einschraenkungen_B_EXOPV_004">
 						</testmodule>
 						<testmodule
 						id="7aeff25b-c37b-41f0-a359-208a102e88fa"

@@ -133,10 +133,9 @@ namespace B_BUAB_002
             B_BUAB_002RepositoryFolders.FlexGrid_TabelleFolder _flexgrid_tabelle;
             RepoItemInfo _titlebar100buchungenanzeigenInfo;
             RepoItemInfo _pbdataaccessloadInfo;
-            RepoItemInfo _belegInfo;
-            RepoItemInfo _row1column0Info;
             RepoItemInfo _pbextrasstornierenInfo;
             RepoItemInfo _pbdataaccessnewInfo;
+            RepoItemInfo _belegInfo;
 
             /// <summary>
             /// Creates a new TblB  folder.
@@ -147,10 +146,9 @@ namespace B_BUAB_002
                 _flexgrid_tabelle = new B_BUAB_002RepositoryFolders.FlexGrid_TabelleFolder(this);
                 _titlebar100buchungenanzeigenInfo = new RepoItemInfo(this, "TitleBar100BuchungenAnzeigen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "23d47c03-e7f7-4d8f-bccb-82ad865608bb");
                 _pbdataaccessloadInfo = new RepoItemInfo(this, "PbDataAccessLoad", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']", "", 30000, null, "31ca8244-046b-4014-ba0f-452b18d63804");
-                _belegInfo = new RepoItemInfo(this, "Beleg", "container[@controlname='ToolBar']/container[@controlname='cDCC_Tools']/text[@controlname='dfBelegnr']/text[@accessiblename='Beleg']", "", 30000, null, "93a4caa0-051b-4187-a3d5-1737dee68c92");
-                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "38df31f9-7b9b-45b5-b06b-c3eecc9b7724");
                 _pbextrasstornierenInfo = new RepoItemInfo(this, "PbExtrasStornieren", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbExtras_Stornieren']", "", 30000, null, "73758393-d7d3-488a-8d0b-6dec7183400f");
                 _pbdataaccessnewInfo = new RepoItemInfo(this, "PbDataAccessNew", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_New']", "", 30000, null, "4f506e7a-b1af-4a78-87ac-2102760eac55");
+                _belegInfo = new RepoItemInfo(this, "Beleg", "container[@controlname='ToolBar']/container[@controlname='cDCC_Tools']/text[@controlname='dfBelegnr']/text[@accessiblename='Beleg']", "", 30000, null, "93a4caa0-051b-4187-a3d5-1737dee68c92");
             }
 
             /// <summary>
@@ -226,54 +224,6 @@ namespace B_BUAB_002
             }
 
             /// <summary>
-            /// The Beleg item.
-            /// </summary>
-            [RepositoryItem("93a4caa0-051b-4187-a3d5-1737dee68c92")]
-            public virtual Ranorex.Text Beleg
-            {
-                get
-                {
-                    return _belegInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Beleg item info.
-            /// </summary>
-            [RepositoryItemInfo("93a4caa0-051b-4187-a3d5-1737dee68c92")]
-            public virtual RepoItemInfo BelegInfo
-            {
-                get
-                {
-                    return _belegInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Row1Column0 item.
-            /// </summary>
-            [RepositoryItem("38df31f9-7b9b-45b5-b06b-c3eecc9b7724")]
-            public virtual Ranorex.Cell Row1Column0
-            {
-                get
-                {
-                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Row1Column0 item info.
-            /// </summary>
-            [RepositoryItemInfo("38df31f9-7b9b-45b5-b06b-c3eecc9b7724")]
-            public virtual RepoItemInfo Row1Column0Info
-            {
-                get
-                {
-                    return _row1column0Info;
-                }
-            }
-
-            /// <summary>
             /// The PbExtrasStornieren item.
             /// </summary>
             [RepositoryItem("73758393-d7d3-488a-8d0b-6dec7183400f")]
@@ -322,6 +272,30 @@ namespace B_BUAB_002
             }
 
             /// <summary>
+            /// The Beleg item.
+            /// </summary>
+            [RepositoryItem("93a4caa0-051b-4187-a3d5-1737dee68c92")]
+            public virtual Ranorex.Text Beleg
+            {
+                get
+                {
+                    return _belegInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Beleg item info.
+            /// </summary>
+            [RepositoryItemInfo("93a4caa0-051b-4187-a3d5-1737dee68c92")]
+            public virtual RepoItemInfo BelegInfo
+            {
+                get
+                {
+                    return _belegInfo;
+                }
+            }
+
+            /// <summary>
             /// The FlexGrid_Tabelle folder.
             /// </summary>
             [RepositoryFolder("21b20855-e93f-4e59-bfc0-5e42025ff61c")]
@@ -338,6 +312,7 @@ namespace B_BUAB_002
         public partial class FlexGrid_TabelleFolder : RepoGenBaseFolder
         {
             RepoItemInfo _row1Info;
+            RepoItemInfo _row1column0Info;
             RepoItemInfo _colbelegnrrow1Info;
             RepoItemInfo _colbusadtstoloerow1Info;
             RepoItemInfo _coltyprow1Info;
@@ -354,6 +329,7 @@ namespace B_BUAB_002
                     base("FlexGrid_Tabelle", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "21b20855-e93f-4e59-bfc0-5e42025ff61c", "")
             {
                 _row1Info = new RepoItemInfo(this, "Row1", "row[@accessiblename='Row 1']", "", 30000, null, "e835eba7-e0f7-4c9d-8d36-aa7eab1109ad");
+                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "38df31f9-7b9b-45b5-b06b-c3eecc9b7724");
                 _colbelegnrrow1Info = new RepoItemInfo(this, "ColBelegnrRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colBelegnr Row 1']", "", 30000, null, "89af800a-2032-45b1-a038-e0483d741226");
                 _colbusadtstoloerow1Info = new RepoItemInfo(this, "ColBusaDtstoloeRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colBusa_dtstoloe Row 1']", "", 30000, null, "3b58654c-52d5-4f65-8a28-dbde2246cb12");
                 _coltyprow1Info = new RepoItemInfo(this, "ColTypRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colTyp Row 1']", "", 30000, null, "7f657fbb-a76a-4750-b899-9e441efe7597");
@@ -409,6 +385,30 @@ namespace B_BUAB_002
                 get
                 {
                     return _row1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item.
+            /// </summary>
+            [RepositoryItem("38df31f9-7b9b-45b5-b06b-c3eecc9b7724")]
+            public virtual Ranorex.Cell Row1Column0
+            {
+                get
+                {
+                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("38df31f9-7b9b-45b5-b06b-c3eecc9b7724")]
+            public virtual RepoItemInfo Row1Column0Info
+            {
+                get
+                {
+                    return _row1column0Info;
                 }
             }
 
@@ -677,12 +677,12 @@ namespace B_BUAB_002
         [RepositoryFolder("256c0eeb-e971-423c-8425-c90060b4d4b2")]
         public partial class Fenster_StornobelegAppFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _stornoInfo;
             RepoItemInfo _pbokInfo;
             RepoItemInfo _jahrInfo;
             RepoItemInfo _monatInfo;
             RepoItemInfo _uva_jahrInfo;
             RepoItemInfo _uva_monatInfo;
-            RepoItemInfo _stornoInfo;
             RepoItemInfo _neuebelegnrInfo;
 
             /// <summary>
@@ -691,13 +691,13 @@ namespace B_BUAB_002
             public Fenster_StornobelegAppFolder(RepoGenBaseFolder parentFolder) :
                     base("Fenster_Stornobeleg", "/form[@controlname='dlgNeuerBeleg']", parentFolder, 30000, null, true, "256c0eeb-e971-423c-8425-c90060b4d4b2", "")
             {
-                _pbokInfo = new RepoItemInfo(this, "PbOK", "button[@controlname='pbOK']", "", 30000, null, "734da529-159f-4e07-951f-decfbe6ebbe4");
-                _jahrInfo = new RepoItemInfo(this, "Jahr", "?/?/text[@accessiblename='Monat']", "", 30000, null, "018ce126-5d9d-42d8-94d2-7bef4a80b3b5");
-                _monatInfo = new RepoItemInfo(this, "Monat", "text[@controlname='dfPeriodeJ']/text[@accessiblerole='Text']", "", 30000, null, "0ca9ecfe-e182-47fc-8154-25a8e29d3e36");
-                _uva_jahrInfo = new RepoItemInfo(this, "UVA_Jahr", "text[@controlname='dfUvajahr']", "", 30000, null, "edfc520b-b56f-44ef-ad99-0d9c68d386fb");
-                _uva_monatInfo = new RepoItemInfo(this, "UVA_Monat", "text[@controlname='dfUvamonat']/text[@accessiblerole='Text']", "", 30000, null, "3de7c222-1489-4e10-b957-6f51494bdb6f");
                 _stornoInfo = new RepoItemInfo(this, "Storno", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "1a7423b2-37e4-4c9b-add6-57c14e4f38a8");
-                _neuebelegnrInfo = new RepoItemInfo(this, "NeueBelegNr", "?/?/text[@accessiblename='Neue Beleg-Nr:']", "", 30000, null, "94b60762-dbd9-4b4b-b6f6-195fe559c96b");
+                _pbokInfo = new RepoItemInfo(this, "PbOK", "button[@controlname='pbOK']", "", 30000, null, "734da529-159f-4e07-951f-decfbe6ebbe4");
+                _jahrInfo = new RepoItemInfo(this, "Jahr", "text[@controlname='dfJahrbezJ']/text[@accessiblename='Monat']", "", 30000, null, "018ce126-5d9d-42d8-94d2-7bef4a80b3b5");
+                _monatInfo = new RepoItemInfo(this, "Monat", "text[@controlname='dfPeriodeJ']/text[@accessiblerole='Text']", "", 30000, null, "0ca9ecfe-e182-47fc-8154-25a8e29d3e36");
+                _uva_jahrInfo = new RepoItemInfo(this, "UVA_Jahr", "text[@controlname='dfUvajahr']/button[@accessiblename='UVA-Termin']", "", 30000, null, "edfc520b-b56f-44ef-ad99-0d9c68d386fb");
+                _uva_monatInfo = new RepoItemInfo(this, "UVA_Monat", "text[@controlname='dfUvamonat']/text[@accessiblerole='Text']", "", 30000, null, "3de7c222-1489-4e10-b957-6f51494bdb6f");
+                _neuebelegnrInfo = new RepoItemInfo(this, "NeueBelegNr", "text[@controlname='dfBelegNeu']/text[@accessiblename='Neue Beleg-Nr:']", "", 30000, null, "94b60762-dbd9-4b4b-b6f6-195fe559c96b");
             }
 
             /// <summary>
@@ -721,6 +721,30 @@ namespace B_BUAB_002
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Storno item.
+            /// </summary>
+            [RepositoryItem("1a7423b2-37e4-4c9b-add6-57c14e4f38a8")]
+            public virtual Ranorex.TitleBar Storno
+            {
+                get
+                {
+                    return _stornoInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Storno item info.
+            /// </summary>
+            [RepositoryItemInfo("1a7423b2-37e4-4c9b-add6-57c14e4f38a8")]
+            public virtual RepoItemInfo StornoInfo
+            {
+                get
+                {
+                    return _stornoInfo;
                 }
             }
 
@@ -800,11 +824,11 @@ namespace B_BUAB_002
             /// The UVA_Jahr item.
             /// </summary>
             [RepositoryItem("edfc520b-b56f-44ef-ad99-0d9c68d386fb")]
-            public virtual Ranorex.Text UVA_Jahr
+            public virtual Ranorex.Button UVA_Jahr
             {
                 get
                 {
-                    return _uva_jahrInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _uva_jahrInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
@@ -841,30 +865,6 @@ namespace B_BUAB_002
                 get
                 {
                     return _uva_monatInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Storno item.
-            /// </summary>
-            [RepositoryItem("1a7423b2-37e4-4c9b-add6-57c14e4f38a8")]
-            public virtual Ranorex.TitleBar Storno
-            {
-                get
-                {
-                    return _stornoInfo.CreateAdapter<Ranorex.TitleBar>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Storno item info.
-            /// </summary>
-            [RepositoryItemInfo("1a7423b2-37e4-4c9b-add6-57c14e4f38a8")]
-            public virtual RepoItemInfo StornoInfo
-            {
-                get
-                {
-                    return _stornoInfo;
                 }
             }
 

@@ -91,34 +91,40 @@ namespace B_BUAB_003.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbExtrasAendern' at CenterRight.", repo.TblB.PbExtrasAendernInfo, new RecordItemIndex(3));
             repo.TblB.PbExtrasAendern.Click(Location.CenterRight);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBUAB.BelegAendern' at Center.", repo.BBUAB.BelegAendernInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'BBUAB.BelegAendern'", repo.BBUAB.BelegAendernInfo, new ActionTimeout(30000), new RecordItemIndex(4));
+            repo.BBUAB.BelegAendernInfo.WaitForExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBUAB.BelegAendern' at Center.", repo.BBUAB.BelegAendernInfo, new RecordItemIndex(5));
             repo.BBUAB.BelegAendern.Click();
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '15.12.2019' on item 'DlgAEndern.DfDtBeleg'.", repo.DlgAEndern.DfDtBelegInfo, new RecordItemIndex(5));
-            repo.DlgAEndern.DfDtBeleg.Element.SetAttributeValue("Text", "15.12.2019");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgAEndern.TitleBar100BelegAEnderungen'", repo.DlgAEndern.TitleBar100BelegAEnderungenInfo, new ActionTimeout(60000), new RecordItemIndex(6));
+            repo.DlgAEndern.TitleBar100BelegAEnderungenInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '11' on item 'DlgAEndern.DfBusaPeriN'.", repo.DlgAEndern.DfBusaPeriNInfo, new RecordItemIndex(6));
-            repo.DlgAEndern.DfBusaPeriN.Element.SetAttributeValue("Text", "11");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '15.12.2019' on item 'DlgAEndern.Text_DTBeleg'.", repo.DlgAEndern.Text_DTBelegInfo, new RecordItemIndex(7));
+            repo.DlgAEndern.Text_DTBeleg.Element.SetAttributeValue("Text", "15.12.2019");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgAEndern.PbOK' at Center.", repo.DlgAEndern.PbOKInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '11' on item 'DlgAEndern.Text_Buchungsperiode'.", repo.DlgAEndern.Text_BuchungsperiodeInfo, new RecordItemIndex(8));
+            repo.DlgAEndern.Text_Buchungsperiode.Element.SetAttributeValue("Text", "11");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgAEndern.PbOK' at Center.", repo.DlgAEndern.PbOKInfo, new RecordItemIndex(9));
             repo.DlgAEndern.PbOK.Click();
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to 'BAÄ%' on item 'TblB.Beleg'.", repo.TblB.BelegInfo, new RecordItemIndex(8));
-            repo.TblB.Beleg.Element.SetAttributeValue("Text", "BAÄ%");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to 'BAÄ%' on item 'TblB.Einschraenkungen.Beleg'.", repo.TblB.Einschraenkungen.BelegInfo, new RecordItemIndex(10));
+            repo.TblB.Einschraenkungen.Beleg.Element.SetAttributeValue("Text", "BAÄ%");
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '15.12.2019' on item 'TblB.DfDatumvon'.", repo.TblB.DfDatumvonInfo, new RecordItemIndex(9));
-            repo.TblB.DfDatumvon.Element.SetAttributeValue("Text", "15.12.2019");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '15.12.2019' on item 'TblB.Einschraenkungen.Datum_von'.", repo.TblB.Einschraenkungen.Datum_vonInfo, new RecordItemIndex(11));
+            repo.TblB.Einschraenkungen.Datum_von.Element.SetAttributeValue("Text", "15.12.2019");
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '15.12.2019' on item 'TblB.DfDatumbis'.", repo.TblB.DfDatumbisInfo, new RecordItemIndex(10));
-            repo.TblB.DfDatumbis.Element.SetAttributeValue("Text", "15.12.2019");
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '15.12.2019' on item 'TblB.Einschraenkungen.TextBis_Datum_bis'.", repo.TblB.Einschraenkungen.TextBis_Datum_bisInfo, new RecordItemIndex(12));
+            repo.TblB.Einschraenkungen.TextBis_Datum_bis.Element.SetAttributeValue("Text", "15.12.2019");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(13));
             repo.TblB.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='15.12.2019') on item 'TblB.FlexGrid_Tabelle.ColDatumRow1'.", repo.TblB.FlexGrid_Tabelle.ColDatumRow1Info, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='15.12.2019') on item 'TblB.FlexGrid_Tabelle.ColDatumRow1'.", repo.TblB.FlexGrid_Tabelle.ColDatumRow1Info, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColDatumRow1Info, "Text", "15.12.2019");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='11.2019') on item 'TblB.FlexGrid_Tabelle.ColJahrPeriRow1'.", repo.TblB.FlexGrid_Tabelle.ColJahrPeriRow1Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='11.2019') on item 'TblB.FlexGrid_Tabelle.ColJahrPeriRow1'.", repo.TblB.FlexGrid_Tabelle.ColJahrPeriRow1Info, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColJahrPeriRow1Info, "Text", "11.2019");
             
         }

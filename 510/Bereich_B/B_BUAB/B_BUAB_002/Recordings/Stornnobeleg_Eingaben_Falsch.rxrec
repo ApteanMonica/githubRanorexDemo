@@ -50,6 +50,26 @@ mode="Global">
 		</var>
 	</variables>
 	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="86722320-0b8e-4440-a5ef-4e57080cb7aa"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1a7423b2-37e4-4c9b-add6-57c14e4f38a8"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgNeuerBeleg']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"

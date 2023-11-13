@@ -24,29 +24,29 @@ namespace B_BUAB_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Stornieren_Beleg recording.
+    ///The Stornieren_Beleg_Meldung recording.
     /// </summary>
     [TestModule("27a2af8b-4017-4347-8fce-2e1d7f7db00c", ModuleType.Recording, 1)]
-    public partial class Stornieren_Beleg : ITestModule
+    public partial class Stornieren_Beleg_Meldung : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BUAB_002.B_BUAB_002Repository repository.
         /// </summary>
         public static global::B_BUAB_002.B_BUAB_002Repository repo = global::B_BUAB_002.B_BUAB_002Repository.Instance;
 
-        static Stornieren_Beleg instance = new Stornieren_Beleg();
+        static Stornieren_Beleg_Meldung instance = new Stornieren_Beleg_Meldung();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Stornieren_Beleg()
+        public Stornieren_Beleg_Meldung()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Stornieren_Beleg Instance
+        public static Stornieren_Beleg_Meldung Instance
         {
             get { return instance; }
         }
@@ -79,19 +79,25 @@ namespace B_BUAB_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.Row1Column0' at Center.", repo.TblB.Row1Column0Info, new RecordItemIndex(0));
-            repo.TblB.Row1Column0.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.FlexGrid_Tabelle.Row1Column0' at Center.", repo.TblB.FlexGrid_Tabelle.Row1Column0Info, new RecordItemIndex(0));
+            repo.TblB.FlexGrid_Tabelle.Row1Column0.Click();
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbExtrasStornieren' at CenterRight.", repo.TblB.PbExtrasStornierenInfo, new RecordItemIndex(1));
             repo.TblB.PbExtrasStornieren.Click(Location.CenterRight);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBUAB.Stornieren' at Center.", repo.BBUAB.StornierenInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'BBUAB.Stornieren'", repo.BBUAB.StornierenInfo, new ActionTimeout(30000), new RecordItemIndex(2));
+            repo.BBUAB.StornierenInfo.WaitForExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBUAB.Stornieren' at Center.", repo.BBUAB.StornierenInfo, new RecordItemIndex(3));
             repo.BBUAB.Stornieren.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Stornieren') on item 'DlgMessageBox.Stornieren'.", repo.DlgMessageBox.StornierenInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'BBUAB.Stornieren'", repo.BBUAB.StornierenInfo, new ActionTimeout(30000), new RecordItemIndex(4));
+            repo.BBUAB.StornierenInfo.WaitForExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Stornieren') on item 'DlgMessageBox.Stornieren'.", repo.DlgMessageBox.StornierenInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.DlgMessageBox.StornierenInfo, "Text", "Stornieren");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(6));
             repo.DlgMessageBox.Button0.Click();
             
         }

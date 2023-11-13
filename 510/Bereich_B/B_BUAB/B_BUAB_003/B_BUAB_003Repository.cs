@@ -118,14 +118,12 @@ namespace B_BUAB_003
         [RepositoryFolder("45a2433c-1cfd-4442-8038-709b6a7463c6")]
         public partial class TblBAppFolder : RepoGenBaseFolder
         {
+            B_BUAB_003RepositoryFolders.EinschraenkungenFolder _einschraenkungen;
             B_BUAB_003RepositoryFolders.FlexGrid_TabelleFolder _flexgrid_tabelle;
             RepoItemInfo _titlebar100buchungenanzeigenInfo;
+            RepoItemInfo _pbdataaccesssaveInfo;
             RepoItemInfo _pbdataaccessloadInfo;
             RepoItemInfo _pbextrasaendernInfo;
-            RepoItemInfo _belegInfo;
-            RepoItemInfo _dfdatumvonInfo;
-            RepoItemInfo _dfdatumbisInfo;
-            RepoItemInfo _pbdataaccesssaveInfo;
 
             /// <summary>
             /// Creates a new TblB  folder.
@@ -133,14 +131,12 @@ namespace B_BUAB_003
             public TblBAppFolder(RepoGenBaseFolder parentFolder) :
                     base("TblB", "/form[@controlname='tblB']", parentFolder, 30000, null, true, "45a2433c-1cfd-4442-8038-709b6a7463c6", "")
             {
+                _einschraenkungen = new B_BUAB_003RepositoryFolders.EinschraenkungenFolder(this);
                 _flexgrid_tabelle = new B_BUAB_003RepositoryFolders.FlexGrid_TabelleFolder(this);
                 _titlebar100buchungenanzeigenInfo = new RepoItemInfo(this, "TitleBar100BuchungenAnzeigen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "4ff90fcb-056b-4370-b116-25187a5e0238");
+                _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Save']", "", 30000, null, "b7a3a073-6976-4e8b-93ef-d13cc1adea4e");
                 _pbdataaccessloadInfo = new RepoItemInfo(this, "PbDataAccessLoad", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']", "", 30000, null, "e0dcbdcc-608c-4124-a46f-03f5e1e37d7a");
                 _pbextrasaendernInfo = new RepoItemInfo(this, "PbExtrasAendern", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbExtras_Aendern']", "", 30000, null, "1abd0e86-e6b1-4e8a-8d90-f1bfccda8b8c");
-                _belegInfo = new RepoItemInfo(this, "Beleg", "container[@controlname='ToolBar']/container[@controlname='cDCC_Tools']/text[@controlname='dfBelegnr']/text[@accessiblename='Beleg']", "", 30000, null, "13f59f7a-4cef-4551-b346-4dd8af7d351b");
-                _dfdatumvonInfo = new RepoItemInfo(this, "DfDatumvon", "container[@controlname='ToolBar']/?/?/text[@controlname='dfDatumvon']", "", 30000, null, "1af64707-1675-4dd4-8fd1-bd45bccb994a");
-                _dfdatumbisInfo = new RepoItemInfo(this, "DfDatumbis", "container[@controlname='ToolBar']/?/?/text[@controlname='dfDatumbis']", "", 30000, null, "e4db4d02-b1d2-433c-ae43-6666f62a18e9");
-                _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Save']", "", 30000, null, "b7a3a073-6976-4e8b-93ef-d13cc1adea4e");
             }
 
             /// <summary>
@@ -188,6 +184,30 @@ namespace B_BUAB_003
                 get
                 {
                     return _titlebar100buchungenanzeigenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessSave item.
+            /// </summary>
+            [RepositoryItem("b7a3a073-6976-4e8b-93ef-d13cc1adea4e")]
+            public virtual Ranorex.Button PbDataAccessSave
+            {
+                get
+                {
+                    return _pbdataaccesssaveInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessSave item info.
+            /// </summary>
+            [RepositoryItemInfo("b7a3a073-6976-4e8b-93ef-d13cc1adea4e")]
+            public virtual RepoItemInfo PbDataAccessSaveInfo
+            {
+                get
+                {
+                    return _pbdataaccesssaveInfo;
                 }
             }
 
@@ -240,6 +260,118 @@ namespace B_BUAB_003
             }
 
             /// <summary>
+            /// The Einschraenkungen folder.
+            /// </summary>
+            [RepositoryFolder("367e96b5-a00a-4636-8243-3f5dc54c697c")]
+            public virtual B_BUAB_003RepositoryFolders.EinschraenkungenFolder Einschraenkungen
+            {
+                get { return _einschraenkungen; }
+            }
+
+            /// <summary>
+            /// The FlexGrid_Tabelle folder.
+            /// </summary>
+            [RepositoryFolder("4aeb30a3-2b20-4c6d-99fe-f0d6f2cc132c")]
+            public virtual B_BUAB_003RepositoryFolders.FlexGrid_TabelleFolder FlexGrid_Tabelle
+            {
+                get { return _flexgrid_tabelle; }
+            }
+        }
+
+        /// <summary>
+        /// The EinschraenkungenFolder folder.
+        /// </summary>
+        [RepositoryFolder("367e96b5-a00a-4636-8243-3f5dc54c697c")]
+        public partial class EinschraenkungenFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _datum_vonInfo;
+            RepoItemInfo _textbis_datum_bisInfo;
+            RepoItemInfo _belegInfo;
+
+            /// <summary>
+            /// Creates a new Einschraenkungen  folder.
+            /// </summary>
+            public EinschraenkungenFolder(RepoGenBaseFolder parentFolder) :
+                    base("Einschraenkungen", "container[@controlname='ToolBar']/container[@controlname='cDCC_Tools']", parentFolder, 30000, null, false, "367e96b5-a00a-4636-8243-3f5dc54c697c", "")
+            {
+                _datum_vonInfo = new RepoItemInfo(this, "Datum_von", "text[@controlname='dfDatumvon']/text[@accessiblename='Datum']", "", 30000, null, "62c53bd7-32eb-4356-937a-49925d5af81b");
+                _textbis_datum_bisInfo = new RepoItemInfo(this, "TextBis_Datum_bis", "text[@controlname='dfDatumbis']/text[@accessiblename='bis']", "", 30000, null, "224f7f6c-fddc-4a7b-93c8-4da4f963a997");
+                _belegInfo = new RepoItemInfo(this, "Beleg", "text[@controlname='dfBelegnr']/text[@accessiblename='Beleg']", "", 30000, null, "13f59f7a-4cef-4551-b346-4dd8af7d351b");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("367e96b5-a00a-4636-8243-3f5dc54c697c")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("367e96b5-a00a-4636-8243-3f5dc54c697c")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Datum_von item.
+            /// </summary>
+            [RepositoryItem("62c53bd7-32eb-4356-937a-49925d5af81b")]
+            public virtual Ranorex.Text Datum_von
+            {
+                get
+                {
+                    return _datum_vonInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Datum_von item info.
+            /// </summary>
+            [RepositoryItemInfo("62c53bd7-32eb-4356-937a-49925d5af81b")]
+            public virtual RepoItemInfo Datum_vonInfo
+            {
+                get
+                {
+                    return _datum_vonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TextBis_Datum_bis item.
+            /// </summary>
+            [RepositoryItem("224f7f6c-fddc-4a7b-93c8-4da4f963a997")]
+            public virtual Ranorex.Text TextBis_Datum_bis
+            {
+                get
+                {
+                    return _textbis_datum_bisInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextBis_Datum_bis item info.
+            /// </summary>
+            [RepositoryItemInfo("224f7f6c-fddc-4a7b-93c8-4da4f963a997")]
+            public virtual RepoItemInfo TextBis_Datum_bisInfo
+            {
+                get
+                {
+                    return _textbis_datum_bisInfo;
+                }
+            }
+
+            /// <summary>
             /// The Beleg item.
             /// </summary>
             [RepositoryItem("13f59f7a-4cef-4551-b346-4dd8af7d351b")]
@@ -261,87 +393,6 @@ namespace B_BUAB_003
                 {
                     return _belegInfo;
                 }
-            }
-
-            /// <summary>
-            /// The DfDatumvon item.
-            /// </summary>
-            [RepositoryItem("1af64707-1675-4dd4-8fd1-bd45bccb994a")]
-            public virtual Ranorex.Text DfDatumvon
-            {
-                get
-                {
-                    return _dfdatumvonInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The DfDatumvon item info.
-            /// </summary>
-            [RepositoryItemInfo("1af64707-1675-4dd4-8fd1-bd45bccb994a")]
-            public virtual RepoItemInfo DfDatumvonInfo
-            {
-                get
-                {
-                    return _dfdatumvonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The DfDatumbis item.
-            /// </summary>
-            [RepositoryItem("e4db4d02-b1d2-433c-ae43-6666f62a18e9")]
-            public virtual Ranorex.Text DfDatumbis
-            {
-                get
-                {
-                    return _dfdatumbisInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The DfDatumbis item info.
-            /// </summary>
-            [RepositoryItemInfo("e4db4d02-b1d2-433c-ae43-6666f62a18e9")]
-            public virtual RepoItemInfo DfDatumbisInfo
-            {
-                get
-                {
-                    return _dfdatumbisInfo;
-                }
-            }
-
-            /// <summary>
-            /// The PbDataAccessSave item.
-            /// </summary>
-            [RepositoryItem("b7a3a073-6976-4e8b-93ef-d13cc1adea4e")]
-            public virtual Ranorex.Button PbDataAccessSave
-            {
-                get
-                {
-                    return _pbdataaccesssaveInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PbDataAccessSave item info.
-            /// </summary>
-            [RepositoryItemInfo("b7a3a073-6976-4e8b-93ef-d13cc1adea4e")]
-            public virtual RepoItemInfo PbDataAccessSaveInfo
-            {
-                get
-                {
-                    return _pbdataaccesssaveInfo;
-                }
-            }
-
-            /// <summary>
-            /// The FlexGrid_Tabelle folder.
-            /// </summary>
-            [RepositoryFolder("4aeb30a3-2b20-4c6d-99fe-f0d6f2cc132c")]
-            public virtual B_BUAB_003RepositoryFolders.FlexGrid_TabelleFolder FlexGrid_Tabelle
-            {
-                get { return _flexgrid_tabelle; }
             }
         }
 
@@ -836,12 +887,14 @@ namespace B_BUAB_003
         public partial class DlgAEndernAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _titlebar100belegaenderungenInfo;
+            RepoItemInfo _pbokInfo;
             RepoItemInfo _dfbusauvajahrInfo;
             RepoItemInfo _dfbusauvamonatInfo;
             RepoItemInfo _dfbusajahrnInfo;
             RepoItemInfo _dfbusaperinInfo;
-            RepoItemInfo _pbokInfo;
+            RepoItemInfo _text_buchungsperiodeInfo;
             RepoItemInfo _dfdtbelegInfo;
+            RepoItemInfo _text_dtbelegInfo;
 
             /// <summary>
             /// Creates a new DlgAEndern  folder.
@@ -850,12 +903,14 @@ namespace B_BUAB_003
                     base("DlgAEndern", "/form[@controlname='dlgÄndern']", parentFolder, 30000, null, true, "c4450b94-1c67-44ae-a36b-f6ba714224b8", "")
             {
                 _titlebar100belegaenderungenInfo = new RepoItemInfo(this, "TitleBar100BelegAEnderungen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "8fe600da-971c-42ef-be3e-1e544dd6c7db");
+                _pbokInfo = new RepoItemInfo(this, "PbOK", "button[@controlname='pbOK']", "", 30000, null, "5767df49-6b2e-4b70-9990-80cc9fb98e40");
                 _dfbusauvajahrInfo = new RepoItemInfo(this, "DfBusaUvajahr", "text[@controlname='dfBusa_uvajahr']", "", 30000, null, "f4ee1002-bbe0-4acc-b145-f754364d291c");
                 _dfbusauvamonatInfo = new RepoItemInfo(this, "DfBusaUvamonat", "text[@controlname='dfBusa_uvamonat']", "", 30000, null, "61c4d1f2-4d88-4373-b569-72440feed9ac");
                 _dfbusajahrnInfo = new RepoItemInfo(this, "DfBusaJahrN", "text[@controlname='dfBusa_jahrN']", "", 30000, null, "675b0420-e707-46a3-b72d-329709638b2e");
                 _dfbusaperinInfo = new RepoItemInfo(this, "DfBusaPeriN", "text[@controlname='dfBusa_periN']", "", 30000, null, "0711cf28-542a-4d44-ac4a-e668f9a622d7");
-                _pbokInfo = new RepoItemInfo(this, "PbOK", "button[@controlname='pbOK']", "", 30000, null, "5767df49-6b2e-4b70-9990-80cc9fb98e40");
+                _text_buchungsperiodeInfo = new RepoItemInfo(this, "Text_Buchungsperiode", "text[@controlname='dfBusa_periN']/text[@accessiblerole='Text']", "", 30000, null, "58652052-3d75-4d09-bb90-b91eeb10b90c");
                 _dfdtbelegInfo = new RepoItemInfo(this, "DfDtBeleg", "text[@controlname='dfDtBeleg']", "", 30000, null, "e1b684e3-1dd3-4494-a456-f4d54e6724cd");
+                _text_dtbelegInfo = new RepoItemInfo(this, "Text_DTBeleg", "text[@controlname='dfDtBeleg']/text[@accessiblerole='Text']", "", 30000, null, "f30565b1-435e-4244-8e97-53022e3c540e");
             }
 
             /// <summary>
@@ -903,6 +958,30 @@ namespace B_BUAB_003
                 get
                 {
                     return _titlebar100belegaenderungenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbOK item.
+            /// </summary>
+            [RepositoryItem("5767df49-6b2e-4b70-9990-80cc9fb98e40")]
+            public virtual Ranorex.Button PbOK
+            {
+                get
+                {
+                    return _pbokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbOK item info.
+            /// </summary>
+            [RepositoryItemInfo("5767df49-6b2e-4b70-9990-80cc9fb98e40")]
+            public virtual RepoItemInfo PbOKInfo
+            {
+                get
+                {
+                    return _pbokInfo;
                 }
             }
 
@@ -1003,26 +1082,26 @@ namespace B_BUAB_003
             }
 
             /// <summary>
-            /// The PbOK item.
+            /// The Text_Buchungsperiode item.
             /// </summary>
-            [RepositoryItem("5767df49-6b2e-4b70-9990-80cc9fb98e40")]
-            public virtual Ranorex.Button PbOK
+            [RepositoryItem("58652052-3d75-4d09-bb90-b91eeb10b90c")]
+            public virtual Ranorex.Text Text_Buchungsperiode
             {
                 get
                 {
-                    return _pbokInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _text_buchungsperiodeInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The PbOK item info.
+            /// The Text_Buchungsperiode item info.
             /// </summary>
-            [RepositoryItemInfo("5767df49-6b2e-4b70-9990-80cc9fb98e40")]
-            public virtual RepoItemInfo PbOKInfo
+            [RepositoryItemInfo("58652052-3d75-4d09-bb90-b91eeb10b90c")]
+            public virtual RepoItemInfo Text_BuchungsperiodeInfo
             {
                 get
                 {
-                    return _pbokInfo;
+                    return _text_buchungsperiodeInfo;
                 }
             }
 
@@ -1047,6 +1126,30 @@ namespace B_BUAB_003
                 get
                 {
                     return _dfdtbelegInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text_DTBeleg item.
+            /// </summary>
+            [RepositoryItem("f30565b1-435e-4244-8e97-53022e3c540e")]
+            public virtual Ranorex.Text Text_DTBeleg
+            {
+                get
+                {
+                    return _text_dtbelegInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text_DTBeleg item info.
+            /// </summary>
+            [RepositoryItemInfo("f30565b1-435e-4244-8e97-53022e3c540e")]
+            public virtual RepoItemInfo Text_DTBelegInfo
+            {
+                get
+                {
+                    return _text_dtbelegInfo;
                 }
             }
         }

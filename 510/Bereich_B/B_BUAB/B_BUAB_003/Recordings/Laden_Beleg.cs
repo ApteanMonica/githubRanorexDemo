@@ -92,11 +92,11 @@ namespace B_BUAB_003.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.Beleg' at Center.", repo.TblB.BelegInfo, new RecordItemIndex(0));
-            repo.TblB.Beleg.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.Einschraenkungen.Beleg' at Center.", repo.TblB.Einschraenkungen.BelegInfo, new RecordItemIndex(0));
+            repo.TblB.Einschraenkungen.Beleg.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Beleg' with focus on 'TblB.Beleg'.", repo.TblB.BelegInfo, new RecordItemIndex(1));
-            repo.TblB.Beleg.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Beleg' with focus on 'TblB.Einschraenkungen.Beleg'.", repo.TblB.Einschraenkungen.BelegInfo, new RecordItemIndex(1));
+            repo.TblB.Einschraenkungen.Beleg.EnsureVisible();
             Keyboard.Press(Beleg);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(2));
