@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Stornieren_Beleg"
+	classname="Stornieren_Beleg_Meldung"
 	namespace="B_BUAB_002.Recordings">
 	</codegen>
 	<variables>
@@ -4112,6 +4112,26 @@ v5bA3YPHbk+wH4irVocy3HzkkuDt44+Uf5/CrNFABRRRQAUUE4GTn8Bmm+Yvo3/fBoAdRTfMX0b/
 AL4NFAH/2Q==
 			</helperscreenshot>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="f08a7a64-4a0b-44b1-bbbe-c25dd1fd7fb8"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e1f665b7-1048-4dd8-a8c1-019dc033e52d"
+			sourcename="RepositoryEditor">
+				<path>
+					/contextmenu[@processname='B_BUAB']/menuitem[@accessiblename='Stornieren']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4424,6 +4444,26 @@ RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
 ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//9k=
 			</helperscreenshot>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="f08a7a64-4a0b-44b1-bbbe-c25dd1fd7fb8"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e1f665b7-1048-4dd8-a8c1-019dc033e52d"
+			sourcename="RepositoryEditor">
+				<path>
+					/contextmenu[@processname='B_BUAB']/menuitem[@accessiblename='Stornieren']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -4491,7 +4531,7 @@ ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//9k=
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Stornieren_Beleg.UserCode.cs
+		Stornieren_Beleg_Meldung.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

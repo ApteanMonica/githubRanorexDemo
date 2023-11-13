@@ -34,6 +34,17 @@ name="B_BUAB_003Repository">
 			<item
 			addcaps="button,control,nativewindow"
 			capname="button"
+			id="b7a3a073-6976-4e8b-93ef-d13cc1adea4e"
+			name="PbDataAccessSave"
+			refimgid="29a64863-1ab7-4729-92d4-b56c91b6983d"
+			refpath="/form[@controlname='tblB']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblB']/container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Save']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
 			id="e0dcbdcc-608c-4124-a46f-03f5e1e37d7a"
 			name="PbDataAccessLoad"
 			refimgid="234b8669-b503-422a-946f-265a647cbb60"
@@ -51,47 +62,49 @@ name="B_BUAB_003Repository">
 			searchtimeout="30000ms">
 				/form[@controlname='tblB']/container[@controlname='RibbonBar']/?/?/button[@controlname='pbExtras_Aendern']
 			</item>
-			<item
-			addcaps="text,accessible"
-			capname="text"
-			id="13f59f7a-4cef-4551-b346-4dd8af7d351b"
-			name="Beleg"
-			refimgid="16ec60c2-0c09-4282-a9dd-cb185f96ef7f"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblB']/container[@controlname='ToolBar']/container[@controlname='cDCC_Tools']/text[@controlname='dfBelegnr']/text[@accessiblename='Beleg']
-			</item>
-			<item
-			addcaps="text,control,nativewindow"
-			capname="text"
-			id="1af64707-1675-4dd4-8fd1-bd45bccb994a"
-			name="DfDatumvon"
-			refimgid="d2c19433-afe8-4ab3-af95-5dc1830fa38e"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblB']/container[@controlname='ToolBar']/?/?/text[@controlname='dfDatumvon']
-			</item>
-			<item
-			addcaps="text,control,nativewindow"
-			capname="text"
-			id="e4db4d02-b1d2-433c-ae43-6666f62a18e9"
-			name="DfDatumbis"
-			refimgid="ab1d5e0d-b4de-488e-bf1b-73f30bd2954d"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblB']/container[@controlname='ToolBar']/?/?/text[@controlname='dfDatumbis']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="b7a3a073-6976-4e8b-93ef-d13cc1adea4e"
-			name="PbDataAccessSave"
-			refimgid="29a64863-1ab7-4729-92d4-b56c91b6983d"
-			refpath="/form[@controlname='tblB']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblB']/container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Save']
-			</item>
+			<folder
+			capname="container"
+			id="367e96b5-a00a-4636-8243-3f5dc54c697c"
+			isrooted="True"
+			name="Einschraenkungen"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="62c53bd7-32eb-4356-937a-49925d5af81b"
+				name="Datum_von"
+				refimgid="cf55fff3-0dbd-4e5e-90de-4eef81a8ef34"
+				refpath="/form[@controlname='tblB']/container[@controlname='ToolBar']/container[@controlname='cDCC_Tools']/text[@controlname='dfDatumvon']/text[@accessiblename='Datum']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblB']/container[@controlname='ToolBar']/container[@controlname='cDCC_Tools']/text[@controlname='dfDatumvon']/text[@accessiblename='Datum']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="224f7f6c-fddc-4a7b-93c8-4da4f963a997"
+				name="TextBis_Datum_bis"
+				refimgid="471c9773-fce0-4478-8525-34ed1bbb31d7"
+				refpath="/form[@controlname='tblB']/container[@controlname='ToolBar']/container[@controlname='cDCC_Tools']/text[@controlname='dfDatumbis']/text[@accessiblename='bis']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblB']/container[@controlname='ToolBar']/container[@controlname='cDCC_Tools']/text[@controlname='dfDatumbis']/text[@accessiblename='bis']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="13f59f7a-4cef-4551-b346-4dd8af7d351b"
+				name="Beleg"
+				refimgid="16ec60c2-0c09-4282-a9dd-cb185f96ef7f"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblB']/container[@controlname='ToolBar']/container[@controlname='cDCC_Tools']/text[@controlname='dfBelegnr']/text[@accessiblename='Beleg']
+				</item>
+				<basepath>
+					/form[@controlname='tblB']/container[@controlname='ToolBar']/container[@controlname='cDCC_Tools']
+				</basepath>
+			</folder>
 			<folder
 			addcaps="table,accessible"
 			capname="table"
@@ -372,6 +385,17 @@ tT2Rgb2GJ5y0QKkJtOchX/ed3PoAOZWvWJF7ITKQVzfInnOwsznM9lofWypesunQQzZob5Ge1SIH
 				/form[@controlname='dlgÄndern']/titlebar[@accessiblerole='TitleBar']
 			</item>
 			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="5767df49-6b2e-4b70-9990-80cc9fb98e40"
+			name="PbOK"
+			refimgid="e8f61d0a-c41f-4bdc-a719-f48b961a5488"
+			refpath="/form[@controlname='dlgÄndern']/button[@controlname='pbOK']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgÄndern']/button[@controlname='pbOK']
+			</item>
+			<item
 			addcaps="text,control,nativewindow"
 			capname="text"
 			id="f4ee1002-bbe0-4acc-b145-f754364d291c"
@@ -416,15 +440,15 @@ tT2Rgb2GJ5y0QKkJtOchX/ed3PoAOZWvWJF7ITKQVzfInnOwsznM9lofWypesunQQzZob5Ge1SIH
 				/form[@controlname='dlgÄndern']/text[@controlname='dfBusa_periN']
 			</item>
 			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="5767df49-6b2e-4b70-9990-80cc9fb98e40"
-			name="PbOK"
-			refimgid="e8f61d0a-c41f-4bdc-a719-f48b961a5488"
-			refpath="/form[@controlname='dlgÄndern']/button[@controlname='pbOK']"
+			addcaps="text,accessible"
+			capname="text"
+			id="58652052-3d75-4d09-bb90-b91eeb10b90c"
+			name="Text_Buchungsperiode"
+			refimgid="6a25115c-7a84-4330-bbd8-50eaa10b28d5"
+			refpath="/form[@controlname='dlgÄndern']/text[@controlname='dfBusa_periN']/text[@accessiblerole='Text']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='dlgÄndern']/button[@controlname='pbOK']
+				/form[@controlname='dlgÄndern']/text[@controlname='dfBusa_periN']/text[@accessiblerole='Text']
 			</item>
 			<item
 			addcaps="text,control,nativewindow"
@@ -436,6 +460,17 @@ tT2Rgb2GJ5y0QKkJtOchX/ed3PoAOZWvWJF7ITKQVzfInnOwsznM9lofWypesunQQzZob5Ge1SIH
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='dlgÄndern']/text[@controlname='dfDtBeleg']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="f30565b1-435e-4244-8e97-53022e3c540e"
+			name="Text_DTBeleg"
+			refimgid="fc9a1f39-e724-4229-a1d0-29c5f49939b1"
+			refpath="/form[@controlname='dlgÄndern']/text[@controlname='dfDtBeleg']/text[@accessiblerole='Text']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgÄndern']/text[@controlname='dfDtBeleg']/text[@accessiblerole='Text']
 			</item>
 			<basepath>
 				/form[@controlname='dlgÄndern']

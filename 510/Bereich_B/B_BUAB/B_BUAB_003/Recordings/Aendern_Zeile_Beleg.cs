@@ -98,20 +98,23 @@ namespace B_BUAB_003.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbExtrasAendern' at CenterRight.", repo.TblB.PbExtrasAendernInfo, new RecordItemIndex(1));
             repo.TblB.PbExtrasAendern.Click(Location.CenterRight);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBUAB.ZeileAendern' at Center.", repo.BBUAB.ZeileAendernInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'BBUAB.ZeileAendern'", repo.BBUAB.ZeileAendernInfo, new ActionTimeout(30000), new RecordItemIndex(2));
+            repo.BBUAB.ZeileAendernInfo.WaitForExists(30000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBUAB.ZeileAendern' at Center.", repo.BBUAB.ZeileAendernInfo, new RecordItemIndex(3));
             repo.BBUAB.ZeileAendern.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.FlexGrid_Tabelle.Text_1_Feld' at CenterRight.", repo.TblB.FlexGrid_Tabelle.Text_1_FeldInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.FlexGrid_Tabelle.Text_1_Feld' at CenterRight.", repo.TblB.FlexGrid_Tabelle.Text_1_FeldInfo, new RecordItemIndex(4));
             repo.TblB.FlexGrid_Tabelle.Text_1_Feld.Click(Location.CenterRight);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}_Änd.1' with focus on 'TblB.FlexGrid_Tabelle.ColBruttoRow1'.", repo.TblB.FlexGrid_Tabelle.ColBruttoRow1Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}_Änd.1' with focus on 'TblB.FlexGrid_Tabelle.ColBruttoRow1'.", repo.TblB.FlexGrid_Tabelle.ColBruttoRow1Info, new RecordItemIndex(5));
             repo.TblB.FlexGrid_Tabelle.ColBruttoRow1.EnsureVisible();
             Keyboard.Press("{Right}{Right}{Right}{Right}{Right}{Right}{Right}{Right}_Änd.1");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessSave' at Center.", repo.TblB.PbDataAccessSaveInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessSave' at Center.", repo.TblB.PbDataAccessSaveInfo, new RecordItemIndex(6));
             repo.TblB.PbDataAccessSave.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Text_1) on item 'TblB.FlexGrid_Tabelle.Text_1_Feld'.", repo.TblB.FlexGrid_Tabelle.Text_1_FeldInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Text_1) on item 'TblB.FlexGrid_Tabelle.Text_1_Feld'.", repo.TblB.FlexGrid_Tabelle.Text_1_FeldInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.Text_1_FeldInfo, "Text", Text_1);
             
         }
