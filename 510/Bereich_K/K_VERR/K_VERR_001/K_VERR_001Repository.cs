@@ -5962,6 +5962,7 @@ namespace K_VERR_001
         [RepositoryFolder("5e383435-843d-45a0-8447-097a4476fc2e")]
         public partial class DlgDruckenAppFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _titlebar100druckeverrechnungsprotokInfo;
             RepoItemInfo _pbexportInfo;
 
             /// <summary>
@@ -5970,6 +5971,7 @@ namespace K_VERR_001
             public DlgDruckenAppFolder(RepoGenBaseFolder parentFolder) :
                     base("DlgDrucken", "/form[@controlname='dlgDrucken']", parentFolder, 30000, null, true, "5e383435-843d-45a0-8447-097a4476fc2e", "")
             {
+                _titlebar100druckeverrechnungsprotokInfo = new RepoItemInfo(this, "TitleBar100DruckeVerrechnungsprotok", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "64b363fe-05bc-4776-9483-60a147aacfe0");
                 _pbexportInfo = new RepoItemInfo(this, "PbExport", "button[@controlname='pbExport']", "", 30000, null, "dfd5dce9-bbf7-486b-bbb8-1a799629f7cd");
             }
 
@@ -5994,6 +5996,30 @@ namespace K_VERR_001
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100DruckeVerrechnungsprotok item.
+            /// </summary>
+            [RepositoryItem("64b363fe-05bc-4776-9483-60a147aacfe0")]
+            public virtual Ranorex.TitleBar TitleBar100DruckeVerrechnungsprotok
+            {
+                get
+                {
+                    return _titlebar100druckeverrechnungsprotokInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100DruckeVerrechnungsprotok item info.
+            /// </summary>
+            [RepositoryItemInfo("64b363fe-05bc-4776-9483-60a147aacfe0")]
+            public virtual RepoItemInfo TitleBar100DruckeVerrechnungsprotokInfo
+            {
+                get
+                {
+                    return _titlebar100druckeverrechnungsprotokInfo;
                 }
             }
 
