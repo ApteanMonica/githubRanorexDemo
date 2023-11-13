@@ -168,29 +168,25 @@ namespace K_FIBU_003.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr_von' with focus on 'FrmVerbuch.Jahr_von'.", repo.FrmVerbuch.Jahr_vonInfo, new RecordItemIndex(3));
             repo.FrmVerbuch.Jahr_von.PressKeys(Jahr_von);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmVerbuch.Jahr_von'.", repo.FrmVerbuch.Jahr_vonInfo, new RecordItemIndex(4));
-            Keyboard.PrepareFocus(repo.FrmVerbuch.Jahr_von);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Periode_von' with focus on 'FrmVerbuch.Periode_von'.", repo.FrmVerbuch.Periode_vonInfo, new RecordItemIndex(5));
             repo.FrmVerbuch.Periode_von.PressKeys(Periode_von);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmVerbuch.Periode_von'.", repo.FrmVerbuch.Periode_vonInfo, new RecordItemIndex(6));
-            Keyboard.PrepareFocus(repo.FrmVerbuch.Periode_von);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr_bis' with focus on 'FrmVerbuch.Jahr_bis'.", repo.FrmVerbuch.Jahr_bisInfo, new RecordItemIndex(7));
             repo.FrmVerbuch.Jahr_bis.PressKeys(Jahr_bis);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmVerbuch.Jahr_bis'.", repo.FrmVerbuch.Jahr_bisInfo, new RecordItemIndex(8));
-            Keyboard.PrepareFocus(repo.FrmVerbuch.Jahr_bis);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Periode_bis' with focus on 'FrmVerbuch.Periode_bis'.", repo.FrmVerbuch.Periode_bisInfo, new RecordItemIndex(9));
             repo.FrmVerbuch.Periode_bis.PressKeys(Periode_bis);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmVerbuch.Periode_bis'.", repo.FrmVerbuch.Periode_bisInfo, new RecordItemIndex(10));
-            Keyboard.PrepareFocus(repo.FrmVerbuch.Periode_bis);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVerbuch.PbOK' at Center.", repo.FrmVerbuch.PbOKInfo, new RecordItemIndex(11));
