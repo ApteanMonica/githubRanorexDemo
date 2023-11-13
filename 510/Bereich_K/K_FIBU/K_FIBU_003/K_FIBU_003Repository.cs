@@ -504,7 +504,7 @@ namespace K_FIBU_003
             /// Creates a new FlexGrid  folder.
             /// </summary>
             public FlexGridFolder(RepoGenBaseFolder parentFolder) :
-                    base("FlexGrid", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "69512b1b-d39e-4951-ad98-996775723fa1", "")
+                    base("FlexGrid", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "69512b1b-d39e-4951-ad98-996775723fa1", "")
             {
                 _row1_gesamtInfo = new RepoItemInfo(this, "Row1_gesamt", "row[@accessiblename='Row 1']", "", 30000, null, "87b7a883-fc37-4ddc-b56a-c68918824bb9");
                 _row2_gesamtInfo = new RepoItemInfo(this, "Row2_gesamt", "row[@accessiblename='Row 2']", "", 30000, null, "adbcb70b-fb5f-417c-b8d8-285ee39e8bfb");
@@ -639,12 +639,11 @@ namespace K_FIBU_003
         [RepositoryFolder("98ed53ad-0190-4ae7-b451-95f52f4127b9")]
         public partial class TblIbufeAppFolder : RepoGenBaseFolder
         {
-            K_FIBU_003RepositoryFolders.ToolBarFolder _toolbar;
-            K_FIBU_003RepositoryFolders.FlexGridFolder1 _flexgrid;
+            K_FIBU_003RepositoryFolders.EinchraenkungenFolder _einchraenkungen;
+            K_FIBU_003RepositoryFolders.TabelleFolder _tabelle;
+            K_FIBU_003RepositoryFolders.Fusszeile_SummeFolder _fusszeile_summe;
             RepoItemInfo _titlebar100korebuchungenanzeigenInfo;
             RepoItemInfo _pbdataaccessladenInfo;
-            RepoItemInfo _colbetragrow0Info;
-            RepoItemInfo _colkontorow0Info;
 
             /// <summary>
             /// Creates a new TblIbufe  folder.
@@ -652,12 +651,11 @@ namespace K_FIBU_003
             public TblIbufeAppFolder(RepoGenBaseFolder parentFolder) :
                     base("TblIbufe", "/form[@controlname='tblIbufe']", parentFolder, 30000, null, true, "98ed53ad-0190-4ae7-b451-95f52f4127b9", "")
             {
-                _toolbar = new K_FIBU_003RepositoryFolders.ToolBarFolder(this);
-                _flexgrid = new K_FIBU_003RepositoryFolders.FlexGridFolder1(this);
+                _einchraenkungen = new K_FIBU_003RepositoryFolders.EinchraenkungenFolder(this);
+                _tabelle = new K_FIBU_003RepositoryFolders.TabelleFolder(this);
+                _fusszeile_summe = new K_FIBU_003RepositoryFolders.Fusszeile_SummeFolder(this);
                 _titlebar100korebuchungenanzeigenInfo = new RepoItemInfo(this, "TitleBar100KOREBuchungenAnzeigen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "721af67c-24ea-438c-a313-0abb2c7a7e2f");
                 _pbdataaccessladenInfo = new RepoItemInfo(this, "PbDataAccessLaden", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Laden']", "", 30000, null, "7b70471d-dbf6-47e6-9ca1-6055e3610147");
-                _colbetragrow0Info = new RepoItemInfo(this, "ColBetragRow0", "container[@controlname='ChildTableWindow']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBetrag Row 0']", "", 30000, null, "d364f43f-7e6b-4390-997b-82f3b40df458");
-                _colkontorow0Info = new RepoItemInfo(this, "ColKontoRow0", "container[@controlname='ChildTableWindow']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKonto Row 0']", "", 30000, null, "ed17413d-f54b-4dd4-8e77-e10682982e95");
             }
 
             /// <summary>
@@ -733,77 +731,38 @@ namespace K_FIBU_003
             }
 
             /// <summary>
-            /// The ColBetragRow0 item.
-            /// </summary>
-            [RepositoryItem("d364f43f-7e6b-4390-997b-82f3b40df458")]
-            public virtual Ranorex.Cell ColBetragRow0
-            {
-                get
-                {
-                    return _colbetragrow0Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColBetragRow0 item info.
-            /// </summary>
-            [RepositoryItemInfo("d364f43f-7e6b-4390-997b-82f3b40df458")]
-            public virtual RepoItemInfo ColBetragRow0Info
-            {
-                get
-                {
-                    return _colbetragrow0Info;
-                }
-            }
-
-            /// <summary>
-            /// The ColKontoRow0 item.
-            /// </summary>
-            [RepositoryItem("ed17413d-f54b-4dd4-8e77-e10682982e95")]
-            public virtual Ranorex.Cell ColKontoRow0
-            {
-                get
-                {
-                    return _colkontorow0Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColKontoRow0 item info.
-            /// </summary>
-            [RepositoryItemInfo("ed17413d-f54b-4dd4-8e77-e10682982e95")]
-            public virtual RepoItemInfo ColKontoRow0Info
-            {
-                get
-                {
-                    return _colkontorow0Info;
-                }
-            }
-
-            /// <summary>
-            /// The ToolBar folder.
+            /// The Einchraenkungen folder.
             /// </summary>
             [RepositoryFolder("fbfb2ebc-7a0e-4a0f-8945-77155c52f527")]
-            public virtual K_FIBU_003RepositoryFolders.ToolBarFolder ToolBar
+            public virtual K_FIBU_003RepositoryFolders.EinchraenkungenFolder Einchraenkungen
             {
-                get { return _toolbar; }
+                get { return _einchraenkungen; }
             }
 
             /// <summary>
-            /// The FlexGrid folder.
+            /// The Tabelle folder.
             /// </summary>
             [RepositoryFolder("2749082f-191a-4638-9d2e-6a894c0a8f64")]
-            public virtual K_FIBU_003RepositoryFolders.FlexGridFolder1 FlexGrid
+            public virtual K_FIBU_003RepositoryFolders.TabelleFolder Tabelle
             {
-                get { return _flexgrid; }
+                get { return _tabelle; }
+            }
+
+            /// <summary>
+            /// The Fusszeile_Summe folder.
+            /// </summary>
+            [RepositoryFolder("1efbb6c6-025c-4a93-a3b2-ee92fe22920a")]
+            public virtual K_FIBU_003RepositoryFolders.Fusszeile_SummeFolder Fusszeile_Summe
+            {
+                get { return _fusszeile_summe; }
             }
         }
 
         /// <summary>
-        /// The ToolBarFolder folder.
+        /// The EinchraenkungenFolder folder.
         /// </summary>
         [RepositoryFolder("fbfb2ebc-7a0e-4a0f-8945-77155c52f527")]
-        public partial class ToolBarFolder : RepoGenBaseFolder
+        public partial class EinchraenkungenFolder : RepoGenBaseFolder
         {
             RepoItemInfo _periodevonInfo;
             RepoItemInfo _text1Info;
@@ -811,12 +770,12 @@ namespace K_FIBU_003
             RepoItemInfo _textbisInfo;
 
             /// <summary>
-            /// Creates a new ToolBar  folder.
+            /// Creates a new Einchraenkungen  folder.
             /// </summary>
-            public ToolBarFolder(RepoGenBaseFolder parentFolder) :
-                    base("ToolBar", "container[@controlname='ToolBar']", parentFolder, 30000, null, false, "fbfb2ebc-7a0e-4a0f-8945-77155c52f527", "")
+            public EinchraenkungenFolder(RepoGenBaseFolder parentFolder) :
+                    base("Einchraenkungen", "container[@controlname='ToolBar']", parentFolder, 30000, null, false, "fbfb2ebc-7a0e-4a0f-8945-77155c52f527", "")
             {
-                _periodevonInfo = new RepoItemInfo(this, "PeriodeVon", "?/?/text[@accessiblename='Periode von']", "", 30000, null, "069fc349-446f-4108-8cbb-e58a9647f2a2");
+                _periodevonInfo = new RepoItemInfo(this, "PeriodeVon", "text[@controlname='dfJahrV']/text[@accessiblename='Periode von']", "", 30000, null, "069fc349-446f-4108-8cbb-e58a9647f2a2");
                 _text1Info = new RepoItemInfo(this, "Text1", "text[@controlname='dfJahrB']/text[@accessiblerole='Text']", "", 30000, null, "e0fad6e4-34f4-4016-82b3-25bb624e8251");
                 _textInfo = new RepoItemInfo(this, "Text", "text[@controlname='dfPeriodeV']/text[@accessiblerole='Text']", "", 30000, null, "edd9102b-4142-4da5-91ed-9bee2b18618b");
                 _textbisInfo = new RepoItemInfo(this, "TextBis", "text[@controlname='dfPeriodeB']/text[@accessiblename='bis']", "", 30000, null, "542f001c-b243-42b0-b700-af19eae363a2");
@@ -944,40 +903,42 @@ namespace K_FIBU_003
         }
 
         /// <summary>
-        /// The FlexGridFolder1 folder.
+        /// The TabelleFolder folder.
         /// </summary>
         [RepositoryFolder("2749082f-191a-4638-9d2e-6a894c0a8f64")]
-        public partial class FlexGridFolder1 : RepoGenBaseFolder
+        public partial class TabelleFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _row1Info;
             RepoItemInfo _colbetragrow1Info;
             RepoItemInfo _colbetragrow2Info;
             RepoItemInfo _colbetragrow3Info;
+            RepoItemInfo _colbetragrow4Info;
+            RepoItemInfo _colbetragrow5Info;
             RepoItemInfo _colbetragrow6Info;
             RepoItemInfo _colbetragrow7Info;
             RepoItemInfo _colbetragrow8Info;
-            RepoItemInfo _colbetragrow4Info;
-            RepoItemInfo _colbetragrow5Info;
             RepoItemInfo _colbetragrow9Info;
             RepoItemInfo _colibudtaendgrow1Info;
             RepoItemInfo _colibudtaendgrow9Info;
 
             /// <summary>
-            /// Creates a new FlexGrid  folder.
+            /// Creates a new Tabelle  folder.
             /// </summary>
-            public FlexGridFolder1(RepoGenBaseFolder parentFolder) :
-                    base("FlexGrid", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "2749082f-191a-4638-9d2e-6a894c0a8f64", "")
+            public TabelleFolder(RepoGenBaseFolder parentFolder) :
+                    base("Tabelle", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "2749082f-191a-4638-9d2e-6a894c0a8f64", "")
             {
-                _colbetragrow1Info = new RepoItemInfo(this, "ColBetragRow1", "?/?/cell[@accessiblename='colBetrag Row 1']", "", 30000, null, "ada5439a-f2ff-4f64-a184-6aecc38d24c5");
-                _colbetragrow2Info = new RepoItemInfo(this, "ColBetragRow2", "?/?/cell[@accessiblename='colBetrag Row 2']", "", 30000, null, "2249e3fe-bd48-4683-bbcc-a9667f2a18e4");
-                _colbetragrow3Info = new RepoItemInfo(this, "ColBetragRow3", "?/?/cell[@accessiblename='colBetrag Row 3']", "", 30000, null, "8c8b22a8-b0a7-4548-aeec-dc281426fb94");
-                _colbetragrow6Info = new RepoItemInfo(this, "ColBetragRow6", "?/?/cell[@accessiblename='colBetrag Row 6']", "", 30000, null, "fc276833-a211-41b7-bccd-ecc10b15420f");
-                _colbetragrow7Info = new RepoItemInfo(this, "ColBetragRow7", "?/?/cell[@accessiblename='colBetrag Row 7']", "", 30000, null, "e13b73c5-874c-4762-9e13-93c0989e5dec");
-                _colbetragrow8Info = new RepoItemInfo(this, "ColBetragRow8", "?/?/cell[@accessiblename='colBetrag Row 8']", "", 30000, null, "a52c7b37-fa40-436c-921a-433d03f028be");
-                _colbetragrow4Info = new RepoItemInfo(this, "ColBetragRow4", "?/?/cell[@accessiblename='colBetrag Row 4']", "", 30000, null, "8308abb7-29d1-495d-b2dc-d6300f55378f");
-                _colbetragrow5Info = new RepoItemInfo(this, "ColBetragRow5", "?/?/cell[@accessiblename='colBetrag Row 5']", "", 30000, null, "6fd37f86-c72a-4303-bf52-58d293f54211");
-                _colbetragrow9Info = new RepoItemInfo(this, "ColBetragRow9", "?/?/cell[@accessiblename='colBetrag Row 9']", "", 30000, null, "29938131-aba0-4236-8534-7de2ee874393");
-                _colibudtaendgrow1Info = new RepoItemInfo(this, "ColIbuDtaendgRow1", "?/?/cell[@accessiblename='colIbu_dtaendg Row 1']", "", 30000, null, "62351f38-7ec6-4c8b-a667-594ba80309ba");
-                _colibudtaendgrow9Info = new RepoItemInfo(this, "ColIbuDtaendgRow9", "?/?/cell[@accessiblename='colIbu_dtaendg Row 9']", "", 30000, null, "50cd8d4a-261c-4b2e-99be-27849687318d");
+                _row1Info = new RepoItemInfo(this, "Row1", "row[@accessiblename='Row 1']", "", 30000, null, "5b38e053-2719-4890-85c9-49c3e433b03d");
+                _colbetragrow1Info = new RepoItemInfo(this, "ColBetragRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colBetrag Row 1']", "", 30000, null, "ada5439a-f2ff-4f64-a184-6aecc38d24c5");
+                _colbetragrow2Info = new RepoItemInfo(this, "ColBetragRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colBetrag Row 2']", "", 30000, null, "2249e3fe-bd48-4683-bbcc-a9667f2a18e4");
+                _colbetragrow3Info = new RepoItemInfo(this, "ColBetragRow3", "row[@accessiblename='Row 3']/cell[@accessiblename='colBetrag Row 3']", "", 30000, null, "8c8b22a8-b0a7-4548-aeec-dc281426fb94");
+                _colbetragrow4Info = new RepoItemInfo(this, "ColBetragRow4", "row[@accessiblename='Row 4']/cell[@accessiblename='colBetrag Row 4']", "", 30000, null, "8308abb7-29d1-495d-b2dc-d6300f55378f");
+                _colbetragrow5Info = new RepoItemInfo(this, "ColBetragRow5", "row[@accessiblename='Row 5']/cell[@accessiblename='colBetrag Row 5']", "", 30000, null, "6fd37f86-c72a-4303-bf52-58d293f54211");
+                _colbetragrow6Info = new RepoItemInfo(this, "ColBetragRow6", "row[@accessiblename='Row 6']/cell[@accessiblename='colBetrag Row 6']", "", 30000, null, "fc276833-a211-41b7-bccd-ecc10b15420f");
+                _colbetragrow7Info = new RepoItemInfo(this, "ColBetragRow7", "row[@accessiblename='Row 7']/cell[@accessiblename='colBetrag Row 7']", "", 30000, null, "e13b73c5-874c-4762-9e13-93c0989e5dec");
+                _colbetragrow8Info = new RepoItemInfo(this, "ColBetragRow8", "row[@accessiblename='Row 8']/cell[@accessiblename='colBetrag Row 8']", "", 30000, null, "a52c7b37-fa40-436c-921a-433d03f028be");
+                _colbetragrow9Info = new RepoItemInfo(this, "ColBetragRow9", "row[@accessiblename='Row 9']/cell[@accessiblename='colBetrag Row 9']", "", 30000, null, "29938131-aba0-4236-8534-7de2ee874393");
+                _colibudtaendgrow1Info = new RepoItemInfo(this, "ColIbuDtaendgRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colIbu_dtaendg Row 1']", "", 30000, null, "62351f38-7ec6-4c8b-a667-594ba80309ba");
+                _colibudtaendgrow9Info = new RepoItemInfo(this, "ColIbuDtaendgRow9", "row[@accessiblename='Row 9']/cell[@accessiblename='colIbu_dtaendg Row 9']", "", 30000, null, "50cd8d4a-261c-4b2e-99be-27849687318d");
             }
 
             /// <summary>
@@ -1001,6 +962,30 @@ namespace K_FIBU_003
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Row1 item.
+            /// </summary>
+            [RepositoryItem("5b38e053-2719-4890-85c9-49c3e433b03d")]
+            public virtual Ranorex.Row Row1
+            {
+                get
+                {
+                    return _row1Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1 item info.
+            /// </summary>
+            [RepositoryItemInfo("5b38e053-2719-4890-85c9-49c3e433b03d")]
+            public virtual RepoItemInfo Row1Info
+            {
+                get
+                {
+                    return _row1Info;
                 }
             }
 
@@ -1077,6 +1062,54 @@ namespace K_FIBU_003
             }
 
             /// <summary>
+            /// The ColBetragRow4 item.
+            /// </summary>
+            [RepositoryItem("8308abb7-29d1-495d-b2dc-d6300f55378f")]
+            public virtual Ranorex.Cell ColBetragRow4
+            {
+                get
+                {
+                    return _colbetragrow4Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBetragRow4 item info.
+            /// </summary>
+            [RepositoryItemInfo("8308abb7-29d1-495d-b2dc-d6300f55378f")]
+            public virtual RepoItemInfo ColBetragRow4Info
+            {
+                get
+                {
+                    return _colbetragrow4Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColBetragRow5 item.
+            /// </summary>
+            [RepositoryItem("6fd37f86-c72a-4303-bf52-58d293f54211")]
+            public virtual Ranorex.Cell ColBetragRow5
+            {
+                get
+                {
+                    return _colbetragrow5Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBetragRow5 item info.
+            /// </summary>
+            [RepositoryItemInfo("6fd37f86-c72a-4303-bf52-58d293f54211")]
+            public virtual RepoItemInfo ColBetragRow5Info
+            {
+                get
+                {
+                    return _colbetragrow5Info;
+                }
+            }
+
+            /// <summary>
             /// The ColBetragRow6 item.
             /// </summary>
             [RepositoryItem("fc276833-a211-41b7-bccd-ecc10b15420f")]
@@ -1149,54 +1182,6 @@ namespace K_FIBU_003
             }
 
             /// <summary>
-            /// The ColBetragRow4 item.
-            /// </summary>
-            [RepositoryItem("8308abb7-29d1-495d-b2dc-d6300f55378f")]
-            public virtual Ranorex.Cell ColBetragRow4
-            {
-                get
-                {
-                    return _colbetragrow4Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColBetragRow4 item info.
-            /// </summary>
-            [RepositoryItemInfo("8308abb7-29d1-495d-b2dc-d6300f55378f")]
-            public virtual RepoItemInfo ColBetragRow4Info
-            {
-                get
-                {
-                    return _colbetragrow4Info;
-                }
-            }
-
-            /// <summary>
-            /// The ColBetragRow5 item.
-            /// </summary>
-            [RepositoryItem("6fd37f86-c72a-4303-bf52-58d293f54211")]
-            public virtual Ranorex.Cell ColBetragRow5
-            {
-                get
-                {
-                    return _colbetragrow5Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColBetragRow5 item info.
-            /// </summary>
-            [RepositoryItemInfo("6fd37f86-c72a-4303-bf52-58d293f54211")]
-            public virtual RepoItemInfo ColBetragRow5Info
-            {
-                get
-                {
-                    return _colbetragrow5Info;
-                }
-            }
-
-            /// <summary>
             /// The ColBetragRow9 item.
             /// </summary>
             [RepositoryItem("29938131-aba0-4236-8534-7de2ee874393")]
@@ -1265,6 +1250,98 @@ namespace K_FIBU_003
                 get
                 {
                     return _colibudtaendgrow9Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Fusszeile_SummeFolder folder.
+        /// </summary>
+        [RepositoryFolder("1efbb6c6-025c-4a93-a3b2-ee92fe22920a")]
+        public partial class Fusszeile_SummeFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _colkontorow0Info;
+            RepoItemInfo _colbetragrow0Info;
+
+            /// <summary>
+            /// Creates a new Fusszeile_Summe  folder.
+            /// </summary>
+            public Fusszeile_SummeFolder(RepoGenBaseFolder parentFolder) :
+                    base("Fusszeile_Summe", "container[@controlname='ChildTableWindow']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "1efbb6c6-025c-4a93-a3b2-ee92fe22920a", "")
+            {
+                _colkontorow0Info = new RepoItemInfo(this, "ColKontoRow0", "row[@accessiblename='Row 0']/cell[@accessiblename='colKonto Row 0']", "", 30000, null, "7943f648-8e92-4b07-8ce8-c5b6d72fcd3e");
+                _colbetragrow0Info = new RepoItemInfo(this, "ColBetragRow0", "row[@accessiblename='Row 0']/cell[@accessiblename='colBetrag Row 0']", "", 30000, null, "a467f2bd-ddd5-4a1a-a2e7-b590d9a43186");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("1efbb6c6-025c-4a93-a3b2-ee92fe22920a")]
+            public virtual Ranorex.Table Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1efbb6c6-025c-4a93-a3b2-ee92fe22920a")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColKontoRow0 item.
+            /// </summary>
+            [RepositoryItem("7943f648-8e92-4b07-8ce8-c5b6d72fcd3e")]
+            public virtual Ranorex.Cell ColKontoRow0
+            {
+                get
+                {
+                    return _colkontorow0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColKontoRow0 item info.
+            /// </summary>
+            [RepositoryItemInfo("7943f648-8e92-4b07-8ce8-c5b6d72fcd3e")]
+            public virtual RepoItemInfo ColKontoRow0Info
+            {
+                get
+                {
+                    return _colkontorow0Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColBetragRow0 item.
+            /// </summary>
+            [RepositoryItem("a467f2bd-ddd5-4a1a-a2e7-b590d9a43186")]
+            public virtual Ranorex.Cell ColBetragRow0
+            {
+                get
+                {
+                    return _colbetragrow0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBetragRow0 item info.
+            /// </summary>
+            [RepositoryItemInfo("a467f2bd-ddd5-4a1a-a2e7-b590d9a43186")]
+            public virtual RepoItemInfo ColBetragRow0Info
+            {
+                get
+                {
+                    return _colbetragrow0Info;
                 }
             }
         }

@@ -144,93 +144,89 @@ namespace K_FIBU_003.Recordings2
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblIbufe.ToolBar.PeriodeVon' at Center.", repo.TblIbufe.ToolBar.PeriodeVonInfo, new RecordItemIndex(0));
-            repo.TblIbufe.ToolBar.PeriodeVon.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblIbufe.Einchraenkungen.PeriodeVon' at Center.", repo.TblIbufe.Einchraenkungen.PeriodeVonInfo, new RecordItemIndex(0));
+            repo.TblIbufe.Einchraenkungen.PeriodeVon.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr_von' with focus on 'TblIbufe.ToolBar.PeriodeVon'.", repo.TblIbufe.ToolBar.PeriodeVonInfo, new RecordItemIndex(1));
-            repo.TblIbufe.ToolBar.PeriodeVon.PressKeys(Jahr_von);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblIbufe.Einchraenkungen.PeriodeVon' at Center.", repo.TblIbufe.Einchraenkungen.PeriodeVonInfo, new RecordItemIndex(1));
+            repo.TblIbufe.Einchraenkungen.PeriodeVon.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr_von) on item 'TblIbufe.ToolBar.PeriodeVon'.", repo.TblIbufe.ToolBar.PeriodeVonInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblIbufe.ToolBar.PeriodeVonInfo, "Text", Jahr_von);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr_von' with focus on 'TblIbufe.Einchraenkungen.PeriodeVon'.", repo.TblIbufe.Einchraenkungen.PeriodeVonInfo, new RecordItemIndex(2));
+            repo.TblIbufe.Einchraenkungen.PeriodeVon.PressKeys(Jahr_von);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'TblIbufe.ToolBar.PeriodeVon'.", repo.TblIbufe.ToolBar.PeriodeVonInfo, new RecordItemIndex(3));
-            Keyboard.PrepareFocus(repo.TblIbufe.ToolBar.PeriodeVon);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Periode_von' with focus on 'TblIbufe.ToolBar.Text'.", repo.TblIbufe.ToolBar.TextInfo, new RecordItemIndex(4));
-            repo.TblIbufe.ToolBar.Text.PressKeys(Periode_von);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Periode_von' with focus on 'TblIbufe.Einchraenkungen.Text'.", repo.TblIbufe.Einchraenkungen.TextInfo, new RecordItemIndex(4));
+            repo.TblIbufe.Einchraenkungen.Text.PressKeys(Periode_von);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode_von) on item 'TblIbufe.ToolBar.Text'.", repo.TblIbufe.ToolBar.TextInfo, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.TblIbufe.ToolBar.TextInfo, "Text", Periode_von);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'TblIbufe.ToolBar.Text'.", repo.TblIbufe.ToolBar.TextInfo, new RecordItemIndex(6));
-            Keyboard.PrepareFocus(repo.TblIbufe.ToolBar.Text);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblIbufe.ToolBar.Text1' at Center.", repo.TblIbufe.ToolBar.Text1Info, new RecordItemIndex(7));
-            repo.TblIbufe.ToolBar.Text1.DoubleClick();
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Back' Press with focus on 'TblIbufe.ToolBar.Text1'.", repo.TblIbufe.ToolBar.Text1Info, new RecordItemIndex(8));
-            Keyboard.PrepareFocus(repo.TblIbufe.ToolBar.Text1);
-            Keyboard.Press(System.Windows.Forms.Keys.Back, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr_bis' with focus on 'TblIbufe.ToolBar.Text1'.", repo.TblIbufe.ToolBar.Text1Info, new RecordItemIndex(9));
-            repo.TblIbufe.ToolBar.Text1.PressKeys(Jahr_bis);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr_bis) on item 'TblIbufe.ToolBar.Text1'.", repo.TblIbufe.ToolBar.Text1Info, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.TblIbufe.ToolBar.Text1Info, "Text", Jahr_bis);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'TblIbufe.ToolBar.Text1'.", repo.TblIbufe.ToolBar.Text1Info, new RecordItemIndex(11));
-            Keyboard.PrepareFocus(repo.TblIbufe.ToolBar.Text1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Periode_bis' with focus on 'TblIbufe.ToolBar.TextBis'.", repo.TblIbufe.ToolBar.TextBisInfo, new RecordItemIndex(12));
-            repo.TblIbufe.ToolBar.TextBis.PressKeys(Periode_bis);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Periode_bis' with focus on 'TblIbufe.Einchraenkungen.TextBis'.", repo.TblIbufe.Einchraenkungen.TextBisInfo, new RecordItemIndex(7));
+            repo.TblIbufe.Einchraenkungen.TextBis.PressKeys(Periode_bis);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode_bis) on item 'TblIbufe.ToolBar.TextBis'.", repo.TblIbufe.ToolBar.TextBisInfo, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.TblIbufe.ToolBar.TextBisInfo, "Text", Periode_bis);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblIbufe.PbDataAccessLaden' at Center.", repo.TblIbufe.PbDataAccessLadenInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr_von) on item 'TblIbufe.Einchraenkungen.PeriodeVon'.", repo.TblIbufe.Einchraenkungen.PeriodeVonInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.TblIbufe.Einchraenkungen.PeriodeVonInfo, "Text", Jahr_von);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode_von) on item 'TblIbufe.Einchraenkungen.Text'.", repo.TblIbufe.Einchraenkungen.TextInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.TblIbufe.Einchraenkungen.TextInfo, "Text", Periode_von);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr_bis) on item 'TblIbufe.Einchraenkungen.Text1'.", repo.TblIbufe.Einchraenkungen.Text1Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.TblIbufe.Einchraenkungen.Text1Info, "Text", Jahr_bis);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode_bis) on item 'TblIbufe.Einchraenkungen.TextBis'.", repo.TblIbufe.Einchraenkungen.TextBisInfo, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.TblIbufe.Einchraenkungen.TextBisInfo, "Text", Periode_bis);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblIbufe.PbDataAccessLaden' at Center.", repo.TblIbufe.PbDataAccessLadenInfo, new RecordItemIndex(13));
             repo.TblIbufe.PbDataAccessLaden.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='8,33') on item 'TblIbufe.FlexGrid.ColBetragRow1'.", repo.TblIbufe.FlexGrid.ColBetragRow1Info, new RecordItemIndex(15));
-            Validate.AttributeEqual(repo.TblIbufe.FlexGrid.ColBetragRow1Info, "Text", "8,33");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblIbufe.Tabelle.Row1'", repo.TblIbufe.Tabelle.Row1Info, new ActionTimeout(60000), new RecordItemIndex(14));
+            repo.TblIbufe.Tabelle.Row1Info.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='16,67') on item 'TblIbufe.FlexGrid.ColBetragRow2'.", repo.TblIbufe.FlexGrid.ColBetragRow2Info, new RecordItemIndex(16));
-            Validate.AttributeEqual(repo.TblIbufe.FlexGrid.ColBetragRow2Info, "Text", "16,67");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='8,33') on item 'TblIbufe.Tabelle.ColBetragRow1'.", repo.TblIbufe.Tabelle.ColBetragRow1Info, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.TblIbufe.Tabelle.ColBetragRow1Info, "Text", "8,33");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-266,67') on item 'TblIbufe.FlexGrid.ColBetragRow3'.", repo.TblIbufe.FlexGrid.ColBetragRow3Info, new RecordItemIndex(17));
-            Validate.AttributeEqual(repo.TblIbufe.FlexGrid.ColBetragRow3Info, "Text", "-266,67");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='16,67') on item 'TblIbufe.Tabelle.ColBetragRow2'.", repo.TblIbufe.Tabelle.ColBetragRow2Info, new RecordItemIndex(16));
+            Validate.AttributeEqual(repo.TblIbufe.Tabelle.ColBetragRow2Info, "Text", "16,67");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='408,34') on item 'TblIbufe.FlexGrid.ColBetragRow4'.", repo.TblIbufe.FlexGrid.ColBetragRow4Info, new RecordItemIndex(18));
-            Validate.AttributeEqual(repo.TblIbufe.FlexGrid.ColBetragRow4Info, "Text", "408,34");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-266,67') on item 'TblIbufe.Tabelle.ColBetragRow3'.", repo.TblIbufe.Tabelle.ColBetragRow3Info, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.TblIbufe.Tabelle.ColBetragRow3Info, "Text", "-266,67");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='816,65') on item 'TblIbufe.FlexGrid.ColBetragRow5'.", repo.TblIbufe.FlexGrid.ColBetragRow5Info, new RecordItemIndex(19));
-            Validate.AttributeEqual(repo.TblIbufe.FlexGrid.ColBetragRow5Info, "Text", "816,65");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='408,34') on item 'TblIbufe.Tabelle.ColBetragRow4'.", repo.TblIbufe.Tabelle.ColBetragRow4Info, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.TblIbufe.Tabelle.ColBetragRow4Info, "Text", "408,34");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-25,00') on item 'TblIbufe.FlexGrid.ColBetragRow6'.", repo.TblIbufe.FlexGrid.ColBetragRow6Info, new RecordItemIndex(20));
-            Validate.AttributeEqual(repo.TblIbufe.FlexGrid.ColBetragRow6Info, "Text", "-25,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='816,65') on item 'TblIbufe.Tabelle.ColBetragRow5'.", repo.TblIbufe.Tabelle.ColBetragRow5Info, new RecordItemIndex(19));
+            Validate.AttributeEqual(repo.TblIbufe.Tabelle.ColBetragRow5Info, "Text", "816,65");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4.900,00') on item 'TblIbufe.FlexGrid.ColBetragRow7'.", repo.TblIbufe.FlexGrid.ColBetragRow7Info, new RecordItemIndex(21));
-            Validate.AttributeEqual(repo.TblIbufe.FlexGrid.ColBetragRow7Info, "Text", "4.900,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-25,00') on item 'TblIbufe.Tabelle.ColBetragRow6'.", repo.TblIbufe.Tabelle.ColBetragRow6Info, new RecordItemIndex(20));
+            Validate.AttributeEqual(repo.TblIbufe.Tabelle.ColBetragRow6Info, "Text", "-25,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='8.166,66') on item 'TblIbufe.FlexGrid.ColBetragRow8'.", repo.TblIbufe.FlexGrid.ColBetragRow8Info, new RecordItemIndex(22));
-            Validate.AttributeEqual(repo.TblIbufe.FlexGrid.ColBetragRow8Info, "Text", "8.166,66");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4.900,00') on item 'TblIbufe.Tabelle.ColBetragRow7'.", repo.TblIbufe.Tabelle.ColBetragRow7Info, new RecordItemIndex(21));
+            Validate.AttributeEqual(repo.TblIbufe.Tabelle.ColBetragRow7Info, "Text", "4.900,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-233,33') on item 'TblIbufe.FlexGrid.ColBetragRow9'.", repo.TblIbufe.FlexGrid.ColBetragRow9Info, new RecordItemIndex(23));
-            Validate.AttributeEqual(repo.TblIbufe.FlexGrid.ColBetragRow9Info, "Text", "-233,33");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='8.166,66') on item 'TblIbufe.Tabelle.ColBetragRow8'.", repo.TblIbufe.Tabelle.ColBetragRow8Info, new RecordItemIndex(22));
+            Validate.AttributeEqual(repo.TblIbufe.Tabelle.ColBetragRow8Info, "Text", "8.166,66");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'TblIbufe.FlexGrid.ColIbuDtaendgRow1'.", repo.TblIbufe.FlexGrid.ColIbuDtaendgRow1Info, new RecordItemIndex(24));
-            Validate.AttributeContains(repo.TblIbufe.FlexGrid.ColIbuDtaendgRow1Info, "Text", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-233,33') on item 'TblIbufe.Tabelle.ColBetragRow9'.", repo.TblIbufe.Tabelle.ColBetragRow9Info, new RecordItemIndex(23));
+            Validate.AttributeEqual(repo.TblIbufe.Tabelle.ColBetragRow9Info, "Text", "-233,33");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'TblIbufe.FlexGrid.ColIbuDtaendgRow9'.", repo.TblIbufe.FlexGrid.ColIbuDtaendgRow9Info, new RecordItemIndex(25));
-            Validate.AttributeContains(repo.TblIbufe.FlexGrid.ColIbuDtaendgRow9Info, "Text", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'TblIbufe.Tabelle.ColIbuDtaendgRow1'.", repo.TblIbufe.Tabelle.ColIbuDtaendgRow1Info, new RecordItemIndex(24));
+            Validate.AttributeContains(repo.TblIbufe.Tabelle.ColIbuDtaendgRow1Info, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Summe') on item 'TblIbufe.ColKontoRow0'.", repo.TblIbufe.ColKontoRow0Info, new RecordItemIndex(26));
-            Validate.AttributeEqual(repo.TblIbufe.ColKontoRow0Info, "Text", "Summe");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'TblIbufe.Tabelle.ColIbuDtaendgRow9'.", repo.TblIbufe.Tabelle.ColIbuDtaendgRow9Info, new RecordItemIndex(25));
+            Validate.AttributeContains(repo.TblIbufe.Tabelle.ColIbuDtaendgRow9Info, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='13.791,65') on item 'TblIbufe.ColBetragRow0'.", repo.TblIbufe.ColBetragRow0Info, new RecordItemIndex(27));
-            Validate.AttributeEqual(repo.TblIbufe.ColBetragRow0Info, "Text", "13.791,65");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Summe') on item 'TblIbufe.Fusszeile_Summe.ColKontoRow0'.", repo.TblIbufe.Fusszeile_Summe.ColKontoRow0Info, new RecordItemIndex(26));
+            Validate.AttributeEqual(repo.TblIbufe.Fusszeile_Summe.ColKontoRow0Info, "Text", "Summe");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='13.791,65') on item 'TblIbufe.Fusszeile_Summe.ColBetragRow0'.", repo.TblIbufe.Fusszeile_Summe.ColBetragRow0Info, new RecordItemIndex(27));
+            Validate.AttributeEqual(repo.TblIbufe.Fusszeile_Summe.ColBetragRow0Info, "Text", "13.791,65");
             
         }
 

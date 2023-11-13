@@ -342,15 +342,6 @@ igCFeJ3+v9BVgdKrj/Xv9R/IVYHSgD//2Q==
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="0c850b6a-726a-4d06-b8ab-218097066a99"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@controlname='frmVerbuch']/?/?/text[@controlname='dfJahrbezP']/text[@accessiblename='Jahr/Periode']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
 		</keyitem>
 		<keysequenceitem
 		KeySequence=""
@@ -391,15 +382,6 @@ igCFeJ3+v9BVgdKrj/Xv9R/IVYHSgD//2Q==
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="400f3ac9-69c9-439e-8724-7a5d412abe8b"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@controlname='frmVerbuch']/?/?/text[@controlname='dfPeriodeVon']/text[@accessiblerole='Text']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
 		</keyitem>
 		<keysequenceitem
 		KeySequence=""
@@ -440,15 +422,6 @@ igCFeJ3+v9BVgdKrj/Xv9R/IVYHSgD//2Q==
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="bedd8575-25e7-4a31-afb4-54e05218baf2"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@controlname='frmVerbuch']/?/?/text[@controlname='dfJahrbezPBis']/text[@accessiblename='bis:']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
 		</keyitem>
 		<keysequenceitem
 		KeySequence=""
@@ -489,6 +462,107 @@ igCFeJ3+v9BVgdKrj/Xv9R/IVYHSgD//2Q==
 			</comment>
 			<bindings>
 			</bindings>
+		</keyitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="90fa8cea-da87-48b1-864e-7a6d0f83c76b">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Jahr_von">
+				</binding>
+			</bindings>
+			<info
+			id="0c850b6a-726a-4d06-b8ab-218097066a99"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='frmVerbuch']/?/?/text[@controlname='dfJahrbezP']/text[@accessiblename='Jahr/Periode']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="aec0d877-7bdf-4eb8-80b6-32d4f630e90b">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Periode_von_validate">
+				</binding>
+			</bindings>
+			<info
+			id="400f3ac9-69c9-439e-8724-7a5d412abe8b"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='frmVerbuch']/?/?/text[@controlname='dfPeriodeVon']/text[@accessiblerole='Text']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ae7e50e7-a8a6-4e4c-8214-1299938d4f2a">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Jahr_bis">
+				</binding>
+			</bindings>
+			<info
+			id="bedd8575-25e7-4a31-afb4-54e05218baf2"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='frmVerbuch']/?/?/text[@controlname='dfJahrbezPBis']/text[@accessiblename='bis:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="39f04e77-20d3-47c2-a6e4-49317ca049dc">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Periode_bis_validate">
+				</binding>
+			</bindings>
 			<info
 			id="c6161605-f732-4a73-a64c-f83c51a93bc8"
 			sourcename="ItemRecorderEditor">
@@ -498,7 +572,13 @@ igCFeJ3+v9BVgdKrj/Xv9R/IVYHSgD//2Q==
 				<robustPath>
 				</robustPath>
 			</info>
-		</keyitem>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -8537,122 +8617,6 @@ irGKMUAV/JFKIhU+KMUANVcU6iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
 AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q==
 			</helperscreenshot>
 		</mouseitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="90fa8cea-da87-48b1-864e-7a6d0f83c76b">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Jahr_von">
-				</binding>
-			</bindings>
-			<info
-			id="0c850b6a-726a-4d06-b8ab-218097066a99"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@controlname='frmVerbuch']/?/?/text[@controlname='dfJahrbezP']/text[@accessiblename='Jahr/Periode']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="aec0d877-7bdf-4eb8-80b6-32d4f630e90b">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Periode_von_validate">
-				</binding>
-			</bindings>
-			<info
-			id="400f3ac9-69c9-439e-8724-7a5d412abe8b"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@controlname='frmVerbuch']/?/?/text[@controlname='dfPeriodeVon']/text[@accessiblerole='Text']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="ae7e50e7-a8a6-4e4c-8214-1299938d4f2a">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Jahr_bis">
-				</binding>
-			</bindings>
-			<info
-			id="bedd8575-25e7-4a31-afb4-54e05218baf2"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@controlname='frmVerbuch']/?/?/text[@controlname='dfJahrbezPBis']/text[@accessiblename='bis:']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="39f04e77-20d3-47c2-a6e4-49317ca049dc">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Periode_bis_validate">
-				</binding>
-			</bindings>
-			<info
-			id="c6161605-f732-4a73-a64c-f83c51a93bc8"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@controlname='frmVerbuch']/?/?/text[@controlname='dfPeriodeBis']/text[@accessiblerole='Text']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
 	</recorditems>
 	<repository
 	id="b3124d26-d696-45d6-98bb-d118bdcc0507"

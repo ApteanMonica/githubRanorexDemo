@@ -287,35 +287,6 @@ f89G/If4UAKoYZ3EHnjHpS00Kc/6xj+X+FOoAzWtZCrhYNrkvl8j5wc4HX3HWpreB0vHcx4U5yxI
 BRRRQAUUUUAf/9k=
 			</helperscreenshot>
 		</keysequenceitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="b52806b9-554a-48fa-943d-d2bd058f0f6d">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Jahr_von">
-				</binding>
-			</bindings>
-			<info
-			id="6606fba0-a2ed-4dce-8196-c2fb4171347b"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ToolBar']/?/?/text[@accessiblename='Periode von']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
 		<keyitem
 		action="Press"
 		data="Tab"
@@ -330,54 +301,6 @@ BRRRQAUUUUAf/9k=
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="6606fba0-a2ed-4dce-8196-c2fb4171347b"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="0"
-				prefcap="text"
-				rect="651,401,44,17"
-				role="text"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="text"
-					type="System.String">
-						2017
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						Periode von
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Text
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						2017
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ToolBar']/?/?/text[@accessiblename='Periode von']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
 		</keyitem>
 		<keysequenceitem
 		KeySequence=""
@@ -404,35 +327,6 @@ BRRRQAUUUUAf/9k=
 				</robustPath>
 			</info>
 		</keysequenceitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="b52806b9-554a-48fa-943d-d2bd058f0f6d">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Periode_von">
-				</binding>
-			</bindings>
-			<info
-			id="b2e3ec41-da47-49d6-a043-8528df1cb6e7"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ToolBar']/text[@controlname='dfPeriodeV']/text[@accessiblerole='Text']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
 		<keyitem
 		action="Press"
 		data="Tab"
@@ -447,25 +341,7 @@ BRRRQAUUUUAf/9k=
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="b2e3ec41-da47-49d6-a043-8528df1cb6e7"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ToolBar']/text[@controlname='dfPeriodeV']/text[@accessiblerole='Text']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
 		</keyitem>
-		<explicitdelayitem
-		duration="1000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<mouseitem
 		action="DoubleClick"
 		button="Left"
@@ -541,6 +417,119 @@ BRRRQAUUUUAf/9k=
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="28176d90-6987-4abd-b6f5-8f286de4588e"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<keysequenceitem
+		KeySequence="{NumPad2}{NumPad0}{NumPad1}{NumPad7}"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="ab3906c2-4af9-4dc1-b0ff-bc7e2ba47656">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Periode_bis">
+				</binding>
+			</bindings>
+			<info
+			id="9a937e97-2c05-4218-9302-261399f2d6f8"
+			sourcename="Recorder">
+				<path>
+					/form[@controlname='tblIbufe']/container[@controlname='ToolBar']/text[@controlname='dfPeriodeB']/text[@accessiblename='bis']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="28176d90-6987-4abd-b6f5-8f286de4588e"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b52806b9-554a-48fa-943d-d2bd058f0f6d">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Jahr_von">
+				</binding>
+			</bindings>
+			<info
+			id="6606fba0-a2ed-4dce-8196-c2fb4171347b"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='tblIbufe']/container[@controlname='ToolBar']/?/?/text[@accessiblename='Periode von']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b52806b9-554a-48fa-943d-d2bd058f0f6d">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Periode_von">
+				</binding>
+			</bindings>
+			<info
+			id="b2e3ec41-da47-49d6-a043-8528df1cb6e7"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='tblIbufe']/container[@controlname='ToolBar']/text[@controlname='dfPeriodeV']/text[@accessiblerole='Text']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -570,73 +559,6 @@ BRRRQAUUUUAf/9k=
 				yourtext
 			</matchvalue>
 		</validationitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="28176d90-6987-4abd-b6f5-8f286de4588e"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="c5e148e9-1eff-4801-8b62-0375e9b0732b"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ToolBar']/text[@controlname='dfJahrB']/text[@accessiblerole='Text']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</keyitem>
-		<explicitdelayitem
-		duration="1000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
-		<keysequenceitem
-		KeySequence="{NumPad2}{NumPad0}{NumPad1}{NumPad7}"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		searchpropertyid="ab3906c2-4af9-4dc1-b0ff-bc7e2ba47656">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="KeySequence"
-				variable="Periode_bis">
-				</binding>
-			</bindings>
-			<info
-			id="9a937e97-2c05-4218-9302-261399f2d6f8"
-			sourcename="Recorder">
-				<path>
-					/form[@controlname='tblIbufe']/container[@controlname='ToolBar']/text[@controlname='dfPeriodeB']/text[@accessiblename='bis']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</keysequenceitem>
-		<explicitdelayitem
-		duration="1000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -692,6 +614,26 @@ BRRRQAUUUUAf/9k=
 				</robustPath>
 			</info>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="e53397c8-3080-4753-a2fa-805634e58609"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e9e9c629-707e-467d-981b-f8682d004db7"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"
