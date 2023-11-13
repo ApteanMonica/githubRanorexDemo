@@ -63,10 +63,12 @@ mode="Global">
 				<path>
 					/form[@controlname='mdiLSR']/?/?/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup2']/button[@controlname='pbNew']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
 		<mouseitem
-		action="Down"
+		action="Click"
 		button="Left"
 		duration="500ms"
 		enabled="True"
@@ -124,6 +126,8 @@ mode="Global">
 				<path>
 					/form[@controlname='mdiLSR']//form[@controlname='frmKopf']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/?/?/tabpage[@controlname='tabPageKopf']/container[@controlname='groupBox2']/?/?/text[@accessiblename='Bestellung']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="5569554f-e774-48ce-aff7-0ebdae49c8f8">
@@ -202,9 +206,34 @@ P6UYP94/pS0UAJg/3j+lFLRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUU
 UAFFFFABRRRQAUUUUAFFFFAH/9k=
 			</helperscreenshot>
 		</mouseitem>
+		<keysequenceitem
+		KeySequence=""
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="0a7aa581-0d16-4078-b682-4908d704ba3a">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Bestellnr_Lieferscheinnr">
+				</binding>
+			</bindings>
+			<info
+			id="2aef4238-2544-41ec-9469-0a588ed4c973"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='mdiLSR']//form[@controlname='frmKopf']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/?/?/tabpage[@controlname='tabPageKopf']/container[@controlname='groupBox2']/?/?/text[@accessiblename='Bestellung']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
 		<setvaluerecorditem
 		attrname="AccessibleValue"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="3f7bb5f3-64d7-45f5-805f-cdd5116d5277">
 			<comment>
@@ -221,6 +250,8 @@ UAFFFFABRRRQAUUUUAFFFFAH/9k=
 				<path>
 					/form[@controlname='mdiLSR']//form[@controlname='frmKopf']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/?/?/tabpage[@controlname='tabPageKopf']/container[@controlname='groupBox2']/?/?/text[@accessiblename='Bestellung']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<AttributeValue>
 			</AttributeValue>
@@ -304,6 +335,8 @@ UAFFFFABRRRQAUUUUAFFFFAH/9k=
 				<path>
 					/form[@controlname='mdiLSR']//form[@controlname='frmKopf']/?/?/text[@controlname='dfAdr_nr_lsk']/text[@accessiblename='Lieferant']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="ba24b56c-cd67-4153-9e75-75516bde4f69">
@@ -407,7 +440,7 @@ RQB//9k=
 			</matchvalue>
 		</validationitem>
 		<mouseitem
-		action="Down"
+		action="Click"
 		button="Left"
 		duration="500ms"
 		enabled="True"
@@ -470,6 +503,8 @@ RQB//9k=
 				<path>
 					/form[@controlname='mdiLSR']//form[@controlname='frmKopf']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/?/?/tabpage[@controlname='tabPageKopf']/?/?/text[@accessiblename='Lieferscheinnummer']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="d334fce4-d3de-412c-af39-db6c7698b3f1">
@@ -556,9 +591,49 @@ Aem0+tI81xHtaSGLaWVTtlJIyQP7vvRRQBO7pGu6R1RR3Y4FJHNFKD5UiPjrtYHFFFADtw3FcjI6
 igMGGVII9qKKAFooooAKKKKACiiigAooooAKKKKACiiigAooooA//9k=
 			</helperscreenshot>
 		</mouseitem>
+		<keysequenceitem
+		KeySequence=""
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="0a7aa581-0d16-4078-b682-4908d704ba3a">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Bestellnr_Lieferscheinnr">
+				</binding>
+			</bindings>
+			<info
+			id="ce4b8421-bda7-49e4-9c20-6a39d4ca2090"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='mdiLSR']//form[@controlname='frmKopf']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/?/?/tabpage[@controlname='tabPageKopf']/?/?/text[@accessiblename='Lieferscheinnummer']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="ec4946fc-3c02-4198-9241-56ea4c949be1"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
 		<setvaluerecorditem
 		attrname="AccessibleValue"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="6fe965cd-bc79-4fc4-a2c9-c7fb5acff097">
 			<comment>
@@ -575,6 +650,8 @@ igMGGVII9qKKAFooooAKKKKACiiigAooooAKKKKACiiigAooooA//9k=
 				<path>
 					/form[@controlname='mdiLSR']//form[@controlname='frmKopf']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/?/?/tabpage[@controlname='tabPageKopf']/?/?/text[@accessiblename='Lieferscheinnummer']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<AttributeValue>
 			</AttributeValue>
@@ -598,6 +675,8 @@ igMGGVII9qKKAFooooAKKKKACiiigAooooAKKKKACiiigAooooA//9k=
 				<path>
 					/form[@controlname='mdiLSR']//form[@controlname='frmKopf']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/?/?/tabpage[@controlname='tabPageKopf']/container[@controlname='groupBox2']/?/?/text[@accessiblename='Bestellung']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<matchname>
 				AccessibleValue
@@ -665,6 +744,8 @@ igMGGVII9qKKAFooooAKKKKACiiigAooooAKKKKACiiigAooooA//9k=
 				<path>
 					/form[@controlname='mdiLSR']//form[@controlname='frmKopf']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/?/?/tabpage[@controlname='tabPageKopf']/?/?/text[@accessiblename='Lieferscheinart']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="dc72f964-edb1-4286-a3f9-2b79d79550c7">
@@ -740,6 +821,8 @@ KKKKACiiigAooooAKKKKAA8Amq8c7taGU43DNFFAEsLF4VZupHNFFFAH/9k=
 				<path>
 					/form[@controlname='mdiLSR']//form[@controlname='frmKopf']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/?/?/tabpage[@controlname='tabPageKopf']/?/?/text[@accessiblename='Lieferscheinnummer']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<matchname>
 				AccessibleValue
@@ -807,6 +890,8 @@ KKKKACiiigAooooAKKKKAA8Amq8c7taGU43DNFFAEsLF4VZupHNFFFAH/9k=
 				<path>
 					/form[@controlname='mdiLSR']//form[@controlname='frmKopf']/?/?/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpLsk']/?/?/tabpage[@controlname='tabPageKopf']/container[@controlname='groupBox2']/?/?/text[@accessiblename='Lager']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="ab73b30f-c4fc-423c-9659-0980f03439c0">
