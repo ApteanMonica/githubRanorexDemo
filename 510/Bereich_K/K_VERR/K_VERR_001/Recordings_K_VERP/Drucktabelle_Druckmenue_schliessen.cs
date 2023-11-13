@@ -24,29 +24,29 @@ namespace K_VERR_001.Recordings_K_VERP
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The k_verp_Verrechnungsprotokoll_drucken_Tabelle recording.
+    ///The Drucktabelle_Druckmenue_schliessen recording.
     /// </summary>
-    [TestModule("553aa30a-88c4-4fd5-ba47-0026efd1a905", ModuleType.Recording, 1)]
-    public partial class k_verp_Verrechnungsprotokoll_drucken_Tabelle : ITestModule
+    [TestModule("1b90d67d-e31f-4969-bc96-8701d99f5b49", ModuleType.Recording, 1)]
+    public partial class Drucktabelle_Druckmenue_schliessen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::K_VERR_001.K_VERR_001Repository repository.
         /// </summary>
         public static global::K_VERR_001.K_VERR_001Repository repo = global::K_VERR_001.K_VERR_001Repository.Instance;
 
-        static k_verp_Verrechnungsprotokoll_drucken_Tabelle instance = new k_verp_Verrechnungsprotokoll_drucken_Tabelle();
+        static Drucktabelle_Druckmenue_schliessen instance = new Drucktabelle_Druckmenue_schliessen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public k_verp_Verrechnungsprotokoll_drucken_Tabelle()
+        public Drucktabelle_Druckmenue_schliessen()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static k_verp_Verrechnungsprotokoll_drucken_Tabelle Instance
+        public static Drucktabelle_Druckmenue_schliessen Instance
         {
             get { return instance; }
         }
@@ -79,20 +79,19 @@ namespace K_VERR_001.Recordings_K_VERP
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVerp.PbDruckenDruck' at Center.", repo.FrmVerp.PbDruckenDruckInfo, new RecordItemIndex(0));
-            repo.FrmVerp.PbDruckenDruck.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblDrucken_Drucktabelle.TitleBar100Verrechnungsprotokoll_Drucktabelle'.", repo.TblDrucken_Drucktabelle.TitleBar100Verrechnungsprotokoll_DrucktabelleInfo, new RecordItemIndex(0));
+            Keyboard.PrepareFocus(repo.TblDrucken_Drucktabelle.TitleBar100Verrechnungsprotokoll_Drucktabelle);
+            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgDrucken.TitleBar100DruckeVerrechnungsprotok'", repo.DlgDrucken.TitleBar100DruckeVerrechnungsprotokInfo, new ActionTimeout(60000), new RecordItemIndex(1));
-            repo.DlgDrucken.TitleBar100DruckeVerrechnungsprotokInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(1));
+            Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbExport' at Center.", repo.DlgDrucken.PbExportInfo, new RecordItemIndex(2));
-            repo.DlgDrucken.PbExport.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgDrucken.TitleBar100DruckeVerrechnungsprotok'.", repo.DlgDrucken.TitleBar100DruckeVerrechnungsprotokInfo, new RecordItemIndex(2));
+            Keyboard.PrepareFocus(repo.DlgDrucken.TitleBar100DruckeVerrechnungsprotok);
+            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PbExportItems.Tabelle' at Center.", repo.PbExportItems.TabelleInfo, new RecordItemIndex(3));
-            repo.PbExportItems.Tabelle.Click();
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblDrucken_Drucktabelle.TitleBar100Verrechnungsprotokoll_Drucktabelle'", repo.TblDrucken_Drucktabelle.TitleBar100Verrechnungsprotokoll_DrucktabelleInfo, new ActionTimeout(60000), new RecordItemIndex(4));
-            repo.TblDrucken_Drucktabelle.TitleBar100Verrechnungsprotokoll_DrucktabelleInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(3));
+            Delay.Duration(1000, false);
             
         }
 
