@@ -162,72 +162,65 @@ namespace K_FIBU_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmVerbuch.Jahr_von' at Center.", repo.FrmVerbuch.Jahr_vonInfo, new RecordItemIndex(1));
             repo.FrmVerbuch.Jahr_von.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}' with focus on 'FrmVerbuch.Jahr_von'.", repo.FrmVerbuch.Jahr_vonInfo, new RecordItemIndex(2));
-            repo.FrmVerbuch.Jahr_von.PressKeys("{Back}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}'.", new RecordItemIndex(2));
+            Keyboard.Press("{Back}");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr_von' with focus on 'FrmVerbuch.Jahr_von'.", repo.FrmVerbuch.Jahr_vonInfo, new RecordItemIndex(3));
             repo.FrmVerbuch.Jahr_von.PressKeys(Jahr_von);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmVerbuch.Jahr_von'.", repo.FrmVerbuch.Jahr_vonInfo, new RecordItemIndex(4));
-            Keyboard.PrepareFocus(repo.FrmVerbuch.Jahr_von);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Periode_von' with focus on 'FrmVerbuch.Periode_von'.", repo.FrmVerbuch.Periode_vonInfo, new RecordItemIndex(5));
             repo.FrmVerbuch.Periode_von.PressKeys(Periode_von);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmVerbuch.Periode_von'.", repo.FrmVerbuch.Periode_vonInfo, new RecordItemIndex(6));
-            Keyboard.PrepareFocus(repo.FrmVerbuch.Periode_von);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr_bis' with focus on 'FrmVerbuch.Jahr_bis'.", repo.FrmVerbuch.Jahr_bisInfo, new RecordItemIndex(7));
             repo.FrmVerbuch.Jahr_bis.PressKeys(Jahr_bis);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmVerbuch.Jahr_bis'.", repo.FrmVerbuch.Jahr_bisInfo, new RecordItemIndex(8));
-            Keyboard.PrepareFocus(repo.FrmVerbuch.Jahr_bis);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Periode_bis' with focus on 'FrmVerbuch.Periode_bis'.", repo.FrmVerbuch.Periode_bisInfo, new RecordItemIndex(9));
             repo.FrmVerbuch.Periode_bis.PressKeys(Periode_bis);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmVerbuch.Periode_bis'.", repo.FrmVerbuch.Periode_bisInfo, new RecordItemIndex(10));
-            Keyboard.PrepareFocus(repo.FrmVerbuch.Periode_bis);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(11));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr_von) on item 'FrmVerbuch.Jahr_von'.", repo.FrmVerbuch.Jahr_vonInfo, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.FrmVerbuch.Jahr_vonInfo, "Text", Jahr_von);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVerbuch.PbOK' at Center.", repo.FrmVerbuch.PbOKInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode_von_validate) on item 'FrmVerbuch.Periode_von'.", repo.FrmVerbuch.Periode_vonInfo, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.FrmVerbuch.Periode_vonInfo, "Text", Periode_von_validate);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr_bis) on item 'FrmVerbuch.Jahr_bis'.", repo.FrmVerbuch.Jahr_bisInfo, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.FrmVerbuch.Jahr_bisInfo, "Text", Jahr_bis);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode_bis_validate) on item 'FrmVerbuch.Periode_bis'.", repo.FrmVerbuch.Periode_bisInfo, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.FrmVerbuch.Periode_bisInfo, "Text", Periode_bis_validate);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVerbuch.PbOK' at Center.", repo.FrmVerbuch.PbOKInfo, new RecordItemIndex(15));
             repo.FrmVerbuch.PbOK.Click();
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(120000), new RecordItemIndex(13));
-            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Die Periode(n) wurde(n) schon berechnet! - Überschreiben?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Die Periode(n) wurde(n) schon berechnet! - Überschreiben?");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(15));
-            repo.DlgMessageBox.Button0.Click();
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(120000), new RecordItemIndex(16));
             repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Summierung beendet! 16 Buchungen übergeleitet!\r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(17));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Summierung beendet! 16 Buchungen übergeleitet!\r\n");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Die Periode(n) wurde(n) schon berechnet! - Überschreiben?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Die Periode(n) wurde(n) schon berechnet! - Überschreiben?");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(18));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr_von) on item 'FrmVerbuch.Jahr_von'.", repo.FrmVerbuch.Jahr_vonInfo, new RecordItemIndex(19));
-            Validate.AttributeEqual(repo.FrmVerbuch.Jahr_vonInfo, "Text", Jahr_von);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(120000), new RecordItemIndex(19));
+            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode_von_validate) on item 'FrmVerbuch.Periode_von'.", repo.FrmVerbuch.Periode_vonInfo, new RecordItemIndex(20));
-            Validate.AttributeEqual(repo.FrmVerbuch.Periode_vonInfo, "Text", Periode_von_validate);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Summierung beendet! 16 Buchungen übergeleitet!\r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(20));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Summierung beendet! 16 Buchungen übergeleitet!\r\n");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr_bis) on item 'FrmVerbuch.Jahr_bis'.", repo.FrmVerbuch.Jahr_bisInfo, new RecordItemIndex(21));
-            Validate.AttributeEqual(repo.FrmVerbuch.Jahr_bisInfo, "Text", Jahr_bis);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode_bis_validate) on item 'FrmVerbuch.Periode_bis'.", repo.FrmVerbuch.Periode_bisInfo, new RecordItemIndex(22));
-            Validate.AttributeEqual(repo.FrmVerbuch.Periode_bisInfo, "Text", Periode_bis_validate);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(21));
+            repo.DlgMessageBox.Button0.Click();
             
         }
 

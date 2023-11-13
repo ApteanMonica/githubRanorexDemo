@@ -504,7 +504,7 @@ namespace K_FIBU_003
             /// Creates a new FlexGrid  folder.
             /// </summary>
             public FlexGridFolder(RepoGenBaseFolder parentFolder) :
-                    base("FlexGrid", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "69512b1b-d39e-4951-ad98-996775723fa1", "")
+                    base("FlexGrid", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "69512b1b-d39e-4951-ad98-996775723fa1", "")
             {
                 _row1_gesamtInfo = new RepoItemInfo(this, "Row1_gesamt", "row[@accessiblename='Row 1']", "", 30000, null, "87b7a883-fc37-4ddc-b56a-c68918824bb9");
                 _row2_gesamtInfo = new RepoItemInfo(this, "Row2_gesamt", "row[@accessiblename='Row 2']", "", 30000, null, "adbcb70b-fb5f-417c-b8d8-285ee39e8bfb");

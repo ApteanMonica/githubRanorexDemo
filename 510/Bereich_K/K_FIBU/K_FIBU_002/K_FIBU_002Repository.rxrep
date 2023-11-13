@@ -161,6 +161,17 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/form[@controlname='tblIbufe']/titlebar[@accessiblerole='TitleBar']
 			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="3166703d-93fe-4765-9999-e504ad83af60"
+			name="PbDataAccessLaden"
+			refimgid="f3ecb729-bd58-43fa-a758-a8a618305814"
+			refpath="/form[@controlname='tblIbufe']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Laden']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblIbufe']/container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Laden']
+			</item>
 			<folder
 			capname="container"
 			id="cbe375e4-dbed-4384-abb0-854eab1dfe78"
@@ -174,10 +185,9 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 				id="6606fba0-a2ed-4dce-8196-c2fb4171347b"
 				name="Jahr_von"
 				refimgid="71c6191e-1f9c-4763-8e28-1a5eddc1b95b"
-				refpath="/form[@controlname='tblIbufe']/container[@controlname='ToolBar']/text[@controlname='dfJahrV']/text[@accessiblename='Periode von']"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='tblIbufe']/container[@controlname='ToolBar']/?/?/text[@accessiblename='Periode von']
+					/form[@controlname='tblIbufe']/container[@controlname='ToolBar']/text[@controlname='dfJahrV']/text[@accessiblename='Periode von']
 				</item>
 				<item
 				addcaps="text,accessible"
@@ -216,69 +226,33 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 					/form[@controlname='tblIbufe']/container[@controlname='ToolBar']
 				</basepath>
 			</folder>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="3166703d-93fe-4765-9999-e504ad83af60"
-			name="PbDataAccessLaden"
-			refimgid="f3ecb729-bd58-43fa-a758-a8a618305814"
-			refpath="/form[@controlname='tblIbufe']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Laden']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblIbufe']/container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Laden']
-			</item>
-			<item
-			addcaps="cell,accessible"
-			capname="cell"
-			id="0f768c6c-1cbd-426e-aa79-950155ec60ab"
-			name="Summe"
-			refimgid="f4e08470-ca49-479d-a6df-a65a9cdfc0ad"
-			refpath="/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='colBetrag Row 0']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBetrag Row 0']
-			</item>
-			<item
-			addcaps="cell,accessible"
-			capname="cell"
-			id="25ffad7c-aa0b-4455-82c4-1d1412bc4c9a"
-			name="Aenderungsdatum_Zeile1"
-			refimgid="062c0804-61fb-4822-844b-f1b079b1b306"
-			refpath="/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colIbu_dtaendg Row 1']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colIbu_dtaendg Row 1']
-			</item>
-			<item
-			addcaps="cell,accessible"
-			capname="cell"
-			id="7e60f29c-d589-4520-9ade-6ebe9a266d82"
-			name="Aenderungsdatum_Zeile6"
-			refimgid="15e10e63-6c06-4a42-8fd3-234ffd9340d9"
-			refpath="/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 6']/cell[@accessiblename='colIbu_dtaendg Row 6']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colIbu_dtaendg Row 6']
-			</item>
 			<folder
 			addcaps="table,accessible"
 			capname="table"
 			id="7f3e05f5-5a1e-4f20-8e65-7a952f4e5eda"
 			isrooted="True"
-			name="Main_FlexGrid"
-			refpath="/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']"
+			name="Tabelle"
 			searchtimeout="30000ms"
 			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="row"
+				id="e9e9c629-707e-467d-981b-f8682d004db7"
+				name="Row1"
+				refimgid="4ea0ac2f-3482-470a-a358-c5549d4486fb"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
+				</item>
 				<item
 				addcaps="cell,accessible"
 				capname="cell"
 				id="272c5043-9f4c-44a1-a83a-f54970877832"
 				name="ColBetragRow1"
 				refimgid="4ea0ac2f-3482-470a-a358-c5549d4486fb"
-				refpath="/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBetrag Row 1']"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBetrag Row 1']
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBetrag Row 1']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -286,10 +260,9 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 				id="4c7d2449-c21d-4517-8e76-9120aea140dc"
 				name="ColBetragRow2"
 				refimgid="b6068cfe-b542-423a-a69a-90b8ee064b16"
-				refpath="/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colBetrag Row 2']"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBetrag Row 2']
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colBetrag Row 2']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -297,10 +270,9 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 				id="7911d120-c52b-4293-95c0-1f347352cb73"
 				name="ColBetragRow3"
 				refimgid="5138316e-3902-4775-b383-dca3ac87f62d"
-				refpath="/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colBetrag Row 3']"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBetrag Row 3']
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colBetrag Row 3']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -308,10 +280,9 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 				id="d9b9afdc-6766-4e9e-af16-0f27f87d0af6"
 				name="ColBetragRow4"
 				refimgid="1a48c4f4-0fda-4c1d-aa3c-024dea489492"
-				refpath="/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colBetrag Row 4']"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBetrag Row 4']
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colBetrag Row 4']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -319,10 +290,9 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 				id="d79f20ea-2031-4691-9e1f-20d581b5c88c"
 				name="ColBetragRow5"
 				refimgid="b2de2d21-13ea-4492-b907-44b659697a78"
-				refpath="/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBetrag Row 5']"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBetrag Row 5']
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBetrag Row 5']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -330,13 +300,53 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 				id="75e66eef-1468-46b1-beaf-60e36074281c"
 				name="ColBetragRow6"
 				refimgid="9581f5fa-4916-4ab5-b6d7-49207748ec96"
-				refpath="/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 6']/cell[@accessiblename='colBetrag Row 6']"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBetrag Row 6']
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 6']/cell[@accessiblename='colBetrag Row 6']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="25ffad7c-aa0b-4455-82c4-1d1412bc4c9a"
+				name="Aenderungsdatum_Zeile1"
+				refimgid="062c0804-61fb-4822-844b-f1b079b1b306"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colIbu_dtaendg Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="7e60f29c-d589-4520-9ade-6ebe9a266d82"
+				name="Aenderungsdatum_Zeile6"
+				refimgid="15e10e63-6c06-4a42-8fd3-234ffd9340d9"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 6']/cell[@accessiblename='colIbu_dtaendg Row 6']
 				</item>
 				<basepath>
-					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+				</basepath>
+			</folder>
+			<folder
+			capname="table"
+			id="9f2581d5-a1c6-4bf7-bca0-b28fe74f6f7f"
+			isrooted="True"
+			name="Fusszeile_Summe"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="0f768c6c-1cbd-426e-aa79-950155ec60ab"
+				name="Summe"
+				refimgid="f4e08470-ca49-479d-a6df-a65a9cdfc0ad"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='colBetrag Row 0']
+				</item>
+				<basepath>
+					/form[@controlname='tblIbufe']/container[@controlname='ChildTableWindow']/element[@controlname='splitGrid']/table[@accessiblename='FlexGrid']
 				</basepath>
 			</folder>
 			<basepath>
