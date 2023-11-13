@@ -42,6 +42,7 @@ namespace S_ALLTAB_Schnelltest.Recordings_SAMK
         public Aenderung_SAMK_Speichern_Pruefung()
         {
             SAMK_CD_NEU = "KX";
+            SAMK_BEZ = "S_ALLTAB_Schnelltest";
         }
 
         /// <summary>
@@ -53,6 +54,18 @@ namespace S_ALLTAB_Schnelltest.Recordings_SAMK
         }
 
 #region Variables
+
+        string _SAMK_BEZ;
+
+        /// <summary>
+        /// Gets or sets the value of variable SAMK_BEZ.
+        /// </summary>
+        [TestVariable("f093573f-1c7b-492c-8eb3-ddcb732ffcc4")]
+        public string SAMK_BEZ
+        {
+            get { return _SAMK_BEZ; }
+            set { _SAMK_BEZ = value; }
+        }
 
         /// <summary>
         /// Gets or sets the value of variable SAMK_CD_NEU.
@@ -123,8 +136,8 @@ namespace S_ALLTAB_Schnelltest.Recordings_SAMK
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='L') on item 'TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKl'.", repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKlInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKlInfo, "Text", "L");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='test') on item 'TblSamk.Row_mit_SAMK_CD_NEU.ColSamkBez'.", repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkBezInfo, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkBezInfo, "Text", "test");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$SAMK_BEZ) on item 'TblSamk.Row_mit_SAMK_CD_NEU.ColSamkBez'.", repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkBezInfo, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkBezInfo, "Text", SAMK_BEZ);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2000') on item 'TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKto'.", repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKtoInfo, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKtoInfo, "Text", "2000");

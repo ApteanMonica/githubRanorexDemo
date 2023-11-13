@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace S_ALLTAB_Schnelltest.Recordings_SAMK
+namespace B_BER_Schnelltest.Recordings_Bereiche
 {
-    public partial class Neuanlage_SAMK
+    public partial class Loeschen_BER_CD_NEU_pruefen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

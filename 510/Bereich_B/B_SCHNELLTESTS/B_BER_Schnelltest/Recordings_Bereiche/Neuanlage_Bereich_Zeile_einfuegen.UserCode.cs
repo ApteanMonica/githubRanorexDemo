@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_BER_Schnelltest.Recordings_Bereiche
 {
-    public partial class Neuanlage_Bereich
+    public partial class Neuanlage_Bereich_Zeile_einfuegen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

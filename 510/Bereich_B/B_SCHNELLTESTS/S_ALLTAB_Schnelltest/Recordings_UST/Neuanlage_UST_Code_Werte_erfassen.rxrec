@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Neuanlage_UST_Code"
+	classname="Neuanlage_UST_Code_Werte_erfassen"
 	namespace="S_ALLTAB_Schnelltest.Recordings_UST">
 	</codegen>
 	<variables>
@@ -28,281 +28,13 @@ mode="Global">
 		name="UST_CD_NEU">
 			R77
 		</var>
+		<var
+		id="0f2536d9-29f2-4a97-ab84-4468a2178ca8"
+		name="UST_BEZ">
+			S_ALLTAB_Schnelltest
+		</var>
 	</variables>
 	<recorditems>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="ab5b5876-1ff7-4bb7-aad4-b4e55a9c8800"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="a62d5a46-cfa3-4f06-83c5-4ad7ed6d9700"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblUstVerwalten']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_New']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="66046c31-5af9-47b1-976d-0293cb34af76"
-		waitaction="NotExists"
-		waittimeout="30000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="5c280ffe-7b58-41c3-b63e-0cab0fcb3f1c"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblUstVerwalten']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
-		<mouseitem
-		action="Click"
-		button="Right"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="633bd00d-1d73-48a4-86f4-e7b169005757"
-		sx="683"
-		sy="405"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="8cbc015f-99e3-483c-b2c3-c64558c986e5"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="1"
-				prefcap="table"
-				rect="1,101,1364,609"
-				role="table"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						FlexGrid
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Table
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='tblUstVerwalten']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="8ac8e104-09c5-45e5-a1ed-6a9fe5b822d9"
-		waitaction="Exists"
-		waittimeout="10000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="d3bdbb08-44d4-4bc9-b187-6a797e170df3"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="0"
-				prefcap="menuitem"
-				rect="550,334,250,22"
-				role="menuitem"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="checked"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						Zeile einfügen
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Drücken
-					</attribute>
-					<attribute
-					name="accessiblekeyboardshortcut"
-					type="System.String">
-						z
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						Zeile einfügen
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						MenuItem
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-					</attribute>
-				</element>
-				<path>
-					/contextmenu[@processname='S_ALLTAB']/menuitem[@accessiblename='Zeile einfügen']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="3cbac633-0cf7-42c7-ac4b-fd16c52d08ef"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="d3bdbb08-44d4-4bc9-b187-6a797e170df3"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="0"
-				prefcap="menuitem"
-				rect="550,334,250,22"
-				role="menuitem"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="checked"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						Zeile einfügen
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Drücken
-					</attribute>
-					<attribute
-					name="accessiblekeyboardshortcut"
-					type="System.String">
-						z
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						Zeile einfügen
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						MenuItem
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-					</attribute>
-				</element>
-				<path>
-					/contextmenu[@processname='S_ALLTAB']/menuitem[@accessiblename='Zeile einfügen']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="9cb070ee-dd09-4659-80c7-1826841f8f63"
-		waitaction="Exists"
-		waittimeout="30000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="a3ca8518-1d1a-4085-8e1e-3dffdf78e3c5"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblUstVerwalten']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
 		<keysequenceitem
 		KeySequence=""
 		duration="100ms"
@@ -3810,6 +3542,166 @@ ipaKAIvLFL5YqSigBoXFOoooAKKKKAP/2Q==
 				AT
 			</matchvalue>
 		</validationitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="46ed3e7a-5059-4f27-8615-fa9edcb8d07f"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="46ed3e7a-5059-4f27-8615-fa9edcb8d07f"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="46ed3e7a-5059-4f27-8615-fa9edcb8d07f"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<keysequenceitem
+		KeySequence="AT"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="5bfa59a2-8d3a-48d9-8576-b27f0ba8a1df">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="UST_BEZ">
+				</binding>
+			</bindings>
+		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="46ed3e7a-5059-4f27-8615-fa9edcb8d07f"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="43c766fd-a24d-4803-86ca-b03555edd6a3">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="UST_BEZ">
+				</binding>
+			</bindings>
+			<info
+			id="67eee0a9-d825-46a9-8131-946428b82f96"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="19"
+				prefcap="cell"
+				rect="701,133,141,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						erhaltene Baul. Ö §19 20%
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colUst_text Row 1
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Cell
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Selected, Focusable, Selectable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						erhaltene Baul. Ö §19 20%
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblUstVerwalten']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colUst_text Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				AT
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="e3834078-795f-4923-b053-58d50595caf9"
@@ -3826,7 +3718,7 @@ ipaKAIvLFL5YqSigBoXFOoooAKKKKAP/2Q==
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Neuanlage_UST_Code.UserCode.cs
+		Neuanlage_UST_Code_Werte_erfassen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

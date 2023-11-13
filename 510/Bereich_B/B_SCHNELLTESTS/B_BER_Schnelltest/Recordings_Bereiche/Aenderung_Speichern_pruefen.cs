@@ -119,26 +119,26 @@ namespace B_BER_Schnelltest.Recordings_Bereiche
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBer.PbDataAccessSave' at Center.", repo.TblBer.PbDataAccessSaveInfo, new RecordItemIndex(0));
             repo.TblBer.PbDataAccessSave.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BER_CD_NEU) on item 'TblBer.FlexGrid_Tabelle.ColBerCdRow5'.", repo.TblBer.FlexGrid_Tabelle.ColBerCdRow5Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblBer.FlexGrid_Tabelle.ColBerCdRow5Info, "Text", BER_CD_NEU);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BER_CD_NEU) on item 'TblBer.row5.ColBerCdRow5'.", repo.TblBer.row5.ColBerCdRow5Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblBer.row5.ColBerCdRow5Info, "Text", BER_CD_NEU);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BER_BEZ_AEN) on item 'TblBer.FlexGrid_Tabelle.ColBerBezRow5'.", repo.TblBer.FlexGrid_Tabelle.ColBerBezRow5Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblBer.FlexGrid_Tabelle.ColBerBezRow5Info, "Text", BER_BEZ_AEN);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BER_BEZ_AEN) on item 'TblBer.row5.ColBerBezRow5'.", repo.TblBer.row5.ColBerBezRow5Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblBer.row5.ColBerBezRow5Info, "Text", BER_BEZ_AEN);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FIBU_POS_AEN) on item 'TblBer.FlexGrid_Tabelle.ColBerPosRow5'.", repo.TblBer.FlexGrid_Tabelle.ColBerPosRow5Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.TblBer.FlexGrid_Tabelle.ColBerPosRow5Info, "Text", FIBU_POS_AEN);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FIBU_POS_AEN) on item 'TblBer.row5.ColBerPosRow5'.", repo.TblBer.row5.ColBerPosRow5Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.TblBer.row5.ColBerPosRow5Info, "Text", FIBU_POS_AEN);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5'.", repo.TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.TblBer.FlexGrid_Tabelle.ColBerKontrBestandRow5Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBer.row5.ColBerKontrBestandRow5'.", repo.TblBer.row5.ColBerKontrBestandRow5Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.TblBer.row5.ColBerKontrBestandRow5Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBer.FlexGrid_Tabelle.ColBerKontrErfolgRow5'.", repo.TblBer.FlexGrid_Tabelle.ColBerKontrErfolgRow5Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.TblBer.FlexGrid_Tabelle.ColBerKontrErfolgRow5Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblBer.row5.ColBerKontrErfolgRow5'.", repo.TblBer.row5.ColBerKontrErfolgRow5Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.TblBer.row5.ColBerKontrErfolgRow5Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='False') on item 'TblBer.FlexGrid_Tabelle.ColBerKzherkRow5'.", repo.TblBer.FlexGrid_Tabelle.ColBerKzherkRow5Info, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.TblBer.FlexGrid_Tabelle.ColBerKzherkRow5Info, "AccessibleValue", "False");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='False') on item 'TblBer.row5.ColBerKzherkRow5'.", repo.TblBer.row5.ColBerKzherkRow5Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.TblBer.row5.ColBerKzherkRow5Info, "AccessibleValue", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='True') on item 'TblBer.FlexGrid_Tabelle.ColBerCd1VerrRow5'.", repo.TblBer.FlexGrid_Tabelle.ColBerCd1VerrRow5Info, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.TblBer.FlexGrid_Tabelle.ColBerCd1VerrRow5Info, "AccessibleValue", "True");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='True') on item 'TblBer.row5.ColBerCd1VerrRow5'.", repo.TblBer.row5.ColBerCd1VerrRow5Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.TblBer.row5.ColBerCd1VerrRow5Info, "AccessibleValue", "True");
             
         }
 

@@ -127,29 +127,53 @@
       <id>89d1b1eb-a601-4f83-9d54-adbe965e9899</id>
       <BoundTo>62f5ccdf-f73e-4354-9fb2-20d0dd6e73ed</BoundTo>
     </Compile>
-    <Compile Include="Recordings_Bereiche\Loeschen_Bereich_pruefen.cs">
+    <Compile Include="Recordings_Bereiche\Loeschen_Bereich_Alt_Kostenstellen_nicht_moeglich.cs">
+      <BoundTo>64402b58-b7ed-4d4c-bd13-13a4845a3807</BoundTo>
+      <DependentUpon>Loeschen_Bereich_Alt_Kostenstellen_nicht_moeglich.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ec298507-9a8e-4c6d-ad13-b1725a3bada9</id>
+    </Compile>
+    <Compile Include="Recordings_Bereiche\Loeschen_Bereich_Alt_Kostenstellen_nicht_moeglich.UserCode.cs">
+      <BoundTo>64402b58-b7ed-4d4c-bd13-13a4845a3807</BoundTo>
+      <DependentUpon>Loeschen_Bereich_Alt_Kostenstellen_nicht_moeglich.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8863b3cf-6dc3-4fcb-bd43-4bf96a5f7deb</id>
+    </Compile>
+    <Compile Include="Recordings_Bereiche\Loeschen_BER_CD_NEU_pruefen.cs">
       <BoundTo>d5afa243-03ad-4366-a121-ff3aef12141d</BoundTo>
-      <DependentUpon>Loeschen_Bereich_pruefen.rxrec</DependentUpon>
+      <DependentUpon>Loeschen_BER_CD_NEU_pruefen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>c77abb82-bb83-43e2-b258-05c716b12e8e</id>
     </Compile>
-    <Compile Include="Recordings_Bereiche\Loeschen_Bereich_pruefen.UserCode.cs">
+    <Compile Include="Recordings_Bereiche\Loeschen_BER_CD_NEU_pruefen.UserCode.cs">
       <BoundTo>d5afa243-03ad-4366-a121-ff3aef12141d</BoundTo>
-      <DependentUpon>Loeschen_Bereich_pruefen.rxrec</DependentUpon>
+      <DependentUpon>Loeschen_BER_CD_NEU_pruefen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>2bbdb918-ae4c-46eb-ad15-16beaeff005f</id>
     </Compile>
-    <Compile Include="Recordings_Bereiche\Neuanlage_Bereich.cs">
+    <Compile Include="Recordings_Bereiche\Neuanlage_Bereich_Werte_erfassen.cs">
       <BoundTo>38a5b184-24ea-473a-8d08-03274895e1de</BoundTo>
-      <DependentUpon>Neuanlage_Bereich.rxrec</DependentUpon>
+      <DependentUpon>Neuanlage_Bereich_Werte_erfassen.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>478f312e-c3b4-46a5-9297-f6b1fda6f000</id>
     </Compile>
-    <Compile Include="Recordings_Bereiche\Neuanlage_Bereich.UserCode.cs">
+    <Compile Include="Recordings_Bereiche\Neuanlage_Bereich_Werte_erfassen.UserCode.cs">
       <BoundTo>38a5b184-24ea-473a-8d08-03274895e1de</BoundTo>
-      <DependentUpon>Neuanlage_Bereich.rxrec</DependentUpon>
+      <DependentUpon>Neuanlage_Bereich_Werte_erfassen.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>c3346be3-99c3-416a-b89a-73153c07a0ef</id>
+    </Compile>
+    <Compile Include="Recordings_Bereiche\Neuanlage_Bereich_Zeile_einfuegen.cs">
+      <DependentUpon>Neuanlage_Bereich_Zeile_einfuegen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8d8ee5f8-fa99-4ae3-8571-66e1c68e9c40</id>
+      <BoundTo>bc53a34d-6ca5-42f4-b0d9-c38a4b4f7a37</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_Bereiche\Neuanlage_Bereich_Zeile_einfuegen.UserCode.cs">
+      <DependentUpon>Neuanlage_Bereich_Zeile_einfuegen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b3b0f650-20b4-47c4-a16a-2b653a53ced9</id>
+      <BoundTo>bc53a34d-6ca5-42f4-b0d9-c38a4b4f7a37</BoundTo>
     </Compile>
     <Compile Include="Recordings_Bereiche\Neuanlage_Speichern_pruefen.cs">
       <BoundTo>cd46f004-0f29-4aba-93a2-54413f279d6b</BoundTo>
@@ -278,15 +302,25 @@
       <id>62f5ccdf-f73e-4354-9fb2-20d0dd6e73ed</id>
       <recordtableid>dd0e6cd7-5a99-4ccf-aba8-3bd917f544ba</recordtableid>
     </None>
-    <None Include="Recordings_Bereiche\Loeschen_Bereich_pruefen.rxrec">
+    <None Include="Recordings_Bereiche\Loeschen_Bereich_Alt_Kostenstellen_nicht_moeglich.rxrec">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <id>64402b58-b7ed-4d4c-bd13-13a4845a3807</id>
+      <recordtableid>b9560b63-2aff-4553-8d9b-4f12b75a286e</recordtableid>
+    </None>
+    <None Include="Recordings_Bereiche\Loeschen_BER_CD_NEU_pruefen.rxrec">
       <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
       <id>d5afa243-03ad-4366-a121-ff3aef12141d</id>
       <recordtableid>6a00bf48-7410-4b4a-a6e2-401ed7dbd8f4</recordtableid>
     </None>
-    <None Include="Recordings_Bereiche\Neuanlage_Bereich.rxrec">
+    <None Include="Recordings_Bereiche\Neuanlage_Bereich_Werte_erfassen.rxrec">
       <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
       <id>38a5b184-24ea-473a-8d08-03274895e1de</id>
       <recordtableid>e96046f2-7447-4de2-87b1-7d28c8a0a004</recordtableid>
+    </None>
+    <None Include="Recordings_Bereiche\Neuanlage_Bereich_Zeile_einfuegen.rxrec">
+      <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>
+      <id>bc53a34d-6ca5-42f4-b0d9-c38a4b4f7a37</id>
+      <recordtableid>90907124-69ea-4a9e-948f-4a40de5c363d</recordtableid>
     </None>
     <None Include="Recordings_Bereiche\Neuanlage_Speichern_pruefen.rxrec">
       <BoundTo>b3e032ba-404a-4c79-89e5-c9b08ea4ba98</BoundTo>

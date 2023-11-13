@@ -24,22 +24,22 @@ namespace S_ALLTAB_Schnelltest.Recordings_SAMK
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Speichern_Pruefen_Neuanlage_SAMK recording.
+    ///The Neuanlage_SAMK_Werte_erfassen recording.
     /// </summary>
-    [TestModule("878b8378-fe4a-4756-b262-316a472dab2e", ModuleType.Recording, 1)]
-    public partial class Speichern_Pruefen_Neuanlage_SAMK : ITestModule
+    [TestModule("b313d928-40c5-4484-8a8c-ac62667fdc47", ModuleType.Recording, 1)]
+    public partial class Neuanlage_SAMK_Werte_erfassen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_ALLTAB_Schnelltest.S_ALLTAB_SchnelltestRepository repository.
         /// </summary>
         public static global::S_ALLTAB_Schnelltest.S_ALLTAB_SchnelltestRepository repo = global::S_ALLTAB_Schnelltest.S_ALLTAB_SchnelltestRepository.Instance;
 
-        static Speichern_Pruefen_Neuanlage_SAMK instance = new Speichern_Pruefen_Neuanlage_SAMK();
+        static Neuanlage_SAMK_Werte_erfassen instance = new Neuanlage_SAMK_Werte_erfassen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Speichern_Pruefen_Neuanlage_SAMK()
+        public Neuanlage_SAMK_Werte_erfassen()
         {
             SAMK_CD_NEU = "KX";
             SAMK_BEZ = "S_ALLTAB_Schnelltest";
@@ -48,7 +48,7 @@ namespace S_ALLTAB_Schnelltest.Recordings_SAMK
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Speichern_Pruefen_Neuanlage_SAMK Instance
+        public static Neuanlage_SAMK_Werte_erfassen Instance
         {
             get { return instance; }
         }
@@ -60,7 +60,7 @@ namespace S_ALLTAB_Schnelltest.Recordings_SAMK
         /// <summary>
         /// Gets or sets the value of variable SAMK_BEZ.
         /// </summary>
-        [TestVariable("4c5ef476-dbe8-4eac-9e25-59553b538062")]
+        [TestVariable("ac8c2a14-63ae-4f84-9ed7-d78da996c018")]
         public string SAMK_BEZ
         {
             get { return _SAMK_BEZ; }
@@ -70,7 +70,7 @@ namespace S_ALLTAB_Schnelltest.Recordings_SAMK
         /// <summary>
         /// Gets or sets the value of variable SAMK_CD_NEU.
         /// </summary>
-        [TestVariable("df6cf195-d1da-4af2-bd8c-f4d78ab0f0aa")]
+        [TestVariable("6f5c86b5-5118-4595-8da1-af8f7ef01e32")]
         public string SAMK_CD_NEU
         {
             get { return repo.SAMK_CD_NEU; }
@@ -103,29 +103,41 @@ namespace S_ALLTAB_Schnelltest.Recordings_SAMK
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblSamk.PbDataAccessSave' at Center.", repo.TblSamk.PbDataAccessSaveInfo, new RecordItemIndex(0));
-            repo.TblSamk.PbDataAccessSave.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$SAMK_CD_NEU'.", new RecordItemIndex(0));
+            Keyboard.Press(SAMK_CD_NEU);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
-            Delay.Duration(1000, false);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(1));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblSamk.PbDataAccessLoad' at Center.", repo.TblSamk.PbDataAccessLoadInfo, new RecordItemIndex(2));
-            repo.TblSamk.PbDataAccessLoad.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$SAMK_CD_NEU) on item 'TblSamk.Row1.ColSamkCdRow1'.", repo.TblSamk.Row1.ColSamkCdRow1Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblSamk.Row1.ColSamkCdRow1Info, "Text", SAMK_CD_NEU);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'TblSamk.Row_mit_SAMK_CD_NEU.row'", repo.TblSamk.Row_mit_SAMK_CD_NEU.rowInfo, new ActionTimeout(30000), new RecordItemIndex(3));
-            repo.TblSamk.Row_mit_SAMK_CD_NEU.rowInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'K'.", new RecordItemIndex(3));
+            Keyboard.Press("K");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$SAMK_CD_NEU) on item 'TblSamk.Row_mit_SAMK_CD_NEU.ColSamkCd'.", repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkCdInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkCdInfo, "Text", SAMK_CD_NEU);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='K') on item 'TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKl'.", repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKlInfo, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKlInfo, "Text", "K");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='K') on item 'TblSamk.Row1.ColSamkKlRow1'.", repo.TblSamk.Row1.ColSamkKlRow1Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.TblSamk.Row1.ColSamkKlRow1Info, "Text", "K");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$SAMK_BEZ) on item 'TblSamk.Row_mit_SAMK_CD_NEU.ColSamkBez'.", repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkBezInfo, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkBezInfo, "Text", SAMK_BEZ);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$SAMK_BEZ'.", new RecordItemIndex(6));
+            Keyboard.Press(SAMK_BEZ);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2000') on item 'TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKto'.", repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKtoInfo, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.TblSamk.Row_mit_SAMK_CD_NEU.ColSamkKtoInfo, "Text", "2000");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$SAMK_BEZ) on item 'TblSamk.Row1.ColSamkBezRow1'.", repo.TblSamk.Row1.ColSamkBezRow1Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.TblSamk.Row1.ColSamkBezRow1Info, "Text", SAMK_BEZ);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2000'.", new RecordItemIndex(9));
+            Keyboard.Press("2000");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2000') on item 'TblSamk.Row1.ColSamkKtoRow1'.", repo.TblSamk.Row1.ColSamkKtoRow1Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.TblSamk.Row1.ColSamkKtoRow1Info, "Text", "2000");
             
         }
 

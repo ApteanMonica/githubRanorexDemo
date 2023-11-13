@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="e96046f2-7447-4de2-87b1-7d28c8a0a004"
+id="90907124-69ea-4a9e-948f-4a40de5c363d"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,25 +19,10 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Neuanlage_Bereich"
+	classname="Neuanlage_Bereich_Zeile_einfuegen"
 	namespace="B_BER_Schnelltest.Recordings_Bereiche">
 	</codegen>
 	<variables>
-		<var
-		id="adb9b1de-7280-4683-a1d7-5f0933c323bb"
-		name="BER_CD_NEU">
-			5
-		</var>
-		<var
-		id="09a108b1-f4df-4031-b305-8169b0837bcf"
-		name="BER_BEZ_NEU">
-			B_BER_ST
-		</var>
-		<var
-		id="3cb9052b-eef6-488d-8a96-e48478c50314"
-		name="FIBU_POS_NEU">
-			5
-		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -45,7 +30,7 @@ mode="Global">
 		button="Right"
 		duration="500ms"
 		enabled="True"
-		loc="LowerCenter"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="bddf4674-b433-48bb-a2da-b63334583ae6"
@@ -801,289 +786,49 @@ pPYTKK27faAxh+YSFjJkcjnA9fSols3KyhogN6HIwoBb2x/WtOisrk3M97YtKjeVIqgDaE2fJ+fT
 VuUvLdhG6oqkAHb8p55P19q26pQ/65frV2tIvQpBRRRVDCiiigD/2Q==
 			</helperscreenshot>
 		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<WaitForRecordItem
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
 		optional="False"
-		searchpropertyid="b1f45f84-a851-40d9-974e-3344dd6b8196"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		searchpropertyid="06ec9463-5aa1-44cc-a123-f8a1a30965cd"
+		waitaction="Exists"
+		waittimeout="30000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="daabeb4b-32f1-4220-bffc-82ef52eb38b6"
+			id="0a158f8f-1fab-4c52-badd-2ab40dc335d9"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBer_cd Row 5']
+					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</mouseitem>
-		<keysequenceitem
-		KeySequence="5"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		presstime="100ms"
-		searchpropertyid="088591c3-6209-4a95-9320-e08f4932d41b">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="KeySequence"
-				variable="BER_CD_NEU">
-				</binding>
-			</bindings>
-			<info
-			id="daabeb4b-32f1-4220-bffc-82ef52eb38b6"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBer_cd Row 5']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</keysequenceitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		presstime="100ms"
-		scancode="0"
-		searchpropertyid="e5d7d1fd-ec0a-4373-9130-c4b2819a7518"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
-		<keysequenceitem
-		KeySequence="B_BER_Schnelltest"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		presstime="100ms"
-		searchpropertyid="cbd69b5a-c93c-4625-b012-71fbc4323fc6">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="KeySequence"
-				variable="BER_BEZ_NEU">
-				</binding>
-			</bindings>
-			<info
-			id="85a5e474-25f1-42f6-851b-b6d2423ba7a9"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBer_bez Row 5']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</keysequenceitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		presstime="100ms"
-		scancode="0"
-		searchpropertyid="e5d7d1fd-ec0a-4373-9130-c4b2819a7518"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
-		<keysequenceitem
-		KeySequence="5"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		presstime="100ms"
-		searchpropertyid="a961a309-403c-4f0a-b72d-060b04756854">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="KeySequence"
-				variable="FIBU_POS_NEU">
-				</binding>
-			</bindings>
-			<info
-			id="bb94143b-7e1c-4bfe-9398-b70f4332fc02"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="3"
-				prefcap="cell"
-				rect="361,424,44,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colBer_pos Row 5
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBer_pos Row 5']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</keysequenceitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		presstime="100ms"
-		scancode="0"
-		searchpropertyid="e5d7d1fd-ec0a-4373-9130-c4b2819a7518"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
+		</WaitForRecordItem>
 		<validationitem
-		action="AttributeEqual"
+		action="Exists"
 		enabled="True"
 		optional="False"
-		searchpropertyid="7ddd60b1-f134-48b9-83ff-8218c44a455e">
+		searchpropertyid="cee75707-d05f-4e3d-b002-7a8e8efd3898">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="MatchValue"
-				variable="BER_CD_NEU">
-				</binding>
 			</bindings>
 			<info
-			id="daabeb4b-32f1-4220-bffc-82ef52eb38b6"
+			id="0a158f8f-1fab-4c52-badd-2ab40dc335d9"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBer_cd Row 5']
+					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 			<matchname>
-				Text
+				(Choose)
 			</matchname>
 			<matchvalue>
-				5
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="ddc565e1-d1d4-49ce-8e15-3f74fa36a6f1">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="BER_BEZ_NEU">
-				</binding>
-			</bindings>
-			<info
-			id="85a5e474-25f1-42f6-851b-b6d2423ba7a9"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBer_bez Row 5']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				B_BER_Schnelltest
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="d7e02ad4-d590-4bed-a9de-dc1bd723b0f7">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="FIBU_POS_NEU">
-				</binding>
-			</bindings>
-			<info
-			id="bb94143b-7e1c-4bfe-9398-b70f4332fc02"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblBer']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colBer_pos Row 5']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				5
+				yourValue
 			</matchvalue>
 		</validationitem>
 	</recorditems>
@@ -1102,7 +847,7 @@ VuUvLdhG6oqkAHb8p55P19q26pQ/65frV2tIvQpBRRRVDCiiigD/2Q==
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Neuanlage_Bereich.UserCode.cs
+		Neuanlage_Bereich_Zeile_einfuegen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

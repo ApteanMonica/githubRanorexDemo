@@ -42,7 +42,7 @@ namespace B_BER_Schnelltest.Recordings_Bereiche
         public Neuanlage_Speichern_pruefen()
         {
             BER_CD_NEU = "5";
-            BER_BEZ_NEU = "B_BER_ST";
+            BER_BEZ_NEU = "B_BER_Schnelltest";
             FIBU_POS_NEU = "5";
         }
 
@@ -121,14 +121,14 @@ namespace B_BER_Schnelltest.Recordings_Bereiche
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBer.PbDataAccessSave' at .493;.458.", repo.TblBer.PbDataAccessSaveInfo, new RecordItemIndex(0));
             repo.TblBer.PbDataAccessSave.Click(".493;.458");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BER_CD_NEU) on item 'TblBer.FlexGrid_Tabelle.ColBerCdRow5'.", repo.TblBer.FlexGrid_Tabelle.ColBerCdRow5Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblBer.FlexGrid_Tabelle.ColBerCdRow5Info, "Text", BER_CD_NEU);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BER_CD_NEU) on item 'TblBer.row5.ColBerCdRow5'.", repo.TblBer.row5.ColBerCdRow5Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblBer.row5.ColBerCdRow5Info, "Text", BER_CD_NEU);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BER_BEZ_NEU) on item 'TblBer.FlexGrid_Tabelle.ColBerBezRow5'.", repo.TblBer.FlexGrid_Tabelle.ColBerBezRow5Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblBer.FlexGrid_Tabelle.ColBerBezRow5Info, "Text", BER_BEZ_NEU);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BER_BEZ_NEU) on item 'TblBer.row5.ColBerBezRow5'.", repo.TblBer.row5.ColBerBezRow5Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblBer.row5.ColBerBezRow5Info, "Text", BER_BEZ_NEU);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FIBU_POS_NEU) on item 'TblBer.FlexGrid_Tabelle.ColBerPosRow5'.", repo.TblBer.FlexGrid_Tabelle.ColBerPosRow5Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.TblBer.FlexGrid_Tabelle.ColBerPosRow5Info, "Text", FIBU_POS_NEU);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$FIBU_POS_NEU) on item 'TblBer.row5.ColBerPosRow5'.", repo.TblBer.row5.ColBerPosRow5Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.TblBer.row5.ColBerPosRow5Info, "Text", FIBU_POS_NEU);
             
         }
 
