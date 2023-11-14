@@ -1406,7 +1406,7 @@ namespace E_INFO_001
                 _colrechnrrow6Info = new RepoItemInfo(this, "ColRechNrRow6", "?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colRech_nr Row 6']", "", 30000, null, "1225e79a-4382-44ce-9ca8-a223eb8ea83c");
                 _collskstatusrow1Info = new RepoItemInfo(this, "ColLskStatusRow1", "?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLsk_status Row 1']", "", 30000, null, "87596419-40e8-4077-a91d-9b061d96045a");
                 _collartplusminusrow11Info = new RepoItemInfo(this, "ColLartPlusminusRow11", "?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLart_plusminus Row 11']", "", 30000, null, "22718c9b-03ef-4040-8a4c-a56394994d81");
-                _collsknrrow1Info = new RepoItemInfo(this, "ColLskNrRow1", "?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLsk_nr Row 1']", "", 30000, null, "6d3e0126-8436-419b-9465-ebdfd654c4e0");
+                _collsknrrow1Info = new RepoItemInfo(this, "ColLskNrRow1", "element/form/container/element/table/row[@accessiblename='Row 1']/cell[@accessiblename='colRech_nr Row 1']", "", 30000, null, "6d3e0126-8436-419b-9465-ebdfd654c4e0");
                 _collsknrrow3Info = new RepoItemInfo(this, "ColLskNrRow3", "?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLsk_nr Row 3']", "", 30000, null, "6f90a185-87e5-4d4d-9779-8ec37f84d0c7");
                 _colrechnrrow3Info = new RepoItemInfo(this, "ColRechNrRow3", "?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colRech_nr Row 3']", "", 30000, null, "c79ebc2b-b0fe-4d1c-9f9f-d8c7fae63518");
                 _collartcdrow4Info = new RepoItemInfo(this, "ColLartCdRow4", "?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLart_cd Row 4']", "", 30000, null, "f2cb371c-74fa-47d5-a528-1d744e917a1e");
@@ -1922,7 +1922,7 @@ namespace E_INFO_001
             {
                 _colreacdrow8Info = new RepoItemInfo(this, "ColReaCdRow8", "?/?/cell[@accessiblename='colRea_cd Row 8']", "", 30000, null, "f86142ef-525c-4e89-aaa4-e68466094861");
                 _colrechdtfiburow8Info = new RepoItemInfo(this, "ColRechDtfibuRow8", "?/?/cell[@accessiblename='colRech_dtfibu Row 8']", "", 30000, null, "97496772-0106-4ce7-98cd-a3f381b9abf5");
-                _colrechnrrow3Info = new RepoItemInfo(this, "ColRechNrRow3", "?/?/cell[@accessiblename='colRech_nr Row 3']", "", 30000, null, "a6f621f2-a38a-4273-83ff-64f0087c06d9");
+                _colrechnrrow3Info = new RepoItemInfo(this, "ColRechNrRow3", "element[@controltypename='MdiClient']/form[@controlname='tblRech']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colRech_nr Row 3']", "", 30000, null, "a6f621f2-a38a-4273-83ff-64f0087c06d9");
                 _colrechstatusrow3Info = new RepoItemInfo(this, "ColRechStatusRow3", "?/?/cell[@accessiblename='colRech_status Row 3']", "", 30000, null, "f342d41e-9d75-4dec-a643-69e7034ed28b");
                 _colrechnrrow1Info = new RepoItemInfo(this, "ColRechNrRow1", "?/?/cell[@accessiblename='colRech_nr Row 1']", "", 30000, null, "abe2e764-6375-48e1-883c-b4acd72bb407");
                 _colrechstatusrow1Info = new RepoItemInfo(this, "ColRechStatusRow1", "?/?/cell[@accessiblename='colRech_status Row 1']", "", 30000, null, "3a50a918-c2a7-40ca-bac2-8a621fc32e3b");
@@ -2249,6 +2249,7 @@ namespace E_INFO_001
             E_INFO_001RepositoryFolders.FlexGridFolder1 _flexgrid;
             RepoItemInfo _colrechnrrow3Info;
             RepoItemInfo _colreacdrow9Info;
+            RepoItemInfo _collsknrrow1Info;
 
             /// <summary>
             /// Creates a new MdiEInfo1  folder.
@@ -2259,6 +2260,7 @@ namespace E_INFO_001
                 _flexgrid = new E_INFO_001RepositoryFolders.FlexGridFolder1(this);
                 _colrechnrrow3Info = new RepoItemInfo(this, "ColRechNrRow3", "?/?/form//table/row[@accessiblename='Row 3']/cell[@accessiblename='colRech_nr Row 3']", "", 30000, null, "7f8a4dc6-9ab0-412d-a2c2-4303571d877d");
                 _colreacdrow9Info = new RepoItemInfo(this, "ColReaCdRow9", "?/?/form[@controlname='tblRech']/container[@controlname='ChildTableWindow']//?/cell[@accessiblename~'colRea_cd Row ' and @text='G']", "", 30000, null, "73f6123e-773e-4bec-b8b3-ea67502ff5fa");
+                _collsknrrow1Info = new RepoItemInfo(this, "ColLskNrRow1", "element[@controltypename='MdiClient']/form[@controlname='tblLsk']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_nr Row 1']", "", 30000, null, "d7aa6c77-1038-4fe3-89e5-e7ac03885cd2");
             }
 
             /// <summary>
@@ -2330,6 +2332,30 @@ namespace E_INFO_001
                 get
                 {
                     return _colreacdrow9Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColLskNrRow1 item.
+            /// </summary>
+            [RepositoryItem("d7aa6c77-1038-4fe3-89e5-e7ac03885cd2")]
+            public virtual Ranorex.Cell ColLskNrRow1
+            {
+                get
+                {
+                    return _collsknrrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColLskNrRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("d7aa6c77-1038-4fe3-89e5-e7ac03885cd2")]
+            public virtual RepoItemInfo ColLskNrRow1Info
+            {
+                get
+                {
+                    return _collsknrrow1Info;
                 }
             }
 
