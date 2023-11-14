@@ -146,8 +146,8 @@ namespace E_LSK_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue=$Lieferant) on item 'MdiLSR.Lieferant'.", repo.MdiLSR.LieferantInfo, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.MdiLSR.LieferantInfo, "AccessibleValue", Lieferant);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Lieferant) on item 'MdiLSR.Lieferant'.", repo.MdiLSR.LieferantInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.MdiLSR.LieferantInfo, "Text", Lieferant);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiLSR.Lieferscheinnummer' at Center.", repo.MdiLSR.LieferscheinnummerInfo, new RecordItemIndex(6));
             repo.MdiLSR.Lieferscheinnummer.Click();
@@ -167,8 +167,8 @@ namespace E_LSK_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Lieferscheinart) on item 'MdiLSR.Lieferscheinart'.", repo.MdiLSR.LieferscheinartInfo, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.MdiLSR.LieferscheinartInfo, "Text", Lieferscheinart);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue=$Bestellnr_Lieferscheinnr) on item 'MdiLSR.Lieferscheinnummer'.", repo.MdiLSR.LieferscheinnummerInfo, new RecordItemIndex(12));
-            Validate.AttributeEqual(repo.MdiLSR.LieferscheinnummerInfo, "AccessibleValue", Bestellnr_Lieferscheinnr);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Bestellnr_Lieferscheinnr) on item 'MdiLSR.Lieferscheinnummer'.", repo.MdiLSR.LieferscheinnummerInfo, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.MdiLSR.LieferscheinnummerInfo, "Text", Bestellnr_Lieferscheinnr);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Lager) on item 'MdiLSR.Lager'.", repo.MdiLSR.LagerInfo, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.MdiLSR.LagerInfo, "Text", Lager);
