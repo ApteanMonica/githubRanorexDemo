@@ -41,7 +41,7 @@ namespace B_EBUEB_B_EBERF_Schnelltest.Recordings_B_EBERF
         /// </summary>
         public Start_B_EBERF()
         {
-            Programm_B_EBERF = "B_EBERF x x x 200";
+            Programm_B_EBERF = "B_EBERF x x x 300";
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
         }
 
@@ -108,11 +108,11 @@ namespace B_EBUEB_B_EBERF_Schnelltest.Recordings_B_EBERF
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_B_EBERF in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm_B_EBERF, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmEB.TitleBar100ErfassungEroeffnungsbila'", repo.FrmEB.TitleBar100ErfassungEroeffnungsbilaInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmEB.TitleBar100ErfassungEroeffnungsbilaInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmEB_erfassen.TitleBar100ErfassungEroeffnungsbila'", repo.FrmEB_erfassen.TitleBar100ErfassungEroeffnungsbilaInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FrmEB_erfassen.TitleBar100ErfassungEroeffnungsbilaInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Erfassung Eröffnungsbilanz') on item 'FrmEB.TitleBar100ErfassungEroeffnungsbila'.", repo.FrmEB.TitleBar100ErfassungEroeffnungsbilaInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmEB.TitleBar100ErfassungEroeffnungsbilaInfo, "Text", "Erfassung Eröffnungsbilanz");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Erfassung Eröffnungsbilanz') on item 'FrmEB_erfassen.TitleBar100ErfassungEroeffnungsbila'.", repo.FrmEB_erfassen.TitleBar100ErfassungEroeffnungsbilaInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.FrmEB_erfassen.TitleBar100ErfassungEroeffnungsbilaInfo, "Text", "Erfassung Eröffnungsbilanz");
             
         }
 

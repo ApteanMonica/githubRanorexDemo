@@ -20,50 +20,63 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_EBUEB_B_EBERF_Schnelltest.Recordings_B_EBERF
+namespace B_EBUEB_B_EBERF_Schnelltest.Recordings_B_JAHR
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Einschraenkung_B_EBERF recording.
+    ///The Start_B_JAHR recording.
     /// </summary>
-    [TestModule("3f6f3f37-70d3-4526-9ddc-8442fca6041a", ModuleType.Recording, 1)]
-    public partial class Einschraenkung_B_EBERF : ITestModule
+    [TestModule("f8bc1dc5-f3cf-4645-a675-09e43d298dd3", ModuleType.Recording, 1)]
+    public partial class Start_B_JAHR : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EBUEB_B_EBERF_Schnelltest.B_EBUEB_B_EBERF_300_SchnelltestRepository repository.
         /// </summary>
         public static global::B_EBUEB_B_EBERF_Schnelltest.B_EBUEB_B_EBERF_300_SchnelltestRepository repo = global::B_EBUEB_B_EBERF_Schnelltest.B_EBUEB_B_EBERF_300_SchnelltestRepository.Instance;
 
-        static Einschraenkung_B_EBERF instance = new Einschraenkung_B_EBERF();
+        static Start_B_JAHR instance = new Start_B_JAHR();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Einschraenkung_B_EBERF()
+        public Start_B_JAHR()
         {
-            Jahr = "2022";
+            Programm_B_JAHR = "B_JAHR x x x 300";
+            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Einschraenkung_B_EBERF Instance
+        public static Start_B_JAHR Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Jahr;
+        string _Programm_B_JAHR;
 
         /// <summary>
-        /// Gets or sets the value of variable Jahr.
+        /// Gets or sets the value of variable Programm_B_JAHR.
         /// </summary>
-        [TestVariable("6819a8cb-a0ac-4fda-8ebb-a0fde2fc10d8")]
-        public string Jahr
+        [TestVariable("471f2501-1d51-4e9f-b858-de92f17629fc")]
+        public string Programm_B_JAHR
         {
-            get { return _Jahr; }
-            set { _Jahr = value; }
+            get { return _Programm_B_JAHR; }
+            set { _Programm_B_JAHR = value; }
+        }
+
+        string _Startfile;
+
+        /// <summary>
+        /// Gets or sets the value of variable Startfile.
+        /// </summary>
+        [TestVariable("c657f26f-e3dd-40bf-84f4-968ef0d06dd2")]
+        public string Startfile
+        {
+            get { return _Startfile; }
+            set { _Startfile = value; }
         }
 
 #endregion
@@ -92,20 +105,14 @@ namespace B_EBUEB_B_EBERF_Schnelltest.Recordings_B_EBERF
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'FrmEB_erfassen.Jahr'.", repo.FrmEB_erfassen.JahrInfo, new RecordItemIndex(0));
-            repo.FrmEB_erfassen.Jahr.PressKeys(Jahr);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_B_JAHR in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile, Programm_B_JAHR, "", false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(1));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'frmMail_Geschaeftsjahr_verwalten.TitleBar'", repo.frmMail_Geschaeftsjahr_verwalten.TitleBarInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.frmMail_Geschaeftsjahr_verwalten.TitleBarInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'FrmEB_erfassen.Jahr'.", repo.FrmEB_erfassen.JahrInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.FrmEB_erfassen.JahrInfo, "Text", Jahr);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmEB_erfassen.CbAktiv'.", repo.FrmEB_erfassen.CbAktivInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.FrmEB_erfassen.CbAktivInfo, "Checked", "False");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmEB_erfassen.PbDataAccessLoad' at Center.", repo.FrmEB_erfassen.PbDataAccessLoadInfo, new RecordItemIndex(4));
-            repo.FrmEB_erfassen.PbDataAccessLoad.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Verwalten Geschäftsjahr') on item 'frmMail_Geschaeftsjahr_verwalten.TitleBar'.", repo.frmMail_Geschaeftsjahr_verwalten.TitleBarInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.frmMail_Geschaeftsjahr_verwalten.TitleBarInfo, "Text", "Verwalten Geschäftsjahr");
             
         }
 

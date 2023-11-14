@@ -79,67 +79,79 @@ namespace B_EBUEB_B_EBERF_Schnelltest.Recordings_B_EBERF
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB.FlexGrid.ColSollRow1'.", repo.FrmEB.FlexGrid.ColSollRow1Info, new RecordItemIndex(0));
-            repo.FrmEB.FlexGrid.ColSollRow1.PressKeys("0,00");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB_erfassen.FlexGrid.ColSollRow1'.", repo.FrmEB_erfassen.FlexGrid.ColSollRow1Info, new RecordItemIndex(0));
+            repo.FrmEB_erfassen.FlexGrid.ColSollRow1.PressKeys("0,00");
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB.FlexGrid.ColSollRow2'.", repo.FrmEB.FlexGrid.ColSollRow2Info, new RecordItemIndex(2));
-            repo.FrmEB.FlexGrid.ColSollRow2.PressKeys("0,00");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB_erfassen.FlexGrid.ColSollRow2'.", repo.FrmEB_erfassen.FlexGrid.ColSollRow2Info, new RecordItemIndex(2));
+            repo.FrmEB_erfassen.FlexGrid.ColSollRow2.PressKeys("0,00");
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(3));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB.FlexGrid.ColSollRow3'.", repo.FrmEB.FlexGrid.ColSollRow3Info, new RecordItemIndex(4));
-            repo.FrmEB.FlexGrid.ColSollRow3.PressKeys("0,00");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB_erfassen.FlexGrid.ColSollRow3'.", repo.FrmEB_erfassen.FlexGrid.ColSollRow3Info, new RecordItemIndex(4));
+            repo.FrmEB_erfassen.FlexGrid.ColSollRow3.PressKeys("0,00");
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(5));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB.FlexGrid.ColSollRow4'.", repo.FrmEB.FlexGrid.ColSollRow4Info, new RecordItemIndex(6));
-            repo.FrmEB.FlexGrid.ColSollRow4.PressKeys("0,00");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB_erfassen.FlexGrid.ColSollRow4'.", repo.FrmEB_erfassen.FlexGrid.ColSollRow4Info, new RecordItemIndex(6));
+            repo.FrmEB_erfassen.FlexGrid.ColSollRow4.PressKeys("0,00");
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(7));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB.FlexGrid.ColHabenRow5'.", repo.FrmEB.FlexGrid.ColHabenRow5Info, new RecordItemIndex(8));
-            repo.FrmEB.FlexGrid.ColHabenRow5.PressKeys("0,00");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB_erfassen.FlexGrid.ColSollRow5'.", repo.FrmEB_erfassen.FlexGrid.ColSollRow5Info, new RecordItemIndex(8));
+            repo.FrmEB_erfassen.FlexGrid.ColSollRow5.PressKeys("0,00");
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(9));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB.FlexGrid.ColHabenRow6'.", repo.FrmEB.FlexGrid.ColHabenRow6Info, new RecordItemIndex(10));
-            repo.FrmEB.FlexGrid.ColHabenRow6.PressKeys("0,00");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB_erfassen.FlexGrid.ColSollRow6'.", repo.FrmEB_erfassen.FlexGrid.ColSollRow6Info, new RecordItemIndex(10));
+            repo.FrmEB_erfassen.FlexGrid.ColSollRow6.PressKeys("0,00");
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(11));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB.FlexGrid.ColHabenRow7'.", repo.FrmEB.FlexGrid.ColHabenRow7Info, new RecordItemIndex(12));
-            repo.FrmEB.FlexGrid.ColHabenRow7.PressKeys("0,00");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB_erfassen.FlexGrid.ColHabenRow7'.", repo.FrmEB_erfassen.FlexGrid.ColHabenRow7Info, new RecordItemIndex(12));
+            repo.FrmEB_erfassen.FlexGrid.ColHabenRow7.PressKeys("0,00");
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(13));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB.FlexGrid.ColHabenRow8'.", repo.FrmEB.FlexGrid.ColHabenRow8Info, new RecordItemIndex(14));
-            repo.FrmEB.FlexGrid.ColHabenRow8.PressKeys("0,00");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB_erfassen.FlexGrid.ColHabenRow8'.", repo.FrmEB_erfassen.FlexGrid.ColHabenRow8Info, new RecordItemIndex(14));
+            repo.FrmEB_erfassen.FlexGrid.ColHabenRow8.PressKeys("0,00");
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(15));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB.FlexGrid.ColHabenRow9'.", repo.FrmEB.FlexGrid.ColHabenRow9Info, new RecordItemIndex(16));
-            repo.FrmEB.FlexGrid.ColHabenRow9.PressKeys("0,00");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB_erfassen.FlexGrid.ColHabenRow9'.", repo.FrmEB_erfassen.FlexGrid.ColHabenRow9Info, new RecordItemIndex(16));
+            repo.FrmEB_erfassen.FlexGrid.ColHabenRow9.PressKeys("0,00");
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(17));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB.FlexGrid.ColHabenRow10'.", repo.FrmEB.FlexGrid.ColHabenRow10Info, new RecordItemIndex(18));
-            repo.FrmEB.FlexGrid.ColHabenRow10.PressKeys("0,00");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB_erfassen.FlexGrid.ColHabenRow10'.", repo.FrmEB_erfassen.FlexGrid.ColHabenRow10Info, new RecordItemIndex(18));
+            repo.FrmEB_erfassen.FlexGrid.ColHabenRow10.PressKeys("0,00");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(19));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB_erfassen.FlexGrid.ColHabenRow11'.", repo.FrmEB_erfassen.FlexGrid.ColHabenRow11Info, new RecordItemIndex(20));
+            repo.FrmEB_erfassen.FlexGrid.ColHabenRow11.PressKeys("0,00");
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(21));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0,00' with focus on 'FrmEB_erfassen.FlexGrid.ColHabenRow12'.", repo.FrmEB_erfassen.FlexGrid.ColHabenRow12Info, new RecordItemIndex(22));
+            repo.FrmEB_erfassen.FlexGrid.ColHabenRow12.PressKeys("0,00");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(23));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(24));
             Delay.Duration(1000, false);
             
         }

@@ -82,23 +82,23 @@ namespace B_EBUEB_B_EBERF_Schnelltest.Recordings_B_EBERF
             // Summe Null
             Report.Log(ReportLevel.Info, "Section", "Summe Null", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmEB.Summenzeile.ColSollRow01'.", repo.FrmEB.Summenzeile.ColSollRow01Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.FrmEB.Summenzeile.ColSollRow01Info, "Text", "0,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmEB_erfassen.Summenzeile.ColSollRow0_Summe'.", repo.FrmEB_erfassen.Summenzeile.ColSollRow0_SummeInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.Summenzeile.ColSollRow0_SummeInfo, "Text", "0,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmEB.Summenzeile.ColHabenRow0'.", repo.FrmEB.Summenzeile.ColHabenRow0Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.FrmEB.Summenzeile.ColHabenRow0Info, "Text", "0,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmEB_erfassen.Summenzeile.ColHabenRow0_Summe'.", repo.FrmEB_erfassen.Summenzeile.ColHabenRow0_SummeInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.Summenzeile.ColHabenRow0_SummeInfo, "Text", "0,00");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmEB.PbDataAccessSave' at Center.", repo.FrmEB.PbDataAccessSaveInfo, new RecordItemIndex(3));
-            repo.FrmEB.PbDataAccessSave.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmEB_erfassen.PbDataAccessSave' at Center.", repo.FrmEB_erfassen.PbDataAccessSaveInfo, new RecordItemIndex(3));
+            repo.FrmEB_erfassen.PbDataAccessSave.Click();
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(4));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmEB.Summenzeile.ColSollRow01'.", repo.FrmEB.Summenzeile.ColSollRow01Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.FrmEB.Summenzeile.ColSollRow01Info, "Text", "0,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmEB_erfassen.Summenzeile.ColSollRow0_Summe'.", repo.FrmEB_erfassen.Summenzeile.ColSollRow0_SummeInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.Summenzeile.ColSollRow0_SummeInfo, "Text", "0,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmEB.Summenzeile.ColHabenRow0'.", repo.FrmEB.Summenzeile.ColHabenRow0Info, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.FrmEB.Summenzeile.ColHabenRow0Info, "Text", "0,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmEB_erfassen.Summenzeile.ColHabenRow0_Summe'.", repo.FrmEB_erfassen.Summenzeile.ColHabenRow0_SummeInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.Summenzeile.ColHabenRow0_SummeInfo, "Text", "0,00");
             
         }
 

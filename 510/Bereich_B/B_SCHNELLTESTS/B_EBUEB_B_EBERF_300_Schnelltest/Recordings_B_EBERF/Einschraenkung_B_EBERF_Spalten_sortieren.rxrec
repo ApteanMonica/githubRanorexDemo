@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="00eab060-9c2f-40a1-a6d7-0643c65c04a7"
-mode="Desktop">
+id="f74708a7-deea-4401-a0be-1cfb4c174ad6"
+mode="Global">
 	<repeatcount>
 		1
 	</repeatcount>
@@ -19,57 +19,128 @@ mode="Desktop">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Start_B_EBERF"
+	classname="Einschraenkung_B_EBERF_Spalten_sortieren"
 	namespace="B_EBUEB_B_EBERF_Schnelltest.Recordings_B_EBERF">
 	</codegen>
 	<variables>
-		<var
-		id="c145d292-2d1c-4164-a5b0-86114662e43d"
-		name="Programm_B_EBERF">
-			B_EBERF x x x 300
-		</var>
-		<var
-		id="2336dbe1-837b-4ff0-be58-a311dbc07b2b"
-		name="Startfile">
-			C:\Testdaten\Allgemein\Start.bat
-		</var>
 	</variables>
 	<recorditems>
-		<runapprecorditem
-		duration="100ms"
+		<separatoritem
 		enabled="True"
-		maximized="False"
+		optional="False">
+			<comment>
+				Spalte Soll sortieren mit 2 x klick (sonst sind nicht alle Beträge am Bildschirm sichtbar)
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0ae74f0a-f389-4e45-b0a3-362b4f766dc3"
+		sx="341"
+		sy="220"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bcafd688-b40a-414b-8c63-dc8e91f92863"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="3"
+				prefcap="cell"
+				rect="281,211,120,19"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="rowindex"
+					type="System.Int32">
+						-1
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Soll
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colSoll Row 0
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						ColumnHeader
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Default
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						Soll
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmEB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='colSoll Row 0']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
 		optional="False">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="Arguments"
-				variable="Programm_B_EBERF">
-				</binding>
-				<binding
-				target="FileName"
-				variable="Startfile">
-				</binding>
 			</bindings>
-			<filename>
-				C:\Program Files\Microsoft Office\Office16\EXCEL.EXE
-			</filename>
-			<args>
-			</args>
-		</runapprecorditem>
-		<WaitForRecordItem
+		</explicitdelayitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
 		enabled="True"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		searchpropertyid="89723d13-abb7-4d4b-acc7-72357c4811fa"
-		waitaction="Exists"
-		waittimeout="120000ms">
+		searchpropertyid="0ae74f0a-f389-4e45-b0a3-362b4f766dc3"
+		sx="341"
+		sy="220"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="7e31fe61-8431-4f58-9022-cb09c88daa22"
+			id="bcafd688-b40a-414b-8c63-dc8e91f92863"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -77,111 +148,61 @@ mode="Desktop">
 				enabled="True"
 				flavor="msaa"
 				hasfocus="False"
-				index="15"
-				prefcap="titlebar"
-				rect="-1240,16,576,28"
-				role="titlebar"
+				index="3"
+				prefcap="cell"
+				rect="281,211,120,19"
+				role="cell"
 				snapElem=""
 				valid="True"
 				visible="True">
 					<attribute
-					name="text"
-					type="System.String">
-						[100]  Erfassung Eröffnungsbilanz
+					name="isheader"
+					type="System.Boolean">
+						True
 					</attribute>
 					<attribute
-					name="accessibledescription"
+					name="rowindex"
+					type="System.Int32">
+						-1
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
 					type="System.String">
-						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+						Soll
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						colSoll Row 0
 					</attribute>
 					<attribute
 					name="accessiblerole"
 					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						TitleBar
+						ColumnHeader
 					</attribute>
 					<attribute
 					name="accessiblestate"
 					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
+						Default
 					</attribute>
 					<attribute
 					name="accessiblevalue"
 					type="System.String">
-						[100]  Erfassung Eröffnungsbilanz
+						Soll
 					</attribute>
 				</element>
 				<path>
-					/form[@controlname='frmEB']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='frmEB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='colSoll Row 0']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</WaitForRecordItem>
-		<validationitem
-		action="AttributeContains"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		searchpropertyid="e9d2bb62-6cdc-4795-bc1f-27a431fed335">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="7e31fe61-8431-4f58-9022-cb09c88daa22"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="15"
-				prefcap="titlebar"
-				rect="-1240,16,576,28"
-				role="titlebar"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="text"
-					type="System.String">
-						[100]  Erfassung Eröffnungsbilanz
-					</attribute>
-					<attribute
-					name="accessibledescription"
-					type="System.String">
-						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						TitleBar
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						[100]  Erfassung Eröffnungsbilanz
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='frmEB']/titlebar[@accessiblerole='TitleBar']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				Erfassung Eröffnungsbilanz
-			</matchvalue>
-		</validationitem>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="fbf661f2-75f1-46d7-b1a4-6959f2a9811c"
@@ -198,7 +219,7 @@ mode="Desktop">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Start_B_EBERF.UserCode.cs
+		Einschraenkung_B_EBERF_Spalten_sortieren.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

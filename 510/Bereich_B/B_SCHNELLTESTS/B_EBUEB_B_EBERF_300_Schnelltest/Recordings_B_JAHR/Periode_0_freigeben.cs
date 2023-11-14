@@ -20,26 +20,26 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_EBUEB_B_EBERF_Schnelltest.Recordings_B_EBERF
+namespace B_EBUEB_B_EBERF_Schnelltest.Recordings_B_JAHR
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Einschraenkung_B_EBERF recording.
+    ///The Periode_0_freigeben recording.
     /// </summary>
-    [TestModule("3f6f3f37-70d3-4526-9ddc-8442fca6041a", ModuleType.Recording, 1)]
-    public partial class Einschraenkung_B_EBERF : ITestModule
+    [TestModule("b4392181-8836-4c0c-bbfb-2232117daf44", ModuleType.Recording, 1)]
+    public partial class Periode_0_freigeben : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_EBUEB_B_EBERF_Schnelltest.B_EBUEB_B_EBERF_300_SchnelltestRepository repository.
         /// </summary>
         public static global::B_EBUEB_B_EBERF_Schnelltest.B_EBUEB_B_EBERF_300_SchnelltestRepository repo = global::B_EBUEB_B_EBERF_Schnelltest.B_EBUEB_B_EBERF_300_SchnelltestRepository.Instance;
 
-        static Einschraenkung_B_EBERF instance = new Einschraenkung_B_EBERF();
+        static Periode_0_freigeben instance = new Periode_0_freigeben();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Einschraenkung_B_EBERF()
+        public Periode_0_freigeben()
         {
             Jahr = "2022";
         }
@@ -47,7 +47,7 @@ namespace B_EBUEB_B_EBERF_Schnelltest.Recordings_B_EBERF
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Einschraenkung_B_EBERF Instance
+        public static Periode_0_freigeben Instance
         {
             get { return instance; }
         }
@@ -59,7 +59,7 @@ namespace B_EBUEB_B_EBERF_Schnelltest.Recordings_B_EBERF
         /// <summary>
         /// Gets or sets the value of variable Jahr.
         /// </summary>
-        [TestVariable("6819a8cb-a0ac-4fda-8ebb-a0fde2fc10d8")]
+        [TestVariable("998795cf-bb66-4ec7-8739-4a15ea19e50d")]
         public string Jahr
         {
             get { return _Jahr; }
@@ -92,20 +92,26 @@ namespace B_EBUEB_B_EBERF_Schnelltest.Recordings_B_EBERF
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'FrmEB_erfassen.Jahr'.", repo.FrmEB_erfassen.JahrInfo, new RecordItemIndex(0));
-            repo.FrmEB_erfassen.Jahr.PressKeys(Jahr);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'frmMail_Geschaeftsjahr_verwalten.Tabelle.ColGjhrBez_mit_22_2022' at Center.", repo.frmMail_Geschaeftsjahr_verwalten.Tabelle.ColGjhrBez_mit_22_2022Info, new RecordItemIndex(0));
+            repo.frmMail_Geschaeftsjahr_verwalten.Tabelle.ColGjhrBez_mit_22_2022.Click();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(1));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'FrmEB_erfassen.Jahr'.", repo.FrmEB_erfassen.JahrInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.FrmEB_erfassen.JahrInfo, "Text", Jahr);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0' with focus on 'frmMail_Geschaeftsjahr_verwalten.Tabelle.ColGjhrPerivon_mit_22_2022'.", repo.frmMail_Geschaeftsjahr_verwalten.Tabelle.ColGjhrPerivon_mit_22_2022Info, new RecordItemIndex(2));
+            repo.frmMail_Geschaeftsjahr_verwalten.Tabelle.ColGjhrPerivon_mit_22_2022.PressKeys("0");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmEB_erfassen.CbAktiv'.", repo.FrmEB_erfassen.CbAktivInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.FrmEB_erfassen.CbAktivInfo, "Checked", "False");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmEB_erfassen.PbDataAccessLoad' at Center.", repo.FrmEB_erfassen.PbDataAccessLoadInfo, new RecordItemIndex(4));
-            repo.FrmEB_erfassen.PbDataAccessLoad.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'frmMail_Geschaeftsjahr_verwalten.PbStandard1' at Center.", repo.frmMail_Geschaeftsjahr_verwalten.PbStandard1Info, new RecordItemIndex(4));
+            repo.frmMail_Geschaeftsjahr_verwalten.PbStandard1.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'frmMail_Geschaeftsjahr_verwalten.Tabelle.ColGjhrBez_mit_22_2022'.", repo.frmMail_Geschaeftsjahr_verwalten.Tabelle.ColGjhrBez_mit_22_2022Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.frmMail_Geschaeftsjahr_verwalten.Tabelle.ColGjhrBez_mit_22_2022Info, "Text", Jahr);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'frmMail_Geschaeftsjahr_verwalten.Tabelle.ColGjhrPerivon_mit_22_2022'.", repo.frmMail_Geschaeftsjahr_verwalten.Tabelle.ColGjhrPerivon_mit_22_2022Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.frmMail_Geschaeftsjahr_verwalten.Tabelle.ColGjhrPerivon_mit_22_2022Info, "Text", "0");
             
         }
 

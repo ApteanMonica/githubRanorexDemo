@@ -79,80 +79,92 @@ namespace B_EBUEB_B_EBERF_Schnelltest.Recordings_B_EBERF
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2800') on item 'FrmEB.FlexGrid.ColKtoNrRow1'.", repo.FrmEB.FlexGrid.ColKtoNrRow1Info, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.FrmEB.FlexGrid.ColKtoNrRow1Info, "Text", "2800");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2000') on item 'FrmEB_erfassen.FlexGrid.ColKtoNrRow1'.", repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow1Info, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow1Info, "Text", "2000");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10.000,00') on item 'FrmEB.FlexGrid.ColSollRow1'.", repo.FrmEB.FlexGrid.ColSollRow1Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.FrmEB.FlexGrid.ColSollRow1Info, "Text", "10.000,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4.520,00') on item 'FrmEB_erfassen.FlexGrid.ColSollRow1'.", repo.FrmEB_erfassen.FlexGrid.ColSollRow1Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColSollRow1Info, "Text", "4.520,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2000') on item 'FrmEB.FlexGrid.ColKtoNrRow2'.", repo.FrmEB.FlexGrid.ColKtoNrRow2Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.FrmEB.FlexGrid.ColKtoNrRow2Info, "Text", "2000");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2100') on item 'FrmEB_erfassen.FlexGrid.ColKtoNrRow2'.", repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow2Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow2Info, "Text", "2100");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='500,00') on item 'FrmEB.FlexGrid.ColSollRow2'.", repo.FrmEB.FlexGrid.ColSollRow2Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.FrmEB.FlexGrid.ColSollRow2Info, "Text", "500,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.000,00') on item 'FrmEB_erfassen.FlexGrid.ColSollRow2'.", repo.FrmEB_erfassen.FlexGrid.ColSollRow2Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColSollRow2Info, "Text", "2.000,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2500') on item 'FrmEB.FlexGrid.ColKtoNrRow3'.", repo.FrmEB.FlexGrid.ColKtoNrRow3Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.FrmEB.FlexGrid.ColKtoNrRow3Info, "Text", "2500");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1419') on item 'FrmEB_erfassen.FlexGrid.ColKtoNrRow3'.", repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow3Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow3Info, "Text", "1419");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='214,50') on item 'FrmEB.FlexGrid.ColSollRow3'.", repo.FrmEB.FlexGrid.ColSollRow3Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.FrmEB.FlexGrid.ColSollRow3Info, "Text", "214,50");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='380,00') on item 'FrmEB_erfassen.FlexGrid.ColSollRow3'.", repo.FrmEB_erfassen.FlexGrid.ColSollRow3Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColSollRow3Info, "Text", "380,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2530') on item 'FrmEB.FlexGrid.ColKtoNrRow4'.", repo.FrmEB.FlexGrid.ColKtoNrRow4Info, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.FrmEB.FlexGrid.ColKtoNrRow4Info, "Text", "2530");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1519') on item 'FrmEB_erfassen.FlexGrid.ColKtoNrRow4'.", repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow4Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow4Info, "Text", "1519");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='200,00') on item 'FrmEB.FlexGrid.ColSollRow4'.", repo.FrmEB.FlexGrid.ColSollRow4Info, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.FrmEB.FlexGrid.ColSollRow4Info, "Text", "200,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='228,00') on item 'FrmEB_erfassen.FlexGrid.ColSollRow4'.", repo.FrmEB_erfassen.FlexGrid.ColSollRow4Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColSollRow4Info, "Text", "228,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3510') on item 'FrmEB.FlexGrid.ColKtoNrRow5'.", repo.FrmEB.FlexGrid.ColKtoNrRow5Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.FrmEB.FlexGrid.ColKtoNrRow5Info, "Text", "3510");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1407') on item 'FrmEB_erfassen.FlexGrid.ColKtoNrRow5'.", repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow5Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow5Info, "Text", "1407");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='200,00') on item 'FrmEB.FlexGrid.ColHabenRow5'.", repo.FrmEB.FlexGrid.ColHabenRow5Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.FrmEB.FlexGrid.ColHabenRow5Info, "Text", "200,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='140,00') on item 'FrmEB_erfassen.FlexGrid.ColSollRow5'.", repo.FrmEB_erfassen.FlexGrid.ColSollRow5Info, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColSollRow5Info, "Text", "140,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3500') on item 'FrmEB.FlexGrid.ColKtoNrRow6'.", repo.FrmEB.FlexGrid.ColKtoNrRow6Info, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.FrmEB.FlexGrid.ColKtoNrRow6Info, "Text", "3500");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1507') on item 'FrmEB_erfassen.FlexGrid.ColKtoNrRow6'.", repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow6Info, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow6Info, "Text", "1507");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='45,45') on item 'FrmEB.FlexGrid.ColHabenRow6'.", repo.FrmEB.FlexGrid.ColHabenRow6Info, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.FrmEB.FlexGrid.ColHabenRow6Info, "Text", "45,45");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='56,00') on item 'FrmEB_erfassen.FlexGrid.ColSollRow6'.", repo.FrmEB_erfassen.FlexGrid.ColSollRow6Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColSollRow6Info, "Text", "56,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3340') on item 'FrmEB.FlexGrid.ColKtoNrRow7'.", repo.FrmEB.FlexGrid.ColKtoNrRow7Info, new RecordItemIndex(12));
-            Validate.AttributeEqual(repo.FrmEB.FlexGrid.ColKtoNrRow7Info, "Text", "3340");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3619') on item 'FrmEB_erfassen.FlexGrid.ColKtoNrRow7'.", repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow7Info, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow7Info, "Text", "3619");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='400,00') on item 'FrmEB.FlexGrid.ColHabenRow7'.", repo.FrmEB.FlexGrid.ColHabenRow7Info, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.FrmEB.FlexGrid.ColHabenRow7Info, "Text", "400,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='228,00') on item 'FrmEB_erfassen.FlexGrid.ColHabenRow7'.", repo.FrmEB_erfassen.FlexGrid.ColHabenRow7Info, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColHabenRow7Info, "Text", "228,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3300') on item 'FrmEB.FlexGrid.ColKtoNrRow8'.", repo.FrmEB.FlexGrid.ColKtoNrRow8Info, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.FrmEB.FlexGrid.ColKtoNrRow8Info, "Text", "3300");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3607') on item 'FrmEB_erfassen.FlexGrid.ColKtoNrRow8'.", repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow8Info, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow8Info, "Text", "3607");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'FrmEB.FlexGrid.ColHabenRow8'.", repo.FrmEB.FlexGrid.ColHabenRow8Info, new RecordItemIndex(15));
-            Validate.AttributeEqual(repo.FrmEB.FlexGrid.ColHabenRow8Info, "Text", "0,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='56,00') on item 'FrmEB_erfassen.FlexGrid.ColHabenRow8'.", repo.FrmEB_erfassen.FlexGrid.ColHabenRow8Info, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColHabenRow8Info, "Text", "56,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2880') on item 'FrmEB.FlexGrid.ColKtoNrRow9'.", repo.FrmEB.FlexGrid.ColKtoNrRow9Info, new RecordItemIndex(16));
-            Validate.AttributeEqual(repo.FrmEB.FlexGrid.ColKtoNrRow9Info, "Text", "2880");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3519') on item 'FrmEB_erfassen.FlexGrid.ColKtoNrRow9'.", repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow9Info, new RecordItemIndex(16));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow9Info, "Text", "3519");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10.000,00') on item 'FrmEB.FlexGrid.ColHabenRow9'.", repo.FrmEB.FlexGrid.ColHabenRow9Info, new RecordItemIndex(17));
-            Validate.AttributeEqual(repo.FrmEB.FlexGrid.ColHabenRow9Info, "Text", "10.000,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='380,00') on item 'FrmEB_erfassen.FlexGrid.ColHabenRow9'.", repo.FrmEB_erfassen.FlexGrid.ColHabenRow9Info, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColHabenRow9Info, "Text", "380,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2700') on item 'FrmEB.FlexGrid.ColKtoNrRow10'.", repo.FrmEB.FlexGrid.ColKtoNrRow10Info, new RecordItemIndex(18));
-            Validate.AttributeEqual(repo.FrmEB.FlexGrid.ColKtoNrRow10Info, "Text", "2700");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3507') on item 'FrmEB_erfassen.FlexGrid.ColKtoNrRow10'.", repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow10Info, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow10Info, "Text", "3507");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.580,00') on item 'FrmEB.FlexGrid.ColHabenRow10'.", repo.FrmEB.FlexGrid.ColHabenRow10Info, new RecordItemIndex(19));
-            Validate.AttributeEqual(repo.FrmEB.FlexGrid.ColHabenRow10Info, "Text", "2.580,00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='140,00') on item 'FrmEB_erfassen.FlexGrid.ColHabenRow10'.", repo.FrmEB_erfassen.FlexGrid.ColHabenRow10Info, new RecordItemIndex(19));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColHabenRow10Info, "Text", "140,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3340') on item 'FrmEB_erfassen.FlexGrid.ColKtoNrRow11'.", repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow11Info, new RecordItemIndex(20));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow11Info, "Text", "3340");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2.000,00') on item 'FrmEB_erfassen.FlexGrid.ColHabenRow11'.", repo.FrmEB_erfassen.FlexGrid.ColHabenRow11Info, new RecordItemIndex(21));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColHabenRow11Info, "Text", "2.000,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3300') on item 'FrmEB_erfassen.FlexGrid.ColKtoNrRow12'.", repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow12Info, new RecordItemIndex(22));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColKtoNrRow12Info, "Text", "3300");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='4.520,00') on item 'FrmEB_erfassen.FlexGrid.ColHabenRow12'.", repo.FrmEB_erfassen.FlexGrid.ColHabenRow12Info, new RecordItemIndex(23));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.FlexGrid.ColHabenRow12Info, "Text", "4.520,00");
             
             // Summenzeile
-            Report.Log(ReportLevel.Info, "Section", "Summenzeile", new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Section", "Summenzeile", new RecordItemIndex(24));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Eröffnungsbilanzkonto') on item 'FrmEB.Summenzeile.ColKtoBezRow0'.", repo.FrmEB.Summenzeile.ColKtoBezRow0Info, new RecordItemIndex(21));
-            Validate.AttributeEqual(repo.FrmEB.Summenzeile.ColKtoBezRow0Info, "Text", "Eröffnungsbilanzkonto");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Eröffnungsbilanzkonto') on item 'FrmEB_erfassen.Summenzeile.ColKtoBezRow0'.", repo.FrmEB_erfassen.Summenzeile.ColKtoBezRow0Info, new RecordItemIndex(25));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.Summenzeile.ColKtoBezRow0Info, "Text", "Eröffnungsbilanzkonto");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9800') on item 'FrmEB.Summenzeile.ColKtoNrRow0'.", repo.FrmEB.Summenzeile.ColKtoNrRow0Info, new RecordItemIndex(22));
-            Validate.AttributeEqual(repo.FrmEB.Summenzeile.ColKtoNrRow0Info, "Text", "9800");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9800') on item 'FrmEB_erfassen.Summenzeile.ColKtoNrRow0'.", repo.FrmEB_erfassen.Summenzeile.ColKtoNrRow0Info, new RecordItemIndex(26));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.Summenzeile.ColKtoNrRow0Info, "Text", "9800");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10.914,50') on item 'FrmEB.Summenzeile.ColSollRow01'.", repo.FrmEB.Summenzeile.ColSollRow01Info, new RecordItemIndex(23));
-            Validate.AttributeEqual(repo.FrmEB.Summenzeile.ColSollRow01Info, "Text", "10.914,50");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='7.324,00') on item 'FrmEB_erfassen.Summenzeile.ColSollRow0_Summe'.", repo.FrmEB_erfassen.Summenzeile.ColSollRow0_SummeInfo, new RecordItemIndex(27));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.Summenzeile.ColSollRow0_SummeInfo, "Text", "7.324,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='13.225,45') on item 'FrmEB.Summenzeile.ColHabenRow0'.", repo.FrmEB.Summenzeile.ColHabenRow0Info, new RecordItemIndex(24));
-            Validate.AttributeEqual(repo.FrmEB.Summenzeile.ColHabenRow0Info, "Text", "13.225,45");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='7.324,00') on item 'FrmEB_erfassen.Summenzeile.ColHabenRow0_Summe'.", repo.FrmEB_erfassen.Summenzeile.ColHabenRow0_SummeInfo, new RecordItemIndex(28));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.Summenzeile.ColHabenRow0_SummeInfo, "Text", "7.324,00");
             
         }
 
