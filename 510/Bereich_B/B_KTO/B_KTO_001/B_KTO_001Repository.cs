@@ -68,7 +68,7 @@ namespace B_KTO_001
         /// <summary>
         /// The FrmKto folder.
         /// </summary>
-        [RepositoryFolder("d132056c-7f88-4a61-be82-3a6ef7f76284")]
+        [RepositoryFolder("4f43a5e7-dc06-40b2-a408-8a14d096644a")]
         public virtual B_KTO_001RepositoryFolders.FrmKtoAppFolder FrmKto
         {
             get { return _frmkto; }
@@ -93,19 +93,18 @@ namespace B_KTO_001
         /// <summary>
         /// The FrmKtoAppFolder folder.
         /// </summary>
-        [RepositoryFolder("d132056c-7f88-4a61-be82-3a6ef7f76284")]
+        [RepositoryFolder("4f43a5e7-dc06-40b2-a408-8a14d096644a")]
         public partial class FrmKtoAppFolder : RepoGenBaseFolder
         {
+            B_KTO_001RepositoryFolders.Tab_AllgemeinFolder _tab_allgemein;
             RepoItemInfo _titlebar100sachkontenverwaltenInfo;
             RepoItemInfo _pbdataaccesssaveInfo;
-            RepoItemInfo _button_newInfo;
+            RepoItemInfo _pbnewInfo;
             RepoItemInfo _rbaktivInfo;
             RepoItemInfo _kontoInfo;
+            RepoItemInfo _bezeichnungInfo;
             RepoItemInfo _waehrungInfo;
             RepoItemInfo _tabpageallgemeinInfo;
-            RepoItemInfo _ustpflichtInfo;
-            RepoItemInfo _ustcodeInfo;
-            RepoItemInfo _bezeichnungInfo;
             RepoItemInfo _tabpagegruppenInfo;
             RepoItemInfo _colktgrcdrow1Info;
             RepoItemInfo _bereicheInfo;
@@ -115,28 +114,27 @@ namespace B_KTO_001
             /// Creates a new FrmKto  folder.
             /// </summary>
             public FrmKtoAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FrmKto", "/form[@controlname='frmKto']", parentFolder, 30000, null, true, "d132056c-7f88-4a61-be82-3a6ef7f76284", "")
+                    base("FrmKto", "/form[@controlname='frmKto']", parentFolder, 30000, null, true, "4f43a5e7-dc06-40b2-a408-8a14d096644a", "")
             {
-                _titlebar100sachkontenverwaltenInfo = new RepoItemInfo(this, "TitleBar100SachkontenVerwalten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "3e8419b5-e42a-4b01-b91b-1f268b7c65ef");
-                _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "?/?/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "7d8930c2-8c91-4cee-a935-7b794437b07f");
-                _button_newInfo = new RepoItemInfo(this, "Button_New", "?/?/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup2']/button[@controlname='pbNew']", "", 30000, null, "b60788e4-c82f-45bd-8509-7e800470219a");
+                _tab_allgemein = new B_KTO_001RepositoryFolders.Tab_AllgemeinFolder(this);
+                _titlebar100sachkontenverwaltenInfo = new RepoItemInfo(this, "TitleBar100SachkontenVerwalten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "87af4cac-779e-4130-addf-5d05faf0e6d1");
+                _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "7d8930c2-8c91-4cee-a935-7b794437b07f");
+                _pbnewInfo = new RepoItemInfo(this, "PbNew", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']", "", 30000, null, "8cb95032-ac82-44cf-bf8b-3c6ad6212bc8");
                 _rbaktivInfo = new RepoItemInfo(this, "RbAktiv", "container[@controlname='ClientArea']/container[@controlname='groupBox1']/radiobutton[@controlname='rbAktiv']", "", 30000, null, "1de6fd7f-3451-42cd-ac4d-7efbf6d1a005");
-                _kontoInfo = new RepoItemInfo(this, "Konto", "container[@controlname='ClientArea']/?/?/text[@accessiblename='Konto']", "", 30000, null, "0894121b-4129-4a6c-844d-987ca981a22d");
-                _waehrungInfo = new RepoItemInfo(this, "Waehrung", "container[@controlname='ClientArea']/?/?/text[@accessiblename='Währung']", "", 30000, null, "7cf50209-db4d-4fda-83f7-b61e0c2cdb48");
+                _kontoInfo = new RepoItemInfo(this, "Konto", "container[@controlname='ClientArea']/text[@controlname='dfKto_nr']/text[@accessiblename='Konto']", "", 30000, null, "0894121b-4129-4a6c-844d-987ca981a22d");
+                _bezeichnungInfo = new RepoItemInfo(this, "Bezeichnung", "container[@controlname='ClientArea']/text[@controlname='dfKto_bez1']/text[@accessiblename='Bezeichnung']", "", 30000, null, "93ff4f20-c2c8-402a-8b05-aec9479b56b2");
+                _waehrungInfo = new RepoItemInfo(this, "Waehrung", "container[@controlname='ClientArea']/text[@controlname='dfWrg_cd']/text[@accessiblename='Währung']", "", 30000, null, "7cf50209-db4d-4fda-83f7-b61e0c2cdb48");
                 _tabpageallgemeinInfo = new RepoItemInfo(this, "TabPageAllgemein", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&Allgemein']", "", 30000, null, "c2ccf159-ddd7-487d-9260-63c5b738df20");
-                _ustpflichtInfo = new RepoItemInfo(this, "UstPflicht", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgemein']/?/?/text[@accessiblename='Ust-Pflicht']", "", 30000, null, "9caa3852-95ec-4c3f-b3c4-5d794cfd1a28");
-                _ustcodeInfo = new RepoItemInfo(this, "UstCode", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgemein']/?/?/text[@accessiblename='Ust-Code']", "", 30000, null, "e1152c7e-52fb-4a43-82c1-2fc14b134aef");
-                _bezeichnungInfo = new RepoItemInfo(this, "Bezeichnung", "container[@controlname='ClientArea']/?/?/text[@accessiblename='Bezeichnung']", "", 30000, null, "93ff4f20-c2c8-402a-8b05-aec9479b56b2");
                 _tabpagegruppenInfo = new RepoItemInfo(this, "TabPageGruppen", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&Gruppen']", "", 30000, null, "3692b34f-25fe-461b-8bf7-9618e163d890");
-                _colktgrcdrow1Info = new RepoItemInfo(this, "ColKtgrCdRow1", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpGruppen']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKtgr_cd Row 1']", "", 30000, null, "70913db3-6972-4d7f-b330-f8662af8b072");
+                _colktgrcdrow1Info = new RepoItemInfo(this, "ColKtgrCdRow1", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpGruppen']/container[@controlname='tblKtgz']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKtgr_cd Row 1']", "", 30000, null, "70913db3-6972-4d7f-b330-f8662af8b072");
                 _bereicheInfo = new RepoItemInfo(this, "Bereiche", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='Be&reiche']", "", 30000, null, "d5b4f562-4cea-4343-a30f-0e2106aa769d");
-                _colktbzkzrow1Info = new RepoItemInfo(this, "ColKtbzKzRow1", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']//table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colKtbz_kz Row 1']", "", 30000, null, "8bffc19c-4278-4ee0-9702-3f1007a34fe8");
+                _colktbzkzrow1Info = new RepoItemInfo(this, "ColKtbzKzRow1", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpBereiche']/container[@controlname='tblKtbz']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colKtbz_kz Row 1']", "", 30000, null, "8bffc19c-4278-4ee0-9702-3f1007a34fe8");
             }
 
             /// <summary>
             /// The Self item.
             /// </summary>
-            [RepositoryItem("d132056c-7f88-4a61-be82-3a6ef7f76284")]
+            [RepositoryItem("4f43a5e7-dc06-40b2-a408-8a14d096644a")]
             public virtual Ranorex.Form Self
             {
                 get
@@ -148,7 +146,7 @@ namespace B_KTO_001
             /// <summary>
             /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("d132056c-7f88-4a61-be82-3a6ef7f76284")]
+            [RepositoryItemInfo("4f43a5e7-dc06-40b2-a408-8a14d096644a")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
@@ -160,7 +158,7 @@ namespace B_KTO_001
             /// <summary>
             /// The TitleBar100SachkontenVerwalten item.
             /// </summary>
-            [RepositoryItem("3e8419b5-e42a-4b01-b91b-1f268b7c65ef")]
+            [RepositoryItem("87af4cac-779e-4130-addf-5d05faf0e6d1")]
             public virtual Ranorex.TitleBar TitleBar100SachkontenVerwalten
             {
                 get
@@ -172,7 +170,7 @@ namespace B_KTO_001
             /// <summary>
             /// The TitleBar100SachkontenVerwalten item info.
             /// </summary>
-            [RepositoryItemInfo("3e8419b5-e42a-4b01-b91b-1f268b7c65ef")]
+            [RepositoryItemInfo("87af4cac-779e-4130-addf-5d05faf0e6d1")]
             public virtual RepoItemInfo TitleBar100SachkontenVerwaltenInfo
             {
                 get
@@ -206,26 +204,26 @@ namespace B_KTO_001
             }
 
             /// <summary>
-            /// The Button_New item.
+            /// The PbNew item.
             /// </summary>
-            [RepositoryItem("b60788e4-c82f-45bd-8509-7e800470219a")]
-            public virtual Ranorex.Button Button_New
+            [RepositoryItem("8cb95032-ac82-44cf-bf8b-3c6ad6212bc8")]
+            public virtual Ranorex.Button PbNew
             {
                 get
                 {
-                    return _button_newInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _pbnewInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The Button_New item info.
+            /// The PbNew item info.
             /// </summary>
-            [RepositoryItemInfo("b60788e4-c82f-45bd-8509-7e800470219a")]
-            public virtual RepoItemInfo Button_NewInfo
+            [RepositoryItemInfo("8cb95032-ac82-44cf-bf8b-3c6ad6212bc8")]
+            public virtual RepoItemInfo PbNewInfo
             {
                 get
                 {
-                    return _button_newInfo;
+                    return _pbnewInfo;
                 }
             }
 
@@ -278,6 +276,30 @@ namespace B_KTO_001
             }
 
             /// <summary>
+            /// The Bezeichnung item.
+            /// </summary>
+            [RepositoryItem("93ff4f20-c2c8-402a-8b05-aec9479b56b2")]
+            public virtual Ranorex.Text Bezeichnung
+            {
+                get
+                {
+                    return _bezeichnungInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Bezeichnung item info.
+            /// </summary>
+            [RepositoryItemInfo("93ff4f20-c2c8-402a-8b05-aec9479b56b2")]
+            public virtual RepoItemInfo BezeichnungInfo
+            {
+                get
+                {
+                    return _bezeichnungInfo;
+                }
+            }
+
+            /// <summary>
             /// The Waehrung item.
             /// </summary>
             [RepositoryItem("7cf50209-db4d-4fda-83f7-b61e0c2cdb48")]
@@ -322,78 +344,6 @@ namespace B_KTO_001
                 get
                 {
                     return _tabpageallgemeinInfo;
-                }
-            }
-
-            /// <summary>
-            /// The UstPflicht item.
-            /// </summary>
-            [RepositoryItem("9caa3852-95ec-4c3f-b3c4-5d794cfd1a28")]
-            public virtual Ranorex.Text UstPflicht
-            {
-                get
-                {
-                    return _ustpflichtInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The UstPflicht item info.
-            /// </summary>
-            [RepositoryItemInfo("9caa3852-95ec-4c3f-b3c4-5d794cfd1a28")]
-            public virtual RepoItemInfo UstPflichtInfo
-            {
-                get
-                {
-                    return _ustpflichtInfo;
-                }
-            }
-
-            /// <summary>
-            /// The UstCode item.
-            /// </summary>
-            [RepositoryItem("e1152c7e-52fb-4a43-82c1-2fc14b134aef")]
-            public virtual Ranorex.Text UstCode
-            {
-                get
-                {
-                    return _ustcodeInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The UstCode item info.
-            /// </summary>
-            [RepositoryItemInfo("e1152c7e-52fb-4a43-82c1-2fc14b134aef")]
-            public virtual RepoItemInfo UstCodeInfo
-            {
-                get
-                {
-                    return _ustcodeInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Bezeichnung item.
-            /// </summary>
-            [RepositoryItem("93ff4f20-c2c8-402a-8b05-aec9479b56b2")]
-            public virtual Ranorex.Text Bezeichnung
-            {
-                get
-                {
-                    return _bezeichnungInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Bezeichnung item info.
-            /// </summary>
-            [RepositoryItemInfo("93ff4f20-c2c8-402a-8b05-aec9479b56b2")]
-            public virtual RepoItemInfo BezeichnungInfo
-            {
-                get
-                {
-                    return _bezeichnungInfo;
                 }
             }
 
@@ -490,6 +440,133 @@ namespace B_KTO_001
                 get
                 {
                     return _colktbzkzrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Tab_Allgemein folder.
+            /// </summary>
+            [RepositoryFolder("1b2b94e2-8d85-4024-8136-ef47e2e9b47a")]
+            public virtual B_KTO_001RepositoryFolders.Tab_AllgemeinFolder Tab_Allgemein
+            {
+                get { return _tab_allgemein; }
+            }
+        }
+
+        /// <summary>
+        /// The Tab_AllgemeinFolder folder.
+        /// </summary>
+        [RepositoryFolder("1b2b94e2-8d85-4024-8136-ef47e2e9b47a")]
+        public partial class Tab_AllgemeinFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _ustpflichtInfo;
+            RepoItemInfo _ustcodeInfo;
+            RepoItemInfo _cbktoskontoInfo;
+
+            /// <summary>
+            /// Creates a new Tab_Allgemein  folder.
+            /// </summary>
+            public Tab_AllgemeinFolder(RepoGenBaseFolder parentFolder) :
+                    base("Tab_Allgemein", "container/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpAllgemein']", parentFolder, 30000, null, false, "1b2b94e2-8d85-4024-8136-ef47e2e9b47a", "")
+            {
+                _ustpflichtInfo = new RepoItemInfo(this, "UstPflicht", "text[@controlname='dfKto_ustmv']/text[@accessiblename='Ust-Pflicht']", "", 30000, null, "9caa3852-95ec-4c3f-b3c4-5d794cfd1a28");
+                _ustcodeInfo = new RepoItemInfo(this, "UstCode", "text[@controlname='dfUst_cd']/text[@accessiblename='Ust-Code']", "", 30000, null, "e1152c7e-52fb-4a43-82c1-2fc14b134aef");
+                _cbktoskontoInfo = new RepoItemInfo(this, "CbKtoSkonto", "checkbox[@controlname='cbKto_skonto']", "", 30000, null, "e9482024-f2ed-4fa4-91eb-fa3bd0677e9f");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("1b2b94e2-8d85-4024-8136-ef47e2e9b47a")]
+            public virtual Ranorex.TabPage Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1b2b94e2-8d85-4024-8136-ef47e2e9b47a")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UstPflicht item.
+            /// </summary>
+            [RepositoryItem("9caa3852-95ec-4c3f-b3c4-5d794cfd1a28")]
+            public virtual Ranorex.Text UstPflicht
+            {
+                get
+                {
+                    return _ustpflichtInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UstPflicht item info.
+            /// </summary>
+            [RepositoryItemInfo("9caa3852-95ec-4c3f-b3c4-5d794cfd1a28")]
+            public virtual RepoItemInfo UstPflichtInfo
+            {
+                get
+                {
+                    return _ustpflichtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UstCode item.
+            /// </summary>
+            [RepositoryItem("e1152c7e-52fb-4a43-82c1-2fc14b134aef")]
+            public virtual Ranorex.Text UstCode
+            {
+                get
+                {
+                    return _ustcodeInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UstCode item info.
+            /// </summary>
+            [RepositoryItemInfo("e1152c7e-52fb-4a43-82c1-2fc14b134aef")]
+            public virtual RepoItemInfo UstCodeInfo
+            {
+                get
+                {
+                    return _ustcodeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CbKtoSkonto item.
+            /// </summary>
+            [RepositoryItem("e9482024-f2ed-4fa4-91eb-fa3bd0677e9f")]
+            public virtual Ranorex.CheckBox CbKtoSkonto
+            {
+                get
+                {
+                    return _cbktoskontoInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CbKtoSkonto item info.
+            /// </summary>
+            [RepositoryItemInfo("e9482024-f2ed-4fa4-91eb-fa3bd0677e9f")]
+            public virtual RepoItemInfo CbKtoSkontoInfo
+            {
+                get
+                {
+                    return _cbktoskontoInfo;
                 }
             }
         }

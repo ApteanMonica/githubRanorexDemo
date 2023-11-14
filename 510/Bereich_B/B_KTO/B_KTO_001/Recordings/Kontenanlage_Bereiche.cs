@@ -114,6 +114,9 @@ namespace B_KTO_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.PbDataAccessSave' at Center.", repo.FrmKto.PbDataAccessSaveInfo, new RecordItemIndex(10));
             repo.FrmKto.PbDataAccessSave.Click();
             
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='P') on item 'FrmKto.ColKtbzKzRow1'.", repo.FrmKto.ColKtbzKzRow1Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.FrmKto.ColKtbzKzRow1Info, "Text", "P");
+            
         }
 
 #region Image Feature Data
