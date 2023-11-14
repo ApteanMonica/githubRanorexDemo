@@ -471,7 +471,7 @@ namespace E_BSST_001
                 _colbspgeliefertrow4Info = new RepoItemInfo(this, "ColBspGeliefertRow4", "?/?/cell[@accessiblename='colBsp_geliefert Row 4']", "", 30000, null, "8ebd58d9-6322-4ce9-ab45-d345542586f2");
                 _colbsknrrow7Info = new RepoItemInfo(this, "ColBskNrRow7", "?/?/cell[@accessiblename~'colBsk_nr Row' and @text=$Bestellung_E]", "", 30000, null, "ba6715e6-0dad-4881-a1f5-5c28ad967a14");
                 _coladrnrrow7Info = new RepoItemInfo(this, "ColAdrNrRow7", "?/?/cell[@accessiblename~'colAdr_nr Row' and @text=$Lieferant2]", "", 30000, null, "d17b1387-cb28-475a-af2e-879796a138a8");
-                _colbspstatusrow7Info = new RepoItemInfo(this, "ColBspStatusRow7", "?/?/cell[@accessiblename='colBsp_status Row 7']", "", 30000, null, "e137f5fe-0f33-4dfc-aae7-46468d151a2c");
+                _colbspstatusrow7Info = new RepoItemInfo(this, "ColBspStatusRow7", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 7']/cell[@accessiblename='colBsp_status Row 7']", "", 30000, null, "e137f5fe-0f33-4dfc-aae7-46468d151a2c");
                 _row12column0Info = new RepoItemInfo(this, "Row12Column0", "?/?/cell[@accessiblename='Row 12 Column 0']", "", 30000, null, "993c239b-568c-426f-81e7-4ff3dfd06dd5");
                 _row11column0Info = new RepoItemInfo(this, "Row11Column0", "?/?/cell[@accessiblename='Row 11 Column 0']", "", 30000, null, "def0fb51-19a9-4950-b198-fe8ae7a27a1e");
                 _colbsknrrow11Info = new RepoItemInfo(this, "ColBskNrRow11", "?/?/cell[@accessiblename='colBsk_nr Row 1']", "", 30000, null, "b14acb5e-a744-443c-97a1-f3dcbeb95012");
