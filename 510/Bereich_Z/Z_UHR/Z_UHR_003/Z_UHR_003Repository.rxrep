@@ -13,413 +13,6 @@ name="Z_UHR_003Repository">
 	searchtimeout="0ms"
 	usecache="True">
 		<appfolder
-		addcaps="form,nativewindow"
-		capname="form"
-		id="6ceda01d-cfc2-4482-971a-746404fd1e1e"
-		isrooted="True"
-		name="Form100ZeitsystemStechuhrAuswert"
-		refpath="/form[@title='[100]  Zeitsystem Stechuhr   Auswertung']"
-		searchtimeout="30000ms"
-		usecache="True">
-			<item
-			addcaps="text,accessible"
-			capname="text"
-			id="cb662a59-ce43-4ad1-b704-b2d972f23001"
-			name="Mitarbeiter"
-			refimgid="067e69d0-c6bd-4ddf-bb08-097d7aaee331"
-			refpath="/form[@title='[100]  Zeitsystem Stechuhr   Auswertung']/element[@instance='19']/element[@class='WindowsForms10.EDIT.app.0.1fdf3f4_r6_ad1' and @instance='0']/text[@accessiblename='Mitarbeiter']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@title&gt;'[100]  Zeitsystem Stechuhr']/element[@instance='19']/element[2]/text[@accessiblename='Mitarbeiter']
-			</item>
-			<item
-			addcaps="button,nativewindow"
-			capname="button"
-			id="30b6ce53-85a9-4250-bc51-6fc388c42d1d"
-			name="WindowsForms10BUTTONApp01fdf3f4R6A"
-			refimgid="d6771b81-c0ae-4144-99f3-5fc74b7b4990"
-			refpath="/form[@title='[100]  Zeitsystem Stechuhr   Auswertung']/element[@instance='18']/element[@instance='0']/button[@text='' and @class='WindowsForms10.BUTTON.app.0.1fdf3f4_r6_ad1' and @instance='1']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@title&gt;'[100]  Zeitsystem Stechuhr']/element[@instance='18']/element[@instance='0']/button[@class='WindowsForms10.BUTTON.app.0.1fdf3f4_r6_ad1' and @instance='1']
-			</item>
-			<item
-			addcaps="radiobutton,accessible"
-			capname="radiobutton"
-			id="681ca73a-387d-470b-b61b-4aee2217cf54"
-			name="Monat"
-			refimgid="03ff8e0b-a815-46b1-b5bd-8a90cc26f1ac"
-			refpath="/form[@title='[100]  Zeitsystem Stechuhr   Auswertung']/element[@instance='19']/element[@class='WindowsForms10.BUTTON.app.0.1fdf3f4_r6_ad1' and @instance='0']/radiobutton[@accessiblename='Monat']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@title&gt;'[100]  Zeitsystem Stechuhr']/element[@instance='19']/element[19]/radiobutton[@accessiblename='Monat']
-			</item>
-			<folder
-			capname="table"
-			id="a77af3d5-483f-4c83-afea-972b153e1f54"
-			isrooted="True"
-			name="Zeile_1"
-			searchtimeout="30000ms"
-			usecache="False">
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="08055f99-a99a-420d-98f9-038ccfded85c"
-				name="ColMitarbeiterRow1"
-				refimgid="82aa28d1-0afe-4d2f-8b35-ba5ae5576b1d"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colMitarbeiter Row 1']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="8e7c4f77-b439-4781-94aa-ba6f150f0584"
-				name="ColTextRow1"
-				refimgid="8575ffc5-b4f5-4258-b95e-936b28b343c5"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colText Row 1']
-				</item>
-				<basepath>
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
-				</basepath>
-			</folder>
-			<folder
-			capname="table"
-			id="7eb66574-a10c-44e9-90d7-8e5a2caf92a0"
-			isrooted="True"
-			name="Zeile_2"
-			searchtimeout="30000ms"
-			usecache="False">
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="d7525d0d-18d5-40c1-bcbb-8a2f02210088"
-				name="ColTagRow2"
-				refimgid="0b94d9fc-b8e8-4c69-97de-018e06f31b35"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colTag Row 2']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="5d517f9e-d6a6-4df7-9302-bc2464f1a3c3"
-				name="ColDatumRow2"
-				refimgid="8846edf4-8f1a-43a4-b9a8-b77186763c24"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colDatum Row 2']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="df21da73-e66b-4418-ba6b-e54507f219e8"
-				name="ColUhrDtbeginnRow2"
-				refimgid="f5a17327-2113-4ee1-aad1-b5c314d65d68"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colUhr_dtbeginn Row 2']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="5e87d6cc-4090-47d5-b658-f72de7114e6b"
-				name="ColUhrDtendeRow2"
-				refimgid="a154d80a-f030-41b5-99b0-152c6e2f57b8"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colUhr_dtende Row 2']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="3505140e-e018-415a-9dbd-c88979417b48"
-				name="ColPausenRow2"
-				refimgid="3e37daf8-d2f6-48f2-9fee-ae9dfb28def3"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colPausen Row 2']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="ea71227d-6e4f-445b-b601-cad619750ce2"
-				name="ColDauerRow2"
-				refimgid="ec2ae864-aa51-4d3d-b44a-925855abdbd6"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colDauer Row 2']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="c26827b1-d028-4058-bb46-a2d0fa8c90d3"
-				name="ColTextRow2"
-				refimgid="a793e7f0-43da-4082-bb5a-56c2fe8c7b82"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colText Row 2']
-				</item>
-				<basepath>
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
-				</basepath>
-			</folder>
-			<folder
-			capname="table"
-			id="92d6ed60-f8d2-491e-a689-f494136e8692"
-			isrooted="True"
-			name="Zeile_3"
-			searchtimeout="30000ms"
-			usecache="False">
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="63b17bc1-6dde-4751-b04d-dc9d8e37d479"
-				name="ColTagRow3"
-				refimgid="f7ac0601-a4c7-491c-9b60-667faa51256e"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colTag Row 3']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="9e27aff8-f88d-43a3-95cf-029266ef790d"
-				name="ColDatumRow3"
-				refimgid="935ed31e-8f28-42d8-9d79-0442deebe5f4"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colDatum Row 3']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="f9e5b8dd-cb23-4fad-bcb8-48f5b8896a53"
-				name="ColUhrDtbeginnRow3"
-				refimgid="e35a37f3-efba-4b5d-bee0-806091a24ce6"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colUhr_dtbeginn Row 3']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="27fd2bae-7e8b-4bee-a5ba-4ef787c680ef"
-				name="ColUhrDtendeRow3"
-				refimgid="cd6e6887-a11d-46b6-bc71-3fd59078ce61"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colUhr_dtende Row 3']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="1b79d03f-66fa-4652-996a-09797af6585d"
-				name="ColPausenRow3"
-				refimgid="d6821703-971e-458f-8e9d-968283fa21fd"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colPausen Row 3']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="e5cd5317-09dc-4807-b0e1-3e6db0480f5f"
-				name="ColTextRow3"
-				refimgid="81e46ee1-17c3-49cb-a687-1de897362b0b"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colText Row 3']
-				</item>
-				<basepath>
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
-				</basepath>
-			</folder>
-			<folder
-			capname="table"
-			id="491d66e3-e8eb-4b9f-b45e-7f7e735bfe9a"
-			isrooted="True"
-			name="Zeile_4"
-			searchtimeout="30000ms"
-			usecache="False">
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="4ea03754-0c18-4674-bfc8-cfbc14c22419"
-				name="ColTagRow4"
-				refimgid="57faa0dd-5edc-4c48-9e80-facf4d90e389"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colTag Row 4']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="0e9e2c40-d29b-4c5f-aa9d-47c8c0011dbf"
-				name="ColDatumRow4"
-				refimgid="53f7cc94-0926-4ae4-9373-e9c6f59ca5c5"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colDatum Row 4']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="2b89d8a0-a979-481a-a02a-e06ea7688ef1"
-				name="ColUhrDtbeginnRow4"
-				refimgid="7d6f7b81-86c4-4daa-9071-eec1300a2b59"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colUhr_dtbeginn Row 4']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="c7e1e8ad-4c78-4509-a366-8904cfcc2bf4"
-				name="ColUhrDtendeRow4"
-				refimgid="67318858-ac06-410e-80db-803a0fd71d88"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colUhr_dtende Row 4']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="ee4ab318-c3c5-4bbd-9bfa-e82b08a8a307"
-				name="ColPausenRow4"
-				refimgid="58b1a89a-ea9b-46c0-8476-ca5962c2e8c5"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colPausen Row 4']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="dc473980-1908-45e7-af57-e9429e01c4f7"
-				name="ColDauerRow4"
-				refimgid="e66611a1-39e6-4364-b10b-4c707f62204c"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colDauer Row 4']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="716eb909-628c-46da-96e2-4b6dd73e4a83"
-				name="ColTextRow4"
-				refimgid="88f0f624-7408-4b5d-b833-f2b1d5bd38aa"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colText Row 4']
-				</item>
-				<basepath>
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
-				</basepath>
-			</folder>
-			<folder
-			capname="table"
-			id="4dbd5cb9-c2af-4a94-8bc8-a5fd51550df5"
-			isrooted="True"
-			name="Zeile_5"
-			searchtimeout="30000ms"
-			usecache="False">
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="0c9c0c9c-2bc4-4bfc-8bf9-ba223bcabde5"
-				name="ColTagRow5"
-				refimgid="351bd45a-3ed6-4ca0-8942-e48e75e82ba9"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colTag Row 5']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="898f7571-c0d8-41b2-ab57-b22bd9173daa"
-				name="ColDatumRow5"
-				refimgid="b301020f-02bc-447f-a40b-61c9e5fbf102"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colDatum Row 5']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="2a651fd8-10a1-434f-a32c-81c79b7e343e"
-				name="ColAZGesamtRow5"
-				refimgid="3fa58fd4-dd05-4fe3-9428-90acddbe1c75"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colAZGesamt Row 5']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="bc793099-7d7b-4f88-9d27-03b5ce43235b"
-				name="ColPausenRow5"
-				refimgid="012dfa09-3fc3-4659-845c-ad7e8aa65402"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colPausen Row 5']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="54908662-2502-4011-a0e2-f172bb04e0f7"
-				name="ColDauerRow5"
-				refimgid="05296e47-d75e-432d-b467-9c2649b9a813"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colDauer Row 5']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="a8ddb5bc-b039-4073-b5e2-204b32a010d6"
-				name="ColSollRow5"
-				refimgid="019f5b25-ca9d-40db-a622-3e0706db2baa"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colSoll Row 5']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="6bd10603-7e80-4331-bc95-33b4d6a1215b"
-				name="ColUhrDtbeginnRow5"
-				refimgid="e41b18da-676f-4c80-a254-3f183d1f0807"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colUhr_dtbeginn Row 5']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="a9f94596-8975-416a-9756-be6231873412"
-				name="ColUhrDtendeRow5"
-				refimgid="a3ec45d0-98a6-44c3-8e01-c3ca81a282c4"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colUhr_dtende Row 5']
-				</item>
-				<basepath>
-					/form[@title&gt;'[100]  Zeitsystem Stechuhr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
-				</basepath>
-			</folder>
-			<basepath>
-				/form[@title&gt;'[100]  Zeitsystem Stechuhr']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
-YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
-nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
-			</icon>
-		</appfolder>
-		<appfolder
 		capname="form"
 		id="f5308d81-9910-48be-97b3-c7bdff77d28f"
 		isrooted="True"
@@ -548,6 +141,361 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='tblAuswertungZeit']/container[@controlname='ToolBar']/text[@controlname='dfJahr_von']
 			</item>
+			<folder
+			capname="table"
+			id="a77af3d5-483f-4c83-afea-972b153e1f54"
+			isrooted="True"
+			name="Zeile_1"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="08055f99-a99a-420d-98f9-038ccfded85c"
+				name="ColMitarbeiterRow1"
+				refimgid="82aa28d1-0afe-4d2f-8b35-ba5ae5576b1d"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colMitarbeiter Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="8e7c4f77-b439-4781-94aa-ba6f150f0584"
+				name="ColTextRow1"
+				refimgid="8575ffc5-b4f5-4258-b95e-936b28b343c5"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colText Row 1']
+				</item>
+				<basepath>
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+				</basepath>
+			</folder>
+			<folder
+			capname="table"
+			id="7eb66574-a10c-44e9-90d7-8e5a2caf92a0"
+			isrooted="True"
+			name="Zeile_2"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="d7525d0d-18d5-40c1-bcbb-8a2f02210088"
+				name="ColTagRow2"
+				refimgid="0b94d9fc-b8e8-4c69-97de-018e06f31b35"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colTag Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="5d517f9e-d6a6-4df7-9302-bc2464f1a3c3"
+				name="ColDatumRow2"
+				refimgid="8846edf4-8f1a-43a4-b9a8-b77186763c24"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colDatum Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="df21da73-e66b-4418-ba6b-e54507f219e8"
+				name="ColUhrDtbeginnRow2"
+				refimgid="f5a17327-2113-4ee1-aad1-b5c314d65d68"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colUhr_dtbeginn Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="5e87d6cc-4090-47d5-b658-f72de7114e6b"
+				name="ColUhrDtendeRow2"
+				refimgid="a154d80a-f030-41b5-99b0-152c6e2f57b8"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colUhr_dtende Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="3505140e-e018-415a-9dbd-c88979417b48"
+				name="ColPausenRow2"
+				refimgid="3e37daf8-d2f6-48f2-9fee-ae9dfb28def3"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colPausen Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="ea71227d-6e4f-445b-b601-cad619750ce2"
+				name="ColDauerRow2"
+				refimgid="ec2ae864-aa51-4d3d-b44a-925855abdbd6"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colDauer Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="c26827b1-d028-4058-bb46-a2d0fa8c90d3"
+				name="ColTextRow2"
+				refimgid="a793e7f0-43da-4082-bb5a-56c2fe8c7b82"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colText Row 2']
+				</item>
+				<basepath>
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+				</basepath>
+			</folder>
+			<folder
+			capname="table"
+			id="92d6ed60-f8d2-491e-a689-f494136e8692"
+			isrooted="True"
+			name="Zeile_3"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="63b17bc1-6dde-4751-b04d-dc9d8e37d479"
+				name="ColTagRow3"
+				refimgid="f7ac0601-a4c7-491c-9b60-667faa51256e"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colTag Row 3']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="9e27aff8-f88d-43a3-95cf-029266ef790d"
+				name="ColDatumRow3"
+				refimgid="935ed31e-8f28-42d8-9d79-0442deebe5f4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colDatum Row 3']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="f9e5b8dd-cb23-4fad-bcb8-48f5b8896a53"
+				name="ColUhrDtbeginnRow3"
+				refimgid="e35a37f3-efba-4b5d-bee0-806091a24ce6"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colUhr_dtbeginn Row 3']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="27fd2bae-7e8b-4bee-a5ba-4ef787c680ef"
+				name="ColUhrDtendeRow3"
+				refimgid="cd6e6887-a11d-46b6-bc71-3fd59078ce61"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colUhr_dtende Row 3']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="1b79d03f-66fa-4652-996a-09797af6585d"
+				name="ColPausenRow3"
+				refimgid="d6821703-971e-458f-8e9d-968283fa21fd"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colPausen Row 3']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="e5cd5317-09dc-4807-b0e1-3e6db0480f5f"
+				name="ColTextRow3"
+				refimgid="81e46ee1-17c3-49cb-a687-1de897362b0b"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colText Row 3']
+				</item>
+				<basepath>
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+				</basepath>
+			</folder>
+			<folder
+			capname="table"
+			id="491d66e3-e8eb-4b9f-b45e-7f7e735bfe9a"
+			isrooted="True"
+			name="Zeile_4"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="4ea03754-0c18-4674-bfc8-cfbc14c22419"
+				name="ColTagRow4"
+				refimgid="57faa0dd-5edc-4c48-9e80-facf4d90e389"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colTag Row 4']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="0e9e2c40-d29b-4c5f-aa9d-47c8c0011dbf"
+				name="ColDatumRow4"
+				refimgid="53f7cc94-0926-4ae4-9373-e9c6f59ca5c5"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colDatum Row 4']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="2b89d8a0-a979-481a-a02a-e06ea7688ef1"
+				name="ColUhrDtbeginnRow4"
+				refimgid="7d6f7b81-86c4-4daa-9071-eec1300a2b59"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colUhr_dtbeginn Row 4']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="c7e1e8ad-4c78-4509-a366-8904cfcc2bf4"
+				name="ColUhrDtendeRow4"
+				refimgid="67318858-ac06-410e-80db-803a0fd71d88"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colUhr_dtende Row 4']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="ee4ab318-c3c5-4bbd-9bfa-e82b08a8a307"
+				name="ColPausenRow4"
+				refimgid="58b1a89a-ea9b-46c0-8476-ca5962c2e8c5"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colPausen Row 4']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="dc473980-1908-45e7-af57-e9429e01c4f7"
+				name="ColDauerRow4"
+				refimgid="e66611a1-39e6-4364-b10b-4c707f62204c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colDauer Row 4']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="716eb909-628c-46da-96e2-4b6dd73e4a83"
+				name="ColTextRow4"
+				refimgid="88f0f624-7408-4b5d-b833-f2b1d5bd38aa"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']/cell[@accessiblename='colText Row 4']
+				</item>
+				<basepath>
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+				</basepath>
+			</folder>
+			<folder
+			capname="table"
+			id="4dbd5cb9-c2af-4a94-8bc8-a5fd51550df5"
+			isrooted="True"
+			name="Zeile_5"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="0c9c0c9c-2bc4-4bfc-8bf9-ba223bcabde5"
+				name="ColTagRow5"
+				refimgid="351bd45a-3ed6-4ca0-8942-e48e75e82ba9"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colTag Row 5']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="898f7571-c0d8-41b2-ab57-b22bd9173daa"
+				name="ColDatumRow5"
+				refimgid="b301020f-02bc-447f-a40b-61c9e5fbf102"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colDatum Row 5']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="2a651fd8-10a1-434f-a32c-81c79b7e343e"
+				name="ColAZGesamtRow5"
+				refimgid="3fa58fd4-dd05-4fe3-9428-90acddbe1c75"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colAZGesamt Row 5']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="bc793099-7d7b-4f88-9d27-03b5ce43235b"
+				name="ColPausenRow5"
+				refimgid="012dfa09-3fc3-4659-845c-ad7e8aa65402"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colPausen Row 5']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="54908662-2502-4011-a0e2-f172bb04e0f7"
+				name="ColDauerRow5"
+				refimgid="05296e47-d75e-432d-b467-9c2649b9a813"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colDauer Row 5']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="a8ddb5bc-b039-4073-b5e2-204b32a010d6"
+				name="ColSollRow5"
+				refimgid="019f5b25-ca9d-40db-a622-3e0706db2baa"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colSoll Row 5']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="6bd10603-7e80-4331-bc95-33b4d6a1215b"
+				name="ColUhrDtbeginnRow5"
+				refimgid="e41b18da-676f-4c80-a254-3f183d1f0807"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colUhr_dtbeginn Row 5']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="a9f94596-8975-416a-9756-be6231873412"
+				name="ColUhrDtendeRow5"
+				refimgid="a3ec45d0-98a6-44c3-8e01-c3ca81a282c4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colUhr_dtende Row 5']
+				</item>
+				<basepath>
+					/form[@controlname='tblAuswertungZeit']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controlname='tblAuswertungZeit']
 			</basepath>
@@ -584,10 +532,9 @@ iQGlGgC6HTBAdPsLgewbF6W61N1ckdcAAAAASUVORK5CYII=
 			id="9fb6dcfe-6543-4506-a5f1-9c1fa761b5b6"
 			name="PbRefreshRefresh"
 			refimgid="c403881e-2956-423a-a278-8626b428552a"
-			refpath="/form[@controlname='frmUhr']/container[@controlname='RibbonBar']/container[@controlname='RefreshGroup']/button[@controlname='pbRefresh_Refresh']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='frmUhr']/?/?/container[@controlname='RefreshGroup']/button[@controlname='pbRefresh_Refresh']
+				/form[@controlname='frmUhr']/container[@controlname='RibbonBar']/container[@controlname='RefreshGroup']/button[@controlname='pbRefresh_Refresh']
 			</item>
 			<item
 			addcaps="button,control,nativewindow"
@@ -595,10 +542,9 @@ iQGlGgC6HTBAdPsLgewbF6W61N1ckdcAAAAASUVORK5CYII=
 			id="9be7a803-1d80-4e02-9d36-9e47ce68e7e8"
 			name="PbTimecontrolKommt"
 			refimgid="346966a8-fd31-4569-ba64-e99df5782d76"
-			refpath="/form[@controlname='frmUhr']/container[@controlname='RibbonBar']/container[@controlname='TimecontrolKommtGroup']/button[@controlname='pbTimecontrol_Kommt']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='frmUhr']/?/?/container[@controlname='TimecontrolKommtGroup']/button[@controlname='pbTimecontrol_Kommt']
+				/form[@controlname='frmUhr']/container[@controlname='RibbonBar']/container[@controlname='TimecontrolKommtGroup']/button[@controlname='pbTimecontrol_Kommt']
 			</item>
 			<item
 			addcaps="button,control,nativewindow"
@@ -621,17 +567,6 @@ iQGlGgC6HTBAdPsLgewbF6W61N1ckdcAAAAASUVORK5CYII=
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='frmUhr']/container[@controlname='RibbonBar']/container[@controlname='TimecontrolGehtGroup']/button[@controlname='pbTimecontrol_Geht']
-			</item>
-			<item
-			addcaps="text,accessible"
-			capname="text"
-			id="61db96f8-e762-4a1a-af1a-ca01507b830b"
-			name="Mitarbeiter1"
-			refimgid="a9ccdaa6-dbe9-4625-8b6c-bf28f2821412"
-			refpath="/form[@controlname='frmUhr']/container[@controlname='ToolBar']/text[@controlname='cmbPers_name']/text[@accessiblename='Mitarbeiter']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='frmUhr']/container[@controlname='ToolBar']/text[@controlname='cmbPers_name']/text[@accessiblename='Mitarbeiter']
 			</item>
 			<item
 			addcaps="text,accessible"
@@ -920,46 +855,6 @@ DsQBlSsOGwAAAPlJREFUOE+l0r1rwkAABfD8Y0J3CaVrJ2fNpoufiNHFFrK5OWcwpJOgi4goGBGU
 M78/U+y239h7DsajNrqdBgZWiyLPm7UTLNiuZwz5kBxZlqlrXqko0LQSbHvis1EslmjOFvwvIOdv
 QdSnwXVX1MdnOSgYWk32EnGrwDASyOdfEA6HoCjvyGQjNGcLjvsFRQqu8wlvM/fvYQnTVBGPv/oF
 b0gm01DVQnAHZAHvdu/FFjyK+3eJ4IYiuKEIbng/SBe1JRbLNoYtcwAAAABJRU5ErkJggg==
-			</icon>
-		</appfolder>
-		<appfolder
-		addcaps="host,nativewindow"
-		capname="host"
-		id="0ceb387f-0a5b-4b06-9f11-92cdd50912b6"
-		isrooted="True"
-		name="WSBAR"
-		refimgid="748ad48a-5e62-46e3-b0c4-cb844f2f894c"
-		refpath=""
-		searchtimeout="30000ms"
-		usecache="True">
-			<item
-			addcaps="host,nativewindow"
-			capname="host"
-			id="6b9dda7c-40eb-4674-a4b6-c43b8e7588cd"
-			name="WSBAR"
-			refimgid="5635aff6-18c7-448d-bf77-011218329ff9"
-			refpath=""
-			robustPath=""
-			searchtimeout="30000ms">
-			</item>
-			<basepath>
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
-dC5ORVQgdjMuMzE3g3eGAAACtUlEQVQ4T62S6zOUYRiH9w/qYzM1o5moMUyNShmHpISUNhIrHRxW
-DjmXpcah2Ky1TcsSa5ZQ0u62csxxMI4p6URGWFlXz6rGNPu1e+b98sx7Xc/v996v5L/N4OgcPYPT
-WPomaH8zSotpGENbP3UtvVQbutDUWVDVmCjVtlOsaeMPtjNd/VNcfwwyNVwuh4ulEFoMQfchQGHj
-5B0rPlkreN1eRKFsdBQYO8eIroAHz6GgCbLqQa6DqxoIV0JIoV20iU/mCndKDY6CFuMQ4WWgEHCG
-gBOrIKYSpOIsWMCn8n7inbHM0VvzZBfXOwr0rX2cL4H0OkjQQrSoIhU1zooK/nc38MpY4oj8Pe6x
-o6QXPnUUVBk6t1+OewJRKgh78Bu2d7f39kh8h/vVEVwiOki9p3MUqGvN2x2viA94QcCBBeCXu86J
-tG94xM/iFjOES7iFfeeaSVJoHQVlYj2+OWuEihpn8rfwzV7leOoXDsdN4yobwFlqxinkGXtP15KQ
-+9hRUFT5HK/07wTk2/DJ/oFn8mcO3ZzENfqtgI04BTeyJ0DHbj8NN7IqHAUKZRNzn6xMza8zPrfG
-yMwqA5M/6B1bobXzI7UvJijWWgjtCkWWpvxXkJLz8KBG/3pTqXtJYWWz2HM9afe0xOeokKWUII0v
-IEiWjd+lFI4Fx+HmL9u8lFAU+QeXSDQNFv7Opm2LNauNpZWfzH+1MikS2dN0iySmwWVae5aoaZvl
-gHfkTgp1nXkbjjXFsm7d4oNhFwuLG8wsWGl8NUjFU6NIped6porYDBUlugH2n4jYEZTXGrGJm6sG
-9AxPLDA7VE579zRNpnFqWkdQN/RTUt2NQt1BziMzmWVG9nlKdwRFmma5eMhT6sVfVo38biXX0suI
-TCok7EYegVGZ+EqTt/u7+8fg7BVhF8glEonkF6m1M1/+IilrAAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
 		<basepath>

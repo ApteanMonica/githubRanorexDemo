@@ -105,11 +105,11 @@ namespace Z_UHR_003.Recording
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Pers_Nr_2) on item 'Form100ZeitsystemStechuhrAuswert.Zeile_1.ColMitarbeiterRow1'.", repo.Form100ZeitsystemStechuhrAuswert.Zeile_1.ColMitarbeiterRow1Info, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.Form100ZeitsystemStechuhrAuswert.Zeile_1.ColMitarbeiterRow1Info, "Text", Pers_Nr_2);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Pers_Nr_2) on item 'TblAuswertungZeit.Zeile_1.ColMitarbeiterRow1'.", repo.TblAuswertungZeit.Zeile_1.ColMitarbeiterRow1Info, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.TblAuswertungZeit.Zeile_1.ColMitarbeiterRow1Info, "Text", Pers_Nr_2);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$MA_2) on item 'Form100ZeitsystemStechuhrAuswert.Zeile_1.ColTextRow1'.", repo.Form100ZeitsystemStechuhrAuswert.Zeile_1.ColTextRow1Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.Form100ZeitsystemStechuhrAuswert.Zeile_1.ColTextRow1Info, "Text", MA_2);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$MA_2) on item 'TblAuswertungZeit.Zeile_1.ColTextRow1'.", repo.TblAuswertungZeit.Zeile_1.ColTextRow1Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblAuswertungZeit.Zeile_1.ColTextRow1Info, "Text", MA_2);
             
         }
 

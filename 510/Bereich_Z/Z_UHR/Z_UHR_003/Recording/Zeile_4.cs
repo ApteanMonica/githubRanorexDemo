@@ -131,26 +131,26 @@ namespace Z_UHR_003.Recording
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Fr') on item 'Form100ZeitsystemStechuhrAuswert.Zeile_4.ColTagRow4'.", repo.Form100ZeitsystemStechuhrAuswert.Zeile_4.ColTagRow4Info, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.Form100ZeitsystemStechuhrAuswert.Zeile_4.ColTagRow4Info, "Text", "Fr");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Fr') on item 'TblAuswertungZeit.Zeile_4.ColTagRow4'.", repo.TblAuswertungZeit.Zeile_4.ColTagRow4Info, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.TblAuswertungZeit.Zeile_4.ColTagRow4Info, "Text", "Fr");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Datum) on item 'Form100ZeitsystemStechuhrAuswert.Zeile_4.ColDatumRow4'.", repo.Form100ZeitsystemStechuhrAuswert.Zeile_4.ColDatumRow4Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.Form100ZeitsystemStechuhrAuswert.Zeile_4.ColDatumRow4Info, "Text", Datum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Datum) on item 'TblAuswertungZeit.Zeile_4.ColDatumRow4'.", repo.TblAuswertungZeit.Zeile_4.ColDatumRow4Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblAuswertungZeit.Zeile_4.ColDatumRow4Info, "Text", Datum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Uhrzeit_beginn_2) on item 'Form100ZeitsystemStechuhrAuswert.Zeile_4.ColUhrDtbeginnRow4'.", repo.Form100ZeitsystemStechuhrAuswert.Zeile_4.ColUhrDtbeginnRow4Info, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.Form100ZeitsystemStechuhrAuswert.Zeile_4.ColUhrDtbeginnRow4Info, "Text", Uhrzeit_beginn_2);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Uhrzeit_beginn_2) on item 'TblAuswertungZeit.Zeile_4.ColUhrDtbeginnRow4'.", repo.TblAuswertungZeit.Zeile_4.ColUhrDtbeginnRow4Info, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.TblAuswertungZeit.Zeile_4.ColUhrDtbeginnRow4Info, "Text", Uhrzeit_beginn_2);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Uhrzeit_Ende_2) on item 'Form100ZeitsystemStechuhrAuswert.Zeile_4.ColUhrDtendeRow4'.", repo.Form100ZeitsystemStechuhrAuswert.Zeile_4.ColUhrDtendeRow4Info, new RecordItemIndex(3));
-            Validate.AttributeContains(repo.Form100ZeitsystemStechuhrAuswert.Zeile_4.ColUhrDtendeRow4Info, "Text", Uhrzeit_Ende_2);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Uhrzeit_Ende_2) on item 'TblAuswertungZeit.Zeile_4.ColUhrDtendeRow4'.", repo.TblAuswertungZeit.Zeile_4.ColUhrDtendeRow4Info, new RecordItemIndex(3));
+            Validate.AttributeContains(repo.TblAuswertungZeit.Zeile_4.ColUhrDtendeRow4Info, "Text", Uhrzeit_Ende_2);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'Form100ZeitsystemStechuhrAuswert.Zeile_4.ColPausenRow4'.", repo.Form100ZeitsystemStechuhrAuswert.Zeile_4.ColPausenRow4Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.Form100ZeitsystemStechuhrAuswert.Zeile_4.ColPausenRow4Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblAuswertungZeit.Zeile_4.ColPausenRow4'.", repo.TblAuswertungZeit.Zeile_4.ColPausenRow4Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.TblAuswertungZeit.Zeile_4.ColPausenRow4Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='03:00') on item 'Form100ZeitsystemStechuhrAuswert.Zeile_4.ColDauerRow4'.", repo.Form100ZeitsystemStechuhrAuswert.Zeile_4.ColDauerRow4Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.Form100ZeitsystemStechuhrAuswert.Zeile_4.ColDauerRow4Info, "Text", "03:00");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='03:00') on item 'TblAuswertungZeit.Zeile_4.ColDauerRow4'.", repo.TblAuswertungZeit.Zeile_4.ColDauerRow4Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.TblAuswertungZeit.Zeile_4.ColDauerRow4Info, "Text", "03:00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Zeittyp_im_Haus) on item 'Form100ZeitsystemStechuhrAuswert.Zeile_4.ColTextRow4'.", repo.Form100ZeitsystemStechuhrAuswert.Zeile_4.ColTextRow4Info, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.Form100ZeitsystemStechuhrAuswert.Zeile_4.ColTextRow4Info, "Text", Zeittyp_im_Haus);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Zeittyp_im_Haus) on item 'TblAuswertungZeit.Zeile_4.ColTextRow4'.", repo.TblAuswertungZeit.Zeile_4.ColTextRow4Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.TblAuswertungZeit.Zeile_4.ColTextRow4Info, "Text", Zeittyp_im_Haus);
             
         }
 

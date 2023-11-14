@@ -170,26 +170,26 @@ namespace Z_UHR_003.Recording
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Fr') on item 'Form100ZeitsystemStechuhrAuswert.Zeile_5.ColTagRow5'.", repo.Form100ZeitsystemStechuhrAuswert.Zeile_5.ColTagRow5Info, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.Form100ZeitsystemStechuhrAuswert.Zeile_5.ColTagRow5Info, "Text", "Fr");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Fr') on item 'TblAuswertungZeit.Zeile_5.ColTagRow5'.", repo.TblAuswertungZeit.Zeile_5.ColTagRow5Info, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.TblAuswertungZeit.Zeile_5.ColTagRow5Info, "Text", "Fr");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Datum) on item 'Form100ZeitsystemStechuhrAuswert.Zeile_5.ColDatumRow5'.", repo.Form100ZeitsystemStechuhrAuswert.Zeile_5.ColDatumRow5Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.Form100ZeitsystemStechuhrAuswert.Zeile_5.ColDatumRow5Info, "Text", Datum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Datum) on item 'TblAuswertungZeit.Zeile_5.ColDatumRow5'.", repo.TblAuswertungZeit.Zeile_5.ColDatumRow5Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblAuswertungZeit.Zeile_5.ColDatumRow5Info, "Text", Datum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Gesamt_AZ_Beginn) on item 'Form100ZeitsystemStechuhrAuswert.Zeile_5.ColUhrDtbeginnRow5'.", repo.Form100ZeitsystemStechuhrAuswert.Zeile_5.ColUhrDtbeginnRow5Info, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.Form100ZeitsystemStechuhrAuswert.Zeile_5.ColUhrDtbeginnRow5Info, "Text", Gesamt_AZ_Beginn);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Gesamt_AZ_Beginn) on item 'TblAuswertungZeit.Zeile_5.ColUhrDtbeginnRow5'.", repo.TblAuswertungZeit.Zeile_5.ColUhrDtbeginnRow5Info, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.TblAuswertungZeit.Zeile_5.ColUhrDtbeginnRow5Info, "Text", Gesamt_AZ_Beginn);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Gesamt_AZ_Ende) on item 'Form100ZeitsystemStechuhrAuswert.Zeile_5.ColUhrDtendeRow5'.", repo.Form100ZeitsystemStechuhrAuswert.Zeile_5.ColUhrDtendeRow5Info, new RecordItemIndex(3));
-            Validate.AttributeContains(repo.Form100ZeitsystemStechuhrAuswert.Zeile_5.ColUhrDtendeRow5Info, "Text", Gesamt_AZ_Ende);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Gesamt_AZ_Ende) on item 'TblAuswertungZeit.Zeile_5.ColUhrDtendeRow5'.", repo.TblAuswertungZeit.Zeile_5.ColUhrDtendeRow5Info, new RecordItemIndex(3));
+            Validate.AttributeContains(repo.TblAuswertungZeit.Zeile_5.ColUhrDtendeRow5Info, "Text", Gesamt_AZ_Ende);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$AZ_inkl_Pause) on item 'Form100ZeitsystemStechuhrAuswert.Zeile_5.ColAZGesamtRow5'.", repo.Form100ZeitsystemStechuhrAuswert.Zeile_5.ColAZGesamtRow5Info, new RecordItemIndex(4));
-            //Validate.AttributeEqual(repo.Form100ZeitsystemStechuhrAuswert.Zeile_5.ColAZGesamtRow5Info, "Text", AZ_inkl_Pause);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$AZ_inkl_Pause) on item 'TblAuswertungZeit.Zeile_5.ColAZGesamtRow5'.", repo.TblAuswertungZeit.Zeile_5.ColAZGesamtRow5Info, new RecordItemIndex(4));
+            //Validate.AttributeEqual(repo.TblAuswertungZeit.Zeile_5.ColAZGesamtRow5Info, "Text", AZ_inkl_Pause);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Pausen_Gesamt) on item 'Form100ZeitsystemStechuhrAuswert.Zeile_5.ColPausenRow5'.", repo.Form100ZeitsystemStechuhrAuswert.Zeile_5.ColPausenRow5Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.Form100ZeitsystemStechuhrAuswert.Zeile_5.ColPausenRow5Info, "Text", Pausen_Gesamt);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Pausen_Gesamt) on item 'TblAuswertungZeit.Zeile_5.ColPausenRow5'.", repo.TblAuswertungZeit.Zeile_5.ColPausenRow5Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.TblAuswertungZeit.Zeile_5.ColPausenRow5Info, "Text", Pausen_Gesamt);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Soll_AZ_Gesamt) on item 'Form100ZeitsystemStechuhrAuswert.Zeile_5.ColDauerRow5'.", repo.Form100ZeitsystemStechuhrAuswert.Zeile_5.ColDauerRow5Info, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.Form100ZeitsystemStechuhrAuswert.Zeile_5.ColDauerRow5Info, "Text", Soll_AZ_Gesamt);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Soll_AZ_Gesamt) on item 'TblAuswertungZeit.Zeile_5.ColDauerRow5'.", repo.TblAuswertungZeit.Zeile_5.ColDauerRow5Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.TblAuswertungZeit.Zeile_5.ColDauerRow5Info, "Text", Soll_AZ_Gesamt);
             
             //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblAuswertungZeit.ColUEberzeitRow5'.", repo.TblAuswertungZeit.ColUEberzeitRow5Info, new RecordItemIndex(7));
             //Validate.AttributeEqual(repo.TblAuswertungZeit.ColUEberzeitRow5Info, "Text", "");

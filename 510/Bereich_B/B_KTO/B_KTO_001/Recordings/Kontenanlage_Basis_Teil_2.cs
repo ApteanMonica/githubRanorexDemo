@@ -101,27 +101,27 @@ namespace B_KTO_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='EUR') on item 'FrmKto.Waehrung'.", repo.FrmKto.WaehrungInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.FrmKto.WaehrungInfo, "Text", "EUR");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.UstPflicht' at Center.", repo.FrmKto.UstPflichtInfo, new RecordItemIndex(7));
-            repo.FrmKto.UstPflicht.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Tab_Allgemein.UstPflicht' at Center.", repo.FrmKto.Tab_Allgemein.UstPflichtInfo, new RecordItemIndex(7));
+            repo.FrmKto.Tab_Allgemein.UstPflicht.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'v' with focus on 'FrmKto.UstPflicht'.", repo.FrmKto.UstPflichtInfo, new RecordItemIndex(8));
-            repo.FrmKto.UstPflicht.PressKeys("v");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'v' with focus on 'FrmKto.Tab_Allgemein.UstPflicht'.", repo.FrmKto.Tab_Allgemein.UstPflichtInfo, new RecordItemIndex(8));
+            repo.FrmKto.Tab_Allgemein.UstPflicht.PressKeys("v");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmKto.UstPflicht'.", repo.FrmKto.UstPflichtInfo, new RecordItemIndex(9));
-            repo.FrmKto.UstPflicht.PressKeys("{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmKto.Tab_Allgemein.UstPflicht'.", repo.FrmKto.Tab_Allgemein.UstPflichtInfo, new RecordItemIndex(9));
+            repo.FrmKto.Tab_Allgemein.UstPflicht.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmKto.UstPflicht'.", repo.FrmKto.UstPflichtInfo, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.FrmKto.UstPflichtInfo, "Text", "V");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V') on item 'FrmKto.Tab_Allgemein.UstPflicht'.", repo.FrmKto.Tab_Allgemein.UstPflichtInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.FrmKto.Tab_Allgemein.UstPflichtInfo, "Text", "V");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'v20' with focus on 'FrmKto.UstCode'.", repo.FrmKto.UstCodeInfo, new RecordItemIndex(11));
-            repo.FrmKto.UstCode.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'v20' with focus on 'FrmKto.Tab_Allgemein.UstCode'.", repo.FrmKto.Tab_Allgemein.UstCodeInfo, new RecordItemIndex(11));
+            repo.FrmKto.Tab_Allgemein.UstCode.EnsureVisible();
             Keyboard.Press("v20");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmKto.UstCode'.", repo.FrmKto.UstCodeInfo, new RecordItemIndex(12));
-            repo.FrmKto.UstCode.PressKeys("{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmKto.Tab_Allgemein.UstCode'.", repo.FrmKto.Tab_Allgemein.UstCodeInfo, new RecordItemIndex(12));
+            repo.FrmKto.Tab_Allgemein.UstCode.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V20') on item 'FrmKto.UstCode'.", repo.FrmKto.UstCodeInfo, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.FrmKto.UstCodeInfo, "Text", "V20");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='V20') on item 'FrmKto.Tab_Allgemein.UstCode'.", repo.FrmKto.Tab_Allgemein.UstCodeInfo, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.FrmKto.Tab_Allgemein.UstCodeInfo, "Text", "V20");
             
         }
 

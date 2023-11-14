@@ -42,6 +42,7 @@ namespace Z_UHR_003.Recording
         public Auswertung_Erstellen()
         {
             Mitarbeiter_2 = "UHR_001_D - Schöneberg Huberta";
+            Pers_Nr_2 = "UHR_001_D";
         }
 
         /// <summary>
@@ -64,6 +65,18 @@ namespace Z_UHR_003.Recording
         {
             get { return _Mitarbeiter_2; }
             set { _Mitarbeiter_2 = value; }
+        }
+
+        string _Pers_Nr_2;
+
+        /// <summary>
+        /// Gets or sets the value of variable Pers_Nr_2.
+        /// </summary>
+        [TestVariable("94db355f-691f-4208-a731-ac5bafe46bab")]
+        public string Pers_Nr_2
+        {
+            get { return _Pers_Nr_2; }
+            set { _Pers_Nr_2 = value; }
         }
 
 #endregion
@@ -92,50 +105,56 @@ namespace Z_UHR_003.Recording
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(0));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUhr.PbRefreshRefresh' at Center.", repo.FrmUhr.PbRefreshRefreshInfo, new RecordItemIndex(0));
+            repo.FrmUhr.PbRefreshRefresh.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(1));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Pers_Nr_2'.", new RecordItemIndex(1));
+            Keyboard.Press(Pers_Nr_2);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Pers_Nr_2) on item 'FrmUhr.Mitarbeiter'.", repo.FrmUhr.MitarbeiterInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.FrmUhr.MitarbeiterInfo, "Text", Pers_Nr_2);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Down' Press.", new RecordItemIndex(3));
-            Keyboard.Press(System.Windows.Forms.Keys.Down, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
+            //Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'uhr_001_D'.", new RecordItemIndex(4));
-            Keyboard.Press("uhr_001_D");
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Down' Press.", new RecordItemIndex(5));
-            //Keyboard.Press(System.Windows.Forms.Keys.Down, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUhr.PbAuswertungenAuswertung' at Center.", repo.FrmUhr.PbAuswertungenAuswertungInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUhr.PbAuswertungenAuswertung' at Center.", repo.FrmUhr.PbAuswertungenAuswertungInfo, new RecordItemIndex(4));
             repo.FrmUhr.PbAuswertungenAuswertung.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblAuswertungZeit.TitleBar100ZeitsystemStechuhrAus'", repo.TblAuswertungZeit.TitleBar100ZeitsystemStechuhrAusInfo, new ActionTimeout(120000), new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblAuswertungZeit.TitleBar100ZeitsystemStechuhrAus'", repo.TblAuswertungZeit.TitleBar100ZeitsystemStechuhrAusInfo, new ActionTimeout(120000), new RecordItemIndex(5));
             repo.TblAuswertungZeit.TitleBar100ZeitsystemStechuhrAusInfo.WaitForExists(120000);
             
             // Ticket erfassen zu Leerzeichen in Titelleiste zwei leerzeichen zuviel zw. Stechuhr und Auswertung
-            Report.Log(ReportLevel.Info, "Validation", "Ticket erfassen zu Leerzeichen in Titelleiste zwei leerzeichen zuviel zw. Stechuhr und Auswertung\r\nValidating AttributeContains (Text>'Zeitsystem Stechuhr   Auswertung') on item 'TblAuswertungZeit.TitleBar100ZeitsystemStechuhrAus'.", repo.TblAuswertungZeit.TitleBar100ZeitsystemStechuhrAusInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Ticket erfassen zu Leerzeichen in Titelleiste zwei leerzeichen zuviel zw. Stechuhr und Auswertung\r\nValidating AttributeContains (Text>'Zeitsystem Stechuhr   Auswertung') on item 'TblAuswertungZeit.TitleBar100ZeitsystemStechuhrAus'.", repo.TblAuswertungZeit.TitleBar100ZeitsystemStechuhrAusInfo, new RecordItemIndex(6));
             Validate.AttributeContains(repo.TblAuswertungZeit.TitleBar100ZeitsystemStechuhrAusInfo, "Text", "Zeitsystem Stechuhr   Auswertung");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Monat') on item 'TblAuswertungZeit.RbMonat'.", repo.TblAuswertungZeit.RbMonatInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Monat') on item 'TblAuswertungZeit.RbMonat'.", repo.TblAuswertungZeit.RbMonatInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.TblAuswertungZeit.RbMonatInfo, "Text", "Monat");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblAuswertungZeit.DfJahrVon' at Center.", repo.TblAuswertungZeit.DfJahrVonInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblAuswertungZeit.DfJahrVon' at Center.", repo.TblAuswertungZeit.DfJahrVonInfo, new RecordItemIndex(8));
             repo.TblAuswertungZeit.DfJahrVon.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}2022'.", new RecordItemIndex(11));
-            Keyboard.Press("{Delete}2022");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(9));
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '2022'.", new RecordItemIndex(10));
+            Keyboard.Press("2022");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblAuswertungZeit.JahrMonat' at Center.", repo.TblAuswertungZeit.JahrMonatInfo, new RecordItemIndex(12));
             repo.TblAuswertungZeit.JahrMonat.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}07'.", new RecordItemIndex(13));
-            Keyboard.Press("{Delete}07");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(13));
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAuswertungZeit.PbDataAccessLoad' at Center.", repo.TblAuswertungZeit.PbDataAccessLoadInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '07'.", new RecordItemIndex(14));
+            Keyboard.Press("07");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'X' Press.", new RecordItemIndex(15));
+            Keyboard.Press(System.Windows.Forms.Keys.X, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblAuswertungZeit.PbDataAccessLoad' at Center.", repo.TblAuswertungZeit.PbDataAccessLoadInfo, new RecordItemIndex(16));
             repo.TblAuswertungZeit.PbDataAccessLoad.Click();
             
         }

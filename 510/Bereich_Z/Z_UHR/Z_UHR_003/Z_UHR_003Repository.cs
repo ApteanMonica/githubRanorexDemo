@@ -27,11 +27,9 @@ namespace Z_UHR_003
     public partial class Z_UHR_003Repository : RepoGenBaseFolder
     {
         static Z_UHR_003Repository instance = new Z_UHR_003Repository();
-        Z_UHR_003RepositoryFolders.Form100ZeitsystemStechuhrAuswertAppFolder _form100zeitsystemstechuhrauswert;
         Z_UHR_003RepositoryFolders.TblAuswertungZeitAppFolder _tblauswertungzeit;
         Z_UHR_003RepositoryFolders.FrmUhrAppFolder _frmuhr;
         Z_UHR_003RepositoryFolders.ZUHRAppFolder _zuhr;
-        Z_UHR_003RepositoryFolders.WSBARAppFolder _wsbar;
 
         /// <summary>
         /// Gets the singleton class instance representing the Z_UHR_003Repository element repository.
@@ -48,11 +46,9 @@ namespace Z_UHR_003
         public Z_UHR_003Repository() 
             : base("Z_UHR_003Repository", "/", null, 0, false, "c713057c-cf53-4055-bd78-9e949f4b5e8d", ".\\RepositoryImages\\Z_UHR_003Repositoryc713057c.rximgres")
         {
-            _form100zeitsystemstechuhrauswert = new Z_UHR_003RepositoryFolders.Form100ZeitsystemStechuhrAuswertAppFolder(this);
             _tblauswertungzeit = new Z_UHR_003RepositoryFolders.TblAuswertungZeitAppFolder(this);
             _frmuhr = new Z_UHR_003RepositoryFolders.FrmUhrAppFolder(this);
             _zuhr = new Z_UHR_003RepositoryFolders.ZUHRAppFolder(this);
-            _wsbar = new Z_UHR_003RepositoryFolders.WSBARAppFolder(this);
         }
 
 #region Variables
@@ -84,15 +80,6 @@ namespace Z_UHR_003
         }
 
         /// <summary>
-        /// The Form100ZeitsystemStechuhrAuswert folder.
-        /// </summary>
-        [RepositoryFolder("6ceda01d-cfc2-4482-971a-746404fd1e1e")]
-        public virtual Z_UHR_003RepositoryFolders.Form100ZeitsystemStechuhrAuswertAppFolder Form100ZeitsystemStechuhrAuswert
-        {
-            get { return _form100zeitsystemstechuhrauswert; }
-        }
-
-        /// <summary>
         /// The TblAuswertungZeit folder.
         /// </summary>
         [RepositoryFolder("f5308d81-9910-48be-97b3-c7bdff77d28f")]
@@ -118,15 +105,6 @@ namespace Z_UHR_003
         {
             get { return _zuhr; }
         }
-
-        /// <summary>
-        /// The WSBAR folder.
-        /// </summary>
-        [RepositoryFolder("0ceb387f-0a5b-4b06-9f11-92cdd50912b6")]
-        public virtual Z_UHR_003RepositoryFolders.WSBARAppFolder WSBAR
-        {
-            get { return _wsbar; }
-        }
     }
 
     /// <summary>
@@ -136,40 +114,56 @@ namespace Z_UHR_003
     public partial class Z_UHR_003RepositoryFolders
     {
         /// <summary>
-        /// The Form100ZeitsystemStechuhrAuswertAppFolder folder.
+        /// The TblAuswertungZeitAppFolder folder.
         /// </summary>
-        [RepositoryFolder("6ceda01d-cfc2-4482-971a-746404fd1e1e")]
-        public partial class Form100ZeitsystemStechuhrAuswertAppFolder : RepoGenBaseFolder
+        [RepositoryFolder("f5308d81-9910-48be-97b3-c7bdff77d28f")]
+        public partial class TblAuswertungZeitAppFolder : RepoGenBaseFolder
         {
             Z_UHR_003RepositoryFolders.Zeile_1Folder _zeile_1;
             Z_UHR_003RepositoryFolders.Zeile_2Folder _zeile_2;
             Z_UHR_003RepositoryFolders.Zeile_3Folder _zeile_3;
             Z_UHR_003RepositoryFolders.Zeile_4Folder _zeile_4;
             Z_UHR_003RepositoryFolders.Zeile_5Folder _zeile_5;
+            RepoItemInfo _titlebar100zeitsystemstechuhrausInfo;
             RepoItemInfo _mitarbeiterInfo;
-            RepoItemInfo _windowsforms10buttonapp01fdf3f4r6aInfo;
-            RepoItemInfo _monatInfo;
+            RepoItemInfo _cmbpersnrnameInfo;
+            RepoItemInfo _rbmonatInfo;
+            RepoItemInfo _rbwocheInfo;
+            RepoItemInfo _pbdataaccessloadInfo;
+            RepoItemInfo _mitarbeiter1Info;
+            RepoItemInfo _jahrmonatInfo;
+            RepoItemInfo _colueberzeitrow5Info;
+            RepoItemInfo _colmitarbeiterrow1Info;
+            RepoItemInfo _dfjahrvonInfo;
 
             /// <summary>
-            /// Creates a new Form100ZeitsystemStechuhrAuswert  folder.
+            /// Creates a new TblAuswertungZeit  folder.
             /// </summary>
-            public Form100ZeitsystemStechuhrAuswertAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Form100ZeitsystemStechuhrAuswert", "/form[@title>'[100]  Zeitsystem Stechuhr']", parentFolder, 30000, null, true, "6ceda01d-cfc2-4482-971a-746404fd1e1e", "")
+            public TblAuswertungZeitAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TblAuswertungZeit", "/form[@controlname='tblAuswertungZeit']", parentFolder, 30000, null, true, "f5308d81-9910-48be-97b3-c7bdff77d28f", "")
             {
                 _zeile_1 = new Z_UHR_003RepositoryFolders.Zeile_1Folder(this);
                 _zeile_2 = new Z_UHR_003RepositoryFolders.Zeile_2Folder(this);
                 _zeile_3 = new Z_UHR_003RepositoryFolders.Zeile_3Folder(this);
                 _zeile_4 = new Z_UHR_003RepositoryFolders.Zeile_4Folder(this);
                 _zeile_5 = new Z_UHR_003RepositoryFolders.Zeile_5Folder(this);
-                _mitarbeiterInfo = new RepoItemInfo(this, "Mitarbeiter", "element[@instance='19']/element[2]/text[@accessiblename='Mitarbeiter']", "", 30000, null, "cb662a59-ce43-4ad1-b704-b2d972f23001");
-                _windowsforms10buttonapp01fdf3f4r6aInfo = new RepoItemInfo(this, "WindowsForms10BUTTONApp01fdf3f4R6A", "element[@instance='18']/element[@instance='0']/button[@class='WindowsForms10.BUTTON.app.0.1fdf3f4_r6_ad1' and @instance='1']", "", 30000, null, "30b6ce53-85a9-4250-bc51-6fc388c42d1d");
-                _monatInfo = new RepoItemInfo(this, "Monat", "element[@instance='19']/element[19]/radiobutton[@accessiblename='Monat']", "", 30000, null, "681ca73a-387d-470b-b61b-4aee2217cf54");
+                _titlebar100zeitsystemstechuhrausInfo = new RepoItemInfo(this, "TitleBar100ZeitsystemStechuhrAus", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "fc416ede-acec-4c1c-a26a-fa1cb4b0327a");
+                _mitarbeiterInfo = new RepoItemInfo(this, "Mitarbeiter", "container[@controlname='ToolBar']/text[@controlname='cmbPers_nr_name']/text[@accessiblename='Mitarbeiter']", "", 30000, null, "de1788a2-bfdf-4ba9-a1c9-698b4502c347");
+                _cmbpersnrnameInfo = new RepoItemInfo(this, "CmbPersNrName", "container[@controlname='ToolBar']/text[@controlname='cmbPers_nr_name']", "", 30000, null, "bd6bc9fe-5963-4e75-92fe-0dcc5df61e08");
+                _rbmonatInfo = new RepoItemInfo(this, "RbMonat", "container[@controlname='ToolBar']/radiobutton[@controlname='rbMonat']", "", 30000, null, "37965ec9-6268-439c-8456-5653c5e50355");
+                _rbwocheInfo = new RepoItemInfo(this, "RbWoche", "container[@controlname='ToolBar']/radiobutton[@controlname='rbWoche']", "", 30000, null, "0567dba2-5962-44c9-a49d-94554a40eb86");
+                _pbdataaccessloadInfo = new RepoItemInfo(this, "PbDataAccessLoad", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']", "", 30000, null, "105357c4-6710-4c26-8fef-a3ed650385dd");
+                _mitarbeiter1Info = new RepoItemInfo(this, "Mitarbeiter1", "container[@controlname='ToolBar']/combobox[@controlname='cmbPers_nr_name']/text[@name='Mitarbeiter']", "", 30000, null, "76cafbf4-bc2a-46bf-86a8-8cad800f1687");
+                _jahrmonatInfo = new RepoItemInfo(this, "JahrMonat", "container[@controlname='ToolBar']/text[@controlname='dfMonat_von']/text[@accessiblename='Jahr/Monat']", "", 30000, null, "994f1a34-9059-418e-ac13-0aee06f72367");
+                _colueberzeitrow5Info = new RepoItemInfo(this, "ColUEberzeitRow5", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colÜberzeit Row 5']", "", 30000, null, "c006a87d-bef8-4f38-a36f-3bd0e46e3bd6");
+                _colmitarbeiterrow1Info = new RepoItemInfo(this, "ColMitarbeiterRow1", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colMitarbeiter Row 1']", "", 30000, null, "a449052c-4d19-4e09-85af-caa2570774da");
+                _dfjahrvonInfo = new RepoItemInfo(this, "DfJahrVon", "container[@controlname='ToolBar']/text[@controlname='dfJahr_von']", "", 30000, null, "cdff665e-c057-474e-9b18-1fa6dd0faa8e");
             }
 
             /// <summary>
             /// The Self item.
             /// </summary>
-            [RepositoryItem("6ceda01d-cfc2-4482-971a-746404fd1e1e")]
+            [RepositoryItem("f5308d81-9910-48be-97b3-c7bdff77d28f")]
             public virtual Ranorex.Form Self
             {
                 get
@@ -181,7 +175,7 @@ namespace Z_UHR_003
             /// <summary>
             /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("6ceda01d-cfc2-4482-971a-746404fd1e1e")]
+            [RepositoryItemInfo("f5308d81-9910-48be-97b3-c7bdff77d28f")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
@@ -191,9 +185,33 @@ namespace Z_UHR_003
             }
 
             /// <summary>
+            /// The TitleBar100ZeitsystemStechuhrAus item.
+            /// </summary>
+            [RepositoryItem("fc416ede-acec-4c1c-a26a-fa1cb4b0327a")]
+            public virtual Ranorex.TitleBar TitleBar100ZeitsystemStechuhrAus
+            {
+                get
+                {
+                    return _titlebar100zeitsystemstechuhrausInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100ZeitsystemStechuhrAus item info.
+            /// </summary>
+            [RepositoryItemInfo("fc416ede-acec-4c1c-a26a-fa1cb4b0327a")]
+            public virtual RepoItemInfo TitleBar100ZeitsystemStechuhrAusInfo
+            {
+                get
+                {
+                    return _titlebar100zeitsystemstechuhrausInfo;
+                }
+            }
+
+            /// <summary>
             /// The Mitarbeiter item.
             /// </summary>
-            [RepositoryItem("cb662a59-ce43-4ad1-b704-b2d972f23001")]
+            [RepositoryItem("de1788a2-bfdf-4ba9-a1c9-698b4502c347")]
             public virtual Ranorex.Text Mitarbeiter
             {
                 get
@@ -205,7 +223,7 @@ namespace Z_UHR_003
             /// <summary>
             /// The Mitarbeiter item info.
             /// </summary>
-            [RepositoryItemInfo("cb662a59-ce43-4ad1-b704-b2d972f23001")]
+            [RepositoryItemInfo("de1788a2-bfdf-4ba9-a1c9-698b4502c347")]
             public virtual RepoItemInfo MitarbeiterInfo
             {
                 get
@@ -215,50 +233,218 @@ namespace Z_UHR_003
             }
 
             /// <summary>
-            /// The WindowsForms10BUTTONApp01fdf3f4R6A item.
+            /// The CmbPersNrName item.
             /// </summary>
-            [RepositoryItem("30b6ce53-85a9-4250-bc51-6fc388c42d1d")]
-            public virtual Ranorex.Button WindowsForms10BUTTONApp01fdf3f4R6A
+            [RepositoryItem("bd6bc9fe-5963-4e75-92fe-0dcc5df61e08")]
+            public virtual Ranorex.Text CmbPersNrName
             {
                 get
                 {
-                    return _windowsforms10buttonapp01fdf3f4r6aInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _cmbpersnrnameInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The WindowsForms10BUTTONApp01fdf3f4R6A item info.
+            /// The CmbPersNrName item info.
             /// </summary>
-            [RepositoryItemInfo("30b6ce53-85a9-4250-bc51-6fc388c42d1d")]
-            public virtual RepoItemInfo WindowsForms10BUTTONApp01fdf3f4R6AInfo
+            [RepositoryItemInfo("bd6bc9fe-5963-4e75-92fe-0dcc5df61e08")]
+            public virtual RepoItemInfo CmbPersNrNameInfo
             {
                 get
                 {
-                    return _windowsforms10buttonapp01fdf3f4r6aInfo;
+                    return _cmbpersnrnameInfo;
                 }
             }
 
             /// <summary>
-            /// The Monat item.
+            /// The RbMonat item.
             /// </summary>
-            [RepositoryItem("681ca73a-387d-470b-b61b-4aee2217cf54")]
-            public virtual Ranorex.RadioButton Monat
+            [RepositoryItem("37965ec9-6268-439c-8456-5653c5e50355")]
+            public virtual Ranorex.RadioButton RbMonat
             {
                 get
                 {
-                    return _monatInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                    return _rbmonatInfo.CreateAdapter<Ranorex.RadioButton>(true);
                 }
             }
 
             /// <summary>
-            /// The Monat item info.
+            /// The RbMonat item info.
             /// </summary>
-            [RepositoryItemInfo("681ca73a-387d-470b-b61b-4aee2217cf54")]
-            public virtual RepoItemInfo MonatInfo
+            [RepositoryItemInfo("37965ec9-6268-439c-8456-5653c5e50355")]
+            public virtual RepoItemInfo RbMonatInfo
             {
                 get
                 {
-                    return _monatInfo;
+                    return _rbmonatInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RbWoche item.
+            /// </summary>
+            [RepositoryItem("0567dba2-5962-44c9-a49d-94554a40eb86")]
+            public virtual Ranorex.RadioButton RbWoche
+            {
+                get
+                {
+                    return _rbwocheInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RbWoche item info.
+            /// </summary>
+            [RepositoryItemInfo("0567dba2-5962-44c9-a49d-94554a40eb86")]
+            public virtual RepoItemInfo RbWocheInfo
+            {
+                get
+                {
+                    return _rbwocheInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessLoad item.
+            /// </summary>
+            [RepositoryItem("105357c4-6710-4c26-8fef-a3ed650385dd")]
+            public virtual Ranorex.Button PbDataAccessLoad
+            {
+                get
+                {
+                    return _pbdataaccessloadInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessLoad item info.
+            /// </summary>
+            [RepositoryItemInfo("105357c4-6710-4c26-8fef-a3ed650385dd")]
+            public virtual RepoItemInfo PbDataAccessLoadInfo
+            {
+                get
+                {
+                    return _pbdataaccessloadInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Mitarbeiter1 item.
+            /// </summary>
+            [RepositoryItem("76cafbf4-bc2a-46bf-86a8-8cad800f1687")]
+            public virtual Ranorex.Text Mitarbeiter1
+            {
+                get
+                {
+                    return _mitarbeiter1Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Mitarbeiter1 item info.
+            /// </summary>
+            [RepositoryItemInfo("76cafbf4-bc2a-46bf-86a8-8cad800f1687")]
+            public virtual RepoItemInfo Mitarbeiter1Info
+            {
+                get
+                {
+                    return _mitarbeiter1Info;
+                }
+            }
+
+            /// <summary>
+            /// The JahrMonat item.
+            /// </summary>
+            [RepositoryItem("994f1a34-9059-418e-ac13-0aee06f72367")]
+            public virtual Ranorex.Text JahrMonat
+            {
+                get
+                {
+                    return _jahrmonatInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The JahrMonat item info.
+            /// </summary>
+            [RepositoryItemInfo("994f1a34-9059-418e-ac13-0aee06f72367")]
+            public virtual RepoItemInfo JahrMonatInfo
+            {
+                get
+                {
+                    return _jahrmonatInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColUEberzeitRow5 item.
+            /// </summary>
+            [RepositoryItem("c006a87d-bef8-4f38-a36f-3bd0e46e3bd6")]
+            public virtual Ranorex.Cell ColUEberzeitRow5
+            {
+                get
+                {
+                    return _colueberzeitrow5Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColUEberzeitRow5 item info.
+            /// </summary>
+            [RepositoryItemInfo("c006a87d-bef8-4f38-a36f-3bd0e46e3bd6")]
+            public virtual RepoItemInfo ColUEberzeitRow5Info
+            {
+                get
+                {
+                    return _colueberzeitrow5Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColMitarbeiterRow1 item.
+            /// </summary>
+            [RepositoryItem("a449052c-4d19-4e09-85af-caa2570774da")]
+            public virtual Ranorex.Cell ColMitarbeiterRow1
+            {
+                get
+                {
+                    return _colmitarbeiterrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColMitarbeiterRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("a449052c-4d19-4e09-85af-caa2570774da")]
+            public virtual RepoItemInfo ColMitarbeiterRow1Info
+            {
+                get
+                {
+                    return _colmitarbeiterrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The DfJahrVon item.
+            /// </summary>
+            [RepositoryItem("cdff665e-c057-474e-9b18-1fa6dd0faa8e")]
+            public virtual Ranorex.Text DfJahrVon
+            {
+                get
+                {
+                    return _dfjahrvonInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfJahrVon item info.
+            /// </summary>
+            [RepositoryItemInfo("cdff665e-c057-474e-9b18-1fa6dd0faa8e")]
+            public virtual RepoItemInfo DfJahrVonInfo
+            {
+                get
+                {
+                    return _dfjahrvonInfo;
                 }
             }
 
@@ -1289,332 +1475,6 @@ namespace Z_UHR_003
         }
 
         /// <summary>
-        /// The TblAuswertungZeitAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("f5308d81-9910-48be-97b3-c7bdff77d28f")]
-        public partial class TblAuswertungZeitAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _titlebar100zeitsystemstechuhrausInfo;
-            RepoItemInfo _mitarbeiterInfo;
-            RepoItemInfo _cmbpersnrnameInfo;
-            RepoItemInfo _rbmonatInfo;
-            RepoItemInfo _rbwocheInfo;
-            RepoItemInfo _pbdataaccessloadInfo;
-            RepoItemInfo _mitarbeiter1Info;
-            RepoItemInfo _jahrmonatInfo;
-            RepoItemInfo _colueberzeitrow5Info;
-            RepoItemInfo _colmitarbeiterrow1Info;
-            RepoItemInfo _dfjahrvonInfo;
-
-            /// <summary>
-            /// Creates a new TblAuswertungZeit  folder.
-            /// </summary>
-            public TblAuswertungZeitAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("TblAuswertungZeit", "/form[@controlname='tblAuswertungZeit']", parentFolder, 30000, null, true, "f5308d81-9910-48be-97b3-c7bdff77d28f", "")
-            {
-                _titlebar100zeitsystemstechuhrausInfo = new RepoItemInfo(this, "TitleBar100ZeitsystemStechuhrAus", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "fc416ede-acec-4c1c-a26a-fa1cb4b0327a");
-                _mitarbeiterInfo = new RepoItemInfo(this, "Mitarbeiter", "container[@controlname='ToolBar']/text[@controlname='cmbPers_nr_name']/text[@accessiblename='Mitarbeiter']", "", 30000, null, "de1788a2-bfdf-4ba9-a1c9-698b4502c347");
-                _cmbpersnrnameInfo = new RepoItemInfo(this, "CmbPersNrName", "container[@controlname='ToolBar']/text[@controlname='cmbPers_nr_name']", "", 30000, null, "bd6bc9fe-5963-4e75-92fe-0dcc5df61e08");
-                _rbmonatInfo = new RepoItemInfo(this, "RbMonat", "container[@controlname='ToolBar']/radiobutton[@controlname='rbMonat']", "", 30000, null, "37965ec9-6268-439c-8456-5653c5e50355");
-                _rbwocheInfo = new RepoItemInfo(this, "RbWoche", "container[@controlname='ToolBar']/radiobutton[@controlname='rbWoche']", "", 30000, null, "0567dba2-5962-44c9-a49d-94554a40eb86");
-                _pbdataaccessloadInfo = new RepoItemInfo(this, "PbDataAccessLoad", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']", "", 30000, null, "105357c4-6710-4c26-8fef-a3ed650385dd");
-                _mitarbeiter1Info = new RepoItemInfo(this, "Mitarbeiter1", "container[@controlname='ToolBar']/combobox[@controlname='cmbPers_nr_name']/text[@name='Mitarbeiter']", "", 30000, null, "76cafbf4-bc2a-46bf-86a8-8cad800f1687");
-                _jahrmonatInfo = new RepoItemInfo(this, "JahrMonat", "container[@controlname='ToolBar']/text[@controlname='dfMonat_von']/text[@accessiblename='Jahr/Monat']", "", 30000, null, "994f1a34-9059-418e-ac13-0aee06f72367");
-                _colueberzeitrow5Info = new RepoItemInfo(this, "ColUEberzeitRow5", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']/cell[@accessiblename='colÜberzeit Row 5']", "", 30000, null, "c006a87d-bef8-4f38-a36f-3bd0e46e3bd6");
-                _colmitarbeiterrow1Info = new RepoItemInfo(this, "ColMitarbeiterRow1", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colMitarbeiter Row 1']", "", 30000, null, "a449052c-4d19-4e09-85af-caa2570774da");
-                _dfjahrvonInfo = new RepoItemInfo(this, "DfJahrVon", "container[@controlname='ToolBar']/text[@controlname='dfJahr_von']", "", 30000, null, "cdff665e-c057-474e-9b18-1fa6dd0faa8e");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("f5308d81-9910-48be-97b3-c7bdff77d28f")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("f5308d81-9910-48be-97b3-c7bdff77d28f")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TitleBar100ZeitsystemStechuhrAus item.
-            /// </summary>
-            [RepositoryItem("fc416ede-acec-4c1c-a26a-fa1cb4b0327a")]
-            public virtual Ranorex.TitleBar TitleBar100ZeitsystemStechuhrAus
-            {
-                get
-                {
-                    return _titlebar100zeitsystemstechuhrausInfo.CreateAdapter<Ranorex.TitleBar>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TitleBar100ZeitsystemStechuhrAus item info.
-            /// </summary>
-            [RepositoryItemInfo("fc416ede-acec-4c1c-a26a-fa1cb4b0327a")]
-            public virtual RepoItemInfo TitleBar100ZeitsystemStechuhrAusInfo
-            {
-                get
-                {
-                    return _titlebar100zeitsystemstechuhrausInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Mitarbeiter item.
-            /// </summary>
-            [RepositoryItem("de1788a2-bfdf-4ba9-a1c9-698b4502c347")]
-            public virtual Ranorex.Text Mitarbeiter
-            {
-                get
-                {
-                    return _mitarbeiterInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Mitarbeiter item info.
-            /// </summary>
-            [RepositoryItemInfo("de1788a2-bfdf-4ba9-a1c9-698b4502c347")]
-            public virtual RepoItemInfo MitarbeiterInfo
-            {
-                get
-                {
-                    return _mitarbeiterInfo;
-                }
-            }
-
-            /// <summary>
-            /// The CmbPersNrName item.
-            /// </summary>
-            [RepositoryItem("bd6bc9fe-5963-4e75-92fe-0dcc5df61e08")]
-            public virtual Ranorex.Text CmbPersNrName
-            {
-                get
-                {
-                    return _cmbpersnrnameInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CmbPersNrName item info.
-            /// </summary>
-            [RepositoryItemInfo("bd6bc9fe-5963-4e75-92fe-0dcc5df61e08")]
-            public virtual RepoItemInfo CmbPersNrNameInfo
-            {
-                get
-                {
-                    return _cmbpersnrnameInfo;
-                }
-            }
-
-            /// <summary>
-            /// The RbMonat item.
-            /// </summary>
-            [RepositoryItem("37965ec9-6268-439c-8456-5653c5e50355")]
-            public virtual Ranorex.RadioButton RbMonat
-            {
-                get
-                {
-                    return _rbmonatInfo.CreateAdapter<Ranorex.RadioButton>(true);
-                }
-            }
-
-            /// <summary>
-            /// The RbMonat item info.
-            /// </summary>
-            [RepositoryItemInfo("37965ec9-6268-439c-8456-5653c5e50355")]
-            public virtual RepoItemInfo RbMonatInfo
-            {
-                get
-                {
-                    return _rbmonatInfo;
-                }
-            }
-
-            /// <summary>
-            /// The RbWoche item.
-            /// </summary>
-            [RepositoryItem("0567dba2-5962-44c9-a49d-94554a40eb86")]
-            public virtual Ranorex.RadioButton RbWoche
-            {
-                get
-                {
-                    return _rbwocheInfo.CreateAdapter<Ranorex.RadioButton>(true);
-                }
-            }
-
-            /// <summary>
-            /// The RbWoche item info.
-            /// </summary>
-            [RepositoryItemInfo("0567dba2-5962-44c9-a49d-94554a40eb86")]
-            public virtual RepoItemInfo RbWocheInfo
-            {
-                get
-                {
-                    return _rbwocheInfo;
-                }
-            }
-
-            /// <summary>
-            /// The PbDataAccessLoad item.
-            /// </summary>
-            [RepositoryItem("105357c4-6710-4c26-8fef-a3ed650385dd")]
-            public virtual Ranorex.Button PbDataAccessLoad
-            {
-                get
-                {
-                    return _pbdataaccessloadInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PbDataAccessLoad item info.
-            /// </summary>
-            [RepositoryItemInfo("105357c4-6710-4c26-8fef-a3ed650385dd")]
-            public virtual RepoItemInfo PbDataAccessLoadInfo
-            {
-                get
-                {
-                    return _pbdataaccessloadInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Mitarbeiter1 item.
-            /// </summary>
-            [RepositoryItem("76cafbf4-bc2a-46bf-86a8-8cad800f1687")]
-            public virtual Ranorex.Text Mitarbeiter1
-            {
-                get
-                {
-                    return _mitarbeiter1Info.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Mitarbeiter1 item info.
-            /// </summary>
-            [RepositoryItemInfo("76cafbf4-bc2a-46bf-86a8-8cad800f1687")]
-            public virtual RepoItemInfo Mitarbeiter1Info
-            {
-                get
-                {
-                    return _mitarbeiter1Info;
-                }
-            }
-
-            /// <summary>
-            /// The JahrMonat item.
-            /// </summary>
-            [RepositoryItem("994f1a34-9059-418e-ac13-0aee06f72367")]
-            public virtual Ranorex.Text JahrMonat
-            {
-                get
-                {
-                    return _jahrmonatInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The JahrMonat item info.
-            /// </summary>
-            [RepositoryItemInfo("994f1a34-9059-418e-ac13-0aee06f72367")]
-            public virtual RepoItemInfo JahrMonatInfo
-            {
-                get
-                {
-                    return _jahrmonatInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ColUEberzeitRow5 item.
-            /// </summary>
-            [RepositoryItem("c006a87d-bef8-4f38-a36f-3bd0e46e3bd6")]
-            public virtual Ranorex.Cell ColUEberzeitRow5
-            {
-                get
-                {
-                    return _colueberzeitrow5Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColUEberzeitRow5 item info.
-            /// </summary>
-            [RepositoryItemInfo("c006a87d-bef8-4f38-a36f-3bd0e46e3bd6")]
-            public virtual RepoItemInfo ColUEberzeitRow5Info
-            {
-                get
-                {
-                    return _colueberzeitrow5Info;
-                }
-            }
-
-            /// <summary>
-            /// The ColMitarbeiterRow1 item.
-            /// </summary>
-            [RepositoryItem("a449052c-4d19-4e09-85af-caa2570774da")]
-            public virtual Ranorex.Cell ColMitarbeiterRow1
-            {
-                get
-                {
-                    return _colmitarbeiterrow1Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColMitarbeiterRow1 item info.
-            /// </summary>
-            [RepositoryItemInfo("a449052c-4d19-4e09-85af-caa2570774da")]
-            public virtual RepoItemInfo ColMitarbeiterRow1Info
-            {
-                get
-                {
-                    return _colmitarbeiterrow1Info;
-                }
-            }
-
-            /// <summary>
-            /// The DfJahrVon item.
-            /// </summary>
-            [RepositoryItem("cdff665e-c057-474e-9b18-1fa6dd0faa8e")]
-            public virtual Ranorex.Text DfJahrVon
-            {
-                get
-                {
-                    return _dfjahrvonInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The DfJahrVon item info.
-            /// </summary>
-            [RepositoryItemInfo("cdff665e-c057-474e-9b18-1fa6dd0faa8e")]
-            public virtual RepoItemInfo DfJahrVonInfo
-            {
-                get
-                {
-                    return _dfjahrvonInfo;
-                }
-            }
-        }
-
-        /// <summary>
         /// The FrmUhrAppFolder folder.
         /// </summary>
         [RepositoryFolder("97561c5e-9182-413a-9d16-a4b8d1cfcdc9")]
@@ -1627,7 +1487,6 @@ namespace Z_UHR_003
             RepoItemInfo _pbtimecontrolkommtInfo;
             RepoItemInfo _pbtimecontrolpauseInfo;
             RepoItemInfo _pbtimecontrolgehtInfo;
-            RepoItemInfo _mitarbeiter1Info;
             RepoItemInfo _mitarbeiterInfo;
             RepoItemInfo _pbauswertungenauswertungInfo;
 
@@ -1640,11 +1499,10 @@ namespace Z_UHR_003
                 _tabelle_links = new Z_UHR_003RepositoryFolders.Tabelle_linksFolder(this);
                 _tabelle_links_mit_zeile_mit_variable_personal_nr = new Z_UHR_003RepositoryFolders.Tabelle_links_mit_Zeile_mit_Variable_Personal_NrFolder(this);
                 _titlebar100zeitsystemstechuhrInfo = new RepoItemInfo(this, "TitleBar100ZeitsystemStechuhr", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "2109dc43-6403-4f2b-a447-2fadf1a5fc7d");
-                _pbrefreshrefreshInfo = new RepoItemInfo(this, "PbRefreshRefresh", "?/?/container[@controlname='RefreshGroup']/button[@controlname='pbRefresh_Refresh']", "", 30000, null, "9fb6dcfe-6543-4506-a5f1-9c1fa761b5b6");
-                _pbtimecontrolkommtInfo = new RepoItemInfo(this, "PbTimecontrolKommt", "?/?/container[@controlname='TimecontrolKommtGroup']/button[@controlname='pbTimecontrol_Kommt']", "", 30000, null, "9be7a803-1d80-4e02-9d36-9e47ce68e7e8");
+                _pbrefreshrefreshInfo = new RepoItemInfo(this, "PbRefreshRefresh", "container[@controlname='RibbonBar']/container[@controlname='RefreshGroup']/button[@controlname='pbRefresh_Refresh']", "", 30000, null, "9fb6dcfe-6543-4506-a5f1-9c1fa761b5b6");
+                _pbtimecontrolkommtInfo = new RepoItemInfo(this, "PbTimecontrolKommt", "container[@controlname='RibbonBar']/container[@controlname='TimecontrolKommtGroup']/button[@controlname='pbTimecontrol_Kommt']", "", 30000, null, "9be7a803-1d80-4e02-9d36-9e47ce68e7e8");
                 _pbtimecontrolpauseInfo = new RepoItemInfo(this, "PbTimecontrolPause", "container[@controlname='RibbonBar']/container[@controlname='TimecontrolPauseGroup']/button[@controlname='pbTimecontrol_Pause']", "", 30000, null, "d7cc4093-2902-4c1f-aec5-d458ddb0dfab");
                 _pbtimecontrolgehtInfo = new RepoItemInfo(this, "PbTimecontrolGeht", "container[@controlname='RibbonBar']/container[@controlname='TimecontrolGehtGroup']/button[@controlname='pbTimecontrol_Geht']", "", 30000, null, "337bdc63-436e-4975-8c98-273b6ad57b7a");
-                _mitarbeiter1Info = new RepoItemInfo(this, "Mitarbeiter1", "container[@controlname='ToolBar']/text[@controlname='cmbPers_name']/text[@accessiblename='Mitarbeiter']", "", 30000, null, "61db96f8-e762-4a1a-af1a-ca01507b830b");
                 _mitarbeiterInfo = new RepoItemInfo(this, "Mitarbeiter", "container[@controlname='ToolBar']/text[@controlname='cmbPers_name']/text[@accessiblename='Mitarbeiter']", "", 30000, null, "71fa1d8c-6d24-4bd8-8b71-9eae493032a5");
                 _pbauswertungenauswertungInfo = new RepoItemInfo(this, "PbAuswertungenAuswertung", "container[@controlname='RibbonBar']/container[@controlname='AuswertungenGroup']/button[@controlname='pbAuswertungen_Auswertung']", "", 30000, null, "46ba1ee7-2916-4303-9d64-6b976a0e2f9e");
             }
@@ -1790,30 +1648,6 @@ namespace Z_UHR_003
                 get
                 {
                     return _pbtimecontrolgehtInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Mitarbeiter1 item.
-            /// </summary>
-            [RepositoryItem("61db96f8-e762-4a1a-af1a-ca01507b830b")]
-            public virtual Ranorex.Text Mitarbeiter1
-            {
-                get
-                {
-                    return _mitarbeiter1Info.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Mitarbeiter1 item info.
-            /// </summary>
-            [RepositoryItemInfo("61db96f8-e762-4a1a-af1a-ca01507b830b")]
-            public virtual RepoItemInfo Mitarbeiter1Info
-            {
-                get
-                {
-                    return _mitarbeiter1Info;
                 }
             }
 
@@ -2416,72 +2250,6 @@ namespace Z_UHR_003
                 get
                 {
                     return _dropdownInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The WSBARAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("0ceb387f-0a5b-4b06-9f11-92cdd50912b6")]
-        public partial class WSBARAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _wsbarInfo;
-
-            /// <summary>
-            /// Creates a new WSBAR  folder.
-            /// </summary>
-            public WSBARAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("WSBAR", "", parentFolder, 30000, null, true, "0ceb387f-0a5b-4b06-9f11-92cdd50912b6", "")
-            {
-                _wsbarInfo = new RepoItemInfo(this, "WSBAR", "", "", 30000, null, "6b9dda7c-40eb-4674-a4b6-c43b8e7588cd");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("0ceb387f-0a5b-4b06-9f11-92cdd50912b6")]
-            public virtual Ranorex.Host Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Host>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("0ceb387f-0a5b-4b06-9f11-92cdd50912b6")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The WSBAR item.
-            /// </summary>
-            [RepositoryItem("6b9dda7c-40eb-4674-a4b6-c43b8e7588cd")]
-            public virtual Ranorex.Host WSBAR
-            {
-                get
-                {
-                    return _wsbarInfo.CreateAdapter<Ranorex.Host>(true);
-                }
-            }
-
-            /// <summary>
-            /// The WSBAR item info.
-            /// </summary>
-            [RepositoryItemInfo("6b9dda7c-40eb-4674-a4b6-c43b8e7588cd")]
-            public virtual RepoItemInfo WSBARInfo
-            {
-                get
-                {
-                    return _wsbarInfo;
                 }
             }
         }
