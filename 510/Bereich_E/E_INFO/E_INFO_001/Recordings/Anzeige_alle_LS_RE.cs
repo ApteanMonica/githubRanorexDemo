@@ -218,8 +218,8 @@ namespace E_INFO_001.Recordings
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(4));
             Delay.Duration(10000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Rechnung1) on item 'MdiEInfo.ChildTableWindow1.ColLskNrRow1'.", repo.MdiEInfo.ChildTableWindow1.ColLskNrRow1Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.MdiEInfo.ChildTableWindow1.ColLskNrRow1Info, "Text", Rechnung1);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Rechnung1) on item 'MdiEInfo1.ColLskNrRow1'.", repo.MdiEInfo1.ColLskNrRow1Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.MdiEInfo1.ColLskNrRow1Info, "Text", Rechnung1);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Lieferschein1) on item 'MdiEInfo.ChildTableWindow1.ColLskNrRow3'.", repo.MdiEInfo.ChildTableWindow1.ColLskNrRow3Info, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.MdiEInfo.ChildTableWindow1.ColLskNrRow3Info, "Text", Lieferschein1);
