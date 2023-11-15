@@ -79,13 +79,112 @@ namespace B_EBUEB_B_EBERF_Schnelltest.Recordings_B_KTSALD
 
             Init();
 
-            // Summenzeile
-            Report.Log(ReportLevel.Info, "Section", "Summenzeile", new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1407') on item 'TblDaten.FlexGrid.ColKtoRow3'.", repo.TblDaten.FlexGrid.ColKtoRow3Info, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.ColKtoRow3Info, "Text", "1407");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Gesamtsumme') on item 'TblDaten.Summenzeile.ColKtoBezRow0'.", repo.TblDaten.Summenzeile.ColKtoBezRow0Info, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblDaten.FlexGrid.Col0Row3'.", repo.TblDaten.FlexGrid.Col0Row3Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.Col0Row3Info, "Text", "0,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1419') on item 'TblDaten.FlexGrid.ColKtoRow4'.", repo.TblDaten.FlexGrid.ColKtoRow4Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.ColKtoRow4Info, "Text", "1419");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblDaten.FlexGrid.Col0Row4'.", repo.TblDaten.FlexGrid.Col0Row4Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.Col0Row4Info, "Text", "0,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1507') on item 'TblDaten.FlexGrid.ColKtoRow6'.", repo.TblDaten.FlexGrid.ColKtoRow6Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.ColKtoRow6Info, "Text", "1507");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblDaten.FlexGrid.Col0Row6'.", repo.TblDaten.FlexGrid.Col0Row6Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.Col0Row6Info, "Text", "0,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1519') on item 'TblDaten.FlexGrid.ColKtoRow7'.", repo.TblDaten.FlexGrid.ColKtoRow7Info, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.ColKtoRow7Info, "Text", "1519");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblDaten.FlexGrid.Col0Row7'.", repo.TblDaten.FlexGrid.Col0Row7Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.Col0Row7Info, "Text", "0,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'TblDaten.FlexGrid.ColKtoRow9'.", repo.TblDaten.FlexGrid.ColKtoRow9Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.ColKtoRow9Info, "Text", "1");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Klasse 1') on item 'TblDaten.FlexGrid.ColKtoBezRow9'.", repo.TblDaten.FlexGrid.ColKtoBezRow9Info, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.ColKtoBezRow9Info, "Text", "Klasse 1");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblDaten.FlexGrid.Col0Row9'.", repo.TblDaten.FlexGrid.Col0Row9Info, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.Col0Row9Info, "Text", "0,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2000') on item 'TblDaten.FlexGrid.ColKtoRow11'.", repo.TblDaten.FlexGrid.ColKtoRow11Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.ColKtoRow11Info, "Text", "2000");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblDaten.FlexGrid.Col0Row11'.", repo.TblDaten.FlexGrid.Col0Row11Info, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.Col0Row11Info, "Text", "0,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2100') on item 'TblDaten.FlexGrid.ColKtoRow12'.", repo.TblDaten.FlexGrid.ColKtoRow12Info, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.ColKtoRow12Info, "Text", "2100");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblDaten.FlexGrid.Col0Row12'.", repo.TblDaten.FlexGrid.Col0Row12Info, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.Col0Row12Info, "Text", "0,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='2') on item 'TblDaten.FlexGrid.ColKtoRow17'.", repo.TblDaten.FlexGrid.ColKtoRow17Info, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.ColKtoRow17Info, "Text", "2");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Klasse 2') on item 'TblDaten.FlexGrid.ColKtoBezRow17'.", repo.TblDaten.FlexGrid.ColKtoBezRow17Info, new RecordItemIndex(16));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.ColKtoBezRow17Info, "Text", "Klasse 2");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblDaten.FlexGrid.Col0Row17'.", repo.TblDaten.FlexGrid.Col0Row17Info, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.Col0Row17Info, "Text", "0,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3300') on item 'TblDaten.FlexGrid.ColKtoRow19'.", repo.TblDaten.FlexGrid.ColKtoRow19Info, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.ColKtoRow19Info, "Text", "3300");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblDaten.FlexGrid.Col0Row19'.", repo.TblDaten.FlexGrid.Col0Row19Info, new RecordItemIndex(19));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.Col0Row19Info, "Text", "0,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3340') on item 'TblDaten.FlexGrid.ColKtoRow20'.", repo.TblDaten.FlexGrid.ColKtoRow20Info, new RecordItemIndex(20));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.ColKtoRow20Info, "Text", "3340");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblDaten.FlexGrid.Col0Row20'.", repo.TblDaten.FlexGrid.Col0Row20Info, new RecordItemIndex(21));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.Col0Row20Info, "Text", "0,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3507') on item 'TblDaten.FlexGrid.ColKtoRow23'.", repo.TblDaten.FlexGrid.ColKtoRow23Info, new RecordItemIndex(22));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.ColKtoRow23Info, "Text", "3507");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblDaten.FlexGrid.Col0Row23'.", repo.TblDaten.FlexGrid.Col0Row23Info, new RecordItemIndex(23));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.Col0Row23Info, "Text", "0,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3519') on item 'TblDaten.FlexGrid.ColKtoRow24'.", repo.TblDaten.FlexGrid.ColKtoRow24Info, new RecordItemIndex(24));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.ColKtoRow24Info, "Text", "3519");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblDaten.FlexGrid.Col0Row24'.", repo.TblDaten.FlexGrid.Col0Row24Info, new RecordItemIndex(25));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.Col0Row24Info, "Text", "0,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3607') on item 'TblDaten.FlexGrid.ColKtoRow26'.", repo.TblDaten.FlexGrid.ColKtoRow26Info, new RecordItemIndex(26));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.ColKtoRow26Info, "Text", "3607");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblDaten.FlexGrid.Col0Row26'.", repo.TblDaten.FlexGrid.Col0Row26Info, new RecordItemIndex(27));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.Col0Row26Info, "Text", "0,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3619') on item 'TblDaten.FlexGrid.ColKtoRow27'.", repo.TblDaten.FlexGrid.ColKtoRow27Info, new RecordItemIndex(28));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.ColKtoRow27Info, "Text", "3619");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblDaten.FlexGrid.Col0Row27'.", repo.TblDaten.FlexGrid.Col0Row27Info, new RecordItemIndex(29));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.Col0Row27Info, "Text", "0,00");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='3') on item 'TblDaten.FlexGrid.ColKtoRow29'.", repo.TblDaten.FlexGrid.ColKtoRow29Info, new RecordItemIndex(30));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.ColKtoRow29Info, "Text", "3");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Klasse 3') on item 'TblDaten.FlexGrid.ColKtoBezRow29'.", repo.TblDaten.FlexGrid.ColKtoBezRow29Info, new RecordItemIndex(31));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.ColKtoBezRow29Info, "Text", "Klasse 3");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblDaten.FlexGrid.Col0Row29'.", repo.TblDaten.FlexGrid.Col0Row29Info, new RecordItemIndex(32));
+            Validate.AttributeEqual(repo.TblDaten.FlexGrid.Col0Row29Info, "Text", "0,00");
+            
+            // Summenzeile
+            Report.Log(ReportLevel.Info, "Section", "Summenzeile", new RecordItemIndex(33));
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Gesamtsumme') on item 'TblDaten.Summenzeile.ColKtoBezRow0'.", repo.TblDaten.Summenzeile.ColKtoBezRow0Info, new RecordItemIndex(34));
             Validate.AttributeEqual(repo.TblDaten.Summenzeile.ColKtoBezRow0Info, "Text", "Gesamtsumme");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblDaten.Summenzeile.Col0Row0'.", repo.TblDaten.Summenzeile.Col0Row0Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblDaten.Summenzeile.Col0Row0'.", repo.TblDaten.Summenzeile.Col0Row0Info, new RecordItemIndex(35));
             Validate.AttributeEqual(repo.TblDaten.Summenzeile.Col0Row0Info, "Text", "0,00");
             
         }

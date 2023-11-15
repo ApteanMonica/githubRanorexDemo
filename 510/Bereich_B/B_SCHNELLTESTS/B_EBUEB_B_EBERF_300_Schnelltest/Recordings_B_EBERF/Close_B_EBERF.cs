@@ -79,8 +79,8 @@ namespace B_EBUEB_B_EBERF_Schnelltest.Recordings_B_EBERF
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmEB.TitleBar100ErfassungEroeffnungsbila'.", repo.FrmEB.TitleBar100ErfassungEroeffnungsbilaInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FrmEB.TitleBar100ErfassungEroeffnungsbila, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmEB_erfassen.TitleBar100ErfassungEroeffnungsbila'.", repo.FrmEB_erfassen.TitleBar100ErfassungEroeffnungsbilaInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.FrmEB_erfassen.TitleBar100ErfassungEroeffnungsbila, 1000);
             
         }
 

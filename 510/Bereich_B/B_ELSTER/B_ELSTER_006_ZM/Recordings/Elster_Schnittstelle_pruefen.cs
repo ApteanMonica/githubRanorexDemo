@@ -82,19 +82,16 @@ namespace B_ELSTER_006_ZM.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleUVA'", repo.FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleUVAInfo, new ActionTimeout(300000), new RecordItemIndex(0));
             repo.FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleUVAInfo.WaitForExists(300000);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to not exist. Associated repository item: 'Hinweis.Text65535_Meldung_Testuebermittlung'", repo.Hinweis.Text65535_Meldung_TestuebermittlungInfo, new ActionTimeout(300000), new RecordItemIndex(1));
-            repo.Hinweis.Text65535_Meldung_TestuebermittlungInfo.WaitForNotExists(300000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ELSTER-Schnittstelle') on item 'FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleUVA'.", repo.FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleUVAInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ELSTER-Schnittstelle') on item 'FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleUVA'.", repo.FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleUVAInfo, new RecordItemIndex(1));
             Validate.AttributeContains(repo.FrmMain_B_ELSTER.TitleBar300ELSTERSchnittstelleUVAInfo, "Text", "ELSTER-Schnittstelle");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmMain_B_ELSTER.ClientArea.CbTest'.", repo.FrmMain_B_ELSTER.ClientArea.CbTestInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmMain_B_ELSTER.ClientArea.CbTest'.", repo.FrmMain_B_ELSTER.ClientArea.CbTestInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.FrmMain_B_ELSTER.ClientArea.CbTestInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9181081508155') on item 'FrmMain_B_ELSTER.ClientArea.DfSteuernr'.", repo.FrmMain_B_ELSTER.ClientArea.DfSteuernrInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9181081508155') on item 'FrmMain_B_ELSTER.ClientArea.DfSteuernr'.", repo.FrmMain_B_ELSTER.ClientArea.DfSteuernrInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.FrmMain_B_ELSTER.ClientArea.DfSteuernrInfo, "Text", "9181081508155");
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'9181') on item 'FrmMain_B_ELSTER.ClientArea.Finanzamt_510'.", repo.FrmMain_B_ELSTER.ClientArea.Finanzamt_510Info, new RecordItemIndex(5));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'9181') on item 'FrmMain_B_ELSTER.ClientArea.Finanzamt_510'.", repo.FrmMain_B_ELSTER.ClientArea.Finanzamt_510Info, new RecordItemIndex(4));
             //Validate.AttributeContains(repo.FrmMain_B_ELSTER.ClientArea.Finanzamt_510Info, "Text", "9181");
             
         }

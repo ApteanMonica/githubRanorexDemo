@@ -4526,15 +4526,26 @@ Nur Testübermittlung möglich!
 				</robustPath>
 			</info>
 		</mouseitem>
-		<explicitdelayitem
-		duration="2000ms"
+		<WaitForRecordItem
 		enabled="True"
-		optional="False">
+		optional="False"
+		searchpropertyid="f4f2e500-93ae-4ddb-bd5e-25306b8249c9"
+		waitaction="NotExists"
+		waittimeout="300000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-		</explicitdelayitem>
+			<info
+			id="683d2b13-8de3-40a4-aecd-4a0f66bbcce4"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='Hinweis']/text[@controlid='65535' and @text~'Nur Testübermittlung möglich!']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 	</recorditems>
 	<repository
 	id="ac76d4fa-4ef5-4999-8b24-65637f380b4e"

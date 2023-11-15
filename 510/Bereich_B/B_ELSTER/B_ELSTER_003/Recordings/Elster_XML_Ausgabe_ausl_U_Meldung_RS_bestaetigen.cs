@@ -88,8 +88,8 @@ namespace B_ELSTER_003.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Hinweis.Button' at Center.", repo.Hinweis.ButtonInfo, new RecordItemIndex(2));
             repo.Hinweis.Button.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to not exist. Associated repository item: 'Hinweis.Meldung_RS_Testuebermittlung'", repo.Hinweis.Meldung_RS_TestuebermittlungInfo, new ActionTimeout(300000), new RecordItemIndex(3));
+            repo.Hinweis.Meldung_RS_TestuebermittlungInfo.WaitForNotExists(300000);
             
         }
 

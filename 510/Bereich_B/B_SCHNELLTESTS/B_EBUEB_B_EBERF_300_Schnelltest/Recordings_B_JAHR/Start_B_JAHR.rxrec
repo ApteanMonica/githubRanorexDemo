@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f8bc1dc5-f3cf-4645-a675-09e43d298dd3"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Start_B_JAHR"
+	namespace="B_EBUEB_B_EBERF_Schnelltest.Recordings_B_JAHR">
+	</codegen>
+	<variables>
+		<var
+		id="471f2501-1d51-4e9f-b858-de92f17629fc"
+		name="Programm_B_JAHR">
+			B_JAHR x x x 300
+		</var>
+		<var
+		id="c657f26f-e3dd-40bf-84f4-968ef0d06dd2"
+		name="Startfile">
+			C:\Testdaten\Allgemein\Start.bat
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		duration="100ms"
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Arguments"
+				variable="Programm_B_JAHR">
+				</binding>
+				<binding
+				target="FileName"
+				variable="Startfile">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Program Files\Microsoft Office\Office16\EXCEL.EXE
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="89723d13-abb7-4d4b-acc7-72357c4811fa"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0a211fa5-c5df-4a19-a413-f2c24d72d0bf"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'Verwalten Geschäftsjahr']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e9d2bb62-6cdc-4795-bc1f-27a431fed335">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0a211fa5-c5df-4a19-a413-f2c24d72d0bf"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'Verwalten Geschäftsjahr']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Verwalten Geschäftsjahr
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="fbf661f2-75f1-46d7-b1a4-6959f2a9811c"
+	name="B_EBUEB_B_EBERF_300_SchnelltestRepository"
+	relativepath="..\B_EBUEB_B_EBERF_300_SchnelltestRepository.rxrep">
+		<codegen
+		classname="B_EBUEB_B_EBERF_300_SchnelltestRepository"
+		namespace="B_EBUEB_B_EBERF_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="04736725-4968-44c0-9d57-cca44e8fb95d"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Start_B_JAHR.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

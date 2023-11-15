@@ -92,32 +92,20 @@ namespace B_EBUEB_B_EBERF_Schnelltest.Recordings_B_EBERF
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'FrmEB.Jahr'.", repo.FrmEB.JahrInfo, new RecordItemIndex(0));
-            repo.FrmEB.Jahr.PressKeys(Jahr);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'FrmEB_erfassen.Jahr'.", repo.FrmEB_erfassen.JahrInfo, new RecordItemIndex(0));
+            repo.FrmEB_erfassen.Jahr.PressKeys(Jahr);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(1));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'FrmEB.Jahr'.", repo.FrmEB.JahrInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.FrmEB.JahrInfo, "Text", Jahr);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'FrmEB_erfassen.Jahr'.", repo.FrmEB_erfassen.JahrInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.JahrInfo, "Text", Jahr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmEB.CbAktiv'.", repo.FrmEB.CbAktivInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.FrmEB.CbAktivInfo, "Checked", "False");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmEB_erfassen.CbAktiv'.", repo.FrmEB_erfassen.CbAktivInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.FrmEB_erfassen.CbAktivInfo, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmEB.PbDataAccessLoad' at Center.", repo.FrmEB.PbDataAccessLoadInfo, new RecordItemIndex(4));
-            repo.FrmEB.PbDataAccessLoad.Click();
-            
-            // Spalte Soll sortieren mit 2 x klick (sonst sind nicht alle Beträge am Bildschirm sichtbar)
-            Report.Log(ReportLevel.Info, "Section", "Spalte Soll sortieren mit 2 x klick (sonst sind nicht alle Beträge am Bildschirm sichtbar)", new RecordItemIndex(5));
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmEB.ColSollRow0' at Center.", repo.FrmEB.ColSollRow0Info, new RecordItemIndex(6));
-            repo.FrmEB.ColSollRow0.Click();
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(7));
-            Delay.Duration(1000, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmEB.ColSollRow0' at Center.", repo.FrmEB.ColSollRow0Info, new RecordItemIndex(8));
-            repo.FrmEB.ColSollRow0.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmEB_erfassen.PbDataAccessLoad' at Center.", repo.FrmEB_erfassen.PbDataAccessLoadInfo, new RecordItemIndex(4));
+            repo.FrmEB_erfassen.PbDataAccessLoad.Click();
             
         }
 
