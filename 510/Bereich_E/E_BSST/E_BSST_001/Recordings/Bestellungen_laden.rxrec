@@ -25815,7 +25815,7 @@ AEOyjZU22jbQBDso2VNto20AQ7KNlTbaNtAEOyjZU22jbQBDso2VNto20AQ7KNlTbaNtAEOyjZU2
 				</binding>
 			</bindings>
 			<info
-			id="e137f5fe-0f33-4dfc-aae7-46468d151a2c"
+			id="0c6cd763-faf9-4ae7-a383-505fec8d5f44"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -25825,7 +25825,7 @@ AEOyjZU22jbQBDso2VNto20AQ7KNlTbaNtAEOyjZU22jbQBDso2VNto20AQ7KNlTbaNtAEOyjZU2
 				hasfocus="False"
 				index="15"
 				prefcap="cell"
-				rect="3508,407,38,19"
+				rect="689,346,38,19"
 				role="cell"
 				snapElem=""
 				valid="True"
@@ -25838,7 +25838,7 @@ AEOyjZU22jbQBDso2VNto20AQ7KNlTbaNtAEOyjZU22jbQBDso2VNto20AQ7KNlTbaNtAEOyjZU2
 					<attribute
 					name="selected"
 					type="System.Boolean">
-						False
+						True
 					</attribute>
 					<attribute
 					name="text"
@@ -25863,16 +25863,22 @@ AEOyjZU22jbQBDso2VNto20AQ7KNlTbaNtAEOyjZU22jbQBDso2VNto20AQ7KNlTbaNtAEOyjZU2
 					<attribute
 					name="accessiblestate"
 					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
+						Selected, Focusable, Selectable
 					</attribute>
 					<attribute
 					name="accessiblevalue"
 					type="System.String">
 						E
 					</attribute>
+					<limitation
+					helpUrl="https://www.ranorex.com/help/v10.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/"
+					name="EnsureVisible"
+					technology="Win32">
+						An EnsureVisible action couldn't be executed because Windows did not allow bringing the window containing the targeted UI element into the foreground. This is likely caused by insufficient privileges. Restart Ranorex Studio as administrator or use the Ranorex.UiaLauncher to start the test executable.
+					</limitation>
 				</element>
 				<path>
-					/form[@controlname='tblBsst']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBsp_status Row 7']
+					/form[@controltypename='tblBsst']/container/element/table/row[@accessiblename='Row 7']/cell[@accessiblename='colBsp_status Row 7']
 				</path>
 				<robustPath>
 				</robustPath>

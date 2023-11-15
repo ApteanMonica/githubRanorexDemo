@@ -29,6 +29,7 @@ namespace E_BSST_001
         static E_BSST_001Repository instance = new E_BSST_001Repository();
         E_BSST_001RepositoryFolders.TblBsstAppFolder _tblbsst;
         E_BSST_001RepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
+        E_BSST_001RepositoryFolders.TblBsst1AppFolder _tblbsst1;
 
         /// <summary>
         /// Gets the singleton class instance representing the E_BSST_001Repository element repository.
@@ -47,6 +48,7 @@ namespace E_BSST_001
         {
             _tblbsst = new E_BSST_001RepositoryFolders.TblBsstAppFolder(this);
             _dlgmessagebox = new E_BSST_001RepositoryFolders.DlgMessageBoxAppFolder(this);
+            _tblbsst1 = new E_BSST_001RepositoryFolders.TblBsst1AppFolder(this);
         }
 
 #region Variables
@@ -141,6 +143,15 @@ namespace E_BSST_001
         public virtual E_BSST_001RepositoryFolders.DlgMessageBoxAppFolder DlgMessageBox
         {
             get { return _dlgmessagebox; }
+        }
+
+        /// <summary>
+        /// The TblBsst1 folder.
+        /// </summary>
+        [RepositoryFolder("12326c68-162b-4e7f-8944-07173642b513")]
+        public virtual E_BSST_001RepositoryFolders.TblBsst1AppFolder TblBsst1
+        {
+            get { return _tblbsst1; }
         }
     }
 
@@ -434,7 +445,6 @@ namespace E_BSST_001
             RepoItemInfo _colbspgeliefertrow4Info;
             RepoItemInfo _colbsknrrow7Info;
             RepoItemInfo _coladrnrrow7Info;
-            RepoItemInfo _colbspstatusrow7Info;
             RepoItemInfo _row12column0Info;
             RepoItemInfo _row11column0Info;
             RepoItemInfo _colbsknrrow11Info;
@@ -471,7 +481,6 @@ namespace E_BSST_001
                 _colbspgeliefertrow4Info = new RepoItemInfo(this, "ColBspGeliefertRow4", "?/?/cell[@accessiblename='colBsp_geliefert Row 4']", "", 30000, null, "8ebd58d9-6322-4ce9-ab45-d345542586f2");
                 _colbsknrrow7Info = new RepoItemInfo(this, "ColBskNrRow7", "?/?/cell[@accessiblename~'colBsk_nr Row' and @text=$Bestellung_E]", "", 30000, null, "ba6715e6-0dad-4881-a1f5-5c28ad967a14");
                 _coladrnrrow7Info = new RepoItemInfo(this, "ColAdrNrRow7", "?/?/cell[@accessiblename~'colAdr_nr Row' and @text=$Lieferant2]", "", 30000, null, "d17b1387-cb28-475a-af2e-879796a138a8");
-                _colbspstatusrow7Info = new RepoItemInfo(this, "ColBspStatusRow7", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 7']/cell[@accessiblename='colBsp_status Row 7']", "", 30000, null, "e137f5fe-0f33-4dfc-aae7-46468d151a2c");
                 _row12column0Info = new RepoItemInfo(this, "Row12Column0", "?/?/cell[@accessiblename='Row 12 Column 0']", "", 30000, null, "993c239b-568c-426f-81e7-4ff3dfd06dd5");
                 _row11column0Info = new RepoItemInfo(this, "Row11Column0", "?/?/cell[@accessiblename='Row 11 Column 0']", "", 30000, null, "def0fb51-19a9-4950-b198-fe8ae7a27a1e");
                 _colbsknrrow11Info = new RepoItemInfo(this, "ColBskNrRow11", "?/?/cell[@accessiblename='colBsk_nr Row 1']", "", 30000, null, "b14acb5e-a744-443c-97a1-f3dcbeb95012");
@@ -965,30 +974,6 @@ namespace E_BSST_001
             }
 
             /// <summary>
-            /// The ColBspStatusRow7 item.
-            /// </summary>
-            [RepositoryItem("e137f5fe-0f33-4dfc-aae7-46468d151a2c")]
-            public virtual Ranorex.Cell ColBspStatusRow7
-            {
-                get
-                {
-                    return _colbspstatusrow7Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColBspStatusRow7 item info.
-            /// </summary>
-            [RepositoryItemInfo("e137f5fe-0f33-4dfc-aae7-46468d151a2c")]
-            public virtual RepoItemInfo ColBspStatusRow7Info
-            {
-                get
-                {
-                    return _colbspstatusrow7Info;
-                }
-            }
-
-            /// <summary>
             /// The Row12Column0 item.
             /// </summary>
             [RepositoryItem("993c239b-568c-426f-81e7-4ff3dfd06dd5")]
@@ -1317,6 +1302,72 @@ namespace E_BSST_001
                 get
                 {
                     return _button0Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TblBsst1AppFolder folder.
+        /// </summary>
+        [RepositoryFolder("12326c68-162b-4e7f-8944-07173642b513")]
+        public partial class TblBsst1AppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _colbspstatusrow7Info;
+
+            /// <summary>
+            /// Creates a new TblBsst1  folder.
+            /// </summary>
+            public TblBsst1AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TblBsst1", "/form[@controltypename='tblBsst']", parentFolder, 30000, null, true, "12326c68-162b-4e7f-8944-07173642b513", "")
+            {
+                _colbspstatusrow7Info = new RepoItemInfo(this, "ColBspStatusRow7", "container/element/table/row[@accessiblename='Row 7']/cell[@accessiblename='colBsp_status Row 7']", "", 30000, null, "0c6cd763-faf9-4ae7-a383-505fec8d5f44");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("12326c68-162b-4e7f-8944-07173642b513")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("12326c68-162b-4e7f-8944-07173642b513")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColBspStatusRow7 item.
+            /// </summary>
+            [RepositoryItem("0c6cd763-faf9-4ae7-a383-505fec8d5f44")]
+            public virtual Ranorex.Cell ColBspStatusRow7
+            {
+                get
+                {
+                    return _colbspstatusrow7Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBspStatusRow7 item info.
+            /// </summary>
+            [RepositoryItemInfo("0c6cd763-faf9-4ae7-a383-505fec8d5f44")]
+            public virtual RepoItemInfo ColBspStatusRow7Info
+            {
+                get
+                {
+                    return _colbspstatusrow7Info;
                 }
             }
         }

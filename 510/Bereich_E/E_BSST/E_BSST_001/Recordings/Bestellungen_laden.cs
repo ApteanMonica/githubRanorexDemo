@@ -279,8 +279,8 @@ namespace E_BSST_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Lieferant2) on item 'TblBsst.FlexGrid.ColAdrNrRow7'.", repo.TblBsst.FlexGrid.ColAdrNrRow7Info, new RecordItemIndex(34));
             Validate.AttributeRegex(repo.TblBsst.FlexGrid.ColAdrNrRow7Info, "Text", new Regex(Lieferant2));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Status_E) on item 'TblBsst.FlexGrid.ColBspStatusRow7'.", repo.TblBsst.FlexGrid.ColBspStatusRow7Info, new RecordItemIndex(35));
-            Validate.AttributeRegex(repo.TblBsst.FlexGrid.ColBspStatusRow7Info, "Text", new Regex(Status_E));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Status_E) on item 'TblBsst1.ColBspStatusRow7'.", repo.TblBsst1.ColBspStatusRow7Info, new RecordItemIndex(35));
+            Validate.AttributeRegex(repo.TblBsst1.ColBspStatusRow7Info, "Text", new Regex(Status_E));
             
         }
 
