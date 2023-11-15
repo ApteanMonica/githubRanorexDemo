@@ -41,7 +41,7 @@ namespace E_LSK_002.Recordings
         /// </summary>
         public Suche()
         {
-            Rechnung_Suche = "";
+            Rechnung_Suche = "301900003";
         }
 
         /// <summary>
