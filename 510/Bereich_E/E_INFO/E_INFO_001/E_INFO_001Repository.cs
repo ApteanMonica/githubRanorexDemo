@@ -1908,7 +1908,6 @@ namespace E_INFO_001
         {
             RepoItemInfo _colreacdrow8Info;
             RepoItemInfo _colrechdtfiburow8Info;
-            RepoItemInfo _colrechnrrow3Info;
             RepoItemInfo _colrechstatusrow3Info;
             RepoItemInfo _colrechnrrow1Info;
             RepoItemInfo _colrechstatusrow1Info;
@@ -1922,7 +1921,6 @@ namespace E_INFO_001
             {
                 _colreacdrow8Info = new RepoItemInfo(this, "ColReaCdRow8", "?/?/cell[@accessiblename='colRea_cd Row 8']", "", 30000, null, "f86142ef-525c-4e89-aaa4-e68466094861");
                 _colrechdtfiburow8Info = new RepoItemInfo(this, "ColRechDtfibuRow8", "?/?/cell[@accessiblename='colRech_dtfibu Row 8']", "", 30000, null, "97496772-0106-4ce7-98cd-a3f381b9abf5");
-                _colrechnrrow3Info = new RepoItemInfo(this, "ColRechNrRow3", "element[@controltypename='MdiClient']/form[@controlname='tblRech']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colRech_nr Row 3']", "", 30000, null, "a6f621f2-a38a-4273-83ff-64f0087c06d9");
                 _colrechstatusrow3Info = new RepoItemInfo(this, "ColRechStatusRow3", "?/?/cell[@accessiblename='colRech_status Row 3']", "", 30000, null, "f342d41e-9d75-4dec-a643-69e7034ed28b");
                 _colrechnrrow1Info = new RepoItemInfo(this, "ColRechNrRow1", "?/?/cell[@accessiblename='colRech_nr Row 1']", "", 30000, null, "abe2e764-6375-48e1-883c-b4acd72bb407");
                 _colrechstatusrow1Info = new RepoItemInfo(this, "ColRechStatusRow1", "?/?/cell[@accessiblename='colRech_status Row 1']", "", 30000, null, "3a50a918-c2a7-40ca-bac2-8a621fc32e3b");
@@ -1998,30 +1996,6 @@ namespace E_INFO_001
                 get
                 {
                     return _colrechdtfiburow8Info;
-                }
-            }
-
-            /// <summary>
-            /// The ColRechNrRow3 item.
-            /// </summary>
-            [RepositoryItem("a6f621f2-a38a-4273-83ff-64f0087c06d9")]
-            public virtual Ranorex.Cell ColRechNrRow3
-            {
-                get
-                {
-                    return _colrechnrrow3Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColRechNrRow3 item info.
-            /// </summary>
-            [RepositoryItemInfo("a6f621f2-a38a-4273-83ff-64f0087c06d9")]
-            public virtual RepoItemInfo ColRechNrRow3Info
-            {
-                get
-                {
-                    return _colrechnrrow3Info;
                 }
             }
 
