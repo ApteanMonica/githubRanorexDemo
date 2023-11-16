@@ -530,6 +530,7 @@ namespace E_LSK_002
             RepoItemInfo _collsknrrow1Info;
             RepoItemInfo _rechnung1Info;
             RepoItemInfo _pbrichtigInfo;
+            RepoItemInfo _rechnungInfo;
 
             /// <summary>
             /// Creates a new TpRech  folder.
@@ -541,6 +542,7 @@ namespace E_LSK_002
                 _collsknrrow1Info = new RepoItemInfo(this, "ColLskNrRow1", "?/?/container[@controlname='tblLsk']/element[@controlname='mainGrid']//cell[@accessiblename='colLsk_nr Row 1']", "", 30000, null, "fa01bee0-c873-4fc8-94de-cade6c0d9989");
                 _rechnung1Info = new RepoItemInfo(this, "Rechnung1", "?/?/text[@controlname='dfRech_summe']/text[@accessiblename='Rechnung']", "", 30000, null, "d55bd71a-6c71-4ce3-84f0-eb2629d6b550");
                 _pbrichtigInfo = new RepoItemInfo(this, "PbRichtig", "?/?/button[@controlname='pbRichtig']", "", 30000, null, "a24582ca-1458-4705-94aa-aa972289b653");
+                _rechnungInfo = new RepoItemInfo(this, "Rechnung", "container[@controlname='frame1']/text[@controlname='dfRech_nr']/text[@accessiblename='Rechnung']", "", 30000, null, "60650629-9bb8-4a9b-922d-020fb67aa2ec");
             }
 
             /// <summary>
@@ -660,6 +662,30 @@ namespace E_LSK_002
                 get
                 {
                     return _pbrichtigInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Rechnung item.
+            /// </summary>
+            [RepositoryItem("60650629-9bb8-4a9b-922d-020fb67aa2ec")]
+            public virtual Ranorex.Text Rechnung
+            {
+                get
+                {
+                    return _rechnungInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Rechnung item info.
+            /// </summary>
+            [RepositoryItemInfo("60650629-9bb8-4a9b-922d-020fb67aa2ec")]
+            public virtual RepoItemInfo RechnungInfo
+            {
+                get
+                {
+                    return _rechnungInfo;
                 }
             }
         }

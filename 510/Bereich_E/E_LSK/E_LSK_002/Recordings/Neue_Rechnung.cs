@@ -41,8 +41,8 @@ namespace E_LSK_002.Recordings
         /// </summary>
         public Neue_Rechnung()
         {
-            Lieferant = "";
-            Rechnung = "";
+            Lieferant = "300004";
+            Rechnung = "301900002";
             Datum = "";
             Jahr = "";
             Monat = "";
@@ -163,32 +163,41 @@ namespace E_LSK_002.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Lieferant' with focus on 'MdiLSR.Lieferant'.", repo.MdiLSR.LieferantInfo, new RecordItemIndex(1));
             repo.MdiLSR.Lieferant.PressKeys(Lieferant);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Rechnung' with focus on 'MdiLSR.Rechnung'.", repo.MdiLSR.RechnungInfo, new RecordItemIndex(2));
-            repo.MdiLSR.Rechnung.PressKeys(Rechnung);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Rechnung' with focus on 'MdiLSR.IntBelegnr'.", repo.MdiLSR.IntBelegnrInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Rechnung' with focus on 'MdiLSR.TpRech.Rechnung'.", repo.MdiLSR.TpRech.RechnungInfo, new RecordItemIndex(3));
+            repo.MdiLSR.TpRech.Rechnung.PressKeys(Rechnung);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Rechnung' with focus on 'MdiLSR.IntBelegnr'.", repo.MdiLSR.IntBelegnrInfo, new RecordItemIndex(5));
             repo.MdiLSR.IntBelegnr.PressKeys(Rechnung);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Datum' with focus on 'MdiLSR.Rechnungsdatum'.", repo.MdiLSR.RechnungsdatumInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Datum' with focus on 'MdiLSR.Rechnungsdatum'.", repo.MdiLSR.RechnungsdatumInfo, new RecordItemIndex(7));
             repo.MdiLSR.Rechnungsdatum.PressKeys(Datum);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'MdiLSR.Rechnungsdatum'.", repo.MdiLSR.RechnungsdatumInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'MdiLSR.Rechnungsdatum'.", repo.MdiLSR.RechnungsdatumInfo, new RecordItemIndex(8));
             Keyboard.PrepareFocus(repo.MdiLSR.Rechnungsdatum);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Datum) on item 'MdiLSR.Buchungsdatum'.", repo.MdiLSR.BuchungsdatumInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Datum) on item 'MdiLSR.Buchungsdatum'.", repo.MdiLSR.BuchungsdatumInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.MdiLSR.BuchungsdatumInfo, "Text", Datum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Jahr) on item 'MdiLSR.TextUVA'.", repo.MdiLSR.TextUVAInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Jahr) on item 'MdiLSR.TextUVA'.", repo.MdiLSR.TextUVAInfo, new RecordItemIndex(10));
             Validate.AttributeContains(repo.MdiLSR.TextUVAInfo, "Text", Jahr);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Monat) on item 'MdiLSR.Text1'.", repo.MdiLSR.Text1Info, new RecordItemIndex(8));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Monat) on item 'MdiLSR.Text1'.", repo.MdiLSR.Text1Info, new RecordItemIndex(11));
             //Validate.AttributeEqual(repo.MdiLSR.Text1Info, "Text", Monat);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Tag) on item 'MdiLSR.Text2'.", repo.MdiLSR.Text2Info, new RecordItemIndex(9));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Tag) on item 'MdiLSR.Text2'.", repo.MdiLSR.Text2Info, new RecordItemIndex(12));
             //Validate.AttributeRegex(repo.MdiLSR.Text2Info, "Text", new Regex(Tag));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='N') on item 'MdiLSR.EKRechArt'.", repo.MdiLSR.EKRechArtInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='N') on item 'MdiLSR.EKRechArt'.", repo.MdiLSR.EKRechArtInfo, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.MdiLSR.EKRechArtInfo, "Text", "N");
             
         }

@@ -147,16 +147,21 @@
 			VideoFps="15"
 			VideoRecordingMode="Off"
 			VideoSource="Auto"
+			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
 			id="ec96f937-37c9-4bcb-a878-db148f785a07"
+			includeimageschecked="False"
+			includerecordingschecked="False"
 			junitreport="False"
 			name="E_LSK_002"
+			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<testmodule
 			id="f35c7061-7f63-4a37-a6e5-c62d81ef8475"
@@ -203,6 +208,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="f3f46dce-c97a-4d40-9c92-ba916fd2b73e"
 			name="CloseAUT"
 			ref="8310def7-68ad-4687-bb45-bb96e5725d18"
