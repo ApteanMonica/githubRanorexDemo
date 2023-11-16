@@ -43,6 +43,7 @@ namespace V_FADR_001.Recordings
         {
             Auftragsnummer = "201900005";
             Rechnungsnummer = "";
+            Tagesdatum = "";
         }
 
         /// <summary>
@@ -77,6 +78,16 @@ namespace V_FADR_001.Recordings
             set { repo.Auftragsnummer = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the value of variable Tagesdatum.
+        /// </summary>
+        [TestVariable("fa008b4f-9528-48ae-9f6a-d3fea2e8d07e")]
+        public string Tagesdatum
+        {
+            get { return repo.Tagesdatum; }
+            set { repo.Tagesdatum = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -103,64 +114,108 @@ namespace V_FADR_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2' at Center.", repo.TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2Info, new RecordItemIndex(0));
-            repo.TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2.Click();
+            Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("dd.MM.yyyy");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2' at Center.", repo.TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2Info, new RecordItemIndex(1));
-            repo.TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2.DoubleClick();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+X' Press.", new RecordItemIndex(2));
-            Keyboard.Press(System.Windows.Forms.Keys.X | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow2'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow2Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow2Info, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1' at Center.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(3));
-            repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Rech_art_FlexGrid.ColReaBezRow2' at Center.", repo.TblFadr.Rech_art_FlexGrid.ColReaBezRow2Info, new RecordItemIndex(3));
+            repo.TblFadr.Rech_art_FlexGrid.ColReaBezRow2.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+V' Press.", new RecordItemIndex(4));
-            Keyboard.Press(System.Windows.Forms.Keys.V | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(5));
-            repo.TblFadr.PbCommonLoad.Click();
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Column0' at Center.", repo.TblFadr.Column0Info, new RecordItemIndex(6));
-            repo.TblFadr.Column0.Click();
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Auftragsnummer) on item 'TblFadr.untere_Tabelle.ColAufkNr'.", repo.TblFadr.untere_Tabelle.ColAufkNrInfo, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.TblFadr.untere_Tabelle.ColAufkNrInfo, "Text", Auftragsnummer);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbSpec2VSRechnung' at Center.", repo.TblFadr.PbSpec2VSRechnungInfo, new RecordItemIndex(8));
-            repo.TblFadr.PbSpec2VSRechnung.Click();
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgDrucken.PbVorschau'", repo.DlgDrucken.PbVorschauInfo, new ActionTimeout(60000), new RecordItemIndex(9));
-            repo.DlgDrucken.PbVorschauInfo.WaitForExists(60000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbVorschau' at Center.", repo.DlgDrucken.PbVorschauInfo, new RecordItemIndex(10));
-            repo.DlgDrucken.PbVorschau.Click();
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Vorschau.TitleBar'", repo.Vorschau.TitleBarInfo, new ActionTimeout(120000), new RecordItemIndex(11));
-            repo.Vorschau.TitleBarInfo.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Vorschau.DruckvorschauSchliessen' at Center.", repo.Vorschau.DruckvorschauSchliessenInfo, new RecordItemIndex(12));
-            repo.Vorschau.DruckvorschauSchliessen.Click();
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.Schliessen' at Center.", repo.DlgDrucken.SchliessenInfo, new RecordItemIndex(14));
-            repo.DlgDrucken.Schliessen.Click();
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Column0' at Center.", repo.TblFadr.Column0Info, new RecordItemIndex(15));
-            repo.TblFadr.Column0.Click();
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbSpec2Fakturenerstellung' at Center.", repo.TblFadr.PbSpec2FakturenerstellungInfo, new RecordItemIndex(16));
-            repo.TblFadr.PbSpec2Fakturenerstellung.Click();
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Rechnungsnummer' with focus on 'TblFadr.untere_Tabelle.Rechnungsnummer'.", repo.TblFadr.untere_Tabelle.RechnungsnummerInfo, new RecordItemIndex(17));
-            repo.TblFadr.untere_Tabelle.Rechnungsnummer.PressKeys(Rechnungsnummer);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Rechnungsnummer) on item 'TblFadr.untere_Tabelle.Rechnungsnummer'.", repo.TblFadr.untere_Tabelle.RechnungsnummerInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(6));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+X' Press.", new RecordItemIndex(7));
+            Keyboard.Press(System.Windows.Forms.Keys.X | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(8));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow2'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow2Info, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow2Info, "Text", "");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Rech_art_FlexGrid.ColReaBezRow1' at Center.", repo.TblFadr.Rech_art_FlexGrid.ColReaBezRow1Info, new RecordItemIndex(11));
+            repo.TblFadr.Rech_art_FlexGrid.ColReaBezRow1.Click();
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(12));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(14));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+V' Press.", new RecordItemIndex(15));
+            Keyboard.Press(System.Windows.Forms.Keys.V | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(16));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(17));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, "Text", Tagesdatum);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(19));
+            repo.TblFadr.PbCommonLoad.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.untere_Tabelle.Column0_mit_Auftragsnummer' at Center.", repo.TblFadr.untere_Tabelle.Column0_mit_AuftragsnummerInfo, new RecordItemIndex(20));
+            repo.TblFadr.untere_Tabelle.Column0_mit_Auftragsnummer.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Auftragsnummer) on item 'TblFadr.untere_Tabelle.ColAufkNr'.", repo.TblFadr.untere_Tabelle.ColAufkNrInfo, new RecordItemIndex(21));
+            Validate.AttributeEqual(repo.TblFadr.untere_Tabelle.ColAufkNrInfo, "Text", Auftragsnummer);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbSpec2VSRechnung' at Center.", repo.TblFadr.PbSpec2VSRechnungInfo, new RecordItemIndex(22));
+            repo.TblFadr.PbSpec2VSRechnung.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDrucken.PbVorschau'", repo.DlgDrucken.PbVorschauInfo, new ActionTimeout(120000), new RecordItemIndex(23));
+            repo.DlgDrucken.PbVorschauInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbVorschau' at Center.", repo.DlgDrucken.PbVorschauInfo, new RecordItemIndex(24));
+            repo.DlgDrucken.PbVorschau.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Vorschau.TitleBar'", repo.Vorschau.TitleBarInfo, new ActionTimeout(120000), new RecordItemIndex(25));
+            repo.Vorschau.TitleBarInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Vorschau.DruckvorschauSchliessen' at Center.", repo.Vorschau.DruckvorschauSchliessenInfo, new RecordItemIndex(26));
+            repo.Vorschau.DruckvorschauSchliessen.Click();
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(27));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.Schliessen' at Center.", repo.DlgDrucken.SchliessenInfo, new RecordItemIndex(28));
+            repo.DlgDrucken.Schliessen.Click();
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(29));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.untere_Tabelle.Column0_mit_Auftragsnummer' at Center.", repo.TblFadr.untere_Tabelle.Column0_mit_AuftragsnummerInfo, new RecordItemIndex(30));
+            repo.TblFadr.untere_Tabelle.Column0_mit_Auftragsnummer.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbSpec2Fakturenerstellung' at Center.", repo.TblFadr.PbSpec2FakturenerstellungInfo, new RecordItemIndex(31));
+            repo.TblFadr.PbSpec2Fakturenerstellung.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Rechnungsnummer' with focus on 'TblFadr.untere_Tabelle.Rechnungsnummer'.", repo.TblFadr.untere_Tabelle.RechnungsnummerInfo, new RecordItemIndex(32));
+            repo.TblFadr.untere_Tabelle.Rechnungsnummer.PressKeys(Rechnungsnummer);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(33));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Rechnungsnummer) on item 'TblFadr.untere_Tabelle.Rechnungsnummer'.", repo.TblFadr.untere_Tabelle.RechnungsnummerInfo, new RecordItemIndex(34));
             Validate.AttributeRegex(repo.TblFadr.untere_Tabelle.RechnungsnummerInfo, "Text", new Regex(Rechnungsnummer));
             
         }

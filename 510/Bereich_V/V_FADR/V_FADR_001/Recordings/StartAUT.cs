@@ -42,7 +42,7 @@ namespace V_FADR_001.Recordings
         public StartAUT()
         {
             Startfile = "c:\\Testdaten\\Allgemein\\Start.bat";
-            Programm = "V_FADR /Aufrufart=FAK";
+            Programm = "V_FADR Aufrufart FAK";
             Tagesdatum = "";
         }
 

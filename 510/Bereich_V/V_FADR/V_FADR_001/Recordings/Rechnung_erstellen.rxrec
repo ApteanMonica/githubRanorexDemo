@@ -32,8 +32,93 @@ mode="Global">
 		id="8107eb30-6054-42ba-8953-5373fde332b2"
 		name="Rechnungsnummer">
 		</var>
+		<var
+		id="fa008b4f-9528-48ae-9f6a-d3fea2e8d07e"
+		name="Tagesdatum">
+		</var>
 	</variables>
 	<recorditems>
+		<userrecorditem
+		classname="SystemLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="GetDateTimeAsString"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Tagesdatum">
+				</binding>
+			</bindings>
+			<arguments
+			id="9e3e5131-7301-4e28-80a7-5f534ae2fc1a">
+				<argument
+				argname="expectedFormat"
+				id="917f490b-57ca-4e61-995f-7d417ecb7d16">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						dd.MM.yyyy
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="eeccbf05-6a93-4bb0-90f3-0229225fbdd5">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="040c96c5-3f28-4435-b912-42bd799d8750"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="eeccbf05-6a93-4bb0-90f3-0229225fbdd5">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Tagesdatum">
+				</binding>
+			</bindings>
+			<info
+			id="f3d7eeca-cb56-4d62-a2bd-1d8467a0d8bf"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colLsk_datum Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -51,267 +136,48 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="f3d7eeca-cb56-4d62-a2bd-1d8467a0d8bf"
-			sourcename="Recorder">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="4"
-				prefcap="cell"
-				rect="935,581,63,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colLsk_datum Row 2
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-					</attribute>
-				</element>
+			id="8aa6d5db-9129-4d4a-b2d6-0fbc25b954f8"
+			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLsk_datum Row 2']
+					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colRea_bez Row 2']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-			<helperscreenshot
-			guid="c1161fda-33ea-4646-87db-545e395941f8">
-				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
-AUUUUAFFFFABRRRQAUUUUAf/2Q==
-			</helperscreenshot>
 		</mouseitem>
-		<mouseitem
-		action="DoubleClick"
-		button="Left"
-		duration="300ms"
+		<explicitdelayitem
+		duration="1000ms"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="39e3a151-c535-4c4d-ab17-a66da76b09be"
-		sx="967"
-		sy="586"
-		warnoutofbounds="False">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="f3d7eeca-cb56-4d62-a2bd-1d8467a0d8bf"
-			sourcename="Recorder">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="4"
-				prefcap="cell"
-				rect="935,581,63,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						True
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						15.12.2020
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colLsk_datum Row 2
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Selected, Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						15.12.2020
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLsk_datum Row 2']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<helperscreenshot
-			guid="35b6ebc8-a660-4401-b7ce-0ee858a0ed9c">
-				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
-YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
-qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABhAMwDASIA
-AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
-AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
-ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
-p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
-AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
-BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
-U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
-uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDXZkVl
-U4BY4HHXjNOwPQVnCMSyxBPtewN8xcsMfKehPI/Dj0pBHOUmJafMa/uxubkgtj68YqzM0sD0FGB6
-Cs2Z5zCY0E4kVnyQrdMNjB79qfIjxSFczmDKliGZm75x3646UgL+B6CjA9BWVG0rNCyGdl3cD5um
-89T9P7w+hpF+0PL/AMt0D43KA42/MOMk+memBTA1VKsMrgjpxS4HoKr2CeXCyYcESN98k9/f2qxQ
-AqgZ6DoaYrIxYDHynB46HrUi9fwP8qzWDi6l2CcOZQRgNsK4Gfb1pAX12soZcEHkEd6QMhcoMblA
-JGPX/wDVVC388XMO/wA4/KNwbcAPl/I8/Q5qwZBFeyF1kwyKAVjZh1PcCmBItxC0vlg/NnH3Tgn0
-B6E0klzDFJsfdkDJwhIA9yBgVBGXFzth85QS29HT5V68g9+ewPel8xobl/NV5GZFAMcTYJyfrjr3
-NIC2NpGRgjrmhdrKGXBB5BHestknVoosSAoEQ7Q5DDjJyDtHftmrtjhLSGPDghOQwPBHXrTAsgDD
-cDpVd7uBHZW3fKcMRGxA/HGKsr0b6f1rOmglYXTB5MFs+WAMONoyOmeenWkBfwPQU1mRWVTgFjgc
-deM1nAXZmkKu4f5sLsbbjnbyTt9OgzThGJZYgn2vYG+YuWGPlPQnkfhx6UAX5GSONnfhVGScUyKa
-KYkJkMOoZCp/IioGD/2dJGwkZ9rgZBJIBOP0x9abPI0p82KOTCIVOVZSckdBweACeKALuV3beMkZ
-xS4HoKzLNJPtatJ5zAblViHA/hPIJPv1rREikZw3QH7h7/5/CmA8AYbgdKYjI+dvO0kHjvT0IZWI
-z6cjHes+6ju1nJtSArctn16f0FLTqGr2NXy19/zpNibiMnI6jNUDdOVdo7kMpfblmUbBzycDjJ9R
-RHJM86jzAGcAFk5yPn9R7elK5dkaHlr7/nUcsEEo8uVVcHna2D+lU47m4KMzSJ0+YA5MfIzxtGMc
-9SaepMtwvl3RcBGw4UZ/h4zjB/KlcLIuLDGqhVGAOAB2pfLX3/OqMc07x+aZT99F2BRg5Az796Dd
-u6wrHMNxUB8AHByoP8zT1CyL3lr7/nR5a+/51SaZ0cxyXBRVYjzCFBJwCB0x3PbtVu3YvbROxyzI
-CT+FFwshwjUHvR5a+/508UlFwshvlr7/AJ0eWvv+dOoouFkN8tff86PLX3/OnUUXCyG+Wvv+dHlr
-7/nTqKLhZDRGuD1o8tff86f60lFwshvlr7/nR5a+/wCdOoouFkN8tff86PLX3/OnUUXCyG+Wvv8A
-nR5a+/506ii4WQ0Rrg9aPLX3/On+tJRcLIMj1oyPWqn2tccxyDPAGByc49fWj7ZGFLOrIAD97HY4
-x19aLBct5HrRketUReqzqVyVwQVGCc5GOn1pwvod5UnaRnOSOo6jAOaLBcuZHrRketU3uG3R4ikG
-W+6QPmGD70v2tcEiOQ7RluB8vJHr7UWC5YkjSUAMWwP7rlf5GnKFVQowABgCq73KJHvIbGSOB6Z/
-wpPtIyQY3D8YXjJz+PsaLBcS+vvsZjCxeYZMjAbHp7e9Vv7Vm/58JPzP+FR6hIJJrNgCP3hGD7EC
-pZWdZosMAjNgjHJ4J61Ki23qbuUIQi3G979+4n9qzf8APhJ+Z/wo/tWb/nwk/M/4UyF384iUyDJb
-aCBtxnt36etSFpBdKu4bChIGO4x/jVezfcj20P5PxYn9qzf8+En5n/Cj+1Zv+fCT8z/hUZleFZmL
-GURoWOQByO3FRi5ly4JZZVBEkbKP3Z7fX+tHI+4/bQ/k/Flj+1Zv+fCT8z/hR/as3/PhJ+Z/wpmX
-HmK07AIQS5AzjH0x+lM8yYrvZipQKSuBznrn8KOR9xe2h/J+LJv7WmAJNhJgDJOTx+lXrS4+02yT
-bdm7PGc45xVaX/j2n/65N/KotMaQQQLuBQo5C45yG9fxqbNStctuMqXMo2dzUyPWjI9ap2juRiUy
-b9oOHAH5Y/rTgZTPKm8Y2grhemc/n0qrGFy1ketGR61WgZm3jeXUHCuQOfXpUReVWMYlLZKgvgfK
-SeQPwosFy9ketGR61RZpBExMzAoSowoJY9v8ilWSTeHZiBvCFOMdP8aLBcu5HrRketMoosFyH7Mm
-VOW+Ukj88/0pDbIRyW4zjnpk5/nVzYvpRsX0ouFiobZSVZndmHckeoP9KPs65Ybn2NnKZ4561b2L
-6UbF9KLhYqLBhlZpJHKnjcR6Y/rQLZAsgy3zjB/Mn+tW9i+lGxfSi4WKTWitkF325JC8YGc57e9L
-NCWO+P8A1nGDuxjGfY+tXNi+lGxfSi4WMS9jMclkrHLbySfqQassgZkJz8pyPyx/Wl1W1nlkt3to
-w5jJJBOPTHf2qLGp/wDPlD/31/8AZVKnyt6HRKnz042a0v18xRBhy3mOTg7ckHbn0/8Ar09owzh8
-kEKQMe+P8Kjxqf8Az5Q/99f/AGVGNT/58of++v8A7Kr9ouzM/q0v5l95DcwGLTrhRK5AibAIHp9K
-0NSsBdpviYR3CrhW7MP7re38utUZ4tTmt5IvscQ3qVzu6ZH+9UdxHqE8kovonFvOpTbH84iI5U4X
-k8jn60nNMTpOO7X3joY/PQ72ljlR/nDAZDAfTBHoamNuGYEyOem7p82OmeP5VFbpfrCpj06CMMAx
-UfLz9N1S41P/AJ8of++v/sqPaLsP6u39pfeSy/8AHtP/ANcm/lTdLQNZQuc5AYfm3/1qjddTeN0+
-yRAOpUkN6/8AAqu6dbtDYxxyrtcZyM+5qea8rmjhyUeVtXv0fkCQ7CT5js3Ay2OB6dKV4Q+87mUu
-oUkdhz/jVnYvpRsX0qrnPYqpEUTb5rkDpwox+Qpi2u2Py/NkIGCM7eD1z0q7sX0o2L6UXCxS+y8q
-RLIGXJz8vJPU8inCAeZv3sRndt4xnGM1b2L6UbF9KLhYioqXYvpRsX0ouFhaKbvT+8v50b0/vL+d
-IY6im70/vL+dG9P7y/nQA6im70/vL+dG9P7y/nQA6im70/vL+dG9P7y/nQA6im70/vL+dG9P7y/n
-QA6im70/vL+dG9P7y/nQA6im70/vL+dG9P7y/nQA6im70/vL+dG9P7y/nQA6im70/vL+dG9P7y/n
-QA6im70/vL+dG9P7y/nQA6im70/vL+dG9P7y/nQA6im70/vL+dG9P7y/nQA6im70/vL+dG9P7y/n
-QBTopdvuPzFG33H5igBKKXb7j8xRt9x+YoASil2+4/MUbfcfmKAEopdvuPzFG33H5igBKKXb7j8x
-Rt9x+YoASil2+4/MUbfcfmKAEopdvuPzFG33H5igBKKXb7j8xRt9x+YoASil2+4/MUbfcfmKAEop
-dvuPzFG33H5igBKKXb7j8xRt9x+YoASil2+4/MUbfcfmKAEopdvuPzFG33H5igC7RRRQAUUUUAFF
-FFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//Z
-			</helperscreenshot>
-		</mouseitem>
+		</explicitdelayitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="acae2484-74e5-49b5-a680-eba588d0325c"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="X, Control"
@@ -327,6 +193,54 @@ FFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//Z
 			<bindings>
 			</bindings>
 		</keyitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="acae2484-74e5-49b5-a680-eba588d0325c"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="965e5398-b3e0-424c-b00b-15fd511856d3">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f3d7eeca-cb56-4d62-a2bd-1d8467a0d8bf"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colLsk_datum Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -344,15 +258,48 @@ FFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//Z
 			<bindings>
 			</bindings>
 			<info
-			id="040c96c5-3f28-4435-b912-42bd799d8750"
+			id="8b36b866-61e3-4994-be4c-d576fc872794"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colLsk_datum Row 1']
+					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colRea_bez Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="acae2484-74e5-49b5-a680-eba588d0325c"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="V, Control"
@@ -368,6 +315,59 @@ FFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//Z
 			<bindings>
 			</bindings>
 		</keyitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="61b61fc4-710f-4a04-9820-bc104548b333"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a9a9003d-4af6-407f-8202-6c8a3a8c953e">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Tagesdatum">
+				</binding>
+			</bindings>
+			<info
+			id="040c96c5-3f28-4435-b912-42bd799d8750"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -8468,7 +8468,7 @@ MnmR/9k=
 		optional="False"
 		searchpropertyid="ee270ad2-ed8d-4c18-a3e1-5100c4c9e8e7"
 		waitaction="Exists"
-		waittimeout="60000ms">
+		waittimeout="120000ms">
 			<comment>
 			</comment>
 			<bindings>
@@ -13163,6 +13163,15 @@ ijFFFABijFFFABijFFFABijFFFABijFFFABijFFFABijFFFABijFFFABijFFFABijFFFABijFFFA
 BijFFFABijFFFABijFFFABijFFFABijFFFABijFFFAC4ooooAWiiigD/2Q==
 			</helperscreenshot>
 		</mouseitem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"

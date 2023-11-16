@@ -45,6 +45,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="5592cf40-dcaf-4412-8b52-a0abef6b6730"
 			name="Lieferschein_laden_2"
 			ref="61239865-c532-4ae6-88d0-e6a0e8cd0e8e"
@@ -86,6 +87,20 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<testmodule
+			id="b8458c17-e40c-44a1-82a8-078942667cd0"
+			name="Lieferschein_laden_2_NEU"
+			ref="85795494-2f2a-4567-8a4e-6d61140c106e"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
+					variableid="dd1d7e59-98b1-40a3-93ab-af76e0dab231"
+					variablename="Tagesdatum">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="bd905e4c-6b2a-46ad-8d85-79beb8df063c"
 			name="Rechnung_drucken"
@@ -133,16 +148,22 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Auftragsnummer"
+					dataname="Tagesdatum"
 					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
-					variableid="3f603517-740d-47df-bc01-ff6361981830"
-					variablename="Auftragsnummer">
+					variableid="fa008b4f-9528-48ae-9f6a-d3fea2e8d07e"
+					variablename="Tagesdatum">
 					</var>
 					<var
 					dataname="Rechnungsnummer"
 					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
 					variableid="8107eb30-6054-42ba-8953-5373fde332b2"
 					variablename="Rechnungsnummer">
+					</var>
+					<var
+					dataname="Auftragsnummer"
+					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
+					variableid="3f603517-740d-47df-bc01-ff6361981830"
+					variablename="Auftragsnummer">
 					</var>
 				</databinding>
 			</testmodule>
@@ -161,7 +182,7 @@
 					</param>
 					<param
 					name="Programm"
-					value="V_FADR /Aufrufart=FAK">
+					value="V_FADR Aufrufart FAK">
 					</param>
 					<param
 					name="Auftragsnummer"
@@ -237,6 +258,10 @@
 						<testmodule
 						id="5592cf40-dcaf-4412-8b52-a0abef6b6730"
 						name="Lieferschein_laden_2">
+						</testmodule>
+						<testmodule
+						id="b8458c17-e40c-44a1-82a8-078942667cd0"
+						name="Lieferschein_laden_2_NEU">
 						</testmodule>
 						<testmodule
 						id="55052a9c-124d-4a4e-84da-3193d679ce9b"

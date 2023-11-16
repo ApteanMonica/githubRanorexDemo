@@ -92,14 +92,14 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.RbLadenDruck' at Center.", repo.TblFadr.RbLadenDruckInfo, new RecordItemIndex(0));
             repo.TblFadr.RbLadenDruck.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Column0' at Center.", repo.TblFadr.Column0Info, new RecordItemIndex(1));
-            repo.TblFadr.Column0.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.untere_Tabelle.Column0_mit_Auftragsnummer' at Center.", repo.TblFadr.untere_Tabelle.Column0_mit_AuftragsnummerInfo, new RecordItemIndex(1));
+            repo.TblFadr.untere_Tabelle.Column0_mit_Auftragsnummer.Click();
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbShareDrucken' at Center.", repo.TblFadr.PbShareDruckenInfo, new RecordItemIndex(2));
             repo.TblFadr.PbShareDrucken.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDrucken'", repo.DlgDrucken.SelfInfo, new ActionTimeout(120000), new RecordItemIndex(3));
-            repo.DlgDrucken.SelfInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDrucken.TitleBar100DruckeRechnung'", repo.DlgDrucken.TitleBar100DruckeRechnungInfo, new ActionTimeout(120000), new RecordItemIndex(3));
+            repo.DlgDrucken.TitleBar100DruckeRechnungInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbExport' at Center.", repo.DlgDrucken.PbExportInfo, new RecordItemIndex(4));
             repo.DlgDrucken.PbExport.Click();
@@ -110,21 +110,21 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VFADR.Tabelle' at Center.", repo.VFADR.TabelleInfo, new RecordItemIndex(6));
             repo.VFADR.Tabelle.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblDrucken'", repo.TblDrucken.SelfInfo, new ActionTimeout(60000), new RecordItemIndex(7));
-            repo.TblDrucken.SelfInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblDrucken.TitleBar100Rechnung'", repo.TblDrucken.TitleBar100RechnungInfo, new ActionTimeout(120000), new RecordItemIndex(7));
+            repo.TblDrucken.TitleBar100RechnungInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'201900005\t13') on item 'TblDrucken.Row7'.", repo.TblDrucken.Row7Info, new RecordItemIndex(8));
             Validate.AttributeContains(repo.TblDrucken.Row7Info, "Text", "201900005\t13");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblDrucken'.", repo.TblDrucken.SelfInfo, new RecordItemIndex(9));
-            Keyboard.PrepareFocus(repo.TblDrucken.Self);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblDrucken.TitleBar100Rechnung'.", repo.TblDrucken.TitleBar100RechnungInfo, new RecordItemIndex(9));
+            Keyboard.PrepareFocus(repo.TblDrucken.TitleBar100Rechnung);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(10));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgDrucken'.", repo.DlgDrucken.SelfInfo, new RecordItemIndex(11));
-            Keyboard.PrepareFocus(repo.DlgDrucken.Self);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgDrucken.TitleBar100DruckeRechnung'.", repo.DlgDrucken.TitleBar100DruckeRechnungInfo, new RecordItemIndex(11));
+            Keyboard.PrepareFocus(repo.DlgDrucken.TitleBar100DruckeRechnung);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblDrucken.Schliessen' at Center.", repo.TblDrucken.SchliessenInfo, new RecordItemIndex(12));
