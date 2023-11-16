@@ -250,6 +250,9 @@
 			name="Anzeige_alle_LS_RE"
 			ref="43babad3-a262-49dc-96fb-061599882380"
 			type="Recording">
+				<description>
+					<![CDATA[Bei der Variable für Rechnung_2 habe ich den Inhalt entfernt, da dieser nicht mit den globalen Parametern übereinstimmt. In Globalen Paramentern ist der Wert 301900002 hinterlegt, im Recording der Wert 301900003]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Bestellung1"
@@ -321,16 +324,21 @@
 			VideoFps="15"
 			VideoRecordingMode="Off"
 			VideoSource="Auto"
+			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
 			id="ea75802c-4a0b-463e-8270-28601e360121"
+			includeimageschecked="False"
+			includerecordingschecked="False"
 			junitreport="False"
 			name="E_INFO_001"
+			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 		</flatlistofchildren>
 		<childhierarchy>

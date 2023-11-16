@@ -49,7 +49,7 @@ namespace E_INFO_001.Recordings
             Lieferschein1 = "301900004";
             Kunde = "200003";
             Rechnung1 = "301900005";
-            Rechnung2 = "301900003";
+            Rechnung2 = "";
             Rechnung3 = "B_EXOPS_3_1";
         }
 
