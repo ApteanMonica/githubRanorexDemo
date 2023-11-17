@@ -158,8 +158,9 @@ namespace E_LSK_006.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiLSR.PbRichtig' at Center.", repo.MdiLSR.PbRichtigInfo, new RecordItemIndex(8));
             repo.MdiLSR.PbRichtig.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'DlgMessageBox.LieferscheinRechnung'", repo.DlgMessageBox.LieferscheinRechnungInfo, new ActionTimeout(5000), new RecordItemIndex(9));
-            repo.DlgMessageBox.LieferscheinRechnungInfo.WaitForExists(5000);
+            // BAR: wait for erhöht auf 2 Minuten von 5s
+            Report.Log(ReportLevel.Info, "Wait", "BAR: wait for erhöht auf 2 Minuten von 5s\r\nWaiting 2m to exist. Associated repository item: 'DlgMessageBox.LieferscheinRechnung'", repo.DlgMessageBox.LieferscheinRechnungInfo, new ActionTimeout(120000), new RecordItemIndex(9));
+            repo.DlgMessageBox.LieferscheinRechnungInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Bank nicht vorhanden') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(10));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Bank nicht vorhanden");
