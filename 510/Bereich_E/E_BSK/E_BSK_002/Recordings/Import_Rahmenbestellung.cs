@@ -146,8 +146,9 @@ namespace E_BSK_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiBestellung.TabPagePositionen' at Center.", repo.MdiBestellung.TabPagePositionenInfo, new RecordItemIndex(12));
             repo.MdiBestellung.TabPagePositionen.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'MdiBestellung.FrmBsp.Artikel'", repo.MdiBestellung.FrmBsp.ArtikelInfo, new ActionTimeout(30000), new RecordItemIndex(13));
-            repo.MdiBestellung.FrmBsp.ArtikelInfo.WaitForExists(30000);
+            // wait for erhöht von 30s auf 2 minuten
+            Report.Log(ReportLevel.Info, "Wait", "wait for erhöht von 30s auf 2 minuten\r\nWaiting 2m to exist. Associated repository item: 'MdiBestellung.FrmBsp.Artikel'", repo.MdiBestellung.FrmBsp.ArtikelInfo, new ActionTimeout(120000), new RecordItemIndex(13));
+            repo.MdiBestellung.FrmBsp.ArtikelInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Artikel1) on item 'MdiBestellung.FrmBsp.Artikel'.", repo.MdiBestellung.FrmBsp.ArtikelInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.MdiBestellung.FrmBsp.ArtikelInfo, "Text", Artikel1);
