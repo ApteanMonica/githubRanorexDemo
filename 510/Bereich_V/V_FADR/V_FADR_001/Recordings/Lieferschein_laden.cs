@@ -41,7 +41,7 @@ namespace V_FADR_001.Recordings
         /// </summary>
         public Lieferschein_laden()
         {
-            Tagesdatum = "15.12.2023";
+            Tagesdatum = "";
         }
 
         /// <summary>
@@ -90,8 +90,8 @@ namespace V_FADR_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'RbLadenErstellen'.", repo.RbLadenErstellenInfo, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.RbLadenErstellenInfo, "Checked", "True");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'TblFadr.RbLadenErstellen'.", repo.TblFadr.RbLadenErstellenInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.TblFadr.RbLadenErstellenInfo, "Checked", "True");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='E') on item 'TblFadr.Rech_art_FlexGrid.Rechnungsart'.", repo.TblFadr.Rech_art_FlexGrid.RechnungsartInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid.RechnungsartInfo, "Text", "E");
@@ -152,12 +152,12 @@ namespace V_FADR_001.Recordings
             
             //Report.Log(ReportLevel.Info, "User", "beide Datumszeilen ohne Datum", new RecordItemIndex(19));
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+V' Press with focus on 'TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2'.", repo.TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2Info, new RecordItemIndex(20));
-            //Keyboard.PrepareFocus(repo.TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+V' Press with focus on 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow2'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow2Info, new RecordItemIndex(20));
+            //Keyboard.PrepareFocus(repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow2);
             //Keyboard.Press(System.Windows.Forms.Keys.V | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum' with focus on 'TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2'.", repo.TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2Info, new RecordItemIndex(21));
-            //repo.TblFadr.Rech_art_FlexGrid.bis_LS_DatRow2.PressKeys(Tagesdatum);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum' with focus on 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow2'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow2Info, new RecordItemIndex(21));
+            //repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow2.PressKeys(Tagesdatum);
             
             //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(22));
             //Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);

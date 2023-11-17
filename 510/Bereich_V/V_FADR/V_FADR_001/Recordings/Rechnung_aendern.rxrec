@@ -4093,6 +4093,26 @@ AU3YmMbFxnOMd/WnUUAMSCFBhIkUHBwFApdiYA2LgHOMd/WnUUARrbwqxZYYwTySFFO8uPGNi9x0
 9etOooARESNQsaqqjsowKWiigD//2Q==
 			</helperscreenshot>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="8a04dd0b-93e2-4e53-ac28-3a1ca3c69839"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="df70fd31-143b-439c-a54a-060892b851b2"
+			sourcename="RepositoryEditor">
+				<path>
+					/contextmenu[@processname='V_FADR']/menuitem[@accessiblename='Rechnung ändern']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4533,10 +4553,49 @@ UVrFKyJluf/Z
 			<bindings>
 			</bindings>
 			<info
-			id="78a9e6bc-d61f-45d1-8af8-1816b6c24a50"
+			id="ec88f3e6-f3c4-43c0-b95d-66f28fcf7595"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="8"
+				prefcap="titlebar"
+				rect="-1146,109,388,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Rechnungskopf ändern
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Rechnungskopf ändern
+					</attribute>
+				</element>
 				<path>
-					/form[@controlname='dlgRechAenderung']
+					/form[@controlname='dlgRechAenderung']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
