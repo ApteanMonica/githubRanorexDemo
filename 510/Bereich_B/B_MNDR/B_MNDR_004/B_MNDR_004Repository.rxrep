@@ -823,6 +823,17 @@ QmCC
 			<item
 			addcaps="menuitem,accessible"
 			capname="menuitem"
+			id="aece6f21-d9e8-4f9b-a4ad-aa583c6ac846"
+			name="Tabelle"
+			refimgid="4eda13a2-18bb-4ce5-8d60-effdf7bf0c1b"
+			refpath="/contextmenu[@controlname='pbExportItems']/menuitem[@accessiblename='Tabelle']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='B_MNDR']/menuitem[@accessiblename='Tabelle']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
 			id="47c66156-07a4-422c-8129-96a4450030d0"
 			name="Loeschen"
 			refimgid="5bcc5f43-9fdf-4e24-8178-f379fdcb893e"
@@ -835,23 +846,31 @@ QmCC
 			addcaps="menuitem,accessible"
 			capname="menuitem"
 			id="a1929373-69c3-4874-8812-81ac72051016"
-			name="Bildschirm"
+			name="Bildschirm_510"
 			refimgid="4ae11457-ebcc-4778-96ef-38328f2aeb56"
-			refpath="/contextmenu[@processname='B_MNDR']/menuitem[@accessiblename='Bildschirm']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/contextmenu[@processname='B_MNDR']/menuitem[@accessiblename='Bildschirm']
+				/contextmenu[@processname='B_MNDR']/cc/menuitem[@accessiblename='Bildschirm']
 			</item>
 			<item
-			addcaps="menuitem,accessible"
+			addcaps="menuitem,uiautomation,uiautomationinvoke"
 			capname="menuitem"
-			id="aece6f21-d9e8-4f9b-a4ad-aa583c6ac846"
-			name="Tabelle"
-			refimgid="4eda13a2-18bb-4ce5-8d60-effdf7bf0c1b"
-			refpath="/contextmenu[@controlname='pbExportItems']/menuitem[@accessiblename='Tabelle']"
+			id="6f4be637-48ef-4da3-9144-0b3753c6df7d"
+			name="Bildschirm_521"
+			refimgid="27106242-6174-4370-bf26-20ee8f1940ce"
 			robustPath=""
 			searchtimeout="30000ms">
-				/contextmenu[@processname='B_MNDR']/menuitem[@accessiblename='Tabelle']
+				/contextmenu[@processname='B_MNDR']/menuitem[@name='Bildschirm']
+			</item>
+			<item
+			addcaps="menuitem,uiautomation,uiautomationinvoke"
+			capname="menuitem"
+			id="2495247e-39ed-406d-8d99-b8c051a632df"
+			name="Bildschirm_521_510_text"
+			refimgid="27106242-6174-4370-bf26-20ee8f1940ce"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='B_MNDR']/menuitem[@text='Bildschirm']
 			</item>
 			<basepath>
 				/contextmenu[@processname='B_MNDR']

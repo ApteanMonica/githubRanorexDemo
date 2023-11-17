@@ -2446,9 +2446,11 @@ namespace B_MNDR_004
         [RepositoryFolder("4ecdf299-e2a9-4d06-9c02-ab03b2894be0")]
         public partial class BMNDR2AppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _loeschenInfo;
-            RepoItemInfo _bildschirmInfo;
             RepoItemInfo _tabelleInfo;
+            RepoItemInfo _loeschenInfo;
+            RepoItemInfo _bildschirm_510Info;
+            RepoItemInfo _bildschirm_521Info;
+            RepoItemInfo _bildschirm_521_510_textInfo;
 
             /// <summary>
             /// Creates a new BMNDR2  folder.
@@ -2456,9 +2458,11 @@ namespace B_MNDR_004
             public BMNDR2AppFolder(RepoGenBaseFolder parentFolder) :
                     base("BMNDR2", "/contextmenu[@processname='B_MNDR']", parentFolder, 30000, null, true, "4ecdf299-e2a9-4d06-9c02-ab03b2894be0", "")
             {
-                _loeschenInfo = new RepoItemInfo(this, "Loeschen", "menuitem[@accessiblename='Löschen']", "", 30000, null, "47c66156-07a4-422c-8129-96a4450030d0");
-                _bildschirmInfo = new RepoItemInfo(this, "Bildschirm", "menuitem[@accessiblename='Bildschirm']", "", 30000, null, "a1929373-69c3-4874-8812-81ac72051016");
                 _tabelleInfo = new RepoItemInfo(this, "Tabelle", "menuitem[@accessiblename='Tabelle']", "", 30000, null, "aece6f21-d9e8-4f9b-a4ad-aa583c6ac846");
+                _loeschenInfo = new RepoItemInfo(this, "Loeschen", "menuitem[@accessiblename='Löschen']", "", 30000, null, "47c66156-07a4-422c-8129-96a4450030d0");
+                _bildschirm_510Info = new RepoItemInfo(this, "Bildschirm_510", "cc/menuitem[@accessiblename='Bildschirm']", "", 30000, null, "a1929373-69c3-4874-8812-81ac72051016");
+                _bildschirm_521Info = new RepoItemInfo(this, "Bildschirm_521", "menuitem[@name='Bildschirm']", "", 30000, null, "6f4be637-48ef-4da3-9144-0b3753c6df7d");
+                _bildschirm_521_510_textInfo = new RepoItemInfo(this, "Bildschirm_521_510_text", "menuitem[@text='Bildschirm']", "", 30000, null, "2495247e-39ed-406d-8d99-b8c051a632df");
             }
 
             /// <summary>
@@ -2482,6 +2486,30 @@ namespace B_MNDR_004
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Tabelle item.
+            /// </summary>
+            [RepositoryItem("aece6f21-d9e8-4f9b-a4ad-aa583c6ac846")]
+            public virtual Ranorex.MenuItem Tabelle
+            {
+                get
+                {
+                    return _tabelleInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Tabelle item info.
+            /// </summary>
+            [RepositoryItemInfo("aece6f21-d9e8-4f9b-a4ad-aa583c6ac846")]
+            public virtual RepoItemInfo TabelleInfo
+            {
+                get
+                {
+                    return _tabelleInfo;
                 }
             }
 
@@ -2510,50 +2538,74 @@ namespace B_MNDR_004
             }
 
             /// <summary>
-            /// The Bildschirm item.
+            /// The Bildschirm_510 item.
             /// </summary>
             [RepositoryItem("a1929373-69c3-4874-8812-81ac72051016")]
-            public virtual Ranorex.MenuItem Bildschirm
+            public virtual Ranorex.MenuItem Bildschirm_510
             {
                 get
                 {
-                    return _bildschirmInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                    return _bildschirm_510Info.CreateAdapter<Ranorex.MenuItem>(true);
                 }
             }
 
             /// <summary>
-            /// The Bildschirm item info.
+            /// The Bildschirm_510 item info.
             /// </summary>
             [RepositoryItemInfo("a1929373-69c3-4874-8812-81ac72051016")]
-            public virtual RepoItemInfo BildschirmInfo
+            public virtual RepoItemInfo Bildschirm_510Info
             {
                 get
                 {
-                    return _bildschirmInfo;
+                    return _bildschirm_510Info;
                 }
             }
 
             /// <summary>
-            /// The Tabelle item.
+            /// The Bildschirm_521 item.
             /// </summary>
-            [RepositoryItem("aece6f21-d9e8-4f9b-a4ad-aa583c6ac846")]
-            public virtual Ranorex.MenuItem Tabelle
+            [RepositoryItem("6f4be637-48ef-4da3-9144-0b3753c6df7d")]
+            public virtual Ranorex.MenuItem Bildschirm_521
             {
                 get
                 {
-                    return _tabelleInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                    return _bildschirm_521Info.CreateAdapter<Ranorex.MenuItem>(true);
                 }
             }
 
             /// <summary>
-            /// The Tabelle item info.
+            /// The Bildschirm_521 item info.
             /// </summary>
-            [RepositoryItemInfo("aece6f21-d9e8-4f9b-a4ad-aa583c6ac846")]
-            public virtual RepoItemInfo TabelleInfo
+            [RepositoryItemInfo("6f4be637-48ef-4da3-9144-0b3753c6df7d")]
+            public virtual RepoItemInfo Bildschirm_521Info
             {
                 get
                 {
-                    return _tabelleInfo;
+                    return _bildschirm_521Info;
+                }
+            }
+
+            /// <summary>
+            /// The Bildschirm_521_510_text item.
+            /// </summary>
+            [RepositoryItem("2495247e-39ed-406d-8d99-b8c051a632df")]
+            public virtual Ranorex.MenuItem Bildschirm_521_510_text
+            {
+                get
+                {
+                    return _bildschirm_521_510_textInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Bildschirm_521_510_text item info.
+            /// </summary>
+            [RepositoryItemInfo("2495247e-39ed-406d-8d99-b8c051a632df")]
+            public virtual RepoItemInfo Bildschirm_521_510_textInfo
+            {
+                get
+                {
+                    return _bildschirm_521_510_textInfo;
                 }
             }
         }
