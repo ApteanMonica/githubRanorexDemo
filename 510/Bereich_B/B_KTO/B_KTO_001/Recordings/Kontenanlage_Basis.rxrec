@@ -4029,7 +4029,7 @@ mode="Global">
 		optional="False"
 		searchpropertyid="e5002de7-0107-4e58-8b30-c43b26aaf4da"
 		waitaction="Exists"
-		waittimeout="60000ms">
+		waittimeout="120000ms">
 			<comment>
 			</comment>
 			<bindings>
@@ -4038,7 +4038,7 @@ mode="Global">
 			id="0894121b-4129-4a6c-844d-987ca981a22d"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='frmKto']/container[@controlname='ClientArea']/?/?/text[@accessiblename='Konto']
+					/form[@controlname='frmKto']/container[@controlname='ClientArea']/text[@controlname='dfKto_nr']/text[@accessiblename='Konto']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -4064,12 +4064,21 @@ mode="Global">
 			id="0894121b-4129-4a6c-844d-987ca981a22d"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='frmKto']/container[@controlname='ClientArea']/?/?/text[@accessiblename='Konto']
+					/form[@controlname='frmKto']/container[@controlname='ClientArea']/text[@controlname='dfKto_nr']/text[@accessiblename='Konto']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="Tab"

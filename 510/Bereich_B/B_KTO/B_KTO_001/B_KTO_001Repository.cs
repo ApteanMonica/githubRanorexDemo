@@ -98,6 +98,7 @@ namespace B_KTO_001
         {
             B_KTO_001RepositoryFolders.Tab_AllgemeinFolder _tab_allgemein;
             RepoItemInfo _titlebar100sachkontenverwaltenInfo;
+            RepoItemInfo _text_konto_suchmaskeInfo;
             RepoItemInfo _pbdataaccesssaveInfo;
             RepoItemInfo _pbnewInfo;
             RepoItemInfo _rbaktivInfo;
@@ -118,6 +119,7 @@ namespace B_KTO_001
             {
                 _tab_allgemein = new B_KTO_001RepositoryFolders.Tab_AllgemeinFolder(this);
                 _titlebar100sachkontenverwaltenInfo = new RepoItemInfo(this, "TitleBar100SachkontenVerwalten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "87af4cac-779e-4130-addf-5d05faf0e6d1");
+                _text_konto_suchmaskeInfo = new RepoItemInfo(this, "Text_Konto_Suchmaske", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/text[@controlname='dfSearchExpression']/text[@accessiblerole='Text']", "", 30000, null, "e53252a6-bcb0-41c5-b94a-97cdfb31fd6d");
                 _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "7d8930c2-8c91-4cee-a935-7b794437b07f");
                 _pbnewInfo = new RepoItemInfo(this, "PbNew", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup2']/button[@controlname='pbNew']", "", 30000, null, "8cb95032-ac82-44cf-bf8b-3c6ad6212bc8");
                 _rbaktivInfo = new RepoItemInfo(this, "RbAktiv", "container[@controlname='ClientArea']/container[@controlname='groupBox1']/radiobutton[@controlname='rbAktiv']", "", 30000, null, "1de6fd7f-3451-42cd-ac4d-7efbf6d1a005");
@@ -176,6 +178,30 @@ namespace B_KTO_001
                 get
                 {
                     return _titlebar100sachkontenverwaltenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text_Konto_Suchmaske item.
+            /// </summary>
+            [RepositoryItem("e53252a6-bcb0-41c5-b94a-97cdfb31fd6d")]
+            public virtual Ranorex.Text Text_Konto_Suchmaske
+            {
+                get
+                {
+                    return _text_konto_suchmaskeInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text_Konto_Suchmaske item info.
+            /// </summary>
+            [RepositoryItemInfo("e53252a6-bcb0-41c5-b94a-97cdfb31fd6d")]
+            public virtual RepoItemInfo Text_Konto_SuchmaskeInfo
+            {
+                get
+                {
+                    return _text_konto_suchmaskeInfo;
                 }
             }
 
