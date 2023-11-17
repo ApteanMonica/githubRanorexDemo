@@ -82,8 +82,8 @@ namespace B_MNDR_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorschlagErstellen.PbOptionenStart' at Center.", repo.FrmVorschlagErstellen.PbOptionenStartInfo, new RecordItemIndex(0));
             repo.FrmVorschlagErstellen.PbOptionenStart.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgMessageBox'.", repo.DlgMessageBox.SelfInfo, new RecordItemIndex(1));
-            Validate.Exists(repo.DlgMessageBox.SelfInfo);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Mahnvorschlag erstellt !') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Mahnvorschlag erstellt !");

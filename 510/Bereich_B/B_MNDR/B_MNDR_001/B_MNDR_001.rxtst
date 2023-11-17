@@ -12,12 +12,6 @@
 				</description>
 				<databinding>
 					<var
-					dataname="Faelligkeitsdatum"
-					datasourceid="edb52a1b-07ca-4d1a-84f8-31c467c1ca48"
-					variableid="392c2002-0ffb-49af-82e9-c307a39ffbe3"
-					variablename="Faelligkeitsdatum">
-					</var>
-					<var
 					dataname="Mahndatum"
 					datasourceid="edb52a1b-07ca-4d1a-84f8-31c467c1ca48"
 					variableid="436afd5e-f5a2-4858-b151-66080c323ac1"
@@ -28,6 +22,18 @@
 					datasourceid="edb52a1b-07ca-4d1a-84f8-31c467c1ca48"
 					variableid="467c79ce-00a5-4f50-b0a6-bffc9da97ffb"
 					variablename="Zahlungen_bis">
+					</var>
+					<var
+					dataname="Posten_letzte_Mahnung_vor"
+					datasourceid="edb52a1b-07ca-4d1a-84f8-31c467c1ca48"
+					variableid="4f269df9-fd57-484a-88ac-1dcf387350f7"
+					variablename="Posten_letzte_Mahnung_vor">
+					</var>
+					<var
+					dataname="Faelligkeitsdatum"
+					datasourceid="edb52a1b-07ca-4d1a-84f8-31c467c1ca48"
+					variableid="392c2002-0ffb-49af-82e9-c307a39ffbe3"
+					variablename="Faelligkeitsdatum">
 					</var>
 					<var
 					dataname="Beschreibung"
@@ -69,10 +75,62 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="434c4139-262b-42b6-b20d-9c2588afcc41"
+			name="Uebepruefung_Daten_Selektion"
+			ref="e89b1307-8082-4fe6-98a1-335891e24c3c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Kunde_1"
+					datasourceid="edb52a1b-07ca-4d1a-84f8-31c467c1ca48"
+					variableid="95e36d53-26bd-47a2-ac6f-e242a36c093c"
+					variablename="Kunde_1">
+					</var>
+					<var
+					dataname="Kunde_2"
+					datasourceid="edb52a1b-07ca-4d1a-84f8-31c467c1ca48"
+					variableid="ebbb2719-418a-40a2-8e27-30e9a43027ef"
+					variablename="Kunde_2">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="45ea5c90-3097-4507-9777-cd9f330c2d72"
 			name="setup">
 			</setup>
+			<testmodule
+			id="55f5d767-891c-4eac-8a07-0651a7a342a9"
+			name="Ueberpruefung_Daten_Faelligkeit"
+			ref="2eeddfaa-6110-4c20-ba30-70de98a764ed"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Faelligkeitsdatum"
+					datasourceid="edb52a1b-07ca-4d1a-84f8-31c467c1ca48"
+					variableid="87436b7d-e524-4184-918e-116629b9e8d9"
+					variablename="Faelligkeitsdatum">
+					</var>
+					<var
+					dataname="Mahndatum"
+					datasourceid="edb52a1b-07ca-4d1a-84f8-31c467c1ca48"
+					variableid="207eb433-3461-4906-bc7c-cf8c18bbc3eb"
+					variablename="Mahndatum">
+					</var>
+					<var
+					dataname="Zahlungen_bis"
+					datasourceid="edb52a1b-07ca-4d1a-84f8-31c467c1ca48"
+					variableid="4e1e0718-00fa-46c7-b6ff-56c8eaa21f76"
+					variablename="Zahlungen_bis">
+					</var>
+					<var
+					dataname="Posten_letzte_Mahnung_vor"
+					datasourceid="edb52a1b-07ca-4d1a-84f8-31c467c1ca48"
+					variableid="239476ea-7d8c-412e-a523-6d12f9975adf"
+					variablename="Posten_letzte_Mahnung_vor">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="5a513fb2-7777-48a5-8c7d-97241107406b"
 			name="Tagesdatum_ermitteln"
@@ -208,6 +266,10 @@
 					name="Zahlungen_bis"
 					value="03.03.2021">
 					</param>
+					<param
+					name="Posten_letzte_Mahnung_vor"
+					value="26.02.2021">
+					</param>
 				</parameters>
 			</testcase>
 			<testsuite
@@ -300,6 +362,14 @@
 						<testmodule
 						id="68a7a49a-4481-4643-9153-96a35612a79a"
 						name="Register_Selektion">
+						</testmodule>
+						<testmodule
+						id="434c4139-262b-42b6-b20d-9c2588afcc41"
+						name="Uebepruefung_Daten_Selektion">
+						</testmodule>
+						<testmodule
+						id="55f5d767-891c-4eac-8a07-0651a7a342a9"
+						name="Ueberpruefung_Daten_Faelligkeit">
 						</testmodule>
 						<testmodule
 						id="bdaf8a0a-eefd-4ab9-b1c8-ced9bb3a7da5"

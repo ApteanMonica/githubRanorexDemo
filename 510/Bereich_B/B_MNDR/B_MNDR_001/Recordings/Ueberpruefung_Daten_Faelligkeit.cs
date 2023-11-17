@@ -44,6 +44,7 @@ namespace B_MNDR_001.Recordings
             Mahndatum = "04.03.2021";
             Faelligkeitsdatum = "03.03.2021";
             Zahlungen_bis = "03.03.2021";
+            Posten_letzte_Mahnung_vor = "26.02.2021";
         }
 
         /// <summary>
@@ -92,6 +93,18 @@ namespace B_MNDR_001.Recordings
             set { _Zahlungen_bis = value; }
         }
 
+        string _Posten_letzte_Mahnung_vor;
+
+        /// <summary>
+        /// Gets or sets the value of variable Posten_letzte_Mahnung_vor.
+        /// </summary>
+        [TestVariable("239476ea-7d8c-412e-a523-6d12f9975adf")]
+        public string Posten_letzte_Mahnung_vor
+        {
+            get { return _Posten_letzte_Mahnung_vor; }
+            set { _Posten_letzte_Mahnung_vor = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -121,47 +134,41 @@ namespace B_MNDR_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorschlagErstellen.TabPageFaelligkeit' at Center.", repo.FrmVorschlagErstellen.TabPageFaelligkeitInfo, new RecordItemIndex(0));
             repo.FrmVorschlagErstellen.TabPageFaelligkeit.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmVorschlagErstellen.DatumDerMahnung'", repo.FrmVorschlagErstellen.DatumDerMahnungInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmVorschlagErstellen.DatumDerMahnungInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmVorschlagErstellen.Register_Faelligkeit.DatumDerMahnung'", repo.FrmVorschlagErstellen.Register_Faelligkeit.DatumDerMahnungInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FrmVorschlagErstellen.Register_Faelligkeit.DatumDerMahnungInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Mahndatum) on item 'FrmVorschlagErstellen.DatumDerMahnung'.", repo.FrmVorschlagErstellen.DatumDerMahnungInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.DatumDerMahnungInfo, "Text", Mahndatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Mahndatum) on item 'FrmVorschlagErstellen.Register_Faelligkeit.DatumDerMahnung'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.DatumDerMahnungInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Faelligkeit.DatumDerMahnungInfo, "Text", Mahndatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Faelligkeitsdatum) on item 'FrmVorschlagErstellen.PostenFaelligBis'.", repo.FrmVorschlagErstellen.PostenFaelligBisInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.PostenFaelligBisInfo, "Text", Faelligkeitsdatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Faelligkeitsdatum) on item 'FrmVorschlagErstellen.Register_Faelligkeit.PostenFaelligBis'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.PostenFaelligBisInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Faelligkeit.PostenFaelligBisInfo, "Text", Faelligkeitsdatum);
             
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='26.02.2021') on item 'FrmVorschlagErstellen.PostenMitLetzterMahnungVor'.", repo.FrmVorschlagErstellen.PostenMitLetzterMahnungVorInfo, new RecordItemIndex(4));
-                Validate.AttributeEqual(repo.FrmVorschlagErstellen.PostenMitLetzterMahnungVorInfo, "Text", "26.02.2021", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.Always});
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Posten_letzte_Mahnung_vor) on item 'FrmVorschlagErstellen.Register_Faelligkeit.PostenMitLetzterMahnungVor'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.PostenMitLetzterMahnungVorInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Faelligkeit.PostenMitLetzterMahnungVorInfo, "Text", Posten_letzte_Mahnung_vor, null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.Always});
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Zahlungen_bis) on item 'FrmVorschlagErstellen.ZahlungenBeruecksichtigtBis'.", repo.FrmVorschlagErstellen.ZahlungenBeruecksichtigtBisInfo, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.ZahlungenBeruecksichtigtBisInfo, "Text", Zahlungen_bis);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Zahlungen_bis) on item 'FrmVorschlagErstellen.Register_Faelligkeit.ZahlungenBeruecksichtigtBis'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.ZahlungenBeruecksichtigtBisInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Faelligkeit.ZahlungenBeruecksichtigtBisInfo, "Text", Zahlungen_bis);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='8') on item 'FrmVorschlagErstellen.DfFristtage'.", repo.FrmVorschlagErstellen.DfFristtageInfo, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.DfFristtageInfo, "Text", "8");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='8') on item 'FrmVorschlagErstellen.Register_Faelligkeit.DfFristtage_letzte_Zahlungsfrist'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.DfFristtage_letzte_ZahlungsfristInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Faelligkeit.DfFristtage_letzte_ZahlungsfristInfo, "Text", "8");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.DfMahnsperre'.", repo.FrmVorschlagErstellen.DfMahnsperreInfo, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.DfMahnsperreInfo, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.Register_Faelligkeit.DfMahnsperre_Mahnkennz'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.DfMahnsperre_MahnkennzInfo, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Faelligkeit.DfMahnsperre_MahnkennzInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmVorschlagErstellen.CheckBoxCbG'.", repo.FrmVorschlagErstellen.CheckBoxCbGInfo, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.CheckBoxCbGInfo, "Checked", "False");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmVorschlagErstellen.Register_Faelligkeit.CheckBoxCbG'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.CheckBoxCbGInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Faelligkeit.CheckBoxCbGInfo, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmVorschlagErstellen.Vorauszahlungen'.", repo.FrmVorschlagErstellen.VorauszahlungenInfo, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.VorauszahlungenInfo, "Checked", "False");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmVorschlagErstellen.Register_Faelligkeit.Vorauszahlungen'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.VorauszahlungenInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Faelligkeit.VorauszahlungenInfo, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmVorschlagErstellen.CbBankeinzug'.", repo.FrmVorschlagErstellen.CbBankeinzugInfo, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.CbBankeinzugInfo, "Checked", "False");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmVorschlagErstellen.Register_Faelligkeit.CbBankeinzug'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.CbBankeinzugInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Faelligkeit.CbBankeinzugInfo, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmVorschlagErstellen.CbKeineNegSum'.", repo.FrmVorschlagErstellen.CbKeineNegSumInfo, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.CbKeineNegSumInfo, "Checked", "False");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmVorschlagErstellen.Register_Faelligkeit.CbKeineNegSum'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.CbKeineNegSumInfo, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Faelligkeit.CbKeineNegSumInfo, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmVorschlagErstellen.CbZlvs'.", repo.FrmVorschlagErstellen.CbZlvsInfo, new RecordItemIndex(12));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.CbZlvsInfo, "Checked", "False");
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab up}{LShiftKey up}{RShiftKey up}{LControlKey up}{RControlKey up}{Tab up}{LMenu up}{Tab up}{LControlKey up}{RMenu up}{LControlKey up}{RShiftKey up}{Tab up}{Tab up}{LShiftKey up}{LControlKey up}{RMenu up}{RControlKey up}{Tab up}{LMenu up}{Tab up}{LControlKey up}{Tab up}{Tab up}{LShiftKey up}{RShiftKey up}{LControlKey up}{RControlKey up}{Tab up}{LMenu up}{Tab up}{LControlKey up}' with focus on 'FrmVorschlagErstellen'.", repo.FrmVorschlagErstellen.SelfInfo, new RecordItemIndex(13));
-            //repo.FrmVorschlagErstellen.Self.EnsureVisible();
-            //Keyboard.Press("{Tab up}{LShiftKey up}{RShiftKey up}{LControlKey up}{RControlKey up}{Tab up}{LMenu up}{Tab up}{LControlKey up}{RMenu up}{LControlKey up}{RShiftKey up}{Tab up}{Tab up}{LShiftKey up}{LControlKey up}{RMenu up}{RControlKey up}{Tab up}{LMenu up}{Tab up}{LControlKey up}{Tab up}{Tab up}{LShiftKey up}{RShiftKey up}{LControlKey up}{RControlKey up}{Tab up}{LMenu up}{Tab up}{LControlKey up}");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmVorschlagErstellen.Register_Faelligkeit.CbZlvs'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.CbZlvsInfo, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Faelligkeit.CbZlvsInfo, "Checked", "False");
             
         }
 

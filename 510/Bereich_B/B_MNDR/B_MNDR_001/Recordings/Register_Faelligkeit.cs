@@ -45,6 +45,7 @@ namespace B_MNDR_001.Recordings
             Faelligkeitsdatum = "03.03.2021";
             Zahlungen_bis = "03.03.2021";
             Mahndatum = "04.03.2021";
+            Posten_letzte_Mahnung_vor = "26.02.2021";
         }
 
         /// <summary>
@@ -93,6 +94,18 @@ namespace B_MNDR_001.Recordings
             set { _Mahndatum = value; }
         }
 
+        string _Posten_letzte_Mahnung_vor;
+
+        /// <summary>
+        /// Gets or sets the value of variable Posten_letzte_Mahnung_vor.
+        /// </summary>
+        [TestVariable("4f269df9-fd57-484a-88ac-1dcf387350f7")]
+        public string Posten_letzte_Mahnung_vor
+        {
+            get { return _Posten_letzte_Mahnung_vor; }
+            set { _Posten_letzte_Mahnung_vor = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable Beschreibung.
         /// </summary>
@@ -129,48 +142,48 @@ namespace B_MNDR_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmVorschlagErstellen.DatumDerMahnung' at Center.", repo.FrmVorschlagErstellen.DatumDerMahnungInfo, new RecordItemIndex(0));
-            repo.FrmVorschlagErstellen.DatumDerMahnung.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmVorschlagErstellen.Register_Faelligkeit.DatumDerMahnung' at Center.", repo.FrmVorschlagErstellen.Register_Faelligkeit.DatumDerMahnungInfo, new RecordItemIndex(0));
+            repo.FrmVorschlagErstellen.Register_Faelligkeit.DatumDerMahnung.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}' with focus on 'FrmVorschlagErstellen.DatumDerMahnung'.", repo.FrmVorschlagErstellen.DatumDerMahnungInfo, new RecordItemIndex(1));
-            repo.FrmVorschlagErstellen.DatumDerMahnung.PressKeys("{Back}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}' with focus on 'FrmVorschlagErstellen.Register_Faelligkeit.DatumDerMahnung'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.DatumDerMahnungInfo, new RecordItemIndex(1));
+            repo.FrmVorschlagErstellen.Register_Faelligkeit.DatumDerMahnung.PressKeys("{Back}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Mahndatum' with focus on 'FrmVorschlagErstellen.DatumDerMahnung'.", repo.FrmVorschlagErstellen.DatumDerMahnungInfo, new RecordItemIndex(2));
-            repo.FrmVorschlagErstellen.DatumDerMahnung.PressKeys(Mahndatum);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Mahndatum' with focus on 'FrmVorschlagErstellen.Register_Faelligkeit.DatumDerMahnung'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.DatumDerMahnungInfo, new RecordItemIndex(2));
+            repo.FrmVorschlagErstellen.Register_Faelligkeit.DatumDerMahnung.PressKeys(Mahndatum);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmVorschlagErstellen.DatumDerMahnung'.", repo.FrmVorschlagErstellen.DatumDerMahnungInfo, new RecordItemIndex(3));
-            repo.FrmVorschlagErstellen.DatumDerMahnung.PressKeys("{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmVorschlagErstellen.Register_Faelligkeit.DatumDerMahnung'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.DatumDerMahnungInfo, new RecordItemIndex(3));
+            repo.FrmVorschlagErstellen.Register_Faelligkeit.DatumDerMahnung.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Faelligkeitsdatum' with focus on 'FrmVorschlagErstellen.PostenFaelligBis'.", repo.FrmVorschlagErstellen.PostenFaelligBisInfo, new RecordItemIndex(4));
-            repo.FrmVorschlagErstellen.PostenFaelligBis.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Faelligkeitsdatum' with focus on 'FrmVorschlagErstellen.Register_Faelligkeit.PostenFaelligBis'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.PostenFaelligBisInfo, new RecordItemIndex(4));
+            repo.FrmVorschlagErstellen.Register_Faelligkeit.PostenFaelligBis.EnsureVisible();
             Keyboard.Press(Faelligkeitsdatum);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmVorschlagErstellen.PostenFaelligBis'.", repo.FrmVorschlagErstellen.PostenFaelligBisInfo, new RecordItemIndex(5));
-            repo.FrmVorschlagErstellen.PostenFaelligBis.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmVorschlagErstellen.Register_Faelligkeit.PostenFaelligBis'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.PostenFaelligBisInfo, new RecordItemIndex(5));
+            repo.FrmVorschlagErstellen.Register_Faelligkeit.PostenFaelligBis.EnsureVisible();
             Keyboard.Press("{Tab}");
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text='26.02.2021') on item 'FrmVorschlagErstellen.PostenMitLetzterMahnungVor'.", repo.FrmVorschlagErstellen.PostenMitLetzterMahnungVorInfo, new RecordItemIndex(6));
-                Validate.AttributeEqual(repo.FrmVorschlagErstellen.PostenMitLetzterMahnungVorInfo, "Text", "26.02.2021", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.Always});
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Text=$Posten_letzte_Mahnung_vor) on item 'FrmVorschlagErstellen.Register_Faelligkeit.PostenMitLetzterMahnungVor'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.PostenMitLetzterMahnungVorInfo, new RecordItemIndex(6));
+                Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Faelligkeit.PostenMitLetzterMahnungVorInfo, "Text", Posten_letzte_Mahnung_vor, null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.Always});
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmVorschlagErstellen.ZahlungenBeruecksichtigtBis' at Center.", repo.FrmVorschlagErstellen.ZahlungenBeruecksichtigtBisInfo, new RecordItemIndex(7));
-            repo.FrmVorschlagErstellen.ZahlungenBeruecksichtigtBis.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmVorschlagErstellen.Register_Faelligkeit.ZahlungenBeruecksichtigtBis' at Center.", repo.FrmVorschlagErstellen.Register_Faelligkeit.ZahlungenBeruecksichtigtBisInfo, new RecordItemIndex(7));
+            repo.FrmVorschlagErstellen.Register_Faelligkeit.ZahlungenBeruecksichtigtBis.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}' with focus on 'FrmVorschlagErstellen.ZahlungenBeruecksichtigtBis'.", repo.FrmVorschlagErstellen.ZahlungenBeruecksichtigtBisInfo, new RecordItemIndex(8));
-            repo.FrmVorschlagErstellen.ZahlungenBeruecksichtigtBis.PressKeys("{Back}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}' with focus on 'FrmVorschlagErstellen.Register_Faelligkeit.ZahlungenBeruecksichtigtBis'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.ZahlungenBeruecksichtigtBisInfo, new RecordItemIndex(8));
+            repo.FrmVorschlagErstellen.Register_Faelligkeit.ZahlungenBeruecksichtigtBis.PressKeys("{Back}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Zahlungen_bis' with focus on 'FrmVorschlagErstellen.ZahlungenBeruecksichtigtBis'.", repo.FrmVorschlagErstellen.ZahlungenBeruecksichtigtBisInfo, new RecordItemIndex(9));
-            repo.FrmVorschlagErstellen.ZahlungenBeruecksichtigtBis.PressKeys(Zahlungen_bis);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Zahlungen_bis' with focus on 'FrmVorschlagErstellen.Register_Faelligkeit.ZahlungenBeruecksichtigtBis'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.ZahlungenBeruecksichtigtBisInfo, new RecordItemIndex(9));
+            repo.FrmVorschlagErstellen.Register_Faelligkeit.ZahlungenBeruecksichtigtBis.PressKeys(Zahlungen_bis);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmVorschlagErstellen.ZahlungenBeruecksichtigtBis'.", repo.FrmVorschlagErstellen.ZahlungenBeruecksichtigtBisInfo, new RecordItemIndex(10));
-            repo.FrmVorschlagErstellen.ZahlungenBeruecksichtigtBis.PressKeys("{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmVorschlagErstellen.Register_Faelligkeit.ZahlungenBeruecksichtigtBis'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.ZahlungenBeruecksichtigtBisInfo, new RecordItemIndex(10));
+            repo.FrmVorschlagErstellen.Register_Faelligkeit.ZahlungenBeruecksichtigtBis.PressKeys("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Beschreibung' with focus on 'FrmVorschlagErstellen.Beschreibung'.", repo.FrmVorschlagErstellen.BeschreibungInfo, new RecordItemIndex(11));
-            repo.FrmVorschlagErstellen.Beschreibung.PressKeys(Beschreibung);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Beschreibung' with focus on 'FrmVorschlagErstellen.Register_Faelligkeit.Beschreibung'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.BeschreibungInfo, new RecordItemIndex(11));
+            repo.FrmVorschlagErstellen.Register_Faelligkeit.Beschreibung.PressKeys(Beschreibung);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmVorschlagErstellen.Beschreibung'.", repo.FrmVorschlagErstellen.BeschreibungInfo, new RecordItemIndex(12));
-            repo.FrmVorschlagErstellen.Beschreibung.PressKeys("{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmVorschlagErstellen.Register_Faelligkeit.Beschreibung'.", repo.FrmVorschlagErstellen.Register_Faelligkeit.BeschreibungInfo, new RecordItemIndex(12));
+            repo.FrmVorschlagErstellen.Register_Faelligkeit.Beschreibung.PressKeys("{Tab}");
             
         }
 

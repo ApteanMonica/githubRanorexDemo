@@ -105,47 +105,41 @@ namespace B_MNDR_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorschlagErstellen.Selektion' at Center.", repo.FrmVorschlagErstellen.SelektionInfo, new RecordItemIndex(0));
-            repo.FrmVorschlagErstellen.Selektion.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kunde_1) on item 'FrmVorschlagErstellen.Register_Selektion.KontoNrVon'.", repo.FrmVorschlagErstellen.Register_Selektion.KontoNrVonInfo, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Selektion.KontoNrVonInfo, "Text", Kunde_1);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmVorschlagErstellen.DfKlktV'", repo.FrmVorschlagErstellen.DfKlktVInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmVorschlagErstellen.DfKlktVInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kunde_2) on item 'FrmVorschlagErstellen.Register_Selektion.TextBis_Konto_bis'.", repo.FrmVorschlagErstellen.Register_Selektion.TextBis_Konto_bisInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Selektion.TextBis_Konto_bisInfo, "Text", Kunde_2);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kunde_1) on item 'FrmVorschlagErstellen.DfKlktV'.", repo.FrmVorschlagErstellen.DfKlktVInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.DfKlktVInfo, "Text", Kunde_1);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.Register_Selektion.DfLand1'.", repo.FrmVorschlagErstellen.Register_Selektion.DfLand1Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Selektion.DfLand1Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kunde_2) on item 'FrmVorschlagErstellen.TextBis'.", repo.FrmVorschlagErstellen.TextBisInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.TextBisInfo, "Text", Kunde_2);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.Register_Selektion.DfLand2'.", repo.FrmVorschlagErstellen.Register_Selektion.DfLand2Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Selektion.DfLand2Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.DfLand1'.", repo.FrmVorschlagErstellen.DfLand1Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.DfLand1Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.Register_Selektion.DfAdga'.", repo.FrmVorschlagErstellen.Register_Selektion.DfAdgaInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Selektion.DfAdgaInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.DfLand2'.", repo.FrmVorschlagErstellen.DfLand2Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.DfLand2Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.Register_Selektion.DfAdga'.", repo.FrmVorschlagErstellen.Register_Selektion.DfAdgaInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Selektion.DfAdgaInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.DfAdga'.", repo.FrmVorschlagErstellen.DfAdgaInfo, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.DfAdgaInfo, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.Register_Selektion.DfAdgrVon'.", repo.FrmVorschlagErstellen.Register_Selektion.DfAdgrVonInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Selektion.DfAdgrVonInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.DfAdga'.", repo.FrmVorschlagErstellen.DfAdgaInfo, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.DfAdgaInfo, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.Register_Selektion.TextBis1'.", repo.FrmVorschlagErstellen.Register_Selektion.TextBis1Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Selektion.TextBis1Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.DfAdgrVon'.", repo.FrmVorschlagErstellen.DfAdgrVonInfo, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.DfAdgrVonInfo, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.Register_Selektion.DfAdgrBis'.", repo.FrmVorschlagErstellen.Register_Selektion.DfAdgrBisInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Selektion.DfAdgrBisInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.TextBis1'.", repo.FrmVorschlagErstellen.TextBis1Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.TextBis1Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.Register_Selektion.DfCd1'.", repo.FrmVorschlagErstellen.Register_Selektion.DfCd1Info, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Selektion.DfCd1Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.DfAdgrBis'.", repo.FrmVorschlagErstellen.DfAdgrBisInfo, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.DfAdgrBisInfo, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.Register_Selektion.DfVertreter'.", repo.FrmVorschlagErstellen.Register_Selektion.DfVertreterInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Selektion.DfVertreterInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.DfCd1'.", repo.FrmVorschlagErstellen.DfCd1Info, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.DfCd1Info, "Text", "");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.DfVertreter'.", repo.FrmVorschlagErstellen.DfVertreterInfo, new RecordItemIndex(12));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.DfVertreterInfo, "Text", "");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.DfAdrBetreuer'.", repo.FrmVorschlagErstellen.DfAdrBetreuerInfo, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.FrmVorschlagErstellen.DfAdrBetreuerInfo, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmVorschlagErstellen.Register_Selektion.DfAdrBetreuer'.", repo.FrmVorschlagErstellen.Register_Selektion.DfAdrBetreuerInfo, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.FrmVorschlagErstellen.Register_Selektion.DfAdrBetreuerInfo, "Text", "");
             
         }
 

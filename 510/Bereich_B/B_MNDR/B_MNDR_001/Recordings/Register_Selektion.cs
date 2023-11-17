@@ -108,21 +108,20 @@ namespace B_MNDR_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorschlagErstellen.Selektion' at Center.", repo.FrmVorschlagErstellen.SelektionInfo, new RecordItemIndex(0));
             repo.FrmVorschlagErstellen.Selektion.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorschlagErstellen.KontoNrVon' at Center.", repo.FrmVorschlagErstellen.KontoNrVonInfo, new RecordItemIndex(1));
-            repo.FrmVorschlagErstellen.KontoNrVon.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorschlagErstellen.Register_Selektion.KontoNrVon' at Center.", repo.FrmVorschlagErstellen.Register_Selektion.KontoNrVonInfo, new RecordItemIndex(1));
+            repo.FrmVorschlagErstellen.Register_Selektion.KontoNrVon.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kunde_1' with focus on 'FrmVorschlagErstellen.KontoNrVon'.", repo.FrmVorschlagErstellen.KontoNrVonInfo, new RecordItemIndex(2));
-            repo.FrmVorschlagErstellen.KontoNrVon.PressKeys(Kunde_1);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kunde_1' with focus on 'FrmVorschlagErstellen.Register_Selektion.KontoNrVon'.", repo.FrmVorschlagErstellen.Register_Selektion.KontoNrVonInfo, new RecordItemIndex(2));
+            repo.FrmVorschlagErstellen.Register_Selektion.KontoNrVon.PressKeys(Kunde_1);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmVorschlagErstellen.KontoNrVon'.", repo.FrmVorschlagErstellen.KontoNrVonInfo, new RecordItemIndex(3));
-            repo.FrmVorschlagErstellen.KontoNrVon.PressKeys("{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(3));
+            Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kunde_2' with focus on 'FrmVorschlagErstellen'.", repo.FrmVorschlagErstellen.SelfInfo, new RecordItemIndex(4));
-            repo.FrmVorschlagErstellen.Self.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kunde_2' with focus on 'FrmVorschlagErstellen.Register_Selektion.TextBis_Konto_bis'.", repo.FrmVorschlagErstellen.Register_Selektion.TextBis_Konto_bisInfo, new RecordItemIndex(4));
+            repo.FrmVorschlagErstellen.Register_Selektion.TextBis_Konto_bis.EnsureVisible();
             Keyboard.Press(Kunde_2);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'FrmVorschlagErstellen'.", repo.FrmVorschlagErstellen.SelfInfo, new RecordItemIndex(5));
-            repo.FrmVorschlagErstellen.Self.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(5));
             Keyboard.Press("{Tab}");
             
         }

@@ -67,6 +67,18 @@ namespace B_MNDR_001
             set { _Beschreibung = value; }
         }
 
+        string _Variable = "b_mndr_004";
+
+        /// <summary>
+        /// Gets or sets the value of variable Variable.
+        /// </summary>
+        [TestVariable("dffbbdda-4b39-43c1-acbf-a6e5cf96ad94")]
+        public string Variable
+        {
+            get { return _Variable; }
+            set { _Variable = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -247,13 +259,13 @@ namespace B_MNDR_001
             public FlexGrid_TabelleFolder(RepoGenBaseFolder parentFolder) :
                     base("FlexGrid_Tabelle", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "2659aea3-ae70-451b-8bf2-2cacf7e81f37", "")
             {
-                _row_mit_beschreibung_b_mndr_01Info = new RepoItemInfo(this, "Row_mit_Beschreibung_B_MNDR_01", "row[@accessiblename~'Row' and @accessiblevalue~$Beschreibung]", "", 30000, null, "6eec5c62-9c3e-4ada-9117-8cf384319d69");
-                _column0_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "Column0_Zeile_mit_Beschreibung", "*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/?/cell[@accessiblename~'Column 0']", "", 30000, null, "394bd4e9-8cc8-4a1d-8f1d-722ec18eb055");
-                _colmndtaktuell_in_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "ColMndtAktuell_in_Zeile_mit_Beschreibung", "*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/?/cell[@accessiblename~'colMndt_aktuell']", "", 30000, null, "67dc40ac-9da9-4ed7-8d94-a8fd6b3eaadf");
-                _colmndtdtanlag_in_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "ColMndtDtanlag_in_Zeile_mit_Beschreibung", "*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/?/cell[@accessiblename~'colMndt_dtanlag']", "", 30000, null, "6f7b8be7-f398-4f4b-92fe-cfee5d3a27eb");
-                _colmndtfaellig_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "ColMndtFaellig_Zeile_mit_Beschreibung", "*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/?/cell[@accessiblename~'colMndt_faellig']", "", 30000, null, "4c897e64-3cf6-4e93-90f7-5a84998c8c24");
-                _colanznr_in_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "ColAnzNr_in_Zeile_mit_Beschreibung", "*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/?/cell[@accessiblename~'colAnz_nr' and @accessiblerole='Cell']", "", 30000, null, "634f02be-da6a-4cee-a372-f6cceb385763");
-                _colanzkunden_in_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "ColAnzKunden_in_Zeile_mit_Beschreibung", "*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/?/cell[@accessiblename~'colAnz_kunden' and @accessiblerole='Cell']", "", 30000, null, "77f2d81d-6b95-4759-ba41-91141488c1b1");
+                _row_mit_beschreibung_b_mndr_01Info = new RepoItemInfo(this, "Row_mit_Beschreibung_B_MNDR_01", "row[@accessiblevalue~$Beschreibung and @accessiblerole='Row']", "", 30000, null, "6eec5c62-9c3e-4ada-9117-8cf384319d69");
+                _column0_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "Column0_Zeile_mit_Beschreibung", "row[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'Column 0']", "", 30000, null, "394bd4e9-8cc8-4a1d-8f1d-722ec18eb055");
+                _colmndtaktuell_in_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "ColMndtAktuell_in_Zeile_mit_Beschreibung", "row[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colMndt_aktuell']", "", 30000, null, "67dc40ac-9da9-4ed7-8d94-a8fd6b3eaadf");
+                _colmndtdtanlag_in_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "ColMndtDtanlag_in_Zeile_mit_Beschreibung", "row[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colMndt_dtanlag']", "", 30000, null, "6f7b8be7-f398-4f4b-92fe-cfee5d3a27eb");
+                _colmndtfaellig_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "ColMndtFaellig_Zeile_mit_Beschreibung", "row[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colMndt_faellig']", "", 30000, null, "4c897e64-3cf6-4e93-90f7-5a84998c8c24");
+                _colanznr_in_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "ColAnzNr_in_Zeile_mit_Beschreibung", "row[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colAnz_nr']", "", 30000, null, "634f02be-da6a-4cee-a372-f6cceb385763");
+                _colanzkunden_in_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "ColAnzKunden_in_Zeile_mit_Beschreibung", "row[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colAnz_kunden']", "", 30000, null, "77f2d81d-6b95-4759-ba41-91141488c1b1");
             }
 
             /// <summary>
@@ -541,7 +553,7 @@ namespace B_MNDR_001
             /// Creates a new FlexGrid_Tabelle  folder.
             /// </summary>
             public FlexGrid_TabelleFolder1(RepoGenBaseFolder parentFolder) :
-                    base("FlexGrid_Tabelle", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "48b25491-0e51-4cb0-afc0-3523610a84e2", "")
+                    base("FlexGrid_Tabelle", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "48b25491-0e51-4cb0-afc0-3523610a84e2", "")
             {
                 _row1 = new B_MNDR_001RepositoryFolders.Row1Folder(this);
                 _row2 = new B_MNDR_001RepositoryFolders.Row2Folder(this);
@@ -1131,6 +1143,7 @@ namespace B_MNDR_001
             RepoItemInfo _colnamerow4Info;
             RepoItemInfo _colbelegrow4Info;
             RepoItemInfo _colfaelligrow4Info;
+            RepoItemInfo _colbusyrow4Info;
 
             /// <summary>
             /// Creates a new Row4  folder.
@@ -1143,6 +1156,7 @@ namespace B_MNDR_001
                 _colnamerow4Info = new RepoItemInfo(this, "ColNameRow4", "cell[@accessiblename='colName Row 4']", "", 30000, null, "7ffdad6d-a060-463f-97c1-9757aefecc75");
                 _colbelegrow4Info = new RepoItemInfo(this, "ColBelegRow4", "cell[@accessiblename='colBeleg Row 4']", "", 30000, null, "d1f05f0e-cb5b-44e0-abb3-7eced75a89e5");
                 _colfaelligrow4Info = new RepoItemInfo(this, "ColFaelligRow4", "cell[@accessiblename='colFaellig Row 4']", "", 30000, null, "eca21f7b-407c-42ff-9e99-79ec07ba5aa0");
+                _colbusyrow4Info = new RepoItemInfo(this, "ColBusyRow4", "cell[@accessiblename='colBusy Row 4']", "", 30000, null, "6401ffd1-5685-46bf-bc8e-125460bfc6d4");
             }
 
             /// <summary>
@@ -1288,6 +1302,30 @@ namespace B_MNDR_001
                     return _colfaelligrow4Info;
                 }
             }
+
+            /// <summary>
+            /// The ColBusyRow4 item.
+            /// </summary>
+            [RepositoryItem("6401ffd1-5685-46bf-bc8e-125460bfc6d4")]
+            public virtual Ranorex.Cell ColBusyRow4
+            {
+                get
+                {
+                    return _colbusyrow4Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColBusyRow4 item info.
+            /// </summary>
+            [RepositoryItemInfo("6401ffd1-5685-46bf-bc8e-125460bfc6d4")]
+            public virtual RepoItemInfo ColBusyRow4Info
+            {
+                get
+                {
+                    return _colbusyrow4Info;
+                }
+            }
         }
 
         /// <summary>
@@ -1296,36 +1334,13 @@ namespace B_MNDR_001
         [RepositoryFolder("573d23ce-d14c-4dd2-a89d-cd6b2754c985")]
         public partial class FrmVorschlagErstellenAppFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _datumdermahnungInfo;
-            RepoItemInfo _zahlungenberuecksichtigtbisInfo;
+            B_MNDR_001RepositoryFolders.Register_FaelligkeitFolder _register_faelligkeit;
+            B_MNDR_001RepositoryFolders.Register_SelektionFolder _register_selektion;
+            RepoItemInfo _titlebar100mahnvorschlagerstellenkInfo;
+            RepoItemInfo _schliessenInfo;
+            RepoItemInfo _pboptionenstartInfo;
             RepoItemInfo _tabpagefaelligkeitInfo;
             RepoItemInfo _selektionInfo;
-            RepoItemInfo _kontonrvonInfo;
-            RepoItemInfo _pboptionenstartInfo;
-            RepoItemInfo _schliessenInfo;
-            RepoItemInfo _cbzlvsInfo;
-            RepoItemInfo _tpfaelligkeitInfo;
-            RepoItemInfo _beschreibungInfo;
-            RepoItemInfo _checkboxcbgInfo;
-            RepoItemInfo _postenfaelligbisInfo;
-            RepoItemInfo _dfmahnsperreInfo;
-            RepoItemInfo _vorauszahlungenInfo;
-            RepoItemInfo _cbbankeinzugInfo;
-            RepoItemInfo _cbkeinenegsumInfo;
-            RepoItemInfo _dfklktvInfo;
-            RepoItemInfo _textbisInfo;
-            RepoItemInfo _dfland1Info;
-            RepoItemInfo _dfland2Info;
-            RepoItemInfo _dfadgaInfo;
-            RepoItemInfo _dfadgrvonInfo;
-            RepoItemInfo _textbis1Info;
-            RepoItemInfo _dfcd1Info;
-            RepoItemInfo _dfadgrbisInfo;
-            RepoItemInfo _dfvertreterInfo;
-            RepoItemInfo _dfadrbetreuerInfo;
-            RepoItemInfo _dffristtageInfo;
-            RepoItemInfo _titlebar100mahnvorschlagerstellenkInfo;
-            RepoItemInfo _postenmitletztermahnungvorInfo;
 
             /// <summary>
             /// Creates a new FrmVorschlagErstellen  folder.
@@ -1333,36 +1348,13 @@ namespace B_MNDR_001
             public FrmVorschlagErstellenAppFolder(RepoGenBaseFolder parentFolder) :
                     base("FrmVorschlagErstellen", "/form[@controlname='frmVorschlagErstellen']", parentFolder, 30000, null, true, "573d23ce-d14c-4dd2-a89d-cd6b2754c985", "")
             {
-                _datumdermahnungInfo = new RepoItemInfo(this, "DatumDerMahnung", ".//tabpage[@controlname='tpFaelligkeit']/text[@controlname='dfAktuell']/text[@accessiblename='Datum der Mahnung']", "", 30000, null, "3e2898f7-0864-4913-ad05-f3b9f6a7a18d");
-                _zahlungenberuecksichtigtbisInfo = new RepoItemInfo(this, "ZahlungenBeruecksichtigtBis", ".//tabpage[@controlname='tpFaelligkeit']/text[@controlname='dfZahlung']/text[@accessiblename>'Zahlungen berücksichtigt']", "", 30000, null, "82cf6391-fa45-4420-875a-b9ab4a8cbe79");
-                _tabpagefaelligkeitInfo = new RepoItemInfo(this, "TabPageFaelligkeit", "container[@controlname='ClientArea']/?/?/tabpage[@accessiblename='&Fälligkeit']", "", 30000, null, "c5b31d9d-fbd6-4a75-9747-7a9daf050e25");
-                _selektionInfo = new RepoItemInfo(this, "Selektion", "container[@controlname='ClientArea']/?/?/tabpage[@accessiblename='Sele&ktion']", "", 30000, null, "e91fda0b-37cc-47da-bf31-4cb0ffa08ba0");
-                _kontonrvonInfo = new RepoItemInfo(this, "KontoNrVon", ".//tabpage[@controlname='tpSelektion']/text[@controlname='dfKlktV']/text[@accessiblename='Konto-Nr  von']", "", 30000, null, "3325e6ff-3b46-4efd-b297-2b7ab306cee7");
-                _pboptionenstartInfo = new RepoItemInfo(this, "PbOptionenStart", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbOptionen_Start']", "", 30000, null, "27b4e571-3981-4f07-9923-5d6d7e95cb93");
-                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "?/?/button[@accessiblename='Schließen']", "", 30000, null, "d8d83430-62af-4fb9-b5e6-3bc93f07943d");
-                _cbzlvsInfo = new RepoItemInfo(this, "CbZlvs", ".//tabpage[@controlname='tpFaelligkeit']/checkbox[@controlname='cbZlvs']", "", 30000, null, "0ecca41f-131f-433a-8cfd-cf1ef1e0906e");
-                _tpfaelligkeitInfo = new RepoItemInfo(this, "TpFaelligkeit", "container[@controlname='ClientArea']/?/?/tabpage[@controlname='tpFaelligkeit']", "", 30000, null, "3d0a54d6-0d75-457a-89d0-1ce6b47bde7f");
-                _beschreibungInfo = new RepoItemInfo(this, "Beschreibung", ".//tabpage[@controlname='tpFaelligkeit']/text[@controlname='dfMndt_text']/text[@accessiblename='Beschreibung']", "", 30000, null, "35ee72ad-fc5b-4067-bda9-478be125239b");
-                _checkboxcbgInfo = new RepoItemInfo(this, "CheckBoxCbG", ".//tabpage[@controlname='tpFaelligkeit']/checkbox[@controlname='cbG']", "", 30000, null, "ead707a0-9206-46db-b45a-ceea5d9f9940");
-                _postenfaelligbisInfo = new RepoItemInfo(this, "PostenFaelligBis", ".//tabpage[@controlname='tpFaelligkeit']/text[@controlname='dfFaellig']/text[@accessiblename='Posten fällig bis']", "", 30000, null, "5717b9aa-3e2b-4b23-93cd-75bafb7bb84e");
-                _dfmahnsperreInfo = new RepoItemInfo(this, "DfMahnsperre", ".//tabpage[@controlname='tpFaelligkeit']/text[@controlname='dfMahnsperre']", "", 30000, null, "099b2b1f-9621-4bae-9531-dbb622319fa2");
-                _vorauszahlungenInfo = new RepoItemInfo(this, "Vorauszahlungen", ".//tabpage[@controlname='tpFaelligkeit']/checkbox[@controlname='cbV']", "", 30000, null, "a3c7e9ce-8579-45f3-93ad-4072531ebda5");
-                _cbbankeinzugInfo = new RepoItemInfo(this, "CbBankeinzug", ".//tabpage[@controlname='tpFaelligkeit']/checkbox[@controlname='cbBankeinzug']", "", 30000, null, "b6902bce-2118-4c3e-8ac1-086e0af8bbc2");
-                _cbkeinenegsumInfo = new RepoItemInfo(this, "CbKeineNegSum", ".//tabpage[@controlname='tpFaelligkeit']/checkbox[@controlname='cbKeineNegSum']", "", 30000, null, "3b6194d9-1bcd-4899-824a-9945dde9e9fc");
-                _dfklktvInfo = new RepoItemInfo(this, "DfKlktV", ".//tabpage[@controlname='tpSelektion']/text[@controlname='dfKlktV']", "", 30000, null, "6195b028-5a9b-4597-80c7-f2c0e4c93546");
-                _textbisInfo = new RepoItemInfo(this, "TextBis", ".//tabpage[@controlname='tpSelektion']/text[@controlname='dfKlktB']/text[@accessiblename='bis']", "", 30000, null, "ff9f5d95-2ae9-410c-8397-b7ab85ff20a9");
-                _dfland1Info = new RepoItemInfo(this, "DfLand1", ".//tabpage[@controlname='tpSelektion']/text[@controlname='dfLand1']", "", 30000, null, "1becf722-6d13-49ca-b546-43ef692d7bbf");
-                _dfland2Info = new RepoItemInfo(this, "DfLand2", ".//tabpage[@controlname='tpSelektion']/text[@controlname='dfLand2']", "", 30000, null, "4d5fae77-f9ba-4978-a540-3b03f3778303");
-                _dfadgaInfo = new RepoItemInfo(this, "DfAdga", ".//tabpage[@controlname='tpSelektion']/text[@controlname='dfAdga']", "", 30000, null, "f8ef015a-658b-44cf-bcfa-d527b7972853");
-                _dfadgrvonInfo = new RepoItemInfo(this, "DfAdgrVon", ".//tabpage[@controlname='tpSelektion']/text[@controlname='dfAdgrVon']", "", 30000, null, "35be726a-c08e-42af-a713-9dde7aa11fd7");
-                _textbis1Info = new RepoItemInfo(this, "TextBis1", ".//tabpage[@controlname='tpSelektion']/text[@controlname='dfAdgrBis']/text[@accessiblename='bis']", "", 30000, null, "2668f38c-f508-4d53-a7ab-018ae7bc049f");
-                _dfcd1Info = new RepoItemInfo(this, "DfCd1", ".//tabpage[@controlname='tpSelektion']/text[@controlname='dfCd1']", "", 30000, null, "0c9942d3-0457-4f59-9f86-17032da14391");
-                _dfadgrbisInfo = new RepoItemInfo(this, "DfAdgrBis", ".//tabpage[@controlname='tpSelektion']/text[@controlname='dfAdgrBis']", "", 30000, null, "0635a41f-ce75-4a96-97b1-281534bcee64");
-                _dfvertreterInfo = new RepoItemInfo(this, "DfVertreter", ".//tabpage[@controlname='tpSelektion']/text[@controlname='dfVertreter']", "", 30000, null, "ca6d07a4-3f5f-431b-b9a8-f24f68a9a7a8");
-                _dfadrbetreuerInfo = new RepoItemInfo(this, "DfAdrBetreuer", ".//tabpage[@controlname='tpSelektion']/text[@controlname='dfAdr_betreuer']", "", 30000, null, "fe470deb-28fe-48a2-bd55-c17055a1c923");
-                _dffristtageInfo = new RepoItemInfo(this, "DfFristtage", ".//tabpage[@controlname='tpFaelligkeit']/text[@controlname='dfFristtage']", "", 30000, null, "d3f2e730-8852-4bd8-b49c-9108a38b507e");
+                _register_faelligkeit = new B_MNDR_001RepositoryFolders.Register_FaelligkeitFolder(this);
+                _register_selektion = new B_MNDR_001RepositoryFolders.Register_SelektionFolder(this);
                 _titlebar100mahnvorschlagerstellenkInfo = new RepoItemInfo(this, "TitleBar100MahnvorschlagErstellenK", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "7b9a2167-5aa6-4a36-9d0b-b15050652dc3");
-                _postenmitletztermahnungvorInfo = new RepoItemInfo(this, "PostenMitLetzterMahnungVor", ".//tabpage[@controlname='tpFaelligkeit']/text[@controlname='dfLetzte']/text[@accessiblename>'Posten mit letzter Mahnung']", "", 30000, null, "db0bbf09-c32c-40d8-9f55-1c83fc1152aa");
+                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "?/?/button[@accessiblename='Schließen']", "", 30000, null, "d8d83430-62af-4fb9-b5e6-3bc93f07943d");
+                _pboptionenstartInfo = new RepoItemInfo(this, "PbOptionenStart", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbOptionen_Start']", "", 30000, null, "27b4e571-3981-4f07-9923-5d6d7e95cb93");
+                _tabpagefaelligkeitInfo = new RepoItemInfo(this, "TabPageFaelligkeit", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='&Fälligkeit']", "", 30000, null, "3e47b8a1-00b0-466b-993f-3bf58d507c8c");
+                _selektionInfo = new RepoItemInfo(this, "Selektion", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@accessiblename='Sele&ktion']", "", 30000, null, "a7a71c6b-fe5f-4530-854a-95e4b38eba72");
             }
 
             /// <summary>
@@ -1381,6 +1373,208 @@ namespace B_MNDR_001
             /// The Self item info.
             /// </summary>
             [RepositoryItemInfo("573d23ce-d14c-4dd2-a89d-cd6b2754c985")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100MahnvorschlagErstellenK item.
+            /// </summary>
+            [RepositoryItem("7b9a2167-5aa6-4a36-9d0b-b15050652dc3")]
+            public virtual Ranorex.TitleBar TitleBar100MahnvorschlagErstellenK
+            {
+                get
+                {
+                    return _titlebar100mahnvorschlagerstellenkInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100MahnvorschlagErstellenK item info.
+            /// </summary>
+            [RepositoryItemInfo("7b9a2167-5aa6-4a36-9d0b-b15050652dc3")]
+            public virtual RepoItemInfo TitleBar100MahnvorschlagErstellenKInfo
+            {
+                get
+                {
+                    return _titlebar100mahnvorschlagerstellenkInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item.
+            /// </summary>
+            [RepositoryItem("d8d83430-62af-4fb9-b5e6-3bc93f07943d")]
+            public virtual Ranorex.Button Schliessen
+            {
+                get
+                {
+                    return _schliessenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item info.
+            /// </summary>
+            [RepositoryItemInfo("d8d83430-62af-4fb9-b5e6-3bc93f07943d")]
+            public virtual RepoItemInfo SchliessenInfo
+            {
+                get
+                {
+                    return _schliessenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbOptionenStart item.
+            /// </summary>
+            [RepositoryItem("27b4e571-3981-4f07-9923-5d6d7e95cb93")]
+            public virtual Ranorex.Button PbOptionenStart
+            {
+                get
+                {
+                    return _pboptionenstartInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbOptionenStart item info.
+            /// </summary>
+            [RepositoryItemInfo("27b4e571-3981-4f07-9923-5d6d7e95cb93")]
+            public virtual RepoItemInfo PbOptionenStartInfo
+            {
+                get
+                {
+                    return _pboptionenstartInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TabPageFaelligkeit item.
+            /// </summary>
+            [RepositoryItem("3e47b8a1-00b0-466b-993f-3bf58d507c8c")]
+            public virtual Ranorex.TabPage TabPageFaelligkeit
+            {
+                get
+                {
+                    return _tabpagefaelligkeitInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TabPageFaelligkeit item info.
+            /// </summary>
+            [RepositoryItemInfo("3e47b8a1-00b0-466b-993f-3bf58d507c8c")]
+            public virtual RepoItemInfo TabPageFaelligkeitInfo
+            {
+                get
+                {
+                    return _tabpagefaelligkeitInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Selektion item.
+            /// </summary>
+            [RepositoryItem("a7a71c6b-fe5f-4530-854a-95e4b38eba72")]
+            public virtual Ranorex.TabPage Selektion
+            {
+                get
+                {
+                    return _selektionInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Selektion item info.
+            /// </summary>
+            [RepositoryItemInfo("a7a71c6b-fe5f-4530-854a-95e4b38eba72")]
+            public virtual RepoItemInfo SelektionInfo
+            {
+                get
+                {
+                    return _selektionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Register_Faelligkeit folder.
+            /// </summary>
+            [RepositoryFolder("642c2898-5acb-4d53-860c-849e7f8d2f2c")]
+            public virtual B_MNDR_001RepositoryFolders.Register_FaelligkeitFolder Register_Faelligkeit
+            {
+                get { return _register_faelligkeit; }
+            }
+
+            /// <summary>
+            /// The Register_Selektion folder.
+            /// </summary>
+            [RepositoryFolder("259036b5-4fcb-4eeb-abb0-bd27226bf1f0")]
+            public virtual B_MNDR_001RepositoryFolders.Register_SelektionFolder Register_Selektion
+            {
+                get { return _register_selektion; }
+            }
+        }
+
+        /// <summary>
+        /// The Register_FaelligkeitFolder folder.
+        /// </summary>
+        [RepositoryFolder("642c2898-5acb-4d53-860c-849e7f8d2f2c")]
+        public partial class Register_FaelligkeitFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _datumdermahnungInfo;
+            RepoItemInfo _zahlungenberuecksichtigtbisInfo;
+            RepoItemInfo _dfmahnsperre_mahnkennzInfo;
+            RepoItemInfo _postenfaelligbisInfo;
+            RepoItemInfo _beschreibungInfo;
+            RepoItemInfo _dffristtage_letzte_zahlungsfristInfo;
+            RepoItemInfo _postenmitletztermahnungvorInfo;
+            RepoItemInfo _cbzlvsInfo;
+            RepoItemInfo _checkboxcbgInfo;
+            RepoItemInfo _vorauszahlungenInfo;
+            RepoItemInfo _cbbankeinzugInfo;
+            RepoItemInfo _cbkeinenegsumInfo;
+
+            /// <summary>
+            /// Creates a new Register_Faelligkeit  folder.
+            /// </summary>
+            public Register_FaelligkeitFolder(RepoGenBaseFolder parentFolder) :
+                    base("Register_Faelligkeit", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpFaelligkeit']", parentFolder, 30000, null, false, "642c2898-5acb-4d53-860c-849e7f8d2f2c", "")
+            {
+                _datumdermahnungInfo = new RepoItemInfo(this, "DatumDerMahnung", "text[@controlname='dfAktuell']/text[@accessiblename='Datum der Mahnung']", "", 30000, null, "3e2898f7-0864-4913-ad05-f3b9f6a7a18d");
+                _zahlungenberuecksichtigtbisInfo = new RepoItemInfo(this, "ZahlungenBeruecksichtigtBis", "text[@controlname='dfZahlung']/text[@accessiblename>'Zahlungen berücksichtigt']", "", 30000, null, "82cf6391-fa45-4420-875a-b9ab4a8cbe79");
+                _dfmahnsperre_mahnkennzInfo = new RepoItemInfo(this, "DfMahnsperre_Mahnkennz", "text[@controlname='dfMahnsperre']/text[@accessiblename='Mahn-Kennz']", "", 30000, null, "099b2b1f-9621-4bae-9531-dbb622319fa2");
+                _postenfaelligbisInfo = new RepoItemInfo(this, "PostenFaelligBis", "text[@controlname='dfFaellig']/text[@accessiblename='Posten fällig bis']", "", 30000, null, "5717b9aa-3e2b-4b23-93cd-75bafb7bb84e");
+                _beschreibungInfo = new RepoItemInfo(this, "Beschreibung", "text[@controlname='dfMndt_text']/text[@accessiblename='Beschreibung']", "", 30000, null, "35ee72ad-fc5b-4067-bda9-478be125239b");
+                _dffristtage_letzte_zahlungsfristInfo = new RepoItemInfo(this, "DfFristtage_letzte_Zahlungsfrist", "text[@controlname='dfFristtage']/text[@accessiblename='letzte Zahlungsfrist']", "", 30000, null, "d3f2e730-8852-4bd8-b49c-9108a38b507e");
+                _postenmitletztermahnungvorInfo = new RepoItemInfo(this, "PostenMitLetzterMahnungVor", "text[@controlname='dfLetzte']/text[@accessiblename>'Posten mit letzter Mahnung']", "", 30000, null, "db0bbf09-c32c-40d8-9f55-1c83fc1152aa");
+                _cbzlvsInfo = new RepoItemInfo(this, "CbZlvs", "checkbox[@controlname='cbZlvs']", "", 30000, null, "0ecca41f-131f-433a-8cfd-cf1ef1e0906e");
+                _checkboxcbgInfo = new RepoItemInfo(this, "CheckBoxCbG", "checkbox[@controlname='cbG']", "", 30000, null, "ead707a0-9206-46db-b45a-ceea5d9f9940");
+                _vorauszahlungenInfo = new RepoItemInfo(this, "Vorauszahlungen", "checkbox[@controlname='cbV']", "", 30000, null, "a3c7e9ce-8579-45f3-93ad-4072531ebda5");
+                _cbbankeinzugInfo = new RepoItemInfo(this, "CbBankeinzug", "checkbox[@controlname='cbBankeinzug']", "", 30000, null, "b6902bce-2118-4c3e-8ac1-086e0af8bbc2");
+                _cbkeinenegsumInfo = new RepoItemInfo(this, "CbKeineNegSum", "checkbox[@controlname='cbKeineNegSum']", "", 30000, null, "3b6194d9-1bcd-4899-824a-9945dde9e9fc");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("642c2898-5acb-4d53-860c-849e7f8d2f2c")]
+            public virtual Ranorex.TabPage Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("642c2898-5acb-4d53-860c-849e7f8d2f2c")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
@@ -1438,218 +1632,26 @@ namespace B_MNDR_001
             }
 
             /// <summary>
-            /// The TabPageFaelligkeit item.
+            /// The DfMahnsperre_Mahnkennz item.
             /// </summary>
-            [RepositoryItem("c5b31d9d-fbd6-4a75-9747-7a9daf050e25")]
-            public virtual Ranorex.TabPage TabPageFaelligkeit
+            [RepositoryItem("099b2b1f-9621-4bae-9531-dbb622319fa2")]
+            public virtual Ranorex.Text DfMahnsperre_Mahnkennz
             {
                 get
                 {
-                    return _tabpagefaelligkeitInfo.CreateAdapter<Ranorex.TabPage>(true);
+                    return _dfmahnsperre_mahnkennzInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The TabPageFaelligkeit item info.
+            /// The DfMahnsperre_Mahnkennz item info.
             /// </summary>
-            [RepositoryItemInfo("c5b31d9d-fbd6-4a75-9747-7a9daf050e25")]
-            public virtual RepoItemInfo TabPageFaelligkeitInfo
+            [RepositoryItemInfo("099b2b1f-9621-4bae-9531-dbb622319fa2")]
+            public virtual RepoItemInfo DfMahnsperre_MahnkennzInfo
             {
                 get
                 {
-                    return _tabpagefaelligkeitInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Selektion item.
-            /// </summary>
-            [RepositoryItem("e91fda0b-37cc-47da-bf31-4cb0ffa08ba0")]
-            public virtual Ranorex.TabPage Selektion
-            {
-                get
-                {
-                    return _selektionInfo.CreateAdapter<Ranorex.TabPage>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Selektion item info.
-            /// </summary>
-            [RepositoryItemInfo("e91fda0b-37cc-47da-bf31-4cb0ffa08ba0")]
-            public virtual RepoItemInfo SelektionInfo
-            {
-                get
-                {
-                    return _selektionInfo;
-                }
-            }
-
-            /// <summary>
-            /// The KontoNrVon item.
-            /// </summary>
-            [RepositoryItem("3325e6ff-3b46-4efd-b297-2b7ab306cee7")]
-            public virtual Ranorex.Text KontoNrVon
-            {
-                get
-                {
-                    return _kontonrvonInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The KontoNrVon item info.
-            /// </summary>
-            [RepositoryItemInfo("3325e6ff-3b46-4efd-b297-2b7ab306cee7")]
-            public virtual RepoItemInfo KontoNrVonInfo
-            {
-                get
-                {
-                    return _kontonrvonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The PbOptionenStart item.
-            /// </summary>
-            [RepositoryItem("27b4e571-3981-4f07-9923-5d6d7e95cb93")]
-            public virtual Ranorex.Button PbOptionenStart
-            {
-                get
-                {
-                    return _pboptionenstartInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PbOptionenStart item info.
-            /// </summary>
-            [RepositoryItemInfo("27b4e571-3981-4f07-9923-5d6d7e95cb93")]
-            public virtual RepoItemInfo PbOptionenStartInfo
-            {
-                get
-                {
-                    return _pboptionenstartInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Schliessen item.
-            /// </summary>
-            [RepositoryItem("d8d83430-62af-4fb9-b5e6-3bc93f07943d")]
-            public virtual Ranorex.Button Schliessen
-            {
-                get
-                {
-                    return _schliessenInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Schliessen item info.
-            /// </summary>
-            [RepositoryItemInfo("d8d83430-62af-4fb9-b5e6-3bc93f07943d")]
-            public virtual RepoItemInfo SchliessenInfo
-            {
-                get
-                {
-                    return _schliessenInfo;
-                }
-            }
-
-            /// <summary>
-            /// The CbZlvs item.
-            /// </summary>
-            [RepositoryItem("0ecca41f-131f-433a-8cfd-cf1ef1e0906e")]
-            public virtual Ranorex.CheckBox CbZlvs
-            {
-                get
-                {
-                    return _cbzlvsInfo.CreateAdapter<Ranorex.CheckBox>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CbZlvs item info.
-            /// </summary>
-            [RepositoryItemInfo("0ecca41f-131f-433a-8cfd-cf1ef1e0906e")]
-            public virtual RepoItemInfo CbZlvsInfo
-            {
-                get
-                {
-                    return _cbzlvsInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TpFaelligkeit item.
-            /// </summary>
-            [RepositoryItem("3d0a54d6-0d75-457a-89d0-1ce6b47bde7f")]
-            public virtual Ranorex.TabPage TpFaelligkeit
-            {
-                get
-                {
-                    return _tpfaelligkeitInfo.CreateAdapter<Ranorex.TabPage>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TpFaelligkeit item info.
-            /// </summary>
-            [RepositoryItemInfo("3d0a54d6-0d75-457a-89d0-1ce6b47bde7f")]
-            public virtual RepoItemInfo TpFaelligkeitInfo
-            {
-                get
-                {
-                    return _tpfaelligkeitInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Beschreibung item.
-            /// </summary>
-            [RepositoryItem("35ee72ad-fc5b-4067-bda9-478be125239b")]
-            public virtual Ranorex.Text Beschreibung
-            {
-                get
-                {
-                    return _beschreibungInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Beschreibung item info.
-            /// </summary>
-            [RepositoryItemInfo("35ee72ad-fc5b-4067-bda9-478be125239b")]
-            public virtual RepoItemInfo BeschreibungInfo
-            {
-                get
-                {
-                    return _beschreibungInfo;
-                }
-            }
-
-            /// <summary>
-            /// The CheckBoxCbG item.
-            /// </summary>
-            [RepositoryItem("ead707a0-9206-46db-b45a-ceea5d9f9940")]
-            public virtual Ranorex.CheckBox CheckBoxCbG
-            {
-                get
-                {
-                    return _checkboxcbgInfo.CreateAdapter<Ranorex.CheckBox>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CheckBoxCbG item info.
-            /// </summary>
-            [RepositoryItemInfo("ead707a0-9206-46db-b45a-ceea5d9f9940")]
-            public virtual RepoItemInfo CheckBoxCbGInfo
-            {
-                get
-                {
-                    return _checkboxcbgInfo;
+                    return _dfmahnsperre_mahnkennzInfo;
                 }
             }
 
@@ -1678,26 +1680,122 @@ namespace B_MNDR_001
             }
 
             /// <summary>
-            /// The DfMahnsperre item.
+            /// The Beschreibung item.
             /// </summary>
-            [RepositoryItem("099b2b1f-9621-4bae-9531-dbb622319fa2")]
-            public virtual Ranorex.Text DfMahnsperre
+            [RepositoryItem("35ee72ad-fc5b-4067-bda9-478be125239b")]
+            public virtual Ranorex.Text Beschreibung
             {
                 get
                 {
-                    return _dfmahnsperreInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _beschreibungInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The DfMahnsperre item info.
+            /// The Beschreibung item info.
             /// </summary>
-            [RepositoryItemInfo("099b2b1f-9621-4bae-9531-dbb622319fa2")]
-            public virtual RepoItemInfo DfMahnsperreInfo
+            [RepositoryItemInfo("35ee72ad-fc5b-4067-bda9-478be125239b")]
+            public virtual RepoItemInfo BeschreibungInfo
             {
                 get
                 {
-                    return _dfmahnsperreInfo;
+                    return _beschreibungInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfFristtage_letzte_Zahlungsfrist item.
+            /// </summary>
+            [RepositoryItem("d3f2e730-8852-4bd8-b49c-9108a38b507e")]
+            public virtual Ranorex.Text DfFristtage_letzte_Zahlungsfrist
+            {
+                get
+                {
+                    return _dffristtage_letzte_zahlungsfristInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfFristtage_letzte_Zahlungsfrist item info.
+            /// </summary>
+            [RepositoryItemInfo("d3f2e730-8852-4bd8-b49c-9108a38b507e")]
+            public virtual RepoItemInfo DfFristtage_letzte_ZahlungsfristInfo
+            {
+                get
+                {
+                    return _dffristtage_letzte_zahlungsfristInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PostenMitLetzterMahnungVor item.
+            /// </summary>
+            [RepositoryItem("db0bbf09-c32c-40d8-9f55-1c83fc1152aa")]
+            public virtual Ranorex.Text PostenMitLetzterMahnungVor
+            {
+                get
+                {
+                    return _postenmitletztermahnungvorInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PostenMitLetzterMahnungVor item info.
+            /// </summary>
+            [RepositoryItemInfo("db0bbf09-c32c-40d8-9f55-1c83fc1152aa")]
+            public virtual RepoItemInfo PostenMitLetzterMahnungVorInfo
+            {
+                get
+                {
+                    return _postenmitletztermahnungvorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CbZlvs item.
+            /// </summary>
+            [RepositoryItem("0ecca41f-131f-433a-8cfd-cf1ef1e0906e")]
+            public virtual Ranorex.CheckBox CbZlvs
+            {
+                get
+                {
+                    return _cbzlvsInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CbZlvs item info.
+            /// </summary>
+            [RepositoryItemInfo("0ecca41f-131f-433a-8cfd-cf1ef1e0906e")]
+            public virtual RepoItemInfo CbZlvsInfo
+            {
+                get
+                {
+                    return _cbzlvsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxCbG item.
+            /// </summary>
+            [RepositoryItem("ead707a0-9206-46db-b45a-ceea5d9f9940")]
+            public virtual Ranorex.CheckBox CheckBoxCbG
+            {
+                get
+                {
+                    return _checkboxcbgInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxCbG item info.
+            /// </summary>
+            [RepositoryItemInfo("ead707a0-9206-46db-b45a-ceea5d9f9940")]
+            public virtual RepoItemInfo CheckBoxCbGInfo
+            {
+                get
+                {
+                    return _checkboxcbgInfo;
                 }
             }
 
@@ -1772,52 +1870,116 @@ namespace B_MNDR_001
                     return _cbkeinenegsumInfo;
                 }
             }
+        }
+
+        /// <summary>
+        /// The Register_SelektionFolder folder.
+        /// </summary>
+        [RepositoryFolder("259036b5-4fcb-4eeb-abb0-bd27226bf1f0")]
+        public partial class Register_SelektionFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _kontonrvonInfo;
+            RepoItemInfo _textbis_konto_bisInfo;
+            RepoItemInfo _dfland1Info;
+            RepoItemInfo _dfklktvInfo;
+            RepoItemInfo _dfland2Info;
+            RepoItemInfo _dfadgaInfo;
+            RepoItemInfo _dfadgrvonInfo;
+            RepoItemInfo _textbis1Info;
+            RepoItemInfo _dfcd1Info;
+            RepoItemInfo _dfadgrbisInfo;
+            RepoItemInfo _dfvertreterInfo;
+            RepoItemInfo _dfadrbetreuerInfo;
 
             /// <summary>
-            /// The DfKlktV item.
+            /// Creates a new Register_Selektion  folder.
             /// </summary>
-            [RepositoryItem("6195b028-5a9b-4597-80c7-f2c0e4c93546")]
-            public virtual Ranorex.Text DfKlktV
+            public Register_SelektionFolder(RepoGenBaseFolder parentFolder) :
+                    base("Register_Selektion", "container[@controlname='ClientArea']/tabpagelist[@controlname='picTabs']/tabpage[@controlname='tpSelektion']", parentFolder, 30000, null, false, "259036b5-4fcb-4eeb-abb0-bd27226bf1f0", "")
+            {
+                _kontonrvonInfo = new RepoItemInfo(this, "KontoNrVon", "text[@controlname='dfKlktV']/text[@accessiblename='Konto-Nr  von']", "", 30000, null, "3325e6ff-3b46-4efd-b297-2b7ab306cee7");
+                _textbis_konto_bisInfo = new RepoItemInfo(this, "TextBis_Konto_bis", "text[@controlname='dfKlktB']/text[@accessiblename='bis']", "", 30000, null, "ff9f5d95-2ae9-410c-8397-b7ab85ff20a9");
+                _dfland1Info = new RepoItemInfo(this, "DfLand1", "text[@controlname='dfLand1']", "", 30000, null, "1becf722-6d13-49ca-b546-43ef692d7bbf");
+                _dfklktvInfo = new RepoItemInfo(this, "DfKlktV", "text[@controlname='dfKlktV']", "", 30000, null, "6195b028-5a9b-4597-80c7-f2c0e4c93546");
+                _dfland2Info = new RepoItemInfo(this, "DfLand2", "text[@controlname='dfLand2']", "", 30000, null, "4d5fae77-f9ba-4978-a540-3b03f3778303");
+                _dfadgaInfo = new RepoItemInfo(this, "DfAdga", "text[@controlname='dfAdga']", "", 30000, null, "f8ef015a-658b-44cf-bcfa-d527b7972853");
+                _dfadgrvonInfo = new RepoItemInfo(this, "DfAdgrVon", "text[@controlname='dfAdgrVon']", "", 30000, null, "35be726a-c08e-42af-a713-9dde7aa11fd7");
+                _textbis1Info = new RepoItemInfo(this, "TextBis1", "text[@controlname='dfAdgrBis']/text[@accessiblename='bis']", "", 30000, null, "2668f38c-f508-4d53-a7ab-018ae7bc049f");
+                _dfcd1Info = new RepoItemInfo(this, "DfCd1", "text[@controlname='dfCd1']", "", 30000, null, "0c9942d3-0457-4f59-9f86-17032da14391");
+                _dfadgrbisInfo = new RepoItemInfo(this, "DfAdgrBis", "text[@controlname='dfAdgrBis']", "", 30000, null, "0635a41f-ce75-4a96-97b1-281534bcee64");
+                _dfvertreterInfo = new RepoItemInfo(this, "DfVertreter", "text[@controlname='dfVertreter']", "", 30000, null, "ca6d07a4-3f5f-431b-b9a8-f24f68a9a7a8");
+                _dfadrbetreuerInfo = new RepoItemInfo(this, "DfAdrBetreuer", "text[@controlname='dfAdr_betreuer']", "", 30000, null, "fe470deb-28fe-48a2-bd55-c17055a1c923");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("259036b5-4fcb-4eeb-abb0-bd27226bf1f0")]
+            public virtual Ranorex.TabPage Self
             {
                 get
                 {
-                    return _dfklktvInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _selfInfo.CreateAdapter<Ranorex.TabPage>(true);
                 }
             }
 
             /// <summary>
-            /// The DfKlktV item info.
+            /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("6195b028-5a9b-4597-80c7-f2c0e4c93546")]
-            public virtual RepoItemInfo DfKlktVInfo
+            [RepositoryItemInfo("259036b5-4fcb-4eeb-abb0-bd27226bf1f0")]
+            public virtual RepoItemInfo SelfInfo
             {
                 get
                 {
-                    return _dfklktvInfo;
+                    return _selfInfo;
                 }
             }
 
             /// <summary>
-            /// The TextBis item.
+            /// The KontoNrVon item.
+            /// </summary>
+            [RepositoryItem("3325e6ff-3b46-4efd-b297-2b7ab306cee7")]
+            public virtual Ranorex.Text KontoNrVon
+            {
+                get
+                {
+                    return _kontonrvonInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The KontoNrVon item info.
+            /// </summary>
+            [RepositoryItemInfo("3325e6ff-3b46-4efd-b297-2b7ab306cee7")]
+            public virtual RepoItemInfo KontoNrVonInfo
+            {
+                get
+                {
+                    return _kontonrvonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TextBis_Konto_bis item.
             /// </summary>
             [RepositoryItem("ff9f5d95-2ae9-410c-8397-b7ab85ff20a9")]
-            public virtual Ranorex.Text TextBis
+            public virtual Ranorex.Text TextBis_Konto_bis
             {
                 get
                 {
-                    return _textbisInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _textbis_konto_bisInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The TextBis item info.
+            /// The TextBis_Konto_bis item info.
             /// </summary>
             [RepositoryItemInfo("ff9f5d95-2ae9-410c-8397-b7ab85ff20a9")]
-            public virtual RepoItemInfo TextBisInfo
+            public virtual RepoItemInfo TextBis_Konto_bisInfo
             {
                 get
                 {
-                    return _textbisInfo;
+                    return _textbis_konto_bisInfo;
                 }
             }
 
@@ -1842,6 +2004,30 @@ namespace B_MNDR_001
                 get
                 {
                     return _dfland1Info;
+                }
+            }
+
+            /// <summary>
+            /// The DfKlktV item.
+            /// </summary>
+            [RepositoryItem("6195b028-5a9b-4597-80c7-f2c0e4c93546")]
+            public virtual Ranorex.Text DfKlktV
+            {
+                get
+                {
+                    return _dfklktvInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfKlktV item info.
+            /// </summary>
+            [RepositoryItemInfo("6195b028-5a9b-4597-80c7-f2c0e4c93546")]
+            public virtual RepoItemInfo DfKlktVInfo
+            {
+                get
+                {
+                    return _dfklktvInfo;
                 }
             }
 
@@ -2034,78 +2220,6 @@ namespace B_MNDR_001
                 get
                 {
                     return _dfadrbetreuerInfo;
-                }
-            }
-
-            /// <summary>
-            /// The DfFristtage item.
-            /// </summary>
-            [RepositoryItem("d3f2e730-8852-4bd8-b49c-9108a38b507e")]
-            public virtual Ranorex.Text DfFristtage
-            {
-                get
-                {
-                    return _dffristtageInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The DfFristtage item info.
-            /// </summary>
-            [RepositoryItemInfo("d3f2e730-8852-4bd8-b49c-9108a38b507e")]
-            public virtual RepoItemInfo DfFristtageInfo
-            {
-                get
-                {
-                    return _dffristtageInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TitleBar100MahnvorschlagErstellenK item.
-            /// </summary>
-            [RepositoryItem("7b9a2167-5aa6-4a36-9d0b-b15050652dc3")]
-            public virtual Ranorex.TitleBar TitleBar100MahnvorschlagErstellenK
-            {
-                get
-                {
-                    return _titlebar100mahnvorschlagerstellenkInfo.CreateAdapter<Ranorex.TitleBar>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TitleBar100MahnvorschlagErstellenK item info.
-            /// </summary>
-            [RepositoryItemInfo("7b9a2167-5aa6-4a36-9d0b-b15050652dc3")]
-            public virtual RepoItemInfo TitleBar100MahnvorschlagErstellenKInfo
-            {
-                get
-                {
-                    return _titlebar100mahnvorschlagerstellenkInfo;
-                }
-            }
-
-            /// <summary>
-            /// The PostenMitLetzterMahnungVor item.
-            /// </summary>
-            [RepositoryItem("db0bbf09-c32c-40d8-9f55-1c83fc1152aa")]
-            public virtual Ranorex.Text PostenMitLetzterMahnungVor
-            {
-                get
-                {
-                    return _postenmitletztermahnungvorInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PostenMitLetzterMahnungVor item info.
-            /// </summary>
-            [RepositoryItemInfo("db0bbf09-c32c-40d8-9f55-1c83fc1152aa")]
-            public virtual RepoItemInfo PostenMitLetzterMahnungVorInfo
-            {
-                get
-                {
-                    return _postenmitletztermahnungvorInfo;
                 }
             }
         }
