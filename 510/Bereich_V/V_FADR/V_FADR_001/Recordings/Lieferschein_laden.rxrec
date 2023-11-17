@@ -211,6 +211,30 @@ mode="Global">
 				15.12.2020
 			</matchvalue>
 		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="80e25018-b93b-412b-b5ad-000e1ea0f8f5">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f3d7eeca-cb56-4d62-a2bd-1d8467a0d8bf"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colLsk_datum Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4199,69 +4223,40 @@ yiiigAooooA//9k=
 			<bindings>
 			</bindings>
 			<info
-			id="b2effbf4-30c9-4d8c-888a-2356dca7d621"
+			id="41795dd1-b7b6-45a5-af97-9859cc5b8ccc"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="11"
-				prefcap="cell"
-				rect="814,509,73,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						True
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						200002
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						colAufk_adr_kunde Row 1
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Selected, Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						200002
-					</attribute>
-				</element>
 				<path>
-					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAufk_adr_kunde Row 1']
+					/form[@controltypename='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Auftragsnummer]
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="d1a85891-da37-4581-a50c-7054d4b32fa9">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="18dead42-6c77-4207-994f-cf8e3ae4db7d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controltypename='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Auftragsnummer]/cell[@accessiblename~'colAufk_nr']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
