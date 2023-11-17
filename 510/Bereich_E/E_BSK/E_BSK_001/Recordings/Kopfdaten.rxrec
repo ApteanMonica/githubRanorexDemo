@@ -3945,6 +3945,8 @@ mode="Desktop">
 				<path>
 					/form[@controlname='mdiBestellung']/?/?/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup2']/button[@controlname='pbNew']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="7ebc89ad-1214-4816-8dab-7b35767889d0">
@@ -4005,6 +4007,8 @@ s0APFkVTCuitv3DbHhRxjpmimfY5/wDn5l/77NFO7E0mf//Z
 				<path>
 					/form[@controlname='mdiBestellung']//tabpage[@controlname='tabPageKopf']/?/?/form[@controlname='frmBsk']/?/?/text[@controlname='dfAdr_nr']/text[@accessiblename='Lieferant']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</setvaluerecorditem>
 		<keyitem
@@ -4027,8 +4031,134 @@ s0APFkVTCuitv3DbHhRxjpmimfY5/wDn5l/77NFO7E0mf//Z
 				<path>
 					/form[@controlname='mdiBestellung']//tabpage[@controlname='tabPageKopf']/?/?/form[@controlname='frmBsk']/?/?/text[@controlname='dfAdr_nr']/text[@accessiblename='Lieferant']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keyitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="ec286cd4-bc73-4fc2-949e-bc5d036f61e2"
+		waitaction="Exists"
+		waittimeout="180000ms">
+			<comment>
+				BAR: wait for eingebaut da sich neues Fenster hier öffnet.
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="24c7d3db-e1f2-47a9-9a88-b28335763cc1"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="11"
+				prefcap="titlebar"
+				rect="469,199,677,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Auswahl Bestellung
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Auswahl Bestellung
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='dlgBsk']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="01105c67-ea38-43c5-af35-e48bba0ca31f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="24c7d3db-e1f2-47a9-9a88-b28335763cc1"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="11"
+				prefcap="titlebar"
+				rect="469,199,677,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Auswahl Bestellung
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Auswahl Bestellung
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='dlgBsk']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Auswahl Bestellung
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -7943,6 +8073,8 @@ s0APFkVTCuitv3DbHhRxjpmimfY5/wDn5l/77NFO7E0mf//Z
 				<path>
 					/form[@controlname='dlgBsk']/button[@controlname='pbNeuVerwalten']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="2a11fb7b-8494-466c-a866-a5eb9b9c13a6">
@@ -8078,6 +8210,8 @@ RQAmBRgUtFACYFGBS0UAJgUYFLRQAYFFFFABRRRQAUUUUAf/2Q==
 				<path>
 					/form[@controlname='mdiBestellung']//tabpage[@controlname='tabPageKopf']/?/?/form[@controlname='frmBsk']/?/?/text[@controlname='dfBart_cd']/text[@accessiblename='Bestellart']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="1627eea6-82f6-4777-ad46-6f5aa74647d4">
@@ -8256,6 +8390,8 @@ SqTdLJbhwGlO0AEq3GRx1A/OqF5qd4kg8mcBTn+AH+IgfoBXRUU01fUD/9k=
 				<path>
 					/form[@controlname='mdiBestellung']//tabpage[@controlname='tabPageKopf']/?/?/form[@controlname='frmBsk']/?/?/text[@controlname='dfLag_nr']/text[@accessiblename='Lager']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="c25cc812-3a73-49a2-bc11-3249857837c1">
@@ -8448,6 +8584,8 @@ H1LVl/x4wf8AXNf5UUUVT3MT/9k=
 				<path>
 					/form[@controlname='mdiBestellung']/?/?/tabpagelist[@controlname='tabBsk']/tabpage[@accessiblename='&amp;Positionen']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<helperscreenshot
 			guid="bfb1d990-493d-4a63-b389-ef86fefd1f96">

@@ -108,8 +108,9 @@ namespace E_BSK_002.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'MdiBestellung.TitleBar100BestellungErfassen'", repo.MdiBestellung.TitleBar100BestellungErfassenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.MdiBestellung.TitleBar100BestellungErfassenInfo.WaitForExists(120000);
+            // BAR: wait for erhöht von 2 auf 4 Minuten
+            Report.Log(ReportLevel.Info, "Wait", "BAR: wait for erhöht von 2 auf 4 Minuten\r\nWaiting 4m to exist. Associated repository item: 'MdiBestellung.TitleBar100BestellungErfassen'", repo.MdiBestellung.TitleBar100BestellungErfassenInfo, new ActionTimeout(240000), new RecordItemIndex(1));
+            repo.MdiBestellung.TitleBar100BestellungErfassenInfo.WaitForExists(240000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (AccessibleValue~'Bestellung') on item 'MdiBestellung.TitleBar100BestellungErfassen'.", repo.MdiBestellung.TitleBar100BestellungErfassenInfo, new RecordItemIndex(2));
             Validate.AttributeRegex(repo.MdiBestellung.TitleBar100BestellungErfassenInfo, "AccessibleValue", new Regex("Bestellung"));

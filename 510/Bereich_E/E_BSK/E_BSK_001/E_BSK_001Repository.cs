@@ -705,6 +705,7 @@ namespace E_BSK_001
         public partial class DlgBskAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _pbneuverwaltenInfo;
+            RepoItemInfo _titlebar100auswahlbestellungInfo;
 
             /// <summary>
             /// Creates a new DlgBsk  folder.
@@ -713,6 +714,7 @@ namespace E_BSK_001
                     base("DlgBsk", "/form[@controlname='dlgBsk']", parentFolder, 30000, null, true, "bb16316f-117b-43f2-9078-5c125640d2f4", "")
             {
                 _pbneuverwaltenInfo = new RepoItemInfo(this, "PbNeuVerwalten", "button[@controlname='pbNeuVerwalten']", "", 30000, null, "9d495b47-d4c0-44a7-bb59-5fdaded00199");
+                _titlebar100auswahlbestellungInfo = new RepoItemInfo(this, "TitleBar100AuswahlBestellung", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "24c7d3db-e1f2-47a9-9a88-b28335763cc1");
             }
 
             /// <summary>
@@ -760,6 +762,30 @@ namespace E_BSK_001
                 get
                 {
                     return _pbneuverwaltenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100AuswahlBestellung item.
+            /// </summary>
+            [RepositoryItem("24c7d3db-e1f2-47a9-9a88-b28335763cc1")]
+            public virtual Ranorex.TitleBar TitleBar100AuswahlBestellung
+            {
+                get
+                {
+                    return _titlebar100auswahlbestellungInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100AuswahlBestellung item info.
+            /// </summary>
+            [RepositoryItemInfo("24c7d3db-e1f2-47a9-9a88-b28335763cc1")]
+            public virtual RepoItemInfo TitleBar100AuswahlBestellungInfo
+            {
+                get
+                {
+                    return _titlebar100auswahlbestellungInfo;
                 }
             }
         }

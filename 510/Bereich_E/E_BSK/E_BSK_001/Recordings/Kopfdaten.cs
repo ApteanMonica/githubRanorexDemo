@@ -128,17 +128,24 @@ namespace E_BSK_001.Recordings
             Keyboard.PrepareFocus(repo.MdiBestellung.FrmBsk.Lieferant);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
+            // BAR: wait for eingebaut da sich neues Fenster hier öffnet.
+            Report.Log(ReportLevel.Info, "Wait", "BAR: wait for eingebaut da sich neues Fenster hier öffnet.\r\nWaiting 3m to exist. Associated repository item: 'DlgBsk.TitleBar100AuswahlBestellung'", repo.DlgBsk.TitleBar100AuswahlBestellungInfo, new ActionTimeout(180000), new RecordItemIndex(3));
+            repo.DlgBsk.TitleBar100AuswahlBestellungInfo.WaitForExists(180000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Auswahl Bestellung') on item 'DlgBsk.TitleBar100AuswahlBestellung'.", repo.DlgBsk.TitleBar100AuswahlBestellungInfo, new RecordItemIndex(4));
+            Validate.AttributeContains(repo.DlgBsk.TitleBar100AuswahlBestellungInfo, "Text", "Auswahl Bestellung");
+            
             // XXX
-            Report.Log(ReportLevel.Info, "Mouse", "XXX\r\nMouse Left Click item 'DlgBsk.PbNeuVerwalten' at Center.", repo.DlgBsk.PbNeuVerwaltenInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "XXX\r\nMouse Left Click item 'DlgBsk.PbNeuVerwalten' at Center.", repo.DlgBsk.PbNeuVerwaltenInfo, new RecordItemIndex(5));
             repo.DlgBsk.PbNeuVerwalten.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Bestellart) on item 'MdiBestellung.FrmBsk.Bestellart'.", repo.MdiBestellung.FrmBsk.BestellartInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Bestellart) on item 'MdiBestellung.FrmBsk.Bestellart'.", repo.MdiBestellung.FrmBsk.BestellartInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.MdiBestellung.FrmBsk.BestellartInfo, "Text", Bestellart);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Lager) on item 'MdiBestellung.FrmBsk.Lager'.", repo.MdiBestellung.FrmBsk.LagerInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Lager) on item 'MdiBestellung.FrmBsk.Lager'.", repo.MdiBestellung.FrmBsk.LagerInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.MdiBestellung.FrmBsk.LagerInfo, "Text", Lager);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiBestellung.TabPagePositionen' at Center.", repo.MdiBestellung.TabPagePositionenInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiBestellung.TabPagePositionen' at Center.", repo.MdiBestellung.TabPagePositionenInfo, new RecordItemIndex(8));
             repo.MdiBestellung.TabPagePositionen.Click();
             
         }
