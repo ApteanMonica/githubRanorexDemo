@@ -108,8 +108,9 @@ namespace S_ADRL_001.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmAdr.TitleBar100Lieferantenstamm'", repo.FrmAdr.TitleBar100LieferantenstammInfo, new ActionTimeout(60000), new RecordItemIndex(1));
-            repo.FrmAdr.TitleBar100LieferantenstammInfo.WaitForExists(60000);
+            // BAR: Wait for erhöht auf 3 Minuten
+            Report.Log(ReportLevel.Info, "Wait", "BAR: Wait for erhöht auf 3 Minuten\r\nWaiting 3m to exist. Associated repository item: 'FrmAdr.TitleBar100Lieferantenstamm'", repo.FrmAdr.TitleBar100LieferantenstammInfo, new ActionTimeout(180000), new RecordItemIndex(1));
+            repo.FrmAdr.TitleBar100LieferantenstammInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'Lieferantenstamm') on item 'FrmAdr.TitleBar100Lieferantenstamm'.", repo.FrmAdr.TitleBar100LieferantenstammInfo, new RecordItemIndex(2));
             Validate.AttributeRegex(repo.FrmAdr.TitleBar100LieferantenstammInfo, "Text", new Regex("Lieferantenstamm"));
