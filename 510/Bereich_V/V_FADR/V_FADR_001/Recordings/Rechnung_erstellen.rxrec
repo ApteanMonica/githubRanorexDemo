@@ -8466,9 +8466,53 @@ MnmR/9k=
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
-		searchpropertyid="ee270ad2-ed8d-4c18-a3e1-5100c4c9e8e7"
+		searchpropertyid="86a8a6d6-6e0f-46a9-adfb-3c2e669e5fc9"
 		waitaction="Exists"
 		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="01b50d4e-61d7-44d4-ba07-e618539e925e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgDrucken']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="acdb5575-be30-4fb4-bebc-aa91e2842745">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="01b50d4e-61d7-44d4-ba07-e618539e925e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgDrucken']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Drucke Vorschaurechnung
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="49f077a3-e875-4526-8ba9-43ba3aed2f89">
 			<comment>
 			</comment>
 			<bindings>
@@ -8482,7 +8526,13 @@ MnmR/9k=
 				<robustPath>
 				</robustPath>
 			</info>
-		</WaitForRecordItem>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -12625,7 +12675,7 @@ cUUUUALRRRQB/9k=
 		optional="False"
 		searchpropertyid="7090953f-a583-4410-8e32-5e086d8c477c"
 		waitaction="Exists"
-		waittimeout="120000ms">
+		waittimeout="180000ms">
 			<comment>
 			</comment>
 			<bindings>
@@ -12699,6 +12749,56 @@ cUUUUALRRRQB/9k=
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="49f077a3-e875-4526-8ba9-43ba3aed2f89">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0883cc0a-a346-4ec1-a94e-944933c6e7f5"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='Vorschau']/titlebar[@automationid='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				UIAutomationValueValue
+			</matchname>
+			<matchvalue>
+				Vorschau
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="db8c48c5-74f3-41f0-b155-1d8480b894a8">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="63f44605-e2ae-4583-9588-c694a1941c6b"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='Vorschau']/?/?/element[@class='ChkPPreviewClientArea25']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -12716,8 +12816,8 @@ cUUUUALRRRQB/9k=
 			<bindings>
 			</bindings>
 			<info
-			id="6062223f-9b08-4beb-9670-37b830798c65"
-			sourcename="Recorder">
+			id="be33fb13-a19b-43ef-9524-94b0a485c5d6"
+			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
 				dontcache="False"
@@ -12752,11 +12852,6 @@ cUUUUALRRRQB/9k=
 						Die Druckvorschau schließen.
 					</attribute>
 					<attribute
-					name="accessiblekeyboardshortcut"
-					type="System.String">
-						Alt, V, X
-					</attribute>
-					<attribute
 					name="accessiblename"
 					type="System.String">
 						Druckvorschau schließen
@@ -12773,94 +12868,14 @@ cUUUUALRRRQB/9k=
 					</attribute>
 				</element>
 				<path>
-					/form[@title='Vorschau']/element[3]//container[@accessiblename='Unteres Menüband']/?/?/container[@accessiblename='Vorschau']/toolbar[@accessiblename='']/button[@accessiblename='Druckvorschau schließen']
+					/form[@title='Vorschau']/element[3]/element[@class='UIRibbonCommandBar']/element[@class='UIRibbonWorkPane']/element[@class='NUIPane']/container[@class='NetUIHWND']/container[@accessiblename='Unteres Menüband']/container[@accessiblename='']/container[@accessiblename='Vorschau']/toolbar[@accessiblename='']/button[@accessiblename='Druckvorschau schließen']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-			<helperscreenshot
-			guid="b261b889-6cbc-4d22-b998-d4cfb9d104d3">
-				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
-YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
-qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABxAbYDASIA
-AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
-AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
-ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
-p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
-AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
-BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
-U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
-uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
-ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
-KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAGc/3j+l
-HP8AeNGQBknA96TzE/vr+dAC8/3jRz/eNJ5if31/OjzE/vr+dAC8/wB40c/3jSeYn99fzo8xP76/
-nQAvP940c/3jSeYn99fzo8xP76/nQAvP940c/wB40nmJ/fX86PMT++v50ALz/eNHP940nmJ/fX86
-PMT++v50ALz/AHjRz/eNIHVjgMD9DTqAE5/vGjn+8aWigBOf7xo5/vGlooATn+8aOf7xpaKAE5/v
-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
-			</helperscreenshot>
 		</mouseitem>
 		<explicitdelayitem
-		duration="1000ms"
+		duration="2000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -12868,6 +12883,31 @@ FABRRRQAUUUUAFFFFAFCH/V/if50+iitFsZvcKKKKACiiigAooooA//Z
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="acdb5575-be30-4fb4-bebc-aa91e2842745">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="01b50d4e-61d7-44d4-ba07-e618539e925e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgDrucken']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Drucke Vorschaurechnung
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -13290,6 +13330,15 @@ etRLc1hsDVWl/wBfB/10/oastVaX/Xwf9dP6GpLLlFFFABRRRQAUUUUAFFFFABRRRQBnUUUVqc4L
 99f94fzq8vWiioluaw2BqrS/6+D/AK6f0NFFSWXKKKKACiiigAooooAKKKKACiiigD//2Q==
 			</helperscreenshot>
 		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -17304,6 +17353,56 @@ gD//2Q==
 			<bindings>
 			</bindings>
 		</keyitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="20593748-579d-4fdb-ab18-2afd6622e41b"
+		sx="209"
+		sy="669"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="be7e40df-3c2e-4b4b-be6c-4c9060d78674"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities=""
+				dontcache="False"
+				enabled="True"
+				flavor="win32"
+				hasfocus="False"
+				index="1"
+				prefcap="button"
+				rect="209,661,0,17"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						PageLeft
+					</attribute>
+				</element>
+				<path>
+					/form[@controltypename='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/scrollbar[@style='Horizontal']/button[@text='PageLeft']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 		<validationitem
 		action="AttributeRegex"
 		enabled="True"

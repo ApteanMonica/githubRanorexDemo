@@ -85,8 +85,8 @@ namespace B_MNDR_001.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmVorschlagErstellen.TitleBar100MahnvorschlagErstellenK'", repo.FrmVorschlagErstellen.TitleBar100MahnvorschlagErstellenKInfo, new ActionTimeout(60000), new RecordItemIndex(1));
             repo.FrmVorschlagErstellen.TitleBar100MahnvorschlagErstellenKInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmVorschlagErstellen.TpFaelligkeit'.", repo.FrmVorschlagErstellen.TpFaelligkeitInfo, new RecordItemIndex(2));
-            Validate.Exists(repo.FrmVorschlagErstellen.TpFaelligkeitInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Mahnvorschlag erstellen Kunden') on item 'FrmVorschlagErstellen.TitleBar100MahnvorschlagErstellenK'.", repo.FrmVorschlagErstellen.TitleBar100MahnvorschlagErstellenKInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.FrmVorschlagErstellen.TitleBar100MahnvorschlagErstellenKInfo, "Text", "Mahnvorschlag erstellen Kunden");
             
         }
 

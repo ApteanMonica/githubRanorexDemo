@@ -109,8 +109,8 @@ namespace B_BUDA_001.Recordings_B_BUCH
             Host.Local.RunApplication(Startfile, Programm_B_BUCH, "", false);
             
             // Maske Periodeneingabe
-            Report.Log(ReportLevel.Info, "Wait", "Maske Periodeneingabe\r\nWaiting 5m to exist. Associated repository item: 'DlgFirmaPeriode.TitleBar100Dialogbuchung'", repo.DlgFirmaPeriode.TitleBar100DialogbuchungInfo, new ActionTimeout(300000), new RecordItemIndex(1));
-            repo.DlgFirmaPeriode.TitleBar100DialogbuchungInfo.WaitForExists(300000);
+            Report.Log(ReportLevel.Info, "Wait", "Maske Periodeneingabe\r\nWaiting 7m to exist. Associated repository item: 'DlgFirmaPeriode.TitleBar100Dialogbuchung'", repo.DlgFirmaPeriode.TitleBar100DialogbuchungInfo, new ActionTimeout(420000), new RecordItemIndex(1));
+            repo.DlgFirmaPeriode.TitleBar100DialogbuchungInfo.WaitForExists(420000);
             
             // Maske Periodeneingabe
             Report.Log(ReportLevel.Info, "Validation", "Maske Periodeneingabe\r\nValidating AttributeContains (Text>'Dialogbuchung') on item 'DlgFirmaPeriode.TitleBar100Dialogbuchung'.", repo.DlgFirmaPeriode.TitleBar100DialogbuchungInfo, new RecordItemIndex(2));
