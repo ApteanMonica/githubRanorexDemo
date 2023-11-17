@@ -31,7 +31,7 @@ mode="Desktop">
 	</variables>
 	<recorditems>
 		<validationitem
-		action="Exists"
+		action="AttributeContains"
 		enabled="True"
 		optional="False"
 		searchpropertyid="61c894b6-eff9-4587-bd90-df5f5de3818f">
@@ -52,12 +52,43 @@ mode="Desktop">
 				Text
 			</matchname>
 			<matchvalue>
-				yourtext
+				Überweisungs-Datenträger
 			</matchvalue>
 		</validationitem>
+		<keysequenceitem
+		KeySequence=""
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="e51d0adb-40e6-404c-aa2a-161b98bc92f9">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="XML_Pfad_Datei">
+				</binding>
+			</bindings>
+		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="98a33443-3ca2-491a-8ae0-7f494b2b0fb7"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
 		<setvaluerecorditem
 		attrname="Text"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="9a2cee59-473d-4331-bf25-e99664a5b14c">
 			<comment>
@@ -81,7 +112,7 @@ mode="Desktop">
 			</AttributeValue>
 		</setvaluerecorditem>
 		<explicitdelayitem
-		duration="2000ms"
+		duration="1000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -141,7 +172,7 @@ mode="Desktop">
 			</bindings>
 		</keyitem>
 		<explicitdelayitem
-		duration="5000ms"
+		duration="2000ms"
 		enabled="True"
 		optional="False">
 			<comment>

@@ -1781,26 +1781,15 @@ ipaKAIvLFHlipaKAI/LFAjFSUUAIBiloooAKKKKAP//Z
 				</robustPath>
 			</info>
 		</mouseitem>
-		<WaitForRecordItem
+		<explicitdelayitem
+		duration="2000ms"
 		enabled="True"
-		optional="False"
-		searchpropertyid="158913d2-40ad-4054-8c4e-ed1f38822765"
-		waitaction="Exists"
-		waittimeout="2000ms">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="fa28b02c-ac44-448b-91f7-2d81ac207419"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
+		</explicitdelayitem>
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"

@@ -217,8 +217,8 @@ namespace B_ZAHL_003.Recordings_B_ZAHL
             Keyboard.PrepareFocus(repo.TitleBar100LieferantenBankbelegB);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 300ms.", new RecordItemIndex(23));
-            Delay.Duration(300, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(23));
+            Delay.Duration(2000, false);
             
         }
 

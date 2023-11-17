@@ -88,8 +88,8 @@ namespace B_ZAHL_003.Recordings_B_ZAHL
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2s to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(2000), new RecordItemIndex(3));
-            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(2000);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));
+            Delay.Duration(2000, false);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es wurden 2 Belege mit Aviso erstellt -\r\nBitte Avisodruck durchführen!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es wurden 2 Belege mit Aviso erstellt -\r\nBitte Avisodruck durchführen!");
