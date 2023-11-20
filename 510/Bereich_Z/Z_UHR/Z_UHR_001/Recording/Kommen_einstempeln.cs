@@ -240,9 +240,6 @@ namespace Z_UHR_001.Recording
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Name_MA) on item 'FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersName_Zeile_mit_Variable_Personal_Nr'.", repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersName_Zeile_mit_Variable_Personal_NrInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersName_Zeile_mit_Variable_Personal_NrInfo, "Text", Name_MA);
             
-            // Beginn
-            Report.Log(ReportLevel.Info, "Section", "Beginn", new RecordItemIndex(15));
-            
         }
 
 #region Image Feature Data
