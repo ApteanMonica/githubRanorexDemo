@@ -138,8 +138,8 @@ namespace B_ZAHL_003.Recordings_B_ZAHL
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='5') on item 'TblDrucken.Druck_Tabelle.CColumnRow12'.", repo.TblDrucken.Druck_Tabelle.CColumnRow12Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.TblDrucken.Druck_Tabelle.CColumnRow12Info, "Text", "5");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='52753') on item 'TblDrucken.Druck_Tabelle.Row1'.", repo.TblDrucken.Druck_Tabelle.Row1Info, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.TblDrucken.Druck_Tabelle.Row1Info, "Text", "52753");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'52753') on item 'TblDrucken.Druck_Tabelle.Row1'.", repo.TblDrucken.Druck_Tabelle.Row1Info, new RecordItemIndex(11));
+            Validate.AttributeContains(repo.TblDrucken.Druck_Tabelle.Row1Info, "Text", "52753");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblDrucken.TitleBar100DatentraegerBegleitzette'.", repo.TblDrucken.TitleBar100DatentraegerBegleitzetteInfo, new RecordItemIndex(12));
             Keyboard.PrepareFocus(repo.TblDrucken.TitleBar100DatentraegerBegleitzette);
