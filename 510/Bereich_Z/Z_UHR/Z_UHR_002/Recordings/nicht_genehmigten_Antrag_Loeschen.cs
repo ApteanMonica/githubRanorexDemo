@@ -108,8 +108,8 @@ namespace Z_UHR_002.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Down}{Return}' with focus on 'FrmUhr.PbExtrasExtras'.", repo.FrmUhr.PbExtrasExtrasInfo, new RecordItemIndex(1));
             repo.FrmUhr.PbExtrasExtras.PressKeys("{Down}{Return}");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgKorrekturZeiten.TitleBar100KorrekturMitarbeiterzeit'", repo.DlgKorrekturZeiten.TitleBar100KorrekturMitarbeiterzeitInfo, new ActionTimeout(120000), new RecordItemIndex(2));
-            repo.DlgKorrekturZeiten.TitleBar100KorrekturMitarbeiterzeitInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgKorrekturZeiten.TitleBar100KorrekturMitarbeiterzeit'", repo.DlgKorrekturZeiten.TitleBar100KorrekturMitarbeiterzeitInfo, new ActionTimeout(180000), new RecordItemIndex(2));
+            repo.DlgKorrekturZeiten.TitleBar100KorrekturMitarbeiterzeitInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Korrektur Mitarbeiterzeiten') on item 'DlgKorrekturZeiten.TitleBar100KorrekturMitarbeiterzeit'.", repo.DlgKorrekturZeiten.TitleBar100KorrekturMitarbeiterzeitInfo, new RecordItemIndex(3));
             Validate.AttributeContains(repo.DlgKorrekturZeiten.TitleBar100KorrekturMitarbeiterzeitInfo, "Text", "Korrektur Mitarbeiterzeiten");

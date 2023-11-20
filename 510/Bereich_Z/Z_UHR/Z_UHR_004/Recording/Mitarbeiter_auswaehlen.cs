@@ -105,8 +105,8 @@ namespace Z_UHR_004.Recording
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$pers_nr' with focus on 'FrmUhr.Mitarbeiter_510_521'.", repo.FrmUhr.Mitarbeiter_510_521Info, new RecordItemIndex(0));
-            repo.FrmUhr.Mitarbeiter_510_521.PressKeys(pers_nr);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Mitarbeiter' with focus on 'FrmUhr.Mitarbeiter_510_521'.", repo.FrmUhr.Mitarbeiter_510_521Info, new RecordItemIndex(0));
+            repo.FrmUhr.Mitarbeiter_510_521.PressKeys(Mitarbeiter);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Down' Press.", new RecordItemIndex(1));
             Keyboard.Press(System.Windows.Forms.Keys.Down, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
