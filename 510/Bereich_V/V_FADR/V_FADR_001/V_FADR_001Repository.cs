@@ -36,6 +36,7 @@ namespace V_FADR_001
         V_FADR_001RepositoryFolders.TblDruckenAppFolder _tbldrucken;
         V_FADR_001RepositoryFolders.DlgRechAenderungAppFolder _dlgrechaenderung;
         V_FADR_001RepositoryFolders.VFADR1AppFolder _vfadr1;
+        V_FADR_001RepositoryFolders.WSPETAppFolder _wspet;
 
         /// <summary>
         /// Gets the singleton class instance representing the V_FADR_001Repository element repository.
@@ -61,21 +62,10 @@ namespace V_FADR_001
             _tbldrucken = new V_FADR_001RepositoryFolders.TblDruckenAppFolder(this);
             _dlgrechaenderung = new V_FADR_001RepositoryFolders.DlgRechAenderungAppFolder(this);
             _vfadr1 = new V_FADR_001RepositoryFolders.VFADR1AppFolder(this);
+            _wspet = new V_FADR_001RepositoryFolders.WSPETAppFolder(this);
         }
 
 #region Variables
-
-        string _Rechnungsart_E = "";
-
-        /// <summary>
-        /// Gets or sets the value of variable Rechnungsart_E.
-        /// </summary>
-        [TestVariable("ff5f3292-5c4d-4cc1-a0eb-a6e9e8ff40aa")]
-        public string Rechnungsart_E
-        {
-            get { return _Rechnungsart_E; }
-            set { _Rechnungsart_E = value; }
-        }
 
         string _Auftragsnummer = "201900005";
 
@@ -194,6 +184,15 @@ namespace V_FADR_001
         public virtual V_FADR_001RepositoryFolders.VFADR1AppFolder VFADR1
         {
             get { return _vfadr1; }
+        }
+
+        /// <summary>
+        /// The WSPET folder.
+        /// </summary>
+        [RepositoryFolder("7de645ae-f322-4b11-bf13-2d07e4093127")]
+        public virtual V_FADR_001RepositoryFolders.WSPETAppFolder WSPET
+        {
+            get { return _wspet; }
         }
     }
 
@@ -531,6 +530,8 @@ namespace V_FADR_001
         [RepositoryFolder("74563929-125c-497e-87f4-cc5cefa7a726")]
         public partial class Rech_art_FlexGridFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _row1column0Info;
+            RepoItemInfo _row1Info;
             RepoItemInfo _rechnungsartInfo;
             RepoItemInfo _colreabezrow1Info;
             RepoItemInfo _colreabezrow2Info;
@@ -545,6 +546,8 @@ namespace V_FADR_001
             public Rech_art_FlexGridFolder(RepoGenBaseFolder parentFolder) :
                     base("Rech_art_FlexGrid", "container/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "74563929-125c-497e-87f4-cc5cefa7a726", "")
             {
+                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']", "", 30000, null, "ac72b79d-6f25-4c16-a7c0-a5e86c9f47f5");
+                _row1Info = new RepoItemInfo(this, "Row1", "row[@accessiblename='Row 1']", "", 30000, null, "de0d0672-6a95-40bf-82d3-241ece2dc3e0");
                 _rechnungsartInfo = new RepoItemInfo(this, "Rechnungsart", "row[@accessiblename='Row 1']/cell[@accessiblename='colRech_art Row 1']", "", 30000, null, "66aa28fa-e465-4f91-aa65-97b931a960d6");
                 _colreabezrow1Info = new RepoItemInfo(this, "ColReaBezRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colRea_bez Row 1']", "", 30000, null, "8b36b866-61e3-4994-be4c-d576fc872794");
                 _colreabezrow2Info = new RepoItemInfo(this, "ColReaBezRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colRea_bez Row 2']", "", 30000, null, "8aa6d5db-9129-4d4a-b2d6-0fbc25b954f8");
@@ -575,6 +578,54 @@ namespace V_FADR_001
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item.
+            /// </summary>
+            [RepositoryItem("ac72b79d-6f25-4c16-a7c0-a5e86c9f47f5")]
+            public virtual Ranorex.Cell Row1Column0
+            {
+                get
+                {
+                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("ac72b79d-6f25-4c16-a7c0-a5e86c9f47f5")]
+            public virtual RepoItemInfo Row1Column0Info
+            {
+                get
+                {
+                    return _row1column0Info;
+                }
+            }
+
+            /// <summary>
+            /// The Row1 item.
+            /// </summary>
+            [RepositoryItem("de0d0672-6a95-40bf-82d3-241ece2dc3e0")]
+            public virtual Ranorex.Row Row1
+            {
+                get
+                {
+                    return _row1Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1 item info.
+            /// </summary>
+            [RepositoryItemInfo("de0d0672-6a95-40bf-82d3-241ece2dc3e0")]
+            public virtual RepoItemInfo Row1Info
+            {
+                get
+                {
+                    return _row1Info;
                 }
             }
 
@@ -959,7 +1010,7 @@ namespace V_FADR_001
             public VFADRAppFolder(RepoGenBaseFolder parentFolder) :
                     base("VFADR", "/contextmenu[@processname='V_FADR']", parentFolder, 30000, null, true, "44e5a80f-3069-4e53-96c1-2baae2b496a6", "")
             {
-                _warumwirdauftragnichtfakturiertInfo = new RepoItemInfo(this, "WarumWirdAuftragNichtFakturiert", "menuitem[@accessiblename>'Warum wird Auftrag nicht']", "", 30000, null, "7dea5235-099a-407d-a45c-c221767cdc56");
+                _warumwirdauftragnichtfakturiertInfo = new RepoItemInfo(this, "WarumWirdAuftragNichtFakturiert", "menuitem[@accessiblename~'Warum wird Auftrag nicht']", "", 30000, null, "7dea5235-099a-407d-a45c-c221767cdc56");
                 _tabelleInfo = new RepoItemInfo(this, "Tabelle", "menuitem[@accessiblename='Tabelle']", "", 30000, null, "c3a122d4-b792-47c6-9569-fc8c29f6c9ef");
                 _rechnungaendernInfo = new RepoItemInfo(this, "RechnungAendern", "menuitem[@accessiblename='Rechnung ändern']", "", 30000, null, "df70fd31-143b-439c-a54a-060892b851b2");
             }
@@ -1160,7 +1211,7 @@ namespace V_FADR_001
         public partial class DlgKeineFakturaAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _titlebar100warumwirdeinbestimmterInfo;
-            RepoItemInfo _auftragsnummerInfo;
+            RepoItemInfo _auftragsnummer_510Info;
             RepoItemInfo _pbpruefenInfo;
             RepoItemInfo _schliessenInfo;
             RepoItemInfo _colaktionrow1Info;
@@ -1172,7 +1223,7 @@ namespace V_FADR_001
                     base("DlgKeineFaktura", "/form[@controlname='dlgKeineFaktura']", parentFolder, 30000, null, true, "c677d87d-9cd9-4c89-bdb9-24bdf2e4c065", "")
             {
                 _titlebar100warumwirdeinbestimmterInfo = new RepoItemInfo(this, "TitleBar100WarumWirdEinBestimmter", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "b2e2e4f3-f1af-4ce1-8bbb-4265cb23b092");
-                _auftragsnummerInfo = new RepoItemInfo(this, "Auftragsnummer", "text[@controlname='dfAufk_nr']/text[@accessiblename='Auftragsnummer']", "", 30000, null, "cc3b7801-012a-4ab4-8641-cd474a10da0c");
+                _auftragsnummer_510Info = new RepoItemInfo(this, "Auftragsnummer_510", "text[@controlname='dfAufk_nr']/text[@accessiblename='Auftragsnummer']", "", 30000, null, "cc3b7801-012a-4ab4-8641-cd474a10da0c");
                 _pbpruefenInfo = new RepoItemInfo(this, "PbPruefen", "button[@controlname='pbPrüfen']", "", 30000, null, "2c060f38-6f6f-4bde-b19b-15b2499783ce");
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "e64b62c8-06b9-4000-bb7a-fcc0ff8c65b3");
                 _colaktionrow1Info = new RepoItemInfo(this, "ColAktionRow1", "container[@controlname='groupBox3']/container[@controlname='tblInfo']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAktion Row 1']", "", 30000, null, "3e724424-b188-47ee-a119-0883eac49b70");
@@ -1227,26 +1278,26 @@ namespace V_FADR_001
             }
 
             /// <summary>
-            /// The Auftragsnummer item.
+            /// The Auftragsnummer_510 item.
             /// </summary>
             [RepositoryItem("cc3b7801-012a-4ab4-8641-cd474a10da0c")]
-            public virtual Ranorex.Text Auftragsnummer
+            public virtual Ranorex.Text Auftragsnummer_510
             {
                 get
                 {
-                    return _auftragsnummerInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _auftragsnummer_510Info.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The Auftragsnummer item info.
+            /// The Auftragsnummer_510 item info.
             /// </summary>
             [RepositoryItemInfo("cc3b7801-012a-4ab4-8641-cd474a10da0c")]
-            public virtual RepoItemInfo AuftragsnummerInfo
+            public virtual RepoItemInfo Auftragsnummer_510Info
             {
                 get
                 {
-                    return _auftragsnummerInfo;
+                    return _auftragsnummer_510Info;
                 }
             }
 
@@ -1645,7 +1696,6 @@ namespace V_FADR_001
         {
             RepoItemInfo _titlebar100rechnungInfo;
             RepoItemInfo _schliessenInfo;
-            RepoItemInfo _ccolumnrow7Info;
             RepoItemInfo _row7Info;
 
             /// <summary>
@@ -1656,8 +1706,7 @@ namespace V_FADR_001
             {
                 _titlebar100rechnungInfo = new RepoItemInfo(this, "TitleBar100Rechnung", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "993833bc-21b5-4960-8064-635373aefffe");
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar/button[@accessiblename='Schließen']", "", 30000, null, "4d0be3e7-c0fc-464c-a8c9-04ac493e80c3");
-                _ccolumnrow7Info = new RepoItemInfo(this, "CColumnRow7", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='cColumn Row 7' and @text='13']", "", 30000, null, "cd6cd4a9-351b-4aec-9382-a19b0fb63d95");
-                _row7Info = new RepoItemInfo(this, "Row7", "container/element/table/row[@accessiblename='Row 7']", "", 60000, null, "3292027d-914f-4490-b79c-ff5759dd73b1");
+                _row7Info = new RepoItemInfo(this, "Row7", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 7']", "", 60000, null, "3292027d-914f-4490-b79c-ff5759dd73b1");
             }
 
             /// <summary>
@@ -1729,30 +1778,6 @@ namespace V_FADR_001
                 get
                 {
                     return _schliessenInfo;
-                }
-            }
-
-            /// <summary>
-            /// The CColumnRow7 item.
-            /// </summary>
-            [RepositoryItem("cd6cd4a9-351b-4aec-9382-a19b0fb63d95")]
-            public virtual Ranorex.Cell CColumnRow7
-            {
-                get
-                {
-                    return _ccolumnrow7Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CColumnRow7 item info.
-            /// </summary>
-            [RepositoryItemInfo("cd6cd4a9-351b-4aec-9382-a19b0fb63d95")]
-            public virtual RepoItemInfo CColumnRow7Info
-            {
-                get
-                {
-                    return _ccolumnrow7Info;
                 }
             }
 
@@ -1987,6 +2012,72 @@ namespace V_FADR_001
                 get
                 {
                     return _dropdownInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The WSPETAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("7de645ae-f322-4b11-bf13-2d07e4093127")]
+        public partial class WSPETAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _wspetInfo;
+
+            /// <summary>
+            /// Creates a new WSPET  folder.
+            /// </summary>
+            public WSPETAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("WSPET", "", parentFolder, 30000, null, true, "7de645ae-f322-4b11-bf13-2d07e4093127", "")
+            {
+                _wspetInfo = new RepoItemInfo(this, "WSPET", "", "", 30000, null, "27276b87-72de-48a2-9c53-1f113614590c");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("7de645ae-f322-4b11-bf13-2d07e4093127")]
+            public virtual Ranorex.Host Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Host>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("7de645ae-f322-4b11-bf13-2d07e4093127")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WSPET item.
+            /// </summary>
+            [RepositoryItem("27276b87-72de-48a2-9c53-1f113614590c")]
+            public virtual Ranorex.Host WSPET
+            {
+                get
+                {
+                    return _wspetInfo.CreateAdapter<Ranorex.Host>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WSPET item info.
+            /// </summary>
+            [RepositoryItemInfo("27276b87-72de-48a2-9c53-1f113614590c")]
+            public virtual RepoItemInfo WSPETInfo
+            {
+                get
+                {
+                    return _wspetInfo;
                 }
             }
         }
