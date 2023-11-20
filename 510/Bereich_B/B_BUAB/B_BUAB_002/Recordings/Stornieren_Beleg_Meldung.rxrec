@@ -4449,23 +4449,23 @@ ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//9k=
 		optional="False"
 		searchpropertyid="f08a7a64-4a0b-44b1-bbbe-c25dd1fd7fb8"
 		waitaction="Exists"
-		waittimeout="30000ms">
+		waittimeout="60000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="e1f665b7-1048-4dd8-a8c1-019dc033e52d"
+			id="994b8b57-81bb-412e-94d6-a1262427a65c"
 			sourcename="RepositoryEditor">
 				<path>
-					/contextmenu[@processname='B_BUAB']/menuitem[@accessiblename='Stornieren']
+					/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
 		<validationitem
-		action="AttributeEqual"
+		action="AttributeContains"
 		enabled="True"
 		optional="False"
 		searchpropertyid="5e079707-f68a-4214-82fa-6119045aa36d">
@@ -4487,6 +4487,58 @@ ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//9k=
 			</matchname>
 			<matchvalue>
 				Stornieren
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="5e079707-f68a-4214-82fa-6119045aa36d">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="cc518ca7-97bd-4915-bc5d-18e72b1e153d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Buchung(en) stornieren? - Dies kann nicht r&#252;ckg&#228;ngig gemacht werden!
+&#10;
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="5e079707-f68a-4214-82fa-6119045aa36d">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="cc518ca7-97bd-4915-bc5d-18e72b1e153d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				&#10;Es wird immer die komplette (!) Buchung inkl. aller Positionen storniert, 
+auch wenn nur einzelne Zeilen zum Stornieren markiert sind
 			</matchvalue>
 		</validationitem>
 		<mouseitem
