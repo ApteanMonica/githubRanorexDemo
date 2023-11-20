@@ -135,8 +135,8 @@ namespace Z_PROJ_001.Recordings_z_proj
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmTabProjekt.Phasen_Tab_regex_Sonderzeichen' at Center.", repo.FrmTabProjekt.Phasen_Tab_regex_SonderzeichenInfo, new RecordItemIndex(1));
             repo.FrmTabProjekt.Phasen_Tab_regex_Sonderzeichen.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmTabProjekt.Register_Phasen.Row1'", repo.FrmTabProjekt.Register_Phasen.Row1Info, new ActionTimeout(120000), new RecordItemIndex(2));
-            repo.FrmTabProjekt.Register_Phasen.Row1Info.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FrmTabProjekt.Register_Phasen.Row1'", repo.FrmTabProjekt.Register_Phasen.Row1Info, new ActionTimeout(60000), new RecordItemIndex(2));
+            repo.FrmTabProjekt.Register_Phasen.Row1Info.WaitForExists(60000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasPspCodeRow1'.", repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasPspCodeRow1Info, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.FrmTabProjekt.Register_Phasen.Register_Phasen_Felder.ColPhasPspCodeRow1Info, "Text", "1");
