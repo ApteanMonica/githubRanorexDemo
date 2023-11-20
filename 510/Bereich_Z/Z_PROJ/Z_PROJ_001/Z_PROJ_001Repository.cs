@@ -1213,6 +1213,7 @@ namespace Z_PROJ_001
         {
             Z_PROJ_001RepositoryFolders.Register_Phasen_FelderFolder _register_phasen_felder;
             Z_PROJ_001RepositoryFolders.Register_Phasen_ZeilenFolder _register_phasen_zeilen;
+            RepoItemInfo _row1Info;
             FlexGrid_PhasenInfoClass _flexgrid_phasenInfo;
 
             /// <summary>
@@ -1223,6 +1224,7 @@ namespace Z_PROJ_001
             {
                 _register_phasen_felder = new Z_PROJ_001RepositoryFolders.Register_Phasen_FelderFolder(this);
                 _register_phasen_zeilen = new Z_PROJ_001RepositoryFolders.Register_Phasen_ZeilenFolder(this);
+                _row1Info = new RepoItemInfo(this, "Row1", "container[@controlname='cSplitContainer1']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblPhase']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']", "", 30000, null, "9b46c116-46a5-450b-83fa-e455bee457b7");
                 _flexgrid_phasenInfo = new FlexGrid_PhasenInfoClass(this);
             }
 
@@ -1303,6 +1305,30 @@ namespace Z_PROJ_001
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Row1 item.
+            /// </summary>
+            [RepositoryItem("9b46c116-46a5-450b-83fa-e455bee457b7")]
+            public virtual Ranorex.Row Row1
+            {
+                get
+                {
+                    return _row1Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1 item info.
+            /// </summary>
+            [RepositoryItemInfo("9b46c116-46a5-450b-83fa-e455bee457b7")]
+            public virtual RepoItemInfo Row1Info
+            {
+                get
+                {
+                    return _row1Info;
                 }
             }
 
