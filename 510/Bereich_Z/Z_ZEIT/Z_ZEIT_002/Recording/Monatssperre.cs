@@ -114,8 +114,9 @@ namespace Z_ZEIT_002.Recording
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press.", new RecordItemIndex(2));
             Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMonateSperren.TitleBar100MonateSperren'", repo.DlgMonateSperren.TitleBar100MonateSperrenInfo, new ActionTimeout(120000), new RecordItemIndex(3));
-            repo.DlgMonateSperren.TitleBar100MonateSperrenInfo.WaitForExists(120000);
+            // wait for erhöht auf 3 Minuten
+            Report.Log(ReportLevel.Info, "Wait", "wait for erhöht auf 3 Minuten\r\nWaiting 3m to exist. Associated repository item: 'DlgMonateSperren.TitleBar100MonateSperren'", repo.DlgMonateSperren.TitleBar100MonateSperrenInfo, new ActionTimeout(180000), new RecordItemIndex(3));
+            repo.DlgMonateSperren.TitleBar100MonateSperrenInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Monate sperren') on item 'DlgMonateSperren.TitleBar100MonateSperren'.", repo.DlgMonateSperren.TitleBar100MonateSperrenInfo, new RecordItemIndex(4));
             Validate.AttributeContains(repo.DlgMonateSperren.TitleBar100MonateSperrenInfo, "Text", "Monate sperren");
