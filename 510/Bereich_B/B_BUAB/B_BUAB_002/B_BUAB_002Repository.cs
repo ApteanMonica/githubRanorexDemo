@@ -900,8 +900,8 @@ namespace B_BUAB_002
         public partial class DlgMessageBoxAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _stornierenInfo;
-            RepoItemInfo _button0Info;
             RepoItemInfo _labelmeldungstextInfo;
+            RepoItemInfo _button0Info;
 
             /// <summary>
             /// Creates a new DlgMessageBox  folder.
@@ -910,8 +910,8 @@ namespace B_BUAB_002
                     base("DlgMessageBox", "/form[@controlname='dlgMessageBox']", parentFolder, 30000, null, true, "3e0b6215-fdab-46af-b200-a570eaf805df", "")
             {
                 _stornierenInfo = new RepoItemInfo(this, "Stornieren", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "994b8b57-81bb-412e-94d6-a1262427a65c");
-                _button0Info = new RepoItemInfo(this, "Button0", "button[@controlname='button0']", "", 30000, null, "d3b93458-8bf4-4ced-82a4-f53fd173b8d7");
                 _labelmeldungstextInfo = new RepoItemInfo(this, "LabelMeldungstext", "text[@controlname='labelMeldungstext']", "", 30000, null, "cc518ca7-97bd-4915-bc5d-18e72b1e153d");
+                _button0Info = new RepoItemInfo(this, "Button0", "button[@controlname='button0']", "", 30000, null, "d3b93458-8bf4-4ced-82a4-f53fd173b8d7");
             }
 
             /// <summary>
@@ -963,30 +963,6 @@ namespace B_BUAB_002
             }
 
             /// <summary>
-            /// The Button0 item.
-            /// </summary>
-            [RepositoryItem("d3b93458-8bf4-4ced-82a4-f53fd173b8d7")]
-            public virtual Ranorex.Button Button0
-            {
-                get
-                {
-                    return _button0Info.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Button0 item info.
-            /// </summary>
-            [RepositoryItemInfo("d3b93458-8bf4-4ced-82a4-f53fd173b8d7")]
-            public virtual RepoItemInfo Button0Info
-            {
-                get
-                {
-                    return _button0Info;
-                }
-            }
-
-            /// <summary>
             /// The LabelMeldungstext item.
             /// </summary>
             [RepositoryItem("cc518ca7-97bd-4915-bc5d-18e72b1e153d")]
@@ -1007,6 +983,30 @@ namespace B_BUAB_002
                 get
                 {
                     return _labelmeldungstextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Button0 item.
+            /// </summary>
+            [RepositoryItem("d3b93458-8bf4-4ced-82a4-f53fd173b8d7")]
+            public virtual Ranorex.Button Button0
+            {
+                get
+                {
+                    return _button0Info.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Button0 item info.
+            /// </summary>
+            [RepositoryItemInfo("d3b93458-8bf4-4ced-82a4-f53fd173b8d7")]
+            public virtual RepoItemInfo Button0Info
+            {
+                get
+                {
+                    return _button0Info;
                 }
             }
         }

@@ -105,47 +105,50 @@ namespace B_ZAHL_003.Recordings_B_ZAHL
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDrucken.TitleBar100DruckeDatentraegerBegle'", repo.DlgDrucken.TitleBar100DruckeDatentraegerBegleInfo, new ActionTimeout(120000), new RecordItemIndex(0));
-            repo.DlgDrucken.TitleBar100DruckeDatentraegerBegleInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgDrucken.TitleBar100DruckeDatentraegerBegle'", repo.DlgDrucken.TitleBar100DruckeDatentraegerBegleInfo, new ActionTimeout(180000), new RecordItemIndex(0));
+            repo.DlgDrucken.TitleBar100DruckeDatentraegerBegleInfo.WaitForExists(180000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DlgDrucken.TitleBar100DruckeDatentraegerBegle'.", repo.DlgDrucken.TitleBar100DruckeDatentraegerBegleInfo, new RecordItemIndex(1));
-            Validate.Exists(repo.DlgDrucken.TitleBar100DruckeDatentraegerBegleInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Drucke Datenträger-Begleitzettel') on item 'DlgDrucken.TitleBar100DruckeDatentraegerBegle'.", repo.DlgDrucken.TitleBar100DruckeDatentraegerBegleInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.DlgDrucken.TitleBar100DruckeDatentraegerBegleInfo, "Text", "Drucke Datenträger-Begleitzettel");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbExport' at Center.", repo.DlgDrucken.PbExportInfo, new RecordItemIndex(2));
             repo.DlgDrucken.PbExport.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PbExportItems.Tabelle' at Center.", repo.PbExportItems.TabelleInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'PbExportItems.Tabelle'", repo.PbExportItems.TabelleInfo, new ActionTimeout(180000), new RecordItemIndex(3));
+            repo.PbExportItems.TabelleInfo.WaitForExists(180000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PbExportItems.Tabelle' at Center.", repo.PbExportItems.TabelleInfo, new RecordItemIndex(4));
             repo.PbExportItems.Tabelle.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblDrucken.Row1'", repo.TblDrucken.Row1Info, new ActionTimeout(120000), new RecordItemIndex(4));
-            repo.TblDrucken.Row1Info.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblDrucken.TitleBar100DatentraegerBegleitzette'", repo.TblDrucken.TitleBar100DatentraegerBegleitzetteInfo, new ActionTimeout(120000), new RecordItemIndex(5));
+            repo.TblDrucken.TitleBar100DatentraegerBegleitzetteInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$XML_Datei) on item 'TblDrucken.ChildTableWindow.CColumnRow1'.", repo.TblDrucken.ChildTableWindow.CColumnRow1Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.TblDrucken.ChildTableWindow.CColumnRow1Info, "Text", XML_Datei);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Datenträger-Begleitzettel') on item 'DlgDrucken.TitleBar100DruckeDatentraegerBegle'.", repo.DlgDrucken.TitleBar100DruckeDatentraegerBegleInfo, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.DlgDrucken.TitleBar100DruckeDatentraegerBegleInfo, "Text", "Datenträger-Begleitzettel");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblDrucken.ChildTableWindow.CDatumsspalteRow1'.", repo.TblDrucken.ChildTableWindow.CDatumsspalteRow1Info, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.TblDrucken.ChildTableWindow.CDatumsspalteRow1Info, "Text", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$XML_Datei) on item 'TblDrucken.Druck_Tabelle.CColumnRow1'.", repo.TblDrucken.Druck_Tabelle.CColumnRow1Info, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.TblDrucken.Druck_Tabelle.CColumnRow1Info, "Text", XML_Datei);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Oberbank AG\t\trs2\t\tÜBERWEISUNG\tS\tSepaüberweisung\t2001\t1\tUEBW\t\t\t2001\t15090\tEUR\t00237571500\tOBKLAT2LXXX\tAT411100000237571500\t52753\tEUR\t\t') on item 'TblDrucken.Row1'.", repo.TblDrucken.Row1Info, new RecordItemIndex(7));
-            Validate.AttributeContains(repo.TblDrucken.Row1Info, "Text", "Oberbank AG\t\trs2\t\tÜBERWEISUNG\tS\tSepaüberweisung\t2001\t1\tUEBW\t\t\t2001\t15090\tEUR\t00237571500\tOBKLAT2LXXX\tAT411100000237571500\t52753\tEUR\t\t");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblDrucken.Druck_Tabelle.CDatumsspalteRow1'.", repo.TblDrucken.Druck_Tabelle.CDatumsspalteRow1Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.TblDrucken.Druck_Tabelle.CDatumsspalteRow1Info, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblDrucken.ChildTableWindow.CDatumsspalteRow1'.", repo.TblDrucken.ChildTableWindow.CDatumsspalteRow1Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.TblDrucken.ChildTableWindow.CDatumsspalteRow1Info, "Text", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Oberbank AG\t\trs2\t\tÜBERWEISUNG\tS\tSepaüberweisung\t2001\t1\tUEBW\t\t\t2001\t15090\tEUR\t00237571500\tOBKLAT2LXXX\tAT411100000237571500\t52753\tEUR\t\t') on item 'TblDrucken.Druck_Tabelle.Row1'.", repo.TblDrucken.Druck_Tabelle.Row1Info, new RecordItemIndex(9));
+            Validate.AttributeContains(repo.TblDrucken.Druck_Tabelle.Row1Info, "Text", "Oberbank AG\t\trs2\t\tÜBERWEISUNG\tS\tSepaüberweisung\t2001\t1\tUEBW\t\t\t2001\t15090\tEUR\t00237571500\tOBKLAT2LXXX\tAT411100000237571500\t52753\tEUR\t\t");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='5') on item 'TblDrucken.ChildTableWindow.CColumnRow12'.", repo.TblDrucken.ChildTableWindow.CColumnRow12Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.TblDrucken.ChildTableWindow.CColumnRow12Info, "Text", "5");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='5') on item 'TblDrucken.Druck_Tabelle.CColumnRow12'.", repo.TblDrucken.Druck_Tabelle.CColumnRow12Info, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.TblDrucken.Druck_Tabelle.CColumnRow12Info, "Text", "5");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='52753') on item 'TblDrucken.ChildTableWindow.CColumnRow11'.", repo.TblDrucken.ChildTableWindow.CColumnRow11Info, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.TblDrucken.ChildTableWindow.CColumnRow11Info, "Text", "52753");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'52753') on item 'TblDrucken.Druck_Tabelle.Row1'.", repo.TblDrucken.Druck_Tabelle.Row1Info, new RecordItemIndex(11));
+            Validate.AttributeContains(repo.TblDrucken.Druck_Tabelle.Row1Info, "Text", "52753");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblDrucken.TitleBar100DatentraegerBegleitzette'.", repo.TblDrucken.TitleBar100DatentraegerBegleitzetteInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblDrucken.TitleBar100DatentraegerBegleitzette'.", repo.TblDrucken.TitleBar100DatentraegerBegleitzetteInfo, new RecordItemIndex(12));
             Keyboard.PrepareFocus(repo.TblDrucken.TitleBar100DatentraegerBegleitzette);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDrucken.TitleBar100DruckeDatentraegerBegle'", repo.DlgDrucken.TitleBar100DruckeDatentraegerBegleInfo, new ActionTimeout(120000), new RecordItemIndex(12));
-            repo.DlgDrucken.TitleBar100DruckeDatentraegerBegleInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(13));
+            Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgDrucken.TitleBar100DruckeDatentraegerBegle'.", repo.DlgDrucken.TitleBar100DruckeDatentraegerBegleInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgDrucken.TitleBar100DruckeDatentraegerBegle'.", repo.DlgDrucken.TitleBar100DruckeDatentraegerBegleInfo, new RecordItemIndex(14));
             Keyboard.PrepareFocus(repo.DlgDrucken.TitleBar100DruckeDatentraegerBegle);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             

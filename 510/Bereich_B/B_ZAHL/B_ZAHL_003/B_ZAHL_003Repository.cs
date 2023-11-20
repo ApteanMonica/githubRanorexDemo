@@ -2269,16 +2269,8 @@ namespace B_ZAHL_003
         [RepositoryFolder("7b8633f4-de7b-4788-9778-3b593a66c15f")]
         public partial class TblDruckenAppFolder : RepoGenBaseFolder
         {
-            B_ZAHL_003RepositoryFolders.ChildTableWindowFolder _childtablewindow;
+            B_ZAHL_003RepositoryFolders.Druck_TabelleFolder _druck_tabelle;
             RepoItemInfo _titlebar100datentraegerbegleitzetteInfo;
-            RepoItemInfo _row1Info;
-            RepoItemInfo _row2Info;
-            RepoItemInfo _row3Info;
-            RepoItemInfo _row4Info;
-            RepoItemInfo _row5Info;
-            RepoItemInfo _row6Info;
-            RepoItemInfo _row7Info;
-            RepoItemInfo _row8Info;
 
             /// <summary>
             /// Creates a new TblDrucken  folder.
@@ -2286,16 +2278,8 @@ namespace B_ZAHL_003
             public TblDruckenAppFolder(RepoGenBaseFolder parentFolder) :
                     base("TblDrucken", "/form[@controlname='tblDrucken']", parentFolder, 30000, null, true, "7b8633f4-de7b-4788-9778-3b593a66c15f", "")
             {
-                _childtablewindow = new B_ZAHL_003RepositoryFolders.ChildTableWindowFolder(this);
+                _druck_tabelle = new B_ZAHL_003RepositoryFolders.Druck_TabelleFolder(this);
                 _titlebar100datentraegerbegleitzetteInfo = new RepoItemInfo(this, "TitleBar100DatentraegerBegleitzette", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "afe20a21-f716-4ddb-81ee-f11e1de20c14");
-                _row1Info = new RepoItemInfo(this, "Row1", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']", "", 30000, null, "2177af84-a819-45b0-8d46-dc907e16eb7b");
-                _row2Info = new RepoItemInfo(this, "Row2", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']", "", 30000, null, "da0637de-a20d-47ef-8150-7d447a98266a");
-                _row3Info = new RepoItemInfo(this, "Row3", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']", "", 30000, null, "dabc4e6f-294a-4fae-891b-9351c5cc6e26");
-                _row4Info = new RepoItemInfo(this, "Row4", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 4']", "", 30000, null, "d523b931-f366-495d-939e-000f8b886de7");
-                _row5Info = new RepoItemInfo(this, "Row5", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']", "", 30000, null, "5b7fae99-9aca-4de7-acfd-e4075391bd4f");
-                _row6Info = new RepoItemInfo(this, "Row6", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 6']", "", 30000, null, "c518e8d6-587d-4954-b894-fcde0b5889db");
-                _row7Info = new RepoItemInfo(this, "Row7", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 7']", "", 30000, null, "bb37a871-ac87-4e12-82bd-2caff96f0461");
-                _row8Info = new RepoItemInfo(this, "Row8", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 8']", "", 30000, null, "769cfa0f-1452-47db-a8fb-705e67d9b351");
             }
 
             /// <summary>
@@ -2343,6 +2327,151 @@ namespace B_ZAHL_003
                 get
                 {
                     return _titlebar100datentraegerbegleitzetteInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Druck_Tabelle folder.
+            /// </summary>
+            [RepositoryFolder("dc86bd7d-0b4d-4e62-8210-68a0e8edb7e2")]
+            public virtual B_ZAHL_003RepositoryFolders.Druck_TabelleFolder Druck_Tabelle
+            {
+                get { return _druck_tabelle; }
+            }
+        }
+
+        /// <summary>
+        /// The Druck_TabelleFolder folder.
+        /// </summary>
+        [RepositoryFolder("dc86bd7d-0b4d-4e62-8210-68a0e8edb7e2")]
+        public partial class Druck_TabelleFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _ccolumnrow12Info;
+            RepoItemInfo _cdatumsspalterow1Info;
+            RepoItemInfo _ccolumnrow1Info;
+            RepoItemInfo _row1Info;
+            RepoItemInfo _row2Info;
+            RepoItemInfo _row3Info;
+            RepoItemInfo _row4Info;
+            RepoItemInfo _row5Info;
+            RepoItemInfo _row6Info;
+            RepoItemInfo _row7Info;
+            RepoItemInfo _row8Info;
+            RepoItemInfo _cdatumsspalterow11Info;
+
+            /// <summary>
+            /// Creates a new Druck_Tabelle  folder.
+            /// </summary>
+            public Druck_TabelleFolder(RepoGenBaseFolder parentFolder) :
+                    base("Druck_Tabelle", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "dc86bd7d-0b4d-4e62-8210-68a0e8edb7e2", "")
+            {
+                _ccolumnrow12Info = new RepoItemInfo(this, "CColumnRow12", "row[@accessiblename='Row 1']/cell[@text='5']", "", 30000, null, "75dad58f-c4e1-4f03-925f-75a2b04a8af5");
+                _cdatumsspalterow1Info = new RepoItemInfo(this, "CDatumsspalteRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='cDatumsspalte Row 1']", "", 30000, null, "21c58722-9034-4ee7-a358-935981b5083f");
+                _ccolumnrow1Info = new RepoItemInfo(this, "CColumnRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='cColumn Row 1']", "", 30000, null, "22d0bb3c-27a7-4e35-8ce0-6a0fe9d92c20");
+                _row1Info = new RepoItemInfo(this, "Row1", "row[@accessiblename='Row 1']", "", 30000, null, "2177af84-a819-45b0-8d46-dc907e16eb7b");
+                _row2Info = new RepoItemInfo(this, "Row2", "row[@accessiblename='Row 2']", "", 30000, null, "da0637de-a20d-47ef-8150-7d447a98266a");
+                _row3Info = new RepoItemInfo(this, "Row3", "row[@accessiblename='Row 3']", "", 30000, null, "dabc4e6f-294a-4fae-891b-9351c5cc6e26");
+                _row4Info = new RepoItemInfo(this, "Row4", "row[@accessiblename='Row 4']", "", 30000, null, "d523b931-f366-495d-939e-000f8b886de7");
+                _row5Info = new RepoItemInfo(this, "Row5", "row[@accessiblename='Row 5']", "", 30000, null, "5b7fae99-9aca-4de7-acfd-e4075391bd4f");
+                _row6Info = new RepoItemInfo(this, "Row6", "row[@accessiblename='Row 6']", "", 30000, null, "c518e8d6-587d-4954-b894-fcde0b5889db");
+                _row7Info = new RepoItemInfo(this, "Row7", "row[@accessiblename='Row 7']", "", 30000, null, "bb37a871-ac87-4e12-82bd-2caff96f0461");
+                _row8Info = new RepoItemInfo(this, "Row8", "row[@accessiblename='Row 8']", "", 30000, null, "769cfa0f-1452-47db-a8fb-705e67d9b351");
+                _cdatumsspalterow11Info = new RepoItemInfo(this, "CDatumsspalteRow11", "row[@accessiblename='Row 1']/cell[@accessiblename='cDatumsspalte Row 1']", "", 30000, null, "906465bb-074e-487e-95ae-1e20c567b91b");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("dc86bd7d-0b4d-4e62-8210-68a0e8edb7e2")]
+            public virtual Ranorex.Table Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("dc86bd7d-0b4d-4e62-8210-68a0e8edb7e2")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CColumnRow12 item.
+            /// </summary>
+            [RepositoryItem("75dad58f-c4e1-4f03-925f-75a2b04a8af5")]
+            public virtual Ranorex.Cell CColumnRow12
+            {
+                get
+                {
+                    return _ccolumnrow12Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CColumnRow12 item info.
+            /// </summary>
+            [RepositoryItemInfo("75dad58f-c4e1-4f03-925f-75a2b04a8af5")]
+            public virtual RepoItemInfo CColumnRow12Info
+            {
+                get
+                {
+                    return _ccolumnrow12Info;
+                }
+            }
+
+            /// <summary>
+            /// The CDatumsspalteRow1 item.
+            /// </summary>
+            [RepositoryItem("21c58722-9034-4ee7-a358-935981b5083f")]
+            public virtual Ranorex.Cell CDatumsspalteRow1
+            {
+                get
+                {
+                    return _cdatumsspalterow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CDatumsspalteRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("21c58722-9034-4ee7-a358-935981b5083f")]
+            public virtual RepoItemInfo CDatumsspalteRow1Info
+            {
+                get
+                {
+                    return _cdatumsspalterow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The CColumnRow1 item.
+            /// </summary>
+            [RepositoryItem("22d0bb3c-27a7-4e35-8ce0-6a0fe9d92c20")]
+            public virtual Ranorex.Cell CColumnRow1
+            {
+                get
+                {
+                    return _ccolumnrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CColumnRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("22d0bb3c-27a7-4e35-8ce0-6a0fe9d92c20")]
+            public virtual RepoItemInfo CColumnRow1Info
+            {
+                get
+                {
+                    return _ccolumnrow1Info;
                 }
             }
 
@@ -2539,155 +2668,26 @@ namespace B_ZAHL_003
             }
 
             /// <summary>
-            /// The ChildTableWindow folder.
+            /// The CDatumsspalteRow11 item.
             /// </summary>
-            [RepositoryFolder("dc86bd7d-0b4d-4e62-8210-68a0e8edb7e2")]
-            public virtual B_ZAHL_003RepositoryFolders.ChildTableWindowFolder ChildTableWindow
-            {
-                get { return _childtablewindow; }
-            }
-        }
-
-        /// <summary>
-        /// The ChildTableWindowFolder folder.
-        /// </summary>
-        [RepositoryFolder("dc86bd7d-0b4d-4e62-8210-68a0e8edb7e2")]
-        public partial class ChildTableWindowFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _ccolumnrow12Info;
-            RepoItemInfo _ccolumnrow11Info;
-            RepoItemInfo _cdatumsspalterow1Info;
-            RepoItemInfo _ccolumnrow1Info;
-
-            /// <summary>
-            /// Creates a new ChildTableWindow  folder.
-            /// </summary>
-            public ChildTableWindowFolder(RepoGenBaseFolder parentFolder) :
-                    base("ChildTableWindow", "container[@controlname='ChildTableWindow']", parentFolder, 30000, null, false, "dc86bd7d-0b4d-4e62-8210-68a0e8edb7e2", "")
-            {
-                _ccolumnrow12Info = new RepoItemInfo(this, "CColumnRow12", "?/?/table[@accessiblename='FlexGrid']/?/?/cell[@text='5']", "", 30000, null, "75dad58f-c4e1-4f03-925f-75a2b04a8af5");
-                _ccolumnrow11Info = new RepoItemInfo(this, "CColumnRow11", "?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[28]", "", 30000, null, "1ca4553d-55ad-4b7e-a334-82a880f72a1f");
-                _cdatumsspalterow1Info = new RepoItemInfo(this, "CDatumsspalteRow1", "?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[25]", "", 30000, null, "21c58722-9034-4ee7-a358-935981b5083f");
-                _ccolumnrow1Info = new RepoItemInfo(this, "CColumnRow1", "?/?/table[@accessiblename='FlexGrid']/?/?/cell[@text='b_zahl_003.xml']", "", 30000, null, "22d0bb3c-27a7-4e35-8ce0-6a0fe9d92c20");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("dc86bd7d-0b4d-4e62-8210-68a0e8edb7e2")]
-            public virtual Ranorex.Container Self
+            [RepositoryItem("906465bb-074e-487e-95ae-1e20c567b91b")]
+            public virtual Ranorex.Cell CDatumsspalteRow11
             {
                 get
                 {
-                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                    return _cdatumsspalterow11Info.CreateAdapter<Ranorex.Cell>(true);
                 }
             }
 
             /// <summary>
-            /// The Self item info.
+            /// The CDatumsspalteRow11 item info.
             /// </summary>
-            [RepositoryItemInfo("dc86bd7d-0b4d-4e62-8210-68a0e8edb7e2")]
-            public virtual RepoItemInfo SelfInfo
+            [RepositoryItemInfo("906465bb-074e-487e-95ae-1e20c567b91b")]
+            public virtual RepoItemInfo CDatumsspalteRow11Info
             {
                 get
                 {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The CColumnRow12 item.
-            /// </summary>
-            [RepositoryItem("75dad58f-c4e1-4f03-925f-75a2b04a8af5")]
-            public virtual Ranorex.Cell CColumnRow12
-            {
-                get
-                {
-                    return _ccolumnrow12Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CColumnRow12 item info.
-            /// </summary>
-            [RepositoryItemInfo("75dad58f-c4e1-4f03-925f-75a2b04a8af5")]
-            public virtual RepoItemInfo CColumnRow12Info
-            {
-                get
-                {
-                    return _ccolumnrow12Info;
-                }
-            }
-
-            /// <summary>
-            /// The CColumnRow11 item.
-            /// </summary>
-            [RepositoryItem("1ca4553d-55ad-4b7e-a334-82a880f72a1f")]
-            public virtual Ranorex.Cell CColumnRow11
-            {
-                get
-                {
-                    return _ccolumnrow11Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CColumnRow11 item info.
-            /// </summary>
-            [RepositoryItemInfo("1ca4553d-55ad-4b7e-a334-82a880f72a1f")]
-            public virtual RepoItemInfo CColumnRow11Info
-            {
-                get
-                {
-                    return _ccolumnrow11Info;
-                }
-            }
-
-            /// <summary>
-            /// The CDatumsspalteRow1 item.
-            /// </summary>
-            [RepositoryItem("21c58722-9034-4ee7-a358-935981b5083f")]
-            public virtual Ranorex.Cell CDatumsspalteRow1
-            {
-                get
-                {
-                    return _cdatumsspalterow1Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CDatumsspalteRow1 item info.
-            /// </summary>
-            [RepositoryItemInfo("21c58722-9034-4ee7-a358-935981b5083f")]
-            public virtual RepoItemInfo CDatumsspalteRow1Info
-            {
-                get
-                {
-                    return _cdatumsspalterow1Info;
-                }
-            }
-
-            /// <summary>
-            /// The CColumnRow1 item.
-            /// </summary>
-            [RepositoryItem("22d0bb3c-27a7-4e35-8ce0-6a0fe9d92c20")]
-            public virtual Ranorex.Cell CColumnRow1
-            {
-                get
-                {
-                    return _ccolumnrow1Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CColumnRow1 item info.
-            /// </summary>
-            [RepositoryItemInfo("22d0bb3c-27a7-4e35-8ce0-6a0fe9d92c20")]
-            public virtual RepoItemInfo CColumnRow1Info
-            {
-                get
-                {
-                    return _ccolumnrow1Info;
+                    return _cdatumsspalterow11Info;
                 }
             }
         }

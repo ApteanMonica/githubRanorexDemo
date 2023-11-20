@@ -136,16 +136,19 @@ namespace B_ZAHL_003.Recordings_B_ZAHL
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Zahlart' with focus on 'FrmBankbeleg.Zahlart'.", repo.FrmBankbeleg.ZahlartInfo, new RecordItemIndex(6));
             repo.FrmBankbeleg.Zahlart.PressKeys(Zahlart);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Bank' with focus on 'FrmBankbeleg.Bank'.", repo.FrmBankbeleg.BankInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Bank' with focus on 'FrmBankbeleg.Bank'.", repo.FrmBankbeleg.BankInfo, new RecordItemIndex(8));
             repo.FrmBankbeleg.Bank.PressKeys(Bank);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBankbeleg.PbCommonStart' at Center.", repo.FrmBankbeleg.PbCommonStartInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBankbeleg.PbCommonStart' at Center.", repo.FrmBankbeleg.PbCommonStartInfo, new RecordItemIndex(9));
             repo.FrmBankbeleg.PbCommonStart.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'UEberweisungsDatentraeger.UEberweisungsDatentraeger'", repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo, new ActionTimeout(120000), new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'UEberweisungsDatentraeger.UEberweisungsDatentraeger'", repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo, new ActionTimeout(120000), new RecordItemIndex(10));
             repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'UEberweisungsDatentraeger.UEberweisungsDatentraeger'.", repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'UEberweisungsDatentraeger.UEberweisungsDatentraeger'.", repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo, new RecordItemIndex(11));
             Validate.Exists(repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo);
             
         }

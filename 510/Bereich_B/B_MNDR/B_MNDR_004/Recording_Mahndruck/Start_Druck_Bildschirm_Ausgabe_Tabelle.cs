@@ -82,19 +82,25 @@ namespace B_MNDR_004.Recording_Mahndruck
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMahnDruck.PbDruckenDrucken' at Center.", repo.FrmMahnDruck.PbDruckenDruckenInfo, new RecordItemIndex(0));
             repo.FrmMahnDruck.PbDruckenDrucken.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BMNDR2.Bildschirm' at Center.", repo.BMNDR2.BildschirmInfo, new RecordItemIndex(1));
-            repo.BMNDR2.Bildschirm.Click();
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'BMNDR2.Bildschirm_521_510_text'", repo.BMNDR2.Bildschirm_521_510_textInfo, new ActionTimeout(60000), new RecordItemIndex(1));
+            repo.BMNDR2.Bildschirm_521_510_textInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDrucken.TitleBar100DruckeVorschau200024'", repo.DlgDrucken.TitleBar100DruckeVorschau200024Info, new ActionTimeout(120000), new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BMNDR2.Bildschirm_521_510_text' at Center.", repo.BMNDR2.Bildschirm_521_510_textInfo, new RecordItemIndex(2));
+            repo.BMNDR2.Bildschirm_521_510_text.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgDrucken.TitleBar100DruckeVorschau200024'", repo.DlgDrucken.TitleBar100DruckeVorschau200024Info, new ActionTimeout(120000), new RecordItemIndex(3));
             repo.DlgDrucken.TitleBar100DruckeVorschau200024Info.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Drucke Vorschau') on item 'DlgDrucken.TitleBar100DruckeVorschau200024'.", repo.DlgDrucken.TitleBar100DruckeVorschau200024Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Drucke Vorschau') on item 'DlgDrucken.TitleBar100DruckeVorschau200024'.", repo.DlgDrucken.TitleBar100DruckeVorschau200024Info, new RecordItemIndex(4));
             Validate.AttributeContains(repo.DlgDrucken.TitleBar100DruckeVorschau200024Info, "Text", "Drucke Vorschau");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbExport' at Center.", repo.DlgDrucken.PbExportInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.PbExport' at Center.", repo.DlgDrucken.PbExportInfo, new RecordItemIndex(5));
             repo.DlgDrucken.PbExport.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BMNDR2.Tabelle' at Center.", repo.BMNDR2.TabelleInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'BMNDR2.Tabelle'", repo.BMNDR2.TabelleInfo, new ActionTimeout(60000), new RecordItemIndex(6));
+            repo.BMNDR2.TabelleInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BMNDR2.Tabelle' at Center.", repo.BMNDR2.TabelleInfo, new RecordItemIndex(7));
             repo.BMNDR2.Tabelle.Click();
             
         }

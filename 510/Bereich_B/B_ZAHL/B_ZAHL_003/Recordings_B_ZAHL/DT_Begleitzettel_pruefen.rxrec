@@ -39,7 +39,7 @@ mode="Desktop">
 		optional="False"
 		searchpropertyid="056871cc-58f5-4c31-b1f2-fe43308cf2e2"
 		waitaction="Exists"
-		waittimeout="120000ms">
+		waittimeout="180000ms">
 			<comment>
 			</comment>
 			<bindings>
@@ -55,7 +55,7 @@ mode="Desktop">
 			</info>
 		</WaitForRecordItem>
 		<validationitem
-		action="Exists"
+		action="AttributeContains"
 		enabled="True"
 		optional="False"
 		searchpropertyid="b6192a74-2ccf-4894-b81c-ceec6692b0db">
@@ -76,7 +76,7 @@ mode="Desktop">
 				Text
 			</matchname>
 			<matchvalue>
-				yourtext
+				Drucke Datenträger-Begleitzettel
 			</matchvalue>
 		</validationitem>
 		<mouseitem
@@ -4327,6 +4327,26 @@ xRiiigAxRiiigAxRiiigAxRiiigAxRiiigAxRiiigAxRiiigAxRiiigAxRiiigAxRiiigBcUUUUA
 LRRRQB//2Q==
 			</helperscreenshot>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="056871cc-58f5-4c31-b1f2-fe43308cf2e2"
+		waitaction="Exists"
+		waittimeout="180000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0db6f5af-85c6-4318-95dd-2ff1cdee1103"
+			sourcename="RepositoryEditor">
+				<path>
+					/contextmenu[@controlname='pbExportItems']/menuitem[@accessiblename='Tabelle']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4675,7 +4695,7 @@ HPIgWPCsQMg+v1oooA0x/rW+g/rSr1b6/wBKKKAFooooA//Z
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
-		searchpropertyid="0926a9e6-a944-48c3-8ff2-09f821916e49"
+		searchpropertyid="7bc24700-a4ee-4dfc-9f75-f8c2df569773"
 		waitaction="Exists"
 		waittimeout="120000ms">
 			<comment>
@@ -4683,15 +4703,40 @@ HPIgWPCsQMg+v1oooA0x/rW+g/rSr1b6/wBKKKAFooooA//Z
 			<bindings>
 			</bindings>
 			<info
-			id="2177af84-a819-45b0-8d46-dc907e16eb7b"
+			id="afe20a21-f716-4ddb-81ee-f11e1de20c14"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblDrucken']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
+					/form[@controlname='tblDrucken']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b6192a74-2ccf-4894-b81c-ceec6692b0db">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="56f7f5e4-34d5-421b-937c-d876edaaadff"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgDrucken']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Datenträger-Begleitzettel
+			</matchvalue>
+		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -4871,69 +4916,6 @@ HPIgWPCsQMg+v1oooA0x/rW+g/rSr1b6/wBKKKAFooooA//Z
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Tagesdatum">
-				</binding>
-			</bindings>
-			<info
-			id="21c58722-9034-4ee7-a358-935981b5083f"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="24"
-				prefcap="cell"
-				rect="-1041,233,65,19"
-				role="cell"
-				snapElem=""
-				valid="False"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						None
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						None
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='tblDrucken']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[25]
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="26299a43-f111-42ec-ab41-301e93a33644">
-			<comment>
-			</comment>
-			<bindings>
 			</bindings>
 			<info
 			id="75dad58f-c4e1-4f03-925f-75a2b04a8af5"
@@ -5006,7 +4988,7 @@ HPIgWPCsQMg+v1oooA0x/rW+g/rSr1b6/wBKKKAFooooA//Z
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeEqual"
+		action="AttributeContains"
 		enabled="True"
 		optional="False"
 		searchpropertyid="26299a43-f111-42ec-ab41-301e93a33644">
@@ -5015,64 +4997,10 @@ HPIgWPCsQMg+v1oooA0x/rW+g/rSr1b6/wBKKKAFooooA//Z
 			<bindings>
 			</bindings>
 			<info
-			id="1ca4553d-55ad-4b7e-a334-82a880f72a1f"
+			id="2177af84-a819-45b0-8d46-dc907e16eb7b"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="27"
-				prefcap="cell"
-				rect="-153,501,80,19"
-				role="cell"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="isheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="selected"
-					type="System.Boolean">
-						True
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						52753
-					</attribute>
-					<attribute
-					name="accessibledefaultaction"
-					type="System.String">
-						Edit
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						cColumn Row 1
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Cell
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Selected, Focusable, Selectable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-						52753
-					</attribute>
-				</element>
 				<path>
-					/form[@controlname='tblDrucken']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[28]
+					/form[@controlname='tblDrucken']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -5101,35 +5029,6 @@ HPIgWPCsQMg+v1oooA0x/rW+g/rSr1b6/wBKKKAFooooA//Z
 			<info
 			id="afe20a21-f716-4ddb-81ee-f11e1de20c14"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="33"
-				prefcap="titlebar"
-				rect="-1247,185,592,28"
-				role="titlebar"
-				snapElem=""
-				valid="False"
-				visible="False">
-					<attribute
-					name="accessibledescription"
-					type="System.String">
-						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						TitleBar
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Invisible
-					</attribute>
-				</element>
 				<path>
 					/form[@controlname='tblDrucken']/titlebar[@accessiblerole='TitleBar']
 				</path>
@@ -5137,26 +5036,15 @@ HPIgWPCsQMg+v1oooA0x/rW+g/rSr1b6/wBKKKAFooooA//Z
 				</robustPath>
 			</info>
 		</keyitem>
-		<WaitForRecordItem
+		<explicitdelayitem
+		duration="1000ms"
 		enabled="True"
-		optional="False"
-		searchpropertyid="b68844b2-09b5-4782-8bbd-3074cb0cafa0"
-		waitaction="Exists"
-		waittimeout="120000ms">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="56f7f5e4-34d5-421b-937c-d876edaaadff"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='dlgDrucken']/titlebar[@accessiblerole='TitleBar']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
+		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="F4, Alt"
@@ -5174,35 +5062,6 @@ HPIgWPCsQMg+v1oooA0x/rW+g/rSr1b6/wBKKKAFooooA//Z
 			<info
 			id="56f7f5e4-34d5-421b-937c-d876edaaadff"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="28"
-				prefcap="titlebar"
-				rect="-1161,323,419,28"
-				role="titlebar"
-				snapElem=""
-				valid="False"
-				visible="False">
-					<attribute
-					name="accessibledescription"
-					type="System.String">
-						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						TitleBar
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Invisible
-					</attribute>
-				</element>
 				<path>
 					/form[@controlname='dlgDrucken']/titlebar[@accessiblerole='TitleBar']
 				</path>

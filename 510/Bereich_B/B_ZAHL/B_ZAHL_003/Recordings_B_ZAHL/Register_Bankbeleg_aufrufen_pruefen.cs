@@ -108,11 +108,11 @@ namespace B_ZAHL_003.Recordings_B_ZAHL
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmZahlMain.TitleBar100LieferantenZahlungsver'.", repo.FrmZahlMain.TitleBar100LieferantenZahlungsverInfo, new RecordItemIndex(1));
             Validate.Exists(repo.FrmZahlMain.TitleBar100LieferantenZahlungsverInfo);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmZahlMain.Bankbelege' at Center.", repo.FrmZahlMain.BankbelegeInfo, new RecordItemIndex(2));
-            repo.FrmZahlMain.Bankbelege.Click();
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmZahlMain.Bankbelege'.", repo.FrmZahlMain.BankbelegeInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmZahlMain.Bankbelege'.", repo.FrmZahlMain.BankbelegeInfo, new RecordItemIndex(2));
             Validate.Exists(repo.FrmZahlMain.BankbelegeInfo);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmZahlMain.Bankbelege' at Center.", repo.FrmZahlMain.BankbelegeInfo, new RecordItemIndex(3));
+            repo.FrmZahlMain.Bankbelege.Click();
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmZahlMain.FlexGrid1_Register_Bankbelege.Row_mit_ZV_Text_B_ZAHL_003'", repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.Row_mit_ZV_Text_B_ZAHL_003Info, new ActionTimeout(120000), new RecordItemIndex(4));
             repo.FrmZahlMain.FlexGrid1_Register_Bankbelege.Row_mit_ZV_Text_B_ZAHL_003Info.WaitForExists(120000);

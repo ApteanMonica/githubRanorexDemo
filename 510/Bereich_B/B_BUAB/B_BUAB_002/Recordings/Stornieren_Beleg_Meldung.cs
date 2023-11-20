@@ -91,13 +91,19 @@ namespace B_BUAB_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBUAB.Stornieren' at Center.", repo.BBUAB.StornierenInfo, new RecordItemIndex(3));
             repo.BBUAB.Stornieren.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'BBUAB.Stornieren'", repo.BBUAB.StornierenInfo, new ActionTimeout(30000), new RecordItemIndex(4));
-            repo.BBUAB.StornierenInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.Stornieren'", repo.DlgMessageBox.StornierenInfo, new ActionTimeout(60000), new RecordItemIndex(4));
+            repo.DlgMessageBox.StornierenInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Stornieren') on item 'DlgMessageBox.Stornieren'.", repo.DlgMessageBox.StornierenInfo, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.DlgMessageBox.StornierenInfo, "Text", "Stornieren");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Stornieren') on item 'DlgMessageBox.Stornieren'.", repo.DlgMessageBox.StornierenInfo, new RecordItemIndex(5));
+            Validate.AttributeContains(repo.DlgMessageBox.StornierenInfo, "Text", "Stornieren");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Buchung(en) stornieren? - Dies kann nicht rückgängig gemacht werden!\r\n\r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Buchung(en) stornieren? - Dies kann nicht rückgängig gemacht werden!\r\n\r\n");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'\nEs wird immer die komplette (!) Buchung inkl. aller Positionen storniert, \r\nauch wenn nur einzelne Zeilen zum Stornieren markiert sind') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
+            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "\nEs wird immer die komplette (!) Buchung inkl. aller Positionen storniert, \r\nauch wenn nur einzelne Zeilen zum Stornieren markiert sind");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(8));
             repo.DlgMessageBox.Button0.Click();
             
         }

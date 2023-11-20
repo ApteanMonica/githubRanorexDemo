@@ -92,27 +92,33 @@ namespace B_ZAHL_003.Recordings_B_ZAHL
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'UEberweisungsDatentraeger.UEberweisungsDatentraeger'.", repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Überweisungs-Datenträger') on item 'UEberweisungsDatentraeger.UEberweisungsDatentraeger'.", repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.UEberweisungsDatentraeger.UEberweisungsDatentraegerInfo, "Text", "Überweisungs-Datenträger");
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$XML_Pfad_Datei' on item 'UEberweisungsDatentraeger.Text1001'.", repo.UEberweisungsDatentraeger.Text1001Info, new RecordItemIndex(1));
-            repo.UEberweisungsDatentraeger.Text1001.Element.SetAttributeValue("Text", XML_Pfad_Datei);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$XML_Pfad_Datei'.", new RecordItemIndex(1));
+            Keyboard.Press(XML_Pfad_Datei);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(2));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'UEberweisungsDatentraeger.ButtonSpeichern' at Center.", repo.UEberweisungsDatentraeger.ButtonSpeichernInfo, new RecordItemIndex(3));
-            repo.UEberweisungsDatentraeger.ButtonSpeichern.Click();
+            //Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$XML_Pfad_Datei' on item 'UEberweisungsDatentraeger.Text1001'.", repo.UEberweisungsDatentraeger.Text1001Info, new RecordItemIndex(3));
+            //repo.UEberweisungsDatentraeger.Text1001.Element.SetAttributeValue("Text", XML_Pfad_Datei);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
             Delay.Duration(1000, false);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'UEberweisungsDatentraeger.ButtonSpeichern' at Center.", repo.UEberweisungsDatentraeger.ButtonSpeichernInfo, new RecordItemIndex(5));
+            repo.UEberweisungsDatentraeger.ButtonSpeichern.Click();
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(6));
+            Delay.Duration(1000, false);
+            
             // Falls b_zahl_003.xml schon vorhanden ist, die Meldung mit J bestätigen (nicht Button JA, weil sonst Fehler, wenn Meldung nicht kommt)
-            Report.Log(ReportLevel.Info, "Keyboard", "Falls b_zahl_003.xml schon vorhanden ist, die Meldung mit J bestätigen (nicht Button JA, weil sonst Fehler, wenn Meldung nicht kommt)\r\nKey 'J' Press.", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Falls b_zahl_003.xml schon vorhanden ist, die Meldung mit J bestätigen (nicht Button JA, weil sonst Fehler, wenn Meldung nicht kommt)\r\nKey 'J' Press.", new RecordItemIndex(7));
             Keyboard.Press(System.Windows.Forms.Keys.J, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(6));
-            Delay.Duration(5000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(8));
+            Delay.Duration(2000, false);
             
         }
 
