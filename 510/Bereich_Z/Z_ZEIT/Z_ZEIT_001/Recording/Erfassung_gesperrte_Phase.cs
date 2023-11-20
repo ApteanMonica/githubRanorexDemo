@@ -79,25 +79,28 @@ namespace Z_ZEIT_001.Recording
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(0));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(0));
+            //Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'ZEIT_001' with focus on 'MdiZeit.Tabelle.Zeile_3.ColProjNrRow3'.", repo.MdiZeit.Tabelle.Zeile_3.ColProjNrRow3Info, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MdiZeit.Tabelle.Zeile_3.ColPhasCdRow3' at Center.", repo.MdiZeit.Tabelle.Zeile_3.ColPhasCdRow3Info, new RecordItemIndex(1));
+            repo.MdiZeit.Tabelle.Zeile_3.ColPhasCdRow3.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'ZEIT_001' with focus on 'MdiZeit.Tabelle.Zeile_3.ColProjNrRow3'.", repo.MdiZeit.Tabelle.Zeile_3.ColProjNrRow3Info, new RecordItemIndex(2));
             repo.MdiZeit.Tabelle.Zeile_3.ColProjNrRow3.PressKeys("ZEIT_001");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ZEIT_001') on item 'MdiZeit.Tabelle.Zeile_3.ColProjNrRow3'.", repo.MdiZeit.Tabelle.Zeile_3.ColProjNrRow3Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='ZEIT_001') on item 'MdiZeit.Tabelle.Zeile_3.ColProjNrRow3'.", repo.MdiZeit.Tabelle.Zeile_3.ColProjNrRow3Info, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.MdiZeit.Tabelle.Zeile_3.ColProjNrRow3Info, "Text", "ZEIT_001");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '10' with focus on 'MdiZeit.Tabelle.Zeile_3.ColPhasCdRow3'.", repo.MdiZeit.Tabelle.Zeile_3.ColPhasCdRow3Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '10' with focus on 'MdiZeit.Tabelle.Zeile_3.ColPhasCdRow3'.", repo.MdiZeit.Tabelle.Zeile_3.ColPhasCdRow3Info, new RecordItemIndex(5));
             repo.MdiZeit.Tabelle.Zeile_3.ColPhasCdRow3.PressKeys("10");
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'MdiZeit.Tabelle.Zeile_3.ColPhasCdRow3'.", repo.MdiZeit.Tabelle.Zeile_3.ColPhasCdRow3Info, new RecordItemIndex(5));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='10') on item 'MdiZeit.Tabelle.Zeile_3.ColPhasCdRow3'.", repo.MdiZeit.Tabelle.Zeile_3.ColPhasCdRow3Info, new RecordItemIndex(6));
             //Validate.AttributeEqual(repo.MdiZeit.Tabelle.Zeile_3.ColPhasCdRow3Info, "Text", "10");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
         }
