@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="ad3159a5-a75c-405b-8464-7585da077cd0"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="S_ZLBD_Schnelltest.Recordings_ZAHLUNG">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="4595e7ae-a427-45c7-a775-6638732f025b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5cfac834-67ed-4aa8-b20a-7fda1454cd61"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblZlbd']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="6f56a82f-e8ea-448d-bc11-d94d82b7b661"
+	name="S_ZLBD_SchnelltestRepository"
+	relativepath="..\S_ZLBD_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_ZLBD_SchnelltestRepository"
+		namespace="S_ZLBD_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="77115f93-5c29-44f7-9390-0a0f893bdfe7"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
