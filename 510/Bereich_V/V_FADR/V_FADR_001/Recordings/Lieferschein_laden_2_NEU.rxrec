@@ -137,7 +137,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="1000ms"
+		duration="3000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -145,6 +145,93 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="d5632f44-67a8-4125-aa77-d8c59119af55">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="e55a2a15-61bf-4e74-b144-ddb9d8c95a09"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<explicitdelayitem
+		duration="3000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="d5632f44-67a8-4125-aa77-d8c59119af55">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<keyitem
+		action="Press"
+		data="Delete"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="e55a2a15-61bf-4e74-b144-ddb9d8c95a09"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<explicitdelayitem
+		duration="3000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="d5632f44-67a8-4125-aa77-d8c59119af55">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
 		<keyitem
 		action="Press"
 		data="Tab"
@@ -169,11 +256,33 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="d5632f44-67a8-4125-aa77-d8c59119af55">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<explicitdelayitem
+		duration="3000ms"
+		enabled="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="X, Control"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		scancode="0"
@@ -185,8 +294,8 @@ mode="Global">
 			</bindings>
 		</keyitem>
 		<explicitdelayitem
-		duration="1000ms"
-		enabled="True"
+		duration="3000ms"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
@@ -197,7 +306,7 @@ mode="Global">
 		action="Press"
 		data="Tab"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		scancode="0"
@@ -259,7 +368,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="1000ms"
+		duration="3000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -283,7 +392,7 @@ mode="Global">
 			</bindings>
 		</keyitem>
 		<explicitdelayitem
-		duration="1000ms"
+		duration="3000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -291,11 +400,56 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<userrecorditem
+		classname="SystemLibrary"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="GetDateTimeAsString"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Tagesdatum">
+				</binding>
+			</bindings>
+			<arguments
+			id="9e3e5131-7301-4e28-80a7-5f534ae2fc1a">
+				<argument
+				argname="expectedFormat"
+				id="917f490b-57ca-4e61-995f-7d417ecb7d16">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						dd.MM.yyyy
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<keysequenceitem
+		KeySequence=""
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="8007cde1-d789-43f4-85aa-67b38e8ce605">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Tagesdatum">
+				</binding>
+			</bindings>
+		</keysequenceitem>
 		<keyitem
 		action="Press"
 		data="V, Control"
 		duration="20ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="20ms"
 		scancode="0"
@@ -307,7 +461,7 @@ mode="Global">
 			</bindings>
 		</keyitem>
 		<explicitdelayitem
-		duration="1000ms"
+		duration="3000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -330,6 +484,43 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</keyitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="d5632f44-67a8-4125-aa77-d8c59119af55">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="eeccbf05-6a93-4bb0-90f3-0229225fbdd5">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="040c96c5-3f28-4435-b912-42bd799d8750"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+			</matchvalue>
+		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -358,19 +549,6 @@ mode="Global">
 			<matchvalue>
 			</matchvalue>
 		</validationitem>
-		<loggingrecorditem
-		action="Screenshot"
-		category="User"
-		enabled="True"
-		message=""
-		optional="False"
-		reportlevel="Info;20"
-		searchpropertyid="d5632f44-67a8-4125-aa77-d8c59119af55">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</loggingrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"

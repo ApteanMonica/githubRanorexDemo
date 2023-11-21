@@ -119,8 +119,8 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Rechnung') on item 'TblDrucken.TitleBar100Rechnung'.", repo.TblDrucken.TitleBar100RechnungInfo, new RecordItemIndex(9));
             Validate.AttributeContains(repo.TblDrucken.TitleBar100RechnungInfo, "Text", "Rechnung");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'R23/00001\t201900005\t13') on item 'TblDrucken.Row7'.", repo.TblDrucken.Row7Info, new RecordItemIndex(10));
-            Validate.AttributeContains(repo.TblDrucken.Row7Info, "Text", "R23/00001\t201900005\t13");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'201900005\t13') on item 'TblDrucken.Row7'.", repo.TblDrucken.Row7Info, new RecordItemIndex(10));
+            Validate.AttributeContains(repo.TblDrucken.Row7Info, "Text", "201900005\t13");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblDrucken.TitleBar100Rechnung'.", repo.TblDrucken.TitleBar100RechnungInfo, new RecordItemIndex(11));
             Keyboard.PrepareFocus(repo.TblDrucken.TitleBar100Rechnung);

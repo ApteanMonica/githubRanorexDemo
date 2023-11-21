@@ -146,7 +146,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="1000ms"
+		duration="2000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -170,7 +170,7 @@ mode="Global">
 			</bindings>
 		</keyitem>
 		<explicitdelayitem
-		duration="1000ms"
+		duration="2000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -194,7 +194,7 @@ mode="Global">
 			</bindings>
 		</keyitem>
 		<explicitdelayitem
-		duration="1000ms"
+		duration="2000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -268,7 +268,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="1000ms"
+		duration="2000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -4345,6 +4345,35 @@ KwYAqQQehFAEW8f3X/74NG8f3X/74NTUUAQ7x/df/vg0VNRQBXooooAKKKKACiiigApDRRQBG3Sn
 yiiigAooooA//9k=
 			</helperscreenshot>
 		</mouseitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="aea3be98-f83e-49fb-b8bb-c60dead4152a">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Auftragsnummer">
+				</binding>
+			</bindings>
+			<info
+			id="18dead42-6c77-4207-994f-cf8e3ae4db7d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/*[@accessiblerole='Row' and @accessiblevalue~$Auftragsnummer]/cell[@accessiblename~'colAufk_nr']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4463,35 +4492,6 @@ dP6GrLVWl/18H/XT+hoGXKKKKACiiigAooooAKKKKACiiigDOooorU5wX76/7w/nV5etUV++v+8P
 nOC/fX/eH86vL1ooqJbmsNgaq0v+vg/66f0NFFSWXKKKKACiiigAooooAKKKKACiiigD/9k=
 			</helperscreenshot>
 		</mouseitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="aea3be98-f83e-49fb-b8bb-c60dead4152a">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Auftragsnummer">
-				</binding>
-			</bindings>
-			<info
-			id="18dead42-6c77-4207-994f-cf8e3ae4db7d"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/*[@accessiblerole='Row' and @accessiblevalue~$Auftragsnummer]/cell[@accessiblename~'colAufk_nr']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"

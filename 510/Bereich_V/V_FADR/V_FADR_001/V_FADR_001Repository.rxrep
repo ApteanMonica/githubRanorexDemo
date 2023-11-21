@@ -129,6 +129,27 @@ name="V_FADR_001Repository">
 			searchtimeout="30000ms"
 			usecache="False">
 				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="ac72b79d-6f25-4c16-a7c0-a5e86c9f47f5"
+				name="Row1Column0"
+				refimgid="4bd00be9-6ee3-4732-a5cc-b4b977e71039"
+				refpath="/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="row"
+				id="de0d0672-6a95-40bf-82d3-241ece2dc3e0"
+				name="Row1"
+				refimgid="4bd00be9-6ee3-4732-a5cc-b4b977e71039"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
+				</item>
+				<item
 				addcaps="text,control,nativewindow"
 				capname="cell"
 				id="66aa28fa-e465-4f91-aa65-97b931a960d6"
@@ -300,10 +321,9 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			id="7dea5235-099a-407d-a45c-c221767cdc56"
 			name="WarumWirdAuftragNichtFakturiert"
 			refimgid="b2fe3582-1a20-453f-b117-0bd2f60c7f2b"
-			refpath="/contextmenu[@processname='V_FADR']/menuitem[@accessiblename>'Warum wird Auftrag nicht']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/contextmenu[@processname='V_FADR']/menuitem[@accessiblename&gt;'Warum wird Auftrag nicht']
+				/contextmenu[@processname='V_FADR']/menuitem[@accessiblename~'Warum wird Auftrag nicht']
 			</item>
 			<item
 			addcaps="menuitem,accessible"
@@ -457,7 +477,7 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 			addcaps="text,accessible"
 			capname="text"
 			id="cc3b7801-012a-4ab4-8641-cd474a10da0c"
-			name="Auftragsnummer"
+			name="Auftragsnummer_510"
 			refimgid="54667ff6-e925-4859-b1e2-f2d82c901b86"
 			robustPath=""
 			searchtimeout="30000ms">
@@ -670,16 +690,6 @@ FUD96oJX8AAAAABJRU5ErkJggg==
 				/form[@controlname='tblDrucken']/titlebar/button[@accessiblename='Schließen']
 			</item>
 			<item
-			addcaps="cell,accessible"
-			capname="cell"
-			id="cd6cd4a9-351b-4aec-9382-a19b0fb63d95"
-			name="CColumnRow7"
-			refimgid="ca7868f2-d77b-453c-8f4f-874631157f62"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblDrucken']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='cColumn Row 7' and @text='13']
-			</item>
-			<item
 			addcaps="row,accessible"
 			capname="row"
 			id="3292027d-914f-4490-b79c-ff5759dd73b1"
@@ -687,7 +697,7 @@ FUD96oJX8AAAAABJRU5ErkJggg==
 			refimgid="bfe86ef7-6729-45a6-8f1b-aa8f9c0a8650"
 			robustPath=""
 			searchtimeout="60000ms">
-				/form[@controlname='tblDrucken']/container/element/table/row[@accessiblename='Row 7']
+				/form[@controlname='tblDrucken']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 7']
 			</item>
 			<basepath>
 				/form[@controlname='tblDrucken']
@@ -839,14 +849,50 @@ QdSnwXVX1MdnOSgYWk32EnGrwDASyOdfEA6HoCjvyGQjNGcLjvsFRQqu8wlvM/fvYQnTVBGPv/oF
 b0gm01DVQnAHZAHvdu/FFjyK+3eJ4IYiuKEIbng/SBe1JRbLNoYtcwAAAABJRU5ErkJggg==
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="host,nativewindow"
+		capname="host"
+		id="7de645ae-f322-4b11-bf13-2d07e4093127"
+		isrooted="True"
+		name="WSPET"
+		refimgid="95e7af77-8823-4ba4-9c77-55ba988abed1"
+		refpath=""
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="host,nativewindow"
+			capname="host"
+			id="27276b87-72de-48a2-9c53-1f113614590c"
+			name="WSPET"
+			refimgid="863201a7-d0ec-4281-8f56-9f61f7bcfb2d"
+			refpath=""
+			robustPath=""
+			searchtimeout="30000ms">
+			</item>
+			<basepath>
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACtUlEQVQ4T62S6zOUYRiH9w/qYzM1o5moMUyNShmHpISUNhIrHRxW
+DjmXpcah2Ky1TcsSa5ZQ0u62csxxMI4p6URGWFlXz6rGNPu1e+b98sx7Xc/v996v5L/N4OgcPYPT
+WPomaH8zSotpGENbP3UtvVQbutDUWVDVmCjVtlOsaeMPtjNd/VNcfwwyNVwuh4ulEFoMQfchQGHj
+5B0rPlkreN1eRKFsdBQYO8eIroAHz6GgCbLqQa6DqxoIV0JIoV20iU/mCndKDY6CFuMQ4WWgEHCG
+gBOrIKYSpOIsWMCn8n7inbHM0VvzZBfXOwr0rX2cL4H0OkjQQrSoIhU1zooK/nc38MpY4oj8Pe6x
+o6QXPnUUVBk6t1+OewJRKgh78Bu2d7f39kh8h/vVEVwiOki9p3MUqGvN2x2viA94QcCBBeCXu86J
+tG94xM/iFjOES7iFfeeaSVJoHQVlYj2+OWuEihpn8rfwzV7leOoXDsdN4yobwFlqxinkGXtP15KQ
++9hRUFT5HK/07wTk2/DJ/oFn8mcO3ZzENfqtgI04BTeyJ0DHbj8NN7IqHAUKZRNzn6xMza8zPrfG
+yMwqA5M/6B1bobXzI7UvJijWWgjtCkWWpvxXkJLz8KBG/3pTqXtJYWWz2HM9afe0xOeokKWUII0v
+IEiWjd+lFI4Fx+HmL9u8lFAU+QeXSDQNFv7Opm2LNauNpZWfzH+1MikS2dN0iySmwWVae5aoaZvl
+gHfkTgp1nXkbjjXFsm7d4oNhFwuLG8wsWGl8NUjFU6NIped6porYDBUlugH2n4jYEZTXGrGJm6sG
+9AxPLDA7VE579zRNpnFqWkdQN/RTUt2NQt1BziMzmWVG9nlKdwRFmma5eMhT6sVfVo38biXX0suI
+TCok7EYegVGZ+EqTt/u7+8fg7BVhF8glEonkF6m1M1/+IilrAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
 	<variables>
-		<var
-		id="ff5f3292-5c4d-4cc1-a0eb-a6e9e8ff40aa"
-		name="Rechnungsart_E">
-		</var>
 		<var
 		id="1c8af4fd-6843-4a68-a1d3-273d46effe9b"
 		name="Auftragsnummer">
