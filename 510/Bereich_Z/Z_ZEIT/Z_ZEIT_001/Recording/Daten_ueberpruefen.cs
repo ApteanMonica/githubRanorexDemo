@@ -118,13 +118,16 @@ namespace Z_ZEIT_001.Recording
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Personalnr) on item 'MdiZeit.Mitarbeiter'.", repo.MdiZeit.MitarbeiterInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'MdiZeit.Tabelle.Row_3'", repo.MdiZeit.Tabelle.Row_3Info, new ActionTimeout(120000), new RecordItemIndex(0));
+            repo.MdiZeit.Tabelle.Row_3Info.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Personalnr) on item 'MdiZeit.Mitarbeiter'.", repo.MdiZeit.MitarbeiterInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.MdiZeit.MitarbeiterInfo, "Text", Personalnr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Einschraenkugnsjahr) on item 'MdiZeit.DfJahr'.", repo.MdiZeit.DfJahrInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Einschraenkugnsjahr) on item 'MdiZeit.DfJahr'.", repo.MdiZeit.DfJahrInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.MdiZeit.DfJahrInfo, "Text", Einschraenkugnsjahr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Einschraenkungsmonat) on item 'MdiZeit.DfMonat'.", repo.MdiZeit.DfMonatInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Einschraenkungsmonat) on item 'MdiZeit.DfMonat'.", repo.MdiZeit.DfMonatInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.MdiZeit.DfMonatInfo, "Text", Einschraenkungsmonat);
             
         }

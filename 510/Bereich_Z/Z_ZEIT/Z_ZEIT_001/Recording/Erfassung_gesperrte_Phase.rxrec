@@ -23,49 +23,62 @@ mode="Global">
 	namespace="Z_ZEIT_001.Recording">
 	</codegen>
 	<variables>
+		<var
+		id="54b6123a-d604-49b6-9468-d3e89053f0db"
+		name="Personalnr">
+			Z_ZEIT_001_G
+		</var>
 	</variables>
 	<recorditems>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="20ms"
-		enabled="False"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="137427bb-4eb1-4951-af32-a520f52d4a59"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
+		<WaitForRecordItem
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
 		optional="False"
-		searchpropertyid="5091dc9e-5a8d-49ed-9512-6b948e702d10"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		searchpropertyid="cf33eeb0-7015-448c-aef5-d52ad7957d2e"
+		waitaction="Exists"
+		waittimeout="120000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="a530e9b4-0a7f-4292-9dec-01916b7536f0"
+			id="f6fb3743-40fd-4dfe-a3c1-b6859a5093e2"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='mdiZeit']/container[@controlname='ClientArea']/container[@controlname='Splitter']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblZeit']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']/cell[@accessiblename='colPhas_cd Row 3']
+					/form[@controlname='mdiZeit']/container[@controlname='ClientArea']/container[@controlname='Splitter']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblZeit']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 3']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</mouseitem>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b402df6b-7df1-4e95-9616-9b9027f1a78e">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Personalnr">
+				</binding>
+			</bindings>
+			<info
+			id="47647bee-214b-4e43-96ef-a0bacc4dae5b"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='mdiZeit']/container[@controlname='ToolBar']/text[@controlname='dfPers_nr']/text[@accessiblename='Mitarbeiter:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 		<keysequenceitem
 		KeySequence="ZEIT_001"
 		duration="20ms"
@@ -127,6 +140,21 @@ mode="Global">
 				ZEIT_001
 			</matchvalue>
 		</validationitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="ef590f18-e838-41cc-8cad-d0072138c869"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
 		<keysequenceitem
 		KeySequence="10"
 		duration="20ms"
@@ -150,7 +178,7 @@ mode="Global">
 		</keysequenceitem>
 		<validationitem
 		action="AttributeEqual"
-		enabled="False"
+		enabled="True"
 		optional="False"
 		searchpropertyid="060eb927-624b-4ea3-8f97-17e14626307f">
 			<comment>
