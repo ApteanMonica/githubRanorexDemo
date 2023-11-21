@@ -134,25 +134,49 @@ namespace B_BUAB_002.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Storno') on item 'Fenster_Stornobeleg.Storno'.", repo.Fenster_Stornobeleg.StornoInfo, new RecordItemIndex(0));
             Validate.AttributeEqual(repo.Fenster_Stornobeleg.StornoInfo, "Text", "Storno");
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$Buchungs_Jahr_Korrekt' on item 'Fenster_Stornobeleg.Jahr'.", repo.Fenster_Stornobeleg.JahrInfo, new RecordItemIndex(1));
-            repo.Fenster_Stornobeleg.Jahr.Element.SetAttributeValue("Text", Buchungs_Jahr_Korrekt);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Buchungs_Jahr_Korrekt' with focus on 'Fenster_Stornobeleg.BuchungsJahr'.", repo.Fenster_Stornobeleg.BuchungsJahrInfo, new RecordItemIndex(1));
+            repo.Fenster_Stornobeleg.BuchungsJahr.PressKeys(Buchungs_Jahr_Korrekt);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$Buchungs_Monat_Korrekt' on item 'Fenster_Stornobeleg.Monat'.", repo.Fenster_Stornobeleg.MonatInfo, new RecordItemIndex(2));
-            repo.Fenster_Stornobeleg.Monat.Element.SetAttributeValue("Text", Buchungs_Monat_Korrekt);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$UVA_Jahr_Korrekt' on item 'Fenster_Stornobeleg.UVA_Jahr'.", repo.Fenster_Stornobeleg.UVA_JahrInfo, new RecordItemIndex(3));
-            repo.Fenster_Stornobeleg.UVA_Jahr.Element.SetAttributeValue("Text", UVA_Jahr_Korrekt);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Buchungs_Monat_Korrekt' with focus on 'Fenster_Stornobeleg.BuchungsMonat'.", repo.Fenster_Stornobeleg.BuchungsMonatInfo, new RecordItemIndex(3));
+            repo.Fenster_Stornobeleg.BuchungsMonat.PressKeys(Buchungs_Monat_Korrekt);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$UVA_Monat_Korrekt' on item 'Fenster_Stornobeleg.UVA_Monat'.", repo.Fenster_Stornobeleg.UVA_MonatInfo, new RecordItemIndex(4));
-            repo.Fenster_Stornobeleg.UVA_Monat.Element.SetAttributeValue("Text", UVA_Monat_Korrekt);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Fenster_Stornobeleg.PbOK' at Center.", repo.Fenster_Stornobeleg.PbOKInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$UVA_Jahr_Korrekt' with focus on 'Fenster_Stornobeleg.UVA_Jahr_Button_statt_Column'.", repo.Fenster_Stornobeleg.UVA_Jahr_Button_statt_ColumnInfo, new RecordItemIndex(5));
+            repo.Fenster_Stornobeleg.UVA_Jahr_Button_statt_Column.PressKeys(UVA_Jahr_Korrekt);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(60000), new RecordItemIndex(7));
+            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='UVA-Jahr 2020 Ok?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "UVA-Jahr 2020 Ok?");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(9));
+            repo.DlgMessageBox.Button0.Click();
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$UVA_Monat_Korrekt' with focus on 'Fenster_Stornobeleg.UVA_Monat'.", repo.Fenster_Stornobeleg.UVA_MonatInfo, new RecordItemIndex(10));
+            repo.Fenster_Stornobeleg.UVA_Monat.PressKeys(UVA_Monat_Korrekt);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Fenster_Stornobeleg.PbOK' at Center.", repo.Fenster_Stornobeleg.PbOKInfo, new RecordItemIndex(12));
             repo.Fenster_Stornobeleg.PbOK.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Stornobuchung durchgeführt!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(60000), new RecordItemIndex(13));
+            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Stornobuchung durchgeführt!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Stornobuchung durchgeführt!");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(15));
             repo.DlgMessageBox.Button0.Click();
             
         }

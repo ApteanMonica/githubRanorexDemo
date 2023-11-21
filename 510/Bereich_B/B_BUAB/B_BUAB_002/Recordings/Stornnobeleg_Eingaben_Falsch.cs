@@ -154,40 +154,55 @@ namespace B_BUAB_002.Recordings
             repo.Fenster_Stornobeleg.NeueBelegNr.EnsureVisible();
             Keyboard.Press(Stornobeleg);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Stornobeleg) on item 'Fenster_Stornobeleg.NeueBelegNr'.", repo.Fenster_Stornobeleg.NeueBelegNrInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Stornobeleg) on item 'Fenster_Stornobeleg.NeueBelegNr'.", repo.Fenster_Stornobeleg.NeueBelegNrInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.Fenster_Stornobeleg.NeueBelegNrInfo, "Text", Stornobeleg);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$Buchungs_Jahr_Falsch' on item 'Fenster_Stornobeleg.Jahr'.", repo.Fenster_Stornobeleg.JahrInfo, new RecordItemIndex(4));
-            repo.Fenster_Stornobeleg.Jahr.Element.SetAttributeValue("Text", Buchungs_Jahr_Falsch);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Buchungs_Jahr_Falsch' with focus on 'Fenster_Stornobeleg.BuchungsJahr'.", repo.Fenster_Stornobeleg.BuchungsJahrInfo, new RecordItemIndex(5));
+            repo.Fenster_Stornobeleg.BuchungsJahr.PressKeys(Buchungs_Jahr_Falsch);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$Buchungs_Monat_Falsch' on item 'Fenster_Stornobeleg.Monat'.", repo.Fenster_Stornobeleg.MonatInfo, new RecordItemIndex(5));
-            repo.Fenster_Stornobeleg.Monat.Element.SetAttributeValue("Text", Buchungs_Monat_Falsch);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'Fenster_Stornobeleg.UVA_Jahr' at Center.", repo.Fenster_Stornobeleg.UVA_JahrInfo, new RecordItemIndex(6));
-            repo.Fenster_Stornobeleg.UVA_Jahr.DoubleClick();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Buchungs_Monat_Falsch' with focus on 'Fenster_Stornobeleg.BuchungsMonat'.", repo.Fenster_Stornobeleg.BuchungsMonatInfo, new RecordItemIndex(7));
+            repo.Fenster_Stornobeleg.BuchungsMonat.PressKeys(Buchungs_Monat_Falsch);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$UVA_Jahr_Falsch' with focus on 'Fenster_Stornobeleg.UVA_Jahr'.", repo.Fenster_Stornobeleg.UVA_JahrInfo, new RecordItemIndex(7));
-            repo.Fenster_Stornobeleg.UVA_Jahr.PressKeys(UVA_Jahr_Falsch);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}' with focus on 'Fenster_Stornobeleg.UVA_Jahr'.", repo.Fenster_Stornobeleg.UVA_JahrInfo, new RecordItemIndex(8));
-            repo.Fenster_Stornobeleg.UVA_Jahr.PressKeys("{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$UVA_Jahr_Falsch' with focus on 'Fenster_Stornobeleg.UVA_Jahr_Button_statt_Column'.", repo.Fenster_Stornobeleg.UVA_Jahr_Button_statt_ColumnInfo, new RecordItemIndex(9));
+            repo.Fenster_Stornobeleg.UVA_Jahr_Button_statt_Column.PressKeys(UVA_Jahr_Falsch);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='UVA-Jahr 2018 Ok?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(60000), new RecordItemIndex(11));
+            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='UVA-Jahr 2018 Ok?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "UVA-Jahr 2018 Ok?");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(13));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$UVA_Monat_Falsch' on item 'Fenster_Stornobeleg.UVA_Monat'.", repo.Fenster_Stornobeleg.UVA_MonatInfo, new RecordItemIndex(11));
-            repo.Fenster_Stornobeleg.UVA_Monat.Element.SetAttributeValue("Text", UVA_Monat_Falsch);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$UVA_Monat_Falsch' with focus on 'Fenster_Stornobeleg.UVA_Monat'.", repo.Fenster_Stornobeleg.UVA_MonatInfo, new RecordItemIndex(14));
+            repo.Fenster_Stornobeleg.UVA_Monat.PressKeys(UVA_Monat_Falsch);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Fenster_Stornobeleg.PbOK' at Center.", repo.Fenster_Stornobeleg.PbOKInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(15));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Fenster_Stornobeleg.PbOK' at Center.", repo.Fenster_Stornobeleg.PbOKInfo, new RecordItemIndex(16));
             repo.Fenster_Stornobeleg.PbOK.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bitte gültige Periode eingeben !') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(60000), new RecordItemIndex(17));
+            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Bitte gültige Periode eingeben !') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(18));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Bitte gültige Periode eingeben !");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(19));
             repo.DlgMessageBox.Button0.Click();
             
         }

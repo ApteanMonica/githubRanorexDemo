@@ -42,7 +42,7 @@ namespace B_BUAB_002.Recordings
         public Kontrolle_Urspruengl_Beleg()
         {
             Beleg = "BAÄ_02";
-            Tagesdatum = "08.06.2020";
+            Tagesdatum = "";
             Programm = "B_BUAB";
         }
 

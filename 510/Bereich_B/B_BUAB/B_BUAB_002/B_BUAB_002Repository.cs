@@ -679,9 +679,9 @@ namespace B_BUAB_002
         {
             RepoItemInfo _stornoInfo;
             RepoItemInfo _pbokInfo;
-            RepoItemInfo _jahrInfo;
-            RepoItemInfo _monatInfo;
-            RepoItemInfo _uva_jahrInfo;
+            RepoItemInfo _buchungsjahrInfo;
+            RepoItemInfo _buchungsmonatInfo;
+            RepoItemInfo _uva_jahr_button_statt_columnInfo;
             RepoItemInfo _uva_monatInfo;
             RepoItemInfo _neuebelegnrInfo;
 
@@ -693,9 +693,9 @@ namespace B_BUAB_002
             {
                 _stornoInfo = new RepoItemInfo(this, "Storno", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "1a7423b2-37e4-4c9b-add6-57c14e4f38a8");
                 _pbokInfo = new RepoItemInfo(this, "PbOK", "button[@controlname='pbOK']", "", 30000, null, "734da529-159f-4e07-951f-decfbe6ebbe4");
-                _jahrInfo = new RepoItemInfo(this, "Jahr", "text[@controlname='dfJahrbezJ']/text[@accessiblename='Monat']", "", 30000, null, "018ce126-5d9d-42d8-94d2-7bef4a80b3b5");
-                _monatInfo = new RepoItemInfo(this, "Monat", "text[@controlname='dfPeriodeJ']/text[@accessiblerole='Text']", "", 30000, null, "0ca9ecfe-e182-47fc-8154-25a8e29d3e36");
-                _uva_jahrInfo = new RepoItemInfo(this, "UVA_Jahr", "text[@controlname='dfUvajahr']/button[@accessiblename='UVA-Termin']", "", 30000, null, "edfc520b-b56f-44ef-ad99-0d9c68d386fb");
+                _buchungsjahrInfo = new RepoItemInfo(this, "BuchungsJahr", "text[@controlname='dfJahrbezJ']/text[@accessiblename='Monat']", "", 30000, null, "018ce126-5d9d-42d8-94d2-7bef4a80b3b5");
+                _buchungsmonatInfo = new RepoItemInfo(this, "BuchungsMonat", "text[@controlname='dfPeriodeJ']/text[@accessiblerole='Text']", "", 30000, null, "0ca9ecfe-e182-47fc-8154-25a8e29d3e36");
+                _uva_jahr_button_statt_columnInfo = new RepoItemInfo(this, "UVA_Jahr_Button_statt_Column", "text[@controlname='dfUvajahr']/button[@accessiblename='UVA-Termin']", "", 30000, null, "edfc520b-b56f-44ef-ad99-0d9c68d386fb");
                 _uva_monatInfo = new RepoItemInfo(this, "UVA_Monat", "text[@controlname='dfUvamonat']/text[@accessiblerole='Text']", "", 30000, null, "3de7c222-1489-4e10-b957-6f51494bdb6f");
                 _neuebelegnrInfo = new RepoItemInfo(this, "NeueBelegNr", "text[@controlname='dfBelegNeu']/text[@accessiblename='Neue Beleg-Nr:']", "", 30000, null, "94b60762-dbd9-4b4b-b6f6-195fe559c96b");
             }
@@ -773,74 +773,74 @@ namespace B_BUAB_002
             }
 
             /// <summary>
-            /// The Jahr item.
+            /// The BuchungsJahr item.
             /// </summary>
             [RepositoryItem("018ce126-5d9d-42d8-94d2-7bef4a80b3b5")]
-            public virtual Ranorex.Text Jahr
+            public virtual Ranorex.Text BuchungsJahr
             {
                 get
                 {
-                    return _jahrInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _buchungsjahrInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The Jahr item info.
+            /// The BuchungsJahr item info.
             /// </summary>
             [RepositoryItemInfo("018ce126-5d9d-42d8-94d2-7bef4a80b3b5")]
-            public virtual RepoItemInfo JahrInfo
+            public virtual RepoItemInfo BuchungsJahrInfo
             {
                 get
                 {
-                    return _jahrInfo;
+                    return _buchungsjahrInfo;
                 }
             }
 
             /// <summary>
-            /// The Monat item.
+            /// The BuchungsMonat item.
             /// </summary>
             [RepositoryItem("0ca9ecfe-e182-47fc-8154-25a8e29d3e36")]
-            public virtual Ranorex.Text Monat
+            public virtual Ranorex.Text BuchungsMonat
             {
                 get
                 {
-                    return _monatInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _buchungsmonatInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The Monat item info.
+            /// The BuchungsMonat item info.
             /// </summary>
             [RepositoryItemInfo("0ca9ecfe-e182-47fc-8154-25a8e29d3e36")]
-            public virtual RepoItemInfo MonatInfo
+            public virtual RepoItemInfo BuchungsMonatInfo
             {
                 get
                 {
-                    return _monatInfo;
+                    return _buchungsmonatInfo;
                 }
             }
 
             /// <summary>
-            /// The UVA_Jahr item.
+            /// The UVA_Jahr_Button_statt_Column item.
             /// </summary>
             [RepositoryItem("edfc520b-b56f-44ef-ad99-0d9c68d386fb")]
-            public virtual Ranorex.Button UVA_Jahr
+            public virtual Ranorex.Button UVA_Jahr_Button_statt_Column
             {
                 get
                 {
-                    return _uva_jahrInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _uva_jahr_button_statt_columnInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The UVA_Jahr item info.
+            /// The UVA_Jahr_Button_statt_Column item info.
             /// </summary>
             [RepositoryItemInfo("edfc520b-b56f-44ef-ad99-0d9c68d386fb")]
-            public virtual RepoItemInfo UVA_JahrInfo
+            public virtual RepoItemInfo UVA_Jahr_Button_statt_ColumnInfo
             {
                 get
                 {
-                    return _uva_jahrInfo;
+                    return _uva_jahr_button_statt_columnInfo;
                 }
             }
 

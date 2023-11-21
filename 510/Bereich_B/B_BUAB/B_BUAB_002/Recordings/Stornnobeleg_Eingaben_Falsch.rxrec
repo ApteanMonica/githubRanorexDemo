@@ -121,6 +121,21 @@ mode="Global">
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="cd90a86c-c2fd-40c6-944b-3de169504fbe"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -150,82 +165,86 @@ mode="Global">
 				yourtext
 			</matchvalue>
 		</validationitem>
-		<setvaluerecorditem
-		attrname="Text"
+		<keysequenceitem
+		KeySequence=""
+		duration="100ms"
 		enabled="True"
 		optional="False"
-		searchpropertyid="b160f01f-4730-42e1-9d4d-a4e9aec9ecbc">
+		presstime="100ms"
+		searchpropertyid="b5e8651e-10a0-44f6-9641-797161cf2b41">
 			<comment>
 			</comment>
 			<bindings>
 				<binding
-				target="AttributeValue"
+				target="KeySequence"
 				variable="Buchungs_Jahr_Falsch">
 				</binding>
 			</bindings>
 			<info
 			id="018ce126-5d9d-42d8-94d2-7bef4a80b3b5"
-			sourcename="ItemRecorderEditor">
+			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='dlgNeuerBeleg']/?/?/text[@accessiblename='Monat']
+					/form[@controlname='dlgNeuerBeleg']/text[@controlname='dfJahrbezJ']/text[@accessiblename='Monat']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-			<AttributeValue>
-			</AttributeValue>
-		</setvaluerecorditem>
-		<setvaluerecorditem
-		attrname="Text"
+		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="100ms"
 		enabled="True"
 		optional="False"
-		searchpropertyid="97545fc0-6faf-4bbb-b106-28d177a373b3">
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="cd90a86c-c2fd-40c6-944b-3de169504fbe"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<keysequenceitem
+		KeySequence=""
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="b5e8651e-10a0-44f6-9641-797161cf2b41">
 			<comment>
 			</comment>
 			<bindings>
 				<binding
-				target="AttributeValue"
+				target="KeySequence"
 				variable="Buchungs_Monat_Falsch">
 				</binding>
 			</bindings>
 			<info
 			id="0ca9ecfe-e182-47fc-8154-25a8e29d3e36"
-			sourcename="ItemRecorderEditor">
+			sourcename="RepositoryEditor">
 				<path>
 					/form[@controlname='dlgNeuerBeleg']/text[@controlname='dfPeriodeJ']/text[@accessiblerole='Text']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-			<AttributeValue>
-			</AttributeValue>
-		</setvaluerecorditem>
-		<mouseitem
-		action="DoubleClick"
-		button="Left"
-		duration="500ms"
+		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="100ms"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
 		optional="False"
-		searchpropertyid="a229b542-b3f5-400c-a8ed-ac96285e2de7"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="cd90a86c-c2fd-40c6-944b-3de169504fbe"
+		setModifiers="True">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="edfc520b-b56f-44ef-ad99-0d9c68d386fb"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@controlname='dlgNeuerBeleg']/text[@controlname='dfUvajahr']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
+		</keyitem>
 		<keysequenceitem
 		KeySequence=""
 		duration="100ms"
@@ -251,27 +270,41 @@ mode="Global">
 				</robustPath>
 			</info>
 		</keysequenceitem>
-		<keysequenceitem
-		KeySequence="{Tab}"
+		<keyitem
+		action="Press"
+		data="Tab"
 		duration="100ms"
 		enabled="True"
 		optional="False"
 		presstime="100ms"
-		searchpropertyid="95f6f3b1-6ff4-4811-a25a-b9d9485024e9">
+		scancode="0"
+		searchpropertyid="cd90a86c-c2fd-40c6-944b-3de169504fbe"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="31d45a63-3a08-418b-95f9-c4dee22b6f84"
+		waitaction="Exists"
+		waittimeout="60000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="edfc520b-b56f-44ef-ad99-0d9c68d386fb"
-			sourcename="ItemRecorderEditor">
+			id="cc518ca7-97bd-4915-bc5d-18e72b1e153d"
+			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='dlgNeuerBeleg']/text[@controlname='dfUvajahr']
+					/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</keysequenceitem>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -1194,31 +1227,46 @@ yxUtFAEXlijyxUtFAEXlijyxUtFAEXlijyxUtFAEXlijyxUtFAEXlijyxUtFAEXlijyxUtFAEXli
 jyxUtFAEXlijyxUtFAEXlijyxUtFAEXlijyxUtFAEfligRipKKAEAxS0UUAFFFFAH//Z
 			</helperscreenshot>
 		</mouseitem>
-		<setvaluerecorditem
-		attrname="Text"
+		<keysequenceitem
+		KeySequence=""
+		duration="100ms"
 		enabled="True"
 		optional="False"
-		searchpropertyid="3e71071a-9443-47fa-a383-64dbaf0deb2e">
+		presstime="100ms"
+		searchpropertyid="23c8e31a-a973-497e-8152-75e41d1204ec">
 			<comment>
 			</comment>
 			<bindings>
 				<binding
-				target="AttributeValue"
+				target="KeySequence"
 				variable="UVA_Monat_Falsch">
 				</binding>
 			</bindings>
 			<info
 			id="3de7c222-1489-4e10-b957-6f51494bdb6f"
-			sourcename="ItemRecorderEditor">
+			sourcename="RepositoryEditor">
 				<path>
 					/form[@controlname='dlgNeuerBeleg']/text[@controlname='dfUvamonat']/text[@accessiblerole='Text']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-			<AttributeValue>
-			</AttributeValue>
-		</setvaluerecorditem>
+		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="cd90a86c-c2fd-40c6-944b-3de169504fbe"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -3426,6 +3474,26 @@ KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
 oAKKKKACiiigD//Z
 			</helperscreenshot>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="31d45a63-3a08-418b-95f9-c4dee22b6f84"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="cc518ca7-97bd-4915-bc5d-18e72b1e153d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
