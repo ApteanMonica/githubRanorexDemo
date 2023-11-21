@@ -2223,6 +2223,7 @@ namespace E_INFO_001
             E_INFO_001RepositoryFolders.FlexGridFolder1 _flexgrid;
             RepoItemInfo _colrechnrrow3Info;
             RepoItemInfo _colreacdrow9Info;
+            RepoItemInfo _collsknrInfo;
             RepoItemInfo _collsknrrow1Info;
 
             /// <summary>
@@ -2234,7 +2235,8 @@ namespace E_INFO_001
                 _flexgrid = new E_INFO_001RepositoryFolders.FlexGridFolder1(this);
                 _colrechnrrow3Info = new RepoItemInfo(this, "ColRechNrRow3", "?/?/form//table/row[@accessiblename='Row 3']/cell[@accessiblename='colRech_nr Row 3']", "", 30000, null, "7f8a4dc6-9ab0-412d-a2c2-4303571d877d");
                 _colreacdrow9Info = new RepoItemInfo(this, "ColReaCdRow9", "?/?/form[@controlname='tblRech']/container[@controlname='ChildTableWindow']//?/cell[@accessiblename~'colRea_cd Row ' and @text='G']", "", 30000, null, "73f6123e-773e-4bec-b8b3-ea67502ff5fa");
-                _collsknrrow1Info = new RepoItemInfo(this, "ColLskNrRow1", "element[@controltypename='MdiClient']/form[@controlname='tblLsk']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_nr Row 1']", "", 30000, null, "d7aa6c77-1038-4fe3-89e5-e7ac03885cd2");
+                _collsknrInfo = new RepoItemInfo(this, "ColLskNr", "element[@controltypename='MdiClient']/form[@controlname='tblLsk']/element[@controlname='colLsk_nr']", "", 30000, null, "a6fca414-87cf-4ec5-9be3-d032a95b8b9a");
+                _collsknrrow1Info = new RepoItemInfo(this, "ColLskNrRow1", "element[@controltypename='MdiClient']/form[@controlname='tblLsk']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_nr Row 1']", "", 30000, null, "00037b2d-d49b-4431-a4e3-a6f1390db9a3");
             }
 
             /// <summary>
@@ -2310,9 +2312,33 @@ namespace E_INFO_001
             }
 
             /// <summary>
+            /// The ColLskNr item.
+            /// </summary>
+            [RepositoryItem("a6fca414-87cf-4ec5-9be3-d032a95b8b9a")]
+            public virtual Ranorex.Unknown ColLskNr
+            {
+                get
+                {
+                    return _collsknrInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColLskNr item info.
+            /// </summary>
+            [RepositoryItemInfo("a6fca414-87cf-4ec5-9be3-d032a95b8b9a")]
+            public virtual RepoItemInfo ColLskNrInfo
+            {
+                get
+                {
+                    return _collsknrInfo;
+                }
+            }
+
+            /// <summary>
             /// The ColLskNrRow1 item.
             /// </summary>
-            [RepositoryItem("d7aa6c77-1038-4fe3-89e5-e7ac03885cd2")]
+            [RepositoryItem("00037b2d-d49b-4431-a4e3-a6f1390db9a3")]
             public virtual Ranorex.Cell ColLskNrRow1
             {
                 get
@@ -2324,7 +2350,7 @@ namespace E_INFO_001
             /// <summary>
             /// The ColLskNrRow1 item info.
             /// </summary>
-            [RepositoryItemInfo("d7aa6c77-1038-4fe3-89e5-e7ac03885cd2")]
+            [RepositoryItemInfo("00037b2d-d49b-4431-a4e3-a6f1390db9a3")]
             public virtual RepoItemInfo ColLskNrRow1Info
             {
                 get
