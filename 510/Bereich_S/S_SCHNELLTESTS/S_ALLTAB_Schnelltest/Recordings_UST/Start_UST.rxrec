@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="78e970b4-b6c6-4746-ab5a-dae5bc077ef2"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Start_UST"
+	namespace="S_ALLTAB_Schnelltest.Recordings_UST">
+	</codegen>
+	<variables>
+		<var
+		id="8b999310-a2ae-437d-ae1b-ceebba183630"
+		name="Programm_UST">
+			S_ALLTAB Aufrufart UST
+		</var>
+		<var
+		id="4e4555e3-89ba-45ff-bd21-dd4681d6c92d"
+		name="Startfile">
+			C:\Testdaten\Allgemein\Start.bat
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		duration="100ms"
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Arguments"
+				variable="Programm_UST">
+				</binding>
+				<binding
+				target="FileName"
+				variable="Startfile">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Program Files\Microsoft Office\Office16\EXCEL.EXE
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="89723d13-abb7-4d4b-acc7-72357c4811fa"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="101814db-4806-4339-8f6f-5a766278e8d7"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="37"
+				prefcap="titlebar"
+				rect="16,-5,1350,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Verwalten Umsatzsteuer
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Verwalten Umsatzsteuer
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblUstVerwalten']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="e9d2bb62-6cdc-4795-bc1f-27a431fed335">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="101814db-4806-4339-8f6f-5a766278e8d7"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="37"
+				prefcap="titlebar"
+				rect="16,-5,1350,28"
+				role="titlebar"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						[100]  Verwalten Umsatzsteuer
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						[100]  Verwalten Umsatzsteuer
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblUstVerwalten']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Verwalten Umsatzsteuer
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="e3834078-795f-4923-b053-58d50595caf9"
+	name="S_ALLTAB_SchnelltestRepository"
+	relativepath="..\S_ALLTAB_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_ALLTAB_SchnelltestRepository"
+		namespace="S_ALLTAB_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="3d368c45-82dd-4a56-a404-f23075cf2bc0"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Start_UST.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
