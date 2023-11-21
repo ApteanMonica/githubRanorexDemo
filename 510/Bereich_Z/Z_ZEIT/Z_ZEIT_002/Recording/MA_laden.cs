@@ -151,6 +151,9 @@ namespace Z_ZEIT_002.Recording
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Einschraenkungsmonat' with focus on 'MdiZeit.DfMonat'.", repo.MdiZeit.DfMonatInfo, new RecordItemIndex(9));
             repo.MdiZeit.DfMonat.PressKeys(Einschraenkungsmonat);
             
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(10));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
         }
 
 #region Image Feature Data

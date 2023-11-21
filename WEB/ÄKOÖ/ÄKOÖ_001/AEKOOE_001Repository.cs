@@ -205,6 +205,11 @@ namespace AEKOOE_001
             RepoItemInfo _kiarrow60downkicon_2_ebeneInfo;
             RepoItemInfo _buttontagneu_antragskategorieInfo;
             RepoItemInfo _sometdtag_neuInfo;
+            RepoItemInfo _btnbtnsecondary1Info;
+            RepoItemInfo _krankenversicherung1Info;
+            RepoItemInfo _buttontagbtn1Info;
+            RepoItemInfo _kinputInfo;
+            RepoItemInfo _colxs8Info;
 
             /// <summary>
             /// Creates a new Login  folder.
@@ -238,6 +243,11 @@ namespace AEKOOE_001
                 _kiarrow60downkicon_2_ebeneInfo = new RepoItemInfo(this, "KIArrow60DownKIcon_2_Ebene", ".//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div[2]/div[2]/span[@title='']/span/span[2]/span", "", 30000, null, "8c381c60-df09-489b-8198-8f34ca52c637");
                 _buttontagneu_antragskategorieInfo = new RepoItemInfo(this, "ButtonTagNeu_Antragskategorie", ".//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[3]/button[@innertext='Neu']", "", 30000, null, "035625dd-0f92-4f75-b1e7-1bf07e51f28d");
                 _sometdtag_neuInfo = new RepoItemInfo(this, "SomeTdTag_Neu", ".//div[#'panel-request']/div[1]/table/tbody/tr/td[1]", "", 30000, null, "c75d307d-a48f-4542-9c12-80fca8c2dd2b");
+                _btnbtnsecondary1Info = new RepoItemInfo(this, "BtnBtnSecondary1", ".//section[#'appModule']/section/div[2]/div/button[1]", "", 30000, null, "13209f24-2ae6-4e9d-a4dc-e4869d5f3211");
+                _krankenversicherung1Info = new RepoItemInfo(this, "Krankenversicherung1", ".//section[#'appModule']/section/div[2]/div/button[1]/span[@innertext='Krankenversicherung']", "", 30000, null, "4e823ce4-9eda-4bed-a062-065f07e3d7c6");
+                _buttontagbtn1Info = new RepoItemInfo(this, "ButtonTagBtn1", ".//section[#'appModule']/section/div[1]/div[2]/table/tbody/tr/td[2]/button", "", 30000, null, "08a5bb1b-d2f8-4817-8bfd-f342c1e1ea5a");
+                _kinputInfo = new RepoItemInfo(this, "KInput", ".//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div/div[2]/span[@title='']/span/span[1]", "", 30000, null, "a7e4a2c5-9c56-4d1d-a937-3642d8d64236");
+                _colxs8Info = new RepoItemInfo(this, "ColXs8", ".//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div/div[2]", "", 30000, null, "8596b819-1486-4f27-9d3b-19ae11cff07c");
             }
 
             /// <summary>
@@ -861,6 +871,126 @@ namespace AEKOOE_001
                 get
                 {
                     return _sometdtag_neuInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnBtnSecondary1 item.
+            /// </summary>
+            [RepositoryItem("13209f24-2ae6-4e9d-a4dc-e4869d5f3211")]
+            public virtual Ranorex.ButtonTag BtnBtnSecondary1
+            {
+                get
+                {
+                    return _btnbtnsecondary1Info.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnBtnSecondary1 item info.
+            /// </summary>
+            [RepositoryItemInfo("13209f24-2ae6-4e9d-a4dc-e4869d5f3211")]
+            public virtual RepoItemInfo BtnBtnSecondary1Info
+            {
+                get
+                {
+                    return _btnbtnsecondary1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Krankenversicherung1 item.
+            /// </summary>
+            [RepositoryItem("4e823ce4-9eda-4bed-a062-065f07e3d7c6")]
+            public virtual Ranorex.SpanTag Krankenversicherung1
+            {
+                get
+                {
+                    return _krankenversicherung1Info.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Krankenversicherung1 item info.
+            /// </summary>
+            [RepositoryItemInfo("4e823ce4-9eda-4bed-a062-065f07e3d7c6")]
+            public virtual RepoItemInfo Krankenversicherung1Info
+            {
+                get
+                {
+                    return _krankenversicherung1Info;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonTagBtn1 item.
+            /// </summary>
+            [RepositoryItem("08a5bb1b-d2f8-4817-8bfd-f342c1e1ea5a")]
+            public virtual Ranorex.ButtonTag ButtonTagBtn1
+            {
+                get
+                {
+                    return _buttontagbtn1Info.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonTagBtn1 item info.
+            /// </summary>
+            [RepositoryItemInfo("08a5bb1b-d2f8-4817-8bfd-f342c1e1ea5a")]
+            public virtual RepoItemInfo ButtonTagBtn1Info
+            {
+                get
+                {
+                    return _buttontagbtn1Info;
+                }
+            }
+
+            /// <summary>
+            /// The KInput item.
+            /// </summary>
+            [RepositoryItem("a7e4a2c5-9c56-4d1d-a937-3642d8d64236")]
+            public virtual Ranorex.SpanTag KInput
+            {
+                get
+                {
+                    return _kinputInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The KInput item info.
+            /// </summary>
+            [RepositoryItemInfo("a7e4a2c5-9c56-4d1d-a937-3642d8d64236")]
+            public virtual RepoItemInfo KInputInfo
+            {
+                get
+                {
+                    return _kinputInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColXs8 item.
+            /// </summary>
+            [RepositoryItem("8596b819-1486-4f27-9d3b-19ae11cff07c")]
+            public virtual Ranorex.DivTag ColXs8
+            {
+                get
+                {
+                    return _colxs8Info.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColXs8 item info.
+            /// </summary>
+            [RepositoryItemInfo("8596b819-1486-4f27-9d3b-19ae11cff07c")]
+            public virtual RepoItemInfo ColXs8Info
+            {
+                get
+                {
+                    return _colxs8Info;
                 }
             }
 

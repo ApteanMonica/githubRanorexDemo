@@ -40,6 +40,26 @@ mode="Global">
 		</var>
 	</variables>
 	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="b7f3dbc6-f867-4494-8e38-bed3545ae692"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="603cd265-6c7e-4ea5-9df0-0d3bffa42849"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='mdiZeit']/container[@controlname='ClientArea']/container[@controlname='Splitter']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='tblZeit']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colProj_nr Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -4595,7 +4615,7 @@ mode="Global">
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
