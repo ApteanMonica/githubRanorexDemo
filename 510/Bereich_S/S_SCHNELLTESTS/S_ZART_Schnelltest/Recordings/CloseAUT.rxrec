@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="dd6ae71b-6911-4f90-81d0-e6e7c8342524"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="S_ZART_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="4595e7ae-a427-45c7-a775-6638732f025b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="50292142-9161-466e-9c95-f29946826b0b"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblZahlungsarten']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="4420b360-f9aa-401f-9d8c-c1e32fdde0f3"
+	name="S_ZART_SchnelltestRepository"
+	relativepath="..\S_ZART_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_ZART_SchnelltestRepository"
+		namespace="S_ZART_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="9049a7e5-5b1c-4f1c-a5a9-734d9716df0a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
