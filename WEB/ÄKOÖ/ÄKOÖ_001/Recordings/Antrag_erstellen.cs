@@ -89,17 +89,17 @@ namespace AEKOOE_001.Recordings
             Validate.AttributeEqual(repo.Login.AntragInfo, "InnerText", "Antrag");
             
             // wurde eingebaut, weil die WEboberfläche Button "Neu" anzeigt bevor er richtig geladen wird, weshalb sich beim Klick drauf nichts tut.
-            Report.Log(ReportLevel.Info, "Wait", "wurde eingebaut, weil die WEboberfläche Button \"Neu\" anzeigt bevor er richtig geladen wird, weshalb sich beim Klick drauf nichts tut.\r\nWaiting 2m to exist. Associated repository item: 'Login.BtnBtnSecondary'", repo.Login.BtnBtnSecondaryInfo, new ActionTimeout(120000), new RecordItemIndex(3));
-            repo.Login.BtnBtnSecondaryInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "wurde eingebaut, weil die WEboberfläche Button \"Neu\" anzeigt bevor er richtig geladen wird, weshalb sich beim Klick drauf nichts tut.\r\nWaiting 2m to exist. Associated repository item: 'Login.Krankenversicherung1'", repo.Login.Krankenversicherung1Info, new ActionTimeout(120000), new RecordItemIndex(3));
+            repo.Login.Krankenversicherung1Info.WaitForExists(120000);
             
             //Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(4));
             //Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Login.ButtonTagBtn'.", repo.Login.ButtonTagBtnInfo, new RecordItemIndex(5));
-            Validate.Exists(repo.Login.ButtonTagBtnInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Login.ButtonTagBtn1'.", repo.Login.ButtonTagBtn1Info, new RecordItemIndex(5));
+            Validate.Exists(repo.Login.ButtonTagBtn1Info);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.ButtonTagBtn' at Center.", repo.Login.ButtonTagBtnInfo, new RecordItemIndex(6));
-            repo.Login.ButtonTagBtn.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.ButtonTagBtn1' at Center.", repo.Login.ButtonTagBtn1Info, new RecordItemIndex(6));
+            repo.Login.ButtonTagBtn1.Click();
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.Antragskategorie1' at Center.", repo.Login.Antragskategorie1Info, new RecordItemIndex(7));
             repo.Login.Antragskategorie1.Click();

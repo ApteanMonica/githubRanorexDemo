@@ -79,8 +79,8 @@ namespace AEKOOE_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.KSelect_drop_down_1_Ebene' at Center.", repo.Login.KSelect_drop_down_1_EbeneInfo, new RecordItemIndex(0));
-            repo.Login.KSelect_drop_down_1_Ebene.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.KInput' at Center.", repo.Login.KInputInfo, new RecordItemIndex(0));
+            repo.Login.KInput.Click();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Down}{Return}'.", new RecordItemIndex(1));
             Keyboard.Press("{Down}{Return}");
