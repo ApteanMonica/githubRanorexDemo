@@ -208,8 +208,8 @@ namespace E_INFO_001.Recordings
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(29));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BS_LS_RE2) on item 'MdiEInfo.ChildTableWindow1.ColLskNrRow1'.", repo.MdiEInfo.ChildTableWindow1.ColLskNrRow1Info, new RecordItemIndex(30));
-            Validate.AttributeEqual(repo.MdiEInfo.ChildTableWindow1.ColLskNrRow1Info, "Text", BS_LS_RE2);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$BS_LS_RE2) on item 'MdiEInfo1.ColLskNrRow1'.", repo.MdiEInfo1.ColLskNrRow1Info, new RecordItemIndex(30));
+            Validate.AttributeEqual(repo.MdiEInfo1.ColLskNrRow1Info, "Text", BS_LS_RE2);
             
         }
 
