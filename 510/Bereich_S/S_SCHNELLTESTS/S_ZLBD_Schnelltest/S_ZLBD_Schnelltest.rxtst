@@ -2,6 +2,37 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testmodule
+			id="01e54ce7-d8df-4bb1-9962-ab736ccaf6a2"
+			name="Neuanlage_ZLBD"
+			ref="a865a70a-3335-461e-9f5d-28a74d59ac79"
+			type="Recording">
+				<description>
+					<![CDATA[Fehler 530 beim löschen und ab 521 zusätzliche Spalte Status + Pflichfeld - Condition einbauen, weil bei Tab auf Feld davor und Keysequence 0 in 510+511 neue Zeile/zlbd angelegt wird]]>
+				</description>
+				<databinding>
+					<var
+					dataname="ZLBD_CD_NEU"
+					datasourceid="bbe32579-2f65-40cc-a1cb-a8946d6b4291"
+					variableid="41f0a088-afd3-4526-a1a1-07e3c2ca7018"
+					variablename="ZLBD_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="31840baf-af2a-4750-b72b-1c9ff41928c9"
+			name="Loeschen_ZLBD_ALT_nicht_moeglich"
+			ref="4eb53da5-3132-47b8-a241-3b5ba6fa1625"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ZLBD_CD_ALT"
+					datasourceid="bbe32579-2f65-40cc-a1cb-a8946d6b4291"
+					variableid="0d950f93-02bb-4262-9cf0-8df4557cc3d7"
+					variablename="ZLBD_CD_ALT">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="416a5d22-a3a3-48bb-98b9-297fea93cb2f"
 			name="setup">
@@ -48,6 +79,48 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testmodule
+			id="7d270b1d-5745-4bc5-8d56-b7072282e86d"
+			name="Aenderung_ZLBD_Speichern_Pruefen"
+			ref="74fdb586-c52d-48ac-9dfa-80b5b45a7fab"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ZLBD_CD_NEU"
+					datasourceid="bbe32579-2f65-40cc-a1cb-a8946d6b4291"
+					variableid="5f30b91f-0c84-49bb-9f94-e86a9de1c784"
+					variablename="ZLBD_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="7e9538aa-9df8-4e28-addd-0e2ad6e1372b"
+			name="Loeschen_ZLBD_NEU_pruefen"
+			ref="21f1c264-3231-473b-803f-e6a7665235f5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ZLBD_CD_NEU"
+					datasourceid="bbe32579-2f65-40cc-a1cb-a8946d6b4291"
+					variableid="5f30b91f-0c84-49bb-9f94-e86a9de1c784"
+					variablename="ZLBD_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="9b936862-dde5-4745-851e-c3a66328fd10"
+			name="Speichern_Pruefen_Neuanlage_ZLBD"
+			ref="f4dd79e6-bfab-46a5-8de8-416cdac13600"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ZLBD_CD_NEU"
+					datasourceid="bbe32579-2f65-40cc-a1cb-a8946d6b4291"
+					variableid="5f30b91f-0c84-49bb-9f94-e86a9de1c784"
+					variablename="ZLBD_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -85,11 +158,19 @@
 					name="Programm_ZAHLUNG"
 					value="S_ZLBD AUFRUFART ZAHLUNG">
 					</param>
+					<param
+					name="ZLBD_CD_NEU"
+					value="TST">
+					</param>
+					<param
+					name="ZLBD_CD_ALT"
+					value="A00">
+					</param>
 				</parameters>
 			</testcase>
 			<testcase
 			id="db767618-629d-42c5-9b12-b65606793ea6"
-			name="TestCase">
+			name="Verwalten_Zahlungsbedingungen_AUFRUFART_ZAHLUNG">
 			</testcase>
 			<teardown
 			id="ecb24410-d757-4f04-bca5-bde46bdd562f"
@@ -105,7 +186,7 @@
 				name="S_ZLBD_Schnelltest">
 					<testcase
 					id="db767618-629d-42c5-9b12-b65606793ea6"
-					name="TestCase">
+					name="Verwalten_Zahlungsbedingungen_AUFRUFART_ZAHLUNG">
 						<setup
 						id="416a5d22-a3a3-48bb-98b9-297fea93cb2f"
 						name="setup">
@@ -114,6 +195,26 @@
 							name="StartAUT">
 							</testmodule>
 						</setup>
+						<testmodule
+						id="01e54ce7-d8df-4bb1-9962-ab736ccaf6a2"
+						name="Neuanlage_ZLBD">
+						</testmodule>
+						<testmodule
+						id="9b936862-dde5-4745-851e-c3a66328fd10"
+						name="Speichern_Pruefen_Neuanlage_ZLBD">
+						</testmodule>
+						<testmodule
+						id="7d270b1d-5745-4bc5-8d56-b7072282e86d"
+						name="Aenderung_ZLBD_Speichern_Pruefen">
+						</testmodule>
+						<testmodule
+						id="7e9538aa-9df8-4e28-addd-0e2ad6e1372b"
+						name="Loeschen_ZLBD_NEU_pruefen">
+						</testmodule>
+						<testmodule
+						id="31840baf-af2a-4750-b72b-1c9ff41928c9"
+						name="Loeschen_ZLBD_ALT_nicht_moeglich">
+						</testmodule>
 						<teardown
 						id="ecb24410-d757-4f04-bca5-bde46bdd562f"
 						name="teardown">

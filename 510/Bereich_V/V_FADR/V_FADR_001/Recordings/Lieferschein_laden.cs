@@ -103,8 +103,8 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'TblFadr.RbLadenErstellen'.", repo.TblFadr.RbLadenErstellenInfo, new RecordItemIndex(0));
             Validate.AttributeEqual(repo.TblFadr.RbLadenErstellenInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='E') on item 'TblFadr.Rech_art_FlexGrid.Rechnungsart'.", repo.TblFadr.Rech_art_FlexGrid.RechnungsartInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid.RechnungsartInfo, "Text", "E");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='E') on item 'TblFadr.Rech_art_FlexGrid.colRechartRow1'.", repo.TblFadr.Rech_art_FlexGrid.colRechartRow1Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid.colRechartRow1Info, "Text", "E");
             
             //Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1_mit_Tagesdatum'", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1_mit_TagesdatumInfo, new ActionTimeout(60000), new RecordItemIndex(2));
             //repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1_mit_TagesdatumInfo.WaitForExists(60000);
