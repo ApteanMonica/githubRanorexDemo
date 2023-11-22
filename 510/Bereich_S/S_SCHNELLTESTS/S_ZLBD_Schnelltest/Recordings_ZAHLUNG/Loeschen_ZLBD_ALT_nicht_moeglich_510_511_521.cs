@@ -24,22 +24,22 @@ namespace S_ZLBD_Schnelltest.Recordings_ZAHLUNG
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Loeschen_ZLBD_ALT_nicht_moeglich recording.
+    ///The Loeschen_ZLBD_ALT_nicht_moeglich_510_511_521 recording.
     /// </summary>
-    [TestModule("0a53dde1-2c4d-4894-84cd-0430a0b530cb", ModuleType.Recording, 1)]
-    public partial class Loeschen_ZLBD_ALT_nicht_moeglich : ITestModule
+    [TestModule("4eb53da5-3132-47b8-a241-3b5ba6fa1625", ModuleType.Recording, 1)]
+    public partial class Loeschen_ZLBD_ALT_nicht_moeglich_510_511_521 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_ZLBD_Schnelltest.S_ZLBD_SchnelltestRepository repository.
         /// </summary>
         public static global::S_ZLBD_Schnelltest.S_ZLBD_SchnelltestRepository repo = global::S_ZLBD_Schnelltest.S_ZLBD_SchnelltestRepository.Instance;
 
-        static Loeschen_ZLBD_ALT_nicht_moeglich instance = new Loeschen_ZLBD_ALT_nicht_moeglich();
+        static Loeschen_ZLBD_ALT_nicht_moeglich_510_511_521 instance = new Loeschen_ZLBD_ALT_nicht_moeglich_510_511_521();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Loeschen_ZLBD_ALT_nicht_moeglich()
+        public Loeschen_ZLBD_ALT_nicht_moeglich_510_511_521()
         {
             ZLBD_CD_ALT = "A00";
         }
@@ -47,7 +47,7 @@ namespace S_ZLBD_Schnelltest.Recordings_ZAHLUNG
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Loeschen_ZLBD_ALT_nicht_moeglich Instance
+        public static Loeschen_ZLBD_ALT_nicht_moeglich_510_511_521 Instance
         {
             get { return instance; }
         }
@@ -57,7 +57,7 @@ namespace S_ZLBD_Schnelltest.Recordings_ZAHLUNG
         /// <summary>
         /// Gets or sets the value of variable ZLBD_CD_ALT.
         /// </summary>
-        [TestVariable("ac705c15-230c-4066-97cc-b5185eb86f06")]
+        [TestVariable("0d950f93-02bb-4262-9cf0-8df4557cc3d7")]
         public string ZLBD_CD_ALT
         {
             get { return repo.ZLBD_CD_ALT; }
@@ -105,34 +105,28 @@ namespace S_ZLBD_Schnelltest.Recordings_ZAHLUNG
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(30000), new RecordItemIndex(4));
             repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(30000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Der Status aktiver und inaktiver Datensätze kann nicht gelöscht werden.') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(5));
-            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Der Status aktiver und inaktiver Datensätze kann nicht gelöscht werden.");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Dieser Datensatz kann noch nicht gelöscht werden,\r\nda noch abhängige Daten existieren!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(5));
+            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Dieser Datensatz kann noch nicht gelöscht werden,\r\nda noch abhängige Daten existieren!");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(6));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(7));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(7));
+            Delay.Duration(3000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblZlbd.PbCommonLoad' at Center.", repo.TblZlbd.PbCommonLoadInfo, new RecordItemIndex(8));
-            repo.TblZlbd.PbCommonLoad.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Während des Speicherns ist ein Fehler aufgetreten!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(8));
+            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Während des Speicherns ist ein Fehler aufgetreten!");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(30000), new RecordItemIndex(9));
-            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(9));
+            repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Es wurden Daten geändert!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(10));
-            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es wurden Daten geändert!");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(11));
-            repo.DlgMessageBox.Button1.Click();
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(10));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ZLBD_CD_ALT) on item 'TblZlbd.Row_mit_ZLBD_CD_ALT.ColZlbdCdRow_ZLBD_CD_ALT'.", repo.TblZlbd.Row_mit_ZLBD_CD_ALT.ColZlbdCdRow_ZLBD_CD_ALTInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$ZLBD_CD_ALT) on item 'TblZlbd.Row_mit_ZLBD_CD_ALT.ColZlbdCdRow_ZLBD_CD_ALT'.", repo.TblZlbd.Row_mit_ZLBD_CD_ALT.ColZlbdCdRow_ZLBD_CD_ALTInfo, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.TblZlbd.Row_mit_ZLBD_CD_ALT.ColZlbdCdRow_ZLBD_CD_ALTInfo, "Text", ZLBD_CD_ALT);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblZlbd.Row_mit_ZLBD_CD_ALT.ColZlbdSkonto1_ZLBD_CD_ALT'.", repo.TblZlbd.Row_mit_ZLBD_CD_ALT.ColZlbdSkonto1_ZLBD_CD_ALTInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0,00') on item 'TblZlbd.Row_mit_ZLBD_CD_ALT.ColZlbdSkonto1_ZLBD_CD_ALT'.", repo.TblZlbd.Row_mit_ZLBD_CD_ALT.ColZlbdSkonto1_ZLBD_CD_ALTInfo, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.TblZlbd.Row_mit_ZLBD_CD_ALT.ColZlbdSkonto1_ZLBD_CD_ALTInfo, "Text", "0,00");
             
         }

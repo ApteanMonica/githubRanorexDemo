@@ -30,7 +30,6 @@ namespace S_ZLBD_Schnelltest
         S_ZLBD_SchnelltestRepositoryFolders.TblZlbdAppFolder _tblzlbd;
         S_ZLBD_SchnelltestRepositoryFolders.SZLBDAppFolder _szlbd;
         S_ZLBD_SchnelltestRepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
-        RepoItemInfo _bedingungenverwaltenInfo;
 
         /// <summary>
         /// Gets the singleton class instance representing the S_ZLBD_SchnelltestRepository element repository.
@@ -50,7 +49,6 @@ namespace S_ZLBD_Schnelltest
             _tblzlbd = new S_ZLBD_SchnelltestRepositoryFolders.TblZlbdAppFolder(this);
             _szlbd = new S_ZLBD_SchnelltestRepositoryFolders.SZLBDAppFolder(this);
             _dlgmessagebox = new S_ZLBD_SchnelltestRepositoryFolders.DlgMessageBoxAppFolder(this);
-            _bedingungenverwaltenInfo = new RepoItemInfo(this, "BedingungenVerwalten", "/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']", 30000, null, "8b71a8e9-4c8a-4e24-9103-787fc3fa6310");
         }
 
 #region Variables
@@ -90,30 +88,6 @@ namespace S_ZLBD_Schnelltest
             get
             {
                 return _selfInfo;
-            }
-        }
-
-        /// <summary>
-        /// The BedingungenVerwalten item.
-        /// </summary>
-        [RepositoryItem("8b71a8e9-4c8a-4e24-9103-787fc3fa6310")]
-        public virtual Ranorex.TitleBar BedingungenVerwalten
-        {
-            get
-            {
-                 return _bedingungenverwaltenInfo.CreateAdapter<Ranorex.TitleBar>(true);
-            }
-        }
-
-        /// <summary>
-        /// The BedingungenVerwalten item info.
-        /// </summary>
-        [RepositoryItemInfo("8b71a8e9-4c8a-4e24-9103-787fc3fa6310")]
-        public virtual RepoItemInfo BedingungenVerwaltenInfo
-        {
-            get
-            {
-                return _bedingungenverwaltenInfo;
             }
         }
 
@@ -162,6 +136,7 @@ namespace S_ZLBD_Schnelltest
             RepoItemInfo _maximierenInfo;
             RepoItemInfo _titlebar100verwaltungzahlungsbediInfo;
             RepoItemInfo _pbcommonsaveInfo;
+            RepoItemInfo _pbcommonloadInfo;
             RepoItemInfo _flexgridInfo;
             RepoItemInfo _row_mit_variable_zlbd_cd_neuInfo;
             RepoItemInfo _row_mit_variable_zlbd_cd_altInfo;
@@ -177,6 +152,7 @@ namespace S_ZLBD_Schnelltest
                 _maximierenInfo = new RepoItemInfo(this, "Maximieren", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Maximieren']", "", 30000, null, "867c1779-89bb-4e4a-aac8-0b0b100ec3b8");
                 _titlebar100verwaltungzahlungsbediInfo = new RepoItemInfo(this, "TitleBar100VerwaltungZahlungsbedi", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "5cfac834-67ed-4aa8-b20a-7fda1454cd61");
                 _pbcommonsaveInfo = new RepoItemInfo(this, "PbCommonSave", "container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Save']", "", 30000, null, "cf0fe96a-5e31-4145-906d-a18700fea6f3");
+                _pbcommonloadInfo = new RepoItemInfo(this, "PbCommonLoad", "container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Load']", "", 30000, null, "f724b114-1175-4c6f-97a8-1913e6704c33");
                 _flexgridInfo = new RepoItemInfo(this, "FlexGrid", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", "", 30000, null, "785e31fc-04d1-4607-8c3e-5f653303791e");
                 _row_mit_variable_zlbd_cd_neuInfo = new RepoItemInfo(this, "row_mit_Variable_ZLBD_CD_NEU", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ZLBD_CD_NEU]", "element", 30000, null, "3f5617d6-8bed-4637-a23d-9ef3304e8821");
                 _row_mit_variable_zlbd_cd_altInfo = new RepoItemInfo(this, "row_mit_Variable_ZLBD_CD_ALT", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$ZLBD_CD_ALT]", "element", 30000, null, "24e2c1b0-8840-483c-b462-e988cc52fe96");
@@ -275,6 +251,30 @@ namespace S_ZLBD_Schnelltest
                 get
                 {
                     return _pbcommonsaveInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbCommonLoad item.
+            /// </summary>
+            [RepositoryItem("f724b114-1175-4c6f-97a8-1913e6704c33")]
+            public virtual Ranorex.Button PbCommonLoad
+            {
+                get
+                {
+                    return _pbcommonloadInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbCommonLoad item info.
+            /// </summary>
+            [RepositoryItemInfo("f724b114-1175-4c6f-97a8-1913e6704c33")]
+            public virtual RepoItemInfo PbCommonLoadInfo
+            {
+                get
+                {
+                    return _pbcommonloadInfo;
                 }
             }
 
@@ -885,6 +885,7 @@ namespace S_ZLBD_Schnelltest
         [RepositoryFolder("c4ddce20-95bc-44c6-83f6-686904411688")]
         public partial class DlgMessageBoxAppFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _bedingungenverwaltenInfo;
             RepoItemInfo _labelmeldungstextInfo;
             RepoItemInfo _button0Info;
             RepoItemInfo _button1Info;
@@ -896,6 +897,7 @@ namespace S_ZLBD_Schnelltest
             public DlgMessageBoxAppFolder(RepoGenBaseFolder parentFolder) :
                     base("DlgMessageBox", "/form[@controlname='dlgMessageBox']", parentFolder, 30000, null, true, "c4ddce20-95bc-44c6-83f6-686904411688", "")
             {
+                _bedingungenverwaltenInfo = new RepoItemInfo(this, "BedingungenVerwalten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "8b71a8e9-4c8a-4e24-9103-787fc3fa6310");
                 _labelmeldungstextInfo = new RepoItemInfo(this, "LabelMeldungstext", "text[@controlname='labelMeldungstext']", "", 30000, null, "176e1953-b1b2-4a8f-89e6-19ade42a84da");
                 _button0Info = new RepoItemInfo(this, "Button0", "button[@controlname='button0']", "", 30000, null, "25afa257-7343-413d-9800-83e7e61b4548");
                 _button1Info = new RepoItemInfo(this, "Button1", "button[@controlname='button1']", "", 30000, null, "cb07c18f-bf7b-4f73-9abc-46f5342a3a88");
@@ -923,6 +925,30 @@ namespace S_ZLBD_Schnelltest
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BedingungenVerwalten item.
+            /// </summary>
+            [RepositoryItem("8b71a8e9-4c8a-4e24-9103-787fc3fa6310")]
+            public virtual Ranorex.TitleBar BedingungenVerwalten
+            {
+                get
+                {
+                    return _bedingungenverwaltenInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BedingungenVerwalten item info.
+            /// </summary>
+            [RepositoryItemInfo("8b71a8e9-4c8a-4e24-9103-787fc3fa6310")]
+            public virtual RepoItemInfo BedingungenVerwaltenInfo
+            {
+                get
+                {
+                    return _bedingungenverwaltenInfo;
                 }
             }
 

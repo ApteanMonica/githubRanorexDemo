@@ -24,22 +24,22 @@ namespace S_ZLBD_Schnelltest.Recordings_ZAHLUNG
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Neuanlage_ZLBD recording.
+    ///The Neuanlage_ZLBD_510_511 recording.
     /// </summary>
-    [TestModule("5330a8ee-fb93-4f36-9bfc-04a9bfd54f22", ModuleType.Recording, 1)]
-    public partial class Neuanlage_ZLBD : ITestModule
+    [TestModule("a865a70a-3335-461e-9f5d-28a74d59ac79", ModuleType.Recording, 1)]
+    public partial class Neuanlage_ZLBD_510_511 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_ZLBD_Schnelltest.S_ZLBD_SchnelltestRepository repository.
         /// </summary>
         public static global::S_ZLBD_Schnelltest.S_ZLBD_SchnelltestRepository repo = global::S_ZLBD_Schnelltest.S_ZLBD_SchnelltestRepository.Instance;
 
-        static Neuanlage_ZLBD instance = new Neuanlage_ZLBD();
+        static Neuanlage_ZLBD_510_511 instance = new Neuanlage_ZLBD_510_511();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Neuanlage_ZLBD()
+        public Neuanlage_ZLBD_510_511()
         {
             ZLBD_CD_NEU = "TST";
         }
@@ -47,7 +47,7 @@ namespace S_ZLBD_Schnelltest.Recordings_ZAHLUNG
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Neuanlage_ZLBD Instance
+        public static Neuanlage_ZLBD_510_511 Instance
         {
             get { return instance; }
         }
@@ -57,7 +57,7 @@ namespace S_ZLBD_Schnelltest.Recordings_ZAHLUNG
         /// <summary>
         /// Gets or sets the value of variable ZLBD_CD_NEU.
         /// </summary>
-        [TestVariable("ca21ece4-f62d-44ac-88e8-e5591b77bf6a")]
+        [TestVariable("41f0a088-afd3-4526-a1a1-07e3c2ca7018")]
         public string ZLBD_CD_NEU
         {
             get { return repo.ZLBD_CD_NEU; }
@@ -140,15 +140,6 @@ namespace S_ZLBD_Schnelltest.Recordings_ZAHLUNG
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(16));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblZlbd.Row_mit_ZLBD_CD_NEU.ColZlbdTgvaluta_ZLDB_CD_NEU' at Center.", repo.TblZlbd.Row_mit_ZLBD_CD_NEU.ColZlbdTgvaluta_ZLDB_CD_NEUInfo, new RecordItemIndex(17));
-            repo.TblZlbd.Row_mit_ZLBD_CD_NEU.ColZlbdTgvaluta_ZLDB_CD_NEU.Click();
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(18));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0'.", new RecordItemIndex(19));
-            Keyboard.Press("0");
             
         }
 

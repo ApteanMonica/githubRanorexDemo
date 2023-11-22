@@ -24,43 +24,46 @@ namespace S_ZLBD_Schnelltest.Recordings_ZAHLUNG
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Loeschen_ZLBD_NEU_pruefen recording.
+    ///The Einlesen_Version recording.
     /// </summary>
-    [TestModule("21f1c264-3231-473b-803f-e6a7665235f5", ModuleType.Recording, 1)]
-    public partial class Loeschen_ZLBD_NEU_pruefen : ITestModule
+    [TestModule("bff5c3c8-d932-4c54-aeb5-aed63c3864e2", ModuleType.Recording, 1)]
+    public partial class Einlesen_Version : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_ZLBD_Schnelltest.S_ZLBD_SchnelltestRepository repository.
         /// </summary>
         public static global::S_ZLBD_Schnelltest.S_ZLBD_SchnelltestRepository repo = global::S_ZLBD_Schnelltest.S_ZLBD_SchnelltestRepository.Instance;
 
-        static Loeschen_ZLBD_NEU_pruefen instance = new Loeschen_ZLBD_NEU_pruefen();
+        static Einlesen_Version instance = new Einlesen_Version();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Loeschen_ZLBD_NEU_pruefen()
+        public Einlesen_Version()
         {
+            Programmversion = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Loeschen_ZLBD_NEU_pruefen Instance
+        public static Einlesen_Version Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
+        string _Programmversion;
+
         /// <summary>
-        /// Gets or sets the value of variable ZLBD_CD_NEU.
+        /// Gets or sets the value of variable Programmversion.
         /// </summary>
-        [TestVariable("5f30b91f-0c84-49bb-9f94-e86a9de1c784")]
-        public string ZLBD_CD_NEU
+        [TestVariable("672b2326-6092-454b-8597-3f4ec574793c")]
+        public string Programmversion
         {
-            get { return repo.ZLBD_CD_NEU; }
-            set { repo.ZLBD_CD_NEU = value; }
+            get { return _Programmversion; }
+            set { _Programmversion = value; }
         }
 
 #endregion
@@ -89,18 +92,7 @@ namespace S_ZLBD_Schnelltest.Recordings_ZAHLUNG
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblZlbd.Row_mit_ZLBD_CD_NEU.Column0_ZLBD_CD_NEU' at Center.", repo.TblZlbd.Row_mit_ZLBD_CD_NEU.Column0_ZLBD_CD_NEUInfo, new RecordItemIndex(0));
-            repo.TblZlbd.Row_mit_ZLBD_CD_NEU.Column0_ZLBD_CD_NEU.Click();
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'TblZlbd.Row_mit_ZLBD_CD_NEU.Column0_ZLBD_CD_NEU'.", repo.TblZlbd.Row_mit_ZLBD_CD_NEU.Column0_ZLBD_CD_NEUInfo, new RecordItemIndex(1));
-            Keyboard.PrepareFocus(repo.TblZlbd.Row_mit_ZLBD_CD_NEU.Column0_ZLBD_CD_NEU);
-            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblZlbd.PbCommonSave' at Center.", repo.TblZlbd.PbCommonSaveInfo, new RecordItemIndex(2));
-            repo.TblZlbd.PbCommonSave.Click();
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblZlbd.row_mit_Variable_ZLBD_CD_NEU'.", repo.TblZlbd.row_mit_Variable_ZLBD_CD_NEUInfo, new RecordItemIndex(3));
-            Validate.NotExists(repo.TblZlbd.row_mit_Variable_ZLBD_CD_NEUInfo);
+            Programmversion = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadProgrammVersion("REL");
             
         }
 

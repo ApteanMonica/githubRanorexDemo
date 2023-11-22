@@ -79,6 +79,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\..\Testdaten\Allgemein\UserCode\aptean.cs">
+      <Link>aptean.cs</Link>
+      <id>ff06d172-1bc1-4529-818c-aca8493e0abc</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>92ccb7e0-96ee-44d4-b3a4-21928c6aa48e</id>
     </Compile>
@@ -109,39 +113,87 @@
       <id>ab6ecc08-f848-48b8-b145-fe56beb47993</id>
       <BoundTo>8696f28e-2aa3-4620-846d-0c78f9522f1d</BoundTo>
     </Compile>
-    <Compile Include="Recordings_ZAHLUNG\Loeschen_ZLBD_ALT_nicht_moeglich.cs">
+    <Compile Include="Recordings_ZAHLUNG\Einlesen_Version.cs">
+      <BoundTo>b724c380-2b91-4306-b485-b498f1ec00fd</BoundTo>
+      <DependentUpon>Einlesen_Version.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>33c671c7-ea5a-45cd-be86-c6c675c6f391</id>
+    </Compile>
+    <Compile Include="Recordings_ZAHLUNG\Einlesen_Version.UserCode.cs">
+      <BoundTo>b724c380-2b91-4306-b485-b498f1ec00fd</BoundTo>
+      <DependentUpon>Einlesen_Version.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>86daf750-82d4-4af7-b1e3-d67833f8061c</id>
+    </Compile>
+    <Compile Include="Recordings_ZAHLUNG\Loeschen_ZLBD_ALT_nicht_moeglich_510_511_521.cs">
       <BoundTo>2c450b41-d5c4-4728-acd5-a44b07712423</BoundTo>
-      <DependentUpon>Loeschen_ZLBD_ALT_nicht_moeglich.rxrec</DependentUpon>
+      <DependentUpon>Loeschen_ZLBD_ALT_nicht_moeglich_510_511_521.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>7dd3413c-bb58-4947-a412-acd2520948bd</id>
     </Compile>
-    <Compile Include="Recordings_ZAHLUNG\Loeschen_ZLBD_ALT_nicht_moeglich.UserCode.cs">
+    <Compile Include="Recordings_ZAHLUNG\Loeschen_ZLBD_ALT_nicht_moeglich_510_511_521.UserCode.cs">
       <BoundTo>2c450b41-d5c4-4728-acd5-a44b07712423</BoundTo>
-      <DependentUpon>Loeschen_ZLBD_ALT_nicht_moeglich.rxrec</DependentUpon>
+      <DependentUpon>Loeschen_ZLBD_ALT_nicht_moeglich_510_511_521.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>6b7dddc9-e86d-4e21-a076-1c6f1809fb11</id>
     </Compile>
-    <Compile Include="Recordings_ZAHLUNG\Loeschen_ZLBD_NEU_pruefen.cs">
+    <Compile Include="Recordings_ZAHLUNG\Loeschen_ZLBD_ALT_nicht_moeglich.cs">
+      <DependentUpon>Loeschen_ZLBD_ALT_nicht_moeglich.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7d53599c-fe2f-4bd3-a394-1cf08f582aae</id>
+      <BoundTo>07b7ac62-9cde-45dc-b438-3c8345399f6d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_ZAHLUNG\Loeschen_ZLBD_ALT_nicht_moeglich.UserCode.cs">
+      <DependentUpon>Loeschen_ZLBD_ALT_nicht_moeglich.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>39866304-91a1-41d9-86a1-cc77b3f2e3e2</id>
+      <BoundTo>07b7ac62-9cde-45dc-b438-3c8345399f6d</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_ZAHLUNG\Loeschen_Status_9_aendern_ZLBD_NEU_pruefen.cs">
+      <DependentUpon>Loeschen_Status_9_aendern_ZLBD_NEU_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6d4f9984-8d70-4f7e-a2bc-4a3a6babb2cb</id>
+      <BoundTo>12f12ce8-ae1a-4229-bc9d-c335911c05bf</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_ZAHLUNG\Loeschen_Status_9_aendern_ZLBD_NEU_pruefen.UserCode.cs">
+      <DependentUpon>Loeschen_Status_9_aendern_ZLBD_NEU_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>83cd5d23-8ac6-46f2-8941-81eb7a651018</id>
+      <BoundTo>12f12ce8-ae1a-4229-bc9d-c335911c05bf</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_ZAHLUNG\Loeschen_ZLBD_NEU_pruefen_510_511_521.cs">
       <BoundTo>10259179-5cdc-484e-aa32-b188f2cba911</BoundTo>
-      <DependentUpon>Loeschen_ZLBD_NEU_pruefen.rxrec</DependentUpon>
+      <DependentUpon>Loeschen_ZLBD_NEU_pruefen_510_511_521.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>f74d9cec-075c-41d2-b7e0-0935f715e0af</id>
     </Compile>
-    <Compile Include="Recordings_ZAHLUNG\Loeschen_ZLBD_NEU_pruefen.UserCode.cs">
+    <Compile Include="Recordings_ZAHLUNG\Loeschen_ZLBD_NEU_pruefen_510_511_521.UserCode.cs">
       <BoundTo>10259179-5cdc-484e-aa32-b188f2cba911</BoundTo>
-      <DependentUpon>Loeschen_ZLBD_NEU_pruefen.rxrec</DependentUpon>
+      <DependentUpon>Loeschen_ZLBD_NEU_pruefen_510_511_521.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>4896a886-795a-42c4-809a-9bfaf3452211</id>
     </Compile>
     <Compile Include="Recordings_ZAHLUNG\Neuanlage_ZLBD.cs">
-      <BoundTo>2f365018-a3da-4364-a9a7-62f918e27561</BoundTo>
       <DependentUpon>Neuanlage_ZLBD.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>39f7feac-ad7b-4164-8002-5cc075fe38e4</id>
+      <BoundTo>eecc4183-2139-4e57-86fe-39a012231fbe</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_ZAHLUNG\Neuanlage_ZLBD.UserCode.cs">
+      <DependentUpon>Neuanlage_ZLBD.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ce493391-dca1-49f1-92f7-476606fbe679</id>
+      <BoundTo>eecc4183-2139-4e57-86fe-39a012231fbe</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_ZAHLUNG\Neuanlage_ZLBD_510_511.cs">
+      <BoundTo>2f365018-a3da-4364-a9a7-62f918e27561</BoundTo>
+      <DependentUpon>Neuanlage_ZLBD_510_511.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>3066ec46-b902-4258-bca3-32287cdf1480</id>
     </Compile>
-    <Compile Include="Recordings_ZAHLUNG\Neuanlage_ZLBD.UserCode.cs">
+    <Compile Include="Recordings_ZAHLUNG\Neuanlage_ZLBD_510_511.UserCode.cs">
       <BoundTo>2f365018-a3da-4364-a9a7-62f918e27561</BoundTo>
-      <DependentUpon>Neuanlage_ZLBD.rxrec</DependentUpon>
+      <DependentUpon>Neuanlage_ZLBD_510_511.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>0b6d24d3-334c-4056-9907-f6e4fce52e76</id>
     </Compile>
@@ -190,17 +242,37 @@
       <id>8696f28e-2aa3-4620-846d-0c78f9522f1d</id>
       <recordtableid>ad3159a5-a75c-405b-8464-7585da077cd0</recordtableid>
     </None>
-    <None Include="Recordings_ZAHLUNG\Loeschen_ZLBD_ALT_nicht_moeglich.rxrec">
+    <None Include="Recordings_ZAHLUNG\Einlesen_Version.rxrec">
+      <BoundTo>0f9f47d2-f635-4f81-8a1c-564419113c43</BoundTo>
+      <id>b724c380-2b91-4306-b485-b498f1ec00fd</id>
+      <recordtableid>bff5c3c8-d932-4c54-aeb5-aed63c3864e2</recordtableid>
+    </None>
+    <None Include="Recordings_ZAHLUNG\Loeschen_ZLBD_ALT_nicht_moeglich_510_511_521.rxrec">
       <BoundTo>0f9f47d2-f635-4f81-8a1c-564419113c43</BoundTo>
       <id>2c450b41-d5c4-4728-acd5-a44b07712423</id>
       <recordtableid>4eb53da5-3132-47b8-a241-3b5ba6fa1625</recordtableid>
     </None>
-    <None Include="Recordings_ZAHLUNG\Loeschen_ZLBD_NEU_pruefen.rxrec">
+    <None Include="Recordings_ZAHLUNG\Loeschen_ZLBD_ALT_nicht_moeglich.rxrec">
+      <BoundTo>0f9f47d2-f635-4f81-8a1c-564419113c43</BoundTo>
+      <id>07b7ac62-9cde-45dc-b438-3c8345399f6d</id>
+      <recordtableid>0a53dde1-2c4d-4894-84cd-0430a0b530cb</recordtableid>
+    </None>
+    <None Include="Recordings_ZAHLUNG\Loeschen_Status_9_aendern_ZLBD_NEU_pruefen.rxrec">
+      <BoundTo>0f9f47d2-f635-4f81-8a1c-564419113c43</BoundTo>
+      <id>12f12ce8-ae1a-4229-bc9d-c335911c05bf</id>
+      <recordtableid>6e87e331-8553-4e0e-a3db-ca2f237dcec4</recordtableid>
+    </None>
+    <None Include="Recordings_ZAHLUNG\Loeschen_ZLBD_NEU_pruefen_510_511_521.rxrec">
       <BoundTo>0f9f47d2-f635-4f81-8a1c-564419113c43</BoundTo>
       <id>10259179-5cdc-484e-aa32-b188f2cba911</id>
       <recordtableid>21f1c264-3231-473b-803f-e6a7665235f5</recordtableid>
     </None>
     <None Include="Recordings_ZAHLUNG\Neuanlage_ZLBD.rxrec">
+      <BoundTo>0f9f47d2-f635-4f81-8a1c-564419113c43</BoundTo>
+      <id>eecc4183-2139-4e57-86fe-39a012231fbe</id>
+      <recordtableid>5330a8ee-fb93-4f36-9bfc-04a9bfd54f22</recordtableid>
+    </None>
+    <None Include="Recordings_ZAHLUNG\Neuanlage_ZLBD_510_511.rxrec">
       <BoundTo>0f9f47d2-f635-4f81-8a1c-564419113c43</BoundTo>
       <id>2f365018-a3da-4364-a9a7-62f918e27561</id>
       <recordtableid>a865a70a-3335-461e-9f5d-28a74d59ac79</recordtableid>
