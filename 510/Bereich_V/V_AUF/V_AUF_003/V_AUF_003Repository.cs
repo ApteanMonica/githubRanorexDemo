@@ -1047,7 +1047,6 @@ namespace V_AUF_003
         [RepositoryFolder("36c5769c-1402-4bcf-b53b-e838402e750a")]
         public partial class Beleg_abschliessen_Folder : RepoGenBaseFolder
         {
-            RepoItemInfo _rechnungsnr_Info;
             RepoItemInfo _beleg_abschliessen_rekorrInfo;
 
             /// <summary>
@@ -1056,7 +1055,6 @@ namespace V_AUF_003
             public Beleg_abschliessen_Folder(RepoGenBaseFolder parentFolder) :
                     base("Beleg_abschliessen_", "", parentFolder, 0, null, false, "36c5769c-1402-4bcf-b53b-e838402e750a", "")
             {
-                _rechnungsnr_Info = new RepoItemInfo(this, "RechnungsNr_", "/form/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colRech_nr Row 1']", "", 30000, null, "7c45caf6-5580-4a58-9d62-d9d15f2177fe");
                 _beleg_abschliessen_rekorrInfo = new RepoItemInfo(this, "Beleg_abschliessen_ReKorr", "/form[@controlname='frmAufk']/?/?/container[@controlname='Spec2Group']/button[@controlname='pSpec2_BelegAbschliessen']", "", 30000, null, "4fad624f-c27a-4c71-9ae6-cb83a9ed93c4");
             }
 
@@ -1069,30 +1067,6 @@ namespace V_AUF_003
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The RechnungsNr_ item.
-            /// </summary>
-            [RepositoryItem("7c45caf6-5580-4a58-9d62-d9d15f2177fe")]
-            public virtual Ranorex.Cell RechnungsNr_
-            {
-                get
-                {
-                    return _rechnungsnr_Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The RechnungsNr_ item info.
-            /// </summary>
-            [RepositoryItemInfo("7c45caf6-5580-4a58-9d62-d9d15f2177fe")]
-            public virtual RepoItemInfo RechnungsNr_Info
-            {
-                get
-                {
-                    return _rechnungsnr_Info;
                 }
             }
 
@@ -1129,6 +1103,7 @@ namespace V_AUF_003
         {
             RepoItemInfo _titlebar100rechnungskorrekturInfo;
             RepoItemInfo _schliessenInfo;
+            RepoItemInfo _colrechnrrow1Info;
 
             /// <summary>
             /// Creates a new TblFadr  folder.
@@ -1138,6 +1113,7 @@ namespace V_AUF_003
             {
                 _titlebar100rechnungskorrekturInfo = new RepoItemInfo(this, "TitleBar100Rechnungskorrektur", "titlebar[@accessiblerole~'TitleBar' and @accessiblevalue~'Rechnungskorrektur']", "", 30000, null, "9a3974e2-c12f-490e-a614-f2b04cfcc652");
                 _schliessenInfo = new RepoItemInfo(this, "Schliessen", "?/?/button[@accessiblename='Schließen']", "", 30000, null, "cb7e580b-569c-4660-bb5a-41c15078dbf2");
+                _colrechnrrow1Info = new RepoItemInfo(this, "ColRechNrRow1", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colRech_nr Row 1']", "", 30000, null, "61cc1ff8-e7fb-499a-bd1d-be60dd324b08");
             }
 
             /// <summary>
@@ -1209,6 +1185,30 @@ namespace V_AUF_003
                 get
                 {
                     return _schliessenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColRechNrRow1 item.
+            /// </summary>
+            [RepositoryItem("61cc1ff8-e7fb-499a-bd1d-be60dd324b08")]
+            public virtual Ranorex.Cell ColRechNrRow1
+            {
+                get
+                {
+                    return _colrechnrrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColRechNrRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("61cc1ff8-e7fb-499a-bd1d-be60dd324b08")]
+            public virtual RepoItemInfo ColRechNrRow1Info
+            {
+                get
+                {
+                    return _colrechnrrow1Info;
                 }
             }
         }
