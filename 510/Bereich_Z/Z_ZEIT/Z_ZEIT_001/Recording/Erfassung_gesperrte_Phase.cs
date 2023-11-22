@@ -41,7 +41,7 @@ namespace Z_ZEIT_001.Recording
         /// </summary>
         public Erfassung_gesperrte_Phase()
         {
-            Personalnr = "Z_ZEIT_001_G";
+            Personalnr = "ZEIT_001_G";
         }
 
         /// <summary>
