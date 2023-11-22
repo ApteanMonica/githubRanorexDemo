@@ -113,7 +113,10 @@ namespace B_KTO_004.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKto.Speichern_Button' at Center.", repo.FrmKto.Speichern_ButtonInfo, new RecordItemIndex(9));
             repo.FrmKto.Speichern_Button.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='gelöscht') on item 'FrmKto.Text1001_Status'.", repo.FrmKto.Text1001_StatusInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(10));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='gelöscht') on item 'FrmKto.Text1001_Status'.", repo.FrmKto.Text1001_StatusInfo, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.FrmKto.Text1001_StatusInfo, "Text", "gelöscht");
             
         }

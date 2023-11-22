@@ -33,7 +33,6 @@ namespace B_KTO_004
         B_KTO_004RepositoryFolders.DlgDruckenAppFolder _dlgdrucken;
         B_KTO_004RepositoryFolders.PbExportItemsAppFolder _pbexportitems;
         B_KTO_004RepositoryFolders.TblDruckenAppFolder _tbldrucken;
-        B_KTO_004RepositoryFolders.WSPETAppFolder _wspet;
 
         /// <summary>
         /// Gets the singleton class instance representing the B_KTO_004Repository element repository.
@@ -56,7 +55,6 @@ namespace B_KTO_004
             _dlgdrucken = new B_KTO_004RepositoryFolders.DlgDruckenAppFolder(this);
             _pbexportitems = new B_KTO_004RepositoryFolders.PbExportItemsAppFolder(this);
             _tbldrucken = new B_KTO_004RepositoryFolders.TblDruckenAppFolder(this);
-            _wspet = new B_KTO_004RepositoryFolders.WSPETAppFolder(this);
         }
 
 #region Variables
@@ -78,7 +76,7 @@ namespace B_KTO_004
         /// <summary>
         /// The FrmKto folder.
         /// </summary>
-        [RepositoryFolder("c6e49411-55ed-4516-8b5c-f6e11369cd79")]
+        [RepositoryFolder("9693ebc1-c14a-44df-ad78-ab6cb22f5a62")]
         public virtual B_KTO_004RepositoryFolders.FrmKtoAppFolder FrmKto
         {
             get { return _frmkto; }
@@ -128,15 +126,6 @@ namespace B_KTO_004
         {
             get { return _tbldrucken; }
         }
-
-        /// <summary>
-        /// The WSPET folder.
-        /// </summary>
-        [RepositoryFolder("c15aee3f-7248-4d32-a463-51f90c175b95")]
-        public virtual B_KTO_004RepositoryFolders.WSPETAppFolder WSPET
-        {
-            get { return _wspet; }
-        }
     }
 
     /// <summary>
@@ -148,7 +137,7 @@ namespace B_KTO_004
         /// <summary>
         /// The FrmKtoAppFolder folder.
         /// </summary>
-        [RepositoryFolder("c6e49411-55ed-4516-8b5c-f6e11369cd79")]
+        [RepositoryFolder("9693ebc1-c14a-44df-ad78-ab6cb22f5a62")]
         public partial class FrmKtoAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _titlebar100sachkontenverwaltenInfo;
@@ -170,7 +159,7 @@ namespace B_KTO_004
             /// Creates a new FrmKto  folder.
             /// </summary>
             public FrmKtoAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FrmKto", "/form[@controlname='frmKto']", parentFolder, 30000, null, true, "c6e49411-55ed-4516-8b5c-f6e11369cd79", "")
+                    base("FrmKto", "/form[@controlname='frmKto']", parentFolder, 30000, null, true, "9693ebc1-c14a-44df-ad78-ab6cb22f5a62", "")
             {
                 _titlebar100sachkontenverwaltenInfo = new RepoItemInfo(this, "TitleBar100SachkontenVerwalten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "398f277a-c438-4822-9d74-d52954b81864");
                 _suchtextInfo = new RepoItemInfo(this, "Suchtext", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/text[@controlname='dfSearchExpression']/text[@accessiblerole='Text']", "", 30000, null, "1dbc29e0-f65b-406d-9ab2-5caec809162d");
@@ -181,7 +170,7 @@ namespace B_KTO_004
                 _cmbktostatusInfo = new RepoItemInfo(this, "CmbKtoStatus", "container[@controlname='ClientArea']/combobox[@controlname='cmbKto_status']", "", 30000, null, "4cc7cec4-3250-425b-92d3-6ea0594f1844");
                 _oeffnenInfo = new RepoItemInfo(this, "OEffnen", "container[@controlname='ClientArea']/combobox[@controlname='cmbKto_status']/button[@name='Öffnen']", "", 30000, null, "9eff0ac0-f59c-416f-a990-8915e8908c1e");
                 _pbcommonreorganisierenInfo = new RepoItemInfo(this, "PbCommonReorganisieren", "container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Reorganisieren']", "", 30000, null, "a6701a95-83c0-4dc6-bdf8-a6cad6636793");
-                _speichern_buttonInfo = new RepoItemInfo(this, "Speichern_Button", "?/?/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "01702c97-bb32-4df2-838e-e38a1c1b5a33");
+                _speichern_buttonInfo = new RepoItemInfo(this, "Speichern_Button", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "01702c97-bb32-4df2-838e-e38a1c1b5a33");
                 _dfktonrInfo = new RepoItemInfo(this, "DfKtoNr", "container[@controlname='ClientArea']/text[@controlname='dfKto_nr']/text[@accessiblename='Konto']", "", 30000, null, "519ade2a-7540-44c1-943b-3baa9f265de7");
                 _dfktobez1Info = new RepoItemInfo(this, "DfKtoBez1", "container[@controlname='ClientArea']/text[@controlname='dfKto_bez1']/text[@accessiblename='Bezeichnung']", "", 30000, null, "e5eed13d-734e-44b9-bdf9-311d68b58b10");
                 _clientareaInfo = new ClientAreaInfoClass(this);
@@ -226,7 +215,7 @@ namespace B_KTO_004
             /// <summary>
             /// The Self item.
             /// </summary>
-            [RepositoryItem("c6e49411-55ed-4516-8b5c-f6e11369cd79")]
+            [RepositoryItem("9693ebc1-c14a-44df-ad78-ab6cb22f5a62")]
             public virtual Ranorex.Form Self
             {
                 get
@@ -238,7 +227,7 @@ namespace B_KTO_004
             /// <summary>
             /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("c6e49411-55ed-4516-8b5c-f6e11369cd79")]
+            [RepositoryItemInfo("9693ebc1-c14a-44df-ad78-ab6cb22f5a62")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
@@ -1143,72 +1132,6 @@ namespace B_KTO_004
                 get
                 {
                     return _geloescht_Info;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The WSPETAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("c15aee3f-7248-4d32-a463-51f90c175b95")]
-        public partial class WSPETAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _wspetInfo;
-
-            /// <summary>
-            /// Creates a new WSPET  folder.
-            /// </summary>
-            public WSPETAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("WSPET", "", parentFolder, 30000, null, true, "c15aee3f-7248-4d32-a463-51f90c175b95", "")
-            {
-                _wspetInfo = new RepoItemInfo(this, "WSPET", "", "", 30000, null, "6646d284-e51a-4a33-911f-e70df8781dcd");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("c15aee3f-7248-4d32-a463-51f90c175b95")]
-            public virtual Ranorex.Host Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Host>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("c15aee3f-7248-4d32-a463-51f90c175b95")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The WSPET item.
-            /// </summary>
-            [RepositoryItem("6646d284-e51a-4a33-911f-e70df8781dcd")]
-            public virtual Ranorex.Host WSPET
-            {
-                get
-                {
-                    return _wspetInfo.CreateAdapter<Ranorex.Host>(true);
-                }
-            }
-
-            /// <summary>
-            /// The WSPET item info.
-            /// </summary>
-            [RepositoryItemInfo("6646d284-e51a-4a33-911f-e70df8781dcd")]
-            public virtual RepoItemInfo WSPETInfo
-            {
-                get
-                {
-                    return _wspetInfo;
                 }
             }
         }
