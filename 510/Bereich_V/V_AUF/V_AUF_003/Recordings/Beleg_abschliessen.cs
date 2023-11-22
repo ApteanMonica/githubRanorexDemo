@@ -92,8 +92,8 @@ namespace V_AUF_003.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.TitleBar100Rechnungskorrektur' at Center.", repo.TblFadr.TitleBar100RechnungskorrekturInfo, new RecordItemIndex(3));
             repo.TblFadr.TitleBar100Rechnungskorrektur.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='R21/00003') on item 'Beleg_abschliessen_.RechnungsNr_'.", repo.Beleg_abschliessen_.RechnungsNr_Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.Beleg_abschliessen_.RechnungsNr_Info, "Text", "R21/00003");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='R21/00003') on item 'TblFadr.ColRechNrRow1'.", repo.TblFadr.ColRechNrRow1Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.TblFadr.ColRechNrRow1Info, "Text", "R21/00003");
             
         }
 

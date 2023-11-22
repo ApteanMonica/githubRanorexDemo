@@ -105,8 +105,8 @@ namespace V_AUF_004.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblFadr.TitleBar100Fakturierung'", repo.TblFadr.TitleBar100FakturierungInfo, new ActionTimeout(120000), new RecordItemIndex(0));
-            repo.TblFadr.TitleBar100FakturierungInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'TblFadr.TitleBar100Fakturierung'", repo.TblFadr.TitleBar100FakturierungInfo, new ActionTimeout(180000), new RecordItemIndex(0));
+            repo.TblFadr.TitleBar100FakturierungInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'DruckausgabeSpeichernUnter.DruckausgabeSpeichernUnter'.", repo.DruckausgabeSpeichernUnter.DruckausgabeSpeichernUnterInfo, new RecordItemIndex(1));
             Validate.Exists(repo.DruckausgabeSpeichernUnter.DruckausgabeSpeichernUnterInfo);
