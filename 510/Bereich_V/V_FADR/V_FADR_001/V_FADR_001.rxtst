@@ -59,6 +59,27 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			enabled="False"
+			id="597bc151-a0fb-4dcb-9a27-001bbbdd021e"
+			name="Lieferschein_laden_2_NEU_set_value"
+			ref="407d8d6e-4837-42ce-8870-bf4fa7ec7350"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Datum_leer"
+					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
+					variableid="77d9b652-685a-4a73-a0f8-3bc1cce155b6"
+					variablename="Datum_leer">
+					</var>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
+					variableid="cf859522-e311-42c3-b39d-a6e4b47e8dd5"
+					variablename="Tagesdatum">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="898dae90-d3b2-4a8b-a952-a18d5931f86b"
 			name="teardown">
@@ -212,6 +233,10 @@
 					name="getDatumRow"
 					value="">
 					</param>
+					<param
+					name="Datum_leer"
+					value="">
+					</param>
 				</parameters>
 			</testcase>
 			<setup
@@ -268,6 +293,10 @@
 						<testmodule
 						id="b8458c17-e40c-44a1-82a8-078942667cd0"
 						name="Lieferschein_laden_2_NEU">
+						</testmodule>
+						<testmodule
+						id="597bc151-a0fb-4dcb-9a27-001bbbdd021e"
+						name="Lieferschein_laden_2_NEU_set_value">
 						</testmodule>
 						<testmodule
 						id="55052a9c-124d-4a4e-84da-3193d679ce9b"

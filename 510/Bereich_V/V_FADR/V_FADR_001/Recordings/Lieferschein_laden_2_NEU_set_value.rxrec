@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="85795494-2f2a-4567-8a4e-6d61140c106e"
+id="407d8d6e-4837-42ce-8870-bf4fa7ec7350"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,13 +19,17 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Lieferschein_laden_2_NEU"
+	classname="Lieferschein_laden_2_NEU_set_value"
 	namespace="V_FADR_001.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="dd1d7e59-98b1-40a3-93ab-af76e0dab231"
+		id="cf859522-e311-42c3-b39d-a6e4b47e8dd5"
 		name="Tagesdatum">
+		</var>
+		<var
+		id="77d9b652-685a-4a73-a0f8-3bc1cce155b6"
+		name="Datum_leer">
 		</var>
 	</variables>
 	<recorditems>
@@ -146,7 +150,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="5000ms"
+		duration="3000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -154,19 +158,6 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
-		<loggingrecorditem
-		action="Screenshot"
-		category="User"
-		enabled="True"
-		message=""
-		optional="False"
-		reportlevel="Info;20"
-		searchpropertyid="d5632f44-67a8-4125-aa77-d8c59119af55">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</loggingrecorditem>
 		<keyitem
 		action="Press"
 		data="Tab"
@@ -183,7 +174,7 @@ mode="Global">
 			</bindings>
 		</keyitem>
 		<explicitdelayitem
-		duration="7000ms"
+		duration="3000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -204,30 +195,31 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</loggingrecorditem>
-		<keyitem
-		action="Press"
-		data="Delete"
-		duration="20ms"
+		<setvaluerecorditem
+		attrname="AccessibleValue"
 		enabled="True"
 		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="e55a2a15-61bf-4e74-b144-ddb9d8c95a09"
-		setModifiers="True">
+		searchpropertyid="3e59be21-ebc5-4ff2-a748-59dd78de3d06">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="AttributeValue"
+				variable="Datum_leer">
+				</binding>
 			</bindings>
-		</keyitem>
-		<explicitdelayitem
-		duration="7000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
+			<info
+			id="040c96c5-3f28-4435-b912-42bd799d8750"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<AttributeValue>
+			</AttributeValue>
+		</setvaluerecorditem>
 		<loggingrecorditem
 		action="Screenshot"
 		category="User"
@@ -278,54 +270,6 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</loggingrecorditem>
-		<explicitdelayitem
-		duration="3000ms"
-		enabled="False"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
-		<keyitem
-		action="Press"
-		data="X, Control"
-		duration="20ms"
-		enabled="False"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="fde2d880-ee06-4e67-8f16-b04dc6dda216"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
-		<explicitdelayitem
-		duration="3000ms"
-		enabled="False"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
-		<keyitem
-		action="Press"
-		data="Tab"
-		duration="20ms"
-		enabled="False"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="e55a2a15-61bf-4e74-b144-ddb9d8c95a09"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -334,6 +278,10 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Datum_leer">
+				</binding>
 			</bindings>
 			<info
 			id="040c96c5-3f28-4435-b912-42bd799d8750"
@@ -386,7 +334,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="5000ms"
+		duration="3000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -410,7 +358,7 @@ mode="Global">
 			</bindings>
 		</keyitem>
 		<explicitdelayitem
-		duration="7000ms"
+		duration="3000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -418,6 +366,19 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="d5632f44-67a8-4125-aa77-d8c59119af55">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
 		<userrecorditem
 		classname="SystemLibrary"
 		enabled="True"
@@ -447,46 +408,31 @@ mode="Global">
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<keysequenceitem
-		KeySequence=""
-		duration="20ms"
+		<setvaluerecorditem
+		attrname="AccessibleValue"
 		enabled="True"
 		optional="False"
-		presstime="20ms"
-		searchpropertyid="8007cde1-d789-43f4-85aa-67b38e8ce605">
+		searchpropertyid="3e59be21-ebc5-4ff2-a748-59dd78de3d06">
 			<comment>
 			</comment>
 			<bindings>
 				<binding
-				target="KeySequence"
+				target="AttributeValue"
 				variable="Tagesdatum">
 				</binding>
 			</bindings>
-		</keysequenceitem>
-		<keyitem
-		action="Press"
-		data="V, Control"
-		duration="20ms"
-		enabled="False"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="3d6ce0a3-7146-45c4-a808-3562278b3355"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keyitem>
-		<explicitdelayitem
-		duration="5000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
+			<info
+			id="f3d7eeca-cb56-4d62-a2bd-1d8467a0d8bf"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colLsk_datum Row 2']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<AttributeValue>
+			</AttributeValue>
+		</setvaluerecorditem>
 		<keyitem
 		action="Press"
 		data="Tab"
@@ -503,7 +449,7 @@ mode="Global">
 			</bindings>
 		</keyitem>
 		<explicitdelayitem
-		duration="5000ms"
+		duration="3000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -6537,7 +6483,7 @@ UUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/Z
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Lieferschein_laden_2_NEU.UserCode.cs
+		Lieferschein_laden_2_NEU_set_value.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
