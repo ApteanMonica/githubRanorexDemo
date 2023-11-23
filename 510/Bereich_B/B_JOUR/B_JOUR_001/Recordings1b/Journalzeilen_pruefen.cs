@@ -90,11 +90,11 @@ namespace B_JOUR_001.Recordings1b
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain_Geschaeftsjahr.FlexGrid.Column0_Zeile_Geschaeftsjahr' at Center.", repo.FrmMain_Geschaeftsjahr.FlexGrid.Column0_Zeile_GeschaeftsjahrInfo, new RecordItemIndex(0));
-            repo.FrmMain_Geschaeftsjahr.FlexGrid.Column0_Zeile_Geschaeftsjahr.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblMain_530_tblMain_bis_521_frmMain.Column0_in_Zeile_mit_Geschaeftsjahr_510_530' at Center.", repo.TblMain_530_tblMain_bis_521_frmMain.Column0_in_Zeile_mit_Geschaeftsjahr_510_530Info, new RecordItemIndex(0));
+            repo.TblMain_530_tblMain_bis_521_frmMain.Column0_in_Zeile_mit_Geschaeftsjahr_510_530.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain_Geschaeftsjahr.PbCommonJournalzeilen' at Center.", repo.FrmMain_Geschaeftsjahr.PbCommonJournalzeilenInfo, new RecordItemIndex(1));
-            repo.FrmMain_Geschaeftsjahr.PbCommonJournalzeilen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblMain_530_tblMain_bis_521_frmMain.PbCommonJournalzeilen' at Center.", repo.TblMain_530_tblMain_bis_521_frmMain.PbCommonJournalzeilenInfo, new RecordItemIndex(1));
+            repo.TblMain_530_tblMain_bis_521_frmMain.PbCommonJournalzeilen.Click();
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblJournal_in_B_JAHR.TitleBar100VerwaltenJournalzeilen'", repo.TblJournal_in_B_JAHR.TitleBar100VerwaltenJournalzeilenInfo, new ActionTimeout(60000), new RecordItemIndex(2));
             repo.TblJournal_in_B_JAHR.TitleBar100VerwaltenJournalzeilenInfo.WaitForExists(60000);

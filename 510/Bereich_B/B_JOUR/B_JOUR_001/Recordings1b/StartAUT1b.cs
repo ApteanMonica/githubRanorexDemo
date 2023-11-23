@@ -108,11 +108,11 @@ namespace B_JOUR_001.Recordings1b
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm1b in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm1b, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmMain_Geschaeftsjahr.TitleBar100VerwaltenGeschaeftsjahr'", repo.FrmMain_Geschaeftsjahr.TitleBar100VerwaltenGeschaeftsjahrInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmMain_Geschaeftsjahr.TitleBar100VerwaltenGeschaeftsjahrInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblMain_530_tblMain_bis_521_frmMain.TitleBar100VerwaltenGeschaeftsjahr'", repo.TblMain_530_tblMain_bis_521_frmMain.TitleBar100VerwaltenGeschaeftsjahrInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.TblMain_530_tblMain_bis_521_frmMain.TitleBar100VerwaltenGeschaeftsjahrInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Verwalten Geschäftsjahr') on item 'FrmMain_Geschaeftsjahr.TitleBar100VerwaltenGeschaeftsjahr'.", repo.FrmMain_Geschaeftsjahr.TitleBar100VerwaltenGeschaeftsjahrInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmMain_Geschaeftsjahr.TitleBar100VerwaltenGeschaeftsjahrInfo, "Text", "Verwalten Geschäftsjahr");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Verwalten Geschäftsjahr') on item 'TblMain_530_tblMain_bis_521_frmMain.TitleBar100VerwaltenGeschaeftsjahr'.", repo.TblMain_530_tblMain_bis_521_frmMain.TitleBar100VerwaltenGeschaeftsjahrInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.TblMain_530_tblMain_bis_521_frmMain.TitleBar100VerwaltenGeschaeftsjahrInfo, "Text", "Verwalten Geschäftsjahr");
             
         }
 

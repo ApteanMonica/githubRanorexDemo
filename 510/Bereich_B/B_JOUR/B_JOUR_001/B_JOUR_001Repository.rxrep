@@ -681,69 +681,6 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 		<appfolder
 		addcaps="form,control,nativewindow"
 		capname="form"
-		id="3cc2d6c0-938c-4bd0-8139-67ecd703e34a"
-		isrooted="True"
-		name="FrmMain_Geschaeftsjahr"
-		refpath="/form[@controlname='frmMain']"
-		searchtimeout="30000ms"
-		usecache="True">
-			<item
-			addcaps="titlebar,accessible"
-			capname="titlebar"
-			id="71f3eafb-3f27-4706-9b67-236c2ba7c820"
-			name="TitleBar100VerwaltenGeschaeftsjahr"
-			refimgid="22ea322b-b8fe-4a82-8de1-c00a3a446870"
-			refpath="/form[@controlname='frmMain']/titlebar[@accessiblerole='TitleBar']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='frmMain']/titlebar[@accessiblerole='TitleBar']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="2651095b-7271-4941-be47-c3227815f49b"
-			name="PbCommonJournalzeilen"
-			refimgid="8515f869-bef7-41e2-81f6-2d9d1293b005"
-			refpath="/form[@controlname='frmMain']/container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup1']/button[@controlname='pbCommon_Journalzeilen']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='frmMain']/?/?/container[@controlname='cRibbonGroup1']/button[@controlname='pbCommon_Journalzeilen']
-			</item>
-			<folder
-			addcaps="table,accessible"
-			capname="table"
-			id="44d254bb-34fc-4b97-a07f-d65fcf55f118"
-			isrooted="True"
-			name="FlexGrid"
-			searchtimeout="30000ms"
-			usecache="False">
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="b02c54dc-0816-453f-aeb4-0e0ee9e2be40"
-				name="Column0_Zeile_Geschaeftsjahr"
-				refimgid="9b97fa21-bb5c-4055-9de7-ec1582125340"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename~'Row' and @accessiblevalue~$Geschaeftsjahr]/cell[@accessiblename~'Column 0']
-				</item>
-				<basepath>
-					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
-				</basepath>
-			</folder>
-			<basepath>
-				/form[@controlname='frmMain']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
-YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
-nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
-			</icon>
-		</appfolder>
-		<appfolder
-		addcaps="form,control,nativewindow"
-		capname="form"
 		id="469a70d2-d1e5-4ca1-b6ff-e6a8a8bf131b"
 		isrooted="True"
 		name="TblJournal_in_B_JAHR"
@@ -790,6 +727,92 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
 YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
 nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="88eaf1ec-55a6-49b2-8612-da51d0e089f2"
+		isrooted="True"
+		name="TblMain_530_tblMain_bis_521_frmMain"
+		refimgid="4e986771-5bf0-40f5-8405-2d135d36dbf3"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="1530a5c8-273e-4042-b211-c61a6f4821af"
+			name="TitleBar100VerwaltenGeschaeftsjahr"
+			refimgid="0affde4e-fd1f-4d14-b9c7-ffbe316af935"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname~'Main']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="fe792f41-c4e6-41ad-8930-37b952f58bdd"
+			name="Schliessen"
+			refimgid="4ded0edc-f912-4962-8ca9-8e2cabb1020b"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname~'Main']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="6e93e769-a862-4d17-80b7-a9ac5169b131"
+			name="PbCommonJournalzeilen"
+			refimgid="5c8ff05c-8eda-44fe-b815-d50b9cc3e604"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname~'Main']/container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup1']/button[@controlname='pbCommon_Journalzeilen']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="7ea00e1a-c3d3-4795-b19c-88d3fb5a81ec"
+			name="Column0_in_Zeile_mit_Geschaeftsjahr_530"
+			refimgid="91f5e0e3-aa6b-438d-b664-1974d76d19af"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname~'Main']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Geschaeftsjahr]/cell[@accessiblename~'Row 14 Column 0']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="e7cdea55-dc36-403d-a315-9253ca18fd2b"
+			name="Column0_in_Zeile_mit_Geschaeftsjahr_510_530"
+			refimgid="b771c25d-2831-4aa1-ae8e-38eb215032bb"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Geschaeftsjahr]/cell[@accessiblename~'Column 0']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="e062f9f4-68b5-4f63-b06a-ee35b54aa4b0"
+			name="Column0_in_Zeile_mit_Geschaeftsjahr_510"
+			refimgid="b771c25d-2831-4aa1-ae8e-38eb215032bb"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname~'Main']/container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Geschaeftsjahr]/cell[@accessiblename~'Column 0']
+			</item>
+			<basepath>
+				/form[@controlname~'Main']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH7SURBVDhPlZPPaxNBFMcXxYsXV0lQ3JSgC9nE
+7rJZt0l3Z9BDDnrQfyA0eMmtl+KP0Hsg5CZ4Fi0hZyneqkFMUEyh2jWeLPoHCBIQPHiw2a/vTawW
+kj3kwWO+szPvM19m52kccSwOMJFYJOOJjONY3lHFjiMgxGIZhgIP7gloTFtdFUifF8jlBMplAf2c
+gE1Qf0Xg9BkBz5sPOXGKAZC4ZAp8/0bWSFuWAA4lfv2UyLGmb18PJIIgCUCbv3yWuGjQ5lhi+5nE
+leWp3tgQWF8nMGnPTQBMfof48FFTNnf3NLzbPQnXlXgfadh+voS8JbFH+uGj5fmA+DDEzRsh7t73
+sU8giwqebOWxP9Lg2BIvX11A9EnDCt3HXABigRItDt7qePy0AP+qRP/NWWxu+rh+TeA16Vu3Q1WQ
+z+eRSqVg2/YxAP2F49SkzGQMutD/USgUZgGe52E4HKJer6PVaqHf72M8HqPZbKLb7apCendq1HV9
+FmBZllrk6PV6aqxUKmpk+3zAaDRSc9d1kwHtdpssZ5Tm6HQ6KJVKWFurqXm1WlX7EwFsv9FoIIoi
+1GrToiPrOzsvYJqX6cWWZwF8MRzsIJvNKn0Ug8Hgr5pGOp2eAriruDEYEASBcuH7vpo7jgPDMFAs
+FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<basepath>

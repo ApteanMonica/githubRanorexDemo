@@ -79,8 +79,8 @@ namespace B_JOUR_001.Recordings1b
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmMain_Geschaeftsjahr.TitleBar100VerwaltenGeschaeftsjahr'.", repo.FrmMain_Geschaeftsjahr.TitleBar100VerwaltenGeschaeftsjahrInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FrmMain_Geschaeftsjahr.TitleBar100VerwaltenGeschaeftsjahr, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblMain_530_tblMain_bis_521_frmMain.TitleBar100VerwaltenGeschaeftsjahr'.", repo.TblMain_530_tblMain_bis_521_frmMain.TitleBar100VerwaltenGeschaeftsjahrInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.TblMain_530_tblMain_bis_521_frmMain.TitleBar100VerwaltenGeschaeftsjahr, 1000);
             
         }
 

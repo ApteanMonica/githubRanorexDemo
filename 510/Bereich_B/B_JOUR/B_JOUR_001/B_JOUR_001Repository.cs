@@ -33,8 +33,8 @@ namespace B_JOUR_001
         B_JOUR_001RepositoryFolders.DlgDruckenDateiAppFolder _dlgdruckendatei;
         B_JOUR_001RepositoryFolders.BJOUR001JournalATEndgueltig2017TxAppFolder _bjour001journalatendgueltig2017tx;
         B_JOUR_001RepositoryFolders.TblB_Buchungen_anzeigenAppFolder _tblb_buchungen_anzeigen;
-        B_JOUR_001RepositoryFolders.FrmMain_GeschaeftsjahrAppFolder _frmmain_geschaeftsjahr;
         B_JOUR_001RepositoryFolders.TblJournal_in_B_JAHRAppFolder _tbljournal_in_b_jahr;
+        B_JOUR_001RepositoryFolders.TblMain_530_tblMain_bis_521_frmMainAppFolder _tblmain_530_tblmain_bis_521_frmmain;
 
         /// <summary>
         /// Gets the singleton class instance representing the B_JOUR_001Repository element repository.
@@ -57,8 +57,8 @@ namespace B_JOUR_001
             _dlgdruckendatei = new B_JOUR_001RepositoryFolders.DlgDruckenDateiAppFolder(this);
             _bjour001journalatendgueltig2017tx = new B_JOUR_001RepositoryFolders.BJOUR001JournalATEndgueltig2017TxAppFolder(this);
             _tblb_buchungen_anzeigen = new B_JOUR_001RepositoryFolders.TblB_Buchungen_anzeigenAppFolder(this);
-            _frmmain_geschaeftsjahr = new B_JOUR_001RepositoryFolders.FrmMain_GeschaeftsjahrAppFolder(this);
             _tbljournal_in_b_jahr = new B_JOUR_001RepositoryFolders.TblJournal_in_B_JAHRAppFolder(this);
+            _tblmain_530_tblmain_bis_521_frmmain = new B_JOUR_001RepositoryFolders.TblMain_530_tblMain_bis_521_frmMainAppFolder(this);
         }
 
 #region Variables
@@ -144,21 +144,21 @@ namespace B_JOUR_001
         }
 
         /// <summary>
-        /// The FrmMain_Geschaeftsjahr folder.
-        /// </summary>
-        [RepositoryFolder("3cc2d6c0-938c-4bd0-8139-67ecd703e34a")]
-        public virtual B_JOUR_001RepositoryFolders.FrmMain_GeschaeftsjahrAppFolder FrmMain_Geschaeftsjahr
-        {
-            get { return _frmmain_geschaeftsjahr; }
-        }
-
-        /// <summary>
         /// The TblJournal_in_B_JAHR folder.
         /// </summary>
         [RepositoryFolder("469a70d2-d1e5-4ca1-b6ff-e6a8a8bf131b")]
         public virtual B_JOUR_001RepositoryFolders.TblJournal_in_B_JAHRAppFolder TblJournal_in_B_JAHR
         {
             get { return _tbljournal_in_b_jahr; }
+        }
+
+        /// <summary>
+        /// The TblMain_530_tblMain_bis_521_frmMain folder.
+        /// </summary>
+        [RepositoryFolder("88eaf1ec-55a6-49b2-8612-da51d0e089f2")]
+        public virtual B_JOUR_001RepositoryFolders.TblMain_530_tblMain_bis_521_frmMainAppFolder TblMain_530_tblMain_bis_521_frmMain
+        {
+            get { return _tblmain_530_tblmain_bis_521_frmmain; }
         }
     }
 
@@ -1810,175 +1810,6 @@ namespace B_JOUR_001
         }
 
         /// <summary>
-        /// The FrmMain_GeschaeftsjahrAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("3cc2d6c0-938c-4bd0-8139-67ecd703e34a")]
-        public partial class FrmMain_GeschaeftsjahrAppFolder : RepoGenBaseFolder
-        {
-            B_JOUR_001RepositoryFolders.FlexGridFolder _flexgrid;
-            RepoItemInfo _titlebar100verwaltengeschaeftsjahrInfo;
-            RepoItemInfo _pbcommonjournalzeilenInfo;
-
-            /// <summary>
-            /// Creates a new FrmMain_Geschaeftsjahr  folder.
-            /// </summary>
-            public FrmMain_GeschaeftsjahrAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FrmMain_Geschaeftsjahr", "/form[@controlname='frmMain']", parentFolder, 30000, null, true, "3cc2d6c0-938c-4bd0-8139-67ecd703e34a", "")
-            {
-                _flexgrid = new B_JOUR_001RepositoryFolders.FlexGridFolder(this);
-                _titlebar100verwaltengeschaeftsjahrInfo = new RepoItemInfo(this, "TitleBar100VerwaltenGeschaeftsjahr", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "71f3eafb-3f27-4706-9b67-236c2ba7c820");
-                _pbcommonjournalzeilenInfo = new RepoItemInfo(this, "PbCommonJournalzeilen", "?/?/container[@controlname='cRibbonGroup1']/button[@controlname='pbCommon_Journalzeilen']", "", 30000, null, "2651095b-7271-4941-be47-c3227815f49b");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("3cc2d6c0-938c-4bd0-8139-67ecd703e34a")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("3cc2d6c0-938c-4bd0-8139-67ecd703e34a")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TitleBar100VerwaltenGeschaeftsjahr item.
-            /// </summary>
-            [RepositoryItem("71f3eafb-3f27-4706-9b67-236c2ba7c820")]
-            public virtual Ranorex.TitleBar TitleBar100VerwaltenGeschaeftsjahr
-            {
-                get
-                {
-                    return _titlebar100verwaltengeschaeftsjahrInfo.CreateAdapter<Ranorex.TitleBar>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TitleBar100VerwaltenGeschaeftsjahr item info.
-            /// </summary>
-            [RepositoryItemInfo("71f3eafb-3f27-4706-9b67-236c2ba7c820")]
-            public virtual RepoItemInfo TitleBar100VerwaltenGeschaeftsjahrInfo
-            {
-                get
-                {
-                    return _titlebar100verwaltengeschaeftsjahrInfo;
-                }
-            }
-
-            /// <summary>
-            /// The PbCommonJournalzeilen item.
-            /// </summary>
-            [RepositoryItem("2651095b-7271-4941-be47-c3227815f49b")]
-            public virtual Ranorex.Button PbCommonJournalzeilen
-            {
-                get
-                {
-                    return _pbcommonjournalzeilenInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PbCommonJournalzeilen item info.
-            /// </summary>
-            [RepositoryItemInfo("2651095b-7271-4941-be47-c3227815f49b")]
-            public virtual RepoItemInfo PbCommonJournalzeilenInfo
-            {
-                get
-                {
-                    return _pbcommonjournalzeilenInfo;
-                }
-            }
-
-            /// <summary>
-            /// The FlexGrid folder.
-            /// </summary>
-            [RepositoryFolder("44d254bb-34fc-4b97-a07f-d65fcf55f118")]
-            public virtual B_JOUR_001RepositoryFolders.FlexGridFolder FlexGrid
-            {
-                get { return _flexgrid; }
-            }
-        }
-
-        /// <summary>
-        /// The FlexGridFolder folder.
-        /// </summary>
-        [RepositoryFolder("44d254bb-34fc-4b97-a07f-d65fcf55f118")]
-        public partial class FlexGridFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _column0_zeile_geschaeftsjahrInfo;
-
-            /// <summary>
-            /// Creates a new FlexGrid  folder.
-            /// </summary>
-            public FlexGridFolder(RepoGenBaseFolder parentFolder) :
-                    base("FlexGrid", "container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "44d254bb-34fc-4b97-a07f-d65fcf55f118", "")
-            {
-                _column0_zeile_geschaeftsjahrInfo = new RepoItemInfo(this, "Column0_Zeile_Geschaeftsjahr", "row[@accessiblename~'Row' and @accessiblevalue~$Geschaeftsjahr]/cell[@accessiblename~'Column 0']", "", 30000, null, "b02c54dc-0816-453f-aeb4-0e0ee9e2be40");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("44d254bb-34fc-4b97-a07f-d65fcf55f118")]
-            public virtual Ranorex.Table Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Table>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("44d254bb-34fc-4b97-a07f-d65fcf55f118")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Column0_Zeile_Geschaeftsjahr item.
-            /// </summary>
-            [RepositoryItem("b02c54dc-0816-453f-aeb4-0e0ee9e2be40")]
-            public virtual Ranorex.Cell Column0_Zeile_Geschaeftsjahr
-            {
-                get
-                {
-                    return _column0_zeile_geschaeftsjahrInfo.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Column0_Zeile_Geschaeftsjahr item info.
-            /// </summary>
-            [RepositoryItemInfo("b02c54dc-0816-453f-aeb4-0e0ee9e2be40")]
-            public virtual RepoItemInfo Column0_Zeile_GeschaeftsjahrInfo
-            {
-                get
-                {
-                    return _column0_zeile_geschaeftsjahrInfo;
-                }
-            }
-        }
-
-        /// <summary>
         /// The TblJournal_in_B_JAHRAppFolder folder.
         /// </summary>
         [RepositoryFolder("469a70d2-d1e5-4ca1-b6ff-e6a8a8bf131b")]
@@ -2092,6 +1923,202 @@ namespace B_JOUR_001
                 get
                 {
                     return _schliessenInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TblMain_530_tblMain_bis_521_frmMainAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("88eaf1ec-55a6-49b2-8612-da51d0e089f2")]
+        public partial class TblMain_530_tblMain_bis_521_frmMainAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _titlebar100verwaltengeschaeftsjahrInfo;
+            RepoItemInfo _schliessenInfo;
+            RepoItemInfo _pbcommonjournalzeilenInfo;
+            RepoItemInfo _column0_in_zeile_mit_geschaeftsjahr_530Info;
+            RepoItemInfo _column0_in_zeile_mit_geschaeftsjahr_510_530Info;
+            RepoItemInfo _column0_in_zeile_mit_geschaeftsjahr_510Info;
+
+            /// <summary>
+            /// Creates a new TblMain_530_tblMain_bis_521_frmMain  folder.
+            /// </summary>
+            public TblMain_530_tblMain_bis_521_frmMainAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TblMain_530_tblMain_bis_521_frmMain", "/form[@controlname~'Main']", parentFolder, 30000, null, true, "88eaf1ec-55a6-49b2-8612-da51d0e089f2", "")
+            {
+                _titlebar100verwaltengeschaeftsjahrInfo = new RepoItemInfo(this, "TitleBar100VerwaltenGeschaeftsjahr", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "1530a5c8-273e-4042-b211-c61a6f4821af");
+                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "fe792f41-c4e6-41ad-8930-37b952f58bdd");
+                _pbcommonjournalzeilenInfo = new RepoItemInfo(this, "PbCommonJournalzeilen", "container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup1']/button[@controlname='pbCommon_Journalzeilen']", "", 30000, null, "6e93e769-a862-4d17-80b7-a9ac5169b131");
+                _column0_in_zeile_mit_geschaeftsjahr_530Info = new RepoItemInfo(this, "Column0_in_Zeile_mit_Geschaeftsjahr_530", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Geschaeftsjahr]/cell[@accessiblename~'Row 14 Column 0']", "", 30000, null, "7ea00e1a-c3d3-4795-b19c-88d3fb5a81ec");
+                _column0_in_zeile_mit_geschaeftsjahr_510_530Info = new RepoItemInfo(this, "Column0_in_Zeile_mit_Geschaeftsjahr_510_530", "container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Geschaeftsjahr]/cell[@accessiblename~'Column 0']", "", 30000, null, "e7cdea55-dc36-403d-a315-9253ca18fd2b");
+                _column0_in_zeile_mit_geschaeftsjahr_510Info = new RepoItemInfo(this, "Column0_in_Zeile_mit_Geschaeftsjahr_510", "container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Geschaeftsjahr]/cell[@accessiblename~'Column 0']", "", 30000, null, "e062f9f4-68b5-4f63-b06a-ee35b54aa4b0");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("88eaf1ec-55a6-49b2-8612-da51d0e089f2")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("88eaf1ec-55a6-49b2-8612-da51d0e089f2")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100VerwaltenGeschaeftsjahr item.
+            /// </summary>
+            [RepositoryItem("1530a5c8-273e-4042-b211-c61a6f4821af")]
+            public virtual Ranorex.TitleBar TitleBar100VerwaltenGeschaeftsjahr
+            {
+                get
+                {
+                    return _titlebar100verwaltengeschaeftsjahrInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100VerwaltenGeschaeftsjahr item info.
+            /// </summary>
+            [RepositoryItemInfo("1530a5c8-273e-4042-b211-c61a6f4821af")]
+            public virtual RepoItemInfo TitleBar100VerwaltenGeschaeftsjahrInfo
+            {
+                get
+                {
+                    return _titlebar100verwaltengeschaeftsjahrInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item.
+            /// </summary>
+            [RepositoryItem("fe792f41-c4e6-41ad-8930-37b952f58bdd")]
+            public virtual Ranorex.Button Schliessen
+            {
+                get
+                {
+                    return _schliessenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item info.
+            /// </summary>
+            [RepositoryItemInfo("fe792f41-c4e6-41ad-8930-37b952f58bdd")]
+            public virtual RepoItemInfo SchliessenInfo
+            {
+                get
+                {
+                    return _schliessenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbCommonJournalzeilen item.
+            /// </summary>
+            [RepositoryItem("6e93e769-a862-4d17-80b7-a9ac5169b131")]
+            public virtual Ranorex.Button PbCommonJournalzeilen
+            {
+                get
+                {
+                    return _pbcommonjournalzeilenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbCommonJournalzeilen item info.
+            /// </summary>
+            [RepositoryItemInfo("6e93e769-a862-4d17-80b7-a9ac5169b131")]
+            public virtual RepoItemInfo PbCommonJournalzeilenInfo
+            {
+                get
+                {
+                    return _pbcommonjournalzeilenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Column0_in_Zeile_mit_Geschaeftsjahr_530 item.
+            /// </summary>
+            [RepositoryItem("7ea00e1a-c3d3-4795-b19c-88d3fb5a81ec")]
+            public virtual Ranorex.Cell Column0_in_Zeile_mit_Geschaeftsjahr_530
+            {
+                get
+                {
+                    return _column0_in_zeile_mit_geschaeftsjahr_530Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Column0_in_Zeile_mit_Geschaeftsjahr_530 item info.
+            /// </summary>
+            [RepositoryItemInfo("7ea00e1a-c3d3-4795-b19c-88d3fb5a81ec")]
+            public virtual RepoItemInfo Column0_in_Zeile_mit_Geschaeftsjahr_530Info
+            {
+                get
+                {
+                    return _column0_in_zeile_mit_geschaeftsjahr_530Info;
+                }
+            }
+
+            /// <summary>
+            /// The Column0_in_Zeile_mit_Geschaeftsjahr_510_530 item.
+            /// </summary>
+            [RepositoryItem("e7cdea55-dc36-403d-a315-9253ca18fd2b")]
+            public virtual Ranorex.Cell Column0_in_Zeile_mit_Geschaeftsjahr_510_530
+            {
+                get
+                {
+                    return _column0_in_zeile_mit_geschaeftsjahr_510_530Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Column0_in_Zeile_mit_Geschaeftsjahr_510_530 item info.
+            /// </summary>
+            [RepositoryItemInfo("e7cdea55-dc36-403d-a315-9253ca18fd2b")]
+            public virtual RepoItemInfo Column0_in_Zeile_mit_Geschaeftsjahr_510_530Info
+            {
+                get
+                {
+                    return _column0_in_zeile_mit_geschaeftsjahr_510_530Info;
+                }
+            }
+
+            /// <summary>
+            /// The Column0_in_Zeile_mit_Geschaeftsjahr_510 item.
+            /// </summary>
+            [RepositoryItem("e062f9f4-68b5-4f63-b06a-ee35b54aa4b0")]
+            public virtual Ranorex.Cell Column0_in_Zeile_mit_Geschaeftsjahr_510
+            {
+                get
+                {
+                    return _column0_in_zeile_mit_geschaeftsjahr_510Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Column0_in_Zeile_mit_Geschaeftsjahr_510 item info.
+            /// </summary>
+            [RepositoryItemInfo("e062f9f4-68b5-4f63-b06a-ee35b54aa4b0")]
+            public virtual RepoItemInfo Column0_in_Zeile_mit_Geschaeftsjahr_510Info
+            {
+                get
+                {
+                    return _column0_in_zeile_mit_geschaeftsjahr_510Info;
                 }
             }
         }
