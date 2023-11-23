@@ -90,37 +90,62 @@ namespace K_FIBU_005.Recordings_B_JAHR
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmMain.TitleBar100VerwaltenGeschaeftsjahr'.", repo.FrmMain.TitleBar100VerwaltenGeschaeftsjahrInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.FrmMain.TitleBar100VerwaltenGeschaeftsjahrInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmMain_bis_521_tblMain_ab_530.TitleBar100VerwaltenGeschaeftsjahr'.", repo.FrmMain_bis_521_tblMain_ab_530.TitleBar100VerwaltenGeschaeftsjahrInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.FrmMain_bis_521_tblMain_ab_530.TitleBar100VerwaltenGeschaeftsjahrInfo);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.Tabelle.ColGjhrPerivonKore_Zeile_GJ_2017' at Center.", repo.FrmMain.Tabelle.ColGjhrPerivonKore_Zeile_GJ_2017Info, new RecordItemIndex(1));
-            repo.FrmMain.Tabelle.ColGjhrPerivonKore_Zeile_GJ_2017.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPeribisRow_Zeile_GJ_2017_fuer_klick' at Center.", repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPeribisRow_Zeile_GJ_2017_fuer_klickInfo, new RecordItemIndex(1));
+            repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPeribisRow_Zeile_GJ_2017_fuer_klick.Click();
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '0' on item 'FrmMain.SomeText'.", repo.FrmMain.SomeTextInfo, new RecordItemIndex(2));
-            repo.FrmMain.SomeText.Element.SetAttributeValue("Text", "0");
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(2));
+            Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmMain.Tabelle.ColGjhrPerivonKore_Zeile_GJ_2017'.", repo.FrmMain.Tabelle.ColGjhrPerivonKore_Zeile_GJ_2017Info, new RecordItemIndex(3));
-            Keyboard.PrepareFocus(repo.FrmMain.Tabelle.ColGjhrPerivonKore_Zeile_GJ_2017);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.Tabelle.ColGjhrPeribisKore_Zeile_GJ_2017' at Center.", repo.FrmMain.Tabelle.ColGjhrPeribisKore_Zeile_GJ_2017Info, new RecordItemIndex(4));
-            repo.FrmMain.Tabelle.ColGjhrPeribisKore_Zeile_GJ_2017.Click();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
+            Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '0' on item 'FrmMain.SomeText'.", repo.FrmMain.SomeTextInfo, new RecordItemIndex(5));
-            repo.FrmMain.SomeText.Element.SetAttributeValue("Text", "0");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0'.", new RecordItemIndex(5));
+            Keyboard.Press("0");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'FrmMain.Tabelle.ColGjhrPeribisKore_Zeile_GJ_2017'.", repo.FrmMain.Tabelle.ColGjhrPeribisKore_Zeile_GJ_2017Info, new RecordItemIndex(6));
-            Keyboard.PrepareFocus(repo.FrmMain.Tabelle.ColGjhrPeribisKore_Zeile_GJ_2017);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(6));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(7));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.PbStandard1' at Center.", repo.FrmMain.PbStandard1Info, new RecordItemIndex(7));
-            repo.FrmMain.PbStandard1.Click();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(8));
+            Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmMain.Tabelle.ColGjhrPerivonKore_Zeile_GJ_2017'.", repo.FrmMain.Tabelle.ColGjhrPerivonKore_Zeile_GJ_2017Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.FrmMain.Tabelle.ColGjhrPerivonKore_Zeile_GJ_2017Info, "Text", "0");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017'.", repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017Info, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017Info, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmMain.Tabelle.ColGjhrPeribisKore_Zeile_GJ_2017'.", repo.FrmMain.Tabelle.ColGjhrPeribisKore_Zeile_GJ_2017Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.FrmMain.Tabelle.ColGjhrPeribisKore_Zeile_GJ_2017Info, "Text", "0");
+            // Kore Bis_Monat
+            Report.Log(ReportLevel.Info, "Section", "Kore Bis_Monat", new RecordItemIndex(10));
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0'.", new RecordItemIndex(11));
+            Keyboard.Press("0");
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(12));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(14));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPeribisKore_Zeile_GJ_2017'.", repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPeribisKore_Zeile_GJ_2017Info, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPeribisKore_Zeile_GJ_2017Info, "Text", "0");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain_bis_521_tblMain_ab_530.PbStandard_530_510' at Center.", repo.FrmMain_bis_521_tblMain_ab_530.PbStandard_530_510Info, new RecordItemIndex(16));
+            repo.FrmMain_bis_521_tblMain_ab_530.PbStandard_530_510.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017'.", repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017Info, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017Info, "Text", "0");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPeribisKore_Zeile_GJ_2017'.", repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPeribisKore_Zeile_GJ_2017Info, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPeribisKore_Zeile_GJ_2017Info, "Text", "0");
             
         }
 

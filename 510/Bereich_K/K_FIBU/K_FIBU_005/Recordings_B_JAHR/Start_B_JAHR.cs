@@ -108,11 +108,11 @@ namespace K_FIBU_005.Recordings_B_JAHR
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm3 in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm3, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmMain.TitleBar100VerwaltenGeschaeftsjahr'", repo.FrmMain.TitleBar100VerwaltenGeschaeftsjahrInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmMain.TitleBar100VerwaltenGeschaeftsjahrInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmMain_bis_521_tblMain_ab_530.TitleBar100VerwaltenGeschaeftsjahr'", repo.FrmMain_bis_521_tblMain_ab_530.TitleBar100VerwaltenGeschaeftsjahrInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FrmMain_bis_521_tblMain_ab_530.TitleBar100VerwaltenGeschaeftsjahrInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Verwalten Geschäftsjahr') on item 'FrmMain.TitleBar100VerwaltenGeschaeftsjahr'.", repo.FrmMain.TitleBar100VerwaltenGeschaeftsjahrInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmMain.TitleBar100VerwaltenGeschaeftsjahrInfo, "Text", "Verwalten Geschäftsjahr");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Verwalten Geschäftsjahr') on item 'FrmMain_bis_521_tblMain_ab_530.TitleBar100VerwaltenGeschaeftsjahr'.", repo.FrmMain_bis_521_tblMain_ab_530.TitleBar100VerwaltenGeschaeftsjahrInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.FrmMain_bis_521_tblMain_ab_530.TitleBar100VerwaltenGeschaeftsjahrInfo, "Text", "Verwalten Geschäftsjahr");
             
         }
 

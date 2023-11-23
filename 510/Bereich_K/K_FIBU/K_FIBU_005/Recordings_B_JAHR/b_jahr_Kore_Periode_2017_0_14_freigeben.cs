@@ -24,29 +24,30 @@ namespace K_FIBU_005.Recordings_B_JAHR
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The b_jahr_Kore_Jahr_2017_freigeben_Perioden_loeschen recording.
+    ///The b_jahr_Kore_Periode_2017_0_14_freigeben recording.
     /// </summary>
-    [TestModule("08964d2d-d06b-485b-afef-ba3828960363", ModuleType.Recording, 1)]
-    public partial class B_jahr_Kore_Jahr_2017_freigeben_Perioden_loeschen : ITestModule
+    [TestModule("508e522b-afdf-451b-9c16-83d12955b22c", ModuleType.Recording, 1)]
+    public partial class B_jahr_Kore_Periode_2017_0_14_freigeben : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::K_FIBU_005.K_FIBU_005Repository repository.
         /// </summary>
         public static global::K_FIBU_005.K_FIBU_005Repository repo = global::K_FIBU_005.K_FIBU_005Repository.Instance;
 
-        static B_jahr_Kore_Jahr_2017_freigeben_Perioden_loeschen instance = new B_jahr_Kore_Jahr_2017_freigeben_Perioden_loeschen();
+        static B_jahr_Kore_Periode_2017_0_14_freigeben instance = new B_jahr_Kore_Periode_2017_0_14_freigeben();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public B_jahr_Kore_Jahr_2017_freigeben_Perioden_loeschen()
+        public B_jahr_Kore_Periode_2017_0_14_freigeben()
         {
+            Jahr = "2017";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static B_jahr_Kore_Jahr_2017_freigeben_Perioden_loeschen Instance
+        public static B_jahr_Kore_Periode_2017_0_14_freigeben Instance
         {
             get { return instance; }
         }
@@ -56,7 +57,7 @@ namespace K_FIBU_005.Recordings_B_JAHR
         /// <summary>
         /// Gets or sets the value of variable Jahr.
         /// </summary>
-        [TestVariable("eb7fe1b4-cb23-47a4-a21e-eb6bffaf6d80")]
+        [TestVariable("b91e3fd2-d4e6-4555-ae55-86c82ce61443")]
         public string Jahr
         {
             get { return repo.Jahr; }
@@ -104,8 +105,8 @@ namespace K_FIBU_005.Recordings_B_JAHR
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(5));
-            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0'.", new RecordItemIndex(5));
+            Keyboard.Press("0");
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(6));
             Delay.Duration(1000, false);
@@ -116,14 +117,14 @@ namespace K_FIBU_005.Recordings_B_JAHR
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(8));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017'.", repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017'.", repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017Info, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017Info, "Text", "0");
             
             // Kore Bis_Monat
             Report.Log(ReportLevel.Info, "Section", "Kore Bis_Monat", new RecordItemIndex(10));
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(11));
-            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '14'.", new RecordItemIndex(11));
+            Keyboard.Press("14");
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(12));
             Delay.Duration(1000, false);
@@ -134,17 +135,17 @@ namespace K_FIBU_005.Recordings_B_JAHR
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(14));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017'.", repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017Info, new RecordItemIndex(15));
-            Validate.AttributeEqual(repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='14') on item 'FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPeribisKore_Zeile_GJ_2017'.", repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPeribisKore_Zeile_GJ_2017Info, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPeribisKore_Zeile_GJ_2017Info, "Text", "14");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain_bis_521_tblMain_ab_530.PbStandard_530_510' at Center.", repo.FrmMain_bis_521_tblMain_ab_530.PbStandard_530_510Info, new RecordItemIndex(16));
             repo.FrmMain_bis_521_tblMain_ab_530.PbStandard_530_510.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017'.", repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017Info, new RecordItemIndex(17));
-            Validate.AttributeEqual(repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0') on item 'FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017'.", repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017Info, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPerivonKore_Zeile_GJ_2017Info, "Text", "0");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPeribisKore_Zeile_GJ_2017'.", repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPeribisKore_Zeile_GJ_2017Info, new RecordItemIndex(18));
-            Validate.AttributeEqual(repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPeribisKore_Zeile_GJ_2017Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='14') on item 'FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPeribisKore_Zeile_GJ_2017'.", repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPeribisKore_Zeile_GJ_2017Info, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.FrmMain_bis_521_tblMain_ab_530.Tabelle_530_510.ColGjhrPeribisKore_Zeile_GJ_2017Info, "Text", "14");
             
         }
 

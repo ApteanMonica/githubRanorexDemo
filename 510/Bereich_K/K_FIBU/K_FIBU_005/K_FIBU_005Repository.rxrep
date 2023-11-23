@@ -17,8 +17,7 @@ name="K_FIBU_005Repository">
 		capname="form"
 		id="5a1d34aa-07a1-4422-b046-f3b38c537cf6"
 		isrooted="True"
-		name="FrmMain"
-		refpath="/form[@controlname='frmMain']"
+		name="FrmMain_bis_521_tblMain_ab_530"
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
@@ -27,40 +26,45 @@ name="K_FIBU_005Repository">
 			id="5d440f6d-5acc-4cbe-8d65-5f9f67be92a5"
 			name="TitleBar100VerwaltenGeschaeftsjahr"
 			refimgid="067ac5f8-dfe3-41e1-9909-52ef82b10e94"
-			refpath="/form[@controlname='frmMain']/titlebar[@accessiblerole='TitleBar']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='frmMain']/titlebar[@accessiblerole='TitleBar']
+				/form[@controlname~'Main']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			capname="button"
+			id="2a6f838d-cdc3-425a-93a9-9ace6da3632f"
+			name="Speichern_Button_530"
+			robustPath="/form[@controlname~'Main']/element"
+			searchtimeout="30000ms">
+				/form[@controlname~'Main']/container[@controlname='ToolBar']/button[@controlname='pbSpeichern']
 			</item>
 			<item
 			addcaps="button,control,nativewindow"
 			capname="button"
 			id="c02f261d-6098-4ce5-86bb-e21317b51bba"
-			name="PbStandard1"
+			name="PbStandard_530_510"
 			refimgid="032a64cf-b8f8-4296-82ee-87fb280fb325"
-			refpath="/form[@controlname='frmMain']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbStandard1']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='frmMain']/?/?/container[@controlname='CommonGroup']/button[@controlname='pbStandard1']
-			</item>
-			<item
-			addcaps="text,control,nativewindow"
-			capname="text"
-			id="7caf37b0-2e9f-469d-a558-381a44531b5e"
-			name="SomeText"
-			refimgid="2b4ca00a-6e3f-4f5e-89e7-dc2065858120"
-			refpath="/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/text[@controltypename='']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/text[@controltypename='']
+				/form[@controlname~'Main']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbStandard1']
 			</item>
 			<folder
 			capname="table"
 			id="557ac536-9b52-493e-b237-f77cf21f7d40"
 			isrooted="True"
-			name="Tabelle"
+			name="Tabelle_530_510"
 			searchtimeout="30000ms"
 			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="a1fa58ad-eb1b-4589-b4ae-6982db153670"
+				name="ColGjhrPeribisRow_Zeile_GJ_2017_fuer_klick"
+				refimgid="4e4e5d8c-a1da-43f7-86a3-221c78884904"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Jahr]/cell[@accessiblename~'colGjhr_peribis']
+				</item>
 				<item
 				addcaps="cell,accessible"
 				capname="cell"
@@ -69,7 +73,7 @@ name="K_FIBU_005Repository">
 				refimgid="a422c0a5-3532-47e0-9003-3dfc8f9ab4eb"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Jahr]/cell[@accessiblename~'colGjhr_perivon_kore']
+					/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Jahr]/cell[@accessiblename~'colGjhr_perivon_kore']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -79,24 +83,65 @@ name="K_FIBU_005Repository">
 				refimgid="a422c0a5-3532-47e0-9003-3dfc8f9ab4eb"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Jahr]/cell[@accessiblename~'colGjhr_peribis_kore']
+					/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Jahr]/cell[@accessiblename~'colGjhr_peribis_kore']
+				</item>
+				<basepath>
+					/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+				</basepath>
+			</folder>
+			<item
+			addcaps="cell,accessible"
+			capname="table"
+			id="0a49bc62-18c1-430f-8c3a-2bbaa1f53082"
+			name="Tabelle_530"
+			refimgid="c5f06aff-a65a-407f-9859-a2ba55d47d12"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname~'Main']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+			</item>
+			<folder
+			capname="table"
+			id="10d5d570-2662-4de0-9cff-49af75798f5e"
+			isrooted="True"
+			name="Tabelle_510"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="c03829f6-f66e-4f63-ae3f-a1be4eb87db8"
+				name="ColGjhrPerivonKore_Zeile_GJ_2017"
+				refimgid="a422c0a5-3532-47e0-9003-3dfc8f9ab4eb"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname~'Main']/container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Jahr]/cell[@accessiblename~'colGjhr_perivon_kore']
 				</item>
 				<item
 				addcaps="cell,accessible"
 				capname="cell"
-				id="a1fa58ad-eb1b-4589-b4ae-6982db153670"
+				id="2b2b4a1c-d3d3-4b84-9cca-44bc841148e0"
+				name="ColGjhrPeribisKore_Zeile_GJ_2017"
+				refimgid="a422c0a5-3532-47e0-9003-3dfc8f9ab4eb"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname~'Main']/container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Jahr]/cell[@accessiblename~'colGjhr_peribis_kore']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="e1f0b71e-7d29-4630-860e-5cc4f7bf699d"
 				name="ColGjhrPeribisRow_Zeile_GJ_2017_fuer_klick"
 				refimgid="4e4e5d8c-a1da-43f7-86a3-221c78884904"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Jahr]/cell[@accessiblename~'colGjhr_peribis']
+					/form[@controlname~'Main']/container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Jahr]/cell[@accessiblename~'colGjhr_peribis']
 				</item>
 				<basepath>
-					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+					/form[@controlname~'Main']/container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
 				</basepath>
 			</folder>
 			<basepath>
-				/form[@controlname='frmMain']
+				/form[@controlname~'Main']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx

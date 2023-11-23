@@ -27,7 +27,7 @@ namespace K_FIBU_005
     public partial class K_FIBU_005Repository : RepoGenBaseFolder
     {
         static K_FIBU_005Repository instance = new K_FIBU_005Repository();
-        K_FIBU_005RepositoryFolders.FrmMainAppFolder _frmmain;
+        K_FIBU_005RepositoryFolders.FrmMain_bis_521_tblMain_ab_530AppFolder _frmmain_bis_521_tblmain_ab_530;
         K_FIBU_005RepositoryFolders.FrmVerbuchAppFolder _frmverbuch;
         K_FIBU_005RepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
         K_FIBU_005RepositoryFolders.BJAHRAppFolder _bjahr;
@@ -47,7 +47,7 @@ namespace K_FIBU_005
         public K_FIBU_005Repository() 
             : base("K_FIBU_005Repository", "/", null, 0, false, "ae3cd1a8-c906-4d33-8167-714b2b2a3e7f", ".\\RepositoryImages\\K_FIBU_005Repositoryae3cd1a8.rximgres")
         {
-            _frmmain = new K_FIBU_005RepositoryFolders.FrmMainAppFolder(this);
+            _frmmain_bis_521_tblmain_ab_530 = new K_FIBU_005RepositoryFolders.FrmMain_bis_521_tblMain_ab_530AppFolder(this);
             _frmverbuch = new K_FIBU_005RepositoryFolders.FrmVerbuchAppFolder(this);
             _dlgmessagebox = new K_FIBU_005RepositoryFolders.DlgMessageBoxAppFolder(this);
             _bjahr = new K_FIBU_005RepositoryFolders.BJAHRAppFolder(this);
@@ -82,12 +82,12 @@ namespace K_FIBU_005
         }
 
         /// <summary>
-        /// The FrmMain folder.
+        /// The FrmMain_bis_521_tblMain_ab_530 folder.
         /// </summary>
         [RepositoryFolder("5a1d34aa-07a1-4422-b046-f3b38c537cf6")]
-        public virtual K_FIBU_005RepositoryFolders.FrmMainAppFolder FrmMain
+        public virtual K_FIBU_005RepositoryFolders.FrmMain_bis_521_tblMain_ab_530AppFolder FrmMain_bis_521_tblMain_ab_530
         {
-            get { return _frmmain; }
+            get { return _frmmain_bis_521_tblmain_ab_530; }
         }
 
         /// <summary>
@@ -125,26 +125,30 @@ namespace K_FIBU_005
     public partial class K_FIBU_005RepositoryFolders
     {
         /// <summary>
-        /// The FrmMainAppFolder folder.
+        /// The FrmMain_bis_521_tblMain_ab_530AppFolder folder.
         /// </summary>
         [RepositoryFolder("5a1d34aa-07a1-4422-b046-f3b38c537cf6")]
-        public partial class FrmMainAppFolder : RepoGenBaseFolder
+        public partial class FrmMain_bis_521_tblMain_ab_530AppFolder : RepoGenBaseFolder
         {
-            K_FIBU_005RepositoryFolders.TabelleFolder _tabelle;
+            K_FIBU_005RepositoryFolders.Tabelle_530_510Folder _tabelle_530_510;
+            K_FIBU_005RepositoryFolders.Tabelle_510Folder _tabelle_510;
             RepoItemInfo _titlebar100verwaltengeschaeftsjahrInfo;
-            RepoItemInfo _pbstandard1Info;
-            RepoItemInfo _sometextInfo;
+            RepoItemInfo _speichern_button_530Info;
+            RepoItemInfo _pbstandard_530_510Info;
+            RepoItemInfo _tabelle_530Info;
 
             /// <summary>
-            /// Creates a new FrmMain  folder.
+            /// Creates a new FrmMain_bis_521_tblMain_ab_530  folder.
             /// </summary>
-            public FrmMainAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FrmMain", "/form[@controlname='frmMain']", parentFolder, 30000, null, true, "5a1d34aa-07a1-4422-b046-f3b38c537cf6", "")
+            public FrmMain_bis_521_tblMain_ab_530AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FrmMain_bis_521_tblMain_ab_530", "/form[@controlname~'Main']", parentFolder, 30000, null, true, "5a1d34aa-07a1-4422-b046-f3b38c537cf6", "")
             {
-                _tabelle = new K_FIBU_005RepositoryFolders.TabelleFolder(this);
+                _tabelle_530_510 = new K_FIBU_005RepositoryFolders.Tabelle_530_510Folder(this);
+                _tabelle_510 = new K_FIBU_005RepositoryFolders.Tabelle_510Folder(this);
                 _titlebar100verwaltengeschaeftsjahrInfo = new RepoItemInfo(this, "TitleBar100VerwaltenGeschaeftsjahr", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "5d440f6d-5acc-4cbe-8d65-5f9f67be92a5");
-                _pbstandard1Info = new RepoItemInfo(this, "PbStandard1", "?/?/container[@controlname='CommonGroup']/button[@controlname='pbStandard1']", "", 30000, null, "c02f261d-6098-4ce5-86bb-e21317b51bba");
-                _sometextInfo = new RepoItemInfo(this, "SomeText", "container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/text[@controltypename='']", "", 30000, null, "7caf37b0-2e9f-469d-a558-381a44531b5e");
+                _speichern_button_530Info = new RepoItemInfo(this, "Speichern_Button_530", "container[@controlname='ToolBar']/button[@controlname='pbSpeichern']", "element", 30000, null, "2a6f838d-cdc3-425a-93a9-9ace6da3632f");
+                _pbstandard_530_510Info = new RepoItemInfo(this, "PbStandard_530_510", "container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbStandard1']", "", 30000, null, "c02f261d-6098-4ce5-86bb-e21317b51bba");
+                _tabelle_530Info = new RepoItemInfo(this, "Tabelle_530", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", "", 30000, null, "0a49bc62-18c1-430f-8c3a-2bbaa1f53082");
             }
 
             /// <summary>
@@ -196,82 +200,115 @@ namespace K_FIBU_005
             }
 
             /// <summary>
-            /// The PbStandard1 item.
+            /// The Speichern_Button_530 item.
+            /// </summary>
+            [RepositoryItem("2a6f838d-cdc3-425a-93a9-9ace6da3632f")]
+            public virtual Ranorex.Button Speichern_Button_530
+            {
+                get
+                {
+                    return _speichern_button_530Info.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Speichern_Button_530 item info.
+            /// </summary>
+            [RepositoryItemInfo("2a6f838d-cdc3-425a-93a9-9ace6da3632f")]
+            public virtual RepoItemInfo Speichern_Button_530Info
+            {
+                get
+                {
+                    return _speichern_button_530Info;
+                }
+            }
+
+            /// <summary>
+            /// The PbStandard_530_510 item.
             /// </summary>
             [RepositoryItem("c02f261d-6098-4ce5-86bb-e21317b51bba")]
-            public virtual Ranorex.Button PbStandard1
+            public virtual Ranorex.Button PbStandard_530_510
             {
                 get
                 {
-                    return _pbstandard1Info.CreateAdapter<Ranorex.Button>(true);
+                    return _pbstandard_530_510Info.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The PbStandard1 item info.
+            /// The PbStandard_530_510 item info.
             /// </summary>
             [RepositoryItemInfo("c02f261d-6098-4ce5-86bb-e21317b51bba")]
-            public virtual RepoItemInfo PbStandard1Info
+            public virtual RepoItemInfo PbStandard_530_510Info
             {
                 get
                 {
-                    return _pbstandard1Info;
+                    return _pbstandard_530_510Info;
                 }
             }
 
             /// <summary>
-            /// The SomeText item.
+            /// The Tabelle_530 item.
             /// </summary>
-            [RepositoryItem("7caf37b0-2e9f-469d-a558-381a44531b5e")]
-            public virtual Ranorex.Text SomeText
+            [RepositoryItem("0a49bc62-18c1-430f-8c3a-2bbaa1f53082")]
+            public virtual Ranorex.Table Tabelle_530
             {
                 get
                 {
-                    return _sometextInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _tabelle_530Info.CreateAdapter<Ranorex.Table>(true);
                 }
             }
 
             /// <summary>
-            /// The SomeText item info.
+            /// The Tabelle_530 item info.
             /// </summary>
-            [RepositoryItemInfo("7caf37b0-2e9f-469d-a558-381a44531b5e")]
-            public virtual RepoItemInfo SomeTextInfo
+            [RepositoryItemInfo("0a49bc62-18c1-430f-8c3a-2bbaa1f53082")]
+            public virtual RepoItemInfo Tabelle_530Info
             {
                 get
                 {
-                    return _sometextInfo;
+                    return _tabelle_530Info;
                 }
             }
 
             /// <summary>
-            /// The Tabelle folder.
+            /// The Tabelle_530_510 folder.
             /// </summary>
             [RepositoryFolder("557ac536-9b52-493e-b237-f77cf21f7d40")]
-            public virtual K_FIBU_005RepositoryFolders.TabelleFolder Tabelle
+            public virtual K_FIBU_005RepositoryFolders.Tabelle_530_510Folder Tabelle_530_510
             {
-                get { return _tabelle; }
+                get { return _tabelle_530_510; }
+            }
+
+            /// <summary>
+            /// The Tabelle_510 folder.
+            /// </summary>
+            [RepositoryFolder("10d5d570-2662-4de0-9cff-49af75798f5e")]
+            public virtual K_FIBU_005RepositoryFolders.Tabelle_510Folder Tabelle_510
+            {
+                get { return _tabelle_510; }
             }
         }
 
         /// <summary>
-        /// The TabelleFolder folder.
+        /// The Tabelle_530_510Folder folder.
         /// </summary>
         [RepositoryFolder("557ac536-9b52-493e-b237-f77cf21f7d40")]
-        public partial class TabelleFolder : RepoGenBaseFolder
+        public partial class Tabelle_530_510Folder : RepoGenBaseFolder
         {
+            RepoItemInfo _colgjhrperibisrow_zeile_gj_2017_fuer_klickInfo;
             RepoItemInfo _colgjhrperivonkore_zeile_gj_2017Info;
             RepoItemInfo _colgjhrperibiskore_zeile_gj_2017Info;
-            RepoItemInfo _colgjhrperibisrow_zeile_gj_2017_fuer_klickInfo;
 
             /// <summary>
-            /// Creates a new Tabelle  folder.
+            /// Creates a new Tabelle_530_510  folder.
             /// </summary>
-            public TabelleFolder(RepoGenBaseFolder parentFolder) :
-                    base("Tabelle", "container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "557ac536-9b52-493e-b237-f77cf21f7d40", "")
+            public Tabelle_530_510Folder(RepoGenBaseFolder parentFolder) :
+                    base("Tabelle_530_510", "container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "557ac536-9b52-493e-b237-f77cf21f7d40", "")
             {
+                _colgjhrperibisrow_zeile_gj_2017_fuer_klickInfo = new RepoItemInfo(this, "ColGjhrPeribisRow_Zeile_GJ_2017_fuer_klick", "row[@accessiblerole='Row' and @accessiblevalue~$Jahr]/cell[@accessiblename~'colGjhr_peribis']", "", 30000, null, "a1fa58ad-eb1b-4589-b4ae-6982db153670");
                 _colgjhrperivonkore_zeile_gj_2017Info = new RepoItemInfo(this, "ColGjhrPerivonKore_Zeile_GJ_2017", "row[@accessiblerole='Row' and @accessiblevalue~$Jahr]/cell[@accessiblename~'colGjhr_perivon_kore']", "", 30000, null, "3d3024aa-2fce-4fa7-99ec-c8d162c6cf9d");
                 _colgjhrperibiskore_zeile_gj_2017Info = new RepoItemInfo(this, "ColGjhrPeribisKore_Zeile_GJ_2017", "row[@accessiblerole='Row' and @accessiblevalue~$Jahr]/cell[@accessiblename~'colGjhr_peribis_kore']", "", 30000, null, "3d255a0a-f0a4-4906-a0eb-c2111b669f14");
-                _colgjhrperibisrow_zeile_gj_2017_fuer_klickInfo = new RepoItemInfo(this, "ColGjhrPeribisRow_Zeile_GJ_2017_fuer_klick", "row[@accessiblerole='Row' and @accessiblevalue~$Jahr]/cell[@accessiblename~'colGjhr_peribis']", "", 30000, null, "a1fa58ad-eb1b-4589-b4ae-6982db153670");
             }
 
             /// <summary>
@@ -295,6 +332,30 @@ namespace K_FIBU_005
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColGjhrPeribisRow_Zeile_GJ_2017_fuer_klick item.
+            /// </summary>
+            [RepositoryItem("a1fa58ad-eb1b-4589-b4ae-6982db153670")]
+            public virtual Ranorex.Cell ColGjhrPeribisRow_Zeile_GJ_2017_fuer_klick
+            {
+                get
+                {
+                    return _colgjhrperibisrow_zeile_gj_2017_fuer_klickInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColGjhrPeribisRow_Zeile_GJ_2017_fuer_klick item info.
+            /// </summary>
+            [RepositoryItemInfo("a1fa58ad-eb1b-4589-b4ae-6982db153670")]
+            public virtual RepoItemInfo ColGjhrPeribisRow_Zeile_GJ_2017_fuer_klickInfo
+            {
+                get
+                {
+                    return _colgjhrperibisrow_zeile_gj_2017_fuer_klickInfo;
                 }
             }
 
@@ -345,11 +406,105 @@ namespace K_FIBU_005
                     return _colgjhrperibiskore_zeile_gj_2017Info;
                 }
             }
+        }
+
+        /// <summary>
+        /// The Tabelle_510Folder folder.
+        /// </summary>
+        [RepositoryFolder("10d5d570-2662-4de0-9cff-49af75798f5e")]
+        public partial class Tabelle_510Folder : RepoGenBaseFolder
+        {
+            RepoItemInfo _colgjhrperivonkore_zeile_gj_2017Info;
+            RepoItemInfo _colgjhrperibiskore_zeile_gj_2017Info;
+            RepoItemInfo _colgjhrperibisrow_zeile_gj_2017_fuer_klickInfo;
+
+            /// <summary>
+            /// Creates a new Tabelle_510  folder.
+            /// </summary>
+            public Tabelle_510Folder(RepoGenBaseFolder parentFolder) :
+                    base("Tabelle_510", "container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "10d5d570-2662-4de0-9cff-49af75798f5e", "")
+            {
+                _colgjhrperivonkore_zeile_gj_2017Info = new RepoItemInfo(this, "ColGjhrPerivonKore_Zeile_GJ_2017", "row[@accessiblerole='Row' and @accessiblevalue~$Jahr]/cell[@accessiblename~'colGjhr_perivon_kore']", "", 30000, null, "c03829f6-f66e-4f63-ae3f-a1be4eb87db8");
+                _colgjhrperibiskore_zeile_gj_2017Info = new RepoItemInfo(this, "ColGjhrPeribisKore_Zeile_GJ_2017", "row[@accessiblerole='Row' and @accessiblevalue~$Jahr]/cell[@accessiblename~'colGjhr_peribis_kore']", "", 30000, null, "2b2b4a1c-d3d3-4b84-9cca-44bc841148e0");
+                _colgjhrperibisrow_zeile_gj_2017_fuer_klickInfo = new RepoItemInfo(this, "ColGjhrPeribisRow_Zeile_GJ_2017_fuer_klick", "row[@accessiblerole='Row' and @accessiblevalue~$Jahr]/cell[@accessiblename~'colGjhr_peribis']", "", 30000, null, "e1f0b71e-7d29-4630-860e-5cc4f7bf699d");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("10d5d570-2662-4de0-9cff-49af75798f5e")]
+            public virtual Ranorex.Table Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("10d5d570-2662-4de0-9cff-49af75798f5e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColGjhrPerivonKore_Zeile_GJ_2017 item.
+            /// </summary>
+            [RepositoryItem("c03829f6-f66e-4f63-ae3f-a1be4eb87db8")]
+            public virtual Ranorex.Cell ColGjhrPerivonKore_Zeile_GJ_2017
+            {
+                get
+                {
+                    return _colgjhrperivonkore_zeile_gj_2017Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColGjhrPerivonKore_Zeile_GJ_2017 item info.
+            /// </summary>
+            [RepositoryItemInfo("c03829f6-f66e-4f63-ae3f-a1be4eb87db8")]
+            public virtual RepoItemInfo ColGjhrPerivonKore_Zeile_GJ_2017Info
+            {
+                get
+                {
+                    return _colgjhrperivonkore_zeile_gj_2017Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColGjhrPeribisKore_Zeile_GJ_2017 item.
+            /// </summary>
+            [RepositoryItem("2b2b4a1c-d3d3-4b84-9cca-44bc841148e0")]
+            public virtual Ranorex.Cell ColGjhrPeribisKore_Zeile_GJ_2017
+            {
+                get
+                {
+                    return _colgjhrperibiskore_zeile_gj_2017Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColGjhrPeribisKore_Zeile_GJ_2017 item info.
+            /// </summary>
+            [RepositoryItemInfo("2b2b4a1c-d3d3-4b84-9cca-44bc841148e0")]
+            public virtual RepoItemInfo ColGjhrPeribisKore_Zeile_GJ_2017Info
+            {
+                get
+                {
+                    return _colgjhrperibiskore_zeile_gj_2017Info;
+                }
+            }
 
             /// <summary>
             /// The ColGjhrPeribisRow_Zeile_GJ_2017_fuer_klick item.
             /// </summary>
-            [RepositoryItem("a1fa58ad-eb1b-4589-b4ae-6982db153670")]
+            [RepositoryItem("e1f0b71e-7d29-4630-860e-5cc4f7bf699d")]
             public virtual Ranorex.Cell ColGjhrPeribisRow_Zeile_GJ_2017_fuer_klick
             {
                 get
@@ -361,7 +516,7 @@ namespace K_FIBU_005
             /// <summary>
             /// The ColGjhrPeribisRow_Zeile_GJ_2017_fuer_klick item info.
             /// </summary>
-            [RepositoryItemInfo("a1fa58ad-eb1b-4589-b4ae-6982db153670")]
+            [RepositoryItemInfo("e1f0b71e-7d29-4630-860e-5cc4f7bf699d")]
             public virtual RepoItemInfo ColGjhrPeribisRow_Zeile_GJ_2017_fuer_klickInfo
             {
                 get

@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace K_FIBU_005.Recordings_B_JAHR
 {
-    public partial class B_jahr_Kore_Jahr_2017_0_14_freigeben
+    public partial class B_jahr_Kore_Periode_2017_0_14_freigeben
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

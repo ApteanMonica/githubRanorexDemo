@@ -7,6 +7,20 @@
 			name="TestCase">
 			</testcase>
 			<testmodule
+			id="10c886a1-c95b-4047-9397-e2bdf4f6bfbf"
+			name="B_jahr_Kore_Periode_2017_0_14_freigeben"
+			ref="508e522b-afdf-451b-9c16-83d12955b22c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Jahr"
+					datasourceid="a75065f2-9918-4fa7-b49f-b93d58c9f0f3"
+					variableid="b91e3fd2-d4e6-4555-ae55-86c82ce61443"
+					variablename="Jahr">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="16c0e7d3-4284-458b-85dc-b7aa366c8bf0"
 			name="CloseAUT"
 			ref="6b285105-2359-4700-9289-e9e5b8f5a212"
@@ -72,20 +86,6 @@
 			id="2a42543c-44e9-4170-8808-b45fc63a9913"
 			name="B_jahr_Kore_Periode_2017_0_freigeben"
 			ref="84c4ebfd-140c-44f6-81a5-b895fcd7eedb"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Jahr"
-					datasourceid="a75065f2-9918-4fa7-b49f-b93d58c9f0f3"
-					variableid="eb7fe1b4-cb23-47a4-a21e-eb6bffaf6d80"
-					variablename="Jahr">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="2ba30c8a-5a7b-4a4c-ab4e-7ebc097d3b33"
-			name="B_jahr_Kore_Periode_2017_2_freigeben"
-			ref="3f670609-3118-40a5-8387-d362b7ab1ecd"
 			type="Recording">
 				<databinding>
 					<var
@@ -249,10 +249,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Periode_bis"
+					dataname="Jahr"
 					datasourceid="a75065f2-9918-4fa7-b49f-b93d58c9f0f3"
-					variableid="0d27aafd-db3d-4be4-8654-2a8cec027da1"
-					variablename="Periode_bis">
+					variableid="bf77fa50-f9b8-44f3-a56f-0880d413271e"
+					variablename="Jahr">
 					</var>
 					<var
 					dataname="Periode_von"
@@ -261,10 +261,10 @@
 					variablename="Periode_von">
 					</var>
 					<var
-					dataname="Jahr"
+					dataname="Periode_bis"
 					datasourceid="a75065f2-9918-4fa7-b49f-b93d58c9f0f3"
-					variableid="bf77fa50-f9b8-44f3-a56f-0880d413271e"
-					variablename="Jahr">
+					variableid="0d27aafd-db3d-4be4-8654-2a8cec027da1"
+					variablename="Periode_bis">
 					</var>
 				</databinding>
 			</testmodule>
@@ -313,6 +313,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="e8e69bdc-65d2-4a3e-a49e-57832ab24741"
+			name="B_jahr_Kore_Periode_2017_2_freigeben"
+			ref="28d48d41-6c35-455c-95bf-f426ceb09e8d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Jahr"
+					datasourceid="a75065f2-9918-4fa7-b49f-b93d58c9f0f3"
+					variableid="e293dac1-cee8-4df0-9991-6fffd66fe7e4"
+					variablename="Jahr">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="f1aacd18-7a3f-40a3-9593-0758701042a1"
 			name="K_fibu_ueberleiten_erfolgreich"
 			ref="eed9a871-71b7-4c97-a57c-719d5cc5e108"
@@ -334,20 +348,6 @@
 					dataname="Jahr"
 					datasourceid="a75065f2-9918-4fa7-b49f-b93d58c9f0f3"
 					variableid="81d5230a-425a-4f8c-9d89-44855983a067"
-					variablename="Jahr">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="fa2988e8-8c8d-474c-a628-ae61e773e6d3"
-			name="B_jahr_Kore_Jahr_2017_0_14_freigeben"
-			ref="76cfcfeb-1918-4239-ae49-ba512c2234bc"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Jahr"
-					datasourceid="a75065f2-9918-4fa7-b49f-b93d58c9f0f3"
-					variableid="eb7fe1b4-cb23-47a4-a21e-eb6bffaf6d80"
 					variablename="Jahr">
 					</var>
 				</databinding>
@@ -395,7 +395,7 @@
 						id="369dbf49-ab9c-44d3-82d1-c00c4d021e8b"
 						name="Periode_2_freigegeben">
 							<testmodule
-							id="2ba30c8a-5a7b-4a4c-ab4e-7ebc097d3b33"
+							id="e8e69bdc-65d2-4a3e-a49e-57832ab24741"
 							name="B_jahr_Kore_Periode_2017_2_freigeben">
 							</testmodule>
 							<testmodule
@@ -407,8 +407,8 @@
 						id="a2e0f16b-fc31-4f0b-85ed-5f3bcfdcac87"
 						name="Alle_Perioden_freigegeben">
 							<testmodule
-							id="fa2988e8-8c8d-474c-a628-ae61e773e6d3"
-							name="B_jahr_Kore_Jahr_2017_0_14_freigeben">
+							id="10c886a1-c95b-4047-9397-e2bdf4f6bfbf"
+							name="B_jahr_Kore_Periode_2017_0_14_freigeben">
 							</testmodule>
 							<testmodule
 							id="f1aacd18-7a3f-40a3-9593-0758701042a1"

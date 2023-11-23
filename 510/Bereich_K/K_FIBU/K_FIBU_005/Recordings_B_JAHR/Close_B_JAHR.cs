@@ -79,8 +79,8 @@ namespace K_FIBU_005.Recordings_B_JAHR
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmMain.TitleBar100VerwaltenGeschaeftsjahr'.", repo.FrmMain.TitleBar100VerwaltenGeschaeftsjahrInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FrmMain.TitleBar100VerwaltenGeschaeftsjahr, 1000);
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FrmMain_bis_521_tblMain_ab_530.TitleBar100VerwaltenGeschaeftsjahr'.", repo.FrmMain_bis_521_tblMain_ab_530.TitleBar100VerwaltenGeschaeftsjahrInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.FrmMain_bis_521_tblMain_ab_530.TitleBar100VerwaltenGeschaeftsjahr, 1000);
             
         }
 
