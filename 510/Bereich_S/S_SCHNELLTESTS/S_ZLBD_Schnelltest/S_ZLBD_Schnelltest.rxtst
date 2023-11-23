@@ -4,12 +4,9 @@
 		<flatlistofchildren>
 			<testmodule
 			id="01e54ce7-d8df-4bb1-9962-ab736ccaf6a2"
-			name="Neuanlage_ZLBD"
+			name="Neuanlage_ZLBD_510_511"
 			ref="a865a70a-3335-461e-9f5d-28a74d59ac79"
 			type="Recording">
-				<description>
-					<![CDATA[Fehler 530 beim löschen und ab 521 zusätzliche Spalte Status + Pflichfeld - Condition einbauen, weil bei Tab auf Feld davor und Keysequence 0 in 510+511 neue Zeile/zlbd angelegt wird]]>
-				</description>
 				<databinding>
 					<var
 					dataname="ZLBD_CD_NEU"
@@ -20,8 +17,25 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="0bd16697-41ed-41d5-acc2-f360a9009941"
+			name="Neuanlage_ZLBD"
+			ref="5330a8ee-fb93-4f36-9bfc-04a9bfd54f22"
+			type="Recording">
+				<description>
+					<![CDATA[ab 521: neue Spalte Status / Pflichtfeld]]>
+				</description>
+				<databinding>
+					<var
+					dataname="ZLBD_CD_NEU"
+					datasourceid="bbe32579-2f65-40cc-a1cb-a8946d6b4291"
+					variableid="ca21ece4-f62d-44ac-88e8-e5591b77bf6a"
+					variablename="ZLBD_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="31840baf-af2a-4750-b72b-1c9ff41928c9"
-			name="Loeschen_ZLBD_ALT_nicht_moeglich"
+			name="Loeschen_ZLBD_ALT_nicht_moeglich_510_511_521"
 			ref="4eb53da5-3132-47b8-a241-3b5ba6fa1625"
 			type="Recording">
 				<databinding>
@@ -33,10 +47,128 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="336f9c29-3742-4ebd-8380-92799c8d8f0b"
+			name="Version_ab_530_(ALL_NOT_EQUAL_510_511_521)">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Programmversion"
+								id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="510">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Programmversion"
+								id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="511">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Programmversion"
+								id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="521">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<setup
 			id="416a5d22-a3a3-48bb-98b9-297fea93cb2f"
 			name="setup">
 			</setup>
+			<smartfoldernode
+			id="4f3f696d-dfdb-427e-8f7d-5370d716bf0f"
+			name="Version_510_511_521_(ANY_EQUAL_510_511_521)">
+				<conditiongroup
+				comparison="OR"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Programmversion"
+								id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="510">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Programmversion"
+								id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="511">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Programmversion"
+								id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="521">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="6d8a91b7-f52c-4740-8acd-1d9f895a4e26"
 			name="CloseAUT"
@@ -50,6 +182,20 @@
 					variablename="CloseAutProcessIDVar">
 					</var>
 				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="7aadfa58-fac8-4886-8c3a-dec6ba83a114"
+			name="Loeschen_ZLBD_NEU_pruefen_510_511_521"
+			ref="21f1c264-3231-473b-803f-e6a7665235f5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ZLBD_CD_NEU"
+					datasourceid="bbe32579-2f65-40cc-a1cb-a8946d6b4291"
+					variableid="5f30b91f-0c84-49bb-9f94-e86a9de1c784"
+					variablename="ZLBD_CD_NEU">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="7bf8e8cb-6272-4bc9-8637-11dacfdcb777"
@@ -93,11 +239,115 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="7f06f5f2-06bc-4441-8541-13dd9a47872c"
+			name="Version_ab_521_(ALL_NOT_EQUAL_510_511)">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Programmversion"
+								id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="510">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Programmversion"
+								id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="511">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
+			<smartfoldernode
+			id="92472d43-70d3-4557-8853-56843e3f0daa"
+			name="Version_510_511_521_(ANY_EQUAL_510_511_521)">
+				<conditiongroup
+				comparison="OR"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Programmversion"
+								id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="510">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Programmversion"
+								id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="511">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Programmversion"
+								id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="521">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
-			id="7e9538aa-9df8-4e28-addd-0e2ad6e1372b"
-			name="Loeschen_ZLBD_NEU_pruefen"
-			ref="21f1c264-3231-473b-803f-e6a7665235f5"
+			id="9a61d903-ae81-4ce8-ba3d-fd4a64db31e5"
+			name="Loeschen_Status_9_aendern_ZLBD_NEU_pruefen"
+			ref="6e87e331-8553-4e0e-a3db-ca2f237dcec4"
 			type="Recording">
+				<description>
+					<![CDATA[ab 530: Löschen nicht mehr möglich, nur mehr Statusänderung auf 9]]>
+				</description>
 				<databinding>
 					<var
 					dataname="ZLBD_CD_NEU"
@@ -118,6 +368,20 @@
 					datasourceid="bbe32579-2f65-40cc-a1cb-a8946d6b4291"
 					variableid="5f30b91f-0c84-49bb-9f94-e86a9de1c784"
 					variablename="ZLBD_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="a3ca7e4b-1e43-4f60-9884-e2c66bc40f65"
+			name="Einlesen_Version"
+			ref="bff5c3c8-d932-4c54-aeb5-aed63c3864e2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Programmversion"
+					datasourceid="bbe32579-2f65-40cc-a1cb-a8946d6b4291"
+					variableid="672b2326-6092-454b-8597-3f4ec574793c"
+					variablename="Programmversion">
 					</var>
 				</databinding>
 			</testmodule>
@@ -145,6 +409,65 @@
 			reportwriteinterval="30000ms"
 			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
+			<smartfoldernode
+			id="b02c2bd0-3db3-4113-8e1d-54b5f6fdf984"
+			name="Version_ab_530_(ALL_NOT_EQUAL_510_511_521)">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Programmversion"
+								id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="510">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Programmversion"
+								id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="511">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsNotEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Programmversion"
+								id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="521">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testcase
 			id="bbe32579-2f65-40cc-a1cb-a8946d6b4291"
 			name="S_ZLBD_Schnelltest"
@@ -159,6 +482,10 @@
 					value="S_ZLBD AUFRUFART ZAHLUNG">
 					</param>
 					<param
+					name="Programmversion"
+					value="">
+					</param>
+					<param
 					name="ZLBD_CD_NEU"
 					value="TST">
 					</param>
@@ -168,6 +495,48 @@
 					</param>
 				</parameters>
 			</testcase>
+			<smartfoldernode
+			id="cd7a1b82-90cb-4f9d-9f90-64aaf0ad2a84"
+			name="Version_510_511_(ANY_EQUAL_510_511)">
+				<conditiongroup
+				comparison="OR"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Programmversion"
+								id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="510">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Programmversion"
+								id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="511">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testcase
 			id="db767618-629d-42c5-9b12-b65606793ea6"
 			name="Verwalten_Zahlungsbedingungen_AUFRUFART_ZAHLUNG">
@@ -176,6 +545,20 @@
 			id="ecb24410-d757-4f04-bca5-bde46bdd562f"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="fcbfedbd-0f3d-4c0f-924d-547bba266527"
+			name="Loeschen_ZLBD_ALT_nicht_moeglich"
+			ref="0a53dde1-2c4d-4894-84cd-0430a0b530cb"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ZLBD_CD_ALT"
+					datasourceid="bbe32579-2f65-40cc-a1cb-a8946d6b4291"
+					variableid="ac705c15-230c-4066-97cc-b5185eb86f06"
+					variablename="ZLBD_CD_ALT">
+					</var>
+				</databinding>
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -196,9 +579,25 @@
 							</testmodule>
 						</setup>
 						<testmodule
-						id="01e54ce7-d8df-4bb1-9962-ab736ccaf6a2"
-						name="Neuanlage_ZLBD">
+						id="a3ca7e4b-1e43-4f60-9884-e2c66bc40f65"
+						name="Einlesen_Version">
 						</testmodule>
+						<smartfoldernode
+						id="cd7a1b82-90cb-4f9d-9f90-64aaf0ad2a84"
+						name="Version_510_511_(ANY_EQUAL_510_511)">
+							<testmodule
+							id="01e54ce7-d8df-4bb1-9962-ab736ccaf6a2"
+							name="Neuanlage_ZLBD_510_511">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="7f06f5f2-06bc-4441-8541-13dd9a47872c"
+						name="Version_ab_521_(ALL_NOT_EQUAL_510_511)">
+							<testmodule
+							id="0bd16697-41ed-41d5-acc2-f360a9009941"
+							name="Neuanlage_ZLBD">
+							</testmodule>
+						</smartfoldernode>
 						<testmodule
 						id="9b936862-dde5-4745-851e-c3a66328fd10"
 						name="Speichern_Pruefen_Neuanlage_ZLBD">
@@ -207,14 +606,38 @@
 						id="7d270b1d-5745-4bc5-8d56-b7072282e86d"
 						name="Aenderung_ZLBD_Speichern_Pruefen">
 						</testmodule>
-						<testmodule
-						id="7e9538aa-9df8-4e28-addd-0e2ad6e1372b"
-						name="Loeschen_ZLBD_NEU_pruefen">
-						</testmodule>
-						<testmodule
-						id="31840baf-af2a-4750-b72b-1c9ff41928c9"
-						name="Loeschen_ZLBD_ALT_nicht_moeglich">
-						</testmodule>
+						<smartfoldernode
+						id="4f3f696d-dfdb-427e-8f7d-5370d716bf0f"
+						name="Version_510_511_521_(ANY_EQUAL_510_511_521)">
+							<testmodule
+							id="7aadfa58-fac8-4886-8c3a-dec6ba83a114"
+							name="Loeschen_ZLBD_NEU_pruefen_510_511_521">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="336f9c29-3742-4ebd-8380-92799c8d8f0b"
+						name="Version_ab_530_(ALL_NOT_EQUAL_510_511_521)">
+							<testmodule
+							id="9a61d903-ae81-4ce8-ba3d-fd4a64db31e5"
+							name="Loeschen_Status_9_aendern_ZLBD_NEU_pruefen">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="92472d43-70d3-4557-8853-56843e3f0daa"
+						name="Version_510_511_521_(ANY_EQUAL_510_511_521)">
+							<testmodule
+							id="31840baf-af2a-4750-b72b-1c9ff41928c9"
+							name="Loeschen_ZLBD_ALT_nicht_moeglich_510_511_521">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="b02c2bd0-3db3-4113-8e1d-54b5f6fdf984"
+						name="Version_ab_530_(ALL_NOT_EQUAL_510_511_521)">
+							<testmodule
+							id="fcbfedbd-0f3d-4c0f-924d-547bba266527"
+							name="Loeschen_ZLBD_ALT_nicht_moeglich">
+							</testmodule>
+						</smartfoldernode>
 						<teardown
 						id="ecb24410-d757-4f04-bca5-bde46bdd562f"
 						name="teardown">
@@ -235,7 +658,25 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="336f9c29-3742-4ebd-8380-92799c8d8f0b">
+			</testcontainer>
+			<testcontainer
+			id="4f3f696d-dfdb-427e-8f7d-5370d716bf0f">
+			</testcontainer>
+			<testcontainer
+			id="7f06f5f2-06bc-4441-8541-13dd9a47872c">
+			</testcontainer>
+			<testcontainer
+			id="92472d43-70d3-4557-8853-56843e3f0daa">
+			</testcontainer>
+			<testcontainer
+			id="b02c2bd0-3db3-4113-8e1d-54b5f6fdf984">
+			</testcontainer>
+			<testcontainer
 			id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
+			</testcontainer>
+			<testcontainer
+			id="cd7a1b82-90cb-4f9d-9f90-64aaf0ad2a84">
 			</testcontainer>
 			<testcontainer
 			id="db767618-629d-42c5-9b12-b65606793ea6">

@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace S_ZLBD_Schnelltest.Recordings_ZAHLUNG
 {
-    public partial class Loeschen_ZLBD_NEU_pruefen
+    public partial class Loeschen_ZLBD_ALT_nicht_moeglich_510_511_521
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
