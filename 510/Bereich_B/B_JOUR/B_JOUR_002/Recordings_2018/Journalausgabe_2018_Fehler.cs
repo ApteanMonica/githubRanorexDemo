@@ -42,7 +42,7 @@ namespace B_JOUR_002.Recordings_2018
         public Journalausgabe_2018_Fehler()
         {
             GJ_2018 = "2018";
-            Pfad_Datei_2018 = "c:\\temp\\b_JOUR_001_journal_DE_vorlaeufig_2018.txt";
+            Pfad_File_DE_2018 = "c:\\temp\\b_JOUR_001_journal_DE_vorlaeufig_2018.txt";
         }
 
         /// <summary>
@@ -67,16 +67,16 @@ namespace B_JOUR_002.Recordings_2018
             set { _GJ_2018 = value; }
         }
 
-        string _Pfad_Datei_2018;
+        string _Pfad_File_DE_2018;
 
         /// <summary>
-        /// Gets or sets the value of variable Pfad_Datei_2018.
+        /// Gets or sets the value of variable Pfad_File_DE_2018.
         /// </summary>
         [TestVariable("676f3e83-e192-4ec8-8509-1b5491e69a8a")]
-        public string Pfad_Datei_2018
+        public string Pfad_File_DE_2018
         {
-            get { return _Pfad_Datei_2018; }
-            set { _Pfad_Datei_2018 = value; }
+            get { return _Pfad_File_DE_2018; }
+            set { _Pfad_File_DE_2018 = value; }
         }
 
 #endregion
@@ -135,8 +135,8 @@ namespace B_JOUR_002.Recordings_2018
             Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgDruckenDatei.Dateiname'", repo.DlgDruckenDatei.DateinameInfo, new ActionTimeout(180000), new RecordItemIndex(9));
             repo.DlgDruckenDatei.DateinameInfo.WaitForExists(180000);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Pfad_Datei_2018' with focus on 'DlgDruckenDatei.Dateiname'.", repo.DlgDruckenDatei.DateinameInfo, new RecordItemIndex(10));
-            repo.DlgDruckenDatei.Dateiname.PressKeys(Pfad_Datei_2018);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Pfad_File_DE_2018' with focus on 'DlgDruckenDatei.Dateiname'.", repo.DlgDruckenDatei.DateinameInfo, new RecordItemIndex(10));
+            repo.DlgDruckenDatei.Dateiname.PressKeys(Pfad_File_DE_2018);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDruckenDatei.PbOk' at Center.", repo.DlgDruckenDatei.PbOkInfo, new RecordItemIndex(11));
             repo.DlgDruckenDatei.PbOk.Click();

@@ -66,14 +66,14 @@ mode="Global">
 		optional="False"
 		searchpropertyid="7e52db81-d15a-4a0b-8d0c-1608994e4d82"
 		waitaction="Exists"
-		waittimeout="120000ms">
+		waittimeout="180000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
 			id="52fe05dd-48e1-4159-a889-ad31b52a972b"
-			sourcename="ItemRecorderEditor">
+			sourcename="RepositoryEditor">
 				<path>
 					/form[@controlname='frmKlAb']/titlebar[@accessiblerole='TitleBar']
 				</path>
@@ -92,7 +92,7 @@ mode="Global">
 			</bindings>
 			<info
 			id="52fe05dd-48e1-4159-a889-ad31b52a972b"
-			sourcename="ItemRecorderEditor">
+			sourcename="RepositoryEditor">
 				<path>
 					/form[@controlname='frmKlAb']/titlebar[@accessiblerole='TitleBar']
 				</path>
@@ -106,35 +106,6 @@ mode="Global">
 				Konto
 			</matchvalue>
 		</validationitem>
-		<userrecorditem
-		classname="SystemLibrary"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="GetDateTimeAsString"
-		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="ReturnVariable"
-				variable="Tagesdatum">
-				</binding>
-			</bindings>
-			<arguments
-			id="e2055f9f-eecb-4e77-99ca-76a4823b84af">
-				<argument
-				argname="expectedFormat"
-				id="8b4411dd-0636-4451-a409-d275e40ab921">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						dd.MM.yyyy
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
 	</recorditems>
 	<repository
 	id="7f318277-1c3f-4c44-ac42-283074f9ca9f"

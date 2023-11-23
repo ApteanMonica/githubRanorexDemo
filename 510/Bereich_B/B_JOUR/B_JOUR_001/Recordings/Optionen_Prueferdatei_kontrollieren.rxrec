@@ -47,8 +47,55 @@ mode="Global">
 				<path>
 					/form[@controlname='frmJournal']/?/?/container[@controlname='DruckenGroup']/button[@controlname='pbOptionen_Optionen']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="a6b1a528-3320-458f-a6fa-482d8de3ee7e"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7768649a-c557-424a-af06-b5cd9df8ce5d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgOptionen_par']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ee530fde-2d7d-4d7b-afd8-9e116573c5d7">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7768649a-c557-424a-af06-b5cd9df8ce5d"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgOptionen_par']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Optionen
+			</matchvalue>
+		</validationitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -65,6 +112,8 @@ mode="Global">
 				<path>
 					/form[@controlname='dlgOptionen_par']/?/?/radiobutton[@controlname='rbVariante2']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<matchname>
 				Checked
@@ -1948,6 +1997,8 @@ mode="Global">
 				<path>
 					/form[@controlname='dlgOptionen_par']/?/?/checkbox[@controlname='cbAtUser']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<matchname>
 				Checked
@@ -3831,6 +3882,8 @@ mode="Global">
 				<path>
 					/form[@controlname='dlgOptionen_par']/?/?/checkbox[@controlname='cbAtBuchungszeit']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<matchname>
 				Checked
@@ -3854,6 +3907,8 @@ mode="Global">
 				<path>
 					/form[@controlname='dlgOptionen_par']/?/?/checkbox[@controlname='cbBrdEB']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<matchname>
 				Checked
@@ -3877,6 +3932,8 @@ mode="Global">
 				<path>
 					/form[@controlname='dlgOptionen_par']/checkbox[@controlname='cbJournalBeleg']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<matchname>
 				Checked
@@ -3925,6 +3982,8 @@ mode="Global">
 				<path>
 					/form[@controlname='frmJournal']//tabpage[@controlname='tpJournaldruck']/text[@controlname='mlBRD_AT_Info']/text[@accessiblename='Druckbeginn mit Seite:']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 			<matchname>
 				Text
@@ -3996,6 +4055,8 @@ mode="Global">
 				<path>
 					/form[@controlname='dlgOptionen_par']/titlebar[@accessiblerole='TitleBar']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</keyitem>
 		<WaitForRecordItem
@@ -4014,6 +4075,8 @@ mode="Global">
 				<path>
 					/form[@controlname='frmJournal']//tabpage[@controlname='tpJournaldruck']/checkbox[@controlname='cbFinanz']
 				</path>
+				<robustPath>
+				</robustPath>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>

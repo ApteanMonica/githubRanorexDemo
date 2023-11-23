@@ -90,20 +90,26 @@ namespace B_JOUR_001.Recordings1b
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain_Geschaeftsjahr.FlexGrid.Zeile_mit_Inhalt_DollarGeschaeftsjahr' at Center.", repo.FrmMain_Geschaeftsjahr.FlexGrid.Zeile_mit_Inhalt_DollarGeschaeftsjahrInfo, new RecordItemIndex(0));
-            repo.FrmMain_Geschaeftsjahr.FlexGrid.Zeile_mit_Inhalt_DollarGeschaeftsjahr.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain_Geschaeftsjahr.FlexGrid.Column0_Zeile_Geschaeftsjahr' at Center.", repo.FrmMain_Geschaeftsjahr.FlexGrid.Column0_Zeile_GeschaeftsjahrInfo, new RecordItemIndex(0));
+            repo.FrmMain_Geschaeftsjahr.FlexGrid.Column0_Zeile_Geschaeftsjahr.Click();
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain_Geschaeftsjahr.PbCommonJournalzeilen' at Center.", repo.FrmMain_Geschaeftsjahr.PbCommonJournalzeilenInfo, new RecordItemIndex(1));
             repo.FrmMain_Geschaeftsjahr.PbCommonJournalzeilen.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Verwalten Journalzeilen - Jahr 2017') on item 'TblJournal.TitleBar100VerwaltenJournalzeilen'.", repo.TblJournal.TitleBar100VerwaltenJournalzeilenInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.TblJournal.TitleBar100VerwaltenJournalzeilenInfo, "Text", "Verwalten Journalzeilen - Jahr 2017");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblJournal_in_B_JAHR.TitleBar100VerwaltenJournalzeilen'", repo.TblJournal_in_B_JAHR.TitleBar100VerwaltenJournalzeilenInfo, new ActionTimeout(60000), new RecordItemIndex(2));
+            repo.TblJournal_in_B_JAHR.TitleBar100VerwaltenJournalzeilenInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='25') on item 'TblJournal.ColGjpbJourzlRow1'.", repo.TblJournal.ColGjpbJourzlRow1Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.TblJournal.ColGjpbJourzlRow1Info, "Text", "25");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Verwalten Journalzeilen - Jahr') on item 'TblJournal_in_B_JAHR.TitleBar100VerwaltenJournalzeilen'.", repo.TblJournal_in_B_JAHR.TitleBar100VerwaltenJournalzeilenInfo, new RecordItemIndex(3));
+            Validate.AttributeContains(repo.TblJournal_in_B_JAHR.TitleBar100VerwaltenJournalzeilenInfo, "Text", "Verwalten Journalzeilen - Jahr");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblJournal.Schliessen' at Center.", repo.TblJournal.SchliessenInfo, new RecordItemIndex(4));
-            repo.TblJournal.Schliessen.Click();
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Geschaeftsjahr) on item 'TblJournal_in_B_JAHR.TitleBar100VerwaltenJournalzeilen'.", repo.TblJournal_in_B_JAHR.TitleBar100VerwaltenJournalzeilenInfo, new RecordItemIndex(4));
+            Validate.AttributeContains(repo.TblJournal_in_B_JAHR.TitleBar100VerwaltenJournalzeilenInfo, "Text", Geschaeftsjahr);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='25') on item 'TblJournal_in_B_JAHR.ColGjpbJourzlRow1'.", repo.TblJournal_in_B_JAHR.ColGjpbJourzlRow1Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.TblJournal_in_B_JAHR.ColGjpbJourzlRow1Info, "Text", "25");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblJournal_in_B_JAHR.Schliessen' at Center.", repo.TblJournal_in_B_JAHR.SchliessenInfo, new RecordItemIndex(6));
+            repo.TblJournal_in_B_JAHR.Schliessen.Click();
             
         }
 

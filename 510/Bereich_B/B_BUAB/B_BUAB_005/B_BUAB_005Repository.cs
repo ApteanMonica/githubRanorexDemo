@@ -134,7 +134,6 @@ namespace B_BUAB_005
             RepoItemInfo _belegInfo;
             RepoItemInfo _pbdataaccessloadInfo;
             RepoItemInfo _pbextrasaendernInfo;
-            RepoItemInfo _colbelegnr_altInfo;
             RepoItemInfo _pbdataaccesssaveInfo;
 
             /// <summary>
@@ -148,7 +147,6 @@ namespace B_BUAB_005
                 _belegInfo = new RepoItemInfo(this, "Beleg", "container[@controlname='ToolBar']/container[@controlname='cDCC_Tools']/text[@controlname='dfBelegnr']/text[@accessiblename='Beleg']", "", 30000, null, "a13ba4fe-819d-4848-8ce5-6fabfcf0845f");
                 _pbdataaccessloadInfo = new RepoItemInfo(this, "PbDataAccessLoad", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']", "", 30000, null, "d44f799a-4954-497c-a832-f73ad6a76072");
                 _pbextrasaendernInfo = new RepoItemInfo(this, "PbExtrasAendern", "container[@controltypename='cRibbonBar']/container/button[@controlname='pbExtras_Aendern']", "", 30000, null, "1509af6e-4283-41f2-ba4f-537c30a13a83");
-                _colbelegnr_altInfo = new RepoItemInfo(this, "ColBelegnr_alt", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/*[@accessiblename~'colBelegnr' and @accessiblerole='Cell']", "", 30000, null, "4d935ef9-b8af-4d9d-8127-0bfcb6be1719");
                 _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbDataAccess_Save']", "", 30000, null, "04aa9e36-c463-43ac-a9f5-7ab5d15c0b7a");
             }
 
@@ -269,30 +267,6 @@ namespace B_BUAB_005
                 get
                 {
                     return _pbextrasaendernInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ColBelegnr_alt item.
-            /// </summary>
-            [RepositoryItem("4d935ef9-b8af-4d9d-8127-0bfcb6be1719")]
-            public virtual Ranorex.Unknown ColBelegnr_alt
-            {
-                get
-                {
-                    return _colbelegnr_altInfo.CreateAdapter<Ranorex.Unknown>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColBelegnr_alt item info.
-            /// </summary>
-            [RepositoryItemInfo("4d935ef9-b8af-4d9d-8127-0bfcb6be1719")]
-            public virtual RepoItemInfo ColBelegnr_altInfo
-            {
-                get
-                {
-                    return _colbelegnr_altInfo;
                 }
             }
 
@@ -769,9 +743,10 @@ namespace B_BUAB_005
         public partial class FrmKlAbAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _titlebar100kundenkontoInfo;
-            RepoItemInfo _dfsearchexpressionInfo;
+            RepoItemInfo _textsuchfeldInfo;
             RepoItemInfo _pbperformsimplesearchInfo;
             RepoItemInfo _pbopladenInfo;
+            RepoItemInfo _kontoInfo;
 
             /// <summary>
             /// Creates a new FrmKlAb  folder.
@@ -780,9 +755,10 @@ namespace B_BUAB_005
                     base("FrmKlAb", "/form[@controlname='frmKlAb']", parentFolder, 30000, null, true, "4c9d5a78-1503-4fb5-b378-a64b079ad740", "")
             {
                 _titlebar100kundenkontoInfo = new RepoItemInfo(this, "TitleBar100KundenKonto", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "52fe05dd-48e1-4159-a889-ad31b52a972b");
-                _dfsearchexpressionInfo = new RepoItemInfo(this, "DfSearchExpression", "?/?/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup1']/?/?/text[@controlname='dfSearchExpression']", "", 30000, null, "e3962776-67c5-4746-86aa-dc31dffdfff7");
-                _pbperformsimplesearchInfo = new RepoItemInfo(this, "PbPerformSimpleSearch", "?/?/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup1']/?/?/button[@controlname='pbPerformSimpleSearch']", "", 30000, null, "fb7c3510-ec2d-423c-a894-e8fb8c2c805e");
-                _pbopladenInfo = new RepoItemInfo(this, "PbOPLaden", "?/?/button[@controlname='pbOPLaden']", "", 30000, null, "b67592e3-655c-4f6c-a4fe-23669b88e4f3");
+                _textsuchfeldInfo = new RepoItemInfo(this, "TextSuchfeld", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/text[@controlname='dfSearchExpression']/text[@accessiblerole='Text']", "", 30000, null, "15b14dd3-daff-4250-bceb-5ec91143b404");
+                _pbperformsimplesearchInfo = new RepoItemInfo(this, "PbPerformSimpleSearch", "container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/button[@controlname='pbPerformSimpleSearch']", "", 30000, null, "fb7c3510-ec2d-423c-a894-e8fb8c2c805e");
+                _pbopladenInfo = new RepoItemInfo(this, "PbOPLaden", "container[@controlname='ClientArea']/button[@controlname='pbOPLaden']", "", 30000, null, "b67592e3-655c-4f6c-a4fe-23669b88e4f3");
+                _kontoInfo = new RepoItemInfo(this, "Konto", "container[@controlname='ClientArea']/text[@controlname='dfAdr_nr']/text[@accessiblename='Konto:']", "", 30000, null, "8db32807-ab99-4cd1-b67d-b219f826498c");
             }
 
             /// <summary>
@@ -834,26 +810,26 @@ namespace B_BUAB_005
             }
 
             /// <summary>
-            /// The DfSearchExpression item.
+            /// The TextSuchfeld item.
             /// </summary>
-            [RepositoryItem("e3962776-67c5-4746-86aa-dc31dffdfff7")]
-            public virtual Ranorex.Text DfSearchExpression
+            [RepositoryItem("15b14dd3-daff-4250-bceb-5ec91143b404")]
+            public virtual Ranorex.Text TextSuchfeld
             {
                 get
                 {
-                    return _dfsearchexpressionInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _textsuchfeldInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The DfSearchExpression item info.
+            /// The TextSuchfeld item info.
             /// </summary>
-            [RepositoryItemInfo("e3962776-67c5-4746-86aa-dc31dffdfff7")]
-            public virtual RepoItemInfo DfSearchExpressionInfo
+            [RepositoryItemInfo("15b14dd3-daff-4250-bceb-5ec91143b404")]
+            public virtual RepoItemInfo TextSuchfeldInfo
             {
                 get
                 {
-                    return _dfsearchexpressionInfo;
+                    return _textsuchfeldInfo;
                 }
             }
 
@@ -902,6 +878,30 @@ namespace B_BUAB_005
                 get
                 {
                     return _pbopladenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Konto item.
+            /// </summary>
+            [RepositoryItem("8db32807-ab99-4cd1-b67d-b219f826498c")]
+            public virtual Ranorex.Text Konto
+            {
+                get
+                {
+                    return _kontoInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Konto item info.
+            /// </summary>
+            [RepositoryItemInfo("8db32807-ab99-4cd1-b67d-b219f826498c")]
+            public virtual RepoItemInfo KontoInfo
+            {
+                get
+                {
+                    return _kontoInfo;
                 }
             }
         }

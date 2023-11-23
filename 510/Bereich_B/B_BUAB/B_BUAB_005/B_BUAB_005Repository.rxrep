@@ -62,16 +62,6 @@ name="B_BUAB_005Repository">
 				/form[@controlname='tblB']/container[@controltypename='cRibbonBar']/container/button[@controlname='pbExtras_Aendern']
 			</item>
 			<item
-			addcaps="cell,accessible"
-			capname="unknown"
-			id="4d935ef9-b8af-4d9d-8127-0bfcb6be1719"
-			name="ColBelegnr_alt"
-			refimgid="42bd877d-3a29-4f58-945d-4d2092cecb0d"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/*[@accessiblename~'colBelegnr' and @accessiblerole='Cell']
-			</item>
-			<item
 			addcaps="button,control,nativewindow"
 			capname="button"
 			id="04aa9e36-c463-43ac-a9f5-7ab5d15c0b7a"
@@ -335,15 +325,15 @@ iQGlGgC6HTBAdPsLgewbF6W61N1ckdcAAAAASUVORK5CYII=
 				/form[@controlname='frmKlAb']/titlebar[@accessiblerole='TitleBar']
 			</item>
 			<item
-			addcaps="text,control,nativewindow"
+			addcaps="text,accessible"
 			capname="text"
-			id="e3962776-67c5-4746-86aa-dc31dffdfff7"
-			name="DfSearchExpression"
-			refimgid="5d4befd6-4b51-475d-9b7a-8cf7c4858090"
-			refpath="/form[@controlname='frmKlAb']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/text[@controlname='dfSearchExpression']"
+			id="15b14dd3-daff-4250-bceb-5ec91143b404"
+			name="TextSuchfeld"
+			refimgid="43629e00-eadf-416c-8f18-d8bc93912eb0"
+			refpath="/form[@controlname='frmKlAb']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/text[@controlname='dfSearchExpression']/text[@accessiblerole='Text']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='frmKlAb']/?/?/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup1']/?/?/text[@controlname='dfSearchExpression']
+				/form[@controlname='frmKlAb']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/text[@controlname='dfSearchExpression']/text[@accessiblerole='Text']
 			</item>
 			<item
 			addcaps="button,control,nativewindow"
@@ -351,10 +341,9 @@ iQGlGgC6HTBAdPsLgewbF6W61N1ckdcAAAAASUVORK5CYII=
 			id="fb7c3510-ec2d-423c-a894-e8fb8c2c805e"
 			name="PbPerformSimpleSearch"
 			refimgid="3c038813-65d8-4159-8a1d-27406277df2f"
-			refpath="/form[@controlname='frmKlAb']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/button[@controlname='pbPerformSimpleSearch']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='frmKlAb']/?/?/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup1']/?/?/button[@controlname='pbPerformSimpleSearch']
+				/form[@controlname='frmKlAb']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/button[@controlname='pbPerformSimpleSearch']
 			</item>
 			<item
 			addcaps="button,control,nativewindow"
@@ -362,10 +351,20 @@ iQGlGgC6HTBAdPsLgewbF6W61N1ckdcAAAAASUVORK5CYII=
 			id="b67592e3-655c-4f6c-a4fe-23669b88e4f3"
 			name="PbOPLaden"
 			refimgid="74b889ed-04cc-457c-b2a5-e03bb369d023"
-			refpath="/form[@controlname='frmKlAb']/container[@controlname='ClientArea']/button[@controlname='pbOPLaden']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='frmKlAb']/?/?/button[@controlname='pbOPLaden']
+				/form[@controlname='frmKlAb']/container[@controlname='ClientArea']/button[@controlname='pbOPLaden']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="8db32807-ab99-4cd1-b67d-b219f826498c"
+			name="Konto"
+			refimgid="7e4d6a29-b8f9-4d17-931d-0111f84e5f86"
+			refpath="/form[@controlname='frmKlAb']/container[@controlname='ClientArea']/text[@controlname='dfAdr_nr']/text[@accessiblename='Konto:']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmKlAb']/container[@controlname='ClientArea']/text[@controlname='dfAdr_nr']/text[@accessiblename='Konto:']
 			</item>
 			<basepath>
 				/form[@controlname='frmKlAb']
