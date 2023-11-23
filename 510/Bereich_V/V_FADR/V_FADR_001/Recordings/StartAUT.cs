@@ -122,10 +122,14 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'TblFadr.TitleBar100Fakturierung'", repo.TblFadr.TitleBar100FakturierungInfo, new ActionTimeout(300000), new RecordItemIndex(1));
             repo.TblFadr.TitleBar100FakturierungInfo.WaitForExists(300000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Fakturierung') on item 'TblFadr.TitleBar100Fakturierung'.", repo.TblFadr.TitleBar100FakturierungInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.TblFadr.TitleBar100FakturierungInfo, "Text", "Fakturierung");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'TblFadr.TitleBar100Fakturierung_mit_Text_Fakturierung'", repo.TblFadr.TitleBar100Fakturierung_mit_Text_FakturierungInfo, new ActionTimeout(180000), new RecordItemIndex(2));
+            repo.TblFadr.TitleBar100Fakturierung_mit_Text_FakturierungInfo.WaitForExists(180000);
             
-            Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("dd.MM.yyyy");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to not exist. Associated repository item: 'TblFadr.TitleBar100Fakturierung_mit_Text_keine_Rueckmeldung'", repo.TblFadr.TitleBar100Fakturierung_mit_Text_keine_RueckmeldungInfo, new ActionTimeout(120000), new RecordItemIndex(3));
+            repo.TblFadr.TitleBar100Fakturierung_mit_Text_keine_RueckmeldungInfo.WaitForNotExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Fakturierung') on item 'TblFadr.TitleBar100Fakturierung'.", repo.TblFadr.TitleBar100FakturierungInfo, new RecordItemIndex(4));
+            Validate.AttributeContains(repo.TblFadr.TitleBar100FakturierungInfo, "Text", "Fakturierung");
             
         }
 

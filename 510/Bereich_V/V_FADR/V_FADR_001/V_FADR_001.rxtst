@@ -113,12 +113,21 @@
 			name="Lieferschein_laden_2_NEU"
 			ref="85795494-2f2a-4567-8a4e-6d61140c106e"
 			type="Recording">
+				<description>
+					<![CDATA[setvalue Continue on fail; Search Timeout RA + LS-Datum + SomeText erhöht (search time 1min bzw 1,5min = ges 2min bzw 2,5min)]]>
+				</description>
 				<databinding>
 					<var
 					dataname="Tagesdatum"
 					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
 					variableid="dd1d7e59-98b1-40a3-93ab-af76e0dab231"
 					variablename="Tagesdatum">
+					</var>
+					<var
+					dataname="Datum_leer"
+					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
+					variableid="7d396683-d174-4dd8-9695-68530d88e72d"
+					variablename="Datum_leer">
 					</var>
 				</databinding>
 			</testmodule>

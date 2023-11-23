@@ -81,6 +81,46 @@ mode="Desktop">
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="b7cecbd7-8d7d-4bb9-b361-4e6cfa39cab6"
+		waitaction="Exists"
+		waittimeout="180000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="55640ae3-8e17-442f-b7cb-f2b08bf7a0b8"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controltypename='tblFadr']/titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'Fakturierung']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="b7cecbd7-8d7d-4bb9-b361-4e6cfa39cab6"
+		waitaction="NotExists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="020c2a9b-95e0-4fe2-85d1-cc6ece360df4"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controltypename='tblFadr']/titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'keine Rückmeldung']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
@@ -106,35 +146,6 @@ mode="Desktop">
 				Fakturierung
 			</matchvalue>
 		</validationitem>
-		<userrecorditem
-		classname="SystemLibrary"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="GetDateTimeAsString"
-		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="ReturnVariable"
-				variable="Tagesdatum">
-				</binding>
-			</bindings>
-			<arguments
-			id="9e3e5131-7301-4e28-80a7-5f534ae2fc1a">
-				<argument
-				argname="expectedFormat"
-				id="917f490b-57ca-4e61-995f-7d417ecb7d16">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						dd.MM.yyyy
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
 	</recorditems>
 	<repository
 	id="3573c847-c05b-404b-9198-403c8695bf74"

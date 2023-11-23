@@ -27,8 +27,63 @@ mode="Global">
 		id="dd1d7e59-98b1-40a3-93ab-af76e0dab231"
 		name="Tagesdatum">
 		</var>
+		<var
+		id="7d396683-d174-4dd8-9695-68530d88e72d"
+		name="Datum_leer">
+		</var>
 	</variables>
 	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="f5abfae7-ea39-45e8-acc2-9ba88a517ca1"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="55640ae3-8e17-442f-b7cb-f2b08bf7a0b8"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controltypename='tblFadr']/titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'Fakturierung']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="False"
+		optional="False"
+		searchpropertyid="e8c6b71f-ffe2-4228-a122-19d8806eabba">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="55640ae3-8e17-442f-b7cb-f2b08bf7a0b8"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controltypename='tblFadr']/titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'Fakturierung']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				HasFocus
+			</matchname>
+			<matchvalue>
+				True
+			</matchvalue>
+		</validationitem>
 		<userrecorditem
 		classname="SystemLibrary"
 		enabled="True"
@@ -132,6 +187,7 @@ mode="Global">
 		sy="0"
 		warnoutofbounds="False">
 			<comment>
+				search timeout erhöht
 			</comment>
 			<bindings>
 			</bindings>
@@ -146,7 +202,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="5000ms"
+		duration="7000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -170,6 +226,91 @@ mode="Global">
 		<keyitem
 		action="Press"
 		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="e55a2a15-61bf-4e74-b144-ddb9d8c95a09"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<explicitdelayitem
+		duration="7000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="d5632f44-67a8-4125-aa77-d8c59119af55">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<setvaluerecorditem
+		attrname="ControlText"
+		enabled="True"
+		optional="True"
+		searchpropertyid="878f156d-3678-43ad-b026-1a2a19585a41">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="AttributeValue"
+				variable="Datum_leer">
+				</binding>
+			</bindings>
+			<info
+			id="f4c5e98a-9a2b-4c4d-a5b1-d1f825e01007"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/text[@text~$Tagesdatum]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<AttributeValue>
+				yourValue
+			</AttributeValue>
+		</setvaluerecorditem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="d5632f44-67a8-4125-aa77-d8c59119af55">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keyitem
+		action="Press"
+		data="Back"
 		duration="20ms"
 		enabled="True"
 		optional="False"
@@ -386,7 +527,7 @@ mode="Global">
 			</info>
 		</mouseitem>
 		<explicitdelayitem
-		duration="5000ms"
+		duration="7000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -479,7 +620,7 @@ mode="Global">
 			</bindings>
 		</keyitem>
 		<explicitdelayitem
-		duration="5000ms"
+		duration="7000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -503,7 +644,7 @@ mode="Global">
 			</bindings>
 		</keyitem>
 		<explicitdelayitem
-		duration="5000ms"
+		duration="7000ms"
 		enabled="True"
 		optional="False">
 			<comment>

@@ -31,6 +31,26 @@ name="V_FADR_001Repository">
 				/form[@controltypename='tblFadr']/titlebar[@accessiblerole='TitleBar']
 			</item>
 			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="55640ae3-8e17-442f-b7cb-f2b08bf7a0b8"
+			name="TitleBar100Fakturierung_mit_Text_Fakturierung"
+			refimgid="77847a7c-f311-4a15-8af0-04faeaa4b2cb"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controltypename='tblFadr']/titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'Fakturierung']
+			</item>
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="020c2a9b-95e0-4fe2-85d1-cc6ece360df4"
+			name="TitleBar100Fakturierung_mit_Text_keine_Rueckmeldung"
+			refimgid="77847a7c-f311-4a15-8af0-04faeaa4b2cb"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controltypename='tblFadr']/titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'keine Rückmeldung']
+			</item>
+			<item
 			addcaps="button,control,nativewindow"
 			capname="button"
 			id="077cad46-e897-4023-a1f5-c62d755b4df6"
@@ -114,12 +134,22 @@ name="V_FADR_001Repository">
 			<item
 			addcaps="text,control,nativewindow"
 			capname="text"
-			id="1e5d8938-78ec-411c-919e-5a56435de54f"
-			name="SomeText"
-			refimgid="e878b3f7-c1aa-464e-957b-c606c03c38c0"
+			id="5906834d-962d-45fd-b150-90e08fb12538"
+			name="SomeText_windowtext_Tagesdatum"
+			refimgid="b51c2974-7550-4867-a420-7dfce4e02c94"
 			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/text[@controltypename='']
+			searchtimeout="90000ms">
+				/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/text[@windowtext=$Tagesdatum]
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="f4c5e98a-9a2b-4c4d-a5b1-d1f825e01007"
+			name="SomeText_text_Tagesdatum"
+			refimgid="b51c2974-7550-4867-a420-7dfce4e02c94"
+			robustPath=""
+			searchtimeout="90000ms">
+				/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/text[@text~$Tagesdatum]
 			</item>
 			<folder
 			capname="table"
@@ -129,33 +159,13 @@ name="V_FADR_001Repository">
 			searchtimeout="30000ms"
 			usecache="False">
 				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="ac72b79d-6f25-4c16-a7c0-a5e86c9f47f5"
-				name="Row1Column0"
-				refimgid="4bd00be9-6ee3-4732-a5cc-b4b977e71039"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="row"
-				id="de0d0672-6a95-40bf-82d3-241ece2dc3e0"
-				name="Row1"
-				refimgid="4bd00be9-6ee3-4732-a5cc-b4b977e71039"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
-				</item>
-				<item
 				addcaps="text,control,nativewindow"
 				capname="cell"
 				id="66aa28fa-e465-4f91-aa65-97b931a960d6"
 				name="colRechartRow1"
 				refimgid="8915730a-1b5a-4326-ad78-d4bc0baf0e63"
 				robustPath=""
-				searchtimeout="30000ms">
+				searchtimeout="90000ms">
 					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colRech_art Row 1']
 				</item>
 				<item
@@ -165,28 +175,8 @@ name="V_FADR_001Repository">
 				name="colRechartRow2"
 				refimgid="8915730a-1b5a-4326-ad78-d4bc0baf0e63"
 				robustPath=""
-				searchtimeout="30000ms">
+				searchtimeout="90000ms">
 					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colRech_art Row 2']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="8b36b866-61e3-4994-be4c-d576fc872794"
-				name="ColReaBezRow1"
-				refimgid="f3784f91-eef1-4cbb-bda5-f8ec6e8ec633"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colRea_bez Row 1']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="8aa6d5db-9129-4d4a-b2d6-0fbc25b954f8"
-				name="ColReaBezRow2"
-				refimgid="20c5b840-8210-4a02-b6c5-bad87c755453"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colRea_bez Row 2']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -195,7 +185,7 @@ name="V_FADR_001Repository">
 				name="ColLskDatumRow1"
 				refimgid="127c4dcd-8244-4e20-a5dd-2192f4a217ec"
 				robustPath=""
-				searchtimeout="30000ms">
+				searchtimeout="60000ms">
 					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1']
 				</item>
 				<item
@@ -205,7 +195,7 @@ name="V_FADR_001Repository">
 				name="ColLskDatumRow2"
 				refimgid="b8c1b522-c24c-4eac-aedd-861a216acd9a"
 				robustPath=""
-				searchtimeout="30000ms">
+				searchtimeout="60000ms">
 					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colLsk_datum Row 2']
 				</item>
 				<item
@@ -278,26 +268,6 @@ name="V_FADR_001Repository">
 				robustPath=""
 				searchtimeout="30000ms">
 					/form[@controltypename='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colRech_nr Row 1']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="row"
-				id="8d6cec8d-92c4-449d-8e8a-de02b81f5c51"
-				name="row1"
-				refimgid="1acc743d-178f-4911-8a7e-19fc96ce99c5"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']
-				</item>
-				<item
-				addcaps="cell,accessible"
-				capname="cell"
-				id="b2effbf4-30c9-4d8c-888a-2356dca7d621"
-				name="ColAufkAdrKundeRow_mit_Kunde_200002"
-				refimgid="6e8987c8-1146-45b0-8afd-45130afc690b"
-				robustPath=""
-				searchtimeout="30000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colAufk_adr_kunde Row 1' and @text='200002']
 				</item>
 				<basepath>
 					/form[@controltypename='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
@@ -557,10 +527,19 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			id="1a5c6b7e-9b5d-4487-9fa3-fcee73b5f7da"
 			name="PbVorschau"
 			refimgid="53ff8014-442e-4c78-ab48-5b8028c57eff"
-			refpath="/form[@controlname='dlgDrucken']/button[@controlname='pbVorschau']"
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='dlgDrucken']/button[@controlname='pbVorschau']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="3b23a421-204c-4f16-934b-08914402fd95"
+			name="PbVorschau_enabled"
+			refimgid="53ff8014-442e-4c78-ab48-5b8028c57eff"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgDrucken']/button[@controlname='pbVorschau' and @enabled='True']
 			</item>
 			<item
 			addcaps="button,accessible"
@@ -614,16 +593,6 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 				/form[@title='Vorschau']/titlebar[@automationid='TitleBar']
 			</item>
 			<item
-			addcaps="unknown,nativewindow"
-			capname="unknown"
-			id="63f44605-e2ae-4583-9588-c694a1941c6b"
-			name="ChkPPreviewClientArea25"
-			refimgid="2917e844-2759-4497-8964-29de75403470"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@title='Vorschau']/?/element[@class='ChkPPreviewClientArea25']
-			</item>
-			<item
 			addcaps="button,accessible"
 			capname="button"
 			id="be33fb13-a19b-43ef-9524-94b0a485c5d6"
@@ -633,27 +602,6 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@title='Vorschau']/element[3]/element[@class='UIRibbonCommandBar']/element[@class='UIRibbonWorkPane']/element[@class='NUIPane']/container[@class='NetUIHWND']/container[@accessiblename='Unteres Menüband']/container[@accessiblename='']/container[@accessiblename='Vorschau']/toolbar[@accessiblename='']/button[@accessiblename='Druckvorschau schließen']
-			</item>
-			<item
-			addcaps="unknown,nativewindow"
-			capname="unknown"
-			id="c6bf6fbd-a75d-4b48-a931-4defafeacac8"
-			name="ChkPPreviewClientArea27_511"
-			refimgid="323c9921-b623-4a76-9b0b-46fb6fee67e3"
-			refpath="/form[@title='Vorschau']/element[@controlid='1']/element[@class='ChkPPreviewClientArea27']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@title='Vorschau']/element[@controlid='1']/element[@class='ChkPPreviewClientArea27']
-			</item>
-			<item
-			addcaps="unknown,nativewindow"
-			capname="unknown"
-			id="f644a85f-89a2-44f8-a340-786685bff16f"
-			name="ChkPPreviewClientArea_inhalt_Vorschau_521_511_510"
-			refimgid="323c9921-b623-4a76-9b0b-46fb6fee67e3"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@title='Vorschau']/?/element[@class~'ChkPPreviewClientArea2']
 			</item>
 			<basepath>
 				/form[@title='Vorschau']
@@ -855,46 +803,6 @@ DsQBlSsOGwAAAPlJREFUOE+l0r1rwkAABfD8Y0J3CaVrJ2fNpoufiNHFFrK5OWcwpJOgi4goGBGU
 M78/U+y239h7DsajNrqdBgZWiyLPm7UTLNiuZwz5kBxZlqlrXqko0LQSbHvis1EslmjOFvwvIOdv
 QdSnwXVX1MdnOSgYWk32EnGrwDASyOdfEA6HoCjvyGQjNGcLjvsFRQqu8wlvM/fvYQnTVBGPv/oF
 b0gm01DVQnAHZAHvdu/FFjyK+3eJ4IYiuKEIbng/SBe1JRbLNoYtcwAAAABJRU5ErkJggg==
-			</icon>
-		</appfolder>
-		<appfolder
-		addcaps="host,nativewindow"
-		capname="host"
-		id="7de645ae-f322-4b11-bf13-2d07e4093127"
-		isrooted="True"
-		name="WSPET"
-		refimgid="95e7af77-8823-4ba4-9c77-55ba988abed1"
-		refpath=""
-		searchtimeout="30000ms"
-		usecache="True">
-			<item
-			addcaps="host,nativewindow"
-			capname="host"
-			id="27276b87-72de-48a2-9c53-1f113614590c"
-			name="WSPET"
-			refimgid="863201a7-d0ec-4281-8f56-9f61f7bcfb2d"
-			refpath=""
-			robustPath=""
-			searchtimeout="30000ms">
-			</item>
-			<basepath>
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
-dC5ORVQgdjMuMzE3g3eGAAACtUlEQVQ4T62S6zOUYRiH9w/qYzM1o5moMUyNShmHpISUNhIrHRxW
-DjmXpcah2Ky1TcsSa5ZQ0u62csxxMI4p6URGWFlXz6rGNPu1e+b98sx7Xc/v996v5L/N4OgcPYPT
-WPomaH8zSotpGENbP3UtvVQbutDUWVDVmCjVtlOsaeMPtjNd/VNcfwwyNVwuh4ulEFoMQfchQGHj
-5B0rPlkreN1eRKFsdBQYO8eIroAHz6GgCbLqQa6DqxoIV0JIoV20iU/mCndKDY6CFuMQ4WWgEHCG
-gBOrIKYSpOIsWMCn8n7inbHM0VvzZBfXOwr0rX2cL4H0OkjQQrSoIhU1zooK/nc38MpY4oj8Pe6x
-o6QXPnUUVBk6t1+OewJRKgh78Bu2d7f39kh8h/vVEVwiOki9p3MUqGvN2x2viA94QcCBBeCXu86J
-tG94xM/iFjOES7iFfeeaSVJoHQVlYj2+OWuEihpn8rfwzV7leOoXDsdN4yobwFlqxinkGXtP15KQ
-+9hRUFT5HK/07wTk2/DJ/oFn8mcO3ZzENfqtgI04BTeyJ0DHbj8NN7IqHAUKZRNzn6xMza8zPrfG
-yMwqA5M/6B1bobXzI7UvJijWWgjtCkWWpvxXkJLz8KBG/3pTqXtJYWWz2HM9afe0xOeokKWUII0v
-IEiWjd+lFI4Fx+HmL9u8lFAU+QeXSDQNFv7Opm2LNauNpZWfzH+1MikS2dN0iySmwWVae5aoaZvl
-gHfkTgp1nXkbjjXFsm7d4oNhFwuLG8wsWGl8NUjFU6NIped6porYDBUlugH2n4jYEZTXGrGJm6sG
-9AxPLDA7VE579zRNpnFqWkdQN/RTUt2NQt1BziMzmWVG9nlKdwRFmma5eMhT6sVfVo38biXX0suI
-TCok7EYegVGZ+EqTt/u7+8fg7BVhF8glEonkF6m1M1/+IilrAAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
 		<basepath>
