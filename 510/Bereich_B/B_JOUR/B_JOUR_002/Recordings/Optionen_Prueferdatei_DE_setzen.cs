@@ -85,38 +85,44 @@ namespace B_JOUR_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmJournal.PbOptionenOptionen' at Center.", repo.FrmJournal.PbOptionenOptionenInfo, new RecordItemIndex(1));
             repo.FrmJournal.PbOptionenOptionen.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgOptionenPar.CbBrdGkto'.", repo.DlgOptionenPar.CbBrdGktoInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgOptionenPar.TitleBar100Optionen'", repo.DlgOptionenPar.TitleBar100OptionenInfo, new ActionTimeout(120000), new RecordItemIndex(2));
+            repo.DlgOptionenPar.TitleBar100OptionenInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Optionen') on item 'DlgOptionenPar.TitleBar100Optionen'.", repo.DlgOptionenPar.TitleBar100OptionenInfo, new RecordItemIndex(3));
+            Validate.AttributeContains(repo.DlgOptionenPar.TitleBar100OptionenInfo, "Text", "Optionen");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgOptionenPar.CbBrdGkto'.", repo.DlgOptionenPar.CbBrdGktoInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.DlgOptionenPar.CbBrdGktoInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgOptionenPar.CbBrdEB'.", repo.DlgOptionenPar.CbBrdEBInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgOptionenPar.CbBrdEB'.", repo.DlgOptionenPar.CbBrdEBInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.DlgOptionenPar.CbBrdEBInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgOptionenPar.RbVariante2'.", repo.DlgOptionenPar.RbVariante2Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'DlgOptionenPar.RbVariante2'.", repo.DlgOptionenPar.RbVariante2Info, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.DlgOptionenPar.RbVariante2Info, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgOptionenPar.TitleBar100Optionen'.", repo.DlgOptionenPar.TitleBar100OptionenInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgOptionenPar.TitleBar100Optionen'.", repo.DlgOptionenPar.TitleBar100OptionenInfo, new RecordItemIndex(7));
             Keyboard.PrepareFocus(repo.DlgOptionenPar.TitleBar100Optionen);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmJournal.TpJournaldruck1.CbEndgueltig'", repo.FrmJournal.TpJournaldruck1.CbEndgueltigInfo, new ActionTimeout(120000), new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmJournal.TpJournaldruck1.CbEndgueltig'", repo.FrmJournal.TpJournaldruck1.CbEndgueltigInfo, new ActionTimeout(120000), new RecordItemIndex(8));
             repo.FrmJournal.TpJournaldruck1.CbEndgueltigInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmJournal.TpJournaldruck1.CbEndgueltig'.", repo.FrmJournal.TpJournaldruck1.CbEndgueltigInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmJournal.TpJournaldruck1.CbEndgueltig'.", repo.FrmJournal.TpJournaldruck1.CbEndgueltigInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.FrmJournal.TpJournaldruck1.CbEndgueltigInfo, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmJournal.TpJournaldruck1.CbWiederholung'.", repo.FrmJournal.TpJournaldruck1.CbWiederholungInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'FrmJournal.TpJournaldruck1.CbWiederholung'.", repo.FrmJournal.TpJournaldruck1.CbWiederholungInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.FrmJournal.TpJournaldruck1.CbWiederholungInfo, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmJournal.TpJournaldruck1.CbFinanzMitXML'.", repo.FrmJournal.TpJournaldruck1.CbFinanzMitXMLInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmJournal.TpJournaldruck1.CbFinanzMitXML'.", repo.FrmJournal.TpJournaldruck1.CbFinanzMitXMLInfo, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.FrmJournal.TpJournaldruck1.CbFinanzMitXMLInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmJournal.TpJournaldruck1.CbKtobez'.", repo.FrmJournal.TpJournaldruck1.CbKtobezInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmJournal.TpJournaldruck1.CbKtobez'.", repo.FrmJournal.TpJournaldruck1.CbKtobezInfo, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.FrmJournal.TpJournaldruck1.CbKtobezInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmJournal.TpJournaldruck1.CbKLName'.", repo.FrmJournal.TpJournaldruck1.CbKLNameInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmJournal.TpJournaldruck1.CbKLName'.", repo.FrmJournal.TpJournaldruck1.CbKLNameInfo, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.FrmJournal.TpJournaldruck1.CbKLNameInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Optionseinstellung zur Prüferdatei DE\r\n\r\n\t- Inkl. Gegenkonto\r\n\t- Mit EB-Buchungen\r\n\t- Ohne Benutzerausgabe\r\n\t- Ohne Buchungszeit\r\n\r\nHinweis zur beiliegenden Beschreibungsdatei INDEX.XML:\r\n\r\nDiese Datei hat einen eindeutigen Namen und gilt nur für die erstellte Prüferdatei.\r\nSollten weitere Prüferdateien in das gleiche Verzeichnis ausgegeben werden,\r\ndann bitte die vorhandene Prüferdatei inkl. der Beschreibungsdatei (INDEX.XML)\r\nin ein eingenes Verzeichnis wegsichern, da die Beschreibungsdatei wieder mit gleichem Namen überschrieben wird!\r\n') on item 'FrmJournal.TpJournaldruck1.Element_510_oder_521_DruckbeginnMitSeite_ODER_TxtMulti'.", repo.FrmJournal.TpJournaldruck1.Element_510_oder_521_DruckbeginnMitSeite_ODER_TxtMultiInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Optionseinstellung zur Prüferdatei DE\r\n\r\n\t- Inkl. Gegenkonto\r\n\t- Mit EB-Buchungen\r\n\t- Ohne Benutzerausgabe\r\n\t- Ohne Buchungszeit\r\n\r\nHinweis zur beiliegenden Beschreibungsdatei INDEX.XML:\r\n\r\nDiese Datei hat einen eindeutigen Namen und gilt nur für die erstellte Prüferdatei.\r\nSollten weitere Prüferdateien in das gleiche Verzeichnis ausgegeben werden,\r\ndann bitte die vorhandene Prüferdatei inkl. der Beschreibungsdatei (INDEX.XML)\r\nin ein eingenes Verzeichnis wegsichern, da die Beschreibungsdatei wieder mit gleichem Namen überschrieben wird!\r\n') on item 'FrmJournal.TpJournaldruck1.Element_510_oder_521_DruckbeginnMitSeite_ODER_TxtMulti'.", repo.FrmJournal.TpJournaldruck1.Element_510_oder_521_DruckbeginnMitSeite_ODER_TxtMultiInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.FrmJournal.TpJournaldruck1.Element_510_oder_521_DruckbeginnMitSeite_ODER_TxtMultiInfo, "Text", "Optionseinstellung zur Prüferdatei DE\r\n\r\n\t- Inkl. Gegenkonto\r\n\t- Mit EB-Buchungen\r\n\t- Ohne Benutzerausgabe\r\n\t- Ohne Buchungszeit\r\n\r\nHinweis zur beiliegenden Beschreibungsdatei INDEX.XML:\r\n\r\nDiese Datei hat einen eindeutigen Namen und gilt nur für die erstellte Prüferdatei.\r\nSollten weitere Prüferdateien in das gleiche Verzeichnis ausgegeben werden,\r\ndann bitte die vorhandene Prüferdatei inkl. der Beschreibungsdatei (INDEX.XML)\r\nin ein eingenes Verzeichnis wegsichern, da die Beschreibungsdatei wieder mit gleichem Namen überschrieben wird!\r\n");
             
         }

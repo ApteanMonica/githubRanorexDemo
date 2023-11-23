@@ -132,58 +132,6 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 		<appfolder
 		addcaps="form,control,nativewindow"
 		capname="form"
-		id="469a70d2-d1e5-4ca1-b6ff-e6a8a8bf131b"
-		isrooted="True"
-		name="TblJournal"
-		refpath="/form[@controlname='tblJournal']"
-		searchtimeout="30000ms"
-		usecache="True">
-			<item
-			addcaps="cell,accessible"
-			capname="cell"
-			id="836d644a-4dbd-4bf8-88c7-d8a65488e6f0"
-			name="ColGjpbJourzlRow1"
-			refimgid="ea2f5295-d6e7-498d-9ee9-9e0a36059948"
-			refpath="/form[@controlname='tblJournal']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colGjpb_jourzl Row 1']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblJournal']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colGjpb_jourzl Row 1']
-			</item>
-			<item
-			addcaps="button,accessible"
-			capname="button"
-			id="7daf4de8-50c4-471f-8155-694aeef53f18"
-			name="Schliessen"
-			refimgid="74db7cc8-6d00-456a-896e-3a0ec6311040"
-			refpath="/form[@controlname='tblJournal']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblJournal']/?/?/button[@accessiblename='Schließen']
-			</item>
-			<item
-			addcaps="titlebar,accessible"
-			capname="titlebar"
-			id="b68e89bb-67dd-4b86-839c-a704703af1a1"
-			name="TitleBar100VerwaltenJournalzeilen"
-			refimgid="7f86fb5b-d93a-4785-a89e-e3f77aa7cd67"
-			refpath="/form[@controlname='tblJournal']/titlebar[@accessiblerole='TitleBar']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblJournal']/titlebar[@accessiblerole='TitleBar']
-			</item>
-			<basepath>
-				/form[@controlname='tblJournal']
-			</basepath>
-			<icon>
-				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
-YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
-nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
-			</icon>
-		</appfolder>
-		<appfolder
-		addcaps="form,control,nativewindow"
-		capname="form"
 		id="8f31eac6-7683-4922-857f-31e00ecc606a"
 		isrooted="True"
 		name="DlgMessageBox"
@@ -240,6 +188,17 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 		refpath="/form[@controlname='dlgOptionen_par']"
 		searchtimeout="30000ms"
 		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="7768649a-c557-424a-af06-b5cd9df8ce5d"
+			name="TitleBar100Optionen"
+			refimgid="36c7288f-ae51-4c95-8767-3c003c4f828f"
+			refpath="/form[@controlname='dlgOptionen_par']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgOptionen_par']/titlebar[@accessiblerole='TitleBar']
+			</item>
 			<item
 			addcaps="checkbox,control,nativewindow"
 			capname="checkbox"
@@ -303,17 +262,6 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='dlgOptionen_par']/checkbox[@controlname='cbJournalBeleg']
-			</item>
-			<item
-			addcaps="titlebar,accessible"
-			capname="titlebar"
-			id="7768649a-c557-424a-af06-b5cd9df8ce5d"
-			name="TitleBar100Optionen"
-			refimgid="36c7288f-ae51-4c95-8767-3c003c4f828f"
-			refpath="/form[@controlname='dlgOptionen_par']/titlebar[@accessiblerole='TitleBar']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='dlgOptionen_par']/titlebar[@accessiblerole='TitleBar']
 			</item>
 			<basepath>
 				/form[@controlname='dlgOptionen_par']
@@ -383,6 +331,16 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@title~'b_JOUR_001_journal_AT_endgueltig_2017']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="320527ae-44cb-4467-9725-7f956445c207"
+			name="Journal_mit_Kopfzeile_und_Buchungszeilen"
+			refimgid="6d0f12d9-5a06-4f6a-9ccd-a4845d4bccf1"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title~'b_JOUR_001_journal_AT_endgueltig_2017']/text[@controlid='15']
 			</item>
 			<basepath>
 				/form[@title~'b_JOUR_001_journal_AT_endgueltig_2017']
@@ -762,12 +720,12 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 				<item
 				addcaps="cell,accessible"
 				capname="cell"
-				id="5025fd65-65ec-46e5-a6b9-4833409dc086"
-				name="Zeile_mit_Inhalt_DollarGeschaeftsjahr"
+				id="b02c54dc-0816-453f-aeb4-0e0ee9e2be40"
+				name="Column0_Zeile_Geschaeftsjahr"
 				refimgid="9b97fa21-bb5c-4055-9de7-ec1582125340"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename~'Row' and @accessiblevalue~$Geschaeftsjahr]/cell[@accessiblename~'Row']
+					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename~'Row' and @accessiblevalue~$Geschaeftsjahr]/cell[@accessiblename~'Column 0']
 				</item>
 				<basepath>
 					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
@@ -783,16 +741,57 @@ YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
 nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
-		<item
-		addcaps="text,nativewindow"
-		capname="text"
-		id="320527ae-44cb-4467-9725-7f956445c207"
-		name="Journal_mit_Kopfzeile_und_Buchungszeilen"
-		refimgid="6d0f12d9-5a06-4f6a-9ccd-a4845d4bccf1"
-		robustPath=""
-		searchtimeout="30000ms">
-			/form[@title~'b_JOUR_001_journal_AT_endgueltig_2017']/text[@controlid='15']
-		</item>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="469a70d2-d1e5-4ca1-b6ff-e6a8a8bf131b"
+		isrooted="True"
+		name="TblJournal_in_B_JAHR"
+		refpath="/form[@controlname='tblJournal']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="b68e89bb-67dd-4b86-839c-a704703af1a1"
+			name="TitleBar100VerwaltenJournalzeilen"
+			refimgid="7f86fb5b-d93a-4785-a89e-e3f77aa7cd67"
+			refpath="/form[@controlname='tblJournal']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblJournal']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="836d644a-4dbd-4bf8-88c7-d8a65488e6f0"
+			name="ColGjpbJourzlRow1"
+			refimgid="ea2f5295-d6e7-498d-9ee9-9e0a36059948"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblJournal']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colGjpb_jourzl Row 1']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="7daf4de8-50c4-471f-8155-694aeef53f18"
+			name="Schliessen"
+			refimgid="74db7cc8-6d00-456a-896e-3a0ec6311040"
+			refpath="/form[@controlname='tblJournal']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblJournal']/?/?/button[@accessiblename='Schließen']
+			</item>
+			<basepath>
+				/form[@controlname='tblJournal']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABwSURBVDhP7Y5BCoAwDARz9CCFIuJbfYNv6Bf8
+YmSFhY3UKuJF8DCkUGYSW7vJldKPgSUNgTnlwB/4XMDNdh4FIGJC0kgI4AOSTorkMqCyXkBUrgYg
+nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>

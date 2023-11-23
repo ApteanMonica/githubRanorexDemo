@@ -93,8 +93,8 @@ namespace B_JOUR_001.Recordings2
             Init();
 
             // Kontrolle Buchungs/Journalzeilen mit Spaltenüberschriften
-            Report.Log(ReportLevel.Info, "Validation", "Kontrolle Buchungs/Journalzeilen mit Spaltenüberschriften\r\nValidating AttributeContains (Text>$Prueferdatei_AT_Werte_2017) on item 'Journal_mit_Kopfzeile_und_Buchungszeilen'.", repo.Journal_mit_Kopfzeile_und_BuchungszeilenInfo, new RecordItemIndex(0));
-            Validate.AttributeContains(repo.Journal_mit_Kopfzeile_und_BuchungszeilenInfo, "Text", Prueferdatei_AT_Werte_2017);
+            Report.Log(ReportLevel.Info, "Validation", "Kontrolle Buchungs/Journalzeilen mit Spaltenüberschriften\r\nValidating AttributeContains (Text>$Prueferdatei_AT_Werte_2017) on item 'BJOUR001JournalATEndgueltig2017Tx.Journal_mit_Kopfzeile_und_Buchungszeilen'.", repo.BJOUR001JournalATEndgueltig2017Tx.Journal_mit_Kopfzeile_und_BuchungszeilenInfo, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.BJOUR001JournalATEndgueltig2017Tx.Journal_mit_Kopfzeile_und_BuchungszeilenInfo, "Text", Prueferdatei_AT_Werte_2017);
             
         }
 

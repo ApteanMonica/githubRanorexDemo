@@ -82,31 +82,37 @@ namespace B_JOUR_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmJournal.PbOptionenOptionen' at Center.", repo.FrmJournal.PbOptionenOptionenInfo, new RecordItemIndex(0));
             repo.FrmJournal.PbOptionenOptionen.Click();
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'DlgOptionenPar.CbAtUser'.", repo.DlgOptionenPar.CbAtUserInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgOptionenPar.TitleBar100Optionen'", repo.DlgOptionenPar.TitleBar100OptionenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.DlgOptionenPar.TitleBar100OptionenInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Optionen') on item 'DlgOptionenPar.TitleBar100Optionen'.", repo.DlgOptionenPar.TitleBar100OptionenInfo, new RecordItemIndex(2));
+            Validate.AttributeContains(repo.DlgOptionenPar.TitleBar100OptionenInfo, "Text", "Optionen");
+            
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'DlgOptionenPar.CbAtUser'.", repo.DlgOptionenPar.CbAtUserInfo, new RecordItemIndex(3));
             repo.DlgOptionenPar.CbAtUser.Element.SetAttributeValue("Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'DlgOptionenPar.CbAtBuchungszeit'.", repo.DlgOptionenPar.CbAtBuchungszeitInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'DlgOptionenPar.CbAtBuchungszeit'.", repo.DlgOptionenPar.CbAtBuchungszeitInfo, new RecordItemIndex(4));
             repo.DlgOptionenPar.CbAtBuchungszeit.Element.SetAttributeValue("Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgOptionenPar.CbAtBuchungszeit'.", repo.DlgOptionenPar.CbAtBuchungszeitInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgOptionenPar.CbAtBuchungszeit'.", repo.DlgOptionenPar.CbAtBuchungszeitInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.DlgOptionenPar.CbAtBuchungszeitInfo, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgOptionenPar.CbAtUser'.", repo.DlgOptionenPar.CbAtUserInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='False') on item 'DlgOptionenPar.CbAtUser'.", repo.DlgOptionenPar.CbAtUserInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.DlgOptionenPar.CbAtUserInfo, "Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgOptionenPar.PbOk' at Center.", repo.DlgOptionenPar.PbOkInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgOptionenPar.PbOk' at Center.", repo.DlgOptionenPar.PbOkInfo, new RecordItemIndex(7));
             repo.DlgOptionenPar.PbOk.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmJournal.TpJournaldruck1.CbEndgueltig'", repo.FrmJournal.TpJournaldruck1.CbEndgueltigInfo, new ActionTimeout(120000), new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmJournal.TpJournaldruck1.CbEndgueltig'", repo.FrmJournal.TpJournaldruck1.CbEndgueltigInfo, new ActionTimeout(120000), new RecordItemIndex(8));
             repo.FrmJournal.TpJournaldruck1.CbEndgueltigInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmJournal.TpJournaldruck1.CbFinanz'.", repo.FrmJournal.TpJournaldruck1.CbFinanzInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmJournal.TpJournaldruck1.CbFinanz'.", repo.FrmJournal.TpJournaldruck1.CbFinanzInfo, new RecordItemIndex(9));
             repo.FrmJournal.TpJournaldruck1.CbFinanz.Element.SetAttributeValue("Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmJournal.TpJournaldruck1.CbWiederholung'.", repo.FrmJournal.TpJournaldruck1.CbWiederholungInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmJournal.TpJournaldruck1.CbWiederholung'.", repo.FrmJournal.TpJournaldruck1.CbWiederholungInfo, new RecordItemIndex(10));
             repo.FrmJournal.TpJournaldruck1.CbWiederholung.Element.SetAttributeValue("Checked", "False");
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmJournal.TpJournaldruck1.CbEndgueltig'.", repo.FrmJournal.TpJournaldruck1.CbEndgueltigInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Checked to 'False' on item 'FrmJournal.TpJournaldruck1.CbEndgueltig'.", repo.FrmJournal.TpJournaldruck1.CbEndgueltigInfo, new RecordItemIndex(11));
             repo.FrmJournal.TpJournaldruck1.CbEndgueltig.Element.SetAttributeValue("Checked", "False");
             
         }

@@ -28,14 +28,13 @@ namespace B_JOUR_001
     {
         static B_JOUR_001Repository instance = new B_JOUR_001Repository();
         B_JOUR_001RepositoryFolders.FrmJournalAppFolder _frmjournal;
-        B_JOUR_001RepositoryFolders.TblJournalAppFolder _tbljournal;
         B_JOUR_001RepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
         B_JOUR_001RepositoryFolders.DlgOptionenParAppFolder _dlgoptionenpar;
         B_JOUR_001RepositoryFolders.DlgDruckenDateiAppFolder _dlgdruckendatei;
         B_JOUR_001RepositoryFolders.BJOUR001JournalATEndgueltig2017TxAppFolder _bjour001journalatendgueltig2017tx;
         B_JOUR_001RepositoryFolders.TblB_Buchungen_anzeigenAppFolder _tblb_buchungen_anzeigen;
         B_JOUR_001RepositoryFolders.FrmMain_GeschaeftsjahrAppFolder _frmmain_geschaeftsjahr;
-        RepoItemInfo _journal_mit_kopfzeile_und_buchungszeilenInfo;
+        B_JOUR_001RepositoryFolders.TblJournal_in_B_JAHRAppFolder _tbljournal_in_b_jahr;
 
         /// <summary>
         /// Gets the singleton class instance representing the B_JOUR_001Repository element repository.
@@ -53,14 +52,13 @@ namespace B_JOUR_001
             : base("B_JOUR_001Repository", "/", null, 0, false, "99ad7d86-38d9-409b-bf6d-8ae590b9deca", ".\\RepositoryImages\\B_JOUR_001Repository99ad7d86.rximgres")
         {
             _frmjournal = new B_JOUR_001RepositoryFolders.FrmJournalAppFolder(this);
-            _tbljournal = new B_JOUR_001RepositoryFolders.TblJournalAppFolder(this);
             _dlgmessagebox = new B_JOUR_001RepositoryFolders.DlgMessageBoxAppFolder(this);
             _dlgoptionenpar = new B_JOUR_001RepositoryFolders.DlgOptionenParAppFolder(this);
             _dlgdruckendatei = new B_JOUR_001RepositoryFolders.DlgDruckenDateiAppFolder(this);
             _bjour001journalatendgueltig2017tx = new B_JOUR_001RepositoryFolders.BJOUR001JournalATEndgueltig2017TxAppFolder(this);
             _tblb_buchungen_anzeigen = new B_JOUR_001RepositoryFolders.TblB_Buchungen_anzeigenAppFolder(this);
             _frmmain_geschaeftsjahr = new B_JOUR_001RepositoryFolders.FrmMain_GeschaeftsjahrAppFolder(this);
-            _journal_mit_kopfzeile_und_buchungszeilenInfo = new RepoItemInfo(this, "Journal_mit_Kopfzeile_und_Buchungszeilen", "/form[@title~'b_JOUR_001_journal_AT_endgueltig_2017']/text[@controlid='15']", 30000, null, "320527ae-44cb-4467-9725-7f956445c207");
+            _tbljournal_in_b_jahr = new B_JOUR_001RepositoryFolders.TblJournal_in_B_JAHRAppFolder(this);
         }
 
 #region Variables
@@ -92,45 +90,12 @@ namespace B_JOUR_001
         }
 
         /// <summary>
-        /// The Journal_mit_Kopfzeile_und_Buchungszeilen item.
-        /// </summary>
-        [RepositoryItem("320527ae-44cb-4467-9725-7f956445c207")]
-        public virtual Ranorex.Text Journal_mit_Kopfzeile_und_Buchungszeilen
-        {
-            get
-            {
-                 return _journal_mit_kopfzeile_und_buchungszeilenInfo.CreateAdapter<Ranorex.Text>(true);
-            }
-        }
-
-        /// <summary>
-        /// The Journal_mit_Kopfzeile_und_Buchungszeilen item info.
-        /// </summary>
-        [RepositoryItemInfo("320527ae-44cb-4467-9725-7f956445c207")]
-        public virtual RepoItemInfo Journal_mit_Kopfzeile_und_BuchungszeilenInfo
-        {
-            get
-            {
-                return _journal_mit_kopfzeile_und_buchungszeilenInfo;
-            }
-        }
-
-        /// <summary>
         /// The FrmJournal folder.
         /// </summary>
         [RepositoryFolder("b7ffda55-8d21-46d5-9c38-a021628919d4")]
         public virtual B_JOUR_001RepositoryFolders.FrmJournalAppFolder FrmJournal
         {
             get { return _frmjournal; }
-        }
-
-        /// <summary>
-        /// The TblJournal folder.
-        /// </summary>
-        [RepositoryFolder("469a70d2-d1e5-4ca1-b6ff-e6a8a8bf131b")]
-        public virtual B_JOUR_001RepositoryFolders.TblJournalAppFolder TblJournal
-        {
-            get { return _tbljournal; }
         }
 
         /// <summary>
@@ -185,6 +150,15 @@ namespace B_JOUR_001
         public virtual B_JOUR_001RepositoryFolders.FrmMain_GeschaeftsjahrAppFolder FrmMain_Geschaeftsjahr
         {
             get { return _frmmain_geschaeftsjahr; }
+        }
+
+        /// <summary>
+        /// The TblJournal_in_B_JAHR folder.
+        /// </summary>
+        [RepositoryFolder("469a70d2-d1e5-4ca1-b6ff-e6a8a8bf131b")]
+        public virtual B_JOUR_001RepositoryFolders.TblJournal_in_B_JAHRAppFolder TblJournal_in_B_JAHR
+        {
+            get { return _tbljournal_in_b_jahr; }
         }
     }
 
@@ -494,124 +468,6 @@ namespace B_JOUR_001
         }
 
         /// <summary>
-        /// The TblJournalAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("469a70d2-d1e5-4ca1-b6ff-e6a8a8bf131b")]
-        public partial class TblJournalAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _colgjpbjourzlrow1Info;
-            RepoItemInfo _schliessenInfo;
-            RepoItemInfo _titlebar100verwaltenjournalzeilenInfo;
-
-            /// <summary>
-            /// Creates a new TblJournal  folder.
-            /// </summary>
-            public TblJournalAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("TblJournal", "/form[@controlname='tblJournal']", parentFolder, 30000, null, true, "469a70d2-d1e5-4ca1-b6ff-e6a8a8bf131b", "")
-            {
-                _colgjpbjourzlrow1Info = new RepoItemInfo(this, "ColGjpbJourzlRow1", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colGjpb_jourzl Row 1']", "", 30000, null, "836d644a-4dbd-4bf8-88c7-d8a65488e6f0");
-                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "?/?/button[@accessiblename='Schließen']", "", 30000, null, "7daf4de8-50c4-471f-8155-694aeef53f18");
-                _titlebar100verwaltenjournalzeilenInfo = new RepoItemInfo(this, "TitleBar100VerwaltenJournalzeilen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "b68e89bb-67dd-4b86-839c-a704703af1a1");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("469a70d2-d1e5-4ca1-b6ff-e6a8a8bf131b")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("469a70d2-d1e5-4ca1-b6ff-e6a8a8bf131b")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ColGjpbJourzlRow1 item.
-            /// </summary>
-            [RepositoryItem("836d644a-4dbd-4bf8-88c7-d8a65488e6f0")]
-            public virtual Ranorex.Cell ColGjpbJourzlRow1
-            {
-                get
-                {
-                    return _colgjpbjourzlrow1Info.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColGjpbJourzlRow1 item info.
-            /// </summary>
-            [RepositoryItemInfo("836d644a-4dbd-4bf8-88c7-d8a65488e6f0")]
-            public virtual RepoItemInfo ColGjpbJourzlRow1Info
-            {
-                get
-                {
-                    return _colgjpbjourzlrow1Info;
-                }
-            }
-
-            /// <summary>
-            /// The Schliessen item.
-            /// </summary>
-            [RepositoryItem("7daf4de8-50c4-471f-8155-694aeef53f18")]
-            public virtual Ranorex.Button Schliessen
-            {
-                get
-                {
-                    return _schliessenInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Schliessen item info.
-            /// </summary>
-            [RepositoryItemInfo("7daf4de8-50c4-471f-8155-694aeef53f18")]
-            public virtual RepoItemInfo SchliessenInfo
-            {
-                get
-                {
-                    return _schliessenInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TitleBar100VerwaltenJournalzeilen item.
-            /// </summary>
-            [RepositoryItem("b68e89bb-67dd-4b86-839c-a704703af1a1")]
-            public virtual Ranorex.TitleBar TitleBar100VerwaltenJournalzeilen
-            {
-                get
-                {
-                    return _titlebar100verwaltenjournalzeilenInfo.CreateAdapter<Ranorex.TitleBar>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TitleBar100VerwaltenJournalzeilen item info.
-            /// </summary>
-            [RepositoryItemInfo("b68e89bb-67dd-4b86-839c-a704703af1a1")]
-            public virtual RepoItemInfo TitleBar100VerwaltenJournalzeilenInfo
-            {
-                get
-                {
-                    return _titlebar100verwaltenjournalzeilenInfo;
-                }
-            }
-        }
-
-        /// <summary>
         /// The DlgMessageBoxAppFolder folder.
         /// </summary>
         [RepositoryFolder("8f31eac6-7683-4922-857f-31e00ecc606a")]
@@ -709,13 +565,13 @@ namespace B_JOUR_001
         [RepositoryFolder("68680e67-95ff-4fd1-addc-2c59b6a61f5a")]
         public partial class DlgOptionenParAppFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _titlebar100optionenInfo;
             RepoItemInfo _cbatuserInfo;
             RepoItemInfo _cbatbuchungszeitInfo;
             RepoItemInfo _pbokInfo;
             RepoItemInfo _rbvariante2Info;
             RepoItemInfo _cbbrdebInfo;
             RepoItemInfo _cbjournalbelegInfo;
-            RepoItemInfo _titlebar100optionenInfo;
 
             /// <summary>
             /// Creates a new DlgOptionenPar  folder.
@@ -723,13 +579,13 @@ namespace B_JOUR_001
             public DlgOptionenParAppFolder(RepoGenBaseFolder parentFolder) :
                     base("DlgOptionenPar", "/form[@controlname='dlgOptionen_par']", parentFolder, 30000, null, true, "68680e67-95ff-4fd1-addc-2c59b6a61f5a", "")
             {
+                _titlebar100optionenInfo = new RepoItemInfo(this, "TitleBar100Optionen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "7768649a-c557-424a-af06-b5cd9df8ce5d");
                 _cbatuserInfo = new RepoItemInfo(this, "CbAtUser", "?/?/checkbox[@controlname='cbAtUser' and @controltypename='cStdCheckBox']", "", 30000, null, "59129e4d-58b6-4051-8fb5-a830c2696402");
                 _cbatbuchungszeitInfo = new RepoItemInfo(this, "CbAtBuchungszeit", "?/?/checkbox[@controlname='cbAtBuchungszeit']", "", 30000, null, "fbaf580d-eb39-4512-9027-b55e046ea640");
                 _pbokInfo = new RepoItemInfo(this, "PbOk", "button[@controlname='pbOk']", "", 30000, null, "8b044251-250d-41b2-afb4-4177fd0097a4");
                 _rbvariante2Info = new RepoItemInfo(this, "RbVariante2", "container[@controlname='groupBox2']/radiobutton[@controlname='rbVariante2']", "", 30000, null, "e554a4d9-8643-4056-b5d3-d673ee0bb5fa");
                 _cbbrdebInfo = new RepoItemInfo(this, "CbBrdEB", "?/?/checkbox[@controlname='cbBrdEB']", "", 30000, null, "cadbb958-1b24-462a-880d-5dd5e7007c69");
                 _cbjournalbelegInfo = new RepoItemInfo(this, "CbJournalBeleg", "checkbox[@controlname='cbJournalBeleg']", "", 30000, null, "750fc7b5-b909-488c-85d7-fc0574bf35dd");
-                _titlebar100optionenInfo = new RepoItemInfo(this, "TitleBar100Optionen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "7768649a-c557-424a-af06-b5cd9df8ce5d");
             }
 
             /// <summary>
@@ -753,6 +609,30 @@ namespace B_JOUR_001
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100Optionen item.
+            /// </summary>
+            [RepositoryItem("7768649a-c557-424a-af06-b5cd9df8ce5d")]
+            public virtual Ranorex.TitleBar TitleBar100Optionen
+            {
+                get
+                {
+                    return _titlebar100optionenInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100Optionen item info.
+            /// </summary>
+            [RepositoryItemInfo("7768649a-c557-424a-af06-b5cd9df8ce5d")]
+            public virtual RepoItemInfo TitleBar100OptionenInfo
+            {
+                get
+                {
+                    return _titlebar100optionenInfo;
                 }
             }
 
@@ -899,30 +779,6 @@ namespace B_JOUR_001
                     return _cbjournalbelegInfo;
                 }
             }
-
-            /// <summary>
-            /// The TitleBar100Optionen item.
-            /// </summary>
-            [RepositoryItem("7768649a-c557-424a-af06-b5cd9df8ce5d")]
-            public virtual Ranorex.TitleBar TitleBar100Optionen
-            {
-                get
-                {
-                    return _titlebar100optionenInfo.CreateAdapter<Ranorex.TitleBar>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TitleBar100Optionen item info.
-            /// </summary>
-            [RepositoryItemInfo("7768649a-c557-424a-af06-b5cd9df8ce5d")]
-            public virtual RepoItemInfo TitleBar100OptionenInfo
-            {
-                get
-                {
-                    return _titlebar100optionenInfo;
-                }
-            }
         }
 
         /// <summary>
@@ -1024,6 +880,7 @@ namespace B_JOUR_001
         public partial class BJOUR001JournalATEndgueltig2017TxAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _bjour001journalatendgueltig2017txInfo;
+            RepoItemInfo _journal_mit_kopfzeile_und_buchungszeilenInfo;
 
             /// <summary>
             /// Creates a new BJOUR001JournalATEndgueltig2017Tx  folder.
@@ -1032,6 +889,7 @@ namespace B_JOUR_001
                     base("BJOUR001JournalATEndgueltig2017Tx", "/form[@title~'b_JOUR_001_journal_AT_endgueltig_2017']", parentFolder, 30000, null, true, "2bcd5fc7-934f-44c4-9c25-89703b4e0940", "")
             {
                 _bjour001journalatendgueltig2017txInfo = new RepoItemInfo(this, "BJOUR001JournalATEndgueltig2017Tx", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "40209872-a7a0-411d-a59c-f0ed06a8d462");
+                _journal_mit_kopfzeile_und_buchungszeilenInfo = new RepoItemInfo(this, "Journal_mit_Kopfzeile_und_Buchungszeilen", "text[@controlid='15']", "", 30000, null, "320527ae-44cb-4467-9725-7f956445c207");
             }
 
             /// <summary>
@@ -1079,6 +937,30 @@ namespace B_JOUR_001
                 get
                 {
                     return _bjour001journalatendgueltig2017txInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Journal_mit_Kopfzeile_und_Buchungszeilen item.
+            /// </summary>
+            [RepositoryItem("320527ae-44cb-4467-9725-7f956445c207")]
+            public virtual Ranorex.Text Journal_mit_Kopfzeile_und_Buchungszeilen
+            {
+                get
+                {
+                    return _journal_mit_kopfzeile_und_buchungszeilenInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Journal_mit_Kopfzeile_und_Buchungszeilen item info.
+            /// </summary>
+            [RepositoryItemInfo("320527ae-44cb-4467-9725-7f956445c207")]
+            public virtual RepoItemInfo Journal_mit_Kopfzeile_und_BuchungszeilenInfo
+            {
+                get
+                {
+                    return _journal_mit_kopfzeile_und_buchungszeilenInfo;
                 }
             }
         }
@@ -2036,7 +1918,7 @@ namespace B_JOUR_001
         [RepositoryFolder("44d254bb-34fc-4b97-a07f-d65fcf55f118")]
         public partial class FlexGridFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _zeile_mit_inhalt_dollargeschaeftsjahrInfo;
+            RepoItemInfo _column0_zeile_geschaeftsjahrInfo;
 
             /// <summary>
             /// Creates a new FlexGrid  folder.
@@ -2044,7 +1926,7 @@ namespace B_JOUR_001
             public FlexGridFolder(RepoGenBaseFolder parentFolder) :
                     base("FlexGrid", "container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "44d254bb-34fc-4b97-a07f-d65fcf55f118", "")
             {
-                _zeile_mit_inhalt_dollargeschaeftsjahrInfo = new RepoItemInfo(this, "Zeile_mit_Inhalt_DollarGeschaeftsjahr", "row[@accessiblename~'Row' and @accessiblevalue~$Geschaeftsjahr]/cell[@accessiblename~'Row']", "", 30000, null, "5025fd65-65ec-46e5-a6b9-4833409dc086");
+                _column0_zeile_geschaeftsjahrInfo = new RepoItemInfo(this, "Column0_Zeile_Geschaeftsjahr", "row[@accessiblename~'Row' and @accessiblevalue~$Geschaeftsjahr]/cell[@accessiblename~'Column 0']", "", 30000, null, "b02c54dc-0816-453f-aeb4-0e0ee9e2be40");
             }
 
             /// <summary>
@@ -2072,26 +1954,144 @@ namespace B_JOUR_001
             }
 
             /// <summary>
-            /// The Zeile_mit_Inhalt_DollarGeschaeftsjahr item.
+            /// The Column0_Zeile_Geschaeftsjahr item.
             /// </summary>
-            [RepositoryItem("5025fd65-65ec-46e5-a6b9-4833409dc086")]
-            public virtual Ranorex.Cell Zeile_mit_Inhalt_DollarGeschaeftsjahr
+            [RepositoryItem("b02c54dc-0816-453f-aeb4-0e0ee9e2be40")]
+            public virtual Ranorex.Cell Column0_Zeile_Geschaeftsjahr
             {
                 get
                 {
-                    return _zeile_mit_inhalt_dollargeschaeftsjahrInfo.CreateAdapter<Ranorex.Cell>(true);
+                    return _column0_zeile_geschaeftsjahrInfo.CreateAdapter<Ranorex.Cell>(true);
                 }
             }
 
             /// <summary>
-            /// The Zeile_mit_Inhalt_DollarGeschaeftsjahr item info.
+            /// The Column0_Zeile_Geschaeftsjahr item info.
             /// </summary>
-            [RepositoryItemInfo("5025fd65-65ec-46e5-a6b9-4833409dc086")]
-            public virtual RepoItemInfo Zeile_mit_Inhalt_DollarGeschaeftsjahrInfo
+            [RepositoryItemInfo("b02c54dc-0816-453f-aeb4-0e0ee9e2be40")]
+            public virtual RepoItemInfo Column0_Zeile_GeschaeftsjahrInfo
             {
                 get
                 {
-                    return _zeile_mit_inhalt_dollargeschaeftsjahrInfo;
+                    return _column0_zeile_geschaeftsjahrInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TblJournal_in_B_JAHRAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("469a70d2-d1e5-4ca1-b6ff-e6a8a8bf131b")]
+        public partial class TblJournal_in_B_JAHRAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _titlebar100verwaltenjournalzeilenInfo;
+            RepoItemInfo _colgjpbjourzlrow1Info;
+            RepoItemInfo _schliessenInfo;
+
+            /// <summary>
+            /// Creates a new TblJournal_in_B_JAHR  folder.
+            /// </summary>
+            public TblJournal_in_B_JAHRAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TblJournal_in_B_JAHR", "/form[@controlname='tblJournal']", parentFolder, 30000, null, true, "469a70d2-d1e5-4ca1-b6ff-e6a8a8bf131b", "")
+            {
+                _titlebar100verwaltenjournalzeilenInfo = new RepoItemInfo(this, "TitleBar100VerwaltenJournalzeilen", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "b68e89bb-67dd-4b86-839c-a704703af1a1");
+                _colgjpbjourzlrow1Info = new RepoItemInfo(this, "ColGjpbJourzlRow1", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colGjpb_jourzl Row 1']", "", 30000, null, "836d644a-4dbd-4bf8-88c7-d8a65488e6f0");
+                _schliessenInfo = new RepoItemInfo(this, "Schliessen", "?/?/button[@accessiblename='Schließen']", "", 30000, null, "7daf4de8-50c4-471f-8155-694aeef53f18");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("469a70d2-d1e5-4ca1-b6ff-e6a8a8bf131b")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("469a70d2-d1e5-4ca1-b6ff-e6a8a8bf131b")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100VerwaltenJournalzeilen item.
+            /// </summary>
+            [RepositoryItem("b68e89bb-67dd-4b86-839c-a704703af1a1")]
+            public virtual Ranorex.TitleBar TitleBar100VerwaltenJournalzeilen
+            {
+                get
+                {
+                    return _titlebar100verwaltenjournalzeilenInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100VerwaltenJournalzeilen item info.
+            /// </summary>
+            [RepositoryItemInfo("b68e89bb-67dd-4b86-839c-a704703af1a1")]
+            public virtual RepoItemInfo TitleBar100VerwaltenJournalzeilenInfo
+            {
+                get
+                {
+                    return _titlebar100verwaltenjournalzeilenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColGjpbJourzlRow1 item.
+            /// </summary>
+            [RepositoryItem("836d644a-4dbd-4bf8-88c7-d8a65488e6f0")]
+            public virtual Ranorex.Cell ColGjpbJourzlRow1
+            {
+                get
+                {
+                    return _colgjpbjourzlrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColGjpbJourzlRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("836d644a-4dbd-4bf8-88c7-d8a65488e6f0")]
+            public virtual RepoItemInfo ColGjpbJourzlRow1Info
+            {
+                get
+                {
+                    return _colgjpbjourzlrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item.
+            /// </summary>
+            [RepositoryItem("7daf4de8-50c4-471f-8155-694aeef53f18")]
+            public virtual Ranorex.Button Schliessen
+            {
+                get
+                {
+                    return _schliessenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Schliessen item info.
+            /// </summary>
+            [RepositoryItemInfo("7daf4de8-50c4-471f-8155-694aeef53f18")]
+            public virtual RepoItemInfo SchliessenInfo
+            {
+                get
+                {
+                    return _schliessenInfo;
                 }
             }
         }

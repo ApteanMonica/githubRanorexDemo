@@ -23,6 +23,17 @@ name="B_JOUR_002Repository">
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="9e83cb15-fdc4-45c3-8391-cdb3b84c95ed"
+			name="TitleBar100ErfassungsJournal"
+			refimgid="70188203-1e62-423c-8fa9-b2da9059b8b1"
+			refpath="/form[@controlname='frmJournal']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='frmJournal']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
 			addcaps="text,accessible"
 			capname="text"
 			id="f69d5a8b-6235-4122-8914-ce3d68cef29e"
@@ -144,17 +155,6 @@ name="B_JOUR_002Repository">
 					/form[@controlname='frmJournal']//tabpage[@controlname='tpJournaldruck']
 				</basepath>
 			</folder>
-			<item
-			addcaps="titlebar,accessible"
-			capname="titlebar"
-			id="9e83cb15-fdc4-45c3-8391-cdb3b84c95ed"
-			name="TitleBar100ErfassungsJournal"
-			refimgid="70188203-1e62-423c-8fa9-b2da9059b8b1"
-			refpath="/form[@controlname='frmJournal']/titlebar[@accessiblerole='TitleBar']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='frmJournal']/titlebar[@accessiblerole='TitleBar']
-			</item>
 			<item
 			addcaps="button,control,nativewindow"
 			capname="button"

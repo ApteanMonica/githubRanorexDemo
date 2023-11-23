@@ -4063,6 +4063,51 @@ ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
 FFFFABRRRQAyH7h/3m/mafTIfuH/AHm/mafQAUUUUAFFFFABRRRQAUUUUAf/2Q==
 			</helperscreenshot>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="a6b1a528-3320-458f-a6fa-482d8de3ee7e"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e089ce43-d1f4-40ba-a2f8-ab99c3f6738c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgOptionen_par']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="ee530fde-2d7d-4d7b-afd8-9e116573c5d7">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e089ce43-d1f4-40ba-a2f8-ab99c3f6738c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgOptionen_par']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Optionen
+			</matchvalue>
+		</validationitem>
 		<setvaluerecorditem
 		attrname="Checked"
 		enabled="True"

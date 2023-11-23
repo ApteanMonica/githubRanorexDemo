@@ -108,8 +108,8 @@ namespace B_JOUR_001.Recordings
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmJournal.TitleBar100ErfassungsJournal'", repo.FrmJournal.TitleBar100ErfassungsJournalInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmJournal.TitleBar100ErfassungsJournalInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'FrmJournal.TitleBar100ErfassungsJournal'", repo.FrmJournal.TitleBar100ErfassungsJournalInfo, new ActionTimeout(180000), new RecordItemIndex(1));
+            repo.FrmJournal.TitleBar100ErfassungsJournalInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Erfassungs-Journal') on item 'FrmJournal.TitleBar100ErfassungsJournal'.", repo.FrmJournal.TitleBar100ErfassungsJournalInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.FrmJournal.TitleBar100ErfassungsJournalInfo, "Text", "Erfassungs-Journal");

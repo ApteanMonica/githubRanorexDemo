@@ -68,16 +68,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Startfile"
-					datasourceid="984e9415-3942-465c-b2cb-b8117848402d"
-					variableid="69259054-b6a8-447c-a955-b79cdfc482e5"
-					variablename="Startfile">
-					</var>
-					<var
 					dataname="Programm_RS"
 					datasourceid="984e9415-3942-465c-b2cb-b8117848402d"
 					variableid="32a5d930-cd0a-429e-b97a-2ec54ec99140"
 					variablename="Programm_RS">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="984e9415-3942-465c-b2cb-b8117848402d"
+					variableid="69259054-b6a8-447c-a955-b79cdfc482e5"
+					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -119,16 +119,21 @@
 			VideoFps="15"
 			VideoRecordingMode="Off"
 			VideoSource="Auto"
+			createsinglereportpdfchecked="False"
 			enabletracingscreenshots="True"
 			id="854d05f9-b832-4ea2-b491-2035256e4728"
+			includeimageschecked="False"
+			includerecordingschecked="False"
 			junitreport="False"
 			name="B_JOUR_004"
+			overwritefilechecked="False"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms">
+			reportwriteinterval="30000ms"
+			singlereportpdfdirectory="SingleReportPDF">
 			</testsuite>
 			<teardown
 			id="884616e7-136a-4990-8836-8de55b9c809b"

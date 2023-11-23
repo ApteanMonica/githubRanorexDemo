@@ -153,10 +153,10 @@ namespace B_JOUR_002
         public partial class FrmJournalAppFolder : RepoGenBaseFolder
         {
             B_JOUR_002RepositoryFolders.TpJournaldruck1Folder _tpjournaldruck1;
+            RepoItemInfo _titlebar100erfassungsjournalInfo;
             RepoItemInfo _buchungsjahrInfo;
             RepoItemInfo _pbcommonbuchungenpruefenInfo;
             RepoItemInfo _pbstandard2Info;
-            RepoItemInfo _titlebar100erfassungsjournalInfo;
             RepoItemInfo _pboptionenoptionenInfo;
 
             /// <summary>
@@ -166,10 +166,10 @@ namespace B_JOUR_002
                     base("FrmJournal", "/form[@controlname='frmJournal']", parentFolder, 30000, null, true, "8fba131e-bd8a-4ca3-8b11-ee2483dd910d", "")
             {
                 _tpjournaldruck1 = new B_JOUR_002RepositoryFolders.TpJournaldruck1Folder(this);
+                _titlebar100erfassungsjournalInfo = new RepoItemInfo(this, "TitleBar100ErfassungsJournal", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "9e83cb15-fdc4-45c3-8391-cdb3b84c95ed");
                 _buchungsjahrInfo = new RepoItemInfo(this, "Buchungsjahr", ".//tabpage[@controlname='tpJournaldruck']/text[@controlname='dfJahrA']/text[@accessiblename='Buchungsjahr:']", "", 30000, null, "f69d5a8b-6235-4122-8914-ce3d68cef29e");
                 _pbcommonbuchungenpruefenInfo = new RepoItemInfo(this, "PbCommonBuchungenpruefen", "?/?/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Buchungenpruefen']", "", 30000, null, "1a603a0b-8320-4938-95ec-afe29ef2cca4");
                 _pbstandard2Info = new RepoItemInfo(this, "PbStandard2", "?/?/container[@controlname='OptionenGroup']/button[@controlname='pbStandard2']", "", 30000, null, "1efe189b-8b7d-4f36-ab10-8bdcbbdbb92d");
-                _titlebar100erfassungsjournalInfo = new RepoItemInfo(this, "TitleBar100ErfassungsJournal", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "9e83cb15-fdc4-45c3-8391-cdb3b84c95ed");
                 _pboptionenoptionenInfo = new RepoItemInfo(this, "PbOptionenOptionen", "?/?/container[@controlname='DruckenGroup']/button[@controlname='pbOptionen_Optionen']", "", 30000, null, "e1e8a8a5-d9ca-4fb7-835a-26ad239099f1");
             }
 
@@ -194,6 +194,30 @@ namespace B_JOUR_002
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100ErfassungsJournal item.
+            /// </summary>
+            [RepositoryItem("9e83cb15-fdc4-45c3-8391-cdb3b84c95ed")]
+            public virtual Ranorex.TitleBar TitleBar100ErfassungsJournal
+            {
+                get
+                {
+                    return _titlebar100erfassungsjournalInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100ErfassungsJournal item info.
+            /// </summary>
+            [RepositoryItemInfo("9e83cb15-fdc4-45c3-8391-cdb3b84c95ed")]
+            public virtual RepoItemInfo TitleBar100ErfassungsJournalInfo
+            {
+                get
+                {
+                    return _titlebar100erfassungsjournalInfo;
                 }
             }
 
@@ -266,30 +290,6 @@ namespace B_JOUR_002
                 get
                 {
                     return _pbstandard2Info;
-                }
-            }
-
-            /// <summary>
-            /// The TitleBar100ErfassungsJournal item.
-            /// </summary>
-            [RepositoryItem("9e83cb15-fdc4-45c3-8391-cdb3b84c95ed")]
-            public virtual Ranorex.TitleBar TitleBar100ErfassungsJournal
-            {
-                get
-                {
-                    return _titlebar100erfassungsjournalInfo.CreateAdapter<Ranorex.TitleBar>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TitleBar100ErfassungsJournal item info.
-            /// </summary>
-            [RepositoryItemInfo("9e83cb15-fdc4-45c3-8391-cdb3b84c95ed")]
-            public virtual RepoItemInfo TitleBar100ErfassungsJournalInfo
-            {
-                get
-                {
-                    return _titlebar100erfassungsjournalInfo;
                 }
             }
 

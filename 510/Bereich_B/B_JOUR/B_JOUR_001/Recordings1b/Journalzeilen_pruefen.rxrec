@@ -47,10 +47,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="5025fd65-65ec-46e5-a6b9-4833409dc086"
+			id="b02c54dc-0816-453f-aeb4-0e0ee9e2be40"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='frmMain']//table[@accessiblename='FlexGrid']/row[@accessiblename~'Row' and @accessiblevalue~'01.01.2017']/cell[@accessiblename~'Row']
+					/form[@controlname='frmMain']/container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename~'Row' and @accessiblevalue~$Geschaeftsjahr]/cell[@accessiblename~'Column 0']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -4027,6 +4027,26 @@ uOR6c0AT0VBLOI5lRmKg46xMR/310FIl9bOpYOcBd2ShGR7ZHP4UAWKKqR30beYW3AB9qgRtuxgH
 kYz3px1C2Dbd7MTwNqM2TjOOB6UAWaKZFIksYdDlT7Yp9ABRRRQAUUUUAFFFFABRRRQB/9k=
 			</helperscreenshot>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="8fc748c7-55e3-4bea-bdd4-79bd140a1e14"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b68e89bb-67dd-4b86-839c-a704703af1a1"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblJournal']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
@@ -4035,6 +4055,64 @@ kYz3px1C2Dbd7MTwNqM2TjOOB6UAWaKZFIksYdDlT7Yp9ABRRRQAUUUUAFFFFABRRRQB/9k=
 			<comment>
 			</comment>
 			<bindings>
+			</bindings>
+			<info
+			id="b68e89bb-67dd-4b86-839c-a704703af1a1"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="11"
+				prefcap="titlebar"
+				rect="684,276,568,28"
+				role="titlebar"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						TitleBar
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Invisible
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='tblJournal']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				Verwalten Journalzeilen - Jahr
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0affffa3-c53b-435d-a022-bce60a1153d9">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Geschaeftsjahr">
+				</binding>
 			</bindings>
 			<info
 			id="b68e89bb-67dd-4b86-839c-a704703af1a1"
