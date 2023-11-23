@@ -253,19 +253,53 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="e2fd22fe-9c1b-4648-bd79-7cb334fd8b2f"
+			id="865079f8-e829-40f9-8bee-93fb4609f3c3"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, h4tag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="h4tag"
+				rect="1119,478,738,20"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Antrag auf Krankengeld
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						h4
+					</attribute>
+				</element>
 				<path>
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[2]/tag/div/div/div/select[@visible='True']
+					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[1]/div/?/?/h4[@innertext='Antrag auf Krankengeld']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 			<matchname>
-				Name
+				InnerText
 			</matchname>
 			<matchvalue>
-				Krankengeld
+				Antrag auf Krankengeld
 			</matchvalue>
 		</validationitem>
 		<keysequenceitem
@@ -674,202 +708,51 @@ mode="Global">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="b35b7291-4238-4f23-8dce-3a4861f42da8"
-		sx="1472"
-		sy="518"
-		warnoutofbounds="False">
-			<comment>
-				funktioniert wieder en Bug 62089korrigiert ist
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="73bfb15f-a5f6-4cc5-91c1-6bbc35f612f2"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, spantag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="1"
-				prefcap="spantag"
-				rect="1837,501,34,34"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						k-select
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						k-select
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						span
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="aria-label"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="role"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="unselectable"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[11]//tag[@tagname='kendodropdownlist']/div/div/div/span[@title='']/span/span[2]
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="c44fa207-daba-4e06-9596-d79c87afbf33"
+		searchpropertyid="684b7b67-19f2-49db-8644-1d24d22d2cba"
 		sx="0"
-		sy="109"
+		sy="0"
 		warnoutofbounds="False">
 			<comment>
-				funktioniert wieder wenn Bug 62089 korrigiert ist
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="f658bfd4-adea-457e-a1a9-0ec82cec2c50"
+			id="9a9a97e8-c184-4f6a-9676-e5e0f8e0200a"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, litag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="litag"
-				rect="0,109,0,0"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="False">
-					<attribute
-					name="class"
-					type="System.String">
-						k-item k-state-selected k-state-focused
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="id"
-					type="System.String">
-						cf29db61-09c2-4b64-9f36-34fed0a01bec
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						AT351100018481974718
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						k-item
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						li
-					</attribute>
-					<attribute
-					name="tagvalue"
-					type="System.String">
-						0
-					</attribute>
-					<attribute
-					name="value"
-					type="System.String">
-						0
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="aria-selected"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-offset-index"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="role"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="tabindex"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="unselectable"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
 				<path>
-					/dom[@domain='192.168.192.139']/body/div[4]//ul/li[@innertext='AT351100018481974718']
+					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[11]//tag[@tagname='kendodropdownlist']/div/div/div/span[@title='']/span/span[1]
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 		</mouseitem>
+		<keysequenceitem
+		KeySequence="{Down}{Tab}"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="2642288f-ce74-48a9-a16a-5305c8404a28">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keysequenceitem>
+		<keyitem
+		action="Press"
+		data="Tab"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="f72c44fe-0128-4038-b935-b98c86994ecd"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
 		<keysequenceitem
 		KeySequence="Testdiganose zum Krankengeld{Tab}"
 		duration="20ms"

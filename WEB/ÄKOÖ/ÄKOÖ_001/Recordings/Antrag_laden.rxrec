@@ -201,7 +201,7 @@ mode="Global">
 		</validationitem>
 		<validationitem
 		action="AttributeEqual"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="55ee9fb6-8387-4d37-80ae-af846d36d0bb">
 			<comment>
@@ -209,10 +209,44 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="e2fd22fe-9c1b-4648-bd79-7cb334fd8b2f"
+			id="865079f8-e829-40f9-8bee-93fb4609f3c3"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, h4tag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="h4tag"
+				rect="1119,478,738,20"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Antrag auf Krankengeld
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						h4
+					</attribute>
+				</element>
 				<path>
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[2]/tag/div/div/div/select[@visible='True']
+					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[1]/div/?/?/h4[@innertext='Antrag auf Krankengeld']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -234,7 +268,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="berufsunfaehig_ab">
+				variable="Tagesdatum">
 				</binding>
 			</bindings>
 			<info
@@ -263,7 +297,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="berufsunfaehig_bis">
+				variable="Tagesdatum_plus_7_Tage">
 				</binding>
 			</bindings>
 			<info

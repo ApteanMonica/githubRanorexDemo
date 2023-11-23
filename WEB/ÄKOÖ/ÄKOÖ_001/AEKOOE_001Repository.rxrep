@@ -22,17 +22,6 @@ name="AEKOOE_001Repository">
 		searchtimeout="30000ms"
 		usecache="False">
 			<item
-			addcaps="unknown,webelement,divtag"
-			capname="divtag"
-			id="baaf8e86-d9cd-470b-9b00-c4637169a98e"
-			name="PanelHeading"
-			refimgid="00263f45-192d-4bea-a49c-0793a99b991f"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/div/div/div[2]/div/div[1]"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/div/div/div[2]/div/div[1]
-			</item>
-			<item
 			addcaps="unknown,webelement,inputtag"
 			capname="inputtag"
 			id="38c0cfc1-4c35-45d6-b03f-5ad7eb7354c0"
@@ -130,16 +119,6 @@ name="AEKOOE_001Repository">
 			robustPath=""
 			searchtimeout="30000ms">
 				/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[2]/tag/div/div/div/select
-			</item>
-			<item
-			addcaps="unknown,webelement,selecttag"
-			capname="selecttag"
-			id="e2fd22fe-9c1b-4648-bd79-7cb334fd8b2f"
-			name="FormControl_Select_Tag_Krankengeld"
-			refimgid="ee3b4ca0-1384-4064-941e-e70306dfe47e"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[2]/tag/div/div/div/select[@visible='True']
 			</item>
 			<folder
 			addcaps="unknown,webelement,divtag"
@@ -348,6 +327,17 @@ name="AEKOOE_001Repository">
 				searchtimeout="30000ms">
 					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[25]//tag[@tagname='dmscontrol']/div/div[1]/div[2]/table/tbody/?/?/td[@innertext='Test_BAR']
 				</item>
+				<item
+				addcaps="unknown,webelement,h4tag"
+				capname="h4tag"
+				id="865079f8-e829-40f9-8bee-93fb4609f3c3"
+				name="AntragAufKrankengeld"
+				refimgid="57c6dbe6-1bb3-4d6f-b288-d92b3c9bb560"
+				refpath="/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[1]/div/span/h4[@innertext='Antrag auf Krankengeld']"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[1]/div/?/?/h4[@innertext='Antrag auf Krankengeld']
+				</item>
 				<basepath>
 					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]
 				</basepath>
@@ -407,17 +397,6 @@ name="AEKOOE_001Repository">
 				/dom[@domain='192.168.192.139']//section[#'appModule']/section//span[@innertext='Antrag']
 			</item>
 			<item
-			addcaps="button,webelement,buttontag"
-			capname="buttontag"
-			id="2eb9a870-d103-46cc-8016-f72c02fa7f10"
-			name="BtnBtnSecondary"
-			refimgid="114c3e0c-46c5-4e74-bc4f-fabe85fd49c5"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/div/button[1]"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/div/button[1]
-			</item>
-			<item
 			addcaps="unknown,webelement,spantag"
 			capname="spantag"
 			id="7742cfe7-eea4-47bd-b4e7-9d84be255ab3"
@@ -429,71 +408,6 @@ name="AEKOOE_001Repository">
 				/dom[@domain='192.168.192.139']//section[#'appModule']/div/div/div[2]/div/div[1]/span[@innertext='RS2.WEB: Anmelden']
 			</item>
 			<item
-			addcaps="button,webelement,buttontag"
-			capname="buttontag"
-			id="301d74a8-9aac-4b37-a246-c5ac08a078c7"
-			name="ButtonTagBtn"
-			refimgid="0ba16798-f11b-466d-a72a-199c7401918e"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[2]/div[2]/table/tbody/tr/td[2]/button"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[2]/div[2]/table/tbody/tr/td[2]/button
-			</item>
-			<item
-			addcaps="unknown,webelement,h4tag"
-			capname="h4tag"
-			id="cf98d734-f4ee-44a1-b72a-1e3e4168e55c"
-			name="Antragskategorie1"
-			refimgid="6df31172-b505-42cc-acca-062f7c2b6173"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[1]/h4[@innertext='Antragskategorie' and @visible='True']
-			</item>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="a00145fd-d42f-41d7-a6e7-65bf76eccb22"
-			name="KSelect_drop_down_1_Ebene"
-			refimgid="284beaba-a624-4add-95d4-7b3e0f00872a"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div/div[2]/span[@title='']/span/span[2]"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div/div[2]/span[@title='']/span/span[2]
-			</item>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="bbf8bc12-a8cf-42d6-81aa-ed913fdced0e"
-			name="Krankenversicherung"
-			refimgid="6f8efb10-49f7-458b-88c9-a99b99275411"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div[1]/div[2]/span[@title='']/span/span[@innertext='Krankenversicherung']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div[1]/div[2]/span[@title='']/span/span[@innertext='Krankenversicherung']
-			</item>
-			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="8c381c60-df09-489b-8198-8f34ca52c637"
-			name="KIArrow60DownKIcon_2_Ebene"
-			refimgid="73504c13-26b2-4f2f-b5d8-91b9f9f25188"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div[2]/div[2]/span[@title='']/span/span[2]/span"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div[2]/div[2]/span[@title='']/span/span[2]/span
-			</item>
-			<item
-			addcaps="button,webelement,buttontag"
-			capname="buttontag"
-			id="035625dd-0f92-4f75-b1e7-1bf07e51f28d"
-			name="ButtonTagNeu_Antragskategorie"
-			refimgid="1c2d52af-3ff2-4994-979d-009d3b3e31ef"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[3]/button[@innertext='Neu']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[3]/button[@innertext='Neu']
-			</item>
-			<item
 			addcaps="unknown,webelement,tdtag"
 			capname="tdtag"
 			id="c75d307d-a48f-4542-9c12-80fca8c2dd2b"
@@ -503,17 +417,6 @@ name="AEKOOE_001Repository">
 			robustPath=""
 			searchtimeout="30000ms">
 				/dom[@domain='192.168.192.139']//div[#'panel-request']/div[1]/table/tbody/tr/td[1]
-			</item>
-			<item
-			addcaps="button,webelement,buttontag"
-			capname="buttontag"
-			id="13209f24-2ae6-4e9d-a4dc-e4869d5f3211"
-			name="BtnBtnSecondary1"
-			refimgid="02db0af9-e667-4481-9719-1d0deac6c5de"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[2]/div/button[1]"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[2]/div/button[1]
 			</item>
 			<item
 			addcaps="unknown,webelement,spantag"
@@ -538,26 +441,37 @@ name="AEKOOE_001Repository">
 				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[1]/div[2]/table/tbody/tr/td[2]/button
 			</item>
 			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="a7e4a2c5-9c56-4d1d-a937-3642d8d64236"
-			name="KInput"
-			refimgid="2d368d27-142a-4d64-9906-69a91585cab3"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div/div[2]/span[@title='']/span/span[1]"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div/div[2]/span[@title='']/span/span[1]
-			</item>
-			<item
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
-			id="8596b819-1486-4f27-9d3b-19ae11cff07c"
-			name="ColXs8"
-			refimgid="c338c5cd-0894-4d24-a796-e48696deb8da"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div/div[2]"
+			id="57ceb337-9fcc-4c44-801e-5bcabb52e4c7"
+			name="ModalHeader_Antragskategorie"
+			refimgid="6f606ce7-89c9-40e6-be76-00372fbdb23a"
+			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[1]"
 			robustPath=""
 			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div/div[2]
+				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[1]
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="fd273293-ab02-4e45-8a51-d988cdf3c7e8"
+			name="KIArrow60DownKIcon"
+			refimgid="dc831781-d868-41ff-b814-efe4cdc3289f"
+			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div[2]/div[2]/span[@title='']/span/span[2]/span"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div[2]/div[2]/span[@title='']/span/span[2]/span
+			</item>
+			<item
+			addcaps="button,webelement,buttontag"
+			capname="buttontag"
+			id="6884b057-1350-4f12-bc3d-7dd401889ae9"
+			name="ButtonTagNeu_Antragskategore"
+			refimgid="51ac7be9-4325-4c95-80c3-9e21d92d5bef"
+			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[3]/button[@innertext='Neu']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[3]/button[@innertext='Neu']
 			</item>
 			<basepath>
 				/dom[@domain='192.168.192.139']
@@ -717,7 +631,7 @@ Njn9vo296k/D73fbfL8GElzKQIKkt+klCH8ARJYkm8QxdZEAAAAASUVORK5CYII=
 		<var
 		id="8920357f-4fdb-4cd3-9194-15d35371396d"
 		name="Diagnose">
-			Testdiagnose·zum·Krankengeld
+			Testdiagnose zum Krankengeld
 		</var>
 		<var
 		id="582cbf9c-e416-4945-b397-6e2de312938d"

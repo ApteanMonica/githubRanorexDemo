@@ -101,9 +101,6 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.ButtonTagBtn1' at Center.", repo.Login.ButtonTagBtn1Info, new RecordItemIndex(6));
             repo.Login.ButtonTagBtn1.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.Antragskategorie1' at Center.", repo.Login.Antragskategorie1Info, new RecordItemIndex(7));
-            repo.Login.Antragskategorie1.Click();
-            
         }
 
 #region Image Feature Data
