@@ -173,8 +173,8 @@ namespace AEKOOE_001.Recordings
             
             Report.Log(ReportLevel.Info, "User", Tagesdatum, new RecordItemIndex(5));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Name>'Krankengeld') on item 'Login.FormControl_Select_Tag_Krankengeld'.", repo.Login.FormControl_Select_Tag_KrankengeldInfo, new RecordItemIndex(6));
-            Validate.AttributeContains(repo.Login.FormControl_Select_Tag_KrankengeldInfo, "Name", "Krankengeld");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Antrag auf Krankengeld') on item 'Login.AKAT011RequestFormRow.AntragAufKrankengeld'.", repo.Login.AKAT011RequestFormRow.AntragAufKrankengeldInfo, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.Login.AKAT011RequestFormRow.AntragAufKrankengeldInfo, "InnerText", "Antrag auf Krankengeld");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum' with focus on 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_abInfo, new RecordItemIndex(7));
             repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_ab.PressKeys(Tagesdatum);
@@ -190,33 +190,34 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            // funktioniert wieder en Bug 62089korrigiert ist
-            Report.Log(ReportLevel.Info, "Mouse", "funktioniert wieder en Bug 62089korrigiert ist\r\nMouse Left Click item 'Login.AKAT011RequestFormRow.KSelect' at Center.", repo.Login.AKAT011RequestFormRow.KSelectInfo, new RecordItemIndex(12));
-            repo.Login.AKAT011RequestFormRow.KSelect.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.KInput_Bankverbindung' at Center.", repo.Login.AKAT011RequestFormRow.KInput_BankverbindungInfo, new RecordItemIndex(12));
+            repo.Login.AKAT011RequestFormRow.KInput_Bankverbindung.Click();
             
-            // funktioniert wieder wenn Bug 62089 korrigiert ist
-            Report.Log(ReportLevel.Info, "Mouse", "funktioniert wieder wenn Bug 62089 korrigiert ist\r\nMouse Left Click item 'Login.Auswahl_Bankverbindung' at Center.", repo.Login.Auswahl_BankverbindungInfo, new RecordItemIndex(13));
-            repo.Login.Auswahl_Bankverbindung.Click();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Down}{Tab}'.", new RecordItemIndex(13));
+            Keyboard.Press("{Down}{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Diagnose' with focus on 'Login.AKAT011RequestFormRow.False_Eingabe_Diagnose'.", repo.Login.AKAT011RequestFormRow.False_Eingabe_DiagnoseInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(14));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Diagnose' with focus on 'Login.AKAT011RequestFormRow.False_Eingabe_Diagnose'.", repo.Login.AKAT011RequestFormRow.False_Eingabe_DiagnoseInfo, new RecordItemIndex(15));
             repo.Login.AKAT011RequestFormRow.False_Eingabe_Diagnose.PressKeys(Diagnose);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'Login.AKAT011RequestFormRow.False_Eingabe_Diagnose'.", repo.Login.AKAT011RequestFormRow.False_Eingabe_DiagnoseInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'Login.AKAT011RequestFormRow.False_Eingabe_Diagnose'.", repo.Login.AKAT011RequestFormRow.False_Eingabe_DiagnoseInfo, new RecordItemIndex(16));
             Keyboard.PrepareFocus(repo.Login.AKAT011RequestFormRow.False_Eingabe_Diagnose);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.KInput_Aufenthaltsort' at Center.", repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.KInput_Aufenthaltsort' at Center.", repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, new RecordItemIndex(17));
             repo.Login.AKAT011RequestFormRow.KInput_Aufenthaltsort.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Down' Press with focus on 'Login.AKAT011RequestFormRow.KInput_Aufenthaltsort'.", repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Down' Press with focus on 'Login.AKAT011RequestFormRow.KInput_Aufenthaltsort'.", repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, new RecordItemIndex(18));
             Keyboard.PrepareFocus(repo.Login.AKAT011RequestFormRow.KInput_Aufenthaltsort);
             Keyboard.Press(System.Windows.Forms.Keys.Down, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press with focus on 'Login.AKAT011RequestFormRow.KInput_Aufenthaltsort'.", repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press with focus on 'Login.AKAT011RequestFormRow.KInput_Aufenthaltsort'.", repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, new RecordItemIndex(19));
             Keyboard.PrepareFocus(repo.Login.AKAT011RequestFormRow.KInput_Aufenthaltsort);
             Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.Checkbox_Fremdverschulden' at Center.", repo.Login.AKAT011RequestFormRow.Checkbox_FremdverschuldenInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.Checkbox_Fremdverschulden' at Center.", repo.Login.AKAT011RequestFormRow.Checkbox_FremdverschuldenInfo, new RecordItemIndex(20));
             repo.Login.AKAT011RequestFormRow.Checkbox_Fremdverschulden.Click();
             
         }

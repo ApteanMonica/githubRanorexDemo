@@ -77,7 +77,7 @@ namespace AEKOOE_001
             set { _Tagesdatum = value; }
         }
 
-        string _Diagnose = "Testdiagnose·zum·Krankengeld";
+        string _Diagnose = "Testdiagnose zum Krankengeld";
 
         /// <summary>
         /// Gets or sets the value of variable Diagnose.
@@ -180,7 +180,6 @@ namespace AEKOOE_001
         public partial class LoginAppFolder : RepoGenBaseFolder
         {
             AEKOOE_001RepositoryFolders.AKAT011RequestFormRowFolder _akat011requestformrow;
-            RepoItemInfo _panelheadingInfo;
             RepoItemInfo _text_benutzerInfo;
             RepoItemInfo _passwordInfo;
             RepoItemInfo _logindatadb_dbInfo;
@@ -190,26 +189,18 @@ namespace AEKOOE_001
             RepoItemInfo _card1_button_antraege_Info;
             RepoItemInfo _alertalertinfoInfo;
             RepoItemInfo _formcontrolInfo;
-            RepoItemInfo _formcontrol_select_tag_krankengeldInfo;
             RepoItemInfo _auswahl_bankverbindungInfo;
             RepoItemInfo _btnbtnsecondarysendbtn_absendenInfo;
             RepoItemInfo _tdtag_mit_tagesdatumInfo;
             RepoItemInfo _colmd6colxs12Info;
             RepoItemInfo _antragInfo;
-            RepoItemInfo _btnbtnsecondaryInfo;
             RepoItemInfo _rs2webanmeldenInfo;
-            RepoItemInfo _buttontagbtnInfo;
-            RepoItemInfo _antragskategorie1Info;
-            RepoItemInfo _kselect_drop_down_1_ebeneInfo;
-            RepoItemInfo _krankenversicherungInfo;
-            RepoItemInfo _kiarrow60downkicon_2_ebeneInfo;
-            RepoItemInfo _buttontagneu_antragskategorieInfo;
             RepoItemInfo _sometdtag_neuInfo;
-            RepoItemInfo _btnbtnsecondary1Info;
             RepoItemInfo _krankenversicherung1Info;
             RepoItemInfo _buttontagbtn1Info;
-            RepoItemInfo _kinputInfo;
-            RepoItemInfo _colxs8Info;
+            RepoItemInfo _modalheader_antragskategorieInfo;
+            RepoItemInfo _kiarrow60downkiconInfo;
+            RepoItemInfo _buttontagneu_antragskategoreInfo;
 
             /// <summary>
             /// Creates a new Login  folder.
@@ -218,7 +209,6 @@ namespace AEKOOE_001
                     base("Login", "/dom[@domain='192.168.192.139']", parentFolder, 30000, null, false, "e1232ab5-2b86-4d28-a6fc-d7451804a17e", "")
             {
                 _akat011requestformrow = new AEKOOE_001RepositoryFolders.AKAT011RequestFormRowFolder(this);
-                _panelheadingInfo = new RepoItemInfo(this, "PanelHeading", ".//section[#'appModule']/div/div/div[2]/div/div[1]", "", 30000, null, "baaf8e86-d9cd-470b-9b00-c4637169a98e");
                 _text_benutzerInfo = new RepoItemInfo(this, "Text_benutzer", ".//section[#'appModule']/div/div/div[2]/div/div[2]/form[@action='http://192.168.192.139/521_SP12/#login']/fieldset/div/div/div[1]/?/?/input[@type='text']", "", 30000, null, "38c0cfc1-4c35-45d6-b03f-5ad7eb7354c0");
                 _passwordInfo = new RepoItemInfo(this, "Password", ".//section[#'appModule']/div/div/div[2]/div/div[2]/form[@action='http://192.168.192.139/521_SP12/#login']/fieldset/div/div/div[2]/?/?/input[@type='password']", "", 30000, null, "a703c90b-2828-4e06-a553-193923c90db0");
                 _logindatadb_dbInfo = new RepoItemInfo(this, "LoginDataDb_DB", ".//input[#'login-data-db']", "", 30000, null, "94d766dc-0b5e-4ef6-a22e-1214dccf39a2");
@@ -228,26 +218,18 @@ namespace AEKOOE_001
                 _card1_button_antraege_Info = new RepoItemInfo(this, "Card1_Button_Antraege_", ".//div[#'widget-info']/div/tag/div/div[2]/div/div[1]/?/?/div/span/a[2]/div", "", 30000, null, "7d58ef25-2f08-4790-bc34-54e9766f75e9");
                 _alertalertinfoInfo = new RepoItemInfo(this, "AlertAlertInfo", ".//div[#'panel-request']/div[2]/div[1]/div[1]/div", "", 30000, null, "bc8c0e90-1a09-4fd5-865c-4df73e785745");
                 _formcontrolInfo = new RepoItemInfo(this, "FormControl", ".//div[#'panel-request']/div[2]/div[1]/div[2]/tag/div/div/div/select", "", 30000, null, "42b55ab3-53b9-4478-be37-0ec9f68fcbe9");
-                _formcontrol_select_tag_krankengeldInfo = new RepoItemInfo(this, "FormControl_Select_Tag_Krankengeld", ".//div[#'panel-request']/div[2]/div[1]/div[2]/tag/div/div/div/select[@visible='True']", "", 30000, null, "e2fd22fe-9c1b-4648-bd79-7cb334fd8b2f");
                 _auswahl_bankverbindungInfo = new RepoItemInfo(this, "Auswahl_Bankverbindung", "body/div[4]//ul/li[@innertext='AT351100018481974718']", "", 30000, null, "f658bfd4-adea-457e-a1a9-0ec82cec2c50");
                 _btnbtnsecondarysendbtn_absendenInfo = new RepoItemInfo(this, "BtnBtnSecondarySendBtn_Absenden", ".//div[#'panel-request']/div[2]/div[2]/div/button[1]", "", 30000, null, "3bf2ddc8-5a6b-4584-bee0-a9aa2c55cb31");
                 _tdtag_mit_tagesdatumInfo = new RepoItemInfo(this, "TdTag_mit_Tagesdatum", ".//div[#'requestgrid']/div[2]/table//td[@innertext='$Tagesdatum$']", "", 30000, null, "2ac00e76-ec68-4d29-a392-c6fc0b491328");
                 _colmd6colxs12Info = new RepoItemInfo(this, "ColMd6ColXs12", ".//section[#'appModule']/section/div[1]/div[1]", "", 30000, null, "382e350b-bc9c-4356-8a55-b77fec3a02e2");
                 _antragInfo = new RepoItemInfo(this, "Antrag", ".//section[#'appModule']/section//span[@innertext='Antrag']", "", 30000, null, "551da38a-6b85-4989-8419-2344bf62d3f0");
-                _btnbtnsecondaryInfo = new RepoItemInfo(this, "BtnBtnSecondary", ".//section[#'appModule']/section/div[3]/div/button[1]", "", 30000, null, "2eb9a870-d103-46cc-8016-f72c02fa7f10");
                 _rs2webanmeldenInfo = new RepoItemInfo(this, "RS2WEBAnmelden", ".//section[#'appModule']/div/div/div[2]/div/div[1]/span[@innertext='RS2.WEB: Anmelden']", "", 30000, null, "7742cfe7-eea4-47bd-b4e7-9d84be255ab3");
-                _buttontagbtnInfo = new RepoItemInfo(this, "ButtonTagBtn", ".//section[#'appModule']/section/div[2]/div[2]/table/tbody/tr/td[2]/button", "", 30000, null, "301d74a8-9aac-4b37-a246-c5ac08a078c7");
-                _antragskategorie1Info = new RepoItemInfo(this, "Antragskategorie1", ".//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[1]/h4[@innertext='Antragskategorie' and @visible='True']", "", 30000, null, "cf98d734-f4ee-44a1-b72a-1e3e4168e55c");
-                _kselect_drop_down_1_ebeneInfo = new RepoItemInfo(this, "KSelect_drop_down_1_Ebene", ".//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div/div[2]/span[@title='']/span/span[2]", "", 30000, null, "a00145fd-d42f-41d7-a6e7-65bf76eccb22");
-                _krankenversicherungInfo = new RepoItemInfo(this, "Krankenversicherung", ".//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div[1]/div[2]/span[@title='']/span/span[@innertext='Krankenversicherung']", "", 30000, null, "bbf8bc12-a8cf-42d6-81aa-ed913fdced0e");
-                _kiarrow60downkicon_2_ebeneInfo = new RepoItemInfo(this, "KIArrow60DownKIcon_2_Ebene", ".//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div[2]/div[2]/span[@title='']/span/span[2]/span", "", 30000, null, "8c381c60-df09-489b-8198-8f34ca52c637");
-                _buttontagneu_antragskategorieInfo = new RepoItemInfo(this, "ButtonTagNeu_Antragskategorie", ".//section[#'appModule']/section/div[4]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[3]/button[@innertext='Neu']", "", 30000, null, "035625dd-0f92-4f75-b1e7-1bf07e51f28d");
                 _sometdtag_neuInfo = new RepoItemInfo(this, "SomeTdTag_Neu", ".//div[#'panel-request']/div[1]/table/tbody/tr/td[1]", "", 30000, null, "c75d307d-a48f-4542-9c12-80fca8c2dd2b");
-                _btnbtnsecondary1Info = new RepoItemInfo(this, "BtnBtnSecondary1", ".//section[#'appModule']/section/div[2]/div/button[1]", "", 30000, null, "13209f24-2ae6-4e9d-a4dc-e4869d5f3211");
                 _krankenversicherung1Info = new RepoItemInfo(this, "Krankenversicherung1", ".//section[#'appModule']/section/div[2]/div/button[1]/span[@innertext='Krankenversicherung']", "", 30000, null, "4e823ce4-9eda-4bed-a062-065f07e3d7c6");
                 _buttontagbtn1Info = new RepoItemInfo(this, "ButtonTagBtn1", ".//section[#'appModule']/section/div[1]/div[2]/table/tbody/tr/td[2]/button", "", 30000, null, "08a5bb1b-d2f8-4817-8bfd-f342c1e1ea5a");
-                _kinputInfo = new RepoItemInfo(this, "KInput", ".//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div/div[2]/span[@title='']/span/span[1]", "", 30000, null, "a7e4a2c5-9c56-4d1d-a937-3642d8d64236");
-                _colxs8Info = new RepoItemInfo(this, "ColXs8", ".//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div/div[2]", "", 30000, null, "8596b819-1486-4f27-9d3b-19ae11cff07c");
+                _modalheader_antragskategorieInfo = new RepoItemInfo(this, "ModalHeader_Antragskategorie", ".//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[1]", "", 30000, null, "57ceb337-9fcc-4c44-801e-5bcabb52e4c7");
+                _kiarrow60downkiconInfo = new RepoItemInfo(this, "KIArrow60DownKIcon", ".//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div[2]/div[2]/span[@title='']/span/span[2]/span", "", 30000, null, "fd273293-ab02-4e45-8a51-d988cdf3c7e8");
+                _buttontagneu_antragskategoreInfo = new RepoItemInfo(this, "ButtonTagNeu_Antragskategore", ".//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[3]/button[@innertext='Neu']", "", 30000, null, "6884b057-1350-4f12-bc3d-7dd401889ae9");
             }
 
             /// <summary>
@@ -271,30 +253,6 @@ namespace AEKOOE_001
                 get
                 {
                     return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The PanelHeading item.
-            /// </summary>
-            [RepositoryItem("baaf8e86-d9cd-470b-9b00-c4637169a98e")]
-            public virtual Ranorex.DivTag PanelHeading
-            {
-                get
-                {
-                    return _panelheadingInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PanelHeading item info.
-            /// </summary>
-            [RepositoryItemInfo("baaf8e86-d9cd-470b-9b00-c4637169a98e")]
-            public virtual RepoItemInfo PanelHeadingInfo
-            {
-                get
-                {
-                    return _panelheadingInfo;
                 }
             }
 
@@ -515,30 +473,6 @@ namespace AEKOOE_001
             }
 
             /// <summary>
-            /// The FormControl_Select_Tag_Krankengeld item.
-            /// </summary>
-            [RepositoryItem("e2fd22fe-9c1b-4648-bd79-7cb334fd8b2f")]
-            public virtual Ranorex.SelectTag FormControl_Select_Tag_Krankengeld
-            {
-                get
-                {
-                    return _formcontrol_select_tag_krankengeldInfo.CreateAdapter<Ranorex.SelectTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The FormControl_Select_Tag_Krankengeld item info.
-            /// </summary>
-            [RepositoryItemInfo("e2fd22fe-9c1b-4648-bd79-7cb334fd8b2f")]
-            public virtual RepoItemInfo FormControl_Select_Tag_KrankengeldInfo
-            {
-                get
-                {
-                    return _formcontrol_select_tag_krankengeldInfo;
-                }
-            }
-
-            /// <summary>
             /// The Auswahl_Bankverbindung item.
             /// </summary>
             [RepositoryItem("f658bfd4-adea-457e-a1a9-0ec82cec2c50")]
@@ -659,30 +593,6 @@ namespace AEKOOE_001
             }
 
             /// <summary>
-            /// The BtnBtnSecondary item.
-            /// </summary>
-            [RepositoryItem("2eb9a870-d103-46cc-8016-f72c02fa7f10")]
-            public virtual Ranorex.ButtonTag BtnBtnSecondary
-            {
-                get
-                {
-                    return _btnbtnsecondaryInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The BtnBtnSecondary item info.
-            /// </summary>
-            [RepositoryItemInfo("2eb9a870-d103-46cc-8016-f72c02fa7f10")]
-            public virtual RepoItemInfo BtnBtnSecondaryInfo
-            {
-                get
-                {
-                    return _btnbtnsecondaryInfo;
-                }
-            }
-
-            /// <summary>
             /// The RS2WEBAnmelden item.
             /// </summary>
             [RepositoryItem("7742cfe7-eea4-47bd-b4e7-9d84be255ab3")]
@@ -707,150 +617,6 @@ namespace AEKOOE_001
             }
 
             /// <summary>
-            /// The ButtonTagBtn item.
-            /// </summary>
-            [RepositoryItem("301d74a8-9aac-4b37-a246-c5ac08a078c7")]
-            public virtual Ranorex.ButtonTag ButtonTagBtn
-            {
-                get
-                {
-                    return _buttontagbtnInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonTagBtn item info.
-            /// </summary>
-            [RepositoryItemInfo("301d74a8-9aac-4b37-a246-c5ac08a078c7")]
-            public virtual RepoItemInfo ButtonTagBtnInfo
-            {
-                get
-                {
-                    return _buttontagbtnInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Antragskategorie1 item.
-            /// </summary>
-            [RepositoryItem("cf98d734-f4ee-44a1-b72a-1e3e4168e55c")]
-            public virtual Ranorex.H4Tag Antragskategorie1
-            {
-                get
-                {
-                    return _antragskategorie1Info.CreateAdapter<Ranorex.H4Tag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Antragskategorie1 item info.
-            /// </summary>
-            [RepositoryItemInfo("cf98d734-f4ee-44a1-b72a-1e3e4168e55c")]
-            public virtual RepoItemInfo Antragskategorie1Info
-            {
-                get
-                {
-                    return _antragskategorie1Info;
-                }
-            }
-
-            /// <summary>
-            /// The KSelect_drop_down_1_Ebene item.
-            /// </summary>
-            [RepositoryItem("a00145fd-d42f-41d7-a6e7-65bf76eccb22")]
-            public virtual Ranorex.SpanTag KSelect_drop_down_1_Ebene
-            {
-                get
-                {
-                    return _kselect_drop_down_1_ebeneInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The KSelect_drop_down_1_Ebene item info.
-            /// </summary>
-            [RepositoryItemInfo("a00145fd-d42f-41d7-a6e7-65bf76eccb22")]
-            public virtual RepoItemInfo KSelect_drop_down_1_EbeneInfo
-            {
-                get
-                {
-                    return _kselect_drop_down_1_ebeneInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Krankenversicherung item.
-            /// </summary>
-            [RepositoryItem("bbf8bc12-a8cf-42d6-81aa-ed913fdced0e")]
-            public virtual Ranorex.SpanTag Krankenversicherung
-            {
-                get
-                {
-                    return _krankenversicherungInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Krankenversicherung item info.
-            /// </summary>
-            [RepositoryItemInfo("bbf8bc12-a8cf-42d6-81aa-ed913fdced0e")]
-            public virtual RepoItemInfo KrankenversicherungInfo
-            {
-                get
-                {
-                    return _krankenversicherungInfo;
-                }
-            }
-
-            /// <summary>
-            /// The KIArrow60DownKIcon_2_Ebene item.
-            /// </summary>
-            [RepositoryItem("8c381c60-df09-489b-8198-8f34ca52c637")]
-            public virtual Ranorex.SpanTag KIArrow60DownKIcon_2_Ebene
-            {
-                get
-                {
-                    return _kiarrow60downkicon_2_ebeneInfo.CreateAdapter<Ranorex.SpanTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The KIArrow60DownKIcon_2_Ebene item info.
-            /// </summary>
-            [RepositoryItemInfo("8c381c60-df09-489b-8198-8f34ca52c637")]
-            public virtual RepoItemInfo KIArrow60DownKIcon_2_EbeneInfo
-            {
-                get
-                {
-                    return _kiarrow60downkicon_2_ebeneInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ButtonTagNeu_Antragskategorie item.
-            /// </summary>
-            [RepositoryItem("035625dd-0f92-4f75-b1e7-1bf07e51f28d")]
-            public virtual Ranorex.ButtonTag ButtonTagNeu_Antragskategorie
-            {
-                get
-                {
-                    return _buttontagneu_antragskategorieInfo.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ButtonTagNeu_Antragskategorie item info.
-            /// </summary>
-            [RepositoryItemInfo("035625dd-0f92-4f75-b1e7-1bf07e51f28d")]
-            public virtual RepoItemInfo ButtonTagNeu_AntragskategorieInfo
-            {
-                get
-                {
-                    return _buttontagneu_antragskategorieInfo;
-                }
-            }
-
-            /// <summary>
             /// The SomeTdTag_Neu item.
             /// </summary>
             [RepositoryItem("c75d307d-a48f-4542-9c12-80fca8c2dd2b")]
@@ -871,30 +637,6 @@ namespace AEKOOE_001
                 get
                 {
                     return _sometdtag_neuInfo;
-                }
-            }
-
-            /// <summary>
-            /// The BtnBtnSecondary1 item.
-            /// </summary>
-            [RepositoryItem("13209f24-2ae6-4e9d-a4dc-e4869d5f3211")]
-            public virtual Ranorex.ButtonTag BtnBtnSecondary1
-            {
-                get
-                {
-                    return _btnbtnsecondary1Info.CreateAdapter<Ranorex.ButtonTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The BtnBtnSecondary1 item info.
-            /// </summary>
-            [RepositoryItemInfo("13209f24-2ae6-4e9d-a4dc-e4869d5f3211")]
-            public virtual RepoItemInfo BtnBtnSecondary1Info
-            {
-                get
-                {
-                    return _btnbtnsecondary1Info;
                 }
             }
 
@@ -947,50 +689,74 @@ namespace AEKOOE_001
             }
 
             /// <summary>
-            /// The KInput item.
+            /// The ModalHeader_Antragskategorie item.
             /// </summary>
-            [RepositoryItem("a7e4a2c5-9c56-4d1d-a937-3642d8d64236")]
-            public virtual Ranorex.SpanTag KInput
+            [RepositoryItem("57ceb337-9fcc-4c44-801e-5bcabb52e4c7")]
+            public virtual Ranorex.DivTag ModalHeader_Antragskategorie
             {
                 get
                 {
-                    return _kinputInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                    return _modalheader_antragskategorieInfo.CreateAdapter<Ranorex.DivTag>(true);
                 }
             }
 
             /// <summary>
-            /// The KInput item info.
+            /// The ModalHeader_Antragskategorie item info.
             /// </summary>
-            [RepositoryItemInfo("a7e4a2c5-9c56-4d1d-a937-3642d8d64236")]
-            public virtual RepoItemInfo KInputInfo
+            [RepositoryItemInfo("57ceb337-9fcc-4c44-801e-5bcabb52e4c7")]
+            public virtual RepoItemInfo ModalHeader_AntragskategorieInfo
             {
                 get
                 {
-                    return _kinputInfo;
+                    return _modalheader_antragskategorieInfo;
                 }
             }
 
             /// <summary>
-            /// The ColXs8 item.
+            /// The KIArrow60DownKIcon item.
             /// </summary>
-            [RepositoryItem("8596b819-1486-4f27-9d3b-19ae11cff07c")]
-            public virtual Ranorex.DivTag ColXs8
+            [RepositoryItem("fd273293-ab02-4e45-8a51-d988cdf3c7e8")]
+            public virtual Ranorex.SpanTag KIArrow60DownKIcon
             {
                 get
                 {
-                    return _colxs8Info.CreateAdapter<Ranorex.DivTag>(true);
+                    return _kiarrow60downkiconInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
             /// <summary>
-            /// The ColXs8 item info.
+            /// The KIArrow60DownKIcon item info.
             /// </summary>
-            [RepositoryItemInfo("8596b819-1486-4f27-9d3b-19ae11cff07c")]
-            public virtual RepoItemInfo ColXs8Info
+            [RepositoryItemInfo("fd273293-ab02-4e45-8a51-d988cdf3c7e8")]
+            public virtual RepoItemInfo KIArrow60DownKIconInfo
             {
                 get
                 {
-                    return _colxs8Info;
+                    return _kiarrow60downkiconInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonTagNeu_Antragskategore item.
+            /// </summary>
+            [RepositoryItem("6884b057-1350-4f12-bc3d-7dd401889ae9")]
+            public virtual Ranorex.ButtonTag ButtonTagNeu_Antragskategore
+            {
+                get
+                {
+                    return _buttontagneu_antragskategoreInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonTagNeu_Antragskategore item info.
+            /// </summary>
+            [RepositoryItemInfo("6884b057-1350-4f12-bc3d-7dd401889ae9")]
+            public virtual RepoItemInfo ButtonTagNeu_AntragskategoreInfo
+            {
+                get
+                {
+                    return _buttontagneu_antragskategoreInfo;
                 }
             }
 
@@ -1028,6 +794,7 @@ namespace AEKOOE_001
             RepoItemInfo _testdatei_name_testdateiInfo;
             RepoItemInfo _arbeitsunfaehigkeitsmeldung_dokumenttypInfo;
             RepoItemInfo _bezeichnung_dokumentInfo;
+            RepoItemInfo _antragaufkrankengeldInfo;
 
             /// <summary>
             /// Creates a new AKAT011RequestFormRow  folder.
@@ -1053,6 +820,7 @@ namespace AEKOOE_001
                 _testdatei_name_testdateiInfo = new RepoItemInfo(this, "Testdatei_Name_Testdatei", "div[25]/?/?/tag[@tagname='dmsfield']/div//tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[1]/div[1]/div[2]/form[@action='http://192.168.192.139/521_SP12/#request']/?/?/ul/li/span[2]/span[@title>'Testdatei Antrag Krankgen']", "", 30000, null, "b09ff1c3-f136-4307-81a8-2747cc7992d6");
                 _arbeitsunfaehigkeitsmeldung_dokumenttypInfo = new RepoItemInfo(this, "Arbeitsunfaehigkeitsmeldung_Dokumenttyp", "div[25]//tag[@tagname='dmscontrol']/div/div[1]/div[2]/table/tbody/?/?/td[@innertext>'Arbeitsunfähigkeitsmeldun']", "", 30000, null, "ff0de1e4-4933-4e1e-b57f-2053f30a3ee4");
                 _bezeichnung_dokumentInfo = new RepoItemInfo(this, "Bezeichnung_Dokument", "div[25]//tag[@tagname='dmscontrol']/div/div[1]/div[2]/table/tbody/?/?/td[@innertext='Test_BAR']", "", 30000, null, "edf2f2a2-a62f-4c22-9454-38ad3b6a8ab1");
+                _antragaufkrankengeldInfo = new RepoItemInfo(this, "AntragAufKrankengeld", "div[1]/div/?/?/h4[@innertext='Antrag auf Krankengeld']", "", 30000, null, "865079f8-e829-40f9-8bee-93fb4609f3c3");
             }
 
             /// <summary>
@@ -1508,6 +1276,30 @@ namespace AEKOOE_001
                 get
                 {
                     return _bezeichnung_dokumentInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AntragAufKrankengeld item.
+            /// </summary>
+            [RepositoryItem("865079f8-e829-40f9-8bee-93fb4609f3c3")]
+            public virtual Ranorex.H4Tag AntragAufKrankengeld
+            {
+                get
+                {
+                    return _antragaufkrankengeldInfo.CreateAdapter<Ranorex.H4Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AntragAufKrankengeld item info.
+            /// </summary>
+            [RepositoryItemInfo("865079f8-e829-40f9-8bee-93fb4609f3c3")]
+            public virtual RepoItemInfo AntragAufKrankengeldInfo
+            {
+                get
+                {
+                    return _antragaufkrankengeldInfo;
                 }
             }
         }

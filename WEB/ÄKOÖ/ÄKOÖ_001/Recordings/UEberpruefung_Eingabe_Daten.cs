@@ -45,7 +45,7 @@ namespace AEKOOE_001.Recordings
             berufsunfaehig_bis = "Tagesdatum_plus_7";
             SVNR = "1679050956";
             Bankverbindung_1 = "AT351100018481974718";
-            Diagnose = "Testdiagnose·zum·Krankengeld";
+            Diagnose = "Testdiagnose zum Krankengeld";
             Tagesdatum = "";
             Tagesdatum_plus_7_Tage = "";
         }
