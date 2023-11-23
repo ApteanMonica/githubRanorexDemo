@@ -62,10 +62,47 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="e3962776-67c5-4746-86aa-dc31dffdfff7"
-			sourcename="ItemRecorderEditor">
+			id="15b14dd3-daff-4250-bceb-5ec91143b404"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="-1340,3,368,17"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="accessiblehelp"
+					type="System.String">
+						Suchtext...
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Text
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+					</attribute>
+				</element>
 				<path>
-					/form[@controlname='frmKlAb']/?/?/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup1']/?/?/text[@controlname='dfSearchExpression']
+					/form[@controlname='frmKlAb']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/text[@controlname='dfSearchExpression']/text[@accessiblerole='Text']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -87,10 +124,47 @@ mode="Global">
 				</binding>
 			</bindings>
 			<info
-			id="e3962776-67c5-4746-86aa-dc31dffdfff7"
-			sourcename="ItemRecorderEditor">
+			id="15b14dd3-daff-4250-bceb-5ec91143b404"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="-1340,3,368,17"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="accessiblehelp"
+					type="System.String">
+						Suchtext...
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Text
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+					</attribute>
+				</element>
 				<path>
-					/form[@controlname='frmKlAb']/?/?/form[@controlname='frmSearchPage']/?/?/container[@controlname='SearchGroup1']/?/?/text[@controlname='dfSearchExpression']
+					/form[@controlname='frmKlAb']/container[@controlname='searchContainer']/form[@controlname='frmSearchPage']/container[@controlname='RibbonBar']/container[@controlname='SearchGroup1']/container[@controlname='simpleSearch']/text[@controlname='dfSearchExpression']/text[@accessiblerole='Text']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -147,6 +221,74 @@ mode="Global">
 				OP-Tabelle
 			</matchvalue>
 		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="40e63cd5-a330-4230-98ab-6181bb50ba58">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Adr_Nr_NEU">
+				</binding>
+			</bindings>
+			<info
+			id="8db32807-ab99-4cd1-b67d-b219f826498c"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="-1297,55,66,17"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						200001
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Konto:
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Text
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Focusable
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+						200001
+					</attribute>
+				</element>
+				<path>
+					/form[@controlname='frmKlAb']/container[@controlname='ClientArea']/text[@controlname='dfAdr_nr']/text[@accessiblename='Konto:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				200001
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -184,10 +326,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="e41794e8-1fa7-4c4f-82d1-98bb6fd40d73"
+			id="e5f59e8a-6634-4561-912f-186c98fa850e"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']
+					/form[@controlname='tblBuop']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -218,6 +360,26 @@ mode="Global">
 				yourtext
 			</matchvalue>
 		</validationitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="dcc6981f-81a1-4fdb-acab-3ab02390dc50"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e41794e8-1fa7-4c4f-82d1-98bb6fd40d73"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblBuop']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 5']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"

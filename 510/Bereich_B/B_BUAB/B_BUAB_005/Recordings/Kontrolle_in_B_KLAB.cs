@@ -131,11 +131,11 @@ namespace B_BUAB_005.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKlAb.DfSearchExpression' at Center.", repo.FrmKlAb.DfSearchExpressionInfo, new RecordItemIndex(0));
-            repo.FrmKlAb.DfSearchExpression.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKlAb.TextSuchfeld' at Center.", repo.FrmKlAb.TextSuchfeldInfo, new RecordItemIndex(0));
+            repo.FrmKlAb.TextSuchfeld.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Adr_Nr_NEU' with focus on 'FrmKlAb.DfSearchExpression'.", repo.FrmKlAb.DfSearchExpressionInfo, new RecordItemIndex(1));
-            repo.FrmKlAb.DfSearchExpression.PressKeys(Adr_Nr_NEU);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Adr_Nr_NEU' with focus on 'FrmKlAb.TextSuchfeld'.", repo.FrmKlAb.TextSuchfeldInfo, new RecordItemIndex(1));
+            repo.FrmKlAb.TextSuchfeld.PressKeys(Adr_Nr_NEU);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKlAb.PbPerformSimpleSearch' at Center.", repo.FrmKlAb.PbPerformSimpleSearchInfo, new RecordItemIndex(2));
             repo.FrmKlAb.PbPerformSimpleSearch.Click();
@@ -143,22 +143,28 @@ namespace B_BUAB_005.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FrmKlAb.PbOPLaden'.", repo.FrmKlAb.PbOPLadenInfo, new RecordItemIndex(3));
             Validate.Exists(repo.FrmKlAb.PbOPLadenInfo);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKlAb.PbOPLaden' at Center.", repo.FrmKlAb.PbOPLadenInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Adr_Nr_NEU) on item 'FrmKlAb.Konto'.", repo.FrmKlAb.KontoInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.FrmKlAb.KontoInfo, "Text", Adr_Nr_NEU);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmKlAb.PbOPLaden' at Center.", repo.FrmKlAb.PbOPLadenInfo, new RecordItemIndex(5));
             repo.FrmKlAb.PbOPLaden.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblBuop.OP_Tabelle.Row1'", repo.TblBuop.OP_Tabelle.Row1Info, new ActionTimeout(120000), new RecordItemIndex(5));
-            repo.TblBuop.OP_Tabelle.Row1Info.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblBuop.TitleBar100OPs200007KUNDEFUERBB'", repo.TblBuop.TitleBar100OPs200007KUNDEFUERBBInfo, new ActionTimeout(120000), new RecordItemIndex(6));
+            repo.TblBuop.TitleBar100OPs200007KUNDEFUERBBInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblBuop.TitleBar100OPs200007KUNDEFUERBB'.", repo.TblBuop.TitleBar100OPs200007KUNDEFUERBBInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblBuop.TitleBar100OPs200007KUNDEFUERBB'.", repo.TblBuop.TitleBar100OPs200007KUNDEFUERBBInfo, new RecordItemIndex(7));
             Validate.Exists(repo.TblBuop.TitleBar100OPs200007KUNDEFUERBBInfo);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg) on item 'TblBuop.OP_Tabelle.ColBelegnrRow5'.", repo.TblBuop.OP_Tabelle.ColBelegnrRow5Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblBuop.OP_Tabelle.Row1'", repo.TblBuop.OP_Tabelle.Row1Info, new ActionTimeout(120000), new RecordItemIndex(8));
+            repo.TblBuop.OP_Tabelle.Row1Info.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Beleg) on item 'TblBuop.OP_Tabelle.ColBelegnrRow5'.", repo.TblBuop.OP_Tabelle.ColBelegnrRow5Info, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColBelegnrRow5Info, "Text", Beleg);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Belegdatum) on item 'TblBuop.OP_Tabelle.ColDtbelegRow5'.", repo.TblBuop.OP_Tabelle.ColDtbelegRow5Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Belegdatum) on item 'TblBuop.OP_Tabelle.ColDtbelegRow5'.", repo.TblBuop.OP_Tabelle.ColDtbelegRow5Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.TblBuop.OP_Tabelle.ColDtbelegRow5Info, "Text", Belegdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Text1_NEU) on item 'TblBuop.OP_Tabelle.ColTextRow5'.", repo.TblBuop.OP_Tabelle.ColTextRow5Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Text1_NEU) on item 'TblBuop.OP_Tabelle.ColTextRow5'.", repo.TblBuop.OP_Tabelle.ColTextRow5Info, new RecordItemIndex(11));
             Validate.AttributeContains(repo.TblBuop.OP_Tabelle.ColTextRow5Info, "Text", Text1_NEU);
             
         }
