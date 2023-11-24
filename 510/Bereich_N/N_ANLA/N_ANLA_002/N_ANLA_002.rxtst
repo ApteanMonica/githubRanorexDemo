@@ -3,20 +3,6 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
-			id="0369fcef-0ddc-4aa0-bda3-f277dd84c7ff"
-			name="Einlesen_Programmversion"
-			ref="81e808b3-a2d3-45da-aee9-6db685e584cc"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Programmversion"
-					datasourceid="7a47bbc7-7fdf-4fc7-bfe8-6d2f5a42d40b"
-					variableid="bb45035f-f206-4842-80f2-25abf61c3a59"
-					variablename="Programmversion">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="1963b316-846c-4eb8-8f8e-2b30cdfd803b"
 			name="Umbuchung_Maske_2"
 			ref="bb177c96-7ab1-458f-8a27-5d4ec8c82419"
@@ -71,16 +57,16 @@
 					variablename="GJ">
 					</var>
 					<var
-					dataname="Anlage_G"
-					datasourceid="7a47bbc7-7fdf-4fc7-bfe8-6d2f5a42d40b"
-					variableid="1091f330-6c23-4fa4-aa24-0d258f936499"
-					variablename="Anlage_G">
-					</var>
-					<var
 					dataname="Anlage_A"
 					datasourceid="7a47bbc7-7fdf-4fc7-bfe8-6d2f5a42d40b"
 					variableid="0e6111b0-b487-49cc-a757-d0197abe9d81"
 					variablename="Anlage_A">
+					</var>
+					<var
+					dataname="Anlage_G"
+					datasourceid="7a47bbc7-7fdf-4fc7-bfe8-6d2f5a42d40b"
+					variableid="1091f330-6c23-4fa4-aa24-0d258f936499"
+					variablename="Anlage_G">
 					</var>
 				</databinding>
 			</testmodule>
@@ -155,16 +141,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm_2"
-					datasourceid="7a47bbc7-7fdf-4fc7-bfe8-6d2f5a42d40b"
-					variableid="e73f94c6-8aee-4884-ae30-df8d111cdc4d"
-					variablename="Programm_2">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="7a47bbc7-7fdf-4fc7-bfe8-6d2f5a42d40b"
 					variableid="9614aa9d-f36f-44ea-85ca-244a7b31290b"
 					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_2"
+					datasourceid="7a47bbc7-7fdf-4fc7-bfe8-6d2f5a42d40b"
+					variableid="e73f94c6-8aee-4884-ae30-df8d111cdc4d"
+					variablename="Programm_2">
 					</var>
 				</databinding>
 			</testmodule>
@@ -213,12 +199,16 @@
 				</description>
 				<parameters>
 					<param
+					name="Startfile"
+					value="C:\Testdaten\Allgemein\Start.bat">
+					</param>
+					<param
 					name="Programm"
 					value="N_ANLA">
 					</param>
 					<param
-					name="Startfile"
-					value="C:\Testdaten\Allgemein\Start.bat">
+					name="Programm_2"
+					value="N_LISTEN Aufrufart ANLASP">
 					</param>
 					<param
 					name="Anlage_C"
@@ -243,10 +233,6 @@
 					<param
 					name="GJ"
 					value="2022">
-					</param>
-					<param
-					name="Programm_2"
-					value="N_LISTEN /Aufrufart = ANLASP">
 					</param>
 					<param
 					name="Buchungsdatum"
@@ -372,10 +358,6 @@
 							name="StartAUT">
 							</testmodule>
 						</setup>
-						<testmodule
-						id="0369fcef-0ddc-4aa0-bda3-f277dd84c7ff"
-						name="Einlesen_Programmversion">
-						</testmodule>
 						<testmodule
 						id="72938b99-af87-411f-a54c-3720a4105e93"
 						name="Zusammenfuehren_Teil_1">

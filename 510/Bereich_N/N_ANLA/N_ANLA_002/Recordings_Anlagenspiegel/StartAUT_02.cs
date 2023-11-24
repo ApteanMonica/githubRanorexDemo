@@ -41,7 +41,7 @@ namespace N_ANLA_002.Recordings_Anlagenspiegel
         /// </summary>
         public StartAUT_02()
         {
-            Programm_2 = "N_LISTEN /Aufrufart = ANLASP";
+            Programm_2 = "N_LISTEN Aufrufart ANLASP";
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
         }
 
