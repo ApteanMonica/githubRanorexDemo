@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="892c439a-3e50-43df-a445-13a42f234f91"
+id="daa9ba9f-c059-4314-8438-b7690760b8b4"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,32 +19,57 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="CloseAUT_03"
+	classname="Pruefen_N_ANLA_geschlossen"
 	namespace="N_ANLA_004.Recordings">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
-		<closeapprecorditem
+		<WaitForRecordItem
 		enabled="True"
-		graceperiod="1000ms"
-		method="CloseWindow"
-		optional="False"
-		searchpropertyid="abf5587b-d763-4679-8dfd-ea81d3ed369c">
+		optional="True"
+		searchpropertyid="2dca88b4-609d-4c4e-957d-0361f7db8891"
+		waitaction="NotExists"
+		waittimeout="30000ms">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="e998a979-02fc-4ceb-9312-00e714d56f22"
+			id="2272bff5-a5dd-4b37-a676-5c07c4c5c036"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='frmAnfi']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='frmAnla']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</closeapprecorditem>
+		</WaitForRecordItem>
+		<validationitem
+		action="NotExists"
+		enabled="True"
+		optional="True"
+		searchpropertyid="dd6dec1a-03ca-4efc-a672-1ee1455dcf40">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2272bff5-a5dd-4b37-a676-5c07c4c5c036"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmAnla']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="ff1b201e-e919-416c-a5c6-90eb72284f24"
@@ -61,7 +86,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		CloseAUT_03.UserCode.cs
+		Pruefen_N_ANLA_geschlossen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

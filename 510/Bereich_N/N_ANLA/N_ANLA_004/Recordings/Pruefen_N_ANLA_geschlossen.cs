@@ -24,60 +24,34 @@ namespace N_ANLA_004.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT_03 recording.
+    ///The Pruefen_N_ANLA_geschlossen recording.
     /// </summary>
-    [TestModule("2e4d3c44-06ba-4a47-ae48-9e5ae95f83e6", ModuleType.Recording, 1)]
-    public partial class StartAUT_03 : ITestModule
+    [TestModule("daa9ba9f-c059-4314-8438-b7690760b8b4", ModuleType.Recording, 1)]
+    public partial class Pruefen_N_ANLA_geschlossen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_ANLA_004.N_ANLA_004Repository repository.
         /// </summary>
         public static global::N_ANLA_004.N_ANLA_004Repository repo = global::N_ANLA_004.N_ANLA_004Repository.Instance;
 
-        static StartAUT_03 instance = new StartAUT_03();
+        static Pruefen_N_ANLA_geschlossen instance = new Pruefen_N_ANLA_geschlossen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT_03()
+        public Pruefen_N_ANLA_geschlossen()
         {
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm_2 = "N_STAMM Aufrufart ANFI";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT_03 Instance
+        public static Pruefen_N_ANLA_geschlossen Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Startfile;
-
-        /// <summary>
-        /// Gets or sets the value of variable Startfile.
-        /// </summary>
-        [TestVariable("bb167b43-31dd-4b1c-aa95-046065fe1021")]
-        public string Startfile
-        {
-            get { return _Startfile; }
-            set { _Startfile = value; }
-        }
-
-        string _Programm_2;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm_2.
-        /// </summary>
-        [TestVariable("916f6945-3e1e-4ec4-9b6a-d6282ad73243")]
-        public string Programm_2
-        {
-            get { return _Programm_2; }
-            set { _Programm_2 = value; }
-        }
 
 #endregion
 
@@ -105,14 +79,15 @@ namespace N_ANLA_004.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_2 in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm_2, "", false);
+            try {
+                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 30s to not exist. Associated repository item: 'FrmAnla.TitleBar100AVZAnlagen'", repo.FrmAnla.TitleBar100AVZAnlagenInfo, new ActionTimeout(30000), new RecordItemIndex(0));
+                repo.FrmAnla.TitleBar100AVZAnlagenInfo.WaitForNotExists(30000);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmAnfi.TitleBar100AVZFirmenstamm'", repo.FrmAnfi.TitleBar100AVZFirmenstammInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmAnfi.TitleBar100AVZFirmenstammInfo.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'AVZ-Firmenstamm') on item 'FrmAnfi.TitleBar100AVZFirmenstamm'.", repo.FrmAnfi.TitleBar100AVZFirmenstammInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmAnfi.TitleBar100AVZFirmenstammInfo, "Text", "AVZ-Firmenstamm");
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating NotExists on item 'FrmAnla.TitleBar100AVZAnlagen'.", repo.FrmAnla.TitleBar100AVZAnlagenInfo, new RecordItemIndex(1));
+                Validate.NotExists(repo.FrmAnla.TitleBar100AVZAnlagenInfo, null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
         }
 
