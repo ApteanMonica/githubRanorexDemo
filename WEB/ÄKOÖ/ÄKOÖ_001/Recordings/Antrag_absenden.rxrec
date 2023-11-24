@@ -50,65 +50,6 @@ mode="Global">
 		</var>
 	</variables>
 	<recorditems>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="c64fa4ca-4bf9-4280-9e1a-2f25d919968e"
-		waitaction="Exists"
-		waittimeout="120000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="c75d307d-a48f-4542-9c12-80fca8c2dd2b"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, tdtag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="tdtag"
-				rect="943,185,573,40"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						td
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="style"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[1]/table/tbody/tr/td[1]
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="False"
@@ -554,6 +495,65 @@ mode="Global">
 				Neu
 			</matchvalue>
 		</validationitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="c64fa4ca-4bf9-4280-9e1a-2f25d919968e"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c75d307d-a48f-4542-9c12-80fca8c2dd2b"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, tdtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="tdtag"
+				rect="943,185,573,40"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						td
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[1]/table/tbody/tr/td[1]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 	</recorditems>
 	<repository
 	id="ea8dc27d-4b43-438c-bd14-00e352da043f"
