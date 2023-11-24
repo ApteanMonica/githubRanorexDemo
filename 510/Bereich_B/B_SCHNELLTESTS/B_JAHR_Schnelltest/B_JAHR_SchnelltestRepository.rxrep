@@ -1,0 +1,377 @@
+﻿<repository
+id="1246a981-35b9-4bb6-8f92-896f0b5ef296"
+name="B_JAHR_SchnelltestRepository">
+	<codegen
+	classname="B_JAHR_SchnelltestRepository"
+	namespace="B_JAHR_Schnelltest">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="245624a7-da67-4257-81b6-9426e362986f"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		capname="form"
+		id="39769a1d-b3e3-4d46-894f-d2ddf518e3fd"
+		isrooted="True"
+		name="Main_530_tblMain_510_frmMain"
+		refimgid="d668ad3c-9a41-4775-a8f7-6cccf3b19f06"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="74855842-374e-4eef-b9a1-8a565578d604"
+			name="TitleBar100VerwaltenGeschaeftsjahr"
+			refimgid="e598a705-23c8-4880-88ee-cd89a6756545"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname~'Main']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="db648043-58f5-49d2-8d2c-eeac0f3106e4"
+			name="PbCommonNeues"
+			refimgid="4f3cbbc5-d401-4a19-b68c-daceca0a203a"
+			refpath="/form[@controlname='frmMain']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Neues']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname~'Main']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Neues']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="4eb5fcfe-2711-4261-af07-8c533763d16e"
+			name="PbStandard1"
+			refimgid="53365d29-ef43-4f13-83bf-e328bf36353b"
+			refpath="/form[@controlname='frmMain']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbStandard1']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname~'Main']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbStandard1']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="fe792f41-c4e6-41ad-8930-37b952f58bdd"
+			name="Schliessen"
+			refimgid="4ded0edc-f912-4962-8ca9-8e2cabb1020b"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname~'Main']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="6e93e769-a862-4d17-80b7-a9ac5169b131"
+			name="PbCommonJournalzeilen"
+			refimgid="5c8ff05c-8eda-44fe-b815-d50b9cc3e604"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname~'Main']/container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup1']/button[@controlname='pbCommon_Journalzeilen']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="table"
+			id="7ea00e1a-c3d3-4795-b19c-88d3fb5a81ec"
+			name="Tabelle_530"
+			refimgid="91f5e0e3-aa6b-438d-b664-1974d76d19af"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname~'Main']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="table"
+			id="e062f9f4-68b5-4f63-b06a-ee35b54aa4b0"
+			name="Tabelle_510"
+			refimgid="b771c25d-2831-4aa1-ae8e-38eb215032bb"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname~'Main']/container[@controlname='ClientArea']/container[@controlname='tblGjhr']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+			</item>
+			<folder
+			capname="table"
+			id="2e68ec69-f51b-401f-a55e-05fa07c8df8a"
+			isrooted="True"
+			name="Tabelle_510_530"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="row"
+				id="9f3d7e7c-54fb-4889-b604-9de4855bd3ac"
+				name="Zeile_mit_Jahr_NEU"
+				refimgid="b771c25d-2831-4aa1-ae8e-38eb215032bb"
+				robustPath=""
+				searchtimeout="5000ms">
+					/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_NEU]
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="f97fe9e1-8c8d-4c25-a5e0-1b9d8bdfad64"
+				name="Column0_in_Zeile_mit_Jahr_NEU"
+				refimgid="b771c25d-2831-4aa1-ae8e-38eb215032bb"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_NEU]/cell[@accessiblename~'Column 0']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="40e5a5cb-0812-4e82-a817-be7097013c95"
+				name="ColGjhrBez_in_Zeile_mit_Jahr_NEU"
+				refimgid="1a344103-7d22-449b-abb9-4330405dd596"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_NEU]/cell[@accessiblename~'colGjhr_bez']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="99ee8fc8-0960-4bc3-8b1d-4efc56df687e"
+				name="ColGjhrPerivon_in_Zeile_mit_Jahr_NEU"
+				refimgid="a470f378-2989-405c-9024-e05590188bf5"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_NEU]/cell[@accessiblename~'colGjhr_perivon']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="48697640-b058-47c7-943f-e89269e9819f"
+				name="ColGjhrPeribis_in_Zeile_mit_Jahr_NEU"
+				refimgid="81bf33e2-c82c-41ee-b5ed-55375a812e7e"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_NEU]/cell[@accessiblename~'colGjhr_peribis']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="f87b87c2-c0c0-4b39-91c8-0308c90919ba"
+				name="ColGjhrPerivonKore_in_Zeile_mit_Jahr_NEU"
+				refimgid="44ecd36f-5304-400e-8a9b-de4e295bbf71"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_NEU]/cell[@accessiblename~'colGjhr_perivon_kore']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="7e89bbe0-6b0b-4aa7-b995-5a1ecfec2d38"
+				name="ColGjhrPeribisKore_in_Zeile_mit_Jahr_NEU"
+				refimgid="cf332a01-10d5-46e6-b19f-3b4c531c6b02"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_NEU]/cell[@accessiblename~'colGjhr_peribis_kore']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="b24fa285-7726-4d8e-81e0-ff2ebedeadbc"
+				name="ColGjhrDtvon_in_Zeile_mit_Jahr_NEU"
+				refimgid="ac8a6df4-edb4-407a-9a4c-74293c704734"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_NEU]/cell[@accessiblename~'colGjhr_dtvon']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="600aac77-2d07-4bf5-97da-972e9afefb89"
+				name="ColGjhrDtbis_in_Zeile_mit_Jahr_NEU"
+				refimgid="7633819b-3eaa-4343-9149-10bfa04c6dee"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_NEU]/cell[@accessiblename~'colGjhr_dtbis']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="row"
+				id="18601465-9521-4f8f-9ef1-e999067c6ddf"
+				name="Zeile_mit_Jahr_ALT"
+				refimgid="b771c25d-2831-4aa1-ae8e-38eb215032bb"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_ALT]
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="e7cdea55-dc36-403d-a315-9253ca18fd2b"
+				name="Column0_in_Zeile_mit_Jahr_ALT"
+				refimgid="b771c25d-2831-4aa1-ae8e-38eb215032bb"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole~'Row' and @accessiblevalue~$Jahr_ALT]/cell[@accessiblename~'Column 0']
+				</item>
+				<basepath>
+					/form[@controlname~'Main']/container/?/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname~'Main']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAftJREFUOE+Vk89rE0EUxxfFixdXSVDclKAL2cTuslm3SXdn0EMOetB/
+IDR4ya2X4o/QeyDkJngWLSFnKd6qQUxQTKHaNZ4s+gcIEhA8eLDZr+9NrBaSPeTBY76zM+8zX2bn
+aRxxLA4wkVgk44mM41jeUcWOIyDEYhmGAg/uCWhMW10VSJ8XyOUEymUB/ZyATVB/ReD0GQHPmw85
+cYoBkLhkCnz/RtZIW5YADiV+/ZTIsaZvXw8kgiAJQJu/fJa4aNDmWGL7mcSV5ane2BBYXycwac9N
+AEx+h/jwUVM2d/c0vNs9CdeVeB9p2H6+hLwlsUf64aPl+YD4MMTNGyHu3vexTyCLCp5s5bE/0uDY
+Ei9fXUD0ScMK3cdcAGKBEi0O3up4/LQA/6pE/81ZbG76uH5N4DXpW7dDVZDP55FKpWDb9jEA/YXj
+1KTMZAy60P9RKBRmAZ7nYTgcol6vo9Vqod/vYzweo9lsotvtqkJ6d2rUdX0WYFmWWuTo9XpqrFQq
+amT7fMBoNFJz13WTAe12myxnlObodDoolUpYW6upebVaVfsTAWy/0WggiiLUatOiI+s7Oy9gmpfp
+xZZnAXwxHOwgm80qfRSDweCvmkY6nZ4CuKu4MRgQBIFy4fu+mjuOA8MwUCwWVZqm+S/ZgaYxgFqS
+u4ppiyQX/xhL/AEXSTEjVw04gQAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="285c5274-36d4-445f-a166-2426404ac2fd"
+		isrooted="True"
+		name="DlgJahr"
+		refpath="/form[@controlname='dlgJahr']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="e84bb9c0-7bb6-4e5a-b438-be1c3e8833a9"
+			name="TitleBar100NeuesJahr"
+			refimgid="0ad35c63-506e-4363-a1bb-03096cd06d65"
+			refpath="/form[@controlname='dlgJahr']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgJahr']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="abd43d5b-6fd8-47a8-b4f6-520bf5cf89bf"
+			name="PbOk"
+			refimgid="074bdb40-ed89-4c9a-9ad8-abda148d084c"
+			refpath="/form[@controlname='dlgJahr']/button[@controlname='pbOk']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgJahr']/button[@controlname='pbOk']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="853925d7-f817-4802-9c36-9433a85f9426"
+			name="Text"
+			refimgid="493dfa23-9498-472a-a973-9098a1cf6490"
+			refpath="/form[@controlname='dlgJahr']/text[@controlname='dfJahr']/text[@accessiblerole='Text']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgJahr']/text[@controlname='dfJahr']/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="497cdee5-23cc-4d9b-b2b6-8beb174ed2b1"
+			name="DatumEnde"
+			refimgid="7bc8251a-db7b-40a2-96ca-01cb6885e09b"
+			refpath="/form[@controlname='dlgJahr']/text[@controlname='dfDatumV']/text[@accessiblename='Datum Ende']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgJahr']/text[@controlname='dfDatumV']/text[@accessiblename='Datum Ende']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="a2a7dbd3-98b9-4dfa-a367-e8d4936743b9"
+			name="DatumEnde1"
+			refimgid="b11c6d96-a05a-4ddd-b92c-caa189c19e6e"
+			refpath="/form[@controlname='dlgJahr']/text[@controlname='dfDatumB']/text[@accessiblename='Datum Ende']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgJahr']/text[@controlname='dfDatumB']/text[@accessiblename='Datum Ende']
+			</item>
+			<basepath>
+				/form[@controlname='dlgJahr']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH7SURBVDhPlZPPaxNBFMcXxYsXV0lQ3JSgC9nE
+7rJZt0l3Z9BDDnrQfyA0eMmtl+KP0Hsg5CZ4Fi0hZyneqkFMUEyh2jWeLPoHCBIQPHiw2a/vTawW
+kj3kwWO+szPvM19m52kccSwOMJFYJOOJjONY3lHFjiMgxGIZhgIP7gloTFtdFUifF8jlBMplAf2c
+gE1Qf0Xg9BkBz5sPOXGKAZC4ZAp8/0bWSFuWAA4lfv2UyLGmb18PJIIgCUCbv3yWuGjQ5lhi+5nE
+leWp3tgQWF8nMGnPTQBMfof48FFTNnf3NLzbPQnXlXgfadh+voS8JbFH+uGj5fmA+DDEzRsh7t73
+sU8giwqebOWxP9Lg2BIvX11A9EnDCt3HXABigRItDt7qePy0AP+qRP/NWWxu+rh+TeA16Vu3Q1WQ
+z+eRSqVg2/YxAP2F49SkzGQMutD/USgUZgGe52E4HKJer6PVaqHf72M8HqPZbKLb7apCendq1HV9
+FmBZllrk6PV6aqxUKmpk+3zAaDRSc9d1kwHtdpssZ5Tm6HQ6KJVKWFurqXm1WlX7EwFsv9FoIIoi
+1GrToiPrOzsvYJqX6cWWZwF8MRzsIJvNKn0Ug8Hgr5pGOp2eAriruDEYEASBcuH7vpo7jgPDMFAs
+FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="1e0205cf-3143-44b3-bce9-2547f18820dc"
+		isrooted="True"
+		name="DlgMessageBox"
+		refpath="/form[@controlname='dlgMessageBox']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="e547daf5-809f-44b2-b9dd-1c19c3692b84"
+			name="LabelMeldungstext"
+			refimgid="81c33e79-cbe9-4281-844a-7f5b6726cf14"
+			refpath="/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="f76d2794-6c83-4991-a26e-6725c530c99e"
+			name="Button0"
+			refimgid="e3a2c599-d01a-426d-a956-a10e26cc9e22"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button0']
+			</item>
+			<basepath>
+				/form[@controlname='dlgMessageBox']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="8fd51e5f-8991-4ab4-a748-3076d5b24910"
+		name="Jahr_ALT">
+			2017
+		</var>
+		<var
+		id="6bf11a9f-c841-4ec2-986d-1ffeb454e2ca"
+		name="Jahr_NEU">
+			2099
+		</var>
+	</variables>
+</repository>

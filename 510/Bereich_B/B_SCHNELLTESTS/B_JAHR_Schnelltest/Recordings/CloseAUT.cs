@@ -20,64 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_KTO_001.Recordings
+namespace B_JAHR_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The CloseAUT recording.
     /// </summary>
-    [TestModule("473f63d4-9a67-46b9-88ae-4829ac147517", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    [TestModule("6873630c-4093-46bc-8c7b-1d7fe50d3212", ModuleType.Recording, 1)]
+    public partial class CloseAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::B_KTO_001.B_KTO_001Repository repository.
+        /// Holds an instance of the global::B_JAHR_Schnelltest.B_JAHR_SchnelltestRepository repository.
         /// </summary>
-        public static global::B_KTO_001.B_KTO_001Repository repo = global::B_KTO_001.B_KTO_001Repository.Instance;
+        public static global::B_JAHR_Schnelltest.B_JAHR_SchnelltestRepository repo = global::B_JAHR_Schnelltest.B_JAHR_SchnelltestRepository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static CloseAUT instance = new CloseAUT();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public CloseAUT()
         {
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm = "B_KTO";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static CloseAUT Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Startfile;
-
-        /// <summary>
-        /// Gets or sets the value of variable Startfile.
-        /// </summary>
-        [TestVariable("943c0468-46db-4f0d-ab8e-929f4f2601c8")]
-        public string Startfile
-        {
-            get { return _Startfile; }
-            set { _Startfile = value; }
-        }
-
-        string _Programm;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm.
-        /// </summary>
-        [TestVariable("6f1cc2ed-1969-4e0a-9a51-9031136d11ec")]
-        public string Programm
-        {
-            get { return _Programm; }
-            set { _Programm = value; }
-        }
 
 #endregion
 
@@ -105,14 +79,8 @@ namespace B_KTO_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm, "", false);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'FrmKto.TitleBar100SachkontenVerwalten'", repo.FrmKto.TitleBar100SachkontenVerwaltenInfo, new ActionTimeout(180000), new RecordItemIndex(1));
-            repo.FrmKto.TitleBar100SachkontenVerwaltenInfo.WaitForExists(180000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Sachkonten verwalten') on item 'FrmKto.TitleBar100SachkontenVerwalten'.", repo.FrmKto.TitleBar100SachkontenVerwaltenInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.FrmKto.TitleBar100SachkontenVerwaltenInfo, "Text", "Sachkonten verwalten");
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'Main_530_tblMain_510_frmMain.TitleBar100VerwaltenGeschaeftsjahr'.", repo.Main_530_tblMain_510_frmMain.TitleBar100VerwaltenGeschaeftsjahrInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.Main_530_tblMain_510_frmMain.TitleBar100VerwaltenGeschaeftsjahr, 1000);
             
         }
 

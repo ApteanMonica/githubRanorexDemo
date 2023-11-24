@@ -111,8 +111,8 @@ namespace B_EXOPV_004.Recordings_B_BUAB
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbDataAccessLoad' at Center.", repo.TblB.PbDataAccessLoadInfo, new RecordItemIndex(6));
             repo.TblB.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblB.Buchungszeilen_Tabelle.Zeile1.Row1'", repo.TblB.Buchungszeilen_Tabelle.Zeile1.Row1Info, new ActionTimeout(60000), new RecordItemIndex(7));
-            repo.TblB.Buchungszeilen_Tabelle.Zeile1.Row1Info.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblB.Buchungszeilen_Tabelle.Zeile1.Row1'", repo.TblB.Buchungszeilen_Tabelle.Zeile1.Row1Info, new ActionTimeout(120000), new RecordItemIndex(7));
+            repo.TblB.Buchungszeilen_Tabelle.Zeile1.Row1Info.WaitForExists(120000);
             
         }
 

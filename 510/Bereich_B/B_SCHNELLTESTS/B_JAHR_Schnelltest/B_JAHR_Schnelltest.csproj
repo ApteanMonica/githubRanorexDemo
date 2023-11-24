@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{E5606035-6B94-4C26-AEB4-3E54EA6DF357}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>B_JAHR_Schnelltest</RootNamespace>
+    <AssemblyName>B_JAHR_Schnelltest</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>7dcdff52-1f3f-442f-b4fe-b00bcf7aee23</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper" />
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Delphi" />
+    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.WinForms.Core" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="Ranorex.Plugin.Wpf.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>a2319eaa-cf36-4b74-b972-ef121df56525</id>
+    </Compile>
+    <Compile Include="B_JAHR_SchnelltestRepository.cs">
+      <BoundTo>7dcdff52-1f3f-442f-b4fe-b00bcf7aee23</BoundTo>
+      <DependentUpon>B_JAHR_SchnelltestRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>e88a7a80-66e8-4f3f-b273-34bb3e4f3615</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>ea957940-8e66-416b-8b31-06ed82ce34b4</id>
+    </Compile>
+    <Compile Include="Recordings\altes_Jahr_loeschen_nicht_moeglich.cs">
+      <BoundTo>dfd59969-5db4-4af1-a2fe-33d606846350</BoundTo>
+      <DependentUpon>altes_Jahr_loeschen_nicht_moeglich.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b98fe930-2c98-45e6-9cfe-a4fa4c620b19</id>
+    </Compile>
+    <Compile Include="Recordings\altes_Jahr_loeschen_nicht_moeglich.UserCode.cs">
+      <BoundTo>dfd59969-5db4-4af1-a2fe-33d606846350</BoundTo>
+      <DependentUpon>altes_Jahr_loeschen_nicht_moeglich.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ea071c0b-737e-4387-ada1-1b8ebf4df3b9</id>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8e6ae6f5-95d9-4a02-bc41-8f834d614736</id>
+      <BoundTo>05c294c0-0c8f-41e0-9ad4-45959701e1cd</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\CloseAUT.UserCode.cs">
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0a615351-3991-421e-aa0e-caadac21fc9f</id>
+      <BoundTo>05c294c0-0c8f-41e0-9ad4-45959701e1cd</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Neues_Jahr_aendern.cs">
+      <BoundTo>7de33c5c-7b09-4ce0-94f4-7fcecb5dabf6</BoundTo>
+      <DependentUpon>Neues_Jahr_aendern.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>66560c2c-5c22-48f5-abc7-7789d361f21e</id>
+    </Compile>
+    <Compile Include="Recordings\Neues_Jahr_aendern.UserCode.cs">
+      <BoundTo>7de33c5c-7b09-4ce0-94f4-7fcecb5dabf6</BoundTo>
+      <DependentUpon>Neues_Jahr_aendern.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f927c278-8443-496c-8390-04967f3c8464</id>
+    </Compile>
+    <Compile Include="Recordings\Neues_Jahr_anlegen.cs">
+      <BoundTo>863b8a6b-527c-4142-9777-3818bc550a73</BoundTo>
+      <DependentUpon>Neues_Jahr_anlegen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b8a674e1-fdc8-4e3a-9a74-ceb824f5887e</id>
+    </Compile>
+    <Compile Include="Recordings\Neues_Jahr_anlegen.UserCode.cs">
+      <BoundTo>863b8a6b-527c-4142-9777-3818bc550a73</BoundTo>
+      <DependentUpon>Neues_Jahr_anlegen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d9bcdd5b-626a-405c-bc86-e4d32049202b</id>
+    </Compile>
+    <Compile Include="Recordings\Neues_Jahr_loeschen.cs">
+      <BoundTo>0c8eb110-5d04-4033-b18a-b0925d64bc4b</BoundTo>
+      <DependentUpon>Neues_Jahr_loeschen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fb98c099-b1da-4092-857d-75870a73738b</id>
+    </Compile>
+    <Compile Include="Recordings\Neues_Jahr_loeschen.UserCode.cs">
+      <BoundTo>0c8eb110-5d04-4033-b18a-b0925d64bc4b</BoundTo>
+      <DependentUpon>Neues_Jahr_loeschen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>be8de6df-bf83-4cd2-9922-fb76c77dc619</id>
+    </Compile>
+    <Compile Include="Recordings\Neues_Jahr_pruefen.cs">
+      <BoundTo>c24e18f7-9da8-4439-a8c5-12ca40d5404f</BoundTo>
+      <DependentUpon>Neues_Jahr_pruefen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>aac80f50-6c43-4efe-9537-c2aa5951563f</id>
+    </Compile>
+    <Compile Include="Recordings\Neues_Jahr_pruefen.UserCode.cs">
+      <BoundTo>c24e18f7-9da8-4439-a8c5-12ca40d5404f</BoundTo>
+      <DependentUpon>Neues_Jahr_pruefen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>23e4dfe6-bfd0-40d7-8255-97781d3569aa</id>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e4b92a1d-41c4-413f-93b9-95f1446525db</id>
+      <BoundTo>db0a1776-bff8-43ce-b88c-f48556e57f99</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8b1a7a99-aabd-4c4c-9a10-04b32232a019</id>
+      <BoundTo>db0a1776-bff8-43ce-b88c-f48556e57f99</BoundTo>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>faa0ec23-276f-4774-9ce6-7fc04ac8ed21</id>
+    </None>
+    <None Include="B_JAHR_SchnelltestRepository.rximg">
+      <BoundTo>7dcdff52-1f3f-442f-b4fe-b00bcf7aee23</BoundTo>
+      <DependentUpon>B_JAHR_SchnelltestRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>b39b3d7f-bb37-4ca5-bc65-88900dac8764</id>
+    </None>
+    <None Include="B_JAHR_SchnelltestRepository.rxrep">
+      <id>7dcdff52-1f3f-442f-b4fe-b00bcf7aee23</id>
+      <repoid>1246a981-35b9-4bb6-8f92-896f0b5ef296</repoid>
+      <reporootid>245624a7-da67-4257-81b6-9426e362986f</reporootid>
+    </None>
+    <None Include="Recordings\altes_Jahr_loeschen_nicht_moeglich.rxrec">
+      <BoundTo>7dcdff52-1f3f-442f-b4fe-b00bcf7aee23</BoundTo>
+      <id>dfd59969-5db4-4af1-a2fe-33d606846350</id>
+      <recordtableid>87e103bd-2f46-4634-94d6-a1d56414ff75</recordtableid>
+    </None>
+    <None Include="Recordings\CloseAUT.rxrec">
+      <BoundTo>7dcdff52-1f3f-442f-b4fe-b00bcf7aee23</BoundTo>
+      <id>05c294c0-0c8f-41e0-9ad4-45959701e1cd</id>
+      <recordtableid>6873630c-4093-46bc-8c7b-1d7fe50d3212</recordtableid>
+    </None>
+    <None Include="Recordings\Neues_Jahr_aendern.rxrec">
+      <BoundTo>7dcdff52-1f3f-442f-b4fe-b00bcf7aee23</BoundTo>
+      <id>7de33c5c-7b09-4ce0-94f4-7fcecb5dabf6</id>
+      <recordtableid>e53cc44b-43db-4c9c-ace2-41a510dbded3</recordtableid>
+    </None>
+    <None Include="Recordings\Neues_Jahr_anlegen.rxrec">
+      <BoundTo>7dcdff52-1f3f-442f-b4fe-b00bcf7aee23</BoundTo>
+      <id>863b8a6b-527c-4142-9777-3818bc550a73</id>
+      <recordtableid>33010b07-4535-424f-aa72-b9c5e05f82ee</recordtableid>
+    </None>
+    <None Include="Recordings\Neues_Jahr_loeschen.rxrec">
+      <BoundTo>7dcdff52-1f3f-442f-b4fe-b00bcf7aee23</BoundTo>
+      <id>0c8eb110-5d04-4033-b18a-b0925d64bc4b</id>
+      <recordtableid>6ff3fb41-3b97-4fe1-b7c4-51c9e4403351</recordtableid>
+    </None>
+    <None Include="Recordings\Neues_Jahr_pruefen.rxrec">
+      <BoundTo>7dcdff52-1f3f-442f-b4fe-b00bcf7aee23</BoundTo>
+      <id>c24e18f7-9da8-4439-a8c5-12ca40d5404f</id>
+      <recordtableid>1dc466f8-0101-4ca2-a7e4-5a9a21801a52</recordtableid>
+    </None>
+    <None Include="Recordings\StartAUT.rxrec">
+      <BoundTo>7dcdff52-1f3f-442f-b4fe-b00bcf7aee23</BoundTo>
+      <id>db0a1776-bff8-43ce-b88c-f48556e57f99</id>
+      <recordtableid>cdd365e1-7120-4b2d-b39c-4fe1e4363dd8</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="B_JAHR_Schnelltest.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>e5021909-6cac-4553-9517-aaa73e8f781e</id>
+    </Content>
+    <Content Include="B_JAHR_Schnelltest.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>683cd383-3062-48ec-9955-ab1f4827fcbf</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings">
+      <id>068282ef-11e3-4e1f-aaea-1f3e49615f0b</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>
