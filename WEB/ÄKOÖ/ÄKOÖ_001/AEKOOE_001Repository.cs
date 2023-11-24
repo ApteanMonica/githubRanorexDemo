@@ -77,7 +77,7 @@ namespace AEKOOE_001
             set { _Tagesdatum = value; }
         }
 
-        string _Diagnose = "Testdiagnose zum Krankengeld";
+        string _Diagnose = "Testdiagnose·zum·Krankengeld";
 
         /// <summary>
         /// Gets or sets the value of variable Diagnose.
@@ -201,6 +201,7 @@ namespace AEKOOE_001
             RepoItemInfo _modalheader_antragskategorieInfo;
             RepoItemInfo _kiarrow60downkiconInfo;
             RepoItemInfo _buttontagneu_antragskategoreInfo;
+            RepoItemInfo _anmeldungInfo;
 
             /// <summary>
             /// Creates a new Login  folder.
@@ -230,6 +231,7 @@ namespace AEKOOE_001
                 _modalheader_antragskategorieInfo = new RepoItemInfo(this, "ModalHeader_Antragskategorie", ".//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[1]", "", 30000, null, "57ceb337-9fcc-4c44-801e-5bcabb52e4c7");
                 _kiarrow60downkiconInfo = new RepoItemInfo(this, "KIArrow60DownKIcon", ".//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[2]/div[2]/div[2]/span[@title='']/span/span[2]/span", "", 30000, null, "fd273293-ab02-4e45-8a51-d988cdf3c7e8");
                 _buttontagneu_antragskategoreInfo = new RepoItemInfo(this, "ButtonTagNeu_Antragskategore", ".//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[3]/button[@innertext='Neu']", "", 30000, null, "6884b057-1350-4f12-bc3d-7dd401889ae9");
+                _anmeldungInfo = new RepoItemInfo(this, "Anmeldung", ".//section[#'appModule']/div/div/div[2]/div/div[1]/span[@innertext='Anmeldung']", "", 30000, null, "be98dd37-0765-405a-abc5-c9c2d6843fa2");
             }
 
             /// <summary>
@@ -761,6 +763,30 @@ namespace AEKOOE_001
             }
 
             /// <summary>
+            /// The Anmeldung item.
+            /// </summary>
+            [RepositoryItem("be98dd37-0765-405a-abc5-c9c2d6843fa2")]
+            public virtual Ranorex.SpanTag Anmeldung
+            {
+                get
+                {
+                    return _anmeldungInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Anmeldung item info.
+            /// </summary>
+            [RepositoryItemInfo("be98dd37-0765-405a-abc5-c9c2d6843fa2")]
+            public virtual RepoItemInfo AnmeldungInfo
+            {
+                get
+                {
+                    return _anmeldungInfo;
+                }
+            }
+
+            /// <summary>
             /// The AKAT011RequestFormRow folder.
             /// </summary>
             [RepositoryFolder("d97c4b00-0a00-4181-98d5-fe3995cec1ea")]
@@ -795,6 +821,8 @@ namespace AEKOOE_001
             RepoItemInfo _arbeitsunfaehigkeitsmeldung_dokumenttypInfo;
             RepoItemInfo _bezeichnung_dokumentInfo;
             RepoItemInfo _antragaufkrankengeldInfo;
+            RepoItemInfo _testdateiantragkrankengeldtxtInfo;
+            RepoItemInfo _arbeitsunfaehigkeitsmeldungInfo;
 
             /// <summary>
             /// Creates a new AKAT011RequestFormRow  folder.
@@ -821,6 +849,8 @@ namespace AEKOOE_001
                 _arbeitsunfaehigkeitsmeldung_dokumenttypInfo = new RepoItemInfo(this, "Arbeitsunfaehigkeitsmeldung_Dokumenttyp", "div[25]//tag[@tagname='dmscontrol']/div/div[1]/div[2]/table/tbody/?/?/td[@innertext>'Arbeitsunfähigkeitsmeldun']", "", 30000, null, "ff0de1e4-4933-4e1e-b57f-2053f30a3ee4");
                 _bezeichnung_dokumentInfo = new RepoItemInfo(this, "Bezeichnung_Dokument", "div[25]//tag[@tagname='dmscontrol']/div/div[1]/div[2]/table/tbody/?/?/td[@innertext='Test_BAR']", "", 30000, null, "edf2f2a2-a62f-4c22-9454-38ad3b6a8ab1");
                 _antragaufkrankengeldInfo = new RepoItemInfo(this, "AntragAufKrankengeld", "div[1]/div/?/?/h4[@innertext='Antrag auf Krankengeld']", "", 30000, null, "865079f8-e829-40f9-8bee-93fb4609f3c3");
+                _testdateiantragkrankengeldtxtInfo = new RepoItemInfo(this, "TestdateiAntragKrankengeldTxt", "div[25]/div/tag/div/div/div/tag[@tagname='dmscontrol']/div/tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[1]/div[1]/div[2]/form[@action='http://192.168.192.139/521_SP12/#request']/div/ul/li/span[2]/span[@title>'Testdatei Antrag Krankeng']", "", 30000, null, "d409c9ac-a1ab-4a86-86fe-1d4cb779f9fa");
+                _arbeitsunfaehigkeitsmeldungInfo = new RepoItemInfo(this, "Arbeitsunfaehigkeitsmeldung", "div[25]/div/tag/div/div/div/tag[@tagname='dmscontrol']/div/tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[2]/div[3]/div[2]/tag[@tagname='kendodropdownlist']/div/div/div/span[@title='']/span/span[@innertext>'Arbeitsunfähigkeitsmeldun']", "", 30000, null, "e58fb738-4975-4e8f-b1e1-71fc2136f417");
             }
 
             /// <summary>
@@ -1300,6 +1330,54 @@ namespace AEKOOE_001
                 get
                 {
                     return _antragaufkrankengeldInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TestdateiAntragKrankengeldTxt item.
+            /// </summary>
+            [RepositoryItem("d409c9ac-a1ab-4a86-86fe-1d4cb779f9fa")]
+            public virtual Ranorex.SpanTag TestdateiAntragKrankengeldTxt
+            {
+                get
+                {
+                    return _testdateiantragkrankengeldtxtInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TestdateiAntragKrankengeldTxt item info.
+            /// </summary>
+            [RepositoryItemInfo("d409c9ac-a1ab-4a86-86fe-1d4cb779f9fa")]
+            public virtual RepoItemInfo TestdateiAntragKrankengeldTxtInfo
+            {
+                get
+                {
+                    return _testdateiantragkrankengeldtxtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Arbeitsunfaehigkeitsmeldung item.
+            /// </summary>
+            [RepositoryItem("e58fb738-4975-4e8f-b1e1-71fc2136f417")]
+            public virtual Ranorex.SpanTag Arbeitsunfaehigkeitsmeldung
+            {
+                get
+                {
+                    return _arbeitsunfaehigkeitsmeldungInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Arbeitsunfaehigkeitsmeldung item info.
+            /// </summary>
+            [RepositoryItemInfo("e58fb738-4975-4e8f-b1e1-71fc2136f417")]
+            public virtual RepoItemInfo ArbeitsunfaehigkeitsmeldungInfo
+            {
+                get
+                {
+                    return _arbeitsunfaehigkeitsmeldungInfo;
                 }
             }
         }

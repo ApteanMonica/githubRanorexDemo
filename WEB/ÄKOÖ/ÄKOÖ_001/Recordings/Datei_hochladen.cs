@@ -120,6 +120,30 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'OEffnen.SystemItemNameDisplay_Testdatei_zum_upload' at Center.", repo.OEffnen.SystemItemNameDisplay_Testdatei_zum_uploadInfo, new RecordItemIndex(8));
             repo.OEffnen.SystemItemNameDisplay_Testdatei_zum_upload.DoubleClick();
             
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Testdatei Antrag Krankengeld.txt') on item 'Login.AKAT011RequestFormRow.TestdateiAntragKrankengeldTxt'.", repo.Login.AKAT011RequestFormRow.TestdateiAntragKrankengeldTxtInfo, new RecordItemIndex(9));
+            Validate.AttributeContains(repo.Login.AKAT011RequestFormRow.TestdateiAntragKrankengeldTxtInfo, "InnerText", "Testdatei Antrag Krankengeld.txt");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='File(s) uploaded successfully.') on item 'Login.AKAT011RequestFormRow.FileSUploadedSuccessfully'.", repo.Login.AKAT011RequestFormRow.FileSUploadedSuccessfullyInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.FileSUploadedSuccessfullyInfo, "InnerText", "File(s) uploaded successfully.");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Testdatei Krankengeld' with focus on 'Login.AKAT011RequestFormRow.Text_Bezeichnung_Uploadfile'.", repo.Login.AKAT011RequestFormRow.Text_Bezeichnung_UploadfileInfo, new RecordItemIndex(11));
+            repo.Login.AKAT011RequestFormRow.Text_Bezeichnung_Uploadfile.PressKeys("Testdatei Krankengeld");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.DokumenttypWaehlen' at Center.", repo.Login.AKAT011RequestFormRow.DokumenttypWaehlenInfo, new RecordItemIndex(12));
+            repo.Login.AKAT011RequestFormRow.DokumenttypWaehlen.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value='Testdatei Krankengeld') on item 'Login.AKAT011RequestFormRow.Text_Bezeichnung_Uploadfile'.", repo.Login.AKAT011RequestFormRow.Text_Bezeichnung_UploadfileInfo, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Bezeichnung_UploadfileInfo, "Value", "Testdatei Krankengeld");
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Down' Press.", new RecordItemIndex(14));
+            Keyboard.Press(System.Windows.Forms.Keys.Down, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press.", new RecordItemIndex(15));
+            Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Arbeitsunfähigkeitsmeldung') on item 'Login.AKAT011RequestFormRow.Arbeitsunfaehigkeitsmeldung'.", repo.Login.AKAT011RequestFormRow.ArbeitsunfaehigkeitsmeldungInfo, new RecordItemIndex(16));
+            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.ArbeitsunfaehigkeitsmeldungInfo, "InnerText", "Arbeitsunfähigkeitsmeldung");
+            
         }
 
 #region Image Feature Data

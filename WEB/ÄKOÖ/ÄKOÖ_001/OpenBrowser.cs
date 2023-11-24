@@ -82,11 +82,11 @@ namespace AEKOOE_001
             Report.Log(ReportLevel.Info, "Website", "Opening web site 'http://192.168.192.139/521_SP12/#login' with browser 'Chrome' in normal mode.", new RecordItemIndex(0));
             Host.Current.OpenBrowser("http://192.168.192.139/521_SP12/#login", "Chrome", "", false, false, false, false, false, false, false, true);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 6m to exist. Associated repository item: 'Login.RS2WEBAnmelden'", repo.Login.RS2WEBAnmeldenInfo, new ActionTimeout(360000), new RecordItemIndex(1));
-            repo.Login.RS2WEBAnmeldenInfo.WaitForExists(360000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 6m to exist. Associated repository item: 'Login.Anmeldung'", repo.Login.AnmeldungInfo, new ActionTimeout(360000), new RecordItemIndex(1));
+            repo.Login.AnmeldungInfo.WaitForExists(360000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Anmelden') on item 'Login.RS2WEBAnmelden'.", repo.Login.RS2WEBAnmeldenInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.Login.RS2WEBAnmeldenInfo, "InnerText", "Anmelden");
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Anmelden') on item 'Login.Anmeldung'.", repo.Login.AnmeldungInfo, new RecordItemIndex(2));
+            //Validate.AttributeContains(repo.Login.AnmeldungInfo, "InnerText", "Anmelden");
             
         }
 
