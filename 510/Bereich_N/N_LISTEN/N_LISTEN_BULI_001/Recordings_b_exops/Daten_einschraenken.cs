@@ -41,7 +41,6 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
         /// </summary>
         public Daten_einschraenken()
         {
-            Tagesdatum_ermitteln = "";
         }
 
         /// <summary>
@@ -53,18 +52,6 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
         }
 
 #region Variables
-
-        string _Tagesdatum_ermitteln;
-
-        /// <summary>
-        /// Gets or sets the value of variable Tagesdatum_ermitteln.
-        /// </summary>
-        [TestVariable("a6c72867-2a44-404c-ab1d-c0de9cf1b19c")]
-        public string Tagesdatum_ermitteln
-        {
-            get { return _Tagesdatum_ermitteln; }
-            set { _Tagesdatum_ermitteln = value; }
-        }
 
 #endregion
 

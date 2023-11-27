@@ -41,7 +41,7 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
         /// </summary>
         public Tagesdatum_einlesen()
         {
-            Tagesdatum_ermitteln = "";
+            Tagesdatum = "";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
 
 #region Variables
 
-        string _Tagesdatum_ermitteln;
+        string _Tagesdatum;
 
         /// <summary>
-        /// Gets or sets the value of variable Tagesdatum_ermitteln.
+        /// Gets or sets the value of variable Tagesdatum.
         /// </summary>
-        [TestVariable("97e0d63a-4e8b-4c99-9328-900d55d69743")]
-        public string Tagesdatum_ermitteln
+        [TestVariable("38aab1a8-ecc1-4eb4-b866-7fa31af00bc3")]
+        public string Tagesdatum
         {
-            get { return _Tagesdatum_ermitteln; }
-            set { _Tagesdatum_ermitteln = value; }
+            get { return _Tagesdatum; }
+            set { _Tagesdatum = value; }
         }
 
 #endregion
@@ -92,7 +92,7 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
 
             Init();
 
-            Tagesdatum_ermitteln = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimeAsString("dd.MM.yyyy");
+            Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("dd.MM.yyyy");
             
         }
 

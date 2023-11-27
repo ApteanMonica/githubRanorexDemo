@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="892c439a-3e50-43df-a445-13a42f234f91"
+id="a9b0ce4f-953f-4e8d-909c-ad4330720dd9"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="CloseAUT_03"
+	classname="n_anla_schliessen"
 	namespace="N_ANLA_004.Recordings">
 	</codegen>
 	<variables>
@@ -29,17 +29,17 @@ mode="Global">
 		enabled="True"
 		graceperiod="1000ms"
 		method="CloseWindow"
-		optional="False"
+		optional="True"
 		searchpropertyid="abf5587b-d763-4679-8dfd-ea81d3ed369c">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="e998a979-02fc-4ceb-9312-00e714d56f22"
+			id="2272bff5-a5dd-4b37-a676-5c07c4c5c036"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='frmAnfi']/titlebar[@accessiblerole='TitleBar']
+					/form[@controlname='frmAnla']/titlebar[@accessiblerole='TitleBar']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -61,7 +61,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		CloseAUT_03.UserCode.cs
+		n_anla_schliessen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

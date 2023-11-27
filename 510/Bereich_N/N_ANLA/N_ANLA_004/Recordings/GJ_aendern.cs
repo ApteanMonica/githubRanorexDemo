@@ -114,9 +114,6 @@ namespace N_ANLA_004.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAnfi.PbDataAccessSave' at Center.", repo.FrmAnfi.PbDataAccessSaveInfo, new RecordItemIndex(6));
             repo.FrmAnfi.PbDataAccessSave.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press.", new RecordItemIndex(7));
-            Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
         }
 
 #region Image Feature Data

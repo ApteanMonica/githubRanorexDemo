@@ -20,51 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace N_ANLA_002.Recordings
+namespace N_ANLA_004.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Einlesen_Programmversion recording.
+    ///The n_anla_schliessen recording.
     /// </summary>
-    [TestModule("81e808b3-a2d3-45da-aee9-6db685e584cc", ModuleType.Recording, 1)]
-    public partial class Einlesen_Programmversion : ITestModule
+    [TestModule("a9b0ce4f-953f-4e8d-909c-ad4330720dd9", ModuleType.Recording, 1)]
+    public partial class n_anla_schliessen : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::N_ANLA_002.N_ANLA_002Repository repository.
+        /// Holds an instance of the global::N_ANLA_004.N_ANLA_004Repository repository.
         /// </summary>
-        public static global::N_ANLA_002.N_ANLA_002Repository repo = global::N_ANLA_002.N_ANLA_002Repository.Instance;
+        public static global::N_ANLA_004.N_ANLA_004Repository repo = global::N_ANLA_004.N_ANLA_004Repository.Instance;
 
-        static Einlesen_Programmversion instance = new Einlesen_Programmversion();
+        static n_anla_schliessen instance = new n_anla_schliessen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Einlesen_Programmversion()
+        public n_anla_schliessen()
         {
-            Programmversion = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Einlesen_Programmversion Instance
+        public static n_anla_schliessen Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Programmversion;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programmversion.
-        /// </summary>
-        [TestVariable("bb45035f-f206-4842-80f2-25abf61c3a59")]
-        public string Programmversion
-        {
-            get { return _Programmversion; }
-            set { _Programmversion = value; }
-        }
 
 #endregion
 
@@ -92,9 +79,10 @@ namespace N_ANLA_002.Recordings
 
             Init();
 
-            Programmversion = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ReadProgrammVersion("");
-            
-            Report.Log(ReportLevel.Info, "User", Programmversion, new RecordItemIndex(1));
+            try {
+                Report.Log(ReportLevel.Info, "Application", "(Optional Action)\r\nClosing application containing item 'FrmAnla.TitleBar100AVZAnlagen'.", repo.FrmAnla.TitleBar100AVZAnlagenInfo, new RecordItemIndex(0));
+                Host.Current.CloseApplication(repo.FrmAnla.TitleBar100AVZAnlagen, 1000);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
         }
 

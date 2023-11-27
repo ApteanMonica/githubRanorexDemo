@@ -30,7 +30,7 @@ mode="Global">
 		optional="False"
 		searchpropertyid="84e4a5be-c651-4a88-b8ab-f942b4e028ef"
 		waitaction="Exists"
-		waittimeout="120000ms">
+		waittimeout="180000ms">
 			<comment>
 			</comment>
 			<bindings>
@@ -2128,55 +2128,15 @@ erst nach Neustart der Programme (AVZ-Anlagen, AVZ-Auswertungen) wirksam sind.
 				</robustPath>
 			</info>
 		</mouseitem>
-		<WaitForRecordItem
+		<explicitdelayitem
+		duration="3000ms"
 		enabled="True"
-		optional="False"
-		searchpropertyid="d713a695-9e82-4bc7-b43a-c8a2f9c6a92b"
-		waitaction="Exists"
-		waittimeout="120000ms">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="9ebd7e5c-7314-4bec-86a7-d2bf8d88a7ac"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="6"
-				prefcap="titlebar"
-				rect="2556,421,466,28"
-				role="titlebar"
-				snapElem=""
-				valid="False"
-				visible="False">
-					<attribute
-					name="accessibledescription"
-					type="System.String">
-						Zeigt den Fensternamen an und enthält Steuerelemente zum Ändern des Fensters.
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						TitleBar
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Invisible
-					</attribute>
-				</element>
-				<path>
-					/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
+		</explicitdelayitem>
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"

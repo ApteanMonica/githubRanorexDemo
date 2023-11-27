@@ -42,7 +42,7 @@ namespace N_ANLA_001.Recordings_n_listen
         public StartAUT_02()
         {
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm_2 = "N_LISTEN /Aufrufart = ANLASP";
+            Programm_2 = "N_LISTEN Aufrufart ANLASP";
         }
 
         /// <summary>

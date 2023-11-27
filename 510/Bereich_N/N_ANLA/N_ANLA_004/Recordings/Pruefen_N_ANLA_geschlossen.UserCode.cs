@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace N_ANLA_004.Recordings
 {
-    public partial class StartAUT_03
+    public partial class Pruefen_N_ANLA_geschlossen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -79,10 +79,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\..\..\Testdaten\Allgemein\UserCode\aptean.cs">
-      <Link>aptean.cs</Link>
-      <id>80d80163-c4b3-4b8f-9317-5ae084294ec1</id>
-    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>4ffcfc68-efef-4f8a-8715-9d67476d686f</id>
     </Compile>
@@ -118,18 +114,6 @@
       <DependentUpon>CloseAUT_02.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>abb06ce6-de23-4832-87e7-536837d0e4ac</id>
-    </Compile>
-    <Compile Include="Recordings\Einlesen_Programmversion.cs">
-      <BoundTo>4aa5077e-5336-42a3-9268-d5a2cf3a7065</BoundTo>
-      <DependentUpon>Einlesen_Programmversion.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>3f44dcfe-dbfb-4fa6-8973-c9e56cab9d8f</id>
-    </Compile>
-    <Compile Include="Recordings\Einlesen_Programmversion.UserCode.cs">
-      <BoundTo>4aa5077e-5336-42a3-9268-d5a2cf3a7065</BoundTo>
-      <DependentUpon>Einlesen_Programmversion.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>c46060cf-40ab-4d23-a65e-465868ec0586</id>
     </Compile>
     <Compile Include="Recordings\Einschraenkung_Daten.cs">
       <BoundTo>186e3016-1bd7-42ee-9a61-65c182630b66</BoundTo>
@@ -361,11 +345,6 @@
       <id>3d145223-6c8a-4e09-ad24-5bdb2efeb203</id>
       <recordtableid>716cc69f-7519-4536-9ece-3f061ca1b5fe</recordtableid>
     </None>
-    <None Include="Recordings\Einlesen_Programmversion.rxrec">
-      <BoundTo>629bc728-8121-4ab0-8361-eca9cd86bb9a</BoundTo>
-      <id>4aa5077e-5336-42a3-9268-d5a2cf3a7065</id>
-      <recordtableid>7467c9ac-6746-4796-b102-7aed5bb2ea62</recordtableid>
-    </None>
     <None Include="Recordings\Einschraenkung_Daten.rxrec">
       <BoundTo>629bc728-8121-4ab0-8361-eca9cd86bb9a</BoundTo>
       <id>186e3016-1bd7-42ee-9a61-65c182630b66</id>
@@ -466,6 +445,12 @@
     <Folder Include="Recordings">
       <id>190dfb80-1c9f-4098-abd5-af0d8bbaa0c9</id>
     </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{BBEBDEC9-1D82-4478-99F5-2B04241C4B1B}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

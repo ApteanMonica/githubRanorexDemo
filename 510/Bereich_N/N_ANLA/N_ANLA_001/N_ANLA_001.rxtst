@@ -33,6 +33,10 @@
 					value="N_ANLA">
 					</param>
 					<param
+					name="Programm_2"
+					value="N_LISTEN Aufrufart ANLASP">
+					</param>
+					<param
 					name="Anlage_A"
 					value="N_ANLA_001_01">
 					</param>
@@ -43,10 +47,6 @@
 					<param
 					name="Anlage_C"
 					value="N_ANLA_001_03">
-					</param>
-					<param
-					name="Programm_2"
-					value="N_LISTEN /Aufrufart = ANLASP">
 					</param>
 					<param
 					name="AHK_Betrag"
@@ -169,10 +169,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="GF_Jahr_Anlagenspiegel"
+					dataname="AHK_Betrag_Anlagenspiegel"
 					datasourceid="1ea440bd-b3f0-4735-ad22-694547318247"
-					variableid="ecc020df-786b-47fc-9436-66b413f1bd6d"
-					variablename="GF_Jahr_Anlagenspiegel">
+					variableid="1da1abe5-e741-43b3-8f68-14ef2536bdab"
+					variablename="AHK_Betrag_Anlagenspiegel">
 					</var>
 					<var
 					dataname="Konto_Anlagenspiegel"
@@ -181,10 +181,10 @@
 					variablename="Konto_Anlagenspiegel">
 					</var>
 					<var
-					dataname="AHK_Betrag_Anlagenspiegel"
+					dataname="GF_Jahr_Anlagenspiegel"
 					datasourceid="1ea440bd-b3f0-4735-ad22-694547318247"
-					variableid="1da1abe5-e741-43b3-8f68-14ef2536bdab"
-					variablename="AHK_Betrag_Anlagenspiegel">
+					variableid="ecc020df-786b-47fc-9436-66b413f1bd6d"
+					variablename="GF_Jahr_Anlagenspiegel">
 					</var>
 				</databinding>
 			</testmodule>
@@ -215,16 +215,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm_2"
-					datasourceid="1ea440bd-b3f0-4735-ad22-694547318247"
-					variableid="44fb6a5a-10bc-46a2-9031-95fdb12fcd1a"
-					variablename="Programm_2">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="1ea440bd-b3f0-4735-ad22-694547318247"
 					variableid="fcb5466c-2b89-4276-875c-1ae8eed99abd"
 					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_2"
+					datasourceid="1ea440bd-b3f0-4735-ad22-694547318247"
+					variableid="44fb6a5a-10bc-46a2-9031-95fdb12fcd1a"
+					variablename="Programm_2">
 					</var>
 				</databinding>
 			</testmodule>

@@ -54,12 +54,20 @@
 				</description>
 				<databinding>
 					<var
-					dataname="Tagesdatum_ermitteln"
+					dataname="Tagesdatum"
+					datasourceid="10f3f504-933d-4d2e-877a-6c4a5829ba53"
+					variableid="38aab1a8-ecc1-4eb4-b866-7fa31af00bc3"
+					variablename="Tagesdatum">
+					</var>
+				</databinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="Tagesdatum"
 					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
 					variableid="97e0d63a-4e8b-4c99-9328-900d55d69743"
 					variablename="Tagesdatum_ermitteln">
 					</var>
-				</databinding>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testmodule
 			id="28a4d396-7e0c-4411-85f5-13d4b7d8b4b4"
@@ -107,14 +115,6 @@
 			name="Daten_einschraenken"
 			ref="50662912-3023-4281-a6ad-f48078cf1e9e"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="Tagesdatum_ermitteln"
-					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
-					variableid="a6c72867-2a44-404c-ab1d-c0de9cf1b19c"
-					variablename="Tagesdatum_ermitteln">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="493f9845-0dc9-464d-b0dd-be080bc10947"
@@ -161,14 +161,6 @@
 			name="Einschraenkungen_ueberpruefen"
 			ref="e284a7db-38e4-4019-9f0b-19a404c58484"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="Tagesdatum_ermitteln"
-					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
-					variableid="ddc7f825-89a7-4aa4-a591-d3b0af11c21a"
-					variablename="Tagesdatum_ermitteln">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="6e96393a-3497-43ad-b3ec-33355b6c7bdc"
@@ -237,20 +229,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="a21f0d70-3842-490d-802e-ac5e768a1a34"
-			name="Einlesen_des_Ranoagent"
-			ref="6cb1309a-95d5-4459-9fa2-5bc883c4ad0a"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Servername"
-					datasourceid="ab8df9a4-b7d7-4b61-a7a6-20fae7bfd763"
-					variableid="1d013268-9671-4415-9194-d780a490a3a4"
-					variablename="Servername">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="a2d47d9c-807b-461e-81b6-a98b54f48676"
 			name="Nicht_UEberleitung_einzelner_Anlagen"
 			ref="71d7868f-4549-444e-8b35-666e0fb1d5c2"
@@ -289,6 +267,10 @@
 					<param
 					name="Programm"
 					value="N_LISTEN Aufrufart BULI">
+					</param>
+					<param
+					name="Tagesdatum"
+					value="">
 					</param>
 					<param
 					name="Beginn_GJ"
@@ -337,10 +319,6 @@
 					<param
 					name="Programm_2"
 					value="B_EXOPS">
-					</param>
-					<param
-					name="Tagesdatum_ermitteln"
-					value="">
 					</param>
 					<param
 					name="Anlagennr_001"
@@ -434,12 +412,6 @@
 					dataname="Tagesdatum"
 					datasourceid="10f3f504-933d-4d2e-877a-6c4a5829ba53"
 					variableid="2edfc64a-4a2b-44b9-a1f3-7f8cfd6e9687"
-					variablename="Tagesdatum_ermitteln">
-					</var>
-					<var
-					dataname="Tagesdatum"
-					datasourceid="10f3f504-933d-4d2e-877a-6c4a5829ba53"
-					variableid="5a5ff5cb-7e9e-4cbb-a243-58b2c4adecf6"
 					variablename="Tagesdatum">
 					</var>
 				</databinding>
@@ -463,10 +435,6 @@
 							name="StartAUT">
 							</testmodule>
 						</setup>
-						<testmodule
-						id="a21f0d70-3842-490d-802e-ac5e768a1a34"
-						name="Einlesen_des_Ranoagent">
-						</testmodule>
 						<testmodule
 						id="38afbd31-b39f-4e76-a8a0-64dd3a9a1015"
 						name="AfA_berechnen">
@@ -570,5 +538,8 @@
 		</testconfiguration>
 	</testconfigurations>
 	<references>
+		<reference>
+			Ranorex Automation Helpers.dll
+		</reference>
 	</references>
 </testsuitedoc>

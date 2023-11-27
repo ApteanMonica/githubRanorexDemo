@@ -42,8 +42,7 @@ namespace N_ANLA_004.Recordings
         public StartAUT_02()
         {
             Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm_1 = "N_ANLA";
-            Programm_2 = "N_STAMM Aufrufart ANFI";
+            Programm_2 = "N_STAMM AUFRUFART ANFI";
         }
 
         /// <summary>
@@ -66,18 +65,6 @@ namespace N_ANLA_004.Recordings
         {
             get { return _Startfile; }
             set { _Startfile = value; }
-        }
-
-        string _Programm_1;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm_1.
-        /// </summary>
-        [TestVariable("bbb31ef7-4db2-4621-b960-94e219f2797b")]
-        public string Programm_1
-        {
-            get { return _Programm_1; }
-            set { _Programm_1 = value; }
         }
 
         string _Programm_2;

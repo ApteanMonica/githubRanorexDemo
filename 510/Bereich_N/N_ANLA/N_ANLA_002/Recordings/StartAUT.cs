@@ -30,9 +30,9 @@ namespace N_ANLA_002.Recordings
     public partial class StartAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::N_ANLA_002.N_ANLA_001Repository repository.
+        /// Holds an instance of the global::N_ANLA_002.N_ANLA_002Repository repository.
         /// </summary>
-        public static global::N_ANLA_002.N_ANLA_001Repository repo = global::N_ANLA_002.N_ANLA_001Repository.Instance;
+        public static global::N_ANLA_002.N_ANLA_002Repository repo = global::N_ANLA_002.N_ANLA_002Repository.Instance;
 
         static StartAUT instance = new StartAUT();
 

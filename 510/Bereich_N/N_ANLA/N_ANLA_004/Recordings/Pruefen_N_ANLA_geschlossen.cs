@@ -20,51 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace N_LISTEN_BULI_001.Recordings
+namespace N_ANLA_004.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Einlesen_des_Ranoagent recording.
+    ///The Pruefen_N_ANLA_geschlossen recording.
     /// </summary>
-    [TestModule("6cb1309a-95d5-4459-9fa2-5bc883c4ad0a", ModuleType.Recording, 1)]
-    public partial class Einlesen_des_Ranoagent : ITestModule
+    [TestModule("daa9ba9f-c059-4314-8438-b7690760b8b4", ModuleType.Recording, 1)]
+    public partial class Pruefen_N_ANLA_geschlossen : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repository.
+        /// Holds an instance of the global::N_ANLA_004.N_ANLA_004Repository repository.
         /// </summary>
-        public static global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repo = global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository.Instance;
+        public static global::N_ANLA_004.N_ANLA_004Repository repo = global::N_ANLA_004.N_ANLA_004Repository.Instance;
 
-        static Einlesen_des_Ranoagent instance = new Einlesen_des_Ranoagent();
+        static Pruefen_N_ANLA_geschlossen instance = new Pruefen_N_ANLA_geschlossen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Einlesen_des_Ranoagent()
+        public Pruefen_N_ANLA_geschlossen()
         {
-            Servername = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Einlesen_des_Ranoagent Instance
+        public static Pruefen_N_ANLA_geschlossen Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Servername;
-
-        /// <summary>
-        /// Gets or sets the value of variable Servername.
-        /// </summary>
-        [TestVariable("1d013268-9671-4415-9194-d780a490a3a4")]
-        public string Servername
-        {
-            get { return _Servername; }
-            set { _Servername = value; }
-        }
 
 #endregion
 
@@ -92,9 +79,15 @@ namespace N_LISTEN_BULI_001.Recordings
 
             Init();
 
-            Servername = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetHost();
+            try {
+                Report.Log(ReportLevel.Info, "Wait", "(Optional Action)\r\nWaiting 30s to not exist. Associated repository item: 'FrmAnla.TitleBar100AVZAnlagen'", repo.FrmAnla.TitleBar100AVZAnlagenInfo, new ActionTimeout(30000), new RecordItemIndex(0));
+                repo.FrmAnla.TitleBar100AVZAnlagenInfo.WaitForNotExists(30000);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(0)); }
             
-            Report.Log(ReportLevel.Info, "User", Servername, new RecordItemIndex(1));
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating NotExists on item 'FrmAnla.TitleBar100AVZAnlagen'.", repo.FrmAnla.TitleBar100AVZAnlagenInfo, new RecordItemIndex(1));
+                Validate.NotExists(repo.FrmAnla.TitleBar100AVZAnlagenInfo, null, false);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
         }
 

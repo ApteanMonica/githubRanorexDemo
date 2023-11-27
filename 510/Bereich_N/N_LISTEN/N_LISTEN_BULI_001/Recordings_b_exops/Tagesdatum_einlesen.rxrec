@@ -24,16 +24,16 @@ mode="Global">
 	</codegen>
 	<variables>
 		<var
-		id="97e0d63a-4e8b-4c99-9328-900d55d69743"
-		name="Tagesdatum_ermitteln">
+		id="38aab1a8-ecc1-4eb4-b866-7fa31af00bc3"
+		name="Tagesdatum">
 		</var>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="Aptean"
+		classname="SystemLibrary"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="GetSystemDateTimeAsString"
+		methodname="GetDateTimeAsString"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
 		optional="False">
 			<comment>
@@ -41,14 +41,14 @@ mode="Global">
 			<bindings>
 				<binding
 				target="ReturnVariable"
-				variable="Tagesdatum_ermitteln">
+				variable="Tagesdatum">
 				</binding>
 			</bindings>
 			<arguments
-			id="8ac63c83-79e3-47ef-9ffc-7e262348e4c5">
+			id="811d643b-0b78-4d7e-864d-a5f05b148169">
 				<argument
 				argname="expectedFormat"
-				id="cec76d3e-9fd8-4f6a-9b5f-2367e73ac53b">
+				id="a5c11253-e8ef-4782-886f-4f9e3cfd06af">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

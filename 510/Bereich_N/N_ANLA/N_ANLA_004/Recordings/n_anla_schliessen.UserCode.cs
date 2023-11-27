@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace N_ANLA_002.Recordings
+namespace N_ANLA_004.Recordings
 {
-    public partial class Einlesen_Programmversion
+    public partial class n_anla_schliessen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
