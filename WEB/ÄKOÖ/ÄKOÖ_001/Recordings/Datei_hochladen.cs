@@ -95,8 +95,8 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.BtnBtnDefaultBtnExpandSmall' at Center.", repo.Login.AKAT011RequestFormRow.BtnBtnDefaultBtnExpandSmallInfo, new RecordItemIndex(0));
             repo.Login.AKAT011RequestFormRow.BtnBtnDefaultBtnExpandSmall.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.AKAT011RequestFormRow.Upload'", repo.Login.AKAT011RequestFormRow.UploadInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.Login.AKAT011RequestFormRow.UploadInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'Login.AKAT011RequestFormRow.Upload'", repo.Login.AKAT011RequestFormRow.UploadInfo, new ActionTimeout(180000), new RecordItemIndex(1));
+            repo.Login.AKAT011RequestFormRow.UploadInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Upload') on item 'Login.AKAT011RequestFormRow.Upload'.", repo.Login.AKAT011RequestFormRow.UploadInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.UploadInfo, "InnerText", "Upload");
@@ -105,8 +105,8 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mausklick mit Record eingefügt, Einstellungen zu Action spot absichtilch zu gelassen, da ich keine andere Möglichkeit gefunden habe das Fenster zu öffnen\r\nMouse Left Click item 'Login.AKAT011RequestFormRow.File_Button_Datei_auswaehlen' at 3114;13.", repo.Login.AKAT011RequestFormRow.File_Button_Datei_auswaehlenInfo, new RecordItemIndex(3));
             repo.Login.AKAT011RequestFormRow.File_Button_Datei_auswaehlen.Click("3114;13");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'OEffnen.OEffnen'", repo.OEffnen.OEffnenInfo, new ActionTimeout(120000), new RecordItemIndex(4));
-            repo.OEffnen.OEffnenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'OEffnen.OEffnen'", repo.OEffnen.OEffnenInfo, new ActionTimeout(180000), new RecordItemIndex(4));
+            repo.OEffnen.OEffnenInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'OEffnen.Ranorex' at Center.", repo.OEffnen.RanorexInfo, new RecordItemIndex(5));
             repo.OEffnen.Ranorex.DoubleClick();
@@ -143,6 +143,9 @@ namespace AEKOOE_001.Recordings
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Arbeitsunfähigkeitsmeldung') on item 'Login.AKAT011RequestFormRow.Arbeitsunfaehigkeitsmeldung'.", repo.Login.AKAT011RequestFormRow.ArbeitsunfaehigkeitsmeldungInfo, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.ArbeitsunfaehigkeitsmeldungInfo, "InnerText", "Arbeitsunfähigkeitsmeldung");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.Speichern' at Center.", repo.Login.AKAT011RequestFormRow.SpeichernInfo, new RecordItemIndex(17));
+            repo.Login.AKAT011RequestFormRow.Speichern.Click();
             
         }
 

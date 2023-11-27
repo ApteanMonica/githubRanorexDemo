@@ -273,17 +273,6 @@ name="AEKOOE_001Repository">
 					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[25]/div/tag/div/div//tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[3]/button[@innertext='Speichern']
 				</item>
 				<item
-				addcaps="unknown,webelement,spantag"
-				capname="spantag"
-				id="73bfb15f-a5f6-4cc5-91c1-6bbc35f612f2"
-				name="KSelect"
-				refimgid="b9399eb2-0c1e-4260-89b0-b8fa95c37916"
-				refpath="/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[11]/tag[@tagname='wrapperfield']/div/tag[@tagname='kendodropdownlist']/div/div/div/span[@title='']/span/span[2]"
-				robustPath=""
-				searchtimeout="30000ms">
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[11]//tag[@tagname='kendodropdownlist']/div/div/div/span[@title='']/span/span[2]
-				</item>
-				<item
 				addcaps="unknown,webelement,inputtag"
 				capname="inputtag"
 				id="073af110-b907-45b9-956d-97f3ecb042c9"
@@ -387,16 +376,6 @@ name="AEKOOE_001Repository">
 				/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[2]/div/button[1]
 			</item>
 			<item
-			addcaps="unknown,webelement,tdtag"
-			capname="tdtag"
-			id="2ac00e76-ec68-4d29-a392-c6fc0b491328"
-			name="TdTag_mit_Tagesdatum"
-			refimgid="7e4eed03-8bcb-477b-ae64-56176f7c7a90"
-			robustPath=""
-			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//div[#'requestgrid']/div[2]/table//td[@innertext='$Tagesdatum$']
-			</item>
-			<item
 			addcaps="unknown,webelement,divtag"
 			capname="divtag"
 			id="382e350b-bc9c-4356-8a55-b77fec3a02e2"
@@ -496,16 +475,49 @@ name="AEKOOE_001Repository">
 				/dom[@domain='192.168.192.139']//section[#'appModule']/section/div[3]/tag[@tagname='requesttypesdialog']/div/div/div/div/div[3]/button[@innertext='Neu']
 			</item>
 			<item
-			addcaps="unknown,webelement,spantag"
-			capname="spantag"
-			id="be98dd37-0765-405a-abc5-c9c2d6843fa2"
-			name="Anmeldung"
-			refimgid="36464038-e7a0-40e5-987b-8bf669d367f1"
-			refpath="/dom[@domain='192.168.192.139']//section[#'appModule']/div/div/div[2]/div/div[1]/span[@innertext='Anmeldung']"
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="5f4b1e7b-3334-4ecb-bc33-e321e5fd3815"
+			name="PanelHeading"
+			refimgid="0808932b-2ed6-4b67-b5bf-5a23f92858bb"
+			refpath="/dom[@domain='192.168.192.139']//div[#'panel-request']/div[1]"
 			robustPath=""
 			searchtimeout="30000ms">
-				/dom[@domain='192.168.192.139']//section[#'appModule']/div/div/div[2]/div/div[1]/span[@innertext='Anmeldung']
+				/dom[@domain='192.168.192.139']//div[#'panel-request']/div[1]
 			</item>
+			<item
+			addcaps="unknown,webelement,h4tag"
+			capname="h4tag"
+			id="6797bb2b-d8f5-4293-bcfb-4afa40a8d330"
+			name="H4TagNeu"
+			refimgid="4953bec1-92e8-4def-bcef-f34b6e2200ef"
+			refpath="/dom[@domain='192.168.192.139']//div[#'panel-request']/div[1]/table/tbody/tr/td[1]/h4[@innertext='Neu']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='192.168.192.139']//div[#'panel-request']/div[1]/table/tbody/tr/td[1]/h4[@innertext='Neu']
+			</item>
+			<folder
+			capname="divtag"
+			id="0f19ff50-d020-4d7a-9614-2c84d40ac103"
+			isrooted="True"
+			name="KAutoScrollableKGridContent_Tabelle_Antraege_links"
+			refimgid="83e48a31-6596-43ca-9801-07bbb85abade"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,tdtag"
+				capname="tdtag"
+				id="e3a6a689-f0d3-4e5b-95e5-b62d880b9d61"
+				name="TdTag_Tagesdatum"
+				refimgid="fb690260-e65b-4786-b284-a5f390e86b65"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@domain='192.168.192.139']//div[#'requestgrid']/div[2]/table/tbody/tr[@role='row']/td[@innertext=$Tagesdatum]
+				</item>
+				<basepath>
+					/dom[@domain='192.168.192.139']//div[#'requestgrid']/div[2]
+				</basepath>
+			</folder>
 			<basepath>
 				/dom[@domain='192.168.192.139']
 			</basepath>
