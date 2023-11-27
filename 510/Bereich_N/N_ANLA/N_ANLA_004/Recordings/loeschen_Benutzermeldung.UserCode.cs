@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace N_ANLA_004.Recordings
 {
-    public partial class Benutzermeldung
+    public partial class Loeschen_Benutzermeldung
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

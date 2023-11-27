@@ -11,15 +11,6 @@
 			name="GJ_zurücksetzen">
 			</testcase>
 			<testmodule
-			id="0cc84ec0-b8ea-40bc-bc85-f148bd83ca94"
-			name="Pruefen_N_ANLA_geschlossen"
-			ref="daa9ba9f-c059-4314-8438-b7690760b8b4"
-			type="Recording">
-				<description>
-					<![CDATA[PET: auf continue on fail gesetzt: war mit E510 tw. reproduzierbar, dass n_anla geschlossen wurde]]>
-				</description>
-			</testmodule>
-			<testmodule
 			id="1684e315-e661-42ce-b0c1-0e634971ca07"
 			name="Hinweismeldung_GJ"
 			ref="6673b618-8151-4c38-9496-a35ffe26e574"
@@ -149,15 +140,6 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
-			<testmodule
-			id="1f917090-dc1f-4286-8a94-5ec620973018"
-			name="Benutzermeldung"
-			ref="24b958ec-ac6e-4ad1-a30b-bc1fc3a27f50"
-			type="Recording">
-				<description>
-					<![CDATA[Hinweis PET: Fehler? N_ANLA bleibt offen + kann weiter verwendet werden, obwohl lt. Meldung der Benutzer abgemeldet wird.]]>
-				</description>
-			</testmodule>
 			<setup
 			id="24d5ca9a-8741-458a-9f71-3af0467efe79"
 			name="setup">
@@ -217,7 +199,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="46ea7928-c288-4770-9b0b-b254ddc47cec"
 			name="CloseAUT"
 			ref="e18f24f4-ee3e-4cd9-939e-55f3d200dc33"
@@ -259,15 +240,6 @@
 					variablename="Programm_1">
 					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			id="655d5cbb-7f0f-46d8-a05a-db42e9823ba8"
-			name="n_anla_schliessen"
-			ref="a9b0ce4f-953f-4e8d-909c-ad4330720dd9"
-			type="Recording">
-				<description>
-					<![CDATA[PET: manuell schließen (continue on fail), weil nicht autom. geschlossen]]>
-				</description>
 			</testmodule>
 			<setup
 			id="679d51a1-3343-4760-8607-a690101768d5"
@@ -530,18 +502,6 @@
 							name="StartAUT_02">
 							</testmodule>
 						</setup>
-						<testmodule
-						id="1f917090-dc1f-4286-8a94-5ec620973018"
-						name="Benutzermeldung">
-						</testmodule>
-						<testmodule
-						id="655d5cbb-7f0f-46d8-a05a-db42e9823ba8"
-						name="n_anla_schliessen">
-						</testmodule>
-						<testmodule
-						id="0cc84ec0-b8ea-40bc-bc85-f148bd83ca94"
-						name="Pruefen_N_ANLA_geschlossen">
-						</testmodule>
 						<testmodule
 						id="4fd3eef4-eb5e-4429-88b3-435f9edd3419"
 						name="GJ_aendern">

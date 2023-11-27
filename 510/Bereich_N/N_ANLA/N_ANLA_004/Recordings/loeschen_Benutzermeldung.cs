@@ -24,29 +24,29 @@ namespace N_ANLA_004.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Benutzermeldung recording.
+    ///The loeschen_Benutzermeldung recording.
     /// </summary>
     [TestModule("24b958ec-ac6e-4ad1-a30b-bc1fc3a27f50", ModuleType.Recording, 1)]
-    public partial class Benutzermeldung : ITestModule
+    public partial class Loeschen_Benutzermeldung : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_ANLA_004.N_ANLA_004Repository repository.
         /// </summary>
         public static global::N_ANLA_004.N_ANLA_004Repository repo = global::N_ANLA_004.N_ANLA_004Repository.Instance;
 
-        static Benutzermeldung instance = new Benutzermeldung();
+        static Loeschen_Benutzermeldung instance = new Loeschen_Benutzermeldung();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Benutzermeldung()
+        public Loeschen_Benutzermeldung()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Benutzermeldung Instance
+        public static Loeschen_Benutzermeldung Instance
         {
             get { return instance; }
         }
