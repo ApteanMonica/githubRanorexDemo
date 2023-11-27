@@ -41,7 +41,6 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
         /// </summary>
         public Buchungen_laden()
         {
-            Tagesdatum_ermitteln = "";
             Tagesdatum = "";
         }
 
@@ -55,24 +54,12 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
 
 #region Variables
 
-        string _Tagesdatum_ermitteln;
-
-        /// <summary>
-        /// Gets or sets the value of variable Tagesdatum_ermitteln.
-        /// </summary>
-        [TestVariable("2edfc64a-4a2b-44b9-a1f3-7f8cfd6e9687")]
-        public string Tagesdatum_ermitteln
-        {
-            get { return _Tagesdatum_ermitteln; }
-            set { _Tagesdatum_ermitteln = value; }
-        }
-
         string _Tagesdatum;
 
         /// <summary>
         /// Gets or sets the value of variable Tagesdatum.
         /// </summary>
-        [TestVariable("5a5ff5cb-7e9e-4cbb-a243-58b2c4adecf6")]
+        [TestVariable("2edfc64a-4a2b-44b9-a1f3-7f8cfd6e9687")]
         public string Tagesdatum
         {
             get { return _Tagesdatum; }
@@ -114,8 +101,8 @@ namespace N_LISTEN_BULI_001.Recordings_b_exops
             Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'FrmBEXOP.Row_2'.", repo.FrmBEXOP.Row_2Info, new RecordItemIndex(2));
             Validate.NotExists(repo.FrmBEXOP.Row_2Info);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum_ermitteln) on item 'FrmBEXOP.Row1.ColExopDtherkunftRow1'.", repo.FrmBEXOP.Row1.ColExopDtherkunftRow1Info, new RecordItemIndex(3));
-            Validate.AttributeContains(repo.FrmBEXOP.Row1.ColExopDtherkunftRow1Info, "Text", Tagesdatum_ermitteln);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'FrmBEXOP.Row1.ColExopDtherkunftRow1'.", repo.FrmBEXOP.Row1.ColExopDtherkunftRow1Info, new RecordItemIndex(3));
+            Validate.AttributeContains(repo.FrmBEXOP.Row1.ColExopDtherkunftRow1Info, "Text", Tagesdatum);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='U') on item 'FrmBEXOP.Row1.ColExopArtRow1'.", repo.FrmBEXOP.Row1.ColExopArtRow1Info, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.FrmBEXOP.Row1.ColExopArtRow1Info, "Text", "U");

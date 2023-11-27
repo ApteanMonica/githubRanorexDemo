@@ -418,20 +418,6 @@
 			id="e00c906e-71e5-4444-bdcc-a6370b689971"
 			name="N_STAMM">
 			</testcase>
-			<testmodule
-			id="e273c1de-2fef-4e9e-9003-ffd0df0d2687"
-			name="Einlesen_Programmversion"
-			ref="7467c9ac-6746-4796-b102-7aed5bb2ea62"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Programmversion"
-					datasourceid="a1176db5-784e-4390-bcf9-eb9cb43208f4"
-					variableid="dcf1033e-dbba-4755-a618-527576c2d288"
-					variablename="Programmversion">
-					</var>
-				</databinding>
-			</testmodule>
 			<teardown
 			id="fac932dd-6626-4c48-b859-3bd411f0687a"
 			name="teardown">
@@ -455,10 +441,6 @@
 							name="StartAUT">
 							</testmodule>
 						</setup>
-						<testmodule
-						id="e273c1de-2fef-4e9e-9003-ffd0df0d2687"
-						name="Einlesen_Programmversion">
-						</testmodule>
 						<testmodule
 						id="b48a2c60-6ee6-491c-b02b-39497563331e"
 						name="Einschraenkung_Daten">
@@ -580,5 +562,8 @@
 		</testconfiguration>
 	</testconfigurations>
 	<references>
+		<reference>
+			Ranorex Automation Helpers.dll
+		</reference>
 	</references>
 </testsuitedoc>
