@@ -58,6 +58,106 @@ mode="Global">
 		</var>
 	</variables>
 	<recorditems>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="GetSystemDateTimeAsString"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Tagesdatum">
+				</binding>
+			</bindings>
+			<arguments
+			id="a73243a1-fe1c-4d6c-9145-1d663e3e177d">
+				<argument
+				argname="expectedFormat"
+				id="35e874b9-4abd-4e36-ad0a-9822e84b0cb3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						dd.MM.yyyy
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="40e0d6a1-91eb-43b6-b006-7c74d45f1a47">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Tagesdatum">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
+		<userrecorditem
+		classname="Aptean"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="GetSystemDateTimePlus"
+		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="Tagesdatum_plus_7_Tage">
+				</binding>
+			</bindings>
+			<arguments
+			id="1f3410c7-6605-4179-8ad2-4330b526af3a">
+				<argument
+				argname="s"
+				id="204bc060-7388-430f-b35c-b0909f85b671">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						d
+					</argvalue>
+				</argument>
+				<argument
+				argname="counter"
+				id="503b70fc-9127-4395-a91e-688705ea5e34">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						7
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="ae79b9d9-45e4-473c-8354-2c7974d06a50">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="Tagesdatum_plus_7_Tage">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
@@ -132,10 +232,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="2ac00e76-ec68-4d29-a392-c6fc0b491328"
+			id="e3a6a689-f0d3-4e5b-95e5-b62d880b9d61"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='192.168.192.139']//div[#'requestgrid']/div[2]/table//td[@innertext='05.08.2022']
+					/dom[@domain='192.168.192.139']//div[#'requestgrid']/div[2]/table/tbody/tr[8]/td[@innertext=$Tagesdatum]
 				</path>
 				<robustPath>
 				</robustPath>
@@ -165,10 +265,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="2ac00e76-ec68-4d29-a392-c6fc0b491328"
+			id="e3a6a689-f0d3-4e5b-95e5-b62d880b9d61"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='192.168.192.139']//div[#'requestgrid']/div[2]/table//td[@innertext='05.08.2022']
+					/dom[@domain='192.168.192.139']//div[#'requestgrid']/div[2]/table/tbody/tr[8]/td[@innertext=$Tagesdatum]
 				</path>
 				<robustPath>
 				</robustPath>
@@ -580,7 +680,7 @@ mode="Global">
 				InnerText
 			</matchname>
 			<matchvalue>
-				Testdatei zur Krankmeldung
+				Testdatei Krankengeld
 			</matchvalue>
 		</validationitem>
 	</recorditems>

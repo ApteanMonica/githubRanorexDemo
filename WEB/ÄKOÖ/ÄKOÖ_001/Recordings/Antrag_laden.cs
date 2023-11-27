@@ -85,6 +85,16 @@ namespace AEKOOE_001.Recordings
         }
 
         /// <summary>
+        /// Gets or sets the value of variable Tagesdatum.
+        /// </summary>
+        [TestVariable("93a74749-d290-4ea1-b2b2-026dd6c0c9aa")]
+        public string Tagesdatum
+        {
+            get { return repo.Tagesdatum; }
+            set { repo.Tagesdatum = value; }
+        }
+
+        /// <summary>
         /// Gets or sets the value of variable SVNR.
         /// </summary>
         [TestVariable("0d832c8b-ec38-4a66-8923-68047beb93af")]
@@ -112,16 +122,6 @@ namespace AEKOOE_001.Recordings
         {
             get { return repo.Diagnose; }
             set { repo.Diagnose = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Tagesdatum.
-        /// </summary>
-        [TestVariable("93a74749-d290-4ea1-b2b2-026dd6c0c9aa")]
-        public string Tagesdatum
-        {
-            get { return repo.Tagesdatum; }
-            set { repo.Tagesdatum = value; }
         }
 
         /// <summary>
@@ -160,49 +160,57 @@ namespace AEKOOE_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.ColMd6ColXs12'", repo.Login.ColMd6ColXs12Info, new ActionTimeout(120000), new RecordItemIndex(0));
+            Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimeAsString("dd.MM.yyyy");
+            
+            Report.Log(ReportLevel.Info, "User", Tagesdatum, new RecordItemIndex(1));
+            
+            Tagesdatum_plus_7_Tage = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimePlus("d", ValueConverter.ArgumentFromString<int>("counter", "7"));
+            
+            Report.Log(ReportLevel.Info, "User", Tagesdatum_plus_7_Tage, new RecordItemIndex(3));
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.ColMd6ColXs12'", repo.Login.ColMd6ColXs12Info, new ActionTimeout(120000), new RecordItemIndex(4));
             repo.Login.ColMd6ColXs12Info.WaitForExists(120000);
             
             // ändern auf Validierung aktuelles Tagesdatum
-            Report.Log(ReportLevel.Info, "Validation", "ändern auf Validierung aktuelles Tagesdatum\r\nValidating Exists on item 'Login.TdTag_mit_Tagesdatum'.", repo.Login.TdTag_mit_TagesdatumInfo, new RecordItemIndex(1));
-            Validate.Exists(repo.Login.TdTag_mit_TagesdatumInfo);
+            Report.Log(ReportLevel.Info, "Validation", "ändern auf Validierung aktuelles Tagesdatum\r\nValidating Exists on item 'Login.KAutoScrollableKGridContent_Tabelle_Antraege_links.TdTag_Tagesdatum'.", repo.Login.KAutoScrollableKGridContent_Tabelle_Antraege_links.TdTag_TagesdatumInfo, new RecordItemIndex(5));
+            Validate.Exists(repo.Login.KAutoScrollableKGridContent_Tabelle_Antraege_links.TdTag_TagesdatumInfo);
             
             // ändern auf Validierung aktuelles Tagesdatum
-            Report.Log(ReportLevel.Info, "Mouse", "ändern auf Validierung aktuelles Tagesdatum\r\nMouse Left Click item 'Login.TdTag_mit_Tagesdatum' at Center.", repo.Login.TdTag_mit_TagesdatumInfo, new RecordItemIndex(2));
-            repo.Login.TdTag_mit_Tagesdatum.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "ändern auf Validierung aktuelles Tagesdatum\r\nMouse Left Click item 'Login.KAutoScrollableKGridContent_Tabelle_Antraege_links.TdTag_Tagesdatum' at Center.", repo.Login.KAutoScrollableKGridContent_Tabelle_Antraege_links.TdTag_TagesdatumInfo, new RecordItemIndex(6));
+            repo.Login.KAutoScrollableKGridContent_Tabelle_Antraege_links.TdTag_Tagesdatum.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Antrag auf Krankengeld') on item 'Login.AlertAlertInfo'.", repo.Login.AlertAlertInfoInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Antrag auf Krankengeld') on item 'Login.AlertAlertInfo'.", repo.Login.AlertAlertInfoInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.Login.AlertAlertInfoInfo, "InnerText", "Antrag auf Krankengeld");
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Name='Krankengeld') on item 'Login.AKAT011RequestFormRow.AntragAufKrankengeld'.", repo.Login.AKAT011RequestFormRow.AntragAufKrankengeldInfo, new RecordItemIndex(4));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Name='Krankengeld') on item 'Login.AKAT011RequestFormRow.AntragAufKrankengeld'.", repo.Login.AKAT011RequestFormRow.AntragAufKrankengeldInfo, new RecordItemIndex(8));
             //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.AntragAufKrankengeldInfo, "Name", "Krankengeld");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Tagesdatum) on item 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_abInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Tagesdatum) on item 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_abInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_abInfo, "InnerText", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Tagesdatum_plus_7_Tage) on item 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bis'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bisInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Tagesdatum_plus_7_Tage) on item 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bis'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bisInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bisInfo, "InnerText", Tagesdatum_plus_7_Tage);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$SVNR) on item 'Login.AKAT011RequestFormRow.Text_SVNR'.", repo.Login.AKAT011RequestFormRow.Text_SVNRInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$SVNR) on item 'Login.AKAT011RequestFormRow.Text_SVNR'.", repo.Login.AKAT011RequestFormRow.Text_SVNRInfo, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_SVNRInfo, "InnerText", SVNR);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Bankverbindung_1) on item 'Login.AKAT011RequestFormRow.KInput_Bankverbindung'.", repo.Login.AKAT011RequestFormRow.KInput_BankverbindungInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Bankverbindung_1) on item 'Login.AKAT011RequestFormRow.KInput_Bankverbindung'.", repo.Login.AKAT011RequestFormRow.KInput_BankverbindungInfo, new RecordItemIndex(12));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.KInput_BankverbindungInfo, "InnerText", Bankverbindung_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Diagnose) on item 'Login.AKAT011RequestFormRow.False_Eingabe_Diagnose'.", repo.Login.AKAT011RequestFormRow.False_Eingabe_DiagnoseInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Diagnose) on item 'Login.AKAT011RequestFormRow.False_Eingabe_Diagnose'.", repo.Login.AKAT011RequestFormRow.False_Eingabe_DiagnoseInfo, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.False_Eingabe_DiagnoseInfo, "InnerText", Diagnose);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='ordentlicher Wohnsitz') on item 'Login.AKAT011RequestFormRow.KInput_Aufenthaltsort'.", repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='ordentlicher Wohnsitz') on item 'Login.AKAT011RequestFormRow.KInput_Aufenthaltsort'.", repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, "InnerText", "ordentlicher Wohnsitz");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'Login.AKAT011RequestFormRow.Checkbox_Fremdverschulden'.", repo.Login.AKAT011RequestFormRow.Checkbox_FremdverschuldenInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'Login.AKAT011RequestFormRow.Checkbox_Fremdverschulden'.", repo.Login.AKAT011RequestFormRow.Checkbox_FremdverschuldenInfo, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Checkbox_FremdverschuldenInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Arbeitsunfähigkeitsmeldung') on item 'Login.AKAT011RequestFormRow.Arbeitsunfaehigkeitsmeldung_Dokumenttyp'.", repo.Login.AKAT011RequestFormRow.Arbeitsunfaehigkeitsmeldung_DokumenttypInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Arbeitsunfähigkeitsmeldung') on item 'Login.AKAT011RequestFormRow.Arbeitsunfaehigkeitsmeldung_Dokumenttyp'.", repo.Login.AKAT011RequestFormRow.Arbeitsunfaehigkeitsmeldung_DokumenttypInfo, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Arbeitsunfaehigkeitsmeldung_DokumenttypInfo, "InnerText", "Arbeitsunfähigkeitsmeldung");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Testdatei zur Krankmeldung') on item 'Login.AKAT011RequestFormRow.Bezeichnung_Dokument'.", repo.Login.AKAT011RequestFormRow.Bezeichnung_DokumentInfo, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Bezeichnung_DokumentInfo, "InnerText", "Testdatei zur Krankmeldung");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Testdatei Krankengeld') on item 'Login.AKAT011RequestFormRow.Bezeichnung_Dokument'.", repo.Login.AKAT011RequestFormRow.Bezeichnung_DokumentInfo, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Bezeichnung_DokumentInfo, "InnerText", "Testdatei Krankengeld");
             
         }
 

@@ -165,14 +165,17 @@ namespace AEKOOE_001.Recordings
             //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Arbeitsunfähigkeitsmeldung') on item 'Login.AKAT011RequestFormRow.Arbeitsunfaehigkeitsmeldung_Dokumenttyp'.", repo.Login.AKAT011RequestFormRow.Arbeitsunfaehigkeitsmeldung_DokumenttypInfo, new RecordItemIndex(8));
             //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Arbeitsunfaehigkeitsmeldung_DokumenttypInfo, "InnerText", "Arbeitsunfähigkeitsmeldung");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.BtnBtnSecondarySendBtn_Absenden' at Center.", repo.Login.BtnBtnSecondarySendBtn_AbsendenInfo, new RecordItemIndex(9));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue='Neu') on item 'Login.SomeTdTag_Neu'.", repo.Login.SomeTdTag_NeuInfo, new RecordItemIndex(9));
+            //Validate.AttributeEqual(repo.Login.SomeTdTag_NeuInfo, "TagValue", "Neu");
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.PanelHeading'", repo.Login.PanelHeadingInfo, new ActionTimeout(120000), new RecordItemIndex(10));
+            repo.Login.PanelHeadingInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Neu') on item 'Login.H4TagNeu'.", repo.Login.H4TagNeuInfo, new RecordItemIndex(11));
+            Validate.AttributeContains(repo.Login.H4TagNeuInfo, "InnerText", "Neu");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.BtnBtnSecondarySendBtn_Absenden' at Center.", repo.Login.BtnBtnSecondarySendBtn_AbsendenInfo, new RecordItemIndex(12));
             repo.Login.BtnBtnSecondarySendBtn_Absenden.Click();
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue='Neu') on item 'Login.SomeTdTag_Neu'.", repo.Login.SomeTdTag_NeuInfo, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.Login.SomeTdTag_NeuInfo, "TagValue", "Neu");
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.SomeTdTag_Neu'", repo.Login.SomeTdTag_NeuInfo, new ActionTimeout(120000), new RecordItemIndex(11));
-            repo.Login.SomeTdTag_NeuInfo.WaitForExists(120000);
             
         }
 

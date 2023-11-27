@@ -131,7 +131,7 @@ mode="Global">
 		optional="False"
 		searchpropertyid="61a31a59-5e7b-4132-995b-914e559b9de9"
 		waitaction="Exists"
-		waittimeout="120000ms">
+		waittimeout="180000ms">
 			<comment>
 			</comment>
 			<bindings>
@@ -639,7 +639,7 @@ KKAP/9k=
 		optional="False"
 		searchpropertyid="da718853-fa3b-4efa-9721-8a8fdafe76c0"
 		waitaction="Exists"
-		waittimeout="120000ms">
+		waittimeout="180000ms">
 			<comment>
 			</comment>
 			<bindings>
@@ -1391,6 +1391,32 @@ KKAP/9k=
 				Arbeitsunfähigkeitsmeldung
 			</matchvalue>
 		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="7b23bdc6-f86a-4d9d-bec7-8586aaa4e469"
+		sx="1150"
+		sy="967"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="75475c8a-117c-4f25-907a-d199fa724d9f"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[25]/div/tag/div/div//tag[@tagname='dmscontroluploaddialog']/div/div/div/div/div[3]/button[@innertext='Speichern']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="ea8dc27d-4b43-438c-bd14-00e352da043f"
