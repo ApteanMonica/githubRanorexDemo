@@ -11,7 +11,6 @@
 			name="GJ_zurücksetzen">
 			</testcase>
 			<testmodule
-			enabled="False"
 			id="0cc84ec0-b8ea-40bc-bc85-f148bd83ca94"
 			name="Pruefen_N_ANLA_geschlossen"
 			ref="daa9ba9f-c059-4314-8438-b7690760b8b4"
@@ -117,18 +116,6 @@
 					variablename="Abgangs_AfA">
 					</var>
 					<var
-					dataname="RBW"
-					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
-					variableid="543f2b1f-1e81-4546-8ac3-84f376e042de"
-					variablename="RBW">
-					</var>
-					<var
-					dataname="Abgangserloes"
-					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
-					variableid="5876bc06-97cc-403e-9eb4-d0e26c027a29"
-					variablename="Abgangserloes">
-					</var>
-					<var
 					dataname="Anlagennr"
 					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
 					variableid="b6361b1d-a98c-4d96-99c0-76f539745aff"
@@ -139,6 +126,18 @@
 					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
 					variableid="6233f003-53e6-4333-aa01-fda0d433c005"
 					variablename="AHK_Betrag_Abgang">
+					</var>
+					<var
+					dataname="RBW"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="543f2b1f-1e81-4546-8ac3-84f376e042de"
+					variablename="RBW">
+					</var>
+					<var
+					dataname="Abgangserloes"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="5876bc06-97cc-403e-9eb4-d0e26c027a29"
+					variablename="Abgangserloes">
 					</var>
 				</databinding>
 				<missingdatabinding>
@@ -248,18 +247,27 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm_1"
-					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
-					variableid="a4b7c848-ebc1-4c8d-a309-b901e3808da8"
-					variablename="Programm_1">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
 					variableid="5566eb44-dd29-4d05-996f-78c02394565e"
 					variablename="Startfile">
 					</var>
+					<var
+					dataname="Programm_1"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="a4b7c848-ebc1-4c8d-a309-b901e3808da8"
+					variablename="Programm_1">
+					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="655d5cbb-7f0f-46d8-a05a-db42e9823ba8"
+			name="n_anla_schliessen"
+			ref="a9b0ce4f-953f-4e8d-909c-ad4330720dd9"
+			type="Recording">
+				<description>
+					<![CDATA[PET: manuell schließen (continue on fail), weil nicht autom. geschlossen]]>
+				</description>
 			</testmodule>
 			<setup
 			id="679d51a1-3343-4760-8607-a690101768d5"
@@ -284,28 +292,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Buchungsdatum"
+					dataname="Abgangserloes"
 					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
-					variableid="f6b656f6-e20d-4cd3-9cd0-8aec19829e9e"
-					variablename="Buchungsdatum">
-					</var>
-					<var
-					dataname="Anlagennr"
-					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
-					variableid="46f5ddf5-c3cd-43f7-94f1-826928b7f7a3"
-					variablename="Anlagennr">
-					</var>
-					<var
-					dataname="Beleg"
-					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
-					variableid="b78d7320-9f03-4dba-8550-677ca9f0a8c5"
-					variablename="Beleg">
-					</var>
-					<var
-					dataname="GJ"
-					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
-					variableid="a0ff0a0e-dc02-45d2-94b9-b81b6b5a0555"
-					variablename="GJ">
+					variableid="6e214de1-e500-4d59-9224-649935e67ea8"
+					variablename="Abgangserloes">
 					</var>
 					<var
 					dataname="Sachbearbeiter"
@@ -314,16 +304,34 @@
 					variablename="Sachbearbeiter">
 					</var>
 					<var
-					dataname="Abgangserloes"
+					dataname="Beleg"
 					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
-					variableid="6e214de1-e500-4d59-9224-649935e67ea8"
-					variablename="Abgangserloes">
+					variableid="b78d7320-9f03-4dba-8550-677ca9f0a8c5"
+					variablename="Beleg">
 					</var>
 					<var
 					dataname="Abgabegrund"
 					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
 					variableid="f929911a-69d0-4106-b702-5167d962bfa2"
 					variablename="Abgabegrund">
+					</var>
+					<var
+					dataname="Anlagennr"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="46f5ddf5-c3cd-43f7-94f1-826928b7f7a3"
+					variablename="Anlagennr">
+					</var>
+					<var
+					dataname="Buchungsdatum"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="f6b656f6-e20d-4cd3-9cd0-8aec19829e9e"
+					variablename="Buchungsdatum">
+					</var>
+					<var
+					dataname="GJ"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="a0ff0a0e-dc02-45d2-94b9-b81b6b5a0555"
+					variablename="GJ">
 					</var>
 				</databinding>
 			</testmodule>
@@ -340,40 +348,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="GJ_bis"
+					dataname="Buchungsdatum"
 					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
-					variableid="9567a44b-a489-4849-96a4-a291b492b109"
-					variablename="GJ_bis">
-					</var>
-					<var
-					dataname="GJ_von"
-					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
-					variableid="64085a12-1a95-4e47-9bbd-cc99b435747e"
-					variablename="GJ_von">
-					</var>
-					<var
-					dataname="Abgabegrund"
-					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
-					variableid="863bf879-335f-4380-8c88-515aaac3e193"
-					variablename="Abgabegrund">
-					</var>
-					<var
-					dataname="Abgangserloes"
-					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
-					variableid="685c0846-cf60-4da5-8809-a08e1d1796e9"
-					variablename="Abgangserloes">
-					</var>
-					<var
-					dataname="Sachbearbeiter"
-					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
-					variableid="dc4c5611-3e2f-4d3b-a487-a3bd86860641"
-					variablename="Sachbearbeiter">
-					</var>
-					<var
-					dataname="Beleg"
-					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
-					variableid="b135c0bf-9aaf-4bed-850f-f50b653bb0e5"
-					variablename="Beleg">
+					variableid="bca42e0c-cd56-4a03-b7c5-7e9f0009e4e2"
+					variablename="Buchungsdatum">
 					</var>
 					<var
 					dataname="Anlagennr"
@@ -382,10 +360,40 @@
 					variablename="Anlagennr">
 					</var>
 					<var
-					dataname="Buchungsdatum"
+					dataname="Beleg"
 					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
-					variableid="bca42e0c-cd56-4a03-b7c5-7e9f0009e4e2"
-					variablename="Buchungsdatum">
+					variableid="b135c0bf-9aaf-4bed-850f-f50b653bb0e5"
+					variablename="Beleg">
+					</var>
+					<var
+					dataname="Sachbearbeiter"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="dc4c5611-3e2f-4d3b-a487-a3bd86860641"
+					variablename="Sachbearbeiter">
+					</var>
+					<var
+					dataname="Abgangserloes"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="685c0846-cf60-4da5-8809-a08e1d1796e9"
+					variablename="Abgangserloes">
+					</var>
+					<var
+					dataname="Abgabegrund"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="863bf879-335f-4380-8c88-515aaac3e193"
+					variablename="Abgabegrund">
+					</var>
+					<var
+					dataname="GJ_von"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="64085a12-1a95-4e47-9bbd-cc99b435747e"
+					variablename="GJ_von">
+					</var>
+					<var
+					dataname="GJ_bis"
+					datasourceid="18171c63-5e0f-4ab8-8525-8403050526b2"
+					variableid="9567a44b-a489-4849-96a4-a291b492b109"
+					variablename="GJ_bis">
 					</var>
 				</databinding>
 			</testmodule>
@@ -525,6 +533,10 @@
 						<testmodule
 						id="1f917090-dc1f-4286-8a94-5ec620973018"
 						name="Benutzermeldung">
+						</testmodule>
+						<testmodule
+						id="655d5cbb-7f0f-46d8-a05a-db42e9823ba8"
+						name="n_anla_schliessen">
 						</testmodule>
 						<testmodule
 						id="0cc84ec0-b8ea-40bc-bc85-f148bd83ca94"
