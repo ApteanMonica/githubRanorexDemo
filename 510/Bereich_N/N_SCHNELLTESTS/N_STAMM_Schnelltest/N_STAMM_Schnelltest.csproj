@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{CD14F69A-C635-47AE-9498-37CFD7628B2D}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>N_STAMM_Schnelltest</RootNamespace>
+    <AssemblyName>N_STAMM_Schnelltest</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>d43928a4-4230-4248-b2e5-60e82204b82f</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper" />
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Delphi" />
+    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.WinForms.Core" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="Ranorex.Plugin.Wpf.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>7e95a0ae-3a23-4e7c-9340-4ed496cdd16e</id>
+    </Compile>
+    <Compile Include="N_STAMM_SchnelltestRepository.cs">
+      <BoundTo>d43928a4-4230-4248-b2e5-60e82204b82f</BoundTo>
+      <DependentUpon>N_STAMM_SchnelltestRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>1da4d441-5f37-4fbd-bd53-7c79d1d8b0af</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>3c64a13e-5893-4254-bb53-6fa7096035bf</id>
+    </Compile>
+    <Compile Include="Recordings_N_ANLA\Close_N_ANLA.cs">
+      <DependentUpon>Close_N_ANLA.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f046812e-d5a7-4e30-82ac-394f906fcce1</id>
+      <BoundTo>933b7ef5-cdc8-4f6e-a79a-ff0c8fbb22d4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_N_ANLA\Close_N_ANLA.UserCode.cs">
+      <DependentUpon>Close_N_ANLA.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>05a32e2d-432e-4ed1-86f7-fafc9eb168e3</id>
+      <BoundTo>933b7ef5-cdc8-4f6e-a79a-ff0c8fbb22d4</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_N_ANLA\N_ANLA_Button_NEU_klicken.cs">
+      <BoundTo>6cce2f09-44ee-4cc4-bd5f-88a25b327d6e</BoundTo>
+      <DependentUpon>N_ANLA_Button_NEU_klicken.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>898fe21f-d190-474f-a849-b27b6375652b</id>
+    </Compile>
+    <Compile Include="Recordings_N_ANLA\N_ANLA_Button_NEU_klicken.UserCode.cs">
+      <BoundTo>6cce2f09-44ee-4cc4-bd5f-88a25b327d6e</BoundTo>
+      <DependentUpon>N_ANLA_Button_NEU_klicken.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>409b5f19-45b9-44ee-a3ba-6a2c32e673ed</id>
+    </Compile>
+    <Compile Include="Recordings_N_ANLA\Start_N_ANLA.cs">
+      <DependentUpon>Start_N_ANLA.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1bfa7745-2dd2-4424-9fbc-e0b7f828fadd</id>
+      <BoundTo>c106d989-7f98-45fe-b80b-93e19033a7a1</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_N_ANLA\Start_N_ANLA.UserCode.cs">
+      <DependentUpon>Start_N_ANLA.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>eb59cf28-0876-43b3-95ec-532d61f7773a</id>
+      <BoundTo>c106d989-7f98-45fe-b80b-93e19033a7a1</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_N_STAMM_ANFI\Close_N_STAMM.cs">
+      <DependentUpon>Close_N_STAMM.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>34abfd79-4175-4f59-9d24-b1c70014e73d</id>
+      <BoundTo>bdcd3888-8b54-4fe4-8cbb-aa3e7f550ab2</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_N_STAMM_ANFI\Close_N_STAMM.UserCode.cs">
+      <DependentUpon>Close_N_STAMM.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8520eddb-9ba1-4aee-96c7-f090326e4f75</id>
+      <BoundTo>bdcd3888-8b54-4fe4-8cbb-aa3e7f550ab2</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_N_STAMM_ANFI\Meldung_N_STAMM_Sperre_N_ANLA_offen.cs">
+      <DependentUpon>Meldung_N_STAMM_Sperre_N_ANLA_offen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9f67d71c-3382-42a8-aecb-25322a761860</id>
+      <BoundTo>1f2e4110-b0b4-4386-9c9a-2d1ac689c68f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_N_STAMM_ANFI\Meldung_N_STAMM_Sperre_N_ANLA_offen.UserCode.cs">
+      <DependentUpon>Meldung_N_STAMM_Sperre_N_ANLA_offen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>59790896-840b-4661-9725-0572fe31afc6</id>
+      <BoundTo>1f2e4110-b0b4-4386-9c9a-2d1ac689c68f</BoundTo>
+    </Compile>
+    <Compile Include="Recordings_N_STAMM_ANFI\Start_N_STAMM_ANFI.cs">
+      <BoundTo>db2db159-e39c-4c4c-9c17-b34a7c095907</BoundTo>
+      <DependentUpon>Start_N_STAMM_ANFI.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c15f8d1d-22f8-4baf-ad92-7a91b97d42e5</id>
+    </Compile>
+    <Compile Include="Recordings_N_STAMM_ANFI\Start_N_STAMM_ANFI.UserCode.cs">
+      <BoundTo>db2db159-e39c-4c4c-9c17-b34a7c095907</BoundTo>
+      <DependentUpon>Start_N_STAMM_ANFI.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>198cf4ff-5894-4fd0-9494-46091187327f</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>baf4ad49-53a4-4180-b6c5-b880e56f0e52</id>
+    </None>
+    <None Include="N_STAMM_SchnelltestRepository.rximg">
+      <BoundTo>d43928a4-4230-4248-b2e5-60e82204b82f</BoundTo>
+      <DependentUpon>N_STAMM_SchnelltestRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>cbff9c09-2714-4c36-9fd2-f36db8f889b9</id>
+    </None>
+    <None Include="N_STAMM_SchnelltestRepository.rxrep">
+      <id>d43928a4-4230-4248-b2e5-60e82204b82f</id>
+      <repoid>94a9a408-d44e-422e-9b89-dc3e96cbd4f4</repoid>
+      <reporootid>a950908a-d5da-49e7-adcf-210a1f7f78e8</reporootid>
+    </None>
+    <None Include="Recordings_N_ANLA\Close_N_ANLA.rxrec">
+      <BoundTo>d43928a4-4230-4248-b2e5-60e82204b82f</BoundTo>
+      <id>933b7ef5-cdc8-4f6e-a79a-ff0c8fbb22d4</id>
+      <recordtableid>0f8e19b1-aa1d-4fce-88ee-7331373e1db8</recordtableid>
+    </None>
+    <None Include="Recordings_N_ANLA\N_ANLA_Button_NEU_klicken.rxrec">
+      <BoundTo>d43928a4-4230-4248-b2e5-60e82204b82f</BoundTo>
+      <id>6cce2f09-44ee-4cc4-bd5f-88a25b327d6e</id>
+      <recordtableid>66356c34-6634-412a-8604-1aaf3a099232</recordtableid>
+    </None>
+    <None Include="Recordings_N_ANLA\Start_N_ANLA.rxrec">
+      <BoundTo>d43928a4-4230-4248-b2e5-60e82204b82f</BoundTo>
+      <id>c106d989-7f98-45fe-b80b-93e19033a7a1</id>
+      <recordtableid>a697e3f7-7703-4370-ae77-a811c707e5a9</recordtableid>
+    </None>
+    <None Include="Recordings_N_STAMM_ANFI\Close_N_STAMM.rxrec">
+      <BoundTo>d43928a4-4230-4248-b2e5-60e82204b82f</BoundTo>
+      <id>bdcd3888-8b54-4fe4-8cbb-aa3e7f550ab2</id>
+      <recordtableid>b258bcf4-6e1f-4920-911e-a1f0fdf08569</recordtableid>
+    </None>
+    <None Include="Recordings_N_STAMM_ANFI\Meldung_N_STAMM_Sperre_N_ANLA_offen.rxrec">
+      <BoundTo>d43928a4-4230-4248-b2e5-60e82204b82f</BoundTo>
+      <id>1f2e4110-b0b4-4386-9c9a-2d1ac689c68f</id>
+      <recordtableid>a520945b-1f73-4284-a615-095a37c50f2c</recordtableid>
+    </None>
+    <None Include="Recordings_N_STAMM_ANFI\Start_N_STAMM_ANFI.rxrec">
+      <BoundTo>d43928a4-4230-4248-b2e5-60e82204b82f</BoundTo>
+      <id>db2db159-e39c-4c4c-9c17-b34a7c095907</id>
+      <recordtableid>104b2f0d-5ed5-4611-98bb-da0f8b6b08d0</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="N_STAMM_Schnelltest.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>23db4bbe-86a5-44d7-b67d-d1def0b243aa</id>
+    </Content>
+    <Content Include="N_STAMM_Schnelltest.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>f0836f3a-83dc-4cc4-b2fe-a8c5ac861b9a</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recordings_N_ANLA">
+      <id>d57fca7c-a547-4976-a186-8ca0d1af76cc</id>
+    </Folder>
+    <Folder Include="Recordings_N_STAMM_ANFI">
+      <id>2c9f7453-e78a-49c0-b937-e1f979f88df7</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

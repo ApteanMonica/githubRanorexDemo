@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace N_ANLA_004.Recordings
+namespace N_STAMM_Schnelltest.Recordings_N_STAMM_ANFI
 {
-    public partial class Benutzermeldung
+    public partial class Start_N_STAMM_ANFI
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
