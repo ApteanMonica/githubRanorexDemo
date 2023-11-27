@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="b258bcf4-6e1f-4920-911e-a1f0fdf08569"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Close_N_STAMM"
+	namespace="N_STAMM_Schnelltest.Recordings_N_STAMM_ANFI">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="abf5587b-d763-4679-8dfd-ea81d3ed369c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="07949d0e-4c53-401b-a2e8-958a5acd2872"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmAnfi']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="94a9a408-d44e-422e-9b89-dc3e96cbd4f4"
+	name="N_STAMM_SchnelltestRepository"
+	relativepath="..\N_STAMM_SchnelltestRepository.rxrep">
+		<codegen
+		classname="N_STAMM_SchnelltestRepository"
+		namespace="N_STAMM_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="a950908a-d5da-49e7-adcf-210a1f7f78e8"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Close_N_STAMM.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
