@@ -168,8 +168,8 @@ namespace AEKOOE_001.Recordings
             
             Report.Log(ReportLevel.Info, "User", Tagesdatum_plus_7_Tage, new RecordItemIndex(3));
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.ColMd6ColXs12'", repo.Login.ColMd6ColXs12Info, new ActionTimeout(120000), new RecordItemIndex(4));
-            repo.Login.ColMd6ColXs12Info.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.Antrag'", repo.Login.AntragInfo, new ActionTimeout(120000), new RecordItemIndex(4));
+            repo.Login.AntragInfo.WaitForExists(120000);
             
             // ändern auf Validierung aktuelles Tagesdatum
             Report.Log(ReportLevel.Info, "Validation", "ändern auf Validierung aktuelles Tagesdatum\r\nValidating Exists on item 'Login.KAutoScrollableKGridContent_Tabelle_Antraege_links.TdTag_Tagesdatum'.", repo.Login.KAutoScrollableKGridContent_Tabelle_Antraege_links.TdTag_TagesdatumInfo, new RecordItemIndex(5));
@@ -179,14 +179,14 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "ändern auf Validierung aktuelles Tagesdatum\r\nMouse Left Click item 'Login.KAutoScrollableKGridContent_Tabelle_Antraege_links.TdTag_Tagesdatum' at Center.", repo.Login.KAutoScrollableKGridContent_Tabelle_Antraege_links.TdTag_TagesdatumInfo, new RecordItemIndex(6));
             repo.Login.KAutoScrollableKGridContent_Tabelle_Antraege_links.TdTag_Tagesdatum.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Antrag auf Krankengeld') on item 'Login.AlertAlertInfo'.", repo.Login.AlertAlertInfoInfo, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.Login.AlertAlertInfoInfo, "InnerText", "Antrag auf Krankengeld");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Antrag auf Krankengeld') on item 'Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ColMd6ColXs12_Antrags_Eingabefelder.AlertAlertInfo_Antragstitel'.", repo.Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ColMd6ColXs12_Antrags_Eingabefelder.AlertAlertInfo_AntragstitelInfo, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ColMd6ColXs12_Antrags_Eingabefelder.AlertAlertInfo_AntragstitelInfo, "InnerText", "Antrag auf Krankengeld");
             
             //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Name='Krankengeld') on item 'Login.AKAT011RequestFormRow.AntragAufKrankengeld'.", repo.Login.AKAT011RequestFormRow.AntragAufKrankengeldInfo, new RecordItemIndex(8));
             //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.AntragAufKrankengeldInfo, "Name", "Krankengeld");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Tagesdatum) on item 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_abInfo, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_abInfo, "InnerText", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Tagesdatum) on item 'Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_abInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_abInfo, "InnerText", Tagesdatum);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Tagesdatum_plus_7_Tage) on item 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bis'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bisInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bisInfo, "InnerText", Tagesdatum_plus_7_Tage);

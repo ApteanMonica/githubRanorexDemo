@@ -79,8 +79,8 @@ namespace AEKOOE_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.ModalHeader_Antragskategorie' at Center.", repo.Login.ModalHeader_AntragskategorieInfo, new RecordItemIndex(0));
-            repo.Login.ModalHeader_Antragskategorie.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ModalHeader_Antragskategorie' at Center.", repo.Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ModalHeader_AntragskategorieInfo, new RecordItemIndex(0));
+            repo.Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ModalHeader_Antragskategorie.Click();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(1));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -101,14 +101,14 @@ namespace AEKOOE_001.Recordings
             Keyboard.Press(System.Windows.Forms.Keys.Down, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             // Validierung auf Text 2.Ebene funktioniert nicht --> Lösung finden
-            //Report.Log(ReportLevel.Info, "Validation", "Validierung auf Text 2.Ebene funktioniert nicht --> Lösung finden\r\nValidating AttributeEqual (InnerText='Krankengeld') on item 'Login.KIArrow60DownKIcon'.", repo.Login.KIArrow60DownKIconInfo, new RecordItemIndex(7));
-            //Validate.AttributeEqual(repo.Login.KIArrow60DownKIconInfo, "InnerText", "Krankengeld");
+            //Report.Log(ReportLevel.Info, "Validation", "Validierung auf Text 2.Ebene funktioniert nicht --> Lösung finden\r\nValidating AttributeEqual (InnerText='Krankengeld') on item 'Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.KIArrow60DownKIcon'.", repo.Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.KIArrow60DownKIconInfo, new RecordItemIndex(7));
+            //Validate.AttributeEqual(repo.Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.KIArrow60DownKIconInfo, "InnerText", "Krankengeld");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.ButtonTagNeu_Antragskategore' at Center.", repo.Login.ButtonTagNeu_AntragskategoreInfo, new RecordItemIndex(9));
-            repo.Login.ButtonTagNeu_Antragskategore.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ButtonTagNeu_Antragskategore' at Center.", repo.Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ButtonTagNeu_AntragskategoreInfo, new RecordItemIndex(9));
+            repo.Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ButtonTagNeu_Antragskategore.Click();
             
         }
 

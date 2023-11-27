@@ -138,11 +138,11 @@ namespace AEKOOE_001.Recordings
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Krankengeld') on item 'Login.FormControl'.", repo.Login.FormControlInfo, new RecordItemIndex(0));
-            //Validate.AttributeEqual(repo.Login.FormControlInfo, "InnerText", "Krankengeld");
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Krankengeld') on item 'Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ColMd6ColXs12_Antrags_Eingabefelder.FormControl_Antragskategorie_Krankengeld'.", repo.Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ColMd6ColXs12_Antrags_Eingabefelder.FormControl_Antragskategorie_KrankengeldInfo, new RecordItemIndex(0));
+            //Validate.AttributeEqual(repo.Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ColMd6ColXs12_Antrags_Eingabefelder.FormControl_Antragskategorie_KrankengeldInfo, "InnerText", "Krankengeld");
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$berufsunfaehig_ab) on item 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_abInfo, new RecordItemIndex(1));
-            //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_abInfo, "InnerText", berufsunfaehig_ab);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$berufsunfaehig_ab) on item 'Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_abInfo, new RecordItemIndex(1));
+            //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_abInfo, "InnerText", berufsunfaehig_ab);
             
             //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$berufsunfaehig_bis) on item 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bis'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bisInfo, new RecordItemIndex(2));
             //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bisInfo, "InnerText", berufsunfaehig_bis);
