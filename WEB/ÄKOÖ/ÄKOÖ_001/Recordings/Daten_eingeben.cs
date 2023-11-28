@@ -184,8 +184,8 @@ namespace AEKOOE_001.Recordings
             
             Report.Log(ReportLevel.Info, "User", Tagesdatum_plus_7_Tage, new RecordItemIndex(9));
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum_plus_7_Tage' with focus on 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bis'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bisInfo, new RecordItemIndex(10));
-            repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bis.PressKeys(Tagesdatum_plus_7_Tage);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum_plus_7_Tage' with focus on 'Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_bis'.", repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_bisInfo, new RecordItemIndex(10));
+            repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_bis.PressKeys(Tagesdatum_plus_7_Tage);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);

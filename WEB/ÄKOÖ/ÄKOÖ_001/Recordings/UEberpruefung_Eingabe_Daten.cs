@@ -168,8 +168,8 @@ namespace AEKOOE_001.Recordings
             
             Report.Log(ReportLevel.Info, "User", Tagesdatum_plus_7_Tage, new RecordItemIndex(3));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Tagesdatum) on item 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bis'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bisInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bisInfo, "Value", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Tagesdatum) on item 'Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_abInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_abInfo, "Value", Tagesdatum);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$SVNR) on item 'Login.AKAT011RequestFormRow.Text_SVNR'.", repo.Login.AKAT011RequestFormRow.Text_SVNRInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_SVNRInfo, "Value", SVNR);
@@ -189,8 +189,8 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'Login.AKAT011RequestFormRow.Checkbox_Fremdverschulden'.", repo.Login.AKAT011RequestFormRow.Checkbox_FremdverschuldenInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Checkbox_FremdverschuldenInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Tagesdatum_plus_7_Tage) on item 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bis'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bisInfo, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bisInfo, "Value", Tagesdatum_plus_7_Tage);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Tagesdatum_plus_7_Tage) on item 'Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_bis'.", repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_bisInfo, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_bisInfo, "Value", Tagesdatum_plus_7_Tage);
             
         }
 
