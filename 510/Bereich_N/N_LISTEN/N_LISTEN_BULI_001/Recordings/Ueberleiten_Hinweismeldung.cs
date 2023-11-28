@@ -24,22 +24,22 @@ namespace N_LISTEN_BULI_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Hinweismeldung_Ueberleiten recording.
+    ///The Ueberleiten_Hinweismeldung recording.
     /// </summary>
     [TestModule("d432de5d-66d9-43c3-b2ef-8fdb9827d171", ModuleType.Recording, 1)]
-    public partial class Hinweismeldung_Ueberleiten : ITestModule
+    public partial class Ueberleiten_Hinweismeldung : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repository.
         /// </summary>
         public static global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository repo = global::N_LISTEN_BULI_001.N_LISTEN_BULI_001Repository.Instance;
 
-        static Hinweismeldung_Ueberleiten instance = new Hinweismeldung_Ueberleiten();
+        static Ueberleiten_Hinweismeldung instance = new Ueberleiten_Hinweismeldung();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Hinweismeldung_Ueberleiten()
+        public Ueberleiten_Hinweismeldung()
         {
             Belegnummer_Ueberleitung = "BULI_001_A";
             Belegdatum_Ueberleitung = "31.12.2022";
@@ -49,7 +49,7 @@ namespace N_LISTEN_BULI_001.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Hinweismeldung_Ueberleiten Instance
+        public static Ueberleiten_Hinweismeldung Instance
         {
             get { return instance; }
         }
@@ -116,19 +116,22 @@ namespace N_LISTEN_BULI_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(120000), new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmBuchungsliste.PbUEberleitungFibu' at Center.", repo.FrmBuchungsliste.PbUEberleitungFibuInfo, new RecordItemIndex(0));
+            repo.FrmBuchungsliste.PbUEberleitungFibu.Click();
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.AVZAuswertungen'", repo.DlgMessageBox.AVZAuswertungenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
             repo.DlgMessageBox.AVZAuswertungenInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Soll trotz AVZ-Stammdateneinstellung :\r\n\r\n> Buchungsliste monatlich speichern <\r\n\r\neine Jahresüberleitung in die Fibu erfolgen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Soll trotz AVZ-Stammdateneinstellung :\r\n\r\n> Buchungsliste monatlich speichern <\r\n\r\neine Jahresüberleitung in die Fibu erfolgen?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(2));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Soll trotz AVZ-Stammdateneinstellung :\r\n\r\n> Buchungsliste monatlich speichern <\r\n\r\neine Jahresüberleitung in die Fibu erfolgen?");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(3));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new ActionTimeout(120000), new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new ActionTimeout(120000), new RecordItemIndex(4));
             repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ-Überleitung Fibu MIT Bereiche') on item 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'.", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[100]  AVZ-Überleitung Fibu MIT Bereiche') on item 'DlgFibu.TitleBar100AVZUEberleitungFibuMIT'.", repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, new RecordItemIndex(5));
             Validate.AttributeContains(repo.DlgFibu.TitleBar100AVZUEberleitungFibuMITInfo, "Text", "[100]  AVZ-Überleitung Fibu MIT Bereiche");
             
         }
