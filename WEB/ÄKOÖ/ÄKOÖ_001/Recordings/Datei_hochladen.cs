@@ -102,8 +102,8 @@ namespace AEKOOE_001.Recordings
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.UploadInfo, "InnerText", "Upload");
             
             // Mausklick mit Record eingefügt, Einstellungen zu Action spot absichtilch zu gelassen, da ich keine andere Möglichkeit gefunden habe das Fenster zu öffnen
-            Report.Log(ReportLevel.Info, "Mouse", "Mausklick mit Record eingefügt, Einstellungen zu Action spot absichtilch zu gelassen, da ich keine andere Möglichkeit gefunden habe das Fenster zu öffnen\r\nMouse Left Click item 'Login.AKAT011RequestFormRow.File_Button_Datei_auswaehlen' at 3114;13.", repo.Login.AKAT011RequestFormRow.File_Button_Datei_auswaehlenInfo, new RecordItemIndex(3));
-            repo.Login.AKAT011RequestFormRow.File_Button_Datei_auswaehlen.Click("3114;13");
+            Report.Log(ReportLevel.Info, "Mouse", "Mausklick mit Record eingefügt, Einstellungen zu Action spot absichtilch zu gelassen, da ich keine andere Möglichkeit gefunden habe das Fenster zu öffnen\r\nMouse Left Click item 'Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.File_Button_Datei_auswaehlen' at 3114;13.", repo.Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.File_Button_Datei_auswaehlenInfo, new RecordItemIndex(3));
+            repo.Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.File_Button_Datei_auswaehlen.Click("3114;13");
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'OEffnen.OEffnen'", repo.OEffnen.OEffnenInfo, new ActionTimeout(180000), new RecordItemIndex(4));
             repo.OEffnen.OEffnenInfo.WaitForExists(180000);
@@ -126,14 +126,14 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='File(s) uploaded successfully.') on item 'Login.AKAT011RequestFormRow.FileSUploadedSuccessfully'.", repo.Login.AKAT011RequestFormRow.FileSUploadedSuccessfullyInfo, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.FileSUploadedSuccessfullyInfo, "InnerText", "File(s) uploaded successfully.");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Testdatei Krankengeld' with focus on 'Login.AKAT011RequestFormRow.Text_Bezeichnung_Uploadfile'.", repo.Login.AKAT011RequestFormRow.Text_Bezeichnung_UploadfileInfo, new RecordItemIndex(11));
-            repo.Login.AKAT011RequestFormRow.Text_Bezeichnung_Uploadfile.PressKeys("Testdatei Krankengeld");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Testdatei Krankengeld' with focus on 'Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.Text_Bezeichnung'.", repo.Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.Text_BezeichnungInfo, new RecordItemIndex(11));
+            repo.Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.Text_Bezeichnung.PressKeys("Testdatei Krankengeld");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.DokumenttypWaehlen' at Center.", repo.Login.AKAT011RequestFormRow.DokumenttypWaehlenInfo, new RecordItemIndex(12));
-            repo.Login.AKAT011RequestFormRow.DokumenttypWaehlen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.DokumenttypWaehlen' at Center.", repo.Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.DokumenttypWaehlenInfo, new RecordItemIndex(12));
+            repo.Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.DokumenttypWaehlen.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value='Testdatei Krankengeld') on item 'Login.AKAT011RequestFormRow.Text_Bezeichnung_Uploadfile'.", repo.Login.AKAT011RequestFormRow.Text_Bezeichnung_UploadfileInfo, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Bezeichnung_UploadfileInfo, "Value", "Testdatei Krankengeld");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value='Testdatei Krankengeld') on item 'Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.Text_Bezeichnung'.", repo.Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.Text_BezeichnungInfo, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.Text_BezeichnungInfo, "Value", "Testdatei Krankengeld");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Down' Press.", new RecordItemIndex(14));
             Keyboard.Press(System.Windows.Forms.Keys.Down, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);

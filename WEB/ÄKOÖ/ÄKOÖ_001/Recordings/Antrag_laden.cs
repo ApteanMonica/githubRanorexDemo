@@ -188,8 +188,8 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Tagesdatum) on item 'Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_abInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_abInfo, "InnerText", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Tagesdatum_plus_7_Tage) on item 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bis'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bisInfo, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_bisInfo, "InnerText", Tagesdatum_plus_7_Tage);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Tagesdatum_plus_7_Tage) on item 'Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_bis'.", repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_bisInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_bisInfo, "InnerText", Tagesdatum_plus_7_Tage);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$SVNR) on item 'Login.AKAT011RequestFormRow.Text_SVNR'.", repo.Login.AKAT011RequestFormRow.Text_SVNRInfo, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_SVNRInfo, "InnerText", SVNR);
