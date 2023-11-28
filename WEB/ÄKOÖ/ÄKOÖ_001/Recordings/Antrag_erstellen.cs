@@ -79,8 +79,8 @@ namespace AEKOOE_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.Card1_Button_Antraege_' at Center.", repo.Login.Card1_Button_Antraege_Info, new RecordItemIndex(0));
-            repo.Login.Card1_Button_Antraege_.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.WidgetInfo_Startseite_Info.Card1_Button_Antraege_' at Center.", repo.Login.WidgetInfo_Startseite_Info.Card1_Button_Antraege_Info, new RecordItemIndex(0));
+            repo.Login.WidgetInfo_Startseite_Info.Card1_Button_Antraege_.Click();
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'Login.Antrag'", repo.Login.AntragInfo, new ActionTimeout(60000), new RecordItemIndex(1));
             repo.Login.AntragInfo.WaitForExists(60000);
@@ -95,11 +95,11 @@ namespace AEKOOE_001.Recordings
             //Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(4));
             //Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Login.ButtonTagBtn1'.", repo.Login.ButtonTagBtn1Info, new RecordItemIndex(5));
-            Validate.Exists(repo.Login.ButtonTagBtn1Info);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ButtonTagBtn_Button_Neu_Antrag_stellen'.", repo.Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ButtonTagBtn_Button_Neu_Antrag_stellenInfo, new RecordItemIndex(5));
+            Validate.Exists(repo.Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ButtonTagBtn_Button_Neu_Antrag_stellenInfo);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.ButtonTagBtn1' at Center.", repo.Login.ButtonTagBtn1Info, new RecordItemIndex(6));
-            repo.Login.ButtonTagBtn1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ButtonTagBtn_Button_Neu_Antrag_stellen' at Center.", repo.Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ButtonTagBtn_Button_Neu_Antrag_stellenInfo, new RecordItemIndex(6));
+            repo.Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ButtonTagBtn_Button_Neu_Antrag_stellen.Click();
             
         }
 

@@ -168,16 +168,16 @@ namespace AEKOOE_001.Recordings
             
             Report.Log(ReportLevel.Info, "User", Tagesdatum_plus_7_Tage, new RecordItemIndex(3));
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.AlertAlertInfo'", repo.Login.AlertAlertInfoInfo, new ActionTimeout(120000), new RecordItemIndex(4));
-            repo.Login.AlertAlertInfoInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ColMd6ColXs12_Antrags_Eingabefelder.AlertAlertInfo_Antragstitel'", repo.Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ColMd6ColXs12_Antrags_Eingabefelder.AlertAlertInfo_AntragstitelInfo, new ActionTimeout(120000), new RecordItemIndex(4));
+            repo.Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ColMd6ColXs12_Antrags_Eingabefelder.AlertAlertInfo_AntragstitelInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "User", Tagesdatum, new RecordItemIndex(5));
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Antrag auf Krankengeld') on item 'Login.AKAT011RequestFormRow.AntragAufKrankengeld'.", repo.Login.AKAT011RequestFormRow.AntragAufKrankengeldInfo, new RecordItemIndex(6));
             Validate.AttributeContains(repo.Login.AKAT011RequestFormRow.AntragAufKrankengeldInfo, "InnerText", "Antrag auf Krankengeld");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum' with focus on 'Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_abInfo, new RecordItemIndex(7));
-            repo.Login.AKAT011RequestFormRow.Text_Zeitraum_Berufsunfaehigkeit_ab.PressKeys(Tagesdatum);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum' with focus on 'Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_abInfo, new RecordItemIndex(7));
+            repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_ab.PressKeys(Tagesdatum);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
