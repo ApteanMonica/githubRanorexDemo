@@ -92,18 +92,18 @@ namespace AEKOOE_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.BtnBtnDefaultBtnExpandSmall' at Center.", repo.Login.AKAT011RequestFormRow.BtnBtnDefaultBtnExpandSmallInfo, new RecordItemIndex(0));
-            repo.Login.AKAT011RequestFormRow.BtnBtnDefaultBtnExpandSmall.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.BtnBtnDefaultBtnExpandSmall' at Center.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.BtnBtnDefaultBtnExpandSmallInfo, new RecordItemIndex(0));
+            repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.BtnBtnDefaultBtnExpandSmall.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'Login.AKAT011RequestFormRow.Upload'", repo.Login.AKAT011RequestFormRow.UploadInfo, new ActionTimeout(180000), new RecordItemIndex(1));
-            repo.Login.AKAT011RequestFormRow.UploadInfo.WaitForExists(180000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Upload'", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.UploadInfo, new ActionTimeout(180000), new RecordItemIndex(1));
+            repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.UploadInfo.WaitForExists(180000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Upload') on item 'Login.AKAT011RequestFormRow.Upload'.", repo.Login.AKAT011RequestFormRow.UploadInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.UploadInfo, "InnerText", "Upload");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Upload') on item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Upload'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.UploadInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.UploadInfo, "InnerText", "Upload");
             
             // Mausklick mit Record eingefügt, Einstellungen zu Action spot absichtilch zu gelassen, da ich keine andere Möglichkeit gefunden habe das Fenster zu öffnen
-            Report.Log(ReportLevel.Info, "Mouse", "Mausklick mit Record eingefügt, Einstellungen zu Action spot absichtilch zu gelassen, da ich keine andere Möglichkeit gefunden habe das Fenster zu öffnen\r\nMouse Left Click item 'Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.File_Button_Datei_auswaehlen' at 3114;13.", repo.Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.File_Button_Datei_auswaehlenInfo, new RecordItemIndex(3));
-            repo.Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.File_Button_Datei_auswaehlen.Click("3114;13");
+            Report.Log(ReportLevel.Info, "Mouse", "Mausklick mit Record eingefügt, Einstellungen zu Action spot absichtilch zu gelassen, da ich keine andere Möglichkeit gefunden habe das Fenster zu öffnen\r\nMouse Left Click item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.ModalBody_Upload_Maske.File_Button_Datei_auswaehlen' at 3114;13.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.ModalBody_Upload_Maske.File_Button_Datei_auswaehlenInfo, new RecordItemIndex(3));
+            repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.ModalBody_Upload_Maske.File_Button_Datei_auswaehlen.Click("3114;13");
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'OEffnen.OEffnen'", repo.OEffnen.OEffnenInfo, new ActionTimeout(180000), new RecordItemIndex(4));
             repo.OEffnen.OEffnenInfo.WaitForExists(180000);
@@ -117,23 +117,23 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'OEffnen.SystemItemNameDisplay_Unterordner_sonstige_Daten' at Center.", repo.OEffnen.SystemItemNameDisplay_Unterordner_sonstige_DatenInfo, new RecordItemIndex(7));
             repo.OEffnen.SystemItemNameDisplay_Unterordner_sonstige_Daten.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'OEffnen.SystemItemNameDisplay_Testdatei_zum_upload' at Center.", repo.OEffnen.SystemItemNameDisplay_Testdatei_zum_uploadInfo, new RecordItemIndex(8));
-            repo.OEffnen.SystemItemNameDisplay_Testdatei_zum_upload.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'OEffnen.SystemItemNameDisplay_Datei_zum_hochladen' at Center.", repo.OEffnen.SystemItemNameDisplay_Datei_zum_hochladenInfo, new RecordItemIndex(8));
+            repo.OEffnen.SystemItemNameDisplay_Datei_zum_hochladen.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Testdatei Antrag Krankengeld.txt') on item 'Login.AKAT011RequestFormRow.TestdateiAntragKrankengeldTxt'.", repo.Login.AKAT011RequestFormRow.TestdateiAntragKrankengeldTxtInfo, new RecordItemIndex(9));
-            Validate.AttributeContains(repo.Login.AKAT011RequestFormRow.TestdateiAntragKrankengeldTxtInfo, "InnerText", "Testdatei Antrag Krankengeld.txt");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Mappe1.pdf') on item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.ModalBody_Upload_Maske.Mappe1Pdf'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.ModalBody_Upload_Maske.Mappe1PdfInfo, new RecordItemIndex(9));
+            Validate.AttributeContains(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.ModalBody_Upload_Maske.Mappe1PdfInfo, "InnerText", "Mappe1.pdf");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='File(s) uploaded successfully.') on item 'Login.AKAT011RequestFormRow.FileSUploadedSuccessfully'.", repo.Login.AKAT011RequestFormRow.FileSUploadedSuccessfullyInfo, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.FileSUploadedSuccessfullyInfo, "InnerText", "File(s) uploaded successfully.");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='File(s) uploaded successfully.') on item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.FileSUploadedSuccessfully'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.FileSUploadedSuccessfullyInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.FileSUploadedSuccessfullyInfo, "InnerText", "File(s) uploaded successfully.");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Testdatei Krankengeld' with focus on 'Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.Text_Bezeichnung'.", repo.Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.Text_BezeichnungInfo, new RecordItemIndex(11));
-            repo.Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.Text_Bezeichnung.PressKeys("Testdatei Krankengeld");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Testdatei Krankengeld' with focus on 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.ModalBody_Upload_Maske.Text_Bezeichnung'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.ModalBody_Upload_Maske.Text_BezeichnungInfo, new RecordItemIndex(11));
+            repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.ModalBody_Upload_Maske.Text_Bezeichnung.PressKeys("Testdatei Krankengeld");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.DokumenttypWaehlen' at Center.", repo.Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.DokumenttypWaehlenInfo, new RecordItemIndex(12));
-            repo.Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.DokumenttypWaehlen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.ModalBody_Upload_Maske.DokumenttypWaehlen' at Center.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.ModalBody_Upload_Maske.DokumenttypWaehlenInfo, new RecordItemIndex(12));
+            repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.ModalBody_Upload_Maske.DokumenttypWaehlen.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value='Testdatei Krankengeld') on item 'Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.Text_Bezeichnung'.", repo.Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.Text_BezeichnungInfo, new RecordItemIndex(13));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.ModalBody_Upload_Maske.Text_BezeichnungInfo, "Value", "Testdatei Krankengeld");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value='Testdatei Krankengeld') on item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.ModalBody_Upload_Maske.Text_Bezeichnung'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.ModalBody_Upload_Maske.Text_BezeichnungInfo, new RecordItemIndex(13));
+            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.ModalBody_Upload_Maske.Text_BezeichnungInfo, "Value", "Testdatei Krankengeld");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Down' Press.", new RecordItemIndex(14));
             Keyboard.Press(System.Windows.Forms.Keys.Down, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -141,11 +141,11 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press.", new RecordItemIndex(15));
             Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Arbeitsunfähigkeitsmeldung') on item 'Login.AKAT011RequestFormRow.Arbeitsunfaehigkeitsmeldung'.", repo.Login.AKAT011RequestFormRow.ArbeitsunfaehigkeitsmeldungInfo, new RecordItemIndex(16));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.ArbeitsunfaehigkeitsmeldungInfo, "InnerText", "Arbeitsunfähigkeitsmeldung");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Arbeitsunfähigkeitsmeldung') on item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Arbeitsunfaehigkeitsmeldung'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.ArbeitsunfaehigkeitsmeldungInfo, new RecordItemIndex(16));
+            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.ArbeitsunfaehigkeitsmeldungInfo, "InnerText", "Arbeitsunfähigkeitsmeldung");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.Speichern' at Center.", repo.Login.AKAT011RequestFormRow.SpeichernInfo, new RecordItemIndex(17));
-            repo.Login.AKAT011RequestFormRow.Speichern.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Speichern' at Center.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.SpeichernInfo, new RecordItemIndex(17));
+            repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Speichern.Click();
             
         }
 

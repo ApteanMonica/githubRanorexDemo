@@ -24,26 +24,6 @@ mode="Global">
 	</codegen>
 	<variables>
 		<var
-		id="cf14cf99-63ff-4e7e-a423-0a064763a006"
-		name="berufsunfaehig_ab">
-			02.05.2022
-		</var>
-		<var
-		id="c816944d-0fd4-4dfd-ae4f-9810927fc148"
-		name="berufsunfaehig_bis">
-			10.06.2022
-		</var>
-		<var
-		id="8411f75b-d750-46cb-9056-bbdbda43b5e1"
-		name="SVNR">
-			1679050956
-		</var>
-		<var
-		id="2f74c417-ab9d-4fb6-a39b-0a2319b5dc3c"
-		name="Bankverbindung_1">
-			AT351100018481974718
-		</var>
-		<var
 		id="a438f4cc-cc00-44e9-abf0-2e5c71a5523b"
 		name="Diagnose">
 			Testdiagnose zum Krankengeld
@@ -60,7 +40,7 @@ mode="Global">
 	<recorditems>
 		<userrecorditem
 		classname="Aptean"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="GetSystemDateTimeAsString"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -89,7 +69,7 @@ mode="Global">
 		</userrecorditem>
 		<loggingrecorditem
 		category="User"
-		enabled="True"
+		enabled="False"
 		message=""
 		optional="False"
 		reportlevel="Info;20"
@@ -105,7 +85,7 @@ mode="Global">
 		</loggingrecorditem>
 		<userrecorditem
 		classname="Aptean"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="GetSystemDateTimePlus"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -144,7 +124,7 @@ mode="Global">
 		</userrecorditem>
 		<loggingrecorditem
 		category="User"
-		enabled="True"
+		enabled="False"
 		message=""
 		optional="False"
 		reportlevel="Info;20"
@@ -169,59 +149,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="bc8c0e90-1a09-4fd5-865c-4df73e785745"
+			id="865079f8-e829-40f9-8bee-93fb4609f3c3"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, divtag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="divtag"
-				rect="943,417,610,62"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						alert alert-info
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						alert alert-info
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						div
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="role"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
 				<path>
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[1]/div
+					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[1]/div/?/?/h4[@innertext='Antrag auf Krankengeld']
 				</path>
 				<robustPath>
 				</robustPath>

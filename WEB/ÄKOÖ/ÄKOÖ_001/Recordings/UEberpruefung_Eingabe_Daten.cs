@@ -160,37 +160,37 @@ namespace AEKOOE_001.Recordings
 
             Init();
 
-            Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimeAsString("dd.MM.yyyy");
+            //Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimeAsString("dd.MM.yyyy");
             
-            Report.Log(ReportLevel.Info, "User", Tagesdatum, new RecordItemIndex(1));
+            //Report.Log(ReportLevel.Info, "User", Tagesdatum, new RecordItemIndex(1));
             
-            Tagesdatum_plus_7_Tage = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimePlus("d", ValueConverter.ArgumentFromString<int>("counter", "7"));
+            //Tagesdatum_plus_7_Tage = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimePlus("d", ValueConverter.ArgumentFromString<int>("counter", "7"));
             
-            Report.Log(ReportLevel.Info, "User", Tagesdatum_plus_7_Tage, new RecordItemIndex(3));
+            //Report.Log(ReportLevel.Info, "User", Tagesdatum_plus_7_Tage, new RecordItemIndex(3));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Tagesdatum) on item 'Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_abInfo, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_abInfo, "Value", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Tagesdatum) on item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_Berufsunfaehigkeit_abInfo, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_Berufsunfaehigkeit_abInfo, "Value", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$SVNR) on item 'Login.AKAT011RequestFormRow.Text_SVNR'.", repo.Login.AKAT011RequestFormRow.Text_SVNRInfo, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_SVNRInfo, "Value", SVNR);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$SVNR) on item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_SVNR'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_SVNRInfo, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_SVNRInfo, "Value", SVNR);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$SVNR) on item 'Login.AKAT011RequestFormRow.Text_SVNR'.", repo.Login.AKAT011RequestFormRow.Text_SVNRInfo, new RecordItemIndex(6));
-            //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_SVNRInfo, "InnerText", SVNR);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$SVNR) on item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_SVNR'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_SVNRInfo, new RecordItemIndex(6));
+            //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_SVNRInfo, "InnerText", SVNR);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Bankverbindung_1) on item 'Login.Auswahl_Bankverbindung'.", repo.Login.Auswahl_BankverbindungInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.Login.Auswahl_BankverbindungInfo, "InnerText", Bankverbindung_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (TagValue>$Diagnose) on item 'Login.AKAT011RequestFormRow.False_Eingabe_Diagnose'.", repo.Login.AKAT011RequestFormRow.False_Eingabe_DiagnoseInfo, new RecordItemIndex(8));
-            Validate.AttributeContains(repo.Login.AKAT011RequestFormRow.False_Eingabe_DiagnoseInfo, "TagValue", Diagnose);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (TagValue>$Diagnose) on item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.False_Eingabe_Diagnose'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.False_Eingabe_DiagnoseInfo, new RecordItemIndex(8));
+            Validate.AttributeContains(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.False_Eingabe_DiagnoseInfo, "TagValue", Diagnose);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='ordentlicher Wohnsitz') on item 'Login.AKAT011RequestFormRow.KInput_Aufenthaltsort'.", repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, "InnerText", "ordentlicher Wohnsitz");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='ordentlicher Wohnsitz') on item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_Aufenthaltsort'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_AufenthaltsortInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_AufenthaltsortInfo, "InnerText", "ordentlicher Wohnsitz");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'Login.AKAT011RequestFormRow.Checkbox_Fremdverschulden'.", repo.Login.AKAT011RequestFormRow.Checkbox_FremdverschuldenInfo, new RecordItemIndex(10));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Checkbox_FremdverschuldenInfo, "Checked", "True");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Checkbox_Fremdverschulden'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Checkbox_FremdverschuldenInfo, new RecordItemIndex(10));
+            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Checkbox_FremdverschuldenInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Tagesdatum_plus_7_Tage) on item 'Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_bis'.", repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_bisInfo, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_bisInfo, "Value", Tagesdatum_plus_7_Tage);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value=$Tagesdatum_plus_7_Tage) on item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_Berufsunfaehigkeit_bis'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_Berufsunfaehigkeit_bisInfo, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_Berufsunfaehigkeit_bisInfo, "Value", Tagesdatum_plus_7_Tage);
             
         }
 

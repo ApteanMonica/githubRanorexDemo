@@ -41,10 +41,6 @@ namespace AEKOOE_001.Recordings
         /// </summary>
         public Daten_eingeben()
         {
-            berufsunfaehig_ab = "02.05.2022";
-            berufsunfaehig_bis = "10.06.2022";
-            SVNR = "1679050956";
-            Bankverbindung_1 = "AT351100018481974718";
             Diagnose = "Testdiagnose zum Krankengeld";
             Tagesdatum = "";
             Tagesdatum_plus_7_Tage = "";
@@ -59,50 +55,6 @@ namespace AEKOOE_001.Recordings
         }
 
 #region Variables
-
-        string _berufsunfaehig_ab;
-
-        /// <summary>
-        /// Gets or sets the value of variable berufsunfaehig_ab.
-        /// </summary>
-        [TestVariable("cf14cf99-63ff-4e7e-a423-0a064763a006")]
-        public string berufsunfaehig_ab
-        {
-            get { return _berufsunfaehig_ab; }
-            set { _berufsunfaehig_ab = value; }
-        }
-
-        string _berufsunfaehig_bis;
-
-        /// <summary>
-        /// Gets or sets the value of variable berufsunfaehig_bis.
-        /// </summary>
-        [TestVariable("c816944d-0fd4-4dfd-ae4f-9810927fc148")]
-        public string berufsunfaehig_bis
-        {
-            get { return _berufsunfaehig_bis; }
-            set { _berufsunfaehig_bis = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable SVNR.
-        /// </summary>
-        [TestVariable("8411f75b-d750-46cb-9056-bbdbda43b5e1")]
-        public string SVNR
-        {
-            get { return repo.SVNR; }
-            set { repo.SVNR = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Bankverbindung_1.
-        /// </summary>
-        [TestVariable("2f74c417-ab9d-4fb6-a39b-0a2319b5dc3c")]
-        public string Bankverbindung_1
-        {
-            get { return repo.Bankverbindung_1; }
-            set { repo.Bankverbindung_1 = value; }
-        }
 
         /// <summary>
         /// Gets or sets the value of variable Diagnose.
@@ -160,38 +112,38 @@ namespace AEKOOE_001.Recordings
 
             Init();
 
-            Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimeAsString("dd.MM.yyyy");
+            //Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimeAsString("dd.MM.yyyy");
             
-            Report.Log(ReportLevel.Info, "User", Tagesdatum, new RecordItemIndex(1));
+            //Report.Log(ReportLevel.Info, "User", Tagesdatum, new RecordItemIndex(1));
             
-            Tagesdatum_plus_7_Tage = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimePlus("d", ValueConverter.ArgumentFromString<int>("counter", "7"));
+            //Tagesdatum_plus_7_Tage = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetSystemDateTimePlus("d", ValueConverter.ArgumentFromString<int>("counter", "7"));
             
-            Report.Log(ReportLevel.Info, "User", Tagesdatum_plus_7_Tage, new RecordItemIndex(3));
+            //Report.Log(ReportLevel.Info, "User", Tagesdatum_plus_7_Tage, new RecordItemIndex(3));
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ColMd6ColXs12_Antrags_Eingabefelder.AlertAlertInfo_Antragstitel'", repo.Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ColMd6ColXs12_Antrags_Eingabefelder.AlertAlertInfo_AntragstitelInfo, new ActionTimeout(120000), new RecordItemIndex(4));
-            repo.Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ColMd6ColXs12_Antrags_Eingabefelder.AlertAlertInfo_AntragstitelInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.AntragAufKrankengeld'", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.AntragAufKrankengeldInfo, new ActionTimeout(120000), new RecordItemIndex(4));
+            repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.AntragAufKrankengeldInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "User", Tagesdatum, new RecordItemIndex(5));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Antrag auf Krankengeld') on item 'Login.AKAT011RequestFormRow.AntragAufKrankengeld'.", repo.Login.AKAT011RequestFormRow.AntragAufKrankengeldInfo, new RecordItemIndex(6));
-            Validate.AttributeContains(repo.Login.AKAT011RequestFormRow.AntragAufKrankengeldInfo, "InnerText", "Antrag auf Krankengeld");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Antrag auf Krankengeld') on item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.AntragAufKrankengeld'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.AntragAufKrankengeldInfo, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.AntragAufKrankengeldInfo, "InnerText", "Antrag auf Krankengeld");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum' with focus on 'Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_abInfo, new RecordItemIndex(7));
-            repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_ab.PressKeys(Tagesdatum);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum' with focus on 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_Berufsunfaehigkeit_abInfo, new RecordItemIndex(7));
+            repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_Berufsunfaehigkeit_ab.PressKeys(Tagesdatum);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "User", Tagesdatum_plus_7_Tage, new RecordItemIndex(9));
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum_plus_7_Tage' with focus on 'Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_bis'.", repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_bisInfo, new RecordItemIndex(10));
-            repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_bis.PressKeys(Tagesdatum_plus_7_Tage);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum_plus_7_Tage' with focus on 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_Berufsunfaehigkeit_bis'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_Berufsunfaehigkeit_bisInfo, new RecordItemIndex(10));
+            repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_Berufsunfaehigkeit_bis.PressKeys(Tagesdatum_plus_7_Tage);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.KInput_Bankverbindung' at Center.", repo.Login.AKAT011RequestFormRow.KInput_BankverbindungInfo, new RecordItemIndex(12));
-            repo.Login.AKAT011RequestFormRow.KInput_Bankverbindung.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_Bankverbindung' at Center.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_BankverbindungInfo, new RecordItemIndex(12));
+            repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_Bankverbindung.Click();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Down}{Tab}'.", new RecordItemIndex(13));
             Keyboard.Press("{Down}{Tab}");
@@ -199,26 +151,26 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(14));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Diagnose' with focus on 'Login.AKAT011RequestFormRow.False_Eingabe_Diagnose'.", repo.Login.AKAT011RequestFormRow.False_Eingabe_DiagnoseInfo, new RecordItemIndex(15));
-            repo.Login.AKAT011RequestFormRow.False_Eingabe_Diagnose.PressKeys(Diagnose);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Diagnose' with focus on 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.False_Eingabe_Diagnose'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.False_Eingabe_DiagnoseInfo, new RecordItemIndex(15));
+            repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.False_Eingabe_Diagnose.PressKeys(Diagnose);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'Login.AKAT011RequestFormRow.False_Eingabe_Diagnose'.", repo.Login.AKAT011RequestFormRow.False_Eingabe_DiagnoseInfo, new RecordItemIndex(16));
-            Keyboard.PrepareFocus(repo.Login.AKAT011RequestFormRow.False_Eingabe_Diagnose);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press with focus on 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.False_Eingabe_Diagnose'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.False_Eingabe_DiagnoseInfo, new RecordItemIndex(16));
+            Keyboard.PrepareFocus(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.False_Eingabe_Diagnose);
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.KInput_Aufenthaltsort' at Center.", repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, new RecordItemIndex(17));
-            repo.Login.AKAT011RequestFormRow.KInput_Aufenthaltsort.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_Aufenthaltsort' at Center.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_AufenthaltsortInfo, new RecordItemIndex(17));
+            repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_Aufenthaltsort.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Down' Press with focus on 'Login.AKAT011RequestFormRow.KInput_Aufenthaltsort'.", repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, new RecordItemIndex(18));
-            Keyboard.PrepareFocus(repo.Login.AKAT011RequestFormRow.KInput_Aufenthaltsort);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Down' Press with focus on 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_Aufenthaltsort'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_AufenthaltsortInfo, new RecordItemIndex(18));
+            Keyboard.PrepareFocus(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_Aufenthaltsort);
             Keyboard.Press(System.Windows.Forms.Keys.Down, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press with focus on 'Login.AKAT011RequestFormRow.KInput_Aufenthaltsort'.", repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, new RecordItemIndex(19));
-            Keyboard.PrepareFocus(repo.Login.AKAT011RequestFormRow.KInput_Aufenthaltsort);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Enter' Press with focus on 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_Aufenthaltsort'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_AufenthaltsortInfo, new RecordItemIndex(19));
+            Keyboard.PrepareFocus(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_Aufenthaltsort);
             Keyboard.Press(System.Windows.Forms.Keys.Return, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow.Checkbox_Fremdverschulden' at Center.", repo.Login.AKAT011RequestFormRow.Checkbox_FremdverschuldenInfo, new RecordItemIndex(20));
-            repo.Login.AKAT011RequestFormRow.Checkbox_Fremdverschulden.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Checkbox_Fremdverschulden' at Center.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Checkbox_FremdverschuldenInfo, new RecordItemIndex(20));
+            repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Checkbox_Fremdverschulden.Click();
             
         }
 

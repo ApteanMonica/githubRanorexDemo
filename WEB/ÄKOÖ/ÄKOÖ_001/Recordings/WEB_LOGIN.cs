@@ -106,8 +106,8 @@ namespace AEKOOE_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.Anmelden_Button' at Center.", repo.Login.Anmelden_ButtonInfo, new RecordItemIndex(8));
             repo.Login.Anmelden_Button.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.Card_Button_Stammdaten'", repo.Login.Card_Button_StammdatenInfo, new ActionTimeout(120000), new RecordItemIndex(9));
-            repo.Login.Card_Button_StammdatenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.WidgetInfo_Startseite_Info.Card_Button_Stammdaten'", repo.Login.WidgetInfo_Startseite_Info.Card_Button_StammdatenInfo, new ActionTimeout(120000), new RecordItemIndex(9));
+            repo.Login.WidgetInfo_Startseite_Info.Card_Button_StammdatenInfo.WaitForExists(120000);
             
         }
 

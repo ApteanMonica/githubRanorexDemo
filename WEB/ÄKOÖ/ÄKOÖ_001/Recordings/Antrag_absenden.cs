@@ -141,38 +141,38 @@ namespace AEKOOE_001.Recordings
             //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Krankengeld') on item 'Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ColMd6ColXs12_Antrags_Eingabefelder.FormControl_Antragskategorie_Krankengeld'.", repo.Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ColMd6ColXs12_Antrags_Eingabefelder.FormControl_Antragskategorie_KrankengeldInfo, new RecordItemIndex(0));
             //Validate.AttributeEqual(repo.Login.ModuleModuleIvAekoReqRequest_Hauptmaske_Antrag.ColMd6ColXs12_Antrags_Eingabefelder.FormControl_Antragskategorie_KrankengeldInfo, "InnerText", "Krankengeld");
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$berufsunfaehig_ab) on item 'Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_abInfo, new RecordItemIndex(1));
-            //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_Berufsunfaehigkeit_abInfo, "InnerText", berufsunfaehig_ab);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$berufsunfaehig_ab) on item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_Berufsunfaehigkeit_ab'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_Berufsunfaehigkeit_abInfo, new RecordItemIndex(1));
+            //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_Berufsunfaehigkeit_abInfo, "InnerText", berufsunfaehig_ab);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$SVNR) on item 'Login.AKAT011RequestFormRow.Text_SVNR'.", repo.Login.AKAT011RequestFormRow.Text_SVNRInfo, new RecordItemIndex(2));
-            //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Text_SVNRInfo, "InnerText", SVNR);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$SVNR) on item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_SVNR'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_SVNRInfo, new RecordItemIndex(2));
+            //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Text_SVNRInfo, "InnerText", SVNR);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Bankverbindung_1) on item 'Login.AKAT011RequestFormRow.KInput_Bankverbindung'.", repo.Login.AKAT011RequestFormRow.KInput_BankverbindungInfo, new RecordItemIndex(3));
-            //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.KInput_BankverbindungInfo, "InnerText", Bankverbindung_1);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Bankverbindung_1) on item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_Bankverbindung'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_BankverbindungInfo, new RecordItemIndex(3));
+            //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_BankverbindungInfo, "InnerText", Bankverbindung_1);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Diagnose) on item 'Login.AKAT011RequestFormRow.False_Eingabe_Diagnose'.", repo.Login.AKAT011RequestFormRow.False_Eingabe_DiagnoseInfo, new RecordItemIndex(4));
-            //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.False_Eingabe_DiagnoseInfo, "InnerText", Diagnose);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$Diagnose) on item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.False_Eingabe_Diagnose'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.False_Eingabe_DiagnoseInfo, new RecordItemIndex(4));
+            //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.False_Eingabe_DiagnoseInfo, "InnerText", Diagnose);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='ordentlicher Wohnsitz') on item 'Login.AKAT011RequestFormRow.KInput_Aufenthaltsort'.", repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, new RecordItemIndex(5));
-            //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.KInput_AufenthaltsortInfo, "InnerText", "ordentlicher Wohnsitz");
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='ordentlicher Wohnsitz') on item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_Aufenthaltsort'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_AufenthaltsortInfo, new RecordItemIndex(5));
+            //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.KInput_AufenthaltsortInfo, "InnerText", "ordentlicher Wohnsitz");
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'Login.AKAT011RequestFormRow.Checkbox_Fremdverschulden'.", repo.Login.AKAT011RequestFormRow.Checkbox_FremdverschuldenInfo, new RecordItemIndex(6));
-            //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Checkbox_FremdverschuldenInfo, "Checked", "True");
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Checkbox_Fremdverschulden'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Checkbox_FremdverschuldenInfo, new RecordItemIndex(6));
+            //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Checkbox_FremdverschuldenInfo, "Checked", "True");
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Arbeitsunfähigkeitsmeldung') on item 'Login.AKAT011RequestFormRow.Arbeitsunfaehigkeitsmeldung_Dokumenttyp'.", repo.Login.AKAT011RequestFormRow.Arbeitsunfaehigkeitsmeldung_DokumenttypInfo, new RecordItemIndex(7));
-            //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow.Arbeitsunfaehigkeitsmeldung_DokumenttypInfo, "InnerText", "Arbeitsunfähigkeitsmeldung");
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Arbeitsunfähigkeitsmeldung') on item 'Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Arbeitsunfaehigkeitsmeldung_Dokumenttyp'.", repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Arbeitsunfaehigkeitsmeldung_DokumenttypInfo, new RecordItemIndex(7));
+            //Validate.AttributeEqual(repo.Login.AKAT011RequestFormRow__Tabelle_rechts_neuer_Antrag.Arbeitsunfaehigkeitsmeldung_DokumenttypInfo, "InnerText", "Arbeitsunfähigkeitsmeldung");
             
             //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (TagValue='Neu') on item 'Login.SomeTdTag_Neu'.", repo.Login.SomeTdTag_NeuInfo, new RecordItemIndex(8));
             //Validate.AttributeEqual(repo.Login.SomeTdTag_NeuInfo, "TagValue", "Neu");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.PanelHeading'", repo.Login.PanelHeadingInfo, new ActionTimeout(120000), new RecordItemIndex(9));
-            repo.Login.PanelHeadingInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Login.H4TagNeu'", repo.Login.H4TagNeuInfo, new ActionTimeout(120000), new RecordItemIndex(9));
+            repo.Login.H4TagNeuInfo.WaitForExists(120000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>'Neu') on item 'Login.H4TagNeu'.", repo.Login.H4TagNeuInfo, new RecordItemIndex(10));
             Validate.AttributeContains(repo.Login.H4TagNeuInfo, "InnerText", "Neu");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.BtnBtnSecondarySendBtn_Absenden' at Center.", repo.Login.BtnBtnSecondarySendBtn_AbsendenInfo, new RecordItemIndex(11));
-            repo.Login.BtnBtnSecondarySendBtn_Absenden.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.BtnBtnSecondarySendBtn_Button_Absenden' at Center.", repo.Login.BtnBtnSecondarySendBtn_Button_AbsendenInfo, new RecordItemIndex(11));
+            repo.Login.BtnBtnSecondarySendBtn_Button_Absenden.Click();
             
         }
 

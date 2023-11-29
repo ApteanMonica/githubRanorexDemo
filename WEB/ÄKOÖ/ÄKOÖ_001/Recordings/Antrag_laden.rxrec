@@ -24,16 +24,6 @@ mode="Global">
 	</codegen>
 	<variables>
 		<var
-		id="a1cd83c8-4e45-4946-891d-ade98c98da24"
-		name="berufsunfaehig_ab">
-			02.01.2023
-		</var>
-		<var
-		id="c0797257-9902-46f5-8f78-289d2df15dd8"
-		name="berufsunfaehig_bis">
-			10.01.2023
-		</var>
-		<var
 		id="0d832c8b-ec38-4a66-8923-68047beb93af"
 		name="SVNR">
 			1679050956
@@ -46,7 +36,7 @@ mode="Global">
 		<var
 		id="375c692f-06e1-41e9-8893-781acd30415c"
 		name="Diagnose">
-			Testdiagnose zum Krankengeld
+			Testdiagnose·zum·Krankengeld
 		</var>
 		<var
 		id="93a74749-d290-4ea1-b2b2-026dd6c0c9aa"
@@ -60,7 +50,7 @@ mode="Global">
 	<recorditems>
 		<userrecorditem
 		classname="Aptean"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="GetSystemDateTimeAsString"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -89,7 +79,7 @@ mode="Global">
 		</userrecorditem>
 		<loggingrecorditem
 		category="User"
-		enabled="True"
+		enabled="False"
 		message=""
 		optional="False"
 		reportlevel="Info;20"
@@ -105,7 +95,7 @@ mode="Global">
 		</loggingrecorditem>
 		<userrecorditem
 		classname="Aptean"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="GetSystemDateTimePlus"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
@@ -144,7 +134,7 @@ mode="Global">
 		</userrecorditem>
 		<loggingrecorditem
 		category="User"
-		enabled="True"
+		enabled="False"
 		message=""
 		optional="False"
 		reportlevel="Info;20"
@@ -241,10 +231,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="bc8c0e90-1a09-4fd5-865c-4df73e785745"
+			id="865079f8-e829-40f9-8bee-93fb4609f3c3"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[1]/div
+					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[1]/div/?/?/h4[@innertext='Antrag auf Krankengeld']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -338,7 +328,7 @@ mode="Global">
 				</robustPath>
 			</info>
 			<matchname>
-				InnerText
+				TagValue
 			</matchname>
 			<matchvalue>
 				yourValue
@@ -367,7 +357,7 @@ mode="Global">
 				</robustPath>
 			</info>
 			<matchname>
-				InnerText
+				TagValue
 			</matchname>
 			<matchvalue>
 				yourValue
@@ -396,7 +386,7 @@ mode="Global">
 				</robustPath>
 			</info>
 			<matchname>
-				InnerText
+				TagValue
 			</matchname>
 			<matchvalue>
 				yourValue
@@ -432,7 +422,7 @@ mode="Global">
 			</matchvalue>
 		</validationitem>
 		<validationitem
-		action="AttributeEqual"
+		action="AttributeContains"
 		enabled="True"
 		optional="False"
 		searchpropertyid="b6b236d8-6dba-4ace-8ac0-a77e93c48226">
@@ -454,7 +444,7 @@ mode="Global">
 				</robustPath>
 			</info>
 			<matchname>
-				InnerText
+				TagValue
 			</matchname>
 			<matchvalue>
 				yourValue
@@ -585,7 +575,7 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="edf2f2a2-a62f-4c22-9454-38ad3b6a8ab1"
+			id="3cc7ed89-c6de-4846-868f-a69e12ebc42f"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, tdtag"
@@ -595,7 +585,7 @@ mode="Global">
 				hasfocus="False"
 				index="2"
 				prefcap="tdtag"
-				rect="1374,755,466,28"
+				rect="1214,690,306,28"
 				role="unknown"
 				snapElem=""
 				valid="True"
@@ -613,7 +603,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						Test_BAR
+						Testdatei Krankengeld
 					</attribute>
 					<attribute
 					name="tagname"
@@ -628,7 +618,7 @@ mode="Global">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[25]//tag[@tagname='dmscontrol']/div/div[1]/div[2]/table/tbody/?/?/td[@innertext='Test_BAR']
+					/dom[@domain='192.168.192.139']//div[#'panel-request']/div[2]/div[1]/div[25]/div/tag/div/div/div/tag[@tagname='dmscontrol']/div/div[1]/div[2]/table/tbody/tr/td[@innertext='Testdatei Krankengeld']
 				</path>
 				<robustPath>
 				</robustPath>
