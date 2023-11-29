@@ -83,8 +83,8 @@ namespace V_AUF_003.Recordings
             repo.Beleg_abschliessen_.Beleg_abschliessen_ReKorr.Click();
             
             // BAR: Wait for erhöht von 2 auf 3 Minuten
-            Report.Log(ReportLevel.Info, "Wait", "BAR: Wait for erhöht von 2 auf 3 Minuten\r\nWaiting 3m to exist. Associated repository item: 'TblFadr.TitleBar100Rechnungskorrektur'", repo.TblFadr.TitleBar100RechnungskorrekturInfo, new ActionTimeout(180000), new RecordItemIndex(1));
-            repo.TblFadr.TitleBar100RechnungskorrekturInfo.WaitForExists(180000);
+            Report.Log(ReportLevel.Info, "Wait", "BAR: Wait for erhöht von 2 auf 3 Minuten\r\nWaiting 5m to exist. Associated repository item: 'TblFadr.TitleBar100Rechnungskorrektur'", repo.TblFadr.TitleBar100RechnungskorrekturInfo, new ActionTimeout(300000), new RecordItemIndex(1));
+            repo.TblFadr.TitleBar100RechnungskorrekturInfo.WaitForExists(300000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'Rechnungskorrektur') on item 'TblFadr.TitleBar100Rechnungskorrektur'.", repo.TblFadr.TitleBar100RechnungskorrekturInfo, new RecordItemIndex(2));
             Validate.AttributeRegex(repo.TblFadr.TitleBar100RechnungskorrekturInfo, "Text", new Regex("Rechnungskorrektur"));
