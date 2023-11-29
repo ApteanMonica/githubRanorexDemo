@@ -1,4 +1,4 @@
-describe("Language ValIdations", () => {
+describe("Get Exchange rate by filter", () => {
   var context = "";
   var BaseURL = "localhost:8080//api-rw-fi-v1-";
 
@@ -8,8 +8,8 @@ describe("Language ValIdations", () => {
     });
   });
 
-  //This testcase is to verify the user is able to get value by the search  filter
-  it("Verify the user is able to get value by the search  filter", () => {
+  //This testcase is to verify the user is able to get exchange rate value by the search filter
+  it("Verify the user is able to get exchange rate value by the search filter", () => {
     cy.request({
       method: "POST",
       url: `${BaseURL}CurrencyService.svc/json/Currency/ExchangeRatesByFilterContainer?context=${context}`,

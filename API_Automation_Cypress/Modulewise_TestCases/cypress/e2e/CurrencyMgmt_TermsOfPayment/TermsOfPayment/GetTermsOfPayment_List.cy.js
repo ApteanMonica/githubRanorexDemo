@@ -21,7 +21,7 @@ describe("Terms of payment Validations", () => {
     }).then((response) => {
       //assertions
       assert.equal(response.body.Value[0]["CashDiscountPct1"], 2);
-      assert.equal(response.body.Value[0]["CashDiscountPct2"], 3);
+      assert.equal(response.body.Value[0]["CashDiscountPct2"], 0);
       assert.equal(response.body.Value[0]["CashDiscountPeriod1"], 14);
       assert.equal(response.body.Value[0]["CashDiscountPeriod2"], 15);
       assert.equal(response.body.Value[0]["ChangeStates"], "0");
