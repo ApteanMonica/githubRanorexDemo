@@ -79,8 +79,11 @@ namespace AEKOOE_001
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'StartseiteGoogleChrome.AdressUndSuchleiste'.", repo.StartseiteGoogleChrome.AdressUndSuchleisteInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.StartseiteGoogleChrome.AdressUndSuchleiste, 1000);
+            //Report.Log(ReportLevel.Info, "Application", "Killing application containing item 'StartseiteGoogleChrome.Pane_item_kompletter_Browser'.", repo.StartseiteGoogleChrome.Pane_item_kompletter_BrowserInfo, new RecordItemIndex(0));
+            //Host.Current.KillApplication(repo.StartseiteGoogleChrome.Pane_item_kompletter_Browser);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'StartseiteGoogleChrome.Pane_item_kompletter_Browser' at 1896;12.", repo.StartseiteGoogleChrome.Pane_item_kompletter_BrowserInfo, new RecordItemIndex(1));
+            repo.StartseiteGoogleChrome.Pane_item_kompletter_Browser.Click("1896;12");
             
         }
 

@@ -26,9 +26,9 @@ mode="Desktop">
 	</variables>
 	<recorditems>
 		<closeapprecorditem
-		enabled="True"
+		enabled="False"
 		graceperiod="1000ms"
-		method="CloseWindow"
+		method="KillProcess"
 		optional="False"
 		searchpropertyid="5abdaf6e-3f00-4766-bd67-8106cfce4f01">
 			<comment>
@@ -36,7 +36,7 @@ mode="Desktop">
 			<bindings>
 			</bindings>
 			<info
-			id="d40e7a0d-11ea-49b6-b516-9f6b9c85b7d8"
+			id="519b835e-867a-4e3d-9b80-2717e6daa5d9"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="accessible"
@@ -44,51 +44,183 @@ mode="Desktop">
 				enabled="True"
 				flavor="msaa"
 				hasfocus="False"
-				index="1"
-				prefcap="text"
-				rect="-1688,40,1448,30"
-				role="text"
+				index="0"
+				prefcap="container"
+				rect="0,0,1920,109"
+				role="container"
 				snapElem=""
 				valid="True"
 				visible="True">
 					<attribute
-					name="text"
-					type="System.String">
-						192.168.192.139/521_SP12/#request
-					</attribute>
-					<attribute
-					name="accessiblekeyboardshortcut"
-					type="System.String">
-						Ctrl+L
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						Adress- und Suchleiste
-					</attribute>
-					<attribute
 					name="accessiblerole"
 					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Text
+						Pane
 					</attribute>
 					<attribute
 					name="accessiblestate"
 					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
+						None
 					</attribute>
 					<attribute
 					name="accessiblevalue"
 					type="System.String">
-						192.168.192.139/521_SP12/#request
 					</attribute>
 				</element>
 				<path>
-					/form[@title&gt;'Startseite - Google Chrom']/container[@accessiblename&gt;'Startseite&#160;&#8211; Arbeitsspeichernutzung']/container/container[@accessiblerole='Pane']/container[2]/container[1]/toolbar[1]/?/?/container[@accessiblerole='Grouping']/text[@accessiblename='Adress- und Suchleiste']
+					/form[@title&gt;'Startseite - Google Chrom']/container[@accessiblename&gt;'Startseite&#160;&#8211; Arbeitsspeichernutzung']/container[@accessiblerole='Pane']/container/container[2]/container[1]
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
 		</closeapprecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="1896;12"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="19afc958-9e0b-4176-9f9e-0a5b8ed85f00"
+		sx="1896"
+		sy="12"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="519b835e-867a-4e3d-9b80-2717e6daa5d9"
+			sourcename="Recorder">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="container"
+				rect="0,0,1920,109"
+				role="container"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Pane
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form[@title&gt;'Startseite - Google Chrom']/container[@accessiblename&gt;'Startseite&#160;&#8211; Arbeitsspeichernutzung']/container[@accessiblerole='Pane']/container/container[2]/container[1]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="ad26bbda-cebe-4cab-9392-4a16b1ac900d">
+				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
++t/Coqluf9b+FRUAXaKKKAGYPofyowfQ/lU9FO4EGD6H8qMH0P5VPRRcCDB9D+VGD6H8qnoouBBg
++h/KjB9D+VT0UXAgwfQ/lRg+h/Kp6KLgQYPofyowfQ/lU9FFwIMH0P5UYPofyqeii4EGD6H8qMH0
+P5VPRRcCDB9D+VGD6H8qnoouBBg+h/KjB9D+VT0UXAgwfQ/lRg+h/Kp6KLgQYPofyowfQ/lU9FFw
+IMH0P5UYPofyqeii4EGD6H8qMH0P5VPRRcCAg46H8qmT7oob7h+lCfdFIBaKKKAKdz/rfwqKpbn/
+AFv4VFQBdooooAkooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKAEb7h+lCfdFDfcP0oT7ooAWiiigCnc/638KiqW5/1v4VFQBdooooAkooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAEb7h+lCfdFDf
+cP0oT7ooAWiiigCnc/638KiqW5/1v4VFQBdooooAkooooAKKKKACiiigAooooAKKKKACiiigAooo
+oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAEb7h+lCfdFDfcP0oT7ooAWiiigCnc/wCt/Coq
+luf9b+FRUAXaKKKAJKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA
+ooooAKKKKACiiigBG+4fpQn3RRRQAtFFFAFO5/1v4VFRRQBdooooA//Z
+			</helperscreenshot>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="ea8dc27d-4b43-438c-bd14-00e352da043f"
