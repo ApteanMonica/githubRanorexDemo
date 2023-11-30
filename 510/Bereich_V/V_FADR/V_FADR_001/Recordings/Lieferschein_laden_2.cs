@@ -90,36 +90,36 @@ namespace V_FADR_001.Recordings
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1' at Center.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(0));
-            //repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1' at Center.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1Info, new RecordItemIndex(0));
+            //repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1.Click();
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1' at Center.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(1));
-            //repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1.DoubleClick();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1' at Center.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1Info, new RecordItemIndex(1));
+            //repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1.DoubleClick();
             
             //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+X' Press.", new RecordItemIndex(2));
             //Keyboard.Press(System.Windows.Forms.Keys.X | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow2' at Center.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow2Info, new RecordItemIndex(3));
-            //repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow2.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow2' at Center.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow2Info, new RecordItemIndex(3));
+            //repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow2.Click();
             
             //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+V' Press.", new RecordItemIndex(4));
             //Keyboard.Press(System.Windows.Forms.Keys.V | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow2' at Center.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow2Info, new RecordItemIndex(5));
-            repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow2.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow2' at Center.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow2Info, new RecordItemIndex(5));
+            repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow2.Click();
             
             Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("dd.MM.yyyy");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum' with focus on 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow2'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow2Info, new RecordItemIndex(7));
-            repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow2.PressKeys(Tagesdatum);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum' with focus on 'TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow2'.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow2Info, new RecordItemIndex(7));
+            repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow2.PressKeys(Tagesdatum);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(9));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1' at Center.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(10));
-            repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1' at Center.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1Info, new RecordItemIndex(10));
+            repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1.Click();
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(11));
             Delay.Duration(1000, false);

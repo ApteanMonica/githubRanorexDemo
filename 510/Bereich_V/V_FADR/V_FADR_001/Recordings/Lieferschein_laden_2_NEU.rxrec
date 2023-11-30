@@ -260,45 +260,6 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</loggingrecorditem>
-		<setvaluerecorditem
-		attrname="ControlText"
-		enabled="True"
-		optional="True"
-		searchpropertyid="878f156d-3678-43ad-b026-1a2a19585a41">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="AttributeValue"
-				variable="Datum_leer">
-				</binding>
-			</bindings>
-			<info
-			id="f4c5e98a-9a2b-4c4d-a5b1-d1f825e01007"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/text[@text~$Tagesdatum]
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<AttributeValue>
-				yourValue
-			</AttributeValue>
-		</setvaluerecorditem>
-		<loggingrecorditem
-		action="Screenshot"
-		category="User"
-		enabled="True"
-		message=""
-		optional="False"
-		reportlevel="Info;20"
-		searchpropertyid="d5632f44-67a8-4125-aa77-d8c59119af55">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</loggingrecorditem>
 		<explicitdelayitem
 		duration="2000ms"
 		enabled="True"
@@ -310,7 +271,7 @@ mode="Global">
 		</explicitdelayitem>
 		<keyitem
 		action="Press"
-		data="Back"
+		data="Delete"
 		duration="20ms"
 		enabled="True"
 		optional="False"
@@ -347,7 +308,7 @@ mode="Global">
 		</loggingrecorditem>
 		<keyitem
 		action="Press"
-		data="Delete"
+		data="Back"
 		duration="20ms"
 		enabled="True"
 		optional="False"

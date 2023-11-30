@@ -197,8 +197,9 @@ namespace V_FADR_001
         [RepositoryFolder("2b05576f-d037-4827-b892-f604cc1eeb65")]
         public partial class TblFadrAppFolder : RepoGenBaseFolder
         {
-            V_FADR_001RepositoryFolders.Rech_art_FlexGridFolder _rech_art_flexgrid;
+            V_FADR_001RepositoryFolders.TblRechArt_Pfad_verkuerzt_2Folder _tblrechart_pfad_verkuerzt_2;
             V_FADR_001RepositoryFolders.Untere_TabelleFolder _untere_tabelle;
+            V_FADR_001RepositoryFolders.Rech_art_FlexGrid_lange_Pfade_nicht_verwendetFolder _rech_art_flexgrid_lange_pfade_nicht_verwendet;
             RepoItemInfo _titlebar100fakturierungInfo;
             RepoItemInfo _titlebar100fakturierung_mit_text_fakturierungInfo;
             RepoItemInfo _titlebar100fakturierung_mit_text_keine_rueckmeldungInfo;
@@ -219,8 +220,9 @@ namespace V_FADR_001
             public TblFadrAppFolder(RepoGenBaseFolder parentFolder) :
                     base("TblFadr", "/form[@controltypename='tblFadr']", parentFolder, 30000, null, true, "2b05576f-d037-4827-b892-f604cc1eeb65", "")
             {
-                _rech_art_flexgrid = new V_FADR_001RepositoryFolders.Rech_art_FlexGridFolder(this);
+                _tblrechart_pfad_verkuerzt_2 = new V_FADR_001RepositoryFolders.TblRechArt_Pfad_verkuerzt_2Folder(this);
                 _untere_tabelle = new V_FADR_001RepositoryFolders.Untere_TabelleFolder(this);
+                _rech_art_flexgrid_lange_pfade_nicht_verwendet = new V_FADR_001RepositoryFolders.Rech_art_FlexGrid_lange_Pfade_nicht_verwendetFolder(this);
                 _titlebar100fakturierungInfo = new RepoItemInfo(this, "TitleBar100Fakturierung", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "1dc81752-b411-4c29-947c-e8c8dbe2e9af");
                 _titlebar100fakturierung_mit_text_fakturierungInfo = new RepoItemInfo(this, "TitleBar100Fakturierung_mit_Text_Fakturierung", "titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'Fakturierung']", "", 30000, null, "55640ae3-8e17-442f-b7cb-f2b08bf7a0b8");
                 _titlebar100fakturierung_mit_text_keine_rueckmeldungInfo = new RepoItemInfo(this, "TitleBar100Fakturierung_mit_Text_keine_Rueckmeldung", "titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'keine Rückmeldung']", "", 30000, null, "020c2a9b-95e0-4fe2-85d1-cc6ece360df4");
@@ -573,12 +575,12 @@ namespace V_FADR_001
             }
 
             /// <summary>
-            /// The Rech_art_FlexGrid folder.
+            /// The tblRechArt_Pfad_verkuerzt_2 folder.
             /// </summary>
             [RepositoryFolder("74563929-125c-497e-87f4-cc5cefa7a726")]
-            public virtual V_FADR_001RepositoryFolders.Rech_art_FlexGridFolder Rech_art_FlexGrid
+            public virtual V_FADR_001RepositoryFolders.TblRechArt_Pfad_verkuerzt_2Folder tblRechArt_Pfad_verkuerzt_2
             {
-                get { return _rech_art_flexgrid; }
+                get { return _tblrechart_pfad_verkuerzt_2; }
             }
 
             /// <summary>
@@ -589,13 +591,22 @@ namespace V_FADR_001
             {
                 get { return _untere_tabelle; }
             }
+
+            /// <summary>
+            /// The Rech_art_FlexGrid_lange_Pfade_nicht_verwendet folder.
+            /// </summary>
+            [RepositoryFolder("faaf6b6c-2b2c-4810-85c2-0c67f71e5ece")]
+            public virtual V_FADR_001RepositoryFolders.Rech_art_FlexGrid_lange_Pfade_nicht_verwendetFolder Rech_art_FlexGrid_lange_Pfade_nicht_verwendet
+            {
+                get { return _rech_art_flexgrid_lange_pfade_nicht_verwendet; }
+            }
         }
 
         /// <summary>
-        /// The Rech_art_FlexGridFolder folder.
+        /// The TblRechArt_Pfad_verkuerzt_2Folder folder.
         /// </summary>
         [RepositoryFolder("74563929-125c-497e-87f4-cc5cefa7a726")]
-        public partial class Rech_art_FlexGridFolder : RepoGenBaseFolder
+        public partial class TblRechArt_Pfad_verkuerzt_2Folder : RepoGenBaseFolder
         {
             RepoItemInfo _colrechartrow1Info;
             RepoItemInfo _colrechartrow2Info;
@@ -605,15 +616,15 @@ namespace V_FADR_001
             RepoItemInfo _collskdatumrow1_mit_tagesdatumInfo;
 
             /// <summary>
-            /// Creates a new Rech_art_FlexGrid  folder.
+            /// Creates a new tblRechArt_Pfad_verkuerzt_2  folder.
             /// </summary>
-            public Rech_art_FlexGridFolder(RepoGenBaseFolder parentFolder) :
-                    base("Rech_art_FlexGrid", "container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "74563929-125c-497e-87f4-cc5cefa7a726", "")
+            public TblRechArt_Pfad_verkuerzt_2Folder(RepoGenBaseFolder parentFolder) :
+                    base("tblRechArt_Pfad_verkuerzt_2", "container/container[@controlname='tblRech_art']/element/table", parentFolder, 30000, null, false, "74563929-125c-497e-87f4-cc5cefa7a726", "")
             {
-                _colrechartrow1Info = new RepoItemInfo(this, "colRechartRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colRech_art Row 1']", "", 90000, null, "66aa28fa-e465-4f91-aa65-97b931a960d6");
-                _colrechartrow2Info = new RepoItemInfo(this, "colRechartRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colRech_art Row 2']", "", 90000, null, "af5e755a-c50d-462f-b2a1-89a06b9b4805");
-                _collskdatumrow1Info = new RepoItemInfo(this, "ColLskDatumRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1']", "", 60000, null, "040c96c5-3f28-4435-b912-42bd799d8750");
-                _collskdatumrow2Info = new RepoItemInfo(this, "ColLskDatumRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colLsk_datum Row 2']", "", 60000, null, "f3d7eeca-cb56-4d62-a2bd-1d8467a0d8bf");
+                _colrechartrow1Info = new RepoItemInfo(this, "colRechartRow1", "row[@accessiblename='Row 1']/cell[@accessiblename~'colRech_art']", "", 90000, null, "66aa28fa-e465-4f91-aa65-97b931a960d6");
+                _colrechartrow2Info = new RepoItemInfo(this, "colRechartRow2", "row[@accessiblename='Row 2']/cell[@accessiblename~'colRech_art']", "", 90000, null, "af5e755a-c50d-462f-b2a1-89a06b9b4805");
+                _collskdatumrow1Info = new RepoItemInfo(this, "ColLskDatumRow1", "row[@accessiblename='Row 1']/cell[@accessiblename~'colLsk_datum']", "", 60000, null, "040c96c5-3f28-4435-b912-42bd799d8750");
+                _collskdatumrow2Info = new RepoItemInfo(this, "ColLskDatumRow2", "row[@accessiblename='Row 2']/cell[@accessiblename~'colLsk_datum']", "", 60000, null, "f3d7eeca-cb56-4d62-a2bd-1d8467a0d8bf");
                 _collskdatumrow1_ohne_tagesdatumInfo = new RepoItemInfo(this, "ColLskDatumRow1_ohne_Tagesdatum", "row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @text='']", "", 30000, null, "144197f5-eefc-41b1-96d5-972abaae8274");
                 _collskdatumrow1_mit_tagesdatumInfo = new RepoItemInfo(this, "ColLskDatumRow1_mit_Tagesdatum", "row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @accessiblevalue=$Tagesdatum]", "", 30000, null, "28d1d1d7-f48c-4686-b655-e4451d5120ab");
             }
@@ -927,6 +938,202 @@ namespace V_FADR_001
                 get
                 {
                     return _rechnungsnummerInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Rech_art_FlexGrid_lange_Pfade_nicht_verwendetFolder folder.
+        /// </summary>
+        [RepositoryFolder("faaf6b6c-2b2c-4810-85c2-0c67f71e5ece")]
+        public partial class Rech_art_FlexGrid_lange_Pfade_nicht_verwendetFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _colrechartrow1Info;
+            RepoItemInfo _colrechartrow2Info;
+            RepoItemInfo _collskdatumrow1Info;
+            RepoItemInfo _collskdatumrow2Info;
+            RepoItemInfo _collskdatumrow1_ohne_tagesdatumInfo;
+            RepoItemInfo _collskdatumrow1_mit_tagesdatumInfo;
+
+            /// <summary>
+            /// Creates a new Rech_art_FlexGrid_lange_Pfade_nicht_verwendet  folder.
+            /// </summary>
+            public Rech_art_FlexGrid_lange_Pfade_nicht_verwendetFolder(RepoGenBaseFolder parentFolder) :
+                    base("Rech_art_FlexGrid_lange_Pfade_nicht_verwendet", "container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "faaf6b6c-2b2c-4810-85c2-0c67f71e5ece", "")
+            {
+                _colrechartrow1Info = new RepoItemInfo(this, "colRechartRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colRech_art Row 1']", "", 90000, null, "9562693f-b27b-4359-8247-d2112ccbedd5");
+                _colrechartrow2Info = new RepoItemInfo(this, "colRechartRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colRech_art Row 2']", "", 90000, null, "3bcaf839-55d9-4763-b37d-f678d2a68c93");
+                _collskdatumrow1Info = new RepoItemInfo(this, "ColLskDatumRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1']", "", 60000, null, "8382d31f-a4b5-418f-88f4-35d8d0bc6633");
+                _collskdatumrow2Info = new RepoItemInfo(this, "ColLskDatumRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colLsk_datum Row 2']", "", 60000, null, "69bd4f3f-01fa-4665-aea2-71bc5819e075");
+                _collskdatumrow1_ohne_tagesdatumInfo = new RepoItemInfo(this, "ColLskDatumRow1_ohne_Tagesdatum", "row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @text='']", "", 30000, null, "bdf0e907-72b3-4ff5-bf67-aa7eb30ae22f");
+                _collskdatumrow1_mit_tagesdatumInfo = new RepoItemInfo(this, "ColLskDatumRow1_mit_Tagesdatum", "row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @accessiblevalue=$Tagesdatum]", "", 30000, null, "15623657-e9c2-470d-803e-b620f2a07001");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("faaf6b6c-2b2c-4810-85c2-0c67f71e5ece")]
+            public virtual Ranorex.Table Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("faaf6b6c-2b2c-4810-85c2-0c67f71e5ece")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The colRechartRow1 item.
+            /// </summary>
+            [RepositoryItem("9562693f-b27b-4359-8247-d2112ccbedd5")]
+            public virtual Ranorex.Cell colRechartRow1
+            {
+                get
+                {
+                    return _colrechartrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The colRechartRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("9562693f-b27b-4359-8247-d2112ccbedd5")]
+            public virtual RepoItemInfo colRechartRow1Info
+            {
+                get
+                {
+                    return _colrechartrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The colRechartRow2 item.
+            /// </summary>
+            [RepositoryItem("3bcaf839-55d9-4763-b37d-f678d2a68c93")]
+            public virtual Ranorex.Cell colRechartRow2
+            {
+                get
+                {
+                    return _colrechartrow2Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The colRechartRow2 item info.
+            /// </summary>
+            [RepositoryItemInfo("3bcaf839-55d9-4763-b37d-f678d2a68c93")]
+            public virtual RepoItemInfo colRechartRow2Info
+            {
+                get
+                {
+                    return _colrechartrow2Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColLskDatumRow1 item.
+            /// </summary>
+            [RepositoryItem("8382d31f-a4b5-418f-88f4-35d8d0bc6633")]
+            public virtual Ranorex.Cell ColLskDatumRow1
+            {
+                get
+                {
+                    return _collskdatumrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColLskDatumRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("8382d31f-a4b5-418f-88f4-35d8d0bc6633")]
+            public virtual RepoItemInfo ColLskDatumRow1Info
+            {
+                get
+                {
+                    return _collskdatumrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColLskDatumRow2 item.
+            /// </summary>
+            [RepositoryItem("69bd4f3f-01fa-4665-aea2-71bc5819e075")]
+            public virtual Ranorex.Cell ColLskDatumRow2
+            {
+                get
+                {
+                    return _collskdatumrow2Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColLskDatumRow2 item info.
+            /// </summary>
+            [RepositoryItemInfo("69bd4f3f-01fa-4665-aea2-71bc5819e075")]
+            public virtual RepoItemInfo ColLskDatumRow2Info
+            {
+                get
+                {
+                    return _collskdatumrow2Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColLskDatumRow1_ohne_Tagesdatum item.
+            /// </summary>
+            [RepositoryItem("bdf0e907-72b3-4ff5-bf67-aa7eb30ae22f")]
+            public virtual Ranorex.Cell ColLskDatumRow1_ohne_Tagesdatum
+            {
+                get
+                {
+                    return _collskdatumrow1_ohne_tagesdatumInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColLskDatumRow1_ohne_Tagesdatum item info.
+            /// </summary>
+            [RepositoryItemInfo("bdf0e907-72b3-4ff5-bf67-aa7eb30ae22f")]
+            public virtual RepoItemInfo ColLskDatumRow1_ohne_TagesdatumInfo
+            {
+                get
+                {
+                    return _collskdatumrow1_ohne_tagesdatumInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColLskDatumRow1_mit_Tagesdatum item.
+            /// </summary>
+            [RepositoryItem("15623657-e9c2-470d-803e-b620f2a07001")]
+            public virtual Ranorex.Cell ColLskDatumRow1_mit_Tagesdatum
+            {
+                get
+                {
+                    return _collskdatumrow1_mit_tagesdatumInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColLskDatumRow1_mit_Tagesdatum item info.
+            /// </summary>
+            [RepositoryItemInfo("15623657-e9c2-470d-803e-b620f2a07001")]
+            public virtual RepoItemInfo ColLskDatumRow1_mit_TagesdatumInfo
+            {
+                get
+                {
+                    return _collskdatumrow1_mit_tagesdatumInfo;
                 }
             }
         }
