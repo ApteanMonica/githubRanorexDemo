@@ -118,8 +118,8 @@ namespace Z_ZEIT_002.Recording
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'MdiZeit.Tabelle.Zeile_2.ColProjNrRow2'", repo.MdiZeit.Tabelle.Zeile_2.ColProjNrRow2Info, new ActionTimeout(120000), new RecordItemIndex(0));
-            repo.MdiZeit.Tabelle.Zeile_2.ColProjNrRow2Info.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 4m to exist. Associated repository item: 'MdiZeit.Tabelle.Zeile_2.ColProjNrRow2'", repo.MdiZeit.Tabelle.Zeile_2.ColProjNrRow2Info, new ActionTimeout(240000), new RecordItemIndex(0));
+            repo.MdiZeit.Tabelle.Zeile_2.ColProjNrRow2Info.WaitForExists(240000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Personalnr) on item 'MdiZeit.Mitarbeiter'.", repo.MdiZeit.MitarbeiterInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.MdiZeit.MitarbeiterInfo, "Text", Personalnr);
