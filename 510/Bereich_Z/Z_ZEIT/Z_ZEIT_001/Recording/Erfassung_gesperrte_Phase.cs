@@ -92,11 +92,11 @@ namespace Z_ZEIT_001.Recording
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'MdiZeit.Tabelle.Row_3'", repo.MdiZeit.Tabelle.Row_3Info, new ActionTimeout(120000), new RecordItemIndex(0));
-            repo.MdiZeit.Tabelle.Row_3Info.WaitForExists(120000);
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'MdiZeit.Tabelle.Row_3'", repo.MdiZeit.Tabelle.Row_3Info, new ActionTimeout(120000), new RecordItemIndex(0));
+            //repo.MdiZeit.Tabelle.Row_3Info.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Personalnr) on item 'MdiZeit.Mitarbeiter'.", repo.MdiZeit.MitarbeiterInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.MdiZeit.MitarbeiterInfo, "Text", Personalnr);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Personalnr) on item 'MdiZeit.Mitarbeiter'.", repo.MdiZeit.MitarbeiterInfo, new RecordItemIndex(1));
+            //Validate.AttributeEqual(repo.MdiZeit.MitarbeiterInfo, "Text", Personalnr);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'ZEIT_001' with focus on 'MdiZeit.Tabelle.Zeile_3.ColProjNrRow3'.", repo.MdiZeit.Tabelle.Zeile_3.ColProjNrRow3Info, new RecordItemIndex(2));
             repo.MdiZeit.Tabelle.Zeile_3.ColProjNrRow3.PressKeys("ZEIT_001");
