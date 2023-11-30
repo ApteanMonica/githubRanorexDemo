@@ -212,15 +212,18 @@ namespace Z_UHR_001.Recording
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUhr.PbTimecontrolKommt' at Center.", repo.FrmUhr.PbTimecontrolKommtInfo, new RecordItemIndex(4));
             repo.FrmUhr.PbTimecontrolKommt.Click();
             
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.Column0_mit_Variable_Personal_Nr'", repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.Column0_mit_Variable_Personal_NrInfo, new ActionTimeout(120000), new RecordItemIndex(5));
+            repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.Column0_mit_Variable_Personal_NrInfo.WaitForExists(120000);
+            
             Uhrzeit_Stunde_Minute = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("HH:mm");
             
             // continue on fail (bei Einlesen der Zeit falls es zur Minutenüberschneidung kommt.
             try {
-                //Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\ncontinue on fail (bei Einlesen der Zeit falls es zur Minutenüberschneidung kommt.\r\nValidating AttributeContains (Text>$Uhrzeit_Stunde_Minute) on item 'FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColUhrDtbeginn_Zeile_mit_Variable_Personal_Nr'.", repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColUhrDtbeginn_Zeile_mit_Variable_Personal_NrInfo, new RecordItemIndex(6));
+                //Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\ncontinue on fail (bei Einlesen der Zeit falls es zur Minutenüberschneidung kommt.\r\nValidating AttributeContains (Text>$Uhrzeit_Stunde_Minute) on item 'FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColUhrDtbeginn_Zeile_mit_Variable_Personal_Nr'.", repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColUhrDtbeginn_Zeile_mit_Variable_Personal_NrInfo, new RecordItemIndex(7));
                 //Validate.AttributeContains(repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColUhrDtbeginn_Zeile_mit_Variable_Personal_NrInfo, "Text", Uhrzeit_Stunde_Minute, null, false);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColUhrDtbeginn_Zeile_mit_Variable_Personal_Nr' and assigning its value to variable 'Einlesen_Uhrzeit'.", repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColUhrDtbeginn_Zeile_mit_Variable_Personal_NrInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColUhrDtbeginn_Zeile_mit_Variable_Personal_Nr' and assigning its value to variable 'Einlesen_Uhrzeit'.", repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColUhrDtbeginn_Zeile_mit_Variable_Personal_NrInfo, new RecordItemIndex(8));
             Einlesen_Uhrzeit = repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColUhrDtbeginn_Zeile_mit_Variable_Personal_Nr.Element.GetAttributeValueText("Text");
             
             angepasste_Uhrzeit_einlesen = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetDateAsString(Einlesen_Uhrzeit, "HH:mm");
@@ -228,16 +231,16 @@ namespace Z_UHR_001.Recording
             Uhrzeit_plus_1Minute = Ranorex.AutomationHelpers.UserCodeCollections.Aptean.GetDateTimePlus(Uhrzeit_Stunde_Minute, "m", ValueConverter.ArgumentFromString<int>("counter", "1"), "HH:mm");
             
             // angepasste Uhrzeit eingelesen mit LOG
-            Report.Log(ReportLevel.Info, "User", angepasste_Uhrzeit_einlesen, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "User", angepasste_Uhrzeit_einlesen, new RecordItemIndex(11));
             
-            Report.Log(ReportLevel.Info, "User", Uhrzeit_Stunde_Minute, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "User", Uhrzeit_Stunde_Minute, new RecordItemIndex(12));
             
             Ranorex.AutomationHelpers.UserCodeCollections.Aptean.ValidateVar1Var2(angepasste_Uhrzeit_einlesen, Uhrzeit_Stunde_Minute, Uhrzeit_plus_1Minute);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Personal_Nr) on item 'FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersNr_Zeile_mit_Varibale_Personal_Nr'.", repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersNr_Zeile_mit_Varibale_Personal_NrInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Personal_Nr) on item 'FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersNr_Zeile_mit_Varibale_Personal_Nr'.", repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersNr_Zeile_mit_Varibale_Personal_NrInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersNr_Zeile_mit_Varibale_Personal_NrInfo, "Text", Personal_Nr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Name_MA) on item 'FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersName_Zeile_mit_Variable_Personal_Nr'.", repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersName_Zeile_mit_Variable_Personal_NrInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Name_MA) on item 'FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersName_Zeile_mit_Variable_Personal_Nr'.", repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersName_Zeile_mit_Variable_Personal_NrInfo, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.FrmUhr.Tabelle_links_mit_Zeile_mit_Variable_Personal_Nr.ColPersName_Zeile_mit_Variable_Personal_NrInfo, "Text", Name_MA);
             
         }

@@ -1710,6 +1710,8 @@ namespace AEKOOE_001
         public partial class StartseiteGoogleChromeAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _adressundsuchleisteInfo;
+            RepoItemInfo _pane_startseite_website_chromeInfo;
+            RepoItemInfo _pane_item_kompletter_browserInfo;
 
             /// <summary>
             /// Creates a new StartseiteGoogleChrome  folder.
@@ -1718,6 +1720,8 @@ namespace AEKOOE_001
                     base("StartseiteGoogleChrome", "/form[@title>'Startseite - Google Chrom']", parentFolder, 30000, null, true, "9a28b9c3-f55c-452e-91f6-a40bede39942", "")
             {
                 _adressundsuchleisteInfo = new RepoItemInfo(this, "AdressUndSuchleiste", "container[@accessiblename>'Startseite – Arbeitsspeichernutzung']/container/container[@accessiblerole='Pane']/container[2]/container[1]/toolbar[1]/?/?/container[@accessiblerole='Grouping']/text[@accessiblename='Adress- und Suchleiste']", "", 30000, null, "d40e7a0d-11ea-49b6-b516-9f6b9c85b7d8");
+                _pane_startseite_website_chromeInfo = new RepoItemInfo(this, "Pane_Startseite_Website_chrome", "container[@accessiblename>'Startseite – Arbeitsspeichernutzung']/container[@accessiblerole='Pane']/container/container[2]/container[1]/tabpagelist[@accessiblerole='PageTabList']/container[1]/container[2]", "", 30000, null, "426d505e-a296-42c9-9cd2-22a712b5d7b5");
+                _pane_item_kompletter_browserInfo = new RepoItemInfo(this, "Pane_item_kompletter_Browser", "container[@accessiblename>'Startseite – Arbeitsspeichernutzung']/container[@accessiblerole='Pane']/container/container[2]/container[1]", "", 30000, null, "519b835e-867a-4e3d-9b80-2717e6daa5d9");
             }
 
             /// <summary>
@@ -1765,6 +1769,54 @@ namespace AEKOOE_001
                 get
                 {
                     return _adressundsuchleisteInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Pane_Startseite_Website_chrome item.
+            /// </summary>
+            [RepositoryItem("426d505e-a296-42c9-9cd2-22a712b5d7b5")]
+            public virtual Ranorex.Container Pane_Startseite_Website_chrome
+            {
+                get
+                {
+                    return _pane_startseite_website_chromeInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Pane_Startseite_Website_chrome item info.
+            /// </summary>
+            [RepositoryItemInfo("426d505e-a296-42c9-9cd2-22a712b5d7b5")]
+            public virtual RepoItemInfo Pane_Startseite_Website_chromeInfo
+            {
+                get
+                {
+                    return _pane_startseite_website_chromeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Pane_item_kompletter_Browser item.
+            /// </summary>
+            [RepositoryItem("519b835e-867a-4e3d-9b80-2717e6daa5d9")]
+            public virtual Ranorex.Container Pane_item_kompletter_Browser
+            {
+                get
+                {
+                    return _pane_item_kompletter_browserInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Pane_item_kompletter_Browser item info.
+            /// </summary>
+            [RepositoryItemInfo("519b835e-867a-4e3d-9b80-2717e6daa5d9")]
+            public virtual RepoItemInfo Pane_item_kompletter_BrowserInfo
+            {
+                get
+                {
+                    return _pane_item_kompletter_browserInfo;
                 }
             }
         }
