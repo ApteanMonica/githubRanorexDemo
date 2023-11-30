@@ -41,7 +41,7 @@ namespace S_ZLBD_Schnelltest.Recordings_ZAHLUNG
         /// </summary>
         public Speichern_Pruefen_Neuanlage_ZLBD()
         {
-            ZLBD_CD_NEU = "TST";
+            ZLBD_CD_NEU = "TXX";
         }
 
         /// <summary>

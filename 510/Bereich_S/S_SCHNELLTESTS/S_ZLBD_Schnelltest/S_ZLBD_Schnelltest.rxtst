@@ -49,12 +49,15 @@
 			</testmodule>
 			<smartfoldernode
 			id="336f9c29-3742-4ebd-8380-92799c8d8f0b"
-			name="Version_ab_530_(ALL_NOT_EQUAL_510_511_521)">
+			name="Version_530">
+				<description>
+					<![CDATA[<p>ANY_EQUAL_530</p>]]>
+				</description>
 				<conditiongroup
-				comparison="AND"
+				comparison="OR"
 				enabled="True">
 					<condition
-					comparison="IsNotEqual">
+					comparison="IsEqual">
 						<leftvalue>
 							<datavaluesource>
 								<databinding
@@ -66,41 +69,7 @@
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="510">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsNotEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Programmversion"
-								id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="511">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsNotEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Programmversion"
-								id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="521">
+							value="530">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -112,7 +81,10 @@
 			</setup>
 			<smartfoldernode
 			id="4f3f696d-dfdb-427e-8f7d-5370d716bf0f"
-			name="Version_510_511_521_(ANY_EQUAL_510_511_521)">
+			name="Version_510_511_521">
+				<description>
+					<![CDATA[<p>ANY_EQUAL_510_511_521</p>]]>
+				</description>
 				<conditiongroup
 				comparison="OR"
 				enabled="True">
@@ -241,12 +213,15 @@
 			</testmodule>
 			<smartfoldernode
 			id="7f06f5f2-06bc-4441-8541-13dd9a47872c"
-			name="Version_ab_521_(ALL_NOT_EQUAL_510_511)">
+			name="Version_521_530">
+				<description>
+					<![CDATA[<p>ANY_EQUAL_521_530</p>]]>
+				</description>
 				<conditiongroup
-				comparison="AND"
+				comparison="OR"
 				enabled="True">
 					<condition
-					comparison="IsNotEqual">
+					comparison="IsEqual">
 						<leftvalue>
 							<datavaluesource>
 								<databinding
@@ -258,12 +233,12 @@
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="510">
+							value="521">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
 					<condition
-					comparison="IsNotEqual">
+					comparison="IsEqual">
 						<leftvalue>
 							<datavaluesource>
 								<databinding
@@ -275,7 +250,7 @@
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="511">
+							value="530">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -283,7 +258,10 @@
 			</smartfoldernode>
 			<smartfoldernode
 			id="92472d43-70d3-4557-8853-56843e3f0daa"
-			name="Version_510_511_521_(ANY_EQUAL_510_511_521)">
+			name="Version_510_511_521">
+				<description>
+					<![CDATA[<p>ANY_EQUAL_510_511_521</p>]]>
+				</description>
 				<conditiongroup
 				comparison="OR"
 				enabled="True">
@@ -411,12 +389,15 @@
 			</testsuite>
 			<smartfoldernode
 			id="b02c2bd0-3db3-4113-8e1d-54b5f6fdf984"
-			name="Version_ab_530_(ALL_NOT_EQUAL_510_511_521)">
+			name="Version_530">
+				<description>
+					<![CDATA[<p>ANY_EQUAL_530</p>]]>
+				</description>
 				<conditiongroup
 				comparison="AND"
 				enabled="True">
 					<condition
-					comparison="IsNotEqual">
+					comparison="IsEqual">
 						<leftvalue>
 							<datavaluesource>
 								<databinding
@@ -428,41 +409,7 @@
 						</leftvalue>
 						<rightvalue>
 							<simplevaluesource
-							value="510">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsNotEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Programmversion"
-								id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="511">
-							</simplevaluesource>
-						</rightvalue>
-					</condition>
-					<condition
-					comparison="IsNotEqual">
-						<leftvalue>
-							<datavaluesource>
-								<databinding
-								bindingtype="Parameter"
-								dataname="Programmversion"
-								id="bbe32579-2f65-40cc-a1cb-a8946d6b4291">
-								</databinding>
-							</datavaluesource>
-						</leftvalue>
-						<rightvalue>
-							<simplevaluesource
-							value="521">
+							value="530">
 							</simplevaluesource>
 						</rightvalue>
 					</condition>
@@ -487,7 +434,7 @@
 					</param>
 					<param
 					name="ZLBD_CD_NEU"
-					value="TST">
+					value="YXX">
 					</param>
 					<param
 					name="ZLBD_CD_ALT"
@@ -497,7 +444,10 @@
 			</testcase>
 			<smartfoldernode
 			id="cd7a1b82-90cb-4f9d-9f90-64aaf0ad2a84"
-			name="Version_510_511_(ANY_EQUAL_510_511)">
+			name="Version_510_511">
+				<description>
+					<![CDATA[<p>ANY_EQUAL_510_511</p>]]>
+				</description>
 				<conditiongroup
 				comparison="OR"
 				enabled="True">
@@ -584,7 +534,7 @@
 						</testmodule>
 						<smartfoldernode
 						id="cd7a1b82-90cb-4f9d-9f90-64aaf0ad2a84"
-						name="Version_510_511_(ANY_EQUAL_510_511)">
+						name="Version_510_511">
 							<testmodule
 							id="01e54ce7-d8df-4bb1-9962-ab736ccaf6a2"
 							name="Neuanlage_ZLBD_510_511">
@@ -592,7 +542,7 @@
 						</smartfoldernode>
 						<smartfoldernode
 						id="7f06f5f2-06bc-4441-8541-13dd9a47872c"
-						name="Version_ab_521_(ALL_NOT_EQUAL_510_511)">
+						name="Version_521_530">
 							<testmodule
 							id="0bd16697-41ed-41d5-acc2-f360a9009941"
 							name="Neuanlage_ZLBD">
@@ -608,7 +558,7 @@
 						</testmodule>
 						<smartfoldernode
 						id="4f3f696d-dfdb-427e-8f7d-5370d716bf0f"
-						name="Version_510_511_521_(ANY_EQUAL_510_511_521)">
+						name="Version_510_511_521">
 							<testmodule
 							id="7aadfa58-fac8-4886-8c3a-dec6ba83a114"
 							name="Loeschen_ZLBD_NEU_pruefen_510_511_521">
@@ -616,7 +566,7 @@
 						</smartfoldernode>
 						<smartfoldernode
 						id="336f9c29-3742-4ebd-8380-92799c8d8f0b"
-						name="Version_ab_530_(ALL_NOT_EQUAL_510_511_521)">
+						name="Version_530">
 							<testmodule
 							id="9a61d903-ae81-4ce8-ba3d-fd4a64db31e5"
 							name="Loeschen_Status_9_aendern_ZLBD_NEU_pruefen">
@@ -624,7 +574,7 @@
 						</smartfoldernode>
 						<smartfoldernode
 						id="92472d43-70d3-4557-8853-56843e3f0daa"
-						name="Version_510_511_521_(ANY_EQUAL_510_511_521)">
+						name="Version_510_511_521">
 							<testmodule
 							id="31840baf-af2a-4750-b72b-1c9ff41928c9"
 							name="Loeschen_ZLBD_ALT_nicht_moeglich_510_511_521">
@@ -632,7 +582,7 @@
 						</smartfoldernode>
 						<smartfoldernode
 						id="b02c2bd0-3db3-4113-8e1d-54b5f6fdf984"
-						name="Version_ab_530_(ALL_NOT_EQUAL_510_511_521)">
+						name="Version_530">
 							<testmodule
 							id="fcbfedbd-0f3d-4c0f-924d-547bba266527"
 							name="Loeschen_ZLBD_ALT_nicht_moeglich">
