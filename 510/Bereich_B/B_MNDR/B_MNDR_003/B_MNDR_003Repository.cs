@@ -168,7 +168,6 @@ namespace B_MNDR_003
         [RepositoryFolder("84163e03-152e-4e39-9463-fabea0703987")]
         public partial class TblMndtAppFolder : RepoGenBaseFolder
         {
-            B_MNDR_003RepositoryFolders.FlexGridFolder _flexgrid;
             B_MNDR_003RepositoryFolders.FlexGrid_TabelleFolder _flexgrid_tabelle;
             RepoItemInfo _titlebar100mahnenkundenInfo;
             RepoItemInfo _pbcommonaendernInfo;
@@ -180,7 +179,6 @@ namespace B_MNDR_003
             public TblMndtAppFolder(RepoGenBaseFolder parentFolder) :
                     base("TblMndt", "/form[@controlname='tblMndt']", parentFolder, 30000, null, true, "84163e03-152e-4e39-9463-fabea0703987", "")
             {
-                _flexgrid = new B_MNDR_003RepositoryFolders.FlexGridFolder(this);
                 _flexgrid_tabelle = new B_MNDR_003RepositoryFolders.FlexGrid_TabelleFolder(this);
                 _titlebar100mahnenkundenInfo = new RepoItemInfo(this, "TitleBar100MahnenKunden", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "a8ea6cf2-3040-4cf8-8b05-d7b1ccebec5e");
                 _pbcommonaendernInfo = new RepoItemInfo(this, "PbCommonAEndern", "container[@controlname='RibbonBar']/?/?/button[@controlname='pbCommon_Ändern']", "", 30000, null, "8f25fbdb-e727-49a8-ba1b-533fa43d5025");
@@ -284,61 +282,12 @@ namespace B_MNDR_003
             }
 
             /// <summary>
-            /// The FlexGrid folder.
-            /// </summary>
-            [RepositoryFolder("2659aea3-ae70-451b-8bf2-2cacf7e81f37")]
-            public virtual B_MNDR_003RepositoryFolders.FlexGridFolder FlexGrid
-            {
-                get { return _flexgrid; }
-            }
-
-            /// <summary>
             /// The FlexGrid_Tabelle folder.
             /// </summary>
             [RepositoryFolder("9440f6c6-5b64-4b5c-a46f-8da71ef95fea")]
             public virtual B_MNDR_003RepositoryFolders.FlexGrid_TabelleFolder FlexGrid_Tabelle
             {
                 get { return _flexgrid_tabelle; }
-            }
-        }
-
-        /// <summary>
-        /// The FlexGridFolder folder.
-        /// </summary>
-        [RepositoryFolder("2659aea3-ae70-451b-8bf2-2cacf7e81f37")]
-        public partial class FlexGridFolder : RepoGenBaseFolder
-        {
-
-            /// <summary>
-            /// Creates a new FlexGrid  folder.
-            /// </summary>
-            public FlexGridFolder(RepoGenBaseFolder parentFolder) :
-                    base("FlexGrid", "container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "2659aea3-ae70-451b-8bf2-2cacf7e81f37", "")
-            {
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("2659aea3-ae70-451b-8bf2-2cacf7e81f37")]
-            public virtual Ranorex.Table Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Table>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("2659aea3-ae70-451b-8bf2-2cacf7e81f37")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
             }
         }
 
@@ -363,12 +312,12 @@ namespace B_MNDR_003
                     base("FlexGrid_Tabelle", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "9440f6c6-5b64-4b5c-a46f-8da71ef95fea", "")
             {
                 _row_mit_beschreibungInfo = new RepoItemInfo(this, "Row_mit_Beschreibung", "row[@accessiblename~'Row' and @accessiblevalue~$Beschreibung]", "", 30000, null, "6eec5c62-9c3e-4ada-9117-8cf384319d69");
-                _column0_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "Column0_Zeile_mit_Beschreibung", "*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/?/cell[@accessiblename~'Column 0']", "", 30000, null, "394bd4e9-8cc8-4a1d-8f1d-722ec18eb055");
-                _colmndtnr_in_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "ColMndtNr_in_Zeile_mit_Beschreibung", "*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colMndt_nr']", "", 30000, null, "aca38bef-5aa8-436d-8823-318cdb3d499b");
-                _colmndtdtanlag_in_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "ColMndtDtanlag_in_Zeile_mit_Beschreibung", "*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colMndt_dtanlag' and @accessiblevalue=$Erstellungsdatum]", "", 30000, null, "68ee59e2-ee1a-4ee8-b9fe-7a38c5a26632");
-                _colanznr_in_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "ColAnzNr_in_Zeile_mit_Beschreibung", "*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colAnz_nr' and @accessiblerole='Cell']", "", 30000, null, "634f02be-da6a-4cee-a372-f6cceb385763");
-                _colanzkunden_in_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "ColAnzKunden_in_Zeile_mit_Beschreibung", "*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colAnz_kunden' and @accessiblerole='Cell']", "", 30000, null, "77f2d81d-6b95-4759-ba41-91141488c1b1");
-                _colmndtletzte_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "ColMndtLetzte_Zeile_mit_Beschreibung", "*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/?/cell[@accessiblename~'colMndt_letzte' and @accessiblerole='Cell']", "", 30000, null, "824640e6-9dda-410a-bdcd-bfeaf0b08248");
+                _column0_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "Column0_Zeile_mit_Beschreibung", "row[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'Column 0']", "", 30000, null, "394bd4e9-8cc8-4a1d-8f1d-722ec18eb055");
+                _colmndtnr_in_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "ColMndtNr_in_Zeile_mit_Beschreibung", "row[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colMndt_nr']", "", 30000, null, "aca38bef-5aa8-436d-8823-318cdb3d499b");
+                _colmndtdtanlag_in_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "ColMndtDtanlag_in_Zeile_mit_Beschreibung", "row[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colMndt_dtanlag']", "", 30000, null, "68ee59e2-ee1a-4ee8-b9fe-7a38c5a26632");
+                _colanznr_in_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "ColAnzNr_in_Zeile_mit_Beschreibung", "row[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colAnz_nr']", "", 30000, null, "634f02be-da6a-4cee-a372-f6cceb385763");
+                _colanzkunden_in_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "ColAnzKunden_in_Zeile_mit_Beschreibung", "row[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colAnz_kunden']", "", 30000, null, "77f2d81d-6b95-4759-ba41-91141488c1b1");
+                _colmndtletzte_zeile_mit_beschreibungInfo = new RepoItemInfo(this, "ColMndtLetzte_Zeile_mit_Beschreibung", "row[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colMndt_letzte']", "", 30000, null, "824640e6-9dda-410a-bdcd-bfeaf0b08248");
             }
 
             /// <summary>

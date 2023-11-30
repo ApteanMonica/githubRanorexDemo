@@ -23,6 +23,11 @@ mode="Global">
 	namespace="B_MNDR_003.Recordings">
 	</codegen>
 	<variables>
+		<var
+		id="a341d48a-e072-4868-a5ed-5e5a958ee89a"
+		name="Beschreibung">
+			B_MNDR_003
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -51,6 +56,15 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4024,6 +4038,35 @@ mode="Global">
 			<comment>
 			</comment>
 			<bindings>
+			</bindings>
+			<info
+			id="f9b2e42f-233a-4edd-9a50-daaddb33765c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='frmVorschlagÄndern']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				ändern
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="2587ceb3-deef-4843-a260-d801b251012b">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Beschreibung">
+				</binding>
 			</bindings>
 			<info
 			id="f9b2e42f-233a-4edd-9a50-daaddb33765c"
