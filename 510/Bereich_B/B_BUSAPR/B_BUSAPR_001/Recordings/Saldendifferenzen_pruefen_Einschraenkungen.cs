@@ -122,63 +122,72 @@ namespace B_BUSAPR_001.Recordings
             Keyboard.PrepareFocus(repo.FrmMain.Jahr);
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmMain.Jahr' at Center.", repo.FrmMain.JahrInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmMain.Jahr' at Center.", repo.FrmMain.JahrInfo, new RecordItemIndex(2));
             //repo.FrmMain.Jahr.DoubleClick();
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}' with focus on 'FrmMain.Jahr'.", repo.FrmMain.JahrInfo, new RecordItemIndex(2));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}' with focus on 'FrmMain.Jahr'.", repo.FrmMain.JahrInfo, new RecordItemIndex(3));
             //repo.FrmMain.Jahr.PressKeys("{Back}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'FrmMain.Jahr'.", repo.FrmMain.JahrInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Jahr' with focus on 'FrmMain.Jahr'.", repo.FrmMain.JahrInfo, new RecordItemIndex(4));
             repo.FrmMain.Jahr.PressKeys(Jahr);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(5));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(6));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.PeriodeVon' at Center.", repo.FrmMain.PeriodeVonInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(7));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMain.PeriodeVon' at Center.", repo.FrmMain.PeriodeVonInfo, new RecordItemIndex(8));
             repo.FrmMain.PeriodeVon.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Periode_von' with focus on 'FrmMain.PeriodeVon'.", repo.FrmMain.PeriodeVonInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Periode_von' with focus on 'FrmMain.PeriodeVon'.", repo.FrmMain.PeriodeVonInfo, new RecordItemIndex(9));
             repo.FrmMain.PeriodeVon.EnsureVisible();
             Keyboard.Press(Periode_von);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(8));
-            Delay.Duration(1000, false);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(9));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(10));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Periode_bis' with focus on 'FrmMain.Bis'.", repo.FrmMain.BisInfo, new RecordItemIndex(11));
-            repo.FrmMain.Bis.EnsureVisible();
-            Keyboard.Press(Periode_bis);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(12));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Periode_bis' with focus on 'FrmMain.Bis'.", repo.FrmMain.BisInfo, new RecordItemIndex(13));
+            repo.FrmMain.Bis.EnsureVisible();
+            Keyboard.Press(Periode_bis);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(14));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(15));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'FrmMain.Jahr'.", repo.FrmMain.JahrInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(16));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Jahr) on item 'FrmMain.Jahr'.", repo.FrmMain.JahrInfo, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.FrmMain.JahrInfo, "Text", Jahr);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode_von) on item 'FrmMain.PeriodeVon'.", repo.FrmMain.PeriodeVonInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode_von) on item 'FrmMain.PeriodeVon'.", repo.FrmMain.PeriodeVonInfo, new RecordItemIndex(18));
             Validate.AttributeEqual(repo.FrmMain.PeriodeVonInfo, "Text", Periode_von);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode_bis) on item 'FrmMain.Bis'.", repo.FrmMain.BisInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Periode_bis) on item 'FrmMain.Bis'.", repo.FrmMain.BisInfo, new RecordItemIndex(19));
             Validate.AttributeEqual(repo.FrmMain.BisInfo, "Text", Periode_bis);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmMain.CbNormal'.", repo.FrmMain.CbNormalInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmMain.CbNormal'.", repo.FrmMain.CbNormalInfo, new RecordItemIndex(20));
             Validate.AttributeEqual(repo.FrmMain.CbNormalInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmMain.CbUst'.", repo.FrmMain.CbUstInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmMain.CbUst'.", repo.FrmMain.CbUstInfo, new RecordItemIndex(21));
             Validate.AttributeEqual(repo.FrmMain.CbUstInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmMain.RbBasis'.", repo.FrmMain.RbBasisInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmMain.RbBasis'.", repo.FrmMain.RbBasisInfo, new RecordItemIndex(22));
             Validate.AttributeEqual(repo.FrmMain.RbBasisInfo, "Checked", "True");
             
         }
