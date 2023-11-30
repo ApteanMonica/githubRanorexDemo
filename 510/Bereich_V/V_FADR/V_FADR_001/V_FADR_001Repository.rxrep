@@ -155,7 +155,7 @@ name="V_FADR_001Repository">
 			capname="table"
 			id="74563929-125c-497e-87f4-cc5cefa7a726"
 			isrooted="True"
-			name="Rech_art_FlexGrid"
+			name="tblRechArt_Pfad_verkuerzt_2"
 			searchtimeout="30000ms"
 			usecache="False">
 				<item
@@ -166,7 +166,7 @@ name="V_FADR_001Repository">
 				refimgid="8915730a-1b5a-4326-ad78-d4bc0baf0e63"
 				robustPath=""
 				searchtimeout="90000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colRech_art Row 1']
+					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element/table/row[@accessiblename='Row 1']/cell[@accessiblename~'colRech_art']
 				</item>
 				<item
 				addcaps="text,control,nativewindow"
@@ -176,7 +176,7 @@ name="V_FADR_001Repository">
 				refimgid="8915730a-1b5a-4326-ad78-d4bc0baf0e63"
 				robustPath=""
 				searchtimeout="90000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colRech_art Row 2']
+					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element/table/row[@accessiblename='Row 2']/cell[@accessiblename~'colRech_art']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -186,7 +186,7 @@ name="V_FADR_001Repository">
 				refimgid="127c4dcd-8244-4e20-a5dd-2192f4a217ec"
 				robustPath=""
 				searchtimeout="60000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1']
+					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element/table/row[@accessiblename='Row 1']/cell[@accessiblename~'colLsk_datum']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -196,7 +196,7 @@ name="V_FADR_001Repository">
 				refimgid="b8c1b522-c24c-4eac-aedd-861a216acd9a"
 				robustPath=""
 				searchtimeout="60000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colLsk_datum Row 2']
+					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element/table/row[@accessiblename='Row 2']/cell[@accessiblename~'colLsk_datum']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -206,7 +206,7 @@ name="V_FADR_001Repository">
 				refimgid="127c4dcd-8244-4e20-a5dd-2192f4a217ec"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @text='']
+					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element/table/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @text='']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -216,10 +216,10 @@ name="V_FADR_001Repository">
 				refimgid="127c4dcd-8244-4e20-a5dd-2192f4a217ec"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @accessiblevalue=$Tagesdatum]
+					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element/table/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @accessiblevalue=$Tagesdatum]
 				</item>
 				<basepath>
-					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element/table
 				</basepath>
 			</folder>
 			<folder
@@ -271,6 +271,77 @@ name="V_FADR_001Repository">
 				</item>
 				<basepath>
 					/form[@controltypename='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+				</basepath>
+			</folder>
+			<folder
+			capname="table"
+			id="faaf6b6c-2b2c-4810-85c2-0c67f71e5ece"
+			isrooted="True"
+			name="Rech_art_FlexGrid_lange_Pfade_nicht_verwendet"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,control,nativewindow"
+				capname="cell"
+				id="9562693f-b27b-4359-8247-d2112ccbedd5"
+				name="colRechartRow1"
+				refimgid="8915730a-1b5a-4326-ad78-d4bc0baf0e63"
+				robustPath=""
+				searchtimeout="90000ms">
+					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colRech_art Row 1']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="cell"
+				id="3bcaf839-55d9-4763-b37d-f678d2a68c93"
+				name="colRechartRow2"
+				refimgid="8915730a-1b5a-4326-ad78-d4bc0baf0e63"
+				robustPath=""
+				searchtimeout="90000ms">
+					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colRech_art Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="8382d31f-a4b5-418f-88f4-35d8d0bc6633"
+				name="ColLskDatumRow1"
+				refimgid="127c4dcd-8244-4e20-a5dd-2192f4a217ec"
+				robustPath=""
+				searchtimeout="60000ms">
+					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="69bd4f3f-01fa-4665-aea2-71bc5819e075"
+				name="ColLskDatumRow2"
+				refimgid="b8c1b522-c24c-4eac-aedd-861a216acd9a"
+				robustPath=""
+				searchtimeout="60000ms">
+					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colLsk_datum Row 2']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="bdf0e907-72b3-4ff5-bf67-aa7eb30ae22f"
+				name="ColLskDatumRow1_ohne_Tagesdatum"
+				refimgid="127c4dcd-8244-4e20-a5dd-2192f4a217ec"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @text='']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="15623657-e9c2-470d-803e-b620f2a07001"
+				name="ColLskDatumRow1_mit_Tagesdatum"
+				refimgid="127c4dcd-8244-4e20-a5dd-2192f4a217ec"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @accessiblevalue=$Tagesdatum]
+				</item>
+				<basepath>
+					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
 				</basepath>
 			</folder>
 			<basepath>

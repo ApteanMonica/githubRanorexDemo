@@ -105,17 +105,17 @@ namespace V_FADR_001.Recordings
 
             Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("dd.MM.yyyy");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, "Text", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1'.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1Info, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow2'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow2Info, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow2Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow2'.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow2Info, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow2Info, "Text", "");
             
             // LS-Datum in Zeile 1 löschen
             Report.Log(ReportLevel.Info, "Section", "LS-Datum in Zeile 1 löschen", new RecordItemIndex(3));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Rech_art_FlexGrid.colRechartRow1' at Center.", repo.TblFadr.Rech_art_FlexGrid.colRechartRow1Info, new RecordItemIndex(4));
-            repo.TblFadr.Rech_art_FlexGrid.colRechartRow1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.tblRechArt_Pfad_verkuerzt_2.colRechartRow1' at Center.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.colRechartRow1Info, new RecordItemIndex(4));
+            repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.colRechartRow1.Click();
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(5));
             Delay.Duration(3000, false);
@@ -128,8 +128,8 @@ namespace V_FADR_001.Recordings
             
             Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(8));
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute AccessibleValue to '$Datum_leer' on item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(9));
-            repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1.Element.SetAttributeValue("AccessibleValue", Datum_leer);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute AccessibleValue to '$Datum_leer' on item 'TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1'.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1Info, new RecordItemIndex(9));
+            repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1.Element.SetAttributeValue("AccessibleValue", Datum_leer);
             
             Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(10));
             
@@ -141,14 +141,14 @@ namespace V_FADR_001.Recordings
             
             Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(13));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Datum_leer) on item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(14));
-            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, "Text", Datum_leer);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Datum_leer) on item 'TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1'.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1Info, new RecordItemIndex(14));
+            Validate.AttributeEqual(repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1Info, "Text", Datum_leer);
             
             // Tagesdatum in Zeile 2 LS-Datum einfügen
             Report.Log(ReportLevel.Info, "Section", "Tagesdatum in Zeile 2 LS-Datum einfügen", new RecordItemIndex(15));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Rech_art_FlexGrid.colRechartRow2' at Center.", repo.TblFadr.Rech_art_FlexGrid.colRechartRow2Info, new RecordItemIndex(16));
-            repo.TblFadr.Rech_art_FlexGrid.colRechartRow2.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.tblRechArt_Pfad_verkuerzt_2.colRechartRow2' at Center.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.colRechartRow2Info, new RecordItemIndex(16));
+            repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.colRechartRow2.Click();
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(17));
             Delay.Duration(3000, false);
@@ -163,8 +163,8 @@ namespace V_FADR_001.Recordings
             
             Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("dd.MM.yyyy");
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute AccessibleValue to '$Tagesdatum' on item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow2'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow2Info, new RecordItemIndex(22));
-            repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow2.Element.SetAttributeValue("AccessibleValue", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute AccessibleValue to '$Tagesdatum' on item 'TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow2'.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow2Info, new RecordItemIndex(22));
+            repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow2.Element.SetAttributeValue("AccessibleValue", Tagesdatum);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(23));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -177,11 +177,11 @@ namespace V_FADR_001.Recordings
             // Prüfen: LS-Datum Zeile 1 leer, Zeile 2 Tagesdatum
             Report.Log(ReportLevel.Info, "Section", "Prüfen: LS-Datum Zeile 1 leer, Zeile 2 Tagesdatum", new RecordItemIndex(26));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, new RecordItemIndex(27));
-            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow1Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1'.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1Info, new RecordItemIndex(27));
+            Validate.AttributeEqual(repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow1Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblFadr.Rech_art_FlexGrid.ColLskDatumRow2'.", repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow2Info, new RecordItemIndex(28));
-            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid.ColLskDatumRow2Info, "Text", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow2'.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow2Info, new RecordItemIndex(28));
+            Validate.AttributeEqual(repo.TblFadr.tblRechArt_Pfad_verkuerzt_2.ColLskDatumRow2Info, "Text", Tagesdatum);
             
             // Laden + Meldung prüfen
             Report.Log(ReportLevel.Info, "Section", "Laden + Meldung prüfen", new RecordItemIndex(29));
