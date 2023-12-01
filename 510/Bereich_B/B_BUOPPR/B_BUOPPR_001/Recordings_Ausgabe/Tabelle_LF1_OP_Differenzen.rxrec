@@ -33,6 +33,26 @@ mode="Desktop">
 		</var>
 	</variables>
 	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="9cf2753c-c68b-4f81-bd15-a9611ad25a9a"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="062ed35b-786a-4172-9f82-d9b03b4c85c1"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblDiff']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
 		action="Exists"
 		duration="100ms"

@@ -92,10 +92,13 @@ namespace B_BUOPPR_001.Recordings_Ausgabe
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Meldung_Salden_DIFF_LF_1) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(0));
+            Delay.Duration(3000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Meldung_Salden_DIFF_LF_1) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", Meldung_Salden_DIFF_LF_1);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button1_Nein' at Center.", repo.DlgMessageBox.Button1_NeinInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button1_Nein' at Center.", repo.DlgMessageBox.Button1_NeinInfo, new RecordItemIndex(2));
             repo.DlgMessageBox.Button1_Nein.Click();
             
         }

@@ -79,8 +79,8 @@ namespace B_BUOPPR_001.Recordings_Ausgabe
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Achtung' at Center.", repo.DlgMessageBox.AchtungInfo, new RecordItemIndex(0));
-            repo.DlgMessageBox.Achtung.Click();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(0));
+            Delay.Duration(3000, false);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='OP-Saldenprüfung beendet !') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "OP-Saldenprüfung beendet !");

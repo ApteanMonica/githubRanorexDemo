@@ -105,16 +105,22 @@ namespace B_BUOPPR_001.Recordings_Ausgabe
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Meldung_OP_Diff_1_LF_1) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(120000), new RecordItemIndex(0));
+            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Meldung_OP_Diff_1_LF_1) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", Meldung_OP_Diff_1_LF_1);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0_OK' at Center.", repo.DlgMessageBox.Button0_OKInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0_OK' at Center.", repo.DlgMessageBox.Button0_OKInfo, new RecordItemIndex(2));
             repo.DlgMessageBox.Button0_OK.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Meldung_OP_Diff_2_LF_1) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Meldung_OP_Diff_2_LF_1) on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(4));
             Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", Meldung_OP_Diff_2_LF_1);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0_OK' at Center.", repo.DlgMessageBox.Button0_OKInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0_OK' at Center.", repo.DlgMessageBox.Button0_OKInfo, new RecordItemIndex(5));
             repo.DlgMessageBox.Button0_OK.Click();
             
         }

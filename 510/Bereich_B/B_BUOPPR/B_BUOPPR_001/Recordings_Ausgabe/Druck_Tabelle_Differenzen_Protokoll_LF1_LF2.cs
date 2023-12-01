@@ -137,26 +137,29 @@ namespace B_BUOPPR_001.Recordings_Ausgabe
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Tabelle' with focus on 'DlgDrucken.PbExport'.", repo.DlgDrucken.PbExportInfo, new RecordItemIndex(1));
             repo.DlgDrucken.PbExport.PressKeys("Tabelle");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Protokoll OP-Saldenprüfung') on item 'TblDrucken.TitleBar100ProtokollOPSaldenpruefu'.", repo.TblDrucken.TitleBar100ProtokollOPSaldenpruefuInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblDrucken.TitleBar100ProtokollOPSaldenpruefu'", repo.TblDrucken.TitleBar100ProtokollOPSaldenpruefuInfo, new ActionTimeout(60000), new RecordItemIndex(2));
+            repo.TblDrucken.TitleBar100ProtokollOPSaldenpruefuInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Protokoll OP-Saldenprüfung') on item 'TblDrucken.TitleBar100ProtokollOPSaldenpruefu'.", repo.TblDrucken.TitleBar100ProtokollOPSaldenpruefuInfo, new RecordItemIndex(3));
             Validate.AttributeContains(repo.TblDrucken.TitleBar100ProtokollOPSaldenpruefuInfo, "Text", "Protokoll OP-Saldenprüfung");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (AccessibleValue>$Druck_Tabelle_OP_Diff_1_LF_1) on item 'TblDrucken.FlexGrid.Row1'.", repo.TblDrucken.FlexGrid.Row1Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (AccessibleValue>$Druck_Tabelle_OP_Diff_1_LF_1) on item 'TblDrucken.FlexGrid.Row1'.", repo.TblDrucken.FlexGrid.Row1Info, new RecordItemIndex(4));
             Validate.AttributeContains(repo.TblDrucken.FlexGrid.Row1Info, "AccessibleValue", Druck_Tabelle_OP_Diff_1_LF_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue=$Druck_Tabelle_OP_Diff_2_LF_1) on item 'TblDrucken.FlexGrid.Row2'.", repo.TblDrucken.FlexGrid.Row2Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue=$Druck_Tabelle_OP_Diff_2_LF_1) on item 'TblDrucken.FlexGrid.Row2'.", repo.TblDrucken.FlexGrid.Row2Info, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.TblDrucken.FlexGrid.Row2Info, "AccessibleValue", Druck_Tabelle_OP_Diff_2_LF_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue=$Druck_Tabelle_Salden_Diff_LF_1) on item 'TblDrucken.FlexGrid.Row3'.", repo.TblDrucken.FlexGrid.Row3Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue=$Druck_Tabelle_Salden_Diff_LF_1) on item 'TblDrucken.FlexGrid.Row3'.", repo.TblDrucken.FlexGrid.Row3Info, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.TblDrucken.FlexGrid.Row3Info, "AccessibleValue", Druck_Tabelle_Salden_Diff_LF_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue=$Druck_Tabelle_Salden_Diff_LF_2) on item 'TblDrucken.FlexGrid.Row4'.", repo.TblDrucken.FlexGrid.Row4Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue=$Druck_Tabelle_Salden_Diff_LF_2) on item 'TblDrucken.FlexGrid.Row4'.", repo.TblDrucken.FlexGrid.Row4Info, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.TblDrucken.FlexGrid.Row4Info, "AccessibleValue", Druck_Tabelle_Salden_Diff_LF_2);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblDrucken.TitleBar100ProtokollOPSaldenpruefu'.", repo.TblDrucken.TitleBar100ProtokollOPSaldenpruefuInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'TblDrucken.TitleBar100ProtokollOPSaldenpruefu'.", repo.TblDrucken.TitleBar100ProtokollOPSaldenpruefuInfo, new RecordItemIndex(8));
             Keyboard.PrepareFocus(repo.TblDrucken.TitleBar100ProtokollOPSaldenpruefu);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgDrucken.TitleBar100DruckeProtokollOPSalde'.", repo.DlgDrucken.TitleBar100DruckeProtokollOPSaldeInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Alt+F4' Press with focus on 'DlgDrucken.TitleBar100DruckeProtokollOPSalde'.", repo.DlgDrucken.TitleBar100DruckeProtokollOPSaldeInfo, new RecordItemIndex(9));
             Keyboard.PrepareFocus(repo.DlgDrucken.TitleBar100DruckeProtokollOPSalde);
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             

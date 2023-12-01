@@ -105,16 +105,19 @@ namespace B_BUOPPR_001.Recordings_Ausgabe
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblDiff.TitleBar100Differenzen'.", repo.TblDiff.TitleBar100DifferenzenInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblDiff.TitleBar100Differenzen'", repo.TblDiff.TitleBar100DifferenzenInfo, new ActionTimeout(60000), new RecordItemIndex(0));
+            repo.TblDiff.TitleBar100DifferenzenInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblDiff.TitleBar100Differenzen'.", repo.TblDiff.TitleBar100DifferenzenInfo, new RecordItemIndex(1));
             Validate.Exists(repo.TblDiff.TitleBar100DifferenzenInfo);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tabelle_OP_Diff_1_LF_1) on item 'TblDiff.ColAdrNrRow1'.", repo.TblDiff.ColAdrNrRow1Info, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tabelle_OP_Diff_1_LF_1) on item 'TblDiff.ColAdrNrRow1'.", repo.TblDiff.ColAdrNrRow1Info, new RecordItemIndex(2));
             Validate.AttributeContains(repo.TblDiff.ColAdrNrRow1Info, "Text", Tabelle_OP_Diff_1_LF_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tabelle_OP_Diff_2_LF_1) on item 'TblDiff.ColAdrNrRow2'.", repo.TblDiff.ColAdrNrRow2Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tabelle_OP_Diff_2_LF_1) on item 'TblDiff.ColAdrNrRow2'.", repo.TblDiff.ColAdrNrRow2Info, new RecordItemIndex(3));
             Validate.AttributeContains(repo.TblDiff.ColAdrNrRow2Info, "Text", Tabelle_OP_Diff_2_LF_1);
             
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblDiff.TitleBar100Differenzen'.", repo.TblDiff.TitleBar100DifferenzenInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TblDiff.TitleBar100Differenzen'.", repo.TblDiff.TitleBar100DifferenzenInfo, new RecordItemIndex(4));
             Host.Current.CloseApplication(repo.TblDiff.TitleBar100Differenzen, new Duration(0));
             
         }
