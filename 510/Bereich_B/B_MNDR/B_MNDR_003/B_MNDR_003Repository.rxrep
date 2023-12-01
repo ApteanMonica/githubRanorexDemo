@@ -55,17 +55,6 @@ name="B_MNDR_003Repository">
 			</item>
 			<folder
 			capname="table"
-			id="2659aea3-ae70-451b-8bf2-2cacf7e81f37"
-			isrooted="True"
-			name="FlexGrid"
-			searchtimeout="30000ms"
-			usecache="False">
-				<basepath>
-					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']
-				</basepath>
-			</folder>
-			<folder
-			capname="table"
 			id="9440f6c6-5b64-4b5c-a46f-8da71ef95fea"
 			isrooted="True"
 			name="FlexGrid_Tabelle"
@@ -89,7 +78,7 @@ name="B_MNDR_003Repository">
 				refimgid="7167c5e9-c0ad-4184-a9bb-0311d40d8980"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/?/cell[@accessiblename~'Column 0']
+					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'Column 0']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -99,7 +88,7 @@ name="B_MNDR_003Repository">
 				refimgid="0ee314e9-bd37-4481-bb04-3f11aa7fc6f2"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colMndt_nr']
+					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colMndt_nr']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -109,7 +98,7 @@ name="B_MNDR_003Repository">
 				refimgid="84e853bf-0780-4946-9d76-aefc25b9a7e3"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colMndt_dtanlag' and @accessiblevalue=$Erstellungsdatum]
+					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colMndt_dtanlag']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -119,7 +108,7 @@ name="B_MNDR_003Repository">
 				refimgid="ae754956-0837-41b2-9e25-ce186215a21d"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colAnz_nr' and @accessiblerole='Cell']
+					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colAnz_nr']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -129,7 +118,7 @@ name="B_MNDR_003Repository">
 				refimgid="36a9c192-91dd-4cc9-a08e-e34c2d7b72fb"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colAnz_kunden' and @accessiblerole='Cell']
+					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colAnz_kunden']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -139,7 +128,7 @@ name="B_MNDR_003Repository">
 				refimgid="b3e74469-78e9-48b1-9d9c-7434a595bf1f"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/*[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/?/cell[@accessiblename~'colMndt_letzte' and @accessiblerole='Cell']
+					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Beschreibung]/cell[@accessiblename~'colMndt_letzte']
 				</item>
 				<basepath>
 					/form[@controlname='tblMndt']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
@@ -635,11 +624,6 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 		id="a341d48a-e072-4868-a5ed-5e5a958ee89a"
 		name="Beschreibung">
 			B_MNDR_003
-		</var>
-		<var
-		id="ad0f540f-1925-4012-a968-d7ef232efb67"
-		name="Erstellungsdatum">
-			15.03.2022
 		</var>
 	</variables>
 </repository>

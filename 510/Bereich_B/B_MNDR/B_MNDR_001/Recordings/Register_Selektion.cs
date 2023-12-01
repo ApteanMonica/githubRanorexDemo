@@ -114,15 +114,27 @@ namespace B_MNDR_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kunde_1' with focus on 'FrmVorschlagErstellen.Register_Selektion.KontoNrVon'.", repo.FrmVorschlagErstellen.Register_Selektion.KontoNrVonInfo, new RecordItemIndex(2));
             repo.FrmVorschlagErstellen.Register_Selektion.KontoNrVon.PressKeys(Kunde_1);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(3));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(4));
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kunde_2' with focus on 'FrmVorschlagErstellen.Register_Selektion.TextBis_Konto_bis'.", repo.FrmVorschlagErstellen.Register_Selektion.TextBis_Konto_bisInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(5));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kunde_2' with focus on 'FrmVorschlagErstellen.Register_Selektion.TextBis_Konto_bis'.", repo.FrmVorschlagErstellen.Register_Selektion.TextBis_Konto_bisInfo, new RecordItemIndex(6));
             repo.FrmVorschlagErstellen.Register_Selektion.TextBis_Konto_bis.EnsureVisible();
             Keyboard.Press(Kunde_2);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(7));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(8));
             Keyboard.Press("{Tab}");
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(9));
+            Delay.Duration(1000, false);
             
         }
 

@@ -35,11 +35,18 @@ mode="Global">
 		</var>
 	</variables>
 	<recorditems>
-		<setvaluerecorditem
-		attrname="Text"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
 		enabled="True"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		searchpropertyid="ada0bf3a-ba39-4e46-87bb-fc6a8a52ebee">
+		searchpropertyid="ee185e1e-eea7-4b68-a0b7-10d070ca2b31"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -48,35 +55,81 @@ mode="Global">
 			id="197965aa-cb9d-40e4-a388-94cdc7c8a41b"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='frmMahnDruck']/container[@controlname='ClientArea']/container[@controlname='ClientArea']/text[@controlname='dfKlktV']/text[@accessiblerole='Text']
+					/form[@controlname='frmMahnDruck']/container[@controlname='ClientArea']/text[@controlname='dfKlktV']/text[@accessiblerole='Text']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-			<AttributeValue>
-			</AttributeValue>
-		</setvaluerecorditem>
-		<setvaluerecorditem
-		attrname="Text"
+		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
 		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="DoubleClick"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		searchpropertyid="ada0bf3a-ba39-4e46-87bb-fc6a8a52ebee">
+		searchpropertyid="ee185e1e-eea7-4b68-a0b7-10d070ca2b31"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="eacacaa1-a4c1-4ecb-8153-58d42b87cf08"
+			id="197965aa-cb9d-40e4-a388-94cdc7c8a41b"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@controlname='frmMahnDruck']/container[@controlname='ClientArea']/container[@controlname='ClientArea']/text[@controlname='dfKlktB']/text[@accessiblename='Konto-Nr']
+					/form[@controlname='frmMahnDruck']/container[@controlname='ClientArea']/text[@controlname='dfKlktV']/text[@accessiblerole='Text']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-			<AttributeValue>
-			</AttributeValue>
-		</setvaluerecorditem>
+		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keyitem
+		action="Press"
+		capsLock="True"
+		data="Delete"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		scancode="0"
+		searchpropertyid="5448cbde-81e0-48e5-bc5d-bf886909b4a6"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keyitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keysequenceitem
 		KeySequence="200016"
 		duration="20ms"
@@ -102,6 +155,15 @@ mode="Global">
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="Tab"
@@ -117,6 +179,15 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</keyitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keysequenceitem
 		KeySequence="{NumPad2}{NumPad0}{NumPad0}{NumPad0}{NumPad1}{NumPad7}"
 		duration="20ms"
@@ -143,6 +214,15 @@ mode="Global">
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="Tab"
@@ -158,6 +238,15 @@ mode="Global">
 			<bindings>
 			</bindings>
 		</keyitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"

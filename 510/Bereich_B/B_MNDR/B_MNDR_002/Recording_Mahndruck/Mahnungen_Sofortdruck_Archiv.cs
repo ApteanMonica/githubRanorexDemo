@@ -105,41 +105,65 @@ namespace B_MNDR_002.Recording_Mahndruck
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '' on item 'FrmMahnDruck.Text_Konto_von'.", repo.FrmMahnDruck.Text_Konto_vonInfo, new RecordItemIndex(0));
-            repo.FrmMahnDruck.Text_Konto_von.Element.SetAttributeValue("Text", "");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMahnDruck.Text_Konto_von' at Center.", repo.FrmMahnDruck.Text_Konto_vonInfo, new RecordItemIndex(0));
+            repo.FrmMahnDruck.Text_Konto_von.Click();
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '' on item 'FrmMahnDruck.Text_Konto_bis'.", repo.FrmMahnDruck.Text_Konto_bisInfo, new RecordItemIndex(1));
-            repo.FrmMahnDruck.Text_Konto_bis.Element.SetAttributeValue("Text", "");
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kunde_1' with focus on 'FrmMahnDruck.Text_Konto_von'.", repo.FrmMahnDruck.Text_Konto_vonInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FrmMahnDruck.Text_Konto_von' at Center.", repo.FrmMahnDruck.Text_Konto_vonInfo, new RecordItemIndex(2));
+            repo.FrmMahnDruck.Text_Konto_von.DoubleClick();
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(3));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(4));
+            Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(5));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kunde_1' with focus on 'FrmMahnDruck.Text_Konto_von'.", repo.FrmMahnDruck.Text_Konto_vonInfo, new RecordItemIndex(6));
             repo.FrmMahnDruck.Text_Konto_von.PressKeys(Kunde_1);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(7));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kunde_2' with focus on 'FrmMahnDruck.Text_Konto_bis'.", repo.FrmMahnDruck.Text_Konto_bisInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(9));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kunde_2' with focus on 'FrmMahnDruck.Text_Konto_bis'.", repo.FrmMahnDruck.Text_Konto_bisInfo, new RecordItemIndex(10));
             repo.FrmMahnDruck.Text_Konto_bis.EnsureVisible();
             Keyboard.Press(Kunde_2);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(11));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(12));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kunde_1) on item 'FrmMahnDruck.Text_Konto_von'.", repo.FrmMahnDruck.Text_Konto_vonInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(13));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kunde_1) on item 'FrmMahnDruck.Text_Konto_von'.", repo.FrmMahnDruck.Text_Konto_vonInfo, new RecordItemIndex(14));
             Validate.AttributeEqual(repo.FrmMahnDruck.Text_Konto_vonInfo, "Text", Kunde_1);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kunde_2) on item 'FrmMahnDruck.Text_Konto_bis'.", repo.FrmMahnDruck.Text_Konto_bisInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kunde_2) on item 'FrmMahnDruck.Text_Konto_bis'.", repo.FrmMahnDruck.Text_Konto_bisInfo, new RecordItemIndex(15));
             Validate.AttributeEqual(repo.FrmMahnDruck.Text_Konto_bisInfo, "Text", Kunde_2);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmMahnDruck.Text_Mahnstufe_von'.", repo.FrmMahnDruck.Text_Mahnstufe_vonInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmMahnDruck.Text_Mahnstufe_von'.", repo.FrmMahnDruck.Text_Mahnstufe_vonInfo, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.FrmMahnDruck.Text_Mahnstufe_vonInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmMahnDruck.Text_Mahnstufe_Bis'.", repo.FrmMahnDruck.Text_Mahnstufe_BisInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'FrmMahnDruck.Text_Mahnstufe_Bis'.", repo.FrmMahnDruck.Text_Mahnstufe_BisInfo, new RecordItemIndex(17));
             Validate.AttributeEqual(repo.FrmMahnDruck.Text_Mahnstufe_BisInfo, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMahnDruck.PbDruckenDrucken' at Center.", repo.FrmMahnDruck.PbDruckenDruckenInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmMahnDruck.PbDruckenDrucken' at Center.", repo.FrmMahnDruck.PbDruckenDruckenInfo, new RecordItemIndex(18));
             repo.FrmMahnDruck.PbDruckenDrucken.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BMNDR.Sofortdruck' at Center.", repo.BMNDR.SofortdruckInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BMNDR.Sofortdruck' at Center.", repo.BMNDR.SofortdruckInfo, new RecordItemIndex(19));
             repo.BMNDR.Sofortdruck.Click();
             
         }

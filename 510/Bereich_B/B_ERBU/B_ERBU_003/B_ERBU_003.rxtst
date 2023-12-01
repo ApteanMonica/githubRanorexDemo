@@ -39,22 +39,10 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="ER_5"
+					dataname="ER_1"
 					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
-					variableid="c3d3871a-f4d1-4cb4-ae5d-736fc3d45417"
-					variablename="ER_5">
-					</var>
-					<var
-					dataname="ER_4"
-					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
-					variableid="91ba56c1-1299-4184-86e2-46931964fdcb"
-					variablename="ER_4">
-					</var>
-					<var
-					dataname="ER_3"
-					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
-					variableid="2a3d23c8-54ac-4bd1-affe-e12f765d703f"
-					variablename="ER_3">
+					variableid="145f128c-192c-4c3d-8542-d98c46e42b93"
+					variablename="ER_1">
 					</var>
 					<var
 					dataname="ER_2"
@@ -63,10 +51,22 @@
 					variablename="ER_2">
 					</var>
 					<var
-					dataname="ER_1"
+					dataname="ER_3"
 					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
-					variableid="145f128c-192c-4c3d-8542-d98c46e42b93"
-					variablename="ER_1">
+					variableid="2a3d23c8-54ac-4bd1-affe-e12f765d703f"
+					variablename="ER_3">
+					</var>
+					<var
+					dataname="ER_4"
+					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
+					variableid="91ba56c1-1299-4184-86e2-46931964fdcb"
+					variablename="ER_4">
+					</var>
+					<var
+					dataname="ER_5"
+					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
+					variableid="c3d3871a-f4d1-4cb4-ae5d-736fc3d45417"
+					variablename="ER_5">
 					</var>
 				</databinding>
 			</testmodule>
@@ -133,16 +133,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Jahr"
-					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
-					variableid="fce6c7c2-85b7-4802-a39e-20647fc270a6"
-					variablename="Jahr">
-					</var>
-					<var
 					dataname="Monat_3"
 					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
 					variableid="9c7d6420-f1c9-409e-811e-d956db78860f"
 					variablename="Monat_3">
+					</var>
+					<var
+					dataname="Jahr"
+					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
+					variableid="fce6c7c2-85b7-4802-a39e-20647fc270a6"
+					variablename="Jahr">
 					</var>
 				</databinding>
 				<missingdatabinding>
@@ -251,7 +251,7 @@
 				</description>
 				<parameters>
 					<param
-					name="C:\Testdaten\Allgemein\UserCode\datenbank.txt"
+					name="Startfile"
 					value="C:\Testdaten\Allgemein\Start.bat">
 					</param>
 					<param
@@ -313,6 +313,10 @@
 					<param
 					name="Monat_3"
 					value="3">
+					</param>
+					<param
+					name="Monat_03"
+					value="03">
 					</param>
 					<param
 					name="SQL_Select_B_EXOP"
@@ -631,10 +635,10 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Monat_3"
+					dataname="Programm"
 					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
-					variableid="9b3e8a10-a446-48ee-907e-836014e8da0c"
-					variablename="Monat_3">
+					variableid="02df27fd-417f-48e4-a7a1-dfdcf4ac0116"
+					variablename="Programm">
 					</var>
 					<var
 					dataname="Jahr"
@@ -643,16 +647,22 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';">
 					variablename="Jahr">
 					</var>
 					<var
-					dataname="Programm"
+					dataname="Monat_3"
 					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
-					variableid="02df27fd-417f-48e4-a7a1-dfdcf4ac0116"
-					variablename="Programm">
+					variableid="9b3e8a10-a446-48ee-907e-836014e8da0c"
+					variablename="Monat_3">
 					</var>
 					<var
-					dataname="C:\Testdaten\Allgemein\UserCode\datenbank.txt"
+					dataname="Startfile"
 					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
 					variableid="dd3ec220-aa8b-480f-aaac-d82835ac7bb1"
 					variablename="Startfile">
+					</var>
+					<var
+					dataname="Monat_03"
+					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
+					variableid="58f153db-7a01-4293-be9c-673fda9efd84"
+					variablename="Monat_03">
 					</var>
 				</databinding>
 				<missingdatabinding>
@@ -687,16 +697,10 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="ER_4"
+					dataname="ER_1"
 					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
-					variableid="1ef57147-190f-49b4-88b1-aa876e4ebb26"
-					variablename="ER_4">
-					</var>
-					<var
-					dataname="ER_3"
-					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
-					variableid="98bfad98-0ff0-456a-85e1-0dd9cd031248"
-					variablename="ER_3">
+					variableid="5ec928bc-9820-4b35-be67-5da0625d0012"
+					variablename="ER_1">
 					</var>
 					<var
 					dataname="ER_2"
@@ -705,22 +709,28 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';">
 					variablename="ER_2">
 					</var>
 					<var
-					dataname="ER_1"
+					dataname="ER_3"
 					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
-					variableid="5ec928bc-9820-4b35-be67-5da0625d0012"
-					variablename="ER_1">
+					variableid="98bfad98-0ff0-456a-85e1-0dd9cd031248"
+					variablename="ER_3">
 					</var>
 					<var
-					dataname="Tagesdatum"
+					dataname="ER_4"
 					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
-					variableid="7fa3a513-85ff-4e24-b9f7-0010b653528b"
-					variablename="Tagesdatum">
+					variableid="1ef57147-190f-49b4-88b1-aa876e4ebb26"
+					variablename="ER_4">
 					</var>
 					<var
 					dataname="ER_5"
 					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
 					variableid="aa2c5f22-9b8e-4977-b602-548eff7d6bf6"
 					variablename="ER_5">
+					</var>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
+					variableid="7fa3a513-85ff-4e24-b9f7-0010b653528b"
+					variablename="Tagesdatum">
 					</var>
 				</databinding>
 			</testmodule>
@@ -731,16 +741,16 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';">
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Jahr"
-					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
-					variableid="0de71f2a-8469-4c62-9807-59c8c43ebacb"
-					variablename="Jahr">
-					</var>
-					<var
 					dataname="Monat_3"
 					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
 					variableid="bc15bb32-4d20-4d46-9934-7999c700fb54"
 					variablename="Monat_3">
+					</var>
+					<var
+					dataname="Jahr"
+					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
+					variableid="0de71f2a-8469-4c62-9807-59c8c43ebacb"
+					variablename="Jahr">
 					</var>
 				</databinding>
 			</testmodule>
@@ -757,7 +767,7 @@ AND exop_belegnr BETWEEN '2300001' AND '2300005';">
 					variablename="Programm_2">
 					</var>
 					<var
-					dataname="C:\Testdaten\Allgemein\UserCode\datenbank.txt"
+					dataname="Startfile"
 					datasourceid="78605690-1497-4eee-91dc-b78dcdf0becd"
 					variableid="69c507f1-4e91-4818-8244-4f6f368b6b3b"
 					variablename="Startfile">

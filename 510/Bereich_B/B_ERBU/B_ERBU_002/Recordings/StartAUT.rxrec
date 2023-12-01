@@ -140,6 +140,15 @@ mode="Desktop">
 				</robustPath>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keysequenceitem
 		KeySequence=""
 		duration="20ms"
@@ -165,6 +174,15 @@ mode="Desktop">
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="Tab"
@@ -180,6 +198,15 @@ mode="Desktop">
 			<bindings>
 			</bindings>
 		</keyitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keysequenceitem
 		KeySequence=""
 		duration="20ms"
@@ -205,6 +232,15 @@ mode="Desktop">
 				</robustPath>
 			</info>
 		</keysequenceitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<keyitem
 		action="Press"
 		data="Tab"
@@ -220,6 +256,64 @@ mode="Desktop">
 			<bindings>
 			</bindings>
 		</keyitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="724397ad-195e-4d97-b3f3-d2a12a73628f">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Jahr">
+				</binding>
+			</bindings>
+			<info
+			id="768f95aa-c382-40c3-a4cc-01aeef202bcb"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgFirmaPeriode']/text[@controlname='dfJahrbezJ']/text[@accessiblename='Jahr:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="724397ad-195e-4d97-b3f3-d2a12a73628f">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Monat">
+				</binding>
+			</bindings>
+			<info
+			id="7a00a2f0-f51a-4e8c-9c68-97dc6a4419a3"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='dlgFirmaPeriode']/text[@controlname='dfPeriodeJ']/text[@accessiblename='Monat:']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 		<mouseitem
 		action="Click"
 		button="Left"

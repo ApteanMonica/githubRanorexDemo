@@ -147,56 +147,83 @@ namespace B_ERBU_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblErbu.FlexGrid' at Center.", repo.TblErbu.FlexGridInfo, new RecordItemIndex(0));
             repo.TblErbu.FlexGrid.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Insert' Press.", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(1));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Insert' Press.", new RecordItemIndex(2));
             Keyboard.Press(System.Windows.Forms.Keys.Insert, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblErbu.FlexGrid1.ColAdrNrRow1' at Center.", repo.TblErbu.FlexGrid1.ColAdrNrRow1Info, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(3));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblErbu.FlexGrid1.ColAdrNrRow1' at Center.", repo.TblErbu.FlexGrid1.ColAdrNrRow1Info, new RecordItemIndex(4));
             repo.TblErbu.FlexGrid1.ColAdrNrRow1.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Lieferant' with focus on 'TblErbu.FlexGrid1.ColAdrNrRow1'.", repo.TblErbu.FlexGrid1.ColAdrNrRow1Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(5));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Lieferant' with focus on 'TblErbu.FlexGrid1.ColAdrNrRow1'.", repo.TblErbu.FlexGrid1.ColAdrNrRow1Info, new RecordItemIndex(6));
             repo.TblErbu.FlexGrid1.ColAdrNrRow1.EnsureVisible();
             Keyboard.Press(Lieferant);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}'.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(7));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}'.", new RecordItemIndex(8));
             Keyboard.Press("{Tab}{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Lieferant) on item 'TblErbu.FlexGrid1.ColAdrNrRow1'.", repo.TblErbu.FlexGrid1.ColAdrNrRow1Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(9));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Lieferant) on item 'TblErbu.FlexGrid1.ColAdrNrRow1'.", repo.TblErbu.FlexGrid1.ColAdrNrRow1Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.TblErbu.FlexGrid1.ColAdrNrRow1Info, "Text", Lieferant);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblErbu.FlexGrid1.ColErbuDteingangRow1'.", repo.TblErbu.FlexGrid1.ColErbuDteingangRow1Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblErbu.FlexGrid1.ColErbuDteingangRow1'.", repo.TblErbu.FlexGrid1.ColErbuDteingangRow1Info, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.TblErbu.FlexGrid1.ColErbuDteingangRow1Info, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Rechnungsnummer1' with focus on 'TblErbu.FlexGrid1.ColErbuRechnrRow1'.", repo.TblErbu.FlexGrid1.ColErbuRechnrRow1Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Rechnungsnummer1' with focus on 'TblErbu.FlexGrid1.ColErbuRechnrRow1'.", repo.TblErbu.FlexGrid1.ColErbuRechnrRow1Info, new RecordItemIndex(12));
             repo.TblErbu.FlexGrid1.ColErbuRechnrRow1.EnsureVisible();
             Keyboard.Press(Rechnungsnummer1);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(13));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(14));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Rechnungsnummer1) on item 'TblErbu.FlexGrid1.ColErbuRechnrRow1'.", repo.TblErbu.FlexGrid1.ColErbuRechnrRow1Info, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(15));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Rechnungsnummer1) on item 'TblErbu.FlexGrid1.ColErbuRechnrRow1'.", repo.TblErbu.FlexGrid1.ColErbuRechnrRow1Info, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.TblErbu.FlexGrid1.ColErbuRechnrRow1Info, "Text", Rechnungsnummer1);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Rechnungsdatum1' with focus on 'TblErbu.FlexGrid1.ColErbuDtrechRow1'.", repo.TblErbu.FlexGrid1.ColErbuDtrechRow1Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Rechnungsdatum1' with focus on 'TblErbu.FlexGrid1.ColErbuDtrechRow1'.", repo.TblErbu.FlexGrid1.ColErbuDtrechRow1Info, new RecordItemIndex(17));
             repo.TblErbu.FlexGrid1.ColErbuDtrechRow1.EnsureVisible();
             Keyboard.Press(Rechnungsdatum1);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(18));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Rechnungsdatum1) on item 'TblErbu.FlexGrid1.ColErbuDtrechRow1'.", repo.TblErbu.FlexGrid1.ColErbuDtrechRow1Info, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Rechnungsdatum1) on item 'TblErbu.FlexGrid1.ColErbuDtrechRow1'.", repo.TblErbu.FlexGrid1.ColErbuDtrechRow1Info, new RecordItemIndex(19));
             Validate.AttributeEqual(repo.TblErbu.FlexGrid1.ColErbuDtrechRow1Info, "Text", Rechnungsdatum1);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Rechnungsbetrag1' with focus on 'TblErbu.FlexGrid1.ColErbuBetragRow1'.", repo.TblErbu.FlexGrid1.ColErbuBetragRow1Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Rechnungsbetrag1' with focus on 'TblErbu.FlexGrid1.ColErbuBetragRow1'.", repo.TblErbu.FlexGrid1.ColErbuBetragRow1Info, new RecordItemIndex(20));
             repo.TblErbu.FlexGrid1.ColErbuBetragRow1.EnsureVisible();
             Keyboard.Press(Rechnungsbetrag1);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Insert' Press.", new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(21));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Insert' Press.", new RecordItemIndex(22));
             Keyboard.Press(System.Windows.Forms.Keys.Insert, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (AccessibleValue~$Rechnungsbetrag1) on item 'TblErbu.FlexGrid1.ColErbuBetragRow1'.", repo.TblErbu.FlexGrid1.ColErbuBetragRow1Info, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(23));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (AccessibleValue~$Rechnungsbetrag1) on item 'TblErbu.FlexGrid1.ColErbuBetragRow1'.", repo.TblErbu.FlexGrid1.ColErbuBetragRow1Info, new RecordItemIndex(24));
             Validate.AttributeRegex(repo.TblErbu.FlexGrid1.ColErbuBetragRow1Info, "AccessibleValue", new Regex(Rechnungsbetrag1));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'([0-9]{6})$') on item 'TblErbu.FlexGrid1.ColErbuNrRow1'.", repo.TblErbu.FlexGrid1.ColErbuNrRow1Info, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'([0-9]{6})$') on item 'TblErbu.FlexGrid1.ColErbuNrRow1'.", repo.TblErbu.FlexGrid1.ColErbuNrRow1Info, new RecordItemIndex(25));
             Validate.AttributeRegex(repo.TblErbu.FlexGrid1.ColErbuNrRow1Info, "Text", new Regex("([0-9]{6})$"));
             
         }

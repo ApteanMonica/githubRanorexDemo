@@ -55,6 +55,18 @@ namespace B_MNDR_003.Recordings
 
 #region Variables
 
+        string _Erstellungsdatum;
+
+        /// <summary>
+        /// Gets or sets the value of variable Erstellungsdatum.
+        /// </summary>
+        [TestVariable("40113a8c-16f8-4e7f-ba1b-0c78e8a73dda")]
+        public string Erstellungsdatum
+        {
+            get { return _Erstellungsdatum; }
+            set { _Erstellungsdatum = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable Beschreibung.
         /// </summary>
@@ -63,16 +75,6 @@ namespace B_MNDR_003.Recordings
         {
             get { return repo.Beschreibung; }
             set { repo.Beschreibung = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Erstellungsdatum.
-        /// </summary>
-        [TestVariable("40113a8c-16f8-4e7f-ba1b-0c78e8a73dda")]
-        public string Erstellungsdatum
-        {
-            get { return repo.Erstellungsdatum; }
-            set { repo.Erstellungsdatum = value; }
         }
 
 #endregion
