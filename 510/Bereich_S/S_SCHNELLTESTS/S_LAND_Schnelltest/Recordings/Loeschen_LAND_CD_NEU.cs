@@ -24,30 +24,29 @@ namespace S_LAND_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Loeschen_LAND_CD_ALT recording.
+    ///The Loeschen_LAND_CD_NEU recording.
     /// </summary>
-    [TestModule("000e7c00-38c9-48c1-8c4c-55d47b4c5273", ModuleType.Recording, 1)]
-    public partial class Loeschen_LAND_CD_ALT : ITestModule
+    [TestModule("c609edc0-d6cb-4a40-bbe9-4117996fe6c8", ModuleType.Recording, 1)]
+    public partial class Loeschen_LAND_CD_NEU : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_LAND_Schnelltest.S_LAND_SchnelltestRepository repository.
         /// </summary>
         public static global::S_LAND_Schnelltest.S_LAND_SchnelltestRepository repo = global::S_LAND_Schnelltest.S_LAND_SchnelltestRepository.Instance;
 
-        static Loeschen_LAND_CD_ALT instance = new Loeschen_LAND_CD_ALT();
+        static Loeschen_LAND_CD_NEU instance = new Loeschen_LAND_CD_NEU();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Loeschen_LAND_CD_ALT()
+        public Loeschen_LAND_CD_NEU()
         {
-            LAND_CD_ALT = "AT";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Loeschen_LAND_CD_ALT Instance
+        public static Loeschen_LAND_CD_NEU Instance
         {
             get { return instance; }
         }
@@ -55,13 +54,13 @@ namespace S_LAND_Schnelltest.Recordings
 #region Variables
 
         /// <summary>
-        /// Gets or sets the value of variable LAND_CD_ALT.
+        /// Gets or sets the value of variable LAND_CD_NEU.
         /// </summary>
-        [TestVariable("d7be6f86-d1d8-46e4-96c5-b04d2b0a9531")]
-        public string LAND_CD_ALT
+        [TestVariable("908b91a7-c3fd-4c9e-8ca4-a53208564f63")]
+        public string LAND_CD_NEU
         {
-            get { return repo.LAND_CD_ALT; }
-            set { repo.LAND_CD_ALT = value; }
+            get { return repo.LAND_CD_NEU; }
+            set { repo.LAND_CD_NEU = value; }
         }
 
 #endregion
@@ -90,14 +89,20 @@ namespace S_LAND_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblLaender.Zeile_mit_LAND_CD_ALT.Colum0_mit_LAND_CD_ALT' at Center.", repo.TblLaender.Zeile_mit_LAND_CD_ALT.Colum0_mit_LAND_CD_ALTInfo, new RecordItemIndex(0));
-            repo.TblLaender.Zeile_mit_LAND_CD_ALT.Colum0_mit_LAND_CD_ALT.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblLaender.Zeile_mit_LAND_CD_NEU.Column0_mit_LAND_CD_NEU' at Center.", repo.TblLaender.Zeile_mit_LAND_CD_NEU.Column0_mit_LAND_CD_NEUInfo, new RecordItemIndex(0));
+            repo.TblLaender.Zeile_mit_LAND_CD_NEU.Column0_mit_LAND_CD_NEU.Click();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(1));
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblLaender.PbDataAccessSave' at Center.", repo.TblLaender.PbDataAccessSaveInfo, new RecordItemIndex(2));
             repo.TblLaender.PbDataAccessSave.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblLaender.PbDataAccessLoad' at Center.", repo.TblLaender.PbDataAccessLoadInfo, new RecordItemIndex(3));
+            repo.TblLaender.PbDataAccessLoad.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating NotExists on item 'TblLaender.Zeile_mit_LAND_CD_NEU.Row_mit_LAND_CD_NEU'.", repo.TblLaender.Zeile_mit_LAND_CD_NEU.Row_mit_LAND_CD_NEUInfo, new RecordItemIndex(4));
+            Validate.NotExists(repo.TblLaender.Zeile_mit_LAND_CD_NEU.Row_mit_LAND_CD_NEUInfo);
             
         }
 
