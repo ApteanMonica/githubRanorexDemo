@@ -85,17 +85,65 @@
     <Compile Include="Program.cs">
       <id>8a1e56f5-3a6c-4847-af60-cc4fdf396569</id>
     </Compile>
-    <Compile Include="Recordings\CloseAUT.cs">
-      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+    <Compile Include="Recordings\Aenderung_Einstellungen_Land.cs">
+      <BoundTo>c1fbd3fc-cc0b-435d-9e6b-24c35b040fd9</BoundTo>
+      <DependentUpon>Aenderung_Einstellungen_Land.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5757c50f-15ca-449f-bfb4-8eda94d107a9</id>
+    </Compile>
+    <Compile Include="Recordings\Aenderung_Einstellungen_Land.UserCode.cs">
+      <BoundTo>c1fbd3fc-cc0b-435d-9e6b-24c35b040fd9</BoundTo>
+      <DependentUpon>Aenderung_Einstellungen_Land.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9abcc03f-a7fa-436c-a44a-39f8afa08691</id>
+    </Compile>
+    <Compile Include="Recordings\CloseLAND.cs">
+      <DependentUpon>CloseLAND.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>7cecaeee-e51c-45b4-8e94-5cfe1c9f3ced</id>
       <BoundTo>d3ecbe91-e5a7-4166-a155-04bcac9f0487</BoundTo>
     </Compile>
-    <Compile Include="Recordings\CloseAUT.UserCode.cs">
-      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+    <Compile Include="Recordings\CloseLAND.UserCode.cs">
+      <DependentUpon>CloseLAND.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>ca55192b-6cb3-4cbc-9c44-60773a80df61</id>
       <BoundTo>d3ecbe91-e5a7-4166-a155-04bcac9f0487</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_LAND_CD_ALT.cs">
+      <BoundTo>81029d24-f8a7-4641-b407-a786591d793a</BoundTo>
+      <DependentUpon>Loeschen_LAND_CD_ALT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0ac9614c-2abe-4aa6-9047-61b92506bceb</id>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_LAND_CD_ALT.UserCode.cs">
+      <BoundTo>81029d24-f8a7-4641-b407-a786591d793a</BoundTo>
+      <DependentUpon>Loeschen_LAND_CD_ALT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c4404f6e-e1bb-4181-9fb0-77b097bc5b40</id>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_LAND_CD_NEU.cs">
+      <BoundTo>15ca3ad4-9d0b-4538-ac61-3b1e8091ea31</BoundTo>
+      <DependentUpon>Loeschen_LAND_CD_NEU.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>86f7495b-5c3a-46ed-8d6c-353450916350</id>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_LAND_CD_NEU.UserCode.cs">
+      <BoundTo>15ca3ad4-9d0b-4538-ac61-3b1e8091ea31</BoundTo>
+      <DependentUpon>Loeschen_LAND_CD_NEU.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3e4ebf23-404d-4afe-b9a7-31633e7334e8</id>
+    </Compile>
+    <Compile Include="Recordings\Meldung_Loeschen_Datensatz_nicht_moeglich.cs">
+      <BoundTo>7afd7eb4-af32-496b-9b64-def6ea3a541c</BoundTo>
+      <DependentUpon>Meldung_Loeschen_Datensatz_nicht_moeglich.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>837799ed-81ec-4196-8f18-06d1bdbfeda7</id>
+    </Compile>
+    <Compile Include="Recordings\Meldung_Loeschen_Datensatz_nicht_moeglich.UserCode.cs">
+      <BoundTo>7afd7eb4-af32-496b-9b64-def6ea3a541c</BoundTo>
+      <DependentUpon>Meldung_Loeschen_Datensatz_nicht_moeglich.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4ee8284c-f4e4-44ef-b6f5-fc848b44fec1</id>
     </Compile>
     <Compile Include="Recordings\Neuanlage_Land.cs">
       <BoundTo>b413ac8e-75b1-4e09-bcd4-24c85ea02014</BoundTo>
@@ -132,10 +180,30 @@
     <None Include="app.config">
       <id>72d82145-4b25-4c0b-a4d4-004dee9a09e5</id>
     </None>
-    <None Include="Recordings\CloseAUT.rxrec">
+    <None Include="Recordings\Aenderung_Einstellungen_Land.rxrec">
+      <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
+      <id>c1fbd3fc-cc0b-435d-9e6b-24c35b040fd9</id>
+      <recordtableid>af098cdc-9ee0-4a64-af6e-c473babfcbbb</recordtableid>
+    </None>
+    <None Include="Recordings\CloseLAND.rxrec">
       <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
       <id>d3ecbe91-e5a7-4166-a155-04bcac9f0487</id>
       <recordtableid>9d9ac263-6440-4bbb-9cee-4cfd65682447</recordtableid>
+    </None>
+    <None Include="Recordings\Loeschen_LAND_CD_ALT.rxrec">
+      <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
+      <id>81029d24-f8a7-4641-b407-a786591d793a</id>
+      <recordtableid>000e7c00-38c9-48c1-8c4c-55d47b4c5273</recordtableid>
+    </None>
+    <None Include="Recordings\Loeschen_LAND_CD_NEU.rxrec">
+      <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
+      <id>15ca3ad4-9d0b-4538-ac61-3b1e8091ea31</id>
+      <recordtableid>c609edc0-d6cb-4a40-bbe9-4117996fe6c8</recordtableid>
+    </None>
+    <None Include="Recordings\Meldung_Loeschen_Datensatz_nicht_moeglich.rxrec">
+      <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
+      <id>7afd7eb4-af32-496b-9b64-def6ea3a541c</id>
+      <recordtableid>f420f435-9215-4455-8178-be71cc08cf4a</recordtableid>
     </None>
     <None Include="Recordings\Neuanlage_Land.rxrec">
       <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>

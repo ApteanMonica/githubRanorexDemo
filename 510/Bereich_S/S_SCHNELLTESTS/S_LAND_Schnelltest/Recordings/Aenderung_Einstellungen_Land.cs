@@ -24,31 +24,29 @@ namespace S_LAND_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Neuanlage_Land recording.
+    ///The Aenderung_Einstellungen_Land recording.
     /// </summary>
-    [TestModule("3f1eb06f-04cc-40f2-8dc0-349dfb64776f", ModuleType.Recording, 1)]
-    public partial class Neuanlage_Land : ITestModule
+    [TestModule("af098cdc-9ee0-4a64-af6e-c473babfcbbb", ModuleType.Recording, 1)]
+    public partial class Aenderung_Einstellungen_Land : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_LAND_Schnelltest.S_LAND_SchnelltestRepository repository.
         /// </summary>
         public static global::S_LAND_Schnelltest.S_LAND_SchnelltestRepository repo = global::S_LAND_Schnelltest.S_LAND_SchnelltestRepository.Instance;
 
-        static Neuanlage_Land instance = new Neuanlage_Land();
+        static Aenderung_Einstellungen_Land instance = new Aenderung_Einstellungen_Land();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Neuanlage_Land()
+        public Aenderung_Einstellungen_Land()
         {
-            LAND_CD_NEU = "A1";
-            LAND_BEZ_NEU = "Wonderland";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Neuanlage_Land Instance
+        public static Aenderung_Einstellungen_Land Instance
         {
             get { return instance; }
         }
@@ -58,21 +56,11 @@ namespace S_LAND_Schnelltest.Recordings
         /// <summary>
         /// Gets or sets the value of variable LAND_CD_NEU.
         /// </summary>
-        [TestVariable("eccf2229-581d-4189-bf5a-c5383e5996b7")]
+        [TestVariable("908b91a7-c3fd-4c9e-8ca4-a53208564f63")]
         public string LAND_CD_NEU
         {
             get { return repo.LAND_CD_NEU; }
             set { repo.LAND_CD_NEU = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable LAND_BEZ_NEU.
-        /// </summary>
-        [TestVariable("08a0a871-b538-44e6-94fa-898e89386ae1")]
-        public string LAND_BEZ_NEU
-        {
-            get { return repo.LAND_BEZ_NEU; }
-            set { repo.LAND_BEZ_NEU = value; }
         }
 
 #endregion
@@ -101,32 +89,29 @@ namespace S_LAND_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Insert}'.", new RecordItemIndex(0));
-            Keyboard.Press("{Insert}");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblLaender.Maximieren' at Center.", repo.TblLaender.MaximierenInfo, new RecordItemIndex(0));
+            repo.TblLaender.Maximieren.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$LAND_CD_NEU'.", new RecordItemIndex(1));
-            Keyboard.Press(LAND_CD_NEU);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblLaender.Zeile_mit_LAND_CD_NEU.ColSepaTeiln_CD_NEU' at Center.", repo.TblLaender.Zeile_mit_LAND_CD_NEU.ColSepaTeiln_CD_NEUInfo, new RecordItemIndex(1));
+            repo.TblLaender.Zeile_mit_LAND_CD_NEU.ColSepaTeiln_CD_NEU.Click();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$LAND_BEZ_NEU'.", new RecordItemIndex(3));
-            Keyboard.Press(LAND_BEZ_NEU);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'WON' with focus on 'TblLaender.Zeile_mit_LAND_CD_NEU.ColLandKfzCode_CD_NEU'.", repo.TblLaender.Zeile_mit_LAND_CD_NEU.ColLandKfzCode_CD_NEUInfo, new RecordItemIndex(3));
+            repo.TblLaender.Zeile_mit_LAND_CD_NEU.ColLandKfzCode_CD_NEU.PressKeys("WON");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
-            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblLaender.PbDataAccessSave' at Center.", repo.TblLaender.PbDataAccessSaveInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblLaender.PbDataAccessSave' at Center.", repo.TblLaender.PbDataAccessSaveInfo, new RecordItemIndex(4));
             repo.TblLaender.PbDataAccessSave.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblLaender.PbDataAccessLoad' at Center.", repo.TblLaender.PbDataAccessLoadInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblLaender.PbDataAccessLoad' at Center.", repo.TblLaender.PbDataAccessLoadInfo, new RecordItemIndex(5));
             repo.TblLaender.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LAND_CD_NEU) on item 'TblLaender.Zeile_mit_LAND_CD_NEU.ColLandCd_CD_NEU'.", repo.TblLaender.Zeile_mit_LAND_CD_NEU.ColLandCd_CD_NEUInfo, new RecordItemIndex(7));
-            Validate.AttributeEqual(repo.TblLaender.Zeile_mit_LAND_CD_NEU.ColLandCd_CD_NEUInfo, "Text", LAND_CD_NEU);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='True') on item 'TblLaender.Zeile_mit_LAND_CD_NEU.ColSepaTeiln_CD_NEU'.", repo.TblLaender.Zeile_mit_LAND_CD_NEU.ColSepaTeiln_CD_NEUInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.TblLaender.Zeile_mit_LAND_CD_NEU.ColSepaTeiln_CD_NEUInfo, "AccessibleValue", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$LAND_BEZ_NEU) on item 'TblLaender.Zeile_mit_LAND_CD_NEU.ColLandBez_CD_NEU'.", repo.TblLaender.Zeile_mit_LAND_CD_NEU.ColLandBez_CD_NEUInfo, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.TblLaender.Zeile_mit_LAND_CD_NEU.ColLandBez_CD_NEUInfo, "Text", LAND_BEZ_NEU);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='WON') on item 'TblLaender.Zeile_mit_LAND_CD_NEU.ColLandKfzCode_CD_NEU'.", repo.TblLaender.Zeile_mit_LAND_CD_NEU.ColLandKfzCode_CD_NEUInfo, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.TblLaender.Zeile_mit_LAND_CD_NEU.ColLandKfzCode_CD_NEUInfo, "Text", "WON");
             
         }
 

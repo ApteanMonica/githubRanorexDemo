@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9d9ac263-6440-4bbb-9cee-4cfd65682447"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseLAND"
+	namespace="S_LAND_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="cfcaec0f-0ae3-48bb-a512-72383a9c74fe">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="df6a894e-ab9d-4cce-842b-a7f76e91c9bc"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblLänder']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="2229f8b9-dfc7-4400-b0f2-1ad1ad2f17b1"
+	name="S_LAND_SchnelltestRepository"
+	relativepath="..\S_LAND_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_LAND_SchnelltestRepository"
+		namespace="S_LAND_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="29e1d00d-4956-4400-b6eb-36fe3aed7db9"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseLAND.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
