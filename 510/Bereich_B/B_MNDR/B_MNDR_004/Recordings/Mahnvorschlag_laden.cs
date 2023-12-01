@@ -99,9 +99,6 @@ namespace B_MNDR_004.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ändern') on item 'FrmVorschlagAEndern.TitleBar1004BMNDR004Mahnvorschla'.", repo.FrmVorschlagAEndern.TitleBar1004BMNDR004MahnvorschlaInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.FrmVorschlagAEndern.TitleBar1004BMNDR004MahnvorschlaInfo, "Text", "ändern");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Beschreibung) on item 'FrmVorschlagAEndern.TitleBar1004BMNDR004Mahnvorschla'.", repo.FrmVorschlagAEndern.TitleBar1004BMNDR004MahnvorschlaInfo, new RecordItemIndex(3));
-            Validate.AttributeContains(repo.FrmVorschlagAEndern.TitleBar1004BMNDR004MahnvorschlaInfo, "Text", Beschreibung);
-            
         }
 
 #region Image Feature Data

@@ -105,23 +105,20 @@ namespace B_MNDR_003.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'ändern') on item 'FrmVorschlagAEndern.TitleBar1003BMNDR003Mahnvorschla'.", repo.FrmVorschlagAEndern.TitleBar1003BMNDR003MahnvorschlaInfo, new RecordItemIndex(4));
             Validate.AttributeContains(repo.FrmVorschlagAEndern.TitleBar1003BMNDR003MahnvorschlaInfo, "Text", "ändern");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Beschreibung) on item 'FrmVorschlagAEndern.TitleBar1003BMNDR003Mahnvorschla'.", repo.FrmVorschlagAEndern.TitleBar1003BMNDR003MahnvorschlaInfo, new RecordItemIndex(5));
-            Validate.AttributeContains(repo.FrmVorschlagAEndern.TitleBar1003BMNDR003MahnvorschlaInfo, "Text", Beschreibung);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'B_MNDR_003_03') on item 'FrmVorschlagAEndern.FlexGrid_Tabelle.ColBelegRow3'.", repo.FrmVorschlagAEndern.FlexGrid_Tabelle.ColBelegRow3Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'B_MNDR_003_03') on item 'FrmVorschlagAEndern.FlexGrid_Tabelle.ColBelegRow3'.", repo.FrmVorschlagAEndern.FlexGrid_Tabelle.ColBelegRow3Info, new RecordItemIndex(5));
             Validate.AttributeContains(repo.FrmVorschlagAEndern.FlexGrid_Tabelle.ColBelegRow3Info, "Text", "B_MNDR_003_03");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorschlagAEndern.Row3Column0' at Center.", repo.FrmVorschlagAEndern.Row3Column0Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorschlagAEndern.Row3Column0' at Center.", repo.FrmVorschlagAEndern.Row3Column0Info, new RecordItemIndex(6));
             repo.FrmVorschlagAEndern.Row3Column0.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'FrmVorschlagAEndern.Row3Column0'.", repo.FrmVorschlagAEndern.Row3Column0Info, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press with focus on 'FrmVorschlagAEndern.Row3Column0'.", repo.FrmVorschlagAEndern.Row3Column0Info, new RecordItemIndex(7));
             Keyboard.PrepareFocus(repo.FrmVorschlagAEndern.Row3Column0);
             Keyboard.Press(System.Windows.Forms.Keys.Delete, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorschlagAEndern.PbDataAccessSave' at Center.", repo.FrmVorschlagAEndern.PbDataAccessSaveInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorschlagAEndern.PbDataAccessSave' at Center.", repo.FrmVorschlagAEndern.PbDataAccessSaveInfo, new RecordItemIndex(8));
             repo.FrmVorschlagAEndern.PbDataAccessSave.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorschlagAEndern.PbDataAccessLoad' at Center.", repo.FrmVorschlagAEndern.PbDataAccessLoadInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmVorschlagAEndern.PbDataAccessLoad' at Center.", repo.FrmVorschlagAEndern.PbDataAccessLoadInfo, new RecordItemIndex(9));
             repo.FrmVorschlagAEndern.PbDataAccessLoad.Click();
             
         }

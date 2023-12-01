@@ -69,18 +69,6 @@ namespace B_MNDR_003
             set { _Beschreibung = value; }
         }
 
-        string _Erstellungsdatum = "15.03.2022";
-
-        /// <summary>
-        /// Gets or sets the value of variable Erstellungsdatum.
-        /// </summary>
-        [TestVariable("ad0f540f-1925-4012-a968-d7ef232efb67")]
-        public string Erstellungsdatum
-        {
-            get { return _Erstellungsdatum; }
-            set { _Erstellungsdatum = value; }
-        }
-
 #endregion
 
         /// <summary>
