@@ -19,12 +19,32 @@ mode="Desktop">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="CloseAUT"
+	classname="CloseLAND"
 	namespace="S_LAND_Schnelltest.Recordings">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="cfcaec0f-0ae3-48bb-a512-72383a9c74fe">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="df6a894e-ab9d-4cce-842b-a7f76e91c9bc"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblLänder']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
 	</recorditems>
 	<repository
 	id="2229f8b9-dfc7-4400-b0f2-1ad1ad2f17b1"
@@ -41,7 +61,7 @@ mode="Desktop">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		CloseAUT.UserCode.cs
+		CloseLAND.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

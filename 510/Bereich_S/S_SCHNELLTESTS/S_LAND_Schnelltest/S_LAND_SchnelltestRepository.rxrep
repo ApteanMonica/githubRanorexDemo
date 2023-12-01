@@ -22,6 +22,17 @@ name="S_LAND_SchnelltestRepository">
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="f3baaf47-4048-4265-99e6-44b7875d6d9c"
+			name="PbDataAccessSave"
+			refimgid="13314488-1730-4428-8c3e-66a494b8b53f"
+			refpath="/form[@controlname='tblLänder']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblLänder']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']
+			</item>
+			<item
 			addcaps="titlebar,accessible"
 			capname="titlebar"
 			id="df6a894e-ab9d-4cce-842b-a7f76e91c9bc"
@@ -33,60 +44,131 @@ name="S_LAND_SchnelltestRepository">
 				/form[@controlname='tblLänder']/titlebar[@accessiblerole='TitleBar']
 			</item>
 			<item
-			addcaps="cell,accessible"
-			capname="cell"
-			id="6f452523-7388-41cb-9e41-7e9b18dbbba3"
-			name="Row1Column0"
-			refimgid="fa4fc4b7-57ab-41ab-bf98-38f2deee3768"
-			refpath="/form[@controlname='tblLänder']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblLänder']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']
-			</item>
-			<item
 			addcaps="button,control,nativewindow"
 			capname="button"
-			id="927d8ec9-ea9e-41ea-850c-a9a504213be4"
-			name="PbDataAccessSave"
-			refimgid="0c9dfd51-5463-49a6-ab9b-e5d827e43dd5"
-			refpath="/form[@controlname='tblLänder']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblLänder']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']
-			</item>
-			<item
-			addcaps="button,control,nativewindow"
-			capname="button"
-			id="114e1e3b-48a3-4b96-8df6-78c20f9eb9a4"
+			id="1939536a-26e8-402c-8297-5b8ff7293a61"
 			name="PbDataAccessLoad"
-			refimgid="311ff150-46e2-4772-a54c-d968bb2899ff"
+			refimgid="a89d9301-daaa-436b-b26c-0478c88f42de"
 			refpath="/form[@controlname='tblLänder']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']"
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='tblLänder']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']
 			</item>
 			<item
-			addcaps="cell,accessible"
-			capname="cell"
-			id="7a1a64d7-6908-458c-88da-bfc8989d95cf"
-			name="ColLandCdRow2"
-			refimgid="f025d3a7-27c1-41b3-83de-b556a8c58dc4"
-			refpath="/form[@controlname='tblLänder']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colLand_cd Row 2']"
+			addcaps="button,accessible"
+			capname="button"
+			id="09e14391-3e3f-40e5-a5ec-adb43e1af314"
+			name="Maximieren"
+			refimgid="b3ba071d-437d-462a-b8d1-ad086da38e31"
+			refpath="/form[@controlname='tblLänder']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Maximieren']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='tblLänder']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colLand_cd Row 2']
+				/form[@controlname='tblLänder']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Maximieren']
 			</item>
-			<item
-			addcaps="cell,accessible"
-			capname="cell"
-			id="85ba1d70-6315-48de-a3bf-2d8a79602cf8"
-			name="Row2Column0"
-			refimgid="6cbc96f5-7d14-4449-8f6a-d75c1d6ea8a2"
-			refpath="/form[@controlname='tblLänder']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='Row 2 Column 0']"
-			robustPath=""
-			searchtimeout="30000ms">
-				/form[@controlname='tblLänder']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='Row 2 Column 0']
-			</item>
+			<folder
+			capname="row"
+			id="c7f28489-6989-48e7-b713-54555634b3c5"
+			isrooted="True"
+			name="Zeile_mit_LAND_CD_NEU"
+			refimgid="f17b636e-cef0-4b56-8e1d-5acd0946104f"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="row"
+				id="5b850ecd-d009-4a60-a66a-3a61dadbc904"
+				name="Row_mit_LAND_CD_NEU"
+				refimgid="10d3e70e-0348-4c51-8e1f-7c4bffa41ac8"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblLänder']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$LAND_CD_NEU]
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="8cfebc07-9347-4b8d-9a19-2733b73689b9"
+				name="ColLandBez_CD_NEU"
+				refimgid="4eedd365-2eba-46f8-bf8a-5eaae388dc21"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblLänder']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$LAND_CD_NEU]/cell[@accessiblename~'colLand_bez']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="41827583-9493-4cdc-b3c3-6a3274c16ac7"
+				name="ColLandCd_CD_NEU"
+				refimgid="4ef47a3f-46c4-4b73-b993-9f0e09b32e7b"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblLänder']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$LAND_CD_NEU]/cell[@accessiblename~'colLand_cd']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="0624cdb2-6d4e-4859-a94a-3ba289042bf4"
+				name="ColSepaTeiln_CD_NEU"
+				refimgid="ddfabdc2-b5c3-4704-bdad-962dcd6ee130"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblLänder']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$LAND_CD_NEU]/cell[@accessiblename~'colSepa_Teiln']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="6d42d263-4cd3-4c71-9d49-84c083cdcc41"
+				name="ColLandKfzCode_CD_NEU"
+				refimgid="b5c91f54-414c-438a-b218-73c36b10a328"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblLänder']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$LAND_CD_NEU]/cell[@accessiblename~'colLand_kfz_code']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="80d54ee2-94ba-44d3-999b-f8590f0d79ef"
+				name="Column0_mit_LAND_CD_NEU"
+				refimgid="c01eda2a-bebf-45cc-9a12-6fe7c1fe0e6f"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblLänder']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$LAND_CD_NEU]/cell[@accessiblename~'Column 0']
+				</item>
+				<basepath>
+					/form[@controlname='tblLänder']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$LAND_CD_NEU]
+				</basepath>
+			</folder>
+			<folder
+			capname="row"
+			id="ba1891ae-006b-490e-b4c3-a954fa28082b"
+			isrooted="True"
+			name="Zeile_mit_LAND_CD_ALT"
+			refimgid="f17b636e-cef0-4b56-8e1d-5acd0946104f"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="row"
+				id="11dabe95-aa79-40a7-881d-2335fcb27e5a"
+				name="Row_mit_LAND_CD_ALT"
+				refimgid="8f4cca0d-0638-4b3f-9e5f-afcd541b02b2"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblLänder']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$LAND_CD_ALT]
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="5918f139-dc32-4ca5-b7f0-9bf3b44a6ae7"
+				name="Colum0_mit_LAND_CD_ALT"
+				refimgid="c01eda2a-bebf-45cc-9a12-6fe7c1fe0e6f"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblLänder']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$LAND_CD_ALT]/cell[@accessiblename~'Column 0']
+				</item>
+				<basepath>
+					/form[@controlname='tblLänder']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$LAND_CD_ALT]
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controlname='tblLänder']
 			</basepath>
@@ -104,14 +186,93 @@ FmBZllrk6PV6aqxUKmpk+3zAaDRSc9d1kwHtdpssZ5Tm6HQ6KJVKWFurqXm1WlX7EwFsv9FoIIoi
 FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="b64abec5-1596-4aa3-9448-10cad5da8b63"
+		isrooted="True"
+		name="DlgMessageBox"
+		refpath="/form[@controlname='dlgMessageBox']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="788f2297-9711-4ce8-b9f2-0bc9829a226c"
+			name="LaenderVerwalten"
+			refimgid="f36f5640-a752-4924-87ec-9b20c54a8915"
+			refpath="/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="6994cc82-e762-4e41-86d1-058d206a3d6f"
+			name="LabelMeldungstext"
+			refimgid="83b28a94-5d5b-4c26-9927-aeaf35fcb312"
+			refpath="/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/text[@controlname='labelMeldungstext']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="906f1a92-8323-4b9b-94af-594cd628a499"
+			name="Button0_OK_Meldung"
+			refimgid="144e4692-294d-432d-8221-0f877e1dfbf2"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button0']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="968619e6-3b5b-4624-89ba-39ebec53915b"
+			name="Button1"
+			refimgid="0b24718a-2c54-4898-9a86-21819eb856a6"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button1']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button1']
+			</item>
+			<basepath>
+				/form[@controlname='dlgMessageBox']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
 	<variables>
 		<var
 		id="908b91a7-c3fd-4c9e-8ca4-a53208564f63"
-		name="Laendercode">
+		name="LAND_CD_NEU">
 			A1
+		</var>
+		<var
+		id="21fd7a0d-38b8-47ba-be7a-b015beef197e"
+		name="LAND_BEZ_NEU">
+			Wonderland
+		</var>
+		<var
+		id="4ccb901a-5751-47f5-a896-8569ca58de2e"
+		name="LAND_CD_ALT">
 		</var>
 	</variables>
 </repository>

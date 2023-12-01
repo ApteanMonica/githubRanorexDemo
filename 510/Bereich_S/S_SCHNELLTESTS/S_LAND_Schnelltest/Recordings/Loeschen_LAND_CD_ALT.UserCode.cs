@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace S_LAND_Schnelltest.Recordings
 {
-    public partial class CloseAUT
+    public partial class Loeschen_LAND_CD_ALT
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

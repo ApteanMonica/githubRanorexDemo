@@ -20,8 +20,16 @@
 					value="S_LAND Aufrufart=LAND">
 					</param>
 					<param
-					name="NewParameter"
-					value="">
+					name="LAND_CD_NEU"
+					value="A1">
+					</param>
+					<param
+					name="LAND_CD_ALT"
+					value="AT">
+					</param>
+					<param
+					name="LAND_BEZ_NEU"
+					value="Wonderland">
 					</param>
 				</parameters>
 			</testcase>
@@ -30,10 +38,38 @@
 			name="teardown">
 			</teardown>
 			<testmodule
+			id="64957c78-9a79-4df1-993e-d792af10b3f4"
+			name="Aenderung_Einstellungen_Land"
+			ref="af098cdc-9ee0-4a64-af6e-c473babfcbbb"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="LAND_CD_NEU"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="908b91a7-c3fd-4c9e-8ca4-a53208564f63"
+					variablename="LAND_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="768a6e23-ce03-43c7-bc58-1c1ed43a86e6"
 			name="Neuanlage_Land"
 			ref="3f1eb06f-04cc-40f2-8dc0-349dfb64776f"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="LAND_CD_NEU"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="eccf2229-581d-4189-bf5a-c5383e5996b7"
+					variablename="LAND_CD_NEU">
+					</var>
+					<var
+					dataname="LAND_BEZ_NEU"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="08a0a871-b538-44e6-94fa-898e89386ae1"
+					variablename="LAND_BEZ_NEU">
+					</var>
+				</databinding>
 			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
@@ -66,16 +102,16 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm_LAND"
-					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
-					variableid="6a621ea6-675d-4782-986a-779cc5ac66b2"
-					variablename="Programm_Land">
-					</var>
-					<var
 					dataname="Startfile"
 					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
 					variableid="22fd755c-66ed-40f5-a9ab-1faf489de92e"
 					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_LAND"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="6a621ea6-675d-4782-986a-779cc5ac66b2"
+					variablename="Programm_Land">
 					</var>
 				</databinding>
 				<missingdatabinding>
@@ -88,8 +124,36 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			id="ac351b70-4121-4e01-8a5b-869b65c1e0af"
+			name="Loeschen_LAND_CD_ALT"
+			ref="000e7c00-38c9-48c1-8c4c-55d47b4c5273"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="LAND_CD_ALT"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="d7be6f86-d1d8-46e4-96c5-b04d2b0a9531"
+					variablename="LAND_CD_ALT">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="aef4ba92-9547-4910-b7ce-a5a8c54a6cbc"
+			name="Loeschen_LAND_CD_NEU"
+			ref="c609edc0-d6cb-4a40-bbe9-4117996fe6c8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="LAND_CD_NEU"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="908b91a7-c3fd-4c9e-8ca4-a53208564f63"
+					variablename="LAND_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="cdcd8d89-9c00-4211-bc69-453d3cf1b2e4"
-			name="CloseAUT"
+			name="CloseLAND"
 			ref="9d9ac263-6440-4bbb-9cee-4cfd65682447"
 			type="Recording">
 				<missingdatabinding>
@@ -100,6 +164,20 @@
 					variablename="CloseAutProcessIDVar">
 					</var>
 				</missingdatabinding>
+			</testmodule>
+			<testmodule
+			id="d8c58d8f-31de-4a21-9200-32ee656efc23"
+			name="Meldung_Loeschen_Datensatz_nicht_moeglich"
+			ref="f420f435-9215-4455-8178-be71cc08cf4a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="LAND_CD_ALT"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="4ccb901a-5751-47f5-a896-8569ca58de2e"
+					variablename="LAND_CD_ALT">
+					</var>
+				</databinding>
 			</testmodule>
 			<setup
 			id="ed516115-917c-42f9-9f5a-c6487460f1cc"
@@ -128,12 +206,28 @@
 						id="768a6e23-ce03-43c7-bc58-1c1ed43a86e6"
 						name="Neuanlage_Land">
 						</testmodule>
+						<testmodule
+						id="64957c78-9a79-4df1-993e-d792af10b3f4"
+						name="Aenderung_Einstellungen_Land">
+						</testmodule>
+						<testmodule
+						id="aef4ba92-9547-4910-b7ce-a5a8c54a6cbc"
+						name="Loeschen_LAND_CD_NEU">
+						</testmodule>
+						<testmodule
+						id="ac351b70-4121-4e01-8a5b-869b65c1e0af"
+						name="Loeschen_LAND_CD_ALT">
+						</testmodule>
+						<testmodule
+						id="d8c58d8f-31de-4a21-9200-32ee656efc23"
+						name="Meldung_Loeschen_Datensatz_nicht_moeglich">
+						</testmodule>
 						<teardown
 						id="575eee4d-1251-4afc-8297-ca25b60e8ac7"
 						name="teardown">
 							<testmodule
 							id="cdcd8d89-9c00-4211-bc69-453d3cf1b2e4"
-							name="CloseAUT">
+							name="CloseLAND">
 							</testmodule>
 						</teardown>
 					</testcase>
