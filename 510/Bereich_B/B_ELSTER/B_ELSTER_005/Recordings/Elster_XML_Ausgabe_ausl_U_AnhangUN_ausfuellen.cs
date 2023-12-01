@@ -156,9 +156,6 @@ namespace B_ELSTER_005.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'1000,00') on item 'DlgElsterUN.DfSumme'.", repo.DlgElsterUN.DfSummeInfo, new RecordItemIndex(16));
             Validate.AttributeContains(repo.DlgElsterUN.DfSummeInfo, "Text", "1000,00");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgElsterUN.PbWeiter' at Center.", repo.DlgElsterUN.PbWeiterInfo, new RecordItemIndex(17));
-            repo.DlgElsterUN.PbWeiter.Click();
-            
         }
 
 #region Image Feature Data
