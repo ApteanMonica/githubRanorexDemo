@@ -1254,17 +1254,36 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			refimgid="23533e56-4187-469d-a809-abdd0727db2d"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='FormRsDmsExplorer']/*[@accessiblevalue~'DMS Explorer']/?/button[@accessiblename='Schließen']
+				/form[@controlname='FormRsDmsExplorer']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']
 			</item>
 			<item
 			addcaps="text,control,nativewindow"
 			capname="text"
 			id="19925585-152b-41d5-8b94-e49e6a36280c"
-			name="LTitle"
+			name="LTitle_510_520"
 			refimgid="58486893-a5aa-451f-8718-6c3985488bc8"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controlname='FormRsDmsExplorer']/container[@controlname='ClientArea']/container[@controlname='explorer']/container[@controlname='rsSplitContainerDetail']/?/?/container[@controlname='rsSplitContainerVorschau']//text[@controlname='lTitle']
+				/form[@controlname='FormRsDmsExplorer']/container[@controlname='ClientArea']/container[@controlname='explorer']/container[@controlname='rsSplitContainerDetail']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='rsSplitContainerVorschau']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='rsSplitContainerTabelle']/container[@controltypename='SplitterPanel' and @instance='0']/text[@controlname='lTitle']
+			</item>
+			<item
+			addcaps="treeitem,accessible,accessibletreeitem"
+			capname="treeitem"
+			id="f701c8cf-2fbc-494f-b531-15afefb48247"
+			name="Kassabuch_530"
+			refimgid="2bb14fc3-10c0-430b-9a45-1b1adc5232d6"
+			refpath="/form[@controlname='FormRsDmsExplorer']/container[@controlname='ClientArea']/container[@controlname='Explorer']/container[@controlname='rsSplitContainerVorschau']/container[@caption='' and @controltypename='SplitterPanel' and @instance='0']/tree[@controlname='RSTreeView']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Kassabuch']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='FormRsDmsExplorer']/container[@controlname='ClientArea']/container[@controlname='Explorer']/container[@controlname='rsSplitContainerVorschau']/container[@controltypename='SplitterPanel' and @instance='0']/tree[@controlname='RSTreeView']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Kassabuch']
+			</item>
+			<item
+			capname="unknown"
+			id="eb645d7b-0d35-4ec0-9966-b32d22c13a48"
+			name="Element_in_510_530_mit_Text_Kassabuch_510_530"
+			robustPath="/form[@controlname='FormRsDmsExplorer']/element"
+			searchtimeout="30000ms">
+				/form[@controlname='FormRsDmsExplorer']/container[@controlname='ClientArea']/container[@controlname~'xplorer']/container[@controlname~'rsSplitContainer']/container[@controltypename='SplitterPanel' and @instance='0']/?/?/?/?/*[@text='Kassabuch']
 			</item>
 			<basepath>
 				/form[@controlname='FormRsDmsExplorer']

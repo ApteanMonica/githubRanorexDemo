@@ -3115,7 +3115,9 @@ namespace B_BUKA_007
         {
             RepoItemInfo _titlebardmsInfo;
             RepoItemInfo _schliessen_dmsInfo;
-            RepoItemInfo _ltitleInfo;
+            RepoItemInfo _ltitle_510_520Info;
+            RepoItemInfo _kassabuch_530Info;
+            RepoItemInfo _element_in_510_530_mit_text_kassabuch_510_530Info;
 
             /// <summary>
             /// Creates a new DlgDMSExplorer  folder.
@@ -3124,8 +3126,10 @@ namespace B_BUKA_007
                     base("DlgDMSExplorer", "/form[@controlname='FormRsDmsExplorer']", parentFolder, 30000, null, false, "ae12e344-5785-490e-8f68-6b61b4f30af1", "")
             {
                 _titlebardmsInfo = new RepoItemInfo(this, "TitleBarDMS", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "98df0056-a026-4d08-aa65-897bc5a3bb8f");
-                _schliessen_dmsInfo = new RepoItemInfo(this, "Schliessen_DMS", "*[@accessiblevalue~'DMS Explorer']/?/button[@accessiblename='Schließen']", "", 30000, null, "c72bdef4-4d98-46fc-8f73-3b4503f2414c");
-                _ltitleInfo = new RepoItemInfo(this, "LTitle", "container[@controlname='ClientArea']/container[@controlname='explorer']/container[@controlname='rsSplitContainerDetail']/?/?/container[@controlname='rsSplitContainerVorschau']//text[@controlname='lTitle']", "", 30000, null, "19925585-152b-41d5-8b94-e49e6a36280c");
+                _schliessen_dmsInfo = new RepoItemInfo(this, "Schliessen_DMS", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Schließen']", "", 30000, null, "c72bdef4-4d98-46fc-8f73-3b4503f2414c");
+                _ltitle_510_520Info = new RepoItemInfo(this, "LTitle_510_520", "container[@controlname='ClientArea']/container[@controlname='explorer']/container[@controlname='rsSplitContainerDetail']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='rsSplitContainerVorschau']/container[@controltypename='SplitterPanel' and @instance='0']/container[@controlname='rsSplitContainerTabelle']/container[@controltypename='SplitterPanel' and @instance='0']/text[@controlname='lTitle']", "", 30000, null, "19925585-152b-41d5-8b94-e49e6a36280c");
+                _kassabuch_530Info = new RepoItemInfo(this, "Kassabuch_530", "container[@controlname='ClientArea']/container[@controlname='Explorer']/container[@controlname='rsSplitContainerVorschau']/container[@controltypename='SplitterPanel' and @instance='0']/tree[@controlname='RSTreeView']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Kassabuch']", "", 30000, null, "f701c8cf-2fbc-494f-b531-15afefb48247");
+                _element_in_510_530_mit_text_kassabuch_510_530Info = new RepoItemInfo(this, "Element_in_510_530_mit_Text_Kassabuch_510_530", "container[@controlname='ClientArea']/container[@controlname~'xplorer']/container[@controlname~'rsSplitContainer']/container[@controltypename='SplitterPanel' and @instance='0']/?/?/?/?/*[@text='Kassabuch']", "element", 30000, null, "eb645d7b-0d35-4ec0-9966-b32d22c13a48");
             }
 
             /// <summary>
@@ -3201,26 +3205,74 @@ namespace B_BUKA_007
             }
 
             /// <summary>
-            /// The LTitle item.
+            /// The LTitle_510_520 item.
             /// </summary>
             [RepositoryItem("19925585-152b-41d5-8b94-e49e6a36280c")]
-            public virtual Ranorex.Text LTitle
+            public virtual Ranorex.Text LTitle_510_520
             {
                 get
                 {
-                    return _ltitleInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _ltitle_510_520Info.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The LTitle item info.
+            /// The LTitle_510_520 item info.
             /// </summary>
             [RepositoryItemInfo("19925585-152b-41d5-8b94-e49e6a36280c")]
-            public virtual RepoItemInfo LTitleInfo
+            public virtual RepoItemInfo LTitle_510_520Info
             {
                 get
                 {
-                    return _ltitleInfo;
+                    return _ltitle_510_520Info;
+                }
+            }
+
+            /// <summary>
+            /// The Kassabuch_530 item.
+            /// </summary>
+            [RepositoryItem("f701c8cf-2fbc-494f-b531-15afefb48247")]
+            public virtual Ranorex.TreeItem Kassabuch_530
+            {
+                get
+                {
+                    return _kassabuch_530Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Kassabuch_530 item info.
+            /// </summary>
+            [RepositoryItemInfo("f701c8cf-2fbc-494f-b531-15afefb48247")]
+            public virtual RepoItemInfo Kassabuch_530Info
+            {
+                get
+                {
+                    return _kassabuch_530Info;
+                }
+            }
+
+            /// <summary>
+            /// The Element_in_510_530_mit_Text_Kassabuch_510_530 item.
+            /// </summary>
+            [RepositoryItem("eb645d7b-0d35-4ec0-9966-b32d22c13a48")]
+            public virtual Ranorex.Unknown Element_in_510_530_mit_Text_Kassabuch_510_530
+            {
+                get
+                {
+                    return _element_in_510_530_mit_text_kassabuch_510_530Info.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Element_in_510_530_mit_Text_Kassabuch_510_530 item info.
+            /// </summary>
+            [RepositoryItemInfo("eb645d7b-0d35-4ec0-9966-b32d22c13a48")]
+            public virtual RepoItemInfo Element_in_510_530_mit_Text_Kassabuch_510_530Info
+            {
+                get
+                {
+                    return _element_in_510_530_mit_text_kassabuch_510_530Info;
                 }
             }
         }
