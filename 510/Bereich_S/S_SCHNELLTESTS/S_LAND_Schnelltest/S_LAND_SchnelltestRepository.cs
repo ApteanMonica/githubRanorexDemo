@@ -29,6 +29,7 @@ namespace S_LAND_Schnelltest
         static S_LAND_SchnelltestRepository instance = new S_LAND_SchnelltestRepository();
         S_LAND_SchnelltestRepositoryFolders.TblLaenderAppFolder _tbllaender;
         S_LAND_SchnelltestRepositoryFolders.DlgMessageBoxAppFolder _dlgmessagebox;
+        S_LAND_SchnelltestRepositoryFolders.TblPostleitzahlAppFolder _tblpostleitzahl;
 
         /// <summary>
         /// Gets the singleton class instance representing the S_LAND_SchnelltestRepository element repository.
@@ -47,6 +48,7 @@ namespace S_LAND_Schnelltest
         {
             _tbllaender = new S_LAND_SchnelltestRepositoryFolders.TblLaenderAppFolder(this);
             _dlgmessagebox = new S_LAND_SchnelltestRepositoryFolders.DlgMessageBoxAppFolder(this);
+            _tblpostleitzahl = new S_LAND_SchnelltestRepositoryFolders.TblPostleitzahlAppFolder(this);
         }
 
 #region Variables
@@ -87,6 +89,18 @@ namespace S_LAND_Schnelltest
             set { _LAND_CD_ALT = value; }
         }
 
+        string _PLZ_NEU_ORT = "Schnelltest PLZ Anlage";
+
+        /// <summary>
+        /// Gets or sets the value of variable PLZ_NEU_ORT.
+        /// </summary>
+        [TestVariable("23330725-514d-4b36-8f54-b06afff7a917")]
+        public string PLZ_NEU_ORT
+        {
+            get { return _PLZ_NEU_ORT; }
+            set { _PLZ_NEU_ORT = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -117,6 +131,15 @@ namespace S_LAND_Schnelltest
         public virtual S_LAND_SchnelltestRepositoryFolders.DlgMessageBoxAppFolder DlgMessageBox
         {
             get { return _dlgmessagebox; }
+        }
+
+        /// <summary>
+        /// The TblPostleitzahl folder.
+        /// </summary>
+        [RepositoryFolder("ba7f6a77-a999-48b9-b416-1b6e5a1c34bd")]
+        public virtual S_LAND_SchnelltestRepositoryFolders.TblPostleitzahlAppFolder TblPostleitzahl
+        {
+            get { return _tblpostleitzahl; }
         }
     }
 
@@ -720,6 +743,563 @@ namespace S_LAND_Schnelltest
                 get
                 {
                     return _button1Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TblPostleitzahlAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("ba7f6a77-a999-48b9-b416-1b6e5a1c34bd")]
+        public partial class TblPostleitzahlAppFolder : RepoGenBaseFolder
+        {
+            S_LAND_SchnelltestRepositoryFolders.ToolBar_EinschraenkungenFolder _toolbar_einschraenkungen;
+            S_LAND_SchnelltestRepositoryFolders.FlexGrid_TabelleFolder _flexgrid_tabelle;
+            S_LAND_SchnelltestRepositoryFolders.Zeile_mit_PLZ_NEUFolder _zeile_mit_plz_neu;
+            RepoItemInfo _titlebar100postleitzahlverwaltenInfo;
+            RepoItemInfo _maximierenInfo;
+            RepoItemInfo _pbdataaccessloadInfo;
+            RepoItemInfo _pbdataaccesssaveInfo;
+
+            /// <summary>
+            /// Creates a new TblPostleitzahl  folder.
+            /// </summary>
+            public TblPostleitzahlAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TblPostleitzahl", "/form[@controlname='tblPostleitzahl']", parentFolder, 30000, null, true, "ba7f6a77-a999-48b9-b416-1b6e5a1c34bd", "")
+            {
+                _toolbar_einschraenkungen = new S_LAND_SchnelltestRepositoryFolders.ToolBar_EinschraenkungenFolder(this);
+                _flexgrid_tabelle = new S_LAND_SchnelltestRepositoryFolders.FlexGrid_TabelleFolder(this);
+                _zeile_mit_plz_neu = new S_LAND_SchnelltestRepositoryFolders.Zeile_mit_PLZ_NEUFolder(this);
+                _titlebar100postleitzahlverwaltenInfo = new RepoItemInfo(this, "TitleBar100PostleitzahlVerwalten", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "bf43d863-55c6-40a5-bbaa-6a88b82182bc");
+                _maximierenInfo = new RepoItemInfo(this, "Maximieren", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Maximieren']", "", 30000, null, "c53aafe4-8038-45bf-a319-ee30d5247823");
+                _pbdataaccessloadInfo = new RepoItemInfo(this, "PbDataAccessLoad", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']", "", 30000, null, "2842eda4-bf0e-43fe-bc71-91d564447225");
+                _pbdataaccesssaveInfo = new RepoItemInfo(this, "PbDataAccessSave", "container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']", "", 30000, null, "b8a7b199-72d2-483f-9d08-210a9695fa28");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("ba7f6a77-a999-48b9-b416-1b6e5a1c34bd")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("ba7f6a77-a999-48b9-b416-1b6e5a1c34bd")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100PostleitzahlVerwalten item.
+            /// </summary>
+            [RepositoryItem("bf43d863-55c6-40a5-bbaa-6a88b82182bc")]
+            public virtual Ranorex.TitleBar TitleBar100PostleitzahlVerwalten
+            {
+                get
+                {
+                    return _titlebar100postleitzahlverwaltenInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100PostleitzahlVerwalten item info.
+            /// </summary>
+            [RepositoryItemInfo("bf43d863-55c6-40a5-bbaa-6a88b82182bc")]
+            public virtual RepoItemInfo TitleBar100PostleitzahlVerwaltenInfo
+            {
+                get
+                {
+                    return _titlebar100postleitzahlverwaltenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Maximieren item.
+            /// </summary>
+            [RepositoryItem("c53aafe4-8038-45bf-a319-ee30d5247823")]
+            public virtual Ranorex.Button Maximieren
+            {
+                get
+                {
+                    return _maximierenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Maximieren item info.
+            /// </summary>
+            [RepositoryItemInfo("c53aafe4-8038-45bf-a319-ee30d5247823")]
+            public virtual RepoItemInfo MaximierenInfo
+            {
+                get
+                {
+                    return _maximierenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessLoad item.
+            /// </summary>
+            [RepositoryItem("2842eda4-bf0e-43fe-bc71-91d564447225")]
+            public virtual Ranorex.Button PbDataAccessLoad
+            {
+                get
+                {
+                    return _pbdataaccessloadInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessLoad item info.
+            /// </summary>
+            [RepositoryItemInfo("2842eda4-bf0e-43fe-bc71-91d564447225")]
+            public virtual RepoItemInfo PbDataAccessLoadInfo
+            {
+                get
+                {
+                    return _pbdataaccessloadInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessSave item.
+            /// </summary>
+            [RepositoryItem("b8a7b199-72d2-483f-9d08-210a9695fa28")]
+            public virtual Ranorex.Button PbDataAccessSave
+            {
+                get
+                {
+                    return _pbdataaccesssaveInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbDataAccessSave item info.
+            /// </summary>
+            [RepositoryItemInfo("b8a7b199-72d2-483f-9d08-210a9695fa28")]
+            public virtual RepoItemInfo PbDataAccessSaveInfo
+            {
+                get
+                {
+                    return _pbdataaccesssaveInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ToolBar_Einschraenkungen folder.
+            /// </summary>
+            [RepositoryFolder("c9c0f592-bf77-4985-9072-da9bb8df2bb3")]
+            public virtual S_LAND_SchnelltestRepositoryFolders.ToolBar_EinschraenkungenFolder ToolBar_Einschraenkungen
+            {
+                get { return _toolbar_einschraenkungen; }
+            }
+
+            /// <summary>
+            /// The FlexGrid_Tabelle folder.
+            /// </summary>
+            [RepositoryFolder("f430c4f7-eca7-4abc-a4bc-533d957667b9")]
+            public virtual S_LAND_SchnelltestRepositoryFolders.FlexGrid_TabelleFolder FlexGrid_Tabelle
+            {
+                get { return _flexgrid_tabelle; }
+            }
+
+            /// <summary>
+            /// The Zeile_mit_PLZ_NEU folder.
+            /// </summary>
+            [RepositoryFolder("5b08373f-8bc1-48af-99ef-a63d9f30f63e")]
+            public virtual S_LAND_SchnelltestRepositoryFolders.Zeile_mit_PLZ_NEUFolder Zeile_mit_PLZ_NEU
+            {
+                get { return _zeile_mit_plz_neu; }
+            }
+        }
+
+        /// <summary>
+        /// The ToolBar_EinschraenkungenFolder folder.
+        /// </summary>
+        [RepositoryFolder("c9c0f592-bf77-4985-9072-da9bb8df2bb3")]
+        public partial class ToolBar_EinschraenkungenFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _dflandcd_landkuerzelInfo;
+            RepoItemInfo _land_textInfo;
+
+            /// <summary>
+            /// Creates a new ToolBar_Einschraenkungen  folder.
+            /// </summary>
+            public ToolBar_EinschraenkungenFolder(RepoGenBaseFolder parentFolder) :
+                    base("ToolBar_Einschraenkungen", "container[@controlname='ToolBar']", parentFolder, 30000, null, false, "c9c0f592-bf77-4985-9072-da9bb8df2bb3", "")
+            {
+                _dflandcd_landkuerzelInfo = new RepoItemInfo(this, "DfLandCd_Landkuerzel", "text[@controlname='dfLand_cd']", "", 30000, null, "3f21d27e-a921-4303-85fe-c103fda58d98");
+                _land_textInfo = new RepoItemInfo(this, "Land_Text", "text[@controlname='dfLand_bez']/text[@accessiblename='Land']", "", 30000, null, "419bfe7e-842a-4274-a708-fa27fc23d6fc");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c9c0f592-bf77-4985-9072-da9bb8df2bb3")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c9c0f592-bf77-4985-9072-da9bb8df2bb3")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DfLandCd_Landkuerzel item.
+            /// </summary>
+            [RepositoryItem("3f21d27e-a921-4303-85fe-c103fda58d98")]
+            public virtual Ranorex.Text DfLandCd_Landkuerzel
+            {
+                get
+                {
+                    return _dflandcd_landkuerzelInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfLandCd_Landkuerzel item info.
+            /// </summary>
+            [RepositoryItemInfo("3f21d27e-a921-4303-85fe-c103fda58d98")]
+            public virtual RepoItemInfo DfLandCd_LandkuerzelInfo
+            {
+                get
+                {
+                    return _dflandcd_landkuerzelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Land_Text item.
+            /// </summary>
+            [RepositoryItem("419bfe7e-842a-4274-a708-fa27fc23d6fc")]
+            public virtual Ranorex.Text Land_Text
+            {
+                get
+                {
+                    return _land_textInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Land_Text item info.
+            /// </summary>
+            [RepositoryItemInfo("419bfe7e-842a-4274-a708-fa27fc23d6fc")]
+            public virtual RepoItemInfo Land_TextInfo
+            {
+                get
+                {
+                    return _land_textInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FlexGrid_TabelleFolder folder.
+        /// </summary>
+        [RepositoryFolder("f430c4f7-eca7-4abc-a4bc-533d957667b9")]
+        public partial class FlexGrid_TabelleFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _row0column0Info;
+            RepoItemInfo _colplzcdrow1Info;
+            RepoItemInfo _colplzortrow1Info;
+
+            /// <summary>
+            /// Creates a new FlexGrid_Tabelle  folder.
+            /// </summary>
+            public FlexGrid_TabelleFolder(RepoGenBaseFolder parentFolder) :
+                    base("FlexGrid_Tabelle", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "f430c4f7-eca7-4abc-a4bc-533d957667b9", "")
+            {
+                _row0column0Info = new RepoItemInfo(this, "Row0Column0", "row[@accessiblename='Row 0']/cell[@accessiblename='Row 0 Column 0']", "", 30000, null, "d5077fca-857c-4a7f-89a3-0ed2af7b1eaa");
+                _colplzcdrow1Info = new RepoItemInfo(this, "ColPlzCdRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colPlz_cd Row 1']", "", 30000, null, "3acc2bfd-5899-46c1-9afa-5fa26cf3d0dc");
+                _colplzortrow1Info = new RepoItemInfo(this, "ColPlzOrtRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colPlz_ort Row 1']", "", 30000, null, "b2762d35-e40b-4006-ae9f-89085102ec02");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("f430c4f7-eca7-4abc-a4bc-533d957667b9")]
+            public virtual Ranorex.Table Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("f430c4f7-eca7-4abc-a4bc-533d957667b9")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Row0Column0 item.
+            /// </summary>
+            [RepositoryItem("d5077fca-857c-4a7f-89a3-0ed2af7b1eaa")]
+            public virtual Ranorex.Cell Row0Column0
+            {
+                get
+                {
+                    return _row0column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row0Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("d5077fca-857c-4a7f-89a3-0ed2af7b1eaa")]
+            public virtual RepoItemInfo Row0Column0Info
+            {
+                get
+                {
+                    return _row0column0Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColPlzCdRow1 item.
+            /// </summary>
+            [RepositoryItem("3acc2bfd-5899-46c1-9afa-5fa26cf3d0dc")]
+            public virtual Ranorex.Cell ColPlzCdRow1
+            {
+                get
+                {
+                    return _colplzcdrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColPlzCdRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("3acc2bfd-5899-46c1-9afa-5fa26cf3d0dc")]
+            public virtual RepoItemInfo ColPlzCdRow1Info
+            {
+                get
+                {
+                    return _colplzcdrow1Info;
+                }
+            }
+
+            /// <summary>
+            /// The ColPlzOrtRow1 item.
+            /// </summary>
+            [RepositoryItem("b2762d35-e40b-4006-ae9f-89085102ec02")]
+            public virtual Ranorex.Cell ColPlzOrtRow1
+            {
+                get
+                {
+                    return _colplzortrow1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColPlzOrtRow1 item info.
+            /// </summary>
+            [RepositoryItemInfo("b2762d35-e40b-4006-ae9f-89085102ec02")]
+            public virtual RepoItemInfo ColPlzOrtRow1Info
+            {
+                get
+                {
+                    return _colplzortrow1Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Zeile_mit_PLZ_NEUFolder folder.
+        /// </summary>
+        [RepositoryFolder("5b08373f-8bc1-48af-99ef-a63d9f30f63e")]
+        public partial class Zeile_mit_PLZ_NEUFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _colplzcd_plz_neuInfo;
+            RepoItemInfo _colplzort_ort_neuInfo;
+            RepoItemInfo _row_mit_variable_plz_neu_ortInfo;
+            RepoItemInfo _colplzvorwahl_plz_neuInfo;
+            RepoItemInfo _colplzkm_plz_neuInfo;
+
+            /// <summary>
+            /// Creates a new Zeile_mit_PLZ_NEU  folder.
+            /// </summary>
+            public Zeile_mit_PLZ_NEUFolder(RepoGenBaseFolder parentFolder) :
+                    base("Zeile_mit_PLZ_NEU", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$PLZ_NEU_ORT]", parentFolder, 30000, null, false, "5b08373f-8bc1-48af-99ef-a63d9f30f63e", "")
+            {
+                _colplzcd_plz_neuInfo = new RepoItemInfo(this, "ColPlzCd_PLZ_NEU", "cell[@accessiblename~'colPlz_cd']", "", 30000, null, "91915355-e84a-48c0-bdfa-29d07ec2cf14");
+                _colplzort_ort_neuInfo = new RepoItemInfo(this, "ColPlzOrt_Ort_NEU", "cell[@accessiblename='colPlz_ort']", "", 30000, null, "51200fcd-820a-4ab0-8d4c-bc64ab904a30");
+                _row_mit_variable_plz_neu_ortInfo = new RepoItemInfo(this, "Row_mit_Variable_PLZ_NEU_ORT", "", "", 30000, null, "a1d2988c-0e3d-4228-bab2-f14b18ef886f");
+                _colplzvorwahl_plz_neuInfo = new RepoItemInfo(this, "ColPlzVorwahl_PLZ_NEU", "cell[@accessiblename~'colPlz_vorwahl']", "", 30000, null, "ac023483-4ab1-4533-8506-5be289eff8a2");
+                _colplzkm_plz_neuInfo = new RepoItemInfo(this, "ColPlzKm_PLZ_NEU", "cell[@accessiblename~'colPlz_km']", "", 30000, null, "3f003cd6-2ced-4514-9c44-15303d87e884");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("5b08373f-8bc1-48af-99ef-a63d9f30f63e")]
+            public virtual Ranorex.Row Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("5b08373f-8bc1-48af-99ef-a63d9f30f63e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColPlzCd_PLZ_NEU item.
+            /// </summary>
+            [RepositoryItem("91915355-e84a-48c0-bdfa-29d07ec2cf14")]
+            public virtual Ranorex.Cell ColPlzCd_PLZ_NEU
+            {
+                get
+                {
+                    return _colplzcd_plz_neuInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColPlzCd_PLZ_NEU item info.
+            /// </summary>
+            [RepositoryItemInfo("91915355-e84a-48c0-bdfa-29d07ec2cf14")]
+            public virtual RepoItemInfo ColPlzCd_PLZ_NEUInfo
+            {
+                get
+                {
+                    return _colplzcd_plz_neuInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColPlzOrt_Ort_NEU item.
+            /// </summary>
+            [RepositoryItem("51200fcd-820a-4ab0-8d4c-bc64ab904a30")]
+            public virtual Ranorex.Cell ColPlzOrt_Ort_NEU
+            {
+                get
+                {
+                    return _colplzort_ort_neuInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColPlzOrt_Ort_NEU item info.
+            /// </summary>
+            [RepositoryItemInfo("51200fcd-820a-4ab0-8d4c-bc64ab904a30")]
+            public virtual RepoItemInfo ColPlzOrt_Ort_NEUInfo
+            {
+                get
+                {
+                    return _colplzort_ort_neuInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Row_mit_Variable_PLZ_NEU_ORT item.
+            /// </summary>
+            [RepositoryItem("a1d2988c-0e3d-4228-bab2-f14b18ef886f")]
+            public virtual Ranorex.Row Row_mit_Variable_PLZ_NEU_ORT
+            {
+                get
+                {
+                    return _row_mit_variable_plz_neu_ortInfo.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row_mit_Variable_PLZ_NEU_ORT item info.
+            /// </summary>
+            [RepositoryItemInfo("a1d2988c-0e3d-4228-bab2-f14b18ef886f")]
+            public virtual RepoItemInfo Row_mit_Variable_PLZ_NEU_ORTInfo
+            {
+                get
+                {
+                    return _row_mit_variable_plz_neu_ortInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColPlzVorwahl_PLZ_NEU item.
+            /// </summary>
+            [RepositoryItem("ac023483-4ab1-4533-8506-5be289eff8a2")]
+            public virtual Ranorex.Cell ColPlzVorwahl_PLZ_NEU
+            {
+                get
+                {
+                    return _colplzvorwahl_plz_neuInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColPlzVorwahl_PLZ_NEU item info.
+            /// </summary>
+            [RepositoryItemInfo("ac023483-4ab1-4533-8506-5be289eff8a2")]
+            public virtual RepoItemInfo ColPlzVorwahl_PLZ_NEUInfo
+            {
+                get
+                {
+                    return _colplzvorwahl_plz_neuInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColPlzKm_PLZ_NEU item.
+            /// </summary>
+            [RepositoryItem("3f003cd6-2ced-4514-9c44-15303d87e884")]
+            public virtual Ranorex.Cell ColPlzKm_PLZ_NEU
+            {
+                get
+                {
+                    return _colplzkm_plz_neuInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColPlzKm_PLZ_NEU item info.
+            /// </summary>
+            [RepositoryItemInfo("3f003cd6-2ced-4514-9c44-15303d87e884")]
+            public virtual RepoItemInfo ColPlzKm_PLZ_NEUInfo
+            {
+                get
+                {
+                    return _colplzkm_plz_neuInfo;
                 }
             }
         }

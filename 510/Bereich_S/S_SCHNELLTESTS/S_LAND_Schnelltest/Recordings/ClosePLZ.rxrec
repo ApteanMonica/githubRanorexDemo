@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="2f5bb1b5-8af3-4dda-b116-412b25477e55"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ClosePLZ"
+	namespace="S_LAND_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="06de8680-8eb8-4499-ad0e-040fc6db44a0">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bf43d863-55c6-40a5-bbaa-6a88b82182bc"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblPostleitzahl']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="2229f8b9-dfc7-4400-b0f2-1ad1ad2f17b1"
+	name="S_LAND_SchnelltestRepository"
+	relativepath="..\S_LAND_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_LAND_SchnelltestRepository"
+		namespace="S_LAND_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="29e1d00d-4956-4400-b6eb-36fe3aed7db9"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ClosePLZ.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
