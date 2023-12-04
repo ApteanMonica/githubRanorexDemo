@@ -85,6 +85,18 @@
     <Compile Include="Program.cs">
       <id>8a1e56f5-3a6c-4847-af60-cc4fdf396569</id>
     </Compile>
+    <Compile Include="Recordings\Aendern_Einstellungen_PLZ_NEU.cs">
+      <BoundTo>a8272e95-201a-428a-9c60-1d399bc5190a</BoundTo>
+      <DependentUpon>Aendern_Einstellungen_PLZ_NEU.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bded3dea-6285-4700-ba27-d7adc2b95453</id>
+    </Compile>
+    <Compile Include="Recordings\Aendern_Einstellungen_PLZ_NEU.UserCode.cs">
+      <BoundTo>a8272e95-201a-428a-9c60-1d399bc5190a</BoundTo>
+      <DependentUpon>Aendern_Einstellungen_PLZ_NEU.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7be5bb80-c46e-4587-a0fa-cfe972024aef</id>
+    </Compile>
     <Compile Include="Recordings\Aenderung_Einstellungen_Land.cs">
       <BoundTo>c1fbd3fc-cc0b-435d-9e6b-24c35b040fd9</BoundTo>
       <DependentUpon>Aenderung_Einstellungen_Land.rxrec</DependentUpon>
@@ -108,6 +120,18 @@
       <UserCode>true</UserCode>
       <id>ca55192b-6cb3-4cbc-9c44-60773a80df61</id>
       <BoundTo>d3ecbe91-e5a7-4166-a155-04bcac9f0487</BoundTo>
+    </Compile>
+    <Compile Include="Recordings\ClosePLZ.cs">
+      <BoundTo>15ac575f-0683-417f-ac15-9e332601f71c</BoundTo>
+      <DependentUpon>ClosePLZ.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9d1a99f2-8c67-4af7-9932-1ee29cc444ae</id>
+    </Compile>
+    <Compile Include="Recordings\ClosePLZ.UserCode.cs">
+      <BoundTo>15ac575f-0683-417f-ac15-9e332601f71c</BoundTo>
+      <DependentUpon>ClosePLZ.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d167e839-8e7e-4a4d-a51e-f90942d5b38e</id>
     </Compile>
     <Compile Include="Recordings\Loeschen_LAND_CD_ALT.cs">
       <BoundTo>81029d24-f8a7-4641-b407-a786591d793a</BoundTo>
@@ -133,6 +157,18 @@
       <UserCode>true</UserCode>
       <id>3e4ebf23-404d-4afe-b9a7-31633e7334e8</id>
     </Compile>
+    <Compile Include="Recordings\Loeschen_PLZ_NEU.cs">
+      <BoundTo>854f068e-cf34-43fc-91bf-b1ac03f08b12</BoundTo>
+      <DependentUpon>Loeschen_PLZ_NEU.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>12009385-644a-45c1-a9f0-f19cbbbeee5f</id>
+    </Compile>
+    <Compile Include="Recordings\Loeschen_PLZ_NEU.UserCode.cs">
+      <BoundTo>854f068e-cf34-43fc-91bf-b1ac03f08b12</BoundTo>
+      <DependentUpon>Loeschen_PLZ_NEU.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7d00fcb1-3efe-45bc-a595-5e6c9d17966e</id>
+    </Compile>
     <Compile Include="Recordings\Meldung_Loeschen_Datensatz_nicht_moeglich.cs">
       <BoundTo>7afd7eb4-af32-496b-9b64-def6ea3a541c</BoundTo>
       <DependentUpon>Meldung_Loeschen_Datensatz_nicht_moeglich.rxrec</DependentUpon>
@@ -157,6 +193,18 @@
       <UserCode>true</UserCode>
       <id>4f8dbce6-dbf8-4ad5-8a7a-d3df3c9fdb0a</id>
     </Compile>
+    <Compile Include="Recordings\Neuanlage_PLZ_Drittland.cs">
+      <BoundTo>741d6c81-c436-48fe-a460-6f1fd1d4ac22</BoundTo>
+      <DependentUpon>Neuanlage_PLZ_Drittland.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>90202dc0-4037-4203-b47c-0d5e75d50a9a</id>
+    </Compile>
+    <Compile Include="Recordings\Neuanlage_PLZ_Drittland.UserCode.cs">
+      <BoundTo>741d6c81-c436-48fe-a460-6f1fd1d4ac22</BoundTo>
+      <DependentUpon>Neuanlage_PLZ_Drittland.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cba42e7d-514a-4232-bf1c-133b64716ad0</id>
+    </Compile>
     <Compile Include="Recordings\StartLAND.cs">
       <DependentUpon>StartLAND.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -169,6 +217,30 @@
       <id>4e61ac53-bd24-4bf0-aebc-11e02ca52618</id>
       <BoundTo>a7281615-b0f8-4a2b-8f5a-f25c9d2ef708</BoundTo>
     </Compile>
+    <Compile Include="Recordings\Start_PLZ.cs">
+      <BoundTo>eff21a01-145b-4e3a-8d9b-123610b7b8cb</BoundTo>
+      <DependentUpon>Start_PLZ.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c97e7047-2866-487c-b804-ae14d3cd0fd5</id>
+    </Compile>
+    <Compile Include="Recordings\Start_PLZ.UserCode.cs">
+      <BoundTo>eff21a01-145b-4e3a-8d9b-123610b7b8cb</BoundTo>
+      <DependentUpon>Start_PLZ.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b11bface-c701-42d1-8721-5404378363e8</id>
+    </Compile>
+    <Compile Include="Recordings\Ueberpruefung_Anlage_PLZ.cs">
+      <BoundTo>e67e1a45-3498-44b5-a543-f874d00111a1</BoundTo>
+      <DependentUpon>Ueberpruefung_Anlage_PLZ.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b6784f8c-2daa-4bcf-adb3-92f59fb69af2</id>
+    </Compile>
+    <Compile Include="Recordings\Ueberpruefung_Anlage_PLZ.UserCode.cs">
+      <BoundTo>e67e1a45-3498-44b5-a543-f874d00111a1</BoundTo>
+      <DependentUpon>Ueberpruefung_Anlage_PLZ.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ad1e3d59-aa9a-4706-977a-eef841fe2ca4</id>
+    </Compile>
     <Compile Include="S_LAND_SchnelltestRepository.cs">
       <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
       <DependentUpon>S_LAND_SchnelltestRepository.rxrep</DependentUpon>
@@ -180,6 +252,11 @@
     <None Include="app.config">
       <id>72d82145-4b25-4c0b-a4d4-004dee9a09e5</id>
     </None>
+    <None Include="Recordings\Aendern_Einstellungen_PLZ_NEU.rxrec">
+      <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
+      <id>a8272e95-201a-428a-9c60-1d399bc5190a</id>
+      <recordtableid>a9c6df9f-1b2b-4657-9e85-b9a6529e89f0</recordtableid>
+    </None>
     <None Include="Recordings\Aenderung_Einstellungen_Land.rxrec">
       <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
       <id>c1fbd3fc-cc0b-435d-9e6b-24c35b040fd9</id>
@@ -189,6 +266,11 @@
       <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
       <id>d3ecbe91-e5a7-4166-a155-04bcac9f0487</id>
       <recordtableid>9d9ac263-6440-4bbb-9cee-4cfd65682447</recordtableid>
+    </None>
+    <None Include="Recordings\ClosePLZ.rxrec">
+      <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
+      <id>15ac575f-0683-417f-ac15-9e332601f71c</id>
+      <recordtableid>2f5bb1b5-8af3-4dda-b116-412b25477e55</recordtableid>
     </None>
     <None Include="Recordings\Loeschen_LAND_CD_ALT.rxrec">
       <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
@@ -200,6 +282,11 @@
       <id>15ca3ad4-9d0b-4538-ac61-3b1e8091ea31</id>
       <recordtableid>c609edc0-d6cb-4a40-bbe9-4117996fe6c8</recordtableid>
     </None>
+    <None Include="Recordings\Loeschen_PLZ_NEU.rxrec">
+      <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
+      <id>854f068e-cf34-43fc-91bf-b1ac03f08b12</id>
+      <recordtableid>24d534f7-38bd-43c2-b0fd-7adec927af87</recordtableid>
+    </None>
     <None Include="Recordings\Meldung_Loeschen_Datensatz_nicht_moeglich.rxrec">
       <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
       <id>7afd7eb4-af32-496b-9b64-def6ea3a541c</id>
@@ -210,10 +297,25 @@
       <id>b413ac8e-75b1-4e09-bcd4-24c85ea02014</id>
       <recordtableid>3f1eb06f-04cc-40f2-8dc0-349dfb64776f</recordtableid>
     </None>
+    <None Include="Recordings\Neuanlage_PLZ_Drittland.rxrec">
+      <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
+      <id>741d6c81-c436-48fe-a460-6f1fd1d4ac22</id>
+      <recordtableid>0c010f59-fbb4-44c4-b280-e6c3a2e99275</recordtableid>
+    </None>
     <None Include="Recordings\StartLAND.rxrec">
       <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
       <id>a7281615-b0f8-4a2b-8f5a-f25c9d2ef708</id>
       <recordtableid>a5f977cc-744d-4f50-92f6-0e05e2a4c414</recordtableid>
+    </None>
+    <None Include="Recordings\Start_PLZ.rxrec">
+      <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
+      <id>eff21a01-145b-4e3a-8d9b-123610b7b8cb</id>
+      <recordtableid>80138894-0e5d-4c09-9bfa-224f3785a1ea</recordtableid>
+    </None>
+    <None Include="Recordings\Ueberpruefung_Anlage_PLZ.rxrec">
+      <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
+      <id>e67e1a45-3498-44b5-a543-f874d00111a1</id>
+      <recordtableid>331f00ca-5b85-4879-a2b5-e1fcbfc976c3</recordtableid>
     </None>
     <None Include="S_LAND_SchnelltestRepository.rximg">
       <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>

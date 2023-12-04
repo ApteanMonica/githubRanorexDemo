@@ -92,25 +92,28 @@ namespace S_LAND_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgMessageBox.LaenderVerwalten'", repo.DlgMessageBox.LaenderVerwaltenInfo, new ActionTimeout(180000), new RecordItemIndex(0));
             repo.DlgMessageBox.LaenderVerwaltenInfo.WaitForExists(180000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Land AT wird in abhängigen Datensätzen verwendet.\r\nLöschen nicht möglich (E_LSP, S_ADR, S_BLZ, S_KLBK, S_KLDV, S_PLZ, Z_RZIEL)') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Land AT wird in abhängigen Datensätzen verwendet.\r\nLöschen nicht möglich (E_LSP, S_ADR, S_BLZ, S_KLBK, S_KLDV, S_PLZ, Z_RZIEL)");
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'Land AT wird in abhängigen Datensätzen verwendet.\nLöschen nicht möglich|Es wurde versucht einen Datensatz zu löschen, für den noch abhängige Daten existieren!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(1));
+            //Validate.AttributeRegex(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", new Regex("Land AT wird in abhängigen Datensätzen verwendet.\nLöschen nicht möglich|Es wurde versucht einen Datensatz zu löschen, für den noch abhängige Daten existieren!"));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0_OK_Meldung' at Center.", repo.DlgMessageBox.Button0_OK_MeldungInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'Land AT wird in abhängigen Datensätzen verwendet.\nLöschen nicht möglich|Es wurde versucht einen Datensatz zu löschen, für den noch abhängige Daten existieren!') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(2));
+            Validate.AttributeRegex(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", new Regex("Land AT wird in abhängigen Datensätzen verwendet.\nLöschen nicht möglich|Es wurde versucht einen Datensatz zu löschen, für den noch abhängige Daten existieren!"));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0_OK_Meldung' at Center.", repo.DlgMessageBox.Button0_OK_MeldungInfo, new RecordItemIndex(3));
             repo.DlgMessageBox.Button0_OK_Meldung.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblLaender.PbDataAccessLoad' at Center.", repo.TblLaender.PbDataAccessLoadInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblLaender.PbDataAccessLoad' at Center.", repo.TblLaender.PbDataAccessLoadInfo, new RecordItemIndex(4));
             repo.TblLaender.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to not exist. Associated repository item: 'DlgMessageBox.LaenderVerwalten'", repo.DlgMessageBox.LaenderVerwaltenInfo, new ActionTimeout(180000), new RecordItemIndex(4));
-            repo.DlgMessageBox.LaenderVerwaltenInfo.WaitForNotExists(180000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'DlgMessageBox.LaenderVerwalten'", repo.DlgMessageBox.LaenderVerwaltenInfo, new ActionTimeout(180000), new RecordItemIndex(5));
+            repo.DlgMessageBox.LaenderVerwaltenInfo.WaitForExists(180000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es wurden Daten geändert!\r\nSollen die Änderungen gespeichert werden?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es wurden Daten geändert!\r\nSollen die Änderungen gespeichert werden?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es wurden Daten geändert!\r\nSollen die Änderungen gespeichert werden?");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(7));
             repo.DlgMessageBox.Button1.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblLaender.Zeile_mit_LAND_CD_ALT.Row_mit_LAND_CD_ALT'.", repo.TblLaender.Zeile_mit_LAND_CD_ALT.Row_mit_LAND_CD_ALTInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblLaender.Zeile_mit_LAND_CD_ALT.Row_mit_LAND_CD_ALT'.", repo.TblLaender.Zeile_mit_LAND_CD_ALT.Row_mit_LAND_CD_ALTInfo, new RecordItemIndex(8));
             Validate.Exists(repo.TblLaender.Zeile_mit_LAND_CD_ALT.Row_mit_LAND_CD_ALTInfo);
             
         }

@@ -2,6 +2,10 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<setup
+			id="1076f805-803a-4b20-8d7a-6c3062d4d943"
+			name="setup">
+			</setup>
 			<testcase
 			id="283fc324-ac8f-440e-b2df-c8ab64c1d92b"
 			name="Verwalten_Land_Aufrufart_LAND">
@@ -31,6 +35,30 @@
 					name="LAND_BEZ_NEU"
 					value="Wonderland">
 					</param>
+					<param
+					name="Programm_PLZ"
+					value="S_LAND Aufrufart=PLZ">
+					</param>
+					<param
+					name="PLZ_BEZ_CD"
+					value="DRITTLAND">
+					</param>
+					<param
+					name="PLZ_NEU_ORT"
+					value="Schnelltest PLZ Anlage">
+					</param>
+					<param
+					name="PLZ_NEU"
+					value="">
+					</param>
+					<param
+					name="PLZ_VORWAHL_NEU"
+					value="0001">
+					</param>
+					<param
+					name="PLZ_NEU_KM"
+					value="530">
+					</param>
 				</parameters>
 			</testcase>
 			<teardown
@@ -48,6 +76,26 @@
 					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
 					variableid="908b91a7-c3fd-4c9e-8ca4-a53208564f63"
 					variablename="LAND_CD_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="6c15536f-02d7-4002-bf54-eda3d5302c3f"
+			name="Ueberpruefung_Anlage_PLZ"
+			ref="331f00ca-5b85-4879-a2b5-e1fcbfc976c3"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="PLZ_NEU_ORT"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="0256dd9b-47c3-4c07-98a9-94ddc20700d6"
+					variablename="PLZ_NEU_ORT">
+					</var>
+					<var
+					dataname="PLZ_NEU"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="e5ac720c-27f1-4cb7-abe4-6dc8e02aed05"
+					variablename="PLZ_NEU">
 					</var>
 				</databinding>
 			</testmodule>
@@ -124,6 +172,52 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			id="9a5b5550-7208-44d4-86f6-6f1a9c2e4226"
+			name="ClosePLZ"
+			ref="2f5bb1b5-8af3-4dda-b116-412b25477e55"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="a14bcfce-02d3-41d1-80cb-85881b150609"
+			name="Loeschen_PLZ_NEU"
+			ref="24d534f7-38bd-43c2-b0fd-7adec927af87"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="PLZ_NEU_ORT"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="23330725-514d-4b36-8f54-b06afff7a917"
+					variablename="PLZ_NEU_ORT">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="a9b27d20-2975-47ee-b39b-e38fcf6038ab"
+			name="Neuanlage_PLZ_Drittland"
+			ref="0c010f59-fbb4-44c4-b280-e6c3a2e99275"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="PLZ_BEZ_CD"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="79e34ea1-472b-4118-9426-f1b1ce15d9f1"
+					variablename="PLZ_BEZ_CD">
+					</var>
+					<var
+					dataname="PLZ_NEU_ORT"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="49987f04-ca8b-41ed-a770-f798e885f9b3"
+					variablename="PLZ_NEU_ORT">
+					</var>
+					<var
+					dataname="PLZ_NEU"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="5ba9664a-e710-431e-95b1-7f48f6e4d1db"
+					variablename="PLZ_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="ac351b70-4121-4e01-8a5b-869b65c1e0af"
 			name="Loeschen_LAND_CD_ALT"
 			ref="000e7c00-38c9-48c1-8c4c-55d47b4c5273"
@@ -165,6 +259,10 @@
 					</var>
 				</missingdatabinding>
 			</testmodule>
+			<testcase
+			id="d4c37f0f-dc4c-4266-9139-400073216222"
+			name="Verwalten_PLZ_Aufrufart_PLZ">
+			</testcase>
 			<testmodule
 			id="d8c58d8f-31de-4a21-9200-32ee656efc23"
 			name="Meldung_Loeschen_Datensatz_nicht_moeglich"
@@ -179,10 +277,66 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="dde56ca2-28f4-4eaa-8c4b-9baf8dbe43ba"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="eb07c9d1-18f0-4aad-a219-811ae859db7b"
+			name="Start_PLZ"
+			ref="80138894-0e5d-4c09-9bfa-224f3785a1ea"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Programm_PLZ"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="861dcda1-67ac-42c0-89b3-3a3fbc702c48"
+					variablename="Programm_PLZ">
+					</var>
+					<var
+					dataname="Programm_LAND"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="24f3073d-83ce-449e-a473-4fc92d461a21"
+					variablename="Programm_Land">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="dcc1c325-e562-4055-8e0e-e927bf6257ab"
+					variablename="Startfile">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="ed516115-917c-42f9-9f5a-c6487460f1cc"
 			name="setup">
 			</setup>
+			<testmodule
+			id="fdfde233-de5a-4f61-a716-ae7ae85301f4"
+			name="Aendern_Einstellungen_PLZ_NEU"
+			ref="a9c6df9f-1b2b-4657-9e85-b9a6529e89f0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="PLZ_NEU_ORT"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="23330725-514d-4b36-8f54-b06afff7a917"
+					variablename="PLZ_NEU_ORT">
+					</var>
+					<var
+					dataname="PLZ_VORWAHL_NEU"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="c91dc842-6bf5-4efb-b0bf-47e66b4e5fa3"
+					variablename="PLZ_VORWAHL_NEU">
+					</var>
+					<var
+					dataname="PLZ_NEU_KM"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="05e27564-82fe-43cd-9797-45549bc9cae6"
+					variablename="PLZ_NEU_KM">
+					</var>
+				</databinding>
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -231,6 +385,42 @@
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="d4c37f0f-dc4c-4266-9139-400073216222"
+					name="Verwalten_PLZ_Aufrufart_PLZ">
+						<setup
+						id="1076f805-803a-4b20-8d7a-6c3062d4d943"
+						name="setup">
+							<testmodule
+							id="eb07c9d1-18f0-4aad-a219-811ae859db7b"
+							name="Start_PLZ">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="a9b27d20-2975-47ee-b39b-e38fcf6038ab"
+						name="Neuanlage_PLZ_Drittland">
+						</testmodule>
+						<testmodule
+						id="6c15536f-02d7-4002-bf54-eda3d5302c3f"
+						name="Ueberpruefung_Anlage_PLZ">
+						</testmodule>
+						<testmodule
+						id="fdfde233-de5a-4f61-a716-ae7ae85301f4"
+						name="Aendern_Einstellungen_PLZ_NEU">
+						</testmodule>
+						<testmodule
+						id="a14bcfce-02d3-41d1-80cb-85881b150609"
+						name="Loeschen_PLZ_NEU">
+						</testmodule>
+						<teardown
+						id="dde56ca2-28f4-4eaa-8c4b-9baf8dbe43ba"
+						name="teardown">
+							<testmodule
+							id="9a5b5550-7208-44d4-86f6-6f1a9c2e4226"
+							name="ClosePLZ">
+							</testmodule>
+						</teardown>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -242,10 +432,10 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="283fc324-ac8f-440e-b2df-c8ab64c1d92b">
+			id="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444">
 			</testcontainer>
 			<testcontainer
-			id="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444">
+			id="d4c37f0f-dc4c-4266-9139-400073216222">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

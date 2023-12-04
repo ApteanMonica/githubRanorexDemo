@@ -24,59 +24,57 @@ namespace S_LAND_Schnelltest.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartLAND recording.
+    ///The Ueberpruefung_Anlage_PLZ recording.
     /// </summary>
-    [TestModule("a5f977cc-744d-4f50-92f6-0e05e2a4c414", ModuleType.Recording, 1)]
-    public partial class StartLAND : ITestModule
+    [TestModule("331f00ca-5b85-4879-a2b5-e1fcbfc976c3", ModuleType.Recording, 1)]
+    public partial class Ueberpruefung_Anlage_PLZ : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::S_LAND_Schnelltest.S_LAND_SchnelltestRepository repository.
         /// </summary>
         public static global::S_LAND_Schnelltest.S_LAND_SchnelltestRepository repo = global::S_LAND_Schnelltest.S_LAND_SchnelltestRepository.Instance;
 
-        static StartLAND instance = new StartLAND();
+        static Ueberpruefung_Anlage_PLZ instance = new Ueberpruefung_Anlage_PLZ();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartLAND()
+        public Ueberpruefung_Anlage_PLZ()
         {
-            Startfile = "C:\\Testdaten\\Allgemein\\Start.bat";
-            Programm_Land = "S_LAND Aufrufart=LAND";
+            PLZ_NEU_ORT = "Schnelltest PLZ Anlage";
+            PLZ_NEU = "0001";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartLAND Instance
+        public static Ueberpruefung_Anlage_PLZ Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Startfile;
+        string _PLZ_NEU;
 
         /// <summary>
-        /// Gets or sets the value of variable Startfile.
+        /// Gets or sets the value of variable PLZ_NEU.
         /// </summary>
-        [TestVariable("22fd755c-66ed-40f5-a9ab-1faf489de92e")]
-        public string Startfile
+        [TestVariable("e5ac720c-27f1-4cb7-abe4-6dc8e02aed05")]
+        public string PLZ_NEU
         {
-            get { return _Startfile; }
-            set { _Startfile = value; }
+            get { return _PLZ_NEU; }
+            set { _PLZ_NEU = value; }
         }
 
-        string _Programm_Land;
-
         /// <summary>
-        /// Gets or sets the value of variable Programm_Land.
+        /// Gets or sets the value of variable PLZ_NEU_ORT.
         /// </summary>
-        [TestVariable("6a621ea6-675d-4782-986a-779cc5ac66b2")]
-        public string Programm_Land
+        [TestVariable("0256dd9b-47c3-4c07-98a9-94ddc20700d6")]
+        public string PLZ_NEU_ORT
         {
-            get { return _Programm_Land; }
-            set { _Programm_Land = value; }
+            get { return repo.PLZ_NEU_ORT; }
+            set { repo.PLZ_NEU_ORT = value; }
         }
 
 #endregion
@@ -105,14 +103,17 @@ namespace S_LAND_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_Land in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm_Land, "", false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblPostleitzahl.PbDataAccessLoad' at Center.", repo.TblPostleitzahl.PbDataAccessLoadInfo, new RecordItemIndex(0));
+            repo.TblPostleitzahl.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblLaender.TitleBar100LaenderVerwalten'", repo.TblLaender.TitleBar100LaenderVerwaltenInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.TblLaender.TitleBar100LaenderVerwaltenInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'TblPostleitzahl.Zeile_mit_PLZ_NEU.Row_mit_Variable_PLZ_NEU_ORT'", repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.Row_mit_Variable_PLZ_NEU_ORTInfo, new ActionTimeout(180000), new RecordItemIndex(1));
+            repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.Row_mit_Variable_PLZ_NEU_ORTInfo.WaitForExists(180000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Länder') on item 'TblLaender.TitleBar100LaenderVerwalten'.", repo.TblLaender.TitleBar100LaenderVerwaltenInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.TblLaender.TitleBar100LaenderVerwaltenInfo, "Text", "Länder");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$PLZ_NEU) on item 'TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzCd_PLZ_NEU'.", repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzCd_PLZ_NEUInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzCd_PLZ_NEUInfo, "Text", PLZ_NEU);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$PLZ_NEU_ORT) on item 'TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzOrt_Ort_NEU'.", repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzOrt_Ort_NEUInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzOrt_Ort_NEUInfo, "Text", PLZ_NEU_ORT);
             
         }
 
