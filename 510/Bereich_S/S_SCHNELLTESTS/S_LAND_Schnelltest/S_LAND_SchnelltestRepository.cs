@@ -1025,6 +1025,7 @@ namespace S_LAND_Schnelltest
             RepoItemInfo _row0column0Info;
             RepoItemInfo _colplzcdrow1Info;
             RepoItemInfo _colplzortrow1Info;
+            RepoItemInfo _row1column0Info;
 
             /// <summary>
             /// Creates a new FlexGrid_Tabelle  folder.
@@ -1035,6 +1036,7 @@ namespace S_LAND_Schnelltest
                 _row0column0Info = new RepoItemInfo(this, "Row0Column0", "row[@accessiblename='Row 0']/cell[@accessiblename='Row 0 Column 0']", "", 30000, null, "d5077fca-857c-4a7f-89a3-0ed2af7b1eaa");
                 _colplzcdrow1Info = new RepoItemInfo(this, "ColPlzCdRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colPlz_cd Row 1']", "", 30000, null, "3acc2bfd-5899-46c1-9afa-5fa26cf3d0dc");
                 _colplzortrow1Info = new RepoItemInfo(this, "ColPlzOrtRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colPlz_ort Row 1']", "", 30000, null, "b2762d35-e40b-4006-ae9f-89085102ec02");
+                _row1column0Info = new RepoItemInfo(this, "Row1Column0", "row[@accessiblerole='Row' and @accessiblevalue~$PLZ_NEU_ORT]/cell[@accessiblename~'Column 0']", "", 30000, null, "5d586fae-98a3-4833-ac39-899af42d0f30");
             }
 
             /// <summary>
@@ -1132,6 +1134,30 @@ namespace S_LAND_Schnelltest
                     return _colplzortrow1Info;
                 }
             }
+
+            /// <summary>
+            /// The Row1Column0 item.
+            /// </summary>
+            [RepositoryItem("5d586fae-98a3-4833-ac39-899af42d0f30")]
+            public virtual Ranorex.Cell Row1Column0
+            {
+                get
+                {
+                    return _row1column0Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row1Column0 item info.
+            /// </summary>
+            [RepositoryItemInfo("5d586fae-98a3-4833-ac39-899af42d0f30")]
+            public virtual RepoItemInfo Row1Column0Info
+            {
+                get
+                {
+                    return _row1column0Info;
+                }
+            }
         }
 
         /// <summary>
@@ -1153,7 +1179,7 @@ namespace S_LAND_Schnelltest
                     base("Zeile_mit_PLZ_NEU", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$PLZ_NEU_ORT]", parentFolder, 30000, null, false, "5b08373f-8bc1-48af-99ef-a63d9f30f63e", "")
             {
                 _colplzcd_plz_neuInfo = new RepoItemInfo(this, "ColPlzCd_PLZ_NEU", "cell[@accessiblename~'colPlz_cd']", "", 30000, null, "91915355-e84a-48c0-bdfa-29d07ec2cf14");
-                _colplzort_ort_neuInfo = new RepoItemInfo(this, "ColPlzOrt_Ort_NEU", "cell[@accessiblename='colPlz_ort']", "", 30000, null, "51200fcd-820a-4ab0-8d4c-bc64ab904a30");
+                _colplzort_ort_neuInfo = new RepoItemInfo(this, "ColPlzOrt_Ort_NEU", "cell[@accessiblename~'colPlz_ort']", "", 30000, null, "51200fcd-820a-4ab0-8d4c-bc64ab904a30");
                 _row_mit_variable_plz_neu_ortInfo = new RepoItemInfo(this, "Row_mit_Variable_PLZ_NEU_ORT", "", "", 30000, null, "a1d2988c-0e3d-4228-bab2-f14b18ef886f");
                 _colplzvorwahl_plz_neuInfo = new RepoItemInfo(this, "ColPlzVorwahl_PLZ_NEU", "cell[@accessiblename~'colPlz_vorwahl']", "", 30000, null, "ac023483-4ab1-4533-8506-5be289eff8a2");
                 _colplzkm_plz_neuInfo = new RepoItemInfo(this, "ColPlzKm_PLZ_NEU", "cell[@accessiblename~'colPlz_km']", "", 30000, null, "3f003cd6-2ced-4514-9c44-15303d87e884");

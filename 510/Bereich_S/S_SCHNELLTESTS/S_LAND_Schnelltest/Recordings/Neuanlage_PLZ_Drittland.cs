@@ -140,33 +140,29 @@ namespace S_LAND_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblPostleitzahl.PbDataAccessLoad' at Center.", repo.TblPostleitzahl.PbDataAccessLoadInfo, new RecordItemIndex(7));
             repo.TblPostleitzahl.PbDataAccessLoad.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'TblPostleitzahl.FlexGrid_Tabelle' at Center.", repo.TblPostleitzahl.FlexGrid_Tabelle.SelfInfo, new RecordItemIndex(8));
-            repo.TblPostleitzahl.FlexGrid_Tabelle.Self.Click(System.Windows.Forms.MouseButtons.Right);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'TblPostleitzahl.FlexGrid_Tabelle.Row0Column0'", repo.TblPostleitzahl.FlexGrid_Tabelle.Row0Column0Info, new ActionTimeout(180000), new RecordItemIndex(8));
+            repo.TblPostleitzahl.FlexGrid_Tabelle.Row0Column0Info.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Insert}'.", new RecordItemIndex(9));
             Keyboard.Press("{Insert}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click at {X=0,Y=0}.", new RecordItemIndex(10));
-            Mouse.MoveTo(0, 0);
-            Mouse.Click(System.Windows.Forms.MouseButtons.Left);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '0001{Tab}'.", new RecordItemIndex(10));
+            Keyboard.Press("0001{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PLZ_NEU'.", new RecordItemIndex(11));
-            Keyboard.Press(PLZ_NEU);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click at {X=0,Y=0}.", new RecordItemIndex(12));
-            Mouse.MoveTo(0, 0);
-            Mouse.Click(System.Windows.Forms.MouseButtons.Left);
-            
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(13));
-            //Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PLZ_NEU_ORT' with focus on 'TblPostleitzahl.FlexGrid_Tabelle.ColPlzOrtRow1'.", repo.TblPostleitzahl.FlexGrid_Tabelle.ColPlzOrtRow1Info, new RecordItemIndex(14));
-            repo.TblPostleitzahl.FlexGrid_Tabelle.ColPlzOrtRow1.PressKeys(PLZ_NEU_ORT);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(11));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblPostleitzahl.PbDataAccessSave' at Center.", repo.TblPostleitzahl.PbDataAccessSaveInfo, new RecordItemIndex(16));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click at {X=0,Y=0}.", new RecordItemIndex(12));
+            //Mouse.MoveTo(0, 0);
+            //Mouse.Click(System.Windows.Forms.MouseButtons.Left);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$PLZ_NEU_ORT' with focus on 'TblPostleitzahl.FlexGrid_Tabelle.ColPlzOrtRow1'.", repo.TblPostleitzahl.FlexGrid_Tabelle.ColPlzOrtRow1Info, new RecordItemIndex(13));
+            repo.TblPostleitzahl.FlexGrid_Tabelle.ColPlzOrtRow1.PressKeys(PLZ_NEU_ORT);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(14));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblPostleitzahl.PbDataAccessSave' at Center.", repo.TblPostleitzahl.PbDataAccessSaveInfo, new RecordItemIndex(15));
             repo.TblPostleitzahl.PbDataAccessSave.Click();
             
         }

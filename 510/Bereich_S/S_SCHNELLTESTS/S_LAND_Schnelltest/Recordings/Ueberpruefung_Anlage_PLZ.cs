@@ -109,8 +109,8 @@ namespace S_LAND_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'TblPostleitzahl.Zeile_mit_PLZ_NEU.Row_mit_Variable_PLZ_NEU_ORT'", repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.Row_mit_Variable_PLZ_NEU_ORTInfo, new ActionTimeout(180000), new RecordItemIndex(1));
             repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.Row_mit_Variable_PLZ_NEU_ORTInfo.WaitForExists(180000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$PLZ_NEU) on item 'TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzCd_PLZ_NEU'.", repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzCd_PLZ_NEUInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzCd_PLZ_NEUInfo, "Text", PLZ_NEU);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='0001') on item 'TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzCd_PLZ_NEU'.", repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzCd_PLZ_NEUInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzCd_PLZ_NEUInfo, "Text", "0001");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$PLZ_NEU_ORT) on item 'TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzOrt_Ort_NEU'.", repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzOrt_Ort_NEUInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzOrt_Ort_NEUInfo, "Text", PLZ_NEU_ORT);
