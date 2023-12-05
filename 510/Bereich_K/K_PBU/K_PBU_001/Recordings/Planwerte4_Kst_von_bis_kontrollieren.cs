@@ -107,18 +107,6 @@ namespace K_PBU_001.Recordings
             set { _Konto3 = value; }
         }
 
-        string _Kostenstelle2;
-
-        /// <summary>
-        /// Gets or sets the value of variable Kostenstelle2.
-        /// </summary>
-        [TestVariable("ba2246c7-82fb-4380-852d-2a3daadf6df9")]
-        public string Kostenstelle2
-        {
-            get { return _Kostenstelle2; }
-            set { _Kostenstelle2 = value; }
-        }
-
         string _Kostentraeger;
 
         /// <summary>
@@ -129,6 +117,16 @@ namespace K_PBU_001.Recordings
         {
             get { return _Kostentraeger; }
             set { _Kostentraeger = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable Kostenstelle2.
+        /// </summary>
+        [TestVariable("ba2246c7-82fb-4380-852d-2a3daadf6df9")]
+        public string Kostenstelle2
+        {
+            get { return repo.Kostenstelle2; }
+            set { repo.Kostenstelle2 = value; }
         }
 
 #endregion

@@ -103,11 +103,8 @@ namespace K_AUSW_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(7));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'TblAnzeige.TitleBar100GuVSec231UGBStand2016'", repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, new ActionTimeout(300000), new RecordItemIndex(8));
-            repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info.WaitForExists(300000);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to not exist. Associated repository item: 'FrmProgress'", repo.FrmProgress.SelfInfo, new ActionTimeout(120000), new RecordItemIndex(9));
-            repo.FrmProgress.SelfInfo.WaitForNotExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to not exist. Associated repository item: 'FrmProgress'", repo.FrmProgress.SelfInfo, new ActionTimeout(300000), new RecordItemIndex(8));
+            repo.FrmProgress.SelfInfo.WaitForNotExists(300000);
             
         }
 

@@ -67,16 +67,14 @@ namespace K_PBU_001.Recordings
             set { _Kostenstelle = value; }
         }
 
-        string _Kostenstelle2;
-
         /// <summary>
         /// Gets or sets the value of variable Kostenstelle2.
         /// </summary>
         [TestVariable("aaddb638-39d3-4dbb-8a60-516b679f8341")]
         public string Kostenstelle2
         {
-            get { return _Kostenstelle2; }
-            set { _Kostenstelle2 = value; }
+            get { return repo.Kostenstelle2; }
+            set { repo.Kostenstelle2 = value; }
         }
 
 #endregion

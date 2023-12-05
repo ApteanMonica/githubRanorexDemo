@@ -59,6 +59,18 @@ namespace K_PBU_001
 
 #region Variables
 
+        string _Kostenstelle2 = "20";
+
+        /// <summary>
+        /// Gets or sets the value of variable Kostenstelle2.
+        /// </summary>
+        [TestVariable("736bbf47-b3f1-4a9c-b208-22291b1693fb")]
+        public string Kostenstelle2
+        {
+            get { return _Kostenstelle2; }
+            set { _Kostenstelle2 = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -3443,7 +3455,9 @@ namespace K_PBU_001
             RepoItemInfo _periode_vonInfo;
             RepoItemInfo _jahr_bisInfo;
             RepoItemInfo _periode_bisInfo;
-            RepoItemInfo _kostenstellen_vonInfo;
+            RepoItemInfo _kostenstelle_von_510_530_accessibleroleInfo;
+            RepoItemInfo _kostenstellen_von_510_520Info;
+            RepoItemInfo _dfks1von_530Info;
             RepoItemInfo _kostenstellen_bisInfo;
 
             /// <summary>
@@ -3458,7 +3472,9 @@ namespace K_PBU_001
                 _periode_vonInfo = new RepoItemInfo(this, "Periode_von", "text[@controlname='dfPeriodeV']/text[@accessiblerole='Text']", "", 30000, null, "d0f64ca1-85b5-4f81-b354-47d338c7fbc1");
                 _jahr_bisInfo = new RepoItemInfo(this, "Jahr_bis", "text[@controlname='dfJahrB']/text[@accessiblerole='Text']", "", 30000, null, "dc1ed656-a776-4a54-9bd5-01545e8a27d3");
                 _periode_bisInfo = new RepoItemInfo(this, "Periode_bis", "text[@controlname='dfPeriodeB']/text[@accessiblename='bis']", "", 30000, null, "77325648-2e45-435f-8659-961a79421d92");
-                _kostenstellen_vonInfo = new RepoItemInfo(this, "Kostenstellen_von", "text[@controlname='dfKs1_von']/text[@accessiblename='Kostenstellen']", "", 30000, null, "cc7e6b1f-3186-4d6d-a5c2-6b2ba0e0009f");
+                _kostenstelle_von_510_530_accessibleroleInfo = new RepoItemInfo(this, "Kostenstelle_von_510_530_accessiblerole", "text[@controlname='dfKs1_von']/text[@accessiblerole='Text']", "", 30000, null, "a5910899-1125-430e-9bc9-e25bf1b695b1");
+                _kostenstellen_von_510_520Info = new RepoItemInfo(this, "Kostenstellen_von_510_520", "text[@controlname='dfKs1_von']/text[@accessiblename='Kostenstellen']", "", 30000, null, "cc7e6b1f-3186-4d6d-a5c2-6b2ba0e0009f");
+                _dfks1von_530Info = new RepoItemInfo(this, "DfKs1Von_530", "text[@controlname='dfKs1_von']", "", 30000, null, "9a7460b2-61b2-45c1-9c55-8a0db62e59a2");
                 _kostenstellen_bisInfo = new RepoItemInfo(this, "Kostenstellen_bis", "text[@controlname='dfKs1_bis']/text[@accessiblerole='Text']", "", 30000, null, "4b2f73c4-a94a-409f-950e-a09bc504680a");
             }
 
@@ -3631,26 +3647,74 @@ namespace K_PBU_001
             }
 
             /// <summary>
-            /// The Kostenstellen_von item.
+            /// The Kostenstelle_von_510_530_accessiblerole item.
             /// </summary>
-            [RepositoryItem("cc7e6b1f-3186-4d6d-a5c2-6b2ba0e0009f")]
-            public virtual Ranorex.Text Kostenstellen_von
+            [RepositoryItem("a5910899-1125-430e-9bc9-e25bf1b695b1")]
+            public virtual Ranorex.Text Kostenstelle_von_510_530_accessiblerole
             {
                 get
                 {
-                    return _kostenstellen_vonInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _kostenstelle_von_510_530_accessibleroleInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The Kostenstellen_von item info.
+            /// The Kostenstelle_von_510_530_accessiblerole item info.
             /// </summary>
-            [RepositoryItemInfo("cc7e6b1f-3186-4d6d-a5c2-6b2ba0e0009f")]
-            public virtual RepoItemInfo Kostenstellen_vonInfo
+            [RepositoryItemInfo("a5910899-1125-430e-9bc9-e25bf1b695b1")]
+            public virtual RepoItemInfo Kostenstelle_von_510_530_accessibleroleInfo
             {
                 get
                 {
-                    return _kostenstellen_vonInfo;
+                    return _kostenstelle_von_510_530_accessibleroleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Kostenstellen_von_510_520 item.
+            /// </summary>
+            [RepositoryItem("cc7e6b1f-3186-4d6d-a5c2-6b2ba0e0009f")]
+            public virtual Ranorex.Text Kostenstellen_von_510_520
+            {
+                get
+                {
+                    return _kostenstellen_von_510_520Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Kostenstellen_von_510_520 item info.
+            /// </summary>
+            [RepositoryItemInfo("cc7e6b1f-3186-4d6d-a5c2-6b2ba0e0009f")]
+            public virtual RepoItemInfo Kostenstellen_von_510_520Info
+            {
+                get
+                {
+                    return _kostenstellen_von_510_520Info;
+                }
+            }
+
+            /// <summary>
+            /// The DfKs1Von_530 item.
+            /// </summary>
+            [RepositoryItem("9a7460b2-61b2-45c1-9c55-8a0db62e59a2")]
+            public virtual Ranorex.Text DfKs1Von_530
+            {
+                get
+                {
+                    return _dfks1von_530Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DfKs1Von_530 item info.
+            /// </summary>
+            [RepositoryItemInfo("9a7460b2-61b2-45c1-9c55-8a0db62e59a2")]
+            public virtual RepoItemInfo DfKs1Von_530Info
+            {
+                get
+                {
+                    return _dfks1von_530Info;
                 }
             }
 

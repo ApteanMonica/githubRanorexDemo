@@ -79,11 +79,11 @@ namespace K_AUSW_001.Recordings_k_ausw
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblAnzeige.TitleBar_mit_Text_'.", repo.TblAnzeige.TitleBar_mit_Text_Info, new RecordItemIndex(0));
-            //Validate.Exists(repo.TblAnzeige.TitleBar_mit_Text_Info);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblAnzeige.TitleBar100GuVSec231UGBStand2016'", repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, new ActionTimeout(120000), new RecordItemIndex(0));
+            repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info.WaitForExists(120000);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Code <GB / Geschäftsbericht>') on item 'TblAnzeige.TitleBar_mit_Text_'.", repo.TblAnzeige.TitleBar_mit_Text_Info, new RecordItemIndex(1));
-            //Validate.AttributeContains(repo.TblAnzeige.TitleBar_mit_Text_Info, "Text", "Code <GB / Geschäftsbericht>");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Code <GB / Geschäftsbericht>') on item 'TblAnzeige.TitleBar100GuVSec231UGBStand2016'.", repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, "Text", "Code <GB / Geschäftsbericht>");
             
             // Search Timeout + 1m
             Report.Log(ReportLevel.Info, "Validation", "Search Timeout + 1m\r\nValidating AttributeContains (Text>'4810\tMieterträge') on item 'TblAnzeige.ChildTableWindow.Row3'.", repo.TblAnzeige.ChildTableWindow.Row3Info, new RecordItemIndex(2));

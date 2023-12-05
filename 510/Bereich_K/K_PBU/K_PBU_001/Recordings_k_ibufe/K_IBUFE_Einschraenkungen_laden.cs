@@ -80,16 +80,14 @@ namespace K_PBU_001.Recordings_k_ibufe
             set { _Kostenstelle = value; }
         }
 
-        string _Kostenstelle2;
-
         /// <summary>
         /// Gets or sets the value of variable Kostenstelle2.
         /// </summary>
         [TestVariable("85e64b91-cf3e-4f7a-93de-4e2075b81261")]
         public string Kostenstelle2
         {
-            get { return _Kostenstelle2; }
-            set { _Kostenstelle2 = value; }
+            get { return repo.Kostenstelle2; }
+            set { repo.Kostenstelle2 = value; }
         }
 
 #endregion
@@ -163,11 +161,11 @@ namespace K_PBU_001.Recordings_k_ibufe
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(14));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblIbufe.ToolBar.Kostenstellen_von' at Center.", repo.TblIbufe.ToolBar.Kostenstellen_vonInfo, new RecordItemIndex(15));
-            repo.TblIbufe.ToolBar.Kostenstellen_von.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblIbufe.ToolBar.Kostenstelle_von_510_530_accessiblerole' at Center.", repo.TblIbufe.ToolBar.Kostenstelle_von_510_530_accessibleroleInfo, new RecordItemIndex(15));
+            repo.TblIbufe.ToolBar.Kostenstelle_von_510_530_accessiblerole.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kostenstelle' with focus on 'TblIbufe.ToolBar.Kostenstellen_von'.", repo.TblIbufe.ToolBar.Kostenstellen_vonInfo, new RecordItemIndex(16));
-            repo.TblIbufe.ToolBar.Kostenstellen_von.PressKeys(Kostenstelle);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Kostenstelle' with focus on 'TblIbufe.ToolBar.Kostenstelle_von_510_530_accessiblerole'.", repo.TblIbufe.ToolBar.Kostenstelle_von_510_530_accessibleroleInfo, new RecordItemIndex(16));
+            repo.TblIbufe.ToolBar.Kostenstelle_von_510_530_accessiblerole.PressKeys(Kostenstelle);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(17));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -196,8 +194,8 @@ namespace K_PBU_001.Recordings_k_ibufe
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='12') on item 'TblIbufe.ToolBar.Periode_bis'.", repo.TblIbufe.ToolBar.Periode_bisInfo, new RecordItemIndex(25));
             Validate.AttributeEqual(repo.TblIbufe.ToolBar.Periode_bisInfo, "Text", "12");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kostenstelle) on item 'TblIbufe.ToolBar.Kostenstellen_von'.", repo.TblIbufe.ToolBar.Kostenstellen_vonInfo, new RecordItemIndex(26));
-            Validate.AttributeEqual(repo.TblIbufe.ToolBar.Kostenstellen_vonInfo, "Text", Kostenstelle);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kostenstelle) on item 'TblIbufe.ToolBar.Kostenstelle_von_510_530_accessiblerole'.", repo.TblIbufe.ToolBar.Kostenstelle_von_510_530_accessibleroleInfo, new RecordItemIndex(26));
+            Validate.AttributeEqual(repo.TblIbufe.ToolBar.Kostenstelle_von_510_530_accessibleroleInfo, "Text", Kostenstelle);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Kostenstelle2) on item 'TblIbufe.ToolBar.Kostenstellen_bis'.", repo.TblIbufe.ToolBar.Kostenstellen_bisInfo, new RecordItemIndex(27));
             Validate.AttributeEqual(repo.TblIbufe.ToolBar.Kostenstellen_bisInfo, "Text", Kostenstelle2);
