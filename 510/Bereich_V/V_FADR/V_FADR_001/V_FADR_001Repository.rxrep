@@ -28,7 +28,7 @@ name="V_FADR_001Repository">
 			refimgid="77847a7c-f311-4a15-8af0-04faeaa4b2cb"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controltypename='tblFadr']/titlebar[@accessiblerole='TitleBar']
+				/form[@controlname='tblFadr']/titlebar[@accessiblerole='TitleBar']
 			</item>
 			<item
 			addcaps="titlebar,accessible"
@@ -38,7 +38,17 @@ name="V_FADR_001Repository">
 			refimgid="77847a7c-f311-4a15-8af0-04faeaa4b2cb"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controltypename='tblFadr']/titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'Fakturierung']
+				/form[@controlname='tblFadr']/titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'Fakturierung']
+			</item>
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="437a8a09-e70f-4afe-b609-78613a2c23be"
+			name="TitleBar100Fakturierung_mit_Text_Auftragsbestaetigung"
+			refimgid="77847a7c-f311-4a15-8af0-04faeaa4b2cb"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblFadr']/titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'Auftragsbestätigung']
 			</item>
 			<item
 			addcaps="titlebar,accessible"
@@ -48,7 +58,7 @@ name="V_FADR_001Repository">
 			refimgid="77847a7c-f311-4a15-8af0-04faeaa4b2cb"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controltypename='tblFadr']/titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'keine Rückmeldung']
+				/form[@controlname='tblFadr']/titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'keine Rückmeldung']
 			</item>
 			<item
 			addcaps="button,control,nativewindow"
@@ -58,7 +68,7 @@ name="V_FADR_001Repository">
 			refimgid="bf5f546f-644c-4316-8114-f9f71a5159d3"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controltypename='tblFadr']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Load']
+				/form[@controlname='tblFadr']/container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Load']
 			</item>
 			<item
 			addcaps="button,control,nativewindow"
@@ -68,7 +78,7 @@ name="V_FADR_001Repository">
 			refimgid="90b96872-c88d-4f42-8742-f98cf940bba1"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controltypename='tblFadr']/container[@controlname='RibbonBar']/container[@controlname='Spec3Group']/button[@controlname='pbSpec3_Extras']
+				/form[@controlname='tblFadr']/container[@controlname='RibbonBar']/container[@controlname='Spec3Group']/button[@controlname='pbSpec3_Extras']
 			</item>
 			<item
 			addcaps="button,control,nativewindow"
@@ -78,7 +88,7 @@ name="V_FADR_001Repository">
 			refimgid="e4910ac7-e5f1-4042-b5f5-3553e6270217"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controltypename='tblFadr']/container[@controlname='RibbonBar']/container[@controlname='Spec2Group']/button[@controlname='pbSpec2_Fakturenerstellung']
+				/form[@controlname='tblFadr']/container[@controlname='RibbonBar']/container[@controlname='Spec2Group']/button[@controlname='pbSpec2_Fakturenerstellung']
 			</item>
 			<item
 			addcaps="button,control,nativewindow"
@@ -88,7 +98,7 @@ name="V_FADR_001Repository">
 			refimgid="ffb355d7-6b4f-46d6-80bc-48fc848dc9cb"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controltypename='tblFadr']/container[@controlname='RibbonBar']/container[@controlname='Spec2Group']/button[@controlname='pbSpec2_VSRechnung']
+				/form[@controlname='tblFadr']/container[@controlname='RibbonBar']/container[@controlname='Spec2Group']/button[@controlname='pbSpec2_VSRechnung']
 			</item>
 			<item
 			addcaps="button,control,nativewindow"
@@ -98,7 +108,7 @@ name="V_FADR_001Repository">
 			refimgid="1b8e22d9-7fd6-4768-a3c3-718ac19c922a"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controltypename='tblFadr']/container[@controlname='RibbonBar']/container[@controlname='ShareGroup']/button[@controlname='pbShare_Drucken']
+				/form[@controlname='tblFadr']/container[@controlname='RibbonBar']/container[@controlname='ShareGroup']/button[@controlname='pbShare_Drucken']
 			</item>
 			<item
 			addcaps="button"
@@ -106,10 +116,9 @@ name="V_FADR_001Repository">
 			id="be7e40df-3c2e-4b4b-be6c-4c9060d78674"
 			name="PageLeft"
 			refimgid="0568c655-ad77-4117-91eb-76e25f49c6ae"
-			refpath="/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/scrollbar[@style='Horizontal']/button[@text='PageLeft']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controltypename='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/scrollbar[@style='Horizontal']/button[@text='PageLeft']
+				/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/scrollbar[@style='Horizontal']/button[@text='PageLeft']
 			</item>
 			<item
 			addcaps="radiobutton,control,nativewindow"
@@ -119,7 +128,7 @@ name="V_FADR_001Repository">
 			refimgid="a9c452ea-6538-47b1-bb89-f6e0681e409a"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/radiobutton[@controlname='rbLadenErstellen']
+				/form[@controlname='tblFadr']/container[@controlname='ToolBar']/radiobutton[@controlname='rbLadenErstellen']
 			</item>
 			<item
 			addcaps="radiobutton,control,nativewindow"
@@ -129,7 +138,7 @@ name="V_FADR_001Repository">
 			refimgid="0d5340c6-5b6c-4873-b35a-0b16f4c5f768"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/radiobutton[@controlname='rbLadenDruck']
+				/form[@controlname='tblFadr']/container[@controlname='ToolBar']/radiobutton[@controlname='rbLadenDruck']
 			</item>
 			<item
 			addcaps="text,control,nativewindow"
@@ -139,7 +148,7 @@ name="V_FADR_001Repository">
 			refimgid="b51c2974-7550-4867-a420-7dfce4e02c94"
 			robustPath=""
 			searchtimeout="90000ms">
-				/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/text[@windowtext=$Tagesdatum]
+				/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/text[@windowtext=$Tagesdatum]
 			</item>
 			<item
 			addcaps="text,control,nativewindow"
@@ -149,7 +158,7 @@ name="V_FADR_001Repository">
 			refimgid="b51c2974-7550-4867-a420-7dfce4e02c94"
 			robustPath=""
 			searchtimeout="90000ms">
-				/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/text[@text~$Tagesdatum]
+				/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/text[@text~$Tagesdatum]
 			</item>
 			<folder
 			capname="table"
@@ -166,7 +175,7 @@ name="V_FADR_001Repository">
 				refimgid="8915730a-1b5a-4326-ad78-d4bc0baf0e63"
 				robustPath=""
 				searchtimeout="90000ms">
-					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element/table/row[@accessiblename='Row 1']/cell[@accessiblename~'colRech_art']
+					/form[@controlname='tblFadr']/container/container[@controlname='tblRech_art']/element/table/row[@accessiblename='Row 1']/cell[@accessiblename~'colRech_art']
 				</item>
 				<item
 				addcaps="text,control,nativewindow"
@@ -176,7 +185,7 @@ name="V_FADR_001Repository">
 				refimgid="8915730a-1b5a-4326-ad78-d4bc0baf0e63"
 				robustPath=""
 				searchtimeout="90000ms">
-					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element/table/row[@accessiblename='Row 2']/cell[@accessiblename~'colRech_art']
+					/form[@controlname='tblFadr']/container/container[@controlname='tblRech_art']/element/table/row[@accessiblename='Row 2']/cell[@accessiblename~'colRech_art']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -186,7 +195,7 @@ name="V_FADR_001Repository">
 				refimgid="127c4dcd-8244-4e20-a5dd-2192f4a217ec"
 				robustPath=""
 				searchtimeout="60000ms">
-					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element/table/row[@accessiblename='Row 1']/cell[@accessiblename~'colLsk_datum']
+					/form[@controlname='tblFadr']/container/container[@controlname='tblRech_art']/element/table/row[@accessiblename='Row 1']/cell[@accessiblename~'colLsk_datum']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -196,7 +205,7 @@ name="V_FADR_001Repository">
 				refimgid="b8c1b522-c24c-4eac-aedd-861a216acd9a"
 				robustPath=""
 				searchtimeout="60000ms">
-					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element/table/row[@accessiblename='Row 2']/cell[@accessiblename~'colLsk_datum']
+					/form[@controlname='tblFadr']/container/container[@controlname='tblRech_art']/element/table/row[@accessiblename='Row 2']/cell[@accessiblename~'colLsk_datum']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -206,7 +215,7 @@ name="V_FADR_001Repository">
 				refimgid="127c4dcd-8244-4e20-a5dd-2192f4a217ec"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element/table/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @text='']
+					/form[@controlname='tblFadr']/container/container[@controlname='tblRech_art']/element/table/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @text='']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -216,10 +225,10 @@ name="V_FADR_001Repository">
 				refimgid="127c4dcd-8244-4e20-a5dd-2192f4a217ec"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element/table/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @accessiblevalue=$Tagesdatum]
+					/form[@controlname='tblFadr']/container/container[@controlname='tblRech_art']/element/table/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @accessiblevalue=$Tagesdatum]
 				</item>
 				<basepath>
-					/form[@controltypename='tblFadr']/container/container[@controlname='tblRech_art']/element/table
+					/form[@controlname='tblFadr']/container/container[@controlname='tblRech_art']/element/table
 				</basepath>
 			</folder>
 			<folder
@@ -237,7 +246,7 @@ name="V_FADR_001Repository">
 				refimgid="fc284d3c-ce8d-4665-9055-e5e8398fb010"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Auftragsnummer]/cell[@accessiblename~'Column 0']
+					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Auftragsnummer]/cell[@accessiblename~'Column 0']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -247,7 +256,7 @@ name="V_FADR_001Repository">
 				refimgid="fc284d3c-ce8d-4665-9055-e5e8398fb010"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Auftragsnummer]
+					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Auftragsnummer]
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -257,7 +266,7 @@ name="V_FADR_001Repository">
 				refimgid="1e7451ef-e5b7-4c86-8587-3326d054e195"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Auftragsnummer]/cell[@accessiblename~'colAufk_nr']
+					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$Auftragsnummer]/cell[@accessiblename~'colAufk_nr']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -267,10 +276,10 @@ name="V_FADR_001Repository">
 				refimgid="48adb459-2075-47b6-8587-9c3a91e0d5b7"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colRech_nr Row 1']
+					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colRech_nr Row 1']
 				</item>
 				<basepath>
-					/form[@controltypename='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+					/form[@controlname='tblFadr']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
 				</basepath>
 			</folder>
 			<folder
@@ -288,7 +297,7 @@ name="V_FADR_001Repository">
 				refimgid="8915730a-1b5a-4326-ad78-d4bc0baf0e63"
 				robustPath=""
 				searchtimeout="90000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colRech_art Row 1']
+					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colRech_art Row 1']
 				</item>
 				<item
 				addcaps="text,control,nativewindow"
@@ -298,7 +307,7 @@ name="V_FADR_001Repository">
 				refimgid="8915730a-1b5a-4326-ad78-d4bc0baf0e63"
 				robustPath=""
 				searchtimeout="90000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colRech_art Row 2']
+					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colRech_art Row 2']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -308,7 +317,7 @@ name="V_FADR_001Repository">
 				refimgid="127c4dcd-8244-4e20-a5dd-2192f4a217ec"
 				robustPath=""
 				searchtimeout="60000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1']
+					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -318,7 +327,7 @@ name="V_FADR_001Repository">
 				refimgid="b8c1b522-c24c-4eac-aedd-861a216acd9a"
 				robustPath=""
 				searchtimeout="60000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colLsk_datum Row 2']
+					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 2']/cell[@accessiblename='colLsk_datum Row 2']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -328,7 +337,7 @@ name="V_FADR_001Repository">
 				refimgid="127c4dcd-8244-4e20-a5dd-2192f4a217ec"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @text='']
+					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @text='']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -338,14 +347,32 @@ name="V_FADR_001Repository">
 				refimgid="127c4dcd-8244-4e20-a5dd-2192f4a217ec"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @accessiblevalue=$Tagesdatum]
+					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colLsk_datum Row 1' and @accessiblevalue=$Tagesdatum]
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="13d4d4e8-d6a0-4e87-af66-a8889fac3a0a"
+				name="ColRechValutadatumVorschlagRow1"
+				refimgid="9acba1cf-91b0-420d-bc7e-368780fe5acf"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename&gt;'colRech_valutadatum_vorschlag']
 				</item>
 				<basepath>
-					/form[@controltypename='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+					/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
 				</basepath>
 			</folder>
+			<item
+			capname="cell"
+			id="b2990691-6244-4d64-ad63-1231d5b76083"
+			name="Valutadatum"
+			robustPath="/form[@controltypename='tblFadr']/element"
+			searchtimeout="30000ms">
+				/form[@controlname='tblFadr']/form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename&gt;'colRech_valutadatum_vorschlag']
+			</item>
 			<basepath>
-				/form[@controltypename='tblFadr']
+				/form[@controlname='tblFadr']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
@@ -395,6 +422,17 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			robustPath=""
 			searchtimeout="30000ms">
 				/contextmenu[@processname='V_FADR']/menuitem[@accessiblename='Rechnung ändern']
+			</item>
+			<item
+			addcaps="menuitem,uiautomation,uiautomationinvoke"
+			capname="menuitem"
+			id="76675fb0-ab3d-4ff8-9c57-abdb82a29967"
+			name="Rechnung"
+			refimgid="eb8ad18e-ac88-47a7-bb26-4ac4b17c1620"
+			refpath="/contextmenu[@processname='V_FADR']/menuitem[@name='Rechnung']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='V_FADR']/menuitem[@name='Rechnung']
 			</item>
 			<basepath>
 				/contextmenu[@processname='V_FADR']
@@ -874,6 +912,44 @@ DsQBlSsOGwAAAPlJREFUOE+l0r1rwkAABfD8Y0J3CaVrJ2fNpoufiNHFFrK5OWcwpJOgi4goGBGU
 M78/U+y239h7DsajNrqdBgZWiyLPm7UTLNiuZwz5kBxZlqlrXqko0LQSbHvis1EslmjOFvwvIOdv
 QdSnwXVX1MdnOSgYWk32EnGrwDASyOdfEA6HoCjvyGQjNGcLjvsFRQqu8wlvM/fvYQnTVBGPv/oF
 b0gm01DVQnAHZAHvdu/FFjyK+3eJ4IYiuKEIbng/SBe1JRbLNoYtcwAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="29594953-9f0d-4a13-838e-3f05d393ac30"
+		isrooted="True"
+		name="TblFadr1"
+		refimgid="a85d4936-15d5-46f0-808a-31c1b072fb2b"
+		refpath="/form[@controlname='tblFadr']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="1555154c-c183-4357-ae78-ef9c0d0ae26f"
+			name="PbSpec1Modus"
+			refimgid="cd9466a9-8ddd-40a4-bb99-1bb76bc099b7"
+			refpath="/form[@controlname='tblFadr']/container[@controlname='RibbonBar']/container[@controlname='Spec1Group']/button[@controlname='pbSpec1_Modus']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblFadr']/container[@controlname='RibbonBar']/container[@controlname='Spec1Group']/button[@controlname='pbSpec1_Modus']
+			</item>
+			<basepath>
+				/form[@controlname='tblFadr']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH7SURBVDhPlZPPaxNBFMcXxYsXV0lQ3JSgC9nE
+7rJZt0l3Z9BDDnrQfyA0eMmtl+KP0Hsg5CZ4Fi0hZyneqkFMUEyh2jWeLPoHCBIQPHiw2a/vTawW
+kj3kwWO+szPvM19m52kccSwOMJFYJOOJjONY3lHFjiMgxGIZhgIP7gloTFtdFUifF8jlBMplAf2c
+gE1Qf0Xg9BkBz5sPOXGKAZC4ZAp8/0bWSFuWAA4lfv2UyLGmb18PJIIgCUCbv3yWuGjQ5lhi+5nE
+leWp3tgQWF8nMGnPTQBMfof48FFTNnf3NLzbPQnXlXgfadh+voS8JbFH+uGj5fmA+DDEzRsh7t73
+sU8giwqebOWxP9Lg2BIvX11A9EnDCt3HXABigRItDt7qePy0AP+qRP/NWWxu+rh+TeA16Vu3Q1WQ
+z+eRSqVg2/YxAP2F49SkzGQMutD/USgUZgGe52E4HKJer6PVaqHf72M8HqPZbKLb7apCendq1HV9
+FmBZllrk6PV6aqxUKmpk+3zAaDRSc9d1kwHtdpssZ5Tm6HQ6KJVKWFurqXm1WlX7EwFsv9FoIIoi
+1GrToiPrOzsvYJqX6cWWZwF8MRzsIJvNKn0Ug8Hgr5pGOp2eAriruDEYEASBcuH7vpo7jgPDMFAs
+FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<basepath>

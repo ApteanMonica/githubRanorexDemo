@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace V_FADR_001.Recordings
 {
-    public partial class Lieferschein_laden_2_Eingabe_umgedreht
+    public partial class Start_v_fadr_manuell_Modus_Rechnung
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

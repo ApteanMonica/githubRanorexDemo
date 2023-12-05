@@ -19,7 +19,7 @@ mode="Desktop">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="StartAUT"
+	classname="Start_v_fadr_FAK"
 	namespace="V_FADR_001.Recordings">
 	</codegen>
 	<variables>
@@ -30,12 +30,8 @@ mode="Desktop">
 		</var>
 		<var
 		id="eb327afb-4f65-4399-b269-c72d5c708f89"
-		name="Programm">
+		name="Programm_FAK">
 			V_FADR Aufrufart FAK
-		</var>
-		<var
-		id="b2600755-24e4-4043-a141-445844ed094f"
-		name="Tagesdatum">
 		</var>
 	</variables>
 	<recorditems>
@@ -48,7 +44,7 @@ mode="Desktop">
 			<bindings>
 				<binding
 				target="Arguments"
-				variable="Programm">
+				variable="Programm_FAK">
 				</binding>
 				<binding
 				target="FileName"
@@ -101,26 +97,6 @@ mode="Desktop">
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="b7cecbd7-8d7d-4bb9-b361-4e6cfa39cab6"
-		waitaction="NotExists"
-		waittimeout="120000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="020c2a9b-95e0-4fe2-85d1-cc6ece360df4"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controltypename='tblFadr']/titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'keine Rückmeldung']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</WaitForRecordItem>
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
@@ -146,6 +122,26 @@ mode="Desktop">
 				Fakturierung
 			</matchvalue>
 		</validationitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="b7cecbd7-8d7d-4bb9-b361-4e6cfa39cab6"
+		waitaction="NotExists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="020c2a9b-95e0-4fe2-85d1-cc6ece360df4"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controltypename='tblFadr']/titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'keine Rückmeldung']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 	</recorditems>
 	<repository
 	id="3573c847-c05b-404b-9198-403c8695bf74"
@@ -162,7 +158,7 @@ mode="Desktop">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		StartAUT.UserCode.cs
+		Start_v_fadr_FAK.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
