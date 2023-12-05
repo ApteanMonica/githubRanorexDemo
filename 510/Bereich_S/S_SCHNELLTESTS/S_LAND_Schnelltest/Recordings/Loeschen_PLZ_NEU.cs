@@ -89,8 +89,8 @@ namespace S_LAND_Schnelltest.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblPostleitzahl.Zeile_mit_PLZ_NEU.Row_mit_Variable_PLZ_NEU_ORT' at Center.", repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.Row_mit_Variable_PLZ_NEU_ORTInfo, new RecordItemIndex(0));
-            repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.Row_mit_Variable_PLZ_NEU_ORT.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblPostleitzahl.FlexGrid_Tabelle.Row1Column0' at Center.", repo.TblPostleitzahl.FlexGrid_Tabelle.Row1Column0Info, new RecordItemIndex(0));
+            repo.TblPostleitzahl.FlexGrid_Tabelle.Row1Column0.Click();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}'.", new RecordItemIndex(1));
             Keyboard.Press("{Delete}");

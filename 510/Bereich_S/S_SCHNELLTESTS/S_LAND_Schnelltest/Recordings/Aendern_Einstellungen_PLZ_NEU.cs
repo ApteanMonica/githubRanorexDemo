@@ -134,8 +134,8 @@ namespace S_LAND_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$PLZ_VORWAHL_NEU) on item 'TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzVorwahl_PLZ_NEU'.", repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzVorwahl_PLZ_NEUInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzVorwahl_PLZ_NEUInfo, "Text", PLZ_VORWAHL_NEU);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$PLZ_NEU_ORT) on item 'TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzKm_PLZ_NEU'.", repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzKm_PLZ_NEUInfo, new RecordItemIndex(6));
-            Validate.AttributeEqual(repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzKm_PLZ_NEUInfo, "Text", PLZ_NEU_ORT);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$PLZ_NEU_KM) on item 'TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzKm_PLZ_NEU'.", repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzKm_PLZ_NEUInfo, new RecordItemIndex(6));
+            Validate.AttributeEqual(repo.TblPostleitzahl.Zeile_mit_PLZ_NEU.ColPlzKm_PLZ_NEUInfo, "Text", PLZ_NEU_KM);
             
         }
 
