@@ -24,22 +24,22 @@ namespace V_FADR_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Lieferschein_laden_2_Eingabe_umgedreht recording.
+    ///The Lieferschein_laden_2_row2_row1 recording.
     /// </summary>
     [TestModule("b9c846d6-f529-4c91-9c9a-8391693aeb4f", ModuleType.Recording, 1)]
-    public partial class Lieferschein_laden_2_Eingabe_umgedreht : ITestModule
+    public partial class Lieferschein_laden_2_row2_row1 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::V_FADR_001.V_FADR_001Repository repository.
         /// </summary>
         public static global::V_FADR_001.V_FADR_001Repository repo = global::V_FADR_001.V_FADR_001Repository.Instance;
 
-        static Lieferschein_laden_2_Eingabe_umgedreht instance = new Lieferschein_laden_2_Eingabe_umgedreht();
+        static Lieferschein_laden_2_row2_row1 instance = new Lieferschein_laden_2_row2_row1();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Lieferschein_laden_2_Eingabe_umgedreht()
+        public Lieferschein_laden_2_row2_row1()
         {
             Tagesdatum = "";
             Datum_leer = "";
@@ -48,7 +48,7 @@ namespace V_FADR_001.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Lieferschein_laden_2_Eingabe_umgedreht Instance
+        public static Lieferschein_laden_2_row2_row1 Instance
         {
             get { return instance; }
         }

@@ -24,32 +24,31 @@ namespace V_FADR_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The StartAUT recording.
+    ///The Start_v_fadr_FAK recording.
     /// </summary>
     [TestModule("7efd005d-0a17-466b-9de1-8886d0192787", ModuleType.Recording, 1)]
-    public partial class StartAUT : ITestModule
+    public partial class Start_v_fadr_FAK : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::V_FADR_001.V_FADR_001Repository repository.
         /// </summary>
         public static global::V_FADR_001.V_FADR_001Repository repo = global::V_FADR_001.V_FADR_001Repository.Instance;
 
-        static StartAUT instance = new StartAUT();
+        static Start_v_fadr_FAK instance = new Start_v_fadr_FAK();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public StartAUT()
+        public Start_v_fadr_FAK()
         {
             Startfile = "c:\\Testdaten\\Allgemein\\Start.bat";
-            Programm = "V_FADR Aufrufart FAK";
-            Tagesdatum = "";
+            Programm_FAK = "V_FADR Aufrufart FAK";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static StartAUT Instance
+        public static Start_v_fadr_FAK Instance
         {
             get { return instance; }
         }
@@ -68,26 +67,16 @@ namespace V_FADR_001.Recordings
             set { _Startfile = value; }
         }
 
-        string _Programm;
+        string _Programm_FAK;
 
         /// <summary>
-        /// Gets or sets the value of variable Programm.
+        /// Gets or sets the value of variable Programm_FAK.
         /// </summary>
         [TestVariable("eb327afb-4f65-4399-b269-c72d5c708f89")]
-        public string Programm
+        public string Programm_FAK
         {
-            get { return _Programm; }
-            set { _Programm = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Tagesdatum.
-        /// </summary>
-        [TestVariable("b2600755-24e4-4043-a141-445844ed094f")]
-        public string Tagesdatum
-        {
-            get { return repo.Tagesdatum; }
-            set { repo.Tagesdatum = value; }
+            get { return _Programm_FAK; }
+            set { _Programm_FAK = value; }
         }
 
 #endregion
@@ -116,8 +105,8 @@ namespace V_FADR_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(Startfile, Programm, "", false);
+            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm_FAK in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication(Startfile, Programm_FAK, "", false);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'TblFadr.TitleBar100Fakturierung'", repo.TblFadr.TitleBar100FakturierungInfo, new ActionTimeout(300000), new RecordItemIndex(1));
             repo.TblFadr.TitleBar100FakturierungInfo.WaitForExists(300000);
@@ -125,11 +114,11 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'TblFadr.TitleBar100Fakturierung_mit_Text_Fakturierung'", repo.TblFadr.TitleBar100Fakturierung_mit_Text_FakturierungInfo, new ActionTimeout(180000), new RecordItemIndex(2));
             repo.TblFadr.TitleBar100Fakturierung_mit_Text_FakturierungInfo.WaitForExists(180000);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to not exist. Associated repository item: 'TblFadr.TitleBar100Fakturierung_mit_Text_keine_Rueckmeldung'", repo.TblFadr.TitleBar100Fakturierung_mit_Text_keine_RueckmeldungInfo, new ActionTimeout(120000), new RecordItemIndex(3));
-            repo.TblFadr.TitleBar100Fakturierung_mit_Text_keine_RueckmeldungInfo.WaitForNotExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Fakturierung') on item 'TblFadr.TitleBar100Fakturierung'.", repo.TblFadr.TitleBar100FakturierungInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Fakturierung') on item 'TblFadr.TitleBar100Fakturierung'.", repo.TblFadr.TitleBar100FakturierungInfo, new RecordItemIndex(3));
             Validate.AttributeContains(repo.TblFadr.TitleBar100FakturierungInfo, "Text", "Fakturierung");
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to not exist. Associated repository item: 'TblFadr.TitleBar100Fakturierung_mit_Text_keine_Rueckmeldung'", repo.TblFadr.TitleBar100Fakturierung_mit_Text_keine_RueckmeldungInfo, new ActionTimeout(120000), new RecordItemIndex(4));
+            repo.TblFadr.TitleBar100Fakturierung_mit_Text_keine_RueckmeldungInfo.WaitForNotExists(120000);
             
         }
 
