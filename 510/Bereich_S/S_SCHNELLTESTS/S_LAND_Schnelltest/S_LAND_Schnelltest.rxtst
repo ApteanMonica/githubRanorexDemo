@@ -172,7 +172,6 @@
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="9a5b5550-7208-44d4-86f6-6f1a9c2e4226"
 			name="ClosePLZ"
 			ref="2f5bb1b5-8af3-4dda-b116-412b25477e55"
@@ -197,6 +196,9 @@
 			name="Neuanlage_PLZ_Drittland"
 			ref="0c010f59-fbb4-44c4-b280-e6c3a2e99275"
 			type="Recording">
+				<description>
+					<![CDATA[BUG in Version 530 REL kommt es zu einer Exception beim Speichern des Datensatzes Item 65443]]>
+				</description>
 				<databinding>
 					<var
 					dataname="PLZ_BEZ_CD"
@@ -432,6 +434,9 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="283fc324-ac8f-440e-b2df-c8ab64c1d92b">
+			</testcontainer>
 			<testcontainer
 			id="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444">
 			</testcontainer>
