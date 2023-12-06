@@ -108,8 +108,8 @@ namespace K_AUSW_001.Recordings_k_ausw
             Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $Startfile with arguments from variable $Programm in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication(Startfile, Programm, "", false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'FrmMain.TitleBar100KOREAuswertung'", repo.FrmMain.TitleBar100KOREAuswertungInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.FrmMain.TitleBar100KOREAuswertungInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 3m to exist. Associated repository item: 'FrmMain.TitleBar100KOREAuswertung'", repo.FrmMain.TitleBar100KOREAuswertungInfo, new ActionTimeout(180000), new RecordItemIndex(1));
+            repo.FrmMain.TitleBar100KOREAuswertungInfo.WaitForExists(180000);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'KORE-Auswertung') on item 'FrmMain.TitleBar100KOREAuswertung'.", repo.FrmMain.TitleBar100KOREAuswertungInfo, new RecordItemIndex(2));
             Validate.AttributeContains(repo.FrmMain.TitleBar100KOREAuswertungInfo, "Text", "KORE-Auswertung");

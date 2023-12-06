@@ -103,9 +103,6 @@ namespace K_AUSW_001.Recordings_k_ausw
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(7));
             repo.DlgMessageBox.Button0.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to not exist. Associated repository item: 'FrmProgress'", repo.FrmProgress.SelfInfo, new ActionTimeout(300000), new RecordItemIndex(8));
-            repo.FrmProgress.SelfInfo.WaitForNotExists(300000);
-            
         }
 
 #region Image Feature Data

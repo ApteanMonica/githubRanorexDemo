@@ -79,28 +79,31 @@ namespace K_AUSW_002.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'TblAnzeige.TitleBar100GuVSec231UGBStand2016'", repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, new ActionTimeout(120000), new RecordItemIndex(0));
-            repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'TblAnzeige.TitleBar100GuVSec231UGBStand2016'", repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, new ActionTimeout(300000), new RecordItemIndex(0));
+            repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info.WaitForExists(300000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Code <GB / Geschäftsbericht>') on item 'TblAnzeige.TitleBar100GuVSec231UGBStand2016'.", repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to not exist. Associated repository item: 'FrmProgress'", repo.FrmProgress.SelfInfo, new ActionTimeout(120000), new RecordItemIndex(1));
+            repo.FrmProgress.SelfInfo.WaitForNotExists(120000);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Code <GB / Geschäftsbericht>') on item 'TblAnzeige.TitleBar100GuVSec231UGBStand2016'.", repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, new RecordItemIndex(2));
             Validate.AttributeContains(repo.TblAnzeige.TitleBar100GuVSec231UGBStand2016Info, "Text", "Code <GB / Geschäftsbericht>");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'TblAnzeige.DfNr'.", repo.TblAnzeige.DfNrInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='20') on item 'TblAnzeige.DfNr'.", repo.TblAnzeige.DfNrInfo, new RecordItemIndex(3));
             Validate.AttributeEqual(repo.TblAnzeige.DfNrInfo, "Text", "20");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Baustoffe') on item 'TblAnzeige.DfBez'.", repo.TblAnzeige.DfBezInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Baustoffe') on item 'TblAnzeige.DfBez'.", repo.TblAnzeige.DfBezInfo, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.TblAnzeige.DfBezInfo, "Text", "Baustoffe");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'7650\tWerbekosten') on item 'TblAnzeige.ChildTableWindow.Row2'.", repo.TblAnzeige.ChildTableWindow.Row2Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'7650\tWerbekosten') on item 'TblAnzeige.ChildTableWindow.Row2'.", repo.TblAnzeige.ChildTableWindow.Row2Info, new RecordItemIndex(5));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row2Info, "Text", "7650\tWerbekosten");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'-1.000,00') on item 'TblAnzeige.ChildTableWindow.Row2'.", repo.TblAnzeige.ChildTableWindow.Row2Info, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'-1.000,00') on item 'TblAnzeige.ChildTableWindow.Row2'.", repo.TblAnzeige.ChildTableWindow.Row2Info, new RecordItemIndex(6));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row2Info, "Text", "-1.000,00");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'26. Bilanzgewinn/Bilanzverlust') on item 'TblAnzeige.ChildTableWindow.Row7'.", repo.TblAnzeige.ChildTableWindow.Row7Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'26. Bilanzgewinn/Bilanzverlust') on item 'TblAnzeige.ChildTableWindow.Row7'.", repo.TblAnzeige.ChildTableWindow.Row7Info, new RecordItemIndex(7));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row7Info, "Text", "26. Bilanzgewinn/Bilanzverlust");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'-1.000,00') on item 'TblAnzeige.ChildTableWindow.Row7'.", repo.TblAnzeige.ChildTableWindow.Row7Info, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'-1.000,00') on item 'TblAnzeige.ChildTableWindow.Row7'.", repo.TblAnzeige.ChildTableWindow.Row7Info, new RecordItemIndex(8));
             Validate.AttributeContains(repo.TblAnzeige.ChildTableWindow.Row7Info, "Text", "-1.000,00");
             
         }

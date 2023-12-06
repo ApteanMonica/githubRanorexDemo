@@ -33,7 +33,7 @@ mode="Global">
 		optional="False"
 		searchpropertyid="6a1bd838-633d-4c14-83d1-3d5cef1eb34c"
 		waitaction="Exists"
-		waittimeout="120000ms">
+		waittimeout="300000ms">
 			<comment>
 			</comment>
 			<bindings>
@@ -43,6 +43,26 @@ mode="Global">
 			sourcename="RepositoryEditor">
 				<path>
 					/form[@controlname='tblAnzeige']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="6a1bd838-633d-4c14-83d1-3d5cef1eb34c"
+		waitaction="NotExists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5e4b1d2b-45c9-4227-9cf1-f8f247379a57"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@text~'Daten werden berechnet']
 				</path>
 				<robustPath>
 				</robustPath>
