@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace B_BUAB_002.Recordings
 {
-    public partial class Stornnobeleg_Eingaben_Falsch
+    public partial class Stornieren_Beleg
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

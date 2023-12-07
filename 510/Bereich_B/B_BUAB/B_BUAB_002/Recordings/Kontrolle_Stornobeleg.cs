@@ -42,8 +42,9 @@ namespace B_BUAB_002.Recordings
         public Kontrolle_Stornobeleg()
         {
             Beleg = "BAÄ_02";
-            Tagesdatum = "";
+            Tagesdatum = "07.12.2023";
             Stornobeleg = "BAÄ_04";
+            Programm = "B_BUAB";
         }
 
         /// <summary>
@@ -78,6 +79,18 @@ namespace B_BUAB_002.Recordings
         {
             get { return _Stornobeleg; }
             set { _Stornobeleg = value; }
+        }
+
+        string _Programm;
+
+        /// <summary>
+        /// Gets or sets the value of variable Programm.
+        /// </summary>
+        [TestVariable("ed749721-3ba0-49b3-8f2d-e0361a27cee7")]
+        public string Programm
+        {
+            get { return _Programm; }
+            set { _Programm = value; }
         }
 
         /// <summary>
@@ -148,6 +161,48 @@ namespace B_BUAB_002.Recordings
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'TblB.FlexGrid_Tabelle.ColBusaRefkeyposRow1'.", repo.TblB.FlexGrid_Tabelle.ColBusaRefkeyposRow1Info, new RecordItemIndex(10));
             Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColBusaRefkeyposRow1Info, "Text", "1");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='RS') on item 'TblB.FlexGrid_Tabelle.ColBusaUserstoloeRow1'.", repo.TblB.FlexGrid_Tabelle.ColBusaUserstoloeRow1Info, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColBusaUserstoloeRow1Info, "Text", "RS");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Programm) on item 'TblB.FlexGrid_Tabelle.ColBusaProgstoloeRow1'.", repo.TblB.FlexGrid_Tabelle.ColBusaProgstoloeRow1Info, new RecordItemIndex(12));
+            Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColBusaProgstoloeRow1Info, "Text", Programm);
+            
+            // Zeile_2
+            Report.Log(ReportLevel.Info, "Section", "Zeile_2", new RecordItemIndex(13));
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'TblB.FlexGrid_Tabelle.ColBusaDtstoloeRow2'.", repo.TblB.FlexGrid_Tabelle.ColBusaDtstoloeRow2Info, new RecordItemIndex(14));
+            Validate.AttributeContains(repo.TblB.FlexGrid_Tabelle.ColBusaDtstoloeRow2Info, "Text", Tagesdatum);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9') on item 'TblB.FlexGrid_Tabelle.ColTypRow2'.", repo.TblB.FlexGrid_Tabelle.ColTypRow2Info, new RecordItemIndex(15));
+            Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColTypRow2Info, "Text", "9");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9') on item 'TblB.FlexGrid_Tabelle.ColUststatusRow2'.", repo.TblB.FlexGrid_Tabelle.ColUststatusRow2Info, new RecordItemIndex(16));
+            Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColUststatusRow2Info, "Text", "9");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='RS') on item 'TblB.FlexGrid_Tabelle.ColBusaUserstoloeRow2'.", repo.TblB.FlexGrid_Tabelle.ColBusaUserstoloeRow2Info, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColBusaUserstoloeRow2Info, "Text", "RS");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Programm) on item 'TblB.FlexGrid_Tabelle.ColBusaProgstoloeRow2'.", repo.TblB.FlexGrid_Tabelle.ColBusaProgstoloeRow2Info, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColBusaProgstoloeRow2Info, "Text", Programm);
+            
+            // Zeile_3
+            Report.Log(ReportLevel.Info, "Section", "Zeile_3", new RecordItemIndex(19));
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'TblB.FlexGrid_Tabelle.ColBusaDtstoloeRow3'.", repo.TblB.FlexGrid_Tabelle.ColBusaDtstoloeRow3Info, new RecordItemIndex(20));
+            Validate.AttributeContains(repo.TblB.FlexGrid_Tabelle.ColBusaDtstoloeRow3Info, "Text", Tagesdatum);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9') on item 'TblB.FlexGrid_Tabelle.ColTypRow3'.", repo.TblB.FlexGrid_Tabelle.ColTypRow3Info, new RecordItemIndex(21));
+            Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColTypRow3Info, "Text", "9");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='9') on item 'TblB.FlexGrid_Tabelle.ColUststatusRow3'.", repo.TblB.FlexGrid_Tabelle.ColUststatusRow3Info, new RecordItemIndex(22));
+            Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColUststatusRow3Info, "Text", "9");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='RS') on item 'TblB.FlexGrid_Tabelle.ColBusaUserstoloeRow3'.", repo.TblB.FlexGrid_Tabelle.ColBusaUserstoloeRow3Info, new RecordItemIndex(23));
+            Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColBusaUserstoloeRow3Info, "Text", "RS");
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Programm) on item 'TblB.FlexGrid_Tabelle.ColBusaProgstoloeRow3'.", repo.TblB.FlexGrid_Tabelle.ColBusaProgstoloeRow3Info, new RecordItemIndex(24));
+            Validate.AttributeEqual(repo.TblB.FlexGrid_Tabelle.ColBusaProgstoloeRow3Info, "Text", Programm);
             
         }
 

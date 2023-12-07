@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="0c1d5a00-cbcb-4fab-bb22-db052c42c6c7"
+id="33333803-4366-4450-a5e4-ed660138d838"
 mode="Global">
-	<description>
-		The Kontrolle_Stornobeleg recording.
-	</description>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -22,27 +19,21 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Kontrolle_Stornobeleg"
+	classname="Kontrolle_stornierter_Beleg"
 	namespace="B_BUAB_002.Recordings">
 	</codegen>
 	<variables>
 		<var
-		id="fb24ba3d-5b52-4c55-8827-1fc1129253a2"
+		id="d5805a5c-328d-44a7-b151-7943d9f5c81c"
 		name="Beleg">
 			BAÄ_02
 		</var>
 		<var
-		id="764f9dba-4a4c-402a-989b-6c04fc2ea2bc"
+		id="60b3f462-b47c-4015-9dd9-003d5bf06db8"
 		name="Tagesdatum">
-			07.12.2023
 		</var>
 		<var
-		id="cfec50a1-5a01-417d-ac95-54ef2b5f74bf"
-		name="Stornobeleg">
-			BAÄ_04
-		</var>
-		<var
-		id="ed749721-3ba0-49b3-8f2d-e0361a27cee7"
+		id="bd5811c9-6f86-407c-bde3-1a23b542b347"
 		name="Programm">
 			B_BUAB
 		</var>
@@ -86,7 +77,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="KeySequence"
-				variable="Stornobeleg">
+				variable="Beleg">
 				</binding>
 			</bindings>
 			<info
@@ -128,7 +119,7 @@ mode="Global">
 		<WaitForRecordItem
 		enabled="True"
 		optional="False"
-		searchpropertyid="15fedad7-072f-4ccf-a2eb-fbb79e7e8ef7"
+		searchpropertyid="02d0789e-e183-4417-8c83-d23e4aeccd00"
 		waitaction="Exists"
 		waittimeout="120000ms">
 			<comment>
@@ -145,6 +136,15 @@ mode="Global">
 				</robustPath>
 			</info>
 		</WaitForRecordItem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Zeile_1
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<validationitem
 		action="AttributeEqual"
 		enabled="True"
@@ -155,7 +155,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Stornobeleg">
+				variable="Beleg">
 				</binding>
 			</bindings>
 			<info
@@ -257,85 +257,6 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="a08c1654-24db-4a7a-bbe6-6cb8a7a5a540">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="Beleg">
-				</binding>
-			</bindings>
-			<info
-			id="d4fcf85e-b5fb-4947-a6ac-c696611df0ac"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@controltypename='tblB']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBusa_refbelegnr Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="dee60fbb-8ffa-4c22-a6a6-696e52dec772">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="23dbe34a-cc18-4faf-a052-a8e61654ab67"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@controltypename='tblB']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBusa_refkeybel Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				2
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
-		searchpropertyid="51f30dd2-fe61-4807-9331-5a0cbd44724e">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="6d96fa43-2028-4411-b002-85960234bbb7"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@controltypename='tblB']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBusa_refkeypos Row 1']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				1
-			</matchvalue>
-		</validationitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="True"
-		optional="False"
 		searchpropertyid="8bd1f254-7bf9-4562-9339-3f3654334861">
 			<comment>
 			</comment>
@@ -415,7 +336,7 @@ mode="Global">
 		action="AttributeEqual"
 		enabled="True"
 		optional="False"
-		searchpropertyid="bc8deca4-0844-4bb1-a07b-76dba2d7365c">
+		searchpropertyid="2a378794-f772-40a6-90c8-67c895dd2c28">
 			<comment>
 			</comment>
 			<bindings>
@@ -426,9 +347,9 @@ mode="Global">
 			</bindings>
 			<info
 			id="d9121501-a4e2-4d34-ae1b-111034b9cf53"
-			sourcename="RepositoryEditor">
+			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@controlname='tblB']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='colBusa_progstoloe Row 1']
+					/form[@controltypename='tblB']/container[@controlname='ChildTableWindow']/?/?/table[@accessiblename='FlexGrid']/?/?/cell[@accessiblename='colBusa_progstoloe Row 1']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -437,7 +358,7 @@ mode="Global">
 				Text
 			</matchname>
 			<matchvalue>
-				yourValue
+				B_BUAB
 			</matchvalue>
 		</validationitem>
 		<separatoritem
@@ -740,7 +661,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Kontrolle_Stornobeleg.UserCode.cs
+		Kontrolle_stornierter_Beleg.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

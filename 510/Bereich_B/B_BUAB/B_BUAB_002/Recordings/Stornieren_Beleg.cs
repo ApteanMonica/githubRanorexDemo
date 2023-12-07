@@ -24,29 +24,29 @@ namespace B_BUAB_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Stornieren_Beleg_Meldung recording.
+    ///The Stornieren_Beleg recording.
     /// </summary>
     [TestModule("27a2af8b-4017-4347-8fce-2e1d7f7db00c", ModuleType.Recording, 1)]
-    public partial class Stornieren_Beleg_Meldung : ITestModule
+    public partial class Stornieren_Beleg : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BUAB_002.B_BUAB_002Repository repository.
         /// </summary>
         public static global::B_BUAB_002.B_BUAB_002Repository repo = global::B_BUAB_002.B_BUAB_002Repository.Instance;
 
-        static Stornieren_Beleg_Meldung instance = new Stornieren_Beleg_Meldung();
+        static Stornieren_Beleg instance = new Stornieren_Beleg();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Stornieren_Beleg_Meldung()
+        public Stornieren_Beleg()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Stornieren_Beleg_Meldung Instance
+        public static Stornieren_Beleg Instance
         {
             get { return instance; }
         }
@@ -84,27 +84,6 @@ namespace B_BUAB_002.Recordings
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbExtrasStornieren' at CenterRight.", repo.TblB.PbExtrasStornierenInfo, new RecordItemIndex(1));
             repo.TblB.PbExtrasStornieren.Click(Location.CenterRight);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'BBUAB.Stornieren'", repo.BBUAB.StornierenInfo, new ActionTimeout(30000), new RecordItemIndex(2));
-            repo.BBUAB.StornierenInfo.WaitForExists(30000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBUAB.Stornieren' at Center.", repo.BBUAB.StornierenInfo, new RecordItemIndex(3));
-            repo.BBUAB.Stornieren.Click();
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgMessageBox.Stornieren'", repo.DlgMessageBox.StornierenInfo, new ActionTimeout(60000), new RecordItemIndex(4));
-            repo.DlgMessageBox.StornierenInfo.WaitForExists(60000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Stornieren') on item 'DlgMessageBox.Stornieren'.", repo.DlgMessageBox.StornierenInfo, new RecordItemIndex(5));
-            Validate.AttributeContains(repo.DlgMessageBox.StornierenInfo, "Text", "Stornieren");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Buchung(en) stornieren? - Dies kann nicht rückgängig gemacht werden!\r\n\r\n') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(6));
-            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Buchung(en) stornieren? - Dies kann nicht rückgängig gemacht werden!\r\n\r\n");
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'\nEs wird immer die komplette (!) Buchung inkl. aller Positionen storniert, \r\nauch wenn nur einzelne Zeilen zum Stornieren markiert sind') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(7));
-            Validate.AttributeContains(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "\nEs wird immer die komplette (!) Buchung inkl. aller Positionen storniert, \r\nauch wenn nur einzelne Zeilen zum Stornieren markiert sind");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(8));
-            repo.DlgMessageBox.Button0.Click();
             
         }
 

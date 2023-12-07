@@ -24,22 +24,22 @@ namespace B_BUAB_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Stornnobeleg_Eingaben_Falsch recording.
+    ///The Stornobeleg_Eingaben_Falsch recording.
     /// </summary>
     [TestModule("9c0cd88f-52c7-4af2-bfb8-42b21b746132", ModuleType.Recording, 1)]
-    public partial class Stornnobeleg_Eingaben_Falsch : ITestModule
+    public partial class Stornobeleg_Eingaben_Falsch : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_BUAB_002.B_BUAB_002Repository repository.
         /// </summary>
         public static global::B_BUAB_002.B_BUAB_002Repository repo = global::B_BUAB_002.B_BUAB_002Repository.Instance;
 
-        static Stornnobeleg_Eingaben_Falsch instance = new Stornnobeleg_Eingaben_Falsch();
+        static Stornobeleg_Eingaben_Falsch instance = new Stornobeleg_Eingaben_Falsch();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Stornnobeleg_Eingaben_Falsch()
+        public Stornobeleg_Eingaben_Falsch()
         {
             Buchungs_Jahr_Falsch = "2018";
             Buchungs_Monat_Falsch = "01";
@@ -51,7 +51,7 @@ namespace B_BUAB_002.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Stornnobeleg_Eingaben_Falsch Instance
+        public static Stornobeleg_Eingaben_Falsch Instance
         {
             get { return instance; }
         }

@@ -34,6 +34,77 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="1da33b78-3307-4ed0-93f9-000023885d41"
+			name="Einlesen_Programmversion"
+			ref="426396c4-3540-4d07-a056-ccce3422dbba"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Programmversion"
+					datasourceid="4c609e20-6147-49e0-bcd8-85721bd2b865"
+					variableid="3cc5cce1-d3b0-4fe7-bccd-80adf81ccc15"
+					variablename="Programmversion">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="296fbacf-6f54-4c0b-a326-c186484eb1e4"
+			name="Stornieren_Meldung"
+			ref="60a556b4-783b-4195-be40-95d857f6a2a3"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="2e070988-0e68-49d2-91fe-dcdff2245e5e"
+			name="Stornieren_PD_Stornieren_510_511"
+			ref="5b5700da-06b9-4d51-a899-4c38d15679d7"
+			type="Recording">
+			</testmodule>
+			<smartfoldernode
+			id="34ba3789-5681-49ee-a7ac-c18706bcd044"
+			name="Version_510_511">
+				<description>
+					<![CDATA[zusätzliches PD-Menü bei Stornieren (Stornieren und Stornieren ohne Ausgleich); ab 520 kein PD-Menü, Stornofunktion Kontextabhängig (bei ausgeglichenem OP wird bei Storno eine Frage ausgegeben, ob mit/ohne Ausgleich storniert werden soll).]]>
+				</description>
+				<conditiongroup
+				comparison="OR"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Programmversion"
+								id="4c609e20-6147-49e0-bcd8-85721bd2b865">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="510">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="Parameter"
+								dataname="Programmversion"
+								id="4c609e20-6147-49e0-bcd8-85721bd2b865">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="511">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testcase
 			id="4c609e20-6147-49e0-bcd8-85721bd2b865"
 			name="B_BUAB_002"
@@ -102,6 +173,10 @@
 					name="Buchungs_Monat_Falsch"
 					value="01">
 					</param>
+					<param
+					name="Programmversion"
+					value="">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -120,7 +195,7 @@
 			</testmodule>
 			<testmodule
 			id="66d8d1b1-fa65-404f-9e8d-5c681a4f3a9f"
-			name="Kontrolle_Urspruengl_Beleg"
+			name="Kontrolle_stornierter_Beleg"
 			ref="33333803-4366-4450-a5e4-ed660138d838"
 			type="Recording">
 				<databinding>
@@ -171,12 +246,6 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Stornobeleg"
-					datasourceid="4c609e20-6147-49e0-bcd8-85721bd2b865"
-					variableid="cfec50a1-5a01-417d-ac95-54ef2b5f74bf"
-					variablename="Stornobeleg">
-					</var>
-					<var
 					dataname="Tagesdatum"
 					datasourceid="4c609e20-6147-49e0-bcd8-85721bd2b865"
 					variableid="764f9dba-4a4c-402a-989b-6c04fc2ea2bc"
@@ -187,6 +256,18 @@
 					datasourceid="4c609e20-6147-49e0-bcd8-85721bd2b865"
 					variableid="fb24ba3d-5b52-4c55-8827-1fc1129253a2"
 					variablename="Beleg">
+					</var>
+					<var
+					dataname="Programm"
+					datasourceid="4c609e20-6147-49e0-bcd8-85721bd2b865"
+					variableid="ed749721-3ba0-49b3-8f2d-e0361a27cee7"
+					variablename="Programm">
+					</var>
+					<var
+					dataname="Stornobeleg"
+					datasourceid="4c609e20-6147-49e0-bcd8-85721bd2b865"
+					variableid="cfec50a1-5a01-417d-ac95-54ef2b5f74bf"
+					variablename="Stornobeleg">
 					</var>
 				</databinding>
 			</testmodule>
@@ -244,7 +325,7 @@
 			</testmodule>
 			<testmodule
 			id="d25840e1-5862-43ca-881b-31cf66363506"
-			name="Stornieren_Beleg_Meldung"
+			name="Stornieren_Beleg"
 			ref="27a2af8b-4017-4347-8fce-2e1d7f7db00c"
 			type="Recording">
 			</testmodule>
@@ -254,7 +335,7 @@
 			</testcase>
 			<testmodule
 			id="f2364507-070c-42a3-871c-9cdf422b382a"
-			name="Stornnobeleg_Eingaben_Falsch"
+			name="Stornobeleg_Eingaben_Falsch"
 			ref="9c0cd88f-52c7-4af2-bfb8-42b21b746132"
 			type="Recording">
 				<databinding>
@@ -319,11 +400,27 @@
 						</testmodule>
 						<testmodule
 						id="d25840e1-5862-43ca-881b-31cf66363506"
-						name="Stornieren_Beleg_Meldung">
+						name="Stornieren_Beleg">
+						</testmodule>
+						<testmodule
+						id="1da33b78-3307-4ed0-93f9-000023885d41"
+						name="Einlesen_Programmversion">
+						</testmodule>
+						<smartfoldernode
+						id="34ba3789-5681-49ee-a7ac-c18706bcd044"
+						name="Version_510_511">
+							<testmodule
+							id="2e070988-0e68-49d2-91fe-dcdff2245e5e"
+							name="Stornieren_PD_Stornieren_510_511">
+							</testmodule>
+						</smartfoldernode>
+						<testmodule
+						id="296fbacf-6f54-4c0b-a326-c186484eb1e4"
+						name="Stornieren_Meldung">
 						</testmodule>
 						<testmodule
 						id="f2364507-070c-42a3-871c-9cdf422b382a"
-						name="Stornnobeleg_Eingaben_Falsch">
+						name="Stornobeleg_Eingaben_Falsch">
 						</testmodule>
 						<testmodule
 						id="0e282e88-8ee7-4d57-a794-c1582f3b1b2d"
@@ -331,7 +428,7 @@
 						</testmodule>
 						<testmodule
 						id="66d8d1b1-fa65-404f-9e8d-5c681a4f3a9f"
-						name="Kontrolle_Urspruengl_Beleg">
+						name="Kontrolle_stornierter_Beleg">
 						</testmodule>
 						<testmodule
 						id="7c1ea316-80b9-49ad-a850-1d3aaa64ad71"
@@ -356,6 +453,9 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="34ba3789-5681-49ee-a7ac-c18706bcd044">
+			</testcontainer>
 			<testcontainer
 			id="4c609e20-6147-49e0-bcd8-85721bd2b865">
 			</testcontainer>
