@@ -24,22 +24,22 @@ namespace V_FADR_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Lieferschein_laden2_klick_LS_Datum_Pfade_lang recording.
+    ///The Einschraenkung_LS_Datum_tauschen recording.
     /// </summary>
     [TestModule("2e9264e8-2dd7-4406-a6b2-18b37ba64cc5", ModuleType.Recording, 1)]
-    public partial class Lieferschein_laden2_klick_LS_Datum_Pfade_lang : ITestModule
+    public partial class Einschraenkung_LS_Datum_tauschen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::V_FADR_001.V_FADR_001Repository repository.
         /// </summary>
         public static global::V_FADR_001.V_FADR_001Repository repo = global::V_FADR_001.V_FADR_001Repository.Instance;
 
-        static Lieferschein_laden2_klick_LS_Datum_Pfade_lang instance = new Lieferschein_laden2_klick_LS_Datum_Pfade_lang();
+        static Einschraenkung_LS_Datum_tauschen instance = new Einschraenkung_LS_Datum_tauschen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Lieferschein_laden2_klick_LS_Datum_Pfade_lang()
+        public Einschraenkung_LS_Datum_tauschen()
         {
             Tagesdatum = "";
             Datum_leer = "";
@@ -48,7 +48,7 @@ namespace V_FADR_001.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Lieferschein_laden2_klick_LS_Datum_Pfade_lang Instance
+        public static Einschraenkung_LS_Datum_tauschen Instance
         {
             get { return instance; }
         }
@@ -148,8 +148,8 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Section", "LS-Datum in Zeile 1 löschen", new RecordItemIndex(15));
             
             // search timeout erhöht
-            Report.Log(ReportLevel.Info, "Mouse", "search timeout erhöht\r\nMouse Left Click item 'TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow2' at Center.", repo.TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow2Info, new RecordItemIndex(16));
-            repo.TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow2.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "search timeout erhöht\r\nMouse Left Click item 'TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow2' at Center.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow2Info, new RecordItemIndex(16));
+            repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow2.Click();
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(17));
             Delay.Duration(7000, false);
@@ -183,21 +183,6 @@ namespace V_FADR_001.Recordings
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow2'.", repo.TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow2Info, new RecordItemIndex(28));
             Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow2Info, "Text", Tagesdatum);
-            
-            // Laden + Meldung prüfen
-            Report.Log(ReportLevel.Info, "Section", "Laden + Meldung prüfen", new RecordItemIndex(29));
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(30));
-            repo.TblFadr.PbCommonLoad.Click();
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'DlgMessageBox.LabelMeldungstext'", repo.DlgMessageBox.LabelMeldungstextInfo, new ActionTimeout(120000), new RecordItemIndex(31));
-            repo.DlgMessageBox.LabelMeldungstextInfo.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es wurden keine Lieferscheine gefunden die zur Belegerstellung berechtigt sind.\r\nNähere Information unter Menu/Extras/Warum wird Auftrag nicht fakturiert') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(32));
-            Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es wurden keine Lieferscheine gefunden die zur Belegerstellung berechtigt sind.\r\nNähere Information unter Menu/Extras/Warum wird Auftrag nicht fakturiert");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button0' at Center.", repo.DlgMessageBox.Button0Info, new RecordItemIndex(33));
-            repo.DlgMessageBox.Button0.Click();
             
         }
 

@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace V_FADR_001.Recordings
 {
-    public partial class Lieferschein_laden_2_NEU
+    public partial class Lieferschein_laden_2_Meldung_kein_LS_gefunden
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

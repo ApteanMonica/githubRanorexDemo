@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace V_FADR_001.Recordings
 {
-    public partial class Lieferschein_laden_2_row2_row1
+    public partial class Einschraenkung_LS_Datum_tauschen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

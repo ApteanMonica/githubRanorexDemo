@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace V_FADR_001.Recordings
 {
-    public partial class Lieferschein_laden_2_NEU_set_value
+    public partial class Warum_keine_Faktura_pruefen
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

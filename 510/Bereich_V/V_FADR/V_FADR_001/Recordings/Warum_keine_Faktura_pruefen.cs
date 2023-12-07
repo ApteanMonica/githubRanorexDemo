@@ -24,22 +24,22 @@ namespace V_FADR_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Keine_Faktura recording.
+    ///The Warum_keine_Faktura_pruefen recording.
     /// </summary>
     [TestModule("fdc92c81-6319-4009-bac2-6fa60c8bfa3d", ModuleType.Recording, 1)]
-    public partial class Keine_Faktura : ITestModule
+    public partial class Warum_keine_Faktura_pruefen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::V_FADR_001.V_FADR_001Repository repository.
         /// </summary>
         public static global::V_FADR_001.V_FADR_001Repository repo = global::V_FADR_001.V_FADR_001Repository.Instance;
 
-        static Keine_Faktura instance = new Keine_Faktura();
+        static Warum_keine_Faktura_pruefen instance = new Warum_keine_Faktura_pruefen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Keine_Faktura()
+        public Warum_keine_Faktura_pruefen()
         {
             Auftragsnummer = "201900005";
         }
@@ -47,7 +47,7 @@ namespace V_FADR_001.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Keine_Faktura Instance
+        public static Warum_keine_Faktura_pruefen Instance
         {
             get { return instance; }
         }

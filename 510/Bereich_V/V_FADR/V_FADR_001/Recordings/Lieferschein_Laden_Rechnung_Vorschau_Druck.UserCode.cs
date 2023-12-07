@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace V_FADR_001.Recordings
 {
-    public partial class Lieferschein_laden2_klick_LS_Datum_Pfade_lang
+    public partial class Lieferschein_laden_3_Rechnung_Vorschau_Druck
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

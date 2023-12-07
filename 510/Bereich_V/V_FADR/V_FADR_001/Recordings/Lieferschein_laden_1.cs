@@ -24,22 +24,22 @@ namespace V_FADR_001.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Lieferschein_laden recording.
+    ///The Lieferschein_laden_1 recording.
     /// </summary>
     [TestModule("584de33d-38c6-4946-a057-c1ea78b0821d", ModuleType.Recording, 1)]
-    public partial class Lieferschein_laden : ITestModule
+    public partial class Lieferschein_laden_1 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::V_FADR_001.V_FADR_001Repository repository.
         /// </summary>
         public static global::V_FADR_001.V_FADR_001Repository repo = global::V_FADR_001.V_FADR_001Repository.Instance;
 
-        static Lieferschein_laden instance = new Lieferschein_laden();
+        static Lieferschein_laden_1 instance = new Lieferschein_laden_1();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Lieferschein_laden()
+        public Lieferschein_laden_1()
         {
             Tagesdatum = "";
         }
@@ -47,7 +47,7 @@ namespace V_FADR_001.Recordings
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Lieferschein_laden Instance
+        public static Lieferschein_laden_1 Instance
         {
             get { return instance; }
         }
@@ -103,11 +103,11 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'TblFadr.RbLadenErstellen'.", repo.TblFadr.RbLadenErstellenInfo, new RecordItemIndex(0));
             Validate.AttributeEqual(repo.TblFadr.RbLadenErstellenInfo, "Checked", "True");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='E') on item 'TblFadr.tblRechArt_Pfad_verkuerzt.colRechartRow1'.", repo.TblFadr.tblRechArt_Pfad_verkuerzt.colRechartRow1Info, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblFadr.tblRechArt_Pfad_verkuerzt.colRechartRow1Info, "Text", "E");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='E') on item 'TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.colRechartRow1'.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.colRechartRow1Info, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.colRechartRow1Info, "Text", "E");
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow1_mit_Tagesdatum'", repo.TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow1_mit_TagesdatumInfo, new ActionTimeout(60000), new RecordItemIndex(2));
-            //repo.TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow1_mit_TagesdatumInfo.WaitForExists(60000);
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow1_mit_Tagesdatum'", repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow1_mit_TagesdatumInfo, new ActionTimeout(60000), new RecordItemIndex(2));
+            //repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow1_mit_TagesdatumInfo.WaitForExists(60000);
             
             Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("dd.MM.yyyy");
             
@@ -126,8 +126,8 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblFadr.untere_Tabelle.colAufk_nr_in_Zeile_mit_Auftragsnummr'.", repo.TblFadr.untere_Tabelle.colAufk_nr_in_Zeile_mit_AuftragsnummrInfo, new RecordItemIndex(8));
             Validate.Exists(repo.TblFadr.untere_Tabelle.colAufk_nr_in_Zeile_mit_AuftragsnummrInfo);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow1' at Center.", repo.TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow1Info, new RecordItemIndex(9));
-            //repo.TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow1.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow1' at Center.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow1Info, new RecordItemIndex(9));
+            //repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow1.Click();
             
             //Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(10));
             //Delay.Duration(2000, false);
@@ -139,15 +139,15 @@ namespace V_FADR_001.Recordings
             //Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(12));
             //Delay.Duration(2000, false);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}' with focus on 'TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow1'.", repo.TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow1Info, new RecordItemIndex(13));
-            //repo.TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow1.PressKeys("{Delete}");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}' with focus on 'TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow1'.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow1Info, new RecordItemIndex(13));
+            //repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow1.PressKeys("{Delete}");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow1'.", repo.TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow1Info, new RecordItemIndex(14));
-            //Keyboard.PrepareFocus(repo.TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow1);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow1'.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow1Info, new RecordItemIndex(14));
+            //Keyboard.PrepareFocus(repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow1);
             //Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+X' Press with focus on 'TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow1'.", repo.TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow1Info, new RecordItemIndex(15));
-            //Keyboard.PrepareFocus(repo.TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow1);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+X' Press with focus on 'TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow1'.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow1Info, new RecordItemIndex(15));
+            //Keyboard.PrepareFocus(repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow1);
             //Keyboard.Press(System.Windows.Forms.Keys.X | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
             //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Delete' Press.", new RecordItemIndex(16));
@@ -160,20 +160,20 @@ namespace V_FADR_001.Recordings
             //Report.Log(ReportLevel.Info, "Keyboard", "BAR: Schritt 13 und 14 von der Reihenfolge umgetauscht vorher war zuerst Delay und dann Tab\r\nKey 'Tab' Press.", new RecordItemIndex(18));
             //Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow1_ohne_Tagesdatum'", repo.TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow1_ohne_TagesdatumInfo, new ActionTimeout(300000), new RecordItemIndex(19));
-            //repo.TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow1_ohne_TagesdatumInfo.WaitForExists(300000);
+            //Report.Log(ReportLevel.Info, "Wait", "Waiting 5m to exist. Associated repository item: 'TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow1_ohne_Tagesdatum'", repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow1_ohne_TagesdatumInfo, new ActionTimeout(300000), new RecordItemIndex(19));
+            //repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow1_ohne_TagesdatumInfo.WaitForExists(300000);
             
             //Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(20));
             //Delay.Duration(2000, false);
             
             //Report.Log(ReportLevel.Info, "User", "beide Datumszeilen ohne Datum", new RecordItemIndex(21));
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+V' Press with focus on 'TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow2'.", repo.TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow2Info, new RecordItemIndex(22));
-            //Keyboard.PrepareFocus(repo.TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow2);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+V' Press with focus on 'TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow2'.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow2Info, new RecordItemIndex(22));
+            //Keyboard.PrepareFocus(repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow2);
             //Keyboard.Press(System.Windows.Forms.Keys.V | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum' with focus on 'TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow2'.", repo.TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow2Info, new RecordItemIndex(23));
-            //repo.TblFadr.tblRechArt_Pfad_verkuerzt.ColLskDatumRow2.PressKeys(Tagesdatum);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum' with focus on 'TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow2'.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow2Info, new RecordItemIndex(23));
+            //repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow2.PressKeys(Tagesdatum);
             
             //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(24));
             //Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);

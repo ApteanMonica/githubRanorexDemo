@@ -42,27 +42,27 @@
 			</testmodule>
 			<testmodule
 			id="55142e60-1c84-4d25-8059-c59d60a9285e"
-			name="Lieferschein_laden2_klick_LS_Datum_Pfade_lang"
+			name="Einschraenkung_LS_Datum_tauschen"
 			ref="2e9264e8-2dd7-4406-a6b2-18b37ba64cc5"
 			type="Recording">
 				<databinding>
-					<var
-					dataname="Tagesdatum"
-					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
-					variableid="73508e5c-5e13-42ec-9fe7-c18547ce9a13"
-					variablename="Tagesdatum">
-					</var>
 					<var
 					dataname="Datum_leer"
 					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
 					variableid="289a763d-2c67-4365-8401-c213d579e8a1"
 					variablename="Datum_leer">
 					</var>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
+					variableid="73508e5c-5e13-42ec-9fe7-c18547ce9a13"
+					variablename="Tagesdatum">
+					</var>
 				</databinding>
 			</testmodule>
 			<testcase
 			id="5d5036a8-314b-4246-b1b1-1e2faaf73d7f"
-			name="Test_Programmstart_mit_Aufrufparameter_RepPfad_lang">
+			name="TEST">
 			</testcase>
 			<testmodule
 			id="813f1a4f-fe0b-41f2-ab45-2d44c468fdad"
@@ -120,7 +120,7 @@
 			</teardown>
 			<testmodule
 			id="a5761411-3301-487f-830b-6ac534610007"
-			name="Keine_Faktura"
+			name="Warum_keine_Faktura_pruefen"
 			ref="fdc92c81-6319-4009-bac2-6fa60c8bfa3d"
 			type="Recording">
 				<databinding>
@@ -133,8 +133,36 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="b2473c76-94d1-4b8c-b1ee-6be95d8b57bd"
+			name="Einschraenkung_LS_Datum_zuruecktauschen"
+			ref="d8adec14-9545-43c8-93de-c16c809655d2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
+					variableid="4e5f470d-7c80-4fcd-a59f-7ea0e362d9d7"
+					variablename="Tagesdatum">
+					</var>
+				</databinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="Auftragsnummer"
+					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
+					variableid="602bd8b5-0b4e-4cf3-a3c8-971ec85eef8f"
+					variablename="Auftragsnummer">
+					</var>
+					<var
+					dataname="Rechnungsnummer"
+					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
+					variableid="464f19d8-5d23-494f-8ebe-16e608fcd91e"
+					variablename="Rechnungsnummer">
+					</var>
+				</missingdatavariablesbinding>
+			</testmodule>
+			<testmodule
 			id="cca970fc-baad-42e2-9be0-24f7e1332bd8"
-			name="Lieferschein_laden"
+			name="Lieferschein_laden_1"
 			ref="584de33d-38c6-4946-a057-c1ea78b0821d"
 			type="Recording">
 				<databinding>
@@ -157,6 +185,32 @@
 			name="CloseAUT"
 			ref="bb59ec77-ffd9-4618-b1c9-070b51879f80"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="efe59114-cfc3-4730-a0e6-f3148dc096e9"
+			name="Lieferschein_laden_3_Rechnung_Vorschau_Druck"
+			ref="0f947838-ac34-4588-861d-8eec2ebd3681"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Auftragsnummer"
+					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
+					variableid="97924078-28dd-4245-a9bc-84e56a3fc6d8"
+					variablename="Auftragsnummer">
+					</var>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
+					variableid="1ad00cf8-70e3-4957-be76-4320d762c744"
+					variablename="Tagesdatum">
+					</var>
+					<var
+					dataname="Rechnungsnummer"
+					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
+					variableid="731700b9-236c-47f6-aa76-57d2c54fdb44"
+					variablename="Rechnungsnummer">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="f33ecc8b-7118-4cc1-9235-a41c823934b5"
@@ -223,6 +277,26 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="fe94d3fe-fcfc-479c-beb3-2a2de43e8c20"
+			name="Lieferschein_laden_2_Meldung_kein_LS_gefunden"
+			ref="a84c7fd6-81c2-4855-b133-40f5ce96a4a9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
+					variableid="1d602cb9-f862-451f-90c8-a3d7fac07458"
+					variablename="Tagesdatum">
+					</var>
+					<var
+					dataname="Datum_leer"
+					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
+					variableid="02b7a607-234b-48ca-bbb9-905e46e4ab13"
+					variablename="Datum_leer">
+					</var>
+				</databinding>
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -233,7 +307,7 @@
 				name="V_FADR_001">
 					<testcase
 					id="5d5036a8-314b-4246-b1b1-1e2faaf73d7f"
-					name="Test_Programmstart_mit_Aufrufparameter_RepPfad_lang">
+					name="TEST">
 						<setup
 						id="04662ee0-5466-495b-a270-290a0aa69a5d"
 						name="setup">
@@ -244,15 +318,27 @@
 						</setup>
 						<testmodule
 						id="cca970fc-baad-42e2-9be0-24f7e1332bd8"
-						name="Lieferschein_laden">
+						name="Lieferschein_laden_1">
 						</testmodule>
 						<testmodule
 						id="55142e60-1c84-4d25-8059-c59d60a9285e"
-						name="Lieferschein_laden2_klick_LS_Datum_Pfade_lang">
+						name="Einschraenkung_LS_Datum_tauschen">
+						</testmodule>
+						<testmodule
+						id="fe94d3fe-fcfc-479c-beb3-2a2de43e8c20"
+						name="Lieferschein_laden_2_Meldung_kein_LS_gefunden">
 						</testmodule>
 						<testmodule
 						id="a5761411-3301-487f-830b-6ac534610007"
-						name="Keine_Faktura">
+						name="Warum_keine_Faktura_pruefen">
+						</testmodule>
+						<testmodule
+						id="b2473c76-94d1-4b8c-b1ee-6be95d8b57bd"
+						name="Einschraenkung_LS_Datum_zuruecktauschen">
+						</testmodule>
+						<testmodule
+						id="efe59114-cfc3-4730-a0e6-f3148dc096e9"
+						name="Lieferschein_laden_3_Rechnung_Vorschau_Druck">
 						</testmodule>
 						<testmodule
 						id="813f1a4f-fe0b-41f2-ab45-2d44c468fdad"
