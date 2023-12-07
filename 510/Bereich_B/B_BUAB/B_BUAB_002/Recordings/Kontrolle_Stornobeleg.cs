@@ -42,7 +42,7 @@ namespace B_BUAB_002.Recordings
         public Kontrolle_Stornobeleg()
         {
             Beleg = "BAÄ_02";
-            Tagesdatum = "07.12.2023";
+            Tagesdatum = "";
             Stornobeleg = "BAÄ_04";
             Programm = "B_BUAB";
         }
