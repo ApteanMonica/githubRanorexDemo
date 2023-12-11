@@ -36,7 +36,6 @@ namespace V_FADR_001
         V_FADR_001RepositoryFolders.TblDruckenAppFolder _tbldrucken;
         V_FADR_001RepositoryFolders.DlgRechAenderungAppFolder _dlgrechaenderung;
         V_FADR_001RepositoryFolders.VFADR1AppFolder _vfadr1;
-        V_FADR_001RepositoryFolders.TblFadr1AppFolder _tblfadr1;
 
         /// <summary>
         /// Gets the singleton class instance representing the V_FADR_001Repository element repository.
@@ -62,7 +61,6 @@ namespace V_FADR_001
             _tbldrucken = new V_FADR_001RepositoryFolders.TblDruckenAppFolder(this);
             _dlgrechaenderung = new V_FADR_001RepositoryFolders.DlgRechAenderungAppFolder(this);
             _vfadr1 = new V_FADR_001RepositoryFolders.VFADR1AppFolder(this);
-            _tblfadr1 = new V_FADR_001RepositoryFolders.TblFadr1AppFolder(this);
         }
 
 #region Variables
@@ -185,15 +183,6 @@ namespace V_FADR_001
         {
             get { return _vfadr1; }
         }
-
-        /// <summary>
-        /// The TblFadr1 folder.
-        /// </summary>
-        [RepositoryFolder("29594953-9f0d-4a13-838e-3f05d393ac30")]
-        public virtual V_FADR_001RepositoryFolders.TblFadr1AppFolder TblFadr1
-        {
-            get { return _tblfadr1; }
-        }
     }
 
     /// <summary>
@@ -210,11 +199,12 @@ namespace V_FADR_001
         {
             V_FADR_001RepositoryFolders.TblRechArt_Pfad_verkuerzt_dzt_nicht_verwendetFolder _tblrechart_pfad_verkuerzt_dzt_nicht_verwendet;
             V_FADR_001RepositoryFolders.Untere_TabelleFolder _untere_tabelle;
-            V_FADR_001RepositoryFolders.Rech_art_FlexGrid_Pfand_langFolder _rech_art_flexgrid_pfand_lang;
+            V_FADR_001RepositoryFolders.Rech_art_FlexGrid_Pfad_langFolder _rech_art_flexgrid_pfad_lang;
             RepoItemInfo _titlebar100fakturierungInfo;
             RepoItemInfo _titlebar100fakturierung_mit_text_fakturierungInfo;
             RepoItemInfo _titlebar100fakturierung_mit_text_auftragsbestaetigungInfo;
             RepoItemInfo _titlebar100fakturierung_mit_text_keine_rueckmeldungInfo;
+            RepoItemInfo _pbspec1modusInfo;
             RepoItemInfo _pbcommonloadInfo;
             RepoItemInfo _pbspec3extrasInfo;
             RepoItemInfo _pbspec2fakturenerstellungInfo;
@@ -225,7 +215,6 @@ namespace V_FADR_001
             RepoItemInfo _rbladendruckInfo;
             RepoItemInfo _sometext_windowtext_tagesdatumInfo;
             RepoItemInfo _sometext_text_tagesdatumInfo;
-            RepoItemInfo _valutadatumInfo;
 
             /// <summary>
             /// Creates a new TblFadr  folder.
@@ -235,11 +224,12 @@ namespace V_FADR_001
             {
                 _tblrechart_pfad_verkuerzt_dzt_nicht_verwendet = new V_FADR_001RepositoryFolders.TblRechArt_Pfad_verkuerzt_dzt_nicht_verwendetFolder(this);
                 _untere_tabelle = new V_FADR_001RepositoryFolders.Untere_TabelleFolder(this);
-                _rech_art_flexgrid_pfand_lang = new V_FADR_001RepositoryFolders.Rech_art_FlexGrid_Pfand_langFolder(this);
+                _rech_art_flexgrid_pfad_lang = new V_FADR_001RepositoryFolders.Rech_art_FlexGrid_Pfad_langFolder(this);
                 _titlebar100fakturierungInfo = new RepoItemInfo(this, "TitleBar100Fakturierung", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "1dc81752-b411-4c29-947c-e8c8dbe2e9af");
                 _titlebar100fakturierung_mit_text_fakturierungInfo = new RepoItemInfo(this, "TitleBar100Fakturierung_mit_Text_Fakturierung", "titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'Fakturierung']", "", 30000, null, "55640ae3-8e17-442f-b7cb-f2b08bf7a0b8");
                 _titlebar100fakturierung_mit_text_auftragsbestaetigungInfo = new RepoItemInfo(this, "TitleBar100Fakturierung_mit_Text_Auftragsbestaetigung", "titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'Auftragsbestätigung']", "", 30000, null, "437a8a09-e70f-4afe-b609-78613a2c23be");
                 _titlebar100fakturierung_mit_text_keine_rueckmeldungInfo = new RepoItemInfo(this, "TitleBar100Fakturierung_mit_Text_keine_Rueckmeldung", "titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'keine Rückmeldung']", "", 30000, null, "020c2a9b-95e0-4fe2-85d1-cc6ece360df4");
+                _pbspec1modusInfo = new RepoItemInfo(this, "PbSpec1Modus", "container[@controlname='RibbonBar']/container[@controlname='Spec1Group']/button[@controlname='pbSpec1_Modus']", "", 30000, null, "1555154c-c183-4357-ae78-ef9c0d0ae26f");
                 _pbcommonloadInfo = new RepoItemInfo(this, "PbCommonLoad", "container[@controlname='RibbonBar']/container[@controlname='CommonGroup']/button[@controlname='pbCommon_Load']", "", 30000, null, "077cad46-e897-4023-a1f5-c62d755b4df6");
                 _pbspec3extrasInfo = new RepoItemInfo(this, "PbSpec3Extras", "container[@controlname='RibbonBar']/container[@controlname='Spec3Group']/button[@controlname='pbSpec3_Extras']", "", 30000, null, "17c39c50-33f6-4bfe-9f9e-9e53d12aa3f9");
                 _pbspec2fakturenerstellungInfo = new RepoItemInfo(this, "PbSpec2Fakturenerstellung", "container[@controlname='RibbonBar']/container[@controlname='Spec2Group']/button[@controlname='pbSpec2_Fakturenerstellung']", "", 30000, null, "f8b74144-c9e6-4dbf-9899-235ec102237d");
@@ -250,7 +240,6 @@ namespace V_FADR_001
                 _rbladendruckInfo = new RepoItemInfo(this, "RbLadenDruck", "container[@controlname='ToolBar']/radiobutton[@controlname='rbLadenDruck']", "", 30000, null, "e8657d49-c845-4989-8887-5b76d676cda5");
                 _sometext_windowtext_tagesdatumInfo = new RepoItemInfo(this, "SomeText_windowtext_Tagesdatum", "container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/text[@windowtext=$Tagesdatum]", "", 90000, null, "5906834d-962d-45fd-b150-90e08fb12538");
                 _sometext_text_tagesdatumInfo = new RepoItemInfo(this, "SomeText_text_Tagesdatum", "container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/text[@text~$Tagesdatum]", "", 90000, null, "f4c5e98a-9a2b-4c4d-a5b1-d1f825e01007");
-                _valutadatumInfo = new RepoItemInfo(this, "Valutadatum", "form[@controlname='tblFadr']/container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename>'colRech_valutadatum_vorschlag']", "element", 30000, null, "b2990691-6244-4d64-ad63-1231d5b76083");
             }
 
             /// <summary>
@@ -370,6 +359,30 @@ namespace V_FADR_001
                 get
                 {
                     return _titlebar100fakturierung_mit_text_keine_rueckmeldungInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PbSpec1Modus item.
+            /// </summary>
+            [RepositoryItem("1555154c-c183-4357-ae78-ef9c0d0ae26f")]
+            public virtual Ranorex.Button PbSpec1Modus
+            {
+                get
+                {
+                    return _pbspec1modusInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PbSpec1Modus item info.
+            /// </summary>
+            [RepositoryItemInfo("1555154c-c183-4357-ae78-ef9c0d0ae26f")]
+            public virtual RepoItemInfo PbSpec1ModusInfo
+            {
+                get
+                {
+                    return _pbspec1modusInfo;
                 }
             }
 
@@ -614,30 +627,6 @@ namespace V_FADR_001
             }
 
             /// <summary>
-            /// The Valutadatum item.
-            /// </summary>
-            [RepositoryItem("b2990691-6244-4d64-ad63-1231d5b76083")]
-            public virtual Ranorex.Cell Valutadatum
-            {
-                get
-                {
-                    return _valutadatumInfo.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Valutadatum item info.
-            /// </summary>
-            [RepositoryItemInfo("b2990691-6244-4d64-ad63-1231d5b76083")]
-            public virtual RepoItemInfo ValutadatumInfo
-            {
-                get
-                {
-                    return _valutadatumInfo;
-                }
-            }
-
-            /// <summary>
             /// The tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet folder.
             /// </summary>
             [RepositoryFolder("74563929-125c-497e-87f4-cc5cefa7a726")]
@@ -656,12 +645,12 @@ namespace V_FADR_001
             }
 
             /// <summary>
-            /// The Rech_art_FlexGrid_Pfand_lang folder.
+            /// The Rech_art_FlexGrid_Pfad_lang folder.
             /// </summary>
             [RepositoryFolder("faaf6b6c-2b2c-4810-85c2-0c67f71e5ece")]
-            public virtual V_FADR_001RepositoryFolders.Rech_art_FlexGrid_Pfand_langFolder Rech_art_FlexGrid_Pfand_lang
+            public virtual V_FADR_001RepositoryFolders.Rech_art_FlexGrid_Pfad_langFolder Rech_art_FlexGrid_Pfad_lang
             {
-                get { return _rech_art_flexgrid_pfand_lang; }
+                get { return _rech_art_flexgrid_pfad_lang; }
             }
         }
 
@@ -1006,10 +995,10 @@ namespace V_FADR_001
         }
 
         /// <summary>
-        /// The Rech_art_FlexGrid_Pfand_langFolder folder.
+        /// The Rech_art_FlexGrid_Pfad_langFolder folder.
         /// </summary>
         [RepositoryFolder("faaf6b6c-2b2c-4810-85c2-0c67f71e5ece")]
-        public partial class Rech_art_FlexGrid_Pfand_langFolder : RepoGenBaseFolder
+        public partial class Rech_art_FlexGrid_Pfad_langFolder : RepoGenBaseFolder
         {
             RepoItemInfo _colrechartrow1Info;
             RepoItemInfo _colrechartrow2Info;
@@ -1020,10 +1009,10 @@ namespace V_FADR_001
             RepoItemInfo _colrechvalutadatumvorschlagrow1Info;
 
             /// <summary>
-            /// Creates a new Rech_art_FlexGrid_Pfand_lang  folder.
+            /// Creates a new Rech_art_FlexGrid_Pfad_lang  folder.
             /// </summary>
-            public Rech_art_FlexGrid_Pfand_langFolder(RepoGenBaseFolder parentFolder) :
-                    base("Rech_art_FlexGrid_Pfand_lang", "container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "faaf6b6c-2b2c-4810-85c2-0c67f71e5ece", "")
+            public Rech_art_FlexGrid_Pfad_langFolder(RepoGenBaseFolder parentFolder) :
+                    base("Rech_art_FlexGrid_Pfad_lang", "container[@controlname='ToolBar']/container[@controlname='tblRech_art']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']", parentFolder, 30000, null, false, "faaf6b6c-2b2c-4810-85c2-0c67f71e5ece", "")
             {
                 _colrechartrow1Info = new RepoItemInfo(this, "colRechartRow1", "row[@accessiblename='Row 1']/cell[@accessiblename='colRech_art Row 1']", "", 90000, null, "9562693f-b27b-4359-8247-d2112ccbedd5");
                 _colrechartrow2Info = new RepoItemInfo(this, "colRechartRow2", "row[@accessiblename='Row 2']/cell[@accessiblename='colRech_art Row 2']", "", 90000, null, "3bcaf839-55d9-4763-b37d-f678d2a68c93");
@@ -2219,72 +2208,6 @@ namespace V_FADR_001
                 get
                 {
                     return _dropdownInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The TblFadr1AppFolder folder.
-        /// </summary>
-        [RepositoryFolder("29594953-9f0d-4a13-838e-3f05d393ac30")]
-        public partial class TblFadr1AppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _pbspec1modusInfo;
-
-            /// <summary>
-            /// Creates a new TblFadr1  folder.
-            /// </summary>
-            public TblFadr1AppFolder(RepoGenBaseFolder parentFolder) :
-                    base("TblFadr1", "/form[@controlname='tblFadr']", parentFolder, 30000, null, true, "29594953-9f0d-4a13-838e-3f05d393ac30", "")
-            {
-                _pbspec1modusInfo = new RepoItemInfo(this, "PbSpec1Modus", "container[@controlname='RibbonBar']/container[@controlname='Spec1Group']/button[@controlname='pbSpec1_Modus']", "", 30000, null, "1555154c-c183-4357-ae78-ef9c0d0ae26f");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("29594953-9f0d-4a13-838e-3f05d393ac30")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("29594953-9f0d-4a13-838e-3f05d393ac30")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The PbSpec1Modus item.
-            /// </summary>
-            [RepositoryItem("1555154c-c183-4357-ae78-ef9c0d0ae26f")]
-            public virtual Ranorex.Button PbSpec1Modus
-            {
-                get
-                {
-                    return _pbspec1modusInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PbSpec1Modus item info.
-            /// </summary>
-            [RepositoryItemInfo("1555154c-c183-4357-ae78-ef9c0d0ae26f")]
-            public virtual RepoItemInfo PbSpec1ModusInfo
-            {
-                get
-                {
-                    return _pbspec1modusInfo;
                 }
             }
         }

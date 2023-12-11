@@ -117,8 +117,8 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to not exist. Associated repository item: 'TblFadr.TitleBar100Fakturierung_mit_Text_keine_Rueckmeldung'", repo.TblFadr.TitleBar100Fakturierung_mit_Text_keine_RueckmeldungInfo, new ActionTimeout(120000), new RecordItemIndex(3));
             repo.TblFadr.TitleBar100Fakturierung_mit_Text_keine_RueckmeldungInfo.WaitForNotExists(120000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr1.PbSpec1Modus' at Center.", repo.TblFadr1.PbSpec1ModusInfo, new RecordItemIndex(4));
-            repo.TblFadr1.PbSpec1Modus.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbSpec1Modus' at Center.", repo.TblFadr.PbSpec1ModusInfo, new RecordItemIndex(4));
+            repo.TblFadr.PbSpec1Modus.Click();
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'R'.", new RecordItemIndex(5));
             Keyboard.Press("R");

@@ -111,36 +111,36 @@ namespace V_FADR_001.Recordings
             
             Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("dd.MM.yyyy");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow1Info, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow1Info, "Text", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1Info, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1Info, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow2'.", repo.TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow2Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow2Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow2'.", repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow2Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow2Info, "Text", "");
             
             // LS-Datum in row1 entfernen
             Report.Log(ReportLevel.Info, "Section", "LS-Datum in row1 entfernen", new RecordItemIndex(5));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow1' at Center.", repo.TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow1Info, new RecordItemIndex(6));
-            repo.TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1' at Center.", repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1Info, new RecordItemIndex(6));
+            repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(7));
-            Delay.Duration(7000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(7));
+            Delay.Duration(5000, false);
             
             Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(8));
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press.", new RecordItemIndex(9));
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(10));
-            Delay.Duration(7000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(10));
+            Delay.Duration(5000, false);
             
             Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(11));
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+X' Press.", new RecordItemIndex(12));
             Keyboard.Press(System.Windows.Forms.Keys.X | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(13));
-            Delay.Duration(7000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(13));
+            Delay.Duration(5000, false);
             
             Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(14));
             
@@ -151,38 +151,35 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "search timeout erhöht\r\nMouse Left Click item 'TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow2' at Center.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow2Info, new RecordItemIndex(16));
             repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow2.Click();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(17));
-            Delay.Duration(7000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(17));
+            Delay.Duration(5000, false);
             
             Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(18));
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+V' Press.", new RecordItemIndex(19));
             Keyboard.Press(System.Windows.Forms.Keys.V | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(20));
-            Delay.Duration(7000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(20));
+            Delay.Duration(5000, false);
             
             Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(21));
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(22));
-            Delay.Duration(2000, false);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(22));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(24));
-            Delay.Duration(7000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(23));
+            Delay.Duration(5000, false);
             
-            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(25));
+            Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(24));
             
             // Prüfen: LS-Datum Zeile 1 leer, Zeile 2 Tagesdatum
-            Report.Log(ReportLevel.Info, "Section", "Prüfen: LS-Datum Zeile 1 leer, Zeile 2 Tagesdatum", new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Section", "Prüfen: LS-Datum Zeile 1 leer, Zeile 2 Tagesdatum", new RecordItemIndex(25));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow1Info, new RecordItemIndex(27));
-            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow1Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1Info, new RecordItemIndex(26));
+            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1Info, "Text", "");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow2'.", repo.TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow2Info, new RecordItemIndex(28));
-            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow2Info, "Text", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow2'.", repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow2Info, new RecordItemIndex(27));
+            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow2Info, "Text", Tagesdatum);
             
         }
 

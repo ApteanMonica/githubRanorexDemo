@@ -114,8 +114,8 @@ namespace V_FADR_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow1Info, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow1Info, "Text", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1Info, new RecordItemIndex(0));
+            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1Info, "Text", Tagesdatum);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(1));
             repo.TblFadr.PbCommonLoad.Click();

@@ -111,11 +111,11 @@ namespace V_FADR_001.Recordings
             
             Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("dd.MM.yyyy");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow1Info, new RecordItemIndex(4));
-            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow1Info, "Text", Tagesdatum);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1Info, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow2'.", repo.TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow2Info, new RecordItemIndex(5));
-            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid_Pfand_lang.ColLskDatumRow2Info, "Text", "");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow2'.", repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow2Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow2Info, "Text", "");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PbCommonLoad' at Center.", repo.TblFadr.PbCommonLoadInfo, new RecordItemIndex(6));
             repo.TblFadr.PbCommonLoad.Click();
