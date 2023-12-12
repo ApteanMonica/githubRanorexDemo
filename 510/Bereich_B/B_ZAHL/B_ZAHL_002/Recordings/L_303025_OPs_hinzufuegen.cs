@@ -102,7 +102,10 @@ namespace B_ZAHL_002.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$LF_303025' with focus on 'DlgBuopSuch.AdrNr'.", repo.DlgBuopSuch.AdrNrInfo, new RecordItemIndex(3));
             repo.DlgBuopSuch.AdrNr.PressKeys(LF_303025);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgBuopSuch.PbOk' at Center.", repo.DlgBuopSuch.PbOkInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgBuopSuch.PbOk' at Center.", repo.DlgBuopSuch.PbOkInfo, new RecordItemIndex(5));
             repo.DlgBuopSuch.PbOk.Click();
             
         }
