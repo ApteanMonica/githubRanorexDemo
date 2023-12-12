@@ -908,6 +908,7 @@ namespace V_FADR_002
             RepoItemInfo _button_schliessenInfo;
             RepoItemInfo _microsoft_print_to_pdfInfo;
             RepoItemInfo _pbokInfo;
+            RepoItemInfo _titlebar100druckeangebotInfo;
 
             /// <summary>
             /// Creates a new DlgDrucken  folder.
@@ -919,6 +920,7 @@ namespace V_FADR_002
                 _button_schliessenInfo = new RepoItemInfo(this, "Button_Schliessen", "?/?/button[@accessiblename='Schließen']", "", 30000, null, "7ec6e0cc-54a6-4708-9d2c-f0749d6a07e7");
                 _microsoft_print_to_pdfInfo = new RepoItemInfo(this, "Microsoft_Print_to_PDF", "combobox[@controlname='cmbDrucker']", "", 30000, null, "4b4a5255-95fb-4ab1-97f9-fffeb13416af");
                 _pbokInfo = new RepoItemInfo(this, "PbOk", "button[@controlname='pbOk']", "", 30000, null, "3ca7f47c-7f00-44f8-bb97-017e99ccbcb3");
+                _titlebar100druckeangebotInfo = new RepoItemInfo(this, "TitleBar100DruckeAngebot", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "db930965-c20c-4b7c-bd05-ba2711c795e9");
             }
 
             /// <summary>
@@ -1038,6 +1040,30 @@ namespace V_FADR_002
                 get
                 {
                     return _pbokInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100DruckeAngebot item.
+            /// </summary>
+            [RepositoryItem("db930965-c20c-4b7c-bd05-ba2711c795e9")]
+            public virtual Ranorex.TitleBar TitleBar100DruckeAngebot
+            {
+                get
+                {
+                    return _titlebar100druckeangebotInfo.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBar100DruckeAngebot item info.
+            /// </summary>
+            [RepositoryItemInfo("db930965-c20c-4b7c-bd05-ba2711c795e9")]
+            public virtual RepoItemInfo TitleBar100DruckeAngebotInfo
+            {
+                get
+                {
+                    return _titlebar100druckeangebotInfo;
                 }
             }
         }
