@@ -227,16 +227,19 @@ namespace B_ERBU_001.Recordings
             repo.TblErbu.FlexGrid1.ColErbuDtweiterRow2.EnsureVisible();
             Keyboard.Press(Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Insert' Press.", new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(26));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Insert' Press.", new RecordItemIndex(27));
             Keyboard.Press(System.Windows.Forms.Keys.Insert, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(27));
-            Delay.Duration(1000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(28));
+            Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'TblErbu.FlexGrid1.ColErbuDtweiterRow2'.", repo.TblErbu.FlexGrid1.ColErbuDtweiterRow2Info, new RecordItemIndex(28));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'TblErbu.FlexGrid1.ColErbuDtweiterRow2'.", repo.TblErbu.FlexGrid1.ColErbuDtweiterRow2Info, new RecordItemIndex(29));
             Validate.AttributeContains(repo.TblErbu.FlexGrid1.ColErbuDtweiterRow2Info, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'([0-9]{6})$') on item 'TblErbu.FlexGrid1.ColErbuNrRow2'.", repo.TblErbu.FlexGrid1.ColErbuNrRow2Info, new RecordItemIndex(29));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'([0-9]{6})$') on item 'TblErbu.FlexGrid1.ColErbuNrRow2'.", repo.TblErbu.FlexGrid1.ColErbuNrRow2Info, new RecordItemIndex(30));
             Validate.AttributeRegex(repo.TblErbu.FlexGrid1.ColErbuNrRow2Info, "Text", new Regex("([0-9]{6})$"));
             
         }

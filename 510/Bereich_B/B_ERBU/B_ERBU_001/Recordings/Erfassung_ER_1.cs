@@ -211,8 +211,8 @@ namespace B_ERBU_001.Recordings
             repo.TblErbu.FlexGrid1.ColErbuBetragRow1.EnsureVisible();
             Keyboard.Press(Rechnungsbetrag1);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(21));
-            Delay.Duration(1000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(21));
+            Delay.Duration(2000, false);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Insert' Press.", new RecordItemIndex(22));
             Keyboard.Press(System.Windows.Forms.Keys.Insert, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);

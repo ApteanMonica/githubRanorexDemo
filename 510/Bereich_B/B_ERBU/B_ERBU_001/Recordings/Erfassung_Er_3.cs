@@ -223,16 +223,19 @@ namespace B_ERBU_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Tagesdatum' with focus on 'TblErbu.FlexGrid1.ColErbuDtrueckRow3'.", repo.TblErbu.FlexGrid1.ColErbuDtrueckRow3Info, new RecordItemIndex(24));
             repo.TblErbu.FlexGrid1.ColErbuDtrueckRow3.PressKeys(Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Insert' Press.", new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(25));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Insert' Press.", new RecordItemIndex(26));
             Keyboard.Press(System.Windows.Forms.Keys.Insert, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(27));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'TblErbu.FlexGrid1.ColErbuDtrueckRow3'.", repo.TblErbu.FlexGrid1.ColErbuDtrueckRow3Info, new RecordItemIndex(27));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Tagesdatum) on item 'TblErbu.FlexGrid1.ColErbuDtrueckRow3'.", repo.TblErbu.FlexGrid1.ColErbuDtrueckRow3Info, new RecordItemIndex(28));
             Validate.AttributeContains(repo.TblErbu.FlexGrid1.ColErbuDtrueckRow3Info, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'([0-9]{6})$') on item 'TblErbu.FlexGrid1.ColAdrNrRow3'.", repo.TblErbu.FlexGrid1.ColAdrNrRow3Info, new RecordItemIndex(28));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'([0-9]{6})$') on item 'TblErbu.FlexGrid1.ColAdrNrRow3'.", repo.TblErbu.FlexGrid1.ColAdrNrRow3Info, new RecordItemIndex(29));
             Validate.AttributeRegex(repo.TblErbu.FlexGrid1.ColAdrNrRow3Info, "Text", new Regex("([0-9]{6})$"));
             
         }
