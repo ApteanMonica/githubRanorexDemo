@@ -149,26 +149,41 @@ namespace B_BUAB_004.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblBuop.Schliessen' at Center.", repo.TblBuop.SchliessenInfo, new RecordItemIndex(18));
             repo.TblBuop.Schliessen.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbSystemHilfeInfo' at CenterRight.", repo.TblB.PbSystemHilfeInfoInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(19));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbSystemHilfeInfo' at CenterRight.", repo.TblB.PbSystemHilfeInfoInfo, new RecordItemIndex(20));
             repo.TblB.PbSystemHilfeInfo.Click(Location.CenterRight);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBUAB1.Hilfe' at CenterRight.", repo.BBUAB1.HilfeInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'BBUAB1.Hilfe'", repo.BBUAB1.HilfeInfo, new ActionTimeout(60000), new RecordItemIndex(21));
+            repo.BBUAB1.HilfeInfo.WaitForExists(60000);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBUAB1.Hilfe' at CenterRight.", repo.BBUAB1.HilfeInfo, new RecordItemIndex(22));
             repo.BBUAB1.Hilfe.Click(Location.CenterRight);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Rs2Hilfe.Rs2Hilfe'.", repo.Rs2Hilfe.Rs2HilfeInfo, new RecordItemIndex(21));
-            Validate.Exists(repo.Rs2Hilfe.Rs2HilfeInfo);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'Rs2Hilfe.Rs2Hilfe'", repo.Rs2Hilfe.Rs2HilfeInfo, new ActionTimeout(120000), new RecordItemIndex(23));
+            repo.Rs2Hilfe.Rs2HilfeInfo.WaitForExists(120000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Rs2Hilfe.Schliessen' at Center.", repo.Rs2Hilfe.SchliessenInfo, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Hilfe') on item 'Rs2Hilfe.Rs2Hilfe'.", repo.Rs2Hilfe.Rs2HilfeInfo, new RecordItemIndex(24));
+            Validate.AttributeContains(repo.Rs2Hilfe.Rs2HilfeInfo, "Text", "Hilfe");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Rs2Hilfe.Schliessen' at Center.", repo.Rs2Hilfe.SchliessenInfo, new RecordItemIndex(25));
             repo.Rs2Hilfe.Schliessen.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbRsDmsButton' at Center.", repo.TblB.PbRsDmsButtonInfo, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(26));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblB.PbRsDmsButton' at Center.", repo.TblB.PbRsDmsButtonInfo, new RecordItemIndex(27));
             repo.TblB.PbRsDmsButton.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FormRsDmsExplorer.TitleBar100DMSExplorer'.", repo.FormRsDmsExplorer.TitleBar100DMSExplorerInfo, new RecordItemIndex(24));
-            Validate.Exists(repo.FormRsDmsExplorer.TitleBar100DMSExplorerInfo);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'FormRsDmsExplorer.TitleBar100DMSExplorer'", repo.FormRsDmsExplorer.TitleBar100DMSExplorerInfo, new ActionTimeout(60000), new RecordItemIndex(28));
+            repo.FormRsDmsExplorer.TitleBar100DMSExplorerInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormRsDmsExplorer.Schliessen' at .517;.486.", repo.FormRsDmsExplorer.SchliessenInfo, new RecordItemIndex(25));
-            repo.FormRsDmsExplorer.Schliessen.Click(".517;.486");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'DMS Explorer') on item 'FormRsDmsExplorer.TitleBar100DMSExplorer'.", repo.FormRsDmsExplorer.TitleBar100DMSExplorerInfo, new RecordItemIndex(29));
+            Validate.AttributeContains(repo.FormRsDmsExplorer.TitleBar100DMSExplorerInfo, "Text", "DMS Explorer");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormRsDmsExplorer.Schliessen' at Center.", repo.FormRsDmsExplorer.SchliessenInfo, new RecordItemIndex(30));
+            repo.FormRsDmsExplorer.Schliessen.Click();
             
         }
 

@@ -34,6 +34,8 @@ namespace B_BUAB_004
         B_BUAB_004RepositoryFolders.BBUAB1AppFolder _bbuab1;
         B_BUAB_004RepositoryFolders.FormRsDmsExplorerAppFolder _formrsdmsexplorer;
         B_BUAB_004RepositoryFolders.Rs2HilfeAppFolder _rs2hilfe;
+        B_BUAB_004RepositoryFolders.Form100BuchungenAnzeigenAppFolder _form100buchungenanzeigen;
+        B_BUAB_004RepositoryFolders.BBUABAppFolder _bbuab;
 
         /// <summary>
         /// Gets the singleton class instance representing the B_BUAB_004Repository element repository.
@@ -57,6 +59,8 @@ namespace B_BUAB_004
             _bbuab1 = new B_BUAB_004RepositoryFolders.BBUAB1AppFolder(this);
             _formrsdmsexplorer = new B_BUAB_004RepositoryFolders.FormRsDmsExplorerAppFolder(this);
             _rs2hilfe = new B_BUAB_004RepositoryFolders.Rs2HilfeAppFolder(this);
+            _form100buchungenanzeigen = new B_BUAB_004RepositoryFolders.Form100BuchungenAnzeigenAppFolder(this);
+            _bbuab = new B_BUAB_004RepositoryFolders.BBUABAppFolder(this);
         }
 
 #region Variables
@@ -136,6 +140,24 @@ namespace B_BUAB_004
         public virtual B_BUAB_004RepositoryFolders.Rs2HilfeAppFolder Rs2Hilfe
         {
             get { return _rs2hilfe; }
+        }
+
+        /// <summary>
+        /// The Form100BuchungenAnzeigen folder.
+        /// </summary>
+        [RepositoryFolder("b09e0c62-b31d-4d84-8a7c-a48fa96b59f1")]
+        public virtual B_BUAB_004RepositoryFolders.Form100BuchungenAnzeigenAppFolder Form100BuchungenAnzeigen
+        {
+            get { return _form100buchungenanzeigen; }
+        }
+
+        /// <summary>
+        /// The BBUAB folder.
+        /// </summary>
+        [RepositoryFolder("cb590a5b-2a38-4f02-88b0-fc59ca391c36")]
+        public virtual B_BUAB_004RepositoryFolders.BBUABAppFolder BBUAB
+        {
+            get { return _bbuab; }
         }
     }
 
@@ -1588,6 +1610,138 @@ namespace B_BUAB_004
                 get
                 {
                     return _schliessenInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Form100BuchungenAnzeigenAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("b09e0c62-b31d-4d84-8a7c-a48fa96b59f1")]
+        public partial class Form100BuchungenAnzeigenAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonhilfeInfo;
+
+            /// <summary>
+            /// Creates a new Form100BuchungenAnzeigen  folder.
+            /// </summary>
+            public Form100BuchungenAnzeigenAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Form100BuchungenAnzeigen", "/form[@title='[100]  Buchungen anzeigen']", parentFolder, 30000, null, true, "b09e0c62-b31d-4d84-8a7c-a48fa96b59f1", "")
+            {
+                _buttonhilfeInfo = new RepoItemInfo(this, "ButtonHilfe", "element[@instance='57']/element[@instance='6']/button[@text='&Hilfe']", "", 30000, null, "aee30128-5cd0-44f0-98f2-412740f13754");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("b09e0c62-b31d-4d84-8a7c-a48fa96b59f1")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("b09e0c62-b31d-4d84-8a7c-a48fa96b59f1")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonHilfe item.
+            /// </summary>
+            [RepositoryItem("aee30128-5cd0-44f0-98f2-412740f13754")]
+            public virtual Ranorex.Button ButtonHilfe
+            {
+                get
+                {
+                    return _buttonhilfeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonHilfe item info.
+            /// </summary>
+            [RepositoryItemInfo("aee30128-5cd0-44f0-98f2-412740f13754")]
+            public virtual RepoItemInfo ButtonHilfeInfo
+            {
+                get
+                {
+                    return _buttonhilfeInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The BBUABAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("cb590a5b-2a38-4f02-88b0-fc59ca391c36")]
+        public partial class BBUABAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _hilfeInfo;
+
+            /// <summary>
+            /// Creates a new BBUAB  folder.
+            /// </summary>
+            public BBUABAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("BBUAB", "/form[@title='']", parentFolder, 30000, null, true, "cb590a5b-2a38-4f02-88b0-fc59ca391c36", "")
+            {
+                _hilfeInfo = new RepoItemInfo(this, "Hilfe", "contextmenu[@accessiblename='DropDown']/menuitem[@accessiblename='Hilfe']", "", 30000, null, "0e04301e-28c5-44fc-adc1-03e09b0bc2c4");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("cb590a5b-2a38-4f02-88b0-fc59ca391c36")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("cb590a5b-2a38-4f02-88b0-fc59ca391c36")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Hilfe item.
+            /// </summary>
+            [RepositoryItem("0e04301e-28c5-44fc-adc1-03e09b0bc2c4")]
+            public virtual Ranorex.MenuItem Hilfe
+            {
+                get
+                {
+                    return _hilfeInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Hilfe item info.
+            /// </summary>
+            [RepositoryItemInfo("0e04301e-28c5-44fc-adc1-03e09b0bc2c4")]
+            public virtual RepoItemInfo HilfeInfo
+            {
+                get
+                {
+                    return _hilfeInfo;
                 }
             }
         }

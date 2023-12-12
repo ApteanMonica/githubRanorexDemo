@@ -4622,6 +4622,15 @@ YUUUUAFFFFABRRRQAUUUUANj/wBWv0FOoooAKKKKACiiigAooooAKKKKAP/Z
 				</robustPath>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4648,6 +4657,26 @@ YUUUUAFFFFABRRRQAUUUUANj/wBWv0FOoooAKKKKACiiigAooooAKKKKAP/Z
 				</robustPath>
 			</info>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="2a7ab677-4e14-492a-b8ac-0688025004d4"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="31d5ca39-157e-453a-bed3-f25f2dde21a0"
+			sourcename="RepositoryEditor">
+				<path>
+					/contextmenu[@processname='B_BUAB']/menuitem[@accessiblename='Hilfe']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4674,8 +4703,28 @@ YUUUUAFFFFABRRRQAUUUUANj/wBWv0FOoooAKKKKACiiigAooooAKKKKAP/Z
 				</robustPath>
 			</info>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="2a7ab677-4e14-492a-b8ac-0688025004d4"
+		waitaction="Exists"
+		waittimeout="120000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1737de84-0098-422e-a841-25567ededcee"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='rs2-Hilfe']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
-		action="Exists"
+		action="AttributeContains"
 		enabled="True"
 		optional="False"
 		searchpropertyid="c81129c0-d29c-4386-8b93-cf14e1c08da1">
@@ -4735,7 +4784,7 @@ YUUUUAFFFFABRRRQAUUUUANj/wBWv0FOoooAKKKKACiiigAooooAKKKKAP/Z
 				Text
 			</matchname>
 			<matchvalue>
-				yourtext
+				Hilfe
 			</matchvalue>
 		</validationitem>
 		<mouseitem
@@ -4813,6 +4862,15 @@ YUUUUAFFFFABRRRQAUUUUANj/wBWv0FOoooAKKKKACiiigAooooAKKKKAP/Z
 				</robustPath>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4839,8 +4897,28 @@ YUUUUAFFFFABRRRQAUUUUANj/wBWv0FOoooAKKKKACiiigAooooAKKKKAP/Z
 				</robustPath>
 			</info>
 		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="38428874-ebde-4082-9128-6ea66fd276f3"
+		waitaction="Exists"
+		waittimeout="60000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="87ea673d-cbae-4945-9f8a-60c12b40a6ef"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='FormRsDmsExplorer']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
 		<validationitem
-		action="Exists"
+		action="AttributeContains"
 		enabled="True"
 		optional="False"
 		searchpropertyid="1b07967e-5dbf-4fe9-9fa3-7ba009acc7b0">
@@ -4861,7 +4939,7 @@ YUUUUAFFFFABRRRQAUUUUANj/wBWv0FOoooAKKKKACiiigAooooAKKKKAP/Z
 				Text
 			</matchname>
 			<matchvalue>
-				yourtext
+				DMS Explorer
 			</matchvalue>
 		</validationitem>
 		<mouseitem
@@ -4869,7 +4947,7 @@ YUUUUAFFFFABRRRQAUUUUANj/wBWv0FOoooAKKKKACiiigAooooAKKKKAP/Z
 		button="Left"
 		duration="500ms"
 		enabled="True"
-		loc=".517;.486"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
 		searchpropertyid="5969329c-6292-48c7-8171-ffddcacc5b3f"
