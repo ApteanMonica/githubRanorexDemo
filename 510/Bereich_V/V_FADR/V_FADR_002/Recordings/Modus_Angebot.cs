@@ -126,47 +126,44 @@ namespace V_FADR_002.Recordings
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Buttons.Drucken' at Center.", repo.Buttons.DruckenInfo, new RecordItemIndex(6));
             repo.Buttons.Drucken.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Microsoft_print_to_PDF) on item 'DlgDrucken.Microsoft_Print_to_PDF'.", repo.DlgDrucken.Microsoft_Print_to_PDFInfo, new RecordItemIndex(7));
-            Validate.AttributeContains(repo.DlgDrucken.Microsoft_Print_to_PDFInfo, "Text", Microsoft_print_to_PDF);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'DlgDrucken.TitleBar100DruckeAngebot'", repo.DlgDrucken.TitleBar100DruckeAngebotInfo, new ActionTimeout(60000), new RecordItemIndex(7));
+            repo.DlgDrucken.TitleBar100DruckeAngebotInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'DlgDrucken.Button_Vorschau'", repo.DlgDrucken.Button_VorschauInfo, new ActionTimeout(30000), new RecordItemIndex(8));
-            repo.DlgDrucken.Button_VorschauInfo.WaitForExists(30000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.Button_Vorschau' at Center.", repo.DlgDrucken.Button_VorschauInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.Button_Vorschau' at Center.", repo.DlgDrucken.Button_VorschauInfo, new RecordItemIndex(8));
             repo.DlgDrucken.Button_Vorschau.Click();
             
             // BAR: Wait for erhöht von 30s auf 1 Minute
-            Report.Log(ReportLevel.Info, "Wait", "BAR: Wait for erhöht von 30s auf 1 Minute\r\nWaiting 1m to exist. Associated repository item: 'Vorschau.TitleBar'", repo.Vorschau.TitleBarInfo, new ActionTimeout(60000), new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Wait", "BAR: Wait for erhöht von 30s auf 1 Minute\r\nWaiting 1m to exist. Associated repository item: 'Vorschau.TitleBar'", repo.Vorschau.TitleBarInfo, new ActionTimeout(60000), new RecordItemIndex(9));
             repo.Vorschau.TitleBarInfo.WaitForExists(60000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Visible>'True') on item 'Vorschau.Vorschau_Dokument'.", repo.Vorschau.Vorschau_DokumentInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Visible>'True') on item 'Vorschau.Vorschau_Dokument'.", repo.Vorschau.Vorschau_DokumentInfo, new RecordItemIndex(10));
             Validate.AttributeContains(repo.Vorschau.Vorschau_DokumentInfo, "Visible", "True");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Vorschau.Vorschau_beenden' at Center.", repo.Vorschau.Vorschau_beendenInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Vorschau.Vorschau_beenden' at Center.", repo.Vorschau.Vorschau_beendenInfo, new RecordItemIndex(11));
             repo.Vorschau.Vorschau_beenden.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.Button_Schliessen' at Center.", repo.DlgDrucken.Button_SchliessenInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgDrucken.Button_Schliessen' at Center.", repo.DlgDrucken.Button_SchliessenInfo, new RecordItemIndex(12));
             repo.DlgDrucken.Button_Schliessen.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Buttons.Laden' at Center.", repo.Buttons.LadenInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Buttons.Laden' at Center.", repo.Buttons.LadenInfo, new RecordItemIndex(13));
             repo.Buttons.Laden.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Buttons.Wiederholdruck' at Center.", repo.Buttons.WiederholdruckInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Buttons.Wiederholdruck' at Center.", repo.Buttons.WiederholdruckInfo, new RecordItemIndex(14));
             repo.Buttons.Wiederholdruck.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Buttons.Laden' at Center.", repo.Buttons.LadenInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Buttons.Laden' at Center.", repo.Buttons.LadenInfo, new RecordItemIndex(15));
             repo.Buttons.Laden.Click();
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'ControlText' from item 'Titelbar.TblFadr.MainGrid' and assigning its value to variable 'Modus_AG'.", repo.Titelbar.TblFadr.MainGridInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'ControlText' from item 'Titelbar.TblFadr.MainGrid' and assigning its value to variable 'Modus_AG'.", repo.Titelbar.TblFadr.MainGridInfo, new RecordItemIndex(16));
             Modus_AG = repo.Titelbar.TblFadr.MainGrid.Element.GetAttributeValueText("ControlText");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Titelbar.TblFadr.Auftrag' at Center.", repo.Titelbar.TblFadr.AuftragInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Titelbar.TblFadr.Auftrag' at Center.", repo.Titelbar.TblFadr.AuftragInfo, new RecordItemIndex(17));
             repo.Titelbar.TblFadr.Auftrag.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'Titelbar.TblFadr.Auftrag' at Center.", repo.Titelbar.TblFadr.AuftragInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'Titelbar.TblFadr.Auftrag' at Center.", repo.Titelbar.TblFadr.AuftragInfo, new RecordItemIndex(18));
             repo.Titelbar.TblFadr.Auftrag.DoubleClick();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}' with focus on 'Titelbar.TblFadr.Auftrag'.", repo.Titelbar.TblFadr.AuftragInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Delete}' with focus on 'Titelbar.TblFadr.Auftrag'.", repo.Titelbar.TblFadr.AuftragInfo, new RecordItemIndex(19));
             repo.Titelbar.TblFadr.Auftrag.PressKeys("{Delete}");
             
         }
