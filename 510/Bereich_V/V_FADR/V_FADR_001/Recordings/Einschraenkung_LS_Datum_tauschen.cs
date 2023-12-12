@@ -103,28 +103,28 @@ namespace V_FADR_001.Recordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.TitleBar100Fakturierung_mit_Text_Fakturierung' at Center.", repo.TblFadr.TitleBar100Fakturierung_mit_Text_FakturierungInfo, new RecordItemIndex(0));
-            repo.TblFadr.TitleBar100Fakturierung_mit_Text_Fakturierung.Click();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
+            Delay.Duration(5000, false);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (HasFocus='True') on item 'TblFadr.TitleBar100Fakturierung_mit_Text_Fakturierung'.", repo.TblFadr.TitleBar100Fakturierung_mit_Text_FakturierungInfo, new RecordItemIndex(1));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.TitleBar100Fakturierung_mit_Text_Fakturierung' at Center.", repo.TblFadr.TitleBar100Fakturierung_mit_Text_FakturierungInfo, new RecordItemIndex(1));
+            //repo.TblFadr.TitleBar100Fakturierung_mit_Text_Fakturierung.Click();
+            
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (HasFocus='True') on item 'TblFadr.TitleBar100Fakturierung_mit_Text_Fakturierung'.", repo.TblFadr.TitleBar100Fakturierung_mit_Text_FakturierungInfo, new RecordItemIndex(2));
             //Validate.AttributeEqual(repo.TblFadr.TitleBar100Fakturierung_mit_Text_FakturierungInfo, "HasFocus", "True");
             
             Tagesdatum = Ranorex.AutomationHelpers.UserCodeCollections.SystemLibrary.GetDateTimeAsString("dd.MM.yyyy");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1Info, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Tagesdatum) on item 'TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1'.", repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1Info, new RecordItemIndex(4));
             Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1Info, "Text", Tagesdatum);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow2'.", repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow2Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='') on item 'TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow2'.", repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow2Info, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow2Info, "Text", "");
             
             // LS-Datum in row1 entfernen
-            Report.Log(ReportLevel.Info, "Section", "LS-Datum in row1 entfernen", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Section", "LS-Datum in row1 entfernen", new RecordItemIndex(6));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1' at Center.", repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1Info, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1' at Center.", repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1Info, new RecordItemIndex(7));
             repo.TblFadr.Rech_art_FlexGrid_Pfad_lang.ColLskDatumRow1.Click();
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(7));
-            Delay.Duration(5000, false);
             
             Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(8));
             
@@ -144,8 +144,8 @@ namespace V_FADR_001.Recordings
             
             Report.Screenshot(ReportLevel.Info, "User", "", null, false, new RecordItemIndex(14));
             
-            // LS-Datum in Zeile 1 löschen
-            Report.Log(ReportLevel.Info, "Section", "LS-Datum in Zeile 1 löschen", new RecordItemIndex(15));
+            // LS-Datum in Zeile 2 einfügen
+            Report.Log(ReportLevel.Info, "Section", "LS-Datum in Zeile 2 einfügen", new RecordItemIndex(15));
             
             // search timeout erhöht
             Report.Log(ReportLevel.Info, "Mouse", "search timeout erhöht\r\nMouse Left Click item 'TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow2' at Center.", repo.TblFadr.tblRechArt_Pfad_verkuerzt_dzt_nicht_verwendet.ColLskDatumRow2Info, new RecordItemIndex(16));

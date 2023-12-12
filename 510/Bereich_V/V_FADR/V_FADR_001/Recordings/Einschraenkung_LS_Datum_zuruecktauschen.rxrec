@@ -29,57 +29,6 @@ mode="Global">
 		</var>
 	</variables>
 	<recorditems>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="f5abfae7-ea39-45e8-acc2-9ba88a517ca1"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="55640ae3-8e17-442f-b7cb-f2b08bf7a0b8"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controltypename='tblFadr']/titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'Fakturierung']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
-		<validationitem
-		action="AttributeEqual"
-		enabled="False"
-		optional="False"
-		searchpropertyid="e8c6b71f-ffe2-4228-a122-19d8806eabba">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="55640ae3-8e17-442f-b7cb-f2b08bf7a0b8"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@controltypename='tblFadr']/titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'Fakturierung']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				HasFocus
-			</matchname>
-			<matchvalue>
-				True
-			</matchvalue>
-		</validationitem>
 		<userrecorditem
 		classname="SystemLibrary"
 		enabled="True"
@@ -166,7 +115,7 @@ mode="Global">
 		enabled="True"
 		optional="False">
 			<comment>
-				LS-Datum in row1 entfernen
+				LS-Datum in row2 entfernen
 			</comment>
 			<bindings>
 			</bindings>
@@ -297,7 +246,7 @@ mode="Global">
 		enabled="True"
 		optional="False">
 			<comment>
-				LS-Datum in Zeile 1 löschen
+				LS-Datum in row1 einfügem
 			</comment>
 			<bindings>
 			</bindings>

@@ -201,6 +201,7 @@ namespace V_FADR_001
             V_FADR_001RepositoryFolders.Untere_TabelleFolder _untere_tabelle;
             V_FADR_001RepositoryFolders.Rech_art_FlexGrid_Pfad_langFolder _rech_art_flexgrid_pfad_lang;
             RepoItemInfo _titlebar100fakturierungInfo;
+            RepoItemInfo _maximierenInfo;
             RepoItemInfo _titlebar100fakturierung_mit_text_fakturierungInfo;
             RepoItemInfo _titlebar100fakturierung_mit_text_auftragsbestaetigungInfo;
             RepoItemInfo _titlebar100fakturierung_mit_text_keine_rueckmeldungInfo;
@@ -226,6 +227,7 @@ namespace V_FADR_001
                 _untere_tabelle = new V_FADR_001RepositoryFolders.Untere_TabelleFolder(this);
                 _rech_art_flexgrid_pfad_lang = new V_FADR_001RepositoryFolders.Rech_art_FlexGrid_Pfad_langFolder(this);
                 _titlebar100fakturierungInfo = new RepoItemInfo(this, "TitleBar100Fakturierung", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "1dc81752-b411-4c29-947c-e8c8dbe2e9af");
+                _maximierenInfo = new RepoItemInfo(this, "Maximieren", "titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Maximieren']", "", 30000, null, "64dbcfae-ddfd-424e-8757-63203c269012");
                 _titlebar100fakturierung_mit_text_fakturierungInfo = new RepoItemInfo(this, "TitleBar100Fakturierung_mit_Text_Fakturierung", "titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'Fakturierung']", "", 30000, null, "55640ae3-8e17-442f-b7cb-f2b08bf7a0b8");
                 _titlebar100fakturierung_mit_text_auftragsbestaetigungInfo = new RepoItemInfo(this, "TitleBar100Fakturierung_mit_Text_Auftragsbestaetigung", "titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'Auftragsbestätigung']", "", 30000, null, "437a8a09-e70f-4afe-b609-78613a2c23be");
                 _titlebar100fakturierung_mit_text_keine_rueckmeldungInfo = new RepoItemInfo(this, "TitleBar100Fakturierung_mit_Text_keine_Rueckmeldung", "titlebar[@accessiblerole='TitleBar' and @accessiblevalue~'keine Rückmeldung']", "", 30000, null, "020c2a9b-95e0-4fe2-85d1-cc6ece360df4");
@@ -287,6 +289,30 @@ namespace V_FADR_001
                 get
                 {
                     return _titlebar100fakturierungInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Maximieren item.
+            /// </summary>
+            [RepositoryItem("64dbcfae-ddfd-424e-8757-63203c269012")]
+            public virtual Ranorex.Button Maximieren
+            {
+                get
+                {
+                    return _maximierenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Maximieren item info.
+            /// </summary>
+            [RepositoryItemInfo("64dbcfae-ddfd-424e-8757-63203c269012")]
+            public virtual RepoItemInfo MaximierenInfo
+            {
+                get
+                {
+                    return _maximierenInfo;
                 }
             }
 

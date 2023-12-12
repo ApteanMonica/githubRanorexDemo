@@ -41,6 +41,12 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="41de2afa-574e-4b02-8fe9-8d27321b6a62"
+			name="Maske_maximieren"
+			ref="6d49e626-58a5-4e9e-94b0-640fdf225aad"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="55142e60-1c84-4d25-8059-c59d60a9285e"
 			name="Einschraenkung_LS_Datum_tauschen"
 			ref="2e9264e8-2dd7-4406-a6b2-18b37ba64cc5"
@@ -71,12 +77,6 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Tagesdatum"
-					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
-					variableid="fa008b4f-9528-48ae-9f6a-d3fea2e8d07e"
-					variablename="Tagesdatum">
-					</var>
-					<var
 					dataname="Rechnungsnummer"
 					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
 					variableid="8107eb30-6054-42ba-8953-5373fde332b2"
@@ -89,6 +89,14 @@
 					variablename="Auftragsnummer">
 					</var>
 				</databinding>
+				<missingdatavariablesbinding>
+					<var
+					dataname="Tagesdatum"
+					datasourceid="f33ecc8b-7118-4cc1-9235-a41c823934b5"
+					variableid="fa008b4f-9528-48ae-9f6a-d3fea2e8d07e"
+					variablename="Tagesdatum">
+					</var>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
@@ -305,6 +313,10 @@
 						<testmodule
 						id="cca970fc-baad-42e2-9be0-24f7e1332bd8"
 						name="Lieferschein_laden_1">
+						</testmodule>
+						<testmodule
+						id="41de2afa-574e-4b02-8fe9-8d27321b6a62"
+						name="Maske_maximieren">
 						</testmodule>
 						<testmodule
 						id="55142e60-1c84-4d25-8059-c59d60a9285e"

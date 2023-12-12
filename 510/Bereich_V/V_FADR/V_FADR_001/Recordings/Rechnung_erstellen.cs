@@ -43,7 +43,6 @@ namespace V_FADR_001.Recordings
         {
             Auftragsnummer = "201900005";
             Rechnungsnummer = "";
-            Tagesdatum = "";
         }
 
         /// <summary>
@@ -76,16 +75,6 @@ namespace V_FADR_001.Recordings
         {
             get { return repo.Auftragsnummer; }
             set { repo.Auftragsnummer = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable Tagesdatum.
-        /// </summary>
-        [TestVariable("fa008b4f-9528-48ae-9f6a-d3fea2e8d07e")]
-        public string Tagesdatum
-        {
-            get { return repo.Tagesdatum; }
-            set { repo.Tagesdatum = value; }
         }
 
 #endregion
@@ -129,8 +118,8 @@ namespace V_FADR_001.Recordings
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(4));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PageLeft' at Center.", repo.TblFadr.PageLeftInfo, new RecordItemIndex(5));
-            repo.TblFadr.PageLeft.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblFadr.PageLeft' at Center.", repo.TblFadr.PageLeftInfo, new RecordItemIndex(5));
+            //repo.TblFadr.PageLeft.Click();
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~$Rechnungsnummer) on item 'TblFadr.untere_Tabelle.Rechnungsnummer'.", repo.TblFadr.untere_Tabelle.RechnungsnummerInfo, new RecordItemIndex(6));
             Validate.AttributeRegex(repo.TblFadr.untere_Tabelle.RechnungsnummerInfo, "Text", new Regex(Rechnungsnummer));

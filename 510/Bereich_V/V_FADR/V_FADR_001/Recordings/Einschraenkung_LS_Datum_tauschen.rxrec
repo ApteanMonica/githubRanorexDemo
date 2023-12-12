@@ -33,11 +33,20 @@ mode="Global">
 		</var>
 	</variables>
 	<recorditems>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -200,15 +209,6 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
-		<explicitdelayitem
-		duration="5000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<loggingrecorditem
 		action="Screenshot"
 		category="User"
@@ -300,7 +300,7 @@ mode="Global">
 		enabled="True"
 		optional="False">
 			<comment>
-				LS-Datum in Zeile 1 löschen
+				LS-Datum in Zeile 2 einfügen
 			</comment>
 			<bindings>
 			</bindings>
