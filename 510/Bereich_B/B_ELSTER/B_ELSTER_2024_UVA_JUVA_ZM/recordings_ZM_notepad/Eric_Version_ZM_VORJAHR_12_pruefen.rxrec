@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="ea50223f-937d-487d-bf53-e646fcea0683"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Eric_Version_ZM_VORJAHR_12_pruefen"
+	namespace="B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad">
+	</codegen>
+	<variables>
+		<var
+		id="ae2ec29f-047c-4d05-8461-4c88c61d70f5"
+		name="Eric_Version_ZM_VORJAHR_12">
+			Datei: checkZMDO.dll,  Fileversion: 2023, 39, 2, 4, Produktversion: 39, 2, 4, 0
+		</var>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="7a03acc4-2847-484f-b648-aee94d5da5f1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Eric_Version_ZM_VORJAHR_12">
+				</binding>
+			</bindings>
+			<info
+			id="f267a9c7-8840-458d-b1f7-d6a95db72b09"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='eric.log - Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="e5a9e52d-413c-407b-af4d-bcbeec11758a"
+	name="B_ELSTER_2024_UVA_JUVA_ZMRepository"
+	relativepath="..\B_ELSTER_2024_UVA_JUVA_ZMRepository.rxrep">
+		<codegen
+		classname="B_ELSTER_2024_UVA_JUVA_ZMRepository"
+		namespace="B_ELSTER_2024_UVA_JUVA_ZM">
+		</codegen>
+		<rootfolder
+		id="6796600a-bf80-4687-9882-251ca4f9081a"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Eric_Version_ZM_VORJAHR_12_pruefen.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

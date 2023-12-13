@@ -42,7 +42,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_ZM
         public ZM_Einschraenkungen_VORJAHR_12()
         {
             Firma = "300";
-            VORJAHR = "2022";
+            VORJAHR = "";
         }
 
         /// <summary>

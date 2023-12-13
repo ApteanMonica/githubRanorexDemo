@@ -1987,7 +1987,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             RepoItemInfo _elstervoruvatestpdfadobeacrobatreInfo;
             RepoItemInfo _anzeigeInfo;
             RepoItemInfo _pagedownInfo;
-            AVLAVViewInfoClass _avlavviewInfo;
+            RepoItemInfo _avlavviewInfo;
 
             /// <summary>
             /// Creates a new ElstervorUVATESTPDFAdobeAcrobatRe  folder.
@@ -1998,42 +1998,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 _elstervoruvatestpdfadobeacrobatreInfo = new RepoItemInfo(this, "ElstervorUVATESTPDFAdobeAcrobatRe", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "8018ae93-4875-4798-a144-628c547664ad");
                 _anzeigeInfo = new RepoItemInfo(this, "Anzeige", "?/?/menuitem[@accessiblename='Anzeige']", "", 30000, null, "2632bfe3-86e3-47ea-b5b0-8ed734dc22ea");
                 _pagedownInfo = new RepoItemInfo(this, "PageDown", "?/?/?/?/?/?/?/element[@class='AVL_AVView']/scrollbar[2]/button[@text='PageDown']", "", 30000, null, "39e90ad0-72d1-4a94-a1b7-330256ffbed1");
-                _avlavviewInfo = new AVLAVViewInfoClass(this);
-            }
-
-            /// <summary>
-            /// The AVLAVViewInfoClass folder.
-            /// </summary>
-            [RepositoryItemInfo("3dbbe54d-aa7d-4fa8-be03-ed8a8dd29171")]
-            public class AVLAVViewInfoClass : RepoItemInfo
-            {
-                /// <summary>
-                /// AVLAVViewInfoClass class constructor.
-                /// </summary>
-                public AVLAVViewInfoClass(RepoGenBaseFolder parentFolder)
-                    : base(parentFolder, "AVLAVView", "element[@instance='1']/element[@class='AVL_AVView']/element[@instance='1']/element[@instance='1']/element[@instance='0']/element[@instance='1']/element[@class='AVL_AVView']/?/?/element[@windowtext='AVPageView']", 30000, null, "3dbbe54d-aa7d-4fa8-be03-ed8a8dd29171")
-                { }
-
-                /// <summary>
-                /// Gets the Screenshot_ZM item image.
-                /// </summary>
-                /// <returns>The Screenshot_ZM image.</returns>
-                [RepositoryImage("225f34a4-5012-4410-9246-9b5a6b90abbb")]
-                public CompressedImage GetScreenshot_ZM()
-                {
-                    return GetImage("225f34a4-5012-4410-9246-9b5a6b90abbb");
-                }
-
-                /// <summary>
-                /// Gets the Screenshot_ZM item image.
-                /// </summary>
-                /// <param name="cropRect">The bounds of the sub-image to return.</param>
-                /// <returns>The cropped image.</returns>
-                [RepositoryImage("225f34a4-5012-4410-9246-9b5a6b90abbb")]
-                public CompressedImage GetScreenshot_ZM(System.Drawing.Rectangle cropRect)
-                {
-                    return GetImage("225f34a4-5012-4410-9246-9b5a6b90abbb", cropRect);
-                }
+                _avlavviewInfo = new RepoItemInfo(this, "AVLAVView", "element[@instance='1']/element[@class='AVL_AVView']/element[@instance='0']/element[@instance='1']/element[@instance='0']/element[@instance='1']/element[@class='AVL_AVView']/element[@class='AVL_AVView']/element[@instance='0']", "", 30000, null, "3fb2db90-0f85-41cf-8246-4405cebdf243");
             }
 
             /// <summary>
@@ -2135,7 +2100,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             /// <summary>
             /// The AVLAVView item.
             /// </summary>
-            [RepositoryItem("3dbbe54d-aa7d-4fa8-be03-ed8a8dd29171")]
+            [RepositoryItem("3fb2db90-0f85-41cf-8246-4405cebdf243")]
             public virtual Ranorex.Unknown AVLAVView
             {
                 get
@@ -2147,8 +2112,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             /// <summary>
             /// The AVLAVView item info.
             /// </summary>
-            [RepositoryItemInfo("3dbbe54d-aa7d-4fa8-be03-ed8a8dd29171")]
-            public virtual AVLAVViewInfoClass AVLAVViewInfo
+            [RepositoryItemInfo("3fb2db90-0f85-41cf-8246-4405cebdf243")]
+            public virtual RepoItemInfo AVLAVViewInfo
             {
                 get
                 {
