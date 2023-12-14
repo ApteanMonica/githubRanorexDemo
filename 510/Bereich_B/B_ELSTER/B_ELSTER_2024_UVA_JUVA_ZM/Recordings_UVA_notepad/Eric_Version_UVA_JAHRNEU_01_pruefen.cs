@@ -20,50 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Eric_Version_ZM_VORJAHR_12_pruefen recording.
+    ///The Eric_Version_UVA_JAHRNEU_01_pruefen recording.
     /// </summary>
-    [TestModule("27453a92-84f3-4162-b4b3-a239cb3d3bc7", ModuleType.Recording, 1)]
-    public partial class Eric_Version_ZM_VORJAHR_12_pruefen : ITestModule
+    [TestModule("24decaec-665c-4bc9-95b5-b022f9f569c0", ModuleType.Recording, 1)]
+    public partial class Eric_Version_UVA_JAHRNEU_01_pruefen : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
+        /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
-        public static B_ELSTER_2024_UVA_JUVA_ZMRepository repo = B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
+        public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Eric_Version_ZM_VORJAHR_12_pruefen instance = new Eric_Version_ZM_VORJAHR_12_pruefen();
+        static Eric_Version_UVA_JAHRNEU_01_pruefen instance = new Eric_Version_UVA_JAHRNEU_01_pruefen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Eric_Version_ZM_VORJAHR_12_pruefen()
+        public Eric_Version_UVA_JAHRNEU_01_pruefen()
         {
-            Eric_Version_NEU = "Produktversion: 39, 2, 6, 0";
+            Eric_Version_UVA_JAHRNEU_01 = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Eric_Version_ZM_VORJAHR_12_pruefen Instance
+        public static Eric_Version_UVA_JAHRNEU_01_pruefen Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Eric_Version_NEU;
+        string _Eric_Version_UVA_JAHRNEU_01;
 
         /// <summary>
-        /// Gets or sets the value of variable Eric_Version_NEU.
+        /// Gets or sets the value of variable Eric_Version_UVA_JAHRNEU_01.
         /// </summary>
-        [TestVariable("0018eb0b-531f-4dbe-98f3-f02e5d459375")]
-        public string Eric_Version_NEU
+        [TestVariable("af486e2c-a6cb-4f58-a2ab-ebea31728676")]
+        public string Eric_Version_UVA_JAHRNEU_01
         {
-            get { return _Eric_Version_NEU; }
-            set { _Eric_Version_NEU = value; }
+            get { return _Eric_Version_UVA_JAHRNEU_01; }
+            set { _Eric_Version_UVA_JAHRNEU_01 = value; }
         }
 
 #endregion
@@ -92,8 +92,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Eric_Version_NEU) on item 'EricLogEditor.Text15'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.EricLogEditor.Text15Info, "Text", Eric_Version_NEU);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Eric_Version_UVA_JAHRNEU_01) on item 'EricLogEditor.Text15'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.EricLogEditor.Text15Info, "Text", Eric_Version_UVA_JAHRNEU_01);
             
         }
 

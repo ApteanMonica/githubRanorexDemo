@@ -20,36 +20,36 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_VORVORJAHR
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Formularzuordnungen_kopieren_D20_VORJAHR recording.
+    ///The Formularzuordnungen_kopieren_D20_VORVORJAHR recording.
     /// </summary>
-    [TestModule("74acb118-b421-4fee-a32f-062cf1c36128", ModuleType.Recording, 1)]
-    public partial class Formularzuordnungen_kopieren_D20_VORJAHR : ITestModule
+    [TestModule("63d81bcb-4195-4664-be43-65a6afa961a5", ModuleType.Recording, 1)]
+    public partial class Formularzuordnungen_kopieren_D20_VORVORJAHR : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Formularzuordnungen_kopieren_D20_VORJAHR instance = new Formularzuordnungen_kopieren_D20_VORJAHR();
+        static Formularzuordnungen_kopieren_D20_VORVORJAHR instance = new Formularzuordnungen_kopieren_D20_VORVORJAHR();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Formularzuordnungen_kopieren_D20_VORJAHR()
+        public Formularzuordnungen_kopieren_D20_VORVORJAHR()
         {
             Firma = "300";
             UVA_D20_Form_Name = "";
-            UVA_VORJAHR_Form_Name = "";
+            UVA_VORVORJAHR_Form_Name = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Formularzuordnungen_kopieren_D20_VORJAHR Instance
+        public static Formularzuordnungen_kopieren_D20_VORVORJAHR Instance
         {
             get { return instance; }
         }
@@ -61,7 +61,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA
         /// <summary>
         /// Gets or sets the value of variable Firma.
         /// </summary>
-        [TestVariable("ea2c209f-e62d-4535-bf7d-6edd162f917c")]
+        [TestVariable("eb5c4176-76c1-417c-83aa-71d3badd0f16")]
         public string Firma
         {
             get { return _Firma; }
@@ -73,7 +73,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA
         /// <summary>
         /// Gets or sets the value of variable UVA_D20_Form_Name.
         /// </summary>
-        [TestVariable("1be2af9a-631e-41d7-b939-6ad9db8dd5c6")]
+        [TestVariable("c778c957-01ff-43ce-9ab5-90fc30195838")]
         public string UVA_D20_Form_Name
         {
             get { return _UVA_D20_Form_Name; }
@@ -81,13 +81,13 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA
         }
 
         /// <summary>
-        /// Gets or sets the value of variable UVA_VORJAHR_Form_Name.
+        /// Gets or sets the value of variable UVA_VORVORJAHR_Form_Name.
         /// </summary>
-        [TestVariable("a923c5c3-8d95-477f-a7e4-003c9e053953")]
-        public string UVA_VORJAHR_Form_Name
+        [TestVariable("921d9338-32fb-479d-851b-820e1dabff72")]
+        public string UVA_VORVORJAHR_Form_Name
         {
-            get { return repo.UVA_VORJAHR_Form_Name; }
-            set { repo.UVA_VORJAHR_Form_Name = value; }
+            get { return repo.UVA_VORVORJAHR_Form_Name; }
+            set { repo.UVA_VORVORJAHR_Form_Name = value; }
         }
 
 #endregion
@@ -131,17 +131,17 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmUVAK.ClientArea1.CmbUvak2' at Center.", repo.FrmUVAK.ClientArea1.CmbUvak2Info, new RecordItemIndex(4));
             repo.FrmUVAK.ClientArea1.CmbUvak2.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'List1000.Formular_Elster_VORJAHR'.", repo.List1000.Formular_Elster_VORJAHRInfo, new RecordItemIndex(5));
-            Validate.Exists(repo.List1000.Formular_Elster_VORJAHRInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'List1000.Formular_Elster_VORVORJAHR'.", repo.List1000.Formular_Elster_VORVORJAHRInfo, new RecordItemIndex(5));
+            Validate.Exists(repo.List1000.Formular_Elster_VORVORJAHRInfo);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Formular_Elster_VORJAHR' at Center.", repo.List1000.Formular_Elster_VORJAHRInfo, new RecordItemIndex(6));
-            repo.List1000.Formular_Elster_VORJAHR.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Formular_Elster_VORVORJAHR' at Center.", repo.List1000.Formular_Elster_VORVORJAHRInfo, new RecordItemIndex(6));
+            repo.List1000.Formular_Elster_VORVORJAHR.Click();
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_D20_Form_Name) on item 'FrmUVAK.ClientArea1.CmbUvak1'.", repo.FrmUVAK.ClientArea1.CmbUvak1Info, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.FrmUVAK.ClientArea1.CmbUvak1Info, "Text", UVA_D20_Form_Name);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_VORJAHR_Form_Name) on item 'FrmUVAK.ClientArea1.CmbUvak2'.", repo.FrmUVAK.ClientArea1.CmbUvak2Info, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.FrmUVAK.ClientArea1.CmbUvak2Info, "Text", UVA_VORJAHR_Form_Name);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_VORVORJAHR_Form_Name) on item 'FrmUVAK.ClientArea1.CmbUvak2'.", repo.FrmUVAK.ClientArea1.CmbUvak2Info, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.FrmUVAK.ClientArea1.CmbUvak2Info, "Text", UVA_VORVORJAHR_Form_Name);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Checked='True') on item 'FrmUVAK.ClientArea1.CbNurZuordnung'.", repo.FrmUVAK.ClientArea1.CbNurZuordnungInfo, new RecordItemIndex(9));
             Validate.AttributeEqual(repo.FrmUVAK.ClientArea1.CbNurZuordnungInfo, "Checked", "True");

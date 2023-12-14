@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="8737f694-0e9d-46c6-b724-bcdf5bf9bb33"
-mode="Desktop">
+id="24decaec-665c-4bc9-95b5-b022f9f569c0"
+mode="Global">
 	<repeatcount>
 		1
 	</repeatcount>
@@ -19,32 +19,42 @@ mode="Desktop">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Close_notepad_Eric"
-	namespace="B_ELSTER_2024_UVA_JUVA_ZM.Recordings_Notepad_XML_Eric_Alle">
+	classname="Eric_Version_UVA_JAHRNEU_01_pruefen"
+	namespace="B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad">
 	</codegen>
 	<variables>
+		<var
+		id="af486e2c-a6cb-4f58-a2ab-ebea31728676"
+		name="Eric_Version_UVA_JAHRNEU_01">
+		</var>
 	</variables>
 	<recorditems>
-		<closeapprecorditem
+		<validationitem
+		action="AttributeContains"
 		enabled="True"
-		graceperiod="1000ms"
-		method="CloseWindow"
 		optional="False"
-		searchpropertyid="ed04b093-ebba-417b-876d-873fefc83794">
+		searchpropertyid="7a03acc4-2847-484f-b648-aee94d5da5f1">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Eric_Version_UVA_JAHRNEU_01">
+				</binding>
 			</bindings>
 			<info
-			id="220171d8-8988-4a70-8125-28a3e1aabafd"
+			id="f267a9c7-8840-458d-b1f7-d6a95db72b09"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@title='eric.log - Editor']/titlebar[@accessiblerole='TitleBar']
+					/form[@title='eric.log - Editor']/text[@controlid='15']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</closeapprecorditem>
+			<matchname>
+				Text
+			</matchname>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="e5a9e52d-413c-407b-af4d-bcbeec11758a"
@@ -61,7 +71,7 @@ mode="Desktop">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Close_notepad_Eric.UserCode.cs
+		Eric_Version_UVA_JAHRNEU_01_pruefen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

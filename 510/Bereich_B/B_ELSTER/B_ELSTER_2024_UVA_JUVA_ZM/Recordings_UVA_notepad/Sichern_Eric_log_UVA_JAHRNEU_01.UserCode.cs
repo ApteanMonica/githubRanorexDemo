@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad.Recordings_UVA_notepad
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad
 {
-    public partial class Close_notepad_XML
+    public partial class Sichern_Eric_log_UVA_JAHRNEU_01
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

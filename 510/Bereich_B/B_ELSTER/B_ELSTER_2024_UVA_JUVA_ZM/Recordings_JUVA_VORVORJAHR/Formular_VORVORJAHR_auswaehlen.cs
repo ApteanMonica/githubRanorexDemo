@@ -20,63 +20,48 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad.Recordings_UVA_notepad
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_VORVORJAHR
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The loeschen_XML_UVA recording.
+    ///The Formular_VORVORJAHR_auswaehlen recording.
     /// </summary>
-    [TestModule("e913ecb5-9e28-4d8c-932c-9b3e7d55c731", ModuleType.Recording, 1)]
-    public partial class Loeschen_XML_UVA : ITestModule
+    [TestModule("858d529e-605f-46c4-844c-22a8c12d191d", ModuleType.Recording, 1)]
+    public partial class Formular_VORVORJAHR_auswaehlen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Loeschen_XML_UVA instance = new Loeschen_XML_UVA();
+        static Formular_VORVORJAHR_auswaehlen instance = new Formular_VORVORJAHR_auswaehlen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Loeschen_XML_UVA()
+        public Formular_VORVORJAHR_auswaehlen()
         {
-            XML_UVA_Datei = "";
-            Pfad = "c:\\temp";
+            UVA_VORVORJAHR_Form_Name = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Loeschen_XML_UVA Instance
+        public static Formular_VORVORJAHR_auswaehlen Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _XML_UVA_Datei;
-
         /// <summary>
-        /// Gets or sets the value of variable XML_UVA_Datei.
+        /// Gets or sets the value of variable UVA_VORVORJAHR_Form_Name.
         /// </summary>
-        [TestVariable("be048278-7473-4332-b476-d8d5506486af")]
-        public string XML_UVA_Datei
+        [TestVariable("f9e0c706-5661-4b4b-8b5f-4d8d6c9eaec8")]
+        public string UVA_VORVORJAHR_Form_Name
         {
-            get { return _XML_UVA_Datei; }
-            set { _XML_UVA_Datei = value; }
-        }
-
-        string _Pfad;
-
-        /// <summary>
-        /// Gets or sets the value of variable Pfad.
-        /// </summary>
-        [TestVariable("452fee4c-86be-4eab-b309-afdc65151d57")]
-        public string Pfad
-        {
-            get { return _Pfad; }
-            set { _Pfad = value; }
+            get { return repo.UVA_VORVORJAHR_Form_Name; }
+            set { repo.UVA_VORVORJAHR_Form_Name = value; }
         }
 
 #endregion
@@ -105,7 +90,17 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad.Recordings_UVA_notepad
 
             Init();
 
-            Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.DeleteFiles(Pfad, XML_UVA_Datei);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUVADruck.CmbUvaFBez' at Center.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(0));
+            repo.DlgUVADruck.CmbUvaFBez.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Formular_Elster_VORVORJAHR' at Center.", repo.List1000.Formular_Elster_VORVORJAHRInfo, new RecordItemIndex(1));
+            repo.List1000.Formular_Elster_VORVORJAHR.Click();
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_VORVORJAHR_Form_Name) on item 'DlgUVADruck.CmbUvaFBez'.", repo.DlgUVADruck.CmbUvaFBezInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.DlgUVADruck.CmbUvaFBezInfo, "Text", UVA_VORVORJAHR_Form_Name);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'DlgUVADruck.PbElster'.", repo.DlgUVADruck.PbElsterInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.DlgUVADruck.PbElsterInfo, "Enabled", "True");
             
         }
 

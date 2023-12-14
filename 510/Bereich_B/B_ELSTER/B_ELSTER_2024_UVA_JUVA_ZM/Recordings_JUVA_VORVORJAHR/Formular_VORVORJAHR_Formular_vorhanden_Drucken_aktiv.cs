@@ -20,60 +20,60 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_VORVORJAHR
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Formular_JAHRNEU_Formular_vorhanden_Drucken_aktiv recording.
+    ///The Formular_VORVORJAHR_Formular_vorhanden_Drucken_aktiv recording.
     /// </summary>
-    [TestModule("e409184a-dad1-4326-968a-8fe36694dcf2", ModuleType.Recording, 1)]
-    public partial class Formular_JAHRNEU_Formular_vorhanden_Drucken_aktiv : ITestModule
+    [TestModule("a15f4e82-590b-4bda-8786-cef3f258b52b", ModuleType.Recording, 1)]
+    public partial class Formular_VORVORJAHR_Formular_vorhanden_Drucken_aktiv : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Formular_JAHRNEU_Formular_vorhanden_Drucken_aktiv instance = new Formular_JAHRNEU_Formular_vorhanden_Drucken_aktiv();
+        static Formular_VORVORJAHR_Formular_vorhanden_Drucken_aktiv instance = new Formular_VORVORJAHR_Formular_vorhanden_Drucken_aktiv();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Formular_JAHRNEU_Formular_vorhanden_Drucken_aktiv()
+        public Formular_VORVORJAHR_Formular_vorhanden_Drucken_aktiv()
         {
-            UVA_JAHRNEU_Form_Code = "";
+            UVA_VORVORJAHR_Form_Code = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Formular_JAHRNEU_Formular_vorhanden_Drucken_aktiv Instance
+        public static Formular_VORVORJAHR_Formular_vorhanden_Drucken_aktiv Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _UVA_JAHRNEU_Form_Code;
+        string _UVA_VORVORJAHR_Form_Code;
 
         /// <summary>
-        /// Gets or sets the value of variable UVA_JAHRNEU_Form_Code.
+        /// Gets or sets the value of variable UVA_VORVORJAHR_Form_Code.
         /// </summary>
-        [TestVariable("52477e55-87af-4559-b0f7-7bc4c097aa0f")]
-        public string UVA_JAHRNEU_Form_Code
+        [TestVariable("10aa7541-55d1-4609-8f40-ae6f1a524775")]
+        public string UVA_VORVORJAHR_Form_Code
         {
-            get { return _UVA_JAHRNEU_Form_Code; }
-            set { _UVA_JAHRNEU_Form_Code = value; }
+            get { return _UVA_VORVORJAHR_Form_Code; }
+            set { _UVA_VORVORJAHR_Form_Code = value; }
         }
 
         /// <summary>
-        /// Gets or sets the value of variable UVA_VORJAHR_Form_Name.
+        /// Gets or sets the value of variable UVA_VORVORJAHR_Form_Name.
         /// </summary>
-        [TestVariable("9790a775-0b6b-4803-bdcb-f6beb517b923")]
-        public string UVA_VORJAHR_Form_Name
+        [TestVariable("f9e0c706-5661-4b4b-8b5f-4d8d6c9eaec8")]
+        public string UVA_VORVORJAHR_Form_Name
         {
-            get { return repo.UVA_VORJAHR_Form_Name; }
-            set { repo.UVA_VORJAHR_Form_Name = value; }
+            get { return repo.UVA_VORVORJAHR_Form_Name; }
+            set { repo.UVA_VORVORJAHR_Form_Name = value; }
         }
 
 #endregion
@@ -105,11 +105,11 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblUVAF.PageDown' at Center.", repo.TblUVAF.PageDownInfo, new RecordItemIndex(0));
             repo.TblUVAF.PageDown.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_JAHRNEU_Form_Code) on item 'TblUVAF.Tabelle_mit_Variable_UVA_VORJAHR_Form_Name.ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name'.", repo.TblUVAF.Tabelle_mit_Variable_UVA_VORJAHR_Form_Name.ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_NameInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblUVAF.Tabelle_mit_Variable_UVA_VORJAHR_Form_Name.ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_NameInfo, "Text", UVA_JAHRNEU_Form_Code);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_VORVORJAHR_Form_Code) on item 'TblUVAF.Tabelle_mit_Variable_UVA_VORVORJAHR_Form_Name.ColUvaCd_in_Zeile_mit_Variable_UVA_VORVORJAHR_Form_Name'.", repo.TblUVAF.Tabelle_mit_Variable_UVA_VORVORJAHR_Form_Name.ColUvaCd_in_Zeile_mit_Variable_UVA_VORVORJAHR_Form_NameInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblUVAF.Tabelle_mit_Variable_UVA_VORVORJAHR_Form_Name.ColUvaCd_in_Zeile_mit_Variable_UVA_VORVORJAHR_Form_NameInfo, "Text", UVA_VORVORJAHR_Form_Code);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='True') on item 'TblUVAF.Tabelle_mit_Variable_UVA_VORJAHR_Form_Name.ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name'.", repo.TblUVAF.Tabelle_mit_Variable_UVA_VORJAHR_Form_Name.ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_NameInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblUVAF.Tabelle_mit_Variable_UVA_VORJAHR_Form_Name.ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_NameInfo, "AccessibleValue", "True");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='True') on item 'TblUVAF.Tabelle_mit_Variable_UVA_VORVORJAHR_Form_Name.ColUvaDruckenRow_mit_Variable_UVA_VORVORJAHR_Form_Name'.", repo.TblUVAF.Tabelle_mit_Variable_UVA_VORVORJAHR_Form_Name.ColUvaDruckenRow_mit_Variable_UVA_VORVORJAHR_Form_NameInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblUVAF.Tabelle_mit_Variable_UVA_VORVORJAHR_Form_Name.ColUvaDruckenRow_mit_Variable_UVA_VORVORJAHR_Form_NameInfo, "AccessibleValue", "True");
             
         }
 

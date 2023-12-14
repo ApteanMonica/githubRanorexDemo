@@ -41,7 +41,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA
         /// </summary>
         public Formular_VORJAHR_Formular_vorhanden_Drucken_aktiv()
         {
-            UVA_VORJAHR_Form_Code = "D22";
+            UVA_VORJAHR_Form_Code = "";
         }
 
         /// <summary>
@@ -69,7 +69,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA
         /// <summary>
         /// Gets or sets the value of variable UVA_VORJAHR_Form_Name.
         /// </summary>
-        [TestVariable("f9e0c706-5661-4b4b-8b5f-4d8d6c9eaec8")]
+        [TestVariable("9790a775-0b6b-4803-bdcb-f6beb517b923")]
         public string UVA_VORJAHR_Form_Name
         {
             get { return repo.UVA_VORJAHR_Form_Name; }
@@ -105,11 +105,11 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblUVAF.PageDown' at Center.", repo.TblUVAF.PageDownInfo, new RecordItemIndex(0));
             repo.TblUVAF.PageDown.Click();
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_VORJAHR_Form_Code) on item 'TblUVAF.Tabelle_flexgrid.ColUvaCdin_Zeile_mit_Variable_UVA_VORJAHR_Form_Name'.", repo.TblUVAF.Tabelle_flexgrid.ColUvaCdin_Zeile_mit_Variable_UVA_VORJAHR_Form_NameInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.TblUVAF.Tabelle_flexgrid.ColUvaCdin_Zeile_mit_Variable_UVA_VORJAHR_Form_NameInfo, "Text", UVA_VORJAHR_Form_Code);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$UVA_VORJAHR_Form_Code) on item 'TblUVAF.Tabelle_mit_Variable_UVA_VORJAHR_Form_Name.ColUvaCdin_Zeile_mit_Variable_UVA_VORJAHR_Form_Name'.", repo.TblUVAF.Tabelle_mit_Variable_UVA_VORJAHR_Form_Name.ColUvaCdin_Zeile_mit_Variable_UVA_VORJAHR_Form_NameInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.TblUVAF.Tabelle_mit_Variable_UVA_VORJAHR_Form_Name.ColUvaCdin_Zeile_mit_Variable_UVA_VORJAHR_Form_NameInfo, "Text", UVA_VORJAHR_Form_Code);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='True') on item 'TblUVAF.Tabelle_flexgrid.ColUvaDruckenRowmit_Variable_UVA_VORJAHR_Form_Name'.", repo.TblUVAF.Tabelle_flexgrid.ColUvaDruckenRowmit_Variable_UVA_VORJAHR_Form_NameInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.TblUVAF.Tabelle_flexgrid.ColUvaDruckenRowmit_Variable_UVA_VORJAHR_Form_NameInfo, "AccessibleValue", "True");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleValue='True') on item 'TblUVAF.Tabelle_mit_Variable_UVA_VORJAHR_Form_Name.ColUvaDruckenRowmit_Variable_UVA_VORJAHR_Form_Name'.", repo.TblUVAF.Tabelle_mit_Variable_UVA_VORJAHR_Form_Name.ColUvaDruckenRowmit_Variable_UVA_VORJAHR_Form_NameInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.TblUVAF.Tabelle_mit_Variable_UVA_VORJAHR_Form_Name.ColUvaDruckenRowmit_Variable_UVA_VORJAHR_Form_NameInfo, "AccessibleValue", "True");
             
         }
 

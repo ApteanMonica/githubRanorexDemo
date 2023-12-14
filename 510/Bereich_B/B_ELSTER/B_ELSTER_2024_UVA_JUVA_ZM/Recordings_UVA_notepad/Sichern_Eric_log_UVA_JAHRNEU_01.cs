@@ -20,38 +20,51 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_Notepad_XML_Eric_Alle
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Close_notepad_Eric recording.
+    ///The Sichern_Eric_log_UVA_JAHRNEU_01 recording.
     /// </summary>
-    [TestModule("8737f694-0e9d-46c6-b724-bcdf5bf9bb33", ModuleType.Recording, 1)]
-    public partial class Close_notepad_Eric : ITestModule
+    [TestModule("27b13e7c-696d-4779-850b-4e4c569df692", ModuleType.Recording, 1)]
+    public partial class Sichern_Eric_log_UVA_JAHRNEU_01 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Close_notepad_Eric instance = new Close_notepad_Eric();
+        static Sichern_Eric_log_UVA_JAHRNEU_01 instance = new Sichern_Eric_log_UVA_JAHRNEU_01();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Close_notepad_Eric()
+        public Sichern_Eric_log_UVA_JAHRNEU_01()
         {
+            Eric_log_Inhalt_aktuell = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Close_notepad_Eric Instance
+        public static Sichern_Eric_log_UVA_JAHRNEU_01 Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _Eric_log_Inhalt_aktuell;
+
+        /// <summary>
+        /// Gets or sets the value of variable Eric_log_Inhalt_aktuell.
+        /// </summary>
+        [TestVariable("d5542513-3b78-4e62-8c14-239120a90aee")]
+        public string Eric_log_Inhalt_aktuell
+        {
+            get { return _Eric_log_Inhalt_aktuell; }
+            set { _Eric_log_Inhalt_aktuell = value; }
+        }
 
 #endregion
 
@@ -79,8 +92,10 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_Notepad_XML_Eric_Alle
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'EricLogEditor.EricLogEditor'.", repo.EricLogEditor.EricLogEditorInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.EricLogEditor.EricLogEditor, 1000);
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'EricLogEditor.Text15' and assigning its value to variable 'Eric_log_Inhalt_aktuell'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
+            Eric_log_Inhalt_aktuell = repo.EricLogEditor.Text15.Element.GetAttributeValueText("Text");
+            
+            Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.WriteToFile(Eric_log_Inhalt_aktuell, "c:\\temp\\eric_log_uva_2024_01", "log");
             
         }
 

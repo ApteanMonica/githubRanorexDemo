@@ -20,50 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_VORVORJAHR
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Register_Jahreserklaerung_Eingaben recording.
+    ///The Register_Jahreserklaerung_Eingaben_VORVORJAHR recording.
     /// </summary>
-    [TestModule("7b98e923-7afe-463c-ba6c-6f16b91c833d", ModuleType.Recording, 1)]
-    public partial class Register_Jahreserklaerung_Eingaben : ITestModule
+    [TestModule("7cd75900-6105-45d8-8cfe-c8b5c2183d23", ModuleType.Recording, 1)]
+    public partial class Register_Jahreserklaerung_Eingaben_VORVORJAHR : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Register_Jahreserklaerung_Eingaben instance = new Register_Jahreserklaerung_Eingaben();
+        static Register_Jahreserklaerung_Eingaben_VORVORJAHR instance = new Register_Jahreserklaerung_Eingaben_VORVORJAHR();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Register_Jahreserklaerung_Eingaben()
+        public Register_Jahreserklaerung_Eingaben_VORVORJAHR()
         {
-            VORJAHR = "2022";
+            VORVORJAHR = "2022";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Register_Jahreserklaerung_Eingaben Instance
+        public static Register_Jahreserklaerung_Eingaben_VORVORJAHR Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _VORJAHR;
+        string _VORVORJAHR;
 
         /// <summary>
-        /// Gets or sets the value of variable VORJAHR.
+        /// Gets or sets the value of variable VORVORJAHR.
         /// </summary>
-        [TestVariable("d661db4a-85a2-4cf2-864f-fdb816cb3e18")]
-        public string VORJAHR
+        [TestVariable("b01cab30-cdd7-4c15-8fba-6195ad572626")]
+        public string VORVORJAHR
         {
-            get { return _VORJAHR; }
-            set { _VORJAHR = value; }
+            get { return _VORVORJAHR; }
+            set { _VORVORJAHR = value; }
         }
 
 #endregion
@@ -95,14 +95,14 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUVADruck.TabPageJahreserklaerung' at Center.", repo.DlgUVADruck.TabPageJahreserklaerungInfo, new RecordItemIndex(0));
             repo.DlgUVADruck.TabPageJahreserklaerung.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$VORJAHR' with focus on 'DlgUVADruck.UmsatzsteuererklaerungFuerJahr'.", repo.DlgUVADruck.UmsatzsteuererklaerungFuerJahrInfo, new RecordItemIndex(1));
-            repo.DlgUVADruck.UmsatzsteuererklaerungFuerJahr.PressKeys(VORJAHR);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$VORVORJAHR' with focus on 'DlgUVADruck.UmsatzsteuererklaerungFuerJahr'.", repo.DlgUVADruck.UmsatzsteuererklaerungFuerJahrInfo, new RecordItemIndex(1));
+            repo.DlgUVADruck.UmsatzsteuererklaerungFuerJahr.PressKeys(VORVORJAHR);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
             Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$VORJAHR) on item 'DlgUVADruck.UmsatzsteuererklaerungFuerJahr'.", repo.DlgUVADruck.UmsatzsteuererklaerungFuerJahrInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.DlgUVADruck.UmsatzsteuererklaerungFuerJahrInfo, "Text", VORJAHR);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$VORVORJAHR) on item 'DlgUVADruck.UmsatzsteuererklaerungFuerJahr'.", repo.DlgUVADruck.UmsatzsteuererklaerungFuerJahrInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.DlgUVADruck.UmsatzsteuererklaerungFuerJahrInfo, "Text", VORVORJAHR);
             
         }
 

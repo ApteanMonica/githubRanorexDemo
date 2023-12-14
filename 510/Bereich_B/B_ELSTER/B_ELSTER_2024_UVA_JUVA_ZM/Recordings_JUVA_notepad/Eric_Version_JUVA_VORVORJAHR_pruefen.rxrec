@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="8410ffa8-8dff-49ca-a83b-949a1cfa608a"
-mode="Desktop">
+id="0f90b73d-7a2d-4bee-8d17-201e524c5f9b"
+mode="Global">
 	<repeatcount>
 		1
 	</repeatcount>
@@ -19,37 +19,47 @@ mode="Desktop">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Close_notepad_XML"
-	namespace="B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad.Recordings_UVA_notepad">
+	classname="Eric_Version_JUVA_VORVORJAHR_pruefen"
+	namespace="B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad">
 	</codegen>
 	<variables>
+		<var
+		id="6f1588b5-332b-4eec-8777-1fb6b05937e6"
+		name="Eric_Version_JUVA_VORVORJAHR">
+		</var>
 	</variables>
 	<recorditems>
-		<closeapprecorditem
+		<validationitem
+		action="AttributeContains"
 		enabled="True"
-		graceperiod="1000ms"
-		method="CloseWindow"
 		optional="False"
-		searchpropertyid="ed04b093-ebba-417b-876d-873fefc83794">
+		searchpropertyid="7a03acc4-2847-484f-b648-aee94d5da5f1">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Eric_Version_JUVA_VORVORJAHR">
+				</binding>
 			</bindings>
 			<info
-			id="503f81b6-0e12-4bb7-9111-65baf38d567b"
+			id="f267a9c7-8840-458d-b1f7-d6a95db72b09"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@title='STADUEV.XML - Editor']/titlebar[@accessiblerole='TitleBar']
+					/form[@title='eric.log - Editor']/text[@controlid='15']
 				</path>
 				<robustPath>
 				</robustPath>
 			</info>
-		</closeapprecorditem>
+			<matchname>
+				Text
+			</matchname>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="e5a9e52d-413c-407b-af4d-bcbeec11758a"
 	name="B_ELSTER_2024_UVA_JUVA_ZMRepository"
-	relativepath="..\..\B_ELSTER_2024_UVA_JUVA_ZMRepository.rxrep">
+	relativepath="..\B_ELSTER_2024_UVA_JUVA_ZMRepository.rxrep">
 		<codegen
 		classname="B_ELSTER_2024_UVA_JUVA_ZMRepository"
 		namespace="B_ELSTER_2024_UVA_JUVA_ZM">
@@ -61,7 +71,7 @@ mode="Desktop">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Close_notepad_XML.UserCode.cs
+		Eric_Version_JUVA_VORVORJAHR_pruefen.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="74acb118-b421-4fee-a32f-062cf1c36128"
+id="63d81bcb-4195-4664-be43-65a6afa961a5"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,22 +19,22 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Formularzuordnungen_kopieren_D20_VORJAHR"
-	namespace="B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA">
+	classname="Formularzuordnungen_kopieren_D20_VORVORJAHR"
+	namespace="B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_VORVORJAHR">
 	</codegen>
 	<variables>
 		<var
-		id="ea2c209f-e62d-4535-bf7d-6edd162f917c"
+		id="eb5c4176-76c1-417c-83aa-71d3badd0f16"
 		name="Firma">
 			300
 		</var>
 		<var
-		id="1be2af9a-631e-41d7-b939-6ad9db8dd5c6"
+		id="c778c957-01ff-43ce-9ab5-90fc30195838"
 		name="UVA_D20_Form_Name">
 		</var>
 		<var
-		id="a923c5c3-8d95-477f-a7e4-003c9e053953"
-		name="UVA_VORJAHR_Form_Name">
+		id="921d9338-32fb-479d-851b-820e1dabff72"
+		name="UVA_VORVORJAHR_Form_Name">
 		</var>
 	</variables>
 	<recorditems>
@@ -9509,10 +9509,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="b2dbe03c-4b7a-47ae-93ee-0141bc6778da"
+			id="5a643d01-9a45-496a-8c4b-430924ed8259"
 			sourcename="RepositoryEditor">
 				<path>
-					/list[@controlid='1000']/listitem[@text~'$UVA_VORJAHR_Form_Name']
+					/list[@controlid='1000']/listitem[@text=$UVA_VORVORJAHR_Form_Name]
 				</path>
 				<robustPath>
 				</robustPath>
@@ -9541,10 +9541,10 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="b2dbe03c-4b7a-47ae-93ee-0141bc6778da"
+			id="5a643d01-9a45-496a-8c4b-430924ed8259"
 			sourcename="RepositoryEditor">
 				<path>
-					/list[@controlid='1000']/listitem[@text~'$UVA_VORJAHR_Form_Name']
+					/list[@controlid='1000']/listitem[@text=$UVA_VORVORJAHR_Form_Name]
 				</path>
 				<robustPath>
 				</robustPath>
@@ -12259,7 +12259,7 @@ mode="Global">
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="UVA_VORJAHR_Form_Name">
+				variable="UVA_VORVORJAHR_Form_Name">
 				</binding>
 			</bindings>
 			<info
@@ -26136,7 +26136,7 @@ qWigCPyxQIxUlFACAYpaKKACiiigD//Z
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Formularzuordnungen_kopieren_D20_VORJAHR.UserCode.cs
+		Formularzuordnungen_kopieren_D20_VORVORJAHR.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

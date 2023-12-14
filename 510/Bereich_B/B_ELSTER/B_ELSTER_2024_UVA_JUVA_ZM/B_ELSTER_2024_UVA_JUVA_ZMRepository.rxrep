@@ -560,6 +560,16 @@ nW0/ys2Ahihj3g7gTYkBpRoAuh0wQHT7C4HsGxelutTdXJHXAAAAAElFTkSuQmCC
 			<item
 			addcaps="listitem,nativeitem,checkable"
 			capname="listitem"
+			id="5a643d01-9a45-496a-8c4b-430924ed8259"
+			name="Formular_Elster_VORVORJAHR"
+			refimgid="524cdb85-2d31-4e1d-85e1-6fc9dd80e681"
+			robustPath=""
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text=$UVA_VORVORJAHR_Form_Name]
+			</item>
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
 			id="2af648bd-a59f-49a8-a494-d4198b993867"
 			name="Formular_Elster_JAHRNEU"
 			refimgid="524cdb85-2d31-4e1d-85e1-6fc9dd80e681"
@@ -962,10 +972,10 @@ F0Wgr4voafeUAAAAAElFTkSuQmCC
 				/form[@controlname='tblUVAF']/container[@controlname='RibbonBar']/container[@controlname='cRibbonGroup1']/button[@controlname='pbCommon_Drucken']
 			</item>
 			<folder
-			capname="table"
+			capname="row"
 			id="3b1cbee7-aee6-46c9-b49c-651905317b46"
 			isrooted="True"
-			name="Tabelle_flexgrid"
+			name="Tabelle_mit_Variable_UVA_VORJAHR_Form_Name"
 			searchtimeout="30000ms"
 			usecache="False">
 				<item
@@ -1006,7 +1016,7 @@ F0Wgr4voafeUAAAAAElFTkSuQmCC
 				refimgid="0d3e094c-abeb-4fc2-a7e5-2123906caef2"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UVA_JAHRNEU_Form_Name]/cell[@accessiblename~'colUva_cd']
+					/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UVA_VORJAHR_Form_Name]/cell[@accessiblename~'colUva_cd']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -1016,7 +1026,7 @@ F0Wgr4voafeUAAAAAElFTkSuQmCC
 				refimgid="270a19d5-442c-4428-a558-3343e3f48a63"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UVA_JAHRNEU_Form_Name]/cell[@accessiblename~'colUva_drucken']
+					/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UVA_VORJAHR_Form_Name]/cell[@accessiblename~'colUva_drucken']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -1026,10 +1036,81 @@ F0Wgr4voafeUAAAAAElFTkSuQmCC
 				refimgid="d1a11992-6b7a-4a2c-b6de-ca161dab8491"
 				robustPath=""
 				searchtimeout="30000ms">
-					/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UVA_JAHRNEU_Form_Name]/cell[@accessiblename~'Column 0']
+					/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UVA_VORJAHR_Form_Name]/cell[@accessiblename~'Column 0']
 				</item>
 				<basepath>
-					/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']
+					/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UVA_VORJAHR_Form_Name]
+				</basepath>
+			</folder>
+			<folder
+			capname="row"
+			id="49074775-1c0c-4d17-8a9a-c4ff4b6c1d6a"
+			isrooted="True"
+			name="Tabelle_mit_Variable_UVA_VORVORJAHR_Form_Name"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="faf1eaa9-0c70-4e25-acd0-0784166ef8e6"
+				name="ColUvaCd_in_Zeile_mit_Variable_UVA_VORVORJAHR_Form_Name"
+				refimgid="1fae2183-015c-4210-b9e2-9f95e39ee439"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UVA_VORVORJAHR_Form_Name]/cell[@accessiblename~'colUva_cd']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="6094fbac-5bbd-4808-90e1-9be5a03b73a2"
+				name="ColUvaDruckenRow_mit_Variable_UVA_VORVORJAHR_Form_Name"
+				refimgid="ed878aa1-0dbc-4051-91ae-ac77370c1d58"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UVA_VORVORJAHR_Form_Name]/cell[@accessiblename~'colUva_drucken']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="cc8ea401-2c7f-47ca-bead-4af554ab8d63"
+				name="Column0_in_Zeile_mit_Variable_UVA_VORVORJAHR_Form_Name"
+				refimgid="b8e53557-3b2b-4eea-b767-d29953e98c08"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UVA_VORVORJAHR_Form_Name]/cell[@accessiblename~'Column 0']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="a9f1c1b9-a8d6-4f91-9619-8e94fb682608"
+				name="ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name"
+				refimgid="0d3e094c-abeb-4fc2-a7e5-2123906caef2"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UVA_VORVORJAHR_Form_Name]/cell[@accessiblename~'colUva_cd']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="4468f5de-fb3f-4d26-a066-8835298321be"
+				name="ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name"
+				refimgid="270a19d5-442c-4428-a558-3343e3f48a63"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UVA_VORVORJAHR_Form_Name]/cell[@accessiblename~'colUva_drucken']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="eebb2d31-4741-4ca8-a29e-fc00cd30e1a1"
+				name="Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name"
+				refimgid="d1a11992-6b7a-4a2c-b6de-ca161dab8491"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UVA_VORVORJAHR_Form_Name]/cell[@accessiblename~'Column 0']
+				</item>
+				<basepath>
+					/form[@controlname='tblUVAF']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UVA_VORVORJAHR_Form_Name]
 				</basepath>
 			</folder>
 			<basepath>
@@ -2442,13 +2523,15 @@ SUVORK5CYII=
 	<variables>
 		<var
 		id="f9e0c706-5661-4b4b-8b5f-4d8d6c9eaec8"
-		name="UVA_VORJAHR_Form_Name">
-			UVA-Deutschland 2022 Elster
+		name="UVA_VORVORJAHR_Form_Name">
 		</var>
 		<var
 		id="3751c4e7-3923-4ce1-a791-05ede3e7ff24"
 		name="UVA_JAHRNEU_Form_Name">
-			UVA-Deutschland 2023 Elster
+		</var>
+		<var
+		id="9790a775-0b6b-4803-bdcb-f6beb517b923"
+		name="UVA_VORJAHR_Form_Name">
 		</var>
 	</variables>
 </repository>

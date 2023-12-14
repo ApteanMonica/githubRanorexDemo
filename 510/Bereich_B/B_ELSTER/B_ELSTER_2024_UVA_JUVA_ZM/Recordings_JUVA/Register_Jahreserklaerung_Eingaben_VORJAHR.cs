@@ -20,76 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad.Recordings_UVA_notepad
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Oeffnen_notepad_XML_Datei recording.
+    ///The Register_Jahreserklaerung_Eingaben_VORJAHR recording.
     /// </summary>
-    [TestModule("86383f54-919d-42f4-a0a5-75cf61184fe3", ModuleType.Recording, 1)]
-    public partial class Oeffnen_notepad_XML_Datei : ITestModule
+    [TestModule("7b98e923-7afe-463c-ba6c-6f16b91c833d", ModuleType.Recording, 1)]
+    public partial class Register_Jahreserklaerung_Eingaben_VORJAHR : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Oeffnen_notepad_XML_Datei instance = new Oeffnen_notepad_XML_Datei();
+        static Register_Jahreserklaerung_Eingaben_VORJAHR instance = new Register_Jahreserklaerung_Eingaben_VORJAHR();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Oeffnen_notepad_XML_Datei()
+        public Register_Jahreserklaerung_Eingaben_VORJAHR()
         {
-            Programm_2 = "notepad.exe";
-            XML_UVA_Pfad_Datei = "C:\\temp\\STADUEV.XML";
-            XML_UVA_Datei = "STADUEV.XML";
+            VORJAHR = "2022";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Oeffnen_notepad_XML_Datei Instance
+        public static Register_Jahreserklaerung_Eingaben_VORJAHR Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Programm_2;
+        string _VORJAHR;
 
         /// <summary>
-        /// Gets or sets the value of variable Programm_2.
+        /// Gets or sets the value of variable VORJAHR.
         /// </summary>
-        [TestVariable("6638446f-c51a-456d-92ba-02636d7bb748")]
-        public string Programm_2
+        [TestVariable("d661db4a-85a2-4cf2-864f-fdb816cb3e18")]
+        public string VORJAHR
         {
-            get { return _Programm_2; }
-            set { _Programm_2 = value; }
-        }
-
-        string _XML_UVA_Pfad_Datei;
-
-        /// <summary>
-        /// Gets or sets the value of variable XML_UVA_Pfad_Datei.
-        /// </summary>
-        [TestVariable("45c635e3-2140-4abe-a2a5-4bec112023be")]
-        public string XML_UVA_Pfad_Datei
-        {
-            get { return _XML_UVA_Pfad_Datei; }
-            set { _XML_UVA_Pfad_Datei = value; }
-        }
-
-        string _XML_UVA_Datei;
-
-        /// <summary>
-        /// Gets or sets the value of variable XML_UVA_Datei.
-        /// </summary>
-        [TestVariable("9a617ced-bff6-497b-9ff6-f6654650da33")]
-        public string XML_UVA_Datei
-        {
-            get { return _XML_UVA_Datei; }
-            set { _XML_UVA_Datei = value; }
+            get { return _VORJAHR; }
+            set { _VORJAHR = value; }
         }
 
 #endregion
@@ -118,14 +92,17 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad.Recordings_UVA_notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $XML_UVA_Pfad_Datei with arguments from variable $Programm_2 in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(XML_UVA_Pfad_Datei, Programm_2, "", false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgUVADruck.TabPageJahreserklaerung' at Center.", repo.DlgUVADruck.TabPageJahreserklaerungInfo, new RecordItemIndex(0));
+            repo.DlgUVADruck.TabPageJahreserklaerung.Click();
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'XMLEditor_UVA_ZM.XMLEditor'", repo.XMLEditor_UVA_ZM.XMLEditorInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.XMLEditor_UVA_ZM.XMLEditorInfo.WaitForExists(120000);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$VORJAHR' with focus on 'DlgUVADruck.UmsatzsteuererklaerungFuerJahr'.", repo.DlgUVADruck.UmsatzsteuererklaerungFuerJahrInfo, new RecordItemIndex(1));
+            repo.DlgUVADruck.UmsatzsteuererklaerungFuerJahr.PressKeys(VORJAHR);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$XML_UVA_Datei) on item 'XMLEditor_UVA_ZM.XMLEditor'.", repo.XMLEditor_UVA_ZM.XMLEditorInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.XMLEditor_UVA_ZM.XMLEditorInfo, "Text", XML_UVA_Datei);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Tab' Press.", new RecordItemIndex(2));
+            Keyboard.Press(System.Windows.Forms.Keys.Tab, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$VORJAHR) on item 'DlgUVADruck.UmsatzsteuererklaerungFuerJahr'.", repo.DlgUVADruck.UmsatzsteuererklaerungFuerJahrInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.DlgUVADruck.UmsatzsteuererklaerungFuerJahrInfo, "Text", VORJAHR);
             
         }
 

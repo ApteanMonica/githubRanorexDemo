@@ -96,8 +96,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblUVAF.PageDown' at Center.", repo.TblUVAF.PageDownInfo, new RecordItemIndex(1));
             repo.TblUVAF.PageDown.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblUVAF.Tabelle_flexgrid.Column0_in_Zeile_mit_Variable_UVA_VORJAHR_Form_Name' at Center.", repo.TblUVAF.Tabelle_flexgrid.Column0_in_Zeile_mit_Variable_UVA_VORJAHR_Form_NameInfo, new RecordItemIndex(2));
-            repo.TblUVAF.Tabelle_flexgrid.Column0_in_Zeile_mit_Variable_UVA_VORJAHR_Form_Name.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblUVAF.Tabelle_mit_Variable_UVA_VORJAHR_Form_Name.Column0_in_Zeile_mit_Variable_UVA_VORJAHR_Form_Name' at Center.", repo.TblUVAF.Tabelle_mit_Variable_UVA_VORJAHR_Form_Name.Column0_in_Zeile_mit_Variable_UVA_VORJAHR_Form_NameInfo, new RecordItemIndex(2));
+            repo.TblUVAF.Tabelle_mit_Variable_UVA_VORJAHR_Form_Name.Column0_in_Zeile_mit_Variable_UVA_VORJAHR_Form_Name.DoubleClick();
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblUVAD.TitleBar300UVADetailsUVADeutschl'", repo.TblUVAD.TitleBar300UVADetailsUVADeutschlInfo, new ActionTimeout(60000), new RecordItemIndex(3));
             repo.TblUVAD.TitleBar300UVADetailsUVADeutschlInfo.WaitForExists(60000);

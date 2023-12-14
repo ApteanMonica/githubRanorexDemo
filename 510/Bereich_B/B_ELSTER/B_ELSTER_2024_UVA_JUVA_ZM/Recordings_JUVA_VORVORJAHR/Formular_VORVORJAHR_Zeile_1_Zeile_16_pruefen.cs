@@ -20,34 +20,34 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_VORVORJAHR
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Formular_JAHRNEU_Zeile_1_Zeile_16_pruefen recording.
+    ///The Formular_VORVORJAHR_Zeile_1_Zeile_16_pruefen recording.
     /// </summary>
-    [TestModule("d0cb8165-4856-4e0d-80c9-81e39ea7cc6f", ModuleType.Recording, 1)]
-    public partial class Formular_JAHRNEU_Zeile_1_Zeile_16_pruefen : ITestModule
+    [TestModule("47032b3c-a8ed-4afe-886a-f7a7336b8be3", ModuleType.Recording, 1)]
+    public partial class Formular_VORVORJAHR_Zeile_1_Zeile_16_pruefen : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Formular_JAHRNEU_Zeile_1_Zeile_16_pruefen instance = new Formular_JAHRNEU_Zeile_1_Zeile_16_pruefen();
+        static Formular_VORVORJAHR_Zeile_1_Zeile_16_pruefen instance = new Formular_VORVORJAHR_Zeile_1_Zeile_16_pruefen();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Formular_JAHRNEU_Zeile_1_Zeile_16_pruefen()
+        public Formular_VORVORJAHR_Zeile_1_Zeile_16_pruefen()
         {
-            UVA_JAHRNEU_Form_Name = "UVA-Deutschland 2023 Elster";
+            UVA_VORVORJAHR_Form_Name = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Formular_JAHRNEU_Zeile_1_Zeile_16_pruefen Instance
+        public static Formular_VORVORJAHR_Zeile_1_Zeile_16_pruefen Instance
         {
             get { return instance; }
         }
@@ -55,23 +55,13 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA
 #region Variables
 
         /// <summary>
-        /// Gets or sets the value of variable UVA_VORJAHR_Form_Name.
+        /// Gets or sets the value of variable UVA_VORVORJAHR_Form_Name.
         /// </summary>
-        [TestVariable("9790a775-0b6b-4803-bdcb-f6beb517b923")]
-        public string UVA_VORJAHR_Form_Name
+        [TestVariable("f9e0c706-5661-4b4b-8b5f-4d8d6c9eaec8")]
+        public string UVA_VORVORJAHR_Form_Name
         {
-            get { return repo.UVA_VORJAHR_Form_Name; }
-            set { repo.UVA_VORJAHR_Form_Name = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable UVA_JAHRNEU_Form_Name.
-        /// </summary>
-        [TestVariable("23c69af7-c5f7-4c48-8b2c-79dcbd6b0c51")]
-        public string UVA_JAHRNEU_Form_Name
-        {
-            get { return repo.UVA_JAHRNEU_Form_Name; }
-            set { repo.UVA_JAHRNEU_Form_Name = value; }
+            get { return repo.UVA_VORVORJAHR_Form_Name; }
+            set { repo.UVA_VORVORJAHR_Form_Name = value; }
         }
 
 #endregion
@@ -106,8 +96,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TblUVAF.PageDown' at Center.", repo.TblUVAF.PageDownInfo, new RecordItemIndex(1));
             repo.TblUVAF.PageDown.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblUVAF.Tabelle_mit_Variable_UVA_VORJAHR_Form_Name.Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name' at Center.", repo.TblUVAF.Tabelle_mit_Variable_UVA_VORJAHR_Form_Name.Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_NameInfo, new RecordItemIndex(2));
-            repo.TblUVAF.Tabelle_mit_Variable_UVA_VORJAHR_Form_Name.Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TblUVAF.Tabelle_mit_Variable_UVA_VORVORJAHR_Form_Name.Column0_in_Zeile_mit_Variable_UVA_VORVORJAHR_Form_Name' at Center.", repo.TblUVAF.Tabelle_mit_Variable_UVA_VORVORJAHR_Form_Name.Column0_in_Zeile_mit_Variable_UVA_VORVORJAHR_Form_NameInfo, new RecordItemIndex(2));
+            repo.TblUVAF.Tabelle_mit_Variable_UVA_VORVORJAHR_Form_Name.Column0_in_Zeile_mit_Variable_UVA_VORVORJAHR_Form_Name.DoubleClick();
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'TblUVAD.TitleBar300UVADetailsUVADeutschl'", repo.TblUVAD.TitleBar300UVADetailsUVADeutschlInfo, new ActionTimeout(60000), new RecordItemIndex(3));
             repo.TblUVAD.TitleBar300UVADetailsUVADeutschlInfo.WaitForExists(60000);
@@ -115,8 +105,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'[300]  UVA-Details: ') on item 'TblUVAD.TitleBar300UVADetailsUVADeutschl'.", repo.TblUVAD.TitleBar300UVADetailsUVADeutschlInfo, new RecordItemIndex(4));
             Validate.AttributeContains(repo.TblUVAD.TitleBar300UVADetailsUVADeutschlInfo, "Text", "[300]  UVA-Details: ");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$UVA_JAHRNEU_Form_Name) on item 'TblUVAD.TitleBar300UVADetailsUVADeutschl'.", repo.TblUVAD.TitleBar300UVADetailsUVADeutschlInfo, new RecordItemIndex(5));
-            Validate.AttributeContains(repo.TblUVAD.TitleBar300UVADetailsUVADeutschlInfo, "Text", UVA_JAHRNEU_Form_Name);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$UVA_VORVORJAHR_Form_Name) on item 'TblUVAD.TitleBar300UVADetailsUVADeutschl'.", repo.TblUVAD.TitleBar300UVADetailsUVADeutschlInfo, new RecordItemIndex(5));
+            Validate.AttributeContains(repo.TblUVAD.TitleBar300UVADetailsUVADeutschlInfo, "Text", UVA_VORVORJAHR_Form_Name);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'TblUVAD.ChildTableWindow.ColUvaDZeileRow1'.", repo.TblUVAD.ChildTableWindow.ColUvaDZeileRow1Info, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.TblUVAD.ChildTableWindow.ColUvaDZeileRow1Info, "Text", "1");
@@ -136,8 +126,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='89') on item 'TblUVAD.ChildTableWindow.ColUvaDFormnrRow16'.", repo.TblUVAD.ChildTableWindow.ColUvaDFormnrRow16Info, new RecordItemIndex(11));
             Validate.AttributeEqual(repo.TblUVAD.ChildTableWindow.ColUvaDFormnrRow16Info, "Text", "89");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Innergem. Erwerb steuerpflichtig zum Steuersatz von 19 v.H.') on item 'TblUVAD.ChildTableWindow.ColUvaDBezRow16'.", repo.TblUVAD.ChildTableWindow.ColUvaDBezRow16Info, new RecordItemIndex(12));
-            Validate.AttributeContains(repo.TblUVAD.ChildTableWindow.ColUvaDBezRow16Info, "Text", "Innergem. Erwerb steuerpflichtig zum Steuersatz von 19 v.H.");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Innergem. Erwerb steuerpflichtig zum Steuersatz von 19') on item 'TblUVAD.ChildTableWindow.ColUvaDBezRow16'.", repo.TblUVAD.ChildTableWindow.ColUvaDBezRow16Info, new RecordItemIndex(12));
+            Validate.AttributeContains(repo.TblUVAD.ChildTableWindow.ColUvaDBezRow16Info, "Text", "Innergem. Erwerb steuerpflichtig zum Steuersatz von 19");
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='USt-Bemessung') on item 'TblUVAD.ChildTableWindow.ColUvaDTypEditRow16'.", repo.TblUVAD.ChildTableWindow.ColUvaDTypEditRow16Info, new RecordItemIndex(13));
             Validate.AttributeEqual(repo.TblUVAD.ChildTableWindow.ColUvaDTypEditRow16Info, "Text", "USt-Bemessung");

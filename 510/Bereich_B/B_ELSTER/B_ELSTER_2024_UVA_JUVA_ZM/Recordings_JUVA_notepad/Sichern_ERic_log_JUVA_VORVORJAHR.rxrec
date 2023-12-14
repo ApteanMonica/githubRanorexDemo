@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="e913ecb5-9e28-4d8c-932c-9b3e7d55c731"
+id="a048f5bb-c6cf-4ef8-9923-6c5609ecfaa6"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,26 +19,41 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Loeschen_XML_UVA"
-	namespace="B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad.Recordings_UVA_notepad">
+	classname="Sichern_Eric_log_JUVA_VORVORJAHR"
+	namespace="B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad">
 	</codegen>
 	<variables>
 		<var
-		id="be048278-7473-4332-b476-d8d5506486af"
-		name="XML_UVA_Datei">
-		</var>
-		<var
-		id="452fee4c-86be-4eab-b309-afdc65151d57"
-		name="Pfad">
-			c:\temp
+		id="3f66ab04-63b5-45e2-9039-63446455a4d0"
+		name="Eric_log_Inhalt_aktuell">
 		</var>
 	</variables>
 	<recorditems>
+		<getvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="d9afe67e-7d58-44df-a23f-203c288230b0"
+		varname="Eric_log_Inhalt_aktuell">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f267a9c7-8840-458d-b1f7-d6a95db72b09"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='eric.log - Editor']/text[@controlid='15']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</getvaluerecorditem>
 		<userrecorditem
 		classname="FileLibrary"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="DeleteFiles"
+		methodname="WriteToFile"
 		namespace="Ranorex.AutomationHelpers.UserCodeCollections"
 		optional="False">
 			<comment>
@@ -46,27 +61,35 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<arguments
-			id="4c487ddb-b723-4761-9f1b-bcde58e045cc">
+			id="ab1309bf-62bc-49e5-ac09-b99c1d69b08f">
 				<argument
-				argname="path"
-				id="3db60b04-f432-4a58-9ce0-7422f11a956d"
-				variable="Pfad">
+				argname="text"
+				id="fff6b17e-943e-414d-b0eb-a92e2bd99411"
+				variable="Eric_log_Inhalt_aktuell">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						c:\temp
 					</argvalue>
 				</argument>
 				<argument
-				argname="pattern"
-				id="f8b53938-0429-47a7-a86c-eb9136d1c9a8"
-				variable="XML_UVA_Datei">
+				argname="filenamePrefix"
+				id="71659868-2fad-44d3-b4a7-fa3b10f4d3fd">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						eric.log
+						c:\temp\eric_log_JUVA_2022
+					</argvalue>
+				</argument>
+				<argument
+				argname="fileExtension"
+				id="9ac1af7e-c4dc-4e54-98f9-e16024f152f2">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						log
 					</argvalue>
 				</argument>
 			</arguments>
@@ -75,7 +98,7 @@ mode="Global">
 	<repository
 	id="e5a9e52d-413c-407b-af4d-bcbeec11758a"
 	name="B_ELSTER_2024_UVA_JUVA_ZMRepository"
-	relativepath="..\..\B_ELSTER_2024_UVA_JUVA_ZMRepository.rxrep">
+	relativepath="..\B_ELSTER_2024_UVA_JUVA_ZMRepository.rxrep">
 		<codegen
 		classname="B_ELSTER_2024_UVA_JUVA_ZMRepository"
 		namespace="B_ELSTER_2024_UVA_JUVA_ZM">
@@ -87,7 +110,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		loeschen_XML_UVA.UserCode.cs
+		Sichern_Eric_log_JUVA_VORVORJAHR.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

@@ -92,8 +92,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text=$Eric_Version_ZM_JAHRNEU_01) on item 'EricLogEditor.Text15'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
-            Validate.AttributeEqual(repo.EricLogEditor.Text15Info, "Text", Eric_Version_ZM_JAHRNEU_01);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Eric_Version_ZM_JAHRNEU_01) on item 'EricLogEditor.Text15'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.EricLogEditor.Text15Info, "Text", Eric_Version_ZM_JAHRNEU_01);
             
         }
 

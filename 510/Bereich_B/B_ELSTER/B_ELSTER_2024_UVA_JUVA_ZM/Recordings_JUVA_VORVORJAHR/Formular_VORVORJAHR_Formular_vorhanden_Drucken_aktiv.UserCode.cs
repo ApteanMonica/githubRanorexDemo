@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_VORVORJAHR
 {
-    public partial class Register_Jahreserklaerung_Eingaben
+    public partial class Formular_VORVORJAHR_Formular_vorhanden_Drucken_aktiv
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
