@@ -107,20 +107,20 @@ namespace Hotfixtest_490.Recordings.S_ADR
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'TEST' with focus on 'FrmAdr.Kurzname'.", repo.FrmAdr.KurznameInfo, new RecordItemIndex(4));
             repo.FrmAdr.Kurzname.PressKeys("TEST");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Text' at Center.", repo.FrmAdr.TextInfo, new RecordItemIndex(5));
-            repo.FrmAdr.Text.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.dfAdr_aldresse1' at Center.", repo.FrmAdr.dfAdr_aldresse1Info, new RecordItemIndex(5));
+            repo.FrmAdr.dfAdr_aldresse1.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'TEST' with focus on 'FrmAdr.Text'.", repo.FrmAdr.TextInfo, new RecordItemIndex(6));
-            repo.FrmAdr.Text.PressKeys("TEST");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'TEST' with focus on 'FrmAdr.dfAdr_aldresse1'.", repo.FrmAdr.dfAdr_aldresse1Info, new RecordItemIndex(6));
+            repo.FrmAdr.dfAdr_aldresse1.PressKeys("TEST");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Text1' at Center.", repo.FrmAdr.Text1Info, new RecordItemIndex(7));
-            repo.FrmAdr.Text1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.Plz_cd' at Center.", repo.FrmAdr.Plz_cdInfo, new RecordItemIndex(7));
+            repo.FrmAdr.Plz_cd.Click();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '5020{Tab}' with focus on 'FrmAdr.Text1'.", repo.FrmAdr.Text1Info, new RecordItemIndex(8));
-            repo.FrmAdr.Text1.PressKeys("5020{Tab}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '5020{Tab}' with focus on 'FrmAdr.Plz_cd'.", repo.FrmAdr.Plz_cdInfo, new RecordItemIndex(8));
+            repo.FrmAdr.Plz_cd.PressKeys("5020{Tab}");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Salzburg') on item 'FrmAdr.Text2'.", repo.FrmAdr.Text2Info, new RecordItemIndex(9));
-            Validate.AttributeEqual(repo.FrmAdr.Text2Info, "Text", "Salzburg");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Salzburg') on item 'FrmAdr.dfAdr_ort'.", repo.FrmAdr.dfAdr_ortInfo, new RecordItemIndex(9));
+            Validate.AttributeEqual(repo.FrmAdr.dfAdr_ortInfo, "Text", "Salzburg");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FrmAdr.PbSpeichern' at Center.", repo.FrmAdr.PbSpeichernInfo, new RecordItemIndex(10));
             repo.FrmAdr.PbSpeichern.Click();
