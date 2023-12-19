@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="501fbe0d-8a31-46c2-b103-96e737e3b0a5"
+id="e6fb3938-13a1-4d2e-bc09-162311c2aa76"
 mode="Desktop">
 	<repeatcount>
 		1
 	</repeatcount>
 	<turbomode>
-		False
+		True
 	</turbomode>
 	<genreport>
 		True
@@ -19,17 +19,37 @@ mode="Desktop">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Recording1"
-	namespace="V_FADR_002">
+	classname="CloseAUT"
+	namespace="V_FADR_002.Recordings">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="1000ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="bea0f6d3-0f83-4132-9c3e-0908658320a9">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b3acf61b-4f38-4045-979d-238365d86fc0"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblFadr']/titlebar[@accessiblerole='TitleBar']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
 	</recorditems>
 	<repository
 	id="df55abe8-25ec-41fd-82ce-99cc41eed181"
 	name="V_FADR_002Repository"
-	relativepath="V_FADR_002Repository.rxrep">
+	relativepath="..\V_FADR_002Repository.rxrep">
 		<codegen
 		classname="V_FADR_002Repository"
 		namespace="V_FADR_002">
@@ -41,7 +61,7 @@ mode="Desktop">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Recording1.UserCode.cs
+		CloseAUT.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

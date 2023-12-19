@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace V_FADR_002
+namespace V_FADR_002.Recordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
@@ -30,9 +30,9 @@ namespace V_FADR_002
     public partial class StartAUT : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the V_FADR_002Repository repository.
+        /// Holds an instance of the global::V_FADR_002.V_FADR_002Repository repository.
         /// </summary>
-        public static V_FADR_002Repository repo = V_FADR_002Repository.Instance;
+        public static global::V_FADR_002.V_FADR_002Repository repo = global::V_FADR_002.V_FADR_002Repository.Instance;
 
         static StartAUT instance = new StartAUT();
 

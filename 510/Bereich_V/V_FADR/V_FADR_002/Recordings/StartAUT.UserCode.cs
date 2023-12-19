@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace V_FADR_002
+namespace V_FADR_002.Recordings
 {
     public partial class StartAUT
     {
