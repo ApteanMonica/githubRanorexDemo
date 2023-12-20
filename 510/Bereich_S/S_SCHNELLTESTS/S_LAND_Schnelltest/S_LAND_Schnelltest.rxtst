@@ -2,14 +2,30 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testcase
+			id="09f23af2-7bef-410f-a614-ba5035f92246"
+			name="Veralten_BLZ_Aufrufart_BLZ">
+			</testcase>
 			<setup
 			id="1076f805-803a-4b20-8d7a-6c3062d4d943"
 			name="setup">
 			</setup>
+			<testmodule
+			id="1dd7ea1a-5845-4eb9-9f75-274e9ca41f72"
+			name="Neuanlage_BLZ"
+			ref="55547a62-292e-4826-b95f-ef32c4a4cb11"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="283fc324-ac8f-440e-b2df-c8ab64c1d92b"
 			name="Verwalten_Land_Aufrufart_LAND">
 			</testcase>
+			<testmodule
+			id="3a7e9c8f-a99d-4aa3-9f5d-b1f9d2b022e2"
+			name="Ueberpruefung_Anlage_BLZ"
+			ref="0338f1e1-08a0-4e77-a49a-741291347968"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
 			name="S_LAND_Schnelltest"
@@ -59,6 +75,10 @@
 					name="PLZ_NEU_KM"
 					value="530">
 					</param>
+					<param
+					name="Programm_BLZ"
+					value="S_LAND Aufrufart=BLZ">
+					</param>
 				</parameters>
 			</testcase>
 			<teardown
@@ -96,6 +116,26 @@
 					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
 					variableid="e5ac720c-27f1-4cb7-abe4-6dc8e02aed05"
 					variablename="PLZ_NEU">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="7005a893-cda6-45e9-86f9-534c50e76964"
+			name="Start_BLZ"
+			ref="db7582ed-1b78-4a5a-9d07-b88a64bdc989"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="acb9b936-651e-4885-8cec-af5ff6d005c0"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm_PLZ"
+					datasourceid="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444"
+					variableid="2baa9a3b-f757-48a9-9356-5bdc40810f51"
+					variablename="Programm_PLZ">
 					</var>
 				</databinding>
 			</testmodule>
@@ -177,6 +217,10 @@
 			ref="2f5bb1b5-8af3-4dda-b116-412b25477e55"
 			type="Recording">
 			</testmodule>
+			<setup
+			id="9d01c797-9fdb-4c5b-a32b-8a72bf91f46c"
+			name="setup">
+			</setup>
 			<testmodule
 			id="a14bcfce-02d3-41d1-80cb-85881b150609"
 			name="Loeschen_PLZ_NEU"
@@ -247,6 +291,12 @@
 					variablename="LAND_CD_NEU">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="be71502d-ae12-4e9d-bf2d-c7df4403ba9d"
+			name="Aendern_Einstellungen_BLZ_NEU"
+			ref="bf744873-e32c-4ae5-b31a-0cda659bb9d9"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="cdcd8d89-9c00-4211-bc69-453d3cf1b2e4"
@@ -424,6 +474,30 @@
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="09f23af2-7bef-410f-a614-ba5035f92246"
+					name="Veralten_BLZ_Aufrufart_BLZ">
+						<setup
+						id="9d01c797-9fdb-4c5b-a32b-8a72bf91f46c"
+						name="setup">
+							<testmodule
+							id="7005a893-cda6-45e9-86f9-534c50e76964"
+							name="Start_BLZ">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="1dd7ea1a-5845-4eb9-9f75-274e9ca41f72"
+						name="Neuanlage_BLZ">
+						</testmodule>
+						<testmodule
+						id="3a7e9c8f-a99d-4aa3-9f5d-b1f9d2b022e2"
+						name="Ueberpruefung_Anlage_BLZ">
+						</testmodule>
+						<testmodule
+						id="be71502d-ae12-4e9d-bf2d-c7df4403ba9d"
+						name="Aendern_Einstellungen_BLZ_NEU">
+						</testmodule>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -435,7 +509,7 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="283fc324-ac8f-440e-b2df-c8ab64c1d92b">
+			id="09f23af2-7bef-410f-a614-ba5035f92246">
 			</testcontainer>
 			<testcontainer
 			id="4fe2dae4-bfd0-42bc-b3ae-f1c60e38f444">

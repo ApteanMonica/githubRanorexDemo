@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="bf744873-e32c-4ae5-b31a-0cda659bb9d9"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		True
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Aendern_Einstellungen_BLZ_NEU"
+	namespace="S_LAND_Schnelltest.Recordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="65eb232f-f89d-46f0-9e79-0f41130e0e85">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="31af674b-69b4-431f-9cf2-031be8685a35"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='tblBankleitzahl']/cell[@accessiblename~'colBlz_ort']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
+	</recorditems>
+	<repository
+	id="2229f8b9-dfc7-4400-b0f2-1ad1ad2f17b1"
+	name="S_LAND_SchnelltestRepository"
+	relativepath="..\S_LAND_SchnelltestRepository.rxrep">
+		<codegen
+		classname="S_LAND_SchnelltestRepository"
+		namespace="S_LAND_Schnelltest">
+		</codegen>
+		<rootfolder
+		id="29e1d00d-4956-4400-b6eb-36fe3aed7db9"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Aendern_Einstellungen_BLZ_NEU.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

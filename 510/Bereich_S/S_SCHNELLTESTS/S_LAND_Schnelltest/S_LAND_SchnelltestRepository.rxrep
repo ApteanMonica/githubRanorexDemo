@@ -232,12 +232,23 @@ FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
 			addcaps="button,control,nativewindow"
 			capname="button"
 			id="968619e6-3b5b-4624-89ba-39ebec53915b"
-			name="Button1"
+			name="Button1_Nein"
 			refimgid="0b24718a-2c54-4898-9a86-21819eb856a6"
 			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button1']"
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@controlname='dlgMessageBox']/button[@controlname='button1']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="b6b04054-8a51-4160-854f-314d8e815127"
+			name="Button2_Alle"
+			refimgid="471affa0-dadb-48b6-b257-1ae24bdba5a5"
+			refpath="/form[@controlname='dlgMessageBox']/button[@controlname='button2']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='dlgMessageBox']/button[@controlname='button2']
 			</item>
 			<basepath>
 				/form[@controlname='dlgMessageBox']
@@ -477,6 +488,162 @@ FmBZllrk6PV6aqxUKmpk+3zAaDRSc9d1kwHtdpssZ5Tm6HQ6KJVKWFurqXm1WlX7EwFsv9FoIIoi
 FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="b8878026-cb47-44fe-adb3-997f2ebfe8b4"
+		isrooted="True"
+		name="TblBankleitzahl"
+		refpath="/form[@controlname='tblBankleitzahl']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="6daf7826-32f1-4137-abfd-57125c3c2303"
+			name="TitleBar100BankleitzahlVerwalten"
+			refimgid="736dcce5-e7fb-4c5c-a446-e5d4fb71348a"
+			refpath="/form[@controlname='tblBankleitzahl']/titlebar[@accessiblerole='TitleBar']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBankleitzahl']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="d39f7d08-f72d-4fc5-9f8b-102fe1e18e27"
+			name="PbDataAccessNew"
+			refimgid="a5163472-7954-4d20-8d4b-f95d9493c336"
+			refpath="/form[@controlname='tblBankleitzahl']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_New']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBankleitzahl']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_New']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="6228179d-9e65-429b-adeb-5716198ccf02"
+			name="DfLandCd"
+			refimgid="9f6b9648-0530-47be-bb85-05432d9e7003"
+			refpath="/form[@controlname='tblBankleitzahl']/container[@controlname='ToolBar']/text[@controlname='dfLand_cd']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBankleitzahl']/container[@controlname='ToolBar']/text[@controlname='dfLand_cd']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="1afde164-6a10-4665-9aeb-00f0bf844ba7"
+			name="PbDataAccessLoad"
+			refimgid="5a30be27-69df-41da-b4a1-f3f9c934208b"
+			refpath="/form[@controlname='tblBankleitzahl']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBankleitzahl']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Load']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="b51b236a-a08e-4266-ad30-4acff9b6d71e"
+			name="Row0Column0"
+			refimgid="eb3b0869-0f6d-4be7-bd0b-cf792f25f149"
+			refpath="/form[@controlname='tblBankleitzahl']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='Row 0 Column 0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBankleitzahl']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 0']/cell[@accessiblename='Row 0 Column 0']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="ad72f77f-c545-402c-9f39-0b6eadf69db5"
+			name="ColBlzCdRow502"
+			refimgid="e855d0e0-c2c8-4b25-bfd6-87367ec58b84"
+			refpath="/form[@controlname='tblBankleitzahl']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 502']/cell[@accessiblename='colBlz_cd Row 502']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBankleitzahl']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 502']/cell[@accessiblename='colBlz_cd Row 502']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="8cee2676-aae6-4d4e-8fdd-f979b9030009"
+			name="PbDataAccessSave"
+			refimgid="b431d325-af05-4cac-8b7c-d3b375050ddc"
+			refpath="/form[@controlname='tblBankleitzahl']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBankleitzahl']/container[@controlname='RibbonBar']/container[@controlname='DataAccessGroup']/button[@controlname='pbDataAccess_Save']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="cee18cc5-aaf9-429b-b858-574c364b35fc"
+			name="Row1Column0"
+			refimgid="957df92b-4f7b-4313-b837-5b3937e88c5e"
+			refpath="/form[@controlname='tblBankleitzahl']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBankleitzahl']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblename='Row 1']/cell[@accessiblename='Row 1 Column 0']
+			</item>
+			<folder
+			capname="row"
+			id="79e8e2b8-bd62-4f62-b76a-2c0c0f00cdc7"
+			isrooted="True"
+			name="ColBlzCdRow882_Zeile_mit__Variable_BLZ_neu"
+			refimgid="5defc5ff-db4b-4814-839b-01a9a7169cc0"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="993ba02d-245b-44dc-8e95-c6adbbeb91fd"
+				name="ColBlzCd_BLZ"
+				refimgid="3699fb0c-5f4e-428e-9c6d-9453fb551786"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBankleitzahl']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$BLZ_NEU]/cell[@accessiblename~'colBlz_cd']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="548606b8-ef6c-407e-a977-6155e64b1314"
+				name="ColBlzName"
+				refimgid="d348c177-d3c5-47d4-b1a8-4e361cddbfc1"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@controlname='tblBankleitzahl']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$BLZ_NEU]/cell[@accessiblename~'colBlz_name']
+				</item>
+				<basepath>
+					/form[@controlname='tblBankleitzahl']/container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$BLZ_NEU]
+				</basepath>
+			</folder>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="31af674b-69b4-431f-9cf2-031be8685a35"
+			name="ColBlzOrtRow882"
+			refimgid="9fd1bfcc-859e-4289-b5ac-b4e8427c688c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@controlname='tblBankleitzahl']/cell[@accessiblename~'colBlz_ort']
+			</item>
+			<basepath>
+				/form[@controlname='tblBankleitzahl']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH7SURBVDhPlZPPaxNBFMcXxYsXV0lQ3JSgC9nE
+7rJZt0l3Z9BDDnrQfyA0eMmtl+KP0Hsg5CZ4Fi0hZyneqkFMUEyh2jWeLPoHCBIQPHiw2a/vTawW
+kj3kwWO+szPvM19m52kccSwOMJFYJOOJjONY3lHFjiMgxGIZhgIP7gloTFtdFUifF8jlBMplAf2c
+gE1Qf0Xg9BkBz5sPOXGKAZC4ZAp8/0bWSFuWAA4lfv2UyLGmb18PJIIgCUCbv3yWuGjQ5lhi+5nE
+leWp3tgQWF8nMGnPTQBMfof48FFTNnf3NLzbPQnXlXgfadh+voS8JbFH+uGj5fmA+DDEzRsh7t73
+sU8giwqebOWxP9Lg2BIvX11A9EnDCt3HXABigRItDt7qePy0AP+qRP/NWWxu+rh+TeA16Vu3Q1WQ
+z+eRSqVg2/YxAP2F49SkzGQMutD/USgUZgGe52E4HKJer6PVaqHf72M8HqPZbKLb7apCendq1HV9
+FmBZllrk6PV6aqxUKmpk+3zAaDRSc9d1kwHtdpssZ5Tm6HQ6KJVKWFurqXm1WlX7EwFsv9FoIIoi
+1GrToiPrOzsvYJqX6cWWZwF8MRzsIJvNKn0Ug8Hgr5pGOp2eAriruDEYEASBcuH7vpo7jgPDMFAs
+FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
@@ -499,6 +666,10 @@ FlWapvkv2YGmMYBakruKaYskF/8YS/wBF0kxI1cNOIEAAAAASUVORK5CYII=
 		id="23330725-514d-4b36-8f54-b06afff7a917"
 		name="PLZ_NEU_ORT">
 			Schnelltest PLZ Anlage
+		</var>
+		<var
+		id="db543b42-6442-4052-9c8e-5f7cf07f3c12"
+		name="BLZ_NEU">
 		</var>
 	</variables>
 </repository>

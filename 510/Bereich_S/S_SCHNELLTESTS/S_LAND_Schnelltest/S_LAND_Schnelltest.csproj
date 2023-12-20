@@ -85,6 +85,18 @@
     <Compile Include="Program.cs">
       <id>8a1e56f5-3a6c-4847-af60-cc4fdf396569</id>
     </Compile>
+    <Compile Include="Recordings\Aendern_Einstellungen_BLZ_NEU.cs">
+      <BoundTo>c4ffdc8c-a52f-43fd-a11e-85871ff80b6a</BoundTo>
+      <DependentUpon>Aendern_Einstellungen_BLZ_NEU.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>31d6f4ab-f94b-4740-9ec0-aa48952e90f1</id>
+    </Compile>
+    <Compile Include="Recordings\Aendern_Einstellungen_BLZ_NEU.UserCode.cs">
+      <BoundTo>c4ffdc8c-a52f-43fd-a11e-85871ff80b6a</BoundTo>
+      <DependentUpon>Aendern_Einstellungen_BLZ_NEU.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b104f38d-d83f-4630-836d-07edcba32f2f</id>
+    </Compile>
     <Compile Include="Recordings\Aendern_Einstellungen_PLZ_NEU.cs">
       <BoundTo>a8272e95-201a-428a-9c60-1d399bc5190a</BoundTo>
       <DependentUpon>Aendern_Einstellungen_PLZ_NEU.rxrec</DependentUpon>
@@ -181,6 +193,18 @@
       <UserCode>true</UserCode>
       <id>4ee8284c-f4e4-44ef-b6f5-fc848b44fec1</id>
     </Compile>
+    <Compile Include="Recordings\Neuanlage_BLZ.cs">
+      <BoundTo>7b13ee42-1378-4247-bea3-5213ae0bef97</BoundTo>
+      <DependentUpon>Neuanlage_BLZ.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d767ebd5-9cf5-49f7-8536-1b8f6bfa26c9</id>
+    </Compile>
+    <Compile Include="Recordings\Neuanlage_BLZ.UserCode.cs">
+      <BoundTo>7b13ee42-1378-4247-bea3-5213ae0bef97</BoundTo>
+      <DependentUpon>Neuanlage_BLZ.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4b107259-4173-442c-a72d-6b59f8404040</id>
+    </Compile>
     <Compile Include="Recordings\Neuanlage_Land.cs">
       <BoundTo>b413ac8e-75b1-4e09-bcd4-24c85ea02014</BoundTo>
       <DependentUpon>Neuanlage_Land.rxrec</DependentUpon>
@@ -217,6 +241,18 @@
       <id>4e61ac53-bd24-4bf0-aebc-11e02ca52618</id>
       <BoundTo>a7281615-b0f8-4a2b-8f5a-f25c9d2ef708</BoundTo>
     </Compile>
+    <Compile Include="Recordings\Start_BLZ.cs">
+      <BoundTo>1cdb3066-92a0-4148-a490-2c56636658cc</BoundTo>
+      <DependentUpon>Start_BLZ.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3479948f-555c-41c3-9aee-da93c0d0e823</id>
+    </Compile>
+    <Compile Include="Recordings\Start_BLZ.UserCode.cs">
+      <BoundTo>1cdb3066-92a0-4148-a490-2c56636658cc</BoundTo>
+      <DependentUpon>Start_BLZ.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9a6988a2-a233-4fd0-b830-54692efbb020</id>
+    </Compile>
     <Compile Include="Recordings\Start_PLZ.cs">
       <BoundTo>eff21a01-145b-4e3a-8d9b-123610b7b8cb</BoundTo>
       <DependentUpon>Start_PLZ.rxrec</DependentUpon>
@@ -228,6 +264,18 @@
       <DependentUpon>Start_PLZ.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>b11bface-c701-42d1-8721-5404378363e8</id>
+    </Compile>
+    <Compile Include="Recordings\Ueberpruefung_Anlage_BLZ.cs">
+      <BoundTo>7ea70fb5-6dbd-4d8f-9f8a-fe557aedca25</BoundTo>
+      <DependentUpon>Ueberpruefung_Anlage_BLZ.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d06a9695-8982-4547-a814-4e1d0ad82c0f</id>
+    </Compile>
+    <Compile Include="Recordings\Ueberpruefung_Anlage_BLZ.UserCode.cs">
+      <BoundTo>7ea70fb5-6dbd-4d8f-9f8a-fe557aedca25</BoundTo>
+      <DependentUpon>Ueberpruefung_Anlage_BLZ.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b3b472e6-bce5-42f9-9f97-c8f6dd3969fd</id>
     </Compile>
     <Compile Include="Recordings\Ueberpruefung_Anlage_PLZ.cs">
       <BoundTo>e67e1a45-3498-44b5-a543-f874d00111a1</BoundTo>
@@ -251,6 +299,11 @@
   <ItemGroup>
     <None Include="app.config">
       <id>72d82145-4b25-4c0b-a4d4-004dee9a09e5</id>
+    </None>
+    <None Include="Recordings\Aendern_Einstellungen_BLZ_NEU.rxrec">
+      <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
+      <id>c4ffdc8c-a52f-43fd-a11e-85871ff80b6a</id>
+      <recordtableid>bf744873-e32c-4ae5-b31a-0cda659bb9d9</recordtableid>
     </None>
     <None Include="Recordings\Aendern_Einstellungen_PLZ_NEU.rxrec">
       <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
@@ -292,6 +345,11 @@
       <id>7afd7eb4-af32-496b-9b64-def6ea3a541c</id>
       <recordtableid>f420f435-9215-4455-8178-be71cc08cf4a</recordtableid>
     </None>
+    <None Include="Recordings\Neuanlage_BLZ.rxrec">
+      <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
+      <id>7b13ee42-1378-4247-bea3-5213ae0bef97</id>
+      <recordtableid>55547a62-292e-4826-b95f-ef32c4a4cb11</recordtableid>
+    </None>
     <None Include="Recordings\Neuanlage_Land.rxrec">
       <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
       <id>b413ac8e-75b1-4e09-bcd4-24c85ea02014</id>
@@ -307,10 +365,20 @@
       <id>a7281615-b0f8-4a2b-8f5a-f25c9d2ef708</id>
       <recordtableid>a5f977cc-744d-4f50-92f6-0e05e2a4c414</recordtableid>
     </None>
+    <None Include="Recordings\Start_BLZ.rxrec">
+      <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
+      <id>1cdb3066-92a0-4148-a490-2c56636658cc</id>
+      <recordtableid>db7582ed-1b78-4a5a-9d07-b88a64bdc989</recordtableid>
+    </None>
     <None Include="Recordings\Start_PLZ.rxrec">
       <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
       <id>eff21a01-145b-4e3a-8d9b-123610b7b8cb</id>
       <recordtableid>80138894-0e5d-4c09-9bfa-224f3785a1ea</recordtableid>
+    </None>
+    <None Include="Recordings\Ueberpruefung_Anlage_BLZ.rxrec">
+      <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>
+      <id>7ea70fb5-6dbd-4d8f-9f8a-fe557aedca25</id>
+      <recordtableid>0338f1e1-08a0-4e77-a49a-741291347968</recordtableid>
     </None>
     <None Include="Recordings\Ueberpruefung_Anlage_PLZ.rxrec">
       <BoundTo>bc7de376-9a7d-450b-8fc9-127017055790</BoundTo>

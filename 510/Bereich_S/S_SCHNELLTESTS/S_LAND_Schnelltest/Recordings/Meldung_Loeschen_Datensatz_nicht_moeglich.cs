@@ -110,8 +110,8 @@ namespace S_LAND_Schnelltest.Recordings
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Es wurden Daten geändert!\r\nSollen die Änderungen gespeichert werden?') on item 'DlgMessageBox.LabelMeldungstext'.", repo.DlgMessageBox.LabelMeldungstextInfo, new RecordItemIndex(6));
             Validate.AttributeEqual(repo.DlgMessageBox.LabelMeldungstextInfo, "Text", "Es wurden Daten geändert!\r\nSollen die Änderungen gespeichert werden?");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button1' at Center.", repo.DlgMessageBox.Button1Info, new RecordItemIndex(7));
-            repo.DlgMessageBox.Button1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'DlgMessageBox.Button1_Nein' at Center.", repo.DlgMessageBox.Button1_NeinInfo, new RecordItemIndex(7));
+            repo.DlgMessageBox.Button1_Nein.Click();
             
             Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TblLaender.Zeile_mit_LAND_CD_ALT.Row_mit_LAND_CD_ALT'.", repo.TblLaender.Zeile_mit_LAND_CD_ALT.Row_mit_LAND_CD_ALTInfo, new RecordItemIndex(8));
             Validate.Exists(repo.TblLaender.Zeile_mit_LAND_CD_ALT.Row_mit_LAND_CD_ALTInfo);
