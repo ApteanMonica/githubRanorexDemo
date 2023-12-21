@@ -22,19 +22,6 @@ using Ranorex.Core.Testing;
 
 namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 {
-    public partial class Sichern_Eric_log_JUVA_VORVORJAHR_ausl_U_ausl_U
-    {
-        /// <summary>
-        /// This method gets called right after the recording has been started.
-        /// It can be used to execute recording specific initialization code.
-        /// </summary>
-        private void Init()
-        {
-            // Your recording specific initialization code goes here.
-        }
-
-    }
-
     public partial class Sichern_Eric_log_JUVA_VORVORJAHR_ausl_U
     {
         /// <summary>
@@ -47,5 +34,4 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
         }
 
     }
-
 }

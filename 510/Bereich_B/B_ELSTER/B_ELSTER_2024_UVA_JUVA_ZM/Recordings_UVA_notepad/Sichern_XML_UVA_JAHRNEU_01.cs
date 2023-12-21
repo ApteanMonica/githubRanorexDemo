@@ -95,7 +95,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad
             Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'XMLEditor_UVA_ZM.Text15' and assigning its value to variable 'XML_Inhalt_aktuell'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(0));
             XML_Inhalt_aktuell = repo.XMLEditor_UVA_ZM.Text15.Element.GetAttributeValueText("Text");
             
-            Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.WriteToFile(XML_Inhalt_aktuell, "c:\\temp\\STADUEV_JAHRNEU_01", "xml");
+            Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.WriteToFile(XML_Inhalt_aktuell, "c:\\temp\\xml_STADUEV_UVA_2024_01", "xml");
             
         }
 

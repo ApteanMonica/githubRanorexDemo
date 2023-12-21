@@ -127,7 +127,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             set { _UVA_VORVORJAHR_Form_Name = value; }
         }
 
-        string _UVA_JAHRNEU_Form_Name = "";
+        string _UVA_JAHRNEU_Form_Name = "UVA-Deutschland 2024 Elster";
 
         /// <summary>
         /// Gets or sets the value of variable UVA_JAHRNEU_Form_Name.
@@ -139,7 +139,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             set { _UVA_JAHRNEU_Form_Name = value; }
         }
 
-        string _UVA_VORJAHR_Form_Name = "";
+        string _UVA_VORJAHR_Form_Name = "UVA-Deutschland 2023 Elster";
 
         /// <summary>
         /// Gets or sets the value of variable UVA_VORJAHR_Form_Name.
@@ -2477,6 +2477,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
         [RepositoryFolder("0483ab87-b365-490e-852c-8edd32d256c3")]
         public partial class TblUVAFAppFolder : RepoGenBaseFolder
         {
+            B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.Tabelle_mit_Variable_UVA_JAHRNEU_Form_NameFolder _tabelle_mit_variable_uva_jahrneu_form_name;
             B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.Tabelle_mit_Variable_UVA_VORJAHR_Form_NameFolder _tabelle_mit_variable_uva_vorjahr_form_name;
             B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.Tabelle_mit_Variable_UVA_VORVORJAHR_Form_NameFolder _tabelle_mit_variable_uva_vorvorjahr_form_name;
             RepoItemInfo _titlebar100verwaltenuvaformulareInfo;
@@ -2490,6 +2491,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             public TblUVAFAppFolder(RepoGenBaseFolder parentFolder) :
                     base("TblUVAF", "/form[@controlname='tblUVAF']", parentFolder, 30000, null, true, "0483ab87-b365-490e-852c-8edd32d256c3", "")
             {
+                _tabelle_mit_variable_uva_jahrneu_form_name = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.Tabelle_mit_Variable_UVA_JAHRNEU_Form_NameFolder(this);
                 _tabelle_mit_variable_uva_vorjahr_form_name = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.Tabelle_mit_Variable_UVA_VORJAHR_Form_NameFolder(this);
                 _tabelle_mit_variable_uva_vorvorjahr_form_name = new B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.Tabelle_mit_Variable_UVA_VORVORJAHR_Form_NameFolder(this);
                 _titlebar100verwaltenuvaformulareInfo = new RepoItemInfo(this, "TitleBar100VerwaltenUVAFormulare", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "d757038e-0460-45d8-b6e4-c9c042358cd2");
@@ -2619,6 +2621,15 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             }
 
             /// <summary>
+            /// The Tabelle_mit_Variable_UVA_JAHRNEU_Form_Name folder.
+            /// </summary>
+            [RepositoryFolder("12f9e09b-668d-4b16-a24b-c3bb8ae7e994")]
+            public virtual B_ELSTER_2024_UVA_JUVA_ZMRepositoryFolders.Tabelle_mit_Variable_UVA_JAHRNEU_Form_NameFolder Tabelle_mit_Variable_UVA_JAHRNEU_Form_Name
+            {
+                get { return _tabelle_mit_variable_uva_jahrneu_form_name; }
+            }
+
+            /// <summary>
             /// The Tabelle_mit_Variable_UVA_VORJAHR_Form_Name folder.
             /// </summary>
             [RepositoryFolder("3b1cbee7-aee6-46c9-b49c-651905317b46")]
@@ -2638,17 +2649,132 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
         }
 
         /// <summary>
+        /// The Tabelle_mit_Variable_UVA_JAHRNEU_Form_NameFolder folder.
+        /// </summary>
+        [RepositoryFolder("12f9e09b-668d-4b16-a24b-c3bb8ae7e994")]
+        public partial class Tabelle_mit_Variable_UVA_JAHRNEU_Form_NameFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _column0_in_zeile_mit_variable_uva_jahrneu_form_nameInfo;
+            RepoItemInfo _coluvacdin_zeile_mit_variable_uva_jahrneu_form_nameInfo;
+            RepoItemInfo _coluvadruckenrowmit_variable_uva_jahrneu_form_nameInfo;
+
+            /// <summary>
+            /// Creates a new Tabelle_mit_Variable_UVA_JAHRNEU_Form_Name  folder.
+            /// </summary>
+            public Tabelle_mit_Variable_UVA_JAHRNEU_Form_NameFolder(RepoGenBaseFolder parentFolder) :
+                    base("Tabelle_mit_Variable_UVA_JAHRNEU_Form_Name", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UVA_JAHRNEU_Form_Name]", parentFolder, 30000, null, false, "12f9e09b-668d-4b16-a24b-c3bb8ae7e994", "")
+            {
+                _column0_in_zeile_mit_variable_uva_jahrneu_form_nameInfo = new RepoItemInfo(this, "Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name", "cell[@accessiblename~'Column 0']", "", 30000, null, "42dca54e-8970-4b0a-a23f-44d2481db122");
+                _coluvacdin_zeile_mit_variable_uva_jahrneu_form_nameInfo = new RepoItemInfo(this, "ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name", "cell[@accessiblename~'colUva_cd']", "", 30000, null, "ab734cf7-f78a-4c7e-b671-902c84f55f85");
+                _coluvadruckenrowmit_variable_uva_jahrneu_form_nameInfo = new RepoItemInfo(this, "ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name", "cell[@accessiblename~'colUva_drucken']", "", 30000, null, "0408b35e-5102-4754-966a-707d0aea1f02");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("12f9e09b-668d-4b16-a24b-c3bb8ae7e994")]
+            public virtual Ranorex.Row Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("12f9e09b-668d-4b16-a24b-c3bb8ae7e994")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name item.
+            /// </summary>
+            [RepositoryItem("42dca54e-8970-4b0a-a23f-44d2481db122")]
+            public virtual Ranorex.Cell Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name
+            {
+                get
+                {
+                    return _column0_in_zeile_mit_variable_uva_jahrneu_form_nameInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name item info.
+            /// </summary>
+            [RepositoryItemInfo("42dca54e-8970-4b0a-a23f-44d2481db122")]
+            public virtual RepoItemInfo Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_NameInfo
+            {
+                get
+                {
+                    return _column0_in_zeile_mit_variable_uva_jahrneu_form_nameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name item.
+            /// </summary>
+            [RepositoryItem("ab734cf7-f78a-4c7e-b671-902c84f55f85")]
+            public virtual Ranorex.Cell ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name
+            {
+                get
+                {
+                    return _coluvacdin_zeile_mit_variable_uva_jahrneu_form_nameInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name item info.
+            /// </summary>
+            [RepositoryItemInfo("ab734cf7-f78a-4c7e-b671-902c84f55f85")]
+            public virtual RepoItemInfo ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_NameInfo
+            {
+                get
+                {
+                    return _coluvacdin_zeile_mit_variable_uva_jahrneu_form_nameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name item.
+            /// </summary>
+            [RepositoryItem("0408b35e-5102-4754-966a-707d0aea1f02")]
+            public virtual Ranorex.Cell ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name
+            {
+                get
+                {
+                    return _coluvadruckenrowmit_variable_uva_jahrneu_form_nameInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name item info.
+            /// </summary>
+            [RepositoryItemInfo("0408b35e-5102-4754-966a-707d0aea1f02")]
+            public virtual RepoItemInfo ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_NameInfo
+            {
+                get
+                {
+                    return _coluvadruckenrowmit_variable_uva_jahrneu_form_nameInfo;
+                }
+            }
+        }
+
+        /// <summary>
         /// The Tabelle_mit_Variable_UVA_VORJAHR_Form_NameFolder folder.
         /// </summary>
         [RepositoryFolder("3b1cbee7-aee6-46c9-b49c-651905317b46")]
         public partial class Tabelle_mit_Variable_UVA_VORJAHR_Form_NameFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _column0_in_zeile_mit_variable_uva_vorjahr_form_nameInfo;
             RepoItemInfo _coluvacdin_zeile_mit_variable_uva_vorjahr_form_nameInfo;
             RepoItemInfo _coluvadruckenrowmit_variable_uva_vorjahr_form_nameInfo;
-            RepoItemInfo _column0_in_zeile_mit_variable_uva_vorjahr_form_nameInfo;
-            RepoItemInfo _coluvacdin_zeile_mit_variable_uva_jahrneu_form_nameInfo;
-            RepoItemInfo _coluvadruckenrowmit_variable_uva_jahrneu_form_nameInfo;
-            RepoItemInfo _column0_in_zeile_mit_variable_uva_jahrneu_form_nameInfo;
 
             /// <summary>
             /// Creates a new Tabelle_mit_Variable_UVA_VORJAHR_Form_Name  folder.
@@ -2656,12 +2782,9 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             public Tabelle_mit_Variable_UVA_VORJAHR_Form_NameFolder(RepoGenBaseFolder parentFolder) :
                     base("Tabelle_mit_Variable_UVA_VORJAHR_Form_Name", "container[@controlname='ChildTableWindow']/element[@controlname='mainGrid']/table[@accessiblename='FlexGrid']/row[@accessiblerole='Row' and @accessiblevalue~$UVA_VORJAHR_Form_Name]", parentFolder, 30000, null, false, "3b1cbee7-aee6-46c9-b49c-651905317b46", "")
             {
+                _column0_in_zeile_mit_variable_uva_vorjahr_form_nameInfo = new RepoItemInfo(this, "Column0_in_Zeile_mit_Variable_UVA_VORJAHR_Form_Name", "cell[@accessiblename~'Column 0']", "", 30000, null, "5ec261f1-fce7-48eb-a9f8-54ae4a3f443c");
                 _coluvacdin_zeile_mit_variable_uva_vorjahr_form_nameInfo = new RepoItemInfo(this, "ColUvaCdin_Zeile_mit_Variable_UVA_VORJAHR_Form_Name", "cell[@accessiblename~'colUva_cd']", "", 30000, null, "d2839d24-2308-46fc-bf1e-47897f131c79");
                 _coluvadruckenrowmit_variable_uva_vorjahr_form_nameInfo = new RepoItemInfo(this, "ColUvaDruckenRowmit_Variable_UVA_VORJAHR_Form_Name", "cell[@accessiblename~'colUva_drucken']", "", 30000, null, "f8ccc04a-84a0-417c-8a7f-798e5a215cf6");
-                _column0_in_zeile_mit_variable_uva_vorjahr_form_nameInfo = new RepoItemInfo(this, "Column0_in_Zeile_mit_Variable_UVA_VORJAHR_Form_Name", "cell[@accessiblename~'Column 0']", "", 30000, null, "5ec261f1-fce7-48eb-a9f8-54ae4a3f443c");
-                _coluvacdin_zeile_mit_variable_uva_jahrneu_form_nameInfo = new RepoItemInfo(this, "ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name", "cell[@accessiblename~'colUva_cd']", "", 30000, null, "3ca05721-55d2-4df3-9add-083afc2d200e");
-                _coluvadruckenrowmit_variable_uva_jahrneu_form_nameInfo = new RepoItemInfo(this, "ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name", "cell[@accessiblename~'colUva_drucken']", "", 30000, null, "6c1a270d-76d5-44bf-b42f-103c538fcf6b");
-                _column0_in_zeile_mit_variable_uva_jahrneu_form_nameInfo = new RepoItemInfo(this, "Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name", "cell[@accessiblename~'Column 0']", "", 30000, null, "93058e13-eb43-4ab7-aa3d-868b03c43386");
             }
 
             /// <summary>
@@ -2685,6 +2808,30 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Column0_in_Zeile_mit_Variable_UVA_VORJAHR_Form_Name item.
+            /// </summary>
+            [RepositoryItem("5ec261f1-fce7-48eb-a9f8-54ae4a3f443c")]
+            public virtual Ranorex.Cell Column0_in_Zeile_mit_Variable_UVA_VORJAHR_Form_Name
+            {
+                get
+                {
+                    return _column0_in_zeile_mit_variable_uva_vorjahr_form_nameInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Column0_in_Zeile_mit_Variable_UVA_VORJAHR_Form_Name item info.
+            /// </summary>
+            [RepositoryItemInfo("5ec261f1-fce7-48eb-a9f8-54ae4a3f443c")]
+            public virtual RepoItemInfo Column0_in_Zeile_mit_Variable_UVA_VORJAHR_Form_NameInfo
+            {
+                get
+                {
+                    return _column0_in_zeile_mit_variable_uva_vorjahr_form_nameInfo;
                 }
             }
 
@@ -2735,102 +2882,6 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                     return _coluvadruckenrowmit_variable_uva_vorjahr_form_nameInfo;
                 }
             }
-
-            /// <summary>
-            /// The Column0_in_Zeile_mit_Variable_UVA_VORJAHR_Form_Name item.
-            /// </summary>
-            [RepositoryItem("5ec261f1-fce7-48eb-a9f8-54ae4a3f443c")]
-            public virtual Ranorex.Cell Column0_in_Zeile_mit_Variable_UVA_VORJAHR_Form_Name
-            {
-                get
-                {
-                    return _column0_in_zeile_mit_variable_uva_vorjahr_form_nameInfo.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Column0_in_Zeile_mit_Variable_UVA_VORJAHR_Form_Name item info.
-            /// </summary>
-            [RepositoryItemInfo("5ec261f1-fce7-48eb-a9f8-54ae4a3f443c")]
-            public virtual RepoItemInfo Column0_in_Zeile_mit_Variable_UVA_VORJAHR_Form_NameInfo
-            {
-                get
-                {
-                    return _column0_in_zeile_mit_variable_uva_vorjahr_form_nameInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name item.
-            /// </summary>
-            [RepositoryItem("3ca05721-55d2-4df3-9add-083afc2d200e")]
-            public virtual Ranorex.Cell ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name
-            {
-                get
-                {
-                    return _coluvacdin_zeile_mit_variable_uva_jahrneu_form_nameInfo.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name item info.
-            /// </summary>
-            [RepositoryItemInfo("3ca05721-55d2-4df3-9add-083afc2d200e")]
-            public virtual RepoItemInfo ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_NameInfo
-            {
-                get
-                {
-                    return _coluvacdin_zeile_mit_variable_uva_jahrneu_form_nameInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name item.
-            /// </summary>
-            [RepositoryItem("6c1a270d-76d5-44bf-b42f-103c538fcf6b")]
-            public virtual Ranorex.Cell ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name
-            {
-                get
-                {
-                    return _coluvadruckenrowmit_variable_uva_jahrneu_form_nameInfo.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name item info.
-            /// </summary>
-            [RepositoryItemInfo("6c1a270d-76d5-44bf-b42f-103c538fcf6b")]
-            public virtual RepoItemInfo ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_NameInfo
-            {
-                get
-                {
-                    return _coluvadruckenrowmit_variable_uva_jahrneu_form_nameInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name item.
-            /// </summary>
-            [RepositoryItem("93058e13-eb43-4ab7-aa3d-868b03c43386")]
-            public virtual Ranorex.Cell Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name
-            {
-                get
-                {
-                    return _column0_in_zeile_mit_variable_uva_jahrneu_form_nameInfo.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name item info.
-            /// </summary>
-            [RepositoryItemInfo("93058e13-eb43-4ab7-aa3d-868b03c43386")]
-            public virtual RepoItemInfo Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_NameInfo
-            {
-                get
-                {
-                    return _column0_in_zeile_mit_variable_uva_jahrneu_form_nameInfo;
-                }
-            }
         }
 
         /// <summary>
@@ -2842,9 +2893,6 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             RepoItemInfo _coluvacd_in_zeile_mit_variable_uva_vorvorjahr_form_nameInfo;
             RepoItemInfo _coluvadruckenrow_mit_variable_uva_vorvorjahr_form_nameInfo;
             RepoItemInfo _column0_in_zeile_mit_variable_uva_vorvorjahr_form_nameInfo;
-            RepoItemInfo _coluvacdin_zeile_mit_variable_uva_jahrneu_form_nameInfo;
-            RepoItemInfo _coluvadruckenrowmit_variable_uva_jahrneu_form_nameInfo;
-            RepoItemInfo _column0_in_zeile_mit_variable_uva_jahrneu_form_nameInfo;
 
             /// <summary>
             /// Creates a new Tabelle_mit_Variable_UVA_VORVORJAHR_Form_Name  folder.
@@ -2855,9 +2903,6 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 _coluvacd_in_zeile_mit_variable_uva_vorvorjahr_form_nameInfo = new RepoItemInfo(this, "ColUvaCd_in_Zeile_mit_Variable_UVA_VORVORJAHR_Form_Name", "cell[@accessiblename~'colUva_cd']", "", 30000, null, "faf1eaa9-0c70-4e25-acd0-0784166ef8e6");
                 _coluvadruckenrow_mit_variable_uva_vorvorjahr_form_nameInfo = new RepoItemInfo(this, "ColUvaDruckenRow_mit_Variable_UVA_VORVORJAHR_Form_Name", "cell[@accessiblename~'colUva_drucken']", "", 30000, null, "6094fbac-5bbd-4808-90e1-9be5a03b73a2");
                 _column0_in_zeile_mit_variable_uva_vorvorjahr_form_nameInfo = new RepoItemInfo(this, "Column0_in_Zeile_mit_Variable_UVA_VORVORJAHR_Form_Name", "cell[@accessiblename~'Column 0']", "", 30000, null, "cc8ea401-2c7f-47ca-bead-4af554ab8d63");
-                _coluvacdin_zeile_mit_variable_uva_jahrneu_form_nameInfo = new RepoItemInfo(this, "ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name", "cell[@accessiblename~'colUva_cd']", "", 30000, null, "a9f1c1b9-a8d6-4f91-9619-8e94fb682608");
-                _coluvadruckenrowmit_variable_uva_jahrneu_form_nameInfo = new RepoItemInfo(this, "ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name", "cell[@accessiblename~'colUva_drucken']", "", 30000, null, "4468f5de-fb3f-4d26-a066-8835298321be");
-                _column0_in_zeile_mit_variable_uva_jahrneu_form_nameInfo = new RepoItemInfo(this, "Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name", "cell[@accessiblename~'Column 0']", "", 30000, null, "eebb2d31-4741-4ca8-a29e-fc00cd30e1a1");
             }
 
             /// <summary>
@@ -2953,78 +2998,6 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 get
                 {
                     return _column0_in_zeile_mit_variable_uva_vorvorjahr_form_nameInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name item.
-            /// </summary>
-            [RepositoryItem("a9f1c1b9-a8d6-4f91-9619-8e94fb682608")]
-            public virtual Ranorex.Cell ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name
-            {
-                get
-                {
-                    return _coluvacdin_zeile_mit_variable_uva_jahrneu_form_nameInfo.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name item info.
-            /// </summary>
-            [RepositoryItemInfo("a9f1c1b9-a8d6-4f91-9619-8e94fb682608")]
-            public virtual RepoItemInfo ColUvaCdin_Zeile_mit_Variable_UVA_JAHRNEU_Form_NameInfo
-            {
-                get
-                {
-                    return _coluvacdin_zeile_mit_variable_uva_jahrneu_form_nameInfo;
-                }
-            }
-
-            /// <summary>
-            /// The ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name item.
-            /// </summary>
-            [RepositoryItem("4468f5de-fb3f-4d26-a066-8835298321be")]
-            public virtual Ranorex.Cell ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name
-            {
-                get
-                {
-                    return _coluvadruckenrowmit_variable_uva_jahrneu_form_nameInfo.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_Name item info.
-            /// </summary>
-            [RepositoryItemInfo("4468f5de-fb3f-4d26-a066-8835298321be")]
-            public virtual RepoItemInfo ColUvaDruckenRowmit_Variable_UVA_JAHRNEU_Form_NameInfo
-            {
-                get
-                {
-                    return _coluvadruckenrowmit_variable_uva_jahrneu_form_nameInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name item.
-            /// </summary>
-            [RepositoryItem("eebb2d31-4741-4ca8-a29e-fc00cd30e1a1")]
-            public virtual Ranorex.Cell Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name
-            {
-                get
-                {
-                    return _column0_in_zeile_mit_variable_uva_jahrneu_form_nameInfo.CreateAdapter<Ranorex.Cell>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_Name item info.
-            /// </summary>
-            [RepositoryItemInfo("eebb2d31-4741-4ca8-a29e-fc00cd30e1a1")]
-            public virtual RepoItemInfo Column0_in_Zeile_mit_Variable_UVA_JAHRNEU_Form_NameInfo
-            {
-                get
-                {
-                    return _column0_in_zeile_mit_variable_uva_jahrneu_form_nameInfo;
                 }
             }
         }
