@@ -20,26 +20,26 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Sichern_XML_ZM_VORJAHR_12 recording.
+    ///The Sichern_XML_JUVA_VORJAHR_ausl_U recording.
     /// </summary>
-    [TestModule("a22c481d-c23f-4eae-ba6b-a15339f71d8d", ModuleType.Recording, 1)]
-    public partial class Sichern_XML_ZM_VORJAHR_12 : ITestModule
+    [TestModule("8d7fc0ec-86d6-4637-b3af-15cde2475687", ModuleType.Recording, 1)]
+    public partial class Sichern_XML_JUVA_VORJAHR_ausl_U : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Sichern_XML_ZM_VORJAHR_12 instance = new Sichern_XML_ZM_VORJAHR_12();
+        static Sichern_XML_JUVA_VORJAHR_ausl_U instance = new Sichern_XML_JUVA_VORJAHR_ausl_U();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Sichern_XML_ZM_VORJAHR_12()
+        public Sichern_XML_JUVA_VORJAHR_ausl_U()
         {
             XML_Inhalt_aktuell = "";
         }
@@ -47,7 +47,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Sichern_XML_ZM_VORJAHR_12 Instance
+        public static Sichern_XML_JUVA_VORJAHR_ausl_U Instance
         {
             get { return instance; }
         }
@@ -59,7 +59,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad
         /// <summary>
         /// Gets or sets the value of variable XML_Inhalt_aktuell.
         /// </summary>
-        [TestVariable("df923dc0-5ede-4f36-a545-2ea283835757")]
+        [TestVariable("389d57fe-2a21-4735-8e08-f6a172d4e636")]
         public string XML_Inhalt_aktuell
         {
             get { return _XML_Inhalt_aktuell; }
@@ -92,10 +92,10 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'XMLEditor_UVA_ZM.Text15' and assigning its value to variable 'XML_Inhalt_aktuell'.", repo.XMLEditor_UVA_ZM.Text15Info, new RecordItemIndex(0));
-            XML_Inhalt_aktuell = repo.XMLEditor_UVA_ZM.Text15.Element.GetAttributeValueText("Text");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'XMLEditor_UVA_ZM11.Text15' and assigning its value to variable 'XML_Inhalt_aktuell'.", repo.XMLEditor_UVA_ZM11.Text15Info, new RecordItemIndex(0));
+            XML_Inhalt_aktuell = repo.XMLEditor_UVA_ZM11.Text15.Element.GetAttributeValueText("Text");
             
-            Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.WriteToFile(XML_Inhalt_aktuell, "c:\\temp\\ZMDO_VORJAHR_12", "xml");
+            Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.WriteToFile(XML_Inhalt_aktuell, "c:\\temp\\xml_UST2A_JUVA_2023_ausl_U", "xml");
             
         }
 

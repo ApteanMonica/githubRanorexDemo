@@ -115,7 +115,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
 
 #region Variables
 
-        string _UVA_VORVORJAHR_Form_Name = "";
+        string _UVA_VORVORJAHR_Form_Name = "UVA-Deutschland 2022 Elster";
 
         /// <summary>
         /// Gets or sets the value of variable UVA_VORVORJAHR_Form_Name.
@@ -2025,7 +2025,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             RepoItemInfo _elstervoruvatestpdfadobeacrobatreInfo;
             RepoItemInfo _anzeigeInfo;
             RepoItemInfo _pagedownInfo;
-            RepoItemInfo _avlavviewInfo;
+            AVLAVViewInfoClass _avlavviewInfo;
 
             /// <summary>
             /// Creates a new ElstervorUVATESTPDFAdobeAcrobatRe  folder.
@@ -2036,7 +2036,42 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
                 _elstervoruvatestpdfadobeacrobatreInfo = new RepoItemInfo(this, "ElstervorUVATESTPDFAdobeAcrobatRe", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "8018ae93-4875-4798-a144-628c547664ad");
                 _anzeigeInfo = new RepoItemInfo(this, "Anzeige", "?/?/menuitem[@accessiblename='Anzeige']", "", 30000, null, "2632bfe3-86e3-47ea-b5b0-8ed734dc22ea");
                 _pagedownInfo = new RepoItemInfo(this, "PageDown", "?/?/?/?/?/?/?/element[@class='AVL_AVView']/scrollbar[2]/button[@text='PageDown']", "", 30000, null, "39e90ad0-72d1-4a94-a1b7-330256ffbed1");
-                _avlavviewInfo = new RepoItemInfo(this, "AVLAVView", "element[@instance='1']/element[@class='AVL_AVView']/element[@instance='0']/element[@instance='1']/element[@instance='0']/element[@instance='1']/element[@class='AVL_AVView']/element[@class='AVL_AVView']/element[@instance='0']", "", 30000, null, "3fb2db90-0f85-41cf-8246-4405cebdf243");
+                _avlavviewInfo = new AVLAVViewInfoClass(this);
+            }
+
+            /// <summary>
+            /// The AVLAVViewInfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("3fb2db90-0f85-41cf-8246-4405cebdf243")]
+            public class AVLAVViewInfoClass : RepoItemInfo
+            {
+                /// <summary>
+                /// AVLAVViewInfoClass class constructor.
+                /// </summary>
+                public AVLAVViewInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "AVLAVView", "element[@instance='1']/element[@class='AVL_AVView']/element[@instance='0']/element[@instance='1']/element[@instance='0']/element[@instance='1']/element[@class='AVL_AVView']/element[@class='AVL_AVView']/element[@instance='0']", 30000, null, "3fb2db90-0f85-41cf-8246-4405cebdf243")
+                { }
+
+                /// <summary>
+                /// Gets the ERiC_Print_39_2_4_ZMDO_39_2_4 item image.
+                /// </summary>
+                /// <returns>The ERiC_Print_39_2_4_ZMDO_39_2_4 image.</returns>
+                [RepositoryImage("7e58bf4c-e54b-49c2-ba34-825fcc69be63")]
+                public CompressedImage GetERiC_Print_39_2_4_ZMDO_39_2_4()
+                {
+                    return GetImage("7e58bf4c-e54b-49c2-ba34-825fcc69be63");
+                }
+
+                /// <summary>
+                /// Gets the ERiC_Print_39_2_4_ZMDO_39_2_4 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("7e58bf4c-e54b-49c2-ba34-825fcc69be63")]
+                public CompressedImage GetERiC_Print_39_2_4_ZMDO_39_2_4(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("7e58bf4c-e54b-49c2-ba34-825fcc69be63", cropRect);
+                }
             }
 
             /// <summary>
@@ -2151,7 +2186,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM
             /// The AVLAVView item info.
             /// </summary>
             [RepositoryItemInfo("3fb2db90-0f85-41cf-8246-4405cebdf243")]
-            public virtual RepoItemInfo AVLAVViewInfo
+            public virtual AVLAVViewInfoClass AVLAVViewInfo
             {
                 get
                 {

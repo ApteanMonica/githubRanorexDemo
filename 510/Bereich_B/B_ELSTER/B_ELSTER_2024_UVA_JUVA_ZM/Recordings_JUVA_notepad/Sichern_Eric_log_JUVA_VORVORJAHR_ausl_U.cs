@@ -20,76 +20,50 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad
+namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Oeffnen_notepad_XML_Datei recording.
+    ///The Sichern_Eric_log_JUVA_VORVORJAHR_ausl_U recording.
     /// </summary>
-    [TestModule("3f2251bc-8019-49e8-bb23-83322d6f5f6f", ModuleType.Recording, 1)]
-    public partial class Oeffnen_notepad_XML_Datei : ITestModule
+    [TestModule("1602ef0b-0eef-4c6c-a312-76dcb207437c", ModuleType.Recording, 1)]
+    public partial class Sichern_Eric_log_JUVA_VORVORJAHR_ausl_U : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Oeffnen_notepad_XML_Datei instance = new Oeffnen_notepad_XML_Datei();
+        static Sichern_Eric_log_JUVA_VORVORJAHR_ausl_U instance = new Sichern_Eric_log_JUVA_VORVORJAHR_ausl_U();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Oeffnen_notepad_XML_Datei()
+        public Sichern_Eric_log_JUVA_VORVORJAHR_ausl_U()
         {
-            XML_ZM_Pfad_Datei = "C:\\temp\\ZMDO.XML";
-            Programm_2 = "notepad.exe";
-            XML_ZM_Datei = "ZMDO.XML";
+            Eric_log_Inhalt_aktuell = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Oeffnen_notepad_XML_Datei Instance
+        public static Sichern_Eric_log_JUVA_VORVORJAHR_ausl_U Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _XML_ZM_Pfad_Datei;
+        string _Eric_log_Inhalt_aktuell;
 
         /// <summary>
-        /// Gets or sets the value of variable XML_ZM_Pfad_Datei.
+        /// Gets or sets the value of variable Eric_log_Inhalt_aktuell.
         /// </summary>
-        [TestVariable("df096376-4aa3-413a-8fff-e4fda1159d58")]
-        public string XML_ZM_Pfad_Datei
+        [TestVariable("9a54d781-3b6e-42e7-a0fa-c713472d6a56")]
+        public string Eric_log_Inhalt_aktuell
         {
-            get { return _XML_ZM_Pfad_Datei; }
-            set { _XML_ZM_Pfad_Datei = value; }
-        }
-
-        string _Programm_2;
-
-        /// <summary>
-        /// Gets or sets the value of variable Programm_2.
-        /// </summary>
-        [TestVariable("991056f3-e775-476f-8477-857a2e94cc7a")]
-        public string Programm_2
-        {
-            get { return _Programm_2; }
-            set { _Programm_2 = value; }
-        }
-
-        string _XML_ZM_Datei;
-
-        /// <summary>
-        /// Gets or sets the value of variable XML_ZM_Datei.
-        /// </summary>
-        [TestVariable("13ec03bb-43f9-466b-a9f9-cbd7bcd29b61")]
-        public string XML_ZM_Datei
-        {
-            get { return _XML_ZM_Datei; }
-            set { _XML_ZM_Datei = value; }
+            get { return _Eric_log_Inhalt_aktuell; }
+            set { _Eric_log_Inhalt_aktuell = value; }
         }
 
 #endregion
@@ -118,14 +92,10 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application with file name from variable $XML_ZM_Pfad_Datei with arguments from variable $Programm_2 in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication(XML_ZM_Pfad_Datei, Programm_2, "", false);
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'EricLogEditor.Text15' and assigning its value to variable 'Eric_log_Inhalt_aktuell'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
+            Eric_log_Inhalt_aktuell = repo.EricLogEditor.Text15.Element.GetAttributeValueText("Text");
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 2m to exist. Associated repository item: 'XMLEditor_UVA_ZM.XMLEditor'", repo.XMLEditor_UVA_ZM.XMLEditorInfo, new ActionTimeout(120000), new RecordItemIndex(1));
-            repo.XMLEditor_UVA_ZM.XMLEditorInfo.WaitForExists(120000);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$XML_ZM_Datei) on item 'XMLEditor_UVA_ZM.XMLEditor'.", repo.XMLEditor_UVA_ZM.XMLEditorInfo, new RecordItemIndex(2));
-            Validate.AttributeContains(repo.XMLEditor_UVA_ZM.XMLEditorInfo, "Text", XML_ZM_Datei);
+            Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.WriteToFile(Eric_log_Inhalt_aktuell, "c:\\temp\\eric_log_JUVA_2022_ausl_U", "log");
             
         }
 

@@ -41,7 +41,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
         /// </summary>
         public Eric_Version_JUVA_VORVORJAHR_pruefen()
         {
-            Eric_Version_JUVA_VORVORJAHR = "";
+            Eric_JUVA_VORVORJAHR_39_2 = "";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 
 #region Variables
 
-        string _Eric_Version_JUVA_VORVORJAHR;
+        string _Eric_JUVA_VORVORJAHR_39_2;
 
         /// <summary>
-        /// Gets or sets the value of variable Eric_Version_JUVA_VORVORJAHR.
+        /// Gets or sets the value of variable Eric_JUVA_VORVORJAHR_39_2.
         /// </summary>
         [TestVariable("6f1588b5-332b-4eec-8777-1fb6b05937e6")]
-        public string Eric_Version_JUVA_VORVORJAHR
+        public string Eric_JUVA_VORVORJAHR_39_2
         {
-            get { return _Eric_Version_JUVA_VORVORJAHR; }
-            set { _Eric_Version_JUVA_VORVORJAHR = value; }
+            get { return _Eric_JUVA_VORVORJAHR_39_2; }
+            set { _Eric_JUVA_VORVORJAHR_39_2 = value; }
         }
 
 #endregion
@@ -92,8 +92,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Eric_Version_JUVA_VORVORJAHR) on item 'EricLogEditor.Text15'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
-            Validate.AttributeContains(repo.EricLogEditor.Text15Info, "Text", Eric_Version_JUVA_VORVORJAHR);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Eric_JUVA_VORVORJAHR_39_2) on item 'EricLogEditor.Text15'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.EricLogEditor.Text15Info, "Text", Eric_JUVA_VORVORJAHR_39_2);
             
         }
 

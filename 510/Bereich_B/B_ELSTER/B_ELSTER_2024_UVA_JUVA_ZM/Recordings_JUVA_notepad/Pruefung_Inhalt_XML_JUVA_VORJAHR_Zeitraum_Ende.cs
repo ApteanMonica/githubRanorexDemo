@@ -24,22 +24,22 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Pruefung_Inhalt_XML_Zeitraum_Ende recording.
+    ///The Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum_Ende recording.
     /// </summary>
     [TestModule("dddb6907-4caf-4540-845d-4fe4e4c3d7fe", ModuleType.Recording, 1)]
-    public partial class Pruefung_Inhalt_XML_Zeitraum_Ende : ITestModule
+    public partial class Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum_Ende : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repository.
         /// </summary>
         public static global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository repo = global::B_ELSTER_2024_UVA_JUVA_ZM.B_ELSTER_2024_UVA_JUVA_ZMRepository.Instance;
 
-        static Pruefung_Inhalt_XML_Zeitraum_Ende instance = new Pruefung_Inhalt_XML_Zeitraum_Ende();
+        static Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum_Ende instance = new Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum_Ende();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Pruefung_Inhalt_XML_Zeitraum_Ende()
+        public Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum_Ende()
         {
             VORJAHR = "";
             XML_JUVA_VORJAHR_Vorsatz = "";
@@ -49,7 +49,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Pruefung_Inhalt_XML_Zeitraum_Ende Instance
+        public static Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum_Ende Instance
         {
             get { return instance; }
         }

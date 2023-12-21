@@ -41,7 +41,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_VORVORJAHR
         /// </summary>
         public Formular_VORVORJAHR_auswaehlen()
         {
-            UVA_VORVORJAHR_Form_Name = "";
+            UVA_VORVORJAHR_Form_Name = "UVA-Deutschland 2022 Elster";
         }
 
         /// <summary>

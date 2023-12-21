@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="8d7fc0ec-86d6-4637-b3af-15cde2475687"
+id="1602ef0b-0eef-4c6c-a312-76dcb207437c"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,13 +19,13 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Sichern_XML_JUVA_ausl_U_VORJAHR"
+	classname="Sichern_Eric_log_JUVA_VORVORJAHR_ausl_U"
 	namespace="B_ELSTER_2024_UVA_JUVA_ZM.Recordings_JUVA_notepad">
 	</codegen>
 	<variables>
 		<var
-		id="389d57fe-2a21-4735-8e08-f6a172d4e636"
-		name="XML_Inhalt_aktuell">
+		id="9a54d781-3b6e-42e7-a0fa-c713472d6a56"
+		name="Eric_log_Inhalt_aktuell">
 		</var>
 	</variables>
 	<recorditems>
@@ -34,16 +34,16 @@ mode="Global">
 		enabled="True"
 		optional="False"
 		searchpropertyid="d9afe67e-7d58-44df-a23f-203c288230b0"
-		varname="XML_Inhalt_aktuell">
+		varname="Eric_log_Inhalt_aktuell">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="bbaadeb6-b32d-46ac-aca4-5dfb029c3431"
+			id="f267a9c7-8840-458d-b1f7-d6a95db72b09"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@title~'.XML - Editor']/text[@controlid='15']
+					/form[@title='eric.log - Editor']/text[@controlid='15']
 				</path>
 				<robustPath>
 				</robustPath>
@@ -61,11 +61,11 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<arguments
-			id="9b5bc4d6-558d-42b1-bc61-b53ec2b533f4">
+			id="ab1309bf-62bc-49e5-ac09-b99c1d69b08f">
 				<argument
 				argname="text"
-				id="5ffabbf8-5162-4d5e-af20-1c97d6b8702c"
-				variable="XML_Inhalt_aktuell">
+				id="fff6b17e-943e-414d-b0eb-a92e2bd99411"
+				variable="Eric_log_Inhalt_aktuell">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -74,22 +74,22 @@ mode="Global">
 				</argument>
 				<argument
 				argname="filenamePrefix"
-				id="0a8d5092-c590-4298-9a79-2b82bb618926">
+				id="71659868-2fad-44d3-b4a7-fa3b10f4d3fd">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						c:\temp\UST2A_ausl_U_VORJAHR
+						c:\temp\eric_log_JUVA_2022_ausl_U
 					</argvalue>
 				</argument>
 				<argument
 				argname="fileExtension"
-				id="c4e55a43-ef64-4786-aed2-d68ef97bdac7">
+				id="9ac1af7e-c4dc-4e54-98f9-e16024f152f2">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						xml
+						log
 					</argvalue>
 				</argument>
 			</arguments>
@@ -110,7 +110,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Sichern_XML_JUVA_ausl_U_VORJAHR.UserCode.cs
+		Sichern_Eric_log_JUVA_VORVORJAHR_ausl_U.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
