@@ -41,7 +41,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad
         /// </summary>
         public Eric_Version_ZM_JAHRNEU_01_pruefen()
         {
-            Eric_Version_ZM_JAHRNEU_01 = "";
+            Eric_ZM_JAHRNEU_01_39_2 = "";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad
 
 #region Variables
 
-        string _Eric_Version_ZM_JAHRNEU_01;
+        string _Eric_ZM_JAHRNEU_01_39_2;
 
         /// <summary>
-        /// Gets or sets the value of variable Eric_Version_ZM_JAHRNEU_01.
+        /// Gets or sets the value of variable Eric_ZM_JAHRNEU_01_39_2.
         /// </summary>
         [TestVariable("0018eb0b-531f-4dbe-98f3-f02e5d459375")]
-        public string Eric_Version_ZM_JAHRNEU_01
+        public string Eric_ZM_JAHRNEU_01_39_2
         {
-            get { return _Eric_Version_ZM_JAHRNEU_01; }
-            set { _Eric_Version_ZM_JAHRNEU_01 = value; }
+            get { return _Eric_ZM_JAHRNEU_01_39_2; }
+            set { _Eric_ZM_JAHRNEU_01_39_2 = value; }
         }
 
 #endregion
@@ -92,8 +92,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Eric_Version_ZM_JAHRNEU_01) on item 'EricLogEditor.Text15'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
-            Validate.AttributeContains(repo.EricLogEditor.Text15Info, "Text", Eric_Version_ZM_JAHRNEU_01);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Eric_ZM_JAHRNEU_01_39_2) on item 'EricLogEditor.Text15'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.EricLogEditor.Text15Info, "Text", Eric_ZM_JAHRNEU_01_39_2);
             
         }
 

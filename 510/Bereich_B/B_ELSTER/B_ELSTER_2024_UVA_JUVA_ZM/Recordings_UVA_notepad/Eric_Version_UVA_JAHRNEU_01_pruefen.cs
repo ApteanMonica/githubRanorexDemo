@@ -41,7 +41,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad
         /// </summary>
         public Eric_Version_UVA_JAHRNEU_01_pruefen()
         {
-            Eric_Version_UVA_JAHRNEU_01 = "";
+            Eric_UVA_JAHRNEU_01_39_2 = "Datei: checkUStVA_2024.dll,  Fileversion: 2023, 39, 2, 2, Produktversion: 39, 2, 2, 0";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad
 
 #region Variables
 
-        string _Eric_Version_UVA_JAHRNEU_01;
+        string _Eric_UVA_JAHRNEU_01_39_2;
 
         /// <summary>
-        /// Gets or sets the value of variable Eric_Version_UVA_JAHRNEU_01.
+        /// Gets or sets the value of variable Eric_UVA_JAHRNEU_01_39_2.
         /// </summary>
         [TestVariable("af486e2c-a6cb-4f58-a2ab-ebea31728676")]
-        public string Eric_Version_UVA_JAHRNEU_01
+        public string Eric_UVA_JAHRNEU_01_39_2
         {
-            get { return _Eric_Version_UVA_JAHRNEU_01; }
-            set { _Eric_Version_UVA_JAHRNEU_01 = value; }
+            get { return _Eric_UVA_JAHRNEU_01_39_2; }
+            set { _Eric_UVA_JAHRNEU_01_39_2 = value; }
         }
 
 #endregion
@@ -92,8 +92,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.Recordings_UVA_notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Eric_Version_UVA_JAHRNEU_01) on item 'EricLogEditor.Text15'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
-            Validate.AttributeContains(repo.EricLogEditor.Text15Info, "Text", Eric_Version_UVA_JAHRNEU_01);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Eric_UVA_JAHRNEU_01_39_2) on item 'EricLogEditor.Text15'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.EricLogEditor.Text15Info, "Text", Eric_UVA_JAHRNEU_01_39_2);
             
         }
 

@@ -41,7 +41,7 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad
         /// </summary>
         public Eric_Version_ZM_VORJAHR_12_pruefen()
         {
-            Eric_Version_ZM_VORJAHR_12 = "Datei: checkZMDO.dll,  Fileversion: 2023, 39, 2, 4, Produktversion: 39, 2, 4, 0";
+            Eric_ZM_VORJAHR_12_39_2 = "Datei: checkZMDO.dll,  Fileversion: 2023, 39, 2, 4, Produktversion: 39, 2, 4, 0";
         }
 
         /// <summary>
@@ -54,16 +54,16 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad
 
 #region Variables
 
-        string _Eric_Version_ZM_VORJAHR_12;
+        string _Eric_ZM_VORJAHR_12_39_2;
 
         /// <summary>
-        /// Gets or sets the value of variable Eric_Version_ZM_VORJAHR_12.
+        /// Gets or sets the value of variable Eric_ZM_VORJAHR_12_39_2.
         /// </summary>
         [TestVariable("ae2ec29f-047c-4d05-8461-4c88c61d70f5")]
-        public string Eric_Version_ZM_VORJAHR_12
+        public string Eric_ZM_VORJAHR_12_39_2
         {
-            get { return _Eric_Version_ZM_VORJAHR_12; }
-            set { _Eric_Version_ZM_VORJAHR_12 = value; }
+            get { return _Eric_ZM_VORJAHR_12_39_2; }
+            set { _Eric_ZM_VORJAHR_12_39_2 = value; }
         }
 
 #endregion
@@ -92,8 +92,8 @@ namespace B_ELSTER_2024_UVA_JUVA_ZM.recordings_ZM_notepad
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Eric_Version_ZM_VORJAHR_12) on item 'EricLogEditor.Text15'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
-            Validate.AttributeContains(repo.EricLogEditor.Text15Info, "Text", Eric_Version_ZM_VORJAHR_12);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>$Eric_ZM_VORJAHR_12_39_2) on item 'EricLogEditor.Text15'.", repo.EricLogEditor.Text15Info, new RecordItemIndex(0));
+            Validate.AttributeContains(repo.EricLogEditor.Text15Info, "Text", Eric_ZM_VORJAHR_12_39_2);
             
         }
 

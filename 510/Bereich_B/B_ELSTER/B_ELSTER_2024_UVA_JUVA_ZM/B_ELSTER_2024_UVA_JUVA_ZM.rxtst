@@ -23,7 +23,7 @@
 			type="Recording">
 				<databinding>
 					<var
-					dataname="XML_JUVA_VERSION_VORJAHR"
+					dataname="XML_JUVA_VERSION_VORVORJAHR"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="4d1a684f-98a9-40fc-8670-bdd310f1afd2"
 					variablename="XML_JUVA_VERSION_VORJAHR">
@@ -35,8 +35,14 @@
 			name="Jahreserklärung_VORJAHR_bis_Plausibilitaetspruefung">
 			</smartfoldernode>
 			<testmodule
+			id="016cd2b6-0149-41ec-85e1-240c14046b2f"
+			name="CloseAUT_B_UVA"
+			ref="4a6e9877-466b-4f4b-a082-35829a25c757"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="01b473d4-2c89-4f21-a3f4-3c392edd9ef5"
-			name="Formularzuordnungen_kopieren_D20_JAHRNEU"
+			name="Formularzuordnungen_kopieren_D20_auf_Form_JAHRNEU"
 			ref="0b7e4a93-d4a3-4205-b523-9e30f48dd938"
 			type="Recording">
 				<databinding>
@@ -61,36 +67,76 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="0231c608-5755-4c7d-8fb7-9962f24b9e92"
-			name="Elster_aufrufen_DSGVO_bestaetigen"
-			ref="1f001bc2-5831-43f7-b270-722ca608aa02"
+			id="02eb7c80-7907-4b61-b5b9-0353532acfa0"
+			name="Sichern_Eric_log_JUVA_VORJAHR"
+			ref="151bcdfd-09e5-42ac-ad32-1a2bfbacbf55"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Eric_log_Inhalt_aktuell"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="cefb7a2c-8737-46ff-a29a-72b5f54f5900"
+					variablename="Eric_log_Inhalt_aktuell">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="02ed9410-25f2-4ebb-8d74-b55eddfe8d0e"
+			name="Sichern_Eric_log_JUVA_VORJAHR_ausl_U"
+			ref="3d24ee38-c587-46b1-9182-79d30db47d2a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Eric_log_Inhalt_aktuell"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="0a029ad9-09cc-4f35-9e96-e630ebd4673f"
+					variablename="Eric_log_Inhalt_aktuell">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="031649cc-5333-4c2f-91b1-56f947711f17"
+			name="Elster_DSGVO_bestaetigen"
+			ref="79f8f0dd-8fae-4c05-a415-be91bae4fca5"
 			type="Recording">
 				<databinding>
 					<var
 					dataname="Firma"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="eb1f3419-4abe-4a42-9961-da972acb6bfb"
+					variableid="b6a57e77-2e49-482e-9136-674b64e488c3"
 					variablename="Firma">
 					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
 			id="040d604d-2d53-45ae-8f6a-0f367d69104b"
-			name="Pruefung_Inhalt_XML_UVA_Datei"
+			name="Pruefung_Inhalt_XML_UVA_Datei_JAHRNEU_01"
 			ref="75c26922-4c88-448a-a7a4-4431d1edb018"
 			type="Recording">
 				<databinding>
-					<var
-					dataname="XML_UVA_JAHRNEU_01_Teil_5"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="28f3fb56-9c7d-4275-9d66-4c2f6791653b"
-					variablename="XML_UVA_JAHRNEU_01_Teil_5">
-					</var>
 					<var
 					dataname="XML_UVA_JAHRNEU_01_Teil_4"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="2ec2c4fd-92e1-4366-bd20-41d963e7b15e"
 					variablename="XML_UVA_JAHRNEU_01_Teil_4">
+					</var>
+					<var
+					dataname="XML_UVA_JAHRNEU_01_Teil_5_Monat_01"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="28f3fb56-9c7d-4275-9d66-4c2f6791653b"
+					variablename="XML_UVA_JAHRNEU_01_Teil_5_Monat_01">
+					</var>
+					<var
+					dataname="XML_UVA_VERSION_JAHRNEU"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="c80c0ae6-ca76-433d-8d76-e456929dfee9"
+					variablename="XML_UVA_VERSION_JAHRNEU">
+					</var>
+					<var
+					dataname="JAHRNEU"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="6bab4199-4553-4821-81c4-e305079649ad"
+					variablename="JAHRNEU">
 					</var>
 					<var
 					dataname="XML_UVA_JAHRNEU_01_Teil_3"
@@ -110,23 +156,11 @@
 					variableid="ec60737a-6339-4563-a9e4-7aadfa5e61f1"
 					variablename="XML_UVA_JAHRNEU_01_Teil_1">
 					</var>
-					<var
-					dataname="JAHRNEU"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="6bab4199-4553-4821-81c4-e305079649ad"
-					variablename="JAHRNEU">
-					</var>
-					<var
-					dataname="XML_UVA_VERSION_JAHRNEU"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="c80c0ae6-ca76-433d-8d76-e456929dfee9"
-					variablename="XML_UVA_VERSION_JAHRNEU">
-					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
 			id="04652187-9fb2-4570-841b-72911dcd0e82"
-			name="CloseAUT_UVA"
+			name="CloseAUT_B_UVA"
 			ref="4a6e9877-466b-4f4b-a082-35829a25c757"
 			type="Recording">
 			</testmodule>
@@ -136,9 +170,13 @@
 			ref="3ecd778c-a951-4757-8d33-4928768d604f"
 			type="Recording">
 			</testmodule>
+			<setup
+			id="076fff22-41dd-4117-b554-6e7e2a12ae3b"
+			name="setup">
+			</setup>
 			<testmodule
 			id="07fa4c19-e894-4b59-87b5-adf06b54d8ff"
-			name="UVA_Drucken_aufrufen"
+			name="Druck_UVA_Werte_aufrufen"
 			ref="10fbe8a3-a701-427b-b3d6-f2ceacc8f16b"
 			type="Recording">
 				<databinding>
@@ -209,11 +247,11 @@
 					</param>
 					<param
 					name="UVA_JAHRNEU_Form_Code"
-					value="D23">
+					value="D24">
 					</param>
 					<param
 					name="UVA_JAHRNEU_Form_Name"
-					value="UVA-Deutschland 2023 Elster">
+					value="UVA-Deutschland 2024 Elster">
 					</param>
 					<param
 					name="UVA_VORJAHR_Form_Code"
@@ -236,24 +274,60 @@
 					value="">
 					</param>
 					<param
-					name="Eric_Version_ZM_VORJAHR_12"
+					name="Eric_ZM_VORJAHR_12_39_2"
 					value="Datei: checkZMDO.dll,  Fileversion: 2023, 39, 2, 4, Produktversion: 39, 2, 4, 0">
 					</param>
 					<param
-					name="Eric_Version_ZM_JAHRNEU_01"
+					name="Eric_ZM_JAHRNEU_01_39_2"
 					value="">
 					</param>
 					<param
-					name="Eric_Version_UVA_JAHRNEU_01"
-					value="Datei: checkUStVA_2024.dll,  Fileversion: 2023, 39, 2, 2, Produktversion: 39, 2, 2, 0">
+					name="Eric_JUVA_VORVORJAHR_39_2"
+					value="checkUStVA_2022.dll,  Fileversion: 2023, 39, 2, 2, Produktversion: 39, 2, 2, 0">
 					</param>
 					<param
-					name="Eric_Version_JUVA_VORJAHR"
-					value="Datei: checkUStVA_2023.dll,  Fileversion: 2023, 39, 2, 2, Produktversion: 39, 2, 2, 0">
+					name="Eric_JUVA_VORJAHR_39_2"
+					value="checkUStVA_2023.dll,  Fileversion: 2023, 39, 2, 2, Produktversion: 39, 2, 2, 0">
 					</param>
 					<param
-					name="Eric_Version_JUVA_VORVORJAHR"
-					value="Datei: checkUStVA_2022.dll,  Fileversion: 2023, 39, 2, 2, Produktversion: 39, 2, 2, 0">
+					name="Eric_UVA_VORJAHR_12_39_2"
+					value="checkUStVA_2023.dll,  Fileversion: 2023, 39, 2, 2, Produktversion: 39, 2, 2, 0">
+					</param>
+					<param
+					name="Eric_UVA_JAHRNEU_01_39_2"
+					value="checkUStVA_2024.dll,  Fileversion: 2023, 39, 2, 2, Produktversion: 39, 2, 2, 0">
+					</param>
+					<param
+					name="XML_UVA_VERSION_JAHRNEU"
+					value="&lt;Anmeldungssteuern xmlns=&quot;http://finkonsens.de/elster/elsteranmeldung/ustva/v2024&quot; version=&quot;2024&quot;>">
+					</param>
+					<param
+					name="XML_UVA_VERSION_VORJAHR"
+					value="&lt;Anmeldungssteuern xmlns=&quot;http://finkonsens.de/elster/elsteranmeldung/ustva/v2023&quot; version=&quot;2023&quot;>">
+					</param>
+					<param
+					name="XML_JUVA_VERSION_VORVORJAHR"
+					value="&lt;E50 xmlns = &quot;http://finkonsens.de/elster/elstererklaerung/ust/e50/v2022&quot; version = &quot;2022&quot;>">
+					</param>
+					<param
+					name="XML_JUVA_VERSION_VORJAHR"
+					value="&lt;E50 xmlns = &quot;http://finkonsens.de/elster/elstererklaerung/ust/e50/v2023&quot; version = &quot;2023&quot;>">
+					</param>
+					<param
+					name="XML_ZM_Version_VORJAHR"
+					value="&lt;zm version=&quot;000005&quot;>">
+					</param>
+					<param
+					name="XML_ZM_Version_JAHRNEU"
+					value="&lt;zm version=&quot;000005&quot;>">
+					</param>
+					<param
+					name="XML_UVA_VORJAHR_12_Teil_5_Monat_12"
+					value="&lt;/Jahr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Zeitraum>12&lt;/Zeitraum>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Steuernummer>9181081508155&lt;/Steuernummer>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz09>00704&lt;/Kz09>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz41>1000&lt;/Kz41>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz61>142.00&lt;/Kz61>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz66>260.00&lt;/Kz66>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz81>1000&lt;/Kz81>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz83>0.00&lt;/Kz83>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz86>1000&lt;/Kz86>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz89>600&lt;/Kz89>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz93>400&lt;/Kz93>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/Umsatzsteuervoranmeldung>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/Steuerfall>&#13;&#10;&#9;&#9;&#9;&#9;&lt;/Anmeldungssteuern>&#13;&#10;&#9;&#9;&#9;&lt;/Nutzdaten>&#13;&#10;&#9;&#9;&lt;/Nutzdatenblock>&#13;&#10;&#9;&lt;/DatenTeil>&#13;&#10;&lt;/Elster>">
+					</param>
+					<param
+					name="XML_UVA_JAHRNEU_01_Teil_5_Monat_01"
+					value="&lt;/Jahr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Zeitraum>01&lt;/Zeitraum>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Steuernummer>9181081508155&lt;/Steuernummer>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz09>00704&lt;/Kz09>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz41>1000&lt;/Kz41>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz61>142.00&lt;/Kz61>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz66>260.00&lt;/Kz66>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz81>1000&lt;/Kz81>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz83>0.00&lt;/Kz83>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz86>1000&lt;/Kz86>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz89>600&lt;/Kz89>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz93>400&lt;/Kz93>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/Umsatzsteuervoranmeldung>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/Steuerfall>&#13;&#10;&#9;&#9;&#9;&#9;&lt;/Anmeldungssteuern>&#13;&#10;&#9;&#9;&#9;&lt;/Nutzdaten>&#13;&#10;&#9;&#9;&lt;/Nutzdatenblock>&#13;&#10;&#9;&lt;/DatenTeil>&#13;&#10;&lt;/Elster>">
 					</param>
 					<param
 					name="ENDE***Jahr und Formular ändern****"
@@ -308,10 +382,6 @@
 					value="C:\temp\ZMDO.XML">
 					</param>
 					<param
-					name="XML_ZM_Version_JAHRNEU"
-					value="&lt;zm version=&quot;000005&quot;>">
-					</param>
-					<param
 					name="XML_ZM_JAHRNEU_01_Teil_1"
 					value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#13;&#10;&lt;Elster xmlns=&quot;http://www.elster.de/elsterxml/schema/v11&quot;>&#13;&#10;&#9;&lt;TransferHeader version=&quot;11&quot;>&#13;&#10;&#9;&#9;&lt;Verfahren>ElsterExtern&lt;/Verfahren>&#13;&#10;&#9;&#9;&lt;DatenArt>ZMDO&lt;/DatenArt>&#13;&#10;&#9;&#9;&lt;Vorgang>send-Auth&lt;/Vorgang>&#13;&#10;&#9;&#9;&lt;HerstellerID>74931&lt;/HerstellerID>&#13;&#10;&#9;&#9;&lt;DatenLieferant>DE_ELSTER;Bahnhofstrasse 34;20355;Hamburg&lt;/DatenLieferant>&#13;&#10;&#9;&#9;&lt;Datei>&#13;&#10;&#9;&#9;&#9;&lt;Verschluesselung>PKCS#7v1.5&lt;/Verschluesselung>&#13;&#10;&#9;&#9;&#9;&lt;Kompression>GZIP&lt;/Kompression>&#13;&#10;&#9;&#9;&#9;&lt;DatenGroesse>3000&lt;/DatenGroesse>&#13;&#10;&#9;&#9;&#9;&lt;Transportschluessel>&lt;/Transportschluessel>&#13;&#10;&#9;&#9;&lt;/Datei>&#13;&#10;&#9;&#9;&lt;RC>&#13;&#10;&#9;&#9;&#9;&lt;Rueckgabe>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Code>0&lt;/Code>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Text>&lt;/Text>&#13;&#10;&#9;&#9;&#9;&lt;/Rueckgabe>&#13;&#10;&#9;&#9;&#9;&lt;Stack>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Code>0&lt;/Code>&#13;&#10;&#9;&#9;&#9;&#9;&lt;Text>&lt;/Text>&#13;&#10;&#9;&#9;&#9;&lt;/Stack>&#13;&#10;&#9;&#9;&lt;/RC>&#13;&#10;&#9;&#9;&lt;VersionClient>">
 					</param>
@@ -330,10 +400,6 @@
 					<param
 					name="XML_ZM_JAHRNEU_01_Teil_5"
 					value="&lt;/jahr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/mzr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;zeile umsatzart=&quot;L&quot;>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;knre>ATU22345678&lt;/knre>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;betrag>1000&lt;/betrag>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/zeile>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/zm-zeilen>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/unternehmer>&#13;&#10;&#9;&#9;&#9;&#9;&lt;/zm>&#13;&#10;&#9;&#9;&#9;&lt;/Nutzdaten>&#13;&#10;&#9;&#9;&lt;/Nutzdatenblock>&#13;&#10;&#9;&lt;/DatenTeil>&#13;&#10;&lt;/Elster>">
-					</param>
-					<param
-					name="XML_ZM_Version_VORJAHR"
-					value="&lt;zm version=&quot;000005&quot;>">
 					</param>
 					<param
 					name="XML_ZM_VORJAHR_12_Teil_1"
@@ -376,14 +442,6 @@
 					value="&lt;/Erstellungsdatum>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;DatenLieferant>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Name>Deutschland f&amp;#252;r ELSTER&lt;/Name>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Strasse>Bahnhofstra&amp;#223;e 34&lt;/Strasse>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;PLZ>20355&lt;/PLZ>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Ort>Hamburg&lt;/Ort>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/DatenLieferant>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;Steuerfall>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Umsatzsteuervoranmeldung>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Jahr>">
 					</param>
 					<param
-					name="XML_UVA_VERSION_JAHRNEU"
-					value="&lt;Anmeldungssteuern xmlns=&quot;http://finkonsens.de/elster/elsteranmeldung/ustva/v2024&quot; version=&quot;2024&quot;>">
-					</param>
-					<param
-					name="XML_UVA_JAHRNEU_01_Teil_5"
-					value="&lt;/Jahr>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Zeitraum>01&lt;/Zeitraum>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Steuernummer>9181081508155&lt;/Steuernummer>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz09>00704&lt;/Kz09>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz41>1000&lt;/Kz41>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz61>142.00&lt;/Kz61>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz66>260.00&lt;/Kz66>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz81>1000&lt;/Kz81>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz83>0.00&lt;/Kz83>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz86>1000&lt;/Kz86>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz89>600&lt;/Kz89>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Kz93>400&lt;/Kz93>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;/Umsatzsteuervoranmeldung>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/Steuerfall>&#13;&#10;&#9;&#9;&#9;&#9;&lt;/Anmeldungssteuern>&#13;&#10;&#9;&#9;&#9;&lt;/Nutzdaten>&#13;&#10;&#9;&#9;&lt;/Nutzdatenblock>&#13;&#10;&#9;&lt;/DatenTeil>&#13;&#10;&lt;/Elster>">
-					</param>
-					<param
 					name="**
 Jahreserklärung JUVA***"
 					value="">
@@ -399,10 +457,6 @@ Jahreserklärung JUVA***"
 					<param
 					name="XML_JUVA_VORJAHR_Header_3"
 					value="&lt;/ProduktVersion>&#13;&#10;&#9;&#9;&#9;&#9;&lt;/Hersteller>&#13;&#10;&#9;&#9;&#9;&#9;&lt;DatenLieferant>Deutschland f&amp;#252;r ELSTER;Bahnhofstra&amp;#223;e 34;20355;Hamburg&lt;/DatenLieferant>&#13;&#10;&#9;&#9;&#9;&#9;&lt;RC>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;Rueckgabe>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Code>0&lt;/Code>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Text>&lt;/Text>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/Rueckgabe>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;Stack>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Code>0&lt;/Code>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;Text>&lt;/Text>&#13;&#10;&#9;&#9;&#9;&#9;&#9;&lt;/Stack>&#13;&#10;&#9;&#9;&#9;&#9;&lt;/RC>&#13;&#10;&#9;&#9;&#9;&lt;/NutzdatenHeader>&#13;&#10;&#9;&#9;&#9;&lt;Nutzdaten>">
-					</param>
-					<param
-					name="XML_JUVA_VERSION_VORJAHR"
-					value="&lt;E50 xmlns = &quot;http://finkonsens.de/elster/elstererklaerung/ust/e50/v2022&quot; version = &quot;2022&quot;>">
 					</param>
 					<param
 					name="XML_JUVA_VORJAHR_INLAND_U_Best_Art_1"
@@ -480,79 +534,27 @@ Jahreserklärung JUVA***"
 			</testcase>
 			<testcase
 			id="08c1d0ee-d9bb-47d7-bd6b-d8af8741b1f4"
-			name="ZM_JAHRNEU_2024_01">
+			name="ZM_JAHRNEU_2024_01_JAHRNEU">
 			</testcase>
-			<testmodule
-			id="08d506ac-1be6-4f9b-ac57-995cd90ddebe"
-			name="CloseAUT_JUVA"
-			ref="d0e040b9-1073-4093-9e9d-64ce981c597c"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="095c05fa-9dd2-4b15-b937-00cd591e6540"
-			name="Formularzuordnungen_kopieren_D20_VORJAHR"
-			ref="74acb118-b421-4fee-a32f-062cf1c36128"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="UVA_D20_Form_Name"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="1be2af9a-631e-41d7-b939-6ad9db8dd5c6"
-					variablename="UVA_D20_Form_Name">
-					</var>
-					<var
-					dataname="UVA_VORJAHR_Form_Name"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="a923c5c3-8d95-477f-a7e4-003c9e053953"
-					variablename="UVA_VORJAHR_Form_Name">
-					</var>
-					<var
-					dataname="Firma"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="ea2c209f-e62d-4535-bf7d-6edd162f917c"
-					variablename="Firma">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="09ccdcd8-54c2-4668-b655-46f61e2e7b81"
-			name="Pruefung_Inhalt_XML_Zeitraum_Ende"
-			ref="dddb6907-4caf-4540-845d-4fe4e4c3d7fe"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="VORJAHR"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="b99ef79a-09a8-46d9-8e52-2991c4107ae2"
-					variablename="VORJAHR">
-					</var>
-					<var
-					dataname="XML_JUVA_VORJAHR_Vorsatz"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="5784283a-e343-4647-8ebd-c9f7902bcf30"
-					variablename="XML_JUVA_VORJAHR_Vorsatz">
-					</var>
-					<var
-					dataname="XML_JUVA_VORJAHR_Ende"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="876c1747-5c9e-4cd4-b45c-c6ed238439a8"
-					variablename="XML_JUVA_VORJAHR_Ende">
-					</var>
-				</databinding>
-				<missingdatabinding>
-					<var
-					dataname="Jahr"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="b99ef79a-09a8-46d9-8e52-2991c4107ae2"
-					variablename="VORJAHR">
-					</var>
-				</missingdatabinding>
-			</testmodule>
 			<testmodule
 			id="09e20ee6-0fb5-492f-b0ac-40319bfca029"
 			name="Elster_Plausipruefung_durchfuehren"
 			ref="60827fa1-73d9-4db6-bc03-a8a17898fb72"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="0a2df54e-a7d8-4b4b-80be-7900c211989c"
+			name="Pruefung_Inhalt_XML_Version_VORVORJAHR"
+			ref="c005ee96-b98e-460e-b338-8e17bbaa63f5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="XML_JUVA_VERSION_VORVORJAHR"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="ba4199fe-2ed2-4cbd-8596-115d1e217cea"
+					variablename="XML_JUVA_VERSION_VORVORJAHR">
+					</var>
+				</databinding>
 			</testmodule>
 			<setup
 			id="0a6738cc-076e-4b68-90b9-19a7d86b5772"
@@ -579,11 +581,15 @@ Jahreserklärung JUVA***"
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="0b826816-eb4a-4b6f-aba7-5f5a337859a7"
-			name="CloseAUT_ELSTER"
-			ref="e804819e-91ff-425e-83bd-d106d42b0d50"
+			id="0b786b56-54b4-44df-b094-c473a2385e03"
+			name="CloseAUT_B_ELSTER"
+			ref="33a05665-a526-47e3-8d65-e63868eef75f"
 			type="Recording">
 			</testmodule>
+			<setup
+			id="0b970f27-b2ca-488b-9a36-39f8b63ceca3"
+			name="setup">
+			</setup>
 			<smartfoldernode
 			id="0da6a954-de06-47c0-a7f1-528a66abe2fe"
 			name="Jahreserklärung_VORVORJAHR_bis_Plausibilitaetspruefung">
@@ -653,18 +659,10 @@ Jahreserklärung JUVA***"
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="12a2bf19-edb5-46d2-ab4c-b526ef54ce8c"
-			name="Sichern_XML_JUVA_VORJAHR"
-			ref="893b1789-6b91-4034-8010-cc5f16a7eaa5"
+			id="11874e88-f2b5-4f2f-955a-c821f84f134f"
+			name="Elster_Plausipruefung_durchfuehren"
+			ref="60827fa1-73d9-4db6-bc03-a8a17898fb72"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="XML_Inhalt_aktuell"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="76b318bf-a81d-4600-b772-4cf51161fcfe"
-					variablename="XML_Inhalt_aktuell">
-					</var>
-				</databinding>
 			</testmodule>
 			<setup
 			id="12af8402-6d4f-44d3-bcae-fb31a7c9f859"
@@ -697,50 +695,24 @@ Jahreserklärung JUVA***"
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="13c15592-46a0-43eb-a5cf-a83c781b3f81"
-			name="Elster_Plausipruefung_durchfuehren"
-			ref="93be3dca-b771-4cee-85d1-3f06ddd76de1"
+			id="1377f643-7afd-4a1a-9601-54ba35886855"
+			name="Sichern_XML_JUVA_VORVORJAHR"
+			ref="3c04a221-ecc7-4b2b-a0c2-9cc8f931fd39"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="XML_Inhalt_aktuell"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="ce1931eb-e3cf-4123-92ce-194240a2cc41"
+					variablename="XML_Inhalt_aktuell">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="13dbf2f0-c8e9-4abb-bf28-1eea9586b876"
 			name="Elster_Plausipruefung_durchfuehren"
 			ref="60827fa1-73d9-4db6-bc03-a8a17898fb72"
 			type="Recording">
-			</testmodule>
-			<testmodule
-			id="13f3cb88-b3e4-4dda-bae9-d7a093423434"
-			name="Pruefung_Inhalt_XML_Zeitraum_Ende"
-			ref="dddb6907-4caf-4540-845d-4fe4e4c3d7fe"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="XML_JUVA_VORJAHR_Vorsatz"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="5784283a-e343-4647-8ebd-c9f7902bcf30"
-					variablename="XML_JUVA_VORJAHR_Vorsatz">
-					</var>
-					<var
-					dataname="VORJAHR"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="b99ef79a-09a8-46d9-8e52-2991c4107ae2"
-					variablename="VORJAHR">
-					</var>
-					<var
-					dataname="XML_JUVA_VORJAHR_Ende"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="876c1747-5c9e-4cd4-b45c-c6ed238439a8"
-					variablename="XML_JUVA_VORJAHR_Ende">
-					</var>
-				</databinding>
-				<missingdatabinding>
-					<var
-					dataname="Jahr"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="b99ef79a-09a8-46d9-8e52-2991c4107ae2"
-					variablename="VORJAHR">
-					</var>
-				</missingdatabinding>
 			</testmodule>
 			<setup
 			id="177b61f6-97ee-4403-9628-c467e80176d5"
@@ -760,9 +732,13 @@ Jahreserklärung JUVA***"
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="19f39d16-3d07-41fe-b81a-d18411523d3b"
+			name="JUVA_Eric_log_Eric_Version_pruefen_VORJAHR">
+			</smartfoldernode>
 			<testmodule
 			id="1a013b0e-c5f8-45f3-9325-862dcf7369e9"
-			name="UVA_Drucken_aufrufen"
+			name="Druck_UVA_Werte_aufrufen"
 			ref="10fbe8a3-a701-427b-b3d6-f2ceacc8f16b"
 			type="Recording">
 				<databinding>
@@ -776,7 +752,7 @@ Jahreserklärung JUVA***"
 			</testmodule>
 			<testcase
 			id="1ac14b3e-9580-4fbf-9b48-6b7eac226602"
-			name="ZM_VORJAHR_2023_12">
+			name="ZM_VORJAHR_2023_12_VORJAHR">
 			</testcase>
 			<setup
 			id="1b1ca07d-0869-42aa-9667-d7e5df38b938"
@@ -784,7 +760,7 @@ Jahreserklärung JUVA***"
 			</setup>
 			<testmodule
 			id="1b88eeab-c24d-4f10-b9fb-7e920c00bd03"
-			name="Elster_XML_Ausgabe_ausl_U_Weiter_Button"
+			name="JUVA_Elster_XML_Ausgabe_ausl_U_Weiter_Button"
 			ref="a7bf68b7-a23a-426d-bde8-b8ac3ca955b2"
 			type="Recording">
 			</testmodule>
@@ -834,7 +810,7 @@ Jahreserklärung JUVA***"
 			</testsuite>
 			<testmodule
 			id="1cff982e-2e54-4618-a50b-065a017a09c1"
-			name="Formular_JAHRNEU_Monat_JAHRNEU_01_auswaehlen"
+			name="UVA_Formular_JAHRNEU_Monat_JAHRNEU_01_auswaehlen"
 			ref="109a5fe1-22a4-4fc5-9f08-a7ab144e278d"
 			type="Recording">
 				<databinding>
@@ -860,7 +836,7 @@ Jahreserklärung JUVA***"
 			</testmodule>
 			<testmodule
 			id="1dd2f750-0211-467d-9583-db1e6a88bdf7"
-			name="UVA_Drucken_aufrufen"
+			name="Druck_UVA_Werte_aufrufen"
 			ref="10fbe8a3-a701-427b-b3d6-f2ceacc8f16b"
 			type="Recording">
 				<databinding>
@@ -873,14 +849,14 @@ Jahreserklärung JUVA***"
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="204f6934-68ee-4f8d-86f9-de72d87ca10d"
-			name="Elster_XML_Ausgabe_ausl_U_Meldung_RS_bestaetigen"
-			ref="9d0ad736-fe7d-4294-ba59-2dfd49a9defa"
+			id="1fcbc0ae-118f-40ac-ae2d-b67a767a5cc9"
+			name="CloseAUT_B_ELSTER"
+			ref="33a05665-a526-47e3-8d65-e63868eef75f"
 			type="Recording">
 			</testmodule>
 			<testmodule
 			id="211c87f9-fc4b-4c46-ae78-19398ef2685f"
-			name="Elster_XML_Ausgabe_ausl_U_starten"
+			name="JUVA_Elster_XML_Ausgabe_ausl_U_starten"
 			ref="7ee0ce0e-3b52-4bc4-921b-4dbd02466d29"
 			type="Recording">
 				<databinding>
@@ -915,10 +891,18 @@ Jahreserklärung JUVA***"
 			name="setup">
 			</setup>
 			<testmodule
-			id="23897262-b120-410a-9337-51144d53642b"
-			name="CloseAUT_ELSTER"
-			ref="7ed63e68-3692-47bb-8a5f-28bf6b745d46"
+			id="235b16cb-0a36-4e45-91b8-d299f0f48c46"
+			name="Elster_DSGVO_bestaetigen"
+			ref="79f8f0dd-8fae-4c05-a415-be91bae4fca5"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="b6a57e77-2e49-482e-9136-674b64e488c3"
+					variablename="Firma">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="254e8b20-ade4-4ed8-9862-cb8dcf337185"
@@ -958,7 +942,7 @@ Jahreserklärung JUVA***"
 			</smartfoldernode>
 			<testmodule
 			id="280f6e98-5b80-40d0-950a-7eb44b5d1665"
-			name="Elster_XML_Ausgabe_starten_Meldung_RS_bestaetigen"
+			name="JUVA_Elster_XML_Ausgabe_starten"
 			ref="c77fa497-c408-4bff-aa81-9f4abd3e62cb"
 			type="Recording">
 				<databinding>
@@ -970,6 +954,36 @@ Jahreserklärung JUVA***"
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="2825d701-a5a2-471b-8757-55158bc44de3"
+			name="Formular_VORJAHR_Formular_vorhanden_Drucken_aktiv"
+			ref="5982cd23-3afd-45b3-9f4c-59fc943a61a7"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="UVA_VORJAHR_Form_Name"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="9790a775-0b6b-4803-bdcb-f6beb517b923"
+					variablename="UVA_VORJAHR_Form_Name">
+					</var>
+					<var
+					dataname="UVA_VORJAHR_Form_Code"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="91dec83a-b6e0-4e44-a2b0-29fc19feba49"
+					variablename="UVA_VORJAHR_Form_Code">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="299b43df-3581-4513-92d6-2ec1779a6f54"
+			name="Close_notepad_XML"
+			ref="8410ffa8-8dff-49ca-a83b-949a1cfa608a"
+			type="Recording">
+			</testmodule>
+			<teardown
+			id="29b069cb-9f47-4805-ba99-e852fc147f50"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="2a54f347-3b75-4708-b610-ebd999dcddd9"
 			name="Elster_Plausipruefung_durchfuehren"
@@ -992,10 +1006,50 @@ Jahreserklärung JUVA***"
 			id="3331dbdb-87ee-4a14-bdd5-54e8a8ce8d75"
 			name="Formular_D20_nach_Formular_VORJAHJR_kopieren">
 			</smartfoldernode>
+			<testmodule
+			id="3376e411-7d11-4b0a-bb1d-9b4ddd96b882"
+			name="loeschen_Eric_log"
+			ref="a1546d34-ced4-4a9d-9f79-c067c19b39b4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Eric_log_Datei"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="1acc6b6d-3485-4f8b-8900-ade6de98f7bd"
+					variablename="Eric_log_Datei">
+					</var>
+					<var
+					dataname="Pfad"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="1544a1bd-7e67-4dd4-a94d-3817e47f2a00"
+					variablename="Pfad">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="340cd462-ace0-438c-bdca-7856c588a7d0"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="34c2addc-c5c4-4518-997c-c05015d64279"
+			name="Oeffnen_notepad_Eric_log"
+			ref="64f64ba9-b64c-4582-bd7c-76c6f8db9ae4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Programm_2"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="0d99413d-3d4b-4d78-9251-d18ca89271c1"
+					variablename="Programm_2">
+					</var>
+					<var
+					dataname="Eric_log_Pfad_Datei"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="a845503a-1abf-4c29-83c1-f8c78cd040ca"
+					variablename="Eric_log_Pfad_Datei">
+					</var>
+				</databinding>
+			</testmodule>
 			<teardown
 			id="34c95257-8bca-430e-97d6-978e107ac7eb"
 			name="teardown">
@@ -1011,6 +1065,52 @@ Jahreserklärung JUVA***"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="f9e0c706-5661-4b4b-8b5f-4d8d6c9eaec8"
 					variablename="UVA_VORVORJAHR_Form_Name">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="35395b55-f149-488c-912c-194691f43ad9"
+			name="Pruefung_Inhalt_XML_JUVA_VORVORJAHR_Zeitraum_Ende"
+			ref="5ee66cac-8d66-4181-8af0-94f959c0e0b9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="VORVORJAHR"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="97619d56-6b29-4822-9f62-f3c9442d7ad5"
+					variablename="VORVORJAHR">
+					</var>
+					<var
+					dataname="XML_JUVA_VORJAHR_Vorsatz"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="22317fdd-0a1d-4615-9c3e-1efc7595774f"
+					variablename="XML_JUVA_VORJAHR_Vorsatz">
+					</var>
+					<var
+					dataname="XML_JUVA_VORJAHR_Ende"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="7a0b1a8e-1f1c-496d-bfa1-27fc29a418fb"
+					variablename="XML_JUVA_VORJAHR_Ende">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="3550bf85-6d88-4e88-93fc-0c896c22a852"
+			name="loeschen_Eric_log"
+			ref="a1546d34-ced4-4a9d-9f79-c067c19b39b4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Pfad"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="1544a1bd-7e67-4dd4-a94d-3817e47f2a00"
+					variablename="Pfad">
+					</var>
+					<var
+					dataname="Eric_log_Datei"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="1acc6b6d-3485-4f8b-8900-ade6de98f7bd"
+					variablename="Eric_log_Datei">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1045,20 +1145,34 @@ Jahreserklärung JUVA***"
 			name="teardown">
 			</teardown>
 			<testmodule
-			id="39100989-4800-40f3-99d2-fbf5d89c9dd3"
-			name="CloseAUT_ELSTER"
-			ref="7ed63e68-3692-47bb-8a5f-28bf6b745d46"
+			id="38d2c114-2b23-481d-b2ff-4f68e28dcb42"
+			name="Formular_Zuordnung_zu_Zeile_16_pruefen"
+			ref="0fe648ee-3364-487b-bf67-8c708f0affeb"
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="3a7b4717-520f-4faf-91de-3e83503a73eb"
+			name="Sichern_Eric_log_UVA_VORJAHR_12"
+			ref="0e56961b-6fb2-4cce-aaeb-e56898acc9f8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Eric_log_Inhalt_aktuell"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="7c7e6c4e-0d29-47cc-bd0c-02bab9b6cdf2"
+					variablename="Eric_log_Inhalt_aktuell">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="3ab38cb1-3e8e-44e9-896c-784f64c77173"
-			name="Formular_VORVORJAHR_Zuordnung_zu_Zeile_16_pruefen"
+			name="Formular_Zuordnung_zu_Zeile_16_pruefen"
 			ref="0fe648ee-3364-487b-bf67-8c708f0affeb"
 			type="Recording">
 			</testmodule>
 			<testmodule
 			id="3b6be6be-3789-453e-8e2a-fbfe739ee66a"
-			name="Pruefung_Inhalt_XML_Zeitraum_Ende"
+			name="Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum_Ende"
 			ref="dddb6907-4caf-4540-845d-4fe4e4c3d7fe"
 			type="Recording">
 				<databinding>
@@ -1115,8 +1229,14 @@ Jahreserklärung JUVA***"
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="401367db-5c3a-4e6b-b758-c58d9195c02b"
+			name="CloseAUT_B_ELSTER"
+			ref="33a05665-a526-47e3-8d65-e63868eef75f"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="41ac945f-5354-469a-8c5d-29706b6aa554"
-			name="Elster_Aufruf_DSGVO_Meldung_RS_bestaetigen"
+			name="ZM_ELSTER_Button_pruefen_aufrufen"
 			ref="4b8b6245-d99f-4213-8a57-489c1a03142f"
 			type="Recording">
 				<databinding>
@@ -1140,12 +1260,6 @@ Jahreserklärung JUVA***"
 					variableid="23c69af7-c5f7-4c48-8b2c-79dcbd6b0c51"
 					variablename="UVA_JAHRNEU_Form_Name">
 					</var>
-					<var
-					dataname="UVA_VORJAHR_Form_Name"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="9790a775-0b6b-4803-bdcb-f6beb517b923"
-					variablename="UVA_VORJAHR_Form_Name">
-					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
@@ -1155,30 +1269,18 @@ Jahreserklärung JUVA***"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Programm_2"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="0d99413d-3d4b-4d78-9251-d18ca89271c1"
-					variablename="Programm_2">
-					</var>
-					<var
 					dataname="Eric_log_Pfad_Datei"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="a845503a-1abf-4c29-83c1-f8c78cd040ca"
 					variablename="Eric_log_Pfad_Datei">
 					</var>
+					<var
+					dataname="Programm_2"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="0d99413d-3d4b-4d78-9251-d18ca89271c1"
+					variablename="Programm_2">
+					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			id="43fbb137-4f87-4dec-a11f-2e0472a95fc2"
-			name="CloseAUT_ELSTER"
-			ref="7ed63e68-3692-47bb-8a5f-28bf6b745d46"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="443194c4-193b-478c-b60f-55c5424ad5a4"
-			name="Formular_JAHRNEU_Zuordnung_zu_Zeile_16_pruefen"
-			ref="870a278f-c46e-4a97-b0ef-498ab6d6f30e"
-			type="Recording">
 			</testmodule>
 			<setup
 			id="452619f9-2c9b-4538-9199-3fc824721887"
@@ -1188,6 +1290,34 @@ Jahreserklärung JUVA***"
 			id="46eabd51-a0e3-4e86-8a44-0c7d8e8bdc24"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="477b6893-1b1e-4f2a-be1f-195e5d98254d"
+			name="Eric_Version_JUVA_VORJAHR_pruefen"
+			ref="e714d84f-904b-4c76-96df-d78643245d73"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Eric_JUVA_VORJAHR_39_2"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="6bc6d86e-4a75-4a0c-8614-73a8b4315c7b"
+					variablename="Eric_JUVA_VORJAHR_39_2">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="478e51d3-054c-412d-b96a-c30dea46fc9c"
+			name="Eric_Version_JUVA_VORVORJAHR_pruefen"
+			ref="0f90b73d-7a2d-4bee-8d17-201e524c5f9b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Eric_JUVA_VORVORJAHR_39_2"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="6f1588b5-332b-4eec-8777-1fb6b05937e6"
+					variablename="Eric_JUVA_VORVORJAHR_39_2">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="490988b0-e951-4170-baae-6877ea7a9b84"
 			name="Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank_VORJAHR"
@@ -1209,10 +1339,10 @@ Jahreserklärung JUVA***"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Eric_Version_ZM_VORJAHR_12"
+					dataname="Eric_ZM_VORJAHR_12_39_2"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="ae2ec29f-047c-4d05-8461-4c88c61d70f5"
-					variablename="Eric_Version_ZM_VORJAHR_12">
+					variablename="Eric_ZM_VORJAHR_12_39_2">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1233,11 +1363,29 @@ Jahreserklärung JUVA***"
 			name="ZM_bis_Plausipruefung_VORJAHR_Dezember">
 			</smartfoldernode>
 			<testmodule
-			id="4f073989-c7bf-495b-a0e1-99766b19d9b8"
-			name="CloseAUT_ELSTER"
-			ref="e804819e-91ff-425e-83bd-d106d42b0d50"
+			id="4d63580e-7e61-4354-9d4c-cd3a6bc79aea"
+			name="JUVA_Register_Jahreserklaerung_Eingaben_VORVORJAHR"
+			ref="7cd75900-6105-45d8-8cfe-c8b5c2183d23"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="VORVORJAHR"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="b01cab30-cdd7-4c15-8fba-6195ad572626"
+					variablename="VORVORJAHR">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="506cabb7-184c-4f49-ab95-be2c62d12ba6"
+			name="Close_notepad_Eric"
+			ref="8737f694-0e9d-46c6-b724-bcdf5bf9bb33"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="51e5d514-58d9-486f-ace6-5d6fbadc54fe"
+			name="Monats-UVA_2023_12_VORJAHR_und_Kopieren_D20_nach_D23">
+			</testcase>
 			<testmodule
 			id="51e8f5a5-d736-4c89-a32c-2f3a06e4521a"
 			name="Formular_JAHRNEU_Formular_vorhanden_Drucken_aktiv"
@@ -1247,14 +1395,14 @@ Jahreserklärung JUVA***"
 					<var
 					dataname="UVA_JAHRNEU_Form_Code"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="52477e55-87af-4559-b0f7-7bc4c097aa0f"
+					variableid="ed63b89c-e41b-458e-b6eb-03fcd3c66017"
 					variablename="UVA_JAHRNEU_Form_Code">
 					</var>
 					<var
-					dataname="UVA_VORJAHR_Form_Name"
+					dataname="UVA_JAHRNEU_Form_Name"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="9790a775-0b6b-4803-bdcb-f6beb517b923"
-					variablename="UVA_VORJAHR_Form_Name">
+					variableid="3751c4e7-3923-4ce1-a791-05ede3e7ff24"
+					variablename="UVA_JAHRNEU_Form_Name">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1314,32 +1462,85 @@ Jahreserklärung JUVA***"
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="544aa633-3dfe-426a-9863-68ddd93f9bc2"
+			name="teardown">
+			</teardown>
 			<testmodule
-			id="52cef28b-aab5-489f-9fa0-edb491640603"
-			name="Formular_VORJAHR_auswaehlen"
-			ref="d7fb7585-a731-4862-9aab-573ab2d06d56"
+			id="567073c9-0e9b-4f0a-ad1e-53bee5c89927"
+			name="Pruefung_Inhalt_XML_UVA_Datei_VORJAHR_12"
+			ref="f8e3a775-907b-4cab-996f-e884905146f3"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="XML_UVA_JAHRNEU_01_Teil_2"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="8bf93dbf-cb59-47a3-9ca0-20221841353e"
+					variablename="XML_UVA_JAHRNEU_01_Teil_2">
+					</var>
+					<var
+					dataname="XML_UVA_VERSION_VORJAHR"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="e6c9043d-8787-4048-8c72-ccbaabc41774"
+					variablename="XML_UVA_VERSION_VORJAHR">
+					</var>
+					<var
+					dataname="XML_UVA_VORJAHR_12_Teil_5_Monat_12"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="fd96c99a-ca6e-4ae8-b9d1-0602886cc226"
+					variablename="XML_UVA_VORJAHR_12_Teil_5_Monat_12">
+					</var>
+					<var
+					dataname="XML_UVA_JAHRNEU_01_Teil_1"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="68fefb4b-664b-46c4-8cae-c8021049aa35"
+					variablename="XML_UVA_JAHRNEU_01_Teil_1">
+					</var>
+					<var
+					dataname="XML_UVA_JAHRNEU_01_Teil_3"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="45b43b74-7ba4-47c7-ae5b-c9137d617389"
+					variablename="XML_UVA_JAHRNEU_01_Teil_3">
+					</var>
+					<var
+					dataname="VORJAHR"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="b6fa4e3c-558f-4c25-b035-15e45b9e5624"
+					variablename="VORJAHR">
+					</var>
+					<var
+					dataname="XML_UVA_JAHRNEU_01_Teil_4"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="926425bc-afac-429d-809e-5f51b213edaa"
+					variablename="XML_UVA_JAHRNEU_01_Teil_4">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="56ff0a44-98c6-4ec7-a045-81ed7b57f985"
+			name="UVA_Formular_VORJAHR_Monat_VORJAHR_12_auswaehlen"
+			ref="40a1db51-3e85-421b-b76e-6f5620210cf6"
 			type="Recording">
 				<databinding>
 					<var
 					dataname="UVA_VORJAHR_Form_Name"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="34876be8-2d4e-4ab4-9fc7-33d5f77323e5"
+					variableid="9790a775-0b6b-4803-bdcb-f6beb517b923"
 					variablename="UVA_VORJAHR_Form_Name">
 					</var>
+					<var
+					dataname="VORJAHR"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="4f3ca955-b7ac-43b3-8272-6eaa5e70c193"
+					variablename="VORJAHR">
+					</var>
+					<var
+					dataname="Monat_12"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="2f676d97-c067-4781-9670-933447543f51"
+					variablename="Monat_12">
+					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			enabled="False"
-			id="553651b3-58e8-43c5-ab19-839e7befbd0a"
-			name="Fenstersteuerung_AnlageUN"
-			ref="354393a9-8187-4029-8720-681ee7053a5e"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="57c3052b-e265-4522-aaa3-15f61788c5be"
-			name="ZM_ELSTER_Plausipruefung_durchfuehren"
-			ref="9ceb882d-09c4-4618-b4ed-6d55edbf4288"
-			type="Recording">
 			</testmodule>
 			<testmodule
 			id="57ee984e-70bc-4b3d-8833-07a80b34d505"
@@ -1411,34 +1612,10 @@ Jahreserklärung JUVA***"
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="59f24407-b355-4c38-b63d-4db4a9a9354e"
-			name="Elster_aufrufen_DSGVO_bestaetigen"
-			ref="c1bdd309-2384-46db-9f1a-0e6bc5f7c0f3"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Firma"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="b3d68e33-7481-422a-82e2-2b09d80f27e8"
-					variablename="Firma">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="5b176671-4f0b-4715-86ec-d3b9ae334545"
-			name="Sichern_XML_JUVA_ausl_U_VORJAHR"
-			ref="8d7fc0ec-86d6-4637-b3af-15cde2475687"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="XML_Inhalt_aktuell"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="389d57fe-2a21-4735-8e08-f6a172d4e636"
-					variablename="XML_Inhalt_aktuell">
-					</var>
-				</databinding>
-			</testmodule>
+			<smartfoldernode
+			id="5a5012ec-0270-404b-9398-37c04f17e55f"
+			name="JUVA_Eric_log_Eric_Version_pruefen_VORVORJAHR_auslaendische_Unternehmen">
+			</smartfoldernode>
 			<testmodule
 			id="5bdb7bfc-300e-4f2f-9a53-19f4e89b895b"
 			name="Pruefung_Inhalt_XML_JUVA_Umsaetze_VORJAHR"
@@ -1509,22 +1686,55 @@ Jahreserklärung JUVA***"
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="5c45384b-8b4f-4d6c-a4c3-709e206fd2d9"
+			name="Sichern_XML_UVA_VORJAHR_12"
+			ref="1b3526cb-70da-4988-9c07-7813e10a3917"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="XML_Inhalt_aktuell"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="e254f84d-dad2-4ac8-984e-878919db605b"
+					variablename="XML_Inhalt_aktuell">
+					</var>
+				</databinding>
+			</testmodule>
 			<smartfoldernode
 			id="5d80d761-76c5-4198-97ab-f2dd4c30ad83"
 			name="ELSTER_Jahreserklärung_VORVORJAHR_Anlage_UN_ausl_Unternehmen">
 			</smartfoldernode>
 			<testmodule
-			enabled="False"
-			id="5e90fdf1-74ff-466c-94b9-d852132e1d17"
-			name="Fenstersteuerung_AnlageUN"
-			ref="354393a9-8187-4029-8720-681ee7053a5e"
+			id="5e359390-72fe-4f83-a640-a81f50a743a1"
+			name="Elster_Meldung_RS_bestaetigen"
+			ref="df6cf4c2-4032-4b4f-82bf-7e115ef13e5b"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="73141391-e390-4db1-ad62-ee61006e8529"
+					variablename="Firma">
+					</var>
+				</databinding>
 			</testmodule>
+			<setup
+			id="620968ad-044e-49d1-9a4e-87a502d01c76"
+			name="setup">
+			</setup>
 			<testmodule
-			id="62d86cd7-ee3f-4c18-b103-e749e3b31b20"
-			name="Elster_Schnittstelle_pruefen"
-			ref="c0466d86-6b8a-4c34-a64a-f52cbafebb72"
+			id="62bc3ac3-5d77-48bd-97ed-8c3d3d1bb1cf"
+			name="Druck_UVA_Werte_aufrufen"
+			ref="10fbe8a3-a701-427b-b3d6-f2ceacc8f16b"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="f152e868-125f-4bae-bc5c-22254123939a"
+					variablename="Firma">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="63f479b6-fdd2-4e34-9a65-f52a42f894a9"
@@ -1548,7 +1758,7 @@ Jahreserklärung JUVA***"
 			</testmodule>
 			<testmodule
 			id="64f6fc7f-0ecb-4f73-8182-effa72e774da"
-			name="Elster_XML_Ausgabe_ausl_U_starten"
+			name="JUVA_Elster_XML_Ausgabe_ausl_U_starten"
 			ref="7ee0ce0e-3b52-4bc4-921b-4dbd02466d29"
 			type="Recording">
 				<databinding>
@@ -1561,25 +1771,39 @@ Jahreserklärung JUVA***"
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="690f9a81-cb48-4f42-be1e-d0f682254cbd"
-			name="Elster_aufrufen_DSGVO_bestaetigen"
-			ref="c1bdd309-2384-46db-9f1a-0e6bc5f7c0f3"
+			id="6582d321-f3f7-40c2-8a06-b3356baa2a77"
+			name="Pruefung_Inhalt_XML_JUVA_VORVORJAHR_Zeitraum_Ende"
+			ref="5ee66cac-8d66-4181-8af0-94f959c0e0b9"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Firma"
+					dataname="VORVORJAHR"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="b3d68e33-7481-422a-82e2-2b09d80f27e8"
-					variablename="Firma">
+					variableid="97619d56-6b29-4822-9f62-f3c9442d7ad5"
+					variablename="VORVORJAHR">
+					</var>
+					<var
+					dataname="XML_JUVA_VORJAHR_Vorsatz"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="22317fdd-0a1d-4615-9c3e-1efc7595774f"
+					variablename="XML_JUVA_VORJAHR_Vorsatz">
+					</var>
+					<var
+					dataname="XML_JUVA_VORJAHR_Ende"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="7a0b1a8e-1f1c-496d-bfa1-27fc29a418fb"
+					variablename="XML_JUVA_VORJAHR_Ende">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="6a630388-f54b-45d5-af0c-b64b9bf1231e"
-			name="UVA_Drucken_aufrufen"
-			ref="b55fe565-fee7-40de-92a7-fd882a344eef"
-			type="Recording">
-			</testmodule>
+			<teardown
+			id="678c37e9-4448-4950-a78a-63b4f1c95ce9"
+			name="teardown">
+			</teardown>
+			<setup
+			id="67e31241-e8ac-4fa9-88c5-4a251c0e18e8"
+			name="setup">
+			</setup>
 			<smartfoldernode
 			id="6ac34871-6ba7-4eb8-aef5-97ba5f6041f9"
 			name="Formular_D20_nach_Formular_JAHRNEU_kopieren">
@@ -1606,28 +1830,60 @@ Jahreserklärung JUVA***"
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="6b854566-464b-4e0f-95be-f36b5c6d8291"
+			name="Druck_UVA_Werte_aufrufen"
+			ref="10fbe8a3-a701-427b-b3d6-f2ceacc8f16b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="f152e868-125f-4bae-bc5c-22254123939a"
+					variablename="Firma">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="6bacca2c-cec6-41ae-acf7-4a9da325f6de"
+			name="Elster_Meldung_RS_bestaetigen"
+			ref="df6cf4c2-4032-4b4f-82bf-7e115ef13e5b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="73141391-e390-4db1-ad62-ee61006e8529"
+					variablename="Firma">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="6c5e90d3-a47b-4038-a19a-f88cac0c6d5e"
 			name="Oeffnen_notepad_Eric_log"
 			ref="64f64ba9-b64c-4582-bd7c-76c6f8db9ae4"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Eric_log_Pfad_Datei"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="a845503a-1abf-4c29-83c1-f8c78cd040ca"
-					variablename="Eric_log_Pfad_Datei">
-					</var>
-					<var
 					dataname="Programm_2"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="0d99413d-3d4b-4d78-9251-d18ca89271c1"
 					variablename="Programm_2">
 					</var>
+					<var
+					dataname="Eric_log_Pfad_Datei"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="a845503a-1abf-4c29-83c1-f8c78cd040ca"
+					variablename="Eric_log_Pfad_Datei">
+					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="6cb04e50-45a4-4fc6-a03a-0b1df32dcab1"
+			name="JUVA_Eric_log_Eric_Version_pruefen_VORJAHR_auslaendische_Unternehmen">
+			</smartfoldernode>
 			<testmodule
 			id="6dbae7cb-58fe-4267-b1d9-34ee1cf22f40"
-			name="StartAUT_Formulare_300"
+			name="StartAUT_b_uva_Formulare_300"
 			ref="46cdf458-b5e0-4a4b-8b8e-404e3c16cdc5"
 			type="Recording">
 				<databinding>
@@ -1652,41 +1908,35 @@ Jahreserklärung JUVA***"
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="6e58ebd3-f56a-4d52-bf55-91139d637094"
-			name="Elster_XML_Ausgabe_ausl_U_Meldung_RS_bestaetigen"
-			ref="9d0ad736-fe7d-4294-ba59-2dfd49a9defa"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="6f07d7dd-515c-4c65-b5ac-9eb787681ed4"
-			name="Elster_aufrufen_DSGVO_bestaetigen"
-			ref="c1bdd309-2384-46db-9f1a-0e6bc5f7c0f3"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Firma"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="b3d68e33-7481-422a-82e2-2b09d80f27e8"
-					variablename="Firma">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="6fffcc43-9407-40ba-aa19-c98f0fdfd8b1"
 			name="Close_notepad_XML"
 			ref="3ecd778c-a951-4757-8d33-4928768d604f"
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="71d58d76-6593-4bf3-957f-ed0f7041c0f0"
-			name="CloseAUT_ELSTER"
-			ref="7ed63e68-3692-47bb-8a5f-28bf6b745d46"
+			id="712524ef-214a-4162-8845-959bd39e926b"
+			name="Eric_Version_UVA_VORJAHR_12_pruefen"
+			ref="982a5d5d-b0bf-4647-9204-f2ad64ab80b0"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Eric_UVA_VORJAHR_12_39_2"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="6971a476-d4be-4a61-8d17-5f3c65568a9a"
+					variablename="Eric_UVA_VORJAHR_12_39_2">
+					</var>
+				</databinding>
 			</testmodule>
 			<setup
 			id="72981751-3298-41c8-96b1-995ae0e9d523"
 			name="setup">
 			</setup>
+			<testmodule
+			id="7373e58a-eb06-43ff-9de0-56e9dd22b10a"
+			name="Elster_Plausipruefung_durchfuehren"
+			ref="60827fa1-73d9-4db6-bc03-a8a17898fb72"
+			type="Recording">
+			</testmodule>
 			<smartfoldernode
 			id="7393af81-f510-47c4-b3c9-0070e162a746"
 			name="ZM_XML_Datei_pruefen_VORJAHR_Dezember">
@@ -1720,16 +1970,30 @@ Jahreserklärung JUVA***"
 			name="setup">
 			</setup>
 			<testmodule
-			id="78926de4-89a5-4a67-b1a1-f268a36a507c"
-			name="Formular_VORJAHR_Zeile_1_Zeile_16_pruefen"
-			ref="b59c4da6-ce50-4a2e-989d-e8fb40cad9ec"
+			id="746c7ce5-cbef-4dee-9ef8-c164e5877a4b"
+			name="Druck_UVA_Werte_aufrufen"
+			ref="10fbe8a3-a701-427b-b3d6-f2ceacc8f16b"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="UVA_VORJAHR_Form_Name"
+					dataname="Firma"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="84356366-48b3-429d-95f8-746522aa11da"
-					variablename="UVA_VORJAHR_Form_Name">
+					variableid="f152e868-125f-4bae-bc5c-22254123939a"
+					variablename="Firma">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="78290c31-5f17-4a4c-af7d-1cfce0457d08"
+			name="Elster_DSGVO_bestaetigen"
+			ref="79f8f0dd-8fae-4c05-a415-be91bae4fca5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="b6a57e77-2e49-482e-9136-674b64e488c3"
+					variablename="Firma">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1755,7 +2019,7 @@ Jahreserklärung JUVA***"
 			</testmodule>
 			<testmodule
 			id="7a2499c2-420a-48eb-83f8-e6fd817aaa1d"
-			name="Elster_XML_Ausgabe_starten_Meldung_RS_bestaetigen"
+			name="JUVA_Elster_XML_Ausgabe_starten"
 			ref="c77fa497-c408-4bff-aa81-9f4abd3e62cb"
 			type="Recording">
 				<databinding>
@@ -1798,8 +2062,20 @@ Jahreserklärung JUVA***"
 			name="setup">
 			</setup>
 			<testmodule
+			id="7bced2e5-d88b-4fb0-8781-38905b887661"
+			name="Elster_Plausipruefung_durchfuehren"
+			ref="60827fa1-73d9-4db6-bc03-a8a17898fb72"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="7ca81c80-a74e-4ae7-adea-57819d980505"
+			name="CloseAUT_B_UVA"
+			ref="4a6e9877-466b-4f4b-a082-35829a25c757"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="7d55edbe-c959-4d1e-bd3f-f8c7c42a70fe"
-			name="UVA_Drucken_aufrufen"
+			name="Druck_UVA_Werte_aufrufen"
 			ref="10fbe8a3-a701-427b-b3d6-f2ceacc8f16b"
 			type="Recording">
 				<databinding>
@@ -1812,13 +2088,27 @@ Jahreserklärung JUVA***"
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="7d5f42ce-13c1-45dc-87ee-9b681d42d055"
+			name="Elster_Meldung_RS_bestaetigen"
+			ref="df6cf4c2-4032-4b4f-82bf-7e115ef13e5b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="73141391-e390-4db1-ad62-ee61006e8529"
+					variablename="Firma">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="7f10f47d-1a8f-4eb3-b4c5-770efa0bb47b"
 			name="Pruefung_Inhalt_XML_Version_VORJAHR"
 			ref="e243f047-ff4c-47bf-ba20-ec14ebe92ac0"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="XML_JUVA_VERSION_VORJAHR"
+					dataname="XML_JUVA_VERSION_VORVORJAHR"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="4d1a684f-98a9-40fc-8670-bdd310f1afd2"
 					variablename="XML_JUVA_VERSION_VORJAHR">
@@ -1826,28 +2116,56 @@ Jahreserklärung JUVA***"
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="7fa3490e-cac0-4cf7-99b4-6239e3f78289"
+			name="Formular_Zuordnung_zu_Zeile_16_pruefen"
+			ref="0fe648ee-3364-487b-bf67-8c708f0affeb"
+			type="Recording">
+			</testmodule>
+			<teardown
+			id="806c482e-1289-4b44-bece-85e3750daa0b"
+			name="teardown">
+			</teardown>
+			<testmodule
 			id="81534d8a-e758-4b57-8218-1021903fba47"
 			name="Close_notepad_Eric"
 			ref="8737f694-0e9d-46c6-b724-bcdf5bf9bb33"
 			type="Recording">
 			</testmodule>
+			<teardown
+			id="81acb6c4-e988-48b3-8606-dabeb6a129eb"
+			name="teardown">
+			</teardown>
 			<testmodule
-			id="82a0a6f4-f1c6-45ae-89ee-007a6d5e6517"
-			name="Elster_Schnittstelle_pruefen"
-			ref="5fdb74c1-2319-41e3-83c3-65b3da22e78e"
+			id="81dbd572-9e21-477d-8763-e676535b6cb1"
+			name="CloseAUT_B_ELSTER"
+			ref="33a05665-a526-47e3-8d65-e63868eef75f"
 			type="Recording">
 			</testmodule>
 			<teardown
 			id="82d98ed8-a698-486f-8d84-422d2dc0593f"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="8428bfae-be02-4b1a-ab98-5a4af2c9c20f"
+			name="UVA_JUVA_ELSTER_Button_pruefen_aufrufen"
+			ref="fa5ab6f0-c142-47c8-8ea1-4e0eec673985"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="14318655-facf-4f60-b96d-e07ebaf32e8b"
+					variablename="Firma">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="8435d987-00ef-4d27-98e0-a9d51cd54781"
 			name="setup">
 			</setup>
 			<testmodule
 			id="845473e7-6674-4dc4-9980-18818dc81cba"
-			name="Register_Jahreserklaerung_Eingaben_VORJAHR"
+			name="JUVA_Register_Jahreserklaerung_Eingaben_VORJAHR"
 			ref="7b98e923-7afe-463c-ba6c-6f16b91c833d"
 			type="Recording">
 				<databinding>
@@ -1868,10 +2186,50 @@ Jahreserklärung JUVA***"
 				</missingdatabinding>
 			</testmodule>
 			<testmodule
+			id="84b5880d-7330-4e6d-becf-623511c1a90b"
+			name="Elster_DSGVO_bestaetigen"
+			ref="79f8f0dd-8fae-4c05-a415-be91bae4fca5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="b6a57e77-2e49-482e-9136-674b64e488c3"
+					variablename="Firma">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="84d2baae-5b40-4fd1-9951-0bdf30f7cffb"
+			name="Elster_Plausipruefung_durchfuehren"
+			ref="60827fa1-73d9-4db6-bc03-a8a17898fb72"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="85cffd70-0441-4376-9e93-7bafeca8e1fb"
 			name="Close_notepad_Eric"
 			ref="8737f694-0e9d-46c6-b724-bcdf5bf9bb33"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="86191f79-506a-4f93-bc75-74a91991a07f"
+			name="Elster_Schnittstelle_pruefen"
+			ref="19f7770e-cf1c-4933-9a1e-033535ffe983"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="86b141e6-0696-4cef-af77-a2c4ab2cac83"
+			name="UVA_Elster_XML_Ausgabe_starten"
+			ref="12913764-e889-4c7b-bc66-fc6ed41183ad"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="f71adaf8-8b4b-48df-b7a2-c33eb06bfe61"
+					variablename="Firma">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="87d82113-a551-4dea-bfb7-1accfa0fadef"
@@ -1887,6 +2245,12 @@ Jahreserklärung JUVA***"
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="88055bc3-fd2e-405b-a3a5-a41647451474"
+			name="CloseAUT_B_ELSTER"
+			ref="33a05665-a526-47e3-8d65-e63868eef75f"
+			type="Recording">
+			</testmodule>
 			<teardown
 			id="8af75542-6740-4820-a71a-4824949d053a"
 			name="teardown">
@@ -1896,40 +2260,54 @@ Jahreserklärung JUVA***"
 			name="setup">
 			</setup>
 			<testmodule
+			id="8c02bebf-72bb-488e-8e87-0f760f704251"
+			name="StartAUT_b_uva_Formulare_300"
+			ref="46cdf458-b5e0-4a4b-8b8e-404e3c16cdc5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="3cc74341-3eeb-48cd-a275-0950ec1fb5c9"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="3b57cbd2-f26f-4f8c-a674-1f5041491774"
+					variablename="Programm">
+					</var>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="8e447992-2990-436c-8802-a4342eba09dd"
+					variablename="Firma">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="8c485b32-7491-40ec-b9de-2f4f6c5eaed6"
 			name="Close_notepad_XML"
 			ref="8410ffa8-8dff-49ca-a83b-949a1cfa608a"
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="8d9d1d07-0cf9-4e31-a733-9df8fe762ae0"
-			name="CloseAUT_JUVA"
-			ref="d0e040b9-1073-4093-9e9d-64ce981c597c"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="8e380b04-8f0c-4bff-87b2-6417a2237602"
-			name="StartAUT_JUVA"
-			ref="cc589370-2dc0-4ea4-a645-9b68fba3e950"
+			id="8cb1ad8c-3cf7-4600-aedf-584159bc1ec1"
+			name="Oeffnen_notepad_Eric_log"
+			ref="64f64ba9-b64c-4582-bd7c-76c6f8db9ae4"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Firma"
+					dataname="Programm_2"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="b0e19ff4-834e-4fc1-9732-74fb4c7f1371"
-					variablename="Firma">
+					variableid="0d99413d-3d4b-4d78-9251-d18ca89271c1"
+					variablename="Programm_2">
 					</var>
 					<var
-					dataname="Programm"
+					dataname="Eric_log_Pfad_Datei"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="5b90daa0-831c-4477-abc0-4374a91542ab"
-					variablename="Programm">
-					</var>
-					<var
-					dataname="Startfile"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="e2c56f99-39c1-4722-b960-f63173d7c1af"
-					variablename="Startfile">
+					variableid="a845503a-1abf-4c29-83c1-f8c78cd040ca"
+					variablename="Eric_log_Pfad_Datei">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1951,24 +2329,52 @@ Jahreserklärung JUVA***"
 			id="8f5850ca-3c9f-4739-951f-f774a15bc3d4"
 			name="teardown">
 			</teardown>
+			<testcase
+			id="8fb1ed68-e604-43c3-818f-a32d737a47e1"
+			name="Jahreserklärung_2023_VORJAHR_und_ausl_U_und_Kopieren_D20_nach_D23">
+			</testcase>
 			<testmodule
-			id="8f6f79fa-7929-4302-9f0f-fcc0f86dcb7c"
-			name="Elster_aufrufen_DSGVO_bestaetigen"
-			ref="c1bdd309-2384-46db-9f1a-0e6bc5f7c0f3"
+			id="904bedca-a3f1-4029-ac75-020f3f0b4507"
+			name="Elster_DSGVO_bestaetigen"
+			ref="79f8f0dd-8fae-4c05-a415-be91bae4fca5"
 			type="Recording">
 				<databinding>
 					<var
 					dataname="Firma"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="b3d68e33-7481-422a-82e2-2b09d80f27e8"
+					variableid="b6a57e77-2e49-482e-9136-674b64e488c3"
 					variablename="Firma">
 					</var>
 				</databinding>
 			</testmodule>
-			<testcase
-			id="8fb1ed68-e604-43c3-818f-a32d737a47e1"
-			name="Jahreserklärung_VORJAHR_2023_Inland_und_ausl_Unternehmen_Kopieren_Form_D20_nach_VORJAHR_D23">
-			</testcase>
+			<testmodule
+			id="90d6d907-be9c-4c18-a624-fc5c19c8a901"
+			name="Sichern_Eric_log_JUVA_VORVORJAHR_ausl_U"
+			ref="4f92952b-a804-4f9b-8bb7-21479a1e54f7"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Eric_log_Inhalt_aktuell"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="194a820c-ef91-4b88-bfca-66fd98c1abda"
+					variablename="Eric_log_Inhalt_aktuell">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="926788a8-3adb-4a2f-a221-6a0fbafc8b8d"
+			name="UVA_JUVA_ELSTER_Button_pruefen_aufrufen"
+			ref="fa5ab6f0-c142-47c8-8ea1-4e0eec673985"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="14318655-facf-4f60-b96d-e07ebaf32e8b"
+					variablename="Firma">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="92dc89ae-a644-4451-b9a4-fd0c69b5185b"
 			name="Pruefung_Inhalt_XML_JUVA_Umsaetze_VORJAHR"
@@ -2024,6 +2430,32 @@ Jahreserklärung JUVA***"
 					variablename="XML_JUVA_VORJAHR_Ber_Vst_15a">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="934bae21-8a90-482f-8177-ed95bf267df8"
+			name="UVA_JUVA_ELSTER_Button_pruefen_aufrufen"
+			ref="fa5ab6f0-c142-47c8-8ea1-4e0eec673985"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="14318655-facf-4f60-b96d-e07ebaf32e8b"
+					variablename="Firma">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="9398381e-c8fc-45d8-9762-70895a1ae8a8"
+			name="CloseAUT_B_ELSTER"
+			ref="33a05665-a526-47e3-8d65-e63868eef75f"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="95490b04-65ea-4c12-8480-c26968ebca47"
+			name="CloseAUT_B_UVA"
+			ref="4a6e9877-466b-4f4b-a082-35829a25c757"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="95a5ba56-90e9-4971-85b6-19675db1d85e"
@@ -2084,7 +2516,7 @@ Jahreserklärung JUVA***"
 			</setup>
 			<testcase
 			id="9975d79f-4bf2-420e-a8c8-3c3970941246"
-			name="Monats-UVA_JAHRNEU_Januar">
+			name="Monats-UVA_2024_01_JAHRNEU_und_Kopieren_D20_nach_D24">
 			</testcase>
 			<testmodule
 			id="9a681954-d4b4-4f40-8c3b-d3e62d891dc6"
@@ -2100,7 +2532,7 @@ Jahreserklärung JUVA***"
 			</testmodule>
 			<testmodule
 			id="9d4c234f-60c9-46b4-b0dc-76088f9e4299"
-			name="Elster_XML_Ausgabe_ausl_U_AnhangUN_ausfuellen"
+			name="JUVA_Elster_XML_Ausgabe_ausl_U_AnhangUN_ausfuellen"
 			ref="cb42792f-0582-4e31-b183-303d2a22dbf4"
 			type="Recording">
 				<databinding>
@@ -2116,12 +2548,42 @@ Jahreserklärung JUVA***"
 					variableid="1a3b85ff-5cfc-4f58-8380-d123478998bf"
 					variablename="IBAN">
 					</var>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="0e3eb901-bcb9-48ac-87f2-4cf837e72791"
+					variablename="Firma">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			id="9df3cd20-17e3-492a-83df-2eac162b2041"
+			name="UVA_Eric_log_Eric_Version_pruefen_VORJAHR_12">
+			</smartfoldernode>
+			<testmodule
+			id="9f72b001-1cc0-4478-aa90-da6d6c52ac23"
+			name="Formular_VORJAHR_Zeile_1_Zeile_16_pruefen"
+			ref="ab58b9d3-25f5-4939-93a6-e00d4aa016e7"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="UVA_VORJAHR_Form_Name"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="9790a775-0b6b-4803-bdcb-f6beb517b923"
+					variablename="UVA_VORJAHR_Form_Name">
+					</var>
 				</databinding>
 			</testmodule>
 			<teardown
 			id="a035f360-53dd-4c66-b84c-6a551f5963dc"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="a086e068-5cab-450a-bef3-59fed29b0d29"
+			name="Close_notepad_Eric"
+			ref="8737f694-0e9d-46c6-b724-bcdf5bf9bb33"
+			type="Recording">
+			</testmodule>
 			<smartfoldernode
 			id="a15ca4d9-d04e-4779-b272-b3a5e8b4713f"
 			name="XML_Datei_Umsatzsteuer_Jahreserklärung_VORVORJAHR_prüfen">
@@ -2133,28 +2595,28 @@ Jahreserklärung JUVA***"
 				</parameters>
 			</smartfoldernode>
 			<testmodule
-			id="a39155bd-8567-4a85-a2ea-d5f5882890c7"
-			name="StartAUT_JUVA"
-			ref="cc589370-2dc0-4ea4-a645-9b68fba3e950"
+			id="a3c6f18f-579a-4d9f-8380-fe8023ed0859"
+			name="Formularzuordnungen_kopieren_D20_auf_Form_VORJAHR"
+			ref="79d7ac38-b71c-48bf-b026-78806d7bd358"
 			type="Recording">
 				<databinding>
 					<var
 					dataname="Firma"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="b0e19ff4-834e-4fc1-9732-74fb4c7f1371"
+					variableid="13e9df82-b179-436d-83a2-95f5b72b6ac0"
 					variablename="Firma">
 					</var>
 					<var
-					dataname="Programm"
+					dataname="UVA_VORJAHR_Form_Name"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="5b90daa0-831c-4477-abc0-4374a91542ab"
-					variablename="Programm">
+					variableid="f5c5f815-dc1f-46f8-9ecf-09f5ab8a5244"
+					variablename="UVA_VORJAHR_Form_Name">
 					</var>
 					<var
-					dataname="Startfile"
+					dataname="UVA_D20_Form_Name"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="e2c56f99-39c1-4722-b960-f63173d7c1af"
-					variablename="Startfile">
+					variableid="3c5c1e2a-a7f1-49f6-b8e1-68dcb101f098"
+					variablename="UVA_D20_Form_Name">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2215,7 +2677,7 @@ Jahreserklärung JUVA***"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="XML_JUVA_VERSION_VORJAHR"
+					dataname="XML_JUVA_VERSION_VORVORJAHR"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="4d1a684f-98a9-40fc-8670-bdd310f1afd2"
 					variablename="XML_JUVA_VERSION_VORJAHR">
@@ -2229,10 +2691,10 @@ Jahreserklärung JUVA***"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Eric_Version_UVA_JAHRNEU_01"
+					dataname="Eric_UVA_JAHRNEU_01_39_2"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="af486e2c-a6cb-4f58-a2ab-ebea31728676"
-					variablename="Eric_Version_UVA_JAHRNEU_01">
+					variablename="Eric_UVA_JAHRNEU_01_39_2">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2271,20 +2733,6 @@ Jahreserklärung JUVA***"
 			name="teardown">
 			</teardown>
 			<testmodule
-			id="a98859ce-b5e5-47e2-8608-ff20b8373dbf"
-			name="Pruefung_Inhalt_XML_Version_VORJAHR"
-			ref="e243f047-ff4c-47bf-ba20-ec14ebe92ac0"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="XML_JUVA_VERSION_VORJAHR"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="4d1a684f-98a9-40fc-8670-bdd310f1afd2"
-					variablename="XML_JUVA_VERSION_VORJAHR">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="a98f2d8f-63fe-4f0d-bc8d-f6c25af96098"
 			name="Close_notepad_Eric"
 			ref="8737f694-0e9d-46c6-b724-bcdf5bf9bb33"
@@ -2292,7 +2740,7 @@ Jahreserklärung JUVA***"
 			</testmodule>
 			<testmodule
 			id="ab02cf10-7721-4340-952f-152edcff5357"
-			name="Register_Jahreserklaerung_Eingaben_VORVORJAHR"
+			name="JUVA_Register_Jahreserklaerung_Eingaben_VORVORJAHR"
 			ref="7cd75900-6105-45d8-8cfe-c8b5c2183d23"
 			type="Recording">
 				<databinding>
@@ -2308,59 +2756,35 @@ Jahreserklärung JUVA***"
 			id="ab66941d-ba84-4105-b9fc-c71aa053f689"
 			name="setup">
 			</setup>
-			<smartfoldernode
-			id="ac1de4e7-90dc-4717-9820-809db82bdd00"
-			name="Eric_log_Eric_Version_pruefen_JAHRNEU_Januar">
-			</smartfoldernode>
 			<testmodule
-			id="ac6a9d0f-df09-44b9-b985-6137329fb368"
-			name="CloseAUT_JUVA"
-			ref="d0e040b9-1073-4093-9e9d-64ce981c597c"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="ad0a6807-72ec-46b7-9a04-92de83bdc9ac"
-			name="Formular_VORVORJAHR_Formular_vorhanden_Drucken_aktiv"
-			ref="a15f4e82-590b-4bda-8786-cef3f258b52b"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="UVA_VORVORJAHR_Form_Code"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="10aa7541-55d1-4609-8f40-ae6f1a524775"
-					variablename="UVA_VORVORJAHR_Form_Code">
-					</var>
-					<var
-					dataname="UVA_VORVORJAHR_Form_Name"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="f9e0c706-5661-4b4b-8b5f-4d8d6c9eaec8"
-					variablename="UVA_VORVORJAHR_Form_Name">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="ad7e8e7f-21ba-4cfe-ade7-c110dec95740"
-			name="StartAUT_JUVA"
-			ref="cc589370-2dc0-4ea4-a645-9b68fba3e950"
+			id="ab7c5bbb-509c-4a11-a449-56e8e2f171ab"
+			name="Elster_DSGVO_bestaetigen"
+			ref="79f8f0dd-8fae-4c05-a415-be91bae4fca5"
 			type="Recording">
 				<databinding>
 					<var
 					dataname="Firma"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="b0e19ff4-834e-4fc1-9732-74fb4c7f1371"
+					variableid="b6a57e77-2e49-482e-9136-674b64e488c3"
 					variablename="Firma">
 					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			id="ac1de4e7-90dc-4717-9820-809db82bdd00"
+			name="Eric_log_Eric_Version_pruefen_JAHRNEU_Januar">
+			</smartfoldernode>
+			<testmodule
+			id="ae24ccf7-1b76-42cb-8e1a-265b93fec11f"
+			name="Elster_DSGVO_bestaetigen"
+			ref="79f8f0dd-8fae-4c05-a415-be91bae4fca5"
+			type="Recording">
+				<databinding>
 					<var
-					dataname="Programm"
+					dataname="Firma"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="5b90daa0-831c-4477-abc0-4374a91542ab"
-					variablename="Programm">
-					</var>
-					<var
-					dataname="Startfile"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="e2c56f99-39c1-4722-b960-f63173d7c1af"
-					variablename="Startfile">
+					variableid="b6a57e77-2e49-482e-9136-674b64e488c3"
+					variablename="Firma">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2378,31 +2802,29 @@ Jahreserklärung JUVA***"
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="aef2d785-d03b-4ee1-8107-2323b766c3eb"
+			name="Formular_VORVORJAHR_auswaehlen"
+			ref="858d529e-605f-46c4-844c-22a8c12d191d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="UVA_VORVORJAHR_Form_Name"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="f9e0c706-5661-4b4b-8b5f-4d8d6c9eaec8"
+					variablename="UVA_VORVORJAHR_Form_Name">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="af0cd15a-e9cc-4712-a3de-5e61d61824ca"
 			name="setup">
 			</setup>
 			<testmodule
-			id="b02104d1-0727-4702-9a84-537de5c85c9d"
-			name="Register_Jahreserklaerung_Eingaben_VORJAHR"
-			ref="7b98e923-7afe-463c-ba6c-6f16b91c833d"
+			id="b0fd3bd0-6659-4832-8d69-287e56a06210"
+			name="CloseAUT_B_UVA"
+			ref="4a6e9877-466b-4f4b-a082-35829a25c757"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="VORJAHR"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="d661db4a-85a2-4cf2-864f-fdb816cb3e18"
-					variablename="VORJAHR">
-					</var>
-				</databinding>
-				<missingdatabinding>
-					<var
-					dataname="Jahr"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="d661db4a-85a2-4cf2-864f-fdb816cb3e18"
-					variablename="VORJAHR">
-					</var>
-				</missingdatabinding>
 			</testmodule>
 			<testmodule
 			id="b10a04ce-69dc-480e-8903-34d845e7d9e1"
@@ -2411,22 +2833,48 @@ Jahreserklärung JUVA***"
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="b1234274-573d-4321-8a75-755884cf096f"
+			name="Oeffnen_notepad_XML_Datei"
+			ref="86383f54-919d-42f4-a0a5-75cf61184fe3"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="XML_UVA_Pfad_Datei"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="45c635e3-2140-4abe-a2a5-4bec112023be"
+					variablename="XML_UVA_Pfad_Datei">
+					</var>
+					<var
+					dataname="XML_UVA_Datei"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="9a617ced-bff6-497b-9ff6-f6654650da33"
+					variablename="XML_UVA_Datei">
+					</var>
+					<var
+					dataname="Programm_2"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="6638446f-c51a-456d-92ba-02636d7bb748"
+					variablename="Programm_2">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="b1cf6be4-fe63-4584-890f-bbaf264771c7"
 			name="loeschen_Eric_log"
 			ref="a1546d34-ced4-4a9d-9f79-c067c19b39b4"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Eric_log_Datei"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="1acc6b6d-3485-4f8b-8900-ade6de98f7bd"
-					variablename="Eric_log_Datei">
-					</var>
-					<var
 					dataname="Pfad"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="1544a1bd-7e67-4dd4-a94d-3817e47f2a00"
 					variablename="Pfad">
+					</var>
+					<var
+					dataname="Eric_log_Datei"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="1acc6b6d-3485-4f8b-8900-ade6de98f7bd"
+					variablename="Eric_log_Datei">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2451,8 +2899,28 @@ Jahreserklärung JUVA***"
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="b2a5c0b9-571d-4865-b5c5-a0c84ef1d85b"
+			name="loeschen_Eric_log"
+			ref="a1546d34-ced4-4a9d-9f79-c067c19b39b4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Pfad"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="1544a1bd-7e67-4dd4-a94d-3817e47f2a00"
+					variablename="Pfad">
+					</var>
+					<var
+					dataname="Eric_log_Datei"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="1acc6b6d-3485-4f8b-8900-ade6de98f7bd"
+					variablename="Eric_log_Datei">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="b353a0b8-8b2c-4375-aed8-926a8925fcba"
-			name="Elster_XML_Ausgabe_ausl_U_Weiter_Button"
+			name="JUVA_Elster_XML_Ausgabe_ausl_U_Weiter_Button"
 			ref="a7bf68b7-a23a-426d-bde8-b8ac3ca955b2"
 			type="Recording">
 			</testmodule>
@@ -2503,6 +2971,20 @@ Jahreserklärung JUVA***"
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="b558bea3-051b-48e3-b9b7-5ace31b36d17"
+			name="Elster_Meldung_RS_bestaetigen"
+			ref="df6cf4c2-4032-4b4f-82bf-7e115ef13e5b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="73141391-e390-4db1-ad62-ee61006e8529"
+					variablename="Firma">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="b93096cb-1ad5-4238-9779-a7789b01f239"
 			name="Pruefung_Inhalt_XML_JUVA_Header"
 			ref="479cf6e0-8dec-4f2f-ba53-101cb79a60c3"
@@ -2532,12 +3014,10 @@ Jahreserklärung JUVA***"
 			id="ba8b8ceb-bb55-4cfe-a44a-7e47152a7751"
 			name="setup">
 			</setup>
-			<testmodule
-			id="bd5e8be6-7041-457c-bbfc-bc5bc65834ed"
-			name="Elster_Schnittstelle_pruefen"
-			ref="5fdb74c1-2319-41e3-83c3-65b3da22e78e"
-			type="Recording">
-			</testmodule>
+			<setup
+			id="ba8ba792-ee6f-4df7-a159-1fd4b53d927d"
+			name="setup">
+			</setup>
 			<testmodule
 			id="bd6116c5-04c5-419b-882c-d89c8ef821da"
 			name="Sichern_XML_JUVA_VORJAHR"
@@ -2554,7 +3034,7 @@ Jahreserklärung JUVA***"
 			</testmodule>
 			<testmodule
 			id="beee827c-e1e4-4cc6-ab8a-4bc46eaf04a3"
-			name="Register_Jahreserklaerung_Eingaben_VORJAHR"
+			name="JUVA_Register_Jahreserklaerung_Eingaben_VORJAHR"
 			ref="7b98e923-7afe-463c-ba6c-6f16b91c833d"
 			type="Recording">
 				<databinding>
@@ -2584,6 +3064,14 @@ Jahreserklärung JUVA***"
 					</param>
 				</parameters>
 			</smartfoldernode>
+			<setup
+			id="c168bc2f-5f35-47b2-8853-a69f5bd3a269"
+			name="setup">
+			</setup>
+			<teardown
+			id="c29da011-08e7-4cb7-bf18-9fb2ef80d6ea"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="c485f248-eec3-460c-abf7-6546e3bcacef"
 			name="Loeschen_XML_JUVA"
@@ -2605,8 +3093,46 @@ Jahreserklärung JUVA***"
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="c4d8743a-99bd-4d3e-9b3f-553ca827f015"
+			name="Oeffnen_notepad_Eric_log"
+			ref="64f64ba9-b64c-4582-bd7c-76c6f8db9ae4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Programm_2"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="0d99413d-3d4b-4d78-9251-d18ca89271c1"
+					variablename="Programm_2">
+					</var>
+					<var
+					dataname="Eric_log_Pfad_Datei"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="a845503a-1abf-4c29-83c1-f8c78cd040ca"
+					variablename="Eric_log_Pfad_Datei">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="c6f5dfc9-969f-4361-8516-0855cf6ada25"
+			name="Elster_Meldung_RS_bestaetigen"
+			ref="df6cf4c2-4032-4b4f-82bf-7e115ef13e5b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="73141391-e390-4db1-ad62-ee61006e8529"
+					variablename="Firma">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			id="c74a331a-2d75-4797-a05a-b3bd4c251b7b"
+			name="Monats_UVA_2023_12_VORJAHR_bis_Plausibilitaetspruefung">
+			</smartfoldernode>
+			<testmodule
 			id="c9cdafc3-7964-488d-ace5-d0b478ed7ef5"
-			name="Formularzuordnungen_kopieren_D20_VORVORJAHR"
+			name="Formularzuordnungen_kopieren_D20_auf_Form_VORVORJAHR"
 			ref="63d81bcb-4195-4664-be43-65a6afa961a5"
 			type="Recording">
 				<databinding>
@@ -2617,15 +3143,29 @@ Jahreserklärung JUVA***"
 					variablename="UVA_VORVORJAHR_Form_Name">
 					</var>
 					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="eb5c4176-76c1-417c-83aa-71d3badd0f16"
+					variablename="Firma">
+					</var>
+					<var
 					dataname="UVA_D20_Form_Name"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="c778c957-01ff-43ce-9ab5-90fc30195838"
 					variablename="UVA_D20_Form_Name">
 					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="ca17a957-fce5-48d7-9c3a-2310d1b38de1"
+			name="Elster_Meldung_RS_bestaetigen"
+			ref="df6cf4c2-4032-4b4f-82bf-7e115ef13e5b"
+			type="Recording">
+				<databinding>
 					<var
 					dataname="Firma"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="eb5c4176-76c1-417c-83aa-71d3badd0f16"
+					variableid="73141391-e390-4db1-ad62-ee61006e8529"
 					variablename="Firma">
 					</var>
 				</databinding>
@@ -2634,10 +3174,57 @@ Jahreserklärung JUVA***"
 			id="cc023ec1-23df-45e6-84a5-d95a088e01fd"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="cc0f51fe-3eb6-432f-92bb-eadb0cb7ba3f"
+			name="Elster_Meldung_RS_bestaetigen"
+			ref="df6cf4c2-4032-4b4f-82bf-7e115ef13e5b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="73141391-e390-4db1-ad62-ee61006e8529"
+					variablename="Firma">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			id="cd93afb8-c6b2-469f-bd91-b6a461fdedbd"
+			name="Formular_D20_nach_Formular_VORJAHR_kopieren">
+				<description>
+					<![CDATA[<p>Formular D24 noch nicht vorhanden, vorerst kopieren von D20 nach D23 + Ausgabe Werte 01/2024 auf D23</p>]]>
+				</description>
+			</smartfoldernode>
 			<smartfoldernode
 			id="ce6aa7a2-62e6-47ec-ab2c-f1e3334b71ae"
 			name="Monats_UVA_JAHRNEU__bis_Plausibilitaetspruefung">
 			</smartfoldernode>
+			<testmodule
+			id="d0d3c235-911e-4de1-855f-c5dce87c0216"
+			name="StartAUT_b_uva_Formulare_300"
+			ref="46cdf458-b5e0-4a4b-8b8e-404e3c16cdc5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="8e447992-2990-436c-8802-a4342eba09dd"
+					variablename="Firma">
+					</var>
+					<var
+					dataname="Programm"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="3b57cbd2-f26f-4f8c-a674-1f5041491774"
+					variablename="Programm">
+					</var>
+					<var
+					dataname="Startfile"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="3cc74341-3eeb-48cd-a275-0950ec1fb5c9"
+					variablename="Startfile">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="d14703fd-96d1-4aad-b1d3-bf35e1785f69"
 			name="loeschen_Eric_log"
@@ -2645,16 +3232,16 @@ Jahreserklärung JUVA***"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Pfad"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="1544a1bd-7e67-4dd4-a94d-3817e47f2a00"
-					variablename="Pfad">
-					</var>
-					<var
 					dataname="Eric_log_Datei"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="1acc6b6d-3485-4f8b-8900-ade6de98f7bd"
 					variablename="Eric_log_Datei">
+					</var>
+					<var
+					dataname="Pfad"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="1544a1bd-7e67-4dd4-a94d-3817e47f2a00"
+					variablename="Pfad">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2675,6 +3262,20 @@ Jahreserklärung JUVA***"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="0d99413d-3d4b-4d78-9251-d18ca89271c1"
 					variablename="Programm_2">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="d1d826a1-8659-41cd-9091-e45c42658aea"
+			name="Elster_DSGVO_bestaetigen"
+			ref="79f8f0dd-8fae-4c05-a415-be91bae4fca5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="b6a57e77-2e49-482e-9136-674b64e488c3"
+					variablename="Firma">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2700,7 +3301,7 @@ Jahreserklärung JUVA***"
 			</testmodule>
 			<testmodule
 			id="d3d9b9f5-c63e-480f-b0fe-e1231c7908f1"
-			name="Elster_XML_Ausgabe_ausl_U_AnhangUN_ausfuellen"
+			name="JUVA_Elster_XML_Ausgabe_ausl_U_AnhangUN_ausfuellen"
 			ref="cb42792f-0582-4e31-b183-303d2a22dbf4"
 			type="Recording">
 				<databinding>
@@ -2709,6 +3310,12 @@ Jahreserklärung JUVA***"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="81270cff-e4ac-4f4c-a1f6-70ad8d36fdb9"
 					variablename="Bank">
+					</var>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="0e3eb901-bcb9-48ac-87f2-4cf837e72791"
+					variablename="Firma">
 					</var>
 					<var
 					dataname="IBAN"
@@ -2740,10 +3347,34 @@ Jahreserklärung JUVA***"
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="d49b7a2b-5384-4629-99d6-00a27cdc325c"
+			name="XML_Datei_Monats_2023_12_VORJAHR_pruefen">
+			</smartfoldernode>
 			<teardown
 			id="d4c0ec2a-6d3a-4355-9101-a1cf6b534083"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="d5bde9e7-8543-4805-a230-ea69e027c574"
+			name="Oeffnen_notepad_Eric_log"
+			ref="64f64ba9-b64c-4582-bd7c-76c6f8db9ae4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Eric_log_Pfad_Datei"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="a845503a-1abf-4c29-83c1-f8c78cd040ca"
+					variablename="Eric_log_Pfad_Datei">
+					</var>
+					<var
+					dataname="Programm_2"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="0d99413d-3d4b-4d78-9251-d18ca89271c1"
+					variablename="Programm_2">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="d73756fd-58d5-4afb-a715-df9e7cda468d"
 			name="Pruefung_Inhalt_XML_ZM_Datei_VORJAHR_12_quart_32"
@@ -2809,24 +3440,36 @@ Jahreserklärung JUVA***"
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="d809c854-3d4b-413c-8bb6-dfacf6a70d5d"
-			name="Elster_XML_Ausgabe_starten_Meldung_RS_bestaetigen"
-			ref="e521a925-b3f6-4c4d-a185-bada0f1035f1"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Firma"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="23230108-ec86-4f52-913a-f5449b833204"
-					variablename="Firma">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="d8cd0288-1987-4f95-9bc7-1738ab842155"
 			name="Elster_Schnittstelle_pruefen"
 			ref="19f7770e-cf1c-4933-9a1e-033535ffe983"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="d8f9bc4b-9e97-4ef2-a346-7cfdce1caaea"
+			name="StartAUT_b_uva_Formulare_300"
+			ref="46cdf458-b5e0-4a4b-8b8e-404e3c16cdc5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="3cc74341-3eeb-48cd-a275-0950ec1fb5c9"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="3b57cbd2-f26f-4f8c-a674-1f5041491774"
+					variablename="Programm">
+					</var>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="8e447992-2990-436c-8802-a4342eba09dd"
+					variablename="Firma">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="d9762c47-59e1-47f0-a9d2-372a41c7d66b"
@@ -2880,7 +3523,7 @@ Jahreserklärung JUVA***"
 			</testmodule>
 			<testmodule
 			id="dbc14d00-d923-4861-8d84-a963c0b351f6"
-			name="Elster_Aufruf_DSGVO_Meldung_RS_bestaetigen"
+			name="ZM_ELSTER_Button_pruefen_aufrufen"
 			ref="4b8b6245-d99f-4213-8a57-489c1a03142f"
 			type="Recording">
 				<databinding>
@@ -2892,14 +3535,26 @@ Jahreserklärung JUVA***"
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="dfda2a0f-08cb-4495-988d-9d10ba5a1e48"
+			name="Formular_Zuordnung_zu_Zeile_16_pruefen"
+			ref="0fe648ee-3364-487b-bf67-8c708f0affeb"
+			type="Recording">
+			</testmodule>
 			<teardown
 			id="e03fa518-8a9a-4d03-bf18-09c125c047db"
 			name="teardown">
 			</teardown>
 			<testcase
 			id="e0b4d7ae-cd51-4d43-9a37-08e09a39243a"
-			name="Jahreserklärung_VORVORJAHR_2022_Inland_und_ausl_Unternehmen_Kopieren_Form_D20_nach_VOR_VORJAHR_D22">
+			name="Jahreserklärung_2022_VORVORJAHR_und_ausl_U_und_Kopieren_D20_nach_D22">
 			</testcase>
+			<testmodule
+			id="e18c3070-17ee-466f-9b44-4c99fd8456d5"
+			name="CloseAUT_B_UVA"
+			ref="4a6e9877-466b-4f4b-a082-35829a25c757"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="e1957734-a521-455d-8ff3-5e6de62b215d"
 			name="Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung"
@@ -2955,16 +3610,22 @@ Jahreserklärung JUVA***"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Eric_Version_JUVA_VORVORJAHR"
+					dataname="Eric_JUVA_VORVORJAHR_39_2"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="6f1588b5-332b-4eec-8777-1fb6b05937e6"
-					variablename="Eric_Version_JUVA_VORVORJAHR">
+					variablename="Eric_JUVA_VORVORJAHR_39_2">
 					</var>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="e4f408e5-7d66-48b5-99fe-ae0dd159f827"
+			name="Close_notepad_Eric"
+			ref="8737f694-0e9d-46c6-b724-bcdf5bf9bb33"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="e6b02885-1c98-4a58-af62-465de1ae54ef"
-			name="CloseAUT_Elster"
+			name="CloseAUT_B_ELSTER"
 			ref="33a05665-a526-47e3-8d65-e63868eef75f"
 			type="Recording">
 			</testmodule>
@@ -2987,10 +3648,30 @@ Jahreserklärung JUVA***"
 			name="XML_Datei_Umsatzsteuer_Jahreserklärung_VORVORJAHR_prüfen_Anlage_UN_ausl_Unternehmen">
 			</smartfoldernode>
 			<testmodule
-			id="e7fb0ed4-9d1e-4930-b248-f8882b4bef83"
-			name="ZM_ELSTER_Plausipruefung_durchfuehren"
-			ref="9ceb882d-09c4-4618-b4ed-6d55edbf4288"
+			id="e7cb1a65-7f95-4289-8734-593074144d22"
+			name="Formularzuordnungen_kopieren_D20_auf_Form_VORJAHR"
+			ref="79d7ac38-b71c-48bf-b026-78806d7bd358"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="13e9df82-b179-436d-83a2-95f5b72b6ac0"
+					variablename="Firma">
+					</var>
+					<var
+					dataname="UVA_VORJAHR_Form_Name"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="f5c5f815-dc1f-46f8-9ecf-09f5ab8a5244"
+					variablename="UVA_VORJAHR_Form_Name">
+					</var>
+					<var
+					dataname="UVA_D20_Form_Name"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="3c5c1e2a-a7f1-49f6-b8e1-68dcb101f098"
+					variablename="UVA_D20_Form_Name">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="e943f6a4-2870-457f-8c7b-d8d87b00f490"
@@ -3015,6 +3696,26 @@ Jahreserklärung JUVA***"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="6638446f-c51a-456d-92ba-02636d7bb748"
 					variablename="Programm_2">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="ea8311c7-4cbc-4561-90f7-6802a431d3e6"
+			name="CloseAUT_B_ELSTER"
+			ref="33a05665-a526-47e3-8d65-e63868eef75f"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="ea9425b3-d7ff-4402-8148-12858b96f8f5"
+			name="Eric_Version_JUVA_VORJAHR_pruefen"
+			ref="e714d84f-904b-4c76-96df-d78643245d73"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Eric_JUVA_VORJAHR_39_2"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="6bc6d86e-4a75-4a0c-8614-73a8b4315c7b"
+					variablename="Eric_JUVA_VORJAHR_39_2">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3057,9 +3758,9 @@ Jahreserklärung JUVA***"
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="ed79f2d8-9301-45ac-a11d-b5f5f0744cf9"
-			name="CloseAUT_JUVA"
-			ref="d0e040b9-1073-4093-9e9d-64ce981c597c"
+			id="ed691095-ce6d-4178-b125-ba3f80429a0c"
+			name="Elster_Schnittstelle_pruefen"
+			ref="19f7770e-cf1c-4933-9a1e-033535ffe983"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -3089,8 +3790,62 @@ Jahreserklärung JUVA***"
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="ee2461a3-9912-4ae7-8d5b-eb67ee494cc1"
+			name="StartAUT_b_uva_Formulare_300"
+			ref="46cdf458-b5e0-4a4b-8b8e-404e3c16cdc5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="3cc74341-3eeb-48cd-a275-0950ec1fb5c9"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="3b57cbd2-f26f-4f8c-a674-1f5041491774"
+					variablename="Programm">
+					</var>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="8e447992-2990-436c-8802-a4342eba09dd"
+					variablename="Firma">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="efbd74e9-fb82-4328-b433-4ae074ece74c"
+			name="UVA_JUVA_ELSTER_Button_pruefen_aufrufen"
+			ref="fa5ab6f0-c142-47c8-8ea1-4e0eec673985"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="14318655-facf-4f60-b96d-e07ebaf32e8b"
+					variablename="Firma">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="f00d6a67-5ba7-41c0-a209-c985e5569f63"
+			name="Elster_Meldung_RS_bestaetigen"
+			ref="df6cf4c2-4032-4b4f-82bf-7e115ef13e5b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="73141391-e390-4db1-ad62-ee61006e8529"
+					variablename="Firma">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="f00f74e8-ad37-41df-a6e7-757e4d12ced4"
-			name="Pruefung_Inhalt_XML_Zeitraum_Ende"
+			name="Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum_Ende"
 			ref="dddb6907-4caf-4540-845d-4fe4e4c3d7fe"
 			type="Recording">
 				<databinding>
@@ -3124,7 +3879,7 @@ Jahreserklärung JUVA***"
 			</testmodule>
 			<testmodule
 			id="f0c540e8-6c6f-4bcc-a756-876e6b66f3e0"
-			name="Sichern_XML_JUVA_ausl_U_VORJAHR"
+			name="Sichern_XML_JUVA_VORJAHR_ausl_U"
 			ref="8d7fc0ec-86d6-4637-b3af-15cde2475687"
 			type="Recording">
 				<databinding>
@@ -3133,32 +3888,6 @@ Jahreserklärung JUVA***"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="389d57fe-2a21-4735-8e08-f6a172d4e636"
 					variablename="XML_Inhalt_aktuell">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="f15112f0-af45-4888-8fec-ffa24a3f99cb"
-			name="StartAUT_JUVA"
-			ref="cc589370-2dc0-4ea4-a645-9b68fba3e950"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="Firma"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="b0e19ff4-834e-4fc1-9732-74fb4c7f1371"
-					variablename="Firma">
-					</var>
-					<var
-					dataname="Programm"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="5b90daa0-831c-4477-abc0-4374a91542ab"
-					variablename="Programm">
-					</var>
-					<var
-					dataname="Startfile"
-					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
-					variableid="e2c56f99-39c1-4722-b960-f63173d7c1af"
-					variablename="Startfile">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3193,6 +3922,40 @@ Jahreserklärung JUVA***"
 			name="Elster_Schnittstelle_pruefen"
 			ref="19f7770e-cf1c-4933-9a1e-033535ffe983"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="f1b628de-c6b5-40d8-8295-2438bd92fcbe"
+			name="Formular_VORVORJAHR_Formular_vorhanden_Drucken_aktiv"
+			ref="a15f4e82-590b-4bda-8786-cef3f258b52b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="UVA_VORVORJAHR_Form_Code"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="10aa7541-55d1-4609-8f40-ae6f1a524775"
+					variablename="UVA_VORVORJAHR_Form_Code">
+					</var>
+					<var
+					dataname="UVA_VORVORJAHR_Form_Name"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="f9e0c706-5661-4b4b-8b5f-4d8d6c9eaec8"
+					variablename="UVA_VORVORJAHR_Form_Name">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="f3513383-4b50-480b-9695-eb470c316092"
+			name="UVA_Elster_XML_Ausgabe_starten"
+			ref="12913764-e889-4c7b-bc66-fc6ed41183ad"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="f71adaf8-8b4b-48df-b7a2-c33eb06bfe61"
+					variablename="Firma">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="f4acc7ea-f271-43a7-8bed-3be72c21e39d"
@@ -3239,15 +4002,43 @@ Jahreserklärung JUVA***"
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="f72ddee0-4422-433a-9b79-11e67ec18e62"
-			name="Formular_VORJAHR_Zuordnung_zu_Zeile_16_pruefen"
-			ref="52c4bc83-2adf-4174-809c-8ec9486eb071"
+			id="f7b19c26-9e57-4e6e-ac37-d0576a7c9614"
+			name="Elster_Schnittstelle_pruefen"
+			ref="19f7770e-cf1c-4933-9a1e-033535ffe983"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="f8702c23-b204-4819-a46e-d307094446c1"
+			name="Sichern_XML_JUVA_VORVORJAHR_ausl_U"
+			ref="21c57112-8109-4cd9-9a17-0fc3a6580fd8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="XML_Inhalt_aktuell"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="6a6aa712-f439-4f8b-83dd-8699dc0734d1"
+					variablename="XML_Inhalt_aktuell">
+					</var>
+				</databinding>
 			</testmodule>
 			<teardown
 			id="f978be91-feb2-448e-a8e3-616605101a06"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="fa10e806-00a5-4af8-953a-dbd56afbf747"
+			name="UVA_JUVA_ELSTER_Button_pruefen_aufrufen"
+			ref="fa5ab6f0-c142-47c8-8ea1-4e0eec673985"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="14318655-facf-4f60-b96d-e07ebaf32e8b"
+					variablename="Firma">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="fa3f7e14-5fdb-4442-80a1-fa381bca610e"
 			name="Sichern_XML_ZM_JAHRNEU_01"
@@ -3261,6 +4052,52 @@ Jahreserklärung JUVA***"
 					variablename="XML_Inhalt_aktuell">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="fab29b46-012f-489e-a1b4-b2fc79bbdcf2"
+			name="UVA_JUVA_ELSTER_Button_pruefen_aufrufen"
+			ref="fa5ab6f0-c142-47c8-8ea1-4e0eec673985"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="14318655-facf-4f60-b96d-e07ebaf32e8b"
+					variablename="Firma">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="fadc54c0-4644-4574-8011-d3d0f78e6cc2"
+			name="Elster_Schnittstelle_pruefen"
+			ref="19f7770e-cf1c-4933-9a1e-033535ffe983"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="fae880ff-289b-4820-a8e5-66bebf2a3525"
+			name="loeschen_Eric_log"
+			ref="a1546d34-ced4-4a9d-9f79-c067c19b39b4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Pfad"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="1544a1bd-7e67-4dd4-a94d-3817e47f2a00"
+					variablename="Pfad">
+					</var>
+					<var
+					dataname="Eric_log_Datei"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="1acc6b6d-3485-4f8b-8900-ade6de98f7bd"
+					variablename="Eric_log_Datei">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="faf81462-282c-4077-b430-a640cee34e2a"
+			name="Close_notepad_Eric"
+			ref="8737f694-0e9d-46c6-b724-bcdf5bf9bb33"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="fb750a00-deb5-4b4f-a788-f96d416cdf81"
@@ -3281,16 +4118,36 @@ Jahreserklärung JUVA***"
 			name="teardown">
 			</teardown>
 			<testmodule
+			id="fdb9c5fe-3ee6-4a7c-9603-cb3688d6dd8b"
+			name="Loeschen_XML_UVA"
+			ref="e913ecb5-9e28-4d8c-932c-9b3e7d55c731"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Pfad"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="452fee4c-86be-4eab-b309-afdc65151d57"
+					variablename="Pfad">
+					</var>
+					<var
+					dataname="XML_UVA_Datei"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="be048278-7473-4332-b476-d8d5506486af"
+					variablename="XML_UVA_Datei">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="fe01e77e-01d3-4698-8e0a-a2ec7f16718d"
 			name="Eric_Version_ZM_JAHRNEU_01_pruefen"
 			ref="27453a92-84f3-4162-b4b3-a239cb3d3bc7"
 			type="Recording">
 				<databinding>
 					<var
-					dataname="Eric_Version_ZM_VORJAHR_12"
+					dataname="Eric_ZM_JAHRNEU_01_39_2"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="0018eb0b-531f-4dbe-98f3-f02e5d459375"
-					variablename="Eric_Version_ZM_JAHRNEU_01">
+					variablename="Eric_ZM_JAHRNEU_01_39_2">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3311,6 +4168,32 @@ Jahreserklärung JUVA***"
 					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
 					variableid="d5542513-3b78-4e62-8c14-239120a90aee"
 					variablename="Eric_log_Inhalt_aktuell">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="ff4e87aa-6d7a-4776-9e96-2ba9da2e044a"
+			name="StartAUT_b_uva_Formulare_300"
+			ref="46cdf458-b5e0-4a4b-8b8e-404e3c16cdc5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Startfile"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="3cc74341-3eeb-48cd-a275-0950ec1fb5c9"
+					variablename="Startfile">
+					</var>
+					<var
+					dataname="Programm"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="3b57cbd2-f26f-4f8c-a674-1f5041491774"
+					variablename="Programm">
+					</var>
+					<var
+					dataname="Firma"
+					datasourceid="07faec4f-5df9-4a2d-8826-e5d5286533c5"
+					variableid="8e447992-2990-436c-8802-a4342eba09dd"
+					variablename="Firma">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3338,7 +4221,7 @@ Jahreserklärung JUVA***"
 				name="B_ELSTER_2024_UVA_JUVA_ZM">
 					<testcase
 					id="1ac14b3e-9580-4fbf-9b48-6b7eac226602"
-					name="ZM_VORJAHR_2023_12">
+					name="ZM_VORJAHR_2023_12_VORJAHR">
 						<smartfoldernode
 						id="4c9817dd-df37-4ca4-ba07-79cf6ef7acfb"
 						name="ZM_bis_Plausipruefung_VORJAHR_Dezember">
@@ -3356,22 +4239,30 @@ Jahreserklärung JUVA***"
 							</testmodule>
 							<testmodule
 							id="41ac945f-5354-469a-8c5d-29706b6aa554"
-							name="Elster_Aufruf_DSGVO_Meldung_RS_bestaetigen">
+							name="ZM_ELSTER_Button_pruefen_aufrufen">
 							</testmodule>
 							<testmodule
-							id="82a0a6f4-f1c6-45ae-89ee-007a6d5e6517"
+							id="ab7c5bbb-509c-4a11-a449-56e8e2f171ab"
+							name="Elster_DSGVO_bestaetigen">
+							</testmodule>
+							<testmodule
+							id="ca17a957-fce5-48d7-9c3a-2310d1b38de1"
+							name="Elster_Meldung_RS_bestaetigen">
+							</testmodule>
+							<testmodule
+							id="f7b19c26-9e57-4e6e-ac37-d0576a7c9614"
 							name="Elster_Schnittstelle_pruefen">
 							</testmodule>
 							<testmodule
-							id="57c3052b-e265-4522-aaa3-15f61788c5be"
-							name="ZM_ELSTER_Plausipruefung_durchfuehren">
+							id="84d2baae-5b40-4fd1-9951-0bdf30f7cffb"
+							name="Elster_Plausipruefung_durchfuehren">
 							</testmodule>
 							<teardown
 							id="36e8e2ff-322b-42dd-92f4-8ce9f80870a2"
 							name="teardown">
 								<testmodule
-								id="0b826816-eb4a-4b6f-aba7-5f5a337859a7"
-								name="CloseAUT_ELSTER">
+								id="81dbd572-9e21-477d-8763-e676535b6cb1"
+								name="CloseAUT_B_ELSTER">
 								</testmodule>
 								<testmodule
 								id="101c78e4-8f21-4c81-ad02-a6920024dd18"
@@ -3446,7 +4337,7 @@ Jahreserklärung JUVA***"
 					</testcase>
 					<testcase
 					id="08c1d0ee-d9bb-47d7-bd6b-d8af8741b1f4"
-					name="ZM_JAHRNEU_2024_01">
+					name="ZM_JAHRNEU_2024_01_JAHRNEU">
 						<smartfoldernode
 						id="9658e6fb-83a6-4ee8-856f-be2a45ccb9df"
 						name="ZM_bis_Plausipruefung_JAHRNEU_Januar">
@@ -3464,22 +4355,30 @@ Jahreserklärung JUVA***"
 							</testmodule>
 							<testmodule
 							id="dbc14d00-d923-4861-8d84-a963c0b351f6"
-							name="Elster_Aufruf_DSGVO_Meldung_RS_bestaetigen">
+							name="ZM_ELSTER_Button_pruefen_aufrufen">
 							</testmodule>
 							<testmodule
-							id="bd5e8be6-7041-457c-bbfc-bc5bc65834ed"
+							id="ae24ccf7-1b76-42cb-8e1a-265b93fec11f"
+							name="Elster_DSGVO_bestaetigen">
+							</testmodule>
+							<testmodule
+							id="b558bea3-051b-48e3-b9b7-5ace31b36d17"
+							name="Elster_Meldung_RS_bestaetigen">
+							</testmodule>
+							<testmodule
+							id="86191f79-506a-4f93-bc75-74a91991a07f"
 							name="Elster_Schnittstelle_pruefen">
 							</testmodule>
 							<testmodule
-							id="e7fb0ed4-9d1e-4930-b248-f8882b4bef83"
-							name="ZM_ELSTER_Plausipruefung_durchfuehren">
+							id="7373e58a-eb06-43ff-9de0-56e9dd22b10a"
+							name="Elster_Plausipruefung_durchfuehren">
 							</testmodule>
 							<teardown
 							id="d9a05c9e-b4f1-4c3e-9270-b2177efadbd1"
 							name="teardown">
 								<testmodule
-								id="4f073989-c7bf-495b-a0e1-99766b19d9b8"
-								name="CloseAUT_ELSTER">
+								id="ea8311c7-4cbc-4561-90f7-6802a431d3e6"
+								name="CloseAUT_B_ELSTER">
 								</testmodule>
 								<testmodule
 								id="4b58d2d5-5edc-4248-bbbc-6a17b46d7948"
@@ -3553,286 +4452,26 @@ Jahreserklärung JUVA***"
 						</smartfoldernode>
 					</testcase>
 					<testcase
-					id="8fb1ed68-e604-43c3-818f-a32d737a47e1"
-					name="Jahreserklärung_VORJAHR_2023_Inland_und_ausl_Unternehmen_Kopieren_Form_D20_nach_VORJAHR_D23">
-						<setup
-						id="8435d987-00ef-4d27-98e0-a9d51cd54781"
-						name="setup">
-							<testmodule
-							id="ad7e8e7f-21ba-4cfe-ade7-c110dec95740"
-							name="StartAUT_JUVA">
-							</testmodule>
-						</setup>
-						<smartfoldernode
-						id="3331dbdb-87ee-4a14-bdd5-54e8a8ce8d75"
-						name="Formular_D20_nach_Formular_VORJAHJR_kopieren">
-							<testmodule
-							id="95a5ba56-90e9-4971-85b6-19675db1d85e"
-							name="Formular_VORJAHR_Formular_vorhanden_Drucken_aktiv">
-							</testmodule>
-							<testmodule
-							id="095c05fa-9dd2-4b15-b937-00cd591e6540"
-							name="Formularzuordnungen_kopieren_D20_VORJAHR">
-							</testmodule>
-							<testmodule
-							id="78926de4-89a5-4a67-b1a1-f268a36a507c"
-							name="Formular_VORJAHR_Zeile_1_Zeile_16_pruefen">
-							</testmodule>
-							<testmodule
-							id="f72ddee0-4422-433a-9b79-11e67ec18e62"
-							name="Formular_VORJAHR_Zuordnung_zu_Zeile_16_pruefen">
-							</testmodule>
-						</smartfoldernode>
-						<smartfoldernode
-						id="0094d89b-ff49-4ef9-a9fd-768e2d7120cb"
-						name="Jahreserklärung_VORJAHR_bis_Plausibilitaetspruefung">
-							<testmodule
-							id="1dd2f750-0211-467d-9583-db1e6a88bdf7"
-							name="UVA_Drucken_aufrufen">
-							</testmodule>
-							<testmodule
-							id="fb750a00-deb5-4b4f-a788-f96d416cdf81"
-							name="Formular_VORJAHR_auswaehlen">
-							</testmodule>
-							<testmodule
-							id="beee827c-e1e4-4cc6-ab8a-4bc46eaf04a3"
-							name="Register_Jahreserklaerung_Eingaben_VORJAHR">
-							</testmodule>
-							<testmodule
-							id="8f6f79fa-7929-4302-9f0f-fcc0f86dcb7c"
-							name="Elster_aufrufen_DSGVO_bestaetigen">
-							</testmodule>
-							<testmodule
-							id="280f6e98-5b80-40d0-950a-7eb44b5d1665"
-							name="Elster_XML_Ausgabe_starten_Meldung_RS_bestaetigen">
-							</testmodule>
-							<testmodule
-							id="d8cd0288-1987-4f95-9bc7-1738ab842155"
-							name="Elster_Schnittstelle_pruefen">
-							</testmodule>
-							<testmodule
-							id="fe0b8e97-ff14-4ecd-9893-ca174967a748"
-							name="Elster_Plausipruefung_durchfuehren">
-							</testmodule>
-							<teardown
-							id="e03fa518-8a9a-4d03-bf18-09c125c047db"
-							name="teardown">
-								<testmodule
-								id="43fbb137-4f87-4dec-a11f-2e0472a95fc2"
-								name="CloseAUT_ELSTER">
-								</testmodule>
-								<testmodule
-								id="ed79f2d8-9301-45ac-a11d-b5f5f0744cf9"
-								name="CloseAUT_JUVA">
-								</testmodule>
-							</teardown>
-						</smartfoldernode>
-						<smartfoldernode
-						id="c086ddf8-462a-4263-93e0-92c3be62e47b"
-						name="XML_Datei_Umsatzsteuer_Jahreserklärung_VORJAHR_prüfen">
-							<setup
-							id="af0cd15a-e9cc-4712-a3de-5e61d61824ca"
-							name="setup">
-								<testmodule
-								id="0de68280-cdf0-4539-9256-c285d6df8650"
-								name="Oeffnen_notepad_XML_JUVA_Datei">
-								</testmodule>
-								<testmodule
-								id="bd6116c5-04c5-419b-882c-d89c8ef821da"
-								name="Sichern_XML_JUVA_VORJAHR">
-								</testmodule>
-							</setup>
-							<testmodule
-							id="7b889ab2-18bd-4a53-a331-539263383afd"
-							name="Pruefung_Inhalt_XML_JUVA_Header">
-							</testmodule>
-							<testmodule
-							id="7f10f47d-1a8f-4eb3-b4c5-770efa0bb47b"
-							name="Pruefung_Inhalt_XML_Version_VORJAHR">
-							</testmodule>
-							<testmodule
-							id="dac9b149-db23-4bb2-83bc-e00dfe1f3aaf"
-							name="Pruefung_Inhalt_XML_JUVA_Unternehmen_VORJAHR">
-							</testmodule>
-							<testmodule
-							id="5c0c8a59-e331-46dc-b9ed-d8bc1941164e"
-							name="Pruefung_Inhalt_XML_JUVA_INLAND_Best_Art_1">
-							</testmodule>
-							<testmodule
-							id="92dc89ae-a644-4451-b9a4-fd0c69b5185b"
-							name="Pruefung_Inhalt_XML_JUVA_Umsaetze_VORJAHR">
-							</testmodule>
-							<testmodule
-							id="18ec1448-8c6a-4082-9f66-9aa6baf15404"
-							name="Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung">
-							</testmodule>
-							<testmodule
-							id="f00f74e8-ad37-41df-a6e7-757e4d12ced4"
-							name="Pruefung_Inhalt_XML_Zeitraum_Ende">
-							</testmodule>
-							<teardown
-							id="fc5fb8f6-7c63-454f-a47a-e14f1fe29a29"
-							name="teardown">
-								<testmodule
-								id="a7c90226-95c6-46dd-88ca-5fb494bcb46d"
-								name="Close_notepad_XML">
-								</testmodule>
-								<testmodule
-								id="c485f248-eec3-460c-abf7-6546e3bcacef"
-								name="Loeschen_XML_JUVA">
-								</testmodule>
-							</teardown>
-						</smartfoldernode>
-						<smartfoldernode
-						id="f5c27b18-5462-4ce3-92b1-9b1d049dbc8e"
-						name="ELSTER_Jahreserklärung_VORJAHR_Anlage_UN_ausl_Unternehmen">
-							<setup
-							id="98c5a8c3-abec-4cf4-bbed-a041cb0e4727"
-							name="setup">
-								<testmodule
-								id="8e380b04-8f0c-4bff-87b2-6417a2237602"
-								name="StartAUT_JUVA">
-								</testmodule>
-							</setup>
-							<testmodule
-							id="07fa4c19-e894-4b59-87b5-adf06b54d8ff"
-							name="UVA_Drucken_aufrufen">
-							</testmodule>
-							<testmodule
-							id="e6bca589-d25a-4d9b-90d6-92db3738b413"
-							name="Formular_VORJAHR_auswaehlen">
-							</testmodule>
-							<testmodule
-							id="845473e7-6674-4dc4-9980-18818dc81cba"
-							name="Register_Jahreserklaerung_Eingaben_VORJAHR">
-							</testmodule>
-							<testmodule
-							id="690f9a81-cb48-4f42-be1e-d0f682254cbd"
-							name="Elster_aufrufen_DSGVO_bestaetigen">
-							</testmodule>
-							<testmodule
-							id="211c87f9-fc4b-4c46-ae78-19398ef2685f"
-							name="Elster_XML_Ausgabe_ausl_U_starten">
-							</testmodule>
-							<testmodule
-							id="5e90fdf1-74ff-466c-94b9-d852132e1d17"
-							name="Fenstersteuerung_AnlageUN">
-							</testmodule>
-							<testmodule
-							id="d3d9b9f5-c63e-480f-b0fe-e1231c7908f1"
-							name="Elster_XML_Ausgabe_ausl_U_AnhangUN_ausfuellen">
-							</testmodule>
-							<testmodule
-							id="1b88eeab-c24d-4f10-b9fb-7e920c00bd03"
-							name="Elster_XML_Ausgabe_ausl_U_Weiter_Button">
-							</testmodule>
-							<testmodule
-							id="6e58ebd3-f56a-4d52-bf55-91139d637094"
-							name="Elster_XML_Ausgabe_ausl_U_Meldung_RS_bestaetigen">
-							</testmodule>
-							<testmodule
-							id="4bb61eac-b18f-419c-aa80-2354b43d6af9"
-							name="Elster_Schnittstelle_pruefen">
-							</testmodule>
-							<testmodule
-							id="09e20ee6-0fb5-492f-b0ac-40319bfca029"
-							name="Elster_Plausipruefung_durchfuehren">
-							</testmodule>
-							<teardown
-							id="d3e8d66e-f622-4cde-a218-a99a2f50a93a"
-							name="teardown">
-								<testmodule
-								id="23897262-b120-410a-9337-51144d53642b"
-								name="CloseAUT_ELSTER">
-								</testmodule>
-								<testmodule
-								id="ac6a9d0f-df09-44b9-b985-6137329fb368"
-								name="CloseAUT_JUVA">
-								</testmodule>
-							</teardown>
-						</smartfoldernode>
-						<smartfoldernode
-						id="2ea8ceda-4da0-412d-8403-6f5ae6291f7a"
-						name="XML_Datei_Umsatzsteuer_Jahreserklärung_VORJAHR_prüfen_Anlage_UN_ausl_Unternehmen">
-							<setup
-							id="0ff12019-98d3-4ff9-9bcc-0ca8fc6d615b"
-							name="setup">
-								<testmodule
-								id="3566d821-b3c6-4da5-acba-e8f971c17fdf"
-								name="Oeffnen_notepad_XML_JUVA_Datei">
-								</testmodule>
-								<testmodule
-								id="f0c540e8-6c6f-4bcc-a756-876e6b66f3e0"
-								name="Sichern_XML_JUVA_ausl_U_VORJAHR">
-								</testmodule>
-							</setup>
-							<testmodule
-							id="f1a47384-5455-474d-9d26-e282ea89d1d8"
-							name="Pruefung_Inhalt_XML_JUVA_Header">
-							</testmodule>
-							<testmodule
-							id="a4eb2777-96cc-4d80-a3af-6facc43118e2"
-							name="Pruefung_Inhalt_XML_Version_VORJAHR">
-							</testmodule>
-							<testmodule
-							id="2236259d-52e4-4e7e-af2d-e1e5bdce534b"
-							name="Pruefung_Inhalt_XML_JUVA_Unternehmen_VORJAHR">
-							</testmodule>
-							<testmodule
-							id="0047a31e-3d7d-4dbe-9323-7471586900fb"
-							name="Pruefung_Inhalt_XML_JUVA_AUSLAEND_UNTERNEHMER_Best_Art_3">
-							</testmodule>
-							<testmodule
-							id="57ee984e-70bc-4b3d-8833-07a80b34d505"
-							name="Pruefung_Inhalt_XML_JUVA_Umsaetze_VORJAHR">
-							</testmodule>
-							<testmodule
-							id="e1957734-a521-455d-8ff3-5e6de62b215d"
-							name="Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung">
-							</testmodule>
-							<testmodule
-							id="490988b0-e951-4170-baae-6877ea7a9b84"
-							name="Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank_VORJAHR">
-							</testmodule>
-							<testmodule
-							id="3b6be6be-3789-453e-8e2a-fbfe739ee66a"
-							name="Pruefung_Inhalt_XML_Zeitraum_Ende">
-							</testmodule>
-							<teardown
-							id="82d98ed8-a698-486f-8d84-422d2dc0593f"
-							name="teardown">
-								<testmodule
-								id="6fffcc43-9407-40ba-aa19-c98f0fdfd8b1"
-								name="Close_notepad_XML">
-								</testmodule>
-								<testmodule
-								id="3c03e687-b127-477c-967f-416bf25c4f09"
-								name="Loeschen_XML_JUVA">
-								</testmodule>
-							</teardown>
-						</smartfoldernode>
-					</testcase>
-					<testcase
 					id="e0b4d7ae-cd51-4d43-9a37-08e09a39243a"
-					name="Jahreserklärung_VORVORJAHR_2022_Inland_und_ausl_Unternehmen_Kopieren_Form_D20_nach_VOR_VORJAHR_D22">
+					name="Jahreserklärung_2022_VORVORJAHR_und_ausl_U_und_Kopieren_D20_nach_D22">
 						<setup
 						id="3bc7b58a-9d40-4fdf-b564-197b4d1c571e"
 						name="setup">
 							<testmodule
-							id="f15112f0-af45-4888-8fec-ffa24a3f99cb"
-							name="StartAUT_JUVA">
+							id="ff4e87aa-6d7a-4776-9e96-2ba9da2e044a"
+							name="StartAUT_b_uva_Formulare_300">
 							</testmodule>
 						</setup>
 						<smartfoldernode
 						id="32b3feef-278b-48e2-afa0-fde2d9c2113a"
 						name="Formular_D20_nach_Formular_VOVORJAHJR_kopieren">
 							<testmodule
-							id="ad0a6807-72ec-46b7-9a04-92de83bdc9ac"
+							id="f1b628de-c6b5-40d8-8295-2438bd92fcbe"
 							name="Formular_VORVORJAHR_Formular_vorhanden_Drucken_aktiv">
 							</testmodule>
 							<testmodule
 							id="c9cdafc3-7964-488d-ace5-d0b478ed7ef5"
-							name="Formularzuordnungen_kopieren_D20_VORVORJAHR">
+							name="Formularzuordnungen_kopieren_D20_auf_Form_VORVORJAHR">
 							</testmodule>
 							<testmodule
 							id="352f93f2-1fe4-459f-be84-e023bcf2afec"
@@ -3840,7 +4479,7 @@ Jahreserklärung JUVA***"
 							</testmodule>
 							<testmodule
 							id="3ab38cb1-3e8e-44e9-896c-784f64c77173"
-							name="Formular_VORVORJAHR_Zuordnung_zu_Zeile_16_pruefen">
+							name="Formular_Zuordnung_zu_Zeile_16_pruefen">
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
@@ -3848,7 +4487,7 @@ Jahreserklärung JUVA***"
 						name="Jahreserklärung_VORVORJAHR_bis_Plausibilitaetspruefung">
 							<testmodule
 							id="7d55edbe-c959-4d1e-bd3f-f8c7c42a70fe"
-							name="UVA_Drucken_aufrufen">
+							name="Druck_UVA_Werte_aufrufen">
 							</testmodule>
 							<testmodule
 							id="8ec97c6a-f939-47fb-bce2-c16f64ddf316"
@@ -3856,15 +4495,23 @@ Jahreserklärung JUVA***"
 							</testmodule>
 							<testmodule
 							id="ab02cf10-7721-4340-952f-152edcff5357"
-							name="Register_Jahreserklaerung_Eingaben_VORVORJAHR">
+							name="JUVA_Register_Jahreserklaerung_Eingaben_VORVORJAHR">
 							</testmodule>
 							<testmodule
-							id="59f24407-b355-4c38-b63d-4db4a9a9354e"
-							name="Elster_aufrufen_DSGVO_bestaetigen">
+							id="8428bfae-be02-4b1a-ab98-5a4af2c9c20f"
+							name="UVA_JUVA_ELSTER_Button_pruefen_aufrufen">
+							</testmodule>
+							<testmodule
+							id="235b16cb-0a36-4e45-91b8-d299f0f48c46"
+							name="Elster_DSGVO_bestaetigen">
 							</testmodule>
 							<testmodule
 							id="7a2499c2-420a-48eb-83f8-e6fd817aaa1d"
-							name="Elster_XML_Ausgabe_starten_Meldung_RS_bestaetigen">
+							name="JUVA_Elster_XML_Ausgabe_starten">
+							</testmodule>
+							<testmodule
+							id="cc0f51fe-3eb6-432f-92bb-eadb0cb7ba3f"
+							name="Elster_Meldung_RS_bestaetigen">
 							</testmodule>
 							<testmodule
 							id="d78a73b1-bf05-43fb-a319-f626dda0fa83"
@@ -3878,12 +4525,12 @@ Jahreserklärung JUVA***"
 							id="340cd462-ace0-438c-bdca-7856c588a7d0"
 							name="teardown">
 								<testmodule
-								id="39100989-4800-40f3-99d2-fbf5d89c9dd3"
-								name="CloseAUT_ELSTER">
+								id="0b786b56-54b4-44df-b094-c473a2385e03"
+								name="CloseAUT_B_ELSTER">
 								</testmodule>
 								<testmodule
-								id="8d9d1d07-0cf9-4e31-a733-9df8fe762ae0"
-								name="CloseAUT_JUVA">
+								id="7ca81c80-a74e-4ae7-adea-57819d980505"
+								name="CloseAUT_B_UVA">
 								</testmodule>
 							</teardown>
 						</smartfoldernode>
@@ -3897,18 +4544,18 @@ Jahreserklärung JUVA***"
 								id="98342928-590e-4e24-a532-b49346266d4f"
 								name="Oeffnen_notepad_XML_JUVA_Datei">
 								</testmodule>
-								<testmodule
-								id="12a2bf19-edb5-46d2-ab4c-b526ef54ce8c"
-								name="Sichern_XML_JUVA_VORJAHR">
-								</testmodule>
 							</setup>
+							<testmodule
+							id="1377f643-7afd-4a1a-9601-54ba35886855"
+							name="Sichern_XML_JUVA_VORVORJAHR">
+							</testmodule>
 							<testmodule
 							id="b93096cb-1ad5-4238-9779-a7789b01f239"
 							name="Pruefung_Inhalt_XML_JUVA_Header">
 							</testmodule>
 							<testmodule
-							id="a98859ce-b5e5-47e2-8608-ff20b8373dbf"
-							name="Pruefung_Inhalt_XML_Version_VORJAHR">
+							id="0a2df54e-a7d8-4b4b-80be-7900c211989c"
+							name="Pruefung_Inhalt_XML_Version_VORVORJAHR">
 							</testmodule>
 							<testmodule
 							id="87d82113-a551-4dea-bfb7-1accfa0fadef"
@@ -3927,8 +4574,8 @@ Jahreserklärung JUVA***"
 							name="Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung">
 							</testmodule>
 							<testmodule
-							id="09ccdcd8-54c2-4668-b655-46f61e2e7b81"
-							name="Pruefung_Inhalt_XML_Zeitraum_Ende">
+							id="35395b55-f149-488c-912c-194691f43ad9"
+							name="Pruefung_Inhalt_XML_JUVA_VORVORJAHR_Zeitraum_Ende">
 							</testmodule>
 							<teardown
 							id="a90d1907-7f90-4240-842c-e888d5c86e40"
@@ -3982,45 +4629,45 @@ Jahreserklärung JUVA***"
 							id="d978c23b-d306-471a-a108-1d7b5a94a2ad"
 							name="setup">
 								<testmodule
-								id="a39155bd-8567-4a85-a2ea-d5f5882890c7"
-								name="StartAUT_JUVA">
+								id="d8f9bc4b-9e97-4ef2-a346-7cfdce1caaea"
+								name="StartAUT_b_uva_Formulare_300">
 								</testmodule>
 							</setup>
 							<testmodule
 							id="1a013b0e-c5f8-45f3-9325-862dcf7369e9"
-							name="UVA_Drucken_aufrufen">
+							name="Druck_UVA_Werte_aufrufen">
 							</testmodule>
 							<testmodule
-							id="52cef28b-aab5-489f-9fa0-edb491640603"
-							name="Formular_VORJAHR_auswaehlen">
+							id="aef2d785-d03b-4ee1-8107-2323b766c3eb"
+							name="Formular_VORVORJAHR_auswaehlen">
 							</testmodule>
 							<testmodule
-							id="b02104d1-0727-4702-9a84-537de5c85c9d"
-							name="Register_Jahreserklaerung_Eingaben_VORJAHR">
+							id="4d63580e-7e61-4354-9d4c-cd3a6bc79aea"
+							name="JUVA_Register_Jahreserklaerung_Eingaben_VORVORJAHR">
 							</testmodule>
 							<testmodule
-							id="6f07d7dd-515c-4c65-b5ac-9eb787681ed4"
-							name="Elster_aufrufen_DSGVO_bestaetigen">
+							id="efbd74e9-fb82-4328-b433-4ae074ece74c"
+							name="UVA_JUVA_ELSTER_Button_pruefen_aufrufen">
+							</testmodule>
+							<testmodule
+							id="78290c31-5f17-4a4c-af7d-1cfce0457d08"
+							name="Elster_DSGVO_bestaetigen">
 							</testmodule>
 							<testmodule
 							id="64f6fc7f-0ecb-4f73-8182-effa72e774da"
-							name="Elster_XML_Ausgabe_ausl_U_starten">
-							</testmodule>
-							<testmodule
-							id="553651b3-58e8-43c5-ab19-839e7befbd0a"
-							name="Fenstersteuerung_AnlageUN">
+							name="JUVA_Elster_XML_Ausgabe_ausl_U_starten">
 							</testmodule>
 							<testmodule
 							id="9d4c234f-60c9-46b4-b0dc-76088f9e4299"
-							name="Elster_XML_Ausgabe_ausl_U_AnhangUN_ausfuellen">
+							name="JUVA_Elster_XML_Ausgabe_ausl_U_AnhangUN_ausfuellen">
 							</testmodule>
 							<testmodule
 							id="b353a0b8-8b2c-4375-aed8-926a8925fcba"
-							name="Elster_XML_Ausgabe_ausl_U_Weiter_Button">
+							name="JUVA_Elster_XML_Ausgabe_ausl_U_Weiter_Button">
 							</testmodule>
 							<testmodule
-							id="204f6934-68ee-4f8d-86f9-de72d87ca10d"
-							name="Elster_XML_Ausgabe_ausl_U_Meldung_RS_bestaetigen">
+							id="5e359390-72fe-4f83-a640-a81f50a743a1"
+							name="Elster_Meldung_RS_bestaetigen">
 							</testmodule>
 							<testmodule
 							id="f1b29565-f56b-49f6-9e3c-6984cd609629"
@@ -4034,12 +4681,12 @@ Jahreserklärung JUVA***"
 							id="d4c0ec2a-6d3a-4355-9101-a1cf6b534083"
 							name="teardown">
 								<testmodule
-								id="71d58d76-6593-4bf3-957f-ed0f7041c0f0"
-								name="CloseAUT_ELSTER">
+								id="401367db-5c3a-4e6b-b758-c58d9195c02b"
+								name="CloseAUT_B_ELSTER">
 								</testmodule>
 								<testmodule
-								id="08d506ac-1be6-4f9b-ac57-995cd90ddebe"
-								name="CloseAUT_JUVA">
+								id="b0fd3bd0-6659-4832-8d69-287e56a06210"
+								name="CloseAUT_B_UVA">
 								</testmodule>
 							</teardown>
 						</smartfoldernode>
@@ -4053,11 +4700,11 @@ Jahreserklärung JUVA***"
 								id="1316b89f-f0eb-44d3-833e-02d4539adcf9"
 								name="Oeffnen_notepad_XML_JUVA_Datei">
 								</testmodule>
-								<testmodule
-								id="5b176671-4f0b-4715-86ec-d3b9ae334545"
-								name="Sichern_XML_JUVA_ausl_U_VORJAHR">
-								</testmodule>
 							</setup>
+							<testmodule
+							id="f8702c23-b204-4819-a46e-d307094446c1"
+							name="Sichern_XML_JUVA_VORVORJAHR_ausl_U">
+							</testmodule>
 							<testmodule
 							id="b3f787b0-aa22-41d9-99a6-21d3f30c13ca"
 							name="Pruefung_Inhalt_XML_JUVA_Header">
@@ -4087,8 +4734,8 @@ Jahreserklärung JUVA***"
 							name="Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank_VORJAHR">
 							</testmodule>
 							<testmodule
-							id="13f3cb88-b3e4-4dda-bae9-d7a093423434"
-							name="Pruefung_Inhalt_XML_Zeitraum_Ende">
+							id="6582d321-f3f7-40c2-8a06-b3356baa2a77"
+							name="Pruefung_Inhalt_XML_JUVA_VORVORJAHR_Zeitraum_Ende">
 							</testmodule>
 							<teardown
 							id="cc023ec1-23df-45e6-84a5-d95a088e01fd"
@@ -4103,16 +4750,520 @@ Jahreserklärung JUVA***"
 								</testmodule>
 							</teardown>
 						</smartfoldernode>
+						<smartfoldernode
+						id="5a5012ec-0270-404b-9398-37c04f17e55f"
+						name="JUVA_Eric_log_Eric_Version_pruefen_VORVORJAHR_auslaendische_Unternehmen">
+							<setup
+							id="67e31241-e8ac-4fa9-88c5-4a251c0e18e8"
+							name="setup">
+								<testmodule
+								id="d5bde9e7-8543-4805-a230-ea69e027c574"
+								name="Oeffnen_notepad_Eric_log">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="90d6d907-be9c-4c18-a624-fc5c19c8a901"
+							name="Sichern_Eric_log_JUVA_VORVORJAHR_ausl_U">
+							</testmodule>
+							<testmodule
+							id="478e51d3-054c-412d-b96a-c30dea46fc9c"
+							name="Eric_Version_JUVA_VORVORJAHR_pruefen">
+							</testmodule>
+							<teardown
+							id="544aa633-3dfe-426a-9863-68ddd93f9bc2"
+							name="teardown">
+								<testmodule
+								id="506cabb7-184c-4f49-ab95-be2c62d12ba6"
+								name="Close_notepad_Eric">
+								</testmodule>
+								<testmodule
+								id="3376e411-7d11-4b0a-bb1d-9b4ddd96b882"
+								name="loeschen_Eric_log">
+								</testmodule>
+							</teardown>
+						</smartfoldernode>
+					</testcase>
+					<testcase
+					id="8fb1ed68-e604-43c3-818f-a32d737a47e1"
+					name="Jahreserklärung_2023_VORJAHR_und_ausl_U_und_Kopieren_D20_nach_D23">
+						<setup
+						id="8435d987-00ef-4d27-98e0-a9d51cd54781"
+						name="setup">
+							<testmodule
+							id="8c02bebf-72bb-488e-8e87-0f760f704251"
+							name="StartAUT_b_uva_Formulare_300">
+							</testmodule>
+						</setup>
+						<smartfoldernode
+						id="3331dbdb-87ee-4a14-bdd5-54e8a8ce8d75"
+						name="Formular_D20_nach_Formular_VORJAHJR_kopieren">
+							<testmodule
+							id="95a5ba56-90e9-4971-85b6-19675db1d85e"
+							name="Formular_VORJAHR_Formular_vorhanden_Drucken_aktiv">
+							</testmodule>
+							<testmodule
+							id="e7cb1a65-7f95-4289-8734-593074144d22"
+							name="Formularzuordnungen_kopieren_D20_auf_Form_VORJAHR">
+							</testmodule>
+							<testmodule
+							id="38d2c114-2b23-481d-b2ff-4f68e28dcb42"
+							name="Formular_Zuordnung_zu_Zeile_16_pruefen">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="0094d89b-ff49-4ef9-a9fd-768e2d7120cb"
+						name="Jahreserklärung_VORJAHR_bis_Plausibilitaetspruefung">
+							<testmodule
+							id="1dd2f750-0211-467d-9583-db1e6a88bdf7"
+							name="Druck_UVA_Werte_aufrufen">
+							</testmodule>
+							<testmodule
+							id="fb750a00-deb5-4b4f-a788-f96d416cdf81"
+							name="Formular_VORJAHR_auswaehlen">
+							</testmodule>
+							<testmodule
+							id="beee827c-e1e4-4cc6-ab8a-4bc46eaf04a3"
+							name="JUVA_Register_Jahreserklaerung_Eingaben_VORJAHR">
+							</testmodule>
+							<testmodule
+							id="fa10e806-00a5-4af8-953a-dbd56afbf747"
+							name="UVA_JUVA_ELSTER_Button_pruefen_aufrufen">
+							</testmodule>
+							<testmodule
+							id="84b5880d-7330-4e6d-becf-623511c1a90b"
+							name="Elster_DSGVO_bestaetigen">
+							</testmodule>
+							<testmodule
+							id="280f6e98-5b80-40d0-950a-7eb44b5d1665"
+							name="JUVA_Elster_XML_Ausgabe_starten">
+							</testmodule>
+							<testmodule
+							id="6bacca2c-cec6-41ae-acf7-4a9da325f6de"
+							name="Elster_Meldung_RS_bestaetigen">
+							</testmodule>
+							<testmodule
+							id="d8cd0288-1987-4f95-9bc7-1738ab842155"
+							name="Elster_Schnittstelle_pruefen">
+							</testmodule>
+							<testmodule
+							id="fe0b8e97-ff14-4ecd-9893-ca174967a748"
+							name="Elster_Plausipruefung_durchfuehren">
+							</testmodule>
+							<teardown
+							id="e03fa518-8a9a-4d03-bf18-09c125c047db"
+							name="teardown">
+								<testmodule
+								id="9398381e-c8fc-45d8-9762-70895a1ae8a8"
+								name="CloseAUT_B_ELSTER">
+								</testmodule>
+								<testmodule
+								id="e18c3070-17ee-466f-9b44-4c99fd8456d5"
+								name="CloseAUT_B_UVA">
+								</testmodule>
+							</teardown>
+						</smartfoldernode>
+						<smartfoldernode
+						id="c086ddf8-462a-4263-93e0-92c3be62e47b"
+						name="XML_Datei_Umsatzsteuer_Jahreserklärung_VORJAHR_prüfen">
+							<setup
+							id="af0cd15a-e9cc-4712-a3de-5e61d61824ca"
+							name="setup">
+								<testmodule
+								id="0de68280-cdf0-4539-9256-c285d6df8650"
+								name="Oeffnen_notepad_XML_JUVA_Datei">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="bd6116c5-04c5-419b-882c-d89c8ef821da"
+							name="Sichern_XML_JUVA_VORJAHR">
+							</testmodule>
+							<testmodule
+							id="7b889ab2-18bd-4a53-a331-539263383afd"
+							name="Pruefung_Inhalt_XML_JUVA_Header">
+							</testmodule>
+							<testmodule
+							id="7f10f47d-1a8f-4eb3-b4c5-770efa0bb47b"
+							name="Pruefung_Inhalt_XML_Version_VORJAHR">
+							</testmodule>
+							<testmodule
+							id="dac9b149-db23-4bb2-83bc-e00dfe1f3aaf"
+							name="Pruefung_Inhalt_XML_JUVA_Unternehmen_VORJAHR">
+							</testmodule>
+							<testmodule
+							id="5c0c8a59-e331-46dc-b9ed-d8bc1941164e"
+							name="Pruefung_Inhalt_XML_JUVA_INLAND_Best_Art_1">
+							</testmodule>
+							<testmodule
+							id="92dc89ae-a644-4451-b9a4-fd0c69b5185b"
+							name="Pruefung_Inhalt_XML_JUVA_Umsaetze_VORJAHR">
+							</testmodule>
+							<testmodule
+							id="18ec1448-8c6a-4082-9f66-9aa6baf15404"
+							name="Pruefung_Inhalt_XML_JUVA_INLAND_verbl_Ust_OHNE_Erstattung">
+							</testmodule>
+							<testmodule
+							id="f00f74e8-ad37-41df-a6e7-757e4d12ced4"
+							name="Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum_Ende">
+							</testmodule>
+							<teardown
+							id="fc5fb8f6-7c63-454f-a47a-e14f1fe29a29"
+							name="teardown">
+								<testmodule
+								id="a7c90226-95c6-46dd-88ca-5fb494bcb46d"
+								name="Close_notepad_XML">
+								</testmodule>
+								<testmodule
+								id="c485f248-eec3-460c-abf7-6546e3bcacef"
+								name="Loeschen_XML_JUVA">
+								</testmodule>
+							</teardown>
+						</smartfoldernode>
+						<smartfoldernode
+						id="19f39d16-3d07-41fe-b81a-d18411523d3b"
+						name="JUVA_Eric_log_Eric_Version_pruefen_VORJAHR">
+							<setup
+							id="ba8ba792-ee6f-4df7-a159-1fd4b53d927d"
+							name="setup">
+								<testmodule
+								id="34c2addc-c5c4-4518-997c-c05015d64279"
+								name="Oeffnen_notepad_Eric_log">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="02eb7c80-7907-4b61-b5b9-0353532acfa0"
+							name="Sichern_Eric_log_JUVA_VORJAHR">
+							</testmodule>
+							<testmodule
+							id="477b6893-1b1e-4f2a-be1f-195e5d98254d"
+							name="Eric_Version_JUVA_VORJAHR_pruefen">
+							</testmodule>
+							<teardown
+							id="c29da011-08e7-4cb7-bf18-9fb2ef80d6ea"
+							name="teardown">
+								<testmodule
+								id="a086e068-5cab-450a-bef3-59fed29b0d29"
+								name="Close_notepad_Eric">
+								</testmodule>
+								<testmodule
+								id="b2a5c0b9-571d-4865-b5c5-a0c84ef1d85b"
+								name="loeschen_Eric_log">
+								</testmodule>
+							</teardown>
+						</smartfoldernode>
+						<smartfoldernode
+						id="f5c27b18-5462-4ce3-92b1-9b1d049dbc8e"
+						name="ELSTER_Jahreserklärung_VORJAHR_Anlage_UN_ausl_Unternehmen">
+							<setup
+							id="98c5a8c3-abec-4cf4-bbed-a041cb0e4727"
+							name="setup">
+								<testmodule
+								id="d0d3c235-911e-4de1-855f-c5dce87c0216"
+								name="StartAUT_b_uva_Formulare_300">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="07fa4c19-e894-4b59-87b5-adf06b54d8ff"
+							name="Druck_UVA_Werte_aufrufen">
+							</testmodule>
+							<testmodule
+							id="e6bca589-d25a-4d9b-90d6-92db3738b413"
+							name="Formular_VORJAHR_auswaehlen">
+							</testmodule>
+							<testmodule
+							id="845473e7-6674-4dc4-9980-18818dc81cba"
+							name="JUVA_Register_Jahreserklaerung_Eingaben_VORJAHR">
+							</testmodule>
+							<testmodule
+							id="fab29b46-012f-489e-a1b4-b2fc79bbdcf2"
+							name="UVA_JUVA_ELSTER_Button_pruefen_aufrufen">
+							</testmodule>
+							<testmodule
+							id="904bedca-a3f1-4029-ac75-020f3f0b4507"
+							name="Elster_DSGVO_bestaetigen">
+							</testmodule>
+							<testmodule
+							id="211c87f9-fc4b-4c46-ae78-19398ef2685f"
+							name="JUVA_Elster_XML_Ausgabe_ausl_U_starten">
+							</testmodule>
+							<testmodule
+							id="d3d9b9f5-c63e-480f-b0fe-e1231c7908f1"
+							name="JUVA_Elster_XML_Ausgabe_ausl_U_AnhangUN_ausfuellen">
+							</testmodule>
+							<testmodule
+							id="1b88eeab-c24d-4f10-b9fb-7e920c00bd03"
+							name="JUVA_Elster_XML_Ausgabe_ausl_U_Weiter_Button">
+							</testmodule>
+							<testmodule
+							id="c6f5dfc9-969f-4361-8516-0855cf6ada25"
+							name="Elster_Meldung_RS_bestaetigen">
+							</testmodule>
+							<testmodule
+							id="4bb61eac-b18f-419c-aa80-2354b43d6af9"
+							name="Elster_Schnittstelle_pruefen">
+							</testmodule>
+							<testmodule
+							id="09e20ee6-0fb5-492f-b0ac-40319bfca029"
+							name="Elster_Plausipruefung_durchfuehren">
+							</testmodule>
+							<teardown
+							id="d3e8d66e-f622-4cde-a218-a99a2f50a93a"
+							name="teardown">
+								<testmodule
+								id="88055bc3-fd2e-405b-a3a5-a41647451474"
+								name="CloseAUT_B_ELSTER">
+								</testmodule>
+								<testmodule
+								id="016cd2b6-0149-41ec-85e1-240c14046b2f"
+								name="CloseAUT_B_UVA">
+								</testmodule>
+							</teardown>
+						</smartfoldernode>
+						<smartfoldernode
+						id="2ea8ceda-4da0-412d-8403-6f5ae6291f7a"
+						name="XML_Datei_Umsatzsteuer_Jahreserklärung_VORJAHR_prüfen_Anlage_UN_ausl_Unternehmen">
+							<setup
+							id="0ff12019-98d3-4ff9-9bcc-0ca8fc6d615b"
+							name="setup">
+								<testmodule
+								id="3566d821-b3c6-4da5-acba-e8f971c17fdf"
+								name="Oeffnen_notepad_XML_JUVA_Datei">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="f0c540e8-6c6f-4bcc-a756-876e6b66f3e0"
+							name="Sichern_XML_JUVA_VORJAHR_ausl_U">
+							</testmodule>
+							<testmodule
+							id="f1a47384-5455-474d-9d26-e282ea89d1d8"
+							name="Pruefung_Inhalt_XML_JUVA_Header">
+							</testmodule>
+							<testmodule
+							id="a4eb2777-96cc-4d80-a3af-6facc43118e2"
+							name="Pruefung_Inhalt_XML_Version_VORJAHR">
+							</testmodule>
+							<testmodule
+							id="2236259d-52e4-4e7e-af2d-e1e5bdce534b"
+							name="Pruefung_Inhalt_XML_JUVA_Unternehmen_VORJAHR">
+							</testmodule>
+							<testmodule
+							id="0047a31e-3d7d-4dbe-9323-7471586900fb"
+							name="Pruefung_Inhalt_XML_JUVA_AUSLAEND_UNTERNEHMER_Best_Art_3">
+							</testmodule>
+							<testmodule
+							id="57ee984e-70bc-4b3d-8833-07a80b34d505"
+							name="Pruefung_Inhalt_XML_JUVA_Umsaetze_VORJAHR">
+							</testmodule>
+							<testmodule
+							id="e1957734-a521-455d-8ff3-5e6de62b215d"
+							name="Pruefung_Inhalt_XML_JUVA_AUSLAND_verbl_Ust_MIT_Erstattung">
+							</testmodule>
+							<testmodule
+							id="490988b0-e951-4170-baae-6877ea7a9b84"
+							name="Pruefung_Inhalt_XML_JUVA_AnlageUN_Bank_VORJAHR">
+							</testmodule>
+							<testmodule
+							id="3b6be6be-3789-453e-8e2a-fbfe739ee66a"
+							name="Pruefung_Inhalt_XML_JUVA_VORJAHR_Zeitraum_Ende">
+							</testmodule>
+							<teardown
+							id="82d98ed8-a698-486f-8d84-422d2dc0593f"
+							name="teardown">
+								<testmodule
+								id="6fffcc43-9407-40ba-aa19-c98f0fdfd8b1"
+								name="Close_notepad_XML">
+								</testmodule>
+								<testmodule
+								id="3c03e687-b127-477c-967f-416bf25c4f09"
+								name="Loeschen_XML_JUVA">
+								</testmodule>
+							</teardown>
+						</smartfoldernode>
+						<smartfoldernode
+						id="6cb04e50-45a4-4fc6-a03a-0b1df32dcab1"
+						name="JUVA_Eric_log_Eric_Version_pruefen_VORJAHR_auslaendische_Unternehmen">
+							<setup
+							id="0b970f27-b2ca-488b-9a36-39f8b63ceca3"
+							name="setup">
+								<testmodule
+								id="8cb1ad8c-3cf7-4600-aedf-584159bc1ec1"
+								name="Oeffnen_notepad_Eric_log">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="02ed9410-25f2-4ebb-8d74-b55eddfe8d0e"
+							name="Sichern_Eric_log_JUVA_VORJAHR_ausl_U">
+							</testmodule>
+							<testmodule
+							id="ea9425b3-d7ff-4402-8148-12858b96f8f5"
+							name="Eric_Version_JUVA_VORJAHR_pruefen">
+							</testmodule>
+							<teardown
+							id="806c482e-1289-4b44-bece-85e3750daa0b"
+							name="teardown">
+								<testmodule
+								id="faf81462-282c-4077-b430-a640cee34e2a"
+								name="Close_notepad_Eric">
+								</testmodule>
+								<testmodule
+								id="fae880ff-289b-4820-a8e5-66bebf2a3525"
+								name="loeschen_Eric_log">
+								</testmodule>
+							</teardown>
+						</smartfoldernode>
+					</testcase>
+					<testcase
+					id="51e5d514-58d9-486f-ace6-5d6fbadc54fe"
+					name="Monats-UVA_2023_12_VORJAHR_und_Kopieren_D20_nach_D23">
+						<setup
+						id="076fff22-41dd-4117-b554-6e7e2a12ae3b"
+						name="setup">
+							<testmodule
+							id="ee2461a3-9912-4ae7-8d5b-eb67ee494cc1"
+							name="StartAUT_b_uva_Formulare_300">
+							</testmodule>
+						</setup>
+						<smartfoldernode
+						id="cd93afb8-c6b2-469f-bd91-b6a461fdedbd"
+						name="Formular_D20_nach_Formular_VORJAHR_kopieren">
+							<testmodule
+							id="2825d701-a5a2-471b-8757-55158bc44de3"
+							name="Formular_VORJAHR_Formular_vorhanden_Drucken_aktiv">
+							</testmodule>
+							<testmodule
+							id="a3c6f18f-579a-4d9f-8380-fe8023ed0859"
+							name="Formularzuordnungen_kopieren_D20_auf_Form_VORJAHR">
+							</testmodule>
+							<testmodule
+							id="9f72b001-1cc0-4478-aa90-da6d6c52ac23"
+							name="Formular_VORJAHR_Zeile_1_Zeile_16_pruefen">
+							</testmodule>
+							<testmodule
+							id="7fa3490e-cac0-4cf7-99b4-6239e3f78289"
+							name="Formular_Zuordnung_zu_Zeile_16_pruefen">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="c74a331a-2d75-4797-a05a-b3bd4c251b7b"
+						name="Monats_UVA_2023_12_VORJAHR_bis_Plausibilitaetspruefung">
+							<testmodule
+							id="746c7ce5-cbef-4dee-9ef8-c164e5877a4b"
+							name="Druck_UVA_Werte_aufrufen">
+							</testmodule>
+							<testmodule
+							id="56ff0a44-98c6-4ec7-a045-81ed7b57f985"
+							name="UVA_Formular_VORJAHR_Monat_VORJAHR_12_auswaehlen">
+							</testmodule>
+							<testmodule
+							id="934bae21-8a90-482f-8177-ed95bf267df8"
+							name="UVA_JUVA_ELSTER_Button_pruefen_aufrufen">
+							</testmodule>
+							<testmodule
+							id="031649cc-5333-4c2f-91b1-56f947711f17"
+							name="Elster_DSGVO_bestaetigen">
+							</testmodule>
+							<testmodule
+							id="86b141e6-0696-4cef-af77-a2c4ab2cac83"
+							name="UVA_Elster_XML_Ausgabe_starten">
+							</testmodule>
+							<testmodule
+							id="f00d6a67-5ba7-41c0-a209-c985e5569f63"
+							name="Elster_Meldung_RS_bestaetigen">
+							</testmodule>
+							<testmodule
+							id="ed691095-ce6d-4178-b125-ba3f80429a0c"
+							name="Elster_Schnittstelle_pruefen">
+							</testmodule>
+							<testmodule
+							id="11874e88-f2b5-4f2f-955a-c821f84f134f"
+							name="Elster_Plausipruefung_durchfuehren">
+							</testmodule>
+							<teardown
+							id="29b069cb-9f47-4805-ba99-e852fc147f50"
+							name="teardown">
+								<testmodule
+								id="1fcbc0ae-118f-40ac-ae2d-b67a767a5cc9"
+								name="CloseAUT_B_ELSTER">
+								</testmodule>
+								<testmodule
+								id="95490b04-65ea-4c12-8480-c26968ebca47"
+								name="CloseAUT_B_UVA">
+								</testmodule>
+							</teardown>
+						</smartfoldernode>
+						<smartfoldernode
+						id="d49b7a2b-5384-4629-99d6-00a27cdc325c"
+						name="XML_Datei_Monats_2023_12_VORJAHR_pruefen">
+							<setup
+							id="c168bc2f-5f35-47b2-8853-a69f5bd3a269"
+							name="setup">
+								<testmodule
+								id="b1234274-573d-4321-8a75-755884cf096f"
+								name="Oeffnen_notepad_XML_Datei">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="5c45384b-8b4f-4d6c-a4c3-709e206fd2d9"
+							name="Sichern_XML_UVA_VORJAHR_12">
+							</testmodule>
+							<testmodule
+							id="567073c9-0e9b-4f0a-ad1e-53bee5c89927"
+							name="Pruefung_Inhalt_XML_UVA_Datei_VORJAHR_12">
+							</testmodule>
+							<teardown
+							id="81acb6c4-e988-48b3-8606-dabeb6a129eb"
+							name="teardown">
+								<testmodule
+								id="299b43df-3581-4513-92d6-2ec1779a6f54"
+								name="Close_notepad_XML">
+								</testmodule>
+								<testmodule
+								id="fdb9c5fe-3ee6-4a7c-9603-cb3688d6dd8b"
+								name="Loeschen_XML_UVA">
+								</testmodule>
+							</teardown>
+						</smartfoldernode>
+						<smartfoldernode
+						id="9df3cd20-17e3-492a-83df-2eac162b2041"
+						name="UVA_Eric_log_Eric_Version_pruefen_VORJAHR_12">
+							<setup
+							id="620968ad-044e-49d1-9a4e-87a502d01c76"
+							name="setup">
+								<testmodule
+								id="c4d8743a-99bd-4d3e-9b3f-553ca827f015"
+								name="Oeffnen_notepad_Eric_log">
+								</testmodule>
+							</setup>
+							<testmodule
+							id="3a7b4717-520f-4faf-91de-3e83503a73eb"
+							name="Sichern_Eric_log_UVA_VORJAHR_12">
+							</testmodule>
+							<testmodule
+							id="712524ef-214a-4162-8845-959bd39e926b"
+							name="Eric_Version_UVA_VORJAHR_12_pruefen">
+							</testmodule>
+							<teardown
+							id="678c37e9-4448-4950-a78a-63b4f1c95ce9"
+							name="teardown">
+								<testmodule
+								id="e4f408e5-7d66-48b5-99fe-ae0dd159f827"
+								name="Close_notepad_Eric">
+								</testmodule>
+								<testmodule
+								id="3550bf85-6d88-4e88-93fc-0c896c22a852"
+								name="loeschen_Eric_log">
+								</testmodule>
+							</teardown>
+						</smartfoldernode>
 					</testcase>
 					<testcase
 					id="9975d79f-4bf2-420e-a8c8-3c3970941246"
-					name="Monats-UVA_JAHRNEU_Januar">
+					name="Monats-UVA_2024_01_JAHRNEU_und_Kopieren_D20_nach_D24">
 						<setup
 						id="744ddf9c-3a9b-4f2e-b893-2273257d6d32"
 						name="setup">
 							<testmodule
 							id="6dbae7cb-58fe-4267-b1d9-34ee1cf22f40"
-							name="StartAUT_Formulare_300">
+							name="StartAUT_b_uva_Formulare_300">
 							</testmodule>
 						</setup>
 						<smartfoldernode
@@ -4124,42 +5275,50 @@ Jahreserklärung JUVA***"
 							</testmodule>
 							<testmodule
 							id="01b473d4-2c89-4f21-a3f4-3c392edd9ef5"
-							name="Formularzuordnungen_kopieren_D20_JAHRNEU">
+							name="Formularzuordnungen_kopieren_D20_auf_Form_JAHRNEU">
 							</testmodule>
 							<testmodule
 							id="41cc3563-29b1-4cd6-8254-fa63db4606b4"
 							name="Formular_JAHRNEU_Zeile_1_Zeile_16_pruefen">
 							</testmodule>
 							<testmodule
-							id="443194c4-193b-478c-b60f-55c5424ad5a4"
-							name="Formular_JAHRNEU_Zuordnung_zu_Zeile_16_pruefen">
+							id="dfda2a0f-08cb-4495-988d-9d10ba5a1e48"
+							name="Formular_Zuordnung_zu_Zeile_16_pruefen">
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
 						id="ce6aa7a2-62e6-47ec-ab2c-f1e3334b71ae"
 						name="Monats_UVA_JAHRNEU__bis_Plausibilitaetspruefung">
 							<testmodule
-							id="6a630388-f54b-45d5-af0c-b64b9bf1231e"
-							name="UVA_Drucken_aufrufen">
+							id="62bc3ac3-5d77-48bd-97ed-8c3d3d1bb1cf"
+							name="Druck_UVA_Werte_aufrufen">
 							</testmodule>
 							<testmodule
 							id="1cff982e-2e54-4618-a50b-065a017a09c1"
-							name="Formular_JAHRNEU_Monat_JAHRNEU_01_auswaehlen">
+							name="UVA_Formular_JAHRNEU_Monat_JAHRNEU_01_auswaehlen">
 							</testmodule>
 							<testmodule
-							id="0231c608-5755-4c7d-8fb7-9962f24b9e92"
-							name="Elster_aufrufen_DSGVO_bestaetigen">
+							id="926788a8-3adb-4a2f-a221-6a0fbafc8b8d"
+							name="UVA_JUVA_ELSTER_Button_pruefen_aufrufen">
 							</testmodule>
 							<testmodule
-							id="d809c854-3d4b-413c-8bb6-dfacf6a70d5d"
-							name="Elster_XML_Ausgabe_starten_Meldung_RS_bestaetigen">
+							id="d1d826a1-8659-41cd-9091-e45c42658aea"
+							name="Elster_DSGVO_bestaetigen">
 							</testmodule>
 							<testmodule
-							id="62d86cd7-ee3f-4c18-b103-e749e3b31b20"
+							id="f3513383-4b50-480b-9695-eb470c316092"
+							name="UVA_Elster_XML_Ausgabe_starten">
+							</testmodule>
+							<testmodule
+							id="7d5f42ce-13c1-45dc-87ee-9b681d42d055"
+							name="Elster_Meldung_RS_bestaetigen">
+							</testmodule>
+							<testmodule
+							id="fadc54c0-4644-4574-8011-d3d0f78e6cc2"
 							name="Elster_Schnittstelle_pruefen">
 							</testmodule>
 							<testmodule
-							id="13c15592-46a0-43eb-a5cf-a83c781b3f81"
+							id="7bced2e5-d88b-4fb0-8781-38905b887661"
 							name="Elster_Plausipruefung_durchfuehren">
 							</testmodule>
 							<teardown
@@ -4167,14 +5326,18 @@ Jahreserklärung JUVA***"
 							name="teardown">
 								<testmodule
 								id="e6b02885-1c98-4a58-af62-465de1ae54ef"
-								name="CloseAUT_Elster">
+								name="CloseAUT_B_ELSTER">
 								</testmodule>
 								<testmodule
 								id="04652187-9fb2-4570-841b-72911dcd0e82"
-								name="CloseAUT_UVA">
+								name="CloseAUT_B_UVA">
 								</testmodule>
 							</teardown>
 						</smartfoldernode>
+						<testmodule
+						id="6b854566-464b-4e0f-95be-f36b5c6d8291"
+						name="Druck_UVA_Werte_aufrufen">
+						</testmodule>
 						<smartfoldernode
 						id="d4617fa8-e636-4766-aa8a-6687246f54f5"
 						name="XML_Datei_Monats_UVA_JAHRNEU_pruefen">
@@ -4185,14 +5348,14 @@ Jahreserklärung JUVA***"
 								id="e943f6a4-2870-457f-8c7b-d8d87b00f490"
 								name="Oeffnen_notepad_XML_Datei">
 								</testmodule>
-								<testmodule
-								id="fff0065c-0a23-453f-ad55-2d57a159218a"
-								name="Sichern_XML_UVA_JAHRNEU_01">
-								</testmodule>
 							</setup>
 							<testmodule
+							id="fff0065c-0a23-453f-ad55-2d57a159218a"
+							name="Sichern_XML_UVA_JAHRNEU_01">
+							</testmodule>
+							<testmodule
 							id="040d604d-2d53-45ae-8f6a-0f367d69104b"
-							name="Pruefung_Inhalt_XML_UVA_Datei">
+							name="Pruefung_Inhalt_XML_UVA_Datei_JAHRNEU_01">
 							</testmodule>
 							<teardown
 							id="30fa0f9c-ba20-4a81-9641-328985611aaa"
@@ -4257,16 +5420,52 @@ Jahreserklärung JUVA***"
 			id="0da6a954-de06-47c0-a7f1-528a66abe2fe">
 			</testcontainer>
 			<testcontainer
+			id="1ac14b3e-9580-4fbf-9b48-6b7eac226602">
+			</testcontainer>
+			<testcontainer
 			id="27a5bb3b-f1b6-4ee1-8c7a-0b75ec021692">
 			</testcontainer>
 			<testcontainer
 			id="32b3feef-278b-48e2-afa0-fde2d9c2113a">
 			</testcontainer>
 			<testcontainer
+			id="4c9817dd-df37-4ca4-ba07-79cf6ef7acfb">
+			</testcontainer>
+			<testcontainer
+			id="51e5d514-58d9-486f-ace6-5d6fbadc54fe">
+			</testcontainer>
+			<testcontainer
+			id="5a5012ec-0270-404b-9398-37c04f17e55f">
+			</testcontainer>
+			<testcontainer
+			id="5d80d761-76c5-4198-97ab-f2dd4c30ad83">
+			</testcontainer>
+			<testcontainer
+			id="6ac8b3ef-471c-4a33-9b0f-b51789b70041">
+			</testcontainer>
+			<testcontainer
+			id="7393af81-f510-47c4-b3c9-0070e162a746">
+			</testcontainer>
+			<testcontainer
+			id="9df3cd20-17e3-492a-83df-2eac162b2041">
+			</testcontainer>
+			<testcontainer
 			id="a15ca4d9-d04e-4779-b272-b3a5e8b4713f">
 			</testcontainer>
 			<testcontainer
+			id="c74a331a-2d75-4797-a05a-b3bd4c251b7b">
+			</testcontainer>
+			<testcontainer
+			id="cd93afb8-c6b2-469f-bd91-b6a461fdedbd">
+			</testcontainer>
+			<testcontainer
+			id="d49b7a2b-5384-4629-99d6-00a27cdc325c">
+			</testcontainer>
+			<testcontainer
 			id="e0b4d7ae-cd51-4d43-9a37-08e09a39243a">
+			</testcontainer>
+			<testcontainer
+			id="e7807940-42ba-4eca-b6bd-76d7f8f26af8">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
